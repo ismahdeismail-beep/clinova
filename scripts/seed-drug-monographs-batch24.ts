@@ -55,7 +55,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -84,7 +84,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -113,7 +113,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -124,7 +124,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -142,7 +142,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -153,7 +153,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -171,7 +171,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -182,7 +182,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -200,7 +200,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -211,7 +211,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -229,7 +229,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -240,7 +240,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -258,7 +258,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -269,7 +269,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -287,7 +287,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -298,7 +298,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -316,7 +316,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -327,7 +327,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Renal / electrolyte agent",
     indications: [ "Correction of electrolyte abnormalities (hyperkalaemia, hypocalcaemia, hypomagnesaemia)", "Fluid and electrolyte replacement therapy", "Acid-base balance correction (metabolic acidosis)", "Management of hyperkalaemia emergencies"
 ],
-    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV â€” risk of cardiac arrest)", "Extravasation risk (calcium solutions â€” IV access must be secure)"
+    contraindications: [ "Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)", "Severe renal impairment with oliguria/anuria", "Digitalis toxicity (calcium IV — risk of cardiac arrest)", "Extravasation risk (calcium solutions — IV access must be secure)"
 ],
     side_effects: [ "Local injection site reactions (pain, phlebitis, extravasation risk with calcium solutions)", "Hypercalcaemia / hypermagnesaemia / hypernatraemia with excessive replacement", "Cardiac arrhythmias (rapid correction of electrolytes)", "Metabolic alkalosis (excessive bicarbonate administration)", "Volume overload (sodium-containing solutions)"
 ],
@@ -345,7 +345,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics â€” increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids â€” increased sodium retention and potassium loss"
+    interactions: [ "Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels", "Diuretics — increased electrolyte loss; monitor levels regularly", "ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)", "Corticosteroids — increased sodium retention and potassium loss"
 ],
     monitoring: "Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).",
     patient_counselling: "Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.",
@@ -356,9 +356,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -374,10 +374,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Beclometasone",
@@ -385,9 +385,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -403,10 +403,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Budesonide",
@@ -414,9 +414,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -432,10 +432,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Fluticasone",
@@ -443,9 +443,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -461,10 +461,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Ipratropium",
@@ -472,9 +472,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -490,10 +490,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Montelukast",
@@ -501,9 +501,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -519,10 +519,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Salbutamol",
@@ -530,9 +530,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -548,10 +548,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Theophylline",
@@ -559,9 +559,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -577,10 +577,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Tiotropium",
@@ -588,9 +588,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Respiratory agent",
     indications: [ "Asthma management (preventer and reliever therapy)", "COPD management (bronchodilators, inhaled corticosteroids)", "Allergic rhinitis (intranasal corticosteroids, antihistamines)", "Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)"
 ],
-    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators â€” caution)"
+    contraindications: [ "Hypersensitivity to active substance or excipients", "Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)", "Cardiac arrhythmias (certain bronchodilators — caution)"
 ],
-    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare â€” discontinue and use alternative)"
+    side_effects: [ "Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) — rinse mouth after use", "Tremor, palpitations, tachycardia (beta-2 agonists) — dose-dependent; usually self-limiting", "Dry mouth, throat irritation, cough (inhaled therapies)", "Headache, dizziness, nausea (systemic effects)", "Paradoxical bronchospasm (rare — discontinue and use alternative)"
 ],
     dosage: {
       "adult": {
@@ -606,10 +606,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression"
+    interactions: [ "Beta-blockers (including ophthalmic) — antagonist effects on beta-agonists; avoid if possible", "Potassium-depleting diuretics — increased risk of hypokalaemia with beta-2 agonists", "MAOIs / tricyclic antidepressants — increased cardiovascular effects with beta-2 agonists", "CYP3A4 inhibitors (certain ICS) — increased systemic exposure; monitor for adrenal suppression"
 ],
     monitoring: "Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.",
-    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
+    patient_counselling: "Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly — demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.",
   },
   {
     name: "Acetylcysteine",
@@ -617,7 +617,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -635,7 +635,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -646,7 +646,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -664,7 +664,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -675,7 +675,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -693,7 +693,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -704,7 +704,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -722,7 +722,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -733,7 +733,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -751,7 +751,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -762,7 +762,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -780,7 +780,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -791,7 +791,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -809,7 +809,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -820,7 +820,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -838,7 +838,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",
@@ -849,7 +849,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antidote / toxicology agent",
     indications: [ "Acute poisoning / overdose management (specific antidote for known toxin)", "Reversal of drug toxicity (e.g., opioid reversal, benzodiazepine reversal)", "Enhanced elimination of toxins (multiple-dose activated charcoal)", "Chemical exposure management (specific antidotes for organophosphates, cyanide, heavy metals)"
 ],
-    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal â€” aspiration risk)"
+    contraindications: [ "Hypersensitivity (for specific antidotes)", "Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)", "Caustic ingestion (activated charcoal — contraindicated; endoscopy required)", "Petroleum distillate ingestion (activated charcoal — aspiration risk)"
 ],
     side_effects: [ "Nausea, vomiting, diarrhoea (activated charcoal)", "Tachycardia, hypertension, agitation (certain reversal agents)", "Anaphylaxis / hypersensitivity reactions (antivenoms, specific antidotes)", "Rebound toxicity as antidote wears off (naloxone in long-acting opioids)", "Electrolyte disturbances (specific chelating agents)"
 ],
@@ -867,7 +867,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone â€” concurrent use of other opioid antagonists", "Antivenoms â€” may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
+    interactions: [ "Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours", "Naloxone — concurrent use of other opioid antagonists", "Antivenoms — may interfere with vaccine efficacy", "Multiple antidote interactions depending on specific toxins"
 ],
     monitoring: "Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.",
     patient_counselling: "Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.",

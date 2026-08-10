@@ -16,9 +16,9 @@ ${box(10, 70, 120, 32, 'Lung ACE', '#8b5cf6')}
 ${box(160, 70, 120, 32, 'Angiotensin II')}
 ${box(310, 70, 100, 32, 'AT1 Receptor')}
 ${box(10, 130, 100, 40, 'Vasoconstriction', '#ef4444')}
-${box(140, 130, 100, 40, 'Aldosterone â†‘', '#f59e0b')}
-${box(280, 130, 100, 40, 'Naâº/Hâ‚‚O Retention', '#f59e0b')}
-${box(420, 80, 90, 60, 'BP â†‘', '#ef4444')}
+${box(140, 130, 100, 40, 'Aldosterone ↑', '#f59e0b')}
+${box(280, 130, 100, 40, 'Na⁺/H₂O Retention', '#f59e0b')}
+${box(420, 80, 90, 60, 'BP ↑', '#ef4444')}
 ${arrow(110, 26, 138, 26)}
 ${arrow(260, 26, 288, 26)}
 ${arrow(70, 42, 70, 66)}
@@ -29,16 +29,16 @@ ${arrow(220, 102, 190, 128)}
 ${arrow(360, 102, 330, 128)}
 ${arrow(430, 110, 465, 110)}
 <text x="20" y="210" font-size="9" fill="#3b82f6" font-weight="bold">Drug Targets:</text>
-<rect x="20" y="216" width="70" height="20" rx="4" fill="#3b82f618" stroke="#3b82f6" stroke-width="1"/><text x="55" y="230" text-anchor="middle" font-size="9" fill="#3b82f6">ACEi â†’â†“ACE</text>
-<rect x="100" y="216" width="70" height="20" rx="4" fill="#8b5cf618" stroke="#8b5cf6" stroke-width="1"/><text x="135" y="230" text-anchor="middle" font-size="9" fill="#8b5cf6">ARB â†’â†“AT1</text>
-<rect x="180" y="216" width="80" height="20" rx="4" fill="#10b98118" stroke="#10b981" stroke-width="1"/><text x="220" y="230" text-anchor="middle" font-size="9" fill="#10b981">CCB â†’ Vasodilate</text>
-<rect x="270" y="216" width="70" height="20" rx="4" fill="#f59e0b18" stroke="#f59e0b" stroke-width="1"/><text x="305" y="230" text-anchor="middle" font-size="9" fill="#f59e0b">Thiazide â†’â†“Naâº</text>
+<rect x="20" y="216" width="70" height="20" rx="4" fill="#3b82f618" stroke="#3b82f6" stroke-width="1"/><text x="55" y="230" text-anchor="middle" font-size="9" fill="#3b82f6">ACEi →↓ACE</text>
+<rect x="100" y="216" width="70" height="20" rx="4" fill="#8b5cf618" stroke="#8b5cf6" stroke-width="1"/><text x="135" y="230" text-anchor="middle" font-size="9" fill="#8b5cf6">ARB →↓AT1</text>
+<rect x="180" y="216" width="80" height="20" rx="4" fill="#10b98118" stroke="#10b981" stroke-width="1"/><text x="220" y="230" text-anchor="middle" font-size="9" fill="#10b981">CCB → Vasodilate</text>
+<rect x="270" y="216" width="70" height="20" rx="4" fill="#f59e0b18" stroke="#f59e0b" stroke-width="1"/><text x="305" y="230" text-anchor="middle" font-size="9" fill="#f59e0b">Thiazide →↓Na⁺</text>
 </svg>`
 
 export const HF_GDMT_DIAGRAM = `<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
 ${box(10, 10, 120, 32, 'Heart Failure (HFrEF)', '#ef4444')}
 ${arrow(130, 26, 170, 26)}
-${box(180, 10, 100, 32, 'EF â‰¤ 40%')}
+${box(180, 10, 100, 32, 'EF ≤ 40%')}
 ${arrow(280, 26, 320, 26)}
 ${box(330, 10, 120, 32, 'Start GDMT Quadruple', '#10b981')}
 ${box(20, 65, 110, 36, 'ARNI / ACEi', '#3b82f6')}
@@ -57,7 +57,7 @@ ${box(30, 180, 170, 36, 'Add Digoxin if AFib', '#a855f7')}
 ${box(230, 180, 150, 36, 'Consider ICD/CRT', '#a855f7')}
 ${arrow(105, 161, 85, 178)}
 ${arrow(270, 161, 290, 178)}
-<text x="20" y="240" font-size="9" fill="#64748b">All four GDMT pillars reduce mortality in HFrEF â€” start simultaneously, titrate to target doses.</text>
+<text x="20" y="240" font-size="9" fill="#64748b">All four GDMT pillars reduce mortality in HFrEF — start simultaneously, titrate to target doses.</text>
 </svg>`
 
 export const DM_TREATMENT_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
@@ -162,7 +162,7 @@ ${arrow(95, 93, 75, 115)}
 ${arrow(255, 93, 255, 115)}
 ${arrow(415, 93, 415, 115)}
 ${box(10, 118, 150, 36, 'ACT (Artemether-Lumefantrine)', '#10b981')}
-${box(180, 118, 140, 36, 'IV Artesunate x 24h â†’ ACT', '#ef4444')}
+${box(180, 118, 140, 36, 'IV Artesunate x 24h → ACT', '#ef4444')}
 ${box(340, 118, 140, 36, 'ACT + Primaquine (G6PD?)', '#f59e0b')}
 <text x="20" y="185" font-size="9" fill="#64748b">WHO 2023: First-line for uncomplicated malaria = ACT. Severe malaria = IV Artesunate.</text>
 <text x="20" y="200" font-size="9" fill="#64748b">Primaquine for hypnozoite eradication in P. vivax/ovale ONLY after G6PD screening.</text>
@@ -192,7 +192,7 @@ ${arrow(95, 93, 60, 115)}
 ${arrow(255, 93, 235, 115)}
 ${arrow(415, 93, 415, 115)}
 ${box(10, 118, 140, 36, 'Aspirin + P2Y12i + Heparin + PCI', '#3b82f6')}
-${box(180, 118, 150, 36, 'Aspirin + P2Y12i + Anticoag Â± PCI', '#3b82f6')}
+${box(180, 118, 150, 36, 'Aspirin + P2Y12i + Anticoag ± PCI', '#3b82f6')}
 ${box(360, 118, 130, 36, 'Aspirin + P2Y12i + Anticoag', '#3b82f6')}
 ${box(80, 175, 340, 30, 'Long-term: DAPT 12mo + Statin (high-intensity) + BB + ACEi', '#10b981')}
 ${arrow(255, 154, 255, 173)}
@@ -1005,7 +1005,7 @@ ${arrow(395, 93, 395, 115)}
 ${box(10, 118, 140, 36, 'Oral Amoxicillin 25-50mg/kg TDS', '#10b981')}
 ${box(170, 118, 160, 36, 'IM Ampicillin 50mg/kg + Gentamicin', '#f59e0b')}
 ${box(350, 118, 140, 36, 'IV Ampicillin + Gentamicin', '#ef4444')}
-${box(60, 175, 180, 30, 'SpO2 <90% → Oxygen (target >=92%)', '#8b5cf6')}
+${box(60, 175, 180, 30, 'SpO2 <90% → Oxygen (target ≥92%)', '#8b5cf6')}
 ${arrow(310, 154, 310, 173)}
 <text x="20" y="225" font-size="9" fill="#64748b">KENYA: IMCI implementation nationwide. PCV-10 in routine immunisation since 2011. Leading cause of under-5 mortality.</text>
 </svg>`
@@ -1177,7 +1177,7 @@ ${box(340, 177, 150, 40, 'Target: UA <360 µmol/L (<300 if tophi)', '#64748b')}
 export const OSTEOPOROSIS_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
 ${box(160, 5, 150, 30, 'Silent: Low BMD → Fragility Fx', '#3b82f6')}
 ${arrow(235, 35, 235, 55)}
-${box(50, 57, 150, 36, 'Screening: DXA (T-score <= -2.5)', '#3b82f6')}
+${box(50, 57, 150, 36, 'Screening: DXA (T-score ≤ -2.5)', '#3b82f6')}
 ${box(260, 57, 150, 36, 'FRAX Risk Calculator', '#f59e0b')}
 ${arrow(235, 93, 235, 113)}
 ${box(50, 115, 160, 36, 'Bisphosphonate: Alendronate 70mg weekly', '#10b981')}

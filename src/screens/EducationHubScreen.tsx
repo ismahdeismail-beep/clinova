@@ -138,7 +138,7 @@ export default function EducationHubScreen() {
   };
 
   // Fetch custom sub-folders/units from Firestore
-  const fetchCustomUnits = async () => {
+  const fetchCustomUnits = useCallback(async () => {
     const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
     if (userData && fetchModuleId) {
       setLoadingCustom(true);
@@ -151,11 +151,11 @@ export default function EducationHubScreen() {
         setLoadingCustom(false);
       }
     }
-  };
+  }, [selectedSubModule, selectedModule, userData]);
 
   useEffect(() => {
     fetchCustomUnits();
-  }, [userData, selectedModule, selectedSubModule]);
+  }, [fetchCustomUnits]);
 
   // Sync state from URL params (deep-link, refresh, browser back/forward)
   useEffect(() => {
@@ -402,7 +402,7 @@ export default function EducationHubScreen() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
-            {/* Grid vs Graph Toggles â€” admin only */}
+            {/* Grid vs Graph Toggles — admin only */}
             {isAdmin && !selectedModule && (
               <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
                 <button
@@ -434,7 +434,7 @@ export default function EducationHubScreen() {
         </div>
         )}
 
-        {/* Breadcrumb Navigation â€” only at top level; drill-in view has its own header/breadcrumb */}
+        {/* Breadcrumb Navigation — only at top level; drill-in view has its own header/breadcrumb */}
         {!selectedModule && (
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">
             <button onClick={handleBackToModules} className="text-[var(--text)] font-bold flex items-center gap-1">
@@ -446,7 +446,7 @@ export default function EducationHubScreen() {
         {/* Content Area */}
         <div className="pb-20 sm:pb-24">
           
-          {/* Level 1: Modules â€” CurriculumGraph admin-only */}
+          {/* Level 1: Modules — CurriculumGraph admin-only */}
           {isAdmin && !selectedModule && viewMode === 'graph' && (
             <div className="animate-in fade-in duration-300">
               <CurriculumGraph />
@@ -976,7 +976,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   };
 
   // Fetch subfolders from service
-  const fetchFolders = async () => {
+  const fetchFolders = useCallback(async () => {
     if (userData) {
       try {
         const folders = await EducationService.getSubFolders(userData.id, unit.id);
@@ -985,11 +985,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         console.error('Error fetching subfolders:', err);
       }
     }
-  };
+  }, [userData, unit.id]);
 
   useEffect(() => {
     fetchFolders();
-  }, [userData, unit.id]);
+  }, [fetchFolders]);
 
   const activeParentId = currentFolderId === unit.id ? 'root' : currentFolderId;
   const currentLevelFolders = subFolders.filter(f => f.parentId === activeParentId);
@@ -1047,7 +1047,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
     : tabs;
 
   // When a disease note is open, present it as a full standalone page:
-  // no folder navigation, tabs, or export chrome â€” only the disease's own nav.
+  // no folder navigation, tabs, or export chrome — only the disease's own nav.
   if (diseaseOpen) {
     return (
       <div className="animate-in fade-in duration-300 max-w-4xl mx-auto">
@@ -1179,7 +1179,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
         </div>
 
-        {/* Bottom Tabs â€” retractable */}
+        {/* Bottom Tabs — retractable */}
         <div className="border-t border-[var(--border)] bg-[var(--surface-dim)]/40">
           <button
             onClick={() => setShowTabs(!showTabs)}
@@ -1383,7 +1383,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         <div className="my-8 py-4 px-6 border-y border-slate-200 inline-block mx-auto max-w-md">
                           <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Path Context</p>
                           <p className="text-xs font-extrabold text-slate-800">
-                            {unit.title} {folderStack.map(f => ` â†’ ${f.title}`)}
+                            {unit.title} {folderStack.map(f => ` → ${f.title}`)}
                           </p>
                         </div>
 
@@ -1859,7 +1859,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
       console.error('Error asking tutor:', error);
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: `âš ï¸ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
+        content: `⚠️ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
       }]);
     } finally {
       setIsTutorThinking(false);
@@ -1938,7 +1938,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 }
 
 // ==========================================
-// DISEASE NOTES â€” full-page detail view
+// DISEASE NOTES — full-page detail view
 // ==========================================
 function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: EducationModuleUnit; onOpenDisease?: () => void; onCloseDisease?: () => void }) {
   const [notes, setNotes] = useState<DiseaseNote[]>([])
@@ -2236,7 +2236,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </div>
       </Section>
 
-      {/* Â§1 Disease Identification */}
+      {/* §1 Disease Identification */}
       {(note.alternativeNames?.length || note.icd10 || note.icd11) && (
         <Section num="1" title="Disease Identification">
           <DefinitionList
@@ -2249,28 +2249,28 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       )}
 
-      {/* Â§2 Definition */}
+      {/* §2 Definition */}
       {note.definition && (
         <Section num="2" title="Definition">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.definition} /></p>
         </Section>
       )}
 
-      {/* Â§3 Epidemiology */}
+      {/* §3 Epidemiology */}
       {note.epidemiology && (
         <Section num="3" title="Epidemiology">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.epidemiology} /></p>
         </Section>
       )}
 
-      {/* Â§4 Etiology */}
+      {/* §4 Etiology */}
       {note.etiology?.length ? (
         <Section num="4" title="Etiology (Causes)">
           <Bullets items={note.etiology} />
         </Section>
       ) : null}
 
-      {/* Â§5 Risk Factors */}
+      {/* §5 Risk Factors */}
       {note.riskFactors && (note.riskFactors.nonModifiable?.length || note.riskFactors.modifiable?.length) ? (
         <Section num="5" title="Risk Factors">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -2290,49 +2290,49 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§6 Pathophysiology */}
+      {/* §6 Pathophysiology */}
       {note.pathophysiology && (
         <Section num="6" title="Pathophysiology & Mechanism">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.pathophysiology} /></p>
         </Section>
       )}
 
-      {/* Â§7 Classification */}
+      {/* §7 Classification */}
       {note.classification?.length ? (
         <Section num="7" title="Classification">
           <Bullets items={note.classification} />
         </Section>
       ) : null}
 
-      {/* Â§8 Clinical Features */}
+      {/* §8 Clinical Features */}
       {note.clinicalFeatures?.length ? (
         <Section num="8" title="Clinical Features">
           <Bullets items={note.clinicalFeatures} />
         </Section>
       ) : null}
 
-      {/* Â§9 Signs */}
+      {/* §9 Signs */}
       {note.signs?.length ? (
         <Section num="9" title="Signs">
           <Bullets items={note.signs} />
         </Section>
       ) : null}
 
-      {/* Â§10 Red Flag Features */}
+      {/* §10 Red Flag Features */}
       {note.redFlags?.length ? (
         <Section num="10" title="Red Flag Features" tone="rose">
           <Bullets items={note.redFlags} tone="rose" />
         </Section>
       ) : null}
 
-      {/* Â§11 Complications */}
+      {/* §11 Complications */}
       {note.complications?.length ? (
         <Section num="11" title="Complications">
           <Bullets items={note.complications} />
         </Section>
       ) : null}
 
-      {/* Â§12 Differential Diagnosis */}
+      {/* §12 Differential Diagnosis */}
       {note.differential?.length ? (
         <Section num="12" title="Differential Diagnosis">
           <div className="space-y-3">
@@ -2347,28 +2347,28 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§15 Investigations */}
+      {/* §15 Investigations */}
       {note.investigations?.length ? (
         <Section num="15" title="Investigations">
           <Bullets items={note.investigations} />
         </Section>
       ) : null}
 
-      {/* Â§16 Diagnosis */}
+      {/* §16 Diagnosis */}
       {note.diagnosis && (
         <Section num="16" title="Diagnosis">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.diagnosis} /></p>
         </Section>
       )}
 
-      {/* Â§17 Disease Severity Scores */}
+      {/* §17 Disease Severity Scores */}
       {note.severityScores?.length ? (
         <Section num="17" title="Disease Severity Scores">
           <Bullets items={note.severityScores} />
         </Section>
       ) : null}
 
-      {/* Â§18 Management */}
+      {/* §18 Management */}
       {note.management && (note.management.goals || note.management.immediate || note.management.definitive || note.management.longTerm) ? (
         <Section num="18" title="Management">
           <div className="space-y-3">
@@ -2380,7 +2380,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§19 Non-Pharmacological Management */}
+      {/* §19 Non-Pharmacological Management */}
       {note.nonPharmacological?.length ? (
         <Section num="19" title="Non-Pharmacological Management">
           <Bullets items={note.nonPharmacological} tone="amber" />
@@ -2394,7 +2394,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       )}
 
-      {/* Â§20 Pharmacological Management â€” Key Drugs (responsive) */}
+      {/* §20 Pharmacological Management — Key Drugs (responsive) */}
       {note.keyDrugs?.length ? (
         <Section num="20" title="Pharmacological Management">
           {/* Desktop table */}
@@ -2459,70 +2459,70 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§21 Surgical Management */}
+      {/* §21 Surgical Management */}
       {note.surgical && (
         <Section num="21" title="Surgical Management">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.surgical} /></p>
         </Section>
       )}
 
-      {/* Â§22 Monitoring */}
+      {/* §22 Monitoring */}
       {note.monitoring && (
         <Section num="22" title="Monitoring Parameters" tone="amber">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.monitoring} /></p>
         </Section>
       )}
 
-      {/* Â§23 Prevention */}
+      {/* §23 Prevention */}
       {note.prevention?.length ? (
         <Section num="23" title="Prevention">
           <Bullets items={note.prevention} />
         </Section>
       ) : null}
 
-      {/* Â§24 Prognosis */}
+      {/* §24 Prognosis */}
       {note.prognosis && (
         <Section num="24" title="Prognosis">
           <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.prognosis} /></p>
         </Section>
       )}
 
-      {/* Â§25 Patient Counseling */}
+      {/* §25 Patient Counseling */}
       {note.counseling?.length ? (
         <Section num="25" title="Patient Counseling">
           <Bullets items={note.counseling} tone="amber" />
         </Section>
       ) : null}
 
-      {/* Â§26 Special Populations */}
+      {/* §26 Special Populations */}
       {note.specialPopulations?.length ? (
         <Section num="26" title="Special Populations">
           <Bullets items={note.specialPopulations} />
         </Section>
       ) : null}
 
-      {/* Â§27 Clinical Pearls */}
+      {/* §27 Clinical Pearls */}
       {note.clinicalPearls?.length ? (
         <Section num="27" title="Clinical Pearls" tone="violet">
           <Bullets items={note.clinicalPearls} />
         </Section>
       ) : null}
 
-      {/* Â§28 Common Mistakes */}
+      {/* §28 Common Mistakes */}
       {note.commonMistakes?.length ? (
         <Section num="28" title="Common Mistakes" tone="rose">
           <Bullets items={note.commonMistakes} tone="rose" />
         </Section>
       ) : null}
 
-      {/* Â§29 Drug Therapy Problems */}
+      {/* §29 Drug Therapy Problems */}
       {note.drugTherapyProblems?.length ? (
         <Section num="29" title="Drug Therapy Problems (Clinical Pharmacy)">
           <Bullets items={note.drugTherapyProblems} />
         </Section>
       ) : null}
 
-      {/* Â§30 Evidence-Based Guidelines */}
+      {/* §30 Evidence-Based Guidelines */}
       {note.guidelines?.length ? (
         <Section num="30" title="Evidence-Based Guidelines">
           <Bullets items={note.guidelines} />
@@ -2547,7 +2547,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </div>
       )}
 
-      {/* Â§32 FAQ */}
+      {/* §32 FAQ */}
       {note.faq?.length ? (
         <Section num="32" title="Frequently Asked Questions">
           <div className="space-y-3">
@@ -2561,7 +2561,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§33 Clinical Case Example */}
+      {/* §33 Clinical Case Example */}
       {note.caseExample && (
         <Section num="33" title="Clinical Case Example">
           <div className="space-y-2">
@@ -2576,7 +2576,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       )}
 
-      {/* Â§34 Self-Assessment (MCQs) */}
+      {/* §34 Self-Assessment (MCQs) */}
       {note.mcqs?.length ? (
         <Section num="34" title="Self-Assessment Questions">
           <div className="space-y-6">
@@ -2587,7 +2587,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§35 References */}
+      {/* §35 References */}
       {note.references?.length ? (
         <Section num="35" title="References">
           <ol className="space-y-1.5 list-decimal list-inside">
@@ -2598,7 +2598,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* Â§36 Metadata */}
+      {/* §36 Metadata */}
       {note.metadata && (
         <Section num="36" title="Metadata">
           <DefinitionList
@@ -2680,7 +2680,7 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
       ) : (
         <div className="space-y-2">
           <div className={`text-xs font-semibold ${selected?.charAt(0) === correctLetter ? 'text-emerald-600' : 'text-red-600'}`}>
-            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect â€” Answer: ${correctLetter}`}
+            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect — Answer: ${correctLetter}`}
           </div>
           <p className="text-[11px] text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)]/50 rounded-lg p-3 border border-[var(--border)]/30">
             <HighlightTerms text={mcq.explanation} />

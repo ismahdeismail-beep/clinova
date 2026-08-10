@@ -5684,16 +5684,16 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
       { id: 'nd-pe-3', diagnosis: 'Anxiety related to respiratory distress and threat to life', definingCharacteristics: ['Restlessness', 'Verbalisation of fear', 'Diaphoresis'] },
     ],
     goals: [
-      { id: 'g-pe-1', shortTerm: 'SpO2 >= 94% on supplemental oxygen; respiratory rate < 20; haemodynamic stability within 2 hours.', longTerm: 'Complete anticoagulation course; no recurrent PE; patient resumes normal activities.' },
+      { id: 'g-pe-1', shortTerm: 'SpO2 ≥ 94% on supplemental oxygen; respiratory rate < 20; haemodynamic stability within 2 hours.', longTerm: 'Complete anticoagulation course; no recurrent PE; patient resumes normal activities.' },
     ],
     interventions: [
-      { id: 'i-pe-1', category: 'independent', action: 'Administer supplemental oxygen to maintain SpO2 >= 94%. Position in semi-Fowlers (45 degrees). Monitor ABGs and respiratory status continuously.', rationale: 'Oxygenation is the immediate priority. Semi-Fowlers position improves ventilation-perfusion matching.', frequency: 'Continuous SpO2 monitoring; ABGs every 2-4 h' },
+      { id: 'i-pe-1', category: 'independent', action: 'Administer supplemental oxygen to maintain SpO2 ≥ 94%. Position in semi-Fowlers (45 degrees). Monitor ABGs and respiratory status continuously.', rationale: 'Oxygenation is the immediate priority. Semi-Fowlers position improves ventilation-perfusion matching.', frequency: 'Continuous SpO2 monitoring; ABGs every 2-4 h' },
       { id: 'i-pe-2', category: 'dependent', action: 'Administer anticoagulants (UFH bolus + infusion or LMWH) as prescribed. Prepare for thrombolysis (alteplase) if massive PE with haemodynamic compromise.', rationale: 'Anticoagulation prevents further clot formation. Thrombolysis restores pulmonary perfusion.', frequency: 'UFH: aPTT every 6 h; thrombolysis within 30 min of order' },
       { id: 'i-pe-3', category: 'independent', action: 'Monitor haemodynamics: continuous ECG, invasive BP, CVP. Assess for right heart failure. Maintain fluid balance -- avoid overload.', rationale: 'Right heart failure is the primary cause of death in massive PE.', frequency: 'Continuous haemodynamic monitoring; fluid balance every 4 h' },
       { id: 'i-pe-4', category: 'collaborative', action: 'Prepare for embolectomy or IVC filter if anticoagulation contraindicated. Ensure consent and post-procedure monitoring.', rationale: 'Surgical options reserved for massive PE with contraindications to anticoagulation.', frequency: 'As clinically indicated; post-procedure every 15 min x 4' },
     ],
     evaluation: [
-      { id: 'e-pe-1', expected: 'SpO2 >= 94% on room air. Haemodynamic stability achieved. No further embolic events.', status: 'met' },
+      { id: 'e-pe-1', expected: 'SpO2 ≥ 94% on room air. Haemodynamic stability achieved. No further embolic events.', status: 'met' },
     ],
     patientEducation: [
       { topic: 'Pulmonary Embolism Recovery', keyPoints: ['Anticoagulation therapy is essential -- take medications exactly as prescribed.', 'Report any new symptoms: chest pain, shortness of breath, coughing blood.', 'Gradually increase activity as tolerated.', 'Stay hydrated and avoid prolonged immobility.', 'Attend all follow-up appointments and blood tests.'], method: 'Verbal, written discharge summary, teach-back' },
@@ -5720,21 +5720,21 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
       { id: 'nd-cap-3', diagnosis: 'Ineffective Airway Clearance related to excessive sputum production', definingCharacteristics: ['Productive cough', 'Crackles', 'Sputum production'] },
     ],
     goals: [
-      { id: 'g-cap-1', shortTerm: 'Temperature < 38 C; SpO2 >= 94%; respiratory rate < 24 within 24 hours.', longTerm: 'Complete antimicrobial course; chest X-ray clear; no complications at discharge.' },
+      { id: 'g-cap-1', shortTerm: 'Temperature < 38 C; SpO2 ≥ 94%; respiratory rate < 24 within 24 hours.', longTerm: 'Complete antimicrobial course; chest X-ray clear; no complications at discharge.' },
     ],
     interventions: [
-      { id: 'i-cap-1', category: 'independent', action: 'Administer supplemental oxygen to maintain SpO2 >= 94%. Encourage deep breathing exercises and incentive spirometry every 2 hours. Assist with position changes every 2 hours.', rationale: 'Deep breathing and position changes promote lung expansion and prevent further consolidation.', frequency: 'Continuous SpO2; incentive spirometry every 2 h' },
+      { id: 'i-cap-1', category: 'independent', action: 'Administer supplemental oxygen to maintain SpO2 ≥ 94%. Encourage deep breathing exercises and incentive spirometry every 2 hours. Assist with position changes every 2 hours.', rationale: 'Deep breathing and position changes promote lung expansion and prevent further consolidation.', frequency: 'Continuous SpO2; incentive spirometry every 2 h' },
       { id: 'i-cap-2', category: 'dependent', action: 'Administer prescribed antimicrobials per CURB-65. Ensure first dose within 4 hours of admission. Monitor for allergic reactions. Administer antipyretics for temperature > 38.5 C.', rationale: 'Timely antimicrobial therapy is the cornerstone of CAP management.', frequency: 'Antimicrobials as prescribed; antipyretics PRN' },
       { id: 'i-cap-3', category: 'independent', action: 'Encourage oral hydration (2-3 L/day). Monitor sputum colour, volume, and consistency. Perform chest physiotherapy as indicated.', rationale: 'Hydration thins secretions. Airway clearance prevents atelectasis.', frequency: 'Fluid monitoring hourly; sputum assessment every shift' },
       { id: 'i-cap-4', category: 'independent', action: 'Monitor for complications: pleural effusion, empyema, sepsis, and respiratory failure.', rationale: 'Early detection enables timely intervention.', frequency: 'Clinical assessment every 4 h' },
     ],
     evaluation: [
-      { id: 'e-cap-1', expected: 'Temperature normalised. SpO2 >= 94% on room air. Able to cough and clear secretions.', status: 'met' },
+      { id: 'e-cap-1', expected: 'Temperature normalised. SpO2 ≥ 94% on room air. Able to cough and clear secretions.', status: 'met' },
     ],
     patientEducation: [
       { topic: 'Pneumonia Recovery and Prevention', keyPoints: ['Complete the full course of antibiotics.', 'Drink plenty of fluids to thin mucus.', 'Practice deep breathing exercises daily.', 'Get vaccinated: pneumococcal and influenza.', 'Stop smoking.'], method: 'Verbal, written discharge leaflet' },
     ],
-    dischargePlanning: { checklist: ['Temperature normalised for >= 24 hours', 'SpO2 >= 94% on room air', 'Tolerating oral intake', 'Antimicrobial prescription provided', 'Follow-up CXR scheduled'], followUp: 'GP review in 1 week. Repeat CXR at 6 weeks.', referrals: ['GP for follow-up', 'Smoking cessation service', 'Pulmonology if recurrent pneumonia'], warningSigns: ['Return of fever', 'Worsening breathlessness', 'Chest pain', 'Coughing blood', 'Confusion'] },
+    dischargePlanning: { checklist: ['Temperature normalised for ≥ 24 hours', 'SpO2 ≥ 94% on room air', 'Tolerating oral intake', 'Antimicrobial prescription provided', 'Follow-up CXR scheduled'], followUp: 'GP review in 1 week. Repeat CXR at 6 weeks.', referrals: ['GP for follow-up', 'Smoking cessation service', 'Pulmonology if recurrent pneumonia'], warningSigns: ['Return of fever', 'Worsening breathlessness', 'Chest pain', 'Coughing blood', 'Confusion'] },
     complications: ['Pleural effusion', 'Empyema', 'Lung abscess', 'Sepsis', 'Respiratory failure', 'ARDS'],
   },
 
@@ -5785,7 +5785,7 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
       { id: 'nd-cv-3', diagnosis: 'Anxiety and Social Isolation related to quarantine and fear of illness', definingCharacteristics: ['Expressed worry', 'Social isolation', 'Sleep disturbance'] },
     ],
     goals: [
-      { id: 'g-cv-1', shortTerm: 'SpO2 >= 94% on supplemental oxygen; respiratory rate < 24; fever controlled within 24 hours.', longTerm: 'No progression to ARDS; successful weaning from oxygen; recovery without complications.' },
+      { id: 'g-cv-1', shortTerm: 'SpO2 ≥ 94% on supplemental oxygen; respiratory rate < 24; fever controlled within 24 hours.', longTerm: 'No progression to ARDS; successful weaning from oxygen; recovery without complications.' },
     ],
     interventions: [
       { id: 'i-cv-1', category: 'independent', action: 'Implement strict transmission-based precautions: N95, face shield, gown, gloves for AGPs. Monitor PPE compliance.', rationale: 'SARS-CoV-2 is highly transmissible. Full PPE protects healthcare workers.', frequency: 'Continuous; PPE check at every entry' },
@@ -5794,12 +5794,12 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
       { id: 'i-cv-4', category: 'independent', action: 'Provide psychosocial support: facilitate video calls with family, address isolation concerns, screen for anxiety and depression.', rationale: 'Prolonged isolation causes significant psychological distress.', frequency: 'Daily check-in; family calls facilitated daily' },
     ],
     evaluation: [
-      { id: 'e-cv-1', expected: 'SpO2 >= 94% on room air. Fever resolved. No progression to ARDS.', status: 'met' },
+      { id: 'e-cv-1', expected: 'SpO2 ≥ 94% on room air. Fever resolved. No progression to ARDS.', status: 'met' },
     ],
     patientEducation: [
       { topic: 'COVID-19 Recovery and Long COVID', keyPoints: ['Complete your isolation period as directed.', 'Monitor oxygen levels at home with a pulse oximeter.', 'Rest and gradually increase activity.', 'Be aware of Long COVID symptoms.', 'Get vaccinated.', 'Practice good hand hygiene.'], method: 'Verbal, written discharge instructions' },
     ],
-    dischargePlanning: { checklist: ['SpO2 >= 94% on room air for >= 24 hours', 'Afebrile for >= 24 hours', 'Isolation period completed', 'Home monitoring plan provided', 'Follow-up scheduled'], followUp: 'Telehealth review in 1-2 weeks. Long COVID clinic if persistent symptoms.', referrals: ['Pulmonology if persistent symptoms', 'Long COVID rehabilitation', 'Mental health if needed'], warningSigns: ['SpO2 < 94% at home', 'Worsening breathlessness', 'Return of fever', 'Persistent chest pain', 'Confusion'] },
+    dischargePlanning: { checklist: ['SpO2 ≥ 94% on room air for ≥ 24 hours', 'Afebrile for ≥ 24 hours', 'Isolation period completed', 'Home monitoring plan provided', 'Follow-up scheduled'], followUp: 'Telehealth review in 1-2 weeks. Long COVID clinic if persistent symptoms.', referrals: ['Pulmonology if persistent symptoms', 'Long COVID rehabilitation', 'Mental health if needed'], warningSigns: ['SpO2 < 94% at home', 'Worsening breathlessness', 'Return of fever', 'Persistent chest pain', 'Confusion'] },
     complications: ['ARDS', 'Cytokine storm', 'Thromboembolism', 'Cardiac injury', 'Secondary bacterial infection', 'Multi-organ failure', 'Long COVID syndrome'],
   },
 
@@ -5821,11 +5821,11 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
       { id: 'nd-hiv-3', diagnosis: 'Anticipatory Grieving related to chronic illness, stigma, and life changes', definingCharacteristics: ['Expressed sadness', 'Verbalisation of fear', 'Social withdrawal'] },
     ],
     goals: [
-      { id: 'g-hiv-1', shortTerm: 'ART initiated within 24 hours of diagnosis. Patient demonstrates correct pill-taking technique.', longTerm: 'Viral load suppressed to < 50 copies/mL. CD4 count > 500 cells/uL. No opportunistic infections. Adherence >= 95%.' },
+      { id: 'g-hiv-1', shortTerm: 'ART initiated within 24 hours of diagnosis. Patient demonstrates correct pill-taking technique.', longTerm: 'Viral load suppressed to < 50 copies/mL. CD4 count > 500 cells/uL. No opportunistic infections. Adherence ≥ 95%.' },
     ],
     interventions: [
       { id: 'i-hiv-1', category: 'dependent', action: 'Initiate ART as prescribed (typically TDF/3TC/DTG first-line). Monitor for immune reconstitution inflammatory syndrome (IRIS) in first 2-4 weeks. Ensure drug interactions checked.', rationale: 'Same-day ART improves outcomes. IRIS monitoring prevents dangerous inflammatory reactions.', frequency: 'Daily during initiation; VL at 6 months' },
-      { id: 'i-hiv-2', category: 'independent', action: 'Educate on ART adherence: same time daily, never skip doses, what to do if a dose is missed, common side effects (nausea, headache, dizziness) that usually resolve in 2-4 weeks.', rationale: 'Adherence >= 95% is required for viral suppression and preventing drug resistance.', frequency: 'Daily during admission; reinforced at every visit' },
+      { id: 'i-hiv-2', category: 'independent', action: 'Educate on ART adherence: same time daily, never skip doses, what to do if a dose is missed, common side effects (nausea, headache, dizziness) that usually resolve in 2-4 weeks.', rationale: 'Adherence ≥ 95% is required for viral suppression and preventing drug resistance.', frequency: 'Daily during admission; reinforced at every visit' },
       { id: 'i-hiv-3', category: 'independent', action: 'Monitor for opportunistic infections: screen for TB (cough > 2 weeks), check oral cavity for thrush, assess for chronic diarrhoea, monitor weight. Ensure prophylaxis (cotrimoxazole for CD4 < 200).', rationale: 'OI prophylaxis significantly reduces morbidity and mortality in advanced HIV.', frequency: 'Screening at every visit; cotrimoxazole daily if CD4 < 200' },
       { id: 'i-hiv-4', category: 'independent', action: 'Provide psychosocial support: address stigma concerns, connect with support groups, ensure confidentiality, screen for depression, facilitate disclosure discussions.', rationale: 'Psychosocial support improves adherence and quality of life.', frequency: 'Assessment at every visit' },
     ],
@@ -5874,7 +5874,7 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
   'Bacterial Infections': {
     id: 'cp-bacterial', disease: 'Bacterial Infections', specialty: 'Infectious Disease Care',
     overview: 'Bacterial infections range from localised skin infections to life-threatening sepsis. Nursing care focuses on antimicrobial stewardship, source control, haemodynamic monitoring, and infection prevention.',
-    pathophysiology: 'Bacterial invasion triggers a systemic inflammatory response. In severe cases, this progresses to sepsis (SOFA score >= 2), septic shock (vasopressor requirement + lactate > 2 mmol/L), and multi-organ dysfunction.',
+    pathophysiology: 'Bacterial invasion triggers a systemic inflammatory response. In severe cases, this progresses to sepsis (SOFA score ≥ 2), septic shock (vasopressor requirement + lactate > 2 mmol/L), and multi-organ dysfunction.',
     commonCauses: ['Staphylococcus aureus (skin/bone)', 'Escherichia coli (UTI)', 'Streptococcus pneumoniae (pneumonia)', 'Klebsiella spp.', 'Pseudomonas aeruginosa'],
     riskFactors: ['Immunosuppression', 'Diabetes mellitus', 'Indwelling devices (catheters, IV lines)', 'Surgical wounds', 'Chronic lung disease', 'Extremes of age'],
     subjectiveData: ['Fever or hypothermia', 'Pain and swelling at infection site', 'Malaise and fatigue', 'Dyspnoea (if pulmonary)', 'Dysuria (if UTI)', 'Confusion (sepsis)'],
@@ -5889,7 +5889,7 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
     ],
     interventions: [
       { id: 'i-bi-1', category: 'dependent', action: 'Administer empiric antimicrobials within 1 hour of sepsis recognition (broad-spectrum: piperacillin-tazobactam or meropenem + vancomycin if MRSA risk). De-escalate based on culture results. Monitor for allergic reactions.', rationale: 'Each hour of delay in antimicrobial administration increases sepsis mortality by 7.6%.', frequency: 'Within 1 hour of sepsis recognition; de-escalate at 48-72 h based on cultures' },
-      { id: 'i-bi-2', category: 'independent', action: 'Implement sepsis bundle: 30 mL/kg crystalloid for hypotension or lactate >= 4; vasopressors (noradrenaline) if MAP < 65 after fluids; blood cultures before antibiotics; lactate every 2-4 hours.', rationale: 'The sepsis bundle (Surviving Sepsis Campaign) reduces mortality by 20% when fully compliant.', frequency: 'Hour-1 and hour-3 bundle elements; lactate every 2-4 h' },
+      { id: 'i-bi-2', category: 'independent', action: 'Implement sepsis bundle: 30 mL/kg crystalloid for hypotension or lactate ≥ 4; vasopressors (noradrenaline) if MAP < 65 after fluids; blood cultures before antibiotics; lactate every 2-4 hours.', rationale: 'The sepsis bundle (Surviving Sepsis Campaign) reduces mortality by 20% when fully compliant.', frequency: 'Hour-1 and hour-3 bundle elements; lactate every 2-4 h' },
       { id: 'i-bi-3', category: 'independent', action: 'Implement infection prevention: hand hygiene, aseptic technique for device care, timely removal of indwelling catheters, wound care, skin assessment. Monitor device-associated infection rates.', rationale: 'Healthcare-associated infections add 7-10 days to hospital stay and increase mortality.', frequency: 'Continuous; device assessment daily' },
       { id: 'i-bi-4', category: 'independent', action: 'Educate on antimicrobial stewardship and prevention: complete full course, never share antibiotics, hand hygiene, wound care, recognise signs of infection.', rationale: 'Patient education supports antimicrobial stewardship and prevents recurrent infections.', frequency: 'Daily during admission; reinforced at discharge' },
     ],
@@ -5899,7 +5899,7 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
     patientEducation: [
       { topic: 'Bacterial Infection Treatment and Prevention', keyPoints: ['Complete the full course of antibiotics.', 'Practice good hand hygiene to prevent spread.', 'Keep wounds clean and covered.', 'Never share or self-prescribe antibiotics.', 'Seek care early for signs of infection: fever, redness, swelling, pus.', 'Ensure vaccinations are up to date (pneumococcal, influenza).'], method: 'Verbal, written discharge instructions' },
     ],
-    dischargePlanning: { checklist: ['Temperature normalised for >= 24 hours', 'Antimicrobial prescription and duration confirmed', 'Source controlled', 'Infection prevention measures understood', 'Follow-up cultures scheduled if needed'], followUp: 'GP review in 1 week. Repeat cultures if complicated infection. Review antimicrobial duration.', referrals: ['Infectious disease if resistant organism', 'Surgery for source control if needed'], warningSigns: ['Return of fever', 'Worsening pain or swelling', 'Pus or wound breakdown', 'Confusion or drowsiness', 'Difficulty breathing'] },
+    dischargePlanning: { checklist: ['Temperature normalised for ≥ 24 hours', 'Antimicrobial prescription and duration confirmed', 'Source controlled', 'Infection prevention measures understood', 'Follow-up cultures scheduled if needed'], followUp: 'GP review in 1 week. Repeat cultures if complicated infection. Review antimicrobial duration.', referrals: ['Infectious disease if resistant organism', 'Surgery for source control if needed'], warningSigns: ['Return of fever', 'Worsening pain or swelling', 'Pus or wound breakdown', 'Confusion or drowsiness', 'Difficulty breathing'] },
     complications: ['Sepsis and septic shock', 'Multi-organ failure', 'Metastatic infection', 'Antimicrobial resistance', 'Superinfection (C. difficile)', 'Death (septic shock mortality 40%)'],
   },
 
@@ -5925,7 +5925,7 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
     ],
     interventions: [
       { id: 'i-dme-1', category: 'dependent', action: 'Administer IV fluid resuscitation: 0.9% NaCl 1L in first hour (adjust for cardiac status). Switch to 0.45% NaCl when glucose < 14 mmol/L. Add 5% dextrose when glucose < 11 mmol/L.', rationale: 'Fluid resuscitation corrects dehydration and restores tissue perfusion. Dextrose prevents hypoglycaemia while continuing insulin for ketosis.', frequency: 'Hourly fluid assessment; blood glucose every 1 h' },
-      { id: 'i-dme-2', category: 'dependent', action: 'Administer IV insulin infusion (0.1 units/kg/h regular insulin). Ensure potassium is >= 3.3 mmol/L before starting insulin. Monitor blood glucose hourly. Reduce to SC insulin when DKA resolves (pH > 7.3, bicarb > 15, anion gap normalised).', rationale: 'Insulin halts ketogenesis and lowers glucose. Potassium check prevents fatal hypokalaemia.', frequency: 'Continuous insulin infusion; blood glucose hourly; potassium every 2 h' },
+      { id: 'i-dme-2', category: 'dependent', action: 'Administer IV insulin infusion (0.1 units/kg/h regular insulin). Ensure potassium is ≥ 3.3 mmol/L before starting insulin. Monitor blood glucose hourly. Reduce to SC insulin when DKA resolves (pH > 7.3, bicarb > 15, anion gap normalised).', rationale: 'Insulin halts ketogenesis and lowers glucose. Potassium check prevents fatal hypokalaemia.', frequency: 'Continuous insulin infusion; blood glucose hourly; potassium every 2 h' },
       { id: 'i-dme-3', category: 'independent', action: 'Monitor electrolytes every 2-4 hours: potassium, sodium, bicarbonate, phosphate, magnesium. Replace as prescribed. Monitor ECG for potassium-related changes.', rationale: 'Insulin drives potassium intracellularly, risking fatal hypokalaemia. Careful replacement is essential.', frequency: 'Electrolytes every 2 h initially; ECG monitoring' },
       { id: 'i-dme-4', category: 'independent', action: 'Monitor neurological status (GCS) every 2 hours for HHS. Monitor urine output hourly (target > 0.5 mL/kg/h). Assess for fluid overload (lung crackles, JVP).', rationale: 'HHS causes altered consciousness from hyperosmolality. Fluid overload is a common complication of resuscitation.', frequency: 'GCS every 2 h; urine output hourly; lung assessment every 4 h' },
     ],

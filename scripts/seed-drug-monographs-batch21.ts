@@ -39,7 +39,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -55,10 +55,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Rasagiline",
@@ -68,7 +68,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -84,10 +84,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Selegiline",
@@ -97,7 +97,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -113,10 +113,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Sertraline",
@@ -126,7 +126,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -142,10 +142,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Venlafaxine",
@@ -155,7 +155,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -171,10 +171,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Zopiclone",
@@ -184,7 +184,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -200,10 +200,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Adapalene",
@@ -213,7 +213,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -229,7 +229,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -242,7 +242,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -258,7 +258,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -271,7 +271,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -287,7 +287,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -300,7 +300,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -316,7 +316,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -329,7 +329,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -345,7 +345,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -358,7 +358,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -374,7 +374,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -387,7 +387,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -403,7 +403,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -416,7 +416,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -432,7 +432,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -445,7 +445,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -461,7 +461,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -474,7 +474,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -490,7 +490,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -503,7 +503,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -519,7 +519,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -532,7 +532,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -548,7 +548,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -561,7 +561,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -577,7 +577,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -590,7 +590,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -606,7 +606,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -619,7 +619,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -635,7 +635,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -648,7 +648,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -664,7 +664,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -677,7 +677,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -693,7 +693,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -706,7 +706,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -722,7 +722,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -735,7 +735,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -751,7 +751,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -764,7 +764,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -780,7 +780,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -793,7 +793,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -809,7 +809,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -822,7 +822,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -838,7 +838,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -851,7 +851,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -867,7 +867,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -880,7 +880,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -896,7 +896,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -909,7 +909,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -925,7 +925,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -938,7 +938,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -954,7 +954,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -967,7 +967,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -983,7 +983,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -996,7 +996,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1012,7 +1012,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1025,7 +1025,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1041,7 +1041,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1054,7 +1054,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1070,7 +1070,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1083,7 +1083,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1099,7 +1099,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1112,7 +1112,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1128,7 +1128,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1141,7 +1141,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or excipients", "Untreated bacterial/fungal/viral infections at application site (corticosteroids)", "Skin ulceration / wounds (certain topical agents)", "Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)"
 ],
-    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity â€” use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
+    side_effects: [ "Local irritation, burning, stinging, pruritus at application site", "Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)", "Photosensitivity — use sun protection during treatment", "Contact dermatitis / allergic sensitization", "Skin discolouration (post-inflammatory hypo- or hyperpigmentation)"
 ],
     dosage: {
       "adult": {
@@ -1157,7 +1157,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Concurrent topical therapies â€” apply at different times to avoid interactions", "Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs â€” increased photosensitivity risk"
+    interactions: [ "Concurrent topical therapies — apply at different times to avoid interactions", "Systemic corticosteroids — additive HPA axis suppression with potent topical steroids", "Photosensitizing drugs — increased photosensitivity risk"
 ],
     monitoring: "Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.",
     patient_counselling: "Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.",
@@ -1168,9 +1168,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -1186,7 +1186,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",

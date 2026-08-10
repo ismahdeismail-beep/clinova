@@ -37,9 +37,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -55,7 +55,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -66,9 +66,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -84,7 +84,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -95,9 +95,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -113,7 +113,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -124,9 +124,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -142,7 +142,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -153,9 +153,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -171,7 +171,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -182,9 +182,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -200,7 +200,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -211,9 +211,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -229,7 +229,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -240,9 +240,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -258,7 +258,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -269,9 +269,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -287,7 +287,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -298,9 +298,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -316,7 +316,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -327,9 +327,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -345,7 +345,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -356,9 +356,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -374,7 +374,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -385,9 +385,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -403,7 +403,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -414,9 +414,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -432,7 +432,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -443,9 +443,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -461,7 +461,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -472,9 +472,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Endocrine / metabolic agent",
     indications: [ "Management of diabetes mellitus (type 1 and type 2)", "Thyroid disorders (hypothyroidism, hyperthyroidism)", "Bone metabolism disorders (osteoporosis, Paget's disease)", "Adrenal insufficiency / corticosteroid replacement therapy"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)"
+    contraindications: [ "Hypersensitivity to active substance", "Diabetic ketoacidosis (metformin, SGLT2i)", "Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)", "Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)", "Uncontrolled severe infection / surgery (SGLT2i — temporarily discontinue)"
 ],
-    side_effects: [ "Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing"
+    side_effects: [ "Hypoglycaemia (antidiabetic agents) — educate on recognition and management", "Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)", "GI intolerance (metformin: diarrhoea, nausea — start low and titrate slowly)", "Bone/jaw pain, atypical femoral fractures (bisphosphonates)", "Adrenal suppression (corticosteroids) — taper withdrawal, stress dosing"
 ],
     dosage: {
       "adult": {
@@ -490,7 +490,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring"
+    interactions: [ "Corticosteroids — hyperglycaemic effect; may require increased antidiabetic doses", "Beta-blockers — mask hypoglycaemia symptoms; educate on alternative symptom recognition", "Diuretics — hyperglycaemic effect (thiazides); monitor blood glucose", "Warfarin — altered anticoagulation with thyroid medications; frequent INR monitoring"
 ],
     monitoring: "Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.",
     patient_counselling: "Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.",
@@ -519,10 +519,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Famotidine",
@@ -548,10 +548,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Loperamide",
@@ -577,10 +577,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Mesalazine",
@@ -606,10 +606,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Metoclopramide",
@@ -635,10 +635,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Pantoprazole",
@@ -664,10 +664,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Ranitidine",
@@ -693,10 +693,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Senna",
@@ -722,10 +722,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Sulfasalazine",
@@ -751,10 +751,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants â€” additive sedation with certain antiemetics", "Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels"
+    interactions: [ "Antacids / sucralfate — reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing", "Clopidogrel — potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)", "CNS depressants — additive sedation with certain antiemetics", "Digoxin, thyroxine — reduced absorption with some GI agents; monitor levels"
 ],
     monitoring: "Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.",
-    patient_counselling: "Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
+    patient_counselling: "Take PPIs 30–60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.",
   },
   {
     name: "Adalimumab",
@@ -764,7 +764,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active severe infection (treat infection before starting biologic)", "Untreated latent TB / active TB", "Active hepatitis B infection (prophylaxis or defer treatment)", "Severe heart failure (certain TNF inhibitors)", "Demyelinating disorders (relative contraindication for TNF inhibitors)"
 ],
-    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension â€” during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
+    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension — during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
 ],
     dosage: {
       "adult": {
@@ -780,10 +780,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Live vaccines â€” contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) â€” additive immunosuppression", "CYP450 substrates â€” IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
+    interactions: [ "Live vaccines — contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) — additive immunosuppression", "CYP450 substrates — IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
 ],
     monitoring: "Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiation. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores (DAS28, PASI, HBI). Review vaccination status and update appropriate non-live vaccines before starting.",
-    patient_counselling: "Increased risk of infections â€” report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
+    patient_counselling: "Increased risk of infections — report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
   },
   {
     name: "Infliximab",
@@ -793,7 +793,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active severe infection (treat infection before starting biologic)", "Untreated latent TB / active TB", "Active hepatitis B infection (prophylaxis or defer treatment)", "Severe heart failure (certain TNF inhibitors)", "Demyelinating disorders (relative contraindication for TNF inhibitors)"
 ],
-    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension â€” during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
+    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension — during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
 ],
     dosage: {
       "adult": {
@@ -809,10 +809,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Live vaccines â€” contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) â€” additive immunosuppression", "CYP450 substrates â€” IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
+    interactions: [ "Live vaccines — contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) — additive immunosuppression", "CYP450 substrates — IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
 ],
     monitoring: "Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiation. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores (DAS28, PASI, HBI). Review vaccination status and update appropriate non-live vaccines before starting.",
-    patient_counselling: "Increased risk of infections â€” report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
+    patient_counselling: "Increased risk of infections — report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
   },
   {
     name: "Rituximab",
@@ -822,7 +822,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active severe infection (treat infection before starting biologic)", "Untreated latent TB / active TB", "Active hepatitis B infection (prophylaxis or defer treatment)", "Severe heart failure (certain TNF inhibitors)", "Demyelinating disorders (relative contraindication for TNF inhibitors)"
 ],
-    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension â€” during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
+    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension — during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
 ],
     dosage: {
       "adult": {
@@ -838,10 +838,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Live vaccines â€” contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) â€” additive immunosuppression", "CYP450 substrates â€” IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
+    interactions: [ "Live vaccines — contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) — additive immunosuppression", "CYP450 substrates — IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
 ],
     monitoring: "Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiation. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores (DAS28, PASI, HBI). Review vaccination status and update appropriate non-live vaccines before starting.",
-    patient_counselling: "Increased risk of infections â€” report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
+    patient_counselling: "Increased risk of infections — report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
   },
   {
     name: "Tocilizumab",
@@ -851,7 +851,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active severe infection (treat infection before starting biologic)", "Untreated latent TB / active TB", "Active hepatitis B infection (prophylaxis or defer treatment)", "Severe heart failure (certain TNF inhibitors)", "Demyelinating disorders (relative contraindication for TNF inhibitors)"
 ],
-    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension â€” during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
+    side_effects: [ "Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)", "Injection site reactions (pain, erythema, swelling)", "Infusion reactions (fever, chills, hypotension — during IV administration)", "Hypersensitivity / anaphylaxis (rare)", "Malignancy risk (long-term immunosuppression)"
 ],
     dosage: {
       "adult": {
@@ -867,10 +867,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Live vaccines â€” contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) â€” additive immunosuppression", "CYP450 substrates â€” IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
+    interactions: [ "Live vaccines — contraindicated during treatment and for variable period after (check product monograph)", "Immunosuppressants (methotrexate, azathioprine, ciclosporin) — additive immunosuppression", "CYP450 substrates — IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)"
 ],
     monitoring: "Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiation. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores (DAS28, PASI, HBI). Review vaccination status and update appropriate non-live vaccines before starting.",
-    patient_counselling: "Increased risk of infections â€” report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
+    patient_counselling: "Increased risk of infections — report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.",
   },
   {
     name: "Calcium Carbonate",
@@ -878,7 +878,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -896,7 +896,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -907,7 +907,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -925,7 +925,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -936,7 +936,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -954,7 +954,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -965,7 +965,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -983,7 +983,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -994,7 +994,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1012,7 +1012,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1023,7 +1023,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1041,7 +1041,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1052,7 +1052,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1070,7 +1070,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1081,7 +1081,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1099,7 +1099,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1110,7 +1110,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1128,7 +1128,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1139,7 +1139,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1157,7 +1157,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -1168,7 +1168,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -1186,7 +1186,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",

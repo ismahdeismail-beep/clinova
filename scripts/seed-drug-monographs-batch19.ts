@@ -39,7 +39,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -55,7 +55,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -68,7 +68,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -84,7 +84,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -97,7 +97,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -113,7 +113,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -126,7 +126,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -142,7 +142,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -155,7 +155,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -171,7 +171,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -184,7 +184,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -200,7 +200,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -213,7 +213,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -229,7 +229,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -242,7 +242,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -258,7 +258,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -271,7 +271,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -287,7 +287,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -300,7 +300,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -316,7 +316,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -329,7 +329,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -345,7 +345,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -358,7 +358,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -374,7 +374,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -387,7 +387,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -403,7 +403,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -416,7 +416,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -432,7 +432,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -445,7 +445,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -461,7 +461,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -474,7 +474,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -490,7 +490,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -503,7 +503,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -519,7 +519,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -532,7 +532,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -548,7 +548,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -561,7 +561,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -577,7 +577,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -590,7 +590,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -606,7 +606,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -619,7 +619,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -635,7 +635,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -648,7 +648,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -664,7 +664,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -677,7 +677,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -693,7 +693,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -706,7 +706,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -722,7 +722,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -735,7 +735,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -751,9 +751,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -764,7 +764,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -780,9 +780,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -793,7 +793,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -809,9 +809,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -822,7 +822,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -838,9 +838,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -851,7 +851,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -867,9 +867,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -880,7 +880,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -896,9 +896,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -909,7 +909,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Active pathological bleeding / bleeding diathesis", "Severe uncontrolled hypertension", "Recent intracranial haemorrhage / spinal surgery / CNS tumour", "Severe hepatic impairment with coagulopathy", "Concurrent anticoagulant therapy (changeover protocols only)", "Pregnancy (warfarin teratogenic; LMWH preferred)"
 ],
-    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
+    side_effects: [ "Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)", "Heparin-induced thrombocytopenia (HIT) — immune-mediated; monitor platelets", "Osteoporosis (long-term heparin use)", "Skin necrosis / purple toe syndrome (warfarin)", "Dyspepsia, GI disturbances (antiplatelets)"
 ],
     dosage: {
       "adult": {
@@ -925,9 +925,9 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) â€” altered anticoagulant metabolism", "Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
+    interactions: [ "NSAIDs / aspirin — significantly increased bleeding risk; avoid combination", "Antiplatelets (clopidogrel, ticagrelor) — additive bleeding risk; use only if clearly indicated", "Antifungals (azoles) — altered anticoagulant metabolism", "Antibiotics — altered gut flora (warfarin) — increased INR; frequent monitoring", "Herbal: St John's Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)"
 ],
-    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).",
+    monitoring: "Warfarin: INR monitoring at least weekly until stable, then every 4–6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH — platelets every 2–3 days).",
     patient_counselling: "Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).",
   },
   {
@@ -938,7 +938,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -954,7 +954,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -967,7 +967,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -983,7 +983,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -996,7 +996,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1012,7 +1012,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1025,7 +1025,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1041,7 +1041,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1054,7 +1054,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1070,7 +1070,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1083,7 +1083,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1099,7 +1099,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1112,7 +1112,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1128,7 +1128,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1141,7 +1141,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1157,7 +1157,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -1170,7 +1170,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -1186,7 +1186,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",

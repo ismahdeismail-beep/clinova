@@ -37,7 +37,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -55,7 +55,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -66,7 +66,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -84,7 +84,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -95,7 +95,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Nutritional supplement / vitamin",
     indications: [ "Prevention and treatment of nutritional deficiencies", "Specific vitamin/mineral replacement therapy", "Supplementation in increased demand states (pregnancy, lactation, growth, recovery)", "Malabsorption syndromes (parenteral replacement when oral not feasible)"
 ],
-    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
+    contraindications: [ "Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)", "Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)", "Severe renal impairment (certain electrolyte/vitamin formulations)", "Galactosaemia (lactose-containing formulations)"
 ],
     side_effects: [ "Gastrointestinal: nausea, constipation (iron preparations), diarrhoea (magnesium)", "Flushing / pruritus (niacin)", "Soft tissue calcification (excessive vitamin D / calcium)", "Iron overload (hereditary haemochromatosis or excessive supplementation)", "Injection site reactions (parenteral administration)"
 ],
@@ -113,7 +113,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours", "Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs â€” reduced absorption of calcium, vitamin B12, magnesium"
+    interactions: [ "Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours", "Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours", "Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important", "PPIs — reduced absorption of calcium, vitamin B12, magnesium"
 ],
     monitoring: "Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.",
     patient_counselling: "Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).",
@@ -124,9 +124,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -142,10 +142,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Anastrozole",
@@ -153,9 +153,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -171,10 +171,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Asparaginase",
@@ -182,9 +182,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -200,10 +200,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Bicalutamide",
@@ -211,9 +211,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -229,10 +229,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Bleomycin",
@@ -240,9 +240,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -258,10 +258,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Capecitabine",
@@ -269,9 +269,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -287,10 +287,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Carboplatin",
@@ -298,9 +298,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -316,10 +316,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Cisplatin",
@@ -327,9 +327,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -345,10 +345,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Cyclophosphamide",
@@ -356,9 +356,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -374,10 +374,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Docetaxel",
@@ -385,9 +385,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -403,10 +403,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Doxorubicin",
@@ -414,9 +414,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -432,10 +432,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Filgrastim",
@@ -443,9 +443,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -461,10 +461,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Fluorouracil",
@@ -472,9 +472,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -490,10 +490,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Gemcitabine",
@@ -501,9 +501,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -519,10 +519,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Goserelin",
@@ -530,9 +530,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -548,10 +548,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Hydroxyurea",
@@ -559,9 +559,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -577,10 +577,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Letrozole",
@@ -588,9 +588,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -606,10 +606,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Leucovorin",
@@ -617,9 +617,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -635,10 +635,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Mesna",
@@ -646,9 +646,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -664,10 +664,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Methotrexate",
@@ -675,9 +675,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -693,10 +693,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Oxaliplatin",
@@ -704,9 +704,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -722,10 +722,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Paclitaxel",
@@ -733,9 +733,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -751,10 +751,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Pegfilgrastim",
@@ -762,9 +762,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -780,10 +780,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Pemetrexed",
@@ -791,9 +791,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -809,10 +809,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Pertuzumab",
@@ -820,9 +820,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -838,10 +838,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Trastuzumab",
@@ -849,9 +849,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -867,10 +867,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Vinblastine",
@@ -878,9 +878,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -896,10 +896,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Vincristine",
@@ -907,9 +907,9 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Antineoplastic / chemotherapeutic agent",
     indications: [ "Adjuvant and neoadjuvant therapy for solid tumours", "Palliative chemotherapy for advanced/metastatic disease", "Haematological malignancies (leukaemia, lymphoma, myeloma)", "Targeted therapy for specific molecular subtypes"
 ],
-    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) â€” effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
+    contraindications: [ "Hypersensitivity to active substance", "Severe myelosuppression (unless planned treatment of leukaemia with supportive care)", "Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)", "Pregnancy (teratogenic) — effective contraception required", "Live vaccines during and up to 6 months after chemotherapy"
 ],
-    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential", "Alopecia (variable depending on agent) â€” usually reversible", "Mucositis / stomatitis â€” oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo"
+    side_effects: [ "Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) — nadir typically 7–14 days post-treatment", "Nausea and vomiting (acute, delayed, anticipatory) — prophylactic antiemetics essential", "Alopecia (variable depending on agent) — usually reversible", "Mucositis / stomatitis — oral care protocol", "Cardiotoxicity (anthracyclines, trastuzumab) — baseline and serial echo"
 ],
     dosage: {
       "adult": {
@@ -925,10 +925,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity", "Anticoagulants â€” thrombocytopenia increases bleeding risk"
+    interactions: [ "CYP450 inducers/inhibitors — may alter chemo efficacy/toxicity", "Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) — additive nephrotoxicity with platinum agents", "Cardiotoxic drugs (anthracyclines + trastuzumab) — cumulative cardiotoxicity", "Anticoagulants — thrombocytopenia increases bleeding risk"
 ],
     monitoring: "Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.",
-    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
+    patient_counselling: "Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38°C immediately (neutropenic sepsis — life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.",
   },
   {
     name: "Acetazolamide",
@@ -936,7 +936,7 @@ const MONOGRAPHS: DrugMonograph[] = [
     drug_class: "Ophthalmic agent",
     indications: [ "Treatment of glaucoma (reduction of intraocular pressure)", "Management of ocular infections (conjunctivitis, keratitis, endophthalmitis)", "Control of ocular inflammation (uveitis, post-operative inflammation)", "Diagnostic mydriasis / cycloplegia for eye examination"
 ],
-    contraindications: [ "Hypersensitivity to active substance or preservatives", "Narrow-angle glaucoma (mydriatics/cycloplegics â€” risk of acute angle closure)", "Severe asthma / COPD (topical beta-blockers)", "Sinus bradycardia / heart block (topical beta-blockers)"
+    contraindications: [ "Hypersensitivity to active substance or preservatives", "Narrow-angle glaucoma (mydriatics/cycloplegics — risk of acute angle closure)", "Severe asthma / COPD (topical beta-blockers)", "Sinus bradycardia / heart block (topical beta-blockers)"
 ],
     side_effects: [ "Local irritation: burning, stinging, blurred vision upon instillation (transient)", "Systemic absorption effects (beta-blockers: bradycardia, bronchospasm; anticholinergics: dry mouth, tachycardia)", "Allergic conjunctivitis / contact dermatitis (preservatives especially benzalkonium chloride)", "Increased intraocular pressure (certain agents in susceptible individuals)", "Periorbital skin changes / discolouration (prostaglandin analogues)"
 ],
@@ -954,7 +954,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Beta-blockers (oral) â€” additive systemic beta-blockade with topical beta-blockers; monitor pulse/BP", "Calcium channel blockers / digoxin â€” additive cardiac effects with topical beta-blockers", "Adrenaline (topical) â€” mydriasis with anticholinergics", "Multiple eye drops â€” separate by at least 5 minutes to prevent washout"
+    interactions: [ "Beta-blockers (oral) — additive systemic beta-blockade with topical beta-blockers; monitor pulse/BP", "Calcium channel blockers / digoxin — additive cardiac effects with topical beta-blockers", "Adrenaline (topical) — mydriasis with anticholinergics", "Multiple eye drops — separate by at least 5 minutes to prevent washout"
 ],
     monitoring: "Monitor intraocular pressure (tonometry), visual acuity, visual fields, optic disc assessment. For inflammatory conditions: anterior chamber activity (cells, flare). Corneal examination (slit lamp). Systemic effects: pulse, BP (especially with beta-blockers), lung auscultation in asthmatics.",
     patient_counselling: "Remove contact lenses before instilling drops (wait 15 minutes before reinserting). Apply pressure to the inner corner of the eye (nasolacrimal occlusion) for 1 minute after drops to reduce systemic absorption. Do not touch the dropper tip to your eye or any surface. Separate different eye drops by 5 minutes. Discard any solution that changes colour or becomes cloudy.",
@@ -983,7 +983,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1012,7 +1012,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1041,7 +1041,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1070,7 +1070,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1099,7 +1099,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1128,7 +1128,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1157,7 +1157,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",
@@ -1186,7 +1186,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants â€” may affect INR or bleeding risk", "Antihypertensives â€” additive hypotensive effects", "Alcohol â€” avoid or limit during therapy"
+    interactions: [ "CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors", "Anticoagulants — may affect INR or bleeding risk", "Antihypertensives — additive hypotensive effects", "Alcohol — avoid or limit during therapy"
 ],
     monitoring: "Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.",
     patient_counselling: "Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.",

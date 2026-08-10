@@ -39,7 +39,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -55,10 +55,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Bupivacaine",
@@ -68,7 +68,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -84,10 +84,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Desflurane",
@@ -97,7 +97,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -113,10 +113,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Etomidate",
@@ -126,7 +126,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -142,10 +142,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Halothane",
@@ -155,7 +155,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -171,10 +171,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Isoflurane",
@@ -184,7 +184,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -200,10 +200,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Ketamine",
@@ -213,7 +213,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -229,10 +229,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Neostigmine",
@@ -242,7 +242,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -258,10 +258,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Nitrous Oxide",
@@ -271,7 +271,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -287,10 +287,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Prilocaine",
@@ -300,7 +300,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -316,10 +316,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Propofol",
@@ -329,7 +329,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -345,10 +345,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Rocuronium",
@@ -358,7 +358,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -374,10 +374,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Ropivacaine",
@@ -387,7 +387,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -403,10 +403,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Sevoflurane",
@@ -416,7 +416,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -432,10 +432,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Sugammadex",
@@ -445,7 +445,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -461,10 +461,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Suxamethonium",
@@ -474,7 +474,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -490,10 +490,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Thiopental",
@@ -503,7 +503,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -519,10 +519,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Vecuronium",
@@ -532,7 +532,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)", "Severe cardiovascular instability / uncompensated shock", "Raised intracranial pressure (certain agents)", "Porphyria (barbiturates, etomidate)"
 ],
-    side_effects: [ "Respiratory depression (dose-dependent) â€” require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
+    side_effects: [ "Respiratory depression (dose-dependent) — require airway management and ventilatory support", "Hypotension / haemodynamic instability (many anaesthetic agents)", "Post-operative nausea and vomiting (PONV)", "Malignant hyperthermia (volatile anaesthetics + suxamethonium) — MH protocol emergency", "Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)"
 ],
     dosage: {
       "adult": {
@@ -548,10 +548,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Opioids / benzodiazepines â€” synergistic respiratory depression and sedation", "Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium"
+    interactions: [ "Opioids / benzodiazepines — synergistic respiratory depression and sedation", "Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)", "Antihypertensives — exaggerated hypotension with anaesthetic induction agents", "Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium"
 ],
-    monitoring: "Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
-    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
+    monitoring: "Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.",
+    patient_counselling: "Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.",
   },
   {
     name: "Aspirin",
@@ -561,7 +561,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -577,10 +577,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Celecoxib",
@@ -590,7 +590,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -606,10 +606,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Diclofenac",
@@ -619,7 +619,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -635,10 +635,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Etoricoxib",
@@ -648,7 +648,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -664,10 +664,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Indomethacin",
@@ -677,7 +677,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -693,10 +693,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Meloxicam",
@@ -706,7 +706,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -722,10 +722,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Naproxen",
@@ -735,7 +735,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -751,10 +751,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Nimesulide",
@@ -764,7 +764,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -780,10 +780,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Piroxicam",
@@ -793,7 +793,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -809,10 +809,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Tramadol",
@@ -822,7 +822,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)", "Active peptic ulceration / gastrointestinal bleeding (NSAIDs)", "Severe hepatic impairment (paracetamol, NSAIDs)", "Severe renal impairment (NSAIDs)", "Concurrent anticoagulation (NSAIDs)"
 ],
-    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose", "Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise"
+    side_effects: [ "Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)", "Sedation, dizziness (centrally-acting agents)", "Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose", "Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose", "Respiratory depression (opioids) — risk highest in opioid-naïve, elderly, or those with respiratory compromise"
 ],
     dosage: {
       "adult": {
@@ -838,10 +838,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination", "Methotrexate â€” reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids", "ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
+    interactions: [ "Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination", "Methotrexate — reduced clearance and increased toxicity with NSAIDs", "CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids", "ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs"
 ],
     monitoring: "Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).",
-    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
+    patient_counselling: "Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).",
   },
   {
     name: "Abacavir",
@@ -851,7 +851,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -867,7 +867,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -880,7 +880,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -896,7 +896,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -909,7 +909,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -925,7 +925,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -938,7 +938,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -954,7 +954,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -967,7 +967,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -983,7 +983,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -996,7 +996,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1012,7 +1012,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1025,7 +1025,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1041,7 +1041,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1054,7 +1054,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1070,7 +1070,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1083,7 +1083,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1099,7 +1099,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1112,7 +1112,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1128,7 +1128,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1141,7 +1141,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1157,7 +1157,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",
@@ -1170,7 +1170,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance or any excipient in the formulation", "Severe renal impairment (dose adjustment or contraindication depending on drug and degree of impairment)", "Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)"
 ],
-    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea", "QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)"
+    side_effects: [ "Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)", "Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)", "Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea", "QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities", "Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)"
 ],
     dosage: {
       "adult": {
@@ -1186,7 +1186,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart"
+    interactions: [ "Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely", "Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception", "Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart"
 ],
     monitoring: "Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.",
     patient_counselling: "Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.",

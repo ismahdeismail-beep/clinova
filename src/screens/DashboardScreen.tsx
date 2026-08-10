@@ -84,7 +84,7 @@ const STUDY_TRACKS: Record<
     badge: 'ID',
     color: 'border-emerald-500/20 bg-emerald-500/[0.03]',
     points: [
-      'Guideline check: For CURB-65 >= 2, initiate Ceftriaxone + Azithromycin/Clarithromycin.',
+      'Guideline check: For CURB-65 ≥ 2, initiate Ceftriaxone + Azithromycin/Clarithromycin.',
       'Kenya Drug Index check: Avoid Ceftriaxone in neonates receiving IV Calcium solutions.',
       'Dosage pearl: Vancomycin trough targets are 15-20 mcg/mL for severe MRSA infections.',
     ],

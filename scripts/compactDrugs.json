@@ -140,7 +140,7 @@
       "Pancreatitis (rare)"
     ],
     "dosage": {
-      "adult": "2.5-5mg daily (2.5mg if eGFR <=45)"
+      "adult": "2.5-5mg daily (2.5mg if eGFR ≤45)"
     },
     "interactions": [
       "CYP3A4/5 inhibitors (reduce to 2.5mg)"
@@ -3879,7 +3879,7 @@
     "indications": [
       "RCC",
       "Melanoma",
-      "NSCLC (PD-L1 >=1%)"
+      "NSCLC (PD-L1 ≥1%)"
     ],
     "contraindications": [
       "None significant"

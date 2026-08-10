@@ -39,7 +39,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -55,7 +55,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -68,7 +68,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -84,7 +84,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -97,7 +97,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -113,7 +113,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -126,7 +126,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -142,7 +142,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -155,7 +155,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -171,7 +171,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -184,7 +184,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -200,7 +200,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -213,7 +213,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -229,7 +229,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -242,7 +242,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -258,7 +258,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -271,7 +271,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -287,7 +287,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -300,7 +300,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -316,7 +316,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -329,7 +329,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -345,7 +345,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -358,7 +358,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -374,7 +374,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -387,7 +387,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -403,7 +403,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -416,7 +416,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -432,7 +432,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -445,7 +445,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -461,7 +461,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -474,7 +474,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -490,7 +490,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -503,7 +503,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -519,7 +519,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -532,7 +532,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -548,7 +548,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -561,7 +561,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -577,7 +577,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -590,7 +590,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -606,7 +606,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -619,7 +619,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -635,7 +635,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -648,7 +648,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -664,7 +664,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -677,7 +677,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Severe bradycardia / sick sinus syndrome / advanced heart block (unless pacemaker fitted)", "Cardiogenic shock / decompensated heart failure (for certain negative inotropes)", "Severe hypotension (systolic BP <90 mmHg)"
 ],
-    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent", "Dry cough (ACE inhibitors) â€” consider ARB if intolerable"
+    side_effects: [ "Dizziness, headache, fatigue (common during initial titration; usually resolve)", "Postural hypotension (especially elderly) — advise rising slowly from sitting/lying", "Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope", "Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent", "Dry cough (ACE inhibitors) — consider ARB if intolerable"
 ],
     dosage: {
       "adult": {
@@ -693,7 +693,7 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining", "Diuretics â€” additive hypotension; monitor BP and electrolytes", "Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels"
+    interactions: [ "NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible", "Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining", "Diuretics — additive hypotension; monitor BP and electrolytes", "Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels"
 ],
     monitoring: "Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.",
     patient_counselling: "Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.",
@@ -706,7 +706,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -722,10 +722,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Cetirizine",
@@ -735,7 +735,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -751,10 +751,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Chlordiazepoxide",
@@ -764,7 +764,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -780,10 +780,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Duloxetine",
@@ -793,7 +793,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -809,10 +809,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Entacapone",
@@ -822,7 +822,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -838,10 +838,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Gabapentin",
@@ -851,7 +851,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -867,10 +867,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Hydroxyzine",
@@ -880,7 +880,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -896,10 +896,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Lamotrigine",
@@ -909,7 +909,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -925,10 +925,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Levetiracetam",
@@ -938,7 +938,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -954,10 +954,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Loratadine",
@@ -967,7 +967,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -983,10 +983,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Lorazepam",
@@ -996,7 +996,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1012,10 +1012,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Midazolam",
@@ -1025,7 +1025,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1041,10 +1041,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Milnacipran",
@@ -1054,7 +1054,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1070,10 +1070,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Mirtazapine",
@@ -1083,7 +1083,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1099,10 +1099,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Olanzapine",
@@ -1112,7 +1112,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1128,10 +1128,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Phenobarbital",
@@ -1141,7 +1141,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1157,10 +1157,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
   {
     name: "Pregabalin",
@@ -1170,7 +1170,7 @@ const MONOGRAPHS: DrugMonograph[] = [
 ],
     contraindications: [ "Hypersensitivity to active substance", "Acute narrow-angle glaucoma (certain antidepressants/antipsychotics with anticholinergic effects)", "Severe hepatic impairment (drugs extensively hepatically metabolized)", "MAOI co-administration or recent discontinuation (certain antidepressants)"
 ],
-    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
+    side_effects: [ "Drowsiness, sedation, cognitive dulling (especially during initial titration)", "Psychomotor impairment — avoid driving and operating heavy machinery until effect is known", "Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)", "Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia", "Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)"
 ],
     dosage: {
       "adult": {
@@ -1186,10 +1186,10 @@ const MONOGRAPHS: DrugMonograph[] = [
       "hepaticAdjustment": "Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible."
 
     },
-    interactions: [ "Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use", "MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin â€” altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) â€” serotonin syndrome risk; avoid combination"
+    interactions: [ "Alcohol / other CNS depressants — additive sedation; avoid concurrent use", "MAOIs — hypertensive crisis risk with certain antidepressants; washout period required", "Warfarin — altered metabolism with certain CNS agents; monitor INR", "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination"
 ],
     monitoring: "Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).",
-    patient_counselling: "May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
+    patient_counselling: "May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.",
   },
 ];
 

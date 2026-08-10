@@ -57,6 +57,13 @@ matching the PPB Stage I & II syllabus.
 
 ## Pending (separate effort)
 
-- Generate missing **Veterinary Pharmacology XIII** past-paper content via
-  `scripts/merge-papers.ts` pipeline (unit registered, shows honest "not available" state).
-- Check `pharm-endocrine-resp` (PharmaXIV) mapping; confirm no unplaced units remain.
+- ~~Generate missing **Veterinary Pharmacology XIII** past-paper content via
+  `scripts/merge-papers.ts` pipeline (unit registered, shows honest "not available" state).~~
+  **RESOLVED 2026-08-09** by the 27-paper gap-fill commit `ac1cf9b`: `pharm-veterinary` now
+  has 3 papers (hand-written v1 + Mistral v2/v3). Verified 2026-08-10: 33/33 units, 99 papers,
+  0 issues (`npx tsx scripts/validate-papers.ts`).
+- ~~Check `pharm-endocrine-resp` (PharmaXIV) mapping; confirm no unplaced units remain.~~
+  **RESOLVED 2026-08-10**: `pharm-endocrine-resp` is placed in the Traditional track with
+  v1/v2/v3 (38 qs each); unit-vs-paper cross-check shows 33 declared units → 33 with papers,
+  zero paper orphans, zero unplaced units (the only id-less-unit entries are the two module
+  parents `clinical-pharmacy-exam` / `pharmacology-exam`).

@@ -186,7 +186,7 @@ Discussion Template**, including:
 
 Each disease also carries a **Kenya-context** block and, where relevant, a **mechanism
 diagram** rendered from `src/data/diseaseMechanismDiagrams.ts`. Patient identifiers in
-clinical cases are displayed as initials (e.g. *John Mwangi -> J.M.*) to protect privacy.
+clinical cases are displayed as initials (e.g. *John Mwangi → J.M.*) to protect privacy.
 
 ## Analytics
 
@@ -205,3 +205,99 @@ are collected. Analytics are integrated at the app root via `<Analytics />` and
 ## License
 
 Internal / educational use.
+
+---
+
+## Exam Prep — 3-Paper Minimum Coverage (2026-08-09)
+
+Clinova now provides **3 papers per unit** across all 33 exam-prep units, meeting the
+**3-paper minimum** standard. This is the result of a comprehensive gap-filling
+operation:
+
+### What was filled
+
+| Category | Details |
+|----------|---------|
+| **Real second sittings** (3 units) | `pharm-cardiovascular` v2 (PHAM 3306, July 2019), `pharm-anticancer-derm-ocular` v2 (PHAM 5111, Special Exam), `pharm-vitamins-hormones` v2 (PHAM 5112, regular sitting) — curated by the parallel session via `scripts/fix-second-sittings.mjs` |
+| **Generated papers** (24 units) | 23 via Mistral (old-extras pipeline), 1 hand-written (vet v1) — `scripts/generate-old-extras.ts` |
+| **Merge** | `scripts/merge-papers.ts` preserves ALL OLD variants + merges `scripts/out/old-extras/*.json` |
+| **UI** | `getPaperCount` fully variant-derived (3→2→1→0); `ExamPrepScreen` renders `Array.from({ length: getPaperCount(unit) })` |
+
+### Coverage verification
+
+- **33/33 units** with papers (was 32/33; `pharm-veterinary` was the only missing unit)
+- **99 total papers** (was 72)
+- **0 validation issues** (`npx tsx scripts/validate-papers.ts`)
+- All 13 real OLD units resolve 3 variants; runtime resolution verified
+
+### Paper structure (standard 30/40/30 format)
+
+- **Section A**: 30 MCQs (4 options each, one correct answer + explanation)
+- **Section B**: 6 Short Answer Questions (40 marks total, 5 marks each)
+- **Section C**: 2 Long Answer Questions (30 marks total, 15 marks each)
+
+### Papers generated
+
+| Unit | Type | Papers |
+|------|------|--------|
+| `pharm-veterinary` | Hand-written v1 | 1 |
+| `pharm-veterinary` | Mistral v2 | 1 |
+| `pharm-veterinary` | Mistral v3 | 1 |
+| 9 OLD units (gen-principles, autonomic, autacoids, cns, endocrine-resp, gi, chemo-agents, chemo-infections, toxicology) | Mistral v2+v3 | 18 |
+| 3 units with real v2 (cardiovascular, anticancer-derm-ocular, vitamins-hormones) | Mistral v3 | 3 |
+| 12 OLD pharm units (v1 only) | — | 12 |
+| **Total** | | **99** |
+
+### Pipeline scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/parse-old-papers.mjs` | Parses real second-sitting txt files into structured JSON (PICKS + TITLES) |
+| `scripts/convert-parsed-papers.mjs` | Converts parsed JSON → `examPrepPapersOldPharm.ts` (stems + options, NO answer keys) |
+| `scripts/merge-answer-keys.mjs` | Merges answer keys (variant 1 + variant 2) into `examPrepPapersOldPharm.ts` |
+| `scripts/merge-papers.ts` | Merges EXAM_PREP_PAPERS + OLD + NEW + old-extras into `examPrepPapers.ts` |
+| `scripts/generate-new-papers.ts` | Mistral generator for NEW curriculum mock papers (3 variants each) |
+| `scripts/generate-old-extras.ts` | Mistral generator for OLD-extras papers (v2+v3, vet v1-v3) |
+| `scripts/validate-papers.ts` | Coverage audit (33/33 units, 0 issues) |
+| `scripts/fix-second-sittings.mjs` | Curates real second-sitting papers (split B/C, rebuild sections) |
+
+### Excluded papers (knowledge recorded, not added)
+
+| Paper | Unit | Reason |
+|-------|------|--------|
+| PHAM 2340 Social & Behavioral Pharmacy I | — | Outside Clinical Pharmacy + Pharmacology scope |
+| PHAM 2353 Pharmaceutical Chemistry II | — | Outside Clinical Pharmacy + Pharmacology scope |
+| PHAM 2364 Pharmacognosy I | — | Outside Clinical Pharmacy + Pharmacology scope |
+
+### Board Exam 5 Prediction Sets (commit `c199bc5`)
+
+The Board Exam module was expanded to **5 prediction sets** (sets 4 & 5 added):
+- Set 4: blue/Stethoscope (`bg-blue-500/15`, `text-blue-500`, `border-blue-500/20`)
+- Set 5: rose/ShieldCheck (`bg-rose-500/15`, `text-rose-500`, `border-rose-500/20`)
+- `SET_NUMBER: Record<string, 1 | 2 | 3 | 4 | 5>` with 5 entries
+- Set-grid: `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3` (5 cards: 3+2 on desktop)
+- Set-count chip: `{SET_INFO.length} Prediction Sets` (was hardcoded "3")
+- Verified: tsc clean, vite build (87 precache entries), esbuild OK
+
+### Supabase Architecture
+
+Supabase serves as the primary backend for Clinova. It is responsible for:
+
+- **User authentication** (registration, login, sessions, OAuth)
+- **User authorization** (RLS, permission-based access)
+- **Database management** (Postgres, full-text search, indexed queries)
+- **File storage** (PDF, Word, PPTX, images, lecture notes, generated reports)
+- **Real-time synchronization** (notes, folder updates, uploaded resources, learning progress)
+- **Search support** (full-text search, indexed queries, metadata filtering, semantic search)
+- **Vector search** (embeddings for educational documents, notes, clinical cases, study guides)
+- **Metadata storage** (knowledge indexing, progress tracking, user personalization)
+- **Background automation** (database triggers, scheduled jobs, data validation)
+- **Security** (RLS, secure authentication, permission-based access, storage policies)
+
+Google AI is responsible for clinical reasoning, educational explanations, answer generation, document generation, knowledge synthesis, and study support. Supabase manages and serves the structured and indexed data that the AI reasons over.
+
+---
+
+## CHANGELOG
+
+See `CHANGELOG.md` for the full history.

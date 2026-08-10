@@ -1,3 +1,19 @@
+## 2026-08-09
+
+### Added
+- **Exam Prep — 3-paper minimum coverage across all 33 units (99 papers)**: a comprehensive gap-fill brought every exam-prep unit to the 3-paper standard (was 72 papers, 32/33 units). 24 units were filled — 23 generated via Mistral (`scripts/generate-old-extras.ts`) plus a hand-written `pharm-veterinary` v1 — and 3 real second-sitting papers were curated (PHAM 3306 July 2019, PHAM 5111 Special, PHAM 5112 regular via `scripts/fix-second-sittings.mjs`). `scripts/merge-papers.ts` now preserves ALL old variants while merging `scripts/out/old-extras/*.json`; `getPaperCount` is fully variant-derived (3→2→1→0) and `ExamPrepScreen` renders `Array.from({ length: getPaperCount(unit) })`. Verified: 33/33 units, 99 papers, 0 issues (`npx tsx scripts/validate-papers.ts`).
+- **Board Exam Prep — 5 prediction sets (sets 4 & 5, 60 new questions → 151 total)**: Set 4 "Clinical Case Scenarios & Patient Cases" (30 Qs, `ppb-*-091..120`) and Set 5 "Regulatory, Practice & Grand Review" (30 Qs, `ppb-*-121..150`) appended to `src/data/boardExams.ts`. `BoardExamScreen` SET_INFO now carries literal Tailwind classes (`bg-blue-500/15`/rose) via `SET_NUMBER`; set-grid is `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3` (5 cards: 3+2) and the set-count chip derives `{SET_INFO.length} Prediction Sets` (was hardcoded "3").
+- **Exam Prep — curriculum tracks (Traditional vs Revised)**: `ExamModuleSpec` gains `tracks` (Traditional = verbatim past papers incl. Pharmacology I–XIV + Clinical Pharmacy I–XI; Revised = standard-format mock papers with PHAM codes), with track-first routing `/knowledge/exam/prep/:moduleId/:trackId/:unitId/:variant` plus legacy-URL fallback. Old units got Kabarak-aligned `year`/`trimester` placement metadata (Y3T1→Y5T3) and `pharm-veterinary` (Pharmacology XIII) was registered with topics. All counts derived at render time.
+
+### Fixed
+- **Responsive exam layout**: paper headers no longer squeeze and content fits screens at all widths.
+
+## 2026-08-08
+
+### Fixed
+- **KDI endless loading**: `getCatalog()` now has a 10s fetch timeout and the thumbnail loop was cut from 80 to 20 pages so a stalled Supabase catalog response can no longer hang the Drug Index forever.
+- **Vercel cron config**: `vercel.json` cron entries dropped unsupported `method`/`timezone` properties (deploy validation errors) and the daily Drug-of-the-Day push now takes the secret as a query param (`?secret=…`) because Vercel crons don't send headers — `POST /api/push/daily` verifies it before computing the Drug of the Day and pushing.
+
 ## 2026-08-07
 
 ### Added

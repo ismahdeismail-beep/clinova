@@ -82,7 +82,7 @@ for (const m of monos) {
 
 // ── Report ─────────────────────────────────────────────────────────────────
 console.log('=== KDI COMPLETENESS AUDIT ===')
-console.log(`Total monographs: ${monos.length} | Drugs with >=1 image: ${imgMap.size}`)
+console.log(`Total monographs: ${monos.length} | Drugs with ≥1 image: ${imgMap.size}`)
 console.log('')
 console.log(
   ['Category', 'Total', 'Clinical', '≥1 img', '≥4 img', 'in KEM', 'shortfall'].join('\t')

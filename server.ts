@@ -485,7 +485,7 @@ app.post('/api/notifications/welcome', async (req, res) => {
 });
 
 // ----- Push Notifications (Phase 4: daily sender) -----
-// Triggered by Vercel Cron (vercel.json -> /api/push/daily, schedule "0 5 * * *"
+// Triggered by Vercel Cron (vercel.json → /api/push/daily, schedule "0 5 * * *"
 // = 08:00 EAT). Vercel Cron doesn't support custom headers in vercel.json, so the
 // secret is passed as a query parameter (?secret=...) in the cron path. Computes
 // the Drug of the Day server-side (same day-of-year index the client used to use),
@@ -570,7 +570,7 @@ app.post('/api/push/daily', async (req, res) => {
         sent++;
       } catch (err: any) {
         const status = err?.statusCode;
-        // 410 Gone / 404 / 403 = subscription no longer valid -> prune.
+        // 410 Gone / 404 / 403 = subscription no longer valid → prune.
         if (status === 410 || status === 404 || status === 403) {
           deadEndpoints.push(sub.endpoint);
         }
@@ -772,7 +772,7 @@ app.post('/api/gemini/extract-file', upload.any(), async (req, res) => {
 
     if (type === 'patient') {
       prompt = `Extract patient demographic information from the provided files.
-ANONYMITY REQUIREMENT: Extract the patient's name but convert it strictly to uppercase initials only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C."). Never output the full name.
+ANONYMITY REQUIREMENT: Extract the patient's name but convert it strictly to uppercase initials only (e.g., "Joseph Kimuge Chepyegon" → "J. K. C."). Never output the full name.
 Return a JSON object with:
 - name (string)
 - age (number)
@@ -794,7 +794,7 @@ Return a JSON object with:
       prompt = `You are Clinova's Pharmacotherapy Review Assistant. Analyze all the uploaded files (which can be clinical clerking notes, prescription charts, admitting sheets, lab results, etc.) and extract comprehensive clinical data to auto-fill the standardized Pharmacotherapy Review Form (Kabarak University School of Pharmacy format).
 
 CRITICAL CONSTRAINTS:
-1. Patient Anonymity: Extract the patient's name but render it strictly as UPPERCASE INITIALS only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C.") in the "patientName" field. Never output full names. Ensure relative or next-of-kin names are also converted to initials if mentioned.
+1. Patient Anonymity: Extract the patient's name but render it strictly as UPPERCASE INITIALS only (e.g., "Joseph Kimuge Chepyegon" → "J. K. C.") in the "patientName" field. Never output full names. Ensure relative or next-of-kin names are also converted to initials if mentioned.
 2. Chief Complaint formatting: Must be stated strictly as "[duration] history of [symptom]" in order of clinical priority/urgency, NOT as a diagnosis (e.g., write "3-day history of a painful, swollen left leg", NOT "Deep Venous Thrombosis").
 3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending — ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
 4. Medication History (pre-admission): List drugs taken prior to admission in "currentMedications".
@@ -942,7 +942,7 @@ Ensure that you return a list of these medications.`;
       prompt = `You are Clinova's Clinical Note Extraction Assistant. Analyze the uploaded clinical record, medical report, case history, or dictation and extract key clinical observations.
       
 CRITICAL CONSTRAINTS:
-1. Patient Anonymity: Extract the patient's name but convert it strictly to UPPERCASE INITIALS only (e.g., "John Doe" -> "J. D."). Never expose the full name.
+1. Patient Anonymity: Extract the patient's name but convert it strictly to UPPERCASE INITIALS only (e.g., "John Doe" → "J. D."). Never expose the full name.
 2. Formulate a structured medical summary, including active chief complaints, history of present illness, primary diagnoses or clinical impressions, list of active medications, and recommended care plan interventions.
 If any section is not documented, write "Not documented" or leave empty.`;
 
@@ -1092,7 +1092,7 @@ Return a JSON object containing:
         responseMimeType: 'application/json',
         responseSchema: responseSchema,
         systemInstruction: `You are an expert clinical data extraction AI. You extract structured data from clinical documents, images, and dictations.
-ANONYMITY MANDATE: You MUST strictly sanitize all patient names, relatives, and physicians mentioned in any notes. Render all names as capitalized initials only (e.g. "James Kamau" -> "J. K."). NEVER expose any full names.`
+ANONYMITY MANDATE: You MUST strictly sanitize all patient names, relatives, and physicians mentioned in any notes. Render all names as capitalized initials only (e.g. "James Kamau" → "J. K."). NEVER expose any full names.`
       }
     });
 
@@ -2853,7 +2853,7 @@ At the end of your response, include a section with:
 // ================================================================
 // CLINOVA AI SKILLS — ORCHESTRATED ENDPOINT
 // Routes a query through the modular skills system: intent
-// detection -> skill selection -> parallel execution -> merge.
+// detection → skill selection → parallel execution → merge.
 // ================================================================
 
 function buildEducationalContext(query: string): any {

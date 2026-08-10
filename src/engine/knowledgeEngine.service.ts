@@ -475,7 +475,7 @@ async function findInteractingDrugs(
       sources.push({
         type: 'drug_monograph',
         id: other.id,
-        title: `${monograph.name} <-> ${other.name}`,
+        title: `${monograph.name} ↔ ${other.name}`,
         content: `INTERACTION: ${interactions.join('; ')}`,
         // Below the queried drug's own monographs (0.95) so the citation widget
         // shows the main drugs first, but above cases/diseases (0.8x).

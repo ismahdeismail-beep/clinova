@@ -137,7 +137,7 @@ for (const u of units) {
   )
 }
 
-// Update the stale header comment (8 subjects -> 8 clinical-pharmacy + 8 pharmacology)
+// Update the stale header comment (8 subjects → 8 clinical-pharmacy + 8 pharmacology)
 main = main.replace(
   '// 8 clinical-pharmacy subjects x 3 papers each (standard format A=30 / B=40 / C=30 = 100 marks).',
   '// 8 clinical-pharmacy subjects + 8 pharmacology subjects x 3 papers each (standard format A=30 / B=40 / C=30 = 100 marks).'

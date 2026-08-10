@@ -57,4 +57,4 @@ async function worker() {
 }
 
 await Promise.all(Array.from({ length: CONCURRENCY }, () => worker()))
-console.log(`Done: saved=${saved} failed=${failed} -> ${dest}`)
+console.log(`Done: saved=${saved} failed=${failed} → ${dest}`)

@@ -108,7 +108,7 @@ ${topicsText || '(general coverage of the unit title)'}
 
 ${variantNote}
 
-GROUNDING — real past-paper content is supplied below. Study its question style, wording, difficulty and the facts it tests, then write a NEW paper in the SAME voice (applied pharmacology: mechanism -> clinical use -> adverse effects -> monitoring). Reuse the same clinical themes and factual content, but rephrase stems and shuffle distractors so it is a fresh paper, not a copy. Every MCQ must have exactly one correct answer; all options plausible and clinically defensible. Stay strictly within the unit's scope (Clinical Pharmacy and Pharmacology only).
+GROUNDING — real past-paper content is supplied below. Study its question style, wording, difficulty and the facts it tests, then write a NEW paper in the SAME voice (applied pharmacology: mechanism → clinical use → adverse effects → monitoring). Reuse the same clinical themes and factual content, but rephrase stems and shuffle distractors so it is a fresh paper, not a copy. Every MCQ must have exactly one correct answer; all options plausible and clinically defensible. Stay strictly within the unit's scope (Clinical Pharmacy and Pharmacology only).
 
 ${grounding}
 

@@ -117,7 +117,7 @@ ${topicsText}
 
 ${variantNote}
 
-GROUNDING — real past-paper content for this subject is supplied below. Study its question style, wording, difficulty, and the facts it tests, then write a NEW paper in the SAME voice and pattern (Katzung-style applied pharmacology: mechanism -> clinical use -> adverse effects -> monitoring). Reuse the same clinical themes and factual content, but rephrase stems and shuffle distractors so it is a fresh mock, not a copy. Every MCQ must have exactly one correct answer; all options plausible and clinically defensible.
+GROUNDING — real past-paper content for this subject is supplied below. Study its question style, wording, difficulty, and the facts it tests, then write a NEW paper in the SAME voice and pattern (Katzung-style applied pharmacology: mechanism → clinical use → adverse effects → monitoring). Reuse the same clinical themes and factual content, but rephrase stems and shuffle distractors so it is a fresh mock, not a copy. Every MCQ must have exactly one correct answer; all options plausible and clinically defensible.
 
 ${grounding}
 

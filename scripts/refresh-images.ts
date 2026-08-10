@@ -77,7 +77,7 @@ async function main() {
     try {
       const stats = await crawlDrug(drug.id, name, undefined, '', new Set(e?.hashes || []), existingCount)
       added += stats.accepted
-      console.log(`[ok] ${name} +${stats.accepted} -${stats.rejected} (gallery ${existingCount} -> ${existingCount + stats.accepted})`)
+      console.log(`[ok] ${name} +${stats.accepted} -${stats.rejected} (gallery ${existingCount} → ${existingCount + stats.accepted})`)
     } catch (err: any) {
       console.log(`[err] ${name}: ${err.message}`)
     }

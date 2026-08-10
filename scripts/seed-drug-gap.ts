@@ -32,7 +32,7 @@ const norm = (s: string) =>
 const SALT_RE =
   /\b(sodium|hydrochloride|sulfate|sulphate|fumarate|maleate|acetate|phosphate|isethionate|proxetil|fosamil|meglumine|tromethamine|diphosphate|medocaril|monohydrate|dihydrate|trihydrate|edisylate|besylate|mesylate|hydrobromide|gluconate|calcium|potassium|magnesium|zinc|nitrate|succinate|stearate|palmitate|pamoate|embonate|oleate|tartrate|citrate|lactate|napsylate)\b/i
 
-// Bundled browse category -> canonical root class name in drug_classes.
+// Bundled browse category → canonical root class name in drug_classes.
 const CATEGORY_ROOT: Record<string, string> = {
   'Anti-infectives': 'Antimicrobial agent',
   Cardiovascular: 'Cardiovascular agent',
@@ -133,7 +133,7 @@ async function main() {
           interactions: d.interactions ?? [],
           monitoring: d.monitoring ?? '',
           patient_counselling: d.patient_counselling ?? '',
-          // Enrichment fields start empty -> filled by enrich + gapfill pipelines
+          // Enrichment fields start empty → filled by enrich + gapfill pipelines
           mechanism_of_action: '',
           pharmacokinetics: '',
           overdose: '',

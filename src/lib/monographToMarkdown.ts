@@ -59,8 +59,8 @@ function formatMoa(moa: string): string {
 // ── Pharmacokinetics ─────────────────────────────────────────────────
 // Three shapes handled:
 //   1. structured "label: value" lines (curated rows, e.g. Artemether-Lumefantrine)
-//   2. prose with ADME markers -> sub-headed bullets
-//   3. free prose -> key-number bullets
+//   2. prose with ADME markers → sub-headed bullets
+//   3. free prose → key-number bullets
 //
 // FDA-label noise is stripped first (section numbers, embedded ADME sub-heads,
 // scraped "Drug Interaction Studies" blocks) — same normalization the
@@ -101,7 +101,7 @@ function formatPk(pk: string): string {
       .join('\n');
   }
 
-  // Shape 2: ADME markers in prose -> sub-headed bullets
+  // Shape 2: ADME markers in prose → sub-headed bullets
   const adme = [
     { label: 'Absorption', re: /\b(absorption|absorbed|bioavailability|tmax|peak plasma)\b/i },
     { label: 'Distribution', re: /\b(distribution|distributed|volume of distribution|protein binding)\b/i },
@@ -130,7 +130,7 @@ function formatPk(pk: string): string {
     return out.join('\n\n');
   }
 
-  // Shape 3: plain prose -> numbered bullets
+  // Shape 3: plain prose → numbered bullets
   return sentences(clean).map((s) => bullet(s)).join('\n');
 }
 

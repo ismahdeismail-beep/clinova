@@ -5,11 +5,11 @@
 // oral practice, notes, drug/guideline monographs) is anchored to
 // this hierarchy:
 //
-//   Learning Area  ->  Unit  ->  Learning Objective
+//   Learning Area  →  Unit  →  Learning Objective
 //                                    |
-//                                    +-> Disease
-//                                    +-> Drug Class / Medicine
-//                                    +-> Clinical Case
+//                                    +→ Disease
+//                                    +→ Drug Class / Medicine
+//                                    +→ Clinical Case
 //
 // Stable string IDs below are the ONLY keys used to connect
 // resources. The Education Hub, Clinical Cases, Knowledge Graph,
@@ -313,7 +313,7 @@ export const DISEASES: Record<string, Disease> = {
 };
 
 // ================================================================
-// Curriculum — areas -> units -> learning objectives
+// Curriculum — areas → units → learning objectives
 // ================================================================
 
 export const CURRICULUM: CurriculumArea[] = [

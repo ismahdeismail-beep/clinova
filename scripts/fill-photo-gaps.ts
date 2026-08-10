@@ -250,11 +250,11 @@ async function main() {
     if (accepted > 0) {
       ok++
       state.ok.push(d.id)
-      console.log(`  -> +${accepted} photo(s), kinds: ${[...acceptedKinds].join(',')}`)
+      console.log(`  → +${accepted} photo(s), kinds: ${[...acceptedKinds].join(',')}`)
     } else {
       none++
       state.none.push(d.id)
-      console.log('  -> no photo found on Wikimedia')
+      console.log('  → no photo found on Wikimedia')
     }
     done.add(d.id)
     state.done = Array.from(done)

@@ -54,7 +54,7 @@ async function pubchemPng(cid: string, record: '2d' | '3d'): Promise<Buffer | nu
 }
 
 // Structure renderings are thin line-art on white/transparent — the photo
-// validator's blur/color checks don't apply. Decode, upscale to >=600px, and
+// validator's blur/color checks don't apply. Decode, upscale to ≥600px, and
 // check dimensions only.
 async function prepareStructure(buf: Buffer): Promise<Buffer | null> {
   try {
@@ -110,7 +110,7 @@ async function saveAndInsert(
   let height = 0
   let format = 'unknown'
   if (meta.kind === 'structure') {
-    // prepared by prepareStructure: decoded + >=600px
+    // prepared by prepareStructure: decoded + ≥600px
     const sharp = (await import('sharp')).default
     const m = await sharp(buf).metadata()
     width = m.width || 0

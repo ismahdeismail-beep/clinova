@@ -17,5 +17,5 @@ for (const fp of files) {
   // Remove invalid backslash escapes: a backslash followed by any char that isn't " \ / b f n r t u
   text = text.replace(/\\([^"\\\/bfnrtu])/g, '$1')
   writeFileSync(fp, text, 'utf8')
-  console.log(`Fixed ${fp} (${before} -> ${text.length} chars)`)
+  console.log(`Fixed ${fp} (${before} → ${text.length} chars)`)
 }

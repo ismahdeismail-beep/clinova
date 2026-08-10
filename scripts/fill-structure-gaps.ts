@@ -246,7 +246,7 @@ async function pdbeImage(pdbId: string): Promise<Buffer | null> {
   }
 }
 
-// Structure renders are line-art — decode, upscale to >=600px, dimension check
+// Structure renders are line-art — decode, upscale to ≥600px, dimension check
 // only (photo blur/color checks don't apply). Tiny 2D icons (a single atom,
 // 200px+) are upscaled rather than rejected.
 async function prepareStructure(buf: Buffer): Promise<Buffer | null> {

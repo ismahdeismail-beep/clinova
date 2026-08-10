@@ -1,6 +1,6 @@
 // ================================================================
-// Teaching Skill — explains concepts progressively (beginner ->
-// intermediate -> advanced), supports exam/viva prep and clinical
+// Teaching Skill — explains concepts progressively (beginner →
+// intermediate → advanced), supports exam/viva prep and clinical
 // application. Teaches rather than merely answers.
 // ================================================================
 

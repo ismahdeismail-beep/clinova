@@ -3,8 +3,8 @@
 // These files were produced by an older generator that did not escape
 // apostrophes (e.g. "Ndung'u", "patient's"), breaking the TS compile.
 // Strategy: process line-by-line. Each field is a single-line assignment.
-//   key: 'value',            -> re-emit with JSON.stringify(value)
-//   key: ['a', 'b'],         -> re-emit each item with JSON.stringify
+//   key: 'value',            → re-emit with JSON.stringify(value)
+//   key: ['a', 'b'],         → re-emit each item with JSON.stringify
 // Other lines (objects, code) are left untouched.
 
 import * as fs from 'fs';

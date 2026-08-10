@@ -1,7 +1,7 @@
 /**
  * Formats any patient name into uppercase initials to ensure compliance
  * with patient confidentiality and privacy guidelines (e.g., Kenya Data Protection Act 2019).
- * E.g., "James Kamau" -> "J. K."
+ * E.g., "James Kamau" → "J. K."
  */
 export function getPatientInitials(name: string): string {
   if (!name) return "";

@@ -253,10 +253,10 @@ export async function generateContentWithFallback(request: any, providerOverride
     request.config = {};
   }
   
-  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area -> Unit -> Topic -> Subtopic -> Educational Resource -> Clinical Application.\nTreat every educational resource (books, notes, clinical cases, guidelines, drug information, flashcards, quizzes) as part of a single interconnected knowledge graph.\nPrioritize authoritative educational resources (Guidelines, Official Notes) over general knowledge. Connect foundational sciences directly with clinical applications. Explain concepts progressively as structured teaching. Relate topics across disciplines when appropriate.`;
+  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area → Unit → Topic → Subtopic → Educational Resource → Clinical Application.\nTreat every educational resource (books, notes, clinical cases, guidelines, drug information, flashcards, quizzes) as part of a single interconnected knowledge graph.\nPrioritize authoritative educational resources (Guidelines, Official Notes) over general knowledge. Connect foundational sciences directly with clinical applications. Explain concepts progressively as structured teaching. Relate topics across disciplines when appropriate.`;
 
   if (request.config.systemInstruction) {
-     if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area -> Unit')) {
+     if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area → Unit')) {
         request.config.systemInstruction += hierarchyRules;
      }
   } else {
@@ -395,10 +395,10 @@ export async function streamGenerateContent(
 ): Promise<string> {
   if (!request.config) request.config = {};
 
-  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area -> Unit -> Topic -> Subtopic -> Educational Resource -> Clinical Application.\nTreat every educational resource as part of a single interconnected knowledge graph. Prioritize authoritative educational resources over general knowledge.`;
+  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area → Unit → Topic → Subtopic → Educational Resource → Clinical Application.\nTreat every educational resource as part of a single interconnected knowledge graph. Prioritize authoritative educational resources over general knowledge.`;
 
   if (request.config.systemInstruction) {
-    if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area -> Unit')) {
+    if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area → Unit')) {
       request.config.systemInstruction += hierarchyRules;
     }
   } else {

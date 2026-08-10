@@ -58,7 +58,7 @@ async function main() {
       const stats = await crawlDrug(drug.id, name, undefined, '', e.hashes, e.count)
       const after = (perDrug.get(drug.id)?.count || 0) + stats.accepted
       added += stats.accepted
-      console.log(`  +${stats.accepted} accepted, -${stats.rejected} rejected (gallery ${e.count} -> ${after})`)
+      console.log(`  +${stats.accepted} accepted, -${stats.rejected} rejected (gallery ${e.count} → ${after})`)
       if (stats.failures.length > 0) console.log(`  failures: ${stats.failures.slice(0, 3).join(' | ')}`)
     } catch (err: any) {
       console.log(`  [err] ${err.message}`)

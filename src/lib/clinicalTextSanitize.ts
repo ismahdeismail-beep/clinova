@@ -15,7 +15,7 @@
 // found in corrupted files exactly.
 // ---------------------------------------------------------------------------
 
-// cp1252: byte -> character (only the bytes that differ from Latin-1)
+// cp1252: byte → character (only the bytes that differ from Latin-1)
 const CP1252_CHAR: Record<number, string> = {
   0x80: '\u20AC', 0x82: '\u201A', 0x83: '\u0192', 0x84: '\u201E', 0x85: '\u2026',
   0x86: '\u2020', 0x87: '\u2021', 0x88: '\u02C6', 0x89: '\u2030', 0x8A: '\u0160',
@@ -25,7 +25,7 @@ const CP1252_CHAR: Record<number, string> = {
   0x9E: '\u017E', 0x9F: '\u0178',
 }
 
-// inverse: character -> byte
+// inverse: character → byte
 const CP1252_BYTE: Record<string, number> = {}
 for (const [byte, ch] of Object.entries(CP1252_CHAR)) CP1252_BYTE[ch] = Number(byte)
 
@@ -133,7 +133,7 @@ function normalizeSubscripts(text: string): string {
 /**
  * Converts meaningless glyphs into medically meaningful plain text:
  * - Repairs cp1252 mojibake (â‰¥ → ≥, Âµ → µ, â€™ → ' …)
- * - Normalizes ASCII >= / <= to proper ≥ / ≤
+ * - Normalizes ASCII comparison operators to proper ≥ / ≤ glyphs
  * - Trend arrows (↑ ↓ ↗ ↘ → ←) become "elevated" / "decreased" / "to" / "from"
  * - Micro signs (µ μ) become renderable units (mcg, umol, uL)
  * - Decorative bullets / checkmarks / emoji are removed

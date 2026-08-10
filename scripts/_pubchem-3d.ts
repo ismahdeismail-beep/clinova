@@ -62,7 +62,7 @@ async function pubchem2d(cid: string): Promise<Buffer | null> {
   }
 }
 
-// Structure renderings are thin line-art — decode, upscale to >=600px, and
+// Structure renderings are thin line-art — decode, upscale to ≥600px, and
 // check dimensions only (photo blur/color checks don't apply).
 async function prepareStructure(buf: Buffer): Promise<Buffer | null> {
   try {

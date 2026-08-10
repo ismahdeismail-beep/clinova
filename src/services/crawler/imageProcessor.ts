@@ -203,9 +203,9 @@ export function scoreQuality(width: number, height: number, format: string): num
 
   // Resolution bonus (up to 20 points)
   const totalPixels = width * height
-  if (totalPixels >= 640000) score += 20 // >= 800x800
-  else if (totalPixels >= 256000) score += 15 // >= 506x506
-  else if (totalPixels >= 160000) score += 10 // >= 400x400
+  if (totalPixels >= 640000) score += 20 // ≥ 800x800
+  else if (totalPixels >= 256000) score += 15 // ≥ 506x506
+  else if (totalPixels >= 160000) score += 10 // ≥ 400x400
 
   return Math.min(score, 100)
 }

@@ -608,7 +608,7 @@ const NEW_DRUGS = [
    '300mg PO twice daily', '', 'CBC (anemia/neutropenia), LFTs', 'Monitor Hb and ANC closely. Macrocytic anemia dose-limiting.',
    ['Retrovir', 'Zidovir']],
   ['new-059', 'Rilpivirine', 'Rilpivirine HCl', 'Antiretroviral (NNRTI)', 'Anti-infectives - Antiretrovirals (NNRTIs)',
-   '25mg PO once daily', '', 'LFTs, lipids, ECG (QT)', 'Must take with meal (>=400 kcal). Not for VL >100,000 copies/mL.',
+   '25mg PO once daily', '', 'LFTs, lipids, ECG (QT)', 'Must take with meal (≥400 kcal). Not for VL >100,000 copies/mL.',
    ['Edurant']],
   ['new-060', 'Etravirine', 'Etravirine', 'Antiretroviral (NNRTI)', 'Anti-infectives - Antiretrovirals (NNRTIs)',
    '200mg PO twice daily (after meals)', '', 'LFTs, skin reactions', 'Active against NNRTI-resistant HIV. No lead-in dose.',

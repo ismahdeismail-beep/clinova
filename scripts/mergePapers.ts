@@ -49,5 +49,5 @@ export function getExamPrepPaper(unitId: string, variant: number): GeneratedPape
 `;
 
 writeFileSync('./src/data/examPrepPapers.ts', out);
-console.log(`Merged ${files.length} files -> src/data/examPrepPapers.ts (${Object.keys(merged).length} subjects)`);
+console.log(`Merged ${files.length} files → src/data/examPrepPapers.ts (${Object.keys(merged).length} subjects)`);
 void existsSync;

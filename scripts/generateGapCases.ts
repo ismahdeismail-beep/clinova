@@ -126,7 +126,7 @@ async function main() {
     const have = counts.get(unit)!;
     const deficit = Math.max(0, TARGET - have);
     if (deficit === 0) {
-      console.log(`✓ ${unit}: ${have} (>=${TARGET})`);
+      console.log(`✓ ${unit}: ${have} (≥${TARGET})`);
       continue;
     }
     const templates = planTemplates(unit);
@@ -152,7 +152,7 @@ async function main() {
     const exportName = `gap_${file}_cases`;
     writeBatchFile(path.join(OUTPUT_DIR, `${file}.ts`), cases, exportName);
     newBarrel.push([file, exportName]);
-    console.log(`+ ${unit}: ${have} -> +${cases.length} new (target ${TARGET})`);
+    console.log(`+ ${unit}: ${have} → +${cases.length} new (target ${TARGET})`);
   }
 
   if (newBarrel.length === 0) {

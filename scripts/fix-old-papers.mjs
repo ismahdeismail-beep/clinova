@@ -439,7 +439,7 @@ function stripLeadingInstr(stem) {
     a.splice(i + 1, 0, { stem: q.options[ki], options: q.options.slice(ki + 1) })
     q.options = q.options.slice(0, ki)
   }
-  // fix "Lt" OCR artifacts -> "It"
+  // fix "Lt" OCR artifacts → "It"
   for (const q of a) {
     q.options = q.options.map((o) => o.replace(/\bLt\b/g, 'It'))
   }

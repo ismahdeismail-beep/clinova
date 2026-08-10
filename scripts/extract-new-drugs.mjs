@@ -23,7 +23,7 @@ const { data: images } = await admin
 const imageDrugIds = new Set((images || []).map((r: any) => r.drug_id));
 const zeroImageDrugs = drugs.filter((d: any) => !imageDrugIds.has(d.id));
 
-console.log('New drugs (>=2026-08-01):', drugs.length);
+console.log('New drugs (≥2026-08-01):', drugs.length);
 console.log('With images:', drugs.length - zeroImageDrugs.length);
 console.log('Zero images:', zeroImageDrugs.length);
 

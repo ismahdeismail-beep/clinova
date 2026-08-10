@@ -132,10 +132,10 @@ export const RAGRouter = {
     }
 
     // Interaction pairs detected by scanning the full drug index (type drug_monograph
-    // with a ' <-> ' title). These are distinct from the matched monographs above —
+    // with a ' ↔ ' title). These are distinct from the matched monographs above —
     // they are the OTHER drugs in the registry that interact with the queried one.
     const interactionSources = engineResult.sources.filter(
-      s => s.type === 'drug_monograph' && s.title.includes(' <-> '),
+      s => s.type === 'drug_monograph' && s.title.includes(' ↔ '),
     );
     if (interactionSources.length > 0) {
       context += `### Detected Drug Interactions (${interactionSources.length} pairs found in registry)\n\n`;

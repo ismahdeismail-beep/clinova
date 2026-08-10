@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Loader2, Shield, AlertCircle, Mail, Lock, User, ArrowRight, ShieldAlert } from 'lucide-react';
+import { Loader2, Shield, AlertCircle, Mail, Lock, User, ArrowRight } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import ClinovaLogo from '../components/ClinovaLogo';
 
 export default function LoginScreen() {
-  const { loginWithGoogle, loginWithEmail, signUpWithEmail, userData, loginAs } = useAuth();
+  const { loginWithGoogle, loginWithEmail, signUpWithEmail, userData } = useAuth();
   const navigate = useNavigate();
   
 const [isSignUp, setIsSignUp] = useState(false);

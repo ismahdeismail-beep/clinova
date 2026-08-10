@@ -37,7 +37,7 @@ async function main() {
     try {
       const { count, error } = await admin.from(table).select('id', { count: 'exact', head: true })
       console.log(`${table}: ${error ? 'ERR ' + error.message : count}`)
-    } catch (e: any) {
+    } catch {
       console.log(`${table}: fetch error`)
     }
   }

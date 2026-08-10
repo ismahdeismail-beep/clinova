@@ -2,10 +2,6 @@ import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
 
-// Root class id by text
-const ROOT: Record<string, string> = {
-  'Antimicrobial agent': 'fffC02a6-0000-0000-0000-000000000000',
-}
 // fetch real ids
 const { data: classes } = await admin.from('drug_classes').select('id, name')
 const clsByName = new Map<string, string>()

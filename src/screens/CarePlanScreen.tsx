@@ -7,8 +7,8 @@ import {
   LayoutDashboard, List, Clipboard, BookOpen, Home,
 } from 'lucide-react';
 import {
-  getCarePlanSpecialties, getDiseasesForSpecialty,
-  getCarePlanForDisease, type CarePlanSpecialty,
+  getCarePlanSpecialties,
+  getCarePlanForDisease,
 } from '../data/carePlanData';
 
 const ICON_MAP: Record<string, any> = {
@@ -50,7 +50,6 @@ export default function CarePlanScreen() {
       return (
         <CarePlanDetail
           carePlan={carePlan}
-          specialtyId={specialtyId}
           onBack={() => navigate(`/care-plan/${specialtyId}`)}
           onBackToLanding={() => navigate('/care-plan')}
         />
@@ -227,12 +226,10 @@ export default function CarePlanScreen() {
 
 function CarePlanDetail({
   carePlan,
-  specialtyId,
   onBack,
   onBackToLanding,
 }: {
   carePlan: any;
-  specialtyId: string;
   onBack: () => void;
   onBackToLanding: () => void;
 }) {

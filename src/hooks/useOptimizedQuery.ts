@@ -45,7 +45,6 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
     queryKey,
     queryFn,
     staleTime = 30000,
-    cacheTime = 300000,
     enabled = true,
     retry = 3,
     retryDelay = 1000,
@@ -56,14 +55,11 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
     select,
   } = options;
 
-  const queryKeyStr = generateKey(queryKey);
   const [data, setData] = useState<any>(undefined);
   const [error, setError] = useState<Error | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isFetching, setIsFetching] = useState(false);
-  const [lastFetchTime, setLastFetchTime] = useState<number>(0);
 
-  const cacheRef = useRef(queryCache);
   const abortControllerRef = useRef<AbortController | null>(null);
   const retryCountRef = useRef(0);
   const mountedRef = useRef(true);
@@ -72,10 +68,6 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
     mountedRef.current = true;
     return () => { mountedRef.current = false; };
   }, []);
-
-  const getCache = useCallback(() => {
-    return queryCache.get(generateKey(queryKey));
-  }, [queryKey]);
 
   const setCache = useCallback((data: any, timestamp: number) => {
     const key = generateKey(queryKey);
@@ -92,13 +84,6 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
       timestamp,
       staleTime: 30000,
     });
-  }, [queryKey]);
-
-  const notifySubscribers = useCallback(() => {
-    const cache = queryCache.get(generateKey(queryKey));
-    if (cache) {
-      cache.subscribers.forEach(cb => cb());
-    }
   }, [queryKey]);
 
   const fetchData = useCallback(async (isRetry = false): Promise<T | undefined> => {
@@ -139,7 +124,7 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
           onSuccess?.(result);
         }
         return finalData;
-      } catch (err) {
+      } catch {
         // Continue to fetch
       }
     }
@@ -162,7 +147,6 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
             setIsLoading(false);
             setIsFetching(false);
             setError(null);
-            setLastFetchTime(Date.now());
             setCache(result, Date.now());
             onSuccess?.(result);
           }
@@ -195,7 +179,7 @@ export function useOptimizedQuery<T>(options: QueryOptions<T>): QueryResult<T> {
       }
       throw error;
     }
-  }, [enabled, queryKey, queryFn, staleTime, retry, retryDelay, select, onSuccess, onError]);
+  }, [enabled, queryKey, queryFn, staleTime, retry, retryDelay, select, onSuccess, onError, setCache]);
 
   const refetch = useCallback(async () => {
     const key = generateKey(queryKey);

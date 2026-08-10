@@ -1,12 +1,12 @@
-﻿import React, { useState, useRef, useEffect, useMemo } from 'react';
+﻿import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { 
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
-  Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
-  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, AlertTriangle, GraduationCap, Stethoscope
+  Bookmark, Download, History, ChevronLeft, Bot, List, Sparkles, CheckCircle2, Clock, Database, Mic,
+  Trash2, Folder, Plus, FileSignature, RotateCcw, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
+  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, GraduationCap, Stethoscope
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
@@ -76,7 +76,6 @@ export default function EducationHubScreen() {
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
   const [selectedSubModule, setSelectedSubModule] = useState<EducationSubModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
-  const [examPrepOpen, setExamPrepOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const scrollPositions = useRef<{ units: number }>({ units: 0 });
@@ -85,7 +84,6 @@ export default function EducationHubScreen() {
   
   // Custom unit management states
   const [customUnits, setCustomUnits] = useState<CustomUnit[]>([]);
-  const [loadingCustom, setLoadingCustom] = useState(false);
 
 
   // Favorite state management
@@ -141,14 +139,11 @@ export default function EducationHubScreen() {
   const fetchCustomUnits = useCallback(async () => {
     const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
     if (userData && fetchModuleId) {
-      setLoadingCustom(true);
       try {
         const units = await EducationService.getCustomUnits(userData.id, fetchModuleId);
         setCustomUnits(units);
       } catch (err) {
         console.error('Error fetching custom units:', err);
-      } finally {
-        setLoadingCustom(false);
       }
     }
   }, [selectedSubModule, selectedModule, userData]);
@@ -208,7 +203,7 @@ export default function EducationHubScreen() {
     if (unit && unit.id !== selectedUnit?.id) {
       setSelectedUnit(unit);
     }
-  }, [moduleId, unitId, customUnits]);
+  }, [moduleId, unitId, customUnits, navigate, selectedModule, selectedSubModule, selectedUnit]);
 
   const handleModuleClick = (mod: EducationModule) => {
   if (mod.id === 'cases') {
@@ -777,6 +772,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   const [folderStack, setFolderStack] = useState<SubFolder[]>([]);
   const [showTabs, setShowTabs] = useState(true);
   const [diseaseOpen, setDiseaseOpen] = useState(false);
+  const openDiseaseView = useCallback(() => setDiseaseOpen(true), []);
+  const closeDiseaseView = useCallback(() => setDiseaseOpen(false), []);
 
   const handleWorkspaceBack = () => {
     if (folderStack.length > 0) {
@@ -1051,7 +1048,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   if (diseaseOpen) {
     return (
       <div className="animate-in fade-in duration-300 max-w-4xl mx-auto">
-        <DiseaseNotesView unit={unit} onOpenDisease={() => setDiseaseOpen(true)} onCloseDisease={() => setDiseaseOpen(false)} />
+        <DiseaseNotesView unit={unit} onOpenDisease={openDiseaseView} onCloseDisease={closeDiseaseView} />
       </div>
     );
   }
@@ -1173,10 +1170,10 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         <div className="flex-1 p-4 sm:p-6 bg-[var(--bg)] min-h-[500px]">
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
-          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'tutor' && <WorkspaceTutor module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'resources' && <WorkspaceResources unit={unit} module={module} currentFolderName={currentFolderName} />}
+          {activeTab === 'flashcards' && <WorkspaceFlashcards module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'mcqs' && <WorkspaceQuizzes module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
         </div>
 
         {/* Bottom Tabs — retractable */}
@@ -1799,7 +1796,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
 // ==========================================
 // WORKSPACE TUTOR (INTELLIGENT RECALL CHAT)
 // ==========================================
-function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
+function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module: EducationModule, currentFolderId: string, currentFolderName: string }) {
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
   const [isTutorThinking, setIsTutorThinking] = useState(false);
@@ -1968,7 +1965,7 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
   useEffect(() => {
     if (selectedIdx !== null) onOpenDisease?.()
     else onCloseDisease?.()
-  }, [selectedIdx])
+  }, [selectedIdx, onOpenDisease, onCloseDisease])
 
   if (loading) {
     return (
@@ -2137,21 +2134,6 @@ function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) 
         </div>
       ))}
     </dl>
-  )
-}
-
-// Critical Alert component for critical clinical points
-function CriticalAlert({ children, title = 'Critical Clinical Point' }: { children: React.ReactNode; title?: string }) {
-  return (
-    <div className="bg-red-500/10 border-2 border-red-500/30 rounded-xl p-4 my-3">
-      <div className="flex items-center gap-2 mb-2">
-        <AlertTriangle size={18} className="text-red-600" />
-        <span className="text-sm font-bold text-red-700 dark:text-red-400">{title}</span>
-      </div>
-      <div className="text-sm text-red-700 dark:text-red-400 leading-relaxed">
-        {children}
-      </div>
-    </div>
   )
 }
 
@@ -2697,7 +2679,7 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
 // ==========================================
 // WORKSPACE FLASHCARDS (ACTIVE RECALL)
 // ==========================================
-function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
+function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userData }: { module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const [cards, setCards] = useState<SavedFlashcard[]>([]);
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -2970,7 +2952,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
 // ==========================================
 // WORKSPACE QUIZZES (INTERACTIVE MCQS ASSESSMENT)
 // ==========================================
-function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
+function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData }: { module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const [quizzes, setQuizzes] = useState<SavedQuiz[]>([]);
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -3283,7 +3265,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit, module, currentFolderId, currentFolderName }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceResources({ unit, module, currentFolderName }: { unit: EducationModuleUnit, module: EducationModule, currentFolderName: string }) {
   const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id]);
   const moduleResources = useMemo(() => getResourcesForModule(module.id), [module.id]);
   const [isExpanded, setIsExpanded] = useState(false);

@@ -1,7 +1,6 @@
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
 import { readFileSync } from 'fs'
-import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim()
@@ -27,7 +26,7 @@ for (const k of keml) {
   const n = uk(norm(k))
   if (n.length < 3) continue
   if (n === 'antacids' || n === 'benzodiazepines' || n === 'artificial tears' || n === 'calcium supplements' || n === 'covid 19 vaccine' || n === 'caplan syndrome') continue
-  let hit = [...dbHay].some((h) => h === n || h.includes(n) || n.includes(h))
+  const hit = [...dbHay].some((h) => h === n || h.includes(n) || n.includes(h))
   if (!hit) missing.push(k)
 }
 console.log('KEML drugs genuinely missing (spelling-tolerant, excluding categories):', missing.length)

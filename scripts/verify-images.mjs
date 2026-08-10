@@ -31,9 +31,6 @@ async function main() {
 
   // Test the API endpoint for a drug with images
   if (drugs && drugs.length > 0) {
-    const testDrug = drugs[0];
-    const testDrugId = testDrug.id;
-
     // Find a drug with images
     const { data: drugWithImages } = await supabase
       .from('drug_images')

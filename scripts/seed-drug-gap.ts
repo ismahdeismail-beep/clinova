@@ -25,7 +25,7 @@ const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVI
 const norm = (s: string) =>
   s
     .toLowerCase()
-    .replace(/[\/–—\-+(),.'"]/g, ' ')
+    .replace(/[/–—\-+(),.'"]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 

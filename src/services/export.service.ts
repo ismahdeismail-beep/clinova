@@ -1,5 +1,5 @@
 import { jsPDF } from 'jspdf';
-import { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Table, TableRow, TableCell, WidthType, BorderStyle } from 'docx';
+import { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, BorderStyle } from 'docx';
 
 export type ExportFormat = 'pdf' | 'docx' | 'md' | 'txt';
 
@@ -60,23 +60,11 @@ const exportService = {
     const marginBottom = options.styles?.marginBottom || 20;
     const contentWidth = pageWidth - marginLeft - marginRight;
     const fontSize = options.styles?.fontSize || 11;
-    const lineHeight = options.styles?.lineHeight || 1.5;
 
     doc.setFont('helvetica');
     doc.setFontSize(fontSize);
 
     let y = marginTop;
-
-    const addText = (text: string, x: number, yPos: number, opts?: { fontSize?: number; fontStyle?: string; color?: string; align?: 'left' | 'center' | 'right'; lineHeight?: number }) => {
-      const textFontSize = opts?.fontSize || fontSize;
-      doc.setFontSize(textFontSize);
-      if (opts?.fontStyle) doc.setFont('helvetica', opts.fontStyle);
-      if (opts?.color) doc.setTextColor(opts.color);
-      
-      const lines = doc.splitTextToSize(text, contentWidth);
-      doc.text(lines, x, yPos, { align: opts?.align || 'left' });
-      return lines.length * textFontSize * 0.352778 * (opts?.lineHeight || 1.5);
-    };
 
     const checkPageBreak = (neededHeight: number) => {
       if (y + neededHeight > pageHeight - marginBottom) {
@@ -245,13 +233,11 @@ const exportService = {
         filename += '.docx';
         break;
       case 'md': {
-        const md = this.exportToMarkdown(options);
         blob = new Blob([options.content], { type: 'text/markdown' });
         filename += '.md';
         break;
       }
       case 'txt': {
-        const txt = this.exportToText(options);
         blob = new Blob([options.content], { type: 'text/plain' });
         filename += '.txt';
         break;

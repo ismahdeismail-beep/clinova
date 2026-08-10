@@ -204,7 +204,6 @@ for (const file of files) {
   }
   
   // Also search for multi-word drug names in the entire file
-  const drugsInFile = new Set<string>();
   for (const drugName of COMMON_DRUGS) {
     if (!drugName.includes(' ')) continue;
     const escaped = drugName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

@@ -74,7 +74,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           let role: UserRole = 'user';
           let name = provisionalName;
           let clinicalInterests: string[] = [];
-          let academicLevel = '';
           let onboardingCompleted = false;
 
           if (userDoc.exists()) {
@@ -82,7 +81,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             role = (data.role as UserRole) || 'user';
             name = data.name || name;
             clinicalInterests = data.clinicalInterests || [];
-            academicLevel = data.academicLevel || '';
             onboardingCompleted = !!data.onboardingCompleted;
             if (onboardingCompleted) {
               localStorage.setItem(`clinova_onboarding_completed_${firebaseUser.uid}`, 'true');
@@ -100,7 +98,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
               role: 'user' as UserRole,
               photoURL: firebaseUser.photoURL || null,
               clinicalInterests: [],
-              academicLevel: '',
               onboardingCompleted: false,
               settings: { theme: 'system', emailNotifications: true, pushNotifications: false },
               preferences: {},
@@ -320,7 +317,7 @@ export function useAuth() {
       loginReturning: async () => {},
       loginWithEmail: async () => {},
       signUpWithEmail: async () => {},
-      updatePreferences: async (interests: string[]) => {},
+      updatePreferences: async () => {},
       getIdToken: async () => null
     };
   }

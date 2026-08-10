@@ -8,7 +8,9 @@ const RELOAD_DELAY_MS = 2500
 export function UpdateManager() {
   const { addNotification } = useNotifications()
   const notifyRef = useRef(addNotification)
-  notifyRef.current = addNotification
+  useEffect(() => {
+    notifyRef.current = addNotification
+  }, [addNotification])
   const refreshingRef = useRef(false)
 
   useEffect(() => {

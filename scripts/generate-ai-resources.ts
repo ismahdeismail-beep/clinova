@@ -23,7 +23,6 @@ if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
 }
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
-const BATCH_SIZE = 10;
 
 // ── Generate resources from case data ───────────────────────────────
 

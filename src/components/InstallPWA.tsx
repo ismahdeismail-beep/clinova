@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Download, X, Smartphone, Zap, Shield, Share } from 'lucide-react';
+import { Download, X, Smartphone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface BeforeInstallPromptEvent extends Event {
@@ -15,8 +15,6 @@ export function InstallPWA() {
   const [showModal, setShowModal] = useState(false);
   const [showFloatingBtn, setShowFloatingBtn] = useState(false);
   const [promptInstall, setPromptInstall] = useState<BeforeInstallPromptEvent | null>(null);
-  const [isIOSDevice, setIsIOSDevice] = useState(false);
-  const [isSafariBrowser, setIsSafariBrowser] = useState(false);
 
   useEffect(() => {
     const isStandalone = 
@@ -33,8 +31,6 @@ export function InstallPWA() {
     const ua = navigator.userAgent;
     const ios = /iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream;
     const safari = /Safari/.test(ua) && !/CriOS/.test(ua) && !/FxiOS/.test(ua);
-    setIsIOSDevice(ios);
-    setIsSafariBrowser(safari);
 
     // 3. Listen for browser install prompt (Android/Chrome/Windows)
     const handleBeforeInstallPrompt = (e: Event) => {

@@ -3,7 +3,7 @@
 import 'dotenv/config'
 import { searchWikimedia, isLicenseAccepted } from '../src/services/crawler/providers'
 import { isTitleRelevant } from '../src/services/crawler/kenyanBrands'
-import { downloadImage, validateImage, computeDHash, optimizeImage } from '../src/services/crawler/imageProcessor'
+import { downloadImage, validateImage, optimizeImage } from '../src/services/crawler/imageProcessor'
 
 const name = process.argv[2] || 'Cephalexin'
 const queries = process.argv.slice(3)

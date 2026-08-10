@@ -1,5 +1,4 @@
-import { createContext, useContext, useEffect, useRef, useState, useCallback, ReactNode } from 'react';
-import { useOptimizedQuery, invalidateQueries, setQueryData } from '../hooks/useOptimizedQuery';
+import { createContext, useContext, useEffect, useMemo, useRef, useState, useCallback, ReactNode } from 'react';
 
 interface CacheConfig {
   defaultCacheTime: number;
@@ -13,8 +12,7 @@ const defaultConfig: CacheConfig = {
   maxCacheSize: 1000,
 };
 
-const cache = new Map<string, { data: any; timestamp: number; subscribers: Set<() => void> }>();
-const pendingRequests = new Map<string, Promise<any>>();
+const cache = new Map<string, { data: any; timestamp: number; ttl?: number; subscribers: Set<() => void> }>();
 
 interface CacheContextValue {
   config: CacheConfig;
@@ -35,20 +33,21 @@ function emitChange(key: string) {
 }
 
 export function CacheProvider({ children, config = defaultConfig }: { children: ReactNode; config?: Partial<CacheConfig> }) {
-  const mergedConfig = { ...defaultConfig, ...config };
+  const mergedConfig = useMemo(() => ({ ...defaultConfig, ...config }), [config]);
 
   const get = useCallback(<T,>(key: string): T | null => {
     const entry = cache.get(key);
-    if (entry && Date.now() - entry.timestamp < (config?.defaultCacheTime || defaultConfig.defaultCacheTime)) {
+    if (entry && Date.now() - entry.timestamp < (entry.ttl ?? config?.defaultCacheTime ?? defaultConfig.defaultCacheTime)) {
       return entry.data;
     }
     return null;
-  }, []);
+  }, [config?.defaultCacheTime]);
 
   const set = useCallback(<T,>(key: string, data: T, ttl?: number) => {
     cache.set(key, {
       data,
       timestamp: Date.now(),
+      ttl,
       subscribers: new Set(),
     });
     emitChange(key);
@@ -74,11 +73,12 @@ export function CacheProvider({ children, config = defaultConfig }: { children: 
     };
   }, []);
 
-  return (
-    <CacheContext.Provider value={{ config: mergedConfig, get, set, delete: deleteKey, clear, subscribe }}>
-      {children}
-    </CacheContext.Provider>
+  const value = useMemo(
+    () => ({ config: mergedConfig, get, set, delete: deleteKey, clear, subscribe }),
+    [mergedConfig, get, set, deleteKey, clear, subscribe]
   );
+
+  return <CacheContext.Provider value={value}>{children}</CacheContext.Provider>;
 }
 
 export function useCache() {
@@ -104,7 +104,7 @@ export function useCachedQuery<T>(
     setIsLoading(true);
     try {
       const result = await fetcher();
-      cache.set(key, result);
+      cache.set(key, result, options?.ttl);
       setData(result);
       options?.onSuccess?.(result);
       return result;
@@ -115,7 +115,7 @@ export function useCachedQuery<T>(
     } finally {
       setIsLoading(false);
     }
-  }, [key, fetcher, options]);
+  }, [key, fetcher, options, cache]);
 
   useEffect(() => {
     if (options?.enabled !== false && !data) {
@@ -160,11 +160,11 @@ export function useDebounce<T>(value: T, delay: number): T {
 
 export function useThrottle<T>(value: T, limit: number): T {
   const [throttled, setThrottled] = useState(value);
-  const lastRan = useRef(Date.now());
+  const lastRan = useRef<number | null>(null);
 
   useEffect(() => {
     const now = Date.now();
-    if (now - lastRan.current >= limit) {
+    if (lastRan.current === null || now - lastRan.current >= limit) {
       setThrottled(value);
       lastRan.current = now;
     } else {

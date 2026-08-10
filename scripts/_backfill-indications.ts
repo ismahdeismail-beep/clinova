@@ -51,7 +51,7 @@ function extractIndications(label: any): string[] {
     : label.indications_and_usage || ''
   const text = cleanText(raw)
   // Strip the "1 INDICATIONS AND USAGE" heading
-  let body = text.replace(/^\d+\s+INDICATIONS?\s+(AND\s+)?USAGE\s*/i, '')
+  const body = text.replace(/^\d+\s+INDICATIONS?\s+(AND\s+)?USAGE\s*/i, '')
   // Split on section markers like (1.1), (1.2) and sentence boundaries
   const parts = body
     .split(/\(\s*\d+(?:\.\d+)?\s*\)|(?<=[.;])\s+(?=[A-Z(])/)

@@ -602,44 +602,6 @@ export const CURRICULUM_UNITS = [
 ];
 
 // 50 Curriculum Case Descriptors for each of the 15 units
-const CURRICULUM_TOPICS_REGISTRY: Record<number, { title: string, disease: string, difficulty: 'Beginner' | 'Intermediate' | 'Advanced', chiefComplaint: string, pmh: string, medHx: string, labs: string, pearls: string, specialty: string }[]> = {
-  1: [
-    {
-      title: "Altered CYP2C19 Metabolism & Clopidogrel Failure",
-      disease: "Pharmacogenomics",
-      difficulty: "Advanced",
-      chiefComplaint: "Recurrent chest pain following PCI stent placement.",
-      pmh: "NSTEMI post-PCI 2 weeks ago.",
-      medHx: "Clopidogrel 75mg daily, Aspirin 75mg daily.",
-      labs: "CYP2C19 genotyping shows poor metabolizer (*2/*2). Platelet aggregation high.",
-      pearls: "Clopidogrel is a prodrug requiring CYP2C19 activation. Alternative antiplatelet agents (Prasugrel/Ticagrelor) should be used in poor metabolizers.",
-      specialty: "Cardiovascular Disorders"
-    },
-    {
-      title: "G6PD Deficiency and Nitrofurantoin-Induced Hemolysis",
-      disease: "Inborn Error of Metabolism",
-      difficulty: "Intermediate",
-      chiefComplaint: "Dark tea-colored urine and sudden fatigue.",
-      pmh: "Urinary tract infection diagnosed 3 days ago.",
-      medHx: "Nitrofurantoin 100mg BID.",
-      labs: "Hemoglobin dropped to 7.8 g/dL, elevated bilirubin, positive Heinz bodies.",
-      pearls: "Nitrofurantoin causes oxidative stress in erythrocytes. G6PD-deficient patients are prone to acute hemolytic anemia under oxidative drug triggers.",
-      specialty: "Infectious Diseases"
-    },
-    {
-      title: "Therapeutic Drug Monitoring: Phenytoin Protein Binding in Hypoalbuminemia",
-      disease: "Pharmacokinetics",
-      difficulty: "Advanced",
-      chiefComplaint: "Nystagmus, ataxia, and slurred speech.",
-      pmh: "Epilepsy, Severe Liver Cirrhosis with ascites.",
-      medHx: "Phenytoin 300mg daily.",
-      labs: "Serum Albumin: 1.8 g/dL. Total Phenytoin: 12 mcg/mL (normal range). Free Phenytoin: 3.5 mcg/mL (toxic range).",
-      pearls: "Phenytoin is highly protein-bound. In hypoalbuminemia, the free (active) drug fraction increases. Doses should be adjusted based on the Sheiner-Tozer equation.",
-      specialty: "Neurological Disorders"
-    },
-    // We will generate the rest of the 50 dynamically in a loop using a highly detailed template array
-  ]
-};
 
 // Programmatic Generator to guarantee exactly 50 unique cases per unit (750 total!)
 export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
@@ -865,7 +827,6 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
   };
 
   // Predefined cases that are already fully authored
-  const authoredCases = INITIAL_CASES.filter(c => c.createdBy === 'system' || c.createdBy === 'faculty');
 
   // Let's populate 50 cases for this specific unit
   // First, we can add the authored cases that match the specialty or disease of this unit

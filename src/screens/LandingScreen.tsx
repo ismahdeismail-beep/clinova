@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
-  FileText, Shield, Brain, Stethoscope, Library, Target,
-  ChevronRight, Star, Users, BarChart3, Layers, Pill,
+  Shield, Stethoscope,
+  ChevronRight, Star, Layers, Pill,
   ClipboardCheck, Image,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'

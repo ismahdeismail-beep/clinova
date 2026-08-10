@@ -31,7 +31,6 @@ import { downloadImage, downloadDelay, optimizeImage, hammingDistance, scoreQual
 const WORKER_INDEX = Number(process.env.WORKER_INDEX || '0')
 const WORKER_COUNT = Number(process.env.WORKER_COUNT || '1')
 const STATE_FILE = `storage/photo_fill_w${WORKER_INDEX}.json`
-const dryRun = process.argv.includes('--dry-run')
 const limitArg = process.argv.find((a) => a.startsWith('--limit='))
 const LIMIT = limitArg ? Number(limitArg.split('=')[1]) : 0
 const MAX_PHOTOS = 2
@@ -135,7 +134,6 @@ async function main() {
   for (const r of images) {
     if (r.hash) hashes.add(r.hash)
     const s = String(r.source || '').toLowerCase()
-    const name = decodeURIComponent((r.page_url || '').split('/').pop() || '').toLowerCase()
     const isPhoto =
       s.includes('dailymed') || s.includes('kenyan brand') || s.includes('wikipedia (lead)') ||
       (!s.includes('pubchem') && !s.includes('rcsb') && !s.includes('structure') && !s.includes('lecture'))
@@ -167,7 +165,7 @@ async function main() {
 
     // Shared acceptance pipeline: license → kind → relevance → download →
     // validate → dedup → optimize → upload → insert. Returns images accepted.
-    const processResults = async (results: any[], drugName: string, q: string): Promise<number> => {
+    const processResults = async (results: any[], drugName: string): Promise<number> => {
       let got = 0
       for (const r of results) {
         if (accepted + got >= MAX_PHOTOS) break

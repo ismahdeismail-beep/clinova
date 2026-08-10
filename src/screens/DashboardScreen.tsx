@@ -6,7 +6,6 @@ import {
   Bot,
   BookOpen,
   Stethoscope,
-  FileText,
   Sparkles,
   GraduationCap,
   ArrowRight,
@@ -16,10 +15,6 @@ import {
   Handshake,
   Activity,
   Pill,
-  Target,
-  BarChart3,
-  Library,
-  BrainCircuit,
   TrendingUp,
   ClipboardCheck,
   Award,
@@ -28,10 +23,10 @@ import {
   Clock,
   Send,
   Newspaper,
-  Heart,
+  Library,
   Users,
-  Shield,
-  Lock,
+  BarChart3,
+  Target,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import ClinovaLogo from '../components/ClinovaLogo'

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import {
   ArrowLeft, ChevronRight, CheckCircle2, AlertCircle,
   GraduationCap, BookOpen, Target, FileText, Lightbulb,
-  Download, RotateCcw, TrendingUp, Stethoscope, ShieldCheck,
+  Download, TrendingUp, Stethoscope, ShieldCheck,
 } from 'lucide-react'
 import {
   BOARD_EXAM_QUESTIONS,
@@ -250,7 +250,7 @@ export default function BoardExamScreen() {
       setSelectedSet(null)
       setCurrentIndex(0)
     }
-  }, [setId])
+  }, [setId, selectedSet])
 
   const setNumber = selectedSet ? SET_NUMBER[selectedSet] : null
   const questions = setNumber ? getQuestionsByPredictionSet(setNumber) : []

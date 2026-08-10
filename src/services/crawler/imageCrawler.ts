@@ -1,6 +1,5 @@
 // Main medicine image crawler — orchestrates search, download, validation, dedup, optimize, upload.
 import { adminSupabase } from '../../server/adminClient'
-import { type DrugImage } from '../../types/crawler'
 import {
   PROVIDERS,
   type ProviderResult,
@@ -10,13 +9,11 @@ import {
   downloadImage,
   downloadDelay,
   validateImage,
-  computeDHash,
   hammingDistance,
   optimizeImage,
   scoreQuality,
-  md5,
 } from './imageProcessor'
-import { type CrawlerState, loadState, saveState } from './state'
+import { loadState, saveState } from './state'
 import { brandNamesFor, isTitleRelevant, isWeakRelevant } from './kenyanBrands'
 import { kenyanBrandImagesFor } from './kenyanBrandImages'
 import { politeDelay } from './providers'

@@ -26,7 +26,7 @@ import { useAuth } from './contexts/AuthContext';
 import { useNotifications } from './contexts/NotificationContext';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
-import { NAV_GROUPS, type NavGroup } from './data/navigationConfig';
+import { NAV_GROUPS } from './data/navigationConfig';
 import { InstallPWA } from './components/InstallPWA';
 import BottomNav from './components/BottomNav';
 

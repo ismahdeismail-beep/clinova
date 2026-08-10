@@ -136,7 +136,7 @@ async function main() {
 
           if (error) { console.error(`  Insert error for ${matchedDrug.generic_name}: ${error.message}`); failed++; }
           else { inserted++; hasImg.add(matchedDrug.id); console.log(`  [OK] ${matchedDrug.generic_name}`); }
-        } catch (e) { failed++; }
+        } catch { failed++; }
       }
     } catch (e) {
       console.error(`  Batch failed: ${e.message}`);

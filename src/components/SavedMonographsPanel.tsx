@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   Bookmark, BookmarkCheck, Search, Trash2, Loader2,
-  BookOpen, X, Tag, ChevronDown, ExternalLink, Heart,
-  ArrowUpDown, Clock, Database,
+  X, Tag, ChevronDown, ExternalLink, Heart,
+  ArrowUpDown, Clock,
 } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
-import { DrugMonographService, type DrugMonograph, type UserMonograph } from '../services/drugMonograph.service';
+import { DrugMonographService, type UserMonograph } from '../services/drugMonograph.service';
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { DrugIcon } from './DrugIcon';
 
@@ -287,9 +286,8 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
   );
 }
 
-export function SaveMonographButton({ monographId, monographName, className }: {
+export function SaveMonographButton({ monographId, className }: {
   monographId: string;
-  monographName: string;
   className?: string;
 }) {
   const [saved, setSaved] = useState(false);

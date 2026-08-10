@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
-const norm = (s: string) => s.toLowerCase().replace(/[\/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
+const norm = (s: string) => s.toLowerCase().replace(/[/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
 
 // Dedupe bundled list: drop obvious variants (suffixes like "IV", "Prophylaxis", strength tags)
 const dropSuffix = (s: string) => norm(s).replace(/\s*(iv|oral|topical|injection|prophylaxis|sodium|calcium|potassium|maleate|fumarate|hydrochloride|sulfate)\s*$/i, '').trim()

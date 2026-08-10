@@ -48,8 +48,6 @@ function stripLeadingInstr(stem) {
     stem: 'The pharmacological action of this agent is not mediated by a "macromolecular" receptor molecule.',
     options: macOpts,
   })
-  // rebuild B (3 questions) from raw
-  const raw = fs.readFileSync('scripts/out/old-papers/pharmacology_kabarak_university_PHAM_3101_PHARMACOLOGY_I.txt', 'utf8').replace(/\r/g, '')
   const defs = [
     'is a science that deals with evolving a quantitative relationship between exposure to the drug (pharmacokinetics) and its response (pharmacodynamics), derived by constructing mathematical models based on few observations',
     'are drugs meant for the diagnosis, prevention or treatment of rare diseases.',

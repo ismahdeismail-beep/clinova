@@ -76,7 +76,6 @@ function buildGrounding(): string {
 
 // Supporting knowledge: real clinical cases + formulary monographs for the mapped units
 function buildSupportContext(): string {
-  const units = (spec.mappedUnits as string[]) || []
   const topicBlob = ((spec.topics as string[]) || []).join(' ').toLowerCase()
   const drugs = BUNDLED_DRUGS.filter((d: any) => {
     const blob = `${d.name} ${d.drug_class} ${((d.indications as string[]) || []).join(' ')}`.toLowerCase()

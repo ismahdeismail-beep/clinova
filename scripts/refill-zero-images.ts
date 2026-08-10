@@ -26,10 +26,6 @@ async function fetchAll(table: string, cols: string): Promise<any[]> {
 }
 
 async function main() {
-  const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
-    auth: { persistSession: false },
-  })
-
   const imgs = await fetchAll('drug_images', 'drug_id')
   const withImages = new Set(imgs.map((i) => i.drug_id))
 

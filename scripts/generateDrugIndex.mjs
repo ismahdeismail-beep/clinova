@@ -198,7 +198,6 @@ const BBW = {
   SGLT2: ['May cause diabetic ketoacidosis (euglycemic DKA). Discontinue before surgery.'],
   Laxative: (n) => [`${n.includes('Bisacodyl') ? 'Prolonged use may cause atonic colon, electrolyte imbalance.' : n.includes('Lactulose') || n.includes('Macrogol') ? 'Generally well tolerated but monitor electrolytes with prolonged use.' : 'Use beyond 1 week without medical advice is not recommended.'}`],
 }
-const BBW_DEFAULT = []
 
 /** Contraindications per class */
 function classCI(cls) {
@@ -1694,7 +1693,7 @@ const NEW_DRUGS_2 = [
 // 7. MAIN: Merge + Enrich + Output
 // ══════════════════════════════════════════════════════════════════
 
-function enrichDrug(row, override) {
+function enrichDrug(row) {
   const name = row[1]
   const drugClass = row[3]
   const drugClassName = row[4]

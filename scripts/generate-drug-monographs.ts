@@ -56,8 +56,6 @@ interface OpenFdaLabel {
   overdose?: string[];
 }
 
-function capitalize(s: string): string { return s.charAt(0).toUpperCase() + s.slice(1); }
-
 function sleep(ms: number): Promise<void> { return new Promise(r => setTimeout(r, ms)); }
 
 /** Parse CLI flags */

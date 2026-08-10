@@ -8,7 +8,7 @@
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
 import { crawlDrug } from '../src/services/crawler/imageCrawler'
-import { loadState, saveState } from '../src/services/crawler/state'
+import { loadState } from '../src/services/crawler/state'
 
 const BATCH = Number(process.env.REFRESH_BATCH_SIZE || '10')
 // Parallel workers: give each its own state file + disjoint id list (via env)

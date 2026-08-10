@@ -81,9 +81,9 @@ async function searchOneDrug(name) {
           licenseUrl: (ii.extmetadata?.LicenseUrl?.value || '').toString(),
           source: 'Wikimedia Commons',
         };
-      } catch (e) { /* try next */ }
+      } catch { /* try next */ }
     }
-  } catch (e) { /* drug failed */ }
+  } catch { /* drug failed */ }
   return null;
 }
 
@@ -132,7 +132,7 @@ async function main() {
         });
         if (error) { console.error(`  Insert error: ${error.message}`); failed++; }
         else { inserted++; console.log(`  [OK]`); }
-      } catch (e) { failed++; }
+      } catch { failed++; }
     } else {
       failed++;
       console.log(`  [FAIL]`);

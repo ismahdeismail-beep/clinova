@@ -1,12 +1,11 @@
 import 'dotenv/config';
 import { RAGRouter } from './src/services/ragRouter';
-import { KnowledgeEngine } from './src/engine/knowledgeEngine.service';
 import { processAcademicRequest } from "./src/server/academicEngine.js";
 import { orchestrateSkills, skillRegistry } from "./src/skills";
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
-import { GoogleGenAI, Type } from '@google/genai';
+import { Type } from '@google/genai';
 import crypto from 'crypto';
 
 import multer from 'multer';
@@ -23,7 +22,7 @@ import {
   updateProviderConfig,
   embedText
 } from './src/server/aiRouter.js';
-import { processOneJob, processJobBatch } from './src/server/jobProcessor.js';
+import { processJobBatch } from './src/server/jobProcessor.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
@@ -195,7 +194,6 @@ app.use('/api/gemini', aiRateLimit);
 // service-role client below is the only access path.
 
 const FIREBASE_WEB_API_KEY = process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_WEB_API_KEY || 'AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA';
-const FIREBASE_PROJECT_ID = process.env.VITE_FIREBASE_PROJECT_ID || process.env.FIREBASE_PROJECT_ID || 'nakurubnb-b99f2';
 
 async function verifyFirebaseToken(token: string): Promise<string | null> {
   if (!token) return null;
@@ -731,7 +729,7 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
         const d = path.join(process.cwd(), 'uploads', 'tmp', uid);
         if (fs.existsSync(d)) fs.rmSync(d, { recursive: true, force: true });
       }
-    } catch (_) { /* non-fatal */ }
+    } catch { /* non-fatal */ }
     res.status(500).json({ error: error.message || 'Failed to process chunk upload.' });
   }
 });

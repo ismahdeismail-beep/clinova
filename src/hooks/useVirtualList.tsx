@@ -18,7 +18,6 @@ export function VirtualList<T>({
   renderItem,
   height,
   itemHeight,
-  overscan = 5,
   className = '',
   style,
   emptyMessage = 'No items to display',
@@ -141,7 +140,7 @@ export function WindowedList<T>({
   className = '',
   emptyMessage = 'No items to display',
 }: WindowedListProps<T> & { className?: string; emptyMessage?: string }) {
-  const { containerRef, visibleItems, totalHeight, onScroll, startIndex } = useWindowedList({
+  const { containerRef, totalHeight, onScroll, startIndex } = useWindowedList({
     items,
     itemHeight,
     containerHeight,
@@ -192,6 +191,15 @@ export function useInfiniteScroll<T>(
   const observerRef = useRef<IntersectionObserver | null>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
+  const loadMore = useCallback(async () => {
+    setIsLoading(true);
+    try {
+      await fetchMore();
+    } finally {
+      setIsLoading(false);
+    }
+  }, [fetchMore]);
+
   useEffect(() => {
     if (!hasMore || isLoading) return;
 
@@ -212,16 +220,7 @@ export function useInfiniteScroll<T>(
     return () => {
       observerRef.current?.disconnect();
     };
-  }, [hasMore, isLoading]);
-
-  const loadMore = async () => {
-    setIsLoading(true);
-    try {
-      await fetchMore();
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  }, [hasMore, isLoading, loadMore, threshold]);
 
   return { sentinelRef, isLoading };
 }

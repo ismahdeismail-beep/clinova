@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState, useMemo } from 'react';
+import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as d3 from 'd3';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  Maximize2, RotateCcw, Search, Sliders, Info, BookOpen, 
-  Activity, Award, Sparkles, X, ChevronRight, Play, Compass, Filter
+  RotateCcw, Search, Sliders, Info, BookOpen, 
+  X, ChevronRight, Play, Compass
 } from 'lucide-react';
 import { EDUCATION_MODULES as MODULES, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES, DISEASES_BY_SPECIALTY } from '../data/clinicalCasesData';
@@ -265,6 +265,29 @@ export default function CurriculumGraph() {
   }, [graphData, visibleTypes, searchQuery]);
 
   // Create D3 Force Simulation
+  // Center/Zoom helper
+  const zoomToNode = useCallback((nodeId: string, scale = 1.2) => {
+    if (!svgRef.current || !containerRef.current || !zoomBehaviorRef.current) return;
+    
+    const targetNode = filteredData.nodes.find(n => n.id === nodeId);
+    if (!targetNode) return;
+
+    const width = containerRef.current.clientWidth || 800;
+    const height = containerRef.current.clientHeight || 550;
+
+    const svg = d3.select(svgRef.current);
+    
+    svg.transition()
+      .duration(750)
+      .call(
+        zoomBehaviorRef.current.transform,
+        d3.zoomIdentity
+          .translate(width / 2, height / 2)
+          .scale(scale)
+          .translate(-targetNode.x!, -targetNode.y!)
+      );
+  }, [filteredData]);
+
   useEffect(() => {
     if (!svgRef.current || !containerRef.current) return;
 
@@ -460,30 +483,8 @@ export default function CurriculumGraph() {
     // Trigger auto-focus on Central Root on initial mount
     zoomToNode('root', 0.85);
 
-  }, [filteredData, chargeStrength, linkDistance, collisionRadius]);
+  }, [filteredData, chargeStrength, linkDistance, collisionRadius, zoomToNode]);
 
-  // Center/Zoom helper
-  const zoomToNode = (nodeId: string, scale = 1.2) => {
-    if (!svgRef.current || !containerRef.current || !zoomBehaviorRef.current) return;
-    
-    const targetNode = filteredData.nodes.find(n => n.id === nodeId);
-    if (!targetNode) return;
-
-    const width = containerRef.current.clientWidth || 800;
-    const height = containerRef.current.clientHeight || 550;
-
-    const svg = d3.select(svgRef.current);
-    
-    svg.transition()
-      .duration(750)
-      .call(
-        zoomBehaviorRef.current.transform,
-        d3.zoomIdentity
-          .translate(width / 2, height / 2)
-          .scale(scale)
-          .translate(-targetNode.x!, -targetNode.y!)
-      );
-  };
 
   // Reset viewport
   const handleResetView = () => {

@@ -3,7 +3,7 @@ import { DrugMonographService, type DrugMonograph } from '../services/drugMonogr
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames';
-import { DRUG_REGISTRY_META, type DrugRegistryMeta } from '../data/drugRegistryMeta';
+import { DRUG_REGISTRY_META } from '../data/drugRegistryMeta';
 
 export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
 

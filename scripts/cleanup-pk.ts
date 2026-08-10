@@ -30,7 +30,7 @@ const LEAD_PREFIX =
 // by a capital letter). Handles combos: "Absorption and Distribution ",
 // "Absorption/Bioavailability ", "Elimination ".
 const ADME_HEAD =
-  /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[\/,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
+  /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
 
 // Mid-text FDA section numbers on informative subsection heads
 const SECTION_NUMBER =

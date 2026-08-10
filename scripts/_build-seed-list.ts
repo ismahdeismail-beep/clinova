@@ -4,7 +4,7 @@ import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 import * as fs from 'fs'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
-const norm = (s: string) => s.toLowerCase().replace(/[\/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
+const norm = (s: string) => s.toLowerCase().replace(/[/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
 
 // All DB generic names
 const dbAll: any[] = []

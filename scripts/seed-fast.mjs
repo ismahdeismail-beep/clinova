@@ -81,11 +81,11 @@ async function searchWikimedia(query) {
           licenseUrl: (ii.extmetadata?.LicenseUrl?.value || '').toString(),
           source: 'Wikimedia Commons',
         });
-      } catch (e) { /* skip this image */ }
+      } catch { /* skip this image */ }
       if (results.length >= 2) break;
     }
     return results;
-  } catch (e) {
+  } catch {
     return [];
   }
 }
@@ -136,7 +136,7 @@ async function main() {
         if (error) { console.error(`  Insert error: ${error.message}`); continue; }
         count++;
         inserted++;
-      } catch (e) { /* skip */ }
+      } catch { /* skip */ }
     }
 
     if (count === 0) { failed++; console.log(`  [FAIL]`); }

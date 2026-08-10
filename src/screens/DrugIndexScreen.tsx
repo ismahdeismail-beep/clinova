@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import {
   Pill, Search, Loader2, BookOpen,
-  Sparkles, ChevronRight, ChevronLeft, Heart, BookmarkCheck, Plus,
+  Sparkles, ChevronRight, ChevronLeft, Heart,
   Bug, HeartPulse, Brain, Utensils, Gauge, Wind, Droplets, Ribbon,
   Shield, Hand, Filter, Apple, Moon, Eye, FlaskConical,
   type LucideIcon,
@@ -312,6 +312,32 @@ export default function DrugIndexScreen() {
   }, []);
 
   const viewOpen = monograph !== null || searchResults !== null;
+  // Close one view layer at a time so Back returns to the exact place the
+  // user came from: monograph → its results/category context → browse mode.
+  // The pushed history entry belongs to the FIRST-opened layer (results, or
+  // a monograph opened from Level 1/category) — only pop when closing that
+  // owner layer, otherwise the popstate handler would close the parent too.
+  const closeView = useCallback((popHistory = true) => {
+    const closingMonograph = !!monograph;
+    const closingResults = !monograph && !!searchResults;
+    if (closingMonograph) {
+      setMonograph(null);
+      setCurrentMonographId(null);
+      setMonographKey('');
+      setSelectedDrugName(null);
+      setNeedsAi(false);
+      setError(null);
+    } else if (closingResults) {
+      setSearchResults(null);
+      setResultsQuery('');
+    }
+    setSuggestions([]);
+    const ownsHistoryEntry = closingResults || (closingMonograph && !searchResults);
+    if (popHistory && ownsHistoryEntry && window.history.state?.kdi === 'view') {
+      window.history.back();
+    }
+  }, [monograph, searchResults]);
+
 
   // Browser back closes the detail/results view instead of leaving the KDI screen
   useEffect(() => {
@@ -329,7 +355,7 @@ export default function DrugIndexScreen() {
       viewPushedRef.current = false;
       window.removeEventListener('popstate', onPop);
     };
-  }, [viewOpen]);
+  }, [viewOpen, closeView]);
 
   // Type-ahead suggestions (debounced)
   useEffect(() => {
@@ -395,32 +421,6 @@ export default function DrugIndexScreen() {
     setSelectedDrugName(full.name || full.generic_name || null);
     setNeedsAi(!hasEnrichedContent(full));
     setError(null);
-  };
-
-  // Close one view layer at a time so Back returns to the exact place the
-  // user came from: monograph → its results/category context → browse mode.
-  // The pushed history entry belongs to the FIRST-opened layer (results, or
-  // a monograph opened from Level 1/category) — only pop when closing that
-  // owner layer, otherwise the popstate handler would close the parent too.
-  const closeView = (popHistory = true) => {
-    const closingMonograph = !!monograph;
-    const closingResults = !monograph && !!searchResults;
-    if (closingMonograph) {
-      setMonograph(null);
-      setCurrentMonographId(null);
-      setMonographKey('');
-      setSelectedDrugName(null);
-      setNeedsAi(false);
-      setError(null);
-    } else if (closingResults) {
-      setSearchResults(null);
-      setResultsQuery('');
-    }
-    setSuggestions([]);
-    const ownsHistoryEntry = closingResults || (closingMonograph && !searchResults);
-    if (popHistory && ownsHistoryEntry && window.history.state?.kdi === 'view') {
-      window.history.back();
-    }
   };
 
   const generateWithAi = async (query: string, categoryName?: string) => {
@@ -665,8 +665,6 @@ export default function DrugIndexScreen() {
     return list;
   }, [catalog, searchQuery, selectedCategory, selectedLetter, selectedSubclass]);
 
-  const hasActiveFilter = !!(searchQuery.trim() || selectedCategory || selectedLetter || selectedSubclass);
-
   return (
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       {/* ── Monograph Detail View ── */}
@@ -744,7 +742,7 @@ export default function DrugIndexScreen() {
                 isSeeded={!!currentMonographId}
                 onBack={() => closeView()}
                 onPin={handlePinForOffline}
-                saveButton={currentMonographId ? <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} /> : undefined}
+                saveButton={currentMonographId ? <SaveMonographButton monographId={currentMonographId} /> : undefined}
               />
             </>
           )}

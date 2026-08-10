@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { BookOpen, ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { MedicineImageGallery } from './MedicineImageGallery';
 import { getDrugThumbnail } from '../services/drugMonograph.service';

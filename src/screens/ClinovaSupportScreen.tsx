@@ -1,21 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Bot, Send, User, Library, Pill, Activity, 
-  FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
-  Database, AlertCircle, Mic, MicOff, ArrowDown, X, Sparkles,
-  Download, FileDown, Copy, Check, Menu, Plus, ArrowLeft, Home,
-  Trash2, AlertTriangle
+  Bot, Send, FileText, CheckCircle2, ChevronRight, Loader2, 
+  AlertCircle, Mic, MicOff, ArrowDown, X, Sparkles,
+  Download, FileDown, Copy, Check, Menu, Plus, ArrowLeft
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
 import ReactMarkdown from 'react-markdown';
 
 import { ChatSessionList } from '../components/ChatSessionList';
-import { saveChatSession, deleteChatSession, ChatSession } from '../lib/localDb';
+import { saveChatSession, ChatSession } from '../lib/localDb';
 import { ChatService } from '../services/chat.service';
 import { useAuth } from '../contexts/AuthContext';
-import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats';
 import exportService from '../services/export.service';
 import { sanitizeClinicalText } from '../lib/clinicalTextSanitize';
 
@@ -131,7 +128,7 @@ function renderMarkdown(text: string) {
         ),
         strong: ({ children }) => <strong className="font-bold px-1 rounded" style={{ color: 'var(--medicine)', background: 'color-mix(in srgb, var(--medicine) 10%, transparent)' }}>{children}</strong>,
         em: ({ children }) => <em style={{ color: 'var(--disease)' }}>{children}</em>,
-        code: ({ inline, className, children, ...props }: any) => {
+        code: ({ children, ...props }: any) => {
           return (
             <code className="font-mono text-sm font-semibold px-1.5 py-0.5 rounded" style={{ fontFamily: 'var(--font-mono)', background: 'var(--medicine-container)', border: '1px solid color-mix(in srgb, var(--medicine) 25%, transparent)', color: 'var(--medicine)' }} {...props}>
               {children}
@@ -285,7 +282,6 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
 export default function ClinovaSupportScreen() {
   const navigate = useNavigate();
   const { userData } = useAuth();
-  const { drugCount, caseCount, carePlanCount } = useContentStats();
   // Back returns to the page the user came from; only falls back to the
   // dashboard when there is no previous history (direct link / fresh tab).
   const goBack = () => {
@@ -297,27 +293,6 @@ export default function ClinovaSupportScreen() {
   useEffect(() => {
     setCurrentSessionId('session-' + Date.now());
   }, []);
-  const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
-  const [sessionsLoading, setSessionsLoading] = useState(true);
-
-  // Load chat sessions from Firestore (via ChatService)
-  useEffect(() => {
-    if (!userData?.id) return;
-    
-    const loadSessions = async () => {
-      try {
-        setSessionsLoading(true);
-        const sessions = await ChatService.getChatSessions(userData.id);
-        setChatSessions(sessions);
-      } catch (err) {
-        console.warn('[ClinovaSupport] Failed to load chat sessions:', err);
-      } finally {
-        setSessionsLoading(false);
-      }
-    };
-    
-    loadSessions();
-  }, [userData?.id]);
 
   // Periodically sync local sessions to Firestore
   useEffect(() => {
@@ -325,11 +300,7 @@ export default function ClinovaSupportScreen() {
     
     const syncInterval = setInterval(async () => {
       try {
-        const syncedCount = await ChatService.syncLocalToCloud(userData.id);
-        if (syncedCount > 0) {
-          const sessions = await ChatService.getChatSessions(userData.id);
-          setChatSessions(sessions);
-        }
+        await ChatService.syncLocalToCloud(userData.id);
       } catch (err) {
         console.warn('[ClinovaSupport] Sync failed:', err);
       }
@@ -345,14 +316,17 @@ export default function ClinovaSupportScreen() {
 
   const [speechInterim, setSpeechInterim] = useState('');
   const [speechError, setSpeechError] = useState<string | null>(null);
-  const [speechLang, setSpeechLang] = useState('en-US');
+  const [speechLang] = useState('en-US');
   const recognitionRef = useRef<any>(null);
   const shouldBeListeningRef = useRef(false);
   const inputRef = useRef(input);
+  const handleSendRef = useRef<(textOverride?: string) => void>(() => {});
   
+  // Keep refs in sync with the latest values on every render (latest-ref pattern)
   useEffect(() => {
     inputRef.current = input;
-  }, [input]);
+    handleSendRef.current = handleSend;
+  });
   
   // Ref for textarea auto-resizing
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -392,16 +366,6 @@ export default function ClinovaSupportScreen() {
       content: m.content
     })));
     setIsSidebarOpen(false);
-  };
-  
-  const handleDeleteCurrentSession = async () => {
-    if (!confirm('Delete this entire conversation? This cannot be undone.')) return;
-    try {
-      await deleteChatSession(currentSessionId);
-      handleNewSession();
-    } catch (err) {
-      console.warn('[ClinovaSupport] Failed to delete session:', err);
-    }
   };
   
   // Textarea auto-height adjustment
@@ -482,7 +446,7 @@ export default function ClinovaSupportScreen() {
           if (lowerFinal === 'send message' || lowerFinal === 'submit case' || lowerFinal === 'send query') {
             const currentText = inputRef.current;
             if (currentText.trim()) {
-              handleSend(currentText);
+              handleSendRef.current(currentText);
             }
             return;
           }
@@ -506,7 +470,7 @@ export default function ClinovaSupportScreen() {
             formatted = formatted.replace(/(send message|submit case|send query)$/i, '');
             setInput(prev => {
               const combined = prev ? `${prev.trim()} ${formatted.trim()}` : formatted.trim();
-              setTimeout(() => handleSend(combined), 100);
+              setTimeout(() => handleSendRef.current(combined), 100);
               return '';
             });
             return;
@@ -601,7 +565,6 @@ export default function ClinovaSupportScreen() {
   const [showScrollBottomBtn, setShowScrollBottomBtn] = useState(false);
 
   const selectedSources = ['Kenya Drug Index', 'Kenya STG', 'WHO Guidelines', 'Clinical Pharmacy Library', 'Pharmacotherapy Library', 'Research Evidence'];
-  const [activeRouterState, setActiveRouterState] = useState<{ intent: string, routes: string[] } | null>(null);
 
   const handleScroll = () => {
     if (!chatContainerRef.current) return;
@@ -656,11 +619,6 @@ export default function ClinovaSupportScreen() {
     // Execute RAG Routing Logic
     const intent = RAGRouter.analyzeIntent(userQuery);
     const agent = RAGRouter.routeQuery(intent);
-    
-    setActiveRouterState({ 
-      intent: intent.charAt(0).toUpperCase() + intent.slice(1) + ' Query', 
-      routes: [agent] 
-    });
 
     // Connect to actual Express server API proxying Gemini
     let responseContent = '';
@@ -863,7 +821,6 @@ export default function ClinovaSupportScreen() {
     });
     
     setIsProcessing(false);
-    setTimeout(() => setActiveRouterState(null), 3000);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {

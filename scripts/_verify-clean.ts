@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
 // inline a copy of cleanPk from cleanup-pk.ts to test against live rows
 const LEAD_PREFIX = /^\s*\d+(?:\.\d+){0,2}\s+(?:Pharmacokinetics|CLINICAL PHARMACOLOGY|PHARMACOKINETICS)\s*/i
-const ADME_HEAD = /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[\/,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
+const ADME_HEAD = /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
 const SECTION_NUMBER = /\b\d+(?:\.\d+){1,2}\s+(?:Special Populations|Specific Populations|Renal Impairment|Hepatic Impairment|Pediatric|Geriatric|Pediatric Use|Geriatric Use|Drug Interaction Studies|Pharmacokinetics|Absorption|Distribution|Metabolism|Elimination|Excretion)\b/gi
 const DRUG_INTERACTION_STUDIES = /\s*Drug Interaction Studies\b.*$/i
 const TABLE_JUNK = /^\s*(?:table\s+\d+|dose\/route|\d+(?:\.\d+)?\s+\d+)/i

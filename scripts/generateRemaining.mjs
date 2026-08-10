@@ -6,7 +6,7 @@
  * Output: scripts/newDrugs.json
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
 // Load existing drug names for dedup
 const existingRaw = readFileSync('src/data/drugIndexData.ts', 'utf-8');

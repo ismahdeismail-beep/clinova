@@ -4,7 +4,7 @@ async function diagnose() {
   console.log('--- Database Diagnostic: Clinical Cases ---');
   
   // Total count
-  const { count: total, error: e1 } = await supabase
+  const { count: total } = await supabase
     .from('clinical_cases')
     .select('*', { count: 'exact', head: true });
   console.log(`Total rows in clinical_cases: ${total}`);

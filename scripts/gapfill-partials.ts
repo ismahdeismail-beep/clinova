@@ -102,7 +102,6 @@ function hasReal(v: any): boolean {
   )
 }
 
-const PLACEHOLDER = /^(refer to current|consult current|monitor clinical|take as prescribed|seek immediate medical|hypersensitivity to the active|mechanism of action for)/i
 
 // Number of genuinely real items in an array field (audit's quality bar).
 function realCount(v: any): number {

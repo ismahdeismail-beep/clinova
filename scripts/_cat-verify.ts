@@ -30,7 +30,7 @@ const MAP: Record<string, string> = {
 }
 
 // 2) DB existing generic names (to exclude)
-const norm = (s: string) => s.toLowerCase().replace(/[\/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
+const norm = (s: string) => s.toLowerCase().replace(/[/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
 const dbAll: any[] = []
 for (let from = 0; from < 2000; from += 1000) {
   const { data } = await admin.from('drug_monographs').select('generic_name').range(from, from + 999)

@@ -473,7 +473,6 @@ export async function embedTextBatch(texts: string[]): Promise<number[][]> {
 // Mock-and-Live Execution for Gateway APIs
 async function executeProvider(provider: string, request: any): Promise<{ text: string }> {
   // Let's implement live calls for Gemini and OpenRouter if key exists, otherwise elegant medical simulation
-  const inputPromptText = typeof request.contents === 'string' ? request.contents : JSON.stringify(request.contents);
 
   if (provider === 'Google Gemini') {
     const mainKeyEnv = process.env.GEMINI_API_KEY;

@@ -25,15 +25,6 @@ export function isGeneric(val) {
   )
 }
 
-// ── Generic placeholders (what we replace) ─────────────────────────
-const GEN = {
-  moa: 'Pharmacological agent: acts through specific receptor or enzyme interactions to produce therapeutic effects.',
-  pk: 'Absorption: variable depending on route. Distribution: widespread. Half-life: varies. Metabolism: hepatic. Excretion: renal.',
-  overdose: 'Symptoms: nausea, vomiting, dizziness, dose-related adverse effects. Management: discontinue drug, provide supportive care. No specific antidote.',
-  pearls: ['Clinical response varies based on patient factors', 'Monitor therapeutic response and adjust dose accordingly'],
-  warnings: ['Use with caution in patients with renal or hepatic impairment', 'Monitor for adverse effects'],
-}
-
 // ── Drug class templates ───────────────────────────────────────────
 
 export const CLASS_TEMPLATES = {

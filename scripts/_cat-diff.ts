@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
-const norm = (s: string) => s.toLowerCase().replace(/[\/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
+const norm = (s: string) => s.toLowerCase().replace(/[/–—\-+(),.'"]/g, ' ').replace(/\s+/g, ' ').trim()
 
 const dbAll: any[] = []
 for (let from = 0; from < 2000; from += 1000) {
@@ -13,7 +13,6 @@ for (let from = 0; from < 2000; from += 1000) {
   if (data.length < 1000) break
 }
 const dbNorm = new Set(dbAll.map((r: any) => norm(r.generic_name ?? '')))
-const dbRaw = new Set(dbAll.map((r: any) => (r.generic_name ?? '').toLowerCase().trim()))
 
 const rawMissing = BUNDLED_DRUGS.filter((d) => !dbNorm.has(norm((d as any).generic_name ?? '')))
 // among raw-missing, which have substring fuzzy match to a DB name (variants)?

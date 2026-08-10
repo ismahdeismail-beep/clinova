@@ -1,6 +1,5 @@
 // Medicine image provider modules — search approved sources for licensed medicine images.
 // Each provider returns metadata only (no download). License verification happens in the crawler.
-import { type DrugImage } from '../../types/crawler'
 
 const FETCH_TIMEOUT_MS = 12000
 
@@ -278,7 +277,7 @@ export async function searchDailyMed(query: string, limit = 10): Promise<Provide
   // DailyMed's drug_name search is picky: compound phrases (e.g. the salt-stripped
   // "furosemide frusemide tablet" built from paren-form names) return zero SPLs,
   // while a single term matches. Retry by dropping trailing tokens until a hit.
-  let attempts: string[] = [query]
+  const attempts: string[] = [query]
   if (query.trim().split(/\s+/).length > 1) {
     const tokens = query.trim().split(/\s+/)
     for (let i = tokens.length - 1; i >= 1; i--) attempts.push(tokens.slice(0, i).join(' '))

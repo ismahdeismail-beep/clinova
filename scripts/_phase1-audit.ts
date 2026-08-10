@@ -31,7 +31,7 @@ async function main() {
     const flag = c < 6 ? '⚠️' : '✅';
     console.log(`  ${flag} ${c} × ${d}`);
   }
-  const belowMin = sorted.filter(([_, c]) => c < 6);
+  const belowMin = sorted.filter(([, c]) => c < 6);
   console.log(`\n  Diseases below 6-case minimum: ${belowMin.length}`);
   belowMin.forEach(([d, c]) => console.log(`    - ${c} × ${d}`));
 

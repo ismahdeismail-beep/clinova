@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
@@ -249,7 +249,7 @@ export async function bulkDelete(
   }
 }
 
-export async function getPaginatedResults<T>(
+export async function getPaginatedResults(
   table: string,
   options: {
     page: number;
@@ -388,7 +388,7 @@ export function useRealtimeQuery<T>(
       isMounted = false;
       channelRef?.unsubscribe();
     };
-  }, []);
+  }, [table, queryOptions.filters, queryOptions.limit, queryOptions.orderBy, queryOptions.select]);
 
   return { data, loading, error };
 }

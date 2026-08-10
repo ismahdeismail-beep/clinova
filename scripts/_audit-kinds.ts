@@ -14,8 +14,7 @@ const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVI
   auth: { persistSession: false },
 })
 
-const KINDS = ['packaging', 'product', 'structure', 'diagram', 'unknown'] as const
-type Kind = (typeof KINDS)[number]
+type Kind = 'packaging' | 'product' | 'structure' | 'diagram' | 'unknown'
 
 const KIND_RE: Record<Kind, RegExp> = {
   packaging:

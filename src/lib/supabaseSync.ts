@@ -218,7 +218,7 @@ export function initSupabaseSync() {
             await pullFromSupabase(parsed.id);
             return;
           }
-        } catch (e) {
+        } catch {
           // ignore parsing error
         }
       }
@@ -236,7 +236,7 @@ export function initSupabaseSync() {
           currentUserId = parsed.id;
           await pullFromSupabase(parsed.id);
         }
-      } catch (e) {
+      } catch {
         // ignore parsing error
       }
     }

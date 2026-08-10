@@ -11,7 +11,6 @@ import {
   validateImage,
   optimizeImage,
   scoreQuality,
-  computeDHash,
 } from '../src/services/crawler/imageProcessor'
 
 const STATE_FILE = 'storage/pubchem_state.json'

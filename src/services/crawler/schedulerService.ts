@@ -1,5 +1,4 @@
 // Crawler scheduler — manages crawl state, triggers, and progress tracking.
-import { supabase } from '../../lib/supabase'
 import { adminSupabase } from '../../server/adminClient'
 import type { CrawlStatus, CrawlReport } from '../../types/crawler'
 import { loadState, saveState, type CrawlerState } from './state'

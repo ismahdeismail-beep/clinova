@@ -1,6 +1,5 @@
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
-import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim()

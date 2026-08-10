@@ -13,11 +13,18 @@ export default [
     rules: {
       'no-unused-vars': 'off',
       'no-undef': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
       '@typescript-eslint/no-explicit-any': 'off',
       ...reactHooks.configs.recommended.rules,
       'react-hooks/set-state-in-effect': 'off',
       'react-hooks/immutability': 'off',
+    },
+  },
+  {
+    // CommonJS scripts (scripts/*.cjs) legitimately use require()
+    files: ['**/*.cjs'],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
     },
   },
 ]

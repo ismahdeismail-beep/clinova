@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
-  Search, RefreshCw, Upload, Trash2, Check, X,
-  ImageOff, Download, Filter, ChevronDown, ChevronUp,
+  Search, RefreshCw, Trash2, Check, X,
+  ImageOff, Download,
   Database, AlertTriangle, Clock, FolderOpen,
 } from 'lucide-react';
 
@@ -24,11 +24,7 @@ interface DrugImageRecord {
   created_at: string;
 }
 
-interface MedicineImageManagerProps {
-  onBack?: () => void;
-}
-
-export function MedicineImageManager({ onBack }: MedicineImageManagerProps) {
+export function MedicineImageManager() {
   const [images, setImages] = useState<DrugImageRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -106,7 +102,7 @@ export function MedicineImageManager({ onBack }: MedicineImageManagerProps) {
         fetchStats();
         fetchMissing();
       }
-    } catch (err) {
+    } catch {
       setCrawlProgress('Crawl failed');
     } finally {
       setCrawling(false);
@@ -129,7 +125,7 @@ export function MedicineImageManager({ onBack }: MedicineImageManagerProps) {
         fetchStats();
         fetchMissing();
       }
-    } catch (err) {
+    } catch {
       setCrawlProgress('Refresh failed');
     } finally {
       setCrawling(false);

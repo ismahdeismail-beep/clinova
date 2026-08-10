@@ -4,11 +4,10 @@ import { BUNDLED_DRUGS } from '../src/data/drugIndexData.js'
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, { auth: { persistSession: false } })
 
-const norm = (s: string) => s.toLowerCase().replace(/[\/–—\-,]/g, ' ').replace(/\s+/g, ' ').trim()
+const norm = (s: string) => s.toLowerCase().replace(/[/–—\-,]/g, ' ').replace(/\s+/g, ' ').trim()
 
 const { data: dbDrugs } = await admin.from('drug_monographs').select('generic_name')
 const dbNames = new Set((dbDrugs ?? []).map((r: any) => norm(r.generic_name ?? '')))
-const dbRaw = new Set((dbDrugs ?? []).map((r: any) => (r.generic_name ?? '').toLowerCase().trim()))
 
 // DB drugs not in bundled catalogue
 const bundledNorm = new Set(BUNDLED_DRUGS.map((d: any) => norm(d.generic_name)))

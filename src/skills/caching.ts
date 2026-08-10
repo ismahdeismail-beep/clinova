@@ -41,7 +41,7 @@ export const cachingSkill: Skill = {
     return q.includes('clear cache') || q.includes('invalidate cache');
   },
 
-  async execute(context: SkillContext): Promise<SkillResponse> {
+  async execute(): Promise<SkillResponse> {
     const start = Date.now();
     const cleared = cache.size;
     cache.clear();

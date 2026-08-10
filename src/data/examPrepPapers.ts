@@ -4,7 +4,7 @@
 // Two sets: NEW-curriculum mock papers (3 variants each) + OLD-curriculum real past papers
 // (variant 1 only, kept for current learners). Standard format A=30 / B=40 / C=30 = 100 marks.
 // Regenerate with: npx tsx scripts/merge-papers.ts
-import { type ExamUnitSpec } from './examPrepData';
+
 import { EXAM_PREP_PAPERS_OLD_PHARM } from './examPrepPapersOldPharm';
 
 export interface GeneratedQuestion {

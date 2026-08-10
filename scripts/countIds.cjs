@@ -4,7 +4,6 @@ const d = fs.readFileSync('src/data/drugIndexData.ts', 'utf-8');
 // More specific: look for lines that start with { or {"id": pattern
 const lines = d.split('\n');
 let counts = { bundled: 0, 'new-ess': 0, 'new-drugs': 0, other: 0 };
-let examples = [];
 
 for (const line of lines) {
   const m = line.match(/\bid['"]*\s*:\s*['"]([^'"]+)['"]/);

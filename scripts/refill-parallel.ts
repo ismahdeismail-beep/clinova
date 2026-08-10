@@ -57,7 +57,7 @@ async function main() {
   const slices = chunk(zero, WORKERS).filter((s) => s.length > 0)
   console.log(`[parallel] slices=${slices.map((s) => s.length).join(', ')}`)
 
-  const results = await Promise.all(
+  await Promise.all(
     slices.map((slice, i) => {
       const ids = slice.map((d: any) => d.id).join(',')
       const stateFile = `storage/refill_state_w${i}.json`

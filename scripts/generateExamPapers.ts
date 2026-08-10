@@ -20,7 +20,6 @@ const orKey =
     .trim()
     .replace(/^"|"$/g, '') || process.env.MISTRAL_API_KEY;
 
-const ENDPOINT = 'https://api.mistral.ai/v1/chat/completions';
 const MODEL = 'mistral-small-latest';
 const UNITS: any[] = EXAM_PREP_UNITS;
 

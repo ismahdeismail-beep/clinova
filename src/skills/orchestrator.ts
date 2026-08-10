@@ -5,9 +5,7 @@
 
 import { skillRegistry } from './registry';
 import { generateContentWithFallback } from '../server/aiRouter';
-import { searchLibrary } from '../data/onlineLibraryData';
 import type {
-  Skill,
   SkillContext,
   SkillResponse,
   SkillId,

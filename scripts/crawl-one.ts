@@ -1,7 +1,6 @@
 // One-off: run crawlDrug for a specific drug id (end-to-end, with dotenv).
 // Usage: npx tsx scripts/crawl-one.ts "<drug-id>" "<generic-name>"
 import 'dotenv/config'
-import { createClient } from '@supabase/supabase-js'
 import { crawlDrug } from '../src/services/crawler/imageCrawler'
 
 async function main() {
@@ -10,9 +9,6 @@ async function main() {
     console.error('Usage: npx tsx scripts/crawl-one.ts "<drug-id>" "<generic-name>"')
     process.exit(1)
   }
-  const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
-    auth: { persistSession: false },
-  })
   const stats = await crawlDrug(drugId, genericName)
   console.log(`[one] ${genericName} =>`, JSON.stringify(stats))
   // mark state so run-crawl skips it next time

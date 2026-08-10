@@ -172,7 +172,6 @@ async function main() {
   console.log(`\n🚀 Importing ${validCases.length} cases in batches of ${BATCH_SIZE}...`);
 
   let imported = 0;
-  const updated = 0;
   let errors = 0;
 
   for (let i = 0; i < validCases.length; i += BATCH_SIZE) {
@@ -213,7 +212,7 @@ async function main() {
       created_by_name: c.createdByName || 'Clinical Faculty',
     }));
 
-    const { error, count } = await supabase
+    const { error } = await supabase
       .from('clinical_cases')
       .upsert(records, { onConflict: 'seed_id', ignoreDuplicates: false })
       .select('id', { count: 'exact', head: false });

@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
 import { crawlDrug } from '../src/services/crawler/imageCrawler'
-import { loadState, saveState, type CrawlerState } from '../src/services/crawler/state'
+import { loadState, saveState } from '../src/services/crawler/state'
 
 const BATCH_SIZE = Number(process.env.CRAWL_BATCH_SIZE || '10')
 
@@ -15,7 +15,7 @@ async function main() {
     auth: { persistSession: false },
   })
 
-  let state = loadState()
+  const state = loadState()
 
   const { data: drugs, error: drugErr } = await admin
     .from('drug_monographs')

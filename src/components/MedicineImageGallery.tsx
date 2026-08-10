@@ -175,18 +175,6 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
     fetchImages();
   }, [fetchImages]);
 
-  const groupedByForm = React.useMemo(() => {
-    const groups: Record<string, DrugImage[]> = {};
-    for (const img of images) {
-      const form = img.dosage_form || 'unknown';
-      if (!groups[form]) groups[form] = [];
-      groups[form].push(img);
-    }
-    return groups;
-  }, [images]);
-
-  const tabs = activeTab ? [activeTab] : Object.keys(groupedByForm);
-
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">

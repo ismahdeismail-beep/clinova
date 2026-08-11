@@ -154,7 +154,7 @@ export default function ExamPrepScreen() {
 
   // ── Module page: choose a curriculum track ──
   return (
-    <div className="space-y-5">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5">
       <button onClick={() => navigate('/knowledge/exam/prep')} className={backButtonClass}>
         <ArrowLeft size={14} /> All modules
       </button>

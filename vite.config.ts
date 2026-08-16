@@ -1,14 +1,14 @@
-import react from '@vitejs/plugin-react';
-import path from 'path';
-import {defineConfig} from 'vite';
-import { VitePWA } from 'vite-plugin-pwa';
-import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react'
+import path from 'path'
+import { defineConfig } from 'vite'
+import { VitePWA } from 'vite-plugin-pwa'
+import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig(() => {
+export function buildConfig() {
   return {
     plugins: [
       tailwindcss(),
-      react(), 
+      react(),
       VitePWA({
         registerType: 'autoUpdate',
         strategies: 'injectManifest',
@@ -20,12 +20,12 @@ export default defineConfig(() => {
           'pwa-192x192.png',
           'pwa-512x512.png',
           'pwa-512x512-maskable.png',
-          'apple-touch-icon.png'
+          'apple-touch-icon.png',
         ],
         injectManifest: {
           swSrc: 'src/sw.ts',
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg,webmanifest}'],
-          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024
+          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         },
         manifest: {
           name: 'Clinova',
@@ -42,29 +42,29 @@ export default defineConfig(() => {
               src: 'pwa-192x192.png',
               sizes: '192x192',
               type: 'image/png',
-              purpose: 'any'
+              purpose: 'any',
             },
             {
               src: 'pwa-512x512.png',
               sizes: '512x512',
               type: 'image/png',
-              purpose: 'any'
+              purpose: 'any',
             },
             {
               src: 'pwa-512x512-maskable.png',
               sizes: '512x512',
               type: 'image/png',
-              purpose: 'maskable'
+              purpose: 'maskable',
             },
             {
               src: 'clinova_logo.jpg',
               sizes: '1024x1024',
               type: 'image/jpeg',
-              purpose: 'any'
-            }
-          ]
-        }
-      })
+              purpose: 'any',
+            },
+          ],
+        },
+      }),
     ],
     resolve: {
       alias: {
@@ -76,10 +76,12 @@ export default defineConfig(() => {
       outDir: 'dist',
       rollupOptions: {
         onwarn(warning, warn) {
-          if (warning.code === 'MODULE_LEVEL_DIRECTIVE') return;
-          warn(warning);
-        }
-      }
-    }
-  };
-});
+          if (warning.code === 'MODULE_LEVEL_DIRECTIVE') return
+          warn(warning)
+        },
+      },
+    },
+  }
+}
+
+export default defineConfig(buildConfig)

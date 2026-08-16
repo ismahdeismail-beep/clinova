@@ -1,0 +1,3 @@
+# Force LF for shell/hook scripts (CRLF breaks sh execution on Windows)
+.husky/** -text
+*.sh -text

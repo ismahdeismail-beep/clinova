@@ -28,13 +28,19 @@ import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
-import { setVapidDetails, sendNotification } from 'web-push';
+import webpush from 'web-push';
+import * as Sentry from '@sentry/node';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
 import { getCrawlStatus, triggerCrawl, getCrawlReport } from './src/services/crawler/schedulerService.js';
 
 const app = express();
 const PORT = 3000;
 const upload = multer({ storage: multer.memoryStorage() });
+
+const SENTRY_DSN = process.env.SENTRY_DSN || '';
+if (SENTRY_DSN) {
+  Sentry.init({ dsn: SENTRY_DSN, tracesSampleRate: 0.1 });
+}
 
 function safeJsonParse(text: string | null | undefined, fallback: any = {}): any {
   if (!text) return fallback;
@@ -222,7 +228,7 @@ const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY || '';
 const VAPID_SUBJECT = process.env.VAPID_SUBJECT || 'mailto:support@clinova.app';
 if (VAPID_PUBLIC_KEY && VAPID_PRIVATE_KEY) {
   try {
-    setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
+    webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
   } catch (err) {
     console.error('[push] Invalid VAPID keys:', err);
   }
@@ -558,7 +564,7 @@ app.post('/api/push/daily', async (req, res) => {
 
     for (const sub of subs ?? []) {
       try {
-        await sendNotification(
+        await webpush.sendNotification(
           {
             endpoint: sub.endpoint,
             keys: { p256dh: sub.p256dh, auth: sub.auth },

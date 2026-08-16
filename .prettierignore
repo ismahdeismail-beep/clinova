@@ -1,0 +1,10 @@
+# Legacy monolithic file - kept out of auto-formatting to avoid massive diffs
+server.ts
+
+# Build/runtime artifacts
+dist/
+node_modules/
+storage/
+test-results/
+playwright-report/
+coverage/

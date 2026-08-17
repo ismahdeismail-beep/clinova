@@ -282,6 +282,117 @@ Supabase should function as the secure, scalable foundation of Clinova. It store
 
 ---
 
+# Pharmaceutical Industry Knowledge Base
+
+## Overview
+
+Clinova includes a comprehensive pharmaceutical industry knowledge base that covers the full medicine lifecycle — from manufacturing and quality assurance to regulatory affairs, pharmacovigilance, supply chain, and career development. This knowledge is bundled as static data and served through a dedicated service layer, enabling offline-first access without requiring Supabase.
+
+## Architecture
+
+### Data Layer (Bundled Static Data)
+
+| File                                      | Purpose                                                        | Records               |
+| ----------------------------------------- | -------------------------------------------------------------- | --------------------- |
+| `src/data/industryKnowledgeData.ts`       | Pharmaceutical topic tree (30+ topics across 6 categories)     | Topics with hierarchy |
+| `src/data/industryTermsData.ts`           | Industry glossary (55 searchable terms with aliases, examples) | Terms                 |
+| `src/data/industryKnowledgeEntries.ts`    | Detailed knowledge entries with educational content            | 38 entries            |
+| `src/data/drugIndustryConnectionsData.ts` | Links between drug index entries and industry knowledge        | 50 connections        |
+| `src/data/kenyanManufacturersData.ts`     | 27 real PPB-licensed Kenyan pharmaceutical companies           | 27 manufacturers      |
+
+### Service Layer
+
+`src/services/industryKnowledge.service.ts` — Primary service for all industry data access:
+
+- `getByTopic(topicSlug)` — Returns knowledge entries for a topic (falls back to bundled data)
+- `getForDrug(drugId, connectionTypes?)` — Returns drug-industry connections (matches by `drug_id` OR `drug_name`)
+- `getTopics(parentId?)` — Returns topic hierarchy
+- `getManufacturers()` — Returns all Kenyan manufacturers
+- `searchTerms(query)` — Searches glossary terms
+
+### UI Components
+
+| Component                            | Purpose                                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------------------- |
+| `src/screens/IndustryHubScreen.tsx`  | Standalone Industry Hub screen (Topics browser, Glossary, Manufacturers)               |
+| `src/components/DrugIndustryTab.tsx` | Industry tab within Drug Monograph view (shows connections + manufacturers for a drug) |
+
+### Types
+
+All industry types are defined in `src/types/knowledge.ts` (lines 597+):
+
+- `PharmaceuticalTopic` — hierarchical topic tree
+- `IndustryKnowledgeEntry` — detailed knowledge entries with content object
+- `DrugIndustryConnection` — links drugs to industry knowledge
+- `IndustryTerm` — glossary term with aliases and examples
+- `KenyanManufacturer` — manufacturer profile with PPB registration number
+- `IndustryDifficulty` — basic | intermediate | advanced
+- `IndustryConnectionType` — manufactured_as | formulation_type | manufacturing_process | quality_consideration | regulatory_note | supply_note | storage_requirement | manufacturer_info | stability_note | packaging_info
+
+### Navigation
+
+Route: `/industry` — lazy-loaded `IndustryHubScreen`
+Sidebar nav: "Industry" (Factory icon) in `src/data/navigationConfig.ts`
+
+## Data Flow
+
+1. User opens Drug Monograph → Industry tab → `DrugIndustryTab` loads
+2. Tab calls `IndustryKnowledgeService.getForDrug(drugId)` → matches bundled connections by drug_id or drug_name
+3. Tab calls `IndustryKnowledgeService.getManufacturers()` → returns all 27 Kenyan manufacturers
+4. Connections resolve their `entry` references from `BUNDLED_INDUSTRY_ENTRIES`
+
+User opens Industry Hub → `/industry` route
+
+1. Topics tab loads `BUNDLED_TOPICS` tree
+2. Glossary tab loads `BUNDLED_INDUSTRY_TERMS` (searchable)
+3. Manufacturers tab loads `BUNDLED_KENYAN_MANUFACTURERS` (filterable)
+4. Topic detail view renders entry content with formatted sections
+
+## Content Categories
+
+- **Manufacturing & Formulation** — tablets, capsules, oral liquids, semi-solids, sterile products, wet/dry granulation, direct compression, excipients, packaging/labelling, continuous manufacturing, formulation development, technology transfer
+- **Quality** — QA systems, QC testing, process validation, stability testing, GMP
+- **Regulatory** — product registration (Kenya PPB), compliance inspections, WHO prequalification, EAC harmonisation, bioequivalence, clinical trials
+- **Pharmacovigilance** — ADR classification, safety reporting systems
+- **Supply Chain** — procurement, distribution/storage, cold chain, counterfeit medicines, essential medicines
+- **Kenya** — manufacturing landscape, PPB regulation (with 2025-2026 reforms)
+- **Careers** — industrial pharmacy, regulatory affairs, pharmacovigilance, QA/QC
+
+## Drug-Industry Connections
+
+Connections link 21 drugs to industry knowledge across 9 connection types:
+
+- Manufacturing process (wet granulation, direct compression)
+- Formulation type (capsules, tablets, injectables)
+- Stability notes (moisture sensitivity, storage conditions)
+- Regulatory notes (WHO PQ, KEML status)
+- Manufacturer info (local production)
+- Storage requirements (cold chain)
+
+Covered drugs: paracetamol, amoxicillin, amoxicillin/clavulanate, artemether/lumefantrine, metformin, enalapril, fluconazole, omeprazole, insulin, zidovudine, ceftriaxone, azithromycin, ciprofloxacin, metronidazole, doxycycline, co-trimoxazole, gentamicin, vancomycin, linezolid, clindamycin, chloramphenicol
+
+## Kenyan Manufacturers (Real PPB Registry Data)
+
+27 companies sourced from medstatus.co.ke PPB registry, including:
+
+- **Active**: Cosmos, Dawa Life Sciences, Beta Healthcare, Biodeal, Autosterile (EA), Cipla QC, Elys Chemical, Lab & Allied, Haleon Kenya, Questa Care, Regal, Sphinx, Square Pharmaceuticals EPZ, Galaxy, Aesthetics, AKU Radiopharmacy, KUTRRH PET, Abacus Pharma, Amanta Healthcare, Biopharma, Tasa Pharma, BOC Kenya, Comet Healthcare, Benmed
+- **Suspended**: B. Braun EPZ, Dinlas Pharma
+- **Government**: KEMSA
+
+Each entry includes PPB registration number, location, capabilities, certifications, and notes.
+
+## Supabase Relationship
+
+Industry data is bundled for offline-first access. When Supabase is available, the service queries the database first and falls back to bundled data. Database tables (when populated):
+
+- `pharmaceutical_topics`
+- `industry_knowledge_entries`
+- `drug_industry_connections`
+- `industry_terms`
+- `kenyan_manufacturers`
+
+---
+
 # Subagent Memory & Tooling
 
 This section helps coding/subagents work effectively in this repo.

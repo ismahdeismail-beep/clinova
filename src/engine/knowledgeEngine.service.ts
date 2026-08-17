@@ -1,27 +1,37 @@
-import { supabase } from '../lib/supabase';
-import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
-import { BUNDLED_DRUGS } from '../data/drugIndexData';
-import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
-import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames';
-import { DRUG_REGISTRY_META } from '../data/drugRegistryMeta';
+import { supabase } from '../lib/supabase'
+import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service'
+import { IndustryKnowledgeService } from '../services/industryKnowledge.service'
+import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
+import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames'
+import { DRUG_REGISTRY_META } from '../data/drugRegistryMeta'
 
-export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
+export type QueryIntent =
+  'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general'
 
 export interface KnowledgeSource {
-  type: 'drug_monograph' | 'drug_registry' | 'clinical_case' | 'disease' | 'guideline';
-  id: string;
-  title: string;
-  content: string;
-  relevance: number;
+  type:
+    | 'drug_monograph'
+    | 'drug_registry'
+    | 'clinical_case'
+    | 'disease'
+    | 'guideline'
+    | 'industry_knowledge'
+    | 'industry_term'
+    | 'manufacturer'
+  id: string
+  title: string
+  content: string
+  relevance: number
 }
 
 export interface KnowledgeEngineResult {
-  query: string;
-  intent: QueryIntent;
-  sources: KnowledgeSource[];
-  contextSummary: string;
-  drugMonographs?: DrugMonograph[];
-  hasData: boolean;
+  query: string
+  intent: QueryIntent
+  sources: KnowledgeSource[]
+  contextSummary: string
+  drugMonographs?: DrugMonograph[]
+  hasData: boolean
 }
 
 // -- Retrieval caches ------------------------------------------------
@@ -35,83 +45,315 @@ let interactionDrugListCache: { id: string; name: string; interactions: string[]
 
 // -- Stop words stripped during keyword extraction --
 const STOP_WORDS = new Set([
-  'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
-  'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
-  'should', 'may', 'might', 'can', 'shall', 'to', 'of', 'in', 'for',
-  'on', 'with', 'at', 'by', 'from', 'as', 'into', 'through', 'during',
-  'before', 'after', 'above', 'below', 'between', 'out', 'off', 'over',
-  'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when',
-  'where', 'why', 'how', 'all', 'both', 'each', 'few', 'more', 'most',
-  'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same',
-  'so', 'than', 'too', 'very', 'just', 'about', 'what', 'which', 'who',
-  'whom', 'this', 'that', 'these', 'those', 'and', 'but', 'if', 'or',
-  'because', 'until', 'while', 'its', 'it', 'they', 'them', 'their',
-  'we', 'our', 'you', 'your', 'he', 'she', 'his', 'her', 'my', 'me',
-  'i', 'am', 'get', 'got', 'let', 'say', 'said', 'tell', 'told',
-  'give', 'take', 'make', 'know', 'think', 'see', 'come', 'go',
-  'want', 'look', 'use', 'find', 'ask', 'work', 'seem', 'feel',
-  'try', 'leave', 'call', 'need', 'become', 'keep', 'mean', 'set',
-  'help', 'show', 'hear', 'play', 'run', 'move', 'live', 'believe',
-  'bring', 'happen', 'must', 'write', 'provide', 'hold', 'turn',
-  'present', 'explain', 'discuss', 'describe', 'review', 'compare',
-  'list', 'outline', 'summarize', 'define', 'identify', 'state',
-  'mention', 'note', 'patient', 'patients', 'case', 'cases',
-  'scenario', 'scenarios', 'manage', 'managed', 'managing',
-  'treatment', 'treat', 'treated', 'clinical', 'clinically',
-  'medical', 'medication', 'medications', 'prescribe', 'prescribed',
-  'dosing', 'dose', 'dosage', 'drug', 'drugs', 'medicine', 'medicines',
-  'disease', 'diseases', 'condition', 'conditions', 'health',
-  'hospital', 'ward', 'admission', 'admit', 'discharge',
-]);
+  'a',
+  'an',
+  'the',
+  'is',
+  'are',
+  'was',
+  'were',
+  'be',
+  'been',
+  'being',
+  'have',
+  'has',
+  'had',
+  'do',
+  'does',
+  'did',
+  'will',
+  'would',
+  'could',
+  'should',
+  'may',
+  'might',
+  'can',
+  'shall',
+  'to',
+  'of',
+  'in',
+  'for',
+  'on',
+  'with',
+  'at',
+  'by',
+  'from',
+  'as',
+  'into',
+  'through',
+  'during',
+  'before',
+  'after',
+  'above',
+  'below',
+  'between',
+  'out',
+  'off',
+  'over',
+  'under',
+  'again',
+  'further',
+  'then',
+  'once',
+  'here',
+  'there',
+  'when',
+  'where',
+  'why',
+  'how',
+  'all',
+  'both',
+  'each',
+  'few',
+  'more',
+  'most',
+  'other',
+  'some',
+  'such',
+  'no',
+  'nor',
+  'not',
+  'only',
+  'own',
+  'same',
+  'so',
+  'than',
+  'too',
+  'very',
+  'just',
+  'about',
+  'what',
+  'which',
+  'who',
+  'whom',
+  'this',
+  'that',
+  'these',
+  'those',
+  'and',
+  'but',
+  'if',
+  'or',
+  'because',
+  'until',
+  'while',
+  'its',
+  'it',
+  'they',
+  'them',
+  'their',
+  'we',
+  'our',
+  'you',
+  'your',
+  'he',
+  'she',
+  'his',
+  'her',
+  'my',
+  'me',
+  'i',
+  'am',
+  'get',
+  'got',
+  'let',
+  'say',
+  'said',
+  'tell',
+  'told',
+  'give',
+  'take',
+  'make',
+  'know',
+  'think',
+  'see',
+  'come',
+  'go',
+  'want',
+  'look',
+  'use',
+  'find',
+  'ask',
+  'work',
+  'seem',
+  'feel',
+  'try',
+  'leave',
+  'call',
+  'need',
+  'become',
+  'keep',
+  'mean',
+  'set',
+  'help',
+  'show',
+  'hear',
+  'play',
+  'run',
+  'move',
+  'live',
+  'believe',
+  'bring',
+  'happen',
+  'must',
+  'write',
+  'provide',
+  'hold',
+  'turn',
+  'present',
+  'explain',
+  'discuss',
+  'describe',
+  'review',
+  'compare',
+  'list',
+  'outline',
+  'summarize',
+  'define',
+  'identify',
+  'state',
+  'mention',
+  'note',
+  'patient',
+  'patients',
+  'case',
+  'cases',
+  'scenario',
+  'scenarios',
+  'manage',
+  'managed',
+  'managing',
+  'treatment',
+  'treat',
+  'treated',
+  'clinical',
+  'clinically',
+  'medical',
+  'medication',
+  'medications',
+  'prescribe',
+  'prescribed',
+  'dosing',
+  'dose',
+  'dosage',
+  'drug',
+  'drugs',
+  'medicine',
+  'medicines',
+  'disease',
+  'diseases',
+  'condition',
+  'conditions',
+  'health',
+  'hospital',
+  'ward',
+  'admission',
+  'admit',
+  'discharge',
+])
 
 // -- Known disease names for direct matching --
-const KNOWN_DISEASES = new Set<string>();
+const KNOWN_DISEASES = new Set<string>()
 for (const c of ALL_CLINICAL_CASES) {
-  if (c.disease) KNOWN_DISEASES.add(c.disease.toLowerCase());
+  if (c.disease) KNOWN_DISEASES.add(c.disease.toLowerCase())
 }
 
 function detectIntent(query: string): QueryIntent {
-  const q = query.toLowerCase();
+  const q = query.toLowerCase()
 
-  if (q.includes('interaction') || q.includes('interact with') || q.includes('combine') ||
-      q.includes('take with') || q.includes('co-prescrib') || q.includes('together with') ||
-      q.includes('taken together') || q.includes('with each other') || q.includes('concomitant') ||
-      q.includes('concurrent use')) {
-    return 'drug_interaction';
+  if (
+    q.includes('interaction') ||
+    q.includes('interact with') ||
+    q.includes('combine') ||
+    q.includes('take with') ||
+    q.includes('co-prescrib') ||
+    q.includes('together with') ||
+    q.includes('taken together') ||
+    q.includes('with each other') ||
+    q.includes('concomitant') ||
+    q.includes('concurrent use')
+  ) {
+    return 'drug_interaction'
   }
 
-  if (q.includes('dose') || q.includes('dosage') || q.includes('dosing') || q.includes('side effect') ||
-      q.includes('contraindication') || q.includes('monitoring') || q.includes('counselling') ||
-      q.includes('counseling') || q.includes('mg') || q.includes('mcg') || q.includes('pharmacology') ||
-      q.includes('mechanism') || q.includes('antibiotic') || q.includes('analgesic') ||
-      q.includes('antihypertensive') || q.includes('antidiabetic') || q.includes('injection') ||
-      q.includes('tablet') || q.includes('syrup') || q.includes('infusion') ||
-      q.includes('prescri') || q.includes('formulary') || q.includes('dispensing')) {
-    return 'drug_info';
+  if (
+    q.includes('dose') ||
+    q.includes('dosage') ||
+    q.includes('dosing') ||
+    q.includes('side effect') ||
+    q.includes('contraindication') ||
+    q.includes('monitoring') ||
+    q.includes('counselling') ||
+    q.includes('counseling') ||
+    q.includes('mg') ||
+    q.includes('mcg') ||
+    q.includes('pharmacology') ||
+    q.includes('mechanism') ||
+    q.includes('antibiotic') ||
+    q.includes('analgesic') ||
+    q.includes('antihypertensive') ||
+    q.includes('antidiabetic') ||
+    q.includes('injection') ||
+    q.includes('tablet') ||
+    q.includes('syrup') ||
+    q.includes('infusion') ||
+    q.includes('prescri') ||
+    q.includes('formulary') ||
+    q.includes('dispensing')
+  ) {
+    return 'drug_info'
   }
 
-  if (q.includes('disease') || q.includes('condition') || q.includes('pathophysiology') ||
-      q.includes('aetiology') || q.includes('etiology') || q.includes('epidemiology') ||
-      q.includes('signs') || q.includes('symptoms') || q.includes('clinical features') ||
-      q.includes('presentation') || q.includes('classify') || q.includes('classification') ||
-      q.includes('complications') || q.includes('prognosis')) {
-    return 'disease_info';
+  if (
+    q.includes('disease') ||
+    q.includes('condition') ||
+    q.includes('pathophysiology') ||
+    q.includes('aetiology') ||
+    q.includes('etiology') ||
+    q.includes('epidemiology') ||
+    q.includes('signs') ||
+    q.includes('symptoms') ||
+    q.includes('clinical features') ||
+    q.includes('presentation') ||
+    q.includes('classify') ||
+    q.includes('classification') ||
+    q.includes('complications') ||
+    q.includes('prognosis')
+  ) {
+    return 'disease_info'
   }
 
-  if (q.includes('guideline') || q.includes('protocol') || q.includes('first-line') ||
-      q.includes('first line') || q.includes('stg') || q.includes('who') ||
-      q.includes('standard treatment') || q.includes('regimen') || q.includes('stepwise') ||
-      q.includes('kenya') || q.includes('national')) {
-    return 'guideline';
+  if (
+    q.includes('guideline') ||
+    q.includes('protocol') ||
+    q.includes('first-line') ||
+    q.includes('first line') ||
+    q.includes('stg') ||
+    q.includes('who') ||
+    q.includes('standard treatment') ||
+    q.includes('regimen') ||
+    q.includes('stepwise') ||
+    q.includes('kenya') ||
+    q.includes('national')
+  ) {
+    return 'guideline'
   }
 
-  if (q.includes('case') || q.includes('scenario') || q.includes('management') ||
-      q.includes('treatment of') || q.includes('how to manage') || q.includes('approach to') ||
-      q.includes('workup') || q.includes('investigation') || q.includes('diagnosis')) {
-    return 'case_lookup';
+  if (
+    q.includes('case') ||
+    q.includes('scenario') ||
+    q.includes('management') ||
+    q.includes('treatment of') ||
+    q.includes('how to manage') ||
+    q.includes('approach to') ||
+    q.includes('workup') ||
+    q.includes('investigation') ||
+    q.includes('diagnosis')
+  ) {
+    return 'case_lookup'
   }
 
-  return 'general';
+  return 'general'
 }
 
 // -- Drug name index (bundled 149 + full 1000-drug registry) --
@@ -131,10 +373,24 @@ function buildDrugNameSet(): Set<string> {
   }
   // Common aliases
   const extras = [
-    'co-trimoxazole', 'sodium valproate', 'ferrous sulphate', 'ferrous sulfate',
-    'augmentin', 'panadol', 'brufen', 'flagyl', 'nexium', 'ventolin',
-    'noradrenaline', 'epinephrine', 'nitroglycerin', 'glyceryl trinitrate',
-    'prednisone', 'methyldopa', 'ringer\'s lactate', 'normal saline',
+    'co-trimoxazole',
+    'sodium valproate',
+    'ferrous sulphate',
+    'ferrous sulfate',
+    'augmentin',
+    'panadol',
+    'brufen',
+    'flagyl',
+    'nexium',
+    'ventolin',
+    'noradrenaline',
+    'epinephrine',
+    'nitroglycerin',
+    'glyceryl trinitrate',
+    'prednisone',
+    'methyldopa',
+    "ringer's lactate",
+    'normal saline',
   ]
   for (const e of extras) names.add(e)
   return names
@@ -156,23 +412,264 @@ function buildIndicationMap(): Map<string, string[]> {
 
 // Therapeutic class → common conditions (used when drug is recognized but no monograph found)
 const CLASS_CONDITION_MAP: Record<string, string[]> = {
-  'Anti-infectives': ['infection', 'bacterial', 'pneumonia', 'meningitis', 'sepsis', 'uti', 'uti', 'otitis', 'sinusitis', 'tuberculosis', 'malaria', 'fungal', 'viral', 'sexually transmitted', 'std', 'wound infection', 'abscess', 'cellulitis', 'gastroenteritis', 'hepatitis', 'conjunctivitis', 'osteomyelitis', 'endocarditis'],
-  'Cardiovascular': ['hypertension', 'heart failure', 'angina', 'arrhythmia', 'atrial fibrillation', 'myocardial infarction', 'stroke', 'thrombosis', 'embolism', 'hyperlipidemia', 'atherosclerosis', 'cardiac', 'cardiovascular', 'hypotension', 'shock', 'edema', 'dvt', 'pe', 'peripheral vascular'],
-  'CNS': ['depression', 'anxiety', 'epilepsy', 'seizure', 'psychosis', 'schizophrenia', 'bipolar', 'insomnia', 'pain', 'neuropathic', 'migraine', 'parkinson', 'alzheimer', 'adhd', 'mania', 'obsessive', 'ocd', 'panic', 'ptsd', 'cognitive', 'sedation', 'anaesthesia', 'anaesthetic', 'sedative'],
-  'Endocrine': ['diabetes', 'thyroid', 'adrenal', 'cushing', 'addison', 'hypothyroid', 'hyperthyroid', 'diabetes mellitus', 'insulin', 'oral hypoglycemic', 'steroid', 'corticosteroid', 'hormone', 'growth hormone', 'osteoporosis', 'metabolic'],
-  'Immunology': ['allergy', 'autoimmune', 'immunosuppression', 'transplant', 'rheumatoid', 'lupus', 'psoriasis', 'inflammatory', 'asthma', 'anaphylaxis', 'hay fever', 'urticaria', 'celiac', 'immunodeficiency'],
-  'Respiratory': ['asthma', 'copd', 'bronchitis', 'pneumonia', 'respiratory', 'bronchospasm', 'cough', 'bronchodilator', 'inhaler', 'pulmonary', 'emphysema', 'pneumothorax', 'tb', 'tuberculosis', 'pleural'],
-  'Gastrointestinal': ['ulcer', 'gastritis', 'gerd', 'reflux', 'nausea', 'vomiting', 'diarrhea', 'constipation', 'ibd', 'crohn', 'ulcerative colitis', 'liver', 'hepatic', 'cirrhosis', 'pancreatitis', 'gi bleed', 'gastrointestinal', 'dyspepsia', 'helicobacter'],
-  'Analgesics': ['pain', 'analgesic', 'opioid', 'anti-inflammatory', 'nsaid', 'fever', 'antipyretic', 'postoperative', 'chronic pain', 'palliative', 'cancer pain', 'musculoskeletal', 'headache', 'migraine', 'arthralgia', 'myalgia'],
-  'Haematology': ['anemia', 'haemophilia', 'coagulation', 'bleeding', 'thrombocytopenia', 'sickle cell', 'thalassemia', 'iron deficiency', 'vitamin b12', 'folate', 'clotting', 'anticoagulant', 'antiplatelet', 'hematologic'],
-  'Oncology': ['cancer', 'tumor', 'chemotherapy', 'neoplasm', 'malignant', 'metastasis', 'leukemia', 'lymphoma', 'sarcoma', 'carcinoma', 'immunotherapy', 'radiotherapy', 'palliative', 'oncology'],
-  'Dermatology': ['skin', 'dermatitis', 'eczema', 'acne', 'psoriasis', 'fungal skin', 'wound', 'burn', 'ulcer', 'topical', 'dermatological'],
-  'Nutrition/Vitamins': ['deficiency', 'vitamin', 'supplement', 'nutrition', 'malnutrition', 'electrolyte', 'rehydration', 'parenteral', 'enteral'],
-  'Toxicology/Antidotes': ['poisoning', 'overdose', 'toxic', 'antidote', 'envenomation', 'snake bite', 'methanol', 'paracetamol overdose', 'opioid overdose', 'organophosphate'],
-  'Renal/Electrolytes': ['renal', 'kidney', 'electrolyte', 'potassium', 'sodium', 'calcium', 'phosphate', 'diuretic', 'dialysis', 'acute kidney', 'chronic kidney', 'ckd', 'edema', 'fluid'],
-  'Ophthalmology': ['eye', 'glaucoma', 'conjunctivitis', 'ocular', 'ophthalmic', 'retinal', 'corneal', 'visual'],
-  'Other': [],
-};
+  'Anti-infectives': [
+    'infection',
+    'bacterial',
+    'pneumonia',
+    'meningitis',
+    'sepsis',
+    'uti',
+    'uti',
+    'otitis',
+    'sinusitis',
+    'tuberculosis',
+    'malaria',
+    'fungal',
+    'viral',
+    'sexually transmitted',
+    'std',
+    'wound infection',
+    'abscess',
+    'cellulitis',
+    'gastroenteritis',
+    'hepatitis',
+    'conjunctivitis',
+    'osteomyelitis',
+    'endocarditis',
+  ],
+  Cardiovascular: [
+    'hypertension',
+    'heart failure',
+    'angina',
+    'arrhythmia',
+    'atrial fibrillation',
+    'myocardial infarction',
+    'stroke',
+    'thrombosis',
+    'embolism',
+    'hyperlipidemia',
+    'atherosclerosis',
+    'cardiac',
+    'cardiovascular',
+    'hypotension',
+    'shock',
+    'edema',
+    'dvt',
+    'pe',
+    'peripheral vascular',
+  ],
+  CNS: [
+    'depression',
+    'anxiety',
+    'epilepsy',
+    'seizure',
+    'psychosis',
+    'schizophrenia',
+    'bipolar',
+    'insomnia',
+    'pain',
+    'neuropathic',
+    'migraine',
+    'parkinson',
+    'alzheimer',
+    'adhd',
+    'mania',
+    'obsessive',
+    'ocd',
+    'panic',
+    'ptsd',
+    'cognitive',
+    'sedation',
+    'anaesthesia',
+    'anaesthetic',
+    'sedative',
+  ],
+  Endocrine: [
+    'diabetes',
+    'thyroid',
+    'adrenal',
+    'cushing',
+    'addison',
+    'hypothyroid',
+    'hyperthyroid',
+    'diabetes mellitus',
+    'insulin',
+    'oral hypoglycemic',
+    'steroid',
+    'corticosteroid',
+    'hormone',
+    'growth hormone',
+    'osteoporosis',
+    'metabolic',
+  ],
+  Immunology: [
+    'allergy',
+    'autoimmune',
+    'immunosuppression',
+    'transplant',
+    'rheumatoid',
+    'lupus',
+    'psoriasis',
+    'inflammatory',
+    'asthma',
+    'anaphylaxis',
+    'hay fever',
+    'urticaria',
+    'celiac',
+    'immunodeficiency',
+  ],
+  Respiratory: [
+    'asthma',
+    'copd',
+    'bronchitis',
+    'pneumonia',
+    'respiratory',
+    'bronchospasm',
+    'cough',
+    'bronchodilator',
+    'inhaler',
+    'pulmonary',
+    'emphysema',
+    'pneumothorax',
+    'tb',
+    'tuberculosis',
+    'pleural',
+  ],
+  Gastrointestinal: [
+    'ulcer',
+    'gastritis',
+    'gerd',
+    'reflux',
+    'nausea',
+    'vomiting',
+    'diarrhea',
+    'constipation',
+    'ibd',
+    'crohn',
+    'ulcerative colitis',
+    'liver',
+    'hepatic',
+    'cirrhosis',
+    'pancreatitis',
+    'gi bleed',
+    'gastrointestinal',
+    'dyspepsia',
+    'helicobacter',
+  ],
+  Analgesics: [
+    'pain',
+    'analgesic',
+    'opioid',
+    'anti-inflammatory',
+    'nsaid',
+    'fever',
+    'antipyretic',
+    'postoperative',
+    'chronic pain',
+    'palliative',
+    'cancer pain',
+    'musculoskeletal',
+    'headache',
+    'migraine',
+    'arthralgia',
+    'myalgia',
+  ],
+  Haematology: [
+    'anemia',
+    'haemophilia',
+    'coagulation',
+    'bleeding',
+    'thrombocytopenia',
+    'sickle cell',
+    'thalassemia',
+    'iron deficiency',
+    'vitamin b12',
+    'folate',
+    'clotting',
+    'anticoagulant',
+    'antiplatelet',
+    'hematologic',
+  ],
+  Oncology: [
+    'cancer',
+    'tumor',
+    'chemotherapy',
+    'neoplasm',
+    'malignant',
+    'metastasis',
+    'leukemia',
+    'lymphoma',
+    'sarcoma',
+    'carcinoma',
+    'immunotherapy',
+    'radiotherapy',
+    'palliative',
+    'oncology',
+  ],
+  Dermatology: [
+    'skin',
+    'dermatitis',
+    'eczema',
+    'acne',
+    'psoriasis',
+    'fungal skin',
+    'wound',
+    'burn',
+    'ulcer',
+    'topical',
+    'dermatological',
+  ],
+  'Nutrition/Vitamins': [
+    'deficiency',
+    'vitamin',
+    'supplement',
+    'nutrition',
+    'malnutrition',
+    'electrolyte',
+    'rehydration',
+    'parenteral',
+    'enteral',
+  ],
+  'Toxicology/Antidotes': [
+    'poisoning',
+    'overdose',
+    'toxic',
+    'antidote',
+    'envenomation',
+    'snake bite',
+    'methanol',
+    'paracetamol overdose',
+    'opioid overdose',
+    'organophosphate',
+  ],
+  'Renal/Electrolytes': [
+    'renal',
+    'kidney',
+    'electrolyte',
+    'potassium',
+    'sodium',
+    'calcium',
+    'phosphate',
+    'diuretic',
+    'dialysis',
+    'acute kidney',
+    'chronic kidney',
+    'ckd',
+    'edema',
+    'fluid',
+  ],
+  Ophthalmology: [
+    'eye',
+    'glaucoma',
+    'conjunctivitis',
+    'ocular',
+    'ophthalmic',
+    'retinal',
+    'corneal',
+    'visual',
+  ],
+  Other: [],
+}
 
 // Map drug names from the registry to their therapeutic classes
 const REGISTRY_CLASS_MAP: Map<string, string> = new Map()
@@ -188,7 +685,8 @@ const ALL_DRUG_NAMES = buildDrugNameSet()
 const INDICATION_MAP = buildIndicationMap()
 
 function levenshtein(a: string, b: string): number {
-  const m = a.length, n = b.length
+  const m = a.length,
+    n = b.length
   const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
   for (let i = 0; i <= m; i++) dp[i][0] = i
   for (let j = 0; j <= n; j++) dp[0][j] = j
@@ -206,14 +704,13 @@ function levenshtein(a: string, b: string): number {
 
 /** Extract meaningful medical keywords, stripping NLP filler */
 function extractKeywords(query: string): string[] {
-  const q = query.toLowerCase()
+  const q = query
+    .toLowerCase()
     .replace(/[^\w\s-/]/g, ' ')
     .replace(/\b\d+\b/g, ' ')
     .trim()
 
-  const words = q.split(/\s+/).filter(w =>
-    w.length >= 2 && !STOP_WORDS.has(w)
-  )
+  const words = q.split(/\s+/).filter((w) => w.length >= 2 && !STOP_WORDS.has(w))
 
   const seen = new Set<string>()
   const unique: string[] = []
@@ -241,8 +738,14 @@ function extractDiseaseKeywords(query: string): string[] {
 
   // Strip clinical NLP noise and return extracted keywords
   const stripped = q
-    .replace(/\b(explain|describe|discuss|what|how|why|when|which|tell|me|about|the|a|an|is|are|was|were|do|does|did|can|could|would|should|for|in|with|of|on|at|to|from|and|or|but|not|this|that|it|its|my|your|our|their|we|you|they|he|she|his|her)\b/gi, ' ')
-    .replace(/\b(treatment|management|pathophysiology|aetiology|etiology|epidemiology|diagnosis|signs|symptoms|clinical|features|presentation|complications|overview|guideline|protocol|pharmacology|drug|therapy|therapeutics|approach to)\b/gi, ' ')
+    .replace(
+      /\b(explain|describe|discuss|what|how|why|when|which|tell|me|about|the|a|an|is|are|was|were|do|does|did|can|could|would|should|for|in|with|of|on|at|to|from|and|or|but|not|this|that|it|its|my|your|our|their|we|you|they|he|she|his|her)\b/gi,
+      ' ',
+    )
+    .replace(
+      /\b(treatment|management|pathophysiology|aetiology|etiology|epidemiology|diagnosis|signs|symptoms|clinical|features|presentation|complications|overview|guideline|protocol|pharmacology|drug|therapy|therapeutics|approach to)\b/gi,
+      ' ',
+    )
     .replace(/[^\w\s-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -276,7 +779,7 @@ function extractDrugNames(query: string): string[] {
     }
 
     if (found.length === 0) {
-      const queryWords = q.split(/\s+/).filter(w => w.length >= 3)
+      const queryWords = q.split(/\s+/).filter((w) => w.length >= 3)
       // Skip the fuzzy pass for long natural-language queries — the exact and
       // substring passes above cover them, and Levenshtein over 1000+ names ×
       // words is the single most expensive part of retrieval.
@@ -345,12 +848,15 @@ function formatDrugSource(m: DrugMonograph, relevance: number): KnowledgeSource 
   if (m.dosage) {
     const dosageEntries = Object.entries(m.dosage).slice(0, 3)
     if (dosageEntries.length > 0) {
-      parts.push(`DOSAGE: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}`)
+      parts.push(
+        `DOSAGE: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}`,
+      )
     }
   }
   parts.push(`CONTRAINDICATIONS: ${m.contraindications.slice(0, 4).join('; ')}`)
   parts.push(`SIDE EFFECTS: ${m.side_effects.slice(0, 5).join('; ')}`)
-  if (m.interactions.length > 0) parts.push(`INTERACTIONS: ${m.interactions.slice(0, 5).join('; ')}`)
+  if (m.interactions.length > 0)
+    parts.push(`INTERACTIONS: ${m.interactions.slice(0, 5).join('; ')}`)
   if (m.monitoring) parts.push(`MONITORING: ${m.monitoring.slice(0, 300)}`)
   if (m.patient_counselling) parts.push(`COUNSELLING: ${m.patient_counselling.slice(0, 200)}`)
   if (m.pregnancy_category) parts.push(`PREGNANCY: ${m.pregnancy_category}`)
@@ -413,7 +919,9 @@ async function queryDrugByName(client: any, name: string): Promise<DrugMonograph
         .ilike('name', name)
         .single()
       if (!error && data) result = mapDrugRow(data)
-    } catch { /* fall through to DrugMonographService */ }
+    } catch {
+      /* fall through to DrugMonographService */
+    }
   }
   if (!result) result = await DrugMonographService.getByName(name)
   monographByNameCache.set(key, result)
@@ -434,7 +942,9 @@ async function queryDrugBySearch(client: any, query: string): Promise<DrugMonogr
         .order('name')
         .limit(5)
       if (!error && data && data.length > 0) result = data.map(mapDrugRow)
-    } catch { /* fall through to DrugMonographService */ }
+    } catch {
+      /* fall through to DrugMonographService */
+    }
   }
   if (result.length === 0) result = await DrugMonographService.search(query)
   if (monographSearchCache.size > 200) monographSearchCache.clear()
@@ -468,9 +978,7 @@ async function findInteractingDrugs(
   const sources: KnowledgeSource[] = []
   for (const other of interactionDrugListCache) {
     if (other.id === monograph.id) continue
-    const interactions = (other.interactions || []).filter(i =>
-      i.toLowerCase().includes(needle),
-    )
+    const interactions = (other.interactions || []).filter((i) => i.toLowerCase().includes(needle))
     if (interactions.length > 0) {
       sources.push({
         type: 'drug_monograph',
@@ -508,7 +1016,7 @@ export const KnowledgeEngine = {
       // Look up every matched name in parallel — sequential .ilike()
       // round-trips per name were a major source of retrieval latency.
       const foundMonographs = await Promise.all(
-        drugNames.map(name => queryDrugByName(client, name)),
+        drugNames.map((name) => queryDrugByName(client, name)),
       )
       for (let i = 0; i < drugNames.length; i++) {
         const mono = foundMonographs[i]
@@ -538,7 +1046,7 @@ export const KnowledgeEngine = {
         // whole 1000-drug registry, not just the bundled subset, and avoids
         // re-fetching the entire table for every interaction query.
         const interactionSources = await Promise.all(
-          results.map(m => findInteractingDrugs(client, m)),
+          results.map((m) => findInteractingDrugs(client, m)),
         )
         for (const srcs of interactionSources) sources.push(...srcs)
       }
@@ -561,14 +1069,16 @@ export const KnowledgeEngine = {
             `COMMON INDICATIONS FOR CLASS: ${conditions.slice(0, 8).join('; ')}`,
             `[Note: Full monograph not available in database. Use clinical knowledge to answer.]`,
           ].join('\n'),
-          relevance: 0.80,
+          relevance: 0.8,
         })
       }
     }
 
     // Always try indication-based search if no drug monographs found yet
     if (drugMonographs === undefined || drugMonographs.length === 0) {
-      const indicationDrugs = searchByIndication(diseaseKeywords.length > 0 ? diseaseKeywords : keywords)
+      const indicationDrugs = searchByIndication(
+        diseaseKeywords.length > 0 ? diseaseKeywords : keywords,
+      )
       if (indicationDrugs.length > 0) {
         drugMonographs = []
         let indicationMonographsFound = 0
@@ -613,7 +1123,12 @@ export const KnowledgeEngine = {
             const { data } = await client
               .from('diseases')
               .select('id, name, aliases')
-              .or(searchTerms.slice(0, 5).map(t => `name.ilike.%${t}%`).join(','))
+              .or(
+                searchTerms
+                  .slice(0, 5)
+                  .map((t) => `name.ilike.%${t}%`)
+                  .join(','),
+              )
               .limit(5)
             return { data }
           } catch {
@@ -638,9 +1153,10 @@ export const KnowledgeEngine = {
       const diseases = diseasesResult?.data
       if (diseases && diseases.length > 0) {
         for (const d of diseases) {
-          const aliasText = Array.isArray(d.aliases) && d.aliases.length > 0
-            ? '\nAliases: ' + d.aliases.join(', ')
-            : ''
+          const aliasText =
+            Array.isArray(d.aliases) && d.aliases.length > 0
+              ? '\nAliases: ' + d.aliases.join(', ')
+              : ''
           sources.push({
             type: 'disease',
             id: d.id,
@@ -659,7 +1175,7 @@ export const KnowledgeEngine = {
         for (const c of ALL_CLINICAL_CASES.slice(0, 50)) {
           const diseaseMatch = (c.disease || '').toLowerCase().includes(lower)
           const titleMatch = (c.title || '').toLowerCase().includes(lower)
-          if ((diseaseMatch || titleMatch) && !sources.some(s => s.id === c.id)) {
+          if ((diseaseMatch || titleMatch) && !sources.some((s) => s.id === c.id)) {
             sources.push({
               type: 'clinical_case',
               id: c.id,
@@ -669,6 +1185,83 @@ export const KnowledgeEngine = {
             })
           }
         }
+      }
+    }
+
+    // -- 3.5. Pharmaceutical industry knowledge --
+    const industryKeywords = [
+      'manufactur',
+      'formulat',
+      'gmp',
+      'excipient',
+      'tablet process',
+      'regulatory',
+      'ppb',
+      'registration',
+      'pharmacovigilance',
+      'adr',
+      'adverse reaction',
+      'supply chain',
+      'procurement',
+      'distribution',
+      'career',
+      'manufacturer',
+      'company',
+    ]
+    const isIndustryQuery = industryKeywords.some((kw) => query.toLowerCase().includes(kw))
+
+    if (isIndustryQuery) {
+      // Search industry terms
+      const terms = await IndustryKnowledgeService.searchTerms(query, 5)
+      for (const term of terms) {
+        sources.push({
+          type: 'industry_term',
+          id: term.id,
+          title: term.term,
+          content: `Definition: ${term.definition}\nAliases: ${term.aliases.join(', ')}${term.examples.length > 0 ? '\nExamples: ' + term.examples.slice(0, 2).join('; ') : ''}`,
+          relevance: 0.85,
+        })
+      }
+
+      // Search manufacturers if relevant
+      if (
+        query.toLowerCase().includes('manufacturer') ||
+        query.toLowerCase().includes('company') ||
+        query.toLowerCase().includes('local')
+      ) {
+        const manufacturers = await IndustryKnowledgeService.getManufacturers()
+        for (const m of manufacturers.slice(0, 5)) {
+          sources.push({
+            type: 'manufacturer',
+            id: m.id,
+            title: m.name,
+            content: `Location: ${m.location}\nProducts: ${m.products_description || 'N/A'}\nCapabilities: ${m.capabilities.join(', ')}\nRegulatory: ${m.regulatory_status || 'N/A'}`,
+            relevance: 0.82,
+          })
+        }
+      }
+    }
+
+    // Also add industry context for drug queries
+    if (isDrugQuery && drugMonographs && drugMonographs.length > 0) {
+      try {
+        const connections = await IndustryKnowledgeService.getForDrug(drugMonographs[0].id)
+        for (const conn of connections.slice(0, 3)) {
+          if (conn.entry) {
+            sources.push({
+              type: 'industry_knowledge',
+              id: conn.entry.id,
+              title: conn.entry.title,
+              content:
+                conn.entry.content.overview ||
+                conn.entry.content.description ||
+                JSON.stringify(conn.entry.content).slice(0, 300),
+              relevance: 0.8,
+            })
+          }
+        }
+      } catch {
+        /* industry service may not be available */
       }
     }
 
@@ -684,9 +1277,12 @@ export const KnowledgeEngine = {
 
     uniqueSources.sort((a, b) => b.relevance - a.relevance)
 
-    const contextSummary = uniqueSources.length > 0
-      ? uniqueSources.map(s => `[${s.type.toUpperCase()}] ${s.title}\n${s.content}`).join('\n\n')
-      : ''
+    const contextSummary =
+      uniqueSources.length > 0
+        ? uniqueSources
+            .map((s) => `[${s.type.toUpperCase()}] ${s.title}\n${s.content}`)
+            .join('\n\n')
+        : ''
 
     return {
       query,
@@ -698,8 +1294,11 @@ export const KnowledgeEngine = {
     }
   },
 
-  async buildPrompt(query: string, customClient?: any): Promise<{ systemInstruction: string; context: string; sources: KnowledgeSource[] }> {
-    const result = await KnowledgeEngine.process(query, customClient);
+  async buildPrompt(
+    query: string,
+    customClient?: any,
+  ): Promise<{ systemInstruction: string; context: string; sources: KnowledgeSource[] }> {
+    const result = await KnowledgeEngine.process(query, customClient)
 
     const systemInstruction = `You are Clinova's Clinical Decision Support AI. You are a clinical pharmacy educator assisting healthcare students and professionals.
 
@@ -710,9 +1309,10 @@ INSTRUCTIONS:
 - When NO drug data is available in the database: answer from your clinical knowledge, referencing WHO guidelines and standard practice where applicable. Do NOT say "I don't have data" — provide the best clinical answer you can.
 - For drug interactions, always state the mechanism, severity, and clinical action needed.
 - Reference specific clinical cases when discussing patient scenarios.
-- Cite your sources using brackets like [DRUG_MONOGRAPH: Drug Name], [DRUG_REGISTRY: Drug Name], or [CASE: Case Title].
+- Cite your sources using brackets like [DRUG_MONOGRAPH: Drug Name], [DRUG_REGISTRY: Drug Name], [CASE: Case Title], [INDUSTRY: Topic], or [MANUFACTURER: Company Name].
 - Format responses in markdown with clear headings for readability.
-- Always use Kenyan/East African clinical context where relevant (KEML, local guidelines).`;
+- Always use Kenyan/East African clinical context where relevant (KEML, local guidelines).
+- For pharmaceutical industry questions (manufacturing, regulatory, pharmacovigilance, supply chain): use the INDUSTRY and MANUFACTURER sources when available. Explain pharmaceutical principles clearly and connect to Kenyan context where relevant.`
 
     return {
       systemInstruction,
@@ -720,4 +1320,4 @@ INSTRUCTIONS:
       sources: result.sources,
     }
   },
-};
+}

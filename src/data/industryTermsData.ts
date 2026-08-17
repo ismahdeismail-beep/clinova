@@ -1,0 +1,627 @@
+export const BUNDLED_INDUSTRY_TERMS: Array<{
+  id: string
+  term: string
+  slug: string
+  definition: string
+  topic_id: string | null
+  related_terms: string[]
+  aliases: string[]
+  examples: string[]
+}> = [
+  {
+    id: 'term-001',
+    term: 'Active Pharmaceutical Ingredient (API)',
+    slug: 'api',
+    definition:
+      'The biologically active component of a pharmaceutical product that produces the intended therapeutic effect. Also known as the drug substance.',
+    topic_id: 'mfg-001',
+    related_terms: ['excipient', 'drug product', 'drug substance'],
+    aliases: ['API', 'drug substance', 'active ingredient'],
+    examples: [
+      'Amoxicillin trihydrate is the API in amoxicillin capsules',
+      'Paracetamol is the API in Panadol tablets',
+    ],
+  },
+  {
+    id: 'term-002',
+    term: 'Excipient',
+    slug: 'excipient',
+    definition:
+      'Any inactive substance used as a carrier, vehicle, or diluent for the active ingredient. Excipients aid in drug delivery, improve stability, and facilitate manufacturing.',
+    topic_id: 'mfg-001',
+    related_terms: ['API', 'dosage form', 'formulation'],
+    aliases: ['inactive ingredient', 'pharmaceutical auxiliary'],
+    examples: [
+      'Lactose is a common tablet filler',
+      'Magnesium stearate is a lubricant',
+      'Microcrystalline cellulose is a binder/filler',
+    ],
+  },
+  {
+    id: 'term-003',
+    term: 'Good Manufacturing Practices (GMP)',
+    slug: 'gmp',
+    definition:
+      'A system of quality assurance guidelines ensuring that pharmaceutical products are consistently produced and controlled according to quality standards. Covers premises, personnel, equipment, documentation, and production controls.',
+    topic_id: 'mfg-025',
+    related_terms: ['quality assurance', 'validation', 'CAPA'],
+    aliases: ['GMP', 'cGMP', 'current Good Manufacturing Practices'],
+    examples: ['WHO GMP guidelines', 'EU GMP Annex requirements', 'Kenya PPB GMP inspection'],
+  },
+  {
+    id: 'term-004',
+    term: 'Wet Granulation',
+    slug: 'wet-granulation',
+    definition:
+      'A process where powder particles are bound together using a liquid binder to form granules. Involves mixing, wetting, granulation, drying, and sizing. Most common tablet manufacturing method.',
+    topic_id: 'mfg-011',
+    related_terms: ['dry granulation', 'direct compression', 'tablet'],
+    aliases: ['wet granulate'],
+    examples: ['Using PVP solution as binder for paracetamol granules'],
+  },
+  {
+    id: 'term-005',
+    term: 'Dry Granulation',
+    slug: 'dry-granulation',
+    definition:
+      'A granulation method without adding liquid. Powder is compacted by slugging or roller compaction, then screened to desired particle size. Used for moisture-sensitive drugs.',
+    topic_id: 'mfg-012',
+    related_terms: ['wet granulation', 'direct compression', 'roller compaction'],
+    aliases: ['slugging', 'roller compaction'],
+    examples: ['Aspirin tablets may be granulated by dry method due to moisture sensitivity'],
+  },
+  {
+    id: 'term-006',
+    term: 'Direct Compression',
+    slug: 'direct-compression',
+    definition:
+      'Tablet manufacturing where blended powders are compressed directly into tablets without granulation. Simplest method but requires good flow and compressibility properties.',
+    topic_id: 'mfg-013',
+    related_terms: ['wet granulation', 'dry granulation', 'tablet'],
+    aliases: ['direct compress'],
+    examples: ['Potassium chloride tablets can be made by direct compression'],
+  },
+  {
+    id: 'term-007',
+    term: 'Dissolution Testing',
+    slug: 'dissolution-testing',
+    definition:
+      'In vitro test measuring the rate and extent of drug release from a dosage form. Essential for quality control and bioavailability prediction.',
+    topic_id: 'mfg-021',
+    related_terms: ['bioavailability', 'drug release', 'QC testing'],
+    aliases: ['dissolution', 'drug release testing'],
+    examples: ['USP apparatus for dissolution testing of tablets'],
+  },
+  {
+    id: 'term-008',
+    term: 'Bioavailability',
+    slug: 'bioavailability',
+    definition:
+      'The fraction of an administered dose of unchanged drug that reaches the systemic circulation. Determines onset and intensity of drug effect.',
+    topic_id: 'mfg-021',
+    related_terms: ['dissolution testing', 'bioequivalence', 'pharmacokinetics'],
+    aliases: ['BA'],
+    examples: ['Oral bioavailability of morphine is about 30%'],
+  },
+  {
+    id: 'term-009',
+    term: 'Bioequivalence',
+    slug: 'bioequivalence',
+    definition:
+      'Comparison of the bioavailability of two formulations of the same drug. Required for generic drug approval. Must demonstrate similar Cmax, AUC, and Tmax.',
+    topic_id: 'reg-002',
+    related_terms: ['bioavailability', 'generic drug', 'ANDA'],
+    aliases: ['BE'],
+    examples: ['Generic amoxicillin must be bioequivalent to the reference product'],
+  },
+  {
+    id: 'term-010',
+    term: 'Stability Testing',
+    slug: 'stability-testing',
+    definition:
+      'Studies to determine how environmental factors affect drug product quality over time. Includes accelerated, intermediate, and long-term testing per ICH guidelines.',
+    topic_id: 'mfg-023',
+    related_terms: ['shelf life', 'ICH guidelines', 'storage conditions'],
+    aliases: ['stability study', 'stability assessment'],
+    examples: ['ICH Q1A: 25°C/60%RH long-term, 40°C/75%RH accelerated'],
+  },
+  {
+    id: 'term-011',
+    term: 'Shelf Life',
+    slug: 'shelf-life',
+    definition:
+      'The period during which a pharmaceutical product remains within its approved quality specifications when stored under recommended conditions. Expressed as expiry date.',
+    topic_id: 'mfg-023',
+    related_terms: ['stability testing', 'expiry date', 'storage conditions'],
+    aliases: ['expiry period', '有效期'],
+    examples: ['Amoxicillin suspension: 14 days after reconstitution'],
+  },
+  {
+    id: 'term-012',
+    term: 'Validation',
+    slug: 'validation',
+    definition:
+      'Documented evidence that a process, system, or equipment consistently produces a result meeting predetermined specifications. Includes process, cleaning, and analytical method validation.',
+    topic_id: 'mfg-022',
+    related_terms: ['GMP', 'qualification', 'IQ OQ PQ'],
+    aliases: ['process validation', 'method validation'],
+    examples: ['Process validation for tablet compression ensures consistent weight and hardness'],
+  },
+  {
+    id: 'term-013',
+    term: 'CAPA',
+    slug: 'capa',
+    definition:
+      'Corrective and Preventive Action — a systematic approach to investigating deviations, identifying root causes, and implementing corrective and preventive measures.',
+    topic_id: 'mfg-020',
+    related_terms: ['deviation', 'quality assurance', 'root cause analysis'],
+    aliases: ['corrective action', 'preventive action'],
+    examples: ['CAPA for out-of-specification dissolution results'],
+  },
+  {
+    id: 'term-014',
+    term: 'Deviation',
+    slug: 'deviation',
+    definition:
+      'Any departure from an approved instruction, procedure, or standard during manufacturing. Must be documented, investigated, and resolved.',
+    topic_id: 'mfg-020',
+    related_terms: ['CAPA', 'quality assurance', 'non-conformance'],
+    aliases: ['non-conformance', 'non-compliance'],
+    examples: ['Temperature excursion during tablet coating'],
+  },
+  {
+    id: 'term-015',
+    term: 'Change Control',
+    slug: 'change-control',
+    definition:
+      'A formal system to evaluate, approve, and document any change that could affect product quality, process, or regulatory status.',
+    topic_id: 'mfg-020',
+    related_terms: ['validation', 'CAPA', 'regulatory variation'],
+    aliases: ['change management'],
+    examples: ['Change control for switching from wet to dry granulation'],
+  },
+  {
+    id: 'term-016',
+    term: 'Out of Specification (OOS)',
+    slug: 'oos',
+    definition:
+      'A test result that falls outside the established acceptance criteria. Requires investigation and potential batch rejection.',
+    topic_id: 'mfg-021',
+    related_terms: ['deviation', 'CAPA', 'quality control'],
+    aliases: ['OOS result', 'specification failure'],
+    examples: ['Dissolution result below Q value triggers OOS investigation'],
+  },
+  {
+    id: 'term-017',
+    term: 'Marketing Authorisation',
+    slug: 'marketing-authorisation',
+    definition:
+      'Official approval from a regulatory authority to sell a pharmaceutical product in a specific market. Requires submission of quality, safety, and efficacy data.',
+    topic_id: 'reg-002',
+    related_terms: ['product registration', 'dossier', 'CTD'],
+    aliases: ['MA', 'marketing authorization', 'drug registration'],
+    examples: ['PPB marketing authorisation for products sold in Kenya'],
+  },
+  {
+    id: 'term-018',
+    term: 'Common Technical Document (CTD)',
+    slug: 'ctd',
+    definition:
+      'Harmonized format for regulatory submissions used by FDA, EMA, and other ICH members. Contains Module 1 (administrative), Module 2 (summaries), Module 3 (quality), Module 4 (non-clinical), Module 5 (clinical).',
+    topic_id: 'reg-002',
+    related_terms: ['marketing authorisation', 'dossier', 'regulatory submission'],
+    aliases: ['CTD', 'eCTD'],
+    examples: ['CTD Module 3 contains pharmaceutical development data'],
+  },
+  {
+    id: 'term-019',
+    term: 'Pharmacovigilance',
+    slug: 'pharmacovigilance',
+    definition:
+      'The science and activities relating to the detection, assessment, understanding, and prevention of adverse effects of medicines. Includes post-market surveillance and signal detection.',
+    topic_id: 'pv-001',
+    related_terms: ['ADR', 'adverse drug reaction', 'post-market surveillance'],
+    aliases: ['PV', 'drug safety'],
+    examples: ['WHO Uppsala Monitoring Centre pharmacovigilance database'],
+  },
+  {
+    id: 'term-020',
+    term: 'Adverse Drug Reaction (ADR)',
+    slug: 'adr',
+    definition:
+      'A response to a medicinal product that is noxious and unintended. Includes reactions at normal doses, overdose, abuse, withdrawal, and drug interactions.',
+    topic_id: 'pv-002',
+    related_terms: ['pharmacovigilance', 'side effect', 'adverse event'],
+    aliases: ['ADR', 'adverse reaction', 'drug reaction'],
+    examples: ['Rash from amoxicillin is a common ADR'],
+  },
+  {
+    id: 'term-021',
+    term: 'Signal Detection',
+    slug: 'signal-detection',
+    definition:
+      'The process of identifying new or changing safety information from pharmacovigilance data that may indicate a previously unknown hazard or a change in known risk.',
+    topic_id: 'pv-001',
+    related_terms: ['pharmacovigilance', 'safety signal', 'data mining'],
+    aliases: ['signal', 'safety signal'],
+    examples: ['Increased reporting of liver injury with a new NSAID'],
+  },
+  {
+    id: 'term-022',
+    term: 'Post-Market Surveillance',
+    slug: 'post-market-surveillance',
+    definition:
+      'Monitoring the safety and effectiveness of a pharmaceutical product after it has been approved and marketed. Includes periodic safety update reports (PSURs).',
+    topic_id: 'pv-001',
+    related_terms: ['pharmacovigilance', 'PSUR', 'risk management'],
+    aliases: ['PMS', 'post-marketing surveillance'],
+    examples: ['PPB post-market surveillance of antimalarials in Kenya'],
+  },
+  {
+    id: 'term-023',
+    term: 'Good Distribution Practices (GDP)',
+    slug: 'gdp',
+    definition:
+      'Guidelines ensuring pharmaceutical products are maintained in good condition throughout the supply chain. Covers procurement, storage, transportation, and documentation.',
+    topic_id: 'sc-003',
+    related_terms: ['supply chain', 'GSP', 'cold chain'],
+    aliases: ['GDP', 'good distribution practice'],
+    examples: ['WHO GDP guidelines for pharmaceutical distribution'],
+  },
+  {
+    id: 'term-024',
+    term: 'Cold Chain',
+    slug: 'cold-chain',
+    definition:
+      'Temperature-controlled supply chain for products requiring storage at 2-8°C. Includes refrigerated transport, cold rooms, and temperature monitoring.',
+    topic_id: 'sc-003',
+    related_terms: ['GDP', 'storage conditions', 'temperature monitoring'],
+    aliases: ['cold chain management', 'refrigerated storage'],
+    examples: ['Vaccines and insulin require cold chain management'],
+  },
+  {
+    id: 'term-025',
+    term: 'Essential Medicines',
+    slug: 'essential-medicines',
+    definition:
+      'Medicines that satisfy the priority health needs of the population. Selected with due regard to disease prevalence, efficacy, safety, and cost-effectiveness.',
+    topic_id: 'ke-001',
+    related_terms: ['WHO EML', 'KEML', 'formulary'],
+    aliases: ['essential drugs', 'essential medicines list'],
+    examples: ['WHO Model List of Essential Medicines', 'Kenya Essential Medicines List (KEML)'],
+  },
+  {
+    id: 'term-026',
+    term: 'Pharmacy and Poisons Board (PPB)',
+    slug: 'ppb',
+    definition:
+      'The Kenyan regulatory authority responsible for pharmaceutical regulation, product registration, and pharmacy practice oversight.',
+    topic_id: 'ke-003',
+    related_terms: ['regulatory authority', 'product registration', 'GMP inspection'],
+    aliases: ['PPB', 'Kenya PPB'],
+    examples: ['PPB registers all pharmaceutical products sold in Kenya'],
+  },
+  {
+    id: 'term-027',
+    term: 'Scale-Up',
+    slug: 'scale-up',
+    definition:
+      'The process of increasing a pharmaceutical formulation from laboratory scale to pilot scale to full production scale while maintaining product quality.',
+    topic_id: 'mfg-010',
+    related_terms: ['technology transfer', 'process validation', 'batch manufacturing'],
+    aliases: ['scale up', 'process scale-up'],
+    examples: ['Scaling tablet production from 1kg pilot batch to 100kg production batch'],
+  },
+  {
+    id: 'term-028',
+    term: 'Technology Transfer',
+    slug: 'technology-transfer',
+    definition:
+      'The transfer of knowledge, skills, and manufacturing processes from one site or organization to another. Critical for local manufacturing capacity building.',
+    topic_id: 'mfg-010',
+    related_terms: ['scale-up', 'validation', 'local manufacturing'],
+    aliases: ['tech transfer', 'knowledge transfer'],
+    examples: ['Technology transfer for antimalarial manufacturing to Kenya'],
+  },
+  {
+    id: 'term-029',
+    term: 'Pharmaceutical Equivalence',
+    slug: 'pharmaceutical-equivalence',
+    definition:
+      'Two products containing the same active ingredient in the same dosage form, strength, and route of administration, meeting the same compendial standards.',
+    topic_id: 'reg-002',
+    related_terms: ['bioequivalence', 'generic drug', 'reference product'],
+    aliases: ['pharmaceutical equivalence'],
+    examples: ['Generic paracetamol 500mg tablets must be pharmaceutically equivalent'],
+  },
+  {
+    id: 'term-030',
+    term: 'Reference Product',
+    slug: 'reference-product',
+    definition:
+      'The approved pharmaceutical product against which a generic or biosimilar product is compared for bioequivalence or similarity assessment.',
+    topic_id: 'reg-002',
+    related_terms: ['bioequivalence', 'generic drug', 'innovator product'],
+    aliases: ['innovator product', 'branded product', 'RLD'],
+    examples: ['The originator amoxicillin product used as reference for generic approval'],
+  },
+  {
+    id: 'term-031',
+    term: 'Hardness',
+    slug: 'hardness',
+    definition:
+      'The force required to fracture a tablet. Measured by diametral or radial compression. Indicates tablet mechanical strength.',
+    topic_id: 'mfg-021',
+    related_terms: ['friability', 'disintegration', 'dissolution'],
+    aliases: ['tablet hardness', 'breaking force'],
+    examples: ['Typical tablet hardness: 4-10 kp for standard tablets'],
+  },
+  {
+    id: 'term-032',
+    term: 'Friability',
+    slug: 'friability',
+    definition:
+      'The tendency of a tablet to chip, crumble, or break during handling, packaging, and transport. Measured by Roche Friabilator.',
+    topic_id: 'mfg-021',
+    related_terms: ['hardness', 'tablet quality', 'packaging'],
+    aliases: ['tablet friability'],
+    examples: ['Acceptable friability: ≤1.0% weight loss after 100 rotations'],
+  },
+  {
+    id: 'term-033',
+    term: 'Disintegration',
+    slug: 'disintegration',
+    definition:
+      'The process by which a tablet or capsule breaks down into smaller particles in a liquid medium. Required for drug release and absorption.',
+    topic_id: 'mfg-021',
+    related_terms: ['dissolution testing', 'bioavailability', 'tablet quality'],
+    aliases: ['disintegration test'],
+    examples: ['Uncoated tablets: disintegration within 15 minutes'],
+  },
+  {
+    id: 'term-034',
+    term: 'Content Uniformity',
+    slug: 'content-uniformity',
+    definition:
+      'Assessment of the uniformity of dosage units by assay of individual units. Ensures each tablet/capsule contains the correct amount of drug.',
+    topic_id: 'mfg-021',
+    related_terms: ['assay', 'tablet quality', 'QC testing'],
+    aliases: ['uniformity of dosage units'],
+    examples: ['USP <905> uniformity of dosage units'],
+  },
+  {
+    id: 'term-035',
+    term: 'Batch',
+    slug: 'batch',
+    definition:
+      'A specific quantity of drug product that is uniformly manufactured under a single set of manufacturing instructions. Each batch has a unique batch number.',
+    topic_id: 'mfg-010',
+    related_terms: ['lot number', 'batch record', 'batch manufacturing'],
+    aliases: ['lot', 'batch production'],
+    examples: ['Batch AMX-2026-001 for amoxicillin 500mg capsules'],
+  },
+  {
+    id: 'term-036',
+    term: 'Batch Record',
+    slug: 'batch-record',
+    definition:
+      'Documented record of all manufacturing steps, in-process controls, and quality checks for a specific batch. Essential for GMP compliance.',
+    topic_id: 'mfg-025',
+    related_terms: ['batch', 'GMP', 'documentation'],
+    aliases: ['batch manufacturing record', 'BMR'],
+    examples: ['Batch record includes weighing logs, mixing times, and compression parameters'],
+  },
+  {
+    id: 'term-037',
+    term: 'Standard Operating Procedure (SOP)',
+    slug: 'sop',
+    definition:
+      'Written instructions describing how to perform a specific task or activity consistently and in compliance with GMP requirements.',
+    topic_id: 'mfg-025',
+    related_terms: ['GMP', 'documentation', 'quality assurance'],
+    aliases: ['SOP', 'standard procedure'],
+    examples: ['SOP for tablet compression: machine setup, parameters, sampling'],
+  },
+  {
+    id: 'term-038',
+    term: 'Quarantine',
+    slug: 'quarantine',
+    definition:
+      'Status of materials or products that are physically or electronically isolated from use or distribution pending a decision on their acceptance or rejection.',
+    topic_id: 'mfg-020',
+    related_terms: ['quality assurance', 'release', 'inspection'],
+    aliases: ['hold', 'pending release'],
+    examples: ['Finished tablets held in quarantine pending QC release'],
+  },
+  {
+    id: 'term-039',
+    term: 'Batch Release',
+    slug: 'batch-release',
+    definition:
+      'Official decision to approve a manufactured batch for distribution after all quality checks and documentation are verified.',
+    topic_id: 'mfg-020',
+    related_terms: ['quarantine', 'quality assurance', 'quality control'],
+    aliases: ['product release', 'batch approval'],
+    examples: ['Qualified Person releases batch after reviewing batch record and QC results'],
+  },
+  {
+    id: 'term-040',
+    term: 'Impurity Profile',
+    slug: 'impurity-profile',
+    definition:
+      'Description of the identity and quantity of impurities present in a drug substance or product. Includes organic, inorganic, and residual solvents.',
+    topic_id: 'mfg-021',
+    related_terms: ['ICH guidelines', 'quality control', 'stability'],
+    aliases: ['impurity profile', 'related substances'],
+    examples: ['ICH Q3A/Q3B guidelines for impurities in new drug substances/products'],
+  },
+  {
+    id: 'term-041',
+    term: 'Residual Solvents',
+    slug: 'residual-solvents',
+    definition:
+      'Organic solvents remaining in a drug substance or product after manufacturing. Classified by ICH into Class 1 (avoid), Class 2 (limit), Class 3 (low toxic potential).',
+    topic_id: 'mfg-021',
+    related_terms: ['impurity profile', 'ICH guidelines', 'quality control'],
+    aliases: ['organic volatile impurities'],
+    examples: ['Class 3 solvents like ethanol have lower toxicity limits'],
+  },
+  {
+    id: 'term-042',
+    term: 'Process Analytical Technology (PAT)',
+    slug: 'pat',
+    definition:
+      'A framework for designing, analyzing, and controlling manufacturing through timely measurements of critical quality attributes.',
+    topic_id: 'mfg-010',
+    related_terms: ['quality by design', 'process control', 'real-time monitoring'],
+    aliases: ['PAT', 'real-time release'],
+    examples: ['Near-infrared spectroscopy for real-time moisture monitoring'],
+  },
+  {
+    id: 'term-043',
+    term: 'Quality by Design (QbD)',
+    slug: 'qbd',
+    definition:
+      'A systematic approach to pharmaceutical development that begins with predefined objectives and emphasizes product and process understanding.',
+    topic_id: 'mfg-020',
+    related_terms: ['PAT', 'design space', 'process understanding'],
+    aliases: ['QbD', 'quality by design'],
+    examples: ['QbD approach to tablet formulation development'],
+  },
+  {
+    id: 'term-044',
+    term: 'Design Space',
+    slug: 'design-space',
+    definition:
+      'The multidimensional combination of input variables that have been demonstrated to provide assurance of quality. Working within the design space does not constitute a change.',
+    topic_id: 'mfg-020',
+    related_terms: ['QbD', 'process validation', 'regulatory flexibility'],
+    aliases: ['design space', 'proven acceptable range'],
+    examples: ['Design space for compression force: 10-20 kN'],
+  },
+  {
+    id: 'term-045',
+    term: 'In-Process Control (IPC)',
+    slug: 'ipc',
+    definition:
+      'Checks and tests performed during manufacturing to monitor and control the process. Includes weight checks, hardness testing, and moisture determination.',
+    topic_id: 'mfg-010',
+    related_terms: ['quality control', 'batch record', 'process monitoring'],
+    aliases: ['in-process checks', 'process control'],
+    examples: ['IPC check: tablet weight every 15 minutes during compression'],
+  },
+  {
+    id: 'term-046',
+    term: 'Pharmaceutical Supply Chain',
+    slug: 'pharmaceutical-supply-chain',
+    definition:
+      'The system of organizations, resources, and processes involved in producing and delivering pharmaceutical products from raw materials to patients.',
+    topic_id: 'sc-001',
+    related_terms: ['procurement', 'distribution', 'GDP'],
+    aliases: ['drug supply chain', 'medicine supply chain'],
+    examples: ['From API manufacturer → formulation → distribution → pharmacy → patient'],
+  },
+  {
+    id: 'term-047',
+    term: 'Procurement',
+    slug: 'procurement',
+    definition:
+      'The process of acquiring pharmaceutical products through purchasing, tendering, or contracting. Includes needs assessment, supplier selection, and contract management.',
+    topic_id: 'sc-002',
+    related_terms: ['supply chain', 'tendering', 'supplier qualification'],
+    aliases: ['purchasing', 'acquisition'],
+    examples: ['KEMSA procures essential medicines for Kenyan public health facilities'],
+  },
+  {
+    id: 'term-048',
+    term: 'Kenya Essential Medicines List (KEML)',
+    slug: 'keml',
+    definition:
+      'The official list of medicines considered essential for the Kenyan public health system. Updated periodically by the Ministry of Health.',
+    topic_id: 'ke-001',
+    related_terms: ['essential medicines', 'formulary', 'KEML'],
+    aliases: ['KEML', 'Kenya EML'],
+    examples: ['KEML 2019 lists medicines for primary healthcare facilities'],
+  },
+  {
+    id: 'term-049',
+    term: 'Drug Recall',
+    slug: 'drug-recall',
+    definition:
+      'Action to remove a pharmaceutical product from the market due to quality, safety, or efficacy concerns. Can be voluntary or mandated by regulatory authority.',
+    topic_id: 'pv-001',
+    related_terms: ['pharmacovigilance', 'quality defect', 'public health alert'],
+    aliases: ['product recall', 'medicine recall'],
+    examples: ['PPB recall of contaminated cough syrup batch'],
+  },
+  {
+    id: 'term-050',
+    term: 'Substandard Medicine',
+    slug: 'substandard-medicine',
+    definition:
+      'An approved pharmaceutical product that fails to meet its quality specifications. Also called "out of specification" products.',
+    topic_id: 'pv-001',
+    related_terms: ['falsified medicine', 'quality defect', 'drug recall'],
+    aliases: ['substandard product', 'out-of-specification'],
+    examples: ['Tablet with less than 90% of stated API content'],
+  },
+  {
+    id: 'term-051',
+    term: 'Falsified Medicine',
+    slug: 'falsified-medicine',
+    definition:
+      'A pharmaceutical product that deliberately or fraudulently misrepresents its identity, composition, or source. Includes counterfeit, falsified, and illegally traded medicines.',
+    topic_id: 'pv-001',
+    related_terms: ['substandard medicine', 'counterfeit', 'product authentication'],
+    aliases: ['counterfeit medicine', 'fake medicine'],
+    examples: ['Antimalarials containing no active ingredient'],
+  },
+  {
+    id: 'term-052',
+    term: 'Marketing Authorisation Application (MAA)',
+    slug: 'maa',
+    definition:
+      'Formal application submitted to a regulatory authority seeking approval to market a pharmaceutical product.',
+    topic_id: 'reg-002',
+    related_terms: ['marketing authorisation', 'CTD', 'regulatory submission'],
+    aliases: ['MAA', 'drug application', 'registration dossier'],
+    examples: ['MAA submitted to PPB for a new amoxicillin formulation'],
+  },
+  {
+    id: 'term-053',
+    term: 'Certificate of Pharmaceutical Product (CPP)',
+    slug: 'cpp',
+    definition:
+      'Official certificate issued by a regulatory authority confirming that a pharmaceutical product is registered and manufactured in compliance with GMP in the country of origin.',
+    topic_id: 'reg-002',
+    related_terms: ['marketing authorisation', 'GMP certificate', 'regulatory documentation'],
+    aliases: ['CPP', 'pharmaceutical certificate'],
+    examples: ['CPP from PPB required for product registration in other countries'],
+  },
+  {
+    id: 'term-054',
+    term: 'Pharmacopoeia',
+    slug: 'pharmacopoeia',
+    definition:
+      'An official publication containing a list of medicinal drugs with their effects, directions for compounding, and standards of quality and purity.',
+    topic_id: 'mfg-021',
+    related_terms: ['quality standards', 'monograph', 'compendial testing'],
+    aliases: ['compendium', 'pharmacopeia'],
+    examples: [
+      'British Pharmacopoeia (BP)',
+      'United States Pharmacopoeia (USP)',
+      'International Pharmacopoeia (WHO)',
+    ],
+  },
+  {
+    id: 'term-055',
+    term: 'Monograph',
+    slug: 'monograph-pharma',
+    definition:
+      'A detailed description of a single drug or pharmaceutical product in a pharmacopoeia, including specifications, tests, and methods.',
+    topic_id: 'mfg-021',
+    related_terms: ['pharmacopoeia', 'quality standards', 'specifications'],
+    aliases: ['drug monograph', 'compendial monograph'],
+    examples: ['Amoxicillin monograph in BP includes identity, purity, and assay tests'],
+  },
+] as const

@@ -1390,7 +1390,7 @@ async function buildAssistantRequest(body: any) {
   if (userMessage) {
     const route = await RAGRouter.route(userMessage, adminSupabase);
     if (route.requiresRag) {
-      ragContext = RAGRouter.buildContextForAi(route.engineResult);
+      ragContext = await RAGRouter.buildContextForAi(route.engineResult);
       // Surface the retrieved sources to the client for the citation widget.
       // The client no longer runs its own duplicate KnowledgeEngine search,
       // so this is the single source of truth for what the AI grounded on.

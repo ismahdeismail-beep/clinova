@@ -9,12 +9,7 @@
 export type PrescriptionStatus = 'OTC' | 'Prescription-only' | 'Controlled' | 'Hospital-only'
 
 export type ControlledStatus =
-  | 'Non-controlled'
-  | 'Schedule I'
-  | 'Schedule II'
-  | 'Schedule III'
-  | 'Schedule IV'
-  | 'Schedule V'
+  'Non-controlled' | 'Schedule I' | 'Schedule II' | 'Schedule III' | 'Schedule IV' | 'Schedule V'
 
 export type PregnancyCategory = 'A' | 'B' | 'C' | 'D' | 'X' | 'N'
 
@@ -26,7 +21,8 @@ export type HepaticAdjustment = 'None' | 'Adjust dose' | 'Adjust interval' | 'Co
 
 export type EvidenceLevel = 'A' | 'B' | 'C' | 'D' | 'I' | 'II' | 'III' | 'IV'
 
-export type RecommendationGrade = 'Strong for' | 'Weak for' | 'Weak against' | 'Strong against' | 'No recommendation'
+export type RecommendationGrade =
+  'Strong for' | 'Weak for' | 'Weak against' | 'Strong against' | 'No recommendation'
 
 export type Severity = 'Minor' | 'Moderate' | 'Major' | 'Severe' | 'Fatal'
 
@@ -170,7 +166,17 @@ export interface PatientCounseling {
 export interface AiFeature {
   id: string
   label: string
-  type: 'summary' | 'explain' | 'flashcard' | 'quiz' | 'osce' | 'ward-round' | 'compare' | 'alternative' | 'mechanism' | 'patient-ed'
+  type:
+    | 'summary'
+    | 'explain'
+    | 'flashcard'
+    | 'quiz'
+    | 'osce'
+    | 'ward-round'
+    | 'compare'
+    | 'alternative'
+    | 'mechanism'
+    | 'patient-ed'
 }
 
 export interface KdiMonograph {
@@ -252,21 +258,9 @@ export interface KdiMonograph {
 export type CaseDifficulty = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert'
 
 export type ClinicalSetting =
-  | 'Outpatient'
-  | 'Inpatient'
-  | 'Emergency'
-  | 'ICU'
-  | 'Community'
-  | 'Ward'
-  | 'Clinic'
-  | 'Pharmacy'
+  'Outpatient' | 'Inpatient' | 'Emergency' | 'ICU' | 'Community' | 'Ward' | 'Clinic' | 'Pharmacy'
 
-export type InvestigationCategory =
-  | 'Laboratory'
-  | 'Imaging'
-  | 'Microbiology'
-  | 'ECG'
-  | 'Bedside'
+export type InvestigationCategory = 'Laboratory' | 'Imaging' | 'Microbiology' | 'ECG' | 'Bedside'
 
 export type DrugRelatedProblemType =
   | 'Unnecessary drug'
@@ -511,7 +505,19 @@ export interface ClinicalDecisionEntry {
 export interface AiLearningTool {
   id: string
   label: string
-  type: 'soap' | 'intervention' | 'care-plan' | 'explain-dx' | 'explain-investigations' | 'ddx' | 'ward-round' | 'flashcard' | 'osce' | 'viva' | 'counseling' | 'summary'
+  type:
+    | 'soap'
+    | 'intervention'
+    | 'care-plan'
+    | 'explain-dx'
+    | 'explain-investigations'
+    | 'ddx'
+    | 'ward-round'
+    | 'flashcard'
+    | 'osce'
+    | 'viva'
+    | 'counseling'
+    | 'summary'
 }
 
 export interface RelatedContent {
@@ -527,7 +533,17 @@ export interface RelatedContent {
 
 export interface Attachment {
   id: string
-  type: 'ECG' | 'X-ray' | 'CT' | 'MRI' | 'Lab Report' | 'Clinical Image' | 'Prescription' | 'Medication Chart' | 'Progress Note' | 'Discharge Summary'
+  type:
+    | 'ECG'
+    | 'X-ray'
+    | 'CT'
+    | 'MRI'
+    | 'Lab Report'
+    | 'Clinical Image'
+    | 'Prescription'
+    | 'Medication Chart'
+    | 'Progress Note'
+    | 'Discharge Summary'
   url: string
   title: string
   uploadedAt: string
@@ -578,17 +594,104 @@ export interface ClinicalCaseFull {
 }
 
 // ================================================================
-// 3. Utility Types
+// 3. Pharmaceutical Industry Types
+// ================================================================
+
+export type IndustryDifficulty = 'basic' | 'intermediate' | 'advanced'
+
+export type IndustryConnectionType =
+  | 'manufactured_as'
+  | 'formulation_type'
+  | 'manufacturing_process'
+  | 'quality_consideration'
+  | 'regulatory_note'
+  | 'supply_note'
+  | 'storage_requirement'
+  | 'manufacturer_info'
+  | 'stability_note'
+  | 'packaging_info'
+
+export interface PharmaceuticalTopic {
+  id: string
+  name: string
+  slug: string
+  description: string | null
+  icon: string | null
+  parent_id: string | null
+  sort_order: number
+  created_at: string
+  updated_at: string
+  children?: PharmaceuticalTopic[]
+}
+
+export interface IndustryKnowledgeEntry {
+  id: string
+  topic_id: string
+  title: string
+  content: Record<string, any>
+  difficulty: IndustryDifficulty
+  curriculum_unit_id: string | null
+  source: string | null
+  source_url: string | null
+  last_verified: string | null
+  tags: string[]
+  metadata: Record<string, any>
+  created_at: string
+  updated_at: string
+  topic?: PharmaceuticalTopic
+}
+
+export interface DrugIndustryConnection {
+  id: string
+  drug_id: string
+  knowledge_entry_id: string
+  connection_type: IndustryConnectionType
+  context: string | null
+  relevance_score: number
+  metadata: Record<string, any>
+  created_at: string
+  entry?: IndustryKnowledgeEntry
+  topic?: PharmaceuticalTopic
+}
+
+export interface IndustryTerm {
+  id: string
+  term: string
+  slug: string
+  definition: string
+  topic_id: string | null
+  related_terms: string[]
+  aliases: string[]
+  examples: string[]
+  created_at: string
+  updated_at: string
+  topic?: PharmaceuticalTopic
+}
+
+export interface KenyanManufacturer {
+  id: string
+  name: string
+  slug: string
+  location: string | null
+  products_description: string | null
+  capabilities: string[]
+  regulatory_status: string | null
+  website: string | null
+  founded_year: number | null
+  employee_count: string | null
+  certifications: string[]
+  notes: string | null
+  metadata: Record<string, any>
+  created_at: string
+  updated_at: string
+}
+
+// ================================================================
+// 4. Utility Types
 // ================================================================
 
 export type KnowledgeResourceType =
-  | 'kd_monograph'
-  | 'clinical_case'
-  | 'guideline'
-  | 'study_note'
-  | 'flashcard'
-  | 'quiz'
-  | 'reference'
+  'kd_monograph' | 'clinical_case' | 'guideline' | 'study_note' | 'flashcard' | 'quiz' | 'reference'
 
 export interface KnowledgeResource {
   id: string

@@ -1,7 +1,8 @@
 import { supabase } from '../lib/supabase'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { IndustryKnowledgeService } from './industryKnowledge.service'
 
-export type SearchResultType = 'drug' | 'disease' | 'case'
+export type SearchResultType = 'drug' | 'disease' | 'case' | 'industry_term'
 
 export interface UnifiedSearchResult {
   result_type: SearchResultType
@@ -26,8 +27,27 @@ export const SearchService = {
     const term = query.trim()
     if (!supabase || term.length < 2) return searchStatic(term, limit)
 
+    // Run existing search and industry term search in parallel
+    const [existingResults, industryTerms] = await Promise.all([
+      this._searchExisting(term, limit),
+      IndustryKnowledgeService.searchTerms(term, Math.min(3, limit)),
+    ])
+
+    // Add industry term results
+    const industryResults: UnifiedSearchResult[] = industryTerms.map((t) => ({
+      result_type: 'industry_term' as SearchResultType,
+      id: t.id,
+      title: t.term,
+      subtitle: t.definition.slice(0, 100),
+      relevance: 0.75,
+    }))
+
+    return [...existingResults, ...industryResults].slice(0, limit)
+  },
+
+  async _searchExisting(term: string, limit: number): Promise<UnifiedSearchResult[]> {
     // Try RPC first
-    const { data, error } = await supabase.rpc('unified_search', {
+    const { data, error } = await supabase!.rpc('unified_search', {
       search_query: term,
       match_count: limit,
     })
@@ -55,11 +75,7 @@ export const SearchService = {
         .select('id, name')
         .or(`name.ilike.${like},generic_name.ilike.${like}`)
         .limit(limit),
-      supabase
-        .from('diseases')
-        .select('id, name, specialty')
-        .ilike('name', like)
-        .limit(limit),
+      supabase.from('diseases').select('id, name, specialty').ilike('name', like).limit(limit),
       supabase
         .from('clinical_cases')
         .select('id, title, specialty')
@@ -69,13 +85,31 @@ export const SearchService = {
     ])
 
     for (const d of drugs.data ?? []) {
-      results.push({ result_type: 'drug', id: String(d.id), title: d.name, subtitle: '', relevance: 0.5 })
+      results.push({
+        result_type: 'drug',
+        id: String(d.id),
+        title: d.name,
+        subtitle: '',
+        relevance: 0.5,
+      })
     }
     for (const d of diseases.data ?? []) {
-      results.push({ result_type: 'disease', id: String(d.id), title: d.name, subtitle: d.specialty ?? '', relevance: 0.5 })
+      results.push({
+        result_type: 'disease',
+        id: String(d.id),
+        title: d.name,
+        subtitle: d.specialty ?? '',
+        relevance: 0.5,
+      })
     }
     for (const c of cases.data ?? []) {
-      results.push({ result_type: 'case', id: String(c.id), title: c.title, subtitle: c.specialty ?? '', relevance: 0.5 })
+      results.push({
+        result_type: 'case',
+        id: String(c.id),
+        title: c.title,
+        subtitle: c.specialty ?? '',
+        relevance: 0.5,
+      })
     }
 
     return results.slice(0, limit)
@@ -91,9 +125,10 @@ function searchStatic(term: string, limit: number): UnifiedSearchResult[] {
     if (results.length >= limit) break
     const nameMatch = d.name.toLowerCase().includes(q)
     const genericMatch = d.generic_name.toLowerCase().includes(q)
-    const classMatch = d.drug_class.toLowerCase().includes(q) || d.drug_class_name.toLowerCase().includes(q)
-    const brandMatch = (d.brand_names || []).some(bn => bn.toLowerCase().includes(q))
-    
+    const classMatch =
+      d.drug_class.toLowerCase().includes(q) || d.drug_class_name.toLowerCase().includes(q)
+    const brandMatch = (d.brand_names || []).some((bn) => bn.toLowerCase().includes(q))
+
     if (nameMatch || genericMatch || classMatch || brandMatch) {
       results.push({
         result_type: 'drug',

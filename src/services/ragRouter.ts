@@ -1,34 +1,66 @@
-import { KnowledgeEngine, type KnowledgeEngineResult, type QueryIntent } from '../engine/knowledgeEngine.service';
+import {
+  KnowledgeEngine,
+  type KnowledgeEngineResult,
+  type QueryIntent,
+} from '../engine/knowledgeEngine.service'
+import { IndustryKnowledgeService } from './industryKnowledge.service'
 
-export type IntentCategory = 'drug' | 'drug_interaction' | 'guideline' | 'disease' | 'case' | 'research' | 'general';
+export type IntentCategory =
+  | 'drug'
+  | 'drug_interaction'
+  | 'guideline'
+  | 'disease'
+  | 'case'
+  | 'research'
+  | 'general'
+  | 'manufacturing_query'
+  | 'regulatory_query'
+  | 'pharmacovigilance_query'
+  | 'supply_chain_query'
+  | 'industry_term_query'
+  | 'manufacturer_query'
+  | 'career_query'
 
 export interface RoutedQuery {
-  intent: IntentCategory;
-  targetAgent: string;
-  engineResult: KnowledgeEngineResult;
-  requiresRag: boolean;
+  intent: IntentCategory
+  targetAgent: string
+  engineResult: KnowledgeEngineResult
+  requiresRag: boolean
 }
 
 function mapIntent(intent: QueryIntent): IntentCategory {
   switch (intent) {
-    case 'drug_info': return 'drug';
-    case 'drug_interaction': return 'drug_interaction';
-    case 'disease_info': return 'disease';
-    case 'case_lookup': return 'case';
-    case 'guideline': return 'guideline';
-    default: return 'general';
+    case 'drug_info':
+      return 'drug'
+    case 'drug_interaction':
+      return 'drug_interaction'
+    case 'disease_info':
+      return 'disease'
+    case 'case_lookup':
+      return 'case'
+    case 'guideline':
+      return 'guideline'
+    default:
+      return 'general'
   }
 }
 
 function getAgent(intent: IntentCategory): string {
   switch (intent) {
-    case 'drug': return 'Drug Information Agent';
-    case 'drug_interaction': return 'Drug Interaction Checker';
-    case 'disease': return 'Disease Knowledge Agent';
-    case 'case': return 'Clinical Case Agent';
-    case 'guideline': return 'Guideline Agent';
-    case 'research': return 'Research Agent';
-    default: return 'General Clinical Agent';
+    case 'drug':
+      return 'Drug Information Agent'
+    case 'drug_interaction':
+      return 'Drug Interaction Checker'
+    case 'disease':
+      return 'Disease Knowledge Agent'
+    case 'case':
+      return 'Clinical Case Agent'
+    case 'guideline':
+      return 'Guideline Agent'
+    case 'research':
+      return 'Research Agent'
+    default:
+      return 'General Clinical Agent'
   }
 }
 
@@ -65,27 +97,72 @@ const INTENT_KEYWORDS: Record<string, IntentCategory> = {
   research: 'research',
   evidence: 'research',
   trial: 'research',
-};
+  manufactur: 'manufacturing_query',
+  formulat: 'manufacturing_query',
+  granulation: 'manufacturing_query',
+  gmp: 'manufacturing_query',
+  excipient: 'manufacturing_query',
+  'dosage form': 'manufacturing_query',
+  'tablet process': 'manufacturing_query',
+  'capsule process': 'manufacturing_query',
+  regulatory: 'regulatory_query',
+  ppb: 'regulatory_query',
+  registration: 'regulatory_query',
+  'marketing authorisation': 'regulatory_query',
+  compliance: 'regulatory_query',
+  inspection: 'regulatory_query',
+  keml: 'regulatory_query',
+  pharmacovigilance: 'pharmacovigilance_query',
+  adr: 'pharmacovigilance_query',
+  'adverse drug reaction': 'pharmacovigilance_query',
+  recall: 'pharmacovigilance_query',
+  'safety signal': 'pharmacovigilance_query',
+  'post-market': 'pharmacovigilance_query',
+  'supply chain': 'supply_chain_query',
+  procurement: 'supply_chain_query',
+  distribution: 'supply_chain_query',
+  'cold chain': 'supply_chain_query',
+  kensa: 'supply_chain_query',
+  'good distribution': 'supply_chain_query',
+  'what is gmp': 'industry_term_query',
+  define: 'industry_term_query',
+  glossary: 'industry_term_query',
+  terminology: 'industry_term_query',
+  manufacturer: 'manufacturer_query',
+  'pharmaceutical company': 'manufacturer_query',
+  'local manufactur': 'manufacturer_query',
+  'kenyan manufactur': 'manufacturer_query',
+  career: 'career_query',
+  'pharmaceutical career': 'career_query',
+  'industrial pharmacy': 'career_query',
+}
 
 export const RAGRouter = {
   analyzeIntent(query: string, engineResult?: KnowledgeEngineResult): IntentCategory {
     if (engineResult) {
-      return mapIntent(engineResult.intent);
+      const mapped = mapIntent(engineResult.intent)
+      if (mapped !== 'general') return mapped
     }
 
-    const lowerQuery = query.toLowerCase();
+    const lowerQuery = query.toLowerCase()
+
+    // Check industry intent patterns (regex for multi-word matches)
     for (const [keyword, intent] of Object.entries(INTENT_KEYWORDS)) {
-      if (lowerQuery.includes(keyword)) return intent;
+      if (keyword.includes(' ')) {
+        if (lowerQuery.includes(keyword)) return intent
+      } else if (lowerQuery.includes(keyword)) {
+        return intent
+      }
     }
 
-    if (lowerQuery.includes('drug') || lowerQuery.includes('medicine')) return 'drug';
-    return 'general';
+    if (lowerQuery.includes('drug') || lowerQuery.includes('medicine')) return 'drug'
+    return 'general'
   },
 
   async route(query: string, customClient?: any): Promise<RoutedQuery> {
-    const engineResult = await KnowledgeEngine.process(query, customClient);
-    const intent = this.analyzeIntent(query, engineResult);
-    const targetAgent = getAgent(intent);
+    const engineResult = await KnowledgeEngine.process(query, customClient)
+    const intent = this.analyzeIntent(query, engineResult)
+    const targetAgent = getAgent(intent)
 
     // Always run RAG — the KnowledgeEngine searches all sources for every query.
     // Even when hasData is false, the engine performed the search and we should
@@ -95,39 +172,39 @@ export const RAGRouter = {
       targetAgent,
       engineResult,
       requiresRag: true,
-    };
+    }
   },
 
-  buildContextForAi(engineResult: KnowledgeEngineResult): string {
-    if (!engineResult.hasData) return '';
+  async buildContextForAi(engineResult: KnowledgeEngineResult): Promise<string> {
+    if (!engineResult.hasData) return ''
 
-    let context = `## Retrieved Knowledge Sources\n\nIntent: ${engineResult.intent}\n\n`;
+    let context = `## Retrieved Knowledge Sources\n\nIntent: ${engineResult.intent}\n\n`
 
-    const monographs = engineResult.drugMonographs;
+    const monographs = engineResult.drugMonographs
     if (monographs && monographs.length > 0) {
-      context += `### Drug Monographs (${monographs.length})\n\n`;
+      context += `### Drug Monographs (${monographs.length})\n\n`
       for (const m of monographs) {
-        context += `**${m.name}** (${m.drug_class_name || m.drug_class})\n`;
+        context += `**${m.name}** (${m.drug_class_name || m.drug_class})\n`
         if (m.brand_names && m.brand_names.length > 0) {
-          context += `- Brand names: ${m.brand_names.slice(0, 3).join(', ')}\n`;
+          context += `- Brand names: ${m.brand_names.slice(0, 3).join(', ')}\n`
         }
-        context += `- Indications: ${m.indications.slice(0, 5).join('; ')}\n`;
-        context += `- Contraindications: ${m.contraindications.slice(0, 3).join('; ')}\n`;
-        context += `- Side effects: ${m.side_effects.slice(0, 3).join('; ')}\n`;
-        context += `- Key interactions: ${m.interactions.slice(0, 4).join('; ')}\n`;
+        context += `- Indications: ${m.indications.slice(0, 5).join('; ')}\n`
+        context += `- Contraindications: ${m.contraindications.slice(0, 3).join('; ')}\n`
+        context += `- Side effects: ${m.side_effects.slice(0, 3).join('; ')}\n`
+        context += `- Key interactions: ${m.interactions.slice(0, 4).join('; ')}\n`
         if (m.dosage) {
-          const dosageEntries = Object.entries(m.dosage).slice(0, 3);
+          const dosageEntries = Object.entries(m.dosage).slice(0, 3)
           if (dosageEntries.length > 0) {
-            context += `- Dosage: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}\n`;
+            context += `- Dosage: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}\n`
           }
         }
         if (m.mechanism_of_action) {
-          context += `- Mechanism: ${m.mechanism_of_action.slice(0, 150)}\n`;
+          context += `- Mechanism: ${m.mechanism_of_action.slice(0, 150)}\n`
         }
         if (m.monitoring) {
-          context += `- Monitoring: ${m.monitoring.slice(0, 200)}\n`;
+          context += `- Monitoring: ${m.monitoring.slice(0, 200)}\n`
         }
-        context += '\n';
+        context += '\n'
       }
     }
 
@@ -135,52 +212,101 @@ export const RAGRouter = {
     // with a ' ↔ ' title). These are distinct from the matched monographs above —
     // they are the OTHER drugs in the registry that interact with the queried one.
     const interactionSources = engineResult.sources.filter(
-      s => s.type === 'drug_monograph' && s.title.includes(' ↔ '),
-    );
+      (s) => s.type === 'drug_monograph' && s.title.includes(' ↔ '),
+    )
     if (interactionSources.length > 0) {
-      context += `### Detected Drug Interactions (${interactionSources.length} pairs found in registry)\n\n`;
+      context += `### Detected Drug Interactions (${interactionSources.length} pairs found in registry)\n\n`
       for (const ix of interactionSources.slice(0, 12)) {
         const line = ix.content.replace('INTERACTION: ', '')
         context += `- ${line.length > 180 ? line.slice(0, 180) + '…' : line}\n`
       }
       if (interactionSources.length > 12) {
-        context += `\n(${interactionSources.length - 12} more interaction pairs found — see registry for full list)\n`;
+        context += `\n(${interactionSources.length - 12} more interaction pairs found — see registry for full list)\n`
       }
-      context += '\n';
+      context += '\n'
     }
 
     // Registry-only entries: drugs recognized by name but no full monograph available
-    const registrySources = engineResult.sources.filter(s => s.type === 'drug_registry');
+    const registrySources = engineResult.sources.filter((s) => s.type === 'drug_registry')
     if (registrySources.length > 0) {
-      context += `### Drug Registry Entries (${registrySources.length}) — no full monograph available, use clinical knowledge\n\n`;
+      context += `### Drug Registry Entries (${registrySources.length}) — no full monograph available, use clinical knowledge\n\n`
       for (const r of registrySources) {
-        context += `- ${r.content}\n`;
+        context += `- ${r.content}\n`
       }
-      context += '\n';
+      context += '\n'
     }
 
-    const cases = engineResult.sources.filter(s => s.type === 'clinical_case');
+    const cases = engineResult.sources.filter((s) => s.type === 'clinical_case')
     if (cases.length > 0) {
-      context += `### Related Clinical Cases (${cases.length})\n\n`;
+      context += `### Related Clinical Cases (${cases.length})\n\n`
       for (const c of cases.slice(0, 5)) {
-        context += `- ${c.title}\n  ${c.content}\n`;
+        context += `- ${c.title}\n  ${c.content}\n`
       }
-      context += '\n';
+      context += '\n'
     }
 
-    const diseases = engineResult.sources.filter(s => s.type === 'disease');
+    const diseases = engineResult.sources.filter((s) => s.type === 'disease')
     if (diseases.length > 0) {
-      context += `### Disease Information (${diseases.length})\n\n`;
+      context += `### Disease Information (${diseases.length})\n\n`
       for (const d of diseases.slice(0, 3)) {
-        context += `- **${d.title}**: ${d.content}\n`;
+        context += `- **${d.title}**: ${d.content}\n`
       }
-      context += '\n';
+      context += '\n'
+    }
+
+    // Pharmaceutical industry knowledge
+    const industryIntents: IntentCategory[] = [
+      'manufacturing_query',
+      'regulatory_query',
+      'pharmacovigilance_query',
+      'supply_chain_query',
+      'industry_term_query',
+      'manufacturer_query',
+      'career_query',
+    ]
+    if (industryIntents.includes(engineResult.intent as IntentCategory)) {
+      // Search industry terms matching the query keywords
+      const queryWords = engineResult.query.split(/\s+/).slice(0, 3)
+      const industryTerms = await IndustryKnowledgeService.searchTerms(queryWords.join(' '), 5)
+      if (industryTerms.length > 0) {
+        context += `### Pharmaceutical Industry Knowledge\n\n`
+        context += IndustryKnowledgeService.formatTermsContext(industryTerms) + '\n\n'
+      }
+      // Search for manufacturer info if relevant
+      const intentStr = engineResult.intent as string
+      if (intentStr === 'manufacturer_query' || intentStr === 'career_query') {
+        const manufacturers = await IndustryKnowledgeService.getManufacturers()
+        if (manufacturers.length > 0) {
+          context += `### Kenyan Pharmaceutical Manufacturers\n\n`
+          for (const m of manufacturers.slice(0, 5)) {
+            context += `- **${m.name}** (${m.location}): ${m.products_description || 'N/A'}\n`
+            if (m.capabilities.length > 0)
+              context += `  Capabilities: ${m.capabilities.join(', ')}\n`
+          }
+          context += '\n'
+        }
+      }
+    }
+
+    // Also add industry context for drug queries when drug monographs are found
+    if (
+      engineResult.intent === 'drug_info' &&
+      engineResult.drugMonographs &&
+      engineResult.drugMonographs.length > 0
+    ) {
+      const drugConnections = await IndustryKnowledgeService.getForDrug(
+        engineResult.drugMonographs[0].id,
+      )
+      if (drugConnections.length > 0) {
+        context += `### Pharmaceutical Industry Context\n\n`
+        context += IndustryKnowledgeService.formatIndustryContext(drugConnections) + '\n\n'
+      }
     }
 
     // Fallback: if the formatted sections are empty but contextSummary exists, use it
     if (context.trim() === '## Retrieved Knowledge Sources\n\nIntent: ' + engineResult.intent) {
       if (engineResult.contextSummary) {
-        context += engineResult.contextSummary + '\n';
+        context += engineResult.contextSummary + '\n'
       }
     }
 
@@ -188,13 +314,15 @@ export const RAGRouter = {
     // 12k chars ≈ 3k tokens — well within Gemini Flash's window, but keeps the
     // prompt lean for fast first-token latency (drug-interaction queries need
     // room for both monographs and the detected-pairs section).
-    const MAX_CONTEXT_CHARS = 12000;
+    const MAX_CONTEXT_CHARS = 12000
     if (context.length > MAX_CONTEXT_CHARS) {
-      context = context.slice(0, MAX_CONTEXT_CHARS) + '\n\n[Context truncated for brevity — focus on the most relevant sources above]\n';
+      context =
+        context.slice(0, MAX_CONTEXT_CHARS) +
+        '\n\n[Context truncated for brevity — focus on the most relevant sources above]\n'
     }
 
-    return context;
+    return context
   },
 
   routeQuery: (intent: IntentCategory): string => getAgent(intent),
-};
+}

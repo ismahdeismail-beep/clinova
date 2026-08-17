@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   ArrowLeft,
   Bell,
@@ -9,9 +9,10 @@ import {
   LogOut,
   Mail,
   Shield,
-} from "lucide-react"
-import { useAuth } from "../contexts/AuthContext"
-import { useNotifications } from "../contexts/NotificationContext"
+} from 'lucide-react'
+import { useAuth } from '../contexts/AuthContext'
+import { useNotifications } from '../contexts/NotificationContext'
+import { InlineLoader } from '../components/PageLoader'
 
 export default function SettingsScreen() {
   const navigate = useNavigate()
@@ -29,7 +30,7 @@ export default function SettingsScreen() {
   const [pushEnabled, setPushEnabled] = useState(false)
   const [pushSubscribed, setPushSubscribed] = useState(false)
   const [pushBusy, setPushBusy] = useState(false)
-  const [pushHint, setPushHint] = useState("")
+  const [pushHint, setPushHint] = useState('')
   const [loggingOut, setLoggingOut] = useState(false)
   const [showNotifications, setShowNotifications] = useState(false)
 
@@ -38,13 +39,13 @@ export default function SettingsScreen() {
   useEffect(() => {
     let active = true
     const sync = async () => {
-      if (!("Notification" in window)) {
+      if (!('Notification' in window)) {
         if (active) setPushEnabled(false)
         return
       }
       let subscribed = false
       try {
-        if ("serviceWorker" in navigator && "PushManager" in window) {
+        if ('serviceWorker' in navigator && 'PushManager' in window) {
           const registration = await navigator.serviceWorker.ready
           const sub = await registration.pushManager.getSubscription()
           subscribed = Boolean(sub)
@@ -54,7 +55,7 @@ export default function SettingsScreen() {
       }
       if (active) {
         setPushSubscribed(subscribed)
-        setPushEnabled(subscribed || Notification.permission === "granted")
+        setPushEnabled(subscribed || Notification.permission === 'granted')
       }
     }
     sync()
@@ -64,42 +65,52 @@ export default function SettingsScreen() {
   }, [])
 
   const handleTogglePush = async () => {
-    if (!("Notification" in window)) {
-      setPushHint("Browser notifications are not supported in this browser.")
+    if (!('Notification' in window)) {
+      setPushHint('Browser notifications are not supported in this browser.')
       setPushEnabled(false)
       return
     }
     if (pushBusy) return
     setPushBusy(true)
-    setPushHint("")
+    setPushHint('')
     try {
       // Turning OFF: remove the subscription for this device.
       if (pushEnabled) {
         setPushEnabled(false)
         const ok = await unsubscribePush()
         setPushSubscribed(false)
-        setPushHint(ok ? "Push notifications turned off for this device." : "Could not remove this device's push subscription.")
+        setPushHint(
+          ok
+            ? 'Push notifications turned off for this device.'
+            : "Could not remove this device's push subscription.",
+        )
         return
       }
-      if (Notification.permission === "denied") {
-        setPushHint("Notifications are blocked for this site. Enable them in your browser's site settings.")
+      if (Notification.permission === 'denied') {
+        setPushHint(
+          "Notifications are blocked for this site. Enable them in your browser's site settings.",
+        )
         setPushEnabled(false)
         return
       }
       const result = await requestNotificationPermission()
-      if (result !== "granted") {
+      if (result !== 'granted') {
         setPushEnabled(false)
         setPushHint(
-          result === "denied"
+          result === 'denied'
             ? "Notifications were blocked. You can enable them in your browser's site settings."
-            : ""
+            : '',
         )
         return
       }
       const ok = await subscribePush()
       setPushSubscribed(ok)
       setPushEnabled(ok)
-      setPushHint(ok ? "" : "Could not register this device for push. Your browser may block push notifications.")
+      setPushHint(
+        ok
+          ? ''
+          : 'Could not register this device for push. Your browser may block push notifications.',
+      )
     } finally {
       setPushBusy(false)
     }
@@ -141,23 +152,23 @@ export default function SettingsScreen() {
               <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center font-bold text-lg shadow-sm border-2 border-white shrink-0">
                 {userData?.name
                   ? userData.name
-                      .split(" ")
+                      .split(' ')
                       .map((n: string) => n[0])
-                      .join("")
+                      .join('')
                       .substring(0, 2)
-                  : "G"}
+                  : 'G'}
               </div>
               <div className="min-w-0 flex-1">
                 <p className="text-base font-bold text-[var(--text)] truncate">
-                  {userData?.name || "Guest"}
+                  {userData?.name || 'Guest'}
                 </p>
                 <p className="text-sm text-[var(--text-muted)] flex items-center gap-1.5 mt-0.5 truncate">
                   <Mail size={13} className="shrink-0" />
-                  <span className="truncate">{userData?.email || "No email"}</span>
+                  <span className="truncate">{userData?.email || 'No email'}</span>
                 </p>
                 <p className="text-xs text-[var(--text-muted)] flex items-center gap-1.5 mt-0.5 capitalize">
                   <Shield size={13} className="shrink-0" />
-                  {userData?.role || "user"}
+                  {userData?.role || 'user'}
                 </p>
               </div>
             </div>
@@ -195,12 +206,12 @@ export default function SettingsScreen() {
                 disabled={pushBusy}
                 aria-pressed={pushEnabled}
                 className={`relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 disabled:opacity-50 ${
-                  pushEnabled ? "bg-[var(--primary)]" : "bg-[var(--border)]"
+                  pushEnabled ? 'bg-[var(--primary)]' : 'bg-[var(--border)]'
                 }`}
               >
                 <span
                   className={`pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out ${
-                    pushEnabled ? "translate-x-5" : "translate-x-0"
+                    pushEnabled ? 'translate-x-5' : 'translate-x-0'
                   }`}
                 />
               </button>
@@ -228,7 +239,7 @@ export default function SettingsScreen() {
                   <ChevronDown
                     size={16}
                     className={`text-[var(--text-muted)] transition-transform duration-200 ${
-                      showNotifications ? "rotate-180" : ""
+                      showNotifications ? 'rotate-180' : ''
                     }`}
                   />
                 </div>
@@ -239,8 +250,8 @@ export default function SettingsScreen() {
                   <div className="flex items-center justify-between mb-3">
                     <p className="text-xs text-[var(--text-muted)]">
                       {notifications.length > 0
-                        ? `${notifications.length} notification${notifications.length === 1 ? "" : "s"}`
-                        : "No notifications yet"}
+                        ? `${notifications.length} notification${notifications.length === 1 ? '' : 's'}`
+                        : 'No notifications yet'}
                     </p>
                     {unreadCount > 0 && (
                       <button
@@ -265,22 +276,30 @@ export default function SettingsScreen() {
                           onClick={() => !n.read && markAsRead(n.id)}
                           className={`flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer ${
                             n.read
-                              ? "bg-[var(--bg)]/50 border-[var(--border)]/40 opacity-60"
-                              : "bg-[var(--primary)]/5 border-[var(--primary)]/15 hover:border-[var(--primary)]/30"
+                              ? 'bg-[var(--bg)]/50 border-[var(--border)]/40 opacity-60'
+                              : 'bg-[var(--primary)]/5 border-[var(--primary)]/15 hover:border-[var(--primary)]/30'
                           }`}
                         >
-                          <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${n.bg}`}>
+                          <div
+                            className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${n.bg}`}
+                          >
                             <BellRing size={14} className={n.color} />
                           </div>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-center gap-2">
-                              <p className="text-sm font-semibold text-[var(--text)] truncate">{n.title}</p>
+                              <p className="text-sm font-semibold text-[var(--text)] truncate">
+                                {n.title}
+                              </p>
                               {!n.read && (
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] shrink-0" />
                               )}
                             </div>
-                            <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">{n.message}</p>
-                            <p className="text-[10px] text-[var(--text-muted)] mt-1 font-medium">{n.time}</p>
+                            <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">
+                              {n.message}
+                            </p>
+                            <p className="text-[10px] text-[var(--text-muted)] mt-1 font-medium">
+                              {n.time}
+                            </p>
                           </div>
                         </div>
                       ))}
@@ -308,11 +327,9 @@ export default function SettingsScreen() {
                 <LogOut size={18} />
               </span>
               <span className="text-sm font-semibold flex-1 text-left">
-                {loggingOut ? "Signing out..." : "Sign Out"}
+                {loggingOut ? 'Signing out...' : 'Sign Out'}
               </span>
-              {loggingOut && (
-                <span className="w-4 h-4 border-2 border-[var(--destructive)]/30 border-t-[var(--destructive)] rounded-full animate-spin shrink-0" />
-              )}
+              {loggingOut && <InlineLoader size={16} />}
             </button>
           </div>
         </section>

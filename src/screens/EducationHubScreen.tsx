@@ -1,48 +1,110 @@
-﻿import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { 
-  BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
-  Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
-  Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
-  Bookmark, Download, History, ChevronLeft, Bot, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  Trash2, Folder, Plus, FileSignature, RotateCcw, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
-  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, GraduationCap, Stethoscope
-} from 'lucide-react';
-import Markdown from 'react-markdown';
-import html2canvas from 'html2canvas';
-import { jsPDF } from 'jspdf';
-import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, type EducationSubModule, getModuleUnits, getSubModuleUnits, findSubModule } from '../data/educationHubData';
+﻿import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
+import {
+  BookOpen,
+  ChevronRight,
+  Search,
+  Activity,
+  Accessibility,
+  Dna,
+  FlaskConical,
+  Droplets,
+  Flame,
+  Beaker,
+  HeartPulse,
+  Bug,
+  Skull,
+  Heart,
+  Award,
+  FileText,
+  Briefcase,
+  HelpCircle,
+  Layers,
+  Headphones,
+  FileArchive,
+  Calendar,
+  BrainCircuit,
+  Bookmark,
+  Download,
+  History,
+  ChevronLeft,
+  Bot,
+  List,
+  Sparkles,
+  CheckCircle2,
+  Clock,
+  Database,
+  Mic,
+  Trash2,
+  Folder,
+  Plus,
+  FileSignature,
+  RotateCcw,
+  AlertCircle,
+  HelpCircle as QuestionIcon,
+  X,
+  Printer,
+  Star,
+  ArrowUpRight,
+  Flag,
+  Compass,
+  FileDown,
+  MoreHorizontal,
+  ArrowLeft,
+  ArrowRight,
+  GraduationCap,
+  Stethoscope,
+} from 'lucide-react'
+import Markdown from 'react-markdown'
+import html2canvas from 'html2canvas'
+import { jsPDF } from 'jspdf'
+import {
+  EDUCATION_MODULES,
+  type EducationModule,
+  type EducationModuleUnit,
+  type EducationSubModule,
+  getModuleUnits,
+  getSubModuleUnits,
+  findSubModule,
+} from '../data/educationHubData'
 
-import { useAuth } from '../contexts/AuthContext';
-import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
-from '../services/education.service';
-import { AIContentService } from '../services/aiContent.service';
-import exportService from '../services/export.service';
-import CurriculumGraph from '../components/CurriculumGraph';
-import { getResourcesForUnit, getResourcesForModule } from '../data/unitToLibraryMapping';
-import { getStaticContent } from '../data/unitStaticContent';
-import { type DigitalLibraryResource } from '../data/digitalLibraryData';
-import { type DiseaseNote } from '../data/diseaseNotes';
-import { DiseaseNoteService } from '../services/diseaseNote.service';
+import { useAuth } from '../contexts/AuthContext'
+import {
+  EducationService,
+  CustomUnit,
+  SubFolder,
+  SavedFlashcard,
+  SavedQuiz,
+} from '../services/education.service'
+import { AIContentService } from '../services/aiContent.service'
+import exportService from '../services/export.service'
+import CurriculumGraph from '../components/CurriculumGraph'
+import { getResourcesForUnit, getResourcesForModule } from '../data/unitToLibraryMapping'
+import { getStaticContent } from '../data/unitStaticContent'
+import { type DigitalLibraryResource } from '../data/digitalLibraryData'
+import { type DiseaseNote } from '../data/diseaseNotes'
+import { DiseaseNoteService } from '../services/diseaseNote.service'
+import { useMinimumLoading } from '../hooks/useMinimumLoading'
+import { PageLoader, InlineLoader } from '../components/PageLoader'
 
 function DownloadButton({ content, filename }: { content: string; filename: string }) {
-  const [downloading, setDownloading] = useState(false);
+  const [downloading, setDownloading] = useState(false)
 
   const handleDownload = async (format: 'pdf' | 'txt' | 'md') => {
-    setDownloading(true);
+    setDownloading(true)
     try {
       await exportService.exportAndDownload({
         title: filename.replace(/\.[^/.]+$/, ''),
         content,
         format,
         filename: filename,
-      });
+      })
     } catch (err) {
-      console.error('Download failed:', err);
+      console.error('Download failed:', err)
     } finally {
-      setDownloading(false);
+      setDownloading(false)
     }
-  };
+  }
 
   return (
     <div className="flex items-center gap-1">
@@ -65,310 +127,341 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
         </button>
       </div>
     </div>
-  );
+  )
 }
 
 export default function EducationHubScreen() {
-  const navigate = useNavigate();
-  const { moduleId, unitId } = useParams<{ moduleId: string; unitId: string }>();
-  const { userData } = useAuth();
-  
-  const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
-  const [selectedSubModule, setSelectedSubModule] = useState<EducationSubModule | null>(null);
-  const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
-  const [searchQuery, setSearchQuery] = useState('');
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const scrollPositions = useRef<{ units: number }>({ units: 0 });
-  const isAdmin = userData?.role === 'admin';
-  const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid');
-  
-  // Custom unit management states
-  const [customUnits, setCustomUnits] = useState<CustomUnit[]>([]);
+  const navigate = useNavigate()
+  const { moduleId, unitId } = useParams<{ moduleId: string; unitId: string }>()
+  const { userData } = useAuth()
 
+  const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null)
+  const [selectedSubModule, setSelectedSubModule] = useState<EducationSubModule | null>(null)
+  const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const scrollPositions = useRef<{ units: number }>({ units: 0 })
+  const isAdmin = userData?.role === 'admin'
+  const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid')
+
+  // Custom unit management states
+  const [customUnits, setCustomUnits] = useState<CustomUnit[]>([])
 
   // Favorite state management
   const [favoriteModules, setFavoriteModules] = useState<string[]>(() => {
     try {
-      return JSON.parse(localStorage.getItem(`fav_modules_${userData?.id || 'guest'}`) || '[]');
+      return JSON.parse(localStorage.getItem(`fav_modules_${userData?.id || 'guest'}`) || '[]')
     } catch {
-      return [];
+      return []
     }
-  });
+  })
 
   const [favoriteUnits, setFavoriteUnits] = useState<string[]>(() => {
     try {
-      return JSON.parse(localStorage.getItem(`fav_units_${userData?.id || 'guest'}`) || '[]');
+      return JSON.parse(localStorage.getItem(`fav_units_${userData?.id || 'guest'}`) || '[]')
     } catch {
-      return [];
+      return []
     }
-  });
+  })
 
   // Sync favorites when user loads or switches
   useEffect(() => {
     if (userData?.id) {
       try {
-        const savedMods = localStorage.getItem(`fav_modules_${userData.id}`);
-        if (savedMods) setFavoriteModules(JSON.parse(savedMods));
-        const savedUnits = localStorage.getItem(`fav_units_${userData.id}`);
-        if (savedUnits) setFavoriteUnits(JSON.parse(savedUnits));
+        const savedMods = localStorage.getItem(`fav_modules_${userData.id}`)
+        if (savedMods) setFavoriteModules(JSON.parse(savedMods))
+        const savedUnits = localStorage.getItem(`fav_units_${userData.id}`)
+        if (savedUnits) setFavoriteUnits(JSON.parse(savedUnits))
       } catch (err) {
-        console.error('Error loading favorites from cache:', err);
+        console.error('Error loading favorites from cache:', err)
       }
     }
-  }, [userData]);
+  }, [userData])
 
   const toggleModuleFavorite = (modId: string, e: React.MouseEvent) => {
-    e.stopPropagation();
+    e.stopPropagation()
     const next = favoriteModules.includes(modId)
-      ? favoriteModules.filter(id => id !== modId)
-      : [...favoriteModules, modId];
-    setFavoriteModules(next);
-    localStorage.setItem(`fav_modules_${userData?.id || 'guest'}`, JSON.stringify(next));
-  };
+      ? favoriteModules.filter((id) => id !== modId)
+      : [...favoriteModules, modId]
+    setFavoriteModules(next)
+    localStorage.setItem(`fav_modules_${userData?.id || 'guest'}`, JSON.stringify(next))
+  }
 
   const toggleUnitFavorite = (unitId: string, e: React.MouseEvent) => {
-    e.stopPropagation();
+    e.stopPropagation()
     const next = favoriteUnits.includes(unitId)
-      ? favoriteUnits.filter(id => id !== unitId)
-      : [...favoriteUnits, unitId];
-    setFavoriteUnits(next);
-    localStorage.setItem(`fav_units_${userData?.id || 'guest'}`, JSON.stringify(next));
-  };
+      ? favoriteUnits.filter((id) => id !== unitId)
+      : [...favoriteUnits, unitId]
+    setFavoriteUnits(next)
+    localStorage.setItem(`fav_units_${userData?.id || 'guest'}`, JSON.stringify(next))
+  }
 
   // Fetch custom sub-folders/units from Firestore
   const fetchCustomUnits = useCallback(async () => {
-    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
+    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id
     if (userData && fetchModuleId) {
       try {
-        const units = await EducationService.getCustomUnits(userData.id, fetchModuleId);
-        setCustomUnits(units);
+        const units = await EducationService.getCustomUnits(userData.id, fetchModuleId)
+        setCustomUnits(units)
       } catch (err) {
-        console.error('Error fetching custom units:', err);
+        console.error('Error fetching custom units:', err)
       }
     }
-  }, [selectedSubModule, selectedModule, userData]);
+  }, [selectedSubModule, selectedModule, userData])
 
   useEffect(() => {
-    fetchCustomUnits();
-  }, [fetchCustomUnits]);
+    fetchCustomUnits()
+  }, [fetchCustomUnits])
 
   // Sync state from URL params (deep-link, refresh, browser back/forward)
   useEffect(() => {
     if (!moduleId) {
-      if (selectedModule) setSelectedModule(null);
-      if (selectedSubModule) setSelectedSubModule(null);
-      if (selectedUnit) setSelectedUnit(null);
-      return;
+      if (selectedModule) setSelectedModule(null)
+      if (selectedSubModule) setSelectedSubModule(null)
+      if (selectedUnit) setSelectedUnit(null)
+      return
     }
     // Check if moduleId is a top-level module
-    const mod = EDUCATION_MODULES.find(m => m.id === moduleId) || null;
+    const mod = EDUCATION_MODULES.find((m) => m.id === moduleId) || null
     // Check if moduleId is a sub-module (e.g. board_exam under exam)
-    const subMatch = !mod ? findSubModule(moduleId) : undefined;
-    
+    const subMatch = !mod ? findSubModule(moduleId) : undefined
+
     if (mod) {
       if (mod.external) {
         // External modules open their dedicated screen directly (deep-link guard)
-        navigate(mod.id === 'cases' ? '/cases' : mod.id === 'assistant' ? '/assistant' : `/knowledge/${mod.id}`, { replace: true });
-        return;
+        navigate(
+          mod.id === 'cases'
+            ? '/cases'
+            : mod.id === 'assistant'
+              ? '/assistant'
+              : `/knowledge/${mod.id}`,
+          { replace: true },
+        )
+        return
       }
-      if (mod.id !== selectedModule?.id) setSelectedModule(mod);
-      if (selectedSubModule) setSelectedSubModule(null);
+      if (mod.id !== selectedModule?.id) setSelectedModule(mod)
+      if (selectedSubModule) setSelectedSubModule(null)
     } else if (subMatch) {
       // Navigate to a sub-module: set parent as selectedModule, sub-module as selectedSubModule
-      if (subMatch.module.id !== selectedModule?.id) setSelectedModule(subMatch.module);
-      if (subMatch.subModule.id !== selectedSubModule?.id) setSelectedSubModule(subMatch.subModule);
+      if (subMatch.module.id !== selectedModule?.id) setSelectedModule(subMatch.module)
+      if (subMatch.subModule.id !== selectedSubModule?.id) setSelectedSubModule(subMatch.subModule)
     } else {
-      if (selectedModule) setSelectedModule(null);
-      if (selectedSubModule) setSelectedSubModule(null);
+      if (selectedModule) setSelectedModule(null)
+      if (selectedSubModule) setSelectedSubModule(null)
     }
-    
-    if (!mod && !subMatch) return;
-    
+
+    if (!mod && !subMatch) return
+
     if (!unitId) {
-      if (selectedUnit) setSelectedUnit(null);
-      return;
+      if (selectedUnit) setSelectedUnit(null)
+      return
     }
-    
+
     // Resolve units from the appropriate level
     const units = selectedSubModule
       ? [
-          ...getSubModuleUnits(selectedModule!.id, selectedSubModule.id).map(u => ({ ...u, isCustom: false })),
-          ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
+          ...getSubModuleUnits(selectedModule!.id, selectedSubModule.id).map((u) => ({
+            ...u,
+            isCustom: false,
+          })),
+          ...customUnits.map((cu) => ({ ...cu, isCustom: true }) as unknown as EducationModuleUnit),
         ]
       : [
-          ...getModuleUnits((mod || subMatch!.module).id).map(u => ({ ...u, isCustom: false })),
-          ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
-        ];
-    const unit = units.find(u => u.id === unitId) || null;
+          ...getModuleUnits((mod || subMatch!.module).id).map((u) => ({ ...u, isCustom: false })),
+          ...customUnits.map((cu) => ({ ...cu, isCustom: true }) as unknown as EducationModuleUnit),
+        ]
+    const unit = units.find((u) => u.id === unitId) || null
     if (unit && unit.id !== selectedUnit?.id) {
-      setSelectedUnit(unit);
+      setSelectedUnit(unit)
     }
-  }, [moduleId, unitId, customUnits, navigate, selectedModule, selectedSubModule, selectedUnit]);
+  }, [moduleId, unitId, customUnits, navigate, selectedModule, selectedSubModule, selectedUnit])
 
   const handleModuleClick = (mod: EducationModule) => {
-  if (mod.id === 'cases') {
-    navigate('/cases');
-    return;
+    if (mod.id === 'cases') {
+      navigate('/cases')
+      return
+    }
+    if (mod.id === 'assistant') {
+      navigate('/assistant')
+      return
+    }
+    if (mod.id === 'drug_info') {
+      navigate('/drugs')
+      return
+    }
+    setSelectedModule(mod)
+    setSelectedSubModule(null)
+    setSelectedUnit(null)
+    navigate(`/knowledge/${mod.id}`)
   }
-  if (mod.id === 'assistant') {
-    navigate('/assistant');
-    return;
-  }
-  if (mod.id === 'drug_info') {
-    navigate('/drugs');
-    return;
-  }
-    setSelectedModule(mod);
-    setSelectedSubModule(null);
-    setSelectedUnit(null);
-    navigate(`/knowledge/${mod.id}`);
-  };
 
   // Handle sub-module click (Level 2 → Level 3)
   const handleSubModuleClick = (subMod: EducationModuleUnit) => {
     // Exam sub-modules open their dedicated screens
     if (subMod.id === 'board_exam') {
-      navigate('/knowledge/exam/board-exam');
-      return;
+      navigate('/knowledge/exam/board-exam')
+      return
     }
     if (subMod.id === 'exam_prep') {
-      navigate('/knowledge/exam/prep');
-      return;
+      navigate('/knowledge/exam/prep')
+      return
     }
     // Sub-modules are returned by getModuleUnits with isSubModule flag
     // Navigate to /knowledge/{subModuleId} — the URL sync will detect it's a sub-module
-    setSelectedUnit(null);
-    navigate(`/knowledge/${subMod.id}`);
-  };
+    setSelectedUnit(null)
+    navigate(`/knowledge/${subMod.id}`)
+  }
 
   const handleUnitClick = (unit: EducationModuleUnit) => {
     if (scrollContainerRef.current) {
-      scrollPositions.current.units = scrollContainerRef.current.scrollTop;
+      scrollPositions.current.units = scrollContainerRef.current.scrollTop
     }
     if (selectedModule?.id === 'online_books') {
-      navigate(`/library?module=${selectedModule.id}&unit=${unit.id}`);
-      return;
+      navigate(`/library?module=${selectedModule.id}&unit=${unit.id}`)
+      return
     }
-    setSelectedUnit(unit);
+    setSelectedUnit(unit)
     // Use sub-module ID in URL when inside a sub-module for clean deep-linking
-    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
-    if (routeBase) navigate(`/knowledge/${routeBase}/${unit.id}`);
-  };
+    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id
+    if (routeBase) navigate(`/knowledge/${routeBase}/${unit.id}`)
+  }
 
   const handleBackToModules = () => {
-    setSelectedModule(null);
-    setSelectedSubModule(null);
-    setSelectedUnit(null);
-    navigate('/knowledge');
-  };
+    setSelectedModule(null)
+    setSelectedSubModule(null)
+    setSelectedUnit(null)
+    navigate('/knowledge')
+  }
 
   const handleBackToSubModules = () => {
-    setSelectedSubModule(null);
-    setSelectedUnit(null);
-    if (selectedModule) navigate(`/knowledge/${selectedModule.id}`);
+    setSelectedSubModule(null)
+    setSelectedUnit(null)
+    if (selectedModule) navigate(`/knowledge/${selectedModule.id}`)
     setTimeout(() => {
       if (scrollContainerRef.current && scrollPositions.current.units > 0) {
-        scrollContainerRef.current.scrollTop = scrollPositions.current.units;
+        scrollContainerRef.current.scrollTop = scrollPositions.current.units
       }
-    }, 0);
-  };
+    }, 0)
+  }
 
   const handleBackToUnits = () => {
-    setSelectedUnit(null);
+    setSelectedUnit(null)
     // Navigate back to the sub-module or module level
-    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
-    if (routeBase) navigate(`/knowledge/${routeBase}`);
+    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id
+    if (routeBase) navigate(`/knowledge/${routeBase}`)
     setTimeout(() => {
       if (scrollContainerRef.current && scrollPositions.current.units > 0) {
-        scrollContainerRef.current.scrollTop = scrollPositions.current.units;
+        scrollContainerRef.current.scrollTop = scrollPositions.current.units
       }
-    }, 0);
-  };
+    }, 0)
+  }
 
   const handleDeleteUnit = async (unitId: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
-    if (!userData || !fetchModuleId) return;
-    
-    if (window.confirm('Are you sure you want to delete this custom folder and all its associated materials? This action is irreversible.')) {
+    e.stopPropagation()
+    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id
+    if (!userData || !fetchModuleId) return
+
+    if (
+      window.confirm(
+        'Are you sure you want to delete this custom folder and all its associated materials? This action is irreversible.',
+      )
+    ) {
       try {
-        await EducationService.deleteCustomUnit(userData.id, fetchModuleId, unitId);
-        fetchCustomUnits();
+        await EducationService.deleteCustomUnit(userData.id, fetchModuleId, unitId)
+        fetchCustomUnits()
       } catch (err) {
-        console.error('Error deleting custom unit:', err);
+        console.error('Error deleting custom unit:', err)
       }
     }
-  };
+  }
 
   // Combine static and custom units, search and sort by favorites
-  const rawUnits = selectedSubModule && selectedModule
-    ? [
-        ...getSubModuleUnits(selectedModule.id, selectedSubModule.id).map(u => ({ ...u, isCustom: false })),
-        ...customUnits.map(cu => ({ ...cu, isCustom: true }))
-      ]
-    : selectedModule
+  const rawUnits =
+    selectedSubModule && selectedModule
       ? [
-          ...getModuleUnits(selectedModule.id).map(u => ({ ...u, isCustom: false })),
-          ...customUnits.map(cu => ({ ...cu, isCustom: true }))
+          ...getSubModuleUnits(selectedModule.id, selectedSubModule.id).map((u) => ({
+            ...u,
+            isCustom: false,
+          })),
+          ...customUnits.map((cu) => ({ ...cu, isCustom: true })),
         ]
-      : [];
+      : selectedModule
+        ? [
+            ...getModuleUnits(selectedModule.id).map((u) => ({ ...u, isCustom: false })),
+            ...customUnits.map((cu) => ({ ...cu, isCustom: true })),
+          ]
+        : []
 
-  const filteredUnits = searchQuery 
-    ? rawUnits.filter(u => 
-        u.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-        (u.description || '').toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredUnits = searchQuery
+    ? rawUnits.filter(
+        (u) =>
+          u.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (u.description || '').toLowerCase().includes(searchQuery.toLowerCase()),
       )
-    : rawUnits;
+    : rawUnits
 
   const sortedUnits = [...filteredUnits].sort((a, b) => {
-    const aFav = favoriteUnits.includes(a.id);
-    const bFav = favoriteUnits.includes(b.id);
-    if (aFav && !bFav) return -1;
-    if (!aFav && bFav) return 1;
-    return a.title.localeCompare(b.title);
-  });
+    const aFav = favoriteUnits.includes(a.id)
+    const bFav = favoriteUnits.includes(b.id)
+    if (aFav && !bFav) return -1
+    if (!aFav && bFav) return 1
+    return a.title.localeCompare(b.title)
+  })
 
   // Filter modules by search and Year level
-  const filteredMods = EDUCATION_MODULES.filter(m => {
-    if (!searchQuery) return true;
-    const q = searchQuery.toLowerCase();
+  const filteredMods = EDUCATION_MODULES.filter((m) => {
+    if (!searchQuery) return true
+    const q = searchQuery.toLowerCase()
     // Also search sub-module titles and their units
-    const subModuleMatch = m.subModules?.some(sm =>
-      sm.title.toLowerCase().includes(q) ||
-      sm.description.toLowerCase().includes(q) ||
-      sm.units?.some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q))
-    );
-    return m.title.toLowerCase().includes(q) ||
-           m.description.toLowerCase().includes(q) ||
-           subModuleMatch ||
-           getModuleUnits(m.id).some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q));
-  });
+    const subModuleMatch = m.subModules?.some(
+      (sm) =>
+        sm.title.toLowerCase().includes(q) ||
+        sm.description.toLowerCase().includes(q) ||
+        sm.units?.some(
+          (u) =>
+            u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q),
+        ),
+    )
+    return (
+      m.title.toLowerCase().includes(q) ||
+      m.description.toLowerCase().includes(q) ||
+      subModuleMatch ||
+      getModuleUnits(m.id).some(
+        (u) => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q),
+      )
+    )
+  })
 
   const sortedModules = [...filteredMods].sort((a, b) => {
-    const aFav = favoriteModules.includes(a.id);
-    const bFav = favoriteModules.includes(b.id);
-    
-    if (aFav && !bFav) return -1;
-    if (!aFav && bFav) return 1;
-    
-    return a.title.localeCompare(b.title);
-  });
+    const aFav = favoriteModules.includes(a.id)
+    const bFav = favoriteModules.includes(b.id)
+
+    if (aFav && !bFav) return -1
+    if (!aFav && bFav) return 1
+
+    return a.title.localeCompare(b.title)
+  })
 
   return (
     <div ref={scrollContainerRef} className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
-        
         {/* Header Section */}
         {selectedModule ? (
           <div className="flex items-center gap-3">
-            <button onClick={selectedSubModule ? handleBackToSubModules : handleBackToModules} className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer">
+            <button
+              onClick={selectedSubModule ? handleBackToSubModules : handleBackToModules}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer"
+            >
               <ChevronLeft size={14} />
               Back
             </button>
             <span className="text-sm text-[var(--text-muted)]">
               {selectedUnit ? (
                 <>
-                  <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">
+                  <button
+                    onClick={handleBackToUnits}
+                    className="hover:text-[var(--primary)] transition-colors"
+                  >
                     {selectedSubModule ? selectedSubModule.title : selectedModule.title}
                   </button>
                   <ChevronRight size={14} className="inline mx-1" />
@@ -376,9 +469,16 @@ export default function EducationHubScreen() {
                 </>
               ) : selectedSubModule ? (
                 <>
-                  <button onClick={handleBackToSubModules} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
+                  <button
+                    onClick={handleBackToSubModules}
+                    className="hover:text-[var(--primary)] transition-colors"
+                  >
+                    {selectedModule.title}
+                  </button>
                   <ChevronRight size={14} className="inline mx-1" />
-                  <span className="text-[var(--text)] font-semibold">{selectedSubModule.title}</span>
+                  <span className="text-[var(--text)] font-semibold">
+                    {selectedSubModule.title}
+                  </span>
                 </>
               ) : (
                 <span className="text-[var(--text)] font-semibold">{selectedModule.title}</span>
@@ -386,53 +486,68 @@ export default function EducationHubScreen() {
             </span>
           </div>
         ) : (
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
-              <BookOpen size={16} /> Education Hub
-            </div>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
-              Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Learning Platform</span>
-            </h1>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
-            {/* Grid vs Graph Toggles — admin only */}
-            {isAdmin && !selectedModule && (
-              <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'grid' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
-                >
-                  <Layers size={14} /> Grid View
-                </button>
-                <button
-                  onClick={() => setViewMode('graph')}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'graph' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
-                >
-                  <Compass size={14} /> Curriculum Map
-                </button>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
+                <BookOpen size={16} /> Education Hub
               </div>
-            )}
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
+                Clinova{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">
+                  Learning Platform
+                </span>
+              </h1>
+            </div>
 
-            <div className="relative w-full md:w-80">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
-              <input
-                type="text"
-                placeholder={selectedSubModule ? "Search units..." : selectedModule ? "Search sub-modules & units..." : "Search modules & units..."}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-              />
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+              {/* Grid vs Graph Toggles — admin only */}
+              {isAdmin && !selectedModule && (
+                <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'grid' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                  >
+                    <Layers size={14} /> Grid View
+                  </button>
+                  <button
+                    onClick={() => setViewMode('graph')}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'graph' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                  >
+                    <Compass size={14} /> Curriculum Map
+                  </button>
+                </div>
+              )}
+
+              <div className="relative w-full md:w-80">
+                <Search
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+                  size={18}
+                />
+                <input
+                  type="text"
+                  placeholder={
+                    selectedSubModule
+                      ? 'Search units...'
+                      : selectedModule
+                        ? 'Search sub-modules & units...'
+                        : 'Search modules & units...'
+                  }
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+                />
+              </div>
             </div>
           </div>
-        </div>
         )}
 
         {/* Breadcrumb Navigation — only at top level; drill-in view has its own header/breadcrumb */}
         {!selectedModule && (
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">
-            <button onClick={handleBackToModules} className="text-[var(--text)] font-bold flex items-center gap-1">
+            <button
+              onClick={handleBackToModules}
+              className="text-[var(--text)] font-bold flex items-center gap-1"
+            >
               Education Hub
             </button>
           </div>
@@ -440,7 +555,6 @@ export default function EducationHubScreen() {
 
         {/* Content Area */}
         <div className="pb-20 sm:pb-24">
-          
           {/* Level 1: Modules — CurriculumGraph admin-only */}
           {isAdmin && !selectedModule && viewMode === 'graph' && (
             <div className="animate-in fade-in duration-300">
@@ -453,10 +567,10 @@ export default function EducationHubScreen() {
               {sortedModules.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                   {sortedModules.map((mod) => (
-                    <ModuleCard 
-                      key={mod.id} 
-                      module={mod} 
-                      onClick={() => handleModuleClick(mod)} 
+                    <ModuleCard
+                      key={mod.id}
+                      module={mod}
+                      onClick={() => handleModuleClick(mod)}
                       isFavorite={favoriteModules.includes(mod.id)}
                       onToggleFavorite={(e) => toggleModuleFavorite(mod.id, e)}
                     />
@@ -464,7 +578,9 @@ export default function EducationHubScreen() {
                 </div>
               ) : (
                 <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
-                  <p className="text-sm text-[var(--text-muted)] italic font-semibold">No subjects match your active search or filters.</p>
+                  <p className="text-sm text-[var(--text-muted)] italic font-semibold">
+                    No subjects match your active search or filters.
+                  </p>
                 </div>
               )}
             </div>
@@ -473,10 +589,12 @@ export default function EducationHubScreen() {
           {/* Level 2: Sub-Modules or Units */}
           {selectedModule && !selectedUnit && (
             <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
-              
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-                  <ModuleIcon name={selectedSubModule?.icon || selectedModule.icon} className={`text-${selectedSubModule?.color || selectedModule.color}-500`} /> 
+                  <ModuleIcon
+                    name={selectedSubModule?.icon || selectedModule.icon}
+                    className={`text-${selectedSubModule?.color || selectedModule.color}-500`}
+                  />
                   {selectedSubModule ? selectedSubModule.title : selectedModule.title}
                 </h2>
               </div>
@@ -484,34 +602,53 @@ export default function EducationHubScreen() {
               {sortedUnits.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {sortedUnits.map((unit) => (
-                    <div 
+                    <div
                       key={unit.id}
-                      onClick={() => (unit as any).isSubModule ? handleSubModuleClick(unit) : handleUnitClick(unit)}
+                      onClick={() =>
+                        (unit as any).isSubModule
+                          ? handleSubModuleClick(unit)
+                          : handleUnitClick(unit)
+                      }
                       className={`relative bg-[var(--surface)] border rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex justify-between items-start ${(unit as any).isCustom ? 'border-purple-500/30 bg-purple-500/[0.01] hover:border-purple-500' : (unit as any).isSubModule ? 'border-[var(--border)] hover:border-[var(--primary)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-dim)]' : 'border-[var(--border)] hover:border-[var(--primary)]'}`}
                     >
                       <div className="flex-1 min-w-0 pr-4">
                         <div className="flex items-center gap-2 mb-1.5 flex-wrap">
                           {(unit as any).isSubModule ? (
-                            <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-${(unit as any).color || 'primary'}-500/20 to-${(unit as any).color || 'primary'}-500/5`}>
-                              <ModuleIcon name={(unit as any).icon} className={`text-${(unit as any).color || 'primary'}-500`} />
+                            <div
+                              className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-${(unit as any).color || 'primary'}-500/20 to-${(unit as any).color || 'primary'}-500/5`}
+                            >
+                              <ModuleIcon
+                                name={(unit as any).icon}
+                                className={`text-${(unit as any).color || 'primary'}-500`}
+                              />
                             </div>
                           ) : (
-                          <button
-                            onClick={(e) => toggleUnitFavorite(unit.id, e)}
-                            className={`p-1 hover:bg-[var(--surface-dim)] rounded-lg transition-all shrink-0 ${favoriteUnits.includes(unit.id) ? 'text-amber-500 fill-amber-500' : 'text-[var(--text-muted)] hover:text-amber-500'}`}
-                            title={favoriteUnits.includes(unit.id) ? 'Remove from favorites' : 'Mark as favorite'}
-                          >
-                            <Star size={14} className="transition-transform hover:scale-110" />
-                          </button>
+                            <button
+                              onClick={(e) => toggleUnitFavorite(unit.id, e)}
+                              className={`p-1 hover:bg-[var(--surface-dim)] rounded-lg transition-all shrink-0 ${favoriteUnits.includes(unit.id) ? 'text-amber-500 fill-amber-500' : 'text-[var(--text-muted)] hover:text-amber-500'}`}
+                              title={
+                                favoriteUnits.includes(unit.id)
+                                  ? 'Remove from favorites'
+                                  : 'Mark as favorite'
+                              }
+                            >
+                              <Star size={14} className="transition-transform hover:scale-110" />
+                            </button>
                           )}
-                          <h3 className={`font-bold text-base whitespace-normal break-words transition-colors ${(unit as any).isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
+                          <h3
+                            className={`font-bold text-base whitespace-normal break-words transition-colors ${(unit as any).isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}
+                          >
+                            {unit.title}
+                          </h3>
                           {(unit as any).isCustom && (
                             <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 flex items-center gap-1 shrink-0">
                               <Sparkles size={10} /> Custom Folder
                             </span>
                           )}
                         </div>
-                        <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed mb-3">{unit.description || 'No description provided.'}</p>
+                        <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed mb-3">
+                          {unit.description || 'No description provided.'}
+                        </p>
                         <div className="flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
                           <Clock size={14} />
                           <span>{unit.estimatedHours} Hours Estimated</span>
@@ -522,9 +659,12 @@ export default function EducationHubScreen() {
                           </div>
                         )}
                       </div>
-                      
+
                       <div className="flex flex-col items-end gap-4 shrink-0">
-                        <ChevronRight size={18} className="text-[var(--border)] group-hover:translate-x-1 transition-all" />
+                        <ChevronRight
+                          size={18}
+                          className="text-[var(--border)] group-hover:translate-x-1 transition-all"
+                        />
                         {unit.isCustom && (
                           <button
                             onClick={(e) => handleDeleteUnit(unit.id, e)}
@@ -553,39 +693,69 @@ export default function EducationHubScreen() {
           )}
 
           {/* Level 3: Learning Workspace / Clean Disease View */}
-          {selectedModule && selectedUnit && (
-            (selectedSubModule?.id === 'clinical_pharm' || selectedModule.id === 'clinical_pharm')
-              ? <CleanDiseaseView unit={selectedUnit} onBack={handleBackToUnits} />
-              : <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
-          )}
-          
+          {selectedModule &&
+            selectedUnit &&
+            (selectedSubModule?.id === 'clinical_pharm' ||
+            selectedModule.id === 'clinical_pharm' ? (
+              <CleanDiseaseView unit={selectedUnit} onBack={handleBackToUnits} />
+            ) : (
+              <LearningWorkspace
+                unit={selectedUnit}
+                module={selectedModule}
+                onBack={handleBackToUnits}
+              />
+            ))}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-function ModuleIcon({ name, className }: { name?: string, className?: string }) {
+function ModuleIcon({ name, className }: { name?: string; className?: string }) {
   const icons: Record<string, any> = {
-    Activity, Accessibility, Dna, FlaskConical, Droplets, Flame, Beaker, HeartPulse,
-    BookOpen, Bug, Skull, Heart, Award, FileText, Briefcase, HelpCircle, Layers,
-    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic, GraduationCap,
-    Bot, Stethoscope
-  };
-  const Icon = name ? icons[name] || BookOpen : BookOpen;
-  return <Icon className={className} size={24} />;
+    Activity,
+    Accessibility,
+    Dna,
+    FlaskConical,
+    Droplets,
+    Flame,
+    Beaker,
+    HeartPulse,
+    BookOpen,
+    Bug,
+    Skull,
+    Heart,
+    Award,
+    FileText,
+    Briefcase,
+    HelpCircle,
+    Layers,
+    Headphones,
+    FileArchive,
+    Calendar,
+    BrainCircuit,
+    Bookmark,
+    Download,
+    History,
+    Mic,
+    GraduationCap,
+    Bot,
+    Stethoscope,
+  }
+  const Icon = name ? icons[name] || BookOpen : BookOpen
+  return <Icon className={className} size={24} />
 }
 
-function ModuleCard({ 
-  module, 
-  onClick, 
-  isFavorite, 
-  onToggleFavorite 
-}: { 
-  module: EducationModule, 
-  onClick: () => void, 
-  isFavorite?: boolean, 
-  onToggleFavorite?: (e: React.MouseEvent) => void 
+function ModuleCard({
+  module,
+  onClick,
+  isFavorite,
+  onToggleFavorite,
+}: {
+  module: EducationModule
+  onClick: () => void
+  isFavorite?: boolean
+  onToggleFavorite?: (e: React.MouseEvent) => void
 }) {
   const colorMap: Record<string, string> = {
     rose: 'from-rose-500/10 to-rose-500/20 border-rose-200/40 text-rose-700',
@@ -603,12 +773,14 @@ function ModuleCard({
     purple: 'from-purple-500/10 to-purple-500/20 border-purple-200/40 text-purple-700',
     pink: 'from-pink-500/10 to-pink-500/20 border-pink-200/40 text-pink-700',
     slate: 'from-slate-500/10 to-slate-500/20 border-slate-200/40 text-slate-700',
-  };
+  }
 
-  const colorClass = module.color ? colorMap[module.color] || colorMap['indigo'] : colorMap['indigo'];
+  const colorClass = module.color
+    ? colorMap[module.color] || colorMap['indigo']
+    : colorMap['indigo']
 
   return (
-    <div 
+    <div
       onClick={onClick}
       className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex flex-col h-full relative"
     >
@@ -622,17 +794,25 @@ function ModuleCard({
         </button>
       )}
       <div className="flex items-center gap-4 mb-3 pr-8">
-        <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br ${colorClass}`}>
+        <div
+          className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br ${colorClass}`}
+        >
           <ModuleIcon name={module.icon} />
         </div>
         <div>
-          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors whitespace-normal break-words">{module.title}</h3>
-          <p className="text-xs text-[var(--text-muted)] mt-0.5">{module.external ? 'Opens dedicated module screen' : `${getModuleUnits(module.id).length} Standard Units`}</p>
+          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors whitespace-normal break-words">
+            {module.title}
+          </h3>
+          <p className="text-xs text-[var(--text-muted)] mt-0.5">
+            {module.external
+              ? 'Opens dedicated module screen'
+              : `${getModuleUnits(module.id).length} Standard Units`}
+          </p>
         </div>
       </div>
       <p className="text-xs text-[var(--text-muted)] line-clamp-2 mt-auto">{module.description}</p>
     </div>
-  );
+  )
 }
 
 // ==========================================
@@ -661,13 +841,17 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
           setLoading(false)
         }
       })
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+    }
   }, [unit.id])
 
-  if (loading) {
+  const showLoading = useMinimumLoading(loading)
+
+  if (showLoading) {
     return (
       <div className="py-12 text-center">
-        <div className="w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin mx-auto" />
+        <PageLoader title="Loading Diseases" subtitle="Fetching clinical content..." />
       </div>
     )
   }
@@ -685,25 +869,33 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
     )
   }
 
-  const filtered = notes.filter((n) =>
-    !searchQuery.trim() ||
-    n.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) ||
-    (n.specialty ?? '').toLowerCase().includes(searchQuery.trim().toLowerCase())
+  const filtered = notes.filter(
+    (n) =>
+      !searchQuery.trim() ||
+      n.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) ||
+      (n.specialty ?? '').toLowerCase().includes(searchQuery.trim().toLowerCase()),
   )
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
       <div className="flex items-center gap-3 mb-6">
-        <button onClick={onBack} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
+        <button
+          onClick={onBack}
+          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors"
+        >
           <ChevronLeft size={18} className="text-[var(--text)]" />
         </button>
         <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-          <FileText size={24} className="text-amber-500" /> {unit.title} <span className="text-[var(--text-muted)] text-base font-semibold">Notes</span>
+          <FileText size={24} className="text-amber-500" /> {unit.title}{' '}
+          <span className="text-[var(--text-muted)] text-base font-semibold">Notes</span>
         </h2>
       </div>
 
       <div className="relative">
-        <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+        <Search
+          size={18}
+          className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+        />
         <input
           type="text"
           value={searchQuery}
@@ -740,11 +932,17 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
                     <FileText size={18} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{note.name}</h4>
-                    <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
+                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">
+                      {note.name}
+                    </h4>
+                    <p className="text-[10px] text-[var(--text-muted)] font-semibold">
+                      {note.specialty}
+                    </p>
                   </div>
                 </div>
-                <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">{note.overview}</p>
+                <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">
+                  {note.overview}
+                </p>
                 {note.diagram && (
                   <div className="mt-3 flex items-center gap-1 text-[10px] text-[var(--primary)] font-bold">
                     <FileText size={11} /> Includes diagram
@@ -756,110 +954,120 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
         </>
       )}
     </div>
-  );
+  )
 }
 
 // ==========================================
 // UPGRADED LEARNING WORKSPACE WITH RECURSIVE SUB-FOLDERS
 // ==========================================
-function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit, module: EducationModule, onBack: () => void }) {
-  const [activeTab, setActiveTab] = useState(() => module.id === 'clinical_pharm' ? 'disease-notes' : 'overview');
-  const { userData } = useAuth();
+function LearningWorkspace({
+  unit,
+  module,
+  onBack,
+}: {
+  unit: EducationModuleUnit
+  module: EducationModule
+  onBack: () => void
+}) {
+  const [activeTab, setActiveTab] = useState(() =>
+    module.id === 'clinical_pharm' ? 'disease-notes' : 'overview',
+  )
+  const { userData } = useAuth()
 
   // Folder states
-  const [subFolders, setSubFolders] = useState<SubFolder[]>([]);
-  const [currentFolderId, setCurrentFolderId] = useState(unit.id);
-  const [folderStack, setFolderStack] = useState<SubFolder[]>([]);
-  const [showTabs, setShowTabs] = useState(true);
-  const [diseaseOpen, setDiseaseOpen] = useState(false);
-  const openDiseaseView = useCallback(() => setDiseaseOpen(true), []);
-  const closeDiseaseView = useCallback(() => setDiseaseOpen(false), []);
+  const [subFolders, setSubFolders] = useState<SubFolder[]>([])
+  const [currentFolderId, setCurrentFolderId] = useState(unit.id)
+  const [folderStack, setFolderStack] = useState<SubFolder[]>([])
+  const [showTabs, setShowTabs] = useState(true)
+  const [diseaseOpen, setDiseaseOpen] = useState(false)
+  const openDiseaseView = useCallback(() => setDiseaseOpen(true), [])
+  const closeDiseaseView = useCallback(() => setDiseaseOpen(false), [])
 
   const handleWorkspaceBack = () => {
     if (folderStack.length > 0) {
-      const newStack = [...folderStack];
-      newStack.pop();
-      setFolderStack(newStack);
+      const newStack = [...folderStack]
+      newStack.pop()
+      setFolderStack(newStack)
       if (newStack.length === 0) {
-        setCurrentFolderId(unit.id);
+        setCurrentFolderId(unit.id)
       } else {
-        setCurrentFolderId(newStack[newStack.length - 1].id);
+        setCurrentFolderId(newStack[newStack.length - 1].id)
       }
     } else {
-      onBack();
+      onBack()
     }
-  };
+  }
 
   // Export consolidated PDF state
-  const [showExportModal, setShowExportModal] = useState(false);
-  const [exportLoading, setExportLoading] = useState(false);
+  const [showExportModal, setShowExportModal] = useState(false)
+  const [exportLoading, setExportLoading] = useState(false)
   const [exportData, setExportData] = useState<{
-    summary: string | null;
-    scratchpad: string;
-    flashcards: SavedFlashcard[];
-    quizzes: SavedQuiz[];
+    summary: string | null
+    scratchpad: string
+    flashcards: SavedFlashcard[]
+    quizzes: SavedQuiz[]
   }>({
     summary: null,
     scratchpad: '',
     flashcards: [],
-    quizzes: []
-  });
+    quizzes: [],
+  })
 
-  const [includeCover, setIncludeCover] = useState(true);
-  const [includeSummary, setIncludeSummary] = useState(true);
-  const [includeScratchpad, setIncludeScratchpad] = useState(true);
-  const [includeFlashcards, setIncludeFlashcards] = useState(true);
-  const [includeQuizzes, setIncludeQuizzes] = useState(true);
+  const [includeCover, setIncludeCover] = useState(true)
+  const [includeSummary, setIncludeSummary] = useState(true)
+  const [includeScratchpad, setIncludeScratchpad] = useState(true)
+  const [includeFlashcards, setIncludeFlashcards] = useState(true)
+  const [includeQuizzes, setIncludeQuizzes] = useState(true)
 
-  const [pdfGenerating, setPdfGenerating] = useState(false);
+  const [pdfGenerating, setPdfGenerating] = useState(false)
 
   const handleOpenExportModal = async () => {
-    setShowExportModal(true);
-    setExportLoading(true);
+    setShowExportModal(true)
+    setExportLoading(true)
     try {
       // 1. Fetch study guide summary
-      const savedSummary = await EducationService.getSummary(currentFolderId);
-      
+      const savedSummary = await EducationService.getSummary(currentFolderId)
+
       // 2. Fetch scratchpad notes
-      const savedNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
+      const savedNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || ''
 
       // 3. Fetch flashcards
-      const savedCards = await EducationService.getFlashcards(currentFolderId);
+      const savedCards = await EducationService.getFlashcards(currentFolderId)
 
       // 4. Fetch quizzes
-      const savedQuizzes = await EducationService.getQuizzes(currentFolderId);
+      const savedQuizzes = await EducationService.getQuizzes(currentFolderId)
 
       setExportData({
         summary: savedSummary,
         scratchpad: savedNotes,
         flashcards: savedCards,
-        quizzes: savedQuizzes
-      });
+        quizzes: savedQuizzes,
+      })
     } catch (err) {
-      console.error('Error compiling export data:', err);
+      console.error('Error compiling export data:', err)
     } finally {
-      setExportLoading(false);
+      setExportLoading(false)
     }
-  };
+  }
 
   const handlePrint = () => {
-    const printContent = document.getElementById('print-report-sheet');
-    if (!printContent) return;
+    const printContent = document.getElementById('print-report-sheet')
+    if (!printContent) return
 
     // Create a hidden iframe
-    const iframe = document.createElement('iframe');
-    iframe.style.position = 'fixed';
-    iframe.style.right = '0';
-    iframe.style.bottom = '0';
-    iframe.style.width = '0';
-    iframe.style.height = '0';
-    iframe.style.border = '0';
-    document.body.appendChild(iframe);
+    const iframe = document.createElement('iframe')
+    iframe.style.position = 'fixed'
+    iframe.style.right = '0'
+    iframe.style.bottom = '0'
+    iframe.style.width = '0'
+    iframe.style.height = '0'
+    iframe.style.border = '0'
+    document.body.appendChild(iframe)
 
-    const doc = iframe.contentWindow?.document;
-    if (!doc) return;
+    const doc = iframe.contentWindow?.document
+    if (!doc) return
 
-    doc.open();
+    doc.open()
     doc.write(`
       <html>
         <head>
@@ -913,23 +1121,23 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           </div>
         </body>
       </html>
-    `);
-    doc.close();
+    `)
+    doc.close()
 
-    iframe.contentWindow?.focus();
+    iframe.contentWindow?.focus()
     setTimeout(() => {
-      iframe.contentWindow?.print();
+      iframe.contentWindow?.print()
       setTimeout(() => {
-        document.body.removeChild(iframe);
-      }, 1000);
-    }, 500);
-  };
+        document.body.removeChild(iframe)
+      }, 1000)
+    }, 500)
+  }
 
   const handleDownloadPDF = async () => {
-    const reportElement = document.getElementById('print-report-sheet');
-    if (!reportElement) return;
+    const reportElement = document.getElementById('print-report-sheet')
+    if (!reportElement) return
 
-    setPdfGenerating(true);
+    setPdfGenerating(true)
 
     try {
       const canvas = await html2canvas(reportElement, {
@@ -938,96 +1146,103 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         allowTaint: true,
         backgroundColor: '#ffffff',
         logging: false,
-      });
+      })
 
-      const imgData = canvas.toDataURL('image/jpeg', 0.9);
-      
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const imgWidth = 210;
-      const pageHeight = 297;
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      let heightLeft = imgHeight;
-      
-      let position = 0;
-      
+      const imgData = canvas.toDataURL('image/jpeg', 0.9)
+
+      const pdf = new jsPDF('p', 'mm', 'a4')
+      const imgWidth = 210
+      const pageHeight = 297
+      const imgHeight = (canvas.height * imgWidth) / canvas.width
+      let heightLeft = imgHeight
+
+      let position = 0
+
       // Page 1
-      pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
-      
+      pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight)
+      heightLeft -= pageHeight
+
       // Loop to create extra pages as needed
       while (heightLeft > 0) {
-        position = heightLeft - imgHeight;
-        pdf.addPage();
-        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
+        position = heightLeft - imgHeight
+        pdf.addPage()
+        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight)
+        heightLeft -= pageHeight
       }
-      
-      const cleanFolderName = currentFolderName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-      pdf.save(`clinova_${cleanFolderName}_consolidated_report.pdf`);
+
+      const cleanFolderName = currentFolderName.replace(/[^a-z0-9]/gi, '_').toLowerCase()
+      pdf.save(`clinova_${cleanFolderName}_consolidated_report.pdf`)
     } catch (err) {
-      console.error('Error generating PDF:', err);
-      alert('Could not compile PDF automatically due to browser memory limits. Please use the "Print & Save to PDF" option instead.');
+      console.error('Error generating PDF:', err)
+      alert(
+        'Could not compile PDF automatically due to browser memory limits. Please use the "Print & Save to PDF" option instead.',
+      )
     } finally {
-      setPdfGenerating(false);
+      setPdfGenerating(false)
     }
-  };
+  }
 
   // Fetch subfolders from service
   const fetchFolders = useCallback(async () => {
     if (userData) {
       try {
-        const folders = await EducationService.getSubFolders(userData.id, unit.id);
-        setSubFolders(folders);
+        const folders = await EducationService.getSubFolders(userData.id, unit.id)
+        setSubFolders(folders)
       } catch (err) {
-        console.error('Error fetching subfolders:', err);
+        console.error('Error fetching subfolders:', err)
       }
     }
-  }, [userData, unit.id]);
+  }, [userData, unit.id])
 
   useEffect(() => {
-    fetchFolders();
-  }, [fetchFolders]);
+    fetchFolders()
+  }, [fetchFolders])
 
-  const activeParentId = currentFolderId === unit.id ? 'root' : currentFolderId;
-  const currentLevelFolders = subFolders.filter(f => f.parentId === activeParentId);
-  const currentFolderName = currentFolderId === unit.id 
-    ? unit.title 
-    : subFolders.find(f => f.id === currentFolderId)?.title || unit.title;
+  const activeParentId = currentFolderId === unit.id ? 'root' : currentFolderId
+  const currentLevelFolders = subFolders.filter((f) => f.parentId === activeParentId)
+  const currentFolderName =
+    currentFolderId === unit.id
+      ? unit.title
+      : subFolders.find((f) => f.id === currentFolderId)?.title || unit.title
 
   const handleDeleteFolder = async (folderId: string) => {
-    if (!userData) return;
-    if (window.confirm('Are you sure you want to delete this sub-folder? All nested items will be detached.')) {
+    if (!userData) return
+    if (
+      window.confirm(
+        'Are you sure you want to delete this sub-folder? All nested items will be detached.',
+      )
+    ) {
       try {
-        await EducationService.deleteSubFolder(userData.id, unit.id, folderId);
+        await EducationService.deleteSubFolder(userData.id, unit.id, folderId)
         // If current active directory was deleted or was a descendant of deleted folder, reset to root
-        const isCurrentDeleted = currentFolderId === folderId;
-        const isParentInStackDeleted = folderStack.some(f => f.id === folderId);
+        const isCurrentDeleted = currentFolderId === folderId
+        const isParentInStackDeleted = folderStack.some((f) => f.id === folderId)
         if (isCurrentDeleted || isParentInStackDeleted) {
-          setCurrentFolderId(unit.id);
-          setFolderStack([]);
+          setCurrentFolderId(unit.id)
+          setFolderStack([])
         }
-        await fetchFolders();
+        await fetchFolders()
       } catch (err) {
-        console.error('Error deleting folder:', err);
+        console.error('Error deleting folder:', err)
       }
     }
-  };
+  }
 
   const handleNavigateToRoot = () => {
-    setCurrentFolderId(unit.id);
-    setFolderStack([]);
-  };
+    setCurrentFolderId(unit.id)
+    setFolderStack([])
+  }
 
   const handleNavigateToStack = (idx: number) => {
-    const clicked = folderStack[idx];
-    setCurrentFolderId(clicked.id);
-    setFolderStack(folderStack.slice(0, idx + 1));
-  };
+    const clicked = folderStack[idx]
+    setCurrentFolderId(clicked.id)
+    setFolderStack(folderStack.slice(0, idx + 1))
+  }
 
   const handleEnterFolder = (folder: SubFolder) => {
-    setCurrentFolderId(folder.id);
-    setFolderStack([...folderStack, folder]);
-  };
+    setCurrentFolderId(folder.id)
+    setFolderStack([...folderStack, folder])
+  }
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
@@ -1039,25 +1254,31 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   ]
 
   const isClinicalPharm = module.id === 'clinical_pharm'
-  const workspaceTabs = isClinicalPharm
-    ? tabs.filter(t => t.id === 'disease-notes')
-    : tabs;
+  const workspaceTabs = isClinicalPharm ? tabs.filter((t) => t.id === 'disease-notes') : tabs
 
   // When a disease note is open, present it as a full standalone page:
   // no folder navigation, tabs, or export chrome — only the disease's own nav.
   if (diseaseOpen) {
     return (
       <div className="animate-in fade-in duration-300 max-w-4xl mx-auto">
-        <DiseaseNotesView unit={unit} onOpenDisease={openDiseaseView} onCloseDisease={closeDiseaseView} />
+        <DiseaseNotesView
+          unit={unit}
+          onOpenDisease={openDiseaseView}
+          onCloseDisease={closeDiseaseView}
+        />
       </div>
-    );
+    )
   }
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div className="flex items-center gap-3">
-          <button onClick={handleWorkspaceBack} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors" title="Go Back">
+          <button
+            onClick={handleWorkspaceBack}
+            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors"
+            title="Go Back"
+          >
             <ChevronLeft size={18} className="text-[var(--text)]" />
           </button>
           <div>
@@ -1071,7 +1292,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
             </div>
           </div>
         </div>
-        
+
         <button
           onClick={handleOpenExportModal}
           className="px-4 py-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white rounded-xl text-xs font-black shadow-sm transition-all flex items-center gap-2 cursor-pointer self-start md:self-auto shrink-0"
@@ -1086,14 +1307,17 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         {/* Breadcrumb Navigation Row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[var(--border)]/40">
           <div className="flex flex-wrap items-center gap-1.5 text-xs font-semibold text-[var(--text-muted)]">
-            <button 
+            <button
               onClick={handleNavigateToRoot}
               className={`flex items-center gap-1 hover:text-[var(--primary)] transition-colors ${currentFolderId === unit.id ? 'text-[var(--primary)] font-extrabold' : ''}`}
             >
-              <Folder size={14} className={currentFolderId === unit.id ? 'text-[var(--primary)]' : 'text-amber-500'} />
+              <Folder
+                size={14}
+                className={currentFolderId === unit.id ? 'text-[var(--primary)]' : 'text-amber-500'}
+              />
               <span>{unit.title}</span>
             </button>
-            
+
             {folderStack.map((folder, idx) => (
               <React.Fragment key={folder.id}>
                 <ChevronRight size={12} className="opacity-60 shrink-0" />
@@ -1135,8 +1359,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                 <button
                   type="button"
                   onClick={(e) => {
-                    e.stopPropagation();
-                    handleDeleteFolder(folder.id);
+                    e.stopPropagation()
+                    handleDeleteFolder(folder.id)
                   }}
                   className="p-1 text-[var(--text-muted)] hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40 rounded-lg transition-colors cursor-pointer"
                   title="Delete subfolder"
@@ -1159,7 +1383,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         <div className="bg-amber-500/5 px-6 py-2.5 border-b border-[var(--border)]/40 flex items-center justify-between text-xs font-bold text-[var(--text)]">
           <span className="flex items-center gap-1.5 text-[var(--text)]">
             <Folder size={13} className="text-amber-500" />
-            Active Sub-folder: <span className="text-[var(--primary)] underline">{currentFolderName}</span>
+            Active Sub-folder:{' '}
+            <span className="text-[var(--primary)] underline">{currentFolderName}</span>
           </span>
           <span className="text-[10px] text-[var(--text-muted)]">
             All notes and tools will sync specifically within this subfolder context.
@@ -1168,12 +1393,42 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
         {/* Workspace Content */}
         <div className="flex-1 p-4 sm:p-6 bg-[var(--bg)] min-h-[500px]">
-{activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'overview' && (
+            <WorkspaceOverview
+              unit={unit}
+              module={module}
+              currentFolderId={currentFolderId}
+              currentFolderName={currentFolderName}
+              userData={userData}
+            />
+          )}
           {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
-          {activeTab === 'tutor' && <WorkspaceTutor module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} module={module} currentFolderName={currentFolderName} />}
-          {activeTab === 'flashcards' && <WorkspaceFlashcards module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'mcqs' && <WorkspaceQuizzes module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'tutor' && (
+            <WorkspaceTutor
+              module={module}
+              currentFolderId={currentFolderId}
+              currentFolderName={currentFolderName}
+            />
+          )}
+          {activeTab === 'resources' && (
+            <WorkspaceResources unit={unit} module={module} currentFolderName={currentFolderName} />
+          )}
+          {activeTab === 'flashcards' && (
+            <WorkspaceFlashcards
+              module={module}
+              currentFolderId={currentFolderId}
+              currentFolderName={currentFolderName}
+              userData={userData}
+            />
+          )}
+          {activeTab === 'mcqs' && (
+            <WorkspaceQuizzes
+              module={module}
+              currentFolderId={currentFolderId}
+              currentFolderName={currentFolderName}
+              userData={userData}
+            />
+          )}
         </div>
 
         {/* Bottom Tabs — retractable */}
@@ -1183,11 +1438,14 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
             className="w-full flex items-center justify-center py-1 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
             title={showTabs ? 'Collapse tabs' : 'Expand tabs'}
           >
-            <MoreHorizontal size={16} className={`transition-transform ${showTabs ? 'rotate-0' : ''}`} />
+            <MoreHorizontal
+              size={16}
+              className={`transition-transform ${showTabs ? 'rotate-0' : ''}`}
+            />
           </button>
           {showTabs && (
             <div className="flex overflow-x-auto no-scrollbar px-2 pb-2 gap-1">
-              {workspaceTabs.map(tab => {
+              {workspaceTabs.map((tab) => {
                 const isActive = activeTab === tab.id
                 return (
                   <button
@@ -1212,7 +1470,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
       {showExportModal && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto overscroll-contain">
           <div className="bg-[var(--bg)] border border-[var(--border)] rounded-3xl w-full max-w-5xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden animate-in zoom-in-95 duration-200">
-            
             {/* LEFT COLUMN: Controls & Options */}
             <div className="w-full md:w-80 border-r border-[var(--border)]/60 bg-[var(--surface-dim)]/50 p-6 overflow-y-auto overscroll-contain space-y-6 shrink-0 flex flex-col justify-between">
               <div className="space-y-6">
@@ -1221,17 +1478,20 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                     <FileText className="text-[var(--primary)]" size={16} /> Report Customization
                   </h3>
                   <p className="text-[11px] text-[var(--text-muted)] mt-1.5 leading-relaxed">
-                    Toggle sections to tailor your consolidated clinical revision report. Perfect for offline study guides or OSCE folders.
+                    Toggle sections to tailor your consolidated clinical revision report. Perfect
+                    for offline study guides or OSCE folders.
                   </p>
                 </div>
 
                 <div className="space-y-3.5">
-                  <h4 className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Include Sections</h4>
-                  
+                  <h4 className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+                    Include Sections
+                  </h4>
+
                   <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeCover} 
+                    <input
+                      type="checkbox"
+                      checked={includeCover}
                       onChange={(e) => setIncludeCover(e.target.checked)}
                       className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
                     />
@@ -1239,57 +1499,72 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                   </label>
 
                   <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeSummary} 
+                    <input
+                      type="checkbox"
+                      checked={includeSummary}
                       onChange={(e) => setIncludeSummary(e.target.checked)}
                       className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
                     />
                     <span className="flex items-center gap-1.5 justify-between w-full">
                       <span>Study Guide Summary</span>
-                      {exportData.summary && <span className="text-[10px] bg-emerald-500/10 text-emerald-500 px-1.5 py-0.5 rounded font-black">Active</span>}
+                      {exportData.summary && (
+                        <span className="text-[10px] bg-emerald-500/10 text-emerald-500 px-1.5 py-0.5 rounded font-black">
+                          Active
+                        </span>
+                      )}
                     </span>
                   </label>
 
                   <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeScratchpad} 
+                    <input
+                      type="checkbox"
+                      checked={includeScratchpad}
                       onChange={(e) => setIncludeScratchpad(e.target.checked)}
                       className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
                     />
                     <span className="flex items-center gap-1.5 justify-between w-full">
                       <span>Revision Scratchpad</span>
-                      {exportData.scratchpad.trim() && <span className="text-[10px] bg-purple-500/10 text-purple-500 px-1.5 py-0.5 rounded font-black">Active</span>}
+                      {exportData.scratchpad.trim() && (
+                        <span className="text-[10px] bg-purple-500/10 text-purple-500 px-1.5 py-0.5 rounded font-black">
+                          Active
+                        </span>
+                      )}
                     </span>
                   </label>
 
                   <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeFlashcards} 
+                    <input
+                      type="checkbox"
+                      checked={includeFlashcards}
                       onChange={(e) => setIncludeFlashcards(e.target.checked)}
                       className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
                     />
                     <span className="flex items-center gap-1.5 justify-between w-full">
                       <span>Active Recall Flashcards</span>
-                      {exportData.flashcards.length > 0 && <span className="text-[10px] bg-amber-500/10 text-amber-500 px-1.5 py-0.5 rounded font-black">{exportData.flashcards.length}</span>}
+                      {exportData.flashcards.length > 0 && (
+                        <span className="text-[10px] bg-amber-500/10 text-amber-500 px-1.5 py-0.5 rounded font-black">
+                          {exportData.flashcards.length}
+                        </span>
+                      )}
                     </span>
                   </label>
 
                   <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeQuizzes} 
+                    <input
+                      type="checkbox"
+                      checked={includeQuizzes}
                       onChange={(e) => setIncludeQuizzes(e.target.checked)}
                       className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
                     />
                     <span className="flex items-center gap-1.5 justify-between w-full">
                       <span>Practice Quizzes (MCQs)</span>
-                      {exportData.quizzes.length > 0 && <span className="text-[10px] bg-red-500/10 text-red-500 px-1.5 py-0.5 rounded font-black">{exportData.quizzes.length}</span>}
+                      {exportData.quizzes.length > 0 && (
+                        <span className="text-[10px] bg-red-500/10 text-red-500 px-1.5 py-0.5 rounded font-black">
+                          {exportData.quizzes.length}
+                        </span>
+                      )}
                     </span>
                   </label>
-
                 </div>
               </div>
 
@@ -1302,7 +1577,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                 >
                   {pdfGenerating ? (
                     <>
-                      <div className="w-3.5 h-3.5 border-2 border-white/40 border-t-white rounded-full animate-spin"></div>
+                      <InlineLoader size={14} />
                       Generating PDF...
                     </>
                   ) : (
@@ -1341,7 +1616,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                     High-Yield Study Report Preview
                   </h4>
                   <p className="text-[10px] text-[var(--text-muted)]">
-                    This high-contrast theme is optimized for printer ink efficiency and offline reading.
+                    This high-contrast theme is optimized for printer ink efficiency and offline
+                    reading.
                   </p>
                 </div>
                 <button
@@ -1355,11 +1631,13 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
               <div className="flex-1 overflow-y-auto p-4 sm:p-6 select-text font-sans">
                 {exportLoading ? (
                   <div className="flex flex-col items-center justify-center py-24 space-y-3">
-                    <div className="w-8 h-8 border-3 border-[var(--primary)]/20 border-t-[var(--primary)] rounded-full animate-spin"></div>
-                    <span className="text-xs font-bold text-[var(--text-muted)]">Compiling active subfolder materials...</span>
+                    <InlineLoader size={32} />
+                    <span className="text-xs font-bold text-[var(--text-muted)]">
+                      Compiling active subfolder materials...
+                    </span>
                   </div>
                 ) : (
-                  <div 
+                  <div
                     id="print-report-sheet"
                     className="bg-white text-slate-900 shadow-xl p-8 sm:p-12 rounded-2xl mx-auto max-w-[760px] border border-slate-200/60 leading-relaxed text-left text-xs"
                     style={{ color: '#0f172a', backgroundColor: '#ffffff' }}
@@ -1376,18 +1654,22 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         <p className="text-sm font-semibold text-slate-500 mt-2 uppercase tracking-widest">
                           {module.title}
                         </p>
-                        
+
                         <div className="my-8 py-4 px-6 border-y border-slate-200 inline-block mx-auto max-w-md">
-                          <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Path Context</p>
+                          <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">
+                            Path Context
+                          </p>
                           <p className="text-xs font-extrabold text-slate-800">
-                            {unit.title} {folderStack.map(f => ` → ${f.title}`)}
+                            {unit.title} {folderStack.map((f) => ` → ${f.title}`)}
                           </p>
                         </div>
 
                         <div className="mt-8 text-[11px] text-slate-400 space-y-1 font-semibold">
                           <p>GENERATED ON {new Date().toLocaleDateString()}</p>
                           <p>STUDENT PROFILE: {userData?.email || 'clinova_learner'}</p>
-                          <p className="text-[9px] tracking-wider text-slate-300">CLINOVA COGNITIVE HEALTH SCIENCES SYSTEM</p>
+                          <p className="text-[9px] tracking-wider text-slate-300">
+                            CLINOVA COGNITIVE HEALTH SCIENCES SYSTEM
+                          </p>
                         </div>
                       </div>
                     )}
@@ -1404,7 +1686,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                           </div>
                         ) : (
                           <p className="text-slate-400 italic">
-                            No study guide was generated for this folder yet. Generate a guide in the "Study Guide" tab to include it here.
+                            No study guide was generated for this folder yet. Generate a guide in
+                            the "Study Guide" tab to include it here.
                           </p>
                         )}
                       </div>
@@ -1437,17 +1720,24 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         {exportData.flashcards.length > 0 ? (
                           <div className="space-y-4">
                             {exportData.flashcards.map((card, idx) => (
-                              <div key={card.id} className="border border-slate-200 rounded-xl p-4 bg-slate-50/50 break-inside-avoid">
+                              <div
+                                key={card.id}
+                                className="border border-slate-200 rounded-xl p-4 bg-slate-50/50 break-inside-avoid"
+                              >
                                 <div className="flex items-center justify-between mb-2">
                                   <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">
                                     Card #{idx + 1}
                                   </span>
                                   {card.difficulty && (
-                                    <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold uppercase ${
-                                      card.difficulty === 'easy' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' :
-                                      card.difficulty === 'medium' ? 'bg-amber-50 text-amber-800 border border-amber-200' :
-                                      'bg-red-50 text-red-800 border border-red-200'
-                                    }`}>
+                                    <span
+                                      className={`text-[9px] px-2 py-0.5 rounded-full font-bold uppercase ${
+                                        card.difficulty === 'easy'
+                                          ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                                          : card.difficulty === 'medium'
+                                            ? 'bg-amber-50 text-amber-800 border border-amber-200'
+                                            : 'bg-red-50 text-red-800 border border-red-200'
+                                      }`}
+                                    >
                                       {card.difficulty}
                                     </span>
                                   )}
@@ -1478,7 +1768,10 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         {exportData.quizzes.length > 0 ? (
                           <div className="space-y-6">
                             {exportData.quizzes.map((quiz, idx) => (
-                              <div key={quiz.id} className="border border-slate-200 rounded-xl p-4 break-inside-avoid">
+                              <div
+                                key={quiz.id}
+                                className="border border-slate-200 rounded-xl p-4 break-inside-avoid"
+                              >
                                 <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider block mb-1.5">
                                   Assessment Item #{idx + 1}
                                 </span>
@@ -1487,13 +1780,13 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
                                   {quiz.options.map((option, optIdx) => {
-                                    const isCorrect = option === quiz.correctAnswer;
+                                    const isCorrect = option === quiz.correctAnswer
                                     return (
-                                      <div 
-                                        key={optIdx} 
+                                      <div
+                                        key={optIdx}
                                         className={`p-2 rounded-lg border text-xs font-semibold ${
-                                          isCorrect 
-                                            ? 'bg-emerald-50/70 border-emerald-300 text-emerald-900' 
+                                          isCorrect
+                                            ? 'bg-emerald-50/70 border-emerald-300 text-emerald-900'
                                             : 'border-slate-200 bg-white text-slate-700'
                                         }`}
                                       >
@@ -1502,12 +1795,14 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                                         </span>
                                         {option}
                                       </div>
-                                    );
+                                    )
                                   })}
                                 </div>
                                 {quiz.explanation && (
                                   <div className="mt-3 text-[11px] text-slate-600 bg-slate-50 border-l-4 border-slate-400 p-3 rounded-r-lg italic">
-                                    <strong className="not-italic text-slate-800 font-extrabold block mb-0.5 uppercase tracking-wider text-[9px]">Rationale:</strong>
+                                    <strong className="not-italic text-slate-800 font-extrabold block mb-0.5 uppercase tracking-wider text-[9px]">
+                                      Rationale:
+                                    </strong>
                                     {quiz.explanation}
                                   </div>
                                 )}
@@ -1521,52 +1816,61 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         )}
                       </div>
                     )}
-
-
                   </div>
                 )}
               </div>
             </div>
-
           </div>
         </div>
       )}
     </div>
-  );
+  )
 }
 
 // ==========================================
 // WORKSPACE OVERVIEW & AI STUDY GUIDE
 // ==========================================
-function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const [summary, setSummary] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [customNotes, setCustomNotes] = useState('');
-  const staticContent = getStaticContent(unit.id);
+function WorkspaceOverview({
+  unit,
+  module,
+  currentFolderId,
+  currentFolderName,
+  userData,
+}: {
+  unit: EducationModuleUnit
+  module: EducationModule
+  currentFolderId: string
+  currentFolderName: string
+  userData: any
+}) {
+  const [summary, setSummary] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [customNotes, setCustomNotes] = useState('')
+  const staticContent = getStaticContent(unit.id)
 
   // Load existing summary and custom notes text
   useEffect(() => {
     const loadData = async () => {
-      const savedSummary = await EducationService.getSummary(currentFolderId);
-      setSummary(savedSummary);
+      const savedSummary = await EducationService.getSummary(currentFolderId)
+      setSummary(savedSummary)
 
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`);
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`)
       if (savedCustomNotes) {
-        setCustomNotes(savedCustomNotes);
+        setCustomNotes(savedCustomNotes)
       } else {
-        setCustomNotes('');
+        setCustomNotes('')
       }
-    };
-    loadData();
-  }, [currentFolderId]);
+    }
+    loadData()
+  }, [currentFolderId])
 
   const handleGenerateSummary = async () => {
-    setLoading(true);
+    setLoading(true)
     try {
       // Gather context
-      let context = '';
+      let context = ''
       if (customNotes.trim()) {
-        context += `\n--- STUDENT HAND-WRITTEN REVISION NOTES ---\n${customNotes}\n`;
+        context += `\n--- STUDENT HAND-WRITTEN REVISION NOTES ---\n${customNotes}\n`
       }
       const res = await fetch('/api/gemini/generate-unit-summary', {
         method: 'POST',
@@ -1574,16 +1878,16 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
         body: JSON.stringify({
           unitTitle: currentFolderName,
           moduleTitle: module.title,
-          notesText: context || undefined
-        })
-      });
+          notesText: context || undefined,
+        }),
+      })
 
-      if (!res.ok) throw new Error('Service unavailable');
-      const data = await res.json();
-      
+      if (!res.ok) throw new Error('Service unavailable')
+      const data = await res.json()
+
       if (data.summary) {
-        await EducationService.saveSummary(currentFolderId, data.summary);
-        
+        await EducationService.saveSummary(currentFolderId, data.summary)
+
         // Also save to AIContentService for cross-referencing and export
         if (userData?.id) {
           try {
@@ -1596,22 +1900,22 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               {
                 specialty: module.title,
                 curriculumUnitId: currentFolderId,
-              }
-            );
+              },
+            )
           } catch (err) {
-            console.warn('[EducationHub] Failed to save summary to AIContentService:', err);
+            console.warn('[EducationHub] Failed to save summary to AIContentService:', err)
           }
         }
-        
-        setSummary(data.summary);
+
+        setSummary(data.summary)
       }
     } catch (err) {
-      console.error(err);
-      alert('Failed to compile your Study Guide. Please try again.');
+      console.error(err)
+      alert('Failed to compile your Study Guide. Please try again.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   return (
     <div className="space-y-6">
@@ -1622,7 +1926,9 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
             <Clock size={22} />
           </div>
           <div>
-            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">Est. Study Time</p>
+            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">
+              Est. Study Time
+            </p>
             <p className="text-xl font-black text-[var(--text)]">{unit.estimatedHours} Hours</p>
           </div>
         </div>
@@ -1632,8 +1938,12 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
             <Sparkles size={22} />
           </div>
           <div>
-            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">Knowledge</p>
-            <p className="text-xl font-black text-[var(--text)]">{summary ? 'Study Guide Active' : 'Ready'}</p>
+            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">
+              Knowledge
+            </p>
+            <p className="text-xl font-black text-[var(--text)]">
+              {summary ? 'Study Guide Active' : 'Ready'}
+            </p>
           </div>
         </div>
       </div>
@@ -1646,7 +1956,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">
                 <FileSignature className="text-[var(--primary)]" size={20} /> Study Guide & Summary
               </h3>
-              {(customNotes.trim()) && (
+              {customNotes.trim() && (
                 <div className="flex items-center gap-2">
                   <button
                     onClick={handleGenerateSummary}
@@ -1655,18 +1965,19 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                   >
                     {loading ? (
                       <>
-                        <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        <InlineLoader size={14} />
                         Analyzing...
                       </>
                     ) : (
                       <>
-                        <Sparkles size={13} /> {summary ? 'Regenerate Summary' : 'Compile Study Guide'}
+                        <Sparkles size={13} />{' '}
+                        {summary ? 'Regenerate Summary' : 'Compile Study Guide'}
                       </>
                     )}
                   </button>
                   {summary && userData?.id && (
-                    <DownloadButton 
-                      content={summary} 
+                    <DownloadButton
+                      content={summary}
                       filename={`study-guide-${currentFolderName.replace(/\s+/g, '-').toLowerCase()}`}
                     />
                   )}
@@ -1685,7 +1996,9 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 </div>
                 {staticContent.keyPoints && (
                   <div className="bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-xl p-4">
-                    <h4 className="text-xs font-bold text-[var(--text)] mb-3 uppercase tracking-wider">Key Points</h4>
+                    <h4 className="text-xs font-bold text-[var(--text)] mb-3 uppercase tracking-wider">
+                      Key Points
+                    </h4>
                     <ul className="space-y-2">
                       {staticContent.keyPoints.map((pt, i) => (
                         <li key={i} className="text-xs text-[var(--text-muted)] flex gap-2">
@@ -1699,7 +2012,10 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 {staticContent.drugClasses && staticContent.drugClasses.length > 0 && (
                   <div className="flex flex-wrap gap-2">
                     {staticContent.drugClasses.map((dc) => (
-                      <span key={dc} className="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-[var(--primary)]/5 text-[var(--primary)] border border-[var(--primary)]/10">
+                      <span
+                        key={dc}
+                        className="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-[var(--primary)]/5 text-[var(--primary)] border border-[var(--primary)]/10"
+                      >
                         {dc}
                       </span>
                     ))}
@@ -1712,7 +2028,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 >
                   {loading ? (
                     <>
-                      <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      <InlineLoader size={14} />
                       Generating...
                     </>
                   ) : (
@@ -1730,13 +2046,22 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 </div>
                 <h4 className="text-base font-bold text-[var(--text)]">Let the Magic Happen!</h4>
                 <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                  Write down your class summaries in the scratchpad. A personalized clinical guide will be built summarizing:
+                  Write down your class summaries in the scratchpad. A personalized clinical guide
+                  will be built summarizing:
                 </p>
                 <div className="text-left text-xs text-[var(--text-muted)] space-y-2 bg-[var(--surface-dim)]/50 p-4 rounded-xl border border-[var(--border)]/40">
-                  <div className="flex gap-2">&bull; <strong>Core Pharmacology & receptor pathways</strong></div>
-                  <div className="flex gap-2">&bull; <strong>Formulary Dosing (KDI / renal CrCl rules)</strong></div>
-                  <div className="flex gap-2">&bull; <strong>High-alert drug safety & interactions</strong></div>
-                  <div className="flex gap-2">&bull; <strong>Board-style clinical OSCE Pearls</strong></div>
+                  <div className="flex gap-2">
+                    &bull; <strong>Core Pharmacology & receptor pathways</strong>
+                  </div>
+                  <div className="flex gap-2">
+                    &bull; <strong>Formulary Dosing (KDI / renal CrCl rules)</strong>
+                  </div>
+                  <div className="flex gap-2">
+                    &bull; <strong>High-alert drug safety & interactions</strong>
+                  </div>
+                  <div className="flex gap-2">
+                    &bull; <strong>Board-style clinical OSCE Pearls</strong>
+                  </div>
                 </div>
                 {!customNotes.trim() ? (
                   <p className="text-[11px] font-semibold text-amber-600 bg-amber-50 dark:bg-amber-950/20 p-2.5 rounded-lg border border-amber-200/40">
@@ -1769,10 +2094,12 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 'Standard Dosing Guidelines',
                 'Renal Clearance & Adverse Signals',
                 'Memorized Active Flashcards',
-                'Passed MCQ Assessment'
+                'Passed MCQ Assessment',
               ].map((obj, i) => (
                 <li key={i} className="flex gap-3 text-xs text-[var(--text-muted)] items-center">
-                  <div className="w-5 h-5 rounded-full bg-[var(--surface-dim)] text-[var(--text)] flex items-center justify-center shrink-0 font-extrabold text-[10px]">{i+1}</div>
+                  <div className="w-5 h-5 rounded-full bg-[var(--surface-dim)] text-[var(--text)] flex items-center justify-center shrink-0 font-extrabold text-[10px]">
+                    {i + 1}
+                  </div>
                   <span className="font-semibold">{obj}</span>
                 </li>
               ))}
@@ -1784,54 +2111,67 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <Plus className="text-purple-500" size={18} /> Module Context
             </h3>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ simulators, and the tutor chat are automatically optimized based on the curriculum content and outlines.
+              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ
+              simulators, and the tutor chat are automatically optimized based on the curriculum
+              content and outlines.
             </p>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 // ==========================================
 // WORKSPACE TUTOR (INTELLIGENT RECALL CHAT)
 // ==========================================
-function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module: EducationModule, currentFolderId: string, currentFolderName: string }) {
-  const [tutorMessage, setTutorMessage] = useState('');
-  const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
-  const [isTutorThinking, setIsTutorThinking] = useState(false);
-  const chatEndRef = useRef<HTMLDivElement>(null);
+function WorkspaceTutor({
+  module,
+  currentFolderId,
+  currentFolderName,
+}: {
+  module: EducationModule
+  currentFolderId: string
+  currentFolderName: string
+}) {
+  const [tutorMessage, setTutorMessage] = useState('')
+  const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant'; content: string }[]>([])
+  const [isTutorThinking, setIsTutorThinking] = useState(false)
+  const chatEndRef = useRef<HTMLDivElement>(null)
 
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nAsk me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
-    ]);
-  }, [currentFolderName]);
+      {
+        role: 'assistant',
+        content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nAsk me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!`,
+      },
+    ])
+  }, [currentFolderName])
 
   const handleAskTutor = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!tutorMessage.trim() || isTutorThinking) return;
+    e.preventDefault()
+    if (!tutorMessage.trim() || isTutorThinking) return
 
-    const userMsg = tutorMessage;
-    setTutorMessage('');
-    
-    const newChat = [...tutorChat, { role: 'user' as const, content: userMsg }];
-    setTutorChat(newChat);
-    setIsTutorThinking(true);
+    const userMsg = tutorMessage
+    setTutorMessage('')
+
+    const newChat = [...tutorChat, { role: 'user' as const, content: userMsg }]
+    setTutorChat(newChat)
+    setIsTutorThinking(true)
 
     setTimeout(() => {
-      chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+      chatEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
 
     try {
       // Gather student notes/summary context to send alongside RAG
-      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      
-      let context = '';
-      if (savedCustomNotes) context += `STUDENT SCRATCHPAD NOTES:\n${savedCustomNotes}\n`;
-      if (savedSummary) context += `STUDENT COMPILED STUDY GUIDE:\n${savedSummary}\n`;
+      const savedSummary = (await EducationService.getSummary(currentFolderId)) || ''
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || ''
+
+      let context = ''
+      if (savedCustomNotes) context += `STUDENT SCRATCHPAD NOTES:\n${savedCustomNotes}\n`
+      if (savedSummary) context += `STUDENT COMPILED STUDY GUIDE:\n${savedSummary}\n`
 
       const res = await fetch('/api/gemini/hub-tutor', {
         method: 'POST',
@@ -1841,30 +2181,38 @@ function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module
           moduleTitle: module.title,
           userMessage: userMsg,
           chatHistory: newChat.slice(-10), // Send last 10 messages for continuous memory
-          notesContext: context || undefined
-        })
-      });
+          notesContext: context || undefined,
+        }),
+      })
 
-      if (!res.ok) throw new Error('Service unavailable');
-      const data = await res.json();
+      if (!res.ok) throw new Error('Service unavailable')
+      const data = await res.json()
 
-      setTutorChat([...newChat, { 
-        role: 'assistant', 
-        content: data.reply || `I have successfully analyzed your query regarding **${currentFolderName}** based on standard drug indices. Please try asking again.` 
-      }]);
+      setTutorChat([
+        ...newChat,
+        {
+          role: 'assistant',
+          content:
+            data.reply ||
+            `I have successfully analyzed your query regarding **${currentFolderName}** based on standard drug indices. Please try asking again.`,
+        },
+      ])
     } catch (error) {
-      console.error('Error asking tutor:', error);
-      setTutorChat([...newChat, { 
-        role: 'assistant', 
-        content: `⚠️ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
-      }]);
+      console.error('Error asking tutor:', error)
+      setTutorChat([
+        ...newChat,
+        {
+          role: 'assistant',
+          content: `⚠️ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.`,
+        },
+      ])
     } finally {
-      setIsTutorThinking(false);
+      setIsTutorThinking(false)
       setTimeout(() => {
-        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
     }
-  };
+  }
 
   return (
     <div className="flex flex-col h-[550px] border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] shadow-xs">
@@ -1875,7 +2223,9 @@ function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module
           </div>
           <div>
             <h3 className="font-bold text-sm text-[var(--text)]">Intelligent Study Coach</h3>
-            <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-extrabold">Context-Aware Revision Chat</p>
+            <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-extrabold">
+              Context-Aware Revision Chat
+            </p>
           </div>
         </div>
         <div className="flex items-center gap-1.5 text-xs font-semibold text-[var(--text-muted)] bg-[var(--surface-dim)] px-2.5 py-1 rounded-lg">
@@ -1887,12 +2237,16 @@ function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module
       <div className="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar bg-[var(--bg)]/30">
         {tutorChat.map((msg, i) => (
           <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-            <div className={`max-w-[85%] rounded-2xl p-4 text-sm leading-relaxed ${
-              msg.role === 'user' 
-                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-br-none shadow-xs' 
-                : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-bl-none shadow-xs'
-            }`}>
-              <div className={`markdown-body ${msg.role === 'user' ? 'prose-invert' : 'prose prose-sm dark:prose-invert max-w-none'}`}>
+            <div
+              className={`max-w-[85%] rounded-2xl p-4 text-sm leading-relaxed ${
+                msg.role === 'user'
+                  ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-br-none shadow-xs'
+                  : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-bl-none shadow-xs'
+              }`}
+            >
+              <div
+                className={`markdown-body ${msg.role === 'user' ? 'prose-invert' : 'prose prose-sm dark:prose-invert max-w-none'}`}
+              >
                 <Markdown>{msg.content}</Markdown>
               </div>
             </div>
@@ -1901,10 +2255,21 @@ function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module
         {isTutorThinking && (
           <div className="flex justify-start">
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl rounded-bl-none p-4 flex gap-1.5 items-center shadow-xs">
-              <span className="text-xs text-[var(--text-muted)] mr-1">Compiling clinical answer</span>
-              <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '0ms' }} />
-              <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '150ms' }} />
-              <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '300ms' }} />
+              <span className="text-xs text-[var(--text-muted)] mr-1">
+                Compiling clinical answer
+              </span>
+              <div
+                className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce"
+                style={{ animationDelay: '0ms' }}
+              />
+              <div
+                className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce"
+                style={{ animationDelay: '150ms' }}
+              />
+              <div
+                className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce"
+                style={{ animationDelay: '300ms' }}
+              />
             </div>
           </div>
         )}
@@ -1931,13 +2296,21 @@ function WorkspaceTutor({ module, currentFolderId, currentFolderName }: { module
         </form>
       </div>
     </div>
-  );
+  )
 }
 
 // ==========================================
 // DISEASE NOTES — full-page detail view
 // ==========================================
-function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: EducationModuleUnit; onOpenDisease?: () => void; onCloseDisease?: () => void }) {
+function DiseaseNotesView({
+  unit,
+  onOpenDisease,
+  onCloseDisease,
+}: {
+  unit: EducationModuleUnit
+  onOpenDisease?: () => void
+  onCloseDisease?: () => void
+}) {
   const [notes, setNotes] = useState<DiseaseNote[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
@@ -1959,7 +2332,9 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
           setLoading(false)
         }
       })
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+    }
   }, [unit.id])
 
   useEffect(() => {
@@ -1967,10 +2342,12 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
     else onCloseDisease?.()
   }, [selectedIdx, onOpenDisease, onCloseDisease])
 
-  if (loading) {
+  const showLoading = useMinimumLoading(loading)
+
+  if (showLoading) {
     return (
       <div className="py-12 text-center">
-        <div className="w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin mx-auto" />
+        <PageLoader title="Loading Diseases" subtitle="Fetching clinical content..." />
       </div>
     )
   }
@@ -1996,7 +2373,8 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
         </div>
         <h4 className="text-base font-bold text-[var(--text)]">No Disease Notes Yet</h4>
         <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-          Curated disease-specific notes are not available for this folder yet. They will appear automatically for standard CP&T units.
+          Curated disease-specific notes are not available for this folder yet. They will appear
+          automatically for standard CP&T units.
         </p>
       </div>
     )
@@ -2008,7 +2386,7 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
         {notes.length} Disease Note{notes.length !== 1 ? 's' : ''}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {notes.map(note => (
+        {notes.map((note) => (
           <button
             key={note.id}
             onClick={() => setSelectedIdx(notes.indexOf(note))}
@@ -2019,11 +2397,17 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
                 <FileText size={18} />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{note.name}</h4>
-                <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
+                <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">
+                  {note.name}
+                </h4>
+                <p className="text-[10px] text-[var(--text-muted)] font-semibold">
+                  {note.specialty}
+                </p>
               </div>
             </div>
-            <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">{note.overview}</p>
+            <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">
+              {note.overview}
+            </p>
             {note.diagram && (
               <div className="mt-3 flex items-center gap-1 text-[10px] text-[var(--primary)] font-bold">
                 <FileText size={11} /> Includes diagram
@@ -2076,9 +2460,13 @@ function Section({
   }
   return (
     <div className={`bg-[var(--surface)] border ${tones[tone]} rounded-2xl p-5 sm:p-6 shadow-sm`}>
-      <h3 className={`text-xs font-black uppercase tracking-wider ${titleColors[tone]} mb-3 flex items-center gap-2`}>
+      <h3
+        className={`text-xs font-black uppercase tracking-wider ${titleColors[tone]} mb-3 flex items-center gap-2`}
+      >
         {num && (
-          <span className={`inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-black ${badgeBg[tone]}`}>
+          <span
+            className={`inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-black ${badgeBg[tone]}`}
+          >
             {num}
           </span>
         )}
@@ -2090,7 +2478,13 @@ function Section({
   )
 }
 
-function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default' | 'green' | 'rose' | 'amber' | 'violet' | 'blue' | 'critical' }) {
+function Bullets({
+  items,
+  tone = 'default',
+}: {
+  items: string[]
+  tone?: 'default' | 'green' | 'rose' | 'amber' | 'violet' | 'blue' | 'critical'
+}) {
   const dotMap: Record<string, string> = {
     default: 'bg-[var(--primary)]',
     green: 'bg-emerald-500',
@@ -2100,12 +2494,15 @@ function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default
     blue: 'bg-blue-500',
     critical: 'bg-red-500',
   }
-  const textColor = tone === 'critical' ? 'text-red-700 dark:text-red-400 font-semibold' : 'text-[var(--text)]'
+  const textColor =
+    tone === 'critical' ? 'text-red-700 dark:text-red-400 font-semibold' : 'text-[var(--text)]'
   return (
     <ul className="space-y-1.5">
       {items.map((it, i) => (
         <li key={i} className="flex items-start gap-2 text-sm leading-relaxed">
-          <span className={`w-1.5 h-1.5 rounded-full ${dotMap[tone] || dotMap.default} mt-2 shrink-0`} />
+          <span
+            className={`w-1.5 h-1.5 rounded-full ${dotMap[tone] || dotMap.default} mt-2 shrink-0`}
+          />
           <span className={textColor}>{it}</span>
         </li>
       ))}
@@ -2129,7 +2526,9 @@ function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) 
     <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
       {rows.map((r, i) => (
         <div key={i} className="flex flex-col">
-          <dt className="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">{r.label}</dt>
+          <dt className="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+            {r.label}
+          </dt>
           <dd className="text-sm text-[var(--text)] leading-relaxed">{r.value}</dd>
         </div>
       ))}
@@ -2140,31 +2539,63 @@ function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) 
 /** Highlight common medical/pharmacy terms with colored badges for memory retention */
 function HighlightTerms({ text }: { text: string }) {
   // Common drug names (add more as needed — this is a growing list)
-  const drugPattern = /\b(Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b/gi
+  const drugPattern =
+    /\b(Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b/gi
   // Dosage patterns (e.g., "5 mg", "10 mg/kg")
   const dosagePattern = /\b(\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|IU|mg\/kg|g\/L|mmol\/L|mEq|mg\/dL))\b/gi
   // Warning terms
-  const warningPattern = /\b(Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b/gi
+  const warningPattern =
+    /\b(Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b/gi
   // Numbers with clinical significance
   const labPattern = /\b(\d{3,4}\s*(?:mg\/dL|mmHg|mEq\/L|ng\/mL|mcg\/mL))\b/gi
 
-  const parts = text.split(/(\b(?:Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b|\b\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|IU|mg\/kg|g\/L|mmol\/L|mEq|mg\/dL)\b|\b(?:Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b|\b\d{3,4}\s*(?:mg\/dL|mmHg|mEq\/L|ng\/mL|mcg\/mL)\b)/gi)
+  const parts = text.split(
+    /(\b(?:Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b|\b\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|IU|mg\/kg|g\/L|mmol\/L|mEq|mg\/dL)\b|\b(?:Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b|\b\d{3,4}\s*(?:mg\/dL|mmHg|mEq\/L|ng\/mL|mcg\/mL)\b)/gi,
+  )
 
   return (
     <>
       {parts.map((part, i) => {
         if (!part) return null
         if (drugPattern.test(part)) {
-          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 mx-0.5">{part}</span>
+          return (
+            <span
+              key={i}
+              className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          )
         }
         if (dosagePattern.test(part)) {
-          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 mx-0.5">{part}</span>
+          return (
+            <span
+              key={i}
+              className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          )
         }
         if (warningPattern.test(part)) {
-          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 mx-0.5">{part}</span>
+          return (
+            <span
+              key={i}
+              className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          )
         }
         if (labPattern.test(part)) {
-          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mx-0.5">{part}</span>
+          return (
+            <span
+              key={i}
+              className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          )
         }
         return <React.Fragment key={i}>{part}</React.Fragment>
       })}
@@ -2172,7 +2603,21 @@ function HighlightTerms({ text }: { text: string }) {
   )
 }
 
-function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
+function DiseaseDetailView({
+  note,
+  onBack,
+  hasPrev,
+  hasNext,
+  onPrev,
+  onNext,
+}: {
+  note: DiseaseNote
+  onBack: () => void
+  hasPrev?: boolean
+  hasNext?: boolean
+  onPrev?: () => void
+  onNext?: () => void
+}) {
   return (
     <div className="w-full space-y-5 sm:space-y-7 py-2">
       {/* Header - styled like a Section for consistency */}
@@ -2205,14 +2650,18 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             <div className="min-w-0">
               <div className="flex items-center gap-2 mb-0.5">
                 <h2 className="text-2xl font-extrabold text-[var(--text)] truncate">{note.name}</h2>
-                <span className="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-600 dark:text-blue-400 text-[10px] font-bold border border-blue-500/20 shrink-0">Overview</span>
+                <span className="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-600 dark:text-blue-400 text-[10px] font-bold border border-blue-500/20 shrink-0">
+                  Overview
+                </span>
               </div>
               <p className="text-xs text-[var(--text-muted)] font-semibold">{note.specialty}</p>
             </div>
           </div>
           {note.overview && (
             <div className="bg-gradient-to-br from-blue-500/15 via-blue-500/5 to-transparent border border-blue-500/25 rounded-2xl p-5 shadow-sm">
-              <p className="text-sm text-[var(--text)] leading-relaxed font-medium"><HighlightTerms text={note.overview} /></p>
+              <p className="text-sm text-[var(--text)] leading-relaxed font-medium">
+                <HighlightTerms text={note.overview} />
+              </p>
             </div>
           )}
         </div>
@@ -2223,7 +2672,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <Section num="1" title="Disease Identification">
           <DefinitionList
             rows={[
-              ...(note.alternativeNames?.length ? [{ label: 'Alternative Names', value: note.alternativeNames.join(', ') }] : []),
+              ...(note.alternativeNames?.length
+                ? [{ label: 'Alternative Names', value: note.alternativeNames.join(', ') }]
+                : []),
               ...(note.icd10 ? [{ label: 'ICD-10', value: note.icd10 }] : []),
               ...(note.icd11 ? [{ label: 'ICD-11', value: note.icd11 }] : []),
             ]}
@@ -2234,14 +2685,18 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* §2 Definition */}
       {note.definition && (
         <Section num="2" title="Definition">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.definition} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.definition} />
+          </p>
         </Section>
       )}
 
       {/* §3 Epidemiology */}
       {note.epidemiology && (
         <Section num="3" title="Epidemiology">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.epidemiology} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.epidemiology} />
+          </p>
         </Section>
       )}
 
@@ -2253,18 +2708,23 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       ) : null}
 
       {/* §5 Risk Factors */}
-      {note.riskFactors && (note.riskFactors.nonModifiable?.length || note.riskFactors.modifiable?.length) ? (
+      {note.riskFactors &&
+      (note.riskFactors.nonModifiable?.length || note.riskFactors.modifiable?.length) ? (
         <Section num="5" title="Risk Factors">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {note.riskFactors.nonModifiable?.length ? (
               <div>
-                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">Non-Modifiable</h4>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">
+                  Non-Modifiable
+                </h4>
                 <Bullets items={note.riskFactors.nonModifiable} />
               </div>
             ) : null}
             {note.riskFactors.modifiable?.length ? (
               <div>
-                <h4 className="text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">Modifiable</h4>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">
+                  Modifiable
+                </h4>
                 <Bullets items={note.riskFactors.modifiable} tone="amber" />
               </div>
             ) : null}
@@ -2275,7 +2735,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* §6 Pathophysiology */}
       {note.pathophysiology && (
         <Section num="6" title="Pathophysiology & Mechanism">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.pathophysiology} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.pathophysiology} />
+          </p>
         </Section>
       )}
 
@@ -2321,8 +2783,20 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             {note.differential.map((d, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
                 <p className="text-sm font-bold text-[var(--text)]">{d.condition}</p>
-                {d.similarities && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Similarities: </span><HighlightTerms text={d.similarities} /></p>}
-                {d.differences && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Key differences: </span><HighlightTerms text={d.differences} /></p>}
+                {d.similarities && (
+                  <p className="text-xs text-[var(--text)] mt-1">
+                    <span className="font-semibold text-[var(--text-muted)]">Similarities: </span>
+                    <HighlightTerms text={d.similarities} />
+                  </p>
+                )}
+                {d.differences && (
+                  <p className="text-xs text-[var(--text)] mt-1">
+                    <span className="font-semibold text-[var(--text-muted)]">
+                      Key differences:{' '}
+                    </span>
+                    <HighlightTerms text={d.differences} />
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -2339,7 +2813,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* §16 Diagnosis */}
       {note.diagnosis && (
         <Section num="16" title="Diagnosis">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.diagnosis} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.diagnosis} />
+          </p>
         </Section>
       )}
 
@@ -2351,13 +2827,53 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       ) : null}
 
       {/* §18 Management */}
-      {note.management && (note.management.goals || note.management.immediate || note.management.definitive || note.management.longTerm) ? (
+      {note.management &&
+      (note.management.goals ||
+        note.management.immediate ||
+        note.management.definitive ||
+        note.management.longTerm) ? (
         <Section num="18" title="Management">
           <div className="space-y-3">
-            {note.management.goals && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Goals of Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.goals} /></p></div>}
-            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.immediate} /></p></div>}
-            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.definitive} /></p></div>}
-            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.longTerm} /></p></div>}
+            {note.management.goals && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Goals of Treatment
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.management.goals} />
+                </p>
+              </div>
+            )}
+            {note.management.immediate && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-1">
+                  Immediate / Emergency
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.management.immediate} />
+                </p>
+              </div>
+            )}
+            {note.management.definitive && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">
+                  Definitive Treatment
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.management.definitive} />
+                </p>
+              </div>
+            )}
+            {note.management.longTerm && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                  Long-Term Management
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.management.longTerm} />
+                </p>
+              </div>
+            )}
           </div>
         </Section>
       ) : null}
@@ -2371,8 +2887,15 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
 
       {/* Kenyan Context (special callout) */}
       {note.kenyaContext && (
-        <Section num="KE" title="Kenyan Context" tone="green" icon={<Flag size={14} className="text-emerald-600 dark:text-emerald-400" />}>
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.kenyaContext} /></p>
+        <Section
+          num="KE"
+          title="Kenyan Context"
+          tone="green"
+          icon={<Flag size={14} className="text-emerald-600 dark:text-emerald-400" />}
+        >
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.kenyaContext} />
+          </p>
         </Section>
       )}
 
@@ -2396,15 +2919,37 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
                     <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
                     <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
                     <td className="px-4 py-3 text-[var(--text-muted)] text-xs leading-relaxed">
-                      {d.dose && <div><span className="font-semibold">Dose:</span> {d.dose}</div>}
-                      {d.mechanism && <div className="mt-1"><span className="font-semibold">MoA:</span> {d.mechanism}</div>}
-                      {d.monitoring && <div className="mt-1"><span className="font-semibold">Monitor:</span> {d.monitoring}</div>}
-                      {d.contraindications && <div className="mt-1"><span className="font-semibold text-rose-600">Avoid:</span> {d.contraindications}</div>}
+                      {d.dose && (
+                        <div>
+                          <span className="font-semibold">Dose:</span> {d.dose}
+                        </div>
+                      )}
+                      {d.mechanism && (
+                        <div className="mt-1">
+                          <span className="font-semibold">MoA:</span> {d.mechanism}
+                        </div>
+                      )}
+                      {d.monitoring && (
+                        <div className="mt-1">
+                          <span className="font-semibold">Monitor:</span> {d.monitoring}
+                        </div>
+                      )}
+                      {d.contraindications && (
+                        <div className="mt-1">
+                          <span className="font-semibold text-rose-600">Avoid:</span>{' '}
+                          {d.contraindications}
+                        </div>
+                      )}
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-1">
                         {d.sideEffects.map((se, j) => (
-                          <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold">{se}</span>
+                          <span
+                            key={j}
+                            className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold"
+                          >
+                            {se}
+                          </span>
                         ))}
                       </div>
                     </td>
@@ -2417,21 +2962,51 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
           {/* Mobile stacked cards */}
           <div className="md:hidden space-y-3">
             {note.keyDrugs.map((d, i) => (
-              <div key={i} className="border border-[var(--border)]/50 rounded-xl p-3 bg-[var(--surface-dim)]/30">
+              <div
+                key={i}
+                className="border border-[var(--border)]/50 rounded-xl p-3 bg-[var(--surface-dim)]/30"
+              >
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="font-bold text-[var(--text)] text-sm">{d.drug}</span>
-                  <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] shrink-0">{d.class}</span>
+                  <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] shrink-0">
+                    {d.class}
+                  </span>
                 </div>
                 <div className="space-y-1.5 text-xs text-[var(--text)] leading-relaxed">
-                  {d.dose && <div><span className="font-semibold text-[var(--text-muted)]">Dose: </span>{d.dose}</div>}
-                  {d.mechanism && <div><span className="font-semibold text-[var(--text-muted)]">MoA: </span>{d.mechanism}</div>}
-                  {d.monitoring && <div><span className="font-semibold text-[var(--text-muted)]">Monitor: </span>{d.monitoring}</div>}
-                  {d.contraindications && <div><span className="font-semibold text-rose-600">Avoid: </span>{d.contraindications}</div>}
+                  {d.dose && (
+                    <div>
+                      <span className="font-semibold text-[var(--text-muted)]">Dose: </span>
+                      {d.dose}
+                    </div>
+                  )}
+                  {d.mechanism && (
+                    <div>
+                      <span className="font-semibold text-[var(--text-muted)]">MoA: </span>
+                      {d.mechanism}
+                    </div>
+                  )}
+                  {d.monitoring && (
+                    <div>
+                      <span className="font-semibold text-[var(--text-muted)]">Monitor: </span>
+                      {d.monitoring}
+                    </div>
+                  )}
+                  {d.contraindications && (
+                    <div>
+                      <span className="font-semibold text-rose-600">Avoid: </span>
+                      {d.contraindications}
+                    </div>
+                  )}
                 </div>
                 {d.sideEffects.length > 0 && (
                   <div className="flex flex-wrap gap-1 mt-2">
                     {d.sideEffects.map((se, j) => (
-                      <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold">{se}</span>
+                      <span
+                        key={j}
+                        className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold"
+                      >
+                        {se}
+                      </span>
                     ))}
                   </div>
                 )}
@@ -2444,14 +3019,18 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* §21 Surgical Management */}
       {note.surgical && (
         <Section num="21" title="Surgical Management">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.surgical} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.surgical} />
+          </p>
         </Section>
       )}
 
       {/* §22 Monitoring */}
       {note.monitoring && (
         <Section num="22" title="Monitoring Parameters" tone="amber">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.monitoring} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.monitoring} />
+          </p>
         </Section>
       )}
 
@@ -2465,7 +3044,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* §24 Prognosis */}
       {note.prognosis && (
         <Section num="24" title="Prognosis">
-          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.prognosis} /></p>
+          <p className="text-sm text-[var(--text)] leading-relaxed">
+            <HighlightTerms text={note.prognosis} />
+          </p>
         </Section>
       )}
 
@@ -2514,7 +3095,10 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Diagram (treatment algorithm) */}
       {note.diagram && (
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
-          <div className="diagram-host" dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.diagram) }} />
+          <div
+            className="diagram-host"
+            dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.diagram) }}
+          />
         </div>
       )}
 
@@ -2523,9 +3107,14 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <div className="bg-gradient-to-br from-[var(--surface-dim)]/40 to-transparent border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-1 h-4 bg-[var(--primary)] rounded-full" />
-            <h4 className="text-xs font-black uppercase tracking-wider text-[var(--primary)]">Mechanism &amp; Pathophysiology</h4>
+            <h4 className="text-xs font-black uppercase tracking-wider text-[var(--primary)]">
+              Mechanism &amp; Pathophysiology
+            </h4>
           </div>
-          <div className="diagram-host" dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.pathophysiologyDiagram) }} />
+          <div
+            className="diagram-host"
+            dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.pathophysiologyDiagram) }}
+          />
         </div>
       )}
 
@@ -2536,7 +3125,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             {note.faq.map((f, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
                 <p className="text-sm font-bold text-[var(--text)]">{f.q}</p>
-                <p className="text-xs text-[var(--text)] mt-1 leading-relaxed"><HighlightTerms text={f.a} /></p>
+                <p className="text-xs text-[var(--text)] mt-1 leading-relaxed">
+                  <HighlightTerms text={f.a} />
+                </p>
               </div>
             ))}
           </div>
@@ -2547,13 +3138,76 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {note.caseExample && (
         <Section num="33" title="Clinical Case Example">
           <div className="space-y-2">
-            {note.caseExample.presentation && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Presentation</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.presentation} /></p></div>}
-            {note.caseExample.examination && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Examination</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.examination} /></p></div>}
-            {note.caseExample.investigations && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Investigations</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.investigations} /></p></div>}
-            {note.caseExample.assessment && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Assessment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.assessment} /></p></div>}
-            {note.caseExample.management && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Management</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.management} /></p></div>}
-            {note.caseExample.followUp && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Follow-Up</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.followUp} /></p></div>}
-            {note.caseExample.learningPoints && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Learning Points</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.learningPoints} /></p></div>}
+            {note.caseExample.presentation && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Presentation
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.presentation} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.examination && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Examination
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.examination} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.investigations && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Investigations
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.investigations} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.assessment && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Assessment
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.assessment} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.management && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Management
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.management} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.followUp && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Follow-Up
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.followUp} />
+                </p>
+              </div>
+            )}
+            {note.caseExample.learningPoints && (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">
+                  Learning Points
+                </h4>
+                <p className="text-sm text-[var(--text)] leading-relaxed">
+                  <HighlightTerms text={note.caseExample.learningPoints} />
+                </p>
+              </div>
+            )}
           </div>
         </Section>
       )}
@@ -2574,7 +3228,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <Section num="35" title="References">
           <ol className="space-y-1.5 list-decimal list-inside">
             {note.references.map((r, i) => (
-              <li key={i} className="text-xs text-[var(--text-muted)] leading-relaxed">{r}</li>
+              <li key={i} className="text-xs text-[var(--text-muted)] leading-relaxed">
+                {r}
+              </li>
             ))}
           </ol>
         </Section>
@@ -2585,11 +3241,21 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <Section num="36" title="Metadata">
           <DefinitionList
             rows={[
-              ...(note.metadata.lastUpdated ? [{ label: 'Last Updated', value: note.metadata.lastUpdated }] : []),
-              ...(note.metadata.version ? [{ label: 'Version', value: note.metadata.version }] : []),
-              ...(note.metadata.author ? [{ label: 'Content Author', value: note.metadata.author }] : []),
-              ...(note.metadata.reviewer ? [{ label: 'Clinical Reviewer', value: note.metadata.reviewer }] : []),
-              ...(note.metadata.evidenceLevel ? [{ label: 'Evidence Level', value: note.metadata.evidenceLevel }] : []),
+              ...(note.metadata.lastUpdated
+                ? [{ label: 'Last Updated', value: note.metadata.lastUpdated }]
+                : []),
+              ...(note.metadata.version
+                ? [{ label: 'Version', value: note.metadata.version }]
+                : []),
+              ...(note.metadata.author
+                ? [{ label: 'Content Author', value: note.metadata.author }]
+                : []),
+              ...(note.metadata.reviewer
+                ? [{ label: 'Clinical Reviewer', value: note.metadata.reviewer }]
+                : []),
+              ...(note.metadata.evidenceLevel
+                ? [{ label: 'Evidence Level', value: note.metadata.evidenceLevel }]
+                : []),
             ]}
           />
         </Section>
@@ -2621,7 +3287,9 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
   return (
     <div className="border border-[var(--border)]/40 rounded-xl p-4 space-y-3">
       <div className="flex items-start gap-2">
-        <span className="text-[10px] font-black text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded shrink-0 mt-0.5">Q{index + 1}</span>
+        <span className="text-[10px] font-black text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded shrink-0 mt-0.5">
+          Q{index + 1}
+        </span>
         <p className="text-xs font-bold text-[var(--text)] leading-relaxed">{mcq.question}</p>
       </div>
       <div className="border border-[var(--border)]/40 rounded-xl overflow-hidden divide-y divide-[var(--border)]/20">
@@ -2632,8 +3300,11 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
 
           let style = 'bg-[var(--bg)] hover:bg-[var(--surface-dim)]'
           if (answered) {
-            if (isCorrect) style = 'bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-300 font-bold'
-            else if (isSelected) style = 'bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-300'
+            if (isCorrect)
+              style =
+                'bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-300 font-bold'
+            else if (isSelected)
+              style = 'bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-300'
             else style = 'bg-[var(--surface-dim)] opacity-50'
           } else if (isSelected) {
             style = 'bg-[var(--primary)]/5 font-bold'
@@ -2661,13 +3332,20 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
         </button>
       ) : (
         <div className="space-y-2">
-          <div className={`text-xs font-semibold ${selected?.charAt(0) === correctLetter ? 'text-emerald-600' : 'text-red-600'}`}>
-            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect — Answer: ${correctLetter}`}
+          <div
+            className={`text-xs font-semibold ${selected?.charAt(0) === correctLetter ? 'text-emerald-600' : 'text-red-600'}`}
+          >
+            {selected?.charAt(0) === correctLetter
+              ? 'Correct'
+              : `Incorrect — Answer: ${correctLetter}`}
           </div>
           <p className="text-[11px] text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)]/50 rounded-lg p-3 border border-[var(--border)]/30">
             <HighlightTerms text={mcq.explanation} />
           </p>
-          <button onClick={handleReset} className="text-xs text-[var(--primary)] font-bold hover:underline cursor-pointer">
+          <button
+            onClick={handleReset}
+            className="text-xs text-[var(--primary)] font-bold hover:underline cursor-pointer"
+          >
             Try Again
           </button>
         </div>
@@ -2679,32 +3357,42 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
 // ==========================================
 // WORKSPACE FLASHCARDS (ACTIVE RECALL)
 // ==========================================
-function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userData }: { module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const [cards, setCards] = useState<SavedFlashcard[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setIsFlipped] = useState(false);
+function WorkspaceFlashcards({
+  module,
+  currentFolderId,
+  currentFolderName,
+  userData,
+}: {
+  module: EducationModule
+  currentFolderId: string
+  currentFolderName: string
+  userData: any
+}) {
+  const [cards, setCards] = useState<SavedFlashcard[]>([])
+  const [loading, setLoading] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isFlipped, setIsFlipped] = useState(false)
 
   // Fetch saved flashcards on mount/folder change
   useEffect(() => {
     const loadCards = async () => {
-      const saved = await EducationService.getFlashcards(currentFolderId);
-      setCards(saved);
-      setCurrentIndex(0);
-      setIsFlipped(false);
-    };
-    loadCards();
-  }, [currentFolderId]);
+      const saved = await EducationService.getFlashcards(currentFolderId)
+      setCards(saved)
+      setCurrentIndex(0)
+      setIsFlipped(false)
+    }
+    loadCards()
+  }, [currentFolderId])
 
   const handleGenerateCards = async () => {
-    setLoading(true);
-    setIsFlipped(false);
-    setCurrentIndex(0);
+    setLoading(true)
+    setIsFlipped(false)
+    setCurrentIndex(0)
     try {
       // Gather source text
-      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`;
+      const savedSummary = (await EducationService.getSummary(currentFolderId)) || ''
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || ''
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`
 
       const res = await fetch('/api/gemini/generate-unit-flashcards', {
         method: 'POST',
@@ -2712,17 +3400,17 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
         body: JSON.stringify({
           unitTitle: currentFolderName,
           moduleTitle: module.title,
-          notesText: notesCombined.trim() || undefined
-        })
-      });
+          notesText: notesCombined.trim() || undefined,
+        }),
+      })
 
-      if (!res.ok) throw new Error('Service unavailable');
-      const data = await res.json();
-      
+      if (!res.ok) throw new Error('Service unavailable')
+      const data = await res.json()
+
       if (data.flashcards && data.flashcards.length > 0) {
-        const saved = await EducationService.saveFlashcards(currentFolderId, data.flashcards);
-        setCards(saved);
-        
+        const saved = await EducationService.saveFlashcards(currentFolderId, data.flashcards)
+        setCards(saved)
+
         // Also save to AIContentService for cross-referencing and export
         if (userData?.id) {
           try {
@@ -2736,115 +3424,128 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
                 specialty: module.title,
                 curriculumUnitId: currentFolderId,
                 difficulty: 'Intermediate',
-              }
-            );
+              },
+            )
           } catch (err) {
-            console.warn('[EducationHub] Failed to save flashcards to AIContentService:', err);
+            console.warn('[EducationHub] Failed to save flashcards to AIContentService:', err)
           }
         }
       }
     } catch (err) {
-      console.error(err);
-      alert('Failed to generate flashcards. Please try again.');
+      console.error(err)
+      alert('Failed to generate flashcards. Please try again.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   const handleRateDifficulty = async (difficulty: 'easy' | 'medium' | 'hard') => {
-    if (cards.length === 0) return;
-    const currentCard = cards[currentIndex];
-    
+    if (cards.length === 0) return
+    const currentCard = cards[currentIndex]
+
     try {
-      await EducationService.updateFlashcardDifficulty(currentCard.id, difficulty, currentFolderId);
+      await EducationService.updateFlashcardDifficulty(currentCard.id, difficulty, currentFolderId)
       // Update local state statefully
-      setCards(prev => prev.map((c, idx) => idx === currentIndex ? { ...c, difficulty } : c));
-      
+      setCards((prev) => prev.map((c, idx) => (idx === currentIndex ? { ...c, difficulty } : c)))
+
       // Auto advance after short delay
       setTimeout(() => {
         if (currentIndex < cards.length - 1) {
-          setIsFlipped(false);
-          setCurrentIndex(idx => idx + 1);
+          setIsFlipped(false)
+          setCurrentIndex((idx) => idx + 1)
         }
-      }, 300);
+      }, 300)
     } catch (err) {
-      console.error(err);
+      console.error(err)
     }
-  };
+  }
 
   const handleNext = () => {
     if (currentIndex < cards.length - 1) {
-      setIsFlipped(false);
-      setCurrentIndex(idx => idx + 1);
+      setIsFlipped(false)
+      setCurrentIndex((idx) => idx + 1)
     }
-  };
+  }
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setIsFlipped(false);
-      setCurrentIndex(idx => idx - 1);
+      setIsFlipped(false)
+      setCurrentIndex((idx) => idx - 1)
     }
-  };
+  }
 
-  if (loading) {
+  const showLoading = useMinimumLoading(loading)
+
+  if (showLoading) {
     return (
-      <div className="h-[350px] border border-dashed border-[var(--border)] rounded-2xl flex flex-col items-center justify-center text-center p-6 bg-[var(--surface)]">
-        <div className="w-14 h-14 bg-purple-500/10 text-purple-600 rounded-full flex items-center justify-center mb-4 animate-pulse">
-          <Layers size={28} className="animate-spin" />
-        </div>
-        <h3 className="text-base font-bold text-[var(--text)]">Analyzing Course Materials...</h3>
-        <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm">
-          Extracting high-yield questions, core guidelines, and target dosing facts to prepare your custom memorization deck.
-        </p>
+      <div className="h-[350px]">
+        <PageLoader
+          title="Analyzing Course Materials..."
+          subtitle="Extracting high-yield questions, core guidelines, and target dosing facts to prepare your custom memorization deck."
+          icon={<Layers size={36} className="text-purple-600 animate-spin" />}
+        />
       </div>
-    );
+    )
   }
 
   return (
     <div className="space-y-6">
       {cards.length > 0 ? (
         <div className="max-w-xl mx-auto space-y-6">
-          
           {/* Deck Header & Progress */}
           <div className="flex items-center justify-between text-xs font-semibold text-[var(--text-muted)]">
             <span>Spaced-Repetition Active Recall Deck</span>
-            <span>Card {currentIndex + 1} of {cards.length}</span>
+            <span>
+              Card {currentIndex + 1} of {cards.length}
+            </span>
           </div>
 
           {/* Flashcard Area */}
-          <div 
+          <div
             onClick={() => setIsFlipped(!isFlipped)}
             className="min-h-[260px] bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-md cursor-pointer transition-all hover:scale-[1.01] relative overflow-hidden"
           >
             {/* Flipped Background Accents */}
-            <div className={`absolute top-0 inset-x-0 h-1.5 transition-colors ${isFlipped ? 'bg-purple-500' : 'bg-[var(--primary)]'}`} />
+            <div
+              className={`absolute top-0 inset-x-0 h-1.5 transition-colors ${isFlipped ? 'bg-purple-500' : 'bg-[var(--primary)]'}`}
+            />
 
             <div className="flex-1 flex flex-col justify-center py-4">
               {!isFlipped ? (
                 <div className="text-center space-y-4">
-                  <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 rounded-full">Question</span>
-                  <h4 className="text-lg font-black text-[var(--text)] leading-snug">{cards[currentIndex].question}</h4>
+                  <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 rounded-full">
+                    Question
+                  </span>
+                  <h4 className="text-lg font-black text-[var(--text)] leading-snug">
+                    {cards[currentIndex].question}
+                  </h4>
                 </div>
               ) : (
                 <div className="text-center space-y-4 animate-in fade-in zoom-in-98 duration-200">
-                  <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 rounded-full">Answer</span>
-                  <p className="text-sm text-[var(--text-muted)] font-semibold leading-relaxed max-w-md mx-auto">{cards[currentIndex].answer}</p>
+                  <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 rounded-full">
+                    Answer
+                  </span>
+                  <p className="text-sm text-[var(--text-muted)] font-semibold leading-relaxed max-w-md mx-auto">
+                    {cards[currentIndex].answer}
+                  </p>
                 </div>
               )}
             </div>
 
             <div className="text-center text-[10px] uppercase tracking-wider font-extrabold text-[var(--text-muted)] flex items-center justify-center gap-1">
-              <RotateCcw size={11} /> {isFlipped ? 'Click card to see question' : 'Click card to reveal answer'}
+              <RotateCcw size={11} />{' '}
+              {isFlipped ? 'Click card to see question' : 'Click card to reveal answer'}
             </div>
           </div>
 
           {/* Rating Controls & Nav Row */}
           <div className="flex flex-col gap-4">
-            
             {/* If flipped, show spaced repetition ratings */}
             {isFlipped && (
               <div className="bg-[var(--surface-dim)]/60 border border-[var(--border)]/40 p-4 rounded-2xl text-center space-y-3 animate-in slide-in-from-bottom-2 duration-200">
-                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] block">Rate your recall difficulty:</span>
+                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] block">
+                  Rate your recall difficulty:
+                </span>
                 <div className="flex gap-2">
                   <button
                     onClick={() => handleRateDifficulty('hard')}
@@ -2898,13 +3599,17 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
             <div className="flex gap-2 justify-center pt-4 border-t border-[var(--border)]/40">
               <button
                 onClick={() => {
-                  const content = cards.map((c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`).join('\n---\n');
+                  const content = cards
+                    .map(
+                      (c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`,
+                    )
+                    .join('\n---\n')
                   exportService.exportAndDownload({
                     title: `Flashcards: ${currentFolderName}`,
                     content,
                     format: 'pdf',
                     filename: `flashcards-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
-                  });
+                  })
                 }}
                 className="px-3 py-1.5 text-xs font-semibold bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/30 rounded-lg hover:bg-[var(--primary)]/20 transition-colors flex items-center gap-1 cursor-pointer"
               >
@@ -2912,13 +3617,17 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
               </button>
               <button
                 onClick={() => {
-                  const content = cards.map((c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`).join('\n---\n');
+                  const content = cards
+                    .map(
+                      (c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`,
+                    )
+                    .join('\n---\n')
                   exportService.exportAndDownload({
                     title: `Flashcards: ${currentFolderName}`,
                     content,
                     format: 'md',
                     filename: `flashcards-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
-                  });
+                  })
                 }}
                 className="px-3 py-1.5 text-xs font-semibold bg-purple-500/10 text-purple-600 border border-purple-500/30 rounded-lg hover:bg-purple-500/20 transition-colors flex items-center gap-1 cursor-pointer"
               >
@@ -2926,18 +3635,20 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
               </button>
             </div>
           </div>
-
         </div>
       ) : (
         <div className="h-[350px] border border-dashed border-[var(--border)] rounded-2xl flex flex-col items-center justify-center text-center p-6 bg-[var(--surface)]">
           <div className="w-16 h-16 bg-purple-500/10 text-purple-600 rounded-full flex items-center justify-center mb-4">
             <Layers size={32} />
           </div>
-          <h3 className="text-xl font-bold text-[var(--text)] mb-2">Spaced Repetition Active Recall Cards</h3>
+          <h3 className="text-xl font-bold text-[var(--text)] mb-2">
+            Spaced Repetition Active Recall Cards
+          </h3>
           <p className="text-sm text-[var(--text-muted)] max-w-sm mb-4 leading-relaxed">
-            Memorize dosage formulas, pharmacological mechanism chains, or adverse profiles with custom revision flashcards.
+            Memorize dosage formulas, pharmacological mechanism chains, or adverse profiles with
+            custom revision flashcards.
           </p>
-          <button 
+          <button
             onClick={handleGenerateCards}
             className="px-6 py-3 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white font-bold rounded-xl flex items-center gap-2 shadow-md hover:opacity-95 transition-all cursor-pointer"
           >
@@ -2946,46 +3657,56 @@ function WorkspaceFlashcards({ module, currentFolderId, currentFolderName, userD
         </div>
       )}
     </div>
-  );
+  )
 }
 
 // ==========================================
 // WORKSPACE QUIZZES (INTERACTIVE MCQS ASSESSMENT)
 // ==========================================
-function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData }: { module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const [quizzes, setQuizzes] = useState<SavedQuiz[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [score, setScore] = useState(0);
-  const [quizFinished, setQuizFinished] = useState(false);
+function WorkspaceQuizzes({
+  module,
+  currentFolderId,
+  currentFolderName,
+  userData,
+}: {
+  module: EducationModule
+  currentFolderId: string
+  currentFolderName: string
+  userData: any
+}) {
+  const [quizzes, setQuizzes] = useState<SavedQuiz[]>([])
+  const [loading, setLoading] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
+  const [isAnswered, setIsAnswered] = useState(false)
+  const [score, setScore] = useState(0)
+  const [quizFinished, setQuizFinished] = useState(false)
 
   // Load existing quizzes on mount/folder change
   useEffect(() => {
     const loadQuizzes = async () => {
-      const saved = await EducationService.getQuizzes(currentFolderId);
-      setQuizzes(saved);
-      setCurrentIndex(0);
-      setSelectedAnswer(null);
-      setIsAnswered(false);
-      setScore(0);
-      setQuizFinished(false);
-    };
-    loadQuizzes();
-  }, [currentFolderId]);
+      const saved = await EducationService.getQuizzes(currentFolderId)
+      setQuizzes(saved)
+      setCurrentIndex(0)
+      setSelectedAnswer(null)
+      setIsAnswered(false)
+      setScore(0)
+      setQuizFinished(false)
+    }
+    loadQuizzes()
+  }, [currentFolderId])
 
   const handleGenerateQuiz = async () => {
-    setLoading(true);
-    setQuizFinished(false);
-    setCurrentIndex(0);
-    setSelectedAnswer(null);
-    setIsAnswered(false);
-    setScore(0);
+    setLoading(true)
+    setQuizFinished(false)
+    setCurrentIndex(0)
+    setSelectedAnswer(null)
+    setIsAnswered(false)
+    setScore(0)
     try {
-      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`;
+      const savedSummary = (await EducationService.getSummary(currentFolderId)) || ''
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || ''
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`
 
       const res = await fetch('/api/gemini/generate-unit-quiz', {
         method: 'POST',
@@ -2993,17 +3714,17 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
         body: JSON.stringify({
           unitTitle: currentFolderName,
           moduleTitle: module.title,
-          notesText: notesCombined.trim() || undefined
-        })
-      });
+          notesText: notesCombined.trim() || undefined,
+        }),
+      })
 
-      if (!res.ok) throw new Error('Service unavailable');
-      const data = await res.json();
-      
+      if (!res.ok) throw new Error('Service unavailable')
+      const data = await res.json()
+
       if (data.quizzes && data.quizzes.length > 0) {
-        const saved = await EducationService.saveQuizzes(currentFolderId, data.quizzes);
-        setQuizzes(saved);
-        
+        const saved = await EducationService.saveQuizzes(currentFolderId, data.quizzes)
+        setQuizzes(saved)
+
         // Also save to AIContentService for cross-referencing and export
         if (userData?.id) {
           try {
@@ -3017,78 +3738,79 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
                 specialty: module.title,
                 curriculumUnitId: currentFolderId,
                 difficulty: 'Intermediate',
-              }
-            );
+              },
+            )
           } catch (err) {
-            console.warn('[EducationHub] Failed to save quiz to AIContentService:', err);
+            console.warn('[EducationHub] Failed to save quiz to AIContentService:', err)
           }
         }
       }
     } catch (err) {
-      console.error(err);
-      alert('Failed to generate quiz. Please try again.');
+      console.error(err)
+      alert('Failed to generate quiz. Please try again.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   const handleSelectOption = (opt: string) => {
-    if (isAnswered) return;
-    setSelectedAnswer(opt);
-  };
+    if (isAnswered) return
+    setSelectedAnswer(opt)
+  }
 
   const handleVerifyAnswer = () => {
-    if (!selectedAnswer || isAnswered) return;
-    setIsAnswered(true);
-    
-    const correct = quizzes[currentIndex].correctAnswer;
+    if (!selectedAnswer || isAnswered) return
+    setIsAnswered(true)
+
+    const correct = quizzes[currentIndex].correctAnswer
     if (selectedAnswer === correct) {
-      setScore(s => s + 1);
+      setScore((s) => s + 1)
     }
-  };
+  }
 
   const handleNextQuestion = () => {
     if (currentIndex < quizzes.length - 1) {
-      setSelectedAnswer(null);
-      setIsAnswered(false);
-      setCurrentIndex(idx => idx + 1);
+      setSelectedAnswer(null)
+      setIsAnswered(false)
+      setCurrentIndex((idx) => idx + 1)
     } else {
-      setQuizFinished(true);
+      setQuizFinished(true)
     }
-  };
+  }
 
   const handleResetQuiz = () => {
-    setCurrentIndex(0);
-    setSelectedAnswer(null);
-    setIsAnswered(false);
-    setScore(0);
-    setQuizFinished(false);
-  };
+    setCurrentIndex(0)
+    setSelectedAnswer(null)
+    setIsAnswered(false)
+    setScore(0)
+    setQuizFinished(false)
+  }
 
-  if (loading) {
+  const showLoading = useMinimumLoading(loading)
+
+  if (showLoading) {
     return (
-      <div className="h-[350px] border border-dashed border-[var(--border)] rounded-2xl flex flex-col items-center justify-center text-center p-6 bg-[var(--surface)]">
-        <div className="w-14 h-14 bg-purple-500/10 text-purple-600 rounded-full flex items-center justify-center mb-4 animate-pulse">
-          <QuestionIcon size={28} className="animate-spin" />
-        </div>
-        <h3 className="text-base font-bold text-[var(--text)]">Compiling Board Questions...</h3>
-        <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm">
-          Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on the curriculum content.
-        </p>
+      <div className="h-[350px]">
+        <PageLoader
+          title="Compiling Board Questions..."
+          subtitle="Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on the curriculum content."
+          icon={<QuestionIcon size={36} className="text-purple-600 animate-spin" />}
+        />
       </div>
-    );
+    )
   }
 
   return (
     <div className="space-y-6">
       {quizzes.length > 0 ? (
         <div className="max-w-xl mx-auto space-y-6">
-          
           {/* Quiz Stats Row */}
           {!quizFinished ? (
             <div className="flex items-center justify-between text-xs font-semibold text-[var(--text-muted)]">
               <span>OSCE Board Examination Simulator</span>
-              <span>Question {currentIndex + 1} of {quizzes.length}</span>
+              <span>
+                Question {currentIndex + 1} of {quizzes.length}
+              </span>
             </div>
           ) : (
             <div className="text-center text-xs font-semibold text-[var(--text-muted)]">
@@ -3098,29 +3820,36 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
 
           {!quizFinished ? (
             <div className="space-y-4">
-              
               {/* Question Vignette Card */}
               <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
-                <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-purple-50 dark:bg-purple-950/40 text-purple-600 dark:text-purple-300 rounded-full">Clinical Case Vignette</span>
-                <h4 className="text-sm font-bold text-[var(--text)] leading-relaxed">{quizzes[currentIndex].question}</h4>
+                <span className="text-[10px] uppercase font-black px-2.5 py-1 bg-purple-50 dark:bg-purple-950/40 text-purple-600 dark:text-purple-300 rounded-full">
+                  Clinical Case Vignette
+                </span>
+                <h4 className="text-sm font-bold text-[var(--text)] leading-relaxed">
+                  {quizzes[currentIndex].question}
+                </h4>
               </div>
 
               {/* Options list */}
               <div className="space-y-2.5">
                 {quizzes[currentIndex].options.map((opt, i) => {
-                  const isSelected = selectedAnswer === opt;
-                  const isCorrectOpt = quizzes[currentIndex].correctAnswer === opt;
-                  
-                  let optStyle = "border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)]";
-                  if (isSelected && !isAnswered) optStyle = "border-[var(--primary)] bg-[var(--primary)]/5 font-bold";
-                  
+                  const isSelected = selectedAnswer === opt
+                  const isCorrectOpt = quizzes[currentIndex].correctAnswer === opt
+
+                  let optStyle =
+                    'border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)]'
+                  if (isSelected && !isAnswered)
+                    optStyle = 'border-[var(--primary)] bg-[var(--primary)]/5 font-bold'
+
                   if (isAnswered) {
                     if (isCorrectOpt) {
-                      optStyle = "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-300 font-bold";
+                      optStyle =
+                        'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-300 font-bold'
                     } else if (isSelected) {
-                      optStyle = "border-red-500 bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-300 font-bold";
+                      optStyle =
+                        'border-red-500 bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-300 font-bold'
                     } else {
-                      optStyle = "border-[var(--border)]/40 bg-[var(--surface-dim)] opacity-60";
+                      optStyle = 'border-[var(--border)]/40 bg-[var(--surface-dim)] opacity-60'
                     }
                   }
 
@@ -3132,10 +3861,14 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
                       className={`w-full p-4 border rounded-xl text-left text-xs sm:text-sm transition-all flex items-center justify-between min-h-[48px] ${optStyle}`}
                     >
                       <span className="flex-1 pr-3">{opt}</span>
-                      {isAnswered && isCorrectOpt && <CheckCircle2 size={16} className="text-emerald-500 shrink-0" />}
-                      {isAnswered && isSelected && !isCorrectOpt && <AlertCircle size={16} className="text-red-500 shrink-0" />}
+                      {isAnswered && isCorrectOpt && (
+                        <CheckCircle2 size={16} className="text-emerald-500 shrink-0" />
+                      )}
+                      {isAnswered && isSelected && !isCorrectOpt && (
+                        <AlertCircle size={16} className="text-red-500 shrink-0" />
+                      )}
                     </button>
-                  );
+                  )
                 })}
               </div>
 
@@ -3154,7 +3887,9 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
                     onClick={handleNextQuestion}
                     className="w-full py-3.5 bg-purple-600 hover:opacity-95 text-white rounded-xl font-bold text-sm shadow-sm cursor-pointer"
                   >
-                    {currentIndex === quizzes.length - 1 ? 'Finish Assessment' : 'Proceed to Next Case'}
+                    {currentIndex === quizzes.length - 1
+                      ? 'Finish Assessment'
+                      : 'Proceed to Next Case'}
                   </button>
                 )}
               </div>
@@ -3165,10 +3900,11 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
                   <h5 className="text-xs font-extrabold uppercase tracking-wider text-purple-700 dark:text-purple-300 flex items-center gap-1">
                     <BrainCircuit size={14} /> Clinical Explanation
                   </h5>
-                  <p className="text-xs text-[var(--text-muted)] font-semibold leading-relaxed">{quizzes[currentIndex].explanation}</p>
+                  <p className="text-xs text-[var(--text-muted)] font-semibold leading-relaxed">
+                    {quizzes[currentIndex].explanation}
+                  </p>
                 </div>
               )}
-
             </div>
           ) : (
             /* Finished Scoreboard View */
@@ -3178,17 +3914,24 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
               </div>
               <div className="space-y-1">
                 <h3 className="text-xl font-black text-[var(--text)]">Assessment Score</h3>
-                <p className="text-sm text-[var(--text-muted)] font-bold">You scored {score} out of {quizzes.length} correct cases</p>
+                <p className="text-sm text-[var(--text-muted)] font-bold">
+                  You scored {score} out of {quizzes.length} correct cases
+                </p>
               </div>
 
               <div className="max-w-xs mx-auto p-4 bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-2xl">
-                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] block mb-1">Clinical Assessment Result:</span>
+                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] block mb-1">
+                  Clinical Assessment Result:
+                </span>
                 <span className="text-sm font-black text-[var(--text)]">
-                  {score === quizzes.length ? 'ðŸŒŸ Exemplary Diagnostic Accuracy!' : score >= 3 ? 'ðŸ“š Solid Pharmacological Foundation' : 'ðŸ“– Review Guidelines & Re-examine'}
+                  {score === quizzes.length
+                    ? 'ðŸŒŸ Exemplary Diagnostic Accuracy!'
+                    : score >= 3
+                      ? 'ðŸ“š Solid Pharmacological Foundation'
+                      : 'ðŸ“– Review Guidelines & Re-examine'}
                 </span>
               </div>
-<div className="flex gap-4">
-
+              <div className="flex gap-4">
                 <button
                   onClick={handleResetQuiz}
                   className="flex-1 py-3 border border-[var(--border)] text-[var(--text)] rounded-xl font-bold text-xs hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
@@ -3206,15 +3949,18 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
               <div className="flex gap-2 justify-center pt-4 border-t border-[var(--border)]/40">
                 <button
                   onClick={() => {
-                    const content = quizzes.map((q, i) => 
-                      `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`
-                    ).join('\n---\n');
+                    const content = quizzes
+                      .map(
+                        (q, i) =>
+                          `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`,
+                      )
+                      .join('\n---\n')
                     exportService.exportAndDownload({
                       title: `Quiz: ${currentFolderName}`,
                       content,
                       format: 'pdf',
                       filename: `quiz-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
-                    });
+                    })
                   }}
                   className="px-3 py-1.5 text-xs font-semibold bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/30 rounded-lg hover:bg-[var(--primary)]/20 transition-colors flex items-center gap-1 cursor-pointer"
                 >
@@ -3222,15 +3968,18 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
                 </button>
                 <button
                   onClick={() => {
-                    const content = quizzes.map((q, i) => 
-                      `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`
-                    ).join('\n---\n');
+                    const content = quizzes
+                      .map(
+                        (q, i) =>
+                          `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`,
+                      )
+                      .join('\n---\n')
                     exportService.exportAndDownload({
                       title: `Quiz: ${currentFolderName}`,
                       content,
                       format: 'md',
                       filename: `quiz-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
-                    });
+                    })
                   }}
                   className="px-3 py-1.5 text-xs font-semibold bg-purple-500/10 text-purple-600 border border-purple-500/30 rounded-lg hover:bg-purple-500/20 transition-colors flex items-center gap-1 cursor-pointer"
                 >
@@ -3239,18 +3988,20 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
               </div>
             </div>
           )}
-
         </div>
       ) : (
         <div className="h-[350px] border border-dashed border-[var(--border)] rounded-2xl flex flex-col items-center justify-center text-center p-6 bg-[var(--surface)]">
           <div className="w-16 h-16 bg-purple-500/10 text-purple-600 rounded-full flex items-center justify-center mb-4">
             <QuestionIcon size={32} />
           </div>
-          <h3 className="text-xl font-bold text-[var(--text)] mb-2">Clinical MCQ Board Simulator</h3>
+          <h3 className="text-xl font-bold text-[var(--text)] mb-2">
+            Clinical MCQ Board Simulator
+          </h3>
           <p className="text-sm text-[var(--text-muted)] max-w-sm mb-4 leading-relaxed">
-            Practice board-style vignette questions, diagnostic formulas, and medication reconciliation challenges compiled from the curriculum content.
+            Practice board-style vignette questions, diagnostic formulas, and medication
+            reconciliation challenges compiled from the curriculum content.
           </p>
-          <button 
+          <button
             onClick={handleGenerateQuiz}
             className="px-6 py-3 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white font-bold rounded-xl flex items-center gap-2 shadow-md hover:opacity-95 transition-all cursor-pointer"
           >
@@ -3259,33 +4010,42 @@ function WorkspaceQuizzes({ module, currentFolderId, currentFolderName, userData
         </div>
       )}
     </div>
-  );
+  )
 }
 
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit, module, currentFolderName }: { unit: EducationModuleUnit, module: EducationModule, currentFolderName: string }) {
-  const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id]);
-  const moduleResources = useMemo(() => getResourcesForModule(module.id), [module.id]);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [bookSearch, setBookSearch] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'all' | DigitalLibraryResource['type']>('all');
+function WorkspaceResources({
+  unit,
+  module,
+  currentFolderName,
+}: {
+  unit: EducationModuleUnit
+  module: EducationModule
+  currentFolderName: string
+}) {
+  const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id])
+  const moduleResources = useMemo(() => getResourcesForModule(module.id), [module.id])
+  const [isExpanded, setIsExpanded] = useState(false)
+  const [bookSearch, setBookSearch] = useState('')
+  const [typeFilter, setTypeFilter] = useState<'all' | DigitalLibraryResource['type']>('all')
 
-  const displayedUnit = isExpanded ? unitResources : unitResources.slice(0, 8);
+  const displayedUnit = isExpanded ? unitResources : unitResources.slice(0, 8)
 
   const filteredModuleBooks = useMemo(() => {
     let books = moduleResources
     if (typeFilter !== 'all') {
-      books = books.filter(b => b.type === typeFilter)
+      books = books.filter((b) => b.type === typeFilter)
     }
     if (bookSearch.trim()) {
       const q = bookSearch.toLowerCase()
-      books = books.filter(b =>
-        b.title.toLowerCase().includes(q) ||
-        b.authors.toLowerCase().includes(q) ||
-        b.keywords.toLowerCase().includes(q) ||
-        (b.subjects || []).some(s => s.toLowerCase().includes(q))
+      books = books.filter(
+        (b) =>
+          b.title.toLowerCase().includes(q) ||
+          b.authors.toLowerCase().includes(q) ||
+          b.keywords.toLowerCase().includes(q) ||
+          (b.subjects || []).some((s) => s.toLowerCase().includes(q)),
       )
     }
     return books
@@ -3298,7 +4058,7 @@ function WorkspaceResources({ unit, module, currentFolderName }: { unit: Educati
     handbook: <BookOpen size={16} />,
     formulary: <FileText size={16} />,
     oer: <Award size={16} />,
-  };
+  }
 
   return (
     <div className="space-y-6">
@@ -3321,18 +4081,21 @@ function WorkspaceResources({ unit, module, currentFolderName }: { unit: Educati
       {/* Search & Filter */}
       <div className="flex flex-col sm:flex-row gap-2">
         <div className="relative flex-1">
-          <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+          <Search
+            size={15}
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+          />
           <input
             type="text"
             value={bookSearch}
-            onChange={e => setBookSearch(e.target.value)}
+            onChange={(e) => setBookSearch(e.target.value)}
             placeholder="Search books within this module..."
             className="w-full pl-9 pr-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
           />
         </div>
         <select
           value={typeFilter}
-          onChange={e => setTypeFilter(e.target.value as any)}
+          onChange={(e) => setTypeFilter(e.target.value as any)}
           className="px-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors cursor-pointer"
         >
           <option value="all">All Types</option>
@@ -3352,32 +4115,55 @@ function WorkspaceResources({ unit, module, currentFolderName }: { unit: Educati
             Tagged for this unit ({unitResources.length})
           </p>
           {displayedUnit.map((res) => (
-            <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex items-start justify-between hover:border-[var(--primary)] transition-colors group shadow-xs">
+            <div
+              key={res.id}
+              className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex items-start justify-between hover:border-[var(--primary)] transition-colors group shadow-xs"
+            >
               <div className="flex items-start gap-3 min-w-0">
                 <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
                   {typeIcons[res.type] || <BookOpen size={16} />}
                 </div>
                 <div className="min-w-0">
-                  <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
+                  <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">
+                    {res.title}
+                  </h4>
                   <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1">
-                    {res.authors} &bull; {res.edition ? `${res.edition}, ` : ''}{res.year}
+                    {res.authors} &bull; {res.edition ? `${res.edition}, ` : ''}
+                    {res.year}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-1.5">
-                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">{res.type}</span>
-                    {res.isFree && <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">Free</span>}
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">
+                      {res.type}
+                    </span>
+                    {res.isFree && (
+                      <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">
+                        Free
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
               {res.publisherUrl && (
-                <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer shrink-0" title="Open resource">
+                <a
+                  href={res.publisherUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer shrink-0"
+                  title="Open resource"
+                >
                   <ArrowUpRight size={16} />
                 </a>
               )}
             </div>
           ))}
           {unitResources.length > 8 && (
-            <button onClick={() => setIsExpanded(!isExpanded)} className="w-full py-2 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors cursor-pointer">
-              {isExpanded ? `Show fewer (${8} of ${unitResources.length})` : `Show all ${unitResources.length} resources`}
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="w-full py-2 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors cursor-pointer"
+            >
+              {isExpanded
+                ? `Show fewer (${8} of ${unitResources.length})`
+                : `Show all ${unitResources.length} resources`}
             </button>
           )}
         </div>
@@ -3391,33 +4177,57 @@ function WorkspaceResources({ unit, module, currentFolderName }: { unit: Educati
         {filteredModuleBooks.length === 0 ? (
           <div className="py-8 text-center">
             <BookOpen size={24} className="text-[var(--text-muted)] mx-auto mb-2 opacity-50" />
-            <p className="text-xs text-[var(--text-muted)]">No resources match your search for this module</p>
+            <p className="text-xs text-[var(--text-muted)]">
+              No resources match your search for this module
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {filteredModuleBooks.map((res) => (
-              <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex flex-col hover:border-[var(--primary)] transition-colors group shadow-xs">
+              <div
+                key={res.id}
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex flex-col hover:border-[var(--primary)] transition-colors group shadow-xs"
+              >
                 <div className="flex items-start gap-3 min-w-0 flex-1">
                   <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
                     {typeIcons[res.type] || <BookOpen size={16} />}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
+                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">
+                      {res.title}
+                    </h4>
                     <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1 line-clamp-1">
                       {res.authors}
                     </p>
                     <p className="text-[9px] text-[var(--text-muted)] mt-0.5">
-                      {res.publisher} &bull; {res.year}{res.edition ? ` &bull; ${res.edition}` : ''}
+                      {res.publisher} &bull; {res.year}
+                      {res.edition ? ` &bull; ${res.edition}` : ''}
                     </p>
                     <div className="flex flex-wrap gap-1 mt-2">
-                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">{res.type}</span>
-                      {res.isFree && <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">Free</span>}
-                      {res.language && res.language !== 'en' && <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 uppercase">{res.language}</span>}
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">
+                        {res.type}
+                      </span>
+                      {res.isFree && (
+                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">
+                          Free
+                        </span>
+                      )}
+                      {res.language && res.language !== 'en' && (
+                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 uppercase">
+                          {res.language}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
                 {res.publisherUrl && (
-                  <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="mt-2 w-full py-1.5 text-center text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors" title="Open resource">
+                  <a
+                    href={res.publisherUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 w-full py-1.5 text-center text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors"
+                    title="Open resource"
+                  >
                     Access Resource &rarr;
                   </a>
                 )}
@@ -3427,5 +4237,5 @@ function WorkspaceResources({ unit, module, currentFolderName }: { unit: Educati
         )}
       </div>
     </div>
-  );
+  )
 }

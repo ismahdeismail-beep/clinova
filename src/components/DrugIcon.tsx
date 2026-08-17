@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { getDrugClassConfig } from '../data/drugClassColors'
 
 // Strong per-color gradients for generated icon tiles (literal strings so the

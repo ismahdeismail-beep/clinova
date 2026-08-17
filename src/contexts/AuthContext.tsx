@@ -236,7 +236,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const loginReturning = async (name: string, role: UserRole) => {
+  const loginReturning = async (_name: string, role: UserRole) => {
     await loginAs(role);
   };
 

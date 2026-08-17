@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,

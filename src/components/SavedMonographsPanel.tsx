@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Bookmark, BookmarkCheck, Search, Trash2, Loader2,
   X, Tag, ChevronDown, ExternalLink, Heart,

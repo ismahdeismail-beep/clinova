@@ -1,4 +1,3 @@
-import React from 'react';
 import { MedicineImageManager } from '../components/MedicineImageManager';
 import { ChevronLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';

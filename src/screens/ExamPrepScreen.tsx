@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Sparkles, ArrowLeft, Award, FlaskConical, FileText, History } from 'lucide-react';
 import { EXAM_PREP_MODULES, getExamPrepModule, getTrackById, findUnitTrack } from '../data/examPrepData';

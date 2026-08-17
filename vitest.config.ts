@@ -16,11 +16,6 @@ export default defineConfig({
     exclude: ['e2e/**', 'node_modules/**', 'dist/**'],
     css: false,
     restoreMocks: true,
-    pool: 'threads',
-    poolOptions: {
-      threads: {
-        singleThread: true,
-      },
-    },
+    singleThread: true,
   },
 })

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
+import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as d3 from 'd3';
 import { motion, AnimatePresence } from 'motion/react';
@@ -354,7 +354,7 @@ export default function CurriculumGraph() {
         // Highlight active nodes in SVG
         highlightSelectedBranch(d.id);
       })
-      .on('mouseenter', (event, d) => {
+      .on('mouseenter', (_event, d) => {
         setHoveredNode(d);
         // Dim outer nodes/links
         d3.selectAll('.node-circle').attr('opacity', 0.35);

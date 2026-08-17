@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck, Factory, Stethoscope } from 'lucide-react';
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { MedicineImageGallery } from './MedicineImageGallery';
 import { getDrugThumbnail } from '../services/drugMonograph.service';
 import { DrugIcon } from './DrugIcon';
+import { DrugIndustryTab } from './DrugIndustryTab';
 
 interface DrugMonographViewProps {
   content: string;
@@ -38,6 +39,7 @@ export function DrugMonographView({
   const body = content.replace(/^#\s+.*\n+/, '').trim();
   const classConfig = drugClass ? getDrugClassConfig(drugClass) : null;
   const [thumb, setThumb] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<'clinical' | 'industry'>('clinical');
 
   // 3D-first thumbnail for the header icon (session-cached in the service).
   useEffect(() => {
@@ -137,7 +139,36 @@ export function DrugMonographView({
         </div>
       </div>
 
+      {/* ── Tab Navigation ── */}
+      <div className="flex border-b border-[var(--border)] bg-[var(--surface-dim)]/30">
+        <button
+          onClick={() => setActiveTab('clinical')}
+          className={`flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold transition-colors border-b-2 cursor-pointer ${
+            activeTab === 'clinical'
+              ? 'border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-container)]/20'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]'
+          }`}
+        >
+          <Stethoscope size={14} />
+          Clinical Monograph
+        </button>
+        {drugId && (
+          <button
+            onClick={() => setActiveTab('industry')}
+            className={`flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold transition-colors border-b-2 cursor-pointer ${
+              activeTab === 'industry'
+                ? 'border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-container)]/20'
+                : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]'
+            }`}
+          >
+            <Factory size={14} />
+            Industry & Manufacturing
+          </button>
+        )}
+      </div>
+
       {/* ── Body ── */}
+      {activeTab === 'clinical' ? (
       <div className="px-4 sm:px-6 md:px-8 py-5">
         <div className="markdown-body cl-reading max-w-3xl min-w-0">
           <ReactMarkdown
@@ -223,6 +254,18 @@ export function DrugMonographView({
           </div>
         )}
       </div>
+      ) : (
+      /* ── Industry Tab ── */
+      <div className="px-4 sm:px-6 md:px-8 py-5">
+        {drugId && (
+          <DrugIndustryTab
+            drugId={drugId}
+            drugName={drugName}
+            genericName={genericName}
+          />
+        )}
+      </div>
+      )}
 
       {/* ── Footer ── */}
       <div className="px-4 sm:px-6 md:px-8 py-3 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">

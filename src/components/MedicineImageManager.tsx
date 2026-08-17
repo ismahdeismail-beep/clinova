@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Search, RefreshCw, Trash2, Check, X,
   ImageOff, Download,

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GraduationCap, ClipboardCheck, ChevronRight } from 'lucide-react';
 import { EXAM_PREP_UNITS } from '../data/examPrepData';

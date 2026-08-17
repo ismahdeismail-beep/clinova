@@ -138,8 +138,10 @@ export const IndustryKnowledgeService = {
       }
       return []
     }
-    // Fallback: match bundled connections by drug_id
-    let results = BUNDLED_DRUG_INDUSTRY_CONNECTIONS.filter((c) => c.drug_id === drugId)
+    // Fallback: match bundled connections by drug_id or drug_name
+    let results = BUNDLED_DRUG_INDUSTRY_CONNECTIONS.filter(
+      (c) => c.drug_id === drugId || c.drug_name?.toLowerCase() === drugId.toLowerCase(),
+    )
     if (connectionTypes && connectionTypes.length > 0) {
       results = results.filter((c) => connectionTypes.includes(c.connection_type))
     }

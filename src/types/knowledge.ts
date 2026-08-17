@@ -680,6 +680,7 @@ export interface KenyanManufacturer {
   founded_year: number | null
   employee_count: string | null
   certifications: string[]
+  registration_number: string | null
   notes: string | null
   metadata: Record<string, any>
   created_at: string

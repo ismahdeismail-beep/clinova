@@ -21,6 +21,7 @@ const AdminImageManagerScreen = React.lazy(() => import('./screens/AdminImageMan
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 const ReadingScreen = React.lazy(() => import('./screens/ReadingScreen'));
+const IndustryHubScreen = React.lazy(() => import('./screens/IndustryHubScreen'));
 
 import { useAuth } from './contexts/AuthContext';
 import { useNotifications } from './contexts/NotificationContext';
@@ -350,6 +351,7 @@ function AppContent() {
               <Route path="/board-exam" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
               <Route path="/board-exam/:setId" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
   <Route path="/library" element={<OnlineLibraryScreen />} />
+  <Route path="/industry" element={<IndustryHubScreen />} />
   <Route path="/reading/:articleId" element={<ReadingScreen />} />
   <Route path="/settings" element={<SettingsScreen />} />
   <Route path="/admin/images" element={<AdminImageManagerScreen />} />

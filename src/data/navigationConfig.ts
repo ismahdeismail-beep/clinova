@@ -1,7 +1,7 @@
 import {
   BookOpen, FolderOpen, Pill,
   ClipboardCheck, ClipboardList,
-  Settings, type LucideIcon,
+  Factory, Settings, type LucideIcon,
 } from 'lucide-react'
 
 export type NavItem = {
@@ -26,6 +26,7 @@ export const NAV_GROUPS: NavGroup[] = [
     { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
     { to: '/drugs', label: 'Drug Index', icon: Pill },
     { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
+    { to: '/industry', label: 'Industry', icon: Factory },
     { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
   ],
   },

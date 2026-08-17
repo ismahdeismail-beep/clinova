@@ -13,6 +13,8 @@ import type {
 import { BUNDLED_TOPICS } from '../data/industryKnowledgeData'
 import { BUNDLED_INDUSTRY_TERMS } from '../data/industryTermsData'
 import { BUNDLED_KENYAN_MANUFACTURERS } from '../data/kenyanManufacturersData'
+import { BUNDLED_INDUSTRY_ENTRIES } from '../data/industryKnowledgeEntries'
+import { BUNDLED_DRUG_INDUSTRY_CONNECTIONS } from '../data/drugIndustryConnectionsData'
 
 let topicCache: PharmaceuticalTopic[] | null = null
 
@@ -109,7 +111,10 @@ export const IndustryKnowledgeService = {
     }
 
     // Fallback: filter bundled entries by topic slug
-    return (BUNDLED_TOPICS as any[]).some((t) => t.slug === topicSlug) ? [] : []
+    let results = BUNDLED_INDUSTRY_ENTRIES.filter((e) => e.topic_slug === topicSlug)
+    if (opts?.difficulty) results = results.filter((e) => e.difficulty === opts.difficulty)
+    if (opts?.limit) results = results.slice(0, opts.limit)
+    return results as IndustryKnowledgeEntry[]
   },
 
   async getForDrug(
@@ -133,7 +138,15 @@ export const IndustryKnowledgeService = {
       }
       return []
     }
-    return []
+    // Fallback: match bundled connections by drug_id
+    let results = BUNDLED_DRUG_INDUSTRY_CONNECTIONS.filter((c) => c.drug_id === drugId)
+    if (connectionTypes && connectionTypes.length > 0) {
+      results = results.filter((c) => connectionTypes.includes(c.connection_type))
+    }
+    return results.map((c) => {
+      const entry = BUNDLED_INDUSTRY_ENTRIES.find((e) => e.id === c.knowledge_entry_id)
+      return { ...c, entry: entry || undefined } as DrugIndustryConnection
+    })
   },
 
   async searchTerms(query: string, limit = 10): Promise<IndustryTerm[]> {

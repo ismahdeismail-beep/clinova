@@ -30,6 +30,11 @@ import './onlineLibrary';
 import './webResearch';
 import './knowledgeGraph';
 import './caching';
+import './pharmaceuticalManufacturing';
+import './regulatoryAffairs';
+import './pharmacovigilance';
+import './supplyChainKnowledge';
+import './kenyanIndustry';
 
 // Types
 export type {

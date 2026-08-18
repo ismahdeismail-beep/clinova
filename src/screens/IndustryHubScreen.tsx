@@ -27,6 +27,14 @@ import {
   Warehouse,
   Landmark,
   GraduationCap,
+  CheckCircle,
+  Target,
+  Lightbulb,
+  BookMarked,
+  ClipboardCheck,
+  ArrowRight,
+  Sparkles,
+  ShieldCheck,
 } from 'lucide-react'
 import { IndustryKnowledgeService } from '../services/industryKnowledge.service'
 import type {
@@ -72,13 +80,520 @@ const TOPIC_ICONS: Record<string, typeof Factory> = {
   GraduationCap,
 }
 
-const CATEGORY_COLORS: Record<string, string> = {
-  'Manufacturing & Formulation': 'bg-blue-500/10 text-blue-600 border-blue-500/20',
-  'Regulatory Affairs': 'bg-purple-500/10 text-purple-600 border-purple-500/20',
-  Pharmacovigilance: 'bg-red-500/10 text-red-600 border-red-500/20',
-  'Supply Chain': 'bg-green-500/10 text-green-600 border-green-500/20',
-  'Local Kenyan Industry': 'bg-amber-500/10 text-amber-600 border-amber-500/20',
-  'Careers & Professional Development': 'bg-cyan-500/10 text-cyan-600 border-cyan-500/20',
+const CATEGORY_COLORS: Record<string, { bg: string; text: string; border: string; icon: string }> =
+  {
+    'Manufacturing & Formulation': {
+      bg: 'bg-blue-500/8',
+      text: 'text-blue-700 dark:text-blue-400',
+      border: 'border-blue-400/30',
+      icon: 'text-blue-500',
+    },
+    'Regulatory Affairs': {
+      bg: 'bg-purple-500/8',
+      text: 'text-purple-700 dark:text-purple-400',
+      border: 'border-purple-400/30',
+      icon: 'text-purple-500',
+    },
+    Pharmacovigilance: {
+      bg: 'bg-red-500/8',
+      text: 'text-red-700 dark:text-red-400',
+      border: 'border-red-400/30',
+      icon: 'text-red-500',
+    },
+    'Supply Chain': {
+      bg: 'bg-emerald-500/8',
+      text: 'text-emerald-700 dark:text-emerald-400',
+      border: 'border-emerald-400/30',
+      icon: 'text-emerald-500',
+    },
+    'Local Kenyan Industry': {
+      bg: 'bg-amber-500/8',
+      text: 'text-amber-700 dark:text-amber-400',
+      border: 'border-amber-400/30',
+      icon: 'text-amber-500',
+    },
+    'Careers & Professional Development': {
+      bg: 'bg-cyan-500/8',
+      text: 'text-cyan-700 dark:text-cyan-400',
+      border: 'border-cyan-400/30',
+      icon: 'text-cyan-500',
+    },
+    Quality: {
+      bg: 'bg-teal-500/8',
+      text: 'text-teal-700 dark:text-teal-400',
+      border: 'border-teal-400/30',
+      icon: 'text-teal-500',
+    },
+  }
+
+function getCategoryColors(categoryName: string) {
+  return (
+    CATEGORY_COLORS[categoryName] || {
+      bg: 'bg-gray-500/8',
+      text: 'text-gray-700 dark:text-gray-400',
+      border: 'border-gray-400/30',
+      icon: 'text-gray-500',
+    }
+  )
+}
+
+const SECTION_STYLES: Record<
+  string,
+  { color: string; border: string; icon: typeof Factory; label: string }
+> = {
+  overview: {
+    color: 'bg-blue-50 dark:bg-blue-950/30',
+    border: 'border-l-blue-400',
+    icon: BookOpen,
+    label: 'Overview',
+  },
+  key_concepts: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: Lightbulb,
+    label: 'Key Concepts',
+  },
+  key_steps: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: ClipboardCheck,
+    label: 'Key Steps',
+  },
+  process_steps: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: ClipboardCheck,
+    label: 'Process Steps',
+  },
+  workflow: {
+    color: 'bg-orange-50 dark:bg-orange-950/30',
+    border: 'border-l-orange-400',
+    icon: ArrowRight,
+    label: 'Workflow',
+  },
+  components: {
+    color: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-l-emerald-400',
+    icon: Package,
+    label: 'Components',
+  },
+  equipment: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: Settings,
+    label: 'Equipment',
+  },
+  materials: {
+    color: 'bg-cyan-50 dark:bg-cyan-950/30',
+    border: 'border-l-cyan-400',
+    icon: FlaskConical,
+    label: 'Materials',
+  },
+  raw_materials: {
+    color: 'bg-cyan-50 dark:bg-cyan-950/30',
+    border: 'border-l-cyan-400',
+    icon: FlaskConical,
+    label: 'Raw Materials',
+  },
+  excipients: {
+    color: 'bg-cyan-50 dark:bg-cyan-950/30',
+    border: 'border-l-cyan-400',
+    icon: FlaskConical,
+    label: 'Excipients',
+  },
+  forms: {
+    color: 'bg-pink-50 dark:bg-pink-950/30',
+    border: 'border-l-pink-400',
+    icon: Pill,
+    label: 'Dosage Forms',
+  },
+  formulation_types: {
+    color: 'bg-pink-50 dark:bg-pink-950/30',
+    border: 'border-l-pink-400',
+    icon: Pill,
+    label: 'Formulation Types',
+  },
+  types: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Target,
+    label: 'Types',
+  },
+  methods: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Target,
+    label: 'Methods',
+  },
+  quality_control: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: ShieldCheck,
+    label: 'Quality Control',
+  },
+  quality_assurance: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: ShieldCheck,
+    label: 'Quality Assurance',
+  },
+  standards: {
+    color: 'bg-rose-50 dark:bg-rose-950/30',
+    border: 'border-l-rose-400',
+    icon: Award,
+    label: 'Standards',
+  },
+  regulations: {
+    color: 'bg-purple-50 dark:bg-purple-950/30',
+    border: 'border-l-purple-400',
+    icon: Scale,
+    label: 'Regulations',
+  },
+  regulatory_requirements: {
+    color: 'bg-purple-50 dark:bg-purple-950/30',
+    border: 'border-l-purple-400',
+    icon: Scale,
+    label: 'Regulatory Requirements',
+  },
+  documentation: {
+    color: 'bg-sky-50 dark:bg-sky-950/30',
+    border: 'border-l-sky-400',
+    icon: FileText,
+    label: 'Documentation',
+  },
+  key_documents: {
+    color: 'bg-sky-50 dark:bg-sky-950/30',
+    border: 'border-l-sky-400',
+    icon: FileText,
+    label: 'Key Documents',
+  },
+  benefits: {
+    color: 'bg-green-50 dark:bg-green-950/30',
+    border: 'border-l-green-400',
+    icon: CheckCircle,
+    label: 'Benefits',
+  },
+  advantages: {
+    color: 'bg-green-50 dark:bg-green-950/30',
+    border: 'border-l-green-400',
+    icon: CheckCircle,
+    label: 'Advantages',
+  },
+  challenges: {
+    color: 'bg-red-50 dark:bg-red-950/30',
+    border: 'border-l-red-400',
+    icon: AlertTriangle,
+    label: 'Challenges',
+  },
+  limitations: {
+    color: 'bg-red-50 dark:bg-red-950/30',
+    border: 'border-l-red-400',
+    icon: AlertTriangle,
+    label: 'Limitations',
+  },
+  safety: {
+    color: 'bg-red-50 dark:bg-red-950/30',
+    border: 'border-l-red-400',
+    icon: Shield,
+    label: 'Safety',
+  },
+  preconditions: {
+    color: 'bg-slate-50 dark:bg-slate-950/30',
+    border: 'border-l-slate-400',
+    icon: CheckCircle,
+    label: 'Preconditions',
+  },
+  steps: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: ClipboardCheck,
+    label: 'Steps',
+  },
+  testing_methods: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: FlaskConical,
+    label: 'Testing Methods',
+  },
+  parameters: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Target,
+    label: 'Parameters',
+  },
+  routes: {
+    color: 'bg-blue-50 dark:bg-blue-950/30',
+    border: 'border-l-blue-400',
+    icon: Truck,
+    label: 'Routes',
+  },
+  systems: {
+    color: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-l-emerald-400',
+    icon: Warehouse,
+    label: 'Systems',
+  },
+  reporting: {
+    color: 'bg-orange-50 dark:bg-orange-950/30',
+    border: 'border-l-orange-400',
+    icon: Bell,
+    label: 'Reporting',
+  },
+  career_paths: {
+    color: 'bg-cyan-50 dark:bg-cyan-950/30',
+    border: 'border-l-cyan-400',
+    icon: Briefcase,
+    label: 'Career Paths',
+  },
+  skills_required: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: GraduationCap,
+    label: 'Skills Required',
+  },
+  certifications: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: Award,
+    label: 'Certifications',
+  },
+  opportunities: {
+    color: 'bg-green-50 dark:bg-green-950/30',
+    border: 'border-l-green-400',
+    icon: Sparkles,
+    label: 'Opportunities',
+  },
+  market: {
+    color: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-l-emerald-400',
+    icon: ShoppingCart,
+    label: 'Market',
+  },
+  kenya_context: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: MapPin,
+    label: 'Kenya Context',
+  },
+  local_context: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: MapPin,
+    label: 'Local Context',
+  },
+  recent_reforms: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: Sparkles,
+    label: 'Recent Reforms',
+  },
+  reforms_2025_2026: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: Sparkles,
+    label: '2025-2026 Reforms',
+  },
+  key_reforms: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: Sparkles,
+    label: 'Key Reforms',
+  },
+  who_framework: {
+    color: 'bg-blue-50 dark:bg-blue-950/30',
+    border: 'border-l-blue-400',
+    icon: Globe,
+    label: 'WHO Framework',
+  },
+  global_standards: {
+    color: 'bg-blue-50 dark:bg-blue-950/30',
+    border: 'border-l-blue-400',
+    icon: Globe,
+    label: 'Global Standards',
+  },
+  applications: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Lightbulb,
+    label: 'Applications',
+  },
+  requirements: {
+    color: 'bg-rose-50 dark:bg-rose-950/30',
+    border: 'border-l-rose-400',
+    icon: CheckCircle,
+    label: 'Requirements',
+  },
+  assessment: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: Target,
+    label: 'Assessment',
+  },
+  process: {
+    color: 'bg-amber-50 dark:bg-amber-950/30',
+    border: 'border-l-amber-400',
+    icon: ClipboardCheck,
+    label: 'Process',
+  },
+  monitoring: {
+    color: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-l-emerald-400',
+    icon: HeartPulse,
+    label: 'Monitoring',
+  },
+  reporting_systems: {
+    color: 'bg-orange-50 dark:bg-orange-950/30',
+    border: 'border-l-orange-400',
+    icon: Bell,
+    label: 'Reporting Systems',
+  },
+  classification: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Target,
+    label: 'Classification',
+  },
+  classifications: {
+    color: 'bg-indigo-50 dark:bg-indigo-950/30',
+    border: 'border-l-indigo-400',
+    icon: Target,
+    label: 'Classifications',
+  },
+  procurement: {
+    color: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-l-emerald-400',
+    icon: ShoppingCart,
+    label: 'Procurement',
+  },
+  distribution: {
+    color: 'bg-blue-50 dark:bg-blue-950/30',
+    border: 'border-l-blue-400',
+    icon: Truck,
+    label: 'Distribution',
+  },
+  storage: {
+    color: 'bg-teal-50 dark:bg-teal-950/30',
+    border: 'border-l-teal-400',
+    icon: Warehouse,
+    label: 'Storage',
+  },
+  cold_chain: {
+    color: 'bg-sky-50 dark:bg-sky-950/30',
+    border: 'border-l-sky-400',
+    icon: Truck,
+    label: 'Cold Chain',
+  },
+  essential_medicines: {
+    color: 'bg-green-50 dark:bg-green-950/30',
+    border: 'border-l-green-400',
+    icon: Pill,
+    label: 'Essential Medicines',
+  },
+  counterfeit_detection: {
+    color: 'bg-red-50 dark:bg-red-950/30',
+    border: 'border-l-red-400',
+    icon: AlertTriangle,
+    label: 'Counterfeit Detection',
+  },
+  technology: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: Lightbulb,
+    label: 'Technology',
+  },
+  innovation: {
+    color: 'bg-violet-50 dark:bg-violet-950/30',
+    border: 'border-l-violet-400',
+    icon: Sparkles,
+    label: 'Innovation',
+  },
+}
+
+function getSectionStyle(key: string) {
+  const normalized = key.toLowerCase().replace(/[\s-]+/g, '_')
+  return (
+    SECTION_STYLES[normalized] || {
+      color: 'bg-gray-50 dark:bg-gray-950/30',
+      border: 'border-l-gray-400',
+      icon: FileText,
+      label: key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+    }
+  )
+}
+
+function formatKey(key: string): string {
+  return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
+function renderContentValue(value: unknown): React.ReactNode {
+  if (typeof value === 'string') {
+    return <p className="leading-relaxed">{value}</p>
+  }
+  if (Array.isArray(value)) {
+    return (
+      <ul className="space-y-1.5">
+        {value.map((item, i) => (
+          <li key={i} className="flex items-start gap-2">
+            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-current opacity-40 shrink-0" />
+            <span>{String(item)}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  if (value && typeof value === 'object') {
+    return (
+      <div className="space-y-2">
+        {Object.entries(value as Record<string, unknown>).map(([k, v]) => (
+          <div key={k}>
+            <span className="font-semibold text-[var(--text)]">{formatKey(k)}: </span>
+            <span>{typeof v === 'string' ? v : JSON.stringify(v)}</span>
+          </div>
+        ))}
+      </div>
+    )
+  }
+  return <p>{String(value)}</p>
+}
+
+// ── Globe icon (not in lucide import) ─────────────────────
+function Globe({ size = 16, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+      <path d="M2 12h20" />
+    </svg>
+  )
+}
+
+function Settings({ size = 16, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  )
 }
 
 function getIcon(iconName: string | null): typeof Factory {
@@ -171,6 +686,11 @@ export default function IndustryHubScreen() {
 
   // ── Topic Detail View ──────────────────────────────────────
   if (selectedTopic) {
+    const parentCategory = topics.find((t) =>
+      t.children?.some((c) => c.id === selectedTopic.id || c.slug === selectedTopic.slug),
+    )
+    const catColors = getCategoryColors(parentCategory?.name || selectedTopic.name)
+
     return (
       <div className="max-w-4xl mx-auto p-4 sm:p-6">
         <button
@@ -184,13 +704,23 @@ export default function IndustryHubScreen() {
           Back to Topics
         </button>
 
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-2">
-            {React.createElement(getIcon(selectedTopic.icon), {
-              size: 24,
-              className: 'text-[var(--primary)]',
-            })}
-            <h1 className="text-xl font-bold text-[var(--text)]">{selectedTopic.name}</h1>
+        {/* Topic Header */}
+        <div className={`rounded-2xl border ${catColors.border} ${catColors.bg} p-5 sm:p-6 mb-6`}>
+          <div className="flex items-center gap-3 mb-3">
+            <div
+              className={`w-10 h-10 rounded-xl ${catColors.bg} border ${catColors.border} flex items-center justify-center`}
+            >
+              {React.createElement(getIcon(selectedTopic.icon), {
+                size: 20,
+                className: catColors.icon,
+              })}
+            </div>
+            <div>
+              <h1 className="text-lg font-bold text-[var(--text)]">{selectedTopic.name}</h1>
+              {parentCategory && (
+                <p className={`text-[11px] font-medium ${catColors.text}`}>{parentCategory.name}</p>
+              )}
+            </div>
           </div>
           {selectedTopic.description && (
             <p className="text-sm text-[var(--text-muted)] leading-relaxed">
@@ -205,77 +735,105 @@ export default function IndustryHubScreen() {
             Loading content...
           </div>
         ) : topicEntries.length > 0 ? (
-          <div className="space-y-4">
-            {topicEntries.map((entry) => (
-              <div
-                key={entry.id}
-                className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-5"
-              >
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-sm font-bold text-[var(--text)]">{entry.title}</h3>
-                  <span
-                    className={`text-[9px] font-mono px-2 py-0.5 rounded-full border shrink-0 ${
-                      entry.difficulty === 'basic'
-                        ? 'bg-green-500/10 text-green-600 border-green-500/20'
-                        : entry.difficulty === 'intermediate'
-                          ? 'bg-amber-500/10 text-amber-600 border-amber-500/20'
-                          : 'bg-red-500/10 text-red-600 border-red-500/20'
-                    }`}
-                  >
-                    {entry.difficulty}
-                  </span>
-                </div>
+          <div className="space-y-5">
+            {topicEntries.map((entry) => {
+              const contentObj =
+                typeof entry.content === 'object' && entry.content !== null
+                  ? (entry.content as Record<string, unknown>)
+                  : null
+              const contentEntries = contentObj ? Object.entries(contentObj) : []
 
-                <div className="text-xs text-[var(--text-muted)] leading-relaxed space-y-3">
-                  {typeof entry.content === 'object' &&
-                    Object.entries(entry.content).map(([key, value]) => {
-                      if (typeof value === 'string') {
-                        return (
-                          <div key={key}>
-                            <span className="font-semibold text-[var(--text)] capitalize">
-                              {key.replace(/_/g, ' ')}:
-                            </span>{' '}
-                            {value}
-                          </div>
-                        )
-                      }
-                      if (Array.isArray(value)) {
-                        return (
-                          <div key={key}>
-                            <span className="font-semibold text-[var(--text)] capitalize">
-                              {key.replace(/_/g, ' ')}:
+              return (
+                <div
+                  key={entry.id}
+                  className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden"
+                >
+                  {/* Entry Header */}
+                  <div className="px-5 py-4 border-b border-[var(--border)]/60">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1">
+                        <h3 className="text-sm font-bold text-[var(--text)]">{entry.title}</h3>
+                        {entry.source && (
+                          <div className="flex items-center gap-1.5 mt-1.5">
+                            <BookMarked size={11} className="text-[var(--success)]" />
+                            <span className="text-[10px] font-medium text-[var(--success)]">
+                              {entry.source}
                             </span>
-                            <ul className="mt-1.5 ml-4 space-y-1 list-disc">
-                              {(value as string[]).map((item, i) => (
-                                <li key={i}>{item}</li>
-                              ))}
-                            </ul>
+                          </div>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-2 shrink-0">
+                        <span
+                          className={`text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${
+                            entry.difficulty === 'basic'
+                              ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border-emerald-300/40 dark:border-emerald-700/40'
+                              : entry.difficulty === 'intermediate'
+                                ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-300/40 dark:border-amber-700/40'
+                                : 'bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 border-red-300/40 dark:border-red-700/40'
+                          }`}
+                        >
+                          {entry.difficulty}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content Sections */}
+                  {contentEntries.length > 0 && (
+                    <div className="p-5 space-y-3">
+                      {contentEntries.map(([key, value]) => {
+                        const style = getSectionStyle(key)
+                        const SectionIcon = style.icon
+
+                        return (
+                          <div
+                            key={key}
+                            className={`rounded-xl border-l-4 ${style.border} ${style.color} p-4`}
+                          >
+                            <div className="flex items-center gap-2 mb-2">
+                              <SectionIcon size={14} className={catColors.icon} />
+                              <h4 className="text-xs font-bold text-[var(--text)] uppercase tracking-wide">
+                                {style.label}
+                              </h4>
+                            </div>
+                            <div className="text-xs text-[var(--text-muted)] leading-relaxed pl-6">
+                              {renderContentValue(value)}
+                            </div>
                           </div>
                         )
-                      }
-                      return null
-                    })}
-                </div>
+                      })}
+                    </div>
+                  )}
 
-                {entry.source && (
-                  <div className="mt-3 pt-3 border-t border-[var(--border)]/60 flex items-center gap-1.5">
-                    <BookOpen size={10} className="text-[var(--success)]" />
-                    <span className="text-[10px] font-mono text-[var(--text-muted)]">
-                      Source: {entry.source}
-                    </span>
-                  </div>
-                )}
-              </div>
-            ))}
+                  {/* Keywords */}
+                  {entry.keywords && entry.keywords.length > 0 && (
+                    <div className="px-5 py-3 border-t border-[var(--border)]/60 bg-[var(--surface-dim)]/50">
+                      <div className="flex flex-wrap gap-1.5">
+                        {entry.keywords.map((kw) => (
+                          <span
+                            key={kw}
+                            className="text-[9px] font-medium px-2 py-0.5 rounded-full bg-[var(--primary-container)]/60 text-[var(--primary)] border border-[var(--primary)]/10"
+                          >
+                            {kw}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
           </div>
         ) : (
-          <div className="text-center py-12">
-            <BookOpen size={40} className="mx-auto mb-3 text-[var(--text-muted)]/40" />
-            <p className="text-sm text-[var(--text-muted)]">
-              No detailed content available for this topic yet.
-            </p>
+          <div className="text-center py-16">
+            <div
+              className={`w-16 h-16 rounded-2xl ${catColors.bg} border ${catColors.border} flex items-center justify-center mx-auto mb-4`}
+            >
+              <BookOpen size={28} className={catColors.icon} />
+            </div>
+            <p className="text-sm font-semibold text-[var(--text)]">No content yet</p>
             <p className="text-xs text-[var(--text-muted)] mt-1">
-              Content will be added as the pharmaceutical knowledge base grows.
+              Detailed content for this topic will be added as the knowledge base grows.
             </p>
           </div>
         )}
@@ -362,13 +920,12 @@ export default function IndustryHubScreen() {
             const Icon = getIcon(topic.icon)
             const hasChildren = topic.children && topic.children.length > 0
             const isExpanded = expandedTopic === topic.id
-            const colorClass =
-              CATEGORY_COLORS[topic.name] || 'bg-gray-500/10 text-gray-600 border-gray-500/20'
+            const catColors = getCategoryColors(topic.name)
 
             return (
               <div key={topic.id}>
                 <div
-                  className={`flex items-center gap-3 p-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] transition-colors ${
+                  className={`flex items-center gap-3 p-3 rounded-xl border ${catColors.border} ${catColors.bg} hover:brightness-95 transition-all ${
                     !hasChildren ? 'cursor-pointer' : ''
                   }`}
                   onClick={() => {
@@ -380,9 +937,9 @@ export default function IndustryHubScreen() {
                   }}
                 >
                   <div
-                    className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border ${colorClass}`}
+                    className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 border ${catColors.border} bg-white/50 dark:bg-black/20`}
                   >
-                    <Icon size={16} />
+                    <Icon size={16} className={catColors.icon} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-sm font-semibold text-[var(--text)]">{topic.name}</h3>
@@ -405,13 +962,11 @@ export default function IndustryHubScreen() {
 
                 {/* Children */}
                 {hasChildren && isExpanded && (
-                  <div className="ml-6 mt-1 space-y-1 border-l border-[var(--border)]/60 pl-3">
+                  <div className="ml-6 mt-1 space-y-1 border-l-2 border-[var(--border)]/40 pl-3">
                     {topic.children!.map((child) => {
                       const ChildIcon = getIcon(child.icon)
                       const childHasChildren = child.children && child.children.length > 0
-                      const childColor =
-                        CATEGORY_COLORS[child.name] ||
-                        'bg-gray-500/10 text-gray-600 border-gray-500/20'
+                      const childColors = getCategoryColors(topic.name)
 
                       return (
                         <div key={child.id}>
@@ -421,29 +976,24 @@ export default function IndustryHubScreen() {
                             }`}
                             onClick={() => {
                               if (childHasChildren) {
-                                setExpandedTopic(
-                                  expandedTopic === child.id ? null : child.id,
-                                )
+                                setExpandedTopic(expandedTopic === child.id ? null : child.id)
                               } else {
                                 handleTopicClick(child)
                               }
                             }}
                           >
-                            <ChildIcon size={14} className={`shrink-0 ${childColor.split(' ')[1]}`} />
+                            <ChildIcon size={14} className={`shrink-0 ${childColors.icon}`} />
                             <span className="text-xs font-medium text-[var(--text)] flex-1">
                               {child.name}
                             </span>
                             {childHasChildren && (
-                              <ChevronRight
-                                size={12}
-                                className="text-[var(--text-muted)]"
-                              />
+                              <ChevronRight size={12} className="text-[var(--text-muted)]" />
                             )}
                           </div>
 
                           {/* Grandchildren */}
                           {childHasChildren && expandedTopic === child.id && (
-                            <div className="ml-5 mt-0.5 space-y-0.5 border-l border-[var(--border)]/40 pl-2">
+                            <div className="ml-5 mt-0.5 space-y-0.5 border-l border-[var(--border)]/30 pl-2">
                               {child.children!.map((gc) => (
                                 <div
                                   key={gc.id}
@@ -480,12 +1030,12 @@ export default function IndustryHubScreen() {
             filteredTerms.map((term) => (
               <div
                 key={term.id}
-                className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4"
+                className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 hover:border-[var(--primary)]/20 transition-colors"
               >
                 <div className="flex items-start justify-between gap-2 mb-1.5">
                   <h3 className="text-sm font-bold text-[var(--text)]">{term.term}</h3>
                   {term.aliases.length > 0 && (
-                    <span className="text-[9px] font-mono text-[var(--text-muted)] shrink-0">
+                    <span className="text-[9px] font-mono text-[var(--text-muted)] shrink-0 bg-[var(--surface-dim)] px-2 py-0.5 rounded-full">
                       AKA: {term.aliases.join(', ')}
                     </span>
                   )}
@@ -494,9 +1044,9 @@ export default function IndustryHubScreen() {
                   {term.definition}
                 </p>
                 {term.examples.length > 0 && (
-                  <div className="mt-2 pl-3 border-l-2 border-[var(--primary)]/30">
+                  <div className="mt-2 pl-3 border-l-2 border-[var(--primary)]/30 bg-[var(--primary-container)]/20 rounded-r-lg p-2">
                     <p className="text-[11px] text-[var(--text-muted)]">
-                      <span className="font-semibold text-[var(--text)]">Example:</span>{' '}
+                      <span className="font-semibold text-[var(--primary)]">Example:</span>{' '}
                       {term.examples[0]}
                     </p>
                   </div>
@@ -528,83 +1078,108 @@ export default function IndustryHubScreen() {
               <p className="text-sm text-[var(--text-muted)]">No manufacturers found</p>
             </div>
           ) : (
-            filteredManufacturers.map((mfr) => (
-              <div
-                key={mfr.id}
-                className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4"
-              >
-                <div className="flex items-start justify-between gap-3 mb-2">
-                  <div>
-                    <h3 className="text-sm font-bold text-[var(--text)]">{mfr.name}</h3>
-                    {mfr.location && (
-                      <p className="text-[11px] text-[var(--text-muted)] flex items-center gap-1 mt-0.5">
-                        <MapPin size={10} />
-                        {mfr.location}
-                      </p>
+            filteredManufacturers.map((mfr) => {
+              const isActive = mfr.regulatory_status?.toLowerCase().includes('active')
+              const isSuspended = mfr.regulatory_status?.toLowerCase().includes('suspended')
+
+              return (
+                <div
+                  key={mfr.id}
+                  className={`rounded-xl border bg-[var(--surface)] p-4 transition-colors hover:border-[var(--primary)]/20 ${
+                    isSuspended
+                      ? 'border-amber-300/40 dark:border-amber-700/40'
+                      : 'border-[var(--border)]'
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-3 mb-2">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-bold text-[var(--text)]">{mfr.name}</h3>
+                        {mfr.registration_number && (
+                          <span className="text-[8px] font-mono text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded">
+                            PPB: {mfr.registration_number}
+                          </span>
+                        )}
+                      </div>
+                      {mfr.location && (
+                        <p className="text-[11px] text-[var(--text-muted)] flex items-center gap-1 mt-0.5">
+                          <MapPin size={10} />
+                          {mfr.location}
+                        </p>
+                      )}
+                    </div>
+                    {mfr.regulatory_status && (
+                      <span
+                        className={`text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border shrink-0 ${
+                          isActive
+                            ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border-emerald-300/40 dark:border-emerald-700/40'
+                            : isSuspended
+                              ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-300/40 dark:border-amber-700/40'
+                              : 'bg-slate-50 dark:bg-slate-950/40 text-slate-600 dark:text-slate-400 border-slate-300/40 dark:border-slate-700/40'
+                        }`}
+                      >
+                        {mfr.regulatory_status}
+                      </span>
                     )}
                   </div>
-                  {mfr.regulatory_status && (
-                    <span className="text-[9px] font-mono px-2 py-0.5 rounded-full bg-[var(--success-container)] text-[var(--success)] border border-[var(--success)]/20 shrink-0">
-                      {mfr.regulatory_status}
-                    </span>
+
+                  {mfr.products_description && (
+                    <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-3">
+                      {mfr.products_description}
+                    </p>
+                  )}
+
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {mfr.capabilities.map((cap) => (
+                      <span
+                        key={cap}
+                        className="text-[9px] font-medium px-2 py-0.5 rounded-full bg-[var(--primary-container)]/60 text-[var(--primary)] border border-[var(--primary)]/10"
+                      >
+                        {cap}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-3 text-[10px] text-[var(--text-muted)] pt-2 border-t border-[var(--border)]/40">
+                    {mfr.founded_year && (
+                      <span className="flex items-center gap-1">
+                        <Clock size={9} />
+                        Est. {mfr.founded_year}
+                      </span>
+                    )}
+                    {mfr.employee_count && (
+                      <span className="flex items-center gap-1">
+                        <Building2 size={9} />
+                        {mfr.employee_count} employees
+                      </span>
+                    )}
+                    {mfr.certifications.length > 0 && (
+                      <span className="flex items-center gap-1">
+                        <Award size={9} />
+                        {mfr.certifications.join(', ')}
+                      </span>
+                    )}
+                    {mfr.website && (
+                      <a
+                        href={mfr.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-[var(--primary)] hover:underline ml-auto"
+                      >
+                        <ExternalLink size={9} />
+                        Website
+                      </a>
+                    )}
+                  </div>
+
+                  {mfr.notes && (
+                    <p className="text-[10px] text-[var(--text-muted)] mt-2 italic bg-[var(--surface-dim)]/50 rounded-lg px-3 py-1.5">
+                      {mfr.notes}
+                    </p>
                   )}
                 </div>
-
-                {mfr.products_description && (
-                  <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-2">
-                    {mfr.products_description}
-                  </p>
-                )}
-
-                <div className="flex flex-wrap gap-1 mb-2">
-                  {mfr.capabilities.map((cap) => (
-                    <span
-                      key={cap}
-                      className="text-[9px] px-1.5 py-0.5 rounded-full bg-[var(--primary-container)]/60 text-[var(--primary)] border border-[var(--primary)]/10"
-                    >
-                      {cap}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center gap-4 text-[10px] text-[var(--text-muted)]">
-                  {mfr.founded_year && (
-                    <span className="flex items-center gap-1">
-                      <Clock size={9} />
-                      Est. {mfr.founded_year}
-                    </span>
-                  )}
-                  {mfr.employee_count && (
-                    <span className="flex items-center gap-1">
-                      <Building2 size={9} />
-                      {mfr.employee_count} employees
-                    </span>
-                  )}
-                  {mfr.certifications.length > 0 && (
-                    <span className="flex items-center gap-1">
-                      <Award size={9} />
-                      {mfr.certifications.join(', ')}
-                    </span>
-                  )}
-                </div>
-
-                {mfr.notes && (
-                  <p className="text-[10px] text-[var(--text-muted)] mt-2 italic">{mfr.notes}</p>
-                )}
-
-                {mfr.website && (
-                  <a
-                    href={mfr.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 mt-2 text-[10px] text-[var(--primary)] hover:underline"
-                  >
-                    <ExternalLink size={9} />
-                    Website
-                  </a>
-                )}
-              </div>
-            ))
+              )
+            })
           )}
         </div>
       )}

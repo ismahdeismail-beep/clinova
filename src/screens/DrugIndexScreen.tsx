@@ -22,6 +22,7 @@ import {
   Moon,
   Eye,
   FlaskConical,
+  AlertTriangle,
   type LucideIcon,
 } from 'lucide-react'
 import { DrugMonographView } from '../components/DrugMonographView'
@@ -39,6 +40,7 @@ import { getDrugSubclass, getSubclassesForCategory } from '../lib/drugSubclass'
 import { getSubclassColor } from '../lib/drugSubclassColors'
 import { useMinimumLoading } from '../hooks/useMinimumLoading'
 import { PageLoader, InlineLoader } from '../components/PageLoader'
+import DrugCheckerView from '../components/DrugCheckerView'
 
 const QUICK_DRUGS: { name: string; category: string }[] = [
   { name: 'Ceftriaxone', category: 'Anti-infectives' },
@@ -266,7 +268,7 @@ export default function DrugIndexScreen() {
   }>()
 
   // Navigation State
-  const [activeTab, setActiveTab] = useState<'monograph' | 'library'>('monograph')
+  const [activeTab, setActiveTab] = useState<'monograph' | 'library' | 'checker'>('monograph')
 
   // Monograph Browser State
   const [searchQuery, setSearchQuery] = useState('')
@@ -947,6 +949,7 @@ export default function DrugIndexScreen() {
               [
                 { id: 'monograph', label: 'Monographs', icon: BookOpen },
                 { id: 'library', label: 'My Library', icon: Heart },
+                { id: 'checker', label: 'Interactions', icon: AlertTriangle },
               ] as const
             ).map((tab) => {
               const Icon = tab.icon
@@ -1555,6 +1558,11 @@ export default function DrugIndexScreen() {
                   </div>
                 </>
               )}
+            </div>
+          ) : activeTab === 'checker' ? (
+            /* ── Tab: Drug Interaction Checker ── */
+            <div className="animate-in fade-in duration-200">
+              <DrugCheckerView />
             </div>
           ) : (
             /* ── Tab: My Library ── */

@@ -42,9 +42,11 @@ import type {
   IndustryKnowledgeEntry,
   IndustryTerm,
   KenyanManufacturer,
+  IndustryQuizQuestion,
+  KemlCrossReference,
 } from '../types/knowledge'
 
-type Tab = 'topics' | 'glossary' | 'manufacturers'
+type Tab = 'topics' | 'glossary' | 'manufacturers' | 'quiz' | 'keml'
 
 const TOPIC_ICONS: Record<string, typeof Factory> = {
   Factory,
@@ -612,20 +614,36 @@ export default function IndustryHubScreen() {
   const [topicEntries, setTopicEntries] = useState<IndustryKnowledgeEntry[]>([])
   const [loadingEntries, setLoadingEntries] = useState(false)
   const [initialLoading, setInitialLoading] = useState(true)
+  const [quizQuestions, setQuizQuestions] = useState<IndustryQuizQuestion[]>([])
+  const [quizCategories, setQuizCategories] = useState<string[]>([])
+  const [selectedQuizCategory, setSelectedQuizCategory] = useState<string>('All')
+  const [quizIndex, setQuizIndex] = useState(0)
+  const [quizSelected, setQuizSelected] = useState<number | null>(null)
+  const [quizScore, setQuizScore] = useState(0)
+  const [quizAnswered, setQuizAnswered] = useState(false)
+  const [quizFinished, setQuizFinished] = useState(false)
+  const [kemlRefs, setKemlRefs] = useState<KemlCrossReference[]>([])
+  const [kemlSearch, setKemlSearch] = useState('')
 
   useEffect(() => {
     let cancelled = false
     async function load() {
       try {
-        const [t, te, m] = await Promise.all([
+        const [t, te, m, quiz, cats, keml] = await Promise.all([
           IndustryKnowledgeService.getTopicTree(),
           IndustryKnowledgeService.searchTerms('', 100),
           IndustryKnowledgeService.getManufacturers(),
+          IndustryKnowledgeService.getQuizQuestions(),
+          IndustryKnowledgeService.getQuizCategories(),
+          IndustryKnowledgeService.getKemlReferences(),
         ])
         if (!cancelled) {
           setTopics(t)
           setTerms(te)
           setManufacturers(m)
+          setQuizQuestions(quiz)
+          setQuizCategories(cats)
+          setKemlRefs(keml)
         }
       } catch {
         /* empty */
@@ -728,6 +746,83 @@ export default function IndustryHubScreen() {
             </p>
           )}
         </div>
+
+        {/* Sub-topics navigation (P13) */}
+        {selectedTopic.children && selectedTopic.children.length > 0 && (
+          <div className="mb-6">
+            <h2 className="text-xs font-bold text-[var(--text)] uppercase tracking-wider mb-3">
+              Sub-topics
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {selectedTopic.children.map((child) => {
+                const ChildIcon = getIcon(child.icon)
+                return (
+                  <button
+                    key={child.id}
+                    onClick={() => handleTopicClick(child)}
+                    className={`flex items-center gap-2.5 p-3 rounded-xl border ${catColors.border} ${catColors.bg} hover:brightness-95 transition-all text-left cursor-pointer`}
+                  >
+                    <ChildIcon size={14} className={catColors.icon} />
+                    <div className="flex-1 min-w-0">
+                      <span className="text-xs font-semibold text-[var(--text)]">{child.name}</span>
+                      {child.description && (
+                        <p className="text-[10px] text-[var(--text-muted)] truncate mt-0.5">
+                          {child.description}
+                        </p>
+                      )}
+                    </div>
+                    <ArrowRight size={12} className="text-[var(--text-muted)] shrink-0" />
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* KEML Cross-References (P12) */}
+        {(() => {
+          const kemlDrug = kemlRefs.find(
+            (k) =>
+              topicEntries.some(
+                (e) =>
+                  e.content?.kenyan_context?.toLowerCase().includes(k.drug_name.toLowerCase()),
+              ) || selectedTopic.slug.includes('essential'),
+          )
+          if (!kemlDrug) return null
+          return (
+            <div className="mb-6 rounded-2xl border border-emerald-300/30 dark:border-emerald-700/30 bg-emerald-50/50 dark:bg-emerald-950/20 p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <Pill size={16} className="text-emerald-600 dark:text-emerald-400" />
+                <h3 className="text-sm font-bold text-[var(--text)]">KEML Status</h3>
+              </div>
+              <div className="space-y-2 text-xs text-[var(--text-muted)]">
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={12} className="text-emerald-500 shrink-0" />
+                  <span>
+                    Listed on <span className="font-semibold">Kenya Essential Medicines List</span> —{' '}
+                    {kemlDrug.keml_tier} tier
+                  </span>
+                </div>
+                {kemlDrug.who_eml_listed && (
+                  <div className="flex items-center gap-2">
+                    <CheckCircle size={12} className="text-emerald-500 shrink-0" />
+                    <span>
+                      Also listed on <span className="font-semibold">WHO Model EML</span>
+                    </span>
+                  </div>
+                )}
+                {kemlDrug.local_manufacturers.length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <Building2 size={12} className="text-emerald-500 shrink-0" />
+                    <span>
+                      Locally manufactured by: {kemlDrug.local_manufacturers.join(', ')}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        })()}
 
         {loadingEntries ? (
           <div className="flex items-center justify-center py-12 text-[var(--text-muted)]">
@@ -892,6 +987,8 @@ export default function IndustryHubScreen() {
               icon: Building2,
               count: manufacturers.length,
             },
+            { key: 'quiz', label: 'Quiz', icon: Target, count: quizQuestions.length },
+            { key: 'keml', label: 'KEML', icon: Pill, count: kemlRefs.length },
           ] as const
         ).map((tab) => (
           <button
@@ -1181,6 +1278,326 @@ export default function IndustryHubScreen() {
               )
             })
           )}
+        </div>
+      )}
+
+      {/* ── Quiz Tab ─────────────────────────────────────────── */}
+      {activeTab === 'quiz' && (
+        <div className="space-y-4">
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-1.5">
+            {['All', ...quizCategories].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => {
+                  setSelectedQuizCategory(cat)
+                  setQuizIndex(0)
+                  setQuizSelected(null)
+                  setQuizAnswered(false)
+                  setQuizFinished(false)
+                  setQuizScore(0)
+                }}
+                className={`text-[10px] font-semibold px-3 py-1.5 rounded-full border transition-colors cursor-pointer ${
+                  selectedQuizCategory === cat
+                    ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
+                    : 'bg-[var(--surface-dim)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]/30'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {(() => {
+            const filteredQuiz =
+              selectedQuizCategory === 'All'
+                ? quizQuestions
+                : quizQuestions.filter((q) => q.category === selectedQuizCategory)
+            if (filteredQuiz.length === 0) {
+              return (
+                <div className="text-center py-12">
+                  <Target size={40} className="mx-auto mb-3 text-[var(--text-muted)]/40" />
+                  <p className="text-sm text-[var(--text-muted)]">No questions in this category</p>
+                </div>
+              )
+            }
+
+            if (quizFinished) {
+              return (
+                <div className="text-center py-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
+                  <div className="w-16 h-16 rounded-2xl bg-[var(--primary-container)] flex items-center justify-center mx-auto mb-4">
+                    <Award size={28} className="text-[var(--primary)]" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[var(--text)] mb-1">Quiz Complete!</h3>
+                  <p className="text-sm text-[var(--text-muted)] mb-4">
+                    You scored <span className="font-bold text-[var(--primary)]">{quizScore}</span>{' '}
+                    out of <span className="font-bold">{filteredQuiz.length}</span>
+                  </p>
+                  <p className="text-xs text-[var(--text-muted)] mb-6">
+                    {Math.round((quizScore / filteredQuiz.length) * 100)}% correct
+                  </p>
+                  <button
+                    onClick={() => {
+                      setQuizIndex(0)
+                      setQuizSelected(null)
+                      setQuizAnswered(false)
+                      setQuizFinished(false)
+                      setQuizScore(0)
+                    }}
+                    className="text-xs font-semibold px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
+                  >
+                    Try Again
+                  </button>
+                </div>
+              )
+            }
+
+            const currentQ = filteredQuiz[quizIndex]
+            if (!currentQ) return null
+
+            return (
+              <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+                {/* Progress */}
+                <div className="px-5 py-3 border-b border-[var(--border)]/60 flex items-center justify-between">
+                  <span className="text-[10px] font-mono text-[var(--text-muted)]">
+                    {quizIndex + 1} / {filteredQuiz.length}
+                  </span>
+                  <span className="text-[10px] font-bold text-[var(--primary)]">
+                    Score: {quizScore}
+                  </span>
+                </div>
+
+                {/* Question */}
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${
+                        currentQ.type === 'clinical_scenario'
+                          ? 'bg-violet-50 dark:bg-violet-950/40 text-violet-600 dark:text-violet-400 border-violet-300/40'
+                          : currentQ.type === 'true_false'
+                            ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-300/40'
+                            : 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border-blue-300/40'
+                      }`}
+                    >
+                      {currentQ.type === 'clinical_scenario'
+                        ? 'Clinical Scenario'
+                        : currentQ.type === 'true_false'
+                          ? 'True / False'
+                          : 'MCQ'}
+                    </span>
+                    <span
+                      className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${
+                        currentQ.difficulty === 'basic'
+                          ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border-emerald-300/40'
+                          : currentQ.difficulty === 'intermediate'
+                            ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-300/40'
+                            : 'bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 border-red-300/40'
+                      }`}
+                    >
+                      {currentQ.difficulty}
+                    </span>
+                  </div>
+
+                  <p className="text-sm font-semibold text-[var(--text)] leading-relaxed mb-4">
+                    {currentQ.question}
+                  </p>
+
+                  {/* Options */}
+                  <div className="space-y-2">
+                    {currentQ.options.map((opt, i) => {
+                      const isCorrect = i === currentQ.correct_answer
+                      const isSelected = quizSelected === i
+                      let optionStyle = 'border-[var(--border)] hover:border-[var(--primary)]/30'
+                      if (quizAnswered) {
+                        if (isCorrect) {
+                          optionStyle = 'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30'
+                        } else if (isSelected && !isCorrect) {
+                          optionStyle = 'border-red-400 bg-red-50 dark:bg-red-950/30'
+                        } else {
+                          optionStyle = 'border-[var(--border)] opacity-50'
+                        }
+                      } else if (isSelected) {
+                        optionStyle = 'border-[var(--primary)] bg-[var(--primary-container)]/20'
+                      }
+
+                      return (
+                        <button
+                          key={i}
+                          disabled={quizAnswered}
+                          onClick={() => !quizAnswered && setQuizSelected(i)}
+                          className={`w-full text-left p-3 rounded-xl border text-xs transition-all ${
+                            quizAnswered ? 'cursor-default' : 'cursor-pointer'
+                          } ${optionStyle}`}
+                        >
+                          <span className="font-semibold text-[var(--text)] mr-2">
+                            {String.fromCharCode(65 + i)}.
+                          </span>
+                          <span className="text-[var(--text-muted)]">{opt}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+
+                  {/* Explanation */}
+                  {quizAnswered && (
+                    <div className="mt-4 p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/60">
+                      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                        <span className="font-bold text-[var(--primary)]">Explanation: </span>
+                        {currentQ.explanation}
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Actions */}
+                <div className="px-5 py-3 border-t border-[var(--border)]/60 flex items-center justify-between">
+                  {!quizAnswered ? (
+                    <button
+                      disabled={quizSelected === null}
+                      onClick={() => {
+                        setQuizAnswered(true)
+                        if (quizSelected === currentQ.correct_answer) {
+                          setQuizScore((s) => s + 1)
+                        }
+                      }}
+                      className={`text-xs font-semibold px-4 py-2 rounded-xl transition-opacity cursor-pointer ${
+                        quizSelected === null
+                          ? 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
+                          : 'bg-[var(--primary)] text-white hover:opacity-90'
+                      }`}
+                    >
+                      Submit Answer
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        if (quizIndex + 1 >= filteredQuiz.length) {
+                          setQuizFinished(true)
+                        } else {
+                          setQuizIndex((i) => i + 1)
+                          setQuizSelected(null)
+                          setQuizAnswered(false)
+                        }
+                      }}
+                      className="text-xs font-semibold px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
+                    >
+                      {quizIndex + 1 >= filteredQuiz.length ? 'See Results' : 'Next Question'}
+                    </button>
+                  )}
+                </div>
+              </div>
+            )
+          })()}
+        </div>
+      )}
+
+      {/* ── KEML Tab ─────────────────────────────────────────── */}
+      {activeTab === 'keml' && (
+        <div className="space-y-4">
+          {/* KEML Stats */}
+          <div className="grid grid-cols-3 gap-2">
+            {(() => {
+              const total = kemlRefs.length
+              const local = kemlRefs.filter(
+                (k) => k.local_availability === 'locally_manufactured' || k.local_availability === 'both',
+              ).length
+              const core = kemlRefs.filter((k) => k.keml_tier === 'core').length
+              return (
+                <>
+                  <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 text-center">
+                    <p className="text-lg font-bold text-[var(--primary)]">{total}</p>
+                    <p className="text-[9px] font-medium text-[var(--text-muted)]">KEML Drugs</p>
+                  </div>
+                  <div className="rounded-xl border border-emerald-300/30 dark:border-emerald-700/30 bg-emerald-50/50 dark:bg-emerald-950/20 p-3 text-center">
+                    <p className="text-lg font-bold text-emerald-600 dark:text-emerald-400">{local}</p>
+                    <p className="text-[9px] font-medium text-[var(--text-muted)]">Local Mfg</p>
+                  </div>
+                  <div className="rounded-xl border border-amber-300/30 dark:border-amber-700/30 bg-amber-50/50 dark:bg-amber-950/20 p-3 text-center">
+                    <p className="text-lg font-bold text-amber-600 dark:text-amber-400">{core}</p>
+                    <p className="text-[9px] font-medium text-[var(--text-muted)]">Core List</p>
+                  </div>
+                </>
+              )
+            })()}
+          </div>
+
+          {/* KEML Search */}
+          <div className="relative">
+            <Search
+              size={14}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+            />
+            <input
+              type="text"
+              placeholder="Search KEML drugs..."
+              value={kemlSearch}
+              onChange={(e) => setKemlSearch(e.target.value)}
+              className="w-full pl-9 pr-4 py-2 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)] text-xs text-[var(--text)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[var(--primary)]/50 transition-all"
+            />
+          </div>
+
+          {/* KEML Drug List */}
+          <div className="space-y-2">
+            {kemlRefs
+              .filter(
+                (k) =>
+                  !kemlSearch.trim() ||
+                  k.drug_name.toLowerCase().includes(kemlSearch.toLowerCase()) ||
+                  (k.keml_category && k.keml_category.toLowerCase().includes(kemlSearch.toLowerCase())),
+              )
+              .map((keml) => (
+                <div
+                  key={keml.drug_id}
+                  className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 hover:border-[var(--primary)]/20 transition-colors"
+                >
+                  <div className="flex items-start justify-between gap-2 mb-1.5">
+                    <h3 className="text-sm font-bold text-[var(--text)]">{keml.drug_name}</h3>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {keml.keml_tier === 'core' ? (
+                        <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300/40 dark:border-emerald-700/40">
+                          Core
+                        </span>
+                      ) : (
+                        <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-300/40 dark:border-amber-700/40">
+                          Complementary
+                        </span>
+                      )}
+                      {keml.who_eml_listed && (
+                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-300/40 dark:border-blue-700/40">
+                          WHO EML
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {keml.keml_category && (
+                    <p className="text-[11px] text-[var(--text-muted)] mb-2">{keml.keml_category}</p>
+                  )}
+
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    {keml.local_availability === 'locally_manufactured' ||
+                    keml.local_availability === 'both' ? (
+                      <span className="text-[9px] font-medium px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300/40">
+                        Locally Manufactured
+                      </span>
+                    ) : (
+                      <span className="text-[9px] font-medium px-2 py-0.5 rounded-full bg-slate-50 dark:bg-slate-950/40 text-slate-600 dark:text-slate-400 border border-slate-300/40">
+                        Imported
+                      </span>
+                    )}
+                  </div>
+
+                  {keml.local_manufacturers.length > 0 && (
+                    <p className="text-[10px] text-[var(--text-muted)]">
+                      <span className="font-semibold">Local manufacturers:</span>{' '}
+                      {keml.local_manufacturers.join(', ')}
+                    </p>
+                  )}
+
+                  <p className="text-[10px] text-[var(--text-muted)] mt-1.5 italic">{keml.notes}</p>
+                </div>
+              ))}
+          </div>
         </div>
       )}
     </div>

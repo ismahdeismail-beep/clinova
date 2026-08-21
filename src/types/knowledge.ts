@@ -687,6 +687,31 @@ export interface KenyanManufacturer {
   updated_at: string
 }
 
+export interface IndustryQuizQuestion {
+  id: string
+  topic_slug: string
+  category: string
+  type: 'mcq' | 'clinical_scenario' | 'true_false'
+  difficulty: IndustryDifficulty
+  question: string
+  options: string[]
+  correct_answer: number
+  explanation: string
+  source?: string
+}
+
+export interface KemlCrossReference {
+  drug_id: string
+  drug_name: string
+  keml_listed: boolean
+  keml_category: string | null
+  keml_tier: 'core' | 'complementary' | null
+  who_eml_listed: boolean
+  local_availability: 'locally_manufactured' | 'imported' | 'both' | null
+  local_manufacturers: string[]
+  notes: string
+}
+
 // ================================================================
 // 4. Utility Types
 // ================================================================

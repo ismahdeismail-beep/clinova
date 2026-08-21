@@ -16,6 +16,11 @@ import { BUNDLED_KENYAN_MANUFACTURERS } from '../data/kenyanManufacturersData'
 import { BUNDLED_INDUSTRY_ENTRIES } from '../data/industryKnowledgeEntries'
 import { BUNDLED_DRUG_INDUSTRY_CONNECTIONS } from '../data/drugIndustryConnectionsData'
 
+// Quiz + KEML data
+import { BUNDLED_INDUSTRY_QUIZ } from '../data/industryQuizData'
+import { BUNDLED_KEML_CROSS_REFERENCES } from '../data/kemlCrossReference'
+import type { IndustryQuizQuestion, KemlCrossReference } from '../types/knowledge'
+
 let topicCache: PharmaceuticalTopic[] | null = null
 
 function buildTopicTree(topics: PharmaceuticalTopic[]): PharmaceuticalTopic[] {
@@ -285,5 +290,59 @@ export const IndustryKnowledgeService = {
   formatTermsContext(terms: IndustryTerm[]): string {
     if (terms.length === 0) return ''
     return terms.map((t) => `**${t.term}:** ${t.definition}`).join('\n')
+  },
+
+  // ── Quiz Methods ───────────────────────────────────────────
+  async getQuizQuestions(filters?: {
+    topic_slug?: string
+    category?: string
+    difficulty?: IndustryDifficulty
+  }): Promise<IndustryQuizQuestion[]> {
+    let results = BUNDLED_INDUSTRY_QUIZ
+    if (filters?.topic_slug) {
+      results = results.filter((q) => q.topic_slug === filters.topic_slug)
+    }
+    if (filters?.category) {
+      results = results.filter((q) => q.category === filters.category)
+    }
+    if (filters?.difficulty) {
+      results = results.filter((q) => q.difficulty === filters.difficulty)
+    }
+    return results
+  },
+
+  async getQuizCategories(): Promise<string[]> {
+    const categories = new Set(BUNDLED_INDUSTRY_QUIZ.map((q) => q.category))
+    return Array.from(categories).sort()
+  },
+
+  // ── KEML Cross-Reference Methods ───────────────────────────
+  async getKemlReferences(): Promise<KemlCrossReference[]> {
+    return BUNDLED_KEML_CROSS_REFERENCES
+  },
+
+  async getKemlForDrug(drugId: string): Promise<KemlCrossReference | null> {
+    return (
+      BUNDLED_KEML_CROSS_REFERENCES.find(
+        (k) => k.drug_id === drugId || k.drug_name.toLowerCase() === drugId.toLowerCase(),
+      ) ?? null
+    )
+  },
+
+  async getKemlStats(): Promise<{
+    total: number
+    locallyManufactured: number
+    imported: number
+    core: number
+    complementary: number
+  }> {
+    const refs = BUNDLED_KEML_CROSS_REFERENCES
+    return {
+      total: refs.length,
+      locallyManufactured: refs.filter((r) => r.local_availability === 'locally_manufactured' || r.local_availability === 'both').length,
+      imported: refs.filter((r) => r.local_availability === 'imported' || r.local_availability === 'both').length,
+      core: refs.filter((r) => r.keml_tier === 'core').length,
+      complementary: refs.filter((r) => r.keml_tier === 'complementary').length,
+    }
   },
 }

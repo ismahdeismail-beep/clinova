@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @variant dark (&:where(.dark, .dark *));
 
@@ -33,67 +33,71 @@
 }
 
 @layer base {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     transition-property: background-color, border-color, color, fill, stroke;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  :root, :root.light {
+  :root,
+  :root.light {
     color-scheme: light;
-    --bg: #F8FAFC; /* Slate 50 */
-    --surface: #FFFFFF;
-    --surface-dim: #F1F5F9; /* Slate 100 */
-    --surface-2: #F8FAFC;
-    --text: #0F172A; /* Slate 900 */
+    --bg: #f8fafc; /* Slate 50 */
+    --surface: #ffffff;
+    --surface-dim: #f1f5f9; /* Slate 100 */
+    --surface-2: #f8fafc;
+    --text: #0f172a; /* Slate 900 */
     --text-muted: #475569; /* Slate 600 (High contrast) */
-    --primary: #2563EB; /* Blue 600 */
-    --primary-hover: #1D4ED8; /* Blue 700 */
-    --primary-foreground: #FFFFFF;
-    --primary-container: #DBEAFE; /* Blue 100 */
-    --danger: #EF4444;
-    --danger-container: #FEE2E2;
-    --border: #E2E8F0; /* Slate 200 */
-    --success: #10B981;
-    --success-container: #D1FAE5;
-    --warning: #D97706; /* Amber 600 */
-    --warning-container: #FEF3C7;
-    --medicine: #2563EB; /* Blue 600 */
-    --medicine-container: #DBEAFE;
-    --disease: #7C3AED; /* Violet 600 */
-    --disease-container: #EDE9FE;
-    --pearl: #B45309; /* Amber 700 */
-    --pearl-container: #FEF3C7;
-    --info: #0284C7; /* Sky 600 */
-    --info-container: #E0F2FE;
+    --primary: #2563eb; /* Blue 600 */
+    --primary-hover: #1d4ed8; /* Blue 700 */
+    --primary-foreground: #ffffff;
+    --primary-container: #dbeafe; /* Blue 100 */
+    --danger: #ef4444;
+    --danger-container: #fee2e2;
+    --border: #e2e8f0; /* Slate 200 */
+    --success: #10b981;
+    --success-container: #d1fae5;
+    --warning: #d97706; /* Amber 600 */
+    --warning-container: #fef3c7;
+    --medicine: #2563eb; /* Blue 600 */
+    --medicine-container: #dbeafe;
+    --disease: #7c3aed; /* Violet 600 */
+    --disease-container: #ede9fe;
+    --pearl: #b45309; /* Amber 700 */
+    --pearl-container: #fef3c7;
+    --info: #0284c7; /* Sky 600 */
+    --info-container: #e0f2fe;
   }
-  
-  :root.dark, .dark {
+
+  :root.dark,
+  .dark {
     color-scheme: dark;
-    --bg: #0F172A; /* Slate 900 */
-    --surface: #1E293B; /* Slate 800 */
+    --bg: #0f172a; /* Slate 900 */
+    --surface: #1e293b; /* Slate 800 */
     --surface-dim: #334155; /* Slate 700 */
     --surface-2: #243043;
-    --text: #F8FAFC; /* Slate 50 */
-    --text-muted: #CBD5E1; /* Slate 300 (High contrast for bright daylight) */
-    --primary: #3B82F6; /* Blue 500 */
-    --primary-hover: #60A5FA; /* Blue 400 */
-    --primary-foreground: #FFFFFF;
+    --text: #f8fafc; /* Slate 50 */
+    --text-muted: #cbd5e1; /* Slate 300 (High contrast for bright daylight) */
+    --primary: #3b82f6; /* Blue 500 */
+    --primary-hover: #60a5fa; /* Blue 400 */
+    --primary-foreground: #ffffff;
     --primary-container: rgba(37, 99, 235, 0.2); /* Blue 600 with opacity */
-    --danger: #F87171;
+    --danger: #f87171;
     --danger-container: rgba(248, 113, 113, 0.15);
     --border: #334155; /* Slate 700 */
-    --success: #34D399;
+    --success: #34d399;
     --success-container: rgba(52, 211, 153, 0.15);
-    --warning: #FBBF24;
+    --warning: #fbbf24;
     --warning-container: rgba(251, 191, 36, 0.15);
-    --medicine: #60A5FA;
+    --medicine: #60a5fa;
     --medicine-container: rgba(59, 130, 246, 0.18);
-    --disease: #A78BFA;
+    --disease: #a78bfa;
     --disease-container: rgba(124, 58, 237, 0.18);
-    --pearl: #FBBF24;
+    --pearl: #fbbf24;
     --pearl-container: rgba(217, 119, 6, 0.15);
-    --info: #38BDF8;
+    --info: #38bdf8;
     --info-container: rgba(14, 165, 233, 0.15);
   }
 
@@ -102,7 +106,13 @@
   }
 
   /* Prevent double-tap zoom delay on interactive controls (mobile) */
-  button, a, [role="button"], input, select, textarea, label {
+  button,
+  a,
+  [role='button'],
+  input,
+  select,
+  textarea,
+  label {
     touch-action: manipulation;
   }
 
@@ -118,7 +128,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
-  
+
   .bg-\[var\(--surface-dim\)\] {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -129,7 +139,7 @@
     font-size: 0.925rem;
     line-height: 1.625;
   }
-  
+
   .markdown-body h1 {
     font-size: 1.35rem;
     font-weight: 700;
@@ -323,7 +333,10 @@
   line-height: 1.4;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
   text-decoration: none;
 }
 .cl-pill-medicine {
@@ -331,13 +344,17 @@
   background-color: var(--medicine-container);
   border-color: color-mix(in srgb, var(--medicine) 22%, transparent);
 }
-.cl-pill-medicine:hover { background-color: color-mix(in srgb, var(--medicine) 20%, var(--surface)); }
+.cl-pill-medicine:hover {
+  background-color: color-mix(in srgb, var(--medicine) 20%, var(--surface));
+}
 .cl-pill-disease {
   color: var(--disease);
   background-color: var(--disease-container);
   border-color: color-mix(in srgb, var(--disease) 22%, transparent);
 }
-.cl-pill-disease:hover { background-color: color-mix(in srgb, var(--disease) 20%, var(--surface)); }
+.cl-pill-disease:hover {
+  background-color: color-mix(in srgb, var(--disease) 20%, var(--surface));
+}
 .cl-pill-neutral {
   color: var(--text-muted);
   background-color: var(--surface-dim);
@@ -421,8 +438,13 @@
 }
 
 /* Lab value: abnormal stands out */
-.cl-lab-normal { color: var(--text-muted); }
-.cl-lab-abnormal { color: var(--danger); font-weight: 700; }
+.cl-lab-normal {
+  color: var(--text-muted);
+}
+.cl-lab-abnormal {
+  color: var(--danger);
+  font-weight: 700;
+}
 
 /* Vital card */
 .cl-vital {
@@ -440,7 +462,8 @@
 /* Scroll progress bar */
 .cl-scroll-progress {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--primary), var(--info));
   z-index: 60;
@@ -460,65 +483,113 @@
   line-height: 1.7;
   color: var(--text);
 }
-.cl-reading p { margin-bottom: 0.85rem; }
+.cl-reading p {
+  margin-bottom: 0.85rem;
+}
 .cl-reading h2 {
-  font-size: 1.2rem; font-weight: 700; margin: 1.5rem 0 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.6rem;
   padding-bottom: 0.35rem;
   border-bottom: 2px solid color-mix(in srgb, var(--primary) 35%, transparent);
   color: var(--primary);
 }
 .cl-reading h3 {
-  font-size: 1.02rem; font-weight: 600; margin: 1.1rem 0 0.4rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 1.1rem 0 0.4rem;
   color: var(--disease);
   padding-left: 0.65rem;
   border-left: 3px solid color-mix(in srgb, var(--disease) 45%, transparent);
 }
 .cl-reading ul {
-  list-style: none; padding-left: 0.25rem; margin-bottom: 0.85rem;
+  list-style: none;
+  padding-left: 0.25rem;
+  margin-bottom: 0.85rem;
 }
 .cl-reading ul > li {
-  position: relative; padding-left: 1.4rem; margin-bottom: 0.35rem;
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.35rem;
 }
 .cl-reading ul > li::before {
   content: '';
-  position: absolute; left: 0.25rem; top: 0.6em;
-  width: 0.5rem; height: 0.5rem; border-radius: 0.15rem;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.15rem;
   background: linear-gradient(135deg, var(--primary), var(--medicine));
   transform: rotate(45deg);
 }
-.cl-reading ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 0.85rem; }
-.cl-reading li { margin-bottom: 0.3rem; }
-.cl-reading strong {
-  font-weight: 700; color: var(--medicine);
-  background: color-mix(in srgb, var(--medicine) 10%, transparent);
-  padding: 0 0.25rem; border-radius: 0.25rem;
+.cl-reading ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
 }
-.cl-reading em { font-style: italic; color: var(--disease); }
+.cl-reading li {
+  margin-bottom: 0.3rem;
+}
+.cl-reading strong {
+  font-weight: 700;
+  color: var(--medicine);
+  background: color-mix(in srgb, var(--medicine) 10%, transparent);
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+.cl-reading em {
+  font-style: italic;
+  color: var(--disease);
+}
 
 /* Custom scrollbar */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
-*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 *::-webkit-scrollbar-thumb {
   background-color: var(--border);
   border-radius: 9999px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
-*::-webkit-scrollbar-thumb:hover { background-color: var(--text-muted); }
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
+}
+
+/* Hide scrollbar while keeping scrollability (horizontal tab strips, chip rows) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 /* Skeleton */
 .cl-skeleton {
-  background: linear-gradient(90deg, var(--surface-dim) 25%, var(--border) 37%, var(--surface-dim) 63%);
+  background: linear-gradient(
+    90deg,
+    var(--surface-dim) 25%,
+    var(--border) 37%,
+    var(--surface-dim) 63%
+  );
   background-size: 400% 100%;
   animation: cl-shimmer 1.4s ease infinite;
   border-radius: 0.5rem;
 }
 @keyframes cl-shimmer {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 /* Card / section primitives used by clinical components */
@@ -526,7 +597,11 @@
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-card, 1.25rem);
-  box-shadow: var(--shadow-card, 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.06));
+  box-shadow: var(
+    --shadow-card,
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 4px 16px rgba(15, 23, 42, 0.06)
+  );
 }
 .cl-section-title {
   font-size: 0.78rem;
@@ -544,7 +619,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 /* Prose/Markdown clinical rendering */
@@ -554,37 +632,152 @@
   color: var(--text);
   max-width: none;
 }
-.prose-clinova p { margin-bottom: 1rem; }
-.prose-clinova h1 { font-size: 1.5rem; font-weight: 700; margin: 1.75rem 0 0.85rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); color: var(--text); }
-.prose-clinova h2 { font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.6rem; color: var(--text); }
-.prose-clinova h3 { font-size: 1.15rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: var(--text); }
-.prose-clinova ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
-.prose-clinova ol { list-style: decimal; padding-left: 1.5rem; margin: 1rem 0; }
-.prose-clinova li { margin-bottom: 0.4rem; line-height: 1.7; }
-.prose-clinova strong { font-weight: 600; color: var(--text); }
-.prose-clinova em { font-style: italic; }
-.prose-clinova code { font-family: var(--font-mono); font-size: 0.85em; background: var(--surface-dim); border: 1px solid var(--border); padding: 0.125rem 0.35rem; border-radius: 0.25rem; color: var(--primary); }
-.prose-clinova pre { background: var(--surface-dim); border: 1px solid var(--border); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0; }
-.prose-clinova pre code { background: transparent; border: none; padding: 0; font-size: 0.85rem; color: inherit; }
-.prose-clinova blockquote { border-left: 4px solid var(--primary); padding-left: 1rem; color: var(--text-muted); font-style: italic; margin: 1rem 0; }
-.prose-clinova table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; border: 1px solid var(--border); border-radius: 0.5rem; overflow: hidden; }
-.prose-clinova th { background: var(--surface-dim); font-weight: 600; text-align: left; padding: 0.625rem 0.875rem; border-bottom: 1px solid var(--border); color: var(--text); }
-.prose-clinova td { padding: 0.625rem 0.875rem; border-bottom: 1px solid var(--border); color: var(--text); opacity: 0.95; }
-.prose-clinova tr:last-child td { border-bottom: none; }
-.prose-clinova tr:hover td { background: rgba(37, 99, 235, 0.05); }
-.prose-clinova a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
-.prose-clinova a:hover { color: var(--primary-hover); }
-.prose-clinova .cl-pill { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; line-height: 1.4; border: 1px solid transparent; }
-.prose-clinova .cl-pill-medicine { color: var(--medicine); background: var(--medicine-container); border-color: color-mix(in srgb, var(--medicine) 22%, transparent); }
-.prose-clinova .cl-pill-disease { color: var(--disease); background: var(--disease-container); border-color: color-mix(in srgb, var(--disease) 22%, transparent); }
+.prose-clinova p {
+  margin-bottom: 1rem;
+}
+.prose-clinova h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  color: var(--text);
+}
+.prose-clinova h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.6rem;
+  color: var(--text);
+}
+.prose-clinova h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--text);
+}
+.prose-clinova ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.prose-clinova ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.prose-clinova li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+.prose-clinova strong {
+  font-weight: 600;
+  color: var(--text);
+}
+.prose-clinova em {
+  font-style: italic;
+}
+.prose-clinova code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--surface-dim);
+  border: 1px solid var(--border);
+  padding: 0.125rem 0.35rem;
+  border-radius: 0.25rem;
+  color: var(--primary);
+}
+.prose-clinova pre {
+  background: var(--surface-dim);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.prose-clinova pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: inherit;
+}
+.prose-clinova blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 1rem 0;
+}
+.prose-clinova table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.prose-clinova th {
+  background: var(--surface-dim);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.prose-clinova td {
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  opacity: 0.95;
+}
+.prose-clinova tr:last-child td {
+  border-bottom: none;
+}
+.prose-clinova tr:hover td {
+  background: rgba(37, 99, 235, 0.05);
+}
+.prose-clinova a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-clinova a:hover {
+  color: var(--primary-hover);
+}
+.prose-clinova .cl-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+.prose-clinova .cl-pill-medicine {
+  color: var(--medicine);
+  background: var(--medicine-container);
+  border-color: color-mix(in srgb, var(--medicine) 22%, transparent);
+}
+.prose-clinova .cl-pill-disease {
+  color: var(--disease);
+  background: var(--disease-container);
+  border-color: color-mix(in srgb, var(--disease) 22%, transparent);
+}
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 /* Disease mechanism / treatment diagrams — keep SVGs responsive and
    non-overlapping regardless of intrinsic size. */
-.diagram-host { width: 100%; }
+.diagram-host {
+  width: 100%;
+}
 .diagram-host svg {
   display: block;
   width: 100% !important;
@@ -593,4 +786,6 @@
   margin: 0 auto;
   font-family: system-ui, sans-serif;
 }
-.diagram-host svg text { font-family: system-ui, sans-serif; }
+.diagram-host svg text {
+  font-family: system-ui, sans-serif;
+}

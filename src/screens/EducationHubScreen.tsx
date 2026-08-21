@@ -306,6 +306,11 @@ export default function EducationHubScreen() {
       navigate('/knowledge/exam/prep')
       return
     }
+    // Pharmaceutical Industry sub-modules open the Industry Hub
+    if (subMod.id.startsWith('pi-')) {
+      navigate('/industry')
+      return
+    }
     // Sub-modules are returned by getModuleUnits with isSubModule flag
     // Navigate to /knowledge/{subModuleId} — the URL sync will detect it's a sub-module
     setSelectedUnit(null)

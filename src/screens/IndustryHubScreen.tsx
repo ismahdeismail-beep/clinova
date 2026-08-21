@@ -783,9 +783,8 @@ export default function IndustryHubScreen() {
         {(() => {
           const kemlDrug = kemlRefs.find(
             (k) =>
-              topicEntries.some(
-                (e) =>
-                  e.content?.kenyan_context?.toLowerCase().includes(k.drug_name.toLowerCase()),
+              topicEntries.some((e) =>
+                e.content?.kenyan_context?.toLowerCase().includes(k.drug_name.toLowerCase()),
               ) || selectedTopic.slug.includes('essential'),
           )
           if (!kemlDrug) return null
@@ -799,8 +798,8 @@ export default function IndustryHubScreen() {
                 <div className="flex items-center gap-2">
                   <CheckCircle size={12} className="text-emerald-500 shrink-0" />
                   <span>
-                    Listed on <span className="font-semibold">Kenya Essential Medicines List</span> —{' '}
-                    {kemlDrug.keml_tier} tier
+                    Listed on <span className="font-semibold">Kenya Essential Medicines List</span>{' '}
+                    — {kemlDrug.keml_tier} tier
                   </span>
                 </div>
                 {kemlDrug.who_eml_listed && (
@@ -814,9 +813,7 @@ export default function IndustryHubScreen() {
                 {kemlDrug.local_manufacturers.length > 0 && (
                   <div className="flex items-center gap-2">
                     <Building2 size={12} className="text-emerald-500 shrink-0" />
-                    <span>
-                      Locally manufactured by: {kemlDrug.local_manufacturers.join(', ')}
-                    </span>
+                    <span>Locally manufactured by: {kemlDrug.local_manufacturers.join(', ')}</span>
                   </div>
                 )}
               </div>
@@ -844,14 +841,16 @@ export default function IndustryHubScreen() {
                   className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden"
                 >
                   {/* Entry Header */}
-                  <div className="px-5 py-4 border-b border-[var(--border)]/60">
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex-1">
-                        <h3 className="text-sm font-bold text-[var(--text)]">{entry.title}</h3>
+                  <div className="px-4 sm:px-5 py-4 border-b border-[var(--border)]/60">
+                    <div className="flex items-start justify-between gap-2 sm:gap-3 flex-wrap">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm font-bold text-[var(--text)] break-words">
+                          {entry.title}
+                        </h3>
                         {entry.source && (
                           <div className="flex items-center gap-1.5 mt-1.5">
-                            <BookMarked size={11} className="text-[var(--success)]" />
-                            <span className="text-[10px] font-medium text-[var(--success)]">
+                            <BookMarked size={11} className="text-[var(--success)] shrink-0" />
+                            <span className="text-[10px] font-medium text-[var(--success)] break-words">
                               {entry.source}
                             </span>
                           </div>
@@ -875,7 +874,7 @@ export default function IndustryHubScreen() {
 
                   {/* Content Sections */}
                   {contentEntries.length > 0 && (
-                    <div className="p-5 space-y-3">
+                    <div className="p-4 sm:p-5 space-y-3">
                       {contentEntries.map(([key, value]) => {
                         const style = getSectionStyle(key)
                         const SectionIcon = style.icon
@@ -975,8 +974,8 @@ export default function IndustryHubScreen() {
         />
       </div>
 
-      {/* Tabs */}
-      <div className="flex border-b border-[var(--border)] mb-5">
+      {/* Tabs — horizontally scrollable on mobile */}
+      <div className="flex overflow-x-auto no-scrollbar border-b border-[var(--border)] mb-5 gap-0">
         {(
           [
             { key: 'topics', label: 'Topics', icon: BookOpen, count: topics.length },
@@ -997,14 +996,15 @@ export default function IndustryHubScreen() {
               setActiveTab(tab.key)
               setSearchQuery('')
             }}
-            className={`flex items-center gap-1.5 px-3 py-2.5 text-xs font-semibold transition-colors border-b-2 cursor-pointer ${
+            className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-2.5 text-[11px] sm:text-xs font-semibold transition-colors border-b-2 cursor-pointer whitespace-nowrap shrink-0 ${
               activeTab === tab.key
                 ? 'border-[var(--primary)] text-[var(--primary)]'
                 : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
             }`}
           >
             <tab.icon size={14} />
-            {tab.label}
+            <span className="hidden sm:inline">{tab.label}</span>
+            <span className="sm:hidden">{tab.label.slice(0, 4)}</span>
             <span className="text-[10px] font-mono opacity-60">({tab.count})</span>
           </button>
         ))}
@@ -1129,10 +1129,10 @@ export default function IndustryHubScreen() {
                 key={term.id}
                 className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 hover:border-[var(--primary)]/20 transition-colors"
               >
-                <div className="flex items-start justify-between gap-2 mb-1.5">
-                  <h3 className="text-sm font-bold text-[var(--text)]">{term.term}</h3>
+                <div className="flex items-start justify-between gap-2 mb-1.5 flex-wrap">
+                  <h3 className="text-sm font-bold text-[var(--text)] break-words">{term.term}</h3>
                   {term.aliases.length > 0 && (
-                    <span className="text-[9px] font-mono text-[var(--text-muted)] shrink-0 bg-[var(--surface-dim)] px-2 py-0.5 rounded-full">
+                    <span className="text-[9px] font-mono text-[var(--text-muted)] bg-[var(--surface-dim)] px-2 py-0.5 rounded-full max-w-full break-words">
                       AKA: {term.aliases.join(', ')}
                     </span>
                   )}
@@ -1188,12 +1188,14 @@ export default function IndustryHubScreen() {
                       : 'border-[var(--border)]'
                   }`}
                 >
-                  <div className="flex items-start justify-between gap-3 mb-2">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <h3 className="text-sm font-bold text-[var(--text)]">{mfr.name}</h3>
+                  <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="text-sm font-bold text-[var(--text)] truncate">
+                          {mfr.name}
+                        </h3>
                         {mfr.registration_number && (
-                          <span className="text-[8px] font-mono text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded">
+                          <span className="text-[8px] font-mono text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded shrink-0">
                             PPB: {mfr.registration_number}
                           </span>
                         )}
@@ -1237,7 +1239,7 @@ export default function IndustryHubScreen() {
                     ))}
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-3 text-[10px] text-[var(--text-muted)] pt-2 border-t border-[var(--border)]/40">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[9px] sm:text-[10px] text-[var(--text-muted)] pt-2 border-t border-[var(--border)]/40">
                     {mfr.founded_year && (
                       <span className="flex items-center gap-1">
                         <Clock size={9} />
@@ -1285,7 +1287,7 @@ export default function IndustryHubScreen() {
       {activeTab === 'quiz' && (
         <div className="space-y-4">
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-1.5 overflow-x-auto no-scrollbar pb-1">
             {['All', ...quizCategories].map((cat) => (
               <button
                 key={cat}
@@ -1297,7 +1299,7 @@ export default function IndustryHubScreen() {
                   setQuizFinished(false)
                   setQuizScore(0)
                 }}
-                className={`text-[10px] font-semibold px-3 py-1.5 rounded-full border transition-colors cursor-pointer ${
+                className={`text-[9px] sm:text-[10px] font-semibold px-2.5 sm:px-3 py-1.5 rounded-full border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
                   selectedQuizCategory === cat
                     ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
                     : 'bg-[var(--surface-dim)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]/30'
@@ -1324,16 +1326,18 @@ export default function IndustryHubScreen() {
 
             if (quizFinished) {
               return (
-                <div className="text-center py-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
-                  <div className="w-16 h-16 rounded-2xl bg-[var(--primary-container)] flex items-center justify-center mx-auto mb-4">
-                    <Award size={28} className="text-[var(--primary)]" />
+                <div className="text-center py-8 sm:py-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
+                  <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-2xl bg-[var(--primary-container)] flex items-center justify-center mx-auto mb-4">
+                    <Award size={24} className="text-[var(--primary)]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[var(--text)] mb-1">Quiz Complete!</h3>
-                  <p className="text-sm text-[var(--text-muted)] mb-4">
+                  <h3 className="text-base sm:text-lg font-bold text-[var(--text)] mb-1">
+                    Quiz Complete!
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[var(--text-muted)] mb-4">
                     You scored <span className="font-bold text-[var(--primary)]">{quizScore}</span>{' '}
                     out of <span className="font-bold">{filteredQuiz.length}</span>
                   </p>
-                  <p className="text-xs text-[var(--text-muted)] mb-6">
+                  <p className="text-[10px] sm:text-xs text-[var(--text-muted)] mb-6">
                     {Math.round((quizScore / filteredQuiz.length) * 100)}% correct
                   </p>
                   <button
@@ -1344,7 +1348,7 @@ export default function IndustryHubScreen() {
                       setQuizFinished(false)
                       setQuizScore(0)
                     }}
-                    className="text-xs font-semibold px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
+                    className="text-[10px] sm:text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
                   >
                     Try Again
                   </button>
@@ -1358,7 +1362,7 @@ export default function IndustryHubScreen() {
             return (
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
                 {/* Progress */}
-                <div className="px-5 py-3 border-b border-[var(--border)]/60 flex items-center justify-between">
+                <div className="px-4 sm:px-5 py-3 border-b border-[var(--border)]/60 flex items-center justify-between">
                   <span className="text-[10px] font-mono text-[var(--text-muted)]">
                     {quizIndex + 1} / {filteredQuiz.length}
                   </span>
@@ -1368,8 +1372,8 @@ export default function IndustryHubScreen() {
                 </div>
 
                 {/* Question */}
-                <div className="p-5">
-                  <div className="flex items-center gap-2 mb-3">
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-center gap-2 mb-3 flex-wrap">
                     <span
                       className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${
                         currentQ.type === 'clinical_scenario'
@@ -1398,7 +1402,7 @@ export default function IndustryHubScreen() {
                     </span>
                   </div>
 
-                  <p className="text-sm font-semibold text-[var(--text)] leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm font-semibold text-[var(--text)] leading-relaxed mb-4">
                     {currentQ.question}
                   </p>
 
@@ -1425,11 +1429,11 @@ export default function IndustryHubScreen() {
                           key={i}
                           disabled={quizAnswered}
                           onClick={() => !quizAnswered && setQuizSelected(i)}
-                          className={`w-full text-left p-3 rounded-xl border text-xs transition-all ${
+                          className={`w-full text-left p-2.5 sm:p-3 rounded-xl border text-[11px] sm:text-xs transition-all ${
                             quizAnswered ? 'cursor-default' : 'cursor-pointer'
                           } ${optionStyle}`}
                         >
-                          <span className="font-semibold text-[var(--text)] mr-2">
+                          <span className="font-semibold text-[var(--text)] mr-1.5">
                             {String.fromCharCode(65 + i)}.
                           </span>
                           <span className="text-[var(--text-muted)]">{opt}</span>
@@ -1440,8 +1444,8 @@ export default function IndustryHubScreen() {
 
                   {/* Explanation */}
                   {quizAnswered && (
-                    <div className="mt-4 p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/60">
-                      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                    <div className="mt-3 p-2.5 sm:p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/60">
+                      <p className="text-[10px] sm:text-[11px] text-[var(--text-muted)] leading-relaxed">
                         <span className="font-bold text-[var(--primary)]">Explanation: </span>
                         {currentQ.explanation}
                       </p>
@@ -1450,7 +1454,7 @@ export default function IndustryHubScreen() {
                 </div>
 
                 {/* Actions */}
-                <div className="px-5 py-3 border-t border-[var(--border)]/60 flex items-center justify-between">
+                <div className="px-4 py-3 border-t border-[var(--border)]/60 flex items-center justify-between">
                   {!quizAnswered ? (
                     <button
                       disabled={quizSelected === null}
@@ -1460,7 +1464,7 @@ export default function IndustryHubScreen() {
                           setQuizScore((s) => s + 1)
                         }
                       }}
-                      className={`text-xs font-semibold px-4 py-2 rounded-xl transition-opacity cursor-pointer ${
+                      className={`text-[10px] sm:text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl transition-opacity cursor-pointer ${
                         quizSelected === null
                           ? 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
                           : 'bg-[var(--primary)] text-white hover:opacity-90'
@@ -1479,7 +1483,7 @@ export default function IndustryHubScreen() {
                           setQuizAnswered(false)
                         }
                       }}
-                      className="text-xs font-semibold px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
+                      className="text-[10px] sm:text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer"
                     >
                       {quizIndex + 1 >= filteredQuiz.length ? 'See Results' : 'Next Question'}
                     </button>
@@ -1495,26 +1499,38 @@ export default function IndustryHubScreen() {
       {activeTab === 'keml' && (
         <div className="space-y-4">
           {/* KEML Stats */}
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
             {(() => {
               const total = kemlRefs.length
               const local = kemlRefs.filter(
-                (k) => k.local_availability === 'locally_manufactured' || k.local_availability === 'both',
+                (k) =>
+                  k.local_availability === 'locally_manufactured' ||
+                  k.local_availability === 'both',
               ).length
               const core = kemlRefs.filter((k) => k.keml_tier === 'core').length
               return (
                 <>
-                  <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 text-center">
-                    <p className="text-lg font-bold text-[var(--primary)]">{total}</p>
-                    <p className="text-[9px] font-medium text-[var(--text-muted)]">KEML Drugs</p>
+                  <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2.5 sm:p-3 text-center">
+                    <p className="text-base sm:text-lg font-bold text-[var(--primary)]">{total}</p>
+                    <p className="text-[9px] sm:text-[10px] font-medium text-[var(--text-muted)]">
+                      KEML Drugs
+                    </p>
                   </div>
-                  <div className="rounded-xl border border-emerald-300/30 dark:border-emerald-700/30 bg-emerald-50/50 dark:bg-emerald-950/20 p-3 text-center">
-                    <p className="text-lg font-bold text-emerald-600 dark:text-emerald-400">{local}</p>
-                    <p className="text-[9px] font-medium text-[var(--text-muted)]">Local Mfg</p>
+                  <div className="rounded-xl border border-emerald-300/30 dark:border-emerald-700/30 bg-emerald-50/50 dark:bg-emerald-950/20 p-2.5 sm:p-3 text-center">
+                    <p className="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400">
+                      {local}
+                    </p>
+                    <p className="text-[9px] sm:text-[10px] font-medium text-[var(--text-muted)]">
+                      Local Mfg
+                    </p>
                   </div>
-                  <div className="rounded-xl border border-amber-300/30 dark:border-amber-700/30 bg-amber-50/50 dark:bg-amber-950/20 p-3 text-center">
-                    <p className="text-lg font-bold text-amber-600 dark:text-amber-400">{core}</p>
-                    <p className="text-[9px] font-medium text-[var(--text-muted)]">Core List</p>
+                  <div className="rounded-xl border border-amber-300/30 dark:border-amber-700/30 bg-amber-50/50 dark:bg-amber-950/20 p-2.5 sm:p-3 text-center">
+                    <p className="text-base sm:text-lg font-bold text-amber-600 dark:text-amber-400">
+                      {core}
+                    </p>
+                    <p className="text-[9px] sm:text-[10px] font-medium text-[var(--text-muted)]">
+                      Core List
+                    </p>
                   </div>
                 </>
               )
@@ -1543,16 +1559,19 @@ export default function IndustryHubScreen() {
                 (k) =>
                   !kemlSearch.trim() ||
                   k.drug_name.toLowerCase().includes(kemlSearch.toLowerCase()) ||
-                  (k.keml_category && k.keml_category.toLowerCase().includes(kemlSearch.toLowerCase())),
+                  (k.keml_category &&
+                    k.keml_category.toLowerCase().includes(kemlSearch.toLowerCase())),
               )
               .map((keml) => (
                 <div
                   key={keml.drug_id}
                   className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 hover:border-[var(--primary)]/20 transition-colors"
                 >
-                  <div className="flex items-start justify-between gap-2 mb-1.5">
-                    <h3 className="text-sm font-bold text-[var(--text)]">{keml.drug_name}</h3>
-                    <div className="flex items-center gap-1.5 shrink-0">
+                  <div className="flex items-start justify-between gap-2 mb-1.5 flex-wrap">
+                    <h3 className="text-sm font-bold text-[var(--text)] break-words">
+                      {keml.drug_name}
+                    </h3>
+                    <div className="flex items-center gap-1.5 flex-wrap">
                       {keml.keml_tier === 'core' ? (
                         <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300/40 dark:border-emerald-700/40">
                           Core
@@ -1571,7 +1590,9 @@ export default function IndustryHubScreen() {
                   </div>
 
                   {keml.keml_category && (
-                    <p className="text-[11px] text-[var(--text-muted)] mb-2">{keml.keml_category}</p>
+                    <p className="text-[11px] text-[var(--text-muted)] mb-2">
+                      {keml.keml_category}
+                    </p>
                   )}
 
                   <div className="flex flex-wrap gap-1.5 mb-2">

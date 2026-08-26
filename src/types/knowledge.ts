@@ -635,6 +635,7 @@ export interface IndustryKnowledgeEntry {
   source_url: string | null
   last_verified: string | null
   tags: string[]
+  keywords?: string[]
   metadata: Record<string, any>
   created_at: string
   updated_at: string

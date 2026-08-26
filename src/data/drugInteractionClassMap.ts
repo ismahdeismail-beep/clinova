@@ -113,12 +113,12 @@ const ENTRIES: [string, string[]][] = [
   ['hydrocodone', ['opioid']],
   ['codeine', ['opioid']],
   ['tramadol', ['opioid', 'SSRI']],
-  ['fentanyl', ['opioid']],
+  ['fentanyl', ['opioid', 'fentanyl']],
   ['buprenorphine', ['opioid']],
   ['methadone', ['opioid', 'SSRI', 'QT-prolonging']],
-  ['meperidine', ['opioid']],
-  ['pethidine', ['opioid']],
-  ['tapentadol', ['opioid']],
+  ['meperidine', ['opioid', 'meperidine']],
+  ['pethidine', ['opioid', 'meperidine']],
+  ['tapentadol', ['opioid', 'tapentadol']],
   ['hydromorphone', ['opioid']],
   // Paracetamol
   ['paracetamol', ['Non-opioid analgesic']],
@@ -348,8 +348,8 @@ const ENTRIES: [string, string[]][] = [
   ['efavirenz', ['Antiretroviral (NNRTI)']],
   ['dolutegravir', ['Antiretroviral (INSTI)']],
   ['raltegravir', ['Antiretroviral (INSTI)']],
-  ['darunavir', ['Antiretroviral (Protease inhibitor)']],
-  ['lopinavir', ['Antiretroviral (Protease inhibitor)']],
+  ['darunavir', ['Antiretroviral (Protease inhibitor)', 'protease inhibitor']],
+  ['lopinavir', ['Antiretroviral (Protease inhibitor)', 'protease inhibitor']],
   // Antimycobacterials
   ['isoniazid', ['Antimycobacterial']],
   ['rifampicin', ['Antimycobacterial']],
@@ -562,9 +562,44 @@ const ENTRIES: [string, string[]][] = [
   ['hydroxychloroquine', ['antimalarial']],
   ['leflunomide', ['Immunosuppressant']],
   ['methotrexate', ['Antimetabolite']],
+  // Fibrates (missing from class map — needed for statin interaction rule)
+  ['fenofibrate', ['fibrate']],
+  ['gemfibrozil', ['fibrate']],
+  ['bezafibrate', ['fibrate']],
+  ['clofibrate', ['fibrate']],
+  // Lithium (needed for lithium interaction rules)
+  ['lithium', ['lithium']],
+  ['lithium carbonate', ['lithium']],
+  ['lithium citrate', ['lithium']],
+  // Theophylline / aminophylline (needed for theophylline interaction rules)
+  ['theophylline', ['theophylline', 'methylxanthine']],
+  ['aminophylline', ['aminophylline', 'methylxanthine']],
+  // Milrinone (needed for inotrope antagonism rule)
+  ['milrinone', ['PDE3 inhibitor', 'beta-agonist inotrope']],
+  // Oral contraceptives (needed for enzyme induction rule)
+  ['ethinylestradiol', ['combined oral contraceptive']],
+  ['levonorgestrel', ['combined oral contraceptive']],
+  ['norethisterone', ['combined oral contraceptive']],
+  ['desogestrel', ['combined oral contraceptive']],
+  // Protease inhibitor alias (shorter name for interaction rules)
+  ['ritonavir', ['Antiretroviral (Protease inhibitor)', 'protease inhibitor']],
+  ['atazanavir', ['Antiretroviral (Protease inhibitor)', 'protease inhibitor']],
 ]
 
 export const DRUG_TO_CLASSES: Record<string, string[]> = {}
 for (const [name, classes] of ENTRIES) {
-  DRUG_TO_CLASSES[name.toLowerCase()] = classes
+  const key = name.toLowerCase()
+  const existing = DRUG_TO_CLASSES[key]
+  if (existing) {
+    const seen = new Set(existing)
+    for (const c of classes) {
+      if (!seen.has(c)) {
+        seen.add(c)
+        existing.push(c)
+      }
+    }
+    DRUG_TO_CLASSES[key] = existing
+  } else {
+    DRUG_TO_CLASSES[key] = [...classes]
+  }
 }

@@ -72,8 +72,7 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
       'aminoglycoside',
       'ACE inhibitor',
       'ARB',
-      'ciclosporin',
-      'tacrolimus',
+      'Immunosuppressant',
       'loop diuretic',
     ],
     severity: 'major',
@@ -97,11 +96,29 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
     onset: 'rapid',
   },
   {
-    class_a: ['SSRI', 'SNRI', 'MAOI', 'triptan', 'tramadol', 'linezolid'],
-    class_b: ['SSRI', 'SNRI', 'MAOI', 'triptan', 'tramadol', 'linezolid'],
+    class_a: [
+      'SSRI',
+      'SNRI',
+      'MAOI',
+      'triptan',
+      'meperidine',
+      'fentanyl',
+      'tapentadol',
+      'oxazolidinone',
+    ],
+    class_b: [
+      'SSRI',
+      'SNRI',
+      'MAOI',
+      'triptan',
+      'meperidine',
+      'fentanyl',
+      'tapentadol',
+      'oxazolidinone',
+    ],
     severity: 'contraindicated',
     mechanism:
-      'Excessive serotonergic activity: MAOIs block serotonin degradation, SSRIs/SNRIs block reuptake, triptans stimulate 5-HT1B/1D.',
+      'Excessive serotonergic activity: MAOIs block serotonin degradation, SSRIs/SNRIs block reuptake, triptans stimulate 5-HT1B/1D, serotonergic opioids (meperidine, fentanyl, tapentadol, tramadol, methadone) inhibit reuptake or MAO.',
     effect:
       'Serotonin syndrome: mental status changes, autonomic instability, neuromuscular hyperactivity. Can be fatal.',
     management:
@@ -120,13 +137,13 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
     onset: 'rapid',
   },
   {
-    class_a: ['statin'],
+    class_a: ['Statin'],
     class_b: [
       'azole antifungal',
       'macrolide antibiotic',
       'protease inhibitor',
       'fibrate',
-      'ciclosporin',
+      'Immunosuppressant',
       'amiodarone',
     ],
     severity: 'major',

@@ -141,7 +141,7 @@ function getCategoryColors(categoryName: string) {
 
 const SECTION_STYLES: Record<
   string,
-  { color: string; border: string; icon: typeof Factory; label: string }
+  { color: string; border: string; icon: React.ElementType; label: string }
 > = {
   overview: {
     color: 'bg-blue-50 dark:bg-blue-950/30',
@@ -182,7 +182,7 @@ const SECTION_STYLES: Record<
   equipment: {
     color: 'bg-teal-50 dark:bg-teal-950/30',
     border: 'border-l-teal-400',
-    icon: Settings,
+    icon: SettingsIcon,
     label: 'Equipment',
   },
   materials: {
@@ -579,7 +579,7 @@ function Globe({ size = 16, className = '' }: { size?: number; className?: strin
   )
 }
 
-function Settings({ size = 16, className = '' }: { size?: number; className?: string }) {
+function SettingsIcon({ size = 16, className = '' }: { size?: number; className?: string }) {
   return (
     <svg
       width={size}

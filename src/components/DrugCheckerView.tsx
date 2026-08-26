@@ -389,11 +389,6 @@ export default function DrugCheckerView() {
     setResult(null)
   }
 
-  const totalContraindications = useMemo(
-    () => [...getContraindications(selectedA), ...getContraindications(selectedB)].length,
-    [selectedA, selectedB],
-  )
-
   return (
     <div className="max-w-4xl mx-auto px-4 py-6">
       {/* Header */}

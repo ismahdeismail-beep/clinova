@@ -49,7 +49,7 @@ export const DRUG_TOXICITY_PROFILES: DrugToxicityProfile[] = [
     drug_name: 'digoxin',
     toxicities: [
       {
-        condition: 'Digoxin toxicity',
+        condition: 'Digoxin toxicity (chronic)',
         symptoms: [
           'Nausea',
           'Vomiting',
@@ -64,6 +64,15 @@ export const DRUG_TOXICITY_PROFILES: DrugToxicityProfile[] = [
         antidote: 'Digoxin-specific antibody fragments (DigiFab)',
         dose_threshold:
           'Level greater than 2.0 ng/mL (chronic) or acute ingestion greater than 10mg',
+      },
+      {
+        condition: 'Acute digoxin ingestion',
+        symptoms: ['Nausea', 'Vomiting', 'Bradyarrhythmia', 'Hyperkalaemia', 'Heart block'],
+        severity: 'life-threatening',
+        management:
+          'Activated charcoal if within 1 hour. Atropine for bradycardia. DigiFab for life-threatening arrhythmias or K+ greater than 5.5. Haemodialysis ineffective (large volume of distribution).',
+        antidote: 'Digoxin-specific antibody fragments (DigiFab)',
+        dose_threshold: 'Acute ingestion greater than 10mg or level greater than 5 ng/mL',
       },
     ],
   },
@@ -246,20 +255,6 @@ export const DRUG_TOXICITY_PROFILES: DrugToxicityProfile[] = [
           'Fomepizole 15mg/kg IV loading dose. Haemodialysis. IV ethanol alternative. Calcium gluconate for hypocalcaemia. Thiamine and pyridoxine.',
         antidote: 'Fomepizole (Antizol) or IV ethanol',
         dose_threshold: 'Greater than 100mL',
-      },
-    ],
-  },
-  {
-    drug_name: 'digoxin',
-    toxicities: [
-      {
-        condition: 'Acute digoxin ingestion',
-        symptoms: ['Nausea', 'Vomiting', 'Bradyarrhythmia', 'Hyperkalaemia', 'Heart block'],
-        severity: 'life-threatening',
-        management:
-          'Activated charcoal if within 1 hour. Atropine for bradycardia. DigiFab for life-threatening arrhythmias or K+ greater than 5.5. Haemodialysis ineffective (large volume of distribution).',
-        antidote: 'Digoxin-specific antibody fragments (DigiFab)',
-        dose_threshold: 'Acute ingestion greater than 10mg or level greater than 5 ng/mL',
       },
     ],
   },

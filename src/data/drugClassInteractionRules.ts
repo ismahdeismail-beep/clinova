@@ -155,8 +155,8 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
     onset: 'delayed',
   },
   {
-    class_a: ['NSAID', 'trimethoprim', 'probenecid', 'penicillin', 'proton pump inhibitor'],
-    class_b: ['methotrexate'],
+    class_a: ['NSAID', 'sulfonamide', 'urate-lowering', 'penicillin', 'proton pump inhibitor'],
+    class_b: ['Antimetabolite'],
     severity: 'major',
     mechanism:
       'Reduced renal tubular secretion of methotrexate or reduced renal clearance: elevated MTX levels.',
@@ -168,12 +168,12 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
     class_a: [
       'azole antifungal',
       'macrolide antibiotic',
-      'fluoroquinolone',
-      'metronidazole',
+      'fluoroquinolone antibiotic',
+      'nitroimidazole',
       'amiodarone',
-      'cimetidine',
+      'H2 receptor antagonist',
     ],
-    class_b: ['warfarin'],
+    class_b: ['Anticoagulant', 'Vitamin K antagonist'],
     severity: 'major',
     mechanism:
       'CYP2C9/3A4 inhibition reduces warfarin metabolism. Reduced vitamin K synthesis by gut flora (antibiotics).',
@@ -204,7 +204,7 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
   },
   {
     class_a: ['amiodarone', 'verapamil', 'diltiazem', 'macrolide antibiotic', 'spironolactone'],
-    class_b: ['digoxin'],
+    class_b: ['Cardiac glycoside'],
     severity: 'major',
     mechanism:
       'P-glycoprotein (P-gp) and/or CYP3A4 inhibition increases digoxin bioavailability and reduces renal clearance.',
@@ -227,10 +227,10 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
   {
     class_a: ['sulfonylurea', 'insulin', 'meglitinide'],
     class_b: [
-      'sulfonamide antibiotic',
+      'sulfonamide',
       'ACE inhibitor',
       'MAOI',
-      'fluoroquinolone',
+      'fluoroquinolone antibiotic',
       'beta-blocker',
       'salicylate',
     ],
@@ -243,8 +243,8 @@ export const CLASS_INTERACTION_RULES: DrugClassInteractionRule[] = [
     onset: 'delayed',
   },
   {
-    class_a: ['beta-blocker', 'non-DHP calcium channel blocker'],
-    class_b: ['beta-agonist inotrope', 'dobutamine', 'dopamine', 'milrinone'],
+    class_a: ['beta-blocker', 'Calcium channel blocker (Non-DHP)'],
+    class_b: ['beta-agonist inotrope'],
     severity: 'major',
     mechanism:
       'Beta-blockers competitively antagonise beta-1 receptors, directly opposing inotrope mechanism.',

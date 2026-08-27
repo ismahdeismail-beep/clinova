@@ -1,9 +1,10 @@
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
 import { CLASS_INTERACTION_RULES } from '../data/drugClassInteractionRules'
 import { SPECIFIC_INTERACTIONS } from '../data/drugSpecificInteractions'
 import { DRUG_CONTRAINDICATIONS } from '../data/drugContraindicationsData'
 import { DRUG_TOXICITY_PROFILES } from '../data/drugToxicityData'
 import { DRUG_TO_CLASSES } from '../data/drugInteractionClassMap'
+import { getBundledDrugs } from '../lib/lazyDrugData'
+import type { DrugMonograph } from '../services/drugMonograph.service'
 import type {
   DrugInteraction,
   DrugContraindication,
@@ -35,9 +36,14 @@ for (const t of DRUG_TOXICITY_PROFILES) {
   TOXICITY_INDEX.set(t.drug_name.toLowerCase(), t)
 }
 
-const DRUG_NAME_INDEX = new Map<string, (typeof BUNDLED_DRUGS)[number]>()
-for (const d of BUNDLED_DRUGS) {
-  DRUG_NAME_INDEX.set(d.name.toLowerCase(), d)
+let _drugNameIndex: Map<string, DrugMonograph> | null = null
+function getDrugNameIndex(): Map<string, DrugMonograph> {
+  if (_drugNameIndex) return _drugNameIndex
+  _drugNameIndex = new Map()
+  for (const d of getBundledDrugs()) {
+    _drugNameIndex.set(d.name.toLowerCase(), d)
+  }
+  return _drugNameIndex
 }
 
 const SEVERITY_RANK: Record<InteractionSeverity, number> = {
@@ -58,7 +64,7 @@ function resolveClasses(drugName: string): string[] {
   }
 
   // Final fallback: derive from drug data
-  const drug = DRUG_NAME_INDEX.get(name)
+  const drug = getDrugNameIndex().get(name)
   if (drug) {
     const cls = drug.drug_class_name || drug.drug_class || ''
     return [cls]
@@ -205,16 +211,17 @@ export function getToxicityProfile(drugName: string): DrugToxicityProfile | null
 export function searchDrugsForChecker(query: string): string[] {
   if (!query || query.length < 2) return []
   const q = query.toLowerCase().trim()
-  return BUNDLED_DRUGS.filter(
-    (d) => d.name.toLowerCase().includes(q) || d.generic_name.toLowerCase().includes(q),
-  )
+  return getBundledDrugs()
+    .filter((d) => d.name.toLowerCase().includes(q) || d.generic_name.toLowerCase().includes(q))
     .map((d) => d.name)
     .sort()
     .slice(0, 20)
 }
 
 export function getAllDrugNames(): string[] {
-  return BUNDLED_DRUGS.map((d) => d.name).sort()
+  return getBundledDrugs()
+    .map((d) => d.name)
+    .sort()
 }
 
 export function getDrugClasses(drugName: string): string[] {

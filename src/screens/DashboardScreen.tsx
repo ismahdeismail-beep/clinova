@@ -32,8 +32,9 @@ import { useAuth } from '../contexts/AuthContext'
 import ClinovaLogo from '../components/ClinovaLogo'
 import DailySpotlight from '../components/DailySpotlight'
 import { SearchService, type UnifiedSearchResult } from '../services/search.service'
+import { loadBundledDrugs } from '../lib/lazyDrugData'
 import { useDebounce } from '../hooks/useDebounce'
-import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
+import { useContentStats, getFallbackDrugCount, FALLBACK_CASES } from '../hooks/useContentStats'
 import { DAILY_READINGS as DAILY_ARTICLES } from '../data/dailyReadings'
 
 const STUDY_TRACKS: Record<
@@ -224,11 +225,19 @@ export default function DashboardScreen() {
   }, [userData?.id])
 
   // ── Stable stats (single source of truth via useContentStats) ──
-  const { drugCount, caseCount, areaCount, carePlanCount, loading: statsLoading } = useContentStats()
+  const {
+    drugCount,
+    caseCount,
+    areaCount,
+    carePlanCount,
+    loading: statsLoading,
+  } = useContentStats()
 
   // Featured article index (rotates daily)
   const [currentArticleIdx, setCurrentArticleIdx] = useState(() => {
-    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000)
+    const dayOfYear = Math.floor(
+      (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000,
+    )
     return dayOfYear % DAILY_ARTICLES.length
   })
 
@@ -259,18 +268,25 @@ export default function DashboardScreen() {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
-  const handleSearchSelect = useCallback((result: UnifiedSearchResult) => {
-    setShowResults(false)
-    setSearchQuery('')
-    const route = RESULT_ROUTES[result.result_type] || '/knowledge'
-    const params = new URLSearchParams()
-    if (result.result_type === 'drug') {
-      params.set('q', result.title)
-      navigate(`${route}?${params.toString()}`)
-    } else {
-      navigate(route)
-    }
-  }, [navigate])
+  useEffect(() => {
+    loadBundledDrugs().catch(console.error)
+  }, [])
+
+  const handleSearchSelect = useCallback(
+    (result: UnifiedSearchResult) => {
+      setShowResults(false)
+      setSearchQuery('')
+      const route = RESULT_ROUTES[result.result_type] || '/knowledge'
+      const params = new URLSearchParams()
+      if (result.result_type === 'drug') {
+        params.set('q', result.title)
+        navigate(`${route}?${params.toString()}`)
+      } else {
+        navigate(route)
+      }
+    },
+    [navigate],
+  )
 
   const handleSearchKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && searchResults.length > 0) {
@@ -287,7 +303,7 @@ export default function DashboardScreen() {
   // Auto-swipe Today's Reading every 8 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentArticleIdx(prev => (prev + 1) % DAILY_ARTICLES.length)
+      setCurrentArticleIdx((prev) => (prev + 1) % DAILY_ARTICLES.length)
     }, 8000)
     return () => clearInterval(interval)
   }, [])
@@ -307,7 +323,9 @@ export default function DashboardScreen() {
             </div>
             <div>
               <h1 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-1">
-                {isFirstTime ? `Welcome to Clinova, ${userData?.name || 'Student'}` : `Welcome back, ${userData?.name || 'Student'}`}
+                {isFirstTime
+                  ? `Welcome to Clinova, ${userData?.name || 'Student'}`
+                  : `Welcome back, ${userData?.name || 'Student'}`}
               </h1>
               <p className="text-white/80 text-sm max-w-xl leading-relaxed">
                 {isFirstTime
@@ -339,10 +357,34 @@ export default function DashboardScreen() {
       {/* ── Quick Stats Row ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
         {[
-          { icon: Pill, label: 'Drug Monographs', value: String(drugCount ?? FALLBACK_DRUGS), color: 'text-blue-600', bg: 'bg-blue-500/10' },
-          { icon: BarChart3, label: 'Clinical Cases', value: String(caseCount ?? FALLBACK_CASES), color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
-          { icon: ClipboardCheck, label: 'Care Plans', value: String(carePlanCount), color: 'text-teal-600', bg: 'bg-teal-500/10' },
-          { icon: TrendingUp, label: 'Therapeutic Areas', value: String(areaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
+          {
+            icon: Pill,
+            label: 'Drug Monographs',
+            value: String(drugCount ?? getFallbackDrugCount()),
+            color: 'text-blue-600',
+            bg: 'bg-blue-500/10',
+          },
+          {
+            icon: BarChart3,
+            label: 'Clinical Cases',
+            value: String(caseCount ?? FALLBACK_CASES),
+            color: 'text-emerald-600',
+            bg: 'bg-emerald-500/10',
+          },
+          {
+            icon: ClipboardCheck,
+            label: 'Care Plans',
+            value: String(carePlanCount),
+            color: 'text-teal-600',
+            bg: 'bg-teal-500/10',
+          },
+          {
+            icon: TrendingUp,
+            label: 'Therapeutic Areas',
+            value: String(areaCount),
+            color: 'text-rose-600',
+            bg: 'bg-rose-500/10',
+          },
         ].map((stat, idx) => {
           const Icon = stat.icon
           return (
@@ -350,14 +392,21 @@ export default function DashboardScreen() {
               key={idx}
               className="flex items-center gap-3 p-4 rounded-xl bg-[var(--surface)] border border-[var(--border)] shadow-sm"
             >
-              <div className={`w-10 h-10 rounded-lg ${stat.bg} flex items-center justify-center shrink-0`}>
+              <div
+                className={`w-10 h-10 rounded-lg ${stat.bg} flex items-center justify-center shrink-0`}
+              >
                 <Icon size={20} className={stat.color} />
               </div>
               <div>
                 {statsLoading ? (
-                  <span className="block w-12 h-6 rounded bg-[var(--surface-dim)] animate-pulse" aria-hidden />
+                  <span
+                    className="block w-12 h-6 rounded bg-[var(--surface-dim)] animate-pulse"
+                    aria-hidden
+                  />
                 ) : (
-                  <p className="text-lg font-extrabold tracking-tight text-[var(--text)]">{stat.value}</p>
+                  <p className="text-lg font-extrabold tracking-tight text-[var(--text)]">
+                    {stat.value}
+                  </p>
                 )}
                 <p className="text-[11px] text-[var(--text-muted)] font-medium">{stat.label}</p>
               </div>
@@ -399,20 +448,32 @@ export default function DashboardScreen() {
       {/* ── Global Search ── */}
       <div ref={searchRef} className="relative group">
         <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none z-10">
-          <Search size={18} className="text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors" />
+          <Search
+            size={18}
+            className="text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors"
+          />
         </div>
         <input
           type="text"
           value={searchQuery}
-          onChange={(e) => { setSearchQuery(e.target.value); setShowResults(true) }}
-          onFocus={() => { if (searchResults.length > 0) setShowResults(true) }}
+          onChange={(e) => {
+            setSearchQuery(e.target.value)
+            setShowResults(true)
+          }}
+          onFocus={() => {
+            if (searchResults.length > 0) setShowResults(true)
+          }}
           onKeyDown={handleSearchKeyDown}
           placeholder="Search drugs, diseases, clinical cases..."
           className="w-full pl-11 pr-10 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-sm shadow-sm transition-all"
         />
         {searchQuery && (
           <button
-            onClick={() => { setSearchQuery(''); setSearchResults([]); setShowResults(false) }}
+            onClick={() => {
+              setSearchQuery('')
+              setSearchResults([])
+              setShowResults(false)
+            }}
             className="absolute inset-y-0 right-4 flex items-center text-[var(--text-muted)] hover:text-[var(--text)] transition-colors z-10 cursor-pointer"
           >
             <X size={16} />
@@ -440,7 +501,9 @@ export default function DashboardScreen() {
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-semibold text-[var(--text)] truncate">{r.title}</p>
                       {r.subtitle && (
-                        <p className="text-[11px] text-[var(--text-muted)] truncate">{r.subtitle}</p>
+                        <p className="text-[11px] text-[var(--text-muted)] truncate">
+                          {r.subtitle}
+                        </p>
                       )}
                     </div>
                     <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-muted)] shrink-0">
@@ -453,7 +516,9 @@ export default function DashboardScreen() {
               <div className="p-6 text-center">
                 <Search size={24} className="mx-auto text-[var(--text-muted)]/40 mb-2" />
                 <p className="text-sm text-[var(--text-muted)]">No results found</p>
-                <p className="text-xs text-[var(--text-muted)]/60 mt-1">Try a different search term</p>
+                <p className="text-xs text-[var(--text-muted)]/60 mt-1">
+                  Try a different search term
+                </p>
               </div>
             ) : null}
           </div>
@@ -464,24 +529,34 @@ export default function DashboardScreen() {
       <DailySpotlight />
 
       {/* ── Featured Article ── */}
-      <div className={`rounded-xl border ${currentArticle.theme.border} bg-[var(--surface)] shadow-sm overflow-hidden`}>
-        <div className={`p-4 sm:p-5 border-b ${currentArticle.theme.border} bg-gradient-to-r ${currentArticle.theme.chip} flex items-center justify-between`}>
+      <div
+        className={`rounded-xl border ${currentArticle.theme.border} bg-[var(--surface)] shadow-sm overflow-hidden`}
+      >
+        <div
+          className={`p-4 sm:p-5 border-b ${currentArticle.theme.border} bg-gradient-to-r ${currentArticle.theme.chip} flex items-center justify-between`}
+        >
           <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
-            <span className={`w-7 h-7 rounded-lg bg-gradient-to-br ${currentArticle.theme.gradient} flex items-center justify-center shadow-sm`}>
+            <span
+              className={`w-7 h-7 rounded-lg bg-gradient-to-br ${currentArticle.theme.gradient} flex items-center justify-center shadow-sm`}
+            >
               <ArticleIcon size={14} className="text-white" />
             </span>
             Today's Reading
           </h3>
           <div className="flex items-center gap-1.5">
             <button
-              onClick={() => setCurrentArticleIdx(prev => (prev - 1 + DAILY_ARTICLES.length) % DAILY_ARTICLES.length)}
+              onClick={() =>
+                setCurrentArticleIdx(
+                  (prev) => (prev - 1 + DAILY_ARTICLES.length) % DAILY_ARTICLES.length,
+                )
+              }
               className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
               aria-label="Previous reading"
             >
               <ChevronLeft size={16} />
             </button>
             <button
-              onClick={() => setCurrentArticleIdx(prev => (prev + 1) % DAILY_ARTICLES.length)}
+              onClick={() => setCurrentArticleIdx((prev) => (prev + 1) % DAILY_ARTICLES.length)}
               className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
               aria-label="Next reading"
             >
@@ -491,35 +566,43 @@ export default function DashboardScreen() {
         </div>
         <div className="p-4 sm:p-5">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${currentArticle.theme.chip} uppercase tracking-wider`}>
+            <span
+              className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${currentArticle.theme.chip} uppercase tracking-wider`}
+            >
               {currentArticle.badge}
             </span>
-            <span className={`text-[10px] font-bold ${currentArticle.theme.text}`}>{currentArticle.category}</span>
+            <span className={`text-[10px] font-bold ${currentArticle.theme.text}`}>
+              {currentArticle.category}
+            </span>
             <span className="text-[10px] text-[var(--text-muted)]">·</span>
             <span className="text-[10px] text-[var(--text-muted)] flex items-center gap-1">
               <Clock size={10} />
               {currentArticle.readTime}
             </span>
           </div>
-          <h4 className="font-bold text-[var(--text)] text-sm sm:text-base mb-1.5">{currentArticle.title}</h4>
-           <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed mb-3">{currentArticle.summary}</p>
-           <Link
-             to={`/reading/${currentArticle.id}`}
-             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r ${currentArticle.theme.button} text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-sm`}
-           >
-             Read More <ArrowRight size={12} />
-           </Link>
-         </div>
-         {/* Auto-swipe indicator */}
-         <div className="flex justify-center gap-1.5 mt-3 pb-4">
-           {DAILY_ARTICLES.map((_, idx) => (
-             <button
-               key={idx}
-               onClick={() => setCurrentArticleIdx(idx)}
-               className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${idx === currentArticleIdx ? `${currentArticle.theme.dot} w-4` : 'bg-[var(--border)]'}`}
-             />
-           ))}
-         </div>
+          <h4 className="font-bold text-[var(--text)] text-sm sm:text-base mb-1.5">
+            {currentArticle.title}
+          </h4>
+          <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed mb-3">
+            {currentArticle.summary}
+          </p>
+          <Link
+            to={`/reading/${currentArticle.id}`}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r ${currentArticle.theme.button} text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-sm`}
+          >
+            Read More <ArrowRight size={12} />
+          </Link>
+        </div>
+        {/* Auto-swipe indicator */}
+        <div className="flex justify-center gap-1.5 mt-3 pb-4">
+          {DAILY_ARTICLES.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentArticleIdx(idx)}
+              className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${idx === currentArticleIdx ? `${currentArticle.theme.dot} w-4` : 'bg-[var(--border)]'}`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* ── Main Content Grid ── */}
@@ -549,7 +632,9 @@ export default function DashboardScreen() {
                           <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] uppercase tracking-wider shrink-0">
                             {track.badge}
                           </span>
-                          <h3 className="font-bold text-sm text-[var(--text)] truncate">{track.title}</h3>
+                          <h3 className="font-bold text-sm text-[var(--text)] truncate">
+                            {track.title}
+                          </h3>
                         </div>
                         <span className="text-[11px] text-[var(--text-muted)] italic hidden sm:block shrink-0">
                           {track.subtitle}
@@ -557,7 +642,10 @@ export default function DashboardScreen() {
                       </div>
                       <ul className="space-y-2">
                         {track.points.map((point, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[var(--text)]">
+                          <li
+                            key={idx}
+                            className="flex items-start gap-2 text-xs sm:text-sm text-[var(--text)]"
+                          >
                             <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-1.5 shrink-0" />
                             <span className="leading-relaxed">{point}</span>
                           </li>
@@ -577,8 +665,8 @@ export default function DashboardScreen() {
               Continue Learning
             </h3>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-              Pick up where you left off — dive into clinical cases, review disease monographs, attempt
-              the next exam paper, or explore nursing care plans in your study plan.
+              Pick up where you left off — dive into clinical cases, review disease monographs,
+              attempt the next exam paper, or explore nursing care plans in your study plan.
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
               <Link
@@ -633,7 +721,12 @@ export default function DashboardScreen() {
                 const Icon = feature.icon
                 const Wrapper: React.FC<{ children: React.ReactNode }> = feature.action
                   ? ({ children }) => (
-                      <a href={feature.action} target="_blank" rel="noopener noreferrer" className="block">
+                      <a
+                        href={feature.action}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
                         {children}
                       </a>
                     )
@@ -641,7 +734,9 @@ export default function DashboardScreen() {
                 return (
                   <Wrapper key={feature.label}>
                     <div className="p-3.5 flex items-start gap-3 hover:bg-[var(--surface-dim)] transition-colors">
-                      <span className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shrink-0 shadow-sm`}>
+                      <span
+                        className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shrink-0 shadow-sm`}
+                      >
                         <Icon size={14} />
                       </span>
                       <div className="min-w-0 flex-1">
@@ -651,7 +746,9 @@ export default function DashboardScreen() {
                             Soon
                           </span>
                         </div>
-                        <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-0.5">{feature.desc}</p>
+                        <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-0.5">
+                          {feature.desc}
+                        </p>
                         {feature.action && (
                           <p className="text-[10px] text-[var(--primary)] font-semibold mt-1 flex items-center gap-1">
                             <Send size={9} /> Submit your work
@@ -673,7 +770,8 @@ export default function DashboardScreen() {
                 Contact & Feedback
               </h3>
               <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-1">
-                Suggestions, issues, or collaboration opportunities — we would love to hear from you.
+                Suggestions, issues, or collaboration opportunities — we would love to hear from
+                you.
               </p>
             </div>
             <div className="divide-y divide-[var(--border)]">
@@ -685,7 +783,9 @@ export default function DashboardScreen() {
                   <Mail size={14} />
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[10px] text-[var(--text-muted)] uppercase font-semibold tracking-wider">Email</p>
+                  <p className="text-[10px] text-[var(--text-muted)] uppercase font-semibold tracking-wider">
+                    Email
+                  </p>
                   <p className="text-xs font-medium text-[var(--text)] truncate group-hover:text-[var(--primary)] transition-colors">
                     ismahdeismail@gmail.com
                   </p>
@@ -701,7 +801,9 @@ export default function DashboardScreen() {
                   <MessageCircle size={14} />
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[10px] text-[var(--text-muted)] uppercase font-semibold tracking-wider">WhatsApp</p>
+                  <p className="text-[10px] text-[var(--text-muted)] uppercase font-semibold tracking-wider">
+                    WhatsApp
+                  </p>
                   <p className="text-xs font-medium text-[var(--text)] truncate group-hover:text-[var(--primary)] transition-colors">
                     +254 115 516 281
                   </p>
@@ -728,8 +830,14 @@ export default function DashboardScreen() {
             </div>
             <div className="divide-y divide-[var(--border)]">
               {[
-                { name: 'WHO Guidelines & Essential Medicines', url: 'https://www.who.int/publications' },
-                { name: 'Kenya MOH Clinical Guidelines', url: 'https://www.health.go.ke/resources/guidelines' },
+                {
+                  name: 'WHO Guidelines & Essential Medicines',
+                  url: 'https://www.who.int/publications',
+                },
+                {
+                  name: 'Kenya MOH Clinical Guidelines',
+                  url: 'https://www.health.go.ke/resources/guidelines',
+                },
                 { name: 'NICE Guidance (UK)', url: 'https://www.nice.org.uk/guidance' },
                 { name: 'Kenya Essential Medicines List', url: 'https://www.health.go.ke' },
               ].map((ref) => (
@@ -740,7 +848,9 @@ export default function DashboardScreen() {
                   rel="noopener noreferrer"
                   className="p-3.5 flex items-center justify-between gap-3 hover:bg-[var(--surface-dim)] transition-colors group"
                 >
-                  <span className="text-xs font-medium text-[var(--text)] truncate">{ref.name}</span>
+                  <span className="text-xs font-medium text-[var(--text)] truncate">
+                    {ref.name}
+                  </span>
                   <ArrowRight
                     size={14}
                     className="text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all shrink-0"

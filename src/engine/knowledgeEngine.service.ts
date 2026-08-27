@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabase'
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service'
 import { IndustryKnowledgeService } from '../services/industryKnowledge.service'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { getBundledDrugs } from '../lib/lazyDrugData'
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
 import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames'
 import { DRUG_REGISTRY_META } from '../data/drugRegistryMeta'
@@ -360,7 +360,7 @@ function detectIntent(query: string): QueryIntent {
 function buildDrugNameSet(): Set<string> {
   const names = new Set<string>()
   // Bundled drug details (brand names, generic names)
-  for (const d of BUNDLED_DRUGS) {
+  for (const d of getBundledDrugs()) {
     names.add(d.name.toLowerCase())
     if (d.generic_name) names.add(d.generic_name.toLowerCase())
     if (d.brand_names) {
@@ -398,7 +398,7 @@ function buildDrugNameSet(): Set<string> {
 
 function buildIndicationMap(): Map<string, string[]> {
   const map = new Map<string, string[]>()
-  for (const d of BUNDLED_DRUGS) {
+  for (const d of getBundledDrugs()) {
     if (!d.indications) continue
     for (const ind of d.indications) {
       const key = ind.toLowerCase()
@@ -677,12 +677,17 @@ for (const [name, meta] of Object.entries(DRUG_REGISTRY_META)) {
   REGISTRY_CLASS_MAP.set(name, meta.therapeuticClass)
 }
 
-const ALL_DRUG_NAMES = buildDrugNameSet()
-// Use the original curated indication map from BUNDLED_DRUGS only.
-// The expanded map was too broad — mapping every condition to ALL drugs in a
-// therapeutic class (e.g. "diabetes" → 100+ endocrine drugs), causing massive
-// context overflow and empty AI responses.
-const INDICATION_MAP = buildIndicationMap()
+let _allDrugNames: Set<string> | null = null
+function getAllDrugNames(): Set<string> {
+  if (!_allDrugNames) _allDrugNames = buildDrugNameSet()
+  return _allDrugNames
+}
+
+let _indicationMap: Map<string, string[]> | null = null
+function getIndicationMap(): Map<string, string[]> {
+  if (!_indicationMap) _indicationMap = buildIndicationMap()
+  return _indicationMap
+}
 
 function levenshtein(a: string, b: string): number {
   const m = a.length,
@@ -760,7 +765,7 @@ function extractDrugNames(query: string): string[] {
 
   // Multi-word names first (longest match wins)
   const multiWord: string[] = []
-  for (const name of ALL_DRUG_NAMES) {
+  for (const name of getAllDrugNames()) {
     if (name.includes(' ') && q.includes(name)) multiWord.push(name)
   }
   multiWord.sort((a, b) => b.length - a.length)
@@ -769,12 +774,12 @@ function extractDrugNames(query: string): string[] {
   // Single-word names
   const words = q.split(/\s+/)
   for (const w of words) {
-    if (ALL_DRUG_NAMES.has(w) && !found.includes(w)) found.push(w)
+    if (getAllDrugNames().has(w) && !found.includes(w)) found.push(w)
   }
 
   // Partial + fuzzy match if nothing found
   if (found.length === 0) {
-    for (const name of ALL_DRUG_NAMES) {
+    for (const name of getAllDrugNames()) {
       if (q.includes(name) && !found.includes(name)) found.push(name)
     }
 

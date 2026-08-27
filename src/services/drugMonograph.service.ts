@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabase'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { getBundledDrugs } from '../lib/lazyDrugData'
 
 // ── Static fallback index ──────────────────────────────────────────
 // The bundled index holds ~513 drugs (149 original + 364 AI-enriched).
@@ -12,14 +12,14 @@ const STATIC_ALL: DrugMonograph[] = []
 
 function buildStaticIndex() {
   if (STATIC_ALL.length > 0) return
-  for (const d of BUNDLED_DRUGS) {
+  for (const d of getBundledDrugs()) {
     const key = d.name.toLowerCase().trim()
     STATIC_BY_NAME.set(key, d)
     STATIC_BY_ID.set(d.id, d)
     STATIC_ALL.push(d)
   }
 }
-buildStaticIndex()
+export { buildStaticIndex }
 
 // ── Thumbnail index (3D structure first) ──────────────────────────
 // Every monograph gets a best-image icon from drug_images. Preference order:
@@ -48,7 +48,10 @@ async function loadThumbnails(): Promise<Map<string, string>> {
   if (thumbCache) return thumbCache
   if (thumbFetching) return thumbFetching
   thumbFetching = (async (): Promise<Map<string, string>> => {
-    const map = new Map<string, { url: string; priority: number; quality: number; storage: boolean }>()
+    const map = new Map<
+      string,
+      { url: string; priority: number; quality: number; storage: boolean }
+    >()
     if (!supabase) return new Map<string, string>()
     let from = 0
     // Cap at 20 pages (20k rows) — the thumbnail cache only needs one image
@@ -130,42 +133,42 @@ export async function getDrugThumbnail(drugId: string): Promise<string | null> {
 }
 
 export interface DrugMonograph {
-  id: string;
-  name: string;
-  generic_name: string;
-  drug_class: string;
-  drug_class_id: string | null;
-  drug_class_name: string;
-  indications: string[];
-  contraindications: string[];
-  side_effects: string[];
-  dosage: Record<string, any>;
-  interactions: string[];
-  monitoring: string;
-  patient_counselling: string;
+  id: string
+  name: string
+  generic_name: string
+  drug_class: string
+  drug_class_id: string | null
+  drug_class_name: string
+  indications: string[]
+  contraindications: string[]
+  side_effects: string[]
+  dosage: Record<string, any>
+  interactions: string[]
+  monitoring: string
+  patient_counselling: string
   /** Mechanism of action – molecular target, pharmacological action, clinical effect */
-  mechanism_of_action?: string;
+  mechanism_of_action?: string
   /** Common brand names – Kenyan and international */
-  brand_names?: string[];
+  brand_names?: string[]
   /** FDA/USP pregnancy category (A, B, C, D, X, N) */
-  pregnancy_category?: string;
+  pregnancy_category?: string
   /** Key warnings and precautions (e.g. pregnancy, lactation, G6PD, special populations) */
-  warnings?: string[];
+  warnings?: string[]
   /** Overdose management – symptoms, antidote, supportive care */
-  overdose?: string;
+  overdose?: string
   /** Pharmacokinetics – absorption, distribution, metabolism, excretion, half-life */
-  pharmacokinetics?: string;
+  pharmacokinetics?: string
   /** Black box warnings */
-  black_box_warnings?: string[];
+  black_box_warnings?: string[]
   /** Clinical pearls and practice tips */
-  clinical_pearls?: string[];
-  created_at?: string;
+  clinical_pearls?: string[]
+  created_at?: string
   /** Best available gallery image for list icons — 3D structures preferred */
-  thumbnail_url?: string;
+  thumbnail_url?: string
 }
 
 function mapRow(row: any): DrugMonograph {
-  const drugClassInfo = row.drug_class_info;
+  const drugClassInfo = row.drug_class_info
   return {
     id: row.id,
     name: row.name,
@@ -189,26 +192,25 @@ function mapRow(row: any): DrugMonograph {
     black_box_warnings: row.black_box_warnings ?? undefined,
     clinical_pearls: row.clinical_pearls ?? undefined,
     created_at: row.created_at,
-  };
+  }
 }
 
 export interface UserMonograph {
-  id: string;
-  user_id: string;
-  monograph_id: string;
-  saved_at: string;
-  notes: string | null;
-  tags: string[];
-  monograph?: DrugMonograph;
+  id: string
+  user_id: string
+  monograph_id: string
+  saved_at: string
+  notes: string | null
+  tags: string[]
+  monograph?: DrugMonograph
 }
 
 /** Search the static index by name or generic_name */
 function searchStatic(q: string): DrugMonograph[] {
+  buildStaticIndex()
   if (!q) return STATIC_ALL
   return STATIC_ALL.filter(
-    (d) =>
-      d.name.toLowerCase().includes(q) ||
-      d.generic_name.toLowerCase().includes(q),
+    (d) => d.name.toLowerCase().includes(q) || d.generic_name.toLowerCase().includes(q),
   )
 }
 
@@ -239,7 +241,10 @@ export const DrugMonographService = {
    * payload (which includes long text fields like monitoring text).
    */
   async getCatalog(): Promise<DrugMonograph[]> {
-    if (!supabase) return STATIC_ALL;
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_ALL
+    }
     const [drugRows, thumbs] = await Promise.all([
       paginate<any>((from, to) =>
         supabase!
@@ -247,188 +252,253 @@ export const DrugMonographService = {
           // drug_class_name is NOT a column — derive it from the drug_classes
           // join (selecting the raw name previously 400'd and silently fell
           // back to the static bundle, hiding the live catalog from the grid).
-          .select('id,name,generic_name,brand_names,drug_class,drug_class_id,drug_class_info:drug_classes(name),indications,side_effects,contraindications,monitoring,interactions,mechanism_of_action,pharmacokinetics')
+          .select(
+            'id,name,generic_name,brand_names,drug_class,drug_class_id,drug_class_info:drug_classes(name),indications,side_effects,contraindications,monitoring,interactions,mechanism_of_action,pharmacokinetics',
+          )
           .order('name')
           .range(from, to),
       ),
       loadThumbnails(),
-    ]);
-    const rows = drugRows.map(mapRow);
-    if (rows.length === 0) return STATIC_ALL;
-    return rows.map((r) => ({ ...r, thumbnail_url: thumbs.get(r.id) ?? '' }));
+    ])
+    const rows = drugRows.map(mapRow)
+    if (rows.length === 0) {
+      buildStaticIndex()
+      return STATIC_ALL
+    }
+    return rows.map((r) => ({ ...r, thumbnail_url: thumbs.get(r.id) ?? '' }))
   },
 
   async getAll(): Promise<DrugMonograph[]> {
-    if (!supabase) return STATIC_ALL;
-    const rows = (await paginate<any>((from, to) =>
-      supabase!
-        .from('drug_monographs')
-        .select('*, drug_class_info:drug_classes(name)')
-        .order('name')
-        .range(from, to),
-    )).map(mapRow);
-    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL;
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_ALL
+    }
+    const rows = (
+      await paginate<any>((from, to) =>
+        supabase!
+          .from('drug_monographs')
+          .select('*, drug_class_info:drug_classes(name)')
+          .order('name')
+          .range(from, to),
+      )
+    ).map(mapRow)
+    if (rows.length === 0) {
+      buildStaticIndex()
+    }
+    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL
   },
 
   async getById(id: string): Promise<DrugMonograph | null> {
-    if (!supabase) return STATIC_BY_ID.get(id) ?? null;
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_BY_ID.get(id) ?? null
+    }
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .eq('id', id)
-      .single();
-    if (error) return STATIC_BY_ID.get(id) ?? null;
-    return data ? attachThumbnail(mapRow(data)) : STATIC_BY_ID.get(id) ?? null;
+      .single()
+    if (error) {
+      buildStaticIndex()
+      return STATIC_BY_ID.get(id) ?? null
+    }
+    return data ? attachThumbnail(mapRow(data)) : (STATIC_BY_ID.get(id) ?? null)
   },
 
   async getByName(name: string): Promise<DrugMonograph | null> {
-    if (!supabase) return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null
+    }
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .ilike('name', name)
-      .single();
-    if (error) return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
-    return data ? attachThumbnail(mapRow(data)) : STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
+      .single()
+    if (error) {
+      buildStaticIndex()
+      return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null
+    }
+    return data
+      ? attachThumbnail(mapRow(data))
+      : (STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null)
   },
 
   async search(query: string): Promise<DrugMonograph[]> {
     const q = query.toLowerCase().trim()
-    if (!supabase) return searchStatic(q);
+    if (!supabase) return searchStatic(q)
 
-    const rows = (await paginate<any>((from, to) =>
-      supabase!
-        .from('drug_monographs')
-        .select('*, drug_class_info:drug_classes(name)')
-        .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
-        .order('name')
-        .range(from, to),
-    )).map(mapRow);
-    return rows.length > 0 ? attachThumbnails(rows) : searchStatic(q);
+    const rows = (
+      await paginate<any>((from, to) =>
+        supabase!
+          .from('drug_monographs')
+          .select('*, drug_class_info:drug_classes(name)')
+          .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
+          .order('name')
+          .range(from, to),
+      )
+    ).map(mapRow)
+    return rows.length > 0 ? attachThumbnails(rows) : searchStatic(q)
   },
 
   async searchByIndication(indication: string): Promise<DrugMonograph[]> {
     const ind = indication.toLowerCase()
-    if (!supabase) return STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
+    }
 
-    const rows = (await paginate<any>((from, to) =>
-      supabase!
-        .from('drug_monographs')
-        .select('*, drug_class_info:drug_classes(name)')
-        .contains('indications', [indication])
-        .order('name')
-        .range(from, to),
-    )).map(mapRow);
-    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
+    const rows = (
+      await paginate<any>((from, to) =>
+        supabase!
+          .from('drug_monographs')
+          .select('*, drug_class_info:drug_classes(name)')
+          .contains('indications', [indication])
+          .order('name')
+          .range(from, to),
+      )
+    ).map(mapRow)
+    return rows.length > 0
+      ? attachThumbnails(rows)
+      : (buildStaticIndex(),
+        STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind))))
   },
 
   async getByDrugClass(drugClass: string): Promise<DrugMonograph[]> {
     const dc = drugClass.toLowerCase()
-    if (!supabase) return STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
+    if (!supabase) {
+      buildStaticIndex()
+      return STATIC_ALL.filter(
+        (d) =>
+          d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc),
+      )
+    }
 
-    const rows = (await paginate<any>((from, to) =>
-      supabase!
-        .from('drug_monographs')
-        .select('*, drug_class_info:drug_classes(name)')
-        .ilike('drug_class_info.name', `%${drugClass}%`)
-        .order('name')
-        .range(from, to),
-    )).map(mapRow);
-    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
+    const rows = (
+      await paginate<any>((from, to) =>
+        supabase!
+          .from('drug_monographs')
+          .select('*, drug_class_info:drug_classes(name)')
+          .ilike('drug_class_info.name', `%${drugClass}%`)
+          .order('name')
+          .range(from, to),
+      )
+    ).map(mapRow)
+    return rows.length > 0
+      ? attachThumbnails(rows)
+      : (buildStaticIndex(),
+        STATIC_ALL.filter(
+          (d) =>
+            d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc),
+        ))
   },
 
-  async getInteractingDrugs(drugName: string): Promise<{ drug: DrugMonograph; interactions: string[] }[]> {
-    const monograph = await DrugMonographService.getByName(drugName);
-    if (!monograph) return [];
+  async getInteractingDrugs(
+    drugName: string,
+  ): Promise<{ drug: DrugMonograph; interactions: string[] }[]> {
+    const monograph = await DrugMonographService.getByName(drugName)
+    if (!monograph) return []
 
-    const allDrugs = await DrugMonographService.getAll();
-    const results: { drug: DrugMonograph; interactions: string[] }[] = [];
+    const allDrugs = await DrugMonographService.getAll()
+    const results: { drug: DrugMonograph; interactions: string[] }[] = []
 
     for (const other of allDrugs) {
-      if (other.id === monograph.id) continue;
-      const relevant = other.interactions.filter(i =>
-        i.toLowerCase().includes(monograph.name.toLowerCase())
-      );
+      if (other.id === monograph.id) continue
+      const relevant = other.interactions.filter((i) =>
+        i.toLowerCase().includes(monograph.name.toLowerCase()),
+      )
       if (relevant.length > 0) {
-        results.push({ drug: other, interactions: relevant });
+        results.push({ drug: other, interactions: relevant })
       }
     }
 
-    return results;
+    return results
   },
 
   // ── Saved Monographs ──────────────────────────────────────────
 
-  async saveMonograph(monographId: string, opts?: { notes?: string; tags?: string[] }): Promise<boolean> {
-    if (!supabase) return false;
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return false;
+  async saveMonograph(
+    monographId: string,
+    opts?: { notes?: string; tags?: string[] },
+  ): Promise<boolean> {
+    if (!supabase) return false
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+    if (!user) return false
 
-    const { error } = await supabase
-      .from('user_monographs')
-      .upsert({
+    const { error } = await supabase.from('user_monographs').upsert(
+      {
         user_id: user.id,
         monograph_id: monographId,
         notes: opts?.notes ?? null,
         tags: opts?.tags ?? [],
-      }, { onConflict: 'user_id,monograph_id' });
+      },
+      { onConflict: 'user_id,monograph_id' },
+    )
 
-    return !error;
+    return !error
   },
 
   async removeSavedMonograph(monographId: string): Promise<boolean> {
-    if (!supabase) return false;
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return false;
+    if (!supabase) return false
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+    if (!user) return false
 
     const { error } = await supabase
       .from('user_monographs')
       .delete()
       .eq('user_id', user.id)
-      .eq('monograph_id', monographId);
+      .eq('monograph_id', monographId)
 
-    return !error;
+    return !error
   },
 
   async getUserMonographs(opts?: {
-    search?: string;
-    tag?: string;
-    page?: number;
-    pageSize?: number;
+    search?: string
+    tag?: string
+    page?: number
+    pageSize?: number
   }): Promise<{ items: UserMonograph[]; total: number }> {
-    if (!supabase) return { items: [], total: 0 };
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return { items: [], total: 0 };
+    if (!supabase) return { items: [], total: 0 }
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+    if (!user) return { items: [], total: 0 }
 
-    const page = opts?.page ?? 1;
-    const pageSize = opts?.pageSize ?? 24;
-    const from = (page - 1) * pageSize;
-    const to = from + pageSize - 1;
+    const page = opts?.page ?? 1
+    const pageSize = opts?.pageSize ?? 24
+    const from = (page - 1) * pageSize
+    const to = from + pageSize - 1
 
     let query = supabase
       .from('user_monographs')
-      .select('*, monograph:drug_monographs(*, drug_class_info:drug_classes(name))', { count: 'exact' })
-      .eq('user_id', user.id);
+      .select('*, monograph:drug_monographs(*, drug_class_info:drug_classes(name))', {
+        count: 'exact',
+      })
+      .eq('user_id', user.id)
 
     if (opts?.tag) {
-      query = query.contains('tags', [opts.tag]);
+      query = query.contains('tags', [opts.tag])
     }
 
     if (opts?.search) {
-      const s = `%${opts.search}%`;
-      query = query.or(`notes.ilike.${s}`);
+      const s = `%${opts.search}%`
+      query = query.or(`notes.ilike.${s}`)
     }
 
     const { data, count, error } = await query
       .order('saved_at', { ascending: false })
-      .range(from, to);
+      .range(from, to)
 
-    if (error) return { items: [], total: 0 };
+    if (error) return { items: [], total: 0 }
 
     // Attach the best 3D-first thumbnail to every saved monograph so library
     // icons render images (mapRow alone can't — drug_monographs has no
     // thumbnail column; the thumbs live in drug_images).
-    const thumbs = await loadThumbnails();
+    const thumbs = await loadThumbnails()
     const items = (data ?? []).map((r: any) => ({
       id: r.id,
       user_id: r.user_id,
@@ -439,34 +509,36 @@ export const DrugMonographService = {
       monograph: r.monograph
         ? { ...mapRow(r.monograph), thumbnail_url: thumbs.get(r.monograph_id) ?? '' }
         : undefined,
-    }));
+    }))
 
     return {
       items,
       total: count ?? 0,
-    };
+    }
   },
 
   async isMonographSaved(monographId: string): Promise<boolean> {
-    if (!supabase) return false;
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return false;
+    if (!supabase) return false
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+    if (!user) return false
 
     const { data } = await supabase
       .from('user_monographs')
       .select('id')
       .eq('user_id', user.id)
       .eq('monograph_id', monographId)
-      .maybeSingle();
+      .maybeSingle()
 
-    return data !== null;
+    return data !== null
   },
 
   async saveMonographWithDetails(monographId: string): Promise<UserMonograph | null> {
-    const ok = await DrugMonographService.saveMonograph(monographId);
-    if (!ok) return null;
+    const ok = await DrugMonographService.saveMonograph(monographId)
+    if (!ok) return null
 
-    const { items } = await DrugMonographService.getUserMonographs({ pageSize: 1 });
-    return items[0] ?? null;
+    const { items } = await DrugMonographService.getUserMonographs({ pageSize: 1 })
+    return items[0] ?? null
   },
-};
+}

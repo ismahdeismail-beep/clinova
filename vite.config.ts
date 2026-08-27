@@ -25,7 +25,7 @@ export function buildConfig() {
         injectManifest: {
           swSrc: 'src/sw.ts',
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg,webmanifest}'],
-          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+          maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
         },
         manifest: {
           name: 'Clinova',

@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabase'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { getBundledDrugs } from '../lib/lazyDrugData'
 import { IndustryKnowledgeService } from './industryKnowledge.service'
 
 export type SearchResultType = 'drug' | 'disease' | 'case' | 'industry_term'
@@ -121,7 +121,7 @@ function searchStatic(term: string, limit: number): UnifiedSearchResult[] {
   const q = term.toLowerCase()
   const results: UnifiedSearchResult[] = []
 
-  for (const d of BUNDLED_DRUGS) {
+  for (const d of getBundledDrugs()) {
     if (results.length >= limit) break
     const nameMatch = d.name.toLowerCase().includes(q)
     const genericMatch = d.generic_name.toLowerCase().includes(q)

@@ -33,7 +33,7 @@ import { useSearchParams, useParams, useNavigate } from 'react-router-dom'
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service'
 import { monographToMarkdown } from '../lib/monographToMarkdown'
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { getBundledDrugs, loadBundledDrugs } from '../lib/lazyDrugData'
 import { getDrugClassConfig } from '../data/drugClassColors'
 import { getDrugCategory, type TherapeuticCategory } from '../lib/drugCategory'
 import { getDrugSubclass, getSubclassesForCategory } from '../lib/drugSubclass'
@@ -302,7 +302,7 @@ export default function DrugIndexScreen() {
   const viewPushedRef = useRef(false)
 
   // Seeded catalog: bundled data first, Supabase enhances it
-  const [catalog, setCatalog] = useState<DrugMonograph[]>(BUNDLED_DRUGS)
+  const [catalog, setCatalog] = useState<DrugMonograph[]>(getBundledDrugs())
   const [catalogLoading, setCatalogLoading] = useState(false)
 
   // Load monographs from Supabase; fall back to bundled data
@@ -310,6 +310,7 @@ export default function DrugIndexScreen() {
     const loadCatalog = async () => {
       setCatalogLoading(true)
       try {
+        await loadBundledDrugs()
         // Race the catalog fetch against a timeout so a slow/hung Supabase
         // query never leaves the KDI grid stuck on skeleton loaders forever.
         const list = await Promise.race([

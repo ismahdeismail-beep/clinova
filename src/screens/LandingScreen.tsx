@@ -1,12 +1,22 @@
 import { Link, useNavigate } from 'react-router-dom'
 import {
-  ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
-  Shield, Stethoscope,
-  ChevronRight, Star, Layers, Pill,
-  ClipboardCheck, Image,
+  ArrowRight,
+  Sparkles,
+  CheckCircle2,
+  Bot,
+  BookOpen,
+  GraduationCap,
+  Shield,
+  Stethoscope,
+  ChevronRight,
+  Star,
+  Layers,
+  Pill,
+  ClipboardCheck,
+  Image,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
-import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
+import { useContentStats, getFallbackDrugCount, FALLBACK_CASES } from '../hooks/useContentStats'
 import { getAllCarePlanDiseases } from '../data/carePlanData'
 
 const CARE_PLAN_COUNT = getAllCarePlanDiseases().length
@@ -18,18 +28,37 @@ export default function LandingScreen() {
   const therapeuticAreaCount = areaCount
 
   const stats = [
-    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers, live: !loading },
-    { value: String(caseCount ?? FALLBACK_CASES), label: 'Clinical Cases', icon: Stethoscope, live: !loading },
-    { value: String(drugCount ?? FALLBACK_DRUGS), label: 'Drug Monographs', icon: Pill, live: !loading },
-    { value: String(carePlanCount || CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck, live: !loading },
+    {
+      value: String(therapeuticAreaCount),
+      label: 'Therapeutic Areas',
+      icon: Layers,
+      live: !loading,
+    },
+    {
+      value: String(caseCount ?? FALLBACK_CASES),
+      label: 'Clinical Cases',
+      icon: Stethoscope,
+      live: !loading,
+    },
+    {
+      value: String(drugCount ?? getFallbackDrugCount()),
+      label: 'Drug Monographs',
+      icon: Pill,
+      live: !loading,
+    },
+    {
+      value: String(carePlanCount || CARE_PLAN_COUNT),
+      label: 'Care Plans',
+      icon: ClipboardCheck,
+      live: !loading,
+    },
   ]
 
   const features = [
     {
       icon: Stethoscope,
       title: 'Clinical Cases',
-      description:
-        `Work through real-world clinical scenarios across ${therapeuticAreaCount} therapeutic areas. Build diagnostic reasoning and treatment planning skills with guided feedback.`,
+      description: `Work through real-world clinical scenarios across ${therapeuticAreaCount} therapeutic areas. Build diagnostic reasoning and treatment planning skills with guided feedback.`,
       gradient: 'from-emerald-500 to-teal-600',
     },
     {
@@ -164,8 +193,8 @@ export default function LandingScreen() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-[var(--text-muted)] max-w-2xl font-normal leading-relaxed mb-10">
-            Master clinical pharmacy with integrated case-based learning, structured nursing care plans,
-            mock exam papers, disease monographs, and clinical support — all in one platform.
+            Master clinical pharmacy with integrated case-based learning, structured nursing care
+            plans, mock exam papers, disease monographs, and clinical support — all in one platform.
           </p>
 
           {/* CTA */}
@@ -203,11 +232,18 @@ export default function LandingScreen() {
               <div key={i} className="flex flex-col items-center gap-1.5 text-center">
                 <Icon size={22} className="text-[var(--primary)]" />
                 {s.live ? (
-                  <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">{s.value}</span>
+                  <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                    {s.value}
+                  </span>
                 ) : (
-                  <span className="block w-16 h-8 rounded-md bg-[var(--surface-dim)] animate-pulse" aria-hidden />
+                  <span
+                    className="block w-16 h-8 rounded-md bg-[var(--surface-dim)] animate-pulse"
+                    aria-hidden
+                  />
                 )}
-                <span className="text-xs sm:text-sm text-[var(--text-muted)] font-medium">{s.label}</span>
+                <span className="text-xs sm:text-sm text-[var(--text-muted)] font-medium">
+                  {s.label}
+                </span>
               </div>
             )
           })}
@@ -241,7 +277,9 @@ export default function LandingScreen() {
                     <Icon size={22} className="text-white" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">{f.title}</h3>
-                  <p className="text-sm text-[var(--text-muted)] leading-relaxed">{f.description}</p>
+                  <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                    {f.description}
+                  </p>
                 </div>
               )
             })}
@@ -253,9 +291,7 @@ export default function LandingScreen() {
       <section className="py-16 md:py-24 px-6 bg-[var(--surface-dim)]/30 border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
-              How it works
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">How it works</h2>
             <p className="text-[var(--text-muted)] text-lg max-w-2xl mx-auto">
               Three simple steps to transform your clinical pharmacy study routine.
             </p>
@@ -273,7 +309,9 @@ export default function LandingScreen() {
                   <span className="text-white text-lg font-black">{s.step}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2">{s.title}</h3>
-                <p className="text-[var(--text-muted)] text-sm leading-relaxed max-w-xs">{s.desc}</p>
+                <p className="text-[var(--text-muted)] text-sm leading-relaxed max-w-xs">
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -319,9 +357,12 @@ export default function LandingScreen() {
             <Star size={14} />
             Start learning today
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold mb-4">Ready to elevate your practice?</h2>
+          <h2 className="text-3xl sm:text-5xl font-extrabold mb-4">
+            Ready to elevate your practice?
+          </h2>
           <p className="text-[var(--text-muted)] text-lg mb-8 max-w-xl mx-auto">
-            Join clinical pharmacy students and professionals using Clinova to study smarter and deliver better care.
+            Join clinical pharmacy students and professionals using Clinova to study smarter and
+            deliver better care.
           </p>
           <button
             onClick={() => navigate('/login')}
@@ -330,7 +371,9 @@ export default function LandingScreen() {
             Get Started Free
             <ChevronRight size={18} className="transition-transform group-hover:translate-x-1" />
           </button>
-          <p className="mt-4 text-xs text-[var(--text-muted)]">No credit card required. Free forever.</p>
+          <p className="mt-4 text-xs text-[var(--text-muted)]">
+            No credit card required. Free forever.
+          </p>
         </div>
       </section>
 

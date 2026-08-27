@@ -7,7 +7,7 @@
 // data counts only while the first fetch is in flight / offline.
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { getBundledDrugs } from '../lib/lazyDrugData'
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
 import { getAllCarePlanDiseases } from '../data/carePlanData'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
@@ -52,7 +52,9 @@ export interface ContentStats {
 export function useContentStats(): ContentStats {
   const [drugCount, setDrugCount] = useState<number | null>(() => readCache(DRUG_KEY))
   const [caseCount, setCaseCount] = useState<number | null>(() => readCache(CASE_KEY))
-  const [areaCount, setAreaCount] = useState<number>(() => readCache(AREA_KEY) ?? Object.keys(INTEGRATED_UNITS_MAP).length)
+  const [areaCount, setAreaCount] = useState<number>(
+    () => readCache(AREA_KEY) ?? Object.keys(INTEGRATED_UNITS_MAP).length,
+  )
   const [loading, setLoading] = useState<boolean>(drugCount === null || caseCount === null)
   const [carePlanCount] = useState<number>(() => getAllCarePlanDiseases().length)
 
@@ -65,9 +67,15 @@ export function useContentStats(): ContentStats {
     ;(async () => {
       try {
         const [caseRes, drugRes, areaRes] = await Promise.all([
-          supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).eq('status', 'published'),
+          supabase
+            .from('clinical_cases')
+            .select('id', { count: 'exact', head: true })
+            .eq('status', 'published'),
           supabase.from('drug_monographs').select('id', { count: 'exact', head: true }),
-          supabase.from('drug_classes').select('id', { count: 'exact', head: true }).is('parent_id', null),
+          supabase
+            .from('drug_classes')
+            .select('id', { count: 'exact', head: true })
+            .is('parent_id', null),
         ])
         if (cancelled) return
         const cn = (caseRes.count as number) ?? 0
@@ -102,5 +110,7 @@ export function useContentStats(): ContentStats {
 // Fallback numbers shown only while the first fetch is in flight / offline.
 // These derive from the bundled local data, so they are never wrong — just the
 // offline catalogue scale rather than the live enriched database scale.
-export const FALLBACK_DRUGS = BUNDLED_DRUGS.length
+export function getFallbackDrugCount(): number {
+  return getBundledDrugs().length
+}
 export const FALLBACK_CASES = ALL_CLINICAL_CASES.length

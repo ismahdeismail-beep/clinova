@@ -247,7 +247,8 @@ function LikeButton({ monographId }: { monographId: string }) {
 
 // Drug icon for cards — real gallery image when available (PubChem/PDB 3D
 // renders are preferred), otherwise a deterministic class-colored monogram
-// tile so every drug in the index shows a distinct icon.
+// tile so every drug in the index shows a distinct icon. Interactive so users
+// can click to inspect the 2D/3D structure or product photo at full size.
 function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' | 'lg' }) {
   return (
     <DrugIcon
@@ -255,6 +256,7 @@ function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' | 
       thumbnailUrl={m.thumbnail_url}
       drugClass={m.drug_class_name || m.drug_class}
       size={size}
+      interactive
     />
   )
 }
@@ -267,8 +269,8 @@ export default function DrugIndexScreen() {
     subclass: string
   }>()
 
-  // Navigation State
-  const [activeTab, setActiveTab] = useState<'monograph' | 'library' | 'checker'>('monograph')
+  // Navigation State — null = hub view, otherwise a module
+  const [activeTab, setActiveTab] = useState<'monograph' | 'library' | 'checker' | null>(null)
 
   // Monograph Browser State
   const [searchQuery, setSearchQuery] = useState('')
@@ -310,7 +312,9 @@ export default function DrugIndexScreen() {
     const loadCatalog = async () => {
       setCatalogLoading(true)
       try {
-        await loadBundledDrugs()
+        const bundled = await loadBundledDrugs()
+        // Seed the catalog with bundled drugs so the grid renders immediately
+        if (bundled.length > 0 && catalog.length === 0) setCatalog(bundled)
         // Race the catalog fetch against a timeout so a slow/hung Supabase
         // query never leaves the KDI grid stuck on skeleton loaders forever.
         const list = await Promise.race([
@@ -944,639 +948,750 @@ export default function DrugIndexScreen() {
             </div>
           )}
 
-          {/* ── Tabs Navigation ── */}
-          <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
-            {(
-              [
-                { id: 'monograph', label: 'Monographs', icon: BookOpen },
-                { id: 'library', label: 'My Library', icon: Heart },
-                { id: 'checker', label: 'Interactions', icon: AlertTriangle },
-              ] as const
-            ).map((tab) => {
-              const Icon = tab.icon
-              const active = activeTab === tab.id
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  aria-label={tab.label}
-                  aria-selected={active}
-                  role="tab"
-                  className={`flex-1 shrink-0 px-4 py-3 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-inset border-b-2 ${
-                    active
-                      ? 'text-[var(--primary)] border-[var(--primary)] bg-[var(--primary-container)]/30'
-                      : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/50 border-transparent hover:border-[var(--border)]'
-                  }`}
-                >
-                  <Icon size={16} className="shrink-0" />
-                  <span className="whitespace-nowrap">{tab.label}</span>
-                </button>
-              )
-            })}
-          </div>
-
-          {/* ── Tab: Monographs ── */}
-          {activeTab === 'monograph' ? (
+          {/* ── Hub: 3 KDI module cards ── */}
+          {activeTab === null ? (
             <div className="space-y-6 animate-in fade-in duration-200">
-              {searchResults ? (
-                <div className="animate-in fade-in duration-200 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => closeView()}
-                      className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
-                    >
-                      <ChevronLeft size={18} className="text-[var(--text)]" />
-                    </button>
-                    <div className="min-w-0">
-                      <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3 truncate">
-                        <Search size={20} className="text-[var(--primary)] shrink-0" /> Results for
-                        “{resultsQuery}”
-                      </h2>
-                      <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                        {searchResults.length} match{searchResults.length !== 1 ? 'es' : ''} in the
-                        Kenya Drug Index
-                      </p>
-                    </div>
-                  </div>
+              <div className="text-center max-w-2xl mx-auto pt-2">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)]">
+                  Kenya Drug Index
+                </h2>
+                <p className="text-sm text-[var(--text-muted)] mt-2">
+                  Your complete pharmaceutical reference — browse monographs, check interactions,
+                  and keep your saved drugs in one place.
+                </p>
+              </div>
 
-                  {showLoading ? (
-                    <PageLoader
-                      title="Generating Monograph"
-                      subtitle="Generating a complete drug-specific monograph..."
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                {/* Monographs module */}
+                <button
+                  onClick={() => setActiveTab('monograph')}
+                  className="text-left bg-gradient-to-br from-sky-500/10 to-indigo-500/10 border border-[var(--border)] rounded-2xl p-6 cursor-pointer transition-all group hover:border-sky-400/50 hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center shadow-sm mb-4">
+                    <BookOpen size={22} className="text-white" />
+                  </div>
+                  <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">
+                    Monographs
+                  </h3>
+                  <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-relaxed">
+                    Browse {catalog.length > 0 ? catalog.length : '1,000+'} drug monographs by
+                    therapeutic class — indications, dosing, interactions, monitoring and more.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-sky-600">
+                    Browse the index{' '}
+                    <ChevronRight
+                      size={14}
+                      className="group-hover:translate-x-1 transition-transform"
                     />
-                  ) : error ? (
-                    <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
-                      <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
-                        <Pill size={32} />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-red-600">
-                          Failed to Generate Monograph
-                        </h3>
-                        <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">{error}</p>
-                      </div>
-                      <button
-                        onClick={() => generateWithAi(resultsQuery)}
-                        className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
-                      >
-                        Retry Request
-                      </button>
-                    </div>
-                  ) : searchResults.length === 0 ? (
-                    <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
-                      <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center">
-                        <Search size={32} className="text-[var(--text-muted)]" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-[var(--text)] mb-1">
-                          No exact match in the Kenya Drug Index
-                        </h3>
-                        <p className="text-[var(--text-muted)] text-sm max-w-md">
-                          “{resultsQuery}” isn't in the index. Generate a complete monograph
-                          instead.
-                        </p>
-                      </div>
-                      <button
-                        onClick={() => generateWithAi(resultsQuery)}
-                        disabled={isLoading}
-                        className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
-                      >
-                        <Sparkles size={16} />
-                        Generate monograph
-                      </button>
-                    </div>
-                  ) : (
-                    <>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        {searchResults.map((m) => (
-                          <div
-                            key={m.id}
-                            className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl transition-all group overflow-hidden"
-                          >
-                            <button
-                              onClick={() => openSeeded(m)}
-                              className="w-full text-left p-4 cursor-pointer"
-                            >
-                              <div className="flex items-start gap-3 min-w-0">
-                                <DrugThumb m={m} />
-                                <div className="flex-1 min-w-0">
-                                  <div className="flex items-start justify-between gap-2 min-w-0">
-                                    <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">
-                                      {m.name}
-                                    </div>
-                                    <span
-                                      className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasEnrichedContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}
-                                    >
-                                      {hasEnrichedContent(m) ? 'Full' : 'Limited'}
-                                    </span>
-                                  </div>
-                                  {m.generic_name && m.generic_name !== m.name && (
-                                    <div className="text-xs text-[var(--text-muted)] truncate">
-                                      {m.generic_name}
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                              {(m.drug_class_name || m.drug_class) &&
-                                (() => {
-                                  const cc = getDrugClassConfig(m.drug_class_name || m.drug_class)
-                                  return (
-                                    <span
-                                      className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
-                                    >
-                                      {cc.subtitle && (
-                                        <span className="opacity-70 shrink-0">{cc.subtitle}</span>
-                                      )}
-                                      <span className="font-bold shrink-0">·</span>
-                                      <span className="truncate min-w-0">
-                                        {m.drug_class_name || m.drug_class}
-                                      </span>
-                                    </span>
-                                  )
-                                })()}
-                              {(() => {
-                                const sub = getDrugSubclass(m)
-                                if (sub === 'Other') return null
-                                return (
-                                  <span
-                                    className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}
-                                  >
-                                    <span className="truncate min-w-0">{sub}</span>
-                                  </span>
-                                )
-                              })()}
-                            </button>
-                            <div className="px-4 pb-3 flex justify-end">
-                              <LikeButton monographId={m.id} />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="flex flex-col items-center gap-2 pt-5 border-t border-[var(--border)]">
-                        <button
-                          onClick={() => generateWithAi(resultsQuery)}
-                          disabled={isLoading}
-                          className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-60"
-                        >
-                          {showLoading ? <InlineLoader size={16} /> : <Sparkles size={16} />}
-                          {isLoading ? 'Generating...' : 'Generate full monograph'}
-                        </button>
-                        <p className="text-xs text-[var(--text-muted)]">
-                          No good match? Get a complete, drug-specific monograph.
-                        </p>
-                      </div>
-                    </>
-                  )}
-                </div>
-              ) : (
-                <>
-                  {/* Breadcrumb — long class/subclass names must truncate instead of overflowing the page */}
-                  <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] pb-3 min-w-0">
-                    <span
-                      className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} shrink-0`}
-                      onClick={!selectedCategory ? undefined : handleBackToCategories}
-                    >
-                      Drug Index
-                    </span>
-                    {selectedCategory && (
-                      <>
-                        <ChevronRight size={14} className="shrink-0" />
-                        <span
-                          className={`${!selectedSubclass ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} min-w-0 truncate`}
-                          onClick={
-                            !selectedSubclass
-                              ? undefined
-                              : () =>
-                                  navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)
-                          }
-                        >
-                          {selectedCategory}
-                        </span>
-                      </>
-                    )}
-                    {selectedCategory && selectedSubclass && (
-                      <>
-                        <ChevronRight size={14} className="shrink-0" />
-                        <span className="text-[var(--text)] font-bold truncate min-w-0">
-                          {selectedSubclass}
-                        </span>
-                      </>
-                    )}
+                  </span>
+                </button>
+
+                {/* My Library module */}
+                <button
+                  onClick={() => setActiveTab('library')}
+                  className="text-left bg-gradient-to-br from-rose-500/10 to-pink-500/10 border border-[var(--border)] rounded-2xl p-6 cursor-pointer transition-all group hover:border-rose-400/50 hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center shadow-sm mb-4">
+                    <Heart size={22} className="text-white" />
                   </div>
+                  <h3 className="font-bold text-[var(--text)] group-hover:text-rose-500 transition-colors">
+                    My Library
+                  </h3>
+                  <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-relaxed">
+                    Your saved monographs — bookmark drugs you use often and access them instantly,
+                    with notes and tags.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-rose-500">
+                    View saved drugs{' '}
+                    <ChevronRight
+                      size={14}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </span>
+                </button>
 
-                  <div className="min-h-[400px]">
-                    {showLoading ? (
-                      <PageLoader
-                        title="Loading Formulary Profile"
-                        subtitle="Checking Kenya Drug Index database for monograph..."
-                      />
-                    ) : error ? (
-                      <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
-                        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
-                          <Pill size={32} />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-red-600">
-                            Failed to Retrieve Monograph
-                          </h3>
-                          <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">{error}</p>
-                        </div>
+                {/* Interactions module */}
+                <button
+                  onClick={() => setActiveTab('checker')}
+                  className="text-left bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-[var(--border)] rounded-2xl p-6 cursor-pointer transition-all group hover:border-amber-400/50 hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-sm mb-4">
+                    <AlertTriangle size={22} className="text-white" />
+                  </div>
+                  <h3 className="font-bold text-[var(--text)] group-hover:text-amber-500 transition-colors">
+                    Interactions
+                  </h3>
+                  <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-relaxed">
+                    Check drug-drug interactions, contraindications and toxicity profiles before
+                    prescribing or dispensing.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-amber-600">
+                    Check interactions{' '}
+                    <ChevronRight
+                      size={14}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </span>
+                </button>
+              </div>
+            </div>
+          ) : (
+            <>
+              {/* ── Module Tabs Navigation ── */}
+              <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
+                {(
+                  [
+                    { id: 'monograph', label: 'Monographs', icon: BookOpen },
+                    { id: 'library', label: 'My Library', icon: Heart },
+                    { id: 'checker', label: 'Interactions', icon: AlertTriangle },
+                  ] as const
+                ).map((tab) => {
+                  const Icon = tab.icon
+                  const active = activeTab === tab.id
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      aria-label={tab.label}
+                      aria-selected={active}
+                      role="tab"
+                      className={`flex-1 shrink-0 px-4 py-3 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-inset border-b-2 ${
+                        active
+                          ? 'text-[var(--primary)] border-[var(--primary)] bg-[var(--primary-container)]/30'
+                          : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/50 border-transparent hover:border-[var(--border)]'
+                      }`}
+                    >
+                      <Icon size={16} className="shrink-0" />
+                      <span className="whitespace-nowrap">{tab.label}</span>
+                    </button>
+                  )
+                })}
+              </div>
+
+              {/* ── Tab: Monographs ── */}
+              {activeTab === 'monograph' ? (
+                <div className="space-y-6 animate-in fade-in duration-200">
+                  {searchResults ? (
+                    <div className="animate-in fade-in duration-200 space-y-6">
+                      <div className="flex items-center gap-3">
                         <button
-                          onClick={() => generateWithAi(searchQuery || 'Ceftriaxone')}
-                          className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
+                          onClick={() => closeView()}
+                          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
                         >
-                          Retry Request
+                          <ChevronLeft size={18} className="text-[var(--text)]" />
                         </button>
-                      </div>
-                    ) : !selectedCategory ? (
-                      /* ── Level 1: Category Cards ── */
-                      <div className="space-y-6 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between">
-                          <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3">
-                            Therapeutic Classes
+                        <div className="min-w-0">
+                          <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3 truncate">
+                            <Search size={20} className="text-[var(--primary)] shrink-0" /> Results
+                            for “{resultsQuery}”
                           </h2>
-                          <div className="text-sm text-[var(--text-muted)] font-medium">
-                            {catalogLoading ? (
-                              <span
-                                className="inline-block w-16 h-4 rounded bg-[var(--surface-dim)] animate-pulse align-middle"
-                                aria-hidden
-                              />
-                            ) : (
-                              `${catalog.length} monographs`
-                            )}
-                          </div>
+                          <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                            {searchResults.length} match{searchResults.length !== 1 ? 'es' : ''} in
+                            the Kenya Drug Index
+                          </p>
                         </div>
+                      </div>
 
-                        {catalogLoading ? (
-                          /* Skeleton cards — never flash bundled-seed counts before the live catalog arrives */
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                            {Array.from({ length: 8 }).map((_, i) => (
+                      {showLoading ? (
+                        <PageLoader
+                          title="Generating Monograph"
+                          subtitle="Generating a complete drug-specific monograph..."
+                        />
+                      ) : error ? (
+                        <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
+                          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                            <Pill size={32} />
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold text-red-600">
+                              Failed to Generate Monograph
+                            </h3>
+                            <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
+                              {error}
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => generateWithAi(resultsQuery)}
+                            className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
+                          >
+                            Retry Request
+                          </button>
+                        </div>
+                      ) : searchResults.length === 0 ? (
+                        <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
+                          <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center">
+                            <Search size={32} className="text-[var(--text-muted)]" />
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold text-[var(--text)] mb-1">
+                              No exact match in the Kenya Drug Index
+                            </h3>
+                            <p className="text-[var(--text-muted)] text-sm max-w-md">
+                              “{resultsQuery}” isn't in the index. Generate a complete monograph
+                              instead.
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => generateWithAi(resultsQuery)}
+                            disabled={isLoading}
+                            className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
+                          >
+                            <Sparkles size={16} />
+                            Generate monograph
+                          </button>
+                        </div>
+                      ) : (
+                        <>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {searchResults.map((m) => (
                               <div
-                                key={i}
-                                className="rounded-2xl border border-[var(--border)] p-5 animate-pulse"
+                                key={m.id}
+                                className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl transition-all group overflow-hidden"
                               >
-                                <div className="flex items-center gap-3 mb-3">
-                                  <div className="w-12 h-12 rounded-xl bg-[var(--surface-dim)]" />
-                                  <div className="flex-1 space-y-2">
-                                    <div className="h-3.5 w-3/4 rounded bg-[var(--surface-dim)]" />
-                                    <div className="h-3 w-1/2 rounded bg-[var(--surface-dim)]" />
+                                <button
+                                  onClick={() => openSeeded(m)}
+                                  className="w-full text-left p-4 cursor-pointer"
+                                >
+                                  <div className="flex items-start gap-3 min-w-0">
+                                    <DrugThumb m={m} />
+                                    <div className="flex-1 min-w-0">
+                                      <div className="flex items-start justify-between gap-2 min-w-0">
+                                        <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">
+                                          {m.name}
+                                        </div>
+                                        <span
+                                          className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasEnrichedContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}
+                                        >
+                                          {hasEnrichedContent(m) ? 'Full' : 'Limited'}
+                                        </span>
+                                      </div>
+                                      {m.generic_name && m.generic_name !== m.name && (
+                                        <div className="text-xs text-[var(--text-muted)] truncate">
+                                          {m.generic_name}
+                                        </div>
+                                      )}
+                                    </div>
                                   </div>
+                                  {(m.drug_class_name || m.drug_class) &&
+                                    (() => {
+                                      const cc = getDrugClassConfig(
+                                        m.drug_class_name || m.drug_class,
+                                      )
+                                      return (
+                                        <span
+                                          className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
+                                        >
+                                          {cc.subtitle && (
+                                            <span className="opacity-70 shrink-0">
+                                              {cc.subtitle}
+                                            </span>
+                                          )}
+                                          <span className="font-bold shrink-0">·</span>
+                                          <span className="truncate min-w-0">
+                                            {m.drug_class_name || m.drug_class}
+                                          </span>
+                                        </span>
+                                      )
+                                    })()}
+                                  {(() => {
+                                    const sub = getDrugSubclass(m)
+                                    if (sub === 'Other') return null
+                                    return (
+                                      <span
+                                        className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}
+                                      >
+                                        <span className="truncate min-w-0">{sub}</span>
+                                      </span>
+                                    )
+                                  })()}
+                                </button>
+                                <div className="px-4 pb-3 flex justify-end">
+                                  <LikeButton monographId={m.id} />
                                 </div>
                               </div>
                             ))}
                           </div>
-                        ) : (
+                          <div className="flex flex-col items-center gap-2 pt-5 border-t border-[var(--border)]">
+                            <button
+                              onClick={() => generateWithAi(resultsQuery)}
+                              disabled={isLoading}
+                              className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-60"
+                            >
+                              {showLoading ? <InlineLoader size={16} /> : <Sparkles size={16} />}
+                              {isLoading ? 'Generating...' : 'Generate full monograph'}
+                            </button>
+                            <p className="text-xs text-[var(--text-muted)]">
+                              No good match? Get a complete, drug-specific monograph.
+                            </p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ) : (
+                    <>
+                      {/* Breadcrumb — long class/subclass names must truncate instead of overflowing the page */}
+                      <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] pb-3 min-w-0">
+                        <span
+                          className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} shrink-0`}
+                          onClick={!selectedCategory ? undefined : handleBackToCategories}
+                        >
+                          Drug Index
+                        </span>
+                        {selectedCategory && (
                           <>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                              {CATEGORIES.map((cat) => {
-                                const count = catalog.filter(
-                                  (m) => getDrugCategory(m) === cat,
-                                ).length
-                                if (count === 0) return null
-                                const cc = CATEGORY_COLORS[cat] || CATEGORY_COLORS.Immunology
+                            <ChevronRight size={14} className="shrink-0" />
+                            <span
+                              className={`${!selectedSubclass ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} min-w-0 truncate`}
+                              onClick={
+                                !selectedSubclass
+                                  ? undefined
+                                  : () =>
+                                      navigate(
+                                        `/drugs/class/${encodeURIComponent(selectedCategory)}`,
+                                      )
+                              }
+                            >
+                              {selectedCategory}
+                            </span>
+                          </>
+                        )}
+                        {selectedCategory && selectedSubclass && (
+                          <>
+                            <ChevronRight size={14} className="shrink-0" />
+                            <span className="text-[var(--text)] font-bold truncate min-w-0">
+                              {selectedSubclass}
+                            </span>
+                          </>
+                        )}
+                      </div>
+
+                      <div className="min-h-[400px]">
+                        {showLoading ? (
+                          <PageLoader
+                            title="Loading Formulary Profile"
+                            subtitle="Checking Kenya Drug Index database for monograph..."
+                          />
+                        ) : error ? (
+                          <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
+                            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                              <Pill size={32} />
+                            </div>
+                            <div>
+                              <h3 className="text-lg font-semibold text-red-600">
+                                Failed to Retrieve Monograph
+                              </h3>
+                              <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
+                                {error}
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => generateWithAi(searchQuery || 'Ceftriaxone')}
+                              className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
+                            >
+                              Retry Request
+                            </button>
+                          </div>
+                        ) : !selectedCategory ? (
+                          /* ── Level 1: Category Cards ── */
+                          <div className="space-y-6 animate-in fade-in duration-200">
+                            <div className="flex items-center justify-between">
+                              <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3">
+                                Therapeutic Classes
+                              </h2>
+                              <div className="text-sm text-[var(--text-muted)] font-medium">
+                                {catalogLoading ? (
+                                  <span
+                                    className="inline-block w-16 h-4 rounded bg-[var(--surface-dim)] animate-pulse align-middle"
+                                    aria-hidden
+                                  />
+                                ) : (
+                                  `${catalog.length} monographs`
+                                )}
+                              </div>
+                            </div>
+
+                            {catalogLoading ? (
+                              /* Skeleton cards — never flash bundled-seed counts before the live catalog arrives */
+                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                                {Array.from({ length: 8 }).map((_, i) => (
+                                  <div
+                                    key={i}
+                                    className="rounded-2xl border border-[var(--border)] p-5 animate-pulse"
+                                  >
+                                    <div className="flex items-center gap-3 mb-3">
+                                      <div className="w-12 h-12 rounded-xl bg-[var(--surface-dim)]" />
+                                      <div className="flex-1 space-y-2">
+                                        <div className="h-3.5 w-3/4 rounded bg-[var(--surface-dim)]" />
+                                        <div className="h-3 w-1/2 rounded bg-[var(--surface-dim)]" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : (
+                              <>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                                  {CATEGORIES.map((cat) => {
+                                    const count = catalog.filter(
+                                      (m) => getDrugCategory(m) === cat,
+                                    ).length
+                                    if (count === 0) return null
+                                    const cc = CATEGORY_COLORS[cat] || CATEGORY_COLORS.Immunology
+                                    return (
+                                      <button
+                                        key={cat}
+                                        onClick={() => handleCategoryClick(cat)}
+                                        className={`text-left bg-gradient-to-br ${cc.card} border border-[var(--border)] rounded-2xl p-5 cursor-pointer transition-all group ${cc.hover}`}
+                                      >
+                                        <div className="flex items-center gap-3 mb-3">
+                                          <div
+                                            className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}
+                                          >
+                                            {(() => {
+                                              const Sym = CATEGORY_SYMBOLS[cat] || Pill
+                                              return <Sym size={18} className="text-white" />
+                                            })()}
+                                          </div>
+                                          <div className="min-w-0">
+                                            <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">
+                                              {cat}
+                                            </h3>
+                                            <p className={`text-xs font-medium ${cc.text}`}>
+                                              {count} monograph{count !== 1 ? 's' : ''}
+                                            </p>
+                                          </div>
+                                          <ChevronRight
+                                            size={16}
+                                            className={`${cc.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`}
+                                          />
+                                        </div>
+                                      </button>
+                                    )
+                                  })}
+                                </div>
+
+                                {CATEGORIES.every((cat) => {
+                                  const count = catalog.filter(
+                                    (m) => getDrugCategory(m) === cat,
+                                  ).length
+                                  return count === 0
+                                }) && (
+                                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
+                                    <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
+                                      <BookOpen size={32} className="text-[var(--text-muted)]" />
+                                    </div>
+                                    <h3 className="text-lg font-bold text-[var(--text)]">
+                                      No monographs loaded
+                                    </h3>
+                                    <p className="text-sm text-[var(--text-muted)] mt-2">
+                                      The Kenya Drug Index is being populated.
+                                    </p>
+                                  </div>
+                                )}
+                              </>
+                            )}
+                          </div>
+                        ) : !selectedSubclass ? (
+                          /* ── Level 2: Subclasses in Selected Category ── */
+                          <div className="space-y-6">
+                            <div className="flex items-center gap-3">
+                              <button
+                                onClick={handleBackToCategories}
+                                className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs"
+                              >
+                                <ChevronLeft size={18} className="text-[var(--text)]" />
+                              </button>
+                              <div className="min-w-0">
+                                <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
+                                  {(() => {
+                                    const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
+                                    return (
+                                      <Sym size={20} className="text-[var(--primary)] shrink-0" />
+                                    )
+                                  })()}
+                                  <span className="truncate min-w-0">{selectedCategory}</span>
+                                </h2>
+                                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                                  {
+                                    catalog.filter((m) => getDrugCategory(m) === selectedCategory)
+                                      .length
+                                  }{' '}
+                                  monographs · choose a subclass
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                              {getSubclassesForCategory(
+                                selectedCategory as TherapeuticCategory,
+                              ).map((sub) => {
+                                const drugs = catalog.filter(
+                                  (m) =>
+                                    getDrugCategory(m) === selectedCategory &&
+                                    getDrugSubclass(m, selectedCategory as TherapeuticCategory) ===
+                                      sub,
+                                )
+                                if (drugs.length === 0) return null
+                                const subColors = getSubclassColor(sub)
+                                const samples = drugs
+                                  .slice(0, 3)
+                                  .map((m) => m.name || m.generic_name || '')
+                                  .filter(Boolean)
                                 return (
                                   <button
-                                    key={cat}
-                                    onClick={() => handleCategoryClick(cat)}
-                                    className={`text-left bg-gradient-to-br ${cc.card} border border-[var(--border)] rounded-2xl p-5 cursor-pointer transition-all group ${cc.hover}`}
+                                    key={sub}
+                                    onClick={() =>
+                                      navigate(
+                                        `/drugs/class/${encodeURIComponent(selectedCategory)}/sub/${encodeURIComponent(sub)}`,
+                                      )
+                                    }
+                                    className={`text-left bg-gradient-to-br ${subColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${subColors.hover}`}
                                   >
                                     <div className="flex items-center gap-3 mb-3">
                                       <div
-                                        className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}
+                                        className={`w-12 h-12 rounded-xl bg-gradient-to-br ${subColors.tile} flex items-center justify-center shrink-0 shadow-sm`}
                                       >
                                         {(() => {
-                                          const Sym = CATEGORY_SYMBOLS[cat] || Pill
+                                          const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
                                           return <Sym size={18} className="text-white" />
                                         })()}
                                       </div>
-                                      <div className="min-w-0">
+                                      <div className="flex-1 min-w-0">
                                         <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">
-                                          {cat}
+                                          {sub}
                                         </h3>
-                                        <p className={`text-xs font-medium ${cc.text}`}>
-                                          {count} monograph{count !== 1 ? 's' : ''}
+                                        <p className={`text-xs font-medium ${subColors.text}`}>
+                                          {drugs.length} monograph{drugs.length !== 1 ? 's' : ''}
                                         </p>
                                       </div>
                                       <ChevronRight
                                         size={16}
-                                        className={`${cc.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`}
+                                        className={`${subColors.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`}
                                       />
                                     </div>
+                                    {samples.length > 0 && (
+                                      <p className="text-xs text-[var(--text-muted)] truncate">
+                                        e.g. {samples.join(', ')}
+                                      </p>
+                                    )}
+                                  </button>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        ) : (
+                          /* ── Level 3: Drugs in Selected Subclass ── */
+                          <div className="space-y-6">
+                            <div className="flex items-center gap-3">
+                              <button
+                                onClick={() =>
+                                  navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)
+                                }
+                                className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs"
+                              >
+                                <ChevronLeft size={18} className="text-[var(--text)]" />
+                              </button>
+                              <div className="min-w-0">
+                                <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
+                                  {(() => {
+                                    const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
+                                    return (
+                                      <Sym size={20} className="text-[var(--primary)] shrink-0" />
+                                    )
+                                  })()}
+                                  <span className="truncate min-w-0">{selectedSubclass}</span>
+                                </h2>
+                                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                                  {filteredCatalog.length} monograph
+                                  {filteredCatalog.length !== 1 ? 's' : ''} in{' '}
+                                  <button
+                                    onClick={() =>
+                                      navigate(
+                                        `/drugs/class/${encodeURIComponent(selectedCategory)}`,
+                                      )
+                                    }
+                                    className="font-bold underline underline-offset-2 hover:text-[var(--primary)] transition-colors cursor-pointer"
+                                  >
+                                    {selectedCategory}
+                                  </button>
+                                </p>
+                              </div>
+                            </div>
+
+                            {/* Search within category — scoped, no global search bar above */}
+                            <div className="relative">
+                              <Search
+                                size={16}
+                                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+                              />
+                              <input
+                                type="text"
+                                value={searchQuery}
+                                onChange={(e) => {
+                                  setSearchQuery(e.target.value)
+                                  setSelectedLetter(null)
+                                }}
+                                placeholder="Search drugs within this class..."
+                                className="w-full pl-10 pr-4 py-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
+                              />
+                            </div>
+
+                            {/* Alpha filter */}
+                            <div className="flex flex-wrap items-center gap-1">
+                              <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mr-1">
+                                Alpha:
+                              </span>
+                              <button
+                                onClick={() => setSelectedLetter(null)}
+                                className={`px-2 py-0.5 rounded text-xs font-bold transition-all cursor-pointer ${
+                                  !selectedLetter
+                                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
+                                    : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)]'
+                                }`}
+                              >
+                                All
+                              </button>
+                              {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter) => {
+                                const hasDrugs = filteredCatalog.some((m) =>
+                                  (m.name || '').toUpperCase().startsWith(letter),
+                                )
+                                if (!hasDrugs) return null
+                                return (
+                                  <button
+                                    key={letter}
+                                    onClick={() =>
+                                      setSelectedLetter(letter === selectedLetter ? null : letter)
+                                    }
+                                    className={`w-6 h-6 rounded text-[10px] font-bold transition-all cursor-pointer ${
+                                      selectedLetter === letter
+                                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
+                                        : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
+                                    }`}
+                                  >
+                                    {letter}
                                   </button>
                                 )
                               })}
                             </div>
 
-                            {CATEGORIES.every((cat) => {
-                              const count = catalog.filter((m) => getDrugCategory(m) === cat).length
-                              return count === 0
-                            }) && (
-                              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
-                                <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                  <BookOpen size={32} className="text-[var(--text-muted)]" />
+                            {/* Drug Grid */}
+                            {filteredCatalog.length === 0 ? (
+                              <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
+                                <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center">
+                                  <Pill size={32} className="text-[var(--text-muted)]" />
                                 </div>
-                                <h3 className="text-lg font-bold text-[var(--text)]">
-                                  No monographs loaded
-                                </h3>
-                                <p className="text-sm text-[var(--text-muted)] mt-2">
-                                  The Kenya Drug Index is being populated.
-                                </p>
-                              </div>
-                            )}
-                          </>
-                        )}
-                      </div>
-                    ) : !selectedSubclass ? (
-                      /* ── Level 2: Subclasses in Selected Category ── */
-                      <div className="space-y-6">
-                        <div className="flex items-center gap-3">
-                          <button
-                            onClick={handleBackToCategories}
-                            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs"
-                          >
-                            <ChevronLeft size={18} className="text-[var(--text)]" />
-                          </button>
-                          <div className="min-w-0">
-                            <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
-                              {(() => {
-                                const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
-                                return <Sym size={20} className="text-[var(--primary)] shrink-0" />
-                              })()}
-                              <span className="truncate min-w-0">{selectedCategory}</span>
-                            </h2>
-                            <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                              {
-                                catalog.filter((m) => getDrugCategory(m) === selectedCategory)
-                                  .length
-                              }{' '}
-                              monographs · choose a subclass
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                          {getSubclassesForCategory(selectedCategory as TherapeuticCategory).map(
-                            (sub) => {
-                              const drugs = catalog.filter(
-                                (m) =>
-                                  getDrugCategory(m) === selectedCategory &&
-                                  getDrugSubclass(m, selectedCategory as TherapeuticCategory) ===
-                                    sub,
-                              )
-                              if (drugs.length === 0) return null
-                              const subColors = getSubclassColor(sub)
-                              const samples = drugs
-                                .slice(0, 3)
-                                .map((m) => m.name || m.generic_name || '')
-                                .filter(Boolean)
-                              return (
+                                <div>
+                                  <h3 className="text-lg font-semibold text-[var(--text)] mb-1">
+                                    No local monographs found
+                                  </h3>
+                                  <p className="text-[var(--text-muted)] text-sm max-w-md">
+                                    No monographs match your current filter in this class.
+                                  </p>
+                                </div>
                                 <button
-                                  key={sub}
                                   onClick={() =>
-                                    navigate(
-                                      `/drugs/class/${encodeURIComponent(selectedCategory)}/sub/${encodeURIComponent(sub)}`,
-                                    )
+                                    generateWithAi(searchQuery || selectedCategory || '')
                                   }
-                                  className={`text-left bg-gradient-to-br ${subColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${subColors.hover}`}
+                                  className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
                                 >
-                                  <div className="flex items-center gap-3 mb-3">
-                                    <div
-                                      className={`w-12 h-12 rounded-xl bg-gradient-to-br ${subColors.tile} flex items-center justify-center shrink-0 shadow-sm`}
-                                    >
-                                      {(() => {
-                                        const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
-                                        return <Sym size={18} className="text-white" />
-                                      })()}
-                                    </div>
-                                    <div className="flex-1 min-w-0">
-                                      <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">
-                                        {sub}
-                                      </h3>
-                                      <p className={`text-xs font-medium ${subColors.text}`}>
-                                        {drugs.length} monograph{drugs.length !== 1 ? 's' : ''}
-                                      </p>
-                                    </div>
-                                    <ChevronRight
-                                      size={16}
-                                      className={`${subColors.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`}
-                                    />
-                                  </div>
-                                  {samples.length > 0 && (
-                                    <p className="text-xs text-[var(--text-muted)] truncate">
-                                      e.g. {samples.join(', ')}
-                                    </p>
-                                  )}
+                                  <Sparkles size={16} />
+                                  Search
                                 </button>
-                              )
-                            },
-                          )}
-                        </div>
-                      </div>
-                    ) : (
-                      /* ── Level 3: Drugs in Selected Subclass ── */
-                      <div className="space-y-6">
-                        <div className="flex items-center gap-3">
-                          <button
-                            onClick={() =>
-                              navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)
-                            }
-                            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs"
-                          >
-                            <ChevronLeft size={18} className="text-[var(--text)]" />
-                          </button>
-                          <div className="min-w-0">
-                            <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
-                              {(() => {
-                                const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill
-                                return <Sym size={20} className="text-[var(--primary)] shrink-0" />
-                              })()}
-                              <span className="truncate min-w-0">{selectedSubclass}</span>
-                            </h2>
-                            <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                              {filteredCatalog.length} monograph
-                              {filteredCatalog.length !== 1 ? 's' : ''} in{' '}
-                              <button
-                                onClick={() =>
-                                  navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)
-                                }
-                                className="font-bold underline underline-offset-2 hover:text-[var(--primary)] transition-colors cursor-pointer"
-                              >
-                                {selectedCategory}
-                              </button>
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* Search within category — scoped, no global search bar above */}
-                        <div className="relative">
-                          <Search
-                            size={16}
-                            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
-                          />
-                          <input
-                            type="text"
-                            value={searchQuery}
-                            onChange={(e) => {
-                              setSearchQuery(e.target.value)
-                              setSelectedLetter(null)
-                            }}
-                            placeholder="Search drugs within this class..."
-                            className="w-full pl-10 pr-4 py-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
-                          />
-                        </div>
-
-                        {/* Alpha filter */}
-                        <div className="flex flex-wrap items-center gap-1">
-                          <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mr-1">
-                            Alpha:
-                          </span>
-                          <button
-                            onClick={() => setSelectedLetter(null)}
-                            className={`px-2 py-0.5 rounded text-xs font-bold transition-all cursor-pointer ${
-                              !selectedLetter
-                                ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
-                                : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)]'
-                            }`}
-                          >
-                            All
-                          </button>
-                          {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter) => {
-                            const hasDrugs = filteredCatalog.some((m) =>
-                              (m.name || '').toUpperCase().startsWith(letter),
-                            )
-                            if (!hasDrugs) return null
-                            return (
-                              <button
-                                key={letter}
-                                onClick={() =>
-                                  setSelectedLetter(letter === selectedLetter ? null : letter)
-                                }
-                                className={`w-6 h-6 rounded text-[10px] font-bold transition-all cursor-pointer ${
-                                  selectedLetter === letter
-                                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
-                                    : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
-                                }`}
-                              >
-                                {letter}
-                              </button>
-                            )
-                          })}
-                        </div>
-
-                        {/* Drug Grid */}
-                        {filteredCatalog.length === 0 ? (
-                          <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
-                            <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center">
-                              <Pill size={32} className="text-[var(--text-muted)]" />
-                            </div>
-                            <div>
-                              <h3 className="text-lg font-semibold text-[var(--text)] mb-1">
-                                No local monographs found
-                              </h3>
-                              <p className="text-[var(--text-muted)] text-sm max-w-md">
-                                No monographs match your current filter in this class.
-                              </p>
-                            </div>
-                            <button
-                              onClick={() => generateWithAi(searchQuery || selectedCategory || '')}
-                              className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
-                            >
-                              <Sparkles size={16} />
-                              Search
-                            </button>
-                          </div>
-                        ) : (
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                            {filteredCatalog.map((m) => {
-                              const subCc = getSubclassColor(selectedSubclass || '')
-                              return (
-                                <div
-                                  key={m.id}
-                                  className={`bg-gradient-to-br ${subCc.card} border border-[var(--border)] rounded-xl transition-all group overflow-hidden ${subCc.hover}`}
-                                >
-                                  <button
-                                    onClick={() => openSeeded(m)}
-                                    className="w-full text-left p-4 cursor-pointer"
-                                  >
-                                    <div className="flex items-start gap-3 min-w-0">
-                                      <DrugThumb m={m} />
-                                      <div className="flex-1 min-w-0">
-                                        <div className="flex items-start justify-between gap-2 min-w-0">
-                                          <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">
-                                            {m.name}
+                              </div>
+                            ) : (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                                {filteredCatalog.map((m) => {
+                                  const subCc = getSubclassColor(selectedSubclass || '')
+                                  return (
+                                    <div
+                                      key={m.id}
+                                      className={`bg-gradient-to-br ${subCc.card} border border-[var(--border)] rounded-xl transition-all group overflow-hidden ${subCc.hover}`}
+                                    >
+                                      <button
+                                        onClick={() => openSeeded(m)}
+                                        className="w-full text-left p-4 cursor-pointer"
+                                      >
+                                        <div className="flex items-start gap-3 min-w-0">
+                                          <DrugThumb m={m} />
+                                          <div className="flex-1 min-w-0">
+                                            <div className="flex items-start justify-between gap-2 min-w-0">
+                                              <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">
+                                                {m.name}
+                                              </div>
+                                            </div>
+                                            {m.generic_name && m.generic_name !== m.name && (
+                                              <div className="text-xs text-[var(--text-muted)] truncate">
+                                                {m.generic_name}
+                                              </div>
+                                            )}
                                           </div>
                                         </div>
-                                        {m.generic_name && m.generic_name !== m.name && (
-                                          <div className="text-xs text-[var(--text-muted)] truncate">
-                                            {m.generic_name}
-                                          </div>
-                                        )}
+                                        {(m.drug_class_name || m.drug_class) &&
+                                          (() => {
+                                            const cc = getDrugClassConfig(
+                                              m.drug_class_name || m.drug_class,
+                                            )
+                                            return (
+                                              <span
+                                                className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
+                                              >
+                                                {cc.subtitle && (
+                                                  <span className="opacity-70 shrink-0">
+                                                    {cc.subtitle}
+                                                  </span>
+                                                )}
+                                                <span className="font-bold shrink-0">·</span>
+                                                <span className="truncate min-w-0">
+                                                  {m.drug_class_name || m.drug_class}
+                                                </span>
+                                              </span>
+                                            )
+                                          })()}
+                                        {(() => {
+                                          const sub = getDrugSubclass(m)
+                                          if (sub === 'Other') return null
+                                          return (
+                                            <span
+                                              className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}
+                                            >
+                                              <span className="truncate min-w-0">{sub}</span>
+                                            </span>
+                                          )
+                                        })()}
+                                      </button>
+                                      <div className="px-4 pb-3 flex justify-end">
+                                        <LikeButton monographId={m.id} />
                                       </div>
                                     </div>
-                                    {(m.drug_class_name || m.drug_class) &&
-                                      (() => {
-                                        const cc = getDrugClassConfig(
-                                          m.drug_class_name || m.drug_class,
-                                        )
-                                        return (
-                                          <span
-                                            className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
-                                          >
-                                            {cc.subtitle && (
-                                              <span className="opacity-70 shrink-0">
-                                                {cc.subtitle}
-                                              </span>
-                                            )}
-                                            <span className="font-bold shrink-0">·</span>
-                                            <span className="truncate min-w-0">
-                                              {m.drug_class_name || m.drug_class}
-                                            </span>
-                                          </span>
-                                        )
-                                      })()}
-                                    {(() => {
-                                      const sub = getDrugSubclass(m)
-                                      if (sub === 'Other') return null
-                                      return (
-                                        <span
-                                          className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}
-                                        >
-                                          <span className="truncate min-w-0">{sub}</span>
-                                        </span>
-                                      )
-                                    })()}
-                                  </button>
-                                  <div className="px-4 pb-3 flex justify-end">
-                                    <LikeButton monographId={m.id} />
-                                  </div>
-                                </div>
-                              )
-                            })}
+                                  )
+                                })}
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
-                    )}
-                  </div>
-                </>
+                    </>
+                  )}
+                </div>
+              ) : activeTab === 'checker' ? (
+                /* ── Tab: Drug Interaction Checker ── */
+                <div className="animate-in fade-in duration-200">
+                  <DrugCheckerView />
+                </div>
+              ) : (
+                /* ── Tab: My Library ── */
+                <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
+                  <SavedMonographsPanel
+                    onNavigateToDrug={(name) => {
+                      setActiveTab('monograph')
+                      setSearchQuery(name)
+                      setSelectedCategory(null)
+                      runSearch(name)
+                    }}
+                  />
+                </div>
               )}
-            </div>
-          ) : activeTab === 'checker' ? (
-            /* ── Tab: Drug Interaction Checker ── */
-            <div className="animate-in fade-in duration-200">
-              <DrugCheckerView />
-            </div>
-          ) : (
-            /* ── Tab: My Library ── */
-            <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
-              <SavedMonographsPanel
-                onNavigateToDrug={(name) => {
-                  setActiveTab('monograph')
-                  setSearchQuery(name)
-                  setSelectedCategory(null)
-                  runSearch(name)
-                }}
-              />
-            </div>
+            </>
           )}
         </>
       )}

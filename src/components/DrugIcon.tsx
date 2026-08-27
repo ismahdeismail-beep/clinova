@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { getDrugClassConfig } from '../data/drugClassColors'
+import { X, ZoomIn } from 'lucide-react'
 
 // Strong per-color gradients for generated icon tiles (literal strings so the
 // Tailwind v4 scanner picks them up). Falls back per-class instead of the
@@ -47,51 +48,132 @@ export interface DrugIconProps {
   drugClass?: string
   size?: 'sm' | 'md' | 'lg'
   className?: string
+  /** When true, clicking the icon opens an interactive lightbox with the full image */
+  interactive?: boolean
 }
 
 /**
  * Drug icon that renders the best available gallery image when one exists and
  * falls back to a deterministic class-colored monogram tile otherwise — so
  * every drug in the app shows a distinct icon, even with zero image rows.
+ * When `interactive` is set, clicking the icon opens a lightbox so users can
+ * inspect the 2D/3D structure or product photo at full size.
  */
-export function DrugIcon({ name, thumbnailUrl, drugClass, size = 'md', className = '' }: DrugIconProps) {
+export function DrugIcon({
+  name,
+  thumbnailUrl,
+  drugClass,
+  size = 'md',
+  className = '',
+  interactive = false,
+}: DrugIconProps) {
   const [failed, setFailed] = useState(false)
+  const [open, setOpen] = useState(false)
   const dims = TILE_SIZES[size]
 
-  if (thumbnailUrl && !failed) {
+  const hasImage = thumbnailUrl && !failed
+
+  const renderTile = () => {
+    if (hasImage) {
+      return (
+        <img
+          src={thumbnailUrl}
+          alt=""
+          loading="lazy"
+          onError={() => setFailed(true)}
+          className={`${dims.box} rounded-xl object-cover bg-white shrink-0 border border-[var(--border)] shadow-sm ${className}`}
+        />
+      )
+    }
+
+    const cc = getDrugClassConfig(drugClass || '')
+    const gradient = TILE_GRADIENTS[cc.color] ?? TILE_GRADIENTS.slate
     return (
-      <img
-        src={thumbnailUrl}
-        alt=""
-        loading="lazy"
-        onError={() => setFailed(true)}
-        className={`${dims.box} rounded-xl object-cover bg-white shrink-0 border border-[var(--border)] shadow-sm ${className}`}
-      />
+      <div
+        className={`${dims.box} relative shrink-0 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center border border-black/10 shadow-sm overflow-hidden ${className}`}
+        aria-hidden
+      >
+        <svg
+          className="absolute inset-0 w-full h-full opacity-25"
+          viewBox="0 0 48 48"
+          fill="none"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <path
+            d="M24 5 L40 14.5 L40 33.5 L24 43 L8 33.5 L8 14.5 Z"
+            stroke="white"
+            strokeWidth="1.6"
+          />
+          <circle cx="24" cy="5" r="2" fill="white" />
+          <circle cx="40" cy="14.5" r="2" fill="white" />
+          <circle cx="40" cy="33.5" r="2" fill="white" />
+          <circle cx="24" cy="43" r="2" fill="white" />
+          <circle cx="8" cy="33.5" r="2" fill="white" />
+          <circle cx="8" cy="14.5" r="2" fill="white" />
+        </svg>
+        <span className={`relative font-black text-white drop-shadow-sm ${dims.text}`}>
+          {drugInitials(name)}
+        </span>
+      </div>
     )
   }
 
-  const cc = getDrugClassConfig(drugClass || '')
-  const gradient = TILE_GRADIENTS[cc.color] ?? TILE_GRADIENTS.slate
+  // Non-interactive: render the plain tile
+  if (!interactive) return renderTile()
+
   return (
-    <div
-      className={`${dims.box} relative shrink-0 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center border border-black/10 shadow-sm overflow-hidden ${className}`}
-      aria-hidden
-    >
-      <svg
-        className="absolute inset-0 w-full h-full opacity-25"
-        viewBox="0 0 48 48"
-        fill="none"
-        preserveAspectRatio="xMidYMid slice"
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        title="View full image"
+        className={`relative group shrink-0 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] rounded-xl ${className}`}
       >
-        <path d="M24 5 L40 14.5 L40 33.5 L24 43 L8 33.5 L8 14.5 Z" stroke="white" strokeWidth="1.6" />
-        <circle cx="24" cy="5" r="2" fill="white" />
-        <circle cx="40" cy="14.5" r="2" fill="white" />
-        <circle cx="40" cy="33.5" r="2" fill="white" />
-        <circle cx="24" cy="43" r="2" fill="white" />
-        <circle cx="8" cy="33.5" r="2" fill="white" />
-        <circle cx="8" cy="14.5" r="2" fill="white" />
-      </svg>
-      <span className={`relative font-black text-white drop-shadow-sm ${dims.text}`}>{drugInitials(name)}</span>
-    </div>
+        {renderTile()}
+        {hasImage && (
+          <span className="absolute inset-0 rounded-xl bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <ZoomIn size={16} className="text-white drop-shadow" />
+          </span>
+        )}
+      </button>
+
+      {open && hasImage && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-150"
+          onClick={() => setOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${name} image`}
+        >
+          <div
+            className="relative max-w-3xl w-full bg-[var(--surface)] rounded-2xl overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--border)]">
+              <div className="min-w-0">
+                <h3 className="text-sm font-bold text-[var(--text)] truncate">{name}</h3>
+                <p className="text-[10px] text-[var(--text-muted)]">
+                  {drugClass || 'Drug'} · click outside to close
+                </p>
+              </div>
+              <button
+                onClick={() => setOpen(false)}
+                className="p-1.5 rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
+                aria-label="Close"
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <div className="p-4 flex items-center justify-center bg-white">
+              <img
+                src={thumbnailUrl}
+                alt={name}
+                className="max-h-[70vh] max-w-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   )
 }

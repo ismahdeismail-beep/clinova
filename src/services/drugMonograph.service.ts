@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabase'
-import { getBundledDrugs } from '../lib/lazyDrugData'
+import { getBundledDrugs, loadBundledDrugs } from '../lib/lazyDrugData'
 
 // ── Static fallback index ──────────────────────────────────────────
 // The bundled index holds ~513 drugs (149 original + 364 AI-enriched).
@@ -20,6 +20,60 @@ function buildStaticIndex() {
   }
 }
 export { buildStaticIndex }
+
+// ── Local fallback for My Library ─────────────────────────────────
+// Saving monographs normally requires Supabase + an authenticated user. When
+// Supabase is unavailable or the user isn't signed in, we persist saved
+// monographs to localStorage so the My Library module still works offline.
+// The stored shape mirrors UserMonograph so the panel renders identically.
+const LOCAL_SAVED_KEY = 'clinova.savedMonographs'
+
+interface LocalSavedEntry {
+  monograph_id: string
+  saved_at: string
+  notes: string | null
+  tags: string[]
+}
+
+function readLocalSaved(): LocalSavedEntry[] {
+  try {
+    return JSON.parse(localStorage.getItem(LOCAL_SAVED_KEY) || '[]')
+  } catch {
+    return []
+  }
+}
+
+function writeLocalSaved(entries: LocalSavedEntry[]) {
+  try {
+    localStorage.setItem(LOCAL_SAVED_KEY, JSON.stringify(entries))
+  } catch {
+    // storage full / unavailable — best effort
+  }
+}
+
+function localSavedIds(): Set<string> {
+  return new Set(readLocalSaved().map((e) => e.monograph_id))
+}
+
+function localSavedToUserMonograph(e: LocalSavedEntry, mono?: DrugMonograph): UserMonograph {
+  return {
+    id: `local-${e.monograph_id}`,
+    user_id: 'local',
+    monograph_id: e.monograph_id,
+    saved_at: e.saved_at,
+    notes: e.notes,
+    tags: e.tags,
+    monograph: mono,
+  }
+}
+
+// Resolve a monograph by id from the bundled index (used to hydrate local
+// saved entries with full monograph data for the library panel).
+async function findBundledById(id: string): Promise<DrugMonograph | undefined> {
+  await loadBundledDrugs()
+  buildStaticIndex()
+  return STATIC_BY_ID.get(id)
+}
 
 // ── Thumbnail index (3D structure first) ──────────────────────────
 // Every monograph gets a best-image icon from drug_images. Preference order:
@@ -421,11 +475,37 @@ export const DrugMonographService = {
     monographId: string,
     opts?: { notes?: string; tags?: string[] },
   ): Promise<boolean> {
-    if (!supabase) return false
+    if (!supabase) {
+      // Offline fallback — persist to localStorage
+      const entries = readLocalSaved()
+      if (!entries.some((e) => e.monograph_id === monographId)) {
+        entries.push({
+          monograph_id: monographId,
+          saved_at: new Date().toISOString(),
+          notes: opts?.notes ?? null,
+          tags: opts?.tags ?? [],
+        })
+        writeLocalSaved(entries)
+      }
+      return true
+    }
     const {
       data: { user },
     } = await supabase.auth.getUser()
-    if (!user) return false
+    if (!user) {
+      // Not signed in — fall back to localStorage so saving still works
+      const entries = readLocalSaved()
+      if (!entries.some((e) => e.monograph_id === monographId)) {
+        entries.push({
+          monograph_id: monographId,
+          saved_at: new Date().toISOString(),
+          notes: opts?.notes ?? null,
+          tags: opts?.tags ?? [],
+        })
+        writeLocalSaved(entries)
+      }
+      return true
+    }
 
     const { error } = await supabase.from('user_monographs').upsert(
       {
@@ -441,11 +521,17 @@ export const DrugMonographService = {
   },
 
   async removeSavedMonograph(monographId: string): Promise<boolean> {
-    if (!supabase) return false
+    if (!supabase) {
+      writeLocalSaved(readLocalSaved().filter((e) => e.monograph_id !== monographId))
+      return true
+    }
     const {
       data: { user },
     } = await supabase.auth.getUser()
-    if (!user) return false
+    if (!user) {
+      writeLocalSaved(readLocalSaved().filter((e) => e.monograph_id !== monographId))
+      return true
+    }
 
     const { error } = await supabase
       .from('user_monographs')
@@ -462,11 +548,15 @@ export const DrugMonographService = {
     page?: number
     pageSize?: number
   }): Promise<{ items: UserMonograph[]; total: number }> {
-    if (!supabase) return { items: [], total: 0 }
+    if (!supabase) {
+      return this.getLocalUserMonographs(opts)
+    }
     const {
       data: { user },
     } = await supabase.auth.getUser()
-    if (!user) return { items: [], total: 0 }
+    if (!user) {
+      return this.getLocalUserMonographs(opts)
+    }
 
     const page = opts?.page ?? 1
     const pageSize = opts?.pageSize ?? 24
@@ -517,12 +607,47 @@ export const DrugMonographService = {
     }
   },
 
+  // Local (offline / not signed in) saved monographs from localStorage.
+  async getLocalUserMonographs(opts?: {
+    search?: string
+    tag?: string
+    page?: number
+    pageSize?: number
+  }): Promise<{ items: UserMonograph[]; total: number }> {
+    const page = opts?.page ?? 1
+    const pageSize = opts?.pageSize ?? 24
+    let entries = readLocalSaved().sort(
+      (a, b) => new Date(b.saved_at).getTime() - new Date(a.saved_at).getTime(),
+    )
+
+    if (opts?.tag) {
+      entries = entries.filter((e) => (e.tags ?? []).includes(opts.tag!))
+    }
+    if (opts?.search) {
+      const s = opts.search.toLowerCase()
+      entries = entries.filter((e) => (e.notes ?? '').toLowerCase().includes(s))
+    }
+
+    const total = entries.length
+    const from = (page - 1) * pageSize
+    const slice = entries.slice(from, from + pageSize)
+
+    const items = await Promise.all(
+      slice.map(async (e) => {
+        const mono = await findBundledById(e.monograph_id)
+        return localSavedToUserMonograph(e, mono)
+      }),
+    )
+
+    return { items, total }
+  },
+
   async isMonographSaved(monographId: string): Promise<boolean> {
-    if (!supabase) return false
+    if (!supabase) return localSavedIds().has(monographId)
     const {
       data: { user },
     } = await supabase.auth.getUser()
-    if (!user) return false
+    if (!user) return localSavedIds().has(monographId)
 
     const { data } = await supabase
       .from('user_monographs')

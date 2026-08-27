@@ -792,7 +792,7 @@ function extractDrugNames(query: string): string[] {
         for (const qw of queryWords) {
           let bestMatch = ''
           let bestDist = Infinity
-          for (const name of ALL_DRUG_NAMES) {
+          for (const name of getAllDrugNames()) {
             const nameParts = name.split(/\s+/)
             for (const np of nameParts) {
               if (np.length < 3) continue
@@ -819,7 +819,7 @@ function searchByIndication(keywords: string[]): string[] {
 
   for (const kw of keywords) {
     const lower = kw.toLowerCase()
-    for (const [indication, drugs] of INDICATION_MAP) {
+    for (const [indication, drugs] of getIndicationMap()) {
       if (indication.includes(lower) || lower.includes(indication)) {
         for (const d of drugs) matchedDrugs.add(d)
       }
@@ -831,7 +831,7 @@ function searchByIndication(keywords: string[]): string[] {
     for (const disease of KNOWN_DISEASES) {
       for (const kw of keywords) {
         if (disease.includes(kw.toLowerCase()) || kw.toLowerCase().includes(disease)) {
-          for (const [indication, drugs] of INDICATION_MAP) {
+          for (const [indication, drugs] of getIndicationMap()) {
             if (indication.includes(disease) || disease.includes(indication)) {
               for (const d of drugs) matchedDrugs.add(d)
             }

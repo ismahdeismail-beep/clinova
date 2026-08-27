@@ -1,69 +1,83 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react'
 import {
-  Bookmark, BookmarkCheck, Search, Trash2, Loader2,
-  X, Tag, ChevronDown, ExternalLink, Heart,
-  ArrowUpDown, Clock,
-} from 'lucide-react';
-import { DrugMonographService, type UserMonograph } from '../services/drugMonograph.service';
-import { getDrugClassConfig } from '../data/drugClassColors';
-import { DrugIcon } from './DrugIcon';
+  Bookmark,
+  BookmarkCheck,
+  Search,
+  Trash2,
+  Loader2,
+  X,
+  Tag,
+  ChevronDown,
+  ExternalLink,
+  Heart,
+  ArrowUpDown,
+  Clock,
+} from 'lucide-react'
+import { DrugMonographService, type UserMonograph } from '../services/drugMonograph.service'
+import { getDrugClassConfig } from '../data/drugClassColors'
+import { DrugIcon } from './DrugIcon'
 
 interface SavedMonographsPanelProps {
-  onNavigateToDrug?: (name: string) => void;
-  compact?: boolean;
+  onNavigateToDrug?: (name: string) => void
+  compact?: boolean
 }
 
-type SortMode = 'date-desc' | 'date-asc' | 'name-asc' | 'name-desc';
+type SortMode = 'date-desc' | 'date-asc' | 'name-asc' | 'name-desc'
 
-export default function SavedMonographsPanel({ onNavigateToDrug, compact }: SavedMonographsPanelProps) {
-  const [items, setItems] = useState<UserMonograph[]>([]);
-  const [total, setTotal] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [search, setSearch] = useState('');
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [expandedId, setExpandedId] = useState<string | null>(null);
-  const [removing, setRemoving] = useState<string | null>(null);
-  const [sortMode, setSortMode] = useState<SortMode>('date-desc');
+export default function SavedMonographsPanel({
+  onNavigateToDrug,
+  compact,
+}: SavedMonographsPanelProps) {
+  const [items, setItems] = useState<UserMonograph[]>([])
+  const [total, setTotal] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [search, setSearch] = useState('')
+  const [selectedTag, setSelectedTag] = useState<string | null>(null)
+  const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [removing, setRemoving] = useState<string | null>(null)
+  const [sortMode, setSortMode] = useState<SortMode>('date-desc')
 
   const loadItems = useCallback(async () => {
-    setLoading(true);
+    setLoading(true)
     const result = await DrugMonographService.getUserMonographs({
       search: search || undefined,
       tag: selectedTag ?? undefined,
       pageSize: 100,
-    });
-    setItems(result.items);
-    setTotal(result.total);
-    setLoading(false);
-  }, [search, selectedTag]);
+    })
+    setItems(result.items)
+    setTotal(result.total)
+    setLoading(false)
+  }, [search, selectedTag])
 
-  useEffect(() => { loadItems(); }, [loadItems]);
+  useEffect(() => {
+    loadItems()
+  }, [loadItems])
 
   const sortedItems = [...items].sort((a, b) => {
     switch (sortMode) {
       case 'date-desc':
-        return new Date(b.saved_at).getTime() - new Date(a.saved_at).getTime();
+        return new Date(b.saved_at).getTime() - new Date(a.saved_at).getTime()
       case 'date-asc':
-        return new Date(a.saved_at).getTime() - new Date(b.saved_at).getTime();
+        return new Date(a.saved_at).getTime() - new Date(b.saved_at).getTime()
       case 'name-asc':
-        return (a.monograph?.name ?? '').localeCompare(b.monograph?.name ?? '');
+        return (a.monograph?.name ?? '').localeCompare(b.monograph?.name ?? '')
       case 'name-desc':
-        return (b.monograph?.name ?? '').localeCompare(a.monograph?.name ?? '');
+        return (b.monograph?.name ?? '').localeCompare(a.monograph?.name ?? '')
     }
-  });
+  })
 
-  const allTags = [...new Set(items.flatMap(i => i.tags ?? []))].sort();
+  const allTags = [...new Set(items.flatMap((i) => i.tags ?? []))].sort()
 
   const handleRemove = async (monographId: string) => {
-    setRemoving(monographId);
-    await DrugMonographService.removeSavedMonograph(monographId);
-    setItems(prev => prev.filter(i => i.monograph_id !== monographId));
-    setTotal(prev => prev - 1);
-    if (expandedId === monographId) setExpandedId(null);
-    setRemoving(null);
-  };
+    setRemoving(monographId)
+    await DrugMonographService.removeSavedMonograph(monographId)
+    setItems((prev) => prev.filter((i) => i.monograph_id !== monographId))
+    setTotal((prev) => prev - 1)
+    if (expandedId === monographId) setExpandedId(null)
+    setRemoving(null)
+  }
 
-  if (compact && items.length === 0 && !loading) return null;
+  if (compact && items.length === 0 && !loading) return null
 
   return (
     <div className="space-y-4">
@@ -75,7 +89,9 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
           </div>
           <div>
             <h3 className="text-sm font-bold text-[var(--text)]">My Monograph Library</h3>
-            <p className="text-[10px] text-[var(--text-muted)]">{total} saved monograph{total !== 1 ? 's' : ''}</p>
+            <p className="text-[10px] text-[var(--text-muted)]">
+              {total} saved monograph{total !== 1 ? 's' : ''}
+            </p>
           </div>
         </div>
         {items.length > 0 && (
@@ -83,7 +99,9 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
             <button
               onClick={() => setSortMode(sortMode === 'date-desc' ? 'date-asc' : 'date-desc')}
               className={`p-1.5 rounded-lg text-[10px] font-semibold transition-colors cursor-pointer flex items-center gap-1 ${
-                sortMode.startsWith('date') ? 'bg-rose-100 text-rose-700' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
+                sortMode.startsWith('date')
+                  ? 'bg-rose-100 text-rose-700'
+                  : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
               }`}
               title="Sort by date"
             >
@@ -92,7 +110,9 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
             <button
               onClick={() => setSortMode(sortMode === 'name-asc' ? 'name-desc' : 'name-asc')}
               className={`p-1.5 rounded-lg text-[10px] font-semibold transition-colors cursor-pointer flex items-center gap-1 ${
-                sortMode.startsWith('name') ? 'bg-rose-100 text-rose-700' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
+                sortMode.startsWith('name')
+                  ? 'bg-rose-100 text-rose-700'
+                  : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
               }`}
               title="Sort by name"
             >
@@ -108,12 +128,15 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
         <input
           type="text"
           value={search}
-          onChange={e => setSearch(e.target.value)}
+          onChange={(e) => setSearch(e.target.value)}
           placeholder="Filter saved monographs..."
           className="flex-1 bg-transparent border-none outline-none text-xs text-[var(--text)]"
         />
         {search && (
-          <button onClick={() => setSearch('')} className="p-0.5 text-[var(--text-dim)] hover:text-[var(--text)]">
+          <button
+            onClick={() => setSearch('')}
+            className="p-0.5 text-[var(--text-dim)] hover:text-[var(--text)]"
+          >
             <X size={14} />
           </button>
         )}
@@ -122,7 +145,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
       {/* Tags */}
       {allTags.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
-          {allTags.map(tag => (
+          {allTags.map((tag) => (
             <button
               key={tag}
               onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
@@ -156,7 +179,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
         </div>
       ) : (
         <div className="space-y-2">
-          {sortedItems.map(item => (
+          {sortedItems.map((item) => (
             <div
               key={item.id}
               className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden transition-all hover:border-[var(--primary)]/30"
@@ -169,26 +192,38 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       thumbnailUrl={item.monograph?.thumbnail_url}
                       drugClass={item.monograph?.drug_class_name || item.monograph?.drug_class}
                       size="sm"
+                      interactive
                     />
                   </div>
                   <div className="min-w-0 flex-1">
                     <button
-                      onClick={() => setExpandedId(expandedId === item.monograph_id ? null : item.monograph_id)}
+                      onClick={() =>
+                        setExpandedId(expandedId === item.monograph_id ? null : item.monograph_id)
+                      }
                       className="text-sm font-bold text-[var(--text)] text-left truncate block w-full hover:text-[var(--primary)] transition-colors cursor-pointer"
                     >
                       {item.monograph?.name ?? 'Unknown Monograph'}
                     </button>
                     <div className="flex items-center gap-2 mt-0.5">
-                      {(item.monograph?.drug_class_name || item.monograph?.drug_class) && (() => {
-                        const cc = getDrugClassConfig(item.monograph?.drug_class_name || item.monograph?.drug_class || '');
-                        return (
-                          <span className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
-                            {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
-                            <span className="font-bold shrink-0">·</span>
-                            <span className="truncate min-w-0">{item.monograph?.drug_class_name || item.monograph?.drug_class}</span>
-                          </span>
-                        );
-                      })()}
+                      {(item.monograph?.drug_class_name || item.monograph?.drug_class) &&
+                        (() => {
+                          const cc = getDrugClassConfig(
+                            item.monograph?.drug_class_name || item.monograph?.drug_class || '',
+                          )
+                          return (
+                            <span
+                              className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
+                            >
+                              {cc.subtitle && (
+                                <span className="opacity-70 shrink-0">{cc.subtitle}</span>
+                              )}
+                              <span className="font-bold shrink-0">·</span>
+                              <span className="truncate min-w-0">
+                                {item.monograph?.drug_class_name || item.monograph?.drug_class}
+                              </span>
+                            </span>
+                          )
+                        })()}
                       <span className="text-[9px] text-[var(--text-dim)]">
                         {new Date(item.saved_at).toLocaleDateString()}
                       </span>
@@ -216,13 +251,22 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                     className="p-1.5 text-[var(--text-dim)] hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors cursor-pointer disabled:opacity-50"
                     title="Remove from library"
                   >
-                    {removing === item.monograph_id ? <Loader2 size={14} className="animate-spin" /> : <Trash2 size={14} />}
+                    {removing === item.monograph_id ? (
+                      <Loader2 size={14} className="animate-spin" />
+                    ) : (
+                      <Trash2 size={14} />
+                    )}
                   </button>
                   <button
-                    onClick={() => setExpandedId(expandedId === item.monograph_id ? null : item.monograph_id)}
+                    onClick={() =>
+                      setExpandedId(expandedId === item.monograph_id ? null : item.monograph_id)
+                    }
                     className="p-1.5 text-[var(--text-dim)] hover:text-[var(--text)] rounded-lg transition-colors cursor-pointer"
                   >
-                    <ChevronDown size={14} className={`transition-transform ${expandedId === item.monograph_id ? 'rotate-180' : ''}`} />
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform ${expandedId === item.monograph_id ? 'rotate-180' : ''}`}
+                    />
                   </button>
                 </div>
               </div>
@@ -232,48 +276,86 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                   <div className="markdown-body text-xs space-y-3">
                     <div className="grid grid-cols-2 gap-3">
                       <div>
-                        <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Generic Name</span>
-                        <p className="text-[var(--text)] font-medium mt-0.5">{item.monograph.generic_name}</p>
+                        <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                          Generic Name
+                        </span>
+                        <p className="text-[var(--text)] font-medium mt-0.5">
+                          {item.monograph.generic_name}
+                        </p>
                       </div>
                       <div>
-                        <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Drug Class</span>
+                        <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                          Drug Class
+                        </span>
                         {(() => {
-                          const cc = getDrugClassConfig(item.monograph.drug_class_name || item.monograph.drug_class || '');
+                          const cc = getDrugClassConfig(
+                            item.monograph.drug_class_name || item.monograph.drug_class || '',
+                          )
                           return (
-                            <span className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
-                              {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
+                            <span
+                              className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}
+                            >
+                              {cc.subtitle && (
+                                <span className="opacity-70 shrink-0">{cc.subtitle}</span>
+                              )}
                               <span className="font-bold shrink-0">·</span>
-                              <span className="truncate min-w-0">{item.monograph.drug_class_name || item.monograph.drug_class}</span>
+                              <span className="truncate min-w-0">
+                                {item.monograph.drug_class_name || item.monograph.drug_class}
+                              </span>
                             </span>
-                          );
+                          )
                         })()}
                       </div>
                     </div>
                     <div>
-                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Indications</span>
+                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                        Indications
+                      </span>
                       <div className="flex flex-wrap gap-1 mt-0.5">
                         {item.monograph.indications.slice(0, 4).map((ind, i) => (
-                          <span key={i} className="px-2 py-0.5 rounded bg-green-50 text-green-700 text-[10px] font-medium">{ind}</span>
+                          <span
+                            key={i}
+                            className="px-2 py-0.5 rounded bg-green-50 text-green-700 text-[10px] font-medium"
+                          >
+                            {ind}
+                          </span>
                         ))}
                         {item.monograph.indications.length > 4 && (
-                          <span className="text-[10px] text-[var(--text-muted)]">+{item.monograph.indications.length - 4} more</span>
+                          <span className="text-[10px] text-[var(--text-muted)]">
+                            +{item.monograph.indications.length - 4} more
+                          </span>
                         )}
                       </div>
                     </div>
                     <div>
-                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Key Interactions</span>
+                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                        Key Interactions
+                      </span>
                       <p className="text-[var(--text-secondary)] mt-0.5">
                         {item.monograph.interactions.slice(0, 3).join(', ')}
                         {item.monograph.interactions.length > 3 && '...'}
                       </p>
                     </div>
                     <div>
-                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Monitoring</span>
-                      <p className="text-[var(--text-secondary)] mt-0.5 line-clamp-2">{item.monograph.monitoring}</p>
+                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                        Monitoring
+                      </span>
+                      <p className="text-[var(--text-secondary)] mt-0.5 line-clamp-2">
+                        {item.monograph.monitoring}
+                      </p>
                     </div>
                     <div>
-                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Saved On</span>
-                      <p className="text-[var(--text)] mt-0.5 font-medium">{new Date(item.saved_at).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">
+                        Saved On
+                      </span>
+                      <p className="text-[var(--text)] mt-0.5 font-medium">
+                        {new Date(item.saved_at).toLocaleDateString(undefined, {
+                          weekday: 'long',
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -283,31 +365,36 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
         </div>
       )}
     </div>
-  );
+  )
 }
 
-export function SaveMonographButton({ monographId, className }: {
-  monographId: string;
-  className?: string;
+export function SaveMonographButton({
+  monographId,
+  className,
+}: {
+  monographId: string
+  className?: string
 }) {
-  const [saved, setSaved] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [saved, setSaved] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    DrugMonographService.isMonographSaved(monographId).then(setSaved).finally(() => setLoading(false));
-  }, [monographId]);
+    DrugMonographService.isMonographSaved(monographId)
+      .then(setSaved)
+      .finally(() => setLoading(false))
+  }, [monographId])
 
   const toggle = async () => {
     if (saved) {
-      await DrugMonographService.removeSavedMonograph(monographId);
-      setSaved(false);
+      await DrugMonographService.removeSavedMonograph(monographId)
+      setSaved(false)
     } else {
-      await DrugMonographService.saveMonograph(monographId);
-      setSaved(true);
+      await DrugMonographService.saveMonograph(monographId)
+      setSaved(true)
     }
-  };
+  }
 
-  if (loading) return null;
+  if (loading) return null
 
   return (
     <button
@@ -322,5 +409,5 @@ export function SaveMonographButton({ monographId, className }: {
       {saved ? <BookmarkCheck size={14} /> : <Bookmark size={14} />}
       {saved ? 'Saved' : 'Save'}
     </button>
-  );
+  )
 }

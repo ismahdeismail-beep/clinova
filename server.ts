@@ -642,11 +642,19 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
 });
 
 // Multipart Chunked Upload API
+const UPLOAD_ID_PATTERN = /^[A-Za-z0-9_-]{1,64}$/;
 app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
   try {
     const { uploadId, chunkIndex, totalChunks, fileName } = req.body;
     if (!uploadId || chunkIndex === undefined || !totalChunks || !fileName) {
       return res.status(400).json({ error: 'Missing required chunk upload fields.' });
+    }
+
+    if (!UPLOAD_ID_PATTERN.test(String(uploadId))) {
+      return res.status(400).json({ error: 'Invalid uploadId.' });
+    }
+    if (String(fileName).length > 200) {
+      return res.status(400).json({ error: 'Invalid fileName.' });
     }
 
     if (!req.file) {
@@ -655,6 +663,16 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
 
     const chunkIdx = parseInt(chunkIndex, 10);
     const totalChks = parseInt(totalChunks, 10);
+    if (
+      !Number.isInteger(chunkIdx) ||
+      !Number.isInteger(totalChks) ||
+      chunkIdx < 0 ||
+      totalChks < 1 ||
+      chunkIdx >= totalChks ||
+      totalChks > 5000
+    ) {
+      return res.status(400).json({ error: 'Invalid chunkIndex or totalChunks.' });
+    }
 
     const uploadsDir = path.join(process.cwd(), 'uploads');
     const tmpDir = path.join(uploadsDir, 'tmp', uploadId);
@@ -731,7 +749,7 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
     // Best-effort cleanup of partial chunks to avoid disk leak on failed assembly.
     try {
       const uid = req.body && (req.body.uploadId as string | undefined);
-      if (uid) {
+      if (uid && UPLOAD_ID_PATTERN.test(uid)) {
         const d = path.join(process.cwd(), 'uploads', 'tmp', uid);
         if (fs.existsSync(d)) fs.rmSync(d, { recursive: true, force: true });
       }
@@ -3133,16 +3151,37 @@ app.get('/api/admin/config', (req, res) => {
 });
 
 // POST Global Router Configuration
+const LOAD_BALANCING_MODES = [
+  'Priority',
+  'Weighted',
+  'Latency',
+  'Cost',
+  'Health',
+  'RoundRobin',
+] as const;
+
 app.post('/api/admin/config', (req, res) => {
   const { globalProviderOverride, loadBalancingMode: newMode } = req.body;
-  
+
   if (globalProviderOverride !== undefined) {
-    setGlobalProviderOverride(globalProviderOverride);
+    if (
+      globalProviderOverride !== null &&
+      globalProviderOverride !== '' &&
+      !providerStatuses[globalProviderOverride]
+    ) {
+      return res.status(400).json({ error: 'Invalid provider name' });
+    }
+    setGlobalProviderOverride(globalProviderOverride || null);
   }
   if (newMode !== undefined) {
+    if (!(LOAD_BALANCING_MODES as readonly string[]).includes(newMode)) {
+      return res.status(400).json({
+        error: `Invalid load balancing mode. Allowed: ${LOAD_BALANCING_MODES.join(', ')}`,
+      });
+    }
     setLoadBalancingMode(newMode);
   }
-  
+
   res.json({
     success: true,
     globalProviderOverride: getGlobalProviderOverride(),
@@ -3276,6 +3315,7 @@ app.post('/api/admin/clinical-cases', async (req, res) => {
 
 app.put('/api/admin/clinical-cases/:id', async (req, res) => {
   if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  if (!isValidUuid(req.params.id)) return res.status(400).json({ error: 'Invalid case id' });
   try {
     const row = mapAdminCaseToRow(req.body);
     const { data, error } = await adminSupabase
@@ -3292,6 +3332,7 @@ app.put('/api/admin/clinical-cases/:id', async (req, res) => {
 
 app.delete('/api/admin/clinical-cases/:id', async (req, res) => {
   if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  if (!isValidUuid(req.params.id)) return res.status(400).json({ error: 'Invalid case id' });
   try {
     const { error } = await adminSupabase.from('clinical_cases').delete().eq('id', req.params.id);
     if (error) return res.status(400).json({ error: error.message });
@@ -3470,6 +3511,32 @@ app.get('/api/admin/jobs/status', async (_req, res) => {
   } catch (e: any) {
     res.status(500).json({ error: e.message });
   }
+});
+
+app.use('/api', (_req, res) => {
+  res.status(404).json({ error: 'Not found' });
+});
+
+app.use((err: any, _req: any, res: any, next: any) => {
+  if (res.headersSent) return next(err);
+  let status = Number(err?.status || err?.statusCode) || 500;
+  let message: string;
+  if (err?.type === 'entity.parse.failed') {
+    status = 400;
+    message = 'Invalid JSON body';
+  } else if (err?.type === 'entity.too.large') {
+    status = 413;
+    message = 'Payload too large';
+  } else if (err?.name === 'MulterError') {
+    status = 400;
+    message = err.code === 'LIMIT_FILE_SIZE' ? 'File too large' : err.message;
+  } else if (status >= 500) {
+    message = 'Internal server error';
+  } else {
+    message = err?.message || 'Request failed';
+  }
+  if (status >= 500) console.error('[API] Unhandled error:', err);
+  res.status(status).json({ error: message });
 });
 
 

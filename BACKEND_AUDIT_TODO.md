@@ -1,5 +1,10 @@
 # Backend Infrastructure Synchronization & Production Readiness — TODO
 
+> **Status (2026-10-06):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
+> Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
+> (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
+> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env).
+
 ## Definition of Done
 
 Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, storage, and all backend services are synchronized, production-ready, documented, and operating as one cohesive backend supporting every Clinova feature.
@@ -50,7 +55,9 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 - [x] Confirmed NO cron/queue/worker; processing is synchronous in request handlers
 - [x] Documented as future scale item (non-breaking pass)
 
-### Phase 9 — API Audit
+### Phase 9 — API Audit ✅ (validation pass done 2026-10-06)
+
+- [x] Route-registration bug fixed: `CLINOVA ACADEMIC ENGINE` routes (`/api/gemini/module-tutor|case-tutor|generate-full-case|hub-tutor`, `/api/gemini/oral-practice/*`, `/api/ai/skills`, `/api/ai/orchestrate`) and `/api/library/crawl|crawl-many|search` were declared **inside** `startServer()`, which is skipped when `VERCEL=1` — so they were never registered in production and were shadowed by the JSON `/api` 404 catch-all in dev. Hoisted to module level; `startServer()` now only wires Vite/static, SPA fallback and `listen`. Verified on prod: `https://clinova-main.vercel.app/api/ai/skills` → 200 (Vercel deploy status: success).
 
 - [x] Rate-limit middleware (sliding window, opt-in via `RATE_LIMIT_ENABLED`) + auth guard (`API_REQUIRE_AUTH` + `API_SHARED_SECRET`) added to `/api/*`. Default OFF → non-breaking. Validated (esbuild exit 0). See BACKEND_ENV_REFERENCE.md.
 - [x] Per-endpoint validation/error-consistency pass — done: JSON 404 for unmatched `/api/*`, centralized error handler (malformed JSON → 400, oversize → 413, multer → 400, other 5xx → generic message), body validation on `/api/admin/config` (load-balancing mode + provider override whitelisted), UUID checks on `PUT`/`DELETE /api/admin/clinical-cases/:id`, and chunked-upload `uploadId`/chunk-index validation (closes a path-traversal write/`rmSync` in `POST /api/upload/chunk`). Verified against a live server (curl) + `tsc --noEmit` + vitest + production build.
@@ -72,6 +79,7 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 - [x] RLS reviewed; service-role bypass documented (R3)
 - [x] API protection added (Phase 9 guard, opt-in)
 - [ ] Remaining: enable `API_REQUIRE_AUTH`+`RATE_LIMIT_ENABLED` in prod; rotate/secure service-role key; decide auth authority
+  - Note: `ADMIN_API_SECRET` guard exists but is unset in prod — all `/api/admin/*` writes (clinical cases, embeddings reindex, jobs, AI gateway) are currently open.
 
 ### Phase 13 — Performance Optimization ✅ (see BACKEND_AUDIT_REPORT.md)
 

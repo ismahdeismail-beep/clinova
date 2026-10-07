@@ -24,6 +24,18 @@ every feature, no duplicated or conflicting entry points.
 - [x] Docs updated (`.opencode/project-context.md` nav sections + `MoreScreen` reference).
 - [x] Verified: `npm run lint` (tsc), `npx eslint .`, `npm test` (6/6), `npm run build`.
 
+## Done — 2026-10-06 (KDI opening screen)
+
+- [x] **Drug Index opens on its modules only**: `/drugs` now renders just the KDI heading and
+      the three module cards (Monographs, My Library, Interactions) — the global search bar,
+      quick-search tags and category browse grid no longer show on the landing screen. Those
+      moved into the Monographs module, under the module tab bar.
+- [x] **No dead ends inside the KDI**: an "All modules" back link above the tab bar returns
+      to the hub from any module; the tab bar switches modules.
+- [x] **Deep links still work**: `/drugs/class/:category`, `/sub/:subclass` and `/drugs?q=…`
+      now auto-enter the Monographs module instead of landing on the hub with content hidden.
+- [x] Verified: `npm run lint` (tsc), `npx eslint .` (0 errors), `npm test` (6/6), `npm run build`.
+
 ## Open
 
 - [ ] Unify in-page navigation: EducationHub tabs, DrugIndex breadcrumbs and Dashboard hub

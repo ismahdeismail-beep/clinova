@@ -665,6 +665,7 @@ export default function DrugIndexScreen() {
     const q = searchParams.get('q')
     if (q) {
       setSearchQuery(q)
+      setActiveTab('monograph')
       runSearch(q)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -674,6 +675,7 @@ export default function DrugIndexScreen() {
   useEffect(() => {
     const cat = categoryParam ? decodeURIComponent(categoryParam) : null
     const sub = subclassParam ? decodeURIComponent(subclassParam) : null
+    if (cat) setActiveTab('monograph')
     setSelectedCategory((prev) => (cat === prev ? prev : cat))
     setSelectedSubclass((prev) => (sub === prev ? prev : sub))
     setSelectedLetter(null)
@@ -826,128 +828,6 @@ export default function DrugIndexScreen() {
         </>
       ) : (
         <>
-          {/* ── Browse Mode: Header + Tabs ── */}
-          <div className="mb-4">
-            <h1 className="text-3xl font-bold text-[var(--text)] tracking-tight">
-              Kenya Drug Index{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] via-emerald-500 to-purple-500">
-                (KDI)
-              </span>
-            </h1>
-            <p className="text-sm text-[var(--text-muted)] mt-1">
-              Browse monographs by therapeutic class or search for a specific drug
-            </p>
-          </div>
-
-          {/* ── Global Search Bar (only when not in a category) ── */}
-          {!monograph && !selectedCategory && (
-            <div className="relative" ref={searchRef}>
-              <form
-                onSubmit={handleSearchSubmit}
-                className="flex flex-col sm:flex-row gap-2 sm:gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm w-full"
-              >
-                <div className="flex-1 min-w-0 flex items-center gap-3 px-3">
-                  <Search size={20} className="text-[var(--text-dim)] shrink-0" />
-                  <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => {
-                      setSearchQuery(e.target.value)
-                      setShowSearchDropdown(true)
-                    }}
-                    onFocus={() => setShowSearchDropdown(true)}
-                    placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..."
-                    className="flex-1 min-w-0 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  disabled={isLoading}
-                  className="shrink-0 w-full sm:w-auto px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
-                >
-                  {showLoading ? <InlineLoader size={16} /> : <Search size={16} />}
-                  Search
-                </button>
-              </form>
-
-              {showSearchDropdown &&
-                (searchQuery.trim().length >= 2 ? (
-                  suggestions.length > 0 ? (
-                    <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150 max-h-80 overflow-y-auto">
-                      <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">
-                        Suggestions
-                      </div>
-                      {suggestions.map((m) => (
-                        <button
-                          key={m.id}
-                          onClick={() => handleSuggestionClick(m)}
-                          className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
-                        >
-                          <DrugThumb m={m} size="sm" />
-                          <span className="min-w-0 flex-1">
-                            <span className="font-semibold block truncate">{m.name}</span>
-                            {m.generic_name && m.generic_name !== m.name && (
-                              <span className="text-[var(--text-muted)] block truncate">
-                                {m.generic_name}
-                              </span>
-                            )}
-                          </span>
-                          {!hasEnrichedContent(m) && (
-                            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 shrink-0">
-                              Limited
-                            </span>
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-3 animate-in fade-in slide-in-from-top-1 duration-150">
-                      <p className="text-xs text-[var(--text-muted)]">
-                        No matches in the index yet — press{' '}
-                        <span className="font-bold text-[var(--text)]">Search</span> to generate a
-                        monograph.
-                      </p>
-                    </div>
-                  )
-                ) : recentSearches.length > 0 ? (
-                  <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150">
-                    <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">
-                      Recent Searches
-                    </div>
-                    {recentSearches.map((term) => (
-                      <button
-                        key={term}
-                        onClick={() => handleQuickDrugClick(term)}
-                        className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
-                      >
-                        <Search size={12} className="text-[var(--text-dim)] shrink-0" />
-                        {term}
-                      </button>
-                    ))}
-                  </div>
-                ) : null)}
-            </div>
-          )}
-
-          {/* ── Quick Search Tags ── */}
-          {!monograph && !selectedCategory && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">
-                Quick Search:
-              </span>
-              {QUICK_DRUGS.map((drug) => (
-                <button
-                  key={drug.name}
-                  onClick={() => handleQuickDrugClick(drug.name)}
-                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
-                >
-                  <Pill size={12} />
-                  {drug.name}
-                </button>
-              ))}
-            </div>
-          )}
-
           {/* ── Hub: 3 KDI module cards ── */}
           {activeTab === null ? (
             <div className="space-y-6 animate-in fade-in duration-200">
@@ -1037,6 +917,14 @@ export default function DrugIndexScreen() {
             </div>
           ) : (
             <>
+              <button
+                onClick={() => setActiveTab(null)}
+                className="self-start flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[var(--text-muted)] hover:text-[var(--primary)] border border-[var(--border)] hover:border-[var(--primary)] rounded-lg transition-colors cursor-pointer"
+              >
+                <ChevronLeft size={14} />
+                All modules
+              </button>
+
               {/* ── Module Tabs Navigation ── */}
               <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
                 {(
@@ -1071,6 +959,127 @@ export default function DrugIndexScreen() {
               {/* ── Tab: Monographs ── */}
               {activeTab === 'monograph' ? (
                 <div className="space-y-6 animate-in fade-in duration-200">
+                  {/* ── Browse Mode: Header + Tabs ── */}
+                  <div className="mb-4">
+                    <h1 className="text-3xl font-bold text-[var(--text)] tracking-tight">
+                      Kenya Drug Index{' '}
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] via-emerald-500 to-purple-500">
+                        (KDI)
+                      </span>
+                    </h1>
+                    <p className="text-sm text-[var(--text-muted)] mt-1">
+                      Browse monographs by therapeutic class or search for a specific drug
+                    </p>
+                  </div>
+
+                  {/* ── Global Search Bar (only when not in a category) ── */}
+                  {!monograph && !selectedCategory && (
+                    <div className="relative" ref={searchRef}>
+                      <form
+                        onSubmit={handleSearchSubmit}
+                        className="flex flex-col sm:flex-row gap-2 sm:gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm w-full"
+                      >
+                        <div className="flex-1 min-w-0 flex items-center gap-3 px-3">
+                          <Search size={20} className="text-[var(--text-dim)] shrink-0" />
+                          <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => {
+                              setSearchQuery(e.target.value)
+                              setShowSearchDropdown(true)
+                            }}
+                            onFocus={() => setShowSearchDropdown(true)}
+                            placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..."
+                            className="flex-1 min-w-0 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
+                          />
+                        </div>
+                        <button
+                          type="submit"
+                          disabled={isLoading}
+                          className="shrink-0 w-full sm:w-auto px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
+                        >
+                          {showLoading ? <InlineLoader size={16} /> : <Search size={16} />}
+                          Search
+                        </button>
+                      </form>
+
+                      {showSearchDropdown &&
+                        (searchQuery.trim().length >= 2 ? (
+                          suggestions.length > 0 ? (
+                            <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150 max-h-80 overflow-y-auto">
+                              <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">
+                                Suggestions
+                              </div>
+                              {suggestions.map((m) => (
+                                <button
+                                  key={m.id}
+                                  onClick={() => handleSuggestionClick(m)}
+                                  className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
+                                >
+                                  <DrugThumb m={m} size="sm" />
+                                  <span className="min-w-0 flex-1">
+                                    <span className="font-semibold block truncate">{m.name}</span>
+                                    {m.generic_name && m.generic_name !== m.name && (
+                                      <span className="text-[var(--text-muted)] block truncate">
+                                        {m.generic_name}
+                                      </span>
+                                    )}
+                                  </span>
+                                  {!hasEnrichedContent(m) && (
+                                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 shrink-0">
+                                      Limited
+                                    </span>
+                                  )}
+                                </button>
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-3 animate-in fade-in slide-in-from-top-1 duration-150">
+                              <p className="text-xs text-[var(--text-muted)]">
+                                No matches in the index yet — press{' '}
+                                <span className="font-bold text-[var(--text)]">Search</span> to
+                                generate a monograph.
+                              </p>
+                            </div>
+                          )
+                        ) : recentSearches.length > 0 ? (
+                          <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150">
+                            <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">
+                              Recent Searches
+                            </div>
+                            {recentSearches.map((term) => (
+                              <button
+                                key={term}
+                                onClick={() => handleQuickDrugClick(term)}
+                                className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
+                              >
+                                <Search size={12} className="text-[var(--text-dim)] shrink-0" />
+                                {term}
+                              </button>
+                            ))}
+                          </div>
+                        ) : null)}
+                    </div>
+                  )}
+
+                  {/* ── Quick Search Tags ── */}
+                  {!monograph && !selectedCategory && (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">
+                        Quick Search:
+                      </span>
+                      {QUICK_DRUGS.map((drug) => (
+                        <button
+                          key={drug.name}
+                          onClick={() => handleQuickDrugClick(drug.name)}
+                          className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
+                        >
+                          <Pill size={12} />
+                          {drug.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                   {searchResults ? (
                     <div className="animate-in fade-in duration-200 space-y-6">
                       <div className="flex items-center gap-3">

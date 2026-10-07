@@ -1,5 +1,9 @@
 ## 2026-10-06
 
+### Added
+
+- **Minimal, unified navigation**: sidebar and bottom nav now render the same 5 items from a single `PRIMARY_NAV` in `src/data/navigationConfig.ts` — Home, Learn, Drugs, Cases, More (they previously showed different, overlapping sets and `/library` had no nav entry at all). New `/more` screen (`MoreScreen.tsx`) lists every secondary destination with a description (Care Plan, Clinova Support, Library, Industry, Settings, admin Image Manager) plus the user card and Sign Out. Top bar trimmed to logo, search, theme, notifications and avatar (the "Clinova Support" pill is gone — it lives in More). Tracked in `UI_TODO.md`; nav docs updated in `.opencode/project-context.md`.
+
 ### Fixed
 
 - **AI/library routes were never registered on Vercel (and local prod): route-ordering bug** — the whole `CLINOVA ACADEMIC ENGINE` block (through oral practice) plus `/api/library/crawl|crawl-many|search` was declared **inside** `startServer()`, which is skipped entirely when `VERCEL=1`. Production deployments therefore never served `/api/gemini/module-tutor|case-tutor|generate-full-case|hub-tutor`, `/api/gemini/oral-practice/*`, `/api/ai/skills`, `/api/ai/orchestrate` or `/api/library/*` — even though the SPA calls `hub-tutor` and all three library routes. These routes are now registered at module level; `startServer()` only wires Vite/static assets, the SPA fallback and `listen`.

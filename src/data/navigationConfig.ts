@@ -1,40 +1,61 @@
 import {
-  BookOpen, FolderOpen, Pill,
-  ClipboardCheck, ClipboardList,
-  Factory, Settings, type LucideIcon,
+  BookOpen,
+  ClipboardCheck,
+  ClipboardList,
+  Factory,
+  FolderOpen,
+  LayoutDashboard,
+  LayoutGrid,
+  Library,
+  Pill,
+  Settings,
+  type LucideIcon,
 } from 'lucide-react'
 
 export type NavItem = {
   to: string
   label: string
   icon: LucideIcon
+  description?: string
 }
 
-export type NavGroup = {
-  id: string
-  label?: string
-  icon: LucideIcon
-  items: NavItem[]
-}
+export const PRIMARY_NAV: NavItem[] = [
+  { to: '/', label: 'Home', icon: LayoutDashboard },
+  { to: '/knowledge', label: 'Learn', icon: BookOpen },
+  { to: '/drugs', label: 'Drugs', icon: Pill },
+  { to: '/cases', label: 'Cases', icon: FolderOpen },
+  { to: '/more', label: 'More', icon: LayoutGrid },
+]
 
-export const NAV_GROUPS: NavGroup[] = [
+export const MORE_NAV: NavItem[] = [
   {
-    id: 'main',
-    icon: BookOpen,
-  items: [
-    { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-    { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-    { to: '/drugs', label: 'Drug Index', icon: Pill },
-    { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
-    { to: '/industry', label: 'Industry', icon: Factory },
-    { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
-  ],
+    to: '/care-plan',
+    label: 'Care Plan',
+    icon: ClipboardCheck,
+    description: 'Ward rounds, prescriptions and patient monitoring',
   },
   {
-    id: 'settings',
+    to: '/assistant',
+    label: 'Clinova Support',
+    icon: ClipboardList,
+    description: 'Ask the AI clinical and pharmacy assistant',
+  },
+  {
+    to: '/library',
+    label: 'Library',
+    icon: Library,
+    description: 'Articles, notes and saved reading',
+  },
+  {
+    to: '/industry',
+    label: 'Industry',
+    icon: Factory,
+    description: 'Pharmaceutical industry knowledge base',
+  },
+  {
+    to: '/settings',
+    label: 'Settings',
     icon: Settings,
-    items: [
-      { to: '/settings', label: 'Settings', icon: Settings },
-    ],
+    description: 'Account, notifications and appearance',
   },
 ]

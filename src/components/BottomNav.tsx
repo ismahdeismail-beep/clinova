@@ -1,12 +1,5 @@
 import { useLocation, Link } from 'react-router-dom'
-import { LayoutDashboard, BookOpen, Pill, ClipboardCheck } from 'lucide-react'
-
-const NAV_ITEMS = [
-  { to: '/', label: 'Home', icon: LayoutDashboard },
-  { to: '/knowledge', label: 'Education', icon: BookOpen },
-  { to: '/drugs', label: 'Drugs', icon: Pill },
-  { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
-]
+import { PRIMARY_NAV } from '../data/navigationConfig'
 
 export default function BottomNav() {
   const location = useLocation()
@@ -22,7 +15,7 @@ export default function BottomNav() {
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-[var(--surface)]/95 backdrop-blur-xl border-t border-[var(--border)] pb-[env(safe-area-inset-bottom,0px)]">
       <div className="flex items-center justify-around h-16">
-        {NAV_ITEMS.map((item) => {
+        {PRIMARY_NAV.map((item) => {
           const active = isActive(item.to)
           const Icon = item.icon
           return (
@@ -42,7 +35,9 @@ export default function BottomNav() {
               >
                 <Icon size={20} strokeWidth={active ? 2.5 : 2} />
               </div>
-              <span className={`text-[10px] font-semibold ${active ? 'text-[var(--primary)]' : ''}`}>
+              <span
+                className={`text-[10px] font-semibold ${active ? 'text-[var(--primary)]' : ''}`}
+              >
                 {item.label}
               </span>
             </Link>

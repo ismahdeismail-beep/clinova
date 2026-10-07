@@ -62,37 +62,39 @@ must update automatically. Load the `derived-counts` skill for the full table.
 - Auth: Supabase Auth + Firebase Auth (dual)
 - User data stored in Firestore + Supabase profiles
 
-## Top Navigation Bar (always visible when authenticated)
+## Navigation (unified, 2026-10-06 — minimal)
 
-- Logo + "CLINOVA" link to home
-- Search bar → navigates to `/knowledge` (Education Hub search)
-- "Clinova Support" quick link → `/assistant`
-- Theme toggle (dark/light)
-- Notification bell (unread count badge, mark all read)
-- User avatar → Settings page
+**One source of truth:** `src/data/navigationConfig.ts` exports `PRIMARY_NAV` (the
+sidebar and bottom nav render this exact list — never diverge them) and `MORE_NAV`
+(the secondary destinations shown on the `/more` screen).
 
-## Bottom Navigation (mobile, always visible)
+| Label | Route        | Icon            |
+| ----- | ------------ | --------------- |
+| Home  | `/`          | LayoutDashboard |
+| Learn | `/knowledge` | BookOpen        |
+| Drugs | `/drugs`     | Pill            |
+| Cases | `/cases`     | FolderOpen      |
+| More  | `/more`      | LayoutGrid      |
 
-| Item      | Route        | Icon            |
-| --------- | ------------ | --------------- |
-| Home      | `/`          | LayoutDashboard |
-| Education | `/knowledge` | BookOpen        |
-| Drugs     | `/drugs`     | Pill            |
-| Care Plan | `/care-plan` | ClipboardCheck  |
+Secondary destinations live on **MoreScreen** (`/more`): Care Plan, Clinova Support,
+Library, Industry, Settings, plus Image Manager when `role === 'admin'` — each with a
+one-line description and sign-out.
 
-_Hidden on `/assistant` route._
+### Top Navigation Bar (authenticated)
 
-## Sidebar Navigation
+- Hamburger (mobile only) → opens the sidebar
+- Logo "CLINOVA" → home
+- Search button → `/knowledge`
+- Theme toggle, notification bell (badge + panel), avatar → Settings
+- No other actions — secondary destinations are on `/more`
 
-| Group    | Label           | Route        | Icon           |
-| -------- | --------------- | ------------ | -------------- |
-| Main     | Education Hub   | `/knowledge` | BookOpen       |
-| Main     | Clinical Cases  | `/cases`     | FolderOpen     |
-| Main     | Drug Index      | `/drugs`     | Pill           |
-| Main     | Care Plan       | `/care-plan` | ClipboardCheck |
-| Main     | Industry        | `/industry`  | Factory        |
-| Main     | Clinova Support | `/assistant` | ClipboardList  |
-| Settings | Settings        | `/settings`  | Settings       |
+### Bottom Navigation (mobile)
+
+`PRIMARY_NAV` (same 5 items as the sidebar). Hidden on `/assistant` (own fixed layout).
+
+### Sidebar (desktop + mobile drawer)
+
+`PRIMARY_NAV` (same 5 items as the bottom nav) + user card + Sign Out footer.
 
 ---
 
@@ -234,6 +236,12 @@ Routes with category/subclass filtering:
 - Export: Copy chat, Download as PDF/TXT/MD
 - Features: Medical term highlighting, dosage badge formatting, RAG-based routing
 - Auto-syncs sessions to Firestore every 30 seconds
+
+### MoreScreen (`/more`)
+
+- Single list of secondary destinations (Care Plan, Clinova Support, Library, Industry, Settings, admin-only Image Manager), each navigating on tap
+- User card with role + Sign Out
+- Entry point for everything that is not in `PRIMARY_NAV`
 
 ### SettingsScreen (`/settings`)
 

@@ -2608,71 +2608,53 @@ app.post('/api/admin/images/reindex', async (_req, res) => {
   }
 });
 
-// Setup Vite Dev Server / Static files for production
-async function startServer() {
-  if (process.env.NODE_ENV !== 'production') {
-    const viteModule = await import('vite');
-    const vite = await viteModule.createServer({
-      server: { middlewareMode: true },
-      appType: 'spa',
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-
-    // ── Library ingestion (Supermemory + Firecrawl) ───────────────────────────
-    app.post('/api/library/crawl', async (req, res) => {
-      if (!isSupermemoryConfigured()) {
-        return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
-      }
-      const source = req.body?.source
-      if (!source || !source.url) {
-        return res.status(400).json({ error: 'source.url is required' })
-      }
-      const result = await crawlSource({
-        id: source.id || source.url,
-        title: source.title || source.url,
-        url: source.url,
-        authors: source.authors,
-        type: source.type,
-        subject: source.subject,
-      })
-      res.json({ ok: !result.skipped, result })
-    })
-
-    app.post('/api/library/crawl-many', async (req, res) => {
-      if (!isSupermemoryConfigured()) {
-        return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
-      }
-      const sources = Array.isArray(req.body?.sources) ? req.body.sources : []
-      if (sources.length === 0) return res.status(400).json({ error: 'sources[] required' })
-      const results = await crawlMany(
-        sources.map((s: any) => ({
-          id: s.id || s.url,
-          title: s.title || s.url,
-          url: s.url,
-          authors: s.authors,
-          type: s.type,
-          subject: s.subject,
-        }))
-      )
-      res.json({ ok: true, results })
-    })
-
-    app.get('/api/library/search', async (req, res) => {
-      const q = req.query.q as string
-      if (!q) return res.status(400).json({ error: 'q required' })
-      const results = await searchLibrary(q, Number(req.query.limit) || 5)
-      res.json({ ok: true, category: LIBRARY_CATEGORY, results })
-    })
-
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
+// ── Library ingestion (Supermemory + Firecrawl) ───────────────────────────
+app.post('/api/library/crawl', async (req, res) => {
+  if (!isSupermemoryConfigured()) {
+    return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
   }
+  const source = req.body?.source
+  if (!source || !source.url) {
+    return res.status(400).json({ error: 'source.url is required' })
+  }
+  const result = await crawlSource({
+    id: source.id || source.url,
+    title: source.title || source.url,
+    url: source.url,
+    authors: source.authors,
+    type: source.type,
+    subject: source.subject,
+  })
+  res.json({ ok: !result.skipped, result })
+})
 
-  
+app.post('/api/library/crawl-many', async (req, res) => {
+  if (!isSupermemoryConfigured()) {
+    return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
+  }
+  const sources = Array.isArray(req.body?.sources) ? req.body.sources : []
+  if (sources.length === 0) return res.status(400).json({ error: 'sources[] required' })
+  const results = await crawlMany(
+    sources.map((s: any) => ({
+      id: s.id || s.url,
+      title: s.title || s.url,
+      url: s.url,
+      authors: s.authors,
+      type: s.type,
+      subject: s.subject,
+    }))
+  )
+  res.json({ ok: true, results })
+})
+
+app.get('/api/library/search', async (req, res) => {
+  const q = req.query.q as string
+  if (!q) return res.status(400).json({ error: 'q required' })
+  const results = await searchLibrary(q, Number(req.query.limit) || 5)
+  res.json({ ok: true, category: LIBRARY_CATEGORY, results })
+})
+
+
 // ==================== CLINOVA ACADEMIC ENGINE ====================
 // Context-Aware Module AI Tutor
 app.post('/api/gemini/module-tutor', async (req, res) => {
@@ -3086,6 +3068,24 @@ Provide:
     res.status(500).json({ error: error.message || 'Failed to evaluate response' });
   }
 });
+
+// Setup Vite Dev Server / Static files for production
+async function startServer() {
+  if (process.env.NODE_ENV !== 'production') {
+    const viteModule = await import('vite');
+    const vite = await viteModule.createServer({
+      server: { middlewareMode: true },
+      appType: 'spa',
+    });
+    app.use(vite.middlewares);
+  } else {
+    const distPath = path.join(process.cwd(), 'dist');
+    app.use(express.static(distPath));
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(distPath, 'index.html'));
+    });
+  }
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Clinova core backend running on port ${PORT}`);  });

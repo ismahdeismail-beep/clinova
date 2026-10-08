@@ -75,3 +75,41 @@ every feature, no duplicated or conflicting entry points.
       WhatsApp API. Add RAG context by prepending the most relevant monograph chunks
       (retrieved from Supabase `knowledge_chunks` by semantic similarity or keyword
       match) to the prompt.
+
+## Standard Treatment Guidelines (STG) & Essential Medicines
+
+- [ ] **Collect latest STG**: Download the most recent WHO Essential Medicines List (or national STG) and convert each entry into a markdown file under `src/data/essentialMedicine/` following the markdown design rules (H1 = medicine name, YAML front‑matter with `category`, `atcCode`, `lastUpdated`).
+- [ ] **Link to existing monographs**: For medicines that already have a monograph in `src/data/drugMonographs/`, add a cross‑reference in the STG markdown (`sourceMonograph: amoxicillin`) so the RAG pipeline can pull both sets of chunks.
+- [ ] **RAG inclusion**: Extend the nightly `ensure-rag.sh` script to also process the `src/data/essentialMedicine/` folder, embedding chunks and storing them in Supabase `knowledge_chunks` with a `source='stg'` tag.
+- [ ] **WhatsApp bot STG lookup**: Update the WhatsApp webhook (`/api/whatsapp/incoming`) to, when a user queries an essential medicine, first retrieve the relevant STG chunks (by tag) and prepend them to the Gemini prompt, ensuring dosage and indication answers are grounded in the latest guidelines.
+- [ ] **Validate markdown**: Run `npm run lint:md` on the new files to confirm they obey the naming, front‑matter, and heading conventions; fix any errors before committing.
+
+## WhatsApp Bot — Feasibility & RAG Enforcement
+
+- [ ] **Feasibility with Gemini keys**: The app already uses Gemini via 7 SPA call sites
+      (`search-drug`, `generate-unit-summary`, `hub-tutor`, `generate-unit-flashcards`,
+      `generate-unit-quiz`, `assistant`, `assistant/stream`) — confirmed in
+      `BACKEND_AUDIT_TODO.md`. A WhatsApp bot can reuse the same Gemini endpoints
+      (relative paths under `/api/gemini/*`) with a WhatsApp webhook that forwards
+      user messages to the same generation logic; no new API keys required beyond
+      existing GEMINI env var. Rate-limit per user via Supabase.
+- [ ] **RAG enforcement script**: Create `scripts/ensure-rag.sh` that runs nightly
+      (via Vercel cron or GitHub Action) and: 1. Fetches newest drug monographs from Supabase (`GET /api/drugs?limit=…`) 2. Chunks each monograph text into semantic sections (using sentence‑split +
+      optional embeddings via Gemini) and writes/chunks to Supabase `knowledge_chunks`
+      table, overwriting stale entries. 3. Validates that every drug in the catalog has at least one chunk; if not,
+      triggers a re‑generate from the bundled `drugIndustryData.ts` or forces a
+      manual review flag in Supabase. 4. Emits a summary report (JSON) to `logs/rag-status-$(date +%Y%m%d).json` and
+      posts it to a designated Slack/Telegram channel (configurable via env).
+      The script should be idempotent and safe to run on every deployment.
+- [ ] **Training cases**: Populate a new Supabase `bot_training_cases` table with
+      representative user queries (symptom descriptions, dosage questions, interaction
+      checks) and expected answers grounded in monograph content. Each case has
+      `query`, `category` (e.g. "dosage", "side-effects", "interaction"), `source_monograph_id`,
+      and `resolved_answer`. A weekly job (script) compares live Gemini responses
+      against these cached answers and surfaces mismatches for review.
+- [ ] **Integration wiring**: WhatsApp webhook (`/api/whatsapp/incoming`) receives
+      incoming messages, extracts text, calls the same Gemini generation function
+      used by the SPA (e.g. `POST /api/gemini/assistant`), returns the reply via
+      WhatsApp API. Add RAG context by prepending the most relevant monograph chunks
+      (retrieved from Supabase `knowledge_chunks` by semantic similarity or keyword
+      match) to the prompt.

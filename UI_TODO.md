@@ -123,3 +123,17 @@ every feature, no duplicated or conflicting entry points.
 - [ ] **Add repetition‑check guard** to CI: fail `npm run lint` if any phrase (outside `uiStrings.ts`) appears more than twice in `src/`.
 - [ ] **Document the staged‑expansion roadmap** in `UI_TODO.md` (Stages 1‑5: core KDI, additional monographs, STG/guidelines, bot training cases, i18n).
 - [ ] **Update Lighthouse CI** to also flag monograph markdown size > 150 KB as a potential performance risk.
+
+## RAG Training – Thousand‑Case Pipeline (2026‑10‑08)
+
+- [ ] **Database schema** – migrations 00017‑00019 created in `supabase/migrations/`. Tables: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log` with proper columns, UUID primary keys, and foreign keys to the bundled drug‑monograph catalogue.
+- [ ] **Chunking & embedding script** – `scripts/ensure-rag.sh` already runs nightly; verify it also populates `knowledge_chunks.embedding` using the Gemini `embedding-001` model and stores metadata (section, line number).
+- [ ] **Case import script** – `scripts/import-cases.sh` reads a CSV (`query,category,source_monograph_id,expected_answer`) and inserts rows into `bot_training_cases` via the Supabase connection string. Run `SUPABASE_CONNECTION_STRING=… ./scripts/import-cases.sh data/clinical-cases-starter.csv`.
+- [ ] **Weekly quality‑loop script** – `scripts/train-rag-weekly.sh` evaluates a batch of approved cases, retrieves top chunks, calls Gemini (`temperature=0`) to generate an answer, compares to `expected_answer` (substring check), and marks the case as reviewed. Currently limited to 50 cases per run; increase `LIMIT` as needed.
+- [ ] **Prompt template** – stored in `src/prompts/rag-prompt.md` (or inline) with the format “Answer using ONLY the following excerpts:\n<chunks>\n... \n</chunks>\nQuestion: …”. The backend should substitute the retrieved chunk text.
+- [ ] **CI guard** – `npm run lint:check-phrases` now runs `scripts/check-phrases-simple.sh` which ensures no key phrase (e.g., “Kenya Drug Index”, “Source:”) appears outside `src/data/uiStrings.ts` beyond a configurable limit (default 200, lowerable as consolidation progresses).
+- [ ] **Monitoring dashboard** – add a simple Supabase view or external tool that displays: total cases, % approved, pass‑rate, top failure categories. Update weekly after the quality‑loop runs.
+- [ ] **Rollback plan** – each nightly `ensure-rag.sh` run tags the chunk data with a `run_id` (timestamp or git SHA). If the pass‑rate drops > 5 % after a new batch, revert the `knowledge_chunks` and `bot_training_cases` to the previous `run_id`.
+- [ ] **Pilot batch** – import a starter set of 200 clinical case Q&As (provided in `data/clinical-cases-starter.csv`). After import, run `scripts/train-rag-weekly.sh --dry-run` to see the pass‑rate, then approve the cases that pass and iterate.
+
+(End of file)

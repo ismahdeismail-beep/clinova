@@ -113,3 +113,13 @@ every feature, no duplicated or conflicting entry points.
       WhatsApp API. Add RAG context by prepending the most relevant monograph chunks
       (retrieved from Supabase `knowledge_chunks` by semantic similarity or keyword
       match) to the prompt.
+
+## Content‑Audit & Staged Expansion (2026‑10‑07)
+
+- [ ] **Run content‑audit script** (`scripts/audit-text.sh`) and record all UI strings & monograph markdown.
+- [ ] **Consolidate repeated phrases** into `src/data/uiStrings.ts` (target: ≤ 3 occurrences per phrase across `src/`).
+- [ ] **Create monograph template** (`src/data/monographTemplate.md`) and migration script (`scripts/generate-md.sh`).
+- [ ] **Stage 2**: Add first batch of 20 new drug monographs using `generate-md.sh`; verify no duplicate headings via `uniq -c`.
+- [ ] **Add repetition‑check guard** to CI: fail `npm run lint` if any phrase (outside `uiStrings.ts`) appears more than twice in `src/`.
+- [ ] **Document the staged‑expansion roadmap** in `UI_TODO.md` (Stages 1‑5: core KDI, additional monographs, STG/guidelines, bot training cases, i18n).
+- [ ] **Update Lighthouse CI** to also flag monograph markdown size > 150 KB as a potential performance risk.

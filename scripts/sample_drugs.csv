@@ -1,0 +1,3 @@
+DRUG_NAME,GENERIC_NAME,DRUG_CLASS,MECHANISM,DOSAGE,SIDE_EFFECTS,INTERACTIONS,MONITORING,STORAGE
+Amoxicillin,Amoxicillin,Penicillin,"Bacterial cell wall synthesis","250 mg every 8 hours","Nausea, diarrhea","Avoid with mononucleosis","Renal function","Store at room temperature"
+Ceftriaxone,Ceftriaxone,Third-generation cephalosporin,"Inhibits bacterial cell wall synthesis","1–2 g IV/IM daily","Gallstone disease risk","Avoid with calcium-containing solutions","Refrigerate protected from light"

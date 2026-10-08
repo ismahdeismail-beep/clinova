@@ -314,6 +314,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (v: boolea
 }
 
 function AppContent() {
+  useRenderName('AppContent')
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false)
   const { userData, loading } = useAuth()
 

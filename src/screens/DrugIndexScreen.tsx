@@ -272,6 +272,8 @@ export default function DrugIndexScreen() {
   // Navigation State — null = hub view, otherwise a module
   const [activeTab, setActiveTab] = useState<'monograph' | 'library' | 'checker' | null>(null)
 
+  const setActiveTabMonograph = useCallback(() => setActiveTab('monograph'), [])
+
   // Monograph Browser State
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
@@ -844,8 +846,8 @@ export default function DrugIndexScreen() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
                 {/* Monographs module */}
                 <button
-                  onClick={() => setActiveTab('monograph')}
-                  className="text-left bg-gradient-to-br from-sky-500/10 to-indigo-500/10 border border-[var(--border)] rounded-2xl p-6 cursor-pointer transition-all group hover:border-sky-400/50 hover:shadow-lg hover:-translate-y-0.5"
+                  onClick={setActiveTabMonograph}
+                  className="text-left bg-gradient-to-br from-sky-500/10 to-indigo-500/10 border border-[var(--border)] rounded-2xl p-6 cursor-pointer transition-all group:hover:border-sky-400/50 group:hover:shadow-lg group:hover:-translate-y-0.5"
                 >
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center shadow-sm mb-4">
                     <BookOpen size={22} className="text-white" />

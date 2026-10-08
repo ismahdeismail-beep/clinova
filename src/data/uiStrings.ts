@@ -1,4 +1,6 @@
 export const KDI_TITLE = 'Kenya Drug Index'
+export const PHRASE_KDI = 'Kenya Drug Index'
+export const PHRASE_SOURCE = 'Source:'
 export const KDI_SUBTITLE =
   'Your complete pharmaceutical reference — browse monographs, check interactions, and keep your saved drugs in one place'
 export const BTN_ALL_MODULES = 'All modules'

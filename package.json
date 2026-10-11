@@ -21,7 +21,9 @@
     "db:seed": "tsx scripts/seedExistingDb.ts",
     "db:seed:notes": "tsx scripts/seedDiseaseNotes.ts",
     "db:validate": "tsx scripts/validateDb.ts",
-    "lint:check-phrases": "bash scripts/check-phrases-simple.sh"
+    "lint:check-phrases": "bash scripts/check-phrases-simple.sh",
+    "rag:ingest": "bash scripts/ensure-rag.sh",
+    "rag:dry": "bash scripts/ensure-rag.sh --dry-run"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

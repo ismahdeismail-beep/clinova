@@ -136,12 +136,13 @@ every feature, no duplicated or conflicting entry points.
 - [x] **Database schema** – migrations 00017‑00020 applied + recorded on production: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log`.
 - [x] **Chunk model hardening** – `00020` adds `chunk_index`/`embedding_model`/`run_id` to `knowledge_chunks` (+ unique `(monograph_id, chunk_index)` for idempotent upserts) and enables deny-by-default RLS on all three bot tables (`00018`'s GIN index bug also fixed).
 - [x] **Monitoring** – `rag_pipeline_status` view exposes training_cases, approved/reviewed counts, chunk count, covered vs total monographs and the latest `run_id`.
-- [x] **Chunking engine** – `scripts/ensure-rag.ts`: sectioned chunks from `drug_monographs`, embedded via `aiRouter.embedText` (Gemini `text-embedding-004`, 768‑dim), upserted with a per-run `run_id`; `--dry-run/--limit/--batch` and a JSON report to `logs/rag-status-YYYYMMDD.json`.
+- [x] **Chunking engine** – `scripts/ensure-rag.ts`: sectioned chunks from `drug_monographs`, embedded via `aiRouter.embedText` (now `gemini-embedding-2` @ 768‑dim — `text-embedding-004` is gone for new keys), upserted with a per-run `run_id`; `--dry-run/--limit/--batch` + JSON report. **Validated live 2026‑10‑11**: 3 monographs → 24 chunks, 768‑dim vectors in `knowledge_chunks`.
 - [x] **Visual schema tool** – `scripts/build-db-explorer.mjs` → `docs/db-explorer.html` (searchable tables/columns + Mermaid ER diagram).
 
 **Open**
 
-- [ ] **Wire up `ensure-rag` end‑to‑end** – add the `scripts/ensure-rag.sh` wrapper (+ npm script), set `GEMINI_API_KEY`, then run a real pass so every monograph has ≥ 1 embedded chunk. (Engine uses `text-embedding-004`, not `embedding-001`.)
+- [x] **`ensure-rag` plumbing** – `scripts/ensure-rag.sh` wrapper + npm scripts (`rag:ingest`, `rag:dry`); `GEMINI_API_KEY` set in `.env` (gitignored) and verified against the live API. Also fixed a **latent chunking bug**: the empty-section filter `/:?\s*$/` always matched (optional colon), silently dropping _every_ section — now `/:\s*$/`.
+- [ ] **Full ingest** – run the remaining ~1069 monographs (est. ~8k embed calls, 15–25 min) so `knowledge_chunks` covers 100% of `drug_monographs` and `rag_pipeline_status` shows full coverage.
 - [ ] **Prompt template** – create `src/prompts/rag-prompt.md` (`Answer using ONLY the following excerpts:\n<chunks>\n…\n</chunks>\nQuestion: …`).
 - [ ] **Starter cases** – create `data/clinical-cases-starter.csv` (grounded in `scripts/compactDrugs.json` monograph fields) and import it.
 - [ ] **Harden case import** – `scripts/import-cases.sh` parses CSV with `IFS=','` (breaks on quoted commas) and interpolates rows into a `psql` heredoc (SQL‑injection + fragile `ON CONFLICT (lower(query))`). Rewrite against the service‑role REST client.

@@ -8,7 +8,7 @@
  * - Idempotent: every run gets a `run_id` (UTC timestamp) and upserts on
  *   (monograph_id, chunk_index). Re-running only rewrites the same rows.
  * - Real embeddings: reuses `embedText` from src/server/aiRouter.ts
- *   (Gemini text-embedding-004, 768-dim) so the pipeline matches the rest
+ *   (Gemini gemini-embedding-2, 768-dim) so the pipeline matches the rest
  *   of the backend.
  * - Zero external CLIs: no psql/jq required (unlike the old bash sketch).
  * - Emits a JSON report to logs/rag-status-YYYYMMDD.json and a console
@@ -108,7 +108,7 @@ export function buildChunks(row: Monograph): Chunk[] {
       text: `Patient counselling for ${row.name}: ${row.patient_counselling ?? ''}`,
     },
   ]
-  return sections.filter((c) => !/:?\s*$/.test(c.text) && c.text.trim().length > heading.length + 2)
+  return sections.filter((c) => !/:\s*$/.test(c.text) && c.text.trim().length > heading.length + 2)
 }
 
 function todayStamp(d = new Date()): string {
@@ -181,7 +181,7 @@ async function main() {
             chunk_index: idx,
             chunk_text: chunk.text,
             embedding: null,
-            embedding_model: 'text-embedding-004',
+            embedding_model: 'gemini-embedding-2',
             run_id: runId,
             metadata: { section: chunk.section, source: 'monograph' },
           })
@@ -193,7 +193,7 @@ async function main() {
           chunk_index: idx,
           chunk_text: chunk.text,
           embedding,
-          embedding_model: 'text-embedding-004',
+          embedding_model: 'gemini-embedding-2',
           run_id: runId,
           metadata: { section: chunk.section, source: 'monograph' },
         })

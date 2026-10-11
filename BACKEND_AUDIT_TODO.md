@@ -1,9 +1,10 @@
 # Backend Infrastructure Synchronization & Production Readiness — TODO
 
-> **Status (2026-10-06):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
+> **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env).
+> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env),
+> **Phase 15 (CI/CD "Supabase Preview" is red on every commit — migration-history drift).**
 
 ## Definition of Done
 
@@ -96,3 +97,62 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 ### Final Validation Report ✅
 
 - [x] `BACKEND_AUDIT_REPORT.md` summarizes components, issues, repairs, sync, security, perf, DB, verification, recommendations
+
+---
+
+### Phase 15 — CI/CD & Deploy Health ⚠️ INVESTIGATED 2026-10-11
+
+**Finding: every commit looks "failed" because of one persistent red check — `Supabase Preview`.**
+All 13 commits below are pushed and present on `origin/main` (`git ls-remote origin main` = `1f8e193`); the
+GitHub → Vercel deploy path is fine. The red X is the Supabase GitHub App check, failing identically on
+**every** commit:
+
+```
+Supabase Preview  (failure)  ·  app=supabase  ·  project bveztrtykjburdhewcdy
+Remote migration versions not found in local migrations directory.
+```
+
+| Commit  | Lint & Tests                                            | Build | E2E | Supabase Preview                  |
+| ------- | ------------------------------------------------------- | ----- | --- | --------------------------------- |
+| 1f8e193 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| e425433 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 507209b | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 44848ee | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 5a2bc7a | ❌ (`src/App.tsx:317 Cannot find name 'useRenderName'`) | ✅    | ❌  | ❌ remote-only migration versions |
+| 736f337 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| aebe55b | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| ccec10d | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| f838c13 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 6a382a7 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| bb650ed | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 9b41af8 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+| 47942b5 | ✅                                                      | ✅    | ✅  | ❌ remote-only migration versions |
+
+- [x] **Diagnosed the persistent check**: `Supabase Preview` (app slug `supabase`) has failed on every commit
+      since at least `47942b5` (2026-10-07) → it is a **standing migration-history drift**, not caused by any
+      single commit. The remote project's `supabase_migrations.schema_migrations` holds versions with **no
+      matching file** in `supabase/migrations/`.
+- [x] **`5a2bc7a` CI failure is historical & already fixed**: Lint & Unit Tests failed with
+      `src/App.tsx:317 Cannot find name 'useRenderName'`, fixed by the very next commit `44848ee`
+      ("Fix: import useRenderName hook correctly"). Every later commit passes. No action needed.
+- [ ] **Confirm the drift** (needs a Supabase access token — none is present on this machine; no `supabase`
+      CLI installed, no `supabase/.temp` link):
+      `supabase link --project-ref bveztrtykjburdhewcdy && supabase migration list --linked`
+      → the `Remote`-only rows are the versions to reconcile.
+- [ ] **Suspect #1 — duplicate local version 12**: `supabase/migrations/00012_drug_images.sql` and
+      `supabase/migrations/000012_disease_notes.sql` both resolve to migration version **12** (mixed 5-digit
+      vs 6-digit prefixes). Renumber one of them (e.g. `00012_drug_images.sql` → `000021_drug_images.sql`)
+      so every migration has a unique, correctly-padded version.
+- [ ] **Suspect #2 — local gaps**: versions `000007`, `000009`, `000011` are absent locally but may exist on
+      remote (applied out-of-band via `scripts/applyMigrationApi.ts` / `scripts/db.mjs`, which run raw SQL and
+      do **not** record versions). Recreate matching files, or retire them on remote with
+      `supabase migration repair <version> --status reverted --linked`.
+- [ ] **Apply the RAG schema**: once reconciled, `supabase db push --linked` must apply `00017`–`00020`
+      (bot_training_cases / knowledge_chunks / bot_conversation_log / RAG hardening). **These tables are
+      therefore not yet verified present on Supabase**, which currently blocks the RAG pipeline end-to-end.
+- [ ] **Guard against recurrence**: apply migrations through the CLI/CI (never raw SQL), and add a
+      `supabase migration list --linked` check to CI so a red/mismatched history fails fast with a clear
+      message instead of a mystery "Preview" failure.
+- [ ] **Consequence for Vercel**: `Supabase Preview` is a PR/preview-branch check, not the production deploy —
+      production is unaffected, but the noisy red X makes real regressions invisible. Consider making the
+      Supabase integration preview-only or fixing the history so the check goes green.

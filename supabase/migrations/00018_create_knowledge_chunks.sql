@@ -17,4 +17,4 @@ create table if not exists public.knowledge_chunks (
 -- (if pgvector is installed, you would create a ivfflat index here;
 --  otherwise the application can compute distance in SQL using the jsonb arrays.)
 create index if not exists idx_knowledge_chunks_monograph on public.knowledge_chunks(monograph_id);
-create index if not exists idx_knowledge_chunks_metadata on public.knowledge_chunks using gist (metadata jsonb_path_ops);
+create index if not exists idx_knowledge_chunks_metadata on public.knowledge_chunks using gin (metadata jsonb_path_ops);

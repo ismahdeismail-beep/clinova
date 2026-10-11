@@ -147,13 +147,13 @@ Remote migration versions not found in local migrations directory.
       (`clinical_pearls`→`text[]`, `pharmacokinetics`→`text`, `push_subscriptions`, `notifications`) but the
       versions were never in history (non-idempotent, so they must NOT be re-run); - applied **and** recorded `000016` (industry) + `00017`–`00020` (RAG) against production.
 - [x] **Found and fixed a second migration bug**: `00018` metadata index used `using gist (metadata
-  jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration failed with
+jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration failed with
       `operator class "jsonb_path_ops" does not exist for access method "gist"`. Changed to `using gin`.
 - [x] **Verified in the live DB**: `bot_training_cases`, `knowledge_chunks` (with `chunk_index`/`embedding_model`/
       `run_id`), `bot_conversation_log` all exist; RLS enabled on all three; `rag_pipeline_status` view present;
       industry tables (`pharmaceutical_topics`, `industry_knowledge_entries`, `drug_industry_connections`,
       `industry_terms`, `kenyan_manufacturers`) present.
-- [ ] **Verify `Supabase Preview` goes green** on the next push (history now matches, so it should pass).
+- [x] **Verified `Supabase Preview` is green** on push `4445d6e` — all 4 checks pass (`Supabase Preview`, Lint & Unit Tests, E2E, Production Build); both Vercel projects (`clinova`, `clinova-main`) deployed it, live `/api/ready` → `{status:ready, supabase:true}`.
 - [ ] **Guard against recurrence**: apply migrations through the CLI/CI (never raw SQL), and add a
       `supabase migration list --linked` check to CI so a mismatch fails fast with a clear message instead of a
       mystery "Preview" failure.

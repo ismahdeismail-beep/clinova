@@ -131,14 +131,22 @@ every feature, no duplicated or conflicting entry points.
 > were fixed en route: `00017`'s invalid `UNIQUE (lower(query))` table constraint (→ expression index) and
 > `00018`'s `using gist (metadata jsonb_path_ops)` (→ `using gin`; `jsonb_path_ops` is a GIN opclass).
 
-- [x] **Database schema** – migrations 00017‑00020 in `supabase/migrations/` are applied on production. Tables: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log`; `00020` adds `chunk_index`/`embedding_model`/`run_id` to `knowledge_chunks`, enables deny-by-default RLS on all three bot tables, and creates the `rag_pipeline_status` monitoring view (the monitoring dashboard requirement).
-- [ ] **Chunking & embedding script** – `scripts/ensure-rag.sh` already runs nightly; verify it also populates `knowledge_chunks.embedding` using the Gemini `embedding-001` model and stores metadata (section, line number).
-- [ ] **Case import script** – `scripts/import-cases.sh` reads a CSV (`query,category,source_monograph_id,expected_answer`) and inserts rows into `bot_training_cases` via the Supabase connection string. Run `SUPABASE_CONNECTION_STRING=… ./scripts/import-cases.sh data/clinical-cases-starter.csv`.
-- [ ] **Weekly quality‑loop script** – `scripts/train-rag-weekly.sh` evaluates a batch of approved cases, retrieves top chunks, calls Gemini (`temperature=0`) to generate an answer, compares to `expected_answer` (substring check), and marks the case as reviewed. Currently limited to 50 cases per run; increase `LIMIT` as needed.
-- [ ] **Prompt template** – stored in `src/prompts/rag-prompt.md` (or inline) with the format “Answer using ONLY the following excerpts:\n<chunks>\n... \n</chunks>\nQuestion: …”. The backend should substitute the retrieved chunk text.
-- [ ] **CI guard** – `npm run lint:check-phrases` now runs `scripts/check-phrases-simple.sh` which ensures no key phrase (e.g., “Kenya Drug Index”, “Source:”) appears outside `src/data/uiStrings.ts` beyond a configurable limit (default 200, lowerable as consolidation progresses).
-- [ ] **Monitoring dashboard** – add a simple Supabase view or external tool that displays: total cases, % approved, pass‑rate, top failure categories. Update weekly after the quality‑loop runs.
-- [ ] **Rollback plan** – each nightly `ensure-rag.sh` run tags the chunk data with a `run_id` (timestamp or git SHA). If the pass‑rate drops > 5 % after a new batch, revert the `knowledge_chunks` and `bot_training_cases` to the previous `run_id`.
-- [ ] **Pilot batch** – import a starter set of 200 clinical case Q&As (provided in `data/clinical-cases-starter.csv`). After import, run `scripts/train-rag-weekly.sh --dry-run` to see the pass‑rate, then approve the cases that pass and iterate.
+**Done (2026‑10‑11)**
+
+- [x] **Database schema** – migrations 00017‑00020 applied + recorded on production: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log`.
+- [x] **Chunk model hardening** – `00020` adds `chunk_index`/`embedding_model`/`run_id` to `knowledge_chunks` (+ unique `(monograph_id, chunk_index)` for idempotent upserts) and enables deny-by-default RLS on all three bot tables (`00018`'s GIN index bug also fixed).
+- [x] **Monitoring** – `rag_pipeline_status` view exposes training_cases, approved/reviewed counts, chunk count, covered vs total monographs and the latest `run_id`.
+- [x] **Chunking engine** – `scripts/ensure-rag.ts`: sectioned chunks from `drug_monographs`, embedded via `aiRouter.embedText` (Gemini `text-embedding-004`, 768‑dim), upserted with a per-run `run_id`; `--dry-run/--limit/--batch` and a JSON report to `logs/rag-status-YYYYMMDD.json`.
+- [x] **Visual schema tool** – `scripts/build-db-explorer.mjs` → `docs/db-explorer.html` (searchable tables/columns + Mermaid ER diagram).
+
+**Open**
+
+- [ ] **Wire up `ensure-rag` end‑to‑end** – add the `scripts/ensure-rag.sh` wrapper (+ npm script), set `GEMINI_API_KEY`, then run a real pass so every monograph has ≥ 1 embedded chunk. (Engine uses `text-embedding-004`, not `embedding-001`.)
+- [ ] **Prompt template** – create `src/prompts/rag-prompt.md` (`Answer using ONLY the following excerpts:\n<chunks>\n…\n</chunks>\nQuestion: …`).
+- [ ] **Starter cases** – create `data/clinical-cases-starter.csv` (grounded in `scripts/compactDrugs.json` monograph fields) and import it.
+- [ ] **Harden case import** – `scripts/import-cases.sh` parses CSV with `IFS=','` (breaks on quoted commas) and interpolates rows into a `psql` heredoc (SQL‑injection + fragile `ON CONFLICT (lower(query))`). Rewrite against the service‑role REST client.
+- [ ] **Semantic retrieval in the weekly loop** – `scripts/train-rag-weekly.sh` still fetches 3 arbitrary chunks and depends on `jq` (not installed) + stale model names; make retrieval a cosine search over `knowledge_chunks.embedding` and drop `jq`.
+- [ ] **Rollback procedure** – document/script the "revert `knowledge_chunks` + `bot_training_cases` to the previous `run_id`" step (tagging itself is done).
+- [ ] **CI guard** – `npm run lint:check-phrases` (phrase‑consolidation ratchet, `scripts/check-phrases-simple.sh`).
 
 (End of file)

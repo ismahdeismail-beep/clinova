@@ -4,7 +4,7 @@
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
 > **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env),
-> **Phase 15 (CI/CD "Supabase Preview" is red on every commit — migration-history drift).**
+> **Phase 15 (CI/CD) resolved 2026-10-11 — Supabase migration history reconciled and the RAG schema applied.**
 
 ## Definition of Done
 
@@ -100,7 +100,7 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 
 ---
 
-### Phase 15 — CI/CD & Deploy Health ⚠️ INVESTIGATED 2026-10-11
+### Phase 15 — CI/CD & Deploy Health ✅ RESOLVED 2026-10-11
 
 **Finding: every commit looks "failed" because of one persistent red check — `Supabase Preview`.**
 All 13 commits below are pushed and present on `origin/main` (`git ls-remote origin main` = `1f8e193`); the
@@ -135,24 +135,27 @@ Remote migration versions not found in local migrations directory.
 - [x] **`5a2bc7a` CI failure is historical & already fixed**: Lint & Unit Tests failed with
       `src/App.tsx:317 Cannot find name 'useRenderName'`, fixed by the very next commit `44848ee`
       ("Fix: import useRenderName hook correctly"). Every later commit passes. No action needed.
-- [ ] **Confirm the drift** (needs a Supabase access token — none is present on this machine; no `supabase`
-      CLI installed, no `supabase/.temp` link):
-      `supabase link --project-ref bveztrtykjburdhewcdy && supabase migration list --linked`
-      → the `Remote`-only rows are the versions to reconcile.
-- [ ] **Suspect #1 — duplicate local version 12**: `supabase/migrations/00012_drug_images.sql` and
-      `supabase/migrations/000012_disease_notes.sql` both resolve to migration version **12** (mixed 5-digit
-      vs 6-digit prefixes). Renumber one of them (e.g. `00012_drug_images.sql` → `000021_drug_images.sql`)
-      so every migration has a unique, correctly-padded version.
-- [ ] **Suspect #2 — local gaps**: versions `000007`, `000009`, `000011` are absent locally but may exist on
-      remote (applied out-of-band via `scripts/applyMigrationApi.ts` / `scripts/db.mjs`, which run raw SQL and
-      do **not** record versions). Recreate matching files, or retire them on remote with
-      `supabase migration repair <version> --status reverted --linked`.
-- [ ] **Apply the RAG schema**: once reconciled, `supabase db push --linked` must apply `00017`–`00020`
-      (bot_training_cases / knowledge_chunks / bot_conversation_log / RAG hardening). **These tables are
-      therefore not yet verified present on Supabase**, which currently blocks the RAG pipeline end-to-end.
+- [x] **Confirmed the drift (via the Management API — no CLI/DB password needed)**: dumped
+      `supabase_migrations.schema_migrations`; the remote project held **4 versions with no local file**:
+      `20261005075151 cleanup_wrong_moa_backup_and_null_20261005`,
+      `20261005075403 knowledge_references_freshness_tracking`,
+      `20261005080227 add_content_status_to_drug_monographs`,
+      `20261009070821 create_drug_monographs_safe_view` (applied via dashboard/Management API on 2026-10-05/09).
+- [x] **Correction to two earlier hypotheses**: - the mixed `000012` / `00012` prefixes are **not** a version collision — the CLI uses the literal filename
+      prefix as the version, and the remote records both as distinct strings (so both are valid); - the local gaps `000007/000009/000011` are genuinely unused numbers — remote does not hold them.
+- [x] **Reconciled local ↔ remote (now 22 versions each, exact set match)**: - added local files for the 4 remote-only versions (SQL reconstructed from the remote `statements`); - recorded `000013`/`000014`/`000015` as applied — their DB effects already existed
+      (`clinical_pearls`→`text[]`, `pharmacokinetics`→`text`, `push_subscriptions`, `notifications`) but the
+      versions were never in history (non-idempotent, so they must NOT be re-run); - applied **and** recorded `000016` (industry) + `00017`–`00020` (RAG) against production.
+- [x] **Found and fixed a second migration bug**: `00018` metadata index used `using gist (metadata
+  jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration failed with
+      `operator class "jsonb_path_ops" does not exist for access method "gist"`. Changed to `using gin`.
+- [x] **Verified in the live DB**: `bot_training_cases`, `knowledge_chunks` (with `chunk_index`/`embedding_model`/
+      `run_id`), `bot_conversation_log` all exist; RLS enabled on all three; `rag_pipeline_status` view present;
+      industry tables (`pharmaceutical_topics`, `industry_knowledge_entries`, `drug_industry_connections`,
+      `industry_terms`, `kenyan_manufacturers`) present.
+- [ ] **Verify `Supabase Preview` goes green** on the next push (history now matches, so it should pass).
 - [ ] **Guard against recurrence**: apply migrations through the CLI/CI (never raw SQL), and add a
-      `supabase migration list --linked` check to CI so a red/mismatched history fails fast with a clear
-      message instead of a mystery "Preview" failure.
-- [ ] **Consequence for Vercel**: `Supabase Preview` is a PR/preview-branch check, not the production deploy —
-      production is unaffected, but the noisy red X makes real regressions invisible. Consider making the
-      Supabase integration preview-only or fixing the history so the check goes green.
+      `supabase migration list --linked` check to CI so a mismatch fails fast with a clear message instead of a
+      mystery "Preview" failure.
+- [x] **Tooling**: `scripts/build-db-explorer.mjs` → `docs/db-explorer.html` (searchable table/column browser +
+      Mermaid ER diagram) for visual DB inspection without the dashboard.

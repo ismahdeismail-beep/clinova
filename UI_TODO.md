@@ -126,13 +126,12 @@ every feature, no duplicated or conflicting entry points.
 
 ## RAG Training – Thousand‑Case Pipeline (2026‑10‑08)
 
-> ⚠️ **BLOCKED (2026‑10‑11):** the Supabase migrations in this section are **not yet applied** — the
-> `Supabase Preview` GitHub check fails on every commit with _"Remote migration versions not found in local
-> migrations directory"_ (migration-history drift). Fix that first: see `BACKEND_AUDIT_TODO.md` → **Phase 15**.
-> Note also that `00017` originally contained an invalid `UNIQUE (lower(query))` **table constraint**
-> (PostgreSQL rejects expressions in table constraints); it has been replaced with a proper expression index.
+> ✅ **UNBLOCKED (2026‑10‑11):** the Supabase migration history was reconciled and migrations `00017`–`00020`
+> are now **applied + recorded on production** (see `BACKEND_AUDIT_TODO.md` → **Phase 15**). Two migration bugs
+> were fixed en route: `00017`'s invalid `UNIQUE (lower(query))` table constraint (→ expression index) and
+> `00018`'s `using gist (metadata jsonb_path_ops)` (→ `using gin`; `jsonb_path_ops` is a GIN opclass).
 
-- [ ] **Database schema** – migrations 00017‑00020 in `supabase/migrations/`. Tables: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log`; `00020` adds `chunk_index`/`embedding_model`/`run_id` to `knowledge_chunks`, enables deny-by-default RLS on all three bot tables, and creates the `rag_pipeline_status` monitoring view.
+- [x] **Database schema** – migrations 00017‑00020 in `supabase/migrations/` are applied on production. Tables: `bot_training_cases`, `knowledge_chunks`, `bot_conversation_log`; `00020` adds `chunk_index`/`embedding_model`/`run_id` to `knowledge_chunks`, enables deny-by-default RLS on all three bot tables, and creates the `rag_pipeline_status` monitoring view (the monitoring dashboard requirement).
 - [ ] **Chunking & embedding script** – `scripts/ensure-rag.sh` already runs nightly; verify it also populates `knowledge_chunks.embedding` using the Gemini `embedding-001` model and stores metadata (section, line number).
 - [ ] **Case import script** – `scripts/import-cases.sh` reads a CSV (`query,category,source_monograph_id,expected_answer`) and inserts rows into `bot_training_cases` via the Supabase connection string. Run `SUPABASE_CONNECTION_STRING=… ./scripts/import-cases.sh data/clinical-cases-starter.csv`.
 - [ ] **Weekly quality‑loop script** – `scripts/train-rag-weekly.sh` evaluates a batch of approved cases, retrieves top chunks, calls Gemini (`temperature=0`) to generate an answer, compares to `expected_answer` (substring check), and marks the case as reviewed. Currently limited to 50 cases per run; increase `LIMIT` as needed.

@@ -12,10 +12,15 @@ create table if not exists public.bot_training_cases (
     expected_answer text not null,
     status text not null default 'pending' check (status in ('pending','approved','deprecated')),
     reviewed_at timestamp with time zone,
-    created_at timestamp with time zone not null default now(),
-
-    constraint uq_lower_query unique (lower(query))
+    created_at timestamp with time zone not null default now()
 );
+
+-- Case-insensitive uniqueness on `query`. NOTE: PostgreSQL does not allow
+-- expressions inside table-level UNIQUE constraints, so this must be a
+-- standalone expression index. It also backs the `ON CONFLICT (lower(query))`
+-- target used by the case-import pipeline.
+create unique index if not exists uq_bot_training_cases_lower_query
+  on public.bot_training_cases (lower(query));
 
 -- Helper indexes
 create index if not exists idx_bot_training_cases_category on public.bot_training_cases(category);

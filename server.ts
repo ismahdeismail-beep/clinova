@@ -490,18 +490,36 @@ app.post('/api/notifications/welcome', async (req, res) => {
 
 // ----- Push Notifications (Phase 4: daily sender) -----
 // Triggered by Vercel Cron (vercel.json → /api/push/daily, schedule "0 5 * * *"
-// = 08:00 EAT). Vercel Cron doesn't support custom headers in vercel.json, so the
-// secret is passed as a query parameter (?secret=...) in the cron path. Computes
-// the Drug of the Day server-side (same day-of-year index the client used to use),
-// writes one feed row per user (deduped per day), pushes to every valid
-// subscription, and prunes dead ones.
-const PUSH_CRON_SECRET = process.env.PUSH_CRON_SECRET || '';
+// = 08:00 EAT). Vercel Cron cannot send custom headers and vercel.json paths
+// cannot interpolate env vars, so the secret previously lived hardcoded in the
+// cron path (and in git history). Now vercel.json carries no secret: the cron
+// is authenticated by Vercel's documented `User-Agent: Vercel-Cron` marker, and
+// any non-cron caller must present a secret matching `PUSH_CRON_SECRET` (query
+// or Bearer), compared in constant time. Residual risk: the Vercel-Cron UA is
+// spoofable, but the endpoint is idempotent per user/day (dedupe_key below), so
+// abuse can only re-trigger the scheduled daily push. Computes the Drug of the
+// Day server-side (same day-of-year index the client used to use), writes one
+// feed row per user (deduped per day), pushes to every valid subscription, and
+// prunes dead ones.
+const PUSH_CRON_SECRET = process.env.PUSH_CRON_SECRET || ''
+
+function secretMatches(provided: string, expected: string): boolean {
+  if (!provided || !expected) return false
+  const a = Buffer.from(provided)
+  const b = Buffer.from(expected)
+  if (a.length !== b.length) return false
+  let diff = 0
+  for (let i = 0; i < a.length; i++) diff |= a[i] ^ b[i]
+  return diff === 0
+}
 
 app.post('/api/push/daily', async (req, res) => {
   try {
-    const secret = (req.query?.secret as string) || bearerToken(req);
-    if (!PUSH_CRON_SECRET || secret !== PUSH_CRON_SECRET) {
-      return res.status(401).json({ error: 'Unauthorized' });
+    const ua = String(req.headers['user-agent'] || '').toLowerCase()
+    const isVercelCron = ua.includes('vercel-cron')
+    const secret = (req.query?.secret as string) || bearerToken(req)
+    if (!isVercelCron && !secretMatches(secret, PUSH_CRON_SECRET)) {
+      return res.status(401).json({ error: 'Unauthorized' })
     }
 
     if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });

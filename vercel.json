@@ -19,7 +19,7 @@
   ],
   "crons": [
     {
-      "path": "/api/push/daily?secret=2ZTRWKCJP3VApdwkYt0HziGNoQnEjBab",
+      "path": "/api/push/daily",
       "schedule": "0 5 * * *"
     }
   ]

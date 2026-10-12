@@ -7,17 +7,21 @@
  * ------------
  * - Idempotent: every run gets a `run_id` (UTC timestamp) and upserts on
  *   (monograph_id, chunk_index). Re-running only rewrites the same rows.
- * - Real embeddings: reuses `embedText` from src/server/aiRouter.ts
- *   (Gemini gemini-embedding-2, 768-dim) so the pipeline matches the rest
- *   of the backend.
- * - Zero external CLIs: no psql/jq required (unlike the old bash sketch).
- * - Emits a JSON report to logs/rag-status-YYYYMMDD.json and a console
- *   summary (coverage, missing monographs, errors).
+ * - Batched embeddings: reuses `embedTexts` from src/server/aiRouter.ts
+ *   (Gemini gemini-embedding-001 @ 768-dim). Texts are embedded 50-at-a-time
+ *   via the batch endpoint so a full 1072-monograph run costs ~150 requests
+ *   instead of ~8000 (the API's free tier is 1000 requests/model/day).
+ * - Zero external CLIs: no psql/jq required.
+ * - Emits a JSON report to logs/rag-status-YYYYMMDD.json + console summary.
  *
  * Usage
  * -----
- *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N]
- *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N]
+ *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset]
+ *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset]
+ *
+ *   --batch N        monographs flushed per upsert (default 50)
+ *   --embed-batch N  texts per embedding request, max 100 (default 50)
+ *   --reset          delete all existing knowledge_chunks first (model switch)
  *
  * Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, GEMINI_API_KEY
  */
@@ -25,12 +29,14 @@ import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
-import { embedText } from '../src/server/aiRouter.js'
+import { embedTexts, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
 
 interface Args {
   dryRun: boolean
   limit: number | null
   batch: number
+  embedBatch: number
+  reset: boolean
 }
 
 interface Monograph {
@@ -50,15 +56,24 @@ interface Monograph {
 interface Chunk {
   section: string
   text: string
+  embedding?: number[] | null
+}
+
+interface Plan {
+  row: Monograph
+  chunks: Chunk[]
+  error?: string
 }
 
 function parseArgs(argv: string[]): Args {
-  const args: Args = { dryRun: false, limit: null, batch: 20 }
+  const args: Args = { dryRun: false, limit: null, batch: 50, embedBatch: 50, reset: false }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
     if (a === '--dry-run') args.dryRun = true
+    else if (a === '--reset') args.reset = true
     else if (a === '--limit') args.limit = Number(argv[++i]) || null
-    else if (a === '--batch') args.batch = Number(argv[++i]) || 20
+    else if (a === '--batch') args.batch = Number(argv[++i]) || 50
+    else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 50, 100)
   }
   return args
 }
@@ -153,75 +168,116 @@ async function main() {
   }
 
   const targets = args.limit ? monographs.slice(0, args.limit) : monographs
+
+  // --- Build all chunks up front ------------------------------------------
+  const plans: Plan[] = []
+  const missing: string[] = []
+  for (const row of targets) {
+    const chunks = buildChunks(row)
+    if (chunks.length === 0) missing.push(row.name)
+    else plans.push({ row, chunks })
+  }
+  const totalChunks = plans.reduce((n, p) => n + p.chunks.length, 0)
+
   console.log(
-    `[ensure-rag] run ${runId} — ${targets.length}/${monographs.length} monographs` +
+    `[ensure-rag] run ${runId} — ${targets.length}/${monographs.length} monographs, ` +
+      `${plans.length} with chunks (${totalChunks} chunks), ${missing.length} empty` +
       `${args.dryRun ? ' (dry run)' : ''}`,
   )
 
+  if (args.reset && !args.dryRun) {
+    const { error } = await supabase
+      .from('knowledge_chunks')
+      .delete()
+      .gte('created_at', '1970-01-01T00:00:00Z')
+    if (error) {
+      console.error(`ERROR resetting knowledge_chunks: ${error.message}`)
+      process.exit(1)
+    }
+    console.log(`[ensure-rag] --reset: cleared existing knowledge_chunks`)
+  }
+
+  // --- Embed in batches across monographs ---------------------------------
   const errors: { monograph: string; error: string }[] = []
-  const missing: string[] = []
+  if (!args.dryRun && totalChunks > 0) {
+    const items: { plan: Plan; chunk: Chunk }[] = []
+    for (const p of plans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
+
+    let done = 0
+    for (let i = 0; i < items.length; i += args.embedBatch) {
+      const slice = items.slice(i, i + args.embedBatch)
+      try {
+        const vectors = await embedTexts(
+          slice.map((x) => x.chunk.text),
+          args.embedBatch,
+        )
+        slice.forEach((x, j) => {
+          x.chunk.embedding = vectors[j]
+        })
+      } catch (e) {
+        const names = [...new Set(slice.map((x) => x.plan.row.name))]
+        const msg = (e as Error).message
+        for (const p of slice.map((x) => x.plan)) {
+          if (!p.error) p.error = msg
+          errors.push({ monograph: p.row.name, error: msg })
+        }
+        console.error(
+          `[ensure-rag] embed batch failed for: ${names.join(', ')} — ${msg.slice(0, 80)}`,
+        )
+      }
+      done += slice.length
+      if ((i / args.embedBatch) % 10 === 0 || done === items.length) {
+        console.log(`[ensure-rag] embedded ${done}/${items.length} chunks`)
+      }
+    }
+  }
+
+  // --- Upsert per monograph (skip those whose embedding failed) ------------
   let chunksWritten = 0
   let monographsProcessed = 0
-
-  for (let i = 0; i < targets.length; i++) {
-    const row = targets[i]
-    const chunks = buildChunks(row)
-    if (chunks.length === 0) {
-      missing.push(row.name)
+  for (let i = 0; i < plans.length; i += args.batch) {
+    const group = plans.slice(i, i + args.batch)
+    const rows: Record<string, unknown>[] = []
+    for (const p of group) {
+      if (p.error) continue
+      p.chunks.forEach((c, idx) => {
+        rows.push({
+          monograph_id: p.row.id,
+          chunk_index: idx,
+          chunk_text: c.text,
+          embedding: args.dryRun ? null : c.embedding,
+          embedding_model: EMBEDDING_MODEL,
+          run_id: runId,
+          metadata: { section: c.section, source: 'monograph' },
+        })
+      })
+    }
+    if (args.dryRun) {
+      chunksWritten += rows.length
+      monographsProcessed += group.filter((g) => !g.error).length
       continue
     }
-
-    try {
-      const rows: Record<string, unknown>[] = []
-      for (let idx = 0; idx < chunks.length; idx++) {
-        const chunk = chunks[idx]
-        if (args.dryRun) {
-          rows.push({
-            monograph_id: row.id,
-            chunk_index: idx,
-            chunk_text: chunk.text,
-            embedding: null,
-            embedding_model: 'gemini-embedding-2',
-            run_id: runId,
-            metadata: { section: chunk.section, source: 'monograph' },
-          })
-          continue
-        }
-        const embedding = await embedText(chunk.text)
-        rows.push({
-          monograph_id: row.id,
-          chunk_index: idx,
-          chunk_text: chunk.text,
-          embedding,
-          embedding_model: 'gemini-embedding-2',
-          run_id: runId,
-          metadata: { section: chunk.section, source: 'monograph' },
-        })
-        await new Promise((r) => setTimeout(r, 120)) // stay under rate limits
+    if (rows.length) {
+      const { error } = await supabase
+        .from('knowledge_chunks')
+        .upsert(rows, { onConflict: 'monograph_id,chunk_index' })
+      if (error) {
+        for (const p of group)
+          if (!p.error) errors.push({ monograph: p.row.name, error: error.message })
+      } else {
+        chunksWritten += rows.length
+        monographsProcessed += group.filter((g) => !g.error).length
       }
-
-      if (!args.dryRun) {
-        const { error } = await supabase
-          .from('knowledge_chunks')
-          .upsert(rows, { onConflict: 'monograph_id,chunk_index' })
-        if (error) throw new Error(error.message)
-      }
-      chunksWritten += rows.length
-      monographsProcessed++
-    } catch (e) {
-      errors.push({ monograph: row.name, error: (e as Error).message })
     }
-
-    if ((i + 1) % args.batch === 0 || i === targets.length - 1) {
-      console.log(
-        `[ensure-rag] ${i + 1}/${targets.length} · ${chunksWritten} chunks · ${errors.length} errors`,
-      )
-    }
+    console.log(
+      `[ensure-rag] upsert ${Math.min(i + args.batch, plans.length)}/${plans.length} · ${chunksWritten} chunks · ${errors.length} errors`,
+    )
   }
 
   const report = {
     run_id: runId,
     dry_run: args.dryRun,
+    embedding_model: EMBEDDING_MODEL,
     generated_at: new Date().toISOString(),
     monographs_total: monographs.length,
     monographs_processed: monographsProcessed,

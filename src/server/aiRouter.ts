@@ -496,34 +496,80 @@ export async function streamGenerateContent(
   return ''
 }
 
-// Embeddings — used by the background ingestion pipeline (Phase 10) to
-// populate document_embeddings for semantic search / RAG. Uses Gemini
-// gemini-embedding-2 locked to 768-dim (matches the vector(768) contract).
-export async function embedText(text: string): Promise<number[]> {
+// Embeddings — used by the background ingestion pipeline (Phase 10) and the RAG
+// pipeline. Uses Gemini gemini-embedding-001 locked to 768-dim (matches the
+// vector(768) contract). Free-tier quota is per-model, per-day (1000 requests),
+// so bulk work uses the batch endpoint (up to 100 texts/request) and retries
+// 429/5xx with backoff instead of hammering single calls.
+export const EMBEDDING_MODEL = 'gemini-embedding-001'
+const EMBEDDING_DIM = 768
+
+async function embedRequest(texts: string[]): Promise<number[][]> {
   const apiKey = process.env.GEMINI_API_KEY
   if (!apiKey) throw new Error('GEMINI_API_KEY not configured for embeddings')
-  const client = new GoogleGenAI({ apiKey })
-  const result: any = await client.models.embedContent({
-    model: 'gemini-embedding-2',
-    contents: text,
-    config: { outputDimensionality: 768 },
-  })
-  const values: number[] | undefined = result?.embeddings?.[0]?.values ?? result?.embedding?.values
-  if (!values || values.length === 0) {
-    throw new Error('Embedding provider returned no vector')
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:batchEmbedContents?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        requests: texts.map((t) => ({
+          model: `models/${EMBEDDING_MODEL}`,
+          content: { parts: [{ text: t }] },
+          outputDimensionality: EMBEDDING_DIM,
+        })),
+      }),
+    },
+  )
+  if (!res.ok) {
+    const body = await res.text()
+    const err: any = new Error(
+      `Embedding request failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
+    )
+    err.status = res.status
+    err.retryDelayMs = Number(/(\d+)s/.exec(body)?.[1] ?? 0) * 1000
+    throw err
   }
-  return values
+  const json: any = await res.json()
+  const embeddings: number[][] = (json.embeddings ?? []).map((e: any) => e.values)
+  if (embeddings.length !== texts.length || embeddings.some((v) => !v?.length)) {
+    throw new Error(`Embedding provider returned ${embeddings.length}/${texts.length} vectors`)
+  }
+  return embeddings
 }
 
-// Batch helper: embeds many texts sequentially with light backoff so we stay
-// within provider rate limits during bulk ingestion.
-export async function embedTextBatch(texts: string[]): Promise<number[][]> {
+/** Embed many texts in batches (API cap is 100/request). Retries transient 429/5xx. */
+export async function embedTexts(texts: string[], batchSize = 50): Promise<number[][]> {
   const out: number[][] = []
-  for (const t of texts) {
-    out.push(await embedText(t))
-    await new Promise((r) => setTimeout(r, 120))
+  for (let i = 0; i < texts.length; i += batchSize) {
+    const slice = texts.slice(i, i + batchSize)
+    let lastErr: any
+    for (let attempt = 0; attempt < 4; attempt++) {
+      try {
+        out.push(...(await embedRequest(slice)))
+        lastErr = undefined
+        break
+      } catch (e: any) {
+        lastErr = e
+        const retryable = e.status === 429 || (e.status >= 500 && e.status < 600)
+        if (!retryable) throw e
+        // Cap the wait: a daily-quota 429 can ask for hours — fail fast instead.
+        const wait = Math.min(e.retryDelayMs || 1000 * 2 ** attempt, 30000)
+        await new Promise((r) => setTimeout(r, wait))
+      }
+    }
+    if (lastErr) throw lastErr
   }
   return out
+}
+
+export async function embedText(text: string): Promise<number[]> {
+  return (await embedTexts([text], 1))[0]
+}
+
+/** @deprecated prefer `embedTexts` — kept for existing callers. */
+export async function embedTextBatch(texts: string[]): Promise<number[][]> {
+  return embedTexts(texts)
 }
 
 // Mock-and-Live Execution for Gateway APIs

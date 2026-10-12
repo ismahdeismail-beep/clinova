@@ -497,12 +497,24 @@ export async function streamGenerateContent(
 }
 
 // Embeddings — used by the background ingestion pipeline (Phase 10) and the RAG
-// pipeline. Uses Gemini gemini-embedding-001 locked to 768-dim (matches the
-// vector(768) contract). Free-tier quota is per-model, per-day (1000 requests),
-// so bulk work uses the batch endpoint (up to 100 texts/request) and retries
-// 429/5xx with backoff instead of hammering single calls.
-export const EMBEDDING_MODEL = 'gemini-embedding-001'
+// pipeline. Uses Gemini gemini-embedding-2 locked to 768-dim (matches the
+// vector(768) contract). Free tier: the batch endpoint (≤100 texts/request)
+// keeps the 1000 requests/day per-model quota happy — a full 1072-monograph
+// ingest is ~160 requests. Per-minute throttling is handled by retrying on 429
+// with the server's retryDelay and by callers pacing batches (see
+// ensure-rag --pace-ms). Daily-quota exhaustion (hours-long retryDelay) throws
+// immediately instead of hanging.
+export const EMBEDDING_MODEL = 'gemini-embedding-2'
 const EMBEDDING_DIM = 768
+
+function parseGoogleDelay(body: string): number {
+  const h = /([\d.]+)h/.exec(body)
+  const m = /([\d.]+)m/.exec(body)
+  const s = /([\d.]+)s/.exec(body)
+  const secs =
+    (h ? parseFloat(h[1]) * 3600 : 0) + (m ? parseFloat(m[1]) * 60 : 0) + (s ? parseFloat(s[1]) : 0)
+  return Math.round(secs * 1000)
+}
 
 async function embedRequest(texts: string[]): Promise<number[][]> {
   const apiKey = process.env.GEMINI_API_KEY
@@ -527,7 +539,8 @@ async function embedRequest(texts: string[]): Promise<number[][]> {
       `Embedding request failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
     )
     err.status = res.status
-    err.retryDelayMs = Number(/(\d+)s/.exec(body)?.[1] ?? 0) * 1000
+    err.body = body
+    err.retryDelayMs = parseGoogleDelay(body)
     throw err
   }
   const json: any = await res.json()
@@ -544,18 +557,18 @@ export async function embedTexts(texts: string[], batchSize = 50): Promise<numbe
   for (let i = 0; i < texts.length; i += batchSize) {
     const slice = texts.slice(i, i + batchSize)
     let lastErr: any
-    for (let attempt = 0; attempt < 4; attempt++) {
+    for (let attempt = 0; attempt < 5; attempt++) {
       try {
         out.push(...(await embedRequest(slice)))
         lastErr = undefined
         break
       } catch (e: any) {
         lastErr = e
-        const retryable = e.status === 429 || (e.status >= 500 && e.status < 600)
-        if (!retryable) throw e
-        // Cap the wait: a daily-quota 429 can ask for hours — fail fast instead.
-        const wait = Math.min(e.retryDelayMs || 1000 * 2 ** attempt, 30000)
-        await new Promise((r) => setTimeout(r, wait))
+        if (e.status !== 429 && !(e.status >= 500 && e.status < 600)) throw e
+        // A daily-quota 429 asks for hours — retrying would only hang. Fail fast.
+        if (e.status === 429 && e.retryDelayMs > 90_000) throw e
+        const wait = e.retryDelayMs > 0 ? e.retryDelayMs : 1000 * 2 ** attempt
+        await new Promise((r) => setTimeout(r, Math.min(wait, 90_000)))
       }
     }
     if (lastErr) throw lastErr

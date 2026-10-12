@@ -8,20 +8,25 @@
  * - Idempotent: every run gets a `run_id` (UTC timestamp) and upserts on
  *   (monograph_id, chunk_index). Re-running only rewrites the same rows.
  * - Batched embeddings: reuses `embedTexts` from src/server/aiRouter.ts
- *   (Gemini gemini-embedding-001 @ 768-dim). Texts are embedded 50-at-a-time
- *   via the batch endpoint so a full 1072-monograph run costs ~150 requests
- *   instead of ~8000 (the API's free tier is 1000 requests/model/day).
+ *   (Gemini gemini-embedding-2 @ 768-dim). Texts are embedded 50-at-a-time via
+ *   the batch endpoint so a full 1072-monograph run costs ~160 requests instead
+ *   of ~8000 (free tier allows 1000 batch requests/model/day; per-minute
+ *   throttling is handled by retry + internal pacing).
+ * - Resumable: `--only-missing` skips monographs that already have chunks, so
+ *   an interrupted or quota-throttled run can continue the next day.
  * - Zero external CLIs: no psql/jq required.
  * - Emits a JSON report to logs/rag-status-YYYYMMDD.json + console summary.
  *
  * Usage
  * -----
- *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset]
- *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset]
+ *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N]
+ *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N]
  *
  *   --batch N        monographs flushed per upsert (default 50)
  *   --embed-batch N  texts per embedding request, max 100 (default 50)
  *   --reset          delete all existing knowledge_chunks first (model switch)
+ *   --only-missing   only embed monographs with no chunks yet (resume)
+ *   --pace-ms N      sleep between embedding batches to respect per-minute RPM (default 6000)
  *
  * Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, GEMINI_API_KEY
  */
@@ -37,6 +42,8 @@ interface Args {
   batch: number
   embedBatch: number
   reset: boolean
+  onlyMissing: boolean
+  paceMs: number
 }
 
 interface Monograph {
@@ -66,14 +73,24 @@ interface Plan {
 }
 
 function parseArgs(argv: string[]): Args {
-  const args: Args = { dryRun: false, limit: null, batch: 50, embedBatch: 50, reset: false }
+  const args: Args = {
+    dryRun: false,
+    limit: null,
+    batch: 50,
+    embedBatch: 50,
+    reset: false,
+    onlyMissing: false,
+    paceMs: 6000,
+  }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
     if (a === '--dry-run') args.dryRun = true
     else if (a === '--reset') args.reset = true
+    else if (a === '--only-missing') args.onlyMissing = true
     else if (a === '--limit') args.limit = Number(argv[++i]) || null
     else if (a === '--batch') args.batch = Number(argv[++i]) || 50
     else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 50, 100)
+    else if (a === '--pace-ms') args.paceMs = Math.max(Number(argv[++i]) || 6000, 0)
   }
   return args
 }
@@ -130,6 +147,8 @@ function todayStamp(d = new Date()): string {
   return d.toISOString().slice(0, 10).replace(/-/g, '')
 }
 
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
 async function main() {
   const args = parseArgs(process.argv.slice(2))
   const url = process.env.SUPABASE_URL
@@ -167,7 +186,21 @@ async function main() {
     if (!data || data.length < pageSize) break
   }
 
-  const targets = args.limit ? monographs.slice(0, args.limit) : monographs
+  let targets = args.limit ? monographs.slice(0, args.limit) : monographs
+
+  if (args.onlyMissing && !args.dryRun) {
+    const { data: existing, error: existsErr } = await supabase
+      .from('knowledge_chunks')
+      .select('monograph_id')
+    if (existsErr) {
+      console.error(`ERROR reading existing chunks: ${existsErr.message}`)
+      process.exit(1)
+    }
+    const have = new Set((existing ?? []).map((r: { monograph_id: string }) => r.monograph_id))
+    const before = targets.length
+    targets = targets.filter((m) => !have.has(m.id))
+    console.log(`[ensure-rag] --only-missing: ${before} → ${targets.length} monographs to embed`)
+  }
 
   // --- Build all chunks up front ------------------------------------------
   const plans: Plan[] = []
@@ -199,12 +232,13 @@ async function main() {
 
   // --- Embed in batches across monographs ---------------------------------
   const errors: { monograph: string; error: string }[] = []
+  let quotaSkipped = 0
   if (!args.dryRun && totalChunks > 0) {
     const items: { plan: Plan; chunk: Chunk }[] = []
     for (const p of plans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
 
     let done = 0
-    for (let i = 0; i < items.length; i += args.embedBatch) {
+    embedLoop: for (let i = 0; i < items.length; i += args.embedBatch) {
       const slice = items.slice(i, i + args.embedBatch)
       try {
         const vectors = await embedTexts(
@@ -214,7 +248,26 @@ async function main() {
         slice.forEach((x, j) => {
           x.chunk.embedding = vectors[j]
         })
-      } catch (e) {
+      } catch (e: any) {
+        // Daily-quota exhaustion — nothing retryable today; stop and leave the
+        // rest for a later run (--only-missing will resume them).
+        if (e?.status === 429 && e?.retryDelayMs > 90_000) {
+          const rest = items.slice(i)
+          const affected = [...new Set(rest.map((x) => x.plan))]
+          for (const p of affected) {
+            p.error = `quota-skipped: retry in ${Math.round(e.retryDelayMs / 60000)}m`
+            errors.push({
+              monograph: p.row.name,
+              error: 'quota-skipped: daily embedding quota exhausted',
+            })
+          }
+          quotaSkipped = rest.length
+          console.error(
+            `[ensure-rag] DAILY QUOTA EXHAUSTED — embedded ${done}/${items.length}, ` +
+              `${quotaSkipped} chunks left for the next run (--only-missing).`,
+          )
+          break embedLoop
+        }
         const names = [...new Set(slice.map((x) => x.plan.row.name))]
         const msg = (e as Error).message
         for (const p of slice.map((x) => x.plan)) {
@@ -226,9 +279,10 @@ async function main() {
         )
       }
       done += slice.length
-      if ((i / args.embedBatch) % 10 === 0 || done === items.length) {
+      if ((i / args.embedBatch) % 5 === 0 || done === items.length) {
         console.log(`[ensure-rag] embedded ${done}/${items.length} chunks`)
       }
+      if (args.paceMs > 0 && i + args.embedBatch < items.length) await sleep(args.paceMs)
     }
   }
 
@@ -277,12 +331,15 @@ async function main() {
   const report = {
     run_id: runId,
     dry_run: args.dryRun,
+    only_missing: args.onlyMissing,
+    pace_ms: args.paceMs,
     embedding_model: EMBEDDING_MODEL,
     generated_at: new Date().toISOString(),
     monographs_total: monographs.length,
     monographs_processed: monographsProcessed,
     monographs_missing_chunks: missing,
     chunks_written: chunksWritten,
+    chunks_quota_skipped: quotaSkipped,
     errors,
   }
   const reportPath = resolve(process.cwd(), 'logs', `rag-status-${todayStamp()}.json`)
@@ -291,7 +348,8 @@ async function main() {
 
   console.log(
     `[ensure-rag] done — ${monographsProcessed} monographs, ${chunksWritten} chunks, ` +
-      `${missing.length} without chunks, ${errors.length} errors. Report: ${reportPath}`,
+      `${missing.length} without chunks, ${errors.length} errors, ${quotaSkipped} quota-skipped. ` +
+      `Report: ${reportPath}`,
   )
   if (missing.length)
     console.log(

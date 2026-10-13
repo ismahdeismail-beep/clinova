@@ -68,6 +68,24 @@ serverless time limits (a 1000-text run is ~11 min), so a GitHub Actions
 runner is the right host, with repo secrets `SUPABASE_URL`,
 `SUPABASE_SERVICE_ROLE_KEY`, `GEMINI_API_KEY`.
 
+## Additional corpora (STG / essential medicines)
+
+`knowledge_chunks` also carries a `source='stg'` corpus for Standard Treatment
+Guidelines, ingested from markdown under `src/data/essentialMedicine/`:
+
+- Each `## Section` of `<medicine>.md` becomes one chunk, prefixed with the
+  medicine name; YAML front-matter holds `title` / `category` / `atcCode` /
+  `lastUpdated` / `sourceMonograph`.
+- Ingest is part of the same `ensure-rag` run (so the hourly cron picks new STG
+  files up automatically). `--only-missing` resumes STG docs by slug too.
+- This is **additive**: it does not change the 1072-monograph completion, and
+  STG rows (NULL `monograph_id`) never inflate `covered_monographs`.
+- Requires migration `00021_knowledge_chunks_sources.sql` (applied), which adds
+  `source`/`source_ref`, makes `monograph_id` nullable, and installs the
+  `(source, source_ref, chunk_index)` unique index.
+- The corpus is empty until authoritative WHO EML / national STG content is
+  added (see `src/data/essentialMedicine/README.md`).
+
 ## Verification
 
 ```

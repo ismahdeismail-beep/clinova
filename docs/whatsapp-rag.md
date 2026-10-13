@@ -26,6 +26,18 @@ the free-tier ingest is still filling, an uncovered question gets a graceful
 "knowledge base still being built" reply (`no_chunks: true`) rather than a
 hallucination — the model is instructed to answer **only** from the excerpts.
 
+## Corpora / sources
+
+`knowledge_chunks` holds more than drug monographs. Each chunk carries a
+`source` tag (`'monograph'` | `'stg'`) and a source-scoped `source_ref`
+(monograph id, or STG filename slug) — see migration
+`00021_knowledge_chunks_sources.sql`. The unique upsert key is
+`(source, source_ref, chunk_index)`.
+
+A default retrieval searches **all** sources (they share one embedding model),
+so STG chunks compete on similarity with monographs; pass
+`answerWithRag(q, { source: 'stg' })` to restrict a query to guidelines.
+
 ## Configuration
 
 | Env var                                  | Purpose                                                           |

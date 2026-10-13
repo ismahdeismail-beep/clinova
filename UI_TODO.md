@@ -78,10 +78,10 @@ every feature, no duplicated or conflicting entry points.
 
 ## Standard Treatment Guidelines (STG) & Essential Medicines
 
-- [ ] **Collect latest STG**: Download the most recent WHO Essential Medicines List (or national STG) and convert each entry into a markdown file under `src/data/essentialMedicine/` following the markdown design rules (H1 = medicine name, YAML front‑matter with `category`, `atcCode`, `lastUpdated`).
-- [ ] **Link to existing monographs**: For medicines that already have a monograph in `src/data/drugMonographs/`, add a cross‑reference in the STG markdown (`sourceMonograph: amoxicillin`) so the RAG pipeline can pull both sets of chunks.
-- [ ] **RAG inclusion**: Extend `scripts/ensure-rag.ts` to also process `src/data/essentialMedicine/` (markdown), embedding chunks into `knowledge_chunks` with a `source='stg'` tag. Requires migration `00021` (nullable `monograph_id` + `source`/`source_ref`).
-- [ ] **WhatsApp bot STG lookup**: The webhook already supports a `source` filter (`answerWithRag(q, { source: 'stg' })` in `src/server/rag.ts`), so once STG chunks are ingested they can be retrieved/prepended with no webhook change.
+- [ ] **Collect latest STG**: Download the most recent WHO Essential Medicines List (or national STG) and convert each entry into a markdown file under `src/data/essentialMedicine/` following the markdown design rules (H1 = medicine name, YAML front‑matter with `category`, `atcCode`, `lastUpdated`). The ingestion pipeline, template (`_TEMPLATE.md`) and README are ready — only the authoritative content is outstanding.
+- [ ] **Link to existing monographs**: For medicines that already have a monograph in `src/data/drugMonographs/`, add a cross‑reference in the STG markdown (`sourceMonograph: amoxicillin`) so the RAG pipeline can pull both sets of chunks. (Front-matter `sourceMonograph` is parsed; the cross-reference link itself is not wired yet.)
+- [x] **RAG inclusion**: `scripts/ensure-rag.ts` now ingests `src/data/essentialMedicine/` markdown as `source='stg'` (parsed by `src/server/stgMarkdown.ts`, unit-tested), upserting on `(source, source_ref, chunk_index)`. Migration `00021_knowledge_chunks_sources.sql` (nullable `monograph_id` + `source`/`source_ref`) is applied.
+- [x] **WhatsApp bot STG lookup**: the webhook retrieves both corpora by default and `answerWithRag(q, { source: 'stg' })` (`src/server/rag.ts`) restricts a query to guidelines — no webhook change needed once STG chunks exist.
 - [ ] **Validate markdown**: Run `npm run lint:md` on the new files to confirm they obey the naming, front‑matter, and heading conventions; fix any errors before committing.
 
 ## WhatsApp Bot — Feasibility & RAG Enforcement

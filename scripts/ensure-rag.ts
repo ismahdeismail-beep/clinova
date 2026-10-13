@@ -1,42 +1,52 @@
 /**
  * ensure-rag.ts — populate `knowledge_chunks` with embedded, retrievable
- * chunks for every drug monograph, so the WhatsApp bot / RAG tutor can
- * ground answers in the catalogue.
+ * chunks for the RAG corpora: every drug monograph (source='monograph') and,
+ * optionally, Standard Treatment Guideline markdown (source='stg'), so the
+ * WhatsApp bot / RAG tutor can ground answers in the catalogue + guidelines.
  *
  * Design notes
  * ------------
  * - Idempotent: every run gets a `run_id` (UTC timestamp) and upserts on
- *   (monograph_id, chunk_index). Re-running only rewrites the same rows.
+ *   (source, source_ref, chunk_index) — added in migration 00021. Re-running
+ *   only rewrites the same rows. For monographs `source_ref` is the monograph
+ *   id; for STG docs it is the markdown filename slug.
  * - Batched embeddings: reuses `embedTexts` from src/server/aiRouter.ts
  *   (model = EMBEDDING_MODEL there, locked to 768-dim). Free-tier embedding
  *   caps, verified empirically 2026-10-12: daily = 1000 REQUESTS/day per model
  *   (a batch counts as ONE request), per-minute = 100 TEXTS/min per model. So
- *   batches should be large (--embed-batch 100) and paced ~60s apart — a full
- *   1072-monograph run (~81 batches) fits one day's request budget and finishes
- *   in ~85 min at the 100 texts/min ceiling.
- * - Resumable: `--only-missing` skips monographs that already have chunks, so
+ *   batches should be large (--embed-batch 100) and paced ~60s apart.
+ * - Resumable: `--only-missing` skips documents that already have chunks, so
  *   an interrupted or quota-throttled run can continue the next day.
  * - Zero external CLIs: no psql/jq required.
  * - Emits a JSON report to logs/rag-status-YYYYMMDD.json + console summary.
  *
+ * STG documents
+ * -------------
+ * Markdown files under `src/data/essentialMedicine/` (override with --stg-dir):
+ * YAML front-matter (title, category, atcCode, lastUpdated, sourceMonograph …),
+ * an H1 title, then one `## Section` per chunk (e.g. "## Dosage"). Files whose
+ * names start with `_` and README.md are ignored (templates/docs, not content).
+ *
  * Usage
  * -----
- *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N]
- *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N]
+ *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N] [--stg-dir PATH] [--no-stg]
  *
- *   --batch N        monographs flushed per upsert (default 50)
+ *   --batch N        documents flushed per upsert (default 50)
  *   --embed-batch N  texts per embedding request, max 100 (default 100)
  *   --reset          delete all existing knowledge_chunks first (model switch)
- *   --only-missing   only embed monographs with no chunks yet (resume)
+ *   --only-missing   only embed documents with no chunks yet (resume)
  *   --pace-ms N      sleep between embedding batches (default 60000 = 100 texts/min)
+ *   --stg-dir PATH   STG markdown directory (default src/data/essentialMedicine)
+ *   --no-stg         skip the STG corpus entirely
  *
  * Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, GEMINI_API_KEY
  */
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { embedTexts, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
+import { buildStgChunks, type StgDoc } from '../src/server/stgMarkdown.js'
 
 interface Args {
   dryRun: boolean
@@ -46,6 +56,8 @@ interface Args {
   reset: boolean
   onlyMissing: boolean
   paceMs: number
+  includeStg: boolean
+  stgDir: string
 }
 
 interface Monograph {
@@ -68,8 +80,15 @@ interface Chunk {
   embedding?: number[] | null
 }
 
-interface Plan {
-  row: Monograph
+/** One upsert target: a monograph or an STG document. */
+interface DocRow {
+  source: 'monograph' | 'stg'
+  /** monograph id (monographs) or filename slug (stg). */
+  sourceRef: string
+  /** Human label for logs/reports. */
+  label: string
+  /** NULL for non-drug corpora. */
+  monographId: string | null
   chunks: Chunk[]
   error?: string
 }
@@ -83,16 +102,20 @@ function parseArgs(argv: string[]): Args {
     reset: false,
     onlyMissing: false,
     paceMs: 60000,
+    includeStg: true,
+    stgDir: resolve(process.cwd(), 'src', 'data', 'essentialMedicine'),
   }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
     if (a === '--dry-run') args.dryRun = true
     else if (a === '--reset') args.reset = true
     else if (a === '--only-missing') args.onlyMissing = true
+    else if (a === '--no-stg') args.includeStg = false
     else if (a === '--limit') args.limit = Number(argv[++i]) || null
     else if (a === '--batch') args.batch = Number(argv[++i]) || 50
     else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 100, 100)
     else if (a === '--pace-ms') args.paceMs = Math.max(Number(argv[++i]) || 60000, 0)
+    else if (a === '--stg-dir') args.stgDir = resolve(process.cwd(), argv[++i] || '.')
   }
   return args
 }
@@ -145,6 +168,21 @@ export function buildChunks(row: Monograph): Chunk[] {
   return sections.filter((c) => !/:\s*$/.test(c.text) && c.text.trim().length > heading.length + 2)
 }
 
+// STG markdown parsing lives in src/server/stgMarkdown.ts (unit-tested).
+
+/** Load + chunk every content markdown file in the STG directory. */
+function loadStgDocs(dir: string): StgDoc[] {
+  if (!existsSync(dir)) return []
+  const docs: StgDoc[] = []
+  for (const name of readdirSync(dir).sort()) {
+    if (!name.endsWith('.md')) continue
+    if (name.startsWith('_') || name.toLowerCase() === 'readme.md') continue
+    const doc = buildStgChunks(readFileSync(resolve(dir, name), 'utf8'), name.replace(/\.md$/, ''))
+    if (doc.chunks.length) docs.push(doc)
+  }
+  return docs
+}
+
 function todayStamp(d = new Date()): string {
   return d.toISOString().slice(0, 10).replace(/-/g, '')
 }
@@ -188,36 +226,66 @@ async function main() {
     if (!data || data.length < pageSize) break
   }
 
-  let targets = args.limit ? monographs.slice(0, args.limit) : monographs
+  const targets = args.limit ? monographs.slice(0, args.limit) : monographs
+
+  const monographDocs: DocRow[] = targets.map((row) => ({
+    source: 'monograph',
+    sourceRef: row.id,
+    label: row.name,
+    monographId: row.id,
+    chunks: buildChunks(row),
+  }))
+
+  const stgDocs: DocRow[] = args.includeStg
+    ? loadStgDocs(args.stgDir).map((d) => ({
+        source: 'stg',
+        sourceRef: d.slug,
+        label: d.title,
+        monographId: null,
+        chunks: d.chunks,
+      }))
+    : []
+
+  let docs = [...monographDocs, ...stgDocs]
 
   if (args.onlyMissing && !args.dryRun) {
     const { data: existing, error: existsErr } = await supabase
       .from('knowledge_chunks')
-      .select('monograph_id')
+      .select('source, source_ref')
     if (existsErr) {
-      console.error(`ERROR reading existing chunks: ${existsErr.message}`)
+      console.error(
+        `ERROR reading existing chunks (is migration 00021 applied?): ${existsErr.message}`,
+      )
       process.exit(1)
     }
-    const have = new Set((existing ?? []).map((r: { monograph_id: string }) => r.monograph_id))
-    const before = targets.length
-    targets = targets.filter((m) => !have.has(m.id))
-    console.log(`[ensure-rag] --only-missing: ${before} → ${targets.length} monographs to embed`)
+    const have = new Set(
+      (existing ?? []).map(
+        (r: { source: string; source_ref: string }) => `${r.source}:${r.source_ref}`,
+      ),
+    )
+    const before = docs.length
+    docs = docs.filter((d) => !have.has(`${d.source}:${d.sourceRef}`))
+    console.log(
+      `[ensure-rag] --only-missing: ${before} → ${docs.length} documents to embed ` +
+        `(${docs.filter((d) => d.source === 'monograph').length} monographs, ` +
+        `${docs.filter((d) => d.source === 'stg').length} stg)`,
+    )
   }
 
   // --- Build all chunks up front ------------------------------------------
-  const plans: Plan[] = []
+  const plans: DocRow[] = []
   const missing: string[] = []
-  for (const row of targets) {
-    const chunks = buildChunks(row)
-    if (chunks.length === 0) missing.push(row.name)
-    else plans.push({ row, chunks })
+  for (const d of docs) {
+    if (d.chunks.length === 0) missing.push(d.label)
+    else plans.push(d)
   }
   const totalChunks = plans.reduce((n, p) => n + p.chunks.length, 0)
+  const stgPlanned = plans.filter((p) => p.source === 'stg').length
 
   console.log(
-    `[ensure-rag] run ${runId} — ${targets.length}/${monographs.length} monographs, ` +
-      `${plans.length} with chunks (${totalChunks} chunks), ${missing.length} empty` +
-      `${args.dryRun ? ' (dry run)' : ''}`,
+    `[ensure-rag] run ${runId} — ${plans.length} documents with chunks ` +
+      `(${plans.length - stgPlanned} monographs + ${stgPlanned} stg), ` +
+      `${totalChunks} chunks, ${missing.length} empty${args.dryRun ? ' (dry run)' : ''}`,
   )
 
   if (args.reset && !args.dryRun) {
@@ -232,11 +300,11 @@ async function main() {
     console.log(`[ensure-rag] --reset: cleared existing knowledge_chunks`)
   }
 
-  // --- Embed in batches across monographs ---------------------------------
-  const errors: { monograph: string; error: string }[] = []
+  // --- Embed in batches across documents ----------------------------------
+  const errors: { document: string; error: string }[] = []
   let quotaSkipped = 0
   if (!args.dryRun && totalChunks > 0) {
-    const items: { plan: Plan; chunk: Chunk }[] = []
+    const items: { plan: DocRow; chunk: Chunk }[] = []
     for (const p of plans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
 
     let done = 0
@@ -259,7 +327,7 @@ async function main() {
           for (const p of affected) {
             p.error = `quota-skipped: retry in ${Math.round(e.retryDelayMs / 60000)}m`
             errors.push({
-              monograph: p.row.name,
+              document: p.label,
               error: 'quota-skipped: daily embedding quota exhausted',
             })
           }
@@ -270,14 +338,14 @@ async function main() {
           )
           break embedLoop
         }
-        const names = [...new Set(slice.map((x) => x.plan.row.name))]
+        const labels = [...new Set(slice.map((x) => x.plan.label))]
         const msg = (e as Error).message
         for (const p of slice.map((x) => x.plan)) {
           if (!p.error) p.error = msg
-          errors.push({ monograph: p.row.name, error: msg })
+          errors.push({ document: p.label, error: msg })
         }
         console.error(
-          `[ensure-rag] embed batch failed for: ${names.join(', ')} — ${msg.slice(0, 80)}`,
+          `[ensure-rag] embed batch failed for: ${labels.join(', ')} — ${msg.slice(0, 80)}`,
         )
       }
       done += slice.length
@@ -288,9 +356,9 @@ async function main() {
     }
   }
 
-  // --- Upsert per monograph (skip those whose embedding failed) ------------
+  // --- Upsert per document (skip those whose embedding failed) -------------
   let chunksWritten = 0
-  let monographsProcessed = 0
+  let docsProcessed = 0
   for (let i = 0; i < plans.length; i += args.batch) {
     const group = plans.slice(i, i + args.batch)
     const rows: Record<string, unknown>[] = []
@@ -298,31 +366,33 @@ async function main() {
       if (p.error) continue
       p.chunks.forEach((c, idx) => {
         rows.push({
-          monograph_id: p.row.id,
+          monograph_id: p.monographId,
+          source: p.source,
+          source_ref: p.sourceRef,
           chunk_index: idx,
           chunk_text: c.text,
           embedding: args.dryRun ? null : c.embedding,
           embedding_model: EMBEDDING_MODEL,
           run_id: runId,
-          metadata: { section: c.section, source: 'monograph' },
+          metadata: { section: c.section, source: p.source },
         })
       })
     }
     if (args.dryRun) {
       chunksWritten += rows.length
-      monographsProcessed += group.filter((g) => !g.error).length
+      docsProcessed += group.filter((g) => !g.error).length
       continue
     }
     if (rows.length) {
       const { error } = await supabase
         .from('knowledge_chunks')
-        .upsert(rows, { onConflict: 'monograph_id,chunk_index' })
+        .upsert(rows, { onConflict: 'source,source_ref,chunk_index' })
       if (error) {
         for (const p of group)
-          if (!p.error) errors.push({ monograph: p.row.name, error: error.message })
+          if (!p.error) errors.push({ document: p.label, error: error.message })
       } else {
         chunksWritten += rows.length
-        monographsProcessed += group.filter((g) => !g.error).length
+        docsProcessed += group.filter((g) => !g.error).length
       }
     }
     console.log(
@@ -338,8 +408,9 @@ async function main() {
     embedding_model: EMBEDDING_MODEL,
     generated_at: new Date().toISOString(),
     monographs_total: monographs.length,
-    monographs_processed: monographsProcessed,
-    monographs_missing_chunks: missing,
+    documents_processed: docsProcessed,
+    stg_documents: stgDocs.length,
+    documents_missing_chunks: missing,
     chunks_written: chunksWritten,
     chunks_quota_skipped: quotaSkipped,
     errors,
@@ -349,7 +420,7 @@ async function main() {
   writeFileSync(reportPath, JSON.stringify(report, null, 2))
 
   console.log(
-    `[ensure-rag] done — ${monographsProcessed} monographs, ${chunksWritten} chunks, ` +
+    `[ensure-rag] done — ${docsProcessed} documents, ${chunksWritten} chunks, ` +
       `${missing.length} without chunks, ${errors.length} errors, ${quotaSkipped} quota-skipped. ` +
       `Report: ${reportPath}`,
   )

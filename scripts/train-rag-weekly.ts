@@ -21,7 +21,7 @@ import { createClient } from '@supabase/supabase-js'
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { embedText } from '../src/server/aiRouter.js'
+import { embedText, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
 
 interface Args {
   dryRun: boolean
@@ -149,6 +149,9 @@ async function main() {
       const chunkQuery = supabase
         .from('knowledge_chunks')
         .select('id, chunk_text, metadata, embedding')
+        // Only compare against vectors from the same model — mixing embedding
+        // models in one corpus makes cosine similarity meaningless.
+        .eq('embedding_model', EMBEDDING_MODEL)
         .limit(800)
       if (c.source_monograph_id) chunkQuery.eq('monograph_id', c.source_monograph_id)
       const { data: chunks } = await chunkQuery

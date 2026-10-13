@@ -71,6 +71,27 @@ Two Supabase credentials were pasted into chat earlier (2018-era exposure) and
   (client-side); RLS is deny-by-default on the backend tables. Rotating them is
   still recommended above because they were in chat, but they are not secret.
 
+## Tracked-file secret scan (2026‑10‑13) — CLEAN
+
+A full scan of every tracked file (`git grep`, excluding `package-lock.json`) for
+committed secrets found **none**:
+
+- No Google API keys (`AIza…`) — the only match is the Firebase **web** API key
+  (see below), which is not a secret.
+- No JWTs / Supabase anon or service-role tokens (`eyJ….….…`), no `sbp_…`
+  personal access tokens, no `sk-…`/`Bearer …` values.
+- Every `SUPABASE_SERVICE_ROLE_KEY` reference is a `process.env` read; the
+  `.env.example` files hold placeholders only.
+
+**Firebase Web API key is public by design.** `src/lib/firebase.ts` and
+`server.ts` fall back to the literal key
+`AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA` when `VITE_FIREBASE_API_KEY` is unset.
+This is intended: Google ships the Firebase web API key in every client bundle
+and it identifies the project, it does not authorize anything. Access is
+governed by **Firebase Security Rules**, not key secrecy. Do not rotate/remove
+it; do keep Firestore/Auth/Storage rules deny-by-default. The bundled fallback
+exists so the app works against the default project without env config.
+
 ## General rules in this repo
 
 - `.env`, `.env.*`, `logs/` are gitignored — never force-add them.

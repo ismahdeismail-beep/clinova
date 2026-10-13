@@ -23,6 +23,8 @@
     "db:validate": "tsx scripts/validateDb.ts",
     "lint:check-phrases": "bash scripts/check-phrases-simple.sh",
     "rag:ingest": "bash scripts/ensure-rag.sh",
+    "rag:resume": "bash scripts/ensure-rag.sh --only-missing",
+    "rag:reset": "bash scripts/ensure-rag.sh --reset",
     "rag:dry": "bash scripts/ensure-rag.sh --dry-run",
     "rag:import": "bash scripts/import-cases.sh",
     "rag:weekly": "bash scripts/train-rag-weekly.sh"

@@ -9,6 +9,11 @@
  * Usage:
  *   npx tsx scripts/import-cases.ts data/clinical-cases-starter.csv [--dry-run] [--batch 200]
  *
+ * CSV columns: query, category, source_monograph_id, expected_answer, plus an
+ * OPTIONAL status (pending|approved|deprecated, default pending). The upsert is
+ * ignore-duplicates, so re-importing never overwrites an existing row's status —
+ * change existing cases in the DB (that is the review workflow).
+ *
  * Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY (same as ensure-rag).
  */
 import 'dotenv/config'
@@ -21,9 +26,11 @@ interface CaseRow {
   category: string
   source_monograph_id: string | null
   expected_answer: string
+  status: string
 }
 
 const CATEGORIES = new Set(['dosage', 'side-effect', 'interaction', 'contra-indication', 'other'])
+const STATUSES = new Set(['pending', 'approved', 'deprecated'])
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
 function parseArgs(argv: string[]) {
@@ -100,6 +107,7 @@ async function main() {
   const iCat = idx('category')
   const iMono = idx('source_monograph_id')
   const iAnswer = idx('expected_answer')
+  const iStatus = idx('status')
   if ([iQuery, iCat, iMono, iAnswer].includes(-1)) {
     console.error(
       `ERROR: CSV header must include query, category, source_monograph_id, expected_answer (got: ${header.join(', ')})`,
@@ -115,18 +123,22 @@ async function main() {
     const category = (r[iCat] ?? '').trim()
     const monoRaw = (r[iMono] ?? '').trim()
     const expected = (r[iAnswer] ?? '').trim()
+    const statusRaw = (iStatus >= 0 ? (r[iStatus] ?? '').trim() : '') || 'pending'
     if (query && category && expected) {
       rows.push({
         query,
         category,
         source_monograph_id: monoRaw && UUID_RE.test(monoRaw) ? monoRaw : null,
         expected_answer: expected,
+        status: STATUSES.has(statusRaw) ? statusRaw : 'pending',
       })
     }
     if (!query || !expected)
       skipped.push({ line: i + 1, reason: 'missing query or expected_answer' })
     else if (!CATEGORIES.has(category))
       skipped.push({ line: i + 1, reason: `invalid category '${category}'` })
+    else if (!STATUSES.has(statusRaw))
+      skipped.push({ line: i + 1, reason: `invalid status '${statusRaw}' (imported as pending)` })
     else if (monoRaw && !UUID_RE.test(monoRaw))
       skipped.push({ line: i + 1, reason: `invalid UUID '${monoRaw}' (imported as NULL)` })
   }

@@ -49,3 +49,9 @@ if [ "${written:-0}" -gt 0 ]; then
 else
   echo "=== $(date -Is) no chunks written (quota exhausted?) — retrying next hour ===" >>logs/rag-resume.log
 fi
+
+# Coverage snapshot (best effort; verify exits 0 only at full coverage).
+{
+  echo "--- $(date -Is) coverage ---"
+  node scripts/verify-rag.mjs 2>&1 || true
+} >>logs/rag-resume.log

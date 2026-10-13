@@ -41,7 +41,8 @@ it catches up automatically after the machine was asleep or off. `flock`
 prevents overlapping runs. When the daily quota is spent the run writes 0 chunks
 and leaves no marker, so the next hourly tick retries once the budget resets.
 
-- Watch it: `tail -f logs/rag-resume.log`
+- Watch it: `tail -f logs/rag-resume.log` (each tick also logs a coverage snapshot)
+- One-line check: `npm run rag:verify` (prints coverage; exits 0 only at 1072/1072)
 - Run it now: `bash scripts/rag-resume-cron.sh` (or `npm run rag:resume`)
 - Disable: `crontab -e` → delete the line
 - Progress: `node scripts/db.mjs "select * from rag_pipeline_status"`
@@ -70,9 +71,9 @@ runner is the right host, with repo secrets `SUPABASE_URL`,
 ## Verification
 
 ```
-node scripts/db.mjs "select * from rag_pipeline_status"
-# expect: knowledge_chunks ≈ 8077, covered_monographs = 1072,
-#         total_monographs = 1072, latest_run_id set
+npm run rag:verify
+# expect: "RAG corpus: 1072/1072 monographs (100%) · ~8077 chunks · 25 approved cases"
+# exit 0 == complete; exit 1 == still filling
 
 npm run rag:weekly        # 25 approved cases; cosine top-3 + grounded answer
 ```

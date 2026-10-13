@@ -22,6 +22,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { embedText, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
+import { cosine, rankByCosine } from '../src/server/ragCore.js'
 
 interface Args {
   dryRun: boolean
@@ -51,28 +52,7 @@ function parseArgs(argv: string[]) {
   return args
 }
 
-function cosine(a: number[], b: number[]): number {
-  if (!a?.length || a.length !== b.length) return -1
-  let dot = 0
-  let na = 0
-  let nb = 0
-  for (let i = 0; i < a.length; i++) {
-    dot += a[i] * b[i]
-    na += a[i] * a[i]
-    nb += b[i] * b[i]
-  }
-  if (na === 0 || nb === 0) return -1
-  return dot / (Math.sqrt(na) * Math.sqrt(nb))
-}
-
-function topChunks(qEmb: number[], chunks: ChunkRow[], n = 3): ChunkRow[] {
-  return chunks
-    .map((c) => ({ c, sim: cosine(qEmb, c.embedding) }))
-    .filter((x) => x.sim > 0)
-    .sort((a, b) => b.sim - a.sim)
-    .slice(0, n)
-    .map((x) => x.c)
-}
+// cosine / ranking are shared with the serving path (src/server/ragCore.ts).
 
 async function generateAnswer(prompt: string): Promise<string> {
   const key = process.env.GEMINI_API_KEY
@@ -157,7 +137,9 @@ async function main() {
       const { data: chunks } = await chunkQuery
       const chunkRows = (chunks ?? []) as (ChunkRow & { metadata: { section?: string | null } })[]
 
-      const picks = qEmb ? topChunks(qEmb, chunkRows, 3) : chunkRows.slice(0, 3)
+      const picks = qEmb
+        ? rankByCosine(qEmb, chunkRows, 3).map((r) => r.item)
+        : chunkRows.slice(0, 3)
       if (!picks.length) {
         noChunks++
         results.push({

@@ -28,6 +28,7 @@ import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
+import { createWhatsAppRouter } from './src/server/whatsappWebhook.js';
 import webpush from 'web-push';
 import * as Sentry from '@sentry/node';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
@@ -100,7 +101,18 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.json({ limit: '100mb' }));
+// The WhatsApp webhook needs the raw body to verify Meta's X-Hub-Signature-256
+// HMAC, so capture it — scoped to that path to avoid duplicating every body.
+app.use(
+  express.json({
+    limit: '100mb',
+    verify: (req: any, _res: any, buf: Buffer) => {
+      if (typeof req.url === 'string' && req.url.startsWith('/api/whatsapp/')) {
+        req.rawBody = buf;
+      }
+    },
+  }),
+);
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 
 // Serve uploaded files statically
@@ -120,6 +132,13 @@ app.get('/api/ready', (_req, res) => {
   const ready = deps.gemini; // Gemini is the minimum viable dependency.
   res.status(ready ? 200 : 503).json({ status: ready ? 'ready' : 'degraded', deps, ts: Date.now() });
 });
+
+// ----- WhatsApp Cloud API webhook (RAG-grounded replies) -----
+// Mounted BEFORE the opt-in /api guard below so Meta — which cannot present a
+// Bearer token — can always reach it; inbound payloads are authenticated via the
+// X-Hub-Signature-256 HMAC when WHATSAPP_APP_SECRET is set. See
+// docs/whatsapp-rag.md. The router lives in src/server/whatsappWebhook.ts.
+app.use('/api/whatsapp', createWhatsAppRouter());
 
 // ----- Optional API protection (opt-in; safe defaults, NO breaking changes) -----
 // Rate limiting + auth are DISABLED by default so existing clients keep working.

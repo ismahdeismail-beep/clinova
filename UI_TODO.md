@@ -69,19 +69,19 @@ every feature, no duplicated or conflicting entry points.
       `query`, `category` (e.g. "dosage", "side-effects", "interaction"), `source_monograph_id`,
       and `resolved_answer`. A weekly job (script) compares live Gemini responses
       against these cached answers and surfaces mismatches for review.
-- [ ] **Integration wiring**: WhatsApp webhook (`/api/whatsapp/incoming`) receives
-      incoming messages, extracts text, calls the same Gemini generation function
-      used by the SPA (e.g. `POST /api/gemini/assistant`), returns the reply via
-      WhatsApp API. Add RAG context by prepending the most relevant monograph chunks
-      (retrieved from Supabase `knowledge_chunks` by semantic similarity or keyword
-      match) to the prompt.
+- [x] **Integration wiring**: WhatsApp webhook (`/api/whatsapp/incoming`) implemented
+      (`src/server/whatsappWebhook.ts`): Meta handshake + `X-Hub-Signature-256`,
+      per-phone throttle, message-id dedupe, then a RAG-grounded answer
+      (`src/server/rag.ts`: embed → cosine top-k over `knowledge_chunks` →
+      `rag-prompt.md` → Gemini) returned via the Graph API. Env-gated and
+      dry-run testable (`docs/whatsapp-rag.md`).
 
 ## Standard Treatment Guidelines (STG) & Essential Medicines
 
 - [ ] **Collect latest STG**: Download the most recent WHO Essential Medicines List (or national STG) and convert each entry into a markdown file under `src/data/essentialMedicine/` following the markdown design rules (H1 = medicine name, YAML front‑matter with `category`, `atcCode`, `lastUpdated`).
 - [ ] **Link to existing monographs**: For medicines that already have a monograph in `src/data/drugMonographs/`, add a cross‑reference in the STG markdown (`sourceMonograph: amoxicillin`) so the RAG pipeline can pull both sets of chunks.
-- [ ] **RAG inclusion**: Extend the nightly `ensure-rag.sh` script to also process the `src/data/essentialMedicine/` folder, embedding chunks and storing them in Supabase `knowledge_chunks` with a `source='stg'` tag.
-- [ ] **WhatsApp bot STG lookup**: Update the WhatsApp webhook (`/api/whatsapp/incoming`) to, when a user queries an essential medicine, first retrieve the relevant STG chunks (by tag) and prepend them to the Gemini prompt, ensuring dosage and indication answers are grounded in the latest guidelines.
+- [ ] **RAG inclusion**: Extend `scripts/ensure-rag.ts` to also process `src/data/essentialMedicine/` (markdown), embedding chunks into `knowledge_chunks` with a `source='stg'` tag. Requires migration `00021` (nullable `monograph_id` + `source`/`source_ref`).
+- [ ] **WhatsApp bot STG lookup**: The webhook already supports a `source` filter (`answerWithRag(q, { source: 'stg' })` in `src/server/rag.ts`), so once STG chunks are ingested they can be retrieved/prepended with no webhook change.
 - [ ] **Validate markdown**: Run `npm run lint:md` on the new files to confirm they obey the naming, front‑matter, and heading conventions; fix any errors before committing.
 
 ## WhatsApp Bot — Feasibility & RAG Enforcement

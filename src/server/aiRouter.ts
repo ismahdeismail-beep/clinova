@@ -497,14 +497,16 @@ export async function streamGenerateContent(
 }
 
 // Embeddings — used by the background ingestion pipeline (Phase 10) and the RAG
-// pipeline. Uses Gemini gemini-embedding-2 locked to 768-dim (matches the
-// vector(768) contract). Free tier: the batch endpoint (≤100 texts/request)
-// keeps the 1000 requests/day per-model quota happy — a full 1072-monograph
-// ingest is ~160 requests. Per-minute throttling is handled by retrying on 429
-// with the server's retryDelay and by callers pacing batches (see
-// ensure-rag --pace-ms). Daily-quota exhaustion (hours-long retryDelay) throws
-// immediately instead of hanging.
-export const EMBEDDING_MODEL = 'gemini-embedding-2'
+// pipeline. Uses Gemini locked to 768-dim (matches the vector(768) contract).
+// Free-tier caps (verified empirically 2026‑10‑12): the daily quota is
+// `embed_content_free_tier_requests` = 1000 REQUESTS/day per model (a batch
+// counts as one request), while the per-minute cap counts TEXTS (100 texts/min
+// per model). So: keep batches large (≤100 texts/request) for the daily budget,
+// pace batches to ≤100 texts/min, retry on 429 with the server's retryDelay,
+// and fail fast (no hang) when a 429 announces DAILY exhaustion via an
+// hours-long retryDelay. EMBEDDING_MODEL is the model with daily quota left —
+// switch it on rotation, but never MIX models in one corpus (docs/rag-rollback.md).
+export const EMBEDDING_MODEL = 'gemini-embedding-001'
 const EMBEDDING_DIM = 768
 
 function parseGoogleDelay(body: string): number {
@@ -551,7 +553,7 @@ async function embedRequest(texts: string[]): Promise<number[][]> {
   return embeddings
 }
 
-/** Embed many texts in batches (API cap is 100/request). Retries transient 429/5xx. */
+/** Embed many texts in batches (API cap is 100/request). Retries transient 429/5xx/network. */
 export async function embedTexts(texts: string[], batchSize = 50): Promise<number[][]> {
   const out: number[][] = []
   for (let i = 0; i < texts.length; i += batchSize) {
@@ -564,7 +566,10 @@ export async function embedTexts(texts: string[], batchSize = 50): Promise<numbe
         break
       } catch (e: any) {
         lastErr = e
-        if (e.status !== 429 && !(e.status >= 500 && e.status < 600)) throw e
+        const isThrottle = e.status === 429 || (e.status >= 500 && e.status < 600)
+        // Network failures (no HTTP status) are worth retrying too.
+        const isNetwork = !e.status && e instanceof TypeError
+        if (!isThrottle && !isNetwork) throw e
         // A daily-quota 429 asks for hours — retrying would only hang. Fail fast.
         if (e.status === 429 && e.retryDelayMs > 90_000) throw e
         const wait = e.retryDelayMs > 0 ? e.retryDelayMs : 1000 * 2 ** attempt

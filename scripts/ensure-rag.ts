@@ -8,10 +8,12 @@
  * - Idempotent: every run gets a `run_id` (UTC timestamp) and upserts on
  *   (monograph_id, chunk_index). Re-running only rewrites the same rows.
  * - Batched embeddings: reuses `embedTexts` from src/server/aiRouter.ts
- *   (Gemini gemini-embedding-2 @ 768-dim). Texts are embedded 50-at-a-time via
- *   the batch endpoint so a full 1072-monograph run costs ~160 requests instead
- *   of ~8000 (free tier allows 1000 batch requests/model/day; per-minute
- *   throttling is handled by retry + internal pacing).
+ *   (model = EMBEDDING_MODEL there, locked to 768-dim). Free-tier embedding
+ *   caps, verified empirically 2026-10-12: daily = 1000 REQUESTS/day per model
+ *   (a batch counts as ONE request), per-minute = 100 TEXTS/min per model. So
+ *   batches should be large (--embed-batch 100) and paced ~60s apart — a full
+ *   1072-monograph run (~81 batches) fits one day's request budget and finishes
+ *   in ~85 min at the 100 texts/min ceiling.
  * - Resumable: `--only-missing` skips monographs that already have chunks, so
  *   an interrupted or quota-throttled run can continue the next day.
  * - Zero external CLIs: no psql/jq required.
@@ -23,10 +25,10 @@
  *   ./scripts/ensure-rag.sh        [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N]
  *
  *   --batch N        monographs flushed per upsert (default 50)
- *   --embed-batch N  texts per embedding request, max 100 (default 50)
+ *   --embed-batch N  texts per embedding request, max 100 (default 100)
  *   --reset          delete all existing knowledge_chunks first (model switch)
  *   --only-missing   only embed monographs with no chunks yet (resume)
- *   --pace-ms N      sleep between embedding batches to respect per-minute RPM (default 6000)
+ *   --pace-ms N      sleep between embedding batches (default 60000 = 100 texts/min)
  *
  * Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, GEMINI_API_KEY
  */
@@ -77,10 +79,10 @@ function parseArgs(argv: string[]): Args {
     dryRun: false,
     limit: null,
     batch: 50,
-    embedBatch: 50,
+    embedBatch: 100,
     reset: false,
     onlyMissing: false,
-    paceMs: 6000,
+    paceMs: 60000,
   }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
@@ -89,8 +91,8 @@ function parseArgs(argv: string[]): Args {
     else if (a === '--only-missing') args.onlyMissing = true
     else if (a === '--limit') args.limit = Number(argv[++i]) || null
     else if (a === '--batch') args.batch = Number(argv[++i]) || 50
-    else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 50, 100)
-    else if (a === '--pace-ms') args.paceMs = Math.max(Number(argv[++i]) || 6000, 0)
+    else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 100, 100)
+    else if (a === '--pace-ms') args.paceMs = Math.max(Number(argv[++i]) || 60000, 0)
   }
   return args
 }

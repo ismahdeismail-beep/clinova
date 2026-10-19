@@ -1,0 +1,203 @@
+{
+  "name": "Acyclovir",
+  "existing_id": "4432982d-1432-4f6b-b6c9-95fd931ea150",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Acyclovir is a synthetic purine nucleoside analogue with in vitro and in vivo inhibitory activity against herpes simplex virus types 1 and 2 (HSV-1, HSV-2) and varicella-zoster virus (VZV). Its activity is highly selective because it has affinity for the viral thymidine kinase (TK) encoded by HSV and VZV, which converts acyclovir to acyclovir monophosphate; cellular enzymes then convert it to the active triphosphate. Acyclovir triphosphate stops replication of herpes viral DNA in three ways: (1) competitive inhibition of viral DNA polymerase, (2) incorporation into and termination of the growing viral DNA chain, and (3) inactivation of the viral DNA polymerase. The greater activity against HSV compared with VZV is due to more efficient phosphorylation by viral TK (FDA acyclovir tablet label, VIROLOGY; FDA acyclovir sodium injection label, VIROLOGY).",
+    "indications": [
+      "Oral: acute treatment of herpes zoster (shingles) (FDA acyclovir tablet label, INDICATIONS AND USAGE)",
+      "Oral: treatment of initial episodes and management of recurrent episodes of genital herpes (FDA acyclovir tablet label, INDICATIONS AND USAGE)",
+      "Oral: treatment of chickenpox (varicella) (FDA acyclovir tablet label, INDICATIONS AND USAGE)",
+      "Intravenous: treatment of initial and recurrent mucosal and cutaneous herpes simplex (HSV-1 and HSV-2) infections in immunocompromised patients (FDA acyclovir sodium injection label, INDICATIONS AND USAGE)",
+      "Intravenous: treatment of severe initial clinical episodes of herpes genitalis in immunocompetent patients (FDA acyclovir sodium injection label, INDICATIONS AND USAGE)",
+      "Intravenous: treatment of herpes simplex encephalitis (FDA acyclovir sodium injection label, INDICATIONS AND USAGE)",
+      "Intravenous: treatment of neonatal herpes simplex virus infection (FDA acyclovir sodium injection label, INDICATIONS AND USAGE)",
+      "Intravenous: treatment of varicella-zoster (shingles) infections in immunocompromised patients (FDA acyclovir sodium injection label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to acyclovir or valacyclovir (FDA acyclovir tablet label, CONTRAINDICATIONS; FDA acyclovir sodium injection label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Oral, herpes simplex: nausea and/or vomiting (most frequent in treatment of genital herpes) and diarrhea; among the most frequent events in long-term suppression were nausea (4.8%) and diarrhea (2.4%) (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Oral, herpes zoster: malaise (11.5%) was the most frequent adverse event (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Oral, chickenpox: diarrhea (3.2%) was the most frequent adverse event (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Nervous system: aggressive behavior, agitation, ataxia, coma, confusion, decreased consciousness, delirium, dizziness, dysarthria, encephalopathy, hallucinations, paresthesia, psychosis, seizure, somnolence and tremors; these may be marked, particularly in older adults or patients with renal impairment (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Urogenital: renal failure, renal pain (which may be associated with renal failure), elevated blood urea nitrogen, elevated creatinine and hematuria (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Hematologic and lymphatic: anemia, leukocytoclastic vasculitis, leukopenia, lymphadenopathy and thrombocytopenia (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Hepatobiliary/pancreas: elevated liver function tests, hepatitis, hyperbilirubinemia and jaundice (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Skin: alopecia, erythema multiforme, photosensitive rash, pruritus, rash, Stevens-Johnson syndrome, toxic epidermal necrolysis and urticaria (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "General: anaphylaxis, angioedema, fever, headache, pain and peripheral edema (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Intravenous: severe local inflammatory reactions, including tissue necrosis, have occurred after infusion into extravascular tissues (FDA acyclovir sodium injection label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Oral (FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION). Acute treatment of herpes zoster: 800 mg orally every 4 hours, 5 times daily for 7 to 10 days. Initial genital herpes: 200 mg orally every 4 hours, 5 times daily for 10 days. Chronic suppressive therapy for recurrent genital herpes: 400 mg orally twice daily for up to 12 months, then re-evaluate; alternative regimens 200 mg 3 to 5 times daily. Intermittent therapy for recurrence: 200 mg orally every 4 hours, 5 times daily for 5 days, started at the earliest sign or symptom. Chickenpox in adults and children over 40 kg: 800 mg orally 4 times daily for 5 days. Intravenous (FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION): mucosal/cutaneous HSV in immunocompromised adults and adolescents: 5 mg/kg infused over 1 hour every 8 hours for 7 days; severe initial genital herpes: 5 mg/kg every 8 hours for 5 days; HSV encephalitis: 10 mg/kg every 8 hours for 10 days; varicella-zoster in immunocompromised adults and adolescents: 10 mg/kg every 8 hours for 7 days. A maximum dose equivalent to 20 mg/kg every 8 hours should not be exceeded in any patient.",
+      "geriatric": "Acyclovir plasma concentrations are higher in geriatric patients than in younger adults, in part due to age-related changes in renal function; dosage reduction may be required in geriatric patients with underlying renal impairment (FDA acyclovir tablet label, Clinical Pharmacology and Geriatric Use). Elderly patients are more likely to have renal or CNS adverse events such as somnolence, hallucinations, confusion and coma (FDA acyclovir tablet label, Geriatric Use).",
+      "paediatric": "Oral chickenpox in children 2 years and older: 20 mg/kg per dose orally 4 times daily (80 mg/kg/day) for 5 days; children over 40 kg should receive the adult dose (FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION). Safety and effectiveness of oral formulations in children younger than 2 years have not been established (FDA acyclovir tablet label, Pediatric Use). Intravenous: mucosal/cutaneous HSV in immunocompromised children under 12 years: 10 mg/kg over 1 hour every 8 hours for 7 days; HSV encephalitis 3 months to 12 years: 20 mg/kg every 8 hours for 10 days; neonatal HSV (birth to 3 months): 10 mg/kg every 8 hours for 10 days (doses of 15 to 20 mg/kg every 8 hours have been used but their safety and efficacy are not known) (FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Probenecid: coadministration with acyclovir has been shown to increase the mean acyclovir half-life and the area under the concentration-time curve, with correspondingly reduced urinary excretion and renal clearance (FDA acyclovir tablet label and acyclovir sodium injection label, Pharmacokinetics/Drug Interactions).",
+      "Nephrotoxic agents: caution is advised when acyclovir is given with other potentially nephrotoxic agents, because this may increase the risk of renal dysfunction and/or reversible central nervous system symptoms; adequate hydration should be maintained (FDA acyclovir tablet label, PRECAUTIONS)."
+    ],
+    "monitoring": "Dose adjustment is required in renal impairment; estimate creatinine clearance and adjust the dose and/or dosing interval accordingly (FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION; FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION). Maintain adequate hydration (FDA acyclovir tablet label, PRECAUTIONS). Monitor for central nervous system adverse events (somnolence, hallucinations, confusion, coma), which are reported more frequently in elderly patients and those with renal impairment (FDA acyclovir tablet label, Geriatric Use). Monitor for renal failure, thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS) and severe skin reactions (FDA acyclovir tablet label, WARNINGS; FDA acyclovir sodium injection label, WARNINGS).",
+    "patient_counselling": "Patients should consult their physician if they experience severe or troublesome adverse reactions, become pregnant or intend to become pregnant, intend to breastfeed while taking oral acyclovir, or have other questions, and should maintain adequate hydration (FDA acyclovir tablet label, PRECAUTIONS: Information for Patients). Herpes zoster: initiate treatment as soon as possible after diagnosis; there are no data on treatment begun more than 72 hours after onset of the rash. Genital herpes: acyclovir is not a cure, there are no data on whether it prevents transmission, patients should avoid contact with lesions or intercourse when lesions/symptoms are present to avoid infecting partners, and recurrence therapy should start at the first sign or symptom. Chickenpox: treatment was initiated within 24 hours of rash in the controlled studies and there is no information on later treatment (FDA acyclovir tablet label, PRECAUTIONS).",
+    "warnings": [
+      "Renal failure, in some cases resulting in death, has been observed with acyclovir therapy; intravenous infusions must be given over at least 1 hour to reduce the risk of renal tubular damage (FDA acyclovir tablet label, WARNINGS; FDA acyclovir sodium injection label, WARNINGS).",
+      "Thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS), which has resulted in death, has occurred in immunocompromised patients receiving acyclovir therapy (FDA acyclovir tablet label, WARNINGS).",
+      "Oral acyclovir is intended for oral ingestion only; acyclovir sodium injection is intended for intravenous infusion only and must not be administered topically, intramuscularly, orally, subcutaneously or in the eye (FDA acyclovir tablet label, WARNINGS; FDA acyclovir sodium injection label, WARNINGS).",
+      "Rapid or bolus intravenous injection must be avoided, and intramuscular or subcutaneous injection must be avoided (FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION).",
+      "Severe local inflammatory reactions, including tissue necrosis, have occurred following infusion into extravascular tissues (FDA acyclovir sodium injection label, ADVERSE REACTIONS)."
+    ],
+    "precautions": [
+      "Dosage adjustment is recommended in renal impairment, and caution should be exercised when acyclovir is given with other potentially nephrotoxic agents; adequate hydration should be maintained (FDA acyclovir tablet label, PRECAUTIONS).",
+      "Due to age-related reductions in renal function, elderly patients may require dose reduction and are more prone to renal and CNS adverse events (FDA acyclovir tablet label, Geriatric Use).",
+      "The possibility of viral resistance to acyclovir should be considered in patients who show a poor clinical response during therapy (FDA acyclovir tablet label and acyclovir sodium injection label, VIROLOGY: Drug Resistance)."
+    ],
+    "serious_adverse_reactions": [
+      "Renal failure, including fatal cases (FDA acyclovir sodium injection label, WARNINGS)",
+      "Thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS) in immunocompromised patients (FDA acyclovir tablet label, WARNINGS)",
+      "Anaphylaxis and angioedema (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Neurotoxicity including encephalopathy, seizures, psychosis and coma (FDA acyclovir tablet label, ADVERSE REACTIONS)",
+      "Leukocytoclastic vasculitis and hepatitis (FDA acyclovir tablet label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [
+      "There was no effect of food on the absorption of acyclovir; the oral tablets may be administered with or without food (FDA acyclovir tablet label, Clinical Pharmacology: Pharmacokinetics)."
+    ],
+    "pregnancy_category": "B (FDA acyclovir tablet label, PRECAUTIONS: Pregnancy)",
+    "pregnancy_guidance": "Acyclovir administered during organogenesis was not teratogenic in mice, rabbits or rats at exposures well above human levels. A prospective epidemiologic registry of systemic acyclovir use in the first trimester (749 pregnancies, 756 outcomes) found a rate of birth defects approximating that in the general population, but the registry is too small to rule out less common defects. Acyclovir should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA acyclovir tablet label, PRECAUTIONS: Pregnancy).",
+    "lactation_guidance": "Acyclovir concentrations have been documented in breast milk in two women after oral administration and ranged from 0.6 to 4.1 times corresponding plasma levels; this would potentially expose the nursing infant to a dose of acyclovir up to 0.3 mg/kg/day. Acyclovir should be administered to a nursing mother with caution and only when indicated (FDA acyclovir tablet label, PRECAUTIONS: Nursing Mothers).",
+    "overdose": "Overdoses involving ingestion of up to 100 capsules (20 g) have been reported; reported adverse events include agitation, coma, seizures and lethargy. Precipitation of acyclovir in renal tubules may occur when the solubility (2.5 mg/mL) is exceeded in the intratubular fluid. Overdosage has resulted in elevated BUN and serum creatinine and subsequent renal failure, particularly after bolus injections, inappropriately high doses, or when fluid and electrolyte balance was not properly monitored. In acute renal failure and anuria the patient may benefit from hemodialysis until renal function is restored (FDA acyclovir tablet label, OVERDOSAGE).",
+    "pharmacokinetics": "Oral: average bioavailability is 10% to 20% and decreases with increasing dose; peak steady-state concentrations after oral dosing were 0.83, 1.21 and 1.61 mcg/mL for 200, 400 and 800 mg respectively. Plasma protein binding is 9% to 33% and plasma elimination half-life is 2.5 to 3.3 hours. There was no effect of food on absorption (FDA acyclovir tablet label, Clinical Pharmacology: Pharmacokinetics). Intravenous: renal excretion of unchanged drug accounts for 62% to 91% of the dose; the major urinary metabolite is 9-carboxymethoxymethylguanine (up to 14.1% of the dose in normal renal function). Cerebrospinal fluid concentrations are approximately 50% of plasma values. Half-life and total body clearance depend on renal function (half-life 2.5 hours at CrCl greater than 80 mL/min and 19.5 hours in anuria) (FDA acyclovir sodium injection label, CLINICAL PHARMACOLOGY: Pharmacokinetics).",
+    "clinical_pearls": [
+      "Intravenous acyclovir must be infused over at least 1 hour and adequate hydration maintained to reduce the risk of renal tubular damage; rapid or bolus IV injection must be avoided (FDA acyclovir sodium injection label, WARNINGS).",
+      "Because elimination is renal, acyclovir requires dose/interval adjustment in impaired renal function, and neurotoxicity is more likely in renal impairment and in the elderly (FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION and Geriatric Use).",
+      "Acyclovir and valacyclovir share the same contraindication (hypersensitivity to either) because valacyclovir is the L-valyl prodrug of acyclovir (FDA acyclovir tablet label, CONTRAINDICATIONS).",
+      "Acyclovir is also available as topical cream/ointment (e.g. Zovirax) and ophthalmic ointment (Avaclyr), which have their own labelling and are not interchangeable with the oral or intravenous products."
+    ],
+    "brand_names": ["Zovirax", "Avaclyr"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Oral (FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION). For the 200 mg every 4 hours regimen: CrCl greater than 10 mL/min/1.73 m2 - 200 mg every 4 hours 5 times daily; CrCl 0 to 10 - 200 mg every 12 hours. For the 400 mg every 12 hours regimen: CrCl greater than 10 - 400 mg every 12 hours; CrCl 0 to 10 - 200 mg every 12 hours. For the 800 mg every 4 hours regimen: CrCl greater than 25 - 800 mg every 4 hours 5 times daily; CrCl 10 to 25 - 800 mg every 8 hours; CrCl 0 to 10 - 800 mg every 12 hours. Patients requiring haemodialysis should receive an additional dose after each dialysis session. Intravenous (FDA acyclovir sodium injection label Table 5): adjust the dosing interval by creatinine clearance - CrCl greater than 50 mL/min/1.73 m2: 100% of dose every 8 hours; CrCl 25 to 50: 100% every 12 hours; CrCl 10 to 25: 100% every 24 hours; CrCl 0 to 10: 50% every 24 hours. For dialysis patients, an additional dose should be administered after each dialysis session; no supplemental dose appears necessary after peritoneal dialysis.",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral tablets are swallowed and may be taken with or without food (FDA acyclovir tablet label, Clinical Pharmacology: Pharmacokinetics). Intravenous acyclovir sodium is for intravenous infusion only: the calculated dose must be further diluted in an appropriate intravenous solution to a volume selected for administration during each 1-hour infusion, with infusion concentrations of approximately 7 mg/mL or lower recommended; higher concentrations (e.g. 10 mg/mL) may produce phlebitis or inflammation at the injection site on inadvertent extravasation. Each diluted dose should be used within 24 hours (FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION: Administration)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA acyclovir tablet label, VIROLOGY: Mechanism of Antiviral Action; FDA acyclovir sodium injection label, VIROLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA acyclovir tablet label, INDICATIONS AND USAGE; FDA acyclovir sodium injection label, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA acyclovir tablet label and acyclovir sodium injection label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA acyclovir tablet label, ADVERSE REACTIONS; FDA acyclovir sodium injection label, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION, Geriatric Use and Pediatric Use; FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA acyclovir tablet label, Pharmacokinetics and PRECAUTIONS; FDA acyclovir sodium injection label, Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION, PRECAUTIONS, Geriatric Use and WARNINGS; FDA acyclovir sodium injection label, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA acyclovir tablet label, PRECAUTIONS: Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA acyclovir tablet label, WARNINGS; FDA acyclovir sodium injection label, WARNINGS and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA acyclovir tablet label, PRECAUTIONS and Geriatric Use; both labels, VIROLOGY: Drug Resistance",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA acyclovir tablet label, WARNINGS and ADVERSE REACTIONS; FDA acyclovir sodium injection label, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA acyclovir tablet label, Clinical Pharmacology: Pharmacokinetics (no effect of food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA acyclovir tablet label, PRECAUTIONS: Pregnancy (Pregnancy Category B)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA acyclovir tablet label, PRECAUTIONS: Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA acyclovir tablet label, PRECAUTIONS: Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA acyclovir tablet label, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA acyclovir tablet label, Clinical Pharmacology: Pharmacokinetics; FDA acyclovir sodium injection label, CLINICAL PHARMACOLOGY: Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA acyclovir sodium injection label, WARNINGS; FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION, Geriatric Use and CONTRAINDICATIONS; Zovirax cream and Avaclyr ointment DailyMed entries",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=125dbe4e-94ba-45bd-a714-f9c4b8e8b5c2"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Zovirax (acyclovir) cream/ointment and Avaclyr (acyclovir) ophthalmic ointment listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=125dbe4e-94ba-45bd-a714-f9c4b8e8b5c2"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA acyclovir tablet or acyclovir sodium injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA acyclovir tablet label, DOSAGE AND ADMINISTRATION; FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION Table 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d4c9317-7475-42ec-a0b0-d43929114369"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA acyclovir tablet label, Pharmacokinetics; FDA acyclovir sodium injection label, DOSAGE AND ADMINISTRATION: Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23a7cf9e-f21b-06c2-e063-6394a90aa623"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA tablet or injection labelling; acyclovir is eliminated primarily by the kidney)"
+  ],
+  "notes": "NAME ALIAS: 'Acyclovir' is the USAN/FDA spelling of the same molecule as the INN/BAN spelling 'Aciclovir'. The two rows in drug_monographs (this row and 'Aciclovir', id 6cb84b1c-8f28-40e5-9a07-bddf3276cc1e) are the same drug and their content has been kept identical. A reviewer should consider merging the duplicate rows. Content is sourced from the FDA acyclovir oral tablet label and the FDA acyclovir sodium injection label; the existing generic-antimicrobial template text has been replaced. The drug_class value already present ('Herpes Simplex Virus Nucleoside Analog DNA Polymerase Inhibitor') is consistent with this content. FDA Pregnancy Category B is obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and is reported only because the label states it."
+}

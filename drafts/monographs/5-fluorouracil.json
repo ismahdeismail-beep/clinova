@@ -1,0 +1,204 @@
+{
+  "name": "5-Fluorouracil",
+  "existing_id": "f131c2a9-4b89-453a-af56-684e928bdc7a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Fluorouracil is a fluorinated pyrimidine nucleoside metabolic inhibitor. Inside cells it is converted to three active metabolites: 5-fluoro-2'-deoxyuridine-5'-monophosphate (FdUMP), 5-fluorouridine-5'-triphosphate (FUTP) and 5-fluoro-2'-deoxyuridine-5'-triphosphate (FdUTP). FdUMP inhibits thymidylate synthase, blocking de novo synthesis of thymidine and thereby DNA synthesis; FUTP is incorporated into RNA and FdUTP into DNA, disrupting RNA and DNA function. These processes are essential for cell division, so the effects are most marked in rapidly proliferating cells and lead to cell death (FDA fluorouracil injection label, sections 12.1 and 12.3).",
+    "indications": [
+      "Adenocarcinoma of the colon and rectum (FDA fluorouracil injection label, section 1.1)",
+      "Adenocarcinoma of the breast (FDA fluorouracil injection label, section 1.2)",
+      "Gastric adenocarcinoma (FDA fluorouracil injection label, section 1.3)",
+      "Pancreatic adenocarcinoma (FDA fluorouracil injection label, section 1.4)",
+      "Topical 0.5% cream: topical treatment of multiple actinic (solar) keratoses of the face and anterior scalp (Dr. Reddy's fluorouracil cream 0.5% label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Intravenous fluorouracil: none. The FDA injection labelling states 'Contraindications: None' (FDA fluorouracil injection label, section 4).",
+      "Topical 0.5% cream: contraindicated in women who are or may become pregnant, because fluorouracil may cause fetal harm (Dr. Reddy's fluorouracil cream 0.5% label, CONTRAINDICATIONS).",
+      "Topical 0.5% cream: contraindicated in patients with dihydropyrimidine dehydrogenase (DPD) enzyme deficiency (Dr. Reddy's fluorouracil cream 0.5% label, CONTRAINDICATIONS).",
+      "Topical 0.5% cream: contraindicated in patients with known hypersensitivity to any of its components (Dr. Reddy's fluorouracil cream 0.5% label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Gastrointestinal: mucositis/stomatitis or esophagopharyngitis (which may lead to mucosal sloughing or ulceration), diarrhea, nausea, vomiting and gastrointestinal ulceration (FDA injection label, sections 5.5, 5.8 and 6.2)",
+      "Hematologic: myelosuppression including neutropenia, thrombocytopenia and anemia, and pancytopenia; the neutrophil nadir commonly occurs 9 to 14 days after a dose (FDA injection label, sections 5.7 and 6.2)",
+      "Cardiac: angina, myocardial infarction/ischemia, arrhythmia and heart failure (FDA injection label, section 5.2)",
+      "Neurologic: acute cerebellar syndrome, confusion, disorientation, ataxia, visual disturbance, nystagmus and headache (FDA injection label, sections 5.4 and 6.2)",
+      "Hyperammonemic encephalopathy (altered mental status, confusion, disorientation, coma or ataxia with elevated serum ammonia) (FDA injection label, section 5.3)",
+      "Palmar-plantar erythrodysesthesia (hand-foot syndrome): tingling, pain, swelling, erythema with tenderness, and desquamation (FDA injection label, section 5.6)",
+      "Dermatologic: dry skin, fissuring, photosensitivity (erythema or increased skin pigmentation), vein pigmentation and nail changes including loss of nails (FDA injection label, section 6.2)",
+      "Ophthalmic: lacrimal duct stenosis, lacrimation, photophobia and visual changes (FDA injection label, section 6.2)",
+      "Hypersensitivity: anaphylaxis and generalized allergic reactions (FDA injection label, section 6.2)",
+      "Topical 0.5% cream: application-site reaction (redness, dryness, burning, pain, erosion, swelling) in 94.6% and eye irritation in 5.4% of patients (Dr. Reddy's fluorouracil cream 0.5% label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Dose and schedule must be individualised by tumour type, specific regimen, disease state and patient risk factors; fluorouracil is given as an intravenous bolus or intravenous infusion (FDA injection label, section 2.2). Colorectal adenocarcinoma, infusional regimen with leucovorin alone or with oxaliplatin or irinotecan: 400 mg/m2 IV bolus on Day 1, then 2400 to 3000 mg/m2 IV continuous infusion over 46 hours every two weeks; bolus regimen with leucovorin: 500 mg/m2 IV bolus on Days 1, 8, 15, 22, 29 and 36 in 8-week cycles. Breast adenocarcinoma as a component of a cyclophosphamide-based multidrug regimen: 500 mg/m2 or 600 mg/m2 IV on Days 1 and 8 every 28 days for 6 cycles. Gastric adenocarcinoma as a component of a platinum-containing multidrug regimen: 200 mg/m2 to 1000 mg/m2 IV continuous infusion over 24 hours, with cycle frequency depending on the regimen. Pancreatic adenocarcinoma as an infusional regimen with leucovorin or a multidrug regimen including leucovorin: 400 mg/m2 IV bolus on Day 1, then 2400 mg/m2 IV continuous infusion over 46 hours every two weeks (FDA injection label, sections 2.3 to 2.6). Topical 0.5% cream for actinic keratoses: apply once daily to the entire face/anterior bald scalp for 1, 2 or 4 weeks as tolerated (Dr. Reddy's fluorouracil cream 0.5% label, Clinical Trials/Information for the Patient).",
+      "geriatric": "Reported clinical experience has not identified differences in safety or effectiveness between elderly and younger patients; no specific dose adjustment is stated (FDA injection label, section 8.5). For the 0.5% topical cream, no significant differences in safety or efficacy measures were demonstrated in patients 65 years and older compared to other patients (Dr. Reddy's fluorouracil cream 0.5% label, Geriatric Use).",
+      "paediatric": "Safety and effectiveness in paediatric patients have not been established for the injection (FDA injection label, section 8.4). The 0.5% topical cream should not be used in children and its safety and effectiveness are not established in patients under 18 years (Dr. Reddy's fluorouracil cream 0.5% label, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Coumarin-derivative anticoagulants (e.g. warfarin): concurrent use can result in clinically significant increases in coagulation parameters (INR/prothrombin time), possibly through inhibition of CYP2C9 by fluorouracil or its metabolites; closely monitor INR or prothrombin time and adjust the anticoagulant dose accordingly (FDA injection label, sections 5.9 and 7.1)."
+    ],
+    "monitoring": "Test for DPYD genetic variants before initiating therapy unless immediate treatment is necessary; avoid use in patients known to have certain homozygous or compound heterozygous DPYD variants that cause complete DPD deficiency (FDA injection label, section 2.1). Obtain complete blood counts before each treatment cycle, weekly if administered on a weekly or similar schedule, and as needed for myelosuppression (section 5.7). Closely monitor INR/prothrombin time in patients receiving a coumarin-derivative anticoagulant (section 5.9). For suspected hyperammonemic encephalopathy, withhold therapy and check serum ammonia level (section 5.3). Monitor for cardiac toxicity, severe diarrhea, mucositis and hand-foot syndrome (sections 5.2, 5.5, 5.6 and 5.8).",
+    "patient_counselling": "Advise patients: serious or fatal reactions can occur with DPD deficiency - report severe mucositis, diarrhea, neutropenia or neurotoxicity immediately. Seek emergency care for new chest pain, shortness of breath, dizziness or lightheadedness (cardiotoxicity). Seek emergency care for new confusion, disorientation or altered mental status, difficulty with balance or coordination, or visual disturbance. Contact the provider for severe diarrhea or painful mouth sores with decreased intake of food or fluids. Contact the provider for tingling, burning, redness, flaking, swelling, blisters or sores on the palms or soles. Keep blood-test appointments and check temperature daily; report fever or other signs of infection. Notify the provider of all medicines including warfarin or other coumarin anticoagulants. Females of reproductive potential and males with female partners of reproductive potential should use effective contraception during treatment and for up to 3 months after the last dose; fertility may be impaired. Nursing mothers should discontinue nursing (FDA injection label, section 17).",
+    "warnings": [
+      "WARNING (boxed): Serious adverse reactions or death in patients with complete dihydropyrimidine dehydrogenase (DPD) deficiency - test for DPYD variants before starting and avoid use in patients with certain DPYD variants causing complete DPD deficiency (FDA injection label, Boxed Warning and section 5.1)",
+      "Cardiotoxicity, including angina, myocardial infarction/ischemia, arrhythmia and heart failure; risk is higher with continuous infusion than bolus and in patients with coronary artery disease; withhold for cardiotoxicity (FDA injection label, section 5.2)",
+      "Hyperammonemic encephalopathy, which can begin within 72 hours of starting the infusion; withhold and initiate ammonia-lowering therapy (FDA injection label, section 5.3)",
+      "Neurologic toxicity including acute cerebellar syndrome, confusion, disorientation, ataxia or visual disturbances; withhold for neurologic toxicity (FDA injection label, section 5.4)",
+      "Severe diarrhea; withhold for Grade 3 or 4 diarrhea until resolved to Grade 1, then resume at a reduced dose (FDA injection label, section 5.5)",
+      "Palmar-plantar erythrodysesthesia (hand-foot syndrome); withhold for Grade 2 or 3 (FDA injection label, section 5.6)",
+      "Severe and fatal myelosuppression; withhold until Grade 4 myelosuppression resolves, then resume at a reduced dose (FDA injection label, section 5.7)",
+      "Severe mucositis; withhold for Grade 3 or 4 mucositis and resume at a reduced dose once resolved to Grade 1 (FDA injection label, section 5.8)",
+      "Increased risk of elevated INR when administered with warfarin; monitor coagulation (FDA injection label, section 5.9)",
+      "Embryofetal toxicity: based on its mechanism of action fluorouracil can cause fetal harm; advise effective contraception in females and males during and for 3 months after therapy (FDA injection label, section 5.10)"
+    ],
+    "precautions": [
+      "Dose modifications are required for adverse reactions; there is no recommended resumption dose after cardiac toxicity, hyperammonemic encephalopathy, or acute cerebellar syndrome/neurologic toxicity (FDA injection label, section 2.7).",
+      "Fluorouracil injection is supplied as a pharmacy bulk package and is not for direct infusion; prepare doses under appropriate conditions for cytotoxic drugs and discard the pharmacy bulk package 4 hours after penetration of the container closure (FDA injection label, section 2.8).",
+      "Do not administer in the same intravenous line concomitantly with other medicinal products (FDA injection label, section 2.9)."
+    ],
+    "serious_adverse_reactions": [
+      "Myelosuppression (severe and potentially fatal), including neutropenia, thrombocytopenia, anemia and pancytopenia (FDA injection label, section 5.7)",
+      "Cardiotoxicity (angina, myocardial infarction/ischemia, arrhythmia, heart failure) (FDA injection label, section 5.2)",
+      "Hyperammonemic encephalopathy (FDA injection label, section 5.3)",
+      "Neurologic toxicity including acute cerebellar syndrome (FDA injection label, section 5.4)",
+      "Severe diarrhea (FDA injection label, section 5.5)",
+      "Severe mucositis (FDA injection label, section 5.8)",
+      "Anaphylaxis and generalized allergic reactions (FDA injection label, section 6.2)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "D (FDA fluorouracil injection label, section 8.1)",
+    "pregnancy_guidance": "Fluorouracil can cause fetal harm when administered to a pregnant woman based on its mechanism of action; in animal studies it caused embryolethality and teratogenicity at doses lower than a human dose of 12 mg/kg. There are no adequate and well-controlled studies in pregnant women. If the drug is used during pregnancy, or if the patient becomes pregnant while taking it, apprise the patient of the potential hazard to the fetus. Advise females of reproductive potential and males with female partners of reproductive potential to use effective contraception during treatment and for up to 3 months after cessation (FDA injection label, sections 5.10, 8.1 and 8.6). The topical 0.5% cream is contraindicated in women who are or may become pregnant (Dr. Reddy's fluorouracil cream 0.5% label, CONTRAINDICATIONS).",
+    "lactation_guidance": "It is not known whether fluorouracil or its metabolites are present in human milk. Because many drugs are present in human milk and because of the potential for serious adverse reactions in nursing infants from fluorouracil, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother; the injection label instructs nursing mothers to discontinue nursing (FDA injection label, section 8.3).",
+    "overdose": "Administer uridine triacetate within 96 hours following the end of a fluorouracil infusion for management of fluorouracil overdose (FDA injection label, section 10).",
+    "pharmacokinetics": "Following intravenous bolus injection, fluorouracil distributes throughout the body including the intestinal mucosa, bone marrow, liver, cerebrospinal fluid and brain. 5% to 20% of the parent drug is excreted unchanged in the urine within six hours; the remainder of the dose is metabolised, primarily in the liver, and metabolites (e.g. urea and alpha-fluoro-beta-alanine) are excreted in the urine over 3 to 4 hours. Following intravenous bolus injection as a single agent, the elimination half-life increased with dose from 8 to 20 minutes. The DPYD gene encodes DPD, which is responsible for catabolism of more than 80% of fluorouracil (FDA injection label, sections 12.3 and 12.5).",
+    "clinical_pearls": [
+      "Test for DPYD variants before the first dose when possible; complete DPD deficiency can cause acute early-onset, life-threatening toxicity such as mucositis, diarrhea, neutropenia and neurotoxicity (FDA injection label, section 5.1).",
+      "Uridine triacetate is the specific antidote for fluorouracil overdose and should be given within 96 hours of the end of the infusion (FDA injection label, section 10).",
+      "Continuous infusion is associated with a higher risk of cardiotoxicity and hand-foot syndrome, whereas bolus administration is associated with a higher incidence of mucositis (FDA injection label, sections 5.2 and 5.8).",
+      "Fluorouracil exists as both intravenous (systemic antineoplastic) and topical (actinic keratosis) formulations with different indications, contraindications and safety profiles; the formulations are not interchangeable."
+    ],
+    "brand_names": ["Efudex"],
+    "black_box_warnings": [
+      "Serious adverse reactions or death in patients with complete DPD deficiency. Test patients for genetic variants of DPYD prior to initiating fluorouracil unless immediate treatment is necessary, and avoid use in patients with certain homozygous or compound heterozygous DPYD variants that result in complete DPD deficiency (FDA fluorouracil injection label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Intravenous bolus or intravenous infusion; do not inject the entire contents of the vial directly into patients. For bolus administration, store undiluted fluorouracil in the syringe for up to 4 hours at room temperature (25 degrees C) and administer through an established intravenous line. Store diluted solutions for up to 4 hours at 25 degrees C before administration; for infusion regimens administer through a central venous line using an infusion pump. Do not administer in the same intravenous line concomitantly with other medicinal products. The pharmacy bulk package must be discarded 4 hours after penetration of the container closure. Store the vial at 20 to 25 degrees C (68 to 77 degrees F), protect from light and do not freeze (FDA injection label, sections 2.8, 2.9 and 16.2). Topical 0.5% cream: cleanse the affected area and wait 10 minutes before applying; apply once daily to the affected area, wash hands immediately afterwards, avoid contact with the eyes, eyelids, nostrils and mouth, and avoid prolonged sun exposure (Dr. Reddy's fluorouracil cream 0.5% label, Information for the Patient)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Fluorouracil Injection USP (Fresenius Kabi), sections 12.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Fluorouracil Injection USP, sections 1.1-1.4 (IV); Dr. Reddy's Fluorouracil Cream 0.5% label, INDICATIONS AND USAGE (topical)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA injection label section 4 (none); Dr. Reddy's Fluorouracil Cream 0.5% label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37dcfb83-0e7d-d23d-9cd5-afa5bdc30628"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA injection label, sections 5.2-5.8 and 6.2; Dr. Reddy's Fluorouracil Cream 0.5% label, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA injection label, sections 2.3-2.6 and 8.5; Dr. Reddy's Fluorouracil Cream 0.5% label, Clinical Trials, Geriatric Use and Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA injection label, sections 5.9 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA injection label, sections 2.1, 5.2, 5.3, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA injection label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA injection label, Boxed Warning and sections 5.1-5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA injection label, sections 2.7, 2.8 and 2.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA injection label, sections 5.2-5.8 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA injection label, section 8.1 (Pregnancy Category D)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA injection label, sections 5.10, 8.1 and 8.6; Dr. Reddy's Fluorouracil Cream 0.5% label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA injection label, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA injection label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA injection label, sections 12.3 and 12.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA injection label, sections 5.1, 5.2, 5.8 and 10; formulation information from both labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Efudex (fluorouracil) solution/cream listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA injection label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA injection label, sections 2.8, 2.9 and 16.2; Dr. Reddy's Fluorouracil Cream 0.5% label, Information for the Patient",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen) ",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA injection or topical labels)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA injection or topical labels)"
+  ],
+  "notes": "The table stores this agent as '5-Fluorouracil'. The molecule is used as an intravenous antineoplastic (pharmacy bulk vials) and as a topical 0.5%/5% cream or solution for actinic keratoses; these route-specific products have different indications, contraindications and safety profiles and both are covered here. The existing row previously carried olanzapine/schizophrenia indication text (wrong drug) which has been superseded by this draft. FDA pregnancy categories (D for the injection) are obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and are reported only because the label still states them. The historical injectable brand name 'Adrucil' could not be verified on DailyMed and is therefore omitted from brand_names. The pharmacy bulk package is not for direct infusion."
+}

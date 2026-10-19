@@ -1,0 +1,189 @@
+{
+  "name": "Darunavir",
+  "existing_id": "ab4dc35a-0ead-44a5-aa8b-87a0ddb2a229",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Darunavir is an inhibitor of the HIV-1 protease. It selectively inhibits the cleavage of HIV-1 encoded Gag-Pol polyproteins in infected cells, thereby preventing the formation of mature virus particles (FDA PREZISTA label, section 12.4, Microbiology: Mechanism of Action).",
+    "indications": [
+      "Treatment of HIV-1 infection in adult and pediatric patients 3 years of age and older, in combination with other antiretroviral agents; must be co-administered with ritonavir (PREZISTA/ritonavir) (FDA PREZISTA label, section 1)"
+    ],
+    "contraindications": [
+      "Coadministration of PREZISTA/ritonavir with drugs that are highly dependent on CYP3A for clearance and for which elevated plasma concentrations are associated with serious and/or life-threatening events (narrow therapeutic index): alfuzosin; colchicine (in patients with renal and/or hepatic impairment); rifampin; lurasidone, pimozide; dronedarone, ivabradine, ranolazine; dihydroergotamine, ergotamine, methylergonovine; St. John's wort; elbasvir/grazoprevir; lomitapide, lovastatin, simvastatin; naloxegol; sildenafil when used for pulmonary arterial hypertension; orally administered midazolam, triazolam (FDA PREZISTA label, section 4)",
+      "Due to the need for coadministration with ritonavir, ritonavir contraindications also apply (FDA PREZISTA label, section 4)"
+    ],
+    "side_effects": [
+      "Most common clinical adverse drug reactions (>=5%, at least moderate intensity): diarrhea, nausea, rash, headache, abdominal pain, vomiting (FDA PREZISTA label, section 6.1)",
+      "Treatment-naive (TMC114-C211): diarrhea 9%, headache 7%, abdominal pain 6%, rash 6%, nausea 4%, vomiting 2% (FDA PREZISTA label, section 6.1, Table 6)",
+      "Treatment-experienced (TMC114-C214): diarrhea 14%, nausea 7%, abdominal pain 6%, rash 7%, vomiting 5%, headache 3% (FDA PREZISTA label, section 6.1, Table 8)",
+      "Rash (all grades) occurred in 10.3% of subjects; mostly mild-to-moderate; discontinuation rate due to rash 0.5%; rash more common with PREZISTA/ritonavir + raltegravir (FDA PREZISTA label, section 5.3)",
+      "Postmarketing: liver injury including fatalities; Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS, acute generalized exanthematous pustulosis; immune reconstitution syndrome; fat redistribution; diabetes mellitus/hyperglycemia; increased bleeding in hemophilia (FDA PREZISTA label, sections 5.2, 5.3, 5.6, 5.7, 5.8, 5.9, 6.2)"
+    ],
+    "dosage": {
+      "adult": "PREZISTA must be co-administered with ritonavir and with food. Treatment-naive and treatment-experienced adults with no darunavir resistance-associated substitutions: 800 mg once daily with ritonavir 100 mg once daily with food. Treatment-experienced adults with at least one darunavir resistance-associated substitution: 600 mg twice daily with ritonavir 100 mg twice daily with food. Pregnant patients: 600 mg twice daily with ritonavir 100 mg twice daily with food (800 mg once daily with ritonavir 100 mg once daily only in certain pregnant patients already virologically suppressed on that regimen prior to pregnancy). (FDA PREZISTA label, sections 2.3, 2.4).",
+      "geriatric": "Insufficient data in patients >=65 years to determine differences. No specific dose adjustment stated (FDA PREZISTA label, section 8.5).",
+      "paediatric": "Pediatric patients 3 to <18 years, weighing >=10 kg: weight-based dosing with ritonavir and food, not to exceed adult dose. Treatment-naive or treatment-experienced with no darunavir resistance-associated substitutions: 10 to <15 kg: darunavir 35 mg/kg once daily with ritonavir 7 mg/kg once daily (oral suspension); >=15 kg: 600 mg (15-<30 kg), 675 mg (30-<40 kg), or 800 mg (>=40 kg) once daily with ritonavir 100 mg. Treatment-experienced with at least one darunavir resistance-associated substitution: 20 mg/kg twice daily with ritonavir 3 mg/kg twice daily (10-<15 kg) or 375 mg, 450 mg, 600 mg twice daily with ritonavir 48 mg, 60 mg, 100 mg respectively (>=15 kg). Not recommended below 3 years of age (FDA PREZISTA label, sections 2.5, 5.10)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "PREZISTA must be co-administered with ritonavir to exert therapeutic effect; failure results in insufficient darunavir plasma levels (FDA PREZISTA label, section 5.1)",
+      "CYP3A substrate and inhibitor: concomitant drugs can alter darunavir concentrations and darunavir can alter concentrations of other drugs; potential for serious adverse reactions due to drug interactions (FDA PREZISTA label, sections 5.5, 7)",
+      "Contraindicated drugs (section 4): alfuzosin, colchicine (renal/hepatic impairment), rifampin, lurasidone, pimozide, dronedarone, ivabradine, ranolazine, ergot derivatives, St. John's wort, elbasvir/grazoprevir, lomitapide, lovastatin, simvastatin, naloxegol, sildenafil (PAH), oral midazolam, triazolam (FDA PREZISTA label, section 4)",
+      "Hepatitis C direct-acting antivirals: elbasvir/grazoprevir contraindicated; daclatasvir (with ritonavir) showed no clinically relevant change in exposure (FDA PREZISTA label, sections 4, 7.4; DAKLINZA label section 7.4)",
+      "HMG-CoA reductase inhibitors: lovastatin and simvastatin contraindicated; monitor with other statins (FDA PREZISTA label, section 7.3)",
+      "Anticoagulants, antiarrhythmics, anticonvulsants, antimycobacterials, antipsychotics, benzodiazepines, corticosteroids, immunosuppressants, PDE5 inhibitors, hormonal contraceptives: clinically significant interactions requiring dose adjustment or avoidance (FDA PREZISTA label, section 7.3, Table 10)"
+    ],
+    "monitoring": "In treatment-experienced patients, treatment history genotypic and/or phenotypic testing recommended prior to initiation to assess drug susceptibility. Monitor serum liver biochemistries before and during therapy, especially in patients with underlying chronic hepatitis, cirrhosis, or pre-treatment transaminase elevations. Monitor for severe skin reactions, new-onset diabetes/hyperglycemia, fat redistribution, immune reconstitution syndrome, increased bleeding in hemophilia (FDA PREZISTA label, sections 2.1, 2.2, 5.2, 5.3, 5.6, 5.7, 5.8, 5.9).",
+    "patient_counselling": "Take PREZISTA with ritonavir and with food every day; failure to coadminister with ritonavir and food may result in loss of efficacy. Do not alter dose or stop without consulting healthcare provider. Women with HIV should not breastfeed. Report signs of liver injury (fatigue, anorexia, nausea, jaundice, dark urine, liver tenderness) and severe rash. Pregnancy exposure considerations: total darunavir exposures generally lower during pregnancy, greater reduction with once-daily dosing (FDA PREZISTA label, sections 5.1, 8.1, 17).",
+    "warnings": [
+      "Hepatotoxicity: drug-induced hepatitis reported; postmarketing cases of liver injury including fatalities; monitor liver function before and during therapy (FDA PREZISTA label, section 5.2)",
+      "Severe skin reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS, acute generalized exanthematous pustulosis reported; discontinue immediately if severe reaction develops (FDA PREZISTA label, section 5.3)",
+      "Sulfa allergy: darunavir contains a sulfonamide moiety; use with caution in patients with known sulfonamide allergy (FDA PREZISTA label, section 5.4)",
+      "Risk of serious adverse reactions due to drug interactions (FDA PREZISTA label, section 5.5)",
+      "Diabetes mellitus/hyperglycemia, fat redistribution, immune reconstitution syndrome, hemophilia bleeding (FDA PREZISTA label, sections 5.6-5.9)",
+      "Not recommended in pediatric patients below 3 years of age due to toxicity and mortality in juvenile rats (FDA PREZISTA label, section 5.10)"
+    ],
+    "precautions": [
+      "PREZISTA must be co-administered with ritonavir and food to achieve the desired antiviral effect (FDA PREZISTA label, section 5.1)",
+      "Use with caution in patients with known sulfonamide allergy (FDA PREZISTA label, section 5.4)",
+      "Not recommended in patients with severe hepatic impairment (FDA PREZISTA label, section 2.6)",
+      "Consider alternatives in patients at high risk for renal disease (not specifically; renal clearance limited) (FDA PREZISTA label, section 8.7)"
+    ],
+    "serious_adverse_reactions": [
+      "Hepatotoxicity, including fatal liver injury (FDA PREZISTA label, section 5.2)",
+      "Severe skin reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS, AGEP (FDA PREZISTA label, section 5.3)",
+      "Serious adverse reactions due to drug interactions (FDA PREZISTA label, section 5.5)"
+    ],
+    "food_interactions": ["Must be taken with food (FDA PREZISTA label, sections 2.3, 5.1)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Total darunavir exposures are generally lower during pregnancy compared with the postpartum period; reduction greater with once-daily dosing than twice-daily dosing. Recommended dosage in pregnant patients is 600 mg twice daily with ritonavir 100 mg twice daily with food. 800 mg once daily with ritonavir 100 mg once daily should only be considered in certain pregnant patients already on a stable regimen prior to pregnancy who are virologically suppressed (HIV-1 RNA <50 copies/mL) and in whom change to twice-daily dosing may compromise tolerability or compliance. Women infected with HIV should be instructed not to breastfeed (FDA PREZISTA label, sections 2.4, 8.1, 8.2).",
+    "lactation_guidance": "No data on presence of darunavir in human milk, effects on breastfed infant, or milk production. Darunavir present in milk of lactating rats. Because of potential for HIV transmission, developing viral resistance, and serious adverse reactions in a breastfed infant, instruct mothers not to breastfeed if receiving PREZISTA (FDA PREZISTA label, section 8.2).",
+    "overdose": "Human experience of acute overdose is limited. No specific antidote available. Treatment consists of general supportive measures including monitoring of vital signs and observation of clinical status. Since darunavir is highly protein bound, dialysis is unlikely to be beneficial in significant removal of the active substance (FDA PREZISTA label, section 10).",
+    "pharmacokinetics": "Darunavir is an HIV-1 protease inhibitor metabolized by CYP3A. Must be co-administered with ritonavir. Total darunavir exposures lower during pregnancy. Hepatic impairment: no dosage adjustment for mild/moderate; not recommended in severe hepatic impairment. Renal impairment: pharmacokinetics not significantly affected in moderate renal impairment (CrCl 30-60 mL/min); no data in severe renal impairment or ESRD; highly protein bound, unlikely removed by dialysis (FDA PREZISTA label, sections 8.6, 8.7, 12.3).",
+    "clinical_pearls": [
+      "Must be coadministered with ritonavir and taken with food; failure results in subtherapeutic levels (FDA PREZISTA label, sections 2.3, 5.1)",
+      "Darunavir contains a sulfonamide moiety - caution in sulfonamide allergy (FDA PREZISTA label, section 5.4)",
+      "Not recommended below 3 years of age due to juvenile rat toxicity (FDA PREZISTA label, section 5.10)",
+      "Pregnancy: prefer twice-daily 600/100 mg dosing (FDA PREZISTA label, section 2.4)"
+    ],
+    "brand_names": ["Prezista"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment required for mild/moderate renal impairment; no pharmacokinetic data in severe renal impairment or ESRD; darunavir and ritonavir highly protein bound, unlikely removed by hemodialysis or peritoneal dialysis (FDA PREZISTA label, sections 8.7, 12.3).",
+    "hepatic_dose_adjustment": "No dosage adjustment required for mild or moderate hepatic impairment; not recommended in severe hepatic impairment (no data) (FDA PREZISTA label, sections 2.6, 8.6).",
+    "administration_instructions": "Take PREZISTA with ritonavir and with food. Tablets can be swallowed whole; patients who have difficulty swallowing tablets can use the 100 mg/mL oral suspension. Oral suspension dose may be split into two administrations for 8 mL dose using the included dosing syringe (FDA PREZISTA label, sections 2.3, 3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA PREZISTA label, section 12.4 Microbiology: Mechanism of Action (revised 3/2023)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA PREZISTA label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA PREZISTA label, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA PREZISTA label, sections 5.2, 5.3, 5.6, 5.7, 5.8, 5.9, 6.1, 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA PREZISTA label, sections 2.3, 2.4, 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA PREZISTA label, sections 4, 5.5, 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA PREZISTA label, sections 2.1, 2.2, 5.2, 5.3, 5.6, 5.7, 5.8, 5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA PREZISTA label, sections 5.1, 8.1, 8.2, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA PREZISTA label, sections 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA PREZISTA label, sections 2.6, 5.1, 5.4, 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA PREZISTA label, sections 5.2, 5.3, 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA PREZISTA label, sections 2.3, 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA PREZISTA label, sections 2.4, 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA PREZISTA label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA PREZISTA label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA PREZISTA label, sections 8.6, 8.7, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA PREZISTA label, sections 2.4, 5.1, 5.4, 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Prezista brand name per label and DB row (DB lists Darunavir; label lists Prezista)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA PREZISTA label, sections 8.7, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA PREZISTA label, sections 2.6, 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA PREZISTA label, sections 2.3, 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the PREZISTA label)"
+  ],
+  "notes": "PREZISTA (darunavir) is an HIV-1 protease inhibitor co-administered with ritonavir for HIV-1 infection in adults and children >=3 years. The DB row brand_names lists 'Darunavir' (generic name) rather than the brand; Prezista is the established brand name. Current label revised 3/2023."
+}

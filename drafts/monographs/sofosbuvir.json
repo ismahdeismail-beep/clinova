@@ -1,0 +1,196 @@
+{
+  "name": "Sofosbuvir",
+  "existing_id": "214f7b30-4c3a-4e32-96cd-7b9a7a8898fc",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Sofosbuvir is a hepatitis C virus (HCV) nucleotide analog NS5B polymerase inhibitor. It is a prodrug that is converted intracellularly to the active triphosphate (GS-461203), which acts as a chain terminator and inhibits the HCV NS5B RNA-dependent RNA polymerase, thereby blocking viral RNA replication (FDA SOVALDI label, section 12.1/12.4).",
+    "indications": [
+      "Adult patients with genotype 1, 2, 3, or 4 chronic HCV infection without cirrhosis or with compensated cirrhosis as a component of a combination antiviral treatment regimen (FDA SOVALDI label, section 1)",
+      "Pediatric patients 3 years of age and older with genotype 2 or 3 chronic HCV infection without cirrhosis or with compensated cirrhosis in combination with ribavirin (FDA SOVALDI label, section 1)"
+    ],
+    "contraindications": [
+      "When used in combination with peginterferon alfa/ribavirin or ribavirin alone, all contraindications to peginterferon alfa and/or ribavirin also apply to SOVALDI combination therapy (FDA SOVALDI label, section 4)"
+    ],
+    "side_effects": [
+      "In combination with ribavirin: fatigue and headache (most common, >=20%) (FDA SOVALDI label, section 6.1)",
+      "In combination with peginterferon alfa and ribavirin: fatigue, headache, nausea, insomnia and anemia (FDA SOVALDI label, section 6.1)",
+      "In pediatric patients 3 years and older with ribavirin oral solution: decreased appetite (13%) (FDA SOVALDI label, section 6.1)",
+      "Other adverse events (>=15% in any arm): nausea, insomnia, pruritus, anemia, asthenia, rash, decreased appetite, chills, influenza-like illness, pyrexia, diarrhea, neutropenia, myalgia, irritability (FDA SOVALDI label, section 6.1 Table 5)",
+      "Less common (<1%): pancytopenia (particularly with pegylated interferon); severe depression including suicidal ideation and suicide (FDA SOVALDI label, section 6.1)",
+      "Postmarketing: serious symptomatic bradycardia with amiodarone; skin rashes sometimes with blisters or angioedema-like swelling; angioedema (FDA SOVALDI label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "One 400 mg tablet orally once daily with or without food. Regimens/duration: genotype 1 or 4 treatment-naive without cirrhosis or with compensated cirrhosis: SOVALDI + peginterferon alfa + ribavirin for 12 weeks; genotype 2 treatment-naive and treatment-experienced: SOVALDI + ribavirin for 12 weeks; genotype 3: SOVALDI + ribavirin for 24 weeks. SOVALDI + ribavirin for 24 weeks can be considered for genotype 1 patients ineligible for interferon-based regimen. For patients with hepatocellular carcinoma awaiting liver transplantation: SOVALDI + ribavirin for up to 48 weeks or until transplantation (FDA SOVALDI label, section 2.2 Table 1).",
+      "geriatric": "No specific dose adjustment stated; clinical trials included elderly subjects (FDA SOVALDI label does not specify geriatric dosing separately).",
+      "paediatric": "Pediatric patients 3 years and older with genotype 2 or 3 HCV: weight-based dosing - at least 35 kg: 400 mg once daily; 17 to <35 kg: 200 mg once daily; <17 kg: 150 mg once daily (pellets), with ribavirin per weight-based Table 4; genotype 2 for 12 weeks, genotype 3 for 24 weeks (FDA SOVALDI label, sections 2.3 Tables 2-4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Amiodarone: coadministration with a sofosbuvir-containing regimen may result in serious symptomatic bradycardia; coadministration is not recommended; if required, inpatient cardiac monitoring for first 48 hours then outpatient/self-monitoring daily for at least first 2 weeks (FDA SOVALDI label, sections 5.2 and 7.1)",
+      "P-gp inducers in the intestine (rifampin, St John's wort) may significantly decrease sofosbuvir plasma concentrations, reducing therapeutic effect; coadministration not recommended (FDA SOVALDI label, sections 5.3 and 7.1)",
+      "Carbamazepine, phenytoin, phenobarbital, oxcarbazepine, rifabutin, rifampin, rifapentine, tipranavir/ritonavir: expected to decrease sofosbuvir concentration; coadministration not recommended (FDA SOVALDI label, section 7.1 Table 7)",
+      "No clinically significant interactions observed/expected with: cyclosporine, darunavir/ritonavir, efavirenz, emtricitabine, methadone, oral contraceptives, raltegravir, rilpivirine, tacrolimus, tenofovir disoproxil fumarate (FDA SOVALDI label, section 7.2)",
+      "Clearance of HCV infection with direct-acting antivirals may lead to changes in hepatic function, impacting safe/effective use of concomitant medications (e.g., altered blood glucose control); frequent monitoring of INR/blood glucose and dose adjustments may be necessary (FDA SOVALDI label, section 7.1)"
+    ],
+    "monitoring": "Test all patients for HBV infection (HBsAg and anti-HBc) before initiating HCV treatment. Monitor HCV/HBV coinfected patients for HBV reactivation and hepatitis flare during treatment and post-treatment follow-up. For patients on warfarin, monitor INR frequently; for diabetic patients, monitor blood glucose (FDA SOVALDI label, sections 2.1, 5.1, 7.1).",
+    "patient_counselling": "SOVALDI must be used in combination with other antiviral drugs; do not use alone. Take one 400 mg tablet once daily with or without food. Do not chew pellets; if taken with food, sprinkle on non-acidic soft food at or below room temperature and take within 30 minutes. Report symptoms of bradycardia (near-fainting, dizziness, weakness, shortness of breath, chest pain) when taking amiodarone. HBV reactivation can occur in coinfected patients; monitoring is required. Contraindications to ribavirin/peginterferon also apply (FDA SOVALDI label, sections 2, 4, 5.2, 17).",
+    "warnings": [
+      "Boxed warning: risk of hepatitis B virus reactivation in patients coinfected with HCV and HBV - may result in fulminant hepatitis, hepatic failure, and death; test all patients for HBV (HBsAg and anti-HBc) before initiating HCV treatment; monitor during treatment and post-treatment follow-up (FDA SOVALDI label, Boxed Warning, section 5.1)",
+      "Serious symptomatic bradycardia when coadministered with amiodarone - including fatal cardiac arrest; coadministration not recommended; if required, inpatient cardiac monitoring for first 48 hours (FDA SOVALDI label, section 5.2)",
+      "Risk of reduced therapeutic effect due to use with P-gp inducers (rifampin, St John's wort) (FDA SOVALDI label, section 5.3)",
+      "Risks associated with combination treatment - warnings/precautions of co-administered drugs also apply (FDA SOVALDI label, section 5.4)"
+    ],
+    "precautions": [
+      "If other agents used in combination with SOVALDI are permanently discontinued, SOVALDI should also be discontinued (FDA SOVALDI label, section 2.6)",
+      "Dosage reduction of SOVALDI is not recommended; if serious adverse reaction to peginterferon/ribavirin, reduce/discontinue those agents (FDA SOVALDI label, section 2.5)",
+      "No dosage recommendation can be given for patients with severe renal impairment (eGFR <30 mL/min/1.73m2) or ESRD due to higher exposures (up to 20-fold) of the predominant metabolite (FDA SOVALDI label, section 2.7)"
+    ],
+    "serious_adverse_reactions": [
+      "HBV reactivation, including fulminant hepatitis, hepatic failure, and death (FDA SOVALDI label, Boxed Warning)",
+      "Serious symptomatic bradycardia with amiodarone, including fatal cardiac arrest (FDA SOVALDI label, section 5.2)",
+      "Severe depression including suicidal ideation and suicide (FDA SOVALDI label, section 6.1)",
+      "Pancytopenia (with pegylated interferon) (FDA SOVALDI label, section 6.1)"
+    ],
+    "food_interactions": [
+      "SOVALDI tablets may be taken with or without food (FDA SOVALDI label, section 2.2)",
+      "Pellets: if taken with food, sprinkle on non-acidic soft food at or below room temperature; take within 30 minutes (FDA SOVALDI label, section 2.4)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "If SOVALDI is administered with ribavirin or peginterferon alfa and ribavirin, the combination regimen is contraindicated in pregnant women and in men whose female partners are pregnant (ribavirin teratogenicity). No adequate human data on sofosbuvir alone; animal studies showed no adverse developmental outcomes at exposures >=5 (rats) and 12 (rabbits) times human exposure (FDA SOVALDI label, section 8.1).",
+    "lactation_guidance": "It is not known whether sofosbuvir or its metabolites are present in human breast milk, affect milk production, or affect the breastfed infant. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need (FDA SOVALDI label, section 8.2).",
+    "overdose": "No specific information on treatment of overdose. Highest documented single doses were 400 mg (multiple-dose) and 1200 mg (single-dose); no serious adverse events reported at these doses (FDA SOVALDI label, section 10).",
+    "pharmacokinetics": "Sofosbuvir is a prodrug converted intracellularly to active triphosphate GS-461203; predominant circulating metabolite GS-331007. No dosage adjustment in mild/moderate renal impairment; no recommendation for severe renal impairment/ESRD (eGFR <30) due to up to 20-fold higher metabolite exposures. No dosage adjustment in mild/moderate/severe hepatic impairment (Child-Pugh A/B/C) (FDA SOVALDI label, sections 2.7, 8.6, 8.7, 12.3).",
+    "clinical_pearls": [
+      "SOVALDI must be used in combination with other antiviral drugs; monotherapy is not recommended (FDA SOVALDI label, section 1).",
+      "No dosage recommendation for severe renal impairment or ESRD (eGFR <30 mL/min/1.73m2) (FDA SOVALDI label, section 2.7).",
+      "Test all patients for HBV before starting; HBV reactivation can be fatal (FDA SOVALDI label, Boxed Warning).",
+      "Coadministration with amiodarone may cause serious symptomatic bradycardia; with rifampin/St John's wort may reduce efficacy (FDA SOVALDI label, sections 5.2, 5.3)."
+    ],
+    "brand_names": ["Sovaldi"],
+    "black_box_warnings": [
+      "Risk of hepatitis B virus reactivation in patients coinfected with HCV and HBV: HBV reactivation has been reported, in some cases resulting in fulminant hepatitis, hepatic failure, and death (FDA SOVALDI label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage recommendation can be given for patients with severe renal impairment (eGFR <30 mL/min/1.73m2) or ESRD due to higher exposures (up to 20-fold) of the predominant sofosbuvir metabolite (FDA SOVALDI label, section 2.7).",
+    "hepatic_dose_adjustment": "No dosage adjustment of SOVALDI is required in patients with mild, moderate, or severe hepatic impairment (Child-Pugh Class A, B, or C) (FDA SOVALDI label, section 8.7).",
+    "administration_instructions": "Take one 400 mg tablet orally once daily with or without food. Oral pellets: do not chew; if taken with food, sprinkle on one or more spoonfuls of non-acidic soft food at or below room temperature (e.g., pudding, chocolate syrup, mashed potato, ice cream); take within 30 minutes of mixing; swallow entire contents without chewing to avoid bitter aftertaste. Pellets may be taken by pediatric patients who cannot swallow tablets (FDA SOVALDI label, sections 2.2, 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA SOVALDI label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA SOVALDI label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA SOVALDI label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA SOVALDI label, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA SOVALDI label, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA SOVALDI label, sections 5.2, 5.3 and 7.1 Table 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA SOVALDI label, sections 2.1, 5.1 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA SOVALDI label, sections 2, 4, 5.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA SOVALDI label, Boxed Warning and sections 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA SOVALDI label, sections 2.5, 2.6 and 2.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA SOVALDI label, Boxed Warning and sections 5.2 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA SOVALDI label, sections 2.2 and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA SOVALDI label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA SOVALDI label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA SOVALDI label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA SOVALDI label, sections 2.7, 8.6, 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA SOVALDI label, sections 1, 2.7, 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "SOVALDI (sofosbuvir) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA SOVALDI label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA SOVALDI label, section 2.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA SOVALDI label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA SOVALDI label, sections 2.2 and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80beab2c-396e-4a37-a4dc-40fdb62859cf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the label uses modern labeling and does not state a letter category)"
+  ],
+  "notes": "The molecule is stored as 'Sofosbuvir'. Brand name Sovaldi. Note the existing row lists 'Vosevi' (a combination product containing sofosbuvir/velpatasvir/voxilaprevir) as brand_names; Sovaldi is the single-agent product. Name alias: sofosbuvir (GS-7977)."
+}

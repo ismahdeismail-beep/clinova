@@ -1,0 +1,182 @@
+{
+  "name": "Baloxavir Marboxil",
+  "existing_id": "c18d2c9d-66ae-4c0b-a97b-4e53f36f975e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Baloxavir marboxil is a prodrug converted by hydrolysis to baloxavir, the active form with anti-influenza activity. Baloxavir inhibits the endonuclease activity of the polymerase acidic (PA) protein, an influenza virus-specific enzyme in the viral RNA polymerase complex required for viral gene transcription, resulting in inhibition of influenza virus replication (FDA XOFLUZA label, section 12.4, Microbiology: Mechanism of Action).",
+    "indications": [
+      "Treatment of acute uncomplicated influenza in patients 5 years of age and older who have been symptomatic for no more than 48 hours and who are otherwise healthy or at high risk of developing influenza-related complications (FDA XOFLUZA label, section 1.1)",
+      "Post-exposure prophylaxis of influenza in persons 5 years of age and older following contact with an individual who has influenza (FDA XOFLUZA label, section 1.2)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to baloxavir marboxil or any of its ingredients (serious allergic reactions have included anaphylaxis, angioedema, urticaria, and erythema multiforme) (FDA XOFLUZA label, section 4)"
+    ],
+    "side_effects": [
+      "Adults and adolescents (>=12 years): adverse events in >=1%: diarrhea (3%), bronchitis (3%), nausea (2%), sinusitis (2%), headache (1%) (FDA XOFLUZA label, section 6.1, Table 4)",
+      "Pediatric subjects (5 to <12 years): vomiting (5%) and diarrhea (5%) (FDA XOFLUZA label, section 6.1)",
+      "Postmarketing: anaphylactic reactions, anaphylactic shock, anaphylactoid reactions, hypersensitivity, angioedema; rash, urticaria, erythema multiforme; vomiting, hematochezia, melena, colitis; delirium, abnormal behavior, hallucinations (FDA XOFLUZA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Single oral dose as soon as possible and within 48 hours of symptom onset (treatment) or following contact with an individual with influenza (prophylaxis). Tablets: 20 to <80 kg: one 40 mg tablet; >=80 kg: one 80 mg tablet. Oral suspension (packets): 15 to <20 kg: one 30 mg packet; 20 to <80 kg: one 40 mg packet; >=80 kg: 80 mg (two 40 mg packets). Oral suspension (bottles): <20 kg: 2 mg/kg; 20 to <80 kg: 40 mg (20 mL); >=80 kg: 80 mg (40 mL). May be taken with or without food; avoid coadministration with dairy products, calcium-fortified beverages, polyvalent cation-containing laxatives, antacids, or oral supplements (e.g., calcium, iron, magnesium, selenium, zinc) (FDA XOFLUZA label, sections 2.1, 2.2).",
+      "geriatric": "Safety and effectiveness in subjects >=65 years established; median time to improvement of symptoms in subjects >=65 years was 70 h with XOFLUZA vs 88 h with placebo. Safety profile similar to overall population except nausea reported in 6% of elderly vs 1% of 18-64 years (FDA XOFLUZA label, section 8.5).",
+      "paediatric": "Approved for patients 5 years and older. Pediatric subjects 5 to <12 years: safety supported by one trial (CP40563); most common AEs vomiting and diarrhea. Not indicated in patients <5 years due to increased treatment-emergent resistance (FDA XOFLUZA label, sections 5.2, 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Polyvalent cations (calcium, aluminum, magnesium, iron): baloxavir may chelate polyvalent cations; avoid coadministration with dairy products, calcium-fortified beverages, polyvalent cation-containing laxatives, antacids, or oral supplements (e.g., calcium, iron, magnesium, selenium, zinc) (FDA XOFLUZA label, sections 2.1, 7.1)",
+      "Live attenuated influenza vaccine (LAIV): concurrent administration of antivirals may inhibit viral replication of LAIV and decrease effectiveness; interactions with inactivated influenza vaccines not evaluated (FDA XOFLUZA label, section 7.2)",
+      "No clinically significant PK interactions with itraconazole, probenecid, oseltamivir, midazolam, digoxin, rosuvastatin (FDA XOFLUZA label, section 12.3)"
+    ],
+    "monitoring": "Monitor for hypersensitivity reactions (anaphylaxis, angioedema, urticaria, erythema multiforme) and institute appropriate treatment. Be alert for potential secondary bacterial infections. XOFLUZA is not indicated in patients <5 years due to increased treatment-emergent resistance (FDA XOFLUZA label, sections 5.1, 5.2, 5.3).",
+    "patient_counselling": "Take a single dose as soon as possible within 48 hours of symptom onset; may be taken with or without food. Avoid dairy products, calcium-fortified beverages, antacids, laxatives, or mineral supplements around the dose. Seek medical care for signs of allergic reaction or secondary bacterial infection. Not a substitute for annual influenza vaccination (FDA XOFLUZA label, sections 2.1, 17).",
+    "warnings": [
+      "Hypersensitivity: anaphylaxis, angioedema, urticaria, erythema multiforme reported; contraindicated in patients with known hypersensitivity (FDA XOFLUZA label, sections 4, 5.1)",
+      "Increased incidence of treatment-emergent resistance in patients <5 years: not indicated in this age group (FDA XOFLUZA label, section 5.2)",
+      "Risk of bacterial infection: serious bacterial infections may begin with influenza-like symptoms or coexist with influenza; XOFLUZA has not been shown to prevent such complications (FDA XOFLUZA label, section 5.3)"
+    ],
+    "precautions": [
+      "Influenza viruses change over time; consider available information on drug susceptibility patterns for circulating strains (FDA XOFLUZA label, section 1.3)",
+      "Polyvalent cation-containing products decrease baloxavir exposure (FDA XOFLUZA label, sections 2.1, 7.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis, anaphylactic shock, angioedema (FDA XOFLUZA label, sections 4, 6.2)",
+      "Erythema multiforme (FDA XOFLUZA label, section 6.2)",
+      "Colitis, hematochezia, melena (FDA XOFLUZA label, section 6.2)",
+      "Delirium, abnormal behavior, hallucinations (FDA XOFLUZA label, section 6.2)"
+    ],
+    "food_interactions": [
+      "May be taken with or without food; avoid coadministration with dairy products, calcium-fortified beverages, polyvalent cation-containing laxatives, antacids, or oral supplements (e.g., calcium, iron, magnesium, selenium, or zinc) (FDA XOFLUZA label, sections 2.1, 7.1)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No adequate and well-controlled studies in pregnant women. Animal reproduction studies: no adverse developmental effects in rats or rabbits at exposures ~5 (rats) and ~7 (rabbits) times systemic baloxavir exposure at the maximum recommended human dose. Pregnant women are at higher risk of severe complications from influenza. Background risk of major birth defects 2-4% and miscarriage 15-20% in the U.S. general population (FDA XOFLUZA label, section 8.1).",
+    "lactation_guidance": "No data on presence in human milk, effects on breastfed infant, or milk production. Baloxavir and related metabolites present in milk of lactating rats. Consider developmental and health benefits of breastfeeding along with mother's clinical need (FDA XOFLUZA label, section 8.2).",
+    "overdose": "Treatment consists of general supportive measures including monitoring of vital signs and observation of clinical status. No specific antidote. Baloxavir is unlikely to be significantly removed by dialysis due to high serum protein binding (FDA XOFLUZA label, section 10).",
+    "pharmacokinetics": "Baloxavir marboxil is a prodrug almost completely converted to active baloxavir. Peak plasma concentrations ~4 h after dosing; apparent terminal elimination half-life ~79 h; plasma protein binding 92.9-93.9%; volume of distribution ~1180 L; clearance ~10.3 L/h. Primary metabolism via UGT1A3, secondary via CYP3A4. Excretion: urine 14.7% (total radioactivity), 3.3% as baloxavir; feces 80.1%. Food decreases Cmax 48% and AUC 36%. No clinically significant differences based on age, sex, renal impairment (CrCl >=50 mL/min), or moderate hepatic impairment; severe renal/hepatic impairment not evaluated (FDA XOFLUZA label, section 12.3).",
+    "clinical_pearls": [
+      "Single-dose therapy taken within 48 hours of symptom onset (FDA XOFLUZA label, section 2.2)",
+      "Avoid dairy/calcium around the dose due to chelation (FDA XOFLUZA label, sections 2.1, 7.1)",
+      "Not indicated in children <5 years due to higher treatment-emergent resistance (FDA XOFLUZA label, section 5.2)",
+      "Long terminal half-life (~79 h) (FDA XOFLUZA label, section 12.3)"
+    ],
+    "brand_names": ["Xofluza"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No clinically significant PK differences in subjects with CrCl >=50 mL/min; severe renal impairment not evaluated. Baloxavir unlikely to be removed by dialysis (FDA XOFLUZA label, sections 10, 12.3).",
+    "hepatic_dose_adjustment": "No clinically significant PK differences in moderate hepatic impairment (Child-Pugh B); severe hepatic impairment not evaluated (FDA XOFLUZA label, section 12.3).",
+    "administration_instructions": "Take as a single dose with or without food; separate from dairy products, calcium-fortified beverages, antacids, laxatives, or mineral supplements. Oral suspension (packets) must be reconstituted in 15-20 mL room-temperature drinking water and taken immediately; oral suspension (bottles) reconstituted by healthcare provider with 20 mL water, administered within 10 hours (FDA XOFLUZA label, sections 2.1, 2.3, 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA XOFLUZA label, section 12.4 Microbiology: Mechanism of Action (revised 5/2025)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA XOFLUZA label, sections 1.1, 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA XOFLUZA label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA XOFLUZA label, sections 6.1, 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA XOFLUZA label, sections 2.1, 2.2, 8.4, 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA XOFLUZA label, sections 7.1, 7.2, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA XOFLUZA label, sections 5.1, 5.2, 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA XOFLUZA label, sections 2.1, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA XOFLUZA label, sections 5.1, 5.2, 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA XOFLUZA label, sections 1.3, 2.1, 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA XOFLUZA label, section 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA XOFLUZA label, sections 2.1, 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA XOFLUZA label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA XOFLUZA label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA XOFLUZA label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA XOFLUZA label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA XOFLUZA label, sections 2.2, 5.2, 7.1, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Xofluza brand name per label and DB row",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA XOFLUZA label, sections 10, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA XOFLUZA label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA XOFLUZA label, sections 2.1, 2.3, 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the XOFLUZA label)"
+  ],
+  "notes": "Xofluza (baloxavir marboxil) is an influenza virus PA endonuclease inhibitor given as a single oral dose. Available as tablets (40, 80 mg) and oral suspension (packets 30/40 mg; bottles 2 mg/mL). Not indicated in children <5 years. DB row brand_names lists Xofluza. Current label revised 5/2025."
+}

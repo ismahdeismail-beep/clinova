@@ -1,0 +1,185 @@
+{
+  "name": "Molnupiravir",
+  "existing_id": "d19ca4df-009d-4e8d-a2bd-ac9b7c4c6619",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Molnupiravir is a prodrug with antiviral activity against SARS-CoV-2. It is metabolized to the cytidine nucleoside analogue N4-hydroxycytidine (NHC), which is phosphorylated intracellularly to NHC-triphosphate (NHC-TP). Incorporation of NHC-TP (as NHC-monophosphate) into SARS-CoV-2 RNA by the viral RNA polymerase (nsp12) results in accumulation of errors in the viral genome, leading to inhibition of replication (viral error catastrophe/lethal mutagenesis) (FDA EUA Fact Sheet for Healthcare Providers, LAGEVRIO, sections 11 and 12.1).",
+    "indications": [
+      "Treatment of mild-to-moderate COVID-19 in adults at high risk for progression to severe COVID-19, including hospitalization or death, and for whom alternative FDA-approved/authorized COVID-19 treatment options are not accessible or clinically appropriate (LAGEVRIO EUA, section 1)"
+    ],
+    "contraindications": [
+      "No contraindications have been identified based on the limited available data on the emergency use of LAGEVRIO (LAGEVRIO EUA, section 4)"
+    ],
+    "side_effects": [
+      "Gastrointestinal: diarrhea (2%), nausea (1%), vomiting (post-authorization) (LAGEVRIO EUA, sections 6.1 and 6.2)",
+      "Nervous system: dizziness (1%), headache (post-authorization) (LAGEVRIO EUA, sections 6.1 and 6.2)",
+      "Immune system: hypersensitivity, anaphylaxis, angioedema (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "Skin: erythema, pruritus, rash, urticaria (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "Vascular: hypertension (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "Gastrointestinal: abdominal pain (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "General: malaise (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "Laboratory abnormalities (Grade 3/4 ALT, AST, creatinine, lipase, hemoglobin, platelets, leukocytes) occurred at <=2% and similar rates across arms (LAGEVRIO EUA, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "800 mg (four 200 mg capsules) taken orally every 12 hours for 5 days, with or without food. Take as soon as possible after diagnosis of COVID-19 and within 5 days of symptom onset. Complete the full 5-day course. Not authorized for use longer than 5 consecutive days or for patients under 18 years (LAGEVRIO EUA, sections 1 and 2.1).",
+      "geriatric": "No dosage adjustment recommended based on age; PK of NHC similar in geriatric patients (LAGEVRIO EUA, sections 2.2 and 8.5).",
+      "paediatric": "Not authorized for use in patients less than 18 years of age (LAGEVRIO EUA, sections 1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug interactions have been identified based on the limited available data on emergency use (LAGEVRIO EUA, section 7)",
+      "In vitro, molnupiravir and NHC are not substrates/inhibitors/inducers of CYP enzymes or transporters (P-gp, BCRP, OATP, OCT, OAT, MATE, MRP, MDR1) (LAGEVRIO EUA, section 12.3)"
+    ],
+    "monitoring": "Pregnancy status assessment in individuals of childbearing potential if clinically indicated before initiating therapy (LAGEVRIO EUA, sections 5.1 and 8.3). Report all serious adverse events and medication errors to FDA within 7 calendar days (LAGEVRIO EUA, section 6.4).",
+    "patient_counselling": "Advise patients to take LAGEVRIO with or without food and to swallow capsules whole (do not open, break, or crush). Advise females of childbearing potential to use effective contraception during treatment and for 4 days after the last dose, and males of reproductive potential to use contraception during treatment and for at least 3 months after the last dose. Advise pregnant individuals of potential fetal risk; breastfeeding not recommended during treatment and for 4 days after the last dose (LAGEVRIO EUA, sections 5.1, 8.1-8.3 and 17).",
+    "warnings": [
+      "Embryo-fetal toxicity: LAGEVRIO may cause fetal harm; not recommended during pregnancy (LAGEVRIO EUA, sections 5.1, 8.1 and 8.3)",
+      "Bone and cartilage toxicity: not authorized in patients under 18 years because it may affect bone and cartilage growth (LAGEVRIO EUA, sections 5.3 and 8.4)",
+      "Hypersensitivity including anaphylaxis (LAGEVRIO EUA, section 5.2)",
+      "Serious and unexpected adverse events may occur that have not been previously reported (LAGEVRIO EUA, section 5)",
+      "LAGEVRIO is an unapproved drug authorized for emergency use (LAGEVRIO EUA, section 1)"
+    ],
+    "precautions": [
+      "Assess pregnancy status in individuals of childbearing potential if clinically indicated before initiating (LAGEVRIO EUA, sections 5.1 and 8.3)",
+      "Complete the full 5-day course and continue isolation per public health recommendations (LAGEVRIO EUA, section 2.1)",
+      "Missed dose: if within 10 hours take as soon as possible; if more than 10 hours skip and take next dose at scheduled time; do not double dose (LAGEVRIO EUA, section 2.1)",
+      "Administration via NG/OG/G tubes >=12F or GJ tubes >=14F using capsule contents mixed with water is described in the EUA (LAGEVRIO EUA, section 2.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and hypersensitivity reactions (post-authorization) (LAGEVRIO EUA, section 6.2)",
+      "Angioedema (post-authorization) (LAGEVRIO EUA, section 6.2)"
+    ],
+    "food_interactions": ["May be taken with or without food (LAGEVRIO EUA, section 2.1)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on animal data (rat and rabbit embryofetal development studies), molnupiravir may cause fetal harm when administered to pregnant individuals. No human data are available. LAGEVRIO is not recommended during pregnancy; may be prescribed to a pregnant individual only if the prescribing healthcare provider determines benefits outweigh risks, with documented counseling. Advise individuals of childbearing potential to use effective contraception during treatment and for 4 days after the last dose; males of reproductive potential should use contraception during treatment and for at least 3 months after the last dose (LAGEVRIO EUA, sections 5.1, 8.1 and 8.3).",
+    "lactation_guidance": "There are no data on the presence of molnupiravir or its metabolites in human milk. NHC was detected in plasma of nursing pups from lactating rats. Breastfeeding is not recommended during treatment and for 4 days after the last dose; a lactating individual may consider interrupting breastfeeding and pumping and discarding milk during treatment and for 4 days after the last dose (LAGEVRIO EUA, section 8.2).",
+    "overdose": "No human experience of overdose; treatment consists of general supportive measures including monitoring of clinical status. Hemodialysis is not expected to result in effective elimination of NHC (LAGEVRIO EUA, section 10).",
+    "pharmacokinetics": "Molnupiravir is hydrolyzed to NHC, the primary circulating analyte, which is taken up by cells and phosphorylated to NHC-TP. NHC is eliminated by metabolism to uridine/cytidine via endogenous pyrimidine metabolism pathways. NHC: AUC0-12hr ~8260 ng*h/mL (patients), Cmax ~2330 ng/mL, C12hr ~31.1 ng/mL; Tmax ~1.5 h; effective t1/2 ~3.3 h; plasma protein binding 0%; apparent Vd ~142 L; apparent clearance ~76.9 L/h. Food reduces Cmax by 35% but does not affect AUC. No dosage adjustment for renal or hepatic impairment or geriatric patients (LAGEVRIO EUA, sections 2.2, 8.5-8.7 and 12.3).",
+    "clinical_pearls": [
+      "Mechanism is viral lethal mutagenesis (error catastrophe), not chain termination (LAGEVRIO EUA, section 12.1)",
+      "Food reduces peak (Cmax) by 35% but not total exposure (AUC) (LAGEVRIO EUA, section 12.3)",
+      "No dose adjustment needed for renal or hepatic impairment or in geriatric patients (LAGEVRIO EUA, sections 2.2 and 8.5-8.7)",
+      "Males of reproductive potential should use contraception for at least 3 months after the last dose (LAGEVRIO EUA, section 8.3)"
+    ],
+    "brand_names": ["Lagevrio"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment recommended for any degree of renal impairment; renal clearance is not a meaningful route of elimination for NHC (LAGEVRIO EUA, sections 2.2 and 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment recommended; hepatic elimination is not expected to be a major route of NHC elimination (LAGEVRIO EUA, sections 2.2 and 8.7).",
+    "administration_instructions": "Swallow capsules whole with or without food; do not open, break, or crush. Missed dose guidance: within 10 hours take as soon as possible; beyond 10 hours skip and take next scheduled dose; do not double. Administration via feeding tubes >=12F (NG/OG/G) or >=14F (GJ) using capsule contents mixed in 40 mL water is described in the EUA (LAGEVRIO EUA, sections 2.1 and 2.3). Store at 20-25 C (68-77 F)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA EUA Fact Sheet for Healthcare Providers, LAGEVRIO, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA EUA, LAGEVRIO, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA EUA, LAGEVRIO, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA EUA, LAGEVRIO, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA EUA, LAGEVRIO, sections 1, 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA EUA, LAGEVRIO, sections 7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA EUA, LAGEVRIO, sections 5.1, 6.4 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA EUA, LAGEVRIO, sections 5.1, 8.1-8.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA EUA, LAGEVRIO, sections 1, 5 and 5.1-5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA EUA, LAGEVRIO, sections 2.1, 2.3, 5.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA EUA, LAGEVRIO, section 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA EUA, LAGEVRIO, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA EUA, LAGEVRIO, sections 5.1, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA EUA, LAGEVRIO, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA EUA, LAGEVRIO, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA EUA, LAGEVRIO, sections 8.5-8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA EUA, LAGEVRIO, sections 8.3, 12.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Lagevrio (molnupiravir) as the authorized brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA EUA, LAGEVRIO, sections 2.2 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA EUA, LAGEVRIO, sections 2.2 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA EUA, LAGEVRIO, sections 2.1 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not applicable; not authorized under 18 years)",
+    "pregnancy_category (no FDA pregnancy category assigned; EUA product)",
+    "black_box_warnings (no boxed warning in the EUA fact sheet)"
+  ],
+  "notes": "LAGEVRIO is an unapproved drug authorized for emergency use only. Content is based on the FDA EUA Fact Sheet for Healthcare Providers (revised 06/2024)."
+}

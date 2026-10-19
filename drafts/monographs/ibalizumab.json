@@ -1,0 +1,176 @@
+{
+  "name": "Ibalizumab",
+  "existing_id": "eae37080-a58e-46c2-ae01-477fe0fd482d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Ibalizumab-uiyk is a CD4-directed post-attachment HIV-1 inhibitor. It is a humanized IgG4 monoclonal antibody that binds to domain 2 of CD4 and interferes with post-attachment steps required for entry of HIV-1 virus particles into host cells, preventing viral transmission via cell-cell fusion. Its binding epitope on domain 2 is opposite the MHC class II binding site, so it does not interfere with CD4-mediated immune functions and does not block gp120 attachment to CD4 (TROGARZO label, sections 12.1 and 12.4).",
+    "indications": [
+      "Treatment of HIV-1 infection, in combination with other antiretroviral(s), in heavily treatment-experienced adults with multidrug resistant HIV-1 infection failing their current antiretroviral regimen (TROGARZO label, section 1)"
+    ],
+    "contraindications": [
+      "Prior hypersensitivity reaction to TROGARZO or any components of the product (TROGARZO label, section 4)"
+    ],
+    "side_effects": [
+      "Diarrhea (8%), dizziness (8%), nausea (5%), rash (5%) (TROGARZO label, section 6.1, Table 3)",
+      "Most adverse reactions (90%) were mild or moderate in severity; two severe adverse reactions reported: severe rash and immune reconstitution inflammatory syndrome (exacerbation of progressive multifocal leukoencephalopathy) (TROGARZO label, section 6.1)",
+      "Postmarketing: hypersensitivity reactions including infusion-related reactions and anaphylactic reactions; pruritus (TROGARZO label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Single loading dose of 2,000 mg followed by a maintenance dose of 800 mg every 2 weeks, administered as a diluted intravenous infusion or undiluted intravenous push. Loading dose: IV infusion over at least 30 minutes or IV push over at least 90 seconds; maintenance dose: IV infusion over at least 15 minutes or IV push over at least 30 seconds. All patients observed for 1 hour after the loading dose; observation for subsequent maintenance doses may be reduced to 15 minutes if no infusion-associated reaction. If a maintenance dose is missed by 3 days or longer, administer a loading dose (2,000 mg) as early as possible and resume maintenance dosing every 14 days thereafter. No dose modifications required with other antiretrovirals or treatments (TROGARZO label, sections 2.1 and 2.3).",
+      "geriatric": "No studies have been conducted in geriatric patients (TROGARZO label, section 8.5).",
+      "paediatric": "Safety and effectiveness in pediatric patients have not been established (TROGARZO label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug interaction studies have been conducted; based on mechanism of action and target-mediated drug disposition, drug-drug interactions are not expected (TROGARZO label, section 12.3)"
+    ],
+    "monitoring": "Monitor for hypersensitivity/infusion-related/anaphylactic reactions during and after infusion; monitor for immune reconstitution inflammatory syndrome; monitor infants exposed in utero for immunosuppression (CD4+ T cell and B cell lymphocytopenia) (TROGARZO label, sections 5.1 to 5.3 and 8.1).",
+    "patient_counselling": "Receive TROGARZO injections every two weeks as recommended; do not change dosing schedule without consulting healthcare provider; contact provider immediately if stopping TROGARZO or any antiretroviral; loading dose by IV infusion over at least 30 minutes or IV push over 90 seconds; maintenance doses by IV infusion over 15 minutes or IV push over 30 seconds; seek immediate medical attention for hypersensitivity; inform provider of symptoms of infection (IRIS); females of reproductive potential should inform provider of known or suspected pregnancy (TROGARZO label, section 17).",
+    "warnings": [
+      "Hypersensitivity reactions including infusion-related reactions and anaphylactic reactions have been reported; contraindicated in patients with known hypersensitivity (TROGARZO label, section 5.1)",
+      "Immune reconstitution inflammatory syndrome (TROGARZO label, section 5.2)",
+      "Embryo-fetal toxicity: based on animal data, may cause reversible immunosuppression (CD4+ T cell and B cell lymphocytopenia) in infants exposed in utero; monitor exposed infants with immune phenotyping and expert consultation (TROGARZO label, section 5.3)"
+    ],
+    "precautions": [
+      "TROGARZO must be used in combination with other antiretrovirals (TROGARZO label, section 1)",
+      "Dose modifications of TROGARZO are not required when administered with any other antiretroviral or other treatments (TROGARZO label, section 2.1)",
+      "Safety of administering live or live-attenuated vaccines in infants exposed in utero is unknown (TROGARZO label, sections 5.3 and 8.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity reactions including anaphylaxis (TROGARZO label, sections 5.1 and 6.2)",
+      "Immune reconstitution inflammatory syndrome (TROGARZO label, sections 5.2 and 6.1)",
+      "Severe rash (TROGARZO label, section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No available human data to evaluate drug-associated risk of major birth defects, miscarriage, or adverse maternal/fetal outcomes; IgG antibodies transported across placenta in significant amounts near term; based on animal data may cause reversible immunosuppression in infants exposed in utero; immune phenotyping of peripheral blood and expert consultation recommended for exposed infants; pregnancy exposure registry (APR) available (TROGARZO label, section 8.1).",
+    "lactation_guidance": "CDC recommends HIV-1-infected mothers in the US not breastfeed; no data on presence in human milk; human IgG present in breast milk but does not enter neonatal circulation in substantial amounts; instruct mothers not to breastfeed if receiving TROGARZO (TROGARZO label, section 8.2).",
+    "overdose": "No specific overdose information provided in label; treatment consists of general supportive measures (TROGARZO label does not specify an antidote).",
+    "pharmacokinetics": "Nonlinear pharmacokinetics; single-dose Cmax/volume of distribution ~4.8 L (serum volume); elimination half-life 2.7 to 64 hours depending on dose; steady-state concentrations over 30 mcg/mL throughout dosing interval at recommended regimen; no formal renal/hepatic impairment studies conducted; renal impairment not anticipated to impact pharmacokinetics; no drug interaction studies conducted (TROGARZO label, section 12.3).",
+    "clinical_pearls": [
+      "First CD4-directed post-attachment HIV-1 inhibitor and first monoclonal antibody approved for HIV (TROGARZO label, section 1)",
+      "Administered only by trained medical professional as IV infusion or IV push; two 1.5 mL vials provide 200 mg/1.33 mL (150 mg/mL) (TROGARZO label, sections 2.2 and 3)",
+      "Ibalizumab-uiyk is a product-specific monoclonal antibody; this monograph covers the TROGARZO (ibalizumab-uiyk) product only (TROGARZO label)"
+    ],
+    "brand_names": ["Trogarzo"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No formal studies; renal impairment not anticipated to impact pharmacokinetics (TROGARZO label, section 12.3).",
+    "hepatic_dose_adjustment": "No formal studies conducted (TROGARZO label, section 12.3).",
+    "administration_instructions": "Intravenous infusion (diluted in 250 mL 0.9% sodium chloride) or undiluted intravenous push in the cephalic vein; flush with 30 mL (infusion) or 2-5 mL (push) of 0.9% sodium chloride; store vials refrigerated at 2-8°C; do not freeze; protect from light; diluted solution may be stored at room temperature up to 4 hours or refrigerated up to 24 hours (TROGARZO label, sections 2.2, 2.3, and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "TROGARZO (ibalizumab-uiyk) label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "indications",
+      "ref": "TROGARZO label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "contraindications",
+      "ref": "TROGARZO label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "side_effects",
+      "ref": "TROGARZO label, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "dosage",
+      "ref": "TROGARZO label, sections 2.1 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "interactions",
+      "ref": "TROGARZO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "monitoring",
+      "ref": "TROGARZO label, sections 5.1 to 5.3 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "TROGARZO label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "warnings",
+      "ref": "TROGARZO label, sections 5.1 to 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "precautions",
+      "ref": "TROGARZO label, sections 1, 2.1, 5.3, and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "TROGARZO label, sections 5.1, 5.2, and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "TROGARZO label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "TROGARZO label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose section in TROGARZO label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "TROGARZO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "TROGARZO label, sections 1, 2.2, and 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "brand_names",
+      "ref": "TROGARZO brand name on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in TROGARZO label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "TROGARZO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "TROGARZO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "TROGARZO label, sections 2.2, 2.3, and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c548ad82-9d1f-4d16-95b6-4e6106badf43"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (no established paediatric regimen; safety and effectiveness not established)",
+    "pregnancy_category (not stated in the TROGARZO label)",
+    "overdose (no dedicated overdose section in the TROGARZO label)"
+  ],
+  "notes": "Ibalizumab is a monoclonal antibody (TROGARZO/ibalizumab-uiyk) specific product; this monograph covers the TROGARZO product only. Indicated only for heavily treatment-experienced adults with multidrug-resistant HIV-1 failing current regimen, in combination with other antiretrovirals. No boxed warning. No drug-drug interactions expected. Content drafted from the FDA/DailyMed label (updated 12/2023)."
+}

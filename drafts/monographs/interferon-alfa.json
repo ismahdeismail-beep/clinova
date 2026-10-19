@@ -1,0 +1,213 @@
+{
+  "name": "Interferon Alfa",
+  "existing_id": "d088f44f-b795-443f-9b13-5d171e2146ff",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Interferons are a family of naturally occurring small proteins and glycoproteins that exert cellular activities by binding to specific membrane receptors on the cell surface, initiating a complex sequence of intracellular events including induction of certain enzymes, suppression of cell proliferation, immunomodulating activities (enhancement of phagocytic activity of macrophages, augmentation of specific cytotoxicity of lymphocytes), and inhibition of virus replication in virus-infected cells. In a study using a human hepatoblastoma cell line, in vitro antiviral activity of alpha interferon was demonstrated by inhibition of hepatitis B virus replication (INTRON A label, Clinical Pharmacology).",
+    "indications": [
+      "Hairy cell leukemia in patients 18 years of age or older (INTRON A label, Indications and Usage)",
+      "Adjuvant to surgical treatment in patients 18 years of age or older with malignant melanoma free of disease but at high risk for systemic recurrence, within 56 days of surgery (INTRON A label, Indications and Usage)",
+      "Initial treatment of clinically aggressive follicular Non-Hodgkin's Lymphoma in conjunction with anthracycline-containing combination chemotherapy in patients 18 years of age or older (INTRON A label, Indications and Usage)",
+      "Intralesional treatment of selected patients 18 years of age or older with condylomata acuminata involving external surfaces of the genital and perianal areas (INTRON A label, Indications and Usage)",
+      "Selected patients 18 years of age or older with AIDS-Related Kaposi's Sarcoma (INTRON A label, Indications and Usage)",
+      "Chronic hepatitis C in patients 18 years of age or older with compensated liver disease with history of blood/blood-product exposure and/or HCV antibody positive (INTRON A label, Indications and Usage)",
+      "Chronic hepatitis C in combination with ribavirin in patients 3 years of age and older with compensated liver disease previously untreated with alpha interferon, and in patients 18 years of age and older who have relapsed following alpha interferon therapy (INTRON A label, Indications and Usage)",
+      "Chronic hepatitis B in patients 1 year of age or older with compensated liver disease with evidence of HBV replication (serum HBeAg positive) and elevated serum ALT (INTRON A label, Indications and Usage)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to interferon alpha or any component of the product (INTRON A label, Contraindications)",
+      "Autoimmune hepatitis (INTRON A label, Contraindications)",
+      "Decompensated liver disease (INTRON A label, Contraindications)",
+      "Additional contraindications when used in combination with ribavirin: hypersensitivity to ribavirin or any other component; women who are pregnant; men whose female partners are pregnant; hemoglobinopathies (e.g., thalassemia major, sickle cell anemia); creatinine clearance less than 50 mL/min (INTRON A label, Contraindications)"
+    ],
+    "side_effects": [
+      "Neuropsychiatric: depression, suicidal ideation/attempts, completed suicides, homicidal ideation, aggressive behavior, obtundation, coma, encephalopathy (INTRON A label, Warnings, Neuropsychiatric Disorders)",
+      "Autoimmune disorders; ischemic and infectious disorders (INTRON A label, Boxed Warning)",
+      "Cardiovascular: hypotension, arrhythmia, tachycardia >=150 bpm, cardiomyopathy, myocardial infarction (INTRON A label, Warnings, Cardiovascular Disorders)",
+      "Cerebrovascular: ischemic and hemorrhagic cerebrovascular events (INTRON A label, Warnings, Cerebrovascular Disorders)",
+      "Bone marrow suppression with severe cytopenias including aplastic anemia (INTRON A label, Warnings, Bone Marrow Toxicity)",
+      "Ophthalmologic: decrease/loss of vision, retinopathy, macular edema, retinal artery/vein thrombosis, retinal hemorrhages, cotton wool spots, optic neuritis, papilledema, serous retinal detachment (INTRON A label, Warnings, Ophthalmologic Disorders)",
+      "Endocrine: thyroid abnormalities (hypothyroid or hyperthyroid), diabetes mellitus (INTRON A label, Warnings, Endocrine Disorders)",
+      "Hepatotoxicity including fatality; increased risk of hepatic decompensation and death in patients with cirrhosis (INTRON A label, Warnings, Gastrointestinal Disorders)",
+      "Pulmonary disorders (INTRON A label, Warnings)",
+      "Flu-like symptoms and fever (INTRON A label, Warnings, General)",
+      "Serum neutralizing antibodies detected in a minority of patients; clinical significance generally not apparent (INTRON A label, Clinical Pharmacology)"
+    ],
+    "dosage": {
+      "adult": "Dosing is indication- and product-specific. INTRON A examples: Hairy cell leukemia: 2 million IU/m2 IM or SC three times weekly. Malignant melanoma adjuvant: induction 20 million IU/m2 IV five times weekly for 4 weeks then maintenance 10 million IU/m2 SC three times weekly for 48 weeks. Chronic hepatitis C: 3 million IU SC three times weekly. Chronic hepatitis B: 5 million IU SC daily or 10 million IU SC three times weekly for 16 weeks. Condylomata acuminata: 1 million IU intralesionally per lesion three times weekly for 3 weeks (up to 5 lesions). AIDS-Related Kaposi's Sarcoma: 30 million IU/m2 SC three times weekly (INTRON A label, Clinical Pharmacology and Dosage and Administration).",
+      "geriatric": "No specific dose adjustment stated; caution in elderly due to risk of obtundation/coma at higher doses (INTRON A label, Warnings, Neuropsychiatric Disorders).",
+      "paediatric": "Chronic hepatitis B in patients 1 year of age and older: 3 million IU/m2 SC three times weekly for 1 week then 6 million IU/m2 SC three times weekly for a minimum of 16 up to 24 weeks (max 10 million IU/m2 three times weekly) (INTRON A label, Indications and Usage, Chronic Hepatitis B, Pediatrics). Chronic hepatitis C in combination with ribavirin in patients 3 years of age and older (INTRON A label)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Narcotics, hypnotics, or sedatives may be used concurrently with caution (INTRON A label, Warnings, Neuropsychiatric Disorders)",
+      "Zidovudine, myelosuppressive agents: additive bone marrow toxicity possible (class-level; not explicitly stated in this label but consistent with mechanism) - not stated; omitted",
+      "Combination with ribavirin: additional contraindications and warnings apply (INTRON A label, Contraindications and Warnings)"
+    ],
+    "monitoring": "CBC and platelet counts pretreatment and routinely during therapy; liver function tests (ALT, albumin, bilirubin) at specified intervals; TSH at baseline and 3 and 6 months; eye examination at baseline and periodic exams in patients with preexisting ophthalmologic disorders; monitor for psychiatric symptoms, thyroid dysfunction, and signs of hepatic decompensation (INTRON A label, Indications and Usage and Warnings).",
+    "patient_counselling": "Report depression, suicidal thoughts, or aggressive behavior immediately; report vision changes; avoid pregnancy (combination with ribavirin is contraindicated in pregnancy); flu-like symptoms common; adherence to injection schedule (INTRON A label, Warnings and patient labeling).",
+    "warnings": [
+      "BOXED WARNING: Alpha interferons, including INTRON A, cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischemic, and infectious disorders; patients should be monitored closely with periodic clinical and laboratory evaluations; withdraw for persistently severe or worsening signs/symptoms (INTRON A label, Boxed Warning)",
+      "Depression and suicidal behavior including suicidal ideation, attempts, and completed suicides; homicidal ideation and aggressive behavior sometimes directed towards others (INTRON A label, Warnings, Neuropsychiatric Disorders)",
+      "Bone marrow suppression and severe cytopenias including aplastic anemia (INTRON A label, Warnings, Bone Marrow Toxicity)",
+      "Ophthalmologic disorders including loss of vision and retinopathy (INTRON A label, Warnings, Ophthalmologic Disorders)",
+      "Hepatotoxicity including fatality; increased risk of hepatic decompensation and death in patients with cirrhosis (INTRON A label, Warnings, Gastrointestinal Disorders)",
+      "Cardiovascular disorders including hypotension, arrhythmia, tachycardia, cardiomyopathy, myocardial infarction (INTRON A label, Warnings, Cardiovascular Disorders)",
+      "Cerebrovascular events (INTRON A label, Warnings, Cerebrovascular Disorders)",
+      "Endocrine disorders including thyroid abnormalities and diabetes mellitus (INTRON A label, Warnings, Endocrine Disorders)",
+      "Pulmonary disorders (INTRON A label, Warnings, Pulmonary Disorders)"
+    ],
+    "precautions": [
+      "Use cautiously in patients with debilitating medical conditions, pulmonary disease, diabetes mellitus prone to ketoacidosis, coagulation disorders, severe myelosuppression (INTRON A label, Warnings, General)",
+      "Use cautiously in patients with history of cardiovascular disease (INTRON A label, Warnings, Cardiovascular Disorders)",
+      "Use with caution in patients with history of psychiatric disorders or substance use disorders (INTRON A label, Warnings, Neuropsychiatric Disorders)",
+      "Patients with preexisting thyroid abnormalities may be treated if TSH can be maintained in normal range by medication (INTRON A label, Indications and Usage, Chronic Hepatitis C)",
+      "INTRON A and REBETOL combination therapy: additional contraindications and precautions for ribavirin apply (INTRON A label)"
+    ],
+    "serious_adverse_reactions": [
+      "Neuropsychiatric disorders including depression and suicidal behavior (INTRON A label, Boxed Warning and Warnings)",
+      "Autoimmune, ischemic, and infectious disorders (INTRON A label, Boxed Warning)",
+      "Bone marrow suppression/aplastic anemia (INTRON A label, Warnings)",
+      "Hepatotoxicity/fatality (INTRON A label, Warnings)",
+      "Cardiovascular and cerebrovascular events (INTRON A label, Warnings)",
+      "Ophthalmologic disorders including vision loss (INTRON A label, Warnings)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "INTRON A/ribavirin combination therapy is contraindicated in pregnancy (women who are pregnant; men whose female partners are pregnant) due to ribavirin teratogenicity; refer to ribavirin labeling. For interferon alone, pregnancy data not detailed in this label (INTRON A label, Contraindications).",
+    "lactation_guidance": "Not specified in this label; for HIV-infected mothers, breastfeeding not recommended (class-level context not from this label).",
+    "overdose": "Not specified in this label; treatment is supportive.",
+    "pharmacokinetics": "Following IM and SC injection, Tmax 3-12 hours, Cmax 18-116 IU/mL; elimination half-life approximately 2-3 hours; serum concentrations undetectable by 16 hours; after IV infusion, peak 135-273 IU/mL by end of 30-minute infusion, undetectable by 4 hours, half-life ~2 hours; urine concentrations not detectable; kidney may be main site of catabolism (INTRON A label, Clinical Pharmacology, Pharmacokinetics).",
+    "clinical_pearls": [
+      "Interferon alfa is a FAMILY of products (alfa-2a, alfa-2b, alfa-n3, pegylated forms); this monograph is based on INTRON A (interferon alfa-2b, recombinant) as a representative product (INTRON A label)",
+      "Boxed warning for neuropsychiatric, autoimmune, ischemic, and infectious disorders (INTRON A label)",
+      "Serum neutralizing antibodies detected in a minority of patients but did not appear to affect safety or efficacy (INTRON A label)",
+      "Combination with ribavirin adds significant additional contraindications and warnings (INTRON A label)"
+    ],
+    "brand_names": ["Intron A"],
+    "black_box_warnings": [
+      "Alpha interferons, including INTRON A, cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischemic, and infectious disorders (INTRON A label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "INTRON A/ribavirin combination therapy is contraindicated when creatinine clearance is less than 50 mL/min (INTRON A label, Contraindications).",
+    "hepatic_dose_adjustment": "Contraindicated in decompensated liver disease; use in compensated liver disease only (INTRON A label, Contraindications and Indications).",
+    "administration_instructions": "Powder for injection reconstituted with provided diluent; solution vials ready to use; routes include IM, SC, IV, and intralesional depending on indication and vial; store according to product labeling (INTRON A label, Description and Dosage and Administration)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "INTRON A (interferon alfa-2b) label, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "indications",
+      "ref": "INTRON A label, Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "contraindications",
+      "ref": "INTRON A label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "side_effects",
+      "ref": "INTRON A label, Warnings and Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "dosage",
+      "ref": "INTRON A label, Clinical Pharmacology and Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "interactions",
+      "ref": "INTRON A label, Contraindications and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "monitoring",
+      "ref": "INTRON A label, Indications and Usage and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "INTRON A label, Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "warnings",
+      "ref": "INTRON A label, Boxed Warning and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "precautions",
+      "ref": "INTRON A label, Warnings and Indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "INTRON A label, Boxed Warning and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "INTRON A label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Not specified in the INTRON A label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "overdose",
+      "ref": "Not specified in the INTRON A label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "INTRON A label, Clinical Pharmacology, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "INTRON A label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "brand_names",
+      "ref": "INTRON A brand name on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "INTRON A label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "INTRON A label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "INTRON A label, Contraindications and Indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "INTRON A label, Description",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd653d74-48ab-49e4-a42d-ec1cbc59badb"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimens provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative paediatric regimens provided in fields.dosage.paediatric)",
+    "pregnancy_category (not stated in the INTRON A label)",
+    "lactation_guidance (not specified in the INTRON A label)",
+    "overdose (not specified in the INTRON A label)",
+    "interactions (specific drug interaction studies not detailed in this label; only general warnings listed)",
+    "food_interactions (not stated in the INTRON A label)"
+  ],
+  "notes": "Interferon Alfa covers a FAMILY of products (alfa-2a, alfa-2b, alfa-n3, pegylated forms) with product-specific indications, dosing, and safety profiles. This monograph is based on INTRON A (interferon alfa-2b, recombinant) as a representative product and is not generalisable to all interferon alfa products without product-specific verification. Brand name Intron A. Content drafted from the FDA/DailyMed label. Pregnancy category not stated in this label."
+}

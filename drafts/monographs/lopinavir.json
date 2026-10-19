@@ -1,0 +1,192 @@
+{
+  "name": "Lopinavir",
+  "existing_id": "a19f7ac1-c03e-41aa-9755-96757e2671ba",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Lopinavir is an inhibitor of HIV-1 protease. It prevents cleavage of viral Gag-Pol polyprotein precursors into functional proteins, resulting in the production of immature, non-infectious virus particles. Lopinavir is metabolized primarily by CYP3A; when used clinically it is co-administered with ritonavir, which inhibits CYP3A and thereby increases lopinavir plasma concentrations (FDA Kaletra label, sections 1, 11 and 12.1).",
+    "indications": [
+      "HIV-1 infection, in combination with other antiretroviral agents, when administered as lopinavir/ritonavir (Kaletra) (FDA Kaletra label, section 1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity (e.g., toxic epidermal necrolysis, Stevens-Johnson syndrome, erythema multiforme) to lopinavir/ritonavir or any ingredient, including ritonavir (FDA Kaletra label, section 4)",
+      "Co-administration with drugs highly dependent on CYP3A for clearance for which elevated plasma concentrations are associated with serious and/or life-threatening reactions (FDA Kaletra label, section 4 and Table 3)",
+      "Co-administration with potent CYP3A inducers where significantly reduced lopinavir plasma concentrations may be associated with loss of virologic response and possible resistance/cross-resistance (FDA Kaletra label, section 4 and Table 3)"
+    ],
+    "side_effects": [
+      "Gastrointestinal: diarrhea (most common), nausea, vomiting, abdominal pain, dyspepsia, flatulence (FDA Kaletra label, sections 6.1 and 6.2)",
+      "General: asthenia, headache, insomnia (FDA Kaletra label, sections 6.1 and 6.2)",
+      "Metabolic: elevations in total cholesterol and triglycerides; new onset or exacerbation of diabetes mellitus/hyperglycemia; fat redistribution (FDA Kaletra label, sections 5.5, 5.9 and 5.10)",
+      "Hepatobiliary: hepatotoxicity, including fatalities, especially with underlying hepatitis B/C (FDA Kaletra label, section 5.4)",
+      "Pancreatitis, including fatalities (FDA Kaletra label, section 5.3)",
+      "Cardiac: PR interval prolongation; second/third-degree AV block; QT prolongation and torsade de pointes (FDA Kaletra label, sections 5.6 and 5.7)",
+      "Immune reconstitution syndrome (FDA Kaletra label, section 5.8)",
+      "Increased bleeding in patients with hemophilia (FDA Kaletra label, section 5.11)"
+    ],
+    "dosage": {
+      "adult": "Lopinavir is not administered alone; dosing applies to the lopinavir/ritonavir co-formulation (Kaletra). Therapy-naive adults: 400/100 mg (two 200/50 mg tablets or 5 mL oral solution) twice daily, or 800/200 mg (four 200/50 mg tablets or 10 mL oral solution) once daily in patients with fewer than three lopinavir resistance-associated substitutions. Therapy-experienced adults: 400/100 mg twice daily. Tablets may be taken with or without food (swallowed whole); oral solution must be taken with food (FDA Kaletra label, sections 2.1).",
+      "geriatric": "Clinical studies did not include sufficient numbers of patients aged 65 years and older to determine whether they respond differently; no specific dose adjustment is stated (FDA Kaletra label, section 8.5).",
+      "paediatric": "As lopinavir/ritonavir (Kaletra) in pediatric patients 14 days and older, dosed twice daily based on body weight or body surface area; oral solution for children unable to swallow tablets. See the Lopinavir/Ritonavir monograph for full pediatric tables (FDA Kaletra label, section 2.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "As lopinavir/ritonavir: CYP3A inhibitor and substrate; review all concomitant medications (FDA Kaletra label, sections 4, 5.1 and 7)",
+      "Contraindicated with alfuzosin, rifampin, ergot derivatives, cisapride, St. John's wort, lovastatin, simvastatin, sildenafil (Revatio) for PAH, pimozide, triazolam and oral midazolam (FDA Kaletra label, Table 3)",
+      "Dose adjustment required with efavirenz, nevirapine, amprenavir, or nelfinavir (FDA Kaletra label, sections 2.1 and 7.3)",
+      "Caution with QT-prolonging drugs and drugs metabolized by CYP3A (FDA Kaletra label, sections 5.6, 5.7 and 7)"
+    ],
+    "monitoring": "Monitor liver function, lipids, blood glucose, and for pancreatitis and immune reconstitution (FDA Kaletra label, sections 5.3, 5.4, 5.5 and 5.10).",
+    "patient_counselling": "Advise that lopinavir is used only as lopinavir/ritonavir (Kaletra) and does not cure HIV. See the Lopinavir/Ritonavir monograph for full counselling (FDA Kaletra label, section 17).",
+    "warnings": [
+      "Drug interactions via CYP3A inhibition (FDA Kaletra label, sections 4, 5.1 and 7)",
+      "Pancreatitis, including fatalities (FDA Kaletra label, section 5.3)",
+      "Hepatotoxicity, including fatalities (FDA Kaletra label, section 5.4)",
+      "PR/QT prolongation (FDA Kaletra label, sections 5.6 and 5.7)",
+      "Preterm neonatal toxicity from alcohol/propylene glycol in oral solution (FDA Kaletra label, section 5.2)"
+    ],
+    "precautions": [
+      "Once-daily administration not recommended in pediatric patients or with >=3 lopinavir resistance-associated substitutions (FDA Kaletra label, sections 2.1 and 2.2)",
+      "Oral solution must be taken with food (FDA Kaletra label, section 2.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Pancreatitis, including fatalities (FDA Kaletra label, section 5.3)",
+      "Hepatotoxicity, including fatalities (FDA Kaletra label, section 5.4)",
+      "Life-threatening cardiac toxicity in preterm neonates receiving oral solution (FDA Kaletra label, section 5.2)"
+    ],
+    "food_interactions": [
+      "As lopinavir/ritonavir: tablets may be taken with or without food; oral solution must be taken with food (FDA Kaletra label, section 2.1)"
+    ],
+    "pregnancy_category": "Not assigned (FDA Kaletra label, section 8.1)",
+    "pregnancy_guidance": "No adequate and well-controlled studies in pregnant women; Antiretroviral Pregnancy Registry monitors outcomes (FDA Kaletra label, section 8.1).",
+    "lactation_guidance": "It is not known whether lopinavir or ritonavir are excreted in human milk; HIV-infected mothers should not breastfeed (FDA Kaletra label, section 8.3).",
+    "overdose": "No known specific antidote; supportive treatment (FDA Kaletra label, section 10).",
+    "pharmacokinetics": "Lopinavir is metabolized primarily by CYP3A and is 98-99% plasma protein bound; ritonavir inhibits CYP3A, increasing lopinavir exposure; half-life about 5-6 hours with ritonavir (FDA Kaletra label, section 12.3).",
+    "clinical_pearls": [
+      "Ritonavir is a pharmacokinetic booster (CYP3A inhibitor) and lopinavir is always given with ritonavir (FDA Kaletra label, section 11)",
+      "Lopinavir has no standalone brand; the marketed product is Kaletra (lopinavir/ritonavir)"
+    ],
+    "brand_names": ["Kaletra"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment required in renal impairment (FDA Kaletra label, section 8.6).",
+    "hepatic_dose_adjustment": "Not studied in severe hepatic impairment; use with caution (FDA Kaletra label, section 8.6).",
+    "administration_instructions": "Administered only as lopinavir/ritonavir (Kaletra): tablets swallowed whole with or without food; oral solution with food (FDA Kaletra label, section 2.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, KALETRA, sections 1, 11, 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, KALETRA, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, KALETRA, section 4 and Table 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, KALETRA, sections 5.3-5.11 and 6.1-6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, KALETRA, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, KALETRA, sections 4, 5.1, 5.6, 5.7 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, KALETRA, sections 5.3, 5.4, 5.5 and 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, KALETRA, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, KALETRA, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, KALETRA, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, KALETRA, sections 5.2, 5.3 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, KALETRA, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, KALETRA, section 8.1 (no FDA pregnancy category letter assigned)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, KALETRA, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, KALETRA, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, KALETRA, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, KALETRA, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, KALETRA, sections 11 and brand information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Kaletra (lopinavir and ritonavir) as the marketed brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, KALETRA, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, KALETRA, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, KALETRA, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b126fcd-2385-409f-9269-5bf886649c1a"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative pediatric regimen provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the KALETRA label)"
+  ],
+  "notes": "Lopinavir is not used as a single agent; it is co-formulated with ritonavir (Kaletra), where ritonavir acts as a pharmacokinetic booster via CYP3A inhibition. Content is consistent with the Lopinavir/Ritonavir monograph; dosing details are provided in that entry."
+}

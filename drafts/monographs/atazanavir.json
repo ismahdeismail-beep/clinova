@@ -1,0 +1,202 @@
+{
+  "name": "Atazanavir",
+  "existing_id": "1432d2ff-6b79-4835-b1c9-e5e424ea18ba",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atazanavir is an azapeptide HIV-1 protease inhibitor (PI). It selectively inhibits the virus-specific processing of viral Gag and Gag-Pol polyproteins in HIV-1-infected cells, thus preventing formation of mature virions (FDA REYATAZ label, section 12.4, Microbiology: Mechanism of Action).",
+    "indications": [
+      "Treatment of HIV-1 infection in adults and in pediatric patients 3 months of age and older weighing at least 5 kg, in combination with other antiretroviral agents (FDA REYATAZ label, section 1)"
+    ],
+    "contraindications": [
+      "Clinically significant hypersensitivity (e.g., Stevens-Johnson syndrome, erythema multiforme, or toxic skin eruptions) to any component of REYATAZ capsules or oral powder (FDA REYATAZ label, section 4)",
+      "Coadministration with drugs that are highly dependent on CYP3A or UGT1A1 for clearance, for which elevated plasma concentrations are associated with serious and/or life-threatening events (Table 6): alfuzosin; carbamazepine, phenobarbital, phenytoin; amiodarone (with ritonavir), quinidine (with ritonavir); rifampin; apalutamide, encorafenib, irinotecan, ivosidenib; lurasidone (with ritonavir), pimozide; orally administered midazolam, triazolam; dihydroergotamine, ergonovine, ergotamine, methylergonovine; cisapride; elbasvir/grazoprevir, glecaprevir/pibrentasvir; St. John's wort; lomitapide, lovastatin, simvastatin; sildenafil when dosed as REVATIO for pulmonary arterial hypertension; indinavir; nevirapine (FDA REYATAZ label, section 4, Table 6)",
+      "Coadministration with drugs that are strong inducers of CYP3A (e.g., carbamazepine, phenobarbital, phenytoin, rifampin, apalutamide, St. John's wort, nevirapine) due to potential loss of therapeutic effect and development of resistance (FDA REYATAZ label, section 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (>=2%): nausea, jaundice/scleral icterus, rash, headache, abdominal pain, vomiting, insomnia, peripheral neurologic symptoms, dizziness, myalgia, diarrhea, depression, and fever (FDA REYATAZ label, section 6.1)",
+      "Rash: all-grade rash in ~20% of patients; generally mild-to-moderate maculopapular eruptions; median onset 7.3 weeks, median duration 1.4 weeks; Stevens-Johnson syndrome, erythema multiforme, and DRESS syndrome reported (FDA REYATAZ label, sections 5.2, 6.1)",
+      "Hyperbilirubinemia: asymptomatic elevations of indirect (unconjugated) bilirubin due to UGT inhibition, reversible on discontinuation (FDA REYATAZ label, section 5.8)",
+      "Gastrointestinal: nausea, diarrhea, abdominal pain, vomiting (FDA REYATAZ label, section 6.1, Tables 7-8)",
+      "Nervous system: headache, insomnia, dizziness, peripheral neurologic symptoms (FDA REYATAZ label, section 6.1)",
+      "Postmarketing: chronic kidney disease, granulomatous interstitial nephritis with atazanavir crystal deposition; nephrolithiasis and cholelithiasis; new-onset/exacerbation of diabetes mellitus/hyperglycemia, diabetic ketoacidosis; immune reconstitution syndrome; fat redistribution; increased bleeding in hemophilia (FDA REYATAZ label, sections 5.5, 5.6, 5.9, 5.10, 5.11, 5.12, 6.2)"
+    ],
+    "dosage": {
+      "adult": "REYATAZ capsules and oral powder must be taken with food; do not open capsules. Treatment-naive adults: REYATAZ 300 mg with ritonavir 100 mg once daily with food, or REYATAZ 400 mg once daily with food if unable to tolerate ritonavir; 400 mg with ritonavir 100 mg once daily when coadministered with efavirenz. Treatment-experienced adults: REYATAZ 300 mg with ritonavir 100 mg once daily with food; 400 mg with ritonavir 100 mg once daily when coadministered with both an H2-receptor antagonist and tenofovir DF. Pregnancy: 300 mg with ritonavir 100 mg once daily with food (400 mg with ritonavir 100 mg once daily in second/third trimester when coadministered with either an H2RA or tenofovir DF). Efficacy/safety of ritonavir doses >100 mg once daily not established (FDA REYATAZ label, sections 2.1, 2.3, 2.6).",
+      "geriatric": "No dose adjustment based on age is recommended; clinical studies did not include sufficient patients aged >=65 years. Exercise appropriate caution in elderly patients reflecting greater frequency of decreased hepatic/renal/cardiac function and concomitant disease or therapy (FDA REYATAZ label, section 8.5).",
+      "paediatric": "Pediatric patients 6 to <18 years: weight-based capsule dosing with ritonavir, taken with food: 15 to <35 kg: 200 mg REYATAZ + 100 mg ritonavir; >=35 kg: 300 mg + 100 mg; treatment-naive >=40 kg unable to tolerate ritonavir: 400 mg. Oral powder for patients >=3 months and >=5 kg: 5 to <15 kg: 200 mg (4 packets) + 80 mg ritonavir solution; 15 to <25 kg: 250 mg (5 packets) + 80 mg; >=25 kg: 300 mg (6 packets) + 100 mg ritonavir. REYATAZ is not recommended below 3 months of age due to risk of kernicterus (FDA REYATAZ label, sections 1, 2.4, 2.5)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "CYP3A substrate and inhibitor: atazanavir is metabolized by CYP3A; strong CYP3A inducers reduce atazanavir concentrations and are contraindicated; drugs highly dependent on CYP3A/UGT1A1 are contraindicated due to risk of serious toxicity (FDA REYATAZ label, sections 4, 7.2)",
+      "Acid-reducing agents: proton-pump inhibitors and H2-receptor antagonists reduce atazanavir absorption; dose separation and dose adjustments required (e.g., H2RA dose should not exceed famotidine 20 mg twice daily; administer REYATAZ with ritonavir simultaneously with, and/or at least 10 hours after, the H2RA; PPIs require specific timing) (FDA REYATAZ label, sections 2.3, 7.3)",
+      "Tenofovir DF: coadministration lowers atazanavir concentrations; REYATAZ 300 mg + ritonavir 100 mg with tenofovir DF in treatment-experienced patients requires 400 mg REYATAZ + 100 mg ritonavir when also on an H2RA (FDA REYATAZ label, sections 2.3, 7.3)",
+      "Efavirenz: REYATAZ 400 mg + ritonavir 100 mg once daily required (FDA REYATAZ label, sections 2.3, 7.3)",
+      "HMG-CoA reductase inhibitors: avoid lovastatin and simvastatin; use lowest doses of atorvastatin, pitavastatin, pravastatin, rosuvastatin with monitoring for myopathy (FDA REYATAZ label, section 7.3)",
+      "PDE5 inhibitors: dose limitations apply (sildenafil max 25 mg/48 h, tadalafil max 10 mg/72 h, vardenafil max 2.5 mg/72 h) when used for erectile dysfunction; contraindicated for pulmonary arterial hypertension (REVATIO) (FDA REYATAZ label, sections 4, 7.3)",
+      "Anticoagulants (apixaban, rivaroxaban, dabigatran, edoxaban), antiarrhythmics, anticonvulsants, antimycobacterials, antineoplastics, antipsychotics, benzodiazepines, ergot derivatives, immunosuppressants, hormonal contraceptives: clinically significant interactions requiring dose adjustment or avoidance (FDA REYATAZ label, sections 4, 7.1, 7.3)",
+      "Ritonavir must be coadministered with several REYATAZ regimens; failure to coadminister results in subtherapeutic atazanavir levels (FDA REYATAZ label, section 2.1)"
+    ],
+    "monitoring": "Perform renal laboratory testing (serum creatinine, estimated creatinine clearance, urinalysis with microscopy) in all patients prior to initiation and during treatment. Perform hepatic laboratory testing in patients with underlying liver disease prior to initiation and during treatment. Monitor hepatic function in patients with HBV/HCV co-infection. Monitor ECG/PR interval in patients with pre-existing conduction disease or on PR-prolonging drugs. Monitor for hyperbilirubinemia, nephrolithiasis/cholelithiasis, rash, hyperglycemia, and signs of immune reconstitution syndrome (FDA REYATAZ label, sections 2.2, 5.1, 5.4, 5.5, 5.6, 5.8, 5.9, 5.10).",
+    "patient_counselling": "Take REYATAZ with food; do not open capsules. REYATAZ must be taken with ritonavir for many regimens. Hormonal contraceptives (injections, vaginal rings, implants, patches, some pills) may not work during treatment; discuss alternative contraception. Pregnancy exposure registry (Antiretroviral Pregnancy Registry, 1-800-258-4263); after delivery, report infant jaundice/scleral icterus. Potential risks of breastfeeding include HIV-1 transmission, viral resistance, and adverse reactions in the infant. Notify healthcare provider of all medicines. Do not start new medicines without consulting provider. Seek care for severe rash, chest pain, shortness of breath, or signs of liver/kidney problems (FDA REYATAZ label, section 17).",
+    "warnings": [
+      "Cardiac conduction abnormalities: PR interval prolongation; ECG monitoring should be considered in patients with preexisting conduction system disease (FDA REYATAZ label, section 5.1)",
+      "Severe skin reactions: discontinue if severe rash develops; Stevens-Johnson syndrome, erythema multiforme, DRESS reported (FDA REYATAZ label, section 5.2)",
+      "Hepatotoxicity: patients with HBV/HCV or elevated transaminases at increased risk of further elevations or hepatic decompensation (FDA REYATAZ label, section 5.4)",
+      "Chronic kidney disease: reported in postmarketing use, including granulomatous interstitial nephritis with atazanavir crystal deposition; consider alternatives in high-risk/pre-existing renal disease; discontinue if progressive (FDA REYATAZ label, section 5.5)",
+      "Nephrolithiasis and cholelithiasis: consider temporary interruption or discontinuation (FDA REYATAZ label, section 5.6)",
+      "Hyperbilirubinemia: asymptomatic indirect bilirubin elevations; do not dose reduce; evaluate transaminase increases for alternative etiologies (FDA REYATAZ label, section 5.8)",
+      "Diabetes mellitus/hyperglycemia, immune reconstitution syndrome, fat redistribution, hemophilia bleeding (FDA REYATAZ label, sections 5.9-5.12)",
+      "Phenylketonuria: oral powder contains phenylalanine (35 mg per packet) (FDA REYATAZ label, section 5.3)",
+      "Serious adverse reactions due to drug interactions with ritonavir-boosted atazanavir (FDA REYATAZ label, section 5.7)"
+    ],
+    "precautions": [
+      "REYATAZ capsules and oral powder must be taken with food; do not open capsules (FDA REYATAZ label, section 2.1)",
+      "REYATAZ without ritonavir is not recommended for treatment-experienced patients with prior virologic failure (FDA REYATAZ label, section 2.1)",
+      "Oral powder must be taken with ritonavir and is not recommended for children <5 kg (FDA REYATAZ label, section 2.1)",
+      "Ritonavir doses >100 mg once daily have not been established and are not recommended (FDA REYATAZ label, section 2.1)",
+      "Various degrees of cross-resistance among protease inhibitors have been observed (FDA REYATAZ label, section 5.13)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe skin reactions: Stevens-Johnson syndrome, erythema multiforme, toxic skin eruptions, DRESS (FDA REYATAZ label, sections 4, 5.2, 6.1)",
+      "Chronic kidney disease / granulomatous interstitial nephritis (FDA REYATAZ label, section 5.5)",
+      "Nephrolithiasis and cholelithiasis (FDA REYATAZ label, section 5.6)",
+      "Hyperbilirubinemia (FDA REYATAZ label, section 5.8)",
+      "Diabetic ketoacidosis (FDA REYATAZ label, section 5.9)",
+      "Cardiac conduction abnormalities (FDA REYATAZ label, section 5.1)"
+    ],
+    "food_interactions": [
+      "REYATAZ capsules and oral powder must be taken with food (FDA REYATAZ label, section 2.1)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Atazanavir has been evaluated in a limited number of women during pregnancy; available human and animal data suggest it does not increase the risk of major birth defects overall compared with the background rate. REYATAZ must be administered with ritonavir in pregnant patients. No dosage adjustment is required except for treatment-experienced women in the second or third trimester coadministered with either an H2RA or tenofovir DF (400 mg + ritonavir 100 mg once daily). All infants exposed in utero should be monitored for severe hyperbilirubinemia in the first few days of life. Pregnancy exposure registry: Antiretroviral Pregnancy Registry (1-800-258-4263). Women with HIV should be counseled regarding risks of breastfeeding (HIV transmission, viral resistance, adverse reactions) (FDA REYATAZ label, sections 8.1, 8.2).",
+    "lactation_guidance": "Atazanavir has been detected in human milk. Potential risks of breastfeeding include HIV-1 transmission in HIV-negative infants, developing viral resistance in HIV-positive infants, and adverse reactions in the breastfed infant similar to those seen in adults. Women with HIV are generally counseled not to breastfeed (FDA REYATAZ label, section 8.2).",
+    "overdose": "Human experience of acute overdose is limited. Single doses up to 1200 mg (3x the 400 mg maximum recommended dose) were taken by healthy participants without symptomatic untoward effects. A single self-administered overdose of 29.2 g was associated with asymptomatic bifascicular block and PR interval prolongation that resolved spontaneously. Treatment consists of general supportive measures, monitoring of vital signs and ECG, and observation; elimination of unabsorbed drug by emesis or gastric lavage and activated charcoal may be used. No specific antidote; dialysis unlikely to be beneficial (FDA REYATAZ label, section 10).",
+    "pharmacokinetics": "Atazanavir is an HIV-1 protease inhibitor metabolized by CYP3A. Steady-state Cmax (geometric mean) ~5199 ng/mL (400 mg once daily, healthy) and ~6129 ng/mL (300 mg + ritonavir 100 mg, healthy); Tmax ~2.0-3.0 h. Must be taken with food. Hepatic impairment: not recommended in severe hepatic impairment; REYATAZ with ritonavir not recommended with any degree of hepatic impairment. Renal impairment: no dose adjustment in severe renal impairment not on hemodialysis; not recommended in treatment-experienced patients on hemodialysis (FDA REYATAZ label, sections 2.7, 2.8, 8.7, 8.8, 12.3).",
+    "clinical_pearls": [
+      "REYATAZ must be taken with food and, for most regimens, with ritonavir; failure to coadminister ritonavir yields subtherapeutic levels (FDA REYATAZ label, sections 2.1, 2.3)",
+      "Asymptomatic indirect hyperbilirubinemia is expected and reversible; do not dose reduce (FDA REYATAZ label, section 5.8)",
+      "Monitor infants exposed in utero for severe hyperbilirubinemia in the first days of life (FDA REYATAZ label, section 8.1)",
+      "REYATAZ oral powder contains phenylalanine (35 mg per packet) - caution in phenylketonuria (FDA REYATAZ label, section 5.3)"
+    ],
+    "brand_names": ["REYATAZ"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment required in severe renal impairment not managed with hemodialysis; treatment-naive patients with end-stage renal disease on hemodialysis: REYATAZ 300 mg + ritonavir 100 mg. Not recommended in treatment-experienced patients with end-stage renal disease on hemodialysis (FDA REYATAZ label, sections 2.7, 8.7).",
+    "hepatic_dose_adjustment": "Treatment-naive: mild hepatic impairment (Child-Pugh A) 400 mg once daily; moderate (Child-Pugh B) 300 mg once daily; severe (Child-Pugh C) not recommended. REYATAZ with ritonavir not recommended in any degree of hepatic impairment (FDA REYATAZ label, sections 2.8, 8.8).",
+    "administration_instructions": "Take REYATAZ capsules and oral powder with food; do not open capsules. Oral powder must be mixed with food or beverage and administered within 1 hour of preparation; administer ritonavir immediately afterwards. Separate dosing from acid-reducing agents per label. Store at 25 C (77 F) (FDA REYATAZ label, sections 2.1, 2.5)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA REYATAZ label, section 12.4 Microbiology: Mechanism of Action (revised 12/2024)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA REYATAZ label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA REYATAZ label, section 4 Contraindications, Table 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA REYATAZ label, sections 5.2, 5.5, 5.6, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA REYATAZ label, sections 2.1, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 8.5, 8.7, 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA REYATAZ label, sections 4, 7.1, 7.2, 7.3, Table 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA REYATAZ label, sections 2.2, 5.1, 5.4, 5.5, 5.6, 5.8, 5.9, 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA REYATAZ label, section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA REYATAZ label, sections 5.1-5.13",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA REYATAZ label, sections 2.1, 5.13",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA REYATAZ label, sections 5.1, 5.2, 5.5, 5.6, 5.8, 5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA REYATAZ label, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA REYATAZ label, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA REYATAZ label, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA REYATAZ label, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA REYATAZ label, sections 2.7, 2.8, 8.7, 8.8, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA REYATAZ label, sections 2.1, 5.3, 5.8, 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "brand_names",
+      "ref": "REYATAZ brand name per label and DB row",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA REYATAZ label, sections 2.7, 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA REYATAZ label, sections 2.8, 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA REYATAZ label, sections 2.1, 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the REYATAZ label)"
+  ],
+  "notes": "REYATAZ (atazanavir sulfate) is an HIV-1 protease inhibitor used in combination with other antiretrovirals. Available as capsules (200, 300 mg) and oral powder (50 mg/packet). Must be taken with food; most regimens require ritonavir boosting. The DB row brand_names lists REYATAZ. Current label (revised 12/2024) uses PLLR format; no FDA pregnancy letter category is stated."
+}

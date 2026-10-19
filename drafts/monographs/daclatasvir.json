@@ -1,0 +1,193 @@
+{
+  "name": "Daclatasvir",
+  "existing_id": "fd1ee0cc-93b1-4279-b372-09afa90316b4",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Daclatasvir is a direct-acting antiviral agent (DAA) against the hepatitis C virus. It is an inhibitor of HCV nonstructural protein 5A (NS5A) (FDA DAKLINZA label, sections 1, 11, 12.1).",
+    "indications": [
+      "Treatment of chronic hepatitis C virus (HCV) genotype 1 or genotype 3 infection, in combination with sofosbuvir, with or without ribavirin (FDA DAKLINZA label, section 1)"
+    ],
+    "contraindications": [
+      "When used in combination with other agents, the contraindications applicable to those agents apply to the combination regimen (FDA DAKLINZA label, section 4)",
+      "Coadministration with drugs that strongly induce CYP3A (e.g., phenytoin, carbamazepine, rifampin, St. John's wort), which may lead to lower exposure and loss of efficacy (FDA DAKLINZA label, sections 4, 7.1)"
+    ],
+    "side_effects": [
+      "DAKLINZA + sofosbuvir: most common adverse reactions (>=10%): headache and fatigue (FDA DAKLINZA label, section 6.1)",
+      "ALLY-3 (genotype 3): headache 14%, fatigue 14%, nausea 8%, diarrhea 5% (FDA DAKLINZA label, section 6.1, Table 4)",
+      "ALLY-2 (HCV/HIV-1 coinfection): fatigue 15%, headache 8%, nausea 9%, diarrhea 7% (FDA DAKLINZA label, section 6.1, Table 4)",
+      "DAKLINZA + sofosbuvir + ribavirin (ALLY-1): headache, anemia, fatigue, nausea (>=10%); child-Pugh A/B/C cirrhosis cohort: headache 12%, anemia 20%, fatigue 15%, nausea 15%, rash 8%, diarrhea 3%, insomnia 3%, dizziness 0, somnolence 5%; post-transplant cohort: headache 30%, anemia 19%, fatigue 17%, nausea 6%, rash 2%, diarrhea 6%, insomnia 6%, dizziness 6%, somnolence 0 (FDA DAKLINZA label, section 6.1, Table 5)",
+      "Postmarketing: serious symptomatic bradycardia when coadministered with sofosbuvir and amiodarone (FDA DAKLINZA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "DAKLINZA 60 mg taken orally once daily, with or without food, in combination with sofosbuvir with or without ribavirin. Recommended treatment duration 12 weeks. Dose modification: 30 mg once daily with strong CYP3A inhibitors (and certain HIV antivirals); 90 mg once daily with moderate CYP3A inducers (e.g., nevirapine). Contraindicated with strong CYP3A inducers. If sofosbuvir is permanently discontinued, DAKLINZA should also be discontinued. For HCV genotype 1 or 3 with Child-Pugh B/C cirrhosis or post-transplant, ribavirin starting dose 600 mg once daily increasing up to 1000 mg daily as tolerated (FDA DAKLINZA label, sections 2.2, 2.3, 2.4).",
+      "geriatric": "Of 1184 subjects treated with the recommended dose in ten clinical trials, 7% were >=65 years. Safety similar across older and younger subjects; no safety findings unique to >=65 years. SVR12 rates comparable. No dosage adjustment required for elderly patients (FDA DAKLINZA label, section 8.5).",
+      "paediatric": "Safety and effectiveness in pediatric patients younger than 18 years of age have not been established (FDA DAKLINZA label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Daclatasvir is a substrate of CYP3A: strong CYP3A inducers contraindicated; strong CYP3A inhibitors increase daclatasvir concentrations (reduce dose to 30 mg); moderate CYP3A inducers decrease concentrations (increase dose to 90 mg) (FDA DAKLINZA label, sections 2.3, 4, 7.1)",
+      "HIV antivirals: with atazanavir/ritonavir (and other strong CYP3A-inhibiting PIs: indinavir, nelfinavir, saquinavir) and cobicistat-containing regimens (except darunavir/cobicistat): reduce DAKLINZA to 30 mg once daily; with efavirenz, etravirine, nevirapine: increase to 90 mg once daily (FDA DAKLINZA label, section 7.3)",
+      "Strong CYP3A inhibitors (clarithromycin, itraconazole, ketoconazole, nefazodone, posaconazole, telithromycin, voriconazole): reduce to 30 mg once daily (FDA DAKLINZA label, section 7.3)",
+      "Moderate CYP3A inducers (bosentan, dexamethasone, modafinil, nafcillin, rifapentine): increase to 90 mg once daily (FDA DAKLINZA label, section 7.3)",
+      "Daclatasvir inhibits P-gp, OATP 1B1/1B3, and BCRP: may increase systemic exposure to substrates (e.g., digoxin, statins, dabigatran); dabigatran not recommended in specific renal impairment groups; monitor for HMG-CoA reductase inhibitor adverse events (FDA DAKLINZA label, sections 7.2, 7.3)",
+      "Amiodarone: coadministration with DAKLINZA + sofosbuvir not recommended due to risk of serious symptomatic bradycardia (FDA DAKLINZA label, sections 5.3, 7.3)",
+      "No clinically significant interactions with cyclosporine, darunavir/ritonavir, dolutegravir, escitalopram, ethinyl estradiol/norgestimate, lopinavir/ritonavir, methadone, midazolam, tacrolimus, tenofovir (FDA DAKLINZA label, section 7.4)"
+    ],
+    "monitoring": "Test all patients for evidence of current or prior HBV infection (HBsAg and anti-HBc) before initiating HCV treatment; monitor HCV/HBV coinfected patients for HBV reactivation and hepatitis flare during treatment and post-treatment follow-up. In HCV genotype 1a patients with cirrhosis, consider screening for NS5A resistance-associated polymorphisms at positions M28, Q30, L31, Y93. Monitor hepatic function. Monitor for symptomatic bradycardia when amiodarone is used (FDA DAKLINZA label, sections 2.1, 5.1, 5.3).",
+    "patient_counselling": "Take DAKLINZA once daily with or without food in combination with sofosbuvir. If sofosbuvir is stopped, DAKLINZA must also be stopped. Report signs of HBV reactivation (fatigue, anorexia, nausea, jaundice, dark urine, liver tenderness). Avoid concomitant use with strong CYP3A inducers. Counsel on risk of serious symptomatic bradycardia with amiodarone. If administered with ribavirin, follow ribavirin pregnancy avoidance warnings (FDA DAKLINZA label, sections 5.1, 5.3, 5.4).",
+    "warnings": [
+      "Boxed warning: risk of hepatitis B virus reactivation in patients coinfected with HCV and HBV, which may result in fulminant hepatitis, hepatic failure, and death (FDA DAKLINZA label, Boxed Warning, section 5.1)",
+      "Risk of adverse reactions or loss of virologic response due to drug interactions (FDA DAKLINZA label, section 5.2)",
+      "Serious symptomatic bradycardia when coadministered with sofosbuvir and amiodarone (FDA DAKLINZA label, section 5.3)",
+      "Risks associated with ribavirin combination treatment, including pregnancy avoidance (FDA DAKLINZA label, section 5.4)"
+    ],
+    "precautions": [
+      "Sustained virologic response (SVR12) rates are reduced in HCV genotype 3 patients with cirrhosis receiving DAKLINZA + sofosbuvir for 12 weeks (FDA DAKLINZA label, section 1)",
+      "Optimal duration not established for HCV genotype 3 with cirrhosis or HCV genotype 1 with Child-Pugh C cirrhosis (FDA DAKLINZA label, section 2.2)",
+      "No dosage adjustment of DAKLINZA required for mild/moderate/severe hepatic impairment or any degree of renal impairment (FDA DAKLINZA label, sections 8.6, 8.7)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious symptomatic bradycardia (with sofosbuvir and amiodarone) (FDA DAKLINZA label, sections 5.3, 6.2)",
+      "HBV reactivation: fulminant hepatitis, hepatic failure, death (FDA DAKLINZA label, Boxed Warning, section 5.1)",
+      "Grade 3/4 laboratory abnormalities: anemia (with ribavirin), ALT/AST elevations, total bilirubin elevations (with atazanavir), lipase elevations (FDA DAKLINZA label, section 6.1, Table 6)"
+    ],
+    "food_interactions": ["May be taken with or without food (FDA DAKLINZA label, section 2.2)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No adequate human data available to determine whether DAKLINZA poses a risk to pregnancy outcomes. Animal reproduction studies in rats and rabbits showed no fetal harm at exposures up to 6 and 22 times the recommended human dose; embryofetal toxicity at maternally toxic doses (33 and 98 times human exposure). If administered with ribavirin, the combination regimen is contraindicated in pregnant women and in men whose female partners are pregnant (refer to ribavirin labeling). (FDA DAKLINZA label, section 8.1).",
+    "lactation_guidance": "It is not known whether DAKLINZA is present in human milk, affects human milk production, or has effects on the breastfed infant. Daclatasvir was present in the milk of lactating rats. Consider developmental and health benefits of breastfeeding along with mother's clinical need (FDA DAKLINZA label, section 8.2).",
+    "overdose": "There is no known antidote for overdose of DAKLINZA. Treatment consists of general supportive measures including monitoring of vital signs and observation of the patient's clinical status. Because daclatasvir is highly protein bound (>99%), dialysis is unlikely to significantly reduce plasma concentrations (FDA DAKLINZA label, section 10).",
+    "pharmacokinetics": "Daclatasvir is a CYP3A substrate with absolute bioavailability 67%; peak plasma concentrations within 2 h; dose-proportional Cmax/AUC up to 60 mg once daily; steady state after ~4 days; protein binding ~99%; terminal elimination half-life ~12-15 h; total clearance 4.2 L/h; volume of distribution 47 L. Metabolism primarily by CYP3A4. Excretion: 88% of total radioactivity in feces (53% unchanged daclatasvir) and 6.6% in urine. High-fat meal decreased Cmax 28% and AUC 23%; low-fat meal no clinically relevant effect. No dosage adjustment required for any degree of renal or hepatic impairment (FDA DAKLINZA label, sections 8.6, 8.7, 12.3).",
+    "clinical_pearls": [
+      "Always coadminister with sofosbuvir; if sofosbuvir is stopped, DAKLINZA must also be stopped (FDA DAKLINZA label, section 2.4)",
+      "Dose adjust for CYP3A inhibitors/inducers: 30 mg with strong inhibitors, 90 mg with moderate inducers (FDA DAKLINZA label, section 2.3)",
+      "Screen HCV genotype 1a cirrhotic patients for NS5A resistance polymorphisms before treatment (FDA DAKLINZA label, section 2.1)",
+      "Test all patients for HBV (HBsAg, anti-HBc) before starting HCV therapy (FDA DAKLINZA label, section 2.1)"
+    ],
+    "brand_names": ["Daklinza"],
+    "black_box_warnings": [
+      "Risk of hepatitis B virus reactivation in patients coinfected with HCV and HBV (FDA DAKLINZA label, Boxed Warning)"
+    ],
+    "renal_dose_adjustment": "No dosage adjustment required for any degree of renal impairment (FDA DAKLINZA label, section 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment required for mild (Child-Pugh A), moderate (Child-Pugh B), or severe (Child-Pugh C) hepatic impairment (FDA DAKLINZA label, section 8.7).",
+    "administration_instructions": "Take 60 mg orally once daily with or without food in combination with sofosbuvir with or without ribavirin. Follow dose modifications for CYP3A inhibitors/inducers. If ribavirin is used, follow ribavirin dosing and pregnancy avoidance (FDA DAKLINZA label, sections 2.2, 2.3, 5.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA DAKLINZA label, sections 1, 11, 12.1 (revised 02/2017)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DAKLINZA label, section 1 Indications and Usage",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DAKLINZA label, section 4 Contraindications",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DAKLINZA label, sections 6.1, 6.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DAKLINZA label, sections 2.2, 2.3, 2.4",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA DAKLINZA label, sections 2.3, 4, 7.1, 7.2, 7.3, 7.4",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DAKLINZA label, sections 2.1, 5.1, 5.3",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DAKLINZA label, sections 5.1, 5.3, 5.4, 17",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DAKLINZA label, Boxed Warning, sections 5.1-5.4",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DAKLINZA label, sections 1, 2.2, 8.6, 8.7",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DAKLINZA label, sections 5.1, 5.3, 6.1, 6.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA DAKLINZA label, section 2.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DAKLINZA label, section 8.1",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DAKLINZA label, section 8.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DAKLINZA label, section 10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DAKLINZA label, sections 8.6, 8.7, 12.3",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DAKLINZA label, sections 2.1, 2.3, 2.4",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Daklinza brand name per label and DB row",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DAKLINZA label, Boxed Warning",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA DAKLINZA label, section 8.6",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA DAKLINZA label, section 8.7",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DAKLINZA label, sections 2.2, 2.3, 5.4",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/206843s006lbl.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)"
+  ],
+  "notes": "DAKLINZA (daclatasvir) is an HCV NS5A inhibitor used in combination with sofosbuvir, with or without ribavirin, for chronic HCV genotype 1 or 3 infection. The DB row had no brand_names; Daklinza is the established brand name. Content sourced from FDA label revised 02/2017."
+}

@@ -1,0 +1,189 @@
+{
+  "name": "Entecavir",
+  "existing_id": "e50519eb-c9d7-4aea-bcf4-6657b491ba02",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Entecavir is a guanosine nucleoside analogue with selective activity against hepatitis B virus (HBV). It is an antiviral drug against HBV (FDA BARACLUDE label, sections 11, 12.1).",
+    "indications": [
+      "Treatment of chronic hepatitis B virus infection in adults and pediatric patients 2 years of age and older with evidence of active viral replication and either evidence of persistent elevations in serum aminotransferases (ALT or AST) or histologically active disease (FDA BARACLUDE label, section 1)"
+    ],
+    "contraindications": ["None (FDA BARACLUDE label, section 4)"],
+    "side_effects": [
+      "Adults: most common adverse reactions (>=3%, all severity grades): headache, fatigue, dizziness, nausea (FDA BARACLUDE label, section 6.1)",
+      "Compensated liver disease (four clinical trials): Grade 2-4 adverse reactions considered at least possibly related: any 15% (0.5 mg) vs 18% (lamivudine); gastrointestinal (diarrhea <1%, dyspepsia <1%, nausea <1%, vomiting <1%); general (fatigue 1%); nervous system (headache 2%, dizziness <1%, somnolence <1%); psychiatric (insomnia <1%) (FDA BARACLUDE label, section 6.1, Table 3)",
+      "Decompensated liver disease (Study AI463048): most common treatment-emergent adverse events of any severity through Week 48: peripheral edema 16%, ascites 15%, pyrexia 14%, hepatic encephalopathy 10%, upper respiratory infection 10%; clinical adverse reactions also included blood bicarbonate decreased 2% and renal failure <1% (FDA BARACLUDE label, section 6.1)",
+      "Pediatric subjects 2 to <18 years: adverse drug reactions reported in >1% included abdominal pain, rash events, poor palatability (product taste abnormal), nausea, diarrhea, and vomiting (FDA BARACLUDE label, section 6.1)",
+      "Postmarketing: anaphylactoid reaction; lactic acidosis; increased transaminases; alopecia, rash (FDA BARACLUDE label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Compensated liver disease, nucleoside-inhibitor-treatment-naive adults and adolescents >=16 years: 0.5 mg once daily. Adults and adolescents >=16 years with a history of hepatitis B viremia while receiving lamivudine or known lamivudine/telbivudine resistance substitutions (rtM204I/V with or without rtL180M, rtL80I/V, or rtV173L): 1 mg once daily. Decompensated liver disease (adults): 1 mg once daily. BARACLUDE should be administered on an empty stomach (at least 2 hours after a meal and 2 hours before the next meal) (FDA BARACLUDE label, sections 2.1, 2.2).",
+      "geriatric": "Clinical studies did not include sufficient numbers of subjects aged >=65 years to determine whether they respond differently from younger subjects. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA BARACLUDE label, section 8.5).",
+      "paediatric": "Pediatric patients 2 years and older weighing at least 10 kg: weight-based oral solution dosing (mL once daily): 10-11 kg: 3 mL (treatment-naive) / 6 mL (lamivudine-experienced); 11-14 kg: 4/8 mL; 14-17 kg: 5/10 mL; 17-20 kg: 6/12 mL; 20-23 kg: 7/14 mL; 23-26 kg: 8/16 mL; 26-30 kg: 9/18 mL; >30 kg: 10/20 mL (or one 0.5 mg / 1 mg tablet). Oral solution should be used for patients with body weight up to 30 kg (FDA BARACLUDE label, section 2.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Entecavir is predominantly eliminated by the kidney; coadministration with drugs that reduce renal function or compete for active tubular secretion may increase serum concentrations of either entecavir or the coadministered drug. Coadministration with lamivudine, adefovir dipivoxil, or tenofovir disoproxil fumarate did not result in significant drug interactions. Effects of coadministration with other renally eliminated drugs or drugs affecting renal function have not been evaluated; monitor closely (FDA BARACLUDE label, section 7)",
+      "Entecavir is not a substrate, inhibitor, or inducer of the CYP450 enzyme system (FDA BARACLUDE label, section 12.3)"
+    ],
+    "monitoring": "Monitor hepatic function closely for at least several months after discontinuation of anti-hepatitis B therapy due to risk of severe acute exacerbations of hepatitis B. Offer HIV antibody testing to all patients before initiating therapy. Periodic monitoring of hepatic function recommended during treatment. Monitor renal function in elderly patients and in liver transplant recipients receiving immunosuppressants affecting renal function (FDA BARACLUDE label, sections 5.1, 5.2, 6.1, 8.5, 8.8).",
+    "patient_counselling": "Take BARACLUDE on an empty stomach (at least 2 hours after a meal and 2 hours before the next meal). Do not stop BARACLUDE without talking to your healthcare provider; hepatitis may worsen or become serious if stopped. Do not run out of BARACLUDE. BARACLUDE will not cure HBV. Pregnancy exposure registry (Antiretroviral Pregnancy Registry, 1-800-258-4263). (FDA BARACLUDE label, sections 2.1, 17).",
+    "warnings": [
+      "Boxed warning: severe acute exacerbations of hepatitis B have been reported in patients who have discontinued anti-hepatitis B therapy, including entecavir; monitor hepatic function closely for at least several months after discontinuation (FDA BARACLUDE label, Boxed Warning, section 5.1)",
+      "Boxed warning: not recommended for HIV/HBV co-infected patients who are not also receiving HAART, because of potential for development of resistance to HIV nucleoside reverse transcriptase inhibitors (FDA BARACLUDE label, Boxed Warning, section 5.2)",
+      "Boxed warning: lactic acidosis and severe hepatomegaly with steatosis, including fatal cases, have been reported with the use of nucleoside analogue inhibitors (FDA BARACLUDE label, Boxed Warning, section 5.3)"
+    ],
+    "precautions": [
+      "BARACLUDE is not recommended for HIV/HBV co-infected patients not receiving HAART; offer HIV antibody testing before initiating therapy (FDA BARACLUDE label, section 5.2)",
+      "Patients with decompensated liver disease may be at higher risk for lactic acidosis; suspend treatment if clinical or laboratory findings suggestive of lactic acidosis or pronounced hepatotoxicity (FDA BARACLUDE label, section 5.3)",
+      "Optimal duration of treatment and relationship to long-term outcomes (cirrhosis, hepatocellular carcinoma) are unknown (FDA BARACLUDE label, section 2.6)",
+      "Limited data on safety and efficacy in liver transplant recipients (FDA BARACLUDE label, section 8.8)",
+      "Use in lamivudine-experienced pediatric patients only if potential benefit justifies potential risk (FDA BARACLUDE label, section 8.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe acute exacerbations of hepatitis B on discontinuation (FDA BARACLUDE label, Boxed Warning, section 5.1)",
+      "Lactic acidosis and severe hepatomegaly with steatosis, including fatal cases (FDA BARACLUDE label, Boxed Warning, section 5.3)",
+      "Anaphylactoid reaction (postmarketing) (FDA BARACLUDE label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Administer on an empty stomach (at least 2 hours after a meal and 2 hours before the next meal) (FDA BARACLUDE label, section 2.1)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Prospective pregnancy data from the Antiretroviral Pregnancy Registry are not sufficient to adequately assess risk of birth defects, miscarriage, or adverse maternal or fetal outcomes. In animal reproduction studies, no adverse developmental effects were observed with entecavir at clinically relevant exposures (systemic exposures ~25 times in rats and ~200 times in rabbits the exposure at the maximum recommended human dose of 1 mg/day). Healthcare providers are encouraged to register patients in the Antiretroviral Pregnancy Registry (1-800-258-4263) (FDA BARACLUDE label, section 8.1).",
+    "lactation_guidance": "It is not known whether BARACLUDE is present in human breast milk, affects human milk production, or has effects on the breastfed infant. Entecavir was present in the milk of lactating rats. Consider developmental and health benefits of breastfeeding along with mother's clinical need (FDA BARACLUDE label, section 8.2).",
+    "overdose": "Limited experience of entecavir overdosage. Healthy subjects receiving single doses up to 40 mg or multiple doses up to 20 mg/day for up to 14 days had no increase in or unexpected adverse events. If overdose occurs, monitor for evidence of toxicity and apply standard supportive treatment. Following a single 1 mg dose, a 4-hour hemodialysis session removed approximately 13% of the dose (FDA BARACLUDE label, section 10).",
+    "pharmacokinetics": "Entecavir is a guanosine nucleoside analogue. Peak plasma concentrations 0.5-1.5 h after oral dosing; steady state after 6-10 days with ~2-fold accumulation. For 0.5 mg dose, Cmax at steady state 4.2 ng/mL and Ctrough 0.3 ng/mL; for 1 mg dose, Cmax 8.2 ng/mL and Ctrough 0.5 ng/mL. Bioavailability of tablet 100% relative to oral solution. Food decreases Cmax 44-46% and AUC 18-20%. Binding to human serum proteins ~13%. Terminal elimination half-life ~128-149 h (effective accumulation half-life ~24 h). Predominantly eliminated by kidney (62-73% of dose as unchanged drug in urine). Renal clearance 360-471 mL/min. No significant gender or racial differences. Elderly: AUC 29.3% greater (attributable to renal function). No dosage adjustment for hepatic impairment. Dosage adjustment recommended for CrCl <50 mL/min (FDA BARACLUDE label, sections 2.4, 2.5, 12.3).",
+    "clinical_pearls": [
+      "Must be taken on an empty stomach (FDA BARACLUDE label, section 2.1)",
+      "Severe exacerbations can occur on discontinuation; monitor for months (FDA BARACLUDE label, Boxed Warning)",
+      "Not for HIV/HBV co-infection unless patient also on HAART (FDA BARACLUDE label, Boxed Warning)",
+      "Dose adjust for renal impairment (CrCl <50 mL/min) (FDA BARACLUDE label, section 2.4)",
+      "Tablet and oral solution are interchangeable (FDA BARACLUDE label, section 12.3)"
+    ],
+    "brand_names": ["Baraclude"],
+    "black_box_warnings": [
+      "Severe acute exacerbations of hepatitis B on discontinuation; not recommended in HIV/HBV co-infection without HAART; lactic acidosis and severe hepatomegaly with steatosis (FDA BARACLUDE label, Boxed Warning)"
+    ],
+    "renal_dose_adjustment": "Dosage adjustment recommended for CrCl <50 mL/min, including patients on hemodialysis or CAPD (Table 2): CrCl 30 to <50 mL/min: 0.25 mg once daily (or 0.5 mg every 48 h) for usual dose / 0.5 mg once daily (or 1 mg every 48 h) for lamivudine-refractory or decompensated liver disease; CrCl 10 to <30 mL/min: 0.15 mg once daily (or 0.5 mg every 72 h) / 0.3 mg once daily (or 1 mg every 72 h); CrCl <10 mL/min or on hemodialysis/CAPD: 0.05 mg once daily (or 0.5 mg every 7 days) / 0.1 mg once daily (or 1 mg every 7 days); administer after hemodialysis session on dialysis days. No specific adjustment for pediatric patients with renal impairment; consider similar reduction (FDA BARACLUDE label, section 2.4).",
+    "hepatic_dose_adjustment": "No dosage adjustment necessary for patients with hepatic impairment (FDA BARACLUDE label, section 2.5).",
+    "administration_instructions": "Administer on an empty stomach (at least 2 hours after a meal and 2 hours before the next meal). Oral solution should be used for patients with body weight up to 30 kg. For doses less than 0.5 mg, oral solution is recommended (FDA BARACLUDE label, sections 2.1, 2.3, 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA BARACLUDE label, sections 11, 12.1 (revised 11/2019)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA BARACLUDE label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA BARACLUDE label, section 4 Contraindications (None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA BARACLUDE label, sections 6.1, 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA BARACLUDE label, sections 2.1, 2.2, 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA BARACLUDE label, sections 7, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA BARACLUDE label, sections 5.1, 5.2, 6.1, 8.5, 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA BARACLUDE label, sections 2.1, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA BARACLUDE label, Boxed Warning, sections 5.1, 5.2, 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA BARACLUDE label, sections 2.6, 5.2, 5.3, 8.4, 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA BARACLUDE label, Boxed Warning, sections 5.1, 5.3, 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA BARACLUDE label, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA BARACLUDE label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA BARACLUDE label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA BARACLUDE label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA BARACLUDE label, sections 2.4, 2.5, 8.5, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA BARACLUDE label, Boxed Warning, sections 2.1, 2.4, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Baraclude brand name per label and DB row (DB lists Entecavir)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA BARACLUDE label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA BARACLUDE label, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA BARACLUDE label, section 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA BARACLUDE label, sections 2.1, 2.3, 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; narrative paediatric regimen provided in fields.dosage.paediatric)"
+  ],
+  "notes": "BARACLUDE (entecavir) is a guanosine nucleoside analogue for chronic HBV infection in adults and children >=2 years. The DB row brand_names lists 'Entecavir' (generic); Baraclude is the established brand. Content sourced from FDA label revised 11/2019."
+}

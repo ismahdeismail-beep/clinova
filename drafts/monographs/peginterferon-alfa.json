@@ -1,0 +1,229 @@
+{
+  "name": "Peginterferon Alfa",
+  "existing_id": "2fbbeb7c-fdee-44c5-a8c4-206977dac236",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Peginterferon alfa-2a (Pegasys) is a covalent conjugate of recombinant interferon alfa-2a with a branched bis-monomethoxy polyethylene glycol (PEG) chain, which prolongs its half-life. Its biological activity is derived from the interferon alfa-2a moiety, which binds to the human type 1 interferon receptor, leading to receptor dimerization and activation of intracellular signal transduction pathways (initially JAK/STAT), inducing an innate antiviral immune response and effector proteins such as serum neopterin and 2',5'-oligoadenylate synthetase (FDA Pegasys label, sections 11 and 12.1).",
+    "indications": [
+      "Chronic hepatitis C (CHC): in combination with other HCV antiviral drugs in adults with compensated liver disease; monotherapy only if contraindication or significant intolerance to other HCV drugs (FDA Pegasys label, section 1.1)",
+      "Chronic hepatitis C (CHC): in combination with ribavirin in pediatric patients 5 years of age and older with compensated liver disease (FDA Pegasys label, section 1.1)",
+      "Chronic hepatitis B (CHB): treatment of adults with HBeAg-positive and HBeAg-negative CHB with compensated liver disease and evidence of viral replication and liver inflammation (FDA Pegasys label, section 1.2)",
+      "Chronic hepatitis B (CHB): treatment of non-cirrhotic pediatric patients 3 years of age and older with HBeAg-positive CHB and evidence of viral replication and elevations in serum ALT (FDA Pegasys label, section 1.2)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity reactions (e.g., urticaria, angioedema, bronchoconstriction, anaphylaxis, Stevens-Johnson syndrome) to alpha interferons, including PEGASYS, or any component (FDA Pegasys label, section 4)",
+      "Autoimmune hepatitis (FDA Pegasys label, section 4)",
+      "Hepatic decompensation (Child-Pugh score >6, class B and C) in cirrhotic patients before treatment (FDA Pegasys label, section 4)",
+      "Hepatic decompensation with Child-Pugh score >=6 in cirrhotic CHC patients coinfected with HIV before treatment (FDA Pegasys label, section 4)",
+      "Neonates and infants (product contains benzyl alcohol) (FDA Pegasys label, section 4)",
+      "When used with ribavirin: contraindicated in pregnant women and men whose female partners are pregnant (FDA Pegasys label, section 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence >40%): fatigue/asthenia, pyrexia, myalgia, headache (FDA Pegasys label, section 6.1)",
+      "Neuropsychiatric: depression, suicidal ideation, suicide, homicidal ideation, psychoses, hallucinations, bipolar disorders, mania, aggressive behavior, relapse of drug addiction, drug overdose (FDA Pegasys label, sections 5.2 and 6.1)",
+      "Hematologic: bone marrow suppression with neutropenia, thrombocytopenia, anemia; pancytopenia reported with concomitant azathioprine (FDA Pegasys label, section 5.4)",
+      "Autoimmune disorders: myositis, hepatitis, thrombotic thrombocytopenic purpura, ITP, psoriasis, rheumatoid arthritis, interstitial nephritis, thyroiditis, SLE (FDA Pegasys label, section 5.5)",
+      "Endocrine: hypothyroidism, hyperthyroidism, hyperglycemia, hypoglycemia, diabetes mellitus (FDA Pegasys label, section 5.6)",
+      "Ophthalmologic: decrease or loss of vision, retinopathy, macular edema, retinal artery/vein thrombosis, retinal hemorrhages, cotton wool spots, optic neuritis, papilledema, serous retinal detachment (FDA Pegasys label, section 5.7)",
+      "Cardiovascular: hypertension, supraventricular arrhythmias, chest pain, myocardial infarction (FDA Pegasys label, section 5.3)",
+      "Cerebrovascular: ischemic and hemorrhagic cerebrovascular events (FDA Pegasys label, section 5.8)",
+      "Hepatic: hepatic decompensation in cirrhotic patients; hepatitis exacerbations/flares in CHB (FDA Pegasys label, section 5.9)",
+      "Pulmonary: dyspnea, pulmonary infiltrates, pneumonia, bronchiolitis obliterans, interstitial pneumonitis, pulmonary hypertension, sarcoidosis, respiratory failure (FDA Pegasys label, section 5.10)",
+      "Infections: serious bacterial, viral, or fungal infections (FDA Pegasys label, section 5.11)",
+      "Gastrointestinal: colitis (ulcerative, hemorrhagic/ischemic), pancreatitis (FDA Pegasys label, sections 5.12 and 5.13)",
+      "Hypersensitivity: anaphylaxis, Stevens-Johnson syndrome, serious skin reactions (FDA Pegasys label, section 5.14)",
+      "Growth impairment in pediatric patients (FDA Pegasys label, section 5.15)",
+      "Peripheral neuropathy when used with telbivudine (FDA Pegasys label, section 5.16)"
+    ],
+    "dosage": {
+      "adult": "Administered by subcutaneous injection. CHC: 180 mcg once weekly; duration depends on indication, genotype, and whether administered with other HCV antiviral drugs (genotypes 1/4: 48 weeks with ribavirin; genotypes 2/3: 24 weeks with ribavirin). CHC with HIV coinfection: 180 mcg SC once weekly for 48 weeks. CHB: 180 mcg SC once weekly for 48 weeks. Dosage modifications for neutropenia/thrombocytopenia, ALT elevations, depression, and renal impairment as described in section 2.6 (FDA Pegasys label, sections 2.2, 2.4 and 2.6).",
+      "geriatric": "Neuropsychiatric, cardiac, and systemic (flu-like) adverse reactions may be more severe in geriatric patients (FDA Pegasys label, section 8.5).",
+      "paediatric": "CHC: 180 mcg/1.73 m2 x BSA SC once weekly (max 180 mcg) with ribavirin; duration 24 weeks (genotypes 2/3) or 48 weeks (other genotypes). CHB (HBeAg-positive, non-cirrhotic): 180 mcg/1.73 m2 x BSA SC once weekly (max 180 mcg) for 48 weeks. Safety/efficacy not established in CHC patients <5 years or CHB patients <3 years. Pediatric dosage modifications for neutropenia, thrombocytopenia, ALT elevations, and depression as in section 2.6 (FDA Pegasys label, sections 2.3, 2.5 and 2.6)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Drugs metabolized by CYP1A2 (e.g., theophylline): monitor for increased serum levels and adjust dose (FDA Pegasys label, section 7.2)",
+      "Methadone: monitor for signs and symptoms of methadone toxicity (FDA Pegasys label, section 7.3)",
+      "Nucleoside analogues: closely monitor for toxicities; reduce or discontinue PEGASYS or ribavirin or both if events worsen (FDA Pegasys label, section 7.4)",
+      "Zidovudine: monitor for worsening neutropenia and/or anemia with PEGASYS and/or ribavirin (FDA Pegasys label, section 7.4)",
+      "Azathioprine: pancytopenia reported with concomitant pegylated interferon/ribavirin; discontinue both if pancytopenia occurs (FDA Pegasys label, section 5.4)",
+      "Telbivudine: peripheral neuropathy (FDA Pegasys label, section 5.16)"
+    ],
+    "monitoring": "CBC with differential and platelets pre-treatment and routinely during therapy (section 5.4). Liver function (ALT, bilirubin) before and during treatment, especially in CHB flares and cirrhosis (sections 5.9 and 2.6). Thyroid function (sections 5.6). Blood glucose (section 5.6). Ophthalmologic exam at baseline and periodically in patients with pre-existing ophthalmologic disorders (section 5.7). Monitor for neuropsychiatric symptoms, depression, and suicidal ideation (sections 5.2 and 2.6). Monitor for autoimmune, cardiovascular, pulmonary, and infectious complications (sections 5.3, 5.5, 5.8, 5.10, 5.11). Pregnancy testing monthly during ribavirin combination therapy (section 5.1).",
+    "patient_counselling": "Advise patients that PEGASYS may cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischemic, and infectious disorders; report depression, suicidal thoughts, or worsening symptoms immediately. Advise about ribavirin teratogenicity: avoid pregnancy during therapy and for 6 months after; use two forms of contraception; monthly pregnancy tests. Advise not to breastfeed. Advise to report vision changes, chest pain, shortness of breath, abdominal pain/bloody diarrhea, fever, and signs of infection. Advise about growth impairment in pediatric patients (FDA Pegasys label, section 17 and Medication Guide).",
+    "warnings": [
+      "Risk of serious disorders (boxed warning): alpha interferons, including PEGASYS, may cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischemic, and infectious disorders; monitor closely and withdraw therapy with persistently severe or worsening signs/symptoms (FDA Pegasys label, Boxed Warning)",
+      "Neuropsychiatric reactions: life-threatening or fatal; suicide, suicidal/homicidal ideation, depression, relapse of drug addiction, drug overdose; use with extreme caution in patients with history of depression (FDA Pegasys label, section 5.2)",
+      "Cardiovascular disorders: hypertension, supraventricular arrhythmias, chest pain, myocardial infarction; use caution in pre-existing cardiac disease; avoid PEGASYS/ribavirin in significant/unstable cardiac disease (FDA Pegasys label, section 5.3)",
+      "Bone marrow suppression: severe cytopenias; use caution with baseline neutrophils <1500 cells/mm3, platelets <90,000 cells/mm3, or hemoglobin <10 g/dL (FDA Pegasys label, section 5.4)",
+      "Autoimmune disorders (FDA Pegasys label, section 5.5)",
+      "Endocrine disorders: hypothyroidism, hyperthyroidism, hyperglycemia, diabetes (FDA Pegasys label, section 5.6)",
+      "Ophthalmologic disorders (FDA Pegasys label, section 5.7)",
+      "Cerebrovascular disorders (FDA Pegasys label, section 5.8)",
+      "Hepatic failure and hepatitis exacerbations; hepatic decompensation in cirrhotic patients; CHB flares (FDA Pegasys label, section 5.9)",
+      "Pulmonary disorders (FDA Pegasys label, section 5.10)",
+      "Infections (FDA Pegasys label, section 5.11)",
+      "Colitis (FDA Pegasys label, section 5.12)",
+      "Pancreatitis (FDA Pegasys label, section 5.13)",
+      "Hypersensitivity including Stevens-Johnson syndrome (FDA Pegasys label, section 5.14)",
+      "Growth impairment in pediatric patients (FDA Pegasys label, section 5.15)",
+      "Peripheral neuropathy with telbivudine (FDA Pegasys label, section 5.16)",
+      "Ribavirin-associated birth defects and fetal death when used in combination (FDA Pegasys label, sections 4 and 5.1)"
+    ],
+    "precautions": [
+      "PEGASYS contains benzyl alcohol and is contraindicated in neonates/infants (FDA Pegasys label, section 4)",
+      "Pregnancy testing required before and monthly during ribavirin combination therapy (FDA Pegasys label, section 5.1)",
+      "Two forms of effective contraception during treatment and for at least 6 months after (FDA Pegasys label, section 5.1)",
+      "Dose reduction/discontinuation for neutropenia, thrombocytopenia, ALT elevations, and depression (FDA Pegasys label, section 2.6)",
+      "Renal impairment: reduce dose if CrCl <30 mL/min (135 mcg weekly); CrCl 30-50 mL/min: 180 mcg weekly (FDA Pegasys label, section 2.6)",
+      "Not recommended in solid organ transplant recipients (FDA Pegasys label, section 1.1)",
+      "Safety/efficacy not established in CHB patients coinfected with HCV or HIV (FDA Pegasys label, section 8.9)"
+    ],
+    "serious_adverse_reactions": [
+      "Neuropsychiatric reactions including suicide and suicidal ideation (FDA Pegasys label, section 5.2)",
+      "Cardiovascular disorders including myocardial infarction (FDA Pegasys label, section 5.3)",
+      "Bone marrow suppression/cytopenias (FDA Pegasys label, section 5.4)",
+      "Autoimmune disorders (FDA Pegasys label, section 5.5)",
+      "Hepatic decompensation and hepatitis exacerbations (FDA Pegasys label, section 5.9)",
+      "Pulmonary disorders including respiratory failure (FDA Pegasys label, section 5.10)",
+      "Serious infections (FDA Pegasys label, section 5.11)",
+      "Colitis (FDA Pegasys label, section 5.12)",
+      "Pancreatitis (FDA Pegasys label, section 5.13)",
+      "Hypersensitivity/anaphylaxis and Stevens-Johnson syndrome (FDA Pegasys label, section 5.14)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Non-pegylated interferon alfa-2a caused abortion in pregnant rhesus monkeys. There are no adequate and well-controlled studies in pregnant women. Ribavirin (used in combination) may cause birth defects and fetal death; avoid pregnancy during therapy and for 6 months after; two forms of contraception and monthly pregnancy tests required (FDA Pegasys label, sections 4, 5.1 and 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of peginterferon alfa-2a in human milk, the effects on the breastfed infant, or the effects on milk production. Because of the potential for adverse reactions from the drug in nursing infants, a decision must be made whether to discontinue nursing or discontinue PEGASYS (FDA Pegasys label, section 8.2).",
+    "overdose": "No specific antidote; treatment is supportive. Overdose may be associated with fatigue, elevated temperature, and headache (FDA Pegasys label, section 10).",
+    "pharmacokinetics": "Peginterferon alfa-2a is absorbed after SC administration with peak serum concentrations at 72-96 hours. Terminal half-life is about 160 hours (range 84-353 h) in CHC, compared to 5 hours for non-pegylated interferon alfa-2a. Clearance is reduced by 25-45% in patients with CrCl <30 mL/min. No accumulation with weekly dosing. Vd ~6-14 L; not significantly metabolized by CYP enzymes (FDA Pegasys label, section 12.3).",
+    "clinical_pearls": [
+      "PEGASYS monotherapy for CHC is only indicated if contraindication or significant intolerance to other HCV antiviral drugs (FDA Pegasys label, section 1.1)",
+      "Benzyl alcohol content makes it contraindicated in neonates/infants (FDA Pegasys label, section 4)",
+      "CHB treatment is 48 weeks at 180 mcg weekly (FDA Pegasys label, section 2.4)",
+      "Dose reduction to 135 mcg or 90 mcg weekly for cytopenias/ALT elevations (FDA Pegasys label, section 2.6)"
+    ],
+    "brand_names": ["Pegasys"],
+    "black_box_warnings": [
+      "Risk of serious disorders: alpha interferons, including PEGASYS, may cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischemic, and infectious disorders. Monitor closely with periodic clinical and laboratory evaluations and withdraw therapy with persistently severe or worsening signs or symptoms (FDA Pegasys label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "CrCl 30-50 mL/min: 180 mcg once weekly. CrCl <30 mL/min (including hemodialysis): 135 mcg once weekly (FDA Pegasys label, section 2.6).",
+    "hepatic_dose_adjustment": "Clinical status and hepatic function should be closely monitored; discontinue immediately if decompensation occurs. Not recommended with hepatic decompensation (Child-Pugh >6) (FDA Pegasys label, sections 4 and 8.6).",
+    "administration_instructions": "Administer by subcutaneous injection in the abdomen or thigh once weekly. After proper training, patients may self-inject. Visually inspect for particulate matter and discoloration before administration. Use a sterile needle and syringe to withdraw from the single-dose vial or prefilled syringe; discard unused portion. Store refrigerated at 2-8 C; do not freeze or shake; protect from light (FDA Pegasys label, sections 2.7 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, PEGASYS, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, PEGASYS, sections 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, PEGASYS, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, PEGASYS, sections 5.2-5.16 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, PEGASYS, sections 2.2, 2.3, 2.4 and 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, PEGASYS, sections 5.4, 5.16, 7.2, 7.3 and 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, PEGASYS, sections 5.2-5.11 and 5.17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, PEGASYS, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, PEGASYS, Boxed Warning and sections 5.1-5.16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, PEGASYS, sections 2.6, 4, 5.1 and 8.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, PEGASYS, sections 5.2-5.14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, PEGASYS, sections 4, 5.1 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, PEGASYS, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, PEGASYS, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, PEGASYS, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, PEGASYS, sections 1.1, 2.4, 2.6 and 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Pegasys (peginterferon alfa-2a) as the marketed brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, PEGASYS, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, PEGASYS, section 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, PEGASYS, sections 4 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, PEGASYS, sections 2.7 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de61685e-2b8c-4e22-84bb-869e13600440"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative pediatric regimen provided in fields.dosage.paediatric)",
+    "food_interactions (no food interaction described in the PEGASYS label)",
+    "pregnancy_category (no FDA pregnancy category letter assigned; PLLR labeling)"
+  ],
+  "notes": "Peginterferon Alfa refers to peginterferon alfa-2a (Pegasys) per the existing brand_names entry. Peginterferon alfa-2b (PegIntron) is a separate product and is not covered here. Content reflects the current FDA label (revised 03/2021)."
+}

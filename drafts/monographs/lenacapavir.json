@@ -1,0 +1,199 @@
+{
+  "name": "Lenacapavir",
+  "existing_id": "de46bdb7-9cff-431d-a01d-c6cc7eca04c5",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Lenacapavir is an HIV-1 capsid inhibitor. It targets the HIV-1 capsid protein, disrupting multiple essential steps of the viral replication cycle (SUNLENCA/YEZTUGO labels, section 1).",
+    "indications": [
+      "YEZTUGO: pre-exposure prophylaxis (PrEP) to reduce the risk of sexually acquired HIV-1 in adults and adolescents weighing at least 35 kg who are at risk for HIV-1 acquisition (YEZTUGO label, section 1)",
+      "SUNLENCA: in combination with other antiretroviral(s), treatment of HIV-1 infection in heavily treatment-experienced adults with multidrug resistant HIV-1 whose current antiretroviral regimen is failing due to resistance, intolerance, or safety considerations (SUNLENCA label, section 1.1)",
+      "SUNLENCA: oral loading as a component of the initiation regimen for BIXLENVO (bictegravir/lenacapavir) in adults who are virologically suppressed on a stable antiretroviral regimen with no known or suspected resistance to the individual components of BIXLENVO (SUNLENCA label, section 1.2)"
+    ],
+    "contraindications": [
+      "YEZTUGO: unknown or positive HIV-1 status (YEZTUGO label, section 4)",
+      "SUNLENCA: concomitant administration with strong CYP3A inducers (SUNLENCA label, section 4)"
+    ],
+    "side_effects": [
+      "YEZTUGO (PrEP trials PURPOSE 1 and PURPOSE 2): injection site reactions (69% PURPOSE 1, 83% PURPOSE 2), headache (7% / 2%), nausea (5% / 2%), dizziness (4% / <1%), vomiting (4% / <1%), diarrhea (4% / 2%) (YEZTUGO label, section 6.1, Table 6)",
+      "Injection site reactions include nodule (64%/63%), pain (31%/56%), induration (4%/16%), swelling (4%/7%), pruritus (2%/3%), erythema (1%/17%), bruising (<1%/3%), warmth (<1%/2%); nodules persist with median duration ~297-350 days (YEZTUGO label, section 6.1, Table 7)",
+      "SUNLENCA (CAPELLA, heavily treatment-experienced adults): injection site reactions 65%, nausea 4%; 96% of adverse reactions mild or moderate (SUNLENCA label, section 6.1, Table 6)",
+      "Injection site nodules and indurations may persist; improper intradermal administration associated with serious injection site reactions including necrosis and ulcer (SUNLENCA label, sections 5.3 and 6.2)"
+    ],
+    "dosage": {
+      "adult": "YEZTUGO (PrEP): initiation Day 1: 927 mg SC injection (2 x 1.5 mL) plus 600 mg orally (2 x 300 mg tablets); Day 2: 600 mg orally; continuation: 927 mg SC injection every 6 months (26 weeks) +/- 2 weeks. Missed oral initiation dose: take as soon as possible; do not take Day 1 and Day 2 doses on same day. Anticipated delayed injection: if delayed >2 weeks, 300 mg orally once every 7 days for up to 6 months. Missed injection >28 weeks: reinitiate from Day 1 (YEZTUGO label, sections 2.3 and 2.4). SUNLENCA (treatment): Option 1 - Day 1: 927 mg SC injection plus 600 mg orally; Day 2: 600 mg orally; maintenance 927 mg SC injection every 6 months. Option 2 - Day 1: 600 mg orally; Day 2: 600 mg orally; Day 8: 300 mg orally; Day 15: 927 mg SC injection; maintenance 927 mg SC injection every 6 months. Planned missed injection bridging: 300 mg orally once every 7 days for up to 6 months (SUNLENCA label, sections 2.2 and 2.4). SUNLENCA oral loading for BIXLENVO initiation: Day 1 and Day 2: BIXLENVO 75/50 mg plus SUNLENCA 600 mg orally; maintenance BIXLENVO only (SUNLENCA label, section 2.3).",
+      "geriatric": "Clinical studies did not include sufficient numbers aged 65 and over to determine whether they respond differently; caution in elderly (YEZTUGO label, section 8.5; SUNLENCA label, section 8.5).",
+      "paediatric": "YEZTUGO: safety and effectiveness in adolescents weighing at least 35 kg supported by PURPOSE 1 and PURPOSE 2 (128 adolescent participants); not established in children weighing less than 35 kg (YEZTUGO label, section 8.4). SUNLENCA: safety and effectiveness not established in pediatric patients (SUNLENCA label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong or moderate CYP3A inducers may significantly decrease lenacapavir plasma concentrations; YEZTUGO dosage modifications (supplemental doses) recommended when initiating strong or moderate CYP3A inducers; SUNLENCA contraindicated with strong CYP3A inducers and not recommended with moderate CYP3A inducers (YEZTUGO label, section 7.1; SUNLENCA label, sections 4 and 7.1)",
+      "Combined P-gp, UGT1A1, and strong CYP3A inhibitors may significantly increase lenacapavir concentrations; concomitant administration not recommended (SUNLENCA label, section 7.1)",
+      "Lenacapavir is a moderate CYP3A inhibitor and P-gp inhibitor; may increase exposure of CYP3A and P-gp substrates; residual concentrations may persist up to 12 months or longer (YEZTUGO label, section 7.2; SUNLENCA label, section 7.2)",
+      "Drugs without clinically significant interactions (YEZTUGO): atorvastatin, famotidine, pitavastatin, rosuvastatin, tenofovir alafenamide, voriconazole (YEZTUGO label, section 7.3)",
+      "Drugs without clinically significant interactions (SUNLENCA): darunavir/cobicistat, cobicistat, famotidine, pitavastatin, rosuvastatin, tenofovir alafenamide, voriconazole (SUNLENCA label, section 7.4)",
+      "SUNLENCA drug interaction table includes: digoxin (monitor concentrations), DOACs (refer to DOAC labeling), anticonvulsants (carbamazepine, oxcarbazepine, phenobarbital, phenytoin contraindicated/not recommended), antiretrovirals (atazanavir/cobicistat or atazanavir/ritonavir increase lenacapavir; efavirenz, nevirapine, tipranavir/ritonavir decrease lenacapavir - not recommended), rifamycins (rifampin contraindicated; rifabutin/rifapentine not recommended), systemic corticosteroids (dexamethasone may decrease lenacapavir), ergot derivatives (not recommended), St. John's wort (contraindicated), statins (lovastatin/simvastatin - initiate lowest dose), CYP3A-metabolized narcotic analgesics (monitor), buprenorphine/methadone (titrate carefully), naloxegol (avoid), PDE-5 inhibitors (dose recommendations), oral midazolam/triazolam (use with caution) (SUNLENCA label, section 7.3)"
+    ],
+    "monitoring": "HIV-1 screening prior to initiation and before each injection and as clinically appropriate (YEZTUGO label, section 2.1); monitor for immune reconstitution syndrome (SUNLENCA); monitor for injection site reactions; long-acting residual concentrations persist up to 12 months or longer (YEZTUGO/SUNLENCA labels, sections 5.2/5.3).",
+    "patient_counselling": "Adherence to injection schedule every 6 months is essential; residual concentrations persist up to 12 months or longer after last injection; if discontinued, consider alternative PrEP within 28 weeks of last injection (YEZTUGO) or initiate alternative fully suppressive regimen no later than 28 weeks after final injection (SUNLENCA); report injection site reactions; seek medical attention for symptoms of acute HIV-1 infection; YEZTUGO not always effective (YEZTUGO label, sections 5.1 to 5.3 and 17; SUNLENCA label, sections 5.2 and 17).",
+    "warnings": [
+      "YEZTUGO BOXED WARNING: risk of drug resistance with use for HIV-1 PrEP in undiagnosed HIV-1 infection; drug-resistant variants identified; test for HIV-1 infection prior to initiation and before each injection (YEZTUGO label, Boxed Warning)",
+      "Comprehensive management to reduce risk of HIV-1 acquisition; not always effective; time to maximal protection unknown (YEZTUGO label, section 5.1)",
+      "Potential risk of developing resistance to lenacapavir if HIV-1 acquired before, during, or after discontinuation (YEZTUGO label, section 5.2)",
+      "Long-acting properties: residual concentrations up to 12 months or longer; lenacapavir is a moderate CYP3A inhibitor and may increase exposure to CYP3A-metabolized drugs initiated within 9 months after last injection (YEZTUGO label, section 5.3; SUNLENCA label, section 5.2)",
+      "Serious injection site reactions with improper (intradermal) administration including necrosis and ulcer (YEZTUGO label, section 5.4; SUNLENCA label, section 5.3)",
+      "SUNLENCA: immune reconstitution syndrome (SUNLENCA label, section 5.1)",
+      "SUNLENCA: if discontinued, initiate alternative fully suppressive antiretroviral regimen no later than 28 weeks after final injection (SUNLENCA label, section 5.2)"
+    ],
+    "precautions": [
+      "YEZTUGO must be used as part of comprehensive prevention strategy including safer sex practices and regular STI testing (YEZTUGO label, section 5.1)",
+      "HIV-1 testing must use a test approved or cleared by FDA for diagnosis of acute or primary HIV-1 infection (YEZTUGO label, section 2.1)",
+      "Adolescents may benefit from additional counseling and appointment reminders (YEZTUGO label, section 5.1)",
+      "SUNLENCA: adherence to every-6-month injection dosing and concomitant oral antiretroviral therapy is essential (SUNLENCA label, section 2.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Injection site necrosis with improper administration (SUNLENCA label, section 6.2)",
+      "Serious injection site reactions including necrosis and ulcer (YEZTUGO/SUNLENCA labels, sections 5.4/5.3)",
+      "Development of resistance to lenacapavir in individuals with undiagnosed HIV-1 (YEZTUGO label, Boxed Warning)"
+    ],
+    "food_interactions": [
+      "Oral tablets may be taken with or without food (YEZTUGO/SUNLENCA labels, sections 2.3/2.2)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "YEZTUGO: available data from PURPOSE 1 have not identified a drug-associated risk for miscarriage or adverse maternal/fetal outcomes compared to active control; rate of major birth defects did not exceed background prevalence; pregnancy exposure registry (APR) available; concentrations during pregnancy comparable to non-pregnant participants (YEZTUGO label, section 8.1). SUNLENCA: available data from a randomized controlled trial with lenacapavir use during pregnancy in individuals without HIV-1 have not identified a drug-associated risk for miscarriage or adverse maternal/fetal outcomes; pregnancy exposure registry (APR) available (SUNLENCA label, section 8.1).",
+    "lactation_guidance": "Lenacapavir is present in human milk at very low levels in breastfed infants; no adverse effects observed; not known if lenacapavir affects milk production. YEZTUGO: in women without HIV-1, consider developmental and health benefits of breastfeeding along with mother's clinical need and risk of HIV-1 acquisition due to nonadherence (YEZTUGO label, section 8.2). SUNLENCA: potential risks of breastfeeding include HIV-1 transmission, developing viral resistance, and adverse reactions (SUNLENCA label, section 8.2).",
+    "overdose": "No data available on overdose; treatment consists of general supportive measures including monitoring of vital signs and clinical status; highly protein bound, unlikely to be significantly removed by dialysis (YEZTUGO label, section 10; SUNLENCA label, section 10).",
+    "pharmacokinetics": "Lenacapavir is a substrate of P-gp, UGT1A1, and CYP3A; terminal half-life long following subcutaneous administration (residual concentrations up to 12 months or longer); moderate CYP3A inhibitor and P-gp inhibitor (YEZTUGO/SUNLENCA labels, sections 7.1, 7.2, and 12.3). No dosage adjustment in mild, moderate, or severe renal impairment (eGFR >=15 mL/min); not studied in ESRD (eGFR <15 mL/min). No dosage adjustment in mild or moderate hepatic impairment (Child-Pugh A or B); not studied in severe hepatic impairment (Child-Pugh C) (YEZTUGO/SUNLENCA labels, sections 8.6 and 8.7).",
+    "clinical_pearls": [
+      "Lenacapavir is available as two distinct FDA-approved products: YEZTUGO (PrEP) and SUNLENCA (treatment of MDR HIV-1, plus oral loading for BIXLENVO initiation) (YEZTUGO/SUNLENCA labels, section 1)",
+      "Administered as two 1.5 mL subcutaneous injections (abdomen; thigh alternative) every 6 months by a healthcare provider; do not administer intradermally (YEZTUGO/SUNLENCA labels, section 2.6/2.5)",
+      "Residual concentrations persist up to 12 months or longer after last injection; drug interactions may occur for up to 9 months after last dose (YEZTUGO/SUNLENCA labels)",
+      "Nodules and indurations at injection site may persist for months (YEZTUGO/SUNLENCA labels)"
+    ],
+    "brand_names": ["Yeztugo", "Sunlenca"],
+    "black_box_warnings": [
+      "YEZTUGO: Risk of drug resistance with use for HIV-1 pre-exposure prophylaxis (PrEP) in undiagnosed HIV-1 infection. Individuals must be tested for HIV-1 infection prior to initiating YEZTUGO, and with each subsequent injection, using a test approved or cleared by the FDA for the diagnosis of acute or primary HIV-1 infection. Drug-resistant HIV-1 variants have been identified with use of YEZTUGO by individuals with undiagnosed HIV-1 infection (YEZTUGO label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment in mild, moderate, or severe renal impairment (estimated creatinine clearance >=15 mL/min); not studied in ESRD (estimated creatinine clearance <15 mL/min) (YEZTUGO/SUNLENCA labels, section 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment in mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment; not studied in severe hepatic impairment (Child-Pugh C) (YEZTUGO/SUNLENCA labels, section 8.7).",
+    "administration_instructions": "Subcutaneous injection into abdomen (thigh alternative) by a healthcare provider: two 1.5 mL injections for a complete 927 mg dose; oral tablets 300 mg may be taken with or without food; store according to product labeling; injection solution is clear yellow (YEZTUGO/SUNLENCA labels, sections 2.6/2.5 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "SUNLENCA/YEZTUGO labels, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5652804-29c4-40d7-aeb2-0142ed2a7b5b"
+    },
+    {
+      "field": "indications",
+      "ref": "YEZTUGO label section 1; SUNLENCA label sections 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "contraindications",
+      "ref": "YEZTUGO label section 4; SUNLENCA label section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "side_effects",
+      "ref": "YEZTUGO label section 6.1; SUNLENCA label section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "dosage",
+      "ref": "YEZTUGO label sections 2.3 and 2.4; SUNLENCA label sections 2.2, 2.3, and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "interactions",
+      "ref": "YEZTUGO label sections 7.1 to 7.3; SUNLENCA label sections 7.1 to 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "monitoring",
+      "ref": "YEZTUGO label sections 2.1, 5.1, 5.2, 5.3; SUNLENCA label sections 5.1 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "YEZTUGO label sections 5.1 to 5.3 and 17; SUNLENCA label sections 5.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "warnings",
+      "ref": "YEZTUGO label Boxed Warning and sections 5.1 to 5.4; SUNLENCA label sections 5.1 to 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "precautions",
+      "ref": "YEZTUGO label sections 5.1 and 8.4; SUNLENCA label section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "YEZTUGO label Boxed Warning and section 5.4; SUNLENCA label sections 5.3 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "YEZTUGO/SUNLENCA labels, sections 2.3/2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "YEZTUGO label section 8.1; SUNLENCA label section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "YEZTUGO label section 8.2; SUNLENCA label section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "overdose",
+      "ref": "YEZTUGO label section 10; SUNLENCA label section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "YEZTUGO/SUNLENCA labels, sections 7.1, 7.2, 8.6, and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "YEZTUGO/SUNLENCA labels, sections 1 and 2.5/2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "brand_names",
+      "ref": "YEZTUGO and SUNLENCA brand names on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "YEZTUGO label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "YEZTUGO/SUNLENCA labels, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "YEZTUGO/SUNLENCA labels, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "YEZTUGO/SUNLENCA labels, sections 2.5/2.6 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c241af1-ce62-4b0a-9eb7-f6b626174f01"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "pregnancy_category (not stated in the labels)"
+  ],
+  "notes": "Lenacapavir is marketed as two distinct FDA-approved products: YEZTUGO (HIV-1 PrEP in adults/adolescents >=35 kg) and SUNLENCA (treatment of multidrug-resistant HIV-1 in heavily treatment-experienced adults, plus oral loading for BIXLENVO initiation). The existing DB row lists only 'Yeztugo' as brand_name, but both products are included here for completeness and are distinguished in the text. Only YEZTUGO carries a boxed warning. Content drafted from the FDA/DailyMed labels (updated 8/2026)."
+}

@@ -1,0 +1,203 @@
+{
+  "name": "Etravirine",
+  "existing_id": "ec03e20c-1465-4cd7-8bed-ae46e23415f2",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Etravirine is a non-nucleoside reverse transcriptase inhibitor (NNRTI) of HIV-1. It binds directly to reverse transcriptase (RT) and blocks the RNA-dependent and DNA-dependent DNA polymerase activities by causing a disruption of the enzyme's catalytic site. Etravirine does not inhibit the human DNA polymerases alpha, beta, and gamma (INTELENCE label, sections 12.1 and 12.4).",
+    "indications": [
+      "Treatment of HIV-1 infection in combination with other antiretroviral agents in antiretroviral treatment-experienced adult patients (INTELENCE label, section 1)",
+      "Treatment of HIV-1 infection in combination with other antiretroviral agents in pediatric patients 2 years of age and older (INTELENCE label, section 1)"
+    ],
+    "contraindications": ["None (INTELENCE label, section 4)"],
+    "side_effects": [
+      "Rash (most common; 10% of adults in Phase 3 trials, mild to moderate, usually in the first 6 weeks; incidence higher in females) (INTELENCE label, sections 5.1 and 6.1)",
+      "Peripheral neuropathy (4% of adults) (INTELENCE label, section 6.1)",
+      "Diarrhea (most common in pediatric patients 2 to less than 6 years) (INTELENCE label, section 6.1)",
+      "Less common (less than 2%): myocardial infarction, angina pectoris, atrial fibrillation, vertigo, blurred vision, gastroesophageal reflux disease, flatulence, gastritis, abdominal distension, pancreatitis, constipation, dry mouth, hematemesis, retching, stomatitis, paresthesia, somnolence, convulsion, hypoesthesia, amnesia, syncope, disturbance in attention, hypersomnia, tremor, anxiety, sleep disorders, abnormal dreams, confusional state, disorientation, nervousness, nightmares, acute renal failure, gynecomastia, exertional dyspnea, bronchospasm, night sweats, lipohypertrophy, prurigo, hyperhidrosis, dry skin, swelling face, rhabdomyolysis, diabetes mellitus, anorexia, dyslipidemia, hemolytic anemia, hepatic failure, hepatomegaly, cytolytic hepatitis, hepatic steatosis, hepatitis, drug hypersensitivity, immune reconstitution syndrome (INTELENCE label, section 6.1)",
+      "Postmarketing: severe hypersensitivity reactions including DRESS and cases of hepatic failure; rhabdomyolysis; fatal cases of toxic epidermal necrolysis and Stevens-Johnson syndrome (INTELENCE label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "200 mg (one 200 mg tablet or two 100 mg tablets) taken orally twice daily following a meal. The type of food does not affect exposure (INTELENCE label, sections 2.1 and 2.4).",
+      "geriatric": "No specific dose adjustment; clinical studies did not include sufficient numbers aged 65 and over; dose selection should be cautious reflecting decreased hepatic, renal, or cardiac function (INTELENCE label, section 8.5).",
+      "paediatric": "Pediatric patients 2 years to less than 18 years weighing at least 10 kg: weight-based twice daily following a meal, not exceeding the adult dose - greater than or equal to 10 to less than 20 kg: 100 mg twice daily; greater than or equal to 20 to less than 25 kg: 125 mg twice daily; greater than or equal to 25 to less than 30 kg: 150 mg twice daily; greater than or equal to 30 kg: 200 mg twice daily (INTELENCE label, section 2.3). Not recommended in patients less than 2 years of age (INTELENCE label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Co-administration with other NNRTIs (efavirenz, nevirapine, delavirdine, rilpivirine) is not recommended (INTELENCE label, section 7.3)",
+      "Protease inhibitors: atazanavir without ritonavir, atazanavir/cobicistat, darunavir/cobicistat, fosamprenavir without ritonavir, fosamprenavir/ritonavir, indinavir without ritonavir, nelfinavir without ritonavir, ritonavir 600 mg twice daily, and tipranavir/ritonavir are not recommended; atazanavir/ritonavir, darunavir/ritonavir, lopinavir/ritonavir, and saquinavir/ritonavir can be co-administered without dose adjustments (INTELENCE label, section 7.3)",
+      "Dolutegravir: significantly reduced by etravirine; dolutegravir should only be used with INTELENCE when co-administered with atazanavir/ritonavir, darunavir/ritonavir, or lopinavir/ritonavir (INTELENCE label, section 7.3)",
+      "Anticonvulsants (carbamazepine, phenobarbital, phenytoin) and rifampin/rifapentine: not recommended (significant decrease in etravirine concentrations) (INTELENCE label, section 7.3)",
+      "Rifabutin: 300 mg once daily if not co-administered with a PI/ritonavir; not recommended with darunavir/ritonavir, lopinavir/ritonavir, or saquinavir/ritonavir (INTELENCE label, section 7.3)",
+      "St. John's wort: not recommended (INTELENCE label, section 7.3)",
+      "Systemic dexamethasone: use with caution (INTELENCE label, section 7.3)",
+      "Maraviroc: dose adjustment of maraviroc required depending on co-administered PI (INTELENCE label, section 7.3)",
+      "Digoxin: initiate at lowest dose and monitor serum concentrations (INTELENCE label, section 7.3)",
+      "Warfarin: INR should be monitored (INTELENCE label, section 7.3)",
+      "Clarithromycin: alternative (e.g., azithromycin) for MAC treatment should be considered (INTELENCE label, section 7.3)",
+      "Artemether/lumefantrine: use with caution (INTELENCE label, section 7.3)",
+      "Clopidogrel: activation to active metabolite may be decreased; alternatives should be considered (INTELENCE label, section 7.3)",
+      "HMG-CoA reductase inhibitors: atorvastatin may need dose alteration; lovastatin/simvastatin lower concentrations; fluvastatin/pitavastatin may need dose adjustment; pravastatin/rosuvastatin no interaction expected (INTELENCE label, section 7.3)",
+      "Immunosuppressants (cyclosporine, sirolimus, tacrolimus): co-administer with caution (INTELENCE label, section 7.3)",
+      "Buprenorphine/naloxone and methadone: can be co-administered without dose adjustments but monitor for withdrawal symptoms (INTELENCE label, section 7.3)",
+      "PDE-5 inhibitors (sildenafil, tadalafil, vardenafil): dose may need alteration based on clinical effect (INTELENCE label, section 7.3)",
+      "HCV direct-acting antivirals: daclatasvir dose increase to 90 mg; elbasvir/grazoprevir not recommended (INTELENCE label, section 7.3)",
+      "No clinically significant interactions with didanosine, enfuvirtide, ethinylestradiol/norethindrone, omeprazole, paroxetine, raltegravir, ranitidine, or tenofovir disoproxil fumarate (INTELENCE label, section 7.4)"
+    ],
+    "monitoring": "Monitor for severe skin and hypersensitivity reactions (rash, Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS) especially during the first 6 weeks; monitor for immune reconstitution syndrome and fat redistribution; hepatic transaminases in co-infected (HBV/HCV) patients; consider baseline and follow-up resistance testing as clinically indicated (INTELENCE label, sections 5.1, 5.3, 5.4, 6.1).",
+    "patient_counselling": "Take INTELENCE following a meal twice daily on a regular schedule; do not chew tablets but may disperse in water; swallow whole with liquid; missed doses can lead to resistance; report rash immediately; report symptoms of infection (immune reconstitution); not to breastfeed; pregnancy registry available; report all medications including herbal products such as St. John's wort (INTELENCE label, section 17).",
+    "warnings": [
+      "Severe skin and hypersensitivity reactions, including Stevens-Johnson syndrome, toxic epidermal necrolysis, erythema multiforme, and DRESS (including hepatic failure), have been reported; discontinue immediately if severe rash or rash with systemic symptoms or liver transaminase elevations develops (INTELENCE label, section 5.1)",
+      "Risk of adverse reactions or loss of virologic response due to drug interactions; consider potential interactions prior to and during therapy (INTELENCE label, section 5.2)",
+      "Immune reconstitution syndrome (INTELENCE label, section 5.3)",
+      "Fat redistribution/accumulation (INTELENCE label, section 5.4)"
+    ],
+    "precautions": [
+      "INTELENCE must always be used in combination with other antiretroviral drugs (INTELENCE label, section 17)",
+      "Higher incidence of rash in females; rash occurred most commonly during the first 6 weeks of therapy (INTELENCE label, section 5.1)",
+      "Not recommended in pediatric patients less than 2 years of age (INTELENCE label, section 8.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe skin reactions including Stevens-Johnson syndrome, toxic epidermal necrolysis, erythema multiforme, and DRESS with hepatic failure (INTELENCE label, sections 5.1 and 6.2)",
+      "Immune reconstitution syndrome (INTELENCE label, section 5.3)",
+      "Rhabdomyolysis (postmarketing) (INTELENCE label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Must be taken following a meal; fasting decreases systemic exposure by about 50%; type of food does not affect exposure (INTELENCE label, section 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Risk summary: prospective pregnancy data from clinical trials and the Antiretroviral Pregnancy Registry are not sufficient to adequately assess risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes; available data show 1 birth defect in 66 first trimester exposures; background major birth defect rate 2.7% (MACDP); animal studies showed no adverse developmental effects at exposures equivalent to the MRHD. Pregnancy exposure registry (APR) available. Increased etravirine exposures during pregnancy are not considered clinically significant (INTELENCE label, sections 8.1 and 12.3).",
+    "lactation_guidance": "The Centers for Disease Control and Prevention recommend that HIV-1-infected mothers not breastfeed; etravirine is present in human breast milk; instruct mothers not to breastfeed if receiving INTELENCE (INTELENCE label, section 8.2).",
+    "overdose": "No specific antidote; treatment consists of general supportive measures including monitoring of vital signs and observation of clinical status; highly protein bound, dialysis unlikely to remove significant amounts (INTELENCE label, section 10).",
+    "pharmacokinetics": "Absorbed with Tmax about 2.5 to 4 hours; about 99.9% bound to plasma proteins; metabolized by CYP3A, CYP2C9, and CYP2C19; terminal elimination half-life about 41 (±20) hours; 93.7% recovered in feces and 1.2% in urine after a single 800 mg 14C dose; unchanged drug 81.2% to 86.4% of fecal radioactivity; no unchanged drug in urine; no dose adjustment in mild/moderate hepatic impairment (Child-Pugh A/B); not studied in severe hepatic impairment; no dose adjustment in renal impairment (less than 1.2% excreted in urine); unlikely to be removed by hemodialysis/peritoneal dialysis (INTELENCE label, sections 8.6, 8.7, and 12.3).",
+    "clinical_pearls": [
+      "Must be taken with food; fasting reduces exposure by ~50% (INTELENCE label, section 12.3)",
+      "Tablets may be dispersed in water for patients unable to swallow whole (INTELENCE label, section 2.4)",
+      "Rash is more common in females and usually occurs in the first 6 weeks; Stevens-Johnson syndrome reported in 1.1% of pediatric patients in an observational study (INTELENCE label, section 5.1)",
+      "Etravirine is an inducer of CYP3A and inhibitor of CYP2C9, CYP2C19, and P-gp; many clinically significant drug interactions (INTELENCE label, sections 7.1 to 7.3)"
+    ],
+    "brand_names": ["Intelence"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment required in renal impairment; less than 1.2% excreted in urine; unlikely to be removed by dialysis (INTELENCE label, section 8.7).",
+    "hepatic_dose_adjustment": "No dose adjustment in mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment; not evaluated in severe hepatic impairment (Child-Pugh C) (INTELENCE label, section 8.6).",
+    "administration_instructions": "Oral tablets (25 mg, 100 mg, 200 mg) taken twice daily following a meal; swallow whole with liquid such as water; do not chew; may disperse tablet(s) in water per instructions; store at 25°C (77°F), excursions 15-30°C; store in original bottle, keep tightly closed to protect from moisture; do not remove desiccant pouches (INTELENCE label, sections 2.4 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "INTELENCE (etravirine) label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "indications",
+      "ref": "INTELENCE label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "contraindications",
+      "ref": "INTELENCE label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "side_effects",
+      "ref": "INTELENCE label, sections 5.1, 6.1, and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "dosage",
+      "ref": "INTELENCE label, sections 2.1, 2.3, 2.4, 8.4, and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "interactions",
+      "ref": "INTELENCE label, sections 7.1 to 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "monitoring",
+      "ref": "INTELENCE label, sections 5.1, 5.3, 5.4, and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "INTELENCE label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "warnings",
+      "ref": "INTELENCE label, sections 5.1 to 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "precautions",
+      "ref": "INTELENCE label, sections 5.1, 8.4, and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "INTELENCE label, sections 5.1, 5.3, and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "INTELENCE label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "INTELENCE label, sections 8.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "INTELENCE label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "overdose",
+      "ref": "INTELENCE label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "INTELENCE label, sections 8.6, 8.7, and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "INTELENCE label, sections 2.4, 5.1, and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "brand_names",
+      "ref": "INTELENCE (etravirine) brand name on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in INTELENCE label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "INTELENCE label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "INTELENCE label, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "INTELENCE label, sections 2.4 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a9cbc29-9f15-4b24-8d86-206b82887f3d"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "pregnancy_category (not stated in the INTELENCE label)"
+  ],
+  "notes": "Etravirine (INTELENCE) is an NNRTI indicated only for treatment-experienced patients (adults and children >=2 years). Contraindications: none. No boxed warning. Brand name Intelence. Content drafted from the FDA/DailyMed label (updated 8/2023)."
+}

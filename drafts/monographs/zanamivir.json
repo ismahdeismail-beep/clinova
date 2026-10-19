@@ -1,0 +1,195 @@
+{
+  "name": "Zanamivir",
+  "existing_id": "8532a1a9-8cde-4195-9cd9-37f36b5e481b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Zanamivir is an influenza neuraminidase inhibitor. It inhibits the influenza virus neuraminidase enzyme, affecting release of viral particles from infected cells (FDA RELENZA label, sections 12.1 and 12.4).",
+    "indications": [
+      "Treatment of uncomplicated acute illness due to influenza A and B virus in adults and pediatric patients 7 years of age and older who have been symptomatic for no more than 2 days (FDA RELENZA label, section 1.1)",
+      "Prophylaxis of influenza in adults and pediatric patients 5 years of age and older (FDA RELENZA label, section 1.2)"
+    ],
+    "contraindications": [
+      "History of allergic reaction to any ingredient of RELENZA, including lactose (which contains milk proteins) (FDA RELENZA label, section 4)"
+    ],
+    "side_effects": [
+      "Treatment studies (adults/adolescents >=12 years): sinusitis (3%), dizziness (2%), headaches (2%), diarrhea (3%), nausea (3%), vomiting (1%), nasal signs and symptoms (2%), bronchitis (2%), cough (2%), ear/nose/throat infections (2%) (FDA RELENZA label, section 6.1 Table 1)",
+      "Additional adverse reactions (<1.5%): malaise, fatigue, fever, abdominal pain, myalgia, arthralgia, urticaria (FDA RELENZA label, section 6.1)",
+      "Treatment studies (pediatric 5-12 years): ear/nose/throat infections (5%), vomiting (2%), diarrhea (2%), cough (<1%), asthma (<1%), ear/nose/throat hemorrhage (<1%), nausea (<1%) (FDA RELENZA label, section 6.1 Table 2)",
+      "Prophylaxis studies: fever and/or chills, arthralgia and articular rheumatism (FDA RELENZA label, section 6)",
+      "Postmarketing: allergic or allergic-like reactions including oropharyngeal edema; delirium (altered consciousness, confusion, abnormal behavior, delusions, hallucinations, agitation, anxiety, nightmares); arrhythmias, syncope; seizures; bronchospasm, dyspnea; facial edema, rash including serious cutaneous reactions (erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis), urticaria (FDA RELENZA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Treatment of influenza: 10 mg (two 5 mg inhalations) twice daily for 5 days; two doses on first day whenever possible with at least 2 hours between doses; subsequent doses about 12 hours apart. Prophylaxis: household setting 10 mg once daily for 10 days; community outbreaks 10 mg once daily for 28 days. Administer at approximately the same time each day (FDA RELENZA label, sections 2.2 and 2.3).",
+      "geriatric": "No overall differences in safety or effectiveness observed between elderly and younger patients; elderly patients may need assistance with use of the device. Pharmacokinetics not studied in patients over 65 years (FDA RELENZA label, sections 8.5 and 12.3).",
+      "paediatric": "Treatment of influenza: 10 mg twice daily for 5 days in patients 7 years and older. Prophylaxis: 10 mg once daily for 10 days (household) or 28 days (community) in patients 5 years and older. Safety and effectiveness not assessed in pediatric patients <7 years for treatment and not <5 years for prophylaxis (FDA RELENZA label, sections 1.1, 1.2, 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Zanamivir is not a substrate and does not affect cytochrome P450 (CYP) isoenzymes (CYP1A1/2, 2A6, 2C9, 2C18, 2D6, 2E1, 3A4) in human liver microsomes; no clinically significant pharmacokinetic drug interactions predicted (FDA RELENZA label, section 7)",
+      "Live attenuated influenza vaccine (LAIV), intranasal: do not administer until 48 hours following cessation of RELENZA; do not administer RELENZA until 2 weeks following administration of LAIV, unless medically indicated (FDA RELENZA label, section 7)",
+      "Trivalent inactivated influenza vaccine can be administered at any time relative to use of RELENZA (FDA RELENZA label, section 7)"
+    ],
+    "monitoring": "Monitor for bronchospasm or decline in respiratory function; discontinue if occurs. Monitor for signs of abnormal behavior (neuropsychiatric events), particularly in pediatric patients. Assess ability of young children to use the DISKHALER device (FDA RELENZA label, sections 5.1, 5.3, 5.7, 8.4).",
+    "patient_counselling": "RELENZA is for oral inhalation only using the DISKHALER device provided; must not be made into a solution for nebulization or mechanical ventilation (fatal equipment obstruction reported). Not recommended in individuals with underlying airways disease (asthma/COPD) due to risk of serious bronchospasm. Patients scheduled to use an inhaled bronchodilator should use it before RELENZA. Use only under adult supervision in children. Patients with influenza should be closely monitored for abnormal behavior. RELENZA is not a substitute for annual influenza vaccination. There is no evidence of efficacy against agents other than influenza A and B (FDA RELENZA label, sections 1.3, 2.1, 5.1, 5.6, 17).",
+    "warnings": [
+      "Bronchospasm: serious, sometimes fatal cases have occurred, in patients with and without underlying airways disease; not recommended in individuals with underlying airways disease (asthma or COPD); discontinue if bronchospasm or decline in respiratory function develops; immediate treatment and hospitalization may be required (FDA RELENZA label, section 5.1)",
+      "Allergic reactions: allergic-like reactions including oropharyngeal edema, serious skin rashes, anaphylaxis reported postmarketing; discontinue and initiate appropriate treatment if an allergic reaction occurs or is suspected (FDA RELENZA label, section 5.2)",
+      "Neuropsychiatric events: influenza can be associated with seizures, hallucinations, delirium, abnormal behavior; postmarketing reports (mostly Japan) of delirium and abnormal behavior leading to injury in patients receiving neuraminidase inhibitors; monitor closely for signs of abnormal behavior (FDA RELENZA label, section 5.3)",
+      "High-risk underlying medical conditions: safety and effectiveness not demonstrated (FDA RELENZA label, section 5.4)",
+      "Bacterial infections: serious bacterial infections may coexist with or complicate influenza; RELENZA has not been shown to prevent such complications (FDA RELENZA label, section 5.5)",
+      "Importance of proper route of administration: must not be made into extemporaneous solution for nebulization or mechanical ventilation (FDA RELENZA label, section 5.6)",
+      "Importance of proper use of DISKHALER (FDA RELENZA label, section 5.7)"
+    ],
+    "precautions": [
+      "Not recommended for treatment or prophylaxis in individuals with underlying airways disease (FDA RELENZA label, section 1.3)",
+      "Not proven effective for treatment in individuals with underlying airways disease, or for prophylaxis in nursing home residents (FDA RELENZA label, section 1.3)",
+      "Not a substitute for annual influenza vaccination (FDA RELENZA label, section 1.3)",
+      "No evidence of efficacy in illness caused by agents other than influenza virus A and B (FDA RELENZA label, section 1.3)",
+      "The safety and efficacy of repeated treatment courses have not been studied (FDA RELENZA label, section 2.2)",
+      "The safety and effectiveness of prophylaxis have not been evaluated for longer than 28 days (FDA RELENZA label, section 2.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Bronchospasm, including fatalities (FDA RELENZA label, section 5.1)",
+      "Allergic/anaphylactic reactions including oropharyngeal edema (FDA RELENZA label, section 5.2)",
+      "Neuropsychiatric events (FDA RELENZA label, section 5.3)",
+      "Serious cutaneous reactions (erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis) (FDA RELENZA label, section 6.2)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (FDA RELENZA label, section 8.1)",
+    "pregnancy_guidance": "Pregnancy Category C. There are no adequate and well-controlled studies of zanamivir in pregnant women. Zanamivir should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Zanamivir has been shown to cross the placenta in rats and rabbits. Embryo/fetal development studies in rats and rabbits showed no malformations, maternal toxicity, or embryotoxicity (FDA RELENZA label, section 8.1).",
+    "lactation_guidance": "Studies in rats have demonstrated that zanamivir is excreted in milk. It is not known whether zanamivir is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when RELENZA is administered to a nursing mother (FDA RELENZA label, section 8.3).",
+    "overdose": "There have been no reports of overdosage from administration of RELENZA (FDA RELENZA label, section 10).",
+    "pharmacokinetics": "Approximately 4-17% of the inhaled dose is systemically absorbed; peak serum concentrations 17-142 ng/mL within 1-2 hours following a 10 mg dose; AUC 111-1364 ng·hr/mL. Limited plasma protein binding (<10%). Renally excreted unchanged; no metabolites detected in humans. Serum half-life 2.5-5.1 hours; excretion of a single dose completed within 24 hours. Total clearance 2.5-10.9 L/hr. Unabsorbed drug excreted in feces. In impaired renal function, significant decreases in renal clearance and increases in half-life/systemic exposure observed; due to low systemic bioavailability no dosage adjustments necessary, but potential for drug accumulation should be considered (FDA RELENZA label, section 12.3).",
+    "clinical_pearls": [
+      "RELENZA is administered by oral inhalation only using the DISKHALER device; must not be nebulized (FDA RELENZA label, sections 2.1, 5.6).",
+      "Not recommended in patients with underlying airways disease (asthma/COPD) due to risk of serious bronchospasm (FDA RELENZA label, section 5.1).",
+      "No dosage adjustment necessary in renal impairment due to low systemic bioavailability, but consider potential drug accumulation (FDA RELENZA label, section 12.3).",
+      "LAIV should not be administered within 2 weeks before or 48 hours after RELENZA (FDA RELENZA label, section 7)."
+    ],
+    "brand_names": ["Relenza"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Due to low systemic bioavailability, no dosage adjustments are necessary in patients with renal impairment; however, the potential for drug accumulation should be considered (FDA RELENZA label, section 12.3).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral inhalation only using the DISKHALER device provided. The 10 mg dose is provided by 2 inhalations (one 5 mg blister per inhalation). Patients should be instructed in use of the delivery system with demonstration whenever possible; use in children only under adult supervision and instruction. Patients scheduled to use an inhaled bronchodilator should use it before RELENZA. Do not make into an extemporaneous solution for nebulization or mechanical ventilation (FDA RELENZA label, sections 2.1, 5.6, 5.7, 17.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA RELENZA label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA RELENZA label, sections 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA RELENZA label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA RELENZA label, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA RELENZA label, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA RELENZA label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA RELENZA label, sections 5.1, 5.3, 5.7 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA RELENZA label, sections 1.3, 2.1, 5.1, 5.6 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA RELENZA label, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA RELENZA label, sections 1.3, 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA RELENZA label, sections 5.1-5.3 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA RELENZA label, section 8.1 (Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA RELENZA label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA RELENZA label, section 8.3 (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA RELENZA label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA RELENZA label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA RELENZA label, sections 2.1, 5.1, 7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "RELENZA (zanamivir) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA RELENZA labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA RELENZA label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment specified; pharmacokinetics not studied in impaired hepatic function",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA RELENZA label, sections 2.1, 5.6, 5.7 and 17.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=315556f2-4da0-47fc-86af-8fb61f6dd3bf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment specified; pharmacokinetics not studied in impaired hepatic function)",
+    "food_interactions (none described; zanamivir is administered by oral inhalation)"
+  ],
+  "notes": "The molecule is stored as 'Zanamivir'. Brand name Relenza. No boxed warning in the FDA labelling. Name alias: zanamivir (GG167)."
+}

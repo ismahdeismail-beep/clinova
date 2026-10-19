@@ -1,0 +1,210 @@
+{
+  "name": "Ritonavir",
+  "existing_id": "c09ab83d-5d28-4f9b-beef-2fe7cf2b42a7",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Ritonavir is an inhibitor of HIV protease with activity against the Human Immunodeficiency Virus (HIV). It is a peptidomimetic inhibitor of both the HIV-1 and HIV-2 proteases; inhibition of HIV protease renders the enzyme unable to process the gag-pol polyprotein precursor, leading to production of immature, non-infectious viral particles (FDA NORVIR label, section 12.1/12.4). Ritonavir is also a potent inhibitor of cytochrome P450 3A (CYP3A) and is used at low doses as a pharmacokinetic enhancer ('booster') of other protease inhibitors (FDA NORVIR label, sections 7.1 and 12.3).",
+    "indications": [
+      "NORVIR tablets: in combination with other antiretroviral agents for the treatment of HIV-1 infection (FDA NORVIR label, section 1)",
+      "NORVIR oral powder: in combination with other antiretroviral agents for the treatment of pediatric patients with HIV-1 infection (FDA NORVIR label, section 1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to ritonavir (e.g., toxic epidermal necrolysis, Stevens-Johnson syndrome) or any of its ingredients (FDA NORVIR label, section 4)",
+      "Coadministration with drugs highly dependent on CYP3A for clearance and for which elevated plasma concentrations are associated with serious and/or life-threatening reactions (e.g., alfuzosin; amiodarone, dronedarone, flecainide, propafenone, quinidine; voriconazole; colchicine; lurasidone, pimozide; dihydroergotamine, ergotamine, methylergonovine; cisapride; lovastatin, simvastatin; lomitapide; suzetrigine; sildenafil (Revatio) for pulmonary arterial hypertension; triazolam, orally administered midazolam; ranolazine) (FDA NORVIR label, section 4)",
+      "Coadministration with potent CYP3A inducers where significantly reduced ritonavir plasma concentrations may be associated with loss of virologic response and possible resistance (apalutamide; St John's wort) (FDA NORVIR label, section 4)"
+    ],
+    "side_effects": [
+      "Gastrointestinal: diarrhea (67.9%), nausea (57.4%), vomiting (31.9%), abdominal pain (26.4%), dyspepsia (11.5%), flatulence (8.1%), GERD (1.1%), gastrointestinal hemorrhage (2.3%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Neurologic: paresthesia including oral paresthesia (50.7%), dizziness (15.6%), dysgeusia (16.2%), peripheral neuropathy (10.1%), syncope (3.3%), confusion (3.0%), disturbance in attention (2.5%) (FDA NORVIR label, section 6.1 Table 1)",
+      "General: fatigue including asthenia (46.2%), fever, flushing/feeling hot (13.2%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Skin: rash (27.1%), pruritus (12.2%), acne (3.8%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Hepatobiliary: hepatitis including increased AST, ALT, GGT (8.7%), increased blood bilirubin including jaundice (1.4%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Metabolic: hypertriglyceridemia (9.0%), hypercholesterolemia (3.0%), edema/peripheral edema (6.3%), lipodystrophy acquired (2.9%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Musculoskeletal: arthralgia and back pain (18.6%), myalgia (8.9%), myopathy/CPK increased (3.8%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Respiratory: coughing (21.7%), oropharyngeal pain (15.9%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Ocular: blurred vision (6.4%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Renal/urinary: increased urination (4.2%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Hypersensitivity including urticaria and face edema (8.2%) (FDA NORVIR label, section 6.1 Table 1)",
+      "Laboratory abnormalities: marked elevations in cholesterol, triglycerides, AST, ALT, GGT, CPK, uric acid; decreased hematocrit/hemoglobin/neutrophils/RBC/WBC (FDA NORVIR label, section 6.1 Table 2)"
+    ],
+    "dosage": {
+      "adult": "600 mg twice daily by mouth with meals. Use a dose titration schedule to reduce treatment-emergent adverse events while maintaining appropriate plasma levels: start at no less than 300 mg twice daily and increase at 2-3 day intervals by 100 mg twice daily; do not exceed 600 mg twice daily (FDA NORVIR label, section 2.2). Reduce dose when used with other protease inhibitors (atazanavir, darunavir, fosamprenavir, saquinavir, tipranavir) per those products' labelling (FDA NORVIR label, section 2.5).",
+      "geriatric": "No specific dose adjustment stated; use with caution (FDA NORVIR label does not specify geriatric dosing).",
+      "paediatric": "Patients older than 1 month: 350-400 mg/m2 twice daily by mouth with meals; do not exceed 600 mg twice daily. Start at 250 mg/m2 twice daily and increase at 2-3 day intervals by 50 mg/m2 twice daily; if not tolerated at 400 mg/m2 twice daily, use highest tolerated dose. NORVIR powder should not be used for doses less than 100 mg or for incremental doses between 100 mg intervals (FDA NORVIR label, section 2.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Ritonavir is an inhibitor of CYP3A (and to a lesser extent CYP2D6) and induces CYP3A, CYP1A2, CYP2C9, CYP2C19, CYP2B6 and glucuronosyl transferase; it may increase plasma concentrations of CYP3A substrates and decrease concentrations of induced enzymes' substrates (FDA NORVIR label, section 7.1)",
+      "Established/potentially significant interactions with: antivirals (atazanavir, darunavir, fosamprenavir, indinavir, saquinavir, tipranavir, delavirdine, maraviroc, raltegravir); analgesics (tramadol, propoxyphene, methadone, fentanyl, meperidine); anticoagulants (warfarin, rivaroxaban); anticonvulsants (carbamazepine, clonazepam, ethosuximide, divalproex, lamotrigine, phenytoin); antidepressants (nefazodone, SSRIs, tricyclics, bupropion, desipramine, trazodone); antiarrhythmics (disopyramide, lidocaine, mexiletine); anticancer agents; antifungals; antimycobacterials; and many others (FDA NORVIR label, section 7.2 Table 3)",
+      "Coadministration with tipranavir/ritonavir may decrease sofosbuvir concentrations (relevant for HCV combination therapy) (FDA SOVALDI label, section 7.1)"
+    ],
+    "monitoring": "Monitor liver function before and during therapy, especially in patients with underlying hepatic disease including hepatitis B/C or marked transaminase elevations, particularly during the first three months. Monitor total cholesterol and triglycerides prior to and periodically during therapy. Monitor for hyperglycemia/new-onset or exacerbation of diabetes mellitus. Appropriate laboratory testing (triglycerides, cholesterol, AST, ALT, GGT, CPK, uric acid) prior to initiating and at periodic intervals. Monitor PR interval in patients with conduction disease (FDA NORVIR label, sections 5.2, 5.5, 5.6, 5.7, 5.12).",
+    "patient_counselling": "NORVIR must be used in combination with other antiretroviral agents and taken with meals; tablets swallowed whole (do not chew, break, or crush); oral powder mixed with soft food or liquid and administered within 2 hours of preparation. Review all concomitant medications with the prescriber due to risk of serious/life-threatening drug interactions. Report symptoms of pancreatitis (nausea, vomiting, abdominal pain), hypersensitivity, or hepatotoxicity. Women infected with HIV should not breastfeed due to risk of HIV transmission (FDA NORVIR label, sections 2.1, 8.2, 17).",
+    "warnings": [
+      "Boxed warning: drug-drug interactions leading to potentially serious and/or life-threatening reactions - coadministration with several drug classes (sedative hypnotics, antiarrhythmics, ergot alkaloids) may result in serious/life-threatening adverse events due to effects on hepatic metabolism; review medications prior to prescribing NORVIR or when prescribing other medications to patients already taking NORVIR (FDA NORVIR label, Boxed Warning, section 5.1)",
+      "Hepatotoxicity: fatalities have occurred; monitor liver function before and during therapy, especially with underlying hepatic disease including hepatitis B/C (FDA NORVIR label, section 5.2)",
+      "Pancreatitis: fatalities have occurred; suspend therapy as clinically appropriate (FDA NORVIR label, section 5.3)",
+      "Allergic reactions/hypersensitivity: anaphylaxis, TEN, Stevens-Johnson syndrome, bronchospasm, angioedema; discontinue if severe reactions develop (FDA NORVIR label, section 5.4)",
+      "PR interval prolongation: second/third degree heart block reported; use with caution with preexisting conduction disease, ischemic heart disease, cardiomyopathy, structural heart disease (FDA NORVIR label, section 5.5)",
+      "Lipid disorders: substantial increases in total cholesterol and triglycerides (FDA NORVIR label, section 5.6)",
+      "Diabetes mellitus/hyperglycemia: new onset or exacerbation reported (FDA NORVIR label, section 5.7)",
+      "Immune reconstitution syndrome (FDA NORVIR label, section 5.8)",
+      "Fat redistribution/accumulation (FDA NORVIR label, section 5.9)",
+      "Hemophilia: spontaneous bleeding may occur (FDA NORVIR label, section 5.10)",
+      "Resistance/cross-resistance among protease inhibitors (FDA NORVIR label, section 5.11)"
+    ],
+    "precautions": [
+      "NORVIR must be used in combination with other antiretroviral agents (FDA NORVIR label, section 2.1)",
+      "Consult the full prescribing information of co-administered protease inhibitors for contraindications and warnings (FDA NORVIR label, sections 4, 5)",
+      "When co-administering with other CYP3A substrates, dose adjustment or additional monitoring may be required (FDA NORVIR label, section 7.1)",
+      "Consider potential for drug interactions prior to and during therapy (FDA NORVIR label, section 5.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Hepatotoxicity including fatalities (FDA NORVIR label, section 5.2)",
+      "Pancreatitis including fatalities (FDA NORVIR label, section 5.3)",
+      "Anaphylaxis, TEN, Stevens-Johnson syndrome (FDA NORVIR label, section 5.4)",
+      "Second/third degree AV block (FDA NORVIR label, section 5.5)",
+      "Immune reconstitution syndrome (FDA NORVIR label, section 5.8)",
+      "Increased bleeding in hemophilia (FDA NORVIR label, section 5.10)"
+    ],
+    "food_interactions": ["NORVIR should be taken with meals (FDA NORVIR label, section 2.1)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No specific pregnancy category is stated in the current label (FDA NORVIR label uses modern labeling). Antiretroviral Pregnancy Registry monitors outcomes. Lactation: women infected with HIV should be instructed not to breastfeed due to potential for HIV transmission (FDA NORVIR label, sections 8.1-8.2).",
+    "lactation_guidance": "Women infected with HIV should be instructed not to breastfeed due to the potential for HIV transmission (FDA NORVIR label, section 8.2).",
+    "overdose": "Human experience of acute overdose is limited. Treatment of overdose consists of general supportive measures including monitoring of vital signs and clinical status. Ritonavir is not removed by hemodialysis. Management may include induction of emesis or gastric lavage (FDA NORVIR label, section 10).",
+    "pharmacokinetics": "Ritonavir is extensively metabolised by CYP3A and to a lesser extent by CYP2D6; it inhibits CYP3A and CYP2D6 and induces CYP3A, CYP1A2, CYP2C9, CYP2C19, CYP2B6 and glucuronosyl transferase. Hepatic impairment: caution; increased concentrations may occur (FDA NORVIR label, sections 8.6 and 12.3).",
+    "clinical_pearls": [
+      "Ritonavir is most commonly used at low doses (100-200 mg) as a pharmacokinetic 'booster' for other protease inhibitors rather than as a primary antiretroviral at 600 mg twice daily (FDA NORVIR label, sections 2.5, 7).",
+      "Ritonavir must be used in combination with other antiretroviral agents; it is not recommended as monotherapy (FDA NORVIR label, section 2.1).",
+      "Tablets must be swallowed whole; oral powder mixed with soft food/liquid and given within 2 hours (FDA NORVIR label, sections 2.1, 2.4).",
+      "Ritonavir oral powder should only be used for dosing increments of 100 mg (FDA NORVIR label, section 2.4)."
+    ],
+    "brand_names": ["Norvir"],
+    "black_box_warnings": [
+      "Drug-drug interactions leading to potentially serious and/or life-threatening reactions: coadministration of NORVIR with several classes of drugs including sedative hypnotics, antiarrhythmics, or ergot alkaloid preparations may result in potentially serious and/or life-threatening adverse events due to possible effects of NORVIR on the hepatic metabolism of certain drugs (FDA NORVIR label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": "Caution should be exercised when administering NORVIR to patients with hepatic impairment; patients with underlying hepatitis B or C or marked transaminase elevations are at increased risk of hepatotoxicity (FDA NORVIR label, sections 5.2, 8.6).",
+    "administration_instructions": "Tablets: swallow whole with meals; do not chew, break, or crush. Oral powder: mix entire contents of packet(s) over soft food (apple sauce, vanilla pudding) or liquid (water, chocolate milk, infant formula); administer all within 2 hours of preparation; may be given via feeding tube mixed with water. When administered with food the bitter aftertaste may be lessened. Use with meals (FDA NORVIR label, sections 2.1, 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA NORVIR label, sections 1, 12.1, 12.4 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA NORVIR label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA NORVIR label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA NORVIR label, section 6.1 Tables 1-2 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA NORVIR label, sections 2.2, 2.3 and 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA NORVIR label, sections 7.1 and 7.2 Table 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA NORVIR label, sections 5.2, 5.5, 5.6, 5.7 and 5.12",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA NORVIR label, sections 2.1, 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA NORVIR label, Boxed Warning and sections 5.1-5.12",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA NORVIR label, sections 2.1, 5.1 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA NORVIR label, sections 5.2-5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA NORVIR label, section 2.1 (take with meals)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA NORVIR label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA NORVIR label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA NORVIR label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA NORVIR label, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA NORVIR label, sections 2.1, 2.4, 2.5 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "NORVIR (ritonavir) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA NORVIR label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment specified in the FDA NORVIR labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA NORVIR label, sections 5.2 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA NORVIR label, sections 2.1 and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2849298e-de6e-47bb-8194-56e075b33fc3"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current label uses modern labeling and does not state a letter category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA label)"
+  ],
+  "notes": "The molecule is stored as 'Ritonavir'. Brand name Norvir; the existing row lists 'Lopinavir and Ritonavir' (Kaletra), a combination product, but ritonavir alone is marketed as Norvir. Ritonavir is also widely used as a low-dose pharmacokinetic booster for other protease inhibitors. Name alias: ritonavir (ABT-538)."
+}

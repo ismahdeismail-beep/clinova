@@ -1,0 +1,199 @@
+{
+  "name": "Valaciclovir",
+  "existing_id": "bd75e776-7caa-43a8-8933-40db70b964e5",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Valaciclovir is the L-valyl prodrug of aciclovir. After oral administration it is rapidly converted to aciclovir, a synthetic purine nucleoside analogue with inhibitory activity against herpes simplex virus types 1 and 2 (HSV-1, HSV-2) and varicella-zoster virus (VZV). Aciclovir is phosphorylated by viral thymidine kinase to aciclovir monophosphate and then by cellular enzymes to aciclovir triphosphate, which inhibits viral DNA polymerase, is incorporated into and terminates the growing viral DNA chain, and inactivates viral DNA polymerase (FDA VALTREX label, sections 12.1 and 12.4; FDA acyclovir label, VIROLOGY).",
+    "indications": [
+      "Adults: treatment of cold sores (herpes labialis) (FDA VALTREX label, section 1.1)",
+      "Adults: treatment of initial episode of genital herpes (FDA VALTREX label, section 1.1)",
+      "Adults: treatment of recurrent episodes of genital herpes (FDA VALTREX label, section 1.1)",
+      "Adults: chronic suppressive therapy of recurrent genital herpes (immunocompetent and HIV-1-infected) (FDA VALTREX label, section 1.1)",
+      "Adults: reduction of transmission of genital herpes (FDA VALTREX label, section 1.1)",
+      "Adults: treatment of herpes zoster (shingles) (FDA VALTREX label, section 1.1)",
+      "Pediatric patients >=12 years: treatment of cold sores (herpes labialis) (FDA VALTREX label, section 1.2)",
+      "Pediatric patients 2 to <18 years: treatment of chickenpox (FDA VALTREX label, section 1.2)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to valacyclovir (e.g., anaphylaxis), acyclovir, or any component of the formulation (FDA VALTREX label, section 4)"
+    ],
+    "side_effects": [
+      "Most common (>=10% in at least one indication): headache, nausea, and abdominal pain (FDA VALTREX label, section 6)",
+      "Cold sores: headache (14%), dizziness (2%); ALT >2x ULN (1.8%) (FDA VALTREX label, section 6.1)",
+      "Genital herpes initial episode: headache (13%), nausea (6%) (FDA VALTREX label, section 6.1)",
+      "Genital herpes recurrent episodes: headache (16%), nausea (5%) (FDA VALTREX label, section 6.1)",
+      "Genital herpes suppressive therapy: headache (35-38%), nausea (11%), abdominal pain (9-11%), dysmenorrhea (5-8%), depression (5-7%), arthralgia (5-6%), vomiting (3%), dizziness (2-4%) (FDA VALTREX label, section 6.1)",
+      "Herpes zoster: nausea (15%), headache (14%), vomiting (6%), dizziness (3%), abdominal pain (3%) (FDA VALTREX label, section 6.1)",
+      "Pediatric (12 to <18 years, cold sores): headache (17%), nausea (8%) (FDA VALTREX label, section 6.2)",
+      "Pediatric (1 month to <12 years): diarrhea (5%), pyrexia (4%), dehydration (2%), herpes simplex (2%), rhinorrhea (2%) (FDA VALTREX label, section 6.2)",
+      "Postmarketing: facial edema, hypertension, tachycardia; anaphylaxis, angioedema, dyspnea, pruritus, rash, urticaria; CNS effects (agitation, hallucinations, confusion, delirium, seizures, encephalopathy, mania, psychosis); visual abnormalities; diarrhea; liver enzyme abnormalities, hepatitis; renal failure, renal pain; thrombocytopenia, aplastic anemia, leukocytoclastic vasculitis, TTP/HUS; SCARs (AGEP, DRESS, TEN, SJS, erythema multiforme, photosensitivity rashes, alopecia) (FDA VALTREX label, section 6.3)"
+    ],
+    "dosage": {
+      "adult": "Cold sores: 2 g twice daily for 1 day, 12 hours apart. Genital herpes initial episode: 1 g twice daily for 10 days. Recurrent episode: 500 mg twice daily for 3 days. Suppressive therapy: 1 g once daily (or 500 mg once daily if <=9 recurrences/year); HIV-1-infected (CD4 >=100 cells/mm3): 500 mg twice daily. Reduction of transmission: 500 mg once daily for source partner. Herpes zoster: 1 g three times daily for 7 days. Therapy should be initiated at earliest sign/symptom (FDA VALTREX label, section 2.1).",
+      "geriatric": "No specific dose stated; caution in elderly; dosage reduction recommended for impaired renal function (FDA VALTREX label, sections 5.2, 8.5).",
+      "paediatric": "Cold sores (>=12 years): 2 g twice daily for 1 day, 12 hours apart. Chickenpox (2 to <18 years): 20 mg/kg three times daily for 5 days, not to exceed 1 g three times daily. Efficacy/safety not established in patients <12 years with cold sores, <18 years with genital herpes or herpes zoster, <2 years with chickenpox (FDA VALTREX label, sections 1.2, 2.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No clinically significant drug-drug or drug-food interactions with VALTREX are known (FDA VALTREX label, section 7)"
+    ],
+    "monitoring": "Reduce dosage in renal impairment per Table 1; maintain adequate hydration. Monitor for acute renal failure, CNS adverse reactions (more likely in elderly and renal impairment), TTP/HUS, and SCARs (FDA VALTREX label, sections 2.4, 5.1-5.4).",
+    "patient_counselling": "VALTREX may be given without regard to meals. Therapy should be initiated at the earliest symptom. Cold sores: not established after development of clinical signs (papule/vesicle/ulcer). Genital herpes: not a cure; avoid contact with lesions or intercourse when lesions/symptoms present to avoid infecting partners; suppressive therapy reduces but does not eliminate transmission risk. Chickenpox: initiate within 24 hours of rash onset. Maintain adequate hydration. Report severe or troublesome adverse reactions, pregnancy, or breastfeeding intentions (FDA VALTREX label, sections 2, 17).",
+    "warnings": [
+      "TTP/HUS: has occurred in patients with advanced HIV-1 disease and in allogeneic bone marrow transplant and renal transplant recipients receiving 8 g/day; discontinue immediately if clinical signs/symptoms/laboratory abnormalities consistent with TTP/HUS occur (FDA VALTREX label, section 5.1)",
+      "Acute renal failure: may occur in elderly, patients with underlying renal disease receiving higher-than-recommended doses, patients receiving concomitant nephrotoxic drugs, or inadequately hydrated patients; reduce dosage in renal impairment; maintain adequate hydration (FDA VALTREX label, section 5.2)",
+      "CNS adverse reactions (agitation, hallucinations, confusion, delirium, seizures, encephalopathy): may occur in adults and pediatrics with or without reduced renal function and with higher-than-recommended doses; elderly more likely; discontinue if CNS adverse reactions occur (FDA VALTREX label, section 5.3)",
+      "Severe cutaneous adverse reactions (AGEP, DRESS, TEN, SJS): discontinue immediately if painful rash with mucosal involvement or progressive severe rash develops; contraindicated in patients who developed SCARs with valacyclovir or acyclovir (FDA VALTREX label, section 5.4)"
+    ],
+    "precautions": [
+      "The efficacy and safety of VALTREX have not been established in immunocompromised patients other than for suppression of genital herpes in HIV-1-infected patients with CD4+ >=100 cells/mm3 (FDA VALTREX label, section 1.3)",
+      "Valacyclovir oral suspension (25 or 50 mg/mL) can be prepared extemporaneously from 500 mg tablets (FDA VALTREX label, section 2.3)",
+      "Patients requiring hemodialysis should receive the recommended dose after hemodialysis (FDA VALTREX label, section 2.4)"
+    ],
+    "serious_adverse_reactions": [
+      "TTP/HUS (FDA VALTREX label, section 5.1)",
+      "Acute renal failure (FDA VALTREX label, section 5.2)",
+      "CNS effects including seizures and encephalopathy (FDA VALTREX label, section 5.3)",
+      "SCARs (AGEP, DRESS, SJS, TEN) (FDA VALTREX label, section 5.4)",
+      "Thrombocytopenia, aplastic anemia, leukocytoclastic vasculitis (FDA VALTREX label, section 6.3)"
+    ],
+    "food_interactions": [
+      "VALTREX may be given without regard to meals (FDA VALTREX label, section 2)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Clinical data over several decades with valacyclovir and its metabolite acyclovir in pregnant women have not identified a drug-associated risk of major birth defects. Insufficient data regarding miscarriage or adverse maternal/fetal outcomes. Acyclovir and Valacyclovir Pregnancy Registries documented outcomes; major birth defects during first-trimester exposure to valacyclovir was 4.5% (95% CI 0.24-24.9%). No adverse embryo-fetal effects in rats/rabbits at exposures 4 (rats) and 7 (rabbits) times human exposure. There are risks to the fetus associated with untreated herpes simplex during pregnancy (FDA VALTREX label, section 8.1).",
+    "lactation_guidance": "Acyclovir is present in human milk following oral administration of valacyclovir; a 500 mg maternal dose twice daily would provide a breastfed child with an oral acyclovir dosage of approximately 0.6 mg/kg/day. No data on effects on breastfed child or milk production. Developmental and health benefits of breastfeeding should be considered along with mother's clinical need (FDA VALTREX label, section 8.2).",
+    "overdose": "Overdoses involving ingestion of up to 20 g have been reported (with acyclovir); adverse events include agitation, coma, seizures, lethargy. Precipitation of acyclovir in renal tubules may occur when solubility (2.5 mg/mL) is exceeded. Overdosage may result in elevated BUN and serum creatinine and renal failure. In acute renal failure and anuria, hemodialysis may benefit until renal function restored (FDA VALTREX label, section 10; FDA acyclovir label, OVERDOSAGE).",
+    "pharmacokinetics": "Valaciclovir is rapidly converted to acyclovir after oral administration; acyclovir bioavailability 10-20% (decreases with increasing dose), peak steady-state concentrations 0.83/1.21/1.61 mcg/mL for 200/400/800 mg; protein binding 9-33%; plasma elimination half-life 2.5-3.3 hours; no effect of food on absorption. Renal excretion of unchanged drug accounts for 62-91% of dose; CSF concentrations ~50% of plasma. Half-life and clearance depend on renal function (2.5 h at CrCl >80 mL/min; 19.5 h in anuria) (FDA acyclovir label, Clinical Pharmacology/Pharmacokinetics; FDA VALTREX label, section 12.3).",
+    "clinical_pearls": [
+      "Valaciclovir is the L-valyl prodrug of aciclovir, providing improved oral bioavailability (FDA VALTREX label, sections 12.1, 12.3).",
+      "Initiate therapy at the earliest sign/symptom for best efficacy; cold sores efficacy not established after development of clinical signs (FDA VALTREX label, sections 1.1, 2.1).",
+      "Renal dose adjustment required; maintain adequate hydration to prevent acyclovir precipitation in renal tubules (FDA VALTREX label, sections 2.4, 5.2).",
+      "No clinically significant drug-drug interactions known (FDA VALTREX label, section 7)."
+    ],
+    "brand_names": ["Valtrex"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Dosage adjustment by creatinine clearance per Table 1: cold sores (CrCl 30-49: two 1 g doses 12 h apart; 10-29: two 500 mg doses 12 h apart; <10: 500 mg single dose); genital herpes initial episode (CrCl 10-29: 1 g every 24 h; <10: 500 mg every 24 h); recurrent (CrCl 10-29/<10: 500 mg every 24 h); suppressive (1 g daily: CrCl 10-29: 500 mg every 24 h; <10: 500 mg every 24 h; 500 mg daily alternate: 10-29: 500 mg every 48 h; <10: 500 mg every 48 h); HIV-infected (CrCl 10-29/<10: 500 mg every 24 h); herpes zoster (CrCl 30-49: 1 g every 12 h; 10-29: 1 g every 24 h; <10: 500 mg every 24 h). Hemodialysis patients receive dose after dialysis (FDA VALTREX label, section 2.4 Table 1).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "May be given without regard to meals. Valacyclovir oral suspension (25 or 50 mg/mL) may be prepared extemporaneously from 500 mg tablets. For hemodialysis patients, administer dose after hemodialysis. Maintain adequate hydration (FDA VALTREX label, sections 2, 2.3, 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA VALTREX label, sections 12.1 and 12.4; FDA acyclovir label, VIROLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA VALTREX label, sections 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA VALTREX label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA VALTREX label, sections 6.1-6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA VALTREX label, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA VALTREX label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA VALTREX label, sections 2.4 and 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA VALTREX label, sections 2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA VALTREX label, sections 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA VALTREX label, sections 1.3, 2.3 and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA VALTREX label, sections 5.1-5.4 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA VALTREX label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA VALTREX label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA VALTREX label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA VALTREX label, section 10; FDA acyclovir label, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA acyclovir label, Clinical Pharmacology: Pharmacokinetics; FDA VALTREX label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA VALTREX label, sections 1.1, 2.1, 2.4 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "brand_names",
+      "ref": "VALTREX (valacyclovir) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA VALTREX labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA VALTREX label, section 2.4 Table 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment specified in the FDA VALTREX labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA VALTREX label, sections 2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA VALTREX labelling)"
+  ],
+  "notes": "The drug is stored in the database as 'Valaciclovir' (British spelling); the US FDA label uses the US spelling 'valacyclovir' (brand Valtrex). These refer to the same molecule. Valaciclovir is the L-valyl ester prodrug of aciclovir. Name alias: valacyclovir/valaciclovir. The existing row had content_status 'template' and is set to 'needs_review' per deliverable."
+}

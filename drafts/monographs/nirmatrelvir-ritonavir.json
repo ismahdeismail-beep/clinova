@@ -1,0 +1,195 @@
+{
+  "name": "Nirmatrelvir/Ritonavir",
+  "existing_id": "78149320-f09f-4853-841d-bf326e002983",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "PAXLOVID consists of nirmatrelvir, a SARS-CoV-2 main protease (Mpro; 3CLpro; nsp5) inhibitor, co-packaged with ritonavir, an HIV-1 protease inhibitor and CYP3A inhibitor. Nirmatrelvir inhibits viral replication by blocking the SARS-CoV-2 main protease required for processing viral polyproteins. Ritonavir inhibits CYP3A-mediated metabolism of nirmatrelvir, increasing nirmatrelvir plasma concentrations (FDA PAXLOVID label, sections 1, 2.1 and 12.1).",
+    "indications": [
+      "Treatment of mild-to-moderate COVID-19 in adults at high risk for progression to severe COVID-19, including hospitalization or death (FDA PAXLOVID label, section 1)",
+      "Not approved for pre-exposure or post-exposure prophylaxis for prevention of COVID-19 (FDA PAXLOVID label, section 1)"
+    ],
+    "contraindications": [
+      "History of clinically significant hypersensitivity reactions (e.g., toxic epidermal necrolysis, Stevens-Johnson syndrome) to nirmatrelvir, ritonavir, or any other component (FDA PAXLOVID label, section 4)",
+      "Co-administration with drugs highly dependent on CYP3A for clearance for which elevated concentrations are associated with serious and/or life-threatening reactions (FDA PAXLOVID label, section 4)",
+      "Co-administration with potent CYP3A inducers where significantly reduced nirmatrelvir or ritonavir plasma concentrations may be associated with loss of virologic response and possible resistance (FDA PAXLOVID label, section 4)",
+      "Specific contraindicated drugs include alfuzosin, ranolazine, antiarrhythmics (amiodarone, dronedarone, flecainide, propafenone, quinidine), colchicine (in renal/hepatic impairment), lurasidone, pimozide, silodosin, eplerenone, ivabradine, ergot derivatives, lovastatin, simvastatin, voclosporin, lomitapide, eletriptan, ubrogepant, finerenone, naloxegol, sildenafil (Revatio) for PAH, triazolam, oral midazolam, flibanserin, tolvaptan, suzetrigine, apalutamide, enzalutamide, carbamazepine, phenobarbital, primidone, phenytoin, rifampin, rifapentine, lumacaftor/ivacaftor, and St. John's wort (FDA PAXLOVID label, section 4)"
+    ],
+    "side_effects": [
+      "Dysgeusia (5%) and diarrhea (3%) were the most common adverse reactions in EPIC-HR (incidence >=1% and greater than placebo) (FDA PAXLOVID label, section 6.1)",
+      "Post-authorization (EUA) experience: anaphylaxis, hypersensitivity reactions; toxic epidermal necrolysis, Stevens-Johnson syndrome; headache; hypertension; abdominal pain, nausea, vomiting; malaise (FDA PAXLOVID label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "300 mg nirmatrelvir (two 150 mg tablets) with 100 mg ritonavir (one 100 mg tablet), all three tablets taken together orally twice daily in the morning and at bedtime for 5 days. Initiate as soon as possible after diagnosis of COVID-19 and within 5 days of symptom onset, with or without food; swallow tablets whole. Dose reduction for renal impairment: moderate (eGFR 30 to <60 mL/min): 150 mg nirmatrelvir with 100 mg ritonavir twice daily for 5 days; severe (eGFR <30 mL/min) including hemodialysis: Day 1: 300 mg nirmatrelvir with 100 mg ritonavir once, then Days 2-5: 150 mg nirmatrelvir with 100 mg ritonavir once daily (dose after hemodialysis on dialysis days). Not recommended in severe hepatic impairment (Child-Pugh Class C) (FDA PAXLOVID label, sections 2.2, 2.3 and 2.4).",
+      "geriatric": "No specific dose adjustment stated; see renal impairment dosing (FDA PAXLOVID label, sections 2.3 and 8.5).",
+      "paediatric": "PAXLOVID is indicated for adults only in the approved labeling; pediatric use is not described in the approved label (FDA PAXLOVID label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "PAXLOVID is a strong CYP3A inhibitor (via ritonavir) and also inhibits CYP2D6, P-gp, and OATP1B1; co-administration can markedly increase levels of many drugs (FDA PAXLOVID label, sections 4, 5.1 and 7)",
+      "Contraindicated with drugs highly dependent on CYP3A for clearance (listed in section 4) and with potent CYP3A inducers (FDA PAXLOVID label, section 4)",
+      "Warfarin: closely monitor INR if co-administration necessary (FDA PAXLOVID label, Table 2)",
+      "Calcineurin inhibitors (tacrolimus, cyclosporine): avoid if close monitoring not feasible; otherwise dose adjust and monitor closely (FDA PAXLOVID label, Table 2)",
+      "mTOR inhibitors (everolimus, sirolimus): avoid concomitant use (FDA PAXLOVID label, Table 2)",
+      "HMG-CoA reductase inhibitors: lovastatin and simvastatin contraindicated (may be temporarily discontinued); atorvastatin consider temporary discontinuation (FDA PAXLOVID label, Table 2)",
+      "Hormonal contraceptives: ethinyl estradiol levels may decrease; use additional non-hormonal contraception during treatment and until one menstrual cycle after (FDA PAXLOVID label, Table 2)",
+      "Anti-HIV protease inhibitors: monitor for increased adverse events (FDA PAXLOVID label, Table 2)",
+      "Many other clinically significant interactions listed in Table 2 (e.g., calcium channel blockers, digoxin, corticosteroids, anticoagulants, benzodiazepines, opioids, antipsychotics, antifungals, anticonvulsants) (FDA PAXLOVID label, section 7.3)"
+    ],
+    "monitoring": "Review all concomitant medications for drug-drug interactions before and during therapy; determine if dose adjustment, interruption, or additional monitoring is needed (FDA PAXLOVID label, sections 5.1 and 7). Monitor hepatic transaminases in patients with pre-existing liver disease (section 5.3). Monitor renal function for dosing (section 2.3).",
+    "patient_counselling": "Advise patients to take all 3 tablets together twice daily for 5 days; complete the full course. If a dose is missed within 8 hours, take as soon as possible; if more than 8 hours, skip and take next dose at scheduled time; do not double. Tablets may be taken with or without food; swallow whole. Advise about potential drug interactions and to inform all healthcare providers of all medications. Advise that PAXLOVID is not a substitute for vaccination (FDA PAXLOVID label, sections 2.1 and 17).",
+    "warnings": [
+      "Significant drug interactions: PAXLOVID includes ritonavir, a strong CYP3A inhibitor, which may lead to greater exposure of certain concomitant medications, resulting in potentially severe, life-threatening, or fatal events; review all medications before prescribing (FDA PAXLOVID label, Boxed Warning, sections 4, 5.1 and 7)",
+      "Hypersensitivity reactions: anaphylaxis, serious skin reactions (TEN, Stevens-Johnson syndrome) (FDA PAXLOVID label, section 5.2)",
+      "Hepatotoxicity: hepatic transaminase elevations, clinical hepatitis, and jaundice have occurred with ritonavir (FDA PAXLOVID label, section 5.3)",
+      "Risk of HIV-1 drug resistance in individuals with uncontrolled or undiagnosed HIV-1 infection (FDA PAXLOVID label, section 5.4)"
+    ],
+    "precautions": [
+      "Not recommended in severe hepatic impairment (Child-Pugh Class C) (FDA PAXLOVID label, sections 2.4 and 8.7)",
+      "No dose adjustment in mild renal impairment (eGFR >=60 to <90 mL/min); dose reduction in moderate/severe renal impairment (FDA PAXLOVID label, section 2.3)",
+      "On days of hemodialysis, administer the PAXLOVID dose after hemodialysis (FDA PAXLOVID label, section 2.3)",
+      "Prescriptions should specify the numeric dose of each active ingredient (FDA PAXLOVID label, section 2.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and serious skin reactions including TEN and Stevens-Johnson syndrome (FDA PAXLOVID label, sections 5.2 and 6.1)",
+      "Hepatotoxicity (FDA PAXLOVID label, section 5.3)"
+    ],
+    "food_interactions": ["May be taken with or without food (FDA PAXLOVID label, section 2.1)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data on nirmatrelvir use in pregnancy are insufficient to evaluate drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Published observational studies on ritonavir use in pregnant women have not identified an increase in the risk of major birth defects. COVID-19 in pregnancy is associated with adverse maternal and fetal outcomes. There are maternal and fetal risks associated with untreated COVID-19 in pregnancy (FDA PAXLOVID label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of nirmatrelvir in human milk; ritonavir is present in human milk at low levels. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for PAXLOVID and any potential adverse effects on the breastfed infant (FDA PAXLOVID label, section 8.2).",
+    "overdose": "No specific antidote; treatment is supportive. Hemodialysis is not expected to significantly remove nirmatrelvir (FDA PAXLOVID label, section 10).",
+    "pharmacokinetics": "Nirmatrelvir is a CYP3A substrate; ritonavir (strong CYP3A inhibitor) increases nirmatrelvir exposure. Nirmatrelvir: Cmax ~2.21 ug/mL, AUC ~23.0 ug*h/mL, Tmax ~3.0 h, t1/2 ~6.1 h. Food has minimal effect on nirmatrelvir exposure. Renal excretion is a major route; hepatic metabolism via CYP3A (FDA PAXLOVID label, section 12.3).",
+    "clinical_pearls": [
+      "Ritonavir is included as a pharmacokinetic booster (CYP3A inhibitor), not for its antiviral effect against SARS-CoV-2 (FDA PAXLOVID label, section 1)",
+      "Complete 5-day course; do not extend beyond 5 days (FDA PAXLOVID label, section 2.1)",
+      "Renal dose adjustment is required for moderate and severe renal impairment (FDA PAXLOVID label, section 2.3)",
+      "Strong CYP3A inhibitor: extensive drug-drug interaction potential; review all concomitant medications (FDA PAXLOVID label, sections 4 and 7)"
+    ],
+    "brand_names": ["Paxlovid"],
+    "black_box_warnings": [
+      "Significant drug interactions: PAXLOVID includes ritonavir, a strong CYP3A inhibitor, which may lead to greater exposure of certain concomitant medications, resulting in potentially severe, life-threatening, or fatal events. Prior to prescribing, review all medications taken by the patient to assess potential drug-drug interactions and determine if concomitant medications require dose adjustment, interruption, and/or additional monitoring (FDA PAXLOVID label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No adjustment in mild renal impairment (eGFR >=60 to <90 mL/min). Moderate (eGFR 30 to <60 mL/min): 150 mg nirmatrelvir with 100 mg ritonavir twice daily for 5 days. Severe (eGFR <30 mL/min) including hemodialysis: Day 1: 300 mg nirmatrelvir with 100 mg ritonavir once; Days 2-5: 150 mg nirmatrelvir with 100 mg ritonavir once daily (administer after hemodialysis on dialysis days) (FDA PAXLOVID label, section 2.3).",
+    "hepatic_dose_adjustment": "No dosage adjustment in mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment. Not recommended in severe (Child-Pugh C) hepatic impairment (FDA PAXLOVID label, sections 2.4 and 8.7).",
+    "administration_instructions": "Take all 3 tablets together twice daily for 5 days, with or without food; swallow tablets whole (do not chew, break, or crush). If a dose is missed within 8 hours, take as soon as possible; if more than 8 hours, skip and take the next dose at the scheduled time; do not double the dose (FDA PAXLOVID label, section 2.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, PAXLOVID, sections 1, 2.1 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, PAXLOVID, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, PAXLOVID, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, PAXLOVID, section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, PAXLOVID, sections 2.2, 2.3 and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, PAXLOVID, sections 4, 5.1 and 7, Table 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, PAXLOVID, sections 5.1, 5.3 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, PAXLOVID, sections 2.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, PAXLOVID, Boxed Warning and sections 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, PAXLOVID, sections 2.3, 2.4 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, PAXLOVID, sections 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, PAXLOVID, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, PAXLOVID, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, PAXLOVID, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, PAXLOVID, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, PAXLOVID, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, PAXLOVID, sections 1, 2.1, 2.3 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Paxlovid (nirmatrelvir and ritonavir) as the approved brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, PAXLOVID, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, PAXLOVID, section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, PAXLOVID, sections 2.4 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, PAXLOVID, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (not described in the approved label)",
+    "pregnancy_category (no FDA pregnancy category letter assigned; PLLR labeling)"
+  ],
+  "notes": "Nirmatrelvir is co-administered with ritonavir, which acts as a pharmacokinetic booster via CYP3A inhibition. The ritonavir component is the same booster used in lopinavir/ritonavir. Approved in 2023; the current DailyMed label reflects the revised 02/2026 labeling."
+}

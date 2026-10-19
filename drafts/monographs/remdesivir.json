@@ -1,0 +1,182 @@
+{
+  "name": "Remdesivir",
+  "existing_id": "ca776697-9c90-49d3-95e3-a20c4d5fcfe6",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Remdesivir is a SARS-CoV-2 nucleotide analog RNA polymerase inhibitor. It is an adenosine nucleotide prodrug that is metabolised intracellularly to an active triphosphate metabolite (GS-443902) that inhibits the SARS-CoV-2 RNA-dependent RNA polymerase (RdRp), acting as a chain terminator and thereby blocking viral RNA replication (FDA VEKLURY label, sections 12.1 and 12.4).",
+    "indications": [
+      "Treatment of COVID-19 in adults and paediatric patients (birth to <18 years, weighing at least 1.5 kg) who are hospitalized (FDA VEKLURY label, section 1)",
+      "Treatment of COVID-19 in adults and paediatric patients (birth to <18 years, weighing at least 1.5 kg) who are not hospitalized and have mild-to-moderate COVID-19 and are at high risk for progression to severe COVID-19, including hospitalization or death (FDA VEKLURY label, section 1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to remdesivir or any component of the product (FDA VEKLURY label, section 4)"
+    ],
+    "side_effects": [
+      "Nausea (FDA VEKLURY label, section 6.1)",
+      "Increased ALT and increased AST (FDA VEKLURY label, section 6.1)",
+      "Hypersensitivity reactions, including infusion-related and anaphylactic reactions (hypotension, hypertension, tachycardia, bradycardia, hypoxia, fever, dyspnea, wheezing, angioedema, rash, nausea, diaphoresis, shivering), most within one hour of administration (FDA VEKLURY label, section 5.1)",
+      "Transaminase elevations (mild to moderate, Grade 1-2) observed in healthy volunteers and reported in patients with COVID-19 (FDA VEKLURY label, section 5.2)",
+      "Less common (<2%): generalized seizure, rash (FDA VEKLURY label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "Adults and paediatric patients weighing at least 40 kg: a single loading dose of 200 mg intravenously on Day 1, followed by once-daily maintenance doses of 100 mg intravenously from Day 2 (FDA VEKLURY label, section 2.3). Hospitalized patients requiring invasive mechanical ventilation and/or ECMO: total treatment duration 10 days. Hospitalized patients not requiring invasive mechanical ventilation and/or ECMO: 5 days, extendable up to 10 days if no clinical improvement. Non-hospitalized patients with mild-to-moderate COVID-19 at high risk: 3 days, initiated within 7 days of symptom onset (FDA VEKLURY label, section 2.3).",
+      "geriatric": "No dosage adjustment required in patients over 65 years; 36-42% of hospitalized trial subjects were 65 years or older and reported clinical experience has not identified differences in responses (FDA VEKLURY label, section 8.5).",
+      "paediatric": "Paediatric patients (birth to <18 years) weighing 1.5 kg to <40 kg: weight-based dosing per Table 1 - neonates <28 days and at least 1.5 kg: 2.5 mg/kg loading dose Day 1, then 1.25 mg/kg once daily from Day 2; patients at least 28 days old and 1.5 kg to <3 kg or 3 kg to <40 kg: 5 mg/kg loading dose Day 1, then 2.5 mg/kg once daily from Day 2 (FDA VEKLURY label, section 2.3 Table 1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Chloroquine phosphate or hydroxychloroquine sulfate: coadministration is not recommended, based on cell-culture data demonstrating potential antagonism of intracellular metabolic activation and antiviral activity (FDA VEKLURY label, sections 5.3 and 7.1)",
+      "No clinically significant interactions expected with inducers of CYP3A4 or inhibitors of OATP1B1/1B3 and P-gp (FDA VEKLURY label, section 7.1)",
+      "Remdesivir is a weak inhibitor of CYP3A and does not inhibit OATP1B1/1B3 (FDA VEKLURY label, section 7.2)"
+    ],
+    "monitoring": "Perform hepatic laboratory testing in all patients before starting VEKLURY and while receiving it as clinically appropriate; consider discontinuing if ALT rises to >10 times the upper limit of normal, or if ALT elevation is accompanied by signs/symptoms of liver inflammation. Determine prothrombin time before starting and monitor as clinically appropriate. Monitor patients during infusion and for at least one hour after for signs/symptoms of hypersensitivity (FDA VEKLURY label, sections 2.2 and 5.1-5.2).",
+    "patient_counselling": "VEKLURY is given by intravenous infusion only, in settings with immediate access to medications to treat severe hypersensitivity reactions such as anaphylaxis. Patients should be monitored during infusion and observed for at least one hour after completion. Report any signs of allergic reaction (rash, difficulty breathing, swelling) immediately. Hepatic laboratory testing is required before and during treatment. Breastfeeding individuals with COVID-19 should follow clinical guidelines to avoid exposing the infant to COVID-19 (FDA VEKLURY label, sections 2.1, 5.1, 8.2, 17).",
+    "warnings": [
+      "Hypersensitivity including infusion-related and anaphylactic reactions: may occur during and following administration, most within one hour; slower infusion rates (up to 120 minutes) may reduce risk; monitor during infusion and for at least one hour afterwards; discontinue immediately and initiate appropriate treatment if clinically significant hypersensitivity occurs; contraindicated in patients with known hypersensitivity (FDA VEKLURY label, section 5.1)",
+      "Increased risk of transaminase elevations: perform hepatic laboratory testing before starting and during treatment; consider discontinuing if ALT >10x ULN; discontinue if ALT elevation accompanied by signs/symptoms of liver inflammation (FDA VEKLURY label, section 5.2)",
+      "Risk of reduced antiviral activity when coadministered with chloroquine phosphate or hydroxychloroquine sulfate (FDA VEKLURY label, section 5.3)"
+    ],
+    "precautions": [
+      "VEKLURY may only be administered in settings where healthcare providers have immediate access to medications to treat severe infusion/hypersensitivity reactions and the ability to activate EMS (FDA VEKLURY label, section 2.1)",
+      "Administer by intravenous infusion only; do not administer by any other route (FDA VEKLURY label, section 2.1)",
+      "VEKLURY contains no preservative; use aseptic technique and administer immediately after preparation when possible (FDA VEKLURY label, sections 2.5-2.6)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity/anaphylaxis (FDA VEKLURY label, section 5.1)",
+      "Transaminase elevations (FDA VEKLURY label, section 5.2)",
+      "Generalized seizure (FDA VEKLURY label, section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data from a clinical trial (IMPAACT 2032), published reports, the COVID-PR pregnancy exposure registry, and compassionate use have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes following exposure in the second and third trimester; insufficient data to evaluate risk during the first trimester. No dose adjustments recommended during pregnancy. COVID-19 in pregnancy is associated with adverse maternal and fetal outcomes (FDA VEKLURY label, section 8.1).",
+    "lactation_guidance": "A published case report describes presence of remdesivir and active metabolite GS-441524 in human milk; available pharmacovigilance data (n=11) do not indicate adverse effects on breastfed infants. Developmental and health benefits of breastfeeding should be considered along with the mother's clinical need; breastfeeding individuals with COVID-19 should follow clinical guidelines to avoid exposing the infant to COVID-19 (FDA VEKLURY label, section 8.2).",
+    "overdose": "There is no human experience of acute overdose with VEKLURY. Treatment of overdose should consist of general supportive measures including monitoring of vital signs and observation of the clinical status of the patient. There is no specific antidote (FDA VEKLURY label, section 10).",
+    "pharmacokinetics": "Remdesivir is a prodrug metabolised intracellularly to the active triphosphate GS-443902; the predominant circulating metabolite is GS-441524. No clinically significant differences in pharmacokinetics between pregnant and non-pregnant individuals. No dosage adjustment recommended in renal impairment including dialysis, or in mild/moderate/severe hepatic impairment (Child-Pugh A/B/C) (FDA VEKLURY label, sections 2.4, 8.1, 8.6, 8.7, 12.3).",
+    "clinical_pearls": [
+      "No dosage adjustment is required in any degree of renal impairment, including patients on dialysis, or in mild/moderate/severe hepatic impairment (FDA VEKLURY label, sections 2.4, 8.6, 8.7).",
+      "VEKLURY must be reconstituted with Sterile Water for Injection and then diluted in 0.9% sodium chloride injection; administer over 30 to 120 minutes; do not administer simultaneously with any other medication (FDA VEKLURY label, sections 2.5-2.6).",
+      "VEKLURY contains betadex sulfobutyl ether sodium (SBECD); in paediatric patients with renal immaturity/impairment may result in higher SBECD exposure (FDA VEKLURY label, section 8.4).",
+      "Remdesivir is a weak inhibitor of CYP3A; coadministration with chloroquine/hydroxychloroquine is not recommended due to antagonism (FDA VEKLURY label, sections 5.3, 7.1)."
+    ],
+    "brand_names": ["Veklury"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment of VEKLURY is recommended in patients with any degree of renal impairment, including those on dialysis; may be administered without regard to the timing of dialysis (FDA VEKLURY label, section 2.4).",
+    "hepatic_dose_adjustment": "No dosage adjustment of VEKLURY is recommended for patients with mild, moderate, or severe hepatic impairment (Child-Pugh Class A, B, or C) (FDA VEKLURY label, section 8.7).",
+    "administration_instructions": "For intravenous infusion only. Reconstitute each 100 mg vial with 19 mL Sterile Water for Injection, shake 30 seconds, allow to settle 2-3 minutes; then further dilute in 100 mL or 250 mL 0.9% sodium chloride injection infusion bag. Administer over 30 to 120 minutes. Do not administer simultaneously with any other medication. Prepared diluted solution stable 24 hours at room temperature or 48 hours refrigerated. Inspect reconstituted solution; discard vial if not completely dissolved. Monitor during infusion and for at least one hour after (FDA VEKLURY label, sections 2.5-2.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA VEKLURY label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA VEKLURY label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA VEKLURY label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA VEKLURY label, sections 5.1, 5.2 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA VEKLURY label, sections 2.3, 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA VEKLURY label, sections 5.3, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA VEKLURY label, sections 2.2, 5.1 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA VEKLURY label, sections 2.1, 5.1, 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA VEKLURY label, sections 5.1-5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA VEKLURY label, sections 2.1, 2.5 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA VEKLURY label, sections 5.1, 5.2 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA VEKLURY label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA VEKLURY label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA VEKLURY label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA VEKLURY label, sections 2.4, 8.1, 8.6, 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA VEKLURY label, sections 2.4, 2.5, 5.3, 7.1 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "brand_names",
+      "ref": "VEKLURY (remdesivir) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA VEKLURY labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA VEKLURY label, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA VEKLURY label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA VEKLURY label, sections 2.5 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter category)",
+    "food_interactions (none described; remdesivir is administered intravenously)"
+  ],
+  "notes": "The molecule is stored as 'Remdesivir'. Brand name Veklury. No boxed warning in the FDA labelling. Name alias: remdesivir (GS-5734)."
+}

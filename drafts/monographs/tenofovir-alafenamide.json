@@ -1,0 +1,188 @@
+{
+  "name": "Tenofovir Alafenamide",
+  "existing_id": "595bac83-4446-4232-9378-69af0955820e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Tenofovir alafenamide is a hepatitis B virus (HBV) nucleoside analog reverse transcriptase inhibitor. It is a prodrug of tenofovir, an acyclic nucleoside phosphonate (nucleotide) analog of adenosine 5'-monophosphate. Converted in vivo to tenofovir, which is phosphorylated to the active metabolite tenofovir diphosphate; tenofovir diphosphate inhibits HBV reverse transcriptase by competing with the natural substrate deoxyadenosine 5'-triphosphate and, after incorporation into viral DNA, causes DNA chain termination (FDA VEMLIDY label, sections 11 and 12.1/12.4).",
+    "indications": [
+      "Treatment of chronic hepatitis B virus (HBV) infection in adults and pediatric patients 6 years of age and older weighing at least 25 kg with compensated liver disease (FDA VEMLIDY label, section 1)"
+    ],
+    "contraindications": ["None (FDA VEMLIDY label, section 4)"],
+    "side_effects": [
+      "Headache (12%) (most common, >=10%) (FDA VEMLIDY label, section 6.1)",
+      "Abdominal pain (9%), cough (8%), back pain (6%), fatigue (6%), nausea (6%), arthralgia (5%), diarrhea (5%), dyspepsia (5%) (FDA VEMLIDY label, section 6.1 Table 1)",
+      "Additional adverse reactions occurring in <5%: vomiting, rash, flatulence (FDA VEMLIDY label, section 6.1)",
+      "Laboratory abnormalities (Grades 3-4, >=2%): ALT >5x ULN (8%), LDL-cholesterol (fasted) >190 mg/dL (6%), glycosuria >=3+ (5%), AST >5x ULN (3%), creatine kinase >=10x ULN (3%), serum amylase >2.0x ULN (3%) (FDA VEMLIDY label, section 6.1 Table 2)",
+      "Postmarketing: angioedema, urticaria; acute renal failure, acute tubular necrosis, proximal renal tubulopathy, and Fanconi syndrome (FDA VEMLIDY label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "One 25 mg tablet taken orally once daily with food (FDA VEMLIDY label, section 2.2).",
+      "geriatric": "No clinically significant differences in safety or efficacy observed between elderly subjects (>=65 years) and subjects 18 to <65 years; 89 subjects aged 65 and over received VEMLIDY in clinical trials (FDA VEMLIDY label, section 8.5).",
+      "paediatric": "Pediatric patients 6 years of age and older weighing at least 25 kg: one 25 mg tablet orally once daily with food. Safety and effectiveness not established in pediatric patients <6 years or weighing <25 kg (FDA VEMLIDY label, sections 2.2 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "VEMLIDY is a substrate of P-gp and BCRP; drugs that strongly affect P-gp/BCRP activity may alter absorption (FDA VEMLIDY label, section 7.1)",
+      "P-gp inducers (carbamazepine, oxcarbazepine, phenobarbital, phenytoin, rifabutin, rifampin, rifapentine, St John's wort) may decrease tenofovir alafenamide absorption; coadministration with carbamazepine requires increasing VEMLIDY to two tablets once daily; coadministration with oxcarbazepine, phenobarbital, phenytoin, rifabutin, rifampin, rifapentine, or St John's wort is not recommended (FDA VEMLIDY label, section 7.3 Table 4)",
+      "Drugs that reduce renal function or compete for active tubular secretion (e.g., acyclovir, cidofovir, ganciclovir, valacyclovir, valganciclovir, aminoglycosides, high-dose/multiple NSAIDs) may increase tenofovir concentrations and risk of adverse reactions (FDA VEMLIDY label, section 7.2)",
+      "No clinically significant interactions observed with: ethinyl estradiol, ledipasvir/sofosbuvir, midazolam, norgestimate, sertraline, sofosbuvir, sofosbuvir/velpatasvir, sofosbuvir/velpatasvir/voxilaprevir (FDA VEMLIDY label, section 7.4)"
+    ],
+    "monitoring": "Prior to initiation and during treatment on a clinically appropriate schedule, assess serum creatinine, estimated creatinine clearance, urine glucose, and urine protein in all patients; also assess serum phosphorus in patients with chronic kidney disease. Test for HIV-1 infection prior to initiation (VEMLIDY alone should not be used in HIV-1 infection). Monitor hepatic function after discontinuation (FDA VEMLIDY label, sections 2.1 and 5.1).",
+    "patient_counselling": "Take one 25 mg tablet once daily with food. Do not discontinue without medical advice; stopping anti-HBV therapy may cause severe acute exacerbation of hepatitis B with hepatic decompensation. Report symptoms of lactic acidosis/hepatotoxicity. VEMLIDY is not for HIV-1 infection alone; HIV testing is required before starting. Breastfeeding is not recommended in women with HIV due to HIV transmission risk (FDA VEMLIDY label, sections 2, 5.1, 8.2, 17).",
+    "warnings": [
+      "Boxed warning: posttreatment severe acute exacerbation of hepatitis B - discontinuation of anti-hepatitis B therapy may result in severe acute exacerbations of hepatitis B; monitor hepatic function closely with clinical and laboratory follow-up for at least several months after stopping; resumption of therapy may be warranted (FDA VEMLIDY label, Boxed Warning, section 5.1)",
+      "Risk of development of HIV-1 resistance in patients coinfected with HBV and HIV-1 - VEMLIDY alone is not recommended for treatment of HIV-1 infection (FDA VEMLIDY label, section 5.2)",
+      "New onset or worsening renal impairment - including acute renal failure, proximal renal tubulopathy, and Fanconi syndrome; assess renal parameters prior to and during treatment (FDA VEMLIDY label, section 5.3)",
+      "Lactic acidosis/severe hepatomegaly with steatosis, including fatal cases, reported with nucleoside analogs (FDA VEMLIDY label, section 5.4)"
+    ],
+    "precautions": [
+      "VEMLIDY is not recommended in patients with decompensated (Child-Pugh B or C) hepatic impairment (FDA VEMLIDY label, section 2.4)",
+      "VEMLIDY is not recommended in patients with ESRD (eGFR <15 mL/min) not receiving chronic hemodialysis (FDA VEMLIDY label, section 2.3)",
+      "HIV antibody testing should be offered to all HBV-infected patients before initiating therapy (FDA VEMLIDY label, section 5.2)",
+      "Patients taking tenofovir prodrugs with impaired renal function or taking nephrotoxic agents are at increased risk of renal-related adverse reactions (FDA VEMLIDY label, section 5.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe acute exacerbation of hepatitis B after discontinuation, including hepatic decompensation (FDA VEMLIDY label, Boxed Warning)",
+      "Acute renal failure, proximal renal tubulopathy, Fanconi syndrome (FDA VEMLIDY label, section 5.3)",
+      "Lactic acidosis/severe hepatomegaly with steatosis, including fatal cases (FDA VEMLIDY label, section 5.4)"
+    ],
+    "food_interactions": ["VEMLIDY should be taken with food (FDA VEMLIDY label, section 2.2)"],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data from the Antiretroviral Pregnancy Registry show no statistically significant difference in overall risk of birth defects for tenofovir alafenamide compared with the background rate (2.7%); estimated background miscarriage rate 15-20%. Animal studies showed no adverse developmental effects at exposures equal to or 51 times (rats/rabbits) the exposure at the recommended daily dose (FDA VEMLIDY label, section 8.1).",
+    "lactation_guidance": "Data from published literature report presence of tenofovir alafenamide and tenofovir in human milk; no adverse effects on breastfed child reported. Developmental and health benefits of breastfeeding should be considered along with mother's clinical need and any potential adverse effects (FDA VEMLIDY label, section 8.2).",
+    "overdose": "If overdose occurs, monitor patient for evidence of toxicity. Treatment consists of general supportive measures including monitoring of vital signs and observation of clinical status. Tenofovir is efficiently removed by hemodialysis with an extraction coefficient of approximately 54% (FDA VEMLIDY label, section 10).",
+    "pharmacokinetics": "Tenofovir alafenamide is hydrolyzed intracellularly by CES1 (hepatocytes) and cathepsin A (PBMCs) to tenofovir, which is phosphorylated to tenofovir diphosphate; CYP3A plays a minimal role. Absorption increased 1.65-fold with high-fat meal. No dosage adjustment required in mild/moderate/severe renal impairment or ESRD on chronic hemodialysis (administer after hemodialysis on dialysis days). Not recommended in ESRD not on chronic hemodialysis. No adjustment in mild hepatic impairment (Child-Pugh A); not recommended in decompensated (Child-Pugh B/C) (FDA VEMLIDY label, sections 2.3, 2.4, 8.6, 8.7, 12.3).",
+    "clinical_pearls": [
+      "VEMLIDY is a prodrug with lower systemic tenofovir exposure than tenofovir disoproxil fumarate, associated with improved renal and bone safety profiles (FDA VEMLIDY label, section 6.1).",
+      "Take with food; absorption increases with high-fat meal (FDA VEMLIDY label, section 12.3).",
+      "Monitor renal parameters (serum creatinine, eCrCl, urine glucose/protein; serum phosphorus in CKD) before and during treatment (FDA VEMLIDY label, section 2.1).",
+      "Do not discontinue abruptly without monitoring for HBV flare (FDA VEMLIDY label, Boxed Warning)."
+    ],
+    "brand_names": ["Vemlidy"],
+    "black_box_warnings": [
+      "Posttreatment severe acute exacerbation of hepatitis B: discontinuation of anti-hepatitis B therapy, including VEMLIDY, may result in severe acute exacerbations of hepatitis B (FDA VEMLIDY label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment required in patients with estimated creatinine clearance >=15 mL/min, or in ESRD (eCrCl <15 mL/min) receiving chronic hemodialysis (administer after hemodialysis on dialysis days). Not recommended in ESRD not receiving chronic hemodialysis (FDA VEMLIDY label, section 2.3).",
+    "hepatic_dose_adjustment": "No dosage adjustment required in mild hepatic impairment (Child-Pugh A). Not recommended in decompensated (Child-Pugh B or C) hepatic impairment (FDA VEMLIDY label, section 2.4).",
+    "administration_instructions": "Take one 25 mg tablet orally once daily with food (FDA VEMLIDY label, section 2.2). On hemodialysis days, administer after completion of hemodialysis treatment (FDA VEMLIDY label, section 2.3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA VEMLIDY label, sections 11 and 12.1/12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA VEMLIDY label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA VEMLIDY label, section 4 (None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA VEMLIDY label, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA VEMLIDY label, sections 2.2, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA VEMLIDY label, sections 7.1-7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA VEMLIDY label, sections 2.1 and 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA VEMLIDY label, sections 2, 5.1, 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA VEMLIDY label, Boxed Warning and sections 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA VEMLIDY label, sections 2.3, 2.4 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA VEMLIDY label, Boxed Warning and sections 5.3 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA VEMLIDY label, section 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA VEMLIDY label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA VEMLIDY label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA VEMLIDY label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA VEMLIDY label, sections 2.3, 2.4, 8.6, 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA VEMLIDY label, sections 2.2, 6.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "brand_names",
+      "ref": "VEMLIDY (tenofovir alafenamide) listed on DailyMed as brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA VEMLIDY label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA VEMLIDY label, section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA VEMLIDY label, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA VEMLIDY label, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the label uses modern labeling and does not state a letter category)"
+  ],
+  "notes": "The molecule is stored as 'Tenofovir Alafenamide'. Brand name Vemlidy. The existing row lists 'Biktarvy' (a combination product containing bictegravir/emtricitabine/tenofovir alafenamide) as brand_names; Vemlidy is the single-agent TAF product for HBV. Name alias: tenofovir alafenamide (TAF, GS-7340)."
+}

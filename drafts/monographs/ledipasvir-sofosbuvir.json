@@ -1,0 +1,200 @@
+{
+  "name": "Ledipasvir/Sofosbuvir",
+  "existing_id": "dbf4ef61-61ce-4626-9373-be643256ff54",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "HARVONI is a fixed-dose combination of ledipasvir, a hepatitis C virus (HCV) NS5A inhibitor, and sofosbuvir, an HCV nucleotide analog NS5B polymerase inhibitor. Ledipasvir inhibits the HCV NS5A protein required for viral replication; sofosbuvir is a nucleotide prodrug metabolized to the active uridine analog triphosphate GS-461203, which is incorporated into HCV RNA by NS5B polymerase and acts as a chain terminator. GS-461203 is neither an inhibitor of human DNA/RNA polymerases nor of mitochondrial RNA polymerase (HARVONI label, sections 12.1 and 12.4).",
+    "indications": [
+      "Chronic HCV in adults and pediatric patients 3 years of age and older: genotype 1, 4, 5, or 6 infection without cirrhosis or with compensated cirrhosis (HARVONI label, section 1)",
+      "Genotype 1 infection with decompensated cirrhosis, in combination with ribavirin (HARVONI label, section 1)",
+      "Genotype 1 or 4 infection in liver transplant recipients without cirrhosis or with compensated cirrhosis, in combination with ribavirin (HARVONI label, section 1)"
+    ],
+    "contraindications": [
+      "If administered with ribavirin, all contraindications to ribavirin also apply to HARVONI combination therapy (HARVONI label, section 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence >=10%, all grades): fatigue, headache, asthenia (HARVONI label, section 6.1)",
+      "In 8-, 12-, and 24-week trials: fatigue 16%/13%/18%; headache 11%/14%/17%; nausea 6%/7%/9%; diarrhea 4%/3%/7%; insomnia 3%/5%/6% (HARVONI label, section 6.1, Table 4)",
+      "In genotype 4, 5, or 6 (12 weeks): asthenia 18%, headache 14%, fatigue 10% (HARVONI label, section 6.1)",
+      "In treatment-experienced subjects with cirrhosis: asthenia 31% (24-week HARVONI) / 36% (12-week HARVONI+RBV); headache 29%/13%; fatigue 18%/4%; cough 5%/11%; myalgia 9%/4%; dyspnea 3%/9%; irritability 8%/7%; dizziness 5%/1% (HARVONI label, section 6.1, Table 5)",
+      "In HCV/HIV-1 coinfected subjects: headache 20%, fatigue 17% (HARVONI label, section 6.1)",
+      "Postmarketing: serious symptomatic bradycardia with amiodarone; skin rashes sometimes with blisters or angioedema-like swelling; angioedema (HARVONI label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "One tablet (90 mg ledipasvir and 400 mg sofosbuvir) taken orally once daily with or without food. Treatment duration by genotype/patient population: genotype 1 treatment-naive without cirrhosis or with compensated cirrhosis: 12 weeks (8 weeks may be considered in treatment-naive genotype 1 without cirrhosis with pretreatment HCV RNA <6 million IU/mL); genotype 1 treatment-experienced without cirrhosis: 12 weeks; genotype 1 treatment-experienced with compensated cirrhosis: 24 weeks (12 weeks of HARVONI + ribavirin may be considered); genotype 1 treatment-naive and treatment-experienced with decompensated cirrhosis: HARVONI + ribavirin 12 weeks; genotype 1 or 4 treatment-naive and treatment-experienced liver transplant recipients without cirrhosis or with compensated cirrhosis: HARVONI + ribavirin 12 weeks; genotype 4, 5, or 6 treatment-naive and treatment-experienced without cirrhosis or with compensated cirrhosis: 12 weeks (HARVONI label, sections 2.2 and 2.3).",
+      "geriatric": "No dosage adjustment warranted in geriatric patients (HARVONI label, sections 8.5 and 12.3).",
+      "paediatric": "Pediatric patients 3 years and older: weight-based once daily with or without food - at least 35 kg: one 90 mg/400 mg tablet (or two 45 mg/200 mg tablets or two 45 mg/200 mg packets of pellets) daily (90 mg/400 mg per day); 17 to less than 35 kg: one 45 mg/200 mg tablet (or one 45 mg/200 mg packet of pellets) daily; less than 17 kg: one 33.75 mg/150 mg packet of pellets daily. Safety and efficacy not established in patients less than 3 years of age (HARVONI label, sections 2.4, 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "P-gp inducers (e.g., rifampin, St. John's wort): not recommended (may decrease ledipasvir and sofosbuvir concentrations) (HARVONI label, sections 5.3 and 7.2)",
+      "Amiodarone: not recommended (serious symptomatic bradycardia); if required, cardiac monitoring (HARVONI label, sections 5.2 and 7.2)",
+      "Antacids: separate administration by 4 hours (HARVONI label, section 7.2)",
+      "H2-receptor antagonists: may be administered simultaneously with or 12 hours apart at doses not exceeding famotidine 40 mg twice daily (HARVONI label, section 7.2)",
+      "Proton-pump inhibitors: doses comparable to omeprazole 20 mg or lower can be administered simultaneously under fasted conditions (HARVONI label, section 7.2)",
+      "Anticonvulsants (carbamazepine, phenytoin, phenobarbital): not recommended (HARVONI label, section 7.2)",
+      "Antimycobacterials (rifampin, rifabutin, rifapentine): not recommended (HARVONI label, section 7.2)",
+      "Digoxin: therapeutic concentration monitoring recommended (HARVONI label, section 7.2)",
+      "HIV antiretrovirals: monitor for tenofovir-associated adverse reactions with tenofovir DF-containing regimens without an HIV PI/ritonavir or cobicistat; atazanavir/ritonavir and darunavir/ritonavir increase ledipasvir and tenofovir exposures (HARVONI label, sections 7.2 and 12.3)",
+      "Clearance of HCV may change hepatic function and affect concomitant medications (e.g., warfarin INR, blood glucose); frequent monitoring recommended (HARVONI label, section 7.2)"
+    ],
+    "monitoring": "Test all patients for HBV infection (HBsAg and anti-HBc) before initiating; monitor HCV/HBV coinfected patients for HBV reactivation and hepatitis flare during treatment and post-treatment follow-up; monitor for bradycardia with amiodarone; monitor INR/blood glucose with concomitant medications; hepatic laboratory monitoring as clinically indicated in decompensated cirrhosis (HARVONI label, sections 2.1, 5.1, 5.2, 7.2, 8.7).",
+    "patient_counselling": "Take once daily with or without food; tablets may be crushed? pellets sprinkled on non-acidic soft food; do not chew pellets; report symptoms of HBV reactivation; report new cardiac symptoms (bradycardia) especially with amiodarone; pregnancy avoidance if ribavirin co-administered; adherence to full course (HARVONI label, sections 2.5 and 17).",
+    "warnings": [
+      "BOXED WARNING: Risk of hepatitis B virus (HBV) reactivation in patients coinfected with HCV and HBV, which may result in fulminant hepatitis, hepatic failure, and death (HARVONI label, Boxed Warning)",
+      "Serious symptomatic bradycardia when coadministered with amiodarone, including fatal cardiac arrest and cases requiring pacemaker intervention (HARVONI label, section 5.2)",
+      "Risk of reduced therapeutic effect due to use with P-gp inducers (HARVONI label, section 5.3)",
+      "Risks associated with ribavirin combination treatment (including pregnancy avoidance) when co-administered (HARVONI label, section 5.4)"
+    ],
+    "precautions": [
+      "If administered with ribavirin, all warnings and precautions for ribavirin also apply (HARVONI label, section 5.4)",
+      "Test all patients for evidence of current or prior HBV infection before initiating (HARVONI label, section 2.1)",
+      "No safety data in subjects with both decompensated cirrhosis and severe renal impairment, including those on dialysis; no safety data in pediatric patients with renal impairment (HARVONI label, section 8.4 and 8.6)"
+    ],
+    "serious_adverse_reactions": [
+      "HBV reactivation (fulminant hepatitis, hepatic failure, death) in HCV/HBV coinfected patients (HARVONI label, Boxed Warning and section 5.1)",
+      "Serious symptomatic bradycardia with amiodarone (HARVONI label, section 5.2)",
+      "Depression and suicidal ideation (less than 1%) with sofosbuvir-containing regimens (HARVONI label, section 6.1)"
+    ],
+    "food_interactions": [
+      "May be taken with or without food; high-fat meal increases sofosbuvir AUC ~2-fold but response rates similar (HARVONI label, section 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "If HARVONI is administered with ribavirin, the combination regimen is contraindicated in pregnant women and in men whose female partners are pregnant (ribavirin pregnancy avoidance). No adequate human data to establish whether HARVONI alone poses a risk; animal studies showed no adverse developmental outcomes with ledipasvir or sofosbuvir at exposures greater than those in humans at the recommended dose (HARVONI label, section 8.1).",
+    "lactation_guidance": "It is not known whether ledipasvir or sofosbuvir or their metabolites are present in human breast milk; when administered to lactating rats, ledipasvir and sofosbuvir metabolite (GS-331007) detected without clear effects on nursing pups (HARVONI label, section 8.2). If ribavirin co-administered, ribavirin nursing mother information applies.",
+    "overdose": "No specific antidote; treatment consists of general supportive measures including monitoring of vital signs and clinical status; hemodialysis unlikely to remove ledipasvir (highly protein bound) but can remove GS-331007 with 53% extraction ratio (HARVONI label, section 10).",
+    "pharmacokinetics": "Ledipasvir: Tmax 4-4.5 hours, >99.8% protein bound, slow oxidative metabolism, terminal half-life 47 hours, major route biliary excretion (86% feces, 1% urine). Sofosbuvir: Tmax ~0.8-1 hour, 61-65% protein bound, extensively metabolized in liver to GS-461203, terminal half-life 0.5 hours; metabolite GS-331007 half-life 27 hours, major elimination renal (HARVONI label, section 12.3). No dosage adjustment in renal impairment including ESRD on dialysis; no dosage adjustment in hepatic impairment (Child-Pugh A, B, or C).",
+    "clinical_pearls": [
+      "Fixed-dose combination for HCV genotypes 1, 4, 5, 6; genotype 1 with decompensated cirrhosis or post-transplant requires ribavirin co-administration (HARVONI label, section 1)",
+      "HBV reactivation boxed warning: screen all patients with HBsAg and anti-HBc before starting (HARVONI label)",
+      "No dosage adjustment in renal impairment including ESRD on dialysis (HARVONI label, section 2.6)",
+      "Oral pellets available for pediatric patients who cannot swallow tablets (HARVONI label, section 2.5)"
+    ],
+    "brand_names": ["Harvoni"],
+    "black_box_warnings": [
+      "Risk of hepatitis B virus (HBV) reactivation in patients coinfected with HCV and HBV, which may result in fulminant hepatitis, hepatic failure, and death. Test all patients for evidence of current or prior HBV infection before initiating treatment (HARVONI label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment recommended in patients with any degree of renal impairment, including end stage renal disease on dialysis (HARVONI label, section 2.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment recommended for mild, moderate, or severe hepatic impairment (Child-Pugh Class A, B, or C) (HARVONI label, section 8.7).",
+    "administration_instructions": "Tablets (90 mg/400 mg or 45 mg/200 mg) or oral pellets taken once daily with or without food; pellets sprinkled on non-acidic soft food at or below room temperature, taken within 30 minutes without chewing; store at room temperature (HARVONI label, sections 2.5, 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "HARVONI (ledipasvir and sofosbuvir) label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "indications",
+      "ref": "HARVONI label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "contraindications",
+      "ref": "HARVONI label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "side_effects",
+      "ref": "HARVONI label, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "dosage",
+      "ref": "HARVONI label, sections 2.2, 2.3, and 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "interactions",
+      "ref": "HARVONI label, sections 5.2, 5.3, and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "monitoring",
+      "ref": "HARVONI label, sections 2.1, 5.1, 5.2, 7.2, and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "HARVONI label, sections 2.5 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "warnings",
+      "ref": "HARVONI label, Boxed Warning and sections 5.1 to 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "precautions",
+      "ref": "HARVONI label, sections 5.4, 8.4, and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "HARVONI label, Boxed Warning and sections 5.1, 5.2, and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "HARVONI label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "HARVONI label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "HARVONI label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "overdose",
+      "ref": "HARVONI label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "HARVONI label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "HARVONI label, sections 1, 2.5, 2.6, and Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "brand_names",
+      "ref": "HARVONI brand name on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "HARVONI label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "HARVONI label, section 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "HARVONI label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "HARVONI label, sections 2.5 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (narrative adult regimen provided in fields.dosage.adult)",
+    "pediatric_dosing (narrative paediatric regimen provided in fields.dosage.paediatric)",
+    "pregnancy_category (not stated in the HARVONI label)"
+  ],
+  "notes": "Ledipasvir/Sofosbuvir is the fixed-dose combination HARVONI (Gilead). Brand name Harvoni. Content drafted from the FDA/DailyMed label (updated 12/2024)."
+}

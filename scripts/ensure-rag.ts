@@ -29,7 +29,7 @@
  *
  * Usage
  * -----
- *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N] [--stg-dir PATH] [--no-stg]
+ *   npx tsx scripts/ensure-rag.ts [--dry-run] [--limit N] [--batch N] [--embed-batch N] [--reset] [--only-missing] [--pace-ms N] [--stg-dir PATH] [--no-stg] [--reembed NAMES] [--reembed-drafts]
  *
  *   --batch N        documents flushed per upsert (default 50)
  *   --embed-batch N  texts per embedding request, max 100 (default 100)
@@ -47,6 +47,14 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, resolve } from 'node:path'
 import { embedTexts, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
 import { buildStgChunks, type StgDoc } from '../src/server/stgMarkdown.js'
+import {
+  buildChunks,
+  contentHash,
+  decideIngest,
+  prioritizeChanged,
+  type Chunk,
+  type Monograph,
+} from '../src/server/ingestChunks.js'
 
 interface Args {
   dryRun: boolean
@@ -58,26 +66,8 @@ interface Args {
   paceMs: number
   includeStg: boolean
   stgDir: string
-}
-
-interface Monograph {
-  id: string
-  name: string
-  generic_name: string | null
-  drug_class: string | null
-  indications: string[] | null
-  contraindications: string[] | null
-  side_effects: string[] | null
-  dosage: unknown
-  interactions: string[] | null
-  monitoring: string | null
-  patient_counselling: string | null
-}
-
-interface Chunk {
-  section: string
-  text: string
-  embedding?: number[] | null
+  reembed: string[]
+  reembedDrafts: boolean
 }
 
 /** One upsert target: a monograph or an STG document. */
@@ -89,6 +79,8 @@ interface DocRow {
   label: string
   /** NULL for non-drug corpora. */
   monographId: string | null
+  /** Fingerprint of the chunk texts, so a changed monograph can be detected. */
+  contentHash: string
   chunks: Chunk[]
   error?: string
 }
@@ -104,6 +96,8 @@ function parseArgs(argv: string[]): Args {
     paceMs: 60000,
     includeStg: true,
     stgDir: resolve(process.cwd(), 'src', 'data', 'essentialMedicine'),
+    reembed: [],
+    reembedDrafts: false,
   }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
@@ -116,56 +110,14 @@ function parseArgs(argv: string[]): Args {
     else if (a === '--embed-batch') args.embedBatch = Math.min(Number(argv[++i]) || 100, 100)
     else if (a === '--pace-ms') args.paceMs = Math.max(Number(argv[++i]) || 60000, 0)
     else if (a === '--stg-dir') args.stgDir = resolve(process.cwd(), argv[++i] || '.')
+    else if (a === '--reembed')
+      args.reembed = (argv[++i] || '')
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean)
+    else if (a === '--reembed-drafts') args.reembedDrafts = true
   }
   return args
-}
-
-function list(value: unknown): string[] {
-  if (Array.isArray(value)) return value.map((v) => String(v)).filter(Boolean)
-  if (typeof value === 'string' && value.trim()) return [value.trim()]
-  return []
-}
-
-function stringifyDosage(dosage: unknown): string {
-  if (!dosage) return ''
-  if (typeof dosage === 'string') return dosage
-  if (typeof dosage !== 'object') return String(dosage)
-  return Object.entries(dosage as Record<string, unknown>)
-    .filter(([, v]) => v != null && String(v).trim())
-    .map(([k, v]) => `${k}: ${String(v).trim()}`)
-    .join('; ')
-}
-
-/** Turn one monograph row into sectioned chunks (empty sections dropped). */
-export function buildChunks(row: Monograph): Chunk[] {
-  const heading = `${row.name}${row.generic_name && row.generic_name !== row.name ? ` (${row.generic_name})` : ''}`
-  const klass = row.drug_class ? `Drug class: ${row.drug_class}` : ''
-  const sections: Chunk[] = [
-    { section: 'overview', text: [heading, klass].filter(Boolean).join('. ') },
-    {
-      section: 'indications',
-      text: `Indications for ${row.name}: ${list(row.indications).join('; ')}`,
-    },
-    {
-      section: 'contraindications',
-      text: `Contraindications for ${row.name}: ${list(row.contraindications).join('; ')}`,
-    },
-    {
-      section: 'side_effects',
-      text: `Side effects of ${row.name}: ${list(row.side_effects).join('; ')}`,
-    },
-    { section: 'dosage', text: `Dosage of ${row.name}: ${stringifyDosage(row.dosage)}` },
-    {
-      section: 'interactions',
-      text: `Interactions of ${row.name}: ${list(row.interactions).join('; ')}`,
-    },
-    { section: 'monitoring', text: `Monitoring for ${row.name}: ${row.monitoring ?? ''}` },
-    {
-      section: 'counselling',
-      text: `Patient counselling for ${row.name}: ${row.patient_counselling ?? ''}`,
-    },
-  ]
-  return sections.filter((c) => !/:\s*$/.test(c.text) && c.text.trim().length > heading.length + 2)
 }
 
 // STG markdown parsing lives in src/server/stgMarkdown.ts (unit-tested).
@@ -228,13 +180,42 @@ async function main() {
 
   const targets = args.limit ? monographs.slice(0, args.limit) : monographs
 
-  const monographDocs: DocRow[] = targets.map((row) => ({
-    source: 'monograph',
-    sourceRef: row.id,
-    label: row.name,
-    monographId: row.id,
-    chunks: buildChunks(row),
-  }))
+  // --reembed / --reembed-drafts: force these monographs to be re-embedded even
+  // when --only-missing would skip them (their content changed after the first
+  // ingest). Their stale chunks are deleted before embedding so a shorter new
+  // version cannot leave orphaned high-index chunks behind.
+  const reembedSet = new Set<string>(args.reembed)
+  if (args.reembedDrafts) {
+    const draftDir = resolve(process.cwd(), 'drafts', 'monographs')
+    if (existsSync(draftDir)) {
+      for (const f of readdirSync(draftDir).filter((x) => x.endsWith('.json'))) {
+        try {
+          const d = JSON.parse(readFileSync(resolve(draftDir, f), 'utf8'))
+          if (typeof d?.name === 'string') reembedSet.add(d.name)
+        } catch {
+          /* skip malformed draft */
+        }
+      }
+    }
+  }
+  if (reembedSet.size) {
+    console.log(
+      `[ensure-rag] --reembed: ${reembedSet.size} monograph(s) will be re-embedded ` +
+        `(${[...reembedSet].slice(0, 6).join(', ')}${reembedSet.size > 6 ? '…' : ''})`,
+    )
+  }
+
+  const monographDocs: DocRow[] = targets.map((row) => {
+    const chunks = buildChunks(row)
+    return {
+      source: 'monograph',
+      sourceRef: row.id,
+      label: row.name,
+      monographId: row.id,
+      contentHash: contentHash(chunks),
+      chunks,
+    }
+  })
 
   const stgDocs: DocRow[] = args.includeStg
     ? loadStgDocs(args.stgDir).map((d) => ({
@@ -242,6 +223,7 @@ async function main() {
         sourceRef: d.slug,
         label: d.title,
         monographId: null,
+        contentHash: contentHash(d.chunks),
         chunks: d.chunks,
       }))
     : []
@@ -253,11 +235,12 @@ async function main() {
     // (Supabase default 1000 — even .limit(100000)), so an un-paged read stops
     // seeing coverage once the table outgrows it and re-embeds settled docs.
     const have = new Set<string>()
+    const storedHash = new Map<string, string>()
     const pageSize = 1000
     for (let from = 0; ; from += pageSize) {
       const { data: page, error: existsErr } = await supabase
         .from('knowledge_chunks')
-        .select('source, source_ref')
+        .select('source, source_ref, metadata')
         .order('id', { ascending: true })
         .range(from, from + pageSize - 1)
       if (existsErr) {
@@ -266,19 +249,33 @@ async function main() {
         )
         process.exit(1)
       }
-      for (const r of (page ?? []) as { source: string; source_ref: string }[]) {
-        have.add(`${r.source}:${r.source_ref}`)
+      for (const r of (page ?? []) as { source: string; source_ref: string; metadata?: any }[]) {
+        const key = `${r.source}:${r.source_ref}`
+        have.add(key)
+        const h = r.metadata?.content_hash
+        if (typeof h === 'string' && !storedHash.has(key)) storedHash.set(key, h)
       }
       if (!page || page.length < pageSize) break
     }
     console.log(`[ensure-rag] --only-missing: ${have.size} documents already in knowledge_chunks`)
     const before = docs.length
-    docs = docs.filter((d) => !have.has(`${d.source}:${d.sourceRef}`))
+    const { selected } = decideIngest(docs, have, storedHash, reembedSet)
+    docs = selected
     console.log(
       `[ensure-rag] --only-missing: ${before} → ${docs.length} documents to embed ` +
         `(${docs.filter((d) => d.source === 'monograph').length} monographs, ` +
         `${docs.filter((d) => d.source === 'stg').length} stg)`,
     )
+  }
+
+  // Prioritise changed documents: their current corpus text is known-wrong, and
+  // they are few, so they win the daily quota over not-yet-covered documents.
+  if (reembedSet.size) {
+    const changed = docs.filter((d) => d.source === 'monograph' && reembedSet.has(d.label))
+    docs = prioritizeChanged(docs, reembedSet)
+    if (changed.length) {
+      console.log(`[ensure-rag] prioritising ${changed.length} changed monograph(s) for embedding`)
+    }
   }
 
   // --- Build all chunks up front ------------------------------------------
@@ -383,7 +380,7 @@ async function main() {
           embedding: args.dryRun ? null : c.embedding,
           embedding_model: EMBEDDING_MODEL,
           run_id: runId,
-          metadata: { section: c.section, source: p.source },
+          metadata: { section: c.section, source: p.source, content_hash: p.contentHash },
         })
       })
     }
@@ -402,6 +399,21 @@ async function main() {
       } else {
         chunksWritten += rows.length
         docsProcessed += group.filter((g) => !g.error).length
+        // For re-embedded monographs, drop orphaned high-index chunks left by a
+        // previous (longer) version so stale sections cannot linger.
+        if (reembedSet.size) {
+          for (const p of group) {
+            if (p.error || p.source !== 'monograph' || !reembedSet.has(p.label)) continue
+            const { error: delErr } = await supabase
+              .from('knowledge_chunks')
+              .delete()
+              .eq('source', 'monograph')
+              .eq('source_ref', p.sourceRef)
+              .gte('chunk_index', p.chunks.length)
+            if (delErr)
+              console.warn(`[ensure-rag] orphan cleanup failed for ${p.label}: ${delErr.message}`)
+          }
+        }
       }
     }
     console.log(
@@ -413,6 +425,7 @@ async function main() {
     run_id: runId,
     dry_run: args.dryRun,
     only_missing: args.onlyMissing,
+    reembed: reembedSet.size,
     pace_ms: args.paceMs,
     embedding_model: EMBEDDING_MODEL,
     generated_at: new Date().toISOString(),

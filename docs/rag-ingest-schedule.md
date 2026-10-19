@@ -86,6 +86,30 @@ Guidelines, ingested from markdown under `src/data/essentialMedicine/`:
 - The corpus is empty until authoritative WHO EML / national STG content is
   added (see `src/data/essentialMedicine/README.md`).
 
+## Refreshing monograph content (drafts → DB → corpus)
+
+Monograph text changes after the corpus was embedded, so a plain `--only-missing`
+run keeps serving the **old** chunks. The refresh loop:
+
+```
+drafts/monographs/<drug>.json        # sourced draft (agents write these)
+  -> scripts/apply-monograph-drafts.ts   # merge into drug_monographs
+  -> ensure-rag.ts --reembed-drafts      # re-embed only what changed
+```
+
+- `apply-monograph-drafts.ts` merges non-null draft fields onto the matching row
+  (by `existing_id`, then `name`), never inserts rows, refuses to overwrite a
+  `verified` row without `--force`, and sets `content_status='needs_review'`.
+- `--reembed` / `--reembed-drafts` in `ensure-rag.ts` force those documents to be
+  re-embedded. It is **content-hash aware**: each chunk records
+  `metadata.content_hash`, so a document whose text is unchanged is skipped and
+  costs no quota. Changed documents are embedded first — their current corpus
+  text is known-wrong and they are few.
+- Stale high-index chunks left by a longer previous version are deleted after the
+  new chunks are written, so a shortened monograph cannot leave orphan sections.
+- The hourly cron runs `--reembed-drafts`, so an applied draft is picked up
+  automatically — once — on the next productive run.
+
 ## Verification
 
 ```

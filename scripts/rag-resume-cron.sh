@@ -34,7 +34,11 @@ before=$(date +%s)
 echo "=== $(date -Is) rag-resume start ===" >>logs/rag-resume.log
 
 # Exit code 1 is the normal "daily quota exhausted" stop — not an error here.
-npx tsx scripts/ensure-rag.ts --only-missing --embed-batch 100 --pace-ms 65000 \
+# --reembed-drafts picks up monographs whose content changed after they were
+# first embedded (e.g. a sourced draft applied via apply-monograph-drafts.ts).
+# It is content-hash aware: a document whose text is unchanged is skipped, so
+# this costs nothing on later runs.
+npx tsx scripts/ensure-rag.ts --only-missing --reembed-drafts --embed-batch 100 --pace-ms 65000 \
   >>logs/rag-resume.log 2>&1 || true
 
 # Only stamp when OUR run actually embedded chunks (report mtime >= start).

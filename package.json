@@ -28,7 +28,10 @@
     "rag:verify": "node scripts/verify-rag.mjs",
     "rag:dry": "bash scripts/ensure-rag.sh --dry-run",
     "rag:import": "bash scripts/import-cases.sh",
-    "rag:weekly": "bash scripts/train-rag-weekly.sh"
+    "rag:weekly": "bash scripts/train-rag-weekly.sh",
+    "wa:link": "tsx scripts/whatsapp-baileys.ts",
+    "wa:dry": "tsx scripts/whatsapp-baileys.ts --dry-run",
+    "wa:logout": "tsx scripts/whatsapp-baileys.ts --logout"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
@@ -39,6 +42,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "@vitejs/plugin-react": "^5.0.4",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
     "@xyflow/react": "^12.11.0",
     "browser-image-compression": "^2.0.2",
     "clsx": "^2.1.1",
@@ -53,6 +57,7 @@
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
     "multer": "^2.2.0",
+    "qrcode-terminal": "^0.12.0",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "react-markdown": "^10.1.0",
@@ -85,6 +90,7 @@
     "@types/multer": "^2.1.0",
     "@types/node": "^22.14.0",
     "@types/pg": "^8.20.3",
+    "@types/qrcode-terminal": "^0.12.2",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@types/web-push": "^3.6.4",

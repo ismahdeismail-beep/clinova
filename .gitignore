@@ -38,6 +38,10 @@ firebase-applet-config.json
 .vercel
 scripts/seed-progress.json
 
+# WhatsApp (open-source/Baileys) device pairing state — regenerable, and a
+# stolen copy would let someone impersonate the linked device.
+.whatsapp-auth
+
 # Test artifacts
 test-results/
 playwright-report/

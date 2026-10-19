@@ -3,6 +3,10 @@
 `POST /api/whatsapp/incoming` turns an inbound WhatsApp text into a reply
 grounded in the `knowledge_chunks` corpus (retrieval-augmented generation).
 
+> **No Meta account?** There is a second, open-source transport: a QR-linked
+> Baileys client that answers from this same path with no business account,
+> token or public webhook — see [`docs/whatsapp-open-source.md`](./whatsapp-open-source.md).
+
 ## How it works
 
 ```

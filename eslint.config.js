@@ -36,4 +36,13 @@ export default [
       '@typescript-eslint/no-require-imports': 'off',
     },
   },
+  {
+    // scripts/** are Node CLIs and build/ingest tools — they contain no React,
+    // so hook rules can only misfire. (Baileys' `useMultiFileAuthState`, for
+    // example, looks exactly like a hook.)
+    files: ['scripts/**/*.{ts,tsx,js,mjs,cjs}'],
+    rules: Object.fromEntries(
+      Object.keys(reactHooks.configs.recommended.rules).map((rule) => [rule, 'off']),
+    ),
+  },
 ]

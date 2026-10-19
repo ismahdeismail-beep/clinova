@@ -7,7 +7,8 @@
 
 import { adminSupabase } from './adminClient.js'
 import { embedText, EMBEDDING_MODEL, generateContentWithFallback } from './aiRouter.js'
-import { buildRagPrompt, rankByCosine } from './ragCore.js'
+import { buildRagPrompt } from './ragCore.js'
+import { createChunkIndex, fetchAllPages } from './chunkIndex.js'
 
 export { buildRagPrompt, cosine, formatChunks, ragPromptTemplate, rankByCosine } from './ragCore.js'
 
@@ -34,8 +35,6 @@ export interface RetrieveOptions {
   source?: string
   /** Number of chunks to keep. */
   limit?: number
-  /** How many rows to pull from the DB before ranking in-process. */
-  candidateLimit?: number
 }
 
 interface ChunkDbRow {
@@ -50,28 +49,49 @@ interface ChunkDbRow {
 const NO_CHUNKS_REPLY =
   "I don't have indexed knowledge-base excerpts covering that yet — the Clinova knowledge base is still being built, so I can't ground an answer right now. Please try again later, or ask about a specific medicine."
 
-/** Cosine top-k over knowledge_chunks using the ingestion embedding model. */
+/** How long a loaded corpus stays fresh before the next query reloads it. */
+const INDEX_TTL_MS = Number(process.env.RAG_INDEX_TTL_MS || 600_000)
+
+async function loadAllChunkRows(): Promise<ChunkDbRow[]> {
+  if (!adminSupabase) {
+    throw new Error('Supabase is not configured (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY)')
+  }
+  const client = adminSupabase
+  return fetchAllPages<ChunkDbRow>(async (from, to) => {
+    const { data, error } = await client
+      .from('knowledge_chunks')
+      // select('*') keeps this working before/after the `source` column lands
+      // (migration 00021); the value is read defensively below.
+      .select('*')
+      .eq('embedding_model', EMBEDDING_MODEL)
+      .order('created_at', { ascending: true })
+      .order('id', { ascending: true })
+      .range(from, to)
+    if (error) throw new Error(`knowledge_chunks query failed: ${error.message}`)
+    return (data ?? []) as ChunkDbRow[]
+  })
+}
+
+const chunkIndex = createChunkIndex<ChunkDbRow>(loadAllChunkRows, { ttlMs: INDEX_TTL_MS })
+
+/**
+ * Cosine top-k over knowledge_chunks using the ingestion embedding model.
+ *
+ * Ranking happens in-process against the cached corpus (see chunkIndex.ts), so
+ * the whole table is searched rather than a PostgREST-truncated first page.
+ */
 export async function retrieveChunks(
   queryEmbedding: number[],
   opts: RetrieveOptions = {},
 ): Promise<RagChunk[]> {
-  if (!adminSupabase) {
-    throw new Error('Supabase is not configured (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY)')
-  }
-  const { monographId, source, limit = 3, candidateLimit = 1000 } = opts
-  let query = adminSupabase
-    .from('knowledge_chunks')
-    // select('*') keeps this working before/after the `source` column lands
-    // (migration 00021); the value is read defensively below.
-    .select('*')
-    .eq('embedding_model', EMBEDDING_MODEL)
-    .limit(candidateLimit)
-  if (monographId) query = query.eq('monograph_id', monographId)
-  const { data, error } = await query
-  if (error) throw new Error(`knowledge_chunks query failed: ${error.message}`)
-  const rows = (data ?? []) as ChunkDbRow[]
-  const candidates = source ? rows.filter((r) => (r.source ?? 'monograph') === source) : rows
-  return rankByCosine(queryEmbedding, candidates, limit).map(({ item, similarity }) => ({
+  const { monographId, source, limit = 3 } = opts
+  const ranked = await chunkIndex.search(queryEmbedding, {
+    limit,
+    filter: (r) =>
+      (!monographId || r.monograph_id === monographId) &&
+      (!source || (r.source ?? 'monograph') === source),
+  })
+  return ranked.map(({ item, similarity }) => ({
     id: item.id,
     chunk_text: item.chunk_text,
     section: item.metadata?.section ?? null,

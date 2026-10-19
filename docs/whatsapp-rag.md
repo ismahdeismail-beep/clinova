@@ -25,6 +25,14 @@ The retrieval/ranking math (`src/server/ragCore.ts`) is shared with the weekly
 evaluator (`scripts/train-rag-weekly.ts`), so "what the bot answers with" and
 "what the weekly loop scores" use identical code.
 
+**Retrieval index:** `retrieveChunks` ranks in-process against a cached copy of
+the whole corpus (`src/server/chunkIndex.ts`). The cache is not just an
+optimisation — PostgREST truncates any single select at `max-rows` (Supabase
+default 1000, even for an explicit `.limit(100000)`), so a per-query read would
+silently rank against an arbitrary 1000-row slice and miss most of the corpus.
+Rows are read page-by-page once, then reused for `RAG_INDEX_TTL_MS` (default
+10 min), which also avoids re-downloading ~24 MB of vectors per message.
+
 **Corpus completeness:** retrieval only returns chunks that already exist. While
 the free-tier ingest is still filling, an uncovered question gets a graceful
 "knowledge base still being built" reply (`no_chunks: true`) rather than a
@@ -53,6 +61,7 @@ so STG chunks compete on similarity with monographs; pass
 | `WHATSAPP_GRAPH_VERSION`                 | Graph API version (default `v21.0`).                              |
 | `WHATSAPP_RATE_LIMIT_MAX` / `_WINDOW_MS` | Per-phone throttle (default 10 / 60 s).                           |
 | `WHATSAPP_RAG_TOP_K`                     | Chunks to ground each answer in (default 3).                      |
+| `RAG_INDEX_TTL_MS`                       | How long the in-memory corpus stays fresh (default 600000).       |
 
 Set the Meta webhook callback URL to `https://<your-host>/api/whatsapp/incoming`
 and subscribe to the `messages` field.
@@ -94,4 +103,4 @@ curl -s -X POST http://localhost:3000/api/whatsapp/incoming \
   `user_id` is `NOT NULL REFERENCES auth.users`, and a WhatsApp sender has no
   Supabase auth user. Logging needs a `channel`/nullable-user change (follow-up).
 - Unit tests: `npx vitest run src/server/__tests__` (pure parsing, signature,
-  limiter, dedupe, cosine ranking, prompt assembly).
+  limiter, dedupe, cosine ranking, prompt assembly, corpus paging/index caching).

@@ -249,20 +249,29 @@ async function main() {
   let docs = [...monographDocs, ...stgDocs]
 
   if (args.onlyMissing && !args.dryRun) {
-    const { data: existing, error: existsErr } = await supabase
-      .from('knowledge_chunks')
-      .select('source, source_ref')
-    if (existsErr) {
-      console.error(
-        `ERROR reading existing chunks (is migration 00021 applied?): ${existsErr.message}`,
-      )
-      process.exit(1)
+    // Page every row: PostgREST truncates an unbounded select at max-rows
+    // (Supabase default 1000 — even .limit(100000)), so an un-paged read stops
+    // seeing coverage once the table outgrows it and re-embeds settled docs.
+    const have = new Set<string>()
+    const pageSize = 1000
+    for (let from = 0; ; from += pageSize) {
+      const { data: page, error: existsErr } = await supabase
+        .from('knowledge_chunks')
+        .select('source, source_ref')
+        .order('id', { ascending: true })
+        .range(from, from + pageSize - 1)
+      if (existsErr) {
+        console.error(
+          `ERROR reading existing chunks (is migration 00021 applied?): ${existsErr.message}`,
+        )
+        process.exit(1)
+      }
+      for (const r of (page ?? []) as { source: string; source_ref: string }[]) {
+        have.add(`${r.source}:${r.source_ref}`)
+      }
+      if (!page || page.length < pageSize) break
     }
-    const have = new Set(
-      (existing ?? []).map(
-        (r: { source: string; source_ref: string }) => `${r.source}:${r.source_ref}`,
-      ),
-    )
+    console.log(`[ensure-rag] --only-missing: ${have.size} documents already in knowledge_chunks`)
     const before = docs.length
     docs = docs.filter((d) => !have.has(`${d.source}:${d.sourceRef}`))
     console.log(

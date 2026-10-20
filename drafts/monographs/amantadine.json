@@ -1,0 +1,221 @@
+{
+  "name": "Amantadine",
+  "existing_id": "863253a5-fe6e-41c8-a059-90d2a6bbd0a3",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amantadine has two distinct pharmacological actions. Antiviral: the mechanism is not clearly understood, but it appears to mainly prevent the release of infectious viral nucleic acid into the host cell by interfering with the function of the transmembrane domain of the viral M2 protein and, in certain cases, to prevent virus assembly during virus replication; it does not appear to interfere with the immunogenicity of inactivated influenza A virus vaccine (AvKARE amantadine hydrochloride capsules label, Clinical Pharmacology - Pharmacodynamics). Antiparkinsonian: the mechanism of action in Parkinson's disease and drug-induced extrapyramidal reactions is not known; earlier animal studies suggest direct and indirect effects on dopamine neurons, and more recent studies demonstrate that amantadine is a weak, non-competitive NMDA receptor antagonist (Ki = 10 micromolar); although direct anticholinergic activity has not been shown in animal studies, clinically it exhibits anticholinergic-like side effects such as dry mouth, urinary retention and constipation (AvKARE amantadine hydrochloride capsules label, Pharmacodynamics - Mechanism of Action, Parkinson's Disease).",
+    "indications": [
+      "Amantadine hydrochloride capsules, USP: prophylaxis and treatment of signs and symptoms of infection caused by various strains of influenza A virus (AvKARE label, INDICATIONS AND USAGE)",
+      "Chemoprophylaxis against signs and symptoms of influenza A virus infection; because amantadine does not completely prevent the host immune response, individuals may still develop immune responses to natural disease or vaccination and may be protected when later exposed to antigenically related viruses; following vaccination during an influenza A outbreak, amantadine prophylaxis should be considered for the 2- to 4-week time period required to develop an antibody response (AvKARE label, Influenza A Prophylaxis)",
+      "Treatment of uncomplicated respiratory tract illness caused by influenza A virus strains, especially when administered early in the course of illness; there are no well-controlled clinical studies demonstrating that treatment with amantadine will avoid the development of influenza A virus pneumonitis or other complications in high-risk patients (AvKARE label, Influenza A Treatment)",
+      "Treatment of idiopathic Parkinson's disease (Paralysis Agitans), postencephalitic parkinsonism and symptomatic parkinsonism which may follow injury to the nervous system by carbon monoxide intoxication, and parkinsonism developing in association with cerebral arteriosclerosis in elderly patients (AvKARE label, Parkinson's Disease/Syndrome)",
+      "Treatment of drug-induced extrapyramidal reactions; although anticholinergic-type side effects have been noted, their incidence is lower than with anticholinergic antiparkinson drugs (AvKARE label, Drug-Induced Extrapyramidal Reactions)",
+      "GOCOVRI (amantadine extended-release capsules): treatment of dyskinesia in patients with Parkinson's disease receiving levodopa-based therapy, with or without concomitant dopaminergic medications, and as adjunctive treatment to levodopa/carbidopa in patients with Parkinson's disease experiencing 'off' episodes; GOCOVRI is not indicated for influenza (Gocovri label, section 1)"
+    ],
+    "contraindications": [
+      "Amantadine hydrochloride capsules, USP: known hypersensitivity to amantadine hydrochloride or to any of the other ingredients (AvKARE label, CONTRAINDICATIONS)",
+      "GOCOVRI (amantadine extended-release capsules): end-stage renal disease, i.e. creatinine clearance below 15 mL/min/1.73 m2 (Gocovri label, section 4)"
+    ],
+    "side_effects": [
+      "Most frequent at the recommended dose (5 to 10%): nausea, dizziness (lightheadedness) and insomnia (AvKARE label, ADVERSE REACTIONS)",
+      "Less frequent (1 to 5%): depression, anxiety and irritability, hallucinations, confusion, anorexia, dry mouth, constipation, ataxia, livedo reticularis, peripheral edema, orthostatic hypotension, headache, somnolence, nervousness, dream abnormality, agitation, dry nose, diarrhea and fatigue (AvKARE label, ADVERSE REACTIONS)",
+      "Infrequent (0.1 to 1%): congestive heart failure, psychosis, urinary retention, dyspnea, skin rash, vomiting, weakness, slurred speech, euphoria, thinking abnormality, amnesia, hyperkinesia, hypertension, decreased libido, and visual disturbance including punctate subepithelial or other corneal opacity, corneal edema, decreased visual acuity, sensitivity to light and optic nerve palsy (AvKARE label, ADVERSE REACTIONS)",
+      "Rare (less than 0.1%): convulsion, leukopenia, neutropenia, eczematoid dermatitis, oculogyric episodes, suicidal attempt, suicide and suicidal ideation (AvKARE label, ADVERSE REACTIONS)",
+      "Postmarketing: coma, stupor, delirium, hypokinesia, hypertonia, delusions, aggressive behavior, paranoid reaction, manic reaction, involuntary muscle contractions, gait abnormalities, paresthesia, EEG changes and tremor; cardiac arrest, arrhythmias including malignant arrhythmias, hypotension and tachycardia; acute respiratory failure, pulmonary edema and tachypnea; dysphagia; leukocytosis and agranulocytosis; keratitis, mydriasis and corneal edema; pruritus and diaphoresis; neuroleptic malignant syndrome, allergic reactions including anaphylactic reactions, edema and fever (AvKARE label, ADVERSE REACTIONS)",
+      "Laboratory: elevated CPK, BUN, serum creatinine, alkaline phosphatase, LDH, bilirubin, GGT, SGOT and SGPT (AvKARE label, ADVERSE REACTIONS - Laboratory Test)",
+      "GOCOVRI: somnolence and fatigue were reported as adverse reactions in 4% of patients treated with GOCOVRI 274 mg and 1% for placebo; hallucinations and falls occurred more frequently in patients 65 years of age or older than in younger patients (Gocovri label, sections 5.1, 6.1 and 8.5)"
+    ],
+    "dosage": {
+      "adult": "Influenza A prophylaxis and treatment: the adult daily dosage is 200 mg (two 100 mg capsules as a single daily dose); the daily dosage may be split into one 100 mg capsule twice a day, and if central nervous system effects develop on a once-a-day schedule, a split schedule may reduce such complaints; a 100 mg daily dose is recommended for persons who have demonstrated intolerance to 200 mg daily because of CNS or other toxicities (AvKARE label, DOSAGE - Prophylaxis and Treatment of Uncomplicated Influenza A Virus Illness). Parkinsonism: the usual dose is 100 mg twice a day when used alone, with an onset of action usually within 48 hours; the initial dose is 100 mg daily for patients with serious associated medical illnesses or who are receiving high doses of other antiparkinson drugs, and after one to several weeks at 100 mg once daily the dose may be increased to 100 mg twice daily if necessary; patients not responding optimally at 200 mg daily may benefit from an increase up to 400 mg daily in divided doses under close supervision; patients who initially derive benefit not uncommonly experience a fall-off of effectiveness after a few months, and benefit may be regained by increasing the dose to 300 mg daily or by temporarily discontinuing for several weeks and then reinitiating (AvKARE label, DOSAGE - Dosage for Parkinsonism). Drug-induced extrapyramidal reactions: the usual dose is 100 mg twice a day; occasionally patients not responding optimally at 200 mg daily may benefit from an increase up to 300 mg daily in divided doses (AvKARE label, DOSAGE - Drug Induced Extrapyramidal Reactions). GOCOVRI extended-release: initial daily dosage 137 mg orally once daily at bedtime, increased after one week to the recommended dosage of 274 mg (two 137 mg capsules) once daily at bedtime; GOCOVRI is not substitutable with other amantadine immediate- or extended-release products (Gocovri label, section 2.1).",
+      "geriatric": "For influenza A, the daily dosage in persons 65 years of age or older is 100 mg (AvKARE label, DOSAGE - Prophylaxis and Treatment of Uncomplicated Influenza A Virus Illness). Because amantadine is primarily excreted in the urine it accumulates in the plasma and body when renal function declines, so the dose should be reduced in patients with renal impairment and in individuals 65 years of age or older, and may need reduction in patients with congestive heart failure, peripheral edema or orthostatic hypotension (AvKARE label, PRECAUTIONS - Renal Disease and USAGE IN THE ELDERLY). Apparent oral plasma clearance is reduced and plasma half-life and plasma concentrations are increased in healthy elderly individuals aged 60 years and older (AvKARE label, CLINICAL PHARMACOLOGY - Pharmacokinetics). For GOCOVRI, no dose adjustment is recommended on the basis of age, but hallucinations and falls occurred more frequently in patients 65 years of age or older, and renal function should be monitored (Gocovri label, section 8.5).",
+      "paediatric": "Influenza A (AvKARE label, DOSAGE - Pediatric Patients): 1 year to 9 years of age - the total daily dose should be calculated on the basis of 2 to 4 mg/lb/day (4.4 to 8.8 mg/kg/day), not to exceed 150 mg per day; 9 years to 12 years of age - the total daily dose is 200 mg given as one 100 mg capsule twice a day, and the 100 mg daily dose has not been studied in this population so there are no data demonstrating that it is as effective as or safer than the 200 mg daily dose. The safety and efficacy of amantadine in newborn infants and infants below the age of 1 year have not been established (AvKARE label, PEDIATRIC USE). For GOCOVRI, safety and effectiveness in pediatric patients have not been established (Gocovri label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Central nervous system stimulants: careful observation is required when amantadine is administered concurrently with CNS stimulants (AvKARE label, Drug Interactions)",
+      "Agents with anticholinergic properties may potentiate the anticholinergic-like side effects of amantadine; the dose of anticholinergic drugs or of amantadine should be reduced if atropine-like effects appear when these drugs are used concurrently (AvKARE label, Drug Interactions and PRECAUTIONS; Gocovri label, section 7.1)",
+      "Thioridazine: coadministration has been reported to worsen the tremor in elderly patients with Parkinson's disease; it is not known whether other phenothiazines produce a similar response (AvKARE label, Drug Interactions)",
+      "Triamterene and hydrochlorothiazide: coadministration resulted in a higher plasma amantadine concentration in a 61-year-old man receiving amantadine 100 mg three times daily for Parkinson's disease; it is not known which of the components contributed to the observation (AvKARE label, Drug Interactions)",
+      "Quinine or quinidine: coadministration with amantadine reduced the renal clearance of amantadine by about 30% (AvKARE label, Drug Interactions)",
+      "Live attenuated influenza vaccine (LAIV) intranasal: concurrent use has not been evaluated, but because of the potential for interference, LAIV should not be administered within 2 weeks before or 48 hours after administration of amantadine unless medically indicated; trivalent inactivated influenza vaccine can be administered at any time relative to amantadine (AvKARE label, Drug Interactions)",
+      "Urine acidifying drugs: urinary pH influences the excretion rate of amantadine; because excretion increases rapidly when the urine is acidic, administration of urine acidifying drugs may increase elimination of the drug, and alkalinisation of the urine may lead to accumulation with a possible increase in adverse reactions (AvKARE label, CLINICAL PHARMACOLOGY - Pharmacokinetics and OVERDOSAGE; Gocovri label, section 7.2)",
+      "For GOCOVRI: live vaccines are not recommended during treatment, while inactivated influenza vaccines may be used as appropriate (Gocovri label, section 7.3); concomitant use with alcohol is not recommended because it may increase CNS effects such as dizziness, confusion, lightheadedness and orthostatic hypotension and may result in dose-dumping (Gocovri label, sections 7.4 and 2.2)"
+    ],
+    "monitoring": "Estimate creatinine clearance and reduce the dose in renal impairment and in patients 65 years of age or older (AvKARE label, DOSAGE - Dosage for Impaired Renal Function). Use caution in patients with liver disease, as rare instances of reversible elevation of liver enzymes have been reported (AvKARE label, PRECAUTIONS - Liver Disease). Monitor closely for increased seizure activity in patients with a history of epilepsy or other 'seizures', and for central nervous system effects or blurring of vision (AvKARE label, WARNINGS - CNS Effects). Monitor psychiatric status, including suicidal ideation, hallucinations and psychosis, which have been reported with and without a prior history of psychiatric illness (AvKARE label, WARNINGS - Suicide Attempts). Ask patients whether their vision has changed and obtain an ophthalmologic examination to rule out corneal edema should vision changes occur after initiation of therapy; if corneal edema occurs, taper and discontinue amantadine (AvKARE label, WARNINGS - Corneal Edema). Follow closely patients with a history of congestive heart failure or peripheral edema (AvKARE label, WARNINGS - Other). Specifically ask patients or caregivers about new or increased gambling urges, sexual urges, uncontrolled spending or other intense urges, and consider dose reduction or stopping the medication if these develop (AvKARE label, PRECAUTIONS - Impulse Control/Compulsive Behaviors). Monitor for melanoma: patients with Parkinson's disease have a 2- to approximately 6-fold higher risk of melanoma, so periodic skin examinations by appropriately qualified individuals are advised when amantadine is used for any indication (AvKARE label, PRECAUTIONS - Melanoma). For GOCOVRI, monitor for somnolence and for falling asleep during activities of daily living, and for dizziness and orthostatic hypotension (Gocovri label, sections 5.1 and 5.4).",
+    "patient_counselling": "Advise patients (AvKARE label, Information for Patients): blurry vision, eye pain, loss of vision and/or impaired mental acuity may occur - report these immediately; gradually increase physical activity as the symptoms of Parkinson's disease improve; avoid excessive alcohol usage, since it may increase the potential for CNS effects such as dizziness, confusion, light-headedness and orthostatic hypotension; avoid getting up suddenly from a sitting or lying position and notify the physician if dizziness or lightheadedness occurs; notify the physician if mood/mental changes, swelling of extremities, difficulty urinating and/or shortness of breath occur; do not take more medication than prescribed because of the risk of overdose; if there is no improvement in a few days, or if the medication appears less effective after a few weeks, discuss it with a physician; consult the physician before discontinuing medication; seek medical attention immediately if an overdose is suspected. For GOCOVRI, instruct the patient to swallow capsules whole without crushing, chewing or dividing, to take the dose at bedtime, and to avoid drinking alcohol (Gocovri label, sections 2.2 and 7.4); patients who develop daytime sleepiness or episodes of falling asleep during activities that require full attention should ordinarily discontinue GOCOVRI and should not drive or undertake other potentially dangerous activities (Gocovri label, section 5.1).",
+    "warnings": [
+      "Deaths from overdose: the lowest reported acute lethal dose was 1 g; acute toxicity may be attributable to the anticholinergic effects of amantadine; overdose has resulted in cardiac, respiratory, renal or central nervous system toxicity, with cardiac dysfunction including arrhythmia, tachycardia and hypertension; deaths due to drug accumulation have been reported in patients with renal impairment who were prescribed higher than recommended doses (AvKARE label, WARNINGS - Deaths)",
+      "Suicide attempts, some of which have been fatal, have been reported in patients treated with amantadine, many of whom received short courses for influenza treatment or prophylaxis; amantadine can exacerbate mental problems in patients with a history of psychiatric disorders or substance abuse, and caution should be observed when prescribing to patients being treated with drugs having CNS effects (AvKARE label, WARNINGS - Suicide Attempts)",
+      "CNS effects: patients with a history of epilepsy or other 'seizures' should be observed closely for possible increased seizure activity; patients who note central nervous system effects or blurring of vision should be cautioned against driving or working in situations where alertness and adequate motor coordination are important (AvKARE label, WARNINGS - CNS Effects)",
+      "Congestive heart failure and fluid retention: patients with a history of congestive heart failure or peripheral edema should be followed closely, as there are patients who developed congestive heart failure while receiving amantadine (AvKARE label, WARNINGS - Other)",
+      "Untreated angle closure glaucoma: because amantadine has anticholinergic effects and may cause mydriasis, it should not be given to patients with untreated angle closure glaucoma (AvKARE label, WARNINGS - Other)",
+      "Corneal edema: reported in patients taking amantadine; symptoms include sudden onset of blurry vision, or progressive vision loss, with or without eye pain; corneal involvement is usually bilateral and onset can occur from a few weeks to several years after starting amantadine; resolution typically begins within weeks of cessation, but corneal grafts have been required in some patients and permanent damage can occur if amantadine is continued (AvKARE label, WARNINGS - Corneal Edema)",
+      "Neuroleptic malignant syndrome (NMS): sporadic cases have been reported in association with dose reduction or withdrawal of amantadine; patients should be observed carefully when the dosage is reduced abruptly or discontinued, especially if the patient is receiving neuroleptics; NMS is characterised by fever or hyperthermia, muscle rigidity, involuntary movements, altered consciousness, autonomic dysfunction and raised creatine phosphokinase (AvKARE label, PRECAUTIONS - NMS)",
+      "Impulse control/compulsive behaviours: postmarketing reports describe intense urges to gamble, increased sexual urges, intense urges to spend money uncontrollably and other intense urges in patients treated with antiparkinson medications that increase central dopaminergic tone, including amantadine; prescribers should ask specifically about these urges and consider dose reduction or stopping the medication (AvKARE label, PRECAUTIONS - Impulse Control/Compulsive Behaviors)",
+      "Melanoma: epidemiological studies show patients with Parkinson's disease have a 2- to approximately 6-fold higher risk of melanoma; patients and providers are advised to monitor for melanomas frequently and on a regular basis when using amantadine for any indication (AvKARE label, PRECAUTIONS - Melanoma)",
+      "For GOCOVRI: falling asleep during activities of daily living - patients may not perceive warning signs such as excessive drowsiness; if a patient develops daytime sleepiness or episodes of falling asleep during activities that require full attention, GOCOVRI should ordinarily be discontinued (Gocovri label, section 5.1)"
+    ],
+    "precautions": [
+      "Do not discontinue amantadine abruptly in patients with Parkinson's disease, because a few patients have experienced a parkinsonian crisis, i.e. a sudden marked clinical deterioration, when the medication was suddenly stopped; abrupt discontinuation may also precipitate delirium, agitation, delusions, hallucinations, paranoid reaction, stupor, anxiety, depression and slurred speech (AvKARE label, PRECAUTIONS)",
+      "Reduce the dose of anticholinergic drugs or of amantadine if atropine-like effects appear when these drugs are used concurrently (AvKARE label, PRECAUTIONS)",
+      "Renal disease: because amantadine is mainly excreted in the urine it accumulates in the plasma and body when renal function declines, so the dose should be reduced in patients with renal impairment and in individuals 65 years of age or older (AvKARE label, PRECAUTIONS - Renal Disease)",
+      "Liver disease: care should be exercised when administering amantadine to patients with liver disease; rare instances of reversible elevation of liver enzymes have been reported, though a specific relationship between the drug and such changes has not been established (AvKARE label, PRECAUTIONS - Liver Disease)",
+      "The dose of amantadine may need careful adjustment in patients with congestive heart failure, peripheral edema, or orthostatic hypotension; care should be exercised in patients with a history of recurrent eczematoid rash, or with psychosis or severe psychoneurosis not controlled by chemotherapeutic agents (AvKARE label, PRECAUTIONS - Other)",
+      "Serious bacterial infections may begin with influenza-like symptoms or may coexist with or occur as complications during the course of influenza; amantadine has not been shown to prevent such complications (AvKARE label, PRECAUTIONS - Other)",
+      "For GOCOVRI: swallow whole and do not crush, chew or divide capsules; if needed, carefully open the capsule and sprinkle the entire contents on a small amount (teaspoonful) of soft food such as applesauce, swallow immediately without chewing, and do not store the mixture for future use (Gocovri label, section 2.2)"
+    ],
+    "serious_adverse_reactions": [
+      "Death following overdose, including deaths due to accumulation in patients with renal impairment (AvKARE label, WARNINGS - Deaths and OVERDOSAGE)",
+      "Suicidal attempt, suicide and suicidal ideation (AvKARE label, WARNINGS - Suicide Attempts and ADVERSE REACTIONS)",
+      "Corneal edema, with possible permanent visual damage and corneal grafting (AvKARE label, WARNINGS - Corneal Edema)",
+      "Neuroleptic malignant syndrome (AvKARE label, PRECAUTIONS - NMS)",
+      "Congestive heart failure (AvKARE label, WARNINGS - Other and ADVERSE REACTIONS)",
+      "Convulsion (AvKARE label, ADVERSE REACTIONS)",
+      "Anaphylactic reactions, angioedema, oedema and fever (AvKARE label, ADVERSE REACTIONS - postmarketing experience)",
+      "For GOCOVRI: falling asleep during activities of daily living, sometimes resulting in accidents (Gocovri label, section 5.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (AvKARE amantadine hydrochloride capsules label, PRECAUTIONS - Pregnancy, which states 'Pregnancy Category C')",
+    "pregnancy_guidance": "The effect of amantadine on embryofetal and peri-postnatal development has not been adequately tested under Good Laboratory Practice standards. In two non-GLP studies in rats, amantadine produced increases in embryonic death at an oral dose of 100 mg/kg (3 times the maximum recommended human dose on a mg/m2 basis) and, in the study with dosing on days 7 to 14 of gestation, a marked increase in severe visceral and skeletal malformations at oral doses of 50 and 100 mg/kg; the no-effect dose for teratogenicity was 37 mg/kg. There are no adequate and well-controlled studies in pregnant women and human data regarding teratogenicity after maternal use are scarce: tetralogy of Fallot and tibial hemimelia occurred in an infant exposed to amantadine during the first trimester of pregnancy (100 mg orally for 7 days during the 6th and 7th week of gestation), and cardiovascular maldevelopment (single ventricle with pulmonary atresia) was associated with maternal exposure of 100 mg/day during the first 2 weeks of pregnancy. Amantadine should be used during pregnancy only if the potential benefit justifies the potential risk to the embryo or fetus (AvKARE label, PRECAUTIONS - Pregnancy).",
+    "lactation_guidance": "Amantadine is excreted in human milk; use is not recommended in nursing mothers (AvKARE label, NURSING MOTHERS). For GOCOVRI, amantadine is excreted into human milk but amounts have not been quantified and there is no information on the risk to a breastfed infant; amantadine may alter breast milk production or excretion, so the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for GOCOVRI and any potential adverse effects on the breastfed infant or from the underlying maternal condition (Gocovri label, section 8.2).",
+    "overdose": "Deaths have been reported from overdose; the lowest reported acute lethal dose was 1 g, and because some patients have attempted suicide by overdosing, prescriptions should be written for the smallest quantity consistent with good patient management. Overdose has produced cardiac toxicity (arrhythmia, tachycardia, hypertension), pulmonary oedema and respiratory distress including adult respiratory distress syndrome, renal dysfunction (increased BUN, decreased creatinine clearance, renal insufficiency) and central nervous system toxicity (insomnia, anxiety, agitation, aggressive behavior, hypertonia, hyperkinesia, ataxia, gait abnormality, tremor, confusion, disorientation, depersonalization, fear, delirium, hallucinations, psychotic reactions, lethargy, somnolence and coma); seizures may be exacerbated in patients with a prior history of seizure disorders, and hyperthermia has been observed. There is no specific antidote; slowly administered intravenous physostigmine in 1 and 2 mg doses in an adult at 1- to 2-hour intervals, and 0.5 mg doses in a child at 5- to 10-minute intervals up to a maximum of 2 mg/hour, have been reported to be effective in controlling central nervous system toxicity. For acute overdosing, use general supportive measures with immediate gastric lavage or induction of emesis, force fluids and give intravenously if necessary, monitor blood pressure, pulse, respiration and temperature, observe for hyperactivity and convulsions and administer sedation and anticonvulsant therapy if required, and observe for arrhythmias and hypotension with appropriate antiarrhythmic and antihypotensive therapy. Electrocardiographic monitoring may be required because malignant tachyarrhythmias can appear after overdose; monitor blood electrolytes, urine pH and urinary output. Urine acidifying drugs may increase elimination of amantadine (AvKARE label, OVERDOSAGE).",
+    "pharmacokinetics": "Amantadine is well absorbed orally; maximum plasma concentrations are directly related to dose for doses up to 200 mg/day, and doses above 200 mg/day may result in a greater than proportional increase in maximum plasma concentrations. It is primarily excreted unchanged in the urine by glomerular filtration and tubular secretion; eight metabolites have been identified in human urine, one N-acetylated compound accounting for 5 to 15% of the administered dose. After a single 100 mg soft gel capsule in 24 normal adult male volunteers, the mean peak plasma concentration was 0.22 +/- 0.03 mcg/mL (range 0.18 to 0.32), the time to peak concentration was 3.3 +/- 1.5 hours (range 1.5 to 8.0), the apparent oral clearance was 0.28 +/- 0.11 L/hr/kg (range 0.14 to 0.62) and the half-life was 17 +/- 4 hours (range 10 to 25); across other studies the mean plasma half-life was 16 +/- 6 hours and the time to peak concentration averaged about 2 to 4 hours. Plasma clearance ranged from 0.2 to 0.3 L/hr/kg after 5 to 25 mg intravenous doses, and the volume of distribution after intravenous administration was 3 to 8 L/kg, suggesting tissue binding. Amantadine is approximately 67% bound to plasma proteins over a concentration range of 0.1 to 2.0 mcg/mL. Clearance is significantly reduced in adult patients with renal insufficiency: the elimination half-life increases two- to three-fold or greater when creatinine clearance is less than 40 mL/min/1.73 m2 and averages eight days in patients on chronic maintenance hemodialysis, and amantadine is removed in negligible amounts by hemodialysis. The pH of the urine influences the excretion rate, with rapid increased excretion when urine is acidic (AvKARE label, CLINICAL PHARMACOLOGY - Pharmacokinetics).",
+    "clinical_pearls": [
+      "Corneal edema is a delayed and potentially irreversible amantadine toxicity: ask about visual change at every review and obtain an ophthalmologic examination if vision changes occur (AvKARE label, WARNINGS - Corneal Edema).",
+      "Amantadine accumulates when renal function declines, so dosing is driven by creatinine clearance rather than a flat 200 mg daily dose, and the elderly need reduced doses (AvKARE label, DOSAGE - Dosage for Impaired Renal Function).",
+      "Withdrawal can be dangerous: abrupt discontinuation in Parkinson's disease has precipitated parkinsonian crisis, delirium and hallucinations, and has been associated with neuroleptic malignant syndrome, so taper rather than stop (AvKARE label, PRECAUTIONS).",
+      "Amantadine is not a substitute for annual influenza vaccination and does not interfere with the immunogenicity of inactivated influenza A vaccine (AvKARE label, INDICATIONS AND USAGE and Clinical Pharmacology).",
+      "Influenza A resistance to adamantane derivatives has been documented in epidemic strains, and amantadine has very little or no activity against influenza B (AvKARE label, Clinical Pharmacology - Antiviral Activity and Drug Resistance).",
+      "GOCOVRI is a different formulation and is not substitutable with other amantadine immediate- or extended-release products; it is dosed once daily at bedtime and is contraindicated in end-stage renal disease (Gocovri label, sections 2.1 and 4)."
+    ],
+    "brand_names": ["Gocovri"],
+    "black_box_warnings": null,
+    "renal_dose_adjustment": "Adjust according to creatinine clearance (mL/min/1.73 m2) for amantadine hydrochloride capsules: 30 to 50 - 200 mg on the first day, then 100 mg each day thereafter; 15 to 29 - 200 mg on the first day followed by 100 mg on alternate days; less than 15 - 200 mg every 7 days; the recommended dosage for patients on hemodialysis is 200 mg every 7 days (AvKARE label, DOSAGE - Dosage for Impaired Renal Function). For GOCOVRI: mild renal impairment (CrCl 60 to 89 mL/min/1.73 m2) - initial 137 mg once daily at bedtime, increasing if needed after one week to 274 mg once daily at bedtime; moderate renal impairment (30 to 59) - initial 68.5 mg once daily at bedtime, maximum recommended 137 mg once daily at bedtime; severe renal impairment (15 to 29) - 68.5 mg once daily at bedtime; end-stage renal disease (below 15) is contraindicated (Gocovri label, section 2.3).",
+    "hepatic_dose_adjustment": "The amantadine hydrochloride capsule label does not specify a hepatic dose adjustment; it advises that care should be exercised when administering amantadine to patients with liver disease because rare instances of reversible elevation of liver enzymes have been reported, though a specific relationship between the drug and such changes has not been established (AvKARE label, PRECAUTIONS - Liver Disease).",
+    "administration_instructions": "Amantadine hydrochloride capsules, USP: 100 mg capsules for oral administration; store at 20 to 25 degrees C (68 to 77 degrees F) and dispense in a tight container (AvKARE label, HOW SUPPLIED). GOCOVRI: swallow whole - do not crush, chew or divide capsules; if needed, carefully open the capsule and sprinkle the entire contents on a small amount (teaspoonful) of soft food such as applesauce and swallow immediately without chewing, without storing the mixture for future use; may be taken with or without food; take the dose at bedtime; concomitant use with alcohol is not recommended (Gocovri label, sections 2.2 and 7.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), Clinical Pharmacology - Pharmacodynamics, Mechanism of Action (antiviral and Parkinson's disease)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), INDICATIONS AND USAGE (influenza A prophylaxis and treatment, parkinsonism, drug-induced extrapyramidal reactions); FDA label, GOCOVRI (amantadine extended-release capsules), section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), CONTRAINDICATIONS; FDA label, GOCOVRI, section 4 (end-stage renal disease)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), ADVERSE REACTIONS; FDA label, GOCOVRI, sections 5.1, 6.1 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), DOSAGE AND ADMINISTRATION (influenza A, parkinsonism, drug-induced extrapyramidal reactions, impaired renal function), PRECAUTIONS - Renal Disease, USAGE IN THE ELDERLY, PEDIATRIC USE; FDA label, GOCOVRI, sections 2.1, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), Drug Interactions and CLINICAL PHARMACOLOGY - Pharmacokinetics; FDA label, GOCOVRI, sections 2.2, 7.1, 7.2, 7.3 and 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), WARNINGS (Deaths, Suicide Attempts, CNS Effects, Other, Corneal Edema), PRECAUTIONS (Renal Disease, Liver Disease, Impulse Control/Compulsive Behaviors, Melanoma), DOSAGE - Dosage for Impaired Renal Function; FDA label, GOCOVRI, sections 5.1 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), Information for Patients; FDA label, GOCOVRI, sections 2.2, 5.1 and 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), WARNINGS and PRECAUTIONS; FDA label, GOCOVRI, section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), PRECAUTIONS (including NMS, Renal Disease, Liver Disease, Other); FDA label, GOCOVRI, section 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), WARNINGS, PRECAUTIONS - NMS, ADVERSE REACTIONS and OVERDOSAGE; FDA label, GOCOVRI, section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the Amantadine Hydrochloride Capsules USP label; the GOCOVRI label states the product may be taken with or without food",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bee0631-0028-1314-e063-6394a90aaaed"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), PRECAUTIONS - Pregnancy (Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), PRECAUTIONS - Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), NURSING MOTHERS; FDA label, GOCOVRI, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), CLINICAL PHARMACOLOGY - Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), WARNINGS - Corneal Edema, DOSAGE - Dosage for Impaired Renal Function, PRECAUTIONS, INDICATIONS AND USAGE, Clinical Pharmacology - Antiviral Activity and Drug Resistance; FDA label, GOCOVRI, sections 2.1 and 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "brand_names",
+      "ref": "GOCOVRI (amantadine extended-release capsules) listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bee0631-0028-1314-e063-6394a90aaaed"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the Amantadine Hydrochloride Capsules USP label or in the GOCOVRI label (risk information is in WARNINGS AND PRECAUTIONS section 5)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bee0631-0028-1314-e063-6394a90aaaed"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), DOSAGE AND ADMINISTRATION - Dosage for Impaired Renal Function; FDA label, GOCOVRI, section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), PRECAUTIONS - Liver Disease (no hepatic dose adjustment is specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Amantadine Hydrochloride Capsules USP (AvKARE), HOW SUPPLIED; FDA label, GOCOVRI, sections 2.2 and 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning is present in the amantadine hydrochloride capsule label or in the GOCOVRI label; the somnolence/falling-asleep risk is in Warnings and Precautions section 5.1)"
+  ],
+  "notes": "The table stores this agent as 'Amantadine' with brand_names ['amantadine hydrochloride']; the US label is for amantadine hydrochloride (the hydrochloride salt) and the only amantadine brand product currently listed on DailyMed is GOCOVRI (amantadine extended-release capsules, indicated for Parkinson's disease). The legacy brand 'Symmetrel' is not listed on DailyMed and is therefore omitted from brand_names. Two different US products are covered here and are not interchangeable: immediate-release amantadine hydrochloride capsules/tablets (influenza A, parkinsonism, drug-induced extrapyramidal reactions) and GOCOVRI extended-release capsules (Parkinson's disease dyskinesia and 'off' episodes); their indications, contraindications and dosing differ. The influenza A indication is of limited current clinical value because amantadine has very little or no activity against influenza B and resistant influenza A variants are documented. FDA pregnancy categories (C) are obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and are reported only because the label still states them. Note that the label's warnings (deaths from overdose, suicide attempts, corneal edema) are in WARNINGS section 5, not in a boxed warning."
+}

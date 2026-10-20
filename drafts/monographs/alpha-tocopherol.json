@@ -1,0 +1,210 @@
+{
+  "name": "Alpha Tocopherol",
+  "existing_id": "86679a22-dd8b-4da5-bbf2-41c74c68bc2c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Vitamin E (alpha-tocopherol) is the principal liposoluble antioxidant in the organism. It acts as a free radical chain-breaking molecule, stopping the peroxidation of polyunsaturated fatty acids, and it is involved in maintaining the stability and integrity of cell membranes (Vedrop 50 mg/ml oral solution SmPC, section 5.1). Alpha-tocopherol is located principally on cell membranes, within mitochondria and microsomes, and is ubiquitously distributed in red blood cells, brain, muscle, liver and platelets, with fat tissue its major reservoir (Vedrop SmPC, section 5.2). In the oral solution product, d-alpha-tocopherol-polyethylene glycol 1000 succinate (tocofersolan) is a pro-drug whose active metabolite is d-alpha-tocopherol; at low concentrations tocofersolan forms micelles which enhance absorption of non-polar lipids such as fat-soluble vitamins, with a critical micellar concentration of 0.04 to 0.06 mmol/l (Vedrop SmPC, section 5.2).",
+    "indications": [
+      "Vedrop (d-alpha-tocopherol as tocofersolan oral solution): treatment of vitamin E deficiency due to digestive malabsorption in paediatric patients with congenital chronic cholestasis or hereditary chronic cholestasis, from birth (full term newborns) up to 18 years of age (Vedrop SmPC, section 4.1).",
+      "PNV-DHA (prescription prenatal/postnatal multivitamin/minimineral/essential fatty acid softgel containing dl-alpha-tocopherol acetate 10 IU per softgel): a multivitamin/multimineral fatty acid dietary supplement indicated for use in improving the nutritional status of women throughout pregnancy and in the postnatal period for both lactating and non-lactating mothers (PNV-DHA label, INDICATIONS and Product Information, Active Ingredient section).",
+      "PRENATE DHA (prescription prenatal/postnatal multivitamin/minimineral/essential fatty acid softgel containing dl-alpha-tocopherol acetate): a multivitamin/multimineral fatty acid dietary supplement indicated for use in improving the nutritional status of women throughout pregnancy and in the postnatal period for both lactating and non-lactating mothers (PRENATE DHA label, INDICATIONS).",
+      "WHO Model List of Essential Medicines, section 27 Vitamins and minerals: the WHO multiple micronutrient supplement for maternal care (tablet containing vitamin A 800 mcg retinol activity equivalent, vitamin C 70 mg, vitamin D 5 mcg (200 IU), vitamin E 10 mg alpha tocopherol equivalent, vitamin B1 1.4 mg, vitamin B2 1.4 mg, vitamin B3 18 mg niacin equivalent, vitamin B6 1.9 mg, folic acid 400 mcg, vitamin B12 2.6 mcg, iron 30 mg, iodine 150 mcg, zinc 15 mg, selenium 65 mcg and copper 2 mg) is indicated for maternal care for other specified conditions predominantly related to pregnancy (WHO eEML, Multiple micronutrient supplement)."
+    ],
+    "contraindications": [
+      "Vedrop: contraindicated in patients with hypersensitivity to the active substance (d-alpha-tocopherol) or to any of the excipients (Vedrop SmPC, section 4.3).",
+      "Vedrop must not be used in preterm newborn infants (Vedrop SmPC, section 4.3).",
+      "PNV-DHA: contraindicated in patients with a known hypersensitivity to any of the ingredients (PNV-DHA label, CONTRAINDICATIONS).",
+      "PRENATE DHA: contraindicated in patients with a known hypersensitivity to any of the ingredients (PRENATE DHA label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Diarrhoea is the most commonly reported adverse reaction during treatment with Vedrop (common, 1/100 to less than 1/10) (Vedrop SmPC, section 4.8).",
+      "Abdominal pain (frequency not known) (Vedrop SmPC, section 4.8).",
+      "Skin and subcutaneous tissue disorders, uncommon: alopecia, pruritus, rash (Vedrop SmPC, section 4.8).",
+      "General disorders and administration site conditions, uncommon: asthenia and headache (Vedrop SmPC, section 4.8).",
+      "Investigations, uncommon: abnormal serum sodium, abnormal serum potassium and increased transaminases (Vedrop SmPC, section 4.8).",
+      "PNV-DHA and PRENATE DHA: allergic sensitisation has been reported following both oral and parenteral administration of folic acid (PNV-DHA label, ADVERSE REACTIONS; PRENATE DHA label, ADVERSE REACTIONS). Note this reaction relates to the folic acid component of the multivitamin, not to alpha-tocopherol."
+    ],
+    "dosage": {
+      "adult": "WHO Model List of Essential Medicines: the WHO multiple micronutrient supplement for maternal care contains vitamin E 10 mg alpha tocopherol equivalent per tablet, for maternal care for other specified conditions predominantly related to pregnancy (WHO eEML, Multiple micronutrient supplement). Prenatal supplement products containing dl-alpha-tocopherol acetate: PNV-DHA and PRENATE DHA are dosed as one softgel daily, as a dietary supplement or as directed by a physician, before, during and/or after pregnancy (PNV-DHA label, DIRECTIONS and DOSAGE AND ADMINISTRATION; PRENATE DHA label, DOSAGE AND ADMINISTRATION). PNV-DHA supplies dl-alpha-tocopherol acetate 10 IU per softgel (PNV-DHA label, Product Information, Active Ingredient section). Vedrop (d-alpha-tocopherol oral solution) is licensed for paediatric use only, from birth (full term newborns) up to 18 years of age, and no adult dose is specified in that product information (Vedrop SmPC, section 4.1).",
+      "geriatric": "No geriatric-specific dose is specified in any of the sources used. Vedrop is indicated in paediatric patients only, and the WHO multiple micronutrient supplement and the PNV-DHA/PRENATE DHA prenatal supplements carry no geriatric dose adjustment statement (Vedrop SmPC, section 4.1; WHO eEML, Multiple micronutrient supplement; PNV-DHA label, DOSAGE AND ADMINISTRATION).",
+      "paediatric": "Vedrop: the recommended total daily dose in paediatric patients with congenital chronic cholestasis or hereditary chronic cholestasis is 0.34 ml/kg/day, corresponding to 17 mg/kg of d-alpha-tocopherol in the form of tocofersolan. The dose should be prescribed in mg of d-alpha-tocopherol and then converted to a volume of oral solution by dividing by 50 (1 ml contains 50 mg of d-alpha-tocopherol as tocofersolan, equivalent to 74.5 IU of tocopherol). The dose should be adjusted according to the plasma vitamin E level; the supplied weight-based volume table gives 1.0 ml at 3 kg, 1.4 ml at 4 kg, 1.7 ml at 5 kg, 2.0 ml at 6 kg, 2.4 ml at 7 kg, 2.7 ml at 8 kg, 3.1 ml at 9 kg, 3.4 ml at 10 kg and 5.1 ml at 15 kg (Vedrop SmPC, section 4.2). Vedrop must not be used in preterm newborn infants (Vedrop SmPC, section 4.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Oral anti-vitamins K (for example warfarin) and vitamin K deficiency: large doses of vitamin E have been reported to increase bleeding tendency in vitamin-K deficient patients or those taking oral anti-vitamins K; it is recommended to monitor prothrombin time and the international normalised ratio, and a possible adjustment of the dose of oral anticoagulant during and after treatment may be necessary (Vedrop SmPC, sections 4.4 and 4.5).",
+      "P-glycoprotein substrates and other fat-soluble medicines: due to inhibition of the P-glycoprotein transporter, tocofersolan may enhance intestinal absorption of other concomitant fat-soluble vitamins (A, D, E and K) or of highly lipophilic medicinal products such as steroids, antibiotics, antihistamines, cyclosporine and tacrolimus; monitoring should be performed and doses adjusted when necessary (Vedrop SmPC, section 4.5).",
+      "No interaction studies have been performed with tocofersolan (Vedrop SmPC, section 4.5).",
+      "PNV-DHA and PRENATE DHA: administration of omega-3 fatty acids (such as DHA) above 3 grams per day has been shown to have potential antithrombotic effects, including increased bleeding time and INR, and should be avoided in patients taking anticoagulants or with an inherited or acquired predisposition to bleeding. This warning concerns the DHA/fish oil component of the product, not alpha-tocopherol (PNV-DHA label, WARNING; PRENATE DHA label, WARNING)."
+    ],
+    "monitoring": "Plasma vitamin E level should be monitored monthly for at least the first few months of therapy, thereafter at regular intervals, and the dose adjusted accordingly if necessary (Vedrop SmPC, section 4.2). Monitor prothrombin time and INR when alpha-tocopherol is given to vitamin-K deficient patients or to patients taking oral anti-vitamins K, and adjust the oral anticoagulant dose during and after treatment as necessary (Vedrop SmPC, sections 4.4 and 4.5). Monitor coagulation function when administered with anti-vitamins K treatment (Vedrop SmPC, section 4.5). Because data in patients with renal impairment are limited, administer with caution and under close monitoring of renal function, for example in dehydrated patients (Vedrop SmPC, section 4.4). Administer with caution and under close monitoring of hepatic function in patients with underlying liver impairment (Vedrop SmPC, section 4.4). Monitor for the absorption and effects of co-administered fat-soluble vitamins and highly lipophilic medicines when tocofersolan is given (Vedrop SmPC, section 4.5).",
+    "patient_counselling": "Vedrop is administered orally with or without water, using the 1 ml or 2 ml oral syringes supplied with the container to measure the exact dose (Vedrop SmPC, section 4.2). Treatment with Vedrop should be initiated and supervised by a physician experienced in the management of patients with congenital or hereditary chronic cholestasis (Vedrop SmPC, section 4.2). Advise patients that large doses of vitamin E may increase bleeding tendency, that prothrombin time and INR should be monitored, and that the oral anticoagulant dose may need adjustment during and after treatment (Vedrop SmPC, sections 4.4 and 4.5). Advise patients with renal or hepatic impairment that the product should be used with caution and with close monitoring (Vedrop SmPC, section 4.4). Advise pregnant women that caution should be exercised when prescribing alpha-tocopherol, and note that no clinical data on exposed pregnancies are available (Vedrop SmPC, section 4.6). For PNV-DHA and PRENATE DHA: take one softgel daily, as a dietary supplement or as directed by a physician, before, during and/or after pregnancy (PNV-DHA label, DIRECTIONS). Warn that accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6, keep the product out of reach of children, and in case of accidental overdose call a doctor or poison control centre immediately (PNV-DHA label, WARNING; PRENATE DHA label, WARNING). Advise patients who are taking anticoagulants or who have an inherited or acquired predisposition to bleeding to avoid the omega-3 fatty acids in these products (PNV-DHA label, WARNING).",
+    "warnings": [
+      "Bleeding tendency: as large doses of vitamin E have been reported to increase bleeding tendency in vitamin-K deficient patients or those taking oral anti-vitamins K treatment, it is recommended to monitor the prothrombin time and international normalised ratio, and a possible adjustment of the dose of oral anticoagulant during and after treatment may be necessary (Vedrop SmPC, section 4.4).",
+      "Renal impairment: as data on patients with renal impairment are limited, Vedrop should be administered with caution and under close monitoring of renal function, for example in dehydrated patients (Vedrop SmPC, section 4.4).",
+      "Hepatic impairment: Vedrop should be administered with caution and under close monitoring of hepatic function in patients with underlying liver impairment (Vedrop SmPC, section 4.4).",
+      "Excipient hypersensitivity: Vedrop contains sodium methyl parahydroxybenzoate (E219) and sodium ethyl parahydroxybenzoate (E215), which may cause allergic reactions, possibly delayed; hypersensitivity to the active substance or any excipient is a contraindication (Vedrop SmPC, sections 4.3 and 4.4).",
+      "Sodium content: Vedrop contains sodium and this should be taken into consideration in patients on a controlled sodium diet (each ml contains 0.18 mmoles, 4.1 mg, of sodium) (Vedrop SmPC, section 4.4).",
+      "Use in preterm neonates: Vedrop must not be used in preterm newborn infants (Vedrop SmPC, section 4.3).",
+      "PNV-DHA and PRENATE DHA (product-specific warnings relating to other components, not to alpha-tocopherol): ingestion of more than 3 grams of omega-3 fatty acids per day has been shown to have potential antithrombotic effects, including increased bleeding time and INR, so administration should be avoided in patients taking anticoagulants and in those with an inherited or acquired predisposition to bleeding; and accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6, so keep out of reach of children and call a doctor or poison control centre immediately in case of accidental overdose (PNV-DHA label, WARNING; PRENATE DHA label, WARNING)."
+    ],
+    "precautions": [
+      "Medical advice is recommended in the case of long-term use or in patients at risk of phosphate depletion applies to aluminium-containing antacids and is not a vitamin E precaution; the vitamin E-specific precautions are those in the Vedrop SmPC sections 4.4 and 4.5, reproduced under warnings and interactions (Vedrop SmPC, sections 4.4 and 4.5).",
+      "Vedrop is authorised under exceptional circumstances: because of the rarity of the disease it has not been possible to obtain complete information on this product, and the European Medicines Agency reviews any new safety information annually (Vedrop SmPC, section 5.1).",
+      "Non-clinical data in the literature reveal no special hazard for humans based on conventional studies of repeated dose toxicity, genotoxicity and toxicity to reproduction (Vedrop SmPC, section 5.3).",
+      "PNV-DHA and PRENATE DHA: folic acid alone is improper therapy in the treatment of pernicious anaemia and other megaloblastic anaemias where vitamin B12 is deficient, and folic acid in doses above 1.0 mg daily may obscure pernicious anaemia while neurological manifestations progress. This precaution relates to the folic acid component of the product (PNV-DHA label, PRECAUTIONS; PRENATE DHA label, PRECAUTIONS).",
+      "PNV-DHA and PRENATE DHA contain fish oil and soy (PNV-DHA label, DESCRIPTION; PRENATE DHA label, DESCRIPTION)."
+    ],
+    "serious_adverse_reactions": [
+      "Increased bleeding tendency with large doses of vitamin E in vitamin-K deficient patients or those taking oral anti-vitamins K, requiring monitoring of prothrombin time and INR and possible adjustment of anticoagulant dose (Vedrop SmPC, section 4.4).",
+      "Hypersensitivity reactions to the active substance or excipients, including the parabens E215 and E219, which may be delayed; hypersensitivity to any of these is a contraindication to use (Vedrop SmPC, sections 4.3 and 4.4).",
+      "No adverse reaction listed in the Vedrop SmPC section 4.8 is classified as a serious adverse reaction; the most commonly reported is diarrhoea (Vedrop SmPC, section 4.8)."
+    ],
+    "food_interactions": [
+      "Vedrop is administered orally with or without water (Vedrop SmPC, section 4.2). The SmPC states that tocofersolan forms micelles which enhance absorption of non-polar lipids such as fat-soluble vitamins, and that the hydrolysis of tocofersolan occurs in the gut lumen with uptake into chylomicrons in the lymph in a manner identical to vitamin E absorbed from the diet (Vedrop SmPC, section 5.2).",
+      "PNV-DHA and PRENATE DHA contain fish oil and soy (PNV-DHA label, DESCRIPTION; PRENATE DHA label, DESCRIPTION)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "For tocofersolan there are no clinical data on exposed pregnancies, but animal studies do not indicate direct or indirect harmful effects with respect to pregnancy, embryonal/foetal development, parturition or post-natal development, so caution should be exercised when prescribing to pregnant women (Vedrop SmPC, section 4.6). The alpha-tocopherol-containing prenatal supplements PNV-DHA and PRENATE DHA are indicated for use in improving the nutritional status of women throughout pregnancy and in the postnatal period, and are dosed as one softgel daily before, during and/or after pregnancy (PNV-DHA label, INDICATIONS and DOSAGE AND ADMINISTRATION; PRENATE DHA label, INDICATIONS and DOSAGE AND ADMINISTRATION). The WHO multiple micronutrient supplement for maternal care provides vitamin E 10 mg alpha tocopherol equivalent per tablet and is indicated for maternal care for other specified conditions predominantly related to pregnancy (WHO eEML, Multiple micronutrient supplement). Neither the FDA dietary supplement labels nor the Vedrop SmPC assign a letter pregnancy category.",
+    "lactation_guidance": "It is unknown whether tocofersolan is excreted in human breast milk, and its excretion in milk has not been studied in animals. A decision on whether to continue or discontinue breast-feeding, or to continue or discontinue therapy, should be made taking into account the benefit of breast-feeding to the child and the benefit of alpha-tocopherol therapy to the woman (Vedrop SmPC, section 4.6). PNV-DHA and PRENATE DHA are indicated for use in the postnatal period for both lactating and non-lactating mothers (PNV-DHA label, INDICATIONS; PRENATE DHA label, INDICATIONS).",
+    "overdose": "Large vitamin E doses may cause diarrhoea, abdominal pain and other gastrointestinal disturbances. In case of overdose, symptomatic treatment should be proposed (Vedrop SmPC, section 4.9). For PNV-DHA, which contains iron, accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6; in case of accidental overdose call a doctor or poison control centre immediately (PNV-DHA label, WARNING; PRENATE DHA label, WARNING).",
+    "pharmacokinetics": "The active substance d-alpha-tocopherol-polyethylene glycol 1000 succinate (tocofersolan) is a pro-drug whose active metabolite is d-alpha-tocopherol. At low concentrations tocofersolan forms micelles which enhance absorption of non-polar lipids such as fat-soluble vitamins, with a critical micellar concentration of 0.04 to 0.06 mmol/l. Hydrolysis occurs in the gut lumen; the alpha-tocopherol moiety appears in chylomicrons in the lymph in a manner identical to vitamin E absorbed from the diet, and cellular uptake does not require receptors, binding proteins or metabolic processes. After a single oral loading dose of 1200 IU in 12 healthy volunteers, the relative bioavailability of tocofersolan tended to be higher than a water-miscible reference vitamin E (Frel 1.01 plus or minus 1.74), with AUC0-t of 0.383 plus or minus 0.203 micromol.h/mg, Cmax 0.013 plus or minus 0.006, tmax 6.0 hours (6.0 to 24.0) and t1/2 of 29.7 hours (16.0 to 59.5); in paediatric patients with chronic cholestasis tocofersolan showed significantly higher absorption than a water-miscible reference vitamin E (Cmax p = 0.008, AUC p = 0.0026). Vitamin E is located principally on cell membranes, within mitochondria and microsomes, is ubiquitously distributed, and fat tissue is its major reservoir. Vitamin E is mainly eliminated in the bile (75%) and in stools, either as free tocopherol or as oxidised forms; urine represents a minor elimination route (as glucuronoconjugate) (Vedrop SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Alpha tocopherol (vitamin E) is the principal liposoluble antioxidant in the body: it is a free radical chain-breaking molecule that stops the peroxidation of polyunsaturated fatty acids and maintains cell membrane stability and integrity (Vedrop SmPC, section 5.1).",
+      "The two product families have completely different clinical roles. Vedrop is a prescription water-soluble d-alpha-tocopherol (tocofersolan) oral solution licensed only for vitamin E deficiency due to digestive malabsorption in paediatric patients with congenital or hereditary chronic cholestasis, birth to 18 years, dosed at 0.34 ml/kg/day (17 mg/kg/day of d-alpha-tocopherol) and titrated against plasma vitamin E; PNV-DHA and PRENATE DHA are prescription prenatal dietary supplements supplying dl-alpha-tocopherol acetate 10 IU per softgel (Vedrop SmPC, sections 4.1, 4.2 and 5.1; PNV-DHA label, Product Information).",
+      "High-dose vitamin E has a clinically relevant anticoagulant interaction: it increases bleeding tendency in vitamin-K deficient patients and in patients on oral anti-vitamins K, so monitor PT/INR and adjust the oral anticoagulant dose (Vedrop SmPC, section 4.4).",
+      "Tocofersolan inhibits P-glycoprotein and can increase absorption of other fat-soluble vitamins (A, D, E, K) and of highly lipophilic drugs such as cyclosporine, tacrolimus, steroids, antibiotics and antihistamines, so monitor and adjust doses of co-administered drugs (Vedrop SmPC, section 4.5).",
+      "The WHO Model List of Essential Medicines standardises the alpha-tocopherol content of the multiple micronutrient supplement for maternal care at 10 mg alpha tocopherol equivalent per tablet (WHO eEML, Multiple micronutrient supplement).",
+      "Vitamin E deficiency in cholestatic liver disease is treated with a water-soluble form because the malabsorption is the cause of the deficiency; monitor plasma vitamin E monthly for the first few months and then at regular intervals (Vedrop SmPC, section 4.2).",
+      "PNV-DHA and PRENATE DHA are dietary supplements, not FDA-approved drugs; their labels state that the statements have not been evaluated by the FDA and that the products are not intended to diagnose, treat, cure or prevent any disease (PNV-DHA label, Disclaimers; PRENATE DHA label, Disclaimers)."
+    ],
+    "brand_names": ["PNV-DHA", "PRENATE DHA", "Vedrop"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Experience with tocofersolan therapy in patients with renal impairment has demonstrated no need to adapt the dose regimen of Vedrop; however, because data in patients with renal impairment are limited, Vedrop should be administered with caution and under close monitoring of renal function, for example in dehydrated patients (Vedrop SmPC, sections 4.2 and 4.4). The PNV-DHA and PRENATE DHA labels contain no renal impairment section.",
+    "hepatic_dose_adjustment": "Experience with tocofersolan therapy in patients with underlying liver impairment has demonstrated no need to adapt the dose regimen of Vedrop; however, Vedrop should be administered with caution and under close monitoring of hepatic function in such patients (Vedrop SmPC, sections 4.2 and 4.4). The PNV-DHA and PRENATE DHA labels contain no hepatic impairment section.",
+    "administration_instructions": "Vedrop: oral, with or without water. Use the 1 ml or 2 ml oral syringes supplied in the pack to measure the dose; the 1 ml syringe is graduated from 0.05 to 1 ml in steps of 0.05 ml, with each graduation corresponding to 2.5 mg of d-alpha-tocopherol in the form of tocofersolan, and the 2 ml syringe is graduated from 0.1 to 2 ml in steps of 0.1 ml, with each graduation corresponding to 5 mg of d-alpha-tocopherol in the form of tocofersolan. Each ml contains 50 mg of d-alpha-tocopherol in the form of tocofersolan, equivalent to 74.5 IU of tocopherol. Store below the stated conditions: no special storage conditions; shelf life 2 years unopened and 1 month after first opening (Vedrop SmPC, sections 4.2, 6.3, 6.4 and 6.6). PNV-DHA and PRENATE DHA: one gelatin-coated softgel daily by mouth, before, during and/or after pregnancy, as a dietary supplement or as directed by a physician; store at 20 to 25 degrees C (68 to 77 degrees F) with excursions permitted to 15 to 30 degrees C (59 to 86 degrees F) (USP Controlled Room Temperature) (PNV-DHA label, DIRECTIONS, DOSAGE AND ADMINISTRATION and STORAGE; PRENATE DHA label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Vedrop 50 mg/ml oral solution SmPC (d-alpha-tocopherol as tocofersolan, Recordati Rare Diseases UK Ltd), sections 5.1 and 5.2",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "Vedrop SmPC, section 4.1; FDA PNV-DHA label, INDICATIONS and Product Information (Active Ingredient) section; FDA PRENATE DHA label, INDICATIONS; WHO Model List of Essential Medicines (eEML), section 27 Vitamins and minerals, Multiple micronutrient supplement",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=038fe2e7-dc16-485c-b5fb-746db7231347"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Vedrop SmPC, section 4.3; FDA PNV-DHA label, CONTRAINDICATIONS; FDA PRENATE DHA label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f2eca71-9a82-4a19-9206-36a04b865fe1"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Vedrop SmPC, section 4.8; FDA PNV-DHA label, ADVERSE REACTIONS; FDA PRENATE DHA label, ADVERSE REACTIONS",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "Vedrop SmPC, sections 4.1 and 4.2; FDA PNV-DHA label, DIRECTIONS, DOSAGE AND ADMINISTRATION and Product Information; FDA PRENATE DHA label, DOSAGE AND ADMINISTRATION; WHO eEML, Multiple micronutrient supplement",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "Vedrop SmPC, sections 4.4 and 4.5; FDA PNV-DHA label, WARNING; FDA PRENATE DHA label, WARNING",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Vedrop SmPC, sections 4.2, 4.4 and 4.5",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Vedrop SmPC, sections 4.2, 4.4, 4.5 and 4.6; FDA PNV-DHA label, DIRECTIONS and WARNING; FDA PRENATE DHA label, WARNING",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "Vedrop SmPC, sections 4.3 and 4.4; FDA PNV-DHA label, WARNING; FDA PRENATE DHA label, WARNING",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "Vedrop SmPC, sections 4.4, 4.5, 5.1 and 5.3; FDA PNV-DHA label, PRECAUTIONS and DESCRIPTION; FDA PRENATE DHA label, PRECAUTIONS and DESCRIPTION",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Vedrop SmPC, sections 4.3, 4.4 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Vedrop SmPC, sections 4.2 and 5.2; FDA PNV-DHA label, DESCRIPTION; FDA PRENATE DHA label, DESCRIPTION",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: neither the Vedrop SmPC nor the FDA PNV-DHA/PRENATE DHA dietary supplement labels assign a letter pregnancy category",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Vedrop SmPC, section 4.6; FDA PNV-DHA label, INDICATIONS and DOSAGE AND ADMINISTRATION; FDA PRENATE DHA label, INDICATIONS and DOSAGE AND ADMINISTRATION; WHO eEML, Multiple micronutrient supplement",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Vedrop SmPC, section 4.6; FDA PNV-DHA label, INDICATIONS; FDA PRENATE DHA label, INDICATIONS",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "Vedrop SmPC, section 4.9; FDA PNV-DHA label, WARNING; FDA PRENATE DHA label, WARNING",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Vedrop SmPC, section 5.2 (Absorption, Distribution, Elimination)",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Vedrop SmPC, sections 4.1, 4.2, 4.4, 4.5, 5.1 and 5.2; FDA PNV-DHA label, Product Information and Disclaimers; WHO eEML, Multiple micronutrient supplement",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "PNV-DHA and PRENATE DHA (alpha-tocopherol acetate prenatal dietary supplements) on DailyMed; Vedrop 50 mg/ml oral solution (d-alpha-tocopherol) on the electronic medicines compendium",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f2eca71-9a82-4a19-9206-36a04b865fe1"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA PNV-DHA or PRENATE DHA dietary supplement labels, and the Vedrop SmPC carries EU additional monitoring (black triangle) status rather than a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=038fe2e7-dc16-485c-b5fb-746db7231347"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Vedrop SmPC, sections 4.2 and 4.4; FDA PNV-DHA and PRENATE DHA labels contain no renal impairment section",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Vedrop SmPC, sections 4.2 and 4.4; FDA PNV-DHA and PRENATE DHA labels contain no hepatic impairment section",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Vedrop SmPC, sections 4.2, 6.3, 6.4 and 6.6; FDA PNV-DHA label, DIRECTIONS, DOSAGE AND ADMINISTRATION and STORAGE; FDA PRENATE DHA label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://www.medicines.org.uk/emc/product/5949/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult alpha-tocopherol content and the WHO multiple micronutrient supplement dose are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative Vedrop paediatric regimen is given in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the sources used)"
+  ],
+  "notes": "The table stores this agent as 'Alpha Tocopherol' with brand_names ['PNV-DHA']. Alpha-tocopherol (vitamin E) is not a single FDA-licensed drug, and the monograph therefore distinguishes the two source products: (1) Vedrop 50 mg/ml oral solution, an MHRA/EMA-authorised prescription product supplying d-alpha-tocopherol as tocofersolan for vitamin E deficiency due to malabsorption in paediatric cholestasis, which is the source of the mechanism, interaction, monitoring, pharmacokinetic and adverse reaction content; and (2) the FDA prescription prenatal dietary supplements PNV-DHA and PRENATE DHA, which are the products carrying the alpha-tocopherol content in the database row (dl-alpha-tocopherol acetate 10 IU per softgel in PNV-DHA). The WHO Model List of Essential Medicines is used for the alpha-tocopherol equivalent content of the WHO multiple micronutrient supplement for maternal care (10 mg alpha tocopherol equivalent per tablet). Where a PNV-DHA or PRENATE DHA statement concerns folic acid, iron or the omega-3 DHA content rather than alpha-tocopherol, the field says so explicitly. Neither the FDA dietary supplement labels nor the Vedrop SmPC assign a letter pregnancy category, so fields.pregnancy_category is null, and neither carries a boxed warning, so fields.black_box_warnings is an empty array. Note that the EmulsiVit E-300 DailyMed label for d-alpha-tocopherol injection is an animal-use-only product and was deliberately not used."
+}

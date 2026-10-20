@@ -1,0 +1,221 @@
+{
+  "name": "Allopurinol",
+  "existing_id": "fd3d1349-010f-42d5-aa47-d0ceabc927fe",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Allopurinol is a structural analogue of the natural purine base, hypoxanthine. It acts on purine catabolism, without disrupting the biosynthesis of purines, and reduces the production of uric acid by inhibiting the biochemical reactions immediately preceding its formation. It is an inhibitor of xanthine oxidase, the enzyme responsible for the conversion of hypoxanthine to xanthine and of xanthine to uric acid, the end product of purine metabolism in humans. Allopurinol is metabolized to the corresponding xanthine analogue, oxypurinol (alloxanthine), which also is an inhibitor of xanthine oxidase, and the pharmacological action of allopurinol is generally believed to be mediated by its oxypurinol metabolite (FDA allopurinol tablets label, sections 12.1 and 12.2).",
+    "indications": [
+      "Management of adults with signs and symptoms of primary or secondary gout (acute attacks, tophi, joint destruction, uric acid lithiasis and/or nephropathy) (FDA allopurinol tablets label, section 1).",
+      "Management of adult and pediatric patients with leukemia, lymphoma and solid tumor malignancies who are receiving cancer therapy which causes elevations of serum and urinary uric acid levels (FDA allopurinol tablets label, section 1).",
+      "Management of adult patients with recurrent calcium oxalate calculi whose daily uric acid excretion exceeds 800 mg/day in male patients and 750 mg/day in female patients, despite lifestyle changes such as reduction of dietary sodium, non-dairy animal protein, oxalate-rich foods and refined sugars, and increases in oral fluids, fruits and vegetables (FDA allopurinol tablets label, section 1).",
+      "Limitation of use: allopurinol tablets are not recommended for the treatment of asymptomatic hyperuricemia (FDA allopurinol tablets label, section 1)."
+    ],
+    "contraindications": [
+      "Allopurinol tablets are contraindicated in patients with a history of a hypersensitivity reaction to allopurinol or to any of the ingredients of allopurinol tablets (FDA allopurinol tablets label, section 4)."
+    ],
+    "side_effects": [
+      "The most frequent adverse reaction to allopurinol tablets is skin rash (FDA allopurinol tablets label, section 6).",
+      "Most common adverse reactions (1% or more): gastrointestinal - diarrhea, nausea, alkaline phosphatase increase, AST/ALT increase; metabolic and nutritional - acute attacks of gout; skin and appendages - rash and maculopapular rash (FDA allopurinol tablets label, section 6).",
+      "Less common adverse reactions (less than 1%) included ecchymosis, fever, headache and malaise; necrotizing angiitis, vasculitis, pericarditis, peripheral vascular disease, thrombophlebitis, bradycardia and vasodilation; hepatic necrosis, granulomatous hepatitis, hepatomegaly, hyperbilirubinemia, cholestatic jaundice, vomiting, intermittent abdominal pain, gastritis, dyspepsia, hemorrhagic pancreatitis, gastrointestinal bleeding, stomatitis, salivary gland swelling, hyperlipidemia, tongue edema and anorexia (FDA allopurinol tablets label, section 6).",
+      "Hemic and lymphatic (less than 1%): thrombocytopenia, eosinophilia, leukocytosis, leukopenia, aplastic anemia, agranulocytosis, eosinophilic fibrohistiocytic lesion of bone marrow, pancytopenia, prothrombin decrease, anemia, hemolytic anemia, reticulocytosis, lymphadenopathy and lymphocytosis (FDA allopurinol tablets label, section 6).",
+      "Nervous system (less than 1%): peripheral neuropathy, neuritis, paresthesia, somnolence, optic neuritis, confusion, dizziness, vertigo, foot drop, decreased libido, depression, amnesia, tinnitus, asthenia and insomnia (FDA allopurinol tablets label, section 6).",
+      "Serious and sometimes fatal dermatologic reactions - toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome (SJS) and drug reaction with eosinophilia and systemic symptoms (DRESS) - have been reported and occur in approximately 5 in 10,000 (0.05%) patients taking allopurinol; other reported serious hypersensitivity reactions include exfoliative, urticarial and purpuric lesions, generalized vasculitis and irreversible hepatotoxicity (FDA allopurinol tablets label, sections 5.1 and 6).",
+      "Skin and appendages (less than 1%): erythema multiforme exudativum (Stevens-Johnson syndrome), toxic epidermal necrolysis (Lyell's syndrome), hypersensitivity vasculitis, purpura, vesicular bullous dermatitis, exfoliative dermatitis, eczematoid dermatitis, pruritus, urticaria, alopecia, onycholysis, lichen planus, furunculosis, facial edema, sweating and skin edema (FDA allopurinol tablets label, section 6).",
+      "Urogenital (less than 1%): renal failure, uremia, nephritis, impotence, primary hematuria and albuminuria (FDA allopurinol tablets label, section 6).",
+      "Drowsiness, somnolence and dizziness have been reported; the central nervous system depressant effects of allopurinol may be additive to those of alcohol and other CNS depressants (FDA allopurinol tablets label, section 5.6).",
+      "Hepatotoxicity: reversible clinical hepatotoxicity has occurred, and asymptomatic rises in serum alkaline phosphatase or serum transaminases have been observed (FDA allopurinol tablets label, section 5.4).",
+      "Myelosuppression manifested by anemia, leukopenia or thrombocytopenia; the cytopenias have occurred as early as 6 weeks up to 6 years after initiation of therapy (FDA allopurinol tablets label, section 5.5)."
+    ],
+    "dosage": {
+      "adult": "Before initiating treatment in patients with gout, assess serum uric acid level, complete blood count, chemistry panel, liver and kidney function tests, and start prophylactic anti-inflammatory therapy. Gout: initial dosage 100 mg orally daily, with weekly increments of 100 mg until a serum uric acid level of 6 mg/dL or less is reached; the minimal effective dosage is 100 mg to 200 mg daily and the maximal recommended dosage is 800 mg daily, given in divided doses or as a single equivalent dose with the 300 mg tablet, with doses in excess of 300 mg administered in divided doses. Gout control is generally achieved with 200 mg to 300 mg daily in mild gout and 400 mg to 600 mg daily in moderate to severe tophaceous gout. Hyperuricemia associated with cancer therapy: initiate 24 to 48 hours before the start of chemotherapy known to cause tumor cell lysis; adults 300 mg to 800 mg orally daily, with serum uric acid monitored at least daily, and discontinue allopurinol when the risk of tumor lysis has abated (2 to 3 days from the start of chemotherapy). Recurrent calcium oxalate calculi: 200 mg to 300 mg orally daily in divided doses or as the single equivalent (FDA allopurinol tablets label, sections 2.1 to 2.5).",
+      "geriatric": null,
+      "paediatric": "Hyperuricemia associated with cancer therapy: 100 mg/m2 orally every 8 to 12 hours (10 mg/kg/day, maximum 800 mg/day); in patients with a body surface area below 0.5 m2 consider using an alternative allopurinol formulation. The safety and effectiveness of allopurinol for the management of pediatric patients with leukemia, lymphoma and solid tumor malignancies who are receiving cancer therapy which causes elevations of serum and urinary uric acid levels have been established in approximately 200 pediatric patients, with an efficacy and safety profile similar to adults. Safety and effectiveness have not been established for the treatment of primary or secondary gout, for recurrent calcium oxalate calculi, or for rare inborn errors of purine metabolism in pediatric patients (FDA allopurinol tablets label, sections 2.4 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Bendamustine, thiazide diuretics, ampicillin and amoxicillin: concomitant use may increase the risk of skin rash, which may be severe, and renal impairment may further increase the risk with concomitant thiazide diuretics. Monitor kidney function and reduce the dose of allopurinol in patients with concomitant thiazide diuretic use and impaired renal function, and discontinue allopurinol at the first appearance of skin rash (FDA allopurinol tablets label, sections 7.1 and 5.1).",
+      "Mercaptopurine or azathioprine: allopurinol inhibits xanthine oxidase mediated metabolism of mercaptopurine and azathioprine, increasing exposure to either drug and the risk of myelosuppression. Concomitant administration of 300 mg to 600 mg of allopurinol per day requires a reduction in the dose of mercaptopurine or azathioprine to approximately one third to one fourth of the usual dose, with subsequent adjustment based on therapeutic response and the appearance of toxic effects (FDA allopurinol tablets label, sections 5.5 and 7.2).",
+      "Capecitabine: avoid concomitant use, because allopurinol may decrease concentrations of capecitabine's active metabolites and thereby decrease capecitabine efficacy (FDA allopurinol tablets label, section 7.2).",
+      "Pegloticase: discontinue and do not institute allopurinol therapy during treatment with pegloticase, because the combination may blunt the rise of serum uric acid levels and increase the risk of pegloticase-related anaphylaxis (FDA allopurinol tablets label, section 7.2).",
+      "Warfarin: allopurinol may inhibit the metabolism of warfarin, possibly enhancing its anticoagulant effect; monitor for excessive anticoagulation, assess INR frequently and adjust the warfarin dose accordingly (FDA allopurinol tablets label, section 7.2).",
+      "Theophylline: concomitant use of allopurinol doses of 600 mg/day or greater may decrease the clearance of theophylline; monitor and adjust theophylline doses (FDA allopurinol tablets label, section 7.2).",
+      "Cyclosporine: allopurinol increases cyclosporine concentrations and the risk of adverse reactions; increase the frequency of cyclosporine concentration monitoring and modify the cyclosporine dose as appropriate (FDA allopurinol tablets label, section 7.2).",
+      "Chlorpropamide: allopurinol prolongs the half-life of chlorpropamide as both compete for renal tubular excretion; monitor patients with renal insufficiency for hypoglycemia (FDA allopurinol tablets label, section 7.2).",
+      "Dicumarol: allopurinol prolongs the half-life of the anticoagulant dicumarol; monitor prothrombin time and adjust the dicumarol dose accordingly (FDA allopurinol tablets label, section 7.2).",
+      "Cyclophosphamide and other cytotoxic agents (doxorubicin, bleomycin, procarbazine, mechloroethamine): concomitant use increases bone marrow suppression among patients with neoplastic disease except leukemia; blood count monitoring and regular physician follow-up are recommended (FDA allopurinol tablets label, section 7.2).",
+      "Fluorouracil: based on non-clinical data, allopurinol may decrease anti-tumor activity due to suppression of phosphorylation of 5-fluorouracil; concomitant administration should be avoided (FDA allopurinol tablets label, section 7.2).",
+      "Uricosuric agents: these increase the excretion of the active metabolite oxypurinol, decreasing oxypurinol exposure and reducing xanthine oxidase inhibition; monitor uric acid levels due to the increased chance of hypouricemic effects (FDA allopurinol tablets label, section 7.2)."
+    ],
+    "monitoring": "Before initiating treatment in patients with gout, assess serum uric acid level, complete blood count, chemistry panel, liver function tests (ALT, AST, alkaline phosphatase and total bilirubin) and kidney function tests (serum creatinine and eGFR) (FDA allopurinol tablets label, section 2.1). Titrate against serum uric acid with a target of 6 mg/dL or less (FDA allopurinol tablets label, section 2.3). For hyperuricemia associated with cancer therapy, monitor serum uric acid levels at least daily and administer allopurinol at a dose and frequency that maintains serum uric acid within the normal range (FDA allopurinol tablets label, section 2.4). Monitor kidney function frequently during the early stages of allopurinol administration in patients with gout or recurrent calcium oxalate calculi, and at least daily during the early stages in patients being treated for tumor lysis syndrome; maintain fluid intake sufficient for a daily urinary output of at least 2 litres of neutral or, preferably, slightly alkaline urine (FDA allopurinol tablets label, section 5.3). Evaluate liver enzymes if anorexia, weight loss or pruritus develop, monitor liver enzymes periodically in patients with pre-existing liver disease, and discontinue allopurinol in patients with elevated liver enzymes (FDA allopurinol tablets label, section 5.4). Monitor blood counts more frequently when allopurinol is used concomitantly with cytotoxic drugs associated with myelosuppression (FDA allopurinol tablets label, section 5.5). Consider screening for HLA-B*5801 before starting treatment in patients from populations in which the prevalence of the allele is known to be high; screening is generally not recommended in populations with a low prevalence of HLA-B*58:01 or in current allopurinol users, since the risk of SJS/TEN/DRESS is largely confined to the first few months of therapy regardless of HLA-B*58:01 status (FDA allopurinol tablets label, section 5.1).",
+    "patient_counselling": "Advise patients to take allopurinol tablets after meals to minimize gastric irritation, and that if a single dose is occasionally forgotten there is no need to double the dose at the next scheduled time (FDA allopurinol tablets label, section 17). Tell patients that allopurinol can cause serious and sometimes fatal dermatologic reactions and to discontinue allopurinol and seek medical attention immediately at the first sign of a skin rash, blisters, fever, painful urination, blood in the urine, irritation of the eyes, swelling of the lips or mouth, or other signs of hypersensitivity (FDA allopurinol tablets label, section 17). Explain that gout flares may occur when allopurinol is started even if serum uric acid is normal, that concurrent use of colchicine or another anti-inflammatory can prevent flares, that both medicines should be continued as prescribed even if flares occur, and that it may take months to achieve control although flares typically become shorter and less severe over several months of therapy (FDA allopurinol tablets label, section 17). Advise increasing fluid intake during therapy, at least 2 litres of liquids per day for adults, and staying well hydrated to prevent kidney stones (FDA allopurinol tablets label, section 17). Tell patients about the risk of hepatotoxicity and to report jaundice, pruritus, bleeding, bruising or anorexia, and about the risk of myelosuppression and to report signs of infection, fever, bleeding, shortness of breath or significant fatigue (FDA allopurinol tablets label, section 17). Inform patients that drowsiness, somnolence and dizziness have been reported and that the central nervous system depressant effects may be additive to those of alcohol and other CNS depressants, and advise them to avoid operating automobiles or other dangerous machinery when starting allopurinol or increasing the dose until they know how it affects them (FDA allopurinol tablets label, section 17). Advise patients to disclose all medicines in use, specifically dicumarol, warfarin, sulfinpyrazone, mercaptopurine, azathioprine, ampicillin, amoxicillin, pegloticase, theophylline and thiazide diuretics (FDA allopurinol tablets label, section 17). Advise pregnant women of the potential risk to a fetus and to notify their healthcare provider if they become pregnant or intend to become pregnant, and advise women not to breastfeed during treatment and for one week after the last dose (FDA allopurinol tablets label, sections 8.1, 8.2 and 17).",
+    "warnings": [
+      "Skin rash and hypersensitivity: allopurinol has been associated with serious and sometimes fatal dermatological reactions - toxic epidermal necrolysis, Stevens-Johnson syndrome and DRESS - occurring in approximately 5 in 10,000 (0.05%) patients taking allopurinol. Discontinue allopurinol permanently at the first appearance of skin rash or other signs which may indicate a hypersensitivity reaction (FDA allopurinol tablets label, section 5.1).",
+      "The HLA-B*58:01 allele is a genetic marker for severe skin reactions indicative of hypersensitivity to allopurinol; carriers are at higher risk of allopurinol hypersensitivity syndrome (AHS), and the use of allopurinol is not recommended in HLA-B*58:01 positive patients unless the benefits clearly outweigh the risks (FDA allopurinol tablets label, section 5.1).",
+      "Gout flares may occur during initiation of treatment; concurrent prophylactic treatment with colchicine or anti-inflammatory agents is recommended (FDA allopurinol tablets label, section 5.2).",
+      "Nephrotoxicity: allopurinol may affect kidney function and may cause acute kidney injury due to formation of xanthine calculi or precipitation of urates in patients receiving concomitant uricosuric agents; patients with decreased kidney function require lower doses (FDA allopurinol tablets label, section 5.3).",
+      "Hepatotoxicity: cases of reversible hepatotoxicity have occurred; if signs and symptoms of hepatotoxicity develop, evaluate liver function, and discontinue allopurinol in patients with elevated liver enzymes (FDA allopurinol tablets label, section 5.4).",
+      "Myelosuppression: bone marrow suppression has been reported with allopurinol, and concomitant use with cytotoxic drugs associated with myelosuppression may increase the risk (FDA allopurinol tablets label, section 5.5).",
+      "Potential effect on driving and use of machinery: drowsiness, somnolence and dizziness have been reported in patients taking allopurinol (FDA allopurinol tablets label, section 5.6)."
+    ],
+    "precautions": [
+      "Allopurinol tablets are not recommended for the treatment of asymptomatic hyperuricemia (FDA allopurinol tablets label, section 1).",
+      "Flare prophylaxis with colchicine or an anti-inflammatory agent according to practice guidelines is recommended upon initiation of allopurinol; continue the prophylactic agent until serum uric acid has been normalized and the patient has been free of gout flares for several months, and do not discontinue allopurinol if a flare occurs - manage the flare concurrently (FDA allopurinol tablets label, section 2.2).",
+      "Initiating treatment with lower dosages and titrating slowly decreases the risk of gout flares and drug-induced serious adverse reactions (FDA allopurinol tablets label, section 2.3).",
+      "Maintain a fluid intake sufficient to yield a daily urinary output of at least 2 litres and a neutral or preferably slightly alkaline urine to avoid the possibility of formation of xanthine calculi and to help prevent renal precipitation of urates in patients receiving concomitant uricosuric agents (FDA allopurinol tablets label, sections 2.3 and 5.3).",
+      "When transferring a patient from a uricosuric agent to allopurinol, reduce the dose of the uricosuric agent over a period of several weeks and increase the dose of allopurinol gradually to the dose needed to maintain the target serum uric acid level (FDA allopurinol tablets label, section 2.3).",
+      "Discontinue allopurinol when the risk of tumor lysis has abated, 2 to 3 days from the start of chemotherapy (FDA allopurinol tablets label, section 2.4).",
+      "Allopurinol tablets are generally better tolerated if taken following meals (FDA allopurinol tablets label, section 2.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious and sometimes fatal dermatologic reactions including toxic epidermal necrolysis, Stevens-Johnson syndrome and DRESS (FDA allopurinol tablets label, sections 5.1 and 6).",
+      "Other serious hypersensitivity reactions including exfoliative, urticarial and purpuric lesions, generalized vasculitis and irreversible hepatotoxicity (FDA allopurinol tablets label, section 5.1).",
+      "Myelosuppression - anemia, leukopenia, thrombocytopenia, pancytopenia, aplastic anemia and agranulocytosis (FDA allopurinol tablets label, sections 5.5 and 6).",
+      "Acute kidney injury from xanthine calculi or urate precipitation (FDA allopurinol tablets label, section 5.3).",
+      "Hepatotoxicity, including granulomatous hepatitis, hepatic necrosis, cholestatic jaundice and hyperbilirubinemia (FDA allopurinol tablets label, sections 5.4 and 6)."
+    ],
+    "food_interactions": [
+      "Take allopurinol tablets after meals to minimize gastric irritation (FDA allopurinol tablets label, section 17).",
+      "Maintain fluid intake sufficient to yield a daily urinary output of at least 2 litres with neutral or, preferably, slightly alkaline urine, to avoid xanthine calculi and renal precipitation of urates (FDA allopurinol tablets label, sections 2.3 and 5.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on findings in animals, allopurinol tablets may cause fetal harm when administered to a pregnant woman. Allopurinol and its metabolite oxypurinol cross the placenta following administration of maternal allopurinol. Available limited published data on allopurinol use in pregnant women do not demonstrate a clear pattern or increase in frequency of adverse developmental outcomes; among approximately 50 pregnancies described in the published literature, 2 infants with major congenital malformations have been reported following maternal allopurinol exposure. There was no evidence of fetotoxicity or teratogenicity in rats or rabbits treated during organogenesis with oral allopurinol at doses up to 200 mg/kg/day and up to 100 mg/kg/day respectively (about 2.4 times the human dose on a mg/m2 basis); a published report in pregnant mice given single intraperitoneal doses of 50 or 100 mg/kg (about 0.3 or 0.6 times the human dose on a mg/m2 basis) on gestation days 10 or 13 showed significant increases in fetal deaths and teratogenic effects (cleft palate, harelip and digital defects), and it is uncertain whether these represented a fetal effect or an effect secondary to maternal toxicity. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA allopurinol tablets label, section 8.1).",
+    "lactation_guidance": "Allopurinol and oxypurinol are present in human milk. Based on information from a single case report, allopurinol and its active metabolite oxypurinol were detected in the milk of a mother receiving 300 mg of allopurinol daily at 5 weeks postpartum, with estimated relative infant doses of 0.14 mg/kg and 0.2 mg/kg of allopurinol and between 7.2 mg/kg and 8 mg/kg of oxypurinol daily. There was no report of effects of allopurinol on the breastfed infant or on milk production. Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatment with allopurinol tablets and for one week after the last dose (FDA allopurinol tablets label, section 8.2).",
+    "overdose": "In the management of overdosage there is no specific antidote for allopurinol tablets. Both allopurinol tablets and oxypurinol are dialyzable; however, the usefulness of hemodialysis or peritoneal dialysis in the management of an overdose of allopurinol tablets is unknown (FDA allopurinol tablets label, section 10).",
+    "pharmacokinetics": "Allopurinol tablets are approximately 90% absorbed from the gastrointestinal tract. Peak plasma levels generally occur at 1.5 hours for allopurinol and 4.5 hours for oxypurinol, and after a single oral dose of 300 mg maximum plasma levels of about 3 mcg/mL of allopurinol and 6.5 mcg/mL of oxypurinol are produced. The half-lives of allopurinol and oxypurinol are approximately 1 hour to 2 hours and 15 hours respectively following oral dosing. Allopurinol and its primary active metabolite oxypurinol are eliminated by the kidneys, with approximately 20% of the ingested allopurinol excreted in the feces; oxypurinol is primarily eliminated unchanged in urine by glomerular filtration and tubular reabsorption (FDA allopurinol tablets label, section 12.3).",
+    "clinical_pearls": [
+      "Screen for HLA-B*5801 in patients from populations with a high prevalence of the allele - the frequency is 8% to 10% in Han Chinese, about 8% in Thai, about 6% in Korean, about 4% in Black populations, about 1% to 2% in indigenous peoples of the Americas and Hispanic populations, and less than 1% in people of European descent and Japanese (FDA allopurinol tablets label, sections 5.1 and 12.5).",
+      "Start low and titrate slowly: starting with lower dosages and increasing by 100 mg weekly (or by 50 mg/day every 2 to 4 weeks in renal impairment) reduces both gout flares and drug-induced serious adverse reactions (FDA allopurinol tablets label, sections 2.3 and 2.6).",
+      "Always pair initiation with anti-inflammatory flare prophylaxis and tell the patient not to stop allopurinol if a flare occurs - flares are usually transient and reflect urate mobilisation, not treatment failure (FDA allopurinol tablets label, section 2.2).",
+      "The classic lethal interaction is with azathioprine or mercaptopurine: xanthine oxidase inhibition raises thiopurine exposure, so the thiopurine dose must be reduced to about one third to one fourth (FDA allopurinol tablets label, section 7.2).",
+      "Target a serum uric acid of 6 mg/dL or less; the minimal effective dose is 100 mg to 200 mg daily and the maximum recommended is 800 mg daily, with doses over 300 mg given in divided doses (FDA allopurinol tablets label, section 2.3).",
+      "Keep urine output above 2 litres per day and slightly alkaline, because xanthine calculi and urate precipitation can cause acute kidney injury (FDA allopurinol tablets label, section 5.3).",
+      "Do not combine with pegloticase (anaphylaxis risk) and avoid with capecitabine (reduced active metabolite exposure) (FDA allopurinol tablets label, section 7.2)."
+    ],
+    "brand_names": ["Zyloprim"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Initial dosage in adult patients with gout, by eGFR: more than 60 mL/min - no dosage modification; more than 30 to 60 mL/min - 50 mg daily; more than 15 to 30 mL/min - 50 mg every other day; 5 to 15 mL/min - 50 mg twice weekly; less than 5 mL/min - 50 mg once weekly. Increase the dose gradually in 50 mg/day increments every 2 to 4 weeks, use the lowest dose possible to achieve the desired effect on serum and/or urine uric acid, and monitor kidney function closely, decreasing or withdrawing the drug if abnormalities appear and persist. The maximum dosage at the different eGFR levels is not defined. For hyperuricemia associated with cancer therapy: eGFR more than 20 to 60 mL/min - no dosage modification; 10 to 20 mL/min - 200 mg/day; less than 10 mL/min - 100 mg/day; on dialysis - 50 mg every 12 hours or 100 mg every 24 hours. Data are insufficient to provide dosage recommendations for recurrent calcium oxalate calculi in renal impairment, and there is insufficient information to establish dosing for pediatric patients with renal impairment (FDA allopurinol tablets label, sections 2.6 and 8.6).",
+    "hepatic_dose_adjustment": "No formal hepatic dose adjustment is specified in the label. Discontinue allopurinol tablets in patients with elevated liver enzymes; evaluate liver enzymes if anorexia, weight loss or pruritus develop, and monitor liver enzymes periodically in patients with pre-existing liver disease (FDA allopurinol tablets label, section 5.4).",
+    "administration_instructions": "Oral. Take after meals to minimize gastric irritation. If a single dose is occasionally forgotten, there is no need to double the dose at the next scheduled time. Tablets are functionally scored and available as 100 mg, 200 mg and 300 mg; doses in excess of 300 mg should be administered in divided doses. Store at 20 to 25 degrees C (68 to 77 degrees F) in a dry place and dispense in a tight container as defined by the USP (FDA allopurinol tablets label, sections 2.3, 3, 16 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA allopurinol tablets label (AvKARE/Indoco), sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA allopurinol tablets label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA allopurinol tablets label, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA allopurinol tablets label, sections 5.1, 5.4, 5.5, 5.6 and 6 Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA allopurinol tablets label, sections 2.1-2.6 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA allopurinol tablets label, sections 5.1, 5.5, 7.1 and 7.2 (Table 3)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA allopurinol tablets label, sections 2.1, 2.3, 2.4, 5.1, 5.3, 5.4 and 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA allopurinol tablets label, section 17 Patient Counseling Information; sections 8.1 and 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA allopurinol tablets label, section 5 and subsections 5.1-5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA allopurinol tablets label, sections 1, 2.2, 2.3, 2.4 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA allopurinol tablets label, sections 5.1, 5.3, 5.4, 5.5 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA allopurinol tablets label, sections 2.3, 5.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA allopurinol tablets label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA allopurinol tablets label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA allopurinol tablets label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA allopurinol tablets label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA allopurinol tablets label, sections 2.2, 2.3, 2.6, 5.1, 5.3, 7.2 and 12.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ZYLOPRIM (allopurinol) 100 mg and 300 mg tablet label (DB row lists the generic 'Allopurinol')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=342832b5-1a32-4bea-bc49-ab0fd152154e"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in the allopurinol tablets label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA allopurinol tablets label, sections 2.6 (Tables 1 and 2) and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA allopurinol tablets label, section 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA allopurinol tablets label, sections 2.3, 3, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses the PLLR risk summary; no FDA pregnancy letter category stated)",
+    "dosage.geriatric (the allopurinol tablets label contains no Geriatric Use section and no geriatric-specific dose recommendation)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the allopurinol tablets label)"
+  ],
+  "notes": "The table stores this agent as 'Allopurinol'; the DB row brand_names lists the generic name. ZYLOPRIM is the historical branded product and is cited separately for the brand name only. The clinical content is sourced from the current US allopurinol tablets label (AvKARE/Indoco, DailyMed setid 5d330416-4289-762e-e063-6294a90a532e, effective October 2026), which contains the HLA-B*58:01 pharmacogenomic guidance in sections 5.1 and 12.5 that the older Zyloprim label lacks. There is no boxed warning. The label contains no Geriatric Use section, so fields.dosage.geriatric is null rather than inferred."
+}

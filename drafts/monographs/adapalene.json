@@ -1,0 +1,208 @@
+{
+  "name": "Adapalene",
+  "existing_id": "a960c63a-3e0c-490d-bbc1-71bc5b397696",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Adapalene is a synthetic retinoid (a naphthoic acid derivative) with chemical name 6-[3-(1-adamantyl)-4-methoxyphenyl]-2-naphthoic acid, molecular formula C28H28O3 and molecular weight 412.53. Mechanistically, adapalene binds to specific retinoic acid nuclear receptors but does not bind to cytosolic receptor protein. Biochemical and pharmacological profile studies have demonstrated that adapalene is a modulator of cellular differentiation, keratinization and inflammatory processes, all of which are important features in the pathology of acne vulgaris. It is suggested that topical adapalene normalizes the differentiation of follicular epithelial cells, resulting in decreased microcomedone formation, although the exact mode of action and the clinical significance of these findings are stated as unknown (FDA Differin (adapalene) Gel label, sections 11 and 12.1; FDA Adapalene Cream 0.1% label, CLINICAL PHARMACOLOGY). In the fixed combination with benzoyl peroxide, benzoyl peroxide is a highly lipophilic oxidising agent that localises in both bacterial and keratinocyte cell membranes (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 11).",
+    "indications": [
+      "DIFFERIN (adapalene) Gel 0.3%: topical treatment of acne vulgaris in patients 12 years of age and older (FDA Differin (adapalene) Gel label, section 1).",
+      "Adapalene cream 0.1%: topical treatment of acne vulgaris (FDA Adapalene Cream 0.1% label, INDICATIONS AND USAGE).",
+      "Adapalene and benzoyl peroxide gel 0.1%/2.5%: topical treatment of acne vulgaris in patients 9 years of age and older (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 1).",
+      "Adapalene and benzoyl peroxide gel 0.3%/2.5%: topical treatment of acne vulgaris in adults and paediatric patients 12 years of age and older (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 1)."
+    ],
+    "contraindications": [
+      "DIFFERIN (adapalene) Gel: contraindicated in patients who have known hypersensitivity to adapalene or any excipient of the gel (FDA Differin (adapalene) Gel label, section 4).",
+      "Adapalene cream 0.1%: should not be administered to individuals who are hypersensitive to adapalene or any of the components in the cream vehicle (FDA Adapalene Cream 0.1% label, CONTRAINDICATIONS).",
+      "Adapalene and benzoyl peroxide gel 0.1%/2.5%: the label states no contraindications (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 4).",
+      "Adapalene and benzoyl peroxide gel 0.3%/2.5%: contraindicated in patients with a history of hypersensitivity reactions to benzoyl peroxide or any components of the formulation (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 4)."
+    ],
+    "side_effects": [
+      "The most frequently reported adverse reactions with DIFFERIN (adapalene) Gel, incidence at least 1%, are erythema, scaling, dryness and/or burning/stinging (FDA Differin (adapalene) Gel label, section 6).",
+      "In a 12-week controlled trial in 258 acne subjects using DIFFERIN Gel once daily, physician-assessed local cutaneous irritation was: scaling 43.5% mild / 18.6% moderate / 1.2% severe; dryness 44.7% / 17.0% / 0.8%; burning-stinging 28.5% / 14.2% / 3.6%; erythema 26.1% / 13.0% / 0.4%. Most cases were mild to moderate, occurred early in treatment and decreased thereafter (FDA Differin (adapalene) Gel label, section 6.1, Table 1).",
+      "Patient-reported related reactions with DIFFERIN Gel versus vehicle gel: dry skin 22.1% versus 1.6%, skin discomfort 14% versus 4.5%, desquamation 5.8% versus 1.5% (FDA Differin (adapalene) Gel label, section 6.1, Table 2).",
+      "Adverse reactions occurring in less than 1% of subjects with DIFFERIN Gel: acne flare, contact dermatitis, eyelid oedema, conjunctivitis, erythema, pruritus, skin discoloration, rash and eczema (FDA Differin (adapalene) Gel label, section 6.1).",
+      "Postmarketing with adapalene: angioedema, face oedema, lip swelling and application site pain (FDA Differin (adapalene) Gel label, section 6.2).",
+      "With adapalene and benzoyl peroxide gel 0.1%/2.5%: most commonly reported adverse events (at least 1%) were dry skin (7% versus 2% with vehicle), contact dermatitis (3% versus less than 1%), application site burning (2%), application site irritation (1%) and skin irritation; 14% of subjects had adverse events versus 4% on vehicle gel (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 6.1, Table 1).",
+      "With adapalene and benzoyl peroxide gel 0.3%/2.5%: the most common adverse reactions (incidence at least 1%) are skin irritation, eczema, atopic dermatitis and skin burning sensation (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 6).",
+      "For adapalene cream 0.1%, local cutaneous irritation (erythema, dryness, scaling, pruritus and burning) was monitored in 285 acne patients treated once daily for 12 weeks in controlled trials (FDA Adapalene Cream 0.1% label, ADVERSE REACTIONS)."
+    ],
+    "dosage": {
+      "adult": "DIFFERIN (adapalene) Gel: wash affected areas gently with a non-medicated soap, then apply a thin film of DIFFERIN Gel to the entire face and any other affected areas of the skin once daily in the evening. Avoid the skin around the eyes, lips and mucous membranes. For topical use only; not for ophthalmic, oral or intravaginal use. If therapeutic results are not noticed after 12 weeks of treatment, therapy should be re-evaluated (FDA Differin (adapalene) Gel label, section 2). Adapalene cream 0.1%: apply a thin film to the affected skin once daily at nighttime, using enough to cover the entire affected areas lightly (FDA Adapalene Cream 0.1% label, DOSAGE AND ADMINISTRATION). Adapalene and benzoyl peroxide gel 0.1%/2.5% (and 0.3%/2.5%): apply a thin layer to affected areas of the face and/or trunk once daily after washing, using a pea-sized amount for each area of the face (forehead, chin, each cheek); avoid the eyes, lips and mucous membranes (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2).",
+      "geriatric": "Clinical studies of DIFFERIN (adapalene) Gel did not include subjects 65 years of age and older, and safety and effectiveness in geriatric patients aged 65 and above have not been established (FDA Differin (adapalene) Gel label, section 8.5). Clinical studies of adapalene cream 0.1% were conducted in patients 12 to 30 years of age and did not include subjects 65 years or older; other reported clinical experience has not identified differences in responses between elderly and younger patients (FDA Adapalene Cream 0.1% label, Geriatric Use). Clinical studies of adapalene and benzoyl peroxide gel did not include sufficient numbers of subjects 65 years of age and over to determine whether they respond differently from younger subjects (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 8.5).",
+      "paediatric": "DIFFERIN (adapalene) Gel: indicated for patients 12 years of age and older; safety and effectiveness have not been established in paediatric patients below the age of 12 (FDA Differin (adapalene) Gel label, sections 1 and 8.4). Adapalene cream 0.1%: safety and effectiveness in paediatric patients below the age of 12 have not been established (FDA Adapalene Cream 0.1% label, Pediatric Use). Adapalene and benzoyl peroxide gel 0.1%/2.5%: indicated in patients 9 years of age and older, and safety and effectiveness in paediatric patients under the age of 9 have not been established (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, sections 1 and 8.4). Adapalene and benzoyl peroxide gel 0.3%/2.5%: indicated in adults and paediatric patients 12 years of age and older, and safety and effectiveness under 12 years have not been established (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, sections 1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Other potentially irritating topical products: because adapalene has the potential to induce local irritation, concomitant use of medicated or abrasive soaps and cleansers, soaps and cosmetics with a strong drying effect, and products with high concentrations of alcohol, astringents, spices or lime should be approached with caution (FDA Differin (adapalene) Gel label, section 5.3).",
+      "Particular caution should be exercised with preparations containing sulfur, resorcinol or salicylic acid in combination with adapalene; if these have been used, it is advisable not to start adapalene until their effects on the skin have subsided (FDA Adapalene Cream 0.1% label, Drug Interactions).",
+      "Concomitant topical acne therapy should be used with caution with adapalene and benzoyl peroxide gel because a possible cumulative irritancy effect may occur, especially with peeling, desquamating or abrasive agents; no formal drug-drug interaction studies were conducted (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 7).",
+      "Moisturisers may be used if necessary, but products containing alpha hydroxy or glycolic acids should be avoided (FDA Differin (adapalene) Gel label, section 17; FDA Adapalene Cream 0.1% label, Information for Patients).",
+      "No formal drug-drug interaction studies were conducted with adapalene and benzoyl peroxide gel 0.1%/2.5% (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 7)."
+    ],
+    "monitoring": "The FDA adapalene labels specify no routine laboratory monitoring; monitoring is clinical. Assess the skin for local cutaneous irritation (erythema, scaling, dryness, stinging/burning) at each review, and step treatment down or stop if severity requires it (FDA Differin (adapalene) Gel label, sections 5.3 and 17). Re-evaluate therapy if no therapeutic result is seen after 12 weeks of treatment with DIFFERIN Gel (FDA Differin (adapalene) Gel label, section 2). Advise the patient to report skin rash, pruritus, hives, chest pain, oedema or shortness of breath, which may be signs of allergy or hypersensitivity, and instruct them to stop the product and seek medical attention for allergic or anaphylactoid/anaphylactic reactions (FDA Differin (adapalene) Gel label, sections 5.1 and 17). For adapalene and benzoyl peroxide gel 0.3%/2.5%, monitor for hypersensitivity reactions including anaphylaxis, angioedema and urticaria, and discontinue immediately and initiate appropriate therapy if a serious reaction occurs (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.1).",
+    "patient_counselling": "Cleanse the area to be treated with a mild or soapless cleanser and pat dry before applying (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 17). Apply a thin film to the entire face and any other affected areas once daily in the evening; do not use more than the recommended amount or apply more than once daily, as this will not produce faster results but may increase irritation (FDA Differin (adapalene) Gel label, section 17; adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 17). Avoid contact with the eyes, lips, angles of the nose and mucous membranes; the product is for external use only and is not for ophthalmic, oral or intravaginal use (FDA Differin (adapalene) Gel label, section 17). Do not apply to cuts, abrasions, eczematous or sunburned skin, and do not use wax depilation on treated skin because of the risk of skin erosions (FDA Differin (adapalene) Gel label, section 17; FDA Adapalene Cream 0.1% label, Information for Patients). Minimise exposure to sunlight including sunlamps, and use sunscreen products and protective apparel such as a hat when exposure cannot be avoided (FDA Differin (adapalene) Gel label, section 17). Moisturisers may be used if necessary but products containing alpha hydroxy or glycolic acids should be avoided. Contact the doctor if skin rash, pruritus, hives, chest pain, oedema or shortness of breath occurs, as these may be signs of allergy or hypersensitivity. During the early weeks of therapy an apparent exacerbation of acne may occur; this reflects the action of the medication on previously unseen lesions and is not by itself a reason to discontinue, with consistent benefit generally requiring at least eight weeks (FDA Adapalene Cream 0.1% label, Information for Patients). Adapalene and benzoyl peroxide gel may bleach hair and coloured fabrics, so wash hands after application (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2). While breastfeeding, use adapalene on the smallest area of skin and for the shortest duration possible, and avoid areas with increased risk of ingestion by or ocular exposure to the breastfeeding child; do not apply to the nipple or areola (FDA Differin (adapalene) Gel label, section 8.2; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 8.2).",
+    "warnings": [
+      "Allergic/hypersensitivity reactions: adverse reactions including anaphylaxis, angioedema, face oedema, eyelid oedema, lip swelling and pruritus that sometimes required medical treatment have been reported during postmarketing use of adapalene; discontinue DIFFERIN Gel and seek medical attention if these occur (FDA Differin (adapalene) Gel label, sections 5.1 and 6.2).",
+      "Ultraviolet light and environmental exposure: exposure to sunlight, including sunlamps, should be minimised during use; patients with high sun exposure or inherent sun sensitivity should exercise caution, and sunscreen and protective clothing are recommended when exposure cannot be avoided (FDA Differin (adapalene) Gel label, section 5.2).",
+      "Local cutaneous reactions: erythema, scaling, dryness and stinging/burning are most likely in the first four weeks of treatment, are mostly mild to moderate, and usually lessen with continued use; depending on severity, patients should use a moisturiser, reduce the frequency of application or discontinue (FDA Differin (adapalene) Gel label, section 5.3).",
+      "For adapalene and benzoyl peroxide gel 0.3%/2.5%: severe hypersensitivity reactions including anaphylaxis and angioedema have been reported with benzoyl peroxide products; discontinue immediately and initiate appropriate therapy if a serious reaction occurs (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.1).",
+      "Photosensitivity for adapalene and benzoyl peroxide gel 0.3%/2.5%: avoid exposure to sunlight and sunlamps and use broad spectrum sunscreen and protective clothing when sun exposure cannot be avoided (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.2).",
+      "Eye exposure to adapalene cream may result in reactions such as swelling, conjunctivitis and eye irritation (FDA Adapalene Cream 0.1% label, Information for Patients)."
+    ],
+    "precautions": [
+      "For topical use only; not for ophthalmic, oral or intravaginal use (FDA Differin (adapalene) Gel label, section 2).",
+      "Do not apply to cuts, abrasions, eczematous or sunburned skin; as with other retinoids, avoid using waxing as a depilatory method on skin treated with adapalene because of the risk of skin erosions (FDA Differin (adapalene) Gel label, sections 5.3 and 17).",
+      "Weather extremes such as wind or cold may be irritating to patients under treatment with adapalene (FDA Differin (adapalene) Gel label, section 5.2).",
+      "A mild transitory sensation of warmth or slight stinging may occur shortly after application of adapalene (FDA Differin (adapalene) Gel label, section 2).",
+      "Store DIFFERIN Gel at controlled room temperature, 20 to 25 degrees C, with excursions permitted between 15 and 30 degrees C; protect from freezing and keep out of reach of children (FDA Differin (adapalene) Gel label, section 16).",
+      "If a reaction suggesting sensitivity or chemical irritation occurs, use of the medication should be discontinued (FDA Adapalene Cream 0.1% label, PRECAUTIONS)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and angioedema, including face, eyelid and lip oedema, reported in postmarketing use of adapalene and requiring medical treatment in some cases (FDA Differin (adapalene) Gel label, sections 5.1 and 6.2).",
+      "Severe hypersensitivity reactions including anaphylaxis and angioedema reported with benzoyl peroxide-containing products, including adapalene and benzoyl peroxide gel 0.3%/2.5% (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.1).",
+      "Irritant and allergic contact dermatitis, which may necessitate discontinuation (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.3).",
+      "Eye irritation, conjunctivitis and eyelid oedema from ocular exposure (FDA Adapalene Cream 0.1% label, Information for Patients)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA adapalene labels; adapalene is applied topically and systemic absorption is very low. The relevant dietary caution is for the combination product, in which benzoyl peroxide is rapidly metabolised to benzoic acid, an endogenous substance that is eliminated in the urine (FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 8.1)."
+    ],
+    "pregnancy_category": "C (FDA Adapalene Cream 0.1% label, Pregnancy: Teratogenic effects. Pregnancy Category C; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.1). The current FDA DIFFERIN (adapalene) Gel 0.3% label states no letter category and instead uses the Pregnancy and Lactation Labeling Rule risk summary.",
+    "pregnancy_guidance": "Available data from clinical trials with adapalene use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes (FDA Differin (adapalene) Gel label, section 8.1). In animal studies, oral administration of adapalene to pregnant rats and rabbits during organogenesis at 40 and 81 times the human exposure at the maximum recommended human dose of 2 g produced fetal skeletal and visceral malformations, including cleft palate, microphthalmia, encephalocele, umbilical hernia, exophthalmos and skeletal abnormalities; dermal adapalene embryofetal development studies in rats and rabbits at doses up to 6.0 mg/kg/day exhibited no fetotoxicity and only minimal increases in skeletal variations (FDA Differin (adapalene) Gel label, section 8.1). For adapalene cream 0.1%: no teratogenic effects were seen in rats at oral doses of 0.15 to 5.0 mg/kg/day, but adapalene was teratogenic at oral doses of 25 mg/kg or more (100 and 200 times the maximum recommended human dose in rats and rabbits); there are no adequate and well-controlled studies in pregnant women, so adapalene should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA Adapalene Cream 0.1% label, Pregnancy). For adapalene and benzoyl peroxide gel 0.1%/2.5%, the label states Pregnancy Category C and that the product should be used during pregnancy only if the potential benefit justifies the risk to the fetus (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.1). The US background risk of major birth defects and miscarriage in clinically recognised pregnancies is 2% to 4% and 15% to 20% respectively (FDA Differin (adapalene) Gel label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of topical adapalene gel or its metabolite in human milk, on the effects on the breastfed infant, or on the effects on milk production. In animal studies adapalene is present in rat milk with oral administration. When a drug is present in animal milk it is likely to be present in human milk, and topical application of large amounts of adapalene could result in sufficient systemic absorption to produce detectable quantities in human milk. To minimise potential exposure to the breastfed infant via breastmilk, use adapalene on the smallest area of skin and for the shortest duration possible while breastfeeding, and avoid application to areas with increased risk of ingestion by or ocular exposure to the breastfeeding child (FDA Differin (adapalene) Gel label, section 8.2). For adapalene cream 0.1%: it is not known whether the drug is excreted in human milk, so caution should be exercised when it is administered to a nursing woman (FDA Adapalene Cream 0.1% label, Nursing Mothers). For adapalene and benzoyl peroxide gel 0.1%/2.5%: it is not known whether adapalene or benzoyl peroxide is excreted in human milk, so caution should be exercised in nursing women (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.3).",
+    "overdose": "Adapalene cream is intended for cutaneous use only. If applied excessively, no more rapid or better results will be obtained and marked redness, scaling or skin discomfort may occur. The acute oral toxicity of adapalene cream in mice and rats is greater than 10 mL/kg, and chronic ingestion of the drug may lead to the same side effects as those associated with excessive oral intake of vitamin A (FDA Adapalene Cream 0.1% label, OVERDOSAGE; FDA Differin (adapalene) Gel label, section 10).",
+    "pharmacokinetics": "Systemic exposure to adapalene after topical application is very low. In the DIFFERIN (adapalene) Gel 0.3% trial, 16 acne subjects received 2 g applied to the face, chest and back (approximately 2 mg/cm2) once daily for 10 days; 15 of 16 had quantifiable levels (limit of quantification 0.1 ng/mL) with a mean Cmax of 0.553 +/- 0.466 ng/mL on Day 10 and a mean AUC 0-24h of 8.37 +/- 8.46 ng.h/mL. The terminal apparent half-life ranged from 7 to 51 hours, mean 17.2 +/- 10.2 hours, and adapalene was not detected 72 hours after the last application in all but one subject. In a second trial using DIFFERIN Gel 0.3% or adapalene gel 0.1% once daily for 12 weeks, adapalene concentrations were below the limit of detection (0.15 ng/mL) in all but three of 209 plasma samples, and in those three only traces below the limit of quantification (0.25 ng/mL) were found. Excretion of adapalene appears to be primarily by the biliary route (FDA Differin (adapalene) Gel label, section 12.3). For adapalene cream 0.1%, absorption through human skin is low: in six acne patients treated with 2 g applied to 1000 cm2 of acne-involved skin once daily for 5 days there were no quantifiable amounts (limit of quantification 0.35 ng/mL) of adapalene in any plasma sample (FDA Adapalene Cream 0.1% label, Pharmacokinetics).",
+    "clinical_pearls": [
+      "Adapalene is a topical retinoid; systemic absorption is minimal, so local irritation rather than systemic retinoid toxicity dominates the adverse-reaction profile (FDA Differin (adapalene) Gel label, section 12.3).",
+      "Irritant dermatitis is expected in the first four weeks and usually settles with continued use; instruct patients to moisturise or reduce frequency rather than abandon therapy (FDA Differin (adapalene) Gel label, section 5.3).",
+      "An early flare of acne can occur in the first weeks because the drug acts on previously unseen lesions; this is not a reason to stop, and consistent benefit needs at least eight weeks (FDA Adapalene Cream 0.1% label, Information for Patients).",
+      "Review at 12 weeks: if there is no therapeutic result, re-evaluate the diagnosis and treatment rather than continuing indefinitely (FDA Differin (adapalene) Gel label, section 2).",
+      "Adapalene and benzoyl peroxide combination gel bleaches hair and coloured fabrics (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2).",
+      "Do not use wax depilation on adapalene-treated skin, and avoid alpha hydroxy and glycolic acid products, which add irritancy (FDA Differin (adapalene) Gel label, section 17).",
+      "Different FDA adapalene products carry different minimum ages: adapalene and benzoyl peroxide gel 0.1%/2.5% is licensed from 9 years, whereas DIFFERIN Gel 0.3% and adapalene and benzoyl peroxide gel 0.3%/2.5% are from 12 years (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 1; FDA Differin (adapalene) Gel label, section 1; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 1)."
+    ],
+    "brand_names": [
+      "Differin (adapalene gel, Galderma)",
+      "Differin Epiduo / Epiduo (adapalene 0.1% and benzoyl peroxide 2.5% gel, Galderma)",
+      "Epiduo Forte (adapalene 0.3% and benzoyl peroxide 2.5% gel, Galderma)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Topical use only; not for ophthalmic, oral or intravaginal use (FDA Differin (adapalene) Gel label, section 2). DIFFERIN (adapalene) Gel: wash affected areas gently with a non-medicated soap and apply a thin film to the entire face and any other affected areas once daily in the evening; avoid the skin around the eyes, lips and mucous membranes; if no results are seen after 12 weeks, re-evaluate therapy (FDA Differin (adapalene) Gel label, section 2). Adapalene cream 0.1%: apply a thin film to affected skin once daily at nighttime, sufficient to cover the entire affected areas lightly (FDA Adapalene Cream 0.1% label, DOSAGE AND ADMINISTRATION). Adapalene and benzoyl peroxide gel: apply a thin layer to affected areas of the face and/or trunk once daily after washing, using a pea-sized amount per facial area, avoiding the eyes, lips and mucous membranes; wash hands after application as the product may bleach hair or coloured fabrics (FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2). Storage: DIFFERIN Gel 0.3% is supplied in a 45 g pump and should be stored at controlled room temperature, 20 to 25 degrees C, with excursions permitted between 15 and 30 degrees C, protected from freezing and out of reach of children (FDA Differin (adapalene) Gel label, section 16); adapalene cream 0.1% is supplied in a 45 g tube stored at controlled room temperature, 20 to 25 degrees C, protected from freezing (FDA Adapalene Cream 0.1% label, HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Differin (adapalene) Gel 0.3%, Galderma, sections 11 and 12.1; FDA Adapalene Cream 0.1% label, CLINICAL PHARMACOLOGY; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Differin (adapalene) Gel label, section 1; FDA Adapalene Cream 0.1% label, INDICATIONS AND USAGE; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 1; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Differin (adapalene) Gel label, section 4; FDA Adapalene Cream 0.1% label, CONTRAINDICATIONS; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 4; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Differin (adapalene) Gel label, sections 6, 6.1 and 6.2; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 6.1; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 6; FDA Adapalene Cream 0.1% label, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Differin (adapalene) Gel label, sections 2 and 8.5; FDA Adapalene Cream 0.1% label, DOSAGE AND ADMINISTRATION and Geriatric Use; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, sections 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Differin (adapalene) Gel label, sections 5.3 and 17; FDA Adapalene Cream 0.1% label, Drug Interactions; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Differin (adapalene) Gel label, sections 2, 5.1, 5.3 and 17; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Differin (adapalene) Gel label, sections 8.2 and 17; FDA Adapalene Cream 0.1% label, Information for Patients; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, sections 2 and 17; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Differin (adapalene) Gel label, sections 5.1, 5.2, 5.3 and 6.2; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, sections 5.1 and 5.2; FDA Adapalene Cream 0.1% label, Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Differin (adapalene) Gel label, sections 2, 5.2, 5.3, 16 and 17; FDA Adapalene Cream 0.1% label, PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Differin (adapalene) Gel label, sections 5.1 and 6.2; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, sections 5.1 and 5.3; FDA Adapalene Cream 0.1% label, Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 8.1 (no food interaction described; topical route and benzoyl peroxide metabolism to benzoic acid)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25e4ee12-f43a-4c87-9e34-64e91d06a368"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA Adapalene Cream 0.1% label, Pregnancy (Pregnancy Category C); FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.1 (Pregnancy Category C); FDA Differin (adapalene) Gel label, section 8.1 (PLLR risk summary, no letter category)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f8189a2-a7ec-441b-993c-fed28b3ae24f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Differin (adapalene) Gel label, section 8.1; FDA Adapalene Cream 0.1% label, Pregnancy; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Differin (adapalene) Gel label, section 8.2; FDA Adapalene Cream 0.1% label, Nursing Mothers; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Adapalene Cream 0.1% label, OVERDOSAGE; FDA Differin (adapalene) Gel label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f8189a2-a7ec-441b-993c-fed28b3ae24f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Differin (adapalene) Gel label, section 12.3; FDA Adapalene Cream 0.1% label, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Differin (adapalene) Gel label, sections 1, 2, 5.3, 12.3 and 17; FDA Adapalene Cream 0.1% label, Information for Patients; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, sections 1 and 2; FDA adapalene and benzoyl peroxide gel 0.3%/2.5% label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Differin (adapalene gel) and Differin Epiduo (adapalene 0.1% and benzoyl peroxide 2.5% gel) listed on DailyMed; Epiduo Forte (adapalene 0.3% and benzoyl peroxide 2.5% gel) listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae3f8cd9-9046-4b69-b80f-3e9d4468ba7f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA adapalene, adapalene cream, or adapalene/benzoyl peroxide gel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Differin (adapalene) Gel label, sections 2 and 16; FDA Adapalene Cream 0.1% label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED; FDA adapalene and benzoyl peroxide gel 0.1%/2.5% label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0031324-92a6-4c11-90e2-c2818f7278ec"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric information is provided in fields.dosage.paediatric)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA adapalene, adapalene cream, or adapalene/benzoyl peroxide gel labels)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA adapalene, adapalene cream, or adapalene/benzoyl peroxide gel labels)"
+  ],
+  "notes": "The table stores this agent as 'Adapalene' with the brand name 'Adapalene and Benzoyl Peroxide Gel, 0.1%/2.5%', which is a fixed-dose combination product rather than adapalene monotherapy, and the monotherapy brand (Differin) is not recorded in the row. This monograph therefore covers adapalene as the active agent across three US label presentations: adapalene gel 0.3% (Differin), adapalene cream 0.1%, and the adapalene/benzoyl peroxide combination gels 0.1%/2.5% and 0.3%/2.5%, with each statement attributed to the label it came from. The products differ in minimum age (9 years for the 0.1%/2.5% combination, 12 years for Differin Gel 0.3% and the 0.3%/2.5% combination) and in contraindication wording (the 0.1%/2.5% label states no contraindications, while the 0.3%/2.5% label contraindicates benzoyl peroxide hypersensitivity). Pregnancy lettering is inconsistent between labels: the adapalene 0.1% cream and the 0.1%/2.5% combination state Pregnancy Category C, whereas the current Differin Gel 0.3% label uses the PLLR risk summary with no letter category - both are stated explicitly above. Adapalene has no boxed warning."
+}

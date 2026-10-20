@@ -1,0 +1,204 @@
+{
+  "name": "Amlodipine",
+  "existing_id": "b0000000-0000-0000-0000-000000000003",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amlodipine is a dihydropyridine calcium antagonist (calcium ion antagonist or slow-channel blocker) that inhibits the transmembrane influx of calcium ions into vascular smooth muscle and cardiac muscle; experimental data suggest that amlodipine binds to both dihydropyridine and nondihydropyridine binding sites. Amlodipine inhibits calcium ion influx across cell membranes selectively, with a greater effect on vascular smooth muscle cells than on cardiac muscle cells. Negative inotropic effects can be detected in vitro but such effects have not been seen in intact animals at therapeutic doses, and serum calcium concentration is not affected by amlodipine. Within the physiologic pH range amlodipine is an ionized compound (pKa 8.6) and its kinetic interaction with the calcium channel receptor is characterized by a gradual rate of association and dissociation with the receptor binding site, resulting in a gradual onset of effect. Amlodipine is a peripheral arterial vasodilator that acts directly on vascular smooth muscle to cause a reduction in peripheral vascular resistance and reduction in blood pressure. For angina, in exertional angina amlodipine reduces the total peripheral resistance (afterload) against which the heart works and reduces the rate-pressure product, thus myocardial oxygen demand at any given level of exercise; in vasospastic angina amlodipine has been demonstrated to block constriction and restore blood flow in coronary arteries and arterioles in response to calcium, potassium, epinephrine, serotonin and thromboxane A2 analog in experimental animal models and in human coronary vessels in vitro, and this inhibition of coronary spasm is responsible for its effectiveness in vasospastic (Prinzmetal's or variant) angina (NORVASC label, section 12.1).",
+    "indications": [
+      "Hypertension: to lower blood pressure and reduce the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions; may be used alone or in combination with other antihypertensive agents (NORVASC label, sections 1 and 1.1).",
+      "Chronic stable angina: symptomatic treatment, alone or in combination with other antianginal agents (NORVASC label, section 1.2).",
+      "Vasospastic angina (Prinzmetal's or variant angina): treatment of confirmed or suspected vasospastic angina, as monotherapy or in combination with other antianginal agents (NORVASC label, section 1.2).",
+      "Angiographically documented coronary artery disease: in patients with recently documented CAD by angiography and without heart failure or an ejection fraction < 40%, to reduce the risk of hospitalization for angina and the risk of a coronary revascularization procedure (NORVASC label, section 1.2)."
+    ],
+    "contraindications": ["Known sensitivity to amlodipine (NORVASC label, section 4)."],
+    "side_effects": [
+      "Peripheral edema is the most common adverse reaction and occurred in a dose-related manner: 1.8% at 2.5 mg, 3.0% at 5 mg and 10.8% at 10 mg (versus 0.6% with placebo) in controlled trials in 1,730 patients; edema was more frequent in women (14.6% versus 5.1% for placebo in women; 5.6% in men) (NORVASC label, sections 6 and 6.1).",
+      "Other dose-related adverse reactions: dizziness (1.1% at 2.5 mg, 3.4% at 5 mg and 10 mg), flushing (0.7%, 1.4%, 2.6%) and palpitation (0.7%, 1.4%, 4.5%) (NORVASC label, section 6.1).",
+      "Adverse reactions reported in more than 1.0% of patients and not clearly dose related: fatigue (4.5% vs 2.8% placebo), nausea (2.9% vs 1.9%), abdominal pain (1.6% vs 0.3%) and somnolence (1.4% vs 0.6%) (NORVASC label, section 6.1).",
+      "Discontinuation of NORVASC because of adverse reactions was required in only about 1.5% of patients and was not significantly different from placebo (about 1%) in controlled trials of 1,730 patients at doses up to 10 mg (NORVASC label, section 6.1).",
+      "Post-marketing: gynecomastia has been reported infrequently where a causal relationship is uncertain; jaundice and hepatic enzyme elevations (mostly consistent with cholestasis or hepatitis), in some cases severe enough to require hospitalization, have been reported; and a possible association between extrapyramidal disorder and amlodipine has been revealed (NORVASC label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "Hypertension: the usual initial oral dose is 5 mg once daily and the maximum dose is 10 mg once daily; small, fragile or elderly patients, or patients with hepatic insufficiency, may be started on 2.5 mg once daily and this dose may be used when adding NORVASC to other antihypertensive therapy. Adjust dosage according to blood pressure goals; in general wait 7 to 14 days between titration steps, titrating more rapidly only if clinically warranted provided the patient is assessed frequently. Angina: the recommended dose for chronic stable or vasospastic angina is 5-10 mg, with the lower dose suggested in the elderly and in patients with hepatic insufficiency, and most patients will require 10 mg for adequate effect. Coronary artery disease: the recommended dose range is 5-10 mg once daily, and in clinical studies the majority of patients required 10 mg (NORVASC label, sections 2 and 2.1).",
+      "geriatric": "Clinical studies of NORVASC did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy. Elderly patients have decreased clearance of amlodipine with a resulting increase of AUC of approximately 40-60%, and a lower initial dose may be required - small, fragile or elderly patients may be started on 2.5 mg once daily (NORVASC label, sections 2.1 and 8.5).",
+      "paediatric": "The effective antihypertensive oral dose in pediatric patients aged 6-17 years is 2.5 mg to 5 mg once daily; doses in excess of 5 mg daily have not been studied in pediatric patients (NORVASC label, sections 2 and 2.2). The effect of NORVASC on blood pressure in patients less than 6 years of age is not known (NORVASC label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "CYP3A inhibitors (moderate and strong): co-administration results in increased systemic exposure to amlodipine and may require dose reduction; monitor for symptoms of hypotension and edema to determine the need for dose adjustment. Co-administration of a 180 mg daily dose of diltiazem with 5 mg amlodipine in elderly hypertensive patients resulted in a 60% increase in amlodipine systemic exposure, and strong inhibitors of CYP3A (e.g. itraconazole, clarithromycin) may increase plasma concentrations of amlodipine to a greater extent (NORVASC label, sections 7.1 and 12.3).",
+      "CYP3A inducers: no information is available on the quantitative effects of CYP3A inducers on amlodipine; blood pressure should be closely monitored when amlodipine is co-administered with CYP3A inducers (NORVASC label, section 7.1).",
+      "Simvastatin: co-administration of multiple doses of 10 mg amlodipine with 80 mg simvastatin resulted in a 77% increase in exposure to simvastatin; limit the dose of simvastatin in patients on amlodipine to 20 mg daily (NORVASC label, sections 7.2 and 12.3).",
+      "Immunosuppressants: amlodipine may increase the systemic exposure of cyclosporine or tacrolimus; frequent monitoring of trough blood levels of cyclosporine and tacrolimus is recommended and the dose adjusted when appropriate. Co-administration increased trough cyclosporine levels by an average of 40% in renal transplant patients, and increased tacrolimus exposure 2.5- to 4-fold in healthy Chinese volunteers with CYP3A5 expressers, with a 3-fold increase also reported in a renal transplant patient who was a CYP3A5 non-expresser; irrespective of CYP3A5 genotype status the possibility of an interaction cannot be excluded (NORVASC label, sections 7.2 and 12.3).",
+      "Sildenafil: monitor for hypotension when sildenafil is co-administered with amlodipine (NORVASC label, section 7.1).",
+      "Drugs that do not affect amlodipine exposure: co-administered cimetidine, magnesium- and aluminum-hydroxide antacids, sildenafil and grapefruit juice have no impact on the exposure of amlodipine, and amlodipine does not affect the exposure to atorvastatin, digoxin, ethanol or the warfarin prothrombin response time (NORVASC label, section 12.3)."
+    ],
+    "monitoring": "Monitor blood pressure and titrate at 7 to 14 day intervals according to blood pressure goals, assessing the patient frequently when titrating more rapidly (NORVASC label, section 2.1). Monitor for peripheral edema and other dose-related adverse effects, noting that edema occurred in about 10.8% of patients at 10 mg versus 1.8% at 2.5 mg and that it is more common in women (NORVASC label, section 6.1). Titrate slowly in patients with severe hepatic impairment, because NORVASC is extensively metabolized by the liver and the plasma elimination half-life is 56 hours in patients with impaired hepatic function (NORVASC label, section 5.3). Monitor trough cyclosporine and tacrolimus levels when co-administered and adjust the dose when appropriate (NORVASC label, section 7.2). Monitor for symptoms of hypotension and edema when amlodipine is co-administered with CYP3A inhibitors (NORVASC label, section 7.1). The pharmacokinetics of amlodipine are not significantly influenced by renal impairment, so patients with renal failure may receive the usual initial dose (NORVASC label, section 12.3).",
+    "patient_counselling": "Amlodipine besylate is a type of medicine known as a calcium channel blocker (CCB); it is used to treat high blood pressure (hypertension) and a type of chest pain called angina, and can be used by itself or with other medicines. Take amlodipine once a day, with or without food; it may be easier to take the dose at the same time every day, such as with breakfast or dinner, or at bedtime. Do not take more than one dose at a time. If a dose is missed, take it as soon as remembered; do not take the tablet if it has been more than 12 hours since the last dose, and wait and take the next dose at the regular time. Do not stop taking other prescription medicines, including other blood pressure medicines, without talking to the doctor. If too much amlodipine is taken, call the doctor or Poison Control Center or go to the nearest hospital emergency room right away. Tell the doctor about all prescription and non-prescription medicines and supplements being taken, and about heart disease, liver problems, pregnancy or plans for pregnancy, and breastfeeding (amlodipine passes into breast milk). Possible side effects include swelling of the legs or ankles, tiredness or extreme sleepiness, stomach pain, nausea, dizziness, flushing, arrhythmia (irregular heartbeat), heart palpitations, and muscle rigidity, tremor and/or abnormal muscle movement. It is rare, but when first starting amlodipine or increasing the dose, a heart attack may occur or angina may get worse - in that case call the doctor right away or go directly to a hospital emergency room. Do not start any new prescription or non-prescription medicines or supplements without checking with the doctor first (Amlodipine besylate tablets, USP Patient Package Insert).",
+    "warnings": [
+      "Symptomatic hypotension is possible, particularly in patients with severe aortic stenosis; because of the gradual onset of action, acute hypotension is unlikely (NORVASC label, section 5.1).",
+      "Worsening angina and acute myocardial infarction can develop after starting or increasing the dose of NORVASC, particularly in patients with severe obstructive coronary artery disease (NORVASC label, section 5.2).",
+      "Patients with hepatic failure: because NORVASC is extensively metabolized by the liver and the plasma elimination half-life is 56 hours in patients with impaired hepatic function, titrate slowly when administering NORVASC to patients with severe hepatic impairment (NORVASC label, section 5.3).",
+      "Peripheral edema is the most common adverse reaction and occurred in a dose-related manner, so the risk of edema increases with dose; edema was more common in women than in men (NORVASC label, sections 6 and 6.1).",
+      "Post-marketing reports of jaundice and hepatic enzyme elevations, mostly consistent with cholestasis or hepatitis, in some cases severe enough to require hospitalization, have been associated with amlodipine use (NORVASC label, section 6.2)."
+    ],
+    "precautions": [
+      "Control of high blood pressure should be part of comprehensive cardiovascular risk management, including, as appropriate, lipid control, diabetes management, antithrombotic therapy, smoking cessation, exercise and limited sodium intake; many patients will require more than one drug to achieve blood pressure goals (NORVASC label, section 1.1).",
+      "Titrate slowly in patients with severe hepatic impairment (NORVASC label, section 5.3).",
+      "Amlodipine is not a diuretic, an ACE inhibitor or a beta blocker, so its use alone does not address the specific indications for which those agents are used, although it may be combined with them (NORVASC label, sections 1 and 1.1).",
+      "Doses in excess of 5 mg daily have not been studied in pediatric patients (NORVASC label, section 2.2).",
+      "Post-marketing reporting has revealed a possible association between extrapyramidal disorder and amlodipine (NORVASC label, section 6.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Worsening angina and acute myocardial infarction after starting or increasing the dose, particularly in patients with severe obstructive coronary artery disease (NORVASC label, section 5.2).",
+      "Symptomatic hypotension, particularly in patients with severe aortic stenosis (NORVASC label, section 5.1).",
+      "Peripheral edema, the most common adverse reaction, occurring in up to 10.8% at 10 mg (NORVASC label, sections 6 and 6.1).",
+      "Post-marketing jaundice and hepatic enzyme elevations, in some cases severe enough to require hospitalization (NORVASC label, section 6.2).",
+      "Hypotension with sildenafil co-administration and increased exposure to cyclosporine or tacrolimus with concomitant immunosuppressants (NORVASC label, sections 7.1 and 7.2)."
+    ],
+    "food_interactions": [
+      "Food does not alter the bioavailability of NORVASC (NORVASC label, section 12.3); amlodipine bisylate tablets may be taken with or without food (Amlodipine besylate tablets, USP Patient Package Insert). Grapefruit juice has no impact on the exposure of amlodipine (NORVASC label, section 12.3).",
+      "Taking amlodipine besylate tablets immediately after a high-fat meal is not prohibited by the label, but no meal-specific dosing instruction is given in the US labelling."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The limited available data based on post-marketing reports with NORVASC use in pregnant women are not sufficient to inform a drug-associated risk for major birth defects or miscarriage, and there are risks to the mother and fetus associated with poorly controlled hypertension in pregnancy. In animal reproduction studies there was no evidence of adverse developmental effects when pregnant rats and rabbits were treated orally with amlodipine maleate during organogenesis at doses approximately 10 and 20 times the maximum recommended human dose respectively; however, in rats litter size was significantly decreased by about 50% and the number of intrauterine deaths significantly increased by about 5-fold, and amlodipine maleate has been shown to prolong both the gestation period and the duration of labor in rats at that dose. Hypertension in pregnancy increases the maternal risk for pre-eclampsia, gestational diabetes, premature delivery and delivery complications and increases the fetal risk for intrauterine growth restriction and intrauterine death (NORVASC label, section 8.1).",
+    "lactation_guidance": "Limited available data from a published clinical lactation study reports that amlodipine is present in human milk at an estimated median relative infant dose of 4.2%. No adverse effects of amlodipine on the breastfed infant have been observed. There is no available information on the effects of amlodipine on milk production (NORVASC label, section 8.2).",
+    "overdose": "Overdosage might be expected to cause excessive peripheral vasodilation with marked hypotension and possibly a reflex tachycardia; experience with intentional overdosage in humans is limited. Single oral doses of amlodipine maleate equivalent to 40 mg/kg and 100 mg/kg in mice and rats respectively caused deaths, and single oral doses equivalent to 4 mg/kg or higher in dogs caused marked peripheral vasodilation and hypotension. If massive overdose should occur, initiate active cardiac and respiratory monitoring and frequent blood pressure measurements; should hypotension occur provide cardiovascular support including elevation of the extremities and judicious administration of fluids, and if hypotension remains unresponsive to these conservative measures consider vasopressors (such as phenylephrine) with attention to circulating volume and urine output. As NORVASC is highly protein bound, hemodialysis is not likely to be of benefit (NORVASC label, section 10).",
+    "pharmacokinetics": "After oral administration of therapeutic doses, absorption produces peak plasma concentrations between 6 and 12 hours, and absolute bioavailability has been estimated at between 64% and 90%; the bioavailability of NORVASC is not altered by the presence of food. Amlodipine is extensively (about 90%) converted to inactive metabolites by hepatic metabolism, with 10% of the parent compound and 60% of the metabolites excreted in the urine, and approximately 93% of the circulating drug is bound to plasma proteins in hypertensive patients. Elimination from the plasma is biphasic with a terminal elimination half-life of about 30-50 hours, and steady-state plasma levels are reached after 7 to 8 days of consecutive daily dosing. The pharmacokinetics of amlodipine are not significantly influenced by renal impairment, so patients with renal failure may receive the usual initial dose. Elderly patients and patients with hepatic insufficiency have decreased clearance with a resulting increase in AUC of approximately 40-60%, and a lower initial dose may be required; a similar increase in AUC was observed in patients with moderate to severe heart failure. Amlodipine is a weak inhibitor of CYP3A and may increase exposure to CYP3A substrates; co-administration of cimetidine, magnesium- and aluminum-hydroxide antacids, sildenafil and grapefruit juice has no impact on the exposure of amlodipine, and amlodipine does not affect exposure to atorvastatin, digoxin, ethanol or the warfarin prothrombin response time (NORVASC label, section 12.3).",
+    "clinical_pearls": [
+      "Amlodipine has a gradual onset and a long tail: the terminal elimination half-life is about 30-50 hours, steady state is reached only after 7 to 8 days of daily dosing, and the gradual onset means acute hypotension is unlikely (NORVASC label, sections 5.1 and 12.3).",
+      "Edema is dose-related and is the main dose-limiting effect - 1.8% at 2.5 mg, 3.0% at 5 mg and 10.8% at 10 mg, and it is significantly more common in women (14.6% vs 5.1% on placebo in women) (NORVASC label, section 6.1).",
+      "Start low in the frail, the elderly and in hepatic insufficiency: 2.5 mg once daily, because clearance falls and AUC rises by approximately 40-60% (NORVASC label, sections 2.1, 5.3 and 12.3).",
+      "Titrate slowly and at 7 to 14 day intervals, and if more rapidly is clinically warranted, assess the patient frequently (NORVASC label, section 2.1).",
+      "Worsening angina and acute myocardial infarction can occur after starting or increasing the dose, particularly in patients with severe obstructive coronary artery disease - the same caution applies to any calcium channel blocker in this group (NORVASC label, section 5.2).",
+      "Simvastatin is the interaction to remember: co-administration of 80 mg simvastatin with amlodipine increased simvastatin exposure by 77%, so simvastatin must be limited to 20 mg daily (NORVASC label, sections 7.2 and 12.3).",
+      "Amlodipine is one of the few antihypertensives that does not require dose adjustment in renal failure, because its pharmacokinetics are not significantly influenced by renal impairment (NORVASC label, section 12.3).",
+      "In hepatic failure the plasma elimination half-life is 56 hours, so titration must be slow (NORVASC label, section 5.3).",
+      "Amlodipine is approved in paediatric patients aged 6-17 years at 2.5-5 mg once daily, and doses above 5 mg daily have not been studied in children (NORVASC label, sections 2.2 and 8.4).",
+      "Because amlodipine is not a diuretic, ACE inhibitor or beta blocker, in heart-failure or post-MI management it does not substitute for those agents (NORVASC label, section 1.1)."
+    ],
+    "brand_names": ["Norvasc"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is required. The pharmacokinetics of amlodipine are not significantly influenced by renal impairment, and patients with renal failure may therefore receive the usual initial dose (NORVASC label, section 12.3).",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is stated, but patients with hepatic insufficiency have decreased clearance with an AUC increase of approximately 40-60% and should start at the low end of the range. Because NORVASC is extensively metabolized by the liver and the plasma elimination half-life is 56 hours in patients with impaired hepatic function, titrate slowly in patients with severe hepatic impairment (NORVASC label, sections 2.1, 5.3 and 12.3).",
+    "administration_instructions": "Oral, once daily, with or without food; the usual initial antihypertensive dose is 5 mg once daily with a maximum of 10 mg once daily, and small, fragile or elderly patients and patients with hepatic insufficiency may be started on 2.5 mg once daily. Store at 20 to 25 degrees C (68 to 77 degrees F), excursions permitted to 15 to 30 degrees C (59 to 86 degrees F), and dispense in a tight, light-resistant container (NORVASC label, sections 2.1, 12.3 and 16; Amlodipine besylate tablets, USP Patient Package Insert and section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, NORVASC (amlodipine besylate) tablets (Pfizer), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, NORVASC (amlodipine besylate) tablets, sections 1, 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, NORVASC (amlodipine besylate) tablets, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, NORVASC tablets, sections 6, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, NORVASC tablets, sections 2, 2.1, 2.2, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, NORVASC tablets, sections 7.1, 7.2 and 12.3 (Drug interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, NORVASC tablets, sections 2.1, 5.3, 6.1, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA-approved patient labelling, Amlodipine Besylate Tablets, USP (2.5 mg, 5 mg, and 10 mg) Patient Package Insert (Ascend Laboratories / Alkem)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5866d1ee-631d-d09e-e063-6294a90abe01"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, NORVASC tablets, sections 5.1, 5.2, 5.3, 6 and 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, NORVASC tablets, sections 1.1, 2.2, 5.3 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, NORVASC tablets, sections 5.1, 5.2, 6, 6.1, 6.2, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, NORVASC tablets, section 12.3 Pharmacokinetics (food effect, grapefruit juice); Amlodipine besylate tablets, USP Patient Package Insert",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, NORVASC tablets, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, NORVASC tablets, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, NORVASC tablets, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, NORVASC tablets, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, NORVASC tablets, sections 1.1, 2.1, 2.2, 5.1, 5.2, 5.3, 6.1, 7.2, 8.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Norvasc (amlodipine besylate) tablets listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7367289c-b0b0-466a-83e2-558e2985c29f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the NORVASC (amlodipine besylate) tablets labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, NORVASC tablets, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, NORVASC tablets, sections 2.1, 5.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, NORVASC tablets, sections 2.1, 12.3 and 16 How Supplied/Storage and Handling; Amlodipine besylate tablets, USP Patient Package Insert and section 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy category is stated in the NORVASC labelling; it uses the Pregnancy and Lactation Labeling Rule risk-summary format)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)"
+  ],
+  "notes": "The table stores this agent as 'Amlodipine'. The US label names are NORVASC (amlodipine besylate) tablets; amlodipine is also marketed as the besylate salt in generic tablets, and an oral solution (SDAMLO) exists, but the NORVASC label is used here as the authoritative source and the generic tablet label is used only for the FDA-approved patient package insert (the NORVASC label itself has no patient counselling section). Note that the US amlodipine label indications do NOT include heart failure or the use of amlodipine in acute myocardial infarction, and no such indication has been asserted here. FDA pregnancy categories are obsolete and the current NORVASC label uses the Pregnancy and Lactation Labeling Rule risk-summary format, so no pregnancy category is stated. The database brand_names field lists 'Amlodipine Besylate', which is the generic salt name rather than a brand; the verified brand product Norvasc has been recorded here instead. The drug_class column is currently null for this row."
+}

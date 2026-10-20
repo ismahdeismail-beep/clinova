@@ -1,0 +1,205 @@
+{
+  "name": "Alosetron",
+  "existing_id": "3334f7ef-7074-4121-ba4a-05716f7c2149",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alosetron is a potent and selective 5-HT3 receptor antagonist. 5-HT3 receptors are ligand-gated cation channels that are extensively distributed on enteric neurons in the human gastrointestinal tract, as well as other peripheral and central locations. Activation of these channels and the resulting neuronal depolarization affect the regulation of visceral pain, colonic transit and gastrointestinal secretions, processes that relate to the pathophysiology of IBS. 5-HT3 receptor antagonists such as alosetron inhibit activation of non-selective cation channels, which results in the modulation of the enteric nervous system. Following distention of the rectum, patients with IBS exhibit pain and discomfort at lower volumes than healthy volunteers; following such distention, alosetron reduced pain and exaggerated motor responses, possibly due to blockade of 5-HT3 receptors (FDA LOTRONEX label, section 12.1).",
+    "indications": [
+      "LOTRONEX is indicated only for women with severe diarrhea-predominant irritable bowel syndrome (IBS) who have chronic IBS symptoms (generally lasting 6 months or longer), had anatomic or biochemical abnormalities of the gastrointestinal tract excluded, and have not responded adequately to conventional therapy (FDA LOTRONEX label, section 1).",
+      "Diarrhea-predominant IBS is severe if it includes diarrhea and one or more of the following: frequent and severe abdominal pain/discomfort, frequent bowel urgency or fecal incontinence, or disability or restriction of daily activities due to IBS (FDA LOTRONEX label, section 1).",
+      "Because of infrequent but serious gastrointestinal adverse reactions associated with LOTRONEX, the indication is restricted to those patients for whom the benefit-to-risk balance is most favorable (FDA LOTRONEX label, section 1).",
+      "Clinical studies have not been performed to adequately confirm the benefits of LOTRONEX in men (FDA LOTRONEX label, section 1)."
+    ],
+    "contraindications": [
+      "Do not initiate in patients with constipation (FDA LOTRONEX label, section 4.1).",
+      "History of chronic or severe constipation or sequelae from constipation (FDA LOTRONEX label, section 4.2).",
+      "Intestinal obstruction, stricture, toxic megacolon, gastrointestinal perforation, and/or adhesions (FDA LOTRONEX label, section 4.2).",
+      "Ischemic colitis, impaired intestinal circulation, thrombophlebitis, or hypercoagulable state (FDA LOTRONEX label, section 4.2).",
+      "Crohn's disease or ulcerative colitis; diverticulitis (FDA LOTRONEX label, section 4.2).",
+      "Severe hepatic impairment (FDA LOTRONEX label, section 4.2).",
+      "Concomitant use of fluvoxamine (FDA LOTRONEX label, section 4.3)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence greater than 2% and greater than placebo) in clinical studies were constipation, abdominal discomfort and pain, nausea, and gastrointestinal discomfort and pain (FDA LOTRONEX label, section 6).",
+      "In 22 repeat-dose studies in patients with IBS who received 1 mg of LOTRONEX twice daily for 8 to 24 weeks (n=8328 versus n=2363 on placebo), adverse reactions reported in 1% or more of patients and more frequently than placebo were constipation 29% vs 6%, abdominal discomfort and pain 7% vs 4%, nausea 6% vs 5%, gastrointestinal discomfort and pain 5% vs 3%, abdominal distention 2% vs 1%, regurgitation and reflux 2% vs 2%, and hemorrhoids 2% vs 1% (FDA LOTRONEX label, section 6.1, Table 1).",
+      "In a dose-ranging study in 85 women, the incidence of constipation was 14% with 0.5 mg twice daily compared with 29% with 1 mg twice daily (FDA LOTRONEX label, section 14.1).",
+      "Serious complications of constipation, including obstruction, ileus, impaction, toxic megacolon and secondary bowel ischemia, have been reported with use of LOTRONEX; the incidence was approximately 0.1% (1 per 1,000 patients) in women receiving either LOTRONEX or placebo, and rare cases of perforation and death have been reported from postmarketing clinical practice, in some cases requiring intestinal surgery including colectomy (FDA LOTRONEX label, sections 5.1 and 6.2).",
+      "Ischemic colitis: the cumulative incidence in women receiving LOTRONEX was 0.2% (2 per 1,000 patients, 95% CI 1 to 3) through 3 months and 0.3% (3 per 1,000 patients, 95% CI 1 to 4) through 6 months. Ischemic colitis has been reported with use of 1 mg twice daily and with lower doses, and a dose-response relationship has not been established (FDA LOTRONEX label, section 5.2).",
+      "Post-marketing experience: gastrointestinal impaction, perforation, ulceration and small bowel mesenteric ischemia; headache; rash (FDA LOTRONEX label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "To lower the risk of constipation, LOTRONEX should be started at 0.5 mg twice a day. Patients who become constipated at this dosage should stop taking LOTRONEX until the constipation resolves and may be restarted at 0.5 mg once a day; if constipation recurs at the lower dose, LOTRONEX should be discontinued immediately. Patients well controlled on 0.5 mg once or twice a day may be maintained on that regimen. If after 4 weeks the dosage is well tolerated but does not adequately control IBS symptoms, the dosage can be increased to up to 1 mg twice a day, and LOTRONEX should be discontinued in patients who have not had adequate control of IBS symptoms after 4 weeks of treatment with 1 mg twice a day. LOTRONEX can be taken with or without food (FDA LOTRONEX label, section 2.1).",
+      "geriatric": "In some studies in healthy men or women, plasma concentrations were elevated by approximately 40% in individuals 65 years and older compared with young adults, although this effect was not consistently observed in men. Postmarketing experience suggests that elderly patients may be at greater risk for complications of constipation, so appropriate caution and follow-up should be exercised if LOTRONEX is prescribed for these patients (FDA LOTRONEX label, sections 8.5 and 5.1).",
+      "paediatric": "Safety and effectiveness of LOTRONEX in pediatric patients have not been established. Use of LOTRONEX is not recommended in the pediatric population, based upon the risk of serious complications of constipation and ischemic colitis in adults (FDA LOTRONEX label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "CYP1A2 inhibitors: avoid concomitant use because of increased exposure and half-life of alosetron; use with fluvoxamine is contraindicated. Fluvoxamine, a known strong inhibitor of CYP1A2, increased mean alosetron plasma concentrations (AUC) approximately 6-fold and prolonged the half-life by approximately 3-fold. Concomitant administration of alosetron with moderate CYP1A2 inhibitors, including quinolone antibiotics and cimetidine, has not been evaluated but should be avoided unless clinically necessary (FDA LOTRONEX label, sections 4.3 and 7.1).",
+      "CYP3A4 inhibitors: use with caution. Ketoconazole 200 mg twice daily increased mean alosetron plasma concentrations (AUC) by 29%; coadministration of alosetron with strong CYP3A4 inhibitors such as clarithromycin, telithromycin, protease inhibitors, voriconazole and itraconazole has not been evaluated but should be undertaken with caution (FDA LOTRONEX label, section 7.2).",
+      "Other CYP enzymes: alosetron did not inhibit CYP3A4, 2C9 or 2C19, and had no clinically significant effect on plasma concentrations of the oral contraceptives ethinyl estradiol and levonorgestrel or on cisapride metabolism or QT interval; in an in vivo metabolic probe study it produced 30% inhibition of CYP1A2 with no effect on the metabolism of theophylline, and it does not appear to induce CYP3A4, 2E1 or 2C19 (FDA LOTRONEX label, section 7.3).",
+      "Medications that decrease gastrointestinal motility: clinical trial and postmarketing experience suggest that patients taking additional medications that decrease gastrointestinal motility may be at greater risk of serious complications of constipation (FDA LOTRONEX label, section 2.1)."
+    ],
+    "monitoring": "Discontinue LOTRONEX immediately in patients who develop constipation; patients who have constipation should contact their prescriber if the constipation does not resolve after LOTRONEX is discontinued, and patients with resolved constipation should resume LOTRONEX only on the advice of their treating prescriber (FDA LOTRONEX label, Boxed Warning and section 5.1). Patients with signs of ischemic colitis such as rectal bleeding, bloody diarrhea, or new or worsening abdominal pain must be evaluated promptly with appropriate diagnostic testing, because ischemic colitis can be life-threatening, and treatment with LOTRONEX should not be resumed in patients who develop ischemic colitis (FDA LOTRONEX label, section 5.2). Discontinue LOTRONEX in patients who have not had adequate control of IBS symptoms after 4 weeks of treatment with 1 mg twice a day (FDA LOTRONEX label, section 2.1). Exercise appropriate caution and follow-up in debilitated patients, in patients taking additional medications that decrease gastrointestinal motility, and in elderly patients, all of whom are at greater risk of serious complications of constipation (FDA LOTRONEX label, sections 2.1, 5.1 and 8.5). Because LOTRONEX is extensively metabolized by the liver and increased exposure is likely in hepatic impairment, use with caution in patients with mild or moderate hepatic impairment (FDA LOTRONEX label, sections 2.2 and 8.6).",
+    "patient_counselling": "Advise the patient to read the FDA-approved Medication Guide before starting LOTRONEX and each time the prescription is refilled. Patients should be fully counseled on and understand the benefits and risks of LOTRONEX before an initial prescription is written (FDA LOTRONEX label, section 17). Instruct patients not to start taking LOTRONEX if they are constipated. Instruct patients to immediately discontinue LOTRONEX and contact their prescriber if they become constipated or have symptoms of ischemic colitis such as new or worsening abdominal pain, bloody diarrhea or blood in the stool; contact the prescriber again if constipation does not resolve after discontinuation, and resume LOTRONEX only if constipation has resolved and after discussion with and the agreement of the treating prescriber. Instruct patients to stop taking LOTRONEX and contact their prescriber if LOTRONEX does not adequately control IBS symptoms after 4 weeks of taking 1 mg twice a day (FDA LOTRONEX label, section 17).",
+    "warnings": [
+      "WARNING (boxed): serious gastrointestinal adverse reactions. Infrequent but serious gastrointestinal adverse reactions have been reported with the use of LOTRONEX; these events, including ischemic colitis and serious complications of constipation, have resulted in hospitalization and, rarely, blood transfusion, surgery and death (FDA LOTRONEX label, Boxed Warning).",
+      "Serious complications of constipation may occur in some patients without warning and include obstruction, ileus, impaction, toxic megacolon and secondary bowel ischemia; in rare cases perforation and death have been reported. Risk is increased in patients who are elderly, debilitated, or taking medications that decrease bowel motility. Discontinue LOTRONEX immediately if constipation occurs (FDA LOTRONEX label, section 5.1).",
+      "Ischemic colitis: some patients have experienced ischemic colitis without warning. Discontinue LOTRONEX immediately in patients with signs of ischemic colitis such as rectal bleeding, bloody diarrhea, or new or worsening abdominal pain; because ischemic colitis can be life-threatening, patients should be evaluated promptly and have appropriate diagnostic testing performed (FDA LOTRONEX label, section 5.2).",
+      "LOTRONEX should not be resumed in patients who develop ischemic colitis; patients with resolved constipation should resume LOTRONEX only on the advice of their treating prescriber (FDA LOTRONEX label, Boxed Warning and section 2.1)."
+    ],
+    "precautions": [
+      "LOTRONEX is indicated only for women with severe diarrhea-predominant IBS who have not responded adequately to conventional therapy; because of infrequent but serious gastrointestinal adverse reactions, the indication is restricted to those patients for whom the benefit-to-risk balance is most favorable (FDA LOTRONEX label, Boxed Warning and section 1).",
+      "Start at 0.5 mg twice a day to lower the risk of constipation; the efficacy of the 0.5 mg twice-daily dosage in treating severe diarrhea-predominant IBS has not been adequately evaluated in clinical trials (FDA LOTRONEX label, sections 2.1 and 14.1).",
+      "Clinical studies have not been performed to adequately confirm the benefits of LOTRONEX in men (FDA LOTRONEX label, section 1).",
+      "Use with caution in patients with mild or moderate hepatic impairment, and do not use LOTRONEX in patients with severe hepatic impairment (FDA LOTRONEX label, sections 2.2 and 8.6).",
+      "In vivo data suggest that alosetron is primarily metabolized by cytochrome P450 1A2, with minor contributions from CYP3A4 and CYP2C9, so inducers or inhibitors of these enzymes may change the clearance of alosetron (FDA LOTRONEX label, section 7)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious complications of constipation, including obstruction, ileus, impaction, toxic megacolon and secondary bowel ischemia, and in rare cases perforation and death (FDA LOTRONEX label, sections 5.1 and 6.2).",
+      "Ischemic colitis, which can be life-threatening and has resulted in hospitalization (FDA LOTRONEX label, Boxed Warning and section 5.2).",
+      "Gastrointestinal perforation, ulceration and small bowel mesenteric ischemia (FDA LOTRONEX label, section 6.2)."
+    ],
+    "food_interactions": [
+      "Alosetron absorption is decreased by approximately 25% by co-administration with food, with a mean delay in time to peak concentration of 15 minutes; LOTRONEX can be taken with or without food (FDA LOTRONEX label, sections 2.1 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The available data with LOTRONEX use in pregnant women are insufficient to draw conclusions about any drug-associated risks for major birth defects, miscarriage, or other adverse maternal or fetal outcomes. In animal reproduction studies, no adverse developmental effects were observed with oral administration of alosetron in rats and rabbits during organogenesis at doses 160 to 240 times, respectively, the recommended human dosage. The estimated background risk of major birth defects and miscarriage for the indicated populations is unknown; in the US general population, the estimated background risk of major birth defects and miscarriage is 2 to 4% and 15 to 20% respectively (FDA LOTRONEX label, section 8.1).",
+    "lactation_guidance": "It is not known whether alosetron is excreted in human milk. Alosetron and/or metabolites of alosetron are excreted in the breast milk of lactating rats, and because many drugs are excreted in human milk, caution should be exercised when LOTRONEX is administered to a nursing woman. There are no data regarding the presence of alosetron in human milk, the effects on the breastfed infant, or the effects on milk production; the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for LOTRONEX and any potential adverse effects on the breastfed infant from LOTRONEX or from the underlying maternal condition (FDA LOTRONEX label, section 8.2).",
+    "overdose": "There is no specific antidote for overdose of LOTRONEX; patients should be managed with appropriate supportive therapy. Individual oral doses as large as 16 mg have been administered in clinical studies without significant adverse reactions, which is 8 times higher than the recommended total daily dose. Inhibition of the metabolic elimination and reduced first pass of other drugs might occur with overdoses of LOTRONEX (FDA LOTRONEX label, section 10).",
+    "pharmacokinetics": "Alosetron was rapidly absorbed after oral administration with a mean absolute bioavailability of approximately 50% to 60% (approximate range 30% to greater than 90%). After administration of radiolabeled alosetron, only 1% of the dose was recovered in the feces as unchanged drug. Following a 1 mg oral dose in young men a peak plasma concentration of approximately 5 ng/mL occurred at 1 hour, and in young women the mean peak plasma concentration was approximately 9 ng/mL with a similar time to peak. Plasma concentrations were 30% to 50% lower and less variable in men compared with women given the same oral dose, and population pharmacokinetic analysis in IBS patients confirmed that alosetron concentrations were influenced by gender (27% lower in men). Absorption is decreased by approximately 25% by co-administration with food, with a mean delay in time to peak concentration of 15 minutes. The terminal elimination half-life of alosetron is approximately 1.5 hours, with a plasma clearance of approximately 600 mL/min; renal elimination of unchanged alosetron accounts for only 13% of the dose and renal clearance is approximately 112 mL/min. In vivo data suggest that CYP1A2 plays a more prominent role in alosetron metabolism, accounting for 62 to 97% of alosetron clearance (FDA LOTRONEX label, section 12.3).",
+    "clinical_pearls": [
+      "Alosetron's benefit is confined to women with severe diarrhea-predominant IBS that has not responded to conventional therapy, and its two dangerous adverse effects - serious complications of constipation and ischemic colitis - are why the label starts at 0.5 mg twice daily and requires a 4-week efficacy checkpoint at 1 mg twice daily (FDA LOTRONEX label, sections 1, 2.1 and 5.1).",
+      "Both serious adverse effects can occur without warning: constipation requires immediate discontinuation with prescriber follow-up and resumption only once it has resolved, and ischemic colitis requires prompt diagnostic evaluation and must never be restarted (FDA LOTRONEX label, Boxed Warning, sections 5.1 and 5.2).",
+      "Fluvoxamine raises alosetron exposure about 6-fold and is an absolute contraindication; moderate CYP1A2 inhibitors such as quinolone antibiotics and cimetidine should also be avoided unless clinically necessary (FDA LOTRONEX label, sections 4.3 and 7.1).",
+      "Plasma concentrations are 30% to 50% lower in men than in women, which is part of why the indication is restricted to women and why benefit in men has not been adequately confirmed (FDA LOTRONEX label, sections 1 and 12.3).",
+      "Because alosetron is hepatically metabolized mainly by CYP1A2, hepatic impairment increases exposure; it is contraindicated in severe hepatic impairment and should be used with caution in mild or moderate impairment (FDA LOTRONEX label, sections 2.2 and 8.6).",
+      "Patients who are elderly, debilitated, or taking drugs that slow gut motility are at greatest risk of the serious constipation complications (FDA LOTRONEX label, sections 2.1 and 5.1)."
+    ],
+    "brand_names": ["Lotronex"],
+    "black_box_warnings": [
+      "WARNING: SERIOUS GASTROINTESTINAL ADVERSE REACTIONS. Infrequent but serious gastrointestinal adverse reactions have been reported with the use of LOTRONEX. These events, including ischemic colitis and serious complications of constipation, have resulted in hospitalization and, rarely, blood transfusion, surgery, and death. LOTRONEX is indicated only for women with severe diarrhea-predominant irritable bowel syndrome (IBS) who have not responded adequately to conventional therapy. Discontinue LOTRONEX immediately in patients who develop constipation or symptoms of ischemic colitis. Patients should immediately report constipation or symptoms of ischemic colitis to their prescriber. LOTRONEX should not be resumed in patients who develop ischemic colitis. Patients who have constipation should immediately contact their prescriber if the constipation does not resolve after LOTRONEX is discontinued. Patients with resolved constipation should resume LOTRONEX only on the advice of their treating prescriber (FDA LOTRONEX label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment is stated. Renal impairment (creatinine clearance 4 to 56 mL/min) has no effect on the renal elimination of alosetron, because the renal pathway contributes only about 13% of total elimination; the effect of renal impairment on metabolite pharmacokinetics and the effect of end-stage renal disease have not been assessed (FDA LOTRONEX label, section 8.7).",
+    "hepatic_dose_adjustment": "LOTRONEX is extensively metabolized by the liver, so increased exposure is likely in hepatic impairment. Use with caution in patients with mild or moderate hepatic impairment, and LOTRONEX is contraindicated in severe hepatic impairment. After a single 1 mg oral dose, the female patient with severe hepatic impairment (Child-Pugh score greater than 9) displayed approximately 14-fold higher exposure and the female with moderate hepatic impairment (Child-Pugh 7 to 9) approximately 1.6-fold higher exposure than healthy females (FDA LOTRONEX label, sections 2.2, 4.2 and 8.6).",
+    "administration_instructions": "Oral. Take 0.5 mg twice a day as the starting dose, with or without food; if after 4 weeks the 0.5 mg twice-daily dose is well tolerated but does not adequately control IBS symptoms, the dose may be increased to up to 1 mg twice a day. Stop immediately and contact the prescriber if constipation or signs of ischemic colitis develop; resume only after constipation has resolved and on the advice of the treating prescriber, and never resume after ischemic colitis. Tablets are supplied as 0.5 mg (white, oval, film-coated, debossed GX EX1) and 1 mg (blue, oval, film-coated, debossed GX CT1) in bottles of 30 with child-resistant closures (FDA LOTRONEX label, sections 2.1, 3, 5.1, 5.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA LOTRONEX (alosetron hydrochloride) label, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA LOTRONEX label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA LOTRONEX label, sections 4, 4.1, 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA LOTRONEX label, section 6, section 6.1 (Table 1), section 6.2, sections 5.1 and 5.2, and section 14.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA LOTRONEX label, sections 2, 2.1, 5.1, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA LOTRONEX label, sections 2.1, 4.3, 7, 7.1, 7.2 and 7.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA LOTRONEX label, Boxed Warning, sections 2.1, 2.2, 5.1, 5.2, 8.5 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA LOTRONEX label, section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA LOTRONEX label, Boxed Warning, sections 2.1, 5.1 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA LOTRONEX label, Boxed Warning, sections 1, 2.1, 2.2, 7, 8.6 and 14.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA LOTRONEX label, Boxed Warning, sections 5.1, 5.2 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA LOTRONEX label, sections 2.1 and 12.3 (Food Effects)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA LOTRONEX label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA LOTRONEX label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA LOTRONEX label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA LOTRONEX label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA LOTRONEX label, Boxed Warning, sections 1, 2.1, 2.2, 4.3, 5.1, 5.2, 7.1, 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "brand_names",
+      "ref": "LOTRONEX (alosetron hydrochloride) tablet label (DB row lists the generic 'Alosetron')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA LOTRONEX label, Boxed Warning: Serious Gastrointestinal Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA LOTRONEX label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA LOTRONEX label, sections 2.2, 4.2 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA LOTRONEX label, sections 2.1, 3, 5.1, 5.2 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cbb9d5-639b-207a-e054-00144ff88e88"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses the PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; LOTRONEX is not recommended in the pediatric population; narrative provided in fields.dosage.paediatric)"
+  ],
+  "notes": "The table stores this agent as 'Alosetron'; the DB row brand_names lists the generic name. LOTRONEX is the branded product and carries a boxed warning on serious gastrointestinal adverse reactions, which is reproduced verbatim in fields.black_box_warnings. The indication is restricted to women with severe diarrhea-predominant IBS that has not responded to conventional therapy, and clinical studies have not adequately confirmed benefit in men. Content is sourced from the LOTRONEX label (Sebela, DailyMed setid 35cbb9d5-639b-207a-e054-00144ff88e88, published July 2026)."
+}

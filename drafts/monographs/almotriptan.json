@@ -1,0 +1,229 @@
+{
+  "name": "Almotriptan",
+  "existing_id": "0b0fac5f-3fb8-4e2d-b53f-8b54fdb32076",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Current theories on the etiology of migraine headache suggest that symptoms are due to local cranial vasodilatation and/or the release of vasoactive and pro-inflammatory peptides from sensory nerve endings in an activated trigeminal system. The therapeutic activity of almotriptan in migraine can most likely be attributed to agonist effects at 5-HT1B/1D receptors on the extracerebral, intracranial blood vessels that become dilated during a migraine attack and on nerve terminals in the trigeminal system. Activation of these receptors results in cranial vessel constriction, inhibition of neuropeptide release, and reduced transmission in trigeminal pain pathways (FDA almotriptan tablets label, section 12.2).",
+    "indications": [
+      "Acute treatment of migraine attacks in adults with a history of migraine with or without aura (FDA almotriptan tablets label, section 1.1).",
+      "Acute treatment of migraine headache pain in adolescents age 12 to 17 years with a history of migraine with or without aura, and who have migraine attacks usually lasting 4 hours or more when untreated (FDA almotriptan tablets label, section 1.1).",
+      "Important limitations: use only after a clear diagnosis of migraine has been established; in adolescents age 12 to 17 years, efficacy on migraine-associated symptoms (nausea, photophobia and phonophobia) was not established; not intended for the prophylactic therapy of migraine; not indicated for the treatment of cluster headache (FDA almotriptan tablets label, section 1.2).",
+      "UK/EU indication: acute treatment of the headache phase of migraine attacks with or without aura (Zentiva Almotriptan 12.5 mg Film Coated tablets SmPC, section 4.1)."
+    ],
+    "contraindications": [
+      "Ischemic heart disease, coronary artery vasospasm, or other significant underlying cardiovascular disease, including ischemic heart disease (angina pectoris, history of myocardial infarction or documented silent ischemia), coronary artery vasospasm including Prinzmetal's variant angina, or other significant underlying cardiovascular disease (FDA almotriptan tablets label, sections 4 and 4.1).",
+      "Cerebrovascular syndromes, including but not limited to stroke of any type as well as transient ischemic attacks (FDA almotriptan tablets label, sections 4 and 4.2).",
+      "Peripheral vascular disease, including but not limited to ischemic bowel disease (FDA almotriptan tablets label, sections 4 and 4.3).",
+      "Uncontrolled hypertension (FDA almotriptan tablets label, sections 4 and 4.4).",
+      "Do not use within 24 hours of an ergotamine-containing or ergot-type medication, or of another 5-HT1 agonist such as another triptan (FDA almotriptan tablets label, sections 4, 4.5 and 4.6).",
+      "Hemiplegic or basilar migraine (FDA almotriptan tablets label, sections 4 and 4.7).",
+      "Known hypersensitivity to almotriptan (FDA almotriptan tablets label, sections 4 and 4.8).",
+      "UK/EU: patients with severe hepatic impairment (Zentiva Almotriptan SmPC, sections 4.2 and 4.3)."
+    ],
+    "side_effects": [
+      "The most common adverse reactions during treatment with almotriptan were nausea, somnolence, headache, paresthesia and dry mouth in adults, and dizziness, somnolence, headache, paresthesia, nausea and vomiting in adolescents (FDA almotriptan tablets label, section 6).",
+      "In controlled clinical trials in adults, adverse events occurring in at least 1% of almotriptan-treated patients and at an incidence greater than placebo were nausea 1% (6.25 mg) and 2% (12.5 mg) versus 1% on placebo, dry mouth 1% and 1% versus 0.5%, and paresthesia 1% and 1% versus 0.5% (FDA almotriptan tablets label, section 6.1, Table 1).",
+      "In controlled clinical trials in adolescents, the most common adverse reactions were dizziness, somnolence, headache, paresthesia, nausea and vomiting; in long-term open-label studies 2% (10 of 420) of adolescent patients withdrew due to adverse events, compared with 5% (63 of 1347) of adults (FDA almotriptan tablets label, section 6).",
+      "Other reactions observed in clinical trials: frequent - headache, dizziness and somnolence; infrequent - abdominal cramp or pain, asthenia, chills, back pain, chest pain, neck pain, fatigue and rigid neck; vasodilation, palpitations and tachycardia; diarrhea, vomiting, dyspepsia, gastroenteritis and increased thirst; hyperglycemia and increased serum creatine phosphokinase; myalgia; tremor, vertigo, anxiety, hypoesthesia, restlessness, CNS stimulation and shakiness; pharyngitis, rhinitis, dyspnea, laryngismus, sinusitis and bronchitis; diaphoresis, pruritus and rash; ear pain and tinnitus; dysmenorrhea (FDA almotriptan tablets label, section 6.2).",
+      "Rare reactions observed in clinical trials: fever and photosensitivity reaction; hypertension and syncope; colitis, gastritis, esophageal reflux and increased salivation; increased gamma glutamyl transpeptidase and hypercholesterolemia; arthralgia, arthritis, myopathy and muscle weakness; change of dreams, impaired concentration, abnormal coordination, depressive symptoms, euphoria, hyperreflexia, hypertonia, nervousness, neuropathy, nightmares, nystagmus and insomnia; hyperventilation, laryngitis, sneezing and epistaxis; dermatitis and erythema; diplopia, dry eyes, eye pain, otitis media, parosmia, scotoma, conjunctivitis, eye irritation, hyperacusis and taste alteration (FDA almotriptan tablets label, section 6.2).",
+      "Serious cardiac reactions, including myocardial infarction, have occurred following the use of almotriptan; these reactions are extremely rare and most have been reported in patients with risk factors predictive of coronary artery disease (FDA almotriptan tablets label, section 6).",
+      "Post-marketing experience: anaphylactic shock; confusional state and restlessness; hemiplegia, hypoesthesia and seizures; blepharospasm; vertigo; acute myocardial infarction, coronary artery vasospasm, angina pectoris and tachycardia; abdominal discomfort, abdominal pain, abdominal pain upper, colitis, hypoesthesia oral and swollen tongue; angioedema, cold sweat, erythema and hyperhidrosis; arthralgia, myalgia and pain in extremity; breast pain; malaise and peripheral coldness (FDA almotriptan tablets label, section 6.3)."
+    ],
+    "dosage": {
+      "adult": "The recommended dose in adults and adolescents age 12 to 17 years is 6.25 mg to 12.5 mg as a single dose, with the 12.5 mg dose tending to be a more effective dose in adults; the choice of dose should be made on an individual basis. If the headache is relieved after the initial dose but returns, the dose may be repeated after 2 hours, but the effectiveness of a second dose has not been established in placebo-controlled trials and the benefit of a second dose in patients who failed to respond to the first dose has not been established. The maximum daily dose should not exceed 25 mg, and the safety of treating an average of more than four migraines in a 30-day period has not been established. Patients with hepatic or severe renal impairment: 6.25 mg starting dose, maximum daily dose 12.5 mg (FDA almotriptan tablets label, sections 2 and 2.1).",
+      "geriatric": "Clinical studies of almotriptan did not include sufficient numbers of subjects age 65 and over to determine whether they respond differently from younger subjects. Clearance of almotriptan was lower in elderly volunteers than in younger individuals - renal and total clearance and the amount of drug excreted in the urine were lower in healthy volunteers aged 65 to 76 years than in those aged 19 to 34 years, giving a 25% higher AUC and a terminal half-life of 3.7 versus 3.2 hours - but there were no observed differences in safety and tolerability between the two populations. In general, dose selection for an elderly patient should be cautious, usually starting at the low dose; the recommended dose for elderly patients with normal renal function for their age is the same as that recommended for younger adults (FDA almotriptan tablets label, sections 8.5 and 12.3).",
+      "paediatric": "Safety and efficacy of almotriptan in pediatric patients under the age of 12 years have not been established. In a clinical study, almotriptan 6.25 mg and 12.5 mg were found to be effective for the relief of migraine headache pain in adolescent patients aged 12 to 17 years, but efficacy on migraine-associated symptoms (nausea, photophobia and phonophobia) was not established; the most common adverse reactions (incidence of 1% or more) were dizziness, somnolence, headache, paresthesia, nausea and vomiting, and the safety and tolerability profile in adolescents is similar to that in adults (FDA almotriptan tablets label, section 8.4). The UK/EU position differs: the SmPC states there are no data concerning the use of almotriptan in children and adolescents under 18 years, therefore its use in this age group is not recommended (Zentiva Almotriptan SmPC, section 4.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Ergot-containing drugs: ergotamine-containing or ergot-type medications (such as dihydroergotamine, ergotamine tartrate or methysergide) and almotriptan should not be used within 24 hours of each other, because these drugs can cause prolonged vasospastic reactions and vasospastic effects may be additive (FDA almotriptan tablets label, sections 4.5 and 7.1).",
+      "Other 5-HT1 agonists (triptans): concomitant use of other 5-HT1 agonists within 24 hours of treatment with almotriptan is contraindicated (FDA almotriptan tablets label, sections 4.6 and 7.2).",
+      "Selective serotonin reuptake inhibitors and serotonin norepinephrine reuptake inhibitors: cases of life-threatening serotonin syndrome have been reported during combined use of triptans and SSRIs or SNRIs; careful observation is advised, particularly during treatment initiation and dose increases (FDA almotriptan tablets label, sections 5.5 and 7.3).",
+      "Ketoconazole and other potent CYP3A4 inhibitors: co-administration with oral ketoconazole produced an approximately 60% increase in almotriptan exposure; the recommended starting dose is 6.25 mg with a maximum daily dose of 12.5 mg within a 24-hour period, and concomitant use should be avoided in patients with renal or hepatic impairment (FDA almotriptan tablets label, sections 7.4 and 12.3).",
+      "Monoamine oxidase inhibitors: moclobemide 150 mg twice daily decreased almotriptan clearance by 27% and increased Cmax by approximately 6%; no dose adjustment is necessary (FDA almotriptan tablets label, section 12.3).",
+      "Propranolol: co-administration resulted in no significant changes in the pharmacokinetics of almotriptan (FDA almotriptan tablets label, section 12.3).",
+      "Fluoxetine: no effect on almotriptan clearance, but maximal concentrations were increased 18%; this difference is not clinically significant (FDA almotriptan tablets label, section 12.3).",
+      "Verapamil: co-administration produced a 20% increase in AUC and a 24% increase in maximal plasma concentrations of almotriptan; neither change is clinically significant and no dose adjustment is necessary (FDA almotriptan tablets label, section 12.3)."
+    ],
+    "monitoring": "Establish a clear diagnosis of migraine before treating; if a patient has no response for the first migraine attack treated with almotriptan, the diagnosis of migraine should be reconsidered before almotriptan is administered for any subsequent attack (FDA almotriptan tablets label, section 1.2). Evaluate for coronary artery disease before the first dose in patients with cardiovascular risk factors in whom unrecognized coronary artery disease is predicted, and consider giving the first dose in a physician's office setting (FDA almotriptan tablets label, section 5.1). Patients who experience signs or symptoms suggestive of angina after dosing should be evaluated for coronary artery disease or a predisposition to Prinzmetal's variant angina before receiving further doses, and should be monitored electrocardiographically if dosing is resumed and similar symptoms recur (FDA almotriptan tablets label, section 5.2). Monitor for serotonin syndrome (mental status changes, autonomic instability, neuromuscular aberrations and gastrointestinal symptoms) when almotriptan is used with an SSRI or SNRI, particularly at treatment initiation and dose increases (FDA almotriptan tablets label, sections 5.5 and 7.3). Keep total acute migraine medication use to an average of no more than four migraines treated in a 30-day period, since safety beyond that has not been established, and watch for medication overuse headache (FDA almotriptan tablets label, sections 2.1 and 5.6). Monitor blood pressure and avoid use in uncontrolled hypertension (FDA almotriptan tablets label, sections 4.4 and 5.7).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling (Patient Information). Inform patients that almotriptan may cause serious cardiovascular side effects such as myocardial infarction or stroke, which may result in hospitalization and even death; although serious cardiovascular events can occur without warning symptoms, patients should be alert for chest pain, shortness of breath, weakness or slurring of speech and should ask for medical advice as soon as they observe any such sign or symptom (FDA almotriptan tablets label, section 17, Risk of Myocardial Ischemia and/or Infarction..., and section 5.1). Caution patients about the risk of serotonin syndrome with almotriptan or other triptans, particularly during combined use with SSRIs or SNRIs (FDA almotriptan tablets label, section 17, Serotonin Syndrome). Explain medication overuse headache: use of acute migraine drugs for 10 or more days per month may lead to an exacerbation of headache, and patients should record headache frequency and drug use, for example by keeping a headache diary (FDA almotriptan tablets label, section 17). Advise patients to notify their physician if they become pregnant or intend to become pregnant, and if they are breastfeeding or plan to breastfeed (FDA almotriptan tablets label, section 17, Pregnancy and Nursing Mothers). Advise patients to talk with their physician or pharmacist before taking any new medicines, including prescription and non-prescription drugs and supplements, because of the 24-hour separation required from ergot-type medications and from other triptans (FDA almotriptan tablets label, section 17, Drug Interactions). Counsel patients that almotriptan may cause dizziness, somnolence, visual disturbances and other CNS symptoms that can interfere with driving or operating machinery, and that they should not drive, operate complex machinery or engage in other hazardous activities until they have gained sufficient experience with almotriptan (FDA almotriptan tablets label, section 17, Ability to Operate Machinery or Vehicles). Inform patients to tell their physician if they develop a rash, itching or breathing difficulties after taking almotriptan (FDA almotriptan tablets label, section 17, Hypersensitivity).",
+    "warnings": [
+      "Risk of myocardial ischemia and infarction and other adverse cardiac events: serious adverse cardiac events, including acute myocardial infarction, have been reported within a few hours of almotriptan, and almotriptan can cause coronary vasospasm. It is strongly recommended that almotriptan not be given to patients in whom unrecognized coronary artery disease is predicted by the presence of risk factors; in very rare cases serious cardiovascular events have been reported in the absence of known cardiovascular disease, so if almotriptan is considered the patient should first have a cardiovascular evaluation and the first dose should take place in a physician's office setting (FDA almotriptan tablets label, section 5.1).",
+      "Sensations of pain, tightness, pressure and heaviness in the chest, throat, neck and jaw are generally not associated with myocardial ischemia, but patients with signs or symptoms suggestive of angina should be evaluated for the presence of coronary artery disease (FDA almotriptan tablets label, section 5.2).",
+      "Cerebrovascular events, some fatal: cerebral hemorrhage, subarachnoid hemorrhage, stroke and other cerebrovascular events have been reported in patients treated with other triptans, with some events resulting in fatalities; care should be taken to exclude other potentially serious neurological conditions before treating headaches in patients not previously diagnosed as migraineurs, and patients with migraine may be at increased risk of certain cerebrovascular events (FDA almotriptan tablets label, section 5.3).",
+      "Other vasospasm-related events, including peripheral vascular ischemia and colonic ischemia: triptans may cause peripheral and gastrointestinal vascular ischemia with abdominal pain and bloody diarrhea, and very rare reports of transient and permanent blindness and significant partial vision loss have been reported (FDA almotriptan tablets label, section 5.4).",
+      "Serotonin syndrome: a potentially life-threatening serotonin syndrome may occur with triptans, particularly during combined use with SSRIs or SNRIs (FDA almotriptan tablets label, section 5.5).",
+      "Medication overuse headache: overuse of acute migraine drugs (ergotamine, triptans, opioids or combinations) for 10 or more days per month may lead to exacerbation of headache; detoxification of patients, including withdrawal of the overused drugs, and treatment of withdrawal symptoms may be necessary (FDA almotriptan tablets label, section 5.6).",
+      "Increases in blood pressure: significant elevations in systemic blood pressure have been reported on rare occasions with almotriptan in patients with and without a history of hypertension, and very rarely these increases have been associated with significant clinical events (FDA almotriptan tablets label, section 5.7).",
+      "Hypersensitivity to sulfonamides: caution should be exercised when prescribing almotriptan to patients with known hypersensitivity to sulfonamides; the chemical structure of almotriptan contains a sulfonyl group, which is structurally different from a sulfonamide, and cross-sensitivity has not been systematically evaluated (FDA almotriptan tablets label, section 5.8).",
+      "Impaired hepatic or renal function: almotriptan should be administered with caution to patients with diseases that may alter the absorption, metabolism or excretion of drugs, such as those with impaired hepatic or renal function (FDA almotriptan tablets label, section 5.9)."
+    ],
+    "precautions": [
+      "Use only after a clear diagnosis of migraine has been established; if there is no response for the first migraine attack treated with almotriptan, reconsider the diagnosis before treating any subsequent attack (FDA almotriptan tablets label, section 1.2).",
+      "Do not use almotriptan within 24 hours of an ergotamine-containing or ergot-type medication, or within 24 hours of another 5-HT1 agonist such as another triptan (FDA almotriptan tablets label, sections 4.5 and 4.6).",
+      "The maximum daily dose should not exceed 25 mg, and the safety of treating an average of more than four migraines in a 30-day period has not been established (FDA almotriptan tablets label, section 2.1).",
+      "Binding to melanin-containing tissues: the elimination half-life of radioactivity from the eye was 22 days in pigmented rats given a single oral dose of 5 mg/kg radiolabeled almotriptan, suggesting almotriptan and/or its metabolites may bind to melanin in the eye; prescribers should be aware of the possibility of long-term ophthalmologic effects (FDA almotriptan tablets label, section 5.10).",
+      "Corneal opacities: three of 14 male dogs developed slight corneal opacities, noted after 51 weeks, in a 52-week toxicity study of oral almotriptan at 2, 5 and 12.5 mg/kg/day; a no-effect dose was not established (FDA almotriptan tablets label, section 5.11).",
+      "The UK/EU SmPC recommends taking almotriptan with liquids as early as possible after the onset of migraine-associated headache, and states that the tablets can be taken with or without food (Zentiva Almotriptan SmPC, section 4.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Myocardial infarction and coronary artery vasospasm (FDA almotriptan tablets label, sections 4.1, 5.1 and 6.3).",
+      "Cerebrovascular events including cerebral hemorrhage, subarachnoid hemorrhage and stroke (FDA almotriptan tablets label, sections 5.3 and 6.3).",
+      "Serotonin syndrome (FDA almotriptan tablets label, section 5.5).",
+      "Anaphylactic shock (FDA almotriptan tablets label, section 6.3).",
+      "Peripheral vascular ischemia and colonic ischemia (FDA almotriptan tablets label, section 5.4)."
+    ],
+    "food_interactions": [
+      "Food does not affect almotriptan pharmacokinetics; peak plasma levels occur 1 to 3 hours after administration, and the tablets can be taken with or without food (FDA almotriptan tablets label, section 12.3; Zentiva Almotriptan SmPC, section 4.2)."
+    ],
+    "pregnancy_category": "C (FDA almotriptan tablets label, section 8.1)",
+    "pregnancy_guidance": "Pregnancy Category C. In animal studies, almotriptan produced developmental toxicity (increased embryolethality and fetal skeletal variations, and decreased offspring body weight) at doses greater than those used clinically. When almotriptan (125, 250, 500 or 1000 mg/kg/day) was administered orally to pregnant rats throughout organogenesis, increased incidences of fetal skeletal variations (decreased ossification) were noted at 250 mg/kg/day or greater and increased embryolethality was seen at the highest dose; the no-effect dose for embryo-fetal developmental toxicity in rats (125 mg/kg/day) is approximately 100 times the maximum recommended human dose of 25 mg/day on a body surface area basis. Similar studies in pregnant rabbits with oral doses of 5, 20 or 60 mg/kg/day demonstrated increases in embryolethality at the highest dose, with a no-effect dose of 20 mg/kg/day (approximately 15 times the maximum recommended human dose). When almotriptan (25, 100 or 400 mg/kg/day) was administered orally to rats throughout gestation and lactation, gestation length was increased and litter size and offspring body weight were decreased at the highest dose. There are no adequate and well-controlled studies in pregnant women; therefore almotriptan should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA almotriptan tablets label, section 8.1).",
+    "lactation_guidance": "It is not known whether almotriptan is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when almotriptan is administered to a nursing woman. Levels of almotriptan in rat milk were up to 7 times higher than in rat plasma (FDA almotriptan tablets label, section 8.3).",
+    "overdose": "Patients and volunteers receiving single oral doses of 100 to 150 mg of almotriptan did not experience significant adverse events, and six additional normal volunteers received single oral doses of 200 mg without serious adverse events; during clinical trials one patient ingested 62.5 mg in a 5-hour period and another patient ingested 100 mg in a 38-hour period, neither with adverse reactions. Based on the pharmacology of triptans, hypertension or other more serious cardiovascular symptoms could occur after overdosage. There is no specific antidote; in cases of severe intoxication, intensive care procedures are recommended, including establishing and maintaining a patent airway, ensuring adequate oxygenation and ventilation, and monitoring and support of the cardiovascular system. Clinical and electrocardiographic monitoring should be continued for at least 20 hours even if clinical symptoms are not observed. It is unknown what effect hemodialysis or peritoneal dialysis has on plasma concentrations of almotriptan (FDA almotriptan tablets label, sections 10.1 and 10.2).",
+    "pharmacokinetics": "The absolute bioavailability of almotriptan is about 70%, with peak plasma levels occurring 1 to 3 hours after administration, and food does not affect pharmacokinetics. Almotriptan is minimally protein bound (approximately 35%) and the mean apparent volume of distribution is approximately 180 to 200 litres. It is metabolized by two major and one minor pathways: monoamine oxidase-mediated oxidative deamination (approximately 27% of the dose) and cytochrome P450-mediated oxidation (approximately 12% of the dose) are the major routes, with flavin monooxygenase the minor route; MAO-A is responsible for the indoleacetic acid metabolite and CYP3A4 and CYP2D6 catalyse hydroxylation of the pyrrolidine ring, and both metabolites are inactive. Almotriptan has a mean half-life of 3 to 4 hours and is eliminated primarily by renal excretion (about 75% of the oral dose), with approximately 40% of an administered dose excreted unchanged in urine; renal clearance exceeds the glomerular filtration rate by approximately 3-fold, indicating an active mechanism, and approximately 13% of the administered dose is excreted via feces, both unchanged and metabolized (FDA almotriptan tablets label, section 12.3).",
+    "clinical_pearls": [
+      "Almotriptan is a 5-HT1B/1D agonist that constricts cranial vessels and inhibits neuropeptide release in the trigeminal system; it is for acute attack treatment only and is not a migraine prophylaxis (FDA almotriptan tablets label, sections 1.2 and 12.2).",
+      "The 12.5 mg dose tends to be more effective in adults, but the dose should be chosen on an individual basis because individuals vary in their response to different doses (FDA almotriptan tablets label, section 2.1).",
+      "A second dose after 2 hours has not been shown to add benefit in patients who failed to respond to the first dose, and the maximum daily dose is 25 mg (FDA almotriptan tablets label, section 2.1).",
+      "Screen for unrecognised coronary artery disease before the first dose in patients with cardiovascular risk factors, and consider giving the first dose in a physician's office setting (FDA almotriptan tablets label, section 5.1).",
+      "A 24-hour washout is required from any ergot-type medication and from any other triptan (FDA almotriptan tablets label, sections 4.5 and 4.6).",
+      "Serotonin syndrome is the key interaction risk with SSRIs and SNRIs; monitor closely at initiation and on dose increases (FDA almotriptan tablets label, sections 5.5 and 7.3).",
+      "Because the label caps treatment at an average of four migraines per 30 days, medication overuse headache is a genuine risk with frequent use (FDA almotriptan tablets label, sections 2.1 and 5.6).",
+      "There is a genuine US/UK discrepancy: the US label includes adolescents 12 to 17 years, whereas the UK/EU SmPC states that use in children and adolescents under 18 years is not recommended and contraindicates severe hepatic impairment (FDA almotriptan tablets label, sections 1.1 and 4; Zentiva Almotriptan SmPC, sections 4.2 and 4.3)."
+    ],
+    "brand_names": ["Axert"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "The recommended starting dose in patients with severe renal impairment is 6.25 mg, with a maximum daily dose of 12.5 mg over a 24-hour period (FDA almotriptan tablets label, sections 2.3 and 8.7). Clearance of almotriptan is approximately 65% lower in severe renal impairment (Cl/F 19.8 L/hour; creatinine clearance between 10 and 30 mL/min) and approximately 40% lower in moderate renal impairment (Cl/F 34.2 L/hour; creatinine clearance between 31 and 71 mL/min) than in healthy volunteers (Cl/F 57 L/hour), with maximal plasma concentrations increased by approximately 80% in these patients (FDA almotriptan tablets label, section 12.3). The UK SmPC states that no dosage adjustment is required in patients with mild or moderate renal impairment and that patients with severe renal impairment should take no more than one 12.5 mg tablet in a 24 hour period (Zentiva Almotriptan SmPC, section 4.2).",
+    "hepatic_dose_adjustment": "The recommended starting dose in patients with hepatic impairment is 6.25 mg, with a maximum daily dose of 12.5 mg over a 24-hour period (FDA almotriptan tablets label, sections 2.2 and 8.6). The pharmacokinetics of almotriptan have not been assessed in patients with hepatic impairment; based on the known mechanisms of clearance, the maximum decrease expected in almotriptan clearance due to hepatic impairment would be 60% (FDA almotriptan tablets label, section 12.3). The UK SmPC contraindicates almotriptan in patients with severe hepatic impairment (Zentiva Almotriptan SmPC, sections 4.2 and 4.3).",
+    "administration_instructions": "Oral. Take one 6.25 mg or 12.5 mg tablet as a single dose as early as possible after the onset of migraine-associated headache. If the headache is relieved after the initial dose but returns, the dose may be repeated after 2 hours, but the maximum daily dose should not exceed 25 mg (FDA almotriptan tablets label, section 2.1). Tablets are white, circular, biconvex, film-coated, available as 6.25 mg debossed 'A1' and 12.5 mg debossed 'A2'; store at 25 degrees C, with excursions permitted from 15 to 30 degrees C (FDA almotriptan tablets label, sections 3 and 16). The tablets can be taken with or without food (FDA almotriptan tablets label, section 12.3; Zentiva Almotriptan SmPC, section 4.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA almotriptan tablets label (Ajanta Pharma USA), section 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA almotriptan tablets label, sections 1 and 1.1-1.2; Zentiva Almotriptan 12.5 mg SmPC, section 4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA almotriptan tablets label, sections 4 and 4.1-4.8; Zentiva Almotriptan SmPC, sections 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA almotriptan tablets label, section 6, sections 6.1 (Table 1), 6.2 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA almotriptan tablets label, sections 2, 2.1, 2.2, 2.3, 8.4, 8.5 and 12.3; Zentiva Almotriptan SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA almotriptan tablets label, sections 4.5, 4.6, 5.5, 7.1-7.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA almotriptan tablets label, sections 1.2, 2.1, 4.4, 5.1, 5.2, 5.5, 5.6, 5.7 and 7.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA almotriptan tablets label, section 17 Patient Counseling Information (subtopics: Drug Interactions, Hypersensitivity, Risk of Myocardial Ischemia, Serotonin Syndrome, Medication Overuse Headache, Pregnancy, Nursing Mothers, Ability to Operate Machinery or Vehicles)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA almotriptan tablets label, section 5 and subsections 5.1-5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA almotriptan tablets label, sections 1.2, 2.1, 4.5, 4.6, 5.10 and 5.11; Zentiva Almotriptan SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA almotriptan tablets label, sections 4.1, 5.1, 5.3, 5.4, 5.5 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA almotriptan tablets label, section 12.3 (Absorption); Zentiva Almotriptan SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA almotriptan tablets label, section 8.1 (Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA almotriptan tablets label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA almotriptan tablets label, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA almotriptan tablets label, sections 10.1 and 10.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA almotriptan tablets label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA almotriptan tablets label, sections 1.1, 1.2, 2.1, 4.5, 4.6, 5.1, 5.5, 5.6, 7.3 and 12.2; Zentiva Almotriptan SmPC, sections 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AXERT (almotriptan malate) tablet label (DB row lists 'Almotriptan Malate')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=886c13fa-4547-4411-88aa-8e23a7a698f6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in the almotriptan tablets label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA almotriptan tablets label, sections 2.3, 8.7 and 12.3; Zentiva Almotriptan SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA almotriptan tablets label, sections 2.2, 8.6 and 12.3; Zentiva Almotriptan SmPC, sections 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA almotriptan tablets label, sections 2.1, 3, 12.3 and 16; Zentiva Almotriptan SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa380c4-c885-4743-85bf-88819ae68645"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Zentiva Almotriptan 12.5 mg Film Coated tablets SmPC (Zentiva Pharma UK Limited, PL 17780/1131) for the EU indication, contraindication, paediatric restriction and dosing statements",
+      "url": "https://www.medicines.org.uk/emc/product/100139/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the almotriptan tablets label)"
+  ],
+  "notes": "The table stores this agent as 'Almotriptan'; the DB row brand_names lists 'Almotriptan Malate'. The US labels are for almotriptan (as almotriptan malate) tablets: the current US label used here is the Ajanta Pharma almotriptan tablets label (DailyMed setid 6fa380c4-c885-4743-85bf-88819ae68645, published January 2026), which includes the medication-overuse-headache warning added to the triptan class; the branded AXERT label (setid 886c13fa-4547-4411-88aa-8e23a7a698f6) is cited for the brand name only. The UK SmPC for Almotriptan 12.5 mg film-coated tablets (Zentiva Pharma UK Limited, PL 17780/1131) is used for the EU indication, the contraindication in severe hepatic impairment, the paediatric restriction and UK dosing statements. Note the genuine US/UK divergence: the US label includes adolescents 12 to 17 years while the UK/EU SmPC does not recommend use under 18 years. There is no boxed warning. The pregnancy category C in the US label is pre-PLLR and is reported because the label still states it."
+}

@@ -1,0 +1,197 @@
+{
+  "name": "Acamprosate",
+  "existing_id": "73d0e6bb-f380-4c5f-982e-cdfbaf7bfc2e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The mechanism of action of acamprosate in maintenance of alcohol abstinence is not completely understood. Chronic alcohol exposure is hypothesized to alter the normal balance between neuronal excitation and inhibition, and studies in animals have provided evidence to suggest acamprosate may interact with glutamate and GABA neurotransmitter systems centrally, which has led to the hypothesis that acamprosate restores this balance. Pharmacodynamic studies show that acamprosate calcium reduces alcohol intake in alcohol-dependent animals in a dose-dependent manner, an effect that appears specific to alcohol and to the mechanisms of alcohol dependence. Acamprosate calcium has negligible observable central nervous system activity in animals outside of its effects on alcohol dependence, showing no anticonvulsant, antidepressant or anxiolytic activity, and its administration is not associated with the development of tolerance or dependence. Acamprosate calcium is not known to cause alcohol aversion and does not cause a disulfiram-like reaction as a result of ethanol ingestion (FDA acamprosate calcium delayed-release tablets label, sections 12.1 and 12.2).",
+    "indications": [
+      "Maintenance of abstinence from alcohol in patients with alcohol dependence who are abstinent at treatment initiation; treatment should be part of a comprehensive management program that includes psychosocial support (FDA acamprosate calcium delayed-release tablets label, section 1)",
+      "Efficacy has not been demonstrated in subjects who have not undergone detoxification and not achieved alcohol abstinence prior to beginning treatment, and has not been adequately assessed in polysubstance abusers (FDA acamprosate calcium delayed-release tablets label, section 1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to acamprosate calcium or any of its components (FDA acamprosate calcium delayed-release tablets label, section 4.1)",
+      "Severe renal impairment (creatinine clearance of 30 mL/min or less) (FDA acamprosate calcium delayed-release tablets label, section 4.2)"
+    ],
+    "side_effects": [
+      "Common adverse events occurring in at least 3% of patients and more often than placebo in controlled trials: accidental injury, asthenia, pain, anorexia, diarrhoea, flatulence, nausea, anxiety, depression, dizziness, dry mouth, insomnia, paraesthesia, pruritus and sweating (FDA acamprosate calcium delayed-release tablets label, section 6.1)",
+      "Diarrhoea: 10% (1332 mg/day) and 17% (1998 mg/day) versus 10% placebo; diarrhoea was the only event associated with discontinuation in more than 1% of patients (2% acamprosate vs 0.7% placebo) (FDA acamprosate calcium delayed-release tablets label, section 6.1, Table 1)",
+      "Nausea 3-4% versus 3% placebo; asthenia 5-7% versus 5%; insomnia 6-9% versus 7%; anxiety 5-8% versus 6%; depression 4-8% versus 5%; dizziness 3-4% versus 3% (FDA acamprosate calcium delayed-release tablets label, section 6.1, Table 1)",
+      "Nervous system: somnolence, libido decreased, amnesia, thinking abnormal, tremor, hypertension, convulsion, confusion, vertigo, withdrawal syndrome, apathy, suicidal ideation, hostility, agitation, abnormal dreams, hallucinations, hypesthesia; infrequently alcohol craving, psychosis, hyperkinesia, twitching, depersonalization, increased salivation, paranoid reaction, encephalopathy and manic reaction (FDA acamprosate calcium delayed-release tablets label, section 6.1)",
+      "Gastrointestinal: vomiting, dyspepsia, constipation, increased appetite, abnormal liver function tests, gastroenteritis, gastritis, dysphagia, gastrointestinal haemorrhage, pancreatitis, oesophagitis and hepatitis (FDA acamprosate calcium delayed-release tablets label, section 6.1)",
+      "Suicidal nature adverse events (suicidal ideation, suicide attempts, completed suicides) were more common with acamprosate than placebo: 1.4% vs 0.5% in studies of 6 months or less and 2.4% vs 0.8% in year-long studies; completed suicides in 3 of 2272 acamprosate patients (0.13%) vs 2 of 1962 placebo patients (0.10%) (FDA acamprosate calcium delayed-release tablets label, section 5.2)",
+      "Postmarketing (non-US evaluation): acute kidney failure reported as temporally associated with acamprosate treatment in at least 3 patients (FDA acamprosate calcium delayed-release tablets label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Recommended dose: 666 mg (two 333 mg tablets) taken three times daily (total 1,998 mg/day). A lower dose may be effective in some patients. Dosing may be done without regard to meals, but dosing with meals was used in clinical trials and is suggested in patients who regularly eat three meals daily. Treatment should be initiated as soon as possible after the period of alcohol withdrawal, when the patient has achieved abstinence, and should be maintained if the patient relapses. Acamprosate must be used as part of a comprehensive psychosocial treatment program (FDA acamprosate calcium delayed-release tablets label, section 2).",
+      "geriatric": "Forty-one of 4234 patients in double-blind, placebo-controlled clinical trials were 65 years of age or older, and none were 75 or over; there were too few patients in the 65-and-over group to evaluate differences in safety or effectiveness versus younger patients. Because acamprosate is substantially excreted by the kidney and elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA acamprosate calcium delayed-release tablets label, section 8.5).",
+      "paediatric": "The safety and efficacy of acamprosate calcium have not been established in the pediatric population; the pharmacokinetics of acamprosate calcium have not been evaluated in a pediatric population (FDA acamprosate calcium delayed-release tablets label, sections 8.4 and 12.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Acamprosate does not affect the pharmacokinetics of alcohol, and the pharmacokinetics of acamprosate are not affected by alcohol, diazepam or disulfiram (FDA acamprosate calcium delayed-release tablets label, sections 7 and 12.3).",
+      "Naltrexone: clinically important interactions were not observed; co-administration of acamprosate with naltrexone led to a 33% increase in acamprosate Cmax and a 25% increase in acamprosate AUC, and no dosage adjustment is recommended (FDA acamprosate calcium delayed-release tablets label, sections 7 and 12.3).",
+      "Anxiolytics, hypnotics and sedatives (including benzodiazepines) and non-opioid analgesics: the safety profile of patients taking acamprosate concomitantly with these was similar to that of patients taking placebo with the same concomitants (FDA acamprosate calcium delayed-release tablets label, section 6.1).",
+      "Antidepressants: patients taking acamprosate concomitantly with antidepressants more commonly reported both weight gain and weight loss compared with patients taking either medication alone (FDA acamprosate calcium delayed-release tablets label, section 6.1).",
+      "CYP enzymes: acamprosate has no inducing potential on CYP1A2 or CYP3A4 and does not inhibit metabolism mediated by CYP1A2, 2C9, 2C19, 2D6, 2E1 or 3A4 (FDA acamprosate calcium delayed-release tablets label, section 12.3).",
+      "Food: co-administration with food decreases bioavailability as measured by Cmax and AUC by approximately 42% and 23% respectively; the food effect on absorption is not clinically significant and no dose adjustment is necessary (FDA acamprosate calcium delayed-release tablets label, section 12.3)."
+    ],
+    "monitoring": "Assess renal function before starting treatment and dose accordingly: reduce to one 333 mg tablet three times daily in moderate renal impairment (creatinine clearance 30 to 50 mL/min); acamprosate is contraindicated in severe renal impairment (creatinine clearance 30 mL/min or less). Peak plasma concentrations after a single 2 x 333 mg dose are about 2-fold and 4-fold higher in moderate and severe renal impairment respectively, with elimination half-lives about 1.8-fold and 2.6-fold longer, and there is a linear relationship between creatinine clearance and total apparent plasma clearance, renal clearance and plasma half-life (FDA acamprosate calcium delayed-release tablets label, sections 2.1, 5.1, 8.6 and 12.3). Monitor patients for depression or suicidal ideation, and prompt patients, families and caregivers to report such symptoms to the health care provider (FDA acamprosate calcium delayed-release tablets label, sections 5 and 5.2). Monitor renal function in elderly patients when selecting the dose (FDA acamprosate calcium delayed-release tablets label, section 8.5). Note that use of acamprosate does not eliminate or diminish alcohol withdrawal symptoms, so patients still need appropriate care for withdrawal (FDA acamprosate calcium delayed-release tablets label, section 5.3).",
+    "patient_counselling": "Discuss the following with patients (FDA acamprosate calcium delayed-release tablets label, section 17): renal impairment - a lower dose is recommended for moderate renal impairment and acamprosate is contraindicated in severe renal impairment (creatinine clearance 30 mL/min or less); suicidality and depression - families and caregivers should be alerted to monitor patients for the emergence of symptoms of depression or suicidality and report them to the health care provider; alcohol withdrawal - use of acamprosate does not eliminate or diminish withdrawal symptoms; pregnancy and breast feeding - advise patients to notify their physician if they become pregnant or intend to become pregnant during therapy, and to notify their physician if they are breast-feeding. Advise patients to continue acamprosate therapy as directed even in the event of relapse and to discuss any renewed drinking with their physicians, and advise patients that acamprosate has been shown to help maintain abstinence only when used as part of a treatment program that includes counselling and support (FDA acamprosate calcium delayed-release tablets label, section 17).",
+    "warnings": [
+      "Renal impairment: a dose reduction is required in moderate renal impairment (creatinine clearance 30 to 50 mL/min); acamprosate is contraindicated in severe renal impairment (creatinine clearance 30 mL/min or less) (FDA acamprosate calcium delayed-release tablets label, sections 5 and 5.1)",
+      "Suicidality and depression: adverse events of a suicidal nature were more common with acamprosate than placebo (1.4% vs 0.5% in studies of 6 months or less; 2.4% vs 0.8% in year-long studies); completed suicides occurred in 3 of 2272 (0.13%) acamprosate patients vs 2 of 1962 (0.10%) placebo patients; patients, families and caregivers should be alerted to monitor for depression or suicidal thinking (FDA acamprosate calcium delayed-release tablets label, sections 5 and 5.2)",
+      "Alcohol withdrawal: use of acamprosate does not eliminate or diminish withdrawal symptoms (FDA acamprosate calcium delayed-release tablets label, sections 5 and 5.3)"
+    ],
+    "precautions": [
+      "Acamprosate should only be started once the patient has completed alcohol withdrawal and achieved abstinence; efficacy has not been demonstrated in subjects who have not undergone detoxification and not achieved abstinence prior to beginning treatment (FDA acamprosate calcium delayed-release tablets label, section 1).",
+      "Efficacy in promoting abstinence from alcohol in polysubstance abusers has not been adequately assessed (FDA acamprosate calcium delayed-release tablets label, section 1).",
+      "Acamprosate should be used only as part of a comprehensive psychosocial treatment programme; efficacy in promoting abstinence has been shown only when used with counselling and support (FDA acamprosate calcium delayed-release tablets label, sections 1 and 17).",
+      "Because the drug is substantially renally excreted unchanged, dose selection must take renal function into account, particularly in elderly patients (FDA acamprosate calcium delayed-release tablets label, sections 8.5 and 12.3).",
+      "Acamprosate calcium is a synthetic analogue of the amino acid homotaurine; traces of residual sulfites may be present in the drug product because sulfites were used in the synthesis of the drug substance (FDA acamprosate calcium delayed-release tablets label, section 11)."
+    ],
+    "serious_adverse_reactions": [
+      "Suicidality and depression: suicidal ideation, suicide attempts and completed suicides (FDA acamprosate calcium delayed-release tablets label, sections 5.2 and 6)",
+      "Acute kidney failure, reported as temporally associated with acamprosate treatment in at least 3 patients during the non-US postmarketing evaluation (FDA acamprosate calcium delayed-release tablets label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Co-administration with food decreases bioavailability as measured by Cmax and AUC by approximately 42% and 23% respectively; the food effect on absorption is not clinically significant and no dose adjustment is necessary, although dosing with meals is suggested in patients who regularly eat three meals daily (FDA acamprosate calcium delayed-release tablets label, sections 2 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Acamprosate calcium has been shown to be teratogenic in rats at doses approximately equal to the human dose on a mg/m basis and in rabbits at doses approximately 3 times the human dose on a mg/m basis. In rats, acamprosate produced a dose-related increase in the number of fetuses with malformations at oral doses of 300 mg/kg/day or greater (approximately the maximum recommended human daily oral dose on a mg/m basis), with malformations including hydronephrosis, malformed iris, retinal dysplasia and retroesophageal subclavian artery; no findings occurred at 50 mg/kg/day (approximately one-fifth the MRHD). Increased hydronephrosis was also noted in Burgundy Tawny rabbits at oral doses of 400 mg/kg/day or greater; no developmental effects were observed in New Zealand white rabbits up to 1000 mg/kg/day (approximately 8 times the MRHD). A study in pregnant mice given acamprosate from gestation day 15 through postnatal day 28 showed an increased incidence of still-born fetuses at 960 mg/kg/day or greater (approximately 2 times the MRHD), with no effects at 320 mg/kg/day. There are no adequate and well-controlled studies in pregnant women, so acamprosate calcium should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. The findings in animals should be considered in relation to the known adverse developmental effects of ethyl alcohol, including the characteristics of fetal alcohol syndrome (FDA acamprosate calcium delayed-release tablets label, section 8.1).",
+    "lactation_guidance": "In animal studies, acamprosate was excreted in the milk of lactating rats dosed orally with acamprosate calcium, at a milk-to-blood concentration ratio of 1.3:1. It is not known whether acamprosate is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when acamprosate calcium is administered to a nursing woman (FDA acamprosate calcium delayed-release tablets label, section 8.3).",
+    "overdose": "In all reported cases of acute overdosage with acamprosate calcium (total reported doses of up to 56 grams), the only symptom that could be reasonably associated with acamprosate calcium was diarrhoea. Hypercalcaemia has not been reported in cases of acute overdose, but a risk of hypercalcaemia should be considered in chronic overdosage. Treatment of overdose should be symptomatic and supportive (FDA acamprosate calcium delayed-release tablets label, section 10).",
+    "pharmacokinetics": "Absolute bioavailability after oral administration is about 11%. Steady-state plasma concentrations are reached within 5 days of dosing; steady-state peak plasma concentrations after 2 x 333 mg three times daily average 350 ng/mL and occur 3 to 8 hours post-dose. Volume of distribution after intravenous administration is estimated at 72 to 109 L (approximately 1 L/kg) and plasma protein binding is negligible. Acamprosate does not undergo metabolism. After oral dosing of 2 x 333 mg, the terminal half-life ranges from approximately 20 to 33 hours, and the major route of excretion is via the kidneys as unchanged acamprosate. Acamprosate calcium does not exhibit significant pharmacokinetic differences between male and female subjects; pharmacokinetics have not been evaluated in a geriatric population, but since renal function diminishes in elderly patients and acamprosate is excreted unchanged in urine, plasma concentrations are likely to be higher in the elderly than in younger adults. Acamprosate is not metabolised by the liver and its pharmacokinetics are not altered in patients with mild to moderate hepatic impairment (Child-Pugh groups A and B), so no dosage adjustment is recommended in such patients. Cross-study comparison at 2 x 333 mg three times daily showed similar pharmacokinetics in alcohol-dependent subjects and healthy subjects (FDA acamprosate calcium delayed-release tablets label, section 12.3).",
+    "clinical_pearls": [
+      "Acamprosate is for maintenance of abstinence in already-abstinent, detoxified patients - it is not a detoxification agent and does not treat acute withdrawal (FDA acamprosate calcium delayed-release tablets label, sections 1 and 5.3).",
+      "Renal function drives dosing: 333 mg three times daily in moderate renal impairment (CrCl 30-50 mL/min) and the drug is contraindicated at CrCl 30 mL/min or less, because acamprosate is eliminated unchanged by the kidney (FDA acamprosate calcium delayed-release tablets label, sections 2.1, 4.2 and 12.3).",
+      "It is one of the few alcohol-dependence pharmacotherapies with no abuse potential and no disulfiram-like reaction: it does not cause alcohol aversion and does not provoke flushing with ethanol (FDA acamprosate calcium delayed-release tablets label, section 12.2).",
+      "Diarrhoea is the most common treatment-limiting adverse effect and the only event causing discontinuation in more than 1% of patients (FDA acamprosate calcium delayed-release tablets label, section 6.1).",
+      "It can be combined with naltrexone: co-administration raises acamprosate exposure by about 25-33% but no dose adjustment is required and no clinically important interaction was observed (FDA acamprosate calcium delayed-release tablets label, sections 7 and 12.3).",
+      "There is no boxed warning on the acamprosate label; the key risks are renal dosing, suicidality/depression monitoring and the limitation that it does not relieve withdrawal (FDA acamprosate calcium delayed-release tablets label, sections 4, 5.1, 5.2 and 5.3)."
+    ],
+    "brand_names": ["CAMPRAL"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Dose reduction is required in moderate renal impairment (creatinine clearance 30 to 50 mL/min): one 333 mg tablet three times daily. Acamprosate calcium is contraindicated in severe renal impairment (creatinine clearance 30 mL/min or less) (FDA acamprosate calcium delayed-release tablets label, sections 2.1, 4.2, 5.1 and 8.6).",
+    "hepatic_dose_adjustment": "Acamprosate is not metabolised by the liver and the pharmacokinetics of acamprosate calcium are not altered in patients with mild to moderate hepatic impairment (Child-Pugh groups A and B); no dosage adjustment is recommended in such patients (FDA acamprosate calcium delayed-release tablets label, section 12.3).",
+    "administration_instructions": "Take 666 mg (two 333 mg enteric-coated tablets) three times daily by mouth; tablets are taken with or without food, with meals suggested for patients who eat three meals daily. Initiate as soon as possible after alcohol withdrawal when abstinence has been achieved, and maintain treatment if the patient relapses. Store at 20 to 25 degrees C (68 to 77 degrees F), with permitted excursions to 15 to 30 degrees C (59 to 86 degrees F) (FDA acamprosate calcium delayed-release tablets label, sections 2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets (Glenmark Pharmaceuticals Inc., USA), sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 4.1 (Hypersensitivity) and 4.2 (Severe Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 5.2 and 6.1 (Table 1) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 2, 2.1, 8.4, 8.5 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 6.1, 7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 2.1, 5, 5.1, 5.2, 5.3, 8.5, 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 17 Patient Counseling Information (17.1 Information for Patients)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 5, 5.1, 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 1, 8.5, 11, 12.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 5.2, 6 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 2 and 12.3 (Effect of food on bioavailability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 8.3 Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 12.3 Pharmacokinetics (Absorption, Distribution, Metabolism, Elimination, Special Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 1, 2.1, 4.2, 5.1, 5.2, 5.3, 6.1, 7, 12.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "brand_names",
+      "ref": "CAMPRAL (acamprosate calcium) listed as a brand product on DailyMed (Carilion Materials Management)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe6f754f-62b4-4c86-805d-221332409516"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA acamprosate calcium delayed-release tablets label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 2.1, 4.2, 5.1, 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, section 12.3 (Special Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Acamprosate Calcium delayed-release tablets, sections 2, 3 and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43e9ef60-2d85-4394-906b-93042fea099a"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and efficacy in the pediatric population are not established)",
+    "pregnancy_category (the current acamprosate label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Acamprosate' with brand_names ['acamprosate calcium'], which is the salt/INN name rather than a brand. The molecule is acamprosate calcium (a synthetic analogue of homotaurine); CAMPRAL is the US brand, so brand_names has been corrected to ['CAMPRAL']. Content is sourced from the current FDA label for acamprosate calcium delayed-release tablets (Glenmark, 333 mg enteric-coated tablets) and cross-checked against the CAMPRAL label, which carries identical dosing, contraindications and warnings. Note the dose arithmetic: 2 x 333 mg three times daily = 1,998 mg/day acamprosate calcium (equivalent to 1,800 mg/day acamprosate), which is why the clinical-trial adverse event tables report a '1998 mg/day' arm. The label has no boxed warning and no pregnancy category letter (PLLR format)."
+}

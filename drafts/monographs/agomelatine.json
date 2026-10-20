@@ -1,0 +1,228 @@
+{
+  "name": "Agomelatine",
+  "existing_id": "f6d65221-ebe1-489e-8380-89433564ef0b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Agomelatine is a melatonergic agonist (MT1 and MT2 receptors) and 5-HT2C antagonist (ATC code N06AX22, psychoanaleptics - other antidepressants). Binding studies indicate that agomelatine has no effect on monoamine uptake and no affinity for alpha, beta adrenergic, histaminergic, cholinergic, dopaminergic or benzodiazepine receptors. It resynchronises circadian rhythms in animal models of circadian rhythm disruption, and increases noradrenaline and dopamine release specifically in the frontal cortex while having no influence on the extracellular levels of serotonin. In humans, agomelatine has positive phase-shifting properties: it induces a phase advance of sleep, body temperature decline and melatonin onset. In depressed patients, treatment with agomelatine 25 mg increased slow wave sleep without modification of REM sleep amount or REM latency, and induced an advance of the time of sleep onset and of minimum heart rate; from the first week of treatment, onset of sleep and quality of sleep were significantly improved without daytime clumsiness. It also has a neutral effect on heart rate and blood pressure, and it does not induce a discontinuation syndrome after abrupt cessation (EMA Valdoxan SmPC, section 5.1).",
+    "indications": [
+      "Treatment of major depressive episodes in adults (EMA Valdoxan SmPC, section 4.1).",
+      "Not recommended for the treatment of depression in patients under 18 years of age, since safety and efficacy of agomelatine have not been established in that population (EMA Valdoxan SmPC, section 4.4).",
+      "Should not be used for the treatment of major depressive episodes in elderly patients with dementia, since safety and efficacy have not been established in these patients (EMA Valdoxan SmPC, section 4.4)."
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance or to any of the excipients (EMA Valdoxan SmPC, section 4.3).",
+      "Hepatic impairment, that is cirrhosis or active liver disease, or transaminases exceeding 3 times the upper limit of normal (EMA Valdoxan SmPC, section 4.3).",
+      "Concomitant use of potent CYP1A2 inhibitors, for example fluvoxamine and ciprofloxacin, because fluvoxamine markedly inhibits agomelatine metabolism, resulting in a 60-fold (range 12 to 412) increase in agomelatine exposure (EMA Valdoxan SmPC, sections 4.3 and 4.5)."
+    ],
+    "side_effects": [
+      "Overall summary: adverse reactions were usually mild or moderate, occurred within the first two weeks of treatment, were usually transient, and did not generally lead to cessation of therapy. The most common adverse reactions were headache, nausea and dizziness (EMA Valdoxan SmPC, section 4.8).",
+      "Psychiatric disorders - common: anxiety. Uncommon: suicidal thoughts or behaviour, agitation and related symptoms such as irritability and restlessness, aggression, nightmares, mania/hypomania (these symptoms may also be due to the underlying disease) and confusional state. Rare: hallucinations (EMA Valdoxan SmPC, section 4.8).",
+      "Nervous system disorders - very common: headache. Common: dizziness, somnolence, insomnia. Uncommon: migraine, paraesthesia, restless leg syndrome. Rare: akathisia (EMA Valdoxan SmPC, section 4.8).",
+      "Eye disorders - uncommon: blurred vision. Ear and labyrinth disorders - uncommon: tinnitus (EMA Valdoxan SmPC, section 4.8).",
+      "Gastrointestinal disorders - common: nausea, diarrhoea, constipation, abdominal pain. Uncommon: vomiting (EMA Valdoxan SmPC, section 4.8).",
+      "Hepatobiliary disorders - common: increased ALT and/or AST; increases greater than 3 times the upper limit of normal for ALT and/or AST were seen in 1.2% of patients on agomelatine 25 mg daily and 2.6% on agomelatine 50 mg daily, versus 0.5% on placebo. Uncommon: increased gamma-glutamyltransferase greater than 3 times the upper limit of normal. Rare: hepatitis, increased alkaline phosphatase greater than 3 times the upper limit of normal, hepatic failure (a few cases were exceptionally reported with fatal outcome or liver transplantation in patients with hepatic risk factors), and jaundice (EMA Valdoxan SmPC, section 4.8).",
+      "Skin and subcutaneous tissue disorders - uncommon: hyperhidrosis, eczema, pruritus, urticaria. Rare: erythematous rash, face oedema and angioedema (EMA Valdoxan SmPC, section 4.8).",
+      "Musculoskeletal and connective tissue disorders - common: back pain. Uncommon: myalgia. Renal and urinary disorders - rare: urinary retention (EMA Valdoxan SmPC, section 4.8).",
+      "General disorders and administration site conditions - common: fatigue. Investigations - common: weight increased. Uncommon: weight decreased (EMA Valdoxan SmPC, section 4.8).",
+      "Paediatric population: in the pivotal double-blind study the safety profile of agomelatine 25 mg in adolescents was similar to adults except that nausea occurred more frequently in adolescents (13.3%) than in adults (6.3%). In pooled clinical trial data, adverse events and serious adverse events were reported more frequently in adolescents (67.2% versus 60.4% of patients with at least one adverse event, and 10.4% versus 3.5% with at least one serious adverse event) and hepatic adverse events were reported in 6.3% of adolescents versus 1.7% of adults. Suicidal events occurred more frequently in adolescents (3.1%, 10 events in 6 patients) than in adults (1.2%, 66 events in 65 patients) (EMA Valdoxan SmPC, section 4.8).",
+      "Post-marketing: cases of liver injury, including hepatic failure with occasional fatal outcome or liver transplantation in patients with hepatic risk factors, transaminase elevations exceeding 10 times the upper limit of normal, hepatitis and jaundice; most occurred during the first months of treatment, with a predominantly hepatocellular pattern that usually returns to normal on cessation (EMA Valdoxan SmPC, section 4.4)."
+    ],
+    "dosage": {
+      "adult": "The recommended dose is 25 mg once daily taken orally at bedtime. After two weeks of treatment, if there is no improvement of symptoms, the dose may be increased to 50 mg once daily, that is two 25 mg tablets taken together at bedtime. The decision to increase the dose has to be balanced with a higher risk of transaminase elevation, and any increase to 50 mg should be made on an individual patient benefit/risk basis with strict respect for liver function test monitoring. Liver function tests should be performed in all patients before starting treatment and treatment should not be initiated if transaminases exceed 3 times the upper limit of normal. During treatment transaminases should be monitored after around 3, 6, 12 and 24 weeks and thereafter when clinically indicated, and treatment should be discontinued if transaminases exceed 3 times the upper limit of normal. Tablets may be taken with or without food. Treatment should last at least 6 months, and no dosage tapering is needed on discontinuation (EMA Valdoxan SmPC, sections 4.2 and 4.4).",
+      "geriatric": "The efficacy and safety of agomelatine 25 to 50 mg/day have been established in elderly depressed patients under 75 years, and no dose adjustment is required in relation to age. No effect is documented in patients aged 75 years or older, so agomelatine should not be used in this age group. In a placebo-controlled 8-week trial in elderly depressed patients (65 years and older, N=222, of whom 151 on agomelatine) there was a statistically significant difference of 2.67 points on the HAM-D total score; no improvement was observed in very elderly patients aged 75 years or older (N=69, of whom 48 on agomelatine), and tolerability was comparable to younger adults (EMA Valdoxan SmPC, sections 4.2, 4.4 and 5.1).",
+      "paediatric": "Children from birth to under 7 years: there is no relevant use of agomelatine for treatment of major depressive episodes and no data are available. Children and adolescents aged 7 to 17 years: the safety and efficacy of agomelatine have not been established and no recommendation on posology can be made; agomelatine is not recommended for the treatment of depression in patients under 18 years of age (EMA Valdoxan SmPC, sections 4.2 and 4.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Potent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin): co-administration is contraindicated. Fluvoxamine, a potent CYP1A2 and moderate CYP2C9 inhibitor, markedly inhibits the metabolism of agomelatine, resulting in a 60-fold (range 12 to 412) increase in agomelatine exposure (EMA Valdoxan SmPC, sections 4.3 and 4.5).",
+      "Moderate CYP1A2 inhibitors (propranolol, enoxacin, and oestrogens): combination with oestrogens, which are moderate CYP1A2 inhibitors, results in a several-fold increased exposure to agomelatine; although there was no specific safety signal in the 800 patients treated in combination with oestrogens, caution should be exercised when prescribing agomelatine with other moderate CYP1A2 inhibitors (EMA Valdoxan SmPC, sections 4.4 and 4.5).",
+      "Rifampicin: an inducer of all three cytochromes involved in the metabolism of agomelatine, may decrease the bioavailability of agomelatine (EMA Valdoxan SmPC, section 4.5).",
+      "Smoking: smoking induces CYP1A2 and has been shown to decrease the bioavailability of agomelatine, especially in heavy smokers of more than 15 cigarettes per day (EMA Valdoxan SmPC, sections 4.5 and 5.2).",
+      "Agomelatine does not affect other medicinal products via CYP450: in vivo agomelatine does not induce CYP450 isoenzymes, and it inhibits neither CYP1A2 in vivo nor other CYP450 in vitro, so it will not modify exposure to medicinal products metabolised by CYP450 (EMA Valdoxan SmPC, section 4.5).",
+      "Other medicinal products: no evidence of pharmacokinetic or pharmacodynamic interaction with benzodiazepines, lithium, paroxetine, fluconazole or theophylline was found in phase I clinical trials (EMA Valdoxan SmPC, section 4.5).",
+      "Alcohol: the combination of agomelatine and alcohol is not advisable (EMA Valdoxan SmPC, section 4.5).",
+      "Electroconvulsive therapy: there is no experience of concurrent use of agomelatine with ECT; animal studies have not shown proconvulsant properties, so the clinical consequences of ECT performed concomitantly with agomelatine are considered unlikely (EMA Valdoxan SmPC, section 4.5).",
+      "Switching from an SSRI or SNRI: patients may experience discontinuation symptoms after cessation of an SSRI or SNRI; the SmPC of the actual SSRI or SNRI should be consulted on how to withdraw the treatment, and agomelatine can be started immediately while tapering the previous antidepressant (EMA Valdoxan SmPC, sections 4.2 and 4.5)."
+    ],
+    "monitoring": "Perform liver function tests in all patients before starting treatment and do not initiate treatment if transaminases exceed 3 times the upper limit of normal (EMA Valdoxan SmPC, sections 4.2 and 4.4). Monitor transaminases periodically after around 3 weeks, 6 weeks (end of acute phase), 12 weeks and 24 weeks (end of maintenance phase), and thereafter when clinically indicated; if the dose is increased to 50 mg, repeat liver function tests at the same frequency as at initiation (EMA Valdoxan SmPC, sections 4.2 and 4.4). Any patient who develops increased serum transaminases should have liver function tests repeated within 48 hours (EMA Valdoxan SmPC, section 4.4). Discontinue treatment immediately if the patient develops symptoms or signs of potential liver injury - dark urine, light-coloured stools, yellow skin or eyes, pain in the upper right belly, or sustained new-onset and unexplained fatigue - or if the increase in serum transaminases exceeds 3 times the upper limit of normal. After discontinuation, repeat liver function tests until serum transaminases return to normal (EMA Valdoxan SmPC, section 4.4). Monitor patients and their caregivers for clinical worsening, suicidal behaviour or thoughts and unusual changes in behaviour, especially in the early stages of treatment and following dose changes (EMA Valdoxan SmPC, section 4.4). Assess the clinical response and reconsider continued therapy if there is no improvement after two weeks (dose escalation decision) and if a patient does not respond within 12 weeks of treatment, continued therapy should be reconsidered (EMA Valdoxan SmPC, sections 4.2 and 4.4).",
+    "patient_counselling": "Explain that the recommended dose is one 25 mg tablet at bedtime, taken with a drink of water, with or without food, and that the doctor may increase the dose to 50 mg (two tablets together at bedtime) after two weeks if there has been no improvement (EMA Valdoxan SmPC, package leaflet, section 3). Explain that liver function blood tests will be done before starting and then during treatment, usually after 3, 6, 12 and 24 weeks, and again at the same frequency if the dose is increased; the medicine must not be used if the liver does not work properly (EMA Valdoxan SmPC, package leaflet, section 3). Tell patients to report immediately the symptoms of possible liver injury - dark urine, light-coloured stools, yellow skin or eyes, pain in the upper right abdomen, and sustained new-onset and unexplained tiredness - because these require immediate discontinuation and investigation (EMA Valdoxan SmPC, section 4.4). Advise that most side effects are mild or moderate, appear within the first two weeks and are usually temporary, and that the most common are headache, nausea and dizziness (EMA Valdoxan SmPC, package leaflet, section 4). Advise patients and carers to be alert for any clinical worsening, suicidal behaviour or thoughts and unusual changes in behaviour, and to seek medical advice immediately if these occur, particularly in the first weeks of treatment or after a dose change (EMA Valdoxan SmPC, section 4.4). If a dose is forgotten, do not take a double dose; carry on with the next dose at the usual time - the calendar printed on the blister pack helps the patient remember the last dose taken (EMA Valdoxan SmPC, package leaflet, section 3). Advise patients not to stop taking the medicine without advice of the doctor even if they feel better, and that treatment should continue for at least 6 months to ensure freedom from symptoms (EMA Valdoxan SmPC, package leaflet, section 3). Advise patients switching from an SSRI or SNRI that discontinuation symptoms such as dizziness, numbness, sleep disturbance, agitation or anxiety, headache, nausea, vomiting and shaking may occur for a few weeks and that these should not be confused with a lack of early effect of agomelatine (EMA Valdoxan SmPC, package leaflet, section 3). Advise patients that the medicine may have a minor influence on the ability to drive or use machines, and that because dizziness and somnolence are common they should be cautious about driving or operating machinery (EMA Valdoxan SmPC, section 4.7). Advise patients that the combination with alcohol is not advisable (EMA Valdoxan SmPC, section 4.5).",
+    "warnings": [
+      "Monitoring of liver function is mandatory: cases of liver injury, including hepatic failure (with a few exceptional cases of fatal outcome or liver transplantation in patients with hepatic risk factors), transaminase elevations exceeding 10 times the upper limit of normal, hepatitis and jaundice have been reported in the post-marketing setting, mostly during the first months of treatment, with a predominantly hepatocellular pattern that usually returns to normal on cessation. Caution should be exercised before starting treatment and close surveillance should be performed throughout treatment in all patients, especially those with hepatic injury risk factors (obesity/overweight/non-alcoholic fatty liver disease, diabetes, alcohol use disorder and/or substantial alcohol intake) and those receiving concomitant medicines associated with a risk of hepatic injury (EMA Valdoxan SmPC, section 4.4).",
+      "Treatment must not be started if baseline ALT and/or AST exceed 3 times the upper limit of normal, and treatment must be discontinued immediately if transaminases exceed 3 times the upper limit of normal or if symptoms of potential liver injury develop (EMA Valdoxan SmPC, sections 4.2, 4.3 and 4.4).",
+      "Elderly: agomelatine should not be used in patients aged 75 years or older because no effect is documented in this age group (EMA Valdoxan SmPC, sections 4.2 and 4.4).",
+      "Use in elderly with dementia: Valdoxan should not be used for the treatment of major depressive episodes in elderly patients with dementia, since safety and efficacy have not been established in these patients (EMA Valdoxan SmPC, section 4.4).",
+      "Bipolar disorder, mania and hypomania: use with caution in patients with a history of bipolar disorder, mania or hypomania, and discontinue if a patient develops manic symptoms (EMA Valdoxan SmPC, section 4.4).",
+      "Suicide and suicidal thoughts: depression is associated with an increased risk of suicidal thoughts, self-harm and suicide, and this risk persists until significant remission occurs. As improvement may not occur during the first few weeks or more of treatment, patients should be closely monitored until such improvement occurs. Patients with a history of suicide-related events or a significant degree of suicidal ideation before treatment are at greater risk and should receive careful monitoring. Close supervision should accompany treatment, especially in early treatment and following dose changes, and patients and carers should be alerted to the need to monitor for clinical worsening, suicidal behaviour or thoughts and unusual changes in behaviour, and to seek medical advice immediately (EMA Valdoxan SmPC, section 4.4).",
+      "Combination with CYP1A2 inhibitors: concomitant use with potent CYP1A2 inhibitors is contraindicated, and caution should be exercised with moderate CYP1A2 inhibitors such as propranolol and enoxacin, which may result in increased exposure to agomelatine (EMA Valdoxan SmPC, sections 4.3, 4.4 and 4.5).",
+      "Paediatric population: agomelatine is not recommended in patients under 18 years of age because safety and efficacy have not been established. In clinical trials among children and adolescents treated with other antidepressants, suicide-related behaviour and hostility were more frequently observed than with placebo; pooled agomelatine data showed suicidal events at a higher frequency in adolescents (3.1%) than in adults (1.2%), and hepatic adverse events were more frequent in adolescents (6.3%) than adults (1.7%). Long-term safety data are limited (EMA Valdoxan SmPC, section 4.4).",
+      "Lactose intolerance: Valdoxan contains lactose, so patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it (EMA Valdoxan SmPC, section 4.4).",
+      "Post-marketing hepatic injury with occasional fatal outcome or liver transplantation, reported mostly in the first months of treatment and predominantly hepatocellular in pattern (EMA Valdoxan SmPC, sections 4.4 and 4.8)."
+    ],
+    "precautions": [
+      "Patients with a history of bipolar disorder, mania or hypomania require caution, and agomelatine should be discontinued if manic symptoms develop (EMA Valdoxan SmPC, section 4.4).",
+      "When switching from an SSRI or SNRI, agomelatine can be started immediately while tapering the previous antidepressant; the SmPC of the actual SSRI or SNRI should be consulted on how to withdraw it to avoid discontinuation symptoms (EMA Valdoxan SmPC, section 4.2).",
+      "No dosage tapering is needed when agomelatine treatment is discontinued (EMA Valdoxan SmPC, section 4.2).",
+      "Agomelatine has only a minor influence on the ability to drive and use machines, but because dizziness and somnolence are common adverse reactions patients should be cautioned about driving or operating machinery (EMA Valdoxan SmPC, section 4.7).",
+      "There is no experience of concurrent use with electroconvulsive therapy; animal studies have not shown proconvulsant properties, so the clinical consequences of ECT performed concomitantly are considered unlikely (EMA Valdoxan SmPC, section 4.5).",
+      "Each film-coated tablet contains 61.8 mg of lactose (as monohydrate) and less than 1 mmol (23 mg) of sodium, that is, it is essentially sodium-free (EMA Valdoxan SmPC, sections 2 and 4.4).",
+      "Caution should be exercised when prescribing agomelatine in patients with pre-treatment elevated transaminases, that is above the upper limit of normal but at or below 3 times the upper limit of normal (EMA Valdoxan SmPC, section 4.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Hepatic failure, reported rarely, with a few exceptional cases of fatal outcome or liver transplantation in patients with hepatic risk factors; also hepatitis, jaundice, increased transaminases and increased gamma-glutamyltransferase (EMA Valdoxan SmPC, section 4.8).",
+      "Post-marketing liver injury, including transaminase elevations exceeding 10 times the upper limit of normal, hepatitis and jaundice, mostly occurring during the first months of treatment (EMA Valdoxan SmPC, section 4.4).",
+      "Suicidal thoughts or behaviour, reported as uncommon; suicidal events occurred in 3.1% of adolescents versus 1.2% of adults in pooled clinical trial data (EMA Valdoxan SmPC, sections 4.4 and 4.8).",
+      "Mania and hypomania, reported as uncommon; agomelatine should be discontinued if a patient develops manic symptoms (EMA Valdoxan SmPC, sections 4.4 and 4.8).",
+      "Face oedema and angioedema, reported rarely, which may cause difficulty in breathing or swallowing (EMA Valdoxan SmPC, section 4.8).",
+      "Hallucinations, confusional state, akathisia and urinary retention, reported rarely (EMA Valdoxan SmPC, section 4.8).",
+      "Suicide-related events and hostility were more frequently observed with other antidepressants than placebo in paediatric trials, and the risk period is the early stages of recovery and after dose changes (EMA Valdoxan SmPC, section 4.4)."
+    ],
+    "food_interactions": [
+      "Food intake (a standard meal or a high-fat meal) does not modify the bioavailability or absorption rate of agomelatine, although variability is increased with high-fat food; tablets may therefore be taken with or without food (EMA Valdoxan SmPC, sections 4.2 and 5.2).",
+      "Alcohol: the combination of agomelatine and alcohol is not advisable (EMA Valdoxan SmPC, section 4.5).",
+      "Smoking is not a food but materially affects exposure: smoking induces CYP1A2 and decreases the bioavailability of agomelatine, especially in heavy smokers of more than 15 cigarettes per day (EMA Valdoxan SmPC, sections 4.5 and 5.2)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no or only a limited amount of data (fewer than 300 pregnancy outcomes) from the use of agomelatine in pregnant women. Animal studies do not indicate direct or indirect harmful effects with respect to pregnancy, embryonal or foetal development, parturition or postnatal development. As a precautionary measure, it is preferable to avoid the use of Valdoxan during pregnancy (EMA Valdoxan SmPC, section 4.6). Agomelatine passes into the placenta and foetuses of pregnant rats, and in carcinogenicity studies it induced an increase in the incidence of liver tumours in the rat and the mouse at a dose at least 110-fold higher than the therapeutic dose, most likely related to enzyme induction specific to rodents (EMA Valdoxan SmPC, section 5.3).",
+    "lactation_guidance": "It is not known whether agomelatine or its metabolites are excreted in human milk. Available pharmacodynamic and toxicological data in animals have shown excretion of agomelatine and metabolites in milk. A risk to the newborn or infant cannot be excluded, so a decision must be made whether to discontinue breast-feeding or to discontinue or abstain from Valdoxan therapy, taking into account the benefit of breast-feeding for the child and the benefit of therapy for the woman (EMA Valdoxan SmPC, section 4.6).",
+    "overdose": "There is limited experience with agomelatine overdose. Reported symptoms in overdose include epigastralgia, somnolence, fatigue, agitation, anxiety, tension, dizziness, cyanosis or malaise. One person who had ingested 2,450 mg agomelatine recovered spontaneously without cardiovascular or biological abnormalities. No specific antidote for agomelatine is known; management of overdose should consist of treatment of clinical symptoms and routine monitoring, and medical follow-up in a specialised environment is recommended (EMA Valdoxan SmPC, section 4.9).",
+    "pharmacokinetics": "Absorption: agomelatine is rapidly and well (at least 80%) absorbed after oral administration; absolute bioavailability is low (less than 5% at the therapeutic oral dose) with substantial inter-individual variability, and bioavailability is increased in women compared with men, increased by oral contraceptives and reduced by smoking. The peak plasma concentration is reached within 1 to 2 hours. In the therapeutic dose range, systemic exposure increases proportionally with dose, with saturation of the first-pass effect at higher doses. Distribution: steady-state volume of distribution is about 35 L and plasma protein binding is 95%, not modified with age or in renal impairment, though the free fraction is doubled in hepatic impairment. Biotransformation: agomelatine is rapidly metabolised mainly via hepatic CYP1A2, with CYP2C9 and CYP2C19 also involved but with a low contribution; the major metabolites, hydroxylated and demethylated agomelatine, are not active and are rapidly conjugated and eliminated in the urine. Elimination: elimination is rapid, with a mean plasma half-life of 1 to 2 hours and clearance of about 1,100 mL/min, essentially metabolic; excretion is mainly (80%) urinary and in the form of metabolites, with negligible recovery of unchanged compound in urine, and kinetics are not modified after repeated administration (EMA Valdoxan SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Agomelatine is the only antidepressant in this class that is a melatonergic MT1/MT2 agonist combined with 5-HT2C antagonism, and it resynchronises circadian rhythms and improves sleep onset and quality from the first week of treatment without daytime clumsiness (EMA Valdoxan SmPC, section 5.1).",
+      "The liver is the critical safety issue: baseline transaminases must be checked, treatment is not started if they exceed 3 times the upper limit of normal, and any rise requires a repeat test within 48 hours with discontinuation if the 3-times threshold is breached (EMA Valdoxan SmPC, section 4.4).",
+      "Dose escalation to 50 mg is not automatic: it should be made on an individual patient benefit/risk basis with strict liver function test monitoring, because transaminase elevations above 3 times the upper limit of normal occurred in 1.2% of patients on 25 mg versus 2.6% on 50 mg (EMA Valdoxan SmPC, sections 4.2 and 4.8).",
+      "Do not use in patients aged 75 years or older - no effect was documented in this group, and the AUC and Cmax at 25 mg were about 4-fold and 13-fold higher respectively than in patients under 75 years (EMA Valdoxan SmPC, sections 4.2, 4.4 and 5.2).",
+      "Ciprofloxacin and fluvoxamine are absolute contraindications; fluvoxamine raises agomelatine exposure by around 60-fold (EMA Valdoxan SmPC, sections 4.3 and 4.5).",
+      "Effectiveness depends on taking the tablet at bedtime; the drug is not a once-in-the-morning drug (EMA Valdoxan SmPC, section 4.2).",
+      "Agomelatine does not cause a discontinuation syndrome on abrupt cessation, so tapering is not required, and it did not induce sexual dysfunction in pooled analyses (EMA Valdoxan SmPC, sections 4.2 and 5.1).",
+      "Efficacy evidence is real but modest: significant benefit over placebo was shown in 6 of 10 short-term double-blind trials, with failure to differentiate from placebo in 2 trials where the active control paroxetine or fluoxetine showed assay sensitivity (EMA Valdoxan SmPC, section 5.1).",
+      "Agomelatine was shown to be superior or non-inferior to sertraline, escitalopram, fluoxetine, venlafaxine or duloxetine in six of seven trials in heterogeneous populations, but it was never compared head-to-head with those agents as a primary objective (EMA Valdoxan SmPC, section 5.1)."
+    ],
+    "brand_names": [
+      "Valdoxan 25 mg film-coated tablets (Les Laboratoires Servier, EU)",
+      "Agomelatine 25 mg film-coated tablets (generic, EU)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No relevant modification in agomelatine pharmacokinetic parameters has been observed in patients with severe renal impairment (n=8, single 25 mg dose), but only limited clinical data are available in depressed patients with severe or moderate renal impairment, so caution should be exercised when prescribing agomelatine to these patients; no specific renal dose adjustment is specified (EMA Valdoxan SmPC, sections 4.2 and 5.2).",
+    "hepatic_dose_adjustment": "Agomelatine is contraindicated in patients with hepatic impairment (cirrhosis or active liver disease) or with transaminases exceeding 3 times the upper limit of normal. In a study in cirrhotic patients, exposure to agomelatine 25 mg was substantially increased - approximately 70-fold in chronic mild (Child-Pugh A) and 140-fold in moderate (Child-Pugh B) liver impairment - compared with matched volunteers without liver failure (EMA Valdoxan SmPC, sections 4.2, 4.3 and 5.2).",
+    "administration_instructions": "For oral use. Swallow the film-coated tablet with a drink of water; it may be taken with or without food, and is taken at bedtime (EMA Valdoxan SmPC, sections 4.2 and 4.9; package leaflet section 3). If a dose is forgotten, do not take a double dose; carry on with the next dose at the usual time, and use the calendar printed on the blister pack to help remember the last dose taken (EMA Valdoxan SmPC, package leaflet section 3). Do not stop taking the medicine without the advice of the doctor even if the patient feels better (EMA Valdoxan SmPC, package leaflet section 3). The product does not require any special storage conditions, has a shelf life of 3 years, and is supplied in aluminium/PVC blister-packed calendar packs of 14, 28, 56, 84, 98 and (for hospital use) 100 film-coated tablets; any unused product or waste material should be disposed of in accordance with local requirements (EMA Valdoxan SmPC, sections 6.3 to 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "EMA SmPC, Valdoxan 25 mg film-coated tablets (agomelatine), Les Laboratoires Servier, section 5.1 (Pharmacodynamic properties)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "EMA Valdoxan SmPC, sections 4.1 and 4.4",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "EMA Valdoxan SmPC, sections 4.3, 4.4 and 4.5",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "EMA Valdoxan SmPC, sections 4.4 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.4 and 5.1",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.3, 4.4, 4.5 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "EMA Valdoxan SmPC, sections 4.2 and 4.4",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "EMA Valdoxan SmPC, sections 4.4, 4.5, 4.7 and package leaflet sections 3 and 4",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.3, 4.4, 4.5 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "EMA Valdoxan SmPC, sections 2, 4.2, 4.4, 4.5 and 4.7",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EMA Valdoxan SmPC, sections 4.4 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.5 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "EMA Valdoxan SmPC, sections 4.6 and 5.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "EMA Valdoxan SmPC, section 4.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "EMA Valdoxan SmPC, section 4.9",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "EMA Valdoxan SmPC, section 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.3, 4.4, 4.5, 4.8, 5.1 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "EMA EPAR product information for Valdoxan (agomelatine), marketing authorisation holder Les Laboratoires Servier, EU/1/08/499/002-008",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/valdoxan"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the EMA Valdoxan SmPC; the key risks (hepatotoxicity, suicidality, age restriction) are presented as Special Warnings and Precautions for Use in section 4.4",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EMA Valdoxan SmPC, sections 4.2 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 4.3 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "EMA Valdoxan SmPC, sections 4.2, 6.3, 6.4, 6.5, 6.6 and package leaflet section 3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no paediatric posology is recommended - safety and efficacy are not established below 18 years)",
+    "pregnancy_category (agomelatine is not authorised in the United States and the EMA SmPC uses narrative risk wording with no letter pregnancy category)"
+  ],
+  "notes": "Agomelatine is not FDA-approved; the authoritative source used is the EMA Summary of Product Characteristics for Valdoxan 25 mg film-coated tablets (marketing authorisation holder Les Laboratoires Servier, EU/1/08/499/002-008), together with the patient package leaflet in the same document. The database row for this drug previously carried olanzapine/antipsychotic text and a boxed antipsychotic-dementia warning, both of which have been removed and replaced with agomelatine-specific content; that note is superseded by this draft. Because the EU labelling system does not use FDA letter pregnancy categories, pregnancy_category is null and the pregnancy and lactation wording is given verbatim from section 4.6. There is no boxed warning; the equivalent EU content is in Special Warnings and Precautions for Use (section 4.4). The row had no brand names recorded; Valdoxan and generic agomelatine 25 mg tablets are listed. The database 'drug_class' of 'Central nervous system agent' is correct but generic; the precise class is psychoanaleptics, other antidepressants, ATC N06AX22."
+}

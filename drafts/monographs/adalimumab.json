@@ -1,0 +1,236 @@
+{
+  "name": "Adalimumab",
+  "existing_id": "0842fe5c-269f-4c6f-945f-0fd18d057885",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Adalimumab is a tumour necrosis factor (TNF) blocker. It is a recombinant human IgG1 monoclonal antibody, created using phage display technology with human-derived heavy and light chain variable regions and human IgG1:k constant regions, produced by recombinant DNA technology in a Chinese hamster ovary (CHO) cell expression system. It consists of 1330 amino acids and has a molecular weight of approximately 148 kilodaltons. Adalimumab binds specifically to TNF-alpha and blocks its interaction with the p55 and p75 cell surface TNF receptors; it also lyses surface TNF-expressing cells in vitro in the presence of complement, and does not bind or inactivate lymphotoxin (TNF-beta). TNF is a naturally occurring cytokine involved in normal inflammatory and immune responses; elevated concentrations are found in the synovial fluid of patients with rheumatoid arthritis, juvenile idiopathic arthritis, psoriatic arthritis and ankylosing spondylitis, and in psoriasis plaques. Adalimumab also modulates TNF-induced biological responses including changes in the concentrations of the adhesion molecules ELAM-1, VCAM-1 and ICAM-1 responsible for leukocyte migration, with an IC50 of 1 to 2 x 10-10 M (FDA Humira label, sections 11 and 12.1).",
+    "indications": [
+      "Rheumatoid arthritis: reducing signs and symptoms, inducing major clinical response, inhibiting progression of structural damage and improving physical function in adults with moderately to severely active rheumatoid arthritis; may be used alone or with methotrexate or other non-biologic DMARDs (FDA Humira label, section 1.1).",
+      "Polyarticular juvenile idiopathic arthritis: reducing signs and symptoms in patients 2 years of age and older (FDA Humira label, section 1.2).",
+      "Psoriatic arthritis: reducing signs and symptoms, inhibiting progression of structural damage and improving physical function in adults with active psoriatic arthritis (FDA Humira label, section 1.3).",
+      "Ankylosing spondylitis: reducing signs and symptoms in adults with active ankylosing spondylitis (FDA Humira label, section 1.4).",
+      "Crohn's disease: treatment of moderately to severely active Crohn's disease in adults and paediatric patients 6 years of age and older (FDA Humira label, section 1.5).",
+      "Ulcerative colitis: treatment of moderately to severely active ulcerative colitis in adults and paediatric patients 5 years of age and older (FDA Humira label, section 1.6).",
+      "Plaque psoriasis: treatment of adult patients with moderate to severe chronic plaque psoriasis who are candidates for systemic therapy or phototherapy and when other systemic therapies are medically less appropriate (FDA Humira label, section 1.7).",
+      "Hidradenitis suppurativa: treatment of moderate to severe hidradenitis suppurativa in patients 12 years of age and older (FDA Humira label, section 1.8).",
+      "Uveitis: treatment of non-infectious intermediate, posterior and panuveitis in adults and paediatric patients 2 years of age and older (FDA Humira label, section 1.9).",
+      "Limitation of use: effectiveness has not been established in patients who have lost response to or were intolerant to TNF blockers (FDA Humira label, section 1).",
+      "EU product (IDACIO): the same indications are licensed in the EU, including moderate to severe active rheumatoid arthritis, polyarticular juvenile idiopathic arthritis, psoriatic arthritis, ankylosing spondylitis and non-radiographic axial spondyloarthritis, moderate to severe plaque psoriasis in adults, moderate to severe hidradenitis suppurativa, moderate to severely active Crohn's disease and ulcerative colitis, and non-infectious uveitis (EMA Idacio SmPC, section 4.1)."
+    ],
+    "contraindications": [
+      "FDA label: none. The Humira prescribing information states 'Contraindications: None' (FDA Humira label, section 4).",
+      "EU product (IDACIO): hypersensitivity to the active substance or to any of the excipients (EMA Idacio SmPC, section 4.3).",
+      "EU product (IDACIO): active tuberculosis or other severe infections such as sepsis, and opportunistic infections (EMA Idacio SmPC, section 4.3).",
+      "EU product (IDACIO): moderate to severe heart failure, NYHA class III/IV (EMA Idacio SmPC, section 4.3)."
+    ],
+    "side_effects": [
+      "The most common adverse reactions (greater than 10%) are infections (for example upper respiratory infection, sinusitis), injection site reactions, headache and rash (FDA Humira label, section 6).",
+      "Injection site reactions were the most common adverse reaction: 20% of adalimumab-treated subjects in placebo-controlled trials developed injection site reactions (erythema and/or itching, haemorrhage, pain or swelling) versus 14% on placebo; most were mild and generally did not necessitate discontinuation (FDA Humira label, section 6.1).",
+      "In pooled placebo-controlled rheumatoid arthritis studies, adverse reactions reported in at least 5% of adalimumab 40 mg every other week subjects: upper respiratory infection 17%, headache 12%, rash 12%, sinusitis 11%, accidental injury 10%, nausea 9%, injection site reaction 8%, laboratory test abnormal 8%, urinary tract infection 8%, flu syndrome 7%, abdominal pain 7%, hyperlipidemia 7%, back pain 6%, hypercholesterolemia 6%, hematuria 5%, alkaline phosphatase increased 5% and hypertension 5% (FDA Humira label, section 6.1, Table 1).",
+      "Serious infections: rate 4.3 per 100 patient-years in 7,973 adalimumab-treated adults versus 2.9 per 100 patient-years in 4,848 control-treated subjects across the controlled portions of 39 global trials; reported serious infections included pneumonia, septic arthritis, prosthetic and post-surgical infections, erysipelas, cellulitis, diverticulitis and pyelonephritis (FDA Humira label, section 6.1).",
+      "Tuberculosis: reported active TB rate 0.20 per 100 patient-years and positive PPD conversion 0.09 per 100 patient-years in 52 global trials (24,605 subjects); most TB cases occurred within the first eight months of therapy. Serious opportunistic infections were reported at an overall rate of 0.05 per 100 patient-years and some cases of serious opportunistic infections and TB have been fatal (FDA Humira label, section 6.1).",
+      "Autoantibodies: 12% of adalimumab-treated subjects with negative baseline ANA titres developed positive titres at week 24 versus 7% on placebo; two subjects of 3,046 treated developed clinical signs suggestive of new-onset lupus-like syndrome, both improving after discontinuation, and no subject developed lupus nephritis or central nervous system symptoms (FDA Humira label, section 6.1).",
+      "Liver enzyme elevations: ALT elevations of 3x ULN or more occurred in 3.5% of adalimumab-treated versus 1.5% of control-treated subjects in controlled Phase 3 trials in RA, PsA and AS, and did not generally lead to discontinuation (FDA Humira label, section 6.1).",
+      "Postmarketing: diverticulitis, large bowel perforations including those associated with diverticulitis, appendiceal perforations associated with appendicitis, pancreatitis, pyrexia, liver failure, hepatitis, autoimmune hepatitis, sarcoidosis, Merkel cell carcinoma, demyelinating disorders (optic neuritis, Guillain-Barre syndrome), cerebrovascular accident, interstitial lung disease including pulmonary fibrosis and pulmonary embolism, Stevens-Johnson syndrome, cutaneous vasculitis, erythema multiforme, new or worsening psoriasis including pustular and palmoplantar types, alopecia, lichenoid skin reaction, systemic vasculitis and deep vein thrombosis (FDA Humira label, section 6.3)."
+    ],
+    "dosage": {
+      "adult": "Rheumatoid arthritis, psoriatic arthritis and ankylosing spondylitis: 40 mg subcutaneously every other week. Some patients with rheumatoid arthritis not receiving methotrexate may benefit from increasing the dose to 40 mg every week or 80 mg every other week (FDA Humira label, sections 2.1 and 2.2). Crohn's disease: 160 mg on Day 1 (given in one day or split over two consecutive days), 80 mg on Day 15, then 40 mg every other week from Day 29 (FDA Humira label, section 2.4). Ulcerative colitis: 160 mg on Day 1 (in one day or split over two consecutive days), 80 mg on Day 15, then 40 mg every other week from Day 29; discontinue in adults without evidence of clinical remission by eight weeks (Day 57) (FDA Humira label, section 2.5). Plaque psoriasis or adult uveitis: 80 mg initial dose, then 40 mg every other week starting one week after the initial dose (FDA Humira label, section 2.6). Hidradenitis suppurativa: Day 1 160 mg (in one day or split over two consecutive days), Day 15 80 mg, then from Day 29 40 mg every week or 80 mg every other week (FDA Humira label, section 2.7). EU product (IDACIO, 40 mg presentation only): 40 mg every other week for rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis and non-radiographic axial spondyloarthritis; psoriasis 80 mg then 40 mg every other week; HS 160 mg at Day 1, 80 mg at Day 15, then 40 mg weekly or 80 mg every other week from Day 29; Crohn's disease induction 80 mg at Week 0 then 40 mg at Week 2, or 160 mg at Week 0 then 80 mg at Week 2 for a more rapid response, then 40 mg every other week (EMA Idacio SmPC, section 4.2).",
+      "geriatric": "In rheumatoid arthritis studies a total of 519 subjects 65 years of age and older, including 107 subjects 75 years of age and older, received adalimumab. No overall difference in effectiveness was observed versus younger adult subjects, but the frequency of serious infection and malignancy was higher in those 65 years of age and older, so the benefits and risks should be considered and patients should be closely monitored for infection or malignancy (FDA Humira label, section 8.5).",
+      "paediatric": "Juvenile idiopathic arthritis or paediatric uveitis, 2 years of age and older, by body weight: 10 kg to under 15 kg, 10 mg every other week; 15 kg to under 30 kg, 20 mg every other week; 30 kg and greater, 40 mg every other week. Not studied in patients under 2 years of age or weighing under 10 kg (FDA Humira label, section 2.3). Paediatric Crohn's disease, 6 years and older: 17 kg to under 40 kg, Day 1 80 mg, Day 15 40 mg, then 20 mg every other week from Day 29; 40 kg and greater, Day 1 160 mg, Day 15 80 mg, then 40 mg every other week (FDA Humira label, section 2.4). Paediatric ulcerative colitis, 5 years and older: 20 kg to under 40 kg, Day 1 80 mg, Day 8 40 mg, Day 15 40 mg, then 40 mg every other week or 20 mg every week; 40 kg and greater, Day 1 160 mg, Day 8 80 mg, Day 15 80 mg, then 80 mg every other week or 40 mg every week (FDA Humira label, section 2.5). Adolescent hidradenitis suppurativa, 12 years and older: 30 kg to under 60 kg, Day 1 80 mg then 40 mg every other week from Day 8; 60 kg and greater, Day 1 160 mg, Day 15 80 mg, then 40 mg every week or 80 mg every other week from Day 29 (FDA Humira label, section 2.7)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Abatacept: increased risk of serious infection. In controlled trials, concurrent administration of TNF blockers and abatacept was associated with a greater proportion of serious infections than TNF-blocker monotherapy, with no demonstrated improved clinical benefit in rheumatoid arthritis, so the combination is not recommended (FDA Humira label, sections 5.1, 5.11, 7 and 7.2).",
+      "Anakinra: increased risk of serious infection. Concurrent use of anakinra with another TNF blocker was associated with a greater proportion of serious infections and neutropenia with no added benefit compared with TNF-blocker monotherapy in rheumatoid arthritis, so the combination is not recommended (FDA Humira label, sections 5.1, 5.7, 7 and 7.2).",
+      "Live vaccines: avoid use with adalimumab. Patients on adalimumab may receive concurrent vaccinations except live vaccines (FDA Humira label, sections 5.10, 7 and 7.3).",
+      "Other biologic DMARDs or TNF blockers: concomitant administration of adalimumab with other biologic DMARDs (for example anakinra and abatacept) or other TNF blockers is not recommended, based on possible increased risk of infections and other potential pharmacological interactions; a higher rate of serious infections was observed in rheumatoid arthritis patients treated with rituximab who subsequently received a TNF blocker (FDA Humira label, section 7.2).",
+      "Methotrexate: adalimumab has been studied in rheumatoid arthritis patients taking concomitant methotrexate; methotrexate reduced the apparent adalimumab clearance by 29% after single and 44% after multiple dosing, but the data do not suggest a need for dose adjustment of either adalimumab or methotrexate (FDA Humira label, sections 7.1 and 12.3).",
+      "Cytochrome P450 substrates: because TNF-alpha and IL-6 can suppress CYP450 enzyme formation, adalimumab may influence CYP450 metabolism; when starting or stopping adalimumab in patients on CYP450 substrates with a narrow therapeutic index, monitoring of drug effect (for example warfarin) or concentration (for example cyclosporine or theophylline) is recommended and the dose may need adjustment (FDA Humira label, section 7.4)."
+    ],
+    "monitoring": "Before initiating adalimumab and periodically during therapy, evaluate patients for active tuberculosis and test for latent infection; treat latent TB before starting adalimumab and monitor for active TB during treatment even if the initial latent TB test was negative, since tests may be falsely negative while on therapy (FDA Humira label, sections 2.1 and 5.1). Monitor closely during and after treatment for signs and symptoms of infection, including TB, and discontinue adalimumab if a serious infection or sepsis develops (FDA Humira label, section 5.1). Evaluate patients for prior evidence of hepatitis B infection before starting TNF-blocker therapy, monitor HBV carriers during and for several months after therapy, and if reactivation occurs stop adalimumab and begin antiviral therapy (FDA Humira label, section 5.4). Examine all patients, particularly those with prior prolonged immunosuppressant therapy or psoriasis with a history of PUVA treatment, for non-melanoma skin cancer before and during treatment (FDA Humira label, section 5.2). Advise patients to seek immediate medical attention for signs of cytopenia such as persistent fever, bruising, bleeding or pallor, and consider discontinuation with confirmed significant haematological abnormalities (FDA Humira label, section 5.6). Exercise caution in patients with pre-existing or recent-onset central or peripheral demyelinating disorders and consider discontinuation if these develop (FDA Humira label, section 5.5). Monitor patients with heart failure carefully (FDA Humira label, section 5.8). Discontinue and evaluate if lupus-like syndrome or autoimmune hepatitis develops (FDA Humira label, section 5.9). EU product: because elimination of adalimumab may take up to four months, monitoring for infection including tuberculosis should be continued throughout that period after the last dose (EMA Idacio SmPC, section 4.4).",
+    "patient_counselling": "Advise the patient or caregiver to read the FDA-approved patient labelling (Medication Guide and Instructions for Use) (FDA Humira label, section 17). Tell patients that adalimumab may lower the ability of their immune system to fight infections, and instruct them to contact their doctor if they develop any symptoms of infection, including tuberculosis, invasive fungal infections and reactivation of hepatitis B virus infections (section 17). Counsel patients about the risk of malignancies while receiving adalimumab (section 17). Advise patients to seek immediate medical attention for symptoms of severe hypersensitivity reactions, and advise latex-sensitive patients that the needle cap of the Humira 40 mg/0.8 mL Pen and prefilled syringe may contain natural rubber latex (section 17). Advise patients to report any signs of new or worsening medical conditions such as congestive heart failure, neurological disease, autoimmune disorders or cytopenias, and any symptoms suggestive of a cytopenia such as bruising, bleeding or persistent fever (section 17). The first injection should be performed under the supervision of a qualified healthcare professional; if self-injecting, patients should be instructed in injection technique and their ability to inject subcutaneously assessed (section 17). Rotate injection sites in the thigh or abdomen and do not inject into tender, bruised, red or hard skin; if a dose is missed, administer it as soon as possible and then resume the regular schedule (section 2.8). Dispose of used pens and syringes immediately in a FDA-cleared sharps disposal container, never in household trash (section 17). For the EU product (IDACIO), advise women of childbearing potential to use adequate contraception and to continue it for at least five months after the last adalimumab dose (EMA Idacio SmPC, section 4.6).",
+    "warnings": [
+      "BOXED WARNING - SERIOUS INFECTIONS: patients treated with adalimumab are at increased risk of developing serious infections that may lead to hospitalization or death, including active tuberculosis including reactivation of latent TB, invasive fungal infections (histoplasmosis, coccidioidomycosis, candidiasis, aspergillosis, blastomycosis, pneumocystosis) and infections due to opportunistic pathogens including Legionella and Listeria. Discontinue adalimumab if a patient develops a serious infection or sepsis. Test for latent TB before use and during therapy, and initiate treatment for latent TB prior to adalimumab use. Monitor all patients for active TB during treatment even if the initial latent TB test was negative (FDA Humira label, Boxed Warning).",
+      "BOXED WARNING - MALIGNANCY: lymphoma and other malignancies, some fatal, have been reported in children and adolescent patients treated with TNF blockers including adalimumab. Post-marketing cases of hepatosplenic T-cell lymphoma, a rare and very aggressive T-cell lymphoma, have been reported, mostly in adolescent and young adult males with inflammatory bowel disease, nearly all of whom had received azathioprine or 6-mercaptopurine concomitantly (FDA Humira label, Boxed Warning).",
+      "Do not start adalimumab during an active infection; if an infection develops, monitor carefully and stop adalimumab if it becomes serious (FDA Humira label, section 5.1).",
+      "Anaphylaxis and angioneurotic edema have been reported; immediately discontinue administration and institute appropriate therapy (FDA Humira label, section 5.3).",
+      "Hepatitis B virus reactivation may occur and has been fatal in some cases; stop adalimumab and initiate effective antiviral therapy if reactivation develops (FDA Humira label, section 5.4).",
+      "Demyelinating disease, including multiple sclerosis, optic neuritis and Guillain-Barre syndrome, may be new-onset or exacerbated; discontinuation should be considered if these disorders develop (FDA Humira label, section 5.5).",
+      "Rare reports of pancytopenia including aplastic anemia; advise patients to seek immediate medical attention for signs of blood dyscrasias and consider discontinuation with confirmed significant haematological abnormalities (FDA Humira label, section 5.6).",
+      "Worsening congestive heart failure and new-onset CHF have been reported; exercise caution and monitor patients with heart failure carefully (FDA Humira label, section 5.8).",
+      "Lupus-like syndrome or autoimmune hepatitis may rarely develop; discontinue and evaluate if this occurs (FDA Humira label, section 5.9).",
+      "EU product (IDACIO): moderate to severe heart failure (NYHA class III/IV) is a contraindication, and adalimumab is contraindicated in active tuberculosis, severe infections such as sepsis and opportunistic infections (EMA Idacio SmPC, sections 4.3 and 4.4)."
+    ],
+    "precautions": [
+      "Adalimumab is intended for use under the guidance and supervision of a physician; patients may self-inject or have a caregiver inject using the prefilled pen or syringe after training and with medical follow-up (FDA Humira label, section 2.8).",
+      "The first injection should be performed under the supervision of a qualified health care professional, and patients sensitive to latex should not handle the needle cover of the 40 mg/0.8 mL pen and prefilled syringe because it may contain natural rubber latex (FDA Humira label, sections 2.8 and 17).",
+      "Patients on adalimumab may receive concurrent vaccinations except for live vaccines; the safety of administering live or live-attenuated vaccines to infants exposed in utero is unknown, so risks and benefits should be considered (FDA Humira label, section 5.10).",
+      "It is recommended that paediatric patients, if possible, be brought up to date with all immunisations before initiating adalimumab (FDA Humira label, section 5.10).",
+      "Adalimumab is supplied as a preservative-free solution; discard unused portions remaining in the syringe after use (FDA Humira label, section 2.8).",
+      "EU product (IDACIO): treatment should be initiated and supervised by specialist physicians experienced in the diagnosis and treatment of the conditions for which it is indicated, and patients should be given the patient reminder card; concomitant therapies such as corticosteroids and immunomodulatory agents should be optimised during treatment (EMA Idacio SmPC, section 4.2).",
+      "EU product (IDACIO): since only a 40 mg presentation is available, patients requiring less than a full 40 mg dose must be switched to another adalimumab product (EMA Idacio SmPC, section 4.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious infections leading to hospitalization or death, including tuberculosis, bacterial sepsis, invasive fungal infections such as histoplasmosis, and infections due to other opportunistic pathogens (FDA Humira label, Boxed Warning and section 5.1).",
+      "Malignancies, including lymphoma and other malignancies some of which have been fatal in children and adolescents, and hepatosplenic T-cell lymphoma (FDA Humira label, Boxed Warning and section 5.2).",
+      "Anaphylaxis and angioneurotic edema (FDA Humira label, section 5.3).",
+      "Hepatitis B virus reactivation, which has been fatal in some cases (FDA Humira label, section 5.4).",
+      "Central and peripheral nervous system demyelinating disease (FDA Humira label, section 5.5).",
+      "Pancytopenia including aplastic anemia (FDA Humira label, section 5.6).",
+      "New onset or worsening congestive heart failure (FDA Humira label, section 5.8).",
+      "Lupus-like syndrome and autoimmune hepatitis (FDA Humira label, section 5.9).",
+      "Serious opportunistic infections and tuberculosis, some of which have been fatal; serious infections were reported at 4.3 per 100 patient-years in adalimumab-treated adults versus 2.9 per 100 patient-years in controls (FDA Humira label, section 6.1)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Humira labelling; adalimumab is administered by subcutaneous injection, not by the oral route (FDA Humira label, section 2). Adalimumab should be stored refrigerated at 2 degrees C to 8 degrees C and protected from light, and may be kept at room temperature up to 25 degrees C for up to 14 days when travelling (FDA Humira label, section 16)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available studies do not reliably establish an association between adalimumab and major birth defects. In the OTIS/MotherToBaby Humira Pregnancy Registry, the rate of major birth defects was 10% in live-born infants of 221 women with rheumatoid arthritis or Crohn's disease exposed to adalimumab in the first trimester, versus 7.5% in 106 unexposed disease-matched women; the lack of a pattern of major birth defects is reassuring (FDA Humira label, section 8.1). Adalimumab is actively transferred across the placenta during the third trimester and may affect the immune response of the in-utero exposed infant; in one study cord blood concentrations were 0.16 to 19.7 microgram/mL and adalimumab was detectable in infant serum for at least three months from birth (FDA Humira label, section 8.1). In an embryo-fetal perinatal development study in cynomolgus monkeys, no fetal harm or malformations were observed at exposures up to approximately 373 times the maximum recommended human dose of 40 mg subcutaneous without methotrexate (FDA Humira label, section 8.1). EU product (IDACIO): approximately 2,100 prospectively collected pregnancies exposed to adalimumab, including more than 1,500 in the first trimester, do not indicate an increase in the rate of malformation in the newborn; because of its inhibition of TNF-alpha, adalimumab administered during pregnancy could affect normal immune responses in the newborn, so it should only be used during pregnancy if clearly needed, and live vaccines such as BCG should not be given to in-utero exposed infants for five months after the mother's last injection (EMA Idacio SmPC, section 4.6).",
+    "lactation_guidance": "Limited data from case reports describe the presence of adalimumab in human milk at 0.1% to 1% of the maternal serum concentration. Published data suggest that systemic exposure to a breastfed infant is expected to be low because adalimumab is a large molecule and is degraded in the gastrointestinal tract, although the effects of local gastrointestinal exposure are unknown. There are no reports of adverse effects of adalimumab on the breastfed infant and no effects on milk production; the developmental and health benefits of breastfeeding should be considered alongside the mother's clinical need for adalimumab (FDA Humira label, section 8.2). EU product (IDACIO): since immunoglobulin G proteins undergo intestinal proteolysis and have poor oral bioavailability, no effects on the breastfed infant are anticipated and adalimumab can be used during breastfeeding (EMA Idacio SmPC, section 4.6).",
+    "overdose": "Doses up to 10 mg/kg have been administered to patients in clinical trials without evidence of dose-limiting toxicities. In case of overdosage, monitor the patient for any signs or symptoms of adverse reactions and institute appropriate symptomatic treatment immediately; consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (FDA Humira label, section 10).",
+    "pharmacokinetics": "Pharmacokinetics were linear over the 0.5 to 10 mg/kg intravenous dose range (adalimumab is not approved for intravenous use). Following 20, 40 and 80 mg every other week or every week subcutaneous administration, mean serum trough concentrations at steady state increased approximately proportionally with dose in rheumatoid arthritis patients. The mean terminal half-life was approximately 2 weeks, ranging from 10 to 20 days across studies. The average absolute bioavailability after a single 40 mg subcutaneous dose was 64%; the mean time to maximum concentration was 5.5 days (131 +/- 56 hours) and the maximum serum concentration was 4.7 +/- 1.6 mcg/mL in healthy subjects. The distribution volume was 4.7 to 6.0 L following intravenous administration, and systemic clearance is approximately 12 mL/hr, with no evidence of change in clearance over time during long-term studies of more than two years (FDA Humira label, section 12.3). Anti-drug antibodies are associated with reduced serum adalimumab concentrations (FDA Humira label, section 12.3). No pharmacokinetic data are available in patients with hepatic or renal impairment (FDA Humira label, section 12.3).",
+    "clinical_pearls": [
+      "Screen for latent TB before every biologic; treat latent TB before starting adalimumab, and keep monitoring for reactivation during therapy even when the initial test is negative, because latent TB tests can be falsely negative while on therapy (FDA Humira label, section 5.1).",
+      "The boxed warning covers two distinct risks: serious infections (including TB) and malignancy, with hepatosplenic T-cell lymphoma strongly associated with the combination of a TNF blocker and azathioprine or 6-mercaptopurine in adolescent and young adult males with inflammatory bowel disease (FDA Humira label, Boxed Warning and section 5.2).",
+      "Live vaccines must be avoided during adalimumab therapy, and live vaccines should not be given to infants exposed in utero for five months after the mother's last injection (FDA Humira label, sections 5.10 and 7.3; EMA Idacio SmPC, section 4.6).",
+      "In ulcerative colitis, adults who have no evidence of clinical remission by week 8 (Day 57) should have adalimumab discontinued (FDA Humira label, section 2.5).",
+      "Combination of a TNF blocker with anakinra or abatacept is not recommended because of increased serious infection risk without added benefit (FDA Humira label, sections 5.7, 5.11 and 7.2).",
+      "The pharmacokinetic interaction with methotrexate is modest: methotrexate reduced apparent adalimumab clearance by 29% after single and 44% after multiple dosing, and no dose adjustment of either drug is required (FDA Humira label, sections 7.1 and 12.3).",
+      "Immunogenicity matters in practice: anti-drug antibodies reduce adalimumab concentrations and are more likely when adalimumab is given without methotrexate (FDA Humira label, sections 6.2 and 12.3; EMA Idacio SmPC, section 4.5).",
+      "The US product (Humira) is a different presentation set from the EU biosimilar (IDACIO, 40 mg pre-filled syringe or pen only); indications, contraindication lists and paediatric weight bands differ between the two labels and are quoted separately above."
+    ],
+    "brand_names": [
+      "Humira (adalimumab injection, AbbVie, US)",
+      "Idacio (adalimumab, Sandoz/Biocon biosimilar, EU)",
+      "Amjevita (adalimumab-atto, Amgen, US)",
+      "Simlandi (adalimumab-ryvk, Teva, US)",
+      "Yusimry (adalimumab-aqvh, Meitheal, US)"
+    ],
+    "black_box_warnings": [
+      "SERIOUS INFECTIONS: patients treated with adalimumab are at increased risk for developing serious infections that may lead to hospitalization or death, including active tuberculosis (TB) including reactivation of latent TB, bacterial sepsis, invasive fungal infections such as histoplasmosis, and infections due to other opportunistic pathogens. Discontinue adalimumab if a patient develops a serious infection or sepsis. Perform a test for latent TB; if positive, start treatment for TB prior to starting adalimumab. Monitor all patients for active TB during treatment, even if the initial latent TB test is negative (FDA Humira label, Boxed Warning).",
+      "MALIGNANCY: lymphoma and other malignancies, some fatal, have been reported in children and adolescent patients treated with TNF blockers including adalimumab. Post-marketing cases of hepatosplenic T-cell lymphoma, a rare type of T-cell lymphoma, have occurred in adolescent and young adults with inflammatory bowel disease treated with TNF blockers including adalimumab (FDA Humira label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "Adalimumab has not been studied in patients with renal impairment, and no dose recommendations can be made; no renal dose adjustment is specified in the labels (EMA Idacio SmPC, section 5.2, Special populations; FDA Humira label, section 12.3, which states that no pharmacokinetic data are available in patients with hepatic or renal impairment).",
+    "hepatic_dose_adjustment": "Adalimumab has not been studied in patients with hepatic impairment, and no dose recommendations can be made; no hepatic dose adjustment is specified in the labels (EMA Idacio SmPC, section 5.2, Special populations; FDA Humira label, section 12.3, which states that no pharmacokinetic data are available in patients with hepatic or renal impairment).",
+    "administration_instructions": "Administer by subcutaneous injection. Adalimumab is supplied as a clear, colourless, preservative-free solution in single-dose prefilled pens (80 mg/0.8 mL, 40 mg/0.8 mL, 40 mg/0.4 mL) and prefilled syringes (80 mg/0.8 mL, 40 mg/0.8 mL, 40 mg/0.4 mL, 20 mg/0.2 mL, 10 mg/0.1 mL) (FDA Humira label, sections 2 and 3). The pen or syringe may be taken out of the refrigerator for 15 to 30 minutes before injecting to allow the liquid to reach room temperature; do not remove the cap or cover while doing so. Inspect the solution for particulate matter and discoloration and do not use if any is present. Inject into the thigh or abdomen at separate sites, rotating sites and avoiding tender, bruised, red or hard skin. If a dose is missed, administer it as soon as possible and then resume the regular schedule (FDA Humira label, section 2.8). Store refrigerated at 2 degrees C to 8 degrees C, do not freeze and do not use if frozen even if thawed, keep in the original carton to protect from light, and if travelling may be stored at room temperature up to 25 degrees C for up to 14 days with protection from light; discard if not used within that 14-day period and record the date the product was first removed from the refrigerator (FDA Humira label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Humira (adalimumab) injection, AbbVie, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Humira label, sections 1.1 to 1.9; EMA Idacio SmPC, section 4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Humira label, section 4 (none); EMA Idacio SmPC, section 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Humira label, sections 6, 6.1 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Humira label, sections 2.1 to 2.7 and 8.5; EMA Idacio SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Humira label, sections 5.1, 5.7, 5.10, 5.11, 7, 7.1 to 7.4 and 12.3; EMA Idacio SmPC, section 4.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Humira label, sections 2.1, 5.1, 5.2, 5.4, 5.5, 5.6, 5.8 and 5.9; EMA Idacio SmPC, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Humira label, sections 2.8 and 17; EMA Idacio SmPC, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Humira label, Boxed Warning and sections 5.1 to 5.9; EMA Idacio SmPC, sections 4.3 and 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Humira label, sections 2.8, 5.10, 16 and 17; EMA Idacio SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Humira label, Boxed Warning and sections 5.1 to 5.9 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Humira label, sections 2 and 16 (no food interaction described; subcutaneous administration and storage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Humira label, section 8.1; EMA Idacio SmPC, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Humira label, section 8.2; EMA Idacio SmPC, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Humira label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Humira label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Humira label, Boxed Warning and sections 2.5, 5.1, 5.2, 5.7, 5.10, 5.11, 6.2, 7.2, 7.3, 12.3 and 17; EMA Idacio SmPC, sections 4.5 and 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Humira (AbbVie) and adalimumab biosimilars listed on DailyMed (Amjevita, Simlandi, Yusimry); Idacio listed as an EMA-authorised adalimumab biosimilar",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c44bd5b-4464-40a4-8933-8680950f00f2"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA Humira label, Boxed Warning (serious infections and malignancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EMA Idacio SmPC, section 5.2 (Special populations: Renal and/or hepatic impairment - 'No dose recommendations can be made'); FDA Humira label, section 12.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/idacio-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EMA Idacio SmPC, section 5.2 (Special populations: Renal and/or hepatic impairment - 'No dose recommendations can be made'); FDA Humira label, section 12.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/idacio-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Humira label, sections 2, 2.8, 3 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimens are provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category; the EMA SmPC also uses narrative risk wording)"
+  ],
+  "notes": "The table stores this agent as 'Adalimumab' with the brand name IDACIO, which is the EU adalimumab biosimilar. The US reference product is Humira (AbbVie); the FDA Humira label is used as the primary source and the EMA SmPC for Idacio is used for EU-specific indications, contraindications, dosing, pregnancy and contraception counselling. The two labels differ materially: the FDA label states no contraindications, whereas the EU SmPC contraindicates hypersensitivity, active tuberculosis/severe and opportunistic infections, and NYHA class III/IV heart failure - both are reproduced verbatim above. The 40 mg presentation of Idacio cannot be used for children who need less than 40 mg. No FDA letter pregnancy category is stated, so pregnancy_category is null."
+}

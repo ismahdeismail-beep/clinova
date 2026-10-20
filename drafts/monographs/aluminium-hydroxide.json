@@ -1,0 +1,228 @@
+{
+  "name": "Aluminium Hydroxide",
+  "existing_id": "efaee8e8-00c7-45b5-969e-41658a8fe6b5",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aluminium hydroxide is a slow-acting antacid. In the Maalox Plus suspension (aluminium hydroxide with magnesium hydroxide and simeticone) the label describes aluminium hydroxide as an astringent which on its own may cause constipation, while magnesium hydroxide is the fast-acting antacid and simeticone the antifoaming/antiflatulent agent, so the combination produces a fast onset of action and an increase in total buffering time (Maalox Plus SmPC, section 5.1). The Maalox Plus label also states that aluminium hydroxide is not well absorbed from the gastrointestinal tract and that systemic effects are therefore rare in patients with normal renal function (Maalox Plus SmPC, section 4.4). The US antacid labels in which aluminium hydroxide appears describe the product only as an antacid used to relieve the symptoms of acid indigestion, heartburn, sour stomach and upset stomach (GAVISCON label, Purposes and Uses; MAALOX label, Purpose and Uses).",
+    "indications": [
+      "Maalox Plus (aluminium hydroxide with magnesium hydroxide and simeticone): symptomatic relief of dyspepsia, heartburn and flatulence (Maalox Plus SmPC, section 4.1).",
+      "GAVISCON (aluminium hydroxide with magnesium carbonate, Haleon US): an antacid for the relief of heartburn, acid indigestion, sour stomach, upset stomach associated with these symptoms, and pressure and bloating commonly referred to as gas (GAVISCON label, Uses).",
+      "MAALOX (aluminium hydroxide with magnesium hydroxide and simethicone, Physicians Total Care): an antacid and antigas for the relief of acid indigestion, heartburn, sour stomach, upset stomach associated with these symptoms, and pressure and bloating commonly referred to as gas (MAALOX label, Purpose and Uses)."
+    ],
+    "contraindications": [
+      "Maalox Plus: should not be used in patients who are hypersensitive to any of the active substances or excipients, who are severely debilitated, who are suffering from kidney failure, or who have hypophosphataemia (Maalox Plus SmPC, section 4.3).",
+      "GAVISCON: the Drug Facts label directs users to ask a doctor or pharmacist before use if they have kidney disease, are on a sodium-restricted diet or a magnesium-restricted diet, or are taking a prescription drug (GAVISCON label, Warnings).",
+      "MAALOX: the Drug Facts label directs users to ask a doctor before use if they have kidney disease or are on a magnesium-restricted diet, and to ask a doctor or pharmacist before use if taking a prescription drug (MAALOX label, Warnings)."
+    ],
+    "side_effects": [
+      "Gastrointestinal side-effects are uncommon: diarrhoea or constipation (Maalox Plus SmPC, section 4.8).",
+      "Aluminium hydroxide may cause constipation, and large doses of this product may trigger or aggravate intestinal obstruction and ileus in patients at higher risk such as those with renal impairment or the elderly (Maalox Plus SmPC, section 4.4).",
+      "Abdominal pain, frequency not known (Maalox Plus SmPC, section 4.8).",
+      "Immune system disorders, frequency not known: hypersensitivity reactions such as pruritus, urticaria, angioedema and anaphylactic reactions (Maalox Plus SmPC, section 4.8).",
+      "Injury, poisoning and procedural complications, frequency not known: hyperaluminaemia related to the aluminium component (Maalox Plus SmPC, section 4.8).",
+      "Metabolism and nutrition disorders: very rare hypermagnesaemia, including observations after prolonged administration of magnesium hydroxide to patients with renal impairment; frequency not known hypophosphataemia in prolonged use or at high doses, or even at normal doses in patients with low-phosphorus diets, which may result in increased bone resorption, hypercalciuria and osteomalacia (Maalox Plus SmPC, sections 4.4 and 4.8).",
+      "GAVISCON and MAALOX Drug Facts: a laxative effect may occur (GAVISCON label, Warnings; MAALOX label, Warnings). Note that the US labels give no frequency estimates for adverse reactions.",
+      "In young children the use of magnesium hydroxide can produce hypermagnesaemia, especially if they present with renal impairment or dehydration (Maalox Plus SmPC, section 4.4, Paediatric population)."
+    ],
+    "dosage": {
+      "adult": "Maalox Plus: for oral administration, 5 to 10 ml taken 20 minutes to 1 hour after meals and at bedtime, or as required (Maalox Plus SmPC, section 4.2). GAVISCON Regular Strength (aluminium hydroxide 95 mg with magnesium carbonate 358 mg per 15 ml tablespoonful): shake well, take 1 to 2 tablespoonfuls four times a day or as directed by a doctor, after meals and at bedtime, and dispense the product only by spoon or another measuring device (GAVISCON label, Active ingredients and Directions). GAVISCON Extra Strength (aluminium hydroxide 254 mg with magnesium carbonate 237.5 mg per 5 ml teaspoonful): shake well, take 2 to 4 teaspoonfuls four times a day or as directed by a doctor, after meals and at bedtime (GAVISCON label, Active ingredients and Directions). MAALOX (aluminium hydroxide equivalent to dried gel USP 200 mg with magnesium hydroxide 200 mg and simethicone 20 mg per 5 ml teaspoonful): shake well before using; adults and children 12 years and older take 2 to 4 teaspoonsful (10 to 20 ml) up to 4 times a day or as directed by a doctor (MAALOX label, Active ingredient and Directions).",
+      "geriatric": "Elderly: the normal adult dose is appropriate (Maalox Plus SmPC, section 4.2). The Maalox Plus label specifically warns that large doses may trigger or aggravate intestinal obstruction and ileus in patients at higher risk such as those with renal impairment, or the elderly (Maalox Plus SmPC, section 4.4).",
+      "paediatric": "Maalox Plus: children - an appropriate proportion of the adult dose; children under 5 years - maximum of 5 ml three times a day (Maalox Plus SmPC, section 4.2). In young children the use of magnesium hydroxide can produce hypermagnesaemia, especially if they present with renal impairment or dehydration (Maalox Plus SmPC, section 4.4, Paediatric population). MAALOX: children under 12 years - ask a doctor; adults and children 12 years and older take 2 to 4 teaspoonsful up to 4 times a day (MAALOX label, Directions). GAVISCON: the label does not give paediatric directions and states 'Keep out of reach of children' (GAVISCON label, Warnings)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Aluminium-containing antacids may prevent proper absorption of drugs, notably H2 antagonists (for example ranitidine), atenolol, bisphosphonates, cefdinir, cefpodoxime, chloroquine, chlorpromazine, ciprofloxacin, cyclines, dasatinib monohydrate, dexamethasone, diflunisal, digoxin, eltrombopag olamine, elvitegravir, ethambutol, fluoroquinolones, glucocorticoids, hydroxychloroquine, indomethacin, iron salts, isoniazid, ketoconazole, levothyroxine, lincosamides, metoprolol, nilotinib, phenothiazine neuroleptics, penicillamine, propranolol, raltegravir potassium, rifampicin, rilpivirine, riociguat, rosuvastatin, sodium fluoride, the antiviral combination of tenofovir alafenamide fumarate/emtricitabine/bictegravir sodium, tetracyclines and vitamins (Maalox Plus SmPC, section 4.5).",
+      "Timing of administration: Maalox Plus should not be taken simultaneously with other medicines as they may interfere with their absorption if taken within 1 hour; as a precaution, stagger the administration times of any orally administered drug and the antacid by at least 2 hours, and 4 hours for fluoroquinolones (Maalox Plus SmPC, section 4.5).",
+      "Integrase inhibitors: with dolutegravir, raltegravir and bictegravir the combination should be avoided, and the relevant product information should be consulted for dose recommendations (Maalox Plus SmPC, section 4.5).",
+      "Levothyroxine: levothyroxine may also bind to simethicone, which may delay or reduce its absorption (Maalox Plus SmPC, section 4.5).",
+      "Polystyrene sulphonate: caution is advised with concomitant use because of the potential risks of reduced effectiveness of the resin in binding potassium, of metabolic alkalosis in patients with renal failure (reported with aluminium hydroxide and magnesium hydroxide) and of intestinal obstruction (reported with aluminium hydroxide) (Maalox Plus SmPC, section 4.5).",
+      "Quinidine: concomitant use of aluminium products with quinidines may increase the serum levels of quinidine and lead to quinidine overdosage (Maalox Plus SmPC, section 4.5).",
+      "Tetracyclines: because of the aluminium content, the product should not be concomitantly administered with tetracycline-containing antibiotics or any tetracycline salts (Maalox Plus SmPC, section 4.5).",
+      "Citrates: aluminium hydroxide and citrates may result in increased aluminium levels, especially in patients with renal impairment (Maalox Plus SmPC, section 4.5).",
+      "Drug excretion: urine alkalinisation secondary to administration of magnesium hydroxide may modify the excretion of some drugs; increased excretion of salicylates has been seen (Maalox Plus SmPC, section 4.5).",
+      "US labels: ask a doctor or pharmacist before use if you are taking a prescription drug, because antacids may interact with certain prescription drugs (GAVISCON label, Warnings; MAALOX label, Warnings)."
+    ],
+    "monitoring": "Medical advice is recommended in the case of long-term use or in patients at risk of phosphate depletion, because excessive doses or long-term use, or even normal doses in patients with low-phosphorus diets, may lead to phosphate depletion due to aluminium-phosphate binding, with increased bone resorption and hypercalciuria and the risk of osteomalacia (Maalox Plus SmPC, section 4.4). In patients with renal impairment, plasma levels of both aluminium and magnesium increase, and long-term exposure to high doses of aluminium and magnesium salts may lead to encephalopathy, dementia, microcytic anaemia or worsening of dialysis-induced osteomalacia (Maalox Plus SmPC, section 4.4). The prolonged use of antacids in patients with renal failure should be avoided (Maalox Plus SmPC, section 4.4). The US labels limit use of the maximum dosage to no more than 2 weeks unless directed by a doctor and require users with kidney disease to seek advice before use (GAVISCON label, Warnings; MAALOX label, Warnings). For aluminium hydroxide gel used in hyperphosphataemia, monitoring of serum phosphate is implied by the contraindication in hypophosphataemia and by the phosphate-depletion warning (Maalox Plus SmPC, sections 4.3 and 4.4). No routine laboratory monitoring schedule is specified in the US labels.",
+    "patient_counselling": "Take the product as directed, after meals and at bedtime, and shake the liquid well before use (GAVISCON label, Directions; MAALOX label, Directions). Measure the dose with a spoon or other measuring device rather than dispensing by eye (GAVISCON label, Directions). Do not take more than the stated maximum in 24 hours - for GAVISCON Regular Strength no more than 8 tablespoonfuls in 24 hours, and for GAVISCON Extra Strength no more than 16 teaspoonfuls in 24 hours - and do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor (GAVISCON label, Warnings; MAALOX label, Warnings: do not exceed 16 teaspoonsful (80 mL) in a 24-hour period or use the maximum dosage for more than 2 weeks unless directed by a doctor). Expect a possible laxative effect (GAVISCON label, Warnings). Keep the product out of reach of children (GAVISCON label, Warnings; MAALOX label, Warnings). In case of overdose, get medical help or contact a Poison Control Centre right away (GAVISCON label, Warnings). Patients with kidney disease, or on a sodium-restricted or magnesium-restricted diet, and patients taking prescription drugs, should ask a doctor or pharmacist before use (GAVISCON label, Warnings; MAALOX label, Warnings). Store GAVISCON at up to 25 degrees C, avoid freezing and keep tightly closed; store MAALOX at 20 to 25 degrees C (68 to 77 degrees F) (GAVISCON label, Other information; MAALOX label, Other information).",
+    "warnings": [
+      "Do not exceed the maximum dose or use it for more than 2 weeks without medical direction: for GAVISCON Regular Strength do not take more than 8 tablespoonfuls in 24 hours and for GAVISCON Extra Strength no more than 16 teaspoonfuls in 24 hours, and do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor; for MAALOX do not exceed 16 teaspoonsful (80 mL) in a 24-hour period or use the maximum dosage for more than 2 weeks unless directed by a doctor (GAVISCON label, Warnings; MAALOX label, Warnings).",
+      "Ask a doctor or pharmacist before use if you have kidney disease, are on a sodium-restricted diet or a magnesium-restricted diet, or are taking a prescription drug, because antacids may interact with certain prescription drugs (GAVISCON label, Warnings; MAALOX label, Warnings).",
+      "Phosphate depletion: excessive doses or long-term use, or even normal doses in patients with low-phosphorus diets, may lead to phosphate depletion due to aluminium-phosphate binding, with increased bone resorption and hypercalciuria and the risk of osteomalacia; medical advice is recommended in case of long-term use or in patients at risk of phosphate depletion (Maalox Plus SmPC, section 4.4).",
+      "Renal impairment: in patients with renal impairment, plasma levels of both aluminium and magnesium increase, and long-term exposure to high doses may lead to encephalopathy, dementia, microcytic anaemia or worsening of dialysis-induced osteomalacia; the prolonged use of antacids in patients with renal failure should be avoided (Maalox Plus SmPC, section 4.4).",
+      "Intestinal obstruction and ileus: large doses of this product may trigger or aggravate intestinal obstruction and ileus in patients at higher risk such as those with renal impairment, or the elderly (Maalox Plus SmPC, section 4.4).",
+      "Aluminium hydroxide may be unsafe in patients with porphyria undergoing haemodialysis (Maalox Plus SmPC, section 4.4).",
+      "Keep out of reach of children, and in case of overdose get medical help or contact a Poison Control Centre right away (GAVISCON label, Warnings).",
+      "A laxative effect may occur (GAVISCON label, Warnings; MAALOX label, Warnings)."
+    ],
+    "precautions": [
+      "Sorbitol (E420) content: the Maalox Plus product contains 224 mg of sorbitol per 5 ml, and patients with rare hereditary problems of fructose intolerance should not take this medicine (Maalox Plus SmPC, section 4.4).",
+      "Paediatric population: in young children the use of magnesium hydroxide can produce hypermagnesaemia, especially if they present with renal impairment or dehydration (Maalox Plus SmPC, section 4.4).",
+      "Do not administer concurrently with other oral medicines; stagger administration of the antacid and any other oral drug by at least 2 hours, and 4 hours for fluoroquinolones, because of impaired absorption (Maalox Plus SmPC, section 4.5).",
+      "Avoid the combination with integrase inhibitors (dolutegravir, raltegravir, bictegravir) (Maalox Plus SmPC, section 4.5).",
+      "Use caution with polystyrene sulphonate because of the risks of reduced potassium binding, metabolic alkalosis in renal failure and intestinal obstruction (Maalox Plus SmPC, section 4.5).",
+      "US labels: dispense liquid antacid only by spoon or another measuring device (GAVISCON label, Directions).",
+      "Underlying non-thrombotic causes of symptoms should be considered; the product is symptomatic therapy only and the labels direct patients to ask a doctor before use if symptoms persist (GAVISCON label, Warnings; MAALOX label, Warnings)."
+    ],
+    "serious_adverse_reactions": [
+      "Encephalopathy and dementia in patients with renal impairment following long-term exposure to high doses of aluminium and magnesium salts (Maalox Plus SmPC, section 4.4).",
+      "Osteomalacia, with increased bone resorption and hypercalciuria, from phosphate depletion in prolonged use, at high doses, or at normal doses in patients with low-phosphorus diets (Maalox Plus SmPC, sections 4.4 and 4.8).",
+      "Worsening of dialysis-induced osteomalacia (Maalox Plus SmPC, section 4.4).",
+      "Hyperaluminaemia related to the aluminium component (Maalox Plus SmPC, section 4.8).",
+      "Hypermagnesaemia, very rare, including after prolonged administration of magnesium hydroxide to patients with renal impairment; in young children with renal impairment or dehydration (Maalox Plus SmPC, sections 4.4 and 4.8).",
+      "Intestinal obstruction and ileus, which large doses may trigger or aggravate in patients at higher risk such as those with renal impairment or the elderly (Maalox Plus SmPC, section 4.4).",
+      "Hypersensitivity reactions including pruritus, urticaria, angioedema and anaphylactic reactions (Maalox Plus SmPC, section 4.8).",
+      "Metabolic alkalosis in patients with renal failure when used with polystyrene sulphonate (Maalox Plus SmPC, section 4.5)."
+    ],
+    "food_interactions": [
+      "Timing relative to meals: the Maalox Plus dose should be taken 20 minutes to 1 hour after meals and at bedtime, or as required (Maalox Plus SmPC, section 4.2).",
+      "GAVISCON should be taken after meals and at bedtime (GAVISCON label, Directions).",
+      "MAALOX should be shaken well before use and taken up to 4 times a day (MAALOX label, Directions).",
+      "The US labels do not list a specific food interaction; the only food-related statement is the renal and electrolyte content of the products (for example each GAVISCON Regular Strength tablespoon contains magnesium 115 mg and sodium 52 mg, and each MAALOX teaspoon contains calcium 25 mg and magnesium 85 mg) (GAVISCON label, Other information; MAALOX label, Other information)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The safety of Maalox Plus suspension in pregnancy has not been established. There are no available data on Maalox Plus use in pregnant women, so no conclusions can be drawn regarding whether or not it is safe for use during pregnancy, and it should be used during pregnancy only if the potential benefits to the mother outweigh the potential risks, including those to the foetus (Maalox Plus SmPC, section 4.6). Neither the GAVISCON nor the MAALOX US labels contain a pregnancy section or a statement on use in pregnancy, so no US-specific pregnancy recommendation can be made from those sources. No letter pregnancy category is assigned in the sources used.",
+    "lactation_guidance": "Because of the limited maternal absorption, when used as recommended, minimal amounts, if any, of aluminium hydroxide and magnesium salt combinations are expected to be excreted into breast milk. Simeticone is not absorbed from the gastrointestinal tract. No effect on the breastfed newborn or infant is anticipated since the systemic exposure of the breast-feeding woman to aluminium hydroxide, magnesium hydroxide and simeticone is negligible (Maalox Plus SmPC, section 4.6). Neither the GAVISCON nor the MAALOX US labels contain a lactation section.",
+    "overdose": "Serious symptoms are unlikely following overdosage. Reported symptoms of acute overdose with aluminium hydroxide and magnesium salt combinations include diarrhoea, abdominal pain and vomiting. Large doses of this product may trigger or aggravate intestinal obstruction and ileus in patients at risk. Aluminium and magnesium are eliminated through the urinary route, and treatment of acute overdose consists of administration of intravenous calcium gluconate, rehydration and forced diuresis; in case of renal function deficiency, haemodialysis or peritoneal dialysis is necessary (Maalox Plus SmPC, section 4.9). The US labels state: in case of overdose, get medical help or contact a Poison Control Center right away (GAVISCON label, Warnings; MAALOX label, Warnings).",
+    "pharmacokinetics": "The Maalox Plus SmPC states 'None stated' under Pharmacokinetic properties (section 5.2). The pharmacologically relevant absorption information given in the label is that aluminium hydroxide is not well absorbed from the gastrointestinal tract and that systemic effects are therefore rare in patients with normal renal function, and that in patients with renal impairment plasma levels of both aluminium and magnesium increase (Maalox Plus SmPC, section 4.4). The US labels give no pharmacokinetic information; the GAVISCON label discloses that each 15 ml tablespoonful of Regular Strength contains magnesium 115 mg and sodium 52 mg, each 5 ml teaspoonful of Extra Strength contains magnesium 75 mg and sodium 11 mg, and the MAALOX label discloses that each teaspoon contains calcium 25 mg and magnesium 85 mg (GAVISCON label, Other information; MAALOX label, Other information).",
+    "clinical_pearls": [
+      "Aluminium hydroxide is the slow-acting antacid in the class: the Maalox Plus label pairs it with the fast-acting magnesium hydroxide and with simeticone, so the combination gives fast onset and longer total buffering time, and the two antacids offset each other's bowel effects (aluminium hydroxide tends to cause constipation, magnesium hydroxide tends to cause diarrhoea) (Maalox Plus SmPC, section 5.1).",
+      "Aluminium hydroxide is essentially not absorbed, so the safety problem is not systemic toxicity in patients with normal kidneys but cumulative aluminium and phosphate loading when the product is used long-term, in high doses, or in patients with renal failure (Maalox Plus SmPC, section 4.4).",
+      "The classic aluminium toxicity syndrome in renal impairment is encephalopathy and dementia with microcytic anaemia and worsening of dialysis-induced osteomalacia; the label advises avoiding prolonged use in renal failure (Maalox Plus SmPC, section 4.4).",
+      "Never take an aluminium-containing antacid within 1 hour of another oral medicine; the label advises staggering by at least 2 hours, and 4 hours for fluoroquinolones, because aluminium blocks absorption of a long list of drugs (Maalox Plus SmPC, section 4.5).",
+      "The combination with integrase inhibitors (dolutegravir, raltegravir, bictegravir) should be avoided (Maalox Plus SmPC, section 4.5).",
+      "Because aluminium binds phosphate, prolonged use or use at normal doses in patients with low-phosphorus diets can cause hypophosphataemia, increased bone resorption, hypercalciuria and osteomalacia; the US labels cap maximum-dose use at 2 weeks without medical direction (Maalox Plus SmPC, section 4.4; GAVISCON label, Warnings).",
+      "In the UK product, children under 5 years are limited to a maximum of 5 ml three times a day, and in the US product children under 12 are directed to ask a doctor (Maalox Plus SmPC, section 4.2; MAALOX label, Directions).",
+      "Magnesium in the combination products is the reason for the 'ask a doctor if you are on a magnesium-restricted diet' warning and for the very rare hypermagnesaemia reported with prolonged use in renal impairment (Maalox Plus SmPC, sections 4.4 and 4.8; GAVISCON label, Warnings)."
+    ],
+    "brand_names": ["Maalox", "Maalox Plus", "Gaviscon"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment is specified. Rather, aluminium hydroxide is contraindicated in patients with kidney failure, the prolonged use of antacids in patients with renal failure should be avoided, and in patients with renal impairment plasma levels of both aluminium and magnesium increase, so long-term exposure to high doses may lead to encephalopathy, dementia, microcytic anaemia or worsening of dialysis-induced osteomalacia (Maalox Plus SmPC, sections 4.3 and 4.4). The US GAVISCON and MAALOX labels direct patients with kidney disease to ask a doctor or pharmacist before use (GAVISCON label, Warnings; MAALOX label, Warnings).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral, as a liquid suspension. Shake the container well before use (GAVISCON label, Directions; MAALOX label, Directions). Maalox Plus: 5 to 10 ml taken 20 minutes to 1 hour after meals and at bedtime, or as required; the dose should be measured with a spoon or other measuring device (Maalox Plus SmPC, section 4.2; GAVISCON label, Directions). GAVISCON Regular Strength: 1 to 2 tablespoonfuls four times a day; GAVISCON Extra Strength: 2 to 4 teaspoonfuls four times a day, after meals and at bedtime. MAALOX: adults and children 12 years and older, 2 to 4 teaspoonsful (10 to 20 ml) up to 4 times a day; children under 12 should ask a doctor. Storage: GAVISCON at up to 25 degrees C, avoid freezing, keep tightly closed; MAALOX at 20 to 25 degrees C (68 to 77 degrees F). Shelf life: Maalox Plus 2 years unopened and 6 months after opening; store below 30 degrees C and do not refrigerate or freeze (Maalox Plus SmPC, sections 6.3 and 6.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Maalox Plus suspension SmPC (aluminium hydroxide with magnesium hydroxide and simeticone, Opella Healthcare UK Limited), sections 4.4 and 5.1; FDA GAVISCON label, Purposes and Uses; FDA MAALOX label, Purpose and Uses",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "Maalox Plus SmPC, section 4.1; FDA GAVISCON label, Uses; FDA MAALOX label, Purpose and Uses",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d74e5bc-1f10-4fb6-9258-cd906e360013"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Maalox Plus SmPC, section 4.3; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Maalox Plus SmPC, sections 4.4 and 4.8; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "Maalox Plus SmPC, sections 4.2 and 4.4; FDA GAVISCON label, Active ingredients and Directions; FDA MAALOX label, Active ingredient and Directions",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "Maalox Plus SmPC, section 4.5; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Maalox Plus SmPC, sections 4.3 and 4.4; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Maalox Plus SmPC, section 4.2; FDA GAVISCON label, Directions, Warnings and Other information; FDA MAALOX label, Directions, Warnings and Other information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d74e5bc-1f10-4fb6-9258-cd906e360013"
+    },
+    {
+      "field": "warnings",
+      "ref": "Maalox Plus SmPC, section 4.4; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "Maalox Plus SmPC, sections 4.4 and 4.5; FDA GAVISCON label, Directions; FDA MAALOX label, Directions",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Maalox Plus SmPC, sections 4.4, 4.5 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Maalox Plus SmPC, section 4.2; FDA GAVISCON label, Directions and Other information; FDA MAALOX label, Directions and Other information",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the Maalox Plus SmPC and the FDA GAVISCON and MAALOX labels do not assign a letter pregnancy category",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Maalox Plus SmPC, section 4.6; FDA GAVISCON and MAALOX labels contain no pregnancy section",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Maalox Plus SmPC, section 4.6; FDA GAVISCON and MAALOX labels contain no lactation section",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "Maalox Plus SmPC, section 4.9; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Maalox Plus SmPC, sections 4.4 and 5.2; FDA GAVISCON label, Other information; FDA MAALOX label, Other information",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Maalox Plus SmPC, sections 4.2, 4.4, 4.5, 4.8 and 5.1; FDA GAVISCON label, Directions and Warnings; FDA MAALOX label, Directions and Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Maalox Plus suspension (aluminium hydroxide with magnesium hydroxide and simeticone) MHRA marketing authorisation PL 53886/0041; MAALOX ANTACID and GAVISCON (aluminium hydroxide) listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a14762-3860-44c3-a3ea-5dbc45f4b1d5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the Maalox Plus SmPC or in the FDA GAVISCON and MAALOX Drug Facts labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d74e5bc-1f10-4fb6-9258-cd906e360013"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Maalox Plus SmPC, sections 4.3 and 4.4; FDA GAVISCON label, Warnings; FDA MAALOX label, Warnings",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: the Maalox Plus SmPC and the FDA GAVISCON and MAALOX labels contain no hepatic impairment section and no hepatic dose adjustment recommendation",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Maalox Plus SmPC, sections 4.2, 6.3 and 6.4; FDA GAVISCON label, Directions and Other information; FDA MAALOX label, Directions and Other information",
+      "url": "https://www.medicines.org.uk/emc/product/5550/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens for Maalox Plus, GAVISCON and MAALOX are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimens are given in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the sources used)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the Maalox Plus SmPC or in the FDA GAVISCON and MAALOX labels)"
+  ],
+  "notes": "The table stores this agent as 'Aluminium Hydroxide' with an empty brand_names array. 'Aluminium hydroxide' is the INN/BAN spelling; US labels use 'aluminum hydroxide'. Aluminium hydroxide is never marketed as a single-ingredient antacid in the US - it is always combined - so this monograph covers the three sourced products: the UK MHRA-authorised Maalox Plus suspension (aluminium hydroxide 175 mg with magnesium hydroxide 200 mg and simeticone 25 mg per 5 ml, which supplies the full SmPC: indications, posology, contraindications, warnings, interactions, pregnancy/lactation, adverse effects, overdose and pharmacology), the US FDA GAVISCON liquid antacid (aluminium hydroxide 95 mg with magnesium carbonate 358 mg per 15 ml Regular Strength, and aluminium hydroxide 254 mg with magnesium carbonate 237.5 mg per 5 ml Extra Strength), and the US FDA MAALOX antacid (aluminium hydroxide equivalent to dried gel USP 200 mg with magnesium hydroxide 200 mg and simethicone 20 mg per 5 ml). The Maalox Plus SmPC pharmacokinetic section states 'None stated', so the pharmacokinetics field reports only what the label actually says about absorption and plasma aluminium/magnesium. Aluminium hydroxide is also used in the UK as an aluminium-containing phosphate binder in hyperphosphataemia, which is outside the scope of the antacid sources used here. No letter pregnancy category is assigned in the sources, and no product carries a boxed warning."
+}

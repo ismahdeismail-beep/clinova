@@ -1,0 +1,193 @@
+{
+  "name": "Alirocumab",
+  "existing_id": "4c80dc9d-bfa2-4f4b-89fa-20612d460246",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alirocumab is a human monoclonal antibody (IgG1 isotype) that binds to proprotein convertase subtilisin kexin type 9 (PCSK9). PCSK9 binds to the low-density lipoprotein (LDL) receptors (LDLR) on the surface of hepatocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, alirocumab increases the number of LDLRs available to clear LDL, thereby lowering LDL-C levels. Alirocumab reduced free PCSK9 in a concentration-dependent manner: following a single subcutaneous administration of 75 or 150 mg, maximal suppression of free PCSK9 occurred within 4 to 8 hours, and free PCSK9 concentrations returned to baseline when alirocumab concentrations decreased below the limit of quantitation (FDA PRALUENT label, sections 12.1 and 12.2).",
+    "indications": [
+      "To reduce the risk of major adverse cardiovascular (CV) events (coronary heart disease death, myocardial infarction, stroke, or unstable angina requiring hospitalization) in adults at increased risk for these events (FDA PRALUENT label, section 1).",
+      "As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia (FDA PRALUENT label, section 1).",
+      "As an adjunct to diet and exercise to reduce LDL-C in adults and pediatric patients aged 8 years and older with heterozygous familial hypercholesterolemia (HeFH) (FDA PRALUENT label, section 1).",
+      "As an adjunct to diet and exercise to reduce LDL-C in adults with homozygous familial hypercholesterolemia (HoFH) (FDA PRALUENT label, section 1)."
+    ],
+    "contraindications": [
+      "PRALUENT is contraindicated in patients with a history of a serious hypersensitivity reaction to alirocumab or any of the excipients in PRALUENT; hypersensitivity vasculitis, angioedema and hypersensitivity reactions requiring hospitalization have occurred (FDA PRALUENT label, section 4)."
+    ],
+    "side_effects": [
+      "Common (more than 5% of patients treated with PRALUENT and more frequently than placebo) adverse reactions in adults with primary hypercholesterolemia: injection site reactions and influenza; in adults with established CV disease: myalgia (FDA PRALUENT label, section 6).",
+      "In nine primary hypercholesterolemia placebo-controlled trials in 2,476 adults treated with PRALUENT 75 mg and/or 150 mg every 2 weeks (1,999 exposed for more than 1 year; median treatment duration 65 weeks), adverse reactions reported in at least 2% of PRALUENT patients and at least 1% more frequently than placebo were injection site reactions 7% vs 5%, influenza 6% vs 5%, diarrhea 5% vs 4%, myalgia 4% vs 3%, muscle spasms 3% vs 2% and contusion 2% vs 1% (FDA PRALUENT label, section 6.1, Table 1).",
+      "Injection site reactions comprise erythema/redness, itching, swelling and pain/tenderness (FDA PRALUENT label, section 6.1, Table 1). Injection site reactions were more frequent in adults who developed anti-drug antibodies (7.5% vs 3.6%) (FDA PRALUENT label, section 12.6).",
+      "Adverse reactions led to discontinuation of treatment in 5.3% of PRALUENT patients versus 5.1% of placebo patients; the most common adverse reactions leading to discontinuation were allergic reactions (0.6% vs 0.2%) and elevated liver enzymes (0.3% vs less than 0.1%) (FDA PRALUENT label, section 6.1).",
+      "Serious hypersensitivity reactions: hypersensitivity vasculitis, angioedema and other hypersensitivity reactions requiring hospitalization have been reported with PRALUENT treatment (FDA PRALUENT label, sections 4 and 5.1).",
+      "Post-marketing experience: hypersensitivity reactions including angioedema, and influenza-like illness (FDA PRALUENT label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "Hypercholesterolemia, including HeFH: the recommended starting dosage is 75 mg subcutaneously once every 2 weeks or 300 mg subcutaneously once every 4 weeks. For patients receiving PRALUENT 300 mg every 4 weeks, LDL-C should be measured just prior to the next scheduled dose because LDL-C can vary between doses; if the LDL-C response is inadequate the dosage may be adjusted to 150 mg subcutaneously every 2 weeks. HeFH undergoing LDL apheresis, or HoFH: 150 mg subcutaneously once every 2 weeks, and PRALUENT can be administered without regard to the timing of LDL apheresis. LDL-C should be assessed when clinically appropriate; the LDL-lowering effect may be measured as early as 4 weeks after initiation (FDA PRALUENT label, sections 2 and 2.1).",
+      "geriatric": "In controlled trials, 3663 patients treated with PRALUENT were 65 years of age or older and 734 were 75 years of age or older. No overall differences in safety or effectiveness were observed between these patients and younger patients, and other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out (FDA PRALUENT label, section 8.5).",
+      "paediatric": "For pediatric patients aged 8 years and older with HeFH: 150 mg subcutaneously once every 4 weeks for body weight less than 50 kg, and 300 mg subcutaneously once every 4 weeks for body weight 50 kg or more. If the LDL-C response is inadequate, the dosage may be adjusted to 75 mg once every 2 weeks (body weight less than 50 kg) or 150 mg once every 2 weeks (body weight 50 kg or more). Safety and effectiveness have been established in pediatric patients aged 8 years and older with HeFH (based on a 24-week, randomized, placebo-controlled, double-blind trial in 101 PRALUENT and 52 placebo patients), but have not been established in pediatric patients with HeFH younger than 8 years or in pediatric patients with other types of hypercholesterolemia (FDA PRALUENT label, sections 2.2 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Statins and other lipid-modifying therapy: in clinical studies where alirocumab was administered with atorvastatin or rosuvastatin, no relevant changes in statin concentrations were observed, indicating that cytochrome P450 enzymes (mainly CYP3A4 and CYP2C9) and transporter proteins such as P-gp and OATP were not affected by alirocumab; PRALUENT is used as an adjunct to diet, exercise and other LDL-C-lowering therapies including statins (FDA PRALUENT label, sections 1 and 12.3).",
+      "The median apparent half-life of alirocumab is reduced to 12 days when administered with a statin; however, this difference is not clinically meaningful (FDA PRALUENT label, section 12.3)."
+    ],
+    "monitoring": "Assess LDL-C when clinically appropriate; the LDL-lowering effect of PRALUENT may be measured as early as 4 weeks after initiation, and for patients on the 300 mg every 4 weeks regimen LDL-C should be measured just prior to the next scheduled dose because LDL-C can vary between doses (FDA PRALUENT label, sections 2 and 2.1). Monitor for signs and symptoms of hypersensitivity reaction: hypersensitivity vasculitis, angioedema and hypersensitivity reactions requiring hospitalization have been reported, and if signs or symptoms of serious hypersensitivity occur, PRALUENT should be discontinued, the patient treated according to the standard of care and monitored until signs and symptoms resolve (FDA PRALUENT label, sections 4 and 5.1). No dosage adjustment is needed for mild or moderately impaired renal function and no data are available in severe renal impairment; the same applies to hepatic impairment (FDA PRALUENT label, sections 8.6 and 8.7).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling (Patient Information and Instructions for Use) before starting PRALUENT and to follow the Instructions for Use each time it is used. Inform patients that serious hypersensitivity reactions such as angioedema have been reported and instruct them to discontinue PRALUENT and seek medical attention promptly for a severe rash, redness, hives, severe itching, trouble breathing, or swelling of the face, lips, throat or tongue (FDA PRALUENT label, section 17 and Patient Information). Provide guidance on proper subcutaneous injection technique and use of the pre-filled pen; tell patients it may take up to 20 seconds to inject, and that the pen should be allowed to warm to room temperature for 30 to 40 minutes prior to use if refrigerated (FDA PRALUENT label, section 17). Explain missed-dose rules: inject the missed dose as soon as remembered if within 7 days, then resume the original schedule; if more than 7 days have passed, for every-2-week dosing wait until the next scheduled dose, and for every-4-week dosing start a new schedule from the date the dose is given (FDA PRALUENT label, section 2.3 and Patient Information). For the monthly 300 mg dose, tell patients to give two separate injections in a row using a different pen and two different injection sites, and not to inject PRALUENT together with other injectable medicines at the same site (FDA PRALUENT label, section 2.4 and Patient Information). In children aged 12 to 17 years PRALUENT should be given by or under the supervision of an adult, and in children aged 8 to 11 years it should be given by a caregiver (FDA PRALUENT label, section 2.4). Advise women who are exposed during pregnancy that a pregnancy safety study is available and encourage them to report their pregnancy to Regeneron (FDA PRALUENT label, sections 8.1 and 17). Tell patients not to stop PRALUENT without talking to their healthcare provider, because cholesterol levels can increase if it is stopped (Patient Information).",
+    "warnings": [
+      "Hypersensitivity reactions: hypersensitivity vasculitis, angioedema and other hypersensitivity reactions requiring hospitalization have been reported with PRALUENT treatment. If signs or symptoms of serious hypersensitivity reactions occur, discontinue treatment, treat according to the standard of care, and monitor until signs and symptoms resolve (FDA PRALUENT label, section 5.1).",
+      "PRALUENT is contraindicated in patients with a history of a serious hypersensitivity reaction to alirocumab or any of the excipients (FDA PRALUENT label, section 4).",
+      "Immunogenicity: anti-alirocumab antibodies were detected in 5.5% (504/9,091) of adults treated for up to 5 years in a cardiovascular outcomes trial, with neutralizing antibody responses in 0.5% (43/9,091); although LDL-C reductions were generally comparable, some adults with persistent or neutralizing antibodies experienced attenuation of LDL-C efficacy, and those who developed anti-drug antibodies had a higher incidence of injection site reactions (7.5% vs 3.6%) (FDA PRALUENT label, section 12.6).",
+      "Pediatric: safety and effectiveness have not been established in pediatric patients with HeFH younger than 8 years of age or in pediatric patients with other types of hypercholesterolemia (FDA PRALUENT label, section 8.4).",
+      "Severe renal and hepatic impairment: no data are available in patients with severe renal or hepatic impairment (FDA PRALUENT label, sections 8.6 and 8.7)."
+    ],
+    "precautions": [
+      "Do not use PRALUENT if the solution is cloudy, discoloured or contains particles; PRALUENT is a clear, colourless to pale yellow solution (FDA PRALUENT label, section 2.4).",
+      "Allow PRALUENT to warm to room temperature for 30 to 40 minutes if it has been refrigerated (FDA PRALUENT label, section 2.4).",
+      "Administer subcutaneously into areas of the thigh, abdomen or upper arm that are not tender, bruised, red or indurated, and rotate injection sites for each administration (FDA PRALUENT label, section 2.4).",
+      "To administer the 300 mg dose, give two 150 mg PRALUENT injections consecutively at two different injection sites (FDA PRALUENT label, section 2.4).",
+      "In children aged 12 to 17 years it is recommended that PRALUENT be given by or under the supervision of an adult; in children aged 8 to 11 years a caregiver should give it (FDA PRALUENT label, section 2.4).",
+      "Store in a refrigerator at 2 to 8 degrees C in the original carton to protect from light; do not freeze or shake. PRALUENT may be kept at room temperature up to 25 degrees C in the original carton for 30 days, and should be discarded if not used within 30 days (FDA PRALUENT label, section 16)."
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity vasculitis, angioedema and other hypersensitivity reactions requiring hospitalization (FDA PRALUENT label, sections 4 and 5.1).",
+      "Serious allergic reactions requiring hospital treatment, including severe rash, hives, swelling of the face, lips, throat or tongue, and difficulty breathing (FDA PRALUENT label, Patient Information)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the PRALUENT labelling; the product is administered by subcutaneous injection and its dosing is not tied to meals (FDA PRALUENT label, sections 2 and 2.4)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data from clinical trials and postmarketing reports on PRALUENT use in pregnant women are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes. In animal reproduction studies there were no effects on embryo-fetal development when rats were subcutaneously administered alirocumab during organogenesis at dose exposures up to 12-fold the exposure at the maximum recommended human dose of 150 mg every two weeks. In monkeys, suppression of the humoral immune response was observed in infant monkeys when alirocumab was dosed during organogenesis to parturition at dose exposures 13-fold the maximum recommended human dose, and no additional effects on pregnancy or neonatal/infant development were observed at dose exposures up to 81-fold the maximum recommended human dose. Measurable alirocumab serum concentrations were observed in infant monkeys at birth at comparable levels to maternal serum, indicating that alirocumab, like other IgG antibodies, crosses the placental barrier; monoclonal antibodies are transported across the placenta in increasing amounts especially near term, so alirocumab has the potential to be transmitted from the mother to the developing fetus. There is a pregnancy safety study for PRALUENT and healthcare providers should report PRALUENT exposure by contacting Regeneron (FDA PRALUENT label, section 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of alirocumab in human milk, the effects on the breastfed infant, or the effects on milk production. Human IgG is present in human milk, but published data suggest that breast milk IgG antibodies do not enter the neonatal and infant circulation in substantial amounts. The development and health benefits of breastfeeding should be considered along with the mother's clinical need for PRALUENT and any potential adverse effects on the breastfed infant from PRALUENT or from the underlying maternal condition (FDA PRALUENT label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations were 3 to 7 days, and the absolute bioavailability after subcutaneous administration was about 85% by population pharmacokinetics analysis. Pharmacokinetics after single subcutaneous administration of 75 mg into the abdomen, upper arm or thigh were similar. A slightly greater than dose-proportional increase was observed, with a 2.1-fold to 2.7-fold increase in total alirocumab concentrations for a 2-fold increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks, and monthly dose-normalized exposure with 300 mg every 4 weeks was similar to that of 150 mg every 2 weeks. Steady state was reached after 2 to 3 doses with an accumulation ratio up to a maximum of about 2-fold. Following intravenous administration the volume of distribution was about 0.04 to 0.05 L/kg, indicating that alirocumab is distributed primarily in the circulatory system. Alirocumab is expected to degrade to small peptides and individual amino acids. Two elimination phases were observed: at low concentrations elimination is predominantly through saturable binding to target (PCSK9), while at higher concentrations elimination is largely through a non-saturable proteolytic pathway. The median apparent half-life of alirocumab at steady state was 17 to 20 days on subcutaneous doses of 75 mg every 2 weeks or 150 mg every 2 weeks. In a population pharmacokinetic analysis of 2799 patients, age, body weight, gender, race and creatinine clearance were not found to significantly influence alirocumab pharmacokinetics (FDA PRALUENT label, section 12.3).",
+    "clinical_pearls": [
+      "Alirocumab increases the number of LDL receptors available to clear LDL rather than blocking cholesterol synthesis, so it is additive to statins and other LDL-C-lowering agents and needs no dose adjustment for hepatic or renal impairment in the mild-to-moderate range (FDA PRALUENT label, sections 12.1 and 12.3).",
+      "The LDL-lowering effect can be measured as early as 4 weeks; for patients on the 300 mg every 4 weeks regimen, measure LDL-C just before the next scheduled dose because LDL-C can vary between doses (FDA PRALUENT label, section 2.1).",
+      "The 300 mg dose requires two 150 mg injections at two different sites each time - a common and avoidable dosing error (FDA PRALUENT label, section 2.4).",
+      "Anti-drug antibodies develop in about 5% of adults (neutralizing in about 0.5%); persistent or neutralizing antibodies can attenuate LDL-C efficacy, and these patients have more injection site reactions (FDA PRALUENT label, section 12.6).",
+      "The single most important safety issue is serious hypersensitivity including angioedema, which requires permanent discontinuation and is a labelled contraindication on rechallenge (FDA PRALUENT label, sections 4 and 5.1).",
+      "Because alirocumab is a monoclonal antibody with a 17- to 20-day half-life, its 17- to 20-day interval and 2- to 3-dose time to steady state explain the need to wait about 4 weeks before judging LDL-C response (FDA PRALUENT label, sections 2.1 and 12.3)."
+    ],
+    "brand_names": ["Praluent"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment is needed for patients with mild or moderately impaired renal function; no data are available in patients with severe renal impairment. Since monoclonal antibodies are not known to be eliminated via renal pathways, renal function is not expected to impact the pharmacokinetics of alirocumab (FDA PRALUENT label, sections 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "No dose adjustment is needed in patients with mild or moderate hepatic impairment; no data are available in patients with severe hepatic impairment. After a single 75 mg subcutaneous dose, alirocumab pharmacokinetic profiles in patients with mild and moderate hepatic impairment were similar to those in patients with normal hepatic function (FDA PRALUENT label, sections 8.7 and 12.3).",
+    "administration_instructions": "Subcutaneous injection. Allow the pre-filled pen to reach room temperature for 30 to 40 minutes if it has been refrigerated, and visually inspect the solution before use - do not use it if it is cloudy, discoloured or contains particles. Inject into the thigh, abdomen or upper arm, rotating injection sites and avoiding areas that are tender, bruised, red or indurated; injection may take up to 20 seconds. To give the 300 mg dose, deliver two 150 mg injections consecutively at two different injection sites. Do not inject PRALUENT together with other injectable medicines at the same site. Store refrigerated at 2 to 8 degrees C in the original carton, protected from light; do not freeze and do not shake. PRALUENT may be kept at room temperature up to 25 degrees C in the original carton for 30 days; if not used within 30 days, discard (FDA PRALUENT label, sections 2.3, 2.4, 16 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA PRALUENT (alirocumab) label, sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA PRALUENT label, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA PRALUENT label, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA PRALUENT label, sections 4, 5.1, 6, 6.1 (Table 1), 6.2 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA PRALUENT label, sections 2, 2.1, 2.2 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA PRALUENT label, section 1 and section 12.3 (Drug-Drug Interactions, Elimination)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA PRALUENT label, sections 2, 2.1, 4, 5.1, 8.6 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA PRALUENT label, section 17 and Patient Information; sections 2.3, 2.4 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA PRALUENT label, sections 4, 5.1, 8.4, 8.6, 8.7 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA PRALUENT label, sections 2.4 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA PRALUENT label, sections 4, 5.1 and Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA PRALUENT label, sections 2 and 2.4 (no food interaction described; subcutaneous administration)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA PRALUENT label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA PRALUENT label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA PRALUENT label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA PRALUENT label, sections 1, 2.1, 2.4, 4, 5.1, 12.1, 12.3 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "brand_names",
+      "ref": "PRALUENT (alirocumab) injection label (DB row lists 'Praluent')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in the PRALUENT label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA PRALUENT label, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA PRALUENT label, sections 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA PRALUENT label, sections 2.3, 2.4, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bcfbac2-e8ac-4569-8edc-bcde3b1fd172"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses the PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "overdose (the PRALUENT label has no OVERDOSAGE section; the Patient Information only advises contacting the healthcare provider or pharmacist if more is used than should be)",
+    "black_box_warnings (no boxed warning in the PRALUENT label)"
+  ],
+  "notes": "The table stores this agent as 'Alirocumab'; the DB row brand_names ('Praluent') matches the marketed product. Content is sourced from the current US PRALUENT label (Regeneron, DailyMed setid 7bcfbac2-e8ac-4569-8edc-bcde3b1fd172, published July 2026). The PRALUENT label has no boxed warning and no OVERDOSAGE section, so those fields are left empty/null rather than filled with class-level text. Alirocumab has no clinically meaningful CYP or transporter interaction and is used as an adjunct to statins and other LDL-C-lowering therapy."
+}

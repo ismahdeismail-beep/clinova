@@ -1,0 +1,211 @@
+{
+  "name": "Adenosine",
+  "existing_id": "4202192f-cf9c-47bd-9844-5a97fa2dc19c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Adenosine is an endogenous nucleoside occurring in all cells of the body. Intravenous adenosine slows conduction time through the atrioventricular (A-V) node, can interrupt the re-entry pathways through the A-V node, and can restore normal sinus rhythm in patients with paroxysmal supraventricular tachycardia (PSVT), including PSVT associated with Wolff-Parkinson-White syndrome. The action of adenosine is competitively antagonised by methylxanthines such as caffeine and theophylline, and is potentiated by blockers of nucleoside transport such as dipyridamole; it is not blocked by atropine. Adenosine is not chemically related to other antiarrhythmic drugs (FDA Adenosine Injection label, Clinical Pharmacology and Description).",
+    "indications": [
+      "Conversion to sinus rhythm of paroxysmal supraventricular tachycardia (PSVT), including PSVT associated with accessory bypass tracts (Wolff-Parkinson-White syndrome). When clinically advisable, appropriate vagal manoeuvres (for example the Valsalva manoeuvre) should be attempted before adenosine is given (FDA Adenosine Injection label, Indications and Usage).",
+      "The label states explicitly that adenosine injection does not convert atrial flutter, atrial fibrillation or ventricular tachycardia to normal sinus rhythm; in the presence of atrial flutter or atrial fibrillation a transient modest slowing of the ventricular response may occur immediately after administration (FDA Adenosine Injection label, Indications and Usage and Clinical Trial Results)."
+    ],
+    "contraindications": [
+      "Second- or third-degree A-V block, except in patients with a functioning artificial pacemaker (FDA Adenosine Injection label, Contraindications).",
+      "Sinus node disease, such as sick sinus syndrome or symptomatic bradycardia, except in patients with a functioning artificial pacemaker (FDA Adenosine Injection label, Contraindications).",
+      "Known hypersensitivity to adenosine (FDA Adenosine Injection label, Contraindications)."
+    ],
+    "side_effects": [
+      "Cardiovascular: facial flushing (18%), headache (2%), sweating, palpitations, chest pain, and hypotension (less than 1%). The placebo group had a less than 1% rate of all of the listed reactions (FDA Adenosine Injection label, Adverse Reactions).",
+      "Respiratory: shortness of breath/dyspnoea (12%), chest pressure (7%), hyperventilation and head pressure (less than 1%) (FDA Adenosine Injection label, Adverse Reactions).",
+      "Central nervous system: lightheadedness (2%), dizziness, tingling in arms, numbness (1%), apprehension, blurred vision, burning sensation, and heaviness in arms, neck and back pain (less than 1%) (FDA Adenosine Injection label, Adverse Reactions).",
+      "Gastrointestinal: nausea (3%), metallic taste, tightness in throat, and pressure in groin (less than 1%) (FDA Adenosine Injection label, Adverse Reactions).",
+      "At the time of conversion to normal sinus rhythm a variety of new rhythms may appear on the electrocardiogram - premature ventricular contractions, atrial premature contractions, atrial fibrillation, sinus bradycardia, sinus tachycardia, skipped beats and varying degrees of A-V nodal block - and such findings were seen in 55% of patients; they generally last only a few seconds without intervention (FDA Adenosine Injection label, Arrhythmias at Time of Conversion).",
+      "Heart block: adenosine may produce a short-lasting first-, second- or third-degree heart block (FDA Adenosine Injection label, Warnings).",
+      "Postmarketing: prolonged asystole, ventricular tachycardia, ventricular fibrillation, transient increase in blood pressure, bradycardia, atrial fibrillation and torsade de pointes; bronchospasm; seizure activity including tonic-clonic (grand mal) seizures and loss of consciousness (FDA Adenosine Injection label, Adverse Reactions).",
+      "Bronchoconstriction: adenosine administered by inhalation has been reported to cause bronchoconstriction in asthmatic patients presumably due to mast cell degranulation and histamine release; mild to moderate exacerbation of asthma symptoms and respiratory compromise have been reported with intravenous adenosine (FDA Adenosine Injection label, Bronchoconstriction)."
+    ],
+    "dosage": {
+      "adult": "For rapid bolus intravenous use only. Adenosine injection should be given as a rapid intravenous bolus by the peripheral intravenous route over 1 to 2 seconds; to be certain the solution reaches the systemic circulation it should be administered either directly into a vein or, if given into an IV line, as close to the patient as possible and followed by a rapid saline flush. Initial dose: 6 mg as a rapid intravenous bolus. Repeat administration: if the first dose does not result in elimination of the supraventricular tachycardia within 1 to 2 minutes, give 12 mg as a rapid intravenous bolus; this 12 mg dose may be repeated a second time if required. Doses greater than 12 mg are not recommended for adult and paediatric patients (FDA Adenosine Injection label, Dosage and Administration).",
+      "geriatric": "Clinical studies of adenosine injection did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects; other reported clinical experience has not identified differences in responses between elderly and younger patients. In general, adenosine injection in geriatric patients should be used with caution since this population may have diminished cardiac function, nodal dysfunction, concomitant diseases or drug therapy that may alter haemodynamic function and produce severe bradycardia or A-V block (FDA Adenosine Injection label, Geriatric Use).",
+      "paediatric": "The dosages used in neonates, infants, children and adolescents were equivalent to those administered to adults on a weight basis. Body weight under 50 kg: give 0.05 to 0.1 mg/kg as a rapid intravenous bolus, centrally or peripherally, followed by a saline flush; if conversion of PSVT does not occur within 1 to 2 minutes, administer additional bolus injections at incrementally higher doses, increasing the amount given by 0.05 to 0.1 mg/kg, each followed by a saline flush, continuing until sinus rhythm is established or a maximum single dose of 0.3 mg/kg is used. Body weight 50 kg or greater: administer the adult dose. Doses greater than 12 mg are not recommended (FDA Adenosine Injection label, Pediatric Patients). No controlled studies have been conducted in paediatric patients to establish safety and efficacy (FDA Adenosine Injection label, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Methylxanthines such as caffeine and theophylline antagonise the effects of adenosine; in their presence larger doses of adenosine may be required, or adenosine may not be effective (FDA Adenosine Injection label, Precautions: Drug Interactions).",
+      "Dipyridamole, a blocker of nucleoside transport, potentiates adenosine, so smaller doses of adenosine may be effective in its presence (FDA Adenosine Injection label, Clinical Pharmacology and Precautions).",
+      "Carbamazepine has been reported to increase the degree of heart block produced by other agents, and because the primary effect of adenosine is to decrease conduction through the A-V node, higher degrees of heart block may be produced in its presence (FDA Adenosine Injection label, Precautions: Drug Interactions).",
+      "Digoxin and verapamil: digoxin use, and less frequently digoxin with verapamil, has been associated with ventricular fibrillation following adenosine administration; although no causal relationship or drug-drug interaction has been established, adenosine should be used with caution in patients receiving digoxin or digoxin and verapamil in combination (FDA Adenosine Injection label, Warnings and Precautions).",
+      "Other cardioactive drugs such as quinidine, beta-adrenergic blocking agents, calcium channel blocking agents and angiotensin converting enzyme inhibitors: intravenous adenosine has been effectively administered in their presence without change in the adverse reaction profile, but because of the potential for additive or synergistic depressant effects on the SA and A-V nodes, adenosine should be used with caution in the presence of these agents (FDA Adenosine Injection label, Precautions: Drug Interactions)."
+    ],
+    "monitoring": "The label requires that appropriate resuscitative measures be available because adenosine may produce heart block, and because transient or prolonged episodes of asystole have been reported with fatal outcomes in some cases (FDA Adenosine Injection label, Warnings). The patient should be monitored clinically for the severity of the allergic reaction and potential cardiac effects of the drug, and the dose repeated as needed; in the paediatric section the label specifies a saline flush after each bolus (FDA Adenosine Injection label, Dosage and Administration and Pediatric Patients). For the septic-shock-type continuous infusion use of epinephrine this does not apply; for adenosine, continuous ECG monitoring is implied by the requirement to detect and treat high-level block. Central venous administration has not been systematically studied and the dose recommendations are based on peripheral venous bolus dosing (FDA Adenosine Injection label, Dosage and Administration). Adenosine should be discontinued in any patient who develops severe respiratory difficulties (FDA Adenosine Injection label, Bronchoconstriction).",
+    "patient_counselling": "Explain that adenosine is given as a rapid intravenous bolus and that the injection must reach the systemic circulation, so it is given directly into a vein or as close to the patient as possible in an IV line, followed immediately by a rapid saline flush (FDA Adenosine Injection label, Dosage and Administration). Explain that the injection is given for paroxysmal supraventricular tachycardia and that vagal manoeuvres such as the Valsalva manoeuvre should be attempted first when clinically advisable (FDA Adenosine Injection label, Indications and Usage). Advise the patient to report flushing, chest pressure, shortness of breath, lightheadedness, nausea or a metallic taste, which are common and usually short-lived (FDA Adenosine Injection label, Adverse Reactions). Advise patients with asthma, chronic obstructive pulmonary disease or other bronchospastic disease that they may experience bronchospasm or worsened respiratory symptoms, and that severe respiratory difficulty requires immediate treatment (FDA Adenosine Injection label, Bronchoconstriction). Advise patients that the injection may cause a brief period of pause or irregular heartbeat, and that the healthcare team will monitor the rhythm and be ready to resuscitate if necessary (FDA Adenosine Injection label, Warnings). Advise the patient to tell staff if they take caffeine or theophylline, digoxin, verapamil, carbamazepine or dipyridamole, because these alter the effect of adenosine (FDA Adenosine Injection label, Precautions: Drug Interactions).",
+    "warnings": [
+      "Heart block: adenosine exerts its effect by decreasing conduction through the A-V node and may produce a short-lasting first-, second- or third-degree heart block. Appropriate therapy should be instituted as needed, and patients who develop high-level block on one dose should not be given additional doses. Because of the very short half-life of adenosine, these effects are generally self-limiting, but appropriate resuscitative measures should be available (FDA Adenosine Injection label, Warnings).",
+      "Transient or prolonged episodes of asystole have been reported with fatal outcomes in some cases; ventricular fibrillation has rarely been reported after adenosine administration, including both resuscitated and fatal events, mostly in association with concomitant digoxin and less frequently digoxin with verapamil (FDA Adenosine Injection label, Warnings).",
+      "Arrhythmias at time of conversion: a variety of new rhythms may appear on the electrocardiogram at the time of conversion to normal sinus rhythm and were seen in 55% of patients (FDA Adenosine Injection label, Arrhythmias at Time of Conversion).",
+      "Bronchoconstriction: intravenous adenosine has been administered to a limited number of patients with asthma and mild to moderate exacerbation of their symptoms has been reported; respiratory compromise has occurred during adenosine infusion in patients with obstructive pulmonary disease. Adenosine should be used with caution in patients with obstructive lung disease not associated with bronchospasm (for example emphysema, bronchitis) and should be avoided in patients with bronchoconstriction or bronchospasm (for example asthma). Adenosine should be discontinued in any patient who develops severe respiratory difficulties (FDA Adenosine Injection label, Bronchoconstriction).",
+      "Adenosine is not effective in converting rhythms other than PSVT, such as atrial flutter, atrial fibrillation or ventricular tachycardia, to normal sinus rhythm (FDA Adenosine Injection label, Clinical Trial Results).",
+      "The solution must reach the systemic circulation: it is important to be sure the adenosine injection solution actually reaches the systemic circulation (FDA Adenosine Injection label, Indications and Usage)."
+    ],
+    "precautions": [
+      "Adenosine injection is a sterile, nonpyrogenic solution for rapid bolus intravenous injection; each mL contains 3 mg adenosine and 9 mg sodium chloride in Water for Injection, with a pH between 4.5 and 7.5 (FDA Adenosine Injection label, Description).",
+      "The intravenous bolus dose of 6 or 12 mg usually has no systemic haemodynamic effects; when larger doses are given by infusion, adenosine decreases blood pressure by decreasing peripheral resistance (FDA Adenosine Injection label, Hemodynamics).",
+      "Because adenosine requires no hepatic or renal function for its activation or inactivation, hepatic and renal failure would not be expected to alter its effectiveness or tolerability (FDA Adenosine Injection label, Pharmacokinetics).",
+      "Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration (FDA Adenosine Injection label, Pediatric Patients).",
+      "The solution must be clear at the time of use; do not refrigerate, as crystallisation may occur, and if crystallisation has occurred dissolve the crystals by warming to room temperature. Discard the unused portion (FDA Adenosine Injection label, How Supplied).",
+      "Central venous (CVP or other) administration of adenosine has not been systematically studied; the adult dose recommendations are based on peripheral venous bolus dosing (FDA Adenosine Injection label, Dosage and Administration)."
+    ],
+    "serious_adverse_reactions": [
+      "Short-lasting first-, second- or third-degree heart block, including high-level block (FDA Adenosine Injection label, Warnings).",
+      "Transient or prolonged asystole, with fatal outcomes reported in some cases (FDA Adenosine Injection label, Warnings).",
+      "Ventricular fibrillation, including fatal events, reported mostly with concomitant digoxin and less frequently digoxin with verapamil (FDA Adenosine Injection label, Warnings).",
+      "Bronchospasm and respiratory compromise in patients with obstructive pulmonary disease or asthma (FDA Adenosine Injection label, Bronchoconstriction).",
+      "Postmarketing: prolonged asystole, ventricular tachycardia, ventricular fibrillation, transient increase in blood pressure, bradycardia, atrial fibrillation, torsade de pointes, bronchospasm, seizure activity including tonic-clonic seizures and loss of consciousness (FDA Adenosine Injection label, Adverse Reactions)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Adenosine Injection label. The clinically relevant dietary consideration is caffeine: methylxanthines such as caffeine and theophylline competitively antagonise the effects of adenosine, so larger doses of adenosine may be required or adenosine may not be effective in their presence (FDA Adenosine Injection label, Precautions: Drug Interactions)."
+    ],
+    "pregnancy_category": "C (FDA Adenosine Injection label, Pregnancy: Teratogenic Effects: Pregnancy Category C)",
+    "pregnancy_guidance": "Animal reproduction studies have not been conducted with adenosine, nor have studies been performed in pregnant women. As adenosine is a naturally occurring material widely dispersed throughout the body, no fetal effects would be anticipated. However, since it is not known whether adenosine injection can cause fetal harm when administered to pregnant women, adenosine injection should be used during pregnancy only if clearly needed (FDA Adenosine Injection label, Pregnancy).",
+    "lactation_guidance": null,
+    "overdose": "The half-life of adenosine injection is less than 10 seconds, so adverse effects are generally rapidly self-limiting. Treatment of any prolonged adverse effects should be individualised and directed toward the specific effect; methylxanthines such as caffeine and theophylline are competitive antagonists of adenosine (FDA Adenosine Injection label, Overdosage).",
+    "pharmacokinetics": "Intravenously administered adenosine is rapidly cleared from the circulation via cellular uptake, primarily by erythrocytes and vascular endothelial cells, through a specific transmembrane nucleoside carrier system that is reversible, non-concentrative and bidirectionally symmetrical. Intracellular adenosine is rapidly metabolised either by phosphorylation to adenosine monophosphate by adenosine kinase or by deamination to inosine by adenosine deaminase in the cytosol; because adenosine kinase has a lower Km and Vmax than adenosine deaminase, deamination plays a significant role only when cytosolic adenosine saturates the phosphorylation pathway. Inosine can leave the cell intact or be degraded to hypoxanthine, xanthine and ultimately uric acid, while adenosine monophosphate is incorporated into the high-energy phosphate pool. While extracellular adenosine is primarily cleared by cellular uptake with a half-life of less than 10 seconds in whole blood, excessive amounts may be deaminated by an ecto-form of adenosine deaminase. Adenosine injection requires no hepatic or renal function for its activation or inactivation, so hepatic and renal failure would not be expected to alter its effectiveness or tolerability (FDA Adenosine Injection label, Pharmacokinetics).",
+    "clinical_pearls": [
+      "Adenosine is the first-line agent for regular narrow-complex paroxysmal supraventricular tachycardia after vagal manoeuvres, but it will not terminate atrial flutter, atrial fibrillation or ventricular tachycardia (FDA Adenosine Injection label, Indications and Usage and Clinical Trial Results).",
+      "Always follow the bolus with a rapid saline flush and give it as close to the patient as possible - adenosine is famously ineffective when given through a proximal IV line because it is taken up by red cells before reaching the heart (FDA Adenosine Injection label, Dosage and Administration).",
+      "The clinical effect is essentially instantaneous and the drug is over within seconds because the half-life is under 10 seconds, so if the tachycardia has not broken by 1 to 2 minutes a 12 mg bolus should be given (FDA Adenosine Injection label, Dosage and Administration).",
+      "Transient asystole is common and usually self-limiting; having resuscitative equipment available is mandatory before giving adenosine (FDA Adenosine Injection label, Warnings).",
+      "Caffeine and theophylline blunt the effect - a patient who has just had several cups of coffee may need a larger dose or may not respond (FDA Adenosine Injection label, Precautions: Drug Interactions).",
+      "New rhythms appear on the ECG at the moment of conversion in 55% of patients; this is expected and is not by itself a reason to give further doses unless high-level block develops (FDA Adenosine Injection label, Arrhythmias at Time of Conversion).",
+      "In controlled US trials, a cumulative 60% of patients with PSVT converted to normal sinus rhythm within one minute of a 6 mg bolus and a cumulative 92% converted after 12 mg, versus 7% to 16% after 1 to 4 placebo boluses (FDA Adenosine Injection label, Clinical Trial Results).",
+      "Adenosine is contraindicated in second- or third-degree A-V block and in sinus node disease except where the patient has a functioning artificial pacemaker (FDA Adenosine Injection label, Contraindications)."
+    ],
+    "brand_names": [
+      "Adenocard (adenosine injection, US reference product)",
+      "Adenosine Injection, USP (Sagent Pharmaceuticals, generic)",
+      "Adenosine Injection, USP (repackaged generic products)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the FDA Adenosine Injection label; because adenosine requires no hepatic or renal function for its activation or inactivation, renal failure would not be expected to alter its effectiveness or tolerability (FDA Adenosine Injection label, Pharmacokinetics).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified in the FDA Adenosine Injection label; because adenosine requires no hepatic or renal function for its activation or inactivation, hepatic failure would not be expected to alter its effectiveness or tolerability (FDA Adenosine Injection label, Pharmacokinetics).",
+    "administration_instructions": "For rapid bolus intravenous use only. Administer as a rapid intravenous bolus by the peripheral intravenous route over 1 to 2 seconds, either directly into a vein or, if given into an IV line, as close to the patient as possible and followed by a rapid saline flush (FDA Adenosine Injection label, Dosage and Administration). In paediatric patients give 0.05 to 0.1 mg/kg as a rapid IV bolus, centrally or peripherally, with a saline flush after each bolus, increasing incrementally by 0.05 to 0.1 mg/kg every 1 to 2 minutes until sinus rhythm is established or a maximum single dose of 0.3 mg/kg is used (FDA Adenosine Injection label, Pediatric Patients). Inspect the solution visually for particulate matter and discoloration before administration. Adenosine Injection, USP is supplied as a sterile non-pyrogenic preservative-free solution in normal saline in 6 mg per 2 mL and 12 mg per 4 mL single-dose vials (10 vials per carton). Store at 20 to 25 degrees C, do not refrigerate because crystallisation may occur; if crystallisation has occurred, dissolve the crystals by warming to room temperature and the solution must be clear at the time of use. Discard the unused portion (FDA Adenosine Injection label, How Supplied)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Adenosine Injection, USP (Sagent Pharmaceuticals), Clinical Pharmacology and Description",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Adenosine Injection label, Indications and Usage and Clinical Trial Results",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Adenosine Injection label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Adenosine Injection label, Adverse Reactions, Warnings, Arrhythmias at Time of Conversion and Bronchoconstriction",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Adenosine Injection label, Dosage and Administration, Pediatric Patients, Pediatric Use and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Adenosine Injection label, Precautions (Drug Interactions), Clinical Pharmacology and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Adenosine Injection label, Warnings, Dosage and Administration, Pediatric Patients and Bronchoconstriction",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Adenosine Injection label, Dosage and Administration, Indications and Usage, Adverse Reactions, Bronchoconstriction, Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Adenosine Injection label, Warnings, Arrhythmias at Time of Conversion, Bronchoconstriction, Clinical Trial Results and Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Adenosine Injection label, Description, Hemodynamics, Pharmacokinetics, Pediatric Patients, Dosage and Administration and How Supplied",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Adenosine Injection label, Warnings, Bronchoconstriction and Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Adenosine Injection label, Precautions (Drug Interactions) - no food interaction described; caffeine/methylxanthine note",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA Adenosine Injection label, Pregnancy (Teratogenic Effects: Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Adenosine Injection label, Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Adenosine Injection label, Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Adenosine Injection label, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Adenosine Injection label, Indications and Usage, Contraindications, Warnings, Arrhythmias at Time of Conversion, Bronchoconstriction, Precautions, Clinical Trial Results and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Adenocard (adenosine injection) and generic Adenosine Injection, USP products listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9508caf5-0e3a-4d32-909d-bff7ea40ec30"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Adenosine Injection label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Adenosine Injection label, Pharmacokinetics (no renal dose adjustment; no hepatic or renal function needed for activation or inactivation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Adenosine Injection label, Pharmacokinetics (no hepatic dose adjustment; no hepatic or renal function needed for activation or inactivation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Adenosine Injection label, Dosage and Administration, Pediatric Patients and How Supplied",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "lactation_guidance (the FDA Adenosine Injection label contains no lactation or nursing-mothers section, and no data are given in the label)"
+  ],
+  "notes": "The table stores this agent as 'Adenosine' with the brand name 'PETITCOCHON TONE UP BODY SUN', which is a cosmetic sunscreen product and not an adenosine medicinal product - the brand recorded in the row is a data-quality error. This monograph therefore covers adenosine as a drug, namely intravenous adenosine injection for the conversion of paroxysmal supraventricular tachycardia, sourced from the FDA/DailyMed label. The FDA label used is the Adenocard-derived reference label (Adenosine Injection, USP), which uses the older labelling format: it states Pregnancy Category C and has no lactation section, so lactation_guidance is null and the pregnancy category is quoted as stated in the label. Adenosine has no boxed warning. Note that other uses of adenosine in clinical practice (for example as a pharmacological stress agent in nuclear cardiology, or adenosine receptor agonists such as regadenoson or istradefylline) are not covered by this label and are out of scope for this monograph."
+}

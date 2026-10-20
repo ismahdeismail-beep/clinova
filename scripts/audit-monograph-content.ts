@@ -10,7 +10,13 @@ const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVI
 })
 
 // Core fields every monograph should have, with a "quality bar" per field.
-const CORE_FIELDS: { key: string; label: string; kind: 'array' | 'text' | 'json'; minLen: number }[] = [
+const CORE_FIELDS: {
+  key: string
+  label: string
+  kind: 'array' | 'text' | 'json'
+  minLen: number
+  minItemLen?: number
+}[] = [
   { key: 'indications', label: 'indications', kind: 'array', minLen: 3 },
   { key: 'contraindications', label: 'contraindications', kind: 'array', minLen: 2 },
   { key: 'side_effects', label: 'side_effects', kind: 'array', minLen: 3 },
@@ -21,9 +27,17 @@ const CORE_FIELDS: { key: string; label: string; kind: 'array' | 'text' | 'json'
 ]
 
 // Enrichment fields — present on fully built monographs, absent on seed-only rows.
-const ENRICHED_FIELDS: { key: string; label: string; kind: 'array' | 'text' | 'json'; minLen: number }[] = [
+const ENRICHED_FIELDS: {
+  key: string
+  label: string
+  kind: 'array' | 'text' | 'json'
+  minLen: number
+  minItemLen?: number
+}[] = [
   { key: 'mechanism_of_action', label: 'MOA', kind: 'text', minLen: 60 },
-  { key: 'brand_names', label: 'brand_names', kind: 'array', minLen: 1 },
+  // Brand names are legitimately short (ZYTIGA, Zovirax) — don't apply the
+  // generic >10-char placeholder rule to them.
+  { key: 'brand_names', label: 'brand_names', kind: 'array', minLen: 1, minItemLen: 3 },
   { key: 'pregnancy_category', label: 'preg_category', kind: 'text', minLen: 1 },
   { key: 'warnings', label: 'warnings', kind: 'array', minLen: 1 },
   { key: 'overdose', label: 'overdose', kind: 'text', minLen: 60 },
@@ -32,12 +46,17 @@ const ENRICHED_FIELDS: { key: string; label: string; kind: 'array' | 'text' | 'j
   { key: 'clinical_pearls', label: 'pearls', kind: 'array', minLen: 1 },
 ]
 
-function fieldScore(value: any, kind: string, minLen: number): number {
+function fieldScore(value: any, kind: string, minLen: number, minItemLen = 10): number {
   if (value === null || value === undefined) return 0
   if (kind === 'array') {
     if (!Array.isArray(value) || value.length === 0) return 0
     // require at least minLen entries with real text (not placeholders)
-    const real = value.filter((v) => typeof v === 'string' && v.trim().length > 10 && !/^(n\/a|none|tbd|todo|placeholder|unknown|pending)/i.test(v.trim()))
+    const real = value.filter(
+      (v) =>
+        typeof v === 'string' &&
+        v.trim().length >= minItemLen &&
+        !/^(n\/a|none|tbd|todo|placeholder|unknown|pending)$/i.test(v.trim()),
+    )
     return real.length >= minLen ? 1 : 0
   }
   if (kind === 'json') {
@@ -94,24 +113,28 @@ async function main() {
   for (const r of rows) {
     const name = r.generic_name || r.name || r.id
     const coreOk = CORE_FIELDS.filter((f) => {
-      const ok = fieldScore(r[f.key], f.kind, f.minLen) === 1
+      const ok = fieldScore(r[f.key], f.kind, f.minLen, f.minItemLen) === 1
       coreFieldStats[f.key][ok ? 'ok' : 'empty']++
       return ok
     }).length
-    const enrichedOk = ENRICHED_FIELDS.filter((f) => fieldScore(r[f.key], f.kind, f.minLen) === 1).length
+    const enrichedOk = ENRICHED_FIELDS.filter(
+      (f) => fieldScore(r[f.key], f.kind, f.minLen, f.minItemLen) === 1,
+    ).length
     const enrichedTotal = ENRICHED_FIELDS.length
 
     if (coreOk === CORE_FIELDS.length && enrichedOk >= Math.ceil(enrichedTotal * 0.6)) {
       full++
     } else if (coreOk >= 5 && enrichedOk >= 2) {
       partial++
-      if (partialList.length < 40) partialList.push(`${name} (core ${coreOk}/7, enrich ${enrichedOk}/8)`)
+      if (partialList.length < 40)
+        partialList.push(`${name} (core ${coreOk}/7, enrich ${enrichedOk}/8)`)
     } else if (coreOk >= 3) {
       thin++
       if (thinList.length < 40) thinList.push(`${name} (core ${coreOk}/7, enrich ${enrichedOk}/8)`)
     } else {
       empty++
-      if (emptyList.length < 40) emptyList.push(`${name} (core ${coreOk}/7, enrich ${enrichedOk}/8)`)
+      if (emptyList.length < 40)
+        emptyList.push(`${name} (core ${coreOk}/7, enrich ${enrichedOk}/8)`)
     }
   }
 
@@ -124,13 +147,17 @@ async function main() {
   console.log('\n=== CORE FIELD HEALTH ===')
   for (const f of CORE_FIELDS) {
     const s = coreFieldStats[f.key]
-    console.log(`  ${f.label.padEnd(22)} ${String(s.ok).padStart(4)}/${rows.length} filled (${Math.round((s.ok / rows.length) * 100)}%)`)
+    console.log(
+      `  ${f.label.padEnd(22)} ${String(s.ok).padStart(4)}/${rows.length} filled (${Math.round((s.ok / rows.length) * 100)}%)`,
+    )
   }
 
   console.log('\n=== ENRICHMENT FIELD HEALTH ===')
   for (const f of ENRICHED_FIELDS) {
-    const ok = rows.filter((r) => fieldScore(r[f.key], f.kind, f.minLen) === 1).length
-    console.log(`  ${f.label.padEnd(16)} ${String(ok).padStart(4)}/${rows.length} filled (${Math.round((ok / rows.length) * 100)}%)`)
+    const ok = rows.filter((r) => fieldScore(r[f.key], f.kind, f.minLen, f.minItemLen) === 1).length
+    console.log(
+      `  ${f.label.padEnd(16)} ${String(ok).padStart(4)}/${rows.length} filled (${Math.round((ok / rows.length) * 100)}%)`,
+    )
   }
 
   if (partialList.length) console.log('\n=== PARTIAL SAMPLE ===\n' + partialList.join('\n'))

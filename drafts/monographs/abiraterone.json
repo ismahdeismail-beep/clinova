@@ -1,0 +1,212 @@
+{
+  "name": "Abiraterone",
+  "existing_id": "646d450c-b910-4338-b119-f9c670c43b3e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Abiraterone acetate is converted to abiraterone, an androgen biosynthesis inhibitor that inhibits 17 alpha-hydroxylase/C17,20-lyase (CYP17). CYP17 is expressed in testicular, adrenal and prostatic tumour tissues and is required for androgen biosynthesis; it catalyses two sequential reactions - the conversion of pregnenolone and progesterone to their 17 alpha-hydroxy derivatives by 17 alpha-hydroxylase activity, and the subsequent formation of dehydroepiandrosterone (DHEA) and androstenedione respectively by C17,20 lyase activity. DHEA and androstenedione are androgens and precursors of testosterone. Inhibition of CYP17 by abiraterone can also result in increased mineralocorticoid production by the adrenals. Androgen-sensitive prostatic carcinoma responds to treatment that decreases androgen levels. Androgen deprivation therapies such as GnRH agonists or orchiectomy decrease androgen production in the testes but do not affect androgen production by the adrenals or in the tumour. ZYTIGA decreased serum testosterone and other androgens in the placebo-controlled clinical trial; it is not necessary to monitor the effect of ZYTIGA on serum testosterone levels (FDA ZYTIGA (abiraterone acetate) label, section 12.1).",
+    "indications": [
+      "In combination with prednisone, for the treatment of patients with metastatic castration-resistant prostate cancer (CRPC) (FDA ZYTIGA label, section 1)",
+      "In combination with prednisone, for the treatment of patients with metastatic high-risk castration-sensitive prostate cancer (CSPC) (FDA ZYTIGA label, section 1)"
+    ],
+    "contraindications": [
+      "Abiraterone acetate: none. The FDA label states 'Contraindications: None' (FDA ZYTIGA label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions (at least 10%) occurring more commonly (more than 2%) in the abiraterone arm of the pooled 5 randomised trials: fatigue, arthralgia, hypertension, nausea, oedema, hypokalemia, hot flush, diarrhoea, vomiting, upper respiratory infection, cough and headache (FDA ZYTIGA label, section 6.1)",
+      "Most common laboratory abnormalities (more than 20%) occurring more commonly (at least 2%) in the abiraterone arm: anaemia, elevated alkaline phosphatase, hypertriglyceridaemia, lymphopenia, hypercholesterolaemia, hyperglycaemia and hypokalemia (FDA ZYTIGA label, section 6.1)",
+      "Cardiovascular: cardiac failure 2.6% versus 0.9% (grade 3-4 cardiac failure 1.3% on ZYTIGA, leading to 5 discontinuations and 4 deaths); arrhythmias (mostly grade 1 or 2), cardiorespiratory arrest (0.3%), myocardial ischemia/infarction and sudden death (FDA ZYTIGA label, section 6.1)",
+      "Hepatotoxicity: grade 3-4 ALT or AST increases (at least 5 x ULN) in 6% of 2230 patients, typically during the first 3 months; discontinuation due to liver abnormalities in 1.1% (FDA ZYTIGA label, section 5.3)",
+      "Adrenocortical insufficiency: 0.3% of 2230 abiraterone patients versus 0.1% of 1763 placebo patients, occurring after interruption of daily steroids and/or with concurrent infection or stress (FDA ZYTIGA label, section 5.2)",
+      "Hypokalemia, hypertension and fluid retention from mineralocorticoid excess: in LATITUDE, grade 3-4 hypokalemia 10% versus 1%, grade 3-4 hypertension 20% versus 10%, and grade 3-4 fluid retention 1% in each arm (FDA ZYTIGA label, section 5.1)",
+      "Fractures and increased mortality when combined with radium Ra 223 dichloride: fractures 28.6% versus 11.4% and deaths 38.5% versus 35.5% in the ERA-223 trial (FDA ZYTIGA label, section 5.4)",
+      "Postmarketing: non-infectious pneumonitis; myopathy including rhabdomyolysis; fulminant hepatitis including acute hepatic failure and death; QT prolongation and Torsades de Pointes (observed in patients who developed hypokalemia or had underlying cardiovascular conditions); anaphylactic reactions (FDA ZYTIGA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Metastatic CRPC: 1,000 mg (two 500 mg tablets or four 250 mg tablets) orally once daily with prednisone 5 mg orally daily (FDA ZYTIGA label, section 2.1). Metastatic high-risk CSPC: 1,000 mg orally once daily with prednisone 5 mg orally daily (FDA ZYTIGA label, section 2.2). Patients receiving ZYTIGA should also receive a gonadotropin-releasing hormone (GnRH) analog concurrently or should have had a bilateral orchiectomy (FDA ZYTIGA label, section 2.3). ZYTIGA tablets must be taken as a single dose once daily on an empty stomach: do not eat food for 2 hours before and 1 hour after taking ZYTIGA; swallow the tablets whole with water and do not crush or chew them (FDA ZYTIGA label, section 2.3). Baseline moderate hepatic impairment (Child-Pugh B): reduce the dose to 250 mg once daily. Baseline severe hepatic impairment (Child-Pugh C): do not use. For hepatotoxicity during treatment (ALT and/or AST greater than 5 x ULN or total bilirubin greater than 3 x ULN): interrupt treatment; treatment may be restarted at 750 mg once daily after liver function tests return to baseline or to AST and ALT at most 2.5 x ULN and total bilirubin at most 1.5 x ULN; if hepatotoxicity recurs at 750 mg once daily, re-treatment may be restarted at 500 mg once daily, and if it recurs at 500 mg once daily, discontinue; permanently discontinue for concurrent elevation of ALT greater than 3 x ULN and total bilirubin greater than 2 x ULN in the absence of biliary obstruction or other cause (FDA ZYTIGA label, section 2.4). Strong CYP3A4 inducers should be avoided; if one must be co-administered, increase the dosing frequency to twice daily only during co-administration (e.g. 1,000 mg once daily to 1,000 mg twice daily) and reduce back to the previous dose and frequency when the inducer is discontinued (FDA ZYTIGA label, section 2.5).",
+      "geriatric": "Of the total number of patients receiving ZYTIGA in randomized clinical trials, 70% were 65 years and over and 27% were 75 years and over. No overall differences in safety or effectiveness were observed between these elderly patients and younger patients, and other reported clinical experience has not identified differences in response, but greater sensitivity in some older individuals cannot be ruled out (FDA ZYTIGA label, section 8.5).",
+      "paediatric": "Safety and effectiveness of ZYTIGA in pediatric patients have not been established (FDA ZYTIGA label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inducers (e.g. phenytoin, carbamazepine, rifampin, rifabutin, rifapentine, phenobarbital): avoid concomitant use; rifampin decreased abiraterone exposure by 55%. If co-administration is unavoidable, increase the ZYTIGA dosing frequency to twice daily during co-administration only and reduce back afterwards (FDA ZYTIGA label, sections 2.5, 7.1 and 12.3).",
+      "Strong CYP3A4 inhibitors: ketoconazole had no clinically meaningful effect on abiraterone pharmacokinetics (FDA ZYTIGA label, section 7.1).",
+      "CYP2D6 substrates: abiraterone increased the Cmax and AUC of dextromethorphan 2.8-fold and 2.9-fold respectively; avoid co-administration with narrow therapeutic index CYP2D6 substrates (e.g. thioridazine) and consider a dose reduction of the concomitant substrate if unavoidable (FDA ZYTIGA label, section 7.2).",
+      "CYP2C8 substrates: pioglitazone AUC increased by 46%; monitor closely for toxicity when a narrow therapeutic index CYP2C8 substrate is used concomitantly (FDA ZYTIGA label, section 7.2).",
+      "CYP1A2 substrates: no increase in systemic exposure of theophylline was observed (FDA ZYTIGA label, section 12.3).",
+      "Radium Ra 223 dichloride: ZYTIGA plus prednisone/prednisolone is not recommended for use in combination with radium Ra 223 dichloride outside of clinical trials (FDA ZYTIGA label, section 5.4).",
+      "Antidiabetic agents: severe hypoglycemia has been reported in patients with pre-existing diabetes receiving thiazolidinediones (including pioglitazone) or repaglinide; monitor blood glucose during and after discontinuation and adjust antidiabetic dosing if needed (FDA ZYTIGA label, section 5.6)."
+    ],
+    "monitoring": "Measure serum transaminases (ALT and AST) and bilirubin before starting treatment, every two weeks for the first three months of treatment and monthly thereafter; in patients with baseline moderate hepatic impairment receiving a reduced 250 mg dose, measure ALT, AST and bilirubin before treatment, weekly for the first month, every two weeks for the following two months and monthly thereafter (FDA ZYTIGA label, section 5.3). Promptly measure serum total bilirubin, AST and ALT if clinical symptoms or signs of hepatotoxicity develop, and monitor more frequently if transaminase or bilirubin rises from baseline (FDA ZYTIGA label, section 5.3). Monitor patients for hypertension, hypokalemia and fluid retention at least once a month; control hypertension and correct hypokalemia before and during treatment (FDA ZYTIGA label, section 5.1). Closely monitor patients whose underlying medical conditions might be compromised by increases in blood pressure, hypokalemia or fluid retention, such as those with heart failure, recent myocardial infarction, cardiovascular disease or ventricular arrhythmia (FDA ZYTIGA label, section 5.1). Monitor for symptoms and signs of adrenocortical insufficiency, particularly if prednisone is withdrawn, the dose is reduced or the patient experiences unusual stress; consider increased corticosteroid dosage before, during and after stressful situations (FDA ZYTIGA label, section 5.2). Monitor blood glucose in patients with diabetes during and after discontinuation of treatment and assess whether antidiabetic drug dosage needs adjustment (FDA ZYTIGA label, section 5.6). In postmarketing experience, QT prolongation and Torsades de Pointes have been observed in patients who develop hypokalemia while taking ZYTIGA (FDA ZYTIGA label, section 5.1). No dosage adjustment is necessary for patients with renal impairment (FDA ZYTIGA label, section 8.7).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (FDA ZYTIGA label, section 17). Inform patients that ZYTIGA is associated with hypertension, hypokalemia and peripheral oedema, which may lead to QT prolongation and Torsades de Pointes in patients who develop hypokalemia; blood pressure, serum potassium and signs of fluid retention will be monitored clinically at least monthly, and patients should adhere to corticosteroids and report symptoms of hypertension, hypokalemia or oedema (FDA ZYTIGA label, section 17). Inform patients that ZYTIGA with prednisone is associated with adrenal insufficiency and that they should report symptoms of adrenocortical insufficiency (FDA ZYTIGA label, section 17). Inform patients that ZYTIGA is associated with severe hepatotoxicity, that liver function will be monitored with blood tests, and that they should immediately report symptoms of hepatotoxicity (FDA ZYTIGA label, section 17). Advise patients with diabetes to monitor glucose levels during and after treatment with ZYTIGA, since severe hypoglycemia has been reported in patients taking thiazolidinediones (including pioglitazone) or repaglinide (FDA ZYTIGA label, section 17). Advise patients that radium Ra 223 dichloride showed increased mortality and an increased rate of fracture when used in combination with ZYTIGA plus prednisone/prednisolone (FDA ZYTIGA label, section 17). Inform patients that ZYTIGA is taken once daily with prednisone and that neither medication should be interrupted or stopped without consulting the healthcare provider; patients receiving GnRH therapy must maintain it during ZYTIGA treatment. Instruct patients to take ZYTIGA as a single dose once daily on an empty stomach, not to eat food for 2 hours before and 1 hour after taking ZYTIGA, and to swallow tablets whole with water without crushing or chewing. If a dose is missed, take the normal dose the following day; if more than one daily dose is skipped, contact the healthcare provider (FDA ZYTIGA label, section 17). Inform patients that ZYTIGA may harm a developing fetus and can cause loss of pregnancy; advise males with female partners of reproductive potential to use effective contraception during treatment and for 3 weeks after the final dose, and advise females who are pregnant or may be pregnant not to handle broken, crushed or damaged tablets without protection such as gloves (FDA ZYTIGA label, section 17). Advise male patients that ZYTIGA may impair fertility (FDA ZYTIGA label, section 17).",
+    "warnings": [
+      "Hypokalemia, fluid retention and cardiovascular adverse reactions due to mineralocorticoid excess: hypertension, hypokalemia and fluid retention; grade 3-4 hypokalemia 10% vs 1% and grade 3-4 hypertension 20% vs 10% in LATITUDE; QT prolongation and Torsades de Pointes reported postmarketing in patients who develop hypokalemia (FDA ZYTIGA label, section 5.1)",
+      "Adrenocortical insufficiency: 0.3% of 2230 abiraterone patients; increased corticosteroid dosage may be indicated before, during and after stressful situations (FDA ZYTIGA label, section 5.2)",
+      "Hepatotoxicity: postmarketing fulminant hepatitis, acute liver failure and deaths; grade 3-4 ALT or AST increases in 6%, typically in the first 3 months (FDA ZYTIGA label, section 5.3)",
+      "Increased fractures and mortality in combination with radium Ra 223 dichloride: fractures 28.6% vs 11.4% and deaths 38.5% vs 35.5% in the ERA-223 trial (FDA ZYTIGA label, section 5.4)",
+      "Embryo-fetal toxicity: safety and efficacy have not been established in females; in animal reproduction studies, adverse developmental effects occurred at maternal exposures approximately 0.03 times the human exposure at the recommended dose; advise males with female partners of reproductive potential to use effective contraception during treatment and for 3 weeks after the last dose (FDA ZYTIGA label, section 5.5)",
+      "Hypoglycemia: severe hypoglycemia reported in patients with pre-existing diabetes receiving thiazolidinediones (including pioglitazone) or repaglinide (FDA ZYTIGA label, section 5.6)"
+    ],
+    "precautions": [
+      "Do not use in patients with baseline severe hepatic impairment (Child-Pugh C) (FDA ZYTIGA label, sections 2.4 and 8.6).",
+      "ZYTIGA must be taken on an empty stomach - food increases systemic exposure: in healthy subjects a low-fat meal increased Cmax and AUC approximately 7-fold and 5-fold, and a high-fat meal approximately 17-fold and 10-fold, compared with overnight fasting; taking ZYTIGA with meals can result in increased and highly variable exposures (FDA ZYTIGA label, sections 2.3 and 12.3).",
+      "ZYTIGA tablets must be swallowed whole with water and not crushed or chewed (FDA ZYTIGA label, section 2.3).",
+      "Patients receiving ZYTIGA should also receive a GnRH analog concurrently or should have had a bilateral orchiectomy (FDA ZYTIGA label, section 2.3).",
+      "Do not initiate ZYTIGA in patients with baseline AST or ALT greater than 2.5 x ULN (trial eligibility criterion); the label advises measuring transaminases and bilirubin before treatment (FDA ZYTIGA label, sections 5.3 and 6.1).",
+      "Women who are pregnant or may be pregnant should not handle ZYTIGA 250 mg uncoated tablets or other ZYTIGA tablets if broken, crushed or damaged without protection, e.g. gloves (FDA ZYTIGA label, sections 5.5 and 16)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe hepatotoxicity, including fulminant hepatitis, acute liver failure and death (FDA ZYTIGA label, sections 5.3 and 6.2)",
+      "Cardiac failure (2.6% vs 0.9%), including grade 3-4 cardiac failure leading to 5 treatment discontinuations and 4 deaths (FDA ZYTIGA label, section 6.1)",
+      "Hypokalemia with QT prolongation and Torsades de Pointes (FDA ZYTIGA label, sections 5.1 and 6.2)",
+      "Adrenocortical insufficiency (FDA ZYTIGA label, section 5.2)",
+      "Increased fractures and mortality in combination with radium Ra 223 dichloride (FDA ZYTIGA label, section 5.4)",
+      "Anaphylactic reactions (FDA ZYTIGA label, section 6.2)",
+      "Non-infectious pneumonitis and myopathy including rhabdomyolysis (FDA ZYTIGA label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Food significantly increases abiraterone exposure: in healthy subjects a low-fat meal increased Cmax approximately 7-fold and AUC approximately 5-fold, and a high-fat meal increased Cmax approximately 17-fold and AUC approximately 10-fold, compared with overnight fasting; ZYTIGA must therefore be taken on an empty stomach, with no food for 2 hours before and 1 hour after the dose (FDA ZYTIGA label, sections 2.3 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The safety and efficacy of ZYTIGA have not been established in females. Based on findings in animal studies and on its mechanism of action, ZYTIGA can cause fetal harm and potential loss of pregnancy. There are no human data on the use of ZYTIGA in pregnant women (FDA ZYTIGA label, section 8.1). In an embryo-fetal developmental toxicity study in rats, abiraterone acetate caused developmental toxicity when administered at oral doses of 10, 30 or 100 mg/kg/day throughout organogenesis (gestational days 6-17): embryo-fetal lethality (increased post-implantation loss and resorptions and decreased number of live fetuses), fetal developmental delay (skeletal effects) and urogenital effects (bilateral ureter dilation) at doses of 10 mg/kg/day or more, decreased fetal anogenital distance at 30 mg/kg/day or more, and decreased fetal body weight at 100 mg/kg/day; doses of 10 mg/kg/day or more caused maternal toxicity, and the tested doses produced systemic exposures approximately 0.03, 0.1 and 0.3 times the AUC in patients (FDA ZYTIGA label, section 8.1). Advise males with female partners of reproductive potential to use effective contraception during treatment and for 3 weeks after the final dose of ZYTIGA (FDA ZYTIGA label, sections 5.5 and 8.3). Based on animal studies, ZYTIGA may impair reproductive function and fertility in males of reproductive potential (FDA ZYTIGA label, section 8.3).",
+    "lactation_guidance": "The safety and efficacy of ZYTIGA have not been established in females. There is no information available on the presence of abiraterone in human milk, or on the effects on the breastfed child or on milk production (FDA ZYTIGA label, section 8.2).",
+    "overdose": "Human experience of overdose with ZYTIGA is limited and there is no specific antidote. In the event of an overdose, stop ZYTIGA, undertake general supportive measures including monitoring for arrhythmias and cardiac failure, and assess liver function (FDA ZYTIGA label, section 10).",
+    "pharmacokinetics": "Abiraterone acetate is converted to abiraterone, and abiraterone acetate plasma concentrations were below detectable levels (<0.2 ng/mL) in more than 99% of analysed samples. After oral administration in patients with metastatic CRPC, the median time to maximum plasma abiraterone concentration was 2 hours; abiraterone accumulated at steady state with 2-fold higher exposure than a single 1,000 mg dose, and steady-state values were Cmax 226 +/- 178 ng/mL and AUC 993 +/- 639 ng.hr/mL. Exposure was proportional over 250 to 1,000 mg but was not significantly increased when the dose was doubled from 1,000 to 2,000 mg (8% increase in mean AUC). Abiraterone is more than 99% bound to plasma proteins (albumin and alpha-1 acid glycoprotein) and the apparent steady-state volume of distribution was 19,669 +/- 13,358 L. The mean terminal half-life in patients with metastatic CRPC was 12 +/- 5 hours. Abiraterone acetate is hydrolysed to abiraterone by esterase activity (not CYP-mediated); the two main circulating metabolites are abiraterone sulphate and N-oxide abiraterone sulphate, both inactive, each accounting for about 43% of exposure. CYP3A4 and SULT2A1 form N-oxide abiraterone sulphate and SULT2A1 forms abiraterone sulphate. Approximately 88% of the radioactive dose is recovered in feces and approximately 5% in urine (FDA ZYTIGA label, section 12.3).",
+    "clinical_pearls": [
+      "Abiraterone is a CYP17 inhibitor that blocks androgen synthesis in testicular, adrenal AND prostatic tumour tissue, which is why it must be combined with a GnRH analog (or prior bilateral orchiectomy) - GnRH therapy alone does not suppress adrenal androgen production (FDA ZYTIGA label, sections 2.3 and 12.1).",
+      "It is given with prednisone, and both drugs must be continued - stopping prednisone risks adrenocortical insufficiency, and predniso(lo)ne is also required for aGVHD/other indications where relevant (FDA ZYTIGA label, sections 2.1, 2.2 and 5.2).",
+      "The empty-stomach rule is critical: food raises abiraterone exposure up to about 10-fold, so no food for 2 hours before and 1 hour after the dose (FDA ZYTIGA label, sections 2.3 and 12.3).",
+      "Baseline moderate hepatic impairment requires dose reduction to 250 mg once daily with intensive liver monitoring, and severe hepatic impairment is a do-not-use (FDA ZYTIGA label, sections 2.4 and 8.6).",
+      "There is no boxed warning on the ZYTIGA label; the key risks are hepatotoxicity, mineralocorticoid excess (hypokalemia, hypertension, oedema) and adrenocortical insufficiency (FDA ZYTIGA label, sections 4, 5.1, 5.2 and 5.3).",
+      "Different abiraterone acetate products have different food and dose-modification instructions - YONSA, for example, is dosed 500 mg once daily with or without food and restarts hepatotoxicity at 375 mg, whereas ZYTIGA is dosed 1,000 mg once daily on an empty stomach and restarts at 750 mg; check the specific product label (FDA YONSA label sections 2.1, 2.2 and 2.3; FDA ZYTIGA label sections 2.1, 2.3 and 2.4)."
+    ],
+    "brand_names": ["ZYTIGA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is necessary for patients with renal impairment; systemic exposure to abiraterone after a single oral 1,000 mg dose did not increase in subjects with end-stage renal disease on stable haemodialysis compared with subjects with normal renal function (FDA ZYTIGA label, sections 8.7 and 12.3).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary for patients with baseline mild hepatic impairment (Child-Pugh A). In patients with baseline moderate hepatic impairment (Child-Pugh B), reduce the recommended dose to 250 mg once daily and monitor ALT, AST and bilirubin before treatment, weekly for the first month, every two weeks for the following two months and monthly thereafter; do not use in patients with baseline severe hepatic impairment (Child-Pugh C). For hepatotoxicity developing during treatment, interrupt and restart at a reduced dose as described in the dosage field (FDA ZYTIGA label, sections 2.4 and 8.6).",
+    "administration_instructions": "Take ZYTIGA once daily as a single dose on an empty stomach, with no food for 2 hours before and 1 hour after the dose; swallow tablets whole with water and do not crush or chew. Take with prednisone as prescribed. Patients must also be on a GnRH analog or have had a bilateral orchiectomy. If a dose is missed, take the normal dose the following day; if more than one daily dose is skipped, contact the healthcare provider. Store at 20 degrees C to 25 degrees C (68 degrees F to 77 degrees F), with permitted excursions from 15 degrees C to 30 degrees C (59 degrees F to 86 degrees F), and keep out of reach of children (FDA ZYTIGA label, sections 2.3, 16 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate) tablets (Janssen Biotech, Inc.), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 5.1-5.4 and 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.1-2.5, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.5, 5.4, 5.6, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 5.1, 5.2, 5.3, 5.6, 8.6 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 5.1-5.6 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.3, 2.4, 5.3, 5.5, 6.1, 8.6, 12.3 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 5.1-5.4 and 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.3 and 12.3 (Effect of Food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 5.5, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.1-2.4, 4, 5.1-5.3, 8.6 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, YONSA (abiraterone acetate) tablets (Sun Pharmaceutical Industries, Inc.), sections 2.1-2.3 - product differences versus ZYTIGA (dose, food effect, hepatotoxicity re-challenge dose ladder)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8967e10-f768-47ce-ac9e-2324c8390132"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ZYTIGA (abiraterone acetate) listed as a brand product on DailyMed (Janssen Biotech, Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA ZYTIGA (abiraterone acetate) label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 8.7 and 12.3 (Patients with Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.4 and 8.6 (Patients with Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ZYTIGA (abiraterone acetate), sections 2.3, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e338e89-3cf2-48eb-b6e2-a06c608c6513"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients have not been established)",
+    "pregnancy_category (the current ZYTIGA label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Abiraterone' with brand_names ['Abiraterone Acetate'], which is the salt name rather than a brand. The active drug is abiraterone acetate; ZYTIGA (Janssen) is the reference-listed product used as the primary source here, so brand_names has been corrected to ['ZYTIGA']. Caution: abiraterone acetate products are not interchangeable - ZYTIGA is 1,000 mg once daily taken on an empty stomach, whereas YONSA is 500 mg once daily taken with or without food, and the hepatotoxicity re-challenge dose ladders differ (750/500 mg for ZYTIGA, 375/250 mg for YONSA); this is flagged in clinical_pearls. The label carries no boxed warning and no pregnancy category letter (PLLR format). The ZYTIGA label also carries an indication for metastatic high-risk castration-sensitive prostate cancer, which is newer than the 2011 initial approval for CRPC."
+}

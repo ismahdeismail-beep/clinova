@@ -1,0 +1,223 @@
+{
+  "name": "Alendronate",
+  "existing_id": "1a19c7cd-42cf-4763-a80e-f74efd84df74",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alendronate is a bisphosphonate that binds to bone hydroxyapatite and specifically inhibits the activity of osteoclasts, the bone-resorbing cells. Alendronate reduces bone resorption with no direct effect on bone formation, although the latter process is ultimately reduced because bone resorption and formation are coupled during bone turnover. At the cellular level alendronate shows preferential localization to sites of bone resorption, specifically under osteoclasts: osteoclasts adhere normally to the bone surface but lack the ruffled border that is indicative of active resorption. Alendronate does not interfere with osteoclast recruitment or attachment, but it does inhibit osteoclast activity; studies in mice showed about 10-fold higher uptake of radiolabelled alendronate on osteoclast surfaces than on osteoblast surfaces. While incorporated in bone matrix alendronate is not pharmacologically active, so it must be continuously administered to suppress osteoclasts on newly formed resorption surfaces. Histomorphometry in baboons and rats showed that alendronate reduces bone turnover, and because bone formation exceeds bone resorption at these remodeling sites there are progressive gains in bone mass (FDA FOSAMAX label, sections 12.1 and 12.2).",
+    "indications": [
+      "Treatment of osteoporosis in postmenopausal women: FOSAMAX increases bone mass and reduces the incidence of fractures, including those of the hip and spine (vertebral compression fractures) (FDA FOSAMAX label, section 1.1).",
+      "Prevention of osteoporosis in postmenopausal women (FDA FOSAMAX label, section 1.2).",
+      "Treatment to increase bone mass in men with osteoporosis (FDA FOSAMAX label, section 1.3).",
+      "Treatment of glucocorticoid-induced osteoporosis in men and women receiving glucocorticoids in a daily dosage equivalent to 7.5 mg or greater of prednisone and who have low bone mineral density (FDA FOSAMAX label, section 1.4).",
+      "Treatment of Paget's disease of bone in men and women who have alkaline phosphatase at least two times the upper limit of normal, or who are symptomatic, or who are at risk for future complications from their disease (FDA FOSAMAX label, section 1.5).",
+      "BINOSTO (alendronate sodium) effervescent tablet 70 mg is indicated for the treatment of osteoporosis in postmenopausal women and to increase bone mass in men with osteoporosis (FDA BINOSTO label, sections 1.1 and 1.2). BINOSTO is not indicated for the prevention of osteoporosis, glucocorticoid-induced osteoporosis or Paget's disease (FDA BINOSTO label, sections 1.1 and 1.2)."
+    ],
+    "contraindications": [
+      "Abnormalities of the esophagus which delay esophageal emptying such as stricture or achalasia (FDA FOSAMAX label, section 4).",
+      "Inability to stand or sit upright for at least 30 minutes (FDA FOSAMAX label, section 4).",
+      "Do not administer FOSAMAX oral solution to patients at increased risk of aspiration (FDA FOSAMAX label, section 4). BINOSTO is likewise contraindicated in patients at increased risk of aspiration (FDA BINOSTO label, section 4).",
+      "Hypocalcemia (FDA FOSAMAX label, section 4; FDA BINOSTO label, section 4).",
+      "Hypersensitivity to any component of this product; hypersensitivity reactions including urticaria and angioedema have been reported (FDA FOSAMAX label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence greater than or equal to 3%) are abdominal pain, acid regurgitation, constipation, diarrhea, dyspepsia, musculoskeletal pain and nausea (FDA FOSAMAX label, section 6).",
+      "Gastrointestinal adverse reactions considered possibly, probably or definitely drug related in at least 1% of women on alendronate 10 mg/day: abdominal pain 6.6%, nausea 3.6%, dyspepsia 3.6%, constipation 3.1%, diarrhea 3.1%, flatulence 2.6%, acid regurgitation 2.0%, esophageal ulcer 1.5%, vomiting 1.0%, dysphagia 1.0%, abdominal distention 1.0% and gastritis 0.5% (FDA FOSAMAX label, section 6.1, Table 1).",
+      "Musculoskeletal: bone, muscle or joint pain 4.1% versus 2.5% on placebo (FDA FOSAMAX label, section 6.1, Table 1); in post-marketing experience severe and occasionally incapacitating bone, joint and/or muscle pain has been reported, with onset from one day to several months after starting the drug and relief of symptoms after stopping (FDA FOSAMAX label, sections 5.3 and 6.2).",
+      "Nervous system/psychiatric: headache 2.6% and dizziness (FDA FOSAMAX label, section 6.1, Table 1); post-marketing dizziness and vertigo (FDA FOSAMAX label, section 6.2).",
+      "Special senses: taste perversion (FDA FOSAMAX label, section 6.1, Table 1); post-marketing uveitis, scleritis or episcleritis and cholesteatoma of the external auditory canal (focal osteonecrosis) (FDA FOSAMAX label, section 6.2).",
+      "Esophageal adverse experiences such as esophagitis, esophageal ulcers and esophageal erosions, occasionally with bleeding and rarely followed by esophageal stricture or perforation; some have been severe and required hospitalization (FDA FOSAMAX label, sections 5.1 and 6.2).",
+      "Gastrointestinal: post-marketing gastric and duodenal ulcers, some severe and with complications, and oropharyngeal ulceration (FDA FOSAMAX label, sections 6.2 and 17).",
+      "Osteonecrosis of the jaw, generally associated with tooth extraction and/or local infection with delayed healing (FDA FOSAMAX label, sections 5.4 and 6.2).",
+      "Atypical, low-energy fractures of the femoral shaft with prodromal dull aching thigh pain in the weeks to months before a complete fracture; fractures may be bilateral and atypical fractures of other bones have also been reported (FDA FOSAMAX label, sections 5.5 and 6.2).",
+      "Hypersensitivity reactions including urticaria and angioedema; transient myalgia, malaise, asthenia and fever typically in association with initiation of treatment; symptomatic hypocalcemia; peripheral edema (FDA FOSAMAX label, section 6.2).",
+      "Skin: post-marketing rash (occasionally with photosensitivity), pruritus, alopecia and severe skin reactions including Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA FOSAMAX label, section 6.2).",
+      "Pulmonary: acute asthma exacerbations (FDA FOSAMAX label, section 6.2).",
+      "Laboratory findings: asymptomatic, mild and transient decreases in serum calcium in approximately 18% and serum phosphate in approximately 10% of FOSAMAX-treated patients, compared with approximately 12% and 3% of those taking placebo (FDA FOSAMAX label, section 6.1)."
+    ],
+    "dosage": {
+      "adult": "Treatment of osteoporosis in postmenopausal women and in men: one 70 mg tablet once weekly, or one bottle of 70 mg oral solution once weekly, or one 10 mg tablet once daily. Prevention of osteoporosis in postmenopausal women: one 35 mg tablet once weekly or one 5 mg tablet once daily. Glucocorticoid-induced osteoporosis: one 5 mg tablet once daily, except for postmenopausal women not receiving estrogen, for whom the recommended dosage is one 10 mg tablet once daily. Paget's disease of bone: 40 mg once a day for six months; re-treatment may be considered after a six-month post-treatment evaluation period in patients who have relapsed, based on increases in serum alkaline phosphatase, or who failed to normalize their serum alkaline phosphatase. (FDA FOSAMAX label, sections 2.1 to 2.5). BINOSTO effervescent tablet: one 70 mg effervescent tablet once weekly for treatment of osteoporosis in postmenopausal women and to increase bone mass in men with osteoporosis (FDA BINOSTO label, sections 2.1 and 2.2).",
+      "geriatric": "In the Fracture Intervention Trial, 71% (n=2302) of FOSAMAX-treated patients were 65 years of age or older and 17% (n=550) were 75 years of age or older; 45%, 54%, 37% and 70% respectively were 65 years of age or over in the osteoporosis studies in women, the osteoporosis studies in men, the glucocorticoid-induced osteoporosis studies and the Paget's disease studies. No overall differences in efficacy or safety were observed between these patients and younger patients, but greater sensitivity of some older individuals cannot be ruled out. Bioavailability and disposition were similar in elderly and younger patients and no dosage adjustment is necessary in elderly patients (FDA FOSAMAX label, sections 8.5 and 12.3).",
+      "paediatric": "FOSAMAX is not indicated for use in pediatric patients. In a randomized, double-blind, placebo-controlled two-year study in 139 pediatric patients aged 4 to 18 years with severe osteogenesis imperfecta, treatment did not reduce the risk of fracture; 16% of alendronate-treated patients with a radiologically confirmed fracture by Month 12 had delayed fracture healing or non-union at Month 24 versus 9% of placebo-treated patients, and vomiting occurred in 29.4% of alendronate patients versus 10% of placebo patients (FDA FOSAMAX label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Calcium supplements, antacids or oral medications containing multivalent cations interfere with absorption of alendronate; instruct patients to wait at least one-half hour after taking FOSAMAX before taking any other oral medication (FDA FOSAMAX label, sections 2.6 and 7.1).",
+      "Aspirin: in clinical studies the incidence of upper gastrointestinal adverse events was increased in patients receiving concomitant therapy with daily doses of FOSAMAX greater than 10 mg and aspirin-containing products (FDA FOSAMAX label, section 7.2).",
+      "Nonsteroidal anti-inflammatory drugs: FOSAMAX may be administered to patients taking NSAIDs, but since NSAID use is associated with gastrointestinal irritation, caution should be used during concomitant use (FDA FOSAMAX label, section 7.3).",
+      "Levothyroxine: the bioavailability of alendronate was slightly decreased when BINOSTO and levothyroxine were co-administered to healthy subjects (FDA BINOSTO label, section 7.4).",
+      "Intravenous ranitidine doubled the bioavailability of oral alendronate; the clinical significance of the increased bioavailability and whether similar increases will occur with oral H2-antagonists is unknown (FDA FOSAMAX label, section 12.3)."
+    ],
+    "monitoring": "Correct hypocalcemia and other disorders of mineral metabolism such as vitamin D deficiency before initiating therapy, and monitor serum calcium and symptoms of hypocalcemia during therapy in these patients (FDA FOSAMAX label, section 5.2). In glucocorticoid-induced osteoporosis, measure bone mineral density at the initiation of therapy and repeat after 6 to 12 months of combined alendronate and glucocorticoid treatment (FDA FOSAMAX label, section 5.7). Alendronate is not recommended when creatinine clearance is less than 35 mL/min, and kidney function should be monitored (FDA FOSAMAX label, sections 5.6 and 8.6). Evaluate liver enzymes if anorexia, weight loss or pruritus develop, monitor liver enzymes periodically in patients with pre-existing liver disease, and discontinue in patients with elevated liver enzymes (FDA FOSAMAX label, section 5.4). Any patient with a history of bisphosphonate exposure presenting with thigh or groin pain should be suspected of having an atypical fracture and evaluated to rule out an incomplete femur fracture, with assessment of the contralateral limb (FDA FOSAMAX label, section 5.5). Patients who develop osteonecrosis of the jaw should receive care by an oral surgeon (FDA FOSAMAX label, section 5.4). For Paget's disease, measure serum alkaline phosphatase periodically and consider re-treatment after a six-month post-treatment evaluation period (FDA FOSAMAX label, section 2.5).",
+    "patient_counselling": "Advise patients to read the FDA-approved Medication Guide before starting therapy and each time the prescription is renewed. Tell patients that the expected benefit is obtained only if alendronate is taken with plain water first thing on arising, at least 30 minutes before the first food, beverage or medication of the day; even orange juice or coffee markedly reduce absorption. Instruct patients to swallow the tablet whole with a full glass of water (6-8 ounces), not to chew or suck on the tablet because of the risk of oropharyngeal ulceration, not to lie down for at least 30 minutes and until after the first food of the day, and not to take it at bedtime. Stop the drug and consult the physician for difficulty or pain on swallowing, retrosternal pain or new or worsening heartburn. If a once-weekly dose is missed, take one dose on the morning after remembering and do not take two doses on the same day. Advise taking supplemental calcium and vitamin D if dietary intake is inadequate, and to consider weight-bearing exercise and modification of smoking and excessive alcohol intake. Tell patients to inform the prescriber about dental procedures, kidney problems, malabsorption syndromes, pregnancy and breastfeeding, and to disclose use of antacids, aspirin and NSAIDs. If pregnancy is recognised, stop alendronate and contact the doctor (FDA FOSAMAX label, section 17 and Medication Guide).",
+    "warnings": [
+      "Upper gastrointestinal adverse reactions: alendronate may cause local irritation of the upper gastrointestinal mucosa, and esophageal adverse experiences (esophagitis, esophageal ulcers and erosions, occasionally with bleeding and rarely followed by esophageal stricture or perforation) have been reported; some were severe and required hospitalization. Discontinue if new or worsening symptoms occur (FDA FOSAMAX label, section 5.1).",
+      "Hypocalcemia can worsen and must be corrected prior to use; other disorders affecting mineral metabolism such as vitamin D deficiency should also be effectively treated (FDA FOSAMAX label, section 5.2).",
+      "Severe bone, joint and muscle pain may occur; discontinue use if severe symptoms develop (FDA FOSAMAX label, section 5.3).",
+      "Osteonecrosis of the jaw has been reported; it is generally associated with tooth extraction and/or local infection with delayed healing, and the risk may increase with duration of exposure to bisphosphonates (FDA FOSAMAX label, section 5.4).",
+      "Atypical fractures including femoral fractures have been reported; patients with new thigh or groin pain should be evaluated to rule out a femoral fracture, and the risk/benefit of continuing bisphosphonate therapy should be re-evaluated with consideration of interrupting therapy (FDA FOSAMAX label, section 5.5).",
+      "Renal impairment: FOSAMAX is not recommended for patients with creatinine clearance less than 35 mL/min (FDA FOSAMAX label, section 5.6).",
+      "Glucocorticoid-induced osteoporosis: the risk versus benefit of FOSAMAX at daily glucocorticoid dosages of less than 7.5 mg of prednisone or equivalent has not been established (FDA FOSAMAX label, section 5.7).",
+      "Sodium content: each BINOSTO tablet contains 603 mg of sodium, equivalent to 1532 mg NaCl; use caution in patients on sodium restriction (FDA BINOSTO label, section 5.7)."
+    ],
+    "precautions": [
+      "The optimal duration of use has not been determined; safety and effectiveness for osteoporosis are based on clinical data of four years' duration. All patients on bisphosphonate therapy should have the need for continued therapy re-evaluated on a periodic basis, and patients at low risk for fracture should be considered for drug discontinuation after 3 to 5 years of use (FDA FOSAMAX label, section 1.6).",
+      "Patients must be given and must understand the full dosing instructions because the risk of severe esophageal adverse experiences is greater in patients who lie down after taking oral bisphosphonates or who do not swallow them with a full glass (6-8 ounces) of water; in patients who cannot comply with dosing instructions due to mental disability, therapy should be used under appropriate supervision (FDA FOSAMAX label, section 5.1).",
+      "Ensure adequate calcium and vitamin D intake, especially in patients with Paget's disease of bone and in patients receiving glucocorticoids; patients at increased risk for vitamin D insufficiency may need vitamin D supplementation, and patients with gastrointestinal malabsorption syndromes may require higher doses with consideration of 25-hydroxyvitamin D measurement (FDA FOSAMAX label, section 2.7).",
+      "If a once-weekly dose is missed, take one dose on the morning after remembering, do not take two doses on the same day, and return to the original schedule (FDA FOSAMAX label, section 2.8).",
+      "Caution should be used in patients with active upper gastrointestinal problems such as known Barrett's esophagus, dysphagia, other esophageal diseases, gastritis, duodenitis or ulcers (FDA FOSAMAX label, section 5.1)."
+    ],
+    "serious_adverse_reactions": [
+      "Esophageal adverse experiences including esophagitis, esophageal ulcers and esophageal erosions, occasionally with bleeding and rarely followed by esophageal stricture or perforation; some severe and requiring hospitalization (FDA FOSAMAX label, sections 5.1 and 6.2).",
+      "Osteonecrosis of the jaw (FDA FOSAMAX label, sections 5.4 and 6.2).",
+      "Atypical low-energy femoral shaft and subtrochanteric fractures, and atypical fractures of other bones (FDA FOSAMAX label, sections 5.5 and 6.2).",
+      "Severe and occasionally incapacitating bone, joint and/or muscle pain (FDA FOSAMAX label, section 5.3).",
+      "Symptomatic hypocalcemia (FDA FOSAMAX label, sections 5.2 and 6.2).",
+      "Hypersensitivity reactions including urticaria and angioedema, and severe skin reactions including Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA FOSAMAX label, section 6.2).",
+      "Gastric and duodenal ulcers, some severe and with complications (FDA FOSAMAX label, section 6.2)."
+    ],
+    "food_interactions": [
+      "Take with plain water only, on an empty stomach, at least 30 minutes before the first food, beverage or medication of the day. Co-administration with coffee or orange juice reduced bioavailability by approximately 60%, and bioavailability was negligible whether alendronate was administered with or up to two hours after a standardized breakfast (FDA FOSAMAX label, sections 2.6 and 12.3).",
+      "Calcium supplements, antacids and oral medications containing multivalent cations interfere with absorption of alendronate; wait at least 30 minutes after taking alendronate before taking them (FDA FOSAMAX label, sections 7.1 and 12.3).",
+      "BINOSTO must be dissolved in 4 ounces of room temperature plain water only, not mineral water or flavoured water (FDA BINOSTO label, section 2.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data on the use of FOSAMAX in pregnant women are insufficient to inform a drug-associated risk of adverse maternal or fetal outcomes; discontinue FOSAMAX when pregnancy is recognised. In animal reproduction studies, daily oral administration of alendronate to rats from before mating through the end of gestation or lactation showed decreased postimplantation survival and decreased pup body weight gain starting at doses equivalent to less than half the highest recommended 40 mg clinical daily dose; oral administration during organogenesis resulted in reduced fetal ossification starting at 3 times the 40 mg clinical daily dose, and no similar fetal effects were observed in rabbits at doses equivalent to approximately 10 times the 40 mg dose. Delayed or failed delivery of offspring, protracted parturition and late pregnancy maternal and fetal deaths due to maternal hypocalcemia occurred in rats at oral doses as low as one tenth the 40 mg clinical daily dose. Because bisphosphonates are incorporated into the bone matrix from which they are gradually released over years, there is a potential risk of fetal harm, predominantly skeletal, if a woman becomes pregnant after completing a course of bisphosphonate therapy; the impact of the time between cessation of therapy and conception, the particular bisphosphonate used and the route of administration has not been studied (FDA FOSAMAX label, section 8.1).",
+    "lactation_guidance": "It is not known whether alendronate is present in human breast milk, whether it affects human milk production, or whether it has effects on the breastfed infant; the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for FOSAMAX and any potential adverse effects on the breastfed child from FOSAMAX or from the underlying maternal condition (FDA FOSAMAX label, section 8.2).",
+    "overdose": "Hypocalcemia, hypophosphatemia and upper gastrointestinal adverse events such as upset stomach, heartburn, esophagitis, gastritis or ulcer may result from oral overdosage. Milk or antacids should be given to bind alendronate. Due to the risk of esophageal irritation, vomiting should not be induced and the patient should remain fully upright. Dialysis would not be beneficial (FDA FOSAMAX label, section 10).",
+    "pharmacokinetics": "Relative to an intravenous reference dose, the mean oral bioavailability of alendronate in women was 0.64% for doses ranging from 5 to 70 mg administered after an overnight fast and two hours before a standardized breakfast; oral bioavailability of the 10 mg tablet in men was 0.59%. Bioavailability was decreased by approximately 40% when 10 mg alendronate was administered 0.5 or 1 hour before a standardized breakfast compared with dosing 2 hours before eating, and concomitant administration with coffee or orange juice reduced bioavailability by approximately 60%. The mean steady-state volume of distribution, exclusive of bone, is at least 28 L; plasma concentrations following therapeutic oral doses are below 5 ng/mL and protein binding in human plasma is approximately 78%. There is no evidence that alendronate is metabolized in animals or humans. Following a single intravenous dose of radiolabelled alendronate, approximately 50% of the radioactivity was excreted in the urine within 72 hours with little or no radioactivity recovered in the feces; renal clearance after a single 10 mg intravenous dose was 71 mL/min and plasma concentrations fell by more than 95% within 6 hours. The terminal half-life in humans is estimated to exceed 10 years, probably reflecting release of alendronate from the skeleton; after 10 years of oral treatment with 10 mg daily it is estimated that the amount of alendronate released daily from the skeleton is approximately 25% of that absorbed from the gastrointestinal tract (FDA FOSAMAX label, section 12.3).",
+    "clinical_pearls": [
+      "Administration technique is the single biggest determinant of tolerability: swallow with a full glass of plain water (6-8 ounces) on arising, at least 30 minutes before food, and stay upright for at least 30 minutes and until after the first food of the day (FDA FOSAMAX label, sections 2.6 and 17).",
+      "Absorption is negligible if alendronate is taken with food or within two hours after a meal, and coffee or orange juice reduces bioavailability by approximately 60% (FDA FOSAMAX label, section 12.3).",
+      "Re-evaluate the need for continued therapy periodically; patients at low fracture risk should be considered for discontinuation after 3 to 5 years of use (FDA FOSAMAX label, section 1.6).",
+      "New thigh or groin pain in any patient with prior bisphosphonate exposure should be assumed to represent a possible atypical femoral fracture until it has been evaluated radiographically, and the contralateral limb should also be assessed (FDA FOSAMAX label, section 5.5).",
+      "In the Schenk assay the lowest alendronate dose that interfered with bone mineralization was 6000-fold the antiresorptive dose, compared with a ratio of one to one for etidronate, suggesting that alendronate at therapeutic doses is highly unlikely to induce osteomalacia (FDA FOSAMAX label, section 13.2).",
+      "BINOSTO effervescent tablets must be dissolved in 4 ounces of room temperature plain water only, allowed to effervesce for at least 5 minutes and stirred for about 10 seconds; the tablet must not be swallowed undissolved, chewed, or allowed to dissolve in the mouth because of the risk of oropharyngeal irritation (FDA BINOSTO label, section 2.3).",
+      "Alendronate is not recommended in renal impairment below a creatinine clearance of 35 mL/min, so renal function should be checked before starting (FDA FOSAMAX label, sections 5.6 and 8.6)."
+    ],
+    "brand_names": ["Fosamax", "Binosto"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is necessary in patients with creatinine clearance between 35 and 60 mL/min; FOSAMAX (and BINOSTO) is not recommended for patients with creatinine clearance less than 35 mL/min because of a lack of experience in renal failure (FDA FOSAMAX label, sections 5.6, 8.6 and 12.3; FDA BINOSTO label, section 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary. As there is evidence that alendronate is not metabolized or excreted in the bile, no studies were conducted in patients with hepatic impairment (FDA FOSAMAX label, sections 8.7 and 12.3; FDA BINOSTO label, section 8.7).",
+    "administration_instructions": "Oral. Take upon arising for the day, at least 30 minutes before the first food, beverage or medication of the day, with plain water only. Swallow the tablet whole with a full glass of water (6-8 ounces) to facilitate delivery to the stomach and reduce esophageal irritation; do not chew or suck on the tablet because of the potential for oropharyngeal ulceration. Do not take at bedtime or before arising, and do not lie down for at least 30 minutes after taking alendronate and until after the first food of the day. Wait at least 30 minutes before taking any other oral medication, including calcium supplements, antacids or oral products containing multivalent cations. If a once-weekly dose is missed, take one dose on the morning after remembering, do not take two doses on the same day, and return to the original schedule (FDA FOSAMAX label, sections 2.6, 2.8, 7.1 and 17). BINOSTO: dissolve one effervescent tablet in approximately half a glass (4 oz) of plain room temperature water, wait at least 5 minutes after the effervescence stops, stir the solution for approximately 10 seconds and consume at least 30 minutes before the first food, beverage or medication of the day; do not use mineral or flavoured water, do not swallow the undissolved tablet and do not chew it or allow it to dissolve in the mouth (FDA BINOSTO label, sections 2.3 and 17). Storage: FOSAMAX tablets in a well-closed container at room temperature, 15 to 30 degrees C (59 to 86 degrees F) (FDA FOSAMAX label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA FOSAMAX (alendronate sodium) label, sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA FOSAMAX label, sections 1.1-1.5; FDA BINOSTO (alendronate sodium) effervescent label, sections 1.1 and 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA FOSAMAX label, section 4; FDA BINOSTO label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA FOSAMAX label, sections 5.1-5.5, 6, 6.1 (Tables 1-4) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA FOSAMAX label, sections 2.1-2.5 and 8.5; FDA BINOSTO label, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA FOSAMAX label, sections 7.1-7.3 and 12.3; FDA BINOSTO label, section 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA FOSAMAX label, sections 2.5, 5.2, 5.4, 5.5, 5.6, 5.7 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA FOSAMAX label, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA FOSAMAX label, section 5 and subsections 5.1-5.7; FDA BINOSTO label, section 5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA FOSAMAX label, sections 1.6, 2.7, 2.8 and 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA FOSAMAX label, sections 5.1, 5.3, 5.4, 5.5 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA FOSAMAX label, sections 2.6, 7.1 and 12.3; FDA BINOSTO label, section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA FOSAMAX label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA FOSAMAX label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA FOSAMAX label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA FOSAMAX label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA FOSAMAX label, sections 1.6, 2.6, 2.7, 5.5, 5.6, 8.6, 12.3, 13.2 and 17; FDA BINOSTO label, section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FOSAMAX (alendronate sodium) 70 mg tablet label; BINOSTO (alendronate sodium) effervescent tablet label (DB row lists 'Binosto')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09765234-01bc-40f7-b9bb-c167056f3909"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in the FOSAMAX or BINOSTO labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA FOSAMAX label, sections 5.6, 8.6 and 12.3; FDA BINOSTO label, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA FOSAMAX label, sections 8.7 and 12.3; FDA BINOSTO label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA FOSAMAX label, sections 2.6, 2.8, 7.1, 16 and 17; FDA BINOSTO label, sections 2.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses the PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; FOSAMAX is not indicated in pediatric patients; narrative provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the FOSAMAX or BINOSTO labels)"
+  ],
+  "notes": "The table stores this agent as 'Alendronate'. The US labels use 'alendronate sodium' for the tablet (FOSAMAX) and the effervescent tablet (BINOSTO); alendronic acid is the INN/BAN name for the same active moiety. The DB row brand_names lists only 'Binosto', but FOSAMAX is the reference oral tablet and its label covers the wider indication set (prevention of osteoporosis, glucocorticoid-induced osteoporosis, Paget's disease) that BINOSTO's label does not, so both labels are cited here. FOSAMAX is now marketed only as 70 mg tablets and the 70 mg oral solution is no longer FOSAMAX-branded, although the label still lists the oral solution as a dosing option. There is no boxed warning in either label. The DB row drug_class is null; this draft does not assign a class."
+}

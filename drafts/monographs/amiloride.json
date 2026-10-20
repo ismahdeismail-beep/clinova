@@ -1,0 +1,212 @@
+{
+  "name": "Amiloride",
+  "existing_id": "f2994df0-2b58-489b-b1c9-82e77a65c866",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amiloride HCl is a potassium-conserving (antikaliuretic) drug that is a pyrazine-carbonyl-guanidine chemically unrelated to other known antikaliuretic or diuretic agents. It possesses weak (compared with thiazide diuretics) natriuretic, diuretic and antihypertensive activity, and these effects have been partially additive to the effects of thiazide diuretics in some clinical studies. Amiloride exerts its potassium-sparing effect through inhibition of sodium reabsorption at the distal convoluted tubule, cortical collecting tubule and collecting duct; this decreases the net negative potential of the tubular lumen and reduces both potassium and hydrogen secretion and their subsequent excretion, which accounts in large part for the potassium-sparing action. Amiloride is not an aldosterone antagonist and its effects are seen even in the absence of aldosterone, and it has potassium-conserving activity in patients receiving kaliuretic-diuretic agents (FDA label, Amiloride Hydrochloride Tablets USP, DESCRIPTION and CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Adjunctive treatment with thiazide diuretics or other kaliuretic-diuretic agents in congestive heart failure or hypertension to help restore normal serum potassium levels in patients who develop hypokalemia on the kaliuretic diuretic (FDA label, Amiloride Hydrochloride Tablets USP, INDICATIONS AND USAGE)",
+      "Adjunctive treatment with thiazide diuretics or other kaliuretic-diuretic agents to prevent the development of hypokalemia in patients who would be exposed to particular risk if hypokalemia developed, for example digitalised patients or patients with significant cardiac arrhythmias (FDA label, Amiloride Hydrochloride Tablets USP, INDICATIONS AND USAGE)",
+      "The use of potassium-conserving agents is often unnecessary in patients receiving diuretics for uncomplicated essential hypertension when such patients have a normal diet, and amiloride has little additive diuretic or antihypertensive effect when added to a thiazide diuretic (FDA label, Amiloride Hydrochloride Tablets USP, INDICATIONS AND USAGE)",
+      "Amiloride should rarely be used alone: it has weak diuretic and antihypertensive effects, and when potassium-sparing diuretics including amiloride are used as single agents the risk of hyperkalemia is approximately 10%; amiloride should be used alone only when persistent hypokalemia has been documented and only with careful titration of the dose and close monitoring of serum electrolytes (FDA label, Amiloride Hydrochloride Tablets USP, INDICATIONS AND USAGE)",
+      "Fixed combination with hydrochlorothiazide: indicated in patients with hypertension or congestive heart failure who develop hypokalemia when thiazides or other kaliuretic diuretics are used alone, or in whom maintenance of normal serum potassium levels is considered to be clinically important, e.g. digitalised patients or patients with significant cardiac arrhythmias; the fixed combination may also be used alone or as an adjunct to other antihypertensive drugs such as methyldopa or beta blockers, and is not indicated for the initial therapy of edema or hypertension except in individuals in whom the development of hypokalemia cannot be risked (FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, INDICATIONS AND USAGE)",
+      "Kenya Essential Medicines List 2023 lists amiloride tablet, 5 mg (as HCl), at level of use 4 in the diuretics section (KEML 2023, section 18.1)"
+    ],
+    "contraindications": [
+      "Hyperkalemia: amiloride should not be used in the presence of elevated serum potassium levels (greater than 5.5 mEq per liter) (FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS)",
+      "Antikaliuretic therapy or potassium supplementation: amiloride should not be given to patients receiving other potassium-conserving agents such as spironolactone or triamterene, and potassium supplementation in the form of medication, potassium-containing salt substitutes or a potassium-rich diet should not be used with amiloride except in severe and/or refractory cases of hypokalemia (FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS)",
+      "Impaired renal function: anuria, acute or chronic renal insufficiency, and evidence of diabetic nephropathy are contraindications to the use of amiloride; patients with evidence of renal functional impairment (BUN over 30 mg per 100 mL or serum creatinine over 1.5 mg per 100 mL) or diabetes mellitus should not receive the drug without careful, frequent and continuing monitoring of serum electrolytes, creatinine and BUN levels (FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS)",
+      "Hypersensitivity to amiloride (FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Hyperkalemia (serum potassium greater than 5.5 mEq per liter) is the principal adverse effect and is potentially fatal if uncorrected; it occurs commonly (about 10%) when amiloride is used without a kaliuretic diuretic, and the incidence is greater in renal impairment, diabetes mellitus (with or without recognised renal insufficiency) and in the elderly (FDA label, WARNINGS - Hyperkalemia)",
+      "Reported in more than 1% of patients (837 patients treated with amiloride HCl in US clinical studies), with the most frequent being headache, nausea/anorexia, diarrhoea and vomiting (occurring in 3% to 8% of patients) and elevated serum potassium levels (greater than 5.5 mEq per liter) (FDA label, ADVERSE REACTIONS)",
+      "Reported in 1% or less of patients: weakness, fatigability, back pain, chest pain, neck/shoulder ache, pain in extremities, angina pectoris, orthostatic hypotension, arrhythmia, palpitation, abdominal pain, gas pain, appetite changes, constipation, jaundice, GI bleeding, abdominal fullness, GI disturbance, thirst, heartburn, flatulence, dyspepsia, skin rash, itching, dryness of mouth, pruritus, alopecia, muscle cramps, joint pain, leg ache, dizziness, encephalopathy, paresthesia, tremors, vertigo, nervousness, mental confusion, insomnia, decreased libido, depression, somnolence, cough, dyspnea, shortness of breath, visual disturbances, nasal congestion, tinnitus, increased intraocular pressure, impotence, polyuria, dysuria, urinary frequency, bladder spasms and gynecomastia (FDA label, ADVERSE REACTIONS)",
+      "Nausea/anorexia, abdominal pain, flatulence and mild skin rash are probably related to amiloride; minor adverse reactions were reported relatively frequently (about 20%) but the relationship of many of the reports to amiloride is uncertain and the overall frequency was similar in hydrochlorothiazide-treated groups (FDA label, ADVERSE REACTIONS)",
+      "Reported where a causal relationship could not be established: activation of probable pre-existing peptic ulcer, aplastic anemia, neutropenia and abnormal liver function (FDA label, ADVERSE REACTIONS - Causal Relationship Unknown)"
+    ],
+    "dosage": {
+      "adult": "Amiloride HCl should be administered with food. One 5 mg tablet daily should be added to the usual antihypertensive or diuretic dosage of a kaliuretic diuretic; the dosage may be increased to 10 mg per day if necessary. More than two 5 mg tablets daily usually are not needed and there is little controlled experience with such doses; if persistent hypokalemia is documented with 10 mg, the dose can be increased to 15 mg and then 20 mg, with careful monitoring of electrolytes. In treating patients with congestive heart failure after an initial diuresis has been achieved, potassium loss may also decrease and the need for amiloride should be re-evaluated; dosage adjustment may be necessary and maintenance therapy may be on an intermittent basis. If it is necessary to use amiloride alone, the starting dosage is one 5 mg tablet daily, which may be increased to 10 mg per day if necessary (FDA label, Amiloride Hydrochloride Tablets USP, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Clinical studies of amiloride HCl did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy. This drug is known to be substantially excreted by the kidney and the risk of toxic reactions may be greater in patients with impaired renal function, so care should be taken in dose selection and it may be useful to monitor renal function (FDA label, GERIATRIC USE). The risk of hyperkalemia with amiloride is greater in the elderly (FDA label, WARNINGS - Hyperkalemia).",
+      "paediatric": "Safety and effectiveness of amiloride in pediatric patients have not been established (FDA label, PEDIATRIC USE)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Angiotensin-converting enzyme inhibitors, angiotensin II receptor antagonists, cyclosporine and tacrolimus: the risk of hyperkalemia may be increased when these agents are given concomitantly with amiloride, so if concomitant use is indicated because of demonstrated hypokalemia they should be used with caution and with frequent monitoring of serum potassium (FDA label, WARNINGS - Hyperkalemia and PRECAUTIONS - Drug Interactions)",
+      "Other potassium-conserving agents (spironolactone, triamterene) and potassium supplementation, including potassium-containing salt substitutes and a potassium-rich diet: such concomitant therapy can be associated with rapid increases in serum potassium and is contraindicated except in severe and/or refractory cases of hypokalemia, where careful monitoring of serum potassium is necessary (FDA label, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation)",
+      "Lithium: lithium generally should not be given with diuretics because they reduce its renal clearance and add a high risk of lithium toxicity; the circulars for lithium preparations should be read before such concomitant therapy (FDA label, PRECAUTIONS - Drug Interactions)",
+      "Non-steroidal anti-inflammatory agents: an NSAID can reduce the diuretic, natriuretic and antihypertensive effects of loop, potassium-sparing and thiazide diuretics, so the patient should be observed closely to determine whether the desired diuretic effect is obtained; since indomethacin and potassium-sparing diuretics including amiloride may each be associated with increased serum potassium levels, the potential effects on potassium kinetics and renal function should be considered when these agents are administered concurrently (FDA label, PRECAUTIONS - Drug Interactions)"
+    ],
+    "monitoring": "Monitor serum potassium levels carefully in any patient receiving amiloride, particularly when it is first introduced, at the time of diuretic dosage adjustments, and during any illness that could affect renal function, because mild hyperkalemia is not usually associated with an abnormal ECG (FDA label, WARNINGS - Hyperkalemia). In diabetic patients, serum electrolytes and renal function must be monitored frequently, and amiloride should be avoided if possible; it should be discontinued at least 3 days before glucose tolerance testing (FDA label, WARNINGS - Diabetes Mellitus). In severely ill patients in whom respiratory or metabolic acidosis may occur, such as those with cardiopulmonary disease or poorly controlled diabetes, frequent monitoring of acid-base balance is necessary because shifts in acid-base balance alter the ratio of extracellular/intracellular potassium and the development of acidosis may be associated with rapid increases in serum potassium (FDA label, WARNINGS - Metabolic or Respiratory Acidosis). Monitor serum electrolytes, BUN and creatinine: hyponatremia, hypochloremia and increases in BUN are reported when amiloride is used with other diuretics, and patients with evidence of renal functional impairment (BUN over 30 mg per 100 mL or serum creatinine over 1.5 mg per 100 mL) or diabetes mellitus should not receive the drug without careful, frequent and continuing monitoring of serum electrolytes, creatinine and BUN (FDA label, CONTRAINDICATIONS - Impaired Renal Function and PRECAUTIONS - General). In patients with pre-existing severe liver disease, monitor for hepatic encephalopathy (tremors, confusion, coma) and increased jaundice, which have been reported in association with diuretics including amiloride (FDA label, PRECAUTIONS - General).",
+    "patient_counselling": "Advise the patient to take amiloride with food, as directed (FDA label, DOSAGE AND ADMINISTRATION). Explain that amiloride is used together with a thiazide or other kaliuretic diuretic to prevent the body from losing too much potassium, and that it is important to attend the blood tests arranged to check potassium, sodium, kidney function and blood urea nitrogen, especially at the start of treatment, whenever the diuretic dose changes, and during any illness that could affect kidney function (FDA label, WARNINGS - Hyperkalemia). Tell the patient not to use potassium-containing salt substitutes or potassium supplements, and not to add large amounts of potassium-rich foods (for example bananas) unless advised, and not to take other potassium-sparing diuretics such as spironolactone or triamterene (FDA label, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation). Advise the patient to report promptly weakness, tiredness, tingling or numbness, palpitations, slow heartbeat, fainting or swelling of the limbs, as these can be signs of too much potassium (FDA label, WARNINGS - Hyperkalemia). Advise the patient to report any increase in thirst, frequent urination, dizziness on standing or muscle cramps, and to report vomiting or diarrhoea, which can alter potassium and fluid balance (FDA label, PRECAUTIONS - General). If glucose tolerance testing is planned, the patient should be told that amiloride must be discontinued at least 3 days before the test (FDA label, WARNINGS - Diabetes Mellitus).",
+    "warnings": [
+      "Hyperkalemia: like other potassium-conserving agents, amiloride may cause hyperkalemia (serum potassium greater than 5.5 mEq per liter) which, if uncorrected, is potentially fatal. It occurs commonly (about 10%) when amiloride is used without a kaliuretic diuretic, and the incidence is greater in patients with renal impairment, diabetes mellitus (with or without recognised renal insufficiency) and in the elderly; when amiloride is used concomitantly with a thiazide diuretic in patients without these complications, the risk is reduced to about 1-2% (FDA label, WARNINGS - Hyperkalemia)",
+      "Treatment of hyperkalemia: if hyperkalemia occurs, the drug should be discontinued immediately; if the serum potassium level exceeds 6.5 mEq per liter, active measures should be taken to reduce it, including intravenous sodium bicarbonate solution, oral or parenteral glucose with a rapid-acting insulin preparation, and if needed a cation exchange resin such as sodium polystyrene sulfonate given orally or by enema; patients with persistent hyperkalemia may require dialysis (FDA label, WARNINGS - Treatment of hyperkalemia)",
+      "Diabetes mellitus: hyperkalemia has been reported with the use of all potassium-conserving diuretics including amiloride, even in patients without evidence of diabetic nephropathy, so amiloride should be avoided if possible in diabetic patients and, if used, serum electrolytes and renal function must be monitored frequently; amiloride should be discontinued at least 3 days before glucose tolerance testing (FDA label, WARNINGS - Diabetes Mellitus)",
+      "Metabolic or respiratory acidosis: antikaliuretic therapy should be instituted only with caution in severely ill patients in whom respiratory or metabolic acidosis may occur, such as patients with cardiopulmonary disease or poorly controlled diabetes; if amiloride is given to these patients, frequent monitoring of acid-base balance is necessary, because shifts in acid-base balance alter the ratio of extracellular/intracellular potassium and the development of acidosis may be associated with rapid increases in serum potassium (FDA label, WARNINGS - Metabolic or Respiratory Acidosis)"
+    ],
+    "precautions": [
+      "Electrolyte imbalance and BUN increases: hyponatremia and hypochloremia may occur when amiloride is used with other diuretics, and increases in BUN have been reported; these increases usually accompany vigorous fluid elimination, especially when diuretic therapy was used in seriously ill patients such as those with hepatic cirrhosis with ascites and metabolic alkalosis, or those with resistant edema, so careful monitoring of serum electrolytes and BUN is important in these patients (FDA label, PRECAUTIONS - General)",
+      "In patients with pre-existing severe liver disease, hepatic encephalopathy (manifested by tremors, confusion and coma) and increased jaundice have been reported in association with diuretics, including amiloride (FDA label, PRECAUTIONS - General)",
+      "Do not combine with other potassium-conserving agents such as spironolactone or triamterene, or with potassium supplementation, because of the risk of rapid increases in serum potassium (FDA label, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation)",
+      "Because amiloride is not metabolised by the liver, drug accumulation is not anticipated in patients with hepatic dysfunction, but accumulation can occur if the hepatorenal syndrome develops (FDA label, CLINICAL PHARMACOLOGY)"
+    ],
+    "serious_adverse_reactions": [
+      "Hyperkalemia (serum potassium greater than 5.5 mEq per liter), which is potentially fatal if uncorrected and may manifest as paresthesias, muscular weakness, fatigue, flaccid paralysis of the extremities, bradycardia, shock and ECG abnormalities (FDA label, WARNINGS - Hyperkalemia)",
+      "Renal impairment with increased BUN, decreased creatinine clearance and renal insufficiency in patients with impaired renal function given potassium-conserving therapy (FDA label, CONTRAINDICATIONS - Impaired Renal Function)",
+      "Hepatic encephalopathy (tremors, confusion, coma) and increased jaundice in patients with pre-existing severe liver disease receiving diuretics including amiloride (FDA label, PRECAUTIONS - General)",
+      "Aplastic anemia, neutropenia and activation of probable pre-existing peptic ulcer, reported where a causal relationship could not be established (FDA label, ADVERSE REACTIONS - Causal Relationship Unknown)"
+    ],
+    "food_interactions": [
+      "Potassium supplementation in the form of medication, potassium-containing salt substitutes or a potassium-rich diet should not be used with amiloride, except in severe and/or refractory cases of hypokalemia, because such concomitant therapy can be associated with rapid increases in serum potassium levels; if potassium supplementation is used, careful monitoring of the serum potassium level is necessary (FDA label, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation)"
+    ],
+    "pregnancy_category": "B (FDA label, Amiloride Hydrochloride Tablets USP, PRECAUTIONS - Pregnancy, which states 'Pregnancy Category B')",
+    "pregnancy_guidance": "Teratogenicity studies with amiloride HCl in rabbits and mice given 20 and 25 times the maximum human dose respectively revealed no evidence of harm to the fetus, although studies showed that the drug crossed the placenta in modest amounts. Reproduction studies in rats at 20 times the expected maximum daily dose for humans showed no evidence of impaired fertility. At approximately 5 or more times the expected maximum daily dose for humans, some toxicity was seen in adult rats and rabbits and a decrease in rat pup growth and survival occurred. There are, however, no adequate and well-controlled studies in pregnant women, and because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed (FDA label, Amiloride Hydrochloride Tablets USP, PRECAUTIONS - Pregnancy).",
+    "lactation_guidance": "Studies in rats have shown that amiloride is excreted in milk in concentrations higher than those found in blood, but it is not known whether amiloride is excreted in human milk. Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from amiloride HCl, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (FDA label, Amiloride Hydrochloride Tablets USP, NURSING MOTHERS).",
+    "overdose": "No data are available in regard to overdosage in humans. The oral LD50 of amiloride HCl (calculated as the base) is 56 mg/kg in mice and 36 to 85 mg/kg in rats depending on the strain, and it is not known whether the drug is dialyzable. The most likely signs and symptoms to be expected with overdosage are dehydration and electrolyte imbalance, which can be treated by established procedures; therapy with amiloride HCl should be discontinued and the patient observed closely. There is no specific antidote: emesis should be induced or gastric lavage performed, treatment is symptomatic and supportive, and if hyperkalemia occurs, active measures should be taken to reduce the serum potassium levels (FDA label, OVERDOSAGE).",
+    "pharmacokinetics": "Amiloride usually begins to act within 2 hours after an oral dose; its effect on electrolyte excretion reaches a peak between 6 and 10 hours and lasts about 24 hours, peak plasma levels are obtained in 3 to 4 hours, and the plasma half-life varies from 6 to 9 hours. Effects on electrolytes increase with single doses of amiloride HCl up to approximately 15 mg. Amiloride HCl is not metabolised by the liver but is excreted unchanged by the kidneys: about 50 percent of a 20 mg dose is excreted in the urine and 40 percent in the stool within 72 hours. Amiloride has little effect on glomerular filtration rate or renal blood flow. Because it is not metabolised by the liver, drug accumulation is not anticipated in patients with hepatic dysfunction, but accumulation can occur if the hepatorenal syndrome develops (FDA label, Amiloride Hydrochloride Tablets USP, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Amiloride is not an aldosterone antagonist: its potassium-sparing effect is independent of aldosterone, so it retains activity in patients with low or absent aldosterone (FDA label, CLINICAL PHARMACOLOGY).",
+      "The hyperkalemia risk depends on whether a kaliuretic diuretic is co-prescribed: about 10% when amiloride is used without a kaliuretic diuretic, reduced to about 1-2% when a thiazide is used in patients without renal impairment, diabetes or advanced age (FDA label, WARNINGS - Hyperkalemia).",
+      "Amiloride should rarely be used alone; it has weak diuretic and antihypertensive effects and is usually added to a thiazide or other kaliuretic diuretic (FDA label, INDICATIONS AND USAGE).",
+      "Because it is not hepatically metabolised, amiloride is one of the few diuretics that does not require adjustment in isolated hepatic impairment, although accumulation can occur if hepatorenal syndrome develops (FDA label, CLINICAL PHARMACOLOGY).",
+      "The serum potassium threshold is the safety pivot: do not start if potassium is above 5.5 mEq/L, and if it rises the drug is stopped immediately, with active measures instituted above 6.5 mEq/L (FDA label, CONTRAINDICATIONS and WARNINGS).",
+      "Amiloride is also available as a fixed combination with hydrochlorothiazide, which is dosed one tablet daily, increased to two tablets daily if necessary (FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, DOSAGE AND ADMINISTRATION)."
+    ],
+    "brand_names": [],
+    "black_box_warnings": null,
+    "renal_dose_adjustment": "The label does not provide a renal dose reduction; instead renal impairment is a contraindication. Anuria, acute or chronic renal insufficiency, and evidence of diabetic nephropathy are contraindications, and patients with evidence of renal functional impairment (BUN over 30 mg per 100 mL or serum creatinine over 1.5 mg per 100 mL) or diabetes mellitus should not receive the drug without careful, frequent and continuing monitoring of serum electrolytes, creatinine and BUN, because potassium retention associated with antikaliuretic agents is accentuated in the presence of renal impairment and may result in the rapid development of hyperkalemia (FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS - Impaired Renal Function). Since the drug is substantially excreted by the kidney, the risk of toxic reactions may be greater in patients with impaired renal function, and renal function should be monitored, particularly in the elderly (FDA label, GERIATRIC USE).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is required: amiloride is not metabolised by the liver but is excreted unchanged by the kidneys, so drug accumulation is not anticipated in patients with hepatic dysfunction, although accumulation can occur if the hepatorenal syndrome develops. Care is nonetheless required in patients with pre-existing severe liver disease, in whom hepatic encephalopathy and increased jaundice have been reported with diuretics including amiloride, and with other diuretics in seriously ill patients (FDA label, CLINICAL PHARMACOLOGY and PRECAUTIONS - General).",
+    "administration_instructions": "Oral administration, always with food. Each yellow compressed tablet contains 5 mg of anhydrous amiloride HCl (calculated on the anhydrous basis) and is debossed 'Par 117'; tablets are available in bottles of 100 and 1000. Store at controlled room temperature, 15 to 30 degrees C (59 to 86 degrees F), and dispense in a tight, light-resistant container as defined in the USP (FDA label, Amiloride Hydrochloride Tablets USP, HOW SUPPLIED and DOSAGE AND ADMINISTRATION). The fixed combination product amiloride hydrochloride and hydrochlorothiazide tablets is also administered with food (FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, DOSAGE AND ADMINISTRATION)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP (Par Health USA), DESCRIPTION and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, INDICATIONS AND USAGE; FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP (Teva), INDICATIONS AND USAGE; Kenya Essential Medicines List 2023, section 18.1 Amiloride tablet",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS (Hyperkalemia; Antikaliuretic Therapy or Potassium Supplementation; Impaired Renal Function; Hypersensitivity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, ADVERSE REACTIONS and WARNINGS - Hyperkalemia",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, DOSAGE AND ADMINISTRATION, PEDIATRIC USE and GERIATRIC USE; FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation, WARNINGS - Hyperkalemia and PRECAUTIONS - Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, WARNINGS (Hyperkalemia, Diabetes Mellitus, Metabolic or Respiratory Acidosis), CONTRAINDICATIONS - Impaired Renal Function, PRECAUTIONS - General and GERIATRIC USE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, DOSAGE AND ADMINISTRATION, WARNINGS (Hyperkalemia, Diabetes Mellitus), CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation and PRECAUTIONS - General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, WARNINGS (Hyperkalemia, Treatment of hyperkalemia, Diabetes Mellitus, Metabolic or Respiratory Acidosis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, PRECAUTIONS - General and CLINICAL PHARMACOLOGY; CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, WARNINGS - Hyperkalemia, CONTRAINDICATIONS - Impaired Renal Function, PRECAUTIONS - General and ADVERSE REACTIONS - Causal Relationship Unknown",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS - Antikaliuretic Therapy or Potassium Supplementation (potassium-containing salt substitutes and potassium-rich diet)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, PRECAUTIONS - Pregnancy (Pregnancy Category B)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, PRECAUTIONS - Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, NURSING MOTHERS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CLINICAL PHARMACOLOGY, INDICATIONS AND USAGE, CONTRAINDICATIONS, WARNINGS - Hyperkalemia and GERIATRIC USE; FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "brand_names",
+      "ref": "No branded amiloride product is listed on DailyMed; the amiloride hydrochloride tablets on DailyMed are generic products (Par Health USA, and the amiloride/hydrochlorothiazide combination from Teva)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b2c581a-f955-4a8e-bf85-e768e903fd10"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the Amiloride Hydrochloride Tablets USP label; the hyperkalemia risk is presented in WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CONTRAINDICATIONS - Impaired Renal Function and GERIATRIC USE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, CLINICAL PHARMACOLOGY and PRECAUTIONS - General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Amiloride Hydrochloride Tablets USP, HOW SUPPLIED and DOSAGE AND ADMINISTRATION; FDA label, Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0cc2d44-436a-47e8-a890-589882fff4c4"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023 (Ministry of Health, Republic of Kenya), section 18.1 Amiloride tablet 5 mg (as HCl) and level of use",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients have not been established)",
+    "brand_names (no branded amiloride product is listed on DailyMed; the legacy brands Midamor and Moduret are not DailyMed listings and are therefore omitted)",
+    "black_box_warnings (no boxed warning appears in the Amiloride Hydrochloride Tablets USP label; the hyperkalemia risk is presented in WARNINGS)"
+  ],
+  "notes": "The table stores this agent as 'Amiloride' with brand_names ['Amiloride Hydrochloride']; the US label is for amiloride hydrochloride (the hydrochloride salt), and every amiloride product on DailyMed is generic, so brand_names is left empty rather than repeating a generic salt name. Content is sourced from the FDA label for Amiloride Hydrochloride Tablets USP (Par Health USA, revised 06/2026) and the fixed combination label for Amiloride Hydrochloride and Hydrochlorothiazide Tablets USP (Teva) for the combination-specific indications and dosing. Kenya Essential Medicines List 2023 is included for national context (amiloride tablet 5 mg as HCl, level of use 4). FDA pregnancy category B is obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and is reported only because the label still states it. Clinically the important class-level facts are that amiloride is an antikaliuretic (not an aldosterone antagonist) whose principal risk is hyperkalemia, and that it is contraindicated in renal impairment, anuria and diabetic nephropathy rather than being renally dose-adjusted."
+}

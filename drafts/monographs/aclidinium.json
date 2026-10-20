@@ -1,0 +1,203 @@
+{
+  "name": "Aclidinium",
+  "existing_id": "14ffb75a-24bc-488c-9e2d-a27d106c685b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aclidinium bromide is a long-acting antimuscarinic agent, also described as an anticholinergic. It is a synthetic quaternary ammonium compound (chemical name 1-azoniabicyclo[2.2.2]octane, 3-[(hydroxydi-2-thienylacetyl)oxy]-1-(3-phenoxypropyl)-, bromide, (3R)-; molecular formula C26H30NO4S2Br, molecular mass 564.56). It has similar affinity for the muscarinic receptor subtypes M1 to M5. In the airways it exerts its effect through inhibition of the M3 receptor on airway smooth muscle, producing bronchodilation. The antagonism is competitive and reversible, and in preclinical in vitro and in vivo studies prevention of acetylcholine-induced bronchoconstriction was dose-dependent and lasted longer than 24 hours. The bronchodilation following inhalation of aclidinium bromide is predominantly a site-specific effect (FDA Tudorza Pressair label, sections 11 and 12.1).",
+    "indications": [
+      "Aclidinium bromide monotherapy (TUDORZA PRESSAIR inhalation powder): maintenance treatment of patients with chronic obstructive pulmonary disease (COPD) (FDA Tudorza Pressair label, section 1).",
+      "Aclidinium in fixed combination with formoterol fumarate (DUAKLIR PRESSAIR in the US; Duaklir Genuair in the EU): maintenance treatment of patients with COPD, not indicated for the relief of acute bronchospasm or for the treatment of asthma (FDA Duaklir Pressair label, section 1; EMA Duaklir Genuair SmPC, section 4.1)."
+    ],
+    "contraindications": [
+      "Severe hypersensitivity to milk proteins, because the dry powder formulation uses lactose monohydrate, which may contain milk proteins, as the carrier (FDA Tudorza Pressair label, section 4).",
+      "Hypersensitivity to aclidinium bromide or any of the excipients (FDA Tudorza Pressair label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence at least 3% and greater than placebo): headache (6.6% vs 5.0% placebo), nasopharyngitis (5.5% vs 3.9%) and cough (3.0% vs 2.2%) (FDA Tudorza Pressair label, section 6.1).",
+      "Adverse reactions occurring in at least 1% of aclidinium-treated patients and more often than on placebo in pooled 3-month and 6-month trials: diarrhea 2.7%, sinusitis 1.7%, rhinitis 1.6%, toothache 1.1%, fall 1.1% and vomiting 1.1% (FDA Tudorza Pressair label, section 6.1).",
+      "Adverse reactions observed at less than 1% incidence: diabetes mellitus, dry mouth, first-degree AV block, osteoarthritis, cardiac failure and cardio-respiratory arrest (FDA Tudorza Pressair label, section 6.1).",
+      "Postmarketing: immediate hypersensitivity reactions including anaphylaxis, angioedema (swelling of the lips, tongue or throat), urticaria, rash, bronchospasm and itching; also nausea, dysphonia, blurred vision, urinary retention, tachycardia and stomatitis (FDA Tudorza Pressair label, section 6.2).",
+      "Paradoxical bronchospasm, which may be triggered by any inhaled medicine including aclidinium (FDA Tudorza Pressair label, section 5.2).",
+      "Worsening of narrow-angle glaucoma and worsening of urinary retention (FDA Tudorza Pressair label, sections 5.3 and 5.4)."
+    ],
+    "dosage": {
+      "adult": "Aclidinium bromide monotherapy (TUDORZA PRESSAIR): the recommended dose is one oral inhalation of 400 mcg, twice daily, in the morning and evening approximately 12 hours apart. For oral inhalation only (FDA Tudorza Pressair label, section 2). Aclidinium/formoterol combination (DUAKLIR PRESSAIR, Duaklir Genuair): one oral inhalation of 400 mcg aclidinium bromide / 12 mcg formoterol fumarate per actuation, twice daily (once in the morning and once in the evening); do not take more than one inhalation twice daily (FDA Duaklir Pressair label, section 2; EMA Duaklir Genuair SmPC, section 4.2).",
+      "geriatric": "Of 636 COPD patients exposed to TUDORZA PRESSAIR 400 mcg twice daily for up to 24 weeks, 197 were under 60 years, 272 were 60 to under 70 years and 167 were 70 years or older. No overall differences in safety or effectiveness were observed versus younger subjects, and based on available data no adjustment of dosage in geriatric patients is warranted (FDA Tudorza Pressair label, section 8.5). For the aclidinium/formoterol combination, no dose adjustments are required in elderly patients (EMA Duaklir Genuair SmPC, section 4.2).",
+      "paediatric": "COPD does not normally occur in children and the safety and effectiveness of TUDORZA PRESSAIR in paediatric patients have not been established (FDA Tudorza Pressair label, section 8.4). The safety and effectiveness of the aclidinium/formoterol combination in paediatric patients have also not been established (FDA Duaklir Pressair label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Other anticholinergic-containing drugs: aclidinium may interact additively with concomitant anticholinergic medications; avoid co-administration as this may increase anticholinergic effects (FDA Tudorza Pressair label, sections 7 and 7.2).",
+      "Sympathomimetics (short-acting beta2 agonists), methylxanthines and oral and inhaled steroids: in clinical studies concurrent administration of aclidinium bromide with these commonly used COPD drugs showed no increase in adverse drug reactions (FDA Tudorza Pressair label, section 7.1).",
+      "No formal drug interaction studies were performed with aclidinium because in vitro studies suggest limited potential for CYP450-related metabolic interactions; aclidinium bromide and its major metabolites did not inhibit CYP450 isoenzymes at concentrations up to 1,000-fold higher than the maximum expected plasma concentration at the therapeutic dose (FDA Tudorza Pressair label, sections 7 and 12.3).",
+      "For the aclidinium/formoterol combination: beta-blockers, non-potassium-sparing diuretics, monoamine oxidase inhibitors, tricyclic antidepressants and other QTc-prolonging drugs, and other anticholinergics (FDA Duaklir Pressair label, sections 7.3 to 7.6)."
+    ],
+    "monitoring": "The Tudorza Pressair labelling specifies no routine laboratory monitoring. Clinically, patients should be asked to report paradoxical bronchospasm, eye pain or discomfort, blurred vision, visual halos or coloured images with red eyes (possible acute narrow-angle glaucoma), difficulty passing urine or painful urination (possible prostatic hyperplasia or bladder-neck obstruction), and any sign of immediate hypersensitivity; worsening of COPD symptoms should prompt reassessment (FDA Tudorza Pressair label, sections 5.2 to 5.5 and 17). For the aclidinium/formoterol combination, monitor potassium and blood glucose, as hypokalaemia and hyperglycaemia are recognised adverse effects of the LABA component (FDA Duaklir Pressair label, section 5.8).",
+    "patient_counselling": "Tell patients that TUDORZA PRESSAIR is a twice-daily maintenance bronchodilator and is not a rescue medication; it must not be used for immediate relief of breathing problems (FDA Tudorza Pressair label, section 17). Explain that paradoxical bronchospasm can occur and that the inhaler should be discontinued if it does (section 17). Explain that eye pain or discomfort, blurred vision, visual halos, or coloured images with red eyes may signal acute narrow-angle glaucoma, and that the patient should consult a physician immediately; miotic eye drops alone are not considered effective treatment, and care should be taken not to let the powder enter the eyes as this may blur vision and dilate the pupils (section 17). Explain that difficulty passing urine and dysuria may be symptoms of new or worsening prostatic hyperplasia or bladder outlet obstruction and the patient should consult a physician immediately (section 17). Warn that anaphylaxis, angioedema including swelling of the lips, tongue or throat, urticaria, rash, bronchospasm or itching may occur; the patient should stop treatment at once and consult a physician (section 17). If a dose is missed, take the next dose at the usual time; do not take two doses at one time (section 17). Keep the inhaler in the sealed bag and open it only immediately before use; throw the bag away (section 16).",
+    "warnings": [
+      "Not for acute use: TUDORZA PRESSAIR is a twice-daily maintenance treatment and is not indicated for the initial treatment of acute episodes of bronchospasm (rescue therapy) (FDA Tudorza Pressair label, section 5.1).",
+      "Paradoxical bronchospasm may occur with inhaled medicines including aclidinium; stop treatment and consider other treatments if it occurs (FDA Tudorza Pressair label, section 5.2).",
+      "Worsening of narrow-angle glaucoma may occur; use with caution in patients with narrow-angle glaucoma and instruct patients to consult a physician immediately if it occurs (FDA Tudorza Pressair label, section 5.3).",
+      "Worsening of urinary retention may occur; use with caution in patients with prostatic hyperplasia or bladder-neck obstruction and instruct patients to consult a physician immediately if it occurs (FDA Tudorza Pressair label, section 5.4).",
+      "Immediate hypersensitivity reactions, including anaphylaxis, angioedema, urticaria, rash, bronchospasm and itching, have occurred; discontinue at once and consider alternatives (FDA Tudorza Pressair label, section 5.5).",
+      "For the aclidinium/formoterol combination: not indicated for the relief of acute bronchospasm or for the treatment of asthma, and all of the LABA-associated warnings apply, including deterioration of disease and acute episodes, excessive use, paradoxical bronchospasm, immediate hypersensitivity reactions and cardiovascular effects such as QT prolongation (FDA Duaklir Pressair label, sections 1 and 5)."
+    ],
+    "precautions": [
+      "The inhaler formulation contains lactose monohydrate, which may contain milk proteins; severe hypersensitivity to milk proteins is a contraindication (FDA Tudorza Pressair label, sections 4 and 11).",
+      "Inspect the inhaler dose indicator and discard the PRESSAIR inhaler when the marking '0' with a red background shows in the middle of the dose indicator, when the device is empty and locks out, or 45 days after the date the sealed bag was opened, whichever comes first (FDA Tudorza Pressair label, section 16).",
+      "The amount of drug delivered to the lungs varies with patient factors such as inspiratory flow rate and inspiratory time (FDA Tudorza Pressair label, section 11).",
+      "For the aclidinium/formoterol combination, use with caution in patients with cardiovascular disease, diabetes, hyperthyroidism, seizure disorders or a history of paradoxical bronchospasm, and note that hypokalaemia and hyperglycaemia may occur (FDA Duaklir Pressair label, sections 5.6 to 5.8)."
+    ],
+    "serious_adverse_reactions": [
+      "Immediate hypersensitivity reactions including anaphylaxis and angioedema (FDA Tudorza Pressair label, sections 5.5 and 6.2).",
+      "Paradoxical bronchospasm (FDA Tudorza Pressair label, section 5.2).",
+      "Worsening of narrow-angle glaucoma (FDA Tudorza Pressair label, section 5.3).",
+      "Worsening of urinary retention (FDA Tudorza Pressair label, section 5.4).",
+      "For the aclidinium/formoterol combination, the LABA component is associated with cardiovascular events; in a 52-week safety trial in COPD patients the incidence of major adverse cardiovascular events was 2.4 per 100 patient-years with DUAKLIR PRESSAIR versus 2.8 per 100 patient-years with placebo, hazard ratio 0.89 (95% CI 0.64, 1.23) (FDA Duaklir Pressair label, section 6.1)."
+    ],
+    "food_interactions": [
+      "No food or drink interaction is described in the Tudorza Pressair labelling; the dose is delivered by oral inhalation as a dry powder. The relevant dietary caution is the lactose monohydrate carrier, which may contain milk proteins, making severe milk-protein hypersensitivity a contraindication (FDA Tudorza Pressair label, sections 4 and 11)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate and well-controlled studies of TUDORZA PRESSAIR in pregnant women to inform drug-associated risks, and the estimated background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population the background risk of major birth defects and miscarriage in clinically recognised pregnancies is 2% to 4% and 15% to 20% respectively (FDA Tudorza Pressair label, section 8.1). In animal studies, inhalation administration of aclidinium bromide to pregnant rats and rabbits during organogenesis at 15 and 20 times the maximum recommended human daily inhaled dose showed no adverse developmental effects, but reduced pup weights were seen when pregnant rats continued inhalation administration through lactation at 5 times that dose, and maternal toxicity occurred at inhaled doses of 0.2 mg/kg/day or more (FDA Tudorza Pressair label, section 8.1).",
+    "lactation_guidance": "There are no available data on the effects of TUDORZA PRESSAIR or aclidinium bromide on the breastfed child, on milk production, or on the presence of the drug in human milk. Aclidinium bromide is present in the milk of lactating female rats, and in a rat pharmacokinetic study the maximum concentration of 14C-aclidinium in milk was 10-14 times higher than in plasma. When a drug is present in animal milk it is likely to be present in human milk, so the developmental and health benefits of breastfeeding should be considered alongside the mother's clinical need for aclidinium and any potential adverse effects on the breastfed child (FDA Tudorza Pressair label, section 8.2).",
+    "overdose": "No case of overdose has been reported in clinical studies with TUDORZA PRESSAIR. There were no systemic anticholinergic or other adverse effects following a single inhaled dose of up to 6,000 mcg aclidinium bromide (7.5 times the recommended daily inhaled dose) in 16 healthy volunteers (FDA Tudorza Pressair label, section 10).",
+    "pharmacokinetics": "Absorption: the absolute bioavailability of aclidinium bromide is approximately 6% in healthy volunteers, and following twice-daily oral inhalation of 400 mcg, peak steady-state plasma levels were observed within 10 minutes after inhalation. Distribution: the volume of distribution is approximately 300 L following intravenous administration of 400 mcg. Metabolism: the major route of metabolism is hydrolysis, both chemical and enzymatic by esterases, to alcohol and dithienylglycolic acid derivatives that neither bind to muscarinic receptors nor have pharmacologic activity. Elimination: total clearance was approximately 170 L/h after an intravenous dose in young healthy volunteers; 54% to 65% of radiolabelled dose was excreted in urine and 20% to 33% in faeces, with only 1% excreted as unchanged aclidinium; after dry powder inhalation, urinary excretion of aclidinium is about 0.09% of the dose and the estimated effective half-life is 5 to 8 hours (FDA Tudorza Pressair label, section 12.3).",
+    "clinical_pearls": [
+      "Aclidinium is a maintenance bronchodilator only; it is not a rescue inhaler and does not relieve acute bronchospasm (FDA Tudorza Pressair label, section 5.1).",
+      "The inhaler contains lactose monohydrate, so severe milk-protein allergy is a contraindication, and the powder should be kept out of the eyes because it can blur vision and dilate the pupils (FDA Tudorza Pressair label, sections 4 and 17).",
+      "Anticholinergic additivity means aclidinium should not be co-administered with other anticholinergic-containing drugs such as ipratropium or tiotropium unless the extra benefit is judged to outweigh the risk (FDA Tudorza Pressair label, sections 7 and 7.2).",
+      "Absorption is minimal (about 6% bioavailability) and the drug is rapidly hydrolysed, so systemic exposure is low and clinically significant pharmacokinetic interactions are unlikely (FDA Tudorza Pressair label, section 12.3).",
+      "In a 3-year safety trial of 3,630 patients with moderate to very severe COPD and cardiovascular comorbidity, aclidinium 400 mcg twice daily was non-inferior to placebo for major adverse cardiovascular events, with a hazard ratio of 0.89 (95% CI 0.64, 1.23) (FDA Tudorza Pressair label, section 14.1).",
+      "The brand name recorded against this monograph, DUAKLIR PRESSAIR, refers to the aclidinium/formoterol fixed-dose combination, not to aclidinium monotherapy; the aclidinium-only product is TUDORZA PRESSAIR in the US and Duaklir Genuair is the EU combination brand (FDA Tudorza Pressair and Duaklir Pressair labels; EMA Duaklir Genuair SmPC)."
+    ],
+    "brand_names": [
+      "Tudorza Pressair (aclidinium bromide inhalation powder, 400 mcg, US)",
+      "Duaklir Pressair (aclidinium bromide/formoterol fumarate inhalation powder, US)",
+      "Duaklir Genuair (aclidinium bromide/formoterol fumarate dihydrate inhalation powder, EU)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No adjustment of dosage in renally impaired subjects is warranted. Pharmacokinetics were investigated in subjects with normal renal function and with mild, moderate and severe renal impairment, and no clinically significant differences in aclidinium pharmacokinetics were noted between these populations (FDA Tudorza Pressair label, sections 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "The effects of hepatic impairment on the pharmacokinetics of TUDORZA PRESSAIR were not studied. However, hepatic insufficiency is not expected to have relevant influence on aclidinium bromide pharmacokinetics because it is predominantly metabolised by chemical and enzymatic hydrolysis to products that do not bind to muscarinic receptors (FDA Tudorza Pressair label, sections 8.7 and 12.3). For the aclidinium/formoterol combination, no dose adjustments are required in patients with hepatic impairment (EMA Duaklir Genuair SmPC, section 4.2).",
+    "administration_instructions": "For oral inhalation only. Aclidinium bromide monotherapy: one inhalation of 400 mcg twice daily, in the morning and evening approximately 12 hours apart (FDA Tudorza Pressair label, section 2). Aclidinium/formoterol combination: one inhalation of 400 mcg/12 mcg twice daily; do not take more than one inhalation twice daily (FDA Duaklir Pressair label, section 2). Store TUDORZA PRESSAIR in a dry place at 25 degrees C, with excursions permitted between 15 and 30 degrees C; do not store the inhaler on a vibrating surface. Keep the inhaler inside the sealed bag and open the bag only immediately before use, then throw the bag away. Dispose of the inhaler when the dose indicator shows '0' with a red background, when the device is empty and locks out, or 45 days after opening the sealed bag, whichever comes first. Keep out of reach of children (FDA Tudorza Pressair label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Tudorza Pressair (aclidinium bromide inhalation powder), Covis Pharma, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Tudorza Pressair label, section 1; FDA Duaklir Pressair label, section 1; EMA Duaklir Genuair SmPC, section 4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Tudorza Pressair label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Tudorza Pressair label, sections 5.2 to 5.5, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Tudorza Pressair label, sections 2 and 8.5; FDA Duaklir Pressair label, section 2; EMA Duaklir Genuair SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Tudorza Pressair label, sections 7, 7.1, 7.2 and 12.3; FDA Duaklir Pressair label, sections 7.3 to 7.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Tudorza Pressair label, sections 5.2 to 5.5 and 17; FDA Duaklir Pressair label, section 5.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Tudorza Pressair label, section 17 and Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Tudorza Pressair label, sections 5.1 to 5.5; FDA Duaklir Pressair label, sections 1 and 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Tudorza Pressair label, sections 4, 11 and 16; FDA Duaklir Pressair label, sections 5.6 to 5.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Tudorza Pressair label, sections 5.2 to 5.5 and 6.2; FDA Duaklir Pressair label, section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Tudorza Pressair label, sections 4 and 11 (no food interaction described; lactose/milk-protein carrier)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Tudorza Pressair label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Tudorza Pressair label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Tudorza Pressair label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Tudorza Pressair label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Tudorza Pressair label, sections 4, 5.1, 7, 12.3, 14.1 and 17; FDA Duaklir Pressair label; EMA Duaklir Genuair SmPC",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Tudorza Pressair (DailyMed, aclidinium bromide monotherapy); Duaklir Pressair (DailyMed, aclidinium/formoterol); Duaklir Genuair (EMA EPAR, aclidinium/formoterol dihydrate)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2eba3089-28b4-4190-9fba-2511246cfd16"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Tudorza Pressair or Duaklir Pressair labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Tudorza Pressair label, sections 8.6 and 12.3; EMA Duaklir Genuair SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Tudorza Pressair label, sections 8.7 and 12.3; EMA Duaklir Genuair SmPC, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Tudorza Pressair label, sections 2 and 16; FDA Duaklir Pressair label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen - safety and effectiveness in paediatric patients have not been established)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Aclidinium'. Important data-quality point: the brand name recorded in the row, DUAKLIR PRESSAIR, is the aclidinium bromide plus formoterol fumarate fixed-dose combination, not aclidinium monotherapy; the aclidinium-only product is TUDORZA PRESSAIR in the US (400 mcg per actuation, twice daily) and the EU combination brand is Duaklir Genuair (delivered dose 396 mcg aclidinium bromide equivalent to 340 mcg aclidinium, plus 11.8 mcg formoterol fumarate dihydrate). This monograph is written for aclidinium as the active agent and covers both the monotherapy product and the combination product under clearly labelled sub-entries. Content is drawn from the FDA/DailyMed labels for Tudorza Pressair and Duaklir Pressair and the EMA SmPC for Duaklir Genuair. No FDA letter pregnancy category is stated, so pregnancy_category is null. There is no boxed warning for aclidinium."
+}

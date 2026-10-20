@@ -1,0 +1,211 @@
+{
+  "name": "Acetylcysteine",
+  "existing_id": "91b200f0-72b4-4110-8509-f56bd99be0a6",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Acetylcysteine has two distinct actions depending on route. (1) Mucolytic (nebulised or instilled): the viscosity of pulmonary mucous secretions depends on mucoprotein and, to a lesser extent, deoxyribonucleic acid (DNA), the latter increasing with purulence; the mucolytic action of acetylcysteine is related to its sulfhydryl group, which probably 'opens' disulfide linkages in mucus, thereby lowering viscosity. Mucolytic activity is unaltered by the presence of DNA and increases with increasing pH, with significant mucolysis occurring between pH 7 and 9. Acetylcysteine undergoes rapid deacetylation to yield cysteine or oxidation to yield diacetylcystine (FDA Acetylcysteine Solution USP 10% and 20% label, CLINICAL PHARMACOLOGY). (2) Antidotal (oral or intravenous for acetaminophen overdose): acetaminophen is metabolised in the liver to principally nontoxic sulfate and glucuronide conjugates, but a small fraction is metabolised by the cytochrome P-450 mixed-function oxidase system to form a reactive, potentially toxic intermediate metabolite which preferentially conjugates with hepatic glutathione. After a large overdose (150 mg/kg or greater) the glucuronide and sulfate pathways are saturated, so more drug is metabolised via the P-450 pathway, reactive metabolite may deplete hepatic glutathione, and the metabolite binds to protein molecules within the hepatocyte causing cellular necrosis. Acetylcysteine has been shown to reduce the extent of liver injury and probably protects the liver by maintaining or restoring glutathione levels, or by acting as an alternate substrate for conjugation with, and thus detoxification of, the reactive metabolite (FDA ACETADOTE label, section 12.1; FDA Acetylcysteine Solution label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Intravenous: prevention or lessening of hepatic injury after ingestion of a potentially hepatotoxic quantity of acetaminophen in adults and pediatric patients who weigh 5 kg or greater, with acute ingestion or from repeated supratherapeutic ingestion (FDA ACETADOTE label, section 1)",
+      "Oral: antidote to prevent or lessen hepatic injury which may occur following ingestion of a potentially hepatotoxic quantity of acetaminophen; treatment must be initiated as soon as possible after the overdose and in any case within 24 hours of ingestion (FDA Acetylcysteine Solution label, INDICATIONS AND USAGE)",
+      "Nebulisation or direct instillation as a mucolytic: adjuvant therapy for patients with abnormal, viscid or inspissated mucous secretions, in chronic bronchopulmonary disease (chronic emphysema, emphysema with bronchitis, chronic asthmatic bronchitis, tuberculosis, bronchiectasis and primary amyloidosis of the lung), acute bronchopulmonary disease (pneumonia, bronchitis, tracheobronchitis), pulmonary complications of cystic fibrosis, tracheostomy care, pulmonary complications associated with surgery, use during anaesthesia, post-traumatic chest conditions, atelectasis due to mucous obstruction, and diagnostic bronchial studies (bronchograms, bronchospirometry and bronchial wedge catheterization) (FDA Acetylcysteine Solution label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Intravenous acetylcysteine: a previous hypersensitivity reaction to acetylcysteine (FDA ACETADOTE label, section 4)",
+      "Nebulised or instilled acetylcysteine: patients who are sensitive to acetylcysteine (FDA Acetylcysteine Solution label, CONTRAINDICATIONS)",
+      "Oral acetylcysteine for acetaminophen overdose: none. The label states 'There are no contraindications to oral administration of acetylcysteine in the treatment of acetaminophen overdose' (FDA Acetylcysteine Solution label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Intravenous: most common adverse reactions (more than 2%) are rash, urticaria/facial flushing and pruritus; in the literature the frequency of adverse reactions attributed to intravenous acetylcysteine has been reported between 0.2% and 21%, and they most commonly occur during the initial loading dose (FDA ACETADOTE label, section 6)",
+      "Intravenous hypersensitivity reactions in 4709 adult cases: urticaria/facial flushing 6.1%, pruritus 4.3%, respiratory symptoms (cough, wheezing, stridor, shortness of breath, chest tightness, respiratory distress or bronchospasm) 1.9%, oedema 1.6%, hypotension 0.1%, anaphylaxis 0.1% (FDA ACETADOTE label, section 6.1)",
+      "Intravenous hypersensitivity reactions in 1905 pediatric cases: urticaria/facial flushing 7.6%, pruritus 4.1%, respiratory symptoms 2.2%, oedema 1.2%, anaphylaxis 0.2%, hypotension 0.1% (FDA ACETADOTE label, section 6.1)",
+      "Intravenous: in a randomized study comparing a 15-minute with a 60-minute loading-dose infusion, 17% of patients developed an acute hypersensitivity reaction (18% with the 15-minute infusion versus 14% with the 60-minute infusion) (FDA ACETADOTE label, section 6.1)",
+      "Intravenous acute flushing and erythema of the skin usually occur 30 to 60 minutes after starting the infusion and often resolve spontaneously despite continued infusion (FDA ACETADOTE label, section 5.1)",
+      "Nebulised/instilled: stomatitis, nausea, vomiting, fever, rhinorrhoea, drowsiness, clamminess, chest tightness and bronchoconstriction; clinically overt acetylcysteine-induced bronchospasm occurs infrequently and unpredictably even in patients with asthmatic bronchitis or bronchitis complicating bronchial asthma; acquired sensitisation has been reported rarely (FDA Acetylcysteine Solution label, ADVERSE REACTIONS)",
+      "Oral for acetaminophen overdose: nausea, vomiting and other gastrointestinal symptoms, especially in the large doses needed; rash with or without mild fever observed rarely; generalized urticaria has been observed rarely (FDA Acetylcysteine Solution label, ADVERSE REACTIONS and WARNINGS)",
+      "Postmarketing: fatal anaphylaxis following intravenous acetylcysteine (FDA ACETADOTE label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Intravenous for acetaminophen overdose: the total recommended dosage is 300 mg/kg given as either a three-bag regimen (loading, second and third dose infused over a total of 21 hours) or a two-bag regimen (loading and second dose infused over a total of 20 hours). Three-bag regimen - 5 kg to 20 kg: 150 mg/kg in 3 mL/kg over 1 hour, then 50 mg/kg in 7 mL/kg over 4 hours, then 100 mg/kg in 14 mL/kg over 16 hours; 21 kg to 40 kg: 150 mg/kg in 100 mL over 1 hour, then 50 mg/kg in 250 mL over 4 hours, then 100 mg/kg in 500 mL over 16 hours; 41 kg to 99 kg: 150 mg/kg in 200 mL over 1 hour, then 50 mg/kg in 500 mL over 4 hours, then 100 mg/kg in 1,000 mL over 16 hours; 100 kg or greater: 15,000 mg in 200 mL over 1 hour, then 5,000 mg in 500 mL over 4 hours, then 10,000 mg in 1,000 mL over 16 hours. Two-bag regimen (patients 41 kg or greater only) - 41 kg to 99 kg: 200 mg/kg in 1,000 mL over 4 hours, then 100 mg/kg in 500 mL over 16 hours; 100 kg or greater: 20,000 mg in 1,000 mL over 4 hours, then 10,000 mg in 500 mL over 16 hours (FDA ACETADOTE label, section 2.5). There are insufficient data to recommend the two-bag regimen in patients 40 kg or less, who should receive the three-bag regimen; the three-bag regimen may be preferred for patients with early signs of severe liver injury or a history of large ingestion, while the two-bag regimen may be associated with fewer hypersensitivity reactions (FDA ACETADOTE label, section 2.4). Oral for acetaminophen overdose: administer immediately if 24 hours or less have elapsed from the reported time of ingestion, and do not await assay results; give a loading dose of 140 mg/kg, then, if the predetoxification plasma level is clearly in the toxic range (or could not be obtained), give a first maintenance dose of 70 mg/kg 4 hours after the loading dose and repeat the maintenance dose at 4-hour intervals for a total of 17 doses, monitoring hepatic and renal function and electrolytes throughout; if the predetoxification level is clearly non-toxic and overdose occurred at least 4 hours before the assay, discontinue; if the level was non-toxic but the time of ingestion was unknown or less than 4 hours, obtain a second plasma level before deciding on the full 17-dose course; repeat any oral dose vomited within 1 hour, and use duodenal intubation if the patient persistently cannot retain oral acetylcysteine (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION). Nebulised mucolytic: 1 to 10 mL of the 20% solution or 2 to 20 mL of the 10% solution every 2 to 6 hours, with a recommended dose for most patients of 3 to 5 mL of the 20% solution or 6 to 10 mL of the 10% solution 3 to 4 times a day (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "The FDA ACETADOTE label contains no geriatric-specific dosing section; the intravenous regimen is weight-based, and the 100 kg-or-greater row of the dosing table applies to adult patients of 100 kg or more, with the note that no specific studies have been conducted to evaluate the necessity of dose adjustments in patients weighing over 100 kg and that limited information is available on the dosing requirements of patients who weigh more than 100 kg (FDA ACETADOTE label, section 2.5). For nebulised acetylcysteine, no age-specific adjustment is stated (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION).",
+      "paediatric": "Intravenous: indicated in pediatric patients who weigh 5 kg or greater with acute ingestion or from repeated supratherapeutic ingestion; the three-bag regimen is used in patients 40 kg or less, with weight-band doses of 150 mg/kg, 50 mg/kg and 100 mg/kg for 5-20 kg and 21-40 kg; recommended dosing for those less than 5 kg has not been studied (FDA ACETADOTE label, sections 1, 2.4 and 2.5). Safety and effectiveness in pediatric patients have not been established by adequate and well-controlled studies; use in pediatric patients 5 kg and greater is based on clinical practice (FDA ACETADOTE label, section 8.4). Oral for acetaminophen overdose: loading dose 140 mg/kg and maintenance dose 70 mg/kg; for patients weighing less than 20 kg (usually younger than 6 years) doses are calculated per kilogram, with 3 mL of diluent added to each mL of 20% acetylcysteine solution, and the proportion of diluent must not be decreased; syrup of ipecac for gastric emptying is dosed 15 mL for children up to age 12 (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION). Nebulised: no paediatric-specific adjustment is stated in the label (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Nebulisation admixture incompatibility: acetylcysteine should not be mixed in the same solution with certain antibiotics, because tetracycline hydrochloride, oxytetracycline hydrochloride, erythromycin lactobionate, ampicillin sodium, chlortetracycline hydrochloride and amphotericin B were found to be incompatible when mixed in the same solution; these agents may be administered from separate solutions if desired (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Compatibility and PRECAUTIONS, Drug Interactions).",
+      "Drug stability and safety of acetylcysteine when mixed with other drugs in a nebulizer have not been established (FDA Acetylcysteine Solution label, PRECAUTIONS, Drug Interactions).",
+      "Activated charcoal: adsorbs acetylcysteine and may reduce its effectiveness; if activated charcoal has been administered, lavage before giving acetylcysteine (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION).",
+      "Intravenous: the FDA ACETADOTE label contains no drug interaction section and describes no drug-drug interactions (FDA ACETADOTE label, full prescribing information)."
+    ],
+    "monitoring": "For intravenous treatment, observe patients during and after the infusion and immediately discontinue the infusion if a serious reaction occurs; patients with asthma should be closely monitored during initiation and throughout therapy (FDA ACETADOTE label, sections 5 and 5.1). Obtain a plasma or serum sample to assay for acetaminophen concentration at least 4 hours after ingestion, and obtain AST, ALT, bilirubin, INR, creatinine, BUN, blood glucose and electrolytes to monitor hepatic and renal function and electrolyte and fluid balance (FDA ACETADOTE label, sections 2.1 and 2.6). Monitor hepatic and renal function and electrolytes throughout the oral detoxification process, and repeat SGOT, SGPT, bilirubin, prothrombin time, creatinine, BUN, blood sugar and electrolytes daily if the acetaminophen plasma level is in the potentially toxic range; maintain fluid and electrolyte balance, treat hypoglycaemia as necessary, administer vitamin K if the prothrombin time ratio exceeds 1.5 or fresh frozen plasma if it exceeds 3.0, and avoid diuretics and forced diuresis (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION). Adjust the total volume administered for patients weighing less than 40 kg and for those requiring fluid restriction, because intravenous acetylcysteine can cause fluid overload resulting in hyponatraemia, seizure and death (FDA ACETADOTE label, section 5.2). For nebulised acetylcysteine, asthmatics should be watched carefully: most patients with bronchospasm are quickly relieved by a nebulised bronchodilator, and if bronchospasm progresses the medication should be discontinued immediately; when cough is inadequate the open airway must be maintained by mechanical suction if necessary, and a mechanical block due to foreign body or local accumulation should be cleared by endotracheal aspiration, with or without bronchoscopy (FDA Acetylcysteine Solution label, WARNINGS). For oral acetylcysteine, discontinue treatment if encephalopathy due to hepatic failure becomes evident, to avoid further administration of nitrogenous substances (FDA Acetylcysteine Solution label, WARNINGS).",
+    "patient_counselling": "Advise patients and caregivers that hypersensitivity reactions related to administration and infusion may occur during and after intravenous acetylcysteine treatment, including hypotension, wheezing, shortness of breath and bronchospasm; for specific treatment information regarding the clinical management of acetaminophen overdose contact the regional poison center at 1-800-222-1222, or the special health professional assistance line for acetaminophen overdose at 1-800-525-6115 (FDA ACETADOTE label, section 17). For oral administration, inform patients that large doses may cause nausea, vomiting and other gastrointestinal symptoms, that dilution of the 20% solution with diet cola or other diet soft drinks to a final concentration of 5% minimises the propensity to aggravate vomiting, and that dilutions should be freshly prepared and used within one hour (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION and PRECAUTIONS, General). Instruct patients that if they vomit any oral dose within 1 hour it must be repeated (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION). Advise nursing mothers that there is no information on the presence of acetylcysteine in human milk and that caution should be exercised; breastfeeding women may consider pumping and discarding their milk for 30 hours after administration (FDA Acetylcysteine Solution label, PRECAUTIONS, Nursing Mothers; FDA ACETADOTE label, section 8.2).",
+    "warnings": [
+      "Intravenous hypersensitivity reactions: serious acute hypersensitivity reactions, including fatal or life-threatening anaphylaxis, rash, hypotension, wheezing and/or shortness of breath, have been observed and occurred soon after initiation of the infusion; if a severe reaction occurs, immediately stop the infusion and initiate appropriate treatment; the infusion may be carefully restarted after treatment has been initiated and acute symptoms have resolved, but if the reaction returns or increases in severity on re-initiation, discontinue ACETADOTE and consider alternative management (FDA ACETADOTE label, section 5.1)",
+      "Intravenous fluid overload: total volume administered should be reduced for patients weighing less than 40 kg and for those requiring fluid restriction; intravenous administration can cause fluid overload, potentially resulting in hyponatraemia, seizure and death (FDA ACETADOTE label, section 5.2)",
+      "Nebulised: increased volume of liquified bronchial secretions may occur after proper administration; when cough is inadequate the open airway must be maintained by mechanical suction if necessary, and where there is a mechanical block due to foreign body or local accumulation the airway should be cleared by endotracheal aspiration, with or without bronchoscopy; asthmatics under treatment with acetylcysteine should be watched carefully and if bronchospasm progresses the medication should be discontinued immediately (FDA Acetylcysteine Solution label, WARNINGS)",
+      "Oral: generalized urticaria has been observed rarely; if this occurs or other allergic symptoms appear, treatment should be discontinued unless it is deemed essential and the allergic symptoms can otherwise be controlled (FDA Acetylcysteine Solution label, WARNINGS)",
+      "Oral: if encephalopathy due to hepatic failure becomes evident, acetylcysteine treatment should be discontinued to avoid further administration of nitrogenous substances; there are no data indicating that acetylcysteine adversely influences hepatic failure, but this remains a theoretical possibility (FDA Acetylcysteine Solution label, WARNINGS)"
+    ],
+    "precautions": [
+      "Nebulisation equipment materials: certain materials react with acetylcysteine, notably iron, copper and rubber; parts that may come into contact with the solution should be made of glass, plastic, aluminium, anodised aluminium, chromed metal, tantalum, sterling silver or stainless steel. Silver may tarnish but this is not harmful to the drug action or the patient (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Administration of Aerosol Materials).",
+      "Clean nebulising equipment immediately after use, as residues may clog the small orifices or corrode metal parts; hand bulbs are not recommended for routine use because their output is generally too small (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Apparatus).",
+      "During prolonged nebulisation, once three-fourths of the initial volume has been nebulised, add a quantity of Sterile Water for Injection approximately equal to the volume of solution remaining, to avoid concentration of the agent in the residual solvent (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Prolonged Nebulization).",
+      "A colour change (light purple) may occur in the solution of acetylcysteine in the opened bottle as a result of a chemical reaction; it does not significantly affect safety or mucolytic effectiveness. Similarly, ACETADOTE may turn from essentially colourless to a slight pink or purple once the stopper is punctured, and the colour change does not affect product quality (FDA Acetylcysteine Solution label, PRECAUTIONS; FDA ACETADOTE label, section 16).",
+      "The product does not contain an antimicrobial agent, so care must be taken to minimise contamination of the sterile solution; if only a portion of a vial is used, store the remainder in a refrigerator and use for inhalation only within 96 hours (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED).",
+      "Oral administration: severe and persistent vomiting commonly occurs as a symptom of acute acetaminophen overdose and oral acetylcysteine may aggravate it; patients at risk of gastric haemorrhage (e.g. oesophageal varices, peptic ulcers) should be evaluated for the risk of upper gastrointestinal haemorrhage versus the risk of developing hepatic toxicity and treated accordingly; dilution minimises the propensity to aggravate vomiting (FDA Acetylcysteine Solution label, PRECAUTIONS, General).",
+      "Oral route: acetylcysteine is not approved for parenteral injection in this presentation - use the intravenous presentation (ACETADOTE) for parenteral administration (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION).",
+      "For repeated supratherapeutic acetaminophen ingestion the risk of hepatotoxicity and the revised Rumack-Matthew nomogram do not apply; obtain acetaminophen serum or plasma concentrations and laboratory tests (AST, ALT, bilirubin, INR, creatinine, BUN, blood glucose, electrolytes) and contact the regional poison center at 1-800-222-1222 or the acetaminophen overdose assistance line at 1-800-525-6115 (FDA ACETADOTE label, section 2.6).",
+      "Carcinogenesis, mutagenism and impairment of fertility: carcinogenicity studies in laboratory animals have not been performed with acetylcysteine alone, nor with acetylcysteine in combination with isoproterenol; long-term oral studies in rats (12 months of treatment followed by 6 months of observation) at doses up to 1,000 mg/kg/day (5.2 times the human mucolytic dose) provided no evidence of oncogenic activity; acetylcysteine is not mutagenic in the Ames test with or without metabolic activation (FDA Acetylcysteine Solution label, PRECAUTIONS)."
+    ],
+    "serious_adverse_reactions": [
+      "Fatal and life-threatening anaphylaxis following intravenous acetylcysteine, including postmarketing fatal anaphylaxis; patients often became symptomatic during the loading dose with hypotension, rash, angioedema, bronchospasm or respiratory distress (FDA ACETADOTE label, sections 5.1, 6.2 and 10)",
+      "Fluid overload from intravenous administration, potentially resulting in hyponatraemia, seizure and death (FDA ACETADOTE label, section 5.2)",
+      "Cerebral oedema, including cases with a fatal outcome and brain herniation, reported following acetylcysteine overdosage (FDA ACETADOTE label, section 10)",
+      "Haemolytic-uraemic syndrome, with microangiopathic haemolytic anaemia, thrombocytopenia and acute kidney injury, reported following acetylcysteine overdosage (FDA ACETADOTE label, section 10)",
+      "Bronchospasm and increased airways obstruction following inhalation of acetylcysteine aerosol, which occurs occasionally with unpredictable severity (FDA Acetylcysteine Solution label, CLINICAL PHARMACOLOGY and WARNINGS)",
+      "Upper gastrointestinal haemorrhage risk in patients at risk of gastric haemorrhage when oral acetylcysteine is given in large doses (FDA Acetylcysteine Solution label, PRECAUTIONS, General)"
+    ],
+    "food_interactions": [
+      "For oral administration of acetylcysteine in acetaminophen overdose, the 20% solution must be diluted with diet cola or other diet soft drinks to a final concentration of 5%; if administered via gastric tube or Miller-Abbott tube, water may be used as the diluent. Dilutions should be freshly prepared and used within one hour (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Preparation of Acetylcysteine For Oral Administration).",
+      "No food interaction is described for the intravenous presentation in the FDA ACETADOTE label (FDA ACETADOTE label, full prescribing information)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Limited published case reports and case series of pregnant women exposed to acetylcysteine during various trimesters are not sufficient to inform any drug-associated risk. Delaying treatment of acetaminophen overdose may increase the risk of maternal or fetal morbidity and mortality. Acetaminophen and acetylcysteine cross the placenta. Reproduction studies following oral administration of acetylcysteine during organogenesis in rats at doses up to 2,000 mg/kg/day and in rabbits at doses up to 1,000 mg/kg/day (both 1.1 times the recommended total human intravenous dose of 300 mg/kg based on body surface area) showed no adverse developmental outcomes due to acetylcysteine. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population it is 2% to 4% and 15% to 20% respectively (FDA ACETADOTE label, section 8.1). For the nebulised/oral presentation the label states that reproduction studies of acetylcysteine with isoproterenol in rats and of acetylcysteine alone in rabbits at doses up to 2.6 times the human dose revealed no evidence of impaired fertility or harm to the fetus, but that there are no adequate and well-controlled studies in pregnant women, and therefore the drug should be used during pregnancy only if clearly needed (FDA Acetylcysteine Solution label, PRECAUTIONS).",
+    "lactation_guidance": "For intravenous acetylcysteine there are no data on the presence of acetylcysteine in human milk, the effects on the breastfed infant, or the effects on milk production. Based on the pharmacokinetic data, acetylcysteine should be nearly completely cleared 30 hours after administration, so breastfeeding women may consider pumping and discarding their milk for 30 hours after administration (FDA ACETADOTE label, section 8.2). For the nebulised/oral presentation, it is not known whether acetylcysteine is excreted in human milk; because many drugs are excreted in human milk, caution should be exercised when acetylcysteine is administered to a nursing woman (FDA Acetylcysteine Solution label, PRECAUTIONS, Nursing Mothers).",
+    "overdose": "Fatal and life-threatening adverse events have been reported following acetylcysteine overdosage, including anaphylaxis, cerebral oedema and haemolytic-uraemic syndrome. Stop acetylcysteine administration in the setting of suspected overdosage and manage as clinically indicated. Anaphylaxis, including cases with a fatal outcome, has been reported, with patients often becoming symptomatic during the loading dose with hypotension, rash, angioedema, bronchospasm or respiratory distress; cases have also described coagulopathy, renal failure or respiratory failure. Cerebral oedema, including fatal cases with brain herniation, has presented with altered mental status, abnormal pupillary responses and seizures. Haemolytic-uraemic syndrome has presented with microangiopathic haemolytic anaemia, thrombocytopenia and acute kidney injury. Removal of acetylcysteine by haemodialysis has been reported in the literature outside the context of acetylcysteine overdosage, and studies of haemodialysis in acetaminophen overdose report significant extracorporeal removal of acetylcysteine. Contact the Poison Center (1-800-222-1222) for overdosage management recommendations for ACETADOTE, including considerations for haemodialysis (FDA ACETADOTE label, section 10).",
+    "pharmacokinetics": "After a single intravenous dose of acetylcysteine, the plasma concentration of total acetylcysteine declined in a poly-exponential decay manner with a mean terminal half-life of 5.6 hours. Mean clearance was 0.11 L/hr/kg, of which renal clearance constituted about 30% of the total, and the steady-state volume of distribution was 0.47 L/kg. Protein binding of acetylcysteine ranges from 66% to 87%. Acetylcysteine is postulated to form cysteine and disulfides (N,N-diacetylcysteine and S-acetylcysteine); cysteine is further metabolised to form glutathione and other metabolites. After a single oral dose of [S]-acetylcysteine 100 mg, between 13% and 38% of the total radioactivity administered was recovered in urine within 24 hours. In hepatic impairment (Child-Pugh A to C), mean terminal half-life increased by 80%, mean clearance decreased by 30% and systemic exposure (mean AUC) increased 1.6-fold compared with normal hepatic function; these changes are not considered clinically meaningful. Haemodialysis may remove some of total acetylcysteine (FDA ACETADOTE label, section 12.3).",
+    "clinical_pearls": [
+      "Time is liver: the antidote works only if given early - oral treatment must start within 24 hours of ingestion and is most effective within 8 to 10 hours; do not wait for assay results before starting (FDA Acetylcysteine Solution label, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION; FDA ACETADOTE label, section 2.1).",
+      "The Rumack-Matthew nomogram applies to acute single ingestion only; it does not apply to repeated supratherapeutic ingestion, where management is driven by acetaminophen level plus liver and renal function (FDA ACETADOTE label, section 2.6).",
+      "Infusion speed drives hypersensitivity: in a randomized study, acute hypersensitivity reactions occurred in 18% with a 15-minute loading infusion versus 14% with a 60-minute infusion, and hypersensitivity rates across observational studies ranged from 1% to 23% (FDA ACETADOTE label, section 6.1).",
+      "The two-bag regimen is for patients 41 kg or greater only and is not proven equivalent in efficacy, but it delivers less drug in the first 3 hours and is associated with fewer hypersensitivity reactions (FDA ACETADOTE label, section 2.4).",
+      "Intravenous acetylcysteine is hyperosmolar (2,600 mOsmol/L) and must be diluted before administration; 0.45% sodium chloride is the preferred diluent, and total volume must be reduced in small or fluid-restricted patients to avoid fluid overload, hyponatraemia and seizures (FDA ACETADOTE label, sections 2.3 and 5.2).",
+      "For nebulised use, never mix acetylcysteine with tetracycline, oxytetracycline, erythromycin lactobionate, ampicillin, chlortetracycline or amphotericin B in the same solution, and clean the nebuliser immediately after use (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION, Compatibility and Apparatus).",
+      "The colour change after opening (light purple/pink) is a chemical reaction and does not affect safety or efficacy - it is not a reason to discard the vial (FDA Acetylcysteine Solution label, PRECAUTIONS; FDA ACETADOTE label, section 16).",
+      "For the antidote indication, the antidote is N-acetylcysteine; the same molecule nebulised is a mucolytic that breaks disulfide bonds in mucus - one drug, two completely different mechanisms and two completely different routes (FDA Acetylcysteine Solution label, CLINICAL PHARMACOLOGY; FDA ACETADOTE label, section 12.1)."
+    ],
+    "brand_names": ["ACETADOTE"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the FDA ACETADOTE label. Section 12.3 states that haemodialysis may remove some of total acetylcysteine, and section 10 notes that studies of haemodialysis in acetaminophen overdose report significant extracorporeal removal of acetylcysteine during haemodialysis (FDA ACETADOTE label, sections 10 and 12.3).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified in the FDA ACETADOTE label. Following a 600 mg intravenous dose in subjects with mild (Child-Pugh A), moderate (Child-Pugh B) or severe (Child-Pugh C) hepatic impairment, mean terminal half-life increased by 80%, mean clearance decreased by 30% and systemic acetylcysteine exposure (mean AUC) increased 1.6-fold compared with subjects with normal hepatic function; these changes are not considered to be clinically meaningful (FDA ACETADOTE label, section 12.3).",
+    "administration_instructions": "Intravenous: for intravenous administration only; calculate the dose in mg from the patient's weight in kg, and multiple vials may be required. Because ACETADOTE is hyperosmolar (2,600 mOsmol/L), it must be diluted to the recommended volume of sterile water for injection, 0.45% sodium chloride injection or 5% dextrose in water before administration, with 0.45% normal saline generally preferred; 5% dextrose or sterile water may be used if sodium load is a concern. Visually inspect for particulate matter and discoloration before administration; the diluted solution may be stored for 24 hours at room temperature, and unused portion must be discarded. Discard any unused portion left in the vial, and do not use previously opened vials for intravenous administration. Store unopened vials at 20 to 25 degrees C (68 to 77 degrees F) (FDA ACETADOTE label, sections 2.3, 2.5 and 16). Oral: dilute the 20% solution with diet cola or other diet soft drinks to a final concentration of 5% (water may be used as the diluent if given via gastric or Miller-Abbott tube), prepare dilutions freshly and use within one hour, and store remaining undiluted solution in opened vials in the refrigerator for up to 96 hours; this presentation is not approved for parenteral injection (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED). Nebulised: use 10% or 20% solution, 1 to 10 mL of 20% or 2 to 20 mL of 10% every 2 to 6 hours via face mask, mouth piece or tracheostomy, using conventional nebulisers; clean the equipment immediately after use and store opened vials refrigerated at 2 to 8 degrees C, discarding after 96 hours (FDA Acetylcysteine Solution label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20% Teartop Vials (Hospira, Inc.), CLINICAL PHARMACOLOGY (mucolytic and antidotal); FDA label, ACETADOTE (acetylcysteine) injection (Cumberland Pharmaceuticals), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, INDICATIONS AND USAGE (mucolytic and oral antidote); FDA label, ACETADOTE, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, CONTRAINDICATIONS; FDA label, ACETADOTE, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, ADVERSE REACTIONS and WARNINGS; FDA label, ACETADOTE, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ACETADOTE, sections 2.4, 2.5 and 2.6; FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION (nebulisation, oral acetaminophen overdose regimen)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION (Compatibility) and PRECAUTIONS, Drug Interactions; FDA label, ACETADOTE (no drug interaction section)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ACETADOTE, sections 2.1, 2.6, 5, 5.1 and 5.2; FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ACETADOTE, section 17 Patient Counseling Information; FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION, PRECAUTIONS (General, Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ACETADOTE, sections 5.1 and 5.2; FDA label, Acetylcysteine Solution USP 10% and 20%, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, PRECAUTIONS and DOSAGE AND ADMINISTRATION (Apparatus, Administration of Aerosol Materials, Prolonged Nebulization, Storage of Opened Vials); FDA label, ACETADOTE, sections 2.3, 2.4 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ACETADOTE, sections 5.1, 5.2, 6.2 and 10; FDA label, Acetylcysteine Solution USP 10% and 20%, CLINICAL PHARMACOLOGY, WARNINGS and PRECAUTIONS (General)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION (Preparation of Acetylcysteine For Oral Administration); FDA label, ACETADOTE (no food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ACETADOTE, section 8.1 Pregnancy; FDA label, Acetylcysteine Solution USP 10% and 20%, PRECAUTIONS (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ACETADOTE, section 8.2 Lactation; FDA label, Acetylcysteine Solution USP 10% and 20%, PRECAUTIONS (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ACETADOTE, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ACETADOTE, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ACETADOTE, sections 1, 2.1, 2.3, 2.4, 2.6, 5.1, 5.2, 6.1, 10, 12.1 and 16; FDA label, Acetylcysteine Solution USP 10% and 20%, CLINICAL PHARMACOLOGY, DOSAGE AND ADMINISTRATION and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ACETADOTE (acetylcysteine) listed as a brand product on DailyMed (Cumberland Pharmaceuticals Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA ACETADOTE and Acetylcysteine Solution labels contain no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, ACETADOTE, sections 10 and 12.3 (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, ACETADOTE, section 12.3 (Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ACETADOTE, sections 2.3, 2.5 and 16; FDA label, Acetylcysteine Solution USP 10% and 20%, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=472f158a-5ab9-4308-8e49-1116e6ea3d39"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative pediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current ACETADOTE label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Acetylcysteine'. This is the INN/BAN name; the US label names the same molecule 'acetylcysteine' (N-acetyl-L-cysteine, N-acetylcysteine) - see the DESCRIPTION section of both labels. Acetylcysteine has two completely separate US presentations, both covered here: (1) ACETADOTE injection 200 mg/mL (Cumberland) for intravenous acetaminophen overdose, in modern PLLR format, and (2) Acetylcysteine Solution USP 10% and 20% teartop vials (Hospira) for nebulisation/instillation as a mucolytic AND for oral administration as an acetaminophen antidote. A separate Acetylcysteine Inhalant label also exists (American Regent, Cardinal Health) for the mucolytic indication. The brand_names entry has been set to ['ACETADOTE'] because the Hospira presentation is unbranded generic; the legacy brand 'Mucomyst' was not verifiable on DailyMed and is therefore omitted. Note the two different oral/IV antidote regimens: the Hospira oral regimen is 140 mg/kg loading then 70 mg/kg every 4 hours for 17 doses, whereas the ACETADOTE intravenous total is 300 mg/kg over 20-21 hours by the two- or three-bag regimen - these are not interchangeable. Neither label carries a boxed warning, and neither states a pregnancy category letter (PLLR format)."
+}

@@ -5,6 +5,8 @@
 //   - matches a row by `existing_id` (uuid) then by `name`; never inserts new rows.
 //   - only overwrites a field when the draft carries a non-null value (merge,
 //     don't clobber): an unsourced (null) draft field leaves the DB value alone.
+//   - an empty draft array never wipes content the DB already has — a draft
+//     usually means "not stated", not "none" — so the existing value is kept.
 //   - refuses to overwrite a row whose content_status is 'verified' unless
 //     --force is passed.
 //   - sets content_status='needs_review' + a note + updated_at on every apply.
@@ -74,6 +76,25 @@ interface Row {
   id: string
   name: string
   content_status: string
+  [k: string]: any
+}
+
+/**
+ * A draft field is written only when it carries information:
+ *   - null/undefined -> the field was not sourced; leave the DB value alone.
+ *   - an empty array -> the draft found nothing to state. It must NOT wipe
+ *     content the DB already has (a draft usually means "not stated", not
+ *     "none"), so it is skipped when the DB holds a non-empty value.
+ */
+function draftValueToWrite(draftValue: any, current: any): { write: boolean; skipReason?: string } {
+  if (draftValue === null || draftValue === undefined) return { write: false }
+  if (Array.isArray(draftValue) && draftValue.length === 0) {
+    if (Array.isArray(current) && current.length > 0) {
+      return { write: false, skipReason: 'draft array empty, DB has content' }
+    }
+    return { write: true }
+  }
+  return { write: true }
 }
 
 async function withRetry<T>(fn: () => PromiseLike<T>, label: string): Promise<T> {
@@ -90,13 +111,6 @@ async function withRetry<T>(fn: () => PromiseLike<T>, label: string): Promise<T>
   throw last
 }
 
-function nonNull(v: any): boolean {
-  if (v === null || v === undefined) return false
-  if (Array.isArray(v)) return v.length > 0 || v.length === 0
-  // treat empty arrays as intentional ("none") — still a sourced statement
-  return true
-}
-
 function validateDraft(d: any): string | null {
   if (!d || typeof d !== 'object') return 'not an object'
   if (typeof d.name !== 'string' || !d.name.trim()) return 'missing name'
@@ -110,31 +124,28 @@ function validateDraft(d: any): string | null {
   return null
 }
 
+const ROW_COLUMNS = ['id', 'name', 'content_status', ...FIELD_MAP.map((f) => f.column)].join(', ')
+
 async function findRow(draft: Draft): Promise<Row | null> {
   if (draft.existing_id) {
     const { data, error } = await withRetry(
       () =>
         admin
           .from('drug_monographs')
-          .select('id, name, content_status')
+          .select(ROW_COLUMNS)
           .eq('id', draft.existing_id!)
           .maybeSingle(),
       `find by id ${draft.existing_id}`,
     )
     if (error) throw new Error(error.message)
-    if (data) return data as Row
+    if (data) return data as unknown as Row
   }
   const { data, error } = await withRetry(
-    () =>
-      admin
-        .from('drug_monographs')
-        .select('id, name, content_status')
-        .eq('name', draft.name)
-        .maybeSingle(),
+    () => admin.from('drug_monographs').select(ROW_COLUMNS).eq('name', draft.name).maybeSingle(),
     `find by name ${draft.name}`,
   )
   if (error) throw new Error(error.message)
-  return (data as Row) ?? null
+  return (data as unknown as Row) ?? null
 }
 
 async function main() {
@@ -158,7 +169,14 @@ async function main() {
     `[apply-drafts] ${dryRun ? 'DRY RUN — ' : ''}${selected.length} draft(s) selected${only ? ` (only=${only})` : ''}`,
   )
 
-  const stats = { applied: 0, skippedVerified: 0, notFound: 0, failed: 0, fieldsWritten: 0 }
+  const stats = {
+    applied: 0,
+    skippedVerified: 0,
+    notFound: 0,
+    failed: 0,
+    fieldsWritten: 0,
+    fieldsKept: 0,
+  }
 
   for (const file of selected) {
     const path = resolve(dir, file)
@@ -199,11 +217,14 @@ async function main() {
     // build merge payload
     const payload: Record<string, any> = {}
     const written: string[] = []
+    const kept: string[] = []
     for (const { draft: dk, column: col } of FIELD_MAP) {
-      const v = draft.fields[dk]
-      if (nonNull(v)) {
-        payload[col] = v
+      const decision = draftValueToWrite(draft.fields[dk], row[col])
+      if (decision.write) {
+        payload[col] = draft.fields[dk]
         written.push(col)
+      } else if (decision.skipReason) {
+        kept.push(col)
       }
     }
     payload.content_status = 'needs_review'
@@ -214,10 +235,12 @@ async function main() {
     const before = row.content_status
     if (dryRun) {
       console.log(
-        `  [${draft.name}] (id ${row.id}) DRY: would update ${written.length} fields (${written.join(', ')}) [${before} -> needs_review]`,
+        `  [${draft.name}] (id ${row.id}) DRY: would update ${written.length} fields (${written.join(', ')}) [${before} -> needs_review]` +
+          (kept.length ? ` — kept existing (${kept.join(', ')})` : ''),
       )
       stats.applied++
       stats.fieldsWritten += written.length
+      stats.fieldsKept += kept.length
       continue
     }
 
@@ -230,9 +253,13 @@ async function main() {
       stats.failed++
       continue
     }
-    console.log(`  [${draft.name}] applied ${written.length} fields [${before} -> needs_review]`)
+    console.log(
+      `  [${draft.name}] applied ${written.length} fields [${before} -> needs_review]` +
+        (kept.length ? ` — kept existing (${kept.join(', ')})` : ''),
+    )
     stats.applied++
     stats.fieldsWritten += written.length
+    stats.fieldsKept += kept.length
   }
 
   console.log('')
@@ -242,6 +269,7 @@ async function main() {
   console.log(`  not found        : ${stats.notFound}`)
   console.log(`  failed           : ${stats.failed}`)
   console.log(`  fields written   : ${stats.fieldsWritten}`)
+  console.log(`  fields kept      : ${stats.fieldsKept} (draft empty vs DB content)`)
   if (dryRun) console.log('  (dry run — no writes performed)')
 }
 

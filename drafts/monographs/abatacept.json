@@ -1,0 +1,196 @@
+{
+  "name": "Abatacept",
+  "existing_id": "9818c1b4-d5b6-4508-9a7b-b6f2d0aed25d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Abatacept is a selective costimulation modulator that inhibits T-cell (T lymphocyte) activation by binding to CD80 and CD86, thereby blocking interaction with CD28. This interaction provides the costimulatory signal necessary for full activation of T lymphocytes. Activated T lymphocytes are implicated in the pathogenesis of rheumatoid arthritis (RA), polyarticular juvenile idiopathic arthritis (pJIA) and psoriatic arthritis (PsA) and are found in the synovium of these patients. Abatacept decreases T-cell proliferation and inhibits production of the cytokines TNF-alpha, interferon-gamma and interleukin-2. In a rat collagen-induced arthritis model, abatacept suppresses inflammation, decreases anti-collagen antibody production and reduces antigen-specific production of interferon-gamma. The relationship of these biological response markers to the mechanisms by which ORENCIA exerts its clinical effects is unknown (FDA ORENCIA (abatacept) label, section 12.1).",
+    "indications": [
+      "Moderately to severely active rheumatoid arthritis in adults (FDA ORENCIA label, section 1.1)",
+      "Moderately to severely active polyarticular juvenile idiopathic arthritis (pJIA) in patients 2 years of age and older (FDA ORENCIA label, section 1.2)",
+      "Active psoriatic arthritis (PsA) in patients 2 years of age and older (FDA ORENCIA label, section 1.3)",
+      "Prophylaxis of acute graft versus host disease (aGVHD), in combination with a calcineurin inhibitor and methotrexate, in adults and pediatric patients 2 years of age and older undergoing hematopoietic stem cell transplantation (HSCT) from a matched or 1 allele-mismatched unrelated donor (FDA ORENCIA label, section 1.4)",
+      "Limitation of use: concomitant use of ORENCIA with other potent immunosuppressants (e.g. biologic disease-modifying antirheumatic drugs, Janus kinase inhibitors) is not recommended (FDA ORENCIA label, section 1.5)"
+    ],
+    "contraindications": [
+      "Intravenous and subcutaneous abatacept: none. The FDA label states 'Contraindications: None' (FDA ORENCIA label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions in adult RA treated with intravenous ORENCIA (occurring in at least 3% of patients and at least 1% more frequently than placebo): headache 18% vs 13%, nasopharyngitis 12% vs 9%, dizziness 9% vs 7%, cough 8% vs 7%, back pain 7% vs 6%, hypertension 7% vs 4%, dyspepsia 6% vs 4%, urinary tract infection 6% vs 5%, rash 4% vs 3%, and pain in extremity 3% vs 2% (FDA ORENCIA label, section 6.1, Table 4)",
+      "Most common adverse events (at least 10% of patients) in adult RA: headache, upper respiratory tract infection, nasopharyngitis and nausea (FDA ORENCIA label, section 6.1)",
+      "Infections: reported in 54% of intravenous ORENCIA-treated RA patients versus 48% of placebo patients; most commonly upper respiratory tract infection, nasopharyngitis, sinusitis, urinary tract infection, influenza and bronchitis (5%-13%); serious infections 3% versus 1.9% (FDA ORENCIA label, section 6.1)",
+      "Infusion-related and hypersensitivity reactions; injection-site reactions with subcutaneous ORENCIA (FDA ORENCIA label, sections 5.2 and 6.1)",
+      "Malignancies, including skin cancer, with a higher rate in patients over 65 years (FDA ORENCIA label, sections 5.6, 6.1 and 6.3)",
+      "In COPD patients treated for RA, adverse events 97% versus 88% and respiratory disorders 43% versus 24% (COPD exacerbation, cough, rhonchi, dyspnea); serious adverse events 27% versus 6% (FDA ORENCIA label, sections 5.5 and 6.1)",
+      "aGVHD prophylaxis: most common (at least 10%) adverse reactions were anemia, hypertension, CMV reactivation/CMV infection, pyrexia, pneumonia, epistaxis, CD4 lymphocytes decreased, hypermagnesemia and acute kidney injury; serious adverse reactions reported in more than 5% were pyrexia 20%, pneumonia 8%, acute kidney injury 7%, diarrhea 6%, hypoxia 5% and nausea 5% (FDA ORENCIA label, section 6.1)",
+      "Postmarketing: vasculitis (including cutaneous and leukocytoclastic vasculitis), new or worsening psoriasis, non-melanoma skin cancers (basal cell and squamous cell carcinoma), and angioedema reactions; one case of fatal anaphylaxis (FDA ORENCIA label, sections 6.2 and 6.3)"
+    ],
+    "dosage": {
+      "adult": "Adult RA and adult PsA may be treated by intravenous infusion or subcutaneous injection, as monotherapy or with DMARDs other than JAK inhibitors or biologic DMARDs (FDA ORENCIA label, sections 2.1 and 2.3). Intravenous: 30-minute infusion after reconstitution and dilution, using weight-based dosing - less than 60 kg: 500 mg (2 vials); 60 to 100 kg: 750 mg (3 vials); more than 100 kg: 1,000 mg (4 vials); repeat the infusion at 2 and 4 weeks and every 4 weeks thereafter (FDA ORENCIA label, section 2.1 and Table 1). Subcutaneous: 125 mg once weekly with no intravenous loading dose required; an optional single intravenous loading dose may be given before the first subcutaneous dose, in which case the first subcutaneous injection is given within one day of the infusion; patients switching from intravenous to subcutaneous should receive the first subcutaneous dose instead of the next scheduled intravenous dose (FDA ORENCIA label, section 2.1). aGVHD prophylaxis: administer antiviral prophylaxis for Epstein-Barr virus reactivation before abatacept and continue for six months after HSCT, and consider CMV prophylaxis during treatment and for six months after HSCT (FDA ORENCIA label, section 2.4). For aGVHD prophylaxis in patients 6 years and older: 10 mg/kg (maximum 1,000 mg) infused over 60 minutes on the day before transplantation (Day -1), then on Days 5, 14 and 28 after transplantation; for patients 2 to less than 6 years old: 15 mg/kg over 60 minutes on Day -1, then 12 mg/kg over 60 minutes on Days 5, 14 and 28 (FDA ORENCIA label, section 2.4).",
+      "geriatric": "A total of 323 patients 65 years of age and older, including 53 aged 75 years and older, received ORENCIA in clinical studies; no overall differences in safety or effectiveness were observed between geriatric patients and younger adults, but greater sensitivity in some geriatric patients cannot be ruled out. The frequency of serious infection and malignancy was higher in ORENCIA-treated patients over 65 than in those under 65, so caution should be used when treating geriatric patients. Clinical studies of ORENCIA for aGVHD did not include sufficient numbers of patients 65 years and older to determine whether they respond differently (FDA ORENCIA label, section 8.5).",
+      "paediatric": "Polyarticular juvenile idiopathic arthritis: safety and effectiveness are established in patients 2 years of age and older; safety and effectiveness have not been established in patients less than two years of age (FDA ORENCIA label, section 8.4). Intravenous: 30-minute infusion based on body weight, with infusions at 2 and 4 weeks and every 4 weeks thereafter; intravenous administration has not been studied in patients younger than 6 years of age (FDA ORENCIA label, sections 2.2 and 8.4). Subcutaneous (patients 2 years and older): once-weekly weight-based dose - 10 kg to less than 25 kg: 50 mg; 25 kg to less than 50 kg: 87.5 mg; 50 kg or more: 125 mg (FDA ORENCIA label, section 2.2 and Table 3). Psoriatic arthritis: subcutaneous dosing by body weight is 50 mg (10 to less than 25 kg), 87.5 mg (25 to less than 50 kg) or 125 mg (50 kg or more) once weekly; intravenous ORENCIA is not approved in pediatric patients with psoriatic arthritis and safety and effectiveness of subcutaneous ORENCIA have not been established in patients less than 2 years old (FDA ORENCIA label, sections 2.2 and 8.4). aGVHD prophylaxis: safety and effectiveness are established in patients 2 years of age and older; not established in patients less than 2 years of age (FDA ORENCIA label, sections 2.4 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "TNF antagonists: concomitant intravenous ORENCIA with a TNF antagonist was associated with more infections (63% vs 43%) and more serious infections (4.4% vs 0.8%) versus TNF antagonist alone, without added efficacy, so concurrent therapy is not recommended; patients transitioning from a TNF antagonist to ORENCIA should be monitored for signs of infection (FDA ORENCIA label, sections 5.1 and 7.1).",
+      "Other biologic RA/PsA therapy (e.g. anakinra) and JAK inhibitors: insufficient experience to assess safety and efficacy of concurrent use, so such use is not recommended (FDA ORENCIA label, sections 5.1 and 7.1).",
+      "Blood glucose monitoring: parenteral ORENCIA for intravenous administration contains maltose, which can give falsely elevated glucose readings on the day of infusion with glucose dehydrogenase pyrroloquinoline quinone (GDH-PQQ) test strips; patients requiring glucose monitoring should use methods that do not react with maltose (GDH-NAD, glucose oxidase or glucose hexokinase). Subcutaneous ORENCIA does not contain maltose and requires no change to glucose monitoring (FDA ORENCIA label, section 7.2)."
+    ],
+    "monitoring": "Screen patients for latent tuberculosis infection according to current TB guidelines before initiating ORENCIA; ORENCIA has not been studied in patients with a positive TB screen, and patients testing positive should be treated by standard medical practice before therapy (FDA ORENCIA label, section 5.3). Perform screening for viral hepatitis before starting therapy because antirheumatic therapies have been associated with hepatitis B reactivation (FDA ORENCIA label, section 5.3). Monitor patients closely for new infections during treatment and discontinue ORENCIA if a serious infection develops; serious infections were reported in 3% of ORENCIA-treated versus 1.9% of placebo-treated RA patients (FDA ORENCIA label, sections 5.3 and 6.1). Monitor for hypersensitivity reactions; appropriate medical support measures for treating hypersensitivity reactions should be available for immediate use, and a serious allergic reaction requires stopping the drug and permanently discontinuing it (FDA ORENCIA label, section 5.2). Update vaccinations in accordance with current guidelines before starting ORENCIA; live vaccines should not be given concurrently with ORENCIA or within 3 months after discontinuation (FDA ORENCIA label, section 5.4). Use caution and monitor for worsening respiratory status in patients with COPD (FDA ORENCIA label, section 5.5). Recommend periodic skin examinations, particularly in patients with risk factors for skin cancer (FDA ORENCIA label, section 5.6). For aGVHD prophylaxis, monitor for EBV reactivation and provide EBV prophylaxis for 6 months post-transplantation to prevent EBV-associated post-transplant lymphoproliferative disorder; monitor for CMV infection/reactivation for 6 months post-transplant regardless of donor and recipient pre-transplant CMV serology and consider CMV prophylaxis (FDA ORENCIA label, section 5.7). Monitor blood glucose in patients with diabetes who also receive GDH-PQQ-based meters on the day of intravenous infusion (FDA ORENCIA label, section 7.2).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Patient Information and Instructions for Use) (FDA ORENCIA label, section 17). Inform patients that concomitant use with other immunosuppressants (e.g. biologic DMARDs, JAK inhibitors) is not recommended (FDA ORENCIA label, section 17). Instruct patients to immediately tell their healthcare professional if they experience symptoms of an allergic reaction on the day of administration or the day after ORENCIA administration (FDA ORENCIA label, section 17). Inform patients that serious infections have been reported in patients receiving ORENCIA (FDA ORENCIA label, section 17). Inform patients that live vaccines should not be given concurrently with ORENCIA or within 3 months of its discontinuation (FDA ORENCIA label, section 17). Tell patients that maltose is contained in intravenous ORENCIA and can give falsely elevated blood glucose readings with certain blood glucose monitors on the day of infusion; advise patients using GDH-PQQ-based monitoring systems to consider other methods of glucose monitoring (this does not apply to subcutaneous ORENCIA) (FDA ORENCIA label, section 17). Advise patients to follow the disposal instructions in the Instructions for Use, use a puncture-resistant sharps container, follow community guidelines for disposal and not recycle the container (FDA ORENCIA label, section 17).",
+    "warnings": [
+      "Increased risk of infection with concomitant use of TNF antagonists, other biologic RA/PsA therapy, or JAK inhibitors: infections 63% vs 43% and serious infections 4.4% vs 0.8% with TNF antagonists; such concomitant use is not recommended (FDA ORENCIA label, section 5.1)",
+      "Hypersensitivity reactions: anaphylaxis in 2 of 2688 adult RA patients (<0.1%) on intravenous ORENCIA; postmarketing fatal anaphylaxis after the first infusion and life-threatening angioedema, which can occur as early as after the first dose and may have a delayed onset of days; permanently discontinue ORENCIA after a serious allergic reaction (FDA ORENCIA label, sections 5.2 and 6.3)",
+      "Infections: serious infections including sepsis and pneumonia, some fatal; serious infections 3% vs 1.9% with placebo; higher rate with concurrent TNF antagonists; discontinue ORENCIA if a serious infection develops (FDA ORENCIA label, section 5.3)",
+      "Immunizations: live vaccines should not be given concurrently with ORENCIA or within 3 months after discontinuation; ORENCIA may blunt the effectiveness of some immunizations (FDA ORENCIA label, section 5.4)",
+      "Increased risk of adverse reactions in patients with chronic obstructive pulmonary disease: adverse events 97% vs 88%, respiratory disorders 43% vs 24%, serious adverse events 27% vs 6%; use with caution and monitor respiratory status (FDA ORENCIA label, section 5.5)",
+      "Immunosuppression: T-cell activation inhibitors may impair host defences against infections and malignancies; malignancies, including skin cancer, have been reported (FDA ORENCIA label, section 5.6)",
+      "Cytomegalovirus (CMV) and Epstein-Barr virus (EBV) reactivation in aGVHD prophylaxis after HSCT: post-transplant lymphoproliferative disorder in 4 of 116 patients (3.4%), all EBV-associated; CMV invasive disease in 7% of 116 patients, median onset 91 days post-transplant, predominantly gastrointestinal (FDA ORENCIA label, section 5.7)"
+    ],
+    "precautions": [
+      "Prior to initiating ORENCIA, screen for latent tuberculosis and treat patients with a positive screen by standard medical practice; the safety of ORENCIA in individuals with latent TB infection is unknown (FDA ORENCIA label, section 5.3).",
+      "Antirheumatic therapies have been associated with hepatitis B reactivation; perform viral hepatitis screening before starting therapy (FDA ORENCIA label, section 5.3).",
+      "Reconstitute each vial with 10 mL Sterile Water for Injection to 25 mg/mL using an 18- to 21-gauge needle, then further dilute to 100 mL; use the vial only if the vacuum is present, and discard the solution if opaque particles, discoloration or other foreign particles are present (FDA ORENCIA label, section 2.5).",
+      "Do not infuse ORENCIA concomitantly in the same intravenous line with other agents; no physical or biochemical compatibility studies have been conducted (FDA ORENCIA label, section 2.5).",
+      "May store the diluted ORENCIA solution at room temperature or refrigerate at 2 degrees C to 8 degrees C for up to 24 hours before use; discard if not administered within 24 hours (FDA ORENCIA label, section 2.5).",
+      "For subcutaneous use, inject the full amount, rotate injection sites, and avoid areas where the skin is tender, bruised, red or hard; visually inspect for particulate matter and discoloration before administration and do not use the product if these are present (FDA ORENCIA label, section 2.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious infections, including sepsis and pneumonia, some fatal; 3% of ORENCIA-treated versus 1.9% of placebo-treated adult RA patients (FDA ORENCIA label, sections 5.3 and 6.1)",
+      "Malignancies, including non-melanoma skin cancers (basal cell carcinoma and squamous cell carcinoma) (FDA ORENCIA label, sections 5.6, 6.1 and 6.3)",
+      "Anaphylaxis and life-threatening angioedema, including a postmarketing case of fatal anaphylaxis after the first infusion (FDA ORENCIA label, sections 5.2 and 6.3)",
+      "Post-transplant lymphoproliferative disorder in aGVHD prophylaxis (3.4% of 116 patients) (FDA ORENCIA label, section 5.7)",
+      "Cytomegalovirus invasive disease in aGVHD prophylaxis (7% of 116 patients) (FDA ORENCIA label, section 5.7)",
+      "Vasculitis, including cutaneous vasculitis and leukocytoclastic vasculitis, and new or worsening psoriasis (postmarketing) (FDA ORENCIA label, section 6.3)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The data with ORENCIA use in pregnant women are insufficient to inform on drug-associated risk, and there are no adequate and well-controlled studies of ORENCIA use in pregnant women (FDA ORENCIA label, section 8.1). It is unknown if abatacept can cross the placenta into the fetus when a woman is treated with ORENCIA during pregnancy; abatacept is an immunomodulatory agent, and it is unknown if the immune response of an infant exposed in utero to abatacept and subsequently given a live vaccine is affected, so risks and benefits should be considered prior to vaccinating such infants (FDA ORENCIA label, section 8.1, Clinical Considerations). In reproductive toxicology studies in rats and rabbits, no fetal malformations were observed with intravenous administration of ORENCIA during organogenesis at doses producing exposures approximately 29 times the maximum recommended human dose (10 mg/kg/month) on an AUC basis; however, in a pre- and postnatal development study in rats, ORENCIA altered immune function in female rats at 11 times the MRHD on an AUC basis, with a 9-fold increase in T-cell-dependent antibody response in female offspring on postnatal day 56 and thyroiditis in a single female pup on postnatal day 112 (FDA ORENCIA label, section 8.1). In a juvenile rat study, immune system abnormalities including inflammation of the thyroid and pancreas were observed (FDA ORENCIA label, section 8.4).",
+    "lactation_guidance": "There is no information regarding the presence of abatacept in human milk, the effects on the breastfed infant, or the effects on milk production. Abatacept was present in the milk of lactating rats dosed with abatacept (FDA ORENCIA label, section 8.2).",
+    "overdose": "ORENCIA doses up to 50 mg/kg (5 times the maximum recommended dose in patients aged 6 years and older and 3.3 times the maximum recommended dose in patients aged 2 to less than 6 years) have been administered intravenously without apparent toxic effect. In case of overdosage, monitor the patient for any signs or symptoms of adverse reactions and institute appropriate symptomatic treatment (FDA ORENCIA label, section 10).",
+    "pharmacokinetics": "Following multiple 10 mg/kg intravenous infusions in RA patients, mean (range) peak concentration was 295 (171-398) mcg/mL, terminal half-life 13.1 (8-25) days, systemic clearance 0.22 (0.13-0.47) mL/h/kg and volume of distribution 0.07 (0.02-0.13) L/kg; these were comparable to healthy subjects (single 10 mg/kg dose: Cmax 292 mcg/mL, terminal half-life 16.7 days, clearance 0.23 mL/h/kg, Vss 0.09 L/kg). In RA patients after multiple intravenous infusions, pharmacokinetics were proportional over the 2 to 10 mg/kg dose range, and at 10 mg/kg serum concentrations reached steady state by day 60 with a mean trough concentration of 24 mcg/mL (1 to 66 mcg/mL); no systemic accumulation occurred with monthly 10 mg/kg dosing. Population pharmacokinetic analyses showed a trend toward higher clearance with increasing body weight; age and gender (when corrected for body weight) did not affect clearance, and concomitant methotrexate, NSAIDs, corticosteroids and TNF antagonists did not influence abatacept clearance. No formal studies examined the effects of renal or hepatic impairment on abatacept pharmacokinetics (FDA ORENCIA label, section 12.3).",
+    "clinical_pearls": [
+      "Abatacept is a costimulation blocker, not a cytokine inhibitor: it works upstream by preventing CD80/CD86 from engaging CD28 on T cells, which is why it can be combined with conventional DMARDs but not with other biologic DMARDs or JAK inhibitors (FDA ORENCIA label, sections 1.5, 5.1 and 12.1).",
+      "A 30-minute intravenous loading infusion is optional when starting subcutaneous ORENCIA; if it is not given, the first subcutaneous 125 mg dose can be given at any time (FDA ORENCIA label, section 2.1).",
+      "Maltose in the intravenous formulation gives falsely elevated glucose readings with GDH-PQQ meters on the infusion day - this is a monitoring artefact, not hyperglycaemia, and does not apply to the subcutaneous formulation (FDA ORENCIA label, section 7.2).",
+      "There is no boxed warning on the ORENCIA label; the key risks are infection, hypersensitivity and immunosuppression-related malignancy (FDA ORENCIA label, sections 4, 5 and 6).",
+      "For aGVHD prophylaxis, antiviral prophylaxis is part of the regimen: EBV prophylaxis is required for 6 months post-transplant and CMV prophylaxis should be considered for 6 months post-transplant (FDA ORENCIA label, sections 2.4 and 5.7).",
+      "Immunogenicity is low: 34 of 1993 RA patients (2%) developed binding antibodies to abatacept or its CTLA-4 portion, with no correlation to clinical response or adverse events (FDA ORENCIA label, section 6.2)."
+    ],
+    "brand_names": ["ORENCIA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Intravenous: reconstitute each 250 mg vial with 10 mL Sterile Water for Injection, USP to 25 mg/mL, then further dilute to 100 mL and administer over 30 minutes for RA, pJIA and adult PsA, or 60 minutes for aGVHD prophylaxis. Use the vial only if the vacuum is present, gently swirl rather than shake, vent with a needle to dissipate foam, and inspect for particulate matter and discoloration before and after dilution; complete the infusion within 24 hours of reconstitution and discard the diluted solution if not administered within 24 hours (FDA ORENCIA label, sections 2.5 and 2.6). Subcutaneous: 125 mg/1 mL (prefilled syringe or ClickJect autoinjector) once weekly, or weight-based pediatric doses, administered by the patient or caregiver after training in subcutaneous injection technique; rotate injection sites and avoid tender, bruised, red or hard skin; the product should be clear to slightly opalescent and colorless to pale yellow and must not be used if it shows particulate matter or discoloration (FDA ORENCIA label, section 2.6). Storage: refrigerate the lyophilized powder and the prefilled syringes/autoinjectors at 2 degrees C to 8 degrees C (36 degrees F to 46 degrees F), protect from light in the original package, and do not allow the prefilled syringe or autoinjector to freeze (FDA ORENCIA label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ORENCIA (abatacept) for injection and injection (Bristol-Myers Squibb), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, ORENCIA (abatacept), sections 1.1-1.5 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ORENCIA (abatacept), section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ORENCIA (abatacept), sections 5.2-5.5, 6.1 (Tables 4-5), 6.2 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ORENCIA (abatacept), sections 2.1-2.6 (Tables 1 and 3), 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ORENCIA (abatacept), sections 5.1, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ORENCIA (abatacept), sections 5.2-5.7, 6.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ORENCIA (abatacept), section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ORENCIA (abatacept), sections 5.1-5.7 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ORENCIA (abatacept), sections 2.5, 2.6, 5.3 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ORENCIA (abatacept), sections 5.2, 5.3, 5.6, 5.7, 6.1 and 6.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA ORENCIA (abatacept) label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ORENCIA (abatacept), section 8.1 Pregnancy (Risk Summary, Clinical Considerations, Data) and section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ORENCIA (abatacept), section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ORENCIA (abatacept), section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ORENCIA (abatacept), section 12.3 Pharmacokinetics (Table 7)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ORENCIA (abatacept), sections 1.5, 2.1, 2.4, 4, 5.1, 5.7, 6.2, 7.2 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ORENCIA (abatacept) listed as a brand product on DailyMed (E.R. Squibb & Sons, L.L.C.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA ORENCIA (abatacept) label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ORENCIA (abatacept), sections 2.5, 2.6, 3 and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative pediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current ORENCIA label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)",
+    "renal_dose_adjustment (no renal dose adjustment is specified; section 12.3 states no formal studies examined the effect of renal impairment on abatacept pharmacokinetics)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified; section 12.3 states no formal studies examined the effect of hepatic impairment on abatacept pharmacokinetics)"
+  ],
+  "notes": "The table stores this agent as 'Abatacept'. Content is sourced from the current FDA label for ORENCIA (abatacept) for injection (intravenous) and ORENCIA (abatacept) injection / ORENCIA ClickJect autoinjector (subcutaneous), which are approved for four indications: adult RA, pJIA, PsA and aGVHD prophylaxis. Intravenous and subcutaneous presentations are not interchangeable: the IV formulation contains maltose (relevant to GDH-PQQ glucose meters) and requires reconstitution and dilution, while the SC formulation is ready to use and contains no maltose. The label has no boxed warning and no pregnancy category letter (PLLR format). The database 'brand_names' value ['ORENCIA'] is confirmed by the label."
+}

@@ -1,0 +1,210 @@
+{
+  "name": "Alfuzosin",
+  "existing_id": "2eb92a6e-0eff-46b1-bfea-573cad0a8a10",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alfuzosin is a selective antagonist of post-synaptic alpha 1-adrenoreceptors, which are located in the prostate, bladder base, bladder neck, prostatic capsule and prostatic urethra. Alfuzosin exhibits selectivity for alpha adrenergic receptors in the lower urinary tract; blockade of these adrenoreceptors can cause smooth muscle in the bladder neck and prostate to relax, resulting in an improvement in urine flow and a reduction of symptoms of benign prostatic hyperplasia (FDA UROXATRAL label, sections 12.1 and 12.2).",
+    "indications": [
+      "UROXATRAL is indicated for the treatment of signs and symptoms of benign prostatic hyperplasia (FDA UROXATRAL label, section 1).",
+      "Important limitations of use: UROXATRAL is not indicated for the treatment of hypertension and is not indicated for use in the pediatric population (FDA UROXATRAL label, section 1.1)."
+    ],
+    "contraindications": [
+      "Moderate or severe hepatic impairment (Childs-Pugh categories B and C), since alfuzosin blood levels are increased in these patients (FDA UROXATRAL label, section 4).",
+      "Co-administration with potent CYP3A4 inhibitors such as ketoconazole, itraconazole and ritonavir, since alfuzosin blood levels are increased (FDA UROXATRAL label, section 4).",
+      "Known hypersensitivity, such as urticaria and angioedema, to alfuzosin hydrochloride or any component of UROXATRAL tablets (FDA UROXATRAL label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions in clinical studies (incidence 2% or higher and at a higher incidence than placebo): dizziness, upper respiratory tract infection, headache and fatigue (FDA UROXATRAL label, section 6).",
+      "In three placebo-controlled trials involving 1,608 men (473 received UROXATRAL 10 mg extended-release tablets), adverse reactions occurring in 2% or more of patients and more often than placebo were dizziness 5.7% versus 2.8%, upper respiratory tract infection 3.0% versus 0.6%, headache 3.0% versus 1.8% and fatigue 2.7% versus 1.8%. Overall 4% of UROXATRAL patients withdrew from the trial due to adverse reactions compared with 3% on placebo (FDA UROXATRAL label, section 6.1, Table 1).",
+      "Reported in 1% to 2% of patients and more frequently than with placebo: body as a whole - pain; gastrointestinal system - abdominal pain, dyspepsia, constipation, nausea; reproductive system - impotence; respiratory system - bronchitis, sinusitis, pharyngitis (FDA UROXATRAL label, section 6.1).",
+      "Symptoms possibly associated with orthostasis: dizziness 5.7%, hypotension or postural hypotension 0.4% and syncope 0.2%. Decreased systolic blood pressure (90 mmHg or lower with a decrease of 20 mmHg or more from baseline) was seen in 1 of 469 UROXATRAL patients (0.2%) versus none of 674 placebo patients; a positive orthostatic test (fall of 20 mmHg or more in systolic pressure on standing) was seen in 6.6% of UROXATRAL patients versus 7.7% of placebo patients (FDA UROXATRAL label, section 6.1, Table 2).",
+      "Post-marketing experience: edema; tachycardia, chest pain, angina pectoris in patients with pre-existing coronary artery disease and atrial fibrillation; diarrhea and vomiting; hepatocellular and cholestatic liver injury, including cases with jaundice leading to drug discontinuation; rhinitis; priapism; rash, pruritus, urticaria, angioedema and toxic epidermal necrolysis; flushing; thrombocytopenia (FDA UROXATRAL label, section 6.2).",
+      "Intraoperative floppy iris syndrome (IFIS) has been reported during cataract surgery in some patients on or previously treated with alpha adrenergic antagonists (FDA UROXATRAL label, sections 5.6 and 6.2).",
+      "Priapism (persistent painful penile erection unrelated to sexual activity) has been reported rarely, probably in fewer than 1 in 50,000 patients, and can lead to permanent impotence if not properly treated (FDA UROXATRAL label, section 5.7)."
+    ],
+    "dosage": {
+      "adult": "The recommended dosage is one 10 mg UROXATRAL (alfuzosin HCl) extended-release tablet once daily. The extent of absorption of alfuzosin is 50% lower under fasting conditions, therefore the tablet should be taken with food and with the same meal each day. Tablets should not be chewed or crushed (FDA UROXATRAL label, section 2).",
+      "geriatric": "Of the total number of subjects in clinical studies of UROXATRAL, 48% were 65 years of age and over and 11% were 75 and over. No overall differences in safety or effectiveness were observed between these subjects and younger subjects, but greater sensitivity of some older individuals cannot be ruled out. In a pharmacokinetic assessment during phase 3 studies there was no relationship between peak plasma concentrations of alfuzosin and age, but trough levels were positively correlated with age, with concentrations in subjects 75 years of age or older approximately 35% greater than in those below 65 years of age (FDA UROXATRAL label, sections 8.5 and 12.3).",
+      "paediatric": "UROXATRAL is not indicated for use in the pediatric population. In a randomized, double-blind, placebo-controlled trial in 172 patients aged 2 to 16 years with elevated detrusor leak point pressure of neurologic origin, no statistically significant difference was observed between alfuzosin and placebo, and alfuzosin was not studied in patients below the age of 2 (FDA UROXATRAL label, sections 1.1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Potent CYP3A4 inhibitors: UROXATRAL is contraindicated for use with potent CYP3A4 inhibitors such as ketoconazole, itraconazole or ritonavir. Repeated oral administration of ketoconazole 400 mg/day increased alfuzosin Cmax by 2.3-fold and AUC by 3.2-fold after a single 10 mg dose (FDA UROXATRAL label, sections 7.1 and 12.3).",
+      "Other alpha adrenergic antagonists: pharmacokinetic and pharmacodynamic interactions between UROXATRAL and other alpha adrenergic antagonists have not been determined, but interactions may be expected and UROXATRAL should not be used in combination with other alpha adrenergic antagonists (FDA UROXATRAL label, section 7.2).",
+      "Antihypertensive medication and nitrates: there may be an increased risk of hypotension, postural hypotension and syncope when taking UROXATRAL concomitantly with antihypertensive medication and nitrates (FDA UROXATRAL label, section 7.3).",
+      "PDE5 inhibitors: caution is advised when alpha adrenergic antagonists are co-administered with PDE5 inhibitors, because both are vasodilators that can lower blood pressure and concomitant use can potentially cause symptomatic hypotension (FDA UROXATRAL label, section 7.4).",
+      "Moderate CYP3A4 inhibitors: co-administration of diltiazem 240 mg/day increased alfuzosin Cmax by 1.5-fold and AUC0-24 by 1.3-fold, and alfuzosin increased diltiazem Cmax by 1.4-fold; no blood pressure changes were observed in that study, but the combination with antihypertensive medication still carries a risk of hypotension (FDA UROXATRAL label, section 12.3).",
+      "Warfarin: multiple dose administration of an immediate-release alfuzosin 5 mg twice daily for six days did not affect the pharmacological response to a single 25 mg oral dose of warfarin (FDA UROXATRAL label, section 12.3)."
+    ],
+    "monitoring": "Assess blood pressure before starting treatment and monitor for postural hypotension and syncope, especially in patients with symptomatic hypotension, those who have had a hypotensive response to other medications, and those taking antihypertensive medication or nitrates (FDA UROXATRAL label, sections 5.1 and 7.3). Patients thought to have BPH should be examined to rule out the presence of carcinoma of the prostate before starting treatment (FDA UROXATRAL label, section 5.5). Instruct patients to tell their ophthalmologist about alfuzosin use before cataract surgery or other procedures involving the eyes, because intraoperative floppy iris syndrome may occur and may require modification of the surgical technique (FDA UROXATRAL label, sections 5.6 and 17.2). Monitor for priapism, which requires immediate attention because of the risk of permanent erectile dysfunction (FDA UROXATRAL label, sections 5.7 and 17.3). Discontinue UROXATRAL if symptoms of angina pectoris appear or worsen (FDA UROXATRAL label, section 5.8). Use caution in patients with severe renal impairment (creatinine clearance below 30 mL/min) (FDA UROXATRAL label, sections 5.2 and 8.6).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling before starting UROXATRAL, and to tell their ophthalmologist about their use of UROXATRAL before cataract surgery or other procedures involving the eyes, even if they are no longer taking the drug (FDA UROXATRAL label, sections 17 and 17.2). Tell patients about the possible occurrence of postural hypotension symptoms such as dizziness when beginning UROXATRAL, and caution them about driving, operating machinery or performing hazardous tasks during this period, which is especially important for those with low blood pressure or who are taking antihypertensive medications or nitrates (FDA UROXATRAL label, section 17.1). Advise patients about the possibility of priapism; although extremely rare, if it is not brought to immediate medical attention it can lead to permanent erectile dysfunction (FDA UROXATRAL label, section 17.3). Instruct patients to take UROXATRAL with food and with the same meal each day and not to crush or chew the tablets (FDA UROXATRAL label, section 17.4).",
+    "warnings": [
+      "Postural hypotension with or without symptoms (for example dizziness) may develop within a few hours following administration of UROXATRAL; as with other alpha adrenergic antagonists there is a potential for syncope, and the risk of hypotension, postural hypotension and syncope is increased with concomitant antihypertensive medication and nitrates (FDA UROXATRAL label, section 5.1).",
+      "Caution should be exercised when UROXATRAL is administered in patients with severe renal impairment (creatinine clearance below 30 mL/min) (FDA UROXATRAL label, section 5.2).",
+      "Caution should be exercised when UROXATRAL is administered in patients with mild hepatic impairment, because pharmacokinetics have not been studied in that group; UROXATRAL is contraindicated in moderate to severe hepatic impairment (FDA UROXATRAL label, section 5.3).",
+      "UROXATRAL should not be used in combination with other alpha adrenergic antagonists (FDA UROXATRAL label, section 5.4).",
+      "Prostate carcinoma should be ruled out prior to treatment, because carcinoma of the prostate and benign prostatic hyperplasia cause many of the same symptoms and frequently coexist (FDA UROXATRAL label, section 5.5).",
+      "Intraoperative floppy iris syndrome (IFIS) has been observed during cataract surgery in some patients on or previously treated with alpha adrenergic antagonists; the ophthalmologist should be prepared for modifications of the surgical technique such as iris hooks, iris dilator rings or viscoelastic substances. There does not appear to be a benefit to stopping alpha adrenergic antagonist therapy prior to cataract surgery (FDA UROXATRAL label, section 5.6).",
+      "Priapism (persistent painful penile erection unrelated to sexual activity) has been associated with alfuzosin, rarely (probably fewer than 1 in 50,000); because it can lead to permanent impotence if not properly treated, patients should be advised about the seriousness of the condition (FDA UROXATRAL label, section 5.7).",
+      "Discontinue UROXATRAL if symptoms of angina pectoris appear or worsen (FDA UROXATRAL label, section 5.8).",
+      "Use with caution in patients with congenital or acquired QT prolongation or who are taking medications that prolong the QT interval (FDA UROXATRAL label, section 5.9)."
+    ],
+    "precautions": [
+      "UROXATRAL is not indicated for the treatment of hypertension and is not indicated for use in the pediatric population (FDA UROXATRAL label, section 1.1).",
+      "The extended-release tablet must be taken with food and with the same meal each day, because the extent of absorption of alfuzosin is 50% lower under fasting conditions; tablets should not be chewed or crushed (FDA UROXATRAL label, section 2).",
+      "Approximately 20% to 30% of patients in the phase 3 trials were taking antihypertensive medication, and the combination of UROXATRAL with antihypertensive medication or nitrates carries an increased risk of hypotension, postural hypotension and syncope (FDA UROXATRAL label, sections 6.1 and 7.3).",
+      "In an active-control QT study the mean placebo-subtracted QTcF increase of alfuzosin 10 mg alone was 1.9 msec (upper-bound 95% CI 5.5 msec), and the QT effect appeared greater at 40 mg than at 10 mg; there has been no signal of torsade de pointes in the extensive post-marketing experience with alfuzosin outside the United States (FDA UROXATRAL label, section 12.2).",
+      "Safety data are available in only a limited number of patients (n=6) with creatinine clearance below 30 mL/min, so caution should be exercised in severe renal impairment (FDA UROXATRAL label, section 8.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Postural hypotension and syncope (FDA UROXATRAL label, sections 5.1 and 6.1).",
+      "Priapism, with risk of permanent erectile dysfunction (FDA UROXATRAL label, sections 5.7 and 6.2).",
+      "Intraoperative floppy iris syndrome during cataract surgery (FDA UROXATRAL label, sections 5.6 and 6.2).",
+      "Hepatocellular and cholestatic liver injury, including cases with jaundice leading to drug discontinuation (FDA UROXATRAL label, section 6.2).",
+      "Hypersensitivity reactions including rash, pruritus, urticaria, angioedema and toxic epidermal necrolysis (FDA UROXATRAL label, section 6.2).",
+      "Angina pectoris in patients with pre-existing coronary artery disease (FDA UROXATRAL label, sections 5.8 and 6.2)."
+    ],
+    "food_interactions": [
+      "Take with food: the extent of absorption of alfuzosin is 50% lower under fasting conditions, therefore UROXATRAL should be taken with food and with the same meal each day (FDA UROXATRAL label, sections 2 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "UROXATRAL is not indicated for use in women and there are no adequate data on the developmental risk associated with use of UROXATRAL in pregnant women. Based on findings from animal studies, alfuzosin administered during organogenesis was not teratogenic, embryotoxic or fetotoxic at up to 1200 times the maximum recommended human dose of 10 mg via AUC in rats and 3 times in rabbits on a body surface area basis; gestation was slightly prolonged in rats at exposures approximately 12 times the maximum recommended human dose, but difficulties with parturition were not observed. In the US general population, the estimated background risk of major birth defects and miscarriages in clinically recognised pregnancies is 2 to 4% and 15 to 20% respectively (FDA UROXATRAL label, section 8.1).",
+    "lactation_guidance": "UROXATRAL is not indicated for use in women; there are no data on the presence of UROXATRAL in human milk, the effect on the breastfed child, or the effect on milk production (FDA UROXATRAL label, section 8.2).",
+    "overdose": "Should overdose of UROXATRAL lead to hypotension, support of the cardiovascular system is of first importance. Restoration of blood pressure and normalization of heart rate may be accomplished by keeping the patient in the supine position. If this measure is inadequate, the administration of intravenous fluids should be considered; if necessary, vasopressors should then be used, and renal function should be monitored and supported as needed. Alfuzosin is 82% to 90% protein bound, therefore dialysis may not be of benefit (FDA UROXATRAL label, section 10).",
+    "pharmacokinetics": "The absolute bioavailability of UROXATRAL 10 mg tablets under fed conditions is 49%. Following multiple dosing of 10 mg under fed conditions the time to maximum concentration is 8 hours, with Cmax 13.6 (SD 5.6) ng/mL and AUC0-24 194 (SD 75) ng*h/mL. UROXATRAL exhibits linear kinetics following single and multiple dosing up to 30 mg; steady-state plasma levels are reached with the second dose and steady-state concentrations are 1.2- to 1.6-fold higher than after a single administration. The extent of absorption is 50% lower under fasting conditions. The volume of distribution following intravenous administration was 3.2 L/kg, and alfuzosin is moderately bound to human plasma proteins (82% to 90%). Alfuzosin undergoes extensive hepatic metabolism by oxidation, O-demethylation and N-dealkylation, with CYP3A4 the principal hepatic enzyme isoform involved; the metabolites are not pharmacologically active and only 11% of the administered dose is excreted unchanged in the urine. Following oral administration of radiolabelled alfuzosin solution, recovery of radioactivity after 7 days was 69% in feces and 24% in urine, and the apparent elimination half-life of UROXATRAL 10 mg tablets is 10 hours (FDA UROXATRAL label, section 12.3).",
+    "clinical_pearls": [
+      "Food is not optional with this formulation: absorption is 50% lower when fasting, so the extended-release tablet should always be taken with the same meal each day and never crushed or chewed (FDA UROXATRAL label, sections 2 and 12.3).",
+      "Always tell the ophthalmologist about alfuzosin use before cataract surgery - IFIS may occur even after the drug has been stopped, and there is no benefit to stopping alpha adrenergic antagonists before cataract surgery (FDA UROXATRAL label, sections 5.6 and 17.2).",
+      "Rule out prostate carcinoma before starting treatment, because carcinoma of the prostate and BPH cause many of the same symptoms and frequently coexist (FDA UROXATRAL label, section 5.5).",
+      "Contraindicated with potent CYP3A4 inhibitors (ketoconazole, itraconazole, ritonavir) because alfuzosin exposure rises roughly two- to three-fold; caution is needed with moderate inhibitors such as diltiazem (FDA UROXATRAL label, sections 4, 7.1 and 12.3).",
+      "Renal impairment increases exposure by about 50% at all levels, so use caution below a creatinine clearance of 30 mL/min; Child-Pugh B or C hepatic impairment is a contraindication because clearance falls to one-third to one-fourth of normal, giving three- to four-fold higher plasma concentrations (FDA UROXATRAL label, sections 8.6, 8.7 and 12.3).",
+      "The QT effect of alfuzosin appears greater at 40 mg than at 10 mg, but there has been no signal of torsade de pointes in the extensive post-marketing experience with alfuzosin outside the United States (FDA UROXATRAL label, section 12.2).",
+      "UROXATRAL is not an antihypertensive; it must not be used for the treatment of hypertension (FDA UROXATRAL label, section 1.1)."
+    ],
+    "brand_names": ["Uroxatral"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific dose adjustment is stated. Systemic exposure (Cmax and AUC) was increased by approximately 50% in patients with mild, moderate or severe renal impairment; safety data are available in only a limited number of patients (n=6) with creatinine clearance below 30 mL/min, so caution should be exercised in severe renal impairment (FDA UROXATRAL label, sections 5.2, 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "No dose adjustment can be recommended for mild hepatic impairment because the pharmacokinetics of UROXATRAL have not been studied in that group, so caution should be exercised. UROXATRAL is contraindicated in moderate to severe hepatic impairment (Child-Pugh categories B and C), where plasma apparent clearance is reduced to approximately one-third to one-fourth of that in healthy subjects, producing three- to four-fold higher plasma concentrations of alfuzosin (FDA UROXATRAL label, sections 4, 5.3, 8.7 and 12.3).",
+    "administration_instructions": "Oral. Take one 10 mg extended-release tablet once daily with food and with the same meal each day; the extent of absorption is 50% lower under fasting conditions so the tablet must not be taken on an empty stomach. Swallow whole - do not chew or crush (FDA UROXATRAL label, sections 2 and 17.4). UROXATRAL (alfuzosin HCl) extended-release 10 mg tablets are supplied in bottles of 30 and 100 with child-resistant closure (FDA UROXATRAL label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA UROXATRAL (alfuzosin HCl) extended-release label, sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA UROXATRAL label, sections 1 and 1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA UROXATRAL label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA UROXATRAL label, sections 5.6, 5.7, 6, 6.1 (Tables 1 and 2) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA UROXATRAL label, section 2, sections 8.4 and 8.5, and section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA UROXATRAL label, sections 7.1-7.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA UROXATRAL label, sections 5.1, 5.2, 5.5, 5.6, 5.7, 5.8, 8.6 and 17.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA UROXATRAL label, section 17 and subsections 17.1-17.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA UROXATRAL label, section 5 and subsections 5.1-5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA UROXATRAL label, sections 1.1, 2, 6.1, 7.3, 8.6 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA UROXATRAL label, sections 5.1, 5.6, 5.7, 5.8, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA UROXATRAL label, section 2 and Clinical Pharmacology 12.3 (Effect of Food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA UROXATRAL label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA UROXATRAL label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA UROXATRAL label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA UROXATRAL label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA UROXATRAL label, sections 1.1, 2, 5.6, 5.5, 8.6, 8.7, 12.2, 12.3 and 17.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "UROXATRAL (alfuzosin HCl) extended-release tablet label (DB row lists the generic 'Alfuzosin Hydrochloride')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning in the UROXATRAL label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA UROXATRAL label, sections 5.2, 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA UROXATRAL label, sections 4, 5.3, 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA UROXATRAL label, sections 2, 16 and 17.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fc7f119-f36b-44cf-945d-940160f3afe3"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (current label uses the PLLR risk summary; no FDA pregnancy letter category stated)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; UROXATRAL is not indicated in the pediatric population; narrative provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning in the UROXATRAL label)"
+  ],
+  "notes": "The table stores this agent as 'Alfuzosin'. The US label is for alfuzosin hydrochloride extended-release tablets (UROXATRAL); the DB row brand_names lists the generic 'Alfuzosin Hydrochloride'. An immediate-release alfuzosin product is marketed outside the United States, but this draft uses the US extended-release label throughout because the dosing, food requirement and hepatic/renal contraindications differ by formulation. UROXATRAL is not indicated for hypertension and is not indicated in pediatric patients. There is no boxed warning in the label."
+}

@@ -1,0 +1,206 @@
+{
+  "name": "Ambrisentan",
+  "existing_id": "f141144a-8755-4c20-ac9b-d7a6a1300402",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Endothelin-1 (ET-1) is a potent autocrine and paracrine peptide, and two receptor subtypes, ETA and ETB, mediate its effects in vascular smooth muscle and endothelium. The primary actions of ETA are vasoconstriction and cell proliferation, while the predominant actions of ETB are vasodilation, antiproliferation and ET-1 clearance. In patients with pulmonary arterial hypertension, plasma ET-1 concentrations are increased as much as 10-fold and correlate with increased mean right atrial pressure and disease severity, and ET-1 and ET-1 mRNA concentrations in lung tissue are increased as much as 9-fold, primarily in the endothelium of pulmonary arteries, suggesting that ET-1 plays a critical role in the pathogenesis and progression of PAH. Ambrisentan is a high-affinity (Ki = 0.011 nM) ETA receptor antagonist with high selectivity for ETA versus ETB (>4000-fold); the clinical impact of this high ETA selectivity is not known (Letairis label, section 12.1 Mechanism of Action).",
+    "indications": [
+      "Treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) in adult patients: to improve exercise ability and delay clinical worsening (Letairis label, section 1)",
+      "In combination with tadalafil to reduce the risks of disease progression and hospitalization for worsening PAH, and to improve exercise ability (Letairis label, section 1)",
+      "The studies establishing effectiveness included predominantly patients with WHO Functional Class II-III symptoms and etiologies of idiopathic or heritable PAH (60%) or PAH associated with connective tissue diseases (34%) (Letairis label, section 1)",
+      "Not indicated for idiopathic pulmonary fibrosis: in a randomized study in IPF, with or without pulmonary hypertension (WHO Group 3), Letairis was associated with a greater risk of disease progression or death and the study was terminated after 34 weeks for lack of efficacy (Letairis label, sections 4.2 and 14.4)"
+    ],
+    "contraindications": [
+      "Pregnancy: Letairis may cause fetal harm when administered to a pregnant female and is contraindicated in females who are pregnant; it was consistently shown to have teratogenic effects in animals (Letairis label, section 4.1)",
+      "Idiopathic pulmonary fibrosis (IPF), including IPF patients with pulmonary hypertension (WHO Group 3) (Letairis label, section 4.2)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (>3% compared to placebo in ARIES-1 and ARIES-2): peripheral edema (placebo-adjusted 6%), nasal congestion (4%), sinusitis (3%) and flushing (3%); most adverse reactions were mild to moderate and only nasal congestion was dose-dependent (Letairis label, section 6.1)",
+      "Peripheral edema was more common in elderly patients (>=65 years) receiving Letairis (29%) than in younger patients (14%), compared with 4% and 13% respectively for placebo; subgroup analyses must be interpreted cautiously (Letairis label, section 6.1)",
+      "When used in combination with tadalafil in AMBITION, adverse reactions reported more commonly (>5%) than on either monotherapy were peripheral edema (45% combination vs 38% ambrisentan vs 28% tadalafil), headache (41%), nasal congestion (19%), cough (18%), anemia (15%), dyspepsia (11%) and bronchitis (10%) (Letairis label, section 6.1)",
+      "Clinically significant adverse reactions: embryo-fetal toxicity, fluid retention, pulmonary edema with pulmonary veno-occlusive disease (PVOD), decreased sperm count and hematological changes (decreased hemoglobin) (Letairis label, section 6)",
+      "Postmarketing: anemia requiring transfusion, heart failure associated with fluid retention, symptomatic hypotension, and hypersensitivity (for example angioedema and rash); elevations of liver aminotransferases (ALT, AST) have been reported, and in most cases alternative causes of liver injury could be identified (Letairis label, section 6.2)",
+      "During 12-week controlled clinical trials, the incidence of aminotransferase elevations >3 x ULN was 0% on Letairis and 2.3% on placebo (Letairis label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "Initiate treatment at 5 mg once daily, with or without tadalafil 20 mg once daily. At 4-week intervals, either the dose of Letairis or tadalafil can be increased, as needed and tolerated, to Letairis 10 mg or tadalafil 40 mg. Do not split, crush or chew tablets. When coadministered with cyclosporine, limit the dose of ambrisentan to 5 mg once daily (Letairis label, sections 2, 2.1 and 7).",
+      "geriatric": "In the two placebo-controlled clinical studies, 21% of patients were 65 years and older and 5% were 75 years and older. Elderly patients (>=65 years) showed less improvement in walk distance with Letairis than younger patients, and peripheral edema was more common in the elderly than in younger patients; these subgroup results must be interpreted cautiously. No specific geriatric dose adjustment is stated in the label (Letairis label, section 8.5).",
+      "paediatric": "Safety and effectiveness of Letairis in pediatric patients have not been established. In juvenile rats given ambrisentan orally once daily from postnatal day 7 to 26, 36 or 62, a decrease in brain weight (-3% to -8%) with no morphologic or neurobehavioral changes occurred after breathing sounds, apnea and hypoxia, at exposures approximately 1.8 to 7.0 times human pediatric exposures at 10 mg based on AUC (Letairis label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Cyclosporine: multiple-dose coadministration of ambrisentan and cyclosporine resulted in an approximately 2-fold increase in ambrisentan exposure in healthy volunteers, so the dose of ambrisentan must be limited to 5 mg once daily when coadministered with cyclosporine (Letairis label, section 7)",
+      "No other clinically relevant drug interaction has been demonstrated with ambrisentan. In vitro studies indicate that ambrisentan is a substrate of CYP3A, CYP2C19 and uridine 5'-diphosphate glucuronosyltransferases (UGTs) 1A9S, 2B7S and 1A3S, and of the organic anion transporting polypeptides OATP1B1 and OATP1B3 and P-glycoprotein; ambrisentan does not inhibit or induce drug-metabolising enzymes at clinically relevant concentrations (Letairis label, section 12.3)"
+    ],
+    "monitoring": "Obtain a pregnancy test before initiating treatment in females of reproductive potential and advise effective contraception before initiation, during treatment and for one month after discontinuation; discontinue as soon as possible if pregnancy is detected (Letairis label, sections 2.2, 5.1 and 8.1). Measure hemoglobin prior to initiation of Letairis, at one month, and periodically thereafter, because marked decreases (>15% from baseline resulting in a value below the lower limit of normal) occurred in 7% of patients receiving Letairis (10% at 10 mg) versus 4% on placebo; initiation is not recommended in patients with clinically significant anemia, and a clinically significant decrease in hemoglobin with other causes excluded is a reason to consider discontinuation (Letairis label, section 5.5). Evaluate clinically significant fluid retention, with or without weight gain, for cause and possible need for diuretic therapy or discontinuation; peripheral edema has been reported within weeks of starting therapy, sometimes requiring hospitalisation for decompensating heart failure (Letairis label, section 5.2). If acute pulmonary edema develops during initiation of therapy, consider pulmonary veno-occlusive disease and discontinue if confirmed (Letairis label, section 5.3). Investigate the cause of liver injury fully if hepatic impairment develops; discontinue Letairis if aminotransferase elevations are >5 x ULN, or if accompanied by bilirubin >2 x ULN, or by signs or symptoms of liver dysfunction and other causes are excluded (Letairis label, section 8.7). Counsel male patients about potential effects on spermatogenesis and on fertility (Letairis label, sections 5.4 and 8.3).",
+    "patient_counselling": "Advise patients to read the FDA-approved Medication Guide (Letairis label, section 17). Explain that Letairis can cause serious birth defects if taken during pregnancy: females who are able to get pregnant should have a negative pregnancy test before starting, use effective contraception before beginning, during treatment and for one month after stopping, contact the doctor right away if a menstrual period is missed or pregnancy is suspected, and not have unprotected sex (Letairis label, Medication Guide). Advise the patient to report any symptoms of potential liver injury - loss of appetite, nausea or vomiting, fever, achiness, generally feeling unwell, pain in the upper right abdominal area, yellowing of skin or the whites of the eyes, dark urine or itching (Letairis label, Medication Guide). Emphasise the importance of haemoglobin blood tests before starting and during treatment, and that low red blood cell levels (anaemia) can occur in the first weeks and may require transfusion (Letairis label, section 17 and Medication Guide). Tell patients to report unusual weight gain, tiredness or trouble breathing straight away, as swelling all over the body (fluid retention) can occur within weeks of starting treatment and may need treatment or hospitalisation (Letairis label, Medication Guide). Inform male patients that decreased sperm counts have occurred with medicines like Letairis and may affect the ability to father a child, and tell the doctor if being able to have children is important (Letairis label, section 17 and Medication Guide). Advise that Letairis may be taken with or without food, that tablets should not be split, crushed or chewed, that the dose should be taken at the same time each day, that a missed dose should be taken as soon as remembered that day without doubling up, and that it is not known whether Letairis passes into breast milk so the patient should not breastfeed while taking it (Letairis label, Medication Guide).",
+    "warnings": [
+      "WARNING (boxed): EMBRYO-FETAL TOXICITY - Letairis is contraindicated for use during pregnancy because it may cause major birth defects if used by pregnant patients, based on studies in animals; for females of reproductive potential, exclude pregnancy before the initiation of treatment, advise use of effective contraception before initiation, during treatment and for one month after treatment, and discontinue Letairis as soon as possible when pregnancy is detected (Letairis label, Boxed Warning)",
+      "Fluid retention: peripheral oedema is a known class effect of endothelin receptor antagonists and a clinical consequence of PAH; postmarketing reports of fluid retention have occurred within weeks of starting Letairis, requiring diuretic therapy, fluid management, or in some cases hospitalisation for decompensating heart failure; peripheral oedema/fluid retention is more common with Letairis plus tadalafil than with either agent alone (Letairis label, section 5.2)",
+      "Pulmonary oedema with pulmonary veno-occlusive disease (PVOD): if patients develop acute pulmonary oedema during initiation of therapy with vasodilating agents such as Letairis, the possibility of PVOD should be considered and, if confirmed, Letairis should be discontinued (Letairis label, section 5.3)",
+      "Decreased sperm counts: decreased sperm counts have been observed with another endothelin receptor antagonist in humans and in animal fertility studies with ambrisentan; Letairis may have an adverse effect on spermatogenesis and patients should be counselled about potential effects on fertility (Letairis label, section 5.4)",
+      "Haematological changes: decreases in haemoglobin concentration and haematocrit are observed within the first few weeks of treatment and stabilise thereafter, with a mean decrease from baseline to end of treatment of 0.8 g/dL in the 12-week placebo-controlled studies; postmarketing reports include anaemia requiring transfusion (Letairis label, section 5.5)",
+      "Hepatic impairment: Letairis is not recommended in patients with moderate or severe hepatic impairment, and in patients who develop hepatic impairment after initiation the cause must be fully investigated, with discontinuation if aminotransferases are >5 x ULN, or if accompanied by bilirubin >2 x ULN or signs or symptoms of liver dysfunction with other causes excluded (Letairis label, section 8.7)"
+    ],
+    "precautions": [
+      "Exclude pregnancy before initiating treatment in females of reproductive potential, verify that patients who can become pregnant are not pregnant, and contact the physician immediately for pregnancy testing if onset of menses is delayed or pregnancy is suspected (Letairis label, sections 2.2 and 8.3)",
+      "Patients who can become pregnant should use effective contraception prior to initiation, during treatment, and for one month after discontinuation of treatment with ambrisentan (Letairis label, section 8.3)",
+      "Limit the ambrisentan dose to 5 mg once daily when coadministered with cyclosporine (Letairis label, section 7)",
+      "Do not split, crush or chew tablets; they are unscored film-coated tablets and are to be taken once daily (Letairis label, sections 2.1 and 11)",
+      "Counsel males that endothelin receptor antagonists such as ambrisentan cannot be excluded as having an adverse effect on spermatogenesis, based on bosentan data and preclinical findings (Letairis label, section 8.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Embryo-fetal toxicity: major birth defects and fetal death; contraindicated in pregnancy (Letairis label, Boxed Warning and sections 4.1, 5.1 and 8.1)",
+      "Fluid retention with peripheral oedema, weight gain and decompensating heart failure requiring diuretic therapy, fluid management or hospitalisation (Letairis label, section 5.2)",
+      "Pulmonary oedema in the setting of pulmonary veno-occlusive disease (Letairis label, section 5.3)",
+      "Anaemia requiring transfusion (Letairis label, sections 5.5 and 6.2)",
+      "Symptomatic hypotension and heart failure associated with fluid retention (Letairis label, section 6.2)",
+      "Hypersensitivity reactions, including angioedema and rash (Letairis label, section 6.2)",
+      "Hepatic injury: other endothelin receptor antagonists have been associated with aminotransferase elevations, hepatotoxicity and cases of liver failure (Letairis label, sections 6.1, 6.2 and 8.7)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Letairis may cause fetal harm, including birth defects and fetal death, when administered to a pregnant woman, and is contraindicated during pregnancy. Available human data for endothelin receptor antagonists have not identified an increased risk of major birth defects, but these data are limited by lack of a control group, limited information on dose, duration and timing of exposure, and missing data. In animal reproduction studies, ambrisentan was teratogenic in rats at oral dosages of 15 mg/kg/day or higher (3.5 times the human dose of 10 mg/day based on AUC) and in rabbits at 7 mg/kg/day or higher (1.7 times the human dose), with abnormalities of the lower jaw and hard and soft palate, malformation of the heart and great vessels, and failure of formation of the thymus and thyroid. A preclinical rat study showed decreased survival of newborn pups and effects on testicle size and fertility of pups after maternal treatment from late gestation through weaning. A pregnancy test must be obtained before initiation, effective contraception is required before initiation, during treatment and for one month after treatment, and Letairis must be discontinued as soon as possible if pregnancy is detected (Letairis label, sections 2.2, 4.1, 5.1, 8.1 and 8.3).",
+    "lactation_guidance": "It is not known whether ambrisentan is present in human milk. Because many drugs are present in human milk and because of the potential for serious adverse reactions in breastfed infants from Letairis, a decision should be made whether to discontinue breastfeeding or discontinue Letairis, taking into account the importance of the drug to the mother (Letairis label, section 8.2). The Medication Guide additionally states that it is not known whether Letairis passes into breast milk and that the patient should not breastfeed while taking Letairis (Letairis label, Medication Guide).",
+    "overdose": "There is no experience with overdosage of Letairis. The highest single dose administered to healthy volunteers was 100 mg, and the highest daily dose administered to patients with PAH was 10 mg once daily. In healthy volunteers, single doses of 50 mg and 100 mg (5 to 10 times the maximum recommended dose) were associated with headache, flushing, dizziness, nausea and nasal congestion. Massive overdosage could potentially result in hypotension that may require intervention (Letairis label, section 10).",
+    "pharmacokinetics": "The pharmacokinetics of ambrisentan are dose proportional in healthy subjects; the absolute bioavailability is not known. Ambrisentan is absorbed with peak concentrations occurring approximately 2 hours after oral administration in healthy subjects and in PAH patients, and food does not affect its bioavailability. It is highly bound to plasma proteins (99%). Elimination is predominantly by non-renal pathways, although the relative contributions of metabolism and biliary elimination have not been well characterised; the AUC of 4-hydroxymethyl ambrisentan is approximately 4% of the parent ambrisentan AUC, and in vivo inversion of S-ambrisentan to R-ambrisentan is negligible. Mean oral clearance is 38 mL/min in healthy subjects and 19 mL/min in PAH patients. Although ambrisentan has a 15-hour terminal half-life, the mean trough concentration at steady state is about 15% of the mean peak concentration and the accumulation factor is about 1.2 after long-term daily dosing, indicating an effective half-life of about 9 hours (Letairis label, section 12.3).",
+    "clinical_pearls": [
+      "Ambrisentan is approved only for WHO Group 1 pulmonary arterial hypertension; in idiopathic pulmonary fibrosis it increased disease progression and death, with more patients dying (8% vs 4%), more respiratory hospitalisations (13% vs 6%) and more FVC/DLCO decreases (17% vs 12%), so it is contraindicated in IPF (Letairis label, sections 4.2 and 14.4).",
+      "In AMBITION, initial combination therapy with ambrisentan 5 mg and tadalafil 20 mg daily (titrated at 4 weeks and ambrisentan at 8 weeks) produced a median 6-minute walk distance increase of 43 m at week 24 versus 23 m for ambrisentan alone and 22 m for tadalafil alone, and reduced time to the primary composite endpoint (Letairis label, section 14.2).",
+      "Haemoglobin falls early: measure it before starting, at one month and periodically thereafter, and do not start ambrisentan in a patient with clinically significant anaemia (Letairis label, section 5.5).",
+      "Cyclosporine roughly doubles ambrisentan exposure, so the dose is capped at 5 mg once daily when the two are used together (Letairis label, section 7).",
+      "The ambrisentan REMS was removed in the April 2025 revision of the label; the boxed embryo-fetal toxicity warning and the pregnancy-testing requirement remain in place (Letairis label, Boxed Warning and section 2.2)."
+    ],
+    "brand_names": ["Letairis"],
+    "black_box_warnings": [
+      "EMBRYO-FETAL TOXICITY: Letairis is contraindicated for use during pregnancy because it may cause major birth defects if used by pregnant patients, based on studies in animals. For females of reproductive potential, exclude pregnancy before the initiation of treatment with Letairis, advise use of effective contraception before initiation, during treatment, and for one month after treatment, and discontinue Letairis as soon as possible when pregnancy is detected (Letairis label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dose adjustment is required in patients with mild or moderate renal impairment, based on population pharmacokinetic analysis in PAH patients with creatinine clearances of 20 to 150 mL/min. There is no information on ambrisentan exposure in patients with severe renal impairment, and the impact of hemodialysis on the disposition of ambrisentan has not been investigated (Letairis label, section 8.6).",
+    "hepatic_dose_adjustment": "Letairis is not recommended in patients with moderate or severe hepatic impairment, because ambrisentan has a significant metabolic and biliary contribution to its elimination and hepatic impairment is expected to have significant effects on its pharmacokinetics. There is no information on use in patients with mild pre-existing impaired liver function, although exposure may be increased in these patients. In patients who develop hepatic impairment after initiation, fully investigate the cause and discontinue if aminotransferase elevations are >5 x ULN, or if accompanied by bilirubin >2 x ULN, or by signs or symptoms of liver dysfunction with other causes excluded (Letairis label, section 8.7).",
+    "administration_instructions": "Oral administration, once daily, with or without food. Do not split, crush or chew tablets; the 5 mg tablet is square convex and pale pink with '5' and 'GSI' debossed, and the 10 mg tablet is oval convex and deep pink with '10' and 'GSI' debossed. Store at 25 degrees C (77 degrees F), excursions permitted to 15 to 30 degrees C (59 to 86 degrees F), and store Letairis in its original packaging (Letairis label, sections 2.1, 3, 11 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, LETAIRIS (ambrisentan) tablets, Gilead, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, LETAIRIS, section 1 Indications and Usage; sections 4.2 and 14.4 (idiopathic pulmonary fibrosis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, LETAIRIS, sections 4.1 Pregnancy and 4.2 Idiopathic Pulmonary Fibrosis",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, LETAIRIS, section 6 Adverse Reactions and sections 6.1 Clinical Trials Experience and 6.2 Postmarketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, LETAIRIS, sections 2, 2.1 Adult Dosage and 7 (cyclosporine), section 8.5 Geriatric Use and section 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, LETAIRIS, section 7 Drug Interactions and section 12.3 Pharmacokinetics (in vitro and in vivo drug interaction studies)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, LETAIRIS, sections 2.2, 5.1, 5.2, 5.3, 5.4, 5.5, 8.1, 8.3 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, LETAIRIS, section 17 Patient Counseling Information and the Medication Guide (revised April 2025)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, LETAIRIS, Boxed Warning and sections 5.1-5.5 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, LETAIRIS, sections 2.1, 2.2, 7, 8.3 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, LETAIRIS, Boxed Warning and sections 5.1-5.5, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Food does not affect ambrisentan bioavailability (FDA label, LETAIRIS, section 12.3 Pharmacokinetics); no food interaction is otherwise described in the label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA pregnancy letter category is stated in the LETAIRIS label; the label uses the PLLR risk summary format (section 8.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, LETAIRIS, Boxed Warning and sections 2.2, 4.1, 5.1, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, LETAIRIS, section 8.2 Lactation and the Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, LETAIRIS, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, LETAIRIS, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, LETAIRIS, sections 4.2, 5.5, 7, 14.2, 14.4 and Boxed Warning index (REMS removed in the 04/2025 revision)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "brand_names",
+      "ref": "LETAIRIS (ambrisentan) listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, LETAIRIS, Boxed Warning: EMBRYO-FETAL TOXICITY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, LETAIRIS, section 8.6 Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, LETAIRIS, section 8.7 Hepatic Impairment (pre-existing hepatic impairment and elevation of liver transaminases)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, LETAIRIS, sections 2.1, 3 Dosage Forms and Strengths, 11 Description and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy letter category is stated; the LETAIRIS label uses the PLLR risk summary format)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen - safety and effectiveness in pediatric patients have not been established)"
+  ],
+  "notes": "The table stores this agent as 'Ambrisentan' with brand_names ['Ambrisentan']; the only ambrisentan brand product listed on DailyMed is LETAIRIS (ambrisentan) tablets, 5 mg and 10 mg, so brand_names has been corrected to the brand name. Content is sourced from the FDA label for LETAIRIS revised 04/2025 (DailyMed publication June 2026). The label's index shows that the ambrisentan Risk Evaluation and Mitigation Strategy (REMS) was removed in the 04/2025 revision; the boxed embryo-fetal toxicity warning, the pregnancy-testing requirement at initiation and the one-month post-treatment contraception advice all remain. Ambrisentan is licensed only for WHO Group 1 pulmonary arterial hypertension and is contraindicated in idiopathic pulmonary fibrosis, where the ARTEMIS-IPF study showed excess disease progression and death. Generic ambrisentan tablet labels are also on DailyMed but are not used as a source here."
+}

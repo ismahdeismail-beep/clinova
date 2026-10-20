@@ -1,0 +1,192 @@
+{
+  "name": "Amisulpride",
+  "existing_id": "fafd0f76-7e2b-4573-96a7-31978d47a3b1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amisulpride is a selective dopamine-2 (D2) and dopamine-3 (D3) receptor antagonist. D2 receptors are located in the chemoreceptor trigger zone (CTZ) and respond to the dopamine released from the nerve endings; activation of the CTZ relays stimuli to the vomiting centre involved in emesis, and D3 receptors in the area postrema also play a role in emesis. In ferrets, amisulpride inhibits apomorphine-induced emesis with an estimated ED50 of less than 1 mcg/kg subcutaneously, and inhibits cisplatin-induced emesis at 2 mg/kg and morphine-induced emesis at 3 to 6 mg/kg when given intravenously. Amisulpride has no appreciable affinity for any other receptor types apart from low affinities for 5-HT2B and 5-HT7 receptors (Barhemsys label, section 12.1).",
+    "indications": [
+      "Prevention of postoperative nausea and vomiting (PONV) in adults, either alone or in combination with an antiemetic of a different class (Barhemsys label, section 1).",
+      "Treatment of postoperative nausea and vomiting in adults who have received antiemetic prophylaxis with an agent of a different class or have not received prophylaxis (Barhemsys label, section 1)."
+    ],
+    "contraindications": ["Known hypersensitivity to amisulpride (Barhemsys label, section 4)."],
+    "side_effects": [
+      "Prevention of PONV, common adverse reactions reported in at least 2% of adults receiving BARHEMSYS 5 mg at a higher rate than placebo: chills (4% vs 3% placebo), hypokalemia (4% vs 2%), procedural hypotension (3% vs 2%) and abdominal distension (2% vs 1%) (Barhemsys label, section 6.1).",
+      "Treatment of PONV: the most common adverse reaction reported in at least 2% of adults receiving BARHEMSYS 10 mg at a higher rate than placebo was infusion site pain (6% vs 4% placebo) (Barhemsys label, section 6.1).",
+      "Increased blood prolactin concentrations: in a study, 5% (9/176) of BARHEMSYS-treated patients versus 1% (1/166) of placebo-treated patients had increased blood prolactin reported as an adverse reaction; serum prolactin rose from a mean of 10 ng/mL at baseline to 32 ng/mL in 112 females (upper limit of normal 29 ng/mL) and to 19 ng/mL in 61 males (upper limit of normal 18 ng/mL), with no clinical consequences due to elevated prolactin levels reported (Barhemsys label, section 6.1).",
+      "Post-marketing adverse reactions identified during chronic oral use of amisulpride outside the United States (BARHEMSYS is not approved for oral dosing or chronic use): agranulocytosis; bradycardia, torsades de pointes, ventricular tachycardia and prolonged QT by electrocardiogram; neuroleptic malignant syndrome; angioedema, hypersensitivity and urticaria; increased hepatic enzymes; agitation, anxiety, dystonia, extrapyramidal disorder and seizure; confusional state, insomnia and somnolence; and hypotension (Barhemsys label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "Prevention of PONV: 5 mg as a single intravenous injection infused over 1 to 2 minutes at the time of induction of anesthesia, either alone or in combination with an antiemetic of a different class. Treatment of PONV: 10 mg as a single intravenous injection infused over 1 to 2 minutes in the event of nausea and/or vomiting after a surgical procedure (Barhemsys label, sections 2 and 2.1).",
+      "geriatric": "Of the total number of patients enrolled in controlled clinical trials who received BARHEMSYS 5 mg for prevention of PONV or 10 mg for treatment of PONV, 235 (17%) were 65 years of age and older and 59 (4%) were 75 years of age and older. No overall differences in safety or effectiveness were observed between these patients and younger patients, and other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out (Barhemsys label, section 8.5). No separate geriatric dose is specified in the label.",
+      "paediatric": "Safety and effectiveness of BARHEMSYS in pediatric patients have not been established (Barhemsys label, section 8.4). No paediatric dose is specified in the label."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Dopamine agonists (e.g. levodopa): reciprocal antagonism of effects occurs between dopamine agonists and BARHEMSYS - avoid using levodopa with BARHEMSYS (Barhemsys label, section 7.1).",
+      "Drugs prolonging the QT interval: BARHEMSYS causes dose- and concentration-dependent QT prolongation, so to avoid potential additive effects avoid use in patients taking droperidol; ECG monitoring is recommended in patients taking other drugs known to prolong the QT interval (e.g. ondansetron) (Barhemsys label, sections 5.1 and 7.2).",
+      "Electrocardiogram monitoring is recommended in patients with pre-existing arrhythmias or cardiac conduction disorders, electrolyte abnormalities (e.g. hypokalemia or hypomagnesemia), congestive heart failure, in patients taking other medicinal products (e.g. ondansetron) or with other medical conditions known to prolong the QT interval (Barhemsys label, sections 5.1 and 7.2)."
+    ],
+    "monitoring": "Obtain an electrocardiogram in patients with pre-existing arrhythmias or cardiac conduction disorders, electrolyte abnormalities (e.g. hypokalemia or hypomagnesemia), congestive heart failure, who are taking other medicinal products known to prolong the QT interval (e.g. ondansetron) or who have other medical conditions known to prolong the QT interval (Barhemsys label, sections 5.1 and 7.2). Instruct patients to contact their healthcare provider immediately if they perceive a change in their heart rate, feel lightheaded, or have a syncopal episode (Barhemsys label, section 17). Advise patients to report to their healthcare provider if they are taking drugs which prolong the QT interval (Barhemsys label, section 17). Inspect the solution visually for particulate matter and discoloration before administration and discard if either is observed (Barhemsys label, section 2.2).",
+    "patient_counselling": "Instruct patients to contact their healthcare provider immediately if they perceive a change in their heart rate, if they feel lightheaded, or if they have a syncopal episode (Barhemsys label, section 17). Advise patients to report to their healthcare provider if they are taking drugs which prolong the QT interval (Barhemsys label, section 17). Women may consider reducing infant exposure through pumping and discarding breastmilk for 48 hours after BARHEMSYS administration (Barhemsys label, section 17 and section 8.2).",
+    "warnings": [
+      "QT prolongation: BARHEMSYS causes dose- and concentration-dependent prolongation of the QT interval; avoid use in patients with congenital long QT syndrome and in patients taking droperidol; ECG monitoring is recommended in patients with pre-existing arrhythmias/cardiac conduction disorders, electrolyte abnormalities (e.g. hypokalemia or hypomagnesemia), congestive heart failure, and in patients taking other medicinal products (e.g. ondansetron) or with other medical conditions known to prolong the QT interval (Barhemsys label, sections 5 and 5.1).",
+      "Post-marketing experience with chronic oral use of amisulpride outside the United States includes cardiac arrhythmias (bradycardia, torsades de pointes, ventricular tachycardia, prolonged QT) and neuroleptic malignant syndrome; BARHEMSYS is not approved for oral dosing or chronic use (Barhemsys label, section 6.2).",
+      "Dopamine blockade is associated with raised prolactin: serum prolactin concentrations increased after BARHEMSYS in the pivotal studies, with increased blood prolactin reported as an adverse reaction in 5% of treated patients versus 1% on placebo (Barhemsys label, section 6.1)."
+    ],
+    "precautions": [
+      "Dilution of BARHEMSYS is not required before administration; it is chemically and physically compatible with Water for Injection, 5% Dextrose Injection, 0.9% Sodium Chloride Injection and Lactated Ringer's Solution, any of which may be used to flush an intravenous line before or after administration (Barhemsys label, section 2.2).",
+      "Protect BARHEMSYS from light; it is subject to photodegradation and must be administered within 12 hours of removal of the vial from the protective carton (Barhemsys label, section 2.2).",
+      "Prior to administration, inspect the BARHEMSYS solution visually for particulate matter and discoloration and discard if either is observed (Barhemsys label, section 2.2).",
+      "Because amisulpride is a dopamine-2 receptor antagonist, prolactin concentrations rise; the clinical consequences should be considered in patients with pituitary or prolactin-related conditions and in patients on long-term antipsychotic-class exposure (Barhemsys label, sections 6.1 and 6.2)."
+    ],
+    "serious_adverse_reactions": [
+      "QT prolongation with torsades de pointes and ventricular tachycardia (Barhemsys label, sections 5.1, 6.2 and 7.2).",
+      "Neuroleptic malignant syndrome (Barhemsys label, section 6.2).",
+      "Bradycardia and hypotension (Barhemsys label, sections 6.2 and 10).",
+      "Seizure and dystonia/extrapyramidal reactions (Barhemsys label, section 6.2).",
+      "Angioedema and hypersensitivity reactions (Barhemsys label, section 6.2).",
+      "Agranulocytosis and increased hepatic enzymes (Barhemsys label, section 6.2)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data with amisulpride use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes. In animal reproduction studies there were no adverse developmental effects with oral administration of amisulpride in rats (up to 160 mg/kg/day, about 43 times the exposure at the highest recommended human dose of 10 mg) and rabbits (up to 210 mg/kg/day, about 645 times that exposure) during the period of organogenesis; maternal animals exhibited dose-related decreases in body-weight gain and reduced food intake at 210 mg/kg/day in rabbits. In pre- and post-natal development studies in rats, amisulpride at doses up to 160 mg/kg/day had no effect on maternal pregnancy parameters, litter survival or pup growth, development or maturation. Advise pregnant women of the potential risk to a fetus and advise females of reproductive potential to inform their prescriber of a known or suspected pregnancy (Barhemsys label, sections 8.1 and 8.3).",
+    "lactation_guidance": "Based on case reports in published literature, amisulpride is present in human milk at concentrations 11- to 20-fold higher than human plasma in patients taking multiple oral doses of amisulpride (200 to 400 mg/day), with an estimated infant daily dose of 5% to 11% of the maternal dose. There are no reports of adverse effects on the breastfed child and no information on the effects of amisulpride on milk production; the pharmacological action of amisulpride as a dopamine-2 receptor antagonist may result in an increase in serum prolactin levels, which may lead to a reversible increase in maternal milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for BARHEMSYS and any potential adverse effects on the breastfed child. A lactating woman may consider interrupting breastfeeding and pumping and discarding breast milk for 48 hours after BARHEMSYS administration to minimize drug exposure to a breastfed infant (Barhemsys label, sections 8.2 and 17).",
+    "overdose": "Doses of oral amisulpride (BARHEMSYS is not approved for oral dosing) above 1200 mg/day have been associated with adverse reactions related to dopamine-2 antagonism, in particular cardiovascular adverse reactions (e.g. prolongation of the QT interval, torsades de pointes, bradycardia and hypotension) and neuropsychiatric adverse reactions (e.g. sedation, coma, seizures, and dystonic and extrapyramidal reactions). There is no specific antidote for amisulpride overdose; management includes cardiac monitoring and treatment of severe extrapyramidal symptoms. Since amisulpride is weakly dialyzed, hemodialysis should not be used to eliminate the drug (Barhemsys label, section 10).",
+    "pharmacokinetics": "After an intravenous infusion, the peak plasma concentration of amisulpride is achieved at the end of the infusion period and the plasma concentration decreases to about 50% of the peak value within approximately 15 minutes; AUC(0-infinity) increases dose-proportionally over the 5 mg to 40 mg range. After a single 5 mg intravenous dose in healthy subjects the mean peak plasma concentration was 200 (SD 139) ng/mL with AUC(0-infinity) of 154 (SD 30) ng.h/mL, and after a single 10 mg dose 451 (SD 230) ng/mL with AUC(0-2 hr) of 136 (SD 28) ng.h/mL; in patients receiving 5 mg and 10 mg over 1 to 2 minutes for PONV prophylaxis and treatment, mean peak plasma concentrations were 161 (SD 58) and 285 (SD 446) ng/mL respectively. Following intravenous infusion the mean volume of distribution is estimated at 127 to 144 L in surgical patients and 171 L in healthy subjects; amisulpride distributes into erythrocytes and plasma protein binding is 25% to 30% over 37 to 1850 ng/mL. The mean elimination half-life is approximately 4 to 5 hours, with population pharmacokinetic clearance of 20.6 L/h in surgical patients and 24.1 L/h in healthy subjects. In a mass balance study no metabolites were detectable in plasma while four metabolites were identified in urine and feces, each accounting for less than 7% of the dose, and in vitro amisulpride is not metabolized by major cytochrome P450 enzymes; after intravenous administration 74% and 23% of the dose was recovered in urine and faeces respectively (Barhemsys label, section 12.3).",
+    "clinical_pearls": [
+      "BARHEMSYS is an intravenous antiemetic only: it is not approved for oral dosing or chronic use, and all the post-marketing safety data come from chronic oral use of amisulpride outside the United States (Barhemsys label, sections 6.2 and 10).",
+      "The mechanism is peripherally restricted in this indication - it works by blocking D2 receptors in the chemoreceptor trigger zone and D3 receptors in the area postrema, so it is a useful alternative class for PONV prophylaxis when a 5-HT3 antagonist such as ondansetron is being used, but note the additive QT prolongation risk with ondansetron and droperidol (Barhemsys label, sections 5.1, 7.2 and 12.1).",
+      "Dose is indication-dependent and single-use: 5 mg for prevention at induction of anesthesia, 10 mg for treatment after the surgical procedure - there is no repeat dosing regimen in the label (Barhemsys label, sections 2.1 and 2.2).",
+      "Prolactin rises after a single dose: mean serum prolactin rose from 10 ng/mL to 32 ng/mL in females and to 19 ng/mL in males in the pivotal prevention study, with increased prolactin reported as an adverse reaction in 5% of treated patients versus 1% on placebo (Barhemsys label, section 6.1).",
+      "Barhemsys does not require dilution and is compatible with Water for Injection, 5% Dextrose, 0.9% Sodium Chloride and Lactated Ringer's Solution for line flushing, but it must be protected from light and used within 12 hours of removal from the protective carton (Barhemsys label, section 2.2).",
+      "There is no specific antidote for amisulpride overdose, and because amisulpride is only weakly dialysed hemodialysis should not be used - manage with cardiac monitoring and treatment of extrapyramidal symptoms (Barhemsys label, section 10).",
+      "Outside the United States amisulpride is also used orally as an antipsychotic; that indication and its oral antipsychotic-specific dosing are not covered by the US label and are not stated here (see notes)."
+    ],
+    "brand_names": ["Barhemsys"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Administer BARHEMSYS as a single intravenous injection infused over 1 to 2 minutes: 5 mg for prevention of PONV at the time of induction of anesthesia, and 10 mg for treatment of PONV in the event of nausea and/or vomiting after a surgical procedure. Dilution is not required before administration. BARHEMSYS is chemically and physically compatible with Water for Injection, 5% Dextrose Injection, 0.9% Sodium Chloride Injection and Lactated Ringer's Solution, any of which may be used to flush an intravenous line before or after administration. Protect from light and administer within 12 hours of removal of the vial from the protective carton. Inspect the solution visually for particulate matter and discoloration before administration and discard if observed. BARHEMSYS is supplied as single-dose vials containing 5 mg in 2 mL or 10 mg in 4 mL (2.5 mg/mL) and should be stored at 20 to 25 degrees C (68 to 77 degrees F) (Barhemsys label, sections 2.1, 2.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection (Acacia Pharma), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 6, 6.1 (Table 1) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 2, 2.1, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 5.1, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 2.2, 5.1, 7.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, section 17 Patient Counseling Information and section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 5, 5.1, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 2.2, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 5.1, 6.2, 7.2 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, section 12.3 Pharmacokinetics (Table 2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 2.1, 2.2, 5.1, 6.1, 6.2, 7.2, 10 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Barhemsys (amisulpride) injection listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the BARHEMSYS (amisulpride) injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the BARHEMSYS (amisulpride) injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in the BARHEMSYS (amisulpride) injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the BARHEMSYS (amisulpride) injection labelling; increased hepatic enzymes are listed only as a post-marketing adverse reaction (section 6.2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, BARHEMSYS (amisulpride) injection, sections 2.1, 2.2 and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab23bc6e-b6a8-165f-e053-2a95a90ab144"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy category is stated in the BARHEMSYS labelling; it uses the Pregnancy and Lactation Labeling Rule risk-summary format)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; paediatric safety and effectiveness are not established)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the label)"
+  ],
+  "notes": "The table stores this agent as 'Amisulpride'. The US-approved product for this molecule is BARHEMSYS (amisulpride) injection (Acacia Pharma), which is an intravenous antiemetic for the prevention and treatment of postoperative nausea and vomiting in adults; the label explicitly states that BARHEMSYS is not approved for oral dosing or chronic use. In Europe and the UK, oral amisulpride (marketed historically as Solian) is used as an antipsychotic in schizophrenia and acute psychotic disorders, and the class-specific antipsychotic precautions (neuroleptic malignant syndrome, tardive dyskinesia, prolactinoma/pituitary effects, QT prolongation, akathisia) are therefore relevant when the oral product is used. I could not retrieve an EMA SmPC or eMC/British SmPC for oral amisulpride from this environment (no Solian EPAR exists on the EMA site and medicines.org.uk search results are not server-rendered), so no oral antipsychotic indications, doses or antipsychotic-class warnings are asserted in this draft - every field here is sourced from the FDA Barhemsys label only, and the post-marketing section does record the antipsychotic-class adverse reactions (NMS, extrapyramidal disorders, seizures, prolactin elevation) observed with chronic oral use outside the United States. The database brand_names field already lists Barhemsys and drug_class 'Central nervous system agent' is consistent with this use."
+}

@@ -1,0 +1,230 @@
+{
+  "name": "Alprazolam",
+  "existing_id": "c5b30b29-fd03-4ae1-be8d-7f1ba6d82c9e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alprazolam is a 1,4-benzodiazepine. It exerts its effect for the acute treatment of generalized anxiety disorder and panic disorder through binding to the benzodiazepine site of gamma-aminobutyric acid-A (GABA-A) receptors in the brain and enhancing GABA-mediated synaptic inhibition (XANAX label, section 12.1). Alprazolam contains alprazolam, which is a triazolo analog of the 1,4-benzodiazepine class of central nervous system-active compounds; the chemical name is 8-chloro-1-methyl-6-phenyl-4H-s-triazolo [4,3-a] [1,4]benzodiazepine (XANAX label, section 11).",
+    "indications": [
+      "XANAX (immediate-release tablets): acute treatment of generalized anxiety disorder (GAD) in adults (XANAX label, section 1).",
+      "XANAX (immediate-release tablets): treatment of panic disorder (PD), with or without agoraphobia, in adults (XANAX label, section 1).",
+      "XANAX XR (extended-release tablets): treatment of panic disorder with or without agoraphobia, in adults (XANAX XR label, section 1).",
+      "XANAX is not indicated for the treatment of any other condition, and the XANAX label does not list other indications (XANAX label, section 1)."
+    ],
+    "contraindications": [
+      "XANAX: contraindicated in patients with known hypersensitivity to alprazolam or other benzodiazepines; angioedema has been reported (XANAX label, section 4).",
+      "XANAX: contraindicated in patients taking strong cytochrome P450 3A (CYP3A) inhibitors (for example ketoconazole, itraconazole), except ritonavir (XANAX label, section 4).",
+      "XANAX XR: contraindicated in patients with known hypersensitivity to alprazolam or other benzodiazepines (angioedema has been reported) and in patients taking strong CYP3A inhibitors except ritonavir (XANAX XR label, section 4)."
+    ],
+    "side_effects": [
+      "Generalized anxiety disorder, 4-week placebo-controlled trials (XANAX n = 565 vs placebo n = 505): drowsiness 41% vs 22%; light-headedness 21% vs 19%; dizziness 2% vs 1%; akathisia 2% vs 1%; dry mouth 15% vs 4%; increased salivation 4% vs 2%; hypotension 5% vs 2%; dermatitis/allergy 4% vs 3% (XANAX label, section 6.1, Table 1).",
+      "Panic disorder, up to 10 weeks (XANAX n = 1388 vs placebo n = 1231): drowsiness 77% vs 43%; fatigue and tiredness 49% vs 42%; impaired coordination 40% vs 18%; irritability 33% vs 30%; memory impairment 33% vs 22%; cognitive disorder 29% vs 21%; decreased libido 14% vs 8%; dysarthria 23% vs 6%; confusional state 10% vs 8%; increased libido 8% vs 4%; change in libido (not specified) 7% vs 6%; disinhibition 3% vs 2%; talkativeness 2% vs 1%; derealization 2% vs 1%; constipation 26% vs 15%; increased salivation 6% vs 4%; rash 11% vs 8%; increased appetite 33% vs 23%; decreased appetite 28% vs 24%; weight gain 27% vs 18%; weight loss 23% vs 17%; micturition difficulties 12% vs 9%; menstrual disorders 11% vs 9%; sexual dysfunction 7% vs 4%; incontinence 2% vs 1% (XANAX label, section 6.1, Table 2).",
+      "Adverse reactions reported with benzodiazepines in the XANAX trials in addition to those above: dystonia, irritability, concentration difficulties, anorexia, transient amnesia or memory impairment, loss of coordination, fatigue, seizures, sedation, slurred speech, jaundice, musculoskeletal weakness, pruritus, diplopia, dysarthria, changes in libido, menstrual irregularities, incontinence and urinary retention (XANAX label, section 6.1).",
+      "Withdrawal symptoms specifically sought in a controlled trial of 63 patients: heightened sensory perception, impaired concentration, dysosmia, clouded sensorium, paresthesias, muscle cramps, muscle twitch, diarrhea, blurred vision, appetite decrease and weight loss; anxiety and insomnia were frequently seen during discontinuation but could not be attributed to return of illness, rebound or withdrawal (XANAX label, section 5.3).",
+      "Postmarketing adverse reactions: hyperprolactinemia; peripheral edema; hepatitis and hepatic failure; liver enzyme elevations; hypomania and mania; gynecomastia and galactorrhea; photosensitivity reaction, angioedema and Stevens-Johnson syndrome (XANAX label, section 6.2).",
+      "Interdose symptoms: early morning anxiety and emergence of anxiety symptoms between doses have been reported in patients with panic disorder taking prescribed maintenance doses (XANAX label, section 5.3)."
+    ],
+    "dosage": {
+      "adult": "Generalized anxiety disorder (XANAX immediate release): recommended starting oral dosage 0.25 mg to 0.5 mg three times daily; adjust at intervals of every 3 to 4 days depending on response; maximum recommended dosage 4 mg daily in divided doses (XANAX label, section 2.1). Panic disorder (XANAX immediate release): recommended starting oral dosage 0.5 mg three times daily, increased at intervals of every 3 to 4 days in increments of no more than 1 mg per day. Controlled trials included dosages of 1 mg to 10 mg daily with a mean of approximately 5 mg to 6 mg daily; occasional patients required as much as 10 mg per day. For patients receiving doses greater than 4 mg per day, periodic reassessment and consideration of dosage reduction is advised (XANAX label, section 2.2). Panic disorder (XANAX XR extended release): administer once daily, preferably in the morning; recommended starting dosage 0.5 mg to 1 mg once daily, adjusted at intervals of every 3 to 4 days in increments of no more than 1 mg daily; recommended dosage range 3 mg to 6 mg once daily; controlled trials included 1 mg to 10 mg per day. If XANAX XR is used for periods longer than 8 weeks, the provider should periodically reassess its usefulness for the individual patient (XANAX XR label, section 2.1). Use the lowest possible effective dose and frequently assess the need for continued treatment (XANAX label, section 2.1).",
+      "geriatric": "XANAX: recommended starting oral dosage 0.25 mg given 2 or 3 times daily, which may be gradually increased if needed and tolerated; geriatric patients may be especially sensitive to the effects of benzodiazepines, and if adverse reactions occur at the recommended starting dosage the dosage may be reduced (XANAX label, section 2.4). Geriatric patients have higher plasma concentrations of alprazolam because of reduced clearance, so dosage reduction is recommended (XANAX label, section 8.5). XANAX XR: recommended starting dosage 0.5 mg once daily, gradually increased if needed and tolerated; dosage reduction is recommended in geriatric patients (XANAX XR label, sections 2.3 and 8.5).",
+      "paediatric": "Safety and effectiveness of XANAX have not been established in paediatric patients (XANAX label, section 8.4); the XANAX XR label carries the same statement for paediatric use. Alprazolam is not indicated for use in children."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Opioids: concomitant use of benzodiazepines and opioids increases the risk of respiratory depression because the drugs act at different receptor sites (benzodiazepines at GABA-A sites, opioids primarily at mu receptors). Limit dosage and duration of concomitant use and monitor closely for respiratory depression and sedation. Examples: morphine, buprenorphine, hydromorphone, oxymorphone, oxycodone, fentanyl, methadone, alfentanil, butorphanol, codeine, dihydrocodeine, meperidine, pentazocine, remifentanil, sufentanil, tapentadol, tramadol (XANAX label, sections 5.1 and 7.1).",
+      "Central nervous system depressants: benzodiazepines produce additive CNS depressant effects when coadministered with other CNS depressants; limit dosage and duration of concomitant use. Examples: psychotropic medications, anticonvulsants, antihistaminics, ethanol and other drugs which themselves produce CNS depression (XANAX label, sections 5.4 and 7.1).",
+      "Strong CYP3A inhibitors (except ritonavir): coadministration has a profound effect on the clearance of alprazolam, increasing concentrations and the risk of adverse reactions; concomitant use with a strong CYP3A4 inhibitor other than ritonavir is contraindicated. Ketoconazole increased plasma alprazolam concentrations 3.98-fold and itraconazole 2.70-fold in vivo. Examples: ketoconazole, itraconazole, clarithromycin (XANAX label, sections 4, 5.5 and 7.1).",
+      "Moderate or weak CYP3A inhibitors: avoid use and consider an appropriate dose reduction when alprazolam is coadministered with a moderate or weak CYP3A inhibitor. Drugs demonstrated to be CYP3A inhibitors on the basis of clinical studies involving alprazolam are nefazodone, fluvoxamine and cimetidine. Examples: nefazodone, fluvoxamine, cimetidine, erythromycin (XANAX label, sections 5.5 and 7.1).",
+      "CYP3A inducers: coadministration can increase alprazolam metabolism and decrease plasma levels of alprazolam; caution is recommended during coadministration. Examples: carbamazepine, phenytoin (XANAX label, section 7.1).",
+      "Ritonavir: interactions are complex and time dependent. Short-term ritonavir increased alprazolam exposure through CYP3A4 inhibition, while long-term ritonavir (more than 10 to 14 days) induces CYP3A4 and offsets the inhibition, so alprazolam exposure was not meaningfully affected. Reduce XANAX dosage when ritonavir and XANAX are initiated concomitantly or when ritonavir is added to a stabilised regimen, then increase XANAX to the target dosage after 10 to 14 days of coadministration; no dosage adjustment is necessary in patients receiving ritonavir for more than 10 to 14 days (XANAX label, sections 2.6, 5.5 and 7.1).",
+      "Digoxin: increased digoxin concentrations have been reported when alprazolam was given, especially in geriatric patients over 65 years of age. In patients on digoxin therapy, measure serum digoxin concentrations before initiating XANAX, continue monitoring digoxin serum concentration and toxicity frequently, and reduce the digoxin dose if necessary (XANAX label, section 7.1).",
+      "Measured effect of CYP3A inhibitors on alprazolam AUC in vivo: ketoconazole 3.98-fold, itraconazole 2.66-fold, nefazodone 1.98-fold, fluvoxamine 1.96-fold, erythromycin 1.61-fold; cimetidine increased maximum plasma concentration by 82%, decreased clearance by 42% and increased half-life by 16% (XANAX label, section 12.3)."
+    ],
+    "monitoring": "Use the lowest possible effective dose and frequently reassess the need for continued treatment (XANAX label, section 2.1). Before prescribing and throughout treatment, assess each patient's risk for abuse, misuse and addiction (for example with a standardised screening tool), and monitor for signs and symptoms of abuse, misuse and addiction; if a substance use disorder is suspected, evaluate the patient and institute or refer for early treatment (XANAX label, section 5.2). Monitor closely for signs and symptoms of respiratory depression and sedation when alprazolam is used with opioids (XANAX label, section 5.1). Closely monitor patients with impaired respiratory function; there have been reports of death in patients with severe pulmonary disease shortly after the initiation of alprazolam, and if signs and symptoms of respiratory depression, hypoventilation or apnea occur, discontinue alprazolam (XANAX label, section 5.9). Monitor for signs of suicidality or worsening depression in patients with depression, and consider limiting total prescription size (XANAX label, section 5.6). Monitor for hypomania and mania in patients with depression (XANAX label, section 5.7). Monitor neonates exposed to alprazolam during pregnancy or labour for signs of sedation, and neonates exposed during pregnancy for signs of withdrawal (XANAX label, section 5.8). In patients on digoxin therapy, measure serum digoxin concentrations before starting alprazolam and monitor digoxin levels and toxicity frequently (XANAX label, section 7.1). Monitor for interdose anxiety and emergence of anxiety symptoms between doses in patients with panic disorder on maintenance dosing (XANAX label, section 5.3). Re-evaluate the need for continued therapy regularly and, for patients on doses greater than 4 mg per day, periodically reassess and consider dosage reduction (XANAX label, section 2.2).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling (Medication Guide) (XANAX label, section 17). Risks from concomitant use with opioids: advise both patients and caregivers about the risks of potentially fatal respiratory depression and sedation when XANAX is used with opioids, and that such drugs should not be used concomitantly unless supervised by a healthcare provider; advise patients not to drive or operate heavy machinery until the effects of concomitant use with the opioid have been determined (XANAX label, section 17). Abuse, misuse and addiction: inform patients that use of alprazolam, even at recommended dosages, exposes users to risks of abuse, misuse and addiction that can lead to overdose and death, especially in combination with other medications such as opioid analgesics, alcohol and/or illicit substances; inform patients about the signs and symptoms of benzodiazepine abuse, misuse and addiction, to seek medical help if they develop these signs, and on proper disposal of unused drug (XANAX label, section 17). Withdrawal reactions: inform patients that continued use may lead to physical dependence, that abrupt discontinuation or rapid dose reduction may precipitate acute, potentially life-threatening withdrawal reactions, that a protracted withdrawal syndrome lasting weeks to more than 12 months has been reported, and that discontinuation or dose reduction may require a slow taper (XANAX label, section 17). Effects on driving: advise patients not to drive a motor vehicle or operate heavy machinery while taking XANAX, and to avoid alcohol and other CNS depressants (XANAX label, section 17). Patients with depression: advise patients, families and caregivers to look for signs of suicidality or worsening depression and to inform the healthcare provider immediately (XANAX label, section 17). Concomitant medications: advise patients to inform their provider of all medicines taken, including prescription and non-prescription medicines, vitamins and herbal supplements (XANAX label, section 17). Pregnancy and lactation: advise pregnant females that late-pregnancy use can cause sedation (respiratory depression, lethargy, hypotonia) and/or withdrawal symptoms (hyperreflexia, irritability, restlessness, tremors, inconsolable crying and feeding difficulties) in newborns, and that there is a pregnancy exposure registry for psychiatric medications; advise that breastfeeding is not recommended during treatment (XANAX label, sections 5.8, 8.1, 8.2 and 17).",
+    "warnings": [
+      "BOXED WARNING: risks from concomitant use with opioids - concomitant use of benzodiazepines, including XANAX, and opioids may result in profound sedation, respiratory depression, coma and death. Reserve concomitant prescribing for patients for whom alternative treatment options are inadequate; limit dosages and durations to the minimum required; follow patients for signs and symptoms of respiratory depression and sedation (XANAX label, Boxed Warning and section 5.1).",
+      "BOXED WARNING: abuse, misuse and addiction - the use of benzodiazepines, including XANAX, exposes users to risks of abuse, misuse and addiction, which can lead to overdose or death. Before prescribing and throughout treatment, assess each patient's risk for abuse, misuse and addiction (XANAX label, Boxed Warning and section 5.2).",
+      "BOXED WARNING: dependence and withdrawal reactions - continued use of benzodiazepines may lead to clinically significant physical dependence; the risks of dependence and withdrawal increase with longer treatment duration and higher daily dose; abrupt discontinuation or rapid dosage reduction after continued use may precipitate acute withdrawal reactions, which can be life-threatening. Use a gradual taper to discontinue or reduce the dosage (XANAX label, Boxed Warning and section 5.3).",
+      "Protracted withdrawal syndrome: in some cases benzodiazepine users have developed a protracted withdrawal syndrome with symptoms lasting weeks to more than 12 months; the most important withdrawal symptom is seizure, which can be life-threatening (XANAX label, section 5.3).",
+      "Effects on driving and operating machinery: because of CNS depressant effects, patients should be cautioned against hazardous occupations or activities requiring complete mental alertness such as operating machinery or driving, and against the concomitant use of alcohol and other CNS depressants (XANAX label, section 5.4).",
+      "Interaction with drugs that inhibit CYP3A: the initial step in alprazolam metabolism is CYP3A-mediated hydroxylation, so inhibitors of this pathway may have a profound effect on alprazolam clearance; XANAX is contraindicated with strong CYP3A inhibitors other than ritonavir (XANAX label, section 5.5).",
+      "Patients with depression: benzodiazepines may worsen depression; panic disorder is associated with primary and secondary major depressive disorders and increased reports of suicide among untreated patients, so precautions such as limiting total prescription size and increased monitoring for suicidal ideation should be considered (XANAX label, section 5.6).",
+      "Mania: episodes of hypomania and mania have been reported in association with XANAX in patients with depression (XANAX label, section 5.7).",
+      "Neonatal sedation and withdrawal syndrome: late-pregnancy use can result in sedation (respiratory depression, lethargy, hypotonia) and/or withdrawal symptoms (hyperreflexia, irritability, restlessness, tremors, inconsolable crying, feeding difficulties) in the neonate (XANAX label, section 5.8).",
+      "Risk in patients with impaired respiratory function: reports of death in patients with severe pulmonary disease shortly after the initiation of alprazolam; closely monitor and discontinue if respiratory depression, hypoventilation or apnea occurs (XANAX label, section 5.9)."
+    ],
+    "precautions": [
+      "Discontinuation or dosage reduction: use a gradual taper to reduce the risk of withdrawal reactions; if a patient develops withdrawal reactions, consider pausing the taper or increasing to the previous tapered dosage level and then decrease more slowly. Reduce the dosage by no more than 0.5 mg every 3 days; some patients may benefit from an even more gradual discontinuation and some may prove resistant to all discontinuation regimens (XANAX label, section 2.3).",
+      "XANAX XR switching: when switching patients from XANAX tablets to XANAX XR tablets, the total daily dose should be given once daily (XANAX XR label, section 2.6).",
+      "XANAX XR longer-term use: the longer-term efficacy of XANAX XR has not been systematically evaluated; if used for periods longer than 8 weeks, the provider should periodically reassess the usefulness of the drug for the individual patient (XANAX XR label, section 2.1).",
+      "Alprazolam is a Schedule IV controlled substance (XANAX label, section 9.1).",
+      "Dependence can occur even after relatively short-term use at doses of 4 mg per day or less; spontaneous reporting data suggest the risk of dependence and its severity are greater with doses above 4 mg per day and for more than 12 weeks. Patients treated with doses above 4 mg per day had more difficulty tapering to zero dose (XANAX label, section 5.3).",
+      "After a period of extended freedom from panic attacks, a carefully supervised tapered discontinuation may be attempted, but there is evidence this may often be difficult to accomplish without recurrence of symptoms and/or withdrawal phenomena (XANAX label, section 2.2).",
+      "Reduce the XANAX dosage when ritonavir and XANAX are started concomitantly or when ritonavir is added to a stabilised regimen, and increase to target dose after 10 to 14 days of coadministration (XANAX label, section 2.6).",
+      "Although interactions between benzodiazepines and commonly employed clinical laboratory tests have occasionally been reported, there is no consistent pattern for a specific drug or specific test (XANAX label, section 7.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Profound sedation, respiratory depression, coma and death when benzodiazepines are used concomitantly with opioids (XANAX label, Boxed Warning and section 5.1).",
+      "Acute withdrawal reactions, including life-threatening seizures, after abrupt discontinuation or rapid dosage reduction in physically dependent patients; a protracted withdrawal syndrome lasting weeks to more than 12 months has been reported (XANAX label, section 5.3).",
+      "Respiratory depression, hypoventilation and apnea, with reports of death in patients with severe pulmonary disease shortly after starting treatment (XANAX label, section 5.9).",
+      "Abuse, misuse and addiction leading to overdose or death (XANAX label, Boxed Warning and section 5.2).",
+      "Angioedema, reported as a postmarketing adverse reaction and a contraindication in hypersensitive patients (XANAX label, sections 4 and 6.2).",
+      "Neonatal sedation and withdrawal syndrome (XANAX label, section 5.8).",
+      "Hepatitis, hepatic failure and liver enzyme elevations, reported postmarketing (XANAX label, section 6.2).",
+      "Hypomania and mania, reported postmarketing and in patients with depression (XANAX label, sections 5.7 and 6.2)."
+    ],
+    "food_interactions": [
+      "Ethanol/alcohol: alcohol is a CNS depressant and coadministration produces additive CNS depressant effects with alprazolam; patients should be cautioned about the concomitant use of alcohol during treatment, and should avoid alcohol while taking XANAX (XANAX label, sections 5.4, 7.1 and 17).",
+      "The XANAX label does not describe any food effect on alprazolam absorption; the label states only that alprazolam must be taken orally (XANAX label, sections 2 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal. Benzodiazepines cross the placenta and may produce respiratory depression, hypotonia and sedation in neonates. Published data from observational studies of pregnant women exposed to benzodiazepines do not report a clear association with benzodiazepines and major birth defects; although early studies reported an increased risk of congenital malformations with diazepam and chlordiazepoxide, there was no consistent pattern, and the majority of recent case-control and cohort studies adjusted for confounding exposures to alcohol, tobacco and other medications have not confirmed those findings. Monitor neonates exposed to XANAX during pregnancy or labour for signs of sedation, respiratory depression, hypotonia and feeding problems, and monitor neonates exposed during pregnancy for signs of withdrawal; manage these neonates accordingly. Late-pregnancy use can result in neonatal sedation (respiratory depression, lethargy, hypotonia) and/or withdrawal symptoms (hyperreflexia, irritability, restlessness, tremors, inconsolable crying, feeding difficulties). The estimated background risk of major birth defects is 2% to 4% and of miscarriage 15% to 20% in the US general population. A pregnancy exposure registry that monitors pregnancy outcomes in women exposed to psychiatric medications, including XANAX, during pregnancy is available via the National Pregnancy Registry for Psychiatric Medications (1-866-961-2388); providers are encouraged to register patients (XANAX label, sections 5.8, 8.1 and 17).",
+    "lactation_guidance": "Limited data from published literature report the presence of alprazolam in human breast milk. There are reports of sedation, poor feeding and poor weight gain in infants exposed to benzodiazepines through breast milk. The effects of alprazolam on lactation are unknown. Because of the potential for serious adverse reactions, including sedation and withdrawal symptoms in breastfed infants, advise patients that breastfeeding is not recommended during treatment with XANAX (XANAX label, section 8.2).",
+    "overdose": "Overdosage of benzodiazepines is characterised by central nervous system depression ranging from drowsiness to coma. Mild to moderate cases can include drowsiness, confusion, dysarthria, lethargy, hypnotic state, diminished reflexes, ataxia and hypotonia; paradoxical or disinhibitory reactions (agitation, irritability, impulsivity, violent behaviour, confusion, restlessness, excitement and talkativeness) may rarely occur. Severe overdosage may cause respiratory depression and coma, and overdosage in combination with other CNS depressants including alcohol and opioids may be fatal. Markedly abnormal blood pressure, heart rate or respiratory rate raises concern that additional drugs and/or alcohol are involved. Manage with general supportive measures including intravenous fluids and airway management. Flumazenil, a specific benzodiazepine receptor antagonist, may be used for complete or partial reversal of the sedative effects of benzodiazepines but can lead to withdrawal and adverse reactions including seizures, particularly in mixed overdosage with drugs that increase seizure risk and in patients with long-term benzodiazepine use and physical dependency; it is contraindicated in patients who have received a benzodiazepine for control of a potentially life-threatening condition such as status epilepticus, and if used it should be an adjunct to, not a substitute for, supportive management. Contact the Poison Help Line (1-800-222-1222) or a medical toxicologist for additional management recommendations (XANAX label, section 10).",
+    "pharmacokinetics": "Plasma levels of alprazolam increase proportionally to dose over the range of 0.5 to 3.0 mg. Following oral administration, peak plasma concentration occurs in 1 to 2 hours. Alprazolam is 80% bound to human serum protein, with albumin accounting for the majority of binding. The mean plasma elimination half-life is approximately 11.2 hours (range 6.3 to 26.9 hours) in healthy adults. Alprazolam is extensively metabolised, primarily by CYP3A4, to two major active metabolites, 4-hydroxyalprazolam and alpha-hydroxyalprazolam, whose plasma levels are less than 4% of the parent and whose relative potencies are 0.20 and 0.66 respectively; a benzophenone derivative is also found in humans. Alprazolam and its metabolites are excreted primarily in the urine. Specific populations: mean half-life 16.3 hours (range 9.0 to 26.9) in healthy elderly subjects versus 11.0 hours in healthy younger adults; 21.8 hours (range 9.9 to 40.4) in obese subjects; 19.7 hours (range 5.8 to 65.3) in patients with alcoholic liver disease. Maximal concentrations and half-life are approximately 15% and 25% higher in Asians compared with Caucasians. Alprazolam concentrations may be reduced by up to 50% in smokers compared with non-smokers (XANAX label, section 12.3).",
+    "clinical_pearls": [
+      "Alprazolam is a Schedule IV controlled substance and the XANAX label carries three boxed warnings: risks from concomitant use with opioids, abuse/misuse/addiction, and dependence and withdrawal reactions (XANAX label, Boxed Warning and section 9.1).",
+      "Always taper rather than stop abruptly. The label's schedule is a reduction of no more than 0.5 mg every 3 days; even short courses at 4 mg per day or less can produce dependence, and doses above 4 mg per day make tapering to zero substantially harder (XANAX label, sections 2.3 and 5.3).",
+      "Strong CYP3A inhibitors other than ritonavir are contraindicated: ketoconazole raised alprazolam concentrations 3.98-fold and itraconazole 2.70-fold. Ritonavir is the exception and requires a temporary dose reduction rather than avoidance (XANAX label, sections 4, 5.5, 2.6 and 7.1).",
+      "In patients receiving more than 4 mg per day, periodic reassessment and consideration of dosage reduction is advised; in a controlled postmarketing study, patients on more than 4 mg per day for 3 months were able to taper to 50% of their maintenance dose without apparent loss of clinical benefit (XANAX label, section 2.2).",
+      "Alprazolam can precipitate interdose anxiety and early-morning anxiety in patients with panic disorder on maintenance dosing; this may reflect tolerance or an insufficient dose to maintain plasma levels across the interdosing interval (XANAX label, section 5.3).",
+      "Geriatric and hepatic impairment both require reduced starting doses (0.25 mg 2 to 3 times daily for XANAX) because clearance is reduced in both groups (XANAX label, sections 2.4, 2.5, 8.5 and 8.6).",
+      "Flumazenil reverses benzodiazepine overdose but can precipitate seizures in dependent patients or in mixed overdose with drugs that lower the seizure threshold, and is contraindicated in status epilepticus (XANAX label, section 10).",
+      "XANAX is indicated for GAD and panic disorder only; it is not indicated for insomnia, and the label contains no indication for other conditions (XANAX label, section 1)."
+    ],
+    "brand_names": ["XANAX", "XANAX XR"],
+    "black_box_warnings": [
+      "Risks from concomitant use with opioids: concomitant use of benzodiazepines, including XANAX, and opioids may result in profound sedation, respiratory depression, coma and death. Reserve concomitant prescribing of these drugs in patients for whom alternative treatment options are inadequate. Limit dosages and durations to the minimum required. Follow patients for signs and symptoms of respiratory depression and sedation (XANAX label, Boxed Warning).",
+      "Abuse, misuse and addiction: the use of benzodiazepines, including XANAX, exposes users to risks of abuse, misuse and addiction, which can lead to overdose or death. Before prescribing and throughout treatment, assess each patient's risk for abuse, misuse and addiction (XANAX label, Boxed Warning).",
+      "Dependence and withdrawal reactions: continued use of benzodiazepines, including XANAX, may lead to clinically significant physical dependence. The risks of dependence and withdrawal increase with longer treatment duration and higher daily dose. Abrupt discontinuation or rapid dosage reduction after continued use may precipitate acute withdrawal reactions, which can be life-threatening. To reduce the risk of withdrawal reactions, use a gradual taper to discontinue XANAX or reduce the dosage (XANAX label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": "Patients with alcoholic liver disease exhibit a longer elimination half-life (19.7 hours) compared with healthy subjects (11.4 hours), probably because of decreased clearance; dosage reduction of XANAX is recommended in patients with hepatic impairment, with a recommended starting oral dosage of 0.25 mg given 2 or 3 times daily, gradually increased if needed and tolerated, and reduced if adverse reactions occur at the starting dose (XANAX label, sections 2.5, 8.6 and 12.3). For XANAX XR the recommended starting dosage in hepatic impairment is 0.5 mg once daily and dosage reduction is recommended (XANAX XR label, sections 2.4 and 8.6).",
+    "administration_instructions": "Oral. XANAX immediate-release tablets: 0.25 mg (white, oval, scored, imprinted 'XANAX 0.25'), 0.5 mg (peach, oval, scored, imprinted 'XANAX 0.5'), 1 mg (blue, oval, scored, imprinted 'XANAX 1.0') and 2 mg (white, oblong, multi-scored, imprinted 'XANAX' and '2') (XANAX label, section 3). XANAX XR extended-release tablets: 0.5 mg (white, pentagonal, debossed 'X' and '0.5'), 1 mg (yellow, square, 'X' and '1'), 2 mg (blue, round, 'X' and '2') and 3 mg (green, triangular, 'X' and '3'); swallow tablets whole, do not divide, crush or chew, and administer once daily preferably in the morning (XANAX XR label, sections 2.1 and 3). Store XANAX at 20 degrees C to 25 degrees C (68 to 77 degrees F) [see USP Controlled Room Temperature] (XANAX label, section 16). Store XANAX XR at 20 degrees C to 25 degrees C (68 to 77 degrees F); excursions permitted to 15 to 30 degrees C (59 to 86 degrees F) (XANAX XR label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA XANAX (alprazolam) label, sections 12.1 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA XANAX label, section 1; FDA XANAX XR label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA XANAX label, section 4; FDA XANAX XR label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA XANAX label, sections 5.3, 6.1 (Tables 1-2) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA XANAX label, sections 2.1, 2.2, 2.4, 8.4 and 8.5; FDA XANAX XR label, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA XANAX label, sections 2.6, 5.4, 5.5, 7.1 (Table 4) and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA XANAX label, sections 2.1, 2.2, 5.1, 5.2, 5.3, 5.6, 5.7, 5.8, 5.9 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA XANAX label, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA XANAX label, Boxed Warning and sections 5.1-5.9; FDA XANAX XR label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA XANAX label, sections 2.2, 2.3, 2.6, 5.3, 7.2 and 9.1; FDA XANAX XR label, sections 2.1 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA XANAX label, Boxed Warning and sections 4, 5.1, 5.2, 5.3, 5.7, 5.8, 5.9 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA XANAX label, sections 5.4, 7.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the current FDA XANAX and XANAX XR labels are Pregnancy and Lactation Labeling Rule (PLLR) format and no longer assign a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA XANAX label, sections 5.8, 8.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA XANAX label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA XANAX label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA XANAX label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA XANAX label, sections 1, 2.2, 2.3, 2.4, 2.5, 2.6, 4, 5.3, 5.5, 8.5, 8.6, 9.1 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "XANAX and XANAX XR (alprazolam) listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA XANAX label, Boxed Warning: risks from concomitant use with opioids; abuse, misuse and addiction; dependence and withdrawal reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Not stated: the FDA XANAX and XANAX XR labels contain no renal impairment section and no renal dose adjustment recommendation (section 12.3 lists only geriatric, obese, hepatic impairment, racial/ethnic and smoking populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA XANAX label, sections 2.5, 8.6 and 12.3; FDA XANAX XR label, sections 2.4 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA XANAX label, sections 3 and 16; FDA XANAX XR label, sections 2.1, 3 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens for XANAX and XANAX XR are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; alprazolam is not indicated in paediatric patients, see fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA labels are PLLR format and no longer state a letter category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA XANAX or XANAX XR labels)"
+  ],
+  "notes": "The table stores this agent as 'Alprazolam' with brand_names ['Alprazolam']; 'Alprazolam' is the generic (INN/USAN) name rather than a brand name, and the FDA-recognised brands are XANAX (immediate release) and XANAX XR (extended release), both covered here. Generic alprazolam tablets are also listed on DailyMed (for example Actavis, PD-Rx Pharmaceuticals and RemedyRepack repackagers); the monograph is written against the FDA XANAX and XANAX XR labels, which are the reference labels. FDA letter pregnancy categories are no longer assigned under the Pregnancy and Lactation Labeling Rule, so fields.pregnancy_category is null. Alprazolam is a Schedule IV controlled substance."
+}

@@ -1,0 +1,225 @@
+{
+  "name": "Alpelisib",
+  "existing_id": "8d54f71f-8c27-4d1e-a01f-ef8f26de0cef",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alpelisib is a kinase inhibitor of phosphatidylinositol-3-kinase (PI3K) with inhibitory activity predominantly against PI3K alpha. Gain-of-function mutations in the gene encoding the catalytic alpha-subunit of PI3K (PIK3CA) lead to activation of PI3K alpha and Akt signalling, cellular transformation and generation of tumours in in vitro and in vivo models. In breast cancer cell lines, alpelisib inhibited phosphorylation of PI3K downstream targets, including Akt, and showed activity in cell lines harbouring a PIK3CA mutation; in vivo, alpelisib inhibited the PI3K/Akt signalling pathway and reduced tumour growth in xenograft models, including breast cancer models. PI3K inhibition by alpelisib has been shown to induce an increase in estrogen receptor (ER) transcription in breast cancer cells, and the combination of alpelisib and fulvestrant demonstrated increased anti-tumour activity compared with either treatment alone in xenograft models derived from ER-positive, PIK3CA-mutated breast cancer cell lines. Activating PIK3CA mutations also induce a spectrum of overgrowths and malformations collectively known as PIK3CA-Related Overgrowth Spectrum (PROS); in an inducible mouse model of CLOVES, alpelisib inhibition of the PI3K pathway resulted in the prevention or improvement of organ abnormalities associated with the disease depending on when treatment was started, and these findings were reversed after withdrawal of alpelisib (PIQRAY label, section 12.1; VIJOICE label, section 12.1).",
+    "indications": [
+      "PIQRAY: in combination with fulvestrant for the treatment of adults with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, PIK3CA-mutated, advanced or metastatic breast cancer as detected by an FDA-approved test, following progression on or after an endocrine-based regimen (PIQRAY label, section 1).",
+      "PIQRAY patient selection: select patients based on the presence of one or more PIK3CA mutations in tumour tissue or plasma specimens; if no mutation is detected in a plasma specimen, test tumour tissue. Information on FDA-approved PIK3CA mutation tests is available from the FDA companion diagnostics list (PIQRAY label, section 2.1).",
+      "VIJOICE: treatment of adult and paediatric patients 2 years of age and older with severe manifestations of PIK3CA-Related Overgrowth Spectrum (PROS) who require systemic therapy. This indication is approved under accelerated approval based on response rate and duration of response; continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s) (VIJOICE label, section 1)."
+    ],
+    "contraindications": [
+      "PIQRAY: contraindicated in patients with severe hypersensitivity to alpelisib or any of its components (PIQRAY label, section 4).",
+      "VIJOICE: contraindicated in patients with severe hypersensitivity to alpelisib or any of its ingredients (VIJOICE label, section 4).",
+      "VIJOICE is not approved for use in the oncology setting; the VIJOICE label states this explicitly in the warnings for severe hypersensitivity, severe cutaneous adverse reactions, hyperglycaemia, pneumonitis and diarrhoea or colitis, which all describe events that have occurred with alpelisib in the oncology setting (VIJOICE label, sections 5.1 to 5.5)."
+    ],
+    "side_effects": [
+      "Hyperglycaemia: reported in 65% of patients treated with PIQRAY; Grade 3 (fasting plasma glucose > 250 to 500 mg/dL) in 33% and Grade 4 (> 500 mg/dL) in 3.9%. Ketoacidosis was reported in 0.7% of patients (n = 2) and fatal cases of ketoacidosis have occurred in the postmarketing setting. Among patients with Grade 2 or greater hyperglycaemia the median time to first occurrence was 15 days (PIQRAY label, sections 5.3 and 6.1).",
+      "Diarrhoea: occurred in 58% of patients treated with PIQRAY; Grade 3 in 7% (n = 19). Among patients with Grade 2 or 3 diarrhoea (n = 71) the median time to onset was 46 days (range 1 to 442 days). In clinical trials 63% of patients who experienced diarrhoea required antidiarrhoeal medication, dose reductions were required in 6%, and 2.8% permanently discontinued PIQRAY because of diarrhoea (PIQRAY label, sections 5.5 and 6.1).",
+      "Rash: one of the most common adverse reactions; serious adverse reactions included rash in 3.5% of patients and 4.2% permanently discontinued PIQRAY alone because of rash. Rash was a leading cause of dose reduction (9% of patients) (PIQRAY label, sections 6.1 and 2.3).",
+      "Nausea (45% all grades), vomiting (27%), stomatitis (30%), decreased appetite (36%), fatigue (42%), dysgeusia (18%), headache (18%), mucosal inflammation (19%), peripheral oedema (15%), pyrexia (14%), mucosal dryness (12%), weight decreased (27%), urinary tract infection (10%), lymphocyte count decreased, gamma-glutamyl transferase increased, alanine aminotransferase increased, haemoglobin decreased, lipase increased, calcium decreased, activated partial thromboplastin time prolonged and alopecia (PIQRAY label, section 6.1, Table 6 and Table 7).",
+      "Osteonecrosis of the jaw: reported in 4.2% of patients (12/284) in the PIQRAY plus fulvestrant arm compared with 1.4% (4/287) in the placebo arm; all affected patients had prior or concomitant bisphosphonate or RANK-ligand inhibitor administration (PIQRAY label, section 6.1).",
+      "Severe hypersensitivity, including anaphylaxis and anaphylactic shock: Grade 3 and 4 hypersensitivity reactions occurred in 0.7% of patients; angioedema has been reported in the postmarketing setting (PIQRAY label, sections 5.1 and 6.2).",
+      "Severe cutaneous adverse reactions: Stevens-Johnson syndrome (SJS) 0.4% and erythema multiforme (EM) 1.1% in the SOLAR-1 study; drug reaction with eosinophilia and systemic symptoms (DRESS) has been reported in the postmarketing setting (PIQRAY label, sections 5.2, 6.1 and 6.2).",
+      "Pneumonitis: reported in 1.8% of patients treated with PIQRAY, including acute interstitial pneumonitis and interstitial lung disease (PIQRAY label, sections 5.4 and 6.1).",
+      "Acute kidney injury: occurred as a serious adverse reaction in 2.5% of patients; severe diarrhoea can result in dehydration and in some cases acute kidney injury (PIQRAY label, sections 5.5 and 6.1).",
+      "Postmarketing adverse reactions with PIQRAY: hyperglycaemia, severe cutaneous adverse reactions including DRESS, pneumonitis, colitis, angioedema and uveitis (PIQRAY label, sections 6.2 and 5).",
+      "VIJOICE (PROS population, EPIK-P1, n = 57): the most common adverse reactions (at least 10%) were diarrhoea (16%), stomatitis (16%) and hyperglycaemia (12%); eczema (7%), dry skin (7%) and alopecia were also reported. Serious adverse reactions occurred in 12% of patients, most often dehydration (n = 2) and cellulitis (n = 2). Dosage interruption due to an adverse reaction occurred in 11% and dose reduction in 5% of patients (VIJOICE label, sections 6.1 and 2.5).",
+      "VIJOICE postmarketing/spontaneous reports in PROS: decreased appetite; pruritus, rash (maculo-papular, erythematous, papular, pruritic) and acne/dermatitis acneiform (VIJOICE label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "PIQRAY (breast cancer): the recommended dose is 300 mg (two 150 mg film-coated tablets) taken orally once daily with food, continued until disease progression or unacceptable toxicity (PIQRAY label, section 2.2). Take the dose at approximately the same time each day; swallow tablets whole (do not chew, crush or split) and do not ingest any tablet that is broken, cracked or otherwise not intact. If a dose is missed it may be taken with food within 9 hours of the usual time; after more than 9 hours skip the dose for that day and resume the usual schedule the next day. If the patient vomits after taking the dose, do not take an additional dose that day (PIQRAY label, section 2.2). When given with PIQRAY, the recommended fulvestrant dose is 500 mg on Days 1, 15 and 29 and once monthly thereafter (PIQRAY label, section 2.2). Dose reductions: first reduction 250 mg once daily (one 200 mg plus one 50 mg tablet); second reduction 200 mg once daily (one 200 mg tablet); if further reduction below 200 mg once daily is required, discontinue PIQRAY (PIQRAY label, section 2.3, Table 1). VIJOICE (PROS): the recommended dosage in adult patients is 250 mg orally once daily, taken with food, until disease progression or unacceptable toxicity (VIJOICE label, section 2.1). VIJOICE dose reductions: first reduction 125 mg once daily; second reduction 50 mg once daily; discontinue VIJOICE in patients who cannot tolerate 50 mg daily (VIJOICE label, section 2.5, Table 2).",
+      "geriatric": "PIQRAY: of the 284 patients who received PIQRAY in the SOLAR-1 trial, 117 were 65 years of age or older and 34 were 75 years of age or older. There was a higher incidence of Grade 3-4 hyperglycaemia in patients 65 or older (44%) compared with patients under 65 (32%), and an increase in hyperglycaemia adverse reactions (74% versus 66%) and Grade 3-4 hyperglycaemia (56% versus 36%) in patients 75 or older versus under 75. No overall differences in effectiveness were observed between patients 65 or older and younger patients, and there are too few patients 75 or older to assess differences in safety or effectiveness (PIQRAY label, section 8.5). VIJOICE: there were no adult patients aged 65 years or older who received VIJOICE in the EPIK-P1 study (VIJOICE label, section 8.5).",
+      "paediatric": "VIJOICE: safety and effectiveness have been established in paediatric patients 2 to less than 18 years of age with PROS based on the single-arm EPIK-P1 study, which enrolled 39 paediatric patients (11 aged 2 to 5 years, 12 aged 6 to 11 years and 16 aged 12 to less than 18 years). The recommended initial dosage is 50 mg orally once daily with food; consider increasing to 125 mg once daily in patients 6 years and older for response optimisation after 24 weeks at 50 mg once daily; when a patient turns 18 years old consider a gradual increase up to 250 mg. Safety and effectiveness below 2 years of age have not been established. Because of animal toxicity data, regular monitoring of growth and development is recommended (VIJOICE label, sections 2.1, 2.5 and 8.4). PIQRAY: the safety and efficacy of PIQRAY in paediatric patients have not been established (PIQRAY label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inducers: avoid concomitant use with strong CYP3A4 inducers and consider an alternative concomitant drug with no or minimal potential to induce CYP3A4, because induction decreases alpelisib concentration and may reduce efficacy. In the clinical study, repeat doses of rifampin with a single 300 mg dose of alpelisib decreased alpelisib Cmax by 38% and AUC by 57%, and repeat doses of rifampin with repeat 300 mg alpelisib decreased Cmax by 59% and AUC by 74% (PIQRAY label, sections 7.1 and 12.3; VIJOICE label, section 7.1).",
+      "Breast cancer resistance protein (BCRP) inhibitors: avoid use of BCRP inhibitors, because alpelisib is transported by BCRP and coadministration may increase alpelisib exposure and the risk of adverse reactions; if alternatives are not available, closely monitor for increased adverse reactions (PIQRAY label, sections 7.1 and 12.3; VIJOICE label, section 7.1).",
+      "Moderate CYP3A4 inducers: coadministration of repeat doses of efavirenz (a moderate CYP3A4 inducer) with a single 300 mg dose of alpelisib is expected to decrease alpelisib AUC by 30% or less (PIQRAY label, section 12.3).",
+      "Strong CYP3A4 inhibitors: coadministration of repeat doses of ketoconazole (a strong CYP3A4 inhibitor) with a single 300 mg dose of alpelisib is expected to increase alpelisib AUC by 37% or less (PIQRAY label, section 12.3).",
+      "Acid-reducing agents: PIQRAY can be coadministered with acid reducing agents because it is taken with food, and food has a more pronounced effect on solubility than gastric pH; however, coadministration of the H2 receptor antagonist ranitidine with a single 300 mg oral dose of alpelisib reduced AUC by an average of 21% and Cmax by 36% in the fed state, and by 30% and 51% respectively in the fasted state (PIQRAY label, section 12.3).",
+      "CYP3A4, CYP2C8, CYP2C9, CYP2C19 and CYP2B6 substrates: coadministration of repeat 300 mg alpelisib with a cocktail of sensitive substrates (midazolam, repaglinide, warfarin, omeprazole, bupropion) did not show clinically significant pharmacokinetic interactions, and no clinically significant differences in everolimus pharmacokinetics were seen (PIQRAY label, section 12.3).",
+      "Antihyperglycaemic therapy: metformin was recommended in the SOLAR-1 trial with the guidance to initiate metformin 500 mg once daily and increase as tolerated to 500 mg twice daily, then 500 mg with breakfast plus 1,000 mg with dinner, and further to 1,000 mg twice daily if needed; insulin may be used for 1 to 2 days until hyperglycaemia resolves (PIQRAY label, section 2.3, Table 3). In the METALLICA study, starting metformin 7 days before alpelisib decreased the incidence and severity of hyperglycaemia events but increased the incidence and severity of nausea, vomiting and diarrhoea (PIQRAY label, section 5.3).",
+      "Fulvestrant: refer to the fulvestrant Full Prescribing Information for dose modification guidelines in the event of toxicity and for other relevant safety information (PIQRAY label, section 2.3)."
+    ],
+    "monitoring": "Before initiating treatment, test fasting plasma glucose (FPG) and HbA1c and optimise blood glucose (PIQRAY label, sections 2.3 and 5.3). After starting treatment, monitor fasting glucose at least once every week for the first 2 weeks, then at least once every 4 weeks and as clinically indicated; monitor HbA1c every 3 months and as clinically indicated; monitor fasting glucose more frequently in patients with risk factors such as obesity (BMI 30 or above), elevated FPG, HbA1c at or above the upper limit of normal, concomitant systemic corticosteroids, or age 75 and above (PIQRAY label, sections 2.3 and 5.3). If hyperglycaemia develops, monitor fasting glucose at least twice weekly until it normalises, and while on anti-hyperglycaemic medication continue weekly monitoring for 8 weeks, then every 2 weeks (PIQRAY label, section 5.3). For rash, consider dermatology consultation for all grades; monitor response to topical corticosteroids and antihistamines (PIQRAY label, section 2.3, Table 2). For diarrhoea or colitis, monitor for abdominal pain and mucus or blood in stool (PIQRAY label, section 5.5). For any new or worsening respiratory symptoms, interrupt alpelisib immediately and evaluate for pneumonitis, excluding infectious, neoplastic and other causes (PIQRAY label, section 5.4). For VIJOICE in paediatric patients, regularly monitor growth and development based on animal toxicity data (VIJOICE label, section 8.4). For PIQRAY, monitor for severe hypersensitivity and for signs of severe cutaneous adverse reactions (PIQRAY label, sections 5.1 and 5.2).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling (Patient Information) (PIQRAY label, section 17; VIJOICE label, section 17). Inform patients of the signs and symptoms of severe hypersensitivity and of severe cutaneous adverse reactions (a prodrome of fever, flu-like symptoms, mucosal lesions, progressive skin rash or lymphadenopathy) and advise them to contact their healthcare provider immediately (PIQRAY label, section 17; VIJOICE label, section 17). Tell patients that alpelisib may cause hyperglycaemia and that fasting blood glucose must be monitored periodically during therapy, and advise them to report excessive thirst, increased urination or increased appetite with weight loss (PIQRAY label, section 17; VIJOICE label, section 17). Tell patients that alpelisib may cause pneumonitis and to immediately report new or worsening respiratory symptoms (PIQRAY label, section 17; VIJOICE label, section 17). Tell patients that diarrhoea may be severe: start antidiarrhoeal treatment, increase oral fluids, and notify the provider if diarrhoea occurs; notify the provider immediately of symptoms of colitis such as abdominal pain and mucus or blood in stool (PIQRAY label, section 17; VIJOICE label, section 17). Advise females of reproductive potential to use effective contraception during treatment and for 1 week after the last dose, and advise male patients with female partners of reproductive potential to use condoms and effective contraception during treatment and for 1 week after the last dose (PIQRAY label, sections 5.6 and 17; VIJOICE label, sections 5.6 and 17). Advise lactating women not to breastfeed during treatment and for 1 week after the last dose (PIQRAY label, section 8.2; VIJOICE label, section 8.2). Verify pregnancy status in females of reproductive potential before initiating treatment (PIQRAY label, section 8.3; VIJOICE label, section 8.3).",
+    "warnings": [
+      "Severe hypersensitivity: severe hypersensitivity reactions including anaphylaxis and anaphylactic shock can occur; Grade 3 and 4 reactions occurred in 0.7% of patients and angioedema has been reported postmarketing. Permanently discontinue alpelisib in the event of severe hypersensitivity (PIQRAY label, section 5.1; VIJOICE label, section 5.1).",
+      "Severe cutaneous adverse reactions: SCARs including Stevens-Johnson syndrome, erythema multiforme, toxic epidermal necrolysis and DRESS can occur. Interrupt alpelisib until the aetiology is determined, consult a dermatologist, and permanently discontinue if a SCAR is confirmed; do not reintroduce alpelisib after a previous SCAR (PIQRAY label, section 5.2; VIJOICE label, section 5.2).",
+      "Hyperglycaemia: severe hyperglycaemia, in some cases associated with hyperglycaemic hyperosmolar non-ketotic syndrome (HHNKS) or ketoacidosis, has occurred; fatal cases of ketoacidosis have occurred postmarketing. Base dose modifications on fasting glucose values per the hyperglycaemia table (PIQRAY label, section 5.3; VIJOICE label, section 5.3).",
+      "Pneumonitis: severe pneumonitis including acute interstitial pneumonitis and interstitial lung disease can occur (1.8% in PIQRAY-treated patients). Interrupt alpelisib immediately in patients with new or worsening respiratory symptoms, evaluate for pneumonitis, and permanently discontinue in all patients with confirmed pneumonitis (PIQRAY label, section 5.4; VIJOICE label, section 5.4).",
+      "Diarrhoea or colitis: severe diarrhoea resulting in dehydration and in some cases acute kidney injury can occur; monitor for additional symptoms of colitis such as abdominal pain and mucus or blood in stool, and interrupt, reduce the dose or permanently discontinue according to severity (PIQRAY label, section 5.5; VIJOICE label, section 5.5).",
+      "Embryo-fetal toxicity: alpelisib can cause fetal harm when administered to a pregnant woman based on findings in animals and its mechanism of action. In animal reproduction studies, oral administration of alpelisib to pregnant rats and rabbits during organogenesis caused embryo-fetal mortality, reduced fetal weights and increased fetal malformations at exposures at or above 0.8 times the human exposure at the recommended 300 mg/day dose (PIQRAY label, section 5.6; VIJOICE label, section 5.6).",
+      "VIJOICE-specific: the severe hypersensitivity, severe cutaneous adverse reaction, hyperglycaemia, pneumonitis and diarrhoea/colitis warnings in the VIJOICE label are based on events that occurred with alpelisib in the oncology setting; VIJOICE is not approved for use in the oncology setting (VIJOICE label, sections 5.1 to 5.5)."
+    ],
+    "precautions": [
+      "Dose modifications for adverse reactions are set out in the PIQRAY tables: cutaneous adverse reactions (Table 2), hyperglycaemia (Table 3), diarrhoea or colitis (Table 4) and other toxicities including pancreatitis and bilirubin elevation (Table 5). For grade 3 or 4 diarrhoea, colitis, hyperglycaemia or other toxicity, interrupt alpelisib until improvement to grade 1 or less and then resume at the next lower dose level; grade 4 events require permanent discontinuation (PIQRAY label, section 2.3).",
+      "Only one dose reduction is permitted for pancreatitis; if toxicity reoccurs after a pancreatitis dose reduction, permanently discontinue alpelisib (PIQRAY label, section 2.3, Table 5).",
+      "For grade 2 total bilirubin elevation, interrupt alpelisib until improvement to grade 1 or less and resume at the same dose if resolved within 14 days or at the next lower dose level if improvement takes more than 14 days (PIQRAY label, section 2.3, Table 5).",
+      "VIJOICE dose modification and discontinuation recommendations for adverse reactions are given in Table 2 (adults) and Table 3 (paediatric patients); discontinue VIJOICE in adults or paediatric patients who cannot tolerate 50 mg daily (VIJOICE label, section 2.5).",
+      "Do not ingest a PIQRAY or VIJOICE tablet that is broken, cracked or otherwise not intact (PIQRAY label, section 2.2; VIJOICE label, section 2.4).",
+      "The safety of alpelisib in patients with type 1 and uncontrolled type 2 diabetes has not been established, as these patients were excluded from the SOLAR-1 trial; patients with a history of diabetes may require intensified hyperglycaemic treatment and should be closely monitored (PIQRAY label, section 5.3; VIJOICE label, section 5.3).",
+      "Patients with a medical history of controlled type 2 diabetes were included in SOLAR-1 (PIQRAY label, section 5.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe hypersensitivity reactions including anaphylaxis and anaphylactic shock, and angioedema (PIQRAY label, section 5.1; VIJOICE label, section 5.1).",
+      "Severe cutaneous adverse reactions: Stevens-Johnson syndrome, erythema multiforme, toxic epidermal necrolysis and DRESS (PIQRAY label, section 5.2; VIJOICE label, section 5.2).",
+      "Severe hyperglycaemia, hyperglycaemic hyperosmolar non-ketotic syndrome and ketoacidosis, including fatal cases of ketoacidosis in the postmarketing setting (PIQRAY label, section 5.3; VIJOICE label, section 5.3).",
+      "Severe pneumonitis, including acute interstitial pneumonitis and interstitial lung disease (PIQRAY label, section 5.4; VIJOICE label, section 5.4).",
+      "Severe diarrhoea with dehydration and acute kidney injury, and colitis (PIQRAY label, section 5.5; VIJOICE label, section 5.5).",
+      "Acute kidney injury: a serious adverse reaction in 2.5% of patients in the SOLAR-1 trial (PIQRAY label, section 6.1).",
+      "Osteonecrosis of the jaw: 4.2% of patients in the PIQRAY plus fulvestrant arm (PIQRAY label, section 6.1).",
+      "Pancreatitis (dose interruption, reduction and permanent discontinuation required) (PIQRAY label, section 2.3, Table 5)."
+    ],
+    "food_interactions": [
+      "Alpelisib must be taken with food. A high-fat high-calorie meal (985 calories, 58.1 g fat) increased alpelisib AUC by 73% and Cmax by 84%, and a low-fat low-calorie meal (334 calories, 8.7 g fat) increased AUC by 77% and Cmax by 145%; no clinically significant differences in AUC were observed between the two meals (PIQRAY label, section 12.3; VIJOICE label, section 12.3).",
+      "PIQRAY and VIJOICE are taken with food at approximately the same time each day; a missed dose may be taken with food within 9 hours of the usual time (PIQRAY label, section 2.2; VIJOICE label, section 2.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Alpelisib can cause fetal harm when administered to a pregnant woman based on animal data and its mechanism of action. There are no available data in pregnant women to inform the drug-associated risk. In embryo-fetal development studies in rats and rabbits, oral administration of alpelisib during organogenesis caused embryo-fetal mortality (post-implantation loss), reduced fetal weights and increased incidences of fetal malformations. In rats, no viable fetuses were seen at 30 mg/kg/day (approximately 3 times the human exposure at 300 mg/day by AUC) and skeletal malformations and fetal variations occurred at 10 mg/kg/day (approximately 0.8 times the human exposure by AUC); in rabbits, doses of 15 mg/kg/day and above caused increased embryo-fetal deaths, reduced fetal weights and malformations. The estimated background risk of major birth defects is 2% to 4% and of miscarriage is 15% to 20% in the US general population. Advise pregnant women of the potential risk to a fetus; verify pregnancy status in females of reproductive potential before initiating treatment; advise females of reproductive potential to use effective contraception during treatment and for 1 week after the last dose, and advise male patients with female partners of reproductive potential to use condoms and effective contraception during treatment and for 1 week after the last dose. For PIQRAY, refer to the fulvestrant Full Prescribing Information for pregnancy information. Alpelisib may impair fertility in males and females of reproductive potential based on animal findings (PIQRAY label, sections 5.6, 8.1 and 8.3; VIJOICE label, sections 5.6, 8.1 and 8.3).",
+    "lactation_guidance": "There are no data on the presence of alpelisib in human milk, its effects on milk production or on the breastfed child. Because of the potential for serious adverse reactions in the breastfed child, advise lactating women not to breastfeed during treatment with alpelisib and for 1 week after the last dose (PIQRAY label, section 8.2; VIJOICE label, section 8.2).",
+    "overdose": "There is limited experience of overdose with alpelisib in clinical trials. In PIQRAY studies alpelisib was administered at doses up to 450 mg once daily, and in cases of accidental overdosage the adverse reactions were consistent with the known safety profile of alpelisib and included hyperglycaemia, nausea, asthenia and rash. Initiate general symptomatic and supportive measures in all cases of overdosage where necessary. There is no known antidote for alpelisib (PIQRAY label, section 10; VIJOICE label, section 10).",
+    "pharmacokinetics": "Following oral administration, the median time to peak plasma concentration (Tmax) ranged between 2.0 and 4.0 hours. Steady-state Cmax and AUC increased proportionally over the dose range of 30 mg to 450 mg under fed conditions; mean accumulation was 1.3 to 1.5 and steady-state plasma concentrations were reached within 3 days of daily dosing. In SOLAR-1 patients receiving PIQRAY 300 mg once daily, population-derived mean steady-state Cmax was 2,480 ng/mL (CV 23%) and AUC0-24h was 33,224 ng*h/mL (CV 21%). For VIJOICE, a single 50 mg dose gave Cmax 277 ng/mL (24%) and AUC 2,090 hr*ng/mL (24%). The mean apparent volume of distribution at steady state is predicted to be 114 L (46%); protein binding is 89% and independent of concentration. The half-life is predicted to be 8 to 9 hours and mean clearance is predicted to be 9.2 L/hr (21%) under fed conditions. Alpelisib is primarily metabolised by chemical and enzymatic hydrolysis to the metabolite BZG791 followed by CYP3A4-mediated hydroxylation. After a single oral 400 mg radiolabelled dose in the fasted state, 81% of the dose was recovered in faeces (36% unchanged, 32% BZG791) and 14% in urine (2% unchanged, 7.1% BZG791). No clinically significant pharmacokinetic differences are predicted based on age (21 to 87 years), sex, race/ethnicity, body weight, mild to moderate renal impairment (CLcr 30 to less than 90 mL/min) or mild to severe hepatic impairment (Child-Pugh A, B and C) (PIQRAY label, section 12.3; VIJOICE label, section 12.3).",
+    "clinical_pearls": [
+      "Alpelisib is a PI3K alpha inhibitor with two distinct FDA-approved products: PIQRAY (300 mg once daily with fulvestrant) for PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, and VIJOICE (250 mg once daily in adults, 50 mg once daily in children 2 years and older) for severe PROS. The products are not interchangeable and VIJOICE is not approved for use in the oncology setting (PIQRAY label, sections 1, 2.2 and 5; VIJOICE label, sections 1, 2.1 and 5).",
+      "Test for PIK3CA mutations in tumour tissue or plasma before starting PIQRAY; if the plasma specimen is negative, test tumour tissue. No benefit was seen in SOLAR-1 in tumours without a PIK3CA tissue mutation (PFS HR 0.85, 95% CI 0.58 to 1.25; OS HR 0.92, 95% CI 0.65 to 1.29) (PIQRAY label, sections 2.1 and 14).",
+      "SOLAR-1 efficacy in the PIK3CA-mutated cohort: median investigator-assessed progression-free survival 11.0 months (95% CI 7.5 to 14.5) with PIQRAY plus fulvestrant versus 5.7 months (95% CI 3.7 to 7.4) with placebo plus fulvestrant (HR 0.65, 95% CI 0.50 to 0.85; p = 0.0013); overall response rate 35.7% versus 16.2%. At the prespecified final overall survival analysis there was no significant difference in OS (HR 0.86, 95% CI 0.64 to 1.15) (PIQRAY label, section 14, Table 8).",
+      "Hyperglycaemia is the single most common dose-limiting toxicity: 65% of patients, with Grade 3 or 4 in about 37%. Consider metformin premedication and monitor fasting glucose weekly for the first 2 weeks (PIQRAY label, sections 5.3 and 6.1).",
+      "Dose reduction levels are 300 mg, 250 mg then 200 mg once daily; if a reduction below 200 mg is required, discontinue alpelisib (PIQRAY label, section 2.3, Table 1).",
+      "There is no known antidote for alpelisib overdose; manage with general symptomatic and supportive measures (PIQRAY label, section 10).",
+      "Alpelisib must be taken with food, and a missed dose can be taken within 9 hours but is skipped thereafter; after vomiting, do not redose that day (PIQRAY label, section 2.2)."
+    ],
+    "brand_names": ["PIQRAY", "VIJOICE"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment is recommended for patients with mild to moderate renal impairment (CLcr 30 to less than 90 mL/min). The effect of severe renal impairment (CLcr less than 30 mL/min) on alpelisib pharmacokinetics is unknown (PIQRAY label, sections 8.6 and 12.3). The VIJOICE label does not contain a renal impairment section, so no renal dose adjustment statement can be made for that product.",
+    "hepatic_dose_adjustment": "The PIQRAY label states that no clinically significant differences in alpelisib pharmacokinetics are predicted in patients with mild to severe hepatic impairment (Child-Pugh Class A, B and C); no hepatic dose adjustment is specified in the label (PIQRAY label, section 12.3). The VIJOICE label does not contain a hepatic impairment section, so no hepatic dose adjustment statement can be made for that product.",
+    "administration_instructions": "Oral. PIQRAY: 300 mg once daily with food (two 150 mg film-coated tablets); take at approximately the same time each day; swallow tablets whole, do not chew, crush or split, and do not use any tablet that is broken, cracked or not intact; a missed dose may be taken with food within 9 hours of the usual time, otherwise skip; do not redose after vomiting. VIJOICE: available as 50 mg, 125 mg and 200 mg film-coated tablets and 50 mg oral granules; take with food at approximately the same time each day; swallow tablets whole or prepare as a suspension (place the tablet(s) in 2 to 4 ounces of water for oral use, or 1 to 2 ounces of water for feeding-tube use, let stand approximately 5 minutes, crush with a spoon and stir, administer immediately, and discard the suspension if not administered within 60 minutes of preparation); do not combine tablets with oral granules, and do not use multiple 50 mg packets or a partial packet for a 125 mg or 250 mg dose; administer via French size 5 to 12 silicone or polyurethane nasogastric tubes or French size 12 to 24 silicone gastric tubes. Store PIQRAY tablets at 20 to 25 degrees C (68 to 77 degrees F) in the original carton to protect from moisture (PIQRAY label, sections 2.2, 2.3, 2.4 and 16; VIJOICE label, sections 2.2, 2.3, 2.4 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA PIQRAY (alpelisib) label, section 12.1; FDA VIJOICE (alpelisib) label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA PIQRAY label, sections 1 and 2.1; FDA VIJOICE label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=638069a4-aee0-46c9-9e21-54ad449c163c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA PIQRAY label, section 4; FDA VIJOICE label, sections 4 and 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA PIQRAY label, sections 5.1-5.5, 6.1, 6.2 and Tables 6-7; FDA VIJOICE label, sections 5.3, 5.5, 6.1, 6.2 and Table 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA PIQRAY label, sections 2.1, 2.2, 2.3 (Tables 1-5) and 8.5; FDA VIJOICE label, sections 2.1, 2.5 (Tables 2-3) and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA PIQRAY label, sections 2.3, 7.1 and 12.3; FDA VIJOICE label, section 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA PIQRAY label, sections 2.3, 5.1-5.5 and 8.4; FDA VIJOICE label, sections 5.1-5.5 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA PIQRAY label, section 17; FDA VIJOICE label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA PIQRAY label, sections 5.1-5.6; FDA VIJOICE label, sections 5.1-5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA PIQRAY label, sections 2.2, 2.3 (Tables 2-5) and 5.3; FDA VIJOICE label, sections 2.4, 2.5 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA PIQRAY label, sections 2.3, 5.1-5.5 and 6.1; FDA VIJOICE label, sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA PIQRAY label, sections 2.2 and 12.3 (Effect of Food); FDA VIJOICE label, sections 2.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the current FDA PIQRAY and VIJOICE labels are Pregnancy and Lactation Labeling Rule (PLLR) format and no longer assign a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA PIQRAY label, sections 5.6, 8.1 and 8.3; FDA VIJOICE label, sections 5.6, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA PIQRAY label, section 8.2; FDA VIJOICE label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA PIQRAY label, section 10; FDA VIJOICE label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA PIQRAY label, section 12.3; FDA VIJOICE label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA PIQRAY label, sections 1, 2.1, 2.2, 2.3, 5.3, 5.5, 6.1, 10 and 14 (Table 8); FDA VIJOICE label, sections 1, 2.1 and 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "brand_names",
+      "ref": "PIQRAY (alpelisib) and VIJOICE (alpelisib) listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=638069a4-aee0-46c9-9e21-54ad449c163c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA PIQRAY label or the FDA VIJOICE label (sections 1-17 contain no boxed warning section)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA PIQRAY label, sections 8.6 and 12.3; VIJOICE label contains no renal impairment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA PIQRAY label, section 12.3 (Specific Populations); VIJOICE label contains no hepatic impairment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA PIQRAY label, sections 2.2, 2.3, 2.4 and 16; FDA VIJOICE label, sections 2.2, 2.3, 2.4 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens for PIQRAY and VIJOICE are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen for VIJOICE is given in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA labels are PLLR format and no longer state a letter category)"
+  ],
+  "notes": "The table stores this agent as 'Alpelisib' with the brand name VIJOICE. Alpelisib is marketed in the US as two products with different indications, dose regimens, dosage forms and safety statements, and both are covered here: PIQRAY (alpelisib) tablets, 50/150/200 mg, for HR-positive/HER2-negative PIK3CA-mutated advanced or metastatic breast cancer in combination with fulvestrant; and VIJOICE (alpelisib) tablets 50/125/200 mg and 50 mg oral granules, for severe PIK3CA-Related Overgrowth Spectrum in patients 2 years and older under accelerated approval. The VIJOICE label explicitly states that it is not approved for use in the oncology setting. Neither label carries a boxed warning, so fields.black_box_warnings is an empty array. FDA letter pregnancy categories are no longer assigned under the Pregnancy and Lactation Labeling Rule, so fields.pregnancy_category is null."
+}

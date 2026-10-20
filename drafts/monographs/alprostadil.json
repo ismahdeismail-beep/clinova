@@ -1,0 +1,236 @@
+{
+  "name": "Alprostadil",
+  "existing_id": "9ce9af8d-169d-4e31-b1c2-1ae93e458691",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alprostadil is a synthetic form of prostaglandin E1 (PGE1), a prostaglandin with a wide variety of pharmacological actions including vasodilation and inhibition of platelet aggregation. In erectile dysfunction, alprostadil induces erection by relaxation of trabecular smooth muscle and by dilation of cavernosal arteries through binding to its receptors and increasing intracellular cyclic adenosine monophosphate (cAMP) via modulation of adenylate cyclase. This leads to expansion of lacunar spaces and entrapment of blood by compressing the venules against the tunica albuginea, the corporal veno-occlusive mechanism. Alprostadil also attenuates presynaptic noradrenaline release in the corpus cavernosum (CAVERJECT label, section 12.1; EDEX label, CLINICAL PHARMACOLOGY, Mode of Action). In the neonatal ductus arteriosus, smooth muscle is especially sensitive to alprostadil: strips of lamb ductus markedly relax in its presence, and administration reopened the closing ductus of newborn rats, rabbits and lambs (PROSTIN VR PEDIATRIC label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "CAVERJECT (intracavernosal): treatment of erectile dysfunction (CAVERJECT label, section 1.1).",
+      "CAVERJECT: as an adjunct to other diagnostic tests in the diagnosis of erectile dysfunction (CAVERJECT label, section 1.2).",
+      "CAVERJECT IMPULSE (intracavernosal, dual-chamber syringe): treatment of erectile dysfunction, and as an adjunct to other diagnostic tests in the diagnosis of erectile dysfunction (CAVERJECT IMPULSE label, sections 1.1 and 1.2).",
+      "EDEX (intracavernosal, alprostadil alfadex with a reusable injection device): treatment of erectile dysfunction due to neurogenic, vasculogenic, psychogenic or mixed aetiology (EDEX label, INDICATIONS AND USAGE).",
+      "PROSTIN VR PEDIATRIC (intravenous or intra-arterial infusion): palliative, not definitive, therapy to temporarily maintain the patency of the ductus arteriosus until corrective or palliative surgery can be performed in neonates who have congenital heart defects and who depend upon the patent ductus for survival. Such defects include pulmonary atresia, pulmonary stenosis, tricuspid atresia, tetralogy of Fallot, interruption of the aortic arch, coarctation of the aorta, or transposition of the great vessels with or without other defects (PROSTIN VR PEDIATRIC label, INDICATIONS AND USAGE)."
+    ],
+    "contraindications": [
+      "CAVERJECT: contraindicated in men who have a known hypersensitivity to the drug (CAVERJECT label, section 4).",
+      "CAVERJECT: contraindicated in men who have conditions that predispose them to priapism, such as sickle cell anaemia or sickle cell trait, multiple myeloma or leukaemia (CAVERJECT label, section 4).",
+      "CAVERJECT: contraindicated for the treatment of erectile dysfunction in men with fibrotic conditions of the penis, such as anatomical deformation, angulation, cavernosal fibrosis or Peyronie's disease (CAVERJECT label, section 4).",
+      "CAVERJECT: contraindicated in men with penile implants (CAVERJECT label, section 4).",
+      "CAVERJECT IMPULSE: contraindicated in men with a known hypersensitivity to the drug, in men with conditions predisposing to priapism (sickle cell anaemia or trait, multiple myeloma, leukaemia), in men with fibrotic conditions of the penis, and in men with penile implants (CAVERJECT IMPULSE label, section 4).",
+      "EDEX: should not be used in men with conditions that predispose them to priapism (sickle cell anaemia or trait, multiple myeloma, leukaemia), for the treatment of erectile dysfunction in men with fibrotic conditions of the penis such as cavernosal fibrosis or Peyronie's disease, or in men with penile implants (EDEX label, CONTRAINDICATIONS).",
+      "PROSTIN VR PEDIATRIC: the label states 'Contraindications: None' (PROSTIN VR PEDIATRIC label, CONTRAINDICATIONS).",
+      "CAVERJECT and CAVERJECT IMPULSE are not indicated for use in females, and EDEX is not indicated for use in women or paediatric patients (CAVERJECT label, section 8.1; EDEX label, Pregnancy, Nursing Mothers and Pediatric Use)."
+    ],
+    "side_effects": [
+      "CAVERJECT local adverse reactions reported by at least 1% of 1,861 patients treated for up to 18 months: penile pain 37%; prolonged erection 4%; penile fibrosis 3%; injection site haematoma 3%; penis disorder 3%; injection site ecchymosis 2%; penile rash 1%; penile oedema 1%. Reactions reported in less than 1% included injection site haemorrhage, injection site inflammation, injection site itching, injection site swelling, urethral bleeding, penile warmth, painful erection and abnormal ejaculation (CAVERJECT label, section 6.1, Table 2).",
+      "CAVERJECT: prolonged erection (4 to 6 hours) occurred in 4% of patients and priapism (more than 6 hours) in 0.4%; 3% of patients discontinued treatment because of penile pain (CAVERJECT label, sections 5.1 and 6.1).",
+      "EDEX local adverse reactions in 1,065 patients treated for up to 24 months: penile pain during erection 35%, after erection 30%, during injection 29% and other penile pain 11%; bleeding 15%; haematoma 5%; ecchymosis 4%; penile angulation 7%; penile fibrosis 5%; cavernous body fibrosis 2%; Peyronie's disease 1%; prolonged erection 4 to 6 hours 4% and more than 6 hours less than 1%; penis disorder 3%; erythema 2%; faulty injection technique 6% (EDEX label, ADVERSE REACTIONS, Table).",
+      "EDEX systemic adverse experiences of at least 1%: upper respiratory tract infection 5%, sinusitis 1%, headache 2%, pain 2%, infection 2%, back pain 2%, leg pain 1%, influenza-like symptoms 3%, hypertension 2%, myocardial infarction 1%, abnormal ECG 1%, hypertriglyceridaemia 2%, hypercholesterolaemia 1%, hyperglycaemia 1%, abnormal vision 1%, prostate disorder 1%, testicular pain 1%, inguinal hernia 1% and skin disorder 1%. Four patients (less than 1%) reported clinical symptoms of hypotension such as dizziness or syncope (EDEX label, ADVERSE REACTIONS).",
+      "EDEX: discontinuation of therapy due to a side effect was required in approximately 9% of patients treated with EDEX and in less than 1% of patients treated with placebo (EDEX label, ADVERSE REACTIONS).",
+      "CAVERJECT and EDEX postmarketing: needle breakage during administration; in some instances surgical removal of the needle was required (CAVERJECT label, section 6.2; EDEX label, Post-Marketing Adverse Experiences).",
+      "PROSTIN VR PEDIATRIC neonatal adverse reactions: central nervous system - apnea in about 12% of neonates treated, fever in about 14% and seizures in about 4%; less than 1% cerebral bleeding, hyperextension of the neck, hyperirritability, hypothermia, jitteriness, lethargy and stiffness. Cardiovascular - flushing about 10% (more common after intra-arterial dosing), bradycardia about 7%, hypotension about 4%, tachycardia about 3%, cardiac arrest about 1%, oedema about 1%; less than 1% congestive heart failure, hyperaemia, second degree heart block, shock, spasm of the right ventricle infundibulum, supraventricular tachycardia and ventricular fibrillation. Respiratory - less than 1% bradypnoea, bronchial wheezing, hypercapnia, respiratory depression, respiratory distress and tachypnoea. Gastrointestinal - diarrhoea about 2%; less than 1% gastric regurgitation and hyperbilirubinaemia. Haematological - disseminated intravascular coagulation about 1%; less than 1% anaemia, bleeding and thrombocytopenia (PROSTIN VR PEDIATRIC label, ADVERSE REACTIONS).",
+      "PROSTIN VR PEDIATRIC: administration may result in gastric outlet obstruction secondary to antral hyperplasia, an effect related to duration of therapy and cumulative dose (PROSTIN VR PEDIATRIC label, WARNINGS)."
+    ],
+    "dosage": {
+      "adult": "Erectile dysfunction, intracavernosal (CAVERJECT): initiate with 2.5 mcg for erectile dysfunction of vasculogenic, psychogenic or mixed aetiology; if there is a partial response at 2.5 mcg, administer another 2.5 mcg within 1 hour using a new vial; if additional titration is required, administer doses in increments of 5 to 10 mcg at least 24 hours apart; no more than 2 doses within a 24-hour period during titration. For pure neurogenic aetiology (for example spinal cord injury), initiate with 1.25 mcg; if there is a partial response, give another 1.25 mcg within 1 hour, and if further titration is required give 5 mcg at least 24 hours later. The optimal dose should produce an erection suitable for intercourse that does not exceed 1 hour, and the patient must stay in the provider's office until complete detumescence. Doses greater than 60 mcg are not recommended. For home use, the recommended frequency is no more than 3 times weekly with at least 24 hours between doses (CAVERJECT label, sections 2.1 and 2.2). CAVERJECT IMPULSE follows the same titration scheme in a 10 mcg and 20 mcg dual-chamber syringe, with doses greater than 60 mcg not recommended (CAVERJECT IMPULSE label, sections 2.1 and 2.2). EDEX: the dosage range for erectile dysfunction is 1 to 40 mcg given over a 5 to 10 second interval; titration should be initiated at 2.5 mcg and, if there is a partial response, increased by 2.5 mcg to 5 mcg and then in increments of 5 to 10 mcg; for pure neurogenic aetiology initiate at 1.25 mcg, increasing by 1.25 mcg to 2.5 mcg, then by 2.5 mcg to 5 mcg, then in 5 mcg increments. Doses greater than 40 mcg have not been studied. For home use the dose is the one established in the physician's office, no more than 3 times weekly with at least 24 hours between doses (EDEX label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "CAVERJECT: a total of 341 subjects included in clinical studies were 65 years and older; no overall differences in safety and effectiveness were observed between these subjects and younger subjects, and other reported clinical experience has not identified differences in response between elderly and younger patients (CAVERJECT label, section 8.5). EDEX: of approximately 1,065 patients who entered the in-office dose-titration period, 25% were 65 years or older; geriatric patients required on average higher minimally effective doses and had a higher rate of lack of effect, with no overall differences in safety; they should be dosed and titrated using the same recommendations as younger patients and the lowest possible effective dose should always be used (EDEX label, Geriatric Use).",
+      "paediatric": "CAVERJECT and CAVERJECT IMPULSE are not indicated for use in paediatric patients; when reconstituted with the recommended diluent the solution contains benzyl alcohol, and serious and fatal adverse reactions including 'gasping syndrome' can occur in neonates and low birth weight infants treated with benzyl alcohol-preserved formulations, so CAVERJECT is not indicated for use in paediatric patients (CAVERJECT label, section 5.8 and section 8.4). EDEX is not indicated for use in paediatric patients (EDEX label, Pregnancy, Nursing Mothers and Pediatric Use). Neonatal use of PROSTIN VR PEDIATRIC: begin continuous intravenous infusion into a large vein at 0.05 to 0.1 mcg/kg/min, with 0.1 mcg/kg/min the recommended starting dose; after a therapeutic response is achieved (increased pO2 in infants with restricted pulmonary blood flow, or increased systemic blood pressure and blood pH in infants with restricted systemic blood flow) reduce the infusion rate to the lowest dosage that maintains the response, for example 0.1 to 0.05 to 0.025 to 0.01 mcg/kg/min; if the response to 0.05 mcg/kg/min is inadequate the dosage can be increased up to 0.4 mcg/kg/min, although higher infusion rates generally do not produce greater effects (PROSTIN VR PEDIATRIC label, DOSAGE AND ADMINISTRATION)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Other intracavernosally injected vasoactive agents: the safety and efficacy of combinations of CAVERJECT or EDEX with other vasoactive agents injected intracavernosally have not been established in clinical studies or systematically studied, so such combinations are not recommended; the risks of prolonged erection, priapism and hypotension may be increased (CAVERJECT label, sections 5.6 and 7; EDEX label, PRECAUTIONS).",
+      "Anticoagulants: patients on anticoagulants such as warfarin or heparin may have an increased propensity for injection site bleeding after intracavernosal injection; compress the injection site with an alcohol swab or sterile gauze for 5 minutes (CAVERJECT label, section 5.4; EDEX label, PRECAUTIONS).",
+      "Heparin: the pharmacodynamic interaction between heparin (5,000 units) and an alprostadil intravenous infusion (90 mcg over 3 hours) produced a 140% increase in partial thromboplastin time and a 120% increase in thrombin time, so caution is advised with concomitant administration of heparin and EDEX (EDEX label, PRECAUTIONS, Drug Interactions).",
+      "Oral or intracavernosally administered agents: the potential for pharmacokinetic drug-drug interactions between alprostadil and other agents administered orally or intracavernosally has not been formally studied (CAVERJECT label, section 7).",
+      "PROSTIN VR PEDIATRIC: no drug interactions have been reported between PROSTIN VR PEDIATRIC and the therapy standard in neonates with restricted pulmonary or systemic blood flow, which includes antibiotics such as penicillin and gentamicin, vasopressors such as dopamine and isoproterenol, cardiac glycosides and diuretics such as furosemide (PROSTIN VR PEDIATRIC label, Drug Interactions).",
+      "PROSTIN VR PEDIATRIC contains ethanol (79% w/v); ethanol may cause CNS depressant effects such as somnolence and may alter the effects of other medicines, and co-administration with medicines containing propylene glycol or ethanol may lead to accumulation of ethanol and induce adverse effects, particularly in young children with low or immature metabolic capacity (PROSTIN VR PEDIATRIC label, Necessary Monitoring)."
+    ],
+    "monitoring": "CAVERJECT: re-evaluate patients regularly (every 3 months or as clinically appropriate) and determine if dosage adjustments are needed (CAVERJECT label, section 2.1). Perform physical examination of the penis periodically to detect signs of penile fibrosis, and discontinue treatment in patients who develop penile angulation or cavernosal fibrosis (CAVERJECT label, section 5.2). Advise patients to seek immediate medical assistance for an erection persisting longer than 4 hours, because untreated priapism can cause penile tissue damage and permanent loss of potency (CAVERJECT label, section 5.1). Monitor for injection site bleeding in patients on anticoagulants (CAVERJECT label, section 5.4). EDEX: regular follow-up with careful examination of the penis at the start of therapy and at regular intervals (for example every 3 months) is strongly recommended to identify penile changes; discontinue if penile angulation, cavernosal fibrosis or Peyronie's disease develops (EDEX label, PRECAUTIONS). PROSTIN VR PEDIATRIC: respiratory status should be monitored throughout treatment and the product should be used where ventilatory assistance is immediately available; arterial pressure should be monitored intermittently by umbilical artery catheter, auscultation or Doppler transducer, and if arterial pressure falls significantly the infusion rate should be decreased immediately; in infants with restricted pulmonary blood flow monitor improvement in blood oxygenation, and in infants with restricted systemic blood flow monitor improvement in systemic blood pressure and blood pH; neonates receiving recommended doses for more than 120 hours should be closely monitored for evidence of antral hyperplasia and gastric outlet obstruction (PROSTIN VR PEDIATRIC label, WARNING, Necessary Monitoring and WARNINGS).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling (Patient Information and Instructions for Use) (CAVERJECT label, section 17). Instruct and train the patient in the self-injection technique before home use; the initial dose administration and titration take place in the healthcare provider's office, and once the home dose is established the patient should not change the dose without consulting the provider (CAVERJECT label, section 17). Tell the patient to expect an erection within 5 to 20 minutes that should last no longer than 1 hour, and that CAVERJECT should be used no more than 3 times per week with at least 24 hours between uses (CAVERJECT label, section 17). Instruct the patient to discard any reconstituted solution with precipitates or discoloration, to inject along the dorso-lateral aspect of the proximal third of the penis, to wipe the injection site with an alcohol swab, to avoid visible veins, to alternate the side of the penis injected, to compress the site for 5 minutes, and to discard the vial after use (CAVERJECT label, sections 2.3, 2.4 and 17). Tell the patient to seek immediate medical assistance for an erection lasting more than 4 hours, and to report penile pain that is new or worse, nodules or hard tissue in the penis, and any redness, swelling, tenderness or curvature of the erect penis (CAVERJECT label, section 17; EDEX label, Information for Patients). Tell the patient that these products offer no protection against sexually transmitted diseases including HIV (CAVERJECT label, section 5.9; EDEX label, Information for Patients). Advise the patient to attend regular check-ups for assessment of therapeutic benefit and safety (CAVERJECT label, section 17). PROSTIN VR PEDIATRIC is administered only by trained personnel in facilities providing paediatric intensive care, so no patient self-administration counselling applies (PROSTIN VR PEDIATRIC label, INDICATIONS AND USAGE).",
+    "warnings": [
+      "BOXED WARNING (PROSTIN VR PEDIATRIC): apnea is experienced by about 10% to 12% of neonates with congenital heart defects treated with PROSTIN VR PEDIATRIC Sterile Solution. Apnea is most often seen in neonates weighing less than 2 kg at birth and usually appears during the first hour of drug infusion. Therefore, respiratory status should be monitored throughout treatment, and PROSTIN VR PEDIATRIC should be used only where ventilatory assistance is immediately available (PROSTIN VR PEDIATRIC label, Boxed Warning).",
+      "Prolonged erection and priapism (CAVERJECT): prolonged erection of 4 to 6 hours occurred in 4% of 1,861 patients and priapism in 0.4%; an erection persisting longer than 4 hours requires immediate medical assistance, and untreated priapism can result in penile tissue damage and permanent loss of potency. Titrate to the lowest effective dose (CAVERJECT label, section 5.1).",
+      "Prolonged erections greater than 4 hours occurred in 4% of EDEX-treated patients up to 24 months, and priapism (more than 6 hours) in less than 1%; pharmacologic intervention or aspiration was needed in 1.6% of 311 patients with prolonged erection or priapism (EDEX label, WARNINGS).",
+      "Penile fibrosis (CAVERJECT): overall incidence of penile fibrosis in clinical studies was 3%, rising to 7.8% in an 18-month self-injection study; discontinue treatment if penile angulation or cavernosal fibrosis develops (CAVERJECT label, section 5.2). EDEX: overall incidence of penile fibrosis including Peyronie's disease up to 24 months was 7.8% (EDEX label, PRECAUTIONS).",
+      "Hypotension (CAVERJECT): intracavernous injections can increase peripheral blood levels of alprostadil and can result in hypotension; avoid use in patients with known cavernosal venous leakage (CAVERJECT label, section 5.3). EDEX: increased peripheral blood levels of PGE1 and its metabolites may lead to hypotension and/or dizziness (EDEX label, PRECAUTIONS).",
+      "Injection site bleeding with anticoagulants: patients on warfarin or heparin have an increased propensity for injection site bleeding; compress the site for 5 minutes (CAVERJECT label, section 5.4; EDEX label, PRECAUTIONS).",
+      "Cardiovascular risk related to underlying medical conditions: there is a potential for cardiac risk of sexual activity in patients with pre-existing cardiovascular disease, so treatments for erectile dysfunction generally should not be used in men for whom sexual activity is inadvisable because of their underlying cardiovascular status; evaluation should include determination of potential underlying causes (CAVERJECT label, section 5.5; EDEX label, PRECAUTIONS).",
+      "Needle breakage: separate needles must be used for reconstitution and administration; needle breakage with a portion remaining in the penis has been reported and has in some cases required hospitalisation and surgical removal (CAVERJECT label, section 5.7; EDEX label, PRECAUTIONS).",
+      "Risk of serious adverse reactions in infants from benzyl alcohol preservative: when reconstituted with the recommended diluent the solution contains benzyl alcohol, and serious and fatal reactions including 'gasping syndrome' (CNS depression, metabolic acidosis and gasping respirations) can occur in neonates and low birth weight infants treated with benzyl alcohol-preserved formulations; CAVERJECT is not indicated for use in paediatric patients (CAVERJECT label, section 5.8).",
+      "Counsel patients about sexually transmitted diseases: use of CAVERJECT offers no protection against sexually transmitted diseases, and counselling about protective measures including HIV is required (CAVERJECT label, section 5.9).",
+      "PROSTIN VR PEDIATRIC: administration may result in gastric outlet obstruction secondary to antral hyperplasia, related to duration of therapy and cumulative dose; neonates treated at recommended doses for more than 120 hours should be closely monitored (PROSTIN VR PEDIATRIC label, WARNINGS)."
+    ],
+    "precautions": [
+      "Use separate needles for reconstitution and administration, and instruct patients carefully in proper handling and injection technique to minimise the risk of needle breakage (CAVERJECT label, section 5.7).",
+      "CAVERJECT is intended for single patient use only and should be discarded after use; use a new correct-strength vial for each patient dosage preparation (CAVERJECT label, sections 2.1, 2.4 and 17).",
+      "CAVERJECT should be reconstituted only with the accompanying diluent (bacteriostatic water for injection); inspect the solution for particulate matter and discoloration and do not use it if cloudy, coloured or containing particles (CAVERJECT label, section 2.3).",
+      "For EDEX, the reconstituted solution may initially appear cloudy due to small air bubbles; do not use if it remains cloudy, contains precipitates or is discoloured; mix gently and do not shake; use immediately after reconstitution; the reconstituted cartridge is for one use only and should be discarded after use (EDEX label, Information for Patients).",
+      "Underlying treatable medical causes of erectile dysfunction should be diagnosed and treated before starting therapy (EDEX label, PRECAUTIONS).",
+      "PROSTIN VR PEDIATRIC: cortical proliferation of the long bones, first observed in dogs, has also been observed in infants during long-term infusion; it regressed after withdrawal of the drug (PROSTIN VR PEDIATRIC label, PRECAUTIONS, General Precautions).",
+      "PROSTIN VR PEDIATRIC: in infants treated for 10 hours to 12 days, tissue sections showed intimal lacerations, decreased medial muscularity and disruption of the medial and internal elastic lamina, with localised and aneurysmal dilatations and vessel wall oedema; because alprostadil inhibits platelet aggregation, use cautiously in neonates with bleeding tendencies (PROSTIN VR PEDIATRIC label, PRECAUTIONS, General Precautions).",
+      "PROSTIN VR PEDIATRIC: should not be used in neonates with respiratory distress syndrome; a differential diagnosis between respiratory distress syndrome (hyaline membrane disease) and cyanotic heart disease (restricted pulmonary blood flow) should be made (PROSTIN VR PEDIATRIC label, PRECAUTIONS, General Precautions).",
+      "PROSTIN VR PEDIATRIC: infuse for the shortest time and at the lowest dose that produces the desired effect, and weigh the risks of long-term infusion against the benefits to critically ill infants (PROSTIN VR PEDIATRIC label, WARNINGS)."
+    ],
+    "serious_adverse_reactions": [
+      "Priapism and prolonged erection, with risk of penile tissue damage and permanent loss of potency if untreated; EDEX: pharmacologic intervention or aspiration needed in 1.6% of 311 patients with prolonged erection or priapism (CAVERJECT label, section 5.1; EDEX label, WARNINGS).",
+      "Hypotension, and in EDEX-treated patients clinical symptoms of hypotension such as dizziness or syncope in under 1% (CAVERJECT label, section 5.3; EDEX label, ADVERSE REACTIONS).",
+      "Needle breakage with a portion of the needle remaining in the penis, sometimes requiring hospitalisation and surgical removal (CAVERJECT label, sections 5.7 and 6.2).",
+      "Apnea in neonates (about 10% to 12% with PROSTIN VR PEDIATRIC; reported in about 12% in the adverse reactions section) (PROSTIN VR PEDIATRIC label, Boxed Warning and ADVERSE REACTIONS).",
+      "Cardiac arrest (about 1%), bradycardia (about 7%), hypotension (about 4%) and ventricular fibrillation (less than 1%) with PROSTIN VR PEDIATRIC (PROSTIN VR PEDIATRIC label, ADVERSE REACTIONS).",
+      "Seizures (about 4%) and cerebral bleeding (less than 1%) with PROSTIN VR PEDIATRIC (PROSTIN VR PEDIATRIC label, ADVERSE REACTIONS).",
+      "Disseminated intravascular coagulation (about 1%) with PROSTIN VR PEDIATRIC (PROSTIN VR PEDIATRIC label, ADVERSE REACTIONS).",
+      "Gastric outlet obstruction secondary to antral hyperplasia with prolonged PROSTIN VR PEDIATRIC therapy (PROSTIN VR PEDIATRIC label, WARNINGS).",
+      "'Gasping syndrome' from benzyl alcohol in neonates and low birth weight infants if the reconstituted solution is used in this population (CAVERJECT label, section 5.8)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "CAVERJECT and CAVERJECT IMPULSE are not indicated for use in females, and the CAVERJECT label states that CAVERJECT is not indicated for use in females (CAVERJECT label, section 8.1). EDEX is not indicated for use in women or paediatric patients (EDEX label, Pregnancy, Nursing Mothers and Pediatric Use). The PROSTIN VR PEDIATRIC label contains no pregnancy section and no pregnancy-specific recommendation; its carcinogenesis, mutagenesis and impairment of fertility section states that long-term carcinogenicity studies and fertility studies have not been done, and that the Ames and alkaline elution assays reveal no potential for mutagenicity (PROSTIN VR PEDIATRIC label, Carcinogenesis, Mutagenesis, and Impairment of Fertility).",
+    "lactation_guidance": "CAVERJECT and CAVERJECT IMPULSE are not indicated for use in females; the CAVERJECT label states that CAVERJECT is not indicated for use in females (CAVERJECT label, section 8.2). EDEX is not indicated for use in women (EDEX label, Pregnancy, Nursing Mothers and Pediatric Use). The PROSTIN VR PEDIATRIC label contains no lactation section and states no lactation recommendation.",
+    "overdose": "CAVERJECT: overdosage was not observed in clinical trials. If intracavernous overdose occurs, the patient should be under medical supervision until any systemic effects have resolved and/or until penile detumescence has occurred; treatment of systemic symptoms such as hypotension would be appropriate (CAVERJECT label, section 10). EDEX: the primary symptom of an overdose is a prolonged erection or priapism, and because of the potential for tissue hypoxia and possible necrosis it is strongly recommended to treat an erection lasting more than 6 hours; the patient is strongly encouraged to go to the nearest emergency room if the prescribing physician is not available, and supportive therapy is recommended for any other symptoms. In a single dose rising tolerance study, intravenous alprostadil doses of 1 to 120 mcg were well tolerated, with drug-related systemic adverse events increasing from a 40 mcg bolus, characterised mainly by facial flushing (EDEX label, OVERDOSAGE). PROSTIN VR PEDIATRIC: apnea, bradycardia, pyrexia, hypotension and flushing may be signs of drug overdosage; if apnea or bradycardia occurs, discontinue the infusion and provide appropriate medical treatment, using caution when restarting; if pyrexia or hypotension occurs, reduce the infusion rate until the symptoms subside; flushing usually results from incorrect intra-arterial catheter placement and the catheter should be repositioned (PROSTIN VR PEDIATRIC label, OVERDOSAGE).",
+    "pharmacokinetics": "Following intracavernosal injection of 20 mcg CAVERJECT, mean peripheral plasma concentrations at 30 and 60 minutes (89 and 102 pg/mL) were not significantly greater than baseline endogenous alprostadil (96 pg/mL). Alprostadil is bound in plasma primarily to albumin (81% bound) and to a lesser extent the alpha-globulin IV-4 fraction (55% bound), with no significant binding to erythrocytes or white blood cells. Alprostadil is converted to compounds which are further metabolised before excretion; after intravenous administration approximately 80% of circulating alprostadil is metabolised in one pass through the lungs, primarily by beta- and omega-oxidation. Metabolites of alprostadil are excreted primarily by the kidney, with almost 90% of an administered intravenous dose excreted in urine within 24 hours, the remainder in faeces, with no evidence of tissue retention (CAVERJECT label, section 12.3). For EDEX, after intracavernous injection of 20 mcg in 24 patients with erectile dysfunction, mean systemic plasma concentrations of PGE1 increased from a baseline of 0.8 plus or minus 0.6 pg/mL to a peak of 16.8 plus or minus 18.9 pg/mL within 2 to 5 minutes and returned to endogenous plasma levels within 2 hours; the absolute bioavailability estimated from systemic exposure was about 98% compared with the same dose given by short-term intravenous infusion. Approximately 93% of PGE1 found in plasma is protein-bound. PGE1 in the systemic circulation is rapidly and extensively metabolised in the lungs with a first-pass pulmonary elimination of 60% to 90% (EDEX label, Pharmacokinetics). The potential effect of age and of race on alprostadil pharmacokinetics has not been formally evaluated, and pharmacokinetics have not been formally studied in patients with renal or hepatic insufficiency (CAVERJECT label, section 12.3).",
+    "clinical_pearls": [
+      "Alprostadil covers two entirely separate clinical uses: PROSTIN VR PEDIATRIC is a prostaglandin E1 infusion to maintain ductus arteriosus patency in duct-dependent neonatal congenital heart disease as a bridge to surgery, while CAVERJECT, CAVERJECT IMPULSE and EDEX are local intracavernosal alprostadil products for erectile dysfunction. Doses, indications and safety profiles are not interchangeable (PROSTIN VR PEDIATRIC label, INDICATIONS AND USAGE; CAVERJECT label, section 1).",
+      "The first doses of intracavernosal alprostadil must be given in the provider's office by medically trained personnel, with the patient remaining until complete detumescence; home self-injection may only start after the patient is trained and the optimal dose is established (CAVERJECT label, sections 2.1 and 17).",
+      "Priapism is the key emergency: an erection lasting more than 4 hours requires immediate medical attention, because untreated priapism causes tissue damage and permanent loss of potency (CAVERJECT label, section 5.1).",
+      "Do not combine intracavernosal alprostadil with other intracavernosal vasoactive agents; the combination has not been studied and the risks of prolonged erection, priapism and hypotension may be increased (CAVERJECT label, sections 5.6 and 7).",
+      "For PROSTIN VR PEDIATRIC, apnea is the dose-limiting toxicity: it occurs in about 10% to 12% of neonates, is most common in infants under 2 kg, usually appears in the first hour of infusion, and the drug should only be given where ventilatory assistance is immediately available (PROSTIN VR PEDIATRIC label, Boxed Warning).",
+      "In PROSTIN VR PEDIATRIC, the starting infusion rate is 0.1 mcg/kg/min and the rate should be stepped down to the lowest dose that maintains the response once a therapeutic response is reached; the infusion must be continuous because alprostadil is very rapidly metabolised (PROSTIN VR PEDIATRIC label, DOSAGE AND ADMINISTRATION and CLINICAL PHARMACOLOGY).",
+      "Penile fibrosis requires periodic penile examination (roughly every 3 months); the label advises discontinuing alprostadil if penile angulation or cavernosal fibrosis develops, and for EDEX treatment may be resumed if the abnormality subsides (CAVERJECT label, section 5.2; EDEX label, PRECAUTIONS).",
+      "Both CAVERJECT and PROSTIN VR PEDIATRIC contain benzyl alcohol, which can cause fatal 'gasping syndrome' in neonates and low birth weight infants (CAVERJECT label, section 5.8)."
+    ],
+    "brand_names": ["CAVERJECT", "CAVERJECT IMPULSE", "EDEX", "PROSTIN VR PEDIATRIC"],
+    "black_box_warnings": [
+      "PROSTIN VR PEDIATRIC (alprostadil) Sterile Solution: apnea is experienced by about 10% to 12% of neonates with congenital heart defects treated with this product. Apnea is most often seen in neonates weighing less than 2 kg at birth and usually appears during the first hour of drug infusion. Therefore, respiratory status should be monitored throughout treatment, and PROSTIN VR PEDIATRIC should be used where ventilatory assistance is immediately available (PROSTIN VR PEDIATRIC label, Boxed Warning). The CAVERJECT, CAVERJECT IMPULSE and EDEX labels contain no boxed warning section (PROSTIN VR PEDIATRIC label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Intracavernosal (CAVERJECT): reconstitute the 20 mcg or 40 mcg vial with 1 mL of bacteriostatic water for injection using a 1 mL to 3 mL syringe and a 21 to 27 gauge needle, giving 20 mcg/mL or 40 mcg/mL; inject with a 29 or 30 gauge one-half inch needle; the patient should be sitting or slightly reclined; retract the foreskin in uncircumcised patients; stretch the penis along the thigh and inject perpendicular to the long dorso-lateral penile axis in the proximal third of the penis, avoiding angulation of the syringe and visible veins; alternate the side of the penis injected; compress the injection site with an alcohol swab or sterile gauze for 5 minutes; discard the vial after use (CAVERJECT label, sections 2.3 and 2.4). CAVERJECT IMPULSE: a disposable single-dose dual-chamber syringe system reconstituting sterile freeze-dried alprostadil with sterile bacteriostatic water immediately before injection; administer intracavernosally along the dorso-lateral aspect of the proximal third of the penis, compress the site for 5 minutes, and discard the syringe after use (CAVERJECT IMPULSE label, sections 2.4 and 11). EDEX: a reusable injection device reconstitutes a single-dose dual-chamber cartridge containing alprostadil alfadex with sterile 0.9% sodium chloride; inject with a half-inch 27 to 30 gauge needle over 5 to 10 seconds, alternating the side and site of injection, and discard the cartridge after use (EDEX label, DOSAGE AND ADMINISTRATION and DESCRIPTION). PROSTIN VR PEDIATRIC: continuous intravenous infusion into a large vein, or via an umbilical artery catheter placed at the ductal opening; dilute 1 mL (500 mcg) of solution with Sodium Chloride Injection USP or Dextrose Injection USP, add the diluent to the infusion solution first and the undiluted drug to the infusion solution to avoid direct contact with the walls of a volumetric infusion chamber, prepare fresh solutions every 24 hours and discard any solution more than 24 hours old, and administer only by trained personnel in facilities providing paediatric intensive care (PROSTIN VR PEDIATRIC label, DOSAGE AND ADMINISTRATION, Dilution Instructions and INDICATIONS AND USAGE)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA CAVERJECT (alprostadil) label, section 12.1; FDA EDEX (alprostadil alfadex) label, CLINICAL PHARMACOLOGY, Mode of Action; PROSTIN VR PEDIATRIC label, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA CAVERJECT label, sections 1.1-1.2; FDA CAVERJECT IMPULSE label, sections 1.1-1.2; FDA EDEX label, INDICATIONS AND USAGE; PROSTIN VR PEDIATRIC label, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4dec1dbd-c63b-4a1b-81cb-c8d29696cc40"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA CAVERJECT label, section 4; FDA CAVERJECT IMPULSE label, section 4; FDA EDEX label, CONTRAINDICATIONS; PROSTIN VR PEDIATRIC label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA CAVERJECT label, sections 5.1, 5.2, 6.1 (Table 2) and 6.2; FDA EDEX label, ADVERSE REACTIONS; PROSTIN VR PEDIATRIC label, ADVERSE REACTIONS and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e8b8ec8d-1318-43e4-a182-446e9f9579de"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA CAVERJECT label, sections 2.1, 2.2 and 8.5; FDA CAVERJECT IMPULSE label, sections 2.1 and 2.2; FDA EDEX label, DOSAGE AND ADMINISTRATION and Geriatric Use; PROSTIN VR PEDIATRIC label, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA CAVERJECT label, sections 5.4, 5.6 and 7; FDA EDEX label, PRECAUTIONS (Drug Interactions); PROSTIN VR PEDIATRIC label, Drug Interactions and Necessary Monitoring",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA CAVERJECT label, sections 2.1, 5.1, 5.2, 5.4; FDA EDEX label, PRECAUTIONS; PROSTIN VR PEDIATRIC label, WARNING, Necessary Monitoring and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA CAVERJECT label, sections 2.3, 2.4, 5.9 and 17; FDA EDEX label, Information for Patients; PROSTIN VR PEDIATRIC label, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "warnings",
+      "ref": "PROSTIN VR PEDIATRIC label, Boxed Warning and WARNINGS; FDA CAVERJECT label, sections 5.1-5.9; FDA EDEX label, WARNINGS and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA CAVERJECT label, sections 2.1, 2.3, 2.4, 5.2, 5.7 and 17; FDA EDEX label, PRECAUTIONS and Information for Patients; PROSTIN VR PEDIATRIC label, PRECAUTIONS and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA CAVERJECT label, sections 5.1, 5.3, 5.7, 5.8 and 6.2; FDA EDEX label, WARNINGS and ADVERSE REACTIONS; PROSTIN VR PEDIATRIC label, Boxed Warning, ADVERSE REACTIONS and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Not stated: the FDA CAVERJECT, CAVERJECT IMPULSE and EDEX labels describe parenteral (intracavernosal) administration and the PROSTIN VR PEDIATRIC label describes intravenous or intra-arterial infusion; no food interaction is described in any of them",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: none of the FDA CAVERJECT, EDEX or PROSTIN VR PEDIATRIC labels assigns a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA CAVERJECT label, section 8.1; FDA EDEX label, Pregnancy, Nursing Mothers and Pediatric Use; PROSTIN VR PEDIATRIC label, Carcinogenesis, Mutagenesis, and Impairment of Fertility",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA CAVERJECT label, section 8.2; FDA EDEX label, Pregnancy, Nursing Mothers and Pediatric Use; PROSTIN VR PEDIATRIC label contains no lactation section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA CAVERJECT label, section 10; FDA EDEX label, OVERDOSAGE; PROSTIN VR PEDIATRIC label, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA CAVERJECT label, section 12.3; FDA EDEX label, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA CAVERJECT label, sections 1, 2.1, 2.3, 2.4, 5.1, 5.2, 5.6, 5.7, 5.8, 7 and 17; FDA EDEX label, WARNINGS, PRECAUTIONS and DOSAGE AND ADMINISTRATION; PROSTIN VR PEDIATRIC label, Boxed Warning, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "CAVERJECT, CAVERJECT IMPULSE, EDEX and PROSTIN VR PEDIATRIC (alprostadil) listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e8b8ec8d-1318-43e4-a182-446e9f9579de"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "PROSTIN VR PEDIATRIC label, Boxed Warning section (apnea); CAVERJECT, CAVERJECT IMPULSE and EDEX labels contain no boxed warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Not stated: the FDA CAVERJECT label states that alprostadil pharmacokinetics have not been formally studied in patients with renal or hepatic insufficiency (section 12.3) and the other labels state no renal dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: the FDA CAVERJECT label states that alprostadil pharmacokinetics have not been formally studied in patients with renal or hepatic insufficiency (section 12.3) and the other labels state no hepatic dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a295fc1e-d82c-4f44-bc2d-a552bf594c98"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA CAVERJECT label, sections 2.3 and 2.4; FDA CAVERJECT IMPULSE label, sections 2.4 and 11; FDA EDEX label, DESCRIPTION and DOSAGE AND ADMINISTRATION; PROSTIN VR PEDIATRIC label, DOSAGE AND ADMINISTRATION and INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens for intracavernosal alprostadil are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative neonatal PROSTIN VR PEDIATRIC regimen is given in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the FDA labels used)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the CAVERJECT, CAVERJECT IMPULSE, EDEX or PROSTIN VR PEDIATRIC labels)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the CAVERJECT, CAVERJECT IMPULSE, EDEX or PROSTIN VR PEDIATRIC labels)",
+    "food_interactions (all four products are parenteral and no food interaction is described in their labels)"
+  ],
+  "notes": "The table stores this agent as 'Alprostadil' with brand_names ['Alprostadil']; alprostadil is the INN/USAN generic name rather than a brand name. Four distinct FDA products contain alprostadil and are covered here because they have entirely different indications, routes, doses and safety profiles: PROSTIN VR PEDIATRIC (prostaglandin E1, 500 mcg/mL, for duct-dependent neonatal congenital heart disease - this is the only product with a boxed warning, for apnea), CAVERJECT (intracavernosal lyophilised powder, 20 and 40 mcg), CAVERJECT IMPULSE (intracavernosal dual-chamber syringe, 10 and 20 mcg) and EDEX (intracavernosal alprostadil alfadex cartridges, 10, 20 and 40 mcg, used with a reusable injection device). Note that EDEX is alprostadil alfadex only and does not contain phentolamine. The DB row's drug_class 'Therapeutic agent' is not drug-specific; the class used here is the prostaglandin E1 analogue / local vasodilator for erectile dysfunction, and a prostaglandin E1 infusion for ductal patency. FDA letter pregnancy categories are no longer assigned, so fields.pregnancy_category is null."
+}

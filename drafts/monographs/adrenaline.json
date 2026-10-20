@@ -1,0 +1,218 @@
+{
+  "name": "Adrenaline",
+  "existing_id": "98339f06-bf31-44df-867d-dfc94863ea9c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Adrenaline (epinephrine) is a sympathomimetic catecholamine and a non-selective alpha and beta adrenergic agonist. It acts on both alpha- and beta-adrenergic receptors, and the mechanism of the rise in blood pressure is three-fold: direct myocardial stimulation that increases the strength of ventricular contraction (positive inotropic action), increased heart rate (positive chronotropic action), and peripheral vasoconstriction. For anaphylaxis, through its action on alpha-adrenergic receptors epinephrine lessens the vasodilation and increased vascular permeability that occurs during anaphylaxis, which can lead to loss of intravascular fluid volume and hypotension; through its action on beta-adrenergic receptors it causes bronchial smooth muscle relaxation, alleviating bronchospasm, wheezing and dyspnoea. Epinephrine also alleviates pruritus, urticaria and angioedema and may relieve gastrointestinal and genitourinary symptoms associated with anaphylaxis because of its relaxer effects on the smooth muscle of the stomach, intestine, uterus and urinary bladder. Epinephrine increases glycogenolysis, reduces glucose uptake by tissues and inhibits insulin release in the pancreas, resulting in hyperglycaemia and increased blood lactic acid (FDA Adrenalin (epinephrine injection, USP) label, sections 12.1 and 12.2; FDA EpiPen label, sections 12.1 and 12.2).",
+    "indications": [
+      "Adrenalin (epinephrine injection, USP) 1 mg/mL: emergency treatment of allergic reactions (Type I), including anaphylaxis, which may result from insect stings or bites, foods, drugs, sera, diagnostic testing substances and other allergens, as well as idiopathic anaphylaxis or exercise-induced anaphylaxis (FDA Adrenalin label, section 1.1).",
+      "Adrenalin (epinephrine injection, USP) 1 mg/mL: to increase mean arterial blood pressure in adult patients with hypotension associated with septic shock (FDA Adrenalin label, section 1.2).",
+      "EpiPen and EpiPen Jr auto-injectors: emergency treatment of allergic reactions (Type I) including anaphylaxis to stinging insects, biting insects, allergen immunotherapy, foods, drugs, diagnostic testing substances and other allergens, as well as idiopathic anaphylaxis or exercise-induced anaphylaxis; intended for immediate administration in patients determined to be at increased risk for anaphylaxis, including individuals with a history of anaphylactic reactions (FDA EpiPen label, section 1)."
+    ],
+    "contraindications": [
+      "Adrenalin (epinephrine injection, USP): none. The prescribing information states 'Contraindications: None' (FDA Adrenalin label, section 4).",
+      "EpiPen and EpiPen Jr: none. The prescribing information states 'Contraindications: None' (FDA EpiPen label, section 4)."
+    ],
+    "side_effects": [
+      "Common adverse reactions to systemically administered epinephrine include anxiety, apprehensiveness, restlessness, tremor, weakness, dizziness, sweating, palpitations, pallor, nausea and vomiting, headache, and respiratory difficulties; these are more likely in patients with heart disease, hypertension or hyperthyroidism (FDA Adrenalin label, section 6; FDA EpiPen label, section 6).",
+      "Cardiovascular: angina, arrhythmias, hypertension, pallor, palpitations, tachyarrhythmia, tachycardia, vasoconstriction, ventricular ectopy and stress cardiomyopathy. Rapid rises in blood pressure associated with epinephrine use have produced cerebral haemorrhage, particularly in elderly patients with cardiovascular disease (FDA Adrenalin label, section 6).",
+      "Neurological and psychiatric: disorientation, impaired memory, panic, psychomotor agitation, sleepiness, tingling, anxiety, apprehensiveness and restlessness. Patients with Parkinson's disease may experience psychomotor agitation or a temporary worsening of symptoms (FDA Adrenalin label, section 6).",
+      "Metabolic: diabetic patients may experience transient increases in blood sugar; epinephrine increases glycogenolysis, reduces glucose uptake by tissues and inhibits insulin release (FDA Adrenalin label, sections 6 and 12.2).",
+      "Injection into the buttock has resulted in cases of gas gangrene, and rare cases of serious skin and soft tissue infections including necrotising fasciitis and myonecrosis caused by Clostridia have been reported at the injection site following epinephrine injection for anaphylaxis (FDA Adrenalin label, sections 5.1, 5.2 and 6; FDA EpiPen label, sections 5.2, 5.3 and 6).",
+      "Reactions from accidental injection or improper technique: accidental injection into the digits, hands or feet may result in loss of blood flow to the affected area, with increased heart rate and local reactions including pallor, coldness and hypoesthesia, or injury causing bruising, bleeding, discoloration, erythema or skeletal injury; lacerations, bent needles and embedded needles have been reported when injected into the thigh of uncooperative young children (FDA EpiPen label, section 6).",
+      "Rarely reported: ventricular fibrillation including fatal events, and angina in patients with coronary artery disease (FDA EpiPen label, section 6).",
+      "Extravasation during intravenous infusion can cause local necrosis, blanching along the course of the infused vein and, rarely, superficial slough; there is potential for gangrene in a lower extremity when catecholamines are infused into an ankle vein (FDA Adrenalin label, section 5.3)."
+    ],
+    "dosage": {
+      "adult": "Anaphylaxis, adults and children 30 kg (66 lbs) or more: 0.3 mg to 0.5 mg (0.3 mL to 0.5 mL) of undiluted Adrenalin 1 mg/mL administered intramuscularly or subcutaneously into the anterolateral aspect of the thigh, up to a maximum of 0.5 mg (0.5 mL) per injection, repeated every 5 to 10 minutes as necessary; monitor clinically for reaction severity and cardiac effects (FDA Adrenalin label, sections 2 and 2.2). EpiPen auto-injector: patients 30 kg (66 lbs) or greater receive EpiPen 0.3 mg, injected intramuscularly or subcutaneously into the anterolateral aspect of the thigh through clothing if necessary (FDA EpiPen label, sections 2 and 2.1). Hypotension associated with septic shock: dilute 1 mL (1 mg) of epinephrine from its vial to 1,000 mL of 5% dextrose or 5% dextrose and sodium chloride solution to produce a 1 mcg/mL dilution (administration in saline solution alone is not recommended); infuse into a large vein at 0.05 to 2 mcg/kg/min titrated to achieve the desired mean arterial pressure, adjusting every 10 to 15 minutes in increments of 0.05 to 0.2 mcg/kg/min, and wean gradually after haemodynamic stabilisation (FDA Adrenalin label, sections 2 and 2.3).",
+      "geriatric": "Clinical studies for the treatment of anaphylaxis have not been performed in subjects aged 65 and over, but other reported clinical experience has identified that geriatric patients may be particularly sensitive to the effects of epinephrine, so consider starting with a lower dose to take account of potential concomitant disease or other drug therapy. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, of concomitant disease and of other drug therapy (FDA Adrenalin label, section 8.5; FDA EpiPen label, section 8.5).",
+      "paediatric": "Anaphylaxis, children 30 kg (66 lbs) or less: 0.01 mg/kg (0.01 mL/kg) of undiluted Adrenalin 1 mg/mL intramuscularly or subcutaneously into the anterolateral aspect of the thigh, up to a maximum of 0.3 mg (0.3 mL) per injection, repeated every 5 to 10 minutes as necessary (FDA Adrenalin label, sections 2 and 2.2). EpiPen Jr auto-injector: patients 15 kg to 30 kg (33 to 66 lbs) receive EpiPen Jr 0.15 mg; because the doses delivered from the auto-injectors are fixed, other forms of injectable epinephrine should be considered if doses lower than 0.15 mg are needed (FDA EpiPen label, sections 2.1, 2.2 and 8.4). Safety and effectiveness of epinephrine in paediatric patients with septic shock have not been established (FDA Adrenalin label, section 8.4). When administering to a child, hold the leg firmly in place and limit movement before and during injection to minimise injection-related injury (FDA Adrenalin label, section 2.2; FDA EpiPen label, section 2.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Drugs that potentiate the pressor effects of epinephrine: sympathomimetics, beta-blockers such as propranolol, tricyclic antidepressants, monoamine oxidase inhibitors, catechol-O-methyl transferase inhibitors such as entacapone, clonidine, doxapram, oxytocin, levothyroxine sodium, quinidine and certain antihistamines (FDA Adrenalin label, sections 7 and 7.2).",
+      "Drugs that increase the arrhythmogenic potential of epinephrine: beta-blockers such as propranolol, cyclopropane or halogenated hydrocarbon anaesthetics such as halothane, antihistamines, exogenous thyroid hormones, diuretics, and cardiac glycosides such as digitalis - observe for the development of cardiac arrhythmias (FDA Adrenalin label, sections 7 and 7.3; FDA EpiPen label, section 7).",
+      "Potassium-depleting drugs including corticosteroids, diuretics and theophylline potentiate the hypokalaemic effects of epinephrine (FDA Adrenalin label, sections 7 and 7.4).",
+      "Drugs that counter the pressor effects of epinephrine: alpha-blockers such as phentolamine, vasodilators such as nitrates, diuretics, antihypertensives, ergot alkaloids and phenothiazine antipsychotics (FDA Adrenalin label, sections 7 and 7.1).",
+      "Beta-adrenergic blocking drugs such as propranolol antagonise the cardiostimulating and bronchodilating effects of epinephrine, and alpha-adrenergic blocking drugs such as phentolamine antagonise its vasoconstricting and hypertensive effects; ergot alkaloids may also reverse the pressor effects (FDA EpiPen label, section 7).",
+      "Tricyclic antidepressants, monoamine oxidase inhibitors, levothyroxine sodium and certain antihistamines (notably chlorpheniramine, tripelennamine and diphenhydramine) potentiate the effects of epinephrine (FDA EpiPen label, section 7).",
+      "Patients receiving monoamine oxidase inhibitors or tricyclic or imipramine-type antidepressants may experience severe, prolonged hypertension when given epinephrine (FDA Adrenalin label, section 5.4)."
+    ],
+    "monitoring": "Because individual response to epinephrine may vary significantly, monitor blood pressure frequently and titrate to avoid excessive increases in blood pressure (FDA Adrenalin label, section 5.4). Monitor the patient clinically for the severity of the allergic reaction and potential cardiac effects of the drug and repeat the dose as needed; do not administer repeated injections at the same site, as the resulting vasoconstriction may cause tissue necrosis (FDA Adrenalin label, section 2.2). When epinephrine is administered intravenously, check the infusion site frequently for free flow to avoid extravasation, and if blanching occurs consider changing the infusion site at intervals (FDA Adrenalin label, section 5.3). Advise patients to seek medical care if signs or symptoms of infection such as persistent redness, warmth, swelling or tenderness develop at the injection site (FDA Adrenalin label, sections 5.2 and 17). In septic shock, titrate the infusion to the desired mean arterial pressure and monitor for hypokalaemia and hyperglycaemia, adjusting the infusion rate every 10 to 15 minutes in increments of 0.05 to 0.2 mcg/kg/min and weaning the infusion after haemodynamic stabilisation (FDA Adrenalin label, sections 2.3 and 12.2). In the paediatric population, monitor for glucose changes and hypokalaemia, and monitor blood pressure, heart rate and rhythm closely (FDA EpiPen label, sections 5.5 and 8.4).",
+    "patient_counselling": "Advise patients or caregivers about the common adverse reactions associated with epinephrine, including an increase in heart rate, the sensation of a more forceful heartbeat, palpitations, sweating, nausea and vomiting, difficulty breathing, pallor, dizziness, weakness or shakiness, headache, apprehension, nervousness or anxiety; these usually subside rapidly, especially with rest, quiet and recumbent positioning (FDA Adrenalin label, section 17; FDA EpiPen label, section 17). Warn patients with a good response to initial treatment about the possibility of recurrence of symptoms, and instruct them to obtain proper medical attention if symptoms return (FDA Adrenalin label, section 17). Warn patients with diabetes that they may develop increased blood glucose levels following epinephrine administration (FDA Adrenalin label, section 17). Advise patients that epinephrine is essential for the treatment of anaphylaxis, that the auto-injector should be injected into the middle of the outer thigh through clothing if necessary, that each device is a single-use injection, and that they must seek immediate medical care in conjunction with administration (FDA EpiPen label, section 17). Instruct caregivers of young children to hold the leg firmly in place and limit movement before and during injection (FDA EpiPen label, section 17). Advise patients to throw away the blue safety release immediately after use, as it may pose a choking hazard for children (FDA EpiPen label, section 17). With severe persistent anaphylaxis, repeat injections with an additional auto-injector may be necessary, but more than two sequential doses of epinephrine should only be administered under direct medical supervision (FDA EpiPen label, sections 2.2 and 5.1). Advise patients to seek immediate medical care in the case of accidental injection, since epinephrine is a strong vasoconstrictor when injected into the digits, hands or feet; treatment should be directed at vasodilatation for such an accidental injection (FDA EpiPen label, sections 5.2 and 17). Instruct patients to inspect the solution periodically through the clear window and to replace the auto-injector if the solution appears discoloured (pinkish or brown), cloudy or contains particles; epinephrine is light sensitive and should be stored in its carrier tube, which is not waterproof (FDA EpiPen label, sections 11 and 17). Instruct patients to give used auto-injectors to their healthcare provider for inspection and proper disposal, or dispose of them in a FDA-cleared sharps container and not in household trash (FDA EpiPen label, section 17).",
+    "warnings": [
+      "Incorrect injection site: the anterolateral aspect of the thigh (vastus lateralis) is the most appropriate site because of its location, size and available blood flow; injection into or near smaller muscles such as the deltoid is not recommended. Do not inject into the buttock, as it may not provide effective treatment of anaphylaxis and has been associated with Clostridial infections (gas gangrene). Do not inject into the digits, hands or feet, because epinephrine is a strong vasoconstrictor and accidental injection may result in loss of blood flow to the affected area and tissue necrosis (FDA Adrenalin label, section 5.1; FDA EpiPen label, section 5.2).",
+      "Do not inject intravenously: large doses or accidental intravenous injection may result in cerebral haemorrhage due to a sharp rise in blood pressure; rapidly acting vasodilators can counteract the marked pressor effects (FDA EpiPen label, section 5.2).",
+      "Serious infections at the injection site: rare cases of serious skin and soft tissue infections, including necrotising fasciitis and myonecrosis caused by Clostridia (gas gangrene), have been reported at the injection site following epinephrine injection for anaphylaxis (FDA Adrenalin label, section 5.2; FDA EpiPen label, section 5.3).",
+      "Sulfite content: Adrenalin contains sodium metabisulfite, which may cause mild to severe allergic reactions including anaphylaxis or asthmatic episodes in susceptible individuals; the presence of bisulfite should not preclude use in serious allergic or other emergency situations (FDA Adrenalin label, section 5.8; FDA EpiPen label, section 5.4).",
+      "Hypertension: monitor blood pressure frequently and titrate to avoid excessive increases; patients receiving monoamine oxidase inhibitors or tricyclic or imipramine-type antidepressants may experience severe, prolonged hypertension (FDA Adrenalin label, section 5.4).",
+      "Pulmonary oedema: epinephrine increases cardiac output and causes peripheral vasoconstriction, which may result in pulmonary oedema (FDA Adrenalin label, section 5.5).",
+      "Renal impairment: epinephrine constricts renal blood vessels, which may result in oliguria or renal impairment (FDA Adrenalin label, section 5.6).",
+      "Cardiac arrhythmias and ischaemia: epinephrine may induce cardiac arrhythmias and myocardial ischaemia, especially in patients with coronary artery disease or cardiomyopathy; administer with caution in patients with heart disease as it may aggravate angina pectoris or produce ventricular arrhythmias (FDA Adrenalin label, section 5.7; FDA EpiPen label, section 5.5).",
+      "Emergency use only: the auto-injectors are intended for immediate administration as emergency supportive therapy and are not a substitute for immediate medical care; in conjunction with administration, the patient should seek immediate medical or hospital care, and more than two sequential doses should only be given under direct medical supervision (FDA EpiPen label, sections 1 and 5.1)."
+    ],
+    "precautions": [
+      "Do not administer repeated injections of epinephrine at the same site, as the resulting vasoconstriction may cause tissue necrosis (FDA Adrenalin label, sections 2.2 and 5.1).",
+      "For intramuscular administration, use a needle long enough (at least 1/2 inch) to ensure the injection is administered into the muscle, and hold the leg firmly in place when administering to a child to minimise the risk of injection-related injury (FDA Adrenalin label, section 2.2; FDA EpiPen label, section 2.2).",
+      "Inspect the solution visually for particulate matter and discoloration before administration; do not use if the solution is coloured, cloudy or contains particulate matter (FDA Adrenalin label, section 2.1; FDA EpiPen label, section 11).",
+      "Epinephrine solution deteriorates rapidly on exposure to air or light, turning pink from oxidation to adrenochrome and brown from formation of melanin; replace the auto-injector if the solution appears discoloured, cloudy or contains particles (FDA Adrenalin label, section 11; FDA EpiPen label, section 11).",
+      "Avoid using a catheter tie-in technique for intravenous infusion, because obstruction to blood flow around the tubing may cause stasis and increased local concentration; avoid the veins of the leg in elderly patients or those with occlusive vascular disease (FDA Adrenalin label, section 2.3).",
+      "When administering the auto-injector to young children who may be uncooperative and kick or move during an injection, hold the leg firmly in place and limit movement, as lacerations, bent needles and embedded needles have been reported (FDA EpiPen label, section 5.2).",
+      "Some patients are at greater risk of adverse reactions - including those with heart disease (cardiac arrhythmias, coronary artery or organic heart disease, hypertension), hyperthyroidism, diabetes, elderly individuals and pregnant women - but the presence of these conditions is not a contraindication to epinephrine administration in an acute, life-threatening situation (FDA EpiPen label, section 5.5)."
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac arrhythmias including fatal ventricular fibrillation, particularly in patients with underlying cardiac disease or those receiving certain drugs (FDA EpiPen label, section 6).",
+      "Cerebral haemorrhage from rapid rises in blood pressure, particularly in elderly patients with cardiovascular disease (FDA Adrenalin label, section 6; FDA EpiPen label, section 6).",
+      "Angina in patients with coronary artery disease (FDA EpiPen label, section 6).",
+      "Accidental injection into digits, hands or feet with loss of blood flow to the affected area, and injury including bruising, bleeding, discoloration and skeletal injury (FDA EpiPen label, section 6).",
+      "Serious skin and soft tissue infections including necrotising fasciitis and myonecrosis caused by Clostridia (gas gangrene) at the injection site, and gas gangrene after injection into the buttock (FDA Adrenalin label, sections 5.1, 5.2 and 6).",
+      "Lacerations, bent needles and embedded needles when injected into the thigh of uncooperative young children (FDA EpiPen label, sections 5.2 and 6).",
+      "Pulmonary oedema and renal impairment/oliguria from excessive alpha-adrenergic vasoconstriction (FDA Adrenalin label, sections 5.5 and 5.6).",
+      "Tissue necrosis and gangrene after intravenous extravasation (FDA Adrenalin label, section 5.3)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Adrenalin or EpiPen labels. The practical dietary caution is that caffeine and other methylxanthines may add to the sympathomimetic effect of epinephrine; separately, epinephrine raises blood glucose, so patients with diabetes should be warned that they may develop increased blood glucose levels after administration (FDA Adrenalin label, sections 12.2 and 17)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Prolonged experience with epinephrine use in pregnant women over several decades, based on published literature, does not identify a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes, but there are risks to the mother and fetus associated with epinephrine use during labour or delivery (FDA Adrenalin label, section 8.1). In animal reproduction studies, epinephrine administered subcutaneously to pregnant rabbits, mice and hamsters during organogenesis resulted in adverse developmental effects including gastroschisis, embryonic lethality and delayed skeletal ossification at doses approximately 2 times the maximum recommended daily intramuscular, subcutaneous or intravenous dose (FDA Adrenalin label, section 8.1). Management of anaphylaxis during pregnancy is similar to that in the general population: epinephrine is the first-line medication of choice and should be used in the same manner in pregnant and non-pregnant patients, with immediate medical or hospital care sought (FDA Adrenalin label, section 8.1; FDA EpiPen label, section 8.1). Life-sustaining therapy for the pregnant woman with septic shock should not be withheld because of potential concerns regarding effects on the fetus (FDA Adrenalin label, section 8.1). Epinephrine usually inhibits spontaneous or oxytocin-induced contractions of the pregnant uterus and may delay the second stage of labour; avoid epinephrine during the second stage of labour and in obstetrics when maternal blood pressure exceeds 130/80 mmHg, because in doses sufficient to reduce uterine contractions it may cause prolonged uterine atony with haemorrhage (FDA Adrenalin label, section 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of epinephrine in human milk or the effects of epinephrine on the breastfed infant or on milk production. However, because of its poor oral bioavailability and short half-life, epinephrine exposure is expected to be very low in the breastfed infant. Epinephrine is the first-line medication of choice for the treatment of anaphylaxis and should be used in the same manner in breastfeeding and non-breastfeeding patients (FDA Adrenalin label, section 8.2; FDA EpiPen label, section 8.2).",
+    "overdose": "Overdosage of epinephrine may produce extremely elevated arterial pressure, which may result in cerebrovascular haemorrhage, particularly in elderly patients, and pulmonary oedema from peripheral vascular constriction with cardiac stimulation. It can also cause transient bradycardia followed by tachycardia, potentially accompanied by fatal cardiac arrhythmias; premature ventricular contractions may appear within one minute after injection and may be followed by multifocal ventricular tachycardia (prefibrillation rhythm). Myocardial ischaemia and infarction, cardiomyopathy, extreme pallor and coldness of the skin, metabolic acidosis due to elevated blood lactic acid and renal insufficiency have also been reported. Epinephrine is rapidly inactivated in the body and treatment is primarily supportive: pulmonary oedema is treated with a rapidly acting alpha-adrenergic blocking drug such as phentolamine mesylate plus respiratory support, arrhythmias with a beta-adrenergic blocking drug such as propranolol, and pressor effects may be counteracted by rapidly acting vasodilators or alpha-adrenergic blocking drugs (FDA Adrenalin label, section 10; FDA EpiPen label, section 10).",
+    "pharmacokinetics": "Following intravenous injection, epinephrine is rapidly cleared from the plasma with an effective half-life of less than 5 minutes, and a pharmacokinetic steady state during continuous intravenous infusion is achieved within 10 to 15 minutes. In patients with septic shock, epinephrine displays dose-proportional pharmacokinetics over the infusion range of 0.03 to 1.7 mcg/kg/min. Epinephrine is extensively metabolised with only a small amount excreted unchanged; it is rapidly degraded to vanillylmandelic acid, an inactive metabolite, by monoamine oxidase and catechol-O-methyltransferase. The tissues contributing most to removal of circulating exogenous epinephrine are the liver (32%), kidneys (25%), skeletal muscle (20%) and mesenteric organs (12%). In a pharmacokinetic study of 45-minute infusions, the mean plasma metabolic clearance rate at steady state was greater in healthy men aged 60 to 65 years than in those aged 20 to 25 years (144.8 versus 78 mL/kg/min for a 0.0143 mcg/kg/min infusion), and higher body weight was associated with higher plasma epinephrine clearance and a lower concentration plateau (FDA Adrenalin label, section 12.3).",
+    "clinical_pearls": [
+      "Epinephrine (adrenaline) is the first-line drug for anaphylaxis - there is no substitute; antihistamines and corticosteroids are not first-line treatment for airway obstruction or hypotension (FDA EpiPen label, sections 1 and 5.1).",
+      "The single most common error is giving the injection into the deltoid or buttock: the anterolateral thigh is the correct site, and buttock injection is associated with Clostridial gas gangrene (FDA Adrenalin label, section 5.1; FDA EpiPen label, section 5.2).",
+      "Hold the child's leg firmly during injection - lacerations, bent and embedded needles have been reported in kicking toddlers (FDA EpiPen label, section 5.2).",
+      "The classic sequence is a 0.3 mg (or 0.15 mg for 15 to 30 kg) auto-injector dose every 5 to 10 minutes as needed, with immediate transfer to emergency care; more than two sequential doses should only be given under direct medical supervision (FDA EpiPen label, sections 2.1, 2.2 and 5.1).",
+      "Antidote to extravasation from intravenous epinephrine: infiltrate the affected area with 10 mL to 15 mL of saline containing 5 mg to 10 mg of phentolamine, an adrenergic blocking agent, ideally within 12 hours (FDA Adrenalin label, section 5.3).",
+      "Because the effect is fleeting, monitor the patient rather than assuming resolution - symptoms can recur, and a good initial response does not exclude biphasic reactions (FDA Adrenalin label, section 17).",
+      "In septic shock, epinephrine is infused rather than given as a bolus, is diluted in 5% dextrose (not saline alone), and is titrated to the mean arterial pressure in increments of 0.05 to 0.2 mcg/kg/min every 10 to 15 minutes, then weaned (FDA Adrenalin label, section 2.3).",
+      "Epinephrine is not chemically stable: the solution turns pink then brown on exposure to air or light, and a discoloured, cloudy or particulate-containing solution must not be used (FDA Adrenalin label, sections 2.1 and 11)."
+    ],
+    "brand_names": [
+      "Adrenalin (epinephrine injection, USP, 1 mg/mL, Par Health, US)",
+      "EpiPen (epinephrine injection 0.3 mg auto-injector, Viatris/Mylan)",
+      "EpiPen Jr (epinephrine injection 0.15 mg auto-injector, Viatris/Mylan)",
+      "Auvi-Q (epinephrine injection auto-injector, Kaléo)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the FDA Adrenalin or EpiPen labels. The label notes that epinephrine constricts renal blood vessels, which may result in oliguria or renal impairment, so renal function should be considered in patients receiving repeated doses (FDA Adrenalin label, section 5.6).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For anaphylaxis, inject intramuscularly or subcutaneously into the anterolateral aspect of the thigh through clothing if necessary, repeating every 5 to 10 minutes as needed; for intramuscular administration use a needle long enough (at least 1/2 inch) to ensure intramuscular delivery, and do not administer repeated injections at the same site (FDA Adrenalin label, section 2.2). For septic shock, dilute 1 mL (1 mg) of epinephrine to 1,000 mL of 5% dextrose or 5% dextrose and sodium chloride to give 1 mcg/mL, administer into a large vein and titrate the infusion at 0.05 to 2 mcg/kg/min, adjusting every 10 to 15 minutes in increments of 0.05 to 0.2 mcg/kg/min and weaning after stabilisation; these dilutions are stable for 4 hours at room temperature or 24 hours refrigerated (FDA Adrenalin label, sections 2.3). Adrenalin is supplied as 1 mg/mL in 1 mL single-dose clear glass vials (25 per carton) and 30 mg/30 mL multiple-dose amber glass vials; discard unused portion of the single-dose vial, and discard the multiple-dose vial and its contents 30 days after initial use (FDA Adrenalin label, section 16). Store between 20 and 25 degrees C; epinephrine is light sensitive, so protect from light and freezing (FDA Adrenalin label, section 16). For the auto-injector, remove the blue safety release, inject into the middle of the outer thigh through clothing, hold firmly in place for a few seconds, and seek immediate medical care; each device is single-use, and approximately 1.7 mL of solution remains in the auto-injector after activation but is not available for future use and should be discarded (FDA EpiPen label, sections 2.2 and 11)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Adrenalin (epinephrine injection, USP), Par Health, sections 12.1 and 12.2; FDA EpiPen label, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Adrenalin label, sections 1.1 and 1.2; FDA EpiPen label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Adrenalin label, section 4 (none); FDA EpiPen label, section 4 (none)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Adrenalin label, sections 5.1, 5.2, 5.3, 6 and 12.2; FDA EpiPen label, sections 5.2, 5.3 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Adrenalin label, sections 2, 2.1, 2.2, 2.3, 8.4 and 8.5; FDA EpiPen label, sections 2, 2.1, 2.2, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Adrenalin label, sections 5.4, 7, 7.1 to 7.4; FDA EpiPen label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Adrenalin label, sections 2.2, 2.3, 5.2, 5.3, 5.4, 12.2 and 17; FDA EpiPen label, sections 5.5 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Adrenalin label, section 17; FDA EpiPen label, sections 2.2, 5.1, 5.2, 11 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Adrenalin label, sections 5.1 to 5.8; FDA EpiPen label, sections 1, 5.1, 5.2, 5.3, 5.4 and 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Adrenalin label, sections 2.1, 2.2, 2.3, 5.1, 11; FDA EpiPen label, sections 2.2, 5.2, 5.5 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Adrenalin label, sections 5.1, 5.2, 5.3, 5.5, 5.6 and 6; FDA EpiPen label, sections 5.2 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Adrenalin label, sections 12.2 and 17 (no food interaction described; hyperglycaemia warning)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Adrenalin label, section 8.1; FDA EpiPen label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Adrenalin label, section 8.2; FDA EpiPen label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Adrenalin label, section 10; FDA EpiPen label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Adrenalin label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Adrenalin label, sections 1, 2.3, 5.1, 5.3, 12.2, 12.3 and 17; FDA EpiPen label, sections 1, 2.1, 2.2, 5.1 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Adrenalin (epinephrine injection, USP) listed on DailyMed; EpiPen and EpiPen Jr auto-injectors and Auvi-Q listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7560c201-9246-487c-a13b-6295db04274a"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Adrenalin (epinephrine injection) or EpiPen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Adrenalin label, section 5.6 (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Adrenalin label, sections 2.1, 2.2, 2.3, 11 and 16; FDA EpiPen label, sections 2.2, 11 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b7a4364-668d-4eb2-a20c-04adc35aabe4"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA Adrenalin and EpiPen labels use the Pregnancy and Lactation Labeling Rule risk summary and do not state a letter pregnancy category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA Adrenalin or EpiPen labels)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA Adrenalin or EpiPen labels)"
+  ],
+  "notes": "Name alias: 'Adrenaline' is the INN and British Approved Name (BAN) for epinephrine; the US labels for this molecule are Adrenalin (epinephrine injection, USP) and EpiPen/EpiPen Jr (epinephrine injection auto-injectors), and the EMA/UK spelling is adrenaline (for example adrenaline 1:1000 for intramuscular anaphylaxis dosing). Data-quality point: the brand name recorded in the row, 'Anti Bacterial Hand Gel Adrenaline', refers to a consumer hand-sanitiser product and is not a medicinal epinephrine product; the correct product brands are listed under brand_names. This monograph covers adrenaline/epinephrine as used for anaphylaxis (intramuscular/subcutaneous injection and auto-injectors) and for hypotension associated with septic shock (intravenous infusion), since both are labelled uses of the same molecule. Both FDA labels state 'Contraindications: None'. No letter pregnancy category is stated, so pregnancy_category is null. Epinephrine has no boxed warning."
+}

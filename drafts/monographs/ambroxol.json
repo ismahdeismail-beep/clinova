@@ -1,0 +1,201 @@
+{
+  "name": "Ambroxol",
+  "existing_id": "3363434e-eb70-4d3f-a510-8943de4f337f",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Ambroxol is a mucolytic (secretolytic) agent, ATC code R05CB06. In preclinical studies ambroxol hydrochloride increased the proportion of serous bronchial secretion, increased surfactant production by direct action on type II pneumocytes of the alveoli and on the Clara cells of the small airways, and stimulated the activity of the ciliary epithelium; these effects reduce the viscosity of mucus and improve mucociliary clearance, which was demonstrated in clinical-pharmacological studies. Increased excretion of thin secretion and improved mucociliary clearance support expectoration and make expectoration easier (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 5.1). In addition, ambroxol hydrochloride has a local anaesthetic effect, probably due to blockade of hyperpolarised voltage-dependent neuronal sodium channels (reversible and concentration-dependent in vitro), and an in vitro anti-inflammatory effect with reduced cytokine release from mononuclear and polymorphonuclear blood and tissue cells; in clinical studies in patients with pharyngitis, 20 mg lozenges significantly reduced throat pain and redness (Mucosolvan SmPC, section 5.1). After ambroxol, the concentrations of amoxicillin, cefuroxime, erythromycin and doxycycline in sputum and bronchial secretions are increased, but clinical relevance has not been established (Mucosolvan SmPC, section 5.1).",
+    "indications": [
+      "Secretolytic therapy in acute and chronic bronchopulmonary diseases associated with impaired mucus formation and transport (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.1)",
+      "The same indication is authorised for ambroxol tablets (ambroxol-ratiopharm 30 mg and 60 mg Hustenloeser SmPC, sections 4.1 and 4.2), which are dosed after meals and are for use from 6 years of age (tablets) - note that the oral solution formulation covers younger children and contains benzoic acid and propylene glycol (Ambroxol-ratiopharm SmPC, section 4.2; Mucosolvan SmPC, sections 4.2 and 6.1)",
+      "Ambroxol is authorised in all EU Member States (as well as Norway and Iceland) but not in the United Kingdom; the EMA/CMDh Article 31 referral concluded that the benefit-risk balance of ambroxol- and bromhexine-containing products remains favourable, subject to the product-information amendments on severe cutaneous adverse reactions (EMA Article 31 referral, Annex II, Scientific conclusions)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to ambroxol hydrochloride or to any of the other ingredients listed in section 6.1 of the SmPC (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.3)",
+      "Mucosolvan Hustensaft 30 mg/5 ml must not be used in children under 2 years of age except on medical advice (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.3)",
+      "Note: ambroxol tablets (for example ambroxol-ratiopharm 30 mg) are only indicated from 6 years of age because of their posology, so tablet use below 6 years is not authorised (Ambroxol-ratiopharm SmPC, section 4.2)"
+    ],
+    "side_effects": [
+      "Immune system disorders: rare - hypersensitivity reactions; not known - anaphylactic reactions including anaphylactic shock, angioedema and pruritus (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)",
+      "Skin and subcutaneous tissue disorders: rare - rash, urticaria; not known - severe skin reactions including erythema multiforme, Stevens-Johnson syndrome/toxic epidermal necrolysis and acute generalised exanthematous pustulosis (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8; EMA Article 31 referral, Annex III)",
+      "Nervous system disorders: common - taste disorders (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)",
+      "Gastrointestinal disorders: common - nausea, numbness in the mouth; occasional - vomiting, diarrhoea, dyspepsia, abdominal pain, dry mouth; rare - dryness of the throat; very rare - salivation (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)",
+      "Respiratory, chest and mediastinal disorders: common - numbness in the throat; not known - dyspnoea (as a symptom of a hypersensitivity reaction) (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)",
+      "General disorders and administration site conditions: occasional - fever, mucosal reactions (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Adults and adolescents from 12 years: usually 5 ml three times daily (equivalent to 90 mg ambroxol hydrochloride per day) during the first 2 to 3 days, then 5 ml twice daily (equivalent to 60 mg ambroxol hydrochloride per day). If necessary, efficacy may be increased by taking 10 ml twice daily (equivalent to 120 mg ambroxol hydrochloride per day) (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.2). Tablets: adolescents from 12 years and adults take one 30 mg tablet three times daily (3 x 30 mg ambroxol hydrochloride per day) during the first 2 to 3 days, then one 30 mg tablet twice daily; alternatively one 60 mg tablet twice daily (equivalent to 120 mg ambroxol hydrochloride per day) may be used if efficacy needs to be increased (Ambroxol-ratiopharm 30 mg/60 mg SmPC, section 4.2). The oral solution is taken with or independently of meals using the supplied dosing aid, and tablets are taken after meals unwashed down with sufficient fluid; without medical advice the product should not be taken for longer than 4 to 5 days (Mucosolvan SmPC, section 4.2; Ambroxol-ratiopharm SmPC, section 4.2).",
+      "geriatric": "The pharmacokinetics of ambroxol hydrochloride are not affected to a clinically relevant extent by age, so a deviation from the recommended dosage is not required in elderly patients (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 5.2). No separate geriatric posology is specified in the SmPC; the adult and adolescent schedule from 12 years of age applies (Mucosolvan SmPC, section 4.2).",
+      "paediatric": "Oral solution (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.2): children up to 2 years - 1.25 ml twice daily (equivalent to 15 mg ambroxol hydrochloride per day), and only on medical advice; children 2 to 5 years - 1.25 ml three times daily (equivalent to 22.5 mg ambroxol hydrochloride per day); children 6 to 12 years - 2.5 ml two to three times daily (equivalent to 30 to 45 mg ambroxol hydrochloride per day). Tablets (Ambroxol-ratiopharm SmPC, section 4.2): children 6 to 12 years - half a 30 mg tablet two to three times daily (equivalent to 2-3 x 15 mg ambroxol hydrochloride per day), or one quarter of a 60 mg tablet two to three times daily. The EMA/CMDh Article 31 referral noted that clinical evidence from studies in children is weak because of heterogeneity and the low number of children enrolled, and that the PRAC considered the available data insufficient to justify new age restrictions (EMA Article 31 referral, Annex II, Efficacy issues)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antitussives: when ambroxol is combined with antitussives, a (dangerous) retention of secretions can occur in patients with airway disease associated with hypersecretion of mucus, such as cystic fibrosis or bronchiectasis, because of the restricted cough reflex (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.5)",
+      "No further drug interactions are described in the ambroxol SmPC (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.5)"
+    ],
+    "monitoring": "The SmPC does not specify formal laboratory or pharmacokinetic monitoring requirements. It requires caution with impaired bronchomotorics and large amounts of secretions (for example the rare malignant ciliary syndrome), because a mucus obstruction is possible, and with impaired renal function or severe liver disease, where the product should be used only on medical advice, since accumulation of metabolites formed in the liver can be expected in severe renal insufficiency (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4). Patients must be instructed to stop ambroxol immediately and seek medical advice if signs or symptoms of a progressive skin rash, sometimes with blisters or mucosal lesions, appear (Mucosolvan SmPC, section 4.4; EMA Article 31 referral, Annex III). No effect on driving ability is expected (Mucosolvan SmPC, section 4.7).",
+    "patient_counselling": "Explain that ambroxol is used for productive cough associated with acute and chronic bronchopulmonary disease with impaired mucus formation and transport, and that the effect is to make expectoration easier (Mucosolvan SmPC, sections 4.1 and 5.1). Advise the patient not to take the product for longer than 4 to 5 days without medical advice, and to consult a doctor if symptoms persist (Mucosolvan SmPC, section 4.2 and the package leaflet wording adopted in the EMA referral, Annex III). Advise the patient to discontinue ambroxol immediately and seek medical advice if a progressive skin rash, sometimes with blisters or mucosal lesions, appears, and to contact the doctor immediately if a skin rash including lesions of the mucous membranes develops (Mucosolvan SmPC, section 4.4; EMA Article 31 referral, Annex III). Tell the patient to take the oral solution with or independently of meals using the supplied dosing aid, and tablets after meals with sufficient fluid (Mucosolvan SmPC, section 4.2; Ambroxol-ratiopharm SmPC, section 4.2). Warn that the oral solution contains benzoic acid and propylene glycol and must not be used in children under 2 years except on medical advice, and should be used with caution in babies under 4 weeks, particularly if they receive other medicines containing propylene glycol or alcohol (Mucosolvan SmPC, sections 4.3, 4.4 and 6.1). Advise patients to report suspected adverse reactions through the national reporting system (Mucosolvan SmPC, section 4.8; EMA Article 31 referral, Annex III).",
+    "warnings": [
+      "Severe cutaneous adverse reactions: there have been reports of severe skin reactions such as erythema multiforme, Stevens-Johnson syndrome (SJS)/toxic epidermal necrolysis (TEN) and acute generalised exanthematous pustulosis (AGEP) associated with the administration of ambroxol hydrochloride; if symptoms or signs of a progressive skin rash (sometimes associated with blisters or mucosal lesions) are present, ambroxol hydrochloride treatment should be discontinued immediately and medical advice sought (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4; EMA Article 31 referral, Annex III - this warning is legally binding in all Member States)",
+      "Use with caution in patients with impaired bronchomotorics and large amounts of secretions (for example the rare malignant ciliary syndrome), because of the possible risk of mucus obstruction (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4)",
+      "In patients with impaired renal function or severe liver disease, ambroxol should be used only on medical advice; because the drug is hepatically metabolised and then renally eliminated, accumulation of metabolites formed in the liver can be expected in severe renal insufficiency (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4)",
+      "Benzoic acid can aggravate jaundice (yellowing of skin and eyes) in neonates up to 4 weeks of age (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4)",
+      "In babies under 4 weeks the product should be used with caution, particularly when the baby is simultaneously receiving other medicines containing propylene glycol or alcohol (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4)",
+      "Severe hypersensitivity reactions including anaphylactic reactions, anaphylactic shock and angioedema have been reported; the PRAC/CMDh concluded that the benefit-risk balance of ambroxol-containing products remains favourable provided the product information is amended to list these reactions and the SCAR warning (EMA Article 31 referral, Annex II, Benefit-risk assessment)"
+    ],
+    "precautions": [
+      "Do not use ambroxol together with antitussives in patients with airway disease associated with hypersecretion of mucus (cystic fibrosis, bronchiectasis) because of the risk of dangerous secretion retention (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.5)",
+      "Use in pregnancy only with the usual precautions for medicinal use; in particular use in the first trimester is not recommended (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.6)",
+      "The oral solution contains benzoic acid and propylene glycol and is restricted to children under 2 years for medical reasons only (Mucosolvan Hustensaft 30 mg/5 ml SmPC, sections 4.3 and 6.1)",
+      "No effect on driving ability or the ability to operate machinery is expected, although corresponding studies have not been performed (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.7)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylactic reactions including anaphylactic shock, angioedema and pruritus (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8; EMA Article 31 referral, Annex III)",
+      "Severe cutaneous adverse reactions: erythema multiforme, Stevens-Johnson syndrome/toxic epidermal necrolysis and acute generalised exanthematous pustulosis (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4 and 4.8; EMA Article 31 referral, Annex II and Annex III)",
+      "Dyspnoea as a symptom of a hypersensitivity reaction (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.8)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Ambroxol hydrochloride crosses the placenta. Non-clinical studies gave no indication of direct or indirect harmful effects with respect to pregnancy, embryonic/fetal development, delivery or postnatal development, and extensive clinical experience after the 28th week of pregnancy showed no indication of harmful effects on the fetus. Nevertheless the usual precautions regarding the use of medicinal products during pregnancy should be observed, and in particular use of Mucosolvan is not recommended during the first trimester (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.6).",
+    "lactation_guidance": "Ambroxol passes into breast milk in animal studies; use during breastfeeding is not recommended (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.6).",
+    "overdose": "No specific symptoms of overdose have been reported to date. The symptoms observed after accidental overdose or administration of the wrong medicine correspond to those that may occur at the recommended dose and may require symptomatic treatment (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.9).",
+    "pharmacokinetics": "Absorption from fast-release oral forms is rapid and complete with dose linearity in the therapeutic range; maximum plasma levels are reached within 1 to 2.5 hours after immediate-release forms and after a median of 6.5 hours after modified-release forms. The absolute bioavailability after a 30 mg tablet is 79%, and the modified-release capsule showed relative availability of 95% compared with the tablet on a dose basis (60 mg daily, 2 x 30 mg). Food has no effect on the bioavailability of ambroxol hydrochloride. Distribution from blood to tissue is rapid and pronounced, with the highest concentration of active substance in the lung; the estimated volume of distribution after oral administration is 552 litres, and plasma protein binding is approximately 90% in the therapeutic range. Approximately 30% of an oral dose undergoes first-pass metabolism; ambroxol hydrochloride is metabolised primarily in the liver by glucuronidation and cleavage to dibromanthranilic acid (approximately 10% of the dose), and human liver microsome studies show CYP3A4 is responsible for the metabolism to dibromanthranilic acid. After 3 days of oral administration, ambroxol hydrochloride is eliminated renally to approximately 6% unchanged and about 26% as conjugates. The terminal elimination half-life is approximately 10 hours; total clearance is in the range of 660 ml/min, of which renal clearance is approximately 8% of total clearance, and after 5 days an estimated 83% of the total (radiolabelled) dose is excreted in the urine. In patients with impaired liver function elimination is reduced, giving approximately 1.3- to 2-fold higher plasma levels; because of the wide therapeutic range no dose adjustment is required (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Ambroxol is a secretolytic, not an antitussive: it thins the sputum and improves mucociliary clearance, so it must not be combined with antitussives in patients with mucus hypersecretion such as cystic fibrosis or bronchiectasis, where the restricted cough reflex can cause dangerous secretion retention (Mucosolvan SmPC, section 4.5).",
+      "Severe skin reactions are the key labelled risk: erythema multiforme, SJS/TEN and AGEP must be excluded as soon as a progressive rash appears, and ambroxol stopped immediately (Mucosolvan SmPC, section 4.4; EMA Article 31 referral, Annex III).",
+      "The oral solution formulation differs from the tablets: it is licensed from birth (with medical advice below 2 years) and contains benzoic acid and propylene glycol, whereas the tablets are for use from 6 years of age (Mucosolvan SmPC, sections 4.2, 4.3 and 6.1; Ambroxol-ratiopharm SmPC, section 4.2).",
+      "The agent has a wide therapeutic window - hepatic impairment raises plasma levels 1.3- to 2-fold without requiring dose adjustment, and age and sex do not affect pharmacokinetics to a clinically relevant extent (Mucosolvan SmPC, section 5.2).",
+      "Ambroxol is not authorised in the United Kingdom (EMA Article 31 referral, Annex II, Introduction).",
+      "Self-limiting: patients should not take ambroxol for longer than 4 to 5 days without medical advice (Mucosolvan SmPC, section 4.2; Ambroxol-ratiopharm SmPC, section 4.2)."
+    ],
+    "brand_names": ["Mucosolvan", "Ambrobene", "Mucoangin"],
+    "black_box_warnings": null,
+    "renal_dose_adjustment": "No numerical renal dose adjustment is specified. The SmPC states that, because ambroxol is hepatically metabolised and subsequently renally eliminated, accumulation of the metabolites formed in the liver can be expected in severe renal insufficiency, and that in patients with impaired renal function the product should be used only on medical advice (Mucosolvan Hustensaft 30 mg/5 ml SmPC, section 4.4).",
+    "hepatic_dose_adjustment": "No numerical hepatic dose adjustment is specified. Elimination of ambroxol hydrochloride is reduced in patients with impaired liver function, resulting in approximately 1.3- to 2-fold higher plasma levels; because of the high therapeutic range of the active substance, a dose adjustment is not required. In severe liver disease, use is only on medical advice (Mucosolvan Hustensaft 30 mg/5 ml SmPC, sections 4.4 and 5.2).",
+    "administration_instructions": "Oral solution: take with or independently of meals, using the supplied measuring cup; 5 ml of solution contains 30 mg ambroxol hydrochloride together with 2.5 mg benzoic acid and 28.75 mg propylene glycol; no special storage conditions are required; shelf life 3 years, and 6 months after opening the bottle (Mucosolvan Hustensaft 30 mg/5 ml SmPC, sections 4.2, 6.1, 6.3 and 6.4). Tablets: take after meals, unwashed down with sufficient fluid; the mucolytic effect is supported by fluid intake (Ambroxol-ratiopharm 30 mg/60 mg SmPC, section 4.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml (Boehringer Ingelheim / A. Nattermann & Cie. GmbH, German Fachinformation, Stand Juli 2022), section 5.1 Pharmakodynamische Eigenschaften",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "indications",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.1 Anwendungsgebiete; SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, sections 4.1-4.2; EMA/CMDh Article 31 referral on ambroxol- and bromhexine-containing medicinal products, Annex II Scientific conclusions",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "contraindications",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.3 Gegenanzeigen; SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, section 4.2",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "side_effects",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.8 Nebenwirkungen; EMA/CMDh Article 31 referral, Annex III (amendments to SmPC sections 4.4 and 4.8)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "dosage",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.2 Dosierung und Art der Anwendung and section 5.2 (age); SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, section 4.2; EMA/CMDh Article 31 referral, Annex II (efficacy in children)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "interactions",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.5 Wechselwirkungen mit anderen Arzneimitteln",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "monitoring",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.4, 4.7 and 4.9; EMA/CMDh Article 31 referral, Annex III",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.2, 4.3, 4.4, 4.8 and 6.1; SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, section 4.2; EMA/CMDh Article 31 referral, Annex III (package leaflet amendments)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "warnings",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.4 Besondere Warnhinweise; EMA/CMDh Article 31 referral, Annex II (benefit-risk assessment) and Annex III (legally binding SmPC amendments)",
+      "url": "https://www.ema.europa.eu/en/documents/referral/ambroxol-and-bromhexine-article-31-referral-annex-iii_en.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.3, 4.5, 4.6, 4.7 and 6.1",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.4 and 4.8; EMA/CMDh Article 31 referral, Annex III",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Food has no effect on the bioavailability of ambroxol hydrochloride (SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 5.2); no other food interaction is described in the SmPC",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA-style pregnancy letter category is used in the European SmPC; the ambroxol SmPC addresses pregnancy in section 4.6 without a letter category",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.6 Schwangerschaft, Stillzeit und Fertilitat",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.6 Stillzeit",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "overdose",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.9 Uberdosierung",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 5.2 Pharmakokinetische Eigenschaften (Resorption, Verteilung, Biotransformation, Elimination, besondere Patientengruppen)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.2, 4.4, 4.5, 5.1 and 5.2; SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, section 4.2; EMA/CMDh Article 31 referral, Annex II (authorisation status, efficacy in children)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Invented names listed for ambroxol-containing medicinal products in the European Commission Community Register, Annex I (Ambrobene, Mucosolvan, Mucoangin)",
+      "url": "https://ec.europa.eu/health/documents/community-register/2016/20160114133716/anx_133716_en.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The European SmPC has no equivalent of a US boxed warning; the severe cutaneous adverse reaction warning is in section 4.4 of the SmPC as amended by the EMA/CMDh Article 31 referral (Annex III)",
+      "url": "https://www.ema.europa.eu/en/documents/referral/ambroxol-and-bromhexine-article-31-referral-annex-iii_en.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, section 4.4 (impaired renal function; accumulation of metabolites in severe renal insufficiency)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.4 and 5.2 (reduced elimination and 1.3- to 2-fold higher plasma levels in hepatic impairment; no dose adjustment required)",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "SmPC, Mucosolvan Hustensaft 30 mg/5 ml, sections 4.2, 6.1, 6.3 and 6.4; SmPC, Ambroxol-ratiopharm 30 mg/60 mg Hustenloeser, section 4.2",
+      "url": "https://www.fachinfo.de/fi/pdf/006415/mucosolvan-hustensaft-30-mg-5-ml"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (the European SmPC does not use FDA-style pregnancy letter categories; pregnancy guidance is given in section 4.6)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "black_box_warnings (the EU SmPC has no boxed-warning construct; the SCAR warning appears in section 4.4 following the Article 31 referral)"
+  ],
+  "notes": "Ambroxol is not FDA-approved, so there is no DailyMed label; content is sourced from European product information. The primary source is the German SmPC (Fachinformation) for Mucosolvan Hustensaft 30 mg/5 ml (A. Nattermann & Cie. GmbH, Stand Juli 2022, document 006415, published via fachinfo.de), with the German SmPC for ambroxol-ratiopharm 30 mg/60 mg Hustenloeser (Stand Mai 2026) used for tablet-specific posology, and the EMA/CMDh Article 31 referral on ambroxol- and bromhexine-containing medicines (Annex II scientific conclusions, Annex III legally binding product-information amendments) used for the harmonised severe cutaneous adverse reaction warning and adverse reaction list. Invented names for brand_names (Mucosolvan, Ambrobene, Mucoangin) are taken from the European Commission Community Register Annex I list of ambroxol-containing products; the table row previously had an empty brand_names array. Note the regulatory status recorded by the EMA referral: ambroxol is authorised in all EU Member States as well as Norway and Iceland, but not in the United Kingdom. The PRAC/CMDh concluded that the benefit-risk balance of ambroxol-containing products remains favourable provided the section 4.4 and 4.8 amendments are implemented, and that the available data were insufficient to justify new age restrictions, although the clinical evidence in children is acknowledged to be weak."
+}

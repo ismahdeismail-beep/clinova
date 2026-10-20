@@ -1,0 +1,225 @@
+{
+  "name": "Alteplase",
+  "existing_id": "5f8130d4-5da1-486f-b73d-23d0d368708f",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Alteplase is a tissue plasminogen activator (tPA) produced by recombinant DNA technology; it is a sterile, purified glycoprotein of 527 amino acids synthesised using the complementary DNA for natural human tissue-type plasminogen activator obtained from a human melanoma cell line (Activase label, sections 11 and 12.1; Cathflo Activase label, DESCRIPTION). Alteplase is a serine protease responsible for fibrin-enhanced conversion of plasminogen to plasmin, and produces limited conversion of plasminogen in the absence of fibrin. When introduced into the systemic circulation at pharmacologic concentration, alteplase binds to fibrin in a thrombus and converts the entrapped plasminogen to plasmin, initiating local fibrinolysis with limited systemic proteolysis (Activase label, section 12.1; Cathflo Activase label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "ACTIVASE: treatment of acute ischemic stroke. Exclude intracranial hemorrhage as the primary cause of stroke signs and symptoms prior to initiation of treatment, and initiate treatment as soon as possible but within 3 hours after symptom onset (Activase label, section 1.1).",
+      "ACTIVASE: use in acute myocardial infarction (AMI) for the reduction of mortality and reduction of the incidence of heart failure. Limitation of use: the risk of stroke may outweigh the benefit produced by thrombolytic therapy in patients whose AMI puts them at low risk for death or heart failure (Activase label, section 1.2).",
+      "ACTIVASE: lysis of acute massive pulmonary embolism, defined as acute pulmonary emboli obstructing blood flow to a lobe or multiple lung segments, or acute pulmonary emboli accompanied by unstable haemodynamics (for example failure to maintain blood pressure without supportive measures) (Activase label, section 1.3).",
+      "CATHFLO ACTIVASE: restoration of function to central venous access devices as assessed by the ability to withdraw blood (Cathflo Activase label, INDICATIONS AND USAGE)."
+    ],
+    "contraindications": [
+      "ACTIVASE for acute ischemic stroke: do not administer in situations where the risk of bleeding is greater than the potential benefit, namely current intracranial hemorrhage; subarachnoid hemorrhage; active internal bleeding; recent (within 3 months) intracranial or intraspinal surgery or serious head trauma; presence of intracranial conditions that may increase the risk of bleeding (for example some neoplasms, arteriovenous malformations or aneurysms); bleeding diathesis; current severe uncontrolled hypertension (Activase label, section 4.1).",
+      "ACTIVASE for acute myocardial infarction or pulmonary embolism: do not administer in situations where the risk of bleeding is greater than the potential benefit, namely active internal bleeding; history of recent stroke; recent (within 3 months) intracranial or intraspinal surgery or serious head trauma; presence of intracranial conditions that may increase the risk of bleeding; bleeding diathesis; current severe uncontrolled hypertension (Activase label, section 4.2).",
+      "CATHFLO ACTIVASE: should not be administered to patients with known hypersensitivity to alteplase or any component of the formulation (Cathflo Activase label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Bleeding is the most frequent adverse reaction associated with Activase in all approved indications (Activase label, section 6.1).",
+      "Acute ischemic stroke (Studies 1 and 2, n = 312 per arm): total intracranial haemorrhage 15.4% with Activase versus 6.4% with placebo (p < 0.01); symptomatic intracranial haemorrhage 8.0% versus 1.3% (p < 0.01); asymptomatic intracranial haemorrhage 7.4% versus 5.1% (p = 0.32); symptomatic intracranial haemorrhage within 36 hours 6.4% versus 0.6% (p < 0.01); new ischemic stroke at 3 months 5.8% versus 5.4% (p = 1.00); all-cause 90-day mortality 17.3% versus 20.5% (p = 0.36). Bleeding requiring red blood cell transfusion occurred in 6.4% of Activase-treated patients versus 3.8% with placebo (p = 0.19) (Activase label, section 6.1, Table 3).",
+      "Acute myocardial infarction, 3-hour infusion (over 800 patients): significant internal bleeding (estimated as more than 250 mL blood loss) gastrointestinal 5%, genitourinary 4%, ecchymosis 1%, retroperitoneal less than 1%, epistaxis less than 1%, gingival less than 1% (Activase label, section 6.1, Table 4).",
+      "Intracranial haemorrhage in AMI: 0.4% with the 100 mg 3-hour regimen (n = 3,272); 0.7% with the 100 mg or less accelerated regimen (n = 10,396); 1.3% with 150 mg (n = 1,779); 0.4% with 1 to 1.4 mg/kg (n = 237). A dose of 150 mg or greater should not be used in the treatment of AMI because it has been associated with an increase in intracranial bleeding (Activase label, section 6.1, Table 5).",
+      "For acute massive pulmonary embolism, bleeding events were consistent with the general safety profile observed in AMI patients receiving the 3-hour infusion regimen (Activase label, section 6.1).",
+      "Activase postmarketing, acute ischemic stroke: cerebral oedema, cerebral herniation, seizure, new ischemic stroke and embolism; these events may be life threatening and may lead to death (Activase label, section 6.2).",
+      "Activase postmarketing, acute myocardial infarction: arrhythmias, AV block, cardiogenic shock, heart failure, cardiac arrest, recurrent ischaemia, myocardial reinfarction, myocardial rupture, electromechanical dissociation, pericardial effusion, pericarditis, mitral regurgitation, cardiac tamponade, thromboembolism, pulmonary oedema, nausea and/or vomiting, hypotension and fever (Activase label, section 6.2).",
+      "Activase postmarketing, pulmonary embolism: pulmonary reembolisation, pulmonary oedema, pleural effusion, thromboembolism, hypotension and fever (Activase label, section 6.2).",
+      "CATHFLO ACTIVASE: in Trials 1 and 2 (1,122 patients) the most serious adverse events reported after treatment were sepsis, gastrointestinal bleeding and venous thrombosis. Four catheter-related sepsis events occurred 15 minutes to 1 day after alteplase and a fifth on day 3, all with positive catheter or peripheral blood cultures within 24 hours of symptom onset. Three patients had major haemorrhage from a gastrointestinal source 2 to 3 days after treatment and one had injection site haemorrhage at 4 hours in a patient with pre-existing thrombocytopenia. Three cases of subclavian and upper extremity deep venous thrombosis were reported 3 to 7 days after treatment. There were no reports of intracranial haemorrhage and no reports of pulmonary emboli (Cathflo Activase label, ADVERSE REACTIONS).",
+      "CATHFLO ACTIVASE Trial 3 (paediatric, 310 patients aged 2 weeks to 17 years): three cases of sepsis 2 to 44 hours after treatment, all in patients with evidence of infection before administration; one patient developed fever and lethargy within one day requiring outpatient intravenous antibiotics; one catheter lumen, placed 2 years previously, ruptured with infusion of the study drug. No paediatric patient experienced intracranial haemorrhage, major haemorrhage, thrombosis or an embolic event (Cathflo Activase label, ADVERSE REACTIONS)."
+    ],
+    "dosage": {
+      "adult": "Acute ischemic stroke: administer Activase as soon as possible but within 3 hours after onset of symptoms. The recommended dose is 0.9 mg/kg (not to exceed a 90 mg total dose), with 10% of the total dose administered as an initial intravenous bolus over 1 minute and the remainder infused over 60 minutes (Activase label, section 2.1). Acute myocardial infarction: recommended total dose is based on patient weight, not to exceed 100 mg, regardless of the regimen. Accelerated infusion: for patients weighing more than 67 kg, 15 mg bolus, 50 mg over the first 30 minutes and 35 mg over the next 60 minutes; for patients weighing 65 kg or less, 15 mg bolus, 0.75 mg/kg over the first 30 minutes and 0.50 mg/kg over the next 60 minutes. 3-hour infusion: for patients weighing 65 kg or more, 100 mg given as 6 to 10 mg bolus, 50 to 54 mg over the first hour, 20 mg over the second hour and 20 mg over the third hour; for patients weighing less than 65 kg, 0.075 mg/kg bolus, 0.675 mg/kg over the first hour, 0.25 mg/kg over the second hour and 0.25 mg/kg over the third hour. There are no controlled studies comparing clinical outcomes with the two regimens (Activase label, section 2.2, Tables 1-2). Acute massive pulmonary embolism: 100 mg administered by intravenous infusion over 2 hours (Activase label, section 2.3). Cathflo Activase (restoration of central venous access device function): for patients weighing 30 kg or more, 2 mg in 2 mL instilled into the catheter; for patients weighing less than 30 kg, 110% of the internal lumen volume of the catheter, not to exceed 2 mg in 2 mL. If catheter function is not restored at 120 minutes after one dose, a second dose of equal amount may be instilled; there is no efficacy or safety information on dosing above 2 mg per dose, and no studies have been performed with total doses greater than 4 mg (Cathflo Activase label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Acute ischemic stroke: in exploratory, multivariate analyses of Studies 1 and 2, age greater than 77 years was one of several interrelated baseline characteristics associated with an increased risk of intracranial haemorrhage; efficacy results suggest a reduced but still favourable clinical outcome for Activase-treated elderly patients (Activase label, section 8.5). Acute myocardial infarction: in a trial of accelerated-infusion Activase that enrolled 41,021 patients, patients over 75 years of age comprised 12% of enrolment; in these patients the incidence of stroke was 4.0% for the Activase accelerated infusion group, 2.8% for streptokinase intravenous and 3.2% for streptokinase subcutaneous, and the incidence of combined 30-day mortality or non-fatal stroke was 20.6% for accelerated infusion of Activase, 21.5% for streptokinase intravenous and 22.0% for streptokinase subcutaneous (Activase label, section 8.5).",
+      "paediatric": "Safety and effectiveness of Activase have not been established in paediatric patients (Activase label, section 8.4). Cathflo Activase has been studied in paediatric patients: in Trial 3, patients weighing 30 kg or more received 2 mg in 2 mL and patients weighing less than 30 kg received 110% of the estimated internal lumen volume, not to exceed 2 mg in 2 mL, instilled into the catheter lumen, with up to two doses; the overall rate of catheter function restoration was 83% (257 of 310) in patients between 2 weeks and 17 years of age (Cathflo Activase label, CLINICAL STUDIES, Trial 3 and DOSAGE AND ADMINISTRATION). Patients younger than 2 years or weighing less than 10 kg were excluded from the Cathflo Activase trials (Cathflo Activase label, CLINICAL STUDIES)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Anticoagulants and antiplatelet drugs: anticoagulants and antiplatelet drugs increase the risk of bleeding if administered prior to, during or after Activase therapy (Activase label, section 7).",
+      "Aspirin and heparin: aspirin and heparin have been administered concomitantly with and following infusions of Activase in the management of acute myocardial infarction and pulmonary embolism, but concomitant administration of heparin and aspirin with and following Activase for acute ischemic stroke during the first 24 hours after symptom onset has not been investigated; because heparin, aspirin or Activase may cause bleeding complications, carefully monitor for bleeding, especially at arterial puncture sites (Activase label, section 5.1).",
+      "Angiotensin-converting enzyme inhibitors: in the post-marketing setting there have been reports of angioedema in patients (primarily patients with acute ischemic stroke) receiving concomitant angiotensin-converting enzyme inhibitors; in many cases these patients received concomitant ACE inhibitors (Activase label, sections 5.2 and 7).",
+      "Cardioactive or cerebroactive drugs: the interaction of Activase with other cardioactive or cerebroactive drugs has not been studied (Activase label, section 7)."
+    ],
+    "monitoring": "During and following Activase administration for acute ischemic stroke, frequently monitor and control blood pressure; in the pivotal studies blood pressure was actively controlled to 185/110 mm Hg or lower for 24 hours (Activase label, sections 2.1 and 14.1). In patients without recent use of oral anticoagulants or heparin, treatment can be initiated before coagulation results are available, but Activase must be discontinued if the pretreatment INR is greater than 1.7 or the aPTT is elevated (Activase label, section 2.1). For pulmonary embolism, institute parenteral anticoagulation near the end of or immediately following the Activase infusion when the partial thromboplastin time or thrombin time returns to twice normal or less (Activase label, section 2.3). Monitor for bleeding: avoid intramuscular injections and trauma while on Activase, perform venipunctures carefully, avoid internal jugular and subclavian venous punctures, and if an arterial puncture is necessary use an upper extremity vessel accessible to manual compression, apply pressure for at least 30 minutes and monitor the puncture site closely; haemorrhage can occur 1 or more days after Activase, while patients are still receiving anticoagulant therapy (Activase label, section 5.1). Monitor patients during and for several hours after infusion for hypersensitivity, and discontinue the infusion and promptly institute appropriate therapy (antihistamines, intravenous corticosteroids, epinephrine) if anaphylactoid reaction or angioedema develops (Activase label, section 5.2). Coagulation tests and measures of fibrinolytic activity may be unreliable during Activase therapy unless specific precautions are taken to prevent in vitro artefacts (Activase label, section 5.5). For Cathflo Activase, assess catheter function at 30 minutes and, if not restored, again at 120 minutes after each instillation, and after function is restored aspirate 4 to 5 mL of blood in patients 10 kg or over or 3 mL in patients under 10 kg to remove residual alteplase and clot and gently irrigate the catheter with 0.9% sodium chloride (Cathflo Activase label, DOSAGE AND ADMINISTRATION, Instructions for Administration).",
+    "patient_counselling": "Following Activase administration, patients are at increased risk of bleeding internally or externally. Advise patients to contact a healthcare professional if they experience signs or symptoms consistent with bleeding (for example unusual bruising, pink or brown urine, red or black or tarry stools, coughing up blood, vomiting blood or blood that looks like coffee grounds), headache, or stroke symptoms (Activase label, section 17). For Cathflo Activase, patients and caregivers should be informed that catheter dysfunction can have causes other than thrombus, that bleeding is the most frequent adverse reaction with all thrombolytics, and that infection in the catheter is a recognised risk (Cathflo Activase label, PRECAUTIONS and ADVERSE REACTIONS).",
+    "warnings": [
+      "Bleeding: Activase can cause significant, sometimes fatal, internal or external bleeding, especially at arterial and venous puncture sites. Avoid intramuscular injections and trauma to the patient while on Activase, perform venipunctures carefully and only as required, and avoid internal jugular and subclavian venous punctures. If an arterial puncture is necessary during infusion, use an upper extremity vessel accessible to manual compression, apply pressure for at least 30 minutes and monitor the site closely (Activase label, section 5.1).",
+      "Because of the higher risk of intracranial haemorrhage in patients treated for acute ischemic stroke, limit treatment to facilities that can provide timely access to appropriate evaluation and management of intracranial haemorrhage (Activase label, section 5.1).",
+      "Fatal cases of haemorrhage associated with traumatic intubation in patients administered Activase have been reported (Activase label, section 5.1).",
+      "Increased bleeding risk in Activase-treated patients: recent major surgery or procedure (for example coronary artery bypass graft, obstetrical delivery, organ biopsy, previous puncture of non-compressible vessels); cerebrovascular disease; recent intracranial haemorrhage; recent gastrointestinal or genitourinary bleeding; recent trauma; hypertension with systolic BP above 175 mm Hg or diastolic BP above 110 mm Hg; acute pericarditis; subacute bacterial endocarditis; haemostatic defects including those secondary to severe hepatic or renal disease; significant hepatic dysfunction; pregnancy; diabetic haemorrhagic retinopathy or other haemorrhagic ophthalmic conditions; septic thrombophlebitis or occluded AV cannula at a seriously infected site; advanced age; patients currently receiving anticoagulants such as warfarin sodium; and any other condition in which bleeding constitutes a significant hazard or would be particularly difficult to manage because of its location (Activase label, section 5.1).",
+      "Hypersensitivity: hypersensitivity including urticarial or anaphylactic reactions has been reported after administration of Activase (for example laryngeal oedema, rash and shock), with a rare fatal outcome reported. Angioedema has been observed during and up to 2 hours after Activase infusion in patients treated for acute ischemic stroke and acute myocardial infarction (Activase label, section 5.2).",
+      "Thromboembolism: the use of thrombolytics can increase the risk of thrombo-embolic events in patients with a high likelihood of left heart thrombus, such as patients with mitral stenosis or atrial fibrillation. Activase has not been shown to treat adequately underlying deep vein thrombosis in patients with pulmonary embolism, and re-embolisation from lysis of underlying deep venous thrombi must be considered (Activase label, section 5.3).",
+      "Cholesterol embolisation: rarely reported in patients treated with thrombolytic agents; it may present with livedo reticularis, 'purple toe' syndrome, acute renal failure, gangrenous digits, hypertension, pancreatitis, myocardial infarction, cerebral infarction, spinal cord infarction, retinal artery occlusion, bowel infarction or rhabdomyolysis, and can be fatal (Activase label, section 5.4).",
+      "Coagulation tests may be unreliable during Activase therapy: Activase remains active under in vitro conditions at pharmacologic concentrations, which can result in degradation of fibrinogen in blood samples removed for analysis (Activase label, section 5.5).",
+      "Cathflo Activase cautions: consider non-thrombotic causes of catheter dysfunction such as malposition, mechanical failure, suture constriction, lipid deposits or drug precipitates before treatment, and avoid vigorous suction when determining occlusion or excessive pressure when instilling the drug, because of the risk of vascular wall damage, rupture of the catheter or expulsion of clot into the circulation; use caution in patients with active internal bleeding or who have had surgery, obstetrical delivery, percutaneous biopsy of viscera or deep tissues, or puncture of non-compressible vessels within 48 hours, and in patients with thrombocytopenia, other haemostatic defects, or any condition where bleeding constitutes a significant hazard; and use caution in the presence of known or suspected catheter infection, because release of a localised infection into the systemic circulation may occur (Cathflo Activase label, PRECAUTIONS)."
+    ],
+    "precautions": [
+      "Activase is for intravenous administration only. Do not add any other medication to infusion solutions containing Activase. Extravasation of Activase infusion can cause ecchymosis or inflammation; if extravasation occurs, terminate the infusion at that intravenous site and apply local therapy (Activase label, section 2.4).",
+      "Use Activase within 8 hours following reconstitution when stored at 2 to 30 degrees C. Activase contains no antibacterial preservatives (Activase label, section 2.4 and section 16.2).",
+      "Reconstitute Activase with aseptic technique using only the accompanying Sterile Water for Injection (without preservatives); do not use Bacteriostatic Water for Injection. Slight foaming is not unusual; let stand undisturbed for several minutes to allow large bubbles to dissipate. Inspect for particulate matter and discoloration before administration (Activase label, section 2.4).",
+      "Activase may be administered as reconstituted at 1 mg/mL or further diluted immediately before administration in an equal volume of 0.9% sodium chloride injection or 5% dextrose injection to yield 0.5 mg/mL, using PVC bags or glass vials; avoid excessive agitation during dilution, mixing by gently swirling and/or slow inversion (Activase label, section 2.4).",
+      "Do not use Activase 50 mg vials if the vacuum is not present (Activase label, section 2.4).",
+      "For acute ischemic stroke, limit treatment to facilities with timely access to intracranial haemorrhage evaluation and management, and actively control blood pressure (Activase label, sections 2.1 and 5.1).",
+      "A dose of 150 mg or greater should not be used in the treatment of acute myocardial infarction because it has been associated with an increase in intracranial bleeding (Activase label, section 6.1).",
+      "Cathflo Activase: in clinical trials patients received up to two 2 mg/2 mL doses (4 mg total); additional re-administration beyond this has not been studied, and antibody formation after one or more doses has not been studied. No other medication should be added to solutions containing Cathflo Activase; reconstitute immediately before use and use within 8 hours after reconstitution when stored at 2 to 30 degrees C (Cathflo Activase label, PRECAUTIONS, Re-Administration and DOSAGE AND ADMINISTRATION)."
+    ],
+    "serious_adverse_reactions": [
+      "Bleeding: significant, sometimes fatal, internal or external bleeding, especially at arterial and venous puncture sites, is the most frequent adverse reaction of Activase across all approved indications (Activase label, sections 5.1 and 6.1).",
+      "Intracranial haemorrhage: 15.4% total and 8.0% symptomatic in acute ischemic stroke (Activase label, section 6.1, Table 3); 0.4% to 1.3% in acute myocardial infarction depending on dose and regimen (Activase label, section 6.1, Table 5).",
+      "Hypersensitivity including urticarial or anaphylactic reactions, laryngeal oedema, rash and shock, with a rare fatal outcome reported; and angioedema observed during and up to 2 hours after infusion (Activase label, section 5.2).",
+      "Thrombo-embolic events in patients with a high likelihood of left heart thrombus, and re-embolisation from lysis of underlying deep venous thrombi in pulmonary embolism (Activase label, section 5.3).",
+      "Cholesterol embolisation, which can be fatal (Activase label, section 5.4).",
+      "Postmarketing events in acute ischemic stroke: cerebral oedema, cerebral herniation, seizure, new ischemic stroke and embolism (Activase label, section 6.2).",
+      "Postmarketing events in acute myocardial infarction: arrhythmias, AV block, cardiogenic shock, heart failure, cardiac arrest, myocardial rupture, cardiac tamponade, thromboembolism and pulmonary oedema (Activase label, section 6.2).",
+      "Cathflo Activase: catheter-related sepsis, gastrointestinal bleeding, major haemorrhage and venous thrombosis were the most serious reported events in trials (Cathflo Activase label, ADVERSE REACTIONS)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Published studies and case reports on alteplase use in pregnant women are insufficient to inform a drug-associated risk of adverse developmental outcomes. Alteplase is embryocidal in rabbits when administered intravenously during organogenesis at doses of 3 mg/kg, approximately equal to the human exposure based on AUC at the dose for acute myocardial infarction, but no maternal or foetal toxicity was evident at lower exposures of 1 mg/kg in pregnant rats or rabbits. The most common complication of thrombolytic therapy is bleeding, and pregnancy may increase this risk. All pregnancies have a background risk of birth defect, loss or other adverse outcomes; the estimated background risk of major birth defects is 2% to 4% and of miscarriage is 15% to 20% in the US general population. Pregnancy is listed among the conditions in which the risks of bleeding with Activase therapy are increased and should be weighed against the anticipated benefits (Activase label, sections 5.1 and 8.1).",
+    "lactation_guidance": "There are no data on the presence of alteplase in human milk, the effects on the breastfed infant, or the effects on milk production (Activase label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "In acute myocardial infarction patients, alteplase is rapidly cleared from the plasma with an initial half-life of less than 5 minutes. There is no difference in the dominant initial plasma half-life between the 3-hour and accelerated regimens for acute myocardial infarction. Plasma clearance is 380 to 570 mL/min, primarily mediated by the liver, and the initial volume of distribution approximates plasma volume (Activase label, section 12.3). When 100 mg Activase was given as an accelerated intravenous infusion over 90 minutes in patients with acute myocardial infarction, plasma clearance occurred with an initial half-life of less than 5 minutes and a terminal half-life of 72 minutes, with clearance mediated primarily by the liver (Cathflo Activase label, CLINICAL PHARMACOLOGY). When Cathflo Activase is administered for restoration of function to central venous access devices according to the label instructions, circulating plasma levels of alteplase are not expected to reach pharmacologic concentrations; if a 2 mg dose were given by bolus injection directly into the systemic circulation rather than instilled into the catheter, circulating alteplase would be expected to return to endogenous circulating levels of 5 to 10 ng/mL within 30 minutes (Cathflo Activase label, CLINICAL PHARMACOLOGY). Following administration of 100 mg Activase there is a 16% to 36% decrease in circulating fibrinogen, and in a controlled trial 8 of 73 patients (11%) receiving Activase at 1.25 mg/kg over 3 hours experienced a decrease in fibrinogen to below 100 mg/dL (Activase label, section 12.2).",
+    "clinical_pearls": [
+      "Alteplase is a recombinant tissue plasminogen activator and is dosed by indication, not by a single regimen: stroke 0.9 mg/kg (max 90 mg) with 10% as a 1-minute bolus; acute myocardial infarction by accelerated or 3-hour weight-based regimen (max 100 mg); massive pulmonary embolism 100 mg over 2 hours; and Cathflo Activase 2 mg instilled into an occluded central venous access device (Activase label, sections 2.1, 2.2 and 2.3; Cathflo Activase label, DOSAGE AND ADMINISTRATION).",
+      "The two Activase regimens for acute myocardial infarction (accelerated and 3-hour) have never been compared in controlled studies, and a 150 mg or greater dose should not be used because of increased intracranial bleeding (Activase label, sections 2.2 and 6.1).",
+      "For acute ischemic stroke, do not wait for coagulation results in patients without recent oral anticoagulant or heparin use, but stop treatment if the pretreatment INR exceeds 1.7 or the aPTT is elevated (Activase label, section 2.1).",
+      "Bleeding can occur 1 or more days after alteplase, while patients are still on anticoagulant therapy - prolonged post-infusion surveillance is required (Activase label, section 5.1).",
+      "Traumatic intubation has been associated with fatal haemorrhage in Activase-treated patients; avoid where possible (Activase label, section 5.1).",
+      "For acute ischemic stroke, treat only in facilities able to provide timely evaluation and management of intracranial haemorrhage, and keep blood pressure at or below 185/110 mm Hg for 24 hours (Activase label, sections 2.1 and 5.1).",
+      "Cathflo Activase restores function in about 68% of catheters occluded for less than 14 days after one dose and 88% after up to two doses; recurrent catheter dysfunction within 30 days occurred in 26% of successfully treated patients (Cathflo Activase label, CLINICAL STUDIES).",
+      "There is no antidote for alteplase; management of bleeding is supportive, and coagulant or antifibrinolytic therapy is not part of the label (Activase label, sections 5.1 and 16.2)."
+    ],
+    "brand_names": ["ACTIVASE", "CATHFLO ACTIVASE"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "ACTIVASE is for intravenous administration only. Reconstitute the 50 mg vial with the accompanying 50 mL of Sterile Water for Injection (do not use Bacteriostatic Water) using a large bore needle directed into the lyophilised cake, and the 100 mg vial with the accompanying 100 mL using the enclosed transfer device; do not use the 50 mg vial if the vacuum is not present, and do not use the 100 mg vial if it is not under vacuum. The reconstituted solution is 1 mg/mL and may be further diluted in an equal volume of 0.9% sodium chloride or 5% dextrose to 0.5 mg/mL, mixing by gentle swirling or slow inversion. Prepare the bolus dose by withdrawing the appropriate volume from the vial, from a second port on the primed infusion line, or by programming the infusion pump to deliver the bolus. Do not add any other medication to Activase infusion solutions; if extravasation occurs terminate the infusion at that site and apply local therapy. Use within 8 hours following reconstitution when stored at 2 to 30 degrees C, and discard any unused solution after administration is complete. Store the lyophilized product at controlled room temperature not exceeding 30 degrees C, or under refrigeration at 2 to 8 degrees C, protected from excessive light exposure (Activase label, sections 2.4, 2.5 and 16.2). CATHFLO ACTIVASE is for intracatheter instillation: aseptically withdraw 2.2 mL of Sterile Water for Injection (diluent not provided; do not use Bacteriostatic Water), inject it into the vial directing the diluent stream into the powder, let the vial stand undisturbed, and mix by gently swirling without shaking; complete dissolution should occur within 3 minutes, giving a 1 mg/mL solution at about pH 7.3. Withdraw 2 mL (2 mg) and instill the appropriate dose into the occluded catheter; after 30 minutes assess catheter function by aspirating blood, and if still not functional reassess at 120 minutes; a second equal dose may be instilled if function is not restored. Once function is restored, aspirate 4 to 5 mL of blood in patients 10 kg or over or 3 mL in patients under 10 kg and gently irrigate with 0.9% sodium chloride; discard any unused solution. Reconstitute immediately before use and use within 8 hours when stored at 2 to 30 degrees C; store the lyophilized product at 2 to 8 degrees C, protected from light (Cathflo Activase label, DOSAGE AND ADMINISTRATION, Instructions for Administration and Stability and Storage)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA ACTIVASE (alteplase) label, sections 11 and 12.1; FDA CATHFLO ACTIVASE (alteplase) label, DESCRIPTION and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA ACTIVASE label, sections 1.1-1.3; FDA CATHFLO ACTIVASE label, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA ACTIVASE label, sections 4.1 and 4.2; FDA CATHFLO ACTIVASE label, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA ACTIVASE label, sections 6.1 (Tables 3-5) and 6.2; FDA CATHFLO ACTIVASE label, ADVERSE REACTIONS and CLINICAL STUDIES, Trial 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA ACTIVASE label, sections 2.1, 2.2 (Tables 1-2), 2.3, 8.4 and 8.5; FDA CATHFLO ACTIVASE label, DOSAGE AND ADMINISTRATION and CLINICAL STUDIES, Trial 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA ACTIVASE label, sections 5.1, 5.2 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA ACTIVASE label, sections 2.1, 2.3, 5.1, 5.2, 5.5 and 14.1; FDA CATHFLO ACTIVASE label, DOSAGE AND ADMINISTRATION, Instructions for Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA ACTIVASE label, section 17; FDA CATHFLO ACTIVASE label, PRECAUTIONS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA ACTIVASE label, sections 5.1-5.5; FDA CATHFLO ACTIVASE label, PRECAUTIONS (General, Bleeding, Infections, Hypersensitivity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA ACTIVASE label, sections 2.4, 2.5, 5.1, 6.1 and 16.2; FDA CATHFLO ACTIVASE label, PRECAUTIONS (Re-Administration) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA ACTIVASE label, sections 5.1-5.4, 6.1 and 6.2; FDA CATHFLO ACTIVASE label, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Not stated: the FDA ACTIVASE and CATHFLO ACTIVASE labels describe intravenous and intracatheter administration respectively, and no food interaction is described in either label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the current FDA ACTIVASE label is Pregnancy and Lactation Labeling Rule (PLLR) format and no longer assigns a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA ACTIVASE label, sections 5.1 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA ACTIVASE label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "overdose",
+      "ref": "Not stated: the FDA ACTIVASE label has no OVERDOSAGE section (it jumps from section 9 to section 11) and the FDA CATHFLO ACTIVASE label likewise contains no overdose section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA ACTIVASE label, sections 12.2 and 12.3; FDA CATHFLO ACTIVASE label, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA ACTIVASE label, sections 2.1, 2.2, 2.3, 5.1, 6.1 and 16.2; FDA CATHFLO ACTIVASE label, CLINICAL STUDIES, PRECAUTIONS and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ACTIVASE (alteplase) and CATHFLO ACTIVASE (alteplase) listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA ACTIVASE label or the FDA CATHFLO ACTIVASE label (the CATHFLO ACTIVASE label states 'WARNINGS: None')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Not stated: neither the FDA ACTIVASE label nor the FDA CATHFLO ACTIVASE label contains a renal impairment or renal dose adjustment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: neither the FDA ACTIVASE label nor the FDA CATHFLO ACTIVASE label contains a hepatic impairment or hepatic dose adjustment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA ACTIVASE label, sections 2.4, 2.5, 16.1 and 16.2 plus Instructions for Use; FDA CATHFLO ACTIVASE label, DOSAGE AND ADMINISTRATION, Instructions for Administration and Stability and Storage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91ecdef2-95ff-42dd-a31c-c8a09cab3ad9"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens for stroke, acute myocardial infarction, pulmonary embolism and catheter occlusion are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric Cathflo Activase regimen is given in fields.dosage.paediatric and Activase has no established paediatric use)",
+    "pregnancy_category (the current FDA label is PLLR format and no longer states a letter category)",
+    "overdose (neither the ACTIVASE nor the CATHFLO ACTIVASE label contains an overdose section)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in either label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in either label)",
+    "food_interactions (both products are parenteral and no food interaction is described in their labels)"
+  ],
+  "notes": "The table stores this agent as 'Alteplase' with brand_names ['Cathflo Activase']. Alteplase (tPA) is supplied in the US as two FDA products with different indications, routes, strengths and safety statements, both covered here: ACTIVASE (alteplase) 50 mg and 100 mg lyophilised powder for intravenous use in acute ischemic stroke, acute myocardial infarction and acute massive pulmonary embolism, and CATHFLO ACTIVASE (alteplase) 2 mg single-dose vial for intracatheter instillation to restore function to occluded central venous access devices. Neither label carries a boxed warning, so fields.black_box_warnings is an empty array. Neither label contains an OVERDOSAGE section, so fields.overdose is null rather than guessed. FDA letter pregnancy categories are no longer assigned under the Pregnancy and Lactation Labeling Rule, so fields.pregnancy_category is null."
+}

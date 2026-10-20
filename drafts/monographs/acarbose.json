@@ -1,0 +1,210 @@
+{
+  "name": "Acarbose",
+  "existing_id": "82a49813-45f2-410b-9756-fc5a4323d9d4",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Acarbose is an oral alpha-glucosidase inhibitor. In contrast to sulfonylureas, acarbose does not enhance insulin secretion. Its antihyperglycemic action results from competitive, reversible inhibition of pancreatic alpha-amylase and membrane-bound intestinal alpha-glucoside hydrolase enzymes. Pancreatic alpha-amylase hydrolyzes complex starches to oligosaccharides in the lumen of the small intestine, while membrane-bound intestinal alpha-glucosidases hydrolyze oligosaccharides, trisaccharides and disaccharides to glucose and other monosaccharides in the brush border of the small intestine. In diabetic patients, this enzyme inhibition results in delayed glucose absorption and lowering of postprandial hyperglycaemia. Because the mechanism differs from sulfonylureas, insulin and metformin, acarbose's effect on glycaemic control is additive when used in combination, and acarbose diminishes the insulinotropic and weight-increasing effects of sulfonylureas. Acarbose has no inhibitory activity against lactase and consequently would not be expected to induce lactose intolerance (FDA acarbose tablets label, CLINICAL PHARMACOLOGY, Mechanism of Action).",
+    "indications": [
+      "Adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus (FDA acarbose tablets label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to acarbose or any of its components (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Diabetic ketoacidosis (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Cirrhosis (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Inflammatory bowel disease (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Colonic ulceration (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Partial intestinal obstruction, or predisposition to intestinal obstruction (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Chronic intestinal diseases associated with marked disorders of digestion or absorption (FDA acarbose tablets label, CONTRAINDICATIONS)",
+      "Conditions that may deteriorate as a result of increased gas formation in the intestine (FDA acarbose tablets label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Digestive tract (most common reactions): in US placebo-controlled trials, abdominal pain 19%, diarrhoea 31% and flatulence 74% in 1255 patients treated with acarbose 50-300 mg three times daily, versus 9%, 12% and 29% respectively in 999 placebo-treated patients (FDA acarbose tablets label, ADVERSE REACTIONS)",
+      "Gastrointestinal symptoms are a manifestation of the mechanism of action and relate to undigested carbohydrate in the lower GI tract; in a one-year diary study abdominal pain and diarrhoea tended to return to pretreatment levels over time and the frequency and intensity of flatulence abated with time (FDA acarbose tablets label, ADVERSE REACTIONS)",
+      "Elevated serum transaminases: in long-term US studies (up to 12 months, doses up to 300 mg three times daily), treatment-emergent AST/ALT elevations above ULN occurred in 14% of acarbose patients versus 7% of placebo, >1.8 x ULN in 6% versus 2%, and >3 x ULN in 3% versus 1%; these were asymptomatic, reversible, more common in females, dose-related, and generally not associated with other evidence of liver dysfunction (FDA acarbose tablets label, PRECAUTIONS, Elevated Serum Transaminase Levels)",
+      "Other laboratory findings: small reductions in haematocrit occurred more often with acarbose than placebo but were not associated with reductions in haemoglobin; low serum calcium and low plasma vitamin B levels were associated with acarbose but are thought to be spurious or of no clinical significance (FDA acarbose tablets label, ADVERSE REACTIONS)",
+      "Postmarketing: fulminant hepatitis with fatal outcome (relationship unclear), hypersensitive skin reactions (rash, erythema, exanthema, urticaria), oedema, ileus/subileus, jaundice and/or hepatitis with associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (FDA acarbose tablets label, ADVERSE REACTIONS)",
+      "Pneumatosis cystoides intestinalis may present with diarrhoea, mucus discharge, rectal bleeding and constipation, with complications including pneumoperitoneum, volvulus, intestinal obstruction, intussusception, intestinal haemorrhage and intestinal perforation (FDA acarbose tablets label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "There is no fixed dosage regimen; dosage must be individualised on the basis of effectiveness and tolerance, not exceeding the maximum recommended dose of 100 mg three times daily. Tablets are taken three times daily at the start (with the first bite) of each main meal. Start at a low dose with gradual escalation, both to reduce gastrointestinal side effects and to identify the minimum effective dose. If the prescribed diet is not observed, intestinal side effects may be intensified; if strongly distressing symptoms develop despite adherence to the diabetic diet, the doctor must be consulted and the dose temporarily or permanently reduced. During initiation and titration one-hour postprandial plasma glucose may be used to determine response; thereafter glycosylated haemoglobin should be measured at intervals of approximately three months (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION). Initial dosage: 25 mg orally three times daily at the start of each main meal; some patients may benefit from more gradual titration, beginning at 25 mg once daily and increasing the frequency of administration to reach 25 mg three times daily. Maintenance: once 25 mg three times daily is reached, adjust at 4-8 week intervals based on one-hour postprandial glucose or HbA1c and on tolerance; the dose can be increased from 25 mg to 50 mg three times daily and, in some patients, to 100 mg three times daily; maintenance dose range 50-100 mg three times daily. Only patients with body weight greater than 60 kg should be considered for titration above 50 mg three times daily, because patients with low body weight are at increased risk of elevated serum transaminases. If no further reduction in postprandial glucose or HbA1c is seen at 100 mg three times daily, consider lowering the dose (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Of the total number of subjects in US clinical studies of acarbose, 27% were 65 and over and 4% were 75 and over. No overall differences in safety and effectiveness were observed between these subjects and younger subjects. The mean steady-state AUC and maximum concentrations of acarbose were approximately 1.5 times higher in elderly compared with young volunteers, although these differences were not statistically significant (FDA acarbose tablets label, PREGNANCY, Geriatric Use and CLINICAL PHARMACOLOGY, Special Populations).",
+      "paediatric": "Safety and effectiveness of acarbose tablets in pediatric patients have not been established (FDA acarbose tablets label, PREGNANCY, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Drugs that cause hyperglycaemia, which may lead to loss of glycaemic control: thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs and isoniazid. When these are started, patients should be closely observed for loss of blood glucose control; when they are withdrawn in patients also taking a sulfonylurea or insulin, patients should be observed closely for hypoglycaemia (FDA acarbose tablets label, PRECAUTIONS, Drug Interactions).",
+      "Sulfonylureas and insulin: may cause hypoglycaemia, and acarbose given in combination causes further lowering of blood glucose and may increase the hypoglycaemic potential; adjust the dose of these agents if hypoglycaemia occurs. Very rarely, individual cases of hypoglycaemic shock have been reported with acarbose in combination with sulfonylureas and/or insulin (FDA acarbose tablets label, PRECAUTIONS, Drug Interactions and DOSAGE AND ADMINISTRATION).",
+      "Intestinal adsorbents (e.g. charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (e.g. amylase, pancreatin) may reduce the effect of acarbose and should not be taken concomitantly (FDA acarbose tablets label, PRECAUTIONS, Drug Interactions).",
+      "Digoxin: acarbose has been shown to change digoxin bioavailability, which may require a digoxin dose adjustment of about 16% (90% CI 8-23%), a decrease in mean digoxin Cmax of 26% (90% CI 16-34%) and a decrease in mean digoxin trough of 9% (90% CI 19% decrease to 2% increase) (FDA acarbose tablets label, PRECAUTIONS, Drug Interactions and CLINICAL PHARMACOLOGY, Drug-Drug Interactions).",
+      "Metformin: the amount of metformin absorbed while taking acarbose is bioequivalent to that with placebo by plasma AUC, although the peak plasma level of metformin was reduced by approximately 20% due to a slight delay in absorption; there is little if any clinically significant interaction (FDA acarbose tablets label, CLINICAL PHARMACOLOGY, Drug-Drug Interactions).",
+      "Nifedipine, propranolol and ranitidine: acarbose has no effect on their pharmacokinetics or pharmacodynamics in healthy volunteers; acarbose did not interfere with the absorption or disposition of the sulfonylurea glyburide in diabetic patients (FDA acarbose tablets label, CLINICAL PHARMACOLOGY, Drug-Drug Interactions)."
+    ],
+    "monitoring": "Monitor therapeutic response with periodic blood glucose tests and measure glycosylated haemoglobin to monitor long-term glycaemic control (FDA acarbose tablets label, PRECAUTIONS, Laboratory Tests). Check serum transaminase levels every 3 months during the first year of treatment and periodically thereafter, particularly at doses above 50 mg three times daily; if transaminases are elevated, a dose reduction or withdrawal of therapy may be indicated, especially if the elevations persist (FDA acarbose tablets label, PRECAUTIONS, Laboratory Tests and Elevated Serum Transaminase Levels). Do not use 1,5-anhydroglucitol (1,5-AG) to assess glycaemic control in patients taking acarbose, because measurements are unreliable; use alternative methods (FDA acarbose tablets label, PRECAUTIONS, Laboratory Tests). Plasma concentrations of acarbose are proportionally increased with the degree of renal dysfunction, and long-term clinical trials in diabetic patients with significant renal dysfunction (serum creatinine greater than 2.0 mg/dL) have not been conducted, so treatment of these patients is not recommended (FDA acarbose tablets label, PRECAUTIONS, Renal Impairment). During treatment initiation and dose titration, one-hour postprandial plasma glucose may be used to identify the minimum effective dose, with HbA1c thereafter at approximately three-month intervals (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION). Temporary loss of glycaemic control may occur during physiological stress such as fever, trauma, infection or surgery, and temporary insulin therapy may be necessary (FDA acarbose tablets label, PRECAUTIONS, Loss of Control of Blood Glucose).",
+    "patient_counselling": "Tell patients to take acarbose orally three times a day at the start (with the first bite) of each main meal, and that it is important they continue to adhere to dietary instructions, a regular exercise programme and regular testing of urine and/or blood glucose (FDA acarbose tablets label, PRECAUTIONS, Information for Patients). Explain that acarbose itself does not cause hypoglycaemia even when administered in the fasted state, but sulfonylurea drugs and insulin can lower blood sugar enough to cause symptoms or sometimes life-threatening hypoglycaemia, and that acarbose given with a sulfonylurea or insulin will further lower blood glucose and may increase the hypoglycaemic potential. Hypoglycaemia does not occur in patients receiving metformin alone under usual circumstances, and no increased incidence was seen when acarbose was added to metformin therapy. Patients should have a readily available source of glucose (dextrose, D-glucose) to treat symptoms of low blood sugar, because acarbose prevents the breakdown of table sugar (FDA acarbose tablets label, PRECAUTIONS, Information for Patients). Explain that side effects, if they occur, usually develop during the first few weeks of therapy and are most commonly mild-to-moderate gastrointestinal effects such as flatulence, diarrhoea or abdominal discomfort, which generally diminish in frequency and intensity with time (FDA acarbose tablets label, PRECAUTIONS, Information for Patients).",
+    "warnings": [
+      "Hypoglycaemia: acarbose given alone should not cause hypoglycaemia in the fasted or postprandial state, but combination with a sulfonylurea or insulin causes further lowering of blood glucose and may increase hypoglycaemic potential; very rare cases of hypoglycaemic shock reported; oral glucose (dextrose) must be used instead of sucrose, and severe hypoglycaemia may require intravenous glucose infusion or glucagon (FDA acarbose tablets label, PRECAUTIONS, Hypoglycemia).",
+      "Elevated serum transaminase levels: elevations above ULN in 14% versus 7% placebo, >1.8 x ULN in 6% versus 2% and >3 x ULN in 3% versus 1%; usually asymptomatic and reversible but dose-related; internationally 62 cases of transaminase elevation >500 IU/L have been reported, 29 with jaundice, and fulminant hepatitis with fatal outcome has been reported with the relationship to acarbose unclear (FDA acarbose tablets label, PRECAUTIONS, Elevated Serum Transaminase Levels).",
+      "Macrovascular outcomes: there have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with acarbose or any other antidiabetic drug (FDA acarbose tablets label, PRECAUTIONS, Macrovascular Outcomes).",
+      "Loss of control of blood glucose: patients exposed to stress such as fever, trauma, infection or surgery may have temporary loss of control of blood glucose, and temporary insulin therapy may be necessary (FDA acarbose tablets label, PRECAUTIONS, Loss of Control of Blood Glucose).",
+      "Pneumatosis cystoides intestinalis: rare postmarketing reports with alpha-glucosidase inhibitors including acarbose; if suspected, discontinue acarbose and perform appropriate diagnostic imaging (FDA acarbose tablets label, ADVERSE REACTIONS)."
+    ],
+    "precautions": [
+      "Renal impairment: plasma concentrations are proportionally increased relative to the degree of renal dysfunction, and long-term trials in diabetic patients with significant renal dysfunction (serum creatinine > 2.0 mg/dL) have not been conducted, so treatment of these patients is not recommended (FDA acarbose tablets label, PRECAUTIONS, Renal Impairment).",
+      "Gastrointestinal intolerance: if strongly distressing symptoms develop despite adherence to the prescribed diabetic diet, the doctor must be consulted and the dose temporarily or permanently reduced; if the prescribed diet is not observed, intestinal side effects may be intensified (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION and ADVERSE REACTIONS).",
+      "Low body weight: only patients with body weight greater than 60 kg should be considered for dose titration above 50 mg three times daily, because low body weight increases the risk of elevated serum transaminases (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION).",
+      "1,5-AG assay should not be used to monitor glycaemic control in patients taking acarbose, because the measurements are unreliable; use alternative methods (FDA acarbose tablets label, PRECAUTIONS, Laboratory Tests).",
+      "Acarbose acts locally within the gastrointestinal tract and has low systemic bioavailability of the parent compound, which is therapeutically desired; acarbose is metabolized exclusively within the gastrointestinal tract, principally by intestinal bacteria and digestive enzymes (FDA acarbose tablets label, CLINICAL PHARMACOLOGY, Pharmacokinetics)."
+    ],
+    "serious_adverse_reactions": [
+      "Fulminant hepatitis with fatal outcome reported postmarketing; relationship to acarbose unclear (FDA acarbose tablets label, PRECAUTIONS, Elevated Serum Transaminase Levels and ADVERSE REACTIONS)",
+      "Ileus or subileus, and intestinal obstruction (FDA acarbose tablets label, CONTRAINDICATIONS and ADVERSE REACTIONS)",
+      "Pneumatosis cystoides intestinalis, with possible complications including pneumoperitoneum, volvulus, intestinal obstruction, intussusception, intestinal haemorrhage and intestinal perforation (FDA acarbose tablets label, ADVERSE REACTIONS)",
+      "Hypoglycaemic shock, very rarely, in patients receiving acarbose with sulfonylureas and/or insulin (FDA acarbose tablets label, PRECAUTIONS, Drug Interactions)",
+      "Jaundice and/or hepatitis with associated liver damage (FDA acarbose tablets label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [
+      "Acarbose acts locally in the gut, so dietary carbohydrate intake determines the degree of gastrointestinal side effects: the increased GI symptoms seen with acarbose are a manifestation of its mechanism of action, related to the presence of undigested carbohydrate in the lower GI tract, and intestinal side effects may be intensified if the prescribed diet is not observed (FDA acarbose tablets label, ADVERSE REACTIONS and DOSAGE AND ADMINISTRATION)."
+    ],
+    "pregnancy_category": "B",
+    "pregnancy_guidance": "The safety of acarbose in pregnant women has not been established. Reproduction studies in rats at doses up to 480 mg/kg (corresponding to 9 times the human exposure based on drug blood levels) revealed no evidence of impaired fertility or harm to the fetus. In rabbits, reduced maternal body weight gain, probably the result of the pharmacodynamic activity of high doses of acarbose in the intestines, may have been responsible for a slight increase in the number of embryonic losses; rabbits given 160 mg/kg (corresponding to 10 times the dose in man based on body surface area) showed no evidence of embryotoxicity, and there was no evidence of teratogenicity at a dose 32 times the dose in man based on body surface area. There are no adequate and well-controlled studies in pregnant women, and because animal reproduction studies are not always predictive of the human response, acarbose should be used during pregnancy only if clearly needed. Because current information strongly suggests that abnormal blood glucose levels during pregnancy are associated with a higher incidence of congenital anomalies and increased neonatal morbidity and mortality, most experts recommend that insulin be used during pregnancy to maintain blood glucose levels as close to normal as possible (FDA acarbose tablets label, PREGNANCY, Teratogenic Effects).",
+    "lactation_guidance": "A small amount of radioactivity has been found in the milk of lactating rats after administration of radiolabelled acarbose. It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, acarbose should not be administered to a nursing woman (FDA acarbose tablets label, PREGNANCY, Nursing Mothers).",
+    "overdose": "Unlike sulfonylureas or insulin, an overdose of acarbose will not result in hypoglycaemia. An overdose may result in transient increases in flatulence, diarrhoea and abdominal discomfort which shortly subside. In cases of overdosage the patient should not be given drinks or meals containing carbohydrates (polysaccharides, oligosaccharides and disaccharides) for the next 4 to 6 hours (FDA acarbose tablets label, OVERDOSAGE).",
+    "pharmacokinetics": "In a study of 6 healthy men, less than 2% of an oral dose of acarbose was absorbed as active drug, while approximately 35% of total radioactivity from a C-labelled oral dose was absorbed; an average of 51% of an oral dose was excreted in the faeces as unabsorbed drug-related radioactivity within 96 hours. Because acarbose acts locally within the gastrointestinal tract, this low systemic bioavailability of the parent compound is therapeutically desired. Peak plasma concentrations of radioactivity were attained 14 to 24 hours after dosing, while peak plasma concentrations of active drug were attained at approximately 1 hour. Acarbose is metabolized exclusively within the gastrointestinal tract, principally by intestinal bacteria but also by digestive enzymes; a fraction of these metabolites (approximately 34% of the dose) was absorbed and subsequently excreted in the urine, and at least 13 metabolites have been separated chromatographically, the major ones being 4-methylpyrogallol derivatives (sulfate, methyl and glucuronide conjugates). The fraction absorbed as intact drug is almost completely excreted by the kidneys: when acarbose was given intravenously, 89% of the dose was recovered in the urine as active drug within 48 hours. The plasma elimination half-life of acarbose activity is approximately 2 hours in healthy volunteers, so drug accumulation does not occur with three-times-daily oral dosing. In patients with severe renal impairment (CrCl less than 25 mL/min/1.73 m2) peak plasma concentrations of acarbose were about 5 times higher and AUCs about 6 times larger than in volunteers with normal renal function (FDA acarbose tablets label, CLINICAL PHARMACOLOGY, Pharmacokinetics).",
+    "clinical_pearls": [
+      "Acarbose lowers postprandial, not fasting, glucose: the therapeutic goal is to reduce both one-hour postprandial plasma glucose and HbA1c using the lowest effective dose (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION).",
+      "Acarbose alone does not cause hypoglycaemia; hypoglycaemia only appears when it is combined with a sulfonylurea or insulin, and then the correct rescue carbohydrate is glucose (dextrose), not sucrose, because acarbose blocks sucrose hydrolysis (FDA acarbose tablets label, PRECAUTIONS, Hypoglycemia and Information for Patients).",
+      "Flatulence (74%) and diarrhoea (31%) are expected mechanistic effects from carbohydrate reaching the colon undigested, and they usually abate with time; they are not a sign of intolerance that requires stopping the drug unless severe (FDA acarbose tablets label, ADVERSE REACTIONS).",
+      "Dose escalation must be slow and stepwise (25 mg three times daily, titrate every 4-8 weeks) and capped at 50 mg three times daily in patients weighing 60 kg or less, because low body weight is a risk factor for transaminitis (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION).",
+      "Do not use 1,5-AG to monitor these patients - acarbose makes the assay unreliable (FDA acarbose tablets label, PRECAUTIONS, Laboratory Tests).",
+      "There is no boxed warning on the acarbose label; the main risks are gastrointestinal intolerance, transaminitis, and the interaction-driven hypoglycaemia when combined with a sulfonylurea or insulin (FDA acarbose tablets label, sections CONTRAINDICATIONS, PRECAUTIONS and ADVERSE REACTIONS)."
+    ],
+    "brand_names": ["PRECOSE"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific dose adjustment is stated in the label. Plasma concentrations of acarbose are proportionally increased relative to the degree of renal dysfunction; patients with severe renal impairment (CrCl less than 25 mL/min/1.73 m2) attain about 5-fold higher peak plasma concentrations and 6-fold larger AUCs, and long-term clinical trials in diabetic patients with significant renal dysfunction (serum creatinine greater than 2.0 mg/dL) have not been conducted, so treatment of these patients with acarbose is not recommended (FDA acarbose tablets label, PRECAUTIONS, Renal Impairment and CLINICAL PHARMACOLOGY, Special Populations).",
+    "hepatic_dose_adjustment": "Acarbose is contraindicated in patients with cirrhosis. No specific dose adjustment is otherwise specified in the label (FDA acarbose tablets label, CONTRAINDICATIONS and PRECAUTIONS, Elevated Serum Transaminase Levels).",
+    "administration_instructions": "Take acarbose orally three times daily at the start (with the first bite) of each main meal; tablets are to be swallowed whole. Start at 25 mg three times daily (or 25 mg once daily with gradual titration) and increase every 4-8 weeks according to one-hour postprandial glucose or HbA1c and tolerance, to a maximum of 100 mg three times daily in patients over 60 kg and 50 mg three times daily in patients of 60 kg or less. Available as 25 mg, 50 mg and 100 mg tablets. Store at 20 to 25 degrees C (68 to 77 degrees F), protect from moisture and keep the container tightly closed (FDA acarbose tablets label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Acarbose Tablets (Strides Pharma Inc.), CLINICAL PHARMACOLOGY, Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Acarbose Tablets, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Acarbose Tablets, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Acarbose Tablets, ADVERSE REACTIONS (Digestive Tract, Elevated Serum Transaminase Levels, Other Abnormal Laboratory Findings, Postmarketing Adverse Event Reports, Pneumatosis Cystoides Intestinalis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Acarbose Tablets, DOSAGE AND ADMINISTRATION (Initial, Maintenance, Maximum Dosage, Patients Receiving Sulfonylureas or Insulin); PREGNANCY (Geriatric Use, Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS (Drug Interactions) and CLINICAL PHARMACOLOGY, Drug-Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS (Laboratory Tests, Renal Impairment, Loss of Control of Blood Glucose, Elevated Serum Transaminase Levels) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS, Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS (Hypoglycemia, Elevated Serum Transaminase Levels, Macrovascular Outcomes, Loss of Control of Blood Glucose) and ADVERSE REACTIONS (Pneumatosis Cystoides Intestinalis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS (General, Renal Impairment, Laboratory Tests, Information for Patients) and CLINICAL PHARMACOLOGY, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Acarbose Tablets, ADVERSE REACTIONS, PRECAUTIONS (Drug Interactions, Elevated Serum Transaminase Levels) and CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Acarbose Tablets, ADVERSE REACTIONS (Digestive Tract) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Acarbose Tablets, PREGNANCY, Teratogenic Effects: Pregnancy Category B",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Acarbose Tablets, PREGNANCY, Teratogenic Effects",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Acarbose Tablets, PREGNANCY, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Acarbose Tablets, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Acarbose Tablets, CLINICAL PHARMACOLOGY, Pharmacokinetics (Absorption, Metabolism, Excretion, Special Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Acarbose Tablets, DOSAGE AND ADMINISTRATION, PRECAUTIONS (Hypoglycemia, Laboratory Tests, Elevated Serum Transaminase Levels), ADVERSE REACTIONS and CLINICAL PHARMACOLOGY, Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "brand_names",
+      "ref": "PRECOSE (acarbose) listed as a brand product on DailyMed (Bayer HealthCare Pharmaceuticals / APHENA repackager SPL)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85bc02a-bf18-4690-84b8-2c256bce5f9f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA acarbose tablets label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Acarbose Tablets, PRECAUTIONS, Renal Impairment and CLINICAL PHARMACOLOGY, Special Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Acarbose Tablets, CONTRAINDICATIONS and PRECAUTIONS, Elevated Serum Transaminase Levels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Acarbose Tablets, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients have not been established)"
+  ],
+  "notes": "The table stores this agent as 'Acarbose' with brand_names ['Acarbose'], which is the generic name rather than a brand. PRECOSE is the US brand (Bayer), so brand_names has been corrected to ['PRECOSE']. Content is sourced from the current FDA label for Acarbose Tablets (Strides Pharma Inc.) and cross-checked against the PRECOSE (Bayer) label, which carries the same indication, contraindications, precautions and dosing. Acarbose labels remain in the legacy (pre-PLLR) format and still state Pregnancy Category B, which is reported verbatim here; that category is obsolete and the label also states that safety in pregnant women has not been established and that insulin is preferred during pregnancy. The label has no boxed warning. Note the label's own two-tier maximum: 50 mg three times daily at body weight 60 kg or less, 100 mg three times daily above 60 kg."
+}

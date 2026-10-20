@@ -1,0 +1,240 @@
+{
+  "name": "Amiodarone",
+  "existing_id": "b24fcd1d-089e-4ef4-b5ab-67db2f44a63e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amiodarone is considered a class III antiarrhythmic drug, but it possesses electrophysiologic characteristics of all four Vaughan Williams classes. Like class I drugs it blocks sodium channels at rapid pacing frequencies, and like class II drugs it exerts a noncompetitive antisympathetic action. One of its main effects, with prolonged administration, is to lengthen the cardiac action potential, a class III effect. The negative chronotropic effect in nodal tissues is similar to the effect of class IV drugs. In addition to blocking sodium channels, amiodarone blocks myocardial potassium channels, contributing to slowing of conduction and prolongation of refractoriness. The antisympathetic action and the block of calcium and potassium channels are responsible for the negative dromotropic effects on the sinus node and for the slowing of conduction and prolongation of refractoriness in the atrioventricular node. Its vasodilatory action can decrease cardiac workload and consequently myocardial oxygen consumption. Amiodarone prolongs the duration of the action potential of all cardiac fibres while causing minimal reduction of dV/dt, prolongs the refractory period in all cardiac tissues, and increases the cardiac refractory period without influencing resting membrane potential except in automatic cells where the slope of the prepotential is reduced, generally reducing automaticity. These electrophysiologic effects are reflected in a decreased sinus rate of 15% to 20%, increased PR and QT intervals of about 10%, the development of U-waves and changes in T-wave contour (Pacerone label, section 12.1).",
+    "indications": [
+      "Oral amiodarone (Pacerone): treatment of documented, life-threatening recurrent ventricular fibrillation and life-threatening recurrent hemodynamically unstable tachycardia in adults who have not responded to adequate doses of other available antiarrhythmics or when alternative agents cannot be tolerated (Pacerone label, section 1).",
+      "Intravenous amiodarone (Nexterone): initiation of treatment and prophylaxis of frequently recurring ventricular fibrillation and hemodynamically unstable ventricular tachycardia in patients refractory to other therapy (Nexterone label, section 1)."
+    ],
+    "contraindications": [
+      "Oral amiodarone (Pacerone): cardiogenic shock; sick sinus syndrome, second- or third-degree atrioventricular block, or bradycardia leading to syncope without a functioning pacemaker; known hypersensitivity to the drug or to any of its components, including iodine (Pacerone label, section 4).",
+      "Intravenous amiodarone (Nexterone): known hypersensitivity to any of the components of Nexterone premixed injection, including iodine; cardiogenic shock; marked sinus bradycardia; second- or third-degree atrioventricular block unless a functioning pacemaker is available (Nexterone label, section 4)."
+    ],
+    "side_effects": [
+      "At the usual maintenance dose of 400 mg/day and above, amiodarone causes adverse reactions in about three-fourths of all patients, resulting in discontinuation in 7% to 18% (Pacerone label, section 6.1).",
+      "Cardiovascular: congestive heart failure, cardiac arrhythmias and sinoatrial node dysfunction (common); hypotension (sometimes fatal) and sinus arrest (post-marketing); blue skin discoloration, hypotension and cardiac conduction abnormalities (uncommon) (Pacerone label, sections 6.1 and 6.2).",
+      "Gastrointestinal: nausea and vomiting (very common); constipation, anorexia and abdominal pain (common); pancreatitis and acute pancreatitis (post-marketing) (Pacerone label, sections 6.1 and 6.2).",
+      "Dermatologic: solar dermatitis/photosensitivity (common); rash, spontaneous ecchymosis, alopecia (uncommon); urticaria, toxic epidermal necrolysis (sometimes fatal), erythema multiforme, Stevens-Johnson syndrome, exfoliative dermatitis, bullous dermatitis, drug rash with eosinophilia and systemic symptoms (DRESS), eczema, pruritus, skin cancer and lupus-like syndrome (post-marketing) (Pacerone label, sections 6.1 and 6.2).",
+      "Neurologic: malaise and fatigue, tremor/abnormal involuntary movements, lack of coordination, abnormal gait/ataxia, dizziness, paresthesias, decreased libido, insomnia, headache and sleep disturbances (common); pseudotumor cerebri, parkinsonian symptoms such as akinesia and bradykinesia (sometimes reversible with discontinuation of therapy) and demyelinating polyneuropathy (post-marketing) (Pacerone label, sections 6.1 and 6.2).",
+      "Ophthalmic: visual disturbances (common); corneal microdeposits are discernible by slit-lamp examination in the majority of adults treated with amiodarone and give rise to visual halos or blurred vision in as many as 10% of patients (Pacerone label, sections 5.5 and 6.1).",
+      "Hepatic: abnormal liver-function tests and nonspecific hepatic disorders (common); hepatitis, cholestatic hepatitis and cirrhosis (post-marketing) (Pacerone label, sections 6.1 and 6.2).",
+      "Respiratory: pulmonary inflammation or fibrosis (common); eosinophilic pneumonia, adult respiratory distress syndrome in the postoperative setting, bronchospasm, bronchiolitis obliterans organizing pneumonia, pulmonary alveolar hemorrhage, pleural effusion and pleuritis (post-marketing) (Pacerone label, sections 6.1, 6.2 and 5.2).",
+      "Endocrine: hypothyroidism (up to 10% of patients) and hyperthyroidism (about 2%); thyroid nodules/thyroid cancer and syndrome of inappropriate antidiuretic hormone secretion (post-marketing) (Pacerone label, sections 5.6 and 6.2).",
+      "Other: flushing, abnormal taste and smell, edema and abnormal salivation (common); coagulation abnormalities (common); fever and dry mouth (post-marketing) (Pacerone label, sections 6.1 and 6.2).",
+      "Hematologic (post-marketing): hemolytic anemia, aplastic anemia, pancytopenia, neutropenia, thrombocytopenia, agranulocytosis and granuloma (Pacerone label, section 6.2).",
+      "Immune (post-marketing): anaphylactic/anaphylactoid reaction (including shock) and angioedema (Pacerone label, section 6.2).",
+      "Psychiatric (post-marketing): hallucination, confusional state, disorientation and delirium (Pacerone label, section 6.2).",
+      "Musculoskeletal (post-marketing): myopathy, muscle weakness and rhabdomyolysis (Pacerone label, section 6.2).",
+      "Renal (post-marketing): renal impairment, renal insufficiency and acute renal failure (Pacerone label, section 6.2).",
+      "Reproductive (post-marketing): epididymitis and impotence (Pacerone label, section 6.2).",
+      "Local: phlebitis with intravenous amiodarone (Nexterone label, section 5.11)."
+    ],
+    "dosage": {
+      "adult": "Oral (Pacerone label, section 2): dosage must be individualised based on severity of arrhythmia and response, using the lowest effective dose. Obtain baseline chest x-ray, pulmonary function tests, thyroid function tests and liver aminotransferases, and correct hypokalemia, hypomagnesemia and hypocalcemia before initiating treatment. Initiate with a loading dose of 800 to 1600 mg/day until initial therapeutic response occurs (usually 1 to 3 weeks); once adequate arrhythmia control is achieved, or if side effects become prominent, reduce to 600 to 800 mg/day for one month and then to the maintenance dose, usually 400 mg/day. Administer consistently with regard to meals; administration in divided doses with meals is suggested for total daily doses of 1000 mg or higher, or when gastrointestinal intolerance occurs. Intravenous (Nexterone label, section 2.2): loading infusion of 150 mg over the first 10 minutes (15 mg/min) followed by 360 mg over the next 6 hours (1 mg/min) and then 540 mg over the remaining 18 hours (0.5 mg/min); after the first 24 hours continue the maintenance infusion at 720 mg per 24-hour period (0.5 mg/min); for breakthrough VF or haemodynamically unstable VT give a 150 mg supplemental infusion over 10 minutes (15 mg/min). Mean daily doses above 2100 mg were associated with an increased risk of hypotension. Transition from intravenous to oral (Nexterone label, section 2.3): after less than 1 week of infusion, 800 to 1600 mg/day oral; after 1 to 3 weeks, 600 to 800 mg/day oral; after more than 3 weeks, 400 mg/day oral.",
+      "geriatric": "Normal subjects over 65 years of age show lower clearances and increased drug half-life than younger subjects; in general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy (Pacerone label, section 8.5). The Pacerone label does not specify a separate numeric geriatric dose.",
+      "paediatric": "The safety and effectiveness of Pacerone in pediatric patients have not been established (Pacerone label, section 8.4). The Nexterone label likewise states that the safety and effectiveness of amiodarone in pediatric patients have not been established, and reports that in a pediatric trial of 61 patients aged 30 days to 15 years, hypotension (36%), bradycardia (20%) and AV block (15%) were common dose-related adverse reactions and were severe or life-threatening in some cases, with injection site reactions in 5 of 20 patients receiving intravenous amiodarone through a peripheral vein irrespective of dose regimen (Nexterone label, section 8.4). No paediatric dose is specified in either label."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "QT-prolonging drugs (class I and III antiarrhythmics, lithium, certain phenothiazines, tricyclic antidepressants, certain fluoroquinolone and macrolide antibiotics, azole antifungals, halogenated inhalation anaesthetic agents): increased risk of torsades de pointes - avoid concomitant use (Pacerone label, section 7, Table 1).",
+      "Negative chronotropes (digoxin, beta blockers, verapamil, diltiazem, clonidine, ivabradine): potentiates the electrophysiologic and haemodynamic effects of amiodarone, resulting in bradycardia, sinus arrest and AV block - monitor heart rate (Pacerone label, section 7, Table 1).",
+      "CYP450 inhibitors (grapefruit juice, certain fluoroquinolone and macrolide antibiotics, azole antifungals, cimetidine, certain protease inhibitors): increased exposure of amiodarone - avoid concomitant use. CYP450 inducers (St John's wort): reduced amiodarone serum levels (Pacerone label, section 7, Table 1).",
+      "Digoxin: increased digoxin concentration - reduce digoxin by half or discontinue; if continued, monitor for evidence of toxicity (Pacerone label, section 7, Table 1).",
+      "Warfarin: potentiates anticoagulant response and can result in serious or fatal bleeding; co-administration increases prothrombin time by 100% after 3 to 4 days - reduce the warfarin dose by one-third to one-half and monitor prothrombin times (Pacerone label, section 7, Table 1).",
+      "Other antiarrhythmics (quinidine, procainamide, flecainide): reserve concomitant use for patients unresponsive to a single agent; antiarrhythmic metabolism is inhibited by amiodarone - initiate the antiarrhythmic at a lower than usual dose, reduce doses of previously administered antiarrhythmics by 30% to 50% for several days after transitioning to oral amiodarone, and evaluate continued need (Pacerone label, section 7, Table 1).",
+      "HMG-CoA reductase inhibitors (simvastatin, lovastatin, atorvastatin): increased plasma concentration of the statin - limit lovastatin to 40 mg, limit simvastatin to 20 mg, and lower the starting dose of other CYP3A4 substrates may be required (Pacerone label, section 7, Table 1).",
+      "Cyclosporine: increased plasma levels of cyclosporine have been reported resulting in elevated creatinine despite reduction of the cyclosporine dose - monitor cyclosporine drug levels and renal function with concomitant use (Pacerone label, section 7, Table 1).",
+      "Phenytoin: increased steady-state levels of phenytoin - monitor phenytoin levels (Pacerone label, section 7, Table 1).",
+      "Cholestyramine: reduced amiodarone serum levels (Pacerone label, section 7, Table 1).",
+      "Hepatitis C direct-acting antivirals (sofosbuvir): cases of symptomatic bradyarrhythmia requiring pacemaker insertion have been reported in patients on oral maintenance amiodarone; ledipasvir/sofosbuvir and sofosbuvir with simeprevir have been reported to cause symptomatic bradycardia, sometimes requiring pacemaker insertion and at least one fatality (Pacerone label, sections 5.7 and 7).",
+      "CYP3A substrates: lidocaine - sinus bradycardia has been reported with oral amiodarone combined with lidocaine for local anaesthesia; monitor heart rate and consider a lower starting dose of lidocaine. Fentanyl - may cause hypotension, bradycardia and decreased cardiac output (Pacerone label, section 7, Table 1).",
+      "Because of amiodarone's long half-life, drug interactions should be expected to persist for weeks to months after discontinuation of amiodarone (Pacerone label, section 7). Amiodarone is a substrate for CYP3A and CYP2C8 and inhibits P-glycoprotein and CYP1A2, CYP2C9, CYP2D6 and CYP3A, increasing exposure to other drugs (Pacerone label, section 7).",
+      "Volatile anaesthetic agents: patients on amiodarone may be more sensitive to the myocardial depressant and conduction effects of halogenated inhalational anaesthetics (Pacerone label, section 5.12).",
+      "Y-site injection incompatibility with intravenous amiodarone: amiodarone in D5W forms precipitates with aminophylline (in D5W or NS at 4 mg/mL), amoxicillin sodium-clavulanic acid, ampicillin sodium-sulbactam sodium, argatroban, bivalirudin, cefamandole nafate, cefazolin sodium, ceftazidime, digoxin, furosemide, mezlocillin sodium, heparin sodium, imipenem-cilastatin sodium and magnesium sulfate - if co-administration is necessary, use separate intravenous administration lines (Nexterone label, section 2.2, Table 2)."
+    ],
+    "monitoring": "Before initiating treatment obtain a baseline chest x-ray, pulmonary function tests including diffusion capacity, thyroid function tests and liver aminotransferases, and correct hypokalemia, hypomagnesemia and hypocalcemia; repeat history, physical examination and chest x-ray every 3 to 6 months or if symptoms occur (Pacerone label, sections 2 and 5.2). Obtain baseline and periodic liver transaminases and discontinue or reduce the dose if the increase exceeds three times normal or doubles in a patient with an elevated baseline; discontinue if the patient experiences signs or symptoms of clinical liver injury (Pacerone label, sections 5.3 and 6). Monitor thyroid function prior to treatment and periodically thereafter, particularly in elderly patients and in any patient with a history of thyroid nodules, goiter or other thyroid dysfunction (Pacerone label, section 5.6). Regular ophthalmic examination including funduscopy and slit-lamp examination is recommended during administration (Pacerone label, section 5.5). Initiate amiodarone in a clinical setting where continuous electrocardiograms and cardiac resuscitation are available, and monitor for worsening arrhythmia, bradycardia, heart block and QT prolongation (Pacerone label, sections 5.4, 5.7 and 6). For the intravenous formulation monitor blood pressure and cardiac rhythm, including for hypotension, bradycardia and AV block, and for phlebitis (Nexterone label, sections 5.2 and 5.3). In patients with implanted defibrillators or pacemakers, assess pacing and defibrillation thresholds at the inception of and during amiodarone treatment (Pacerone label, section 5.8). Monitor heart rate in patients taking or recently discontinuing amiodarone when starting antiviral treatment (Pacerone label, section 5.7). Monitor digoxin levels, prothrombin times on warfarin, cyclosporine levels and renal function, phenytoin levels and statin tolerability when these are co-administered (Pacerone label, section 7).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labelling (Medication Guide) and to seek medical attention if they experience the signs and symptoms of pulmonary toxicity, worsening arrhythmia, bradycardia, visual impairment, or hypo- and hyperthyroidism (Pacerone label, section 17). Advise patients that Pacerone tablets should be started in a hospital so that their medical condition can be carefully monitored, and that they should have regular check-ups, blood tests and chest x-rays before and during treatment, plus lung function tests before starting treatment (Pacerone Medication Guide, section 17). Advise patients that they may still have side effects after stopping Pacerone because the medicine stays in the body for months after treatment is stopped, and that they should not stop taking Pacerone without talking to their healthcare provider (Pacerone Medication Guide, section 17). Advise patients to call their healthcare provider or get medical help right away for trouble breathing, wheezing, shortness of breath, coughing, chest pain, spitting up of blood or fever; for nausea or vomiting, brown or dark-coloured urine, feeling more tired than usual, yellowing of the skin or the whites of the eyes, or right upper stomach pain; for heart pounding, skipping a beat, beating fast or slowly, feeling light-headed or fainting; and for vision problems including blurred vision, seeing halos or sensitivity to light (Pacerone Medication Guide, section 17). Advise patients to avoid grapefruit juice and St John's wort (Pacerone label, section 17). Advise pregnant women of the potential risk to a fetus, and advise females of reproductive potential to inform their prescriber of a known or suspected pregnancy; advise women that breastfeeding is not recommended during treatment with Pacerone (Pacerone label, sections 8.1, 8.2 and 17).",
+    "warnings": [
+      "WARNING (boxed): PULMONARY, HEPATIC, and CARDIAC TOXICITY. Pacerone is intended for use only in patients with the indicated life-threatening arrhythmias because its use is accompanied by substantial toxicity. Pacerone can cause pulmonary toxicity (hypersensitivity pneumonitis or interstitial/alveolar pneumonitis) that has resulted in clinically manifest disease at rates as high as 17% in some series of patients, and pulmonary toxicity has been fatal about 10% of the time; obtain a baseline chest X-ray and pulmonary-function tests including diffusion capacity when therapy is initiated and repeat history, physical exam and chest X-ray every 3 to 6 months. Pacerone can cause hepatoxicity, which can be fatal; obtain baseline and periodic liver transaminases and discontinue or reduce the dose if the increase exceeds three times normal, or doubles in a patient with an elevated baseline, and discontinue if the patient experiences signs or symptoms of clinical liver injury. Pacerone can exacerbate arrhythmias; initiate amiodarone hydrochloride in a clinical setting where continuous electrocardiograms and cardiac resuscitation are available. Reserve Pacerone for patients with the indicated life-threatening arrhythmias because its use is accompanied by substantial toxicity, some also life-threatening; utilise alternative agents first; initiate under hospital or specialist supervision (Pacerone label, Boxed Warning and sections 5.2, 5.3 and 5.4).",
+      "Persistence of adverse effects: because of the long half-life of amiodarone (15 to 142 days) and its active metabolite desethylamiodarone (14 to 75 days), adverse reactions and drug interactions can persist for several weeks following discontinuation (Pacerone label, section 5.1).",
+      "Pulmonary toxicity: rates have been reported as high as 17% and it is fatal in about 10% of cases; consider alternative antiarrhythmic therapy if signs or symptoms of pulmonary toxicity occur, and prednisone 40 to 60 mg/day tapered over several weeks may be helpful (Pacerone label, section 5.2).",
+      "Adult respiratory distress syndrome (ARDS) has been reported postoperatively in patients receiving amiodarone who have undergone either cardiac or noncardiac surgery, and although patients usually respond well to vigorous respiratory therapy, in rare instances the outcome has been fatal (Pacerone label, section 5.2).",
+      "Hepatic injury: asymptomatic elevations of hepatic enzyme levels are seen frequently, but amiodarone can cause life-threatening hepatic injury, with histology resembling alcoholic hepatitis or cirrhosis (Pacerone label, section 5.3).",
+      "Worsened arrhythmia: amiodarone can exacerbate the presenting arrhythmia in about 2% to 5% of patients or cause new ventricular fibrillation, incessant ventricular tachycardia, increased resistance to cardioversion, and polymorphic ventricular tachycardia associated with QTc prolongation (torsades de pointes) (Pacerone label, section 5.4).",
+      "Visual impairment and loss of vision: cases of optic neuropathy and optic neuritis, usually resulting in visual impairment and sometimes permanent blindness, have been reported and may occur at any time during therapy; if symptoms of visual impairment appear, consider discontinuing amiodarone and promptly refer for ophthalmic examination (Pacerone label, section 5.5).",
+      "Thyroid abnormalities: amiodarone can cause either hypothyroidism (reported in up to 10% of patients) or hyperthyroidism (about 2%); severe hypothyroidism and myxedema coma, sometimes fatal, have been reported; radioactive iodine therapy is contraindicated because of the low radioiodine uptake associated with amiodarone-induced hyperthyroidism (Pacerone label, section 5.6).",
+      "Bradycardia: amiodarone causes symptomatic bradycardia or sinus arrest with suppression of escape foci in 2% to 4% of patients, and the risk is increased by electrolytic disorders or use of concomitant antiarrhythmics or negative chronotropes; bradycardia may require a pacemaker for rate control (Pacerone label, section 5.7).",
+      "Peripheral neuropathy: chronic administration may lead to peripheral neuropathy, which may not resolve when amiodarone is discontinued (Pacerone label, section 5.10).",
+      "Photosensitivity and skin discoloration: photosensitization occurs in about 10% of patients, and a blue-gray discoloration of exposed skin may occur during long-term treatment, with some reversal on discontinuation (Pacerone label, section 5.11).",
+      "Fetal toxicity: amiodarone may cause fetal harm when administered to a pregnant woman; fetal exposure may increase the potential for cardiac, thyroid, neurodevelopmental, neurological and growth effects in the neonate (Pacerone label, section 5.9).",
+      "Intravenous amiodarone warnings: hypotension, bradycardia and atrioventricular block, hepatic injury, proarrhythmia, pulmonary injury, loss of vision, thyroid abnormalities, neonatal injury, hypersensitivity reactions and phlebitis are all listed as warnings and precautions for Nexterone (Nexterone label, sections 5.2 to 5.11).",
+      "Because of amiodarone's long half-life, expect drug interactions to persist for weeks to months after discontinuation of amiodarone (Pacerone label, section 7)."
+    ],
+    "precautions": [
+      "Correct hypokalemia, hypomagnesemia and hypocalcemia before initiating treatment, as these disorders can exaggerate the degree of QTc prolongation and increase the potential for torsades de pointes; give special attention to electrolyte and acid-base balance in patients experiencing severe or prolonged diarrhea or receiving drugs affecting electrolyte levels such as diuretics, laxatives, systemic corticosteroids or amphotericin B (Pacerone label, section 5.4).",
+      "In patients with implanted defibrillators or pacemakers, chronic administration of antiarrhythmic drugs may affect pacing or defibrillation thresholds; thresholds should be assessed at the inception of and during amiodarone treatment (Pacerone label, section 5.8).",
+      "Patients on amiodarone therapy may be more sensitive to the myocardial depressant and conduction effects of halogenated inhalational anaesthetics (Pacerone label, section 5.12).",
+      "Intravenous amiodarone should not be given rapidly and should be infused; monitor for hypotension and bradycardia during infusion, and guard against phlebitis (Nexterone label, sections 5.2 and 5.11).",
+      "Amiodarone injection forms precipitates with a list of drugs in Y-site admixtures; if co-administration is necessary, use separate intravenous administration lines (Nexterone label, section 2.2, Table 2).",
+      "If the patient experiences signs or symptoms of pulmonary toxicity, consider alternative antiarrhythmic therapy (Pacerone label, section 5.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Pulmonary toxicity (hypersensitivity pneumonitis or interstitial/alveolar pneumonitis) - rates as high as 17% and fatal about 10% of the time (Pacerone label, Boxed Warning and section 5.2).",
+      "Hepatic injury, which can be fatal (Pacerone label, Boxed Warning and section 5.3).",
+      "Worsened arrhythmia, new ventricular fibrillation, incessant ventricular tachycardia, increased resistance to cardioversion and torsades de pointes (Pacerone label, Boxed Warning and section 5.4).",
+      "Optic neuropathy and optic neuritis, sometimes resulting in permanent blindness (Pacerone label, section 5.5).",
+      "Thyroid abnormalities including hyperthyroidism, hypothyroidism and myxedema coma (Pacerone label, section 5.6).",
+      "Symptomatic bradycardia or sinus arrest in 2% to 4% of patients (Pacerone label, section 5.7).",
+      "Peripheral neuropathy, which may not resolve on discontinuation (Pacerone label, section 5.10).",
+      "Anaphylactic/anaphylactoid reaction (including shock) and angioedema (Pacerone label, section 6.2).",
+      "Fatal toxic epidermal necrolysis, Stevens-Johnson syndrome and DRESS (Pacerone label, section 6.2).",
+      "Adult respiratory distress syndrome in the postoperative setting (Pacerone label, section 6.2).",
+      "Acute renal failure, pancreatitis and rhabdomyolysis (Pacerone label, section 6.2)."
+    ],
+    "food_interactions": [
+      "Food increases the rate and extent of absorption of amiodarone: after a single 600 mg dose taken immediately after a high-fat meal, the AUC increased 2.3 times (range 1.7 to 3.6) and the Cmax 3.8 times (range 2.7 to 4.4), and the time to peak plasma concentration decreased by 37%; the AUC and Cmax of the active metabolite desethylamiodarone increased by 55% and 32% respectively. Amiodarone tablets should therefore be administered consistently with regard to meals, and administration in divided doses with meals is suggested for total daily doses of 1000 mg or higher (Pacerone label, sections 2 and 12.3).",
+      "Grapefruit juice is listed as a CYP450 inhibitor that increases exposure of amiodarone, and patients are advised to avoid grapefruit juice (Pacerone label, sections 7 and 17)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data from post-marketing reports and published case series indicate that amiodarone use in pregnant women may increase the risk of fetal adverse effects including neonatal hypo- and hyperthyroidism, neonatal bradycardia, neurodevelopmental abnormalities, preterm birth and fetal growth restriction; amiodarone and its metabolite desethylamiodarone cross the placenta. In animal studies, administration during organogenesis resulted in embryo-fetal toxicity at doses less than the maximum recommended human maintenance dose. Advise pregnant women of the potential risk to a fetus and advise females of reproductive potential to inform their prescriber of a known or suspected pregnancy. Fetal/neonatal adverse reactions that have been described include neonatal bradycardia, QT prolongation, periodic ventricular extrasystoles, neonatal hypothyroidism (with or without goiter), neonatal hyperthyroxinemia, neurodevelopmental abnormalities independent of thyroid function (speech delay, difficulties with written language and arithmetic, delayed motor development, ataxia with jerk nystagmus), fetal growth restriction and premature birth; monitor the newborn for signs and symptoms of thyroid disorder and cardiac arrhythmias. Risk of arrhythmias may increase during labour and delivery, and patients should be monitored continuously (Pacerone label, sections 5.9, 8.1 and 17).",
+    "lactation_guidance": "Amiodarone and one of its major metabolites, desethylamiodarone, are present in breast milk at between 3.5% and 45% of the maternal weight-adjusted dosage of amiodarone. There are cases of hypothyroidism and bradycardia in breastfed infants, although it is unclear if these effects are due to amiodarone exposure in breast milk. Breastfeeding is not recommended during treatment with Pacerone (Pacerone label, sections 8.2 and 17).",
+    "overdose": "There have been cases, some fatal, of amiodarone hydrochloride overdose. Monitor the patient's cardiac rhythm and blood pressure, and if bradycardia ensues a beta-adrenergic agonist or a pacemaker may be used. Treat hypotension with inadequate tissue perfusion with positive inotropic and vasopressor agents. Neither amiodarone nor its metabolite is dialyzable (Pacerone label, section 10).",
+    "pharmacokinetics": "Following oral administration, amiodarone is slowly and variably absorbed, with a bioavailability of approximately 50% and maximum plasma concentrations attained 3 to 7 hours after a single dose; plasma concentrations with chronic dosing at 100 to 600 mg/day are approximately dose proportional, with a mean 0.5 mg/L increase for each 100 mg/day. Food increases the rate and extent of absorption: after a 600 mg dose with a high-fat meal, the AUC and Cmax increased by 2.3 and 3.8 times respectively and Tmax decreased by 37%. Amiodarone is highly protein bound (approximately 96%) with a very large but variable volume of distribution averaging about 60 L/kg because of extensive accumulation in adipose tissue and highly perfused organs such as liver, lung and spleen. It is metabolized to desethylamiodarone (DEA) by CYP3A and CYP2C8, and in vitro amiodarone and DEA inhibit CYP2C9, CYP2C19, CYP2D6, CYP3A, CYP2A6, CYP2B6 and CYP2C8 and some transporters including P-glycoprotein and OCT2. Elimination is multi-compartmental, with a mean apparent plasma terminal elimination half-life of 58 days (range 15 to 142 days) for amiodarone and 36 days (range 14 to 75 days) for DEA; following discontinuation of chronic oral therapy a biphasic elimination occurs with an initial 50% reduction of plasma levels after 2.5 to 10 days and a terminal phase half-life of 26 to 107 days (mean approximately 53 days). In the absence of a loading-dose period, steady-state plasma concentrations would be reached between 130 and 535 days, with an average of 265 days. Elimination is primarily by hepatic metabolism and biliary excretion, with negligible excretion of amiodarone or DEA in urine (Pacerone label, section 12.3).",
+    "clinical_pearls": [
+      "Amiodarone has a half-life measured in months (terminal half-life 15-142 days, with a mean of 58 days, and a desethylamiodarone half-life of 14-75 days), so adverse effects and drug interactions persist for weeks to months after the drug is stopped, and steady state may take more than a year to reach without a loading dose (Pacerone label, sections 5.1 and 12.3).",
+      "Because the correct maintenance dose depends on individual elimination rates, the maintenance dose must be individualised and the lowest effective dose used (Pacerone label, sections 2 and 12.3).",
+      "Pulmonary, hepatic and cardiac toxicity are the boxed-warning toxicities; obtain a baseline chest x-ray and pulmonary function tests including diffusion capacity, and baseline and periodic liver transaminases and thyroid function tests, and repeat the chest x-ray every 3 to 6 months (Pacerone label, Boxed Warning and sections 5.2, 5.3 and 5.6).",
+      "Hyperthyroidism induced by amiodarone can precipitate arrhythmia breakthrough - if new arrhythmia appears, consider hyperthyroidism; radioactive iodine therapy is contraindicated in amiodarone-induced hyperthyroidism because of low radioiodine uptake (Pacerone label, section 5.6).",
+      "Correct potassium, magnesium and calcium before starting and maintain electrolytes during treatment, as hypokalaemia, hypomagnesaemia and hypocalcaemia exaggerate QTc prolongation and the risk of torsades de pointes (Pacerone label, section 5.4).",
+      "Corneal microdeposits are present in the majority of adults on amiodarone; they are usually only visible on slit-lamp examination, cause visual halos or blurred vision in up to 10% of patients, and are reversible on dose reduction or discontinuation - asymptomatic microdeposits alone are not a reason to reduce the dose (Pacerone label, section 5.5).",
+      "Warfarin co-administration increases prothrombin time by 100% after 3 to 4 days, so the warfarin dose should be reduced by one-third to one-half with prothrombin time monitoring (Pacerone label, section 7).",
+      "The oral and intravenous products are not interchangeable regimens: the intravenous Nexterone product is for initiation and short-term use only, is not intended for maintenance treatment, and carries its own loading and maintenance infusion rates (Nexterone label, sections 2.2 and 2.3).",
+      "Routine ECG, echocardiography, thyroid and hepatic monitoring is essential, but amiodarone's long half-life means that a normal value early in therapy does not exclude later toxicity (Pacerone label, sections 5.1, 5.2, 5.3 and 5.6)."
+    ],
+    "brand_names": ["Pacerone", "Nexterone"],
+    "black_box_warnings": [
+      "WARNING: PULMONARY, HEPATIC, and CARDIAC TOXICITY. Pacerone is intended for use only in patients with the indicated life-threatening arrhythmias because its use is accompanied by substantial toxicity. Pacerone can cause pulmonary toxicity (hypersensitivity pneumonitis or interstitial/alveolar pneumonitis) that has resulted in clinically manifest disease at rates as high as 17% in some series of patients. Pulmonary toxicity has been fatal about 10% of the time. Obtain a baseline chest X-ray and pulmonary-function tests, including diffusion capacity, when Pacerone therapy is initiated. Repeat history, physical exam, and chest X-ray every 3 to 6 months. Pacerone can cause hepatoxicity, which can be fatal. Obtain baseline and periodic liver transaminases and discontinue or reduce dose if the increase exceeds three times normal, or doubles in a patient with an elevated baseline. Discontinue Pacerone if the patient experiences signs or symptoms of clinical liver injury. Pacerone can exacerbate arrhythmias. Initiate amiodarone hydrochloride in a clinical setting where continuous electrocardiograms and cardiac resuscitation are available (Pacerone label, Boxed Warning).",
+      "Reserve Pacerone for patients with the indicated life-threatening arrhythmias because its use is accompanied by substantial toxicity, some also life-threatening. Utilize alternative agents first. Initiate under hospital or specialist supervision (Pacerone label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is specified in the Pacerone label. The label does state that because amiodarone is extensively metabolized by the liver and the plasma elimination half-life is prolonged, baseline and periodic liver transaminases must be obtained and the dose discontinued or reduced if the increase exceeds three times normal or doubles in a patient with an elevated baseline, and that amiodarone should be discontinued if the patient experiences signs or symptoms of clinical liver injury (Pacerone label, sections 5.3 and 6). For the intravenous product the Nexterone label lists hepatic injury as a warning and precaution (Nexterone label, section 5.4).",
+    "administration_instructions": "Oral: administer Pacerone tablets consistently with regard to meals; administration in divided doses with meals is suggested for total daily doses of 1000 mg or higher, or when gastrointestinal intolerance occurs (Pacerone label, section 2). Intravenous: infuse Nexterone premixed injection using the rates and volumes in the dosage table - 150 mg/100 mL (1.5 mg/mL) at 10 mL/min for the first 10 minutes, 360 mg/200 mL (1.8 mg/mL) at 0.556 mL/min for the next 6 hours, and 0.278 mL/min for the remaining 18 hours and for maintenance; for breakthrough VF or haemodynamically unstable VT, 150 mg/100 mL at 10 mL/min over 10 minutes. Monitor the initial rate of infusion closely and do not exceed the recommended rate, because hypotension is the most common adverse reaction of intravenous amiodarone and is likely related to the rate of infusion; treat hypotension initially by slowing the infusion, with additional standard therapy including vasopressor drugs, positive inotropic agents and volume expansion as needed. If co-administration with drugs in the Y-site incompatibility table is necessary, use separate intravenous administration lines. NEXTERONE is supplied as a ready-to-use, sterile, nonpyrogenic, iso-osmotic solution in 100 mL and 200 mL single-dose containers; do not add supplementary medication to it; store at 20-25 degrees C (68-77 degrees F), excursions permitted to 15-30 degrees C, protected from light, excessive heat and freezing, and use the carton to protect contents from light until used (Nexterone label, sections 2.2, 5.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, PACERONE (amiodarone hydrochloride) tablets (Upsher-Smith), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, PACERONE (amiodarone hydrochloride) tablets, section 1; FDA label, NEXTERONE (amiodarone hydrochloride) injection, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, PACERONE (amiodarone hydrochloride) tablets, section 4; FDA label, NEXTERONE injection, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, PACERONE tablets, sections 6, 6.1 and 6.2; FDA label, NEXTERONE injection, section 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, PACERONE tablets, sections 2, 8.4 and 8.5; FDA label, NEXTERONE injection, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, PACERONE tablets, sections 5.7, 5.12 and 7 (Table 1); FDA label, NEXTERONE injection, section 2.2 (Table 2, Y-site incompatibility)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, PACERONE tablets, sections 2, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 6 and 7; FDA label, NEXTERONE injection, sections 5.2, 5.3 and 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, PACERONE tablets, section 17 Patient Counseling Information and MEDICATION GUIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, PACERONE tablets, Boxed Warning and sections 5.1-5.12 and 7; FDA label, NEXTERONE injection, sections 5.2-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, PACERONE tablets, sections 5.2, 5.4, 5.8 and 5.12; FDA label, NEXTERONE injection, sections 2.2 and 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, PACERONE tablets, Boxed Warning and sections 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.10 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, PACERONE tablets, sections 5.9, 8.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, PACERONE tablets, sections 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, PACERONE tablets, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, PACERONE tablets, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, PACERONE tablets, Boxed Warning, sections 2, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 7, 10 and 12.3; FDA label, NEXTERONE injection, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Pacerone (amiodarone hydrochloride) tablets and Nexterone (amiodarone hydrochloride) injection listed on DailyMed as brand products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9108958-b8d7-4fba-87c3-9a32990de551"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, PACERONE (amiodarone hydrochloride) tablets, Boxed Warning: PULMONARY, HEPATIC and CARDIAC TOXICITY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "The Pacerone label notes that food increases the rate and extent of absorption of amiodarone (section 12.3) and that tablets should be administered consistently with regard to meals (section 2), but no specific food interaction requiring dose adjustment is described",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, PACERONE tablets, sections 5.3 and 6; FDA label, NEXTERONE injection, section 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c4ec9b0-13a5-49a8-b57b-b3f64e4316a7"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, PACERONE tablets, section 2; FDA label, NEXTERONE injection, section 2.2 (Tables 1 and 2) and section 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9108958-b8d7-4fba-87c3-9a32990de551"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy category is stated in the PACERONE or NEXTERONE labelling; both use the Pregnancy and Lactation Labeling Rule risk-summary format)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; paediatric safety and effectiveness are not established in either label)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the PACERONE or NEXTERONE labelling)"
+  ],
+  "notes": "The table stores this agent as 'Amiodarone'. The US label names are PACERONE (amiodarone hydrochloride) tablets and NEXTERONE (amiodarone hydrochloride) injection; both are covered because they are the same molecule with different routes, indications and dosing. Note that the US labels are for the treatment of life-threatening ventricular arrhythmias; the widely used supraventricular and atrial fibrillation indications are not part of these labels and are therefore not stated here. The historical brand name Cordarone could not be verified as a current DailyMed brand listing and has been omitted from brand_names; Pacerone and Nexterone are both verified brand products. The NEXTERONE SPL contains no boxed warning section, so the boxed warning text is taken from the PACERONE label, which does carry it."
+}

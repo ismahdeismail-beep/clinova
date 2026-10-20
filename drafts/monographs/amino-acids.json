@@ -1,0 +1,213 @@
+{
+  "name": "Amino Acids",
+  "existing_id": "876ca5fc-a6a6-4121-86c2-10af8cf5126a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amino acid injections are not a single drug but a class of parenteral nutrition formulations that supply a mixture of essential and non-essential amino acids as a nitrogen source for protein synthesis. In the adult formulation Aminosyn II the solution provides essential amino acids (isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine) and non-essential amino acids (alanine, arginine, aspartic acid, glutamic acid, histidine, proline, serine, N-acetyl-L-tyrosine and glycine), and it is labelled as 'a source of nitrogen in the nutritional support of patients with adequate stores of body fat, in whom, for short periods of time, oral nutrition cannot be tolerated, is undesirable, or inadequate'; 1 to 1.5 g/kg/day of total amino acids infused peripherally will reduce protein catabolism (FDA label, Aminosyn II Sulfite-Free, DESCRIPTION, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION). The paediatric formulation PREMASOL 10% additionally provides taurine and a soluble form of tyrosine (N-acetyl-L-tyrosine); its rationale is based on the observation of inadequate levels of essential amino acids in the plasma of infants receiving total parenteral nutrition (TPN) with conventional amino acid solutions, and the formulations were developed using pharmacokinetic multiple regression analysis relating amino acid intake to the resulting plasma amino acid concentrations (FDA label, PREMASOL 10%, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Aminosyn II Sulfite-Free (amino acid injection) infused with dextrose by peripheral vein: indicated as a source of nitrogen in the nutritional support of patients with adequate stores of body fat in whom, for short periods of time, oral nutrition cannot be tolerated, is undesirable, or inadequate; supplemental electrolytes, in accordance with the prescription of the attending physician, must be added to solutions without electrolytes (FDA label, Aminosyn II, INDICATIONS AND USAGE)",
+      "Aminosyn II: indicated for central vein infusion to prevent or reverse negative nitrogen balance in patients where the alimentary tract, by the oral, gastrostomy or jejunostomy route, cannot or should not be used and gastrointestinal absorption of protein is impaired; it may also be administered peripherally with dilute (5 to 10%) dextrose solution and intravenous fat emulsion as a source of nutritional support, which can help to preserve protein and reduce catabolism in stress conditions where oral intake is inadequate (FDA label, Aminosyn II, INDICATIONS AND USAGE)",
+      "PREMASOL 10% injection: indicated for the nutritional support of infants (including those of low birth weight) and young children requiring TPN via either central or peripheral infusion routes, to prevent nitrogen and weight loss or treat negative nitrogen balance where (1) the alimentary tract, by the oral, gastrostomy or jejunostomy route, cannot or should not be used or adequate protein intake is not feasible by these routes, (2) gastrointestinal absorption of protein is impaired, or (3) protein requirements are substantially increased as with extensive burns (FDA label, PREMASOL 10%, INDICATIONS AND USAGE)",
+      "Kenya Essential Medicines List 2023 lists 'Amino acids, solution for IV infusion' under section 33.1.1 parenteral feeds, with strengths 5-6% (100 mL bottle), 7% (500 mL bottle), 8% (500 mL bottle), 10% (500 mL bottle) and a glutamine-based formulation providing 21 g amino acid + 12 g glutamine per 100 mL, at level of use 4, with notes restricting specific strengths to specialised use: the glutamine-based formulation for patients on parenteral feeds with metabolic stress such as burns or polytrauma, 5-6% for infants with pancreatic failure and hepatic disease, 7% for renal failure/disease, 8% for hepatic failure/disease, and 10% for adult and paediatric patients with increased protein needs (KEML 2023, sections 33.1.1.1 and notes 587-591)"
+    ],
+    "contraindications": [
+      "Aminosyn II: this preparation should not be used in patients with hepatic coma or metabolic disorders involving impaired nitrogen utilization (FDA label, Aminosyn II, CONTRAINDICATIONS)",
+      "PREMASOL 10%: contraindicated in patients with untreated anuria, hepatic coma, inborn errors of amino acid metabolism including those involving branched chain amino acid metabolism such as maple syrup urine disease and isovaleric acidemia, or hypersensitivity to one or more amino acids present in the solution (FDA label, PREMASOL 10%, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Peripheral infusions: a 3.5% to 5% solution of amino acids without additives is slightly hypertonic; use of large peripheral veins, inline filters and slowing the rate of infusion may reduce the incidence of local venous irritation, and electrolyte additives should be spread throughout the day; irritating additive medications may need to be infused at another venous site; generalized flushing, fever and nausea have also been reported during peripheral infusions of amino acid solutions (FDA label, Aminosyn II, ADVERSE REACTIONS)",
+      "PREMASOL 10%: reactions reported in clinical studies as a result of infusion of the parenteral fluid were water weight gain, oedema, increase in BUN and mild acidosis; reactions which may occur because of the solution or the technique of administration include febrile response, infection at the site of injection, venous thrombosis or phlebitis extending from the site of injection, extravasation and hypervolaemia; local reactions at the infusion site (warm sensation, erythema, phlebitis and thrombosis) have been reported with peripheral amino acid infusions, especially if other substances are administered through the same site (FDA label, PREMASOL 10%, ADVERSE REACTIONS)",
+      "Metabolic complications reported with TPN administration: metabolic acidosis and alkalosis, hypophosphatemia, hypocalcaemia, osteoporosis, glycosuria, hyperglycaemia, hyperosmolar nonketotic states and dehydration, rebound hypoglycaemia, osmotic diuresis and dehydration, elevated liver enzymes, hypo- and hypervitaminosis, electrolyte imbalances and hyperammonaemia in paediatric patients (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "Central venous catheter complications: pneumothorax, haemothorax, hydrothorax, artery puncture and transection, injury to the brachial plexus, malposition of the catheter, formation of arteriovenous fistula, phlebitis, thrombosis, and air and catheter emboli; there is a constant risk of sepsis during administration of total parenteral nutrition (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "Electrolyte-related effects: symptoms may result from an excess or deficit of one or more of the ions present in the solution; phosphorus deficiency may lead to impaired tissue oxygenation and acute hemolytic anaemia, and relative to calcium, excessive phosphorus intake can precipitate hypocalcaemia with cramps, tetany and muscular hyperexcitability (FDA label, PREMASOL 10%, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "The total daily dose of the solution depends on the daily protein requirements and on the patient's metabolic and clinical response. Each 100 mL of Aminosyn II contains 10 g amino acids and 1.53 g nitrogen (10% formulation) or 15 g amino acids and 2.30 g nitrogen (15% formulation). For peripheral intravenous infusion, 1 to 1.5 g/kg/day of total amino acids will reduce protein catabolism; if desired, only one-half of an estimated daily amino acid requirement of 1.5 g/kg can be given on the first day. For central vein TPN, treatment may be started with 10% dextrose added to the calculated daily requirement of amino acids (1.5 g/kg for a metabolically stable patient), with the dextrose content gradually increased over the next few days to the estimated daily caloric need as the patient adapts; each gram of dextrose provides approximately 3.4 kcal and each gram of fat 9 kcal. The average depleted major surgical patient with complications requires between 2500 and 4000 kcal and between 12 and 24 grams of nitrogen per day. When hypertonic dextrose infusions are abruptly discontinued, a solution containing 5% dextrose should be administered to prevent rebound hypoglycaemia (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Clinical studies of Aminosyn II have not been performed to determine whether patients over 65 years of age respond differently from younger subjects, and other reported clinical experience has not identified differences in responses between elderly and younger patients. In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy; the product is known to be substantially excreted by the kidney and the risk for adverse reactions may be greater in patients with impaired renal function, so care should be taken in dose selection and it may be useful to monitor renal function (FDA label, Aminosyn II, GERIATRIC USE).",
+      "paediatric": "For central venous nutrition, hypertonic mixtures of amino acids and dextrose may be safely administered by continuous infusion through a central venous catheter with the tip located in the superior vena cava; initial infusion rates should be slow and gradually increased to the recommended 60-125 mL per kilogram of body weight per day, and if the administration rate falls behind schedule no attempt should be made to 'catch up' to the planned intake. Daily intake of amino acids and dextrose should be increased gradually to the maximum required dose as indicated by frequent determinations of glucose levels in blood and urine, the rate being governed in the first few days by the patient's glucose tolerance. For peripheral parenteral nutrition, the infusion may be diluted with sterile water for injection or 5-10% dextrose injection to prepare isotonic or slightly hypertonic solutions, and peripheral infusion must be accompanied by adequate caloric intake (FDA label, PREMASOL 10%, DOSAGE AND ADMINISTRATION - Central Venous Nutrition and Peripheral Parenteral Nutrition). For Aminosyn II, safety and effectiveness of solutions from flexible plastic containers in paediatric patients have not been well established, and the effect of infusion of amino acids without dextrose upon carbohydrate metabolism of children is not known (FDA label, Aminosyn II, PEDIATRIC USE and PRECAUTIONS - General). Hyperammonaemia is of special significance in infants, so blood ammonia levels must be measured frequently (FDA label, Aminosyn II, WARNINGS)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Tetracycline: because of its antianabolic activity, concurrent administration of tetracycline may reduce the potential effects of amino acids infused with dextrose as part of a parenteral feeding regimen (FDA label, Aminosyn II, Drug Interactions)",
+      "Electrolyte and other additives: irritating additive medications may need to be infused at another venous site and should not be added directly to the amino acid infusate; the electrolyte content of any additives introduced should be carefully considered and included in total input computations (FDA label, Aminosyn II, ADVERSE REACTIONS and CLINICAL PHARMACOLOGY; PREMASOL 10%, ADVERSE REACTIONS)",
+      "Phosphate-containing solutions: PREMASOL 10% may be admixed with solutions which contain phosphate or which have been supplemented with phosphate, but the presence of calcium and magnesium ions in an additive solution should be considered when phosphate is also present in order to avoid precipitation, and care must be taken to avoid incompatible admixtures - consult with the pharmacist (FDA label, PREMASOL 10%, DOSAGE AND ADMINISTRATION - Peripheral Parenteral Nutrition)",
+      "Insulin: in many patients, provision of adequate calories in the form of hypertonic dextrose may require the administration of exogenous insulin to prevent hyperglycaemia and glycosuria (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION)"
+    ],
+    "monitoring": "Frequent evaluation and laboratory determinations are necessary for proper monitoring of parenteral nutrition. Blood studies should include glucose, urea nitrogen, serum electrolytes, ammonia, cholesterol, acid-base balance, serum proteins, kidney and liver function tests, osmolarity and haemogram, with white blood count and blood cultures to be determined if indicated, and urinary osmolality and glucose determined as necessary (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION; PREMASOL 10%, WARNINGS). Do not withdraw venous blood for blood chemistries through the peripheral infusion site, as interference with estimations of nitrogen-containing substances may occur (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION). Measure blood ammonia frequently in infants because hyperammonaemia is of special significance in this group, and if symptoms of hyperammonaemia develop, amino acid administration should be discontinued and the clinical status re-evaluated (FDA label, Aminosyn II, WARNINGS; PREMASOL 10%, WARNINGS). Perform laboratory tests periodically and discontinue infusion if BUN levels exceed normal postprandial limits and continue to rise (FDA label, Aminosyn II, WARNINGS). Monitor glucose closely, since administration of glucose at a rate exceeding the patient's utilisation rate may lead to hyperglycaemia, coma and death (FDA label, Aminosyn II, PRECAUTIONS). Monitor serum lipids for evidence of essential fatty acid deficiency in patients maintained on fat-free TPN (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION). For central venous administration, verify catheter placement (X-ray is the best means of verifying placement), prepare solutions in a hospital pharmacy in a laminar flow hood using strict aseptic technique, and never allow administration time for a single container and set to exceed 24 hours, because of the constant risk of sepsis (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions). The determination of nitrogen balance and accurate daily body weights corrected for fluid balance are probably the best means of assessing individual protein requirements (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION).",
+    "patient_counselling": "Explain that this is nutritional support given intravenously because the alimentary tract cannot be used or is not absorbing enough protein, and that the amino acids provide protein building blocks (nitrogen) which must be given together with calories from dextrose and/or fat - without calories the body breaks down its own protein, so the infusion should not be stopped or the rate changed without advice (FDA label, Aminosyn II, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION; PRECAUTIONS - General). Instruct the patient to report fever, chills, shaking, redness, pain, swelling or drainage at the catheter or infusion site, as sepsis is a constant risk during administration of total parenteral nutrition (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions). Advise the patient to report nausea, vomiting, flushing, or any new confusion, drowsiness or difficulty concentrating, which may indicate hyperammonaemia, particularly in infants, and to attend all scheduled blood tests so that glucose, electrolytes, kidney and liver function and ammonia can be checked (FDA label, Aminosyn II, WARNINGS and DOSAGE AND ADMINISTRATION). Report rapid weight gain, ankle swelling, breathlessness or reduced urine output, which may indicate fluid or solute overload, and increased thirst, sweating or confusion, which may indicate hyperglycaemia (FDA label, Aminosyn II, WARNINGS and PRECAUTIONS; PREMASOL 10%, WARNINGS). For home or long-term use, stress the aseptic catheter care and the instruction never to exceed 24 hours of administration time for a single container and set (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions).",
+    "warnings": [
+      "Aluminium toxicity: this product contains aluminium that may be toxic; aluminium may reach toxic levels with prolonged parenteral administration if kidney function is impaired, and premature neonates are particularly at risk because their kidneys are immature and they require large amounts of calcium and phosphate solutions, which contain aluminium; research indicates that patients with impaired kidney function, including premature neonates, who receive parenteral levels of aluminium at greater than 4 to 5 mcg/kg/day accumulate aluminium at levels associated with central nervous system and bone toxicity, and tissue loading may occur even at lower rates of administration (FDA label, Aminosyn II, WARNINGS; PREMASOL 10%, WARNINGS)",
+      "Hyperammonaemia: administration of amino acid solutions to a patient with hepatic insufficiency may result in serum amino acid imbalances, metabolic alkalosis, prerenal azotaemia, hyperammonaemia, stupor and coma; hyperammonaemia is of special significance in infants, as it can result in mental retardation, so it is essential that blood ammonia levels be measured frequently in infants, and conservative doses of amino acids should be given dictated by the nutritional status of the patient, with amino acid administration discontinued and the clinical status re-evaluated if symptoms of hyperammonaemia develop (FDA label, Aminosyn II, WARNINGS; PREMASOL 10%, WARNINGS)",
+      "Rise in blood urea nitrogen: intravenous infusion of amino acids may induce a rise in BUN, especially in patients with impaired hepatic or renal function; appropriate laboratory tests should be performed periodically and the infusion discontinued if BUN levels exceed normal postprandial limits and continue to rise, noting that a modest rise in BUN normally occurs as a result of increased protein intake (FDA label, Aminosyn II, WARNINGS)",
+      "Fluid and solute overload: administration of intravenous solutions can cause fluid and/or solute overload resulting in dilution of serum electrolyte concentrations, overhydration, congested states or pulmonary oedema; the risk of dilutional states is inversely proportional to the electrolyte concentrations of the solutions and the risk of solute overload causing congested states with peripheral and pulmonary oedema is directly proportional to them (FDA label, PREMASOL 10%, WARNINGS)",
+      "Electrolyte content: solutions containing sodium ion should be used with great care, if at all, in patients with congestive heart failure, severe renal insufficiency and in clinical states in which there exists oedema with sodium retention; solutions containing potassium ion should be used with great care, if at all, in patients with hyperkalaemia, severe renal failure and in conditions in which potassium retention is present; solutions containing acetate ion should be used with great care in metabolic or respiratory alkalosis and in conditions in which there is an increased level or an impaired utilisation of acetate, such as severe hepatic insufficiency (FDA label, Aminosyn II, WARNINGS)",
+      "Hyperglycaemia: administration of glucose at a rate exceeding the patient's utilisation rate may lead to hyperglycaemia, coma and death (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "PREMASOL 10%: this injection is for compounding only, not for direct infusion, and safe, effective use of parenteral nutrition requires a knowledge of nutrition as well as clinical expertise in recognition and treatment of the complications which can occur (FDA label, PREMASOL 10%, WARNINGS)"
+    ],
+    "precautions": [
+      "Special care must be taken when administering glucose to provide calories in diabetic or pre-diabetic patients (FDA label, Aminosyn II, PRECAUTIONS - General)",
+      "Feeding regimens which include amino acids should be used with caution in patients with a history of renal disease, pulmonary disease, or with cardiac insufficiency so as to avoid excessive fluid accumulation, and nitrogen intake should be carefully monitored in patients with impaired renal function (FDA label, Aminosyn II, PRECAUTIONS - General)",
+      "For long-term total nutrition, or if a patient has inadequate fat stores, it is essential to provide adequate exogenous calories concurrently with the amino acids; concentrated dextrose solutions are an effective source of such calories and such strongly hypertonic nutrient solutions should be administered through an indwelling intravenous catheter with the tip located in the superior vena cava (FDA label, Aminosyn II, PRECAUTIONS - General)",
+      "Central venous infusion of amino acid solutions requires knowledge of nutrition as well as clinical expertise in recognition and treatment of complications, and it is essential that a carefully prepared protocol based on current medical practices is followed, preferably by an experienced team; solutions should ideally be prepared in the hospital pharmacy in a laminar flow hood using careful aseptic technique to avoid inadvertent touch contamination, and should be used promptly after mixing, with storage under refrigeration for a brief period, preferably less than 24 hours (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "Administration of amino acids in the presence of impaired renal function or gastrointestinal bleeding may augment an already elevated BUN, and patients with azotaemia from any cause should not be infused with amino acids without regard to total nitrogen intake (FDA label, PREMASOL 10%, WARNINGS)",
+      "Care must be taken to avoid incompatible admixtures; consult with the pharmacist, and consider calcium and magnesium content when phosphate is also present in order to avoid precipitation (FDA label, PREMASOL 10%, DOSAGE AND ADMINISTRATION - Peripheral Parenteral Nutrition)"
+    ],
+    "serious_adverse_reactions": [
+      "Hyperammonaemia with serum amino acid imbalances, metabolic alkalosis, prerenal azotaemia, stupor and coma, with a risk of mental retardation in infants (FDA label, Aminosyn II and PREMASOL 10%, WARNINGS)",
+      "Aluminium toxicity with central nervous system and bone toxicity, particularly in patients with impaired kidney function and premature neonates exposed to more than 4 to 5 mcg/kg/day (FDA label, Aminosyn II and PREMASOL 10%, WARNINGS)",
+      "Metabolic complications of TPN: metabolic acidosis and alkalosis, hypophosphatemia, hypocalcaemia, hyperglycaemia, hyperosmolar nonketotic states and dehydration, rebound hypoglycaemia, electrolyte imbalances and elevated liver enzymes (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "Catheter-related and infective complications: sepsis, catheter infection, venous thrombosis, phlebitis, pneumothorax, haemothorax, hydrothorax, brachial plexus injury and air or catheter embolism (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions)",
+      "Fluid overload, congested states and pulmonary oedema (FDA label, Aminosyn II, WARNINGS; PREMASOL 10%, WARNINGS)",
+      "Acute haemolytic anaemia from phosphorus deficiency, and hypocalcaemia with cramps, tetany and muscular hyperexcitability from phosphorus excess relative to calcium (FDA label, PREMASOL 10%, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Animal reproduction studies have not been conducted with PREMASOL 10% injection, and it is also not known whether PREMASOL 10% injection can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity (FDA label, PREMASOL 10%, Usage in Pregnancy). The Aminosyn II label contains no pregnancy section (FDA label, Aminosyn II - no pregnancy section present).",
+    "lactation_guidance": "Caution should be exercised when solutions from flexible plastic containers are administered to a nursing mother (FDA label, Aminosyn II, NURSING MOTHERS).",
+    "overdose": "In the event of overhydration or solute overload, re-evaluate the patient and institute appropriate corrective measures, referring to the WARNINGS and PRECAUTIONS sections of the label (FDA label, Aminosyn II, OVERDOSAGE).",
+    "pharmacokinetics": "Neither label provides a formal pharmacokinetic section; the label-based quantitative data are the composition and nitrogen content and the observed nitrogen-balance effect. Each 100 mL of Aminosyn II contains 10 g amino acids and 1.53 g nitrogen (10% formulation) or 15 g amino acids and 2.30 g nitrogen (15% formulation). For peripheral intravenous infusion, 1 to 1.5 g/kg/day of total amino acids will reduce protein catabolism, and infusion of carbohydrate or lipid does not reduce the nitrogen-sparing effect of intravenous amino acid infusions at this dose. The determination of nitrogen balance and accurate daily body weights corrected for fluid balance are probably the best means of assessing individual protein requirements. For PREMASOL 10%, the formulations were developed through the application of specific pharmacokinetic multiple regression analysis relating amino acid intake to the resulting plasma amino acid concentrations, and clinical studies in infants and young children requiring TPN showed that infusion of a 10% amino acids injection with a cysteine hydrochloride admixture resulted in normalisation of the plasma amino acid concentrations, with weight gains, nitrogen balance and serum protein concentrations consistent with an improving nutritional status (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION; PREMASOL 10%, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Amino acids are a nitrogen source, not a complete nutrition: without adequate non-protein calories from dextrose and fat, infused amino acids are oxidised for energy and the patient still catabolises protein, so calories must be supplied concurrently (FDA label, Aminosyn II, PRECAUTIONS - General and DOSAGE AND ADMINISTRATION).",
+      "Watch the aluminium load: patients with impaired kidney function, including premature neonates, accumulate aluminium at parenteral doses above 4 to 5 mcg/kg/day, with central nervous system and bone toxicity (FDA label, Aminosyn II and PREMASOL 10%, WARNINGS).",
+      "Hyperammonaemia is the paediatric watchpoint: measure blood ammonia frequently in infants, give conservative doses dictated by nutritional status, and stop amino acids if symptoms of hyperammonaemia develop (FDA label, Aminosyn II and PREMASOL 10%, WARNINGS).",
+      "Route determines formulation: a 3.5% to 5% amino acid solution is only slightly hypertonic and can be given peripherally with 5 to 10% dextrose, whereas hypertonic amino acid and dextrose mixtures require central venous access with the catheter tip in the superior vena cava (FDA label, Aminosyn II, PRECAUTIONS and DOSAGE AND ADMINISTRATION; PREMASOL 10%, DOSAGE AND ADMINISTRATION).",
+      "Never exceed 24 hours of administration time for a single container and set, and prepare admixtures in a laminar flow hood, because the constant risk of sepsis is the main serious hazard of TPN (FDA label, Aminosyn II, PRECAUTIONS - Special Precautions for Central Venous Infusions).",
+      "Kenya list note: the Kenyan essential medicines list restricts the 5-6% strength to infants with pancreatic failure and hepatic disease, the 7% to renal failure or disease, the 8% to hepatic failure or disease, the 10% to increased protein needs, and the glutamine-based 21 g + 12 g per 100 mL formulation to metabolic stress such as burns and polytrauma (KEML 2023, notes 587-591)."
+    ],
+    "brand_names": ["Aminosyn II", "Premasol"],
+    "black_box_warnings": null,
+    "renal_dose_adjustment": "No numerical renal dose adjustment is specified in either label. Nitrogen intake should be carefully monitored in patients with impaired renal function, administration of amino acids in the presence of impaired renal function may augment an already elevated BUN, and patients with azotaemia from any cause should not be infused with amino acids without regard to total nitrogen intake. Intravenous infusion may induce a rise in BUN, especially in patients with impaired hepatic or renal function, and the infusion should be discontinued if BUN levels exceed normal postprandial limits and continue to rise. Aluminium accumulation at parenteral doses above 4 to 5 mcg/kg/day is a specific hazard in patients with impaired kidney function, including premature neonates (FDA label, Aminosyn II, PRECAUTIONS - General and WARNINGS; PREMASOL 10%, WARNINGS). The Kenya Essential Medicines List 2023 restricts the 7% (500 mL) amino acid formulation to specialised use for the management of renal failure or disease in adults and children (KEML 2023, note 589).",
+    "hepatic_dose_adjustment": "No numerical hepatic dose adjustment is specified in either label. Hepatic coma is a contraindication, and administration of amino acid solutions to a patient with hepatic insufficiency may result in serum amino acid imbalances, metabolic alkalosis, prerenal azotaemia, hyperammonaemia, stupor and coma, so conservative doses dictated by nutritional status are advised with frequent monitoring of blood ammonia. Acetate-containing solutions should be used with great care in severe hepatic insufficiency (FDA label, Aminosyn II, CONTRAINDICATIONS and WARNINGS; PREMASOL 10%, CONTRAINDICATIONS and WARNINGS). The Kenya Essential Medicines List 2023 restricts the 8% (500 mL) amino acid formulation to specialised use for the management of hepatic failure or disease in adults and children, and the 5-6% (100 mL) formulation to specialised use in infants with pancreatic failure and hepatic disease (KEML 2023, notes 588 and 590).",
+    "administration_instructions": "PREMASOL 10% is for compounding only and not for direct infusion: the pharmacy bulk package is to be used only in a suitable work area such as a laminar flow hood or an equivalent clean air compounding area; after the container closure has been penetrated, withdrawal of contents should be completed without delay, contents should be maintained at room temperature (25 degrees C) and dispensed within 4 hours, and intravenous fat emulsion should not be administered in PVC containers that use DEHP as a plasticiser because the fat emulsion facilitates leaching of DEHP (FDA label, PREMASOL 10%, Directions for use of VIAFLEX plastic Pharmacy Bulk Package container). Parenteral nutrition solutions should be used promptly after mixing; any storage should be under refrigeration and limited to a brief period, preferably less than 24 hours, and administration time for a single container and set should never exceed 24 hours. Parenteral drug products should be inspected visually for particulate matter and discolouration prior to administration; colour variation from pale yellow to yellow is normal and does not alter efficacy, and some opacity of the plastic due to moisture absorption during sterilisation is normal. Peripheral infusion requires dilution with 5 to 10% dextrose and adequate caloric intake; central infusion of hypertonic mixtures requires a catheter with the tip in the superior vena cava and slowly increasing rates (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION and PRECAUTIONS; PREMASOL 10%, DOSAGE AND ADMINISTRATION and Directions for use). Do not withdraw venous blood for blood chemistries through the peripheral infusion site (FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Aminosyn II Sulfite-Free (amino acid injection) (ICU Medical), DESCRIPTION, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION; FDA label, PREMASOL 10% (amino acid injection) (Baxter), CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Aminosyn II, INDICATIONS AND USAGE; FDA label, PREMASOL 10%, INDICATIONS AND USAGE; Kenya Essential Medicines List 2023, section 33.1.1.1 Amino acids solution for IV infusion and notes 587-591",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Aminosyn II, CONTRAINDICATIONS; FDA label, PREMASOL 10%, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Aminosyn II, ADVERSE REACTIONS and PRECAUTIONS - Special Precautions for Central Venous Infusions; FDA label, PREMASOL 10%, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION, GERIATRIC USE, PEDIATRIC USE and PRECAUTIONS - General; FDA label, PREMASOL 10%, DOSAGE AND ADMINISTRATION (Central Venous Nutrition; Peripheral Parenteral Nutrition)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Aminosyn II, Drug Interactions, ADVERSE REACTIONS, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION; FDA label, PREMASOL 10%, ADVERSE REACTIONS and DOSAGE AND ADMINISTRATION - Peripheral Parenteral Nutrition",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION, WARNINGS and PRECAUTIONS - Special Precautions for Central Venous Infusions; FDA label, PREMASOL 10%, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Aminosyn II, INDICATIONS AND USAGE, WARNINGS, DOSAGE AND ADMINISTRATION and PRECAUTIONS - Special Precautions for Central Venous Infusions; FDA label, PREMASOL 10%, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Aminosyn II, WARNINGS and PRECAUTIONS; FDA label, PREMASOL 10%, WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Aminosyn II, PRECAUTIONS - General and Special Precautions for Central Venous Infusions; FDA label, PREMASOL 10%, WARNINGS and DOSAGE AND ADMINISTRATION - Peripheral Parenteral Nutrition",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Aminosyn II, WARNINGS, PRECAUTIONS - Special Precautions for Central Venous Infusions and ADVERSE REACTIONS; FDA label, PREMASOL 10%, WARNINGS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the Aminosyn II or PREMASOL 10% labels; the products are administered intravenously and are used for patients in whom oral nutrition cannot be tolerated or is inadequate (FDA label, Aminosyn II, INDICATIONS AND USAGE)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA pregnancy letter category is stated in the Aminosyn II or PREMASOL 10% labels; PREMASOL addresses pregnancy under 'Usage in Pregnancy' and Aminosyn II has no pregnancy section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, PREMASOL 10%, Usage in Pregnancy; absence of a pregnancy section in the Aminosyn II label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Aminosyn II, NURSING MOTHERS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Aminosyn II, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION (amino acid and nitrogen content, nitrogen-sparing dose, nitrogen balance and body weight assessment); FDA label, PREMASOL 10%, CLINICAL PHARMACOLOGY (pharmacokinetic multiple regression analysis, plasma amino acid normalisation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Aminosyn II, INDICATIONS AND USAGE, PRECAUTIONS - General and Special Precautions for Central Venous Infusions, WARNINGS and DOSAGE AND ADMINISTRATION; FDA label, PREMASOL 10%, WARNINGS and DOSAGE AND ADMINISTRATION; Kenya Essential Medicines List 2023, notes 587-591",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AMINOSYN II (ICU Medical) and PREMASOL 10% (Baxter) listed on DailyMed as brand products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the Aminosyn II or PREMASOL 10% labels; the aluminium toxicity and hyperammonaemia hazards are presented in WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Aminosyn II, PRECAUTIONS - General and WARNINGS; FDA label, PREMASOL 10%, WARNINGS; Kenya Essential Medicines List 2023, note 589",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b426208-f090-4650-86c3-89040ba45c2d"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Aminosyn II, CONTRAINDICATIONS and WARNINGS; FDA label, PREMASOL 10%, CONTRAINDICATIONS and WARNINGS; Kenya Essential Medicines List 2023, notes 588 and 590",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Aminosyn II, DOSAGE AND ADMINISTRATION and PRECAUTIONS - Special Precautions for Central Venous Infusions; FDA label, PREMASOL 10%, DOSAGE AND ADMINISTRATION and Directions for use of VIAFLEX plastic Pharmacy Bulk Package container",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9afdcc3e-0d06-47f4-86ca-40da48b2b02b"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023 (Ministry of Health, Republic of Kenya), section 33.1.1.1 Amino acids solution for IV infusion, strengths and notes 587-591",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy letter category is stated in either label)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "black_box_warnings (no boxed warning appears in either label; the aluminium toxicity and hyperammonaemia hazards are in WARNINGS)"
+  ],
+  "notes": "'Amino Acids' is a nutrition/parenteral formulation class rather than a single drug, so no single authoritative label exists. Content is sourced from two FDA labels for parenteral amino acid injections that together cover the class: AMINOSYN II Sulfite-Free (amino acid injection, ICU Medical) for adult/general use and for the peripheral-versus-central route distinction, and PREMASOL 10% (amino acid injection, Baxter) for the paediatric formulation (it also adds taurine and N-acetyl-L-tyrosine and is dosed as 60-125 mL/kg/day for central venous nutrition). The Kenya Essential Medicines List 2023 (national list, Ministry of Health) is included for national context, listing amino acids solution for IV infusion at strengths 5-6%, 7%, 8%, 10% and a glutamine-based 21 g amino acid + 12 g glutamine per 100 mL, with notes restricting several strengths to specialised use (renal failure/disease, hepatic failure/disease, increased protein needs, metabolic stress). Because the class spans products with different compositions, contraindications, strengths and routes, no single strength or regimen is presented as the dose for 'Amino Acids'; the numeric content is product-specific and labelled as such in every field. Both labels are pharmacy bulk packages for compounding under pharmacy control, not direct-infusion products, and neither contains a formal patient counselling section, so the counselling text is derived from the warnings, precautions and monitoring content of the labels."
+}

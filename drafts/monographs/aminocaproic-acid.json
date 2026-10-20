@@ -1,0 +1,204 @@
+{
+  "name": "Aminocaproic Acid",
+  "existing_id": "932266a5-762a-4e6a-bc00-26bff0055281",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aminocaproic acid (6-aminohexanoic acid) is an inhibitor of fibrinolysis. Its fibrinolysis-inhibitory effects appear to be exerted principally via inhibition of plasminogen activators and, to a lesser degree, through antiplasmin activity; it inhibits both the action of plasminogen activators and, to a lesser degree, plasmin activity (AMICAR (aminocaproic acid) label, CLINICAL PHARMACOLOGY and PRECAUTIONS: General).",
+    "indications": [
+      "Enhancing hemostasis when fibrinolysis contributes to bleeding. Fibrinolytic bleeding may frequently be associated with surgical complications following heart surgery (with or without cardiac bypass procedures) and portacaval shunt; hematological disorders such as amegakaryocytic thrombocytopenia (accompanying aplastic anemia); acute and life-threatening abruptio placentae; hepatic cirrhosis; and neoplastic disease such as carcinoma of the prostate, lung, stomach, and cervix (AMICAR label, INDICATIONS AND USAGE).",
+      "Urinary fibrinolysis: symptomatic of such complications is surgical hematuria (following prostatectomy and nephrectomy) or nonsurgical hematuria (accompanying polycystic or neoplastic diseases of the genitourinary system) (AMICAR label, INDICATIONS AND USAGE).",
+      "Intravenous formulation: life-threatening urinary fibrinolytic bleeding associated with severe trauma, anoxia and shock (Hospira Aminocaproic Acid Injection, USP label, INDICATIONS AND USAGE).",
+      "In life-threatening situations, transfusion of appropriate blood products and other emergency measures may be required in addition to aminocaproic acid (AMICAR label, INDICATIONS AND USAGE)."
+    ],
+    "contraindications": [
+      "Should not be used when there is evidence of an active intravascular clotting process (AMICAR label, CONTRAINDICATIONS).",
+      "Must not be used in the presence of disseminated intravascular coagulation (DIC) without concomitant heparin (AMICAR label, CONTRAINDICATIONS).",
+      "When it is uncertain whether the cause of bleeding is primary fibrinolysis or DIC, that distinction must be made before administering aminocaproic acid (AMICAR label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "General: edema, headache, malaise (AMICAR label, ADVERSE REACTIONS).",
+      "Hypersensitivity reactions: allergic and anaphylactoid reactions, anaphylaxis (AMICAR label, ADVERSE REACTIONS).",
+      "Cardiovascular: bradycardia, hypotension, peripheral ischemia, thrombosis (AMICAR label, ADVERSE REACTIONS).",
+      "Gastrointestinal: abdominal pain, diarrhea, nausea, vomiting (AMICAR label, ADVERSE REACTIONS).",
+      "Hematologic: agranulocytosis, coagulation disorder, leukopenia, thrombocytopenia (AMICAR label, ADVERSE REACTIONS).",
+      "Musculoskeletal: increased CPK, muscle weakness, myalgia, myopathy, myositis, rhabdomyolysis (AMICAR label, ADVERSE REACTIONS).",
+      "Neurologic: confusion, convulsions, delirium, dizziness, hallucinations, intracranial hypertension, stroke, syncope (AMICAR label, ADVERSE REACTIONS).",
+      "Respiratory: dyspnea, nasal congestion, pulmonary embolism (AMICAR label, ADVERSE REACTIONS).",
+      "Skin: pruritus, rash (AMICAR label, ADVERSE REACTIONS).",
+      "Special senses: tinnitus, decreased vision, watery eyes (AMICAR label, ADVERSE REACTIONS).",
+      "Urogenital: increased BUN, renal failure (AMICAR label, ADVERSE REACTIONS).",
+      "Injection formulation: local reactions at the injection site, including pain and necrosis (Hospira Aminocaproic Acid Injection label, ADVERSE REACTIONS).",
+      "Dry ejaculation has been reported during treatment; these reports came only from hemophilia patients who received the drug after dental surgical procedures and resolved in all patients within 24 to 48 hours of completing therapy (AMICAR label, ADVERSE REACTIONS)."
+    ],
+    "dosage": {
+      "adult": "Oral (tablets 500 mg or 1000 mg; oral solution 0.25 g/mL): for acute bleeding syndromes due to elevated fibrinolytic activity, it is suggested that 5 g (5 x 1000 mg tablets, 10 x 500 mg tablets, or 20 mL of oral solution) be administered during the first hour of treatment, followed by a continuing rate of 1 g per hour (1 x 1000 mg tablet, 2 x 500 mg tablets, or 5 mL of oral solution [1.25 g] per hour); this would ordinarily be continued for about 8 hours or until the bleeding situation has been controlled (AMICAR label, DOSAGE AND ADMINISTRATION). Intravenous: 16 to 20 mL (4 to 5 g) of aminocaproic acid in 250 mL of diluent administered by infusion during the first hour of treatment, followed by a continuing infusion at 4 mL (1 g) per hour in 50 mL of diluent, for about 8 hours or until the bleeding situation has been controlled (Hospira Aminocaproic Acid Injection label, DOSAGE AND ADMINISTRATION). An identical dosage regimen may be followed with tablets or oral solution (AMICAR label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "The AMICAR and Aminocaproic Acid Injection labels do not provide a geriatric-specific dosing recommendation or an age-based dose adjustment; the oral absorption, distribution and elimination data quoted in the labels are stated for adults (AMICAR label, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION). The labels do note that total body clearance of aminocaproic acid is markedly decreased in patients with severe renal failure, which is more likely to be encountered in older patients (AMICAR label, OVERDOSAGE).",
+      "paediatric": "Safety and effectiveness in pediatric patients have not been established (AMICAR label, PRECAUTIONS: Pediatric Use; Hospira Aminocaproic Acid Injection label, PRECAUTIONS: Pediatric Use). No pediatric dose is specified in the labelling."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Aminocaproic acid should not be administered with Factor IX Complex concentrates or Anti-Inhibitor Coagulant concentrates, as the risk of thrombosis may be increased (AMICAR label, PRECAUTIONS: General; Hospira Aminocaproic Acid Injection label, PRECAUTIONS: General).",
+      "Drug laboratory test interaction: prolongation of the template bleeding time has been reported during continuous intravenous infusion at dosages exceeding 24 g/day; in vitro, aminocaproic acid at concentrations of 7.4 mMol/L (0.97 mg/mL) and greater inhibits ADP- and collagen-induced platelet aggregation, the release of ATP and serotonin, and the binding of fibrinogen to platelets (AMICAR label, PRECAUTIONS: Drug Laboratory Test Interactions)."
+    ],
+    "monitoring": "Do not administer aminocaproic acid without a definite diagnosis and/or laboratory finding indicative of hyperfibrinolysis (hyperplasminemia); when the diagnosis is uncertain, distinguish primary fibrinolysis from DIC using platelet count (usually decreased in DIC, normal in primary fibrinolysis), the protamine paracoagulation test (positive in DIC) and the euglobulin clot lysis test (abnormal in primary fibrinolysis, normal in DIC) (AMICAR label, PRECAUTIONS: General and CONTRAINDICATIONS). Monitor creatine phosphokinase (CPK) in patients on long-term therapy and stop administration if CPK rises (AMICAR label, WARNINGS). Monitor for signs of thrombosis, hypotension, bradycardia and arrhythmia during and after intravenous administration, and monitor renal function and BUN given the reported cases of renal failure (AMICAR label, WARNINGS, PRECAUTIONS: General and ADVERSE REACTIONS).",
+    "patient_counselling": null,
+    "warnings": [
+      "Upper urinary tract bleeding: aminocaproic acid administration has been known to cause intrarenal obstruction in the form of glomerular capillary thrombosis or clots in the renal pelvis and ureters; for this reason it should not be used in hematuria of upper urinary tract origin unless the possible benefits outweigh the risk (AMICAR label, WARNINGS).",
+      "Skeletal muscle weakness with necrosis of muscle fibers has been rarely reported following prolonged administration, ranging from mild myalgias with weakness and fatigue to a severe proximal myopathy with rhabdomyolysis, myoglobinuria and acute renal failure; muscle enzymes (especially CPK) are elevated, CPK levels should be monitored in patients on long-term therapy, and administration should be stopped if a rise in CPK is noted; resolution follows discontinuation but the syndrome may recur if the drug is restarted (AMICAR label, WARNINGS).",
+      "The possibility of cardiac muscle damage should be considered when skeletal myopathy occurs; one case of cardiac and hepatic lesions observed in man has been reported in a patient who received 2 g every 6 hours for a total dose of 26 g (AMICAR label, WARNINGS).",
+      "Inhibition of fibrinolysis by aminocaproic acid may theoretically result in clotting or thrombosis (AMICAR label, PRECAUTIONS: General).",
+      "Subendocardial hemorrhages were observed in dogs given intravenous infusions at 0.2 times the maximum human therapeutic dose and in monkeys at 8 times that dose; fatty degeneration of the myocardium was reported in dogs given intravenous doses at 0.8 to 3.3 times and in monkeys at 6 times the maximum human therapeutic dose (AMICAR label, WARNINGS)."
+    ],
+    "precautions": [
+      "The drug should NOT be administered without a definite diagnosis and/or laboratory finding indicative of hyperfibrinolysis (hyperplasminemia) (AMICAR label, PRECAUTIONS: General).",
+      "Rapid intravenous administration should be avoided since it may induce hypotension, bradycardia and/or arrhythmia (Hospira Aminocaproic Acid Injection label, PRECAUTIONS: General).",
+      "Thrombophlebitis, a possibility with all intravenous therapy, should be guarded against by strict attention to proper insertion of the needle and fixation of its position (Hospira Aminocaproic Acid Injection label, PRECAUTIONS: General).",
+      "Reports have appeared in the literature of an increased incidence of certain neurological deficits such as hydrocephalus, cerebral ischemia or cerebral vasospasm associated with the use of antifibrinolytic agents in the treatment of subarachnoid hemorrhage; all of these events have also been described as part of the natural course of subarachnoid hemorrhage or as a consequence of diagnostic procedures such as angiography, and drug relatedness remains unclear (AMICAR label, PRECAUTIONS: General).",
+      "Prolongation of the template bleeding time has been reported during continuous intravenous infusion at dosages exceeding 24 g/day (AMICAR label, PRECAUTIONS: Drug Laboratory Test Interactions).",
+      "Long-term animal studies to evaluate carcinogenic potential and studies to evaluate mutagenic potential have not been conducted; dietary administration of an equivalent of the maximum human therapeutic dose to rats of both sexes impaired fertility, as evidenced by decreased implantations, litter sizes and number of pups born (AMICAR label, PRECAUTIONS: Carcinogenesis, Mutagenesis, Impairment of Fertility)."
+    ],
+    "serious_adverse_reactions": [
+      "Rhabdomyolysis with myoglobinuria and acute renal failure following prolonged administration (AMICAR label, WARNINGS and ADVERSE REACTIONS).",
+      "Anaphylaxis and anaphylactoid hypersensitivity reactions (AMICAR label, ADVERSE REACTIONS).",
+      "Intrarenal obstruction (glomerular capillary thrombosis or clots in the renal pelvis and ureters) in patients with upper urinary tract bleeding (AMICAR label, WARNINGS).",
+      "Convulsions, intracranial hypertension, stroke and delirium (AMICAR label, ADVERSE REACTIONS).",
+      "Thrombosis, pulmonary embolism and peripheral ischemia (AMICAR label, ADVERSE REACTIONS).",
+      "Agranulocytosis, leukopenia and thrombocytopenia (AMICAR label, ADVERSE REACTIONS).",
+      "Renal failure (AMICAR label, ADVERSE REACTIONS)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (AMICAR label, PRECAUTIONS: Pregnancy). FDA pregnancy categories are obsolete and are reported here only because the label still states them.",
+    "pregnancy_guidance": "Animal reproduction studies have not been conducted with aminocaproic acid, and it is not known whether aminocaproic acid can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity; aminocaproic acid should be given to a pregnant woman only if clearly needed (AMICAR label, PRECAUTIONS: Pregnancy).",
+    "lactation_guidance": "It is not known whether aminocaproic acid is excreted in human milk; because many drugs are excreted in human milk, caution should be exercised when aminocaproic acid is administered to a nursing woman (AMICAR label, PRECAUTIONS: Nursing Mothers).",
+    "overdose": "A few cases of acute overdosage with intravenous aminocaproic acid have been reported, with effects ranging from no reaction to transient hypotension to severe acute renal failure leading to death; one patient with a history of brain tumor and seizures experienced seizures after receiving an 8 gram bolus injection. The single dose causing symptoms of overdosage or considered life-threatening is unknown: patients have tolerated doses as high as 100 grams, while acute renal failure has been reported following a dose of 12 grams. No treatment for overdosage is known, although evidence exists that aminocaproic acid is removed by hemodialysis and may be removed by peritoneal dialysis; total body clearance is markedly decreased in patients with severe renal failure (AMICAR label, OVERDOSAGE).",
+    "pharmacokinetics": "In adults, oral absorption appears to be a zero-order process with an absorption rate of 5.2 g/hr and a mean lag time of 10 minutes; after a single oral dose of 5 g absorption was complete (F = 1), with mean +/- SD peak plasma concentrations of 164 +/- 28 mcg/mL reached within 1.2 +/- 0.45 hours. The apparent volume of distribution after oral administration was 23.1 +/- 6.6 L and after intravenous administration 30.0 +/- 8.2 L; after prolonged administration aminocaproic acid distributes throughout extravascular and intravascular compartments, penetrating human red blood cells and other tissue cells. Renal excretion is the primary route of elimination: 65% of the dose is recovered in the urine as unchanged drug and 11% of the dose appears as the metabolite adipic acid; renal clearance of 116 mL/min approximates endogenous creatinine clearance, total body clearance is 169 mL/min, and the terminal elimination half-life is approximately 2 hours (AMICAR label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Distinguish primary fibrinolysis from DIC before giving the drug: platelet count is usually decreased in DIC but normal in primary fibrinolysis; the protamine paracoagulation test is positive in DIC; the euglobulin clot lysis test is abnormal in primary fibrinolysis (AMICAR label, CONTRAINDICATIONS).",
+      "Never give aminocaproic acid without a laboratory diagnosis of hyperfibrinolysis - if DIC cannot be excluded, the drug must not be used without concomitant heparin (AMICAR label, PRECAUTIONS: General and CONTRAINDICATIONS).",
+      "Monitor CPK during prolonged therapy and stop the drug if it rises, because skeletal myopathy with rhabdomyolysis can recur if the drug is restarted (AMICAR label, WARNINGS).",
+      "A 5 g bolus followed by 1 to 1.25 g/hour achieves and sustains the plasma concentration of 0.13 mg/mL needed to inhibit fibrinolysis; the concentrations that inhibit platelet function in vitro (0.97 mg/mL and greater) are considerably higher than those achieved clinically in patients with normal renal function, but higher plasma concentrations may occur in patients with severe renal failure (AMICAR label, PRECAUTIONS: Drug Laboratory Test Interactions).",
+      "Oral tablets, oral solution and intravenous injection may be dosed on the same total regimen (5 g in the first hour, then 1 g/hour); the injection must be given by infusion, never rapidly undiluted, because rapid intravenous administration may cause hypotension, bradycardia and arrhythmia (AMICAR label and Hospira Aminocaproic Acid Injection label, DOSAGE AND ADMINISTRATION and PRECAUTIONS: General).",
+      "This is a haemostatic (antifibrinolytic) agent, not a cardiovascular drug - the database row for this entry is currently classified as 'Cardiovascular agent', which is incorrect."
+    ],
+    "brand_names": ["Amicar"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the AMICAR or Aminocaproic Acid Injection labelling. The labels do state that higher plasma concentrations of aminocaproic acid may occur in patients with severe renal failure (PRECAUTIONS: Drug Laboratory Test Interactions), that total body clearance is markedly decreased in patients with severe renal failure (OVERDOSAGE), and that renal excretion is the primary route of elimination (CLINICAL PHARMACOLOGY).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Intravenous: administer by infusion using the usual compatible intravenous vehicles (e.g. Sterile Water for Injection, Sodium Chloride for Injection, 5% Dextrose or Ringer's Injection); although Sterile Water for Injection is compatible for intravenous injection, the resultant solution is hypo-osmolar, and rapid injection of aminocaproic acid injection undiluted into a vein is NOT recommended; inspect parenteral products visually for particulate matter and discoloration before administration, do not administer unless the solution is clear and the seal is intact, and discard the unused portion (Hospira Aminocaproic Acid Injection label, DOSAGE AND ADMINISTRATION). Oral: administer tablets or oral solution according to the regimen in DOSAGE AND ADMINISTRATION (AMICAR label, DOSAGE AND ADMINISTRATION)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, AMICAR (aminocaproic acid) tablet/oral solution (Abbott), CLINICAL PHARMACOLOGY and PRECAUTIONS: General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, AMICAR (aminocaproic acid), INDICATIONS AND USAGE; Hospira Aminocaproic Acid Injection, USP, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, AMICAR (aminocaproic acid), CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, AMICAR (aminocaproic acid), ADVERSE REACTIONS; Hospira Aminocaproic Acid Injection, USP, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c5bc1dd-e9ec-44c1-9281-67ad482315d9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, AMICAR (aminocaproic acid), DOSAGE AND ADMINISTRATION, PRECAUTIONS: Pediatric Use, CLINICAL PHARMACOLOGY, OVERDOSAGE; Hospira Aminocaproic Acid Injection, USP, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: General and PRECAUTIONS: Drug Laboratory Test Interactions; Hospira Aminocaproic Acid Injection, USP, PRECAUTIONS: General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: General, CONTRAINDICATIONS, WARNINGS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, AMICAR (aminocaproic acid), WARNINGS and PRECAUTIONS: General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: General, PRECAUTIONS: Drug Laboratory Test Interactions, PRECAUTIONS: Carcinogenesis/Mutagenesis/Impairment of Fertility; Hospira Aminocaproic Acid Injection, USP, PRECAUTIONS: General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, AMICAR (aminocaproic acid), WARNINGS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: Pregnancy (Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, AMICAR (aminocaproic acid), OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, AMICAR (aminocaproic acid), CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, AMICAR (aminocaproic acid), CONTRAINDICATIONS, PRECAUTIONS: General, PRECAUTIONS: Drug Laboratory Test Interactions, WARNINGS, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Amicar (aminocaproic acid) tablet and oral solution listed on DailyMed as a brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the AMICAR (aminocaproic acid) or Aminocaproic Acid Injection, USP labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the AMICAR or Aminocaproic Acid Injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c5bc1dd-e9ec-44c1-9281-67ad482315d9"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, AMICAR (aminocaproic acid), PRECAUTIONS: Drug Laboratory Test Interactions, OVERDOSAGE and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b08095-2acc-47ef-a426-b68c7d95de95"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Hospira Aminocaproic Acid Injection, USP, DOSAGE AND ADMINISTRATION and PRECAUTIONS: General; AMICAR label, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c5bc1dd-e9ec-44c1-9281-67ad482315d9"
+    }
+  ],
+  "unsourced_fields": [
+    "patient_counselling (the AMICAR and Aminocaproic Acid Injection labels contain no patient information / medication guide section, so no patient counselling text could be sourced)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; paediatric safety and effectiveness are not established)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the AMICAR or Aminocaproic Acid Injection labels)"
+  ],
+  "notes": "The table stores this agent as 'Aminocaproic Acid'. The INN/BAN name is aminocaproic acid (also written epsilon-aminocaproic acid or EACA); the US brand product is AMICAR (Abbott), supplied as 500 mg and 1000 mg tablets and a 0.25 g/mL oral solution, with the same molecule also marketed as a sterile injection (Hospira, American Regent) for intravenous infusion. Both routes are covered here because they are dosed on the same regimen but administered differently and have slightly different adverse reaction lists (injection-site reactions for the injection). The database row currently carries drug_class 'Cardiovascular agent', which is incorrect for this antifibrinolytic/haemostatic agent; this has been left unchanged because drafts are files only. FDA pregnancy category C is obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and is reported only because the label still states it. The drug is also present in numerous toothpastes as an oral mucosal haemostatic, but no oral mucosal product label was used as a source for this monograph."
+}

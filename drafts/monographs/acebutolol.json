@@ -1,0 +1,218 @@
+{
+  "name": "Acebutolol",
+  "existing_id": "091bdba2-0c3d-453d-9a15-3c569e2d2423",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Acebutolol is a selective, hydrophilic beta-adrenoceptor blocking agent with mild intrinsic sympathomimetic activity (ISA). Clinical studies have demonstrated beta-1 blocking activity at the recommended doses by reduction in resting heart rate and decrease in exercise-induced tachycardia, reduction in cardiac output at rest and after exercise, reduction of systolic and diastolic blood pressures at rest and post exercise, and inhibition of isoproterenol-induced tachycardia. The beta-1 selectivity is dose-dependent and is not absolute: it has less antagonistic effect on peripheral vascular beta-2 receptors at rest and after epinephrine stimulation than non-selective beta-antagonists, and in single-dose studies in asthmatics low doses of acebutolol produced less bronchoconstriction and less reduction of beta-2 agonist bronchodilating effects than non-selective agents such as propranolol, but more than atenolol. ISA has been observed in man, shown by a slightly smaller (about 3 beats per minute) decrease in resting heart rate than with equivalent beta-blocking doses of propranolol, metoprolol or atenolol. Acebutolol delays AV conduction time and increases the refractoriness of the AV node without significantly affecting sinus node recovery time, atrial refractory period or HV conduction time, and its membrane-stabilizing effect is not manifest at clinical doses (FDA acebutolol hydrochloride capsules label, DESCRIPTION and CLINICAL PHARMACOLOGY, Pharmacodynamics).",
+    "indications": [
+      "Management of hypertension in adults; may be used alone or in combination with other antihypertensive agents, especially thiazide-type diuretics (FDA acebutolol hydrochloride capsules label, INDICATIONS AND USAGE)",
+      "Management of ventricular premature beats; acebutolol reduces the total number of premature beats as well as the number of paired and multiform ventricular ectopic beats, and R-on-T beats (FDA acebutolol hydrochloride capsules label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Persistently severe bradycardia (FDA acebutolol hydrochloride capsules label, CONTRAINDICATIONS)",
+      "Second- and third-degree heart block (FDA acebutolol hydrochloride capsules label, CONTRAINDICATIONS)",
+      "Overt cardiac failure (FDA acebutolol hydrochloride capsules label, CONTRAINDICATIONS)",
+      "Cardiogenic shock (FDA acebutolol hydrochloride capsules label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Acebutolol is generally well tolerated in properly selected patients; most adverse reactions have been mild, have not required discontinuation of therapy, and tended to decrease as duration of treatment increased (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Selected treatment-related side effects seen in up to 2% of acebutolol patients: hypotension, bradycardia, heart failure; anxiety, hyper/hypoesthesia, impotence; pruritus; vomiting, abdominal pain; dysuria, nocturia (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Hepatic: a small number of cases of liver abnormalities (increased SGOT, SGPT, LDH) reported in association with acebutolol therapy, sometimes with increased bilirubin or alkaline phosphatase, fever, malaise, dark urine, anorexia, nausea, headache and/or other symptoms; in some cases confirmed by rechallenge, and the abnormalities were reversible on cessation of therapy (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Musculoskeletal: back pain, joint pain (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Respiratory and ENT: pharyngitis, wheezing (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Ophthalmic: conjunctivitis, dry eye, eye pain (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Autoimmune: in extremely rare instances, systemic lupus erythematosus has been reported (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)",
+      "Class-level potential adverse events listed in the label as reported with other beta-blocking agents and to be considered for acebutolol: reversible mental depression progressing to catatonia, short-term memory loss, emotional lability, slightly clouded sensorium and decreased performance (neuropsychometric); intensification of AV block; erythematous rash, fever with aching and sore throat, laryngospasm and respiratory distress; agranulocytosis, nonthrombocytopenic and thrombocytopenic purpura; mesenteric arterial thrombosis and ischemic colitis; reversible alopecia and Peyronie's disease (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS, Potential Adverse Events)",
+      "Development of antinuclear antibodies (ANA) in a dose-dependent manner, with a higher overall incidence than with propranolol; related symptoms (generally persistent arthralgias and myalgias) were infrequent (less than 1% with both drugs) and both symptoms and ANA titres were reversible on discontinuation (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Clinical Laboratory Findings)"
+    ],
+    "dosage": {
+      "adult": "Hypertension: the initial dosage in uncomplicated mild-to-moderate hypertension is 400 mg, which can be given as a single daily dose, though in occasional patients twice daily dosing may be required for adequate 24-hour blood-pressure control. An optimal response is usually achieved with 400 to 800 mg per day, although some patients have been maintained on as little as 200 mg per day; patients with more severe hypertension or inadequate control may respond to a total of 1,200 mg daily (administered twice daily) or to the addition of a second antihypertensive agent. Beta-1 selectivity diminishes as dosage is increased. Ventricular arrhythmia: the usual initial dose is 400 mg daily given as 200 mg twice daily; dosage should be increased gradually until an optimal clinical response is obtained, generally at 600 to 1,200 mg per day. If treatment is to be discontinued, the dosage should be reduced gradually over a period of about two weeks (FDA acebutolol hydrochloride capsules label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Older patients have an approximately 2-fold increase in bioavailability and may require lower maintenance doses; doses above 800 mg per day should be avoided in the elderly (FDA acebutolol hydrochloride capsules label, DOSAGE AND ADMINISTRATION and Use in Older Patients). Because the bioavailability of both acebutolol and its metabolite diacetolol is approximately doubled in this age group, it may be appropriate to start elderly patients at the low end of the dosing range (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Geriatric Use).",
+      "paediatric": "Safety and effectiveness in pediatric patients have not been established (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Catecholamine-depleting drugs such as reserpine may have an additive effect when given with beta-blocking agents; patients treated with acebutolol plus catecholamine depletors should be observed closely for marked bradycardia or hypotension, which may present as vertigo, syncope or presyncope, or orthostatic blood-pressure changes without compensatory tachycardia (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Drug Interactions).",
+      "Alpha-adrenergic stimulants, including those in proprietary cold remedies and vasoconstrictive nasal drops, can produce exaggerated hypertensive responses when combined with beta-adrenergic antagonists; patients should be warned of this hazard (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Drug Interactions and Information for Patients).",
+      "Non-steroidal anti-inflammatory drugs: blunting of the antihypertensive effect of beta-adrenoceptor blocking agents by NSAIDs has been reported (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Drug Interactions).",
+      "Digitalis glycosides: both digitalis glycosides and beta-blockers slow atrioventricular conduction and decrease heart rate, so concomitant use can increase the risk of bradycardia (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Drug Interactions).",
+      "No significant interactions with digoxin, hydrochlorothiazide, hydralazine, sulfinpyrazone, oral contraceptives, tolbutamide or warfarin have been observed; digoxin and hydrochlorothiazide plasma levels were not affected by concomitant acebutolol administration, and the kinetics of acebutolol were not significantly altered by hydrochlorothiazide, hydralazine, sulfinpyrazone or oral contraceptives (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Drug Interactions and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+      "Food: food intake does not have a significant effect on the AUC of acebutolose, although the rate of absorption and peak concentration decreased slightly (FDA acebutolol hydrochloride capsules label, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism)."
+    ],
+    "monitoring": "Monitor blood pressure and heart rate, and watch for the first signs of cardiac failure in patients with aortic or mitral valve disease or compromised left ventricular function (FDA acebutolol hydrochloride capsules label, WARNINGS, In Patients Without a History of Cardiac Failure). Monitor for exacerbation of angina pectoris, myocardial infarction and death if beta-blocker therapy is interrupted abruptly in patients with coronary artery disease; when discontinuation is planned, the patient should be carefully observed, advised to limit physical activity to a minimum, and the drug withdrawn gradually over about two weeks (FDA acebutolol hydrochloride capsules label, WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal). Monitor for evidence of progression of arterial obstruction in patients with peripheral or mesenteric vascular disease (FDA acebutolol hydrochloride capsules label, WARNINGS, Peripheral Vascular Disease). In patients with bronchospastic disease who cannot tolerate alternative therapy, use the lowest possible dose initially, preferably in divided doses, and have a bronchodilator such as theophylline or a beta-2 stimulant available in advance (FDA acebutolol hydrochloride capsules label, WARNINGS, Bronchospastic Disease). Diabetic patients should be warned of the possibility of masked hypoglycaemia (FDA acebutolol hydrochloride capsules label, WARNINGS, Diabetes and Hypoglycemia). Patients suspected of developing thyrotoxicosis from whom acebutolol is withdrawn should be monitored closely, because abrupt withdrawal of beta-blockade may precipitate a thyroid storm (FDA acebutolol hydrochloride capsules label, WARNINGS, Thyrotoxicosis). Therapeutic response should be monitored with periodic blood pressure and heart-rate measurements; the label notes that acebutolol, like other beta-blockers, is associated with the development of antinuclear antibodies in a dose-dependent manner, with related symptoms (generally persistent arthralgias and myalgias) infrequent and reversible on discontinuation (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Clinical Laboratory Findings). Use caution in patients with impaired renal function, because elimination of the active metabolite diacetolol is decreased (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Impaired Renal or Hepatic Function).",
+    "patient_counselling": "Patients, especially those with evidence of coronary artery disease, should be warned against interruption or discontinuation of acebutolol therapy without a physician's supervision, because abrupt cessation may exacerbate angina pectoris and, in some cases, precipitate myocardial infarction and death; if discontinuation is planned the patient should be advised to limit physical activity to a minimum while acebutolol is gradually withdrawn over about two weeks, and if an exacerbation of angina occurs, antianginal therapy should be restarted immediately in full doses and the patient hospitalised until stable (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Information for Patients and WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal). Although cardiac failure rarely occurs in properly selected patients, those being treated with beta-adrenergic blocking agents should be advised to consult a physician if they develop signs or symptoms suggestive of impending congestive heart failure or unexplained respiratory symptoms (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Information for Patients). Warn patients of possible severe hypertensive reactions from concomitant use of alpha-adrenergic stimulants, such as the nasal decongestants commonly used in over-the-counter cold preparations and nasal drops (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Information for Patients). Diabetic patients should be warned of the possibility of masked hypoglycaemia (FDA acebutolol hydrochloride capsules label, WARNINGS, Diabetes and Hypoglycemia).",
+    "warnings": [
+      "Cardiac failure: sympathetic stimulation may be essential for support of the circulation in individuals with diminished myocardial contractility, and its inhibition by beta-adrenergic receptor blockade may precipitate more severe failure. Although beta-blockers should be avoided in overt cardiac failure, acebutolol can be used with caution in patients with a history of heart failure who are controlled with digitalis and/or diuretics; both digitalis and acebutolol impair AV conduction, and if cardiac failure persists therapy should be withdrawn (FDA acebutolol hydrochloride capsules label, WARNINGS, Cardiac Failure).",
+      "Exacerbation of ischemic heart disease following abrupt withdrawal: after abrupt cessation of certain beta-blocking agents in patients with coronary artery disease, exacerbation of angina pectoris and, in some cases, myocardial infarction and death have been reported; taper over about two weeks (FDA acebutolol hydrochloride capsules label, WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal).",
+      "Cardiac failure in patients without a history of cardiac failure: in patients with aortic or mitral valve disease or compromised left ventricular function, continued depression of the myocardium with beta-blocking agents may lead to cardiac failure; at the first signs of failure patients should be digitalised and/or given a diuretic and the response observed closely, and if failure continues despite adequate digitalisation or diuresis, acebutolol therapy should be withdrawn (FDA acebutolol hydrochloride capsules label, WARNINGS, In Patients Without a History of Cardiac Failure).",
+      "Peripheral vascular disease: beta-antagonists reduce cardiac output and can precipitate or aggravate the symptoms of arterial insufficiency in patients with peripheral or mesenteric vascular disease (FDA acebutolol hydrochloride capsules label, WARNINGS, Peripheral Vascular Disease).",
+      "Bronchospastic disease: patients with bronchospastic disease should in general not receive a beta-blocker; because of its relative beta-1 selectivity, low doses of acebutolol may be used with caution in patients with bronchospastic disease who do not respond to, or cannot tolerate, alternative treatment, and since beta-1 selectivity is not absolute and is dose-dependent, the lowest possible dose should be used initially, preferably in divided doses, with a bronchodilator such as theophylline or a beta-2 stimulant made available in advance (FDA acebutolol hydrochloride capsules label, WARNINGS, Bronchospastic Disease).",
+      "Anesthesia and major surgery: chronically administered beta-blocking therapy should not be routinely withdrawn prior to major surgery; however, the impaired ability of the heart to respond to reflex adrenergic stimuli may augment the risks of general anaesthesia and surgical procedures (FDA acebutolol hydrochloride capsules label, WARNINGS, Major Surgery).",
+      "Diabetes and hypoglycaemia: beta-blockers may potentiate insulin-induced hypoglycaemia and mask some of its manifestations such as tachycardia, although dizziness and sweating are usually not significantly affected; diabetic patients should be warned of the possibility of masked hypoglycaemia (FDA acebutolol hydrochloride capsules label, WARNINGS, Diabetes and Hypoglycemia).",
+      "Thyrotoxicosis: beta-adrenergic blockade may mask certain clinical signs (tachycardia) of hyperthyroidism, and abrupt withdrawal of beta-blockade may precipitate a thyroid storm (FDA acebutolol hydrochloride capsules label, WARNINGS, Thyrotoxicosis)."
+    ],
+    "precautions": [
+      "Risk of anaphylactic reaction: while taking beta-blockers, patients with a history of severe anaphylactic reaction to a variety of allergens may be more reactive to repeated challenge (accidental, diagnostic or therapeutic) and may be unresponsive to the usual doses of epinephrine used to treat allergic reaction (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Risk of Anaphylactic Reaction).",
+      "Impaired renal function: acebutolol is excreted through the GI tract but the active metabolite diacetolol is eliminated predominantly by the kidney, with a linear relationship between renal clearance of diacetolol and creatinine clearance; in renal insufficiency there is no effect on the elimination half-life of acebutolol but decreased elimination of diacetolol, resulting in a two- to three-fold increase in its half-life, so the drug should be administered with caution (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Impaired Renal or Hepatic Function and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+      "Impaired hepatic function: acebutolol should be used cautiously in patients with impaired hepatic function (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Impaired Renal or Hepatic Function).",
+      "Do not discontinue beta-blocker therapy abruptly in patients with coronary artery disease; taper over about two weeks and consider transferring directly to comparable doses of another beta-blocker without interruption of beta-blocking therapy (FDA acebutolol hydrochloride capsules label, WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal).",
+      "Beta-1 selectivity diminishes as dosage is increased, so higher doses lose the bronchospasm and vascular advantages (FDA acebutolol hydrochloride capsules label, DOSAGE AND ADMINISTRATION and CLINICAL PHARMACOLOGY, Pharmacodynamics).",
+      "Patients with a history of severe anaphylactic reaction should be counselled to carry epinephrine auto-injector or alternative rescue because usual epinephrine doses may be ineffective while on a beta-blocker (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Risk of Anaphylactic Reaction).",
+      "Chronic oral toxicity studies in rats and mice at dose levels equivalent to 15 times the maximum recommended human dose did not indicate carcinogenic potential for acebutolol or its major metabolite diacetolol; both were devoid of mutagenic potential in the Ames test and had no significant impact on reproductive performance or fertility in two-generation rat studies (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Carcinogenesis, Mutagenesis, Impairment of Fertility)."
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac failure, including new or exacerbated failure in patients with valve disease or compromised left ventricular function (FDA acebutolol hydrochloride capsules label, WARNINGS, Cardiac Failure and In Patients Without a History of Cardiac Failure)",
+      "Severe bradycardia, advanced atrioventricular block and hypotension (FDA acebutolol hydrochloride capsules label, CONTRAINDICATIONS and OVERDOSAGE)",
+      "Bronchospasm, particularly at higher doses in patients with bronchospastic disease (FDA acebutolol hydrochloride capsules label, WARNINGS, Bronchospastic Disease)",
+      "Hypoglycaemia, potentiated and masked by beta-blockade in diabetics (FDA acebutolol hydrochloride capsules label, WARNINGS, Diabetes and Hypoglycemia)",
+      "Exacerbation of angina pectoris, myocardial infarction and death on abrupt withdrawal in patients with coronary artery disease (FDA acebutolol hydrochloride capsules label, WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal)",
+      "Anaphylactic reactions that may be refractory to usual doses of epinephrine (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Risk of Anaphylactic Reaction)",
+      "Systemic lupus erythematosus, in extremely rare instances (FDA acebutolol hydrochloride capsules label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [
+      "Food intake does not have a significant effect on the AUC of acebutolol, although the rate of absorption and peak concentration decrease slightly (FDA acebutolol hydrochloride capsules label, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism)."
+    ],
+    "pregnancy_category": "B",
+    "pregnancy_guidance": "Reproduction studies have been performed with acebutolol in rats (up to 630 mg/kg/day) and rabbits (up to 135 mg/kg/day), doses equivalent to approximately 31.5 and 6.8 times the maximum recommended therapeutic dose in a 60 kg human respectively; the compound was not teratogenic in either species. In the rabbit, doses of 135 mg/kg/day caused slight fetal growth retardation, considered a result of maternal toxicity as evidenced by reduced food intake, a lowered rate of body weight gain and mortality. Studies were also performed with diacetolol (up to 450 mg/kg/day in rabbits and 1800 mg/kg/day in rats): other than a significant elevation in post-implantation loss with 450 mg/kg/day diacetolol, a level at which food consumption and body weight gain were reduced in rabbit dams, and a non-statistically significant increase in the incidence of bilateral cataract in rat fetuses from dams treated with 1800 mg/kg/day diacetolol, there was no evidence of harm to the fetus. There are no adequate and well-controlled trials in pregnant women; because animal teratology studies are not always predictive of the human response, acebutolol should be used during pregnancy only if the potential benefit justifies the risk to the fetus. Nonteratogenic effects: studies in humans have shown that both acebutolol and diacetolol cross the placenta; neonates of mothers who received acebutolol during pregnancy have reduced birth weight, decreased blood pressure and decreased heart rate. In the newborn the elimination half-life of acebutolol was 6 to 14 hours, while the half-life of diacetolol was 24 to 30 hours for the first 24 hours after birth, followed by a half-life of 12 to 16 hours; adequate facilities for monitoring these infants at birth should be available (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Pregnancy, Teratogenic Effects and Nonteratogenic Effects).",
+    "lactation_guidance": "Acebutolol and diacetolol also appear in breast milk, with milk:plasma ratios of 7.1 and 12.2 respectively. Use in nursing mothers is not recommended (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Nursing Mothers).",
+    "overdose": "No specific information on emergency treatment of acebutolol overdosage is available. Overdosage with other beta-blocking agents has been accompanied by extreme bradycardia, advanced atrioventricular block, intraventricular conduction defects, hypotension, severe congestive heart failure, seizures, and in susceptible patients bronchospasm and hypoglycaemia. General measures to consider: empty the stomach by emesis or lavage; for bradycardia, intravenous atropine 1 to 3 mg in divided doses, and if the antivagal response is inadequate, administer isoproterenol cautiously since larger than usual doses may be required; for persistent hypotension despite correction of bradycardia, administer a vasopressor (e.g. epinephrine, norepinephrine, dopamine or dobutamine) with frequent monitoring of blood pressure and pulse rate; for bronchospasm, a theophylline derivative such as aminophylline and/or a parenteral beta-2 stimulant such as terbutaline; for cardiac failure, digitalise the patient and/or administer a diuretic, and glucagon has been reported to be useful. Acebutolol is dialyzable (FDA acebutolol hydrochloride capsules label, OVERDOSAGE).",
+    "pharmacokinetics": "Acebutolol is well absorbed from the GI tract and is subject to extensive first-pass hepatic biotransformation, with an absolute bioavailability of approximately 40% for the parent compound. The major metabolite, an N-acetyl derivative (diacetolol), is pharmacologically active, is equipotent to acebutolol and in cats is more cardioselective, so the first-pass phenomenon does not attenuate the therapeutic effect. The plasma elimination half-life of acebutolol is approximately 3 to 4 hours, while that of diacetolol is 8 to 13 hours; the time to peak concentration is 2.5 hours for acebutolol and 3.5 hours for diacetolol. Within the single oral dose range of 200 to 400 mg the kinetics are dose-proportional, but this linearity is not seen at higher doses, probably due to saturation of hepatic biotransformation sites, and after multiple dosing the lack of linearity is also seen as AUC increases of approximately 100% compared with single oral dosing. Elimination via renal excretion is approximately 30% to 40% and by non-renal mechanisms 50% to 60%, which includes excretion into bile and direct passage through the intestinal wall. Plasma protein binding is low, about 26%. Acebutolol and diacetolol are relatively hydrophilic and only minimal quantities have been detected in cerebrospinal fluid. Acebutolol crosses the placental barrier and is secreted in breast milk. In patients with renal impairment there is no effect on the elimination half-life of acebutolol but there is decreased elimination of diacetolol, resulting in a two- to three-fold increase in its half-life. Acebutolol and its major metabolite are dialyzable. In geriatric patients the bioavailability of acebutolol and its metabolite is increased approximately two-fold, probably due to decreases in first-pass metabolism and renal function (FDA acebutolol hydrochloride capsules label, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+    "clinical_pearls": [
+      "Acebutolol is a hydrophilic, cardioselective (beta-1) blocker with mild intrinsic sympathomimetic activity, so it causes a smaller fall in resting heart rate (about 3 beats per minute less) than propranolol, metoprolol or atenolol at equivalent beta-blocking doses (FDA acebutolol hydrochloride capsules label, CLINICAL PHARMACOLOGY, Pharmacodynamics).",
+      "Beta-1 selectivity is dose-dependent and is not absolute: the bronchospasm advantage over propranolol is lost at higher doses, so the lowest effective dose should be used in patients with asthma, preferably in divided doses with a bronchodilator available (FDA acebutolol hydrochloride capsules label, WARNINGS, Bronchospastic Disease and CLINICAL PHARMACOLOGY, Pharmacodynamics).",
+      "Never stop abruptly: taper over about two weeks because abrupt withdrawal in patients with coronary artery disease has caused angina exacerbation, myocardial infarction and death (FDA acebutolol hydrochloride capsules label, WARNINGS, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal).",
+      "The active metabolite diacetolol is renally cleared, so it is the metabolite, not acebutolol, that accumulates in renal impairment - its half-life is two- to three-fold longer (FDA acebutolol hydrochloride capsules label, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+      "Masked hypoglycaemia: beta-blockade blunts tachycardia, so diabetic patients on insulin or sulfonylureas may not get the usual warning signs; dizziness and sweating are usually preserved (FDA acebutolol hydrochloride capsules label, WARNINGS, Diabetes and Hypoglycemia).",
+      "Elderly patients have roughly double the bioavailability, so start at the low end of the range and avoid doses above 800 mg per day (FDA acebutolol hydrochloride capsules label, DOSAGE AND ADMINISTRATION and Use in Older Patients).",
+      "There is no boxed warning on the acebutolol label; it is a plain beta-blocker with the standard class warnings (cardiac failure, bronchospasm, masked hypoglycaemia, abrupt withdrawal) (FDA acebutolol hydrochloride capsules label, sections CONTRAINDICATIONS and WARNINGS)."
+    ],
+    "brand_names": ["SECTRAL"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Because the active metabolite diacetolol is eliminated predominantly by the kidney and its renal clearance is linearly related to creatinine clearance, the label states that the daily dose of acebutolol should be reduced by 50% when the creatinine clearance is less than 50 mL/min and by 75% when it is less than 25 mL/min. The label also notes that studies on the effect of acebutolol in patients with renal insufficiency have not been performed in the United States, and that in renal insufficiency there is no effect on the elimination half-life of acebutolol but decreased elimination of diacetolol, resulting in a two- to three-fold increase in its half-life, so the drug should be administered with caution (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Impaired Renal or Hepatic Function and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+    "hepatic_dose_adjustment": "Acebutolol should be used cautiously in patients with impaired hepatic function; no specific dose adjustment is stated in the label. Acebutolol undergoes extensive first-pass hepatic biotransformation and its kinetics become non-linear at higher single doses, probably because of saturation of hepatic biotransformation sites (FDA acebutolol hydrochloride capsules label, PRECAUTIONS, Impaired Renal or Hepatic Function and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+    "administration_instructions": "Oral capsules containing 200 mg or 400 mg of acebutolol as the hydrochloride salt. For hypertension the initial dose is 400 mg daily, which may be given as a single dose or 200 mg twice daily, titrated to 400-800 mg per day (up to 1,200 mg per day twice daily in severe or uncontrolled hypertension); for ventricular arrhythmia the usual initial dose is 400 mg daily as 200 mg twice daily, titrated to 600-1,200 mg per day. If treatment is to be discontinued, reduce the dose gradually over about two weeks. Store at 20 to 25 degrees C (68 to 77 degrees F), protect from light, keep tightly closed and dispense in a tight, light-resistant container (FDA acebutolol hydrochloride capsules label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP (Amneal Pharmaceuticals LLC), DESCRIPTION and CLINICAL PHARMACOLOGY, Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, INDICATIONS AND USAGE (Hypertension; Ventricular Arrhythmias)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, ADVERSE REACTIONS and PRECAUTIONS, Clinical Laboratory Findings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, DOSAGE AND ADMINISTRATION (Hypertension, Ventricular Arrhythmia) and Use in Older Patients; PRECAUTIONS (Pediatric Use, Geriatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS (Drug Interactions, Information for Patients) and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, WARNINGS (Cardiac Failure, Peripheral Vascular Disease, Bronchospastic Disease, Diabetes and Hypoglycemia, Thyrotoxicosis) and PRECAUTIONS (Clinical Laboratory Findings, Impaired Renal or Hepatic Function)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Information for Patients and WARNINGS (Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal, Diabetes and Hypoglycemia)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, WARNINGS (Cardiac Failure, In Patients Without a History of Cardiac Failure, Exacerbation of Ischemic Heart Disease Following Abrupt Withdrawal, Peripheral Vascular Disease, Bronchospastic Disease, Major Surgery, Diabetes and Hypoglycemia, Thyrotoxicosis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS (Risk of Anaphylactic Reaction, Impaired Renal or Hepatic Function, Carcinogenesis, Mutagenesis, Impairment of Fertility) and CLINICAL PHARMACOLOGY, Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, CONTRAINDICATIONS, WARNINGS, PRECAUTIONS (Risk of Anaphylactic Reaction) and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Pregnancy, Teratogenic Effects: Pregnancy Category B",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Pregnancy (Teratogenic Effects, Nonteratogenic Effects) and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, sections CLINICAL PHARMACOLOGY (Pharmacodynamics, Pharmacokinetics and Metabolism), CONTRAINDICATIONS, DOSAGE AND ADMINISTRATION, WARNINGS and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "brand_names",
+      "ref": "SECTRAL (acebutolol hydrochloride) listed as a brand product on DailyMed (Promius Pharma, LLC)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7eee95bf-0452-4d6e-9712-33403768695a"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA acebutolol hydrochloride capsules label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Impaired Renal or Hepatic Function and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, PRECAUTIONS, Impaired Renal or Hepatic Function and CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Acebutolol Hydrochloride Capsules USP, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f8c26c-a1e1-4485-a45f-05c82f7a34b5"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients have not been established)"
+  ],
+  "notes": "The table stores this agent as 'Acebutolol' with brand_names ['Acebutolol Hydrochloride'], which is the salt name rather than a brand. SECTRAL is the US brand, so brand_names has been corrected to ['SECTRAL']. Content is sourced from the current FDA label for acebutolol hydrochloride capsules USP (Amneal Pharmaceuticals LLC) and cross-checked against the SECTRAL (Promius Pharma) label, which carries the same indications, contraindications, warnings and dosing. Acebutolol labels remain in the legacy (pre-PLLR) format and still state Pregnancy Category B, which is reported verbatim; that category is obsolete and the label also states there are no adequate and well-controlled trials in pregnant women. The label has no boxed warning. Note that the US label gives no indication for angina, heart failure or post-MI use - the approved indications are hypertension in adults and ventricular premature beats."
+}

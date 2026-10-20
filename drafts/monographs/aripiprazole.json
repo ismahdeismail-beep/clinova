@@ -1,0 +1,231 @@
+{
+  "name": "Aripiprazole",
+  "existing_id": "460b70ff-1f6b-45ee-b8fd-e30aa38448f9",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aripiprazole is an atypical antipsychotic. The mechanism of action in schizophrenia or bipolar mania is unclear, but its efficacy could be mediated through a combination of partial agonist activity at dopamine D2 and serotonin 5-HT1A receptors and antagonist activity at 5-HT2A receptors (FDA Abilify (aripiprazole) tablets label, section 12.1). Aripiprazole has high affinity for dopamine D2 and D3, serotonin 5-HT1A and 5-HT2A receptors (Ki values of 0.34 nM, 0.8 nM, 1.7 nM and 3.4 nM respectively), moderate affinity for dopamine D4, serotonin 5-HT2C and 5-HT7, alpha1-adrenergic and histamine H1 receptors, and moderate affinity for the serotonin reuptake site, and no appreciable affinity for cholinergic muscarinic receptors (section 12.2).",
+    "indications": [
+      "Treatment of schizophrenia (FDA Abilify label, sections 1 and 14.1).",
+      "Acute treatment of manic and mixed episodes associated with bipolar I disorder (FDA Abilify label, sections 1 and 14.2).",
+      "Adjunctive treatment of major depressive disorder (FDA Abilify label, sections 1 and 14.3).",
+      "Irritability associated with autistic disorder (FDA Abilify label, sections 1 and 14.4).",
+      "Treatment of Tourette's disorder (FDA Abilify label, sections 1 and 14.5).",
+      "WHO Model List of Essential Medicines 23rd List (2023), section 24.1: aripiprazole is listed as a therapeutic alternative to risperidone, olanzapine, paliperidone and quetiapine for the treatment of psychosis and severe mental disorders, as a solid oral dosage form of 0.25 mg to 6.0 mg (WHO EML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023, section 25.1 'Medicines used in Psychotic disorders': aripiprazole, tablet 5 mg, 10 mg, 15 mg and 25 mg at level of use 4, and injection 25 mg (as HCl) per mL in a 2 mL ampoule at level of use 2 (KEML 2023, section 25.1.1)."
+    ],
+    "contraindications": [
+      "A history of hypersensitivity reaction to aripiprazole; reactions have ranged from pruritus/urticaria to anaphylaxis (FDA Abilify label, section 4)."
+    ],
+    "side_effects": [
+      "Commonly observed adverse reactions in adult patients with schizophrenia (incidence 5% or more and at least twice placebo): akathisia 8% versus 4% placebo (FDA Abilify label, section 6.1).",
+      "Adults with bipolar mania on monotherapy: akathisia 13% (placebo 4%), sedation 8% (3%), restlessness 6% (3%), tremor 6% (3%), extrapyramidal disorder 5% (2%) (FDA Abilify label, section 6.1, Table 14).",
+      "The most common adverse reactions in adult clinical trials (10% or more) were nausea, vomiting, constipation, headache, dizziness, akathisia, anxiety, insomnia and restlessness; in pediatric trials (10% or more) somnolence, headache, vomiting, extrapyramidal disorder, fatigue, increased appetite, insomnia, nausea, nasopharyngitis and weight increased (FDA Abilify label, section 6.1).",
+      "Other adult adverse reactions with aripiprazole versus placebo: blurred vision 3% vs 1%, nausea 15% vs 11%, constipation 11% vs 7%, vomiting 11% vs 6%, dyspepsia 9% vs 7%, dry mouth 5% vs 4% (FDA Abilify label, section 6.1, Table 15).",
+      "Somnolence (including sedation) 11% versus 6% in adults and 24% versus 6% in pediatric patients aged 6 to 17 years; somnolence led to discontinuation in 0.3% of adults and 3% of pediatric patients (FDA Abilify label, section 5.12).",
+      "Orthostatic hypotension-associated events in adults: orthostatic hypotension 1% (placebo 0.3%), postural dizziness 0.5% (0.3%), syncope 0.5% (0.4%) (FDA Abilify label, section 5.8).",
+      "In elderly patients with psychosis associated with Alzheimer's disease in three 10-week placebo-controlled studies (n=938), adverse reactions reported at an incidence of at least 3% and at least twice placebo were lethargy (5% vs 2%), somnolence (8% vs 3%), incontinence (5% vs 1%), excessive salivation (4% vs 0%) and lightheadedness (4% vs 1%) (FDA Abilify label, section 5.1).",
+      "Postmarketing: anaphylactic reaction, angioedema, laryngospasm, pruritus/urticaria, oropharyngeal spasm, blood glucose fluctuation, DRESS, hiccups, oculogyric crisis, pathological gambling and fecal incontinence (FDA Abilify label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "Administer once daily without regard to meals (FDA Abilify label, section 2). Schizophrenia: initial and target dose 10 to 15 mg/day, maximum 30 mg/day; dosage increases should generally not be made before 2 weeks, the time needed to reach steady state (section 2.1). Bipolar I disorder, acute manic or mixed episode: monotherapy starting dose 15 mg/day, target 15 mg/day, may be increased to 30 mg/day; as adjunct to lithium or valproate, starting dose 10 to 15 mg/day, target 15 mg/day, maximum 30 mg/day; the safety of doses above 30 mg/day has not been evaluated in clinical trials (section 2.2). Adjunctive treatment of major depressive disorder: starting dose 2 to 5 mg/day, recommended range 2 to 15 mg/day, with adjustments of up to 5 mg/day at intervals of no less than one week (section 2.3). Known CYP2D6 poor metabolizers: administer half the usual dose; with a concomitant strong CYP3A4 inhibitor administer a quarter of the usual dose; with strong CYP3A4 inducers double the usual dose over 1 to 2 weeks (section 2.6, Table 1).",
+      "geriatric": "No dosage adjustment is recommended for elderly patients (FDA Abilify label, section 8.5). Of the 13,543 patients treated with oral aripiprazole in clinical trials, 1,073 (8%) were 65 years or older and 799 (6%) were 75 years or older, and placebo-controlled studies did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients (section 8.5). Aripiprazole is not approved for the treatment of psychosis associated with Alzheimer's disease (section 8.5 and Boxed Warning).",
+      "paediatric": "Safety and effectiveness have been established in pediatric patients 13 to 17 years with schizophrenia (6-week trial, n=202), 10 to 17 years with bipolar mania (4-week trial, n=197), 6 to 17 years with irritability associated with autistic disorder (two 8-week trials, n=212) and 7 to 17 and 6 to 18 years with Tourette's disorder (one 8-week and one 10-week trial, n=194) (FDA Abilify label, sections 8.4 and 14). Doses: schizophrenia in adolescents, target 10 mg/day (start 2 mg/day, titrate to 5 mg/day after 2 days, then to 10 mg/day after a further 2 days, maximum 30 mg/day); bipolar mania in patients 10 to 17 years, start 2 mg/day, 5 mg/day after 2 days, target 10 mg/day, maximum 30 mg/day; irritability associated with autistic disorder, start 2 mg/day, 5 mg/day after 2 days, range 5 to 15 mg/day, maximum 15 mg/day; Tourette's disorder, range 5 to 20 mg/day with a weight-based regimen (patients under 50 kg: start 2 mg/day, target 5 mg/day after 2 days, up to 10 mg/day; patients 50 kg or more: 2 mg/day for 2 days then 5 mg/day for 5 days, target 10 mg/day on Day 8, up to 20 mg/day) (FDA Abilify label, sections 2.1, 2.2, 2.4 and 2.5). Safety and effectiveness in pediatric patients with major depressive disorder or agitation associated with schizophrenia or bipolar mania have not been established (section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inhibitors (e.g. itraconazole, clarithromycin) or strong CYP2D6 inhibitors (e.g. quinidine, fluoxetine, paroxetine): increase aripiprazole exposure; reduce the aripiprazole dose, to half the usual dose for a strong inhibitor of either enzyme and to a quarter of the usual dose for both (FDA Abilify label, sections 2.6 and 7.1).",
+      "Strong CYP3A4 inducers (e.g. carbamazepine, rifampin): decrease aripiprazole exposure; increase the aripiprazole dose, doubling the usual dose over 1 to 2 weeks (FDA Abilify label, sections 2.6 and 7.1).",
+      "Antihypertensive drugs: because of aripiprazole's alpha1-adrenergic antagonism it may enhance the effect of antihypertensive agents; monitor blood pressure and adjust dose accordingly (FDA Abilify label, section 7.1).",
+      "Benzodiazepines (e.g. lorazepam): intensity of sedation was greater with oral aripiprazole plus lorazepam than with aripiprazole alone, and orthostatic hypotension was greater than with lorazepam alone; monitor sedation and blood pressure (FDA Abilify label, section 7.1).",
+      "Drugs with no clinically important interaction requiring no aripiprazole dose adjustment: famotidine, valproate, lithium and lorazepam; substrates of CYP2D6 (e.g. dextromethorphan, fluoxetine, paroxetine, venlafaxine), CYP2C9 (e.g. warfarin), CYP2C19 (e.g. omeprazole, warfarin, escitalopram) and CYP3A4 (e.g. dextromethorphan); and valproate, lithium, lamotrigine and sertraline (FDA Abilify label, section 7.2).",
+      "A population PK analysis in patients with major depressive disorder showed no substantial change in the plasma concentrations of fluoxetine (20 or 40 mg/day), paroxetine CR (37.5 or 50 mg/day) or sertraline (100 or 150 mg/day) at steady state with aripiprazole; steady-state fluoxetine and norfluoxetine concentrations increased by about 18% and 36% respectively, and paroxetine concentrations decreased by about 27% (FDA Abilify label, section 12.3)."
+    ],
+    "monitoring": "Monitor blood pressure and heart rate, particularly at the start of treatment and after dose increases, and warn patients with known cardiovascular or cerebrovascular disease, dehydration or hypovolemia, or those on antihypertensives, because of orthostatic hypotension (FDA Abilify label, sections 5.8 and 5.9). Perform fall risk assessments when initiating antipsychotic treatment and recurrently for patients on long-term therapy (section 5.9). For patients with diabetes or risk factors for diabetes, obtain fasting blood glucose at the start of treatment and periodically during treatment, and monitor for symptoms of hyperglycaemia (polydipsia, polyuria, polyphagia, weakness) (section 5.6). Monitor lipid levels and weight: weight gain of 7% or more and shifts in fasting cholesterol, LDL and triglycerides have been reported with aripiprazole (section 5.6). In patients with a history of a clinically significant low white blood cell count or drug-induced leukopenia/neutropenia, perform a complete blood count frequently during the first few months of therapy, discontinue for severe neutropenia (ANC below 1,000/mm3) and follow the WBC count until recovery (section 5.10). Screen patients for bipolar disorder before initiating treatment for depression, and closely supervise for clinical worsening, suicidality and emergence of unusual behaviour, especially in children, adolescents and young adults (sections 5.3, 5.14 and 17). Ask patients and caregivers specifically about new or intense gambling, sexual, shopping or eating urges (section 5.7). Reassess periodically for the continued need for maintenance treatment (sections 2.1 to 2.5).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling (Medication Guide) (FDA Abilify label, section 17). Explain that aripiprazole is not approved for dementia-related psychosis and that medicines like it raise the risk of death in elderly people with dementia-related psychosis (Boxed Warning). Warn about suicidal thoughts and actions: alert patients, families and caregivers to the emergence of anxiety, agitation, panic attacks, insomnia, irritability, hostility, aggressiveness, impulsivity, akathisia, hypomania, mania, worsening of depression and suicidal ideation, especially early in treatment and after dose changes, and report such symptoms promptly (sections 5.3 and 17). Advise about the possibility of compulsive urges to shop, intense urges to gamble, compulsive sexual urges, binge eating and other compulsive urges, and that in some but not all cases these stopped when the dose was reduced or stopped (section 5.7). Caution that aripiprazole may impair judgement, thinking or motor skills, so patients should avoid operating hazardous machinery, including automobiles, until they know how it affects them (section 5.12). Advise patients to tell their prescribers about all prescription, over-the-counter and herbal medicines they take (section 7). Advise patients to avoid overheating and dehydration (section 5.13). Advise patients to notify their healthcare provider if they become pregnant or intend to become pregnant, and that aripiprazole may cause extrapyramidal and/or withdrawal symptoms in a neonate (agitation, hypertonia, hypotonia, tremor, somnolence, respiratory distress, feeding disorder) (section 8.1). Advise that aripiprazole use during pregnancy may affect milk supply, and that the breastfed infant should be monitored for dehydration and lack of appropriate weight gain (section 8.2).",
+    "warnings": [
+      "WARNING (boxed): Increased mortality in elderly patients with dementia-related psychosis. Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death, and ABILIFY is not approved for the treatment of patients with dementia-related psychosis (FDA Abilify label, Boxed Warning and section 5.1).",
+      "WARNING (boxed): Suicidal thoughts and behaviors with antidepressant drugs. Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents and young adults in short-term studies; monitor for worsening and for the emergence of suicidal thoughts and behaviors, and advise families and caregivers of the need for close observation and communication with the prescriber (FDA Abilify label, Boxed Warning and section 5.3).",
+      "Cerebrovascular adverse events, including stroke and transient ischemic attack, including fatalities, occurred more frequently in aripiprazole-treated elderly patients with dementia-related psychosis in placebo-controlled studies, with a statistically significant dose-response relationship in the fixed-dose study (FDA Abilify label, section 5.2).",
+      "Neuroleptic malignant syndrome: a potentially fatal symptom complex characterised by hyperpyrexia, muscle rigidity, altered mental status and autonomic instability; manage with immediate discontinuation of antipsychotics and close monitoring (FDA Abilify label, section 5.4).",
+      "Tardive dyskinesia: a syndrome of potentially irreversible involuntary movements; prescribe the smallest dose for the shortest duration and consider discontinuation if signs appear (FDA Abilify label, section 5.5).",
+      "Metabolic changes: hyperglycaemia, including extreme hyperglycaemia with ketoacidosis or hyperosmolar coma, dyslipidaemia and weight gain; monitor glucose, lipids and weight (FDA Abilify label, section 5.6).",
+      "Pathological gambling and other compulsive behaviours: postmarketing reports of intense urges, particularly to gamble, that the patient may not recognise as abnormal; consider dose reduction or discontinuation (FDA Abilify label, section 5.7).",
+      "Orthostatic hypotension: may occur, particularly at the start of treatment and during dose escalation; use caution in patients with cardiovascular or cerebrovascular disease or predisposed to hypotension (FDA Abilify label, section 5.8).",
+      "Falls: antipsychotics may cause somnolence, postural hypotension and motor and sensory instability, which may lead to falls and fractures (FDA Abilify label, section 5.9).",
+      "Leukopenia, neutropenia and agranulocytosis have been reported; discontinue at the first sign of a clinically significant decline in white blood cell count in the absence of other causative factors, and discontinue for severe neutropenia (FDA Abilify label, section 5.10).",
+      "Seizures/convulsions: use cautiously in patients with a history of seizures or conditions that lower the seizure threshold (FDA Abilify label, section 5.11).",
+      "Suicide: the possibility of a suicide attempt is inherent in schizophrenia, bipolar disorder and major depressive disorder; close supervision of high-risk patients is required and prescriptions should be written for the smallest quantity consistent with good patient management (FDA Abilify label, section 5.14).",
+      "Dysphagia: oesophageal dysmotility and aspiration have been associated with antipsychotic use; use cautiously in patients at risk of aspiration pneumonia (FDA Abilify label, section 5.15)."
+    ],
+    "precautions": [
+      "Aripiprazole should be prescribed in a manner most likely to minimise the occurrence of tardive dyskinesia: chronic treatment should generally be reserved for patients with a chronic illness that responds to antipsychotics and for whom alternatives are not appropriate, using the smallest dose and shortest duration that produce a satisfactory response, with periodic reassessment of the need for continued treatment (FDA Abilify label, section 5.5).",
+      "When switching from other antipsychotics, there are no systematically collected data; more gradual discontinuation may be most appropriate for some patients, and the period of overlapping antipsychotic administration should be minimised in all cases (FDA Abilify label, section 2.1).",
+      "When a concomitant CYP3A4 inducer is withdrawn, the aripiprazole dose should be reduced to the original level over 1 to 2 weeks; when the coadministered CYP3A4 or CYP2D6 inhibitor is withdrawn, the aripiprazole dose should be adjusted back to its original level (FDA Abilify label, section 2.6).",
+      "Patients should be periodically reassessed to determine the continued need for maintenance treatment (FDA Abilify label, sections 2.1 to 2.5).",
+      "Disruption of the body's ability to reduce core body temperature has been attributed to antipsychotic agents; appropriate care is advised in patients who will experience conditions contributing to elevated core temperature (FDA Abilify label, section 5.13)."
+    ],
+    "serious_adverse_reactions": [
+      "Increased mortality in elderly patients with dementia-related psychosis (FDA Abilify label, Boxed Warning and section 5.1).",
+      "Suicidal thoughts and behaviors in children, adolescents and young adults (FDA Abilify label, Boxed Warning and section 5.3).",
+      "Cerebrovascular adverse events including stroke, transient ischemic attack and fatalities (FDA Abilify label, section 5.2).",
+      "Neuroleptic malignant syndrome (FDA Abilify label, section 5.4).",
+      "Tardive dyskinesia (FDA Abilify label, section 5.5).",
+      "Severe hyperglycaemia, including ketoacidosis or hyperosmolar coma and death (FDA Abilify label, section 5.6).",
+      "Agranulocytosis (FDA Abilify label, section 5.10).",
+      "Anaphylaxis, angioedema and laryngospasm (FDA Abilify label, sections 4 and 6.2)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Abilify labelling: aripiprazole can be administered with or without food, and administration of a 15 mg tablet with a standard high-fat meal did not significantly affect Cmax or AUC, although it delayed Tmax by 3 hours for aripiprazole and 12 hours for dehydro-aripiprazole (FDA Abilify label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Neonates exposed to antipsychotic drugs, including aripiprazole, during the third trimester of pregnancy are at risk for extrapyramidal and/or withdrawal symptoms following delivery. Overall available data from published epidemiologic studies of pregnant women exposed to aripiprazole have not established a drug-associated risk of major birth defects, miscarriage or adverse maternal outcomes. In animal reproduction studies, aripiprazole administration during organogenesis in rats and rabbits at doses 10 and 19 times the maximum recommended human dose (MRHD) of 30 mg/day on a mg/m2 basis produced fetal death, decreased fetal weight, undescended testicles, delayed skeletal ossification, skeletal abnormalities and diaphragmatic hernia; pre- and post-natal administration in rats at 10 times the MRHD produced prolonged gestation, stillbirths, decreased pup weight and decreased pup survival. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Abilify label, section 8.1). A pregnancy exposure registry for atypical antipsychotics is available (National Pregnancy Registry for Atypical Antipsychotics, 1-866-961-2388) (section 8.1).",
+    "lactation_guidance": "Aripiprazole is present in human breast milk. Based on published case reports and pharmacovigilance reports, aripiprazole exposure during pregnancy and/or the postpartum period may lead to clinically relevant decreases in milk supply, which may be reversible with discontinuation of the drug, and there are reports of aripiprazole exposure during pregnancy with no maternal milk supply postpartum; these effects may be mediated through decreases in prolactin levels, which have been observed. Monitor the breastfed infant for dehydration and lack of appropriate weight gain, and weigh the developmental and health benefits of breastfeeding against the mother's clinical need for aripiprazole and any potential adverse effects on the breastfed infant (FDA Abilify label, section 8.2).",
+    "overdose": "No fatality was reported with aripiprazole alone. The largest known dose with a known outcome involved acute ingestion of 1,260 mg (42 times the maximum recommended daily dose) with full recovery; ingestions up to 195 mg in children aged 12 years and younger caused no fatalities. Common adverse reactions reported in at least 5% of overdose cases include vomiting, somnolence and tremor; other reported signs include acidosis, aggression, bradycardia, coma, confusional state, convulsion, hypertension, hypokalaemia, hypotension, loss of consciousness, QRS complex prolonged, QT prolonged, respiratory arrest, status epilepticus and tachycardia. No specific information is available on the treatment of overdose: obtain an electrocardiogram, institute cardiac monitoring if QT prolongation is present, and otherwise manage with supportive therapy maintaining an adequate airway, oxygenation and ventilation, with close medical supervision until recovery. Early charcoal administration may partially prevent absorption: 50 g of activated charcoal one hour after a single 15 mg dose reduced mean AUC and Cmax of aripiprazole by 50%. Hemodialysis is unlikely to be useful because aripiprazole is highly bound to plasma proteins (FDA Abilify label, section 10).",
+    "pharmacokinetics": "Aripiprazole activity is primarily due to the parent drug and, to a lesser extent, its major active metabolite dehydro-aripiprazole, which has D2 receptor affinities similar to the parent drug and represents 40% of parent drug exposure in plasma. The mean elimination half-lives are about 75 hours for aripiprazole and 94 hours for dehydro-aripiprazole, and steady-state concentrations are attained within 14 days; the mean elimination half-life of aripiprazole in CYP2D6 poor metabolizers is about 146 hours. Absorption: well absorbed after oral administration of the tablet, with peak plasma concentrations within 3 to 5 hours and an absolute oral bioavailability of 87%. Distribution: steady-state volume of distribution 404 L (4.9 L/kg), indicating extensive extravascular distribution, and greater than 99% binding to serum proteins, primarily albumin. Metabolism: three biotransformation pathways - dehydrogenation, hydroxylation and N-dealkylation; CYP3A4 and CYP2D6 are responsible for dehydrogenation and hydroxylation and CYP3A4 for N-dealkylation. Excretion: after a single oral dose of radiolabelled aripiprazole, approximately 25% and 55% of administered radioactivity was recovered in the urine and faeces respectively; less than 1% of unchanged aripiprazole was excreted in urine and approximately 18% of the dose was recovered unchanged in the faeces (FDA Abilify label, section 12.3).",
+    "clinical_pearls": [
+      "Aripiprazole is a once-daily oral antipsychotic that can be taken with or without food, and unlike most antipsychotics its dose is not food-dependent (FDA Abilify label, section 2 and 12.3).",
+      "Dose reduction to half (or a quarter for dual strong inhibition) and doubling for strong CYP3A4 inducers are driven entirely by CYP2D6 and CYP3A4 genotype and co-medication; approximately 8% of Caucasians and 3% to 8% of Black/African Americans are CYP2D6 poor metabolizers (FDA Abilify label, sections 2.6 and 8.6).",
+      "Akathisia is the signature adverse reaction in schizophrenia (8% versus 4% placebo) and in bipolar mania (13% versus 4%); it is the most common reason for early discontinuation and is often mistaken for agitation (FDA Abilify label, section 6.1).",
+      "Aripiprazole has the lowest weight gain liability of the commonly used atypical antipsychotics, but glucose and lipids still require monitoring (FDA Abilify label, section 5.6).",
+      "For the adjunctive treatment of major depressive disorder, no aripiprazole dose adjustment is needed for CYP2D6 poor metabolizers or for concomitant CYP3A4/CYP2D6 modulators (FDA Abilify label, section 2.6).",
+      "This monograph covers oral aripiprazole (ABILIFY). The once-monthly and ready-to-use injectable aripiprazole products (ABILIFY MAINTENA and ABILIFY ASIMTUFII) and the extended-release intramuscular prodrug (ARISTADA / ARISTADA INITIO, aripiprazole lauroxil) are different products with different dosing and are described in separate monographs (FDA Abilify label, sections 1 to 3; FDA Aristada label, sections 1 and 2)."
+    ],
+    "brand_names": ["Abilify (aripiprazole) tablets, Otsuka America Pharmaceutical"],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. ABILIFY is not approved for the treatment of patients with dementia-related psychosis (FDA Abilify label, Boxed Warning).",
+      "Suicidal thoughts and behaviors with antidepressant drugs: antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents and young adults in short-term studies. These studies did not show an increase in the risk of suicidal thoughts and behavior with antidepressant use in patients over 24 years of age; there was a reduction in risk with antidepressant use in patients aged 65 years and older. In patients of all ages who are started on antidepressant therapy, monitor closely for worsening and for the emergence of suicidal thoughts and behaviors, and advise families and caregivers of the need for close observation and communication with the prescriber (FDA Abilify label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment for aripiprazole is required on the basis of renal function (mild to severe renal impairment, glomerular filtration rate between 15 and 90 mL/minute) (FDA Abilify label, section 8.7).",
+    "hepatic_dose_adjustment": "No dosage adjustment for aripiprazole is required on the basis of hepatic function (mild to severe hepatic impairment, Child-Pugh score between 5 and 15) (FDA Abilify label, section 8.7).",
+    "administration_instructions": "Oral administration once daily without regard to meals (FDA Abilify label, section 2). Do not change the dose or stop aripiprazole without consulting the prescriber. If a dose is missed, it should be taken as soon as remembered but the patient should not take two doses at the same time. Tablets are available as 2 mg, 5 mg, 10 mg, 15 mg, 20 mg and 30 mg (FDA Abilify label, sections 2, 3 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Abilify (aripiprazole) tablets, Otsuka America Pharmaceutical, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Abilify label, sections 1 and 14; WHO Model List of Essential Medicines 23rd List (2023), section 24.1; Kenya Essential Medicines List 2023, section 25.1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Abilify label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Abilify label, sections 5.1, 5.8, 5.12, 6.1 (Tables 14 and 15) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Abilify label, sections 2, 2.1 to 2.6 (Table 1), 8.4, 8.5 and 14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Abilify label, sections 2.6, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Abilify label, sections 2.1 to 2.5, 5.3, 5.6 to 5.10, 5.14 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Abilify label, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Abilify label, Boxed Warning and sections 5.1 to 5.15",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Abilify label, sections 2.1 to 2.6, 5.5 and 5.13",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Abilify label, Boxed Warning and sections 4, 5.1 to 5.6, 5.10 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Abilify label, section 12.3 (no food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Abilify label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Abilify label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Abilify label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Abilify label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Abilify label, sections 1 to 3, 2.6, 5.6, 6.1, 8.6 and 12.3; FDA Aristada (aripiprazole lauroxil) label, sections 1 and 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Abilify (aripiprazole) tablets listed on DailyMed as the Otsuka America Pharmaceutical product; generic aripiprazole tablets listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA Abilify label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Abilify label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Abilify label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Abilify label, sections 2, 3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c040bd1d-45b7-49f2-93ea-aed7220b30ac"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines 23rd List (2023), section 24.1 (Therapeutic alternatives under risperidone)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/289a875c-cc89-4914-90ad-eb3c578ebaf6/content"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023, section 25.1.1 (Aripiprazole: tablet 5 mg, 10 mg, 15 mg, 25 mg at level of use 4; injection 25 mg (as HCl)/mL in a 2 mL ampoule at level of use 2)",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimens are provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA Abilify label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Aripiprazole'. The brand name recorded in the row ('Aripiprazole') is the INN rather than a brand; the marketed brand is ABILIFY (Otsuka America Pharmaceutical). This monograph covers ORAL aripiprazole only. The once-monthly and ready-to-use injectable aripiprazole products (ABILIFY MAINTENA, ABILIFY ASIMTUFII) and the extended-release intramuscular prodrug aripiprazole lauroxil (ARISTADA / ARISTADA INITIO) are separate products with different indications, dosing intervals and administration requirements, and are covered in separate monographs. Kenya context: the KEML 2023 lists aripiprazole in section 25.1 (Medicines used in Psychotic disorders) with tablets at level of use 4 and an injection at level of use 2; the WHO EML 23rd List lists aripiprazole as a therapeutic alternative to risperidone in the psychosis section, not as the class example. No FDA letter pregnancy category is stated, so pregnancy_category is null."
+}

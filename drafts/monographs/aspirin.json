@@ -1,0 +1,227 @@
+{
+  "name": "Aspirin",
+  "existing_id": "7b6a45c3-05fb-4b33-9cf6-e441de89ebf1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Two distinct uses of acetylsalicylic acid are covered here and they have different mechanisms and product labels. For the cardiovascular (antiplatelet) use, acetylsalicylic acid inhibits platelet activation: by blocking platelet cyclooxygenase through acetylation it inhibits thromboxane A2 synthesis, a physiological activating substance released by platelets that plays a role in the complications of atheromatous lesions. Inhibition of TXA2 synthesis is irreversible because thrombocytes, which have no nucleus, cannot synthesise new cyclooxygenase; the effect therefore persists for the lifespan of a thrombocyte (7 to 10 days) and the enzymatic activity begins to return 24 to 48 hours after treatment is interrupted (EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 5.1). For the over-the-counter analgesic use, the US Drug Facts label describes aspirin as a nonsteroidal anti-inflammatory drug (NSAID) used for pain relief, without stating a mechanism of action (Bayer Low Dose Aspirin 81 mg Drug Facts, Active ingredient section).",
+    "indications": [
+      "Over-the-counter analgesic use (81 mg enteric-coated tablets): for the temporary relief of minor aches and pains, or as recommended by a doctor; because of its delayed release action this product will not provide fast relief of headache or symptoms needing immediate relief (Bayer Low Dose Aspirin 81 mg Drug Facts, Uses; Ecotrin 81 mg Low Strength Drug Facts, Uses)",
+      "Over-the-counter analgesic use (81 mg enteric-coated tablets): temporarily relieves minor aches and pain due to headache, minor arthritis pain, toothache, muscle pain, menstrual pain and colds (Ecotrin 81 mg Low Strength Drug Facts, Uses)",
+      "Cardiovascular use (acetylsalicylic acid 75 mg gastro-resistant tablets): secondary prevention of myocardial infarction; prevention of cardiovascular morbidity in patients with stable angina pectoris; history of unstable angina pectoris except during the acute phase; prevention of graft occlusion after coronary artery bypass grafting (CABG); coronary angioplasty except during the acute phase; and secondary prevention of transient ischaemic attacks (TIA) and ischaemic cerebrovascular accidents (CVA) provided intracerebral haemorrhages have been ruled out (EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.1)",
+      "Cardiovascular use: the 75 mg gastro-resistant product is not recommended in emergency situations and is restricted to secondary prevention with chronic treatment (EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.1)",
+      "WHO Model List of Essential Medicines, 24th list (2025): acetylsalicylic acid, tablet 100 mg, on the core list under 12.5.1 Anti-platelet medicines (WHO eEML 24th list, section 12.5.1); the same medicine is also listed at tablet 100 mg to 500 mg under 2.1 Non-opioids and non-steroidal anti-inflammatory medicines and at tablet 300 mg to 500 mg under 5.1.5.1 Medicines for acute migraine attacks",
+      "Kenya Essential Medicines List 2023: Acetylsalicylic acid (Aspirin) tablet 300 mg at level of use 2 under 3.1 Non-Opioids and Non-Steroidal Anti-Inflammatory Medicines, tablet 300 mg at level of use 2 under 8.1 For treatment of Acute Attack (antimigraine), and tablet 75 mg at level of use 4 under 14.5.1 Anti-platelet medicines (KEML 2023, items 3.1.1, 8.1.1 and 14.5.1.1)"
+    ],
+    "contraindications": [
+      "Over-the-counter 81 mg tablets: do not use if you are allergic to aspirin or any other pain reliever or fever reducer, or if you have ever had an allergic reaction to this product or any of its ingredients (Bayer Low Dose Aspirin 81 mg Drug Facts, Do not use; Ecotrin 81 mg Low Strength Drug Facts, Do not use)",
+      "Cardiovascular 75 mg gastro-resistant tablets: hypersensitivity to the active substance, to salicylic acid compounds or to prostaglandin synthetase inhibitors (for example certain asthma patients who may suffer an attack or faint), or to any of the excipients; active or history of recurrent peptic ulcer and/or gastric or intestinal haemorrhage, or other kinds of bleeding such as cerebrovascular haemorrhages; haemorrhagic diathesis and coagulation disorders such as haemophilia, hypoprothrombinaemia and thrombocytopenia; severe hepatic impairment; severe renal impairment; severe heart failure; doses greater than 100 mg/day during the third trimester of pregnancy; and methotrexate used at doses greater than 15 mg/week (EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.3)"
+    ],
+    "side_effects": [
+      "Cardiovascular 75 mg product, common adverse reactions: increased bleeding tendencies; dyspepsia (EU SmPC, section 4.8)",
+      "Cardiovascular 75 mg product, rare adverse reactions: thrombocytopenia, granulocytosis, aplastic anaemia; hypersensitivity reactions including angio-oedema, allergic oedema and anaphylactic reactions including shock; intracranial haemorrhage; haemorrhagic vasculitis; bronchospasm and asthma attacks; menorrhagia; severe gastrointestinal haemorrhage, nausea and vomiting; Stevens-Johnson syndrome, Lyell's syndrome, purpura, erythema nodosum and erythema multiforme (EU SmPC, section 4.8)",
+      "Cardiovascular 75 mg product, uncommon adverse reactions: rhinitis, dyspnoea; urticaria (EU SmPC, section 4.8)",
+      "Cardiovascular 75 mg product, adverse reactions of unknown frequency: cases of bleeding with prolonged bleeding time such as epistaxis and gingival bleeding, which may persist for 4 to 8 days after discontinuation; existing or occult gastrointestinal bleeding leading to iron deficiency anaemia (more common at higher doses); hyperuricaemia; headache and vertigo; reduced hearing ability and tinnitus; gastric or duodenal ulcers and perforation; hepatic insufficiency; and impaired renal function (EU SmPC, section 4.8)",
+      "Over-the-counter 81 mg product: the label directs users to stop use and ask a doctor for signs of stomach bleeding (feeling faint, vomiting blood, bloody or black stools, stomach pain that does not get better), an allergic reaction (seek medical help right away), ringing in the ears or loss of hearing, pain that gets worse or lasts more than 10 days, redness or swelling, and any new symptoms (Bayer Low Dose Aspirin 81 mg Drug Facts, Stop use and ask a doctor if)"
+    ],
+    "dosage": {
+      "adult": "Over-the-counter analgesic use, 81 mg enteric-coated tablets: adults and children 12 years and over take 4 to 8 tablets every 4 hours, not to exceed 48 tablets in 24 hours unless directed by a doctor, and should drink a full glass of water with each dose (Bayer Low Dose Aspirin 81 mg Drug Facts, Directions). Cardiovascular use, 75 mg gastro-resistant tablets: secondary prevention of myocardial infarction 75 to 160 mg once daily; prevention of cardiovascular morbidity in stable angina pectoris 75 to 160 mg once daily; history of unstable angina pectoris except during the acute phase 75 to 160 mg once daily; prevention of graft occlusion after CABG 75 to 160 mg once daily; coronary angioplasty except during the acute phase 75 to 160 mg once daily; secondary prevention of TIA and ischaemic CVA provided intracerebral haemorrhages have been ruled out 75 to 325 mg once daily; the tablets are restricted to secondary prevention with chronic treatment and are not recommended in emergency situations (EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.1 and 4.2). The WHO eEML lists acetylsalicylic acid 100 mg tablet for the antiplatelet indication and KEML 2023 lists the 75 mg tablet for antiplatelet use at level of use 4.",
+      "geriatric": "Cardiovascular 75 mg product: acetylsalicylic acid should be used with caution in elderly patients who are more prone to adverse events, the usual adult dose is recommended in the absence of severe renal or hepatic insufficiency, and treatment should be reviewed at regular intervals; elderly patients are particularly susceptible to NSAID adverse effects, especially gastrointestinal bleeding and perforation which may be fatal (EU SmPC, sections 4.2 and 4.4). Over-the-counter 81 mg product: the chance of severe stomach bleeding is higher if the user is 60 or older (Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning). No numeric geriatric dose reduction is specified in either product label.",
+      "paediatric": "Over-the-counter 81 mg product: children under 12 years - ask a doctor, or do not use unless directed by a doctor; children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use the product because of the risk of Reye's syndrome (Bayer Low Dose Aspirin 81 mg Drug Facts, Directions and Reye's syndrome warning; Ecotrin 81 mg Low Strength Drug Facts, Directions). Cardiovascular 75 mg product: acetylsalicylic acid should not be administered to children and adolescents younger than 16 years, except on medical advice where the benefit outweighs the risk, and the product is not recommended in adolescents or children under 16 years unless the expected benefits outweigh the risks because acetylsalicylic acid may be a contributory factor in the causation of Reye's syndrome in some children (EU SmPC, sections 4.2 and 4.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Methotrexate used at doses greater than 15 mg/week is contraindicated with acetylsalicylic acid because of enhanced haematological toxicity from reduced renal clearance of methotrexate (EU SmPC, sections 4.3 and 4.5)",
+      "Anticoagulants such as coumarin, heparin and warfarin, and thrombolytics: increased risk of bleeding due to inhibition of thrombocyte function, injury of the duodenal mucosa and displacement of oral anticoagulants from plasma protein binding sites; bleeding time should be monitored (EU SmPC, section 4.5)",
+      "Antiplatelet agents such as clopidogrel and dipyridamole, and selective serotonin reuptake inhibitors such as sertraline or paroxetine: increased risk of gastrointestinal bleeding (EU SmPC, section 4.5)",
+      "Other NSAIDs: increased risk of ulceration and gastrointestinal bleeding due to synergistic effects (EU SmPC, section 4.5)",
+      "Ibuprofen: experimental data suggest that ibuprofen may inhibit the effect of low-dose acetylsalicylic acid on platelet aggregation when dosed concomitantly; a single 400 mg dose of ibuprofen taken within 8 hours before or within 30 minutes after immediate-release acetylsalicylic acid 81 mg reduced the effect of acetylsalicylic acid on thromboxane formation and platelet aggregation, although no firm conclusions can be drawn for regular ibuprofen use and no clinically relevant effect is considered likely for occasional use (EU SmPC, sections 4.5 and 5.1)",
+      "Metamizole may reduce the effect of acetylsalicylic acid on platelet aggregation when taken concomitantly, so the combination should be used with caution in patients taking low-dose acetylsalicylic acid for cardioprotection (EU SmPC, section 4.5)",
+      "Diuretics and antihypertensives: NSAIDs may decrease the antihypertensive effect of diuretics and other antihypertensive agents, and concomitant administration with ACE inhibitors increases the risk of acute renal insufficiency; diuretics carry a risk of acute renal failure due to decreased glomerular filtration via decreased renal prostaglandin synthesis, so hydration and renal function monitoring at the start of treatment are recommended (EU SmPC, section 4.5)",
+      "Systemic corticosteroids: the risk of gastrointestinal ulceration and bleeding may be increased when acetylsalicylic acid and corticosteroids are co-administered (EU SmPC, sections 4.4 and 4.5)",
+      "Antidiabetics such as sulphonylureas and insulin: salicylates may increase the hypoglycaemic effect, so downward dose adjustment of the antidiabetic may be appropriate if large doses of salicylates are used (EU SmPC, sections 4.4 and 4.5)",
+      "Digoxin and lithium: acetylsalicylic acid impairs the renal excretion of digoxin and lithium, resulting in increased plasma concentrations; monitoring of plasma concentrations is recommended when initiating and terminating treatment (EU SmPC, section 4.5)",
+      "Uricosuric agents such as probenecid: salicylates reverse the effect of probenecid, so the combination should be avoided (EU SmPC, section 4.5)",
+      "Carbonic anhydrase inhibitors such as acetazolamide may result in severe acidosis and increased central nervous system toxicity (EU SmPC, section 4.5)",
+      "Ciclosporin and tacrolimus: concomitant use may increase the nephrotoxic effect, so renal function should be monitored (EU SmPC, section 4.5)",
+      "Valproate and phenytoin: acetylsalicylic acid decreases the binding of valproate to serum albumin, increasing free valproate concentrations at steady state, and salicylate diminishes the binding of phenytoin to plasma albumin, potentially lowering total phenytoin levels while increasing the free fraction (EU SmPC, section 4.5)",
+      "Alcohol: concomitant administration of alcohol and acetylsalicylic acid increases the risk of gastrointestinal bleeding (EU SmPC, section 4.5)",
+      "Over-the-counter 81 mg product: the chance of severe stomach bleeding is higher if the user takes a blood thinning (anticoagulant) or steroid drug, or takes other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen or others); users are told to ask a doctor before use if taking a diuretic, and to ask a doctor or pharmacist before use if taking a prescription drug for gout, diabetes or arthritis (Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning, Ask a doctor before use if, Ask a doctor or pharmacist before use if)"
+    ],
+    "monitoring": "Cardiovascular 75 mg product: patients should report any unusual bleeding symptoms to their physician, and treatment should be withdrawn if gastrointestinal bleeding or ulceration occurs; bleeding time should be monitored when used with anticoagulants; liver function tests should be performed regularly in patients with slight or moderate hepatic insufficiency; treatment should be reviewed at regular intervals in elderly patients and where prolonged therapy is required (EU SmPC, sections 4.2 and 4.4). Over-the-counter 81 mg product: users are told to stop use and seek medical help for signs of stomach bleeding, an allergic reaction, new symptoms, ringing in the ears or loss of hearing, or pain that persists or worsens (Bayer Low Dose Aspirin 81 mg Drug Facts, Stop use and ask a doctor if).",
+    "patient_counselling": "Over-the-counter 81 mg product: drink a full glass of water with each dose; do not exceed the stated dose or duration; children and teenagers recovering from chicken pox or flu-like symptoms should not use the product and behavioural change with nausea and vomiting may be an early sign of Reye's syndrome and requires consulting a doctor; seek medical help right away for an allergic reaction; seek medical help for signs of stomach bleeding (feeling faint, vomiting blood, bloody or black stools, stomach pain that does not get better); stop use for ringing in the ears or loss of hearing; if pregnant or breast-feeding, ask a health professional before use, and it is especially important not to use aspirin at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery; keep out of reach of children and in case of overdose get medical help or contact a Poison Control Center (1-800-222-1222) right away (Bayer Low Dose Aspirin 81 mg Drug Facts; Ecotrin 81 mg Low Strength Drug Facts). Cardiovascular 75 mg product: swallow tablets whole with sufficient fluid (about half a glass of water) and do not crush, break or chew them because the gastro-resistant coating prevents irritant effects on the gut; report any unusual bleeding to the prescriber; stop treatment at the first appearance of skin rash, mucosal lesions or any other sign of hypersensitivity; use with caution before surgery including tooth extraction, as temporary discontinuation may be necessary (EU SmPC, sections 4.2, 4.4 and 4.8).",
+    "warnings": [
+      "Reye's syndrome: children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product; behavioural change with nausea and vomiting may be an early sign of Reye's syndrome, a rare but serious illness (Bayer Low Dose Aspirin 81 mg Drug Facts, Reye's syndrome warning)",
+      "Allergy alert: aspirin may cause a severe allergic reaction which may include hives, facial swelling, asthma (wheezing) and shock (Bayer Low Dose Aspirin 81 mg Drug Facts, Allergy alert)",
+      "Stomach bleeding warning: this product contains an NSAID, which may cause severe stomach bleeding; the chance is higher if the user is 60 or older, has had stomach ulcers or bleeding problems, takes a blood thinning (anticoagulant) or steroid drug, takes other drugs containing prescription or nonprescription NSAIDs, has 3 or more alcoholic drinks every day while using the product, or takes more than or for a longer time than directed (Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning)",
+      "Aspirin 75 mg gastro-resistant tablets are not suitable for use as an anti-inflammatory, analgesic or antipyretic, and are not recommended in adolescents or children under 16 years unless the expected benefits outweigh the risks (EU SmPC, section 4.4)",
+      "There is an increased risk of haemorrhage particularly during or after operative procedures, even in minor procedures such as tooth extraction; treatment should be withdrawn if gastrointestinal bleeding or ulceration occurs (EU SmPC, section 4.4)",
+      "Acetylsalicylic acid may promote bronchospasm and asthma attacks or other hypersensitivity reactions, particularly in patients with existing asthma, hay fever, nasal polyps or chronic respiratory disease (EU SmPC, section 4.4)",
+      "Serious skin reactions, including Stevens-Johnson syndrome, have rarely been reported; the product should be discontinued at the first appearance of skin rash, mucosal lesions or any other sign of hypersensitivity (EU SmPC, sections 4.4 and 4.8)",
+      "Elderly patients are particularly susceptible to NSAID adverse effects, especially gastrointestinal bleeding and perforation which may be fatal (EU SmPC, section 4.4)"
+    ],
+    "precautions": [
+      "Aspirin 75 mg gastro-resistant tablets are not recommended during menorrhagia, where it may increase menstrual bleeding (EU SmPC, section 4.4)",
+      "Use with caution in uncontrolled hypertension and in patients with a past history of gastric or duodenal ulcer or haemorrhagic episodes, or who are receiving anticoagulants (EU SmPC, section 4.4)",
+      "Use with caution in moderately impaired renal or hepatic function (contraindicated if severe) and in dehydrated patients, since NSAID use may result in deterioration of renal function (EU SmPC, section 4.4)",
+      "Acetylsalicylic acid in low doses reduces uric acid excretion, so patients who tend to have reduced uric acid excretion may experience gout attacks (EU SmPC, sections 4.4 and 4.5)",
+      "The risk of hypoglycaemic effect with sulfonylureas and insulins may be potentiated when aspirin is taken at overdosage (EU SmPC, sections 4.4 and 4.5)",
+      "Concomitant treatment with other drugs that alter haemostasis (anticoagulants, thrombolytic and antiplatelet agents, anti-inflammatory drugs and SSRIs) is not recommended unless strictly indicated because they may enhance the risk of haemorrhage; if the combination cannot be avoided, close observation for signs of bleeding is recommended (EU SmPC, section 4.4)",
+      "Caution is advised in patients receiving concomitant medications that could increase the risk of ulceration, such as oral corticosteroids, selective serotonin reuptake inhibitors and deferasirox (EU SmPC, section 4.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe gastrointestinal haemorrhage, and gastric or duodenal ulcers and perforation (EU SmPC, section 4.8)",
+      "Intracranial haemorrhage and haemorrhagic vasculitis (EU SmPC, section 4.8)",
+      "Hypersensitivity reactions, angio-oedema, allergic oedema and anaphylactic reactions including shock (EU SmPC, section 4.8)",
+      "Bronchospasm and asthma attacks (EU SmPC, section 4.8)",
+      "Stevens-Johnson syndrome and Lyell's syndrome (EU SmPC, section 4.8)",
+      "Salicylate (aspirin) intoxication, with tinnitus, hearing disorders, headache, vertigo, confusion, gastrointestinal symptoms and, in severe cases, acid-base disturbance, convulsions, hallucinations, hypoglycaemia and coma (EU SmPC, section 4.9)"
+    ],
+    "food_interactions": [
+      "Alcohol: concomitant administration of alcohol and acetylsalicylic acid increases the risk of gastrointestinal bleeding, and the over-the-counter label warns that the chance of severe stomach bleeding is higher in people who have 3 or more alcoholic drinks every day while using the product (EU SmPC, section 4.5; Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning)",
+      "Food: after the 75 mg gastro-resistant tablet, maximum plasma levels of acetylsalicylic acid and salicylic acid are reached about 5 and 6 hours respectively in the fasted state, and if the tablets are taken with food, maximum plasma levels are reached approximately 3 hours later than in the fasted state (EU SmPC, section 5.2)"
+    ],
+    "pregnancy_category": "The FDA letter categories are obsolete and no letter category is stated in the EU SmPC for the 75 mg cardiovascular product. The EU SmPC contraindicates doses greater than 100 mg/day during the third trimester of pregnancy (EU SmPC, sections 4.3 and 4.6). The US over-the-counter label advises that it is especially important not to use aspirin at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor (Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding).",
+    "pregnancy_guidance": "Cardiovascular 75 mg product: doses up to 100 mg/day for restricted obstetric use appear safe; there is insufficient clinical experience for doses above 100 mg/day up to 500 mg/day, so the recommendations for doses of 500 mg/day and above also apply to that range. Inhibition of prostaglandin synthesis may adversely affect the pregnancy and/or embryo-foetal development; epidemiological data suggest an increased risk of miscarriage and of cardiac malformation and gastroschisis after use of a prostaglandin synthesis inhibitor in early pregnancy, with the absolute risk of cardiovascular malformation increasing from less than 1% to approximately 1.5%, and the risk believed to increase with dose and duration. During the first and second trimester, acetylsalicylic acid should not be given unless clearly necessary, and if used by a woman attempting to conceive the dose should be kept as low and the duration of treatment as short as possible. During the third trimester all prostaglandin synthesis inhibitors may expose the foetus to cardiopulmonary toxicity, renal dysfunction and prolonged bleeding time, and may inhibit uterine contractions causing delayed or prolonged labour, so acetylsalicylic acid at doses of 100 mg/day and higher is contraindicated during the third trimester (EU SmPC, section 4.6). Over-the-counter 81 mg product: if pregnant or breast-feeding, ask a health professional before use; it is especially important not to use aspirin at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery (Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding).",
+    "lactation_guidance": "Cardiovascular 75 mg product: low quantities of salicylates and their metabolites are excreted into breast milk; since adverse effects for the infant have not been reported, short-term use of the recommended dose does not require suspending lactation, but in cases of long-term use and/or administration of higher doses breastfeeding should be discontinued (EU SmPC, section 4.6). Over-the-counter 81 mg product: if pregnant or breast-feeding, ask a health professional before use (Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding).",
+    "overdose": "Cardiovascular 75 mg product: the toxic dose is about 200 mg/kg in adults and 100 mg/kg in children, and the lethal dose of acetylsalicylic acid is 25 to 30 grams; plasma salicylate concentrations above 300 mg/L indicate intoxication, and concentrations around 500 mg/L in adults and 300 mg/L in children generally caused severe toxicity; overdose may be harmful for elderly patients and particularly for small children, where therapeutic overdose or frequent accidental intoxications may be fatal. Moderate intoxication presents with tinnitus, hearing disorders, headache, vertigo, confusion and gastrointestinal symptoms; severe intoxication causes severe disruption of the acid-base balance with respiratory alkalosis followed by respiratory acidosis and metabolic acidosis, and may cause hyperthermia, perspiration, dehydration, restlessness, convulsions, hallucinations, hypoglycaemia, coma, cardiovascular collapse or respiratory arrest. If a toxic dose has been ingested, hospital admission is required; in moderate intoxication induce vomiting, then attempt gastric lavage during the first hour, then administer activated charcoal (single dose of 50 g for an adult, 1 g/kg body weight for a child up to 12 years) with sodium sulphate, and alkalinise the urine (250 mmol NaHCO3 for three hours) while checking urine pH; in severe intoxication perform haemodialysis, and treat other symptoms symptomatically (EU SmPC, section 4.9). Over-the-counter 81 mg product: in case of overdose get medical help or contact a Poison Control Center (1-800-222-1222) right away (Bayer Low Dose Aspirin 81 mg Drug Facts, Keep out of reach of children).",
+    "pharmacokinetics": "Cardiovascular 75 mg product: after oral administration acetylsalicylic acid is rapidly and completely absorbed from the gastrointestinal tract, with the proximal small intestine as the principal site of absorption, and a significant portion of the dose is hydrolysed to salicylic acid in the intestinal wall; after the 75 mg gastro-resistant tablet, maximum plasma levels of acetylsalicylic acid and salicylic acid are reached after about 5 and 6 hours respectively in the fasted state, and approximately 3 hours later if taken with food. Both acetylsalicylic acid and salicylic acid are extensively bound to plasma proteins, primarily albumin, and are distributed rapidly into all parts of the body; the volume of distribution of acetylsalicylic acid is approximately 0.16 L/kg body weight. Acetylsalicylic acid is rapidly metabolised to salicylic acid with a half-life of 15 to 30 minutes, and salicylic acid is predominantly converted to glycine glucuronic acid conjugates; elimination of salicylic acid is dose-dependent, with half-times of 2 to 3 hours after low doses, 12 hours after usual analgesic doses and 15 to 30 hours after high therapeutic doses or intoxication, and salicylic acid and its metabolites are predominantly excreted via the kidneys (EU SmPC, section 5.2). Pharmacodynamics: repeated doses from 20 to 325 mg involve inhibition of enzymatic activity from 30 to 95%, acetylsalicylic acid extends bleeding time on average by approximately 50 to 100% with individual variation, and the effect persists for the lifespan of the thrombocyte (7 to 10 days) (EU SmPC, section 5.1).",
+    "clinical_pearls": [
+      "Aspirin has two distinct product categories that should not be conflated: the over-the-counter 81 mg analgesic tablet (a nonsteroidal anti-inflammatory drug used for minor aches and pains, with a Reye's syndrome warning and a maximum of 48 tablets in 24 hours), and the low-dose cardiovascular tablet used for antiplatelet secondary prevention, which is explicitly stated in the EU SmPC to be unsuitable for use as an anti-inflammatory, analgesic or antipyretic (Bayer Low Dose Aspirin 81 mg Drug Facts; EU SmPC, sections 4.1 and 4.4).",
+      "Platelet inhibition by acetylsalicylic acid is irreversible and lasts for the 7 to 10 day lifespan of the platelet, so the antiplatelet effect does not exhaust with prolonged treatment and enzymatic activity resumes 24 to 48 hours after stopping (EU SmPC, section 5.1).",
+      "Gastrointestinal bleeding is the dominant toxicity of both the analgesic and the cardiovascular product, and the over-the-counter label lists the specific risk factors: age 60 or older, previous stomach ulcers or bleeding, anticoagulant or steroid use, other NSAIDs, three or more alcoholic drinks a day, and taking more than or for longer than directed (Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning).",
+      "Concomitant ibuprofen can blunt the antiplatelet effect of low-dose aspirin; a single 400 mg dose of ibuprofen taken within 8 hours before or within 30 minutes after immediate-release aspirin 81 mg reduced thromboxane formation and platelet aggregation (EU SmPC, sections 4.5 and 5.1).",
+      "Reye's syndrome is the specific paediatric hazard and is the reason the over-the-counter product is contraindicated in children and teenagers recovering from chicken pox or flu-like symptoms, and the reason the cardiovascular product is not recommended under 16 years (Bayer Low Dose Aspirin 81 mg Drug Facts; EU SmPC, section 4.4).",
+      "For the Kenyan context, KEML 2023 lists acetylsalicylic acid (aspirin) as a 300 mg tablet at level of use 2 for pain and as a 75 mg tablet at level of use 4 for antiplatelet use, i.e. Kenya lists the same molecule at two different strengths for two different purposes (KEML 2023, items 3.1.1 and 14.5.1.1).",
+      "The WHO eEML 24th list places acetylsalicylic acid 100 mg tablet on the core list as an antiplatelet medicine and also lists it in the non-opioid NSAID and acute migraine sections, and in the fixed-dose combinations for prevention of atherosclerotic cardiovascular disease (WHO eEML 24th list, sections 2.1, 5.1.5.1, 12.5.1 and 12.7)."
+    ],
+    "brand_names": ["Bayer Low Dose Aspirin", "Ecotrin", "Bayer Aspirin"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No numeric renal dose adjustment is specified. The 75 mg cardiovascular product is contraindicated in severe renal impairment and should be used with caution in moderate impairment or in dehydrated patients, since NSAID use may result in deterioration of renal function (EU SmPC, sections 4.3 and 4.4). The over-the-counter label tells users with kidney disease to ask a doctor before use (Bayer Low Dose Aspirin 81 mg Drug Facts, Ask a doctor before use if).",
+    "hepatic_dose_adjustment": "No numeric hepatic dose adjustment is specified. The 75 mg cardiovascular product is contraindicated in severe hepatic impairment, should be used with caution in moderate impairment, and liver function tests should be performed regularly in patients with slight or moderate hepatic insufficiency (EU SmPC, sections 4.3 and 4.4). The over-the-counter label tells users with liver cirrhosis to ask a doctor before use (Bayer Low Dose Aspirin 81 mg Drug Facts, Ask a doctor before use if).",
+    "administration_instructions": "Over-the-counter 81 mg enteric-coated tablet: drink a full glass of water with each dose; adults and children 12 years and over take 4 to 8 tablets every 4 hours while symptoms last, not to exceed 48 tablets in 24 hours unless directed by a doctor; children under 12 years should ask a doctor; keep out of reach of children; store at room temperature (25 degrees C), avoiding excessive heat and humidity (Bayer Low Dose Aspirin 81 mg Drug Facts, Directions and Other information; Ecotrin 81 mg Low Strength Drug Facts). Cardiovascular 75 mg gastro-resistant tablet: for oral use, swallow the tablets whole with sufficient fluid (about half a glass of water) and do not crush, break or chew them, because the gastro-resistant coating prevents irritant effects on the gut; duration of administration is long-term treatment with the lowest possible dose; store below 25 degrees C, keeping blister packs in the original packaging and tablet containers tightly closed to protect from moisture; shelf life 2 years (EU SmPC, sections 4.2, 6.3 and 6.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 5.1; Bayer Low Dose Aspirin 81 mg Drug Facts, Active ingredient",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts, Uses; Ecotrin 81 mg Low Strength Drug Facts, Uses; EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.1; WHO eEML 24th list (2025), sections 2.1, 5.1.5.1 and 12.5.1; Kenya Essential Medicines List 2023, items 3.1.1, 8.1.1 and 14.5.1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=075b103e-0bb4-4b7a-ac0e-5645bcbd0a07"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts, Do not use; Ecotrin 81 mg Low Strength Drug Facts, Do not use; EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.3",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.8; Bayer Low Dose Aspirin 81 mg Drug Facts, Stop use and ask a doctor if",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts, Directions; Ecotrin 81 mg Low Strength Drug Facts, Directions; EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.1, 4.2 and 4.4; WHO eEML 24th list; KEML 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=222d187b-aae6-410b-baeb-b2bd42f5c676"
+    },
+    {
+      "field": "interactions",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.3, 4.4 and 4.5; Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning and Ask a doctor sections",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.2 and 4.4; Bayer Low Dose Aspirin 81 mg Drug Facts, Stop use and ask a doctor if",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts; Ecotrin 81 mg Low Strength Drug Facts; EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.2, 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=075b103e-0bb4-4b7a-ac0e-5645bcbd0a07"
+    },
+    {
+      "field": "warnings",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts, Reye's syndrome, Allergy alert and Stomach bleeding warnings; EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.1, 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=075b103e-0bb4-4b7a-ac0e-5645bcbd0a07"
+    },
+    {
+      "field": "precautions",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.4 and 4.5",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.8 and 4.9",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.5 and 5.2; Bayer Low Dose Aspirin 81 mg Drug Facts, Stomach bleeding warning",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.3 and 4.6; Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.6; Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.6; Bayer Low Dose Aspirin 81 mg Drug Facts, If pregnant or breast-feeding",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, section 4.9; Bayer Low Dose Aspirin 81 mg Drug Facts, Keep out of reach of children",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 5.1 and 5.2",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts; Ecotrin 81 mg Low Strength Drug Facts; EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.1, 4.4, 4.5 and 5.1; WHO eEML 24th list; KEML 2023",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "BAYER LOW DOSE aspirin tablet and ECOTRIN aspirin tablet are the aspirin brand products listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=222d187b-aae6-410b-baeb-b2bd42f5c676"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the US over-the-counter Drug Facts labelling for aspirin 81 mg or in the EU SmPC for Aspirin 75 mg gastro-resistant tablets; the field is left as an empty array rather than asserting a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=075b103e-0bb4-4b7a-ac0e-5645bcbd0a07"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.3 and 4.4; Bayer Low Dose Aspirin 81 mg Drug Facts, Ask a doctor before use if",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.3 and 4.4; Bayer Low Dose Aspirin 81 mg Drug Facts, Ask a doctor before use if",
+      "url": "https://assets.hpra.ie/products/Human/15229/Licence_PA0126-246-001_24022020102339.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Bayer Low Dose Aspirin 81 mg Drug Facts, Directions and Other information; Ecotrin 81 mg Low Strength Drug Facts, Directions; EU SmPC for Aspirin 75 mg gastro-resistant tablets, sections 4.2, 6.3 and 6.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=075b103e-0bb4-4b7a-ac0e-5645bcbd0a07"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult regimens for both the over-the-counter analgesic and the cardiovascular product are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; product-specific paediatric restrictions are given in fields.dosage.paediatric)",
+    "black_box_warnings (none is present in the US over-the-counter Drug Facts labelling or in the EU SmPC for acetylsalicylic acid 75 mg; the field is left as an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Aspirin' with brand name 'Low Dose Aspirin'. Aspirin is covered here as two separate product categories with different labels, and the distinction is stated throughout: (1) the US over-the-counter 81 mg enteric-coated analgesic tablet (DailyMed BAYER LOW DOSE setid 075b103e-0bb4-4b7a-ac0e-5645bcbd0a07 and ECOTRIN 81 mg Low Strength setid 222d187b-aae6-410b-baeb-b2bd42f5c676, both OTC monograph labels), and (2) the low-dose cardiovascular/antiplatelet tablet, for which no US prescription label exists; the authoritative source used is the European SmPC for Aspirin 75 mg gastro-resistant tablets (HPRA marketing authorisation PA0126-246-001), supplemented by the WHO Model List of Essential Medicines, 24th list (2025) and the Kenya Essential Medicines List 2023. There is no FDA boxed warning for aspirin in either product category. FDA pregnancy letter categories are obsolete and are not reported because the US label does not state one; the pregnancy and lactation content comes from the EU SmPC section 4.6 and from the US Drug Facts pregnancy statement. Atovaquone + proguanil (Malarone) and other aspirin-containing combination products are not covered here. A note on the FDA cardiovascular labelling: DailyMed carries no US prescription labelling for low-dose aspirin for cardiovascular indications, so this draft does not attribute a US label to that use."
+}

@@ -1,0 +1,191 @@
+{
+  "name": "Ascorbic Acid",
+  "existing_id": "163e5584-d2d0-4a3a-991b-f5ccd73790e7",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Ascorbic acid (vitamin C) is used to treat scurvy, a disorder caused by severe deficiency in vitamin C. The exact mechanism of action of ascorbic acid for the treatment of the symptoms and signs of scurvy is unknown; however, administration of ascorbic acid in patients with scurvy is thought to restore the body pool of ascorbic acid (FDA ascorbic acid injection label, section 12.1). Ascorbic acid is distributed widely in the body, with large concentrations found in the liver, leukocytes, platelets, glandular tissues and the lens of the eye, and it is known from oral exposure data to be distributed into breast milk and to cross the placental barrier (FDA ascorbic acid injection label, section 12.3). A major route of metabolism involves its conversion to urinary oxalate, presumably through intermediate formation of its oxidised product, dehydroascorbic acid (section 12.3).",
+    "indications": [
+      "Treatment of scurvy: ascorbic acid is listed on the WHO Model List of Essential Medicines (Core, EMLc) with the single indication 'Scurvy' and the oral solid formulation 50 mg (WHO eEML, ascorbic acid, recommendation 332)",
+      "Ascorbic acid injection: short-term (up to 1 week) treatment of scurvy in adult and paediatric patients, age 5 months and older, for whom oral administration is not possible, insufficient or contraindicated. Limitation of use: ascorbic acid injection is not indicated for the treatment of vitamin C deficiency that is not associated with signs and symptoms of scurvy (FDA ascorbic acid injection label, section 1)",
+      "Kenya Essential Medicines List 2023: ascorbic acid (vitamin C) tablets of 50 mg, 250 mg and 1 g at Level of Use 2 (dispensary/clinic), with the notes '1 g - added for treatment in adults' and '250 mg - added for treatment in paediatric'; water-soluble vitamins containing vitamin C and B-complex are available as a 10 mL solution for IV infusion at Level of Use 4 (primary hospital) (KEML 2023, sections 32.1 and 33.1.1.8)",
+      "Tri-Vite Drops with Fluoride (oral solution containing ascorbic acid 35 mg per 1 mL with vitamin A, vitamin D and sodium fluoride): supplementation of the diet with vitamins A, C and D, and provision of fluoride for caries prophylaxis in children 6 months to 6 years of age (DailyMed Tri-Vite Drops with Fluoride label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Ascorbic acid injection: none (FDA ascorbic acid injection label, section 4)"
+    ],
+    "side_effects": [
+      "Acute and chronic oxalate nephropathy and nephrolithiasis have occurred with prolonged administration of high doses of ascorbic acid (FDA ascorbic acid injection label, sections 5.1 and 6)",
+      "Severe haemolysis has occurred in patients with glucose-6-phosphate dehydrogenase deficiency (FDA ascorbic acid injection label, sections 5.2 and 6)",
+      "Rapid intravenous administration (>250 mg/minute) of ascorbic acid injection may cause temporary faintness or nausea, lethargy, flushing, dizziness and headache (FDA ascorbic acid injection label, section 6)",
+      "Administration site reactions (pain and swelling) have been reported with ascorbic acid (FDA ascorbic acid injection label, section 6)",
+      "Ascorbic acid may interfere with laboratory tests based on oxidation-reduction reactions, including blood and urine glucose testing, nitrite and bilirubin levels, and leucocyte count testing, potentially producing false-negative results during or within 24 hours after infusion (FDA ascorbic acid injection label, sections 5.3 and 7.4)",
+      "Oral vitamin C preparations: allergic rash and other idiosyncrasies have been rarely reported (DailyMed Tri-Vite Drops with Fluoride label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Ascorbic acid injection: 200 mg once daily, infused at a rate of 33 mg/minute of diluted solution, for adults and paediatric patients 11 years and older. The recommended maximum duration of daily treatment with ascorbic acid injection is seven days; if no improvement in scorbutic symptoms is observed after one week of treatment, retreat until resolution of scorbutic symptoms is observed (FDA ascorbic acid injection label, sections 2.1 and 2.2). Women who are pregnant or lactating and patients with glucose-6-phosphate dehydrogenase deficiency should not exceed the US Recommended Dietary Allowance (RDA) or daily Adequate Intake level for ascorbic acid for their age group and condition (section 2.3). Oral: the WHO eEML lists the oral solid formulation as 50 mg for scurvy (WHO eEML, ascorbic acid, recommendation 332); KEML 2023 lists 50 mg, 250 mg and 1 g tablets (KEML 2023, section 32.1).",
+      "geriatric": "Glomerular filtration rate is known to decrease with age and as such may increase the risk for oxalate nephropathy following ascorbic acid administration in the elderly population (FDA ascorbic acid injection label, section 8.5).",
+      "paediatric": "Ascorbic acid injection: 50 mg once daily, infused at 1.3 mg/minute, for paediatric patients aged 5 months to less than 12 months; 100 mg once daily, infused at 3.3 mg/minute, for paediatric patients aged 1 year to less than 11 years; 200 mg once daily, infused at 33 mg/minute, for paediatric patients 11 years and older. Repeat dosing is not recommended in paediatric patients less than 11 years of age. Ascorbic acid injection is indicated for children age 5 months and older and is not indicated for use in paediatric patients less than 5 months of age (FDA ascorbic acid injection label, sections 2.2 and 8.4). Tri-Vite Drops with Fluoride: 1.0 mL daily or as directed by a physician, for children 6 months to 6 years of age (DailyMed Tri-Vite Drops with Fluoride label, DOSAGE AND ADMINISTRATION)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antibiotics: ascorbic acid may decrease the activities of erythromycin, kanamycin, streptomycin, doxycycline and lincomycin, and bleomycin is inactivated in vitro by ascorbic acid; if antibiotic efficacy is suspected to be decreased, discontinue ascorbic acid administration (FDA ascorbic acid injection label, section 7.1)",
+      "Amphetamine and other drugs affected by urine acidification: ascorbic acid may acidify the urine, lower serum amphetamine concentrations by increasing renal excretion, and alter the excretion and plasma concentrations of other drugs sensitive to urine pH (for example fluphenazine); standard monitoring of therapy is warranted (FDA ascorbic acid injection label, section 7.2)",
+      "Warfarin: limited case reports have suggested interference of ascorbic acid with the anticoagulation effects of warfarin; however, in patients on warfarin treated with ascorbic acid doses up to 1000 mg/day for 2 weeks no effect was observed. Standard monitoring for anticoagulation therapy should continue during ascorbic acid treatment (FDA ascorbic acid injection label, section 7.3)",
+      "Laboratory test interference: as a strong reducing agent, ascorbic acid can interfere with numerous oxidation-reduction laboratory tests (glucose, nitrite, bilirubin levels, leucocyte count) and may lead to inaccurate false-negative results if tested during or within 24 hours after infusion (FDA ascorbic acid injection label, section 7.4)"
+    ],
+    "monitoring": "Monitor renal function in patients at increased risk of oxalate nephropathy - patients with renal disease including renal impairment, a history of oxalate kidney stones, geriatric patients, and paediatric patients less than 2 years of age - and discontinue ascorbic acid injection in patients who develop oxalate nephropathy (FDA ascorbic acid injection label, section 5.1). In patients with glucose-6-phosphate dehydrogenase deficiency, monitor haemoglobin and blood count, use a reduced dose, and discontinue treatment if haemolysis is suspected (section 5.2). If possible, delay laboratory tests based on oxidation-reduction reactions until 24 hours after infusion of ascorbic acid injection (section 5.3). Ascorbic acid injection should be used with caution in scorbutic patients with a history of or risk of developing renal oxalate stones or evidence of renal impairment, including patients on dialysis, patients with diabetic nephropathy and renal transplant recipients (section 8.6). For oral vitamin C preparations, dental fluorosis should be prevented by not exceeding the suggested dose of fluoride-containing products such as Tri-Vite Drops with Fluoride (DailyMed Tri-Vite Drops with Fluoride label, PRECAUTIONS).",
+    "patient_counselling": "Inform patients that treatment with ascorbic acid injection may increase their risk of oxalate nephropathy (FDA ascorbic acid injection label, section 17). Inform patients that treatment with ascorbic acid injection may impact laboratory results, including blood and urine glucose tests, up to 24 hours after infusion (section 17). Inform patients with glucose-6-phosphate dehydrogenase deficiency that treatment with ascorbic acid injection may increase their risk of haemolysis (section 17). Advise parents and carers of children receiving Tri-Vite Drops with Fluoride that the suggested dose should not be exceeded since dental fluorosis may result from continued ingestion of large amounts of fluoride, that the fluoride content of drinking water should be determined before fluoride supplements are prescribed, that the child should not be receiving significant amounts of fluoride from other medicines and swallowed toothpaste, and that the child should be checked periodically for significant dental fluorosis (DailyMed Tri-Vite Drops with Fluoride label, PRECAUTIONS and DOSAGE AND ADMINISTRATION). Advise that Tri-Vite Drops with Fluoride may be dropped directly into the mouth with the dropper or mixed with cereal, fruit juice or other food (DailyMed Tri-Vite Drops with Fluoride label, DOSAGE AND ADMINISTRATION).",
+    "warnings": [
+      "Oxalate nephropathy and nephrolithiasis: acute and chronic oxalate nephropathy have been reported with prolonged administration of high doses of ascorbic acid, and acidification of the urine by ascorbic acid may cause precipitation of cysteine, urate or oxalate stones; patients with renal disease including renal impairment, a history of oxalate kidney stones, and geriatric patients may be at increased risk, and paediatric patients less than 2 years of age may be at increased risk because their kidneys are immature (FDA ascorbic acid injection label, section 5.1)",
+      "Haemolysis: haemolysis has been reported with administration of ascorbic acid in patients with glucose-6-phosphate dehydrogenase deficiency, who may be at increased risk for severe haemolysis; monitor haemoglobin and blood count and use a reduced dose, and discontinue treatment if haemolysis is suspected (FDA ascorbic acid injection label, section 5.2)",
+      "Laboratory test interference: ascorbic acid may interfere with laboratory tests based on oxidation-reduction reactions, including blood and urine glucose testing, nitrite and bilirubin levels, and leucocyte count testing; if possible, such tests should be delayed until 24 hours after infusion (FDA ascorbic acid injection label, section 5.3)",
+      "Ascorbic acid injection is not indicated for prolonged administration; the maximum recommended duration is one week (FDA ascorbic acid injection label, sections 5.1 and 2.2)"
+    ],
+    "precautions": [
+      "Ascorbic acid injection must be diluted before use and administered as a slow intravenous infusion; it must never be given as an undiluted intravenous injection, and the final infusion solution must be isotonic (FDA ascorbic acid injection label, sections 2.1 and 2.2)",
+      "Ascorbic acid injection is supplied as a Pharmacy Bulk Package and is intended for dispensing of single doses to multiple patients in a pharmacy admixture programme: use only in a suitable ISO Class 5 work area, penetrate each vial closure only once, complete all dispensing within 4 hours of first puncture, and use each dose immediately, discarding the unused portion (FDA ascorbic acid injection label, section 2.1)",
+      "Minimise exposure to light because ascorbic acid injection is light sensitive; do not mix with solutions containing elemental compounds that can be reduced, for example copper (FDA ascorbic acid injection label, section 2.1)",
+      "Follow the US Recommended Dietary Allowances for pregnant women and for lactating women when considering use of ascorbic acid injection for treatment of scurvy (FDA ascorbic acid injection label, sections 2.3, 8.1 and 8.2)",
+      "For Tri-Vite Drops with Fluoride: the suggested dose should not be exceeded since dental fluorosis may result from continued ingestion of large amounts of fluoride, and the product should be dispensed in the original plastic container because contact with glass leads to instability and precipitation (DailyMed Tri-Vite Drops with Fluoride label, PRECAUTIONS)"
+    ],
+    "serious_adverse_reactions": [
+      "Acute and chronic oxalate nephropathy and nephrolithiasis with prolonged high-dose use (FDA ascorbic acid injection label, sections 5.1 and 6)",
+      "Severe haemolysis in patients with glucose-6-phosphate dehydrogenase deficiency (FDA ascorbic acid injection label, sections 5.2 and 6)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no available data on use of ascorbic acid injection in pregnant women to inform a drug-associated risk of adverse developmental outcomes; however, use of ascorbic acid (vitamin C) during pregnancy has been used for several decades and no adverse developmental outcomes are reported in the published literature. There are dose adjustments for ascorbic acid use during pregnancy: follow the US Recommended Dietary Allowances (RDA) for pregnant women when considering use of ascorbic acid injection for treatment of scurvy. A published meta-analysis of randomised studies evaluating a large number of pregnant women who took oral ascorbic acid through diet and supplementation at doses ranging from 500 to 1000 mg/day between the 9th and 16th weeks of pregnancy showed no increased risk of adverse pregnancy outcomes such as miscarriage, preterm premature rupture of membranes, preterm delivery or pregnancy-induced hypertension compared with placebo. Animal reproduction studies have not been conducted with ascorbic acid injection (FDA ascorbic acid injection label, sections 2.3 and 8.1).",
+    "lactation_guidance": "There are no data on the presence of ascorbic acid (vitamin C) in human milk following intravenous dosing in lactating women. Ascorbic acid is present in human milk after maternal oral intake. Maternal oral intake of ascorbic acid exceeding the US Recommended Dietary Allowances for lactation does not influence the ascorbic acid content in breast milk or the estimated daily amount received by breastfed infants. There are no data on the effect of ascorbic acid on milk production or the breastfed infant. The development and health benefits of breastfeeding should be considered along with the mother's clinical need for ascorbic acid injection and any potential adverse effects on the breastfed child. Follow the US Recommended Dietary Allowances for lactating women when considering use of ascorbic acid injection for treatment of scurvy (FDA ascorbic acid injection label, section 8.2).",
+    "overdose": "Overdose with ascorbic acid may cause nausea, vomiting, diarrhoea, facial flushing, rash, headache, fatigue or disturbed sleep. If overdose of ascorbic acid injection occurs, immediately discontinue administration and treat symptoms and signs of overdose, avoiding additional intake of ascorbic acid (FDA ascorbic acid injection label, section 10).",
+    "pharmacokinetics": "In a single pharmacokinetic study in healthy male and female adults (n=8) given a single intravenous dose of 1000 mg ascorbic acid infused over 30 minutes, the mean peak exposure was 436.2 micromolar and occurred at the end of the infusion. Ascorbic acid is distributed widely in the body, with large concentrations found in the liver, leukocytes, platelets, glandular tissues and lens of the eye. When the body is saturated with ascorbic acid the plasma concentration is about the same as the renal threshold and further amounts are mostly excreted in the urine; when body tissues are not saturated and plasma concentration is low, administration results in little or no renal excretion. The mean half-life observed in the single-dose study was 7.4 +/- 1.4 hours. A major route of metabolism involves conversion to urinary oxalate, presumably through intermediate formation of dehydroascorbic acid. There is a renal threshold for ascorbic acid of approximately 1.4 mg/100 mL, above which the vitamin is excreted by the kidney in large amounts (FDA ascorbic acid injection label, section 12.3).",
+    "clinical_pearls": [
+      "Ascorbic acid is a WHO Model List of Essential Medicines Core (EMLc) medicine, ATC code A11GA01, chemical agent, with the single indication 'Scurvy'; it was first added in 1977 (TRS 615) and changed in 1979 (TRS 641), 1987 (TRS 770), 1993 (TRS 850) and 2007 (TRS 950) (WHO eEML, ascorbic acid, recommendation 332).",
+      "The WHO Expert Committee for the EMLc endorsed inclusion of ascorbic acid for the treatment of scurvy and discussed the need for a higher strength tablet but decided not to add another formulation at that time (WHO eEML, ascorbic acid, Summary of evidence and Expert Committee recommendations).",
+      "High-dose intravenous vitamin C is a different product from dietary or oral vitamin C: the FDA-approved ascorbic acid injection is indicated only for short-term (up to 1 week) treatment of scurvy in patients in whom oral administration is not possible, insufficient or contraindicated (FDA ascorbic acid injection label, section 1).",
+      "G6PD deficiency is the key safety flag for parenteral ascorbic acid: severe haemolysis has occurred, so a reduced dose and haemoglobin/blood count monitoring are required (FDA ascorbic acid injection label, sections 5.2 and 2.3).",
+      "Ascorbic acid is a strong reducing agent and can produce false-negative blood and urine glucose results; delay oxidation-reduction laboratory tests until 24 hours after the infusion (FDA ascorbic acid injection label, sections 5.3 and 7.4).",
+      "Tri-Vite Drops with Fluoride supplies 35 mg of vitamin C per 1 mL together with vitamin A 1500 IU, vitamin D 400 IU and 0.25 mg fluoride, for children 6 months to 6 years of age, and does not contain folic acid (DailyMed Tri-Vite Drops with Fluoride label, Supplement Facts and INDICATIONS AND USAGE).",
+      "KEML 2023 places oral ascorbic acid (vitamin C) 50 mg, 250 mg and 1 g tablets at Level of Use 2 (dispensary/clinic), with the 250 mg strength added for paediatric use and the 1 g strength added for adults, and water-soluble vitamins containing vitamin C and B-complex (10 mL solution for IV infusion) at Level of Use 4 (primary hospital) (KEML 2023, sections 32.1 and 33.1.1.8)."
+    ],
+    "brand_names": ["Tri-Vite Drops with Fluoride"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is stated. Ascorbic acid injection should be used with caution in scorbutic patients with a history of or risk of developing renal oxalate stones or evidence of renal impairment, or other issues such as patients on dialysis, patients with diabetic nephropathy and renal transplant recipients, because these patients may be at increased risk of developing acute or chronic oxalate nephropathy following high-dose ascorbic acid administration; patients with renal disease, renal impairment or a history of oxalate kidney stones may also be at increased risk of oxalate nephropathy (FDA ascorbic acid injection label, sections 5.1 and 8.6).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous use only, as a slow infusion. Ascorbic acid injection is supplied as 25,000 mg per 50 mL (500 mg/mL) in a 50 mL Pharmacy Bulk Package vial; the largest recommended single dose is 200 mg and the entire vial contents must never be given to a single patient. Dilute one daily dose directly into an appropriate volume of a suitable infusion solution (e.g. 5% Dextrose Injection or Sterile Water for Injection) and adjust solutes as necessary so the final solution is isotonic, keeping the final ascorbic acid concentration between 1 and 25 mg/mL; for example, add 200 mg (0.4 mL) to 7.5 mL of Sterile Water for Injection to produce an infusion solution of approximately 290 mOsmol/L. Use only in a suitable ISO Class 5 work area, complete all dispensing from the vial within 4 hours of first puncture, use each dose immediately and discard the unused portion, and administer the admixture immediately as a slow intravenous infusion at the population-specific rate (1.3 mg/minute for 5 to <12 months, 3.3 mg/minute for 1 to <11 years, 33 mg/minute for 11 years and older) (FDA ascorbic acid injection label, sections 2.1 and 2.2). Store in a refrigerator at 2 to 8 degrees C, protect from light; excursions to ambient conditions for up to 30 days during storage or shipping are acceptable (section 16). Tri-Vite Drops with Fluoride: 1.0 mL daily or as directed by a physician; store at 20 to 25 degrees C, away from direct light after opening, close tightly after each use; refrigeration is not required; shake well (DailyMed Tri-Vite Drops with Fluoride label, DOSAGE AND ADMINISTRATION and RECOMMENDED STORAGE)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ASCORBIC ACID INJECTION [Fresenius Kabi USA LLC], sections 12.1 (Mechanism of Action) and 12.3 (Pharmacokinetics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines, ascorbic acid (recommendation 332); FDA label, ASCORBIC ACID INJECTION, section 1; Kenya Essential Medicines List 2023, sections 32.1 and 33.1.1.8; DailyMed label, TRI-VITE DROPS WITH FLUORIDE [Method Pharmaceuticals LLC], INDICATIONS AND USAGE",
+      "url": "https://list.essentialmeds.org/recommendations/332"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 5.1, 5.2, 5.3, 6 and 7.4; DailyMed label, TRI-VITE DROPS WITH FLUORIDE, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 2.1, 2.2, 2.3, 8.4 and 8.5; WHO eEML ascorbic acid (recommendation 332); Kenya Essential Medicines List 2023, section 32.1; DailyMed label, TRI-VITE DROPS WITH FLUORIDE, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 7.1, 7.2, 7.3 and 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 5.1, 5.2, 5.3 and 8.6; DailyMed label, TRI-VITE DROPS WITH FLUORIDE, PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, section 17 (Patient Counseling Information); DailyMed label, TRI-VITE DROPS WITH FLUORIDE, PRECAUTIONS and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 5.1, 5.2 and 5.3 (Warnings and Precautions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 2.1, 2.2, 2.3, 8.1 and 8.2; DailyMed label, TRI-VITE DROPS WITH FLUORIDE, PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 5.1, 5.2 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 2.3 and 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, section 8.2 (Lactation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, section 10 (Overdosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, section 12.3 (Pharmacokinetics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "WHO eEML ascorbic acid (recommendation 332) EML status history and Summary of evidence; FDA label, ASCORBIC ACID INJECTION, sections 1, 5.2, 5.3, 7.4; Kenya Essential Medicines List 2023, sections 32.1 and 33.1.1.8; DailyMed label, TRI-VITE DROPS WITH FLUORIDE, Supplement Facts and INDICATIONS AND USAGE",
+      "url": "https://list.essentialmeds.org/medicines/259"
+    },
+    {
+      "field": "brand_names",
+      "ref": "TRI-VITE DROPS WITH FLUORIDE (ASCORBIC ACID, SODIUM FLUORIDE, VITAMIN A AND VITAMIN D) SOLUTION listed on DailyMed (Method Pharmaceuticals LLC), NDC 58657-323-50",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=003181d4-5412-4ffe-b99d-880f2010e3ad"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the ASCORBIC ACID INJECTION prescribing information; the serious risks are presented in Warnings and Precautions, sections 5.1-5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 5.1 and 8.6 (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ASCORBIC ACID INJECTION, sections 2.1, 2.2, 3 and 16 (How Supplied/Storage and Handling); DailyMed label, TRI-VITE DROPS WITH FLUORIDE, DOSAGE AND ADMINISTRATION and RECOMMENDED STORAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the ASCORBIC ACID INJECTION prescribing information; the product is administered intravenously and ascorbic acid is a dietary nutrient",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1606e29f-0e80-4069-b688-daab9cbff20a"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (the ASCORBIC ACID INJECTION prescribing information contains no hepatic impairment section and states no hepatic dose adjustment)",
+    "pregnancy_category (the ASCORBIC ACID INJECTION label is written in the Pregnancy and Lactation Labeling Rule format and does not state a pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Ascorbic Acid' (vitamin C) with drug class 'Nutritional supplement / vitamin' and brand name 'Tri-Vite Drops with Fluoride'. This monograph covers two distinct route-specific products that are not interchangeable: (1) the FDA-approved intravenous ascorbic acid product (25,000 mg per 50 mL Pharmacy Bulk Package) indicated only for short-term treatment of scurvy where oral administration is not possible, insufficient or contraindicated, and (2) oral ascorbic acid, listed on the WHO eEML (50 mg tablet, scurvy) and the Kenya Essential Medicines List 2023 (50 mg, 250 mg and 1 g tablets; vitamin C/B-complex 10 mL IV infusion), and the branded paediatric oral combination Tri-Vite Drops with Fluoride recorded against this row (35 mg vitamin C per 1 mL with vitamins A and D plus 0.25 mg fluoride). The previous row carried nutritional-supplement class-template text shared word-for-word with other agents, which has been replaced with product-specific content. The FDA ascorbic acid injection label has no boxed warning. The FDA label contains no hepatic impairment section, so hepatic_dose_adjustment is null rather than inferred."
+}

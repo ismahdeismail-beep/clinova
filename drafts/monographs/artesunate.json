@@ -1,0 +1,198 @@
+{
+  "name": "Artesunate",
+  "existing_id": "42ee7895-7eb8-4688-b205-94c6048ff7fb",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Artesunate is a semisynthetic artemisinin derivative and an antimalarial drug. It is rapidly metabolised into the active metabolite dihydroartemisinin (DHA). Artesunate and DHA, like other artemisinins, contain an endoperoxide bridge that is activated by heme iron, leading to oxidative stress, inhibition of protein and nucleic acid synthesis, ultrastructural changes, and a decrease in parasite growth and survival. Both artesunate and DHA are active against the different asexual forms of Plasmodium parasites and clear parasitemia within 48 to 72 hours; they are active against blood-stage asexual parasites and gametocytes of Plasmodium species including chloroquine-resistant strains, but are not active against the hypnozoite liver stage forms of P. vivax and P. ovale (FDA Artesunate for Injection label, sections 12.1 and 12.4).",
+    "indications": [
+      "Initial treatment of severe malaria in adult and paediatric patients. Treatment of severe malaria with artesunate for injection should always be followed by a complete course of an appropriate oral antimalarial regimen (FDA Artesunate for Injection label, section 1)",
+      "Limitation of use: artesunate for injection does not treat the hypnozoite liver stage forms of Plasmodium and will therefore not prevent relapses of malaria due to P. vivax or P. ovale; concomitant therapy with an antimalarial agent such as an 8-aminoquinoline drug is necessary for the treatment of severe malaria due to P. vivax or P. ovale (FDA Artesunate for Injection label, section 1)",
+      "WHO Model List of Essential Medicines: artesunate is a Core (EMLc) medicine for malaria due to Plasmodium falciparum and malaria due to Plasmodium vivax, with the additional note 'For use in the management of severe malaria'; formulations are IV powder for injection 30 mg, 60 mg and 120 mg in vial, and rectal capsules 100 mg (WHO eEML, artesunate, recommendations 792 and 1458)",
+      "WHO guidelines for malaria: adults and children with severe malaria (including infants, pregnant women in all trimesters and lactating women) should be treated with intravenous or intramuscular artesunate for at least 24 hours and until they can tolerate oral medication, then treatment should be completed with 3 days of an ACT (strong recommendation, high certainty evidence) (WHO guidelines for malaria, 13 August 2025, section 5.2.2.1)",
+      "Kenya Essential Medicines List 2023: artesunate injection (IM/IV) 30 mg vial and 60 mg vial at Level of Use 2 (dispensary/clinic), and artesunate suppository 100 mg at Level of Use 1 (community health services) as the recommended pre-referral treatment for severe P. falciparum malaria (KEML 2023, section 7.5.3.1.3 and footnotes 172 and the suppository note)"
+    ],
+    "contraindications": [
+      "Known serious hypersensitivity to artesunate, such as anaphylaxis (FDA Artesunate for Injection label, sections 4 and 4.1)"
+    ],
+    "side_effects": [
+      "Post-treatment delayed hemolysis, characterised by decreased haemoglobin with laboratory evidence of haemolysis (decreased haptoglobin and increased lactate dehydrogenase) occurring at least 7 days after starting artesunate; cases of post-treatment haemolytic anaemia severe enough to require transfusion have been reported (FDA Artesunate for Injection label, sections 5.1 and 6.2)",
+      "Hypersensitivity reactions including anaphylaxis, with hypotension, dyspnoea, urticaria or generalised rash reported during administration (FDA Artesunate for Injection label, sections 5.2, 6.1 and 6.2)",
+      "Most common adverse reactions (>=2%) in the South East Asian severe malaria trial (artesunate n=730): acute renal failure requiring dialysis 8.9% (vs 7.3% for quinine), haemoglobinuria 6.7% (vs 4.5%) and jaundice 2.3% (vs 1.9%) (FDA Artesunate for Injection label, section 6.1, Table 1)",
+      "In the US open-label study of 102 patients with severe malaria: anaemia 65%, transaminase increase 27%, thrombocytopenia 18%, hyperbilirubinaemia 14%, acute renal failure 10%, leucocytosis 10%, acute respiratory distress syndrome 8%, lymphopenia 7%, neutropenia 5%, disseminated intravascular coagulation 3%, elevated creatinine 3%, pneumonia 3%, pulmonary oedema 3% and diarrhoea 3% (FDA Artesunate for Injection label, section 6.1)",
+      "Neurologic sequelae at hospital discharge: significant neurologic impairment in 7 patients (1%) in the artesunate arm versus 3 (0.4%) in the quinine arm (FDA Artesunate for Injection label, section 6.1)",
+      "Postmarketing: delayed haemolysis, immune haemolytic anaemia, pancreatitis, hypersensitivity and anaphylaxis (FDA Artesunate for Injection label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "The recommended dosage of artesunate for injection is 2.4 mg/kg administered intravenously at 0 hours, 12 hours and 24 hours, and thereafter administered once daily until the patient is able to tolerate oral antimalarial therapy. Administer the constituted solution intravenously as a slow bolus over 1 to 2 minutes. Do NOT administer artesunate for injection via continuous intravenous infusion (FDA Artesunate for Injection label, section 2.1). Artesunate for injection is supplied as 110 mg of artesunate as a sterile powder in a single-dose vial for constitution with the supplied sterile diluent (section 3). WHO guidelines for malaria add that children weighing under 20 kg should receive a higher dose of artesunate (3 mg/kg bodyweight per dose) than larger children and adults (2.4 mg/kg bodyweight per dose) to ensure equivalent exposure to the drug (WHO guidelines for malaria, 13 August 2025, section 5.2.2.1).",
+      "geriatric": "Clinical studies of artesunate for injection did not include sufficient numbers of patients aged 65 years and older to determine whether they respond differently from younger patients (FDA Artesunate for Injection label, section 8.5).",
+      "paediatric": "The safety and effectiveness of artesunate for injection for the treatment of severe malaria have been established in paediatric patients; this is supported by adequate and well-controlled studies in adults and paediatric patients with additional pharmacokinetic and safety data in paediatric patients aged 6 months and older. For paediatric patients younger than 6 months of age, a pharmacokinetic extrapolation approach using modelling and simulation indicated comparable or higher predicted steady-state AUC of DHA compared with older children or adults at the recommended 2.4 mg/kg regimen, and no notable safety issues were identified in limited published data; no dose adjustment is necessary for paediatric patients regardless of age or bodyweight (FDA Artesunate for Injection label, section 8.4). WHO guidelines for malaria recommend 3 mg/kg bodyweight per dose in children weighing under 20 kg and 2.4 mg/kg per dose in larger children and adults (WHO guidelines for malaria, 13 August 2025, section 5.2.2.1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Ritonavir, nevirapine or strong UDP-glucuronosyltransferase (UGT) inducers (e.g. rifampin, carbamazepine, phenytoin): published clinical or in vitro reports indicate that concomitant use may decrease dihydroartemisinin (DHA) AUC and Cmax, which may reduce the efficacy of artesunate for injection; monitor for possible reduced antimalarial efficacy (FDA Artesunate for Injection label, section 7.1)",
+      "Strong UGT inhibitors (e.g. axitinib, vandetanib, imatinib, diclofenac): in vitro data indicate that concomitant use may increase DHA AUC and Cmax, which may increase DHA-associated adverse reactions; monitor for adverse reactions (FDA Artesunate for Injection label, section 7.1)"
+    ],
+    "monitoring": "Monitor patients for 4 weeks after artesunate treatment for evidence of haemolytic anaemia; since a subset of patients with delayed haemolysis after artesunate therapy have evidence of immune-mediated haemolysis, consider performing a direct antiglobulin test to determine if therapy such as corticosteroids is necessary (FDA Artesunate for Injection label, section 5.1). If hypotension, dyspnoea, urticaria or generalised rash occurs during administration, consider discontinuing artesunate and continuing therapy with another antimalarial (section 5.2). Monitor for acute kidney injury, haemoglobinuria, jaundice, anaemia, thrombocytopenia and transaminase elevation (section 6.1). No specific dose adjustments are needed in patients with renal or hepatic impairment, although most patients with severe malaria present with some degree of related renal or hepatic impairment (sections 8.6 and 8.7). During severe malaria, clinical observations should be made as frequently as possible and should include monitoring of vital signs, coma score and urine output, and blood glucose should be monitored every 4 hours if possible, particularly in unconscious patients (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Continuing supportive care).",
+    "patient_counselling": "Advise patients of the need to complete appropriate oral antimalarial therapy after treatment with artesunate for injection (FDA Artesunate for Injection label, section 17). Advise patients of the need to take an additional antimalarial agent such as an 8-aminoquinoline drug during or after treatment for P. vivax or P. ovale malaria to prevent relapse (section 17). Advise patients of the need for regular blood tests for the 4-week period following completion of artesunate for injection to monitor for post-treatment delayed haemolysis (section 17). Inform patients that hypersensitivity reactions, including anaphylaxis, have occurred with administration, describe the signs and symptoms, and instruct them to seek immediate medical care if they occur during or following administration (section 17). Advise pregnant patients and patients who could be pregnant of the potential drug-related embryo-fetal toxicity based on animal studies and of the serious risks to mother and fetus of delaying treatment for severe malaria, and instruct them to inform their healthcare provider of a known or suspected pregnancy (section 17). Advise women exposed to artesunate during pregnancy that a pregnancy safety study monitors pregnancy outcomes and to report the pregnancy to Amivas, Inc at 1-855-526-4827 (section 17).",
+    "warnings": [
+      "Post-treatment haemolysis: post-artesunate delayed haemolysis is characterised by decreased haemoglobin with laboratory evidence of haemolysis occurring at least 7 days after initiating artesunate treatment; cases severe enough to require transfusion have been reported; monitor patients for 4 weeks after treatment, and consider a direct antiglobulin test since a subset of patients have evidence of immune-mediated haemolysis (FDA Artesunate for Injection label, section 5.1)",
+      "Hypersensitivity: hypersensitivity to artesunate including cases of anaphylaxis have been reported during the use of parenteral artesunate; if hypotension, dyspnoea, urticaria or generalised rash occurs during administration, consider discontinuing artesunate and continuing therapy with another antimalarial drug (FDA Artesunate for Injection label, section 5.2)",
+      "Embryo-fetal toxicity in animals: a single intravenous administration of artesunate to rats early in gestation results in embryolethality, and oral administration (not an approved route) to rats, rabbits and monkeys induces a dose-dependent increase in embryolethality and fetal malformations; however, the clinical relevance of these data is uncertain, and delaying treatment of severe malaria in pregnancy may result in serious morbidity and mortality to the mother and fetus (FDA Artesunate for Injection label, section 5.3)",
+      "Artesunate does not treat the hypnozoite liver stage, so it will not prevent relapses of P. vivax or P. ovale malaria; concomitant therapy with an 8-aminoquinoline drug is necessary (FDA Artesunate for Injection label, section 1)"
+    ],
+    "precautions": [
+      "Administer the constituted solution intravenously as a slow bolus over 1 to 2 minutes; do NOT administer artesunate for injection via continuous intravenous infusion (FDA Artesunate for Injection label, section 2.1)",
+      "Constitution and handling: withdraw 11 mL of the supplied sterile 0.3 M pH 8.0 sodium phosphate buffer diluent and inject into the artesunate vial (final concentration 10 mg/mL); swirl gently (do not shake) for up to 5 to 6 minutes until the powder is fully dissolved; inspect for particulate matter and discoloration and do not administer if either is observed; discard the vial and any unused portion after use; administer the constituted solution within 1.5 hours of constitution (FDA Artesunate for Injection label, section 2.2)",
+      "Artesunate for injection is supplied as a pharmacy bulk package-style single-dose vial and must be diluted before use; it must never be administered as an undiluted intravenous injection (FDA Artesunate for Injection label, sections 2.1 and 2.2)",
+      "Give parenteral antimalarial therapy for a minimum of 24 hours once started, or until the patient can tolerate oral medication, then complete a full course of an effective oral ACT; if the patient presented with impaired consciousness, ACTs containing mefloquine should be avoided because of an increased incidence of neuropsychiatric complications (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment)",
+      "KEML 2023 footnote 172: 'Always follow artesunate treatment (24 hours minimum) with a 3-day course of artemether + lumefantrine (once the patient can take oral medication)' (KEML 2023, footnote 172)"
+    ],
+    "serious_adverse_reactions": [
+      "Post-treatment delayed haemolysis and post-treatment haemolytic anaemia severe enough to require transfusion (FDA Artesunate for Injection label, sections 5.1 and 6.2)",
+      "Immune haemolytic anaemia (FDA Artesunate for Injection label, section 6.2)",
+      "Hypersensitivity reactions including anaphylaxis (FDA Artesunate for Injection label, sections 5.2, 6.1 and 6.2)",
+      "Acute renal failure requiring dialysis, haemoglobinuria and jaundice (FDA Artesunate for Injection label, section 6.1, Table 1)",
+      "Pancreatitis (FDA Artesunate for Injection label, section 6.2)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are serious risks to the mother and fetus associated with untreated severe malaria during pregnancy; delaying treatment of severe malaria in pregnancy may result in serious morbidity and mortality to the mother and fetus. Pregnancy outcomes from a prospective surveillance study with intravenous artesunate are insufficient to identify a drug-associated risk of major birth defects, miscarriage or fetal death; however, experience with oral artesunate (not an approved route) and other artemisinin class drugs over several decades, based on published randomised controlled trials and cohort studies, has not identified a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes. Published reports of first-trimester use of intravenous artesunate, randomised controlled trials, observational studies and cohort studies in over 1300 women exposed to oral artesunate and other artemisinin class drugs in the first trimester, and over 6500 women exposed in the second and third trimester, have not demonstrated an increase in major birth defects, miscarriage, or adverse maternal or fetal outcomes. In animal reproduction studies a single intravenous dose of artesunate to rats early in gestation resulted in complete postimplantation loss. WHO recommends that adults and children with severe malaria, including pregnant women in all trimesters, be treated with intravenous or intramuscular artesunate for at least 24 hours, and that treatment must not be delayed (FDA Artesunate for Injection label, sections 5.3 and 8.1; WHO guidelines for malaria, 13 August 2025, sections 5.2.2.1 and 5.2.2, Practical info: Treatment of severe malaria during pregnancy).",
+    "lactation_guidance": "DHA, a metabolite of artesunate, is present in human milk. There are no data on the effects of artesunate or DHA on the breastfed infant or on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for artesunate for injection and any potential adverse effects on the breastfed child from artesunate for injection or from the underlying maternal condition (FDA Artesunate for Injection label, section 8.2). WHO recommends that lactating women with severe malaria be treated with intravenous or intramuscular artesunate (WHO guidelines for malaria, 13 August 2025, section 5.2.2.1).",
+    "overdose": "Experience of acute overdose with artesunate is limited. A case of artesunate overdose has been documented in a 5-year-old child inadvertently administered rectal artesunate at a dose of 88 mg/kg/day (approximately 18 times the maximum recommended daily dose for artesunate for injection) for 4 days; artesunate for injection is not approved for rectal administration. The overdose was associated with pancytopenia, melaena, seizures, multiorgan failure and death. Treatment of overdose should consist of general supportive measures (FDA Artesunate for Injection label, section 10).",
+    "pharmacokinetics": "Following administration of 2.4 mg/kg artesunate for injection, artesunate is rapidly converted to DHA by blood esterases. In patients with severe malaria after multiple doses of 2.4 mg/kg (n=14), the median artesunate Cmax was 3.3 microgram/mL (range 1.0-164) and AUC 0.7 microgram.h/mL (range 0.3-111.3), with a volume of distribution of 68.5 L, protein binding of approximately 93%, a half-life of 0.3 hours (0.1-1.8) and clearance of 180 L/h; DHA median Cmax was 3.1 microgram/mL (1.7-9.5) and AUC 3.5 microgram.h/mL (2.2-6.3), with a volume of distribution of 59.7 L, a half-life of 1.3 hours (0.9-2.9) and clearance of 32.3 L/h. The primary metabolic pathway of artesunate is blood esterases with DHA as the metabolite; DHA is metabolised by glucuronidation to alpha-DHA-beta-glucuronide. Urinary excretion of artesunate and DHA is unknown (FDA Artesunate for Injection label, section 12.3). At the approved intravenous dose of 2.4 mg/kg, artesunate and DHA do not cause large mean increases (i.e. 20 msec) in the QTc interval (section 12.2).",
+    "clinical_pearls": [
+      "Artesunate for injection is the WHO-recommended first-line parenteral agent for severe malaria; parenteral artesunate is the treatment of choice for all severe malaria and for pregnant women with severe malaria in all trimesters, and treatment must not be delayed (WHO guidelines for malaria, 13 August 2025, sections 5.2.2 and 5.2.2.1).",
+      "Intramuscular artesunate for pre-referral treatment: adults and children should be given a single intramuscular dose of artesunate and referred to an appropriate facility for further care; where intramuscular artesunate is not available, intramuscular artemether or, if that is not available, intramuscular quinine should be used, and children under 6 years should be given a single rectal dose (10 mg/kg bodyweight) of artesunate (WHO guidelines for malaria, 13 August 2025, section 5.2.2.3). KEML 2023 lists the 100 mg artesunate suppository as the recommended pre-referral treatment for severe P. falciparum malaria (KEML 2023, section 7.5.3.1.3).",
+      "Always pair parenteral artesunate with a complete oral antimalarial course: artesunate monotherapy is associated with recrudescence, and a subset of patients with delayed haemolysis after artesunate have immune-mediated haemolysis requiring a direct antiglobulin test (FDA Artesunate for Injection label, sections 5.1 and 12.4).",
+      "Weight band matters: WHO recommends 3 mg/kg per dose in children under 20 kg versus 2.4 mg/kg per dose in larger children and adults to ensure equivalent dihydroartemisinin exposure, which differs from the single 2.4 mg/kg regimen in the US label (WHO guidelines for malaria, 13 August 2025, section 5.2.2.1; FDA Artesunate for Injection label, section 2.1).",
+      "The 110 mg vial yields a 10 mg/mL constituted solution (11 mL of diluent into the vial); the constituted solution must be used within 1.5 hours and the vial discarded after use (FDA Artesunate for Injection label, section 2.2).",
+      "Recrudescence and resistance surveillance: decreased sensitivity to artesunate, manifesting clinically as slower rates of parasite clearance, has been documented in parts of Southeast Asia and is associated with mutation in the kelch13 (K13) gene; pfmdr1 and pfcrt alterations have also been reported (FDA Artesunate for Injection label, section 12.4).",
+      "WHO eEML status: artesunate is a Core (EMLc) essential medicine, ATC code P01BE03, first added in 1999 (TRS 895) for malaria due to Plasmodium falciparum and also for malaria due to Plasmodium vivax, with changes in 2002, 2007, 2017 and 2025; the 2025 Expert Committee added 30 mg, 60 mg and 120 mg powder for injection and deleted the previously listed injection formulation, the 50 mg and 200 mg rectal capsules and the 50 mg tablets (WHO eEML, artesunate, recommendations 792 and 1458).",
+      "KEML 2023 lists artesunate injection (IM/IV) 30 mg and 60 mg vials at Level of Use 2, and the 100 mg suppository at Level of Use 1 (KEML 2023, section 7.5.3.1.3)."
+    ],
+    "brand_names": ["Artesunate"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific pharmacokinetic studies have been carried out in patients with renal impairment, but most patients with severe malaria present with some degree of related renal impairment, and no specific dosage adjustments are needed for patients with renal impairment (FDA Artesunate for Injection label, section 8.6). The WHO guidelines add that the dosage of artemisinin derivatives does not have to be adjusted for patients with vital organ dysfunction and that dosage adjustments are not necessary if patients are receiving either haemodialysis or haemofiltration (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction).",
+    "hepatic_dose_adjustment": "No specific pharmacokinetic studies have been carried out in patients with hepatic impairment, but most patients with severe malaria present with some degree of related hepatic impairment, and no specific dose adjustments are needed for patients with hepatic impairment (FDA Artesunate for Injection label, section 8.7). The WHO guidelines add that the dosage of artemisinin derivatives does not have to be adjusted for patients with vital organ dysfunction (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction).",
+    "administration_instructions": "For intravenous use only. Constitute each 110 mg single-dose vial with 11 mL of the supplied sterile 0.3 M pH 8.0 sodium phosphate buffer diluent to a final concentration of 10 mg/mL, swirl gently (do not shake) for 5 to 6 minutes until fully dissolved, and visually inspect for particulate matter and discoloration before administration (FDA Artesunate for Injection label, sections 2.1 and 2.2). Administer intravenously as a slow bolus over 1 to 2 minutes through an established intravenous line or needle; do NOT administer by continuous intravenous infusion and do not administer undiluted (section 2.1). Administer the constituted solution within 1.5 hours of constitution and discard the vial and any unused portion after use (section 2.2). Store the vial and diluent at 20 to 25 degrees C (68 to 77 degrees F), with excursions permitted between 15 and 30 degrees C; do not freeze, avoid exposure to heat and protect from light (section 16.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ARTESUNATE for injection [Amivas Inc.], NDA 213036, revised 7/2023, sections 12.1 and 12.4 (Microbiology)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, ARTESUNATE for injection, section 1 (Indications and Usage, including Limitations of Use); WHO eEML artesunate (recommendations 792, 1458); WHO guidelines for malaria, 13 August 2025, section 5.2.2.1; Kenya Essential Medicines List 2023, section 7.5.3.1.3 and footnotes 172",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ARTESUNATE for injection, sections 4 and 4.1 (Contraindications: Hypersensitivity)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ARTESUNATE for injection, sections 5.1, 5.2, 6.1 (Table 1) and 6.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ARTESUNATE for injection, sections 2.1, 3, 8.4 and 8.5; WHO guidelines for malaria, 13 August 2025, section 5.2.2.1 (weight-band dosing in children under 20 kg)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ARTESUNATE for injection, section 7.1 (Effect of Other Drugs on Artesunate and Dihydroartemisinin)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ARTESUNATE for injection, sections 5.1, 5.2, 6.1, 8.6 and 8.7; WHO guidelines for malaria, 13 August 2025, Practical info: Continuing supportive care",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ARTESUNATE for injection, section 17 (Patient Counseling Information)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ARTESUNATE for injection, sections 1, 5.1, 5.2 and 5.3 (Warnings and Precautions)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ARTESUNATE for injection, sections 2.1 and 2.2; WHO guidelines for malaria, 13 August 2025, Practical info: Follow-on treatment; Kenya Essential Medicines List 2023, footnote 172",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ARTESUNATE for injection, sections 5.1, 5.2, 6.1 (Table 1) and 6.2",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ARTESUNATE for injection, sections 5.3 and 8.1 (Pregnancy); WHO guidelines for malaria, 13 August 2025, sections 5.2.2.1 and Practical info: Treatment of severe malaria during pregnancy",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ARTESUNATE for injection, section 8.2 (Lactation); WHO guidelines for malaria, 13 August 2025, section 5.2.2.1",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ARTESUNATE for injection, section 10 (Overdosage)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ARTESUNATE for injection, sections 12.2 and 12.3 (Table 2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ARTESUNATE for injection, sections 1, 2.1, 2.2, 5.1, 6.1, 8.4, 12.4 and 16; WHO guidelines for malaria, 13 August 2025, sections 5.2.2, 5.2.2.1 and 5.2.2.3; WHO eEML artesunate (recommendations 792, 1458) EML status history; Kenya Essential Medicines List 2023, section 7.5.3.1.3 and footnotes 172",
+      "url": "https://list.essentialmeds.org/recommendations/792"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ARTESUNATE (artesunate) for injection, NDA 213036, sponsor Amivas Inc. (Drugs@FDA)",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213036"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the ARTESUNATE for injection prescribing information; the serious risks are presented in Warnings and Precautions, sections 5.1-5.3",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, ARTESUNATE for injection, section 8.6 (Renal Impairment); WHO guidelines for malaria, 13 August 2025, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, ARTESUNATE for injection, section 8.7 (Hepatic Impairment); WHO guidelines for malaria, 13 August 2025, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ARTESUNATE for injection, sections 2.1, 2.2, 3 and 16.2 (Storage and Handling)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the ARTESUNATE for injection prescribing information (drug is administered intravenously)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213036s004lbl.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the ARTESUNATE for injection label is written in the Pregnancy and Lactation Labeling Rule format and does not state a pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Artesunate' with no drug_class and no brand names populated. Artesunate for injection (NDA 213036, Amivas Inc., US initial approval 2020, label revised 7/2023) is a prescription-only IV product for severe malaria and is distinct from the oral artesunate and artesunate/amodiaquine and artesunate/pyronaridine combination products, and from the rectal artesunate capsule listed on the WHO eEML and KEML 2023 for pre-referral use. The previous row carried olanzapine/schizophrenia label text and an antipsychotic dementia boxed warning copied onto it, both of which were removed on 2026-10-05 and are not applicable to an antimalarial; this draft replaces them with artesunate-specific content. The artesunate label has no boxed warning, so black_box_warnings is an empty array and the genuine serious risks (post-treatment haemolysis, hypersensitivity/anaphylaxis, embryo-fetal toxicity in animals) are listed under warnings. Note the difference between the US label regimen (2.4 mg/kg for all patients) and the WHO malaria guidelines (3 mg/kg in children under 20 kg)."
+}

@@ -1,0 +1,224 @@
+{
+  "name": "Asenapine",
+  "existing_id": "338dde65-8253-4cfa-8c06-53fe27e98d3c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The mechanism of action of asenapine, in schizophrenia and bipolar I disorder, is unknown. It has been suggested that the efficacy of asenapine in schizophrenia could be mediated through a combination of antagonist activity at D2 and 5-HT2A receptors (FDA Saphris label, section 12.1). Asenapine belongs to the chemical class dibenzo-oxepino pyrroles and is supplied as asenapine maleate for sublingual or transdermal administration (FDA Saphris label, section 11).",
+    "indications": [
+      "Saphris (asenapine) sublingual tablets: schizophrenia in adults; bipolar I disorder, including acute monotherapy of manic or mixed episodes in adults and in paediatric patients 10 to 17 years of age, adjunctive treatment to lithium or valproate in adults, and maintenance monotherapy treatment in adults (FDA Saphris label, section 1)",
+      "Secuado (asenapine) transdermal system: treatment of adults with schizophrenia (FDA Secuado label, section 1)",
+      "Asenapine is not approved for the treatment of patients with dementia-related psychosis (FDA Saphris label, Boxed Warning and sections 5.1 and 5.2)"
+    ],
+    "contraindications": [
+      "Severe hepatic impairment (Child-Pugh C), because asenapine exposure is 7-fold higher in these subjects than in subjects with normal hepatic function (FDA Saphris label, sections 4 and 8.7)",
+      "A history of hypersensitivity reactions to asenapine; reactions have included anaphylaxis, angioedema, hypotension, tachycardia, swollen tongue, dyspnoea, wheezing and rash (FDA Saphris label, sections 4 and 5.6)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (>=5% and at least twice the placebo rate) in adults with schizophrenia: akathisia, oral hypoesthesia and somnolence; somnolence was reported in 15% (41/274) on 5 mg twice daily and 13% (26/208) on 10 mg twice daily versus 7% (26/378) on placebo (FDA Saphris label, sections 6 and 6.1, Table 8)",
+      "Most common adverse reactions (>=5% and at least twice placebo) in adults with bipolar I disorder treated with monotherapy: somnolence 23% (145/620) vs 5% (18/329) placebo, oral hypoesthesia, dizziness, extrapyramidal symptoms excluding akathisia and akathisia; during adjunctive therapy: somnolence and oral hypoesthesia (FDA Saphris label, sections 6 and 6.1, Tables 9 and 11)",
+      "Other reactions reported in >=2% of treated adult patients and more often than placebo in schizophrenia trials: insomnia 15% vs 13% placebo, dizziness 5% vs 4%, extrapyramidal symptoms excluding akathisia 10% vs 7%, constipation 5% vs 6%, dry mouth 2% vs 1%, salivary hypersecretion 2%, stomach discomfort 2%, vomiting 5% vs 5%, fatigue 3% vs 3%, irritability 2%, increased weight 3% vs <1%, increased appetite 2% vs <1%, hypertension 2% vs 2% (FDA Saphris label, section 6.1, Table 8)",
+      "Extrapyramidal symptoms: in short-term placebo-controlled schizophrenia adult trials, EPS-related events excluding akathisia occurred in 10% of asenapine-treated patients versus 7% on placebo, and akathisia-related events in 6% versus 3%; in bipolar mania adults, 8% versus 4% and 7% versus 3% respectively; in a fixed-dose study, all EPS events including akathisia were 11% at 5 mg twice daily and 25% at 10 mg twice daily (FDA Saphris label, section 6.1)",
+      "Paediatric patients (10 to 17 years) with bipolar I disorder: somnolence 49% (placebo 12%), oral hypoesthesia 27% (2%), headache 9% (6%), fatigue 9% (4%), increased appetite 8% (2%), dizziness 7% (3%), dysgeusia 6% (2%), nausea 6% (3%), abdominal pain 6% (3%), increased weight 3%, akathisia 2% (0%) (FDA Saphris label, section 6.1, Table 10)",
+      "Dystonia: symptoms may occur in susceptible individuals during the first few days of treatment, including spasm of the neck muscles, sometimes progressing to tightness of the throat, swallowing difficulty, difficulty breathing and/or protrusion of the tongue; an elevated risk of acute dystonia is observed in males and younger age groups (FDA Saphris label, section 6.1)",
+      "Oral hypoesthesia and/or oral paresthesia may occur directly after administration of Saphris and usually resolves within 1 hour (FDA Saphris label, section 6.1)",
+      "Laboratory abnormalities: transient elevations in serum transaminases (primarily ALT) were more common with asenapine than placebo; the proportion of patients with transaminase elevations >=3 times upper limit of normal at endpoint was 0.9% versus 1.3% placebo in schizophrenia trials and 2.1% versus 0.7% placebo in bipolar mania trials; creatine kinase elevations >3 times ULN occurred in 6.4% (5 mg twice daily) and 11.1% (10 mg twice daily) versus 6.7% placebo (FDA Saphris label, section 6.1)",
+      "Postmarketing: application site reactions in the sublingual area, including oral ulcers, blisters, peeling/sloughing and inflammation, and choking, some of whom may also have experienced oropharyngeal muscular dysfunction or hypoesthesia (FDA Saphris label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Saphris sublingual tablets - schizophrenia: 5 mg sublingually twice daily; if tolerated, the daily dosage can be increased to 10 mg twice daily after one week, and the safety of doses above 10 mg twice daily has not been evaluated (FDA Saphris label, sections 2 and 2.2). Bipolar I disorder, acute monotherapy and maintenance: 5 to 10 mg sublingually twice daily; adjunctive therapy with lithium or valproate: start at 5 mg twice daily and increase to 10 mg twice daily depending on clinical response and tolerability (sections 2 and 2.3). Tablets are placed under the tongue and allowed to dissolve completely; they must not be split, crushed, chewed or swallowed, and eating and drinking should be avoided for 10 minutes after administration (section 2.1). Secuado transdermal system: initiate at 3.8 mg/24 hours, may be increased to 5.7 mg/24 hours or 7.6 mg/24 hours as needed after one week, with the safety of doses above 7.6 mg/24 hours not evaluated; 3.8 mg/24 hours corresponds to 5 mg twice daily of sublingual asenapine and 7.6 mg/24 hours to 10 mg twice daily of sublingual asenapine (FDA Secuado label, sections 2.1 and 2.2).",
+      "geriatric": "Clinical studies did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients; only 1.1% (25) of approximately 2250 patients in pre-marketing studies were 65 or older. Multiple factors that might increase the pharmacodynamic response to asenapine, causing poorer tolerance or orthostasis, could be present in elderly patients and these patients should be monitored carefully. Based on a pharmacokinetic study in elderly patients, dosage adjustments are not recommended based on age alone (FDA Saphris label, section 8.5).",
+      "paediatric": "Saphris bipolar I disorder monotherapy in patients 10 to 17 years: starting dose 2.5 mg sublingually twice daily; after 3 days the dose can be increased to 5 mg twice daily, and from 5 mg to 10 mg twice daily after 3 additional days; the safety of doses greater than 10 mg twice daily has not been evaluated. Paediatric patients aged 10 to 17 years appear to be more sensitive to dystonia with initial dosing when the recommended escalation schedule is not followed (FDA Saphris label, sections 2.3 and 8.4). Safety and efficacy have not been established in patients below 10 years of age, and efficacy was not demonstrated in an 8-week, placebo-controlled trial in 306 adolescent patients aged 12 to 17 years with schizophrenia at 2.5 mg and 5 mg twice daily; the most common adverse reactions in that trial were somnolence, akathisia, dizziness and oral hypoesthesia or paresthesia, and a >=7% increase in body weight occurred in 10% of patients on each asenapine dose versus 3% on placebo (sections 8.4 and 14.1). Safety and efficacy of Saphris as adjunctive therapy in bipolar I disorder have not been established in the paediatric population (section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antihypertensive drugs: because of its alpha-1-adrenergic antagonism with potential for inducing hypotension, Saphris may enhance the effects of certain antihypertensive agents; monitor blood pressure and adjust the dosage of the antihypertensive drug accordingly (FDA Saphris label, sections 5.7, 7.1 and 12.3)",
+      "Strong CYP1A2 inhibitors (e.g. fluvoxamine): asenapine is metabolised by CYP1A2 and a marginal increase in asenapine exposure was seen with fluvoxamine 25 mg twice daily, but the tested fluvoxamine dose was suboptimal and full therapeutic dose is expected to cause a greater increase in asenapine exposure; dosage reduction based on clinical response may be necessary (FDA Saphris label, sections 7.1 and 12.3)",
+      "CYP2D6 substrates and inhibitors (e.g. paroxetine): concomitant use of paroxetine with Saphris increased paroxetine exposure 2-fold compared with paroxetine alone, because asenapine enhances paroxetine's inhibition of its own metabolism; reduce the paroxetine dose by half when paroxetine is used with Saphris (FDA Saphris label, sections 7.1 and 12.3)",
+      "Drugs that prolong the QT interval: avoid use with Class 1A antiarrhythmics (quinidine, procainamide), Class 3 antiarrhythmics (amiodarone, sotalol), antipsychotics (ziprasidone, chlorpromazine, thioridazine) and antibiotics such as gatifloxacin and moxifloxacin, and avoid in patients with a history of cardiac arrhythmias or conditions increasing the risk of torsade de pointes such as bradycardia, hypokalaemia or hypomagnesaemia, or congenital long QT syndrome (FDA Saphris label, section 5.10)",
+      "No clinically important interactions and no dosage adjustment of Saphris are required with paroxetine, imipramine, cimetidine, valproate, lithium, or a CYP3A4 inducer such as carbamazepine, phenytoin or rifampin; valproic acid and lithium pre-dose serum concentrations were comparable between asenapine- and placebo-treated patients in an adjunctive therapy study (FDA Saphris label, section 7.2)"
+    ],
+    "monitoring": "Assess fasting plasma glucose before or soon after initiation of antipsychotic medication and monitor periodically during long-term treatment, and obtain a fasting lipid profile at baseline and monitor periodically (FDA Saphris label, section 5.5). Monitor weight at baseline and frequently thereafter; in a 52-week comparator-controlled adult trial the mean weight gain was 0.9 kg and 14.7% of patients had a >=7% increase in body weight (section 5.5). Monitor orthostatic vital signs in patients vulnerable to hypotension (elderly patients, patients with dehydration or hypovolaemia, patients on antihypertensive medication, and patients with known cardiovascular or cerebrovascular disease), and consider a dose reduction if hypotension occurs (section 5.7). Perform complete blood counts during the first few months of therapy in patients with a pre-existing low white blood cell count or absolute neutrophil count or a history of drug-induced leukopenia/neutropenia; monitor such patients with clinically significant neutropenia for fever or other signs of infection; discontinue Saphris in patients with severe neutropenia (absolute neutrophil count <1000/mm3) and follow the WBC until recovery (section 5.9). In a dedicated QT study, asenapine 5, 10, 15 and 20 mg twice daily was associated with QTc increases of 2 to 5 msec compared with placebo, with no patient experiencing a QTc increase >=60 msec from baseline or a QTc of >=500 msec (section 5.10). Elderly patients with dementia-related psychosis treated with asenapine are at increased risk of death compared with placebo (section 8.5).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling (Instructions for Use) and counsel them on proper sublingual administration of Saphris, providing dosage escalation instructions when initiating treatment (FDA Saphris label, section 17). Counsel patients on the signs and symptoms of a serious allergic reaction (for example difficulty breathing, itching, swelling of the face, tongue or throat, feeling lightheaded) and to seek immediate emergency assistance (section 17). Inform patients that application site reactions in the sublingual area, including oral ulcers, blisters, peeling/sloughing and inflammation, have been reported, and that numbness or tingling of the mouth or throat may occur directly after administration and usually resolves within 1 hour (sections 6.1, 6.2 and 17). Counsel patients about neuroleptic malignant syndrome and to report hyperpyrexia, muscle rigidity, altered mental status and autonomic instability (irregular pulse or blood pressure, tachycardia, diaphoresis, cardiac dysrhythmia) to their provider or the emergency room (section 17). Counsel patients on the signs and symptoms of tardive dyskinesia and to contact their healthcare provider if abnormal movements occur (section 17). Educate patients about the risk of metabolic changes, how to recognise symptoms of hyperglycaemia and diabetes mellitus, and the need for blood glucose, lipid and weight monitoring (section 17). Educate patients about the risk of orthostatic hypotension, especially early in treatment, at re-initiation and after dose increases (section 17). Advise patients with a pre-existing low WBC or history of drug-induced leukopenia/neutropenia to have their CBC monitored (section 17). Counsel patients on the signs and symptoms of hyperprolactinemia (section 17). Caution patients about performing activities requiring mental alertness, such as operating hazardous machinery or driving, until they are reasonably certain that therapy does not adversely affect them (section 17). Counsel patients regarding care in avoiding overheating and dehydration (section 17). Advise patients to inform their healthcare provider about all prescription and over-the-counter medicines taken or planned (section 17). Advise patients that asenapine may cause fetal harm and of extrapyramidal and/or withdrawal symptoms in a neonate, and to notify their healthcare provider of a known or suspected pregnancy (section 17).",
+    "warnings": [
+      "WARNING (boxed): Increased mortality in elderly patients with dementia-related psychosis - elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death; Saphris is not approved for the treatment of patients with dementia-related psychosis (FDA Saphris label, Boxed Warning and section 5.1)",
+      "Cerebrovascular adverse events including stroke in elderly patients with dementia-related psychosis; Saphris is not approved for the treatment of patients with dementia-related psychosis (FDA Saphris label, section 5.2)",
+      "Neuroleptic malignant syndrome: if suspected, immediately discontinue Saphris and provide intensive symptomatic treatment and monitoring (FDA Saphris label, section 5.3)",
+      "Tardive dyskinesia: a potentially irreversible syndrome of involuntary dyskinetic movements; risk increases with duration of treatment and cumulative dose, and the syndrome can develop after a brief treatment period and even after discontinuation; if signs appear, drug discontinuation should be considered (FDA Saphris label, section 5.4)",
+      "Metabolic changes: hyperglycaemia, in some cases extreme and associated with ketoacidosis or hyperosmolar coma or death, diabetes mellitus, dyslipidaemia and body weight gain; assess fasting plasma glucose and obtain a fasting lipid profile before or soon after initiation and monitor periodically (FDA Saphris label, section 5.5)",
+      "Hypersensitivity reactions: include anaphylaxis, angioedema, hypotension, tachycardia, swollen tongue, dyspnoea, wheezing and rash, in several cases occurring after the first dose (FDA Saphris label, section 5.6)",
+      "Orthostatic hypotension, syncope and other haemodynamic effects: risk is greatest during initial dose titration and when increasing the dose; syncope was reported in 0.6% (11/1953) of patients in adult pre-marketing trials and in 1% (1/104) and 1% (1/99) of paediatric patients on 2.5 mg and 5 mg twice daily in the 3-week bipolar trial (FDA Saphris label, section 5.7)",
+      "Falls: asenapine may cause somnolence, postural hypotension, motor and sensory instability, which may lead to falls and fractures; complete fall risk assessments when initiating antipsychotic treatment and recurrently for long-term therapy (FDA Saphris label, section 5.8)",
+      "Leukopenia, neutropenia and agranulocytosis: perform complete blood counts in patients with a pre-existing low white blood cell count or history of leukopenia or neutropenia; discontinue in patients with severe neutropenia (absolute neutrophil count <1000/mm3) and follow the WBC until recovery (FDA Saphris label, section 5.9)",
+      "QT prolongation: avoid use with other drugs that increase the QT interval and in patients with risk factors for a prolonged QT interval (FDA Saphris label, section 5.10)",
+      "Hyperprolactinaemia: asenapine can elevate prolactin levels and the elevation can persist during chronic administration, with galactorrhoea, amenorrhoea, gynaecomastia and impotence reported; long-standing hyperprolactinaemia with hypogonadism may lead to decreased bone density (FDA Saphris label, section 5.11)",
+      "Seizures: use with caution in patients with a history of seizures or with conditions that lower the seizure threshold (FDA Saphris label, section 5.12)",
+      "Potential for cognitive and motor impairment: somnolence was reported in 18% (358/1953) of adult patients in pre-marketing trials; caution patients about operating hazardous machinery (FDA Saphris label, section 5.13)",
+      "Body temperature regulation: atypical antipsychotics may disrupt the ability to reduce core body temperature; use with caution in patients exposed to strenuous exercise, extreme heat, dehydration or anticholinergic medications (FDA Saphris label, section 5.14)",
+      "Dysphagia: oesophageal dysmotility and aspiration have been associated with antipsychotic use and dysphagia has been reported with Saphris; use cautiously in patients at risk for aspiration (FDA Saphris label, section 5.15)",
+      "Transdermal formulation (Secuado): avoid external heat sources over the transdermal system during wear because both the rate and extent of absorption are increased, and local skin reactions may occur during wear time or immediately after removal (FDA Secuado label, sections 5.16 and 5.17)"
+    ],
+    "precautions": [
+      "Prescribe in a manner most likely to reduce the risk of tardive dyskinesia: chronic antipsychotic treatment should generally be reserved for patients with a chronic illness known to respond to antipsychotics and for whom alternative, effective but potentially less harmful treatments are not available or appropriate; use the lowest dose and shortest duration producing a satisfactory response and periodically reassess the need for continued treatment (FDA Saphris label, section 5.4)",
+      "Saphris is contraindicated in severe hepatic impairment (Child-Pugh C) because asenapine exposure is 7-fold higher; no dosage adjustment is required in mild to moderate hepatic impairment (Child-Pugh A and B) because exposure is similar to normal (FDA Saphris label, sections 4, 8.7 and 12.3)",
+      "No dosage adjustment is required on the basis of renal function (mild to severe renal impairment, GFR 15 to 90 mL/minute); the effect of renal function on the excretion of other metabolites and the effect of dialysis on the pharmacokinetics of asenapine has not been studied (FDA Saphris label, section 8.6)",
+      "No dosage adjustment is required on the basis of a patient's sex, race (Caucasian and Japanese) or smoking status (FDA Saphris label, section 8.8)",
+      "In animal studies, asenapine increased post-implantation loss and decreased pup weight and survival at doses similar to or less than recommended clinical doses, without an increase in structural abnormalities; juvenile rat studies showed significant reduction in body weight gain (FDA Saphris label, sections 8.1 and 8.4)",
+      "Tablets must not be split, crushed, chewed or swallowed, and the patient should not eat or drink for 10 minutes after administration (FDA Saphris label, section 2.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Increased mortality in elderly patients with dementia-related psychosis (FDA Saphris label, Boxed Warning and section 5.1)",
+      "Cerebrovascular adverse events, including stroke and transient ischaemic attack, in elderly patients with dementia-related psychosis (FDA Saphris label, section 5.2)",
+      "Neuroleptic malignant syndrome (FDA Saphris label, section 5.3)",
+      "Tardive dyskinesia (FDA Saphris label, section 5.4)",
+      "Hypersensitivity reactions including anaphylaxis and angioedema (FDA Saphris label, sections 4 and 5.6)",
+      "Severe hyperglycaemia, diabetic ketoacidosis or hyperosmolar coma (FDA Saphris label, section 5.5)",
+      "Leukopenia, neutropenia and agranulocytosis, including fatal cases reported with other agents in the class (FDA Saphris label, section 5.9)",
+      "QT prolongation with torsade de pointes risk (FDA Saphris label, section 5.10)"
+    ],
+    "food_interactions": [
+      "Food immediately prior to sublingual administration decreased asenapine exposure by 20%, and food 4 hours after sublingual administration decreased exposure by about 10%; patients should avoid eating for 10 minutes following sublingual dosing (FDA Saphris label, sections 2.1 and 12.3)",
+      "Water administration 2 minutes after a 10 mg sublingual dose reduced asenapine exposure by 19% and at 5 minutes by 10%, so patients should avoid drinking for 10 minutes after administration (FDA Saphris label, sections 2.1 and 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Neonates exposed to antipsychotic drugs during the third trimester of pregnancy are at risk for extrapyramidal and/or withdrawal symptoms. Studies have not been conducted with Saphris in pregnant women and there are no available human data informing the drug-associated risk; the background risk of major birth defects and miscarriage for the indicated populations is unknown. No teratogenicity was observed in animal reproduction studies with intravenous administration of asenapine to rats and rabbits during organogenesis at doses 0.7 and 0.4 times the maximum recommended human dose of 10 mg sublingually twice daily; in a pre- and post-natal study in rats, intravenous asenapine at doses up to 0.7 times the maximum recommended human dose produced increases in post-implantation loss and early pup deaths and decreases in subsequent pup survival and weight gain. Extrapyramidal and/or withdrawal symptoms, including agitation, hypertonia, hypotonia, tremor, somnolence, respiratory distress and feeding disorder, have been reported in neonates exposed to antipsychotic drugs during the third trimester, with some recovering within hours or days without specific treatment and others requiring prolonged hospitalisation. Advise patients that Saphris may cause fetal harm and of these neonatal risks, and to notify their healthcare provider of a known or suspected pregnancy. A pregnancy exposure registry is available (1-866-961-2388) (FDA Saphris label, section 8.1).",
+    "lactation_guidance": "Lactation studies have not been conducted to assess the presence of asenapine in human milk, the effects of asenapine on the breastfed infant, or the effects of asenapine on milk production. Asenapine is excreted in rat milk. The development and health benefits of breastfeeding should be considered along with the mother's clinical need for Saphris and any potential adverse effects on the breastfed infant from Saphris or from the underlying maternal condition (FDA Saphris label, section 8.2).",
+    "overdose": "In adult pre-marketing clinical studies involving more than 3350 patients and/or healthy subjects, accidental or intentional acute overdosage of Saphris was identified in 3 patients, the highest estimated ingestion being 400 mg; reported adverse reactions at the highest dosage included agitation and confusion. There is no specific antidote to Saphris; the possibility of multiple drug involvement should be considered. An electrocardiogram should be obtained and management should concentrate on supportive therapy, maintaining an adequate airway, oxygenation and ventilation, and management of symptoms; consult a Certified Poison Control Center for up-to-date guidance (1-800-222-1222). Hypotension and circulatory collapse should be treated with appropriate measures such as intravenous fluids and/or sympathomimetic agents (epinephrine and dopamine should not be used, since beta stimulation may worsen hypotension in the setting of asenapine-induced alpha blockade). In case of severe extrapyramidal symptoms, anticholinergic medication should be administered. Close medical supervision and monitoring should continue until the patient recovers (FDA Saphris label, section 10).",
+    "pharmacokinetics": "Following a single 5 mg sublingual dose of Saphris, the mean Cmax was approximately 4 ng/mL and was observed at a mean tmax of 1 hour. Following sublingual administration, asenapine is rapidly absorbed with peak plasma concentrations occurring within 0.5 to 1.5 hours; the absolute bioavailability of sublingual asenapine at 5 mg is 35%, while the absolute bioavailability when swallowed is low (<2% with an oral tablet formulation). Increasing the dose from 5 mg to 10 mg twice daily results in less than linear (1.7-fold) increases in both extent of exposure and maximum concentration. Asenapine is rapidly distributed with a volume of distribution of approximately 20 to 25 L/kg and is highly bound (95%) to plasma proteins, including albumin and alpha-1-acid glycoprotein. Elimination is primarily through direct glucuronidation by UGT1A4 and oxidative metabolism by cytochrome P450 isoenzymes (predominantly CYP1A2); asenapine is a high clearance drug with an intravenous clearance of 52 L/h. Following an initial more rapid distribution phase, the terminal half-life is approximately 24 hours and steady state is reached within 3 days of twice-daily dosing. After a single dose of [14C]-labelled asenapine about 90% of the dose was recovered, approximately 50% in urine and 40% in faeces; the predominant circulating species is asenapine N+-glucuronide. Asenapine exposure is 7-fold higher in subjects with severe hepatic impairment than in normal hepatic function and similar in mild to moderate impairment; exposure in elderly patients is 30% to 40% higher than in adults, and population pharmacokinetic analysis showed no effects of sex, race, BMI or smoking status on exposure (FDA Saphris label, section 12.3).",
+    "clinical_pearls": [
+      "Saphris is a sublingual tablet, not a swallowed tablet: absolute bioavailability is 35% sublingually versus less than 2% when swallowed, and the tablet must not be split, crushed, chewed or swallowed (FDA Saphris label, sections 2.1 and 12.3).",
+      "No eating or drinking for 10 minutes after the sublingual dose: water at 2 minutes reduced exposure by 19% and at 5 minutes by 10%, and food immediately before the dose reduced exposure by 20% (FDA Saphris label, section 12.3).",
+      "The transdermal Secuado system is an alternative to the sublingual tablet in adults with schizophrenia: 3.8 mg/24 hours is equivalent in average exposure to 5 mg twice daily sublingually, and 7.6 mg/24 hours to 10 mg twice daily sublingually (FDA Secuado label, section 2.1).",
+      "Child-resistant packaging and black-cherry-flavoured tablets: Saphris is supplied as 2.5 mg, 5 mg and 10 mg sublingual tablets in child-resistant packaging of 60 tablets and hospital unit dose boxes of 100 (FDA Saphris label, section 16).",
+      "Dystonia in adolescents: paediatric patients aged 10 to 17 years appear more sensitive to dystonia with initial dosing when the recommended escalation schedule is not followed, which is why the label specifies 2.5 mg twice daily for the first 3 days, then 5 mg twice daily, then 10 mg twice daily after a further 3 days (FDA Saphris label, sections 2.3 and 8.4).",
+      "The boxed warning applies to all antipsychotics: asenapine is not approved for dementia-related psychosis, and elderly patients with dementia-related psychosis treated with antipsychotics have an increased risk of death (FDA Saphris label, Boxed Warning and section 5.1).",
+      "Saphris is not a controlled substance (FDA Saphris label, section 9.1).",
+      "Asenapine is not listed in the Kenya Essential Medicines List 2023, so this monograph is based on the FDA-approved Saphris and Secuado labels."
+    ],
+    "brand_names": ["Saphris", "Secuado"],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis. Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. Analysis of 17 placebo-controlled trials (modal duration 10 weeks) revealed a risk of death in drug-treated patients of 1.6 to 1.7 times that of placebo-treated patients; over a typical 10-week controlled trial the rate of death was about 4.5% in drug-treated patients versus about 2.6% on placebo. Saphris (asenapine) is not approved for the treatment of patients with dementia-related psychosis (FDA Saphris label, Boxed Warning and section 5.1)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment for Saphris is required on the basis of a patient's renal function (mild to severe renal impairment, glomerular filtration rate between 15 and 90 mL/minute); exposure of asenapine was similar among subjects with varying degrees of renal impairment and subjects with normal renal function. The effect of renal function on the excretion of other metabolites and the effect of dialysis on the pharmacokinetics of asenapine has not been studied (FDA Saphris label, section 8.6).",
+    "hepatic_dose_adjustment": "Saphris is contraindicated in patients with severe hepatic impairment (Child-Pugh C) because asenapine exposure is 7-fold higher than in subjects with normal hepatic function. No dosage adjustment is required in patients with mild to moderate hepatic impairment (Child-Pugh A and B) because exposure is similar to that in subjects with normal hepatic function (FDA Saphris label, sections 4 and 8.7).",
+    "administration_instructions": "Saphris: sublingual tablet - place the tablet under the tongue and allow it to dissolve completely; the tablet dissolves in saliva within seconds; do not split, crush, chew or swallow; do not eat or drink for 10 minutes after administration. Available as 2.5 mg, 5 mg and 10 mg round, white to off-white, black-cherry-flavoured sublingual tablets, in child-resistant packaging of 60 tablets (NDC 0456-2402-60, 0456-2405-60, 0456-2410-60) and hospital unit dose boxes of 100 (NDC 0456-2402-63, 0456-2405-63, 0456-2410-63); store at 20 to 25 degrees C (68 to 77 degrees F), with excursions permitted between 15 and 30 degrees C (FDA Saphris label, sections 2.1, 3 and 16). Secuado: for transdermal use only - apply one transdermal system every 24 hours to clean, dry and intact skin on the upper arm, upper back, abdomen or hip, using a different application site each time; if the system lifts at the edges, reattach it, and if it comes off completely apply a new system to a new site; do not apply external heat sources over the system; the system is available as 3.8 mg, 5.7 mg and 7.6 mg asenapine per 24 hours (FDA Secuado label, sections 2.2 and 3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, SAPHRIS (asenapine maleate) sublingual tablets [Allergan, Inc.], sections 11 and 12.1 (Mechanism of Action)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, SAPHRIS, section 1 (Indications and Usage); FDA label, SECUADO (asenapine) transdermal system [Noven Therapeutics LLC], section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, SAPHRIS, sections 4 and 4.1-equivalent content (Contraindications: severe hepatic impairment; hypersensitivity), 5.6 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, SAPHRIS, sections 6, 6.1 (Tables 8, 9, 10 and 11) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, SAPHRIS, sections 2, 2.1, 2.2, 2.3, 8.4, 8.5 and 14.1; FDA label, SECUADO, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, SAPHRIS, sections 5.7, 5.10, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, SAPHRIS, sections 5.5, 5.7, 5.9, 5.10 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, SAPHRIS, section 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, SAPHRIS, Boxed Warning and sections 5.1-5.15; FDA label, SECUADO, sections 5.16 and 5.17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, SAPHRIS, sections 2.1, 4, 5.4, 8.1, 8.4, 8.6, 8.7 and 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, SAPHRIS, Boxed Warning and sections 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.9 and 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, SAPHRIS, sections 2.1 and 12.3 (Food and Water)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, SAPHRIS, section 8.1 (Pregnancy, including Pregnancy Exposure Registry)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, SAPHRIS, section 8.2 (Lactation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, SAPHRIS, section 10 (Overdosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, SAPHRIS, section 12.3 (Pharmacokinetics, including Figures 1-3)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, SAPHRIS, sections 2.1, 3, 5.1, 8.4, 9.1, 12.3 and 16; FDA label, SECUADO, sections 1 and 2.1; Kenya Essential Medicines List 2023 (asenapine not listed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=685eaf44-5944-4f38-afba-0a4fc0b3462b"
+    },
+    {
+      "field": "brand_names",
+      "ref": "SAPHRIS (asenapine maleate) sublingual tablets [Allergan, Inc.] and SECUADO (asenapine) transdermal system [Noven Therapeutics LLC] listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, SAPHRIS, Boxed Warning: Increased Mortality in Elderly Patients with Dementia-Related Psychosis, and section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, SAPHRIS, section 8.6 (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, SAPHRIS, sections 4 and 8.7 (Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, SAPHRIS, sections 2.1, 3 and 16 (How Supplied/Storage and Handling); FDA label, SECUADO, sections 2.2 and 3 (Dosage Forms and Strengths)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5429f134-839f-4ffc-9944-55f51238def8"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the SAPHRIS label is written in the Pregnancy and Lactation Labeling Rule format and does not state a pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Asenapine' with drug class 'Central nervous system agent' and brand name 'Asenapine'. This monograph covers the two FDA-approved asenapine products: Saphris (asenapine maleate) sublingual tablets and Secuado (asenapine) transdermal system, which are not interchangeable and have different indications (Secuado is approved only for schizophrenia in adults). The previous row carried central-nervous-system class-template text shared word-for-word with other agents, which has been replaced with asenapine-specific content. The antipsychotic dementia boxed warning IS applicable to asenapine and is retained in black_box_warnings and warnings. Asenapine is not listed in the Kenya Essential Medicines List 2023."
+}

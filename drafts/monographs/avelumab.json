@@ -1,0 +1,236 @@
+{
+  "name": "Avelumab",
+  "existing_id": "aa82f82a-38ab-4661-a594-248897882c1b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Avelumab is a programmed death ligand-1 (PD-L1) blocking antibody. PD-L1 may be expressed on tumor cells and tumor-infiltrating immune cells and can contribute to inhibition of the anti-tumor immune response in the tumor microenvironment. Binding of PD-L1 to the PD-1 and B7.1 receptors found on T cells and antigen presenting cells suppresses cytotoxic T-cell activity, T-cell proliferation and cytokine production. Avelumab binds PD-L1 and blocks the interaction between PD-L1 and its receptors PD-1 and B7.1; this interaction releases the inhibitory effects of PD-L1 on the immune response, resulting in restoration of immune responses, including anti-tumor immune responses. Avelumab has also been shown to induce antibody-dependent cell-mediated cytotoxicity (ADCC) in vitro, and in syngeneic mouse tumor models blocking PD-L1 activity resulted in decreased tumor growth (FDA Bavencio label, section 12.1).",
+    "indications": [
+      "Metastatic Merkel cell carcinoma (MCC): treatment of adults and pediatric patients 12 years and older with metastatic MCC (FDA Bavencio label, section 1.1).",
+      "Locally advanced or metastatic urothelial carcinoma (UC), first-line maintenance treatment: maintenance treatment of patients with locally advanced or metastatic UC that has not progressed with first-line platinum-containing chemotherapy (FDA Bavencio label, section 1.2).",
+      "Locally advanced or metastatic urothelial carcinoma, previously treated: treatment of patients with locally advanced or metastatic UC who have disease progression during or following platinum-containing chemotherapy, or who have disease progression within 12 months of neoadjuvant or adjuvant treatment with platinum-containing chemotherapy (FDA Bavencio label, section 1.2).",
+      "Advanced renal cell carcinoma (RCC): first-line treatment, in combination with axitinib, of patients with advanced RCC (FDA Bavencio label, section 1.3).",
+      "WHO Model List status: avelumab is not listed on the WHO Model List of Essential Medicines. Kenya: avelumab is not listed in the Kenya Essential Medicines List 2023 and has no monograph in the Kenya National Medicines Formulary 2023 (WHO eEML search; KEML 2023; KNMF 2023)."
+    ],
+    "contraindications": [
+      "None. The FDA label states 'Contraindications: None' (FDA Bavencio label, section 4)."
+    ],
+    "side_effects": [
+      "Metastatic Merkel cell carcinoma: the most common adverse reactions (20% or more) in the 204 patients in the JAVELIN Merkel 200 trial were fatigue, musculoskeletal pain, infusion-related reaction, rash, nausea, constipation, cough and diarrhea. Serious adverse reactions occurred in 52% of patients, the most frequent (2% or more) being general physical health deterioration, anemia, abdominal pain, acute kidney injury, sepsis, hyponatremia and infusion-related reaction. Permanent discontinuation due to an adverse reaction occurred in 27% of patients, most frequently infusion-related reaction, anemia, increased ALT and increased AST (FDA Bavencio label, section 6.1).",
+      "Urothelial carcinoma, first-line maintenance (JAVELIN Bladder 100): the most common adverse reactions (20% or more) with BAVENCIO plus best supportive care were fatigue, musculoskeletal pain, urinary tract infection and rash. Serious adverse reactions occurred in 28% of patients; those in 1% or more were urinary tract infection (including kidney infection, pyelonephritis and pyelonephritis/urosepsis) 6.1%, pain 3.2%, acute kidney injury 1.7%, hematuria 1.5%, sepsis 1.2% and infusion-related reaction 1.2%. Permanent discontinuation due to an adverse reaction occurred in 12% (FDA Bavencio label, section 6.1).",
+      "Urothelial carcinoma, previously treated (JAVELIN Solid Tumor UC cohort): the most common adverse reactions (20% or more) were fatigue, infusion-related reaction, musculoskeletal pain, nausea, decreased appetite and urinary tract infection (FDA Bavencio label, section 6.1).",
+      "Advanced renal cell carcinoma with axitinib (JAVELIN Renal 101): the most common adverse reactions (20% or more) were diarrhea, fatigue, hypertension, musculoskeletal pain, nausea, mucositis, palmar-plantar erythrodysesthesia, dysphonia, decreased appetite, hypothyroidism, rash, hepatotoxicity, cough, dyspnea, abdominal pain and headache. Diarrhea occurred in 62% of patients (Grade 3-4 in 8%) versus 48% (Grade 3-4 in 2.7%) with sunitinib; nausea 34%. Fatal adverse reactions occurred in 1.8%, including sudden cardiac death (1.2%), stroke (0.2%), myocarditis (0.2%) and necrotizing pancreatitis (0.2%); serious adverse reactions occurred in 35% (FDA Bavencio label, section 6.1, Table 7).",
+      "Infusion-related reactions occurred in 26% of patients treated with BAVENCIO, including 3 (0.2%) Grade 4 and 10 (0.5%) Grade 3 reactions; 15% of infusion-related reactions occurred after the BAVENCIO infusion was completed (FDA Bavencio label, section 5.2).",
+      "Immune-mediated pneumonitis occurred in 1.1% (21/1854) of patients, including fatal (0.1%), Grade 4 (0.1%), Grade 3 (0.3%) and Grade 2 (0.6%); systemic corticosteroids were required in all 21 patients and pneumonitis resolved in 57% (FDA Bavencio label, section 5.1).",
+      "Immune-mediated colitis occurred in 1.5% (27/1854), including Grade 3 (0.4%) and Grade 2 (0.8%); corticosteroids were required in all 27 and colitis resolved in 70% (FDA Bavencio label, section 5.1).",
+      "Immune-mediated hepatitis occurred in 1.1% (20/1854) as a single agent, including fatal (0.1%), Grade 3 (0.8%) and Grade 2 (0.2%); in combination with axitinib, ALT and AST elevations of any grade were reported in 9% (Grade 3) and 7% (Grade 4), with immune-mediated hepatitis reported in 7% including 4.9% Grade 3 or 4 (FDA Bavencio label, section 5.1).",
+      "Immune-mediated endocrinopathies: adrenal insufficiency 0.6% (11/1854), including Grade 3 (0.1%) and Grade 2 (0.4%), with resolution in 18% (2/11); hypophysitis/immune-mediated pituitary disorders 0.1% (1/1854), Grade 2; thyroiditis 0.2% (4/1854), none of which resolved; hyperthyroidism 0.4% (8/1854), resolving in 88% (7/8); hypothyroidism 5% (97/1854), including Grade 3 (0.2%) and Grade 2 (3.6%), resolved in 6% (6/97); type I diabetes mellitus 0.2% (3/1854), Grade 3 (0.2%), with no resolution and all patients requiring ongoing insulin treatment (FDA Bavencio label, section 5.1).",
+      "Immune-mediated nephritis with renal dysfunction occurred in 0.1% (2/1854), including Grade 3 (0.1%) and Grade 2 (0.1%); corticosteroids were required in 100% and it resolved in 50% (FDA Bavencio label, section 5.1).",
+      "Immune-mediated dermatologic adverse reactions occurred in 6% (108/1854), including Grade 3 (0.1%) and Grade 2 (1.9%); systemic corticosteroids were required in 25% and they resolved in 46% (FDA Bavencio label, section 5.1).",
+      "Other immune-mediated adverse reactions reported at an incidence below 1% with BAVENCIO or with other PD-1/PD-L1 blocking antibodies: cardiac/vascular (myocarditis, pericarditis, vasculitis); gastrointestinal (pancreatitis, gastritis, duodenitis); nervous system (meningitis, encephalitis, myelitis and demyelination, myasthenic syndrome/myasthenia gravis including exacerbation, Guillain-Barre syndrome, nerve paresis, autoimmune neuropathy); ocular (uveitis, iritis, other ocular inflammatory toxicities, some associated with retinal detachment, and visual impairment including blindness, with a possible Vogt-Koyanagi-Harada-like syndrome); musculoskeletal (myositis/polymyositis, rhabdomyolysis with sequelae including renal failure, arthritis, polymyalgia rheumatica); endocrine (hypoparathyroidism); hematologic/immune (hemolytic anemia, aplastic anemia, hemophagocytic lymphohistiocytosis, systemic inflammatory response syndrome, histiocytic necrotizing lymphadenitis, sarcoidosis, immune thrombocytopenic purpura, solid organ transplant rejection and other transplant rejection including corneal graft); and myocarditis-myositis-myasthenia gravis overlap syndrome. Severe or fatal cases have been reported (FDA Bavencio label, section 5.1).",
+      "Major adverse cardiovascular events occurred in 7% of patients with advanced RCC treated with BAVENCIO plus axitinib versus 3.4% with sunitinib in JAVELIN Renal 101, including death due to cardiac events (1.4%), Grade 3-4 myocardial infarction (2.8%) and Grade 3-4 congestive heart failure (1.8%); median time to onset was 4.2 months (range 2 days to 24.5 months) (FDA Bavencio label, section 5.4).",
+      "Post-marketing: neutropenia and sclerosing cholangitis (FDA Bavencio label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "800 mg administered as an intravenous infusion over 60 minutes every 2 weeks until disease progression or unacceptable toxicity. In metastatic MCC (section 2.2) and in previously-treated or maintenance urothelial carcinoma (section 2.3) the regimen is avelumab monotherapy. In advanced RCC (section 2.4) avelumab 800 mg every 2 weeks is given in combination with axitinib 5 mg orally twice daily (12 hours apart) with or without food until disease progression or unacceptable toxicity; dose escalation of axitinib above the initial 5 mg dose may be considered at intervals of two weeks or longer. Premedicate with an antihistamine and acetaminophen before the first 4 infusions, and thereafter according to clinical judgement and the presence/severity of prior infusion reactions. No dose reduction for BAVENCIO is recommended: in general withhold for severe (Grade 3) immune-mediated adverse reactions, and permanently discontinue for life-threatening (Grade 4) immune-mediated adverse reactions, recurrent severe (Grade 3) immune-mediated reactions requiring systemic immunosuppressive treatment, or inability to reduce the corticosteroid dose to 10 mg or less of prednisone or equivalent per day within 12 weeks of initiating corticosteroids (FDA Bavencio label, sections 2.1, 2.2, 2.3, 2.4 and 2.5). Kenya: not listed in the Kenya Essential Medicines List 2023 and no monograph in the Kenya National Medicines Formulary 2023 (KEML 2023; KNMF 2023).",
+      "geriatric": "Metastatic MCC: of the 204 patients in JAVELIN Merkel 200, 78% were 65 years or older and 43% were 75 years or older, and no overall differences in safety or efficacy were observed between elderly patients and younger patients. Urothelial carcinoma: of the 344 patients randomized to BAVENCIO plus best supportive care in JAVELIN Bladder 100, 63% were 65 years or older and 24% were 75 years or older, with no overall differences in safety or efficacy reported. Advanced RCC: of the 434 patients randomized to BAVENCIO plus axitinib in JAVELIN Renal 101, 38% were 65 years or older and 8% were 75 years or older, with no overall difference in safety or efficacy reported (FDA Bavencio label, section 8.5).",
+      "paediatric": "The safety and effectiveness of BAVENCIO have been established in pediatric patients aged 12 years and older for metastatic MCC; the recommended dose in pediatric patients 12 years of age or greater is the same as that in adults, supported by additional population pharmacokinetic data showing that age and body weight had no clinically meaningful effect on the steady state exposure of avelumab. Safety and effectiveness have not been established in pediatric patients less than 12 years of age (FDA Bavencio label, section 8.4). Kenya: not listed in the Kenya Essential Medicines List 2023 and no monograph in the Kenya National Medicines Formulary 2023 (KEML 2023; KNMF 2023)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No pharmacokinetic or pharmacodynamic drug interaction studies of BAVENCIO with other medicinal products are described in the label; the only interaction studied is the combination with axitinib, in which there are no clinically meaningful differences in avelumab exposure when administered with axitinib (FDA Bavencio label, section 12.3, Drug Interactions).",
+      "Axitinib: BAVENCIO in combination with axitinib can cause hepatotoxicity with higher-than-expected frequencies of Grade 3 and 4 ALT and AST elevation compared with BAVENCIO alone, so more frequent liver enzyme monitoring is needed (FDA Bavencio label, section 5.1).",
+      "Axitinib: BAVENCIO in combination with axitinib can cause severe and fatal cardiovascular events, requiring baseline and periodic evaluation of left ventricular ejection fraction and discontinuation of both drugs for Grade 3-4 cardiovascular events (FDA Bavencio label, section 5.4).",
+      "Immune-mediated adverse reactions may require systemic corticosteroid therapy (1 to 2 mg/kg/day prednisone or equivalent) until improvement to Grade 1 or less, followed by a corticosteroid taper over at least 1 month; other systemic immunosuppressants may be considered if the reaction is not controlled by corticosteroids (FDA Bavencio label, section 5.1).",
+      "Avelumab has not been studied for use with other PD-1/PD-L1 blocking antibodies; the label does not describe combination regimens with other checkpoint inhibitors (FDA Bavencio label, sections 5.1 and 12.3)."
+    ],
+    "monitoring": "Evaluate liver enzymes, creatinine and thyroid function at baseline and periodically during treatment, and monitor patients closely for symptoms and signs that may be clinical manifestations of underlying immune-mediated adverse reactions (FDA Bavencio label, section 5.1). In cases of suspected immune-mediated adverse reactions, initiate appropriate workup to exclude alternative etiologies including infection, and institute medical management promptly with specialty consultation as appropriate (section 5.1). Monitor for signs and symptoms of infusion-related reactions including pyrexia, chills, flushing, hypotension, dyspnea, wheezing, back pain, abdominal pain and urticaria; interrupt or slow the rate of infusion for mild or moderate reactions, and stop the infusion and permanently discontinue BAVENCIO for severe (Grade 3) or life-threatening (Grade 4) reactions (section 5.2). In patients receiving BAVENCIO with axitinib, obtain baseline and periodic evaluations of left ventricular ejection fraction, monitor for signs and symptoms of cardiovascular events, and optimize management of cardiovascular risk factors such as hypertension, diabetes and dyslipidemia (section 5.4). Follow patients closely for evidence of transplant-related complications after allogeneic HSCT, which can occur despite intervening therapy between PD-1/PD-L1 blockade and allogeneic HSCT (section 5.3). Monitor platelet counts, blood counts, renal and hepatic function clinically as part of routine immune-related toxicity workup; the label specifies baseline and periodic liver enzymes, creatinine and thyroid function (sections 5.1 and 6.1).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Medication Guide) (FDA Bavencio label, section 17). Inform patients of the risk of immune-mediated adverse reactions requiring corticosteroids or hormone replacement therapy: pneumonitis (new or worsening cough, chest pain or shortness of breath); colitis (diarrhea or severe abdominal pain); hepatitis (jaundice, severe nausea or vomiting, pain on the right side of the abdomen, lethargy, or easy bruising or bleeding); endocrinopathies (signs or symptoms of adrenal insufficiency, hypothyroidism, hyperthyroidism and diabetes mellitus); nephritis with renal dysfunction (decreased urine output, blood in urine, swelling in ankles, loss of appetite and other symptoms of renal dysfunction); and dermatologic adverse reactions (rash, itchy skin, rash with tiny spots and bumps, reddening of skin, blisters or peeling) - patients should contact their healthcare provider immediately for any of these (section 17, Warnings and Precautions 5.1). Advise patients to contact their healthcare provider immediately for signs or symptoms of potential infusion-related reactions (section 17, section 5.2). Advise patients of the risk of post-allogeneic hematopoietic stem cell transplantation complications (section 17, section 5.3). Advise patients receiving BAVENCIO in combination with axitinib to contact their healthcare provider immediately for signs or symptoms of cardiovascular events, including new or worsening chest discomfort, dyspnea or peripheral edema (section 17, section 5.4). Advise females of reproductive potential that BAVENCIO can cause fetal harm and to use effective contraception during and for at least one month after the last dose of BAVENCIO (section 17, sections 5.5, 8.1 and 8.3). Advise nursing mothers not to breastfeed while taking BAVENCIO and for at least one month after the final dose (section 17, section 8.2).",
+    "warnings": [
+      "Severe and fatal immune-mediated adverse reactions: BAVENCIO is a monoclonal antibody that binds to either PD-1 or PD-L1, blocking the PD-1/PD-L1 pathway and thereby removing inhibition of the immune response, potentially breaking peripheral tolerance and inducing immune-mediated adverse reactions. These may occur in any organ system or tissue, including immune-mediated pneumonitis, colitis, hepatitis, endocrinopathies, nephritis with renal dysfunction and dermatologic adverse reactions, and may result in solid organ transplant rejection. Immune-mediated adverse reactions can occur at any time after starting treatment and can also manifest after discontinuation of a PD-1/PD-L1 blocking antibody. Withhold or permanently discontinue BAVENCIO depending on severity (FDA Bavencio label, section 5.1).",
+      "Infusion-related reactions: BAVENCIO can cause severe or life-threatening infusion-related reactions; premedicate with antihistamine and acetaminophen prior to the first 4 infusions, interrupt or slow the rate of infusion for mild or moderate reactions, and stop the infusion and permanently discontinue BAVENCIO for severe (Grade 3) or life-threatening (Grade 4) reactions (FDA Bavencio label, section 5.2).",
+      "Complications of allogeneic HSCT: fatal and other serious complications can occur in patients who receive allogeneic HSCT before or after being treated with a PD-1/PD-L1 blocking antibody; transplant-related complications include hyperacute GVHD, acute GVHD, chronic GVHD, hepatic veno-occlusive disease after reduced intensity conditioning, and steroid-requiring febrile syndrome, and these complications may occur despite intervening therapy between PD-1/PD-L1 blockade and allogeneic HSCT (FDA Bavencio label, section 5.3).",
+      "Major adverse cardiovascular events (MACE): BAVENCIO in combination with axitinib can cause severe and fatal cardiovascular events. Consider baseline and periodic evaluations of left ventricular ejection fraction, monitor for signs and symptoms of cardiovascular events, optimize management of cardiovascular risk factors, and discontinue BAVENCIO and axitinib for Grade 3-4 cardiovascular events (FDA Bavencio label, section 5.4).",
+      "Embryo-fetal toxicity: based on its mechanism of action BAVENCIO can cause fetal harm when administered to a pregnant woman; animal studies demonstrate that inhibition of the PD-1/PD-L1 pathway can lead to increased risk of immune-mediated rejection of the developing fetus resulting in fetal death (FDA Bavencio label, section 5.5).",
+      "BAVENCIO in combination with axitinib causes hepatotoxicity with higher-than-expected frequencies of Grade 3 and 4 ALT and AST elevation compared with BAVENCIO alone; consider more frequent monitoring of liver enzymes and interrupt BAVENCIO and axitinib for elevated liver enzymes, considering corticosteroids as needed (FDA Bavencio label, section 5.1)."
+    ],
+    "precautions": [
+      "No dose reduction for BAVENCIO is recommended. In general withhold BAVENCIO for severe (Grade 3) immune-mediated adverse reactions, and permanently discontinue for life-threatening (Grade 4) immune-mediated adverse reactions, recurrent severe (Grade 3) immune-mediated reactions requiring systemic immunosuppressive treatment, or inability to reduce the corticosteroid dose to 10 mg or less of prednisone or equivalent per day within 12 weeks of initiating corticosteroids (FDA Bavencio label, section 2.5).",
+      "When BAVENCIO requires interruption or discontinuation, administer systemic corticosteroid therapy (1 to 2 mg/kg/day prednisone or equivalent) until improvement to Grade 1 or less, then initiate a corticosteroid taper and continue tapering over at least 1 month; consider other systemic immunosuppressants if the immune-mediated reaction is not controlled by corticosteroids (FDA Bavencio label, section 5.1).",
+      "Premedication with an antihistamine and acetaminophen is required prior to the first 4 infusions, and thereafter based on clinical judgement and the presence/severity of prior infusion reactions (FDA Bavencio label, section 2.1).",
+      "For the RCC indication, review the Full Prescribing Information for axitinib before initiation, and consider the benefit versus risks of treatment with a PD-1/PD-L1 blocking antibody prior to or after an allogeneic HSCT (FDA Bavencio label, sections 2.4 and 5.3).",
+      "Topical emollients and/or topical corticosteroids may be adequate to treat mild to moderate non-exfoliative rashes; exfoliative dermatitis including Stevens-Johnson syndrome, DRESS and toxic epidermal necrolysis has occurred with PD-1/PD-L1 blocking antibodies (FDA Bavencio label, section 5.1).",
+      "Cytomegalovirus infection/reactivation has been reported in patients with corticosteroid-refractory immune-mediated colitis; in such cases consider repeating infectious workup to exclude alternative etiologies (FDA Bavencio label, section 5.1).",
+      "Immunogenicity: anti-drug antibody responses were detected in 8.9% (7/79), 8.2% (9/110), 19% (62/326), 18% (41/226) and 16% (65/411) of patients across the JAVELIN Merkel 200 Part A, Part B, Bladder 100, Solid Tumor UC cohort and Renal 101 trials respectively, with neutralizing antibody incidences of 71% (5/7), 89% (8/9), 97% (60/62), not tested and 78% (51/65). Avelumab clearance was approximately 15% higher in ADA-positive than ADA-negative patients in advanced UC or RCC, which is not considered clinically meaningful, and the effect of ADA on efficacy or safety could not be determined (FDA Bavencio label, section 12.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe and fatal immune-mediated adverse reactions, which may occur in any organ system or tissue, including pneumonitis (1.1%, 21/1854), colitis (1.5%, 27/1854), hepatitis (1.1% as single agent), adrenal insufficiency (0.6%), hypophysitis (0.1%), thyroiditis (0.2%), hyperthyroidism (0.4%), hypothyroidism (5%), type I diabetes mellitus (0.2%), nephritis with renal dysfunction (0.1%) and dermatologic adverse reactions (6%) (FDA Bavencio label, section 5.1)",
+      "Severe or life-threatening infusion-related reactions, occurring in 26% of patients, including Grade 3 (0.5%) and Grade 4 (0.2%) (FDA Bavencio label, sections 5.2 and 6.1)",
+      "Fatal and other serious complications of allogeneic HSCT, including hyperacute GVHD, acute and chronic GVHD, hepatic veno-occlusive disease and steroid-requiring febrile syndrome (FDA Bavencio label, section 5.3)",
+      "Major adverse cardiovascular events with axitinib: 7% versus 3.4% with sunitinib, including death due to cardiac events (1.4%), Grade 3-4 myocardial infarction (2.8%) and Grade 3-4 congestive heart failure (1.8%) (FDA Bavencio label, section 5.4)",
+      "Hepatotoxicity with axitinib, with ALT and AST elevations of Grade 3 in 9% and Grade 4 in 7%, and immune-mediated hepatitis in 7% including 4.9% Grade 3 or 4 (FDA Bavencio label, section 5.1)",
+      "Embryo-fetal toxicity, with potential for increased rates of abortion or stillbirth and for immune-mediated disorders in the offspring (FDA Bavencio label, sections 5.5 and 8.1)",
+      "Fatal adverse reactions in the RCC combination trial (1.8%): sudden cardiac death (1.2%), stroke (0.2%), myocarditis (0.2%) and necrotizing pancreatitis (0.2%) (FDA Bavencio label, section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on its mechanism of action, BAVENCIO can cause fetal harm when administered to a pregnant woman. There are no available data on the use of BAVENCIO in pregnant women. Animal studies have demonstrated that inhibition of the PD-1/PD-L1 pathway can lead to increased risk of immune-mediated rejection of the developing fetus resulting in fetal death. Human IgG1 immunoglobulins cross the placenta, so BAVENCIO has the potential to be transmitted from the mother to the developing fetus. If the drug is used during pregnancy, or if the patient becomes pregnant while taking this drug, advise the patient of the potential risk to a fetus. Animal reproduction studies have not been conducted with BAVENCIO to evaluate its effect on reproduction and fetal development; in murine models of pregnancy, blockade of PD-L1 signaling has been shown to disrupt tolerance to the fetus and to result in an increase in fetal loss, and potential risks include increased rates of abortion or stillbirth. There were no malformations related to the blockade of PD-1/PD-L1 signaling in the offspring of these animals; however, immune-mediated disorders occurred in PD-1 and PD-L1 knockout mice. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Bavencio label, sections 8.1 and 8.3).",
+    "lactation_guidance": "There is no information regarding the presence of avelumab in human milk, the effects on the breastfed infant, or the effects on milk production. Since many drugs including antibodies are excreted in human milk, advise a lactating woman not to breastfeed during treatment and for at least one month after the last dose of BAVENCIO due to the potential for serious adverse reactions in breastfed infants (FDA Bavencio label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "The pharmacokinetics of avelumab as a single agent were characterized in patients who received BAVENCIO at doses ranging from 1 to 20 mg/kg every 2 weeks (0.1 to 2 times the approved recommended dosage), and exposure increased dose-proportionally from 10 to 20 mg/kg every 2 weeks. Steady-state concentrations were reached after approximately 4 to 6 weeks (2 to 3 cycles) and systemic accumulation was 1.25-fold. The mean volume of distribution at steady state after a 10 mg/kg dose was 4.7 L (CV 44%). The primary elimination mechanism of avelumab is proteolytic degradation; the total systemic clearance was 0.59 L/day (CV 25%) and the terminal half-life was 6.1 days (CV 92%) in patients who received 10 mg/kg every 2 weeks. Avelumab clearance decreased over time in patients with MCC, with a mean maximal reduction from baseline of approximately 32% (CV 36%), which is not considered clinically important; a change in clearance over time was not observed in patients with UC or RCC. No clinically meaningful differences in pharmacokinetics were observed based on age, body weight, sex, race, PD-L1 status, tumor burden, mild to severe renal impairment (calculated creatinine clearance 89 to 15 mL/min) or mild or moderate hepatic impairment (bilirubin 3 times ULN or less); the effect of severe hepatic impairment (bilirubin greater than 3 times ULN) is unknown (FDA Bavencio label, section 12.3).",
+    "clinical_pearls": [
+      "The most common reason to hold or stop avelumab is immune-mediated toxicity, and the label's default is: withhold for Grade 3, permanently discontinue for Grade 4 - there is no dose reduction (FDA Bavencio label, sections 2.5 and 5.1).",
+      "A fixed 800 mg flat dose is used, not a weight-based dose, and the 10 mg/kg figure in the trial data is the historical trial dose rather than the approved label dose (FDA Bavencio label, sections 2.2 to 2.4 and 6.1).",
+      "Because the 1% immune-mediated adverse-reaction rates hide a large denominator, a low individual risk is still a meaningful absolute risk: for example hypothyroidism occurred in 5% (97/1854) of patients and resolved in only 6% of those affected (FDA Bavencio label, section 5.1).",
+      "Premedication is required for the first 4 infusions only, and 15% of infusion-related reactions occur after the infusion is already complete - so monitor during the observation period, not just in the chair (FDA Bavencio label, section 5.2).",
+      "With axitinib, both hepatotoxicity and cardiovascular events are more frequent than expected from avelumab alone; check LFTs and ejection fraction rather than assuming monotherapy toxicity patterns (FDA Bavencio label, sections 5.1 and 5.4).",
+      "Allogeneic HSCT before or after PD-1/PD-L1 blockade carries risk of fatal transplant complications even with intervening therapy, so refer early to the transplant team (FDA Bavencio label, section 5.3).",
+      "Renal impairment does not require dose adjustment; the label states no clinically meaningful pharmacokinetic effect from calculated creatinine clearance 89 to 15 mL/min (FDA Bavencio label, section 12.3).",
+      "Avelumab is not listed on the WHO Model List of Essential Medicines and has no Kenya Essential Medicines List 2023 or KNMF 2023 listing, so access in Kenya depends on non-essential-medicine and programme procurement pathways (WHO eEML; KEML 2023; KNMF 2023)."
+    ],
+    "brand_names": ["BAVENCIO (avelumab injection for intravenous use, EMD Serono, Inc.)"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No clinically meaningful differences in the pharmacokinetics of avelumab were observed in patients with mild to severe renal impairment (calculated creatinine clearance 89 to 15 mL/min as estimated by the Cockcroft-Gault formula), and no renal dose adjustment is specified in the label (FDA Bavencio label, section 12.3).",
+    "hepatic_dose_adjustment": "No clinically meaningful differences in the pharmacokinetics of avelumab were observed in patients with mild or moderate hepatic impairment (bilirubin 3 times ULN or less). The effect of severe hepatic impairment (bilirubin greater than 3 times ULN) on the pharmacokinetics of avelumab is unknown, and no hepatic dose adjustment is specified in the label (FDA Bavencio label, section 12.3).",
+    "administration_instructions": "For intravenous infusion only. Visually inspect the vial for particulate matter and discoloration; BAVENCIO is a clear, colorless to slightly yellow solution, and the vial should be discarded if the solution is cloudy, discolored or contains particulate matter. Withdraw the required volume from the vial(s) and inject it into a 250 mL infusion bag containing either 0.9% Sodium Chloride Injection or 0.45% Sodium Chloride Injection, then gently invert the bag to mix without foaming or excessive shearing, inspect to ensure the solution is clear, colorless and free of visible particles, and discard any partially used or empty vials. Protect diluted BAVENCIO from light; store at room temperature up to 25 degrees C for no more than 4 hours from dilution, or under refrigeration at 2 to 8 degrees C for no more than 24 hours from dilution, bringing refrigerated solution to room temperature before administration, and do not freeze or shake. Administer the diluted solution over 60 minutes through an intravenous line containing a sterile, non-pyrogenic, low protein-binding in-line filter with a pore size of 0.2 micron, and do not co-administer other drugs through the same intravenous line. Premedicate with an antihistamine and acetaminophen before the first 4 infusions (FDA Bavencio label, sections 2.1, 2.6, 16 and 11)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, BAVENCIO (avelumab) injection, EMD Serono, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Bavencio label, sections 1.1, 1.2 and 1.3; WHO eEML search (avelumab not listed); KEML 2023 and KNMF 2023 (no listing or monograph)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Bavencio label, section 4 (None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Bavencio label, sections 5.1, 5.2, 5.4, 6, 6.1 (Tables 3, 5 and 7) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Bavencio label, sections 2.1, 2.2, 2.3, 2.4, 2.5, 8.4 and 8.5; KEML 2023 and KNMF 2023 (no listing or monograph)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Bavencio label, sections 5.1, 5.4 and 12.3 (Drug Interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Bavencio label, sections 5.1, 5.2, 5.3, 5.4 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Bavencio label, section 17 (Medication Guide)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Bavencio label, Boxed Warning summary and sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Bavencio label, sections 2.1, 2.4, 2.5, 5.1, 5.3 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Bavencio label, sections 5.1, 5.2, 5.3, 5.4, 5.5, 6.1 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described for BAVENCIO in the FDA label; the label notes that axitinib, given in combination, may be taken with or without food (section 2.4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current FDA Bavencio label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Bavencio label, sections 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Bavencio label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "overdose",
+      "ref": "The FDA Bavencio label contains no Overdose section; no overdose management information is provided in the label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Bavencio label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Bavencio label, sections 2.2-2.4, 2.5, 5.1, 5.2, 5.3, 5.4, 6.1 and 12.3; WHO eEML; KEML 2023; KNMF 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "brand_names",
+      "ref": "BAVENCIO (avelumab) injection listed on DailyMed as the branded product, EMD Serono, Inc.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Bavencio labelling; section 4 states Contraindications: None and the label carries no boxed warning (full label reviewed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Bavencio label, section 12.3 (Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Bavencio label, section 12.3 (Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Bavencio label, sections 2.1, 2.6, 11 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd725a1-2fa4-408a-a651-57a7b84b2118"
+    },
+    {
+      "field": "indications (WHO Model List status)",
+      "ref": "WHO eEML search: avelumab returns zero recommendations, including with removed medicines shown; it is not on the WHO Model List of Essential Medicines",
+      "url": "https://list.essentialmeds.org/?query=avelumab&showRemoved=1"
+    },
+    {
+      "field": "indications (Kenya Essential Medicines List)",
+      "ref": "Kenya Essential Medicines List 2023, Ministry of Health - avelumab does not appear in the KEML 2023 list",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "dosage (Kenya National Medicines Formulary)",
+      "ref": "Kenya National Medicines Formulary, First Edition (KNMF-1), Ministry of Health 2023 - avelumab has no monograph",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_National_Medicines_Formulary_2023_1st_Edition.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen is provided in fields.dosage.paediatric)",
+    "overdose (the FDA Bavencio label contains no Overdose section, so no overdose management information is available to source)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Avelumab' with the brand name 'BAVENCIO'. The FDA/DailyMed label for BAVENCIO (avelumab) from EMD Serono is the sole clinical source and covers all three labelled indications (metastatic MCC, urothelial carcinoma, and advanced RCC in combination with axitinib). There is no boxed warning and the label states 'Contraindications: None'. overdose is null because the Bavencio label contains no section 10 Overdose content - this is a genuine gap in the label rather than an omission, and is recorded in unsourced_fields. WHO Model List status: avelumab is not listed on the WHO Model List of Essential Medicines; Kenya: it is not in the Kenya Essential Medicines List 2023 and has no monograph in the Kenya National Medicines Formulary 2023, so access in Kenya is via non-essential-medicine or programme procurement routes. The label states no letter pregnancy category (Pregnancy and Lactation Labeling Rule risk summary), so pregnancy_category is null. Care is needed when reading the clinical-trial data: the trial dosing in the label is 10 mg/kg every 2 weeks, whereas the approved label dose is a flat 800 mg every 2 weeks."
+}

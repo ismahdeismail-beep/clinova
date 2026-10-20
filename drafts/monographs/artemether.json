@@ -1,0 +1,167 @@
+{
+  "name": "Artemether",
+  "existing_id": "f32df2fb-224f-424c-b5dd-9ad162ced488",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Artemether is a semisynthetic artemisinin derivative and an antimalarial blood schizonticide. It is rapidly metabolised into an active metabolite, dihydroartemisinin (DHA), and the antimalarial activity of artemether and DHA has been attributed to the endoperoxide moiety (FDA Coartem label, section 12.4). Artemether is two to three times less active than its main metabolite dihydroartemisinin; in severe falciparum malaria the concentration of the parent compound predominates after intramuscular injection, whereas parenteral artesunate is hydrolysed rapidly and almost completely to dihydroartemisinin, and given intramuscularly artemether may be absorbed more slowly and more erratically than water-soluble artesunate, which is absorbed rapidly and reliably after intramuscular injection (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether). Both artemether and DHA were shown to inhibit nucleic acid and protein synthesis, and artemether and lumefantrine are active against the erythrocytic stages of Plasmodium falciparum (FDA Coartem label, section 12.4).",
+    "indications": [
+      "Management of severe malaria: the WHO Model List of Essential Medicines lists artemether with the additional note 'For use in the management of severe malaria' (WHO eEML, artemether, recommendations 790 and 1455)",
+      "Second-line parenteral treatment for severe malaria when artesunate is not available: 'If artesunate is not available, artemether should be used in preference to quinine for treating children and adults with severe malaria' (conditional recommendation, low certainty evidence) (WHO guidelines for malaria, 13 August 2025, section 5.2.2.2)",
+      "Pre-referral treatment of suspected severe malaria: 'Where intramuscular artesunate is not available, intramuscular artemether or, if that is not available, intramuscular quinine should be used' (strong recommendation, moderate certainty evidence) (WHO guidelines for malaria, 13 August 2025, section 5.2.2.3)",
+      "Kenya Essential Medicines List 2023: artemether oily intramuscular injection, 80 mg/mL in 1 mL ampoule, Level of Use 2 (dispensary/clinic), with the footnote 'Use in management of severe malaria. Being a monotherapy, it should not be used except in the stated circumstances' (KEML 2023, section 7.5.3.1.1 and footnote 169)"
+    ],
+    "contraindications": null,
+    "side_effects": null,
+    "dosage": {
+      "adult": "Intramuscular artemether for severe malaria: 'The initial dose of artemether is 3.2 mg/kg bw intramuscularly (to the anterior thigh). The maintenance dose is 1.6 mg/kg bw intramuscularly daily' (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether). Artemether is dispensed dissolved in oil (groundnut, sesame seed) and given by intramuscular injection into the anterior thigh (WHO guidelines for malaria, 13 August 2025, section 5.2.2). WHO eEML lists the parenteral formulation as IM 20 mg/mL in 1 mL ampoule (oily injection) and IM 40 mg/mL in 1 mL ampoule (oily injection) (WHO eEML, artemether, recommendations 790 and 1455); KEML 2023 lists the oily IM injection as 80 mg/mL in 1 mL ampoule (KEML 2023, section 7.5.3.1.1).",
+      "geriatric": null,
+      "paediatric": "The same weight-based intramuscular regimen is used in children: initial dose 3.2 mg/kg bw intramuscularly into the anterior thigh, then maintenance 1.6 mg/kg bw intramuscularly daily (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether). The WHO recommendation for parenteral alternatives applies to 'children and adults with severe malaria', and the pre-referral recommendation applies to 'all people with suspected severe malaria, including infants, lactating women and pregnant women in all trimesters' (WHO guidelines for malaria, 13 August 2025, sections 5.2.2.2 and 5.2.2.3). The WHO eEML records artemether as suitable for all ages and 'also recommended for children' (WHO eEML, artemether, recommendations 790 and 1455). In 2025 the WHO Expert Committee replaced the 80 mg/mL strength of artemether oily injection with 20 mg/mL and 40 mg/mL strengths because the 80 mg/mL strength has limited utility for children under 12 years of age (WHO eEML, artemether, Summary of evidence and Expert Committee recommendations)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Artemether is metabolised predominantly by CYP3A4/5, and to a lesser extent by CYP2B6, CYP2C9 and CYP2C19 (FDA Coartem label, section 12.3)",
+      "Strong CYP3A4 inducers: in a study with the artemether/lumefantrine combination, oral rifampin reduced exposure to artemether by 89% and to dihydroartemisinin by 85%; strong inducers of CYP3A4 such as rifampin, carbamazepine, phenytoin and St John's wort are contraindicated with Coartem (FDA Coartem label, sections 7.1 and 12.3)",
+      "CYP3A4 inhibitors: concomitant ketoconazole increased artemether AUC 2.3-fold and DHA AUC 1.5-fold; no dose adjustment of Coartem is needed with ketoconazole or other potent CYP3A4 inhibitors, but caution is advised because of increased lumefantrine concentrations and QT prolongation (FDA Coartem label, sections 7.2 and 12.3)",
+      "Artemether has been reported to weakly induce, in humans, the activity of CYP2C19, CYP2B6 and CYP3A4, which is why Coartem may potentially reduce the effectiveness of hormonal contraceptives (FDA Coartem label, section 7.5)"
+    ],
+    "monitoring": "Give parenteral antimalarial drugs for a minimum of 24 hours once started, irrespective of the patient's ability to tolerate oral medication earlier, or until the patient can tolerate oral medication, before giving oral follow-on treatment (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment). Once the patient can tolerate oral therapy it is essential to continue and complete treatment with a full course of an effective oral ACT (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment). KEML 2023 footnote 172 states: 'Always follow artesunate treatment (24 hours minimum) with a 3-day course of artemether + lumefantrine (once the patient can take oral medication)' (KEML 2023, footnote 172). During severe malaria, patients require intensive nursing care, preferably in an intensive care unit where possible; clinical observations should be made as frequently as possible and should include monitoring of vital signs, coma score and urine output, and blood glucose should be monitored every 4 hours if possible, particularly in unconscious patients (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Continuing supportive care).",
+    "patient_counselling": "Explain that artemether injection is given into the thigh muscle by a trained health worker and is used only for severe malaria when artesunate injection is not available (WHO guidelines for malaria, 13 August 2025, section 5.2.2.2). Explain that after the injection, a full course of oral antimalarial tablets (a 3-day course of artemether + lumefantrine) must be completed once the patient can swallow tablets, because the injection alone does not cure the infection (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment; KEML 2023, footnote 172). Advise the patient to complete the full oral course even if they feel better, as incomplete treatment risks recrudescence and resistance (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment). Where artemether is used as pre-referral treatment, advise the patient to go immediately to a health facility for further care (WHO guidelines for malaria, 13 August 2025, section 5.2.2.3). For pregnant women, explain that severe malaria in pregnancy is life-threatening and that parenteral antimalarial treatment must not be delayed (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Treatment of severe malaria during pregnancy).",
+    "warnings": [
+      "Intramuscular artemether should be considered only when parenteral artesunate is not available (WHO guidelines for malaria, 13 August 2025, section 5.2.2.2)",
+      "Parenteral artesunate is the treatment of choice for all severe malaria, and artesunate is simpler and safer to use; the largest randomised clinical trials on severe falciparum malaria showed a substantial reduction in mortality with intravenous or intramuscular artesunate compared with parenteral quinine (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Treatment of severe malaria)",
+      "Monotherapy restriction: 'Use in management of severe malaria. Being a monotherapy, it should not be used except in the stated circumstances' (KEML 2023, footnote 169). The WHO eEML likewise restricts artemether to 'For use in the management of severe malaria' (WHO eEML, artemether, recommendations 790 and 1455)",
+      "KEML 2023 general antimalarial rule: 'Medicines for the treatment of P. falciparum malaria cases should be used in combination according to treatment guidelines' (KEML 2023, section 7.5.3.1)"
+    ],
+    "precautions": [
+      "Artemether for severe malaria should be used only as a parenteral alternative when artesunate is unavailable, or as pre-referral treatment when intramuscular artesunate is unavailable (WHO guidelines for malaria, 13 August 2025, sections 5.2.2.2 and 5.2.2.3)",
+      "Strength change for paediatric use: the WHO Expert Committee replaced the 80 mg/mL strength of artemether oily injection with 20 mg/mL and 40 mg/mL strengths, because the 80 mg/mL strength has limited utility for children under 12 years of age (WHO eEML, artemether, Summary of evidence and Expert Committee recommendations)",
+      "The WHO eEML lists artemether as a Core (EMLc) medicine, i.e. for priority conditions where the medicine offers the greatest possible impact on population health (WHO eEML, artemether, recommendations 790 and 1455)",
+      "Artemether is dispensed dissolved in oil (groundnut or sesame seed) and given by intramuscular injection into the anterior thigh (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether)"
+    ],
+    "serious_adverse_reactions": null,
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Parenteral antimalarial drugs should be given to pregnant women with severe malaria in full doses without delay. Parenteral artesunate is the treatment of choice in all trimesters and treatment must not be delayed; if artesunate is unavailable, intramuscular artemether should be given, and if this is unavailable then parenteral quinine should be started immediately until artesunate is obtained (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Treatment of severe malaria during pregnancy). The pre-referral recommendation using intramuscular artemether applies to all people with suspected severe malaria, including infants, lactating women and pregnant women in all trimesters (WHO guidelines for malaria, 13 August 2025, section 5.2.2.3). The WHO eEML records artemether as suitable for both sexes and all ages (WHO eEML, artemether, recommendations 790 and 1455).",
+    "lactation_guidance": "The WHO pre-referral treatment recommendation that permits intramuscular artemether where intramuscular artesunate is not available applies to all people with suspected severe malaria, including infants, lactating women and pregnant women in all trimesters (WHO guidelines for malaria, 13 August 2025, section 5.2.2.3). The WHO eEML records artemether as suitable for both sexes and all ages (WHO eEML, artemether, recommendations 790 and 1455). No breast-milk data specific to intramuscular artemether are given in the WHO eEML, KEML 2023 or the WHO malaria guidelines.",
+    "overdose": null,
+    "pharmacokinetics": "Artemether is rapidly metabolised to the active metabolite dihydroartemisinin (DHA). In the Coartem (artemether/lumefantrine) label, following oral administration artemether is absorbed with peak plasma concentrations reached about 2 hours after dosing, with a terminal half-life of about 2 hours that is similar for DHA; artemether and DHA are both cleared from plasma with an elimination half-life of about 2 hours (FDA Coartem label, section 12.3). Artemether and DHA are both highly bound to human serum proteins in vitro (95.4% and 47% to 76% respectively) (FDA Coartem label, section 12.3). For the intramuscular route, artemether is dispensed dissolved in oil; given intramuscularly it may be absorbed more slowly and more erratically than water-soluble artesunate, which is absorbed rapidly and reliably after intramuscular injection, and in severe falciparum malaria the concentration of the parent compound predominates after intramuscular injection (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether).",
+    "clinical_pearls": [
+      "Artesunate, not artemether, is the WHO-recommended parenteral agent for severe malaria; intramuscular artemether is a parenteral alternative used only when artesunate is not available, and the WHO Guideline Development Group justified this on the 'possible superiority, the ease of administration and the better adverse-event profile of artemether' relative to quinine (WHO guidelines for malaria, 13 August 2025, sections 5.2.2 and 5.2.2.2)",
+      "Artesunate is hydrolysed rapidly and almost completely to dihydroartemisinin, whereas after intramuscular artemether the parent compound predominates; this pharmacological difference may explain the clinical superiority of parenteral artesunate over artemether in severe malaria (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether)",
+      "Artemether is two to three times less active than its main metabolite dihydroartemisinin (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether)",
+      "WHO eEML status: artemether is a Core (EMLc) essential medicine, ATC code P01BE02, chemical agent, first added in 1997 (TRS 882) for malaria due to Plasmodium falciparum and also for malaria due to Plasmodium vivax, with changes in 2002 (TRS 914), 2007 (TRS 946 and TRS 950) and 2025 (TRS 1064) (WHO eEML, artemether, recommendations 790 and 1455)",
+      "KEML 2023 lists artemether as an oily intramuscular injection, 80 mg/mL in 1 mL ampoule, at Level of Use 2 (dispensary/clinic); WHO eEML 2025 has moved to 20 mg/mL and 40 mg/mL strengths in 1 mL ampoules (KEML 2023, section 7.5.3.1.1; WHO eEML, artemether)",
+      "Dosage of artemisinin derivatives does not have to be adjusted for patients with vital organ dysfunction (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction)",
+      "The 'COARTEM' brand name stored against this row belongs to the artemether-lumefantrine fixed-dose combination, not to standalone injectable artemether; that combination has its own monograph (Artemether-Lumefantrine). Standalone artemether oily injection is listed generically on the WHO eEML and the KEML 2023 (FDA Coartem label, section 16; WHO eEML, artemether; KEML 2023, section 7.5.3.1.1)"
+    ],
+    "brand_names": ["Coartem"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "The dosage of artemisinin derivatives does not have to be adjusted for patients with vital organ dysfunction, and dosage adjustments are not necessary if patients are receiving either haemodialysis or haemofiltration (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction).",
+    "hepatic_dose_adjustment": "The dosage of artemisinin derivatives does not have to be adjusted for patients with vital organ dysfunction (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction).",
+    "administration_instructions": "Artemether is dispensed dissolved in oil (groundnut, sesame seed) and given by intramuscular injection into the anterior thigh; the initial dose is 3.2 mg/kg bodyweight and the maintenance dose is 1.6 mg/kg bodyweight intramuscularly daily (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Artemether). WHO eEML 2025 lists IM 20 mg/mL in 1 mL ampoule (oily injection) and IM 40 mg/mL in 1 mL ampoule (oily injection) (WHO eEML, artemether, recommendations 790 and 1455). KEML 2023 lists the oily IM injection as 80 mg/mL in 1 mL ampoule (KEML 2023, section 7.5.3.1.1). Ampoules are single-use; parenteral artesunate remains the preferred first-line parenteral agent (WHO guidelines for malaria, 13 August 2025, section 5.2.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "WHO guidelines for malaria, 13 August 2025 (WHO/UCN/GMP), section 5.2.2 Practical info: Artemether; FDA label, COARTEM (artemether and lumefantrine) tablet [Novartis], section 12.4 (Microbiology)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines, artemether (recommendations 790 for P. falciparum and 1455 for P. vivax); WHO guidelines for malaria, 13 August 2025, sections 5.2.2.2 and 5.2.2.3; Kenya Essential Medicines List 2023, section 7.5.3.1.1 and footnote 169",
+      "url": "https://list.essentialmeds.org/recommendations/790"
+    },
+    {
+      "field": "dosage",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Artemether; WHO eEML artemether formulations; Kenya Essential Medicines List 2023, section 7.5.3.1.1",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, COARTEM (artemether and lumefantrine) tablet, sections 7.1, 7.2, 7.5 and 12.3 (Biotransformation and Drug Interaction Studies)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Follow-on treatment and Continuing supportive care; Kenya Essential Medicines List 2023, footnote 172",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "WHO guidelines for malaria, 13 August 2025, sections 5.2.2, 5.2.2.2, 5.2.2.3 and Practical info: Follow-on treatment and Treatment of severe malaria during pregnancy; Kenya Essential Medicines List 2023, footnote 172",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "warnings",
+      "ref": "WHO guidelines for malaria, 13 August 2025, sections 5.2.2 and 5.2.2.2; WHO eEML artemether (recommendations 790, 1455); Kenya Essential Medicines List 2023, section 7.5.3.1 and footnote 169",
+      "url": "https://list.essentialmeds.org/medicines/372"
+    },
+    {
+      "field": "precautions",
+      "ref": "WHO guidelines for malaria, 13 August 2025, sections 5.2.2.2 and 5.2.2.3; WHO eEML artemether (recommendations 790, 1455) Summary of evidence and Expert Committee recommendations; Kenya Essential Medicines List 2023, section 7.5.3.1.1 and footnote 169",
+      "url": "https://list.essentialmeds.org/medicines/372"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Treatment of severe malaria during pregnancy, and section 5.2.2.3; WHO eEML artemether (recommendations 790, 1455)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2.3 (pre-referral treatment options); WHO eEML artemether (recommendations 790, 1455)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, COARTEM (artemether and lumefantrine) tablet, section 12.3 (Absorption, Distribution, Elimination); WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Artemether",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "WHO guidelines for malaria, 13 August 2025, sections 5.2.2 and 5.2.2.2; WHO eEML artemether (recommendations 790, 1455) EML status history and Summary of evidence; Kenya Essential Medicines List 2023, section 7.5.3.1.1 and footnote 169; FDA label, COARTEM, section 16",
+      "url": "https://list.essentialmeds.org/recommendations/1455"
+    },
+    {
+      "field": "brand_names",
+      "ref": "COARTEM listed as a brand product on DailyMed (Novartis Pharmaceutical Corporation); note it is the brand of the artemether-lumefantrine fixed-dose combination",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning applies: artemether has no FDA-approved standalone product label, and the WHO eEML and KEML 2023 entries carry no boxed warning",
+      "url": "https://list.essentialmeds.org/medicines/372"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Adjustment of parenteral dosing in renal failure or hepatic dysfunction",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "WHO guidelines for malaria, 13 August 2025, section 5.2.2 Practical info: Artemether; WHO eEML artemether formulations; Kenya Essential Medicines List 2023, section 7.5.3.1.1",
+      "url": "https://iris.who.int/server/api/core/bitstreams/26a6af2d-060c-4449-8207-1f25e63c6cc3/content"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described for intramuscular artemether in the WHO eEML artemether entry, KEML 2023 or the WHO guidelines for malaria",
+      "url": "https://list.essentialmeds.org/medicines/372"
+    }
+  ],
+  "unsourced_fields": [
+    "contraindications (no FDA-approved standalone artemether label exists; neither the WHO eEML entry, KEML 2023 nor the WHO guidelines for malaria state a formal contraindication for artemether, so a null is used rather than inventing one)",
+    "side_effects (no FDA-approved standalone artemether label exists and the WHO eEML, KEML 2023 and WHO guidelines for malaria do not provide an adverse reaction list for artemether; the comparative statement that artemether has a better adverse-event profile than quinine is recorded in clinical_pearls instead)",
+    "serious_adverse_reactions (not sourceable for the same reason as side_effects)",
+    "dosage.geriatric (the WHO guidelines for malaria and the WHO eEML give a single weight-based intramuscular regimen for artemether and do not state a separate geriatric dose)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "overdose (no overdose information for artemether is given in the WHO eEML, KEML 2023 or the WHO guidelines for malaria)",
+    "pregnancy_category (the WHO eEML, KEML 2023 and WHO guidelines for malaria do not use FDA pregnancy category letters)"
+  ],
+  "notes": "The table stores this agent as 'Artemether' with drug class 'Antimalarial [EPC]' and brand name 'COARTEM'. Artemether is a WHO Model List of Essential Medicines Core (EMLc) antimalarial (ATC P01BE02) whose listed role is the parenteral management of severe malaria; it is NOT the artemether-lumefantrine fixed-dose combination, which has a separate monograph (Artemether-Lumefantrine) and is the product actually sold under the Coartem brand. The KEML 2023 lists the oily intramuscular injection as 80 mg/mL in 1 mL ampoule at Level of Use 2, whereas the 2025 WHO eEML replaced the 80 mg/mL strength with 20 mg/mL and 40 mg/mL strengths because the 80 mg/mL strength has limited utility for children under 12 years. No FDA-approved standalone artemether product label exists, so the monograph is built from the WHO eEML, the Kenya Essential Medicines List 2023, the WHO guidelines for malaria (13 August 2025) and the artemether-specific pharmacology published in the FDA Coartem (artemether/lumefantrine) label. Artesunate for injection, covered separately under 'Artesunate', is the WHO-preferred parenteral agent for severe malaria. The previous row carried antimalarial class-template text shared with other drugs, which has been replaced with drug-specific content."
+}

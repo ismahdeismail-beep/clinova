@@ -1,0 +1,224 @@
+{
+  "name": "Amoxicillin/Clavulanate",
+  "existing_id": "690f492a-0faf-401b-8e93-41731fd9885a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "AUGMENTIN is an oral antibacterial combination of amoxicillin, a penicillin-class antibacterial, and clavulanate potassium, a beta-lactamase inhibitor (FDA label, AUGMENTIN (amoxicillin and clavulanate potassium), section 11 DESCRIPTION). Amoxicillin is a semisynthetic antibacterial with in vitro bactericidal activity against Gram-positive and Gram-negative bacteria but is susceptible to degradation by beta-lactamases, so its spectrum does not include organisms that produce these enzymes. Clavulanic acid is a beta-lactam structurally related to the penicillins that inactivates some beta-lactamase enzymes commonly found in organisms resistant to penicillins and cephalosporins, with good activity against the clinically important plasmid-mediated beta-lactamases frequently responsible for transferred drug resistance. Combining amoxicillin with clavulanic acid protects amoxicillin from degradation by some beta-lactamase enzymes and extends the antibacterial spectrum of amoxicillin to include many bacteria normally resistant to amoxicillin (section 12.4 MICROBIOLOGY).",
+    "indications": [
+      "Lower respiratory tract infections caused by beta-lactamase-producing isolates of Haemophilus influenzae and Moraxella catarrhalis (FDA label, AUGMENTIN, section 1)",
+      "Acute bacterial otitis media caused by beta-lactamase-producing isolates of H. influenzae and M. catarrhalis (section 1)",
+      "Sinusitis caused by beta-lactamase-producing isolates of H. influenzae and M. catarrhalis (section 1)",
+      "Skin and skin structure infections caused by beta-lactamase-producing isolates of Staphylococcus aureus, Escherichia coli and Klebsiella species (section 1)",
+      "Urinary tract infections caused by beta-lactamase-producing isolates of E. coli, Klebsiella species and Enterobacter species (section 1)",
+      "Limitation of use: when susceptibility test results show susceptibility to amoxicillin, indicating no beta-lactamase production, AUGMENTIN should not be used (section 1)",
+      "AUGMENTIN ES-600 (high-dose paediatric suspension) is indicated for paediatric patients aged 3 months to 12 years weighing 40 kg or less with recurrent or persistent acute otitis media due to S. pneumoniae (penicillin MICs 2 mcg/mL or less), H. influenzae (including beta-lactamase-producing strains) or M. catarrhalis (including beta-lactamase-producing strains), characterised by antibacterial drug exposure for acute otitis media within the preceding 3 months together with age 2 years or younger or day care attendance (FDA label, AUGMENTIN ES-600, section 1)",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 5.1.6.1: amoxicillin + clavulanic acid is first choice for community-acquired pneumonia (severe), complicated intra-abdominal infections (mild to moderate), exacerbations of COPD, hospital-acquired pneumonia, low-risk febrile neutropenia, lower urinary tract infections, sinusitis and skin and soft tissue infections, and second choice for bone and joint infections (severe), community-acquired pneumonia (mild to moderate) and otitis media, and for surgical prophylaxis",
+      "Kenya Essential Medicines List 2023, section 7.2.1.3: amoxicillin + clavulanic acid listed as powder for oral liquid, tablets and powder for injection at Level of Use 4 (primary hospital); classified in the WHO AWaRe 'Access' group (Appendix 7)"
+    ],
+    "contraindications": [
+      "History of a serious hypersensitivity reaction (e.g. anaphylaxis or Stevens-Johnson syndrome) to AUGMENTIN, amoxicillin, clavulanate or to other beta-lactam antibacterials such as penicillins and cephalosporins (FDA label, AUGMENTIN, section 4.1)",
+      "History of cholestatic jaundice/hepatic dysfunction associated with AUGMENTIN (section 4.2)"
+    ],
+    "side_effects": [
+      "Most frequently reported adverse reactions in clinical trials: diarrhoea/loose stools (9%), nausea (3%), skin rashes and urticaria (3%), vomiting (1%) and vaginitis (1%); less than 3% of patients discontinued therapy because of drug-related adverse reactions, and the overall incidence of adverse reactions, in particular diarrhoea, increased with the higher recommended dose (FDA label, AUGMENTIN, section 6.1)",
+      "Less frequently reported adverse reactions (less than 1%): abdominal discomfort, flatulence and headache (section 6.1)",
+      "Paediatric trial (575 patients aged 2 months to 12 years with acute otitis media): overall adverse reactions were comparable to adults, with differences in the rates of diarrhoea, skin rashes/urticaria and diaper area rashes (section 6.1)",
+      "Gastrointestinal (post-marketing): drug-induced enterocolitis syndrome (DIES), indigestion, gastritis, stomatitis, glossitis, black hairy tongue, mucocutaneous candidiasis, enterocolitis and haemorrhagic/pseudomembranous colitis (section 6.2)",
+      "Hepatic (post-marketing): hepatic dysfunction including hepatitis and cholestatic jaundice, with increases in serum transaminases (AST and/or ALT), serum bilirubin and/or alkaline phosphatase; reported more commonly in the elderly, in males, or in patients on prolonged treatment; onset of signs and symptoms may occur during or several weeks after therapy has been discontinued; usually reversible but deaths have been reported (section 6.2)",
+      "Immune (post-marketing): hypersensitivity reactions, anaphylactic/anaphylactoid reactions including shock, angioedema, serum sickness-like reactions and hypersensitivity vasculitis (section 6.2)",
+      "Skin (post-marketing): rashes, pruritus, urticaria, erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS, acute generalized exanthematous pustulosis, exfoliative dermatitis and linear IgA dermatosis (section 6.2)",
+      "Renal (post-marketing): interstitial nephritis, haematuria and crystalluria (section 6.2)",
+      "Haematological (post-marketing): anaemia including haemolytic anaemia, thrombocytopenia, thrombocytopenic purpura, eosinophilia, leukopenia and agranulocytosis (usually reversible), and thrombocytosis in less than 1% of patients; increased prothrombin time has been reported with concomitant anticoagulant therapy (section 6.2)",
+      "Central nervous system (post-marketing): agitation, anxiety, behavioural changes, aseptic meningitis, confusion, convulsions, dizziness, insomnia and reversible hyperactivity (section 6.2)",
+      "Miscellaneous (post-marketing): tooth discoloration (brown, yellow or grey staining), most reports in paediatric patients (section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Adults and paediatric patients over 40 kg: 500 or 875 mg every 12 hours, or 250 or 500 mg every 8 hours, based on the amoxicillin component (FDA label, AUGMENTIN, section 2). Severe infections and infections of the respiratory tract: one 875 mg tablet every 12 hours or one 500 mg tablet every 8 hours; less severe infections: one 500 mg tablet every 12 hours or one 250 mg tablet every 8 hours (section 2.2, Table 1). Adults who have difficulty swallowing may be given the 200 mg/28.5 mg per 5 mL suspension or the 400 mg/57 mg per 5 mL suspension in place of the 875 mg/125 mg tablet (section 2.2, Table 1 footnote). AUGMENTIN ES-600 has no adult dosing experience and adults with difficulty swallowing should not be given AUGMENTIN ES-600 in place of the 500 mg or 875 mg tablet (AUGMENTIN ES-600 label, section 2.3).",
+      "geriatric": "Of the 3,119 patients in an analysis of clinical studies of AUGMENTIN, 32% were 65 years or older and 14% were 75 years or older; no overall differences in safety or effectiveness were observed between these subjects and younger subjects, and reported clinical experience has not identified differences in responses, but greater sensitivity of some older individuals cannot be ruled out. Because the drug is substantially excreted by the kidney and elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA label, AUGMENTIN, section 8.5 Geriatric Use).",
+      "paediatric": "Paediatric patients aged 12 weeks (3 months) and older: 25 to 45 mg/kg/day every 12 hours or 20 to 40 mg/kg/day every 8 hours, up to the adult dose, based on the amoxicillin component (FDA label, AUGMENTIN, section 2 and section 2.3). Neonates and infants less than 12 weeks of age: 30 mg/kg/day divided every 12 hours, based on the amoxicillin component; use of the 125 mg/5 mL oral suspension is recommended (section 2.3). For AUGMENTIN ES-600: paediatric patients aged 3 months to 12 years weighing 40 kg or less, 90 mg/kg/day divided every 12 hours for 10 days based on the amoxicillin component, providing 6.4 mg/kg/day of the clavulanic acid component (AUGMENTIN ES-600 label, section 2.2 and Table 1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Probenecid: decreases the renal tubular secretion of amoxicillin but does not delay renal excretion of clavulanic acid; concurrent use may result in increased and prolonged blood concentrations of amoxicillin, so co-administration is not recommended (FDA label, AUGMENTIN, sections 7 and 7.1)",
+      "Oral anticoagulants: abnormal prolongation of prothrombin time (increased INR) has been reported; monitor and adjust the anticoagulant dose if necessary (section 7.2)",
+      "Allopurinol: concurrent administration increases the incidence of rash compared with amoxicillin alone (section 7.3)",
+      "Oral contraceptives: AUGMENTIN may affect intestinal flora, leading to lower oestrogen reabsorption and reduced efficacy of combined oral oestrogen/progesterone contraceptives (section 7.4)",
+      "Laboratory test interference: high urine concentrations of amoxicillin may result in false-positive glucose reactions with CLINITEST, Benedict's solution or Fehling's solution, so enzymatic glucose oxidase reactions are recommended; a transient decrease in plasma concentration of total conjugated estriol, estriol-glucuronide, conjugated estrone and estradiol has been noted following amoxicillin administration to pregnant women (section 7.5)",
+      "Anticoagulant therapy: reports of increased prothrombin time in patients receiving AUGMENTIN and anticoagulant therapy concomitantly (section 6.2)"
+    ],
+    "monitoring": "Hepatic function should be monitored at regular intervals in patients with hepatic impairment, and hepatically impaired patients should be dosed with caution (FDA label, AUGMENTIN, section 5.4; AUGMENTIN ES-600 label, section 2.4). Monitor for anaphylaxis/hypersensitivity, severe cutaneous adverse reactions, DIES, diarrhoea suggesting C. difficile-associated diarrhoea, and signs of hepatic dysfunction including cholestatic jaundice, which may occur during or several weeks after discontinuation (sections 5.1-5.5 and 6.2). Monitor renal function in elderly patients and adjust dosing in severe renal impairment (sections 2.4, 8.5 and 8.6). The label does not specify routine laboratory monitoring schedules beyond liver function in hepatic impairment.",
+    "patient_counselling": "Inform patients that AUGMENTIN may be taken every 8 hours or every 12 hours depending on the dose prescribed, and that each dose should be taken with a meal or snack to reduce the possibility of gastrointestinal upset (FDA label, AUGMENTIN, section 17 Patient Counseling Information). Counsel that AUGMENTIN contains a penicillin class drug product that can cause allergic reactions in some individuals. Advise patients about the signs and symptoms of serious skin manifestations and instruct them to stop taking AUGMENTIN immediately and promptly report the first signs or symptoms of skin rash, mucosal lesions or any other sign of hypersensitivity (section 17). Counsel that diarrhoea is a common problem caused by antibacterials and that watery and bloody stools with or without stomach cramps and fever may occur as late as 2 or more months after the last dose; if diarrhoea is severe or lasts more than 2 or 3 days the physician should be contacted as soon as possible (section 17). Counsel that antibacterial drugs should only be used to treat bacterial infections and do not treat viral infections such as the common cold, and that skipping doses or not completing the full course may reduce effectiveness and increase the likelihood of resistance (section 17). Advise patients to keep suspension refrigerated, shake well before use, use a calibrated oral syringe when dosing a child and rinse it after each use, and discard any unused medicine (section 17).",
+    "warnings": [
+      "Serious (including fatal) hypersensitivity reactions: discontinue AUGMENTIN if a reaction occurs (FDA label, AUGMENTIN, section 5.1)",
+      "Severe cutaneous adverse reactions (SCAR): amoxicillin may cause Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS and acute generalized exanthematous pustulosis; monitor closely and discontinue if rash progresses (section 5.2)",
+      "Drug-induced enterocolitis syndrome (DIES): reported with amoxicillin, a component of AUGMENTIN, most cases in patients under 18 years of age; characterised by protracted vomiting 1 to 4 hours after ingestion without skin or respiratory symptoms, with pallor, lethargy, hypotension, shock, diarrhoea within 24 hours and leukocytosis with neutrophilia; discontinue AUGMENTIN and institute appropriate therapy (section 5.3)",
+      "Hepatic dysfunction and cholestatic jaundice: hepatic dysfunction, including hepatitis and cholestatic jaundice, has been associated with AUGMENTIN; hepatic toxicity is usually reversible but deaths have been reported; hepatic function should be monitored at regular intervals in patients with hepatic impairment (section 5.4)",
+      "Clostridioides difficile-associated diarrhoea (CDAD): has been reported with use of nearly all antibacterial agents including AUGMENTIN and may range from mild diarrhoea to fatal colitis; CDAD must be considered in all patients who present with diarrhoea following antibacterial use, including up to 2 months after treatment (section 5.5)",
+      "Skin rash in patients with mononucleosis: a high percentage of patients with mononucleosis who receive amoxicillin develop an erythematous skin rash, so AUGMENTIN should not be administered to patients with mononucleosis (section 5.6)",
+      "Potential for microbial overgrowth: consider superinfections with fungal or bacterial pathogens during therapy; if superinfection occurs, discontinue amoxicillin and clavulanate potassium and institute appropriate therapy (section 5.7)",
+      "Phenylketonurics: AUGMENTIN chewable tablets and oral suspension contain aspartame, which contains phenylalanine - each 200 mg chewable tablet contains 2.1 mg phenylalanine, each 400 mg chewable tablet 4.2 mg, and each 5 mL of the 200 mg/5 mL or 400 mg/5 mL oral suspension contains 7 mg; the other formulations do not contain phenylalanine (section 5.8)",
+      "Development of drug-resistant bacteria: prescribing AUGMENTIN in the absence of a proven or strongly suspected bacterial infection or prophylactic indication is unlikely to provide benefit and increases the risk of drug-resistant bacteria (section 5.9)"
+    ],
+    "precautions": [
+      "AUGMENTIN may be taken without regard to meals; however, absorption of clavulanate potassium is enhanced when AUGMENTIN is administered at the start of a meal, and to minimize the potential for gastrointestinal intolerance it should be taken at the start of a meal (FDA label, AUGMENTIN, section 2.1)",
+      "Patients with impaired renal function do not generally require a dose reduction unless the impairment is severe; patients with GFR less than 30 mL/min should not receive the 875 mg dose (based on the amoxicillin component) (sections 2.4 and 8.6)",
+      "Hepatically impaired patients should be dosed with caution and hepatic function monitored at regular intervals (section 5.4; AUGMENTIN ES-600 label, section 2.4)",
+      "Reconstituted oral suspension must be stored under refrigeration and discarded after 10 days; some colour change is normal during the dosing period (section 2.5)",
+      "Because of incompletely developed renal function in neonates and young infants, elimination of amoxicillin may be delayed while clavulanate elimination is unaltered, so dosing should be modified in patients less than 12 weeks of age (section 8.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious and occasionally fatal hypersensitivity (anaphylactic) reactions (FDA label, AUGMENTIN, section 5.1)",
+      "Severe cutaneous adverse reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS and acute generalized exanthematous pustulosis (section 5.2)",
+      "Hepatic dysfunction including hepatitis and cholestatic jaundice, with deaths reported (section 5.4)",
+      "Clostridioides difficile-associated diarrhoea, ranging from mild diarrhoea to fatal colitis (section 5.5)",
+      "Drug-induced enterocolitis syndrome (DIES) (section 5.3)",
+      "Haemorrhagic/pseudomembranous colitis (section 6.2)",
+      "Interstitial nephritis and crystalluria, reported after overdosage (section 10 Overdosage)"
+    ],
+    "food_interactions": [
+      "AUGMENTIN may be taken without regard to meals, but absorption of clavulanate potassium is enhanced when the product is administered at the start of a meal (FDA label, AUGMENTIN, section 2.1)",
+      "Dosing in the fasted or fed state has minimal effect on the pharmacokinetics of amoxicillin, while clavulanate bioavailability is greater with food and was reduced when AUGMENTIN was dosed 30 and 150 minutes after the start of a high-fat breakfast (section 12.3 Pharmacokinetics)"
+    ],
+    "pregnancy_category": "B (FDA label, AUGMENTIN, section 8.1 Pregnancy)",
+    "pregnancy_guidance": "Pregnancy Category B: reproduction studies performed in pregnant rats and mice given AUGMENTIN (2:1 ratio formulation of amoxicillin:clavulanate) at oral doses up to 1200 mg/kg/day revealed no evidence of harm to the fetus due to AUGMENTIN; the amoxicillin doses in rats and mice were approximately 4 and 2 times the maximum recommended adult human oral dose (875 mg every 12 hours) and the clavulanate doses approximately 9 and 4 times the maximum recommended adult human oral dose (125 mg every 8 hours), based on body surface area. There are, however, no adequate and well-controlled studies in pregnant women, and because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed (FDA label, AUGMENTIN, section 8.1). Oral ampicillin-class antibacterials are poorly absorbed during labor, and it is not known whether use of amoxicillin and clavulanate potassium during labor or delivery has immediate or delayed adverse effects on the fetus, prolongs the duration of labor, or increases the likelihood of the necessity for an obstetrical intervention (section 8.2).",
+    "lactation_guidance": "Amoxicillin has been shown to be excreted in human milk. Amoxicillin and clavulanate potassium use by nursing mothers may lead to sensitization of infants, so caution should be exercised when the combination is administered to a nursing woman (FDA label, AUGMENTIN, section 8.3 Nursing Mothers).",
+    "overdose": "In case of overdosage, discontinue medication, treat symptomatically and institute supportive measures as required. A prospective study of 51 pediatric patients at a poison-control center suggested that overdosages of less than 250 mg/kg of amoxicillin are not associated with significant clinical symptoms. Interstitial nephritis resulting in oliguric renal failure has been reported after overdosage, and crystalluria, in some cases leading to renal failure, has also been reported in adult and pediatric patients, so adequate fluid intake and diuresis should be maintained to reduce the risk of crystalluria. Renal impairment appears to be reversible with cessation of drug administration; high blood levels may occur more readily in patients with impaired renal function, and amoxicillin and clavulanate potassium may be removed from circulation by hemodialysis (FDA label, AUGMENTIN, section 10 Overdosage).",
+    "pharmacokinetics": "The half-life of amoxicillin after oral administration of AUGMENTIN is 1.3 hours and that of clavulanic acid is 1 hour. Approximately 50% to 70% of the amoxicillin and approximately 25% to 40% of the clavulanic acid are excreted unchanged in the urine during the first 6 hours after administration of a single 250 mg/125 mg or 500 mg/125 mg tablet. Neither component is highly protein-bound: clavulanic acid is approximately 25% bound to human serum and amoxicillin approximately 18% bound. Amoxicillin diffuses readily into most body tissues and fluids with the exception of brain and spinal fluid; two hours after a single 35 mg/kg dose of AUGMENTIN suspension in fasting children, average concentrations of 3 mcg/mL amoxicillin and 0.5 mcg/mL clavulanic acid were detected in middle ear effusions (FDA label, AUGMENTIN, section 12.3 Pharmacokinetics).",
+    "clinical_pearls": [
+      "Clavulanate protects amoxicillin from beta-lactamase degradation, so the combination is only justified when beta-lactamase-producing organisms are suspected; when susceptibility shows susceptibility to amoxicillin alone, AUGMENTIN should not be used (FDA label, AUGMENTIN, section 1, Limitations of Use)",
+      "Cholestatic jaundice/hepatic dysfunction associated with AUGMENTIN is a contraindication on re-exposure (section 4.2)",
+      "The combination is a well-known cause of cholestatic hepatitis, which is more common in the elderly, in males and with prolonged treatment, and may present weeks after the drug is stopped (section 6.2)",
+      "AUGMENTIN contains aspartame in the chewable tablets and oral suspension and is not suitable for phenylketonurics (section 5.8)",
+      "The ES-600 (90 mg/kg/day amoxicillin) suspension is reserved for recurrent or persistent acute otitis media in children aged 3 months to 12 years weighing 40 kg or less with specific risk factors, and is not for acute otitis media due to S. pneumoniae with penicillin MIC 4 mcg/mL or greater (AUGMENTIN ES-600 label, section 1)",
+      "Both WHO eEML and KEML place amoxicillin + clavulanic acid among the AWaRe 'Access' group of antibiotics and the KEML places it at Level of Use 4 (primary hospital), with an injectable powder form (500 mg + 100 mg and 1 g + 200 mg) listed in both (KEML 2023, section 7.2.1.3; WHO eEML 24th list, section 5.1.6.1)"
+    ],
+    "brand_names": ["Augmentin", "Augmentin ES-600", "Augmentin XR"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Patients with impaired renal function do not generally require a dose reduction unless the impairment is severe; patients with GFR less than 30 mL/min should not receive the 875 mg dose (based on the amoxicillin component). Dosing in severe renal impairment: GFR 10 to 30 mL/min, 500 mg or 250 mg every 12 hours depending on the severity of the infection; GFR less than 10 mL/min, 500 mg or 250 mg every 24 hours; hemodialysis, 500 mg or 250 mg every 24 hours with an additional dose both during and at the end of dialysis (FDA label, AUGMENTIN, section 2.4 and Table 4, and section 8.6).",
+    "hepatic_dose_adjustment": "Hepatically impaired patients should be dosed with caution and hepatic function monitored at regular intervals; no specific numeric hepatic dose adjustment is specified (FDA label, AUGMENTIN, section 5.4; AUGMENTIN ES-600 label, section 2.4).",
+    "administration_instructions": "Oral use. Take each dose with a meal or snack to reduce gastrointestinal upset; the product may be taken without regard to meals, but absorption of clavulanate potassium is enhanced when taken at the start of a meal (FDA label, AUGMENTIN, sections 2.1 and 17). To prepare the oral suspension, tap the bottle until all powder flows freely, measure the required total amount of water, add approximately two thirds of the water to the powder, replace the cap and shake vigorously, add the remaining water and shake vigorously again; shake the suspension well before use, store the reconstituted suspension under refrigeration and discard after 10 days (section 2.5). Adults who have difficulty swallowing may use the 200 mg/28.5 mg per 5 mL or 400 mg/57 mg per 5 mL suspensions in place of the 875 mg/125 mg tablet (section 2.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, AUGMENTIN (amoxicillin and clavulanate potassium) tablets and for oral suspension (Allegis Holdings, LLC, 2024), sections 11 DESCRIPTION and 12.4 MICROBIOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, AUGMENTIN, section 1; FDA label, AUGMENTIN ES-600, section 1; WHO Model List of Essential Medicines, 24th list (2025), section 5.1.6.1; Kenya Essential Medicines List 2023, section 7.2.1.3 and Appendix 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, AUGMENTIN, sections 4.1 and 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, AUGMENTIN, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, AUGMENTIN, sections 2, 2.2, 2.3, 8.4 and 8.5; FDA label, AUGMENTIN ES-600, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, AUGMENTIN, sections 7, 7.1-7.5 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, AUGMENTIN, sections 2.4, 5.1-5.5, 6.2, 8.5 and 8.6; FDA label, AUGMENTIN ES-600, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, AUGMENTIN, section 17 PATIENT COUNSELING INFORMATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, AUGMENTIN, sections 5.1-5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, AUGMENTIN, sections 2.1, 2.4, 2.5, 5.4 and 8.4; FDA label, AUGMENTIN ES-600, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, AUGMENTIN, sections 5.1-5.5, 6.2 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, AUGMENTIN, sections 2.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, AUGMENTIN, section 8.1 Pregnancy (Pregnancy Category B)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, AUGMENTIN, sections 8.1 and 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, AUGMENTIN, section 8.3 Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, AUGMENTIN, section 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, AUGMENTIN, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, AUGMENTIN, sections 1, 4.2, 5.8, 6.2; FDA label, AUGMENTIN ES-600, section 1; Kenya Essential Medicines List 2023, section 7.2.1.3 and Appendix 7; WHO Model List of Essential Medicines, 24th list (2025), section 5.1.6.1",
+      "url": "https://www.health.go.ke/sites/default/files/2023-06/ESSENTIAL%20MEDS.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Brand products listed on DailyMed: AUGMENTIN (amoxicillin and clavulanate potassium) for suspension/tablet, setid 04a31a42-d79e-bbb4-e063-6394a90a63ee; AUGMENTIN ES-600, setid 59979859-8c9b-4173-a5e3-2e6312fd9d79; AUGMENTIN XR (extended release), setid 046da5ed-06d5-46fc-b734-de5c2978d261",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046da5ed-06d5-46fc-b734-de5c2978d261"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA labels for AUGMENTIN and AUGMENTIN ES-600 contain no boxed warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, AUGMENTIN, section 2.4 and Table 4, and section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, AUGMENTIN, section 5.4; FDA label, AUGMENTIN ES-600, section 2.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59979859-8c9b-4173-a5e3-2e6312fd9d79"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, AUGMENTIN, sections 2.1, 2.2, 2.5 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a31a42-d79e-bbb4-e063-6394a90a63ee"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimens are provided in fields.dosage.paediatric)"
+  ],
+  "notes": "This row is a formulation-level entry: it covers the amoxicillin plus clavulanate potassium combination, not amoxicillin alone. Two FDA labels are used and each statement is attributed to its own label: AUGMENTIN (amoxicillin and clavulanate potassium) tablets and for oral suspension, which carries the general indication, dosing, contraindication, warning and interaction content, and AUGMENTIN ES-600 (high-dose paediatric oral suspension), which carries the indication and 90 mg/kg/day regimen for recurrent or persistent acute otitis media in children aged 3 months to 12 years weighing 40 kg or less. The injectable powder (500 mg + 100 mg and 1 g + 200 mg) listed in the WHO eEML and KEML is not covered by a US label used here, so injectable-specific content is not asserted. The previously stored brand list included 'Co-amoxiclav' (an INN used in Europe) and 'Moxikind' (an Indian trade name); the brand list here contains only the products verifiable on DailyMed, and 'Co-amoxiclav' is noted in the WHO/Kenya listing context instead. No FDA boxed warning exists for this product; anaphylaxis and severe hepatic reactions are managed under Warnings and Precautions. FDA pregnancy categories are obsolete under the Pregnancy and Lactation Labeling Rule and are reported only because this label still states Category B."
+}

@@ -1,0 +1,195 @@
+{
+  "name": "Activated Charcoal",
+  "existing_id": "af5012b8-75c6-457f-9c71-d7bc1a01e751",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Activated charcoal has no systemic pharmacologic mechanism of action: it acts locally within the gastrointestinal tract as an adsorbent. The FDA over-the-counter label for ACTIDOSE (activated charcoal) suspension declares its 'Purpose' as 'Poison Adsorbent' and its 'Uses' as 'For emergency use to adsorb swallowed poisons' (ACTIDOSE label, Drug Facts). The WHO Model List of Essential Medicines, 24th list (2025) places 'charcoal, activated' in section 4 'ANTIDOTES AND OTHER SUBSTANCES USED IN POISONINGS', sub-section 4.1 'Non-specific', with the explanatory note 'Alternative formulations of activated charcoal may be used if granules are not available'. Neither the OTC label nor the essential medicines lists describe a pharmacologic mechanism, so no further mechanism detail is asserted here.",
+    "indications": [
+      "OTC poison adsorbent: for emergency use to adsorb swallowed poisons (ACTIDOSE and ACTIDOSE Aqua labels, Drug Facts, 'Uses')",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 4.1 'Non-specific' antidotes: 'charcoal, activated', granules for oral suspension 50 mg, with the note that alternative formulations may be used if granules are not available",
+      "Kenya Essential Medicines List 2023, section 5.1 'Non-specific': 'Activated Charcoal', powder for oral liquid (PFOL) 50 g, Level of Use 2 (dispensary/clinic)"
+    ],
+    "contraindications": [
+      "Do not use in persons who are not fully conscious (ACTIDOSE and ACTIDOSE Aqua labels, Drug Facts, 'Warnings')",
+      "Do not use this product, unless directed by a health professional, if turpentine, corrosives (such as alkalies/lye and strong acids) or petroleum distillates (such as kerosene, gasoline, paint thinner, cleaning fluid or furniture polish) have been ingested (ACTIDOSE and ACTIDOSE Aqua labels, 'Warnings')",
+      "Do not give activated charcoal until after the patient has vomited unless directed by a health professional (ACTIDOSE and ACTIDOSE Aqua labels, 'Warnings')"
+    ],
+    "side_effects": null,
+    "dosage": {
+      "adult": "Oral dosage: 20 to 30 grams of activated charcoal in a minimum of 8 ounces of liquid, or as directed by a health professional. Repeat the dose immediately, if possible (ACTIDOSE and ACTIDOSE Aqua labels, 'Directions'). The label specifies no separate adult, paediatric, geriatric, renal or hepatic regimens.",
+      "geriatric": null,
+      "paediatric": null
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": null,
+    "monitoring": null,
+    "patient_counselling": "If possible call a Poison Control Center, emergency medical facility or health professional for help before using this product; if help cannot be reached quickly, follow the directions on the label, and write emergency phone numbers in the space provided (ACTIDOSE label, Package/Label Principal Display Panel). Keep the patient active and moving and save the container of poison (ACTIDOSE label, 'Directions'). If previous attempts to contact a poison control center, emergency medical facility or health professional were unsuccessful, continue trying (ACTIDOSE label, 'Directions'). Keep out of reach of children (ACTIDOSE label, 'Keep out of reach of children').",
+    "warnings": [
+      "Do not use in persons who are not fully conscious (ACTIDOSE and ACTIDOSE Aqua labels, 'Warnings')",
+      "Do not use this product, unless directed by a health professional, if turpentine, corrosives (such as alkalies/lye and strong acids) or petroleum distillates (such as kerosene, gasoline, paint thinner, cleaning fluid or furniture polish) have been ingested (ACTIDOSE and ACTIDOSE Aqua labels, 'Warnings')",
+      "Do not give activated charcoal until after the patient has vomited unless directed by a health professional (ACTIDOSE and ACTIDOSE Aqua labels, 'Warnings')",
+      "Keep out of reach of children (ACTIDOSE and ACTIDOSE Aqua labels, 'Keep out of reach of children')",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 4.1: alternative formulations of activated charcoal may be used if granules are not available"
+    ],
+    "precautions": [
+      "Store at 20-25 degrees C (68-77 degrees F) [see USP Controlled Room Temperature]; do not refrigerate (ACTIDOSE and ACTIDOSE Aqua labels, 'Other information')",
+      "Shake well; snip the tapered tip and remove it, hold the tube upright and carefully cut off the tube closure, reattach the tapered tip and connect to a charcoal administration set, or squeeze the contents into a cup with a minimum of 4 ounces of liquid for the patient to drink (ACTIDOSE and ACTIDOSE Aqua labels, 'Directions')",
+      "The product is for emergency use; the label directs the user to call a poison control center, emergency medical facility or health professional for help before using the product whenever possible (ACTIDOSE label, Package/Label Principal Display Panel)"
+    ],
+    "serious_adverse_reactions": null,
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": null,
+    "lactation_guidance": null,
+    "overdose": null,
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Activated charcoal is a non-specific antidote: the WHO Model List of Essential Medicines, 24th list (2025) lists it in section 4.1 'Non-specific' and the Kenya Essential Medicines List 2023 lists it in section 5.1 'Non-specific' as a 50 g powder for oral liquid at Level of Use 2 (dispensary/clinic)",
+      "The human FDA OTC labelling is minimal: the ACTIDOSE and ACTIDOSE Aqua labels contain Drug Facts only ('Purpose', 'Uses', 'Warnings', 'Directions', 'Other information') and have no adverse reaction, drug interaction, pregnancy, lactation, pharmacokinetic or overdose sections, so those fields are left unsourced rather than inferred",
+      "Administration is time-critical: the label instructs the user to call a poison control center or emergency medical facility before use if possible and to repeat the dose immediately if possible (ACTIDOSE label, 'Directions' and Package/Label Principal Display Panel)",
+      "The only human FDA labels for activated charcoal on DailyMed are the ACTIDOSE and ACTIDOSE Aqua poison adsorbent suspensions (Padagis US LLC); other 'activated charcoal' DailyMed listings are veterinary or homeopathic products and are not used as a source for this monograph",
+      "The Kenya Essential Medicines List 2023 lists activated charcoal at Level of Use 2 (dispensary/clinic), i.e. the lowest level of the health system at which it is expected to be available (KEML 2023, 'Level of Use' definition)"
+    ],
+    "brand_names": ["Actidose", "Actidose Aqua"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral use as an emergency poison adsorbent: shake the tube well, snip and remove the tapered tip, cut off the tube closure, reattach the tapered tip and connect to a charcoal administration set or squeeze the contents into a cup with a minimum of 4 ounces of liquid for the patient to drink. Give 20 to 30 grams of activated charcoal in a minimum of 8 ounces of liquid, or as directed by a health professional, and repeat the dose immediately if possible. Do not give until after the patient has vomited unless directed by a health professional, and do not use in a person who is not fully conscious. Store at 20-25 degrees C (68-77 degrees F); do not refrigerate (ACTIDOSE and ACTIDOSE Aqua labels, 'Directions', 'Warnings' and 'Other information')."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA OTC label, ACTIDOSE (activated charcoal) suspension, Drug Facts 'Purpose' and 'Uses'; WHO Model List of Essential Medicines, 24th list (2025), section 4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, 'Uses'; WHO Model List of Essential Medicines, 24th list (2025), section 4.1; Kenya Essential Medicines List 2023, section 5.1.1",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, Drug Facts 'Warnings'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85dc235-3f42-4361-9bd2-1aaff798ad75"
+    },
+    {
+      "field": "side_effects",
+      "ref": "No adverse reaction section exists in the human FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, so no adverse reaction information could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, 'Directions'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "interactions",
+      "ref": "No drug interaction section exists in the human FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, so no interaction information could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85dc235-3f42-4361-9bd2-1aaff798ad75"
+    },
+    {
+      "field": "monitoring",
+      "ref": "No monitoring section exists in the human FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, so no monitoring information could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA OTC label, ACTIDOSE, 'Directions', 'Keep out of reach of children' and Package/Label Principal Display Panel",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, 'Warnings'; WHO Model List of Essential Medicines, 24th list (2025), section 4.1 note",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85dc235-3f42-4361-9bd2-1aaff798ad75"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, 'Directions', 'Other information' and Package/Label Principal Display Panel",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "No adverse reaction section exists in the human FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, so no serious adverse reaction information could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No pregnancy category or pregnancy section is stated in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, and no FDA pregnancy category applies to this OTC poison adsorbent",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "No pregnancy guidance is stated in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua or in the WHO Model List of Essential Medicines / Kenya Essential Medicines List entries",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "No lactation guidance is stated in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua or in the WHO Model List of Essential Medicines / Kenya Essential Medicines List entries",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose section is stated in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "No pharmacokinetic information is stated in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua, the WHO Model List of Essential Medicines entry or the Kenya Essential Medicines List entry",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua; WHO Model List of Essential Medicines, 24th list (2025), section 4.1; Kenya Essential Medicines List 2023, sections 5.1.1 and 'Level of Use'",
+      "url": "https://www.health.go.ke/sites/default/files/2023-06/ESSENTIAL%20MEDS.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ACTIDOSE (activated charcoal) suspension and ACTIDOSE Aqua (activated charcoal) suspension, Padagis US LLC, listed as brand products on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85dc235-3f42-4361-9bd2-1aaff798ad75"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA OTC label for ACTIDOSE / ACTIDOSE Aqua carries no boxed warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua or in the WHO Model List of Essential Medicines / Kenya Essential Medicines List entries",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA OTC label for ACTIDOSE / ACTIDOSE Aqua or in the WHO Model List of Essential Medicines / Kenya Essential Medicines List entries",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e4fe6a-afd4-4f68-b12d-0b094f750615"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA OTC label, ACTIDOSE and ACTIDOSE Aqua, 'Directions', 'Warnings' and 'Other information'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c85dc235-3f42-4361-9bd2-1aaff798ad75"
+    }
+  ],
+  "unsourced_fields": [
+    "side_effects (the human FDA OTC label contains Drug Facts only and lists no adverse reactions)",
+    "serious_adverse_reactions (not stated in the human FDA OTC label)",
+    "interactions (not stated in the human FDA OTC label)",
+    "monitoring (not stated in the human FDA OTC label)",
+    "pregnancy_category (no FDA pregnancy category applies to, or is stated in, this OTC poison adsorbent label)",
+    "pregnancy_guidance (not stated in the FDA OTC label, WHO Model List of Essential Medicines or Kenya Essential Medicines List)",
+    "lactation_guidance (not stated in the FDA OTC label, WHO Model List of Essential Medicines or Kenya Essential Medicines List)",
+    "overdose (not stated in the FDA OTC label)",
+    "pharmacokinetics (not stated in the FDA OTC label, WHO Model List of Essential Medicines or Kenya Essential Medicines List)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the sources used)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the sources used)",
+    "dosage.paediatric (no paediatric-specific dose is stated in the ACTIDOSE label; the single 20-30 g oral dose is given without age distinction)",
+    "dosage.geriatric (no geriatric-specific dose is stated in the ACTIDOSE label)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no paediatric regimen is stated in the sources used)"
+  ],
+  "notes": "The table stores this agent as 'Activated Charcoal' with brand_names ['ANXIETY II HP'], which is a homeopathic product (Natural Creations) that contains crude activated charcoal among other ingredients and is not a poison adsorbent; the verified human brands here are Actidose and Actidose Aqua (Padagis US LLC) and the previously stored brand has been replaced. The only human FDA-labelled activated charcoal products on DailyMed are the ACTIDOSE and ACTIDOSE Aqua over-the-counter poison adsorbent suspensions; CARBODOTE and TOXIBAN are veterinary products and were deliberately not used as sources for human clinical content. Activated charcoal is a non-specific antidote rather than a therapeutic drug with a pharmacologic mechanism, so its monograph is necessarily limited to the OTC Drug Facts labelling plus the WHO Model List of Essential Medicines (24th list, 2025) and Kenya Essential Medicines List 2023 listings; many clinical fields are therefore null rather than filled with class-level inference. Both WHO eEML and KEML list it under non-specific antidotes, with the WHO note that alternative formulations may be used if granules are not available."
+}

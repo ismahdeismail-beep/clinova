@@ -1,0 +1,233 @@
+{
+  "name": "Aripiprazole Lauroxil",
+  "existing_id": "65e07db3-dcc6-4348-9837-92c7e20f2e78",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aripiprazole lauroxil is a prodrug of aripiprazole. Following intramuscular injection, aripiprazole lauroxil is likely converted by enzyme-mediated hydrolysis to N-hydroxymethyl aripiprazole, which is then hydrolysed to aripiprazole. The mechanism of action of aripiprazole in schizophrenia is unknown; however, efficacy could be mediated through a combination of partial agonist activity at dopamine D2 and serotonin 5-HT1A receptors and antagonist activity at 5-HT2A receptors (FDA Aristada (aripiprazole lauroxil) label, section 12.1). Aripiprazole has high affinity for dopamine D2 and D3 (Ki 0.34 and 0.8 nM), serotonin 5-HT1A and 5-HT2A (Ki 1.7 and 3.4 nM), moderate affinity for dopamine D4, serotonin 5-HT2C and 5-HT7, alpha1-adrenergic and histamine H1 receptors, and moderate affinity for the serotonin reuptake site, with no appreciable affinity for cholinergic muscarinic receptors (section 12.2).",
+    "indications": [
+      "Treatment of schizophrenia in adults (FDA Aristada label, sections 1 and 14).",
+      "ARISTADA INITIO, in combination with oral aripiprazole, is indicated for the initiation of ARISTADA when used for the treatment of schizophrenia in adults (FDA Aristada Initio (aripiprazole lauroxil) label, section 1).",
+      "Kenya Essential Medicines List 2023, section 25.1.1: aripiprazole is listed as tablet and as injection 25 mg (as HCl) per mL in a 2 mL ampoule at level of use 2. The KEML 2023 entry is for aripiprazole and does not specify the aripiprazole lauroxil prodrug (KEML 2023, section 25.1.1)."
+    ],
+    "contraindications": [
+      "A known hypersensitivity reaction to aripiprazole; hypersensitivity reactions have ranged from pruritus/urticaria to anaphylaxis (FDA Aristada label, section 4)."
+    ],
+    "side_effects": [
+      "The most commonly observed adverse reaction with ARISTADA (incidence 5% or more and at least twice the placebo rate) was akathisia: 11% for both 441 mg and 882 mg versus 4% for placebo in the 12-week placebo-controlled fixed-dose schizophrenia trial (FDA Aristada label, section 6.1).",
+      "Other adverse reactions with an incidence of 2% or more and greater than placebo in the 12-week trial: injection site pain 3% (441 mg) and 4% (882 mg) versus 2% placebo; increased weight 2% (both) versus 1%; increased blood creatine phosphokinase 2% (441 mg) and 1% (882 mg) versus 0%; headache 3% and 5% versus 3%; insomnia 3% and 4% versus 2%; restlessness 3% and 1% versus 1% (FDA Aristada label, section 6.1, Table 8).",
+      "Injection site reactions were reported by 4% of patients on 441 mg and 5% on 882 mg versus 2% on placebo, mostly injection site pain (3%, 4% and 2% respectively), were associated with the first injection, and decreased with each subsequent injection to 1% or less for both doses and placebo; other injection site reactions (induration, swelling, redness) occurred in under 1% (FDA Aristada label, section 6.1).",
+      "Extrapyramidal symptoms other than akathisia and restlessness occurred in 5% of patients on 441 mg and 7% on 882 mg versus 4% on placebo (FDA Aristada label, section 6.1, Table 9).",
+      "In the long-term open-label schizophrenia study, 14% of patients with a normal baseline haemoglobin A1c (below 5.7%) developed elevated levels (5.7% or more) post-baseline; shifts from normal to high occurred in 1% for fasting total cholesterol and LDL cholesterol and 8% for fasting triglycerides, and 15% of patients shifted from normal to low fasting HDL cholesterol (FDA Aristada label, section 5.6).",
+      "Weight gain of 7% or more of body weight occurred in 10% of patients on 441 mg and 9% on 882 mg versus 6% on placebo in the 12-week trial (FDA Aristada label, section 5.6, Table 7).",
+      "Orthostatic hypotension was reported in one patient (0.5%) in the 882 mg group and in no patients in the 441 mg and placebo groups in the 12-week study, and in 1 patient (0.2%) in the long-term open-label study (FDA Aristada label, section 5.8).",
+      "Postmarketing experience with oral aripiprazole: anaphylactic reaction, angioedema, laryngospasm, pruritus/urticaria, oropharyngeal spasm, pathological gambling, hiccups, blood glucose fluctuation, oculogyric crisis, DRESS and fecal incontinence (FDA Aristada label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "ARISTADA is administered by intramuscular injection only, by a healthcare professional, in the deltoid (441 mg dose only) or gluteal (441 mg, 662 mg, 882 mg or 1064 mg) muscle (FDA Aristada label, sections 2 and 2.1). For patients naive to aripiprazole, establish tolerability with oral aripiprazole before starting ARISTADA; because of the half-life of oral aripiprazole it may take up to 2 weeks to fully assess tolerability (section 2.1). Two initiation options: Option 1, give one 675 mg ARISTADA INITIO injection plus one 30 mg dose of oral aripiprazole with the first ARISTADA injection (the first ARISTADA injection may be given on the same day as ARISTADA INITIO or up to 10 days thereafter; do not inject both into the same deltoid or gluteal muscle); Option 2, give 21 consecutive days of oral aripiprazole with the first ARISTADA injection (section 2.1). Maintenance: initiate at 441 mg, 662 mg or 882 mg monthly, 882 mg every 6 weeks, or 1064 mg every 2 months (section 2.1). Patients stabilised on oral aripiprazole: 10 mg/day oral corresponds to 441 mg every month; 15 mg/day oral corresponds to 662 mg every month, 882 mg every 6 weeks or 1064 mg every 2 months; 20 mg/day or higher oral corresponds to 882 mg every month (section 2.1, Table 2). The 441 mg, 662 mg, 882 mg and 1064 mg doses correspond to 300 mg, 450 mg, 600 mg and 724 mg of aripiprazole respectively (section 2.1). Missed doses: give the next injection as soon as possible and supplement according to time elapsed since the last injection - for a last 441 mg dose, no supplementation if 6 weeks or less have elapsed, supplement with a single ARISTADA INITIO or 7 days of oral aripiprazole if more than 6 and 7 weeks have elapsed, and re-initiate with a single ARISTADA INITIO plus a single 30 mg oral aripiprazole dose or 21 days of oral aripiprazole if more than 7 weeks have elapsed; the equivalent windows are 8 weeks and 12 weeks for 662 mg and 882 mg, and 10 weeks and 12 weeks for 1064 mg (section 2.2, Table 3). Early dosing: an injection should not be given earlier than 14 days after the previous injection (section 2.3). CYP450 adjustments: no dose change if a CYP450 modulator is added for less than 2 weeks; a strong CYP3A4 inhibitor requires reduction to the next lower strength (no adjustment needed for 441 mg if tolerated); a strong CYP2D6 inhibitor requires reduction to the next lower strength, with no adjustment required for known CYP2D6 poor metabolizers; avoid use at 662 mg, 882 mg or 1064 mg in patients taking both a strong CYP3A4 and a strong CYP2D6 inhibitor; a CYP3A4 inducer requires no adjustment at 662 mg, 882 mg or 1064 mg and an increase of the 441 mg dose to 662 mg (section 2.4, Table 4).",
+      "geriatric": "Safety and effectiveness of ARISTADA in patients over 65 years of age have not been evaluated (FDA Aristada label, section 8.5). Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death, and ARISTADA is not approved for the treatment of patients with dementia-related psychosis (Boxed Warning and section 5.1).",
+      "paediatric": "Safety and effectiveness of ARISTADA in patients under 18 years of age have not been evaluated (FDA Aristada label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inhibitors (e.g. itraconazole, clarithromycin) and strong CYP2D6 inhibitors (e.g. quinidine, fluoxetine, paroxetine): increase aripiprazole exposure; with concomitant use for more than 2 weeks, reduce the ARISTADA dose to the next lower strength (FDA Aristada label, sections 2.4 and 7.1). For ARISTADA INITIO, avoid use in patients taking strong CYP3A4 or CYP2D6 inhibitors because a single strength only is available and dosage adjustment is not possible (FDA Aristada Initio label, sections 2 and 2.3).",
+      "Strong CYP3A4 inducers (e.g. carbamazepine, rifampin): decrease aripiprazole exposure; with concomitant use for more than 2 weeks, consider increasing the ARISTADA dose (FDA Aristada label, sections 2.4 and 7.1). ARISTADA INITIO should be avoided with strong CYP3A4 inducers (FDA Aristada Initio label, sections 2 and 2.3).",
+      "CYP2D6 poor metabolizers: dose adjustment is recommended because of high aripiprazole concentrations; for ARISTADA reduce the dose to 441 mg from 662 mg, 882 mg or 1064 mg, with no adjustment needed for patients already on 441 mg if tolerated; avoid use of ARISTADA INITIO in known CYP2D6 poor metabolizers (FDA Aristada label, sections 2.4 and 8.6; FDA Aristada Initio label, sections 2 and 2.3).",
+      "Antihypertensive drugs: because of alpha-adrenergic antagonism, aripiprazole may enhance the effect of antihypertensives (e.g. carvedilol, lisinopril, prazosin); monitor blood pressure and adjust dose accordingly (FDA Aristada label, section 7.1).",
+      "Benzodiazepines: intensity of sedation was greater with oral aripiprazole plus lorazepam than with aripiprazole alone, and orthostatic hypotension was greater than with lorazepam alone; monitor sedation and blood pressure (FDA Aristada label, section 7.1).",
+      "No clinically important interaction requiring dose adjustment: famotidine, valproate and lithium; substrates of CYP2D6, CYP2C9, CYP2C19 and CYP3A4; and valproate, lithium, lamotrigine or sertraline (FDA Aristada label, section 7.2). No specific drug interaction studies have been performed with ARISTADA; the interaction data are obtained from studies with oral aripiprazole (FDA Aristada label, section 12.3)."
+    ],
+    "monitoring": "Monitor blood pressure and heart rate, especially at the start of treatment, on re-initiation and after dose increases, and in patients with dehydration, hypovolaemia, cardiovascular or cerebrovascular disease, or those on antihypertensive medication, because of the risk of orthostatic hypotension (FDA Aristada label, section 5.8). Advise patients to inform prescribers about all prescription, over-the-counter and herbal medicines taken, since there is a potential for interactions (section 17). Because ARISTADA is administered monthly, every 6 weeks or every 2 months, adherence to the injection schedule must be tracked and the next injection must not be given earlier than 14 days after the previous one (section 2.3). Monitor for extrapyramidal symptoms, akathisia and restlessness after each injection (section 6.1). Assess weight, blood glucose and lipids, and check haemoglobin A1c, glucose and lipid profiles as indicated, because metabolic changes have been observed in the long-term open-label schizophrenia study (section 5.6). Perform fall risk assessments when initiating and recurrently for long-term patients (section 5.9). In patients with a history of a clinically significant low white blood cell count or drug-induced leukopenia/neutropenia, perform a complete blood count frequently during the first few months of therapy and consider discontinuation at the first sign of a clinically significant decline (section 5.10). Follow up for delayed allergic reactions and serum sickness after discharge (section 6.2 and Patient Counselling).",
+    "patient_counselling": "Each injection of ARISTADA must be administered by a healthcare professional only (FDA Aristada label, section 17 and Medication Guide). Advise patients and caregivers about the possibility of compulsive urges to shop, intense urges to gamble, compulsive sexual urges, binge eating and other compulsive urges, and that in some but not all cases these stopped when the dose was reduced or stopped (section 5.7). Counsel about neuroleptic malignant syndrome as a potentially fatal reaction: contact a healthcare provider or go to the emergency room if signs or symptoms occur (section 5.4). Counsel about tardive dyskinesia: notify the provider about any movements that cannot be controlled in the face, tongue or other body part (section 5.5). Educate about metabolic changes - hyperglycaemia and diabetes mellitus, dyslipidaemia and weight gain - and the need for specific monitoring of blood glucose, lipids and weight (section 5.6). Educate about orthostatic hypotension, with symptoms including feeling dizzy or lightheaded on standing, particularly when starting treatment, re-initiating treatment or increasing the dose (section 5.8). Advise of the possibility of somnolence, postural hypotension or motor and sensory instability, which may increase the risk of falls, particularly in patients with diseases or conditions that could exacerbate these effects (section 5.9). Advise patients with a pre-existing low white blood cell count or a history of drug-induced leucopenia/neutropenia that their complete blood count should be monitored while receiving ARISTADA (section 5.10). Caution that ARISTADA may impair judgement, thinking or motor skills, so patients should be cautious about operating hazardous machinery, including automobiles (section 5.12). Advise on avoiding overheating and dehydration (section 5.13). Advise patients to tell their prescriber about all medicines they take (section 17). Advise patients to notify their healthcare provider if they become pregnant or intend to become pregnant, that ARISTADA may cause extrapyramidal and/or withdrawal symptoms (agitation, hypertonia, hypotonia, tremor, somnolence, respiratory distress, feeding disorder) in a neonate, and that a pregnancy registry is available (section 8.1). Advise the lactating patient that ARISTADA use during pregnancy may affect milk supply, to discuss breastfeeding with their healthcare provider, and to monitor the breastfed infant for dehydration and lack of appropriate weight gain (section 8.2).",
+    "warnings": [
+      "WARNING (boxed): Increased mortality in elderly patients with dementia-related psychosis. Analyses of 17 placebo-controlled trials in elderly patients with dementia-related psychosis revealed a risk of death in drug-treated patients 1.6 to 1.7 times that of placebo, and a death rate of about 4.5% versus 2.6% on placebo over a typical 10-week controlled trial. ARISTADA is not approved for the treatment of patients with dementia-related psychosis (FDA Aristada label, Boxed Warning and section 5.1).",
+      "Cerebrovascular adverse reactions, including stroke and transient ischemic attack, including fatalities, were more frequent with antipsychotics including aripiprazole than with placebo in elderly patients with dementia; ARISTADA is not approved for dementia-related psychosis (FDA Aristada label, section 5.2).",
+      "Potential for dosing and medication errors: substitution and dispensing errors between ARISTADA and ARISTADA INITIO can occur because ARISTADA INITIO is for single administration whereas ARISTADA is given monthly, every 6 weeks or every 2 months. Do not substitute ARISTADA INITIO for ARISTADA because their pharmacokinetic profiles differ (FDA Aristada label, section 5.3).",
+      "Neuroleptic malignant syndrome: a potentially fatal symptom complex characterised by hyperpyrexia, muscle rigidity, altered mental status and autonomic instability; manage with immediate discontinuation of antipsychotics, intensive symptomatic treatment and medical monitoring, and consider reintroduction cautiously after recovery (FDA Aristada label, section 5.4).",
+      "Tardive dyskinesia: a syndrome of potentially irreversible involuntary movements; prescribe the smallest dose for the shortest duration and consider discontinuation if signs appear (FDA Aristada label, section 5.5).",
+      "Metabolic changes: hyperglycaemia, including extreme hyperglycaemia with ketoacidosis or hyperosmolar coma or death, dyslipidaemia and weight gain; monitor glucose, lipids and weight (FDA Aristada label, section 5.6).",
+      "Pathological gambling and other compulsive behaviours: postmarketing reports of intense urges, particularly to gamble; consider dose reduction or discontinuation (FDA Aristada label, section 5.7).",
+      "Orthostatic hypotension: may occur, greatest at the beginning of treatment and during dose escalation; consider a lower starting dose and monitor orthostatic vital signs in at-risk patients (FDA Aristada label, section 5.8).",
+      "Falls: antipsychotics including ARISTADA may cause somnolence, postural hypotension or motor and sensory instability leading to falls, fractures and other injuries; complete fall risk assessments (FDA Aristada label, section 5.9).",
+      "Leukopenia, neutropenia and agranulocytosis have been reported; perform complete blood counts in patients with a history of a clinically significant low white blood cell count and consider discontinuation at the first sign of a clinically significant decline (FDA Aristada label, section 5.10).",
+      "Seizures: use cautiously in patients with a history of seizures or with conditions that lower the seizure threshold (FDA Aristada label, section 5.11).",
+      "Potential for cognitive and motor impairment: caution about operating hazardous machinery (FDA Aristada label, section 5.12).",
+      "Body temperature regulation: appropriate care is advised in patients who will experience conditions contributing to an elevation in core body temperature (FDA Aristada label, section 5.13).",
+      "Dysphagia: oesophageal dysmotility and aspiration have been associated with antipsychotic use; use cautiously in patients at risk for aspiration pneumonia (FDA Aristada label, section 5.14)."
+    ],
+    "precautions": [
+      "ARISTADA is only to be administered as an intramuscular injection by a healthcare professional (FDA Aristada label, section 2.1).",
+      "Establish tolerability with oral aripiprazole before initiating ARISTADA in patients never treated with aripiprazole, and allow up to 2 weeks for that assessment because of the long half-life of oral aripiprazole (FDA Aristada label, section 2.1).",
+      "Avoid injecting ARISTADA INITIO and ARISTADA concomitantly into the same deltoid or gluteal muscle (FDA Aristada label, section 2.1).",
+      "ARISTADA INITIO is only to be used as a single dose, is not for repeated dosing, and is not interchangeable with ARISTADA (FDA Aristada Initio label, sections 2.1 and 2.2).",
+      "When dose and dosing interval adjustments are made, consider the pharmacokinetics and prolonged-release characteristics of ARISTADA (FDA Aristada label, section 2.1).",
+      "Do not administer an ARISTADA injection earlier than 14 days after the previous injection (FDA Aristada label, section 2.3).",
+      "ARISTADA exposure and drug interaction data are derived from oral aripiprazole studies; no specific drug interaction studies have been performed with ARISTADA (FDA Aristada label, section 12.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Increased mortality in elderly patients with dementia-related psychosis (FDA Aristada label, Boxed Warning and section 5.1).",
+      "Cerebrovascular adverse reactions including stroke, transient ischemic attack and fatalities (FDA Aristada label, Boxed Warning and section 5.2).",
+      "Neuroleptic malignant syndrome (FDA Aristada label, section 5.4).",
+      "Tardive dyskinesia (FDA Aristada label, section 5.5).",
+      "Severe hyperglycaemia, including ketoacidosis or hyperosmolar coma and death (FDA Aristada label, section 5.6).",
+      "Agranulocytosis (FDA Aristada label, section 5.10).",
+      "Anaphylaxis, angioedema and laryngospasm (FDA Aristada label, sections 4 and 6.2)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Aristada labelling: ARISTADA is given by intramuscular injection and is not taken orally (FDA Aristada label, sections 2 and 2.5). The interaction data for ARISTADA are derived from studies with oral aripiprazole, in which food did not affect aripiprazole exposure (FDA Aristada label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Neonates exposed to antipsychotic drugs, including ARISTADA, during the third trimester of pregnancy are at risk for extrapyramidal and/or withdrawal symptoms following delivery. Limited published data on aripiprazole use in pregnant women are not sufficient to inform any drug-associated risks for birth defects or miscarriage, and overall available data have not established a drug-associated risk of major birth defects, miscarriage or adverse maternal outcomes. No teratogenicity was observed in animal reproduction studies with intramuscular administration of aripiprazole lauroxil to rats and rabbits during organogenesis at doses up to 5 and 15 times respectively the maximum recommended human dose of 1,064 mg on a body-surface-area basis, although aripiprazole itself caused developmental toxicity and possible teratogenic effects in rats and rabbits. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Aristada label, section 8.1). A pregnancy exposure registry for atypical antipsychotics is available (section 8.1).",
+    "lactation_guidance": "Aripiprazole is present in human breast milk. Based on published case reports and pharmacovigilance reports, aripiprazole exposure during pregnancy and/or the postpartum period may lead to clinically relevant decreases in milk supply that may be reversible with discontinuation of the drug, and there are reports of aripiprazole exposure during pregnancy with no maternal milk supply postpartum; these effects may be mediated through decreases in prolactin levels. Monitor the breastfed infant for dehydration and lack of appropriate weight gain, and weigh the developmental and health benefits of breastfeeding against the mother's clinical need for ARISTADA and any potential adverse effects on the breastfed infant (FDA Aristada label, section 8.2).",
+    "overdose": "In case of overdosage, call the Poison Control Center immediately at 1-800-222-1222 (FDA Aristada label, section 10.2). Common adverse reactions reported in at least 5% of all overdose cases with oral aripiprazole (alone or in combination with other substances) include vomiting, somnolence and tremor; other clinically important signs and symptoms observed include acidosis, aggression, aspartate aminotransferase increased, atrial fibrillation, bradycardia, coma, confusional state, convulsion, blood creatine phosphokinase increased, depressed level of consciousness, hypertension, hypokalaemia, hypotension, lethargy, loss of consciousness, QRS complex prolonged, QT prolonged, pneumonia aspiration, respiratory arrest, status epilepticus and tachycardia (FDA Aristada label, section 10.1).",
+    "pharmacokinetics": "ARISTADA is a prodrug of aripiprazole and its activity is primarily due to aripiprazole and, to a lesser extent, dehydro-aripiprazole, the major metabolite of aripiprazole, which has D2 receptor affinities similar to aripiprazole and represents 30% to 40% of aripiprazole exposure in plasma. Absorption: after a single intramuscular injection, aripiprazole appears in the systemic circulation from 5 to 6 days and continues to be released for an additional 36 days; concentrations increase with consecutive doses and reach steady state four months after treatment initiation. With the addition of a single ARISTADA INITIO injection plus 30 mg oral aripiprazole at the time of the first ARISTADA dose, or 21 days of oral aripiprazole supplementation, aripiprazole concentrations reach relevant levels within 4 days. Aripiprazole exposure was similar for deltoid and gluteal injections of 441 mg. Administration of 882 mg every 6 weeks or 1064 mg every 2 months gives plasma aripiprazole concentrations similar to 662 mg monthly. Distribution: apparent volume of distribution 268 L, with greater than 99% binding of aripiprazole and its major metabolite to serum proteins, primarily albumin. Metabolism: biotransformation of ARISTADA likely involves enzyme-mediated hydrolysis to N-hydroxymethyl aripiprazole, which is then hydrolysed to aripiprazole; elimination of aripiprazole is mainly through hepatic metabolism involving CYP3A4 and CYP2D6. Excretion: the mean aripiprazole terminal elimination half-life ranged from 53.9 to 57.2 days after monthly, 6-weekly and 2-monthly injections, which is significantly longer than the mean 75 hours for oral aripiprazole, and is attributed to the dissolution and formation rate-limited elimination of aripiprazole following ARISTADA administration (FDA Aristada label, section 12.3).",
+    "clinical_pearls": [
+      "Aripiprazole lauroxil is the intramuscular prodrug of aripiprazole and is a different product from oral aripiprazole: oral aripiprazole is a once-daily tablet with a 75-hour half-life, whereas ARISTADA is given by a healthcare professional every month, every 6 weeks or every 2 months with a 54 to 57-day terminal half-life and steady state not reached until about 4 months (FDA Aristada label, sections 2.1 and 12.3; FDA Abilify label, section 12.3).",
+      "Both induction routes require oral aripiprazole: either one 675 mg ARISTADA INITIO injection plus one 30 mg oral aripiprazole dose, or 21 consecutive days of oral aripiprazole, given with the first ARISTADA injection (FDA Aristada label, section 2.1).",
+      "ARISTADA INITIO and ARISTADA are not interchangeable and the label carries an explicit warning about substitution and dispensing errors between the two (FDA Aristada label, section 5.3).",
+      "Dose conversion from oral aripiprazole: 10 mg/day oral equals 441 mg monthly, 15 mg/day oral equals 662 mg monthly, 882 mg every 6 weeks or 1064 mg every 2 months, and 20 mg/day or higher oral equals 882 mg monthly (FDA Aristada label, section 2.1, Table 2).",
+      "Because of the very long half-life, an injection given too early will overlap with the previous dose; the label specifies that no injection should be given earlier than 14 days after the previous injection, and missed-dose rules differ by strength and elapsed time (FDA Aristada label, sections 2.2 and 2.3).",
+      "Akathisia is the single most common adverse reaction of ARISTADA (11% at both 441 mg and 882 mg versus 4% on placebo) and is the most likely reason for discontinuation (FDA Aristada label, section 6.1).",
+      "Only the 441 mg dose may be given in the deltoid muscle; the 662 mg, 882 mg and 1064 mg strengths are for gluteal injection only (FDA Aristada label, sections 2 and 2.1, Table 1).",
+      "The Kenya Essential Medicines List 2023 lists aripiprazole injection at 25 mg (as HCl)/mL in a 2 mL ampoule at level of use 2; that entry is for aripiprazole and does not describe the aripiprazole lauroxil extended-release suspension, which is supplied as 441, 662, 882 and 1064 mg single-dose pre-filled syringes (KEML 2023, section 25.1.1; FDA Aristada label, section 3)."
+    ],
+    "brand_names": [
+      "Aristada (aripiprazole lauroxil) extended-release injectable suspension, Alkermes",
+      "Aristada Initio (aripiprazole lauroxil) extended-release injectable suspension, Alkermes"
+    ],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. Analyses of 17 placebo-controlled trials (modal duration 10 weeks), largely in patients taking atypical antipsychotic drugs, revealed a risk of death in drug-treated patients of between 1.6 to 1.7 times the risk of death in placebo-treated patients. Over the course of a typical 10-week controlled trial, the rate of death in drug-treated patients was about 4.5% compared with about 2.6% in the placebo group. ARISTADA is not approved for the treatment of patients with dementia-related psychosis (FDA Aristada label, Boxed Warning and section 5.1)."
+    ],
+    "renal_dose_adjustment": "No dosage adjustment for ARISTADA is required based on renal function (mild to severe renal impairment, glomerular filtration rate between 15 and 90 mL/minute) (FDA Aristada label, section 8.7).",
+    "hepatic_dose_adjustment": "No dosage adjustment for ARISTADA is required based on hepatic function (mild to severe hepatic impairment, Child-Pugh score between 5 and 15) (FDA Aristada label, section 8.7).",
+    "administration_instructions": "For intramuscular injection only, administered by a healthcare professional. Deltoid or gluteal for the 441 mg dose; gluteal only for 662 mg, 882 mg and 1064 mg. Before administration, tap the syringe at least 10 times to dislodge settled material and shake the syringe vigorously for at least 30 seconds to ensure a uniform suspension; if the syringe is not used within 15 minutes, shake again for 30 seconds. Select the needle according to injection site: for the 441 mg dose, a 21 gauge 1-inch or 20 gauge 1.5-inch needle for the deltoid and a 20 gauge 1.5-inch or 2-inch needle for the gluteal; for 662 mg, 882 mg and 1064 mg, a 20 gauge 1.5-inch or 2-inch needle for the gluteal. Use the longer needle for patients with more subcutaneous tissue overlying the muscle (FDA Aristada label, sections 2.1, 2.5 and Table 5). Presentations: 441 mg in 1.6 mL (light blue label), 662 mg in 2.4 mL (green label), 882 mg in 3.2 mL (burgundy label) and 1064 mg in 3.9 mL (dark blue label), each in a single-dose pre-filled 5 mL syringe supplied with safety needles (section 3 and section 16.1). Store at room temperature 20 degrees C to 25 degrees C (68 degrees F to 77 degrees F), with excursions permitted between 15 degrees C and 30 degrees C (59 degrees F to 86 degrees F) (section 16.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Aristada (aripiprazole lauroxil) extended-release injectable suspension, Alkermes, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Aristada label, sections 1 and 14; FDA Aristada Initio label, section 1; Kenya Essential Medicines List 2023, section 25.1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Aristada label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Aristada label, sections 5.6, 5.8, 6.1 (Tables 7, 8 and 9) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Aristada label, sections 2, 2.1, 2.2, 2.3, 2.4 (Tables 1 to 4), 8.4 and 8.5; FDA Aristada Initio label, sections 2 and 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Aristada label, sections 2.4, 7.1, 7.2, 8.6 and 12.3; FDA Aristada Initio label, sections 2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Aristada label, sections 2.3, 5.6, 5.8, 5.9, 5.10, 6.1, 6.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Aristada label, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Aristada label, Boxed Warning and sections 5.1 to 5.14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Aristada label, sections 2.1, 2.3, 5.3 and 12.3; FDA Aristada Initio label, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Aristada label, Boxed Warning and sections 4, 5.1, 5.2, 5.4, 5.5, 5.6, 5.10 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Aristada label, sections 2, 2.5 and 12.3 (no food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Aristada label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Aristada label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Aristada label, sections 10.1 and 10.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Aristada label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Aristada label, sections 2, 2.1, 2.2, 2.3, 3, 5.3, 6.1, 12.3 and 16.1; FDA Aristada Initio label, sections 2.1 and 2.2; FDA Abilify label, section 12.3; Kenya Essential Medicines List 2023, section 25.1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Aristada and Aristada Initio (aripiprazole lauroxil) extended-release injectable suspension listed on DailyMed as the Alkermes products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA Aristada label, Boxed Warning and section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Aristada label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Aristada label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Aristada label, sections 2, 2.1, 2.5 (Table 5), 3, 16.1 and 16.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17a8d11b-73b0-4833-a0b4-cf1ef85edefb"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Aristada Initio (aripiprazole lauroxil) label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b18fdfd9-31cd-4a2f-9f1c-ebc70d7a9403"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023, section 25.1.1 (Aripiprazole: injection 25 mg (as HCl)/mL in a 2 mL ampoule at level of use 2)",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in patients under 18 years of age have not been evaluated)",
+    "pregnancy_category (the current FDA Aristada label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Aripiprazole Lauroxil', which is the prodrug aripiprazole lauroxil and NOT oral aripiprazole. The brand recorded in the row ('ARISTADA') is correct. This monograph covers ARISTADA (441 mg, 662 mg, 882 mg, 1064 mg extended-release injectable suspension) and the companion ARISTADA INITIO 675 mg single-dose product; the oral aripiprazole monograph is a separate entry. Dosing, route, dosing interval and half-life differ fundamentally from oral aripiprazole: ARISTADA is a healthcare-professional-administered intramuscular depot with a terminal half-life of 54 to 57 days and steady state at about 4 months, and every initiation route requires concurrent oral aripiprazole. ARISTADA INITIO is a single-dose product and is explicitly not interchangeable with ARISTADA. Note also that ARISTADA has only one boxed warning (increased mortality in elderly patients with dementia-related psychosis) whereas oral aripiprazole carries a second boxed warning on suicidal thoughts and behaviors with antidepressant drugs. Kenya context: the KEML 2023 lists an aripiprazole injection (25 mg/mL, 2 mL ampoule, level of use 2) but does not specify the lauroxil prodrug, and the KEML 2023 does not list an aripiprazole lauroxil presentation. No FDA letter pregnancy category is stated, so pregnancy_category is null."
+}

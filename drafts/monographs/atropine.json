@@ -1,0 +1,236 @@
+{
+  "name": "Atropine",
+  "existing_id": "0ec2da54-ca64-4272-ae88-b469b2fff8bd",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atropine is an antimuscarinic agent: it antagonizes the muscarine-like actions of acetylcholine and other choline esters. Atropine inhibits the muscarinic actions of acetylcholine on structures innervated by postganglionic cholinergic nerves and on smooth muscles which respond to endogenous acetylcholine but are not so innervated. The major action of atropine is a competitive or surmountable antagonism which can be overcome by increasing the concentration of acetylcholine at receptor sites of the effector organ (e.g., by using anticholinesterase agents which inhibit the enzymatic destruction of acetylcholine). The receptors antagonized are the peripheral structures stimulated or inhibited by muscarine, that is exocrine glands and smooth and cardiac muscle. Atropine is a naturally occurring belladonna alkaloid and a racemic mixture of equal parts of d- and l-hyoscyamine, whose activity is due almost entirely to the levo isomer (FDA Atropine Sulfate Injection label, sections 11 and 12.1). Ophthalmic mechanism (1% atropine sulfate ophthalmic solution, ISOPTO Atropine): topical atropine on the eye induces mydriasis by inhibiting contraction of the circular pupillary sphincter muscle normally stimulated by acetylcholine, allowing the countering radial pupillary dilator muscle to contract; it also induces cycloplegia by paralysis of the ciliary muscle which controls accommodation while viewing objects (FDA ISOPTO Atropine 1% label, section 12.1).",
+    "indications": [
+      "Atropine Sulfate Injection: temporary blockade of severe or life-threatening muscarinic effects, e.g., as an antisialagogue, an antivagal agent, an antidote for organophosphorus or muscarinic mushroom poisoning, and to treat bradyasystolic cardiac arrest (FDA Atropine Sulfate Injection label, section 1).",
+      "Atropine Sulfate Injection, Kenya: KNMF 2023 adult indications are preoperative medication to inhibit salivation and secretions, reversal of the muscarinic effects of cholinergic agents such as neostigmine and pyridostigmine, treatment of bradycardia secondary to cholinergic stimulation, control of muscarinic adverse effects of neostigmine in reversal of competitive neuromuscular block, and treatment of cholinergic effects associated with organophosphate or carbamate poisoning (KNMF 2023, sections 2.3 and 5.2).",
+      "ISOPTO Atropine 1% ophthalmic solution: mydriasis, cycloplegia, and penalization of the healthy eye in the treatment of amblyopia (FDA ISOPTO Atropine 1% label, section 1).",
+      "WHO Model List and Kenya: atropine is a core Model List medicine in three sections - preoperative medication and sedation for short-term procedures (parenteral 1 mg in 1 mL ampoule or vial, or 400 micrograms per mL in 1 mL ampoule or vial, as sulfate), specific antidotes for exposure to or harmful effects of pesticides (parenteral 1 mg in 1 mL ampoule or vial, as sulfate), and ophthalmological mydriatics (eye drops 0.1%, 0.5% and 1%, as sulfate) (WHO eEML, Atropine; KEML 2023, sections 2.3.1, 5.2.2, 14.2.3 and 22.5.1)."
+    ],
+    "contraindications": [
+      "Atropine Sulfate Injection: none - the FDA label states 'Contraindications: None' (FDA Atropine Sulfate Injection label, section 4).",
+      "ISOPTO Atropine 1% ophthalmic solution: should not be used in anyone who has demonstrated a previous hypersensitivity or known allergic reaction to any ingredient of the formulation because it may recur (FDA ISOPTO Atropine 1% label, section 4).",
+      "Note: the diphenoxylate/atropine combination products (for example LOMOTIL) carry their own contraindications, which are not those of atropine alone and are outside the scope of this monograph."
+    ],
+    "side_effects": [
+      "Atropine Sulfate Injection: most side effects of atropine are directly related to its antimuscarinic action. Dryness of the mouth, blurred vision, photophobia and tachycardia commonly occur with chronic administration of therapeutic doses. Anhidrosis can produce heat intolerance. Constipation and difficulty in micturition may occur in elderly patients. Occasional hypersensitivity reactions have been observed, especially skin rashes which in some instances progressed to exfoliation (FDA Atropine Sulfate Injection label, section 6).",
+      "ISOPTO Atropine 1% ophthalmic solution, ocular: eye pain and stinging on instillation; other commonly occurring adverse reactions include blurred vision, photophobia, superficial keratitis and decreased lacrimation; allergic reactions such as papillary conjunctivitis, contact dermatitis and eyelid edema may occur less commonly (FDA ISOPTO Atropine 1% label, section 6.1).",
+      "ISOPTO Atropine 1% ophthalmic solution, systemic: dryness of skin, mouth and throat from decreased secretions from mucous membranes; drowsiness; restlessness, irritability or delirium from stimulation of the central nervous system; tachycardia; flushed skin of the face and neck (FDA ISOPTO Atropine 1% label, section 6.2).",
+      "The most common adverse reactions reported with atropine sulfate ophthalmic solution are eye pain and stinging on administration, blurred vision, photophobia, superficial keratitis, decreased lacrimation, drowsiness, increased heart rate and increased blood pressure (FDA ISOPTO Atropine 1% label, section 6)."
+    ],
+    "dosage": {
+      "adult": "Atropine Sulfate Injection, intravenous only, titrated according to heart rate, PR interval, blood pressure and symptoms: as an antisialagogue or for other antivagal effects, an initial single dose of 0.5 mg to 1 mg, repeated every 1-2 hours; as an antidote for organophosphorus or muscarinic mushroom poisoning, an initial single dose of 2 mg to 3 mg repeated every 20-30 minutes; for bradyasystolic cardiac arrest, 1 mg repeated every 3-5 minutes if asystole persists, with a 3 mg maximum total dose. In patients with coronary artery disease, limit the total dose to 0.03 mg/kg to 0.04 mg/kg (FDA Atropine Sulfate Injection label, sections 2.1, 2.2 and 2.4). Kenya (KNMF 2023, sections 2.3 and 5.2): premedication by IV injection 300-600 micrograms immediately before induction of anaesthesia, or 300-600 micrograms by SC or IM injection 30-60 minutes before induction; intra-operative bradycardia by IV injection 300-600 micrograms; control of muscarinic adverse effects of neostigmine in reversal of competitive neuromuscular block by IV injection 0.6-1.2 mg; excessive bradycardia associated with beta-blocker use by IV injection 0.6-2.4 mg in divided doses (maximum per dose 600 micrograms); bradycardia following myocardial infarction by IV injection 500 micrograms every 3-5 minutes, maximum 3 mg per course; for cholinergic effects of organophosphate or carbamate poisoning by IM or IV injection, an initial dose of 1-2 mg for mild poisoning and up to 6 mg for severe poisoning every 5-10 minutes until secretions are minimal, ventilation adequate, skin flushed and dry, pupils dilated and tachycardia develops. ISOPTO Atropine 1% ophthalmic solution: in individuals from 3 months of age or greater, 1 drop topically to the cul-de-sac of the conjunctiva 40 minutes prior to the intended maximal dilation time; in individuals 3 years of age or greater, doses may be repeated up to twice daily as needed (FDA ISOPTO Atropine 1% label, sections 2.1 and 2.2).",
+      "geriatric": "An evaluation of current literature revealed no clinical experience identifying differences in response between elderly and younger patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy (FDA Atropine Sulfate Injection label, section 8.5). For ISOPTO Atropine 1%, no overall differences in safety or effectiveness have been observed between elderly and adult patients (FDA ISOPTO Atropine 1% label, section 8.5).",
+      "paediatric": "Atropine Sulfate Injection: dosing in pediatric populations has not been well studied; the usual initial dose is 0.01 to 0.03 mg/kg. Recommendations for use in pediatric patients are not based on clinical trials (FDA Atropine Sulfate Injection label, sections 2.3 and 8.4). Kenya (KNMF 2023, sections 2.3 and 5.2): premedication IV, child of all ages 20 micrograms/kg (maximum 600 micrograms) immediately before induction of anaesthesia; premedication SC, neonate 10-15 micrograms/kg and infant or child 20 micrograms/kg (minimum 100 micrograms, maximum 600 micrograms) 30-60 minutes before induction; reversal of the muscarinic effects of cholinergic agents, neonate 20 micrograms/kg and infant or child 20 micrograms/kg (maximum 600 micrograms) IV; organophosphate or carbamate poisoning, infant or child 20 micrograms/kg (maximum 2 mg) every 5-10 minutes depending on severity until the skin becomes flushed and dry. ISOPTO Atropine 1%: due to the potential for systemic absorption, use in children under 3 months of age is not recommended, and use in children under 3 years of age should be limited to no more than one drop per eye per day; safety and efficacy in children above 3 months of age has been established in adequate and well-controlled trials (FDA ISOPTO Atropine 1% label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Atropine Sulfate Injection and mexiletine: atropine sulfate injection decreased the rate of mexiletine absorption without altering the relative oral bioavailability; this delay in mexiletine absorption was reversed by the combination of atropine and intravenous metoclopramide during pretreatment for anesthesia (FDA Atropine Sulfate Injection label, section 7.1).",
+      "ISOPTO Atropine 1% and monoamine oxidase inhibitors (MAOI): the use of atropine and MAOIs is generally not recommended because of the potential to precipitate hypertensive crisis (FDA ISOPTO Atropine 1% label, sections 7 and 7.1).",
+      "Kenya: the KNMF 2023 atropine monograph warns that many drugs have antimuscarinic effects and that concomitant use of two or more such drugs can increase adverse effects such as dry mouth, urine retention and constipation, listing amitriptyline, chlorpheniramine, chlorpromazine, haloperidol, metoclopramide, neostigmine and pyridostigmine (KNMF 2023, section 2.3).",
+      "Atropine is used together with anticholinesterase reversing agents (neostigmine, edrophonium, pyridostigmine) to counter their muscarinic effects when reversing nondepolarizing neuromuscular block; the two should be dosed with this in mind (FDA Atracurium Besylate Injection label, Clinical Pharmacology; KNMF 2023, section 2.3)."
+    ],
+    "monitoring": "For atropine sulfate injection, titrate the dose based on heart rate, PR interval, blood pressure and symptoms (FDA Atropine Sulfate Injection label, section 2.1). Monitor heart rate and blood pressure closely, and monitor for signs of antimuscarinic toxicity (dry mouth, dilated pupils, flushed hot dry skin, tachycardia, urinary retention, confusion) (sections 2.1, 5.1 and 12.2). In patients with coronary artery disease, restrict the total dose to 2 to 3 mg (maximum 0.03 to 0.04 mg/kg) to avoid the detrimental effects of atropine-induced tachycardia on myocardial oxygen demand, and monitor for ischemia-related symptoms (section 5.1). In organophosphate or muscarinic mushroom poisoning, titrate repeated doses against the clinical endpoints of minimal secretions, adequate ventilation, flushed and dry skin, dilated pupils and tachycardia, and repeat the treatment if muscarinic symptoms reappear (FDA Atropine Sulfate Injection label, sections 2.2 and 2.3; KNMF 2023, section 5.2). For ISOPTO Atropine 1%, monitor for elevation of blood pressure from systemic absorption following conjunctival instillation, and be alert to the greater susceptibility of individuals with Down syndrome, spastic paralysis or brain damage to central nervous system, cardiopulmonary and gastrointestinal toxicity from systemic absorption (FDA ISOPTO Atropine 1% label, sections 5.2 and 5.3). Assess the effect of mydriasis and cycloplegia before allowing driving or hazardous activity (section 17).",
+    "patient_counselling": "For the ophthalmic product (ISOPTO Atropine 1%), advise patients not to drive or engage in other hazardous activities while the pupils are dilated; advise them that they may experience blurry vision and sensitivity to light and should protect their eyes in bright illumination during dilation, and that these effects may last up to a couple of weeks; advise them that they may experience drowsiness; and advise them not to touch the dispenser tip to any surface as this may contaminate the solution (FDA ISOPTO Atropine 1% label, section 17). For the injection, patients and carers should be told that atropine may cause a dry mouth, blurred vision, dilated pupils, rapid heartbeat, difficulty passing urine and, at high doses, confusion, hallucinations or delirium, and that the dose is titrated by the clinical team according to heart rate, blood pressure and symptoms (FDA Atropine Sulfate Injection label, sections 2.1, 6 and 10). Patients should be told to report any new visual difficulty, palpitations, urinary retention or confusion, and that in suspected organophosphate poisoning atropine is often needed repeatedly for prolonged periods and should not be stopped abruptly (FDA Atropine Sulfate Injection label, sections 5.1, 6 and 10; KNMF 2023, section 5.2).",
+    "warnings": [
+      "Atropine Sulfate Injection: tachycardia. When recurrent use of atropine is essential in patients with coronary artery disease, the total dose should be restricted to 2 to 3 mg (maximum 0.03 to 0.04 mg/kg) to avoid the detrimental effects of atropine-induced tachycardia on myocardial oxygen demand (FDA Atropine Sulfate Injection label, section 5.1).",
+      "Atropine Sulfate Injection: acute glaucoma - atropine may precipitate acute glaucoma (FDA Atropine Sulfate Injection label, section 5.2).",
+      "Atropine Sulfate Injection: pyloric obstruction - atropine may convert partial organic pyloric stenosis into complete obstruction (FDA Atropine Sulfate Injection label, section 5.3).",
+      "Atropine Sulfate Injection: complete urinary retention - atropine may lead to complete urinary retention in patients with prostatic hypertrophy (FDA Atropine Sulfate Injection label, section 5.4).",
+      "Atropine Sulfate Injection: viscid plugs - atropine may cause inspissation of bronchial secretions and formation of viscid plugs in patients with chronic lung disease (FDA Atropine Sulfate Injection label, section 5.5).",
+      "ISOPTO Atropine 1%: photophobia and blurred vision due to pupil unresponsiveness and cycloplegia may last up to 2 weeks (FDA ISOPTO Atropine 1% label, section 5.1).",
+      "ISOPTO Atropine 1%: elevation in blood pressure from systemic absorption has been reported following conjunctival instillation of recommended doses (FDA ISOPTO Atropine 1% label, section 5.2).",
+      "ISOPTO Atropine 1%: individuals with Down syndrome, spastic paralysis or brain damage are particularly susceptible to central nervous system disturbances, cardiopulmonary and gastrointestinal toxicity from systemic absorption of atropine (FDA ISOPTO Atropine 1% label, section 5.3)."
+    ],
+    "precautions": [
+      "Atropine Sulfate Injection: atropine has no effect on bradycardia in patients with transplanted hearts (FDA Atropine Sulfate Injection label, Clinical Pharmacology).",
+      "Atropine Sulfate Injection: the elimination half-life of atropine is more than doubled in children under two years old and in the elderly (over 65 years old) compared with other age groups, so extra caution is needed in these groups (FDA Atropine Sulfate Injection label, section 12.3).",
+      "Atropine Sulfate Injection: atropine is not removed by dialysis, so dialysis is not useful in overdose (FDA Atropine Sulfate Injection label, section 10).",
+      "Atropine Sulfate Injection: to minimize potential infant exposure, a woman may pump and discard her milk for 24 hours after use before resuming to breastfeed her infant (FDA Atropine Sulfate Injection label, section 8.2).",
+      "ISOPTO Atropine 1%: the onset of action generally occurs in minutes with maximal effect seen in hours and the effect can last multiple days; the maximum effect for mydriasis is achieved in about 30-40 minutes after administration with recovery after approximately 7-10 days, and the maximum effect for cycloplegia is achieved within 60-180 minutes with recovery after approximately 7-12 days (FDA ISOPTO Atropine 1% label, sections 12.2 and 14).",
+      "Kenya: the KNMF 2023 atropine monograph advises use with caution in patients with hepatic or renal impairment (no dose adjustment necessary) and notes that children with Down syndrome have more secretions and may require atropine more frequently (KNMF 2023, section 2.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Acute glaucoma precipitated by atropine (FDA Atropine Sulfate Injection label, section 5.2)",
+      "Complete pyloric obstruction in patients with partial organic pyloric stenosis (FDA Atropine Sulfate Injection label, section 5.3)",
+      "Complete urinary retention in patients with prostatic hypertrophy (FDA Atropine Sulfate Injection label, section 5.4)",
+      "Inspissation of bronchial secretions with formation of viscid plugs in patients with chronic lung disease (FDA Atropine Sulfate Injection label, section 5.5)",
+      "Atropine-induced tachycardia in patients with coronary artery disease, with the total dose restricted to 2 to 3 mg (maximum 0.03 to 0.04 mg/kg) (FDA Atropine Sulfate Injection label, section 5.1)",
+      "Toxic overdose: restlessness, excitement, hallucinations, delirium and coma, with depression and circulatory collapse and death due to respiratory failure in severe intoxication (FDA Atropine Sulfate Injection label, section 10)",
+      "Systemic toxicity from ophthalmic absorption: central nervous system disturbances, cardiopulmonary and gastrointestinal toxicity, and elevation of blood pressure (FDA ISOPTO Atropine 1% label, sections 5.2 and 5.3)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Atropine Sulfate Injection: there are risks to the mother and fetus associated with untreated severe or life-threatening muscarinic events, such as acute organophosphate poisoning and symptomatic bradycardia, which are medical emergencies in pregnancy and can be fatal if left untreated; life-sustaining therapy for the pregnant woman should not be withheld because of concerns regarding the effects of atropine on the fetus. Available data from published observational studies are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes, and animal developmental and reproductive toxicity studies have not been conducted with atropine. Atropine crosses the placenta. In a cohort study of 401 first-trimester and 797 second- or third-trimester pregnancies, atropine use was not associated with an increased risk of congenital malformations; in a surveillance study of 381 newborns exposed in the first trimester, 18 major birth defects were observed when 16 were expected, with no specific pattern identified. Methodological limitations of these observational studies cannot definitively establish or exclude any drug-associated risk during pregnancy (FDA Atropine Sulfate Injection label, sections 8.1 and 12.3). ISOPTO Atropine 1%: there are no adequate and well-controlled studies in pregnant women; adequate animal development and reproduction studies have not been conducted; in humans 1% atropine sulfate is systemically bioavailable following topical ocular administration, so ISOPTO Atropine 1% should only be used during pregnancy if the potential benefit justifies the potential risk to the fetus (FDA ISOPTO Atropine 1% label, section 8.1).",
+    "lactation_guidance": "Atropine Sulfate Injection: trace amounts of atropine have been reported in human milk; there are no available data on atropine levels in human milk after intravenous injection, the effects on the breastfed infant, or the effects on milk production. To minimize potential infant exposure, a woman may pump and discard her milk for 24 hours after use before resuming to breastfeed her infant (FDA Atropine Sulfate Injection label, section 8.2). ISOPTO Atropine 1%: there is no information to inform risk regarding the presence of atropine in human milk following ocular administration to the mother; the effects on breastfed infants and on milk production are unknown, and the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need and any potential adverse effects on the breastfed child (FDA ISOPTO Atropine 1% label, section 8.2).",
+    "overdose": "Excessive dosing may cause palpitation, dilated pupils, difficulty in swallowing, hot dry skin, thirst, dizziness, restlessness, tremor, fatigue and ataxia. Toxic doses lead to restlessness and excitement, hallucinations, delirium and coma; depression and circulatory collapse occur only with severe intoxication, and in such cases blood pressure declines and death due to respiratory failure may ensue following paralysis and coma. The fatal adult dose of atropine is not known; in pediatric populations 10 mg or less may be fatal. In the event of toxic overdosage, a short-acting barbiturate or diazepam may be given as needed to control marked excitement and convulsions; large doses for sedation should be avoided; central stimulants are not recommended. Physostigmine, given as an atropine antidote by slow intravenous injection of 1 to 4 mg (0.5 to 1 mg in pediatric populations), rapidly abolishes delirium and coma caused by large doses of atropine; because physostigmine is rapidly destroyed the patient may again lapse into coma after one to two hours and repeated doses may be required. Artificial respiration with oxygen may be necessary; ice bags and alcohol sponges help to reduce fever, especially in pediatric populations. Atropine is not removed by dialysis (FDA Atropine Sulfate Injection label, section 10). For accidental ingestion or toxic overdosage of atropine sulfate ophthalmic solution, supportive care may include a short-acting barbiturate or diazepam as needed to control marked excitement and convulsions; physostigmine 1 to 4 mg by slow intravenous injection (0.5 to 1 mg in pediatric populations) rapidly abolishes delirium and coma; artificial respiration with oxygen may be necessary and cooling measures may be needed to reduce fever (FDA ISOPTO Atropine 1% label, section 10).",
+    "pharmacokinetics": "Atropine disappears rapidly from the blood following injection and is distributed throughout the body. The pharmacokinetics of atropine are nonlinear after intravenous administration of 0.5 to 4 mg. Atropine's plasma protein binding is about 44% and saturable in the 2-20 microgram/mL concentration range. Atropine readily crosses the placental barrier and enters the fetal circulation but is not found in amniotic fluid. Much of the drug is destroyed by enzymatic hydrolysis, particularly in the liver; from 13% to 50% is excreted unchanged in the urine, and traces are found in various secretions including milk. The major metabolites of atropine are noratropine, atropine-N-oxide, tropine and tropic acid; the metabolism of atropine is inhibited by organophosphate pesticides. The elimination half-life of atropine is more than doubled in children under two years old and in the elderly (over 65 years) compared with other age groups, and there is no gender effect on the pharmacokinetics and pharmacodynamics of atropine (FDA Atropine Sulfate Injection label, section 12.3). Ophthalmic (ISOPTO Atropine 1%): after topical ocular administration of 30 microlitres, the mean systemic bioavailability of l-hyoscyamine was approximately 64% plus or minus 29% (range 19% to 95%) compared with intravenous administration, the mean Tmax was approximately 28 minutes (range 3 to 60 minutes), the mean peak plasma concentration was 288 plus or minus 73 pg/mL, and the mean plasma half-life was approximately 2.5 plus or minus 0.8 hours (FDA ISOPTO Atropine 1% label, section 12.3).",
+    "clinical_pearls": [
+      "Atropine is used for very different purposes depending on the product: antimuscarinic blockade of life-threatening muscarinic effects and poisoning by injection, and mydriasis/cycloplegia by eye drops. The doses, contraindications and warnings are not interchangeable between routes (FDA Atropine Sulfate Injection label sections 1, 2 and 5; FDA ISOPTO Atropine 1% label sections 1, 2 and 5).",
+      "The ophthalmic preparation is systemically bioavailable at roughly 64% of an intravenous dose, so a 1% eye drop can produce antimuscarinic systemic effects in susceptible patients, including raised blood pressure and delirium (FDA ISOPTO Atropine 1% label, sections 5.2, 5.3 and 12.3).",
+      "In organophosphate or carbamate poisoning, atropine is titrated to clinical endpoints (dry flushed skin, dilated pupils, adequate ventilation, resolving secretions) rather than to a fixed dose, and may be needed for days, with gradual withdrawal in severe cases to avoid abrupt recurrence of symptoms such as pulmonary oedema (KNMF 2023, section 5.2; FDA Atropine Sulfate Injection label, section 2.2).",
+      "Atropine has no effect on bradycardia in patients with transplanted hearts, so it should not be relied on in that setting (FDA Atropine Sulfate Injection label, Clinical Pharmacology).",
+      "Physostigmine 1-4 mg slow IV (0.5-1 mg in children) is the labelled antidote for severe atropine toxicity; it may need repeating because it is rapidly destroyed, and atropine is not dialysable (FDA Atropine Sulfate Injection label, section 10).",
+      "Small doses of atropine initially slow the heart rate before the characteristic tachycardia of vagal paralysis develops (FDA Atropine Sulfate Injection label, section 12.2).",
+      "Mydriasis and cycloplegia from the eye drops can persist for one to two weeks, so patients must be warned not to drive until vision clears (FDA ISOPTO Atropine 1% label, sections 5.1 and 17).",
+      "The elimination half-life of atropine is more than doubled in children under 2 years and in the elderly over 65 years, so anticipate a longer effect in these groups (FDA Atropine Sulfate Injection label, section 12.3)."
+    ],
+    "brand_names": [
+      "ATROPINE SULFATE (Atropine Sulfate Injection, Hospira/Pfizer, 0.05 mg/mL and 0.1 mg/mL)",
+      "ISOPTO ATROPINE (atropine sulfate 1% ophthalmic solution, Alcon)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Atropine Sulfate Injection: for intravenous administration. Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration whenever solution and container permit; do not administer unless the solution is clear and the seal is intact. Each syringe is intended for single dose only - discard the unused portion. The solution contains no bacteriostat or antimicrobial agent and is intended for use only as a single-dose injection; when smaller doses are required, the unused portion should be discarded. Titrate the dose based on heart rate, PR interval, blood pressure and symptoms (FDA Atropine Sulfate Injection label, sections 2.1 and 11). ISOPTO Atropine 1%: for topical ophthalmic use; instil one drop into the cul-de-sac of the conjunctiva 40 minutes prior to the intended maximal dilation time; in individuals 3 years of age or greater, doses may be repeated up to twice daily as needed. Do not touch the dispenser tip to any surface as this may contaminate the solution; store at 2-25 degrees C (36-77 degrees F) (FDA ISOPTO Atropine 1% label, sections 2, 16 and 17). Kenya: injection 1 mg (as sulfate) in a 1 mL ampoule, Level of Use (LoU) 4 as premedication/anticholinergic and LoU 2 as a specific antidote for pesticides; eye drops 0.1%, 0.5% and 1% as sulfate, LoU 4 (KEML 2023, sections 2.3.1, 5.2.2, 14.2.3 and 22.5.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Atropine Sulfate Injection (Hospira/Pfizer), sections 11 and 12.1; FDA label, ISOPTO Atropine 1% (Alcon), section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Atropine Sulfate Injection label, section 1; FDA ISOPTO Atropine 1% label, section 1; KNMF 2023 sections 2.3 and 5.2; WHO eEML Atropine; KEML 2023 sections 2.3.1, 5.2.2, 14.2.3 and 22.5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Atropine Sulfate Injection label, section 4 (none); FDA ISOPTO Atropine 1% label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Atropine Sulfate Injection label, section 6; FDA ISOPTO Atropine 1% label, sections 6, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Atropine Sulfate Injection label, sections 2.1, 2.2, 2.3, 2.4, 8.4 and 8.5; FDA ISOPTO Atropine 1% label, sections 2.1, 2.2 and 8.4; KNMF 2023 sections 2.3 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Atropine Sulfate Injection label, section 7.1; FDA ISOPTO Atropine 1% label, sections 7 and 7.1; KNMF 2023 section 2.3; FDA Atracurium Besylate Injection label, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Atropine Sulfate Injection label, sections 2.1, 2.2, 2.3, 5.1 and 12.2; FDA ISOPTO Atropine 1% label, sections 5.2, 5.3 and 17; KNMF 2023 section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Atropine Sulfate Injection label, sections 2.1, 5.1, 6 and 10; FDA ISOPTO Atropine 1% label, section 17; KNMF 2023 section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Atropine Sulfate Injection label, sections 5.1-5.5; FDA ISOPTO Atropine 1% label, sections 5.1-5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Atropine Sulfate Injection label, sections 8.2, 10, 12.2 and 12.3; FDA ISOPTO Atropine 1% label, sections 12.2 and 14; KNMF 2023 section 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Atropine Sulfate Injection label, sections 5.1-5.5 and 10; FDA ISOPTO Atropine 1% label, sections 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Atropine Sulfate Injection or ISOPTO Atropine 1% labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current FDA Atropine Sulfate Injection and ISOPTO Atropine 1% labels use the Pregnancy and Lactation Labeling Rule risk summaries and do not state a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Atropine Sulfate Injection label, sections 8.1 and 12.3; FDA ISOPTO Atropine 1% label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Atropine Sulfate Injection label, section 8.2; FDA ISOPTO Atropine 1% label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Atropine Sulfate Injection label, section 10; FDA ISOPTO Atropine 1% label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Atropine Sulfate Injection label, section 12.3; FDA ISOPTO Atropine 1% label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Atropine Sulfate Injection label, sections 1, 2, 5, 10, 12.2 and 12.3; FDA ISOPTO Atropine 1% label, sections 1, 2, 5, 12.3 and 17; KNMF 2023 section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed: ATROPINE SULFATE injection (Hospira, Inc.); ISOPTO ATROPINE 1% ophthalmic solution (Alcon Laboratories, Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Atropine Sulfate Injection or ISOPTO Atropine 1% labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "The FDA Atropine Sulfate Injection label states no renal dose-adjustment instruction; it notes only that atropine is not removed by dialysis and that the elimination half-life is more than doubled in children under 2 years and in the elderly (section 10 and 12.3). The ISOPTO Atropine 1% label gives no renal dose-adjustment instruction (section 8)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The FDA Atropine Sulfate Injection label states no hepatic dose-adjustment instruction; it notes only that much of the drug is destroyed by enzymatic hydrolysis, particularly in the liver (section 12.3). The ISOPTO Atropine 1% label gives no hepatic dose-adjustment instruction (section 8)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Atropine Sulfate Injection label, sections 2.1 and 11; FDA ISOPTO Atropine 1% label, sections 2, 16 and 17; KEML 2023 sections 2.3.1, 5.2.2, 14.2.3 and 22.5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4"
+    },
+    {
+      "field": "indications (WHO Model List status)",
+      "ref": "WHO eEML, Atropine - core Model List medicine in three sections: preoperative medication and sedation for short-term procedures, specific antidotes (pesticide exposure) and ophthalmological mydriatics; EML status history: first added 1977 (TRS 615), added 1987 (TRS 770), added 1989 (TRS 796), changed 2021 (TRS 1035)",
+      "url": "https://list.essentialmeds.org/medicines/10"
+    },
+    {
+      "field": "dosage (Kenya Essential Medicines List)",
+      "ref": "Kenya Essential Medicines List 2023, Ministry of Health, sections 2.3.1 (Atropine injection 1 mg (as sulphate)/1 mL amp, LoU 4), 5.2.2 (Atropine injection 1 mg (as sulphate)/1 mL amp, LoU 2), 14.2.3 (Atropine injection, LoU 4) and 22.5.1 (Atropine eye drops 0.1%/0.5%/1% as sulphate, LoU 4)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "dosage, interactions, monitoring, patient_counselling, precautions (Kenya National Medicines Formulary)",
+      "ref": "Kenya National Medicines Formulary, First Edition (KNMF-1), Ministry of Health 2023, section 2.3 'Anticholinergics' (Atropine monograph) and section 5.2 'Specific' (Atropine antidote monograph)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_National_Medicines_Formulary_2023_1st_Edition.pdf"
+    },
+    {
+      "field": "brand_names (ISOPTO ATROPINE)",
+      "ref": "DailyMed: ISOPTO ATROPINE (atropine sulfate) ophthalmic solution, Alcon Laboratories, Inc.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20491566-e6eb-8d4a-3083-77ea429f7bc4"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA labels use the Pregnancy and Lactation Labeling Rule risk summaries and do not state a letter pregnancy category)",
+    "renal_dose_adjustment (neither the FDA Atropine Sulfate Injection nor the ISOPTO Atropine 1% label states a renal dose-adjustment instruction)",
+    "hepatic_dose_adjustment (neither the FDA Atropine Sulfate Injection nor the ISOPTO Atropine 1% label states a hepatic dose-adjustment instruction)"
+  ],
+  "notes": "Atropine exists as several distinct products with very different dosing, indications and safety profiles, so every statement in this monograph is attributed to its own label. Two products are covered: (1) Atropine Sulfate Injection (Hospira/Pfizer, 0.05 mg/mL and 0.1 mg/mL) - intravenous, for temporary blockade of severe or life-threatening muscarinic effects, as an antisialagogue/antivagal, as an antidote for organophosphorus or muscarinic mushroom poisoning, and for bradyasystolic cardiac arrest; and (2) ISOPTO Atropine 1% ophthalmic solution (Alcon) - topical, for mydriasis, cycloplegia and penalization of the healthy eye in amblyopia. A third atropine transdermal system (ALTRAMED) was checked for and is NOT covered: it is not present in the current FDA labelling database (openFDA drug/label and drugsfda return no atropine transdermal product) and no current DailyMed SPL exists, so no label text could be sourced for it. Diphenoxylate/atropine combination products (LOMOTIL, MOTOFEN) are separate products with their own indications and are outside the scope of this monograph. Kenya context: the Kenya Essential Medicines List 2023 lists atropine injection 1 mg (as sulphate) per 1 mL ampoule at Level of Use 4 (preoperative medication) and Level of Use 2 (pesticide-poisoning antidote) and atropine eye drops 0.1%, 0.5% and 1% at Level of Use 4 (mydriatics); the Kenya National Medicines Formulary 2023 carries full monographs for both the premedication/anticholinergic use and the organophosphate/carbamate poisoning antidote use. WHO Model List: atropine is a core Model List medicine in three sections (preoperative medication and sedation, specific antidotes for pesticide exposure, ophthalmological mydriatics); for the mydriatic listing it is a square-box equivalent of tropicamide, with cyclopentolate and homatropine as therapeutic alternatives on the EMLc. There is no boxed warning for atropine. renal_dose_adjustment and hepatic_dose_adjustment are null because neither label states an adjustment instruction; the KNMF 2023 notes 'use with caution' in hepatic and renal impairment with no dose adjustment necessary, which is recorded in fields.precautions."
+}

@@ -1,0 +1,207 @@
+{
+  "name": "Armodafinil",
+  "existing_id": "273a1752-2ef7-49ca-a5bb-e74ecfc0418a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The mechanism(s) through which armodafinil promotes wakefulness is unknown. Armodafinil (R-modafinil) has pharmacological properties similar to those of modafinil (a mixture of R- and S-modafinil). Armodafinil and modafinil have wake-promoting actions similar to sympathomimetic agents including amphetamine and methylphenidate, although their pharmacologic profile is not identical to that of the sympathomimetic amines. Modafinil-induced wakefulness can be attenuated by the alpha-1-adrenergic receptor antagonist prazosin; however, modafinil is inactive in other in vitro assay systems known to be responsive to alpha-adrenergic agonists such as the rat vas deferens preparation. Armodafinil is an indirect dopamine receptor agonist; both armodafinil and modafinil bind in vitro to the dopamine transporter and inhibit dopamine reuptake. For modafinil this activity has been associated in vivo with increased extracellular dopamine levels in some brain regions of animals; in genetically engineered mice lacking the dopamine transporter (DAT), modafinil lacked wake-promoting activity, suggesting that this activity was DAT-dependent, but the wake-promoting effects of modafinil, unlike those of amphetamine, were not antagonized by the dopamine receptor antagonist haloperidol in rats. Based on nonclinical studies, two major metabolites, acid and sulfone, of modafinil or armodafinil, do not appear to contribute to the CNS-activating properties of the parent compounds (FDA Nuvigil label, section 12.1). Armodafinil is the R-enantiomer of modafinil, which is a 1:1 mixture of the R- and S-enantiomers (FDA Nuvigil label, section 11).",
+    "indications": [
+      "Improve wakefulness in adult patients with excessive sleepiness associated with obstructive sleep apnea (OSA) (FDA Nuvigil label, section 1)",
+      "Improve wakefulness in adult patients with excessive sleepiness associated with narcolepsy (FDA Nuvigil label, section 1)",
+      "Improve wakefulness in adult patients with excessive sleepiness associated with shift work disorder (SWD) (FDA Nuvigil label, section 1)",
+      "Limitations of use: in OSA, Nuvigil is indicated to treat excessive sleepiness and not as treatment for the underlying obstruction; if continuous positive airway pressure (CPAP) is the treatment of choice for a patient, a maximal effort to treat with CPAP for an adequate period of time should be made prior to initiating Nuvigil for excessive sleepiness (FDA Nuvigil label, section 1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to modafinil or armodafinil or to any of the inactive ingredients of Nuvigil (FDA Nuvigil label, section 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (>=5% and more frequent than placebo) in placebo-controlled trials: headache (17% vs 9% placebo), nausea (7% vs 3%), dizziness (5% vs 2%) and insomnia (5% vs 1%) (FDA Nuvigil label, section 6.1, Table 1)",
+      "Other adverse reactions reported in >=1% of Nuvigil-treated patients and more frequent than placebo: anxiety, diarrhoea, dry mouth, depression, dyspepsia, fatigue, palpitations, rash, upper abdominal pain, agitation, anorexia, constipation, contact dermatitis, decreased appetite, depressed mood, disturbance in attention, dyspnoea, hyperhidrosis, increased gamma-glutamyltransferase, increased heart rate, influenza-like illness, loose stools, migraine, nervousness, pain, paraesthesia, polyuria, pyrexia, seasonal allergy, thirst, tremor and vomiting (FDA Nuvigil label, section 6.1, Table 1)",
+      "Dose-related adverse reactions (250 mg vs 150 mg): headache 23% vs 14%, nausea 9% vs 6%, insomnia 6% vs 4%, dry mouth 7% vs 2%, rash 4% vs 1%, depression 3% vs 1% (FDA Nuvigil label, section 6.1, Table 2)",
+      "Psychiatric: anxiety, agitation, nervousness and irritability led to discontinuation more often with Nuvigil than placebo (1.2% vs 0.3%); depression was also a reason for discontinuation more often (0.6% vs 0.2%); cases of suicidal ideation were observed in clinical trials (FDA Nuvigil label, section 5.5)",
+      "Cardiovascular: small average increases in mean systolic and diastolic blood pressure (1.2 to 4.3 mmHg) and a small consistent average increase in pulse rate over placebo (0.9 to 3.5 BPM); a slightly greater proportion of patients required new or increased antihypertensive medication (2.9% vs 1.8% on placebo) (FDA Nuvigil label, section 5.7)",
+      "Serious dermatologic reactions including Stevens-Johnson syndrome and toxic epidermal necrolysis, DRESS/multi-organ hypersensitivity, and angioedema/anaphylaxis (FDA Nuvigil label, sections 5.1, 5.2 and 5.3)",
+      "Postmarketing: mouth sores (including mouth blistering and ulceration) (FDA Nuvigil label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Obstructive sleep apnea or narcolepsy: 150 mg to 250 mg taken orally once a day as a single dose in the morning. In patients with OSA, doses up to 250 mg/day given as a single dose have been well tolerated, but there is no consistent evidence that these doses confer additional benefit beyond that of the 150 mg/day dose (FDA Nuvigil label, sections 2.1 and 12.3). Shift work disorder: 150 mg taken orally once a day as a single dose approximately 1 hour prior to the start of the work shift (FDA Nuvigil label, section 2.2). Tablets available as 50 mg, 150 mg, 200 mg and 250 mg (FDA Nuvigil label, section 3).",
+      "geriatric": "Consideration should be given to the use of lower doses and close monitoring in geriatric patients, because elimination of armodafinil and its metabolites may be reduced as a consequence of aging (FDA Nuvigil label, sections 2.4 and 8.5).",
+      "paediatric": "Safety and effectiveness in paediatric patients have not been established. Nuvigil has not been studied in paediatric patients in any setting and is not approved for use in paediatric patients for any indication (FDA Nuvigil label, sections 5.1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "CYP3A4/5 substrates (e.g. steroidal contraceptives, cyclosporine, midazolam, triazolam): clearance may be increased by Nuvigil through induction of metabolic enzymes, resulting in lower systemic exposure; dosage adjustment of these drugs should be considered (FDA Nuvigil label, section 7)",
+      "Steroidal contraceptives: the effectiveness of steroidal contraceptives may be reduced when used with Nuvigil and for one month after discontinuation of therapy; alternative or concomitant methods of contraception are recommended (FDA Nuvigil label, sections 7 and 8.3)",
+      "Cyclosporine: blood levels may be reduced; monitoring of circulating cyclosporine concentrations and appropriate dosage adjustment should be considered (FDA Nuvigil label, section 7)",
+      "CYP2C19 substrates (e.g. phenytoin, diazepam, propranolol, omeprazole, clomipramine): elimination may be prolonged by inhibition of metabolic enzymes, with resultant higher systemic exposure; dose reduction of these drugs may be required (FDA Nuvigil label, section 7)",
+      "Warfarin: more frequent monitoring of prothrombin times/INR should be considered whenever Nuvigil is coadministered with warfarin (FDA Nuvigil label, section 7)",
+      "Monoamine oxidase (MAO) inhibitors: caution should be used when concomitantly administering MAO inhibitors and Nuvigil (FDA Nuvigil label, section 7)",
+      "Potent CYP3A4/5 inducers (e.g. carbamazepine, phenobarbital, rifampin) or inhibitors (e.g. ketoconazole, erythromycin) may alter the plasma concentrations of armodafinil because of the partial involvement of CYP3A enzymes in its metabolic elimination (FDA Nuvigil label, section 12.3)"
+    ],
+    "monitoring": "Assess patients frequently for their degree of sleepiness and, where appropriate, advise them to avoid driving or engaging in any other potentially dangerous activity; note that patients may not acknowledge sleepiness or drowsiness until directly questioned about it during specific activities (FDA Nuvigil label, section 5.4). Increased monitoring of heart rate and blood pressure may be appropriate in patients on Nuvigil, and caution should be exercised in patients with known cardiovascular disease (section 5.7). Monitor mean plasma gamma-glutamyltransferase and alkaline phosphatase, which were found to be higher following administration of Nuvigil than placebo, with rare isolated elevations of AST and/or ALT and one case of mild pancytopenia that resolved on discontinuation (section 6.1). Reduce the dose in patients with severe hepatic impairment and monitor them (sections 2.3 and 8.6). In the elderly, use lower doses with close monitoring (sections 2.4 and 8.5). For patients on a coumarin-type anticoagulant, consider more frequent monitoring of prothrombin times/INR (section 7).",
+    "patient_counselling": "Advise patients and caregivers about the risk of potentially fatal serious skin reactions and to discontinue Nuvigil and consult their healthcare provider immediately if a skin reaction such as rash, mouth sores, blisters or peeling skin occurs (FDA Nuvigil label, section 17). Instruct patients that a fever associated with signs of other organ system involvement (e.g. rash, lymphadenopathy, hepatic dysfunction) may be drug-related and should be reported to their healthcare provider immediately (section 17). Advise patients of life-threatening symptoms suggesting anaphylaxis or angioedema (hives, difficulty in swallowing or breathing, hoarseness, or swelling of the face, eyes, lips or tongue) to discontinue Nuvigil and report these symptoms immediately (section 17). Advise patients that treatment with Nuvigil will not eliminate their abnormal tendency to fall asleep and that it is not a replacement for sleep, and that they should not alter previous behaviour regarding dangerous activities such as driving or operating machinery until Nuvigil has been shown to produce levels of wakefulness that permit such activities (section 17). Inform patients that it may be critical that they continue previously prescribed treatments (e.g. OSA patients on CPAP should continue) (section 17). Advise patients to stop taking Nuvigil and contact their physician right away if they experience depression, anxiety, or signs of psychosis or mania (section 17). Advise women who use a hormonal method of contraception to use an additional barrier method or an alternative non-hormonal method during treatment and for one month after discontinuation of Nuvigil (section 17). Advise patients to inform their physician about all prescription and over-the-counter medicines taken or planned (section 17). Advise patients that use of Nuvigil with alcohol has not been studied and that it is prudent to avoid alcohol while taking Nuvigil (section 17).",
+    "warnings": [
+      "Serious dermatologic reactions including Stevens-Johnson syndrome and toxic epidermal necrolysis: Nuvigil should be discontinued at the first sign of rash, skin or mouth sores, or blistering or ulceration, unless the rash is clearly not drug-related; serious rash has occurred 1 day to 2 months after initiation and isolated cases after prolonged treatment (FDA Nuvigil label, section 5.1)",
+      "DRESS/multi-organ hypersensitivity: typically presents with fever, rash, lymphadenopathy and/or facial swelling with other organ involvement (e.g. hepatitis, nephritis, hematologic abnormalities, myocarditis, myositis); early manifestations such as fever and lymphadenopathy may be present even though rash is not evident; discontinue Nuvigil if suspected (FDA Nuvigil label, section 5.2)",
+      "Angioedema and anaphylaxis reactions: observed with Nuvigil, including swelling of the face, eyes, lips, tongue or larynx, difficulty in swallowing or breathing and hoarseness; discontinue therapy and report immediately (FDA Nuvigil label, section 5.3)",
+      "Persistent sleepiness: patients with abnormal levels of sleepiness who take Nuvigil should be advised that their level of wakefulness may not return to normal, and should be frequently reassessed and advised to avoid driving or other potentially dangerous activity (FDA Nuvigil label, section 5.4)",
+      "Psychiatric symptoms: caution in patients with a history of psychosis, depression or mania; consider discontinuing Nuvigil if psychiatric symptoms develop; postmarketing reports include mania, delusions, hallucinations, suicidal ideation and aggression, often in patients with a prior psychiatric history and at doses from 50 mg to 450 mg (FDA Nuvigil label, section 5.5)",
+      "Effects on ability to drive and use machinery: although Nuvigil has not been shown to produce functional impairment, any CNS-active drug may alter judgment, thinking or motor skills; caution patients until it is reasonably certain that therapy will not adversely affect such activities (FDA Nuvigil label, section 5.6)",
+      "Cardiovascular events: it is recommended that Nuvigil tablets not be used in patients with a history of left ventricular hypertrophy or in patients with mitral valve prolapse who have experienced mitral valve prolapse syndrome when previously receiving CNS stimulants; if new onset of ischaemic ECG changes, chest pain or arrhythmia occurs, consider cardiac evaluation (FDA Nuvigil label, section 5.7)"
+    ],
+    "precautions": [
+      "Reduce the dose in patients with severe hepatic impairment (FDA Nuvigil label, sections 2.3 and 8.6).",
+      "Consider lower doses and close monitoring in geriatric patients (FDA Nuvigil label, sections 2.4 and 8.5).",
+      "Patients should be cautioned about operating an automobile or other hazardous machinery until it is reasonably certain that Nuvigil therapy will not adversely affect their ability to do so (FDA Nuvigil label, section 5.6).",
+      "The effectiveness of hormonal contraceptives may be reduced when used with Nuvigil and for one month after discontinuation of therapy; advise women of reproductive potential to use an additional barrier method or an alternative non-hormonal method during treatment and for one month after discontinuation (FDA Nuvigil label, section 8.3).",
+      "Nuvigil contains armodafinil, a Schedule IV controlled substance; physicians should follow patients closely, especially those with a history of drug or stimulant abuse, and observe for signs of misuse such as dose escalation or drug-seeking behaviour (FDA Nuvigil label, sections 9.1 and 9.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious dermatologic reactions, including Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA Nuvigil label, section 5.1)",
+      "DRESS/multi-organ hypersensitivity, including a fatal case reported in close temporal association (3 weeks) with the initiation of Nuvigil (FDA Nuvigil label, section 5.2)",
+      "Angioedema and anaphylaxis reactions (FDA Nuvigil label, section 5.3)",
+      "Psychiatric reactions including mania, delusions, hallucinations, suicidal ideation and aggression, some of which have resulted in hospitalisation (FDA Nuvigil label, section 5.5)",
+      "Cardiovascular events in patients with left ventricular hypertrophy or mitral valve prolapse syndrome (FDA Nuvigil label, section 5.7)"
+    ],
+    "food_interactions": [
+      "Food effect on the overall bioavailability of Nuvigil is considered minimal; however, time to peak concentration may be delayed by approximately 2 to 4 hours in the fed state, and because the delay is associated with elevated plasma concentrations later in time, food can potentially affect the onset and time course of pharmacologic action (FDA Nuvigil label, section 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Limited available data on armodafinil use in pregnant women are insufficient to inform a drug-associated risk of adverse pregnancy outcomes. Intrauterine growth restriction and spontaneous abortion have been reported in association with armodafinil and modafinil; armodafinil shares some pharmacologic properties with the sympathomimetic amines, and some sympathomimetics have been associated with intrauterine growth restriction and spontaneous abortions. In animal reproduction studies of armodafinil and modafinil in pregnant rats and rabbits during organogenesis, developmental toxicity (increased embryofetal and offspring mortality, decreased fetal growth) was observed at clinically relevant plasma exposures; the highest no-effect dose for embryofetal developmental toxicity in rats was associated with a plasma armodafinil exposure (AUC) less than that in humans at the maximum recommended human dose of 250 mg/day. Advise pregnant women of the potential risk to a fetus and advise pregnant patients to notify their healthcare provider of a known or suspected pregnancy. A pregnancy exposure registry is available (1-866-404-4106) (FDA Nuvigil label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of armodafinil or its metabolites in human milk, the effects on the breastfed infant, or the effect of this drug on milk production. Modafinil was present in rat milk when animals were dosed during the lactation period. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for armodafinil and any potential adverse effects on the breastfed child from armodafinil or from the underlying maternal condition (FDA Nuvigil label, section 8.2).",
+    "overdose": "Fatal overdoses involving modafinil alone, or involving Nuvigil or modafinil in combination with other drugs, have been reported in the postmarketing setting. Symptoms most often accompanying Nuvigil or modafinil overdose, alone or in combination with other drugs, have included anxiety, dyspnoea and insomnia; central nervous system symptoms such as restlessness, disorientation, confusion, excitation and hallucination; digestive changes such as nausea and diarrhoea; and cardiovascular changes such as tachycardia, bradycardia, hypertension and chest pain. No specific antidote exists for the toxic effects of a Nuvigil overdose; such overdoses should be managed with primarily supportive care, including cardiovascular monitoring (FDA Nuvigil label, section 10).",
+    "pharmacokinetics": "Armodafinil exhibits linear, time-independent kinetics following single and multiple oral doses; systemic exposure is proportional over the dose range of 50 to 400 mg, and apparent steady state is reached within 7 days of dosing, with steady-state systemic exposure 1.8 times that after a single dose. Nuvigil is readily absorbed after oral administration; peak plasma concentrations are attained at approximately 2 hours in the fasted state. The apparent volume of distribution is approximately 42 L; modafinil is moderately bound to plasma protein (approximately 60%), mainly to albumin, and the potential for interactions with highly protein-bound drugs is considered minimal. The apparent terminal half-life is approximately 15 hours and the oral clearance is approximately 33 mL/min. Metabolism is by hydrolytic deamidation (the single most prominent metabolic pathway), S-oxidation and aromatic ring hydroxylation with subsequent glucuronide conjugation; sulfone formation by CYP3A4/5 is next in importance, and only two metabolites reach appreciable concentrations in plasma (R-modafinil acid and modafinil sulfone). Elimination is mainly via metabolism, predominantly in the liver, with less than 10% of the parent compound excreted in the urine; 81% of administered radioactivity was recovered in 11 days, predominantly in urine (80% vs 1.0% in faeces). In the elderly (>=65 years) systemic exposure was approximately 15% higher and oral clearance approximately 12% lower than in young subjects. In patients with cirrhosis, oral clearance of modafinil was decreased by about 60% and the steady state concentration was doubled compared with normal patients. In severe chronic renal failure (creatinine clearance <=20 mL/min) the pharmacokinetics of modafinil were not significantly influenced, but exposure to the modafinil acid metabolite was increased 9-fold (FDA Nuvigil label, section 12.3).",
+    "clinical_pearls": [
+      "Nuvigil is approved only in adults; it has not been studied in paediatric patients in any setting (FDA Nuvigil label, sections 5.1 and 8.4).",
+      "In OSA, treat the underlying obstruction first: a maximal effort to treat with CPAP for an adequate period should be made before starting Nuvigil, and patients should continue CPAP (FDA Nuvigil label, sections 1 and 17).",
+      "Doses of 200 mg and 250 mg are FDA-approved strengths, but the label states there is no consistent evidence of additional benefit beyond 150 mg/day in OSA (FDA Nuvigil label, sections 2.1, 3 and 12.3).",
+      "Armodafinil is the pure R-enantiomer of modafinil, which is a 1:1 mixture of R- and S-enantiomers; the R-enantiomer is cleared more slowly than the S-enantiomer (elimination half-life approximately 4 hours for the S-enantiomer) (FDA Nuvigil label, sections 11 and 12.3).",
+      "There is no known predictor of serious rash: serious dermatologic reactions have occurred from day 1 to 2 months after starting treatment and, rarely, after prolonged treatment (FDA Nuvigil label, section 5.1).",
+      "Because the label states no boxed warning for armodafinil, the serious risks that are emphasised are serious rash/DRESS/angioedema, persistent sleepiness, psychiatric symptoms and cardiovascular events (FDA Nuvigil label, sections 5.1 to 5.7).",
+      "Nuvigil is a Schedule IV controlled substance and physical dependence with withdrawal symptoms (shaking, sweating, chills, nausea, vomiting, confusion, aggression, atrial fibrillation) has been reported on abrupt cessation (FDA Nuvigil label, sections 9.1 and 9.3)."
+    ],
+    "brand_names": ["Nuvigil"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the Nuvigil prescribing information. In a single-dose 200 mg modafinil study, severe chronic renal failure (creatinine clearance <=20 mL/min) did not significantly influence the pharmacokinetics of modafinil, but exposure to the modafinil acid metabolite was increased 9-fold (FDA Nuvigil label, section 12.3).",
+    "hepatic_dose_adjustment": "The dosage of Nuvigil should be reduced in patients with severe hepatic impairment (FDA Nuvigil label, sections 2.3 and 8.6). In patients with cirrhosis the oral clearance of modafinil was decreased by about 60% and the steady state concentration was doubled compared with normal patients; the label does not state a specific reduced dose (FDA Nuvigil label, section 12.3).",
+    "administration_instructions": "Oral administration. For obstructive sleep apnea and narcolepsy, take once daily in the morning; for shift work disorder, take 150 mg approximately 1 hour before the start of the work shift (FDA Nuvigil label, sections 2.1 and 2.2). Available as 50 mg, 150 mg, 200 mg and 250 mg white to off-white tablets (section 3). Store at 20 degrees C to 25 degrees C (68 degrees F to 77 degrees F) (section 16.2). Advise patients to read the FDA-approved patient labeling (Medication Guide) (section 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet [Cephalon LLC], sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 1 (Indications and Usage, including Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 4 (Contraindications)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 5.1-5.7, 6.1 (Tables 1 and 2) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 2.1-2.4, 3, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 7 (Drug Interactions) and section 12.3 (Drug Interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 5.4, 5.7, 6.1, 7, 8.5, 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 5.1-5.7 (Warnings and Precautions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 2.3, 2.4, 5.6, 8.3, 9.1 and 9.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 5.1, 5.2, 5.3, 5.5 and 5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 12.3 (Absorption - food effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 8.2 (Lactation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 10 (Overdosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 12.3 (Pharmacokinetics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 1, 2.1, 3, 5.1, 5.4-5.7, 9.1, 9.3, 11 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "brand_names",
+      "ref": "NUVIGIL (ARMODAFINIL) TABLET listed as a brand product on DailyMed (Cephalon LLC)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the NUVIGIL (armodafinil) prescribing information; the serious risks are presented in Warnings and Precautions, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, section 12.3 (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 2.3, 8.6 and 12.3 (Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, NUVIGIL (armodafinil) tablet, sections 2.1, 2.2, 3, 16.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d878aed0-ddbf-8fa1-abf7-d3e480260845"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in paediatric patients have not been established)",
+    "pregnancy_category (the NUVIGIL label is written in the Pregnancy and Lactation Labeling Rule format and does not state a pregnancy category letter; a null is used rather than inferring one from modafinil)"
+  ],
+  "notes": "The table stores this agent as 'Armodafinil' with drug class 'Central nervous system agent'; the class label is generic and the monograph below is specific to armodafinil (Nuvigil), a Schedule IV wakefulness-promoting agent for excessive sleepiness associated with OSA, narcolepsy and shift work disorder. All content is drawn from the FDA-approved Nuvigil prescribing information (Cephalon LLC, DailyMed setid d878aed0-ddbf-8fa1-abf7-d3e480260845, label published 7 May 2025). The previous row carried class-template text shared word-for-word with other CNS agents, which has been replaced. Nuvigil has no boxed warning, so black_box_warnings is an empty array and the genuine serious risks (serious rash/DRESS/angioedema, persistent sleepiness, psychiatric symptoms, cardiovascular events) are listed under warnings and serious_adverse_reactions. Armodafinil is not listed in the Kenya Essential Medicines List 2023."
+}

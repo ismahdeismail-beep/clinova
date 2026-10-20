@@ -1,0 +1,249 @@
+{
+  "name": "Antivenom",
+  "existing_id": "dc7a58f4-4759-412f-a253-ba63e0505317",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Antivenoms are heterologous animal plasma-derived immunoglobulin preparations, either intact immunoglobulins (IgG) or fragments such as F(ab')2 or Fab, raised against the venoms of one (monospecific/monovalent) or several (polyvalent) snake or arthropod species, that bind and neutralise venom toxins and thereby prevent or reverse the clinical effects of envenoming. CROFAB is a venom-specific Fab fragment of immunoglobulin G that works by binding and neutralising venom toxins, facilitating their redistribution away from target tissues and their elimination from the body (FDA Crofab label, section 12.1). North American Coral Snake Antivenin (Equine) specifically binds to and neutralises coral snake venom (FDA North American Coral Snake Antivenin (Equine) label, section 12.1). The EchiTAbG ovine IgG antivenom is purified from the antisera of sheep immunised with the venom of Echis ocellatus and neutralises that venom (WHO EchiTAbG product profile, Indication).",
+    "indications": [
+      "CROFAB (ovine Crotalidae Polyvalent Immune Fab): management of adult and pediatric patients with North American crotalid envenomation (rattlesnakes, copperheads and cottonmouths/water moccasins) (FDA Crofab label, section 1).",
+      "ANAVIP (crotalidae immune F(ab')2 (equine)): management of adult and pediatric patients with North American pit viper envenomation (FDA Anavip label, section 1).",
+      "North American Coral Snake Antivenin (Equine): treatment of envenomation caused by bites of North American coral snakes, Micrurus (including the eastern and Texas varieties) (FDA North American Coral Snake Antivenin (Equine) label, section 1).",
+      "Antivenin (Latrodectus mactans), equine origin: treatment of patients with symptoms due to bites by the black widow spider (Latrodectus mactans); early use is emphasised for prompt relief (FDA Antivenin (Latrodectus mactans) label, Indications and Usage).",
+      "EchiTAbG (Echis ocellatus antivenom, ovine IgG for injection), a WHO-recommended product for sub-Saharan Africa: treatment of systemic envenoming caused by the bite of the West African saw-scaled or carpet viper (Echis ocellatus), as shown by the presence of incoagulable blood or prolonged clotting time or spontaneous systemic bleeding; no claim is made for effectiveness against any other snake species, including other species of Echis (WHO EchiTAbG product profile, Indication).",
+      "WHO Model List of Essential Medicines 23rd List (2023), section 19.2 'Sera, immunoglobulins and monoclonal antibodies': 'antivenom immunoglobulin', injection, with the footnote 'Exact type to be defined locally' (WHO EML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023, section 21.2.1 'Sera and Immunoglobulins': 'Anti Snake venom immunoglobulin', injection for intravenous infusion, polyvalent serum (African), 10 mL vial, at level of use 4; the entry footnote specifies a 16 species mixture covering Bitis, Naja, Echis, Dendroaspis, Pseudohaje, Dispholidus, Thelotornis and Hydrophis (KEML 2023, section 21.2.1 and footnote 415)."
+    ],
+    "contraindications": [
+      "CROFAB: do not administer to patients with a known history of hypersensitivity to any of its components, or to papaya or papain, unless the benefits outweigh the risks and appropriate management for anaphylactic reactions is readily available (FDA Crofab label, section 4).",
+      "ANAVIP: none. ANAVIP may cause allergic reactions, and patients with known allergies to horse protein are particularly at risk for an anaphylactic reaction (FDA Anavip label, section 4).",
+      "North American Coral Snake Antivenin (Equine): do not administer prophylactically to asymptomatic patients, and do not use in patients with a known history of hypersensitivity to horse serum unless the benefits outweigh the risks and appropriate management for anaphylactic reactions is readily available (FDA North American Coral Snake Antivenin (Equine) label, section 4).",
+      "Antivenin (Latrodectus mactans): not stated as an absolute contraindication; the label requires a careful review of the patient's history emphasising prior exposure to horse serum or any allergies before any horse-serum-derived product, because serum sickness and even death could result in a sensitive patient (FDA Antivenin (Latrodectus mactans) label, Warnings).",
+      "EchiTAbG: there are no contraindications to EchiTAbG (WHO EchiTAbG product profile, Contraindications)."
+    ],
+    "side_effects": [
+      "CROFAB: the most common adverse reactions (incidence 5% or more) were urticaria, rash, nausea, pruritus and back pain; in premarketing prospective trials in 42 patients, 19 (45%) experienced an adverse reaction for a total of 26 reactions, with skin and appendage reactions (primarily rash, urticaria and pruritus) in 12 of 42; one patient discontinued due to an allergic reaction (FDA Crofab label, sections 6 and 6.1).",
+      "CROFAB: severe hypersensitivity reactions, including anaphylaxis and anaphylactoid reactions, and delayed reactions such as late serum reaction or serum sickness may occur because heterologous animal proteins are injected (FDA Crofab label, section 5.2).",
+      "CROFAB: recurrent coagulopathy (return of a coagulation abnormality after successful treatment with antivenin, with decreased fibrinogen, decreased platelets and elevated prothrombin time) occurred in approximately half of patients studied, and may persist for 1 to 2 weeks or more (FDA Crofab label, section 5.1).",
+      "ANAVIP: the most common adverse reactions in clinical trials (more than 2% of patients) were pruritus 43%, nausea 23%, rash 12%, arthralgia 11%, vomiting 6%, peripheral oedema 8%, myalgia 7%, erythema 4%, headache and pain in extremity; 65 of 86 patients (76%) reported at least one adverse reaction (FDA Anavip label, sections 6 and 6.1, Table 2).",
+      "ANAVIP: delayed allergic reactions or serum sickness (rash, fever, myalgia, arthralgia, pruritus, urticarial rash) require follow-up and treatment if necessary; trace amounts of cresol from manufacturing can cause localised reactions and generalised myalgias (FDA Anavip label, sections 5.1, 5.3 and 17).",
+      "North American Coral Snake Antivenin (Equine): the most common adverse reactions observed after treatment were anaphylaxis and serum sickness, vomiting and abdominal pain (FDA North American Coral Snake Antivenin (Equine) label, section 6).",
+      "Antivenin (Latrodectus mactans): hypersensitivity reactions including anaphylaxis and serum sickness have been reported, and muscle cramps have also been reported (FDA Antivenin (Latrodectus mactans) label, Adverse Reactions).",
+      "EchiTAbG: clinical experience with antivenoms suggests that anaphylactic reactions can occur and are related to the amount and rate of administration; they are usually temporary, self-limiting and non-life-threatening, and may include itching, mild urticaria, flushing, faintness, nausea/vomiting, angio-oedema and wheezing (WHO EchiTAbG product profile, Precautions)."
+    ],
+    "dosage": {
+      "adult": "Antivenom dosing is product-specific and cannot be generalised across the class. CROFAB: the recommended initial dose is 4 to 6 vials, although the starting dose may vary from a minimum of 4 vials to a maximum of 12 vials based on clinical judgement and severity of envenomation; observe the patient for up to 1 hour after the first dose, and if initial control of envenomation is not achieved, give additional 4 to 6 vial doses repeatedly until initial control is achieved; once initial control is achieved, give additional 2-vial doses every 6 hours for up to 18 hours (3 doses) (FDA Crofab label, sections 2 and 2.1). ANAVIP: the initial dose is 10 vials infused intravenously over 60 minutes; give additional 10-vial doses if needed to arrest progressive symptoms, repeating every hour until initial control is achieved, with no known maximum dose; after initial control, monitor the patient in a healthcare setting for at least 18 hours, and give additional 4-vial doses as needed for re-emerging symptoms including coagulopathies (FDA Anavip label, section 2). North American Coral Snake Antivenin (Equine): in adults and adolescents the dose may vary from 3 to 5 vials depending on the response to treatment, with the dose decreased in small children; each reconstituted vial neutralises approximately 250 mouse LD50 or approximately 2 mg of Micrurus fulvius fulvius venom (FDA North American Coral Snake Antivenin (Equine) label, sections 2 and 2.1). Antivenin (Latrodectus mactans): the dose for adults and children is the entire contents of a restored single-dose vial (2.5 mL), given intramuscularly in the anterolateral thigh or intravenously in 10 to 50 mL of saline over 15 minutes; one dose is usually adequate but a second may be necessary in some cases (FDA Antivenin (Latrodectus mactans) label, Dosage and Administration). EchiTAbG: the recommended initial treatment dose is one 10 mL ampoule, administered by slow intravenous injection over not less than 10 minutes, with further ampoules given if clinically indicated, for example if the blood remains incoagulable six hours or longer after the initial dose (WHO EchiTAbG product profile, Dosage and administration).",
+      "geriatric": "CROFAB: 5% (13/247) of patients in a post-marketing retrospective study were over 65 years of age (median 72 years, range 67 to 91), and efficacy and safety in the geriatric population appear comparable to the overall population (FDA Crofab label, section 8.5). Antivenin (Latrodectus mactans): reported clinical experience has not identified differences in responses between the elderly and younger patients, but because of the increased risk of complications from envenomation in elderly patients, the standard of care described in the literature suggests that patients older than 60 years of age should be given antivenin as preferred initial therapy (FDA Antivenin (Latrodectus mactans) label, Geriatric Use). Specific studies in elderly patients have not been conducted for North American Coral Snake Antivenin (Equine) (section 8.5).",
+      "paediatric": "CROFAB: 32% (78/247) of patients in a post-marketing retrospective study were 16 years of age or younger (median 8.5 years, range 1 to 16); initial control of envenomation was achieved in 64/72 (89%) of pediatric patients, similar to 103/128 (80%) in adults, with similar changes in severity score, recurrence and incidence of adverse reactions, and limited published clinical experience has not shown that a dosage adjustment for age should be made (FDA Crofab label, section 8.4). ANAVIP is indicated for adult and pediatric patients (section 1). North American Coral Snake Antivenin (Equine): controlled clinical studies of safety and effectiveness in pediatric patients have not been conducted, but reported pediatric cases have included anaphylaxis (wheezing) requiring epinephrine, vomiting and abdominal pain; the dose may be decreased in small children (FDA North American Coral Snake Antivenin (Equine) label, sections 2.1 and 8.4). Antivenin (Latrodectus mactans): controlled clinical studies for safety and effectiveness in children have not been conducted, and the intravenous route is preferred in patients under 12 years or in shock (FDA Antivenin (Latrodectus mactans) label, Dosage and Administration and Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Papain, chymopapain, papaya extracts and bromelain: papain is used to cleave antibodies into fragments during processing of CROFAB and trace amounts of papain or inactivated papain residues may be present, so patients allergic to papain, chymopapain, other papaya extracts or the pineapple enzyme bromelain may also have an allergic reaction to CROFAB; some dust mite and latex allergens share antigenic structures with papain (FDA Crofab label, section 5.2).",
+      "Horse serum / horse protein: patients with known allergy to horse protein are particularly at risk of anaphylaxis with equine antivenoms such as ANAVIP and North American Coral Snake Antivenin (Equine) (FDA Anavip label, section 5.1; FDA North American Coral Snake Antivenin (Equine) label, section 5.1).",
+      "Aspirin and other antiplatelet drugs should be avoided during snakebite supportive care, as should anticoagulants, because the venom-induced coagulopathy is the main clinical problem; the EchiTAbG product information states that severe anaemia may require transfusion with whole safe blood, that anti-tetanus agents are indicated, that analgesics such as paracetamol or codeine phosphate may be administered for pain, but that aspirin and other antiplatelet drugs should be avoided (WHO EchiTAbG product profile, Supportive and adjunctive therapy).",
+      "For crotalid envenomation generally, the clinician should carefully assess the need for re-treatment with antivenom and the use of any type of anticoagulant or anti-platelet drug during the follow-up period, since snake envenomation causes coagulation abnormalities (FDA Crofab label, section 5.1).",
+      "Antivenin (Latrodectus mactans) should be used with care with morphine or barbiturates, because the venom is a neurotoxin and can cause respiratory paralysis (FDA Antivenin (Latrodectus mactans) label, Indications and Usage)."
+    ],
+    "monitoring": "Class-level monitoring derived from the individual product labels: observe the patient closely during and for at least 1 hour after the administration of antivenom for anaphylaxis and other acute hypersensitivity reactions, and monitor for delayed allergic reactions or serum sickness (rash, fever, myalgia, arthralgia) for 8 to 12 days after equine antivenin (FDA Antivenin (Latrodectus mactans) label, Warnings; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Anavip label, section 5.1; WHO EchiTAbG product profile, Precautions). For crotalid envenomation, monitor for recurrent coagulopathy for one week or longer after treatment, with serial coagulation assessment, because recurrent coagulopathy may persist for 1 to 2 weeks or more (FDA Crofab label, section 5.1). For ANAVIP, prior to treatment perform complete blood count, platelet count, PT, PTT, serum fibrinogen level and routine serum chemistries, and repeat at regular intervals to gauge response and anticipate additional dosing; monitor patients in a healthcare setting for at least 18 hours following initial control, and for at least 60 minutes after completion of each infusion (FDA Anavip label, section 2). Emergency medical care (epinephrine, intravenous antihistamines and/or albuterol) should be readily available wherever antivenom is given (FDA Crofab label, section 5.2). For coral snake antivenom, determine whether the patient has hypersensitivity to horse serum in order to evaluate treatment decisions and be prepared to treat anaphylaxis (FDA North American Coral Snake Antivenin (Equine) label, section 2.2).",
+    "patient_counselling": "Class-level counselling derived from the individual product labels: explain that antivenom is a foreign (animal-derived) protein and that acute allergic reactions including anaphylaxis and delayed serum sickness can occur, so the patient must be observed after treatment and should report rash, fever, myalgia, arthralgia, pruritus or urticarial rash after discharge (FDA Crofab label, section 5.2; FDA Anavip label, sections 5.1 and 17). For ANAVIP, advise patients to contact their physician immediately if they experience unusual bruising or bleeding after hospital discharge, for example nosebleeds, excessive bleeding after brushing teeth, blood in stools or urine, excessive menstrual bleeding, petechiae, excessive bruising or persistent oozing from superficial injuries (FDA Anavip label, section 17). Explain that in the EchiTAbG product information the wound should be cleaned with antiseptic and covered with a non-occlusive dry sterile dressing, the bitten extremity placed in the most comfortable position, anti-tetanus agents are indicated, and that if the bite is on the face or neck, progressive oedema may compromise the airway, in which case early administration of antivenom and close attention to airway maintenance may be life saving (WHO EchiTAbG product profile, Supportive and adjunctive therapy). Advise that aspirin and other antiplatelet drugs should be avoided during recovery (WHO EchiTAbG product profile, Supportive and adjunctive therapy).",
+    "warnings": [
+      "Anaphylaxis and other hypersensitivity reactions are the principal risk of every antivenom, because these are heterologous animal proteins; emergency medical care such as epinephrine, intravenous antihistamines and/or albuterol must be readily available, and acute reactions require discontinuation of the infusion and emergency treatment (FDA Crofab label, section 5.2; FDA Anavip label, section 5.1; FDA North American Coral Snake Antivenin (Equine) label, section 5.1).",
+      "Serum sickness / delayed serum sickness may occur after equine or ovine antivenom; patients who receive a course of treatment with a foreign protein may become sensitised to it, so caution is needed when giving a repeat course for a subsequent envenomation episode (FDA Crofab label, section 5.2; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Antivenin (Latrodectus mactans) label, Warnings).",
+      "CROFAB: recurrent coagulopathy occurs in approximately half of patients and may persist for 1 to 2 weeks or more, so monitor for up to one week or longer and consider re-treatment; optimal dosing to completely prevent recurrent coagulopathy has not been determined (FDA Crofab label, section 5.1).",
+      "CROFAB: patients allergic to papain, chymopapain, other papaya extracts or bromelain may also have an allergic reaction to CROFAB (FDA Crofab label, section 5.2).",
+      "ANAVIP is made from equine plasma and may therefore carry a risk of transmitting infectious agents such as viruses, and contains trace amounts of cresol which can cause localised reactions and generalised myalgias (FDA Anavip label, sections 5.2 and 5.3).",
+      "North American Coral Snake Antivenin (Equine) must not be given prophylactically to asymptomatic patients (FDA North American Coral Snake Antivenin (Equine) label, section 4).",
+      "Antivenin (Latrodectus mactans) must not be given without reviewing the patient's history for prior exposure to horse serum or allergies, because serum sickness and even death could result in a sensitive patient; an anaphylactic reaction can occur even after a negative skin or conjunctival test, so epinephrine must be available (FDA Antivenin (Latrodectus mactans) label, Warnings).",
+      "Antivenin (Latrodectus mactans): anaphylactic reactions and death have been reported in patients with a medical history of asthma (FDA Antivenin (Latrodectus mactans) label, Precautions - Patients with Asthma).",
+      "EchiTAbG: anaphylactic reactions can occur and are related to the amount and rate of administration; appropriate treatment for anaphylaxis must be available before administration, and in high-risk patients pre-treatment with adrenaline, an antihistamine and a corticosteroid is recommended; the patient must be observed during and for at least one hour after administration (WHO EchiTAbG product profile, Precautions)."
+    ],
+    "precautions": [
+      "Antivenom is only effective while venom remains in circulation; administration should begin as soon as possible after the bite in patients with signs of envenomation. CROFAB was shown in clinical studies to be effective when given within 6 hours of snakebite, and initiating administration as soon as possible after a snake bite is recommended in patients who develop signs of envenomation such as local injury, coagulation abnormality or systemic signs (FDA Crofab label, section 2).",
+      "Skin testing: CROFAB states that skin testing has not been used in clinical trials and is not required, whereas North American Coral Snake Antivenin (Equine) recommends considering a proper skin test and modifying therapy if indicated, and Antivenin (Latrodectus mactans) requires a skin or conjunctival test before administration (FDA Crofab label, section 5.2; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Antivenin (Latrodectus mactans) label, Warnings).",
+      "Desensitisation to antivenom (Antivenin (Latrodectus mactans) label, Warnings): where the history is positive or the sensitivity tests are mildly or questionably positive, administer serial dilutions (0.1, 0.2 and 0.5 mL of a 1:100 dilution, then the 1:10 dilution, then undiluted antivenin) subcutaneously with at least 15 but preferably 30 minutes between injections, stopping if a reaction occurs; desensitisation should be attempted only when antivenin is necessary to save life and epinephrine must be available.",
+      "CROFAB reconstitution: reconstitute each vial with 18 mL of 0.9% sodium chloride, mixing by continuous manual inversion at one to two inversions per second until no solid material is visible, and do not shake because this causes foaming; then further dilute the entire dose to a total volume of 250 mL with 0.9% sodium chloride and use within 4 hours (FDA Crofab label, section 2.2).",
+      "ANAVIP reconstitution: reconstitute each vial with 10 mL of sterile normal saline, combine and further dilute to a total of 250 mL, and use reconstituted and diluted product within 6 hours, discarding partially or unused product (FDA Anavip label, section 2).",
+      "Antivenom (Latrodectus mactans) must be stored and shipped at 2 to 8 degrees C (36 to 46 degrees F) and must not be frozen; once reconstituted, the colour may range from light straw to very dark iced tea and the colour has no effect on potency (FDA Antivenin (Latrodectus mactans) label, Storage).",
+      "EchiTAbG must be stored at 2 to 8 degrees C, must not be frozen, and has a 12-month shelf life (WHO EchiTAbG product profile, Storage conditions and Product Description).",
+      "Supportive care remains essential alongside antivenom: airway management, intravenous fluids for hypovolaemia, transfusion for severe anaemia, tetanus prophylaxis and analgesia (WHO EchiTAbG product profile, Supportive and adjunctive therapy; FDA Antivenin (Latrodectus mactans) label, Indications and Usage).",
+      "Local treatment of the site of the bite is of no value, and nothing is gained by applying a tourniquet or by attempting to remove venom from the bite site by incision and suction (FDA Antivenin (Latrodectus mactans) label, Indications and Usage)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and anaphylactoid reactions to heterologous animal protein (FDA Crofab label, section 5.2; FDA Anavip label, section 5.1; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Antivenin (Latrodectus mactans) label, Adverse Reactions).",
+      "Serum sickness and other delayed hypersensitivity reactions (FDA Crofab label, section 5.2; FDA Antivenin (Latrodectus mactans) label, Adverse Reactions).",
+      "Recurrent coagulopathy after successful treatment of crotalid envenomation, with decreased fibrinogen, decreased platelets and elevated prothrombin time, persisting for 1 to 2 weeks or more (FDA Crofab label, section 5.1).",
+      "Anaphylaxis and death in patients with a medical history of asthma given Antivenin (Latrodectus mactans) (FDA Antivenin (Latrodectus mactans) label, Precautions).",
+      "Transmissible infectious agents, because equinederived antivenoms are made from equine plasma (FDA Anavip label, section 5.2)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA antivenom labelling, because these products are administered parenterally (FDA Crofab label, section 2; FDA Anavip label, section 2). The dietary caution that does apply is the avoidance of aspirin and other antiplatelet drugs during snakebite supportive care, since they worsen the venom-induced coagulopathy (WHO EchiTAbG product profile, Supportive and adjunctive therapy)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Class-level, product-specific: animal reproduction studies have not been conducted with CROFAB, and it is not known whether CROFAB can cause fetal harm when administered to a pregnant woman or affect reproduction capacity; CROFAB should be given to a pregnant woman only if clearly needed (FDA Crofab label, section 8.1). For North American Coral Snake Antivenin (Equine) there are no available human or animal data establishing developmental toxicity, and the product should be given to a pregnant woman only if clearly required (section 8.1). For Antivenin (Latrodectus mactans), animal reproduction studies have not been conducted and the product should be given to a pregnant woman only if clearly needed (Pregnancy section). In all cases the risk of envenoming must be weighed against the risk to the fetus, since the estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Crofab label, section 8.1).",
+    "lactation_guidance": "It is not known whether CROFAB is excreted in human breast milk, and because many drugs are excreted in human milk, caution should be exercised when CROFAB is administered to a nursing woman (FDA Crofab label, section 8.2). Lactation studies have not been conducted for North American Coral Snake Antivenin (Equine) and it should be administered to lactating women only if clearly indicated (section 8.2). For Antivenin (Latrodectus mactans) it is not known whether the drug is excreted in human milk and caution should be exercised in nursing women (Nursing Mothers section).",
+    "overdose": "No specific overdose information is stated in the FDA antivenom labels, because antivenom is dosed to a clinical response (cessation of progression of local and systemic signs and normalisation or trending toward normal of coagulation parameters) rather than to a fixed weight-based maximum. The label position is that antivenom dosage requirements are contingent upon an individual patient's response, that CROFAB initial control is defined by arrest of local signs, resolution of systemic symptoms and normalisation or trending toward normal of coagulation parameters, and that if initial control is not achieved by the first dose an additional 4 to 6 vial dose should be administered repeatedly until initial control is achieved (FDA Crofab label, section 2.1). For ANAVIP there is no known maximum dose; additional 10-vial doses are repeated every hour until initial control is achieved (FDA Anavip label, section 2).",
+    "pharmacokinetics": "CROFAB: elimination half-life for total Fab ranged from approximately 12 to 23 hours, based on a limited pharmacokinetic study in three patients; these limited estimates were augmented by data from an analogous ovine Fab product produced by BTG International Inc. using a similar production process, in which total Fab had a volume of distribution of 0.3 L/kg, a systemic clearance of 32 mL/min (approximately 0.4 mL/min/kg) and an elimination half-life of approximately 15 hours (FDA Crofab label, section 12.3). North American Coral Snake Antivenin (Equine) is standardised for potency in mice in terms of LD50 neutralising capacity per mL; the reconstituted contents of each vial (10 mL) will neutralise approximately 250 mouse LD50 or approximately 2 mg of Micrurus fulvius fulvius venom (FDA North American Coral Snake Antivenin (Equine) label, section 12.2). Cross-neutralisation testing shows it will neutralise the venom of M. fulvius tenere (Texas coral snake) but not that of Micruroides euryxanthus (Arizona or Sonoran coral snake) (section 12.2). EchiTAbG: each 10 mL ampoule contains a minimum of 230 mg of immunoglobulins and a minimum of 35 mg specific antibody, formulated in citrate-buffered saline; shelf life 12 months at 2 to 8 degrees C (WHO EchiTAbG product profile, Presentation and Potency).",
+    "clinical_pearls": [
+      "This entry is CLASS-LEVEL: antivenom is not a single drug. The product determines the indication, the dose in vials, the species coverage and the hypersensitivity risk, and products are not interchangeable (FDA Crofab label, sections 1 and 2.1; FDA Anavip label, section 1; WHO EML 23rd List, 2023).",
+      "Antivenom neutralises venom that is still in circulation; it does not reverse damage already done to tissues, so it is given as soon as possible after the bite in patients with signs of envenomation (FDA Crofab label, sections 2 and 2.1; WHO EchiTAbG product profile).",
+      "The two US crotalid antivenoms use different schedules: CROFAB starts at 4 to 6 vials with repeat 4 to 6 vial doses until initial control and then 2-vial doses every 6 hours for 18 hours, whereas ANAVIP starts at 10 vials, repeats 10-vial doses hourly until initial control, then 4-vial doses with monitoring for at least 18 hours (FDA Crofab label, section 2.1; FDA Anavip label, section 2).",
+      "Always have epinephrine and resuscitation capability available wherever antivenom is given, and always observe the patient after the infusion; reactions are related to the rate and amount infused (FDA Crofab label, section 5.2; WHO EchiTAbG product profile, Precautions).",
+      "Recurrent coagulopathy after crotalid envenomation is common (about half of patients) and can persist for one to two weeks or more, so discharge planning must include coagulation follow-up (FDA Crofab label, section 5.1).",
+      "Antivenom is on the WHO Model List of Essential Medicines as 'antivenom immunoglobulin', injection, with the explicit instruction that the exact type is to be defined locally, because coverage must match the local snake species and the local product portfolio (WHO EML 23rd List, 2023, section 19.2).",
+      "Kenya context: the KEML 2023 lists 'Anti Snake venom immunoglobulin' as a polyvalent African serum for intravenous infusion, 10 mL vial, level of use 4, covering a 16 species mixture across Bitis, Naja, Echis, Dendroaspis, Pseudohaje, Dispholidus, Thelotornis and Hydrophis; the 2019 monovalent Boomslang (Dispholidus typus) serum formulation was deleted at the 2023 review, with only the polyvalent formulation retained (KEML 2023, section 21.2.1, footnote 415, and Appendix 2).",
+      "For African settings the WHO-recommended EchiTAbG is a monospecific ovine IgG product for Echis ocellatus, and it explicitly makes no claim for other snake species, including other Echis species - so a monospecific antivenom must not be assumed to cover an unidentified snake (WHO EchiTAbG product profile, Indication).",
+      "Specific snake coverage differs by product and is not interchangeable: CROFAB covers North American crotalid venoms only; North American Coral Snake Antivenin (Equine) does not neutralise the venom of the Arizona or Sonoran coral snake (Micruroides euryxanthus); and Antivenin (Latrodectus mactans) is a spider antivenom with no role in snakebite (FDA Crofab label, section 3; FDA North American Coral Snake Antivenin (Equine) label, section 12.2; FDA Antivenin (Latrodectus mactans) label, Description)."
+    ],
+    "brand_names": [
+      "CroFab (ovine Crotalidae Polyvalent Immune Fab), BTG International",
+      "Anavip (crotalidae immune F(ab')2 (equine)), Rare Disease Therapeutics / Laboratorios Silanes",
+      "North American Coral Snake Antivenin (Equine), Pfizer / Wyeth",
+      "Antivenin (Latrodectus mactans), equine origin (black widow spider antivenin), Merck Sharp & Dohme",
+      "EchiTAbG (Echis ocellatus antivenom, ovine IgG for injection), MicroPharm Ltd - WHO-recommended for sub-Saharan Africa"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "All antivenoms in this class are administered intravenously (intramuscular administration is described only for the black widow spider antivenin in severe circumstances and in patients under 12 years or in shock). CROFAB: reconstitute each vial with 18 mL of 0.9% sodium chloride by continuous manual inversion at one to two inversions per second, do not shake, then dilute the whole dose to 250 mL with 0.9% sodium chloride; infuse over 60 minutes, proceeding slowly over the first 10 minutes at 25 to 50 mL/hour with careful observation for allergic reaction, and increasing to the full 250 mL/hour only if no reaction occurs; use the reconstituted and diluted product within 4 hours (FDA Crofab label, section 2.2). ANAVIP: reconstitute each vial with 10 mL of sterile 0.9% sodium chloride, combine and further dilute to 250 mL, and infuse over 60 minutes, starting at 25 to 50 mL/hour for the first 10 minutes with monitoring for anaphylaxis, then increasing as tolerated; use within 6 hours and discard partially or unused product (FDA Anavip label, section 2). North American Coral Snake Antivenin (Equine): reconstitute with 10 mL of Sterile Water for Injection by swirling, not shaking, at 5-minute intervals until completely dissolved, which usually takes at least 30 minutes; establish an intravenous infusion of 250 to 500 mL of sodium chloride injection; administer 3 to 5 vials (30 to 50 mL) by slow injection into the intravenous tubing or reservoir bottle, giving the first 1 or 2 mL over 3 to 5 minutes while watching for anaphylaxis, then continuing at the maximum safe rate (250 or 500 mL within 30 minutes in a previously healthy adult; for small children allow the first 100 mL to run in rapidly then do not exceed 4 mL per minute) (FDA North American Coral Snake Antivenin (Equine) label, section 2.2). Antivenin (Latrodectus mactans): inject 2.5 mL of Sterile Water for Injection into the single-dose vial and shake to dissolve; give the entire 2.5 mL intramuscularly in the anterolateral thigh or intravenously in 10 to 50 mL of saline over 15 minutes, and discard the unused portion (FDA Antivenin (Latrodectus mactans) label, Dosage and Administration). EchiTAbG: administer one 10 mL ampoule by slow intravenous injection over not less than 10 minutes (WHO EchiTAbG product profile, Dosage and administration)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Crofab (ovine Crotalidae venoms immune Fab), BTG International, section 12.1; FDA North American Coral Snake Antivenin (Equine) label, section 12.1; WHO EchiTAbG product profile, Indication",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Crofab label, section 1; FDA Anavip label, section 1; FDA North American Coral Snake Antivenin (Equine) label, section 1; FDA Antivenin (Latrodectus mactans) label, Indications and Usage; WHO EchiTAbG product profile, Indication; WHO Model List of Essential Medicines 23rd List (2023), section 19.2; Kenya Essential Medicines List 2023, section 21.2.1 and footnote 415",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Crofab label, section 4; FDA Anavip label, section 4; FDA North American Coral Snake Antivenin (Equine) label, section 4; FDA Antivenin (Latrodectus mactans) label, Warnings; WHO EchiTAbG product profile, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Crofab label, sections 5.1, 5.2, 6 and 6.1; FDA Anavip label, sections 6 and 6.1 (Table 2); FDA North American Coral Snake Antivenin (Equine) label, section 6; FDA Antivenin (Latrodectus mactans) label, Adverse Reactions; WHO EchiTAbG product profile, Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Crofab label, sections 2 and 2.1; FDA Anavip label, section 2; FDA North American Coral Snake Antivenin (Equine) label, sections 2 and 2.1; FDA Antivenin (Latrodectus mactans) label, Dosage and Administration; WHO EchiTAbG product profile, Dosage and administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Crofab label, sections 5.1 and 5.2; FDA Anavip label, section 5.1; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Antivenin (Latrodectus mactans) label, Indications and Usage; WHO EchiTAbG product profile, Supportive and adjunctive therapy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Crofab label, sections 2.1 and 5.1 to 5.2; FDA Anavip label, sections 2, 5.1 and 17; FDA North American Coral Snake Antivenin (Equine) label, sections 2.2 and 5.1; FDA Antivenin (Latrodectus mactans) label, Warnings; WHO EchiTAbG product profile, Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Crofab label, section 5.2; FDA Anavip label, sections 5.1 and 17; WHO EchiTAbG product profile, Supportive and adjunctive therapy and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Crofab label, sections 4, 5.1, 5.2 and 6.1; FDA Anavip label, sections 4, 5.1, 5.2 and 5.3; FDA North American Coral Snake Antivenin (Equine) label, sections 4, 5.1 and 6; FDA Antivenin (Latrodectus mactans) label, Warnings, Adverse Reactions and Precautions; WHO EchiTAbG product profile, Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Crofab label, sections 2, 2.1, 2.2 and 5.2; FDA Anavip label, section 2; FDA North American Coral Snake Antivenin (Equine) label, sections 2, 4 and 5.1; FDA Antivenin (Latrodectus mactans) label, Warnings, Indications and Usage and Storage; WHO EchiTAbG product profile, Dosage and administration, Storage conditions and Supportive and adjunctive therapy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Crofab label, sections 5.1 and 5.2; FDA Anavip label, section 5.1; FDA North American Coral Snake Antivenin (Equine) label, section 5.1; FDA Antivenin (Latrodectus mactans) label, Adverse Reactions and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Crofab label, section 2; FDA Anavip label, section 2 (no food interaction described); WHO EchiTAbG product profile, Supportive and adjunctive therapy (avoid aspirin and other antiplatelet drugs)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Crofab label, section 8.1; FDA North American Coral Snake Antivenin (Equine) label, section 8.1; FDA Antivenin (Latrodectus mactans) label, Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Crofab label, section 8.2; FDA North American Coral Snake Antivenin (Equine) label, section 8.2; FDA Antivenin (Latrodectus mactans) label, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Crofab label, section 2.1; FDA Anavip label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Crofab label, section 12.3; FDA North American Coral Snake Antivenin (Equine) label, section 12.2; WHO EchiTAbG product profile, Presentation, Potency and Product Description",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Crofab label, sections 1, 2, 2.1, 3, 5.1 and 5.2; FDA Anavip label, sections 1 and 2; FDA North American Coral Snake Antivenin (Equine) label, section 12.2; FDA Antivenin (Latrodectus mactans) label, Description; WHO EchiTAbG product profile, Indication and Precautions; WHO Model List of Essential Medicines 23rd List (2023), section 19.2; Kenya Essential Medicines List 2023, section 21.2.1, footnote 415 and Appendix 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Crofab, Anavip, North American Coral Snake Antivenin (Equine) and Antivenin (Latrodectus mactans) listed on DailyMed; EchiTAbG in the WHO product profile for snake antivenom for sub-Saharan Africa (WHO recommendation effective 20/06/2019)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Crofab, Anavip, North American Coral Snake Antivenin (Equine) or Antivenin (Latrodectus mactans) labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Crofab label, section 2.2; FDA Anavip label, section 2; FDA North American Coral Snake Antivenin (Equine) label, section 2.2; FDA Antivenin (Latrodectus mactans) label, Dosage and Administration and Storage; WHO EchiTAbG product profile, Dosage and administration and Storage conditions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Anavip (crotalidae immune F(ab')2 (equine)), Rare Disease Therapeutics, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a16596a5-e87e-40c2-8e34-cea5839849c3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, North American Coral Snake Antivenin (Equine), Pfizer/Wyeth, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d0f94b4-82ca-37c7-edb0-4f0702cf6c8d"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Antivenin (Latrodectus mactans) kit, Merck Sharp & Dohme, Description, Indications and Usage and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=600e54ad-af13-462f-8a2d-2c3f7d91a8cd"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines 23rd List (2023), section 19.2 'Sera, immunoglobulins and monoclonal antibodies': antivenom immunoglobulin, Injection, footnote 'Exact type to be defined locally'",
+      "url": "https://iris.who.int/server/api/core/bitstreams/289a875c-cc89-4914-90ad-eb3c578ebaf6/content"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023, section 21.2.1 'Sera and Immunoglobulins' (Anti Snake venom immunoglobulin, Injection for IV infusion, Polyvalent serum (African), 10 mL vial, level of use 4) and footnote 415 (16 species mixture covering Bitis, Naja, Echis, Dendroaspis, Pseudohaje, Dispholidus, Thelotornis, Hydrophis); Appendix 2 (monovalent Boomslang/Dispholidus typus formulation deleted, polyvalent retained)",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO product profile, Snake Antivenom for Sub-Saharan Africa - EchiTAbG, MicroPharm Ltd (WHO recommendation effective 20/06/2019): Product Description, Presentation, Potency, Indication, Dosage and administration, Contraindications, Precautions, Supportive and adjunctive therapy, Storage conditions",
+      "url": "https://cdn.who.int/media/docs/default-source/medicines/echitabg-micropharm-1dose-2019-082.pdf?sfvrsn=655f0e5b_2"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric information is provided in fields.dosage.paediatric)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in any of the FDA antivenom labels or the WHO EchiTAbG product profile)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in any of the FDA antivenom labels or the WHO EchiTAbG product profile)",
+    "pregnancy_category (none of the FDA antivenom labels states a letter pregnancy category)"
+  ],
+  "notes": "CLASS-LEVEL ENTRY. 'Antivenom' in the table is a product class, not a single molecule, so every field in this monograph is written at class level with the product-specific detail attributed to the individual label it came from. Products covered: CROFAB (ovine Crotalidae Polyvalent Immune Fab, US, FDA/DailyMed), ANAVIP (crotalidae immune F(ab')2 (equine), US, FDA/DailyMed), North American Coral Snake Antivenin (Equine) (US, FDA/DailyMed), Antivenin (Latrodectus mactans) (equine black widow spider antivenin, US, FDA/DailyMed) and EchiTAbG (ovine IgG for Echis ocellatus, WHO-recommended for sub-Saharan Africa, WHO product profile). Class sources: WHO Model List of Essential Medicines 23rd List (2023) section 19.2 ('antivenom immunoglobulin', Injection, exact type to be defined locally) and Kenya Essential Medicines List 2023 section 21.2.1 ('Anti Snake venom immunoglobulin', Injection for IV infusion, Polyvalent serum (African), 10 mL vial, level of use 4; footnote 415 gives the 16 species mixture; the 2019 monovalent Boomslang serum was deleted in 2023). Because the products are not interchangeable, the dose in vials, the species covered, the reconstitution and infusion rates, the need for skin testing and the hypersensitivity risk all differ by product, and these are stated per product rather than merged. NOT COVERED: the UK/EU-licensed polyvalent snake antivenom AnWyM was named as a target product for this entry, but no retrievable authoritative source for its SmPC could be obtained in this pass (it is not listed in the eMC/MHRA product index searched, and no EMA EPAR exists for it), so it is deliberately omitted rather than described from memory; it should be added once its SmPC or MHRA Public Assessment Report is obtained. Similarly, other national products (SAIMR polyvalent, Inoserp PAN-AFRICA, FAV-Afrique, Echiven, snake venom antiserum Pan-Africa) were not included because no authoritative label was retrieved. The prior row carried olanzapine/schizophrenia content, which was removed on 2026-10-05 and is not applicable to this class. No FDA letter pregnancy category is stated for any product in the class, so pregnancy_category is null. There is no boxed warning for any antivenom product reviewed."
+}

@@ -1,0 +1,232 @@
+{
+  "name": "Amodiaquine",
+  "existing_id": "93bf9120-98e4-4bd1-a717-c9b08dcafb25",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amodiaquine is a synthetic 4-aminoquinoline antimalarial with schizonticidal action against Plasmodium falciparum, P. vivax, P. ovale and P. malaria, destroying intraerythrocytic forms. It penetrates infected red blood cells and prevents the parasite from polymerising haeme into the insoluble product haemozoin, leading to parasite death; the mechanism of action of 4-aminoquinoline derivatives against plasmodium has not been established (WHO-PQ recommended Summary of Product Characteristics, amodiaquine (hydrochloride)/artesunate 67.5 mg/25 mg tablets, MA132 Part 4, section 5.1 Pharmacodynamic properties). Amodiaquine is a Mannich base 4-aminoquinoline similar in structure and mechanism of action to chloroquine; it is converted to its active metabolite desethylamodiaquine and is thought to act by accumulating inside the parasite food vacuole and interfering with haem detoxification, and it also inhibits the glutathione-dependent destruction of ferriprotoporphyrin IX, resulting in accumulation of a peptide that is toxic to the parasite (Basoquin (amodiaquine) Summary of Product Characteristics, Pfizer, sections 5.1 Pharmacodynamic properties).",
+    "indications": [
+      "Fixed-dose artesunate + amodiaquine tablets (25 mg + 67.5 mg, 50 mg + 135 mg, 100 mg + 270 mg) for the treatment of uncomplicated P. falciparum malaria, listed in the WHO Model List of Essential Medicines, 24th list (2025), section 6.5.3.1 'Medicines for treating malaria'",
+      "WHO-PQ recommended SmPC for amodiaquine (hydrochloride)/artesunate 67.5 mg/25 mg tablets: indicated for the treatment of uncomplicated malaria due to Plasmodium falciparum susceptible to amodiaquine and to artesunate; it may also be considered as part of mass drug administration programmes to reduce the transmissibility or disease burden of P. falciparum (MA132 Part 4, section 4.1 Therapeutic indications)",
+      "Co-packaged dispersible tablets of amodiaquine with sulfadoxine + pyrimethamine for seasonal malaria chemoprevention (amodiaquine 75 mg or 76.5 mg as hydrochloride with sulfadoxine + pyrimethamine 250 mg + 12.5 mg; or amodiaquine 150 mg or 153 mg as hydrochloride with sulfadoxine + pyrimethamine 500 mg + 25 mg), listed in the WHO Model List of Essential Medicines, 24th list (2025), section 6.5.3.2 'Medicines for chemoprevention'",
+      "Amodiaquine monotherapy indication per the Basoquin (amodiaquine) SmPC: in combination with artesunate for the treatment of uncomplicated P. falciparum or P. vivax malaria, considered effective against P. ovale, P. knowlesi and P. malariae (Basoquin SmPC, section 4.1 Therapeutic indications)",
+      "WHO-approved first-line ACT options include artesunate + amodiaquine for uncomplicated P. falciparum malaria (WHO Guidelines for malaria, 13 August 2025)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substances (amodiaquine or artesunate) or to any of the excipients (WHO-PQ SmPC MA132 Part 4, section 4.3)",
+      "History of liver injury during treatment with amodiaquine (WHO-PQ SmPC MA132 Part 4, section 4.3)",
+      "Previous haematological event during treatment with amodiaquine (WHO-PQ SmPC MA132 Part 4, section 4.3)",
+      "Retinopathy (in case of frequent treatment) (WHO-PQ SmPC MA132 Part 4, section 4.3)",
+      "Contraindicated in patients with liver disease, neutropenia and retinopathy (Basoquin SmPC, section 4.3)",
+      "Hypersensitivity to 4-aminoquinoline derivatives (Basoquin SmPC, section 4.3)"
+    ],
+    "side_effects": [
+      "Most frequent adverse reactions in clinical studies of amodiaquine/artesunate were similar to symptoms of a malaria attack: anorexia, abdominal pain, nausea, asthenia, somnolence, insomnia and cough; the most serious observed were asthenia, anaemia and vertigo (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Blood and lymphatic: anaemia (uncommon); leucopenia, neutropenia and sometimes life-threatening agranulocytosis (unknown frequency); agranulocytosis and neutropenia reported particularly in HIV-infected patients receiving zidovudine or sulfamethoxazole/trimethoprim, and with amodiaquine alone especially at higher doses or during prolonged treatment (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Hepatobiliary: severe hepatitis (sometimes fatal) and jaundice (unknown frequency), with splenomegaly (post-marketing data) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Cardiac: prolonged QT interval (common; frequency based on studies in 289 patients with ECG recording); arrhythmia and bradycardia (uncommon) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Nervous system: somnolence (common); paraesthesia (uncommon); neuromyopathy (rare); extrapyramidal disorders such as dystonia, dyskinesia, tongue protrusion and torticollis (unknown frequency); headache, dizziness and convulsions (post-marketing data) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Eye: ocular icterus (uncommon); irreversible retinopathy (very rare); transient accommodation disorders and corneal opacity, which reduces on stopping treatment (unknown frequency) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Gastrointestinal: nausea and abdominal pain (common); diarrhoea and vomiting (uncommon) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Skin: pruritus, rash, face oedema and skin disorders (uncommon); slate-grey pigmentation, notably affecting fingers and mucous membranes (unknown frequency) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "After oral administration of a single dose of amodiaquine: abdominal discomfort, nausea, vomiting, headache, dizziness, blurring of vision, mental and physical weakness and fatigue, usually mild and transient; more severe reactions include itching, cardiovascular abnormalities, dyskinesia, ocular damage, neuromuscular disorders and hearing loss (Basoquin SmPC, section 4.8)",
+      "Amodiaquine has been linked to serum aminotransferase elevations in about 1% of patients, with the pattern of enzyme elevation most frequently hepatocellular and symptoms resembling acute viral hepatitis; the frequency of serious hepatic injury is estimated at approximately 1:15,000 (Basoquin SmPC, section 4.8, Hepatotoxicity)"
+    ],
+    "dosage": {
+      "adult": "As part of artesunate + amodiaquine, WHO recommends a target dose of 4 (2-10) mg/kg body weight per day artesunate and 10 (7.5-15) mg/kg body weight per day amodiaquine, once a day for 3 days, with a total therapeutic dose range of 6-30 mg/kg per day artesunate and 22.5-45 mg/kg per dose amodiaquine; weight-band dosing once daily for 3 days is 25 + 67.5 mg for <9 kg, 50 + 135 mg for 9 to <18 kg, 100 + 270 mg for 18 to <36 kg and 200 + 540 mg for >=36 kg (artesunate + amodiaquine doses in mg) (WHO Guidelines for malaria, 13 August 2025, 'Artesunate + amodiaquine'). Equivalent WHO-PQ SmPC dosing: amodiaquine 10 mg/kg daily for 3 days with artesunate 4 mg/kg daily for 3 days, with 1 tablet of 67.5 mg amodiaquine + 25 mg artesunate daily for 3 days in children <9 kg, 2 tablets (135 mg + 50 mg) for 9-18 kg, and higher-strength formulations for 18-36 kg (270 mg + 100 mg) and >36 kg (540 mg + 200 mg) (MA132 Part 4, section 4.2). For amodiaquine monotherapy per the Basoquin SmPC: in a partially immune subject, four tablets (600 mg) as a single dose; in a non-immune subject, four tablets (600 mg) as a single dose on each of three successive days (Basoquin SmPC, section 4.2).",
+      "geriatric": "No dose adjustment by age is indicated: no effect of age has been observed on the plasma concentrations of amodiaquine and desethylamodiaquine (WHO Guidelines for malaria, 13 August 2025, 'Artesunate + amodiaquine')",
+      "paediatric": "Paediatric doses are weight-based, using the same 10 mg/kg/day amodiaquine for 3 days regimen: <9 kg (up to 11 months) 1 tablet of 67.5 mg amodiaquine + 25 mg artesunate daily for 3 days; 9-18 kg (1-5 years) 2 tablets (135 mg + 50 mg) daily for 3 days; 18-36 kg (6-13 years) a formulation containing 270 mg amodiaquine + 100 mg artesunate daily for 3 days; >36 kg (over 14 years) 540 mg amodiaquine + 200 mg artesunate daily for 3 days (MA132 Part 4, section 4.2 Posology). Treatment failure after amodiaquine monotherapy is more frequent among children who are underweight for their age, so their response should be closely monitored (WHO Guidelines for malaria, 13 August 2025)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Efavirenz: concomitant administration with artesunate + amodiaquine should be avoided because the combination can cause marked hepatotoxicity (WHO-PQ SmPC MA132 Part 4, section 4.5; Basoquin SmPC, section 4.5, demonstrated interaction of increased plasma concentration and elevated liver enzymes)",
+      "Nevirapine: co-administration may modestly decrease amodiaquine exposure and thus potentially reduce effectiveness against malaria, and may increase the risk of hepatotoxicity (WHO-PQ SmPC MA132 Part 4, section 4.5; Basoquin SmPC, section 4.5)",
+      "Zidovudine and trimethoprim/sulfamethoxazole (cotrimoxazole): increased risk of neutropenia; artesunate + amodiaquine is associated with severe neutropenia particularly in HIV-infected patients, especially those on zidovudine and/or cotrimoxazole (WHO-PQ SmPC MA132 Part 4, section 4.5 and section 4.8; WHO Guidelines for malaria, 13 August 2025)",
+      "In people with HIV/AIDS and uncomplicated P. falciparum malaria, artesunate + amodiaquine is not recommended if they are being treated with efavirenz or zidovudine (WHO Guidelines for malaria, 13 August 2025, 'Patients co-infected with HIV (2015)')",
+      "CYP2A6 inhibitors (e.g. methoxsalen, pilocarpine, tranylcypromine) and CYP2C8 inhibitors (e.g. gemfibrozil, ketoconazole, lopinavir, montelukast, high-dose ritonavir, saquinavir, trimethoprim): concomitant administration is not recommended (WHO-PQ SmPC MA132 Part 4, section 4.5)",
+      "Ritonavir dosed as a pharmacokinetic booster is a weak inducer of CYP2C8 and could potentially decrease amodiaquine exposure to a moderate extent; no dosage adjustment is recommended (WHO-PQ SmPC MA132 Part 4, section 4.5)",
+      "Amodiaquine and desethylamodiaquine inhibit CYP2D6 in vitro and may cause clinically significant interactions with some beta-blockers, antidepressants and antipsychotics; caution is advised (WHO-PQ SmPC MA132 Part 4, section 4.5). Amodiaquine may inhibit CYP2D6 and CYP2C9 (Basoquin SmPC, section 4.5, potential interactions)",
+      "Other drugs that cause liver or haematological toxicity, including medicines for HIV and tuberculosis: caution is advised because agranulocytosis and hepatitis have occurred after long-term use of amodiaquine for prophylaxis (WHO-PQ SmPC MA132 Part 4, section 4.5)",
+      "Antiarrhythmic agents: potential for increased risk of cardiac events; antiarrhythmics and other substances that prolong the QT interval require caution (Basoquin SmPC, section 4.5; WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Mefloquine: potential for visual loss or disturbances (Basoquin SmPC, section 4.5)",
+      "Magnesium trisilicate and kaolin are known to decrease gastrointestinal absorption of chloroquine when administered simultaneously and it is likely the same applies to amodiaquine (Basoquin SmPC, section 4.5)",
+      "Concomitant administration with other antimalarial treatments is not recommended as data on efficacy and safety are not available (WHO-PQ SmPC MA132 Part 4, section 4.5)"
+    ],
+    "monitoring": "Measure blood cell counts immediately if symptoms suggestive of agranulocytosis develop (such as fever with tonsillitis or mouth ulcers), and obtain prompt liver function blood tests if symptoms suggestive of hepatitis develop or worsen, especially if accompanied by jaundice; immediate discontinuation of treatment may be required in both cases because continuation of amodiaquine increases the risk of death, and amodiaquine must not be used in future if it is suspected to have caused hepatitis or blood disorders (WHO-PQ SmPC MA132 Part 4, section 4.4). Serum ALT levels should be measured in every patient taking amodiaquine who has asthenia and vomiting (Basoquin SmPC, section 4.4). Treatment failure after amodiaquine monotherapy is more frequent among children who are underweight for their age, so their response to artesunate + amodiaquine treatment should be closely monitored (WHO Guidelines for malaria, 13 August 2025). No pharmacokinetic data are available for patients with impaired renal or hepatic function (MA132 Part 4, sections 4.2 and 5.2), and caution should be exercised in such patients (section 4.4).",
+    "patient_counselling": "Take the tablets orally with water; they should not be taken with a meal containing a high amount of fat (WHO-PQ SmPC MA132 Part 4, section 4.2). Tablets can be crushed and mixed with water for persons unable to swallow them, e.g. very young children (section 4.2). If a dose is missed, take it as soon as possible; if it is almost time for the next dose, do not take the missed dose and take the next dose at the usual time; if the patient vomits within half an hour after dosing, another dose should be taken, and in case of further vomiting, treatment for severe malaria should be considered (section 4.2). Report immediately fever with tonsillitis or mouth ulcers, which may indicate agranulocytosis, and symptoms of hepatitis, especially if accompanied by jaundice, which require prompt blood tests and may require immediate discontinuation (section 4.4). Warn patients that somnolence, dizziness or asthenia may occur, in which case they should not drive or use machines (section 4.7). Counsel that the combination is for treatment of malaria and is not for prophylaxis (section 4.4). Each tablet contains about 71 mg of mannitol, which may have a mild laxative effect (section 4.4, Excipients).",
+    "warnings": [
+      "Agranulocytosis and severe (sometimes fatal) hepatitis: the combination of artesunate and amodiaquine may induce neutropenia and increase the risk of infection; measure blood cell counts and liver function promptly if suggestive symptoms occur and discontinue immediately, since continuation of amodiaquine increases the risk of death; amodiaquine must not be used in future if it is suspected to have caused hepatitis or blood disorders (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Not for prophylaxis: extended or widespread use of amodiaquine for prophylaxis results in an unacceptably high risk of agranulocytosis and liver toxicity (WHO-PQ SmPC MA132 Part 4, section 4.4; Basoquin SmPC, section 4.8)",
+      "Avoid long-term use of this medication, otherwise vision loss may occur (Basoquin SmPC, section 4.4)",
+      "QT prolongation: cardiovascular effects have been reported with 4-aminoquinoline derivatives; amodiaquine should be used with caution in patients with cardiac disease, a history of ventricular dysrhythmias, uncorrected hypokalaemia or hypomagnesaemia, bradycardia (<50 beats per minute), or concomitant or recent use of substances that prolong the QT interval (WHO-PQ SmPC MA132 Part 4, section 4.4). Prolonged QT interval is a common adverse reaction (section 4.8)",
+      "Acute extrapyramidal side effects may occur even after a single dose; these reactions usually resolve after discontinuing treatment and treating the neurological condition, and alternative antimalarial therapy should be instituted (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Do not use in regions where amodiaquine resistance is widespread, as treatment will effectively be with artesunate alone, which significantly increases the risk of artesunate resistance developing (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Not evaluated for complicated (severe) malaria and therefore not recommended for it (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Hepatotoxicity: severe acute hepatitis can be fatal, which is why amodiaquine is recommended for treatment and not prophylaxis; high total doses or prolonged duration of treatment favour agranulocytosis and liver damage, and onset is usually within 1 to 4 months (Basoquin SmPC, section 4.8)",
+      "Acute extrapyramidal reactions have been reported with artesunate and amodiaquine and may require alternative antimalarial therapy (WHO-PQ SmPC MA132 Part 4, sections 4.4 and 4.8)"
+    ],
+    "precautions": [
+      "Not studied in patients with thalassaemia, sickle cell disease or glucose-6-phosphate dehydrogenase (G6PD) deficiency (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "In the absence of specific clinical studies, caution should be exercised in patients with renal or hepatic impairment (WHO-PQ SmPC MA132 Part 4, section 4.4); caution is also advised in G6PD deficiency, nerve disease, any allergy, kidney or liver impairment, during pregnancy and breastfeeding (Basoquin SmPC, section 4.4)",
+      "As amodiaquine may concentrate in the liver, use with caution in patients with hepatic disease, alcoholism and in patients receiving hepatotoxic drugs (Basoquin SmPC, sections 4.3 and 4.4)",
+      "Excipient consideration: each tablet contains about 71 mg of mannitol, which may have a mild laxative effect, and the contribution of excipients from all medicines the patient is taking must be considered (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Amodiaquine remains effective in combination with artesunate in parts of Africa and the Americas, although elsewhere resistance limits its use (WHO Guidelines for malaria, 13 August 2025)",
+      "Store below 30 degrees C, in blisters in the provided carton (WHO-PQ SmPC MA132 Part 4, section 6.4); shelf life 24 months (section 6.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe hepatitis, sometimes fatal, with jaundice; hepatobiliary disorders of unknown frequency (WHO-PQ SmPC MA132 Part 4, sections 4.4 and 4.8)",
+      "Leucopenia, neutropenia and sometimes life-threatening agranulocytosis, particularly in HIV-infected patients receiving zidovudine or sulfamethoxazole/trimethoprim (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Prolonged QT interval (common) with arrhythmia and bradycardia (uncommon) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Extrapyramidal disorders (dystonia, dyskinesia, tongue protrusion, torticollis) of unknown frequency; convulsions (post-marketing data) (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Irreversible retinopathy (very rare) and corneal opacity that reduces on stopping treatment (WHO-PQ SmPC MA132 Part 4, section 4.8)",
+      "Overdose: cardiovascular collapse and convulsions followed by respiratory and cardiac arrest, with ECG changes of atrial standstill, nodal rhythm, prolonged intraventricular conduction time and progressive bradycardia leading to ventricular fibrillation and/or arrest (Basoquin SmPC, section 4.9)"
+    ],
+    "food_interactions": [
+      "The tablets should not be taken with a meal that contains a high amount of fat (WHO-PQ SmPC MA132 Part 4, section 4.2 Method of administration)",
+      "When artesunate/amodiaquine was taken with a high-fat meal in healthy volunteers, amodiaquine Cmax increased 23% and AUC(0-t) increased 58% compared with fasting, and desethylamodiaquine Cmax increased 18% and AUC(0-t) increased 12%; artesunate Cmax and AUC(0-t) decreased 66% and 13% respectively (WHO-PQ SmPC MA132 Part 4, section 5.2 Pharmacokinetic properties)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The fixed-dose artesunate + amodiaquine combination may be considered for use during the first trimester of pregnancy when the first-line option (artemether-lumefantrine) is not suitable or available, and can be used during the second and third trimester; the safety of amodiaquine in pregnant women has not been formally established, but many years of experience with it do not indicate a risk of teratogenicity (WHO-PQ SmPC MA132 Part 4, section 4.6). Data on a limited number of exposed pregnant women do not indicate any adverse effect of artemisinin on pregnancy or on the health of the baby, and animal data indicate a limited embryotoxic effect at daily doses of 6 mg/kg or more (section 4.6). No significant changes in the pharmacokinetics of amodiaquine or its metabolite desethylamodiaquine have been observed during the second and third trimesters of pregnancy, therefore no dosage adjustments are recommended (section 4.6; WHO Guidelines for malaria, 13 August 2025). For amodiaquine monotherapy: available data suggest that at standard dosages amodiaquine is not teratogenic, and adverse events associated with taking amodiaquine in pregnancy are not greater than those associated with falciparum malaria in pregnancy (Basoquin SmPC, section 4.6). Amodiaquine use for the treatment of malaria in pregnancy has been formally documented in only more than 1300 pregnancies, and use in the second and third trimesters in Ghana was associated with frequent minor side effects but not with liver toxicity, bone marrow depression or adverse neonatal outcomes (WHO Guidelines for malaria, 13 August 2025). No FDA pregnancy category applies to amodiaquine because it is not FDA-approved in the United States.",
+    "lactation_guidance": "The amounts of antimalarials in breast milk are small and, in line with WHO guidelines, artesunate + amodiaquine can be used for malaria treatment in breast-feeding women (WHO-PQ SmPC MA132 Part 4, section 4.6 Breast-feeding). Caution should be exercised when amodiaquine is administered during breastfeeding (Basoquin SmPC, section 4.4).",
+    "overdose": "In case of suspected overdose the patient should be urgently transferred to a specialist unit with facilities for clinical monitoring and where symptomatic and supportive therapy can be given. The dose at which amodiaquine can cause serious toxicity is not known; by comparison with chloroquine it can be estimated at around 2 g as a single dose in adults. Symptoms and signs are headache, dizziness, visual disorders, QT interval prolongation, cardiovascular collapse and convulsions, followed by respiratory and cardiac arrest; extrapyramidal disorders have been reported. Artesunate overdose should be treated symptomatically (WHO-PQ SmPC MA132 Part 4, section 4.9). For amodiaquine alone: symptoms of overdose of 4-aminoquinoline derivatives include headache, drowsiness, visual disturbances, nausea, vomiting, cardiovascular collapse and seizures followed by sudden and early respiratory and cardiac arrest; untreated hypotension may progress rapidly to shock, and ECGs may reveal atrial standstill, nodal rhythm, prolonged intraventricular conduction time and progressive bradycardia leading to ventricular fibrillation and/or arrest. The fatal dose for amodiaquine is likely similar to that of chloroquine phosphate (2 to 3 g in adults) (Basoquin SmPC, section 4.9).",
+    "pharmacokinetics": "Amodiaquine is quickly absorbed and biotransformed to its main active metabolite desethylamodiaquine; hepatic metabolism through CYP2C8 is high. The volume of distribution of amodiaquine is 20-40 L/kg. Amodiaquine is eliminated principally by biotransformation with only around 2% excreted unchanged in urine, whereas desethylamodiaquine has a terminal half-life of 9-18 days. Desethylamodiaquine is found in blood at much higher concentrations than unchanged amodiaquine (4-6 times higher in whole blood than in plasma). The absolute bioavailability of amodiaquine is not known (WHO-PQ SmPC MA132 Part 4, section 5.2). After oral administration of amodiaquine 600 mg, absorption is rapid, reaching peak concentrations in plasma, whole blood and packed cells at 0.5 +/- 0.03, 0.5 +/- 0.1 and 0.5 +/- 0.1 hours respectively; amodiaquine is rapidly converted in the liver via CYP2C8 to desethylamodiaquine, only a negligible amount of parent amodiaquine being excreted unchanged in the urine, and the apparent terminal half-life of amodiaquine is 5.2 +/- 1.7 minutes (geometric mean estimated elimination-phase half-life 2.1 hours); the plasma elimination half-life of desethylamodiaquine has varied from 1 to 10 days or more, and amodiaquine and desethylamodiaquine have been detected in urine several months after use (Basoquin SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Amodiaquine is used in practice only in combination (with artesunate for treatment, or with sulfadoxine + pyrimethamine for seasonal malaria chemoprevention); WHO recommends it only for treatment and not for prophylaxis because of rare but serious haematological and hepatic toxicity (Basoquin SmPC, section 5.2; WHO Model List of Essential Medicines, 24th list (2025))",
+      "Amodiaquine monotherapy must not be used for prophylaxis: extended use carries an unacceptably high risk of agranulocytosis and liver toxicity, including fatal hepatitis (WHO-PQ SmPC MA132 Part 4, section 4.4)",
+      "Severe neutropenia with artesunate + amodiaquine is concentrated in HIV-infected patients taking zidovudine and/or cotrimoxazole, and efavirenz co-administration increases amodiaquine exposure and hepatotoxicity; avoid these combinations unless it is the only ACT promptly available (WHO Guidelines for malaria, 13 August 2025)",
+      "Amodiaquine accumulation in P. falciparum is 2- to 3-fold greater than chloroquine accumulation, which is thought to explain its greater inherent activity against P. falciparum (Basoquin SmPC, section 5.2)",
+      "A high-fat meal increases amodiaquine exposure, so the combination should be taken without a high-fat meal (WHO-PQ SmPC MA132 Part 4, sections 4.2 and 5.2)",
+      "Amodiaquine is not listed in the Kenya Essential Medicines List 2023, which lists antimalarial medicines in sections 7.5.3 but not amodiaquine, whereas the WHO Model List of Essential Medicines, 24th list (2025) lists artesunate + amodiaquine and amodiaquine with sulfadoxine + pyrimethamine (KEML 2023, section 7.5.3; WHO eEML 24th list, sections 6.5.3.1 and 6.5.3.2)"
+    ],
+    "brand_names": ["Basoquin"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral use. The fixed-dose tablets are taken once daily for 3 days with water and must not be taken with a high amount of fat in the meal; for persons unable to swallow the tablets (e.g. very young children) the tablets can be crushed and mixed with water or taken with water (WHO-PQ SmPC MA132 Part 4, sections 4.2 and 5.2). If a dose is missed, take it as soon as possible unless it is almost time for the next dose; if the patient vomits within half an hour after dosing, another dose should be taken and further vomiting should prompt consideration of treatment for severe malaria (section 4.2). Do not store above 30 degrees C and keep the tablets in blisters in the provided carton (section 6.4). For amodiaquine monotherapy (Basoquin), the tablets are taken orally: four tablets (600 mg) as a single dose in a partially immune subject, or four tablets (600 mg) once daily on three successive days in a non-immune subject (Basoquin SmPC, section 4.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "WHO-PQ recommended Summary of Product Characteristics, amodiaquine (hydrochloride)/artesunate 67.5 mg/25 mg tablets (Micro Labs Ltd), MA132 Part 4, section 5.1; Basoquin (amodiaquine) Summary of Product Characteristics, Pfizer, section 5.1",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines, 24th list (2025), sections 6.5.3.1 and 6.5.3.2; WHO-PQ SmPC MA132 Part 4, section 4.1; Basoquin SmPC, section 4.1; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "contraindications",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 4.3; Basoquin SmPC, section 4.3",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 4.8; Basoquin SmPC, section 4.8",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "WHO Guidelines for malaria, 13 August 2025, 'Artesunate + amodiaquine'; WHO-PQ SmPC MA132 Part 4, section 4.2; Basoquin SmPC, section 4.2",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    },
+    {
+      "field": "interactions",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.4 and 4.5; Basoquin SmPC, section 4.5; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2, 4.4 and 5.2; Basoquin SmPC, section 4.4; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2, 4.4 and 4.7",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.4 and 4.8; Basoquin SmPC, sections 4.4 and 4.8",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.4, 6.3 and 6.4; Basoquin SmPC, sections 4.3 and 4.4; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.4, 4.8 and 4.9; Basoquin SmPC, section 4.9",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2 and 5.2",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA pregnancy category applies to amodiaquine: it has no FDA-approved label (DailyMed returns no SPL for amodiaquine) and the WHO-PQ SmPC and Basoquin SmPC state no lettered pregnancy category",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 4.6; Basoquin SmPC, section 4.6; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 4.6; Basoquin SmPC, section 4.4",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 4.9; Basoquin SmPC, section 4.9",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "WHO-PQ SmPC MA132 Part 4, section 5.2; Basoquin SmPC, section 5.2",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Basoquin SmPC, sections 5.2 and 4.8; WHO-PQ SmPC MA132 Part 4, sections 4.4, 4.8 and 5.2; WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023, section 7.5.3; WHO Guidelines for malaria, 13 August 2025",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=15198"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Basoquin (amodiaquine) Summary of Product Characteristics, Pfizer Inc. (document code Basoquin/LPD/PK-02) - the brand under which amodiaquine tablets are supplied",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=15198"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning is present in the WHO-PQ SmPC (MA132 Part 4) or the Basoquin SmPC; amodiaquine has no FDA-approved label",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2 and 4.4: no data are available on dosing in patients with renal impairment and caution is advised; no renal dose adjustment is specified",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2 and 4.4: no data are available on dosing in patients with hepatic impairment and caution is advised; no hepatic dose adjustment is specified",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "WHO-PQ SmPC MA132 Part 4, sections 4.2, 5.2 and 6.4; Basoquin SmPC, section 4.2",
+      "url": "https://extranet.who.int/prequal/sites/default/files/whopar_files/MA132Part4v4.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (no FDA pregnancy category exists for amodiaquine, which has no FDA-approved label; the WHO-PQ SmPC and Basoquin SmPC state no lettered category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified; the WHO-PQ SmPC states no PK data are available in renal impairment)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified; the WHO-PQ SmPC states no PK data are available in hepatic impairment)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)"
+  ],
+  "notes": "The table stores this agent as 'Amodiaquine' with no brand names; the previously stored antipsychotic/olanzapine-derived content noted in the row's content_status_note was not carried forward. Amodiaquine has no FDA-approved label (DailyMed returns zero SPLs for the drug name), so the clinical content here is drawn from three WHO/authoritative non-US sources: the WHO Prequalification Programme's recommended Summary of Product Characteristics for the WHO-prequalified amodiaquine (hydrochloride)/artesunate 67.5 mg/25 mg fixed-dose tablets (Micro Labs Ltd, MA132 Part 4, revised May 2025), the WHO Model List of Essential Medicines 24th list (2025), and the WHO Guidelines for malaria (13 August 2025), plus the manufacturer Summary of Product Characteristics for Basoquin (amodiaquine) from Pfizer, which is the reference document cited by the WHO-PQ SmPC itself. Because amodiaquine is used in practice as a fixed-dose combination with artesunate (or with sulfadoxine + pyrimethamine for chemoprevention), most product-level content (dosing, contraindications, interactions, adverse reactions) is attributable to the combination product, and amodiaquine-alone content is identified explicitly as coming from the Basoquin SmPC. Amodiaquine is not listed in the Kenya Essential Medicines List 2023 (checked section 7.5.3 Antimalarial medicines), which is why the KEML is cited only in the clinical_pearls rather than as a source for the drug's own entry. The fixed-dose combination product carries a boxed warning only in the sense of national-approval requirements; no US boxed warning exists for amodiaquine."
+}

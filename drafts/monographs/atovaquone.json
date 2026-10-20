@@ -1,0 +1,207 @@
+{
+  "name": "Atovaquone",
+  "existing_id": "b347a409-f4af-4420-8498-77c80198cc30",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atovaquone is a hydroxy-1,4-naphthoquinone, an analog of ubiquinone, with antipneumocystis activity. The mechanism of action against Pneumocystis jirovecii has not been fully elucidated. In Plasmodium species, the site of action appears to be the cytochrome bc1 complex (Complex III). Several metabolic enzymes are linked to the mitochondrial electron transport chain via ubiquinone. Inhibition of electron transport by atovaquone results in indirect inhibition of these enzymes. The ultimate metabolic effects of such blockade may include inhibition of nucleic acid and adenosine triphosphate (ATP) synthesis (MEPRON label, section 12.4, Microbiology). Atovaquone is a quinone antimicrobial drug (MEPRON label, section 12.1).",
+    "indications": [
+      "Prevention of Pneumocystis jirovecii pneumonia (PCP) in adults and adolescents aged 13 years and older who cannot tolerate trimethoprim-sulfamethoxazole (TMP-SMX) (MEPRON label, section 1.1)",
+      "Treatment of mild-to-moderate PCP in adults and adolescents aged 13 years and older who cannot tolerate trimethoprim-sulfamethoxazole (TMP-SMX) (MEPRON label, section 1.2)",
+      "Limitations of use: clinical experience with MEPRON for the treatment of PCP has been limited to subjects with mild-to-moderate PCP, defined as (A-a)DO2 less than or equal to 45 mm Hg; treatment of more severe episodes of PCP with MEPRON has not been studied, and the efficacy of MEPRON in subjects who are failing therapy with TMP-SMX has also not been studied (MEPRON label, section 1.3)"
+    ],
+    "contraindications": [
+      "Known serious allergic/hypersensitivity reaction to atovaquone or any of the components of MEPRON (MEPRON label, section 4)",
+      "Patients who have developed a severe cutaneous adverse reaction (SCAR) to MEPRON must not receive MEPRON (MEPRON label, section 5.3)"
+    ],
+    "side_effects": [
+      "PCP prevention trials, most frequent adverse reactions requiring discontinuation of treatment: rash 6.3%, nausea 4.1%, diarrhea 3.2% and vomiting 2.2% in the MEPRON group (1,500 mg/day) in the dapsone comparative trial (n = 536) (MEPRON label, section 6.1, Table 1)",
+      "PCP prevention trial versus aerosolized pentamidine, adverse reactions reported by 20% or more of subjects in the MEPRON 1,500 mg/day group (n = 175): diarrhea 42%, rash 39%, headache 28%, nausea 26%, fever 25% and rhinitis 24%; other reactions in 10% or more included vomiting, sweating, flu syndrome, sinusitis, pruritus, insomnia, depression and myalgia (MEPRON label, section 6.1, Table 2)",
+      "PCP treatment trial versus TMP-SMX, adverse reactions reported by 10% or more of the trial population regardless of attribution (MEPRON tablets n = 203 versus TMP-SMX n = 205): rash including maculopapular 23% vs 34%, nausea 21% vs 44%, diarrhea 19% vs 7%, headache 16% vs 22%, vomiting 14% vs 35%, fever 14% vs 25% and insomnia 10% vs 9% (MEPRON label, section 6.1, Table 3)",
+      "PCP treatment trial versus intravenous pentamidine, adverse reactions in 10% or more of the primary therapy population (MEPRON n = 73 versus pentamidine n = 71): fever 40% vs 25%, nausea 22% vs 37%, rash 22% vs 13%, diarrhea 21% vs 31%, insomnia 19% vs 14%, headache 18% vs 28%, vomiting 14% vs 17%, cough 14% vs 1%, sweat 10% vs 3% and oral monilia 10% vs 3% (MEPRON label, section 6.1, Table 4)",
+      "Postmarketing adverse reactions: methemoglobinemia and thrombocytopenia; hypersensitivity reactions including angioedema, bronchospasm, throat tightness and urticaria; vortex keratopathy; pancreatitis; hepatitis and fatal liver failure; erythema multiforme, Stevens-Johnson syndrome, skin desquamation and drug reaction with eosinophilia and systemic symptoms (DRESS); and acute renal impairment (MEPRON label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Prevention of PCP: 1,500 mg (10 mL) oral suspension once daily administered with food. Treatment of mild-to-moderate PCP: 750 mg (5 mL) twice daily, a total daily dose of 1,500 mg, administered with food for 21 days (MEPRON label, sections 2.1 and 2.2). The dose must be taken with food to avoid low plasma atovaquone concentrations that may limit response to therapy (MEPRON label, sections 2.3 and 5.1). For the 210 mL bottle, shake gently before use; for the 5 mL foil pouch, open by folding along the dotted line and tearing along the horizontal slit, then take the entire contents either directly into the mouth or into a dosing spoon or cup, and for a 10 mL dose take the entire contents of 2 pouches (MEPRON label, section 2.3).",
+      "geriatric": "Clinical trials of MEPRON did not include sufficient numbers of subjects aged 65 years and older to determine whether they respond differently from younger subjects (MEPRON label, section 8.5). No geriatric dose adjustment is specified.",
+      "paediatric": "Evidence of safety and effectiveness in pediatric patients aged 12 years and younger has not been established. In a trial in 27 HIV-1-infected asymptomatic infants and children aged between 1 month and 13 years given MEPRON oral suspension once daily with food for 12 days, the pharmacokinetics of atovaquone were age-dependent: in subjects aged 1 to 3 months the average steady-state plasma atovaquone concentration was 5.9 mcg/mL at 10 mg/kg and 27.8 +/- 5.8 mcg/mL at 30 mg/kg; in subjects over 3 to 24 months it was 5.7 +/- 5.1, 9.8 +/- 3.2 and 15.4 +/- 6.6 mcg/mL at 10, 30 and 45 mg/kg respectively; and in subjects over 2 to 13 years it was 16.8 +/- 6.4 and 37.1 +/- 10.9 mcg/mL at 10 and 30 mg/kg (MEPRON label, section 8.4, Table 5). The approved indication covers adults and adolescents 13 years and older."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Rifampin and rifabutin: concomitant administration is known to reduce atovaquone concentrations; concomitant administration of MEPRON oral suspension and rifampin or rifabutin is not recommended. In a trial in 13 HIV-1-infected volunteers, rifampin 600 mg every 24 hours with MEPRON 750 mg every 12 hours produced a 52% (+/- 13%) decrease in mean steady-state plasma atovaquone concentration and the atovaquone half-life fell from 82 +/- 36 hours to 50 +/- 16 hours; in 24 healthy volunteers, rifabutin 300 mg once daily with MEPRON 750 mg twice daily produced a 34% decrease in mean steady-state plasma atovaquone concentration (MEPRON label, sections 7.1 and 12.3)",
+      "Tetracycline: concomitant administration has been associated with a reduction in plasma concentrations of atovaquone of about 40%; caution should be used when prescribing tetracycline concomitantly with MEPRON oral suspension and patients should be monitored for potential loss of efficacy (MEPRON label, sections 7.2 and 12.3)",
+      "Metoclopramide: metoclopramide may reduce the bioavailability of atovaquone (about a 50% reduction in steady-state atovaquone plasma concentrations) and should be used only if other antiemetics are not available (MEPRON label, sections 7.3 and 12.3)",
+      "Indinavir: concomitant administration did not change the steady-state AUC and Cmax of indinavir but resulted in a 23% decrease in Ctrough (90% CI 8% to 35%); caution should be exercised and patients monitored for potential loss of efficacy of indinavir (MEPRON label, sections 7.4 and 12.3)",
+      "Trimethoprim/sulfamethoxazole: concomitant administration of MEPRON 500 mg once daily (not the approved dosage) with TMP-SMX in 6 HIV-infected adults did not result in significant changes in either atovaquone or TMP-SMX exposure (MEPRON label, section 12.3)",
+      "Zidovudine: administration of atovaquone tablets 750 mg every 12 hours with zidovudine 200 mg every 8 hours in 14 HIV-1-infected subjects resulted in a 24% (+/- 12%) decrease in zidovudine apparent oral clearance and a 35% (+/- 23%) increase in plasma zidovudine AUC; zidovudine had no effect on atovaquone pharmacokinetics (MEPRON label, section 12.3)"
+    ],
+    "monitoring": "No routine laboratory monitoring parameters are specified for MEPRON in the label beyond the clinical requirements implicit in the indication. The label requires that the drug be administered with food to avoid low plasma atovaquone concentrations that may limit response to therapy, and advises considering therapy with other agents in patients who have difficulty taking MEPRON oral suspension with food or who have gastrointestinal disorders that may limit oral absorption (MEPRON label, sections 2.3 and 5.1). If treating patients with severe hepatic impairment, closely monitor patients following administration of MEPRON (MEPRON label, section 5.2). Monitor for signs and symptoms of severe cutaneous adverse reactions and stop the drug immediately if they develop (MEPRON label, section 5.3). Because atovaquone exposure is the main determinant of success, patients should be counselled to take every dose with food and to complete the full 21-day course for treatment of PCP (MEPRON label, sections 2.3, 5.1 and 12.2).",
+    "patient_counselling": "Advise patients to take the prescribed dose of MEPRON oral suspension as directed, to take their daily doses with food because food will significantly improve absorption of the drug, and to shake the oral suspension gently before use each time (MEPRON label, section 17). Advise patients about the signs and symptoms of serious skin manifestations, instruct them to stop taking MEPRON immediately and promptly report the first signs or symptoms of skin rash, mucosal lesions, or any other sign of hypersensitivity (MEPRON label, section 17). Inform women with HIV-1 that the potential risks of breastfeeding include HIV-1 transmission in infants without HIV-1 (MEPRON label, section 17).",
+    "warnings": [
+      "Risk of limited oral absorption: absorption of orally administered MEPRON oral suspension is limited but can be significantly increased when the drug is taken with food; failure to administer with food may result in lower plasma atovaquone concentrations and may limit response to therapy, and patients with gastrointestinal disorders may have limited absorption resulting in suboptimal atovaquone concentrations; consider therapy with other agents in patients who have difficulty taking MEPRON with food or who have gastrointestinal disorders that may limit absorption (MEPRON label, section 5.1)",
+      "Hepatotoxicity: cases of cholestatic hepatitis, elevated liver enzymes and fatal liver failure have been reported in patients treated with atovaquone; if treating patients with severe hepatic impairment, closely monitor patients following administration of MEPRON (MEPRON label, section 5.2)",
+      "Severe cutaneous adverse reactions: cases of SCARs including Stevens-Johnson syndrome (SJS), drug reaction with eosinophilia and systemic symptoms (DRESS) and erythema multiforme (EM) have been reported; SCARs can be life-threatening or fatal, so if symptoms or signs of SCARs develop, discontinue MEPRON immediately and institute appropriate therapy, and patients who have developed SCARs with MEPRON must not receive it again (MEPRON label, section 5.3)",
+      "Treatment of severe PCP with MEPRON has not been studied; the efficacy of MEPRON in subjects who are failing therapy with TMP-SMX has also not been studied (MEPRON label, section 1.3)"
+    ],
+    "precautions": [
+      "Administer MEPRON oral suspension with food to avoid low plasma atovaquone concentrations that may limit response to therapy (MEPRON label, sections 2.3 and 5.1)",
+      "Consider therapy with other agents in patients who have difficulty taking MEPRON oral suspension with food or in patients with gastrointestinal disorders that may limit the absorption of oral medications (MEPRON label, section 5.1)",
+      "Concomitant administration of MEPRON oral suspension and rifampin or rifabutin is not recommended because these agents reduce atovaquone concentrations (MEPRON label, section 7.1)",
+      "The pharmacokinetics of atovaquone have not been studied in patients with hepatic or renal impairment (MEPRON label, section 12.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe cutaneous adverse reactions, including Stevens-Johnson syndrome, DRESS and erythema multiforme, which can be life-threatening or fatal (MEPRON label, sections 5.3 and 6.2)",
+      "Hepatotoxicity, including cholestatic hepatitis, elevated liver enzymes and fatal liver failure (MEPRON label, sections 5.2 and 6.2)",
+      "Hypersensitivity reactions including angioedema, bronchospasm, throat tightness and urticaria (MEPRON label, section 6.2)",
+      "Methemoglobinemia and thrombocytopenia (MEPRON label, section 6.2)",
+      "Pancreatitis, vortex keratopathy and acute renal impairment (MEPRON label, section 6.2)",
+      "Death from PCP and from bacterial infections: in the TMP-SMX comparative PCP treatment trial there was a significant difference in mortality favouring TMP-SMX (P = 0.03), with 13 of 160 (8%) MEPRON-treated patients versus 4 of 162 (2.5%) TMP-SMX-treated patients dying during the 21-day treatment or 8-week follow-up; a correlation between plasma atovaquone concentration and death was demonstrated, with 5 of 8 patients with Day 4 plasma atovaquone below 5 mcg/mL dying compared with 1 of 49 patients with Day 4 concentrations of 5 mcg/mL or more (MEPRON label, section 14.2)"
+    ],
+    "food_interactions": [
+      "Food is required for absorption: administering MEPRON oral suspension with food enhances atovaquone bioavailability, with mean AUC under fasting and fed conditions of 324 +/- 115 and 801 +/- 320 h.mcg/mL respectively after a single 750 mg dose, a 2.6-fold (+/- 1.0) increase; failure to administer with food may result in lower plasma atovaquone concentrations and may limit response to therapy (MEPRON label, sections 2.3, 5.1 and 12.3)"
+    ],
+    "pregnancy_category": "The MEPRON label presents pregnancy under the Pregnancy and Lactation Labeling Rule risk-summary format and does not state an FDA letter category (MEPRON label, section 8.1).",
+    "pregnancy_guidance": "Available data from postmarketing experience with use of MEPRON in pregnant women are insufficient to identify a drug-associated risk for major birth defects, miscarriage or adverse maternal or fetal outcomes. Pregnant women with HIV who are infected with PCP are at increased risk of adverse pregnancy outcomes, and are at increased risk of severe illness and maternal death associated with PCP compared with non-pregnant women. Atovaquone given orally by gavage to pregnant rats and rabbits during organogenesis did not cause fetal malformations at plasma concentrations up to 3 times and 0.5 times respectively the estimated human exposure based on steady-state plasma concentrations. In pregnant rats given 250, 500 and 1,000 mg/kg/day during organogenesis there was no maternal or embryo-fetal toxicity up to 1,000 mg/kg/day; in pregnant rabbits given 300, 600 and 1,200 mg/kg/day there was decreased fetal body length at the maternally toxic dose of 1,200 mg/kg/day. Atovaquone crossed the placenta and was present in foetal rat and rabbit tissue. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (MEPRON label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of atovaquone in human milk, the effects on the breastfed child, or the effects on milk production. Atovaquone was detected in rat milk when lactating rats were administered oral atovaquone, at concentrations about 30% of the concurrent maternal plasma concentrations at both 10 and 250 mg/kg doses given orally by gavage on postpartum day 11; the concentration of drug in animal milk does not necessarily predict the concentration of drug in human milk. For women with HIV-1, potential risks of breastfeeding include HIV-1 transmission in infants without HIV-1, and the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for MEPRON and any potential adverse effects on the breastfed child from MEPRON or from the underlying maternal condition (MEPRON label, sections 8.2 and 17).",
+    "overdose": "Overdoses up to 31,500 mg of atovaquone have been reported. In one such patient who also took an unspecified dose of dapsone, methemoglobinemia occurred. Rash has also been reported after overdose. There is no known antidote for atovaquone, and it is currently unknown if atovaquone is dialyzable (MEPRON label, section 10).",
+    "pharmacokinetics": "Atovaquone is a highly lipophilic compound with low aqueous solubility. Plasma atovaquone concentrations do not increase proportionally with dose: when MEPRON oral suspension was given with food at 500, 750 and 1,000 mg once daily, mean (+/- SD) steady-state plasma atovaquone concentrations were 11.7 +/- 4.8, 12.5 +/- 5.8 and 13.5 +/- 5.1 mcg/mL respectively, with corresponding Cmax values of 15.1 +/- 6.1, 15.3 +/- 7.6 and 16.8 +/- 6.4 mcg/mL. The mean (+/- SD) absolute bioavailability of atovaquone from a 750 mg dose of MEPRON oral suspension administered under fed conditions in 9 HIV-1-infected volunteers was 47% (+/- 15%). Following intravenous administration the mean (+/- SD) volume of distribution at steady state was 0.60 +/- 0.17 L/kg, and atovaquone is extensively bound to plasma proteins (99.9%) over the range of 1 to 90 mcg/mL; in 3 HIV-1-infected children receiving 750 mg atovaquone as tablets 4 times daily for 2 weeks, cerebrospinal fluid concentrations were 0.04, 0.14 and 0.26 mcg/mL, less than 1% of the plasma concentration. The mean (+/- SD) half-life of atovaquone was 62.5 +/- 35.3 hours after intravenous administration and ranged from 67.0 +/- 33.4 to 77.6 +/- 23.1 hours following administration of MEPRON oral suspension. The metabolism of atovaquone is unknown. Following oral administration of 14C-labelled atovaquone to healthy subjects, greater than 94% of the dose was recovered as unchanged atovaquone in the faeces over 21 days. In 5 HIV-1-infected subjects given MEPRON 750 mg twice daily, the mean steady-state plasma atovaquone concentration was 21.0 +/- 4.9 mcg/mL and mean Cmax 24.0 +/- 5.7 mcg/mL, with a mean Cmin of 16.7 +/- 4.6 mcg/mL; mean plasma clearance following intravenous administration in 9 HIV-1-infected subjects was 10.4 +/- 5.5 mL/min (0.15 +/- 0.09 mL/min/kg) (MEPRON label, section 12.3). Pharmacodynamics: in the TMP-SMX comparative PCP treatment trial, successful treatment outcome (improvement in clinical and respiratory measures persisting at least 4 weeks after cessation of therapy) correlated with steady-state plasma atovaquone concentration: 0 of 6 (0%) with concentrations below 5 mcg/mL, 18 of 26 (69%) with 5 to under 10 mcg/mL, 30 of 38 (79%) with 10 to under 15 mcg/mL, 18 of 19 (95%) with 15 to under 20 mcg/mL and 24 of 24 (100%) with 20 mcg/mL or more; the effect of MEPRON oral suspension on the QT interval is unknown in humans (MEPRON label, section 12.2).",
+    "clinical_pearls": [
+      "Atovaquone must be taken with food: fed administration increases AUC about 2.6-fold, and failure to take it with food is the commonest reason for treatment failure because of subtherapeutic plasma concentrations (MEPRON label, sections 2.3, 5.1 and 12.3).",
+      "Plasma concentration predicts outcome: in the PCP treatment trial, success rates rose from 0% with steady-state concentrations below 5 mcg/mL to 100% at 20 mcg/mL or more, and low Day 4 concentrations were strongly associated with death (MEPRON label, sections 12.2 and 14.2).",
+      "Atovaquone is an alternative, not a first-line agent: the approved indication is limited to adults and adolescents 13 years and older who cannot tolerate TMP-SMX, and in the pivotal treatment trial TMP-SMX had significantly lower mortality than atovaquone (8% vs 2.5%, P = 0.03) (MEPRON label, sections 1.1, 1.2 and 14.2).",
+      "The label is explicit that MEPRON has not been studied for severe PCP, defined as (A-a)DO2 above 45 mm Hg, and that its efficacy in patients failing TMP-SMX has not been studied (MEPRON label, section 1.3).",
+      "Severe cutaneous adverse reactions, including SJS, DRESS and erythema multiforme, are newly labelled (section 5.3, added in the March 2026 label revision); if they occur the drug must be stopped immediately and never restarted (MEPRON label, sections 5.3 and 6.2).",
+      "Rifampicin and rifabutin are the interactions that most clearly undermine efficacy, reducing atovaquone concentrations by about 52% and 34% respectively, so coadministration is not recommended; tetracycline, metoclopramide and indinavir also reduce exposure (MEPRON label, sections 7.1 to 7.4 and 12.3).",
+      "Atovaquone is dosed once daily as a 210 mL bottle or as 5 mL foil pouches, 750 mg per 5 mL, and the suspension must be shaken gently before use (MEPRON label, sections 2.3 and 16).",
+      "For the Kenyan context, atovaquone alone is not listed in the Kenya Essential Medicines List 2023; the list includes the fixed-dose combination atovaquone + proguanil tablet for malaria prophylaxis at level of use 4 (KEML 2023, item 7.5.3.2.1), and atovaquone is not on the WHO Model List of Essential Medicines, 24th list (2025) either."
+    ],
+    "brand_names": ["Mepron"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified. The pharmacokinetics of atovaquone have not been studied in patients with renal impairment, and the label gives no dosing recommendation for this group (MEPRON label, section 12.3).",
+    "hepatic_dose_adjustment": "No numeric hepatic dose adjustment is specified. The pharmacokinetics of atovaquone have not been studied in patients with hepatic impairment, but cases of cholestatic hepatitis, elevated liver enzymes and fatal liver failure have been reported, and if treating patients with severe hepatic impairment, closely monitor patients following administration of MEPRON (MEPRON label, sections 5.2 and 12.3).",
+    "administration_instructions": "Oral use, always with food. For the 210 mL bottle, shake gently before administering the recommended dosage. For the 5 mL foil pouch, open by folding along the dotted line and tearing open at the horizontal slit as directed; for a 5 mL dose take the entire contents either by placing directly into the mouth or by dispensing into a dosing spoon (5 mL) or cup prior to administration; for a 10 mL dose take the entire contents of 2 pouches. Administer the prescribed dose as directed, take daily doses with food, and shake the suspension gently before use each time. Store at 15 to 25 degrees C (59 to 77 degrees F), do not freeze, and dispense in a tight container as defined in the USP (MEPRON label, sections 2.3, 16 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "MEPRON (atovaquone oral suspension) label, sections 12.1 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "indications",
+      "ref": "MEPRON label, sections 1.1, 1.2 and 1.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "MEPRON label, sections 4 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "MEPRON label, section 6.1 (Tables 1-4) and section 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "dosage",
+      "ref": "MEPRON label, sections 2.1, 2.2, 2.3, 8.4 (Table 5) and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "interactions",
+      "ref": "MEPRON label, sections 7.1-7.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "MEPRON label, sections 2.3, 5.1, 5.2, 5.3 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "MEPRON label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "warnings",
+      "ref": "MEPRON label, sections 1.3, 5.1, 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "precautions",
+      "ref": "MEPRON label, sections 2.3, 5.1, 7.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "MEPRON label, sections 5.2, 5.3, 6.2 and 14.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "MEPRON label, sections 2.3, 5.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "MEPRON label, section 8.1 (risk-summary format, no FDA letter category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "MEPRON label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "MEPRON label, sections 8.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "overdose",
+      "ref": "MEPRON label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "MEPRON label, sections 12.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "MEPRON label, sections 1.1, 1.3, 2.3, 5.1, 5.3, 7.1-7.4, 12.2, 12.3, 14.2 and 16; Kenya Essential Medicines List 2023, item 7.5.3.2.1; WHO eEML 24th list",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "MEPRON (atovaquone oral suspension), GlaxoSmithKline, listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the MEPRON prescribing information; the field is left as an empty array rather than asserting a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "MEPRON label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "MEPRON label, sections 5.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "MEPRON label, sections 2.3, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b426b6bf-f07e-4580-97ae-dfca1ddf5b8f"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult regimens for PCP prevention and treatment are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; paediatric data are limited and are given in fields.dosage.paediatric; the approved indication starts at 13 years of age)",
+    "black_box_warnings (none is present in the MEPRON prescribing information; the field is left as an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Atovaquone' with brand name 'ATOVAQUONE' and drug_class 'Antimicrobial agent'. The authoritative source is the FDA label for MEPRON (atovaquone oral suspension, 750 mg per 5 mL, GlaxoSmithKline, DailyMed setid b426b6bf-f07e-4580-97ae-dfca1ddf5b8f, revised 3/2026). Important distinction: this monograph covers atovaquone used alone for prevention and treatment of Pneumocystis jirovecii pneumonia in patients who cannot tolerate trimethoprim-sulfamethoxazole. Atovaquone plus proguanil (Malarone) is a different, fixed-dose combination product used for malaria treatment and prophylaxis; its own label is not reproduced here. The Kenya Essential Medicines List 2023 lists atovaquone + proguanil (tablet, strengths 62.5 mg + 25 mg and 250 mg + 100 mg) for malaria prophylaxis at level of use 4 but does not list atovaquone alone. Atovaquone is not on the WHO Model List of Essential Medicines, 24th list (2025), in either form. The label contains no boxed warning, so black_box_warnings is an empty array. The MEPRON label uses the Pregnancy and Lactation Labeling Rule risk-summary format and states no FDA letter category. Note that the historical MEPRON tablet formulation (250 mg tablets) used in the pivotal treatment trials is no longer marketed; the marketed product is the oral suspension, and the label notes that the incidence of adverse reactions with the suspension at the recommended dose was similar to that of the tablet formulation."
+}

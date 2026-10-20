@@ -1,0 +1,208 @@
+{
+  "name": "Artemether–Lumefantrine",
+  "existing_id": "9fdafaaa-ee6c-4020-b2dc-eee5f5d25b83",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Coartem is a fixed-dose combination of artemether and lumefantrine in the ratio 1:6. Artemether, an artemisinin derivative, is rapidly metabolised into its active metabolite dihydroartemisinin (DHA), and the antimalarial activity of artemether and DHA has been attributed to the endoperoxide moiety. The exact mechanism by which lumefantrine exerts its antimalarial effect is not well defined; available data suggest lumefantrine inhibits the formation of beta-hematin by forming a complex with hemin. Both artemether and lumefantrine were shown to inhibit nucleic acid and protein synthesis. Artemether and lumefantrine are active against the erythrocytic stages of Plasmodium falciparum, and both components are blood schizonticides (FDA Coartem label, sections 11, 12.1 and 12.4).",
+    "indications": [
+      "Treatment of acute, uncomplicated malaria infections due to Plasmodium falciparum in patients 2 months of age and older with a bodyweight of 5 kg and above; Coartem has been shown to be effective in geographical regions where resistance to chloroquine has been reported (FDA Coartem label, section 1)",
+      "Limitation: Coartem is not approved for patients with severe or complicated P. falciparum malaria, and is not approved for the prevention of malaria (FDA Coartem label, section 1)",
+      "WHO Model List of Essential Medicines: artemether + lumefantrine is a Core (EMLc) medicine for malaria due to Plasmodium falciparum and malaria due to Plasmodium vivax, as dispersible tablet 20 mg + 120 mg and tablet 20 mg + 120 mg (WHO eEML, artemether + lumefantrine, recommendations 791 and 1457)",
+      "WHO guidelines for malaria: artemether + lumefantrine is one of the WHO-approved first-line artemisinin-based combination therapies for uncomplicated P. falciparum malaria, and is the recommended ACT in all trimesters of pregnancy, including the first trimester (WHO guidelines for malaria, 13 August 2025, sections 5.2.1 and 5.2.1.4.1)",
+      "Kenya Essential Medicines List 2023: artemether + lumefantrine tablets 20 mg + 120 mg and dispersible tablets 20 mg + 120 mg, Level of Use 1 (community health services) (KEML 2023, section 7.5.3.1.2 and footnotes 170-171)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to artemether, lumefantrine, or to any of the excipients of Coartem tablets (FDA Coartem label, section 4)",
+      "Coadministration with strong inducers of CYP3A4 such as rifampin, carbamazepine, phenytoin and St John's wort, which can result in decreased concentrations of artemether and/or lumefantrine and loss of antimalarial efficacy (FDA Coartem label, section 4)"
+    ],
+    "side_effects": [
+      "In adults (>16 years, N=647) receiving the 6-dose regimen, the most frequently reported adverse reactions were headache 56%, dizziness 39%, anorexia 40%, asthenia 38%, pyrexia 25%, chills 23%, fatigue 17%, arthralgia 34%, myalgia 32%, nausea 26%, vomiting 17%, abdominal pain 17%, sleep disorder 22%, palpitations 18%, hepatomegaly 9%, splenomegaly 9%, anaemia 4%, cough 6%, pruritus 4% and rash 3% (FDA Coartem label, section 6.1, Table 1)",
+      "In children (<=16 years, N=1332) receiving the 6-dose regimen, the most frequently reported adverse reactions were pyrexia 29%, cough 23%, vomiting 18%, abdominal pain 8%, diarrhoea 8%, Plasmodium falciparum infection 17%, anorexia 13%, headache 13%, splenomegaly 9%, anaemia 9%, hepatomegaly 6%, dizziness 4%, chills 5%, asthenia 5% and rash 3% (FDA Coartem label, section 6.1, Table 2)",
+      "Discontinuation due to adverse drug reactions occurred in 1.1% of patients treated with the 6-dose regimen: 0.2% (1/647) in adults and 1.6% (21/1332) in children (FDA Coartem label, section 6.1)",
+      "Less common but clinically reported reactions (<3% in clinical studies regardless of causality) include eosinophilia, tinnitus, conjunctivitis, constipation, dyspepsia, dysphagia, peptic ulcer, gait disturbance, hypokalaemia, back pain, ataxia, clonus, fine motor delay, hyperreflexia, hypoesthesia, nystagmus, tremor, agitation, mood swings, haematuria, proteinuria, urticaria, asthma and pharyngolaryngeal pain (FDA Coartem label, section 6.1)",
+      "Postmarketing: hypersensitivity reactions including anaphylaxis, urticaria, angioedema and serious skin reactions (bullous eruption) (FDA Coartem label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "A 3-day schedule of 6 doses is recommended for adults with a bodyweight of 35 kg and above: 4 tablets as a single initial dose, 4 tablets again after 8 hours, then 4 tablets twice daily (morning and evening) for the following 2 days (total course of 24 tablets) (FDA Coartem label, section 2.2). Each tablet contains 20 mg artemether and 120 mg lumefantrine (section 3). WHO weight-based regimen: artemether + lumefantrine is given twice a day for 3 days (total six doses), with the first two doses ideally 8 hours apart - 20 mg + 120 mg for body weight <15 kg, 40 mg + 240 mg for 15 to <25 kg, 60 mg + 360 mg for 25 to <35 kg and 80 mg + 480 mg for >=35 kg; target dose range 5-24 mg/kg bodyweight of artemether and 29-144 mg/kg bodyweight of lumefantrine (WHO guidelines for malaria, 13 August 2025, section 5.2.1, Practical info: Artemether + lumefantrine).",
+      "geriatric": "Clinical studies of Coartem did not include sufficient numbers of subjects aged 65 years and over to determine whether they respond differently from younger subjects; in general, the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy in elderly patients should be considered when prescribing Coartem (FDA Coartem label, section 8.5).",
+      "paediatric": "The safety and effectiveness of Coartem have been established in pediatric patients aged 2 months and older with a bodyweight of 5 kg and above; safety and effectiveness have not been established in patients younger than 2 months old or who weigh less than 5 kg, and paediatric patients from non-endemic countries were not included in clinical trials (FDA Coartem label, section 8.4). Dosing is by bodyweight, total 6 doses over 3 days: 1 tablet per dose for 5 to <15 kg (6 tablets total), 2 tablets per dose for 15 to <25 kg (12 tablets total), 3 tablets per dose for 25 to <35 kg (18 tablets total), and 4 tablets per dose for 35 kg and above (24 tablets total) (FDA Coartem label, section 2.3). KEML 2023 footnotes specify: dispersible tablet for patients 5 to <25 kg, not recommended in children <5 kg, and the non-dispersible tablet for patients 25 to >35 kg (KEML 2023, footnotes 170-171)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Rifampin (strong CYP3A4 inducer): oral rifampin with Coartem reduced exposure to artemether, DHA and lumefantrine by 89%, 85% and 68% respectively; coadministration of strong inducers of CYP3A4 such as rifampin, carbamazepine, phenytoin and St John's wort is contraindicated (FDA Coartem label, sections 7.1 and 12.3)",
+      "Ketoconazole (potent CYP3A4 inhibitor): increased AUC of artemether 2.3-fold, DHA 1.5-fold and lumefantrine 1.6-fold; no dose adjustment is needed, but Coartem should be used cautiously with CYP3A4 inhibitors because of possible QT prolongation (FDA Coartem label, sections 7.2 and 12.3)",
+      "Antiretroviral drugs: protease inhibitors and non-nucleoside reverse transcriptase inhibitors have variable effects on CYP3A4; lopinavir/ritonavir reduced artemether and DHA AUC by about 40% and increased lumefantrine exposure about 2.3-fold, while efavirenz reduced artemether, DHA and lumefantrine exposure by about 50%, 45% and 20%; use cautiously because of reduced antimalarial efficacy and QT prolongation (FDA Coartem label, sections 7.3 and 12.3)",
+      "Mefloquine: if administered immediately before Coartem, lumefantrine exposure was reduced (30% lower Cmax, 40% lower AUC), possibly due to a mefloquine-induced decrease in bile production; monitor for decreased efficacy and encourage food consumption (FDA Coartem label, sections 7.4 and 12.3)",
+      "Hormonal contraceptives: artemether has been reported to weakly induce CYP2C19, CYP2B6 and CYP3A4, so Coartem may potentially reduce the effectiveness of hormonal contraceptives; patients should use an alternative non-hormonal method or add a barrier method during treatment (FDA Coartem label, sections 5.3, 7.5 and 8.3)",
+      "CYP2D6 substrates: lumefantrine inhibits CYP2D6 in vitro, so coadministration may significantly increase plasma concentrations of the coadministered drug; many such drugs also prolong the QT interval and should not be administered with Coartem (e.g. flecainide, imipramine, amitriptyline, clomipramine) (FDA Coartem label, sections 5.1, 5.4, 7.6 and 12.3)",
+      "Quinine and other QT-prolonging drugs: should be used cautiously following Coartem because of the long elimination half-life of lumefantrine (3 to 6 days) and potential additive QT effects; ECG monitoring is advised if use of a QT-prolonging drug is medically required (FDA Coartem label, sections 5.1, 5.2, 7.7 and 7.8)",
+      "Halofantrine: should not be administered within 1 month of Coartem because of the long elimination half-life of lumefantrine and potential additive effects on the QT interval (FDA Coartem label, sections 5.1 and 5.2)"
+    ],
+    "monitoring": "Avoid Coartem in patients with congenital QT prolongation, a family history of congenital QT prolongation or sudden death, known electrolyte disturbances such as hypokalemia or hypomagnesemia, clinically relevant bradycardia, severe cardiac disease, or a history of symptomatic cardiac arrhythmias (FDA Coartem label, section 5.1). ECG monitoring is advised if use of QT-prolonging drugs is medically required after Coartem (section 5.2). Patients who remain averse to food during treatment should be closely monitored because the risk of recrudescence may be greater (section 5.5). If mefloquine was given immediately before Coartem, monitor for decreased efficacy and encourage food consumption (section 7.4). Oral hypoesthesia and/or oral paresthesia may occur directly after administration and usually resolves within 1 hour (section 6.1). In children no patient had QTcF greater than 500 msec but over 5% had an increase in QTcF of over 60 msec, and in adults QTcF prolongation greater than 500 msec was reported in 3 (0.3%) patients with over 6% having an increase of over 60 msec from baseline (section 12.6). Patients with uncomplicated malaria who present with impaired consciousness should have their blood glucose checked and be managed for the complications of malaria, and ACTs containing mefloquine should be avoided as follow-on treatment in such patients (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment and Continuing supportive care).",
+    "patient_counselling": "Instruct patients to take Coartem tablets with food, because food enhances the absorption of artemether and lumefantrine, and patients who do not have an adequate intake of food are at risk for recrudescence of malaria (FDA Coartem label, sections 2.1 and 17). For patients unable to swallow tablets, such as infants and children, tablets may be crushed and mixed with 1 to 2 teaspoons of water in a clean container immediately prior to administration, the container rinsed with more water and the contents swallowed, followed whenever possible by food or drink (section 2.1). If vomiting occurs within 1 to 2 hours after administration, a repeat dose should be taken; if the repeat dose is vomited, the patient should be given an alternative antimalarial for treatment (section 2.1). Instruct patients with known hypersensitivity to artemether, lumefantrine or the excipients not to receive Coartem, and to discontinue the drug at the first sign of skin rash, hives or other skin reactions, rapid heartbeat, difficulty swallowing or breathing, or any swelling suggesting angioedema (section 17). Instruct patients to inform the physician of any personal or family history of QT prolongation or proarrhythmic conditions such as hypokalaemia, bradycardia or recent myocardial ischaemia, and of any other medications that prolong the QT interval (section 17). Instruct patients to avoid medications metabolised by CYP2D6 while receiving Coartem because these drugs also have cardiac effects (section 17). Advise patients using hormonal contraception to use an alternative non-hormonal contraceptive method or add a barrier method of contraception during treatment (section 17). Advise patients that halofantrine and Coartem should not be taken within one month of each other, that other antimalarials should not be given concomitantly unless there is no other treatment option, and that QT-prolonging drugs including quinine and quinidine should be used cautiously after Coartem with ECG monitoring if required (section 17). Advise patients taking mefloquine immediately before Coartem that food intake should be monitored closely (section 17).",
+    "warnings": [
+      "Prolongation of the QT interval: Coartem should be avoided in patients with congenital long QT syndrome or other conditions known to prolong the QTc interval, a family history of congenital QT prolongation or sudden death, known electrolyte disturbances such as hypokalemia or hypomagnesemia, and in those receiving QT-prolonging drugs (Class IA and III antiarrhythmics, antipsychotics such as pimozide and ziprasidone, antidepressants, macrolides, fluoroquinolones, imidazole and triazole antifungals) or drugs metabolised by CYP2D6 that also have cardiac effects (FDA Coartem label, section 5.1)",
+      "Halofantrine and Coartem should not be administered within one month of each other because of the long elimination half-life of lumefantrine (3 to 6 days) and potential additive effects on the QT interval (FDA Coartem label, section 5.2)",
+      "Antimalarials should not be given concomitantly with Coartem unless there is no other treatment option, because of limited safety data (FDA Coartem label, section 5.2)",
+      "CYP3A4 interactions: coadministration with CYP3A4 substrates may decrease substrate concentrations and loss of efficacy; with CYP3A4 inhibitors (including grapefruit juice) may increase artemether and/or lumefantrine concentrations and potentiate QT prolongation; with CYP3A4 inducers may cause loss of antimalarial efficacy (FDA Coartem label, section 5.3)",
+      "CYP2D6 interactions: coadministration with CYP2D6-metabolised drugs may significantly increase their plasma concentrations and the risk of adverse effects, including additive QT prolongation (FDA Coartem label, section 5.4)",
+      "Recrudescence: food enhances absorption of artemether and lumefantrine, so patients who remain averse to food during treatment should be closely monitored as the risk of recrudescence may be greater; recrudescent P. falciparum infection after treatment should be treated with a different antimalarial (FDA Coartem label, section 5.5)",
+      "Coartem has not been studied for efficacy and safety in patients with severe hepatic and/or renal impairment (FDA Coartem label, section 5.6)",
+      "Plasmodium vivax: Coartem is effective against the erythrocytic stage of P. vivax in limited data (43 patients), but relapsing malaria requires additional treatment with other antimalarial agents to achieve radical cure and eradicate hypnozoites remaining in the liver (FDA Coartem label, section 5.7)"
+    ],
+    "precautions": [
+      "No specific dose adjustments are needed in patients with mild or moderate hepatic impairment, and no dose adjustment is recommended in renal impairment because there is no significant renal excretion of lumefantrine, artemether and DHA; caution should be exercised in patients with severe hepatic or renal impairment (FDA Coartem label, sections 2.4 and 8.6)",
+      "Coartem should be used cautiously with concomitant drugs that can induce hypotension, bradycardia, or respiratory or central nervous system depression (FDA Coartem label, section 5.7)",
+      "Patients with impaired consciousness at presentation should not be given ACTs containing mefloquine as follow-on treatment because of the increased incidence of neuropsychiatric complications (WHO guidelines for malaria, 13 August 2025, section 5.2.2, Practical info: Follow-on treatment)",
+      "Coartem may reduce the effectiveness of hormonal contraceptives; an additional barrier method or alternative non-hormonal method is required during treatment (FDA Coartem label, sections 5.3 and 8.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity reactions including anaphylaxis, urticaria, angioedema and serious skin reactions (bullous eruption) (FDA Coartem label, section 6.2)",
+      "Delayed haemolytic anaemia, reported mostly when artemether-lumefantrine was used to treat severe malaria in patients initially treated with IV/parenteral artesunate; Coartem is not approved for severe malaria (FDA Coartem label, section 6.2)",
+      "QTcF prolongation: maximum mean change from baseline and placebo-adjusted QTcF was 7.5 msec after the 6-dose regimen, with a concentration-dependent increase for lumefantrine; QTcF greater than 500 msec occurred in 3 (0.3%) adults and over 6% of adults had an increase in QTcF of over 60 msec from baseline (FDA Coartem label, section 12.6)"
+    ],
+    "food_interactions": [
+      "Coartem tablets should be taken with food; a high-fat meal increased the relative bioavailability of artemether 2- to 3-fold and of lumefantrine 16-fold compared with fasting conditions, and patients should be encouraged to take Coartem with a meal as soon as food can be tolerated (FDA Coartem label, sections 2.1 and 12.3)",
+      "Food enhances the absorption of both artemether and lumefantrine; patients who remain averse to food during treatment are at increased risk of recrudescence and should be closely monitored (FDA Coartem label, section 5.5)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Published data from clinical studies and pharmacovigilance data have not established an association between artemether/lumefantrine use during pregnancy and major birth defects, miscarriage, or adverse maternal or fetal outcomes. A meta-analysis of observational studies including over 500 artemether-lumefantrine exposed women in the first trimester, plus observational and open-label data in more than 1200 women in the second or third trimester, have not demonstrated an increase in major birth defects, miscarriage, or adverse maternal or fetal outcomes, though these studies have important methodological limitations. In animal studies, pregnant rats dosed orally with artemether-lumefantrine during organogenesis showed increases in fetal loss, early resorptions and postimplantation loss, and pregnant rabbits showed abortions and reduced live fetuses at higher exposures; the relevance of these findings to human risk is unclear (FDA Coartem label, section 8.1). WHO recommends artemether + lumefantrine for uncomplicated P. falciparum malaria in all trimesters of pregnancy, including the first trimester (strong recommendation, low certainty evidence) (WHO guidelines for malaria, 13 August 2025, section 5.2.1.4.1).",
+    "lactation_guidance": "There are no data on the presence of artemether or lumefantrine in human milk, the effects on the breastfed infant, or the effects on milk production. Artemether and lumefantrine are transferred into rat milk; when a drug is transferred into animal milk, it is likely that the drug will also be transferred into human milk. The development and health benefits of breastfeeding should be considered along with the mother's clinical need for Coartem and any potential adverse effects on the breastfed infant from Coartem or from the underlying maternal condition (FDA Coartem label, section 8.2). WHO lists artemether + lumefantrine among the ACTs recommended for uncomplicated P. falciparum malaria in lactating women (WHO guidelines for malaria, 13 August 2025, section 5.2.1).",
+    "overdose": "There is no information on overdoses of Coartem tablets higher than the doses recommended for treatment. In cases of suspected overdosage, symptomatic and supportive therapy, which would include ECG and blood electrolyte monitoring, should be given as appropriate (FDA Coartem label, section 10).",
+    "pharmacokinetics": "Following oral administration, artemether is absorbed with peak plasma concentrations about 2 hours after dosing; lumefantrine, a highly lipophilic compound, has a lag time of up to 2 hours with peak concentrations about 6 to 8 hours after administration. In healthy volunteers under fasted conditions after a single 4-tablet dose (80 mg artemether, 480 mg lumefantrine), artemether Cmax was 60.0 to 83.8 ng/mL with a terminal half-life of 1.6 to 2.2 hours; DHA Cmax was 90.4 to 104 ng/mL with a half-life of 1.6 to 2.2 hours; lumefantrine Cmax was 7.38 to 9.80 microgram/mL with a half-life of 101 to 119 hours. Artemether and lumefantrine are highly bound to human serum proteins (95.4% and 99.7% respectively) and DHA is 47% to 76% bound. Artemether is metabolised predominantly by CYP3A4/5 and to a lesser extent CYP2B6, CYP2C9 and CYP2C19; lumefantrine is metabolised mainly by CYP3A4 to desbutyl-lumefantrine, whose systemic exposure is less than 1% of the parent compound. Artemether and DHA are cleared from plasma with an elimination half-life of about 2 hours; lumefantrine is eliminated more slowly with an elimination half-life of 3 to 6 days. In 16 healthy volunteers neither lumefantrine nor artemether was found in the urine after administration of Coartem and urinary excretion of DHA amounted to less than 0.01% of the artemether dose (FDA Coartem label, section 12.3).",
+    "clinical_pearls": [
+      "Coartem treats acute uncomplicated P. falciparum malaria only; it is not for severe or complicated malaria and not for malaria prevention (FDA Coartem label, section 1). The parenteral agent for severe malaria is artesunate injection, covered separately under 'Artesunate'.",
+      "Coartem must be taken with food: a high-fat meal raised artemether bioavailability 2- to 3-fold and lumefantrine bioavailability 16-fold, and food refusal during treatment increases the risk of recrudescence (FDA Coartem label, sections 2.1, 5.5 and 12.3).",
+      "If the patient vomits within 1 to 2 hours of a dose, give a repeat dose; if the repeat dose is also vomited, treat with a different antimalarial (FDA Coartem label, section 2.1).",
+      "The long half-life of lumefantrine (3 to 6 days) is the reason for the one-month washout from halofantrine and for caution with any QT-prolonging drug after a Coartem course (FDA Coartem label, sections 5.1, 5.2 and 12.3).",
+      "Artemether and lumefantrine are active only against erythrocytic stages; P. vivax requires additional antimalarial treatment to eradicate hypnozoites and achieve radical cure (FDA Coartem label, section 5.7).",
+      "WHO eEML status: artemether + lumefantrine is a Core (EMLc) essential medicine, ATC code P01BF01, first added in 2002 (TRS 914) for malaria due to Plasmodium falciparum and also for malaria due to Plasmodium vivax, with changes in 2007, 2009 and 2025 (WHO eEML, artemether + lumefantrine, recommendations 791 and 1457). The 2025 Expert Committee removed the footnotes describing a weight restriction and use during pregnancy, noting that use should follow the WHO malaria guidelines.",
+      "KEML 2023 places both the 20 mg + 120 mg tablet and the 20 mg + 120 mg dispersible tablet at Level of Use 1 (community health services), with the dispersible tablet restricted to patients 5 to <25 kg and the tablet to patients 25 to >35 kg (KEML 2023, section 7.5.3.1.2 and footnotes 170-171).",
+      "Lumefantrine inhibits CYP2D6, so coadministration with CYP2D6 substrates that also prolong the QT interval (flecainide, imipramine, amitriptyline, clomipramine) should be avoided (FDA Coartem label, sections 5.1, 5.4 and 7.6)."
+    ],
+    "brand_names": ["Coartem"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment for the use of Coartem tablets in patients with renal impairment is advised: pharmacokinetic data in 16 healthy subjects showed no or insignificant renal excretion of lumefantrine, artemether and DHA, and there is no significant renal excretion of these agents in healthy volunteers (FDA Coartem label, sections 2.4 and 8.6). Coartem has not been studied for efficacy and safety in patients with severe renal impairment (section 5.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary in patients with mild-to-moderate hepatic impairment; the adverse event profile did not differ in patients with mild or moderate hepatic impairment compared with patients with normal hepatic function (FDA Coartem label, sections 2.4 and 8.6). Coartem has not been studied for efficacy and safety in patients with severe hepatic impairment (section 5.6).",
+    "administration_instructions": "Oral administration. Tablets should be taken with food; for patients unable to swallow them, tablets may be crushed and mixed with 1 to 2 teaspoons of water in a clean container immediately prior to use, the container rinsed with more water and the contents swallowed, followed whenever possible by food or drink (FDA Coartem label, sections 2.1 and 2.2). Each tablet contains 20 mg artemether and 120 mg lumefantrine and is a yellow, round, flat tablet with beveled edges, scored on one side and imprinted with 'N/C' on one side and 'CG' on the other (section 3). Coartem is supplied in bottles of 24 (NDC 0078-0568-45) and should be stored at 20 to 25 degrees C (68 to 77 degrees F), with excursions permitted between 15 and 30 degrees C, dispensed in a tight container (section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, COARTEM (artemether and lumefantrine) tablet [Novartis Pharmaceutical Corporation], sections 11, 12.1 and 12.4 (Microbiology)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, COARTEM, section 1 (Indications and Usage, including Limitations of Use); WHO eEML artemether + lumefantrine (recommendations 791, 1457); WHO guidelines for malaria, 13 August 2025, sections 5.2.1 and 5.2.1.4.1; Kenya Essential Medicines List 2023, section 7.5.3.1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, COARTEM, section 4 (Contraindications: hypersensitivity; strong CYP3A4 inducers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, COARTEM, sections 6.1 (Tables 1 and 2) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, COARTEM, sections 2.1-2.4, 3, 8.4 and 8.5; WHO guidelines for malaria, 13 August 2025, Practical info: Artemether + lumefantrine; Kenya Essential Medicines List 2023, section 7.5.3.1.2 and footnotes 170-171",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, COARTEM, sections 5.1-5.4, 7.1-7.8 and 12.3 (Drug Interaction Studies)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, COARTEM, sections 5.1, 5.2, 5.5, 6.1, 7.4 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, COARTEM, sections 2.1 and 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, COARTEM, sections 5.1-5.7 (Warnings and Precautions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, COARTEM, sections 2.4, 5.3, 5.7, 8.3 and 8.6; WHO guidelines for malaria, 13 August 2025, Practical info: Follow-on treatment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, COARTEM, sections 6.2 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, COARTEM, sections 2.1, 5.5 and 12.3 (Absorption - food effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, COARTEM, section 8.1 (Pregnancy); WHO guidelines for malaria, 13 August 2025, section 5.2.1.4.1 (Treatment in the first trimester of pregnancy, 2022)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, COARTEM, section 8.2 (Lactation); WHO guidelines for malaria, 13 August 2025, section 5.2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, COARTEM, section 10 (Overdosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, COARTEM, section 12.3 (Pharmacokinetics, including Tables 3 and 4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, COARTEM, sections 1, 2.1, 5.1, 5.2, 5.4, 5.5, 5.7, 7.6 and 12.3; WHO eEML artemether + lumefantrine (recommendations 791, 1457) EML status history; Kenya Essential Medicines List 2023, section 7.5.3.1.2 and footnotes 170-171",
+      "url": "https://list.essentialmeds.org/recommendations/791"
+    },
+    {
+      "field": "brand_names",
+      "ref": "COARTEM listed as a brand product on DailyMed (Novartis Pharmaceutical Corporation); also named in the Kenya Essential Medicines List 2023 as artemether + lumefantrine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the COARTEM prescribing information; the principal risks are presented in Warnings and Precautions, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, COARTEM, sections 2.4, 5.6 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, COARTEM, sections 2.4, 5.6 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, COARTEM, sections 2.1, 2.2, 3 and 16 (How Supplied/Storage and Handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the COARTEM label is written in the Pregnancy and Lactation Labeling Rule format and does not state a pregnancy category letter)"
+  ],
+  "notes": "The table stores this agent as 'Artemether-Lumefantrine' (with an en dash) with no drug_class and no brand names populated. The previously stored olanzapine/schizophrenia label text and the antipsychotic dementia boxed warning that had been copied onto this row were removed on 2026-10-05 and are not applicable to an antimalarial; this draft replaces them with artemether-lumefantrine-specific content. The file name must remain artemether-lumefantrine.json (kebab-case ASCII) even though the name field keeps the en dash. This monograph covers the Coartem fixed-dose combination only; the standalone artemether oily injection for severe malaria is covered under 'Artemether' and injectable artesunate under 'Artesunate'. Coartem is not approved for severe or complicated malaria. Coartem has no boxed warning in its prescribing information, so black_box_warnings is an empty array."
+}

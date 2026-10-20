@@ -1,0 +1,221 @@
+{
+  "name": "Atosiban",
+  "existing_id": "977c1bf4-bc5c-4dfd-a1eb-7e5836986df1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atosiban is a synthetic peptide ([Mpa1,D-Tyr(Et)2,Thr4,Orn8]-oxytocin) which is a competitive antagonist of human oxytocin at receptor level. In rats and guinea pigs, atosiban was shown to bind to oxytocin receptors, to decrease the frequency of contractions and the tone of the uterine musculature, resulting in suppression of uterine contractions. Atosiban was also shown to bind to the vasopressin receptor, thus inhibiting the effect of vasopressin. In animals atosiban did not exhibit cardiovascular effects. In human pre-term labour, atosiban at the recommended dosage antagonises uterine contractions and induces uterine quiescence; the onset of uterine relaxation following atosiban is rapid, uterine contractions being significantly reduced within 10 minutes to achieve stable uterine quiescence (4 or fewer contractions per hour) for 12 hours (EMA Tractocile SmPC, section 5.1). Atosiban is pharmacotherapeutically classified in the group of other gynecologicals, ATC code G02CX01 (EMA Tractocile SmPC, section 5.1).",
+    "indications": [
+      "Delay of imminent pre-term birth in pregnant adult women with: regular uterine contractions of at least 30 seconds duration at a rate of 4 or more per 30 minutes; a cervical dilation of 1 to 3 cm (0 to 3 cm for nulliparas) and effacement of 50% or more; a gestational age from 24 until 33 completed weeks; and a normal foetal heart rate (EMA Tractocile SmPC, section 4.1)",
+      "The indication is for the same patient group whether the bolus solution for injection (Tractocile 6.75 mg/0.9 ml) or the concentrate for solution for infusion (Tractocile 37.5 mg/5 ml) is used (EMA Tractocile SmPC, sections 4.1 of each product)"
+    ],
+    "contraindications": [
+      "Gestational age below 24 or over 33 completed weeks (EMA Tractocile SmPC, section 4.3)",
+      "Premature rupture of the membranes greater than 30 weeks of gestation (EMA Tractocile SmPC, section 4.3)",
+      "Abnormal foetal heart rate (EMA Tractocile SmPC, section 4.3)",
+      "Antepartum uterine haemorrhage requiring immediate delivery (EMA Tractocile SmPC, section 4.3)",
+      "Eclampsia and severe pre-eclampsia requiring delivery (EMA Tractocile SmPC, section 4.3)",
+      "Intrauterine foetal death (EMA Tractocile SmPC, section 4.3)",
+      "Suspected intrauterine infection (EMA Tractocile SmPC, section 4.3)",
+      "Placenta praevia (EMA Tractocile SmPC, section 4.3)",
+      "Abruptio placenta (EMA Tractocile SmPC, section 4.3)",
+      "Any other conditions of the mother or foetus in which continuation of pregnancy is hazardous (EMA Tractocile SmPC, section 4.3)",
+      "Hypersensitivity to the active substance or to any of the excipients (EMA Tractocile SmPC, section 4.3)"
+    ],
+    "side_effects": [
+      "In total 48% of the patients treated with atosiban experienced adverse reactions during the clinical trials, and the observed adverse reactions were generally of a mild severity; the most commonly reported adverse reaction in the mother is nausea (14%) (EMA Tractocile SmPC, section 4.8)",
+      "Immune system disorders, rare: allergic reaction (EMA Tractocile SmPC, section 4.8)",
+      "Metabolism and nutrition disorders, very common: hyperglycaemia (EMA Tractocile SmPC, section 4.8)",
+      "Psychiatric disorders, uncommon: insomnia (EMA Tractocile SmPC, section 4.8)",
+      "Nervous system disorders, very common: headache and dizziness (EMA Tractocile SmPC, section 4.8)",
+      "Cardiac disorders, very common: tachycardia (EMA Tractocile SmPC, section 4.8)",
+      "Vascular disorders, very common: hypotension and hot flush (EMA Tractocile SmPC, section 4.8)",
+      "Gastrointestinal disorders, very common: nausea; common: vomiting (EMA Tractocile SmPC, section 4.8)",
+      "Skin and subcutaneous tissue disorders, uncommon: pruritus and rash (EMA Tractocile SmPC, section 4.8)",
+      "Reproductive system and breast disorders, rare: uterine haemorrhage and uterine atony (EMA Tractocile SmPC, section 4.8)",
+      "General disorders and administration site conditions, very common: injection site reaction; common: pyrexia (EMA Tractocile SmPC, section 4.8)",
+      "Post-marketing experience: respiratory events such as dyspnoea and pulmonary oedema have been reported, particularly in association with concomitant administration of other medicinal products with tocolytic activity such as calcium antagonists and beta-mimetics, and/or in women with multiple pregnancy (EMA Tractocile SmPC, section 4.8)",
+      "For the newborn, the clinical trials did not reveal any specific adverse reactions of atosiban; infant adverse reactions were within the range of normal variation and comparable with both placebo and beta-mimetic group incidences (EMA Tractocile SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Treatment with atosiban should be initiated and maintained by a physician experienced in the treatment of pre-term labour. Intravenous therapy using the initial bolus injection should be started as soon as possible after the diagnosis of pre-term labour. Three successive stages: step 1 - 0.9 ml intravenous bolus injection given over 1 minute, 6.75 mg; step 2 - 3 hours intravenous loading infusion at 24 ml/hour (300 micrograms/min), 54 mg; step 3 - up to 45 hours subsequent intravenous infusion at 8 ml/hour (100 micrograms/min), up to 270 mg. The duration of treatment should not exceed 48 hours and the total dose given during a full course of atosiban therapy should preferably not exceed 330.75 mg. In the case of persistence of uterine contractions during treatment, alternative therapy should be considered (EMA Tractocile SmPC, section 4.2). Re-treatment, if needed, also commences with a bolus injection of 6.75 mg/0.9 ml solution for injection followed by infusion of the 37.5 mg/5 ml concentrate; re-treatment is possible but there is only limited clinical experience with multiple re-treatments, up to 3 re-treatments (EMA Tractocile SmPC, sections 4.2 and 4.4).",
+      "geriatric": "The EMA Tractocile SmPC does not address use in elderly patients; the product is indicated only in pregnant adult women with pre-term labour (EMA Tractocile SmPC, sections 4.1 and 4.2). No geriatric dose adjustment is stated.",
+      "paediatric": "The safety and efficacy of atosiban in pregnant women aged less than 18 years have not been established and no data are available (EMA Tractocile SmPC, section 4.2). Treatment of patients with a gestational age of less than 24 completed weeks is not recommended because safety and efficacy in this group has not been established in controlled randomised studies (EMA Tractocile SmPC, section 5.1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "It is unlikely that atosiban is involved in cytochrome P450-mediated drug-drug interactions, as in vitro investigations have shown that atosiban is not a substrate for the cytochrome P450 system and does not inhibit the drug-metabolising cytochrome P450 enzymes (EMA Tractocile SmPC, section 4.5)",
+      "Interaction studies have been performed with labetalol and betamethasone in healthy female volunteers, and no clinically relevant interaction was found between atosiban and betamethasone or labetalol (EMA Tractocile SmPC, section 4.5)",
+      "Multiple pregnancy and concomitant administration of other medicinal products with tocolytic activity such as calcium channel blockers and beta-mimetics are known to be associated with increased risk of pulmonary oedema, so atosiban should be used with caution in these situations (EMA Tractocile SmPC, sections 4.4 and 4.8)",
+      "In the absence of compatibility studies, this medicinal product must not be mixed with other medicinal products (EMA Tractocile SmPC, section 6.2)"
+    ],
+    "monitoring": "Monitoring of uterine contractions and foetal heart rate during administration of atosiban, and in case of persistent uterine contractions, should be considered (EMA Tractocile SmPC, section 4.4). Because atosiban is an antagonist of oxytocin it may theoretically facilitate uterine relaxation and postpartum bleeding, so blood loss after delivery should be monitored; however, inadequate uterine contraction postpartum was not observed during the clinical trials (EMA Tractocile SmPC, section 4.4). In the case of intrauterine growth retardation, the decision to continue or reinitiate atosiban depends on the assessment of foetal maturity (EMA Tractocile SmPC, section 4.4). The loading infusion and the bolus dose must be given under adequate medical supervision in an obstetric unit (EMA Tractocile SmPC, sections 4.2 and 6.6).",
+    "patient_counselling": "The EMA Tractocile SmPC states that if during pregnancy the woman is already breast-feeding an earlier child, breast-feeding should be discontinued during treatment with Tractocile, because the release of oxytocin during breast-feeding may augment uterine contractility and may counteract the effect of tocolytic therapy (EMA Tractocile SmPC, section 4.6). The product information directs that detailed information for the patient is available in the package leaflet; no separate patient counselling section is provided in the SmPC, so no further counselling statements are asserted here beyond the SmPC content on breast-feeding and on the need for supervision in an obstetric unit (EMA Tractocile SmPC, sections 4.6 and 6.6).",
+    "warnings": [
+      "When atosiban is used in patients in whom premature rupture of membranes cannot be excluded, the benefits of delaying delivery should be balanced against the potential risk of chorioamnionitis (EMA Tractocile SmPC, section 4.4)",
+      "There is only limited clinical experience in the use of atosiban in multiple pregnancies or in the gestational age group between 24 and 27 weeks, because of the small number of patients treated, so the benefit of atosiban in these subgroups is uncertain (EMA Tractocile SmPC, section 4.4)",
+      "Multiple pregnancy and concomitant administration of other medicinal products with tocolytic activity such as calcium channel blockers and beta-mimetics are known to be associated with increased risk of pulmonary oedema, so atosiban should be used with caution (EMA Tractocile SmPC, section 4.4)",
+      "As an antagonist of oxytocin, atosiban may theoretically facilitate uterine relaxation and postpartum bleeding, therefore blood loss after delivery should be monitored (EMA Tractocile SmPC, section 4.4)",
+      "Respiratory events such as dyspnoea and pulmonary oedema have been reported post-marketing, particularly in association with concomitant administration of other medicinal products with tocolytic activity such as calcium antagonists and beta-mimetics, and/or in women with multiple pregnancy (EMA Tractocile SmPC, section 4.8)",
+      "Atosiban should only be used when pre-term labour has been diagnosed between 24 and 33 completed weeks of gestation (EMA Tractocile SmPC, section 4.6)"
+    ],
+    "precautions": [
+      "There is no experience with atosiban treatment in patients with impaired function of the liver or kidneys; in patients with impaired hepatic function atosiban should be used with caution (EMA Tractocile SmPC, sections 4.2, 4.4 and 5.2)",
+      "Re-treatment with atosiban is possible, but there is only limited clinical experience available with multiple re-treatments, up to 3 re-treatments (EMA Tractocile SmPC, section 4.4)",
+      "In the case of persistence of uterine contractions during treatment with atosiban, alternative therapy should be considered (EMA Tractocile SmPC, section 4.2)",
+      "In the absence of compatibility studies, this medicinal product must not be mixed with other medicinal products (EMA Tractocile SmPC, section 6.2)",
+      "To achieve accurate dosing, a controlled infusion device is recommended to adjust the rate of flow in drops per minute (EMA Tractocile SmPC, section 6.6)"
+    ],
+    "serious_adverse_reactions": [
+      "Post-marketing respiratory events, including dyspnoea and pulmonary oedema, particularly in association with concomitant tocolytics and in multiple pregnancy (EMA Tractocile SmPC, section 4.8)",
+      "Uterine haemorrhage and uterine atony (rare) (EMA Tractocile SmPC, section 4.8)",
+      "Allergic reaction (rare) and hyperglycaemia (very common) (EMA Tractocile SmPC, section 4.8)",
+      "Intrauterine foetal death and other maternal or foetal conditions in which continuation of pregnancy is hazardous are contraindications, not adverse reactions, and are listed under contraindications (EMA Tractocile SmPC, section 4.3)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "Not applicable in the US FDA letter-category sense: atosiban is not FDA-approved and the EMA Tractocile SmPC does not assign a letter category. The SmPC restricts use to pre-term labour diagnosed between 24 and 33 completed weeks of gestation (EMA Tractocile SmPC, section 4.6).",
+    "pregnancy_guidance": "Atosiban is a tocolytic used only during pregnancy, and its use is limited to the indication above: it should only be used when pre-term labour has been diagnosed between 24 and 33 completed weeks of gestation. Embryo-fetal toxicity studies have not shown toxic effects of atosiban. No studies were performed covering fertility and early embryonic development. Reproduction toxicity studies with dosing from implantation up to late stage pregnancy showed no effects on mothers and foetuses; the exposure of the rat foetus was approximately four times that received by the human foetus during intravenous infusions in women, and animal studies have shown inhibition of lactation as expected from the inhibition of the action of oxytocin. In a placebo-controlled study, foetal/infant deaths were 5/295 (1.7%) in the placebo group and 15/288 (5.2%) in the atosiban group, of which two occurred at five and eight months of age; eleven of the 15 deaths in the atosiban group occurred in pregnancies with a gestational age of 20 to 24 weeks, although in this subgroup patient distribution was unequal (19 women on atosiban, 4 on placebo). For women with a gestational age greater than 24 weeks there was no difference in mortality rate (1.7% in the placebo group and 1.5% in the atosiban group) (EMA Tractocile SmPC, sections 4.6, 5.1 and 5.3).",
+    "lactation_guidance": "If during pregnancy the woman is already breast-feeding an earlier child, breast-feeding should be discontinued during treatment with Tractocile, because the release of oxytocin during breast-feeding may augment uterine contractility and may counteract the effect of tocolytic therapy. In atosiban clinical trials no effects were observed on breast-feeding. Small amounts of atosiban have been shown to pass from plasma into the breast milk of breast-feeding women, and the main metabolite M1 is excreted in milk (EMA Tractocile SmPC, sections 4.6 and 5.2).",
+    "overdose": "Few cases of atosiban overdosing were reported, and they occurred without any specific signs or symptoms. There is no known specific treatment in case of an overdose (EMA Tractocile SmPC, section 4.9).",
+    "pharmacokinetics": "In healthy non-pregnant subjects receiving atosiban infusions of 10 to 300 micrograms/min over 12 hours, steady state plasma concentrations increased proportionally to the dose, and clearance, volume of distribution and half-life were found to be independent of the dose. In women in pre-term labour receiving atosiban by infusion at 300 micrograms/min for 6 to 12 hours, steady state plasma concentrations were reached within one hour following the start of the infusion (mean 442 +/- 73 ng/ml, range 298 to 533 ng/ml). Following completion of the infusion, plasma concentration rapidly declined with initial (t-alpha) and terminal (t-beta) half-lives of 0.21 +/- 0.01 and 1.7 +/- 0.3 hours respectively; mean clearance was 41.8 +/- 8.2 litres/hour and mean volume of distribution was 18.3 +/- 6.8 litres. Plasma protein binding of atosiban is 46 to 48% in pregnant women; atosiban does not partition into red blood cells. Atosiban passes the placenta, and following an infusion of 300 micrograms/min in healthy pregnant women at term the foetal/maternal atosiban concentration ratio was 0.12. Two metabolites were identified in plasma and urine; the main metabolite M1 is approximately 10 times less potent than atosiban in inhibiting oxytocin-induced uterine contractions in vitro. Atosiban is found in only small quantities in urine, its urinary concentration being about 50 times lower than that of M1, and the proportion of atosiban eliminated in faeces is not known (EMA Tractocile SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Atosiban is an oxytocin receptor antagonist, not a beta-mimetic: it is selective for uterine tocolysis, which is why the label emphasises that the concomitant use of other tocolytics (calcium channel blockers, beta-mimetics) and multiple pregnancy carry a specific risk of pulmonary oedema (EMA Tractocile SmPC, sections 4.4 and 5.1).",
+      "The regimen is fixed and time-limited: 6.75 mg bolus over 1 minute, then 300 micrograms/min for 3 hours, then 100 micrograms/min for up to 45 hours, with a maximum treatment duration of 48 hours and a preferred maximum total dose of 330.75 mg (EMA Tractocile SmPC, section 4.2).",
+      "The labelled gestational window is narrow: 24 to 33 completed weeks, with the label noting that safety and efficacy below 24 completed weeks has not been established in controlled randomised studies and that treatment of that group is not recommended (EMA Tractocile SmPC, sections 4.3 and 5.1).",
+      "Re-treatment is allowed but the experience is limited to up to 3 re-treatments, and each re-treatment must start again with a bolus (EMA Tractocile SmPC, sections 4.2 and 4.4).",
+      "Uterine quiescence is achieved quickly: contractions are significantly reduced within 10 minutes and stable quiescence of 4 or fewer contractions per hour is maintained for 12 hours at the recommended dose (EMA Tractocile SmPC, section 5.1).",
+      "In the phase III CAP-001 studies, 59.6% (201/337) of atosiban-treated women versus 47.7% (163/342) of beta-agonist-treated women remained undelivered and did not require alternative tocolysis within 7 days (p=0.0004), but treatment failures caused by insufficient efficacy were more frequent with atosiban (14.2% versus 5.8%, p=0.0003), largely reflecting poorer tolerability (EMA Tractocile SmPC, section 5.1).",
+      "Because atosiban is an oxytocin antagonist, postpartum blood loss should be monitored after delivery, although inadequate uterine contraction postpartum was not observed in the clinical trials (EMA Tractocile SmPC, section 4.4).",
+      "Atosiban is not on the WHO Model List of Essential Medicines (24th list, 2025), where the only tocolytic listed is nifedipine immediate-release capsule 10 mg, and it is not listed in the Kenya Essential Medicines List 2023, where section 23.7 Anti-oxytocics (Tocolytics) lists only salbutamol injection and terbutaline injection (WHO eEML 24th list, section 22.5; KEML 2023, item 23.7)."
+    ],
+    "brand_names": ["Tractocile", "Partosiban"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Renal impairment is not likely to warrant a dose adjustment, since only a small extent of atosiban is excreted in the urine; however, there is no experience with atosiban treatment in patients with impaired function of the liver or kidneys (EMA Tractocile SmPC, sections 4.2, 4.4 and 5.2).",
+    "hepatic_dose_adjustment": "No dose adjustment is specified for hepatic impairment. There is no experience with atosiban treatment in patients with impaired function of the liver or kidneys, and in patients with impaired hepatic function atosiban should be used with caution (EMA Tractocile SmPC, sections 4.2, 4.4 and 5.2).",
+    "administration_instructions": "Intravenous use only, in three successive stages under adequate medical supervision in an obstetric unit. Preparation of the initial intravenous injection: withdraw 0.9 ml from a vial of Tractocile 6.75 mg/0.9 ml solution for injection and administer slowly as an intravenous bolus dose over one minute; the solution for injection should be used immediately. Preparation of the intravenous infusion solution: Tractocile 37.5 mg/5 ml concentrate for solution for infusion should be diluted in sodium chloride 9 mg/ml (0.9%) solution for injection, Ringer's lactate solution, or 5% w/v glucose solution; withdraw 10 ml solution from a 100 ml infusion bag and discard, and replace it with 10 ml of concentrate from two 5 ml vials to obtain a concentration of 75 mg atosiban in 100 ml. The reconstituted product is a clear, colourless solution without particles. Give the loading infusion at 24 ml/hour (18 mg/hour) over the 3 hour period, then reduce the infusion rate to 8 ml/hour; prepare new 100 ml bags in the same way to continue the infusion, and if an infusion bag of a different volume is used make a proportional calculation. Use a controlled infusion device to adjust the flow rate in drops per minute. Vials should be inspected visually for particulate matter and discoloration before administration. Once the vial has been opened, the solution for injection must be used immediately and the dilution of the concentrate must be performed immediately; the diluted solution for intravenous administration should be used within 24 hours after preparation. Store in a refrigerator at 2 to 8 degrees C in the original package to protect from light; shelf life 4 years (EMA Tractocile SmPC, sections 6.3, 6.4 and 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "EMA Tractocile SmPC (EU/1/99/124/001), section 5.1",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "EMA Tractocile SmPC, section 4.1 (both the 6.75 mg/0.9 ml solution for injection and the 37.5 mg/5 ml concentrate for solution for infusion)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "EMA Tractocile SmPC, section 4.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "EMA Tractocile SmPC, section 4.8 (adverse reaction frequency table and post-marketing experience)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "EMA Tractocile SmPC, sections 4.1, 4.2, 4.4 and 5.1",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "EMA Tractocile SmPC, sections 4.4, 4.5, 4.8 and 6.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 4.4 and 6.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "EMA Tractocile SmPC, sections 4.6 and 6.6 (no separate patient counselling section is provided in the SmPC)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "EMA Tractocile SmPC, sections 4.4, 4.6 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 4.4, 6.2 and 6.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EMA Tractocile SmPC, sections 4.3, 4.8 and 5.1",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the EMA Tractocile SmPC",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "EMA Tractocile SmPC, section 4.6 (no FDA letter category; atosiban is not FDA-approved)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "EMA Tractocile SmPC, sections 4.6, 5.1 and 5.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "EMA Tractocile SmPC, sections 4.6 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "EMA Tractocile SmPC, section 4.9",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "EMA Tractocile SmPC, section 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 4.3, 4.4, 4.6, 5.1 and 5.2; WHO Model List of Essential Medicines, 24th list (2025), section 22.5; Kenya Essential Medicines List 2023, item 23.7",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Tractocile is the EU-authorised brand of atosiban (Ferring Pharmaceuticals A/S, EU/1/99/124/001) and Partosiban is the EU-authorised brand of atosiban acetate (Sun Pharma)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tractocile"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The EMA Tractocile SmPC contains no boxed-warning equivalent (the US boxed-warning framework does not apply to an EU-authorised product); the field is left as an empty array rather than asserting a boxed warning",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 4.4 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 4.4 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "EMA Tractocile SmPC, sections 4.2, 6.3, 6.4 and 6.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/tractocile-epar-product-information_en.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the full three-stage regimen is given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; atosiban is not used in patients below 24 completed weeks of gestation and paediatric data are not established)",
+    "black_box_warnings (the EMA SmPC has no boxed-warning equivalent; the field is left as an empty array)",
+    "food_interactions (no food interaction is described in the EMA Tractocile SmPC)"
+  ],
+  "notes": "The table stores this agent as 'Atosiban' with drug_class 'Endocrine / metabolic agent' and an empty brand_names list. Atosiban is a tocolytic oxytocin receptor antagonist and is not FDA-approved; the authoritative source used here is the EMA Tractocile SmPC (EU/1/99/124/001), which covers both the 6.75 mg/0.9 ml solution for injection and the 37.5 mg/5 ml concentrate for solution for infusion, and the document is the product information for the Tractocile brand. Partosiban (atosiban acetate, Sun Pharma) is the other EU-authorised brand and its EMA product information is substantially identical; it is listed in brand_names for that reason, but all quoted content in this draft is taken from the Tractocile SmPC. The stored drug_class 'Endocrine / metabolic agent' is not pharmacologically accurate for atosiban (ATC G02CX01, other gynecologicals) but is left unchanged because drafts are content only. On essential medicines lists: atosiban is not on the WHO Model List of Essential Medicines, 24th list (2025), where the only tocolytic listed is nifedipine immediate-release capsule 10 mg (section 22.5), and it is not listed in the Kenya Essential Medicines List 2023, where section 23.7 Anti-oxytocics (Tocolytics) lists salbutamol injection and terbutaline injection only. The existing row's content_status_note records that olanzapine label text and an antipsychotic dementia boxed warning were removed from this row on 2026-10-05; neither is present in this draft."
+}

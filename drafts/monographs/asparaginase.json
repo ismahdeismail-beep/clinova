@@ -1,0 +1,231 @@
+{
+  "name": "Asparaginase",
+  "existing_id": "0764bbf4-734f-4c28-b679-afb324c4380e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Two distinct asparaginase products are covered here and each is described from its own label. RYLAZE (asparaginase erwinia chrysanthemi recombinant-rywn) is an enzyme that catalyzes the conversion of the amino acid L-asparagine into aspartic acid and ammonia; the pharmacological effect of RYLAZE is based on the killing of leukemic cells due to depletion of plasma asparagine, and leukemic cells with low expression of asparagine synthetase have a reduced ability to synthesize asparagine and therefore depend on an exogenous source of asparagine for survival (RYLAZE label, section 12.1). ERWINAZE (asparaginase Erwinia chrysanthemi) catalyzes the deamidation of asparagine to aspartic acid and ammonia, resulting in a reduction in circulating levels of asparagine; the mechanism of action is thought to be based on the inability of leukemic cells to synthesize asparagine due to lack of asparagine synthetase activity, resulting in cytotoxicity specific for leukemic cells that depend on an exogenous source of asparagine for their protein metabolism and survival (ERWINAZE label, section 12.1). ELSPAR (E. coli-derived asparaginase) contains the enzyme L-asparagine amidohydrolase, type EC-2, derived from Escherichia coli; the mechanism of action of Elspar is thought to be based on selective killing of leukemic cells due to depletion of plasma asparagine, because some leukemic cells are unable to synthesize asparagine due to a lack of asparagine synthetase and are dependent on an exogenous source of asparagine (ELSPAR label, sections 11 and 12.1).",
+    "indications": [
+      "RYLAZE: as a component of a multi-agent chemotherapeutic regimen for the treatment of acute lymphoblastic leukemia (ALL) and lymphoblastic lymphoma (LBL) in adult and pediatric patients 1 month or older who have developed hypersensitivity to E. coli-derived asparaginase (RYLAZE label, section 1)",
+      "ERWINAZE: as a component of a multi-agent chemotherapeutic regimen for the treatment of patients with acute lymphoblastic leukemia (ALL) who have developed hypersensitivity to E. coli derived asparaginase (ERWINAZE label, section 1)",
+      "ELSPAR (E. coli-derived): as a component of a multi-agent chemotherapeutic regimen for the treatment of patients with acute lymphoblastic leukemia (ALL) (ELSPAR label, section 1)",
+      "WHO Model List of Essential Medicines, 24th list (2025): asparaginase (including quality-assured biosimilars), powder for injection 10 000 IU in vial, on the Complementary List under 8.2.1 Cytotoxic medicines, for acute lymphoblastic leukaemia (WHO eEML 24th list, section 8.2.1)",
+      "Kenya Essential Medicines List 2023: L-Asparaginase, powder for injection/infusion, 10,000 IU vial, listed in section 9.2 (antineoplastic medicines) at level of use 5; the list note specifies use in acute lymphoblastic leukaemia in patients who have developed hypersensitivity to E. coli derived asparaginase, that the type required is the one produced by Erwinia chrysanthemi (also known as crisantaspase), and that anaphylaxis treatment must be available (KEML 2023, item 9.2.1.23 and note 226)"
+    ],
+    "contraindications": [
+      "RYLAZE is contraindicated in patients with: history of serious hypersensitivity reactions to Erwinia asparaginase, including anaphylaxis; history of serious pancreatitis during previous asparaginase therapy; history of serious thrombosis during previous asparaginase therapy; history of serious hemorrhagic events during previous asparaginase therapy; and severe hepatic impairment (RYLAZE label, section 4)",
+      "ERWINAZE is contraindicated in patients with a history of: serious hypersensitivity reactions to ERWINAZE, including anaphylaxis; serious pancreatitis with prior L-asparaginase therapy; serious thrombosis with prior L-asparaginase therapy; and serious hemorrhagic events with prior L-asparaginase therapy (ERWINAZE label, section 4)",
+      "ELSPAR (E. coli-derived) is contraindicated in patients with: serious allergic reactions to Elspar or other Escherichia coli-derived L-asparaginases; serious thrombosis with prior L-asparaginase therapy; pancreatitis with prior L-asparaginase therapy; and serious hemorrhagic events with prior L-asparaginase therapy (ELSPAR label, section 4)"
+    ],
+    "side_effects": [
+      "RYLAZE (Erwinia-derived, recombinant), most common adverse reactions with incidence greater than 20% in clinical trials: abnormal liver test, nausea, musculoskeletal pain, infection, fatigue, headache, febrile neutropenia, pyrexia, hemorrhage, stomatitis, abdominal pain, decreased appetite, drug hypersensitivity, hyperglycemia, diarrhea, pancreatitis, and hypokalemia (RYLAZE label, sections 6 and 6.1, Table 3)",
+      "RYLAZE: hypersensitivity reactions occurred in 29% of patients and were severe in 6%; anaphylaxis was observed in 2% of patients after intramuscular administration; discontinuation due to hypersensitivity reactions occurred in 5% (RYLAZE label, section 5.1)",
+      "RYLAZE: pancreatitis, including elevated amylase or lipase, was reported in 20% of patients and was severe in 8%; symptomatic pancreatitis occurred in 7% and was severe in 6%; elevated amylase or lipase without symptomatic pancreatitis occurred in 13% (RYLAZE label, section 5.2)",
+      "RYLAZE: bleeding was reported in 25% of patients and was severe in 2%; most commonly observed reactions were bruising (12%) and nose bleed (9%) (RYLAZE label, section 5.4)",
+      "RYLAZE: elevated bilirubin and/or transaminases occurred in 75% of patients, with 26% having Grade 3 or higher elevations; elevated bilirubin occurred in 28% and elevated transaminases in 73% (RYLAZE label, section 5.5)",
+      "ERWINAZE (Erwinia-derived): most common adverse reactions (incidence 1% or greater) are systemic hypersensitivity, hyperglycemia, transaminases abnormal, fever, pancreatitis, local reactions, vomiting, nausea, thrombosis, hyperbilirubinemia, abdominal pain/discomfort, and diarrhea (ERWINAZE label, section 6.1)",
+      "ERWINAZE: Grade 3 and 4 hypersensitivity reactions occurred in 5% of patients in clinical trials; pancreatitis was reported in 4% and glucose intolerance in 5% (ERWINAZE label, sections 5.1, 5.2 and 5.3)",
+      "ELSPAR (E. coli-derived): the most common adverse reactions are allergic reactions (including anaphylaxis), hyperglycemia, pancreatitis, central nervous system thrombosis, coagulopathy, hyperbilirubinemia, and elevated transaminases (ELSPAR label, section 6)",
+      "ELSPAR (E. coli-derived): serious adverse reactions listed under the label are anaphylaxis and serious allergic reactions, serious thrombosis, pancreatitis, glucose intolerance, coagulopathy, hepatotoxicity and abnormal liver function, posterior reversible encephalopathy syndrome (PRES), and risk of medication errors (ELSPAR label, section 6)"
+    ],
+    "dosage": {
+      "adult": "RYLAZE (recombinant Erwinia-derived) has two approved intramuscular replacement regimens: 25 mg/m2 every 48 hours; or 25 mg/m2 on Monday morning and Wednesday morning and 50 mg/m2 on Friday afternoon, with the Friday afternoon dose given 53 to 58 hours after the Wednesday morning dose. When given every 48 hours, 11 doses of RYLAZE replace one dose of a calaspargase pegol product (3 weeks of coverage) and 7 doses replace one dose of a pegaspargase product (2 weeks of coverage); with the 25/25/50 mg/m2 Monday/Wednesday/Friday schedule, 9 doses replace one calaspargase pegol dose and 6 doses replace one pegaspargase dose (RYLAZE label, sections 2.1 and 2.2, Table 1). ERWINAZE (Erwinia-derived) recommended dose is 25,000 International Units/m2 intramuscularly or intravenously three times a week (Monday/Wednesday/Friday) for six doses to substitute for each planned dose of pegaspargase, and 25,000 International Units/m2 intramuscularly or intravenously for each scheduled dose of native E. coli asparaginase; the UK SmPC for Erwinase gives 20,000 or 25,000 IU/m2 three times a week adjusted to local treatment protocols (ERWINAZE label, section 2.1). ELSPAR (E. coli-derived) recommended dose is 6,000 International Units/m2 intramuscularly or intravenously three times a week (ELSPAR label, section 2.1).",
+      "geriatric": "RYLAZE: clinical studies did not include sufficient numbers of patients 65 years of age or older to determine whether they respond differently from younger patients (RYLAZE label, section 8.5). ERWINAZE: clinical studies did not include geriatric patients (ERWINAZE label, section 8.5). ELSPAR: clinical studies did not include sufficient numbers of subjects aged 65 and older to determine whether they respond differently from younger subjects (ELSPAR label, section 8.5). No product-specific geriatric dose adjustment is stated in any of the three labels.",
+      "paediatric": "RYLAZE: safety and effectiveness have been established in pediatric patients 1 month to less than 17 years who have developed hypersensitivity to a long-acting E. coli-derived asparaginase; the trial included 139 pediatric patients (2 infants aged 1 month to under 2 years, 99 children, 38 adolescents) with no clinically meaningful differences in safety or nadir serum asparaginase activity across age groups; safety and effectiveness have not been established in patients younger than 1 month of age (RYLAZE label, section 8.4). ERWINAZE: safety and effectiveness have been established in pediatric patients 1 year and older as a component of a multi-agent regimen for ALL in patients who have developed hypersensitivity to E. coli-derived asparaginase (ERWINAZE label, section 8.4). ELSPAR (E. coli-derived): the label directs the reader to Clinical Studies (14), in which 823 patients under 16 years of age with previously untreated acute lymphoblastic or acute undifferentiated leukemia received Elspar 6,000 IU/m2 intramuscularly three times a week for 9 doses; 758 of 815 evaluable patients (93%) achieved complete remission (ELSPAR label, sections 8.4 and 14)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "ERWINAZE: no formal drug interaction studies have been performed with ERWINAZE (ERWINAZE label, section 12.3, Drug Interaction Studies)",
+      "ERWINAZE/UK SmPC: asparaginase must not be mixed with any other medicinal products prior to administration (ERWINAZE labelling, UK SmPC section 4.5)",
+      "ERWINAZE/UK SmPC: concomitant use of L-asparaginase with medicinal products affecting liver function may increase the risk of changes in liver parameters (for example increases of ASAT, ALAT, bilirubin) (ERWINAZE labelling, UK SmPC section 4.5)",
+      "ERWINAZE/UK SmPC: methotrexate and cytarabine - L-asparaginase may diminish or abolish the effect of methotrexate and cytarabine on malignant cells for as long as plasma asparagine levels are suppressed, so methotrexate or cytarabine should not be used with, or following, L-asparaginase while asparagine levels are below normal; alternatively, administration of L-asparaginase after methotrexate or cytarabine results in a synergistic effect (ERWINAZE labelling, UK SmPC section 4.5)",
+      "ERWINAZE/UK SmPC: prednisone - concomitant use may increase the risk of changes in clotting parameters (for example a decrease in fibrinogen and antithrombin III levels) (ERWINAZE labelling, UK SmPC section 4.5)",
+      "ERWINAZE/UK SmPC: vincristine - administration of vincristine concurrently with or immediately before treatment with L-asparaginase may be associated with increased toxicity and increased risk of anaphylaxis (ERWINAZE labelling, UK SmPC section 4.5)",
+      "ERWINAZE/UK SmPC: oral contraceptives - an indirect interaction between oral contraception and asparaginase cannot be ruled out, so oral contraceptives are not considered sufficiently safe and a different method of contraception should be used in women of childbearing potential (ERWINAZE labelling, UK SmPC sections 4.5 and 4.6)",
+      "RYLAZE: premedicate with acetaminophen, an H-1 receptor blocker (such as diphenhydramine) and an H-2 receptor blocker (such as famotidine) 30 to 60 minutes prior to administration to decrease the risk and severity of hypersensitivity reactions (RYLAZE label, section 2.2)",
+      "ELSPAR (E. coli-derived): no formal drug interaction studies between Elspar and other drugs have been performed (ELSPAR label, section 7)"
+    ],
+    "monitoring": "RYLAZE: monitor bilirubin, transaminases, glucose and clinical examinations prior to treatment every 2 to 3 weeks and as indicated clinically, and if results are abnormal monitor until recovery from the cycle; evaluate bilirubin and transaminases prior to each cycle and at least weekly during cycles that include RYLAZE, through four weeks after the last dose, and monitor frequently for signs of symptoms of hepatic veno-occlusive disease such as rapid weight gain, fluid retention with ascites, hepatomegaly and rapid increase in bilirubin (RYLAZE label, sections 2.3 and 5.5). ERWINAZE: evaluate patients with symptoms compatible with pancreatitis to establish a diagnosis, assess serum amylase and lipase in any patient with signs or symptoms of pancreatitis, monitor glucose levels at baseline and periodically during treatment and administer insulin as necessary for hyperglycaemia, and perform routine clotting screening before treatment initiation with monitoring during treatment (ERWINAZE label, sections 5.2, 5.3 and 5.4). ELSPAR (E. coli-derived): monitor serum glucose; monitor coagulation parameters at baseline and periodically during and after treatment and initiate fresh-frozen plasma to replace coagulation factors in severe or symptomatic coagulopathy; evaluate hepatic enzymes and bilirubin pretreatment and periodically during treatment; interrupt use if posterior reversible encephalopathy syndrome (PRES) is suspected or diagnosed, control blood pressure promptly and monitor closely for seizure activity (ELSPAR label, sections 5.4, 5.5, 5.6 and 5.7).",
+    "patient_counselling": "RYLAZE: inform patients of the risk of allergic reactions, including anaphylaxis, and instruct them to seek medical advice immediately if such symptoms occur; instruct patients on the signs and symptoms of pancreatitis and to seek medical attention for severe abdominal pain; instruct patients on the risk of thrombosis and to seek medical advice immediately for headache, arm or leg swelling, shortness of breath and chest pain; advise patients to report any unusual bleeding or bruising; inform patients that liver problems, including severe, life-threatening or fatal veno-occlusive disease and abnormalities in liver tests, may develop, and advise reporting of jaundice, severe nausea or vomiting, or easy bleeding or bruising (RYLAZE label, section 17). ERWINAZE: inform patients of the risk of allergic reactions including anaphylaxis and of pancreatitis, thrombosis and hemorrhage, and of hyperglycaemia and glucose intolerance; advise female patients of reproductive potential to use effective contraceptive methods during treatment and for at least 3 months after the last dose, and advise lactating women not to breastfeed during treatment and for at least 3 months after the last dose (ERWINAZE label, section 17). ELSPAR (E. coli-derived): advise patients to contact their healthcare professional immediately to report swelling of the face, arms or legs with or without pain, acute difficulty in breathing or shortness of breath, severe headache, seizures or change in mental status, new onset chest pain, and severe abdominal pain; advise patients to inform their healthcare professional of excessive thirst or increased volume or frequency of urination, and of pregnancy (ELSPAR label, section 17).",
+    "warnings": [
+      "RYLAZE: hypersensitivity reactions occurred in 29% of patients and were severe in 6%, with anaphylaxis in 2% after intramuscular administration; premedicate as recommended, administer in a setting with resuscitation equipment and agents to treat anaphylaxis, and discontinue RYLAZE in patients with serious hypersensitivity reactions (RYLAZE label, section 5.1)",
+      "RYLAZE: pancreatitis, including elevated amylase or lipase, was reported in 20% of patients and was severe in 8%; discontinue for severe or hemorrhagic pancreatitis and withhold for mild pancreatitis until amylase and/or lipase return to 1.5 times the upper limit of normal (RYLAZE label, section 5.2)",
+      "RYLAZE: serious thrombotic events, including sagittal sinus thrombosis and pulmonary embolism, have been reported in 1% of patients; discontinue for a thrombotic event and administer appropriate antithrombotic therapy (RYLAZE label, section 5.3)",
+      "RYLAZE: bleeding was reported in 25% of patients and was severe in 2%; consider replacement therapy in severe or symptomatic coagulopathy (RYLAZE label, section 5.4)",
+      "RYLAZE: hepatotoxicity, including severe, life-threatening and potentially fatal hepatic veno-occlusive disease, has been observed with asparaginase class products; do not administer RYLAZE to patients with severe hepatic impairment and discontinue for serious liver toxicity including VOD (RYLAZE label, section 5.5)",
+      "ERWINAZE: administer in a setting with resuscitation equipment and other agents necessary to treat anaphylaxis; grade 3 and 4 hypersensitivity reactions occurred in 5% of patients; discontinue for a serious hypersensitivity reaction (ERWINAZE label, section 5.1)",
+      "ERWINAZE: pancreatitis was reported in 4%; discontinue for severe or hemorrhagic pancreatitis (abdominal pain longer than 72 hours and amylase elevation of 2.0 times or more the upper limit of normal), and severe pancreatitis is a contraindication to further asparaginase (ERWINAZE label, section 5.2)",
+      "ERWINAZE: glucose intolerance was reported in 5% and may be irreversible; monitor glucose and administer insulin as necessary in hyperglycaemia (ERWINAZE label, section 5.3)",
+      "ERWINAZE: serious thrombotic events including sagittal sinus thrombosis and pulmonary embolism have been reported with both E. coli and Erwinia-derived L-asparaginase; discontinue for a thrombotic or hemorrhagic event until symptoms resolve (ERWINAZE label, section 5.4)",
+      "ELSPAR (E. coli-derived): anaphylaxis and other serious allergic reactions can occur; the risk is higher in patients with prior exposure to Elspar or other E. coli-derived L-asparaginases; observe patients for one hour after administration in a setting with resuscitation equipment and discontinue for serious allergic reactions (ELSPAR label, section 5.1)",
+      "ELSPAR (E. coli-derived): serious thrombotic events, including sagittal sinus thrombosis, can occur; discontinue for serious thrombotic events (ELSPAR label, section 5.2)",
+      "ELSPAR (E. coli-derived): pancreatitis, in some cases fulminant or fatal, can occur; evaluate patients with abdominal pain for evidence of pancreatitis and discontinue for pancreatitis (ELSPAR label, section 5.3)",
+      "ELSPAR (E. coli-derived): glucose intolerance can occur and in some cases is irreversible, with cases of diabetic ketoacidosis reported; monitor serum glucose (ELSPAR label, section 5.4)",
+      "ELSPAR (E. coli-derived): coagulopathy, with increased prothrombin time, increased partial thromboplastin time and hypofibrinogenemia, can occur and CNS hemorrhages have been observed; monitor coagulation parameters (ELSPAR label, section 5.5)",
+      "ELSPAR (E. coli-derived): hepatotoxicity, including fulminant hepatic failure, can occur; evaluate hepatic enzymes and bilirubin (ELSPAR label, section 5.6)",
+      "ELSPAR (E. coli-derived): neurotoxicity - posterior reversible encephalopathy syndrome (PRES) has been reported in patients treated with Elspar in combination with other chemotherapeutic agents; interrupt use if PRES is suspected or diagnosed, control blood pressure promptly and monitor closely for seizure activity (ELSPAR label, section 5.7)"
+    ],
+    "precautions": [
+      "ELSPAR (E. coli-derived): medication errors involving Elspar have occurred because different formulations and routes (IM and IV) of asparaginase have been interchanged inappropriately, which may result in subtherapeutic blood levels or additional toxicity related to an overdose; confirm the formulation of asparaginase prior to administration and do not interchange Elspar with Erwinia asparaginase or pegylated E. coli asparaginase (ELSPAR label, section 5.8)",
+      "RYLAZE: the intravenous route of administration is not approved; hypersensitivity reactions were higher in patients who received intravenous asparaginase erwinia chrysanthemi (recombinant)-rywn (RYLAZE label, section 5.1)",
+      "RYLAZE: limit the volume of RYLAZE at a single injection site to 2 mL; if the volume to be administered is greater than 2 mL, divide the dose equally into multiple syringes, one for each injection site; rotate injection sites and do not inject into scar tissue or areas that are reddened, inflamed or swollen (RYLAZE label, section 2.4)",
+      "RYLAZE: if the prepared dose is not used immediately, store the syringe(s) at room temperature (15 to 25 degrees C) for up to 8 hours or refrigerated (2 to 8 degrees C) for up to 24 hours (RYLAZE label, section 2.4)",
+      "ERWINAZE: limit the volume of reconstituted ERWINAZE at a single injection site to 2 mL for intramuscular use and use multiple injection sites if a larger volume is to be given; for intravenous use, infuse in 100 mL of normal saline over 1 to 2 hours and do not infuse other intravenous drugs through the same line (ERWINAZE label, section 2.3)",
+      "ERWINAZE: careful observation is required on re-exposure to L-asparaginase after any time interval, for example between induction and consolidation, which may increase the risk of anaphylactic and hypersensitivity reactions (ERWINAZE labelling, UK SmPC section 4.4)",
+      "ERWINAZE/UK SmPC: re-treatment with Erwinase is possible but there is only limited clinical experience with multiple re-treatments (up to 3 re-treatments) (ERWINAZE labelling, UK SmPC sections 4.2 and 4.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and serious allergic/hypersensitivity reactions, including angioedema, urticaria, lip swelling, eye swelling, rash or erythema, decreased blood pressure, bronchospasm, dyspnea and pruritus (RYLAZE label, section 5.1; ERWINAZE label, section 5.1; ELSPAR label, section 5.1)",
+      "Acute pancreatitis, including severe, hemorrhagic and necrotizing pancreatitis and pancreatic pseudocyst (RYLAZE label, section 5.2; ERWINAZE label, section 5.2; ELSPAR label, section 5.3)",
+      "Serious thrombotic events, including sagittal sinus thrombosis and pulmonary embolism (RYLAZE label, section 5.3; ERWINAZE label, section 5.4; ELSPAR label, section 5.2)",
+      "Serious hemorrhage and coagulopathy, with increased prothrombin time, increased partial thromboplastin time and hypofibrinogenemia, and CNS hemorrhage (RYLAZE label, section 5.4; ELSPAR label, section 5.5)",
+      "Hepatotoxicity including fulminant hepatic failure and hepatic veno-occlusive disease (RYLAZE label, section 5.5; ELSPAR label, section 5.6)",
+      "Glucose intolerance, hyperglycaemia and diabetic ketoacidosis (RYLAZE label, section 5.2 and section 6.1; ERWINAZE label, section 5.3; ELSPAR label, section 5.4)",
+      "Posterior reversible encephalopathy syndrome (PRES) reported with asparaginase-containing regimens (ELSPAR label, section 5.7; ERWINAZE labelling, UK SmPC section 4.8)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "ELSPAR (E. coli-derived) states Pregnancy Category C in its label (ELSPAR label, section 8.1). The RYLAZE and ERWINAZE labels present pregnancy under the Pregnancy and Lactation Labeling Rule risk-summary format and do not state an FDA letter category (RYLAZE label, section 8.1; ERWINAZE label, section 8.1).",
+    "pregnancy_guidance": "RYLAZE: based on findings from animal reproduction studies, RYLAZE can cause fetal harm when administered to a pregnant woman; there are no available data on RYLAZE use in pregnant women; intramuscular administration of asparaginase Erwinia chrysanthemi to pregnant rats and rabbits during organogenesis resulted in structural abnormalities and embryo-fetal mortality at exposures below those in patients at the recommended human dose; advise pregnant women of the potential risk to a fetus; pregnancy testing is recommended in females of reproductive potential before initiating treatment; advise females of reproductive potential to use effective non-hormonal contraceptive methods during treatment and for 3 months after the last dose (RYLAZE label, sections 8.1 and 8.3). ERWINAZE: based on findings from animal reproduction studies, ERWINAZE can cause fetal harm when administered to a pregnant woman, with structural abnormalities and embryo-fetal mortality in rats and rabbits at doses approximately 0.005 to 0.5 times the maximum recommended human dose; pregnancy testing is recommended before treatment; advise females of reproductive potential to use effective contraception during treatment and for 3 months after the final dose, and because an indirect interaction with oral contraceptives cannot be ruled out a method of contraception other than oral contraceptives should be used (ERWINAZE label, sections 8.1 and 8.3). ELSPAR (E. coli-derived): pregnancy category C; in mice and rats Elspar retarded weight gain of mothers and fetuses above 1,000 IU/kg, with resorptions, gross abnormalities and skeletal abnormalities; intravenous administration of 50 or 100 IU/kg to pregnant rabbits on days 8 and 9 of gestation resulted in dose-dependent embryotoxicity and gross abnormalities; there are no adequate and well-controlled studies in pregnant women and Elspar should be given to a pregnant woman only if clearly needed (ELSPAR label, section 8.1).",
+    "lactation_guidance": "RYLAZE: there are no data on the presence of asparaginase erwinia chrysanthemi (recombinant)-rywn in human milk, the effects on the breastfed child or the effects on milk production; because of the potential for adverse reactions in the breastfed child, advise women not to breastfeed during treatment with RYLAZE and for 1 week after the last dose (RYLAZE label, section 8.2). ERWINAZE: there are no data on the presence of asparaginase Erwinia chrysanthemi in human or animal milk; because of the potential for serious adverse reactions in the breastfed child, advise patients that breastfeeding is not recommended during treatment with ERWINAZE and for 3 months after the last dose (ERWINAZE label, section 8.2). ELSPAR (E. coli-derived): it is not known whether Elspar is excreted in human milk; because of the potential for serious adverse reactions in nursing infants, a decision should be made to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (ELSPAR label, section 8.3).",
+    "overdose": "For Erwinia-derived asparaginase, few cases of overdose have been reported and they occurred without any specific signs or symptoms; there is no known specific treatment for overdose, no data are available on elimination by peritoneal or haemodialysis, and patients who accidentally receive an overdose should be monitored closely and receive appropriate symptomatic and supportive care (ERWINAZE labelling, UK SmPC section 4.9). ELSPAR (E. coli-derived) warns that interchanging formulations and routes of administration may result in subtherapeutic blood levels of asparaginase or additional toxicity related to an overdose and instructs that the formulation be confirmed prior to administration (ELSPAR label, section 5.8). No overdose section is present in the RYLAZE label.",
+    "pharmacokinetics": "RYLAZE: maximum serum asparaginase activity (Cmax) and area under the serum asparaginase activity-time curve increase proportionally from 12.5 to 50 mg/m2; after intramuscular administration the median (min, max) time to maximum concentration is 12 (8, 24) hours and the mean absolute bioavailability in healthy subjects is 37%; the geometric mean volume of distribution is 1.37 L/m2, clearance 0.17 L/hour/m2 and the apparent half-life 15.9 hours; there were no clinically significant differences in pharmacokinetics based on age (1.4 to 25 years), weight (9 to 131 kg) or sex after dose adjustment by body surface area; the effect of renal and hepatic impairment on the pharmacokinetics has not been studied (RYLAZE label, section 12.3). ERWINAZE: based on a population pharmacokinetic model the mean half-life of intravenous ERWINAZE was 7.51 hours (CV 23.9%) compared with 15.6 hours (CV 20%) after intramuscular administration; following 25,000 IU/m2 intramuscularly on a Monday, Wednesday and Friday schedule, 100% of patients who completed Course 1 achieved nadir serum asparaginase activity of 0.1 IU/mL or more at either 48 hours (n=35) or 72 hours (n=13) after dose 3, and 80% (28/35) and 38% (5/13) of those evaluated respectively had levels of 0.4 IU/mL or more (ERWINAZE label, section 12.3). ELSPAR (E. coli-derived): activity is expressed in International Units, with one International Unit defined as the amount of enzyme required to generate 1 micromol of ammonia per minute at pH 7.3 and 37 degrees C, and the specific activity of Elspar is at least 225 International Units per milligram of protein (ELSPAR label, section 11). RYLAZE immunogenicity: 78 of 166 patients (47%) treated intramuscularly developed anti-asparaginase erwinia chrysanthemi (recombinant)-rywn antibodies, and the effects of these on pharmacokinetics, pharmacodynamics and effectiveness have not been adequately characterized (RYLAZE label, section 12.6).",
+    "clinical_pearls": [
+      "Asparaginase is not a single interchangeable product: RYLAZE and ERWINAZE are Erwinia-derived and are used in patients who have developed hypersensitivity to E. coli-derived asparaginase, whereas ELSPAR is the E. coli-derived product, and the ELSPAR label explicitly states that Elspar should not be interchanged with Erwinia asparaginase or pegylated E. coli asparaginase (ELSPAR label, section 5.8).",
+      "The hypersensitivity profile differs between the two sources: for ELSPAR the label states the risk of serious allergic reactions is higher in patients with prior exposure to Elspar or other E. coli-derived L-asparaginases, whereas the ERWINAZE labelling states there is little or no cross-reactivity between crisantaspase and E. coli-derived L-asparaginase (ELSPAR label, section 5.1; ERWINAZE labelling, UK SmPC section 4.4).",
+      "RYLAZE is licensed for intramuscular use only; the intravenous route is not approved and hypersensitivity reactions were higher with intravenous administration (RYLAZE label, sections 2.4 and 5.1).",
+      "Premedication with acetaminophen, an H-1 receptor blocker and an H-2 receptor blocker 30 to 60 minutes before RYLAZE is required to reduce the risk and severity of hypersensitivity reactions (RYLAZE label, section 2.2).",
+      "All three products must be given in a setting with resuscitation equipment and agents to treat anaphylaxis, and patients should be observed after administration (ELSPAR label, section 5.1; ERWINAZE label, section 2.3; RYLAZE label, section 2.4).",
+      "Serum asparaginase activity (nadir serum asparaginase activity, NSAA) is the pharmacodynamic marker used to judge asparaginase replacement; a trough level of 0.1 IU/mL or more correlates with asparagine depletion and predicts clinical efficacy, and the ERWINAZE label advises monitoring nadir serum asparaginase activity when substituting for other asparaginases (ERWINAZE label, sections 2.1 and 12.3).",
+      "Nadir serum asparaginase activity is lower and hypersensitivity more frequent with intravenous than intramuscular Erwinia-derived asparaginase, so the ERWINAZE label advises considering monitoring and switching to intramuscular administration if desired activity levels are not achieved (ERWINAZE label, section 2.1).",
+      "For the Kenyan context, KEML 2023 requires the Erwinia chrysanthemi type (crisantaspase) for L-asparaginase and states that anaphylaxis treatment must be available (KEML 2023, note 226)."
+    ],
+    "brand_names": ["Rylaze", "Erwinaze", "Elspar"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the RYLAZE, ERWINAZE or ELSPAR labels. RYLAZE states that the effect of renal impairment on the pharmacokinetics of asparaginase erwinia chrysanthemi (recombinant)-rywn has not been studied (RYLAZE label, section 12.3).",
+    "hepatic_dose_adjustment": "No routine hepatic dose adjustment is specified. Severe hepatic impairment is a contraindication to RYLAZE, which must not be administered to patients with severe hepatic impairment (RYLAZE label, sections 4 and 5.5). ERWINAZE and ELSPAR require evaluation of hepatic enzymes and bilirubin before and during treatment but state no dose reduction (ERWINAZE label, section 6.1; ELSPAR label, section 5.6).",
+    "administration_instructions": "RYLAZE: inspect the solution visually for particulate matter and discoloration before use and discard the vial if any is present; use aseptic technique; determine dose, total volume and number of vials from body surface area, as more than one vial may be needed for a full dose; withdraw the indicated volume into the syringe, do not shake the vial, limit the volume at a single injection site to 2 mL and divide the dose equally into multiple syringes if greater than 2 mL; discard the remaining unused solution in the single-dose vial; administer by intramuscular injection, rotate injection sites, and do not inject into scar tissue or areas that are reddened, inflamed or swollen; store vials refrigerated at 2 to 8 degrees C in the original carton to protect from light, do not shake or freeze (RYLAZE label, sections 2.4 and 16). ERWINAZE: reconstitute with 1 or 2 mL of preservative-free sterile sodium chloride 0.9% injection against the inner vial wall, do not inject forcefully onto the powder, dissolve by gentle mixing without shaking or inverting, discard if any visible particles or protein aggregates are present; withdraw within 15 minutes of reconstitution; for intravenous use slowly inject into a 100 mL saline infusion bag and infuse over 1 to 2 hours; store unused or unopened vials and cartons at 2 to 8 degrees C, protect from light (ERWINAZE label, sections 2.2, 2.3 and 16). ELSPAR (E. coli-derived): for intramuscular administration reconstitute the 10,000 IU vial with 2 mL of sodium chloride injection to give 5,000 IU/mL, limit the volume at a single injection site to 2 mL and use two injection sites if a larger volume is needed; for intravenous administration reconstitute with 5 mL sterile water for injection or sodium chloride injection to give 2,000 IU/mL and give over not less than 30 minutes through the side arm of an infusion of sodium chloride injection or 5% dextrose injection; use reconstituted Elspar within eight hours; keep vials refrigerated at 2 to 8 degrees C, and store unused reconstituted solution at 2 to 8 degrees C and discard after eight hours or sooner if it becomes cloudy (ELSPAR label, sections 2.2, 2.3 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "RYLAZE label, section 12.1; ERWINAZE label, section 12.1; ELSPAR (E. coli-derived asparaginase) label, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "indications",
+      "ref": "RYLAZE label, section 1; ERWINAZE label, section 1; ELSPAR label, section 1; WHO Model List of Essential Medicines, 24th list (2025), section 8.2.1; Kenya Essential Medicines List 2023, item 9.2.1.23 and note 226",
+      "url": "https://iris.who.int/handle/10665/382243"
+    },
+    {
+      "field": "contraindications",
+      "ref": "RYLAZE label, section 4; ERWINAZE label, section 4; ELSPAR label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    },
+    {
+      "field": "side_effects",
+      "ref": "RYLAZE label, sections 5.1-5.5, 6 and 6.1; ERWINAZE label, sections 5.1-5.4 and 6.1; ELSPAR label, section 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "dosage",
+      "ref": "RYLAZE label, sections 2.1, 2.2, 8.4, 8.5 and 14; ERWINAZE label, sections 2.1 and 8.4-8.5; ELSPAR label, sections 2.1, 8.4, 8.5 and 14; WHO eEML 24th list; KEML 2023",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/101063s5169lbl.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "ERWINAZE labelling, UK SmPC section 4.5 and label section 12.3; RYLAZE label, section 2.2; ELSPAR label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    },
+    {
+      "field": "monitoring",
+      "ref": "RYLAZE label, sections 2.3 and 5.5; ERWINAZE label, sections 5.2-5.4; ELSPAR label, sections 5.4-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "RYLAZE label, section 17; ERWINAZE label, section 17; ELSPAR label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "warnings",
+      "ref": "RYLAZE label, sections 5.1-5.5; ERWINAZE label, sections 5.1-5.4; ELSPAR label, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    },
+    {
+      "field": "precautions",
+      "ref": "ELSPAR label, section 5.8; RYLAZE label, sections 2.4 and 5.1; ERWINAZE label, sections 2.1-2.3 and UK SmPC sections 4.2, 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "RYLAZE label, sections 5.1-5.5 and 6.1; ERWINAZE label, sections 5.1-5.4; ELSPAR label, sections 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the RYLAZE, ERWINAZE or ELSPAR labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "ELSPAR label, section 8.1 (Pregnancy Category C); RYLAZE label, section 8.1; ERWINAZE label, section 8.1 (risk-summary format, no letter category stated)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/101063s5169lbl.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "RYLAZE label, sections 8.1 and 8.3; ERWINAZE label, sections 8.1 and 8.3; ELSPAR label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "RYLAZE label, section 8.2; ERWINAZE label, section 8.2; ELSPAR label, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    },
+    {
+      "field": "overdose",
+      "ref": "ERWINAZE labelling, UK SmPC section 4.9; ELSPAR label, section 5.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "RYLAZE label, sections 12.3 and 12.6; ERWINAZE label, section 12.3; ELSPAR label, section 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "ELSPAR label, sections 5.1 and 5.8; ERWINAZE label, sections 2.1 and 12.3 and UK SmPC section 4.4; RYLAZE label, sections 2.2, 2.4, 5.1 and 12.3; KEML 2023 note 226",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "brand_names",
+      "ref": "RYLAZE (Jazz Pharmaceuticals), ERWINAZE (Jazz Pharmaceuticals) and ELSPAR (Lundbeck) are the FDA-approved asparaginase brand products listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the RYLAZE, ERWINAZE or ELSPAR prescribing information; the field is left as an empty array rather than asserting a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "RYLAZE label, section 12.3 (effect of renal impairment not studied)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "RYLAZE label, sections 4 and 5.5; ERWINAZE label, section 6.1; ELSPAR label, section 5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=857e53aa-1098-4dad-b654-0276cdd43e03"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "RYLAZE label, sections 2.4 and 16; ERWINAZE label, sections 2.2, 2.3 and 16; ELSPAR label, sections 2.2, 2.3 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bd0f5322-a1d3-79c3-e053-2995a90acd70"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; product-specific adult regimens are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; product-specific paediatric information is given in fields.dosage.paediatric)",
+    "black_box_warnings (none is present in the ELSPAR, ERWINAZE or RYLAZE prescribing information; the field is left as an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Asparaginase' with brand name 'Rylaze'. RYLAZE is the recombinant Erwinia chrysanthemi product, but asparaginase is not a single interchangeable product, so this draft covers both sources and attributes every statement to its own label: RYLAZE (asparaginase erwinia chrysanthemi recombinant-rywn, Jazz Pharmaceuticals, DailyMed setid 857e53aa-1098-4dad-b654-0276cdd43e03), ERWINAZE (asparaginase Erwinia chrysanthemi, Jazz Pharmaceuticals, US prescribing information reproduced in the Porton Biopharma temporary-importation labelling for Erwinase, DailyMed setid bd0f5322-a1d3-79c3-e053-2995a90acd70) and ELSPAR (E. coli-derived asparaginase, Lundbeck, FDA label 2013 101063s5169). The two families differ in hypersensitivity profile: ELSPAR contraindicates serious allergy to E. coli-derived L-asparaginases and warns that the risk of serious allergic reactions is higher after prior exposure to E. coli-derived products, while the ERWINAZE labelling states there is little or no cross-reactivity between crisantaspase and E. coli-derived L-asparaginase; RYLAZE is licensed for intramuscular use only. RYLAZE and ERWINAZE are indicated for ALL (and LBL for RYLAZE) in patients who have developed hypersensitivity to E. coli-derived asparaginase, while ELSPAR is indicated for ALL as part of a multi-agent regimen. Pegylated E. coli asparaginase (pegaspargase) and calaspargase pegol are referenced only where the RYLAZE label describes replacement of one long-acting dose, and their own labels are not covered here. WHO eEML 24th list (2025) places asparaginase (with quality-assured biosimilars) on the Complementary List for acute lymphoblastic leukaemia; KEML 2023 lists L-asparaginase 10,000 IU vial at level of use 5 and specifies the Erwinia chrysanthemi type with anaphylaxis treatment available. Neither the RYLAZE, ERWINAZE nor ELSPAR labels carry a boxed warning, so black_box_warnings is an empty array. The ELSPAR label used here is the 2013 FDA-approved label; it carries the obsolete FDA pregnancy letter category C, while RYLAZE and ERWINAZE use the Pregnancy and Lactation Labeling Rule risk-summary format. Atovaquone + Proguanil (Malarone) is a different product and is not covered here."
+}

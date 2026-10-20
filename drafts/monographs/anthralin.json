@@ -1,0 +1,211 @@
+{
+  "name": "Anthralin",
+  "existing_id": "316bc922-94bf-4791-ad79-eb2eb46a1dc3",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Anthralin (1,8-dihydroxy-9-anthrone) is a synthetic compound whose precise mechanism of anti-psoriatic action is not yet fully understood. Numerous studies have demonstrated anti-proliferative and anti-inflammatory effects of anthralin on psoriatic and normal skin. The anti-proliferative effects appear to result from both an inhibition of DNA synthesis and from anthralin's strong reducing properties. Anthralin's effectiveness as an anti-psoriatic agent has also been attributed in part to its ability to induce lipid peroxidation and reduce levels of endothelial adhesion molecules, which are markedly elevated in psoriatic patients. Unlike retinoids and PUVA, anthralin does not inhibit liver microsomal enzyme activity; consequently the likelihood of adverse drug interactions is greatly reduced when other agents are administered concomitantly with anthralin (Zithranol-RR anthralin cream 1.2% label, CLINICAL PHARMACOLOGY; Zithranol Shampoo anthralin 1% label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Zithranol-RR cream 1.2%: for the topical treatment of patients with stable plaque psoriasis (Zithranol-RR label, INDICATIONS AND USAGE)",
+      "Zithranol Shampoo 1%: for the treatment of scalp psoriasis in subjects 12 years of age and older; patients should be instructed to use it for the minimum time period necessary to achieve the desired results (Zithranol Shampoo label, INDICATIONS AND USAGE)",
+      "Kenya Essential Medicines List 2023: dithranol (anthralin) paste 2% and 15% (in benzoin tincture), Level of Use 4 (primary hospital), section 15.4 'Medicines affecting skin differentiation and proliferation' (KEML 2023, entry 15.4.2)"
+    ],
+    "contraindications": [
+      "Zithranol-RR cream 1.2%: contraindicated in patients with acute or actively inflamed psoriatic eruptions, or with a history of hypersensitivity to any of the ingredients (Zithranol-RR label, CONTRAINDICATIONS)",
+      "Zithranol Shampoo 1%: contraindicated in patients who are hypersensitive to anthralin or to any ingredient in the preparation (Zithranol Shampoo label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Contact allergic reactions to anthralin have been reported, but in very few instances (Zithranol-RR label, ADVERSE REACTIONS; Zithranol Shampoo label, ADVERSE REACTIONS)",
+      "Transient primary irritation and staining of normal or uninvolved skin surrounding the treated lesions, which is frequently seen with other anthralin preparations, is less common with Zithranol-RR because of the microcrystalline coating of the anthralin particles (Zithranol-RR label, ADVERSE REACTIONS)",
+      "Transient primary irritation and staining of hair or skin may occur with the shampoo; the temporary discoloration of hair and skin may be minimised by careful application (Zithranol Shampoo label, ADVERSE REACTIONS)",
+      "Excessive soreness or spread of lesions: if the initial treatment produces excessive soreness or if the lesions spread, reduce the frequency of application and, in extreme cases, discontinue use and consult a physician (Zithranol-RR label, ADVERSE REACTIONS)",
+      "Some temporary discoloration of hair and fingernails may arise during treatment but should be minimised by careful application; staining of fabrics may be permanent, so contact should be avoided (Zithranol-RR label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Zithranol-RR cream 1.2%: generally it is recommended that the cream be applied once a day. Anthralin is a potential skin irritant, and its irritant potential is directly related to the strength used, the time of contact and each patient's individual tolerance. Where the response to anthralin treatment has not previously been established, commence treatment using a short contact time of 5 to 15 minutes for at least one week; when a short contact time is used initially it can be increased stepwise to 30 minutes before removing the cream by washing or showering. The optimal period of contact will vary according to the patient's response to treatment (Zithranol-RR label, DOSAGE AND ADMINISTRATION). Zithranol Shampoo 1%: apply onto the wet scalp 3 to 4 times per week (or as directed by the physician), lather and leave on the scalp for 3 to 5 minutes and then rinse thoroughly, avoiding contact with the eyes; although no additional shampoo is necessary to cleanse the hair, a non-medicated shampoo or conditioner can be applied afterwards if desired. If no improvement is seen after 4 weeks of treatment, consult the physician (Zithranol Shampoo label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "No geriatric-specific dosing instructions are stated in the Zithranol-RR cream or Zithranol Shampoo labels, and no dose adjustment for elderly patients is described (Zithranol-RR label, DOSAGE AND ADMINISTRATION; Zithranol Shampoo label, DOSAGE AND ADMINISTRATION).",
+      "paediatric": "Safety and effectiveness in children have not been established in the Zithranol-RR cream or Zithranol Shampoo labels. The Zithranol Shampoo indication is restricted to subjects 12 years of age and older, with the precaution referring the reader to the paediatric use statement (Zithranol-RR label, PRECAUTIONS; Zithranol Shampoo label, INDICATIONS AND USAGE and PRECAUTIONS)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug-drug interaction studies are described in the Zithranol-RR or Zithranol Shampoo labels. Unlike retinoids and PUVA, anthralin does not inhibit liver microsomal enzyme activity, so the likelihood of adverse drug interactions is greatly reduced when other agents are administered concomitantly with anthralin (Zithranol-RR label, CLINICAL PHARMACOLOGY; Zithranol Shampoo label, CLINICAL PHARMACOLOGY).",
+      "Practical non-drug interactions are the dominant issue: contact with fabrics, plastics and other materials may cause staining and should be avoided, and protective dressings may be advisable to prevent staining of clothing or bed linen (Zithranol-RR label, PRECAUTIONS)."
+    ],
+    "monitoring": "Monitor treated skin and the surrounding uninvolved skin at each application for irritation, sensitivity reactions and spread of lesions; discontinue use if a sensitivity reaction occurs or if excessive irritation develops (Zithranol-RR and Zithranol Shampoo labels, WARNINGS). If the initial treatment produces excessive soreness or the lesions spread, reduce the frequency of application and, in extreme cases, discontinue use and consult a physician (Zithranol-RR label, ADVERSE REACTIONS). Titrate the contact time in response to the patient's response to treatment (Zithranol-RR label, DOSAGE AND ADMINISTRATION). For the shampoo, review at 4 weeks and consult the physician if no improvement is seen (Zithranol Shampoo label, DOSAGE AND ADMINISTRATION). No laboratory or blood monitoring is specified for topical anthralin therapy in either label (Zithranol-RR label, PRECAUTIONS; Zithranol Shampoo label, PRECAUTIONS).",
+    "patient_counselling": "Apply the cream sparingly to the psoriatic lesions only, avoiding normal skin, and rub gently and carefully into the skin; avoid applying an excessive quantity, which may cause unnecessary soiling and staining of clothing or bed linen (Zithranol-RR label, DOSAGE AND ADMINISTRATION). At the end of each period of treatment, rinse the skin thoroughly with cool to lukewarm water before washing with soap (Zithranol-RR label, DOSAGE AND ADMINISTRATION). Avoid contact with the eyes or mucous membranes and take care when applying to the face or intertriginous skin areas (Zithranol-RR label, WARNINGS). Wash hands thoroughly after use and keep the container tightly capped when not in use (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS). Staining: contact with fabrics, plastics and other materials may cause staining and should be avoided; to prevent staining of clothing or bed linen it may be advisable to use protective dressings, and to prevent discoloration of the tub/shower rinse it with lukewarm water immediately after washing or showering and then use a suitable cleanser to remove any deposit (Zithranol-RR label, PRECAUTIONS). Temporary discoloration of hair and fingernails may occur and should be minimised by careful application (Zithranol-RR label, ADVERSE REACTIONS). For the scalp: wash the hair with shampoo, rinse with water, apply the cream while the hair is still damp, rub well into the psoriatic lesions, keep the cream away from the eyes, avoid application to uninvolved scalp margins, and remove any unintended residue deposited behind the ears; at the end of each contact period rinse hair and scalp thoroughly with cool to lukewarm water and then shampoo (Zithranol-RR label, DOSAGE AND ADMINISTRATION). For the shampoo, use it for the minimum time period necessary to achieve the desired results, and consult the physician if there is no improvement after 4 weeks (Zithranol Shampoo label, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION). Keep out of the reach of children; for external use only (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+    "warnings": [
+      "Avoid contact with the eyes or mucous membranes. Exercise care when applying Zithranol-RR cream to the face or intertriginous skin areas (Zithranol-RR label, WARNINGS)",
+      "Discontinue use if a sensitivity reaction occurs or if excessive irritation develops (Zithranol-RR label, WARNINGS; Zithranol Shampoo label, WARNINGS)",
+      "Anthralin is a potent skin irritant: irritant potential is directly related to the strength used, the time of contact and each patient's individual tolerance (Zithranol-RR label, DOSAGE AND ADMINISTRATION)",
+      "Although anthralin has been found to have tumor-promoting properties on mouse skin, there have been no reports to suggest carcinogenic effects in humans after many years of clinical use; long-term studies in animals have not been performed to evaluate the carcinogenic potential of the drug (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS)"
+    ],
+    "precautions": [
+      "For external use only; keep out of the reach of children and keep the container tightly capped when not in use (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "Staining precautions: to prevent staining of clothing or bed linen it may be advisable to use protective dressings; to prevent discoloration of the tub/shower, always rinse the tub/shower with lukewarm water immediately after washing or showering and then use a suitable cleanser to remove any deposit on the surface; contact with fabrics, plastics and other materials may cause staining and should be avoided; always wash hands thoroughly after use (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "Avoid excessive heat when storing (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "Carcinogenesis, mutagenesis and impairment of fertility: long-term studies in animals have not been performed to evaluate the carcinogenic potential of anthralin; although anthralin has tumor-promoting properties on mouse skin, there have been no reports to suggest carcinogenic effects in humans after many years of clinical use (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "Pregnancy: pregnancy category C. Animal reproduction studies have not been conducted with Zithranol-RR cream or Zithranol Shampoo, and it is not known whether they can cause fetal harm when administered to a pregnant woman or affect reproductive capacity; they should be given to a pregnant woman only if clearly needed (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "Nursing mothers: it is not known whether the drug is excreted in human milk; because many drugs are excreted in milk and because of the potential for tumorigenicity shown for anthralin in animal studies, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (Zithranol-RR label, PRECAUTIONS). Caution should be exercised when Zithranol Shampoo is administered to a nursing woman (Zithranol Shampoo label, PRECAUTIONS).",
+      "Paediatric use: safety and effectiveness in children have not been established (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS).",
+      "The Zithranol-RR cream is formulated in a microcrystalline lipid matrix that rapidly releases anthralin on contact with skin, making it especially useful for short-contact (5 to 15 minute) therapy; because the monoglycerides comprising the matrix have significant antimicrobial properties, the product is resistant to microbial contamination without a preservative (Zithranol-RR label, DESCRIPTION)."
+    ],
+    "serious_adverse_reactions": [
+      "Contact allergic reactions to anthralin (rare) (Zithranol-RR label, ADVERSE REACTIONS; Zithranol Shampoo label, ADVERSE REACTIONS)",
+      "Severe irritation and possible spread of psoriatic lesions, requiring reduction in the frequency of application or discontinuation (Zithranol-RR label, ADVERSE REACTIONS)",
+      "Permanent staining of fabrics on contact (Zithranol-RR and Zithranol Shampoo labels, ADVERSE REACTIONS and PRECAUTIONS)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (Zithranol-RR anthralin cream 1.2% label, PRECAUTIONS - Pregnancy Teratogenic Effects; Zithranol Shampoo anthralin 1% label, PRECAUTIONS - Pregnancy Teratogenic Effects)",
+    "pregnancy_guidance": "Pregnancy category C. Animal reproduction studies have not been conducted with Zithranol-RR cream or Zithranol Shampoo, and it is not known whether these preparations can cause fetal harm when administered to a pregnant woman or can affect reproductive capacity. Zithranol-RR cream should be given to a pregnant woman only if clearly needed, and Zithranol Shampoo should be given to a pregnant woman only if clearly needed (Zithranol-RR and Zithranol Shampoo labels, PRECAUTIONS - Pregnancy).",
+    "lactation_guidance": "It is not known whether Zithranol-RR cream is excreted in human milk. Because many drugs are excreted in milk and because of the potential for tumorigenicity shown for anthralin in animal studies, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother. For Zithranol Shampoo, because many drugs are excreted in human milk, caution should be exercised when it is administered to a nursing woman (Zithranol-RR label, PRECAUTIONS; Zithranol Shampoo label, PRECAUTIONS).",
+    "overdose": null,
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Anthralin (dithranol) is a direct-acting topical antipsoriatic with a poorly understood mechanism - inhibition of DNA synthesis plus free-radical/lipid peroxidation effects - and it is a classic example of a drug whose chief limitations are local irritation and staining rather than systemic toxicity (Zithranol-RR label, CLINICAL PHARMACOLOGY and ADVERSE REACTIONS).",
+      "Short-contact anthralin therapy is the modern approach: start at 5 to 15 minutes of contact for at least a week and step up gradually to 30 minutes, since irritant potential is a function of strength, contact time and individual tolerance (Zithranol-RR label, DOSAGE AND ADMINISTRATION).",
+      "Anthralin has almost no systemic interaction burden: unlike retinoids and PUVA it does not inhibit liver microsomal enzymes, so co-administration with other agents is relatively safe from a pharmacokinetic standpoint (Zithranol-RR label, CLINICAL PHARMACOLOGY).",
+      "Staining is the practical issue that determines adherence - fabrics, plastics, tubs and showers can be permanently discoloured, so protective dressings, thorough rinsing and hand washing are part of the prescribing advice (Zithranol-RR label, PRECAUTIONS and ADVERSE REACTIONS).",
+      "Do not apply to acutely inflamed or actively inflamed psoriatic eruptions - this is the formal contraindication, and flares should be allowed to settle before starting (Zithranol-RR label, CONTRAINDICATIONS).",
+      "The two US anthralin products differ: Zithranol-RR is a 1.2% microcrystalline encapsulated cream for stable plaque psoriasis (including scalp application technique), whereas Zithranol Shampoo is a 1% shampoo for scalp psoriasis in patients 12 years and older (Zithranol-RR and Zithranol Shampoo labels, INDICATIONS AND USAGE).",
+      "Anthralin was in the WHO Model List of Essential Medicines in earlier editions but does not appear in the current 24th list (2025); it is present in the Kenya Essential Medicines List 2023 as dithranol paste at Level of Use 4 (primary hospital), so it is the locally procurable option in Kenya.",
+      "There is no boxed warning on either anthralin label; the key risks are local irritation, contact allergy, permanent staining of fabrics and the theoretical tumorigenicity seen in mice with no reports of carcinogenic effects in humans after many years of clinical use."
+    ],
+    "brand_names": ["Zithranol-RR", "Zithranol"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For dermatologic use only; not for ophthalmic use. Zithranol-RR cream: apply sparingly once daily to the psoriatic lesions avoiding normal skin, rub gently and carefully into the skin, and at the end of each period of contact rinse the skin thoroughly with cool to lukewarm water before washing with soap; for short-contact therapy leave on for 5 to 15 minutes initially, increasing stepwise to 30 minutes as tolerated, then wash or shower. For the scalp, wash the hair with shampoo, rinse, apply the cream while the hair is still damp, rub well into the lesions avoiding uninvolved scalp margins, and rinse hair and scalp thoroughly with cool to lukewarm water before shampooing. Zithranol Shampoo: apply onto the wet scalp 3 to 4 times per week, lather, leave on the scalp for 3 to 5 minutes and rinse thoroughly, avoiding the eyes; a non-medicated shampoo or conditioner may be applied afterwards if desired. Wash hands thoroughly after use in both cases, keep the container tightly capped, and store at controlled room temperature - the Zithranol-RR cream at 59 to 86 degrees F (15 to 30 degrees C) and the Zithranol Shampoo at 68 to 77 degrees F (20 to 25 degrees C). Both products are supplied as Rx-only, for dermatologic use only, not for ophthalmic use (Zithranol-RR label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED; Zithranol Shampoo label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Zithranol-RR anthralin microcrystalline encapsulated cream 1.2% (Elorac, Inc.), CLINICAL PHARMACOLOGY; and Zithranol Shampoo anthralin 1% (Elorac, Inc.) label, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, INDICATIONS AND USAGE; FDA label, Zithranol Shampoo anthralin 1%, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023, section 15.4.2 Dithranol, paste 2% and 15% (in benzoin tincture), Level of Use 4 (primary hospital)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, CONTRAINDICATIONS; FDA label, Zithranol Shampoo anthralin 1%, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, ADVERSE REACTIONS; FDA label, Zithranol Shampoo anthralin 1%, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, DOSAGE AND ADMINISTRATION; FDA label, Zithranol Shampoo anthralin 1%, DOSAGE AND ADMINISTRATION, INDICATIONS AND USAGE and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, CLINICAL PHARMACOLOGY and PRECAUTIONS; FDA label, Zithranol Shampoo anthralin 1%, CLINICAL PHARMACOLOGY and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, WARNINGS, ADVERSE REACTIONS and DOSAGE AND ADMINISTRATION; FDA label, Zithranol Shampoo anthralin 1%, WARNINGS and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, DOSAGE AND ADMINISTRATION, PRECAUTIONS and ADVERSE REACTIONS; FDA label, Zithranol Shampoo anthralin 1%, INDICATIONS AND USAGE, DOSAGE AND ADMINISTRATION and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, WARNINGS, DOSAGE AND ADMINISTRATION and PRECAUTIONS; FDA label, Zithranol Shampoo anthralin 1%, WARNINGS and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, PRECAUTIONS and DESCRIPTION; FDA label, Zithranol Shampoo anthralin 1%, PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, ADVERSE REACTIONS and PRECAUTIONS; FDA label, Zithranol Shampoo anthralin 1%, ADVERSE REACTIONS and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the Zithranol-RR or Zithranol Shampoo labelling; both products are for external use only",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, PRECAUTIONS - Pregnancy Teratogenic Effects (Pregnancy Category C); FDA label, Zithranol Shampoo anthralin 1%, PRECAUTIONS - Pregnancy Teratogenic Effects (Pregnancy Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, PRECAUTIONS - Pregnancy; FDA label, Zithranol Shampoo anthralin 1%, PRECAUTIONS - Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, PRECAUTIONS - Nursing Mothers; FDA label, Zithranol Shampoo anthralin 1%, PRECAUTIONS - Pregnancy/Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, CLINICAL PHARMACOLOGY, CONTRAINDICATIONS, DESCRIPTION, DOSAGE AND ADMINISTRATION, PRECAUTIONS and ADVERSE REACTIONS; FDA label, Zithranol Shampoo anthralin 1%, CLINICAL PHARMACOLOGY, INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION; WHO eEML 24th list (2025) and KEML 2023 entry 15.4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Zithranol-RR (anthralin) microcrystalline encapsulated cream 1.2% and Zithranol Shampoo (anthralin 1%) listed as brand products on DailyMed (Elorac, Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=253fdee7-5060-4b49-ad26-257eb54cccfa"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The Zithranol-RR anthralin cream 1.2% and Zithranol Shampoo anthralin 1% labels contain no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Zithranol-RR anthralin cream 1.2%, DOSAGE AND ADMINISTRATION and HOW SUPPLIED; FDA label, Zithranol Shampoo anthralin 1%, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "No pharmacokinetics data are provided: the Zithranol-RR anthralin cream 1.2% and Zithranol Shampoo anthralin 1% labels contain no pharmacokinetics section and no systemic pharmacokinetic data",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=253fdee7-5060-4b49-ad26-257eb54cccfa"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose information is provided: the Zithranol-RR anthralin cream 1.2% and Zithranol Shampoo anthralin 1% labels contain no Overdosage section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=253fdee7-5060-4b49-ad26-257eb54cccfa"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified: the Zithranol-RR anthralin cream 1.2% and Zithranol Shampoo anthralin 1% labels contain no renal impairment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified: the Zithranol-RR anthralin cream 1.2% and Zithranol Shampoo anthralin 1% labels contain no hepatic impairment section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45bad116-0351-442f-8e49-f11089a955fd"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in children have not been established)",
+    "pharmacokinetics (neither anthralin label contains a pharmacokinetics section or systemic pharmacokinetic data)",
+    "overdose (neither anthralin label contains an Overdosage section)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in either label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in either label)",
+    "food_interactions (no food interaction is described in the labels; the field is left empty)"
+  ],
+  "notes": "The table stores this agent as 'Anthralin' with brand_names [], which has been corrected to ['Zithranol-RR', 'Zithranol'] - the two US-marketed anthralin products on DailyMed (Elorac, Inc.). Anthralin is also called dithranol; the Kenya Essential Medicines List 2023 lists it as 'Dithranol' paste 2% and 15% (in benzoin tincture) at Level of Use 4 (primary hospital), which is the locally relevant listing. The prior row content (olanzapine label text and an antipsychotic dementia boxed warning) has been removed as it belonged to a different drug. Both anthralin labels are older-format DailyMed records and are much shorter than a modern US label, so there is no pharmacokinetics section and no Overdosage section; these fields are null and listed under unsourced_fields. The two products have different indications (stable plaque psoriasis for the cream versus scalp psoriasis in subjects 12 years and older for the shampoo) and both are covered here. Anthralin does not appear in the current WHO Model List of Essential Medicines (24th list, 2025)."
+}

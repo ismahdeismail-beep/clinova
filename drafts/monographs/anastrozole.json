@@ -1,0 +1,225 @@
+{
+  "name": "Anastrozole",
+  "existing_id": "65700568-5112-464d-8118-b24094fd97e1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Anastrozole is a selective non-steroidal aromatase inhibitor. The growth of many cancers of the breast is stimulated or maintained by estrogens. In postmenopausal women, estrogens are mainly derived from the action of the aromatase enzyme, which converts adrenal androgens (primarily androstenedione and testosterone) to estrone and estradiol; suppression of estrogen biosynthesis in peripheral tissues and in the cancer tissue itself can therefore be achieved by specifically inhibiting the aromatase enzyme. Anastrozole significantly lowers serum estradiol concentrations and has no detectable effect on formation of adrenal corticosteroids or aldosterone. Pharmacodynamics: the recommended daily dose of ARIMIDEX 1 mg reduced estradiol by approximately 70% within 24 hours and by approximately 80% after 14 days of daily dosing, with suppression maintained for up to 6 days after cessation. Anastrozole did not affect cortisol or aldosterone secretion at baseline or in response to ACTH, so no glucocorticoid or mineralocorticoid replacement therapy is necessary, and there was no increase in TSH. The effect of anastrozole in premenopausal women has not been studied, and because aromatization of adrenal androgens is not a significant source of estradiol in premenopausal women, anastrozole would not be expected to lower estradiol levels in premenopausal women (FDA ARIMIDEX (anastrozole) label, sections 12.1 and 12.2).",
+    "indications": [
+      "Adjuvant treatment of postmenopausal women with hormone receptor-positive early breast cancer (FDA ARIMIDEX label, section 1.1)",
+      "First-line treatment of postmenopausal women with hormone receptor-positive or hormone receptor-unknown locally advanced or metastatic breast cancer (FDA ARIMIDEX label, section 1.2)",
+      "Treatment of advanced breast cancer in postmenopausal women with disease progression following tamoxifen therapy; patients with ER-negative disease and patients who did not respond to previous tamoxifen therapy rarely responded to ARIMIDEX (FDA ARIMIDEX label, section 1.3)",
+      "WHO Model List of Essential Medicines (24th list, 2025): anastrozole 1 mg tablet, section 'Hormones and antihormones', indications 'Malignant neoplasms of breast'; it is also listed under 'Ovulation inducers' as a therapeutic equivalent to letrozole for female infertility without specification whether primary or secondary (WHO eEML, entry 39, Anastrozole)",
+      "Kenya Essential Medicines List 2023: anastrozole tablet 1 mg, Level of Use 5 (secondary hospital) (KEML 2023, section 9.2.4.2)"
+    ],
+    "contraindications": [
+      "Hypersensitivity: ARIMIDEX is contraindicated in any patient who has shown a hypersensitivity reaction to the drug or to any of the excipients; observed reactions include anaphylaxis, angioedema and urticaria (FDA ARIMIDEX label, section 4)"
+    ],
+    "side_effects": [
+      "Common adverse reactions (incidence >= 10%) in women taking ARIMIDEX: hot flashes, asthenia, arthritis, pain, arthralgia, hypertension, depression, nausea and vomiting, rash, osteoporosis, fractures, back pain, insomnia, headache, bone pain, peripheral oedema, increased cough, dyspnoea, pharyngitis and lymphedema (FDA ARIMIDEX label, section 6.1)",
+      "Adjuvant therapy (ATAC trial, ARIMIDEX 1 mg n=3092 vs tamoxifen 20 mg n=3094, adverse reactions >= 5%): vasodilatation 36% vs 41%, asthenia 19% vs 18%, pain 17% vs 16%, back pain 10% vs 10%, hypertension 13% vs 11%, headache 10% vs 8%, nausea 11% vs 11%, constipation 8% vs 8%, diarrhoea 9% vs 7%, peripheral oedema 10% vs 11%, weight gain 9% vs 9%, hypercholesterolaemia 9% vs 3.5%, arthritis 17% vs 14%, arthralgia 15% vs 11%, osteoporosis 11% vs 7%, fracture 10% vs 7%, bone pain 7% vs 6%, lymphoedema 10% vs 11% (FDA ARIMIDEX label, section 6.1, Table 1)",
+      "First-line therapy (trials 0030 and 0027, ARIMIDEX n=506 vs tamoxifen n=511): asthenia 16%, pain 14%, back pain 12-13%, headache 9%, vasodilatation 25%, nausea 19%, constipation 9%, diarrhoea 8%, vomiting 8%, peripheral oedema 10%, bone pain 11%, dizziness 6%, insomnia 6%, depression 5%, cough increased 11%, dyspnoea 10%, pharyngitis 10% (FDA ARIMIDEX label, section 6.1, Table 3)",
+      "Second-line therapy (trials 0004 and 0005 vs megestrol acetate): asthenia 16%, nausea 16%, headache 13%, hot flashes 12%, pain 11%, back pain 11%, dyspnoea 9%, vomiting 9%, cough increased 8%, diarrhoea 8%, constipation 7%, abdominal pain 7%, anorexia 7%, bone pain 6%, pharyngitis 6%, dizziness 6%, rash 6%, dry mouth 6%, peripheral oedema 5%, pelvic pain 5%, depression 5%, chest pain 5%, paresthesia 5%; the principal adverse reaction more common with ARIMIDEX than megestrol acetate was diarrhoea (FDA ARIMIDEX label, section 6.1, Table 5)",
+      "Serious adverse reactions occurring in less than 1 in 10,000 patients: skin reactions such as lesions, ulcers or blisters; allergic reactions with swelling of the face, lips, tongue and/or throat causing difficulty in swallowing and/or breathing; changes in blood tests of liver function including inflammation of the liver with symptoms that may include a general feeling of not being well, with or without jaundice, liver pain or liver swelling (FDA ARIMIDEX label, section 6)",
+      "Postmarketing: hepatobiliary events including increases in alkaline phosphatase, alanine aminotransferase, aspartate aminotransferase, gamma-GT and bilirubin, and hepatitis; rash including mucocutaneous disorders such as erythema multiforme and Stevens-Johnson syndrome; allergic reactions including angioedema, urticaria and anaphylaxis; myalgia and hypercalcemia (with or without an increase in parathyroid hormone); tendon disorders including tendon rupture, tendonitis, tenosynovitis and tenosynovitis stenosans (trigger finger) (FDA ARIMIDEX label, section 6.2)",
+      "Bone effects: in the ATAC trial bone substudy at 12 and 24 months, patients receiving ARIMIDEX had a mean decrease in both lumbar spine and total hip bone mineral density compared with baseline, whereas patients receiving tamoxifen had a mean increase (FDA ARIMIDEX label, section 5.2)",
+      "Cholesterol: during the ATAC trial more patients receiving ARIMIDEX were reported to have elevated serum cholesterol compared with patients receiving tamoxifen (9% versus 3.5%) (FDA ARIMIDEX label, section 5.3)"
+    ],
+    "dosage": {
+      "adult": "The dose of ARIMIDEX is one 1 mg tablet taken once a day, with or without food. For patients with advanced breast cancer, ARIMIDEX should be continued until tumour progression. For adjuvant treatment of early breast cancer in postmenopausal women the optimal duration of therapy is unknown; in the ATAC trial ARIMIDEX was administered for five years. No dosage adjustment is necessary for patients with renal impairment or for elderly patients (FDA ARIMIDEX label, sections 2.1 and 2.2). For patients with mild-to-moderate hepatic impairment, no changes in dose are recommended; ARIMIDEX has not been studied in patients with severe hepatic impairment (FDA ARIMIDEX label, section 2.2).",
+      "geriatric": "In studies 0030 and 0027 about 50% of patients were 65 or older, and patients >= 65 years of age had moderately better tumour response and time to tumour progression than patients < 65 regardless of randomised treatment; in studies 0004 and 0005, 50% of patients were 65 or older and response rates and time to progression were similar for over-65 and younger patients. In the ATAC study 45% of patients were 65 years of age or older, and the efficacy of ARIMIDEX compared with tamoxifen in patients 65 years or older (N=1413 vs N=1410; hazard ratio for disease-free survival 0.93, 95% CI 0.80-1.08) was less than that observed in patients under 65 years (N=1712 vs N=1706; hazard ratio 0.79, 95% CI 0.67-0.94). The pharmacokinetics of anastrozole are not affected by age, and no dosage adjustment is necessary for elderly patients (FDA ARIMIDEX label, sections 2.1 and 8.5).",
+      "paediatric": "Clinical studies in paediatric patients included a placebo-controlled trial in pubertal boys of adolescent age with gynaecomastia and a single-arm trial in girls with McCune-Albright syndrome and progressive precocious puberty; the efficacy of ARIMIDEX in pubertal gynaecomastia and in precocious puberty in girls with McCune-Albright syndrome has not been demonstrated. In the gynaecomastia study (80 boys aged 11 to 18 years, ARIMIDEX 1 mg daily or placebo for 6 months) there was no statistically significant difference in the percentage of patients achieving a >= 50% reduction in gynaecomastia; treatment-related adverse reactions occurred in 16.3% of ARIMIDEX-treated patients versus 8.1% with placebo, most frequently acne (7% vs 2.7%) and headache (7% vs 0%), and one patient discontinued because of testicular enlargement (FDA ARIMIDEX label, section 8.4). ARIMIDEX is not indicated in premenopausal women, and its effect in premenopausal women with early or advanced breast cancer has not been studied (FDA ARIMIDEX label, sections 8.4 and 12.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Tamoxifen: do not use in combination with ARIMIDEX. Co-administration reduced anastrozole plasma concentration by 27% and, at a median follow-up of 33 months, showed no efficacy benefit versus tamoxifen alone in all patients or in the hormone receptor-positive subpopulation; the combination arm was discontinued from the ATAC trial (FDA ARIMIDEX label, section 7.1)",
+      "Estrogen-containing products: estrogen-containing therapies should not be used with ARIMIDEX as they may diminish its pharmacological action (FDA ARIMIDEX label, section 7.2)",
+      "Warfarin: in a study in 16 male volunteers, anastrozole did not alter the exposure (Cmax and AUC) or anticoagulant activity (prothrombin time, activated partial thromboplastin time and thrombin time) of either R- or S-warfarin (FDA ARIMIDEX label, section 7.3)",
+      "Cytochrome P450 substrates: based on in vitro and in vivo results it is unlikely that co-administration of ARIMIDEX 1 mg will affect other drugs as a result of inhibition of cytochrome P450; anastrozole inhibited CYP1A2, 2C8/9 and 3A4 in vitro with Ki values approximately 30 times higher than the mean steady-state Cmax after a 1 mg daily dose, had no inhibitory effect on CYP2A6 or 2D6 in vitro, and single 30 mg/kg or multiple 10 mg/kg doses had no effect on the clearance of antipyrine (FDA ARIMIDEX label, sections 7.4 and 12.3)"
+    ],
+    "monitoring": "Consider bone mineral density monitoring in patients treated with ARIMIDEX, since the ATAC trial bone substudy showed mean decreases in lumbar spine and total hip BMD compared with baseline (FDA ARIMIDEX label, section 5.2). Consider cholesterol monitoring, since 9% of ARIMIDEX-treated patients versus 3.5% of tamoxifen-treated patients had elevated serum cholesterol in the ATAC trial (FDA ARIMIDEX label, section 5.3). Consider the risks and benefits of ARIMIDEX therapy in patients with pre-existing ischaemic heart disease, in whom the incidence of ischaemic cardiovascular events was 17% on ARIMIDEX versus 10% on tamoxifen in the ATAC trial (FDA ARIMIDEX label, section 5.1). Verify the pregnancy status of females of reproductive potential prior to initiation of ARIMIDEX (FDA ARIMIDEX label, section 8.3). No routine laboratory monitoring is specified in the label for patients with normal renal or hepatic function (FDA ARIMIDEX label, sections 2.1, 2.2, 8.6 and 8.7).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling (Patient Information) (FDA ARIMIDEX label, section 17). Hypersensitivity: inform patients of the possibility of serious allergic reactions with swelling of the face, lips, tongue and/or throat (angioedema) which may cause difficulty in swallowing and/or breathing, and to seek medical attention immediately (FDA ARIMIDEX label, section 17). Ischaemic cardiovascular events: patients with pre-existing ischaemic heart disease should be informed that an increased incidence of cardiovascular events has been observed with ARIMIDEX compared with tamoxifen, and should seek medical attention immediately for new or worsening chest pain or shortness of breath (FDA ARIMIDEX label, section 17). Bone effects: inform patients that ARIMIDEX lowers the level of estrogen, which may lead to loss of bone mineral content and an increased risk of fractures (FDA ARIMIDEX label, section 17). Cholesterol: inform patients that an increased level of cholesterol might be seen while receiving ARIMIDEX (FDA ARIMIDEX label, section 17). Carpal tunnel: patients should notify their health care provider if they experience tickling, tingling or numbness (FDA ARIMIDEX label, section 17). Tamoxifen: advise patients not to take ARIMIDEX with tamoxifen (FDA ARIMIDEX label, section 17). Missed doses: take the dose as soon as remembered; if it is almost time for the next dose, skip the missed dose and do not take two doses at the same time (FDA ARIMIDEX label, section 17). Embryo-fetal toxicity: advise females of reproductive potential of the potential risk to a fetus, to use effective contraception during ARIMIDEX therapy and for at least 3 weeks after the last dose, and to contact their healthcare provider if they become pregnant (FDA ARIMIDEX label, sections 5.4 and 17).",
+    "warnings": [
+      "Ischaemic cardiovascular events: in women with pre-existing ischaemic heart disease, an increased incidence of ischaemic cardiovascular events was observed with ARIMIDEX in the ATAC trial (17% of patients on ARIMIDEX and 10% of patients on tamoxifen); consider risk and benefits of ARIMIDEX therapy in patients with pre-existing ischaemic heart disease (FDA ARIMIDEX label, section 5.1)",
+      "Bone effects: results from the ATAC trial bone substudy at 12 and 24 months demonstrated that patients receiving ARIMIDEX had a mean decrease in both lumbar spine and total hip bone mineral density compared with baseline, whereas patients receiving tamoxifen had a mean increase; consider bone mineral density monitoring (FDA ARIMIDEX label, section 5.2)",
+      "Cholesterol: during the ATAC trial more patients receiving ARIMIDEX were reported to have elevated serum cholesterol compared with patients receiving tamoxifen (9% versus 3.5%); consider cholesterol monitoring (FDA ARIMIDEX label, section 5.3)",
+      "Embryo-fetal toxicity: based on findings from animal studies and its mechanism of action, ARIMIDEX can cause fetal harm when administered to a pregnant woman. Anastrozole caused embryo-fetal toxicities in rats at maternal exposure 9 times the human clinical exposure based on AUC, and in rabbits caused pregnancy failure at doses equal to or greater than 16 times the recommended human dose on a mg/m2 basis. Advise pregnant women and females of reproductive potential of the potential risk to a fetus and to use effective contraception during therapy and for at least 3 weeks after the last dose (FDA ARIMIDEX label, section 5.4)"
+    ],
+    "precautions": [
+      "ARIMIDEX is not indicated in premenopausal women; its effect in premenopausal women with early or advanced breast cancer has not been studied, and because aromatization of adrenal androgens is not a significant source of estradiol in premenopausal women, anastrozole would not be expected to lower estradiol levels in premenopausal women (FDA ARIMIDEX label, sections 8.4 and 12.2).",
+      "ARIMIDEX has not been studied in patients with severe hepatic impairment; no changes in dose are recommended for patients with mild-to-moderate hepatic impairment (FDA ARIMIDEX label, section 2.2).",
+      "Patients with ER-negative disease and patients who did not respond to previous tamoxifen therapy rarely responded to ARIMIDEX (FDA ARIMIDEX label, section 1.3).",
+      "For adjuvant treatment of early breast cancer in postmenopausal women the optimal duration of therapy is unknown; in the ATAC trial ARIMIDEX was administered for five years (FDA ARIMIDEX label, section 2.1).",
+      "In the ATAC study the efficacy of ARIMIDEX compared with tamoxifen was less in patients 65 years or older than in younger patients, with hazard ratios for disease-free survival of 0.93 (95% CI 0.80-1.08) and 0.79 (95% CI 0.67-0.94) respectively (FDA ARIMIDEX label, section 8.5).",
+      "Based on studies in female animals, ARIMIDEX may impair fertility in females of reproductive potential (FDA ARIMIDEX label, section 8.3).",
+      "Verify the pregnancy status of females of reproductive potential prior to initiation of ARIMIDEX (FDA ARIMIDEX label, section 8.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Fractures (10% versus 7% with tamoxifen in the ATAC adjuvant trial) and osteoporosis (11% versus 7%) (FDA ARIMIDEX label, section 6.1, Table 1)",
+      "Anaphylaxis, angioedema and urticaria; postmarketing cases of erythema multiforme and Stevens-Johnson syndrome (FDA ARIMIDEX label, sections 4 and 6.2)",
+      "Hepatotoxicity: liver test abnormalities including raised alkaline phosphatase, ALT, AST, gamma-GT and bilirubin, and hepatitis (FDA ARIMIDEX label, section 6.2)",
+      "Serious skin reactions such as lesions, ulcers or blisters (FDA ARIMIDEX label, section 6)",
+      "Hypercalcemia, with or without an increase in parathyroid hormone (FDA ARIMIDEX label, section 6.2)",
+      "Tendon disorders including tendon rupture, tendonitis and tenosynovitis (FDA ARIMIDEX label, section 6.2)",
+      "Ischaemic cardiovascular events in women with pre-existing ischaemic heart disease (17% on ARIMIDEX versus 10% on tamoxifen in the ATAC trial) (FDA ARIMIDEX label, section 5.1)"
+    ],
+    "food_interactions": [
+      "ARIMIDEX may be taken with or without food (FDA ARIMIDEX label, section 2.1). Food reduces the rate but not the overall extent of anastrozole absorption: the mean Cmax decreased by 16% and the median Tmax was delayed from 2 to 5 hours when anastrozole was administered 30 minutes after food (FDA ARIMIDEX label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Risk summary: based on findings from animal studies and its mechanism of action, ARIMIDEX may cause fetal harm when administered to a pregnant woman. There are no studies of ARIMIDEX use in pregnant women. Anastrozole caused embryo-fetal toxicities in rats at maternal exposure 9 times the human clinical exposure based on AUC, and in rabbits caused pregnancy failure at doses equal to or greater than 16 times the recommended human dose on a mg/m2 basis. Advise pregnant women and females of reproductive potential of the potential risk to a fetus. The background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population the estimated background risk of major birth defect and miscarriage in clinically recognised pregnancies is 2% to 4% and 15% to 20% respectively. Animal data: in rats and rabbits given anastrozole during organogenesis at doses of 0.1 and 0.02 mg/kg/day respectively (about 1 and 1/3 the recommended human dose on a mg/m2 basis), anastrozole crossed the placenta with increased pregnancy loss, and fetotoxicity including delayed fetal development occurred in rats at 1 mg/kg/day (peak plasma levels 19 times higher than in humans at the therapeutic dose) (FDA ARIMIDEX label, sections 5.4 and 8.1). Advise females of reproductive potential to use effective contraception during therapy and for at least 3 weeks after the last dose (FDA ARIMIDEX label, sections 5.4 and 8.3).",
+    "lactation_guidance": "There are no data on the presence of anastrozole or its metabolites in human milk, or its effects on the breast-fed child or on milk production. Because many drugs are excreted in human milk and because of the tumorigenicity shown for anastrozole in animal studies, or the potential for serious adverse reactions in the breast-fed child from ARIMIDEX, advise lactating women not to breastfeed during treatment with ARIMIDEX and for 2 weeks after the last dose (FDA ARIMIDEX label, section 8.2).",
+    "overdose": "Clinical trials have been conducted with ARIMIDEX up to 60 mg as a single dose in healthy male volunteers and up to 10 mg daily in postmenopausal women with advanced breast cancer; these dosages were tolerated. A single dose of ARIMIDEX that results in life-threatening symptoms has not been established. There is no specific antidote to overdosage and treatment must be symptomatic. In the management of an overdose, consider that multiple agents may have been taken. Vomiting may be induced if the patient is alert. Dialysis may be helpful because ARIMIDEX is not highly protein bound. General supportive care, including frequent monitoring of vital signs and close observation of the patient, is indicated (FDA ARIMIDEX label, section 10).",
+    "pharmacokinetics": "Absorption is rapid, with maximum plasma concentrations typically occurring within 2 hours of dosing under fasted conditions; the pharmacokinetics of anastrozole are linear over the dose range of 1 to 20 mg and do not change with repeated dosing. Steady-state plasma levels are approximately 3- to 4-fold higher than after a single dose and approach steady state at about 7 days of once-daily dosing; anastrozole is 40% bound to plasma proteins in the therapeutic range. Metabolism occurs by N-dealkylation, hydroxylation and glucuronidation; the major circulating metabolite, triazole, lacks pharmacologic activity. Eighty-five percent of radiolabelled anastrozole was recovered in faeces and urine, with hepatic metabolism accounting for approximately 85% of elimination and renal elimination approximately 10% of total clearance. The mean elimination half-life is 50 hours (FDA ARIMIDEX label, section 12.3).",
+    "clinical_pearls": [
+      "Anastrozole only works in postmenopausal women: aromatisation of adrenal androgens is not a significant source of estradiol in premenopausal women, so anastrozole is expected not to lower estradiol levels in premenopausal patients and is not indicated for them (FDA ARIMIDEX label, sections 12.2 and 8.4).",
+      "Anastrozole has no glucocorticoid or mineralocorticoid effect - cortisol and aldosterone secretion were unaffected at baseline and in response to ACTH - so no steroid replacement is needed, unlike some earlier aromatase inhibitors (FDA ARIMIDEX label, section 12.2).",
+      "Never combine with tamoxifen: the combination reduced anastrozole levels by 27% and gave no efficacy benefit, and the arm was dropped from the ATAC trial (FDA ARIMIDEX label, section 7.1).",
+      "Bone and joint monitoring matters: bone mineral density fell on anastrozole while rising on tamoxifen in the ATAC bone substudy, and arthralgia/arthritis were among the most common adverse reactions (FDA ARIMIDEX label, sections 5.2 and 6.1).",
+      "The ATAC trial also showed that anastrozole benefit over tamoxifen was less clear in patients 65 years and older (hazard ratio for disease-free survival 0.93 versus 0.79 in younger patients) (FDA ARIMIDEX label, section 8.5).",
+      "Anastrozole is one of the most selective drugs in oncology: in vitro CYP inhibition Ki values were approximately 30-fold above the steady-state Cmax after 1 mg, and oral warfarin pharmacokinetics and anticoagulant activity were unchanged (FDA ARIMIDEX label, sections 7.3, 7.4 and 12.3).",
+      "Approved indications are postmenopausal only; the same molecule (anastrozole) is used off-label in men for gynaecomastia, and the label notes efficacy has not been demonstrated in pubertal boys with gynaecomastia (FDA ARIMIDEX label, section 8.4).",
+      "The ARIMIDEX label carries no boxed warning; the key risks are ischaemic cardiovascular events in women with pre-existing ischaemic heart disease, bone loss and fracture, raised cholesterol and embryo-fetal toxicity (FDA ARIMIDEX label, sections 4, 5.1-5.4).",
+      "Anastrozole appears in both the WHO Model List of Essential Medicines (24th list, 2025) for breast cancer and as an ovulation-inducer alternative to letrozole, and in the Kenya Essential Medicines List 2023 at Level of Use 5 (secondary hospital)."
+    ],
+    "brand_names": ["ARIMIDEX"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is necessary in patients with renal impairment. Since only about 10% of anastrozole is excreted unchanged in the urine, renal impairment does not influence total body clearance; anastrozole renal clearance decreased proportionally with creatinine clearance and was approximately 50% lower in volunteers with severe renal impairment (creatinine clearance < 30 mL/min/1.73 m2) compared with controls, while total clearance was only reduced 10% (FDA ARIMIDEX label, sections 2.1, 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "No changes in dose are recommended for patients with mild-to-moderate hepatic impairment, and no dosage adjustment is necessary in patients with stable hepatic cirrhosis, since plasma anastrozole concentrations in subjects with cirrhosis related to alcohol abuse were within the range seen in normal subjects (apparent oral clearance approximately 30% lower than in normal controls). ARIMIDEX has not been studied in patients with severe hepatic impairment (FDA ARIMIDEX label, sections 2.2, 8.7 and 12.3).",
+    "administration_instructions": "One 1 mg tablet taken once daily by mouth, with or without food; swallow with water. Do not take two doses at the same time; if a dose is missed take it as soon as remembered, and if it is almost time for the next dose, skip the missed dose and take the next regularly scheduled dose. Tablets are white, biconvex, film-coated, imprinted with a logo consisting of a letter 'A' with an arrowhead attached to the foot of the extended right leg on one side and 'Adx 1' on the reverse. Store at controlled room temperature, 20 to 25 degrees C (68 to 77 degrees F) (FDA ARIMIDEX label, sections 2.1, 3, 16 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ARIMIDEX (anastrozole) tablet (ANI Pharmaceuticals, Inc.), sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 1.1-1.3 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines, 24th list (2025), eEML entry 39 'Anastrozole' - Hormones and antihormones, oral solid 1 mg tablet, indications malignant neoplasms of breast; and Ovulation inducers, therapeutic equivalent to letrozole for female infertility",
+      "url": "https://list.essentialmeds.org/"
+    },
+    {
+      "field": "indications",
+      "ref": "Kenya Essential Medicines List 2023, section 9.2.4.2 Anastrozole, tablet 1 mg, Level of Use 5 (secondary hospital)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ARIMIDEX (anastrozole), section 4 Contraindications (Hypersensitivity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 5.2, 5.3, 6 Adverse Reactions, 6.1 Clinical Trials Experience (Tables 1, 3 and 5) and 6.2 Post-Marketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 2.1-2.2 Dosage and Administration, 8.4 Pediatric Use, 8.5 Geriatric Use and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 7.1-7.4 Drug Interactions and 12.3 Pharmacokinetics (Metabolism, Effect of Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 5.1, 5.2, 5.3, 8.3, 2.1, 2.2, 8.6 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ARIMIDEX (anastrozole), section 17 Patient Counseling Information and Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 5.1-5.4 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 1.3, 2.1, 2.2, 8.3, 8.4, 8.5 and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 4, 5.1, 6 Adverse Reactions, 6.1 Table 1 and 6.2 Post-Marketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 2.1 and 12.3 Pharmacokinetics (Absorption - food effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 5.4, 8.1 Pregnancy and 8.3 Females and Males of Reproductive Potential",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ARIMIDEX (anastrozole), section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, ARIMIDEX (anastrozole), section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ARIMIDEX (anastrozole), section 12.3 Pharmacokinetics (Absorption, Distribution, Metabolism, Excretion)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 1.3, 4, 5.1-5.4, 7.1, 7.3, 7.4, 8.4, 8.5, 12.2 and 12.3; WHO eEML entry 39; KEML 2023 entry 9.2.4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ARIMIDEX (anastrozole) listed as a brand product on DailyMed (ANI Pharmaceuticals, Inc.); the table value 'Anastrozole' is the generic name, not a brand",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA ARIMIDEX (anastrozole) label contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 2.1, 8.6 Renal Impairment and 12.3 Pharmacokinetics (Effect of Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 2.2, 8.7 Hepatic Impairment and 12.3 Pharmacokinetics (Effect of Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ARIMIDEX (anastrozole), sections 2.1, 3 Dosage Forms and Strengths, 16 How Supplied/Storage and Handling and 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current ARIMIDEX label uses the Pregnancy and Lactation Labeling Rule format (section 8.1) and states no pregnancy category letter",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; efficacy has not been demonstrated in the paediatric populations studied)",
+    "pregnancy_category (the current ARIMIDEX label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)",
+    "brand_names (the table previously listed 'Anastrozole', which is the generic name; corrected to the marketed brand ARIMIDEX)"
+  ],
+  "notes": "The table stores this agent as 'Anastrozole' with brand_names ['Anastrozole'], which is the generic name rather than a brand; brand_names has been corrected to ['ARIMIDEX'], the reference-listed product used as the primary source. All ARIMIDEX indications in the label are postmenopausal; the paediatric gynecomastia and McCune-Albright studies are described in the label but efficacy was not demonstrated, and the label's indication set does not extend to them. Anastrozole appears in the WHO Model List of Essential Medicines (24th list, 2025) in two entries - breast cancer (Hormones and antihormones) and as an ovulation-inducer alternative to letrozole - and in the Kenya Essential Medicines List 2023 at Level of Use 5 (secondary hospital), so this monograph is the best placed in Kenya of the six assigned drugs for procurement relevance. The ARIMIDEX label carries no boxed warning. Note that the label text still describes the postmenopausal-only indication; use in men for gynaecomastia is off-label and outside this draft."
+}

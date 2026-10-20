@@ -1,0 +1,217 @@
+{
+  "name": "Anagrelide",
+  "existing_id": "b5541b4a-3544-4154-8d96-96e878a497a6",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The precise mechanism by which anagrelide reduces blood platelet count is unknown. In cell culture studies, anagrelide suppressed expression of transcription factors including GATA-1 and FOG-1 required for megakaryocytopoiesis, ultimately leading to reduced platelet production. In blood withdrawn from normal volunteers treated with anagrelide, a disruption was found in the postmitotic phase of megakaryocyte development and a reduction in megakaryocyte size and ploidy. At therapeutic doses, anagrelide does not produce significant changes in white cell counts or coagulation parameters, and may have a small, but clinically insignificant effect on red cell parameters. The active metabolite, 3-hydroxy anagrelide, has similar potency and efficacy to that of anagrelide in the platelet-lowering effect; exposure (measured by plasma AUC) to 3-hydroxy anagrelide is approximately 2-fold higher compared to anagrelide. Anagrelide and 3-hydroxy anagrelide inhibit cyclic AMP phosphodiesterase 3 (PDE3) and 3-hydroxy anagrelide is approximately forty times more potent than anagrelide (IC50s = 0.9 and 36 nM respectively). PDE3 inhibition does not alter platelet production. PDE3 inhibitors, as a class, can inhibit platelet aggregation; however, significant inhibition of platelet aggregation is observed only at doses of anagrelide higher than those typically required to reduce platelet count. PDE3 inhibitors have cardiovascular effects including vasodilation, positive inotropy and chronotropy (FDA AGRYLIN (anagrelide) label, sections 12.1 and 12.2).",
+    "indications": [
+      "AGRYLIN is indicated for the treatment of patients with thrombocythemia, secondary to myeloproliferative neoplasms, to reduce the elevated platelet count and the risk of thrombosis and to ameliorate associated symptoms including thrombo-hemorrhagic events (FDA AGRYLIN label, section 1.1)"
+    ],
+    "contraindications": [
+      "Formal contraindications: none. The FDA label states 'Contraindications: None' (FDA AGRYLIN label, section 4).",
+      "Do not use AGRYLIN in patients with known risk factors for QT interval prolongation, such as congenital long QT syndrome, a known history of acquired QTc prolongation, concomitant medicinal products that can prolong the QTc interval, and hypokalemia (FDA AGRYLIN label, section 5.1).",
+      "Avoid use of AGRYLIN in patients with severe hepatic impairment (FDA AGRYLIN label, sections 2.3, 5.1 and 8.6).",
+      "Avoid use of AGRYLIN in patients taking medications that may prolong the QT interval, including but not limited to chloroquine, clarithromycin, haloperidol, methadone, moxifloxacin, amiodarone, disopyramide, procainamide and pimozide (FDA AGRYLIN label, section 7.1).",
+      "Avoid use of AGRYLIN with other PDE3 inhibitors or inotropes (e.g. cilostazol, milrinone) (FDA AGRYLIN label, section 7.2)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence >= 5%) in 942 adult patients with myeloproliferative neoplasms: headache 44%, diarrhoea 26%, palpitations 26%, asthenia 23%, oedema 21%, nausea 17%, abdominal pain 16%, dizziness 15%, pain 15%, dyspnoea 12%, cough 6%, rash 8%, pruritus 6%, back pain 6%, peripheral oedema 9%, fever 9%, malaise 6%, tachycardia 8%, chest pain 8%, vomiting 10%, flatulence 10%, anorexia 8% and dyspepsia 5% (FDA AGRYLIN label, section 6.1, Table 1)",
+      "Serious adverse reactions reported in clinical studies: congestive heart failure, myocardial infarction, cardiomyopathy, cardiomegaly, complete heart block, atrial fibrillation, cerebrovascular accident, pericardial effusion, pleural effusion, pulmonary infiltrates, pulmonary fibrosis, pulmonary hypertension and pancreatitis (FDA AGRYLIN label, sections 5.1, 5.2 and 6.1)",
+      "Postmarketing: Prinzmetal angina and Torsades de pointes (cardiac); interstitial lung disease including allergic alveolitis, eosinophilic pneumonia and interstitial pneumonitis (respiratory); tubulointerstitial nephritis (renal); clinically significant hepatotoxicity including symptomatic ALT/AST elevations and elevations greater than three times the ULN (hepatobiliary); cerebral infarction (nervous system) (FDA AGRYLIN label, section 6.2)",
+      "Postmarketing paediatric reports: anaemia (blood and lymphatic system), cutaneous photosensitivity (skin and subcutaneous tissue) and elevated leukocyte count (investigations) (FDA AGRYLIN label, section 6.2)",
+      "Paediatric patients: the most common adverse reactions during 3 months of treatment in an open-label study were fever, epistaxis, headache and fatigue; episodes of increased pulse and decreased systolic or diastolic blood pressure beyond normal ranges in the absence of clinical symptoms were observed (FDA AGRYLIN label, sections 6.1 and 6.2)"
+    ],
+    "dosage": {
+      "adult": "Recommended starting dosage: 0.5 mg four times daily or 1 mg twice daily (FDA AGRYLIN label, sections 2.1 and 2.2). Continue the starting dose for at least one week, then titrate to reduce and maintain the platelet count below 600,000/uL, and ideally between 150,000/uL and 400,000/uL. The dose increment should not exceed 0.5 mg/day in any one week. Dosage should not exceed 10 mg/day or 2.5 mg in a single dose; most patients respond at 1.5 to 3.0 mg/day (FDA AGRYLIN label, section 2.2). Monitor platelet counts weekly during titration, then monthly or as necessary (FDA AGRYLIN label, section 2.2). Moderate hepatic impairment (Child-Pugh 7-9): start at 0.5 mg/day and monitor frequently for cardiovascular events; dose increments should not exceed 0.5 mg/day in any one week after one week of toleration (FDA AGRYLIN label, section 2.3). Avoid use in severe hepatic impairment (FDA AGRYLIN label, sections 2.3 and 8.6).",
+      "geriatric": "Of the 942 subjects in clinical studies of AGRYLIN, 42.1% were 65 years and over and 14.9% were 75 years and over. No overall differences in safety or effectiveness were observed between these subjects and younger subjects, and other reported clinical experience has not identified differences in response between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out (FDA AGRYLIN label, section 8.5). In a pharmacokinetic study, Cmax and AUC of anagrelide were 36% and 61% higher respectively in elderly patients (age range 65 through 75 years) than in younger adults (age range 22 through 50 years), while Cmax and AUC of the active metabolite 3-hydroxy anagrelide were 42% and 37% lower respectively in the elderly (FDA AGRYLIN label, section 12.3).",
+      "paediatric": "The recommended starting dosage of AGRYLIN in paediatric patients is 0.5 mg daily (FDA AGRYLIN label, sections 2.1 and 2.2). Safety and effectiveness have been established in paediatric patients 7 years of age and older, supported by pharmacokinetic, pharmacodynamic and safety data in 18 paediatric patients aged 7 through 16 years with thrombocythemia secondary to essential thrombocythemia; there are no data for patients less than 7 years of age (FDA AGRYLIN label, section 8.4). Dose-normalised Cmax and AUC of anagrelide were 17% and 56% higher respectively in children and adolescents aged 7 through 16 years than in adults aged 19 through 57 years (FDA AGRYLIN label, section 12.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Drugs that prolong QT: avoid use of AGRYLIN in patients taking medications that may prolong the QT interval, including but not limited to chloroquine, clarithromycin, haloperidol, methadone, moxifloxacin, amiodarone, disopyramide, procainamide and pimozide (FDA AGRYLIN label, section 7.1).",
+      "PDE3 inhibitors: avoid use of drug products with similar properties such as inotropes and other PDE3 inhibitors (e.g. cilostazol, milrinone) because of exacerbation of inotropic effects (FDA AGRYLIN label, section 7.2).",
+      "Aspirin and drugs that increase bleeding risk: co-administration of anagrelide with aspirin showed greater ex vivo anti-platelet aggregation effects than aspirin alone, and an observational study in essential thrombocythemia suggests a higher rate of major haemorrhagic events in patients treated with AGRYLIN than with another cytoreductive treatment, with the majority of major haemorrhagic events occurring in patients also receiving concomitant anti-aggregatory treatment (primarily aspirin). Assess the risks and benefits of concomitant use, particularly in patients at high risk of haemorrhage, and monitor for bleeding with other agents known to cause bleeding (e.g. anticoagulants, PDE3 inhibitors, NSAIDs, antiplatelet agents, selective serotonin reuptake inhibitors) (FDA AGRYLIN label, sections 5.3 and 7.3).",
+      "CYP1A2 inhibitors: anagrelide and its active metabolite are primarily metabolised by CYP1A2. Inhibitors such as fluvoxamine and ciprofloxacin could increase anagrelide exposure; monitor for cardiovascular events and titrate the dose accordingly (FDA AGRYLIN label, section 7.4).",
+      "CYP1A2 inducers: inducers such as omeprazole could decrease anagrelide exposure and the dose may need to be titrated to compensate (FDA AGRYLIN label, section 7.4).",
+      "CYP1A2 substrates: anagrelide demonstrates limited in vitro inhibitory activity towards CYP1A2 and may alter the exposure of concomitant CYP1A2 substrates (e.g. theophylline, fluvoxamine, ondansetron) (FDA AGRYLIN label, section 7.4).",
+      "Digoxin or warfarin: in vivo interaction studies have demonstrated that anagrelide does not affect the pharmacokinetic properties of digoxin or warfarin, nor do digoxin or warfarin affect those of anagrelide (FDA AGRYLIN label, section 12.3)."
+    ],
+    "monitoring": "Monitor platelet counts every two days during the first week of treatment and at least weekly thereafter until the maintenance dosage is reached, to prevent thrombocytopenia; then weekly during titration and monthly or as necessary (FDA AGRYLIN label, sections 2.2 and 2.4). Obtain a pre-treatment cardiovascular examination including an ECG in all patients, and monitor for cardiovascular effects during treatment; consider periodic ECG monitoring in patients with heart failure, bradyarrhythmias or electrolyte abnormalities (FDA AGRYLIN label, section 5.1). AGRYLIN therapy requires clinical monitoring including complete blood counts, assessment of hepatic and renal function, and electrolytes; assess hepatic function before and during treatment (FDA AGRYLIN label, sections 2.4 and 8.6). Monitor patients for bleeding, including those on concomitant medicines known to cause bleeding (FDA AGRYLIN label, section 5.3). Evaluate patients for signs and symptoms of underlying cardiopulmonary disease prior to initiating and during therapy, and for dyspnoea with lung infiltrates suggesting interstitial lung disease, discontinuing treatment if suspected (FDA AGRYLIN label, sections 5.2 and 5.4).",
+    "patient_counselling": "Tell the patient their dose will be adjusted on a weekly basis until they are on a dose that lowers their platelets to an appropriate level, and that they should contact the doctor if they experience tolerability issues so the dose or dosing frequency can be adjusted (FDA AGRYLIN label, section 17). Cardiovascular effects: contact a doctor immediately if chest pain, palpitations, or an irregular heartbeat occurs (FDA AGRYLIN label, section 17). Pulmonary hypertension: contact a doctor immediately for shortness of breath, swelling of the legs or ankles, or if lips and skin turn a bluish colour (FDA AGRYLIN label, section 17). Risk of bleeding: warn that concomitant aspirin or other medicines that affect blood clotting may increase bleeding risk; contact a doctor immediately for signs of bleeding (e.g. vomiting blood, bloody or black stools) or unexplained bruising (FDA AGRYLIN label, section 17). Lactation: advise patients not to breastfeed during treatment with AGRYLIN and for one week following the last dose (FDA AGRYLIN label, section 17). Infertility: advise females of reproductive potential that AGRYLIN may impair fertility (FDA AGRYLIN label, section 17).",
+    "warnings": [
+      "Cardiovascular toxicity: torsades de pointes and ventricular tachycardia have been reported with AGRYLIN, which increases the QTc interval and increases heart rate. Obtain a pre-treatment cardiovascular examination including an ECG in all patients, monitor for cardiovascular effects during treatment, and do not use in patients with known risk factors for QT prolongation (FDA AGRYLIN label, section 5.1)",
+      "Hepatic impairment increases anagrelide exposure (up to 8-fold increase in total exposure) and could increase the risk of QTc prolongation; monitor patients with hepatic impairment for QTc prolongation and other cardiovascular adverse reactions (FDA AGRYLIN label, sections 5.1, 8.6 and 12.3)",
+      "Pulmonary hypertension: cases have been reported in patients treated with AGRYLIN; evaluate patients for signs and symptoms of underlying cardiopulmonary disease prior to initiating and during therapy (FDA AGRYLIN label, section 5.2)",
+      "Bleeding risk: use of concomitant AGRYLIN and aspirin increased major haemorrhagic events in a postmarketing study; assess the risks and benefits of concomitant use and monitor for bleeding (FDA AGRYLIN label, section 5.3)",
+      "Pulmonary toxicity: interstitial lung diseases (including allergic alveolitis, eosinophilic pneumonia and interstitial pneumonitis) have been reported in postmarketing reports, usually presenting with progressive dyspnoea with lung infiltrates, with onset from 1 week to several years after initiation; discontinue AGRYLIN and evaluate if suspected (FDA AGRYLIN label, section 5.4)",
+      "PDE3 inhibition may cause vasodilation, tachycardia, palpitations and congestive heart failure; other PDE3 inhibitors have caused decreased survival compared with placebo in patients with class III-IV congestive heart failure, and in patients with cardiac disease use AGRYLIN only when benefits outweigh risks (FDA AGRYLIN label, section 5.1)",
+      "Clinically significant hepatotoxicity, including symptomatic ALT and AST elevations and elevations greater than three times the ULN, has been reported postmarketing (FDA AGRYLIN label, section 6.2)"
+    ],
+    "precautions": [
+      "The potential risks and benefits of AGRYLIN therapy in a patient with mild and moderate hepatic impairment should be assessed before treatment is commenced (FDA AGRYLIN label, sections 5.1 and 8.6).",
+      "Evaluate patients for signs and symptoms of underlying cardiopulmonary disease prior to initiating and during AGRYLIN therapy because cases of pulmonary hypertension have been reported (FDA AGRYLIN label, section 5.2).",
+      "Based on findings from animal studies, AGRYLIN may impair female fertility; in fertility studies in female rats, oral doses of 30 mg/kg/day (29 times the recommended maximum human dose based on body surface area) or higher resulted in increased pre- and post-implantation loss and a decrease in the number of live embryos (FDA AGRYLIN label, sections 8.3 and 13.1).",
+      "In a two-year rat carcinogenicity study a higher incidence of uterine adenocarcinoma was observed in females receiving 30 mg/kg/day (at least 174 times human AUC exposure after a 1 mg twice daily dose), and adrenal pheochromocytomas were increased in males receiving 3 mg/kg/day and above and in females receiving 10 mg/kg/day and above (FDA AGRYLIN label, section 13.1).",
+      "Platelet counts typically begin to respond within 7 to 14 days at the proper dosage; in clinical trials the time to complete response (platelet count <= 600,000/uL) ranged from 4 to 12 weeks. Following dosage interruption or withdrawal, platelet counts typically start to rise within 4 days and return to baseline in one to two weeks, possibly rebounding above baseline, so monitor platelet counts frequently (FDA AGRYLIN label, section 2.4).",
+      "Do not exceed a dose increment of 0.5 mg/day in any one week, and do not exceed 10 mg/day or 2.5 mg in a single dose (FDA AGRYLIN label, section 2.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Congestive heart failure, myocardial infarction, cardiomyopathy, cardiomegaly and complete heart block (FDA AGRYLIN label, sections 5.1 and 6.1)",
+      "Torsades de pointes and ventricular tachycardia; Prinzmetal angina (FDA AGRYLIN label, sections 5.1 and 6.2)",
+      "Atrial fibrillation and cerebrovascular accident (FDA AGRYLIN label, section 6.1)",
+      "Pulmonary hypertension, pulmonary infiltrates, pulmonary fibrosis and pleural effusion (FDA AGRYLIN label, sections 5.2 and 6.1)",
+      "Interstitial lung disease including allergic alveolitis, eosinophilic pneumonia and interstitial pneumonitis (FDA AGRYLIN label, sections 5.4 and 6.2)",
+      "Clinically significant hepatotoxicity including symptomatic ALT/AST elevations and elevations greater than three times the ULN (FDA AGRYLIN label, section 6.2)",
+      "Thrombocytopenia with bleeding, including major haemorrhagic events when used concomitantly with aspirin (FDA AGRYLIN label, sections 2.4, 5.3 and 7.3)",
+      "Cerebral infarction and tubulointerstitial nephritis (FDA AGRYLIN label, section 6.2)"
+    ],
+    "food_interactions": [
+      "No specific food administration instruction is given, but food alters exposure: administration of a 1 mg dose of anagrelide with food decreased Cmax by 14% but increased AUC by 20%, and decreased the Cmax of the active metabolite 3-hydroxy anagrelide by 29% with no effect on its AUC (FDA AGRYLIN label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Risk summary: available data from case reports with AGRYLIN use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. In animal embryo-fetal studies, delayed fetal development (delayed skeletal ossification and reduced body weight) was observed in rats administered anagrelide hydrochloride during organogenesis at doses approximately 97 times the maximum clinical dose (10 mg/day) based on body surface area. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population the estimated background risk of major birth defect and miscarriage in clinically recognised pregnancies is 2% to 4% and 15% to 20% respectively (FDA AGRYLIN label, section 8.1). Disease-associated maternal and/or embryo-fetal risk: thrombotic events such as stroke, deep vein thrombosis or myocardial infarction can be complications of thrombocythemia, and thrombocythemia in pregnancy is associated with increased risk of miscarriage, stillbirth and other maternal outcomes such as preeclampsia (FDA AGRYLIN label, section 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of anagrelide in human milk, the effect on the breastfed child, or the effects on milk production. Anagrelide or its metabolites have been detected in the milk of lactating rats. Because of the potential for serious adverse reactions, including thrombocytopenia, in a breastfed child, advise patients that breastfeeding is not recommended during treatment with AGRYLIN and for one week following the last dose (FDA AGRYLIN label, section 8.2).",
+    "overdose": "At higher than recommended doses, AGRYLIN has been shown to cause hypotension, and postmarketing case reports of intentional overdose describe sinus tachycardia and vomiting, with symptoms resolving with supportive management. Platelet reduction is dose-related, so thrombocytopenia, which can potentially cause bleeding, is expected from overdosage. In case of overdosage, stop AGRYLIN dosing, monitor platelet counts for thrombocytopenia, observe for possible complications such as bleeding, and consider resumption of dosing once the platelet count returns to the normal range (FDA AGRYLIN label, section 10).",
+    "pharmacokinetics": "Following oral administration of AGRYLIN, at least 70% is absorbed from the gastrointestinal tract and, in fasted subjects, peak plasma concentrations occur within about 1 hour. Dose proportionality has been found over the 0.5 mg to 2.5 mg range. Anagrelide is primarily metabolised by CYP1A2 to the active metabolite 3-hydroxy anagrelide, which is subsequently metabolised by CYP1A2 to the inactive metabolite RL603; less than 1% of the administered dose is recovered in urine as anagrelide, approximately 3% as 3-hydroxy anagrelide and 16-20% as RL603. Plasma half-lives are approximately 1.5 hours for anagrelide and 2.5 hours for 3-hydroxy anagrelide, and neither accumulates in plasma with clinical dosing regimens. In moderate hepatic impairment (Child-Pugh 7-9) there was a 2-fold increase in mean anagrelide Cmax and an 8-fold increase in total exposure (AUC) compared with healthy subjects, with 24% lower mean 3-hydroxy anagrelide Cmax and 77% higher AUC. In severe renal impairment (creatinine clearance < 30 mL/min) a single 1 mg dose produced no significant effect on anagrelide pharmacokinetics (FDA AGRYLIN label, section 12.3).",
+    "clinical_pearls": [
+      "Anagrelide is a cytoreductive antiplatelet agent, not a cytotoxin: it reduces platelet production by interfering with megakaryocytopoiesis rather than by killing cells (FDA AGRYLIN label, sections 12.1 and 12.2).",
+      "Titrate slowly - no more than 0.5 mg/day per week - because the main toxicity to avoid is profound thrombocytopenia, and monitor platelet counts every two days for the first week (FDA AGRYLIN label, sections 2.2 and 2.4).",
+      "Platelet counts rebound within 4 days of stopping the drug and typically return to baseline within one to two weeks, so a rebound thrombocytosis should be expected rather than treated as failure of therapy (FDA AGRYLIN label, section 2.4).",
+      "Anagrelide is a PDE3 inhibitor with positive inotropic and chronotropic effects and prolongs QTc; check an ECG before starting and avoid combination with other QT-prolonging drugs and with other PDE3 inhibitors (FDA AGRYLIN label, sections 5.1, 7.1 and 7.2).",
+      "The combination of anagrelide with aspirin is the single most important bleeding interaction; the label reports increased major haemorrhagic events in a postmarketing observational study (FDA AGRYLIN label, sections 5.3 and 7.3).",
+      "Moderate hepatic impairment raises anagrelide exposure roughly 8-fold, so the starting dose must be reduced to 0.5 mg/day with close cardiovascular monitoring, and severe hepatic impairment is an avoid (FDA AGRYLIN label, sections 2.3 and 12.3).",
+      "There is no boxed warning on the AGRYLIN label; the key risks are cardiovascular/QT toxicity, bleeding with aspirin, pulmonary hypertension and interstitial lung disease (FDA AGRYLIN label, sections 4, 5.1, 5.2, 5.3 and 5.4).",
+      "Anagrelide is used for thrombocythemia secondary to myeloproliferative neoplasms, not for acute thrombocytosis; the label's supporting population comprised 551 essential thrombocythaemia, 117 polycythaemia vera, 178 chronic myeloid leukaemia and 96 other myeloproliferative neoplasm patients (FDA AGRYLIN label, section 14)."
+    ],
+    "brand_names": ["AGRYLIN"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the label. A pharmacokinetic study at a single 1 mg dose of anagrelide in subjects with severe renal impairment (creatinine clearance < 30 mL/min) showed no significant effects on the pharmacokinetics of anagrelide (FDA AGRYLIN label, section 12.3).",
+    "hepatic_dose_adjustment": "Hepatic metabolism is the major route of anagrelide clearance and exposure is increased 8-fold in patients with moderate hepatic impairment, so dose reduction is required. In moderate hepatic impairment (Child-Pugh 7-9) start AGRYLIN at 0.5 mg/day and monitor frequently for cardiovascular events; patients who have tolerated therapy for one week may have their dose increased, in increments not exceeding 0.5 mg/day in any one week. Avoid use in severe hepatic impairment, in which use has not been studied (FDA AGRYLIN label, sections 2.3, 8.6 and 12.3).",
+    "administration_instructions": "Oral capsule, taken with or without food; the label gives no food-timing requirement, although food reduced Cmax by 14% and increased AUC by 20% for a 1 mg dose. Capsules are 0.5 mg, white opaque, imprinted '063' in black ink, each containing 0.5 mg anagrelide equivalent to 0.61 mg anagrelide hydrochloride USP (FDA AGRYLIN label, sections 3, 12.3 and 16). Store at 25 degrees C (77 degrees F), excursions permitted to 15 to 30 degrees C (59 to 86 degrees F), and store in a light-resistant container (FDA AGRYLIN label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules (Takeda Pharmaceuticals America, Inc.), sections 12.1 Mechanism of Action and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 1.1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 4 Contraindications (none), sections 5.1 and 8.6 (QT risk factors, severe hepatic impairment), section 7.1 (QT-prolonging drugs), section 7.2 (PDE3 inhibitors)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 5.1, 5.2, 6.1 Clinical Trials Experience (Table 1) and 6.2 Postmarketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.1-2.4 (starting dose, titration, hepatic impairment, clinical monitoring), 8.4 Pediatric Use, 8.5 Geriatric Use and 12.3 Pharmacokinetics (specific populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 5.3, 7.1-7.4 Drug Interactions and 12.3 (digoxin/warfarin)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.2, 2.4, 5.1, 5.2, 5.3, 5.4 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 5.1-5.4 Warnings and Precautions and section 6.2 Postmarketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.2, 2.4, 5.1, 5.2, 8.3, 8.6 and 13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.4, 5.1, 5.2, 5.3, 5.4, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 12.3 Pharmacokinetics (food effect on Cmax and AUC)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 12.3 Pharmacokinetics (Absorption, Metabolism, Elimination, specific populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.2, 2.3, 2.4, 4, 5.1-5.4, 7.1, 7.2, 12.1, 12.2, 12.3 and 14 Clinical Studies",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AGRYLIN (anagrelide) capsules listed as a brand product on DailyMed (Takeda Pharmaceuticals America, Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA AGRYLIN (anagrelide) label contains no boxed warning; section 4 Contraindications states 'None'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, section 12.3 Pharmacokinetics (Renal Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 2.3, 8.6 Hepatic Impairment and 12.3 Pharmacokinetics (Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, AGRYLIN (anagrelide) capsules, sections 3 Dosage Forms and Strengths, 12.3 Pharmacokinetics (food effect) and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current AGRYLIN label uses the Pregnancy and Lactation Labeling Rule format (section 8.1) and states no pregnancy category letter",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb960074-99c1-4a73-941f-f0644a7ec219"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current AGRYLIN label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)",
+    "food_interactions (no formal food-interaction warning exists in the label; the entry reports the pharmacokinetic food effect only)"
+  ],
+  "notes": "The table stores this agent as 'Anagrelide' with brand_names ['Anagrelide'], which is the generic name rather than a brand; this has been corrected to ['AGRYLIN'], the Takeda reference-listed product used as the primary source. The AGRYLIN label carries no boxed warning and its formal contraindications section states 'None', so the de facto contraindications that matter clinically (QT-prolongation risk factors, severe hepatic impairment, concomitant QT-prolonging drugs, other PDE3 inhibitors) are listed explicitly with their label sections. Anagrelide is not included in the WHO Model List of Essential Medicines (24th list, 2025) or the Kenya Essential Medicines List 2023, so no EML/KEML source is cited for this monograph. The label states the CYP1A2 inhibitor/inducer and aspirin interactions qualitatively without numeric effect sizes, and no food-timing instruction is given."
+}

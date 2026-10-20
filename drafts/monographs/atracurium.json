@@ -1,0 +1,233 @@
+{
+  "name": "Atracurium",
+  "existing_id": "705aa05a-2d67-4640-8017-01ed04c743e9",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atracurium besylate is an intermediate-duration, nondepolarizing skeletal muscle relaxant for intravenous administration. Nondepolarizing agents antagonize the neurotransmitter action of acetylcholine by binding competitively with cholinergic receptor sites on the motor end-plate. This antagonism is inhibited, and neuromuscular block reversed, by acetylcholinesterase inhibitors such as neostigmine, edrophonium and pyridostigmine. Atracurium is inactivated in plasma via two non-oxidative pathways: ester hydrolysis catalyzed by nonspecific esterases, and Hofmann elimination, a non-enzymatic chemical process occurring at physiological pH (FDA Atracurium Besylate Injection label, Description and Clinical Pharmacology sections).",
+    "indications": [
+      "As an adjunct to general anesthesia to facilitate endotracheal intubation and to provide skeletal muscle relaxation during surgery or mechanical ventilation (FDA Atracurium Besylate Injection label, Indications and Usage).",
+      "Kenya: listed in the Kenya Essential Medicines List 2023 under section 2.1.1 'Muscle relaxants' as Atracurium, injection 10 mg (as besilate)/mL in a 5 mL ampoule, Level of Use (LoU) 4; the Kenya National Medicines Formulary 2023 monograph lists the adult indication as 'Neuromuscular blockade (short to intermediate duration) for surgery and intubation' and 'Neuromuscular blockade during intensive care' (KEML 2023, section 2.1.1; KNMF 2023, section 2.1).",
+      "WHO Model List: atracurium is listed on the WHO Model List of Essential Medicines for muscle relaxants, formulation 'Parenteral > General injections > IV: 10 mg per mL (besylate)', as a therapeutic equivalent of vecuronium (WHO eEML, Atracurium)."
+    ],
+    "contraindications": [
+      "Patients known to have a hypersensitivity to atracurium (FDA Atracurium Besylate Injection label, Contraindications).",
+      "Use of atracurium from multiple-dose vials containing benzyl alcohol as a preservative is contraindicated in patients with a known hypersensitivity to benzyl alcohol (FDA Atracurium Besylate Injection label, Contraindications)."
+    ],
+    "side_effects": [
+      "In controlled clinical studies in 875 patients, atracurium was discontinued in only one patient and six other patients required treatment for adverse reactions attributable to atracurium (wheezing in one, hypotension in five); the overall incidence of clinically important adverse reactions was 7/875 (0.8%) (FDA Atracurium Besylate Injection label, Adverse Reactions).",
+      "Most adverse reactions were suggestive of histamine release. Adverse reactions reported in the 875-patient trial: skin flush 5.0% overall (1.0% at 0.00-0.30 mg/kg, 8.7% at 0.31-0.50 mg/kg, 29.2% at 0.60 mg/kg or more), erythema 0.6%, itching 0.2%, wheezing/bronchial secretions 0.2% and hives 0.1% (FDA Atracurium Besylate Injection label, Adverse Reactions, Table 1).",
+      "Vital sign changes of more than 30% in 530 patients without cardiovascular disease: mean arterial pressure decrease 1.9% and heart rate decrease 0.6% overall, with a 14.3% mean arterial pressure decrease in the 0.60 mg/kg or more group (FDA Atracurium Besylate Injection label, Adverse Reactions, Table 2).",
+      "Post-marketing clinical practice (approximately 3 million patients): allergic reactions (anaphylactic or anaphylactoid responses) which in rare instances were severe, for example cardiac arrest; inadequate block and prolonged block; hypotension, vasodilatation (flushing), tachycardia and bradycardia; dyspnea, bronchospasm and laryngospasm; rash, urticaria and reaction at the injection site (FDA Atracurium Besylate Injection label, Adverse Reactions).",
+      "Rare spontaneous reports of seizures in ICU patients following long-term infusion of atracurium to support mechanical ventilation (FDA Atracurium Besylate Injection label, Adverse Reactions and Precautions).",
+      "Atracurium has no clinically significant effect on heart rate in the recommended dosage range and therefore does not counteract the bradycardia produced by many anesthetic agents or vagal stimulation; as a result, bradycardia during anesthesia may be more common with atracurium than with other muscle relaxants (FDA Atracurium Besylate Injection label, Precautions)."
+    ],
+    "dosage": {
+      "adult": "Initial bolus for intubation and maintenance of neuromuscular block: 0.4 to 0.5 mg/kg (1.7 to 2.2 times the ED95) as an intravenous bolus, giving good or excellent non-emergency intubation conditions in 2 to 2.5 minutes and maximum neuromuscular block approximately 3 to 5 minutes after injection. Clinically required block generally lasts 20 to 35 minutes under balanced anesthesia, with recovery to 25% of control at approximately 35 to 45 minutes and 95% complete at approximately 60 minutes. Maintenance doses 0.08 to 0.10 mg/kg, first required 20 to 45 minutes after the initial dose and thereafter at approximately 15 to 25 minute intervals; doses up to 0.2 mg/kg permit maintenance at longer intervals. If atracurium is given under steady-state isoflurane or enflurane, reduce the initial dose by about one third to 0.25 to 0.35 mg/kg. Special considerations: 0.3 to 0.4 mg/kg given slowly or in divided doses over one minute for patients with significant cardiovascular disease or any history suggesting greater risk of histamine release; and 0.3 to 0.4 mg/kg after succinylcholine for intubation under balanced anesthesia. Continuous infusion in the operating room: after a 0.3 to 0.5 mg/kg bolus, an initial infusion rate of 9 to 10 mcg/kg/min to counteract spontaneous recovery, then 5 to 9 mcg/kg/min to maintain 89% to 99% block (occasional patients need 2 to 15 mcg/kg/min); reduce the rate by about one third in the presence of steady-state enflurane or isoflurane, and by approximately half during cardiopulmonary bypass with induced hypothermia (25 to 28 degrees C). Infusion in the ICU: 11 to 13 mcg/kg/min (range 4.5 to 29.5) in adults (FDA Atracurium Besylate Injection label, Dosage and Administration).",
+      "geriatric": "Since marketing in 1983, uncontrolled clinical experience and limited data from controlled trials have not identified differences in effectiveness, safety or dosage requirements between healthy elderly and younger patients; however, as with other neuromuscular blocking agents, use of a peripheral nerve stimulator to monitor neuromuscular function is suggested. Elderly patients may have slightly altered pharmacokinetic parameters compared with younger patients, with a slightly decreased total plasma clearance offset by a corresponding increase in volume of distribution, and there has been no significant difference in clinical duration and recovery from neuromuscular block (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Geriatric Use).",
+      "paediatric": "No atracurium dosage adjustments are required for pediatric patients two years of age or older. For infants 1 month to 2 years of age under halothane anesthesia, an initial dose of 0.3 to 0.4 mg/kg is recommended; maintenance doses may be required with slightly greater frequency in infants and children than in adults. For a reduced initial dose of 0.3 to 0.4 mg/kg in patients with significant cardiovascular disease or greater risk of histamine release, this applies to adults, children or infants. Insufficient data are available to recommend a specific initial atracurium dose for children and infants following succinylcholine. Safety and effectiveness in pediatric patients below the age of 1 month have not been established (FDA Atracurium Besylate Injection label, Dosage and Administration, Precautions and Pediatric Use). Kenya: Child - initially by IV injection 300-600 micrograms/kg, then by IV injection 100-200 micrograms/kg repeated if necessary; alternatively by IV injection initially 300-600 micrograms/kg followed by IV infusion 300-600 micrograms/kg/hour (KNMF 2023, section 2.1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Drugs which may enhance the neuromuscular blocking action of atracurium include: enflurane; isoflurane; halothane; certain antibiotics, especially the aminoglycosides and polymyxins; lithium; magnesium salts; procainamide; and quinidine (FDA Atracurium Besylate Injection label, Precautions, Drug Interactions).",
+      "Isoflurane and enflurane increase the potency of atracurium and prolong neuromuscular block by approximately 35%; halothane's potentiating effect (approximately 20%) is marginal (FDA Atracurium Besylate Injection label, Clinical Pharmacology).",
+      "If other muscle relaxants are used during the same procedure, the possibility of a synergistic or antagonist effect should be considered (FDA Atracurium Besylate Injection label, Precautions).",
+      "The prior administration of succinylcholine does not enhance the duration, but quickens the onset and may increase the depth, of neuromuscular block induced by atracurium; atracurium should not be administered until the patient has recovered from succinylcholine-induced neuromuscular block (FDA Atracurium Besylate Injection label, Precautions and Dosage and Administration).",
+      "Renal function does not alter the duration of neuromuscular block produced by atracurium, and no atracurium dosage adjustments are required for patients with renal disease (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Dosage and Administration).",
+      "Hemofiltration has a minimal effect on plasma levels of atracurium and its metabolites including laudanosine; the effects of hemodialysis and hemoperfusion are unknown (FDA Atracurium Besylate Injection label, Precautions).",
+      "Kenya: atracurium is listed among interacting medicines for several agents in the KNMF 2023, including corticosteroids (desmopressin, rotavirus vaccine, aceclofenac, besifloxacin, gatifloxacin, norfloxacin, ofloxacin, aspirin, atracurium, carbamazepine, clarithromycin, ciclosporin, diltiazem, erythromycin, fluindione, ketoconazole, licorice, phenobarbital, primidone, rifampin, warfarin) and triamcinolone (desmopressin, rotavirus vaccine, besifloxacin, gatifloxacin, levofloxacin, moxifloxacin, norfloxacin, ofloxacin, aspirin, atracurium, fosphenytoin, licorice, phenytoin, ritonavir) (KNMF 2023, sections 21.1 and 21.2)."
+    ],
+    "monitoring": "Use a peripheral nerve stimulator to monitor the twitch response; it permits the most advantageous use of atracurium, minimizing the possibility of overdosage or underdosage, and assists in the evaluation of recovery (FDA Atracurium Besylate Injection label, Dosage and Administration). Whenever the use of atracurium or any neuromuscular blocking agent is contemplated in the ICU, neuromuscular transmission should be monitored continuously during administration with the help of a nerve stimulator, and additional doses should not be given before there is a definite response to T1 or to the first twitch; if no response is elicited, infusion administration should be discontinued until a response returns (Precautions). After discontinuation of ICU infusion, spontaneous recovery of four twitches in a train-of-four occurred in an average of approximately 30 minutes (range 15 to 75 minutes) and spontaneous recovery to a train-of-four ratio greater than 75% in an average of approximately 60 minutes (range 32 to 108 minutes) (Precautions). Monitor for the development of histamine-mediated hypotension, bronchospasm and skin flush, particularly in patients with significant cardiovascular disease or a history of anaphylactoid reactions or asthma (Precautions). Monitor for signs of malignant hyperthermia: the clinician should be prepared to recognize and treat MH in any patient scheduled for general anesthesia, as reports of MH have been rare in cases in which atracurium has been used (Precautions). Monitor neuromuscular recovery before and during reversal with an anticholinesterase agent, because the tendency for residual neuromuscular block is increased if reversal is attempted at deep levels of block or if inadequate doses of reversal agents are employed (Clinical Pharmacology).",
+    "patient_counselling": "Atracurium besylate is used only by clinicians skilled in airway management and respiratory support, under general anesthesia; it has no effect on consciousness, pain threshold or cerebration and should be used only with adequate anesthesia (FDA Atracurium Besylate Injection label, Warnings and Clinical Pharmacology). Patients should be informed that severe anaphylactic reactions to neuromuscular blocking agents, including atracurium besylate, have been reported and that there is a risk of cross-reactivity with other neuromuscular blocking agents; patients should be asked about previous anaphylactic reactions to other neuromuscular blocking agents (Precautions). Patients and their families should be told that the drug causes paralysis and that the treating team will provide respiratory support and, when needed, reversal with anticholinesterase agents (Warnings). Because the tendency for residual neuromuscular block is increased if reversal is attempted at deep levels of block or if inadequate doses of reversal agents are employed, patients should be told that recovery is monitored with a nerve stimulator and that muscle weakness can persist after the operation (Warnings, Precautions and Adverse Reactions). The 10 mL multiple-dose vial contains benzyl alcohol; neonates are at increased risk of neurological and other complications, sometimes fatal, from benzyl alcohol, so the single-use 5 mL vials (which contain no benzyl alcohol) are used in neonates (Warnings and Precautions).",
+    "warnings": [
+      "Atracurium should be used only by those skilled in airway management and respiratory support. Equipment and personnel must be immediately available for endotracheal intubation and support of ventilation, including administration of positive pressure oxygen. Adequacy of respiration must be assured through assisted or controlled ventilation. Anticholinesterase reversal agents should be immediately available (FDA Atracurium Besylate Injection label, Warnings).",
+      "Do not give atracurium besylate by intramuscular administration (FDA Atracurium Besylate Injection label, Warnings and Dosage and Administration).",
+      "Atracurium has no known effect on consciousness, pain threshold or cerebration; it should be used only with adequate anesthesia (FDA Atracurium Besylate Injection label, Warnings).",
+      "Atracurium besylate injection has an acid pH and should not be mixed with alkaline solutions (e.g., barbiturate solutions) in the same syringe or administered simultaneously during intravenous infusion through the same needle, because atracurium may be inactivated and a free acid may be precipitated (FDA Atracurium Besylate Injection label, Warnings).",
+      "Atracurium besylate injection 10 mL multiple-dose vials contain benzyl alcohol. In neonates, benzyl alcohol has been associated with an increased incidence of neurological and other complications which are sometimes fatal; the 5 mL single-use vials do not contain benzyl alcohol (FDA Atracurium Besylate Injection label, Warnings and Precautions).",
+      "Anaphylaxis: severe anaphylactic reactions to neuromuscular blocking agents, including atracurium besylate, have been reported and have in some cases been life-threatening and fatal; immediate availability of appropriate emergency treatment is required, and caution is needed in patients with previous anaphylactic reactions to other neuromuscular blocking agents because cross-reactivity between neuromuscular blocking agents, both depolarizing and non-depolarizing, has been reported in this class (FDA Atracurium Besylate Injection label, Warnings).",
+      "Risk of death due to medication errors: administration of atracurium results in paralysis, which may lead to respiratory arrest and death, and this progression may be more likely in a patient for whom it is not intended. Confirm proper selection of the intended product and avoid confusion with other injectable solutions present in critical care settings; if another healthcare provider is administering the product, ensure the intended dose is clearly labeled and communicated (FDA Atracurium Besylate Injection label, Warnings).",
+      "Atracurium may have profound effects in patients with myasthenia gravis, Eaton-Lambert syndrome or other neuromuscular diseases in which potentiation of nondepolarizing agents has been noted; a peripheral nerve stimulator is especially important in these patients (FDA Atracurium Besylate Injection label, Precautions).",
+      "Resistance to nondepolarizing neuromuscular blocking agents may develop in burn patients, and increased doses may be required depending on the time elapsed since the burn injury and the size of the burn (FDA Atracurium Besylate Injection label, Precautions).",
+      "The safety of atracurium has not been established in patients with bronchial asthma (FDA Atracurium Besylate Injection label, Precautions).",
+      "Multiple factors in anesthesia practice are suspected of triggering malignant hyperthermia; the clinician should be prepared to recognize and treat MH in any patient scheduled for general anesthesia, and reports of MH have been rare in cases in which atracurium has been used (FDA Atracurium Besylate Injection label, Precautions)."
+    ],
+    "precautions": [
+      "Special caution should be exercised in administering atracurium to patients in whom substantial histamine release would be especially hazardous (e.g., patients with clinically significant cardiovascular disease) and in patients with any history (e.g., severe anaphylactoid reactions or asthma) suggesting a greater risk of histamine release; in these patients the recommended initial dose is lower (0.3 to 0.4 mg/kg) and should be administered slowly or in divided doses over one minute (FDA Atracurium Besylate Injection label, Precautions).",
+      "Dosage reductions must be considered in patients with neuromuscular disease, severe electrolyte disorders or carcinomatosis in which potentiation of neuromuscular block or difficulties with reversal have been demonstrated; there is no clinical experience with atracurium in these patients and no specific dosage adjustments can be recommended (FDA Atracurium Besylate Injection label, Dosage and Administration).",
+      "When there is a need for long-term mechanical ventilation, the benefits-to-risk ratio of neuromuscular block must be considered. Little information is available on the plasma levels and clinical consequences of atracurium metabolites that may accumulate during days to weeks of administration in ICU patients; laudanosine, a major biologically active metabolite without neuromuscular blocking activity, produces transient hypotension and, in higher doses, cerebral excitatory effects (generalized muscle twitching and seizures) in several animal species, and there have been rare spontaneous reports of seizures in ICU patients who received atracurium, usually with predisposing causes such as head trauma, cerebral edema, hypoxic encephalopathy, viral encephalitis or uremia (FDA Atracurium Besylate Injection label, Precautions).",
+      "Atracurium besylate injection slowly loses potency with time at approximately 6% per year under refrigeration (5 degrees C) and approximately 5% per month at 25 degrees C. Upon removal from refrigeration to room temperature storage conditions, use within 14 days even if rerefrigerated (FDA Atracurium Besylate Injection label, Description and How Supplied).",
+      "Atracurium besylate should not be administered before unconsciousness has been induced, to avoid distress to the patient (FDA Atracurium Besylate Injection label, Dosage and Administration).",
+      "Kenya: dose at extremes of body weight should be calculated on the basis of ideal body weight to avoid excessive dosage in obese patients; for IV infusion, give continuously in glucose 5% or sodium chloride 0.9%, and dilute the requisite dose with infusion fluid to a concentration of 0.5-5 mg/mL (KNMF 2023, section 2.1, Notes)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe anaphylactic and anaphylactoid reactions to neuromuscular blocking agents, including atracurium, which have in some cases been life-threatening and fatal (FDA Atracurium Besylate Injection label, Warnings and Adverse Reactions)",
+      "Respiratory arrest and death from administration-induced paralysis, including medication-error administration to a patient for whom the product was not intended (FDA Atracurium Besylate Injection label, Warnings)",
+      "Histamine-mediated hypotension and bronchospasm, with significant falls in blood pressure seen following 0.6 mg/kg (FDA Atracurium Besylate Injection label, Clinical Pharmacology)",
+      "Prolonged neuromuscular block, inadequate block, and residual neuromuscular block after attempted pharmacologic antagonism (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Adverse Reactions)",
+      "Rare seizures in ICU patients following long-term infusion, in whom laudanosine accumulation is a proposed contributor (FDA Atracurium Besylate Injection label, Precautions and Adverse Reactions)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Atracurium besylate has been shown to be potentially teratogenic in rabbits when given in doses up to approximately one-half the human dose. There are no adequate and well-controlled studies in pregnant women, and atracurium should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Atracurium besylate 0.3 mg/kg was administered to 26 pregnant women during cesarean section; no harmful effects were attributable to atracurium in any of the neonates, although small amounts of atracurium crossed the placental barrier, and the possibility of respiratory depression in the neonate should always be considered following cesarean section during which a neuromuscular blocking agent has been administered. In patients receiving magnesium sulfate, the reversal of neuromuscular block may be unsatisfactory and the dose of atracurium should be lowered as indicated. It is not known whether muscle relaxants administered during vaginal delivery have immediate or delayed adverse effects on the fetus or increase the likelihood that resuscitation of the newborn will be necessary, and the possibility that forceps delivery will be necessary may increase. Carcinogenesis and fertility studies have not been performed (FDA Atracurium Besylate Injection label, Precautions).",
+    "lactation_guidance": "It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when atracurium besylate is administered to a nursing woman (FDA Atracurium Besylate Injection label, Precautions). The Kenya National Medicines Formulary 2023 monograph for atracurium does not carry a separate breastfeeding statement (KNMF 2023, section 2.1).",
+    "overdose": "There has been limited experience with overdosage of atracurium besylate; the possibility of iatrogenic overdosage can be minimized by carefully monitoring muscle twitch response to peripheral nerve stimulation. Excessive doses produce enhanced pharmacological effects and may increase the risk of histamine release and cardiovascular effects, especially hypotension. If cardiovascular support is necessary it should include proper positioning, fluid administration and the use of vasopressor agents if necessary. The patient's airway should be assured with manual or mechanical ventilation maintained as necessary. A longer duration of neuromuscular block may result, and a peripheral nerve stimulator should be used to monitor recovery. Recovery may be facilitated by administration of an anticholinesterase reversing agent such as neostigmine, edrophonium or pyridostigmine, in conjunction with an anticholinergic agent such as atropine or glycopyrrolate. Three pediatric patients (3 weeks, 4 and 5 months of age) unintentionally received 0.8 to 1 mg/kg, about 5 to 6 times the ED95 dose, with time to 25% recovery of 50 to 55 minutes; an adult unintentionally received 1.3 mg/kg with time to 25% recovery of 83 minutes and moderate hemodynamic changes that did not require treatment (FDA Atracurium Besylate Injection label, Overdosage).",
+    "pharmacokinetics": "The pharmacokinetics of atracurium in humans are essentially linear within the 0.3 to 0.6 mg/kg dose range and the elimination half-life is approximately 20 minutes. The duration of neuromuscular block produced by atracurium does not correlate with plasma pseudocholinesterase levels and is not altered by the absence of renal function. Radiolabel studies demonstrated that atracurium undergoes extensive degradation and that neither kidney nor liver plays a major role in this elimination; biliary and urinary excretion were the major routes of excretion of radioactivity (totaling more than 90% of the labeled dose within 7 hours of dosing), of which atracurium represented only a minor fraction. Some placental transfer occurs in humans. Atracurium is a less potent histamine releaser than d-tubocurarine or metocurine: histamine release is minimal with initial doses up to 0.5 mg/kg and hemodynamic changes are minimal within the recommended dose range, while a moderate histamine release and significant falls in blood pressure have been seen following 0.6 mg/kg. The ED95 has averaged 0.23 mg/kg (0.11 to 0.26 mg/kg in various studies) (FDA Atracurium Besylate Injection label, Clinical Pharmacology).",
+    "clinical_pearls": [
+      "Atracurium is inactivated by ester hydrolysis and Hofmann elimination, so its duration of action is independent of renal and hepatic function and it is not affected by plasma pseudocholinesterase level (FDA Atracurium Besylate Injection label, Clinical Pharmacology).",
+      "It is unique among nondepolarizing relaxants in being degraded at physiological pH, which historically made it a favoured agent in hepatic or renal impairment; this monograph does not carry a specific renal or hepatic dose-adjustment statement because the label states no adjustment is required in renal disease (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Dosage and Administration).",
+      "Atracurium does not counteract the bradycardia produced by many anesthetic agents or vagal stimulation, so bradycardia during anesthesia may be more common with atracurium than with other muscle relaxants (FDA Atracurium Besylate Injection label, Precautions).",
+      "Always use a peripheral nerve stimulator: it is the only way to titrate the block and to avoid residual paralysis, and the risk of residual block increases if reversal is attempted at a deep level of block (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Dosage and Administration).",
+      "Give it slowly or in divided doses over one minute at a reduced initial dose of 0.3 to 0.4 mg/kg in patients with cardiovascular disease or a history of anaphylactoid reaction or asthma, because of histamine release (FDA Atracurium Besylate Injection label, Precautions).",
+      "Wait for full recovery from succinylcholine before giving atracurium: prior succinylcholine decreases time to maximum block by 2 to 3 minutes and may increase the depth of block (FDA Atracurium Besylate Injection label, Clinical Pharmacology and Precautions).",
+      "Do not inject intramuscularly and do not mix with alkaline solutions such as barbiturates in the same syringe (FDA Atracurium Besylate Injection label, Warnings).",
+      "The 10 mL multiple-dose vial contains benzyl alcohol and must not be used in neonates; use the preservative-free 5 mL single-use vial in this group (FDA Atracurium Besylate Injection label, Warnings and Precautions)."
+    ],
+    "brand_names": [
+      "Atracurium Besylate Injection (Hospira/Injectable generics; no single dominant brand name on DailyMed)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No atracurium dosage adjustments are required for patients with renal disease. The duration of neuromuscular block produced by atracurium does not correlate with plasma pseudocholinesterase levels and is not altered by the absence of renal function, because atracurium is inactivated in plasma by ester hydrolysis and by Hofmann elimination; radiolabel studies show that neither kidney nor liver plays a major role in elimination. Hemofiltration has a minimal effect on plasma levels of atracurium and its metabolites including laudanosine; the effects of hemodialysis and hemoperfusion on plasma levels of atracurium and its metabolites are unknown (FDA Atracurium Besylate Injection label, Clinical Pharmacology, Precautions and Dosage and Administration).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous administration only. Do not give by intramuscular administration. Do not administer before unconsciousness has been induced. Do not mix in the same syringe, or administer simultaneously through the same needle, with alkaline solutions (e.g., barbiturate solutions). Dilute for continuous intravenous infusion and administer with a precision infusion device. Atracurium besylate injection is a sterile non-pyrogenic aqueous solution containing 10 mg per mL; the multiple-dose vial contains 0.9% benzyl alcohol as a preservative and the 5 mL single-use vial does not. Refrigerate at 2 degrees C to 8 degrees C (36 degrees F to 46 degrees F) to preserve potency; upon removal from refrigeration to room temperature (25 degrees C / 77 degrees F), use within 14 days even if rerefrigerated. Discard any unused portion of single-dose containers (FDA Atracurium Besylate Injection label, Description, Warnings, Dosage and Administration and How Supplied)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Atracurium Besylate Injection (Hospira), Description and Clinical Pharmacology sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Atracurium Besylate Injection label, Indications and Usage; KEML 2023 section 2.1.1; KNMF 2023 section 2.1; WHO eEML Atracurium entry",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Atracurium Besylate Injection label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Atracurium Besylate Injection label, Adverse Reactions (Tables 1 and 2) and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Atracurium Besylate Injection label, Dosage and Administration, Clinical Pharmacology, Pediatric Use and Geriatric Use; KNMF 2023 section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Atracurium Besylate Injection label, Precautions (Drug Interactions), Clinical Pharmacology and Dosage and Administration; KNMF 2023 sections 21.1 and 21.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Atracurium Besylate Injection label, Dosage and Administration, Precautions and Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Atracurium Besylate Injection label, Warnings, Precautions, Clinical Pharmacology and Adverse Reactions; KNMF 2023 section 2.1 (benzyl-alcohol-free single-use vial for neonates)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Atracurium Besylate Injection label, Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Atracurium Besylate Injection label, Precautions, Dosage and Administration, Description and How Supplied; KNMF 2023 section 2.1 Notes",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Atracurium Besylate Injection label, Warnings, Clinical Pharmacology, Precautions and Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Atracurium Besylate Injection labelling; the product is administered intravenously",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current FDA Atracurium Besylate Injection label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Atracurium Besylate Injection label, Precautions (Pregnancy, Labor and Delivery, Carcinogenesis/Mutagenesis/Impairment of Fertility)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Atracurium Besylate Injection label, Precautions (Nursing Mothers); KNMF 2023 section 2.1 (the Atracurium monograph carries no separate breastfeeding statement)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Atracurium Besylate Injection label, Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Atracurium Besylate Injection label, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Atracurium Besylate Injection label, Clinical Pharmacology, Precautions, Dosage and Administration and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Atracurium Besylate Injection (Hospira, Inc.) listed on DailyMed as a generic injectable product with no proprietary brand name",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Atracurium Besylate Injection labelling (full label reviewed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Atracurium Besylate Injection label, Clinical Pharmacology, Precautions and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The FDA Atracurium Besylate Injection label states no dosage adjustments are required in renal disease and that neither kidney nor liver plays a major role in elimination, but it gives no hepatic dose-adjustment instruction, so no hepatic adjustment is asserted",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Atracurium Besylate Injection label, Description, Warnings, Dosage and Administration and How Supplied",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de1c2dcd-295b-47ce-b7a1-a8be59939a54"
+    },
+    {
+      "field": "indications (WHO Model List status)",
+      "ref": "WHO eEML, Atracurium - core Model List medicine for muscle relaxants, Parenteral > General injections > IV: 10 mg per mL (besylate); therapeutic equivalent of vecuronium; first added 2011 (TRS 965), changed 2023 (TRS 1049)",
+      "url": "https://list.essentialmeds.org/medicines/222"
+    },
+    {
+      "field": "dosage (Kenya Essential Medicines List)",
+      "ref": "Kenya Essential Medicines List 2023, Ministry of Health, section 2.1.1 (Atracurium, Injection 10 mg (as besilate)/mL in 5 mL amp, LoU 4)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "precautions, interactions, administration_instructions, lactation_guidance (Kenya National Medicines Formulary)",
+      "ref": "Kenya National Medicines Formulary, First Edition (KNMF-1), Ministry of Health 2023, section 2.1 'Muscle Relaxants (Peripherally Acting) & Cholinesterase Inhibitors & Anticholinergics' (Atracurium monograph)",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_National_Medicines_Formulary_2023_1st_Edition.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)",
+    "hepatic_dose_adjustment (no hepatic dose-adjustment instruction is stated in the FDA label; the label only states that no adjustment is required in renal disease)"
+  ],
+  "notes": "The table stores this agent as 'Atracurium'. The FDA label for Atracurium Besylate Injection (Hospira) is the primary source; atracurium is a generic with no dominant proprietary brand on DailyMed, so brand_names carries the generic label name. Kenya context: the Kenya Essential Medicines List 2023 lists atracurium injection 10 mg (as besilate)/mL in a 5 mL ampoule at Level of Use (LoU) 4 under section 2.1.1 'Muscle relaxants', and the Kenya National Medicines Formulary 2023 carries a full monograph (ideal-body-weight note, infusion dilution instructions, 0.5-5 mg/mL dilution for IV infusion). WHO Model List: atracurium is a core Model List medicine for muscle relaxants, a therapeutic equivalent of vecuronium, formulation Parenteral IV 10 mg per mL (besylate). There is no boxed warning for atracurium. This is an anaesthetic agent given by or under the direction of an anaesthetist, so the patient_counselling field is framed as information the treating team must relay rather than self-administration advice; the items are each traceable to a labelled warning or precaution. hepatic_dose_adjustment is null because the label gives no hepatic adjustment instruction."
+}

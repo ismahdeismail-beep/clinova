@@ -1,0 +1,228 @@
+{
+  "name": "Avatrombopag",
+  "existing_id": "a08faf83-4882-4005-b923-1b710c9d1624",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Avatrombopag is an orally bioavailable, small molecule thrombopoietin (TPO) receptor agonist that stimulates proliferation and differentiation of megakaryocytes from bone marrow progenitor cells, resulting in an increased production of platelets. Avatrombopag does not compete with TPO for binding to the TPO receptor and has an additive effect with TPO on platelet production. Pharmacodynamics: DOPTELET tablet administered to adult patients resulted in dose- and exposure-dependent elevations in platelet counts, with onset of the platelet count increase observed within 3 to 5 days of the start of treatment and a peak effect after 10 to 13 days; post treatment, platelet counts decreased gradually, returning to near baseline values (FDA Doptelet label, sections 12.1 and 12.2).",
+    "indications": [
+      "Treatment of thrombocytopenia in adult patients with chronic liver disease who are scheduled to undergo a procedure (FDA Doptelet label, section 1.1).",
+      "Treatment of thrombocytopenia in adult patients with chronic immune thrombocytopenia (ITP) who have had an insufficient response to a previous treatment (FDA Doptelet label, section 1.2).",
+      "Treatment of thrombocytopenia in pediatric patients 1 year and older with persistent or chronic immune thrombocytopenia who have had an insufficient response to a previous treatment (FDA Doptelet label, section 1.3).",
+      "WHO Model List status: avatrombopag is not listed on the WHO Model List of Essential Medicines. Kenya: avatrombopag is not listed in the Kenya Essential Medicines List 2023 and has no monograph in the Kenya National Medicines Formulary 2023 (WHO eEML search; KEML 2023; KNMF 2023)."
+    ],
+    "contraindications": [
+      "None. The FDA label states 'Contraindications: None' (FDA Doptelet label, section 4)."
+    ],
+    "side_effects": [
+      "In adult patients with chronic liver disease, the most common adverse reactions (3% or more) were pyrexia, abdominal pain, nausea, headache, fatigue and edema peripheral (FDA Doptelet label, sections 6 and 6.1).",
+      "In the pooled ADAPT-1 and ADAPT-2 data for chronic liver disease (Table 8), pyrexia was 11% with DOPTELET 60 mg versus 9% with placebo in the low baseline platelet count cohort (<40 x10^9/L), and 8% with DOPTELET 40 mg versus 9% with placebo in the high baseline cohort (40 to <50 x10^9/L), giving 10% for total DOPTELET versus 9% for total placebo. Abdominal pain was 6% versus 7% and 7% versus 6% in the two cohorts (7% total DOPTELET versus 6% total placebo), and nausea 6% versus 8% and 7% versus 6% (7% total DOPTELET versus 7% total placebo) (FDA Doptelet label, section 6.1, Table 8).",
+      "In adult patients with chronic immune thrombocytopenia, the most common adverse reactions (10% or more) were headache, fatigue, contusion, epistaxis, upper respiratory tract infection, arthralgia, gingival bleeding, petechiae and nasopharyngitis (FDA Doptelet label, sections 6 and 6.1).",
+      "In pediatric patients with persistent or chronic immune thrombocytopenia, the most common adverse reactions (10% or more) were viral infection, nasopharyngitis, cough, pyrexia and oropharyngeal pain (FDA Doptelet label, sections 6 and 6.1).",
+      "Post-marketing: hypersensitivity reactions including pruritus, rash, choking sensation, erythema, pharyngeal edema, generalized pruritus, macular rash, facial swelling and swollen tongue (FDA Doptelet label, section 6.2).",
+      "Thrombotic/thromboembolic complications are the principal identified risk of this class: in patients with chronic liver disease, portal vein thrombosis occurred in 0.4% (1/274) of patients receiving DOPTELET, and in adult patients with chronic immune thrombocytopenia, arterial or venous thromboembolic events occurred in 7% (9/128) of patients receiving DOPTELET (FDA Doptelet label, section 5.1)."
+    ],
+    "dosage": {
+      "adult": "Chronic liver disease (DOPTELET tablets): begin 10 to 13 days before the scheduled procedure and take 40 mg (2 tablets) or 60 mg (3 tablets) orally once daily for 5 consecutive days with food, according to the platelet count before the procedure - 60 mg if platelet count is less than 40 x10^9/L, 40 mg if 40 x10^9/L to less than 50 x10^9/L. The patient should undergo the procedure 5 to 8 days after the last dose, and all 5 days of dosing should be completed. Adult patients with chronic immune thrombocytopenia (DOPTELET tablets): initiate at 20 mg (1 tablet) orally once daily with food, adjust the dose or frequency to maintain a platelet count of 50 x10^9/L or greater, and do not exceed 40 mg (2 tablets) per day. Titration dose levels run from 20 mg (1 tablet) once weekly up to 40 mg (2 tablets) once daily, with intermediate steps of 20 mg once weekly, 20 mg twice weekly or 40 mg once weekly, 20 mg three times a week, 20 mg once daily, 40 mg twice weekly plus 20 mg on the remaining four days of the week, and 40 mg twice daily (FDA Doptelet label, sections 2.2, 2.3 and Tables 2 and 3). Kenya: not listed in the Kenya Essential Medicines List 2023 and no monograph in the Kenya National Medicines Formulary 2023 (KEML 2023; KNMF 2023).",
+      "geriatric": "There were 112 patients 65 years of age and older in the clinical studies for chronic liver disease and chronic immune thrombocytopenia; of the total number of DOPTELET-treated patients in these studies, 71 (23%) were 65 years of age and older, while 12 (4%) were 75 years of age and older. Clinical studies of DOPTELET did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients (FDA Doptelet label, section 8.5).",
+      "paediatric": "The safety and effectiveness of DOPTELET tablet for the treatment of persistent or chronic ITP have been established in pediatric patients aged 6 years and older. The safety and effectiveness of DOPTELET SPRINKLE for the treatment of persistent or chronic ITP have been established in pediatric patients aged 1 to less than 6 years. Pediatric patients 6 years and older: DOPTELET tablets, initiated at 20 mg (1 tablet) orally once daily with food, adjusted to maintain a platelet count of 50 x10^9/L or greater, maximum 40 mg (2 tablets) per day, with the same titration dose levels as adults. Pediatric patients 1 year to less than 6 years: DOPTELET SPRINKLE oral granules, initiated at 10 mg (content of 1 capsule) orally once daily with food, adjusted to maintain a platelet count of 50 x10^9/L or greater, maximum 20 mg (content of 2 capsules) per day, with the same titration dose levels (FDA Doptelet label, sections 2.3, 2.5 and Tables 5 and 6). In a 10-week juvenile toxicology study in rats there was no test-article-related mortality and no clinical signs at doses up to 300 mg/kg/day (FDA Doptelet label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Moderate or strong dual inhibitors of CYP2C9 and CYP3A4: concomitant use increases avatrombopag AUC, which may increase the risk of DOPTELET toxicities. Reduce the starting dosage when used concomitantly - 20 mg (1 tablet) orally three times a week for the tablets and 10 mg (content of 1 capsule) orally three times a week for DOPTELET SPRINKLE. In patients starting these inhibitors while receiving DOPTELET, monitor platelet counts and adjust the dose as necessary (FDA Doptelet label, sections 2.4, 2.6 and 7.1, Tables 4 and 7).",
+      "Moderate or strong dual inducers of CYP2C9 and CYP3A4: concomitant use decreases avatrombopag AUC, which may reduce DOPTELET efficacy. Increase the recommended starting dosage when used concomitantly - 40 mg (2 tablets) orally once daily for the tablets and 20 mg (content of 2 capsules) orally once daily for DOPTELET SPRINKLE. In patients starting these inducers while receiving DOPTELET, monitor platelet counts and adjust the dose as necessary (FDA Doptelet label, sections 2.4, 2.6 and 7.1, Tables 4 and 7).",
+      "Patients with chronic liver disease: no dosage adjustments are required for patients with chronic liver disease (FDA Doptelet label, section 7.1).",
+      "Avatrombopag does not inhibit CYP1A, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP2E1 or CYP3A, does not induce CYP1A, CYP2B6, CYP2C or CYP3A, and weakly induces CYP2C8 and CYP2C9 (FDA Doptelet label, section 12.3).",
+      "Transporter systems: avatrombopag inhibits organic anion transporter (OAT) 3 and breast cancer resistance protein (BCRP) but not OATP1B1, OATP1B3, OCT2 or OAT1, and is not a substrate for OATP1B1, OATP1B3, OCT2, OAT1 or OAT3 (FDA Doptelet label, section 12.3).",
+      "Pharmacogenomics: subjects heterozygous for CYP2C9 loss-of-function polymorphisms had approximately 1.4-fold higher avatrombopag exposure and subjects homozygous had approximately 2-fold higher exposure than CYP2C9 wild-type normal metabolizers (FDA Doptelet label, section 12.5)."
+    ],
+    "monitoring": "Obtain a platelet count prior to administration of DOPTELET therapy and on the day of the procedure in patients with chronic liver disease, to ensure an adequate increase in platelet count (FDA Doptelet label, section 2.2). In patients with persistent or chronic immune thrombocytopenia, assess platelet counts weekly until a stable platelet count of 50 x10^9/L or greater has been achieved, then obtain platelet counts monthly thereafter, and obtain platelet counts weekly for at least 4 weeks following discontinuation (sections 2.3 and 2.5). If the platelet count is greater than 400 x10^9/L, stop DOPTELET, increase platelet monitoring to twice weekly, and when the platelet count falls below 150 x10^9/L decrease one dose level and reinitiate therapy (Table 2). Monitor platelet counts and follow the dosing guidelines to achieve target platelet counts; do not use DOPTELET to normalize platelet counts (section 5.1). Monitor patients for signs and symptoms of thromboembolic events and institute treatment promptly, and consider the increased thrombotic risk in patients with genetic prothrombotic conditions (Factor V Leiden, Prothrombin 20210A, antithrombin deficiency, protein C or S deficiency) and acquired risk factors such as antiphospholipid syndrome (section 5.1). If the formulation is switched between the granules and the tablet, monitor platelet counts weekly until stable platelet counts are obtained and adjust dosing as needed before resuming monthly monitoring (section 2.1). In the event of overdose, closely monitor the patient and platelet count because the platelet count may increase excessively and result in thrombotic or thromboembolic complications (section 10).",
+    "patient_counselling": "Advise the patient or caregiver to read the FDA-approved patient labeling: Patient Information and, for DOPTELET SPRINKLE, Instructions for Use (FDA Doptelet label, section 17). Explain that DOPTELET is a thrombopoietin receptor agonist and that TPO receptor agonists have been associated with thrombotic and thromboembolic complications in patients with chronic liver disease or immune thrombocytopenia; portal vein thrombosis has been reported in patients with chronic liver disease treated with TPO receptor agonists, and various thromboembolic complications (arterial and venous) have been reported in patients treated with DOPTELET (section 17, Warnings and Precautions 5.1). Advise patients that DOPTELET may be affected by other drugs and may require a dose adjustment when co-administered with other drugs, and to report the use of any other prescription or nonprescription medications or dietary supplements (section 17, Drug Interactions 7). Advise pregnant women of the potential risk to a fetus and advise females of reproductive potential to inform their prescriber of a known or suspected pregnancy (section 17, section 8.1). Advise women not to breastfeed during treatment with DOPTELET and for at least 2 weeks after the last dose (section 17, section 8.2). For DOPTELET SPRINKLE, instruct patients and caregivers to open the capsules and mix the contents with the recommended soft foods or liquids, administer immediately after mixing, not to swallow the capsules whole, and not to chew or crush the granules (section 17, section 2.7). Advise patients and caregivers that DOPTELET and DOPTELET SPRINKLE are not substitutable on a milligram-to-milligram basis, and to visually inspect the product each time the prescription is filled to verify the correct dosage form (section 17).",
+    "warnings": [
+      "Thrombotic/thromboembolic complications: DOPTELET is a thrombopoietin (TPO) receptor agonist and TPO receptor agonists have been associated with thrombotic and thromboembolic complications in patients with chronic liver disease or immune thrombocytopenia. In patients with chronic liver disease, thromboembolic events (portal vein thrombosis) occurred in 0.4% (1/274) of patients receiving DOPTELET; in adult patients with chronic immune thrombocytopenia, thromboembolic events (arterial or venous) occurred in 7% (9/128) of patients receiving DOPTELET (FDA Doptelet label, section 5.1).",
+      "Consider the potential increased thrombotic risk when administering DOPTELET to patients with known risk factors for thromboembolism, including genetic prothrombotic conditions (Factor V Leiden, Prothrombin 20210A, antithrombin deficiency or protein C or S deficiency) and acquired risk factors such as antiphospholipid syndrome (FDA Doptelet label, section 5.1).",
+      "DOPTELET should not be administered to patients with chronic liver disease or immune thrombocytopenia in an attempt to normalize platelet counts; monitor platelet counts and follow the dosing guidelines to achieve target platelet counts (FDA Doptelet label, section 5.1).",
+      "Hypersensitivity reactions, including pruritus, rash, choking sensation, erythema, pharyngeal edema, generalized pruritus, macular rash, facial swelling and swollen tongue, have been identified during post-approval use (FDA Doptelet label, section 6.2).",
+      "In a two-year carcinogenicity study, avatrombopag induced a statistically significant increase in neuroendocrine cell (enterochromaffin-like) gastric tumors (carcinoids) in female rats at 160 mg/kg/day, an exposure 117 times the AUC at the maximum recommended dose of 60 mg once daily; the gastric carcinoids were considered likely due to prolonged hypergastrinemia, and hypergastrinemia-related gastric carcinoids in rodents are generally considered of low risk or relevance to humans (FDA Doptelet label, section 13.1)."
+    ],
+    "precautions": [
+      "DOPTELET tablets and DOPTELET SPRINKLE are not substitutable on a mg-to-mg basis; the mixture prepared from the granules in DOPTELET SPRINKLE capsules is more bioavailable than DOPTELET tablets, and there is no clinical-trial experience with switching between the two (FDA Doptelet label, section 2.1).",
+      "Select the recommended product (DOPTELET tablets or DOPTELET SPRINKLE) based on the indication and the patient's age (FDA Doptelet label, section 2.1).",
+      "DOPTELET tablets have been investigated only as a single 5-day once-daily dosing regimen in clinical trials in patients with chronic liver disease; DOPTELET should not be administered to patients with chronic liver disease in an attempt to normalize platelet counts (FDA Doptelet label, section 2.2).",
+      "Dose adjustments are based on platelet count response; discontinue DOPTELET tablets if the platelet count does not increase to 50 x10^9/L or greater after 4 weeks of dosing at the maximum dose of 40 mg (2 tablets) once daily, and discontinue if the platelet count is greater than 400 x10^9/L after 2 weeks of dosing at 20 mg (1 tablet) once weekly (FDA Doptelet label, section 2.3).",
+      "Missed dose: take the missed dose as soon as remembered; do not take two doses at one time to make up for a missed dose, and take the next dose at the usual time the next day (FDA Doptelet label, section 2.8).",
+      "Lower body weight was associated with higher avatrombopag Cmax and AUC following the proposed starting dose in patients aged 6 years and older weighing 16.3 to 175 kg (FDA Doptelet label, section 12.3).",
+      "Pediatric patients aged 1 to less than 6 years had 34% higher Cmax and 23% higher AUC following administration of 10 mg daily DOPTELET SPRINKLE compared with adults who received 20 mg daily DOPTELET tablets (FDA Doptelet label, section 12.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Thrombotic and thromboembolic complications, including portal vein thrombosis in chronic liver disease (0.4%, 1/274) and arterial or venous thromboembolic events in adult chronic immune thrombocytopenia (7%, 9/128) (FDA Doptelet label, section 5.1)",
+      "Hypersensitivity reactions, including pharyngeal edema, facial swelling and swollen tongue, reported during post-approval use (FDA Doptelet label, section 6.2)",
+      "Thrombotic complications from overdose, in which the platelet count may increase excessively (FDA Doptelet label, section 10)"
+    ],
+    "food_interactions": [
+      "Administer DOPTELET tablets and DOPTELET SPRINKLE with food. Avatrombopag AUC0-inf and Cmax were not affected when DOPTELET tablets were co-administered with a low-fat meal (500 calories, 3 g fat, 15 g protein, 108 g carbohydrates) or a high-fat meal (918 calories, 59 g fat, 39 g protein, 59 g carbohydrates), but the variability of avatrombopag exposure was reduced by 40% to 60% with food, and Tmax was delayed by 0 to 2 hours with food (median Tmax 5 to 8 hours) compared with the fasted state (FDA Doptelet label, sections 2.1 and 12.3).",
+      "For DOPTELET SPRINKLE, the granules are sprinkled onto a small amount of a soft food or liquid in a spoon or cup: suitable soft foods are applesauce, strawberry jelly and plain yogurt; suitable liquids are milk (whole or skim), orange juice, unflavoured pediatric electrolyte solution and water. The granules will not dissolve, so they should be mixed into the food or liquid, the mixture consumed immediately and not saved for future use, and the spoon or cup rinsed with the soft food or liquid to ensure the full dose is administered (FDA Doptelet label, section 2.7)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on findings from animal reproduction studies, DOPTELET may cause fetal harm when administered to a pregnant woman. The available data on DOPTELET in pregnant women are insufficient to inform a drug-associated risk of adverse developmental outcomes. In animal reproduction studies, oral administration of avatrombopag resulted in adverse developmental outcomes when administered during organogenesis in rabbits and during organogenesis and the lactation period in rats, at exposures substantially higher than the AUC observed in patients at the maximum recommended dose of 60 mg once daily. Minimal decreases in fetal weights were observed in rats at the maternally toxic dose of 1000 mg/kg/day (190 times human exposure based on AUC); spontaneous abortions were observed at all doses tested in rabbits, with exposures at the lowest dose of 100 mg/kg/day 10 times the AUC in patients at the maximum recommended dose. There were no embryo-fetal effects in rats up to 100 mg/kg/day (53 times human exposure) or rabbits up to 600 mg/kg (35 times human exposure). In pre- and postnatal studies in rats, doses of 100, 300 and 600 mg/kg/day caused maternal toxicity with total litter losses, decreased pup body weight and increased pup mortality, and 50 mg/kg/day caused increased pup mortality from postnatal days 4 to 21 with mortality continuing through postnatal day 25 and delayed sexual maturation; there were no effects on behavioral or reproductive function in the offspring. Advise pregnant women of the potential risk to a fetus; the estimated background risk of major birth defects and miscarriage is 2% to 4% and 15% to 20% respectively in clinically recognized pregnancies in the US general population (FDA Doptelet label, section 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of avatrombopag in human milk, the effects on the breastfed child, or the effects on milk production. Avatrombopag was present in the milk of lactating rats, and when a drug is present in animal milk it is likely to be present in human milk. Due to the potential for serious adverse reactions in a breastfed child from DOPTELET, breastfeeding is not recommended during treatment with DOPTELET and for at least 2 weeks after the last dose. A lactating woman receiving DOPTELET for brief periods, such as prior to an invasive procedure, should interrupt breastfeeding and pump and discard breastmilk during treatment and for two weeks after the last dose (FDA Doptelet label, section 8.2).",
+    "overdose": "In the event of overdose, platelet count may increase excessively and result in thrombotic or thromboembolic complications. Closely monitor the patient and platelet count, and treat thrombotic complications in accordance with standard of care. No antidote for DOPTELET overdose is known. Hemodialysis is not expected to enhance the elimination of DOPTELET because avatrombopag is only approximately 6% renally excreted and is highly bound to plasma proteins. Consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (FDA Doptelet label, section 10).",
+    "pharmacokinetics": "Avatrombopag demonstrated dose-proportional pharmacokinetics after single doses from 10 mg to 80 mg. In healthy subjects administered 40 mg, the geometric mean Cmax was 166 ng/mL (CV 84%) and AUC0-inf was 4198 ng.hr/mL (CV 83%); pharmacokinetics were similar in healthy subjects and the chronic liver disease population. The median time to maximal concentration (Tmax) occurred at 5 to 6 hours post-dose. The estimated mean apparent volume of distribution is 180 L (CV 25%) and avatrombopag is greater than 96% bound to human plasma proteins. The mean plasma elimination half-life is approximately 19 hours (CV 19%) and the mean apparent clearance is 6.9 L/hr (CV 29%). Avatrombopag is primarily metabolized by CYP2C9 and CYP3A4. Fecal excretion accounted for 88% of the administered dose, with 34% of the dose excreted as unchanged avatrombopag, and only 6% of the administered dose was found in urine. Age (1-86 years), sex, race, any hepatic impairment (CTP grade A, B or C, or MELD 4-23) and mild to moderate renal impairment (CLcr 30 mL/min or more) did not have clinically meaningful effects on the pharmacokinetics of avatrombopag (FDA Doptelet label, section 12.3).",
+    "clinical_pearls": [
+      "The platelet count rises within 3 to 5 days of starting DOPTELET and peaks at 10 to 13 days, which is why the chronic liver disease regimen is timed to start 10 to 13 days before the procedure and the procedure is scheduled 5 to 8 days after the last dose (FDA Doptelet label, sections 2.2 and 12.2).",
+      "Do not use DOPTELET to normalize platelet counts in chronic liver disease or ITP - the thrombotic risk rises with higher counts, and the label explicitly restricts use to these labelled indications (FDA Doptelet label, sections 2.2 and 5.1).",
+      "The tablets and the SPRINKLE granules are not interchangeable milligram-for-milligram, because the granules are more bioavailable; a switch requires weekly platelet monitoring until counts stabilize (FDA Doptelet label, section 2.1).",
+      "Dual CYP2C9/CYP3A4 inducers and inhibitors have opposite effects: start at 20 mg three times weekly with dual inhibitors, and at 40 mg once daily with dual inducers (FDA Doptelet label, sections 2.4, 2.6 and 7.1).",
+      "CYP2C9 poor metabolizers have about 2-fold higher avatrombopag exposure, so the starting dose may need downward adjustment (FDA Doptelet label, section 12.5).",
+      "Count platelets weekly until stable, then monthly, and keep counting weekly for 4 weeks after stopping, because counts fall gradually back toward baseline after withdrawal (FDA Doptelet label, sections 2.3, 2.5 and 12.2).",
+      "The excipients of both formulations include lactose monohydrate (tablets) and mannitol (SPRINKLE); the tablet also contains crospovidone, colloidal silicon dioxide, magnesium stearate and microcrystalline cellulose (FDA Doptelet label, section 11).",
+      "Avatrombopag is not listed on the WHO Model List of Essential Medicines and has no Kenya Essential Medicines List 2023 or KNMF 2023 listing, so access in Kenya depends on non-essential-medicine procurement pathways (WHO eEML; KEML 2023; KNMF 2023)."
+    ],
+    "brand_names": [
+      "DOPTELET (avatrombopag maleate tablets, AkaRx, Inc.)",
+      "DOPTELET SPRINKLE (avatrombopag oral granules, AkaRx, Inc.)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Avatrombopag pharmacokinetics were not clinically meaningfully affected by mild to moderate renal impairment (CLcr 30 mL/min or more) (FDA Doptelet label, section 12.3). No dosage adjustment is required in patients with chronic liver disease for concomitant moderate or strong dual inhibitors or inducers of CYP2C9 and CYP3A4 (section 7.1). The label does not state a renal dose adjustment for severe renal impairment; avatrombopag is only approximately 6% renally excreted and highly bound to plasma proteins, so hemodialysis is not expected to enhance elimination (section 10).",
+    "hepatic_dose_adjustment": "Avatrombopag pharmacokinetics were not clinically meaningfully affected by hepatic impairment, including Child-Turcotte-Pugh grade A, B and C and MELD scores 4 to 23 (FDA Doptelet label, section 12.3). No dosage adjustments are required for patients with chronic liver disease when used with moderate or strong dual inhibitors or inducers of CYP2C9 and CYP3A4 (section 7.1).",
+    "administration_instructions": "Select the product (DOPTELET tablets or DOPTELET SPRINKLE) according to the indication and the patient's age. Administer with food. DOPTELET tablets are taken orally once daily; tablets and SPRINKLE are not substitutable on a mg-to-mg basis. For DOPTELET SPRINKLE: open the capsule and sprinkle the granules onto a small amount of a soft food or liquid in a spoon or cup; do not swallow the capsule whole; do not chew or crush the granules; the granules will not dissolve, so mix them into the food or liquid and consume the mixture immediately without saving it for future use; rinse the spoon or cup with the soft food or liquid to ensure the full dose is administered. Suitable soft foods are applesauce, strawberry jelly and plain yogurt; suitable liquids are milk (whole or skim), orange juice, unflavoured pediatric electrolyte solution and water. If a dose is missed, take it as soon as remembered, do not take two doses at one time, and take the next dose at the usual time the next day. DOPTELET tablets 20 mg are round, biconvex, yellow, film-coated tablets debossed with 'AVA' on one side and '20' on the other (FDA Doptelet label, sections 2.1, 2.7, 2.8, 3 and 16.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, DOPTELET (avatrombopag maleate), AkaRx, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Doptelet label, sections 1.1, 1.2 and 1.3; WHO eEML search (avatrombopag not listed); KEML 2023 and KNMF 2023 (no listing or monograph)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Doptelet label, section 4 (None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Doptelet label, sections 5.1, 6, 6.1 (Table 8) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Doptelet label, sections 2.2, 2.3, 2.5 and 8.4, with Tables 2, 3, 5 and 6; KEML 2023 and KNMF 2023 (no listing or monograph)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Doptelet label, sections 2.4, 2.6, 7.1, 12.3 and 12.5, with Tables 4 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Doptelet label, sections 2.1, 2.2, 2.3, 2.5, 5.1, 10 and Table 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Doptelet label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Doptelet label, sections 5.1, 6.2 and 13.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Doptelet label, sections 2.1, 2.2, 2.3, 2.8, 12.3 and 16.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Doptelet label, sections 5.1, 6.2 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Doptelet label, sections 2.1, 2.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current FDA Doptelet label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Doptelet label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Doptelet label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Doptelet label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Doptelet label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Doptelet label, sections 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 5.1, 7.1, 11, 12.2 and 12.5; WHO eEML; KEML 2023; KNMF 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DOPTELET and DOPTELET SPRINKLE listed on DailyMed as the branded products, AkaRx, Inc.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Doptelet labelling (full label reviewed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Doptelet label, sections 7.1, 10 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Doptelet label, sections 7.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Doptelet label, sections 2.1, 2.7, 2.8, 3 and 16.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2d5960d-6c18-46cc-86bd-089222b09852"
+    },
+    {
+      "field": "indications (WHO Model List status)",
+      "ref": "WHO eEML search: avatrombopag returns zero recommendations, including with removed medicines shown; it is not on the WHO Model List of Essential Medicines",
+      "url": "https://list.essentialmeds.org/?query=avatrombopag&showRemoved=1"
+    },
+    {
+      "field": "indications (Kenya Essential Medicines List)",
+      "ref": "Kenya Essential Medicines List 2023, Ministry of Health - avatrombopag does not appear in the KEML 2023 list",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "dosage (Kenya National Medicines Formulary)",
+      "ref": "Kenya National Medicines Formulary, First Edition (KNMF-1), Ministry of Health 2023 - avatrombopag has no monograph",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_National_Medicines_Formulary_2023_1st_Edition.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Avatrombopag' with the brand names 'Doptelet Sprinkle' and 'DOPTELET'. The FDA/DailyMed label for DOPTELET (avatrombopag maleate) from AkaRx is the sole clinical source; it covers both the 20 mg tablet (DOPTELET) and the 10 mg sprinkle capsule (DOPTELET SPRINKLE, for patients 1 year to less than 6 years). There is no boxed warning and the label states 'Contraindications: None'. WHO Model List status: avatrombopag is not listed. Kenya: not in the Kenya Essential Medicines List 2023 and no monograph in the Kenya National Medicines Formulary 2023 - it is a high-cost haematology product, so this is a procurement rather than a clinical gap. The label states no letter pregnancy category (Pregnancy and Lactation Labeling Rule risk summary), so pregnancy_category is null."
+}

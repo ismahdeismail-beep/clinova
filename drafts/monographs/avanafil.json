@@ -1,0 +1,245 @@
+{
+  "name": "Avanafil",
+  "existing_id": "4026897c-d159-442a-a606-fcbd19c93e9d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Avanafil is a selective inhibitor of cGMP-specific phosphodiesterase type 5 (PDE5). The physiologic mechanism of erection of the penis involves release of nitric oxide in the corpus cavernosum during sexual stimulation; nitric oxide activates guanylate cyclase, which increases cGMP, producing smooth muscle relaxation in the corpus cavernosum and allowing inflow of blood. Avanafil has no direct relaxant effect on isolated human corpus cavernosum but enhances the effect of nitric oxide by inhibiting PDE5, the enzyme responsible for degradation of cGMP in the corpus cavernosum. Because sexual stimulation is required to initiate local nitric oxide release, the inhibition of PDE5 has no effect in the absence of sexual stimulation. In vitro, avanafil is selective for PDE5: more than 100-fold more potent for PDE5 than for PDE6 (which is found in the retina and is responsible for phototransduction), greater than 1,000-fold for PDE4, PDE8 and PDE10, greater than 5,000-fold for PDE2 and PDE7, and greater than 10,000-fold for PDE1, PDE3, PDE9 and PDE11 (FDA Stendra label, section 12.1).",
+    "indications": [
+      "Treatment of erectile dysfunction in adult males (FDA Stendra label, section 1).",
+      "Not indicated for use in females (FDA Stendra label, section 8.1).",
+      "WHO Model List status: avanafil is not listed on the WHO Model List of Essential Medicines. Kenya: avanafil is not listed in the Kenya Essential Medicines List 2023 and has no monograph in the Kenya National Medicines Formulary 2023 (WHO eEML search; KEML 2023; KNMF 2023)."
+    ],
+    "contraindications": [
+      "Administration of STENDRA with any form of organic nitrate, either regularly and/or intermittently, is contraindicated (FDA Stendra label, section 4.1).",
+      "Known hypersensitivity to any component of the STENDRA tablet; hypersensitivity reactions have been reported, including pruritus and eyelid swelling (FDA Stendra label, section 4.2).",
+      "Concomitant use with guanylate cyclase (GC) stimulators such as riociguat and vericiguat (FDA Stendra label, section 4.3)."
+    ],
+    "side_effects": [
+      "In three randomized, double-blind, placebo-controlled trials lasting up to 3 months, the most common adverse reactions (2% or more) with STENDRA compared with placebo were: headache (50 mg 5.1%, 100 mg 6.9%, 200 mg 10.5% vs 1.7% placebo), flushing (3.2%, 4.3%, 4.0% vs 0%), nasal congestion (1.8%, 2.9%, 2.0% vs 1.1%), nasopharyngitis (0.9%, 2.6%, 3.4% vs 2.9%) and back pain (3.2%, 2.0%, 1.1% vs 1.1%) (FDA Stendra label, section 6.1, Table 1).",
+      "Adverse reactions reported in 1% or more but less than 2% of patients in any STENDRA dose group and greater than placebo included upper respiratory infection, bronchitis, influenza, sinusitis, sinus congestion, hypertension, dyspepsia, nausea, constipation and rash (FDA Stendra label, section 6.1).",
+      "In an open-label extension study of up to 52 weeks (712 patients), the discontinuation rate due to adverse reactions for patients treated with STENDRA 50, 100 or 200 mg was 2.8% (FDA Stendra label, section 6.1).",
+      "Discontinuation due to adverse reactions in the three 3-month placebo-controlled trials was 1.4% (50 mg), 2.0% (100 mg) and 2.0% (200 mg) compared with 1.7% for placebo-treated patients (FDA Stendra label, section 6.1).",
+      "Post-marketing cardiovascular and cerebrovascular events, including myocardial infarction, sudden cardiac death, cerebrovascular accident and subarachnoid hemorrhage, have been reported in temporal association with STENDRA; all of these patients had pre-existing cardiovascular risk factors and it is not possible to determine whether these events are related directly to STENDRA, to sexual activity, to the patient's underlying cardiovascular disease, to a combination of these factors, or to other factors (FDA Stendra label, section 6.2).",
+      "Post-marketing: transient global amnesia (FDA Stendra label, section 6.2).",
+      "Post-marketing ophthalmologic: vitreous detachment, visual impairment, and non-arteritic anterior ischemic optic neuropathy (NAION), a cause of decreased vision including permanent loss of vision, reported rarely in temporal association with PDE5 inhibitors such as STENDRA; most, but not all, of these patients had underlying anatomic or vascular risk factors (FDA Stendra label, section 6.2).",
+      "Post-marketing otologic: sudden decrease or loss of hearing, sometimes accompanied by tinnitus or dizziness (FDA Stendra label, section 6.2)."
+    ],
+    "dosage": {
+      "adult": "Recommended starting dose 100 mg taken orally as needed as early as approximately 15 minutes before sexual activity. Based on individual efficacy and tolerability the dose may be increased to 200 mg taken as early as approximately 15 minutes before sexual activity, or decreased to 50 mg taken approximately 30 minutes before sexual activity; the lowest dose that provides benefit should be used. Maximum recommended dosing frequency is once per day. Sexual stimulation is required for a response to treatment. Concomitant medications: do not use with strong CYP3A4 inhibitors (ketoconazole, ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, saquinavir, telithromycin); with a moderate CYP3A4 inhibitor (erythromycin, amprenavir, aprepitant, diltiazem, fluconazole, fosamprenavir, verapamil) the maximum recommended dose is 50 mg not to exceed once every 24 hours; in patients on stable alpha-blocker therapy, start at 50 mg. STENDRA may be taken with or without food (FDA Stendra label, sections 2, 2.1, 2.2 and 2.3).",
+      "geriatric": "Of the total number of subjects in clinical studies of avanafil, approximately 23% were 65 and over. No overall differences in efficacy and safety were observed between subjects over 65 years of age compared to younger subjects, so no dose adjustment is warranted based on age alone; however, a greater sensitivity to medication in some older individuals should be considered. In a pharmacokinetic study of a single 200 mg dose in 14 healthy elderly (65-80 years) versus 18 healthy younger (18-43 years) male volunteers, AUC0-inf increased by 6.8% and Cmax decreased by 2.1% in the elderly group (FDA Stendra label, sections 8.5 and 12.3).",
+      "paediatric": "STENDRA is not indicated for use in pediatric patients. Safety and efficacy in patients below the age of 18 years has not been established (FDA Stendra label, section 8.4). Kenya: not listed in the Kenya Essential Medicines List 2023 and no monograph in the Kenya National Medicines Formulary 2023 (KEML 2023; KNMF 2023)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Nitrates: administration of STENDRA to patients who are using any form of organic nitrate is contraindicated; STENDRA potentiates the hypotensive effect of nitrates. If nitrate administration is deemed medically necessary in a life-threatening situation, at least 12 hours should elapse after the last dose of STENDRA before nitrate is considered, and nitrates should only be administered under close medical supervision with appropriate hemodynamic monitoring (FDA Stendra label, sections 4.1, 7.1 and 17.1).",
+      "Strong CYP3A4 inhibitors: ketoconazole 400 mg daily increased STENDRA 50 mg AUC 13-fold and Cmax 3-fold and prolonged the half-life of avanafil to approximately 9 hours; ritonavir increased Cmax approximately 2-fold and AUC approximately 13-fold. Do not use STENDRA in patients taking strong CYP3A4 inhibitors (FDA Stendra label, sections 5.2, 7.2 and 12.3).",
+      "Moderate CYP3A4 inhibitors: erythromycin 500 mg twice daily increased STENDRA 200 mg Cmax approximately 2-fold and AUC approximately 3-fold and prolonged the half-life of avanafil to approximately 8 hours. The maximum recommended dose of STENDRA is 50 mg, not to exceed once every 24 hours, for patients taking concomitant moderate CYP3A4 inhibitors (FDA Stendra label, sections 5.2, 7.2 and 12.3).",
+      "Other CYP3A4 inhibitors, including grapefruit juice, are likely to increase avanafil exposure although specific interactions have not been studied (FDA Stendra label, section 7.2).",
+      "Weak CYP3A4 inhibitors: no in vivo drug-drug interaction studies with weak CYP3A4 inhibitors were conducted (FDA Stendra label, section 7.2).",
+      "CYP3A4 substrate: amlodipine 5 mg daily increased avanafil Cmax approximately 22% and AUC approximately 70% when administered with STENDRA 200 mg, and prolonged the half-life of STENDRA to approximately 10 hours (FDA Stendra label, sections 7.2 and 12.3).",
+      "Cytochrome P450 inducers: the potential effect of CYP inducers on the pharmacokinetics of avanafil was not evaluated, and the concomitant use of STENDRA and CYP inducers is not recommended (FDA Stendra label, section 7.2).",
+      "Alpha-blockers: caution is advised when PDE5 inhibitors are co-administered with alpha-blockers because both are vasodilators and an additive blood-pressure-lowering effect may cause symptomatic hypotension; patients should be stable on alpha-blocker therapy before starting STENDRA, at a starting dose of 50 mg (FDA Stendra label, sections 5.6 and 7.1).",
+      "Antihypertensives: additional reductions in blood pressure of 3 to 5 mmHg occurred when a single 200 mg dose of STENDRA was co-administered with amlodipine or enalapril compared with placebo (FDA Stendra label, sections 5.6 and 7.1).",
+      "Alcohol: both alcohol and PDE5 inhibitors act as vasodilators; substantial consumption of alcohol (greater than 3 units) with STENDRA can increase the potential for orthostatic signs and symptoms including increased heart rate, decreased standing blood pressure, dizziness and headache (FDA Stendra label, sections 5.7 and 7.1).",
+      "Warfarin: PT, INR and platelet aggregation did not change with avanafil administration; co-administration with avanafil resulted in an approximate 1.6% increase in AUC0-inf and a 5.2% decrease in Cmax of S-warfarin (FDA Stendra label, section 12.3).",
+      "Omeprazole, rosiglitazone and desipramine: avanafil produced small changes in exposure (omeprazole AUC +5.9% and Cmax +8.6%; rosiglitazone AUC +2.0% and Cmax -14%; desipramine AUC +5.7% and Cmax +5.2%), and avanafil and its metabolites are unlikely to cause clinically significant inhibition of CYP1A6, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1 or 3A4 (FDA Stendra label, section 12.3).",
+      "Guanylate cyclase (GC) stimulators: do not use STENDRA in patients who are using a GC stimulator such as riociguat or vericiguat, because PDE5 inhibitors may potentiate the hypotensive effects of GC stimulators (FDA Stendra label, sections 4.3 and 17.11).",
+      "Combination with other PDE5 inhibitors or other erectile dysfunction therapies: the safety and efficacy of such combinations has not been studied and their use is not recommended (FDA Stendra label, section 5.8)."
+    ],
+    "monitoring": "Evaluate erectile dysfunction with an appropriate medical assessment to identify potential underlying causes and treatment options before prescribing (FDA Stendra label, section 5). Assess cardiovascular risk: STENDRA is not recommended for patients who have had a myocardial infarction, stroke, life-threatening arrhythmia or coronary revascularization within the last 6 months, who have resting hypotension (blood pressure less than 90/50 mmHg) or hypertension (greater than 170/100 mmHg), or who have unstable angina, angina with sexual intercourse, or New York Heart Association Class 2 or greater congestive heart failure (section 5.1). Monitor blood pressure, particularly on initiation, in patients on antihypertensives or alpha-blockers, and in patients with left ventricular outflow obstruction or severely impaired autonomic control of blood pressure (sections 5.1, 5.6 and 7.1). Advise the patient to seek immediate medical assistance for any erection persisting longer than 4 hours (section 5.3). Instruct patients to stop STENDRA and seek medical attention for sudden loss of vision in one or both eyes, which could be a sign of NAION (section 5.4), and for a sudden decrease or loss of hearing (section 5.5). Monitor for adverse events if the formulation or dose is changed, and note that the effect of CYP inducers on avanafil pharmacokinetics was not evaluated (section 7.2).",
+    "patient_counselling": "Discuss with patients the contraindication of STENDRA with regular and/or intermittent use of organic nitrates, and that concomitant use could cause blood pressure to drop suddenly to an unsafe level, resulting in dizziness, syncope, or even heart attack or stroke; patients who experience anginal chest pain requiring nitroglycerin after taking STENDRA should seek immediate medical attention, and at least 12 hours should elapse after the last dose of STENDRA before nitrate administration is considered, under close medical supervision with hemodynamic monitoring (FDA Stendra label, section 17.1). Discuss the potential cardiac risk of sexual activity in patients with pre-existing cardiovascular risk factors; patients who experience symptoms on initiation of sexual activity should refrain from further sexual activity and seek immediate medical attention (section 17.2). Advise patients of the potential for STENDRA to augment the blood-pressure-lowering effect of alpha-blockers and other antihypertensive medications (section 17.3). Advise patients to contact the prescribing physician if new medications that may interact with STENDRA are prescribed by another healthcare provider (section 17.4). Advise patients with an erection lasting more than 4 hours, whether painful or not, to seek emergency medical attention, because priapism if not treated promptly can result in irreversible damage to the erectile tissue (section 17.5). Advise patients to stop use of STENDRA and seek medical attention in the event of sudden loss of vision in one or both eyes, and discuss the increased risk of NAION in individuals who have already experienced NAION in one eye and in patients with a 'crowded' optic disc (section 17.6). Advise patients to stop taking STENDRA and seek prompt medical attention in the event of a sudden decrease or loss of hearing, which may be accompanied by tinnitus or dizziness (section 17.7). Inform patients that substantial consumption of alcohol (greater than 3 units) with STENDRA may increase orthostatic signs and symptoms including increased heart rate, decreased standing blood pressure, dizziness and headache (section 17.8). Counsel that STENDRA offers no protection against sexually transmitted diseases, including HIV (section 17.9). Explain that sexual stimulation is required for an erection after taking STENDRA, that the recommended starting dose is 100 mg taken as early as approximately 15 minutes before sexual activity, and that the dose may be increased to 200 mg or decreased to 50 mg based on efficacy and tolerability, with the lowest effective dose used, and that patients should contact their healthcare provider for dose modification (section 17.10). Discuss the contraindication of STENDRA with guanylate cyclase stimulators such as riociguat or vericiguat (section 17.11). STENDRA may be taken with or without food (section 17.10 and Patient Information).",
+    "warnings": [
+      "Cardiovascular risks: there is a potential for cardiac risk during sexual activity in patients with pre-existing cardiovascular disease, so treatments for ED, including STENDRA, should not be used in men for whom sexual activity is inadvisable because of their underlying cardiovascular status. STENDRA is not recommended for patients who have had a myocardial infarction, stroke, life-threatening arrhythmia or coronary revascularization within the last 6 months; who have resting hypotension (blood pressure less than 90/50 mmHg) or hypertension (greater than 170/100 mmHg); or who have unstable angina, angina with sexual intercourse, or NYHA Class 2 or greater congestive heart failure. Patients with left ventricular outflow obstruction and those with severely impaired autonomic control of blood pressure can be particularly sensitive to vasodilators, including STENDRA (FDA Stendra label, section 5.1).",
+      "Concomitant use of CYP3A4 inhibitors: STENDRA metabolism is principally mediated by CYP3A4, and CYP3A4 inhibitors may reduce STENDRA clearance and increase plasma concentrations of avanafil. Do not use STENDRA with strong CYP3A4 inhibitors; limit the dose to 50 mg once every 24 hours with moderate CYP3A4 inhibitors (FDA Stendra label, section 5.2).",
+      "Prolonged erection: prolonged erection greater than 4 hours and priapism (painful erections greater than 6 hours) have been reported with PDE5 inhibitors; if not treated immediately, penile tissue damage and permanent loss of potency could result. Use caution in patients with anatomical deformation of the penis (angulation, cavernosal fibrosis, Peyronie's disease) or conditions predisposing to priapism (sickle cell anemia, multiple myeloma, leukemia) (FDA Stendra label, section 5.3).",
+      "Effects on the eye: physicians should advise patients to stop use of all PDE5 inhibitors, including STENDRA, and seek medical attention in the event of sudden loss of vision in one or both eyes, which may be a sign of non-arteritic anterior ischemic optic neuropathy (NAION). Use STENDRA with caution, and only when the anticipated benefits outweigh the risks, in patients with a history of NAION, and in patients with a 'crowded' optic disc. Patients with known hereditary degenerative retinal disorders, including retinitis pigmentosa, were not included in clinical trials and STENDRA is not recommended for them (FDA Stendra label, section 5.4).",
+      "Sudden hearing loss: use of PDE5 inhibitors has been associated with sudden decrease or loss of hearing, which may be accompanied by tinnitus or dizziness; it is not possible to determine whether these events are related directly to PDE5 inhibitors or to other factors (FDA Stendra label, section 5.5).",
+      "Alpha-blockers and other antihypertensives: caution is advised when PDE5 inhibitors are co-administered with alpha-blockers, as both are vasodilators and an additive effect on blood pressure may lead to symptomatic hypotension (dizziness, lightheadedness, fainting). Patients should be stable on alpha-blocker therapy before initiating a PDE5 inhibitor, which should be started at the lowest dose (STENDRA 50 mg) (FDA Stendra label, section 5.6).",
+      "Alcohol: both alcohol and PDE5 inhibitors act as vasodilators; substantial consumption of alcohol (greater than 3 units) with STENDRA may increase the potential for orthostatic signs and symptoms (FDA Stendra label, section 5.7).",
+      "Combination with other PDE5 inhibitors or erectile dysfunction therapies: the safety and efficacy of such combinations has not been studied, so their use is not recommended (FDA Stendra label, section 5.8).",
+      "Effects on bleeding: the safety of STENDRA is unknown in patients with bleeding disorders and patients with active peptic ulceration; in vitro, STENDRA potentiates the anti-aggregatory effect of sodium nitroprusside (FDA Stendra label, section 5.9).",
+      "Counseling patients about sexually transmitted diseases: the use of STENDRA offers no protection against sexually transmitted diseases (FDA Stendra label, section 5.10)."
+    ],
+    "precautions": [
+      "Use the lowest dose that provides benefit; the maximum recommended dosing frequency is once per day (FDA Stendra label, section 2.1).",
+      "Sexual stimulation is required for a response to treatment (FDA Stendra label, section 2.1).",
+      "STENDRA may be taken with or without food (FDA Stendra label, section 2.2).",
+      "If the formulation or the CYP3A4-inhibitor status of the patient changes, the STENDRA dose may need to be adjusted; patients should be stable on alpha-blocker therapy prior to initiating STENDRA (FDA Stendra label, sections 2.3 and 5.6).",
+      "Avanafil had no effect on CYP1A1/2, 2A6, 2B6 and 2E1 (IC50 greater than 100 micromolar) in vitro and weak inhibitory effects toward other isoforms (CYP2C8, 2C9, 2C19, 2D6, 3A4); avanafil and its metabolites M4 and M16 are unlikely to cause clinically significant inhibition of these enzymes (FDA Stendra label, section 12.3).",
+      "In animal studies avanafil caused signs of centrally-mediated toxicity including ataxia, tremor, convulsion, hypoactivity, recumbency and/or prostration at exposures 5-8 times the maximum recommended human dose based on Cmax and 8-30 times based on AUC; in a rat fertility study, decreased fertility, reduced or absent sperm motility, altered estrous cycles and an increased percentage of abnormal sperm occurred at exposures in males approximately 11 times the human exposure at 200 mg, with the sperm effects reversible after a 9-week drug-free period (FDA Stendra label, sections 13.1 and 13.2).",
+      "In a thorough QT/QTc trial, STENDRA 100 mg and 800 mg did not cause any significant changes in the QTc interval or ventricular repolarization (FDA Stendra label, section 12.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious cardiovascular and cerebrovascular events, including myocardial infarction, sudden cardiac death, cerebrovascular accident and subarachnoid hemorrhage, reported post-marketing in temporal association with STENDRA use (FDA Stendra label, section 6.2)",
+      "Non-arteritic anterior ischemic optic neuropathy (NAION), a cause of decreased vision including permanent loss of vision, reported rarely post-marketing in temporal association with PDE5 inhibitors such as STENDRA (FDA Stendra label, sections 5.4 and 6.2)",
+      "Sudden decrease or loss of hearing, reported post-marketing in temporal association with PDE5 inhibitors such as STENDRA (FDA Stendra label, sections 5.5 and 6.2)",
+      "Prolonged erection and priapism, which if untreated can result in permanent erectile tissue damage and loss of potency (FDA Stendra label, section 5.3)",
+      "Symptomatic hypotension from additive vasodilation with alpha-blockers, antihypertensives, nitrates or substantial alcohol intake (FDA Stendra label, sections 5.6, 5.7 and 7.1)",
+      "Hypersensitivity reactions, including pruritus and eyelid swelling (FDA Stendra label, section 4.2)"
+    ],
+    "food_interactions": [
+      "STENDRA may be taken with or without food. When STENDRA 200 mg is taken with a high-fat meal, the rate of absorption is reduced, with a mean delay in Tmax of 1.12 to 1.25 hours and a mean reduction in Cmax of 39%, with an approximate 3.8% decrease in AUC; these small changes in avanafil Cmax and AUC are considered of minimal clinical significance (FDA Stendra label, sections 2.2 and 12.3).",
+      "Alcohol is a pharmacodynamic rather than a food interaction: both alcohol and PDE5 inhibitors act as vasodilators, and substantial consumption of alcohol (greater than 3 units) in combination with STENDRA may increase the potential for orthostatic signs and symptoms including increased heart rate, decreased standing blood pressure, dizziness and headache (FDA Stendra label, sections 5.7 and 7.1).",
+      "Grapefruit juice is a CYP3A4 inhibitor and is likely to increase avanafil exposure, although specific interactions have not been studied (FDA Stendra label, section 7.2)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "STENDRA is not indicated for use in females. There are no data with the use of STENDRA in pregnant women to inform any drug-associated risks for adverse developmental outcomes. In animal reproduction studies in pregnant rats and rabbits, no adverse developmental outcomes were observed with oral administration of avanafil during organogenesis at exposures for total avanafil of approximately 8 and 6 times, respectively, the maximum recommended human dose of 200 mg based on AUC. In rats, decreased fetal body weight occurred at the maternally toxic dose of 1000 mg/kg/day with no signs of teratogenicity. In a pre- and post-natal development study in rats, offspring growth and maturation were reduced when maternal rats received avanafil doses of 300 mg/kg/day or greater, corresponding to exposures 17 times or greater the human exposure to total avanafil at the MRHD; the no-observed-adverse-effect level for developmental toxicity was 100 mg/kg/day at exposures approximately 2-fold greater than the systemic exposure in humans at the MRHD (FDA Stendra label, section 8.1).",
+    "lactation_guidance": "STENDRA is not indicated for use in females. There is no information on the presence of avanafil and/or its metabolites in human or animal milk, the effects on the breastfed child, or the effects on milk production (FDA Stendra label, section 8.2).",
+    "overdose": "Single doses up to 800 mg have been given to healthy subjects, and multiple doses up to 300 mg have been given to patients. In cases of overdose, standard supportive measures should be adopted as required. Renal dialysis is not expected to accelerate clearance because avanafil is highly bound to plasma proteins and is not significantly eliminated in the urine (FDA Stendra label, section 10).",
+    "pharmacokinetics": "STENDRA is rapidly absorbed after oral administration, with a median Tmax of 30 to 45 minutes in the fasted state, and the pharmacokinetics of STENDRA are dose proportional from 12.5 to 600 mg. The mean accumulation ratio is approximately 1.2. Avanafil is approximately 99% bound to plasma proteins; protein binding is independent of total drug concentrations, age, renal and hepatic function. Less than 0.0002% of the administered dose appeared in semen of patients 45-90 minutes after dosing. Avanafil is cleared predominantly by hepatic metabolism, mainly by CYP3A4 and to a minor extent by CYP2C isoforms; the plasma concentrations of the major circulating metabolites M4 and M16 are approximately 23% and 29% of the parent compound, and M4 accounts for approximately 4% of the pharmacologic activity of avanafil. After oral administration, avanafil is excreted as metabolites predominantly in the feces (approximately 62% of the administered oral dose) and to a lesser extent in the urine (approximately 21%). STENDRA has a terminal elimination half-life of approximately 5 hours (FDA Stendra label, section 12.3).",
+    "clinical_pearls": [
+      "Avanafil is the most selective of the PDE5 inhibitors for PDE5 over PDE6 (greater than 100-fold) and far more selective over PDE1, PDE3, PDE9 and PDE11 (greater than 10,000-fold), which is the mechanistic basis for its lower reported rates of visual adverse effects relative to the class (FDA Stendra label, section 12.1).",
+      "It can be taken as early as approximately 15 minutes before sexual activity, and with or without food (FDA Stendra label, sections 2.1 and 2.2).",
+      "Onset depends on sexual stimulation: PDE5 inhibition has no effect in the absence of nitric oxide release, so patients must be counselled that an erection will not occur without sexual stimulation (FDA Stendra label, sections 2.1 and 17.10).",
+      "Strong CYP3A4 inhibitors raise avanafil exposure roughly 13-fold; avoid the combination entirely and cap the dose at 50 mg daily with moderate inhibitors (FDA Stendra label, sections 5.2, 7.2 and 12.3).",
+      "Nitrates are an absolute contraindication; if nitrates are medically necessary in a life-threatening situation, wait at least 12 hours after the last avanafil dose and give only under close supervision with hemodynamic monitoring (FDA Stendra label, sections 4.1 and 17.1).",
+      "Start at 50 mg if the patient is already on an alpha-blocker and is stable on it, and never combine with other PDE5 inhibitors (FDA Stendra label, sections 2.3 and 5.8).",
+      "Any erection lasting more than 4 hours is an emergency (FDA Stendra label, sections 5.3 and 17.5).",
+      "Avanafil is not listed on the WHO Model List of Essential Medicines and has no Kenya Essential Medicines List 2023 or KNMF 2023 listing, so access depends on non-essential-medicine procurement pathways in Kenya (WHO eEML; KEML 2023; KNMF 2023)."
+    ],
+    "brand_names": ["STENDRA (avanafil, Metuchen Pharmaceuticals, LLC)"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose adjustment is necessary for patients with mild to moderate renal impairment (creatinine clearance 30 to less than 90 mL/min); avanafil exposure (AUC or Cmax) in patients with mild (CrCl 60 to less than 90 mL/min) or moderate (CrCl 30 to less than 60 mL/min) renal impairment was comparable to normal subjects in a trial of single 200 mg doses. The pharmacokinetics of avanafil in patients with severe renal disease or on renal dialysis has not been studied, so do not use STENDRA in such patients (FDA Stendra label, sections 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "No dose adjustment is necessary for patients with mild or moderate hepatic impairment (Child-Pugh A or B). In a trial of single 200 mg doses, avanafil AUC and Cmax in mild hepatic impairment (Child-Pugh A) was comparable to healthy subjects; in moderate hepatic impairment (Child-Pugh B) Cmax was approximately 51% lower and AUC 11% higher. The pharmacokinetics of avanafil in patients with severe hepatic disease has not been studied, so do not use STENDRA in such patients (FDA Stendra label, sections 8.7 and 12.3).",
+    "administration_instructions": "For oral use. The recommended starting dose is 100 mg taken orally as needed as early as approximately 15 minutes before sexual activity; the dose may be increased to 200 mg or decreased to 50 mg (50 mg taken approximately 30 minutes before sexual activity) based on efficacy and tolerability, using the lowest dose that provides benefit. Take no more than once a day. May be taken with or without food. Do not use with strong CYP3A4 inhibitors; limit to 50 mg once every 24 hours with moderate CYP3A4 inhibitors; start at 50 mg in patients on stable alpha-blocker therapy. STENDRA is supplied as oval, pale yellow tablets containing 50 mg, 100 mg or 200 mg avanafil, debossed with the dosage strength. Store at 20 degrees C to 25 degrees C (68 degrees F to 77 degrees F), with excursions permitted between 15 and 30 degrees C (59 to 86 degrees F), and protect from light (FDA Stendra label, sections 2, 2.1, 2.2, 2.3, 3, 11 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, STENDRA (avanafil), Metuchen Pharmaceuticals, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Stendra label, section 1 and section 8.1; WHO eEML search (avanafil not listed); KEML 2023 and KNMF 2023 (no listing or monograph for avanafil)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Stendra label, sections 4.1, 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Stendra label, sections 6.1 (Table 1) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Stendra label, sections 2, 2.1, 2.2, 2.3, 8.4 and 8.5; KEML 2023 and KNMF 2023 (no listing or monograph for avanafil)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Stendra label, sections 2.3, 4.1, 4.3, 5.2, 5.6, 5.7, 5.8, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Stendra label, sections 5, 5.1, 5.3, 5.4, 5.5, 5.6, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Stendra label, sections 17.1-17.11 and Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Stendra label, sections 5.1-5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Stendra label, sections 2.1, 2.2, 2.3, 5.6, 12.2, 12.3, 13.1 and 13.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Stendra label, sections 4.2, 5.3, 5.4, 5.5, 5.6, 5.7, 6.2 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Stendra label, sections 2.2, 5.7, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current FDA Stendra label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Stendra label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Stendra label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Stendra label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Stendra label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Stendra label, sections 2.1, 2.2, 4.1, 5.2, 5.3, 5.8, 7.2, 12.1, 17.5 and 17.10; WHO eEML; KEML 2023; KNMF 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "brand_names",
+      "ref": "STENDRA (avanafil) listed on DailyMed as the branded product, Metuchen Pharmaceuticals, LLC",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Stendra labelling (full label reviewed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Stendra label, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Stendra label, sections 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Stendra label, sections 2, 2.1, 2.2, 2.3, 3, 11 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6"
+    },
+    {
+      "field": "indications (WHO Model List status)",
+      "ref": "WHO eEML search: avanafil returns zero recommendations, including with removed medicines shown; it is not on the WHO Model List of Essential Medicines",
+      "url": "https://list.essentialmeds.org/?query=avanafil&showRemoved=1"
+    },
+    {
+      "field": "indications (Kenya Essential Medicines List)",
+      "ref": "Kenya Essential Medicines List 2023, Ministry of Health - avanafil does not appear in the KEML 2023 list",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_Essential_Medicines_List_2023_qbkhTlV.pdf"
+    },
+    {
+      "field": "dosage (Kenya National Medicines Formulary)",
+      "ref": "Kenya National Medicines Formulary, First Edition (KNMF-1), Ministry of Health 2023 - avanafil has no monograph",
+      "url": "http://guidelines.health.go.ke:8000/media/Kenya_National_Medicines_Formulary_2023_1st_Edition.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric statement is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Avanafil' with the brand name recorded as 'Avanafil'; the actual product brand is STENDRA (Metuchen Pharmaceuticals, LLC), which is used in fields.brand_names. Sources: the FDA/DailyMed label for STENDRA (avanafil) is the sole clinical source; avanafil is not on the WHO Model List of Essential Medicines and is not in the Kenya Essential Medicines List 2023 or the Kenya National Medicines Formulary 2023, which is recorded in fields.indications and fields.clinical_pearls. There is no boxed warning for avanafil. The label states no letter pregnancy category (Pregnancy and Lactation Labeling Rule risk summary), so pregnancy_category is null. avanafil is a branded, non-essential-medicine product, so the Kenyan lists will not carry it; the cost/access implication is noted as a pearl but no dosing or availability claim is made."
+}

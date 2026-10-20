@@ -1,0 +1,217 @@
+{
+  "name": "Andexanet Alfa",
+  "existing_id": "62260750-b4d6-4f8f-ab34-5e417a4a4047",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "ANDEXXA (coagulation factor Xa (recombinant), inactivated-zhzo) is a recombinant modified human factor Xa (FXa) protein. It exerts its procoagulant effect by binding and sequestering the FXa inhibitors rivaroxaban and apixaban. A second observed procoagulant effect is its ability to bind to, and inhibit the activity of, tissue factor pathway inhibitor (TFPI); inhibition of TFPI activity can increase tissue factor (TF)-initiated thrombin generation. The active ingredient is a genetically modified variant of human FXa in which the active-site serine is substituted with alanine, rendering the molecule unable to cleave and activate prothrombin, and the gamma-carboxyglutamic acid (Gla) domain has been removed to eliminate the protein's ability to assemble into the prothrombinase complex, thus removing the potential anticoagulant effects (FDA ANDEXXA label, sections 11 Description and 12.1 Mechanism of Action).",
+    "indications": [
+      "ANDEXXA is indicated for patients treated with rivaroxaban or apixaban when reversal of anticoagulation is needed due to life-threatening or uncontrolled bleeding. This indication is approved under accelerated approval based on the change from baseline in anti-FXa activity in healthy volunteers; an improvement in hemostasis has not been established and continued approval for this indication may be contingent upon the results of studies that demonstrate an improvement in hemostasis in patients (FDA ANDEXXA label, section 1)",
+      "Limitations of use: ANDEXXA has not been shown to be effective for, and is not indicated for, the treatment of bleeding related to any FXa inhibitors other than apixaban or rivaroxaban (FDA ANDEXXA label, section 1)"
+    ],
+    "contraindications": [
+      "None. The FDA label states 'Contraindications: None' (FDA ANDEXXA label, section 4)"
+    ],
+    "side_effects": [
+      "The most common adverse reactions (>= 5%) in bleeding patients receiving ANDEXXA were urinary tract infections and pneumonia (FDA ANDEXXA label, sections 6 and 6.1)",
+      "Thromboembolic and ischemic events: in the ANNEXA-4 study 45 of 419 patients (10.7%) experienced one or more thromboembolic events, including cerebrovascular accident (19/45; 42%), deep venous thrombosis (11/45; 24%) and myocardial infarction; the median time to first event was 10 days and 17 patients experienced the event within three days of treatment (FDA ANDEXXA label, sections 5.1 and 6.1)",
+      "Deaths in ANNEXA-4: of the 419 patients in the safety population there were 75 deaths (18%) - 37 cardiovascular deaths related to bleeding, 19 cardiovascular deaths not related to bleeding, 14 non-cardiovascular deaths and 5 deaths of uncertain or unknown cause; the average time to death was 15 days after treatment and all patients died prior to day 45 (FDA ANDEXXA label, section 6.1)",
+      "Thrombotic events after resumption of anticoagulation: of 266 patients who received at least one anticoagulation dose within 30 days after ANDEXXA, 14 (5.3%) had a thrombotic event after resumption (FDA ANDEXXA label, sections 2.4, 5.1 and 6.1)",
+      "Unresponsiveness to unfractionated heparin leading to non-prolongation of activated clotting times and serious thrombotic events has occurred following ANDEXXA administration; this is reported postmarketing as heparin resistance (FDA ANDEXXA label, sections 5.2, 6.2 and 7.1)",
+      "Re-elevation or incomplete reversal of anti-FXa activity can occur: anti-FXa activity returned to placebo levels approximately two hours after completion of a bolus or continuous infusion and subsequently decreased at a rate similar to the clearance of the FXa inhibitors (FDA ANDEXXA label, section 5.3)",
+      "Immunogenicity: using electrochemiluminescence-based assays, low incidence of anti-ANDEXXA (up to 8.7%) and anti-FXa (up to 0.8%) antibodies was seen in healthy patients at all timepoints, with no anti-FX antibody detected at any timepoint; in ANNEXA-4, 7.9% (22/277) of patients had antibodies against ANDEXXA, 0.4% (1/277) had antibodies against FXa and no patients had antibodies against FX. No neutralizing antibodies against ANDEXXA or cross-reacting with FX or FXa were detected (FDA ANDEXXA label, section 12.6)"
+    ],
+    "dosage": {
+      "adult": "For intravenous (IV) use only, in two dosing regimens (FDA ANDEXXA label, section 2.1). Low Dose: 400 mg initial IV bolus at a target rate of 30 mg/min, followed by 4 mg/min for 120 minutes (480 mg total); 5 x 200 mg vials (2 vials bolus + 3 vials infusion). High Dose: 800 mg initial IV bolus at a target rate of 30 mg/min, followed by 8 mg/min for 120 minutes (960 mg total); 9 x 200 mg vials (4 vials bolus + 5 vials infusion). The safety and efficacy of an additional dose have not been established, and the safety and effectiveness of more than one dose have not been evaluated. Regimen selection depends on the FXa inhibitor, its dose and the time since the last dose (FDA ANDEXXA label, section 2.1): rivaroxaban <= 10 mg or apixaban <= 5 mg with last dose < 8 hours or unknown, or rivaroxaban <= 10 mg with last dose >= 8 hours, gives the Low Dose; rivaroxaban > 10 mg or unknown, or apixaban > 5 mg or unknown, gives the High Dose. Start the bolus at a target rate of approximately 30 mg/min and, within two minutes following the bolus, administer the continuous IV infusion for 120 minutes (FDA ANDEXXA label, section 2.3). Resume anticoagulant therapy as soon as medically appropriate following treatment with ANDEXXA (FDA ANDEXXA label, section 2.4).",
+      "geriatric": "Of the 419 patients in the ANNEXA-4 study of ANDEXXA, 381 (91%) were 65 years of age or older and 278 (66%) were older than 75 years of age. No overall differences in safety or efficacy were observed between these patients and younger patients, and other reported clinical experience has not identified differences in responses between elderly and younger patients; however, greater sensitivity of some older individuals cannot be ruled out (FDA ANDEXXA label, section 8.5).",
+      "paediatric": "The safety and efficacy of ANDEXXA in the paediatric population have not been studied (FDA ANDEXXA label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Unfractionated heparin: do not use unfractionated heparin following ANDEXXA administration. Unresponsiveness to unfractionated heparin has occurred, characterised by non-prolongation of activated clotting times and a requirement for increased dosing of heparin. Do not use ANDEXXA for the reversal of direct FXa inhibitors (apixaban and rivaroxaban) prior to heparinization; if anticoagulation is needed, use an alternative anticoagulant to heparin. Use of ANDEXXA as an antidote for heparin has not been established (FDA ANDEXXA label, sections 5.2 and 7.1).",
+      "Anti-FXa activity testing: current commercial clinical anti-FXa-activity assays are unsuitable for measuring FXa activity following administration of ANDEXXA. Because of the reversible binding of ANDEXXA to the FXa inhibitor, the high sample dilution used in commercial assays promotes dissociation of the inhibitor from ANDEXXA, resulting in detection of erroneously elevated anti-FXa activity levels and underestimation of the reversal activity of ANDEXXA (FDA ANDEXXA label, section 7.2)",
+      "Apixaban and rivaroxaban: the pharmacokinetics of ANDEXXA were not affected by apixaban (5 mg orally twice daily for six days) or rivaroxaban (20 mg orally once daily for six days) (FDA ANDEXXA label, section 12.3)",
+      "Prothrombin complex concentrates, recombinant factor VIIa and whole blood products: the safety of ANDEXXA has not been evaluated in patients who received these within seven days prior to the bleeding event (FDA ANDEXXA label, section 5.1)"
+    ],
+    "monitoring": "Monitor patients treated with ANDEXXA for signs and symptoms of arterial and venous thromboembolic events, ischemic events, and cardiac arrest (FDA ANDEXXA label, section 5.1). Monitor for symptoms and signs that precede cardiac arrest and provide treatment as needed (FDA ANDEXXA label, Boxed Warning). Monitor the time course of anti-FXa activity for re-elevation or incomplete reversal of anticoagulant activity: compared with baseline there was a rapid and substantial decrease in anti-FXa activity corresponding to the bolus, sustained through the end of the infusion, with anti-FXa activity returning to placebo levels approximately two hours after completion of a bolus or continuous infusion (FDA ANDEXXA label, section 5.3). To reduce thromboembolic risk, resume anticoagulant therapy as soon as medically appropriate following treatment with ANDEXXA (FDA ANDEXXA label, sections 2.4 and 5.1). Do not use unfractionated heparin after ANDEXXA because activated clotting times may fail to prolong (FDA ANDEXXA label, sections 5.2 and 7.1). Laboratory assessment of coagulation does not necessarily correlate with or predict the haemostatic effectiveness of ANDEXXA, and commercial anti-FXa assays are unreliable after ANDEXXA (FDA ANDEXXA label, sections 7.2 and 12.2).",
+    "patient_counselling": "Discuss the following with the patient and/or caregivers (FDA ANDEXXA label, section 17). Thromboembolic and ischemic risks: inform patients and/or caregivers that reversing FXa inhibitor therapy increases the risk of thromboembolic events, and that arterial and venous thromboembolic events, ischemic events, cardiac events and sudden death were observed within 30 days following ANDEXXA administration (FDA ANDEXXA label, section 17 and Boxed Warning). Unresponsiveness to unfractionated heparin: inform patients and/or caregivers that unresponsiveness to unfractionated heparin and serious thrombotic events have occurred following ANDEXXA administration, and that an alternative anticoagulant to heparin should be used if anticoagulation is needed (FDA ANDEXXA label, sections 5.2 and 17).",
+    "warnings": [
+      "WARNING (boxed): THROMBOEMBOLIC RISKS, ISCHEMIC RISKS, CARDIAC ARREST, and SUDDEN DEATHS. Treatment with ANDEXXA has been associated with serious and life-threatening adverse events including arterial and venous thromboembolic events, ischemic events including myocardial infarction and ischemic stroke, cardiac arrest, and sudden deaths. Monitor for thromboembolic events and initiate anticoagulation when medically appropriate; monitor for symptoms and signs that precede cardiac arrest and provide treatment as needed (FDA ANDEXXA label, Boxed Warning)",
+      "Thromboembolic and ischemic risks: 45 of 419 patients (10.7%) in ANNEXA-4 experienced a thrombotic event, with median time to first event 10 days and 17 events within three days of treatment; of 266 patients who received anticoagulation within 30 days, 14 (5.3%) had a thrombotic event after resumption. Monitor for arterial and venous thromboembolic events, ischemic events and cardiac arrest, and resume anticoagulant therapy as soon as medically appropriate (FDA ANDEXXA label, section 5.1)",
+      "Unresponsiveness to unfractionated heparin: non-prolongation of activated clotting times and serious thrombotic events have occurred following ANDEXXA administration. Do not use ANDEXXA to reverse direct FXa inhibitors prior to heparinization, and if anticoagulation is needed use an alternative anticoagulant to heparin (FDA ANDEXXA label, section 5.2)",
+      "Re-elevation or incomplete reversal of anti-FXa activity: anti-FXa activity returned to placebo levels approximately two hours after completion of the bolus or infusion and then fell at a rate similar to clearance of the FXa inhibitors, so re-elevation of anticoagulant effect is possible (FDA ANDEXXA label, section 5.3)",
+      "Limitations of use: ANDEXXA has not been shown to be effective for, and is not indicated for, the treatment of bleeding related to any FXa inhibitors other than apixaban or rivaroxaban (FDA ANDEXXA label, section 1)",
+      "The safety of ANDEXXA has not been evaluated in patients who experienced thromboembolic events or disseminated intravascular coagulation within two weeks prior to the life-threatening bleeding event, or who received prothrombin complex concentrates, recombinant factor VIIa or whole blood products within seven days prior to the bleeding event (FDA ANDEXXA label, section 5.1)"
+    ],
+    "precautions": [
+      "For intravenous use only; administer as an IV bolus followed by continuous infusion, using a 0.2 or 0.22 micron in-line polyethersulfone or equivalent low protein-binding filter (FDA ANDEXXA label, sections 2 and 2.3).",
+      "The safety and efficacy of an additional dose have not been established, and the safety and effectiveness of more than one dose have not been evaluated (FDA ANDEXXA label, section 2.1).",
+      "Reconstitute each 200 mg vial with 20 mL of Sterile Water for Injection using a 20-mL (or larger) syringe and a 20-gauge (or smaller diameter, e.g. 21-gauge) needle, directing the solution onto the inside wall of the vial to minimise foaming; gently swirl until complete dissolution (typically three to five minutes) and do not shake, as shaking could lead to foaming. If dissolution is incomplete, discard the vial and do not use the product (FDA ANDEXXA label, section 2.2).",
+      "Reconstituted ANDEXXA contains coagulation factor Xa (recombinant), inactivated-zhzo at a concentration of 10 mg/mL; reconstituted ANDEXXA in vials is stable at room temperature for up to eight hours, or may be stored for up to 24 hours at 2 to 8 degrees C, and reconstituted ANDEXXA in IV bags is stable at room temperature for up to eight hours (FDA ANDEXXA label, section 2.2).",
+      "Inspect the parenteral drug product visually for particulate matter and discoloration prior to administration (FDA ANDEXXA label, section 2.3).",
+      "Do not use unfractionated heparin following ANDEXXA administration (FDA ANDEXXA label, section 7.1).",
+      "Laboratory assessment of coagulation does not necessarily correlate with or predict the haemostatic effectiveness of ANDEXXA (FDA ANDEXXA label, section 12.2).",
+      "No animal studies were performed to evaluate the effects of ANDEXXA on carcinogenesis, mutagenesis, or impairment of fertility (FDA ANDEXXA label, section 13.1)."
+    ],
+    "serious_adverse_reactions": [
+      "Arterial and venous thromboembolic events (45/419; 10.7% in ANNEXA-4), including cerebrovascular accident, deep venous thrombosis and myocardial infarction (FDA ANDEXXA label, sections 5.1 and 6.1)",
+      "Ischemic events, including myocardial infarction and ischemic stroke (FDA ANDEXXA label, Boxed Warning)",
+      "Cardiac arrest (FDA ANDEXXA label, Boxed Warning)",
+      "Sudden deaths (FDA ANDEXXA label, Boxed Warning)",
+      "Unresponsiveness to unfractionated heparin (heparin resistance) with non-prolongation of activated clotting times and serious thrombotic events (FDA ANDEXXA label, sections 5.2, 6.2 and 7.1)",
+      "Thrombotic events after resumption of anticoagulation (14/266; 5.3%) (FDA ANDEXXA label, section 5.1)",
+      "Urinary tract infection and pneumonia, the most common adverse reactions (>= 5%) in bleeding patients (FDA ANDEXXA label, section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate and well-controlled studies of ANDEXXA in pregnant women to inform patients of associated risks. Animal reproductive and developmental studies have not been conducted with ANDEXXA. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively. The safety and effectiveness of ANDEXXA during labor and delivery have not been evaluated (FDA ANDEXXA label, section 8.1).",
+    "lactation_guidance": "There is no information regarding the presence of ANDEXXA in human milk, the effects on the breastfed child, or the effects on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for ANDEXXA and any potential adverse effects on the breastfed infant from ANDEXXA or from the underlying maternal condition (FDA ANDEXXA label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "Pharmacodynamics: dosing of ANDEXXA as a bolus followed by a two-hour continuous infusion resulted in a rapid decrease in anti-FXa activity (within two minutes after completion of the bolus) which was maintained throughout the infusion; anti-FXa activity returned to placebo levels approximately two hours after completion of a bolus or continuous infusion, whereas TFPI activity in plasma returned to pretreatment levels approximately 96 hours following administration. Elevation of TF-initiated thrombin generation above the baseline range occurred within two minutes following a bolus and was maintained through the infusion, and remained elevated above placebo for at least 22 hours. Pharmacokinetics (healthy subjects, geometric mean): low dose AUC0-inf 200.5 hr*microg/mL, Cmax 76.6 microg/mL, clearance 4.4 L/hr, half-life 3.3 hr, Vss 4.4 L; high dose AUC0-inf 572.9 hr*microg/mL, Cmax 206.6 microg/mL, clearance 3.1 L/hr, half-life 2.7 hr, Vss 3.0 L. The pharmacokinetics of ANDEXXA were not affected by apixaban (5 mg orally twice daily for six days) or rivaroxaban (20 mg orally once daily for six days) (FDA ANDEXXA label, sections 12.2, 12.3 and 12.6).",
+    "clinical_pearls": [
+      "ANDEXXA is a decoy, not a procoagulant factor: it is an inactivated, Gla-domain-truncated factor Xa that binds and sequesters apixaban and rivaroxaban, and additionally inhibits TFPI to increase tissue-factor-initiated thrombin generation (FDA ANDEXXA label, sections 11 and 12.1).",
+      "Its approval is under accelerated approval based on anti-FXa activity in healthy volunteers; an improvement in haemostasis has not been established, so continued approval is contingent on confirmatory haemostasis studies (FDA ANDEXXA label, section 1).",
+      "It only works for apixaban and rivaroxaban - there is no indication for bleeding due to other FXa inhibitors (FDA ANDEXXA label, section 1).",
+      "Do not reach for heparin afterwards: heparin unresponsiveness with non-prolongation of aPTT and serious thrombotic events has been reported postmarketing after ANDEXXA (FDA ANDEXXA label, sections 5.2, 6.2 and 7.1).",
+      "Do not trust anti-FXa levels after ANDEXXA: commercial assays dilute the sample, dissociating the inhibitor from ANDEXXA and reporting erroneously elevated anti-FXa activity that underestimates the reversal (FDA ANDEXXA label, section 7.2).",
+      "The thromboembolic risk is real and time-lagged: 10.7% of patients had a thrombotic event with a median time to first event of 10 days, so monitoring must continue well beyond the infusion (FDA ANDEXXA label, section 5.1).",
+      "Restart anticoagulation as soon as medically appropriate: of 266 patients given anticoagulation within 30 days, 5.3% still had a thrombotic event, but prolonged interruption carries its own risk in the underlying disease (FDA ANDEXXA label, sections 2.4 and 5.1).",
+      "Practical preparation points: reconstitute with 20 mL sterile water, do not shake the vial, use the low dose for rivaroxaban <= 10 mg or apixaban <= 5 mg and the high dose for higher or unknown doses, and use only a 0.2 or 0.22 micron low protein-binding filter (FDA ANDEXXA label, sections 2.1, 2.2 and 2.3).",
+      "The ANDEXXA label carries a boxed warning for thromboembolic risks, ischemic risks, cardiac arrest and sudden deaths (FDA ANDEXXA label, Boxed Warning)."
+    ],
+    "brand_names": ["ANDEXXA"],
+    "black_box_warnings": [
+      "WARNING: THROMBOEMBOLIC RISKS, ISCHEMIC RISKS, CARDIAC ARREST, and SUDDEN DEATHS. Treatment with ANDEXXA has been associated with serious and life-threatening adverse events, including: arterial and venous thromboembolic events; ischemic events, including myocardial infarction and ischemic stroke; cardiac arrest; and sudden deaths. Monitor for thromboembolic events and initiate anticoagulation when medically appropriate. Monitor for symptoms and signs that precede cardiac arrest and provide treatment as needed (FDA ANDEXXA label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous use only. Reconstitute each 200 mg vial with 20 mL of Sterile Water for Injection using a 20-mL (or larger) syringe and a 20-gauge (or smaller) needle, injecting onto the inside wall of the vial to minimise foaming, then gently swirling until completely dissolved (typically three to five minutes) - do not shake. Withdraw the required volume with a 40-mL (or larger) syringe and transfer into an empty polyolefin or polyvinyl chloride IV bag of 250 mL or less; discard unused vial contents. Administer intravenously using a 0.2 or 0.22 micron in-line polyethersulfone or equivalent low protein-binding filter. Start the bolus at a target rate of approximately 30 mg/min, and within two minutes following the bolus administer the continuous infusion for 120 minutes. Unopened vials should be stored refrigerated at 2 to 8 degrees C (36 to 46 degrees F) until the expiration date and must not be frozen; after reconstitution, ANDEXXA in vials is stable at room temperature for up to 8 hours or for up to 24 hours at 2 to 8 degrees C, and ANDEXXA in IV bags is stable at room temperature for up to 8 hours - discard any unused portion of reconstituted solution (FDA ANDEXXA label, sections 2.1-2.3 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, ANDEXXA (coagulation factor Xa (recombinant), inactivated-zhzo) (AstraZeneca Pharmaceuticals LP), section 12.1 Mechanism of Action and section 11 Description",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), section 1 Indications and Usage (including Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), section 4 Contraindications (None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 5.1-5.3, 6 Adverse Reactions, 6.1 Clinical Trials Experience (ANNEXA-4) and 6.2 Postmarketing Experience; section 12.6 Immunogenicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 2.1-2.4 Dosage and Administration (Tables 1 and 2), 8.4 Pediatric Use and 8.5 Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 5.1, 5.2, 7.1-7.2 Drug Interactions and 12.3 Pharmacokinetics (Drug-Drug Interaction)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), Boxed Warning, sections 2.4, 5.1, 5.2, 5.3, 7.1, 7.2 and 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), Boxed Warning and sections 1, 5.1-5.3 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 1, 2.1-2.3, 5.1, 5.2, 7.1, 12.2 and 13.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), Boxed Warning and sections 5.1, 5.2, 6.1, 6.2 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA ANDEXXA labelling; the product is administered intravenously",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 12.2 Pharmacodynamics, 12.3 Pharmacokinetics (Table 3) and 12.6 Immunogenicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), Boxed Warning, sections 1, 2.1-2.4, 5.1-5.3, 6.1, 7.1, 7.2, 11, 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "ANDEXXA (andexanet alfa) listed as a brand product on DailyMed (AstraZeneca Pharmaceuticals LP)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), Boxed Warning - WARNING: THROMBOEMBOLIC RISKS, ISCHEMIC RISKS, CARDIAC ARREST, and SUDDEN DEATHS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, ANDEXXA (andexanet alfa), sections 2.1-2.3 Dosage and Administration (including reconstitution) and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "The ANDEXXA label contains no renal impairment section and specifies no renal dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The ANDEXXA label contains no hepatic impairment section and specifies no hepatic dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "overdose",
+      "ref": "The ANDEXXA label contains no Overdosage section and no overdose management information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The current ANDEXXA label uses the Pregnancy and Lactation Labeling Rule format (section 8.1) and states no pregnancy category letter",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d9d90a6-63e6-46ef-96ff-dd6519ae7b6c"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and efficacy in the paediatric population have not been studied)",
+    "overdose (the ANDEXXA label has no Overdosage section and no antidote or overdose management information is given)",
+    "renal_dose_adjustment (the ANDEXXA label contains no renal impairment section and specifies no renal dose adjustment)",
+    "hepatic_dose_adjustment (the ANDEXXA label contains no hepatic impairment section and specifies no hepatic dose adjustment)",
+    "pregnancy_category (the current ANDEXXA label uses the Pregnancy and Lactation Labeling Rule format and states no pregnancy category letter)",
+    "food_interactions (no food interaction is described in the label; the field is left empty)"
+  ],
+  "notes": "The table stores this agent as 'Andexanet Alfa' with brand_names ['ANDEXXA'], which matches the marketed brand. This is the current ANDEXXA prescribing information (Warnings and Precautions revised 03/2025), which added the postmarketing warning on unresponsiveness to unfractionated heparin (section 5.2). The label has no Overdosage section and no renal or hepatic impairment subsections, so those fields are null and listed under unsourced_fields rather than being inferred. The indication is approved under accelerated approval on the surrogate of anti-FXa activity, and the label states explicitly that an improvement in haemostasis has not been established - this is preserved in the indications, warnings and clinical_pearls fields. Andexanet alfa is not included in the WHO Model List of Essential Medicines (24th list, 2025) or the Kenya Essential Medicines List 2023, so no EML/KEML source is cited for this monograph."
+}

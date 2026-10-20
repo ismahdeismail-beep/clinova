@@ -1,0 +1,261 @@
+{
+  "name": "Apomorphine",
+  "existing_id": "ca2ae859-c58a-477a-9ec7-6c1f13bee597",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Apomorphine is a non-ergoline dopamine agonist. APOKYN has high in vitro binding affinity for the dopamine D4 receptor and moderate affinity for the dopamine D2, D3 and D5 and adrenergic alpha1D, alpha2B and alpha2C receptors. The precise mechanism of action as a treatment for Parkinson's disease is unknown, although it is believed to be due to stimulation of post-synaptic dopamine D2-type receptors within the caudate-putamen in the brain (FDA Apokyn (apomorphine hydrochloride) injection label, section 12.1). The same class-level description applies to ONAPGO (FDA Onapgo (apomorphine hydrochloride) injection label, section 12.1).",
+    "indications": [
+      "APOKYN (apomorphine hydrochloride injection) is indicated for the acute, intermittent treatment of hypomobility, 'off' episodes ('end-of-dose wearing off' and unpredictable 'on/off' episodes) in patients with advanced Parkinson's disease; it has been studied as an adjunct to other medications (FDA Apokyn label, sections 1 and 14).",
+      "ONAPGO (apomorphine hydrochloride) is indicated for the treatment of motor fluctuations in adults with advanced Parkinson's disease (FDA Onapgo label, section 1).",
+      "In the EU/UK, APO-go 10 mg/ml solution for injection is indicated for the treatment of motor fluctuations ('on-off' phenomena) in patients with Parkinson's disease which are not sufficiently controlled by oral anti-Parkinson medication (APO-go SmPC, section 4.1).",
+      "In the EU/UK, APO-go POD 5 mg/ml solution for infusion in cartridge is indicated in adults for the same indication, for patients who require continuous subcutaneous infusion by minipump (APO-go POD SmPC, section 4.1)."
+    ],
+    "contraindications": [
+      "Concomitant use with drugs of the 5-HT3 antagonist class, including antiemetics (e.g. ondansetron, granisetron, dolasetron, palonosetron) and alosetron: there have been reports of profound hypotension and loss of consciousness when apomorphine was administered with ondansetron (FDA Apokyn label, section 4; FDA Onapgo label, section 4).",
+      "Hypersensitivity/allergic reaction to apomorphine or to any of the excipients, including sulfite (sodium metabisulfite); angioedema or anaphylaxis may occur (FDA Apokyn label, section 4).",
+      "In the EU/UK: contraindicated in patients with respiratory depression, dementia, psychotic diseases or hepatic insufficiency, and in patients who have an 'on' response to levodopa marred by severe dyskinesia or dystonia; also contraindicated in children and adolescents under 18 years of age (APO-go SmPC, section 4.3)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions with apomorphine (incidence at least 10% greater than placebo): yawning, drowsiness/somnolence, dyskinesias, dizziness/postural hypotension, rhinorrhea, nausea and/or vomiting, hallucination/confusion, and edema/swelling of extremities (FDA Apokyn label, section 6.1).",
+      "In a 4-week placebo-controlled study in APOKYN-naive patients: yawning 40% vs 0%, dyskinesias 35% vs 11%, drowsiness or somnolence 35% vs 0%, nausea and/or vomiting 30% vs 11%, dizziness or postural hypotension 20% vs 0%, rhinorrhea 20% vs 0%, chest pain/pressure/angina 15% vs 11%, hallucination or confusion 10% vs 0%, edema/swelling of extremities 10% vs 0% (FDA Apokyn label, section 6.1, Table 1).",
+      "Injection site reactions occurred in 26% of patients in clinical studies, including bruising 16%, granuloma 4% and pruritus 2% (FDA Apokyn label, section 6.1).",
+      "Nausea and vomiting: even with concomitant trimethobenzamide, 31% and 11% of apomorphine-treated patients had nausea and vomiting respectively, and 3% and 2% discontinued for nausea and vomiting respectively; in a 12-week placebo-controlled study, trimethobenzamide reduced the incidence of nausea and vomiting over the first 4 weeks (43% vs 59%) but increased somnolence (19% vs 12%), dizziness (14% vs 8%) and falls (8% vs 1%) (FDA Apokyn label, section 5.2).",
+      "Somnolence was reported in 35% of apomorphine-treated patients versus none on placebo; hallucinations were reported in 14% of patients, and in one randomised double-blind placebo-controlled study hallucinations or confusion occurred in 10% of apomorphine patients versus 0% on placebo (FDA Apokyn label, sections 5.3 and 5.6).",
+      "Dyskinesia or worsening of dyskinesia was reported in 24% of patients, with 2% withdrawing from studies because of dyskinesias (FDA Apokyn label, section 5.7).",
+      "Approximately 2% of apomorphine-treated patients experienced syncope; 11% of patients (59/550) had orthostatic hypotension, hypotension and/or syncope, and 2% withdrew for these events; during titration the incidence of systolic orthostatic hypotension rose from 4% pre-dose to 18% post-dose (FDA Apokyn label, section 5.4).",
+      "In clinical trials 30% of patients had events that could reasonably be considered falls, and about 5% had serious falls; 4% of apomorphine-treated patients experienced angina, myocardial infarction, cardiac arrest and/or sudden death, with some angina and myocardial infarction occurring within 2 hours of dosing (FDA Apokyn label, sections 5.5 and 5.10).",
+      "Postmarketing: hemolytic anemia requiring hospitalisation, many cases with a positive direct antiglobulin (Coombs) test, suggesting immune-mediated haemolysis; severe anaemia, angina and dyspnoea have occurred with it (FDA Apokyn label, sections 5.8 and 6.2).",
+      "Elderly patients (65 years and older) had more confusion and hallucinations, more serious adverse reactions, more falls with bone and joint injuries, more cardiovascular events, and were more likely to discontinue apomorphine because of adverse reactions (FDA Apokyn label, section 8.5).",
+      "EU/UK frequency classification for APO-go: very common - hallucinations, injection site reactions (particularly with continuous use, including subcutaneous nodules, induration, erythema, tenderness and panniculitis); common - transient sedation with each dose at the start of therapy (usually resolving over the first few weeks), somnolence, dizziness/light-headedness, yawning, and nausea and vomiting particularly when treatment is first initiated, usually as a result of omission of domperidone, plus neuropsychiatric disturbances including transient mild confusion and visual hallucinations; uncommon - haemolytic anaemia and thrombocytopenia, dyskinesias during 'on' periods which can be severe and may in a few patients result in cessation of therapy, postural hypotension (usually transient), breathing difficulties, local and generalised rashes, injection site necrosis and ulceration; rare - eosinophilia and, because of the sodium metabisulfite excipient, allergic reactions including anaphylaxis and bronchospasm; not known - impulse control disorders (pathological gambling, increased libido, hypersexuality, compulsive spending or buying, binge eating and compulsive eating), aggression, agitation, sudden sleep onset episodes, syncope, headache and peripheral oedema (APO-go SmPC, section 4.8)."
+    ],
+    "dosage": {
+      "adult": "APOKYN (subcutaneous injection, 10 mg/mL): for subcutaneous use only, always expressed in mL to minimise dosing errors. The starting dose is 0.1 mL (1 mg) to 0.2 mL (2 mg); the first dose must be given under medical supervision with supine and standing blood pressure and pulse measured before and after dosing. Titrate on the basis of effectiveness and tolerance up to a maximum recommended dose of 0.6 mL (6 mg); there is no evidence that doses above 6 mg give increased effect. The average frequency of dosing in the development programme was three times per day, with limited experience above 5 times daily or with total daily doses above 2 mL (20 mg). Doses must be separated by at least 2 hours; if a single dose is ineffective for a given 'off' period, do not give a second dose for that episode. If therapy is interrupted for more than a week, restart at 0.2 mL (2 mg) and re-titrate (FDA Apokyn label, sections 2, 2.1, 2.3, 2.4 and 2.5). Premedication: because of the incidence of nausea and vomiting, treatment with trimethobenzamide 300 mg three times a day starting 3 days before the first apomorphine dose is recommended; it should only be continued as long as necessary to control nausea and vomiting and generally no longer than two months. Alternatively, consider starting at 0.1 mL (1 mg) and titrating (section 2.2). ONAPGO (subcutaneous infusion): the recommended initial continuous dosage is 1 mg/hr, titrated in 0.1 to 1 mg/hr increments, with a maximum continuous dosage of 6 mg/hr over the waking day (e.g. 16 hours); the first extra dose is 0.5 mg, titrated in 0.1 to 1 mg increments to a maximum of 2 mg, with no more than 3 extra doses per day and at least 3 hours between extra doses; the maximum recommended total daily dose is 98 mg (FDA Onapgo label, sections 2, 2.2 and 2.3). EU/UK APO-go (intermittent subcutaneous bolus): the threshold dose is established by incremental dosing, starting with 1 mg (0.1 mL) given during a hypokinetic period with the patient observed for 30 minutes, then 2 mg (0.2 mL) if there is no or inadequate response, increasing by incremental injections with at least a 40-minute interval; the usual total daily dose is 3 to 30 mg given as 1 to 10 injections, sometimes up to 12 separate injections per day, and it is recommended that the total daily dose should not exceed 100 mg with individual bolus injections not exceeding 10 mg (APO-go SmPC, section 4.2).",
+      "geriatric": "In the APOKYN clinical development programme, 239 patients were under 65 and 311 were 65 or older. Patients 65 and older were more likely to experience confusion and hallucinations, serious adverse reactions, falls with bone and joint injuries, cardiovascular events, respiratory disorders and gastrointestinal events, and were more likely to discontinue apomorphine because of adverse reactions (FDA Apokyn label, section 8.5). The EU/UK APO-go SmPC advises extra caution during initiation of therapy in elderly and/or debilitated patients (APO-go SmPC, section 4.4).",
+      "paediatric": "Safety and effectiveness of apomorphine in pediatric patients have not been established (FDA Apokyn label, section 8.4). APO-go and APO-go POD are contraindicated in children and adolescents under 18 years of age (APO-go SmPC and APO-go POD SmPC, section 4.3). The ONAPGO label states that safety and effectiveness in pediatric patients have not been established (FDA Onapgo label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "5-HT3 antagonists (ondansetron, granisetron, dolasetron, palonosetron) and alosetron: concomitant use is contraindicated because of reports of profound hypotension and loss of consciousness with apomorphine plus ondansetron (FDA Apokyn label, sections 4 and 7.1; FDA Onapgo label, section 4).",
+      "Antihypertensive medications and vasodilators: increased risk of hypotension, myocardial infarction, pneumonia, falls and injuries. In clinical studies, adverse events were more common with concomitant antihypertensives or vasodilators (n=94) than without (n=456) - hypotension 10% vs 4%, myocardial infarction 3% vs 1%, serious pneumonia 5% vs 3%, serious falls 9% vs 3%, bone and joint injuries 6% vs 2% (FDA Apokyn label, section 7.2).",
+      "Nitroglycerin: 0.4 mg sublingual nitroglycerin with apomorphine caused greater blood pressure decreases than apomorphine alone; mean largest standing systolic and diastolic decreases were 14.3 and 13.5 mm Hg, with individual decreases up to 65 and 43 mm Hg. Patients taking apomorphine should lie down before and after taking sublingual nitroglycerin (FDA Apokyn label, section 7.2).",
+      "Alcohol: high dose (0.6 g/kg) or low dose (0.3 g/kg) ethanol with apomorphine caused greater blood pressure decreases than apomorphine alone, with individual standing systolic decreases of up to 61 mm Hg and diastolic decreases up to 51 mm Hg. Patients should avoid drinking alcohol after using apomorphine (FDA Apokyn label, section 7.3).",
+      "Dopamine antagonists (neuroleptics such as phenothiazines, butyrophenones and thioxanthenes, and metoclopramide) may diminish the effectiveness of apomorphine; patients with major psychotic disorders treated with neuroleptics should receive dopamine agonists only if the potential benefits outweigh the risks (FDA Apokyn label, section 7.4).",
+      "Antiemetics with anti-dopaminergic actions (e.g. haloperidol, chlorpromazine, promethazine, prochlorperazine, metoclopramide) may worsen Parkinson's disease symptoms and should be avoided; the ability of concomitant antiemetics other than trimethobenzamide has not been studied (FDA Apokyn label, section 5.2).",
+      "Drugs that prolong the QT/QTc interval: exercise caution when prescribing apomorphine concomitantly with such drugs, because apomorphine causes dose-related QTc prolongation and torsades de pointes has been associated with QT-prolonging drugs (FDA Apokyn label, sections 5.11 and 7.5).",
+      "Trimethobenzamide: increases the incidence of somnolence, dizziness and falls in patients treated with apomorphine, so it should only be continued as long as necessary and generally not beyond two months (FDA Apokyn label, sections 2.2 and 5.2).",
+      "Carbidopa/levodopa: levodopa pharmacokinetics were unchanged when subcutaneous apomorphine and levodopa were coadministered, but the threshold levodopa concentration needed for an improved motor response was significantly reduced, increasing the duration of effect without a change in the maximal response (FDA Apokyn label, section 12.3).",
+      "EU/UK: the concomitant use of apomorphine with 5-HT3 antagonist class drugs is contraindicated, and domperidone is usually started at least two days before apomorphine, with QT-prolongation risk factors assessed before starting domperidone and apomorphine (APO-go SmPC and APO-go POD SmPC, sections 4.2, 4.3 and 4.4)."
+    ],
+    "monitoring": "Measure blood pressure and pulse in the supine and standing position before and after the initial test dose and during titration; both supine and standing blood pressure and pulse should be checked pre-dose and at 20, 40 and 60 minutes post-dose, and after 60 minutes if there is significant hypotension at 60 minutes. Patients who develop clinically significant orthostatic hypotension in response to the test dose should not be candidates for apomorphine treatment (FDA Apokyn label, section 2.3). Monitor for somnolence and falling asleep during activities of daily living, and reassess for drowsiness or sleepiness, especially since events may occur well after treatment starts (section 5.3). Monitor for hallucinations, confusion, psychotic-like behaviour, and for new or worsening mental status after starting or increasing the dose (section 5.6). Monitor for dyskinesia or exacerbation of pre-existing dyskinesia (section 5.7). If a patient develops anaemia while taking apomorphine, consider a workup for haemolytic anaemia and consider discontinuation if it occurs (section 5.8). Ask specifically about new or increased gambling, sexual, spending or other impulsive urges (section 5.9). Monitor for coronary ischaemia in patients with known cardiovascular or cerebrovascular disease and re-evaluate continued use if signs or symptoms develop (section 5.10). In the EU/UK, patients should be monitored for orthostatic hypotension especially during dose escalation, and patients at risk of torsades de pointes (for example with hypokalaemia, hypomagnesaemia, bradycardia, other QT-prolonging drugs or congenital long QT) require caution (APO-go SmPC, section 4.4). For ONAPGO, initiation and dose titration should be done under medical supervision and the prescribed dose should be expressed in mg/hr for the continuous dosage and mg for an extra dose (FDA Onapgo label, section 2.1).",
+    "patient_counselling": "Instruct patients and caregivers that the APOKYN pen is dosed in millilitres, not milligrams, and to keep records of how many doses have been given from each cartridge so that a cartridge with an inadequate remaining volume can be replaced; rotate the injection site and use proper aseptic technique (FDA Apokyn label, section 17). Explain that apomorphine is for subcutaneous injection only and must never be given intravenously because of the risk of thrombus formation and pulmonary embolism from crystallisation (section 5.1 and section 17). Warn about hypersensitivity reactions including urticaria, rash, pruritus and angioedema, which may be due to the sulfite excipient; patients with sulfite sensitivity may experience anaphylaxis or life-threatening asthmatic attacks, and any patient who has a hypersensitivity reaction should not take apomorphine again (sections 5.13 and 17). Explain that nausea and vomiting can be severe and that oral trimethobenzamide 300 mg three times per day for 3 days before starting injections has been used to minimise them, or alternatively that apomorphine may be started at a lower dose and titrated; note that apomorphine with trimethobenzamide increases the risks of somnolence, dizziness and falls (section 17). Alert patients to the sedating effects and the risk of falling asleep suddenly during activities of daily living; they should not drive or engage in other potentially dangerous activities until they have gained sufficient experience with apomorphine, and should limit alcohol intake because of possible additive effects (section 17). Advise patients that they may develop postural or orthostatic hypotension with or without symptoms such as dizziness, nausea, syncope and sweating, that this is more frequent during initial therapy or with dose increases and can occur after months of treatment, and that they should rise slowly after sitting or lying down; alcohol and nitroglycerin, and possibly other vasodilators and antihypertensives, may potentiate the hypotensive effect (section 17). Alert patients that they may have an increased risk of falling when using apomorphine (section 17). Advise patients to avoid alcohol while using apomorphine, and if taking sublingual nitroglycerin to lie down before and after and remain supine and avoid standing for at least 45 minutes after nitroglycerin (section 17). Advise patients to report any new or worsening hallucinations, confusion or unusual behaviour to their prescriber, and that patients with a major psychotic disorder should ordinarily not be treated with apomorphine because of the risk of exacerbating psychosis (section 5.6). Advise patients to tell their prescriber about all prescription, non-prescription and herbal medicines they take (FDA Onapgo label, section 17).",
+    "warnings": [
+      "For subcutaneous use only: after intravenous administration of apomorphine, serious adverse reactions including thrombus formation and pulmonary embolism due to intravenous crystallisation of apomorphine have occurred; apomorphine should not be administered intravenously (FDA Apokyn label, section 5.1; FDA Onapgo label, section 5.1).",
+      "Contraindicated with 5-HT3 antagonists (ondansetron, granisetron, dolasetron, palonosetron) and alosetron because of reports of profound hypotension and loss of consciousness (FDA Apokyn label, sections 4 and 7.1).",
+      "Nausea and vomiting, which may be severe, occur at recommended doses; trimethobenzamide reduces early nausea and vomiting but increases somnolence, dizziness and falls, so it should generally not be continued beyond two months (FDA Apokyn label, section 5.2).",
+      "Falling asleep during activities of daily living and daytime somnolence may occur; somnolence was reported in 35% of apomorphine-treated patients. If significant daytime sleepiness develops, apomorphine should ordinarily be discontinued (FDA Apokyn label, section 5.3).",
+      "Syncope, hypotension and orthostatic hypotension may occur; dopamine agonists may cause orthostatic hypotension at any time, especially during dose escalation (FDA Apokyn label, section 5.4).",
+      "Falls may occur or increase; 30% of patients had events that could reasonably be considered falls and about 5% had serious falls (FDA Apokyn label, section 5.5).",
+      "Hallucinations and psychotic-like behaviour may occur; hallucinations were reported in 14% of patients and led to discontinuation in 1%. Patients with a major psychotic disorder should ordinarily not be treated with apomorphine because of the risk of exacerbating psychosis (FDA Apokyn label, section 5.6).",
+      "Dyskinesia or exacerbation of pre-existing dyskinesia; reported in 24% of patients, with 2% withdrawing (FDA Apokyn label, section 5.7).",
+      "Haemolytic anaemia has been reported in the postmarketing setting, often with a positive direct antiglobulin test; consider a workup for haemolytic anaemia if anaemia develops and consider discontinuation if it occurs (FDA Apokyn label, section 5.8).",
+      "Impulse control and compulsive behaviours: patients may experience intense urges to gamble, increased sexual urges, and intense urges to spend money uncontrollably; consider dose reduction or stopping the medication if such urges develop (FDA Apokyn label, section 5.9).",
+      "Coronary events: 4% of apomorphine-treated patients experienced angina, myocardial infarction, cardiac arrest and/or sudden death, some within close proximity to dosing; apomorphine may exacerbate coronary and cerebral ischaemia in patients with known cardiovascular and cerebrovascular disease (FDA Apokyn label, section 5.10).",
+      "Dose-related QTc prolongation with potential for proarrhythmic effects and torsades de pointes; doses greater than 6 mg do not provide additional clinical benefit and are not recommended (FDA Apokyn label, section 5.11).",
+      "A symptom complex resembling neuroleptic malignant syndrome (elevated temperature, muscular rigidity, altered consciousness, autonomic instability) has been reported with rapid dose reduction, withdrawal of, or changes in antiparkinsonian therapy (FDA Apokyn label, section 5.12).",
+      "Hypersensitivity reactions, including urticaria, rash, pruritus and angioedema, may occur because of the apomorphine or the sulfite excipient; sulfite sensitivity is more frequent in asthmatic people (FDA Apokyn label, section 5.13).",
+      "Priapism: prolonged painful erections have been reported in 3 of 361 men treated, and severe priapism may require surgical intervention (FDA Apokyn label, section 5.15)."
+    ],
+    "precautions": [
+      "Apomorphine should be given with caution in patients with renal, pulmonary or cardiovascular disease and in persons prone to nausea and vomiting, and extra caution is recommended during initiation of therapy in elderly and/or debilitated patients (APO-go SmPC, section 4.4).",
+      "Because apomorphine may produce hypotension even when given with domperidone pretreatment, care should be exercised in patients with pre-existing cardiac disease or in patients taking vasoactive medicines such as antihypertensives, especially in patients with pre-existing postural hypotension (APO-go SmPC, section 4.4).",
+      "Since apomorphine, especially at high dose, may have the potential for QT prolongation, caution should be exercised in patients at risk for torsades de pointes arrhythmia (APO-go SmPC, section 4.4).",
+      "The initial dose and titration should be performed by a healthcare provider in a setting where medical personnel can closely monitor blood pressure and pulse; patients should be selected who can recognise the onset of their 'off' symptoms and are capable of injecting themselves or have a responsible carer able to inject for them (FDA Apokyn label, section 2.1; APO-go SmPC, section 4.2).",
+      "In the EU/UK, patients treated with apomorphine will usually need to start domperidone at least two days before initiation of apomorphine; the domperidone dose should be titrated to the lowest effective dose and discontinued as soon as possible, and QT-prolongation risk factors should be assessed before both are started (APO-go SmPC, section 4.2).",
+      "Levodopa therapy, with or without dopamine agonists, should be optimised before starting apomorphine treatment (APO-go SmPC, section 4.2).",
+      "The route of metabolism in humans is not known; potential routes include sulfation, N-demethylation, glucuronidation and oxidation, and apomorphine undergoes rapid autooxidation in vitro (FDA Apokyn label, section 12.3).",
+      "Cases of retroperitoneal fibrosis, pulmonary infiltrates, pleural effusion, pleural thickening and cardiac valvulopathy have been reported with some ergot-derived dopaminergic agents; whether non-ergot-derived agonists such as apomorphine can cause these reactions is unknown (FDA Apokyn label, section 5.14).",
+      "Retinal atrophy was detected at all subcutaneous doses tested in a 2-year carcinogenicity study in albino rats at doses below the maximum recommended human dose of 20 mg/day on a body surface area basis; the clinical significance of this finding in rats has not been established but cannot be disregarded (FDA Apokyn label, section 5.16)."
+    ],
+    "serious_adverse_reactions": [
+      "Profound hypotension and loss of consciousness when apomorphine is given with 5-HT3 antagonists such as ondansetron (FDA Apokyn label, sections 4 and 7.1).",
+      "Thrombus formation and pulmonary embolism after intravenous administration of apomorphine (FDA Apokyn label, section 5.1).",
+      "Syncope, hypotension and orthostatic hypotension (FDA Apokyn label, section 5.4).",
+      "Falls, including serious falls (FDA Apokyn label, section 5.5).",
+      "Hallucinations and psychotic-like behaviour (FDA Apokyn label, section 5.6).",
+      "Dyskinesia (FDA Apokyn label, section 5.7).",
+      "Haemolytic anaemia requiring hospitalisation (FDA Apokyn label, section 5.8).",
+      "Coronary events including angina, myocardial infarction, cardiac arrest and sudden death (FDA Apokyn label, section 5.10).",
+      "QTc prolongation with potential for torsades de pointes and sudden death (FDA Apokyn label, section 5.11).",
+      "Neuroleptic malignant syndrome-like syndrome on rapid dose reduction or withdrawal (FDA Apokyn label, section 5.12).",
+      "Anaphylaxis and other hypersensitivity reactions, including sulfite-related asthmatic episodes (FDA Apokyn label, sections 4 and 5.13).",
+      "Priapism (FDA Apokyn label, section 5.15)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA apomorphine labelling. The relevant dietary caution is alcohol: concomitant high dose (0.6 g/kg) or low dose (0.3 g/kg) ethanol with apomorphine caused greater decreases in blood pressure than apomorphine alone, with individual standing systolic and diastolic decreases of up to 61 and 51 mm Hg, so patients should avoid alcohol after using apomorphine (FDA Apokyn label, section 7.3 and section 17)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate data on the developmental risk associated with the use of apomorphine in pregnant women. In animal reproduction studies, apomorphine had adverse developmental effects in rats (increased neonatal deaths) and rabbits (increased incidence of malformation) when administered during pregnancy at clinically relevant doses, with associated maternal toxicity; no adverse developmental effects were observed in rats during organogenesis at doses up to 1.5 times the maximum recommended human dose of 20 mg/day on a body surface area basis, whereas in rabbits apomorphine produced malformations of the heart and/or great vessels at mid and high doses. The no-effect dose for adverse developmental effects is less than the maximum recommended human dose on a mg/m2 basis. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Apokyn label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of apomorphine in human milk, the effects of apomorphine on the breastfed infant, or the effects on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for apomorphine and any potential adverse effects on the breastfed infant from apomorphine or from the underlying maternal condition (FDA Apokyn label, section 8.2).",
+    "overdose": "A 62-year-old man accidentally injected 25 mg of apomorphine subcutaneously; after 3 minutes he felt nauseated and lost consciousness for 20 minutes, then was alert with a heart rate of 40/minute and a supine blood pressure of 90/50, and recovered completely within an hour (FDA Apokyn label, section 10). The EU/UK APO-go SmPC states that there is little clinical experience of overdose with apomorphine by this route of administration and that symptoms of overdose may be treated empirically: excessive emesis may be treated with domperidone, respiratory depression with naloxone, hypotension with appropriate measures such as raising the foot of the bed, and bradycardia with atropine. The total daily dose of APO-go should not exceed 100 mg and individual bolus injections should not exceed 10 mg (APO-go SmPC, sections 4.2 and 4.9).",
+    "pharmacokinetics": "Absorption: apomorphine hydrochloride is a lipophilic compound that is rapidly absorbed after subcutaneous administration into the abdominal wall, with time to peak concentration ranging from 10 to 60 minutes, and bioavailability after subcutaneous administration appears equal to that of intravenous administration; apomorphine exhibits linear pharmacokinetics over a dose range of 2 to 8 mg after a single subcutaneous injection. Distribution: the plasma-to-whole blood apomorphine concentration ratio is 1; mean apparent volume of distribution 218 L (range 123 to 404 L); maximum CSF concentrations are less than 10% of maximum plasma concentrations and occur 10 to 20 minutes later. Metabolism and elimination: the route of metabolism in humans is not known, with potential routes including sulfation, N-demethylation, glucuronidation and oxidation, and apomorphine undergoes rapid autooxidation in vitro; mean apparent clearance 223 L/hr (range 125 to 401 L/hr) and mean terminal elimination half-life about 40 minutes (range about 30 to 60 minutes) (FDA Apokyn label, section 12.3). Clearance does not appear to be influenced by age, gender, weight, duration of Parkinson's disease, levodopa dose or duration of therapy (section 12.3). In moderate renal impairment AUC0-infinity and Cmax increased by approximately 16% and 50% respectively, and in moderate hepatic impairment by approximately 10% and 25% respectively; studies in severe renal and severe hepatic impairment have not been conducted (section 12.3).",
+    "clinical_pearls": [
+      "Apomorphine is a non-ergoline dopamine agonist used as a rescue or rescue-and-maintenance therapy for 'off' episodes in advanced Parkinson's disease; it is never used alone in practice but alongside levodopa, and in the EU/UK usually with domperidone (FDA Apokyn label, section 1; APO-go SmPC, sections 4.2 and 4.3).",
+      "Apomorphine must never be given intravenously: intravenous crystallisation has caused thrombus formation and pulmonary embolism (FDA Apokyn label, section 5.1).",
+      "The 5-HT3 antagonist interaction is a hard contraindication, not a caution - ondansetron with apomorphine has produced profound hypotension and loss of consciousness (FDA Apokyn label, sections 4 and 7.1).",
+      "Apomorphine is dosed in millilitres on the APOKYN pen, and the label warns specifically about dosing errors and cartridges with insufficient remaining drug (FDA Apokyn label, sections 2.1 and 17).",
+      "Nausea and vomiting are near-universal without premedication, but trimethobenzamide premedication itself increases somnolence, dizziness and falls, so the label caps it at about two months (FDA Apokyn label, sections 2.2 and 5.2).",
+      "Blood pressure and pulse must be recorded supine and standing before and after the test dose and during titration, and patients who develop clinically significant orthostatic hypotension on the test dose should not be treated (FDA Apokyn label, section 2.3).",
+      "Apomorphine causes dose-related QTc prolongation (10 msec at therapeutic exposures in a thorough QT study), so review other QT-prolonging medicines and correct potassium and magnesium before dosing (FDA Apokyn label, sections 5.11 and 12.2).",
+      "Route matters: the US products are APOKYN (intermittent subcutaneous injection) and ONAPGO (continuous subcutaneous infusion with extra bolus doses); the EU/UK products are APO-go (intermittent subcutaneous pen) and APO-go POD (continuous subcutaneous infusion by minipump). ONAPGO is explicitly not substitutable for apomorphine products intended for intermittent use (FDA Onapgo label, section 2.3).",
+      "Apomorphine is not listed in the WHO Model List of Essential Medicines 23rd List (2023) or in the Kenya Essential Medicines List 2023; the KEML 2023 antiparkinsonism section (section 10) lists benzhexol, biperiden, levodopa plus carbidopa and pramipexole only."
+    ],
+    "brand_names": [
+      "Apokyn (apomorphine hydrochloride) injection 30 mg/3 mL (10 mg/mL), MDD US Operations",
+      "Onapgo (apomorphine hydrochloride) injection, MDD US Operations / Supernus",
+      "APO-go 10 mg/ml solution for injection (EU/UK)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "In patients with mild and moderate renal impairment the test dose and starting dose of APOKYN should be reduced to 0.1 mL (1 mg) because concentration and exposure are increased; in a study, AUC0-infinity and Cmax were increased by approximately 16% and 50% respectively in moderately impaired subjects. Studies in subjects with severe renal impairment have not been conducted (FDA Apokyn label, sections 2.4, 8.6 and 12.3). For ONAPGO, in patients with mild or moderate renal impairment the recommended initial extra dose is 0.5 mg to 1 mg and should not exceed 1 mg (FDA Onapgo label, section 2.5). The EU/UK SmPC advises caution in patients with renal disease (APO-go SmPC, section 4.4).",
+    "hepatic_dose_adjustment": "Caution should be exercised when administering apomorphine to patients with mild and moderate hepatic impairment because of increased Cmax and AUC, and such patients should be closely monitored; studies in subjects with severe hepatic impairment have not been conducted (FDA Apokyn label, sections 8.7 and 12.3). In the EU/UK, apomorphine is contraindicated in patients with hepatic insufficiency (APO-go SmPC, section 4.3).",
+    "administration_instructions": "APOKYN is for subcutaneous administration only and only by a multiple-dose pen injector with supplied cartridges; the initial dose and titration must be performed by a healthcare provider, with blood pressure and pulse measured supine and standing before and after dosing. Visually inspect the solution through the viewing window for particulate matter and discoloration before administration and do not use it if it is discoloured, cloudy or contains foreign particles; rotate the injection site and use proper aseptic technique (FDA Apokyn label, section 2.1). ONAPGO is for subcutaneous use by infusion only, using the ONAPGO pump, and patients or caregivers must be trained in the delivery system; the prescribed dose should be expressed in mg/hr for the continuous dosage and mg for an extra dose (FDA Onapgo label, section 2.1). In the EU/UK, APO-go is for subcutaneous use by intermittent bolus injection and must not be used via the intravenous route; do not use the solution if it has turned green, and inspect it visually before use, using only clear, colourless, particle-free solution (APO-go SmPC, section 4.2). APO-go POD is a pre-diluted solution for continuous subcutaneous infusion by minipump, run for waking hours only, with the infusion site changed every 24 hours and a new infusion line and site used every 24 hours, and may be supplemented with intermittent bolus boosts not exceeding the 100 mg maximum daily dose (APO-go POD SmPC, section 4.2). Store APOKYN injection at 25 degrees C (77 degrees F) with excursions permitted between 15 and 30 degrees C (FDA Apokyn label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Apokyn (apomorphine hydrochloride) injection, MDD US Operations, section 12.1; FDA Onapgo (apomorphine hydrochloride) injection label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Apokyn label, sections 1 and 14; FDA Onapgo label, section 1; APO-go SmPC (emc) section 4.1; APO-go POD SmPC (emc) section 4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Apokyn label, section 4; FDA Onapgo label, section 4; APO-go SmPC (emc) section 4.3; APO-go POD SmPC (emc) section 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Apokyn label, sections 5.2 to 5.10, 5.13, 5.15, 6.1 (Table 1), 6.2 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Apokyn label, sections 2, 2.1 to 2.5; FDA Onapgo label, sections 2, 2.2 and 2.3; APO-go SmPC (emc) section 4.2; APO-go POD SmPC (emc) section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Apokyn label, sections 4, 5.2, 5.11, 7.1 to 7.5 and 12.3; APO-go SmPC (emc) sections 4.2, 4.3 and 4.4; APO-go POD SmPC (emc) sections 4.2 and 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Apokyn label, sections 2.3, 5.3 to 5.10 and 12.2; FDA Onapgo label, section 2.1; APO-go SmPC (emc) section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Apokyn label, section 17 and Patient Information; FDA Onapgo label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Apokyn label, sections 4, 5.1 to 5.15; FDA Onapgo label, sections 4 and 5.1 to 5.15",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Apokyn label, sections 2.1, 5.14, 5.16 and 12.3; APO-go SmPC (emc) section 4.2 and 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Apokyn label, sections 4, 5.1, 5.4 to 5.15",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Apokyn label, section 7.3 and section 17 (alcohol; no food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Apokyn label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Apokyn label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Apokyn label, section 10; APO-go SmPC (emc) sections 4.2 and 4.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Apokyn label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Apokyn label, sections 1, 2.1 to 2.3, 5.1, 5.2, 5.11, 12.2 and 12.3; FDA Onapgo label, sections 2.3 and 2.5; Kenya Essential Medicines List 2023, section 10 (ANTIPARKINSONISM MEDICINES)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Apokyn and Onapgo (apomorphine hydrochloride) listed on DailyMed as MDD US Operations products; APO-go 10 mg/ml solution for injection published on emc (medicines.org.uk) by Britannia Pharmaceuticals",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Apokyn or Onapgo labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Apokyn label, sections 2.4, 8.6 and 12.3; FDA Onapgo label, section 2.5; APO-go SmPC (emc) section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Apokyn label, sections 8.7 and 12.3; APO-go SmPC (emc) section 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Apokyn label, sections 2.1 and 16; FDA Onapgo label, section 2.1; APO-go SmPC (emc) section 4.2; APO-go POD SmPC (emc) section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3235535d-9ef9-4657-8b2a-176a807d091c"
+    },
+    {
+      "field": "indications",
+      "ref": "APO-go 10 mg/ml Solution for Injection, Summary of Product Characteristics (emc, medicines.org.uk), Britannia Pharmaceuticals, section 4.1",
+      "url": "https://www.medicines.org.uk/emc/product/2232/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "APO-go 10 mg/ml Solution for Injection, Summary of Product Characteristics (emc, medicines.org.uk), section 4.3",
+      "url": "https://www.medicines.org.uk/emc/product/2232/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "APO-go 10 mg/ml Solution for Injection, Summary of Product Characteristics (emc, medicines.org.uk), section 4.2",
+      "url": "https://www.medicines.org.uk/emc/product/2232/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "APO-go POD 5 mg/ml solution for infusion in cartridge, Summary of Product Characteristics (emc, medicines.org.uk), Britannia Pharmaceuticals, sections 4.1, 4.2 and 4.3",
+      "url": "https://www.medicines.org.uk/emc/product/13993/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients have not been established and the EU/UK products are contraindicated under 18 years)",
+    "pregnancy_category (the current FDA apomorphine labels use the Pregnancy and Lactation Labeling Rule risk summary and do not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Apomorphine' with drug_class 'Central nervous system agent' and brand name 'GUNA-REFLUX'. The recorded brand is wrong: GUNA-REFLUX is a homeopathic solution/drops containing apomorphine hydrochloride among many other ingredients, and is not a therapeutic apomorphine product. The correct brands for apomorphine are APOKYN (subcutaneous injection) and ONAPGO (subcutaneous infusion) in the US, and APO-go / APO-go POD in the EU/UK; the brand_names field has been corrected accordingly. This monograph covers the class of apomorphine products used in Parkinson's disease: the US subcutaneous injection (APOKYN), the US subcutaneous infusion (ONAPGO) and the EU/UK subcutaneous pen and minipump infusion (APO-go and APO-go POD). Route and device matter clinically and are set out per product rather than merged. Apomorphine is a non-ergoline dopamine agonist; it is also used in some other territories for erectile dysfunction and for priapism reversal, but no authoritative source for those indications was retrieved, so they are not claimed here. Kenya context: apomorphine is not listed in the WHO Model List of Essential Medicines 23rd List (2023) nor in the Kenya Essential Medicines List 2023, whose antiparkinsonism section (10) lists benzhexol, biperiden, levodopa plus carbidopa and pramipexole only. No FDA letter pregnancy category is stated, so pregnancy_category is null. There is no boxed warning for apomorphine."
+}

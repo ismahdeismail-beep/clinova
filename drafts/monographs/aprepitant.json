@@ -1,0 +1,220 @@
+{
+  "name": "Aprepitant",
+  "existing_id": "ea23e072-9fd9-406c-b39c-f4c1edf1e78e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aprepitant is a selective high-affinity antagonist of human substance P/neurokinin 1 (NK1) receptors. It has little or no affinity for serotonin (5-HT3), dopamine and corticosteroid receptors, the targets of existing chemotherapy-induced nausea and vomiting (CINV) therapies. Aprepitant has been shown in animal models to inhibit emesis induced by cytotoxic chemotherapeutic agents such as cisplatin via central actions, and animal and human positron emission tomography studies have shown that it crosses the blood-brain barrier and occupies brain NK1 receptors. Animal and human studies show that aprepitant augments the antiemetic activity of the 5-HT3-receptor antagonist ondansetron and the corticosteroid dexamethasone, and inhibits both the acute and delayed phases of cisplatin-induced emesis (FDA Emend (aprepitant) capsules and oral suspension label, section 12.1).",
+    "indications": [
+      "EMEND for oral suspension, in combination with other antiemetic agents, for the prevention of acute and delayed nausea and vomiting associated with initial and repeat courses of highly emetogenic cancer chemotherapy (HEC) including high-dose cisplatin, and of nausea and vomiting associated with initial and repeat courses of moderately emetogenic cancer chemotherapy (MEC), in patients 6 months of age and older (FDA Emend label, section 1).",
+      "EMEND capsules, in combination with other antiemetic agents, for the same HEC and MEC indications in patients 12 years of age and older (FDA Emend label, section 1).",
+      "WHO Model List of Essential Medicines 23rd List (2023), section 17.2 (Complementary list): aprepitant, capsule 80 mg, 125 mg and 165 mg, and powder for oral suspension 125 mg in a sachet (WHO EML 23rd List, 2023)."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to any component of the product; hypersensitivity reactions including anaphylactic reactions have been reported (FDA Emend label, section 4).",
+      "Concurrent use with pimozide: inhibition of CYP3A4 by aprepitant could result in elevated plasma concentrations of pimozide, a CYP3A4 substrate, potentially causing serious or life-threatening reactions such as QT prolongation, a known adverse reaction of pimozide (FDA Emend label, section 4)."
+    ],
+    "side_effects": [
+      "Most common adverse reactions in adults (reported in 3% or more of patients and at greater incidence than standard therapy in pooled HEC and MEC studies): fatigue 13% vs 12%, diarrhea 9% vs 8%, asthenia 7% vs 6%, dyspepsia 7% vs 5%, abdominal pain 6% vs 5%, hiccups 5% vs 3%, white blood cell count decreased 4% vs 3%, dehydration 3% vs 2%, alanine aminotransferase increased 3% vs 2% (FDA Emend label, section 6.1, Table 5).",
+      "Less common adult adverse reactions (more than 0.5% and at greater incidence than standard therapy): oral candidiasis, pharyngitis, anemia, febrile neutropenia, neutropenia, thrombocytopenia, decreased appetite, hypokalaemia, anxiety, dizziness, dysgeusia, peripheral neuropathy, palpitations, flushing, hot flush, cough, dyspnea, oropharyngeal pain, dry mouth, eructation, flatulence, gastritis, gastroesophageal reflux disease, nausea, vomiting, alopecia, hyperhidrosis, rash, musculoskeletal pain, peripheral oedema, malaise, aspartate aminotransferase increased, blood alkaline phosphatase increased, blood sodium decreased, blood urea increased, proteinuria and weight decreased (FDA Emend label, section 6.1, Table 6).",
+      "Most common adverse reactions in pediatric patients aged 6 months to 17 years (3% or more and at greater incidence than control): neutropenia 13% vs 11%, headache 9% vs 5%, diarrhea 6% vs 5%, decreased appetite 5% vs 4%, cough 5% vs 3%, fatigue 5% vs 2%, hemoglobin decreased 5% vs 4%, dizziness 5% vs 1%, hiccups 4% vs 1% (FDA Emend label, section 6.1, Table 7).",
+      "Stevens-Johnson syndrome was reported as a serious adverse reaction in a patient receiving the EMEND regimen with cancer chemotherapy (FDA Emend label, section 6.1).",
+      "Postmarketing: pruritus, rash, urticaria, Stevens-Johnson syndrome/toxic epidermal necrolysis, hypersensitivity reactions including anaphylactic reactions, and ifosfamide-induced neurotoxicity reported after EMEND and ifosfamide coadministration (FDA Emend label, section 6.2).",
+      "Two of the patients treated with ifosfamide in the aprepitant arm of a paediatric study developed behavioural changes (agitation 1; abnormal behaviour 1), whereas no control-arm patient developed behavioural changes; aprepitant has the potential for increasing ifosfamide-mediated neurotoxicity through induction of CYP3A4 (FDA Emend label, section 6.1)."
+    ],
+    "dosage": {
+      "adult": "Adults and pediatric patients 12 years and older: EMEND capsules 125 mg orally on Day 1 and 80 mg orally on Days 2 and 3, administered 1 hour prior to chemotherapy on Days 1, 2 and 3; if no chemotherapy is given on Days 2 and 3, administer in the morning (FDA Emend label, sections 2 and 2.1). Used in combination with a 5-HT3 antagonist and, for HEC, dexamethasone: for HEC, dexamethasone 12 mg orally on Day 1 and 8 mg orally on Days 2 to 4, given 30 minutes prior to chemotherapy on Day 1 and in the morning on Days 2 to 4; for MEC, dexamethasone 12 mg orally on Day 1 only; when a corticosteroid is coadministered, reduce the recommended corticosteroid dose by 50% on Days 1 to 4 to account for the aprepitant interaction (section 2.1, Tables 1 and 2). For adults who cannot swallow capsules, EMEND for oral suspension is dosed 3 mg/kg on Day 1 (maximum 125 mg) and 2 mg/kg on Days 2 and 3 (maximum 80 mg) (section 2.1, Table 3). Overdose: one patient who ingested 1,440 mg (about 11 times the maximum recommended single dose) experienced drowsiness and headache (section 10).",
+      "geriatric": "Of the 544 adult cancer patients treated with EMEND in CINV clinical studies, 31% were aged 65 and over and 5% were aged 75 and over. Other reported clinical experience has not identified differences in responses between elderly and younger patients. In general, use caution when dosing elderly patients as they have a greater frequency of decreased hepatic, renal or cardiac function and concomitant disease or other drug therapy (FDA Emend label, section 8.5). Pharmacokinetically, aprepitant AUC0-24hr was 21% higher on Day 1 and 36% higher on Day 5 in the elderly compared with younger adults, with Cmax 10% and 24% higher respectively; these differences are not considered clinically meaningful (section 12.3).",
+      "paediatric": "Safety and effectiveness have been established for EMEND for oral suspension in patients 6 months of age and older and for EMEND capsules in patients 12 years of age and older, for the prevention of acute and delayed nausea and vomiting associated with HEC (including high-dose cisplatin) and MEC, supported by 302 pediatric patients in a randomized, double-blind, active-comparator-controlled trial (207 aged 6 months to under 12 years; 95 aged 12 to 17 years) (FDA Emend label, section 8.4). Pediatric dosing of EMEND for oral suspension in patients 6 months to under 12 years: 3 mg/kg orally on Day 1 (maximum 125 mg) and 2 mg/kg orally on Days 2 and 3 (maximum 80 mg); dosing in pediatric patients less than 6 kg is not recommended (section 2.1, Table 3). Safety and effectiveness for the prevention of nausea and vomiting associated with HEC or MEC have not been established in patients less than 6 months (section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Pimozide: concomitant use is contraindicated because inhibition of CYP3A4 by aprepitant could result in elevated pimozide concentrations and potentially serious or life-threatening reactions such as QT prolongation (FDA Emend label, sections 4 and 7.1).",
+      "Dexamethasone: increased dexamethasone exposure; reduce the dose of oral dexamethasone by approximately 50% (FDA Emend label, section 7.1).",
+      "Methylprednisolone: increased exposure; reduce the dose of intravenous methylprednisolone by approximately 25% and oral methylprednisolone by approximately 50% (FDA Emend label, section 7.1).",
+      "Benzodiazepines metabolised via CYP3A4 (e.g. midazolam, alprazolam, triazolam): increased exposure may increase the risk of adverse reactions; monitor and, depending on the clinical situation and available monitoring, reduce the dose of intravenous midazolam (FDA Emend label, section 7.1).",
+      "Chemotherapeutic agents metabolised by CYP3A4: increased exposure may increase the risk of adverse reactions. For vinblastine, vincristine or ifosfamide and other chemotherapeutic agents, monitor for chemotherapeutic-related adverse reactions; for etoposide, vinorelbine, paclitaxel and docetaxel, no dosage adjustment is needed (FDA Emend label, section 7.1).",
+      "Hormonal contraceptives (birth control pills, skin patches, implants and certain IUDs): hormonal exposure is decreased during administration of and for 28 days after the last dose of EMEND; use effective alternative or back-up non-hormonal methods during treatment and for 1 month after the last dose (FDA Emend label, sections 5.3, 7.1 and 8.3).",
+      "Warfarin (CYP2C9 substrate): decreased warfarin exposure and decreased INR/prothrombin time; in patients on chronic warfarin therapy monitor the INR over the 2-week period, particularly at 7 to 10 days, after starting the 3-day EMEND regimen with each chemotherapy cycle (FDA Emend label, sections 5.2 and 7.1).",
+      "5-HT3 antagonists (ondansetron, granisetron, dolasetron): no change in exposure and no dosage adjustment needed (FDA Emend label, section 7.1).",
+      "Moderate to strong CYP3A4 inhibitors (diltiazem; ketoconazole, itraconazole, nefazodone, troleandomycin, clarithromycin, ritonavir, nelfinavir): significantly increased aprepitant exposure may increase the risk of adverse reactions; avoid concomitant use (FDA Emend label, sections 5.1 and 7.2).",
+      "Strong CYP3A4 inducers (rifampin, carbamazepine, phenytoin): substantially decreased aprepitant exposure may decrease efficacy; avoid concomitant use (FDA Emend label, sections 5.1 and 7.2)."
+    ],
+    "monitoring": "Aprepitant requires no routine laboratory monitoring of its own. In patients on chronic warfarin therapy, monitor the prothrombin time (INR) over the 2-week period, particularly at 7 to 10 days, following initiation of the 3-day EMEND regimen with each chemotherapy cycle (FDA Emend label, sections 5.2 and 7.1). Assess adherence to the contraceptive back-up requirement during treatment and for 1 month after the last dose (sections 5.3 and 8.3). Monitor closely for adverse reactions in patients with severe hepatic impairment (Child-Pugh score above 9), for whom there are no clinical or pharmacokinetic data (section 8.7). Use caution in elderly patients, who more frequently have decreased hepatic, renal or cardiac function and concomitant disease or other drug therapy (section 8.5). In paediatric patients treated with ifosfamide, monitor for behavioural changes and for ifosfamide-mediated neurotoxicity, which may be increased by aprepitant through CYP3A4 induction (section 6.1).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Patient Information) (FDA Emend label, section 17). Tell patients that hypersensitivity reactions, including anaphylaxis, have been reported; they should stop taking EMEND and seek immediate medical attention for hives, rash and itching, skin peeling or sores, or difficulty in breathing or swallowing (section 17). Advise patients to discuss all medicines they take, including prescription, non-prescription and herbal products (section 17). Instruct patients on chronic warfarin therapy to follow their healthcare provider's instructions for blood draws to monitor INR during the 2-week period, particularly at 7 to 10 days, after starting the 3-day regimen with each chemotherapy cycle (section 17). Tell patients that EMEND may reduce the efficacy of hormonal contraceptives, and instruct them to use effective alternative or back-up non-hormonal methods such as condoms and spermicides during treatment and for 1 month after the last dose (sections 5.3 and 17). Take EMEND exactly as prescribed, swallow capsules whole, and take it with or without food; it is taken as 3 doses over 3 days starting on the day of chemotherapy and the following 2 days, 1 hour before chemotherapy, and in the morning if no chemotherapy is given on Days 2 and 3 (section 17 and Patient Information).",
+    "warnings": [
+      "Clinically significant CYP3A4 drug interactions: aprepitant is a CYP3A4 substrate, a weak-to-moderate (dose-dependent) inhibitor and an inducer. Use with other CYP3A4 substrates may increase the plasma concentration of the concomitant drug; pimozide coadministration is contraindicated; use with strong or moderate CYP3A4 inhibitors may increase aprepitant concentrations; use with strong CYP3A4 inducers may reduce aprepitant concentrations and decrease efficacy (FDA Emend label, section 5.1).",
+      "Decrease in INR with concomitant warfarin: coadministration with warfarin may result in a clinically significant decrease in INR; monitor the INR for 2 weeks, particularly at 7 to 10 days, after starting the 3-day regimen with each chemotherapy cycle (FDA Emend label, section 5.2).",
+      "Risk of reduced efficacy of hormonal contraceptives: contraceptive efficacy may be reduced during administration of and for 28 days following the last dose of EMEND; use an effective alternative or back-up method (FDA Emend label, section 5.3).",
+      "EMEND has not been studied for the treatment of established nausea and vomiting, and chronic continuous administration is not recommended because it has not been studied and the drug interaction profile may change during chronic continuous use (FDA Emend label, section 1, Limitations of Use).",
+      "Angioedema and urticaria have been reported in adults who received a non-recommended dosage of EMEND in non-CINV studies; EMEND is only approved in the CINV population (FDA Emend label, section 6.1).",
+      "Ifosfamide-mediated neurotoxicity may be increased; behavioural changes were observed in paediatric patients receiving ifosfamide with aprepitant (FDA Emend label, sections 6.1 and 6.2)."
+    ],
+    "precautions": [
+      "EMEND is only indicated in combination with other antiemetic agents (a 5-HT3 antagonist and, for HEC, dexamethasone); it is not a stand-alone antiemetic (FDA Emend label, sections 1 and 2.1).",
+      "Reduce the dose of concomitant corticosteroids (dexamethasone, methylprednisolone) by approximately 50% orally because of the aprepitant-mediate increase in corticosteroid exposure (FDA Emend label, sections 2.1 and 7.1).",
+      "EMEND for oral suspension must be prepared by a healthcare provider by suspending the contents of one 125 mg pouch in 4.6 mL of water to a final concentration of 25 mg/mL; the filled oral dosing dispenser may be refrigerated (2 degrees C to 8 degrees C) for up to 72 hours before use, and the mixture may be kept at room temperature for up to 3 hours; discard any dose remaining after 72 hours (FDA Emend label, sections 2.2 and 2.3).",
+      "Use caution when dosing elderly patients because of a greater frequency of decreased hepatic, renal or cardiac function and concomitant disease or other drug therapy (FDA Emend label, section 8.5).",
+      "Additional monitoring for adverse reactions may be warranted in patients with severe hepatic impairment (Child-Pugh score greater than 9) (FDA Emend label, section 8.7).",
+      "Aprepitant crosses the placenta in rats and rabbits, and juvenile rat studies showed slight changes in the onset of sexual maturation with no effects on mating, fertility, embryonic-fetal survival or reproductive organ histology (FDA Emend label, sections 8.1 and 8.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity reactions, including anaphylactic reactions (FDA Emend label, sections 4 and 6.2).",
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA Emend label, sections 6.1 and 6.2).",
+      "Clinically significant CYP3A4-mediated drug interactions, including potentially life-threatening pimozide toxicity with QT prolongation (FDA Emend label, sections 4 and 5.1).",
+      "Ifosfamide-induced neurotoxicity when aprepitant is coadministered with ifosfamide (FDA Emend label, section 6.2).",
+      "Clinically significant decrease in INR in patients on chronic warfarin (FDA Emend label, sections 5.2 and 7.1).",
+      "Angioedema and urticaria reported with non-recommended dosages in non-CINV studies (FDA Emend label, section 6.1)."
+    ],
+    "food_interactions": [
+      "No clinically meaningful food interaction is described in the FDA Emend labelling: EMEND capsules and oral suspension can be administered with or without food, and administration of the 125 mg capsule with a standard high-fat breakfast had no clinically meaningful effect on aprepitant bioavailability (FDA Emend label, sections 2.3 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are insufficient data on the use of EMEND in pregnant women to inform a drug-associated risk. In animal reproduction studies, no adverse developmental effects were observed in rats or rabbits exposed during the period of organogenesis to systemic drug levels approximately 1.5 times the adult human exposure at the 125 mg/80 mg/80 mg regimen; aprepitant crosses the placenta in rats and rabbits. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Emend label, section 8.1).",
+    "lactation_guidance": "Lactation studies have not been conducted to assess the presence of aprepitant in human milk, the effects on the breastfed infant, or the effects on milk production. Aprepitant is present in rat milk. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for EMEND and any potential adverse effects on the breastfed infant from EMEND or from the underlying maternal condition (FDA Emend label, section 8.2).",
+    "overdose": "No specific information is available on the treatment of overdosage. Drowsiness and headache were reported in one patient who ingested 1,440 mg of EMEND (approximately 11 times the maximum recommended single dose). In the event of overdose, EMEND should be discontinued and general supportive treatment and monitoring provided; because of the antiemetic activity of EMEND, drug-induced emesis may not be effective in cases of EMEND overdosage. Aprepitant is not removed by hemodialysis (FDA Emend label, section 10).",
+    "pharmacokinetics": "Absorption: after oral administration of 125 mg on Day 1 and 80 mg once daily on Days 2 and 3, AUC0-24hr was approximately 19.6 mcg.hr/mL on Day 1 and 21.2 mcg.hr/mL on Day 3, with Cmax 1.6 and 1.4 mcg/mL reached in approximately 4 hours on Days 1 and 3 respectively; mean absolute oral bioavailability is approximately 60% to 65% over the 80 to 125 mg dose range, and pharmacokinetics are non-linear across the clinical dose range, with AUC0-infinity 26% greater than dose proportional between 80 mg and 125 mg single doses in the fed state. Distribution: aprepitant is more than 95% bound to plasma proteins, mean apparent volume of distribution at steady state about 70 L, and it crosses the blood brain barrier. Metabolism: extensively metabolised, primarily by CYP3A4 with minor metabolism by CYP1A2 and CYP2C19; no metabolism by CYP2D6, CYP2C9 or CYP2E1 was detected; seven weakly active metabolites have been identified. Excretion: after a single intravenous 100 mg dose of radiolabelled aprepitant prodrug to healthy subjects, 57% of radioactivity was recovered in urine and 45% in faeces; aprepitant is eliminated primarily by metabolism and is not renally excreted; apparent plasma clearance ranged from approximately 62 to 90 mL/min and the apparent terminal half-life from approximately 9 to 13 hours (FDA Emend label, section 12.3).",
+    "clinical_pearls": [
+      "Aprepitant is an NK1 receptor antagonist used only in combination with a 5-HT3 antagonist and, for highly emetogenic regimens, dexamethasone; it is never used alone (FDA Emend label, sections 1 and 2.1).",
+      "Aprepitant induces CYP3A4 and also inhibits it, so the coadministered corticosteroid dose must be reduced by about 50% orally - a frequent source of under-dosed dexamethasone (FDA Emend label, sections 2.1 and 7.1).",
+      "The 3-day aprepitant course covers both the acute and delayed phases of CINV, which is why it is given on Days 1 to 3 rather than on the day of chemotherapy alone (FDA Emend label, section 12.1).",
+      "Because aprepitant lowers INR in patients on warfarin, INR must be checked 7 to 10 days after starting each cycle (FDA Emend label, section 5.2).",
+      "Contraceptive efficacy is reduced during treatment and for 28 days afterwards, so a non-hormonal back-up method is required for 1 month after the last dose (FDA Emend label, section 5.3).",
+      "Aprepitant is the oral capsule and oral suspension; the intravenous prodrug fosaprepitant is a separate medicine, and the Kenya Essential Medicines List 2023 lists fosaprepitant 150 mg injection at level of use 5 in section 19.2.3 rather than oral aprepitant (FDA Emend label, section 3; KEML 2023, section 19.2.3).",
+      "WHO Model List of Essential Medicines 23rd List (2023) lists aprepitant on the Complementary List (section 17.2) as capsule 80 mg, 125 mg and 165 mg, and powder for oral suspension 125 mg in a sachet - the 165 mg strength is for the single-day 2-day regimen used with chemotherapy on Days 1 and 2 only (WHO EML 23rd List, 2023)."
+    ],
+    "brand_names": ["Emend (aprepitant) capsules and oral suspension, Merck Sharp & Dohme"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is necessary for patients with any degree of renal impairment, or for patients with end-stage renal disease undergoing haemodialysis; the pharmacokinetics of aprepitant in patients with severe renal impairment and in those with ESRD requiring haemodialysis were similar to those of healthy subjects (FDA Emend label, section 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary in patients with mild to moderate hepatic impairment (Child-Pugh score 5 to 9), whose pharmacokinetics were similar to those of healthy subjects. There are no clinical or pharmacokinetic data in patients with severe hepatic impairment (Child-Pugh score greater than 9), so additional monitoring for adverse reactions may be warranted (FDA Emend label, section 8.7).",
+    "administration_instructions": "Oral administration. EMEND capsules are taken with or without food and must be swallowed whole. For adults and pediatric patients 12 years and older: 125 mg on Day 1 and 80 mg on Days 2 and 3, taken 1 hour before chemotherapy; if no chemotherapy is given on Days 2 or 3, take the dose in the morning (FDA Emend label, sections 2, 2.1 and 2.3). For patients who cannot swallow capsules, EMEND for oral suspension is prepared by a healthcare provider: the contents of one 125 mg pouch are suspended in 4.6 mL of water to a final concentration of 25 mg/mL, mixed by swirling 20 times and inverting the cup 5 times, and the prescribed dose is drawn up with the supplied 1 mL or 5 mL oral dosing dispenser. The filled dispenser may be stored in the refrigerator (2 degrees C to 8 degrees C) for up to 72 hours before use; the dose may be kept at room temperature for up to 3 hours before administration, and any dose remaining after 72 hours must be discarded (FDA Emend label, sections 2.2 and 2.3). Store capsules at 20 to 25 degrees C (68 to 77 degrees F); store unopened suspension pouches at 20 to 25 degrees C with excursions permitted between 15 and 30 degrees C, in the original container, and do not open the pouch until ready to use (FDA Emend label, section 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Emend (aprepitant) capsules and for oral suspension, Merck Sharp & Dohme, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Emend label, section 1; WHO Model List of Essential Medicines 23rd List (2023), section 17.2 (Complementary list)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Emend label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Emend label, sections 6.1 (Tables 5 to 7) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Emend label, sections 2, 2.1 (Tables 1 to 3), 8.4, 8.5, 10 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Emend label, sections 4, 5.1, 5.2, 5.3, 7.1 (Tables 8 and 9) and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Emend label, sections 5.2, 5.3, 6.1, 7.1, 8.3, 8.5 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Emend label, section 17 and Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Emend label, section 1 (Limitations of Use) and sections 5.1 to 5.3, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Emend label, sections 1, 2.1, 2.2, 2.3, 7.1, 8.1, 8.4, 8.5 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Emend label, sections 4, 5.1, 5.2, 6.1, 6.2 and 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Emend label, sections 2.3 and 12.3 (no clinically meaningful food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Emend label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Emend label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Emend label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Emend label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Emend label, sections 1, 2.1, 3, 5.2, 5.3, 7.1 and 12.1; WHO Model List of Essential Medicines 23rd List (2023), section 17.2; Kenya Essential Medicines List 2023, section 19.2.3 (fosaprepitant 150 mg injection)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Emend (aprepitant) capsules and for oral suspension listed on DailyMed as the Merck Sharp & Dohme product; generic aprepitant capsules listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Emend labelling (capsules and oral suspension)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Emend label, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Emend label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Emend label, sections 2, 2.1, 2.2, 2.3, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Model List of Essential Medicines 23rd List (2023), section 17.2 (Complementary list: capsule 80 mg, 125 mg, 165 mg; powder for oral suspension 125 mg in sachet)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/289a875c-cc89-4914-90ad-eb3c578ebaf6/content"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Kenya Essential Medicines List 2023, section 19.2.3 (Fosaprepitant 150 mg injection at level of use 5)",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA Emend label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Aprepitant' with drug_class 'Antineoplastic / chemotherapeutic agent'. That class label is incorrect: aprepitant is an NK1 receptor antagonist antiemetic used to PREVENT chemotherapy-induced nausea and vomiting, and it is not itself a chemotherapeutic agent. The brand recorded in the row ('APREPITANT') is the INN rather than a brand; the marketed brand is EMEND (Merck Sharp & Dohme). This monograph covers oral aprepitant (capsules 80 mg and 125 mg; oral suspension 125 mg pouch). The WHO Model List of Essential Medicines 23rd List (2023) lists aprepitant on the Complementary List in section 17.2, with capsule 80 mg, 125 mg and 165 mg and powder for oral suspension 125 mg - the 165 mg capsule is a single-day regimen for use on Days 1 and 2 only and is not described in the FDA Emend label, which covers the 3-day 125/80/80 mg regimen only. The Kenya Essential Medicines List 2023 does not list oral aprepitant; it lists fosaprepitant 150 mg injection at level of use 5 (section 19.2.3), which is the intravenous prodrug and a different product. No FDA letter pregnancy category is stated, so pregnancy_category is null. There is no boxed warning for aprepitant."
+}

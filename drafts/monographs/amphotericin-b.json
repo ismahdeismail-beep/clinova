@@ -1,0 +1,223 @@
+{
+  "name": "Amphotericin B",
+  "existing_id": "9cddca53-e91e-4616-9cfe-8592ef538430",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Amphotericin B is a macrocyclic polyene antifungal antibiotic produced from a strain of Streptomyces nodosus. It binds to the sterol component, ergosterol, of the cell membrane of susceptible fungi, forming transmembrane channels that alter cell permeability, allowing monovalent ions (Na+, K+, H+, Cl-) to leak out of the cell and resulting in cell death. While amphotericin B has a higher affinity for ergosterol, it can also bind to the cholesterol component of the mammalian cell, leading to cytotoxicity (FDA label, Amphotericin B liposome for injection (Mylan), MICROBIOLOGY - Mechanism of Action). The conventional deoxycholate formulation acts in the same way, binding to sterols in the cell membrane of susceptible fungi with a resultant change in membrane permeability allowing leakage of intracellular components; mammalian cell membranes also contain sterols and damage to human and fungal cells may share common mechanisms (FDA label, Amphotericin B for Injection USP (XGen), CLINICAL PHARMACOLOGY - Microbiology). Liposomal amphotericin B is a true single-bilayer liposomal delivery system with amphotericin B intercalated within the membrane, and has been shown to penetrate the cell wall of both extracellular and intracellular forms of susceptible fungi (Amphotericin B liposome for injection label, DESCRIPTION).",
+    "indications": [
+      "Amphotericin B for Injection USP is specifically intended to treat potentially life-threatening fungal infections: aspergillosis, cryptococcosis (torulosis), North American blastomycosis, systemic candidiasis, coccidioidomycosis, histoplasmosis, zygomycosis including mucormycosis due to susceptible species of Absidia, Mucor and Rhizopus (and infections due to related susceptible species of Conidiobolus and Basidiobolus), and sporotrichosis; it should be administered primarily to patients with progressive, potentially life-threatening fungal infections and should not be used to treat noninvasive fungal infections such as oral thrush, vaginal candidiasis and oesophageal candidiasis in patients with normal neutrophil counts (FDA label, Amphotericin B for Injection USP, INDICATIONS AND USAGE)",
+      "Amphotericin B may be useful in the treatment of American mucocutaneous leishmaniasis but is not the drug of choice as primary therapy (Amphotericin B for Injection USP label, INDICATIONS AND USAGE)",
+      "Amphotericin B liposome for injection: empirical therapy for presumed fungal infection in febrile, neutropenic patients; treatment of cryptococcal meningitis in HIV-infected patients; treatment of patients with Aspergillus, Candida and/or Cryptococcus infections refractory to amphotericin B deoxycholate, or in patients where renal impairment or unacceptable toxicity precludes the use of amphotericin B deoxycholate; and treatment of visceral leishmaniasis (FDA label, Amphotericin B liposome for injection (Mylan), INDICATIONS AND USAGE)",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 6.3 Antifungal medicines and section 6.5.2 Antileishmaniasis medicines: amphotericin B, powder for injection 50 mg (liposomal complex) and powder for injection 50 mg (as sodium deoxycholate)",
+      "Kenya Essential Medicines List 2023, section 7.3.1 and section 7.5.2.1: amphotericin B injection, 50 mg (as sodium deoxycholate) vial and (liposomal) 50 mg vial, Level of Use 4; RESTRICTED - use only in treatment of invasive fungal infections, e.g. fungal meningitis"
+    ],
+    "contraindications": [
+      "Amphotericin B for Injection USP is contraindicated in patients who have shown hypersensitivity to amphotericin B or any other component in the formulation, unless in the opinion of the physician the condition requiring treatment is life-threatening and amenable only to amphotericin B therapy (FDA label, Amphotericin B for Injection USP, CONTRAINDICATIONS)",
+      "Amphotericin B liposome for injection is contraindicated in patients who have demonstrated or have a known hypersensitivity to amphotericin B deoxycholate or any other constituents of the product, unless in the opinion of the treating physician the benefit of therapy outweighs the risk (FDA label, Amphotericin B liposome for injection (Mylan), CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Conventional amphotericin B for injection: most patients exhibit some intolerance, often at less than the full therapeutic dose; acute reactions including fever, shaking chills, hypotension, anorexia, nausea, vomiting, headache and tachypnea are common 1 to 3 hours after starting an intravenous infusion, are usually more severe with the first few doses and usually diminish with subsequent doses (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - General and ADVERSE REACTIONS)",
+      "Conventional: adverse reactions most commonly observed are fever (sometimes with shaking chills, usually within 15 to 20 minutes after initiation of treatment), malaise, weight loss, hypotension, tachypnea, anorexia, nausea, vomiting, diarrhoea, dyspepsia, epigastric cramping, normochromic normocytic anaemia, pain at the injection site with or without phlebitis or thrombophlebitis, generalized pain including muscle and joint pains, and headache (ADVERSE REACTIONS)",
+      "Conventional: decreased renal function and renal function abnormalities including azotemia, hypokalemia, hyposthenuria, renal tubular acidosis and nephrocalcinosis, which usually improve with interruption of therapy, although some permanent impairment often occurs, especially in patients receiving over 5 g of amphotericin B or other nephrotoxic agents (ADVERSE REACTIONS)",
+      "Conventional: also reported - flushing; anaphylactoid and other allergic reactions, bronchospasm, wheezing; cardiac arrest, shock, cardiac failure, pulmonary oedema, hypersensitivity pneumonitis, arrhythmias including ventricular fibrillation, dyspnoea, hypertension; rash (particularly maculopapular), pruritus, skin exfoliation, toxic epidermal necrolysis and Stevens-Johnson syndrome (post-marketing); acute liver failure, hepatitis, jaundice, haemorrhagic gastroenteritis, melaena; agranulocytosis, coagulation defects, thrombocytopenia, leukopenia, eosinophilia, leukocytosis; convulsions, hearing loss, tinnitus, transient vertigo, visual impairment, diplopia, peripheral neuropathy, encephalopathy; acute renal failure, anuria, oliguria, and nephrogenic diabetes insipidus (post-marketing) (ADVERSE REACTIONS)",
+      "Conventional: altered laboratory findings - hypomagnesaemia, hypo- and hyperkalaemia, hypocalcaemia; elevations of AST, ALT, GGT, bilirubin and alkaline phosphatase; elevations of BUN and serum creatinine (ADVERSE REACTIONS)",
+      "Liposomal amphotericin B: in the randomised empirical therapy study in febrile neutropenic patients, common adverse events (10% or greater) included chills (47.5% liposomal vs 75.9% deoxycholate), nausea (39.7% vs 38.7%), vomiting (31.8% vs 43.9%), diarrhoea (30.3% vs 27.3%), abdominal pain (19.8% vs 21.8%), infusion reaction (18.4% vs 18.6%), bilirubinemia (18.1% vs 19.2%), creatinine increased (22.4% vs 42.2%), BUN increased (21% vs 31.1%), and hypotension (14.3% vs 21.5%) (FDA label, Amphotericin B liposome for injection, ADVERSE REACTIONS)",
+      "Liposomal: day-1 infusion-related reactions were less frequent with liposomal than deoxycholate - fever 17% vs 44%, chills/rigors 18% vs 54% (ADVERSE REACTIONS, Infusion-Related Reactions)",
+      "Liposomal: less common adverse events (2% to 10%) include allergic reaction and face oedema; arrhythmia, atrial fibrillation, bradycardia, cardiac arrest, postural hypotension and flushing; anorexia, constipation, dry mouth, dyspepsia, dysphagia, flatulence, mucositis, stomatitis, ulcerative stomatitis and veno-occlusive liver disease; anaemia, coagulopathy, ecchymosis, fluid overload and thrombocytopenia (ADVERSE REACTIONS, Less Common Adverse Events)",
+      "Liposomal: post-marketing events are described in the label, and false elevations of serum phosphate may occur when samples are analysed using the PHOSm assay (ADVERSE REACTIONS, Post-marketing Experience; PRECAUTIONS, Drug-Laboratory Interactions)"
+    ],
+    "dosage": {
+      "adult": "Conventional amphotericin B for injection: the dose must be individualised according to the patient's clinical status. A single intravenous test dose (1 mg in 20 mL of 5% dextrose over 20 to 30 minutes) may be preferred, with temperature, pulse, respiration and blood pressure recorded every 30 minutes for 2 to 4 hours. In patients with good cardio-renal function and a well tolerated test dose, therapy is usually initiated at 0.25 mg/kg/day (0.3 mg/kg/day may be used in severe, rapidly progressive infection); in patients with impaired cardio-renal function or a severe reaction to the test dose, start with smaller daily doses of 5 to 10 mg. Doses may be increased by 5 to 10 mg per day to a final daily dosage of 0.5 to 0.7 mg/kg. Total daily dosage may range up to 1.0 mg/kg/day, or up to 1.5 mg/kg when given on alternate days. Under no circumstances should a total daily dose of 1.5 mg/kg be exceeded (FDA label, Amphotericin B for Injection USP, DOSAGE AND ADMINISTRATION). Liposomal amphotericin B: empirical therapy 3 mg/kg/day; systemic fungal infections (Aspergillus, Candida, Cryptococcus) 3 to 5 mg/kg/day; cryptococcal meningitis in HIV-infected patients 6 mg/kg/day (FDA label, Amphotericin B liposome for injection (Mylan), DOSAGE AND ADMINISTRATION; identical dosing in the AmBisome label).",
+      "geriatric": "Liposomal amphotericin B: experience in the elderly (65 years or older) comprised 72 patients and it has not been necessary to alter the dose for this population, though as with most other drugs elderly patients should be carefully monitored (FDA label, Amphotericin B liposome for injection, Elderly Patients). For the conventional formulation the label states that safety and effectiveness in pediatric patients have not been established through adequate and well-controlled studies and gives no geriatric-specific regimen (Amphotericin B for Injection USP label, PRECAUTIONS - Pediatric Use).",
+      "paediatric": "Liposomal amphotericin B: pediatric patients aged 1 month to 16 years with presumed fungal infection, confirmed systemic fungal infections or visceral leishmaniasis have been successfully treated; across studies including 302 pediatric patients there was no evidence of differences in efficacy or safety compared with adults, and because paediatric patients have received the drug at doses comparable to adults on a per kilogram body weight basis, no dosage adjustment is required; safety and effectiveness below one month of age have not been established (FDA label, Amphotericin B liposome for injection, Pediatric Use). Conventional amphotericin B for injection should, when administered to pediatric patients, be limited to the smallest dose compatible with an effective therapeutic regimen (Amphotericin B for Injection USP label, PRECAUTIONS - Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antineoplastic agents: may enhance the potential for renal toxicity, bronchospasm and hypotension; give concomitantly only with great caution (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - Drug Interactions; Amphotericin B liposome for injection, Drug Interactions)",
+      "Corticosteroids and corticotropin (ACTH): may potentiate amphotericin B-induced hypokalemia, which may predispose to cardiac dysfunction; avoid concomitant use unless necessary and monitor serum electrolytes and cardiac function closely",
+      "Digitalis glycosides: amphotericin B-induced hypokalemia may potentiate digitalis toxicity; monitor serum potassium and cardiac function closely and correct any deficit promptly",
+      "Flucytosine: concomitant use may increase the toxicity of flucytosine, possibly by increasing its cellular uptake and/or impairing its renal excretion",
+      "Imidazoles/azoles (e.g. ketoconazole, miconazole, clotrimazole, fluconazole): in vitro and animal studies suggest imidazoles may induce fungal resistance to amphotericin B; combination therapy should be administered with caution, especially in immunocompromised patients",
+      "Other nephrotoxic medications (e.g. aminoglycosides, cyclosporine, pentamidine): may enhance the potential for drug-induced renal toxicity; use only with great caution and monitor renal function intensively",
+      "Skeletal muscle relaxants: amphotericin B-induced hypokalemia may enhance the curariform effect of skeletal muscle relaxants (e.g. tubocurarine); monitor serum potassium and correct deficiencies",
+      "Leukocyte transfusions: acute pulmonary toxicity has been reported in patients receiving intravenous amphotericin B with leukocyte transfusions; separate the infusions as far as possible and monitor pulmonary function"
+    ],
+    "monitoring": "Renal function should be monitored frequently during amphotericin B therapy; it is also advisable to monitor regularly liver function, serum electrolytes (particularly magnesium and potassium), blood counts and haemoglobin concentrations, and laboratory results should be used as a guide to subsequent dosage adjustments (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - Laboratory Tests). For the liposomal formulation, patient management should include laboratory evaluation of renal, hepatic and haematopoietic function and serum electrolytes (particularly magnesium and potassium) (Amphotericin B liposome for injection label, PRECAUTIONS - Laboratory Tests). During the initial dosing period, patients should be under close clinical observation; during the test dose the patient's temperature, pulse, respiration and blood pressure should be recorded every 30 minutes for 2 to 4 hours (conventional label, DOSAGE AND ADMINISTRATION; liposomal label, PRECAUTIONS - General). Note that false elevations of serum phosphate can occur with the PHOSm assay in patients receiving liposomal amphotericin B (liposomal label, PRECAUTIONS - Drug-Laboratory Interactions).",
+    "patient_counselling": "The FDA labels for both formulations are hospital/infusion products and do not contain a patient counselling information section; the counselling points they do contain are the need for administration under close clinical observation by medically trained personnel, the instruction to separate leukocyte transfusions as far as possible from the amphotericin B infusion and to monitor pulmonary function, and the requirement to monitor renal function frequently (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - General and Laboratory Tests; Amphotericin B liposome for injection, PRECAUTIONS - General).",
+    "warnings": [
+      "WARNING (boxed, conventional deoxycholate formulation): this drug should be used primarily for treatment of patients with progressive and potentially life-threatening fungal infections; it should not be used to treat noninvasive forms of fungal disease such as oral thrush, vaginal candidiasis and esophageal candidiasis in patients with normal neutrophil counts. Amphotericin B for Injection should not be given in doses greater than 1.5 mg/kg. Exercise caution to prevent inadvertent overdosage, which may result in potentially fatal cardiac or cardiopulmonary arrest; verify the product name and dosage pre-administration, especially if the dose exceeds 1.5 mg/kg (FDA label, Amphotericin B for Injection USP, Boxed Warning)",
+      "Overdose: amphotericin B overdoses can result in potentially fatal cardiac or cardiopulmonary arrest; if an overdose is suspected, discontinue therapy and monitor cardiorespiratory, renal, liver and haematologic status and serum electrolytes, and administer supportive therapy as required; amphotericin B is not hemodialyzable (Amphotericin B for Injection USP label, OVERDOSAGE and WARNINGS)",
+      "Anaphylaxis has been reported with amphotericin B deoxycholate and other amphotericin B-containing drugs, including amphotericin B liposome for injection; if a severe anaphylactic reaction occurs, the infusion should be immediately discontinued and the patient should not receive further infusions (Amphotericin B liposome for injection label, WARNINGS)",
+      "Nephrotoxicity: use with care in patients with reduced renal function and monitor renal function frequently; in some patients hydration and sodium repletion before administration may reduce the risk of nephrotoxicity, and supplemental alkali medication may decrease renal tubular acidosis complications (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "Acute infusion reactions: fever, shaking chills, hypotension, anorexia, nausea, vomiting, headache and tachypnea are common 1 to 3 hours after starting an infusion; rapid intravenous infusion has been associated with hypotension, hypokalemia, arrhythmias and shock and should be avoided (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "Leukoencephalopathy has been reported following use of amphotericin B; literature reports have suggested that total body irradiation may be a predisposition (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "If medication is interrupted for a period longer than 7 days, therapy should be resumed by starting with the lowest dosage level, e.g. 0.25 mg/kg of body weight, and increased gradually (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "Product confusion risk: different amphotericin B products are not equivalent in terms of pharmacodynamics, pharmacokinetics and dosing, and liposomal amphotericin B is not interchangeable or substitutable on a mg per mg basis with other amphotericin B products (Amphotericin B liposome for injection label, DOSAGE AND ADMINISTRATION)"
+    ],
+    "precautions": [
+      "Administer intravenously under close clinical observation by medically trained personnel, and reserve for treatment of patients with progressive, potentially life-threatening fungal infections due to susceptible organisms (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - General)",
+      "Reconstitution must be done with aseptic technique since no preservative or bacteriostatic agent is present; for the conventional formulation, do not reconstitute with saline solutions and use of any diluent other than those recommended, or the presence of a bacteriostatic agent (e.g. benzyl alcohol), may cause precipitation of the antibiotic; an in-line membrane filter may be used provided the mean pore diameter is not less than 1.0 micron (Amphotericin B for Injection USP label, DOSAGE AND ADMINISTRATION - Preparation of Solutions)",
+      "For the liposomal formulation, do not reconstitute with saline or add saline to the reconstituted concentration, or mix with other drugs; an existing intravenous line must be flushed with 5% Dextrose Injection prior to infusion, or the product must be administered through a separate line (Amphotericin B liposome for injection label, DOSAGE AND ADMINISTRATION)",
+      "Tolerance may be improved by treatment with aspirin, antipyretics (e.g. acetaminophen), antihistamines or antiemetics; meperidine 25 to 50 mg IV has been shown in some patients to decrease the duration of shaking chills and fever; administration on alternate days may decrease anorexia and phlebitis; small doses of adrenal corticosteroids just before or during the infusion may help decrease febrile reactions; addition of heparin (1000 units per infusion) and use of a pediatric scalp-vein needle may lessen thrombophlebitis, and extravasation may cause chemical irritation (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Care must be taken to avoid confusion between the conventional deoxycholate product and the liposomal products, which have different dosing and different safety profiles (FDA label, Amphotericin B for Injection USP, DOSAGE AND ADMINISTRATION - 'VERIFY PRODUCT NAME AND DOSAGE')",
+      "Storage: the conventional product is stored under refrigeration 2 to 8 degrees C, protected from light, before reconstitution (Amphotericin B for Injection USP label, HOW SUPPLIED - Storage). Unopened liposomal vials are stored at temperatures up to 25 degrees C, the reconstituted concentrate may be stored for up to 24 hours at 2 to 8 degrees C (do not freeze), and infusion of the diluted product should commence within 6 hours of dilution with 5% Dextrose Injection (Amphotericin B liposome for injection label, STORAGE OF AMPHOTERICIN B LIPOSOME FOR INJECTION)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylactic/anaphylactoid and other allergic reactions, bronchospasm and wheezing (FDA label, Amphotericin B for Injection USP, ADVERSE REACTIONS)",
+      "Cardiac arrest, shock, cardiac failure, pulmonary oedema, hypersensitivity pneumonitis and arrhythmias including ventricular fibrillation (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Nephrotoxicity: decreased renal function, azotemia, renal tubular acidosis, nephrocalcinosis, acute renal failure, anuria and oliguria, with some permanent impairment especially after over 5 g or concomitant nephrotoxins (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Blood dyscrasias: agranulocytosis, coagulation defects, thrombocytopenia, leukopenia, eosinophilia and leukocytosis (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Severe hepatotoxicity: acute liver failure, hepatitis and jaundice (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Neurologic: convulsions, hearing loss, tinnitus, transient vertigo, visual impairment, diplopia, peripheral neuropathy and encephalopathy (leukoencephalopathy) (Amphotericin B for Injection USP label, ADVERSE REACTIONS and PRECAUTIONS)",
+      "Cutaneous: skin exfoliation, toxic epidermal necrolysis and Stevens-Johnson syndrome reported during post-marketing surveillance (Amphotericin B for Injection USP label, ADVERSE REACTIONS)",
+      "Potentially fatal cardiac or cardiopulmonary arrest from overdose (Amphotericin B for Injection USP label, OVERDOSAGE)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "B (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - Pregnancy). The liposomal label (amphotericin B liposome for injection) states no pregnancy category and reports that there have been no adequate and well-controlled studies in pregnant women.",
+    "pregnancy_guidance": "Pregnancy Category B for the conventional formulation: reproduction studies in animals have revealed no evidence of harm to the fetus due to amphotericin B for injection; systemic fungal infections have been successfully treated in pregnant women without obvious effects to the fetus, but the number of cases reported has been small; because animal reproduction studies are not always predictive of human response and adequate and well-controlled studies have not been conducted in pregnant women, this drug should be used during pregnancy only if clearly indicated (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - Pregnancy). For the liposomal formulation there have been no adequate and well-controlled studies in pregnant women, although systemic fungal infections have been successfully treated in pregnant women with amphotericin B deoxycholate, with a small number of reported cases; Segment II studies in rats and rabbits concluded that amphotericin B liposome for injection had no teratogenic potential, although rabbits receiving doses equivalent to 0.5 to 2 times the recommended human dose had a higher rate of spontaneous abortions than controls; it should only be used during pregnancy if the possible benefits outweigh the potential risks (Amphotericin B liposome for injection label, PRECAUTIONS - Pregnancy).",
+    "lactation_guidance": "It is not known whether amphotericin B is excreted in human milk; because many drugs are excreted in human milk and considering the potential toxicity of amphotericin B, it is prudent to advise a nursing mother to discontinue nursing (FDA label, Amphotericin B for Injection USP, PRECAUTIONS - Nursing Mothers). For the liposomal formulation, many drugs are excreted in human milk but it is not known whether amphotericin B liposome for injection is excreted in human milk; due to the potential for serious adverse reactions in breastfed infants, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother (Amphotericin B liposome for injection label, PRECAUTIONS - Nursing Mothers).",
+    "overdose": "Conventional: amphotericin B overdoses can result in potentially fatal cardiac or cardiopulmonary arrest. If an overdose is suspected, discontinue therapy and monitor the patient's clinical status (cardiorespiratory, renal and liver function, haematologic status, serum electrolytes) and administer supportive therapy as required; amphotericin B is not hemodialyzable; prior to reinstituting therapy the patient's condition should be stabilized including correction of electrolyte deficiencies (FDA label, Amphotericin B for Injection USP, OVERDOSAGE). Liposomal: the toxicity of amphotericin B liposome for injection due to overdose has not been defined, although repeated daily doses up to 10 mg/kg in pediatric patients and 15 mg/kg in adult patients have been administered in clinical trials with no reported dose-related toxicity; if overdosage occurs, cease administration immediately and institute symptomatic supportive measures with particular attention to monitoring renal function, as haemodialysis or peritoneal dialysis do not appear to significantly affect elimination (Amphotericin B liposome for injection label, OVERDOSAGE).",
+    "pharmacokinetics": "Conventional amphotericin B for injection: an initial intravenous infusion of 1 to 5 mg/day, gradually increased to 0.4 to 0.6 mg/kg daily, produces peak plasma concentrations of approximately 0.5 to 2 mcg/mL; an elimination half-life of approximately 15 days follows an initial plasma half-life of about 24 hours; circulating drug is highly bound (>90%) to plasma proteins and is poorly dialyzable; about two thirds of concurrent plasma concentrations have been detected in fluids from inflamed pleura, peritoneum, synovium and aqueous humour; concentrations in cerebrospinal fluid seldom exceed 2.5% of plasma concentrations; the drug is excreted very slowly (over weeks to months) by the kidneys with 2 to 5% of a given dose excreted in biologically active form, and can be detected in urine for at least 7 weeks after treatment is discontinued (FDA label, Amphotericin B for Injection USP, CLINICAL PHARMACOLOGY - Pharmacokinetics). Liposomal: pharmacokinetics are nonlinear, with a greater than proportional increase in serum concentrations as the dose increases from 1 to 5 mg/kg/day; mean half-life was 7 to 10 hours based on total concentrations within 24 hours, with a long terminal half-life of 100 to 153 hours based on concentrations up to 49 days after dosing, probably reflecting slow redistribution from tissues; steady state concentrations were generally achieved within 4 days; the metabolic pathways are not known and excretion has not been studied; the effect of renal or hepatic impairment on disposition has not been studied (Amphotericin B liposome for injection label, CLINICAL PHARMACOLOGY - Pharmacokinetics and Pharmacokinetics in Special Populations).",
+    "clinical_pearls": [
+      "Amphotericin B exists as distinct formulations with different dosing and different safety: the conventional sodium deoxycholate product is dosed at 0.25 to 1.0 mg/kg/day (maximum 1.5 mg/kg/day) whereas the liposomal product is dosed at 3 to 5 mg/kg/day (6 mg/kg/day for cryptococcal meningitis); the products are not interchangeable on a mg per mg basis (FDA labels, Amphotericin B for Injection USP DOSAGE AND ADMINISTRATION; Amphotericin B liposome for injection DOSAGE AND ADMINISTRATION)",
+      "Verify the product name and dosage before administration: overdose of the conventional product can cause potentially fatal cardiac or cardiopulmonary arrest (Amphotericin B for Injection USP label, Boxed Warning and DOSAGE AND ADMINISTRATION)",
+      "Liposomal amphotericin B has a better safety profile than the sodium deoxycholate formulation and should be prioritized for selection and use depending on local availability and cost (WHO Model List of Essential Medicines, 24th list (2025), section 6.3 note)",
+      "In the randomised comparisons, creatinine increase occurred in 22.4% of liposomal versus 42.2% of deoxycholate patients, and day-1 infusion-related fever in 17% versus 44%, quantifying the tolerability advantage of the liposomal formulation (Amphotericin B liposome for injection label, ADVERSE REACTIONS)",
+      "Hydration and sodium repletion before amphotericin B administration, and supplemental alkali medication, may reduce nephrotoxicity and renal tubular acidosis complications (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "If therapy is interrupted for more than 7 days, restart at the lowest dose (e.g. 0.25 mg/kg) and titrate up (Amphotericin B for Injection USP label, PRECAUTIONS - General)",
+      "Amphotericin B is not removed by hemodialysis (conventional) and haemodialysis or peritoneal dialysis do not appear to significantly affect elimination of the liposomal product (FDA labels, OVERDOSAGE sections)"
+    ],
+    "brand_names": ["AmBisome"],
+    "black_box_warnings": [
+      "WARNING: This drug should be used primarily for treatment of patients with progressive and potentially life-threatening fungal infections; it should not be used to treat noninvasive forms of fungal disease such as oral thrush, vaginal candidiasis and esophageal candidiasis in patients with normal neutrophil counts. Amphotericin B for Injection should not be given in doses greater than 1.5 mg/kg. EXERCISE CAUTION to prevent inadvertent overdosage, which may result in potentially fatal cardiac or cardiopulmonary arrest. Verify the product name and dosage pre-administration, especially if dose exceeds 1.5 mg/kg (FDA label, Amphotericin B for Injection USP (XGen), Boxed Warning)."
+    ],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Intravenous infusion only. Conventional amphotericin B for injection: verify the product name and dosage before administration; reconstitute by rapidly expressing 10 mL Sterile Water for Injection USP without a bacteriostatic agent into the lyophilized cake using a sterile needle (minimum 20 gauge) and shaking the vial immediately until the colloidal solution is clear, giving a 5 mg/mL concentrate, then dilute 1:50 with 5% Dextrose Injection USP of pH above 4.2 to give the recommended 0.1 mg/mL infusion concentration; the infusion is given over approximately 2 to 6 hours depending on dose; use only freshly prepared solutions; do not reconstitute with saline; an in-line membrane filter may be used provided the mean pore diameter is not less than 1.0 micron (FDA label, Amphotericin B for Injection USP, DOSAGE AND ADMINISTRATION - Preparation of Solutions). Liposomal amphotericin B: aseptically add 12 mL Sterile Water for Injection USP to each 50 mg vial to yield 4 mg/mL, shake vigorously for 30 seconds, draw up the required volume, attach the supplied 5 micron filter and inject into 5% Dextrose Injection to a final concentration of 1 to 2 mg/mL (0.2 to 0.5 mg/mL may be appropriate for infants and small children); administer by controlled intravenous infusion over approximately 120 minutes (about 60 minutes if well tolerated), flushing the existing intravenous line with 5% Dextrose Injection beforehand or using a separate line; discard partially used vials (Amphotericin B liposome for injection label, DOSAGE AND ADMINISTRATION - Directions for Reconstitution, Filtration and Dilution)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Amphotericin B liposome for injection (Mylan Institutional), MICROBIOLOGY - Mechanism of Action and DESCRIPTION; FDA label, Amphotericin B for Injection USP (XGen), CLINICAL PHARMACOLOGY - Microbiology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), INDICATIONS AND USAGE; FDA label, Amphotericin B liposome for injection (Mylan), INDICATIONS AND USAGE; WHO Model List of Essential Medicines, 24th list (2025), sections 6.3 and 6.5.2; Kenya Essential Medicines List 2023, sections 7.3.1 and 7.5.2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), CONTRAINDICATIONS; FDA label, Amphotericin B liposome for injection (Mylan), CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), ADVERSE REACTIONS and PRECAUTIONS - General; FDA label, Amphotericin B liposome for injection (Mylan), ADVERSE REACTIONS and PRECAUTIONS - Drug-Laboratory Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), DOSAGE AND ADMINISTRATION and PRECAUTIONS - Pediatric Use; FDA label, Amphotericin B liposome for injection (Mylan), DOSAGE AND ADMINISTRATION, Pediatric Use and Elderly Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - Drug Interactions; FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - General and Laboratory Tests, DOSAGE AND ADMINISTRATION; FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - General, Laboratory Tests and Drug-Laboratory Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - General and Laboratory Tests; FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - General (neither label contains a Patient Counseling Information section)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), Boxed Warning, WARNINGS, PRECAUTIONS - General and OVERDOSAGE; FDA label, Amphotericin B liposome for injection (Mylan), WARNINGS and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - General, ADVERSE REACTIONS, DOSAGE AND ADMINISTRATION and HOW SUPPLIED - Storage; FDA label, Amphotericin B liposome for injection (Mylan), DOSAGE AND ADMINISTRATION and STORAGE OF AMPHOTERICIN B LIPOSOME FOR INJECTION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), ADVERSE REACTIONS, PRECAUTIONS - General and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA labels for Amphotericin B for Injection USP or amphotericin B liposome for injection",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - Pregnancy (Pregnancy Category B); FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - Pregnancy (no category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - Pregnancy; FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), PRECAUTIONS - Nursing Mothers; FDA label, Amphotericin B liposome for injection (Mylan), PRECAUTIONS - Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), OVERDOSAGE; FDA label, Amphotericin B liposome for injection (Mylan), OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), CLINICAL PHARMACOLOGY - Pharmacokinetics; FDA label, Amphotericin B liposome for injection (Mylan), CLINICAL PHARMACOLOGY - Pharmacokinetics and Pharmacokinetics in Special Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), Boxed Warning, DOSAGE AND ADMINISTRATION, PRECAUTIONS - General and OVERDOSAGE; FDA label, Amphotericin B liposome for injection (Mylan), DOSAGE AND ADMINISTRATION and ADVERSE REACTIONS; WHO Model List of Essential Medicines, 24th list (2025), section 6.3 note",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AmBisome (amphotericin B) for injection, Astellas Pharma US, Inc., listed as a brand product on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7be6506-4d20-401e-a0ff-02ad7c33158a"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), Boxed Warning section (34066-1) - the liposomal labels used here contain no boxed warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No numeric renal dose adjustment is specified in the FDA labels for Amphotericin B for Injection USP or amphotericin B liposome for injection; the liposomal label states the effect of renal impairment on disposition has not been studied but the drug has been successfully administered in patients with pre-existing renal impairment, and frequent renal function monitoring is recommended",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA labels for Amphotericin B for Injection USP or amphotericin B liposome for injection; the liposomal label states the effect of hepatic impairment on disposition is not known",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96a734f-d1c4-4d42-93c2-7c336da7f7b9"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Amphotericin B for Injection USP (XGen), DOSAGE AND ADMINISTRATION - Preparation of Solutions; FDA label, Amphotericin B liposome for injection (Mylan), DOSAGE AND ADMINISTRATION - Directions for Reconstitution, Filtration and Dilution",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a54943-9ce4-4f3e-b681-a1a9144c16ce"
+    }
+  ],
+  "unsourced_fields": [
+    "renal_dose_adjustment (no numeric renal dose adjustment is specified in either label; the labels require renal function monitoring rather than a fixed adjustment)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in either label)",
+    "adult_dosing (not populated; the narrative adult regimens for both formulations are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric statements for both formulations are provided in fields.dosage.paediatric)"
+  ],
+  "notes": "This is a formulation-level row: amphotericin B exists as the conventional sodium deoxycholate injection and as liposomal (and other lipid-associated) products with very different dosing, warnings and safety profiles, so two FDA labels are used and each statement is attributed to its own label. (1) Amphotericin B for Injection USP, 50 mg vial (XGen Pharmaceuticals, revised October 2020) - the conventional deoxycholate product, which carries the only boxed warning found for this drug (use only for progressive, potentially life-threatening fungal infections; do not exceed 1.5 mg/kg; overdose can cause fatal cardiac or cardiopulmonary arrest). (2) Amphotericin B liposome for injection, 50 mg vial (Mylan Institutional, October 2026) - the generic liposomal product, cross-checked against the branded AmBisome (Astellas) label, which states identical dosing, reconstitution and warnings. The liposomal labels used here contain no boxed warning section, so the single black_box_warnings entry is explicitly attributed to the conventional product. The WHO Model List of Essential Medicines (24th list, 2025) lists both the liposomal complex and the sodium deoxycholate powder for injection and states that liposomal amphotericin B has a better safety profile and should be prioritized for selection and use depending on local availability and cost; KEML 2023 lists amphotericin B as RESTRICTED, for use only in invasive fungal infections (e.g. fungal meningitis) at Level of Use 4. A lipid-complex product (Amphotec, Intermune) remains listed on DailyMed with a 2008 label and was deliberately not used as a content source; brand_names therefore lists only AmBisome. Neither label contains a Patient Counselling Information section, so patient_counselling is limited to the administration and monitoring instructions the labels do state. FDA pregnancy categories are obsolete under the Pregnancy and Lactation Labeling Rule and are reported only because the conventional label still states Category B."
+}

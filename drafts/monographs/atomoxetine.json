@@ -1,0 +1,226 @@
+{
+  "name": "Atomoxetine",
+  "existing_id": "053eda80-ee5f-47ce-9a75-3bba4c48edc6",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atomoxetine is a selective norepinephrine reuptake inhibitor. The precise mechanism by which STRATTERA produces its therapeutic effects in ADHD is unknown, but is thought to be related to selective inhibition of the pre-synaptic norepinephrine transporter, as determined in ex vivo uptake and neurotransmitter depletion studies (STRATTERA label, section 12.1). Atomoxetine hydrochloride is the R(-) isomer, with the chemical designation (-)-N-Methyl-3-phenyl-3-(o-tolyloxy)-propylamine hydrochloride and molecular formula C17H21NO.HCl (STRATTERA label, section 11). The major oxidative metabolite, 4-hydroxyatomoxetine, is equipotent to atomoxetine as an inhibitor of the norepinephrine transporter and is formed primarily by CYP2D6 (STRATTERA label, section 12.3).",
+    "indications": [
+      "Treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older (STRATTERA label, section 1)",
+      "As an integral part of a total treatment programme for ADHD that may include other measures (psychological, educational, social) for patients with ADHD (STRATTERA label, section 1)",
+      "Kenya Essential Medicines List 2023: Atomoxetine, tablet 10 mg, listed at level of use 6 under section 25.6 Medicines used in attention deficit hyperactivity disorder (ADHD), with the note that it is for management of ADHD especially in children (KEML 2023, item 25.6.1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity reaction to atomoxetine or other constituents of STRATTERA; hypersensitivity reactions have included anaphylaxis, angioneurotic edema, urticaria and rash (STRATTERA label, section 4)",
+      "Taking, or within 14 days of stopping, a monoamine oxidase inhibitor (MAOI) (STRATTERA label, section 4)",
+      "Narrow angle glaucoma; in clinical trials, STRATTERA use was associated with an increased risk of mydriasis (STRATTERA label, section 4)",
+      "Pheochromocytoma or a history of pheochromocytoma; serious reactions, including elevated blood pressure and tachyarrhythmia, have been reported in such patients who received STRATTERA (STRATTERA label, section 4)",
+      "Severe cardiac or vascular disorders whose condition would be expected to deteriorate if there were a clinically important increase in blood pressure or heart rate (for example 15 to 20 mm Hg in blood pressure or 20 beats per minute in heart rate) (STRATTERA label, section 4)"
+    ],
+    "side_effects": [
+      "Pediatric clinical studies, most common adverse reactions (5% or more and at least twice the placebo incidence): nausea, vomiting, fatigue, decreased appetite, abdominal pain and somnolence (STRATTERA label, sections 6 and 6.1)",
+      "Adult clinical studies, most common adverse reactions (5% or more and at least twice the placebo incidence): constipation, dry mouth, nausea, decreased appetite, dizziness, erectile dysfunction and urinary hesitation (STRATTERA label, sections 6 and 6.1)",
+      "Pediatric adverse reaction rates in acute studies (STRATTERA versus placebo): headache 19% vs 15%, abdominal pain 18% vs 10%, decreased appetite 16% vs 4%, somnolence 11% vs 4%, vomiting 11% vs 6%, nausea 10% vs 5%, fatigue 8% vs 3%, irritability 6% vs 3%, dizziness 5% vs 2%, decreased weight 3% vs 0%, anorexia 3% vs 1% and rash 2% vs 1% (STRATTERA label, section 6.1, Table 2)",
+      "Adult adverse reaction rates in acute studies (STRATTERA versus placebo): nausea 26% vs 6%, dry mouth 20% vs 5%, decreased appetite 16% vs 3%, insomnia 15% vs 8%, fatigue 10% vs 6%, erectile dysfunction 8% vs 1%, constipation 8% vs 3%, dizziness 8% vs 3%, somnolence 8% vs 5%, abdominal pain 7% vs 4%, urinary hesitation 6% vs 1%, irritability 5% vs 3%, ejaculation delayed and/or ejaculation disorder 4% vs 1%, hyperhidrosis 4% vs 1%, dyspepsia 4% vs 2%, vomiting 4% vs 2%, abnormal dreams 4% vs 3%, dysmenorrhoea 3% vs 2% and libido decreased 3% vs 1% (STRATTERA label, section 6.1, Table 5)",
+      "Treatment discontinuation for adverse reactions: 3% (48/1,613) of STRATTERA-treated pediatric patients versus 1.4% (13/945) of placebo-treated pediatric patients; 11.3% (61/541) of STRATTERA-treated adults versus 3% (12/405) of placebo-treated adults (STRATTERA label, section 6.1)",
+      "Blood pressure and heart rate: in placebo-controlled pediatric and adult ADHD studies there was a greater proportion of STRATTERA-treated patients with an increase in diastolic blood pressure of 15 mm Hg or more, systolic blood pressure of 20 mm Hg or more, or heart rate of 20 bpm or more (STRATTERA label, sections 5.4 and 6.1, Table 7)",
+      "Postmarketing adverse reactions: QT prolongation, syncope, Raynaud's phenomenon, lethargy, rhabdomyolysis, hypoesthesia, paraesthesia in pediatric patients, sensory disturbances, tics, depression and depressed mood, anxiety, libido changes, seizures, alopecia, hyperhidrosis, male pelvic pain, urinary hesitation in pediatric patients and urinary retention in pediatric patients (STRATTERA label, section 6.2)",
+      "Seizures were reported in 0.2% (12/5,073) of STRATTERA-treated pediatric patients whose average age was 10 years, and in 0.1% (1/748) of adult patients in the clinical development programme (STRATTERA label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "Adults and pediatric patients 70 kg or more: starting dose 40 mg/day, titrated at a minimum interval of 3 days, target dose 80 mg/day, maximum dose 100 mg/day; if a patient has not achieved an optimal response at 80 mg/day after 2 to 4 additional weeks, the dosage may be increased to a maximum of 100 mg/day, and there is no data supporting increased effectiveness above 100 mg/day. Administer either as a once-daily dose in the morning or as an evenly divided twice-daily dose in the morning and late afternoon/early evening (STRATTERA label, sections 2.2, 2.3 and Table 1). The health care provider who elects to use STRATTERA for extended periods should periodically reevaluate the long-term usefulness of STRATTERA for the individual patient (STRATTERA label, section 2.3). If a dose is missed, take it as soon as possible but do not take more than the prescribed total daily amount in any 24-hour period, and no taper is needed when discontinuing (STRATTERA label, sections 2.7 and 2.8).",
+      "geriatric": "The safety, efficacy and pharmacokinetics of STRATTERA in geriatric patients have not been evaluated, and clinical studies did not include sufficient numbers of patients 65 years of age or older to determine whether they respond differently from younger adult patients (STRATTERA label, section 8.5). No geriatric dose adjustment is specified.",
+      "paediatric": "Pediatric patients who weigh less than 70 kg and are 6 years of age and older: starting dose 0.5 mg/kg/day, titrated at a minimum interval of 3 days, target dose 1.2 mg/kg/day, maximum dose 1.4 mg/kg/day or 100 mg/day, whichever is less; no additional benefit has been demonstrated at doses higher than 1.2 mg/kg/day (STRATTERA label, sections 2.3 and Table 1). The safety and effectiveness of STRATTERA for the treatment of ADHD have been established in pediatric patients 6 years of age and older; safety and effectiveness in pediatric patients less than 6 years of age have not been established (STRATTERA label, section 8.4). In the long-term open-label paediatric studies, weight and height gain lagged behind normative population data for about the first 9 to 12 months of treatment; at about 3 years patients gained a mean of 17.9 kg (0.5 kg more than predicted) and a mean of 19.4 cm in height (0.4 cm less than predicted), and in short-term placebo-controlled studies up to 9 weeks STRATTERA-treated patients lost an average of 0.4 kg in weight and gained an average of 0.9 cm in height compared with a gain of 1.5 kg and 1.1 cm in placebo-treated patients (STRATTERA label, section 5.11)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Monoamine oxidase inhibitors: concomitant use is contraindicated, including MAOIs such as linezolid or intravenous methylene blue, or in patients who stopped an MAOI within 14 days. As with other drugs affecting brain monoamine concentrations, there have been reports of serious, sometimes fatal reactions (hyperthermia, rigidity, myoclonus, autonomic instability with fluctuations of vital signs and extreme agitation progressing to delirium or coma) with concomitant use of STRATTERA and an MAOI, some presenting with features resembling neuroleptic malignant syndrome (STRATTERA label, sections 4 and 7, Table 8)",
+      "Strong CYP2D6 inhibitors: with concomitant use, increase the titration interval; atomoxetine is a CYP2D6 substrate and the concomitant use of STRATTERA and a strong CYP2D6 inhibitor increases atomoxetine exposure (STRATTERA label, section 7, Table 8)",
+      "Antihypertensive drugs and other drugs that increase blood pressure or pressor drugs (for example dopamine, dobutamine): increase the frequency of monitoring blood pressure and adjust STRATTERA dosage as clinically appropriate, because of the increased risk of increased blood pressure (STRATTERA label, section 7, Table 8)",
+      "Albuterol or other beta2 agonists: systemically administered albuterol can be potentiated by atomoxetine, resulting in increases in heart rate and blood pressure; increase the frequency of monitoring blood pressure and heart rate and adjust STRATTERA dosage as clinically appropriate (STRATTERA label, sections 7 and 12.2, Table 8)",
+      "Ethanol: consumption of ethanol with STRATTERA did not change the intoxicating effects of ethanol (STRATTERA label, section 12.2)",
+      "Methylphenidate: concomitant use of STRATTERA with methylphenidate did not increase cardiovascular effects beyond those seen with methylphenidate alone (STRATTERA label, section 12.2)"
+    ],
+    "monitoring": "Measure heart rate and blood pressure at baseline, following each STRATTERA dosage increase, and periodically while on therapy to detect possible clinically important increases (STRATTERA label, section 5.4). Before treatment, take a careful history including assessment for a family history of sudden death or ventricular arrhythmia and a physical examination to assess for the presence of cardiovascular disease, and obtain further cardiac evaluation (for example electrocardiogram, echocardiogram) if findings suggest such disease; patients who develop exertional chest pain, unexplained syncope or other symptoms suggestive of cardiac disease should stop STRATTERA and undergo a prompt cardiac evaluation (STRATTERA label, section 5.3). Obtain liver enzyme and function tests upon the first symptom or sign of liver dysfunction (for example pruritus, dark urine, jaundice, right upper quadrant tenderness, or unexplained flu-like symptoms) and discontinue and do not restart STRATTERA in patients with jaundice or laboratory evidence of liver injury (STRATTERA label, section 5.2). Monitor closely growth (weight, height) in pediatric patients (STRATTERA label, section 5.11). Screen patients for a personal or family history of bipolar disorder, mania or hypomania before initiating treatment (STRATTERA label, sections 2.1 and 5.6). Monitor for the appearance or worsening of aggressive behaviour or hostility, for new psychotic or manic symptoms, and for urinary retention or hesitancy (STRATTERA label, sections 5.5, 5.7 and 5.9).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Medication Guide). Alert patients, their families and their caregivers to the need to monitor patients daily for the emergence of anxiety, agitation, panic attacks, insomnia, irritability, hostility, aggressiveness, impulsivity, akathisia, hypomania, mania, other unusual changes in behavior, depression and suicidal ideation, especially early during treatment and when the dosage is adjusted, and to report such symptoms immediately to a health care provider. Caution patients that severe liver injury may develop, and instruct them to contact their health care provider immediately for pruritus, dark urine, jaundice, right upper quadrant tenderness, or unexplained flu-like symptoms. Instruct patients who develop exertional chest pain, unexplained syncope or other symptoms suggestive of cardiac disease to stop STRATTERA and contact a health care provider. Inform patients that STRATTERA can increase blood pressure and heart rate, and instruct them and their caregivers to look for signs of activation of mania/hypomania and psychosis, and to contact their health care provider as soon as possible if they notice an increase in aggression or hostility. Instruct parents or guardians of paediatric patients and adult patients that priapism requires prompt medical attention. STRATTERA is an ocular irritant; capsules are not intended to be opened, and if capsule contents contact the eye the eye should be flushed immediately with water and medical advice obtained, and hands and potentially contaminated surfaces should be washed as soon as possible. Instruct patients to consult a health care provider if they are taking or plan to take any prescription or over-the-counter drugs, dietary supplements or herbal remedies. Patients should be instructed to use caution when driving a car or operating hazardous machinery because of somnolence until they are reasonably certain that their performance is not affected (STRATTERA label, sections 6.1 and 17).",
+    "warnings": [
+      "WARNING (boxed): SUICIDAL THOUGHTS AND BEHAVIORS IN PEDIATRIC PATIENTS 6 YEARS OF AGE AND OLDER - all STRATTERA-treated pediatric patients should be monitored and observed closely for suicidal thoughts and behavior, clinical worsening, or unusual changes in behavior, especially during the initial months of therapy or at times of dosage changes; consider stopping STRATTERA in patients who experience emergent suicidal thoughts and behavior; STRATTERA increased the risk of suicidal ideation in pediatric patients aged 6 years and older with ADHD in short-term studies (STRATTERA label, Boxed Warning and section 5.1)",
+      "Severe liver injury: STRATTERA should be discontinued and not restarted in patients with jaundice or laboratory evidence of liver injury; rare cases of liver failure have been reported during postmarketing use, including a case that resulted in a liver transplant, and most reported cases occurred within 120 days of initiation (STRATTERA label, section 5.2)",
+      "Serious cardiovascular reactions: STRATTERA should generally not be used in pediatric patients with known serious structural cardiac abnormalities, cardiomyopathy, serious arrhythmias or other serious cardiac problems, and consideration should be given to not treating adults with clinically significant cardiac abnormalities; sudden death has been reported in association with atomoxetine treatment at the recommended dosage in pediatric patients with structural cardiac abnormalities or other serious heart problems, and sudden deaths, stroke and myocardial infarction have been reported in STRATTERA-treated adults at the recommended ADHD dosage (STRATTERA label, section 5.3)",
+      "Increase in blood pressure and heart rate: a greater proportion of STRATTERA-treated patients than placebo-treated patients had an increase in diastolic blood pressure of 15 mm Hg or more, systolic blood pressure of 20 mm Hg or more, or heart rate of 20 bpm or more; tachycardia was identified as an adverse reaction in 0.3% (5/1,597) of STRATTERA-treated pediatric patients versus 0% (0/934) of placebo-treated patients and in 1.5% (8/540) of adults versus 0.5% (2/402) of placebo-treated patients; orthostatic hypotension and syncope have been reported (STRATTERA label, section 5.4)",
+      "New psychotic or manic symptoms and activation of mania: psychotic symptoms such as hallucinations and delusional thinking and manic symptoms can be caused by STRATTERA at the recommended dosage; if psychotic or manic symptoms occur, consider discontinuing STRATTERA (STRATTERA label, section 5.5)",
+      "Screening for bipolar disorder: patients with bipolar disorder or risk factors for it may be at increased risk of developing mania or mixed episodes during treatment (STRATTERA label, section 5.6)",
+      "Aggressive behavior or hostility: there is evidence that STRATTERA may cause the emergence or worsening of aggressive behavior or hostility; monitor patients beginning treatment for the appearance or worsening of aggressive behavior or hostility (STRATTERA label, section 5.7)",
+      "Effects on urine outflow: in adult ADHD controlled studies, urinary retention occurred in 1.7% (9/540) and urinary hesitation in 5.6% (30/540) of STRATTERA-treated patients compared with 0% (0/402) and 0.5% (2/402) of placebo-treated patients; two STRATTERA-treated adult patients discontinued from controlled studies because of urinary retention (STRATTERA label, section 5.9)",
+      "Priapism: rare postmarketing cases of priapism, defined as painful and non-painful penile erection lasting more than 4 hours, have been reported in pediatric and adult patients treated with STRATTERA; prompt medical attention is required (STRATTERA label, section 5.10)",
+      "Effect on growth in pediatric patients: closely monitor growth, for example weight and height, during STRATTERA treatment (STRATTERA label, section 5.11)",
+      "Hypersensitivity reactions: although uncommon, hypersensitivity reactions including anaphylaxis, angioneurotic edema, urticaria and rash have been reported in STRATTERA-treated patients (STRATTERA label, section 5.8)"
+    ],
+    "precautions": [
+      "Use with caution in any condition that may predispose patients to hypotension, or in conditions associated with abrupt heart rate or blood pressure changes, and in patients whose underlying medical conditions could be worsened by increases in blood pressure or heart rate, such as certain patients with hypertension, tachycardia or cardiovascular or cerebrovascular disease (STRATTERA label, section 5.4)",
+      "Consider genetic testing to determine the patient's CYP2D6 metabolizer status; in patients taking a concomitant strong CYP2D6 inhibitor or who are CYP2D6 poor metabolizers, a longer titration interval of 4 weeks is recommended if symptoms fail to improve and the initial dose is well tolerated (STRATTERA label, section 2.5)",
+      "Dose adjustments by hepatic impairment: severe hepatic impairment (Child-Pugh class C) - initial and target dose 25% of the recommended normal dose; moderate hepatic impairment (Child-Pugh class B) - initial and target dose 50% of the recommended normal dose; mild hepatic impairment (Child-Pugh class A) - same as normal hepatic function (STRATTERA label, section 2.4)",
+      "STRATTERA may be taken with or without food; take capsules whole and do not open them (STRATTERA label, section 2.2)",
+      "At least 14 days must elapse between discontinuation of an MAOI antidepressant and initiation of STRATTERA, and at least 14 days must elapse after stopping STRATTERA before starting an MAOI antidepressant (STRATTERA label, section 2.6)",
+      "STRATTERA is not a controlled substance, was not associated with stimulant or euphoriant properties in an abuse-potential study, and there was no evidence of symptom rebound or a withdrawal syndrome after discontinuation (STRATTERA label, sections 9.1, 9.2 and 9.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Suicidal ideation and behaviour in pediatric patients 6 years of age and older; in 12 studies with over 2,200 pediatric patients the mean incidence of suicidal ideation in STRATTERA-treated patients was 0.4% (5/1,357), including one suicide attempt, compared with 0% (0/851) in placebo-treated patients, with all ideations occurring in patients 6 to 12 years of age during the first month of treatment (STRATTERA label, Boxed Warning and section 5.1)",
+      "Severe liver injury, including rare cases of liver failure and one case resulting in liver transplant (STRATTERA label, section 5.2)",
+      "Serious cardiovascular reactions, including sudden death in paediatric patients with structural cardiac abnormalities or other serious heart problems, and sudden deaths, stroke and myocardial infarction in adults (STRATTERA label, section 5.3)",
+      "New psychotic or manic symptoms and activation of mania (STRATTERA label, section 5.5)",
+      "Severe hypertension and tachycardia (STRATTERA label, section 5.4)",
+      "Seizures (STRATTERA label, section 6.1)",
+      "Priapism (STRATTERA label, section 5.10)",
+      "Hypersensitivity reactions including anaphylaxis and angioneurotic edema (STRATTERA label, section 5.8)"
+    ],
+    "food_interactions": [
+      "Food: the pharmacokinetics of atomoxetine are affected by food - after oral administration with food the AUC is unchanged, Cmax is decreased 37% and Tmax is delayed 3 hours (STRATTERA label, section 12.3, Table 9). STRATTERA may be taken with or without food (STRATTERA label, section 2.2)."
+    ],
+    "pregnancy_category": "The STRATTERA label presents pregnancy under the Pregnancy and Lactation Labeling Rule risk-summary format and does not state an FDA letter category (STRATTERA label, section 8.1).",
+    "pregnancy_guidance": "Available published studies with STRATTERA use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes. Some animal reproduction studies of atomoxetine had adverse developmental outcomes: in 1 of 3 studies in pregnant rabbits dosed during organogenesis there were decreased live fetuses, an increase in early resorptions and slight increases in the incidences of atypical origin of the carotid artery and absent subclavian artery, observed at plasma levels 3 times and 0.4 times the human plasma levels in other CYP2D6 metabolizer types and in poor metabolizers receiving the maximum recommended human dose respectively; in rats dosed prior to mating and during organogenesis there was a decrease in fetal weight (female only) and an increase in the incidence of incomplete ossification of the vertebral arch at approximately 5 times the maximum recommended human dose on a mg/m2 basis; and in 1 of 2 studies in which rats were dosed prior to mating through organogenesis and lactation, decreased pup weight and decreased pup survival were observed at doses corresponding to 5 to 6 times the maximum recommended human dose on a mg/m2 basis. No adverse fetal effects were seen in pregnant rats dosed during the organogenesis period. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population it is 2 to 4% and 15 to 20% respectively. A pregnancy exposure registry that monitors pregnancy outcomes in women exposed to ADHD drugs, including STRATTERA, during pregnancy is available, and healthcare providers are encouraged to register patients (STRATTERA label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of atomoxetine or its metabolite in human milk, the effects on the breastfed child, or the effects on milk production. Atomoxetine is present in animal milk, and when a drug is present in animal milk it is likely that the drug will be present in human milk. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for STRATTERA and any potential adverse effects on the breastfed child from STRATTERA or from the underlying maternal condition (STRATTERA label, section 8.2).",
+    "overdose": "During postmarketing use there have been fatalities reported involving a mixed ingestion overdose of STRATTERA and at least one other drug. There have been no reports of death involving overdose of STRATTERA alone, including intentional overdoses at amounts up to 1,400 mg (14 times the maximum recommended dosage). The most commonly reported symptoms with acute and chronic overdoses were gastrointestinal symptoms, somnolence, dizziness, tremor and abnormal behaviour; hyperactivity and agitation have also been reported, and signs and symptoms consistent with mild to moderate sympathetic nervous system activation (for example tachycardia, increased blood pressure, mydriasis, dry mouth) have been observed. Most events were mild to moderate; in some cases seizures have been reported, and less commonly QT prolongation and mental changes including disorientation and hallucinations. If an overdose occurs, consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations. Because atomoxetine is highly protein-bound, dialysis is not likely to be useful in the treatment of STRATTERA overdose (STRATTERA label, section 10).",
+    "pharmacokinetics": "Atomoxetine is a CYP2D6 substrate. In other CYP2D6 metabolizer types (ultrarapid, normal and intermediate) and in CYP2D6 poor metabolizers respectively: dose proportionality over 10 to 120 mg; accumulation 1.1-fold versus 3.3-fold; absolute bioavailability 63% versus 94%; median Tmax 1 hour versus 2.5 hours; atomoxetine half-life 5.2 hours versus 21.6 hours; apparent oral clearance 0.35 L/hr/kg versus 0.03 L/hr/kg; and N-desmethylatomoxetine half-life 6 to 8 hours versus 34 to 40 hours, with N-desmethylatomoxetine concentration 5% versus 45% of the atomoxetine concentration. Protein binding is 98% and the volume of distribution is 0.85 L/kg. Greater than 80% of the administered dose is excreted in urine as 4-hydroxyatomoxetine-O-glucuronide and less than 3% as unchanged drug; less than 17% of the administered dose is excreted in faeces. The 4-hydroxyatomoxetine half-life is 6 to 8 hours in other metabolizer types. N-desmethylatomoxetine is formed by CYP2C19 and other cytochrome P450 enzymes but has substantially (20-fold) less pharmacological activity than atomoxetine. The prevalence of CYP2D6 poor metabolizers is approximately 7% in White populations, 2% in Asian populations and 2% in Black or African American populations (STRATTERA label, sections 8.7 and 12.3, Table 9). A dedicated QTc study in 120 healthy CYP2D6 poor metabolizers given STRATTERA 20 mg and 60 mg twice daily for 7 days showed no large changes in QTc interval (increases greater than 60 msec from baseline or absolute QTc greater than 480 msec), although small changes cannot be excluded and there was a slight increase in QTc interval with increased atomoxetine concentration (STRATTERA label, section 12.2).",
+    "clinical_pearls": [
+      "Atomoxetine is a selective norepinephrine reuptake inhibitor and is not a CNS stimulant; in the United States it is not a controlled substance, and in an abuse-potential study it was not associated with stimulant or euphoriant properties, and there was no withdrawal syndrome on discontinuation (STRATTERA label, sections 9.1, 9.2 and 9.3).",
+      "The boxed warning applies to pediatric patients 6 years and older with ADHD: the mean incidence of suicidal ideation was 0.4% (5/1,357) versus 0% (0/851) on placebo, with all events in patients aged 6 to 12 years and all occurring during the first month of treatment (STRATTERA label, Boxed Warning and section 5.1).",
+      "CYP2D6 genotype materially changes exposure: poor metabolizers have approximately double the bioavailability, roughly four times the half-life and roughly ten times lower apparent oral clearance, and a higher mean heart rate increase, so a 4-week titration interval is recommended in poor metabolizers and in patients on a strong CYP2D6 inhibitor (STRATTERA label, sections 2.5, 5.4 and 12.3, Table 9).",
+      "Hepatic impairment requires dose reduction to 50% (moderate, Child-Pugh B) or 25% (severe, Child-Pugh C) of the normal initial and target dose, because atomoxetine exposure is increased 2-fold and 4-fold respectively (STRATTERA label, sections 2.4, 8.6 and 12.3).",
+      "The label is explicit that atomoxetine is a non-stimulant, so it is often confused with methylphenidate; in the Kenyan Essential Medicines List 2023, atomoxetine tablet 10 mg is listed at level of use 6 alongside methylphenidate for ADHD, with the note that it is for management of ADHD especially in children (KEML 2023, item 25.6.1).",
+      "Severe liver injury is the idiosyncratic and potentially fatal toxicity: most postmarketing cases occurred within 120 days of initiation, some with liver enzymes more than 20 times the upper limit of normal, and one case recurred on rechallenge (STRATTERA label, section 5.2).",
+      "Because no taper is needed on discontinuation and there is no withdrawal syndrome, but cardiac and blood pressure effects persist, monitoring of blood pressure and heart rate at baseline, after each dose increase and periodically is required (STRATTERA label, sections 2.8 and 5.4).",
+      "Atomoxetine is an ocular irritant and the capsules must not be opened; if capsule contents contact the eye the eye should be flushed immediately with water and medical advice obtained (STRATTERA label, section 17)."
+    ],
+    "brand_names": ["Strattera"],
+    "black_box_warnings": [
+      "WARNING: SUICIDAL THOUGHTS AND BEHAVIORS IN PEDIATRIC PATIENTS 6 YEARS OF AGE AND OLDER - all STRATTERA-treated pediatric patients should be monitored and observed closely for suicidal thoughts and behavior, clinical worsening, or unusual changes in behavior, especially during the initial months of therapy or at times of dosage changes; consider stopping STRATTERA in patients who experience emergent suicidal thoughts and behavior; STRATTERA increased the risk of suicidal ideation in pediatric patients aged 6 years of age and older with attention-deficit/hyperactivity disorder (ADHD) in short-term studies (STRATTERA label, Boxed Warning and section 5.1)"
+    ],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the STRATTERA label; the pharmacokinetics section states that the effect of renal impairment on atomoxetine exposure is not described and dose adjustment recommendations are given only for hepatic impairment (STRATTERA label, sections 2.4 and 12.3).",
+    "hepatic_dose_adjustment": "Severe hepatic impairment (Child-Pugh class C): initial and target dose 25% of the recommended dose in normal hepatic function. Moderate hepatic impairment (Child-Pugh class B): initial and target dose 50% of the recommended dose in normal hepatic function. Mild hepatic impairment (Child-Pugh class A): same as normal hepatic function. Atomoxetine exposure (AUC) is increased 2-fold in moderate and 4-fold in severe hepatic impairment (STRATTERA label, sections 2.4 and 8.6).",
+    "administration_instructions": "Oral use only. STRATTERA may be taken with or without food. Take STRATTERA capsules whole; do not open the capsules. Administer either as a once-daily dosage in the morning or as an evenly divided twice-daily dosage in the morning and in the late afternoon/early evening. If a dose is missed, take it as soon as possible but do not take more than the prescribed total daily amount in any 24-hour period. No taper is needed when discontinuing. Store at 25 degrees C (77 degrees F); excursions permitted between 15 and 30 degrees C (59 to 86 degrees F) (STRATTERA label, sections 2.2, 2.7, 2.8 and 16.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "STRATTERA label, sections 11, 12.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "indications",
+      "ref": "STRATTERA label, section 1; Kenya Essential Medicines List 2023, item 25.6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "contraindications",
+      "ref": "STRATTERA label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "side_effects",
+      "ref": "STRATTERA label, sections 5.4, 6, 6.1 (Tables 2, 5 and 7) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "dosage",
+      "ref": "STRATTERA label, sections 2.2, 2.3, 2.7, 2.8, 5.11, 8.4, 8.5 and Table 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "interactions",
+      "ref": "STRATTERA label, sections 2.6, 7 (Table 8) and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "monitoring",
+      "ref": "STRATTERA label, sections 2.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.9 and 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "STRATTERA label, sections 6.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "warnings",
+      "ref": "STRATTERA label, Boxed Warning and sections 5.1-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "precautions",
+      "ref": "STRATTERA label, sections 2.2, 2.4, 2.5, 2.6, 5.4, 9.1, 9.2 and 9.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "STRATTERA label, Boxed Warning and sections 5.1-5.5, 5.8, 5.10 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "STRATTERA label, sections 2.2 and 12.3, Table 9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "STRATTERA label, section 8.1 (risk-summary format, no FDA letter category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "STRATTERA label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "STRATTERA label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "overdose",
+      "ref": "STRATTERA label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "STRATTERA label, sections 8.7, 12.2 and 12.3, Table 9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "STRATTERA label, Boxed Warning, sections 2.4, 2.5, 2.8, 5.1, 5.2, 5.4, 9.1, 9.2, 9.3, 12.3 and 17; KEML 2023 item 25.6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "brand_names",
+      "ref": "STRATTERA (atomoxetine hydrochloride) capsules, Eli Lilly and Company, listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "STRATTERA label, Boxed Warning (Suicidal Thoughts and Behaviors in Pediatric Patients 6 Years of Age and Older)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "STRATTERA label, sections 2.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "STRATTERA label, sections 2.4 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "STRATTERA label, sections 2.2, 2.7, 2.8 and 16.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=309de576-c318-404a-bc15-660c2b1876fb"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult regimen is given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen and growth data are given in fields.dosage.paediatric)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the STRATTERA label)"
+  ],
+  "notes": "The table stores this agent as 'Atomoxetine' with brand name 'Atomoxetine' and drug_class 'Central nervous system agent'. Atomoxetine is a selective norepinephrine reuptake inhibitor (SNRI) for ADHD; the only FDA-approved brand product is STRATTERA (Eli Lilly, DailyMed setid 309de576-c318-404a-bc15-660c2b1876fb), which is the source used throughout. The boxed warning on suicidal thoughts and behaviours applies to pediatric patients 6 years and older and is reproduced verbatim in black_box_warnings. The label uses the Pregnancy and Lactation Labeling Rule risk-summary format and does not state an FDA letter category, so pregnancy_category reports that fact rather than a letter. Atomoxetine is not listed on the WHO Model List of Essential Medicines (24th list, 2025); it is listed in the Kenya Essential Medicines List 2023 as atomoxetine tablet 10 mg at level of use 6 under section 25.6 (medicines used in ADHD), with the note that it is for management of ADHD especially in children. Atomoxetine is a non-stimulant and is not a controlled substance in the United States; note that in the United Kingdom atomoxetine is a controlled drug, which is not covered by the FDA label and is therefore not asserted here."
+}

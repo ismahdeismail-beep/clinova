@@ -1,0 +1,208 @@
+{
+  "name": "Apixaban",
+  "existing_id": "dba9666c-8f22-4826-ac45-620bb89ffac2",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Apixaban is a direct factor Xa (FXa) inhibitor. It does not require antithrombin III for its antithrombotic activity; it inhibits free and clot-bound FXa and prothrombinase activity, decreasing thrombin generation and thrombus development. Apixaban has no direct effect on platelet aggregation but indirectly inhibits platelet aggregation induced by thrombin (FDA Eliquis (apixaban) tablets label, section 12.1).",
+    "indications": [
+      "Reduction of the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation (FDA Eliquis label, sections 1 and 1.1).",
+      "Prophylaxis of deep vein thrombosis (DVT), which may lead to pulmonary embolism (PE), in adult patients who have undergone hip or knee replacement surgery (FDA Eliquis label, sections 1 and 1.2).",
+      "Treatment of DVT and PE in adults, and reduction in the risk of recurrent DVT and PE in adult patients following initial therapy (FDA Eliquis label, sections 1, 1.3, 1.4 and 1.5).",
+      "Treatment of venous thromboembolism (VTE) and reduction in the risk of recurrent VTE in pediatric patients from birth and older after at least 5 days of initial anticoagulant treatment (FDA Eliquis label, sections 1 and 1.6).",
+      "WHO Model List of Essential Medicines 23rd List (2023), section 10.2 'Medicines affecting coagulation': apixaban is listed as a therapeutic alternative to dabigatran (WHO EML 23rd List, 2023)."
+    ],
+    "contraindications": [
+      "Active pathological bleeding (FDA Eliquis label, section 4).",
+      "Severe hypersensitivity reaction to apixaban or to ELIQUIS (e.g. anaphylactic reactions) (FDA Eliquis label, section 4)."
+    ],
+    "side_effects": [
+      "Bleeding is the most common adverse reaction: in adults, bleeding-related adverse reactions occurred in 15.6% of apixaban-treated patients in the AMPLIFY study versus 24.6% with enoxaparin/warfarin, and bleeding was the most common reason for treatment discontinuation in ARISTOTLE (1.7% with apixaban versus 2.5% with warfarin) (FDA Eliquis label, section 6.1).",
+      "In ARISTOTLE (nonvalvular atrial fibrillation), major bleeding occurred in 2.13% per patient-year with apixaban versus 3.09% with warfarin; intracranial haemorrhage 0.33 versus 0.82 per 100 patient-years; gastrointestinal bleeding 0.83 versus 0.93; fatal bleeding 0.06 versus 0.24 (FDA Eliquis label, section 6.1, Table 2).",
+      "In ARISTOTLE, concomitant aspirin increased bleeding on apixaban from 1.8% to 3.4% per year (FDA Eliquis label, section 7.3).",
+      "Adverse reactions occurring in 1% or more of apixaban-treated patients in the hip or knee replacement surgery trials: nausea 2.6%, anemia 2.6%, contusion 1.4%, haemorrhage 1.1% (FDA Eliquis label, section 6.1, Table 5).",
+      "Common adverse reactions (1% or more) in the AMPLIFY/AMPLIFY-EXT DVT and PE studies: gingival bleeding, epistaxis, contusion, hematuria, rectal haemorrhage, hematoma, menorrhagia and hemoptysis (FDA Eliquis label, section 6.1).",
+      "Less common adverse reactions (0.1% to 1%) included thrombocytopenia, hypotension, GI haemorrhage, hematemesis, melena, hematochezia, haemorrhoidal haemorrhage, muscle haemorrhage, vaginal/metrorrhomenorrhagia, conjunctival and retinal haemorrhage, petechiae, ecchymosis, injection-site haematoma and vessel puncture-site haematoma (FDA Eliquis label, section 6.1).",
+      "Pediatric patients: the most common adverse reactions (10% or more) were headache 16.4%, vomiting 13.8%, and excessive menstrual bleeding 11% (apixaban group) versus 4% with standard of care; epistaxis 16% versus 19% (FDA Eliquis label, section 6.1, Tables 10 and 11)."
+    ],
+    "dosage": {
+      "adult": "Nonvalvular atrial fibrillation: 5 mg orally twice daily; reduce to 2.5 mg twice daily in patients with at least two of the following: age 80 years or older, body weight 60 kg or less, or serum creatinine 1.5 mg/dL or greater (FDA Eliquis label, sections 2 and 2.1). Prophylaxis of DVT after hip or knee replacement surgery: 2.5 mg orally twice daily, starting 12 to 24 hours after surgery, for 35 days after hip replacement and 12 days after knee replacement (FDA Eliquis label, sections 2 and 2.1). Treatment of DVT and PE: 10 mg orally twice daily for 7 days, then 5 mg orally twice daily (FDA Eliquis label, sections 2 and 2.1). Reduction in the risk of recurrent DVT and PE: 2.5 mg orally twice daily after at least 6 months of treatment for DVT or PE (FDA Eliquis label, sections 2 and 2.1). Missed dose: take it as soon as possible on the same day and resume twice-daily dosing; do not double the dose (FDA Eliquis label, section 2.3).",
+      "geriatric": "Of the subjects in ARISTOTLE and AVERROES, more than 69% were 65 years of age and older and more than 31% were 75 years or older. No clinically significant differences in safety or effectiveness were observed when comparing subjects in different age groups (FDA Eliquis label, section 8.5). Dose reduction to 2.5 mg twice daily in nonvalvular atrial fibrillation applies to patients aged 80 years or older who also meet at least one other criterion (section 2.1).",
+      "paediatric": "Safety and effectiveness have been established for treatment of VTE and reduction in the risk of recurrent VTE in pediatric patients from birth and older, supported by a randomized, active-controlled, open-label, multicentre study (FDA Eliquis label, section 8.4). Dosing is weight-based: Days 1-7 versus Days 8 and beyond - 2.6 to <4 kg: 0.3 mg then 0.15 mg twice daily; 4 to <6 kg: 1 mg then 0.5 mg twice daily; 6 to <9 kg: 2 mg then 1 mg twice daily; 9 to <12 kg: 3 mg then 1.5 mg twice daily; 12 to <18 kg: 4 mg then 2 mg twice daily; 18 to <25 kg: 6 mg then 3 mg twice daily; 25 to <35 kg: 8 mg then 4 mg twice daily; 35 kg or more: 10 mg then 5 mg twice daily. Apixaban is not recommended in pediatric patients weighing less than 2.6 kg (FDA Eliquis label, sections 2.2 and 3). In pediatric patients 2 years of age and older, apixaban is not recommended when eGFR is below 30 mL/min/1.73 m2, and in patients under 2 years it is not recommended in those with inadequate renal function as defined in the paediatric VTE trial (FDA Eliquis label, section 8.6)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Combined P-gp and strong CYP3A4 inhibitors (e.g. ketoconazole, itraconazole, ritonavir): increase apixaban exposure and bleeding risk. For patients on 5 mg or 10 mg twice daily, reduce the apixaban dose by 50%; for patients already on 2.5 mg twice daily, avoid coadministration (FDA Eliquis label, sections 2.6, 7.1 and 12.3).",
+      "Clarithromycin is a combined P-gp and strong CYP3A4 inhibitor, but pharmacokinetic data suggest no dose adjustment is necessary with concomitant apixaban (FDA Eliquis label, section 7.1).",
+      "Combined P-gp and strong CYP3A4 inducers (e.g. rifampin, carbamazepine, phenytoin, St John's wort): decrease apixaban exposure, increasing the risk of stroke and other thromboembolic events; avoid concomitant use (FDA Eliquis label, sections 7.2 and 12.3).",
+      "Anticoagulants and antiplatelet agents: coadministration of antiplatelet agents, fibrinolytics, heparin, aspirin and chronic NSAID use increases bleeding risk. In APPRAISE-2, ISTH major bleeding was 2.8% per year with apixaban versus 0.6% with placebo on single antiplatelet therapy, and 5.9% versus 2.5% on dual antiplatelet therapy (FDA Eliquis label, section 7.3).",
+      "Specific drugs with no meaningful pharmacokinetic interaction in dedicated studies: famotidine, atenolol, prasugrel and enoxaparin did not meaningfully alter apixaban pharmacokinetics; apixaban did not meaningfully alter the pharmacokinetics of digoxin, naproxen, atenolol, prasugrel or acetylsalicylic acid (FDA Eliquis label, section 12.3)."
+    ],
+    "monitoring": "The Eliquis labelling does not specify any routine laboratory test for monitoring anticoagulant effect; assessment is clinical. Promptly evaluate signs and symptoms of blood loss and of hypovolaemia, and discontinue ELIQUIS in patients with active pathological haemorrhage (FDA Eliquis label, sections 5.2 and 17). For nonvalvular atrial fibrillation, weight, age and serum creatinine should be known because the 2.5 mg twice-daily dose applies when at least two of the three criteria are met (section 2.1). In patients with neuraxial anaesthesia or spinal puncture, monitor frequently for signs and symptoms of neurological impairment (numbness or weakness of the legs, or bowel or bladder dysfunction) and institute urgent diagnosis and treatment if neurological compromise is noted (section 5.3). When PCCs are used, monitoring for the anticoagulation effect of apixaban using a clotting test (PT, INR or aPTT) or anti-factor Xa activity is not useful and is not recommended (section 5.2). Renal and hepatic function should be assessed to guide dosing and to identify patients in whom apixaban is not recommended (sections 8.6 and 8.7). In paediatric patients the dose is weight-based, so weight must be tracked at each visit and the caregiver instructed not to adjust the dose themselves (section 17).",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling (Medication Guide and Instructions for Use). Tell them not to discontinue ELIQUIS without speaking to their prescriber, because stopping increases the risk of stroke; if it must be stopped for a reason other than pathological bleeding or completion of therapy, another anticoagulant may be needed (FDA Eliquis label, sections 5.1 and 17). Explain that bleeding may take longer than usual to stop and that bruising may occur more easily, and teach the bleeding signs to report immediately or treat as an emergency: unusual bleeding from the gums, frequent nosebleeds, heavier-than-normal menstrual or vaginal bleeding, severe or uncontrollable bleeding, red, pink or brown urine, red or black tarry stools, coughing up blood or clots, vomiting blood or 'coffee-ground' material, unexpected pain, swelling or joint pain, and headaches with dizziness or weakness (FDA Eliquis label, sections 5.2 and 17). Tell patients and dentists that they take ELIQUIS and any other medicine affecting bleeding (including nonprescription aspirin and NSAIDs) before any surgery, dental procedure or new medicine (section 17). Warn patients having neuraxial anaesthesia or spinal puncture to watch for back pain, tingling, numbness or muscle weakness especially in the legs and feet, or loss of bladder or bowel control, and to seek emergency care (sections 5.3 and 17). Advise patients to tell their prescriber if pregnant, planning pregnancy, breastfeeding or intending to breastfeed; breastfeeding is not recommended during treatment (sections 8.1, 8.2 and 17). Advise that if a dose is missed it should be taken as soon as remembered on the same day, with no doubling (sections 2.3 and 17). For children: give the medicine exactly as instructed, keep scheduled appointments because the dose is weight-based and may need adjustment as the child grows, and if the child vomits or spits up within 30 minutes repeat the dose, whereas if it occurs more than 30 minutes after the dose do not repeat it (section 17).",
+    "warnings": [
+      "WARNING (boxed): Premature discontinuation of ELIQUIS increases the risk of thrombotic events. If anticoagulation is discontinued for a reason other than pathological bleeding or completion of a course of therapy, consider coverage with another anticoagulant (FDA Eliquis label, Boxed Warning and section 5.1).",
+      "WARNING (boxed): Spinal/epidural hematoma. Epidural or spinal hematomas may occur in patients receiving ELIQUIS who undergo neuraxial anaesthesia or spinal puncture, and may result in long-term or permanent paralysis. Risk factors include indwelling epidural catheters, concomitant NSAIDs, platelet inhibitors or other anticoagulants, a history of traumatic or repeated epidural or spinal punctures, and spinal deformity or prior spinal surgery (FDA Eliquis label, Boxed Warning and section 5.3).",
+      "Serious, potentially fatal bleeding; concomitant use of drugs affecting haemostasis (aspirin and other antiplatelet agents, other anticoagulants, heparin, thrombolytics, SSRIs, SNRIs and NSAIDs) increases bleeding risk. Discontinue ELIQUIS in patients with active pathological haemorrhage (FDA Eliquis label, section 5.2).",
+      "Neuraxial anaesthesia or puncture: do not remove indwelling epidural or intrathecal catheters earlier than 24 hours after the last apixaban dose, and do not give the next dose earlier than 5 hours after catheter removal; if traumatic puncture occurs, delay apixaban for 48 hours (FDA Eliquis label, section 5.3).",
+      "Safety and efficacy have not been studied in patients with prosthetic heart valves; use of apixaban is not recommended in these patients (FDA Eliquis label, section 5.4).",
+      "Initiation of apixaban is not recommended as an alternative to unfractionated heparin for initial treatment of PE in patients with hemodynamic instability or who may require thrombolysis or pulmonary embolectomy (FDA Eliquis label, section 5.5).",
+      "Direct-acting oral anticoagulants, including apixaban, are not recommended in patients with triple-positive antiphospholipid syndrome because treatment has been associated with increased recurrent thrombotic events compared with vitamin K antagonist therapy (FDA Eliquis label, section 5.6)."
+    ],
+    "precautions": [
+      "Temporary interruption for surgery: discontinue apixaban at least 48 hours before elective surgery or invasive procedures with a moderate or high risk of unacceptable or clinically significant bleeding, and at least 24 hours before procedures with a low bleeding risk; bridging anticoagulation during the 24 to 48 hours after stopping apixaban is not generally required, and apixaban may be restarted once adequate haemostasis is established (FDA Eliquis label, section 2.4).",
+      "Switching: start apixaban when INR is below 2.0 after stopping warfarin; when switching from apixaban to warfarin, initial INR measurements may not be useful, so a parenteral anticoagulant plus warfarin can be started at the time of the next apixaban dose (FDA Eliquis label, section 2.5).",
+      "Administration options: adults and pediatric patients 35 kg or more who cannot swallow whole tablets may have 5 mg or 2.5 mg tablets crushed and suspended in water, 5% dextrose in water or apple juice, or mixed with applesauce, or crushed and suspended in 60 mL of water or D5W and delivered through a 12 French nasogastric tube followed by a 20 mL flush; crushed tablets are stable in these vehicles for up to 4 hours. Pediatric patients under 35 kg use the 0.15 mg SPRINKLE capsule (open and sprinkle into water or infant formula, use within 2 hours, do not swallow the capsule) or the 0.5 mg tablet for oral suspension (mix with water, infant formula, apple juice or applesauce, use within 2 hours, or immediately for applesauce) (FDA Eliquis label, section 2.7).",
+      "Hemodialysis does not appear to have a substantial impact on apixaban exposure; protamine sulfate and vitamin K are not expected to affect the anticoagulant activity of apixaban (FDA Eliquis label, section 5.2).",
+      "Premature discontinuation for any reason other than pathological bleeding or completion of therapy requires consideration of alternative anticoagulant cover (FDA Eliquis label, section 5.1)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious and potentially fatal bleeding, including intracranial, gastrointestinal and fatal bleeding (FDA Eliquis label, sections 5.2 and 6.1).",
+      "Spinal/epidural haematoma, which may result in long-term or permanent paralysis (FDA Eliquis label, Boxed Warning and section 5.3).",
+      "Increased risk of thrombotic events, including stroke, after premature discontinuation of apixaban (FDA Eliquis label, Boxed Warning and section 5.1).",
+      "Hypersensitivity reactions, including anaphylaxis (FDA Eliquis label, sections 4 and 6.1)."
+    ],
+    "food_interactions": [
+      "No food interaction is described in the FDA Eliquis labelling: food does not affect the bioavailability of apixaban (FDA Eliquis label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Limited data on the use of ELIQUIS in pregnant women are insufficient to inform drug-associated risks of major birth defects, miscarriage or adverse developmental outcomes, and treatment may increase the risk of bleeding during pregnancy and delivery. In animal reproduction studies no adverse developmental effects were seen when apixaban was administered to rats (orally), rabbits (intravenously) and mice (orally) during organogenesis at unbound exposures up to 4, 1 and 19 times the human exposure at the maximum recommended human dose of 5 mg twice daily. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA Eliquis label, section 8.1). Females of reproductive potential requiring anticoagulation should discuss pregnancy planning with their physician (section 8.3).",
+    "lactation_guidance": "There are no data on the presence of apixaban or its metabolites in human milk, on the effects on the breastfed child, or on milk production. Apixaban and/or its metabolites were present in the milk of rats, with a milk-to-plasma AUC(0-24) ratio of 30:1, and maximal milk concentrations were observed 6 hours after dosing. Because human exposure through milk is unknown, breastfeeding is not recommended during treatment with ELIQUIS (FDA Eliquis label, section 8.2).",
+    "overdose": "Overdose of ELIQUIS increases the risk of bleeding. In healthy subjects, administration of activated charcoal 2 and 6 hours after ingestion of a 20 mg dose of apixaban reduced mean apixaban AUC by 50% and 27% respectively, so activated charcoal may be useful in managing apixaban overdose or accidental ingestion. A specific reversal agent (andexanet alfa) that antagonises the pharmacodynamic effect of apixaban is available for adults. Contact the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (FDA Eliquis label, section 10).",
+    "pharmacokinetics": "Absorption: absolute bioavailability is approximately 50% for doses up to 10 mg; food does not affect bioavailability; Cmax appears 3 to 4 hours after oral administration; at doses of 25 mg or more, apixaban displays dissolution-limited absorption with decreased bioavailability. Distribution: plasma protein binding is approximately 87% and the volume of distribution is approximately 21 L. Metabolism: approximately 25% of an oral dose is recovered in urine and faeces as metabolites; apixaban is metabolised mainly via CYP3A4 with minor contributions from CYP1A2, 2C8, 2C9, 2C19 and 2J2; unchanged apixaban is the major drug-related component in plasma and there are no active circulating metabolites. Elimination: apixaban is eliminated in both urine and faeces, with renal excretion accounting for about 27% of total clearance; total clearance is approximately 3.3 L/hour and the apparent half-life is approximately 12 hours after oral administration. Apixaban is a substrate of P-gp and breast cancer resistance protein (FDA Eliquis label, section 12.3).",
+    "clinical_pearls": [
+      "Apixaban is dosed 5 mg twice daily for most nonvalvular atrial fibrillation patients, but 2.5 mg twice daily when at least two of three criteria apply (age 80 years or older, weight 60 kg or less, serum creatinine 1.5 mg/dL or greater) - counting the criteria is a common prescribing error (FDA Eliquis label, section 2.1).",
+      "Andexanet alfa is the specific reversal agent for apixaban in adults; protamine sulfate and vitamin K are not expected to work. Activated charcoal given within 2 or 6 hours of a 20 mg dose reduced apixaban AUC by 50% and 27% respectively (FDA Eliquis label, sections 5.2 and 10).",
+      "Apixaban has no antidote for the reversal of its anticoagulant effect in pediatric patients; andexanet alfa safety and efficacy have not been established in pediatric patients (FDA Eliquis label, section 5.2).",
+      "Switching from warfarin: start apixaban when the INR is below 2.0 (FDA Eliquis label, section 2.5).",
+      "When apixaban is stopped for a reason other than pathological bleeding or completion of therapy, cover the patient with another anticoagulant because the risk of stroke rises (FDA Eliquis label, Boxed Warning and section 5.1).",
+      "The WHO Model List of Essential Medicines 23rd List (2023) places apixaban as a therapeutic alternative to dabigatran within section 10.2 'Medicines affecting coagulation', i.e. it is not the first-listed example for the class in that list (WHO EML 23rd List, 2023)."
+    ],
+    "brand_names": ["Eliquis (apixaban) tablets, Bristol-Myers Squibb / Pfizer"],
+    "black_box_warnings": [
+      "Premature discontinuation of ELIQUIS increases the risk of thrombotic events. If anticoagulation with ELIQUIS is discontinued for a reason other than pathological bleeding or completion of a course of therapy, consider coverage with another anticoagulant (FDA Eliquis label, Boxed Warning (A)).",
+      "Spinal/epidural hematoma. Epidural or spinal hematomas may occur in patients treated with ELIQUIS who are receiving neuraxial anaesthesia or undergoing spinal puncture. These hematomas may result in long-term or permanent paralysis. Factors that can increase the risk include use of indwelling epidural catheters, concomitant use of other drugs that affect haemostasis (NSAIDs, platelet inhibitors, other anticoagulants), a history of traumatic or repeated epidural or spinal punctures, and a history of spinal deformity or spinal surgery (FDA Eliquis label, Boxed Warning (B))."
+    ],
+    "renal_dose_adjustment": "No dose adjustment is recommended for patients with renal impairment, including those with end-stage renal disease (ESRD) on dialysis, for the prophylaxis of DVT after hip or knee replacement surgery and for the treatment of DVT and PE and reduction in recurrent DVT/PE; clinical efficacy and safety studies did not enrol patients with ESRD on dialysis or a creatinine clearance below 15 mL/min, so these recommendations are based on pharmacokinetic and pharmacodynamic data (FDA Eliquis label, section 8.6). For nonvalvular atrial fibrillation the recommended dose is 2.5 mg twice daily in patients with at least two of the criteria of age 80 years or older, weight 60 kg or less, or serum creatinine 1.5 mg/dL or greater (section 8.6). In pediatric patients 2 years of age and older apixaban is not recommended when eGFR is below 30 mL/min/1.73 m2, and in patients under 2 years it is not recommended in those with inadequate renal function as defined in the paediatric VTE trial (section 8.6).",
+    "hepatic_dose_adjustment": "No dose adjustment is required in patients with mild hepatic impairment (Child-Pugh class A). Because patients with moderate hepatic impairment (Child-Pugh class B) may have intrinsic coagulation abnormalities and clinical experience is limited, dosing recommendations cannot be provided. Apixaban is not recommended in patients with severe hepatic impairment (Child-Pugh class C). Apixaban has not been studied in pediatric patients with hepatic impairment (FDA Eliquis label, section 8.7).",
+    "administration_instructions": "Oral administration, with or without food. Take twice daily at the same time each day; do not change the dose or stop without consulting the prescriber. If a dose is missed, take it as soon as remembered on the same day and do not double up (FDA Eliquis label, sections 2.3 and 17). Tablets may be crushed and suspended in water, 5% dextrose in water or apple juice, or mixed with applesauce, or crushed in 60 mL of water or D5W and given through a 12 French nasogastric tube followed by a 20 mL flush (section 2.7). Pediatric patients under 35 kg use the 0.15 mg SPRINKLE capsule sprinkled into water or infant formula and used within 2 hours (do not swallow the capsule), or the 0.5 mg tablet for oral suspension mixed with water, infant formula, apple juice or applesauce and used within 2 hours (or immediately for the applesauce mixture) (section 2.7). Store ELIQUIS and ELIQUIS SPRINKLE at 20 degrees C to 25 degrees C (68 degrees F to 77 degrees F), with excursions permitted between 15 degrees C and 30 degrees C (FDA Eliquis label, section 16.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Eliquis (apixaban) tablets, Bristol-Myers Squibb / Pfizer (E.R. Squibb & Sons), section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Eliquis label, sections 1, 1.1 to 1.6; WHO Model List of Essential Medicines 23rd List (2023), section 10.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Eliquis label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Eliquis label, sections 6.1 and 7.3 (Tables 2, 5, 10 and 11)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Eliquis label, sections 2, 2.1, 2.2, 2.3, 3, 8.4, 8.5 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Eliquis label, sections 2.6, 7.1, 7.2, 7.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Eliquis label, sections 2.1, 5.1, 5.2, 5.3, 8.6, 8.7 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Eliquis label, section 17 and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Eliquis label, Boxed Warning and sections 5.1 to 5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Eliquis label, sections 2.4, 2.5, 2.7, 5.1 and 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Eliquis label, Boxed Warning and sections 4, 5.1, 5.2, 5.3 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Eliquis label, section 12.3 (no food interaction described)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Eliquis label, sections 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Eliquis label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Eliquis label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Eliquis label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Eliquis label, Boxed Warning, sections 2.1, 2.5, 5.1, 5.2 and 10; WHO Model List of Essential Medicines 23rd List (2023), section 10.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Eliquis (apixaban) tablets listed on DailyMed as the Bristol-Myers Squibb / Pfizer (E.R. Squibb & Sons) product; WHO Model List of Essential Medicines 23rd List (2023) generic entry for apixaban",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA Eliquis label, Boxed Warning (A) and (B)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Eliquis label, sections 2.1 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Eliquis label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Eliquis label, sections 2.3, 2.7, 16.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA Eliquis label uses the Pregnancy and Lactation Labeling Rule risk summary and does not state a letter pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Apixaban'. Content is drawn from the FDA/DailyMed label for Eliquis (apixaban) tablets (Bristol-Myers Squibb / Pfizer, E.R. Squibb & Sons) and from the WHO Model List of Essential Medicines 23rd List (2023), section 10.2, where apixaban is listed as a therapeutic alternative to dabigatran rather than as the class example. The prior row carried a brand name recorded simply as 'apixaban' (the INN, not a brand); the actual marketed brand is Eliquis. No FDA letter pregnancy category is stated, so pregnancy_category is null. The Kenya Essential Medicines List 2023 does not list apixaban, so no KEML-specific sourcing is claimed for this agent. The Eliquis labelling states no routine laboratory monitoring is required; the monitoring entry above therefore describes the clinical and pharmacokinetic-based monitoring that the label does specify, and does not invent a laboratory schedule."
+}

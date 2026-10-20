@@ -1,0 +1,221 @@
+{
+  "name": "Atezolizumab",
+  "existing_id": "25b68928-f370-4d23-9d70-a3f0183ffb4f",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Atezolizumab is a programmed cell death ligand 1 (PD-L1) blocking antibody. PD-L1 may be expressed on tumor cells and/or tumor infiltrating immune cells and can contribute to the inhibition of the anti-tumor immune response in the tumor microenvironment; binding of PD-L1 to the PD-1 and B7.1 receptors found on T cells and antigen presenting cells suppresses cytotoxic T-cell activity, T-cell proliferation and cytokine production. Atezolizumab is a monoclonal antibody that binds to PD-L1 and blocks its interactions with both PD-1 and B7.1 receptors, releasing the PD-L1/PD-1 mediated inhibition of the immune response, including activation of the anti-tumor immune response without inducing antibody-dependent cellular cytotoxicity; in syngeneic mouse tumour models, blocking PD-L1 activity resulted in decreased tumour growth (TECENTRIQ label, section 12.1). Atezolizumab is an Fc-engineered, humanized, non-glycosylated IgG1 kappa immunoglobulin with a calculated molecular mass of 145 kDa (TECENTRIQ label, section 11). TECENTRIQ HYBREZA combines atezolizumab with hyaluronidase, an endoglycosidase, and has the same mechanism of action (TECENTRIQ HYBREZA label, Highlights and section 5.1).",
+    "indications": [
+      "Non-small cell lung cancer (NSCLC), as a single agent: adjuvant treatment following resection and platinum-based chemotherapy for adult patients with stage II to IIIA NSCLC whose tumours have PD-L1 expression on 1% or more of tumour cells, as determined by an FDA-authorized test (TECENTRIQ label, section 1.1)",
+      "NSCLC, as a single agent: first-line treatment of adult patients with metastatic NSCLC whose tumours have high PD-L1 expression (PD-L1 stained 50% or more of tumour cells, or PD-L1 stained tumour-infiltrating immune cells covering 10% or more of the tumour area), as determined by an FDA-authorized test, with no EGFR or ALK genomic tumour aberrations (TECENTRIQ label, section 1.1)",
+      "NSCLC, in combination with bevacizumab, paclitaxel and carboplatin: first-line treatment of adult patients with metastatic non-squamous NSCLC with no EGFR or ALK genomic tumour aberrations (TECENTRIQ label, section 1.1)",
+      "NSCLC, in combination with paclitaxel protein-bound and carboplatin: first-line treatment of adult patients with metastatic non-squamous NSCLC with no EGFR or ALK genomic tumour aberrations (TECENTRIQ label, section 1.1)",
+      "NSCLC, as a single agent: treatment of adult patients with metastatic NSCLC who have disease progression during or following platinum-containing chemotherapy; patients with EGFR or ALK genomic tumour aberrations should have disease progression on FDA-approved therapy for NSCLC harbouring these aberrations prior to receiving TECENTRIQ (TECENTRIQ label, section 1.1)",
+      "Small cell lung cancer (SCLC), in combination with carboplatin and etoposide: first-line treatment of adult patients with extensive-stage small cell lung cancer (TECENTRIQ label, section 1.2)",
+      "SCLC, in combination with lurbinectedin: maintenance treatment of adult patients with extensive-stage SCLC whose disease has not progressed after first-line induction therapy with TECENTRIQ or atezolizumab and hyaluronidase-tqjs, carboplatin and etoposide (TECENTRIQ label, section 1.2)",
+      "Hepatocellular carcinoma, in combination with bevacizumab: treatment of adult patients with unresectable or metastatic HCC who have not received prior systemic therapy (TECENTRIQ label, section 1.3)",
+      "Melanoma, in combination with cobimetinib and vemurafenib: treatment of adult patients with BRAF V600 mutation-positive unresectable or metastatic melanoma (TECENTRIQ label, section 1.4)",
+      "Alveolar soft part sarcoma (ASPS), as a single agent: treatment of adult and pediatric patients 2 years of age and older with unresectable or metastatic ASPS (TECENTRIQ label, section 1.5)",
+      "Muscle invasive bladder cancer (MIBC), as a single agent: adjuvant treatment of adult patients with MIBC after cystectomy who have circulating tumour DNA molecular residual disease as determined by an FDA-authorized test (TECENTRIQ label, section 1.6)",
+      "Mismatch repair-deficient colon cancer, in combination with a fluoropyrimidine and oxaliplatin: adjuvant treatment of adult and pediatric patients 2 years of age and older with stage III mismatch repair deficient colon cancer (TECENTRIQ label, section 1.7)",
+      "Subcutaneous formulation (TECENTRIQ HYBREZA): the same indications as intravenous TECENTRIQ, with the difference that paediatric use is limited to patients 12 years of age and older who weigh 40 kg or greater for ASPS and colon cancer (TECENTRIQ HYBREZA label, sections 1.1 to 1.7)",
+      "WHO Model List of Essential Medicines, 24th list (2025): atezolizumab is listed as a therapeutic alternative (square box) to pembrolizumab for metastatic non-small cell lung cancer, oncogene-driver wild-type and 50% or more PD-L1 expression, as monotherapy, within section 8.2.3 Immunomodulators, Complementary List (WHO eEML 24th list, section 8.2.3)"
+    ],
+    "contraindications": [
+      "Intravenous TECENTRIQ: none. The label states 'CONTRAINDICATIONS: None' (TECENTRIQ label, section 4).",
+      "Subcutaneous TECENTRIQ HYBREZA: contraindicated in patients with known hypersensitivity to hyaluronidase or to any of its excipients (TECENTRIQ HYBREZA label, section 4)."
+    ],
+    "side_effects": [
+      "TECENTRIQ as a single agent, most common adverse reactions in 20% or more of patients: fatigue/asthenia (48%), decreased appetite (25%), nausea (24%), cough (22%) and dyspnea (22%) (TECENTRIQ label, sections 6 and 6.1)",
+      "TECENTRIQ in combination with other antineoplastic drugs, most common adverse reactions in 20% or more of patients with NSCLC and SCLC: fatigue/asthenia (49%), nausea (38%), alopecia (35%), constipation (29%), diarrhea (28%) and decreased appetite (27%) (TECENTRIQ label, section 6.1)",
+      "TECENTRIQ in combination with bevacizumab in HCC, most common adverse reactions in 20% or more: hypertension, fatigue and proteinuria (TECENTRIQ label, section 6.1)",
+      "TECENTRIQ in combination with cobimetinib and vemurafenib in melanoma, most common adverse reactions in 20% or more: rash, musculoskeletal pain, fatigue, hepatotoxicity, pyrexia, nausea, pruritus, edema, stomatitis, hypothyroidism and photosensitivity reaction (TECENTRIQ label, section 6.1)",
+      "Immune-mediated pneumonitis occurred in 3% (83/2616) of patients receiving TECENTRIQ as a single agent, including fatal (<0.1%), Grade 4 (0.2%), Grade 3 (0.8%) and Grade 2 (1.1%) reactions; it led to permanent discontinuation in 0.5% and withholding in 1.5% of patients (TECENTRIQ label, section 5.1)",
+      "Immune-mediated colitis occurred in 1% (26/2616) of patients receiving TECENTRIQ as a single agent, including Grade 3 (0.5%) and Grade 2 (0.3%) reactions (TECENTRIQ label, section 5.1)",
+      "Immune-mediated hepatitis occurred in 1.8% (48/2616) of patients receiving TECENTRIQ as a single agent, including fatal (<0.1%), Grade 4 (0.2%), Grade 3 (0.5%) and Grade 2 (0.5%) reactions (TECENTRIQ label, section 5.1)",
+      "Endocrinopathies with TECENTRIQ as a single agent: adrenal insufficiency 0.4% (11/2616), hypophysitis <0.1% (2/2616), thyroiditis 0.2% (4/2616), hyperthyroidism 0.8% (21/2616), hypothyroidism 4.9% (128/2616) and type 1 diabetes mellitus 0.3% (7/2616) (TECENTRIQ label, section 5.1)",
+      "Immune-mediated nephritis with renal dysfunction occurred in <0.1% (1/2616) of patients receiving TECENTRIQ as a single agent, and in 1.3% (3/230) in combination with cobimetinib and vemurafenib (TECENTRIQ label, section 5.1)",
+      "Immune-mediated dermatologic adverse reactions occurred in 0.6% (15/2616) of patients receiving TECENTRIQ as a single agent (TECENTRIQ label, section 5.1)",
+      "Infusion-related reactions occurred in 1.3% of 2616 patients who received TECENTRIQ as a single agent, including Grade 3 (0.2%) (TECENTRIQ label, section 5.2)",
+      "Subcutaneous TECENTRIQ HYBREZA, most common adverse reactions of any grade in 10% or more of patients in IMscin001: fatigue (19%), musculoskeletal pain (15%), cough (13%), dyspnea (12%) and decreased appetite (11%); clinically relevant reactions in under 10% were local injection site reactions (4.5%) and pyrexia (1.2%) (TECENTRIQ HYBREZA label, section 6.1, Table 3)"
+    ],
+    "dosage": {
+      "adult": "Intravenous TECENTRIQ is administered over 60 minutes; if the first infusion is tolerated, subsequent infusions may be delivered over 30 minutes. As a single agent: 840 mg every 2 weeks, or 1200 mg every 3 weeks, or 1680 mg every 4 weeks, continued until disease progression or unacceptable toxicity. In the adjuvant NSCLC setting, the same schedules are given following resection and up to 4 cycles of platinum-based chemotherapy for up to 1 year, unless there is disease recurrence or unacceptable toxicity. For MIBC adjuvant treatment the same schedules are given for up to 1 year. In combination regimens (NSCLC, SCLC, HCC, melanoma, colon cancer) the same schedules are used, and TECENTRIQ is given prior to chemotherapy and bevacizumab when given on the same day; for melanoma, patients first receive a 28-day cycle of cobimetinib 60 mg orally once daily (21 days on, 7 days off) with vemurafenib 960 mg orally twice daily on days 1 to 21 and vemurafenib 720 mg orally twice daily on days 22 to 28, then TECENTRIQ 840 mg every 2 weeks, 1200 mg every 3 weeks or 1680 mg every 4 weeks with cobimetinib 60 mg once daily and vemurafenib 720 mg twice daily. For adult colon cancer, TECENTRIQ is given in combination with chemotherapy for 6 months, followed by TECENTRIQ as a single agent for 6 months or until disease recurrence or unacceptable toxicity (TECENTRIQ label, sections 2.2 and 2.4, Tables 1 and 2). Subcutaneous TECENTRIQ HYBREZA has a different recommended dosage: 15 mL (1,875 mg atezolizumab and 30,000 units hyaluronidase) subcutaneously into the thigh over approximately 7 minutes every 3 weeks, and it must not be substituted for or with intravenous atezolizumab because the recommended dosages differ (TECENTRIQ HYBREZA label, sections 2.2 and 2.3).",
+      "geriatric": "TECENTRIQ as a single agent: of 2616 patients with metastatic NSCLC and other tumour types treated in clinical studies, 49% were 65 years and over and 15% were 75 years and over; no overall differences in safety or effectiveness were observed between patients aged 65 years or older and younger patients (TECENTRIQ label, section 8.5). In combination with other antineoplastic drugs: of 2421 patients with NSCLC and SCLC, 48% were 65 years and over and 10% were 75 years and over, with no overall differences in safety or effectiveness. In combination with lurbinectedin: of 242 patients, 51% were 65 years and older; no overall differences in effectiveness were observed, but there was a higher incidence of Grade 3 or 4 adverse reactions (45% versus 31%) and of treatment discontinuation (11% versus 0.8%) in patients 65 years and older. In combination with chemotherapy for colon cancer: of 346 patients, 49% were 65 years and older; no overall differences in effectiveness, but Grade 3 or 4 adverse reactions were 87% versus 79% and treatment discontinuation 20% versus 15% in patients 65 years and older (TECENTRIQ label, section 8.5). No numeric geriatric dose adjustment is specified.",
+      "paediatric": "ASPS: safety and effectiveness of TECENTRIQ for unresectable or metastatic ASPS have been established in pediatric patients 2 years and older, extrapolated from an adequate and well-controlled study in adults and 2 adolescent patients plus pharmacokinetic and safety data in patients 2 to under 17 years; safety and effectiveness have not been established in patients younger than 2 years of age. Colon cancer: safety and effectiveness have been established in pediatric patients 2 years of age and older for adjuvant treatment of stage III dMMR colon cancer, and have not been established in patients younger than 2 years. Solid tumours and lymphomas: safety and effectiveness have not been established in NSCLC, SCLC, HCC, melanoma or MIBC; in a single-arm trial of 60 pediatric patients aged 7 months to under 17 years with relapsed or progressive solid tumours and lymphomas no new safety signals were observed (TECENTRIQ label, section 8.4). Paediatric dosing: 15 mg/kg (maximum 1200 mg) every 3 weeks for ASPS; for colon cancer 10 mg/kg (maximum 840 mg) every 2 weeks or 15 mg/kg (maximum 1200 mg) every 3 weeks (TECENTRIQ label, sections 2.2 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [],
+    "monitoring": "Evaluate liver enzymes, creatinine and thyroid function at baseline and periodically during treatment (TECENTRIQ label, section 5.1). Monitor patients closely for symptoms and signs that may be clinical manifestations of underlying immune-mediated adverse reactions; in cases of suspected immune-mediated adverse reactions, initiate appropriate workup to exclude alternative etiologies, including infection, and institute medical management promptly including specialty consultation as appropriate (TECENTRIQ label, section 5.1). Monitor for signs and symptoms of infusion-related reactions and interrupt, slow the rate of, or permanently discontinue TECENTRIQ based on severity (TECENTRIQ label, section 5.2). Follow patients closely for evidence of transplant-related complications and intervene promptly in patients who undergo allogeneic HSCT before or after a PD-1/PD-L1 blocking antibody (TECENTRIQ label, section 5.3). For the subcutaneous formulation, monitor for signs and symptoms of injection-related reactions, pause or slow the rate of injection or permanently discontinue based on severity, and consider premedication with antipyretic and antihistamines for subsequent doses (TECENTRIQ HYBREZA label, sections 2.4 and 5.2).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Medication Guide). Inform patients of the risk of immune-mediated adverse reactions that may require corticosteroid treatment and interruption or discontinuation of TECENTRIQ, and advise them to contact their healthcare provider immediately for: pneumonitis (new or worsening cough, chest pain or shortness of breath); colitis (diarrhea, blood or mucus in stools, or severe abdominal pain); hepatitis (jaundice, severe nausea or vomiting, pain on the right side of the abdomen, lethargy, or easy bruising or bleeding); endocrinopathies (signs or symptoms of hypophysitis, hyperthyroidism, hypothyroidism, adrenal insufficiency, or type 1 diabetes mellitus including diabetic ketoacidosis); nephritis (pelvic pain, frequent urination, or unusual swelling); dermatologic adverse reactions (generalized rash, skin eruption, or painful skin and mucous membrane lesions); and other immune-mediated adverse reactions. Advise patients of the risk of solid organ transplant rejection and other transplant, including corneal graft, rejection. Advise patients to contact their healthcare provider immediately for signs and symptoms of infusion-related reactions (TECENTRIQ label, section 17). Advise females of reproductive potential that TECENTRIQ can cause harm to a fetus, to inform their healthcare provider of a known or suspected pregnancy, and to use effective contraception during treatment and for at least 5 months after the last dose. Advise female patients not to breastfeed while taking TECENTRIQ and for at least 5 months after the last dose (TECENTRIQ label, sections 8.1 to 8.3 and 17). For the subcutaneous product, the label directs patients to the FDA-approved patient labeling and gives the same immune-mediated adverse reaction counselling with the instruction to contact the healthcare provider immediately for signs and symptoms of injection-related reactions (TECENTRIQ HYBREZA label, section 17).",
+    "warnings": [
+      "Severe and fatal immune-mediated adverse reactions can occur in any organ system or tissue, including immune-mediated pneumonitis, colitis, hepatitis, endocrinopathies, dermatologic adverse reactions, nephritis and renal dysfunction, and solid organ transplant rejection; they can occur at any time after starting a PD-1/PD-L1 blocking antibody and can also manifest after discontinuation of therapy (TECENTRIQ label, section 5.1)",
+      "No dose reduction for TECENTRIQ is recommended; in general withhold for severe (Grade 3) immune-mediated adverse reactions and permanently discontinue for life-threatening (Grade 4) reactions, recurrent severe (Grade 3) reactions requiring systemic immunosuppression, or inability to reduce corticosteroid dose to 10 mg or less of prednisone or equivalent per day within 12 weeks of starting steroids (TECENTRIQ label, section 2.3)",
+      "Infusion-related reactions: TECENTRIQ can cause severe or life-threatening infusion-related reactions, including anaphylaxis; interrupt, slow the rate of, or permanently discontinue based on severity, and consider premedication with subsequent doses for Grade 1 or 2 reactions (TECENTRIQ label, section 5.2)",
+      "Fatal and other serious complications can occur in patients who receive allogeneic hematopoietic stem cell transplantation before or after treatment with a PD-1/PD-L1 blocking antibody, including hyperacute, acute and chronic graft-versus-host disease, hepatic veno-occlusive disease after reduced intensity conditioning and steroid-requiring febrile syndrome; these complications may occur despite intervening therapy (TECENTRIQ label, section 5.3)",
+      "Embryo-fetal toxicity: based on its mechanism of action TECENTRIQ can cause fetal harm when administered to a pregnant woman; animal studies have demonstrated that inhibition of the PD-L1/PD-1 pathway can lead to increased risk of immune-related rejection of the developing fetus resulting in fetal death (TECENTRIQ label, sections 5.4 and 8.1)",
+      "Subcutaneous formulation: TECENTRIQ HYBREZA has a different recommended dosage and administration from intravenous atezolizumab products; check the vial labels before administration to avoid medication error and do not substitute one for the other (TECENTRIQ HYBREZA label, section 2.2)"
+    ],
+    "precautions": [
+      "Early identification and management of immune-mediated adverse reactions are essential; in general, if TECENTRIQ requires interruption or discontinuation, administer systemic corticosteroid therapy (1 to 2 mg/kg/day prednisone or equivalent) until improvement to Grade 1 or less, then initiate a corticosteroid taper continued over at least 1 month, and consider other systemic immunosuppressants if the reaction is not controlled by corticosteroids (TECENTRIQ label, section 5.1)",
+      "Dosage modification by reaction: pneumonitis Grade 2 withhold, Grades 3 or 4 permanently discontinue; colitis Grades 2 or 3 withhold, Grade 4 permanently discontinue; hepatitis without liver involvement withhold for AST/ALT more than 3 to 8 times the upper limit of normal or bilirubin more than 1.5 to 3 times, and permanently discontinue for AST/ALT more than 8 times or bilirubin more than 3 times; endocrinopathies Grades 3 or 4 withhold until clinically stable or permanently discontinue depending on severity; nephritis with renal dysfunction Grades 2 or 3 withhold, Grade 4 permanently discontinue; suspected SJS, TEN or DRESS withhold, confirmed cases permanently discontinue; myocarditis or pericarditis at any of Grades 2, 3 or 4 permanently discontinue; neurological toxicities Grade 2 withhold, Grades 3 or 4 permanently discontinue (TECENTRIQ label, section 2.3, Table 3)",
+      "TECENTRIQ HYBREZA is for subcutaneous use in the thigh only and must not be administered intravenously; inject in healthy skin and never into areas where the skin is red, bruised, tender or hard, alternate injections between the left and right thigh, and keep the injection site at least 2.5 cm from the previous site; if concomitant subcutaneous drugs are used, administer them at sites other than the thighs; do not administer the remaining volume in the tubing to the patient (TECENTRIQ HYBREZA label, section 2.2)",
+      "Adult patients treated with intravenous atezolizumab can switch to subcutaneous TECENTRIQ HYBREZA at their next scheduled dose and vice versa; pediatric patients 12 years and older weighing 40 kg or greater can also switch (TECENTRIQ HYBREZA label, section 2.2)",
+      "Preparation for intravenous use: inspect the solution for particulate matter and discoloration and discard the vial if cloudy, discoloured or particles are observed; do not shake the vial; dilute in an infusion bag of 0.9% sodium chloride to a final concentration between 3.2 mg/mL and 16.8 mg/mL; mix by gentle inversion and do not shake; do not coadminister other drugs through the same intravenous line and do not administer as an intravenous push or bolus (TECENTRIQ label, section 2.4)",
+      "Preparation for subcutaneous use: remove the vial from the refrigerator and allow it to acclimate to room temperature, inspect for particulate matter and discoloration and discard if cloudy, discoloured or particles are observed, do not shake, freeze or dilute; withdraw the entire contents with an 18-gauge needle, replace with a subcutaneous administration set with a 23-, 24- or 25-gauge needle and a priming volume not exceeding 0.5 mL, prime the line and expel any excess so the syringe contains exactly 15 mL, administer immediately to avoid needle clogging and discard any unused portion (TECENTRIQ HYBREZA label, section 2.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe and fatal immune-mediated adverse reactions affecting any organ system, including pneumonitis, colitis, hepatitis, endocrinopathies (adrenal insufficiency, hypophysitis, thyroiditis, hyperthyroidism, hypothyroidism, type 1 diabetes mellitus with possible diabetic ketoacidosis), dermatologic reactions including Stevens-Johnson syndrome, DRESS and toxic epidermal necrolysis, nephritis with renal dysfunction, and solid organ transplant rejection (TECENTRIQ label, section 5.1)",
+      "Other immune-mediated reactions reported at an incidence of less than 1%: myocarditis, pericarditis, vasculitis, meningitis, encephalitis, myelitis and demyelination, myasthenic syndrome/myasthenia gravis, Guillain-Barre syndrome, nerve paresis, autoimmune neuropathy, uveitis and iritis with possible retinal detachment or blindness, pancreatitis, gastritis, duodenitis, myositis/polymyositis, rhabdomyolysis, arthritis, polymyalgia rheumatic, hypoparathyroidism, hemolytic anemia, aplastic anemia, haemophagocytic lymphohistiocytosis, immune thrombocytopenic purpura, and other transplant rejection (TECENTRIQ label, section 5.1)",
+      "Infusion-related reactions, including anaphylaxis (TECENTRIQ label, section 5.2)",
+      "Complications of allogeneic HSCT, including graft-versus-host disease and hepatic veno-occlusive disease (TECENTRIQ label, section 5.3)",
+      "Embryo-fetal toxicity (TECENTRIQ label, sections 5.4 and 8.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "The TECENTRIQ label presents pregnancy under the Pregnancy and Lactation Labeling Rule risk-summary format and does not state an FDA letter category (TECENTRIQ label, section 8.1).",
+    "pregnancy_guidance": "Based on its mechanism of action, TECENTRIQ can cause fetal harm when administered to a pregnant woman; there are no available data on the use of TECENTRIQ in pregnant women. A literature-based assessment of the effects on reproduction demonstrated that a central function of the PD-L1/PD-1 pathway is to preserve pregnancy by maintaining maternal immune tolerance to a fetus; blockage of PD-L1 signaling has been shown in murine models of pregnancy to disrupt tolerance to a fetus and result in an increase in fetal loss, so potential risks include increased rates of abortion or stillbirth; although no malformations related to blockade of the PD-L1/PD-1 signaling were reported in the offspring of these animals, immune-mediated disorders occurred in PD-1 and PD-L1 knockout mice, and based on its mechanism of action fetal exposure to atezolizumab may increase the risk of developing immune-mediated disorders or altering the normal immune response. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (TECENTRIQ label, section 8.1). Verify pregnancy status of females of reproductive potential before initiating treatment, advise them of the potential risk to a fetus and to use effective contraception during treatment and for at least 5 months after the last dose, and note that based on animal studies TECENTRIQ may impair fertility in females of reproductive potential while receiving treatment (TECENTRIQ label, sections 5.4, 8.1 and 8.3).",
+    "lactation_guidance": "There is no information regarding the presence of atezolizumab in human milk, the effects on the breastfed infant, or the effects on milk production. As human IgG is excreted in human milk, the potential for absorption and harm to the infant is unknown. Because of the potential for serious adverse reactions in breastfed infants from TECENTRIQ, advise women not to breastfeed during treatment and for at least 5 months after the last dose (TECENTRIQ label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "Atezolizumab exposure increased dose proportionally over the dose range of 1 mg/kg to 20 mg/kg, including a dose of 1200 mg every 3 weeks, and steady state was achieved after 6 to 9 weeks following multiple doses; the systemic accumulation ratio for every 2 weeks and every 3 weeks administration is 3.3-fold and 1.9-fold respectively. The volume of distribution at steady state is 6.9 L; clearance is 0.2 L/day (CV 29%) with a terminal half-life of 27 days, and clearance was found to decrease over time with a mean maximal reduction of 17% (CV 41%) from baseline, which was not considered clinically relevant. The following factors had no clinically significant effect on systemic exposure: age (2 to 89 years), body weight, sex, albumin levels, tumour burden, region or race, mild or moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m2), mild hepatic impairment, moderate hepatic impairment, level of PD-L1 expression, or performance status. In pediatric patients aged 2 to under 17 years, serum concentrations are predicted to be within the range observed in adults receiving the corresponding recommended doses, applying to weight-based dosing at 10 mg/kg (maximum 840 mg) every 2 weeks and 15 mg/kg (maximum 1,200 mg) every 3 weeks; exposure tended to be lower in patients less than 12 years old, which is not considered clinically relevant (TECENTRIQ label, section 12.3). Immunogenicity: during the first year of treatment across 9 clinical studies, 13% to 36% of patients developed anti-drug antibodies to atezolizumab; median atezolizumab clearance in ADA-positive patients was 20% higher than in ADA-negative patients, a change not expected to be clinically significant; the presence of ADA did not have a clinically significant effect on the incidence or severity of adverse reactions, and the incidence of neutralizing antibodies in ADA-positive patients was 24% to 83% (TECENTRIQ label, section 12.6).",
+    "clinical_pearls": [
+      "Atezolizumab is a PD-L1 blocking antibody with no contraindications in the intravenous formulation; the only contraindication in the subcutaneous formulation is hypersensitivity to hyaluronidase or its excipients (TECENTRIQ label, section 4; TECENTRIQ HYBREZA label, section 4).",
+      "No dose reduction is used; the management of immune toxicity is by withholding or permanently discontinuing according to grade, with systemic corticosteroids 1 to 2 mg/kg/day prednisone equivalent tapered over at least 1 month (TECENTRIQ label, sections 2.3 and 5.1).",
+      "Immune-mediated adverse reactions can occur at any time after starting therapy and can also appear after the drug is stopped, so vigilance is required beyond the last dose (TECENTRIQ label, section 5.1).",
+      "The subcutaneous formulation TECENTRIQ HYBREZA (1,875 mg atezolizumab plus 30,000 units hyaluronidase in 15 mL, given in the thigh over about 7 minutes every 3 weeks) has a different recommended dosage from intravenous atezolizumab and the two must not be substituted for one another because of medication-error risk; patients may switch between them at their next scheduled dose (TECENTRIQ HYBREZA label, section 2.2).",
+      "Pneumonitis risk is higher in patients who have had prior thoracic radiation, and in the cobimetinib plus vemurafenib combination immune-mediated pneumonitis occurred in 13% with a 50% recurrence rate among those who restarted after withholding (TECENTRIQ label, section 5.1).",
+      "Endocrinopathies are common and often permanent: in the adjuvant NSCLC study hypothyroidism occurred in 17% of patients, and in the platinum-chemotherapy combination cohort in 11% (TECENTRIQ label, section 5.1).",
+      "Baseline and periodic liver enzymes, creatinine and thyroid function are the labelled monitoring parameters, and infection must be excluded as an alternative cause before immunosuppression is started (TECENTRIQ label, section 5.1).",
+      "For the Kenyan and global essential-medicines context, atezolizumab appears on the WHO Model List of Essential Medicines 24th list (2025) only as a therapeutic alternative to pembrolizumab for monotherapy of metastatic NSCLC with oncogene-driver wild-type and 50% or more PD-L1 expression; it is not a core-list medicine in its own right, and it does not appear in the Kenya Essential Medicines List 2023 (WHO eEML 24th list, section 8.2.3; KEML 2023)."
+    ],
+    "brand_names": ["Tecentriq", "Tecentriq Hybreza"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified. Mild or moderate renal impairment (eGFR 30 to 89 mL/min/1.73 m2) had no clinically significant effect on systemic exposure to atezolizumab, and immune-mediated nephritis with renal dysfunction is managed by withholding or permanently discontinuing the drug rather than by dose modification (TECENTRIQ label, sections 2.3 and 12.3).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified. Mild hepatic impairment (bilirubin less than or equal to the upper limit of normal and AST greater than the upper limit of normal, or bilirubin greater than 1 to 1.5 times the upper limit of normal with any AST) and moderate hepatic impairment (bilirubin greater than 1.5 to 3 times the upper limit of normal with any AST) had no clinically significant effect on systemic exposure; immune-mediated hepatitis is managed by withholding or permanently discontinuing the drug (TECENTRIQ label, sections 2.3 and 12.3).",
+    "administration_instructions": "Intravenous TECENTRIQ: administer over 60 minutes through an intravenous line with or without a sterile, non-pyrogenic, low-protein binding in-line filter of 0.2 to 0.22 micron pore size; if the first infusion is tolerated, subsequent infusions may be delivered over 30 minutes; do not coadminister other drugs through the same intravenous line and do not administer as an intravenous push or bolus. Dilute in 0.9% sodium chloride injection to a final concentration of 3.2 to 16.8 mg/mL, mix by gentle inversion and do not shake. Administer immediately once prepared; if not used immediately, store at room temperature for no more than 6 hours from preparation or under refrigeration at 2 to 8 degrees C for no more than 7 days, and do not freeze or shake. Store vials under refrigeration at 2 to 8 degrees C in the original carton to protect from light, do not freeze and do not shake (TECENTRIQ label, sections 2.4 and 16). Subcutaneous TECENTRIQ HYBREZA: for subcutaneous use in the thigh only, injected over approximately 7 minutes every 3 weeks, alternating thighs and keeping at least 2.5 cm from the previous site; must be administered by a healthcare professional; if the prepared syringe is not for immediate use, do not attach the administration set, and the capped syringe may be stored at up to 25 degrees C in ambient light for up to 8 hours or at 2 to 8 degrees C for up to 72 hours, without shaking or freezing (TECENTRIQ HYBREZA label, sections 2.2, 2.3, 2.5 and 2.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "TECENTRIQ label, sections 11 and 12.1; TECENTRIQ HYBREZA label, Highlights and section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "indications",
+      "ref": "TECENTRIQ label, sections 1.1-1.7; TECENTRIQ HYBREZA label, sections 1.1-1.7; WHO Model List of Essential Medicines, 24th list (2025), section 8.2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "contraindications",
+      "ref": "TECENTRIQ label, section 4; TECENTRIQ HYBREZA label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a617b089-ce66-464b-987b-b45d029b4d6f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "TECENTRIQ label, sections 5.1, 5.2, 6 and 6.1; TECENTRIQ HYBREZA label, section 6.1 and Table 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "dosage",
+      "ref": "TECENTRIQ label, sections 2.2, 2.4, 8.4, 8.5 and Tables 1-3; TECENTRIQ HYBREZA label, sections 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a617b089-ce66-464b-987b-b45d029b4d6f"
+    },
+    {
+      "field": "interactions",
+      "ref": "No formal drug interaction section is presented in the TECENTRIQ or TECENTRIQ HYBREZA prescribing information; the field is left as an empty array rather than filled with generic content",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "monitoring",
+      "ref": "TECENTRIQ label, sections 5.1-5.3; TECENTRIQ HYBREZA label, sections 2.4, 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "TECENTRIQ label, sections 8.1-8.3 and 17; TECENTRIQ HYBREZA label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "warnings",
+      "ref": "TECENTRIQ label, sections 2.3, 5.1-5.4 and 8.1; TECENTRIQ HYBREZA label, section 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "precautions",
+      "ref": "TECENTRIQ label, sections 2.3, 2.4 and 5.1 and Table 3; TECENTRIQ HYBREZA label, sections 2.2 and 2.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "TECENTRIQ label, sections 5.1-5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the TECENTRIQ or TECENTRIQ HYBREZA prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "TECENTRIQ label, section 8.1 (risk-summary format, no FDA letter category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "TECENTRIQ label, sections 5.4, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "TECENTRIQ label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose section is present in the TECENTRIQ or TECENTRIQ HYBREZA prescribing information, so no overdose management statement is asserted",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "TECENTRIQ label, sections 12.3 and 12.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "TECENTRIQ label, sections 2.3, 4, 5.1 and 5.2; TECENTRIQ HYBREZA label, sections 2.2, 4, 5.1 and 6.1; WHO eEML 24th list, section 8.2.3; KEML 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a617b089-ce66-464b-987b-b45d029b4d6f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "TECENTRIQ (atezolizumab) injection and TECENTRIQ HYBREZA (atezolizumab and hyaluronidase-tqjs) injection are the Genentech brand products listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the TECENTRIQ or TECENTRIQ HYBREZA prescribing information; the field is left as an empty array rather than asserting a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "TECENTRIQ label, sections 2.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "TECENTRIQ label, sections 2.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "TECENTRIQ label, sections 2.4 and 16; TECENTRIQ HYBREZA label, sections 2.2, 2.3, 2.5 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult regimens for both the intravenous and subcutaneous formulations are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimens are given in fields.dosage.paediatric)",
+    "interactions (the TECENTRIQ and TECENTRIQ HYBREZA labels present no drug interaction section; the field is left as an empty array rather than filled with unsourced content)",
+    "overdose (no overdose section exists in either label; the field is null rather than asserting a management statement)",
+    "black_box_warnings (none is present in the TECENTRIQ or TECENTRIQ HYBREZA prescribing information; the field is left as an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Atezolizumab' with brand name 'TECENTRIQ' and drug_class 'Antineoplastic / chemotherapeutic agent'. Atezolizumab is a monoclonal antibody and not a cytotoxic chemotherapy; the drug_class stored in the table is left unchanged here because drafts are content only. Two FDA-approved products are covered: intravenous TECENTRIQ (atezolizumab injection, 840 mg/14 mL and 1,200 mg/20 mL, DailyMed setid 6fa682c9-a312-4932-9831-f286908660ee) and subcutaneous TECENTRIQ HYBREZA (atezolizumab and hyaluronidase-tqjs, 1,875 mg/30,000 units per 15 mL, DailyMed setid a617b089-ce66-464b-987b-b45d029b4d6f). They carry the same indications and warnings but different recommended dosages, and the label explicitly warns against substituting one for the other; paediatric use of the subcutaneous product is limited to patients 12 years and older weighing 40 kg or greater, whereas the intravenous product is approved from 2 years of age for ASPS and dMMR colon cancer. The intravenous product has no contraindications. On the WHO Model List of Essential Medicines, 24th list (2025), atezolizumab appears only as a therapeutic alternative (square box) to pembrolizumab for monotherapy of metastatic NSCLC, oncogene-driver wild-type with 50% or more PD-L1 expression; it is not a core-list medicine in its own right, and it does not appear in the Kenya Essential Medicines List 2023. There is no boxed warning for atezolizumab, so black_box_warnings is an empty array. The label has no drug interaction section, so interactions is an empty array, and there is no overdose section, so overdose is null."
+}

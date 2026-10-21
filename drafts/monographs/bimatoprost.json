@@ -1,0 +1,229 @@
+{
+  "name": "Bimatoprost",
+  "existing_id": "41c4956b-8cad-4fc0-90c7-27646c264ae8",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bimatoprost is a synthetic prostamide, a structural analog of prostaglandin with ocular hypotensive activity, that selectively mimics the effects of prostamides and does not act through any known prostaglandin receptors; the prostamide receptor has not been structurally identified (FDA bimatoprost ophthalmic solution 0.03% label, DESCRIPTION and CLINICAL PHARMACOLOGY; EMA Lumigan product information, section 5.1). It lowers intraocular pressure by increasing the outflow of aqueous humor through both the trabecular meshwork and the uveoscleral route; reduction of intraocular pressure starts approximately 4 hours after the first administration, the maximum effect is reached within approximately 8 to 12 hours and the duration of effect is maintained for at least 24 hours (FDA bimatoprost ophthalmic solution 0.03% label, MECHANISM OF ACTION and DOSAGE AND ADMINISTRATION; EMA Lumigan product information, section 5.1). In the separate topical eyelash formulation, the growth of eyelashes is believed to occur by increasing the percent of hairs in, and the duration of the anagen (growth) phase (FDA Latisse label, MECHANISM OF ACTION).",
+    "indications": [
+      "Bimatoprost ophthalmic solution 0.03% is a prostaglandin analog indicated for the reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension (FDA bimatoprost ophthalmic solution 0.03% label, section 1)",
+      "Reduction of elevated intraocular pressure in chronic open-angle glaucoma and ocular hypertension in adults, as monotherapy or as adjunctive therapy to beta-blockers (EMA Lumigan product information, section 4.1)",
+      "Separate topical eyelash formulation: bimatoprost ophthalmic solution 0.03% (Latisse) is indicated to treat hypotrichosis of the eyelashes by increasing their growth, including length, thickness and darkness (FDA Latisse label, section 1). This is a different, dermally applied product with its own label and is not interchangeable with the intraocular drops"
+    ],
+    "contraindications": [
+      "Hypersensitivity to bimatoprost or to any of the ingredients (FDA bimatoprost ophthalmic solution 0.03% label, section 4; EMA Lumigan product information, section 4.3)",
+      "EMA Lumigan 0.1 mg/ml (the benzalkonium chloride-containing strength) is contraindicated in patients who have had a suspected previous adverse reaction to benzalkonium chloride that led to discontinuation (EMA Lumigan product information, section 4.3)"
+    ],
+    "side_effects": [
+      "The most common adverse reaction is conjunctival hyperemia, reported in 45% of patients (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "In clinical trials the most frequent events, occurring in approximately 15% to 45% of patients, were conjunctival hyperemia, growth of eyelashes and ocular pruritus; approximately 3% of patients discontinued therapy because of conjunctival hyperemia (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Ocular adverse events in approximately 3% to 10% of patients: ocular dryness, visual disturbance, ocular burning, foreign body sensation, eye pain, pigmentation of the periocular skin, blepharitis, cataract, superficial punctate keratitis, periorbital erythema, ocular irritation and eyelash darkening (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Ocular adverse events in approximately 1% to 3% of patients: eye discharge, tearing, photophobia, allergic conjunctivitis, asthenopia, increased iris pigmentation and conjunctival edema; intraocular inflammation reported as iritis in less than 1% of patients (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Systemic adverse events in approximately 10% of patients were infections, primarily colds and upper respiratory tract infections; systemic events in approximately 1% to 5% were headache, abnormal liver function tests, asthenia and hirsutism (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Post-approval reactions: abnormal hair growth, asthma-like symptoms, dizziness, dyspnea, eyelid edema, hypersensitivity reaction including signs and symptoms of eye allergy and allergic dermatitis, hypertension, nausea, periorbital and lid changes associated with periorbital fat atrophy leading to skin tightness, deepening of the eyelid sulcus, eyelid ptosis, enophthalmos and eyelid retraction, and skin discoloration (non-periocular) (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "In a 12-month Phase III study of Lumigan 0.1 mg/ml, approximately 38% of patients experienced adverse reactions and the most frequently reported was conjunctival hyperaemia, mostly trace to mild and of a non-inflammatory nature, occurring in 29% of patients; approximately 4% discontinued due to any adverse event (EMA Lumigan product information, section 4.8)",
+      "EMA-listed adverse effects include eye disorders, increased lacrimation, and postmarketing reports of asthma, dyspnoea and COPD exacerbation, bradycardia and hypotension (EMA Lumigan product information, sections 4.4 and 4.8)"
+    ],
+    "dosage": {
+      "adult": "The recommended dosage for the ophthalmic solution is one drop in the affected eye(s) once daily in the evening. It should not be administered more than once daily, because more frequent administration of prostaglandin analogs may decrease the intraocular pressure lowering effect. It may be used concomitantly with other topical ophthalmic drug products to lower intraocular pressure; if more than one topical ophthalmic drug is used, the drugs should be administered at least five minutes apart (FDA bimatoprost ophthalmic solution 0.03% label, section 2). The EMA product information gives the same posology - one drop once daily in the evening, not to exceed once daily (EMA Lumigan product information, section 4.2). For the separate topical eyelash formulation (Latisse): once nightly, place one drop on the disposable sterile applicator supplied and apply evenly along the skin of the upper eyelid margin at the base of the eyelashes, blot excess runoff, dispose of the applicator after one use and repeat for the opposite eyelid margin with a new sterile applicator; do not apply to the lower eyelash line and do not reuse applicators (FDA Latisse label, section 2).",
+      "geriatric": "No overall clinical differences in safety or effectiveness have been observed between elderly and other adult patients (FDA bimatoprost ophthalmic solution 0.03% label, section 8.5). After twice daily dosing with bimatoprost 0.3 mg/ml eye drops the mean AUC 0-24hr was significantly higher in the elderly (0.0634 ng.hr/ml) than in young healthy adults (0.0218 ng.hr/ml), but this is not clinically relevant because systemic exposure remained very low, with no accumulation and a similar safety profile in elderly and young patients (EMA Lumigan product information, section 5.2).",
+      "paediatric": "The safety and efficacy of Lumigan in children aged 0 to 18 years has not yet been established (EMA Lumigan product information, sections 4.2 and 5.1). The US label states that use in pediatric patients below the age of 16 years is not recommended because of potential safety concerns related to increased pigmentation following long-term chronic use (FDA bimatoprost ophthalmic solution 0.03% label, sections 8.4 and 8.3). For the separate eyelash formulation, the Latisse label restricts use to adults (FDA Latisse label, section 1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No interaction studies have been performed, and no interactions are anticipated in humans because systemic concentrations of bimatoprost are extremely low (less than 0.2 ng/ml) following ocular dosing; bimatoprost is biotransformed by multiple enzymes and pathways and no effects on hepatic drug metabolising enzymes were observed in preclinical studies (EMA Lumigan product information, section 4.5)",
+      "Bimatoprost was used concomitantly with a number of different ophthalmic beta-blocking agents in clinical studies without evidence of interactions (EMA Lumigan product information, section 4.5)",
+      "Concomitant use of Lumigan with antiglaucomatous agents other than topical beta-blockers has not been evaluated during adjunctive glaucoma therapy (EMA Lumigan product information, section 4.5)",
+      "The IOP-lowering effect of prostaglandin analogues may be reduced in patients also using other prostaglandin analogues, so patients using Lumigan with other prostaglandin analogues should be monitored for changes in intraocular pressure (EMA Lumigan product information, sections 4.4 and 4.5)",
+      "If more than one topical ophthalmic drug product is used, each should be administered at least five minutes apart (FDA bimatoprost ophthalmic solution 0.03% label, section 2; EMA Lumigan product information, section 4.2)"
+    ],
+    "monitoring": "Monitor intraocular pressure and its response to therapy; reduction of IOP starts approximately 4 hours after the first administration with maximum effect within approximately 8 to 12 hours and effect maintained for at least 24 hours (FDA bimatoprost ophthalmic solution 0.03% label, sections 2 and 12.1; EMA Lumigan product information, section 5.1). Patients developing noticeably increased iris pigmentation while on bimatoprost 0.03% may continue treatment but should be examined regularly (FDA bimatoprost ophthalmic solution 0.03% label, section 5.1). Patients with a history of significant ocular viral infection (e.g. herpes simplex) or uveitis/iritis, and patients with risk factors for macular edema such as aphakic patients or pseudophakic patients with a torn posterior lens capsule, require caution and monitoring (FDA bimatoprost ophthalmic solution 0.03% label, sections 5.3 and 5.4; EMA Lumigan product information, section 4.4). Patients with asthma, COPD or compromised respiratory function, and patients predisposed to low heart rate or low blood pressure, should be treated with caution (EMA Lumigan product information, section 4.4). Patients with a disrupted ocular epithelial surface are at greater risk of bacterial keratitis from contaminated multi-dose containers, so the dispensing tip must not contact the eye (FDA bimatoprost ophthalmic solution 0.03% label, section 5.5; EMA Lumigan product information, section 4.4).",
+    "patient_counselling": "Advise patients about the potential for increased brown pigmentation of the iris, which may be permanent, and about the possibility of eyelid skin darkening, which may be reversible after discontinuation. Inform patients of the possibility of eyelash and vellus hair changes in the treated eye, which may result in a disparity between eyes in length, thickness, pigmentation, number or direction of eyelash growth, and are usually reversible on discontinuation. Instruct patients to avoid allowing the tip of the dispensing container to contact the eye, surrounding structures, fingers or any other surface, to avoid contamination of the solution by common bacteria known to cause ocular infections, because serious damage to the eye and subsequent loss of vision may result from using contaminated solutions. Advise patients who develop an intercurrent ocular condition (e.g. trauma or infection), have ocular surgery, or develop ocular reactions, particularly conjunctivitis and eyelid reactions, to seek their physician's advice about continued use. Advise patients that the product contains benzalkonium chloride, which may be absorbed by soft contact lenses: contact lenses should be removed prior to instillation and may be reinserted 15 minutes following administration. If more than one topical ophthalmic drug is used, the drugs should be administered at least five minutes apart (FDA bimatoprost ophthalmic solution 0.03% label, section 17). For the eyelash formulation, apply nightly with a new sterile applicator each time, do not reuse applicators, do not apply to the lower eyelash line, blot excess solution beyond the eyelid margin, and note that additional applications will not increase eyelash growth and that growth returns to pre-treatment level on discontinuation (FDA Latisse label, sections 2 and 17).",
+    "warnings": [
+      "Pigmentation: pigmentation of the iris, periorbital tissue (eyelid) and eyelashes can occur; iris pigmentation is likely to be permanent, and pigmentation is expected to increase as long as bimatoprost is administered because the change is due to increased melanin content in melanocytes rather than an increase in melanocyte number; the long-term effects of increased pigmentation are not known (FDA bimatoprost ophthalmic solution 0.03% label, section 5.1)",
+      "Eyelash changes: gradual change to eyelashes including increased length, thickness and number of lashes, usually reversible (FDA bimatoprost ophthalmic solution 0.03% label, section 5.2)",
+      "Intraocular inflammation: prostaglandin analogs, including bimatoprost, have been reported to cause intraocular inflammation and may exacerbate inflammation, so caution is required in patients with active intraocular inflammation such as uveitis (FDA bimatoprost ophthalmic solution 0.03% label, section 5.3)",
+      "Macular edema, including cystoid macular edema, has been reported during treatment; bimatoprost 0.03% should be used with caution in aphakic patients, pseudophakic patients with a torn posterior lens capsule, or patients with known risk factors for macular edema (FDA bimatoprost ophthalmic solution 0.03% label, section 5.4; EMA Lumigan product information, section 4.4)",
+      "Bacterial keratitis has been reported with multi-dose containers of topical ophthalmic products contaminated by patients with concurrent ocular disease or a disruption of the ocular epithelial surface (FDA bimatoprost ophthalmic solution 0.03% label, section 5.5; EMA Lumigan product information, section 4.4)",
+      "Bimatoprost ophthalmic solution 0.03% contains benzalkonium chloride, which may be absorbed by soft contact lenses and cause discoloration; contact lenses should be removed prior to instillation and may be reinserted 15 minutes after administration (FDA bimatoprost ophthalmic solution 0.03% label, section 5.6; EMA Lumigan product information, section 4.4)",
+      "Prostaglandin analogue periorbitopathy (PAP) and increased iris pigmentation have been observed during treatment and some of these changes may be permanent, potentially impairing the field of vision and producing differences in appearance between eyes when only one eye is treated; patients should be informed before treatment is initiated (EMA Lumigan product information, section 4.4)",
+      "Rare spontaneous reports of reactivation of previous corneal infiltrates or ocular infections have occurred; caution is required in patients with a prior history of significant ocular viral infections (e.g. herpes simplex) or uveitis/iritis (EMA Lumigan product information, section 4.4)",
+      "Respiratory: Lumigan has not been studied in patients with compromised respiratory function; there have been reports of exacerbation of asthma, dyspnoea and COPD, and reports of asthma, in post-marketing experience (EMA Lumigan product information, section 4.4)",
+      "Cardiovascular: Lumigan has not been studied in patients with heart block more severe than first degree or uncontrolled congestive heart failure; there have been limited spontaneous reports of bradycardia or hypotension, so it should be used with caution in patients predisposed to low heart rate or low blood pressure (EMA Lumigan product information, section 4.4)"
+    ],
+    "precautions": [
+      "Use more than one topical ophthalmic medicine: separate administrations by at least five minutes (FDA bimatoprost ophthalmic solution 0.03% label, section 2; EMA Lumigan product information, section 4.2)",
+      "Contact lenses: remove before instillation and reinsert 15 minutes after administration, because benzalkonium chloride may be absorbed by and discolour soft contact lenses (FDA bimatoprost ophthalmic solution 0.03% label, section 5.6; EMA Lumigan product information, section 4.4)",
+      "Benzalkonium chloride has been reported to cause punctate keratopathy and/or toxic ulcerative keratopathy; the benzalkonium chloride-containing strength (0.1 mg/ml) should be used with caution in dry eye patients, in patients where the cornea may be compromised and in patients taking multiple benzalkonium chloride-containing eye drops, with monitoring required for prolonged use (EMA Lumigan product information, section 4.4)",
+      "Skin: there is a potential for hair growth where the solution repeatedly contacts the skin surface, so it is important to apply as instructed and avoid it running onto the cheek or other skin areas (EMA Lumigan product information, section 4.4)",
+      "Lumigan has not been studied in patients with inflammatory ocular conditions, neovascular, inflammatory, angle-closure glaucoma, congenital glaucoma or narrow-angle glaucoma (EMA Lumigan product information, section 4.4)",
+      "Patients should be instructed to avoid allowing the tip of the dispensing container to contact the eye or surrounding structures, to avoid eye injury and contamination of the solution (EMA Lumigan product information, section 4.4)",
+      "Limited experience is available with use in patients with open-angle glaucoma with pseudoexfoliative and pigmentary glaucoma, and chronic angle-closure glaucoma with patent iridotomy (EMA Lumigan product information, section 5.1)",
+      "In the eyelash formulation, apply only to the skin of the upper eyelid margin at the base of the eyelashes, do not apply to the lower eyelash line, and do not reuse applicators (FDA Latisse label, section 2)"
+    ],
+    "serious_adverse_reactions": [
+      "Intraocular inflammation, including iritis and uveitis, which may exacerbate existing ocular inflammation (FDA bimatoprost ophthalmic solution 0.03% label, sections 5.3 and 6.1)",
+      "Macular edema, including cystoid macular edema, particularly in aphakic patients and pseudophakic patients with a torn posterior lens capsule (FDA bimatoprost ophthalmic solution 0.03% label, section 5.4)",
+      "Bacterial keratitis from contaminated multi-dose containers in patients with ocular disease or disruption of the ocular epithelial surface, with serious eye damage and potential loss of vision (FDA bimatoprost ophthalmic solution 0.03% label, section 5.5 and section 17)",
+      "Hypersensitivity reaction including eye allergy and allergic dermatitis (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Asthma-like symptoms, dyspnea and exacerbation of COPD (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1; EMA Lumigan product information, section 4.4)",
+      "Periorbital fat atrophy changes - skin tightness, deepening of the eyelid sulcus, eyelid ptosis, enophthalmos and eyelid retraction (FDA bimatoprost ophthalmic solution 0.03% label, section 6.1)",
+      "Permanent iris pigmentation (FDA bimatoprost ophthalmic solution 0.03% label, section 5.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate and well-controlled studies of bimatoprost 0.03% administration in pregnant women, and there is no increase in the risk of major birth defects or miscarriages based on bimatoprost postmarketing experience. In embryofetal developmental studies, administration of bimatoprost orally to pregnant mice and rats during organogenesis resulted in abortion and early delivery at oral doses at least 33 times (mice) or 94 times (rats) the human exposure at the recommended clinical dose, and in pre/postnatal development studies reduced gestation length, reduced fetal body weight and increased fetal and pup mortality were seen at exposures at least 41 times the human systemic exposure. Because animal reproductive studies are not always predictive of human response, bimatoprost should be administered during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA bimatoprost ophthalmic solution 0.03% label, section 8.1). The EMA product information states that LUMIGAN should not be used during pregnancy unless clearly necessary (EMA Lumigan product information, section 4.6).",
+    "lactation_guidance": "It is not known whether topical ocular treatment with bimatoprost 0.03% could result in sufficient systemic absorption to produce detectable quantities in human milk; bimatoprost was shown to be present in breast milk of lactating rats at an intravenous dose 324 times the recommended human ocular dose, with no animal data available at clinically relevant doses. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for bimatoprost and any potential adverse effects on the breastfed child (FDA bimatoprost ophthalmic solution 0.03% label, section 8.2). The EMA product information states that it is unknown whether bimatoprost is excreted in human breast milk, that animal studies have shown excretion of bimatoprost in breast milk, and that a decision must be made whether to discontinue breast-feeding or discontinue the therapy, taking into account the benefit of breast-feeding for the child and of therapy for the woman (EMA Lumigan product information, section 4.6).",
+    "overdose": "No information is available on overdosage in humans; if overdose with bimatoprost 0.03% occurs, treatment should be symptomatic. In oral (by gavage) mouse and rat general toxicity studies, doses up to 100 mg/kg/day did not produce any toxicity - at least 70 times higher than the accidental dose of one bottle of bimatoprost 0.03% for a 10 kg child (FDA bimatoprost ophthalmic solution 0.03% label, section 8.6).",
+    "pharmacokinetics": "After one drop of bimatoprost 0.03% was administered once daily to both eyes of 15 healthy subjects for two weeks, blood concentrations peaked within 10 minutes after dosing and were below the lower limit of detection (0.025 ng/mL) in most subjects within 1.5 hours after dosing; mean Cmax and AUC 0-24hr values were similar on days 7 and 14 at approximately 0.08 ng/mL and 0.09 ng.hr/mL, indicating that steady state was reached during the first week of ocular dosing, with no significant systemic accumulation over time. Bimatoprost is moderately distributed into body tissues with a steady-state volume of distribution of 0.67 L/kg; in human blood it resides mainly in the plasma, with approximately 12% remaining unbound (88% protein bound). Bimatoprost is the major circulating species after ocular dosing and undergoes oxidation, N-deethylation and glucuronidation. Following an intravenous dose of radiolabeled bimatoprost (3.12 mcg/kg) to six healthy subjects, the maximum blood concentration of unchanged drug was 12.2 ng/mL, decreasing rapidly with an elimination half-life of approximately 45 minutes; total blood clearance was 1.5 L/hr/kg, with up to 67% of the dose excreted in the urine and 25% recovered in the faeces (FDA bimatoprost ophthalmic solution 0.03% label, section 12.3; EMA Lumigan product information, section 5.2).",
+    "clinical_pearls": [
+      "Dose once daily in the evening only: more frequent dosing of prostaglandin analogs reduces the IOP-lowering effect, and the onset of effect is at about 4 hours with a peak at 8 to 12 hours lasting at least 24 hours (FDA bimatoprost ophthalmic solution 0.03% label, sections 2 and 12.1)",
+      "In clinical studies of patients with open angle glaucoma or ocular hypertension with a mean baseline IOP of 26 mmHg, the IOP-lowering effect of bimatoprost 0.03% once daily in the evening was 7 to 8 mmHg (FDA bimatoprost ophthalmic solution 0.03% label, CLINICAL STUDIES section)",
+      "Systemic exposure is minimal (peak concentrations around 0.08 ng/mL), so systemic adverse effects are uncommon; the clinically important problems are ocular (hyperemia, iris pigmentation, eyelash changes, macular edema) rather than systemic (FDA bimatoprost ophthalmic solution 0.03% label, sections 12.3 and 6.1)",
+      "Iris pigmentation is usually permanent and periorbital/eyelash changes are usually reversible; unilateral treatment can produce a visible asymmetry between eyes (FDA bimatoprost ophthalmic solution 0.03% label, section 5.1; EMA Lumigan product information, section 4.4)",
+      "Never let the dropper tip touch the eye or lids: contaminated multi-dose tips are the main route to bacterial keratitis, which can cause permanent vision loss (FDA bimatoprost ophthalmic solution 0.03% label, sections 5.5 and 17)",
+      "Remove soft contact lenses before instillation and wait 15 minutes before reinsertion, because the product contains benzalkonium chloride (FDA bimatoprost ophthalmic solution 0.03% label, section 5.6)",
+      "Avoid the solution running onto the cheek or other skin, because unwanted hair growth can occur where the solution repeatedly contacts skin (EMA Lumigan product information, section 4.4)",
+      "The eyelash formulation (Latisse) is a separate topical product with a different indication (hypotrichosis of the eyelashes), a different applicator and a different frequency of application (nightly to the upper lid margin); it must not be confused with the intraocular drops, and it is not approved for use in children under 16 (FDA Latisse label, sections 1 and 2; FDA bimatoprost ophthalmic solution 0.03% label, section 8.4)"
+    ],
+    "brand_names": ["Lumigan", "Latisse"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Lumigan has not been studied in patients with renal impairment and should therefore be used with caution in such patients (EMA Lumigan product information, section 4.2). No renal dose adjustment is specified in the FDA bimatoprost ophthalmic solution 0.03% label.",
+    "hepatic_dose_adjustment": "Lumigan has not been studied in patients with moderate to severe hepatic impairment and should therefore be used with caution in such patients. In patients with a history of mild liver disease or abnormal ALT, AST and/or bilirubin at baseline, bimatoprost 0.3 mg/ml eye drops had no adverse effect on liver function over 24 months (EMA Lumigan product information, section 4.2). No hepatic dose adjustment is specified in the FDA bimatoprost ophthalmic solution 0.03% label.",
+    "administration_instructions": "Ophthalmic: one drop in the affected eye(s) once daily in the evening; do not administer more than once daily; if more than one topical ophthalmic drug is used, separate administrations by at least five minutes; remove soft contact lenses before instillation and reinsert 15 minutes after administration; avoid contact of the tip of the dispensing container with the eye or surrounding structures. Ophthalmic solution containing bimatoprost 0.3 mg/mL, a clear, isotonic, colorless, sterile ophthalmic solution with an osmolality of approximately 290 mOsmol/kg (FDA bimatoprost ophthalmic solution 0.03% label, sections 2, 5.6 and DESCRIPTION). For the separate eyelash formulation (Latisse): once nightly, place one drop on the supplied disposable sterile applicator and apply evenly along the skin of the upper eyelid margin at the base of the eyelashes, blot excess runoff with a tissue, dispose of the applicator after one use and repeat for the opposite lid margin with a new applicator; do not apply to the lower eyelash line (FDA Latisse label, section 2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03% (Apotex Corp), DESCRIPTION, CLINICAL PHARMACOLOGY and MECHANISM OF ACTION sections; EMA Lumigan product information, section 5.1; FDA label, LATISSE (bimatoprost ophthalmic solution) 0.03% [Allergan], MECHANISM OF ACTION section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 1; EMA Lumigan product information, section 4.1; FDA label, LATISSE, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 4; EMA Lumigan product information, section 4.3",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/lumigan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 6.1; EMA Lumigan product information, sections 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 2 and sections 8.3-8.5; EMA Lumigan product information, sections 4.2 and 5.2; FDA label, LATISSE, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated as a separate field; the sourced adult regimen is provided in fields.dosage.adult from the FDA label DOSAGE AND ADMINISTRATION section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated as a separate field; the paediatric position is provided in fields.dosage.paediatric from the FDA label PEDIATRIC USE section and the EMA product information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "interactions",
+      "ref": "EMA Lumigan product information, sections 4.2, 4.4 and 4.5; FDA label, Bimatoprost ophthalmic solution 0.03%, section 2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/lumigan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 2, 5.1, 5.3-5.5 and 12.1; EMA Lumigan product information, sections 4.4 and 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 17 (INFORMATION FOR PATIENTS); FDA label, LATISSE, sections 2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 5.1-5.6; EMA Lumigan product information, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 2, 5.6 and 17; EMA Lumigan product information, sections 4.2, 4.4 and 5.1; FDA label, LATISSE, section 2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/lumigan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 5.1-5.5 and 6.1; EMA Lumigan product information, sections 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA bimatoprost ophthalmic solution 0.03% label or the EMA Lumigan product information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The FDA bimatoprost ophthalmic solution 0.03% label gives narrative pregnancy risk information (section 8.1) without a pregnancy letter category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 8.1; EMA Lumigan product information, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 8.2; EMA Lumigan product information, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 8.6 (OVERDOSAGE)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, section 12.3 (PHARMACOKINETICS); EMA Lumigan product information, section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 2, 5.1, 5.5-5.6, 6.1, 8.4, 12.1, 12.3 and CLINICAL STUDIES; EMA Lumigan product information, sections 4.4 and 5.1; FDA label, LATISSE, sections 1 and 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed product titles: LUMIGAN (bimatoprost) solution/drops [Allergan, Inc.] and LATISSE (bimatoprost) solution/drops [Allergan, Inc.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34f83d9d-2c64-463e-8a90-9a460fedfead"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA bimatoprost ophthalmic solution 0.03% label and the EMA Lumigan product information contain no boxed warning; label contraindications and warnings are recorded in fields.contraindications and fields.warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EMA Lumigan product information, section 4.2 (not studied in renal impairment; use with caution); FDA label, Bimatoprost ophthalmic solution 0.03% (no renal dose adjustment specified)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/lumigan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EMA Lumigan product information, section 4.2 (not studied in moderate to severe hepatic impairment; use with caution; no adverse effect on liver function over 24 months in patients with mild liver disease or abnormal baseline ALT/AST/bilirubin); FDA label, Bimatoprost ophthalmic solution 0.03% (no hepatic dose adjustment specified)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/lumigan-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Bimatoprost ophthalmic solution 0.03%, sections 2, 5.6 and DESCRIPTION; FDA label, LATISSE, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric position is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the FDA label gives narrative pregnancy risk information without a letter category)",
+    "WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries (not retrievable in this environment; no eEML/KEML-derived field is claimed)"
+  ],
+  "notes": "The table stores this agent as 'Bimatoprost' with drug_class 'Ophthalmic agent'. The existing row previously carried generic ophthalmic boilerplate (glaucoma treatment, ocular infections, diagnostic mydriasis, topical beta-blocker and CCB/digoxin interactions) that is not bimatoprost-specific and has been superseded by this draft. Content is grounded in the FDA label for bimatoprost ophthalmic solution 0.03% (Apotex Corp), the EMA Lumigan product information and the FDA Latisse label. The row covers two distinct products that share a molecule but not an indication: the intraocular solution used for open angle glaucoma/ocular hypertension, and the separate topical eyelash formulation (Latisse) for hypotrichosis of the eyelashes, which has its own applicator, dosing and restrictions (upper lid margin only; not the lower lash line) - every eyelash-specific statement is attributed to the Latisse label. Note that US labels for bimatoprost exist in both an intraocular (0.03%) and an eyelash (0.03%) presentation, and the eyelash-labelled generics carry the Latisse indication rather than the intraocular one. FDA pregnancy letter categories are obsolete and are not reported."
+}

@@ -1,0 +1,241 @@
+{
+  "name": "Beclometasone/Formoterol",
+  "existing_id": "a616fb57-132f-42c6-8f0e-5053e0bcb498",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Fostair NEXThaler contains beclometasone dipropionate and formoterol in a dry powder formulation producing an extrafine aerosol with an average mass median aerodynamic diameter of 1.4 to 1.5 micrometres and co-deposition of the two components; a radio-labelled deposition study in asthmatic adults showed a high proportion of the drug (estimated 42% of the nominal dose) deposited in the lung with homogeneous deposition through the airways (SmPC, section 5.1). Beclometasone dipropionate is a prodrug with weak glucocorticoid receptor binding affinity that is hydrolysed via esterase enzymes to the active metabolite beclometasone-17-monopropionate, which has a more potent topical anti-inflammatory activity; given by inhalation at recommended doses it produces a glucocorticoid anti-inflammatory action within the lungs, reducing symptoms and exacerbations of asthma with fewer adverse effects than systemic corticosteroids. Formoterol is a selective beta2-adrenergic agonist producing relaxation of bronchial smooth muscle in patients with reversible airways obstruction; the bronchodilating effect sets in rapidly within 1 to 3 minutes after inhalation and lasts 12 hours. As with other inhaled corticosteroid and beta2-agonist combinations, additive effects are seen in the reduction of asthma exacerbations (SmPC, section 5.1). Pharmacotherapeutic group: adrenergics, inhalants, formoterol and other drugs for obstructive airway diseases; ATC code R03AK08 (SmPC, section 5.1).",
+    "indications": [
+      "Asthma: regular treatment of asthma where use of a combination product (inhaled corticosteroid and long-acting beta2-agonist) is appropriate - patients not adequately controlled with inhaled corticosteroids and 'as needed' inhaled short-acting beta2-agonist, or patients already adequately controlled on both inhaled corticosteroids and long-acting beta2-agonists. Indicated for adult patients (SmPC, section 4.1).",
+      "Chronic obstructive pulmonary disease: symptomatic treatment of patients with severe COPD (FEV1 <50% predicted normal) and a history of repeated exacerbations, who have significant symptoms despite regular therapy with long-acting bronchodilators (SmPC, section 4.1).",
+      "In the WHO Model List of Essential Medicines (23rd model list, 2023) beclometasone plus formoterol is listed as a therapeutic alternative to budesonide plus formoterol, as a dry powder inhaler delivering 100 micrograms plus 6 micrograms per dose and 200 micrograms plus 6 micrograms per dose (WHO Model List of Essential Medicines, 23rd list, section 25.1)."
+    ],
+    "contraindications": [
+      "Hypersensitivity to beclometasone dipropionate, formoterol fumarate dihydrate or to any of the excipients (SmPC, section 4.3)."
+    ],
+    "side_effects": [
+      "The most common adverse reaction is tremor. In a 12-week clinical trial with Fostair NEXThaler, tremor was seen only with the highest dose regimen (2 inhalations twice daily), appeared most frequently at the beginning of treatment and was mild in intensity; no patient was withdrawn from the trial as a result of tremor (SmPC, section 4.8).",
+      "Infections and infestations: nasopharyngitis (uncommon), oral candidiasis (uncommon), pneumonia in COPD patients (common) (SmPC, section 4.8).",
+      "Metabolism and nutrition disorders: hypertriglyceridaemia (uncommon) (SmPC, section 4.8).",
+      "Psychiatric disorders: psychomotor hyperactivity, sleep disorders, anxiety, depression, aggression and behavioural changes, predominantly in children (frequency not known) (SmPC, section 4.8).",
+      "Eye disorders: vision blurred (frequency not known) (SmPC, section 4.8).",
+      "Nervous system disorders: tremor (common), headache (uncommon) (SmPC, section 4.8).",
+      "Cardiac disorders: tachycardia, sinus bradycardia, angina pectoris and myocardial ischaemia (all uncommon) (SmPC, section 4.8).",
+      "Respiratory, thoracic and mediastinal disorders: throat irritation, exacerbation of asthma, dyspnoea, oropharyngeal pain, dysphonia and cough (all uncommon) (SmPC, section 4.8).",
+      "Gastrointestinal disorders: nausea (uncommon) (SmPC, section 4.8).",
+      "General disorders and administration site conditions: fatigue and irritability (uncommon) (SmPC, section 4.8).",
+      "Investigations: electrocardiogram QT prolonged, cortisol free urine decreased, blood cortisol decreased, blood potassium increased, blood glucose increased and electrocardiogram poor r-wave progression (all uncommon) (SmPC, section 4.8).",
+      "Additional adverse reactions typically associated with formoterol but not observed in the Fostair NEXThaler clinical experience include palpitations, atrial fibrillation, ventricular extrasystoles, tachyarrhythmia, potentially serious hypokalaemia and increases or decreases in blood pressure; insomnia, dizziness, restlessness and anxiety have occasionally been reported during inhaled formoterol therapy, and formoterol may also induce muscle cramps and myalgia (SmPC, section 4.8).",
+      "Hypersensitivity reactions including rash, urticaria, pruritus, erythema and oedema of the eye, face, lips and throat (angioedema) have been reported; paradoxical bronchospasm may occur with an immediate increase in wheezing, cough and shortness of breath after dosing (SmPC, sections 4.4 and 4.8)."
+    ],
+    "dosage": {
+      "adult": "Fostair NEXThaler is for inhalation use and is not intended for the initial management of asthma; the dosage is individual and adjusted to the severity of the disease. Asthma, maintenance therapy: adults 18 years and above - one or two inhalations twice daily, with a separate rapid-acting bronchodilator available for rescue use at all times; maximum daily dose 4 inhalations. Asthma, maintenance and reliever therapy: maintenance dose of 1 inhalation twice daily with 1 additional inhalation taken as needed in response to symptoms (a further inhalation if symptoms persist after a few minutes); maximum 8 inhalations daily; patients requiring frequent rescue inhalations should seek medical advice and have their asthma and maintenance therapy reassessed (SmPC, section 4.2). COPD: adults 18 years and above - two inhalations twice daily (SmPC, section 4.2).",
+      "geriatric": "There is no need to adjust the dose in elderly patients (SmPC, section 4.2).",
+      "paediatric": "The safety and efficacy of Fostair NEXThaler in children and adolescents under 18 years of age have not been established. Fostair NEXThaler should not be used in children aged 5 to 11 years because of safety concerns; available clinical data in adolescents aged 12 to 17 years are limited and no recommendation on a posology can be made (SmPC, sections 4.2, 4.8 and 5.1). In a 12-week randomised trial in adults and adolescents, 162 adolescents aged 12 to 17 years with moderate to severe asthma received Fostair NEXThaler or the corresponding pressurised inhalation solution at 1 or 2 inhalations twice daily, and the frequency, type and severity of adverse drug reactions were not different in adolescents compared with adults (SmPC, section 4.8)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A inhibitors (for example ritonavir, cobicistat): beclometasone is less dependent on CYP3A metabolism than some other corticosteroids and interactions are generally unlikely, but the possibility of systemic effects with concomitant use of strong CYP3A inhibitors cannot be excluded, so caution and appropriate monitoring are advised (SmPC, section 4.5).",
+      "Beta-blockers, including eye drops: should be avoided in asthmatic patients; if given for compelling reasons the effect of formoterol will be reduced or abolished (SmPC, section 4.5).",
+      "Other beta-adrenergic drugs: use with caution, as theophylline or other beta-adrenergic drugs prescribed concomitantly with formoterol may have potentially additive effects (SmPC, section 4.5).",
+      "Quinidine, disopyramide, procainamide, phenothiazines, certain antihistamines (for example terfenadine), monoamine oxidase inhibitors and tricyclic antidepressants: can prolong the QTc interval and increase the risk of ventricular arrhythmias (SmPC, section 4.5).",
+      "L-dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards beta2-sympathomimetics (SmPC, section 4.5).",
+      "Monoamine oxidase inhibitors including agents with similar properties such as furazolidone and procarbazine may precipitate hypertensive reactions (SmPC, section 4.5).",
+      "Halogenated hydrocarbon anaesthesia: there is an elevated risk of arrhythmias in patients receiving concomitant anaesthesia with halogenated hydrocarbons (SmPC, section 4.5).",
+      "Xanthine derivatives, steroids or diuretics: concomitant treatment may potentiate the possible hypokalaemic effect of beta2 agonists; hypokalaemia increases the disposition towards arrhythmias in patients treated with digitalis glycosides (SmPC, section 4.5)."
+    ],
+    "monitoring": "The management of asthma should normally follow a stepwise programme and patient response should be monitored clinically and by lung function tests (SmPC, section 4.4). Serum potassium levels should be monitored in unstable asthma situations where a number of rescue bronchodilators may be used, because potentially serious hypokalaemia may result from beta2-agonist therapy and this effect may be potentiated by hypoxia in severe asthma and by concomitant drugs that induce hypokalaemia such as xanthine derivatives, steroids and diuretics (SmPC, section 4.4). Blood glucose should be closely monitored in patients with diabetes, because inhalation of formoterol may cause a rise in blood glucose levels (SmPC, section 4.4). Patients transferring from oral to inhaled corticosteroids may remain at risk of impaired adrenal reserve for a considerable time, and the extent of adrenal impairment may require specialist advice before elective procedures; additional systemic corticosteroid cover should be considered during periods of stress or elective surgery (SmPC, section 4.4). Monitoring of adrenal reserve may be necessary after chronic overdose of inhaled beclometasone dipropionate (SmPC, section 4.9). Patients who present with visual symptoms such as blurred vision should be considered for referral to an ophthalmologist for evaluation of possible cataract, glaucoma or central serous chorioretinopathy (SmPC, section 4.4). Patients should be regularly reassessed by a doctor so that the dosage remains optimal and is only changed on medical advice, and the dose titrated to the lowest dose at which effective control of symptoms is maintained (SmPC, section 4.2).",
+    "patient_counselling": "Advise patients that the dose should be tapered when the treatment is discontinued and that treatment should not be stopped abruptly (SmPC, section 4.4). Advise patients who find the treatment ineffective to seek medical attention, and that increasing use of rescue bronchodilators indicates a worsening of the underlying condition and warrants reassessment of asthma therapy; sudden and progressive deterioration in asthma control is potentially life-threatening and requires urgent medical assessment, with consideration of increased inhaled or oral corticosteroids or antibiotic treatment if infection is suspected (SmPC, section 4.4). Patients should not be started on Fostair NEXThaler during an exacerbation or if they have significantly worsening or acutely deteriorating asthma; they should continue treatment but seek medical advice if asthma symptoms remain uncontrolled or worsen after initiation (SmPC, section 4.4). For treatment of acute asthma attacks patients should have their short-acting bronchodilator available at all times, either Fostair NEXThaler for patients using it as maintenance and reliever therapy or a separate rapid-acting bronchodilator for patients on maintenance therapy only (SmPC, section 4.4). Patients should be reminded to take the inhaler daily as prescribed even when asymptomatic; reliever inhalations are taken in response to asthma symptoms and are not intended for regular prophylactic use such as before exercise, for which a separate rapid-acting bronchodilator should be considered (SmPC, section 4.4). Once asthma symptoms are controlled, consideration may be given to gradually reducing the dose, with regular review as treatment is stepped down, and the lowest effective dose should be used (SmPC, section 4.4). Advise patients to rinse the mouth or gargle with water, or brush the teeth, after inhaling the prescribed dose to minimise the risk of oropharyngeal fungal infections and dysphonia (SmPC, section 4.4). Advise patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption that they should not take the medicine because it contains lactose, which contains small amounts of milk proteins that may cause allergic reactions (SmPC, section 4.4). Correct use of the NEXThaler inhaler is essential for treatment to be successful; the patient should read the patient information leaflet carefully and follow the instructions for use (SmPC, section 4.2). Fostair NEXThaler has no or negligible influence on the ability to drive and use machines (SmPC, section 4.7).",
+    "warnings": [
+      "The dose should be tapered when treatment is discontinued; treatment should not be stopped abruptly (SmPC, section 4.4).",
+      "Sudden and progressive deterioration in asthma control is potentially life-threatening and the patient should undergo urgent medical assessment; consideration should be given to the need for increased treatment with corticosteroids, inhaled or oral, or antibiotic treatment if infection is suspected (SmPC, section 4.4).",
+      "Patients should not be initiated on Fostair NEXThaler during an exacerbation, or if they have significantly worsening or acutely deteriorating asthma (SmPC, section 4.4).",
+      "As with other inhalation therapy, paradoxical bronchospasm may occur with an immediate increase in wheezing, cough and shortness of breath after dosing; this should be treated immediately with a fast-acting inhaled bronchodilator, and the inhaler discontinued immediately with the patient assessed and alternative therapy instituted if necessary (SmPC, section 4.4).",
+      "Pneumonia in patients with COPD: an increase in the incidence of pneumonia, including pneumonia requiring hospitalisation, has been observed in patients with COPD receiving inhaled corticosteroids; risk factors include current smoking, older age, low body mass index and severe COPD, and physicians should remain vigilant because the clinical features of pneumonia overlap with COPD exacerbation symptoms (SmPC, section 4.4).",
+      "Systemic effects of inhaled corticosteroids may occur, particularly at high doses prescribed for prolonged periods; possible effects include Cushing's syndrome, Cushingoid features, adrenal suppression, growth retardation in children and adolescents, decrease in bone mineral density, cataract, glaucoma and, more rarely, psychological or behavioural effects including psychomotor hyperactivity, sleep disorders, anxiety, depression or aggression, particularly in children. The inhaled corticosteroid dose should be titrated to the lowest dose at which effective control of asthma is maintained (SmPC, section 4.4).",
+      "Prolonged treatment with high doses of inhaled corticosteroids may result in adrenal suppression and acute adrenal crisis; children and adolescents aged under 16 inhaling higher than recommended doses of beclometasone dipropionate may be at particular risk, and situations that could trigger acute adrenal crisis include trauma, surgery, infection or any rapid reduction in dosage (SmPC, section 4.4).",
+      "Patients transferring from oral to inhaled corticosteroids may remain at risk of impaired adrenal reserve for a considerable time, and this possibility of residual impairment should be borne in mind in emergency and elective situations likely to produce stress (SmPC, section 4.4).",
+      "Fostair NEXThaler should be administered with caution in patients with active or quiescent pulmonary tuberculosis, and in patients with fungal and viral infections in the airways (SmPC, section 4.4).",
+      "Caution is advised in patients with cardiac arrhythmias, especially third-degree atrioventricular block and tachyarrhythmias, idiopathic subvalvular aortic stenosis, hypertrophic obstructive cardiomyopathy, ischaemic heart disease, severe heart failure, severe arterial hypertension and aneurysm (SmPC, section 4.4).",
+      "Caution is required in patients with known or suspected prolongation of the QTc interval, whether congenital or drug-induced (QTc > 0.44 seconds), because formoterol itself may induce prolongation of the QTc interval (SmPC, section 4.4).",
+      "Caution is also required in patients with thyrotoxicosis, diabetes mellitus, phaeochromocytoma and untreated hypokalaemia (SmPC, section 4.4).",
+      "Potentially serious hypokalaemia may result from beta2-agonist therapy; particular caution is advised in severe asthma as this effect may be potentiated by hypoxia, and serum potassium levels should be monitored in unstable asthma (SmPC, section 4.4).",
+      "The inhalation of formoterol may cause a rise in blood glucose levels, so blood glucose should be closely monitored in patients with diabetes (SmPC, section 4.4).",
+      "If anaesthesia with halogenated anaesthetics is planned, Fostair NEXThaler should not be administered for at least 12 hours before the start of anaesthesia because of the risk of cardiac arrhythmias (SmPC, section 4.4).",
+      "Visual disturbance may be reported with systemic and topical corticosteroid use; patients presenting with blurred vision or other visual disturbances should be considered for referral to an ophthalmologist to evaluate possible causes including cataract, glaucoma or central serous chorioretinopathy (SmPC, section 4.4).",
+      "The medicine contains lactose, which contains small amounts of milk proteins that may cause allergic reactions; patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it (SmPC, section 4.4)."
+    ],
+    "precautions": [
+      "The management of asthma should follow a stepwise programme with clinical and lung-function monitoring, and if a regimen fails to provide adequate control the therapeutic regimen should be re-evaluated (SmPC, section 4.4).",
+      "Serious asthma-related adverse events and exacerbations may occur during treatment; patients should be asked to continue treatment but to seek medical advice if asthma symptoms remain uncontrolled or worsen after initiation (SmPC, section 4.4).",
+      "Because of the extrafine particle size distribution, dose adjustment is required when patients are transferred to Fostair NEXThaler inhalation powder from a formulation with a non-extrafine particle size distribution, and the recommended total daily dose of beclometasone dipropionate for Fostair NEXThaler is lower than for non-extrafine beclometasone dipropionate products; however, patients transferred from Fostair pressurised inhalation solution do not need dose adjustment (SmPC, section 4.2).",
+      "If an individual patient requires a combination of doses other than those available in the combination inhaler, appropriate doses of beta2-agonists and/or corticosteroids by individual inhalers should be prescribed (SmPC, section 4.2).",
+      "Close monitoring for dose-related adverse effects is needed in patients who frequently take high numbers of Fostair NEXThaler as-needed inhalations (SmPC, section 4.2).",
+      "When control of symptoms is maintained with the lowest recommended dosage, the next step-down could include the inhaled corticosteroid alone (SmPC, section 4.2).",
+      "There are no data available for use of Fostair NEXThaler in patients with hepatic or renal impairment (SmPC, section 4.2); the pharmacokinetics of beclometasone dipropionate and of formoterol have not been studied in patients with hepatic or renal impairment (SmPC, section 5.2).",
+      "Because beclometasone dipropionate or its metabolites were not traced in the urine, an increase in systemic exposure is not envisaged in patients with renal impairment, and because it is rapidly metabolised by esterases hepatic impairment is not expected to modify the pharmacokinetics and safety profile of beclometasone dipropionate (SmPC, section 5.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Paradoxical bronchospasm with an immediate increase in wheezing, cough and shortness of breath after dosing (SmPC, section 4.4).",
+      "Acute adrenal crisis in patients exposed to high doses of inhaled corticosteroid, particularly children and adolescents under 16 years (SmPC, section 4.4).",
+      "Potentially serious hypokalaemia from beta2-agonist therapy, potentiated by hypoxia in severe asthma and by concomitant xanthine derivatives, steroids and diuretics, with consequent risk of cardiac arrhythmia and of digoxin toxicity (SmPC, sections 4.4 and 4.5).",
+      "Pneumonia, including pneumonia requiring hospitalisation, in patients with COPD receiving inhaled corticosteroids (SmPC, section 4.4).",
+      "Cardiac effects including tachycardia, angina pectoris, myocardial ischaemia and QTc prolongation, with ventricular arrhythmia risk increased by drugs that prolong QTc (SmPC, sections 4.4, 4.5 and 4.8).",
+      "Hypersensitivity reactions including angioedema of the eye, face, lips and throat, urticaria and rash (SmPC, section 4.8).",
+      "Oropharyngeal candidiasis and dysphonia (SmPC, sections 4.4 and 4.8).",
+      "Systemic corticosteroid effects at high doses, including Cushing's syndrome, adrenal suppression, growth retardation, decreased bone mineral density, cataract and glaucoma (SmPC, section 4.4)."
+    ],
+    "food_interactions": [
+      "Alcohol: L-dopa, L-thyroxine, oxytocin and alcohol can impair cardiac tolerance towards beta2-sympathomimetics (SmPC, section 4.5)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no relevant clinical data on the use of Fostair NEXThaler in pregnant women. Animal studies using the beclometasone dipropionate and formoterol combination showed evidence of toxicity to reproduction and to the fetuses after high systemic exposure (SmPC, section 4.6). High doses of corticosteroids administered to pregnant animals are known to cause abnormalities of fetal development including cleft palate and intrauterine growth retardation. Because of the tocolytic actions of beta2-sympathomimetic agents, particular care should be exercised in the run-up to delivery, and formoterol should not be recommended for use during pregnancy, particularly at the end of pregnancy or during labour, unless there is no other (safer) established alternative. Administration of Fostair NEXThaler during pregnancy should only be considered if the expected benefits outweigh the potential risks (SmPC, section 4.6). The EU Summary of Product Characteristics format carries no pregnancy category letter; the narrative above is the authorised wording.",
+    "lactation_guidance": "There are no relevant clinical data on the use of Fostair NEXThaler during lactation in humans. Although no data from animal experiments are available, it is reasonable to assume that beclometasone dipropionate is secreted in milk, like other corticosteroids. While it is not known whether formoterol passes into human breast milk, it has been detected in the milk of lactating animals. Administration of Fostair NEXThaler to women who are breast-feeding should be considered only if the expected benefits outweigh the potential risks, and a decision must be made whether to discontinue breast-feeding or to discontinue or abstain from Fostair NEXThaler therapy, taking into account the benefit of breast-feeding for the child and the benefit of therapy for the woman (SmPC, section 4.6).",
+    "overdose": "The highest recommended dose in a single administration is 2 inhalations. Four cumulative inhalations of Fostair NEXThaler (total beclometasone dipropionate 400 micrograms and formoterol 24 micrograms given as a single dose) have been studied in asthmatic patients without abnormal, clinically relevant effect on vital signs and without serious or severe adverse reactions; for the pressurised inhalation solution formulation, inhaled doses of up to twelve cumulative actuations (total beclometasone dipropionate 1200 micrograms and formoterol 72 micrograms) produced no abnormal effect on vital signs and no serious or severe adverse events (SmPC, section 4.9). Excessive doses of formoterol may lead to effects typical of beta2-adrenergic agonists: nausea, vomiting, headache, tremor, somnolence, palpitations, tachycardia, ventricular arrhythmias, prolongation of the QTc interval, metabolic acidosis, hypokalaemia and hyperglycaemia. In case of formoterol overdose, supportive and symptomatic treatment is indicated; serious cases should be hospitalised; use of cardioselective beta-adrenergic blockers may be considered but only subject to extreme caution since beta-adrenergic blocker medication may provoke bronchospasm; serum potassium should be monitored (SmPC, section 4.9). Acute inhalation of beclometasone dipropionate doses in excess of those recommended may lead to temporary suppression of adrenal function, which does not need emergency action as adrenal function recovers in a few days as verified by plasma cortisol measurements, and treatment should be continued at a dose sufficient to control asthma; chronic overdose carries a risk of adrenal suppression and monitoring of adrenal reserve may be necessary (SmPC, section 4.9). Single supra-therapeutic doses up to 800 micrograms of beclometasone dipropionate and 48 micrograms of formoterol administered via Fostair NEXThaler are generally safe and well tolerated (SmPC, section 4.9).",
+    "pharmacokinetics": "Beclometasone dipropionate: a prodrug hydrolysed via esterase enzymes to the active metabolite beclometasone-17-monopropionate; the absolute bioavailability following inhalation from a pressurised metered dose inhaler is approximately 2% and 62% of the nominal dose for unchanged beclometasone dipropionate and beclometasone-17-monopropionate respectively, with an approximately linear increase in systemic exposure with increasing inhaled dose. Following intravenous dosing, plasma clearance is high (150 and 120 L/h for beclometasone dipropionate and its active metabolite), the volume of distribution at steady state is 20 L for beclometasone dipropionate and 424 L for the active metabolite, and 82% of metabolic disposition of beclometasone dipropionate results in the active metabolite. Plasma protein binding is moderately high (87%). Faecal excretion is the major route of elimination, mainly as polar metabolites, renal excretion is negligible, and the terminal elimination half-lives are 0.5 hours and 2.7 hours respectively (SmPC, section 5.2). Formoterol: absorbed both from the lung and the gastrointestinal tract, with 60% to 90% of an inhaled dose swallowed after administration with a metered dose inhaler and at least 65% of the swallowed fraction absorbed; peak plasma concentrations of unchanged drug occur within 0.5 to 1 hours after oral administration; plasma protein binding is 61% to 64% with 34% bound to albumin; the elimination half-life after oral administration is 2 to 3 hours; metabolism involves direct glucuronidation at the phenolic hydroxyl group and O-demethylation by CYP2D6, CYP2C19 and CYP2C9, with the liver the primary site; on average 8% and 25% of the dose was excreted as unchanged and total formoterol, the mean terminal elimination half-life after a single 120 mcg inhalation was 10 hours, and renal clearance is 150 mL/min (SmPC, section 5.2).",
+    "clinical_pearls": [
+      "This is the fixed-dose combination inhaler (inhaled corticosteroid plus long-acting beta2-agonist), a different product from the inhaled corticosteroid alone; the beclometasone monotherapy monograph covers QVAR RediHaler and QNASL and is deliberately kept separate from this one, with each statement attributed to its own product information.",
+      "The combination exists in two forms in the EU/UK: a pressurised metered-dose inhalation solution (100/6 micrograms per actuation) and an extrafine dry powder inhaler, Fostair NEXThaler (100/6 and 200/6 micrograms per actuation), which is the formulation described in the SmPC used here.",
+      "Because of the extrafine particle size (mass median aerodynamic diameter 1.4 to 1.5 micrometres, approximately 42% lung deposition), the total daily beclometasone dipropionate dose of the NEXThaler is lower than for non-extrafine products, so dose adjustment is needed when switching from a non-extrafine formulation (SmPC, sections 4.2 and 5.1).",
+      "Fostair NEXThaler can be used either as maintenance therapy only (with a separate rapid-acting bronchodilator for rescue) or as maintenance and reliever therapy (max 8 inhalations daily in adults) (SmPC, section 4.2).",
+      "Formoterol has a rapid onset of bronchodilation (1 to 3 minutes) and a 12-hour duration of action, which underpins the once- or twice-daily maintenance dosing (SmPC, section 5.1).",
+      "In COPD, the combination is licensed for symptomatic treatment of severe COPD (FEV1 <50% predicted) with repeated exacerbations despite long-acting bronchodilator therapy, and pneumonia is a specific labelled risk of the inhaled corticosteroid component in this population (SmPC, sections 4.1 and 4.4).",
+      "No FDA-approved beclometasone/formoterol inhaler exists; the US inhaled corticosteroid/LABA combinations use other corticosteroids (for example budesonide or mometasone). The product information used here is the UK MHRA-approved SmPC for Fostair NEXThaler, which reflects the EU-harmonised product information for beclometasone dipropionate/formoterol fumarate established by the EMA Article 13 referral 'Kantos Master' (EMEA/H/A-13/1350, European Commission final decision), whose Annex I lists the harmonised names, strengths, pharmaceutical forms, marketing authorisation holders and member states.",
+      "In the WHO Model List of Essential Medicines 2023, beclometasone plus formoterol is listed as a therapeutic alternative to budesonide plus formoterol, as a dry powder inhaler delivering 100 plus 6 micrograms per dose and 200 plus 6 micrograms per dose (WHO Model List of Essential Medicines, 23rd list, section 25.1)."
+    ],
+    "brand_names": [
+      "Fostair",
+      "Foster",
+      "Formodual",
+      "Inuvair",
+      "Inuxair",
+      "Innovair",
+      "Inuver",
+      "Kantos Master"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For inhalation use only. NEXThaler is a breath-operated inhaler; moderate and severe asthmatic patients and COPD patients were shown to be able to generate sufficient inspiratory flow to trigger dose release, and delivery is flow-independent across the inspiratory flow range this population can achieve. Correct use of the inhaler is essential for the treatment to be successful, so the patient should read the patient information leaflet and follow the instructions for use. The number of doses shown on the dose counter decreases with each actuation; the inhaler should be replaced when the counter reaches zero (SmPC, section 4.2). Adults: one or two inhalations twice daily as maintenance therapy (maximum 4 inhalations daily), or one inhalation twice daily as maintenance with one additional inhalation as needed in maintenance and reliever therapy (maximum 8 inhalations daily); for COPD, two inhalations twice daily (SmPC, section 4.2). Each metered dose of Fostair NEXThaler 100 micrograms/6 micrograms contains 100 micrograms of beclometasone dipropionate anhydrous and 6 micrograms of formoterol fumarate dihydrate, equivalent to a delivered dose of 81.9 micrograms and 5.0 micrograms respectively, with 9.9 mg of lactose monohydrate per inhalation (SmPC, sections 1 and 2). After each inhalation the mouth should be rinsed or gargled with water, or the teeth brushed, to minimise the risk of oropharyngeal fungal infections and dysphonia (SmPC, section 4.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "SmPC, Fostair NEXThaler 100 micrograms/6 micrograms per actuation inhalation powder (Chiesi Limited), section 5.1 Pharmacodynamic properties",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "SmPC, Fostair NEXThaler, section 4.1 Therapeutic indications; WHO Model List of Essential Medicines, 23rd model list (2023), section 25.1 antiasthmatic medicines and COPD",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "SmPC, Fostair NEXThaler, section 4.3 Contraindications",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "SmPC, Fostair NEXThaler, section 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.1, 4.2 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "SmPC, Fostair NEXThaler, section 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.2, 4.4, 4.9 and 5.2",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.2, 4.4 and 4.7",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "SmPC, Fostair NEXThaler, section 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.2, 4.4 and 5.2",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.4, 4.5 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "SmPC, Fostair NEXThaler, section 4.5 (interaction section)",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "SmPC, Fostair NEXThaler, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "SmPC, Fostair NEXThaler, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "SmPC, Fostair NEXThaler, section 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "SmPC, Fostair NEXThaler, section 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.1, 4.2, 4.4 and 5.1; EMA Article 13 referral 'Kantos Master' (EMEA/H/A-13/1350), Annex I - list of the names, pharmaceutical form, strength, route and marketing authorisation holders in the member states; WHO Model List of Essential Medicines, 23rd model list (2023), section 25.1",
+      "url": "https://www.ema.europa.eu/en/documents/referral/kantos-master-article-13-referral-annex-i_en.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "EMA Article 13 referral 'Kantos Master' (EMEA/H/A-13/1350), Annex I: Formodual, Inuvair, Inuxair, Innovair, Inuver, Foster and Kantos Master 100/6 micrograms per actuation pressurised inhalation solution (Chiesi); UK SmPC for Fostair NEXThaler (Chiesi Limited)",
+      "url": "https://www.ema.europa.eu/en/documents/referral/kantos-master-article-13-referral-annex-i_en.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the SmPC for Fostair NEXThaler (the EU product information carries no US-style boxed warning)",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.2 and 5.2 (no data in hepatic or renal impairment; no dose adjustment specified)",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "SmPC, Fostair NEXThaler, sections 4.2 and 5.2 (no data in hepatic or renal impairment; hepatic impairment not expected to modify the pharmacokinetics of beclometasone dipropionate and no dose adjustment specified)",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "SmPC, Fostair NEXThaler, sections 1, 2, 4.2 and 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/3317/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative asthma and COPD regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric information is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the EU Summary of Product Characteristics format used for Fostair does not assign a lettered pregnancy category; only the narrative risk wording is authorised)",
+    "renal_dose_adjustment (the SmPC states there are no data for use in patients with hepatic or renal impairment and specifies no renal dose adjustment)",
+    "hepatic_dose_adjustment (the SmPC states there are no data for use in patients with hepatic or renal impairment and specifies no hepatic dose adjustment)"
+  ],
+  "notes": "There is no FDA-approved beclometasone/formoterol inhaler; the US inhaled corticosteroid/LABA combinations use other corticosteroids (budesonide or mometasone). The beclometasone/formoterol combination is authorised in the EU/UK and is not centrally authorised by the EMA, so there is no EMA EPAR page; the harmonised EU product information for beclometasone dipropionate/formoterol fumarate was established through the EMA Article 13 referral 'Kantos Master' (EMEA/H/A-13/1350, European Commission final decision, Annex I listing the harmonised names, strengths, forms, marketing authorisation holders and member states: Formodual, Inuvair, Inuxair, Innovair, Inuver, Foster and Kantos Master). The clinical content in this draft is taken from the MHRA-approved SmPC for Fostair NEXThaler 100 micrograms/6 micrograms per actuation inhalation powder (Chiesi Limited) as published in the electronic Medicines Compendium, which is the current UK/EU-harmonised product information for this combination; the pressurised metered-dose formulation (100/6 micrograms per actuation) is referenced where the SmPC itself distinguishes the two presentations (for example in the overdose and paediatric sections). The WHO Model List of Essential Medicines 2023 (23rd list) lists beclometasone plus formoterol as a therapeutic alternative to budesonide plus formoterol, dry powder inhaler 100 plus 6 and 200 plus 6 micrograms per dose. This monograph is deliberately distinct from the 'Beclometasone' monograph, which covers the inhaled/nasal corticosteroid alone; the relationship is stated in the clinical_pearls of both. content_status remains needs_review."
+}

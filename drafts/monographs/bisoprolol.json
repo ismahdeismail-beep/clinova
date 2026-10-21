@@ -1,0 +1,235 @@
+{
+  "name": "Bisoprolol",
+  "existing_id": "9264c6e0-2889-4466-95ce-7814bed9453b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bisoprolol fumarate is a beta 1-selective (cardioselective) adrenoceptor blocking agent without significant membrane stabilizing activity or intrinsic sympathomimetic activity in its therapeutic dosage range. Cardioselectivity is not absolute, however, and at higher doses (20 mg or more) bisoprolol fumarate also inhibits beta 2-adrenoceptors, chiefly located in the bronchial and vascular musculature; to retain selectivity it is therefore important to use the lowest effective dose (FDA label, Bisoprolol Fumarate Tablets USP, CLINICAL PHARMACOLOGY). The most prominent pharmacodynamic effect is the negative chronotropic effect, resulting in a reduction in resting and exercise heart rate; there is a fall in resting and exercise cardiac output with little observed change in stroke volume, and only a small increase in right atrial pressure or pulmonary capillary wedge pressure at rest or during exercise. The mechanism of action of its antihypertensive effects has not been completely established; factors which may be involved are decreased cardiac output, inhibition of renin release by the kidneys, and diminution of tonic sympathetic outflow from the vasomotor centers in the brain (FDA label, CLINICAL PHARMACOLOGY). Bisoprolol fumarate significantly decreases heart rate, increases sinus node recovery time, prolongs AV node refractory periods and, with rapid atrial stimulation, prolongs AV nodal conduction (FDA label, CLINICAL PHARMACOLOGY, Electrophysiology).",
+    "indications": [
+      "Management of hypertension; bisoprolol fumarate may be used alone or in combination with other antihypertensive agents (FDA label, Bisoprolol Fumarate Tablets USP, INDICATIONS AND USAGE).",
+      "WHO Model List of Essential Medicines, 23rd List (2023): bisoprolol is listed in section 12.1 Antianginal medicines (tablet 1.25 mg; 5 mg), section 12.2 Antiarrhythmic medicines (tablet 1.25 mg; 5 mg), section 12.3 Antihypertensive medicines (tablet 1.25 mg; 5 mg), section 12.4 Medicines used in heart failure (tablet 1.25 mg; 5 mg), with carvedilol and metoprolol as therapeutic alternatives (WHO eEML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023: bisoprolol tablet 2.5 mg and 5 mg at level of use 4 in the antihypertensive (14.3.3.1), antianginal (14.1.1), antiarrhythmic (14.2.4) and heart-failure (14.4.1) categories, plus injection 5 mg/mL (20 mL ampoule) (KEML 2023)."
+    ],
+    "contraindications": [
+      "Cardiogenic shock (FDA label, Bisoprolol Fumarate Tablets USP, CONTRAINDICATIONS).",
+      "Overt cardiac failure (FDA label, CONTRAINDICATIONS).",
+      "Second or third degree AV block (FDA label, CONTRAINDICATIONS).",
+      "Marked sinus bradycardia (FDA label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "In two US placebo-controlled studies (273 patients treated with 5 to 20 mg and 132 placebo), withdrawal of therapy for adverse events was 3.3% for bisoprolol fumarate and 6.8% for placebo; withdrawals were less than 1% for either bradycardia or fatigue/lack of energy (FDA label, ADVERSE REACTIONS).",
+      "Adverse experiences reported in at least 1% of patients in the placebo-controlled trials, shown as placebo (n=132) / bisoprolol fumarate 5 to 20 mg (n=273) / bisoprolol fumarate 2.5 to 40 mg (n=404): headache 11.4 / 8.8 / 10.9; sinusitis 4.5 / 2.6 / 2.5; upper respiratory infection 3.8 / 4.8 / 5.0; dizziness 3.8 / 2.9 / 3.5; peripheral oedema 3.8 / 3.7 / 3.0; rhinitis 3.0 / 2.9 / 4.0; arthralgia 2.3 / 2.2 / 2.7; pharyngitis 2.3 / 2.2 / 2.2; insomnia 2.3 / 1.5 / 2.5; increased sweating 1.5 / 0.7 / 1.0; dry mouth 1.5 / 0.7 / 1.3; diarrhoea 1.5 / 2.6 / 3.5; nausea 1.5 / 1.5 / 2.2; fatigue 1.5 / 6.6 / 8.2; depression 0.8 / 0 / 0.2; hypoaesthesia 0.8 / 1.1 / 1.5; dyspnoea 0.8 / 1.1 / 1.5; chest pain 0.8 / 1.1 / 1.5; vomiting 0 / 1.1 / 1.5; asthenia 0 / 0.4 / 1.5; bradycardia 0 / 0.4 / 0.5; and bronchospasm 0 / 0 / 0; the label notes that bradycardia, diarrhoea, asthenia, fatigue and sinusitis appear to be dose related (FDA label, ADVERSE REACTIONS, Table).",
+      "Central nervous system (worldwide studies and postmarketing experience): dizziness, unsteadiness, vertigo, syncope, headache, paraesthesia, hypoesthesia, hyperesthesia, somnolence, sleep disturbances, anxiety/restlessness, decreased concentration/memory (FDA label, ADVERSE REACTIONS).",
+      "Cardiovascular: bradycardia, palpitations and other rhythm disturbances, cold extremities, claudication, hypotension, orthostatic hypotension, chest pain, congestive heart failure, dyspnoea on exertion (FDA label, ADVERSE REACTIONS).",
+      "Psychiatric: vivid dreams, insomnia, depression (FDA label, ADVERSE REACTIONS).",
+      "Gastrointestinal: gastric/epigastric/abdominal pain, gastritis, dyspepsia, nausea, vomiting, diarrhoea, constipation, peptic ulcer (FDA label, ADVERSE REACTIONS).",
+      "Respiratory: asthma/bronchospasm, bronchitis, coughing, dyspnoea, pharyngitis, rhinitis, sinusitis, upper respiratory infection; in pulmonary function studies in healthy volunteers, asthmatics and patients with COPD, slight asymptomatic increases in airways resistance and decreases in FEV1 were observed with doses of 20 mg and higher, similar to other cardioselective beta-blockers, and the changes were reversed by bronchodilator therapy (FDA label, CLINICAL PHARMACOLOGY and ADVERSE REACTIONS).",
+      "Musculoskeletal and skin: muscle/joint pain, arthralgia, back/neck pain, muscle cramps, twitching/tremor; rash, acne, eczema, psoriasis, skin irritation, pruritus, flushing, sweating, alopecia, dermatitis, angioedema, exfoliative dermatitis, cutaneous vasculitis (FDA label, ADVERSE REACTIONS).",
+      "Special senses: visual disturbances, ocular pain/pressure, abnormal lacrimation, tinnitus, decreased hearing, earache, taste abnormalities (FDA label, ADVERSE REACTIONS).",
+      "Genitourinary: decreased libido/impotence, Peyronie's disease, cystitis, renal colic, polyuria (FDA label, ADVERSE REACTIONS).",
+      "General: fatigue, asthenia, chest pain, malaise, oedema, weight gain, angioedema (FDA label, ADVERSE REACTIONS).",
+      "Laboratory abnormalities: the most frequently reported laboratory change in clinical trials was an increase in serum triglycerides, which was not a consistent finding; sporadic liver test abnormalities have been reported, with concomitant SGOT and SGPT elevations of 1 to 2 times normal in 3.9% of treated patients (versus 2.5% for placebo) in 4 to 12 weeks of controlled-trial experience and in 6.2% during 6 to 18 months of long-term uncontrolled experience, and elevations greater than twice normal in 1.5%; small increases in uric acid, creatinine, BUN, serum potassium, glucose and phosphorus and decreases in WBC and platelets were also reported, and ANA conversions were reported in about 15% of patients in long-term studies (FDA label, ADVERSE REACTIONS, Laboratory Abnormalities)."
+    ],
+    "dosage": {
+      "adult": "The dose of bisoprolol fumarate must be individualized to the needs of the patient. The usual starting dose is 5 mg once daily; in some patients 2.5 mg may be an appropriate starting dose (see bronchospastic disease in WARNINGS). If the antihypertensive effect of 5 mg is inadequate, the dose may be increased to 10 mg and then, if necessary, to 20 mg once daily (FDA label, DOSAGE AND ADMINISTRATION). Patients with renal or hepatic impairment (hepatitis or cirrhosis, or creatinine clearance less than 40 mL/min): the initial daily dose should be 2.5 mg and caution should be used in dose titration; since limited data suggest that bisoprolol fumarate is not dialyzable, drug replacement is not necessary in patients undergoing dialysis (FDA label, DOSAGE AND ADMINISTRATION). WHO Model List of Essential Medicines specifies bisoprolol tablets 1.25 mg and 5 mg for antianginal, antiarrhythmic, antihypertensive and heart-failure use, and Kenya's Essential Medicines List 2023 specifies 2.5 mg and 5 mg tablets with a 5 mg/mL (20 mL ampoule) injection at level of use 4 (WHO eEML 23rd List, 2023; KEML 2023, items 14.1.1, 14.2.4, 14.3.3.1 and 14.4.1).",
+      "geriatric": "It is not necessary to adjust the dose in the elderly, unless there is also significant renal or hepatic dysfunction (FDA label, DOSAGE AND ADMINISTRATION, Geriatric Patients). Bisoprolol fumarate has been used in elderly patients with hypertension; response rates and mean decreases in systolic and diastolic blood pressure were similar to those in younger patients in the US clinical studies; although no dose-response study was conducted in elderly patients, there was a tendency for older patients to be maintained on higher doses, and observed reductions in heart rate were slightly greater in the elderly than in the young and tended to increase with increasing dose. In general no disparity in adverse experience reports or dropouts for safety reasons was observed between older and younger patients, and dose adjustment based on age is not necessary (FDA label, PRECAUTIONS, Geriatric Use). The plasma elimination half-life is slightly longer in elderly patients, in part because of decreased renal function in that population (FDA label, CLINICAL PHARMACOLOGY).",
+      "paediatric": "Safety and effectiveness in paediatric patients have not been established (FDA label, PRECAUTIONS, Pediatric Use). There is no paediatric experience with bisoprolol fumarate, and no paediatric dose is specified (FDA label, DOSAGE AND ADMINISTRATION, Pediatric Patients). The US product is supplied only as 5 mg and 10 mg tablets (FDA label, HOW SUPPLIED), while the WHO Model List and KEML also list 1.25 mg/2.5 mg/3.125 mg/5 mg/6.25 mg tablets and a 5 mg/mL injection in some categories (WHO eEML 23rd List, 2023; KEML 2023)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Other beta-blocking agents: bisoprolol fumarate should not be combined with other beta-blocking agents (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Catecholamine-depleting drugs such as reserpine or guanethidine: patients should be closely monitored, because the added beta-adrenergic blocking action of bisoprolol fumarate may produce excessive reduction of sympathetic activity (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Clonidine: if clonidine therapy is to be discontinued, it is suggested that bisoprolol fumarate be discontinued for several days before the withdrawal of clonidine (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Myocardial depressants or inhibitors of AV conduction, particularly the phenylalkylamine (verapamil) and benzothiazepine (diltiazem) classes, and antiarrhythmic agents such as disopyramide: bisoprolol fumarate should be used with care when these are used concurrently (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Digitalis glycosides: both digitalis glycosides and beta-blockers slow atrioventricular conduction and decrease heart rate, and concomitant use can increase the risk of bradycardia (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Rifampin: concurrent use increases the metabolic clearance of bisoprolol fumarate, resulting in a shortened elimination half-life; however, initial dose modification is generally not necessary (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Thiazide diuretics and cimetidine: pharmacokinetic studies document no clinically relevant interactions with these agents given concomitantly (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Warfarin: there was no effect of bisoprolol fumarate on prothrombin time in patients on stable doses of warfarin (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Anaphylaxis: patients with a history of severe anaphylactic reaction to a variety of allergens may be more reactive to repeated challenge while taking beta-blockers, and such patients may be unresponsive to the usual doses of epinephrine used to treat allergic reactions (FDA label, PRECAUTIONS, Risk of Anaphylactic Reaction).",
+      "Insulin or oral hypoglycaemics: because of its beta1-selectivity, masking of hypoglycaemia is less likely with bisoprolol fumarate than with non-selective beta-blockers, but patients subject to spontaneous hypoglycaemia, or diabetic patients receiving insulin or oral hypoglycaemic agents, should be cautioned and bisoprolol fumarate used with caution (FDA label, WARNINGS, Diabetes and Hypoglycemia).",
+      "Anaesthetics: chronically administered beta-blocking therapy should not be routinely withdrawn prior to major surgery, but the impaired ability of the heart to respond to reflex adrenergic stimuli may augment the risk of general anaesthesia and surgical procedures (FDA label, WARNINGS, Major Surgery)."
+    ],
+    "monitoring": "Blood pressure and heart rate should be monitored during dose titration, since the reduction in resting and exercise heart rate is the most prominent pharmacodynamic effect and the antihypertensive effect of 5 mg was seen within one week of treatment, with responses sustained thereafter (FDA label, CLINICAL PHARMACOLOGY and CLINICAL STUDIES). Patients, especially those with coronary artery disease, should be warned about discontinuing bisoprolol fumarate without a physician's supervision, and should be advised to consult a physician if any difficulty in breathing occurs or if they develop signs or symptoms of congestive heart failure or excessive bradycardia (FDA label, PRECAUTIONS, Information for Patients). Patients subject to spontaneous hypoglycaemia, or diabetic patients receiving insulin or oral hypoglycaemic agents, should be cautioned that beta-blockers may mask some of the manifestations of hypoglycaemia, particularly tachycardia (FDA label, PRECAUTIONS, Information for Patients). Liver tests should be considered, since sporadic liver test abnormalities have been reported and concomitant SGOT/SGPT elevations of 1 to 2 times normal occurred in 3.9% of treated patients in 4 to 12 weeks of controlled-trial experience and in 6.2% during 6 to 18 months of long-term treatment (FDA label, ADVERSE REACTIONS, Laboratory Abnormalities). Patients receiving catecholamine-depleting drugs such as reserpine or guanethidine should be closely monitored for excessive reduction of sympathetic activity (FDA label, PRECAUTIONS, Drug Interactions).",
+    "patient_counselling": "Do not stop bisoprolol fumarate without your physician's supervision, particularly if you have coronary artery disease, because abrupt cessation of beta-blocker therapy has been observed to cause exacerbation of angina pectoris and, in some instances, myocardial infarction or ventricular arrhythmia; even in patients without overt coronary artery disease it may be advisable to taper therapy over approximately one week with the patient under careful observation, and if withdrawal symptoms occur therapy should be reinstituted at least temporarily (FDA label, WARNINGS, Abrupt Cessation of Therapy and PRECAUTIONS, Information for Patients). Consult a physician if any difficulty in breathing occurs, or if you develop signs or symptoms of congestive heart failure or excessive bradycardia (FDA label, PRECAUTIONS, Information for Patients). If you are subject to spontaneous hypoglycaemia, or are diabetic and receiving insulin or oral hypoglycaemic agents, be aware that beta-blockers may mask some of the manifestations of hypoglycaemia, particularly tachycardia (FDA label, PRECAUTIONS, Information for Patients). Know how you react to this medicine before you operate automobiles and machinery or engage in other tasks requiring alertness (FDA label, PRECAUTIONS, Information for Patients). Patients with bronchospastic disease who cannot tolerate other antihypertensive treatment should be started at the lowest possible dose, 2.5 mg, and a beta2 agonist (bronchodilator) should be made available (FDA label, WARNINGS, Bronchospastic Disease). Tell your prescriber about all medicines you take, in particular other beta-blockers, reserpine or guanethidine, clonidine, verapamil, diltiazem, disopyramide, digitalis glycosides and rifampin (FDA label, PRECAUTIONS, Drug Interactions).",
+    "warnings": [
+      "Cardiac failure: sympathetic stimulation is a vital component supporting circulatory function in the setting of congestive heart failure, and beta-blockade may result in further depression of myocardial contractility and precipitate more severe failure; in general, beta-blocking agents should be avoided in patients with overt congestive failure, but in some patients with compensated cardiac failure it may be necessary to utilize them, in which case they must be used cautiously (FDA label, WARNINGS, Cardiac Failure).",
+      "In patients without a history of cardiac failure, continued depression of the myocardium with beta-blockers can in some patients precipitate cardiac failure; at the first signs or symptoms of heart failure, discontinuation of bisoprolol fumarate should be considered (FDA label, WARNINGS, Cardiac Failure).",
+      "Abrupt cessation of therapy: exacerbation of angina pectoris and, in some instances, myocardial infarction or ventricular arrhythmia has been observed in patients with coronary artery disease following abrupt cessation of beta-blockers; such patients should be cautioned against interruption or discontinuation of therapy without the physician's advice (FDA label, WARNINGS, Abrupt Cessation of Therapy).",
+      "Peripheral vascular disease: beta-blockers can precipitate or aggravate symptoms of arterial insufficiency in patients with peripheral vascular disease, and caution should be exercised (FDA label, WARNINGS, Peripheral Vascular Disease).",
+      "Bronchospastic disease: patients with bronchospastic disease should in general not receive beta-blockers; because of its relative beta1-selectivity, bisoprolol fumarate may be used with caution in such patients who do not respond to, or cannot tolerate, other antihypertensive treatment, and since beta1-selectivity is not absolute, the lowest possible dose should be used, with therapy starting at 2.5 mg and a beta2 agonist (bronchodilator) made available (FDA label, WARNINGS, Bronchospastic Disease).",
+      "Major surgery: chronically administered beta-blocking therapy should not be routinely withdrawn prior to major surgery, but the impaired ability of the heart to respond to reflex adrenergic stimuli may augment the risk of general anaesthesia and surgical procedures (FDA label, WARNINGS, Major Surgery).",
+      "Diabetes and hypoglycaemia: beta-blockers may mask some of the manifestations of hypoglycaemia, particularly tachycardia, and non-selective beta-blockers may potentiate insulin-induced hypoglycaemia and delay recovery of serum glucose levels; because of its beta1-selectivity this is less likely with bisoprolol fumarate, but patients subject to spontaneous hypoglycaemia, or diabetic patients receiving insulin or oral hypoglycaemic agents, should be cautioned and bisoprolol fumarate used with caution (FDA label, WARNINGS, Diabetes and Hypoglycemia).",
+      "Thyrotoxicosis: beta-adrenergic blockade may mask clinical signs of hyperthyroidism such as tachycardia, and abrupt withdrawal of beta-blockade may be followed by exacerbation of the symptoms of hyperthyroidism or may precipitate thyroid storm (FDA label, WARNINGS, Thyrotoxicosis).",
+      "Impaired renal or hepatic function: use caution in adjusting the dose of bisoprolol fumarate in patients with renal or hepatic impairment (FDA label, PRECAUTIONS).",
+      "Risk of anaphylactic reaction: patients with a history of severe anaphylactic reaction to a variety of allergens may be more reactive to repeated challenge while taking beta-blockers, and may be unresponsive to the usual doses of epinephrine used to treat allergic reactions (FDA label, PRECAUTIONS, Risk of Anaphylactic Reaction).",
+      "Loss of selectivity at higher doses: cardioselectivity is not absolute and at doses of 20 mg or more bisoprolol fumarate also inhibits beta2-adrenoceptors, so the lowest effective dose should be used (FDA label, CLINICAL PHARMACOLOGY)."
+    ],
+    "precautions": [
+      "Dose titration: the dose must be individualized; start at 5 mg once daily, consider 2.5 mg in some patients (for example bronchospastic disease), and titrate cautiously in renal or hepatic impairment, where the initial daily dose should be 2.5 mg (FDA label, DOSAGE AND ADMINISTRATION).",
+      "Combinations: bisoprolol fumarate may be used alone or in combination with other antihypertensive agents; even very low doses of hydrochlorothiazide (6.25 mg) were found to be additive with bisoprolol fumarate in lowering blood pressure in patients with mild-to-moderate hypertension (FDA label, CLINICAL PHARMACOLOGY and INDICATIONS AND USAGE).",
+      "Do not combine with other beta-blockers, and use care with AV-conduction inhibitors and antiarrhythmics, and monitor closely with catecholamine-depleting drugs (FDA label, PRECAUTIONS, Drug Interactions).",
+      "If clonidine is to be discontinued, discontinue bisoprolol fumarate several days before withdrawing clonidine (FDA label, PRECAUTIONS, Drug Interactions).",
+      "Not dialyzable: limited data suggest that bisoprolol fumarate is not dialyzable, and drug replacement is not necessary in patients undergoing dialysis (FDA label, DOSAGE AND ADMINISTRATION and OVERDOSAGE).",
+      "Carcinogenesis, mutagenesis, impairment of fertility: no evidence of carcinogenic potential was seen in mice dosed up to 250 mg/kg/day or rats dosed up to 125 mg/kg/day; there was no evidence of mutagenic potential in in vitro and in vivo assays; reproduction studies in rats did not show impairment of fertility at doses up to 150 mg/kg/day (FDA label, PRECAUTIONS, Carcinogenesis, Mutagenesis, Impairment of Fertility).",
+      "Storage: store at 20 to 25 degrees C (68 to 77 degrees F), protect from moisture and dispense in tight, light-resistant containers (FDA label, HOW SUPPLIED)."
+    ],
+    "serious_adverse_reactions": [
+      "Bronchospasm, which is why patients with bronchospastic disease generally should not receive beta-blockers; with bisoprolol fumarate the lowest possible dose starting at 2.5 mg should be used with a beta2 agonist available (FDA label, WARNINGS, Bronchospastic Disease; ADVERSE REACTIONS, bronchospasm 0% vs 0%).",
+      "Congestive heart failure, which can be precipitated in patients without a history of cardiac failure; discontinuation should be considered at the first signs or symptoms of heart failure (FDA label, WARNINGS, Cardiac Failure).",
+      "Angina pectoris exacerbation, myocardial infarction or ventricular arrhythmia following abrupt cessation of therapy in patients with coronary artery disease (FDA label, WARNINGS, Abrupt Cessation of Therapy).",
+      "Marked bradycardia, hypotension and heart block (second or third degree), which are among the expected signs of beta-blocker overdose and the reasons for the contraindication of second or third degree AV block and marked sinus bradycardia (FDA label, OVERDOSAGE and CONTRAINDICATIONS).",
+      "Anaphylactic reactions in patients with a history of severe anaphylactic reaction to a variety of allergens, who may be unresponsive to the usual doses of epinephrine (FDA label, PRECAUTIONS, Risk of Anaphylactic Reaction).",
+      "Aggravation of peripheral arterial insufficiency (FDA label, WARNINGS, Peripheral Vascular Disease)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No letter pregnancy category is assigned in the FDA label used. In rats, bisoprolol fumarate was not teratogenic at doses up to 150 mg/kg/day (375 and 77 times the maximum recommended human dose of 20 mg on the basis of body weight and body surface area respectively); it was fetotoxic (increased late resorptions) at 50 mg/kg/day and maternotoxic (decreased food intake and body weight gain) at 150 mg/kg/day. In rabbits, bisoprolol fumarate was not teratogenic at doses up to 12.5 mg/kg/day but was embryolethal (increased early resorptions) at 12.5 mg/kg/day. There are no adequate and well-controlled studies in pregnant women, and bisoprolol fumarate should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA label, PRECAUTIONS, Pregnancy).",
+    "lactation_guidance": "Small amounts of bisoprolol fumarate (less than 2% of the dose) have been detected in the milk of lactating rats. It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when bisoprolol fumarate is administered to nursing women (FDA label, PRECAUTIONS, Nursing Mothers).",
+    "overdose": "The most common signs expected with overdosage of a beta-blocker are bradycardia, hypotension, congestive heart failure, bronchospasm and hypoglycaemia. To date a few cases of overdose with bisoprolol fumarate have been reported (maximum 2000 mg); bradycardia and/or hypotension were noted, sympathomimetic agents were given in some cases, and all patients recovered. In general, if overdose occurs, bisoprolol fumarate therapy should be stopped and supportive and symptomatic treatment provided; limited data suggest that bisoprolol fumarate is not dialyzable. For bradycardia, administer IV atropine, and if the response is inadequate isoproterenol or another agent with positive chronotropic properties may be given cautiously, with transvenous pacemaker insertion necessary in some circumstances; for hypotension, administer IV fluids and vasopressors, and intravenous glucagon may be useful; for heart block (second or third degree), monitor carefully and treat with isoproterenol infusion or transvenous cardiac pacemaker insertion as appropriate; for congestive heart failure, initiate conventional therapy (digitalis, diuretics, inotropic agents, vasodilating agents); for bronchospasm, administer bronchodilator therapy such as isoproterenol and/or aminophylline; for hypoglycaemia, administer IV glucose (FDA label, OVERDOSAGE).",
+    "pharmacokinetics": "The absolute bioavailability after a 10 mg oral dose of bisoprolol fumarate is about 80% and absorption is not affected by the presence of food. First-pass metabolism is about 20% and binding to serum proteins is approximately 30%. Peak plasma concentrations occur within 2 to 4 hours of dosing with 5 to 20 mg, with mean peak values ranging from 16 ng/mL at 5 mg to 70 ng/mL at 20 mg. Once-daily dosing results in less than twofold intersubject variation in peak plasma levels. The plasma elimination half-life is 9 to 12 hours and is slightly longer in elderly patients; steady state is attained within 5 days of once-daily dosing; plasma accumulation is low in both young and elderly populations, with an accumulation factor of 1.1 to 1.3, and plasma concentrations are proportional to the administered dose in the range of 5 to 20 mg. Bisoprolol fumarate is eliminated equally by renal and non-renal pathways, with about 50% of the dose appearing unchanged in the urine and the remainder as inactive metabolites; less than 2% of the dose is excreted in the faeces, and the drug is not metabolized by cytochrome P450 II D6 (debrisoquin hydroxylase). In subjects with creatinine clearance less than 40 mL/min the plasma half-life is increased approximately threefold compared with healthy subjects, and in patients with cirrhosis of the liver elimination is more variable in rate and significantly slower, with plasma half-life ranging from 8.3 to 21.7 hours (FDA label, CLINICAL PHARMACOLOGY, Pharmacokinetics and Metabolism).",
+    "clinical_pearls": [
+      "Bisoprolol is beta1-selective in the therapeutic dose range only: at 20 mg and above it also blocks beta2-adrenoceptors in bronchial and vascular muscle, so the lowest effective dose should be used, and in bronchospastic disease therapy should start at 2.5 mg with a bronchodilator available (FDA label, CLINICAL PHARMACOLOGY and WARNINGS, Bronchospastic Disease).",
+      "Never stop a beta-blocker abruptly in a patient with coronary artery disease: tapering over about one week under observation, with re-institution of therapy if withdrawal symptoms occur, is the labelled approach (FDA label, WARNINGS, Abrupt Cessation of Therapy).",
+      "It masks the tachycardia of hypoglycaemia, so patients with spontaneous hypoglycaemia or on insulin or oral hypoglycaemics need specific counselling (FDA label, WARNINGS, Diabetes and Hypoglycemia).",
+      "It also masks the tachycardia of thyrotoxicosis, and abrupt withdrawal may precipitate thyroid storm (FDA label, WARNINGS, Thyrotoxicosis).",
+      "Practical dose rules from the label: usual start 5 mg once daily; 2.5 mg if the patient has bronchospastic disease, hepatic impairment or creatinine clearance under 40 mL/min; titrate to 10 mg then 20 mg if 5 mg is inadequate; no age-based adjustment in the elderly unless there is also significant renal or hepatic dysfunction; and no paediatric experience (FDA label, DOSAGE AND ADMINISTRATION).",
+      "Renal handling is simple because bisoprolol is not dialyzable, so dialysis patients do not need drug replacement after a dose (FDA label, DOSAGE AND ADMINISTRATION and OVERDOSAGE).",
+      "Bigger risk, smaller surprise: bisoprolol fumarate is a WHO essential medicine for antianginal, antiarrhythmic, antihypertensive and heart-failure use (tablet 1.25 mg and 5 mg) and Kenya's Essential Medicines List 2023 carries 2.5 mg and 5 mg tablets with a 5 mg/mL injection, so it is widely available as both tablet and injectable in the region (WHO eEML 23rd List, 2023; KEML 2023, items 14.1.1, 14.2.4, 14.3.3.1 and 14.4.1).",
+      "The FDA label used states that bisoprolol fumarate has no clinically relevant pharmacokinetic interactions with thiazide diuretics or cimetidine, but it should not be combined with other beta-blockers, and verapamil, diltiazem, disopyramide and digitalis all add to bradycardia and AV block risk (FDA label, PRECAUTIONS, Drug Interactions)."
+    ],
+    "brand_names": ["Bisoprolol fumarate"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "In patients with renal dysfunction (creatinine clearance less than 40 mL/min) the initial daily dose should be 2.5 mg and caution should be used in dose titration. Since limited data suggest that bisoprolol fumarate is not dialyzable, drug replacement is not necessary in patients undergoing dialysis. In subjects with creatinine clearance less than 40 mL/min the plasma half-life is increased approximately threefold compared with healthy subjects (FDA label, DOSAGE AND ADMINISTRATION and CLINICAL PHARMACOLOGY).",
+    "hepatic_dose_adjustment": "In patients with hepatic impairment (hepatitis or cirrhosis) the initial daily dose should be 2.5 mg and caution should be used in dose titration. In patients with cirrhosis of the liver, elimination of bisoprolol fumarate is more variable in rate and significantly slower than in healthy subjects, with plasma half-life ranging from 8.3 to 21.7 hours (FDA label, DOSAGE AND ADMINISTRATION and CLINICAL PHARMACOLOGY).",
+    "administration_instructions": "Oral. The dose must be individualised: usual starting dose 5 mg once daily, with 2.5 mg as an appropriate starting dose in some patients (for example bronchospastic disease, or renal/hepatic impairment), increasing to 10 mg and then if necessary to 20 mg once daily if the antihypertensive effect of 5 mg is inadequate (FDA label, DOSAGE AND ADMINISTRATION). Bisoprolol fumarate tablets, USP are supplied as 5 mg and 10 mg film-coated tablets (5 mg: pinkish purple to purple, round, biconvex, debossed 'H14'; 10 mg: white to off-white, round, biconvex, debossed 'H16'), in bottles of 30 unit-of-use and 100; store at 20 to 25 degrees C (68 to 77 degrees F), protect from moisture and dispense in tight, light-resistant containers (FDA label, HOW SUPPLIED). The KEML 2023 also lists a bisoprolol injection 5 mg/mL (20 mL ampoule) for use where oral administration is not possible (KEML 2023, item 14.3.3.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP (Sun Pharmaceutical Industries, Inc., revised 10/2024), DESCRIPTION and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, INDICATIONS AND USAGE; WHO Model List of Essential Medicines, 23rd List (2023), sections 12.1-12.4; Kenya Essential Medicines List 2023, items 14.1.1, 14.2.4, 14.3.3.1 and 14.4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, ADVERSE REACTIONS (table of adverse experiences and Laboratory Abnormalities) and CLINICAL PHARMACOLOGY (pulmonary function studies)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, DOSAGE AND ADMINISTRATION and PRECAUTIONS (Geriatric Use, Pediatric Use); WHO eEML 23rd List (2023), sections 12.1-12.4; KEML 2023, items 14.1.1, 14.2.4, 14.3.3.1 and 14.4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, PRECAUTIONS (Drug Interactions; Risk of Anaphylactic Reaction) and WARNINGS (Diabetes and Hypoglycemia; Major Surgery)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, CLINICAL PHARMACOLOGY and CLINICAL STUDIES, PRECAUTIONS (Information for Patients; Drug Interactions) and ADVERSE REACTIONS (Laboratory Abnormalities)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, WARNINGS (Abrupt Cessation of Therapy; Bronchospastic Disease) and PRECAUTIONS (Information for Patients; Drug Interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, WARNINGS (Cardiac Failure; Abrupt Cessation of Therapy; Peripheral Vascular Disease; Bronchospastic Disease; Major Surgery; Diabetes and Hypoglycemia; Thyrotoxicosis), PRECAUTIONS (Impaired Renal or Hepatic Function; Risk of Anaphylactic Reaction) and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, DOSAGE AND ADMINISTRATION, PRECAUTIONS (Drug Interactions; Carcinogenesis, Mutagenesis, Impairment of Fertility) and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, WARNINGS (Bronchospastic Disease; Cardiac Failure; Abrupt Cessation of Therapy; Peripheral Vascular Disease), PRECAUTIONS (Risk of Anaphylactic Reaction), OVERDOSAGE, CONTRAINDICATIONS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Not stated: the FDA label states only that absorption is not affected by the presence of food; no food interaction is described",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the FDA label carries a 'Pregnancy' paragraph in PRECAUTIONS with animal data but assigns no letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, PRECAUTIONS, Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, PRECAUTIONS, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, CLINICAL PHARMACOLOGY (Pharmacokinetics and Metabolism)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, CLINICAL PHARMACOLOGY, WARNINGS, PRECAUTIONS, DOSAGE AND ADMINISTRATION, OVERDOSAGE, CONTRAINDICATIONS and HOW SUPPLIED; WHO eEML 23rd List (2023); KEML 2023",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+    },
+    {
+      "field": "brand_names",
+      "ref": "The FDA label used is an unbranded generic (Bisoprolol Fumarate Tablets, USP, Sun Pharmaceutical Industries, Inc., NDC 70095-019/020) and carries no brand name; 'Bisoprolol fumarate' is retained as the product name recorded against this row. No 'Zebeta' or other proprietary brand was verifiable on DailyMed for this product and none is asserted.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA bisoprolol fumarate tablets label used",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, DOSAGE AND ADMINISTRATION (Patients with Renal or Hepatic Impairment) and CLINICAL PHARMACOLOGY (Pharmacokinetics and Metabolism)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, DOSAGE AND ADMINISTRATION (Patients with Renal or Hepatic Impairment) and CLINICAL PHARMACOLOGY (Pharmacokinetics and Metabolism)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Bisoprolol Fumarate Tablets USP, DOSAGE AND ADMINISTRATION and HOW SUPPLIED; KEML 2023, item 14.3.3.1 (injection)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7556f457-c4d3-49d6-b383-0ade6d489091"
+    },
+    {
+      "field": "reference_lists",
+      "ref": "WHO Model List of Essential Medicines - 23rd List (2023), WHO/MHP/HPS/EML/2023.02, sections 12.1-12.4; Kenya Essential Medicines List 2023 (Kenya Ministry of Health / KEMSA), items 14.1.1, 14.2.4, 14.3.3.1 and 14.4.1",
+      "url": "https://www.kemsa.go.ke/download/file/8e7d9c438ecc1a468d9d7615a87688df.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric content, including the statement that safety and effectiveness have not been established, is provided in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the FDA label used)",
+    "food_interactions (no food interaction is described in the FDA label; the field is an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Bisoprolol' with a null drug_class and brand_names ['Bisoprolol fumarate']; the previous row carried shared class-template beta-blocker text (which itself carried a copied angiotensin-converting-enzyme-inhibitor/ARB/class-teaching text including tetracycline, thyroxine, warfarin and PPI interactions and calcium-related warnings) and is superseded by this draft. The monograph is built from (1) the FDA/DailyMed label for Bisoprolol Fumarate Tablets USP (Sun Pharmaceutical Industries, revised 10/2024) - the source for description, mechanism, indications, contraindications, warnings, precautions, interactions, dosing, adverse reactions with their trial percentages, overdose, pharmacokinetics, renal and hepatic dose adjustment, and administration/storage; (2) the WHO Model List of Essential Medicines, 23rd List (2023), which places bisoprolol in sections 12.1 to 12.4 with 1.25 mg and 5 mg tablets (carvedilol and metoprolol as therapeutic alternatives) and in the atenolol/hydrochlorothiazide fixed-dose combination as the bisoprolol option; and (3) the Kenya Essential Medicines List 2023, items 14.1.1 (antianginal), 14.2.4 (antiarrhythmic), 14.3.3.1 (beta blockers, tablet 2.5 mg and 5 mg plus injection 5 mg/mL 20 mL ampoule) and 14.4.1 (heart failure), all at level of use 4. Note the strength differences between sources and are reported exactly: the WHO Model List specifies 1.25 mg and 5 mg tablets, KEML 2023 specifies 2.5 mg and 5 mg tablets plus an injection, and the US FDA product supplies 5 mg and 10 mg tablets only. Brand names: the FDA label used is an unbranded generic with no brand name, and no proprietary bisoprolol brand (for example Zebeta) could be verified on DailyMed for this product, so brand_names retains 'Bisoprolol fumarate' only. The FDA label used does not assign a letter pregnancy category, so fields.pregnancy_category is null while the animal and clinical pregnancy data are carried in fields.pregnancy_guidance."
+}

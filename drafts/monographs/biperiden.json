@@ -1,0 +1,229 @@
+{
+  "name": "Biperiden",
+  "existing_id": "d44461ed-3a14-498b-8eab-eeaa5355f66b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Akineton (biperiden) is an anticholinergic agent with a marked effect on the central nervous system which is important for its therapeutic application, and, unlike atropine, has weak peripheral vegetative effects (Akineton 2 mg tablets SmPC, section 5.1 Pharmacodynamic properties). Biperiden is classified in ATC group N04AA02, anti-parkinson drugs, anticholinergic agents, biperiden (Akineton SmPC, section 5.1). The class-level mechanism is competitive antagonism of acetylcholine at central muscarinic receptors in the corpus striatum, restoring the balance between the cholinergic and dopaminergic systems that are disturbed in parkinsonism and in neuroleptic-induced extrapyramidal syndromes; this is stated here at class level because the Akineton SmPC describes the drug by its anticholinergic (anti-cholinergic) central action and does not set out a molecule-level mechanism (Akineton SmPC, section 5.1).",
+    "indications": [
+      "Parkinsonian syndromes, especially to counteract muscular rigidity and tremor (Akineton 2 mg tablets SmPC, section 4.1 Therapeutic Indications).",
+      "Extrapyramidal symptoms such as early dyskinesia, akathisia and parkinsonism provoked by neuroleptics and similarly acting drugs (Akineton SmPC, section 4.1).",
+      "WHO Model List of Essential Medicines, 23rd List (2023), section 5.3 Medicines for parkinsonism: biperiden injection 5 mg (lactate) in 1 mL ampoule and tablet 2 mg (hydrochloride); trihexyphenidyl is listed as a therapeutic alternative (WHO eEML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023, item 10.2: biperiden injection 5 mg (lactate) in 1 mL ampoule and tablet 2 mg (hydrochloride), described as an anti-parkinsonism agent that is effective in managing antipsychotic-induced extrapyramidal side effects/symptoms, with the injectable form an advantage in emergencies or when oral administration is not possible (KEML 2023, item 10.2 and footnote 282)."
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance or to any of the excipients (Akineton SmPC, section 4.3).",
+      "Untreated narrow-angle glaucoma (Akineton SmPC, section 4.3).",
+      "Mechanical stenoses in the gastrointestinal tract, paralytic ileus and megacolon (Akineton SmPC, section 4.3).",
+      "Prostatic adenoma (Akineton SmPC, section 4.3).",
+      "Diseases that can lead to perilous tachycardia (Akineton SmPC, section 4.3)."
+    ],
+    "side_effects": [
+      "Frequencies in the SmPC are based on spontaneously reported side effects, so the percentage frequency cannot be determined exactly; side effects may occur particularly at the beginning of treatment and if the dosage is increased too quickly (Akineton SmPC, section 4.8).",
+      "Psychiatric, rare (higher doses): excitement, agitation, fear, confusion, delirious syndromes, hallucinations, sleeplessness; very rare: nervousness and euphoria (Akineton SmPC, section 4.8).",
+      "Nervous system, rare: fatigue, dizziness and disturbance of memory; very rare: headache, dyskinesia, ataxia and speaking disorder, increased disposition to cerebral seizures and convulsions (Akineton SmPC, section 4.8).",
+      "Eye, very rare: disturbance of accommodation, mydriasis and photosensitivity; closed-angle glaucoma might occur through control of intraocular pressure (Akineton SmPC, section 4.8).",
+      "Cardiac, rare: tachycardia; very rare: bradycardia; a fall in blood pressure may occur following parenteral administration (Akineton SmPC, section 4.8).",
+      "Gastrointestinal, rare: dryness of mouth, nausea, gastric disorder; very rare: constipation (Akineton SmPC, section 4.8).",
+      "Skin, very rare: reduced perspiration and allergic rash; musculoskeletal, rare: muscle twitching (Akineton SmPC, section 4.8).",
+      "Renal and urinary, very rare: voiding disorders, especially in patients with prostate adenoma (dose reduction needed), more seldom urinary retention (Akineton SmPC, section 4.8).",
+      "Immune system, very rare: hypersensitivity; infections, frequency not known: parotitis (Akineton SmPC, section 4.8).",
+      "General, rare: drowsiness (Akineton SmPC, section 4.8).",
+      "Central excitation effects are frequently seen in patients with symptoms of a cerebral deficiency and can necessitate a decrease in dosage; temporarily reduced REM sleep has been reported (Akineton SmPC, sections 4.4 and 4.8)."
+    ],
+    "dosage": {
+      "adult": "Akineton 2 mg tablets: treatment is normally initiated with small incremental doses depending on therapeutic effect and side effects. Parkinsonism: start with an oral dose of 1 mg (half a tablet) twice daily; the dose can be increased by 2 mg (one tablet) per day up to a maximum of 16 mg (8 tablets) daily, and the total daily dose should be spread evenly throughout the day. Drug-induced movement disorders: 1 to 4 mg (half to 2 tablets) one to four times daily as oral concomitant medication to the neuroleptic, depending on the severity of the symptoms (Akineton SmPC, section 4.2). The dose should be changed gradually and not abruptly, and treatment should be initiated or discontinued gradually (Akineton SmPC, section 4.4). Biperiden is not marketed in the United States, so the FDA label route is not available; the WHO Model List and the Kenya Essential Medicines List both specify the same 2 mg tablet (hydrochloride) and 5 mg/mL injection (lactate) strengths (WHO eEML 23rd List, 2023; KEML 2023, item 10.2).",
+      "geriatric": "Cautious dosing is necessary in elderly patients, especially those with symptoms of organic brain disease (Akineton SmPC, section 4.2 Special populations, Elderly). Akineton should only be used with caution in the elderly (Akineton SmPC, section 4.4). In the 15-day pharmacokinetic study cited in the SmPC, terminal half-life was longer in elderly patients (30.2 hours on day 1 and 38.5 hours on day 15) than in young volunteers (14.2 and 24.5 hours) (Akineton SmPC, section 5.2).",
+      "paediatric": "Experience with Akineton 2 mg tablets in paediatric use is limited and relates mainly to short-term treatment of drug-induced dystonia (for example caused by neuroleptics or metoclopramide and congener compounds). For drug-induced movement disorders in children aged 3-15 years: 1 to 2 mg (half to 1 tablet) one to three times daily (Akineton SmPC, section 4.2 Paediatric population). No paediatric dose is specified for parkinsonism itself, and no data are given for children under 3 years (Akineton SmPC, section 4.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Other anticholinergic psychotropic drugs, antihistamines, other antiparkinsonian drugs and antispasmodics: combination with Akineton can potentiate central and peripheral side effects (Akineton SmPC, section 4.5).",
+      "Quinidine: concomitant intake may potentiate the anticholinergic effect, especially on AV conduction (Akineton SmPC, section 4.5).",
+      "Levodopa: concurrent administration of levodopa and Akineton may potentiate dyskinesia, and generalised choreic movements have been reported in Parkinson's disease following concurrent administration of carbidopa/levodopa and Akineton (Akineton SmPC, section 4.5).",
+      "Neuroleptics: tardive dyskinesia induced by neuroleptics may be intensified by Akineton (Akineton SmPC, section 4.5).",
+      "Metoclopramide and compounds with similar activity on the gastrointestinal tract: their effect is attenuated by anticholinergics such as Akineton (Akineton SmPC, section 4.5).",
+      "Alcohol: as with all other drugs acting on the central nervous system, the consumption of alcohol should be avoided under Akineton therapy (Akineton SmPC, section 4.5).",
+      "Dopaminergic antiparkinsonian agents are not the only co-medications affected; the SmPC specifically warns against combining with other anticholinergic antiparkinsonian agents because of additive central and peripheral anticholinergic toxicity (Akineton SmPC, section 4.5)."
+    ],
+    "monitoring": "Central excitation effects are frequently seen in patients with symptoms of a cerebral deficiency and can necessitate a decrease in the dosage (Akineton SmPC, sections 4.2 and 4.4). Monitor for voiding disorders, especially in patients with prostate adenoma, for which dose reduction is advised (Akineton SmPC, section 4.8). Monitor for tachycardia and for blood pressure changes after parenteral administration (Akineton SmPC, section 4.8). Patients being treated should be assessed for drowsiness before driving or operating machinery, and must not drive or operate machinery unless it has been shown not to affect physical or mental ability (Akineton SmPC, section 4.7). Observe for hypersensitivity reactions (very rare) and for parotitis (frequency not known) (Akineton SmPC, section 4.8).",
+    "patient_counselling": "Take the tablets during a meal with a little water; in case of very dry mouth, the tablets can be taken after the meal (Akineton SmPC, section 4.2 Method of administration). The dose must be changed gradually and not abruptly, and treatment should be started and stopped gradually (Akineton SmPC, section 4.4). Akineton may cause drowsiness; do not drive or operate machinery unless it has been shown not to affect your physical or mental ability (Akineton SmPC, section 4.7). Avoid alcohol while taking Akineton, because it acts on the central nervous system (Akineton SmPC, section 4.5). Tell your prescriber if you are taking other anticholinergic medicines, antihistamines, other antiparkinsonian medicines, antispasmodics, quinidine, levodopa or neuroleptics, as these interactions can potentiate side effects (Akineton SmPC, section 4.5). Akineton should only be used during pregnancy or lactation if considered essential by the physician (Akineton SmPC, section 4.6). If you have a rare hereditary problem of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption you should not take this medicine, because it contains lactose as lactose monohydrate (38 mg per tablet) (Akineton SmPC, sections 4.4 and 6.1).",
+    "warnings": [
+      "Anticholinergic toxicity: Akineton should only be used with caution in patients with thyrotoxicosis, cardiac failure, tachycardia, prostatic adenoma, or who show an increased tendency to convulsions (Akineton SmPC, section 4.4).",
+      "Central excitation effects are frequently seen in patients with symptoms of a cerebral deficiency and can necessitate a decrease in the dosage (Akineton SmPC, section 4.4).",
+      "Temporarily reduced REM sleep has been reported, characterised by an increase in the time needed to reach this stage and a percentage decrease in the length of this phase in total sleep (Akineton SmPC, sections 4.4 and 4.8).",
+      "The dose should be changed gradually and not abruptly; treatment should be initiated or discontinued gradually (Akineton SmPC, section 4.4).",
+      "Drowsiness and impaired psychomotor performance: Akineton may cause drowsiness and patients should not drive or operate machinery unless it has been shown not to affect physical or mental ability (Akineton SmPC, section 4.7).",
+      "Lactose excipient: the tablets contain 38 mg lactose monohydrate and should not be taken by patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption (Akineton SmPC, sections 4.4 and 6.1).",
+      "Alcohol: as with all other drugs acting on the central nervous system, consumption of alcohol should be avoided under Akineton therapy (Akineton SmPC, section 4.5)."
+    ],
+    "precautions": [
+      "Use in the elderly: Akineton should only be used with caution in the elderly, and cautious dosing is necessary in elderly patients, especially those with symptoms of organic brain disease (Akineton SmPC, sections 4.2 and 4.4).",
+      "Use caution in thyrotoxicosis, cardiac failure, tachycardia, prostatic adenoma, and in patients who show an increased tendency to convulsions (Akineton SmPC, section 4.4).",
+      "Discontinue gradually rather than abruptly, and titrate the dose in small increments according to therapeutic effect and side effects (Akineton SmPC, sections 4.2 and 4.4).",
+      "Because central excitation effects are frequently seen in patients with symptoms of a cerebral deficiency, the dose may need to be reduced (Akineton SmPC, sections 4.2 and 4.4).",
+      "Ocular and urinary monitoring: closed-angle glaucoma might occur through control of intraocular pressure, and voiding disorders with urinary retention are especially likely in patients with prostate adenoma (Akineton SmPC, section 4.8).",
+      "Storage: do not store above 25 degrees C and keep the blister in the outer carton; shelf life 5 years (Akineton SmPC, sections 6.3 and 6.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Anticholinergic toxidrome in overdose: mydriasis, dryness of mucous membranes, flushing, rise in heart rate, reduction of bowel motility, reduction of ureter and bladder tone, increased temperature, excitation, confusion, clouding of consciousness and/or hallucinations; in severe overdose, cardiac and respiratory depression may occur (Akineton SmPC, section 4.9).",
+      "Very rare hypersensitivity reactions (Akineton SmPC, section 4.8).",
+      "Convulsions and increased disposition to cerebral seizures (very rare), and rare delirious syndromes and hallucinations at higher doses (Akineton SmPC, section 4.8).",
+      "Closed-angle glaucoma (very rare) as a consequence of control of intraocular pressure (Akineton SmPC, section 4.8).",
+      "Urinary retention and voiding disorders, especially in patients with prostate adenoma (very rare) (Akineton SmPC, section 4.8)."
+    ],
+    "food_interactions": [
+      "Alcohol: as with all other drugs acting on the central nervous system, the consumption of alcohol should be avoided under Akineton therapy (Akineton SmPC, section 4.5)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Akineton should only be used during pregnancy or lactation if considered essential by the physician. There is no information available on animal reproductive studies and no reports of use during pregnancy or lactation in man (Akineton SmPC, section 4.6). No letter pregnancy category is assigned in the SmPC used. The WHO Model List and Kenya Essential Medicines List give no pregnancy-specific information for biperiden (WHO eEML 23rd List, 2023; KEML 2023, item 10.2).",
+    "lactation_guidance": "Akineton should only be used during pregnancy or lactation if considered essential by the physician; there is no information available on animal reproductive studies and no reports of use during pregnancy or lactation in man (Akineton SmPC, section 4.6). No letter pregnancy category and no dedicated lactation section are present in the SmPC used, and no lactation data are given in the WHO Model List or KEML entries for biperiden (Akineton SmPC, section 4.6; WHO eEML 23rd List, 2023; KEML 2023, item 10.2).",
+    "overdose": "Symptoms of overdose are anticholinergic effects such as mydriasis, dryness of mucous membranes, flushing, rise in heart rate, reduction of bowel motility, reduction of ureter and bladder tone, increased temperature, excitation, confusion, clouding of consciousness and/or hallucinations; in severe overdose, cardiac and respiratory depression may occur. Treatment: gastric lavage or emesis should be considered; as an antidote, acetylcholinesterase inhibitors are recommended; vital signs should be closely monitored and appropriate supportive measures taken; artificial ventilation, reduction of fever and application of a bladder emptying catheter may be necessary; in the event of cardiac depression, a cardiac stimulant drug such as dobutamine may be considered (Akineton SmPC, section 4.9).",
+    "pharmacokinetics": "The SmPC reports a 15-day pharmacokinetic study (Richens et al, 1988) in young healthy volunteers and elderly male patients. On study day 1: mean Cmax 4.34 ng/mL (young) versus 7.24 ng/mL (elderly), mean tmax 0.9 h versus 1.6 h, mean half-life 14.2 h versus 30.2 h, and mean AUC 28.6 ng/ml/h versus 78.7 ng/ml/h. On study day 15: mean Cmax 2.46 ng/mL (young) versus 4.20 ng/mL (elderly), mean tmax 0.8 h versus 1.6 h, mean half-life 24.5 h versus 38.5 h, and mean AUC 20.9 ng/ml/h versus 98.8 ng/ml/h (Akineton SmPC, section 5.2 Pharmacokinetic properties). No absorption, distribution, metabolism or excretion data are given in the SmPC used.",
+    "clinical_pearls": [
+      "Biperiden is a centrally acting anticholinergic: it is powerful in the brain but, unlike atropine, has only weak peripheral vegetative effects, which is why it is chosen for parkinsonism and neuroleptic-induced extrapyramidal symptoms (Akineton SmPC, section 5.1).",
+      "The classic anticholinergic hazards are the patient-facing checklist: blurred vision with risk of closed-angle glaucoma, constipation and ileus, urinary retention in a man with prostatic adenoma, tachycardia, confusion and hallucinations, and heat intolerance - all are directly traceable to the SmPC contraindication and adverse reaction lists (Akineton SmPC, sections 4.3 and 4.8).",
+      "Never stop biperiden abruptly: the SmPC requires the dose to be changed gradually and treatment to be initiated or discontinued gradually (Akineton SmPC, section 4.4).",
+      "Biperiden and levodopa are not a free combination: concurrent use may potentiate dyskinesia, and generalised choreic movements have been reported with carbidopa/levodopa plus Akineton (Akineton SmPC, section 4.5).",
+      "In the Kenyan and WHO essential medicines lists biperiden is a parkinsonism medicine with two routes - 2 mg hydrochloride tablets and 5 mg lactate injection in a 1 mL ampoule - and the injectable form is highlighted as useful in emergencies or when oral administration is not possible (KEML 2023, item 10.2 and footnote 282; WHO eEML 23rd List, 2023, section 5.3).",
+      "Biperiden is a WHO essential medicine (23rd List, 2023) and a Kenya essential medicine (KEML 2023), but it has no FDA-approved product in the United States, so US-prescriber dosing information does not exist for it.",
+      "Anticholinergic antidotes in overdose: acetylcholinesterase inhibitors are the recommended antidote, with supportive measures including gastric lavage, cooling and bladder catheterisation (Akineton SmPC, section 4.9)."
+    ],
+    "brand_names": ["Akineton"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral use. The tablets are best taken during a meal with a little water; in case of very dry mouth the tablets can be taken after the meal (Akineton SmPC, section 4.2 Method of administration). Treatment should be initiated with small incremental doses and the dose changed gradually, not abruptly; treatment should be initiated or discontinued gradually (Akineton SmPC, sections 4.2 and 4.4). Each tablet contains 2 mg biperiden hydrochloride and 38 mg lactose monohydrate, and may be divided into equal doses (Akineton SmPC, sections 2, 3 and 6.1). Do not store above 25 degrees C, keep the blister in the outer carton, shelf life 5 years, supplied as PVC/Al blister packs of 20 tablets in boxes of 100 (Akineton SmPC, sections 3, 5, 6.3, 6.4 and 6.5). For the injectable presentation listed in the WHO Model List and KEML, the 5 mg (lactate) ampoule is used where oral administration is not possible, for example in emergencies (KEML 2023, item 10.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Akineton 2 mg tablets, Summary of Product Characteristics (Health Products Regulatory Authority, Ireland; MA number PA1253/001/001; revised December 2020), sections 5.1 Pharmacodynamic properties and 4.1",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "Akineton SmPC, section 4.1 Therapeutic Indications; WHO Model List of Essential Medicines, 23rd List (2023), section 5.3 Medicines for parkinsonism; Kenya Essential Medicines List 2023, item 10.2 and footnote 282",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Akineton SmPC, section 4.3 Contraindications",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Akineton SmPC, section 4.8 Undesirable effects, and sections 4.2 and 4.4",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "Akineton SmPC, sections 4.2 Posology and method of administration (Adults, Special populations, Paediatric population), 4.4 and 5.2; WHO eEML 23rd List (2023), section 5.3; KEML 2023, item 10.2 and footnote 282",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "Akineton SmPC, section 4.5 Interaction with other medicinal products and other forms of interactions",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Akineton SmPC, sections 4.2, 4.4, 4.7 and 4.8",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Akineton SmPC, sections 4.2 Method of administration, 4.4, 4.5, 4.6, 4.7 and 6.1",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "Akineton SmPC, sections 4.4 Special warnings and precautions for use, 4.5, 4.7 and 6.1",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "Akineton SmPC, sections 4.2, 4.3, 4.4, 4.8, 6.3 and 6.4",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Akineton SmPC, sections 4.8 Undesirable effects and 4.9 Overdose",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Akineton SmPC, section 4.5 (alcohol)",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the Akineton SmPC assigns no letter pregnancy category; section 4.6 addresses fertility, pregnancy and lactation",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Akineton SmPC, section 4.6 Fertility, pregnancy and lactation; WHO eEML 23rd List (2023); KEML 2023, item 10.2",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Akineton SmPC, section 4.6; WHO eEML 23rd List (2023); KEML 2023, item 10.2",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "Akineton SmPC, section 4.9 Overdose (Symptoms and Treatment)",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Akineton SmPC, section 5.2 Pharmacokinetic properties (15-day study, Richens et al 1988)",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Akineton SmPC, sections 4.3, 4.4, 4.5, 4.8, 4.9 and 5.1; WHO eEML 23rd List (2023), section 5.3; KEML 2023, item 10.2 and footnote 282",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Akineton 2 mg tablets (biperiden hydrochloride), marketing authorisation PA1253/001/001, HPRA-approved SmPC; the SmPC names the product Akineton",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning: the Akineton SmPC carries no equivalent of a US boxed warning (EU products do not use this format)",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Not stated: no renal dose adjustment or renal impairment section appears in the Akineton SmPC, the WHO Model List entry or the KEML entry",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: no hepatic dose adjustment or hepatic impairment section appears in the Akineton SmPC, the WHO Model List entry or the KEML entry",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Akineton SmPC, sections 2, 3, 4.2, 4.4, 5, 6.1, 6.3, 6.4 and 6.5; KEML 2023, item 10.2",
+      "url": "https://assets.hpra.ie/products/Human/25753/Licence_PA1253-001-001_17122020173233.pdf"
+    },
+    {
+      "field": "reference_lists",
+      "ref": "WHO Model List of Essential Medicines - 23rd List (2023), WHO/MHP/HPS/EML/2023.02; Kenya Essential Medicines List 2023 (Kenya Ministry of Health / KEMSA), items 10.2, 19.4 and 9.2.1.3 and footnotes 206 and 282",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the Akineton SmPC)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the Akineton SmPC, the WHO Model List or KEML)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the Akineton SmPC, the WHO Model List or KEML)",
+    "molecule-level mechanism (the Akineton SmPC describes biperiden by its central anticholinergic action and its weak peripheral vegetative effects; the striatal competitive antagonism explanation given in mechanism_of_action is stated at class level and is flagged as such in the field text)"
+  ],
+  "notes": "The table stores this agent as 'Biperiden' with drug_class 'Central nervous system agent' and an empty brand_names array; the previous row carried olanzapine/schizophrenia content (removed 2026-10-05) and shared class-template text, all superseded by this draft. Biperiden has no DailyMed/FDA label because it is not approved in the United States, so the monograph is built from (1) the Akineton 2 mg tablets Summary of Product Characteristics approved by the Health Products Regulatory Authority (Ireland), MA number PA1253/001/001, revised December 2020 - the source for indications, contraindications, warnings, precautions, interactions, dosing, adverse reactions, overdose, pharmacodynamics and pharmacokinetics; (2) the WHO Model List of Essential Medicines, 23rd List (2023), section 5.3 Medicines for parkinsonism, which lists biperiden injection 5 mg (lactate) in 1 mL ampoule and tablet 2 mg (hydrochloride) with trihexyphenidyl as a therapeutic alternative; and (3) the Kenya Essential Medicines List 2023, item 10.2, which lists both strengths and gives the Kenyan annotation that biperiden is an anti-parkinsonism agent effective for antipsychotic-induced extrapyramidal side effects and that the injectable form is an advantage in emergencies or when oral administration is not possible (footnote 282: used for symptomatic management of parkinsonism; oral formulation is the hydrochloride salt, injectable is the lactate salt). The SmPC covers the 2 mg tablet only, so all dose, interaction and adverse reaction content refers to oral biperiden; the injectable presentation is covered only to the extent of the WHO/KEML listings. Note also that the class-level explanation of striatal muscarinic antagonism given in mechanism_of_action is labelled as class-level, because the SmPC itself only states the central anticholinergic action and the weak peripheral vegetative effects relative to atropine."
+}

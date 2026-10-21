@@ -1,0 +1,197 @@
+{
+  "name": "Benralizumab",
+  "existing_id": "f26cb9a8-ec51-4fdd-8b3e-7e7fd990bc05",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Benralizumab is a humanized afucosylated monoclonal antibody (IgG1, kappa) that directly binds to the alpha subunit of the human interleukin-5 receptor (IL-5Ralpha) with a dissociation constant of 11 pM. The IL-5 receptor is expressed on the surface of eosinophils and basophils. In an in vitro setting, the absence of fucose in the Fc domain of benralizumab facilitates binding (45.5 nM) to Fc-gamma-RIII receptors on immune effector cells such as natural killer cells, leading to apoptosis of eosinophils and basophils through antibody-dependent cell-mediated cytotoxicity (ADCC). Inflammation is an important component in the pathogenesis of asthma, EGPA and HES, involving multiple cell types and mediators; benralizumab reduces eosinophils through ADCC, but the mechanism of benralizumab action in asthma, EGPA and HES has not been definitively established (FDA Fasenra (benralizumab) Injection label, section 12.1).",
+    "indications": [
+      "Add-on maintenance treatment of adult and pediatric patients aged 6 years and older with severe asthma and with an eosinophilic phenotype (FDA Fasenra label, section 1.1)",
+      "Treatment of adult patients with eosinophilic granulomatosis with polyangiitis (EGPA) (FDA Fasenra label, section 1.2)",
+      "Treatment of adult and pediatric patients aged 12 years and older with hypereosinophilic syndrome (HES) without an identifiable non-hematologic secondary cause (FDA Fasenra label, section 1.3)",
+      "Limitation of use: not for relief of acute bronchospasm or status asthmaticus (FDA Fasenra label, sections 1 and 1.1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to benralizumab or any of its excipients (FDA Fasenra label, section 4)"
+    ],
+    "side_effects": [
+      "Asthma (SIROCCO and CALIMA, n=822 vs 847 placebo): headache 8% vs 6%, pharyngitis 5% vs 3%, pyrexia 3% vs 2%, hypersensitivity reactions 3% vs 3% (FDA Fasenra label, section 6.1, Table 2)",
+      "Injection site reactions (pain, erythema, pruritus, papule) in 2.2% of FASENRA-treated asthma patients vs 1.9% with placebo (FDA Fasenra label, section 6.1)",
+      "EGPA (MANDARA, 70 adults): headache in 17% of FASENRA-treated patients; the incidence of other adverse reactions was consistent with asthma, and no new adverse reactions were identified (FDA Fasenra label, section 6.1)",
+      "HES (NATRON, 67 patients aged 12 years and older): headache in 11 patients (16%), hypersensitivity reactions including urticaria, papular urticaria and rash in 6 patients (9%), and influenza-like illness in 4 patients (6%) (FDA Fasenra label, section 6.1)",
+      "Post-marketing: hypersensitivity reactions, including anaphylaxis, reported after administration of FASENRA (FDA Fasenra label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Asthma: 30 mg (one injection) administered subcutaneously every 4 weeks for the first 3 doses, then every 8 weeks thereafter (FDA Fasenra label, section 2.1). EGPA: 30 mg (one injection) administered subcutaneously every 4 weeks (section 2.2). HES: 30 mg (one injection) administered subcutaneously every 4 weeks (section 2.3).",
+      "geriatric": "In the asthma clinical trials 13% (n=320) of patients were 65 years and over and 0.4% (n=9) were 75 years and over; no overall differences in safety or effectiveness were observed between these patients and younger patients, but greater sensitivity of some older individuals cannot be ruled out. Clinical studies of FASENRA for EGPA and HES did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients (FDA Fasenra label, section 8.5).",
+      "paediatric": "Asthma: safety and effectiveness established in patients 6 years and older. Patients 12-17 years: 30 mg every 4 weeks for the first 3 doses then every 8 weeks thereafter (supported by SIROCCO n=53 and CALIMA n=55). Patients 6-11 years, weight-based: less than 35 kg, 10 mg subcutaneously every 4 weeks for the first 3 doses then every 8 weeks thereafter; 35 kg or more, 30 mg subcutaneously every 4 weeks for the first 3 doses then every 8 weeks thereafter (FDA Fasenra label, sections 2.1 and 8.4). HES: safety and effectiveness established in patients 12 years and older (NATRON enrolled 3 paediatric patients). Safety and effectiveness of FASENRA in patients younger than 6 years have not been established, and in patients with EGPA younger than 18 years have not been established (section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No formal drug-drug interaction studies have been conducted with benralizumab (FDA Fasenra label, section 12.3, Drug Interaction Studies)",
+      "Cytochrome P450 enzymes, efflux pumps and protein-binding mechanisms are not involved in the clearance of benralizumab, and there is no evidence of IL-5Ralpha expression on hepatocytes; eosinophil depletion does not produce chronic systemic alterations of proinflammatory cytokines (FDA Fasenra label, section 12.3)",
+      "An effect of benralizumab on the pharmacokinetics of co-administered medications is not expected, and commonly co-administered medications had no effect on benralizumab clearance in patients with asthma (FDA Fasenra label, section 12.3)"
+    ],
+    "monitoring": "FASENRA is intended for use under the guidance of a healthcare provider, and in line with clinical practice, monitoring of patients after administration of biologic agents is recommended (FDA Fasenra label, section 2.4). Monitor for hypersensitivity reactions, which generally occur within hours of administration but can be delayed (days) (section 5.1). Patients with known helminth infections were excluded from clinical trials and it is unknown whether FASENRA will influence the patient's response against helminth infections; treat pre-existing helminth infections before initiating therapy and discontinue FASENRA if a new infection does not respond to anti-helminth treatment until the infection resolves (section 5.4). Blood eosinophil counts are reduced by benralizumab to a median absolute count of 0 cells/uL in asthma at the recommended dose, with the reduction seen at the first time point (4 weeks) and maintained throughout treatment; reductions in blood basophils were also consistently observed (section 12.2).",
+    "patient_counselling": "Advise the patient or caregiver to read the FDA-approved patient labelling (Patient Information and Instructions for Use for FASENRA PEN) before starting FASENRA and each time the prescription is renewed, as there may be new information (FDA Fasenra label, section 17). Instruct on proper subcutaneous injection technique, including aseptic technique and the preparation and administration of FASENRA PEN, and advise the patient to follow sharps disposal recommendations (section 17). Inform patients that hypersensitivity reactions (anaphylaxis, angioedema, urticaria, rash) have occurred after administration of FASENRA, generally within hours but sometimes with delayed onset (days), and instruct them to contact their healthcare provider if they experience symptoms of an allergic reaction (section 17). Inform patients that FASENRA does not treat acute asthma symptoms or acute exacerbations and to seek medical advice if their asthma remains uncontrolled or worsens after initiation of treatment (section 17). Inform patients not to discontinue systemic or inhaled corticosteroids except under the direct supervision of a physician, because reduction of corticosteroid dose may be associated with systemic withdrawal symptoms or may unmask conditions previously suppressed by systemic corticosteroid therapy (section 17).",
+    "warnings": [
+      "Hypersensitivity reactions: anaphylaxis, angioedema, urticaria and rash have occurred following administration of FASENRA; these reactions generally occur within hours of administration but can be delayed (days). Discontinue FASENRA in the event of a hypersensitivity reaction (FDA Fasenra label, section 5.1)",
+      "Reduction of corticosteroid dosage: do not discontinue systemic or inhaled corticosteroids abruptly upon initiation of therapy with FASENRA; reductions, if appropriate, should be gradual and performed under the direct supervision of a physician (FDA Fasenra label, section 5.3)",
+      "Parasitic (helminth) infection: treat patients with pre-existing helminth infections before therapy with FASENRA; if patients become infected while receiving FASENRA and do not respond to anti-helminth treatment, discontinue FASENRA until the parasitic infection resolves (FDA Fasenra label, section 5.4)",
+      "FASENRA should not be used to treat acute asthma symptoms or acute exacerbations, and must not be used to treat acute bronchospasm or status asthmaticus (FDA Fasenra label, section 5.2)"
+    ],
+    "precautions": [
+      "Reduction of corticosteroid dose may be associated with systemic withdrawal symptoms and/or unmask conditions previously suppressed by systemic corticosteroid therapy; perform reduction under the direct supervision of a physician (FDA Fasenra label, section 5.3)",
+      "Eosinophils may be involved in the immunological response to some helminth infections; patients with known helminth infections were excluded from participation in clinical trials (FDA Fasenra label, section 5.4)",
+      "In asthma patients aged 6 to 11 years weighing 35 kg or more, FASENRA PEN should only be administered by a caregiver or healthcare provider (FDA Fasenra label, section 2.6)",
+      "The prefilled syringe is for administration by a healthcare provider; FASENRA PEN may be self-administered by patients or caregivers after training in subcutaneous injection technique and after the healthcare provider determines it is appropriate (FDA Fasenra label, sections 2.4 to 2.6)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypersensitivity reactions, including anaphylaxis, angioedema, urticaria and rash (FDA Fasenra label, sections 5.1 and 6.2)",
+      "Systemic withdrawal symptoms and/or unmasking of conditions previously suppressed by systemic corticosteroid therapy when corticosteroids are reduced or discontinued (FDA Fasenra label, section 5.3)",
+      "Failure to respond to anti-helminth treatment in a patient who acquires a parasitic infection while receiving FASENRA, requiring discontinuation until the infection resolves (FDA Fasenra label, section 5.4)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Data on pregnancy exposure from the clinical trials are insufficient to inform on drug-associated risk. Monoclonal antibodies such as benralizumab are transported across the placenta during the third trimester of pregnancy, so potential effects on a fetus are likely to be greater during the third trimester (FDA Fasenra label, section 8.1). In women with poorly or moderately controlled asthma, evidence demonstrates an increased risk of preeclampsia in the mother and prematurity, low birth weight and small for gestational age in the neonate; the level of asthma control should be closely monitored in pregnant women and treatment adjusted as necessary (section 8.1). In a prenatal and postnatal development study in cynomolgus monkeys, pregnant animals received benralizumab from gestational day 20/22 to 1 month postpartum at doses producing exposures up to approximately 310 times the exposure at the maximum recommended human dose of 30 mg subcutaneously; there was no evidence of fetal harm, no treatment-related external, visceral or skeletal malformations, and benralizumab was not teratogenic (section 8.1, Data). The estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies in the US general population is 2% to 4% and 15% to 20%, respectively (section 8.1). The current FDA label does not carry a lettered pregnancy category.",
+    "lactation_guidance": "There is no information regarding the presence of benralizumab in human or animal milk, and the effects of benralizumab on the breastfed infant and on milk production are not known. Benralizumab is a humanized monoclonal antibody (IgG1/kappa-class) and immunoglobulin G is present in human milk in small amounts; if benralizumab is transferred into human milk, the effects of local exposure in the gastrointestinal tract and potential limited systemic exposure in the infant are unknown. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for benralizumab and any potential adverse effects on the breast-fed child from benralizumab or from the underlying maternal condition (FDA Fasenra label, section 8.2).",
+    "overdose": "There is no specific treatment for an overdosage with benralizumab. If overdose occurs, the patient should be treated supportively with appropriate monitoring as necessary; consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (FDA Fasenra label, section 10).",
+    "pharmacokinetics": "Based on population pharmacokinetic analyses from the asthma trials, benralizumab pharmacokinetics were approximately dose-proportional over a 20 to 200 mg subcutaneous dose range. Following subcutaneous administration the absorption half-life was approximately 3.5 days, estimated absolute bioavailability was approximately 59%, and there was no clinically relevant difference in relative bioavailability between abdomen, thigh and arm. Central and peripheral volume of distribution were 3.1 L and 2.5 L respectively for a 70 kg individual. Benralizumab exhibited linear pharmacokinetics with no evidence of target receptor-mediated clearance; estimated typical systemic clearance was 0.29 L/day for a 70 kg asthma patient, approximately 0.22 L/day for patients with EGPA and HES, and the elimination half-life after subcutaneous administration in asthma was approximately 15.5 days. Benralizumab is a humanized IgG1 monoclonal antibody degraded by proteolytic enzymes widely distributed in the body and not restricted to hepatic tissue (FDA Fasenra label, section 12.3).",
+    "clinical_pearls": [
+      "Benralizumab is an add-on maintenance therapy, not a reliever: it is not for acute bronchospasm or status asthmaticus, and patients must keep their prescribed reliever inhaler (FDA Fasenra label, sections 1.1 and 5.2)",
+      "Never stop inhaled or systemic corticosteroids abruptly when starting benralizumab; the label requires that corticosteroid reduction, if appropriate, be gradual and under direct supervision of a physician because withdrawal symptoms can occur and previously suppressed conditions can be unmasked (FDA Fasenra label, section 5.3)",
+      "Eosinophils are part of the immunological response to helminths, so treat any known helminth infection before the first dose, and stop the drug if a new infection fails to respond to anti-helminth therapy (FDA Fasenra label, section 5.4)",
+      "Blood eosinophil counts fall to a median of 0 cells/uL at the recommended dose, so eosinophil counts cannot be used to gauge disease activity once benralizumab has been started (FDA Fasenra label, section 12.2)",
+      "Anti-drug antibodies developed in 13% of adult and paediatric patients 12-17 years with asthma treated at the recommended dosing regimen over 48 to 56 weeks, with neutralizing antibodies in 12%; no evidence of an association of anti-drug antibodies with efficacy or safety was observed (FDA Fasenra label, section 12.6)",
+      "Benralizumab is not listed in the WHO Model List of Essential Medicines, 24th list (2025), nor in the Kenya Essential Medicines List 2023, so access depends on national formularies and cold-chain supply rather than essential-medicines procurement (WHO eEML 24th list (2025); KEML 2023)"
+    ],
+    "brand_names": ["FASENRA", "FASENRA PEN"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No formal clinical studies have been conducted to investigate the effect of renal impairment on benralizumab. Based on population pharmacokinetic analysis, benralizumab clearance was comparable in patients with creatinine clearance values between 30 and 80 mL/min and in patients with normal renal function; there are limited data in patients with creatinine clearance below 30 mL/min, however benralizumab is not cleared renally, and the label specifies no renal dose adjustment (FDA Fasenra label, section 12.3).",
+    "hepatic_dose_adjustment": "No formal clinical studies have been conducted to investigate the effect of hepatic impairment on benralizumab. IgG monoclonal antibodies are not primarily cleared via the hepatic pathway and change in hepatic function is not expected to influence benralizumab clearance; based on population pharmacokinetic analysis, baseline hepatic function biomarkers (ALT, AST and bilirubin) had no clinically relevant effect on benralizumab clearance, and the label specifies no hepatic dose adjustment (FDA Fasenra label, section 12.3).",
+    "administration_instructions": "For subcutaneous use only. Administer into the thigh or abdomen; the upper arm can also be used if a healthcare provider or caregiver administers the injection. Before administration, leave the carton at room temperature up to 77 degrees F (25 degrees C) for about 30 minutes, and visually inspect for particulate matter and discoloration; FASENRA is clear to opalescent, colorless to slightly yellow, and may contain a few translucent or white to off-white particles. Do not use if the liquid is cloudy, discolored, or contains large particles or foreign particulate matter. The prefilled syringe is for administration by a healthcare provider: do not touch the needle guard activation clips, do not expel air bubbles, insert the needle into the skin at the recommended site (upper arm, thigh or abdomen), inject all the medication, release pressure to allow the needle guard to cover the needle, do not re-cap, and discard the used syringe into a sharps container. FASENRA PEN may be self-administered after training. Store refrigerated at 36 to 46 degrees F (2 to 8 degrees C) in the original carton, protected from light; if needed, the prefilled syringe and autoinjector may be stored at room temperature up to 77 degrees F (25 degrees C) for a maximum of 14 days in the original carton and must be used within 14 days once removed from the refrigerator. Do not freeze, do not shake and do not expose to heat (FDA Fasenra label, sections 2.4 to 2.6 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, AstraZeneca Pharmaceuticals LP, DailyMed setid da6aca1a-19ed-44a4-abb7-696c7d58b784, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 1, 1.1, 1.2 and 1.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 6.1 (clinical trials experience, Table 2) and 6.2 (postmarketing experience)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 2.1, 2.2, 2.3, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 12.3 Pharmacokinetics, Drug Interaction Studies",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 2.4, 5.1, 5.4 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 5.1, 5.2, 5.3 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 2.4, 2.6, 5.2, 5.3 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 5.1, 5.3, 5.4 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described anywhere in the FDA FASENRA (benralizumab) label, which contains no food interaction statement",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA lettered pregnancy category: the current FDA FASENRA label states pregnancy and lactation information under section 8.1/8.2 in the narrative Pregnancy and Lactation Labeling Rule format and carries no Pregnancy Category letter",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 8.1 Pregnancy (Risk Summary, Clinical Considerations, Data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 1.1, 5.2, 5.3, 5.4, 12.2 and 12.6; WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023 (absence of the drug verified against both lists)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed product titles for the FDA label: 'FASENRA (BENRALIZUMAB) INJECTION, SOLUTION [ASTRAZENECA PHARMACEUTICALS LP]'; the autoinjector is marketed as FASENRA PEN (label sections 2.6 and 3)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA FASENRA (benralizumab) label; the label carries Warnings and Precautions (section 5) only",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 12.3, Patients with Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, section 12.3, Patients with Hepatic Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, FASENRA (benralizumab) Injection, sections 2.4, 2.5, 2.6 and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA label carries no lettered pregnancy category)"
+  ],
+  "notes": "The table stores this agent as 'Benralizumab' with the brand name FASENRA. This draft replaces the shared class template with drug-specific content taken entirely from the current FDA label for FASENRA (benralizumab) injection, DailyMed setid da6aca1a-19ed-44a4-abb7-696c7d58b784 (AstraZeneca Pharmaceuticals LP). The label has no boxed warning, no drug-interactions section (the relevant statement is in section 12.3, Drug Interaction Studies), and no FDA lettered pregnancy category, so those fields are null or empty arrays with the supporting statement recorded in sources. Benralizumab is not included in the WHO Model List of Essential Medicines, 24th list (2025) or in the Kenya Essential Medicines List 2023 (both documents were checked directly), so those lists are cited only in clinical_pearls to record the absence."
+}

@@ -1,0 +1,212 @@
+{
+  "name": "Benzylpenicillin",
+  "existing_id": "b6db2850-c9f6-45d5-98e5-592db36e3d56",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Penicillin G is bactericidal against penicillin-susceptible microorganisms during the stage of active multiplication. It acts by inhibiting the biosynthesis of cell-wall mucopeptide. It is not active against the penicillinase-producing bacteria, which include many strains of staphylococci, or against organisms resistant to beta-lactams because of alterations in the penicillin-binding proteins, such as methicillin-resistant staphylococci. Penicillin G is highly active in vitro against staphylococci (except penicillinase-producing strains), streptococci (groups A, B, C, G, H, L and M), pneumococci and Neisseria meningitidis, and Treponema pallidum is extremely susceptible (FDA Penicillin G Sodium for Injection, USP label, Microbiology).",
+    "indications": [
+      "Serious infections caused by susceptible strains of the designated microorganisms (FDA Penicillin G Sodium for Injection, USP label, INDICATIONS AND USAGE): septicemia, empyema, pneumonia, pericarditis, endocarditis and meningitis caused by Streptococcus pyogenes (group A beta-haemolytic streptococcus), other beta-haemolytic streptococci including groups C, H, G, L and M, Streptococcus pneumoniae and Staphylococcus species (non-penicillinase-producing strains)",
+      "Anthrax (Bacillus anthracis); actinomycosis, cervico-facial and thoracic and abdominal disease (Actinomyces israelii); botulism as adjunctive therapy to antitoxin, gas gangrene and tetanus as adjunctive therapy to human tetanus immune globulin (Clostridium species); diphtheria as adjunctive therapy to antitoxin and for prevention of the carrier state (Corynebacterium diphtheriae); erysipelothrix endocarditis (Erysipelothrix rhusiopathiae); fusospirochetosis, severe infections of the oropharynx, lower respiratory tract and genital area (Fusobacterium species and spirochetes); listeria infections including meningitis and endocarditis (Listeria monocytogenes); pasteurella infections including bacteremia and meningitis (Pasteurella multocida); haverhill fever (Streptobacillus moniliformis); rat bite fever (Spirillum minus or Streptobacillus moniliformis); disseminated gonococcal infections (Neisseria gonorrhoeae, penicillin-susceptible); syphilis, congenital and neurosyphilis (Treponema pallidum); meningococcal meningitis and/or septicemia (Neisseria meningitidis) (FDA Penicillin G Sodium for Injection, USP label, INDICATIONS AND USAGE)",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 6.2.1 Access group antibiotics: first choice for acute bacterial meningitis, community acquired pneumonia (severe), complicated severe acute malnutrition and sepsis in neonates and children; second choice for syphilis; powder for injection 600 mg (= 1 million IU) or 3 g (= 5 million IU) (sodium or potassium salt) in vial",
+      "WHO Model List of Essential Medicines, 24th list (2025), section 5.1.6.1 Medicines for bacterial central nervous system infections: second choice for acute bacterial meningitis (powder for injection 600 mg or 3 g, sodium or potassium salt)",
+      "Kenya Essential Medicines List 2023, section 7.2.1.6: benzylpenicillin powder for injection, 600 mg (1 million IU) vial (Level of Use 2) and 3 g (5 million IU) vial (Level of Use 4), sodium or potassium salt; footnote 98 states that at Level 2 facilities it is used only in pre-referral management of a very sick child (with gentamicin), in children with gentamicin for severe community acquired pneumonia, and also for severe cellulitis, neonatal sepsis and severe acute malnutrition"
+    ],
+    "contraindications": [
+      "A history of a hypersensitivity (anaphylactic) reaction to any penicillin is a contraindication (FDA Penicillin G Sodium for Injection, USP label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Body as a whole: Jarisch-Herxheimer reaction after the initiation of penicillin therapy in patients with syphilis or other spirochaetal infections (Lyme disease and relapsing fever), beginning one or two hours after initiation and disappearing within 12 to 24 hours, with fever, chills, myalgias, headache, exacerbation of cutaneous lesions, tachycardia, hyperventilation, vasodilation with flushing and mild hypotension (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS)",
+      "Hypersensitivity: reported incidence of allergic reactions to all penicillins ranges from 0.7 to 10 percent; immediate reactions usually occur within 20 minutes and range from urticaria and pruritus to angioneurotic edema, laryngospasm, bronchospasm, hypotension, vascular collapse and death; accelerated reactions occur between 20 minutes and 45 hours; delayed reactions usually occur within 1 to 2 weeks with serum sickness-like symptoms of fever, malaise, urticaria, myalgia, arthralgia, abdominal pain and skin rashes from maculopapular eruptions to exfoliative dermatitis (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS)",
+      "Gastrointestinal: pseudomembranous colitis with onset during or after treatment; nausea, vomiting, stomatitis, black or hairy tongue and other symptoms of gastrointestinal irritation, especially during oral therapy (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS)",
+      "Hematologic: neutropenia, which resolves after discontinuation; Coombs-positive hemolytic anemia, an uncommon reaction in patients treated with intravenous penicillin G above 10 million units per day who have previously received large doses; bleeding diathesis secondary to platelet dysfunction with large doses (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS)",
+      "Metabolic: serious and even fatal electrolyte disturbances (hypernatremia for the sodium salt, hyperkalemia for the potassium salt) when given intravenously in large doses (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Metabolic)",
+      "Cardiovascular: high dosage of penicillin G sodium may result in congestive heart failure due to high sodium intake (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Cardiovascular System)",
+      "Nervous system: neurotoxic reactions including hyperreflexia, myoclonic twitches, seizures and coma have been reported following massive intravenous doses, and are more likely in patients with impaired renal function (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Nervous System)",
+      "Urogenital: renal tubular damage and interstitial nephritis associated with large intravenous doses, with fever, rash, eosinophilia, proteinuria, eosinophiluria, hematuria and a rise in serum urea nitrogen (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Urogenital System)",
+      "Local: phlebitis and thrombophlebitis with intravenous administration (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Local Reactions)"
+    ],
+    "dosage": {
+      "adult": "Penicillin G sodium for injection may be given intravenously or intramuscularly. Serious infections due to susceptible strains of streptococci (including S. pneumoniae) and staphylococci: 5 to 24 million units/day depending on the infection and its severity, administered in equally divided doses every 4 to 6 hours; anthrax: a minimum of 8 million units/day in divided doses every 6 hours; actinomycosis: 1 to 6 million units/day for cervico-facial disease and 10 to 20 million units/day for thoracic and abdominal disease; botulism, gas gangrene and tetanus: 20 million units/day; diphtheria: 2 to 3 million units/day in divided doses for 10 to 12 days; erysipelothrix endocarditis: 12 to 20 million units/day for 4 to 6 weeks; fusospirochetosis: 5 to 10 million units/day; listeria meningitis 15 to 20 million units/day for 2 weeks and listeria endocarditis 15 to 20 million units/day for 4 weeks; pasteurella infections 4 to 6 million units/day for 2 weeks; haverhill fever and rat-bite fever 12 to 20 million units/day for 3 to 4 weeks; disseminated gonococcal infections 10 million units/day; neurosyphilis 12 to 24 million units/day as 2 to 4 million units every 4 hours for 10 to 14 days, with many experts recommending additional benzathine penicillin G 2.4 million units intramuscularly weekly for 3 doses after completion of intravenous therapy; meningococcal meningitis and/or septicemia 24 million units/day as 2 million units every 2 hours (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION, Adult Patients; the penicillin G potassium label gives 12 to 24 million units/day for serious streptococcal infections). Because of its short half-life, penicillin G is administered in divided doses, usually every 4 to 6 hours, with the exception of meningococcal meningitis/septicemia, where it is given every 2 hours; treatment of most acute infections should be continued for at least 48 to 72 hours after the patient becomes asymptomatic, and therapy for group A beta-haemolytic streptococcal infections should be maintained for at least 10 days to reduce the risk of rheumatic fever (label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Clinical studies of penicillin G injection did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients; in general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy. Because the drug is substantially excreted by the kidney and elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA Penicillin G Potassium for Injection, USP label, Geriatric Use).",
+      "paediatric": "Serious infections such as pneumonia and endocarditis due to susceptible strains of streptococci (including S. pneumoniae) and meningococcus: 150,000 units/kg/day divided in equal doses every 4 to 6 hours; meningitis caused by susceptible strains of pneumococcus and meningococcus: 250,000 units/kg/day divided in equal doses every 4 hours for 7 to 14 days, maximum 12 to 20 million units/day; disseminated gonococcal infections in patients weighing less than 45 kg: arthritis 100,000 units/kg/day in 4 equally divided doses for 7 to 10 days, meningitis 250,000 units/kg/day every 4 hours for 10 to 14 days, endocarditis 250,000 units/kg/day every 4 hours for 4 weeks, and 10 million units/day in equally divided doses for patients weighing 45 kg or more; syphilis (congenital and neurosyphilis) after the newborn period: 200,000 to 300,000 units/kg/day, administered as 50,000 units/kg every 4 to 6 hours, for 10 to 14 days; diphtheria: 150,000 to 250,000 units/kg/day in equal doses every 6 hours for 7 to 10 days; rat-bite fever and haverhill fever with endocarditis: 150,000 to 250,000 units/kg/day in equal doses every 4 hours for 4 weeks. This product should not be administered to patients requiring less than one million units per dose (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION, Pediatric Patients)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Bacteriostatic antibacterials (i.e. chloramphenicol, erythromycins, sulfonamides or tetracyclines) may antagonize the bactericidal effect of penicillin, and concurrent use of these drugs should be avoided; this has been documented in vitro, however the clinical significance of this interaction is not well documented (FDA Penicillin G Sodium for Injection, USP label, Drug Interactions)",
+      "Penicillin blood levels may be prolonged by concurrent administration of probenecid, which blocks the renal tubular secretion of penicillins (FDA Penicillin G Sodium for Injection, USP label, Drug Interactions and CLINICAL PHARMACOLOGY)",
+      "Other drugs may compete with penicillin G for renal tubular secretion and thus prolong the serum half-life of penicillin: aspirin, phenylbutazone, sulfonamides, indomethacin, thiazide diuretics, furosemide and ethacrynic acid (FDA Penicillin G Sodium for Injection, USP label, Drug Interactions)",
+      "Drug/laboratory test interactions: after treatment with penicillin G a false-positive reaction for glucose in the urine may occur with Benedict's solution, Fehling's solution or Clinitest tablet, but not with enzyme-based tests such as Clinistix and Tes-Tape; penicillin G has been associated with pseudoproteinuria by certain test methods (FDA Penicillin G Sodium for Injection, USP label, Drug/Laboratory Test Interactions)"
+    ],
+    "monitoring": "During prolonged therapy with high doses of intravenous penicillin G, perform periodic assessment of organ system function, including frequent evaluation of electrolyte balance and of the hepatic, renal and hematopoietic systems and cardiac and vascular status; if any impairment of function is suspected or known to exist, a reduction in the total dosage should be considered (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - Laboratory Tests). In suspected staphylococcal infections, proper laboratory studies including susceptibility tests should be performed; all infections due to group A beta-haemolytic streptococci should be treated for at least 10 days; patients being treated for gonococcal infection should have a serologic test for syphilis before receiving penicillin, and all cases of penicillin-treated syphilis should receive adequate follow-up including clinical and serological examinations (label, PRECAUTIONS - Laboratory Tests). Because the drug is substantially excreted by the kidney and elderly patients are more likely to have reduced renal function, monitoring of renal function is useful in older patients (label, Geriatric Use).",
+    "patient_counselling": "Antibacterial drugs including penicillin G should only be used to treat bacterial infections; they do not treat viral infections such as the common cold. When penicillin G is prescribed to treat a bacterial infection, tell the patient that although it is common to feel better early in the course of therapy, the medication should be taken exactly as directed, because skipping doses or not completing the full course of therapy may decrease the effectiveness of the immediate treatment and increase the likelihood that bacteria will develop resistance that will not be treatable by penicillin G or other antibacterial drugs in the future (FDA Penicillin G Sodium for Injection, USP label, Information for Patients). Diarrhea is a common problem caused by antibiotics which usually ends when the antibiotic is discontinued, but watery or bloody stools with or without stomach cramps and fever can develop even as late as two or more months after the last dose of the antibiotic; patients should contact their physician as soon as possible if this occurs (label, Information for Patients). Inform patients that serious and occasionally fatal hypersensitivity reactions can occur, that a history of penicillin or multiple-allergen hypersensitivity increases the risk, and that serious anaphylactic reactions require immediate emergency treatment (label, WARNINGS).",
+    "warnings": [
+      "Serious and occasionally fatal hypersensitivity (anaphylactic) reactions have been reported in patients on penicillin therapy; these reactions are more likely to occur in individuals with a history of penicillin hypersensitivity and/or a history of sensitivity to multiple allergens, and there have been reports of individuals with a history of penicillin hypersensitivity who experienced severe reactions when treated with cephalosporins. Before initiating therapy, careful inquiry should be made concerning previous hypersensitivity reactions to penicillins, cephalosporins or other allergens; if an allergic reaction occurs, penicillin G should be discontinued and appropriate therapy instituted, and serious anaphylactic reactions require immediate emergency treatment with epinephrine, with oxygen, intravenous steroids and airway management including intubation as indicated (FDA Penicillin G Sodium for Injection, USP label, WARNINGS)",
+      "Severe cutaneous adverse reactions (SCAR) such as Stevens-Johnson syndrome, toxic epidermal necrolysis, drug reaction with eosinophilia and systemic symptoms and acute generalized exanthematous pustulosis have been reported in patients taking beta-lactam antibiotics; when SCAR is suspected, penicillin G should be discontinued immediately and an alternative treatment considered (FDA Penicillin G Potassium for Injection, USP label, WARNINGS - Severe cutaneous adverse reactions)",
+      "Clostridium difficile associated diarrhea has been reported with use of nearly all antibacterial agents, including penicillin G, and may range in severity from mild diarrhea to fatal colitis; CDAD must be considered in all patients presenting with diarrhea following antibiotic use, and ongoing antibiotic use not directed against C. difficile should be discontinued if CDAD is suspected or confirmed (FDA Penicillin G Sodium for Injection, USP label, WARNINGS)",
+      "High intravenous doses above 10 million units should be administered slowly because of the potential adverse effects of electrolyte imbalance from the sodium or potassium content of the preparation (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - General)",
+      "The Jarisch-Herxheimer reaction may follow the initiation of penicillin therapy in patients with syphilis or other spirochaetal infections (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Body As A Whole)"
+    ],
+    "precautions": [
+      "Penicillin should be used with caution in individuals with histories of significant allergies and/or asthma (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - General)",
+      "Penicillin G given intravenously in high doses (above 10 million units) should be administered slowly because of the potential adverse effects of electrolyte imbalance from the sodium content of the penicillin; each million units of penicillin G sodium contains 1.68 mEq of sodium (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - General)",
+      "The use of antibiotics may promote overgrowth of nonsusceptible organisms, including fungi; indwelling intravenous catheters encourage superinfections, and when indicated, incision and drainage or other surgical procedures should be performed in conjunction with antibiotic therapy (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - General)",
+      "Prescribing penicillin G in the absence of a proven or strongly suspected bacterial infection or a prophylactic indication is unlikely to provide benefit and increases the risk of development of drug-resistant bacteria (FDA Penicillin G Sodium for Injection, USP label, PRECAUTIONS - General)",
+      "Care should be taken to avoid intravenous or accidental intraarterial administration, or injection into or near major peripheral nerves or blood vessels, since such injections may produce neurovascular damage; particular care is needed with intravenous administration because of the possibility of thrombophlebitis (FDA Penicillin G Potassium for Injection, USP label, PRECAUTIONS - Intramuscular Therapy)",
+      "Incompletely developed renal function in newborns may delay elimination of penicillin, so appropriate reductions in dosage and frequency of administration should be made in these patients, and all newborns treated with penicillins should be monitored closely for clinical and laboratory evidence of toxic or adverse effects (FDA Penicillin G Sodium for Injection, USP label, Pediatric Use)",
+      "Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration whenever solution and container permit (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and other serious hypersensitivity reactions, including angioneurotic edema, laryngospasm, bronchospasm, hypotension and vascular collapse, which can be fatal and require immediate emergency treatment with epinephrine (FDA Penicillin G Sodium for Injection, USP label, WARNINGS and ADVERSE REACTIONS)",
+      "Severe cutaneous adverse reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis, drug reaction with eosinophilia and systemic symptoms and acute generalized exanthematous pustulosis (FDA Penicillin G Potassium for Injection, USP label, WARNINGS)",
+      "Clostridium difficile associated diarrhea and colitis, which may be fatal and refractory to antimicrobial therapy and may require colectomy (FDA Penicillin G Sodium for Injection, USP label, WARNINGS)",
+      "Neurotoxicity: hyperreflexia, myoclonic twitches, seizures and coma following massive intravenous doses, more likely in patients with impaired renal function (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Nervous System)",
+      "Renal tubular damage and interstitial nephritis with large intravenous doses; discontinuation results in resolution in the majority of patients (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Urogenital System)",
+      "Serious and even fatal electrolyte disturbances, including hypernatremia, with large intravenous doses (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Metabolic)",
+      "Jarisch-Herxheimer reaction in patients with syphilis or other spirochaetal infections (FDA Penicillin G Sodium for Injection, USP label, ADVERSE REACTIONS - Body As A Whole)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "B (FDA Penicillin G Potassium for Injection, USP label, Pregnancy - Teratogenic Effects, 'Pregnancy Category B')",
+    "pregnancy_guidance": "Reproduction studies performed in the mouse, rat and rabbit have revealed no evidence of impaired fertility or harm to the fetus due to penicillin G. Human experience with the penicillins during pregnancy has not shown any positive evidence of adverse effects on the fetus; there are, however, no adequate and well-controlled studies in pregnant women showing conclusively that harmful effects of these drugs to the fetus can be excluded. Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed (FDA Penicillin G Potassium for Injection, USP label, Pregnancy - Teratogenic Effects).",
+    "lactation_guidance": "Penicillins are excreted in human milk. Caution should be exercised when penicillins are administered to a nursing woman (FDA Penicillin G Sodium for Injection, USP label, Nursing Mothers).",
+    "overdose": "Dose-related toxicity may arise with the use of massive doses of intravenous penicillins (40 to 100 million units per day), particularly in patients with severe renal impairment. The manifestations may include agitation, confusion, asterixis, hallucinations, stupor, coma, multifocal myoclonus, seizures and encephalopathy, and hypernatremia is also possible for the sodium salt. In case of overdosage, discontinue penicillin, treat symptomatically and institute supportive measures as required; if necessary, hemodialysis may be used to reduce blood levels of penicillin G, although the degree of effectiveness of this procedure is questionable (FDA Penicillin G Sodium for Injection, USP label, OVERDOSAGE).",
+    "pharmacokinetics": "After an intravenous infusion of penicillin G, peak serum concentrations are attained immediately after completion of the infusion; in ten patients given a single 5 million unit dose over 3 to 5 minutes, mean serum concentrations were 400 mcg/mL, 273 mcg/mL and 3 mcg/mL at 5 to 6 minutes, 10 minutes and 4 hours after completion, and after 1 million units given as a bolus over 4 minutes or an infusion over 60 minutes the mean serum concentration at 8 minutes was 45 mcg/mL and 14.4 mcg/mL respectively. The mean beta-phase serum half-life of penicillin G given intravenously in ten patients with normal renal function was 42 minutes (range 31 to 50 minutes). Clearance in normal individuals is predominantly via the kidney, by glomerular filtration and active tubular transport, the latter route predominating, with urinary recovery of 58 to 85% of the administered dose; nonrenal clearance includes hepatic metabolism and, to a lesser extent, biliary excretion. Renal clearance is delayed in premature infants, neonates and in the elderly, and the serum half-life ranges from 3.2 hours in infants 0 to 6 days of age to 1.4 hours in infants 14 days of age or older. Penicillin G is distributed to lung, liver, kidney, muscle, bone and placenta; penetration into the eye, brain, cerebrospinal fluid or prostate is poor in the absence of inflammation, and with inflamed meninges the cerebrospinal fluid to serum ratio improves to 2 to 6%. Penicillin G is actively secreted into the bile, giving levels at least 10 times those achieved simultaneously in serum. In the presence of impaired renal function the beta-phase half-life is prolonged, from one to two hours in azotemic patients with serum creatinine below 3 mg/100 mL up to 20 hours in anuric patients, and hemodialysis has been shown to reduce penicillin G serum levels (FDA Penicillin G Sodium for Injection, USP label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Benzylpenicillin is the INN for penicillin G: the FDA label for penicillin G sodium states that 'Penicillin G sodium, a water soluble benzylpenicillin', and the US presentations are the sodium and potassium salts (FDA Penicillin G Sodium for Injection, USP label, DESCRIPTION)",
+      "Because the half-life is only about 42 minutes, the label requires penicillin G to be given in divided doses, usually every 4 to 6 hours, with the exception of meningococcal meningitis/septicemia, where it is given every 2 hours (FDA Penicillin G Sodium for Injection, USP label, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION)",
+      "Dose reduction is only needed in severe renal impairment: a full loading dose followed by half the loading dose every 8 to 10 hours when creatinine clearance is below 10 mL/min/1.73 m2, or every 4 to 5 hours when it is above 10 mL/min/1.73 m2 (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION - Renal Impairment)",
+      "Penicillin G is not active against penicillinase-producing staphylococci and is no longer considered a drug of choice for gram-negative bacillary infections, so a staphylococcal isolate that is penicillinase-producing requires a different agent (FDA Penicillin G Sodium for Injection, USP label, Microbiology and INDICATIONS AND USAGE)",
+      "Neurosyphilis needs intravenous benzylpenicillin at 12 to 24 million units/day for 10 to 14 days, followed by benzathine penicillin G 2.4 million units intramuscularly weekly for 3 doses, according to many experts; benzathine benzylpenicillin alone is a separate INN and a separate essential-medicines entry (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION; WHO eEML 24th list (2025))",
+      "In the WHO Model List of Essential Medicines, 24th list (2025), benzylpenicillin appears twice: under access group antibiotics (first choice for community acquired pneumonia severe, complicated severe acute malnutrition and sepsis in neonates and children, second choice for syphilis) and under medicines for bacterial central nervous system infections (second choice for acute bacterial meningitis); the Kenya Essential Medicines List 2023 restricts Level 2 facilities to pre-referral management of a very sick child, with gentamicin",
+      "Do not stop the course early: the label instructs that the medication be taken exactly as directed, because skipping doses or not completing the full course decreases the effectiveness of the immediate treatment and increases the likelihood that bacteria will develop resistance (FDA Penicillin G Sodium for Injection, USP label, Information for Patients)"
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Penicillin G is relatively nontoxic and dosage adjustments are generally required only in cases of severe renal impairment: for creatinine clearance less than 10 mL/min/1.73 m2, administer a full loading dose followed by one-half of the loading dose every 8 to 10 hours; for uremic patients with creatinine clearance greater than 10 mL/min/1.73 m2, administer a full loading dose followed by one-half of the loading dose every 4 to 5 hours. Additional dosage modification should be made in patients with hepatic disease and renal impairment (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION - Renal Impairment).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous or intramuscular use. To prepare the solution, loosen the powder, hold the vial horizontally and rotate it while slowly directing the stream of diluent against the wall of the vial, shake the vial vigorously after all the diluent has been added, and use Sterile Water for Injection, 0.9% Sodium Chloride Injection or Dextrose Injection depending on the route; penicillins are rapidly inactivated in the presence of carbohydrate solutions at alkaline pH. For the 5 million unit vial, add 8 mL of diluent for a final concentration of 500,000 units/mL or 3 mL for 1,000,000 units/mL. Intramuscular route is preferred: keep the total volume of injection small, and solutions containing up to 100,000 units of penicillin per mL may be used with a minimum of discomfort; when large dosages are required, administer aqueous solutions by continuous intravenous drip, adding the daily dosage to the appropriate volume of fluid. Intrapleural or other local instillation: if fluid is aspirated, give the infusion in a volume equal to one-quarter or one-half of the amount of fluid aspirated. Intrathecal use in meningitis must be highly individualized and should be employed only with full consideration of the possible irritating effects of penicillin; intravenous therapy supplemented by intramuscular injection is preferred for bacterial meningitides. Inspect parenteral products visually for particulate matter and discoloration before administration. Store the dry powder at 20 to 25 degrees C (68 to 77 degrees F); after reconstitution, sterile constituted solution may be kept refrigerated at 2 to 8 degrees C for 3 days without significant loss of potency, and one US label directs that unused solution be discarded after 7 days when refrigerated (FDA Penicillin G Sodium for Injection, USP label, DOSAGE AND ADMINISTRATION and STORAGE; FDA Penicillin G Potassium for Injection, USP label, HOW SUPPLIED and Storage Conditions)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP (Sandoz Inc.), DailyMed setid 23b6d4a3-b273-4e10-9da9-1376933fdbdf, DESCRIPTION and Microbiology; FDA Penicillin G Potassium for Injection, USP (WG Critical Care), Microbiology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, INDICATIONS AND USAGE; WHO Model List of Essential Medicines, 24th list (2025), sections 5.1.6.1 and 6.2.1; Kenya Essential Medicines List 2023, section 7.2.1.6 and footnote 98",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, ADVERSE REACTIONS (Body as a Whole, Hypersensitivity Reactions, Gastrointestinal System, Hematologic System, Metabolic, Cardiovascular System, Nervous System, Urogenital System, Local Reactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, DOSAGE AND ADMINISTRATION (Adult Patients, Pediatric Patients, Renal Impairment); FDA label, Penicillin G Potassium for Injection, USP (WG Critical Care), DOSAGE AND ADMINISTRATION and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, Drug Interactions, Drug/Laboratory Test Interactions and CLINICAL PHARMACOLOGY (probenecid)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, PRECAUTIONS - Laboratory Tests and Geriatric Use; FDA label, Penicillin G Potassium for Injection, USP, Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, Information for Patients and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, WARNINGS and PRECAUTIONS - General; FDA label, Penicillin G Potassium for Injection, USP (WG Critical Care), WARNINGS - Severe cutaneous adverse reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0ced9d8-b9ea-466e-bf2c-10e9cc636f3f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, PRECAUTIONS - General, Pediatric Use and DOSAGE AND ADMINISTRATION; FDA label, Penicillin G Potassium for Injection, USP, PRECAUTIONS - Intramuscular Therapy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, WARNINGS and ADVERSE REACTIONS; FDA label, Penicillin G Potassium for Injection, USP, WARNINGS - Severe cutaneous adverse reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Penicillin G Sodium or Penicillin G Potassium labels, which contain no food or diet interaction statement",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Penicillin G Potassium for Injection, USP (HF Acquisition Co LLC dba HealthFirst), DailyMed setid 56ab659e-ad28-028f-e063-6394a90a6943, Pregnancy - Teratogenic Effects: 'Pregnancy Category B'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56ab659e-ad28-028f-e063-6394a90a6943"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Penicillin G Potassium for Injection, USP, Pregnancy - Teratogenic Effects; FDA label, Penicillin G Sodium for Injection, USP, Pregnancy - Teratogenic Effects",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56ab659e-ad28-028f-e063-6394a90a6943"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, DESCRIPTION, CLINICAL PHARMACOLOGY, Microbiology, INDICATIONS AND USAGE, DOSAGE AND ADMINISTRATION and Information for Patients; FDA label, Penicillin G Potassium for Injection, USP; WHO Model List of Essential Medicines, 24th list (2025), sections 5.1.6.1 and 6.2.1; Kenya Essential Medicines List 2023, section 7.2.1.6 and footnote 98",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed lists only generic penicillin G sodium and penicillin G potassium products for this drug; the branded US presentations of the penicillin G family are the benzathine formulations (BICILLIN L-A, BICILLIN CR, BICILLIN C-R), which are a different INN (benzathine benzylpenicillin) and a separate WHO essential-medicines entry, so no brand name is asserted for benzylpenicillin itself",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=penicillin%20G&pagesize=10"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Penicillin G Sodium for Injection or Penicillin G Potassium for Injection labels; the label carries WARNINGS (anaphylaxis, severe cutaneous adverse reactions, C. difficile associated diarrhea) but no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, DOSAGE AND ADMINISTRATION - Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The FDA Penicillin G Sodium for Injection label specifies no hepatic dose adjustment; the only hepatic statement is that additional dosage modification should be made in patients with hepatic disease and renal impairment (DOSAGE AND ADMINISTRATION - Renal Impairment), which is captured in renal_dose_adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Penicillin G Sodium for Injection, USP, DOSAGE AND ADMINISTRATION (Preparation of Solution, routes of administration) and STORAGE; FDA label, Penicillin G Potassium for Injection, USP (WG Critical Care), DOSAGE AND ADMINISTRATION and HOW SUPPLIED; FDA label, Penicillin G Potassium for Injection, USP (HF Acquisition), Storage Conditions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23b6d4a3-b273-4e10-9da9-1376933fdbdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (the FDA labels specify no hepatic dose adjustment; hepatic modification is only mentioned in combination with renal impairment)"
+  ],
+  "notes": "The table stores this agent as 'Benzylpenicillin' with no brand names; the row's content_status_note records that antipsychotic/olanzapine-derived text had previously been copied onto this row and was removed on 2026-10-05, and none of it is carried forward. Benzylpenicillin is the INN for penicillin G, and the FDA label used as the primary source states explicitly that 'Penicillin G sodium, a water soluble benzylpenicillin'; the US products are the sodium and potassium salts, which is why the eEML and KEML list benzylpenicillin as 'sodium or potassium salt'. Three DailyMed labels were used: the Sandoz penicillin G sodium label (indications, microbiology, warnings, precautions, interactions, adverse reactions, dosing, pharmacokinetics, overdose, preparation and storage), the WG Critical Care penicillin G potassium label (streptococcal dose range, geriatric use, intramuscular administration cautions and the severe cutaneous adverse reactions warning) and the HF Acquisition penicillin G potassium label (the 'Pregnancy Category B' letter and storage conditions). The FDA pregnancy lettered categories are obsolete under the Pregnancy and Lactation Labeling Rule but are reported because the label still states them. The WHO Model List of Essential Medicines, 24th list (2025), lists benzylpenicillin in two places (access group antibiotics and medicines for bacterial central nervous system infections) and the Kenya Essential Medicines List 2023 lists it as powder for injection at Level 2 and Level 4 with a restriction on Level 2 use. Brand names are left empty: the branded US penicillin G presentations are the benzathine formulations (Bicillin), which are a different INN and a separate essential-medicines entry."
+}

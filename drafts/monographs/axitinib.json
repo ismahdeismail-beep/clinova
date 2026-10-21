@@ -1,0 +1,239 @@
+{
+  "name": "Axitinib",
+  "existing_id": "4c33deee-3a78-4e30-a6ac-057e0f1e3449",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Axitinib is a kinase inhibitor that has been shown to inhibit receptor tyrosine kinases including vascular endothelial growth factor receptors (VEGFR)-1, VEGFR-2 and VEGFR-3 at therapeutic plasma concentrations. These receptors are implicated in pathologic angiogenesis, tumour growth and cancer progression; VEGF-mediated endothelial cell proliferation and survival were inhibited by axitinib in vitro and in mouse models, and axitinib inhibited tumour growth and phosphorylation of VEGFR-2 in tumour xenograft mouse models (FDA INLYTA (axitinib) label, sections 12.1 and 11).",
+    "indications": [
+      "INLYTA in combination with avelumab, for the first-line treatment of patients with advanced renal cell carcinoma (RCC) (FDA INLYTA label, section 1.1)",
+      "INLYTA in combination with pembrolizumab, for the first-line treatment of patients with advanced RCC (FDA INLYTA label, section 1.1)",
+      "INLYTA as a single agent, for the treatment of advanced RCC after failure of one prior systemic therapy (FDA INLYTA label, section 1.2)"
+    ],
+    "contraindications": [
+      "None. The FDA INLYTA prescribing information states 'Contraindications: None' (FDA INLYTA label, section 4)."
+    ],
+    "side_effects": [
+      "Hypertension, including hypertensive crisis: reported in 145/359 patients (40%) receiving axitinib versus 29% with sorafenib, with Grade 3/4 hypertension in 16% and hypertensive crisis in 2/359 patients (<1%); median onset was within the first month of treatment and blood pressure rises were seen as early as day 4 (FDA INLYTA label, section 5.1)",
+      "Diarrhoea: 55% (Grade 3/4 11%) as a single agent in the second-line study and 62% (Grade 3/4 8%) in combination with avelumab (FDA INLYTA label, sections 6.1, Table 8 and Table 4)",
+      "Fatigue/asthenia (39% as a single agent; 53% with avelumab), decreased appetite (34%), nausea (22%), vomiting, weight decreased (25%) and constipation (FDA INLYTA label, section 6.1)",
+      "Dysphonia (voice change): 31% as a single agent, 0% Grade 3/4 (FDA INLYTA label, section 6.1)",
+      "Palmar-plantar erythrodysesthesia (hand-foot syndrome): 27% as a single agent, of which 51% were Grade 3/4 (FDA INLYTA label, section 6.1)",
+      "Hypothyroidism (19% in the controlled study; TSH rising to >=10 microU/mL in 32% of patients with baseline TSH <5 microU/mL) and hyperthyroidism (1%) (FDA INLYTA label, section 5.7)",
+      "Proteinuria: 11% overall and Grade 3 proteinuria in 11/359 patients (3%) (FDA INLYTA label, section 5.10)",
+      "Haemorrhagic events: 58/359 patients (16%), with Grade 3/4 haemorrhage in 1% and one fatal gastric haemorrhage (FDA INLYTA label, section 5.4)",
+      "Arterial thromboembolic events (transient ischaemic attack, cerebrovascular accident, myocardial infarction, retinal artery occlusion): 17/715 patients (2%) across trials, with two deaths; and venous thromboembolic events: 22/715 patients (3%) with two deaths from pulmonary embolism (FDA INLYTA label, sections 5.2 and 5.3)",
+      "Cardiac failure: 6/359 patients (2%), Grade 3/4 in 1% and fatal in 2/359 patients (1%) (FDA INLYTA label, section 5.5)",
+      "Gastrointestinal perforation (5/715 patients, 1%, one death) and fistula formation (4/715 patients, 1%) (FDA INLYTA label, section 5.6)",
+      "Reversible posterior leukoencephalopathy syndrome (RPLS): 1/359 patients (<1%) in the controlled study, with two additional reports in other trials (FDA INLYTA label, section 5.9)",
+      "Hepatotoxicity: ALT elevations of all grades in 22% as a single agent (Grade 3/4 <1%); with avelumab Grade 3/4 ALT elevation 9% and AST 7%, and with pembrolizumab Grade 3/4 ALT 20% and AST 13% (FDA INLYTA label, section 5.11)",
+      "Major adverse cardiovascular events with avelumab: 7% of patients (vs 3.4% with sunitinib), including death due to cardiac events (1.4%), Grade 3-4 myocardial infarction (2.8%) and Grade 3-4 congestive heart failure (1.8%); median time to onset 4.2 months (FDA INLYTA label, section 5.13)",
+      "Fatal adverse reactions in 1.8% of patients receiving axitinib with avelumab: sudden cardiac death (1.2%), stroke (0.2%), myocarditis (0.2%) and necrotizing pancreatitis (0.2%) (FDA INLYTA label, section 6.1)",
+      "Post-marketing: arterial (including aortic) aneurysms, dissections and rupture (FDA INLYTA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Recommended starting dose is 5 mg orally taken twice daily, approximately 12 hours apart, with or without food, taken whole with a full glass of water (FDA INLYTA label, sections 2.1 and 2.2). First-line with avelumab: axitinib 5 mg twice daily with avelumab 800 mg IV over 60 minutes every 2 weeks until disease progression or unacceptable toxicity, with dose escalation above 5 mg considered at intervals of two weeks or longer. First-line with pembrolizumab: axitinib 5 mg twice daily with pembrolizumab 200 mg every 3 weeks or 400 mg every 6 weeks IV over 30 minutes until disease progression or unacceptable toxicity, with dose escalation considered at intervals of six weeks or longer. Second-line single agent: 5 mg twice daily (sections 2.1). Dose levels for modification: starting 5 mg twice daily; first increase 7 mg twice daily, second increase 10 mg twice daily; first reduction 3 mg twice daily, second reduction 2 mg twice daily. Patients tolerating at least two consecutive weeks with no adverse reaction greater than Grade 2 (CTCAE), who are normotensive and not receiving antihypertensive medication, may have their dose increased (section 2.2). If a strong CYP3A4/5 inhibitor must be given, reduce the axitinib dose by approximately half and return to the prior dose 3-5 half-lives after the inhibitor is stopped (section 2.3). For moderate hepatic impairment, reduce the starting dose by approximately half (section 2.4). If the patient vomits or misses a dose, an additional dose should not be taken (section 2.1).",
+      "geriatric": "No dosage adjustment is required in elderly patients. In the controlled RCC study 123/359 patients (34%) treated with axitinib were >=65 years of age and no overall differences in safety or effectiveness were observed between patients >=65 years and younger; in JAVELIN Renal 101 38% were >=65 and 8% were >=75 years with no overall difference in safety or efficacy, and in KEYNOTE-426 40% were >=65 years with no overall difference (FDA INLYTA label, section 8.5).",
+      "paediatric": "The safety and effectiveness of axitinib in paediatric patients have not been established. Safety and effectiveness were assessed but not established in two open-label studies: a dose-finding study of axitinib as a single agent in 17 paediatric patients aged 5 to <17 years with recurrent or refractory solid tumours (ADVL1315) and a randomised study of axitinib as a single agent or in combination in 7 paediatric patients aged 7 to <17 years (AREN1721). No new safety signals were observed across these studies, and exposure at the maximum tolerated paediatric dose was lower than that achieved with the approved adult starting dose (FDA INLYTA label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4/5 inhibitors (e.g. ketoconazole, itraconazole, clarithromycin, atazanavir, indinavir, nefazodone, nelfinavir, ritonavir, saquinavir, telithromycin, voriconazole) increase axitinib plasma exposure and should be avoided; if unavoidable, reduce the axitinib dose by approximately half and restore the previous dose 3-5 half-lives after the inhibitor is discontinued (FDA INLYTA label, sections 2.3 and 7.1).",
+      "Strong CYP3A4/5 inducers (rifampin, dexamethasone, phenytoin, carbamazepine, rifabutin, rifapentine, phenobarbital, St John's wort) reduce axitinib plasma exposure and should be avoided; moderate inducers (bosentan, efavirenz, etravirine, modafinil, nafcillin) may also reduce exposure and should be avoided if possible (FDA INLYTA label, section 7.2).",
+      "Grapefruit and grapefruit juice may increase axitinib plasma concentrations and should be avoided (FDA INLYTA label, section 7.1).",
+      "Axitinib has the potential to inhibit CYP1A2 and CYP2C8 in vitro, but co-administration with paclitaxel (a CYP2C8 substrate) did not increase paclitaxel plasma concentrations in patients; axitinib is not expected to inhibit P-glycoprotein at therapeutic concentrations (FDA INLYTA label, section 12.3)."
+    ],
+    "monitoring": "Ensure blood pressure is well controlled before starting axitinib, then monitor for hypertension and treat with standard antihypertensive therapy; withhold and dose reduce or permanently discontinue according to severity (SBP >150/DBP >100 mmHg despite treatment requires a one-level dose reduction; SBP >160/DBP >105 mmHg requires withholding until <150/100 mmHg; Grade 4 or hypertensive crisis requires permanent discontinuation) (FDA INLYTA label, sections 5.1 and 2.2). Monitor thyroid function (TSH) before initiation of, and periodically throughout, treatment, and treat to maintain a euthyroid state (section 5.7). Monitor ALT, AST and bilirubin before initiation of and periodically throughout treatment, with more frequent monitoring when combined with avelumab or pembrolizumab (section 5.11). Monitor for proteinuria before initiation of and periodically throughout treatment; withhold and dose reduce for moderate to severe proteinuria (2 or more grams per 24 hours) (section 5.10). Monitor for signs and symptoms of cardiac failure throughout treatment (section 5.5). Monitor for signs and symptoms of arterial and venous thromboembolic events, haemorrhage, and gastrointestinal perforation or fistula (sections 5.2, 5.3, 5.4 and 5.6). Consider baseline and periodic evaluation of left ventricular ejection fraction and monitor for cardiovascular events when axitinib is combined with avelumab (section 5.13). Withhold axitinib for at least 2 days before elective surgery and for at least 2 weeks after major surgery until adequate wound healing is achieved (section 5.8).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling. Explain that hypertension may develop and that blood pressure will be monitored regularly during treatment. Explain that arterial and venous thromboembolic events have occurred and that symptoms should be reported. Explain that axitinib may increase bleeding risk and that any bleeding episode should be reported promptly. Advise regular monitoring for signs and symptoms of cardiac failure. Advise that gastrointestinal symptoms such as diarrhoea, nausea, vomiting and constipation are common and that persistent or severe abdominal pain requires immediate medical attention because gastrointestinal perforation and fistula have been reported. Advise the patient to report symptoms of abnormal thyroid function. Advise that axitinib may impair wound healing and that any planned surgical procedure must be reported to the healthcare provider in advance. Advise the patient to report worsening neurological function consistent with RPLS (headache, seizure, lethargy, confusion, blindness and other visual or neurologic disturbances). Explain the signs and symptoms of hepatotoxicity and advise immediate contact with the healthcare provider. Patients receiving axitinib with avelumab should contact their provider immediately for new or worsening chest discomfort, dyspnoea or peripheral oedema. Advise females to inform their provider if pregnant or planning pregnancy, that axitinib can cause fetal harm, and that effective contraception should be used during treatment and for 1 week after the last dose; advise males with female partners of reproductive potential to use effective contraception during treatment and for 1 week after the last dose. Advise patients not to breastfeed during treatment and for 2 weeks after the last dose. Advise that axitinib may impair fertility in males and females of reproductive potential. Advise patients to swallow tablets whole with a full glass of water, to take doses approximately 12 hours apart with or without food, and not to take an extra dose if a dose is missed or vomited. Advise patients to inform their doctor of all concomitant medications, vitamins and dietary or herbal supplements (FDA INLYTA label, section 17).",
+    "warnings": [
+      "Hypertension, including hypertensive crisis: ensure blood pressure is well controlled before initiating axitinib, monitor and treat as needed; withhold and dose reduce or permanently discontinue based on severity (FDA INLYTA label, section 5.1)",
+      "Arterial thromboembolic events: reported and can be fatal; permanently discontinue axitinib if an arterial thromboembolic event occurs during treatment (FDA INLYTA label, section 5.2)",
+      "Venous thromboembolic events: reported and can be fatal; withhold and then resume at the same dose or permanently discontinue based on severity (FDA INLYTA label, section 5.3)",
+      "Haemorrhage: haemorrhagic events, including fatal events, have been reported; axitinib has not been studied in patients with evidence of untreated brain metastasis or recent active gastrointestinal bleeding and should not be used in those patients (FDA INLYTA label, section 5.4)",
+      "Cardiac failure: observed and can be fatal; management may require dose reduction, dose interruption or permanent discontinuation (FDA INLYTA label, section 5.5)",
+      "Gastrointestinal perforation and fistula formation: occurred, including death; use with caution in patients at risk (FDA INLYTA label, section 5.6)",
+      "Hypothyroidism: reported, including hypothyroidism requiring thyroid hormone replacement; monitor thyroid function before initiation and periodically throughout treatment (FDA INLYTA label, section 5.7)",
+      "Impaired wound healing: withhold axitinib for at least 2 days prior to elective surgery, do not administer for at least 2 weeks following major surgery and until adequate wound healing, then resume at a reduced dose or discontinue based on severity and persistence (FDA INLYTA label, section 5.8)",
+      "Reversible posterior leukoencephalopathy syndrome (RPLS): observed; permanently discontinue axitinib if signs or symptoms of RPLS occur and magnetic resonance imaging is needed to confirm the diagnosis (FDA INLYTA label, section 5.9)",
+      "Proteinuria: monitor before initiation and periodically throughout treatment; for moderate to severe proteinuria withhold and then dose reduce (FDA INLYTA label, section 5.10)",
+      "Hepatotoxicity: liver enzyme elevation occurs; monitor ALT, AST and bilirubin before initiation and periodically throughout treatment, with higher Grade 3/4 frequencies when combined with avelumab or pembrolizumab, and permanently discontinue the combination for severe or life-threatening hepatotoxicity (FDA INLYTA label, section 5.11)",
+      "Use in patients with hepatic impairment: decrease the starting dose in moderate hepatic impairment; axitinib has not been studied in severe hepatic impairment (FDA INLYTA label, sections 5.12 and 8.6)",
+      "Major adverse cardiovascular events with avelumab: optimise cardiovascular risk factors and permanently discontinue the combination for Grade 3-4 events (FDA INLYTA label, section 5.13)",
+      "Embryo-fetal toxicity: axitinib can cause fetal harm; in mice it was teratogenic, embryotoxic and fetotoxic at maternal exposures lower than human exposure at the recommended starting dose; advise effective contraception during treatment and for 1 week after the last dose (FDA INLYTA label, section 5.14)"
+    ],
+    "precautions": [
+      "Dose modification is required for adverse reactions: other adverse reactions of Grade 3 require a one-level dose reduction, and Grade 4 reactions require withholding until resolution to Grade 2; specific guidance applies to hypertension, haemorrhage, cardiac failure, impaired wound healing, RPLS and proteinuria >=2 g per 24 hours (FDA INLYTA label, section 2.2, Tables 1 and 2).",
+      "When axitinib is combined with avelumab or pembrolizumab, additional dose modifications apply for liver enzyme elevation and diarrhoea, and major adverse cardiovascular events require permanent discontinuation of the combination (FDA INLYTA label, section 2.2, Table 3).",
+      "Axitinib has not been studied in patients with evidence of untreated brain metastasis or recent active gastrointestinal bleeding and should not be used in those patients (FDA INLYTA label, section 5.4).",
+      "Use caution in patients who are at increased risk for arterial or venous thromboembolic events, and in patients at risk for gastrointestinal perforation or fistula (FDA INLYTA label, sections 5.2, 5.3 and 5.6).",
+      "The safety of resumption of axitinib after resolution of wound healing complications has not been established, and the safety of reinitiating axitinib after RPLS is not known (FDA INLYTA label, sections 5.8 and 5.9).",
+      "Use in patients with an arterial thromboembolic event within the previous 12 months or a venous thromboembolic event within the previous 6 months has not been studied (FDA INLYTA label, sections 5.2 and 5.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Arterial thromboembolic events, including fatal cerebrovascular accident (FDA INLYTA label, section 5.2)",
+      "Venous thromboembolic events, including fatal pulmonary embolism (FDA INLYTA label, section 5.3)",
+      "Haemorrhage, including fatal gastric haemorrhage (FDA INLYTA label, section 5.4)",
+      "Cardiac failure, which was fatal in 2/359 patients (1%) (FDA INLYTA label, section 5.5)",
+      "Gastrointestinal perforation (1% across trials, including one death) and fistula formation (FDA INLYTA label, section 5.6)",
+      "Reversible posterior leukoencephalopathy syndrome (FDA INLYTA label, section 5.9)",
+      "Major adverse cardiovascular events with avelumab: 7% of patients, including death due to cardiac events (1.4%), Grade 3-4 myocardial infarction (2.8%) and Grade 3-4 congestive heart failure (1.8%) (FDA INLYTA label, section 5.13)",
+      "Fatal adverse reactions in 1.8% of patients receiving axitinib with avelumab, including sudden cardiac death (1.2%) (FDA INLYTA label, section 6.1)"
+    ],
+    "food_interactions": [
+      "Grapefruit and grapefruit juice should be avoided because they may increase axitinib plasma concentrations (FDA INLYTA label, section 7.1).",
+      "Food does not require a dose adjustment: compared with overnight fasting, a moderate fat meal produced 10% lower AUC and a high fat, high-calorie meal 19% higher AUC, so axitinib may be taken with or without food (FDA INLYTA label, sections 2.1 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Axitinib can cause fetal harm when administered to a pregnant woman based on its mechanism of action and animal findings; there are no available human data. In developmental toxicity studies in mice, axitinib was teratogenic, embryotoxic and fetotoxic at maternal exposures lower than those achieved at the recommended human starting dose (cleft palate at 1.5 mg/kg/dose, approximately 0.5 times the human AUC, and variation in skeletal ossification at >=0.5 mg/kg/dose); oral axitinib given twice daily to female mice before mating and through the first week of pregnancy caused increased post-implantation loss at all doses tested. Verify pregnancy status before initiating treatment; advise females of reproductive potential to use effective contraception during treatment and for 1 week after the last dose, and advise males with female partners of reproductive potential to use effective contraception during treatment and for 1 week after the last dose. When axitinib is used with avelumab or pembrolizumab, refer to those products' prescribing information for pregnancy information (FDA INLYTA label, sections 5.14, 8.1 and 8.3).",
+    "lactation_guidance": "There are no data on the presence of axitinib in human milk, or on its effects on the breastfed child or on milk production. Because of the potential for serious adverse reactions in a breastfed child, advise lactating women not to breastfeed during treatment with axitinib and for 2 weeks after the last dose (FDA INLYTA label, section 8.2).",
+    "overdose": "There is no specific treatment for axitinib overdose. In a controlled clinical study one patient inadvertently received 20 mg twice daily for 4 days and experienced dizziness (Grade 1); in a clinical dose-finding study, subjects who received starting doses of 10 mg twice daily or 20 mg twice daily experienced adverse reactions including hypertension, seizures associated with hypertension and fatal haemoptysis. In cases of suspected overdose, withhold axitinib and institute supportive care (FDA INLYTA label, section 10).",
+    "pharmacokinetics": "Axitinib is metabolised primarily in the liver by CYP3A4/5 and to a lesser extent by CYP1A2, CYP2C19 and UGT1A1. Following a single oral 5 mg dose the median Tmax was 2.5 to 4.1 hours, steady state is expected within 2 to 3 days of dosing, and the mean absolute bioavailability is 58%. Axitinib is highly bound (>99%) to plasma proteins, preferentially to albumin with moderate binding to alpha1-acid glycoprotein; in patients with advanced RCC at 5 mg twice daily in the fed state the geometric mean Cmax was 27.8 ng/mL and AUC0-24 265 ng.h/mL, with geometric mean clearance 38 L/h and apparent volume of distribution 160 L. The plasma half-life ranges from 2.5 to 6.1 hours. After an oral 5 mg radioactive dose, approximately 41% of radioactivity was recovered in faeces and approximately 23% in urine; unchanged axitinib (12% of the dose) was the major component in faeces and was not detected in urine, and the N-glucuronide metabolite represented 50% of circulating radioactivity. The sulfoxide and N-glucuronide metabolites are at least 400-fold less potent against VEGFR-2 than axitinib (FDA INLYTA label, section 12.3).",
+    "clinical_pearls": [
+      "Axitinib has no boxed warning in its current FDA prescribing information; the clinically significant risks that drive dose modification are hypertension, proteinuria, haemorrhage, thyroid dysfunction, wound healing impairment, thromboembolic events and hepatotoxicity (FDA INLYTA label, sections 4 and 5).",
+      "Dose escalation is only permitted for patients who tolerate at least two consecutive weeks with no adverse reaction greater than Grade 2, are normotensive and are not receiving antihypertensive medication (FDA INLYTA label, section 2.2).",
+      "Because axitinib inhibits VEGF signalling, it must be withheld for at least 2 days before elective surgery and for at least 2 weeks after major surgery until wound healing is adequate (FDA INLYTA label, section 5.8).",
+      "Strong CYP3A4/5 inhibitors roughly double axitinib exposure; halve the dose if such an inhibitor is unavoidable and restore the prior dose 3-5 half-lives after stopping the inhibitor (FDA INLYTA label, sections 2.3 and 7.1).",
+      "Dysphonia (voice change) is a frequent, characteristically axitinib-specific adverse effect reported in about 31% of patients in the second-line study (FDA INLYTA label, section 6.1).",
+      "Palmar-plantar erythrodysesthesia is the most frequent Grade 3/4 toxicity in monotherapy, with 51% of the 27% of affected patients experiencing Grade 3/4 events (FDA INLYTA label, section 6.1).",
+      "No dedicated renal impairment trial has been conducted, but population pharmacokinetic data show no meaningful effect of mild to severe renal impairment on axitinib clearance, so no starting dose adjustment is needed (FDA INLYTA label, section 8.7)."
+    ],
+    "brand_names": ["INLYTA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No starting dose adjustment is needed for patients with pre-existing mild to severe renal impairment (creatinine clearance 15 to <89 mL/min) based on population pharmacokinetic analyses; caution should be used in patients with end-stage renal disease (creatinine clearance <15 mL/min), for which data are available from only one patient (FDA INLYTA label, section 8.7).",
+    "hepatic_dose_adjustment": "No starting dose adjustment is required in mild hepatic impairment (Child-Pugh A); the starting dose should be reduced by approximately half in moderate hepatic impairment (Child-Pugh B) because systemic exposure is higher, and subsequent doses can be increased or decreased on the basis of safety and tolerability. Axitinib has not been studied in severe hepatic impairment (Child-Pugh C) (FDA INLYTA label, sections 2.4, 5.12 and 8.6).",
+    "administration_instructions": "Take 5 mg orally twice daily approximately 12 hours apart, with or without food, and swallow the tablet whole with a full glass of water; do not take an additional dose if a dose is missed or vomited, and take the next prescribed dose at the usual time. Store at 20 to 25 degrees C (68 to 77 degrees F), with excursions permitted to 15 to 30 degrees C (59 to 86 degrees F) [USP Controlled Room Temperature] (FDA INLYTA label, sections 2.1, 2.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, INLYTA (axitinib) tablets, Pfizer Laboratories, sections 12.1 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 1.1-1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 5.1-5.13, 6.1 (Tables 4 and 8) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.1-2.4 and 8.4-8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA INLYTA label, section 2.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; no established paediatric regimen (FDA INLYTA label, section 8.4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.3, 7.1, 7.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.2 and 5.1-5.13",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 5.1-5.14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.2 (Tables 1-3), 5.2, 5.3, 5.4, 5.6, 5.8 and 5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 5.2-5.6, 5.13 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 7.1, 2.1 and 12.3 (grapefruit; food effect on AUC)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated in the current FDA INLYTA label (post-PLLR label; pregnancy risk is described in sections 5.14 and 8.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 5.14, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.2, 2.3, 4, 5.8, 6.1, 7.1 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "brand_names",
+      "ref": "INLYTA (axitinib) listed on DailyMed as the Pfizer brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, INLYTA (axitinib) tablets - the prescribing information contains no Boxed Warning section (section 1 begins at INDICATIONS AND USAGE)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, INLYTA (axitinib) tablets, section 8.7 and section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.4, 5.12 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, INLYTA (axitinib) tablets, sections 2.1, 2.2 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84137882-e000-47da-bd5b-fa76ab3c76f9"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)",
+    "pregnancy_category (the current FDA INLYTA label is a post-PLLR label and does not state a pregnancy letter category)"
+  ],
+  "notes": "The table stores this agent as 'Axitinib'; the FDA product is INLYTA (axitinib) film-coated tablets, 1 mg and 5 mg, marketed by Pfizer. The label carries no boxed warning - the four clinically significant toxicity domains that drive its dose modification are hypertension, proteinuria, haemorrhage and VEGF-related effects (wound healing impairment, thyroid dysfunction, thromboembolic events, gastrointestinal perforation) plus hepatotoxicity. The label now describes three distinct indications: first-line advanced RCC with avelumab, first-line advanced RCC with pembrolizumab, and single-agent second-line advanced RCC; dose escalation intervals differ between the two first-line combinations (two weeks or longer with avelumab, six weeks or longer with pembrolizumab). Safety data in section 6.1 are presented separately for each of these settings. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

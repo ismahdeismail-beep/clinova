@@ -1,0 +1,230 @@
+{
+  "name": "Aztreonam",
+  "existing_id": "ef997cc0-904b-41c1-b145-23a44d323ef0",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Aztreonam is a synthetic bactericidal monobactam antibiotic originally isolated from Chromobacterium violaceum. The monobactams have a unique monocyclic beta-lactam nucleus that is structurally different from other beta-lactam antibiotics (e.g. penicillins, cephalosporins, cephamycins); the sulfonic acid substituent in the 1-position of the ring activates the beta-lactam moiety, and an aminothiazolyl oxime side chain in the 3-position and a methyl group in the 4-position confer the specific antibacterial spectrum and beta-lactamase stability. Aztreonam is a bactericidal agent that acts by inhibition of bacterial cell wall synthesis, and it retains activity in the presence of some beta-lactamses (both penicillinases and cephalosporinases) of Gram-negative and Gram-positive bacteria. Resistance to aztreonam is primarily through hydrolysis by beta-lactamase, alteration of penicillin-binding proteins, and decreased permeability (FDA AZACTAM (aztreonam for injection) label, DESCRIPTION and CLINICAL PHARMACOLOGY: Microbiology).",
+    "indications": [
+      "Urinary tract infections (complicated and uncomplicated), including pyelonephritis and cystitis (initial and recurrent) caused by Escherichia coli, Klebsiella pneumoniae, Proteus mirabilis, Pseudomonas aeruginosa, Enterobacter cloacae, Klebsiella oxytoca, Citrobacter species and Serratia marcescens (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Lower respiratory tract infections, including pneumonia and bronchitis, caused by Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Haemophilus influenzae, Proteus mirabilis, Enterobacter species and Serratia marcescens (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Septicemia caused by Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Proteus mirabilis, Serratia marcescens and Enterobacter species (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Skin and skin-structure infections, including those associated with postoperative wounds, ulcers and burns, caused by Escherichia coli, Proteus mirabilis, Serratia marcescens, Enterobacter species, Pseudomonas aeruginosa, Klebsiella pneumoniae and Citrobacter species (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Intra-abdominal infections, including peritonitis, caused by Escherichia coli, Klebsiella species including K. pneumoniae, Enterobacter species including E. cloacae, Pseudomonas aeruginosa, Citrobacter species including C. freundii and Serratia species including S. marcescens (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Gynecologic infections, including endometritis and pelvic cellulitis, caused by Escherichia coli, Klebsiella pneumoniae, Enterobacter species including E. cloacae and Proteus mirabilis (FDA AZACTAM label, INDICATIONS AND USAGE)",
+      "Adjunctive therapy to surgery in the management of infections caused by susceptible organisms, including abscesses, infections complicating hollow viscus perforations, cutaneous infections and infections of serous surfaces (FDA AZACTAM label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Patients with known hypersensitivity to aztreonam or any other component in the formulation (FDA AZACTAM label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Local reactions: phlebitis/thrombophlebitis following intravenous administration in approximately 1.9% of patients, and discomfort/swelling at the injection site following intramuscular administration in approximately 2.4% (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Systemic reactions related to therapy or of uncertain aetiology occurring at an incidence of 1% to 1.3%: diarrhoea, nausea and/or vomiting, and rash (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Hypersensitivity (incidence <1%): anaphylaxis, angioedema and bronchospasm (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Gastrointestinal (incidence <1%): abdominal cramps, and rare cases of Clostridium difficile-associated diarrhoea including pseudomembranous colitis, or gastrointestinal bleeding (FDA AZACTAM label, ADVERSE REACTIONS and WARNINGS)",
+      "Dermatologic (incidence <1%): toxic epidermal necrolysis, purpura, erythema multiforme, exfoliative dermatitis, urticaria, petechiae, pruritus and diaphoresis (FDA AZACTAM label, ADVERSE REACTIONS and WARNINGS)",
+      "Haematologic (incidence <1%): pancytopenia, neutropenia, thrombocytopenia, anaemia, eosinophilia, leukocytosis and thrombocytosis (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Cardiovascular (incidence <1%): hypotension, transient ECG changes (ventricular bigeminy and PVC) and flushing (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Respiratory (incidence <1%): wheezing, dyspnoea and chest pain (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Hepatobiliary (incidence <1%): hepatitis and jaundice (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Nervous system (incidence <1%): seizure, confusion, encephalopathy, vertigo, paraesthesia, insomnia and dizziness (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Musculoskeletal (incidence <1%): muscular aches; special senses (incidence <1%): tinnitus, diplopia, mouth ulcer, altered taste, numb tongue, sneezing, nasal congestion and halitosis; other (incidence <1%): vaginal candidiasis, vaginitis and breast tenderness; body as a whole: weakness, headache, fever and malaise (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Paediatric patients: of 612 paediatric patients treated in clinical trials, less than 1% required discontinuation due to adverse events; systemic events in at least 1% were rash (4.3%), diarrhoea (1.4%) and fever (1.0%). In 343 paediatric patients on intravenous therapy, local reactions were pain (12%), erythema (2.9%), induration (0.9%) and phlebitis (2.1%) (FDA AZACTAM label, ADVERSE REACTIONS: Pediatric Adverse Reactions)",
+      "Paediatric laboratory abnormalities in at least 1% of treated patients: increased eosinophils (6.3%), increased platelets (3.6%), neutropenia (3.2%), increased AST (3.8%), increased ALT (6.5%) and increased serum creatinine (5.8%); neutropenia (absolute neutrophil count <1000/mm3) occurred in 11.3% (8/71) of patients younger than 2 years receiving 30 mg/kg every 6 hours, and AST/ALT elevations to more than 3 times the upper limit of normal were noted in 15% to 20% of patients aged 2 years or above receiving 50 mg/kg every 6 hours (FDA AZACTAM label, ADVERSE REACTIONS: Pediatric Adverse Reactions)",
+      "Adverse laboratory changes regardless of drug relationship: hepatic - elevations of AST, ALT and alkaline phosphatase, with signs or symptoms of hepatobiliary dysfunction in less than 1% of recipients; haematologic - increases in prothrombin and partial thromboplastin times and positive Coombs' test; renal - increases in serum creatinine (FDA AZACTAM label, ADVERSE REACTIONS: Adverse Laboratory Changes)"
+    ],
+    "dosage": {
+      "adult": "Aztreonam may be administered intravenously or by intramuscular injection; dosage and route should be determined by the susceptibility of the causative organisms, the severity and site of infection, and the condition of the patient. Urinary tract infections: 500 mg or 1 g every 8 or 12 hours. Moderately severe systemic infections: 1 g or 2 g every 8 or 12 hours. Severe systemic or life-threatening infections: 2 g every 6 or 8 hours. Maximum recommended dose is 8 g per day. Because of the serious nature of infections due to Pseudomonas aeruginosa, 2 g every 6 or 8 hours is recommended, at least upon initiation of therapy, in systemic infections caused by this organism. The intravenous route is recommended for patients requiring single doses greater than 1 g or those with bacterial septicemia, localized parenchymal abscess (e.g. intra-abdominal abscess), peritonitis, or other severe systemic or life-threatening infections. The duration of therapy depends on the severity of infection: generally Aztreonam should be continued for at least 48 hours after the patient becomes asymptomatic or evidence of bacterial eradication has been obtained; persistent infections may require treatment for several weeks, and doses smaller than those indicated should not be used (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Dosage in Adult Patients, Table 2). Renal impairment: halve the dose in patients with estimated creatinine clearance between 10 and 30 mL/min/1.73 m2 after an initial loading dose of 1 g or 2 g; in severe renal failure (creatinine clearance less than 10 mL/min/1.73 m2, such as patients supported by haemodialysis), give the usual 500 mg, 1 g or 2 g initially and then one-quarter of the usual initial dose at the usual fixed interval of 6, 8 or 12 hours, adding one-eighth of the initial dose after each haemodialysis session for serious or life-threatening infections (section: Renal Impairment in Adult Patients). In the elderly, renal status is a major determinant of dosage and estimates of creatinine clearance should be obtained with appropriate dosage modifications made if necessary, since serum creatinine may not be an accurate determinant of renal status (section: Dosage in the Elderly).",
+      "geriatric": "The label gives no separate geriatric dose but directs that renal status be used to individualise dosing in the elderly: because these patients may have diminished renal function and serum creatinine may not be an accurate determinant of renal status, estimates of creatinine clearance should be obtained and appropriate dosage modifications made if necessary. In elderly patients the mean serum half-life of aztreonam increased and renal clearance decreased, consistent with the age-related decrease in creatinine clearance, so renal function should be monitored and dosage adjusted accordingly (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Dosage in the Elderly; PRECAUTIONS: Geriatric Use).",
+      "paediatric": "Aztreonam should be administered intravenously to paediatric patients with normal renal function; there are insufficient data regarding intramuscular administration to paediatric patients or dosing in paediatric patients with renal impairment. Mild to moderate infections: 30 mg/kg every 8 hours. Moderate to severe infections: 30 mg/kg every 6 or 8 hours. Maximum recommended dose is 120 mg/kg/day (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Dosage in Pediatric Patients, Table 3). Safety and effectiveness of intravenous aztreonam have been established in the age groups 9 months to 16 years, but sufficient data are not available for paediatric patients under 9 months of age or for septicemia and skin and skin-structure infections where the skin infection is believed or known to be due to H. influenzae type b; in paediatric patients with cystic fibrosis higher doses may be warranted (PRECAUTIONS: Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Beta-lactamase-inducing antibiotics: certain antibiotics (e.g. cefoxitin, imipenem) may induce high levels of beta-lactamase in vitro in some Gram-negative aerobes such as Enterobacter and Pseudomonas species, resulting in antagonism to many beta-lactam antibiotics including aztreonam; these in vitro findings suggest that such antibiotics should not be used concurrently with aztreonam (FDA AZACTAM label, INDICATIONS AND USAGE: Concurrent Therapy).",
+      "Aminoglycosides: aztreonam and aminoglycosides are synergistic in vitro against most strains of P. aeruginosa, many strains of Enterobacteriaceae and other Gram-negative aerobic bacilli, but if an aminoglycoside is used concurrently with aztreonam, especially at high dosages or with prolonged therapy, renal function should be monitored because of the potential nephrotoxicity and ototoxicity of aminoglycoside antibiotics (FDA AZACTAM label, CLINICAL PHARMACOLOGY: Interaction with Other Antimicrobials and PRECAUTIONS: General).",
+      "Incompatibility on admixture: aztreonam is incompatible with nafcillin sodium, cephradine and metronidazole, and other admixtures are not recommended because compatibility data are not available (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Admixtures with Other Antibiotics).",
+      "Probenecid or furosemide: concomitant administration causes clinically insignificant increases in the serum levels of aztreonam; single-dose intravenous pharmacokinetic studies have not shown any significant interaction between aztreonam and concomitantly administered gentamicin, nafcillin sodium, cephradine, clindamycin or metronidazole. No disulfiram-like reaction with alcohol has been noted, since aztreonam does not contain a methyl-tetrazole side chain (FDA AZACTAM label, CLINICAL PHARMACOLOGY)."
+    ],
+    "monitoring": "In patients with impaired hepatic or renal function, appropriate monitoring is recommended during therapy (FDA AZACTAM label, PRECAUTIONS: General). If an aminoglycoside is used concurrently with aztreonam, particularly at high dosages or with prolonged therapy, monitor renal function because of the potential nephrotoxicity and ototoxicity of aminoglycosides (PRECAUTIONS: General). Monitor for superinfection: antibiotic use may promote overgrowth of non-susceptible organisms including Gram-positive organisms (Staphylococcus aureus and Streptococcus faecalis) and fungi, and appropriate measures should be taken if superinfection occurs (PRECAUTIONS: General). Consider C. difficile-associated diarrhoea in any patient who presents with diarrhoea following antibiotic use, noting that it can occur over 2 months after the last dose, and discontinue non-C. difficile-directed antibiotic use and institute fluid and electrolyte management, protein supplementation, C. difficile antibiotic treatment and surgical evaluation as clinically indicated (WARNINGS). Obtain an accurate allergy history before treatment, since aztreonam can cause hypersensitivity reactions in patients with or without prior exposure to any allergen (WARNINGS). Monitor for signs of anaemia, neutropenia, thrombocytopenia and raised creatinine, given the reported haematologic and renal laboratory abnormalities (ADVERSE REACTIONS: Adverse Laboratory Changes). In the elderly, monitor renal function and adjust dosage accordingly (PRECAUTIONS: Geriatric Use).",
+    "patient_counselling": "Patients should be counselled that antibacterial drugs including aztreonam should only be used to treat bacterial infections and do not treat viral infections such as the common cold. When aztreonam is prescribed to treat a bacterial infection, patients should be told that although it is common to feel better early in the course of therapy, the medication should be taken exactly as directed, and that skipping doses or not completing the full course of therapy may decrease the effectiveness of the immediate treatment and increase the likelihood that bacteria will develop resistance and will not be treatable by aztreonam or other antibacterial drugs in the future. Patients should be told that diarrhoea is a common problem caused by antibiotics which usually ends when the antibiotic is discontinued, and that sometimes after starting treatment with antibiotics patients can develop watery and bloody stools, with or without stomach cramps and fever, even as late as 2 or more months after the last dose of the antibiotic, in which case they should contact their physician as soon as possible (FDA AZACTAM label, PRECAUTIONS: Information for Patients). Patients should also be informed of the risk of serious infection and of hypersensitivity reactions, and advised to report any allergic reaction, diarrhoea, rash, jaundice or neurological symptoms promptly.",
+    "warnings": [
+      "Hypersensitivity: both animal and human data suggest that aztreonam is rarely cross-reactive with other beta-lactam antibiotics and is weakly immunogenic, but treatment with aztreonam can result in hypersensitivity reactions in patients with or without prior exposure. Careful inquiry should be made to determine whether the patient has any history of hypersensitivity reactions to any allergens. While cross-reactivity with other beta-lactam antibiotics is rare, the drug should be administered with caution to any patient with a history of hypersensitivity to beta-lactams (e.g. penicillins, cephalosporins and/or carbapenems). If an allergic reaction occurs, discontinue the drug and institute supportive treatment as appropriate (maintenance of ventilation, pressor amines, antihistamines, corticosteroids); serious hypersensitivity reactions may require epinephrine and other emergency measures (FDA AZACTAM label, WARNINGS)",
+      "Clostridium difficile-associated diarrhoea (CDAD): reported with the use of nearly all antibacterial agents, including aztreonam, and may range in severity from mild diarrhoea to fatal colitis. CDAD must be considered in all patients who present with diarrhoea following antibiotic use, and careful medical history is necessary because CDAD has been reported to occur over 2 months after the administration of antibacterial agents. If CDAD is suspected or confirmed, ongoing antibiotic use not directed against C. difficile may need to be discontinued, and appropriate fluid and electrolyte management, protein supplementation, antibiotic treatment of C. difficile and surgical evaluation should be instituted as clinically indicated (FDA AZACTAM label, WARNINGS)",
+      "Toxic epidermal necrolysis: rare cases have been reported in association with aztreonam in patients undergoing bone marrow transplant with multiple risk factors including sepsis, radiation therapy and other concomitantly administered drugs associated with toxic epidermal necrolysis (FDA AZACTAM label, WARNINGS)"
+    ],
+    "precautions": [
+      "To reduce the development of drug-resistant bacteria and maintain effectiveness, aztreonam should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria; when culture and susceptibility information are available they should be considered in selecting or modifying therapy, and in the absence of such data local epidemiology and susceptibility patterns may contribute to empiric selection (FDA AZACTAM label, INDICATIONS AND USAGE).",
+      "Prescribing aztreonam in the absence of a proven or strongly suspected bacterial infection or a prophylactic indication is unlikely to provide benefit and increases the risk of the development of drug-resistant bacteria (FDA AZACTAM label, PRECAUTIONS: General).",
+      "Monitor renal function when an aminoglycoside is used concurrently with aztreonam, especially at high aminoglycoside doses or with prolonged therapy, because of the potential nephrotoxicity and ototoxicity of aminoglycosides (FDA AZACTAM label, PRECAUTIONS: General).",
+      "The use of antibiotics may promote overgrowth of non-susceptible organisms including Gram-positive organisms and fungi; appropriate measures should be taken if superinfection occurs (FDA AZACTAM label, PRECAUTIONS: General).",
+      "Carcinogenicity studies with aztreonam have not been conducted using the intravenous route; a 104-week rat inhalation toxicology study demonstrated no drug-related increase in tumour incidence. Genetic toxicology studies in vitro and in vivo did not reveal mutagenic or clastogenic potential (FDA AZACTAM label, PRECAUTIONS: Carcinogenesis, Mutagenesis, Impairment of Fertility).",
+      "Aztreonam crosses the placenta and enters the fetal circulation; because animal reproduction studies are not always predictive of human response, aztreonam should be used during pregnancy only if clearly needed (FDA AZACTAM label, PRECAUTIONS: Pregnancy).",
+      "Aztreonam is excreted in human milk in concentrations less than 1% of simultaneously obtained maternal serum; consideration should be given to temporary discontinuation of nursing and use of formula feedings (FDA AZACTAM label, PRECAUTIONS: Nursing Mothers).",
+      "Safety and effectiveness of intravenous aztreonam have been established in the age groups 9 months to 16 years; sufficient data are not available for paediatric patients under 9 months of age, or for septicemia and skin and skin-structure infections where the skin infection is believed or known to be due to H. influenzae type b (FDA AZACTAM label, PRECAUTIONS: Pediatric Use).",
+      "In elderly patients the mean serum half-life increased and renal clearance decreased; since aztreonam is substantially excreted by the kidney, the risk of toxic reactions may be greater in patients with impaired renal function (FDA AZACTAM label, PRECAUTIONS: Geriatric Use)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis, angioedema and bronchospasm (FDA AZACTAM label, ADVERSE REACTIONS and WARNINGS)",
+      "Clostridium difficile-associated diarrhoea, including pseudomembranous colitis, which may range in severity from mild diarrhoea to fatal colitis and may require colectomy (FDA AZACTAM label, WARNINGS and ADVERSE REACTIONS)",
+      "Toxic epidermal necrolysis, reported rarely in bone marrow transplant patients with multiple risk factors (FDA AZACTAM label, WARNINGS)",
+      "Hepatobiliary injury: hepatitis and jaundice (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Haematologic toxicity: pancytopenia, neutropenia, thrombocytopenia and anaemia (FDA AZACTAM label, ADVERSE REACTIONS)",
+      "Neurological toxicity: seizure, confusion and encephalopathy (FDA AZACTAM label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "In pregnant women aztreonam crosses the placenta and enters the fetal circulation. Developmental toxicity studies in pregnant rats and rabbits with daily doses of aztreonam up to 1800 and 1200 mg/kg respectively revealed no evidence of embryotoxicity, fetotoxicity or teratogenicity; these doses are 2.2- and 2.9-fold greater than the maximum recommended human dose of 8 g per day based on body surface area. A peri/postnatal study in rats revealed no drug-induced changes in any maternal, fetal or neonatal parameters. There are no adequate and well-controlled studies of aztreonam on human pregnancy outcomes, and because animal reproduction studies are not always predictive of human response, aztreonam should be used during pregnancy only if clearly needed (FDA AZACTAM label, PRECAUTIONS: Pregnancy).",
+    "lactation_guidance": "Aztreonam is excreted in human milk in concentrations that are less than 1% of concentrations determined in simultaneously obtained maternal serum; consideration should be given to temporary discontinuation of nursing and use of formula feedings (FDA AZACTAM label, PRECAUTIONS: Nursing Mothers).",
+    "overdose": "If necessary, aztreonam may be cleared from the serum by haemodialysis and/or peritoneal dialysis (FDA AZACTAM label, OVERDOSAGE).",
+    "pharmacokinetics": "Following single 30-minute intravenous infusions of 500 mg, 1 g and 2 g doses in healthy subjects, peak serum levels immediately after administration were 54 mcg/mL, 90 mcg/mL and 204 mcg/mL respectively, falling at 8 hours to 1, 3 and 6 mcg/mL; after single 3-minute intravenous injections of the same doses the serum levels at 5 minutes were 58, 125 and 242 mcg/mL. After intramuscular injection of 500 mg and 1 g doses, maximum serum concentrations occur at about 1 hour, and after identical single intravenous or intramuscular doses the serum concentrations are comparable at 1 hour with similar slopes thereafter. The serum half-life of aztreonam averaged 1.7 hours (1.5-2.0) in subjects with normal renal function, independent of dose and route; in healthy subjects based on a 70 kg person, serum clearance was 91 mL/min and renal clearance 56 mL/min, with an apparent mean volume of distribution at steady state of 12.6 litres, approximately equivalent to extracellular fluid volume. In elderly patients the mean serum half-life increased and renal clearance decreased; in patients with impaired renal function the serum half-life is prolonged, whereas it is only slightly prolonged in hepatic impairment because the liver is a minor pathway of excretion. Aztreonam is excreted in the urine about equally by active tubular secretion and glomerular filtration, with approximately 60-70% of an intravenous or intramuscular dose recovered in the urine by 8 hours and urinary excretion of a single parenteral dose essentially complete by 12 hours; about 12% of a single intravenous radiolabelled dose was recovered in the faeces. Serum protein binding averaged 56% and was independent of dose. Multiple dosing at 500 mg or 1 g every 8 hours for 7 days produced no apparent accumulation (FDA AZACTAM label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Aztreonam has no boxed warning and no cross-reactivity problem with penicillins or cephalosporins in practice: both animal and human data suggest it is rarely cross-reactive with other beta-lactam antibiotics and is weakly immunogenic, which makes it a useful option for patients with beta-lactam allergy - although it should still be used with caution in patients with any beta-lactam hypersensitivity history (FDA AZACTAM label, WARNINGS).",
+      "Aztreonam is active against Gram-negative aerobes but has essentially no activity against Gram-positive organisms or anaerobes, so concurrent initial therapy with another agent is recommended in seriously ill patients at risk of Gram-positive infection, and an anti-anaerobic agent should be added if anaerobes are suspected (FDA AZACTAM label, INDICATIONS AND USAGE: Concurrent Therapy).",
+      "Do not combine with cefoxitin or imipenem: these beta-lactamase-inducing antibiotics antagonise aztreonam in vitro against Enterobacter and Pseudomonas species (FDA AZACTAM label, INDICATIONS AND USAGE: Concurrent Therapy).",
+      "Aztreonam contains no sodium, which matters in patients with cardiac failure or fluid restriction (FDA AZACTAM label, PRECAUTIONS: Geriatric Use and DESCRIPTION).",
+      "In cystic fibrosis the label notes that higher doses of aztreonam may be warranted in paediatric patients (FDA AZACTAM label, PRECAUTIONS: Pediatric Use).",
+      "Aztreonam penetrates peritoneal dialysis fluid rapidly when given intravenously, and intraperitoneal administration of aztreonam in dialysis fluid rapidly produces therapeutic serum levels (FDA AZACTAM label, CLINICAL PHARMACOLOGY).",
+      "Because aztreonam does not contain a methyl-tetrazole side chain, no disulfiram-like reaction with alcohol has been reported (FDA AZACTAM label, CLINICAL PHARMACOLOGY).",
+      "The label notes that aztreonam is excreted in human milk at less than 1% of maternal serum concentration, which is reassuring for breastfeeding, but recommends temporary discontinuation and formula feeding (FDA AZACTAM label, PRECAUTIONS: Nursing Mothers)."
+    ],
+    "brand_names": ["AZACTAM"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Halve the dose of aztreonam in patients with estimated creatinine clearance between 10 and 30 mL/min/1.73 m2 after an initial loading dose of 1 g or 2 g. In severe renal failure (creatinine clearance less than 10 mL/min/1.73 m2, such as those supported by haemodialysis), give the usual 500 mg, 1 g or 2 g initially, then one-quarter of the usual initial dose at the usual fixed interval of 6, 8 or 12 hours; for serious or life-threatening infections, in addition to the maintenance doses, give one-eighth of the initial dose after each haemodialysis session. If only serum creatinine is available it may be used with a Cockcroft-Gault-type formula to approximate creatinine clearance, provided it represents steady-state renal function (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Renal Impairment in Adult Patients).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Administer intravenously or by intramuscular injection; the intravenous route is recommended for single doses greater than 1 g and for severe systemic or life-threatening infections. For intravenous bolus injection, constitute the vial contents with 6 to 10 mL Sterile Water for Injection, USP; for infusion, constitute each gram of aztreonam with at least 3 mL Sterile Water for Injection, USP and then further dilute into one of the listed infusion solutions (0.9% Sodium Chloride Injection, Ringer's Injection, Lactated Ringer's Injection, 5% or 10% Dextrose Injection, Dextrose and Sodium Chloride Injection combinations, Sodium Lactate Injection, Ionosol B and 5% Dextrose, Isolyte E, Isolyte M, Normosol-R, 5% or 10% Mannitol Injection, Lactated Ringer's and 5% Dextrose, and Plasma-Lyte M and 5% Dextrose). For intramuscular injection, constitute the vial with at least 3 mL of an appropriate diluent per gram of aztreonam using Sterile Water for Injection, USP, Sterile Bacteriostatic Water for Injection, USP, or Bacteriostatic Sodium Chloride Injection, USP. Upon adding the diluent, shake immediately and vigorously, use the constituted solution immediately, discard any remaining unused constituted solution, and inspect parenteral products visually for particulate matter and discoloration. Aztreonam is incompatible with nafcillin sodium, cephradine and metronidazole, and other admixtures are not recommended because compatibility data are not available; aztreonam admixtures with clindamycin phosphate, gentamicin sulfate, tobramycin sulfate or cefazolin sodium in 0.9% sodium chloride or 5% dextrose are stable for up to 48 hours at controlled room temperature or 7 days refrigerated. Store the product in its original package at 20 to 25 degrees C (68 to 77 degrees F) and avoid excessive heat (FDA AZACTAM label, DOSAGE AND ADMINISTRATION: Preparation of Parenteral Solutions, Intravenous Solutions, Intramuscular Solutions, Admixtures with Other Antibiotics and Storage)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), E.R. Squibb & Sons, DESCRIPTION and CLINICAL PHARMACOLOGY: Microbiology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), INDICATIONS AND USAGE and Concurrent Therapy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), ADVERSE REACTIONS, Pediatric Adverse Reactions and Adverse Laboratory Changes",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), DOSAGE AND ADMINISTRATION (Tables 2 and 3, Renal Impairment in Adult Patients, Dosage in the Elderly, Dosage in Pediatric Patients) and PRECAUTIONS (Pediatric and Geriatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA AZACTAM label, DOSAGE AND ADMINISTRATION, Table 2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; the paediatric regimen is provided in fields.dosage.paediatric (FDA AZACTAM label, DOSAGE AND ADMINISTRATION, Table 3)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), INDICATIONS AND USAGE: Concurrent Therapy; CLINICAL PHARMACOLOGY (Interaction with Other Antimicrobials, drug interaction paragraph); PRECAUTIONS: General; DOSAGE AND ADMINISTRATION: Admixtures with Other Antibiotics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), PRECAUTIONS (General, Geriatric Use), WARNINGS and ADVERSE REACTIONS: Adverse Laboratory Changes",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), PRECAUTIONS: Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), INDICATIONS AND USAGE, PRECAUTIONS (General, Carcinogenesis/Mutagenesis/Impairment of Fertility, Pregnancy, Nursing Mothers, Pediatric Use, Geriatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), WARNINGS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA AZACTAM (aztreonam for injection) labelling; the label notes only that no disulfiram-like reaction with alcohol has been reported (CLINICAL PHARMACOLOGY)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated in the FDA AZACTAM (aztreonam for injection) label; pregnancy risk is described under PRECAUTIONS: Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), PRECAUTIONS: Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), PRECAUTIONS: Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), WARNINGS, INDICATIONS AND USAGE (Concurrent Therapy), CLINICAL PHARMACOLOGY, PRECAUTIONS (Pediatric Use, Nursing Mothers, Geriatric Use) and DESCRIPTION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AZACTAM (aztreonam for injection, USP) listed on DailyMed as the E.R. Squibb & Sons brand product; CAYSTON (inhaled aztreonam lysine, Gilead) is a separate product with a different indication",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP) - the prescribing information contains no Boxed Warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), DOSAGE AND ADMINISTRATION: Renal Impairment in Adult Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA AZACTAM label; the label notes only that the serum half-life of aztreonam is slightly prolonged in hepatic impairment because the liver is a minor pathway of excretion (CLINICAL PHARMACOLOGY)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, AZACTAM (aztreonam for injection, USP), DOSAGE AND ADMINISTRATION (Preparation of Parenteral Solutions, Intravenous Solutions, Intramuscular Solutions, Admixtures with Other Antibiotics) and Storage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the FDA AZACTAM label does not state a pregnancy letter category)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA AZACTAM label)"
+  ],
+  "notes": "The table stores this agent as 'Aztreonam'; the product described is AZACTAM (aztreonam for injection, USP), 500 mg, 1 g and 2 g vials. A separate DailyMed product, CAYSTON (aztreonam lysine for inhalation, Gilead), delivers aztreonam by a different route for a different indication - it is indicated to improve respiratory symptoms in cystic fibrosis patients with Pseudomonas aeruginosa - and is out of scope for this monograph. The label also notes a distinct combination product, EMBLAVEO (aztreonam and avibactam, AbbVie), which is not covered here. The AZACTAM label is an older-format label with no boxed warning and no US-specific Use in Specific Populations section - pregnancy, lactation and paediatric content sit under PRECAUTIONS. The drug_class stored in the database ('Monobactam Antibacterial [EPC]') is accurate and consistent with the label's description of aztreonam as a monobactam. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

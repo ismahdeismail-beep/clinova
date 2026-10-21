@@ -1,0 +1,229 @@
+{
+  "name": "Bevacizumab Intravitreal",
+  "existing_id": "9fb6ccf1-d212-41b2-879a-08e5cfe20faa",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bevacizumab is a humanized monoclonal antibody that binds VEGF and prevents the interaction of VEGF with its receptors (Flt-1 and KDR) on the surface of endothelial cells; the interaction of VEGF with its receptors leads to endothelial cell proliferation and new blood vessel formation, so blocking this interaction regresses the vascularisation of tumours, normalises remaining tumour vasculature and inhibits formation of new tumour vasculature (FDA Mvasi label, MECHANISM OF ACTION; EMA Avastin product information, section 5.1). The same molecule, given by the intravitreal route, is used to inhibit VEGF signalling in the retina; however, bevacizumab is not formulated for intravitreal use and no FDA-approved ophthalmic indication exists for it (EMA Avastin product information, section 4.4; FDA Mvasi label, section 1). The EMA product information also records the systemic consequence of ocular anti-VEGF exposure: a reduction of circulating VEGF concentration has been demonstrated following intravitreal anti-VEGF therapy (EMA Avastin product information, section 4.4).",
+    "indications": [
+      "There is no approved intravitreal (ophthalmic) indication for bevacizumab. The FDA labels for Mvasi and Avastin list only oncological indications (metastatic colorectal cancer, non-squamous NSCLC, recurrent glioblastoma, metastatic renal cell carcinoma, cervical cancer, epithelial ovarian/fallopian tube/primary peritoneal cancer, and for Avastin also hepatocellular carcinoma) and contain no ophthalmic indication (FDA Mvasi label, section 1; FDA Avastin label, section 1)",
+      "The EMA product information states explicitly that Avastin is not formulated for intravitreal use, and that the ocular safety experience comes from unapproved intravitreal use of Avastin compounded from vials approved for intravenous administration in cancer patients (EMA Avastin product information, section 4.4)",
+      "Any intravitreal use is therefore off-label/compounded and must be justified and documented locally; the ocular indications for which compounded bevacizumab is used (for example neovascular age-related macular degeneration) are not stated in any of the labels consulted and are not asserted here"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance or to any of the excipients (EMA Avastin product information, section 4.3)",
+      "Hypersensitivity to Chinese Hamster Ovary (CHO) cell products or other recombinant human or humanised antibodies (EMA Avastin product information, section 4.3)",
+      "Pregnancy (EMA Avastin product information, sections 4.3 and 4.6)",
+      "Avastin is not formulated for intravitreal use (EMA Avastin product information, section 4.4). No route-specific contraindication for intravitreal administration is listed in the label; the ocular risks described for compounded intravitreal use (endophthalmitis, intraocular inflammation, retinal detachment, retinal pigment epithelial tear, raised intraocular pressure, intraocular haemorrhage) are warnings rather than listed contraindications (EMA Avastin product information, section 4.4)"
+    ],
+    "side_effects": [
+      "Ocular: infectious endophthalmitis (EMA Avastin product information, section 4.4)",
+      "Ocular: intraocular inflammation, including sterile endophthalmitis, uveitis and vitritis (EMA Avastin product information, section 4.4)",
+      "Ocular: retinal detachment and retinal pigment epithelial tear (EMA Avastin product information, section 4.4)",
+      "Ocular: increased intraocular pressure (EMA Avastin product information, section 4.4)",
+      "Ocular: intraocular haemorrhage, such as vitreous haemorrhage or retinal haemorrhage, and conjunctival haemorrhage (EMA Avastin product information, section 4.4)",
+      "Visual: some of these ocular reactions have resulted in various degrees of visual loss, including permanent blindness (EMA Avastin product information, section 4.4)",
+      "Systemic after intravitreal use: a reduction of circulating VEGF concentration has been demonstrated following intravitreal anti-VEGF therapy (EMA Avastin product information, section 4.4)",
+      "Systemic after intravitreal use: systemic adverse reactions including non-ocular haemorrhages and arterial thromboembolic reactions have been reported following intravitreal injection of VEGF inhibitors (EMA Avastin product information, section 4.4)",
+      "Eye disorders listed in the EMA adverse reaction table for intravenous use: eye disorder and increased lacrimation (EMA Avastin product information, section 4.8)"
+    ],
+    "dosage": {
+      "adult": null,
+      "geriatric": null,
+      "paediatric": null
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No interaction studies have been performed with bevacizumab, and no interactions are anticipated in humans because systemic concentrations of bevacizumab after intravenous administration are low; clinically relevant interactions of co-administered chemotherapy on bevacizumab pharmacokinetics were not observed in population pharmacokinetic analyses (EMA Avastin product information, section 4.5)",
+      "Because intravitreal bevacizumab reduces circulating VEGF, systemic effects consistent with VEGF blockade (non-ocular haemorrhage and arterial thromboembolic events) are recognised as possible after ocular dosing (EMA Avastin product information, section 4.4)"
+    ],
+    "monitoring": "Monitor for the ocular events described in the product information after compounded intravitreal administration: infectious endophthalmitis, intraocular inflammation (sterile endophthalmitis, uveitis, vitritis), retinal detachment, retinal pigment epithelial tear, increased intraocular pressure, and intraocular haemorrhage including vitreous or retinal haemorrhage and conjunctival haemorrhage (EMA Avastin product information, section 4.4). Because a reduction of circulating VEGF concentration has been demonstrated after intravitreal anti-VEGF therapy and systemic adverse reactions including non-ocular haemorrhages and arterial thromboembolic reactions have been reported after intravitreal injection of VEGF inhibitors, patients should also be observed for systemic bleeding and arterial thromboembolic events (EMA Avastin product information, section 4.4). Note that the label provides no route-specific monitoring schedule or laboratory monitoring requirement for compounded intravitreal use, and none is asserted here.",
+    "patient_counselling": "Advise patients who receive compounded intravitreal bevacizumab of the ocular risks described in the product information - infectious endophthalmitis, intraocular inflammation (sterile endophthalmitis, uveitis, vitritis), retinal detachment, retinal pigment epithelial tear, increased intraocular pressure and intraocular haemorrhage - and that some of these reactions have resulted in various degrees of visual loss, including permanent blindness (EMA Avastin product information, section 4.4). Advise patients of the possible systemic consequences of intravitreal anti-VEGF therapy: a reduction of circulating VEGF concentration has been demonstrated, and systemic adverse reactions including non-ocular haemorrhages and arterial thromboembolic reactions have been reported following intravitreal injection of VEGF inhibitors (EMA Avastin product information, section 4.4). Advise female patients that bevacizumab is contraindicated in pregnancy, that women of childbearing potential must use effective contraception during and up to 6 months after treatment, and that women must discontinue breast-feeding during therapy and not breast-feed for at least six months after the last dose (EMA Avastin product information, sections 4.3 and 4.6). Advise patients that fertility preservation strategies should be discussed before starting treatment because bevacizumab may impair female fertility (EMA Avastin product information, sections 4.4 and 4.8).",
+    "warnings": [
+      "Avastin is not formulated for intravitreal use (EMA Avastin product information, section 4.4)",
+      "Individual cases and clusters of serious ocular adverse reactions have been reported following unapproved intravitreal use of Avastin compounded from vials approved for intravenous administration in cancer patients: infectious endophthalmitis, intraocular inflammation such as sterile endophthalmitis, uveitis and vitritis, retinal detachment, retinal pigment epithelial tear, increased intraocular pressure, intraocular haemorrhage such as vitreous or retinal haemorrhage and conjunctival haemorrhage. Some of these reactions have resulted in various degrees of visual loss, including permanent blindness (EMA Avastin product information, section 4.4)",
+      "Systemic effects following intravitreal use: a reduction of circulating VEGF concentration has been demonstrated following intravitreal anti-VEGF therapy, and systemic adverse reactions including non-ocular haemorrhages and arterial thromboembolic reactions have been reported following intravitreal injection of VEGF inhibitors (EMA Avastin product information, section 4.4)",
+      "Avastin is contraindicated in pregnancy; IgGs are known to cross the placenta and bevacizumab is anticipated to inhibit angiogenesis in the foetus, with foetal abnormalities observed in the postmarketing setting in women treated with bevacizumab alone or in combination with known embryotoxic chemotherapeutics (EMA Avastin product information, sections 4.3, 4.6 and 4.8)",
+      "Avastin may impair female fertility, so fertility preservation strategies should be discussed with women of childbearing potential prior to starting treatment (EMA Avastin product information, sections 4.4 and 4.8)",
+      "The compounding source vial is labelled for intravenous administration in cancer patients; the product information's warnings and precautions for intravenous use (for example hypersensitivity and infusion reactions, hypertension, thromboembolism and proteinuria) arise from the same molecule and remain relevant to the compounding process itself (EMA Avastin product information, sections 4.4 and 4.5)"
+    ],
+    "precautions": [
+      "Avastin is not formulated for intravitreal use, and the described ocular experience comes from unapproved compounded use of intravenous vials; the safe preparation and administration of a compounded ophthalmic product is the responsibility of the compounding pharmacy and the treating ophthalmologist (EMA Avastin product information, section 4.4)",
+      "Patients should be monitored for the ocular and systemic events listed under fields.monitoring; the label does not specify a route-specific monitoring protocol for compounded intravitreal use (EMA Avastin product information, section 4.4)",
+      "Traceability: in order to improve traceability of biological medicinal products, the name and batch number of the administered product should be clearly recorded - directly relevant to compounded products prepared from Avastin vials (EMA Avastin product information, section 4.4)",
+      "Because Avastin infusions should not be administered or mixed with glucose solutions and the product must not be mixed with other medicinal products except those listed in section 6.6, these dilution and compatibility restrictions of the source product apply to the compounded preparation (EMA Avastin product information, sections 4.2 and 6.6)"
+    ],
+    "serious_adverse_reactions": [
+      "Infectious endophthalmitis (EMA Avastin product information, section 4.4)",
+      "Intraocular inflammation: sterile endophthalmitis, uveitis and vitritis (EMA Avastin product information, section 4.4)",
+      "Retinal detachment and retinal pigment epithelial tear (EMA Avastin product information, section 4.4)",
+      "Intraocular haemorrhage (vitreous, retinal and conjunctival haemorrhage) and increased intraocular pressure (EMA Avastin product information, section 4.4)",
+      "Visual loss, including permanent blindness, resulting from the above ocular reactions (EMA Avastin product information, section 4.4)",
+      "Non-ocular haemorrhage and arterial thromboembolic reactions reported after intravitreal injection of VEGF inhibitors (EMA Avastin product information, section 4.4)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no clinical trial data on the use of bevacizumab in pregnant women. IgGs are known to cross the placenta, and bevacizumab is anticipated to inhibit angiogenesis in the foetus, and is thus suspected to cause serious birth defects when administered during pregnancy. In the postmarketing setting, cases of foetal abnormalities have been observed in women treated with bevacizumab alone or in combination with known embryotoxic chemotherapeutics. Avastin is contraindicated in pregnancy, and women of childbearing potential must use effective contraception during treatment and for up to 6 months afterwards (EMA Avastin product information, sections 4.3, 4.6 and 4.8).",
+    "lactation_guidance": "It is not known whether bevacizumab is excreted in human milk. As maternal IgG is excreted in milk and bevacizumab could harm infant growth and development, women must discontinue breast-feeding during therapy and not breast-feed for at least six months following the last dose (EMA Avastin product information, section 4.6).",
+    "overdose": "The highest dose tested in humans (20 mg/kg of body weight, intravenous every 2 weeks) was associated with severe migraine in several patients; this figure relates to intravenous dosing and the label provides no overdose information for intravitreal use (EMA Avastin product information, section 4.9).",
+    "pharmacokinetics": "The intravenous pharmacokinetic profile of bevacizumab is linear at doses ranging from 1 to 10 mg/kg, with an initial infusion duration of 90 minutes; the typical central volume is 2.73 L in females and 3.28 L in males, clearance averages 0.188 L/day in females and 0.220 L/day in males, and the two-compartment elimination half-life is 18 days for a typical female and 20 days for a typical male patient (EMA Avastin product information, section 5.2). For the ocular route, the label records only that a reduction of circulating VEGF concentration has been demonstrated following intravitreal anti-VEGF therapy; no intravitreal pharmacokinetic parameters are given (EMA Avastin product information, section 4.4).",
+    "clinical_pearls": [
+      "There is no FDA-approved intravitreal bevacizumab product or indication. The EMA product information states plainly that Avastin is not formulated for intravitreal use and that the ocular safety data derive from unapproved compounded use of the intravenous vial (EMA Avastin product information, section 4.4)",
+      "Intravitreal anti-VEGF exposure is not confined to the eye: circulating VEGF falls and systemic haemorrhagic and arterial thromboembolic events have been reported, so the systemic risk profile of bevacizumab must be considered even for an eye-only injection (EMA Avastin product information, section 4.4)",
+      "The ocular toxicity pattern to watch for is endophthalmitis (including infection of a compounded preparation), intraocular inflammation (uveitis, vitritis), retinal detachment, retinal pigment epithelial tear, raised intraocular pressure and vitreous/retinal haemorrhage (EMA Avastin product information, section 4.4)",
+      "Bevacizumab is contraindicated in pregnancy and breast-feeding must be stopped during and for at least six months after therapy (EMA Avastin product information, sections 4.3 and 4.6)",
+      "Batch and product traceability should be recorded for every compounded dose (EMA Avastin product information, section 4.4)"
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Avastin is not formulated for intravitreal use; ophthalmic dosing relies on compounding the intravenous presentation (100 mg/4 mL or 400 mg/16 mL, 25 mg/mL) into an ophthalmic preparation, and the EMA product information does not give any intravitreal dilution, volume, injection technique or posology (EMA Avastin product information, sections 4.2, 4.4 and 6.6). When the intravenous presentation is used, the product must not be mixed with glucose solutions and must not be mixed with other medicinal products except those listed in section 6.6, and the name and batch number of the administered product should be clearly recorded for traceability (EMA Avastin product information, sections 4.2, 4.4 and 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Mvasi (bevacizumab-awwb) injection, MECHANISM OF ACTION section; EMA Avastin product information, sections 4.4 and 5.1",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Mvasi, section 1 (oncology indications only); FDA label, Avastin, section 1; EMA Avastin product information, section 4.4 (Avastin is not formulated for intravitreal use)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "EMA Avastin product information, sections 4.3, 4.4 and 4.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "EMA Avastin product information, sections 4.4 (Eye disorders; Systemic effects following intravitreal use) and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "The EMA Avastin product information gives no intravitreal posology and states that Avastin is not formulated for intravitreal use (sections 4.2 and 4.4)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "No intravitreal posology is given in the EMA Avastin product information (sections 4.2 and 4.4)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "The EMA Avastin product information gives no intravitreal posology in children and states that safety and efficacy in children aged less than 18 years have not been established (sections 4.2 and 4.4)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "EMA Avastin product information, sections 4.4 and 4.5",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "EMA Avastin product information, section 4.4 (ocular and systemic effects described for compounded intravitreal use)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "EMA Avastin product information, sections 4.3, 4.4, 4.6 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "EMA Avastin product information, sections 4.3, 4.4, 4.5, 4.6 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "EMA Avastin product information, sections 4.2, 4.4 and 6.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EMA Avastin product information, section 4.4",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the EMA Avastin product information",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The EMA Avastin product information gives narrative pregnancy information (section 4.6) without a letter pregnancy category",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "EMA Avastin product information, sections 4.3, 4.6 and 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "EMA Avastin product information, section 4.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "EMA Avastin product information, section 4.9 (intravenous dosing data; no intravitreal overdose information)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "EMA Avastin product information, sections 4.4 and 5.2",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "EMA Avastin product information, sections 4.3, 4.4, 4.5, 4.6 and 6.6",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "No FDA-approved intravitreal bevacizumab product exists; the source product for compounded ocular use is Avastin (Genentech) or a bevacizumab biosimilar in the intravenous presentation, both of which are labelled for intravenous administration only (FDA Mvasi label, section 3; FDA Avastin label, section 3)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=939b5d1f-9fb2-4499-80ef-0607aa6b114e"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The EMA Avastin product information contains no boxed warning; the warnings and contraindications for the molecule are recorded in fields.warnings and fields.contraindications",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "The EMA Avastin product information states that safety and efficacy have not been studied in patients with renal impairment and that no pharmacokinetic trials have been conducted in renally impaired patients (section 5.2); no intravitreal dose adjustment is described",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The EMA Avastin product information states that safety and efficacy have not been studied in patients with hepatic impairment and that no pharmacokinetic trials have been conducted in hepatically impaired patients (section 5.2); no intravitreal dose adjustment is described",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "EMA Avastin product information, sections 4.2, 4.4 and 6.6; FDA label, Mvasi, section 3 (DOSAGE FORMS AND STRENGTHS)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "EMA Beovu product information (used to document that Beovu is not a bevacizumab product: 'One ml solution for injection contains 120 mg of brolucizumab', a different molecule, and that it therefore cannot serve as the labelled intravitreal bevacizumab product)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/beovu-epar-product-information_en.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "dosage (no intravitreal posology, dilution, injection volume or interval is given in the EMA Avastin product information, which states that Avastin is not formulated for intravitreal use; no labelled intravitreal bevacizumab product was found on DailyMed)",
+    "dosage.adult (not populated - see dosage)",
+    "dosage.geriatric (no intravitreal dosing information is provided for elderly patients)",
+    "dosage.paediatric (the EMA product information states that safety and efficacy in children under 18 have not been established and gives no posology)",
+    "adult_dosing (not populated; no intravitreal regimen is labelled)",
+    "pediatric_dosing (not populated; no paediatric intravitreal regimen is labelled)",
+    "contraindications.intravitreal_specific (no route-specific contraindication for intravitreal administration is listed in the label; only the general molecule contraindications apply)",
+    "pregnancy_category (the EMA product information gives narrative pregnancy information without a letter category)",
+    "renal_dose_adjustment (not studied per the EMA product information; no intravitreal dose adjustment is described)",
+    "hepatic_dose_adjustment (not studied per the EMA product information; no intravitreal dose adjustment is described)",
+    "WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries (not retrievable in this environment; no eEML/KEML-derived field is claimed)"
+  ],
+  "notes": "The table stores this agent as 'Bevacizumab Intravitreal' (drug_class: Ophthalmic agent). The existing row previously carried generic ophthalmic boilerplate (glaucoma treatment, ocular infections, diagnostic mydriasis, topical beta-blocker interactions) that is not bevacizumab-specific and has been superseded. Critical correction to the task brief: Beovu is not a bevacizumab product - the EMA Beovu product information states that one ml contains 120 mg of brolucizumab, a different molecule (an anti-VEGF, but not bevacizumab). No FDA-approved intravitreal bevacizumab exists: the FDA labels for Avastin and Mvasi carry oncology indications only, and the EMA Avastin product information states explicitly that 'Avastin is not formulated for intravitreal use' and that ocular safety data come from unapproved compounded use of intravenous vials. This monograph therefore documents the molecule's mechanism, the ocular and systemic risks that the EMA product information attaches to compounded intravitreal use, and the pregnancy/breast-feeding contraindications, while leaving the intravitreal dose as null because no authoritative source consulted states one. This monograph is deliberately separate from the intravenous 'Bevacizumab' monograph."
+}

@@ -1,0 +1,207 @@
+{
+  "name": "Bedaquiline",
+  "existing_id": "f1192a0e-cfcf-430e-9545-aabf276d398d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bedaquiline is a diarylquinoline antimycobacterial drug. It inhibits mycobacterial ATP (adenosine 5'-triphosphate) synthase by binding to subunit c of the enzyme, which is essential for the generation of energy in Mycobacterium tuberculosis (FDA SIRTURO label, sections 12.1 and 12.4). Bedaquiline is metabolised by CYP3A4 to the active metabolite M2 (N-monodesmethyl), which has lower average exposure (23% to 31%) in humans and 3-fold to 6-fold lower antimycobacterial activity than the parent compound, but whose plasma concentrations correlate with QTc prolongation (FDA SIRTURO label, section 12.2). Resistance is associated with modification of the atpE target gene and/or upregulation of the MmpS5-MmpL5 efflux pump (Rv0678 mutations); isolates with these efflux-based mutations are less susceptible to clofazimine (FDA SIRTURO label, section 12.4).",
+    "indications": [
+      "In combination with other antimycobacterial drugs, for the treatment of adult and pediatric patients (2 years and older, weighing at least 8 kg) with pulmonary tuberculosis (TB) due to Mycobacterium tuberculosis resistant to at least rifampin and isoniazid (FDA SIRTURO label, section 1)",
+      "Limitations of use: do not use for latent M. tuberculosis infection, drug-sensitive pulmonary TB, extra-pulmonary TB, or infections caused by non-tuberculous mycobacteria (FDA SIRTURO label, section 1)"
+    ],
+    "contraindications": [
+      "Intravenous/oral SIRTURO: none. The FDA labelling states 'Contraindications: None' (FDA SIRTURO label, section 4)."
+    ],
+    "side_effects": [
+      "Cardiac: QTc prolongation (61% of patients in the 40-week SIRTURO arm of Study 4; 5% had QTc of 500 ms or greater when given with the QTc-prolonging drugs clofazimine and levofloxacin), plus palpitations (10%) and chest pain (16%) (FDA SIRTURO label, sections 5.1, 6.1)",
+      "Hepatic: increased transaminases (30% in the 40-week SIRTURO arm of Study 4; 21% had transaminase elevations of at least 3 times the upper limit of normal) (FDA SIRTURO label, sections 5.4, 6.1)",
+      "Gastrointestinal: nausea (54%), vomiting (53%), abdominal pain (28%), diarrhea (6%) (FDA SIRTURO label, section 6.1)",
+      "Musculoskeletal: arthralgia (44%), myalgia (9%), paresthesia (8%) (FDA SIRTURO label, section 6.1)",
+      "Central nervous system: dizziness (18%), headache (17%), insomnia (14%) (FDA SIRTURO label, section 6.1)",
+      "Dermatologic: pruritus (27%), rash (14%), dry skin (12%) (FDA SIRTURO label, section 6.1)",
+      "Respiratory: hemoptysis (11% in Study 1), dyspnea (FDA SIRTURO label, sections 6.1)",
+      "Blood amylase increased (3% in Study 1) (FDA SIRTURO label, section 6.1)",
+      "Pediatric patients 12 years to less than 18 years: arthralgia (40%), nausea (13%), abdominal pain (13%); patients 5 years to less than 12 years: elevation in liver enzymes (33%); patients 2 years to less than 5 years: vomiting (20%) (FDA SIRTURO label, section 6.1)",
+      "Mortality: deaths occurred in 11/211 (5.2%) patients in the 40-week SIRTURO arm versus 8/202 (4.0%) in the active-control arm of Study 4 at Week 132; overall mortality for patients treated with SIRTURO was 17/383 (4.4%) (FDA SIRTURO label, sections 5.2, 6.1)"
+    ],
+    "dosage": {
+      "adult": "400 mg (4 of the 100 mg tablets or 20 of the 20 mg tablets) orally once daily for Weeks 1 and 2, followed by 200 mg (2 of the 100 mg tablets or 10 of the 20 mg tablets) orally three times per week, with at least 48 hours between doses, for Weeks 3 to 24. Total duration of SIRTURO treatment is 24 weeks; if treatment is considered necessary beyond 24 weeks it may be continued at 200 mg three times per week. Tablets must be taken with food. Administer by directly observed therapy (FDA SIRTURO label, sections 2.1, 2.3 and 2.6).",
+      "geriatric": "Clinical studies of SIRTURO did not include sufficient numbers of patients 65 years of age and older to determine whether they respond differently from younger adult patients; in a population pharmacokinetic analysis age was not found to influence the pharmacokinetics of bedaquiline, and in five patients aged 65 to 69 years systemic exposure was similar to other adults (FDA SIRTURO label, sections 8.5 and 12.3).",
+      "paediatric": "Weight-based dosing for patients 2 years and older weighing at least 8 kg: 8 kg to less than 10 kg, 80 mg (4 of the 20 mg tablets) once daily for Weeks 1 and 2 then 40 mg three times per week for Weeks 3 to 24; 10 kg to less than 15 kg, 120 mg once daily then 60 mg three times per week; 15 kg to less than 30 kg, 200 mg once daily then 100 mg three times per week; 30 kg or more, 400 mg once daily then 200 mg three times per week. Safety and effectiveness in pediatric patients less than 2 years of age and/or weighing less than 8 kg have not been established (FDA SIRTURO label, sections 2.4 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong and moderate CYP3A4 inducers (e.g. efavirenz and rifamycins including rifampin, rifapentine and rifabutin): coadministration decreases systemic exposure of bedaquiline and may reduce its therapeutic effect; avoid coadministration (FDA SIRTURO label, sections 5.5 and 7.1)",
+      "CYP3A4 inhibitors: coadministration increases bedaquiline exposure and may increase the risk of adverse reactions; closely monitor patient safety (e.g. liver function); no dose adjustment of SIRTURO is needed (FDA SIRTURO label, sections 5.5 and 7.1)",
+      "QTc interval prolonging drugs: additional QTc prolongation was observed with combination treatment; monitor ECGs if coadministered and discontinue SIRTURO if there is serious ventricular arrhythmia or QTc greater than 500 ms (FDA SIRTURO label, sections 5.1 and 7.3)",
+      "Other antimicrobials: no dose adjustment of isoniazid or pyrazinamide is required during coadministration, and no major impact of SIRTURO on the pharmacokinetics of ethambutol, kanamycin, pyrazinamide, ofloxacin or cycloserine was observed (FDA SIRTURO label, section 7.2)",
+      "Lopinavir/ritonavir: in Study 4, coadministration increased bedaquiline exposure, with an estimated 68% increase in mean AUC over 168 hours at Week 24 in HIV-positive Black patients receiving lopinavir/ritonavir (FDA SIRTURO label, section 12.3)"
+    ],
+    "monitoring": "Before treatment obtain susceptibility information for the background regimen against the M. tuberculosis isolate if possible, an ECG, serum potassium, calcium and magnesium concentrations, and liver enzymes (FDA SIRTURO label, section 2.2). Obtain an ECG before initiation, 2 weeks after initiation, during treatment, as clinically indicated, and at the expected time of maximum increase in the QTc interval of concomitantly administered QTc-prolonging drugs; obtain electrolytes at baseline and during treatment and correct them as clinically indicated (FDA SIRTURO label, section 5.1). Monitor symptoms of hepatotoxicity (fatigue, anorexia, nausea, jaundice, dark urine, liver tenderness, hepatomegaly) and laboratory tests (ALT, AST, alkaline phosphatase, bilirubin) at baseline, monthly while on treatment and as needed; test for viral hepatitis and discontinue other hepatotoxic medications if new or worsening liver dysfunction occurs (FDA SIRTURO label, section 5.4). Monitor for signs of bedaquiline-related adverse reactions, such as hepatotoxicity, in breastfed infants (FDA SIRTURO label, section 8.2).",
+    "patient_counselling": "Advise patients that serious side effects can occur with SIRTURO, including heart rhythm abnormalities, death and hepatitis, and that additional side effects may include nausea, vomiting, joint pain, increased transaminases, dizziness, headache, myalgia, diarrhea, increased blood amylase, hemoptysis, chest pain, anorexia, rash and abdominal pain; additional testing may be needed to monitor or reduce the likelihood of adverse effects. Emphasise compliance with the full course of therapy: skipping doses or not completing the full course may decrease effectiveness and increase the likelihood of drug resistance. If a dose is missed during the first 2 weeks, do not take a double dose; from Week 3 onwards take the missed dose as soon as possible and resume the three-times-weekly schedule, ensuring at least 24 hours between each intake and that the total dose in any 7-day period does not exceed the recommended weekly dose. Always take SIRTURO with food. Instruct patients to abstain from alcohol, hepatotoxic medications and herbal products and to discuss all other medicines and medical conditions with the prescriber before starting treatment. Do not breastfeed during treatment and for 27.5 months after the last dose unless infant formula is not available; if an infant is exposed through breast milk, monitor for bedaquiline-related adverse reactions such as hepatotoxicity (yellowing of the eyes and changes in the colour of the urine or stool) (FDA SIRTURO label, section 17 and Medication Guide).",
+    "warnings": [
+      "WARNING (boxed): QTc prolongation. SIRTURO prolongs the QTc interval; use with drugs that prolong the QTc interval may cause additive QTc prolongation; monitor ECGs; discontinue SIRTURO if significant ventricular arrhythmia or a QTc interval greater than 500 ms develops (FDA SIRTURO label, Boxed Warning and section 5.1)",
+      "Mortality imbalance in clinical trials: an increased risk of death was seen in the SIRTURO treatment group (9/79, 11.4%) versus placebo (2/81, 2.5%) in Study 1 based on the 120-week visit window; the imbalance is unexplained (FDA SIRTURO label, section 5.2)",
+      "Risk of development of resistance to bedaquiline in M. tuberculosis: bedaquiline must only be used in an appropriate combination regimen to reduce this risk (FDA SIRTURO label, section 5.3)",
+      "Hepatotoxicity: more hepatic-related adverse reactions were reported with SIRTURO plus other TB drugs than with the other TB drugs alone; alcohol and other hepatotoxic drugs should be avoided, especially in patients with impaired hepatic function (FDA SIRTURO label, section 5.4)",
+      "Drug interactions: avoid moderate or strong CYP3A4 inducers such as efavirenz and rifamycins; closely monitor for adverse reactions (e.g. liver function) when coadministered with CYP3A4 inhibitors (FDA SIRTURO label, section 5.5)"
+    ],
+    "precautions": [
+      "Administer SIRTURO by directly observed therapy (DOT) and emphasise the need for compliance with the full course of therapy (FDA SIRTURO label, section 2.1)",
+      "Use only in combination with at least three other drugs to which the patient's TB isolate has been shown to be susceptible in vitro; if in vitro testing results are unavailable, treatment may be initiated in combination with at least four other drugs to which the isolate is likely to be susceptible (FDA SIRTURO label, section 2.1)",
+      "SIRTURO tablets must be taken with food; a high-fat meal increased Cmax and AUC by 2-fold, so food enhances oral bioavailability (FDA SIRTURO label, sections 2.1, 2.6 and 12.3)",
+      "SIRTURO 20 mg tablets are functionally scored and may be split into two 10 mg halves; they may also be dispersed in water, mixed with a beverage or soft food, crushed and mixed with soft food, or administered through a feeding tube (8 French or greater) (FDA SIRTURO label, sections 2.1 and 2.6)",
+      "Discontinue SIRTURO if transaminase elevations are accompanied by total bilirubin elevation greater than two times the upper limit of normal, if transaminase elevations are greater than eight times the upper limit of normal, or if they are greater than five times the upper limit of normal and persist beyond two weeks (FDA SIRTURO label, section 5.4)",
+      "Use with caution, and only when benefits outweigh risks, in severe hepatic impairment, with clinical monitoring for bedaquiline-related adverse reactions (FDA SIRTURO label, sections 8.6 and 12.3)",
+      "Use with caution in severe renal impairment or end-stage renal disease requiring haemodialysis or peritoneal dialysis; monitor for adverse reactions (FDA SIRTURO label, sections 8.7 and 12.3)"
+    ],
+    "serious_adverse_reactions": [
+      "QTc prolongation (FDA SIRTURO label, sections 5.1 and 6)",
+      "Mortality imbalance in clinical trials (FDA SIRTURO label, sections 5.2 and 6.1)",
+      "Hepatotoxicity (FDA SIRTURO label, sections 5.4 and 6)",
+      "Transaminase elevations (FDA SIRTURO label, section 6.1)",
+      "Serious and fatal infections occurring in patients receiving immunosuppressive agents, including SIRTURO (FDA SIRTURO label, section 5.4 and Clinical Pharmacology)"
+    ],
+    "food_interactions": [
+      "SIRTURO must be taken with food. A high-fat meal (22 g fat, 558 kcal) increased bedaquiline Cmax and AUC by 2-fold; taking SIRTURO with food enhances oral bioavailability (FDA SIRTURO label, sections 2.6 and 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data from published literature on SIRTURO use in pregnant women are insufficient to evaluate a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes; there are also risks associated with active TB during pregnancy. Reproduction studies in rats and rabbits revealed no evidence of harm to the fetus from oral administration of bedaquiline during organogenesis at exposures up to 6 times the clinical dose based on AUC. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively (FDA SIRTURO label, section 8.1). The FDA label does not state a pregnancy category and no contraception recommendation is given for patients of reproductive potential (FDA SIRTURO label, sections 8.1 and 8.3).",
+    "lactation_guidance": "Data from a published clinical lactation study show higher bedaquiline concentrations in breast milk than in maternal plasma, suggesting accumulation in breast milk; data are insufficient to determine effects on the breastfed infant. Because of the potential for serious adverse reactions in a breastfed infant, including hepatotoxicity, advise patients that breastfeeding is not recommended during treatment with SIRTURO and for 27.5 months (5 times the half-life) after the last dose unless infant formula is not available. If an infant is exposed through breast milk, monitor for signs of bedaquiline-related adverse reactions such as hepatotoxicity (FDA SIRTURO label, section 8.2).",
+    "overdose": "There is no experience with the treatment of acute overdose with SIRTURO. Take general measures to support basic vital functions including monitoring of vital signs and ECG (QTc interval) in case of deliberate or accidental overdose, and contact a poison control centre for the latest overdose management recommendations. Since bedaquiline is highly protein-bound, dialysis is not likely to significantly remove bedaquiline from plasma (FDA SIRTURO label, section 10).",
+    "pharmacokinetics": "Bedaquiline is more than 99.9% bound to human plasma protein, with an apparent central volume of distribution of approximately 117 L and an apparent clearance of 2.62 L/h. After reaching Cmax, bedaquiline concentrations decline tri-exponentially, with a terminal half-life of approximately 5.5 months for both bedaquiline and the N-monodesmethyl metabolite M2. Bedaquiline is metabolised to M2 by CYP3A4, with relative exposure of M2 versus bedaquiline of 23% to 31%. Fecal excretion is the major route of elimination and less than or equal to 0.001% of the dose is excreted unchanged in urine. In a population pharmacokinetic analysis, systemic exposure (AUC) was 34% lower in Black patients than in patients of other race categories, without association with lower efficacy; exposure was similar with HIV coinfection. Cmax and AUC increased proportionally up to 700 mg (FDA SIRTURO label, section 12.3).",
+    "clinical_pearls": [
+      "Bedaquiline must never be used as monotherapy; it is always given with at least three (or four, if susceptibility results are unavailable) other active TB drugs to prevent selection of bedaquiline resistance (FDA SIRTURO label, sections 2.1 and 5.3)",
+      "Food is essential: a high-fat meal roughly doubles bedaquiline exposure, so the label requires the tablets to be taken with food (FDA SIRTURO label, sections 2.6 and 12.3)",
+      "The active metabolite M2 has 3-fold to 6-fold lower antimycobacterial activity than bedaquiline but its plasma concentrations correlate with QTc prolongation (FDA SIRTURO label, section 12.2)",
+      "Isolates with Rv0678 (efflux pump) mutations are less susceptible to clofazimine; phenotypically bedaquiline-resistant isolates should be tested for cross-resistance to clofazimine if clofazimine is part of the regimen (FDA SIRTURO label, section 12.4)",
+      "The long terminal half-life of approximately 5.5 months means drug and metabolite persist for months after dosing ends, which is one reason for the prolonged breastfeeding restriction (FDA SIRTURO label, sections 12.3 and 8.2)",
+      "Study 4 showed a favourable outcome at Week 76 in 82.7% of the 40-week all-oral SIRTURO arm versus 71.1% in the active-control arm, with a 7.2% QTc elevation rate and 30% transaminase elevations in the SIRTURO arm (FDA SIRTURO label, sections 6.1 and 14.1)"
+    ],
+    "brand_names": ["SIRTURO"],
+    "black_box_warnings": [
+      "QTc prolongation: SIRTURO prolongs the QTc interval. Use with drugs that prolong the QTc interval may cause additive QTc prolongation. Monitor ECGs. Discontinue SIRTURO if significant ventricular arrhythmia or a QTc interval greater than 500 ms develops (FDA SIRTURO label, Boxed Warning and section 5.1)."
+    ],
+    "renal_dose_adjustment": "No dose adjustment is required in patients with mild or moderate renal impairment; renal excretion of unchanged bedaquiline is not substantial (less than or equal to 0.001%) and creatinine clearance did not influence bedaquiline pharmacokinetics in population pharmacokinetic analysis. In severe renal impairment or end-stage renal disease requiring haemodialysis or peritoneal dialysis, use with caution and monitor for adverse reactions (FDA SIRTURO label, sections 8.7 and 12.3).",
+    "hepatic_dose_adjustment": "No dose adjustment is necessary in patients with mild or moderate hepatic impairment; after a single 400 mg dose, mean exposure to bedaquiline and M2 in Child-Pugh B patients was approximately 20% lower than in healthy adults. SIRTURO has not been studied in severe hepatic impairment and should be used with caution only when the benefits outweigh the risks, with clinical monitoring (FDA SIRTURO label, sections 8.6 and 12.3).",
+    "administration_instructions": "Administer by directly observed therapy. Take SIRTURO 100 mg tablets whole with water, with food. SIRTURO 20 mg tablets may be swallowed whole or split at the score line into two 10 mg halves; for patients unable to swallow intact tablets, disperse a maximum of 5 tablets in 5 mL of water, mix until completely dispersed, optionally mix with at least 5 mL of beverage or 1 teaspoonful of soft food and administer immediately, or crush and mix with soft food, or disperse 5 tablets or less in 50 mL of non-carbonated water for administration through a feeding tube of 8 French or greater followed by a 25 mL water flush; take with food in addition to any beverage or soft food used. Storage: 20 mg tablets in the original container with desiccant, protected from light and moisture, at 25 degrees C with excursions permitted between 15 and 30 degrees C; 100 mg tablets in the original container or, if dispensed outside it, in a tight light-resistant container with an expiration date not exceeding 3 months, protected from light, at 25 degrees C with excursions permitted from 15 to 30 degrees C (FDA SIRTURO label, sections 2.6 and 16.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, SIRTURO (bedaquiline fumarate) tablets, Janssen Products LP, sections 12.1, 12.2 and 12.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, SIRTURO, section 1 (Indications and Usage, including Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, SIRTURO, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, SIRTURO, sections 5.1, 5.2, 5.4, 6.1 and Tables 3 and 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, SIRTURO, sections 2.1, 2.3, 2.4, 2.6, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, SIRTURO, sections 5.5, 7.1, 7.2, 7.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, SIRTURO, sections 2.2, 5.1, 5.4 and 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, SIRTURO, section 17 (Patient Counseling Information) and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, SIRTURO, Boxed Warning and sections 5.1 to 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, SIRTURO, sections 2.1, 2.6, 5.4, 8.6, 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, SIRTURO, sections 5.1, 5.2, 5.4, 6 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, SIRTURO, sections 2.6 and 12.3 (food effect on bioavailability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, SIRTURO, sections 8.1 and 8.3 (no pregnancy category stated in the label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, SIRTURO, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, SIRTURO, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, SIRTURO, section 12.3 (Table 5 and Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, SIRTURO, sections 2.1, 2.6, 6.1, 8.2, 12.2, 12.3, 12.4 and 14.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, SIRTURO, sections 3 and 16.1 (brand and dosage strengths)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, SIRTURO, Boxed Warning (QTc Prolongation) and section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, SIRTURO, sections 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, SIRTURO, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, SIRTURO, sections 2.6 and 16.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534c9ae-4948-4cf4-9f66-222a99db6d0e"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA SIRTURO label does not assign a pregnancy category; it uses the Pregnancy and Lactation Labeling Rule risk-summary format in section 8.1)"
+  ],
+  "notes": "The table stores this agent as 'Bedaquiline'; the US product is SIRTURO (bedaquiline fumarate) 20 mg and 100 mg tablets (DailyMed SPL published Nov 17, 2025). Bedaquiline is a WHO Group A priority drug for MDR/RR-TB and is the only diarylquinoline in its class; the content above is drawn entirely from the FDA label and is drug-specific, not class boilerplate. Two content points deserve reviewer attention: (1) the label carries a boxed warning for QTc prolongation only, while a mortality imbalance in Study 1 is a prominent section 5.2 warning rather than a boxed warning; (2) the label gives no contraception recommendation and no pregnancy category, so pregnancy_guidance is limited to the label's risk summary and animal data, and the 27.5-month (5 half-lives) breastfeeding restriction is a distinctive and easily missed instruction. No generic filler has been used; every non-null field maps to a numbered section of the FDA label."
+}

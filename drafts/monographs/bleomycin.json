@@ -1,0 +1,229 @@
+{
+  "name": "Bleomycin",
+  "existing_id": "fe750aae-9573-4cb1-a761-536ade005d00",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Although the exact mechanism of action of bleomycin is unknown, available evidence indicates that the main mode of action is the inhibition of DNA synthesis with some evidence of lesser inhibition of RNA and protein synthesis. Bleomycin is known to cause single, and to a lesser extent, double-stranded breaks in DNA. In in vitro and in vivo experiments, bleomycin has been shown to cause cell cycle arrest in G2 and in mitosis. When administered into the pleural cavity in the treatment of malignant pleural effusion, bleomycin acts as a sclerosing agent (FDA label, Bleomycin for Injection, USP (Fresenius Kabi), CLINICAL PHARMACOLOGY, Mechanism of Action).",
+    "indications": [
+      "Squamous cell carcinoma of the head and neck (including mouth, tongue, tonsil, nasopharynx, oropharynx, sinus, palate, lip, buccal mucosa, gingivae, epiglottis, skin, larynx), penis, cervix and vulva; the response to bleomycin is poorer in patients with previously irradiated head and neck cancer (FDA label, Bleomycin for Injection, USP, INDICATIONS AND USAGE).",
+      "Lymphomas: Hodgkin's disease and non-Hodgkin's lymphoma (FDA label, INDICATIONS AND USAGE).",
+      "Testicular carcinoma: embryonal cell, choriocarcinoma and teratocarcinoma (FDA label, INDICATIONS AND USAGE).",
+      "Malignant pleural effusion: bleomycin is effective as a sclerosing agent for the treatment of malignant pleural effusion and prevention of recurrent pleural effusions (FDA label, INDICATIONS AND USAGE).",
+      "WHO Model List of Essential Medicines, 23rd List (2023), section 8.2.1 Cytotoxic medicines (Complementary List): bleomycin is listed for Kaposi sarcoma, ovarian germ cell tumour and testicular germ cell tumour (WHO eEML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023, item 9.2.1.3: bleomycin powder for injection, 15 mg vial (as sulphate), level of use 5, with footnote 206 stating use in Hodgkin lymphoma, Kaposi sarcoma, ovarian and testicular germ cell tumour (KEML 2023)."
+    ],
+    "contraindications": [
+      "Patients who have demonstrated a hypersensitive or an idiosyncratic reaction to bleomycin (FDA label, Bleomycin for Injection, USP, CONTRAINDICATIONS).",
+      "No other formal contraindication is listed in the FDA label used; the label instead states that bleomycin should be used with extreme caution in patients with significant impairment of renal function or compromised pulmonary function (FDA label, WARNINGS)."
+    ],
+    "side_effects": [
+      "Pulmonary: the most serious side effects are pulmonary adverse reactions, occurring in approximately 10% of treated patients; the most frequent presentation is pneumonitis, occasionally progressing to pulmonary fibrosis, and approximately 1% of patients treated have died of pulmonary fibrosis (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "The earliest symptom associated with bleomycin pulmonary toxicity is dyspnoea and the earliest sign is fine rales; radiographically, bleomycin-induced pneumonitis produces nonspecific patchy opacities, usually of the lower lung fields, and the most common changes in pulmonary function tests are a decrease in total lung volume and a decrease in vital capacity (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Idiosyncratic reaction: in approximately 1% of the lymphoma patients treated with bleomycin, a reaction similar to anaphylaxis has been reported; it may be immediate or delayed for several hours, usually occurs after the first or second dose, and consists of hypotension, mental confusion, fever, chills and wheezing (FDA label, ADVERSE REACTIONS, Idiosyncratic Reactions).",
+      "Integument and mucous membranes: reported in approximately 50% of treated patients, consisting of erythema, rash, striae, vesiculation, hyperpigmentation and tenderness of the skin; hyperkeratosis, nail changes, alopecia, pruritus and stomatitis have also been reported, and it was necessary to discontinue bleomycin therapy in 2% of treated patients because of these toxicities; scleroderma-like skin changes have been reported (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes).",
+      "Other: fever, chills and vomiting; anorexia and weight loss, which may persist long after termination of the medication; pain at tumour site, phlebitis and other local reactions; malaise (FDA label, ADVERSE REACTIONS, Other).",
+      "Intrapleural administration has been associated with local pain, and hypotension possibly requiring symptomatic treatment has been reported (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes).",
+      "Vascular toxicities coincident with the use of bleomycin in combination with other antineoplastic agents have been reported, including myocardial infarction, cerebrovascular accident, thrombotic microangiopathy (HUS) and cerebral arteritis, and Raynaud's phenomenon has been reported (FDA label, ADVERSE REACTIONS, Other)."
+    ],
+    "dosage": {
+      "adult": "Because of the possibility of an anaphylactoid reaction, lymphoma patients should be treated with 2 units or less for the first 2 doses; if no acute reaction occurs, the regular dosage schedule may be followed (FDA label, Bleomycin for Injection, USP, DOSAGE AND ADMINISTRATION). Squamous cell carcinoma, non-Hodgkin's lymphoma and testicular carcinoma: 0.25 to 0.5 units/kg (10 to 20 units/m2) given intravenously, intramuscularly or subcutaneously weekly or twice weekly. Hodgkin's disease: 0.25 to 0.5 units/kg (10 to 20 units/m2) given intravenously, intramuscularly or subcutaneously weekly or twice weekly; after a 50% response, a maintenance dose of 1 unit daily or 5 units weekly intravenously or intramuscularly should be given. Malignant pleural effusion: 60 units administered as a single dose bolus intrapleural injection. Pulmonary toxicity appears to be dose-related with a striking increase when the total dose is over 400 units, and total doses over 400 units should be given with great caution; when bleomycin is used in combination with other antineoplastic agents, pulmonary toxicities may occur at lower doses (FDA label, DOSAGE AND ADMINISTRATION). Renal insufficiency: proposed dose reductions are 100% for creatinine clearance of 50 mL/min and above, 70% for 40 to 50, 60% for 30 to 40, 55% for 20 to 30, 45% for 10 to 20 and 40% for 5 to 10 mL/min, with creatinine clearance estimated by the Cockcroft and Gault formula (FDA label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "No geriatric-specific dose adjustment is specified in the FDA label, which states that in clinical trials pulmonary toxicity was more common in patients older than 70 years than in younger patients, and that because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA label, PRECAUTIONS, Geriatric Use). The proposed renal dose-reduction table (see fields.dosage.adult) therefore matters disproportionately in this group (FDA label, DOSAGE AND ADMINISTRATION).",
+      "paediatric": "Safety and effectiveness in bleomycin in paediatric patients have not been established (FDA label, PRECAUTIONS, Pediatric Use). No paediatric dose is specified in the FDA label; pharmacokinetically, children of less than 3 years of age have higher total body clearance than adults (71 mL/min/m2 versus 51 mL/min/m2 following intravenous bolus), children of more than 8 years of age have comparable clearance to adults, and in children with normal renal function plasma concentrations decline biexponentially as in adults, with volume of distribution and terminal half-life comparable to adults (FDA label, CLINICAL PHARMACOLOGY, Special Populations, Pediatric). Neither the WHO Model List nor KEML provides a paediatric regimen (WHO eEML 23rd List, 2023; KEML 2023, item 9.2.1.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Nephrotoxic drugs: because bleomycin is eliminated predominantly through renal excretion, the administration of nephrotoxic drugs with bleomycin may affect its renal clearance. In one report of 2 children receiving concomitant cisplatin with bleomycin, total body clearance of bleomycin decreased from 39 to 18 mL/min/m2 as the cumulative dose of cisplatin exceeded 300 mg/m2, and the terminal half-life increased from 4.4 to 6 hours; fatal bleomycin pulmonary toxicity has been reported in a patient with unrecognized cisplatin-induced oliguric renal failure (FDA label, Bleomycin for Injection, USP, CLINICAL PHARMACOLOGY, Drug Interactions, Drugs that Can Affect Renal Clearance).",
+      "Oxygen: because of bleomycin's sensitization of lung tissue, patients who have received bleomycin are at greater risk of developing pulmonary toxicity when oxygen is administered in surgery; after bleomycin administration lung damage can occur at lower oxygen concentrations than usually considered safe, and suggested preventive measures are to maintain FiO2 at concentrations approximating that of room air (25%) during surgery and the postoperative period and to monitor fluid replacement carefully, focusing more on colloid administration than crystalloid (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Combination with other antineoplastic agents: vascular toxicities coincident with the use of bleomycin in combination with other antineoplastic agents have been reported, including myocardial infarction, cerebrovascular accident, thrombotic microangiopathy (HUS) and cerebral arteritis, and Raynaud's phenomenon has been reported in patients treated with bleomycin in combination with vinblastine with or without cisplatin (FDA label, ADVERSE REACTIONS, Other).",
+      "Some published reports have suggested that the risk of pulmonary toxicity may be increased when bleomycin is used in combination with G-CSF (filgrastim) or other cytokines; however, randomized clinical studies completed to date have not demonstrated an increased risk of pulmonary complications in patients treated with bleomycin and G-CSF (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "No formal drug-interaction section is included in the FDA label; the interactions above are the ones stated in the label (FDA label, CLINICAL PHARMACOLOGY and ADVERSE REACTIONS)."
+    ],
+    "monitoring": "Chest roentgenograms should be taken every 1 to 2 weeks to monitor the onset of pulmonary toxicity, and if pulmonary changes are noted, treatment should be discontinued until it can be determined if they are drug related (FDA label, ADVERSE REACTIONS, Pulmonary). Sequential measurement of the pulmonary diffusion capacity for carbon monoxide (DLco) during treatment may be an indicator of subclinical pulmonary toxicity; it is recommended that the DLco be monitored monthly if it is to be employed to detect pulmonary toxicities, and the drug should be discontinued when the DLco falls below 30% to 35% of the pretreatment value (FDA label, ADVERSE REACTIONS, Pulmonary). Patients with creatinine clearance values of less than 50 mL/min should be treated with caution and their renal function should be carefully monitored during the administration of bleomycin, and lower doses may be required than in patients with normal renal function (FDA label, PRECAUTIONS, General). Patients receiving bleomycin must be observed carefully and frequently during and after therapy (FDA label, WARNINGS). Since the severe idiosyncratic reaction usually occurs after the first or second dose, careful monitoring is essential after those doses (FDA label, WARNINGS). Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function (FDA label, PRECAUTIONS, Geriatric Use).",
+    "patient_counselling": "Report immediately any new breathlessness, dry cough or chest pain, because the earliest symptom of bleomycin lung toxicity is dyspnoea and the earliest sign is fine rales, and pulmonary toxicity can progress to fatal pulmonary fibrosis (FDA label, ADVERSE REACTIONS, Pulmonary). Tell your doctor if you have ever had an unusual reaction to bleomycin, because bleomycin is contraindicated in patients who have demonstrated a hypersensitive or idiosyncratic reaction to it (FDA label, CONTRAINDICATIONS). Report any fever, chills, confusion, wheezing or feeling faint, especially after the first or second dose, because an idiosyncratic reaction resembling anaphylaxis occurs in approximately 1% of lymphoma patients treated (FDA label, ADVERSE REACTIONS, Idiosyncratic Reactions). Tell your doctor and anaesthetist that you have had bleomycin before any surgery, because oxygen given during surgery can injure the lungs of previously treated patients, and keep oxygen concentrations as close to room air as possible during surgery and afterwards (FDA label, ADVERSE REACTIONS, Pulmonary). If you are having oxygen therapy or are scheduled for surgery, let your doctor know (FDA label, ADVERSE REACTIONS, Pulmonary). Report skin changes such as redness, rash, darkening, thickened skin, nail changes or hair loss, and mouth soreness; these are common but tell your doctor, and they are the reason bleomycin was stopped in 2% of treated patients (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes). Report nausea, vomiting, fever, chills, weight loss or feeling unwell (FDA label, ADVERSE REACTIONS, Other). Women of childbearing potential should be advised to avoid becoming pregnant during therapy with bleomycin (FDA label, WARNINGS, Usage in Pregnancy). Nursing mothers should be advised to discontinue nursing (FDA label, PRECAUTIONS, Nursing Mothers).",
+    "warnings": [
+      "WARNING (boxed): Bleomycin for Injection, USP should be administered under the supervision of a qualified physician experienced in the use of cancer chemotherapeutic agents; appropriate management of therapy and complications is possible only when adequate diagnostic and treatment facilities are readily available (FDA label, Boxed Warning).",
+      "WARNING (boxed): pulmonary fibrosis is the most severe toxicity associated with bleomycin; the most frequent presentation is pneumonitis occasionally progressing to pulmonary fibrosis, and its occurrence is higher in elderly patients and in those receiving greater than 400 units total dose, but pulmonary toxicity has been observed in young patients and those treated with low doses (FDA label, Boxed Warning).",
+      "WARNING (boxed): a severe idiosyncratic reaction consisting of hypotension, mental confusion, fever, chills and wheezing has been reported in approximately 1% of lymphoma patients treated with bleomycin (FDA label, Boxed Warning).",
+      "Pulmonary toxicities occur in 10% of treated patients; in approximately 1% the nonspecific pneumonitis induced by bleomycin progresses to pulmonary fibrosis and death. Although this is age and dose related, the toxicity is unpredictable, and frequent roentgenograms are recommended (FDA label, WARNINGS).",
+      "Use with extreme caution in patients with significant impairment of renal function or compromised pulmonary function (FDA label, WARNINGS).",
+      "Renal or hepatic toxicity, beginning as a deterioration in renal or liver function tests, has been reported, and these toxicities may occur at any time after initiation of therapy (FDA label, WARNINGS).",
+      "Dose-related pulmonary toxicity with a striking increase when the total dose is over 400 units; total doses over 400 units should be given with great caution, and when bleomycin is used in combination with other antineoplastic agents pulmonary toxicities may occur at lower doses (FDA label, DOSAGE AND ADMINISTRATION).",
+      "Oxygen sensitivity: after bleomycin administration, lung damage can occur at lower oxygen concentrations that are usually considered safe, so patients who have received bleomycin are at greater risk of pulmonary toxicity when oxygen is administered in surgery (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Pregnancy: bleomycin can cause fetal harm when administered to a pregnant woman; it has been shown to be teratogenic in rats, causing skeletal malformations, shortened innominate artery and hydroureter at intraperitoneal doses of 1.5 mg/kg/day on days 6 to 15 of gestation, and it is abortifacient in rabbits at intravenous doses of 1.2 mg/kg/day on gestation days 6 to 18; there have been no studies in pregnant women, and women of childbearing potential should be advised to avoid becoming pregnant during therapy (FDA label, WARNINGS, Usage in Pregnancy).",
+      "Mutagenicity and carcinogenicity: bleomycin has been shown to be mutagenic both in vitro and in vivo, and the carcinogenic potential of bleomycin in humans is unknown; in rats, subcutaneous administration of 0.35 mg/kg weekly produced dose-related injection-site fibrosarcomas and various renal tumours, and in F344 male rats an increased incidence of nodular hyperplasia was seen after induced lung carcinogenesis (FDA label, PRECAUTIONS, Carcinogenesis, Mutagenesis, Impairment of Fertility)."
+    ],
+    "precautions": [
+      "General: patients with creatinine clearance values of less than 50 mL/min should be treated with caution, their renal function should be carefully monitored during administration, and lower doses of bleomycin may be required than in those with normal renal function (FDA label, PRECAUTIONS, General).",
+      "Observe patients carefully and frequently during and after therapy, and monitor especially closely after the first or second dose because severe idiosyncratic reactions usually occur at that time (FDA label, WARNINGS).",
+      "Perform frequent chest roentgenograms (every 1 to 2 weeks) and consider monthly DLco monitoring; discontinue treatment if pulmonary changes appear, and discontinue if DLco falls below 30% to 35% of the pretreatment value (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Sum total dose carefully: pulmonary toxicity rises strikingly above 400 units total, and combination with other antineoplastics lowers that threshold (FDA label, DOSAGE AND ADMINISTRATION).",
+      "Handle with care: wear impervious gloves when handling vials; if bleomycin contacts the skin, wash the skin thoroughly with soap and water, and if contact with mucous membranes occurs, flush immediately and thoroughly with water (FDA label, ADMINISTRATION, Administration Precautions).",
+      "Stability and diluent: bleomycin should not be reconstituted or diluted with D5W or other dextrose-containing diluents because loss of A2 and B2 potency occurs in dextrose; it is stable for 24 hours at room temperature in Sodium Chloride Injection, 0.9% (FDA label, HOW SUPPLIED, Stability).",
+      "Carcinogenesis, mutagenesis, impairment of fertility: no long-term studies exist; the effects of bleomycin on fertility have not been studied (FDA label, PRECAUTIONS)."
+    ],
+    "serious_adverse_reactions": [
+      "Pulmonary fibrosis: approximately 1% of patients treated have died of pulmonary fibrosis; pulmonary adverse reactions occur in approximately 10% of treated patients and are the most serious side effects (FDA label, ADVERSE REACTIONS, Pulmonary; Boxed Warning).",
+      "Severe idiosyncratic reaction resembling anaphylaxis (hypotension, mental confusion, fever, chills, wheezing) in approximately 1% of lymphoma patients treated, usually after the first or second dose (FDA label, Boxed Warning and ADVERSE REACTIONS, Idiosyncratic Reactions).",
+      "Renal or hepatic toxicity, beginning as a deterioration in renal or liver function tests, reported to occur at any time after initiation of therapy (FDA label, WARNINGS).",
+      "Severe skin and mucosal toxicity requiring discontinuation of bleomycin in 2% of treated patients, including hyperkeratosis, nail changes, alopecia, pruritus, stomatitis and scleroderma-like skin changes (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes).",
+      "Death has been reported in association with bleomycin pleurodesis in seriously ill patients (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes).",
+      "Sudden onset of an acute chest pain syndrome suggestive of pleuropericarditis has been reported during bleomycin infusions, and vascular events including myocardial infarction, cerebrovascular accident, thrombotic microangiopathy (HUS) and cerebral arteritis have been reported with combination use (FDA label, ADVERSE REACTIONS, Pulmonary and Other)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "D (FDA label, Bleomycin for Injection, USP, WARNINGS and PRECAUTIONS, Pregnancy Category D)",
+    "pregnancy_guidance": "Bleomycin can cause fetal harm when administered to a pregnant woman. It has been shown to be teratogenic in rats: intraperitoneal doses of 1.5 mg/kg/day (about 1.6 times the recommended human dose on a unit/m2 basis) on days 6 to 15 of gestation caused skeletal malformations, shortened innominate artery and hydroureter. Bleomycin is abortifacient but not teratogenic in rabbits at intravenous doses of 1.2 mg/kg/day (about 2.4 times the recommended human dose on a unit/m2 basis) on gestation days 6 to 18. There have been no studies in pregnant women. If bleomycin is used during pregnancy, or if the patient becomes pregnant while receiving this drug, the patient should be apprised of the potential hazard to the fetus, and women of childbearing potential should be advised to avoid becoming pregnant during therapy with bleomycin (FDA label, WARNINGS, Usage in Pregnancy; PRECAUTIONS, Pregnancy). The label assigns Pregnancy Category D, which is obsolete under the FDA Pregnancy and Lactation Labeling Rule but is reproduced because the label still states it.",
+    "lactation_guidance": "It is not known whether the drug is excreted in human milk. Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants, it is recommended that nursing be discontinued by women receiving bleomycin therapy (FDA label, PRECAUTIONS, Nursing Mothers).",
+    "overdose": null,
+    "pharmacokinetics": "Absorption: bleomycin is rapidly absorbed following intramuscular, subcutaneous, intraperitoneal or intrapleural administration, reaching peak plasma concentrations in 30 to 60 minutes; systemic bioavailability is 100% and 70% following intramuscular and subcutaneous administration respectively and 45% following both intraperitoneal and intrapleural administration, compared with intravenous bolus administration; following intramuscular doses of 1 to 10 units/m2, both peak plasma concentration and AUC increased in proportion with the dose. Distribution: bleomycin is widely distributed throughout the body, with a mean volume of distribution of 17.5 L/m2 after a 15 units/m2 intravenous bolus dose; protein binding has not been studied. Metabolism: bleomycin is inactivated by a cytosolic cysteine proteinase enzyme, bleomycin hydrolase, which is widely distributed in normal tissues with the exception of the skin and lungs, both targets of bleomycin toxicity; systemic elimination by enzymatic degradation is probably only important in patients with severely compromised renal function. Excretion: the primary route of elimination is via the kidneys, with about 65% of the administered intravenous dose excreted in urine within 24 hours; in patients with normal renal function plasma concentrations decline biexponentially with a mean terminal half-life of 2 hours after intravenous bolus administration; total body clearance and renal clearance averaged 51 mL/min/m2 and 23 mL/min/m2 respectively, and after intrapleural administration a lower percentage of drug (40%) is recovered in the urine. Renal insufficiency: the terminal elimination half-life increases exponentially as creatinine clearance decreases. Hepatic insufficiency: the effect of hepatic insufficiency on the pharmacokinetics of bleomycin has not been evaluated (FDA label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Bleomycin's dose ceiling is the single most important clinical fact: pulmonary toxicity rises strikingly above a total dose of 400 units, and combination with other antineoplastic agents brings that threshold down, so the cumulative dose must be tracked across regimens (FDA label, DOSAGE AND ADMINISTRATION and Boxed Warning).",
+      "Lymphoma patients get a test dose: 2 units or less for the first 2 doses, because of the possibility of an anaphylactoid reaction, and only if no acute reaction occurs does the regular schedule begin (FDA label, DOSAGE AND ADMINISTRATION).",
+      "The pulmonary toxicity is unpredictable and not simply dose-dependent: it has been seen in young patients receiving low doses, and the earliest symptom (dyspnoea) and earliest sign (fine rales) precede the radiographic changes (FDA label, WARNINGS and ADVERSE REACTIONS, Pulmonary).",
+      "Chest X-ray every 1 to 2 weeks and DLco monthly if used; discontinue if radiographic changes appear, and discontinue if DLco falls below 30% to 35% of pretreatment (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Bleomycin sensitises lung tissue: patients who have had bleomycin can be injured by oxygen concentrations usually considered safe, so anaesthesia and postoperative oxygen should be kept near room air (25%) and the anaesthetist must be told (FDA label, ADVERSE REACTIONS, Pulmonary).",
+      "Renal function is the dose variable: with creatinine clearance below 50 mL/min, use caution and monitor closely, and apply the label's dose-reduction table (100% at CrCl 50 and above down to 40% at CrCl 5-10 mL/min) (FDA label, PRECAUTIONS and DOSAGE AND ADMINISTRATION).",
+      "Skin toxicity is the reason for the 150-200 unit landmark: skin toxicity is usually a late manifestation developing in the second and third week of treatment after 150 to 200 units have been given and appears related to cumulative dose, and it forced discontinuation in 2% of patients (FDA label, ADVERSE REACTIONS, Integument and Mucous Membranes).",
+      "Bleomycin is also a sclerosing agent: 60 units in 50 to 100 mL of 0.9% sodium chloride instilled through a thoracostomy tube is the labelled intrapleural regimen for malignant pleural effusion (FDA label, DOSAGE AND ADMINISTRATION and ADMINISTRATION, Intrapleural).",
+      "In Kenya and on the WHO Model List, bleomycin is a complementary-list cytotoxic for Kaposi sarcoma and ovarian and testicular germ cell tumours; KEML 2023 carries it as a 15 mg (as sulphate) powder for injection vial at level of use 5, with use in Hodgkin lymphoma, Kaposi sarcoma, ovarian and testicular germ cell tumour (WHO eEML 23rd List, 2023; KEML 2023, item 9.2.1.3 and footnote 206). Note that the FDA label expresses potency in units, where one unit equals the formerly used milligram activity, whereas the KEML entry is written in mg; the KEML 15 mg vial corresponds to the FDA 15-unit vial presentation."
+    ],
+    "brand_names": ["Bleomycin"],
+    "black_box_warnings": [
+      "It is recommended that Bleomycin for Injection, USP be administered under the supervision of a qualified physician experienced in the use of cancer chemotherapeutic agents. Appropriate management of therapy and complications is possible only when adequate diagnostic and treatment facilities are readily available (FDA label, Bleomycin for Injection, USP, Boxed Warning).",
+      "Pulmonary fibrosis is the most severe toxicity associated with bleomycin. The most frequent presentation is pneumonitis occasionally progressing to pulmonary fibrosis. Its occurrence is higher in elderly patients and in those receiving greater than 400 units total dose, but pulmonary toxicity has been observed in young patients and those treated with low doses (FDA label, Boxed Warning).",
+      "A severe idiosyncratic reaction consisting of hypotension, mental confusion, fever, chills and wheezing has been reported in approximately 1% of lymphoma patients treated with bleomycin (FDA label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "Patients with creatinine clearance values of less than 50 mL/min should be treated with caution and their renal function should be carefully monitored during the administration of bleomycin, and lower doses of bleomycin may be required in these patients than in those with normal renal function (FDA label, PRECAUTIONS, General). Proposed dose reductions: creatinine clearance 50 mL/min and above 100% of the dose, 40 to 50 mL/min 70%, 30 to 40 mL/min 60%, 20 to 30 mL/min 55%, 10 to 20 mL/min 45%, and 5 to 10 mL/min 40%; creatinine clearance can be estimated from serum creatinine using the Cockcroft and Gault formula (FDA label, DOSAGE AND ADMINISTRATION). The terminal elimination half-life of bleomycin increases exponentially as creatinine clearance decreases (FDA label, CLINICAL PHARMACOLOGY, Renal Insufficiency).",
+    "hepatic_dose_adjustment": "The effect of hepatic insufficiency on the pharmacokinetics of bleomycin has not been evaluated, and no hepatic dose adjustment is specified in the FDA label (FDA label, CLINICAL PHARMACOLOGY, Hepatic Insufficiency).",
+    "administration_instructions": "Bleomycin for Injection may be given by the intramuscular, intravenous, subcutaneous or intrapleural routes (FDA label, ADMINISTRATION). Intramuscular or subcutaneous: reconstitute the 15 units vial with 1 to 5 mL and the 30 units vial with 2 to 10 mL of Sterile Water for Injection, 0.9% Sodium Chloride for Injection or Sterile Bacteriostatic Water for Injection. Intravenous: dissolve the contents of the 15 units or 30 units vial in 5 mL or 10 mL respectively of 0.9% Sodium Chloride for Injection and administer slowly over 10 minutes. Intrapleural: 60 units are dissolved in 50 to 100 mL of 0.9% Sodium Chloride for Injection and administered through a thoracostomy tube following drainage of excess pleural fluid and confirmation of complete lung expansion; the thoracostomy tube is clamped after instillation, the patient is moved from supine to left and right lateral positions several times during the next four hours, and the clamp is then removed and suction re-established. Visually inspect parenteral products for particulate matter and discoloration before administration. Handle with care: wear impervious gloves, wash skin with soap and water on contact and flush mucous membranes with water. Store the sterile powder under refrigeration at 2 to 8 degrees C (36 to 46 degrees F), do not use after the expiration date, do not reconstitute or dilute with D5W or other dextrose-containing diluents, and note that it is stable for 24 hours at room temperature in Sodium Chloride (FDA label, ADMINISTRATION and HOW SUPPLIED, Stability)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Bleomycin for Injection, USP (Fresenius Kabi USA, LLC, 45998F, revised November 2016), CLINICAL PHARMACOLOGY, Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Bleomycin for Injection, USP, INDICATIONS AND USAGE; WHO Model List of Essential Medicines, 23rd List (2023), section 8.2.1 Cytotoxic medicines (Complementary List); Kenya Essential Medicines List 2023, item 9.2.1.3 and footnote 206",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Bleomycin for Injection, USP, CONTRAINDICATIONS and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Bleomycin for Injection, USP, ADVERSE REACTIONS (Pulmonary; Idiosyncratic Reactions; Integument and Mucous Membranes; Other)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Bleomycin for Injection, USP, DOSAGE AND ADMINISTRATION (including the renal-insufficiency dose-reduction table and Cockcroft and Gault formula) and PRECAUTIONS (Pediatric Use, Geriatric Use); WHO eEML 23rd List (2023); KEML 2023, item 9.2.1.3 and footnote 206",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Bleomycin for Injection, USP, CLINICAL PHARMACOLOGY (Drug Interactions, Drugs that Can Affect Renal Clearance) and ADVERSE REACTIONS (Pulmonary - oxygen; Other - vascular toxicities and G-CSF)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Bleomycin for Injection, USP, ADVERSE REACTIONS (Pulmonary - roentgenograms and DLco), PRECAUTIONS (General; Geriatric Use) and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Bleomycin for Injection, USP, ADVERSE REACTIONS (Pulmonary; Idiosyncratic Reactions; Integument and Mucous Membranes; Other), CONTRAINDICATIONS, WARNINGS (Usage in Pregnancy) and PRECAUTIONS (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Bleomycin for Injection, USP, Boxed Warning, WARNINGS (including Usage in Pregnancy) and PRECAUTIONS (Carcinogenesis, Mutagenesis, Impairment of Fertility) and DOSAGE AND ADMINISTRATION (total dose over 400 units)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Bleomycin for Injection, USP, PRECAUTIONS (General; Carcinogenesis, Mutagenesis, Impairment of Fertility), WARNINGS, ADMINISTRATION (Administration Precautions) and HOW SUPPLIED (Stability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Bleomycin for Injection, USP, ADVERSE REACTIONS (Pulmonary; Idiosyncratic Reactions; Integument and Mucous Membranes; Other), Boxed Warning, WARNINGS and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Not stated: the FDA label contains no food interaction statement",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Bleomycin for Injection, USP, WARNINGS and PRECAUTIONS (Pregnancy Category D)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Bleomycin for Injection, USP, WARNINGS (Usage in Pregnancy) and PRECAUTIONS (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Bleomycin for Injection, USP, PRECAUTIONS (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "overdose",
+      "ref": "Not stated: the FDA Bleomycin for Injection, USP label used contains no OVERDOSAGE section, and neither the WHO Model List nor KEML provides overdose information for bleomycin",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Bleomycin for Injection, USP, CLINICAL PHARMACOLOGY (Absorption, Distribution, Metabolism, Excretion, Special Populations: Pediatric, Renal Insufficiency, Hepatic Insufficiency)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Bleomycin for Injection, USP, Boxed Warning, WARNINGS, PRECAUTIONS, ADVERSE REACTIONS, DOSAGE AND ADMINISTRATION, ADMINISTRATION (Intrapleural) and DESCRIPTION (unit versus milligram activity); WHO eEML 23rd List (2023), section 8.2.1; KEML 2023, item 9.2.1.3 and footnote 206",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+    },
+    {
+      "field": "brand_names",
+      "ref": "The FDA product used is an unbranded generic, Bleomycin for Injection, USP (Fresenius Kabi USA, LLC; NDC 63323-136-10 and 63323-137-20), and carries no proprietary brand name; 'Bleomycin' is retained as the name recorded against this row",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, Bleomycin for Injection, USP, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Bleomycin for Injection, USP, PRECAUTIONS (General), DOSAGE AND ADMINISTRATION (Use in Patients with Renal Insufficiency, dose-reduction table and Cockcroft and Gault formula) and CLINICAL PHARMACOLOGY (Renal Insufficiency)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Bleomycin for Injection, USP, CLINICAL PHARMACOLOGY (Hepatic Insufficiency)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Bleomycin for Injection, USP, ADMINISTRATION (Administration Precautions; Intramuscular or Subcutaneous; Intravenous; Intrapleural) and HOW SUPPLIED (Stability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5806c40-12ce-48e3-8abd-9f8997ef4428"
+    },
+    {
+      "field": "reference_lists",
+      "ref": "WHO Model List of Essential Medicines - 23rd List (2023), WHO/MHP/HPS/EML/2023.02, section 8.2.1 Cytotoxic medicines (Complementary List); Kenya Essential Medicines List 2023 (Kenya Ministry of Health / KEMSA), item 9.2.1.3 and footnote 206",
+      "url": "https://www.kemsa.go.ke/download/file/8e7d9c438ecc1a468d9d7615a87688df.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen, including the 400-unit ceiling and the renal dose-reduction table, is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric content, including the statement that safety and effectiveness have not been established and the paediatric clearance data, is provided in fields.dosage.paediatric)",
+    "overdose (the FDA label used contains no OVERDOSAGE section and neither the WHO Model List nor KEML provides overdose information for bleomycin; the field is null rather than filled with unsourced management advice)",
+    "food_interactions (no food interaction is described in the FDA label; the field is an empty array)"
+  ],
+  "notes": "The table stores this agent as 'Bleomycin' with a null drug_class and brand_names ['Bleomycin']; the previous row carried shared class-template cytotoxic text and is superseded by this draft. The monograph is built from (1) the FDA/DailyMed label for Bleomycin for Injection, USP (Fresenius Kabi USA, LLC, revised November 2016), which carries a genuine boxed warning covering supervision by an experienced oncologist, pulmonary fibrosis and the severe idiosyncratic reaction - the source for mechanism, indications, contraindications, warnings, precautions, adverse reactions with their frequencies, dosing including the 400-unit ceiling and the renal dose-reduction table, monitoring (chest radiography every 1 to 2 weeks and monthly DLco), pharmacokinetics, administration and storage; (2) the WHO Model List of Essential Medicines, 23rd List (2023), section 8.2.1 Cytotoxic medicines (Complementary List), where bleomycin is listed for Kaposi sarcoma and ovarian and testicular germ cell tumours; and (3) the Kenya Essential Medicines List 2023, item 9.2.1.3, bleomycin powder for injection 15 mg vial (as sulphate) at level of use 5, with footnote 206 giving the uses (Hodgkin lymphoma, Kaposi sarcoma, ovarian and testicular germ cell tumour). Units caveat, stated so it is not read as an error: the FDA label expresses potency in units and states that a unit of bleomycin equals the formerly used milligram activity, while KEML 2023 writes the strength in mg (15 mg vial, as sulphate); the two are not interchangeable in the labelling and each figure is reported exactly as its source states it. The FDA pregnancy letter category D is reproduced in fields.pregnancy_category only because the label still states it; the category is obsolete under the FDA Pregnancy and Lactation Labeling Rule and the underlying pregnancy data are given in fields.pregnancy_guidance. The FDA label has no OVERDOSAGE section, so fields.overdose is null and listed in unsourced_fields. Brand names: the FDA product is an unbranded generic, so brand_names retains 'Bleomycin' only."
+}

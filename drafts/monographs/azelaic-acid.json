@@ -1,0 +1,211 @@
+{
+  "name": "Azelaic Acid",
+  "existing_id": "45c12f14-aafd-4777-81d9-85c7a8cb3cc2",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The exact mechanism of action of azelaic acid is not known. The following in vitro data are available but their clinical significance is unknown: azelaic acid possesses antimicrobial activity against Propionibacterium acnes and Staphylococcus epidermidis, and the antimicrobial action may be attributable to inhibition of microbial cellular protein synthesis. Normalisation of keratinisation leading to an anticomedonal effect may also contribute to clinical activity; electron microscopic and immunohistochemical evaluation of skin biopsies from human subjects treated with AZELEX cream demonstrated a reduction in the thickness of the stratum corneum, a reduction in the number and size of keratohyalin granules, and a reduction in the amount and distribution of filaggrin in epidermal layers, which is suggestive of the ability to decrease microcomedo formation (FDA AZELEX (azelaic acid) cream label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "AZELEX 20% cream: topical treatment of mild-to-moderate inflammatory acne vulgaris (FDA AZELEX label, INDICATIONS AND USAGE)",
+      "FINACEA Gel 15%: topical treatment of inflammatory papules and pustules of mild to moderate rosacea. Although some reduction of erythema present in patients with papules and pustules occurred in clinical studies, efficacy for treatment of erythema in rosacea in the absence of papules and pustules has not been evaluated (FDA FINACEA Gel 15% label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "AZELEX 20% cream: contraindicated in individuals who have shown hypersensitivity to any of its components (FDA AZELEX label, CONTRAINDICATIONS)",
+      "FINACEA Gel 15%: contraindicated in individuals with a history of hypersensitivity to propylene glycol or any other component of the formulation (FDA FINACEA Gel 15% label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "AZELEX 20% cream: during US clinical trials adverse reactions were generally mild and transient; the most common adverse reactions, occurring in approximately 1-5% of patients, were pruritus, burning, stinging and tingling, and erythema, dryness, rash, peeling, irritation, dermatitis and contact dermatitis were reported in less than 1% of subjects (FDA AZELEX label, ADVERSE REACTIONS)",
+      "FINACEA Gel 15%: treatment-related adverse events, including burning, stinging/tingling, dryness/tightness/scaling, itching and erythema/irritation/redness, occurred in 19.4% (24/124) of patients on FINACEA versus 7.1% (9/127) on the active comparator gel at 15 weeks (FDA FINACEA Gel 15% label, ADVERSE REACTIONS)",
+      "FINACEA Gel 15% cutaneous adverse events by maximum intensity in the rosacea trials: burning/stinging/tingling 16% overall (9% mild, 4% moderate, 2% severe), pruritus 6%, scaling/dry skin/xerosis 5%, erythema/irritation 1% and contact dermatitis 1% (FDA FINACEA Gel 15% label, ADVERSE REACTIONS, Table 3)",
+      "Rare adverse experiences reported with azelaic acid formulations: worsening of asthma, vitiligo depigmentation, small depigmented spots, hypertrichosis, reddening (signs of keratosis pilaris) and exacerbation of recurrent herpes labialis (FDA AZELEX label, ADVERSE REACTIONS and FINACEA Gel 15% label, ADVERSE REACTIONS)",
+      "Post-marketing with FINACEA Gel 15%: facial burning and irritation, and iridocyclitis on accidental exposure of the gel to the eye (FDA FINACEA Gel 15% label, ADVERSE REACTIONS, Post-marketing safety)",
+      "Isolated reports of hypopigmentation after use of azelaic acid (FDA AZELEX label, WARNINGS and FINACEA Gel 15% label, WARNINGS)"
+    ],
+    "dosage": {
+      "adult": "AZELEX 20% cream: after the skin is thoroughly washed and patted dry, a thin film should be gently but thoroughly massaged into the affected areas twice daily, in the morning and evening; the hands should be washed following application. Duration of use can vary from person to person and depends on the severity of the acne; improvement of the condition occurs in the majority of patients with inflammatory lesions within four weeks (FDA AZELEX label, DOSAGE AND ADMINISTRATION). FINACEA Gel 15%: a thin layer should be gently massaged into the affected areas on the face twice daily, in the morning and evening, and patients should be reassessed if no improvement is observed upon completing 12 weeks of therapy (FDA FINACEA Gel 15% label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Neither label contains a geriatric dosing schedule. Clinical studies of AZELEX cream did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects, and clinical studies of FINACEA Gel 15% likewise did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects (FDA AZELEX label, PRECAUTIONS: Geriatric Use; FDA FINACEA Gel 15% label, PRECAUTIONS: Geriatric Use).",
+      "paediatric": "Safety and effectiveness of AZELEX cream in paediatric patients under 12 years of age have not been established, and safety and effectiveness of FINACEA Gel 15% in paediatric patients have not been established (FDA AZELEX label, PRECAUTIONS: Pediatric Use; FDA FINACEA Gel 15% label, PRECAUTIONS: Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "There have been no formal studies of the interaction of FINACEA Gel 15% with other drugs (FDA FINACEA Gel 15% label, PRECAUTIONS: Drug Interactions). The AZELEX 20% cream label contains no drug-interactions section."
+    ],
+    "monitoring": "Monitor patients with dark complexions for early signs of hypopigmentation, since azelaic acid has not been well studied in this group and isolated reports of hypopigmentation exist (FDA AZELEX label, WARNINGS; FDA FINACEA Gel 15% label, WARNINGS). Discontinue treatment if sensitivity or severe irritation develops and institute appropriate therapy (FDA AZELEX label, PRECAUTIONS: General; FDA FINACEA Gel 15% label, PRECAUTIONS: General). Assess clinical response: improvement of inflammatory lesions occurs in the majority of patients within four weeks on AZELEX 20% cream, and rosacea patients on FINACEA Gel 15% should be reassessed if there is no improvement after completing 12 weeks of therapy (FDA AZELEX label, DOSAGE AND ADMINISTRATION; FDA FINACEA Gel 15% label, DOSAGE AND ADMINISTRATION). For rosacea, instruct patients to avoid spicy foods, thermally hot foods and drinks, alcoholic beverages, and to use only very mild soaps or soapless cleansing lotion for facial cleansing (FDA FINACEA Gel 15% label, INDICATIONS AND USAGE).",
+    "patient_counselling": "For AZELEX 20% cream: use the cream for the full prescribed treatment period; avoid the use of occlusive dressings or wrappings; keep the cream away from the mouth, eyes and other mucous membranes and, if it comes into contact with the eyes, wash the eyes with large amounts of water and consult a physician if eye irritation persists; if you have dark complexions, report abnormal changes in skin colour to your physician; and note that, due in part to the low pH of azelaic acid, temporary skin irritation (pruritus, burning or stinging) may occur when the cream is applied to broken or inflamed skin, usually at the start of treatment, and commonly subsides if treatment is continued (FDA AZELEX label, PRECAUTIONS: Information for Patients). For FINACEA Gel 15%: use only as directed by the physician, for external use only, not orally, intravaginally or for the eyes; cleanse affected areas with a very mild soap or soapless cleansing lotion and pat dry with a soft towel before applying, avoiding alcoholic cleansers, tinctures, astringents, abrasives and peeling agents; avoid contact with the mouth, eyes and other mucous membranes and wash the eyes with large amounts of water if contact occurs, consulting a physician if irritation persists; wash the hands following application; cosmetics may be applied once the gel has dried; skin irritation (pruritus, burning or stinging) may occur usually during the first few weeks of treatment, and use should be discontinued and the physician consulted if irritation is excessive or persists; avoid any foods and beverages that might provoke erythema, flushing and blushing, including spicy food, alcoholic beverages and thermally hot drinks such as hot coffee and tea; report abnormal changes in skin colour to your physician; and avoid occlusive dressings or wrappings (FDA FINACEA Gel 15% label, PRECAUTIONS: Information for Patients).",
+    "warnings": [
+      "AZELEX 20% cream is for dermatologic use only and not for ophthalmic use (FDA AZELEX label, WARNINGS)",
+      "FINACEA Gel 15% is for dermatologic use only, and not for ophthalmic, oral or intravaginal use (FDA FINACEA Gel 15% label, WARNINGS)",
+      "There have been isolated reports of hypopigmentation after use of azelaic acid. Because azelaic acid has not been well studied in patients with dark complexions, these patients should be monitored for early signs of hypopigmentation (FDA AZELEX label, WARNINGS; FDA FINACEA Gel 15% label, WARNINGS)",
+      "In a transgenic mouse study, chronic use of FINACEA Gel led to an increased number of animals with papillomas at the treatment site; the clinical relevance of the findings in animal studies to humans is not clear (FDA FINACEA Gel 15% label, PRECAUTIONS: General and Carcinogenesis, Mutagenesis, Impairment of Fertility)"
+    ],
+    "precautions": [
+      "If sensitivity or severe irritation develops with use of AZELEX cream, treatment should be discontinued and appropriate therapy instituted (FDA AZELEX label, PRECAUTIONS: General).",
+      "Contact with the eyes should be avoided with FINACEA Gel 15%; if sensitivity or severe irritation develops, treatment should be discontinued and appropriate therapy instituted (FDA FINACEA Gel 15% label, PRECAUTIONS: General).",
+      "Azelaic acid is a human dietary component of a simple molecular structure that does not suggest carcinogenic potential, so animal studies to evaluate carcinogenic potential with AZELEX cream were not deemed necessary; in a battery of tests (Ames assay, HGPRT test in Chinese hamster ovary cells, human lymphocyte test, dominant lethal assay in mice) azelaic acid was found to be nonmutagenic, and animal studies showed no adverse effects on fertility (FDA AZELEX label, PRECAUTIONS: Carcinogenesis, Mutagenesis, Impairment of Fertility).",
+      "In a 26-week dermal carcinogenicity study using transgenic (Tg.AC) mice, FINACEA Gel 15% and the gel vehicle did not increase the number of female Tg.AC animals with papillomas at the treatment site; after twice daily application, the gel and the vehicle induced a statistically significant increase in papillomas in male Tg.AC animals compared with untreated males, suggesting the effect may be associated with the vehicle, and the clinical relevance is not clear (FDA FINACEA Gel 15% label, PRECAUTIONS: Carcinogenesis, Mutagenesis, Impairment of Fertility).",
+      "Azelaic acid was not mutagenic or clastogenic in a battery of in vitro (Ames assay, HGPRT in V79 cells, chromosomal aberration assay in human lymphocytes) and in vivo (dominant lethal assay in mice and mouse micronucleus assay) genotoxicity tests, and oral administration up to 2500 mg/kg/day (162 times the maximum recommended human dose based on body surface area) did not affect fertility or reproductive performance in male or female rats (FDA FINACEA Gel 15% label, PRECAUTIONS: Carcinogenesis, Mutagenesis, Impairment of Fertility).",
+      "Avoid the use of occlusive dressings or wrappings with either product (FDA AZELEX label, PRECAUTIONS: Information for Patients; FDA FINACEA Gel 15% label, PRECAUTIONS: Information for Patients)."
+    ],
+    "serious_adverse_reactions": [
+      "Iridocyclitis following accidental ocular exposure to FINACEA Gel 15% (FDA FINACEA Gel 15% label, ADVERSE REACTIONS, Post-marketing safety)",
+      "Rare reports of worsening of asthma in patients using azelaic acid formulations (FDA AZELEX label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [
+      "Rosacea trigger-avoidance instruction (not a pharmacokinetic interaction): FINACEA Gel 15% patients are advised to avoid any foods and beverages that might provoke erythema, flushing and blushing, including spicy food, alcoholic beverages and thermally hot drinks such as hot coffee and tea (FDA FINACEA Gel 15% label, INDICATIONS AND USAGE and PRECAUTIONS: Information for Patients).",
+      "No food interaction is described for AZELEX 20% cream, and systemic absorption after topical application is low (less than 4% of the applied dose) (FDA AZELEX label, CLINICAL PHARMACOLOGY: Pharmacokinetics)."
+    ],
+    "pregnancy_category": "B (FDA FINACEA Gel 15% label, PRECAUTIONS: Pregnancy - Pregnancy Category B). The AZELEX 20% cream label does not state a pregnancy letter category.",
+    "pregnancy_guidance": "There are no adequate and well-controlled studies of topically administered azelaic acid in pregnant women, and the experience with FINACEA Gel 15% in pregnant women is too limited to permit assessment of the safety of its use during pregnancy (FDA FINACEA Gel 15% label, PRECAUTIONS: Pregnancy). Oral embryofetal developmental studies in rats, rabbits and cynomolgus monkeys showed embryotoxicity at doses that also produced maternal toxicity (rats 2500 mg/kg/day, rabbits 150-500 mg/kg/day, monkeys 500 mg/kg/day), with no teratogenic effects observed; in an oral peri- and post-natal study in rats, embryotoxicity and slight disturbances in postnatal fetal development were seen at doses that generated maternal toxicity, with no effects on sexual maturation. Because animal reproduction studies are not always predictive of human response, this drug should be used only if clearly needed during pregnancy. The AZELEX 20% cream label likewise reports that embryotoxic effects were observed in oral studies in rats, rabbits and monkeys within toxic dose ranges for the dams with no teratogenic effects observed, that there are no adequate and well-controlled studies in pregnant women, and that the drug should be used during pregnancy only if clearly needed (FDA AZELEX label, PRECAUTIONS: Pregnancy).",
+    "lactation_guidance": "Equilibrium dialysis assessed human milk partitioning in vitro: at an azelaic acid concentration of 25 mcg/mL the milk/plasma distribution coefficient was 0.7 and the milk/buffer distribution was 1.0, indicating that passage of drug into maternal milk may occur. Since less than 4% of a topically applied dose is systemically absorbed, the uptake of azelaic acid into maternal milk is not expected to cause a significant change from baseline azelaic acid levels in the milk; however, caution should be exercised when azelaic acid cream or gel is administered to a nursing mother (FDA AZELEX label, PRECAUTIONS: Nursing Mothers; FDA FINACEA Gel 15% label, PRECAUTIONS: Nursing Mothers).",
+    "overdose": "FINACEA Gel 15% is intended for cutaneous use only. If pronounced local irritation occurs, patients should be directed to discontinue use and appropriate therapy should be instituted (FDA FINACEA Gel 15% label, OVERDOSAGE). The AZELEX 20% cream label contains no overdose section.",
+    "pharmacokinetics": "Following a single application of AZELEX cream to human skin in vitro, azelaic acid penetrates into the stratum corneum (approximately 3 to 5% of the applied dose) and other viable skin layers (up to 10% of the dose is found in the epidermis and dermis), with negligible cutaneous metabolism after topical application. Approximately 4% of the topically applied azelaic acid is systemically absorbed. Azelaic acid is mainly excreted unchanged in the urine but undergoes some beta-oxidation to shorter chain dicarboxylic acids; observed half-lives in healthy subjects are approximately 45 minutes after oral dosing and 12 hours after topical dosing, indicating percutaneous absorption rate-limited kinetics. Azelaic acid is a dietary constituent of whole grain cereals and animal products and can be formed endogenously from longer-chain dicarboxylic acids, metabolism of oleic acid and psi-oxidation of monocarboxylic acids, with endogenous plasma concentrations of 20 to 80 ng/mL and daily urinary excretion of 4 to 28 mg depending on dietary intake; after topical treatment with AZELEX cream, plasma concentration and urinary excretion of azelaic acid are not significantly different from baseline levels (FDA AZELEX label, CLINICAL PHARMACOLOGY: Pharmacokinetics). For FINACEA Gel 15%, percutaneous absorption could not be reliably determined, and mean plasma azelaic acid concentrations in rosacea patients treated twice daily for at least 8 weeks were 42 to 63.1 ng/mL, within the 24.0 to 90.5 ng/mL range observed in patients treated with vehicle alone, indicating the gel does not raise plasma azelaic acid beyond the range derived from nutrition and endogenous metabolism (FDA FINACEA Gel 15% label, Pharmacokinetics).",
+    "clinical_pearls": [
+      "Azelaic acid is available in two FDA-approved topical strengths for two different indications: 20% cream (AZELEX) for mild-to-moderate inflammatory acne vulgaris, and 15% gel (FINACEA) for the inflammatory papules and pustules of mild-to-moderate rosacea; the creams and gels are not interchangeable (FDA AZELEX label, INDICATIONS AND USAGE; FDA FINACEA Gel 15% label, INDICATIONS AND USAGE).",
+      "The mechanism of action is formally unknown; the label attributes activity to antimicrobial effects against Propionibacterium acnes and Staphylococcus epidermidis plus normalisation of keratinisation with reduced microcomedo formation (FDA AZELEX label, CLINICAL PHARMACOLOGY).",
+      "Temporary stinging and burning on broken or inflamed skin is expected in the first days of treatment and is attributed partly to the low pH of azelaic acid; it usually settles with continued use and does not by itself require stopping treatment (FDA AZELEX label, PRECAUTIONS: Information for Patients).",
+      "Systemic absorption is minimal - about 4% of a topical dose - so plasma azelaic acid after treatment is not meaningfully different from the normal endogenous range set by diet (FDA AZELEX label, CLINICAL PHARMACOLOGY: Pharmacokinetics).",
+      "In rosacea, dietary trigger avoidance (spicy food, alcohol, hot drinks) and gentle cleansing are explicitly part of the labelled regimen alongside the gel itself (FDA FINACEA Gel 15% label, INDICATIONS AND USAGE and PRECAUTIONS: Information for Patients).",
+      "Focal hypopigmentation has been reported, so patients with darker complexions should be counselled to report abnormal changes in skin colour (FDA AZELEX label, WARNINGS).",
+      "Neither topical product has a boxed warning, and neither label states a drug-interaction requirement; formal drug-interaction studies have not been performed (FDA FINACEA Gel 15% label, PRECAUTIONS: Drug Interactions)."
+    ],
+    "brand_names": ["AZELEX", "FINACEA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For AZELEX 20% cream: after the skin is thoroughly washed and patted dry, apply a thin film and gently but thoroughly massage it into the affected areas twice daily, in the morning and evening, then wash the hands following application. Keep the cream away from the mouth, eyes and other mucous membranes, and avoid occlusive dressings or wrappings. Store the product on its side, protect from freezing, and store at 15-30 degrees C (59-86 degrees F) (FDA AZELEX label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED). For FINACEA Gel 15%: cleanse the affected area with a very mild soap or soapless cleansing lotion and pat dry with a soft towel, then apply a thin layer and gently massage it into the affected areas of the face twice daily, morning and evening; wash the hands following application and avoid occlusive dressings or wrappings. Store at 25 degrees C (77 degrees F) with excursions permitted between 15-30 degrees C (59-86 degrees F) [USP Controlled Room Temperature] (FDA FINACEA Gel 15% label, PRECAUTIONS: Information for Patients, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, AZELEX (azelaic acid) cream 20%, Almirall, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, AZELEX cream 20%, INDICATIONS AND USAGE; FDA label, FINACEA (azelaic acid) Gel 15%, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, AZELEX cream 20%, CONTRAINDICATIONS; FDA label, FINACEA Gel 15%, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, AZELEX cream 20%, ADVERSE REACTIONS; FDA label, FINACEA Gel 15%, ADVERSE REACTIONS (Table 3 and post-marketing safety)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, AZELEX cream 20%, DOSAGE AND ADMINISTRATION and PRECAUTIONS (Geriatric and Pediatric Use); FDA label, FINACEA Gel 15%, DOSAGE AND ADMINISTRATION and PRECAUTIONS (Geriatric and Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA AZELEX label, DOSAGE AND ADMINISTRATION)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; no established paediatric regimen (FDA AZELEX label, PRECAUTIONS: Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, FINACEA Gel 15%, PRECAUTIONS: Drug Interactions (no formal studies performed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, AZELEX cream 20%, WARNINGS, PRECAUTIONS (General) and DOSAGE AND ADMINISTRATION; FDA label, FINACEA Gel 15%, WARNINGS, PRECAUTIONS (General) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, AZELEX cream 20%, PRECAUTIONS: Information for Patients; FDA label, FINACEA Gel 15%, PRECAUTIONS: Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, AZELEX cream 20%, WARNINGS; FDA label, FINACEA Gel 15%, WARNINGS and PRECAUTIONS: General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, AZELEX cream 20%, PRECAUTIONS (General, Information for Patients, Carcinogenesis/Mutagenesis/Impairment of Fertility); FDA label, FINACEA Gel 15%, PRECAUTIONS (General, Information for Patients, Carcinogenesis/Mutagenesis/Impairment of Fertility)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, FINACEA Gel 15%, ADVERSE REACTIONS (post-marketing safety); FDA label, AZELEX cream 20%, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, FINACEA Gel 15%, INDICATIONS AND USAGE and PRECAUTIONS: Information for Patients; FDA label, AZELEX cream 20%, CLINICAL PHARMACOLOGY: Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, FINACEA Gel 15%, PRECAUTIONS: Pregnancy (Pregnancy Category B); FDA label, AZELEX cream 20%, PRECAUTIONS: Pregnancy (no letter category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, FINACEA Gel 15%, PRECAUTIONS: Pregnancy; FDA label, AZELEX cream 20%, PRECAUTIONS: Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, AZELEX cream 20%, PRECAUTIONS: Nursing Mothers; FDA label, FINACEA Gel 15%, PRECAUTIONS: Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, FINACEA Gel 15%, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, AZELEX cream 20%, CLINICAL PHARMACOLOGY: Pharmacokinetics; FDA label, FINACEA Gel 15%, Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, AZELEX cream 20%, INDICATIONS AND USAGE, CLINICAL PHARMACOLOGY, WARNINGS and PRECAUTIONS: Information for Patients; FDA label, FINACEA Gel 15%, INDICATIONS AND USAGE, PRECAUTIONS (Drug Interactions, Information for Patients)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "brand_names",
+      "ref": "AZELEX (azelaic acid cream 20%, Almirall) and FINACEA (azelaic acid gel 15%) listed on DailyMed as brand products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63773349-0295-4d56-a72e-0d7cade88ddb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, AZELEX cream 20% and FINACEA Gel 15% - neither prescribing information contains a Boxed Warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in the FDA AZELEX cream 20% or FINACEA Gel 15% labels (topical administration; less than 4% of the applied dose is systemically absorbed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA AZELEX cream 20% or FINACEA Gel 15% labels (topical administration; less than 4% of the applied dose is systemically absorbed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, AZELEX cream 20%, DOSAGE AND ADMINISTRATION, PRECAUTIONS: Information for Patients and HOW SUPPLIED; FDA label, FINACEA Gel 15%, DOSAGE AND ADMINISTRATION, PRECAUTIONS: Information for Patients and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the topical azelaic acid labels)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the topical azelaic acid labels)"
+  ],
+  "notes": "The table stores this agent as 'Azelaic Acid' with brand_names 'azelaic acid'; the molecule is the same in both cases and no alias is needed. Azelaic acid has two distinct FDA-approved topical products with different indications and different excipient contraindications, and both are covered here: AZELEX 20% cream (Almirall) for mild-to-moderate inflammatory acne vulgaris and FINACEA 15% gel (Intendis) for the inflammatory papules and pustules of mild-to-moderate rosacea. A third DailyMed product, FINACEA 15% foam, is an alternative rosacea formulation and was not used as a source here. The AZELEX cream label states no pregnancy letter category while FINACEA states pregnancy category B; the pregnancy_category field reflects the FINACEA label and says so. There is no oral azelaic acid product and no boxed warning for either topical product. The drug_class stored in the database for this row is null; on the evidence of these labels the appropriate class is a topical dermatological antiacne/anti-rosacea agent. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

@@ -1,0 +1,211 @@
+{
+  "name": "Azilsartan",
+  "existing_id": "a599ba05-23d2-4361-8bbc-30ed9c1f702a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Azilsartan medoxomil is an orally administered prodrug that is rapidly converted by esterases during absorption to the active moiety, azilsartan. Azilsartan blocks the vasoconstrictor and aldosterone-secreting effects of angiotensin II by selectively blocking the binding of angiotensin II to the AT1 receptor in many tissues, such as vascular smooth muscle and the adrenal gland; its action is therefore independent of the pathway for angiotensin II synthesis. An AT2 receptor is also found in many tissues but is not known to be associated with cardiovascular homeostasis, and azilsartan has more than a 10,000-fold greater affinity for the AT1 receptor than for the AT2 receptor. Because azilsartan does not inhibit ACE (kinase II) it should not affect bradykinin levels, and it does not bind to or block other receptors or ion channels known to be important in cardiovascular regulation. Blockade of the angiotensin II receptor inhibits the negative regulatory feedback of angiotensin II on renin secretion, but the resulting increase in plasma renin activity and circulating angiotensin II does not overcome the effect of azilsartan on blood pressure (FDA EDARBI (azilsartan medoxomil) label, sections 12.1 and 11).",
+    "indications": [
+      "Treatment of hypertension in adults, to lower blood pressure. Lowering blood pressure reduces the risk of fatal and non-fatal cardiovascular events, primarily strokes and myocardial infarctions; there are no controlled trials demonstrating risk reduction with Edarbi. Control of high blood pressure should be part of comprehensive cardiovascular risk management, and Edarbi may be used alone or in combination with other antihypertensive agents (FDA EDARBI label, section 1)"
+    ],
+    "contraindications": [
+      "Do not coadminister aliskiren-containing products with Edarbi in patients with diabetes (FDA EDARBI label, section 4)"
+    ],
+    "side_effects": [
+      "Diarrhoea was the most common adverse reaction in adults, reported up to 2% in patients treated with Edarbi 80 mg daily versus 0.5% on placebo (FDA EDARBI label, sections 6 and 6.1)",
+      "Other adverse reactions with a plausible relationship to treatment, reported in at least 0.3% of patients and more frequently than placebo in more than 3300 patients treated in controlled trials: nausea (gastrointestinal disorders); asthenia and fatigue (general disorders and administration site conditions); muscle spasm (musculoskeletal and connective tissue disorders); dizziness and postural dizziness (nervous system disorders); and cough (respiratory, thoracic and mediastinal disorders) (FDA EDARBI label, section 6.1)",
+      "Hypotension and orthostatic hypotension was the most common adverse event leading to discontinuation, reported in 0.4% (8/2146) of patients randomised to Edarbi 40 mg or 80 mg versus 0% of placebo patients (FDA EDARBI label, section 6.1)",
+      "Overall adverse reaction incidence was similar to placebo; withdrawals due to adverse events were 2.4% for placebo, 2.2% for Edarbi 40 mg and 2.7% for Edarbi 80 mg. Generally adverse reactions were mild, not dose related, and similar regardless of age, gender and race (FDA EDARBI label, section 6.1)",
+      "Post-marketing: rash, pruritus and angioedema (FDA EDARBI label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "The recommended dose in adults is 80 mg taken orally once daily. Consider a starting dose of 40 mg for patients who are treated with high doses of diuretics. Edarbi may be administered with or without food, and may be administered with other antihypertensive agents (FDA EDARBI label, sections 2 and 2.1).",
+      "geriatric": "No dose adjustment with Edarbi is necessary in elderly patients. Of the total patients in clinical studies with Edarbi, 26% were elderly (65 years of age and older) and 5% were 75 years of age and older; abnormally high serum creatinine values were more likely to be reported for patients aged 75 or older, but no other differences in safety or effectiveness were observed between elderly patients and younger patients, although greater sensitivity in some older individuals cannot be ruled out (FDA EDARBI label, section 8.5).",
+      "paediatric": "Safety and effectiveness of Edarbi in paediatric patients have not been established, and use of Edarbi is not recommended in children less than 2 years of age because it is not known whether post-natal use before maturation of kidney function is complete has a long-term deleterious effect on the kidney. In juvenile rat studies, dosing from post-natal day 14 produced a non-reversible increased incidence of oedema of the renal papilla in the high-dose group, which was not seen with dosing from post-natal day 21 or in adult rats (FDA EDARBI label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Non-steroidal anti-inflammatory drugs, including selective COX-2 inhibitors: co-administration with angiotensin II receptor antagonists including azilsartan may result in deterioration of renal function, including possible acute renal failure, in patients who are elderly, volume-depleted (including those on diuretic therapy) or who have compromised renal function; these effects are usually reversible, so renal function should be monitored periodically. The antihypertensive effect of angiotensin II receptor antagonists may also be attenuated by NSAIDs (FDA EDARBI label, section 7.1).",
+      "Dual blockade of the renin-angiotensin system with angiotensin receptor blockers, ACE inhibitors or aliskiren is associated with increased risks of hypotension, hyperkalemia and changes in renal function (including acute renal failure) compared with monotherapy, and most patients obtain no additional benefit; in general avoid combined use of RAS inhibitors and closely monitor blood pressure, renal function and electrolytes. Do not coadminister aliskiren with Edarbi in patients with diabetes, and avoid use of aliskiren with Edarbi in patients with renal impairment (GFR <60 mL/min) (FDA EDARBI label, section 7.2).",
+      "Lithium: increases in serum lithium concentrations and lithium toxicity have been reported during concomitant administration of lithium with angiotensin II receptor antagonists; monitor serum lithium levels during concomitant use (FDA EDARBI label, section 7.3)."
+    ],
+    "monitoring": "Monitor blood pressure, and correct volume or salt depletion before administering Edarbi, since symptomatic hypotension may occur after initiation in patients with an activated renin-angiotensin system such as volume- or salt-depleted patients (FDA EDARBI label, section 5.2). Monitor for worsening renal function in patients with renal impairment, because inhibiting the renin-angiotensin system can cause changes in renal function, with oliguria or progressive azotemia and rarely acute renal failure and death in patients whose renal function depends on renin-angiotensin system activity, such as those with severe congestive heart failure, renal artery stenosis or volume depletion (section 5.3). Closely monitor blood pressure, renal function and electrolytes in patients on Edarbi and other agents that affect the renin-angiotensin system (section 7.2). Monitor serum lithium levels during concomitant use with lithium (section 7.3). Monitor renal function periodically in patients receiving azilsartan and NSAID therapy, and in the elderly monitor serum creatinine, since abnormally high serum creatinine values were more likely to be reported in patients aged 75 or older (sections 7.1 and 8.5).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient information leaflet (FDA EDARBI label, section 17). Tell female patients of childbearing potential about the consequences of exposure to Edarbi during pregnancy, discuss treatment options with women planning to become pregnant, and tell patients to report pregnancies to their physicians as soon as possible. Tell patients that Edarbi can cause harm or death to an unborn baby, that they should talk to their doctor about other ways to lower blood pressure if they plan to become pregnant, and that if they become pregnant while taking Edarbi they should tell their doctor right away because the doctor may switch them to a different medicine (section 17, Patient Information). Advise patients to tell their doctor before starting treatment if they have been told they have abnormal body salt (electrolyte) levels in their blood, are pregnant or planning to become pregnant, or are breastfeeding or planning to breastfeed; it is not known if Edarbi passes into breast milk, so the patient and doctor should decide whether to take Edarbi or breastfeed, but should not do both (section 17, Patient Information). Advise patients to tell their doctor about all medicines taken, including prescription and non-prescription medicines, vitamins and herbal supplements, especially other medicines used to treat high blood pressure or heart problems and water pills (diuretics) (section 17, Patient Information). Advise that Edarbi can be taken with or without food, and that if too much is taken the patient should call the doctor or go to the nearest hospital emergency room right away (section 17, Patient Information). Explain that low blood pressure and dizziness are most likely to happen if the patient also takes water pills (diuretics), is on a low-salt diet, takes other medicines that affect blood pressure, gets sick with vomiting or diarrhoea, or does not drink enough fluids, and that if the patient feels faint or dizzy they should lie down and call the doctor right away (section 17, Patient Information). Advise patients to store Edarbi at 59 to 86 degrees F (15 to 30 degrees C), in the original container received from the pharmacist or doctor, in a tightly closed container and out of the light, and to keep it out of the reach of children (section 17, Patient Information).",
+    "warnings": [
+      "Fetal toxicity: Edarbi can cause fetal harm when administered to a pregnant woman. Use of drugs that act on the renin-angiotensin system during the second and third trimesters of pregnancy reduces fetal renal function and increases fetal and neonatal morbidity and death; resulting oligohydramnios can be associated with fetal lung hypoplasia and skeletal deformations, and potential neonatal adverse effects include skull hypoplasia, anuria, hypotension, renal failure and death. When pregnancy is detected, discontinue Edarbi as soon as possible (FDA EDARBI label, sections 5.1 and 8.1)",
+      "Hypotension in volume- or salt-depleted patients: symptomatic hypotension may occur after initiation of treatment in patients with an activated renin-angiotensin system, such as those being treated with high doses of diuretics; correct volume or salt depletion prior to administration or start treatment at 40 mg. If hypotension occurs, place the patient in the supine position and, if necessary, give an intravenous infusion of normal saline; a transient hypotensive response is not a contraindication to further treatment (FDA EDARBI label, section 5.2)",
+      "Impaired renal function: as a consequence of inhibiting the renin-angiotensin system, changes in renal function may be anticipated in susceptible individuals. In patients whose renal function may depend on renin-angiotensin system activity (e.g. severe congestive heart failure, renal artery stenosis, or volume depletion), treatment with ACE inhibitors and angiotensin receptor blockers has been associated with oliguria or progressive azotemia and rarely with acute renal failure and death; similar results may be anticipated with Edarbi (FDA EDARBI label, section 5.3)"
+    ],
+    "precautions": [
+      "Correct volume or salt depletion prior to administration of Edarbi, or start treatment at 40 mg, in patients with an activated renin-angiotensin system (FDA EDARBI label, section 5.2).",
+      "Do not coadminister aliskiren-containing products with Edarbi in patients with diabetes; avoid use of aliskiren with Edarbi in patients with renal impairment (GFR <60 mL/min), and in general avoid combined use of RAS inhibitors (FDA EDARBI label, sections 4 and 7.2).",
+      "Use of Edarbi is not recommended in children less than 2 years of age, and safety and effectiveness in paediatric patients have not been established (FDA EDARBI label, section 8.4).",
+      "Do not repackage Edarbi; dispense and store it in its original container to protect it from light and moisture (FDA EDARBI label, sections 2.2 and 16).",
+      "Edarbi has not been studied in patients with severe hepatic impairment (FDA EDARBI label, section 8.7).",
+      "There has been no long-term use of Edarbi in patients with unilateral or bilateral renal artery stenosis, but similar results to those seen with ACE inhibitors may be expected in this group (FDA EDARBI label, section 5.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Fetal and neonatal toxicity when used in the second and third trimesters of pregnancy: oligohydramnios, reduced fetal renal function leading to anuria and renal failure, fetal lung hypoplasia, skeletal deformations including skull hypoplasia, hypotension and death (FDA EDARBI label, sections 5.1 and 8.1)",
+      "Symptomatic hypotension, particularly in volume- or salt-depleted patients (FDA EDARBI label, section 5.2)",
+      "Acute renal failure and progressive azotemia in patients whose renal function depends on renin-angiotensin system activity (FDA EDARBI label, section 5.3)",
+      "Angioedema, reported during post-marketing use (FDA EDARBI label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Food does not affect the bioavailability of azilsartan, and Edarbi may be administered with or without food (FDA EDARBI label, sections 2.1 and 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Edarbi can cause fetal harm when administered to a pregnant woman. Use of drugs that act on the renin-angiotensin system during the second and third trimesters of pregnancy reduces fetal renal function and increases fetal and neonatal morbidity and death; resulting oligohydramnios can be associated with fetal lung hypoplasia and skeletal deformations, and potential neonatal adverse effects include skull hypoplasia, anuria, hypotension, renal failure and death. When pregnancy is detected, discontinue Edarbi as soon as possible. Most epidemiologic studies examining fetal abnormalities after first-trimester antihypertensive exposure have not distinguished drugs affecting the renin-angiotensin system from other antihypertensive agents. Clinically, perform serial ultrasound examinations to assess the intra-amniotic environment and consider fetal testing based on the week of pregnancy, recognising that oligohydramnios may not appear until after the fetus has sustained irreversible injury; closely observe infants with a history of in utero exposure for hypotension, oliguria and hyperkalemia, supporting blood pressure and renal perfusion and using exchange transfusion or dialysis if needed (FDA EDARBI label, sections 5.1 and 8.1).",
+    "lactation_guidance": "There is limited information regarding the presence of azilsartan in human milk, its effects on the breastfed infant, or its effects on milk production. Azilsartan is present in rat milk. Because of the potential for adverse effects on the nursing infant, advise a nursing woman that breastfeeding is not recommended during treatment with Edarbi (FDA EDARBI label, section 8.2).",
+    "overdose": "Limited data are available related to overdosage in humans. During controlled clinical trials in healthy subjects, once-daily doses up to 320 mg of Edarbi were administered for seven days and were well tolerated. In the event of an overdose, supportive therapy should be instituted as dictated by the patient's clinical status. Azilsartan is not dialyzable (FDA EDARBI label, section 10).",
+    "pharmacokinetics": "Azilsartan medoxomil is hydrolysed to azilsartan in the gastrointestinal tract during absorption and is not detected in plasma after oral administration; dose proportionality in azilsartan exposure was established over the azilsartan medoxomil dose range of 20 mg to 320 mg after single or multiple dosing. The estimated absolute bioavailability of azilsartan following administration of azilsartan medoxomil is approximately 60%, peak plasma concentrations are reached within 1.5 to 3 hours, and food does not affect bioavailability. The volume of distribution of azilsartan is approximately 16 L and azilsartan is highly bound (>99%) to plasma proteins, mainly serum albumin. Azilsartan is metabolised to two primary metabolites: M-II, formed by O-dealkylation, which is the major metabolite in plasma at approximately 50% of azilsartan exposure, and M-I, formed by decarboxylation, at less than 1%; neither contributes to the pharmacologic activity of Edarbi, and the major enzyme responsible for azilsartan metabolism is CYP2C9. Following an oral dose of 14C-labelled azilsartan medoxomil, approximately 55% of radioactivity was recovered in faeces and approximately 42% in urine, with 15% of the dose excreted in urine as azilsartan. The elimination half-life of azilsartan is approximately 11 hours, renal clearance is approximately 2.3 mL/min, steady-state levels are achieved within five days, and no accumulation in plasma occurs with repeated once-daily dosing (FDA EDARBI label, section 12.3).",
+    "clinical_pearls": [
+      "Azilsartan is the active moiety; the marketed product is the prodrug azilsartan medoxomil (US accepted name azilsartan kamedoxomil), which is hydrolysed by esterases during absorption (FDA EDARBI label, sections 11 and 12.3).",
+      "A starting dose of 40 mg rather than 80 mg should be considered in patients on high-dose diuretics, because an activated renin-angiotensin system predisposes to symptomatic hypotension on initiation (FDA EDARBI label, sections 2.1 and 5.2).",
+      "Edarbi carries a boxed fetal toxicity warning: unlike older renin-angiotensin system blockers, its label explicitly instructs that the drug be discontinued as soon as pregnancy is detected (FDA EDARBI label, Boxed Warning and section 5.1).",
+      "Edarbi has the longest half-life among commonly used angiotensin II receptor blockers (approximately 11 hours) and achieves 24-hour blood pressure coverage with once-daily dosing (FDA EDARBI label, section 12.3).",
+      "Azilsartan has more than 10,000-fold greater affinity for the AT1 receptor than for the AT2 receptor and does not inhibit ACE, so it does not affect bradykinin levels (FDA EDARBI label, section 12.1).",
+      "The combination product EDARBYCLOR (azilsartan kamedoxomil and chlorthalidone) is a separate label with its own dosing; this monograph covers azilsartan alone (FDA EDARBI label).",
+      "No dose adjustment is required across the renal spectrum, including end-stage renal disease, although patients with moderate to severe renal impairment are more likely to report abnormally high serum creatinine values (FDA EDARBI label, section 8.6)."
+    ],
+    "brand_names": ["EDARBI"],
+    "black_box_warnings": [
+      "WARNING: FETAL TOXICITY - when pregnancy is detected, discontinue Edarbi as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus (FDA EDARBI label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "Dose adjustment is not required in patients with mild-to-severe renal impairment or end-stage renal disease. Patients with moderate to severe renal impairment are more likely to report abnormally high serum creatinine values, and renal function should be monitored in patients whose renal function depends on renin-angiotensin system activity (FDA EDARBI label, sections 5.3 and 8.6).",
+    "hepatic_dose_adjustment": "No dose adjustment is necessary for subjects with mild or moderate hepatic impairment. Edarbi has not been studied in patients with severe hepatic impairment (FDA EDARBI label, section 8.7).",
+    "administration_instructions": "Take 80 mg orally once daily (consider 40 mg as a starting dose for patients on high doses of diuretics); Edarbi may be taken with or without food. Do not repackage Edarbi: dispense and store it in its original container to protect it from light and moisture. Store at 25 degrees C (77 degrees F), with excursions permitted to 15-30 degrees C (59-86 degrees F) [USP Controlled Room Temperature]; keep the container tightly closed, protect from moisture and light, and do not repackage (FDA EDARBI label, sections 2.1, 2.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, Azurity Pharmaceuticals, sections 12.1 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 6, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 2, 2.1, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA EDARBI label, section 2.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; no established paediatric regimen (FDA EDARBI label, section 8.4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 7.1, 7.2 and 7.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 5.2, 5.3, 7.1, 7.2, 7.3 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 17 (Patient Counseling Information and Patient Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 5.1, 5.2 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 2.2, 4, 5.2, 5.3, 7.2, 8.4, 8.7 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 5.1, 5.2, 5.3, 6.2 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 2.1 and 12.3 (food does not affect bioavailability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated in the current FDA EDARBI label (post-PLLR label; fetal toxicity is covered in the Boxed Warning and sections 5.1 and 8.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 5.1 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, Boxed Warning, sections 2.1, 5.1, 5.2, 8.6, 11 and 12.1-12.3; EDARBYCLOR listed on DailyMed as the separate combination product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "brand_names",
+      "ref": "EDARBI (azilsartan medoxomil) listed on DailyMed as the Azurity Pharmaceuticals brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, Boxed Warning (WARNING: FETAL TOXICITY)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 5.3 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, EDARBI (azilsartan medoxomil) tablets, sections 2.1, 2.2 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52b27c75-9f5a-4816-bafd-dace9d7d2063"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)",
+    "pregnancy_category (the current FDA EDARBI label is a post-PLLR label and does not state a pregnancy letter category; fetal toxicity is covered by the boxed warning)"
+  ],
+  "notes": "Name alias: the table stores this agent as 'Azilsartan', which is the INN of the active moiety. The marketed product is the prodrug azilsartan medoxomil - the current US label uses the US accepted name azilsartan kamedoxomil for the drug substance, which is the potassium salt of azilsartan medoxomil (each 40 mg or 80 mg tablet contains 42.68 mg or 85.36 mg of azilsartan kamedoxomil, equivalent to 40 mg or 80 mg of azilsartan medoxomil). The EDARBI label contains no US-specific pregnancy letter category (post-PLLR), so pregnancy_category is null and the fetal risk is described under the boxed warning. The separate fixed-dose combination EDARBYCLOR (azilsartan kamedoxomil and chlorthalidone) has its own label and is out of scope for this monograph. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

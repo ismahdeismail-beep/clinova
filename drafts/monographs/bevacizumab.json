@@ -1,0 +1,257 @@
+{
+  "name": "Bevacizumab",
+  "existing_id": "5bd42d0d-d2c8-4ece-8c03-a91e661fc4ca",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bevacizumab is a humanized monoclonal antibody that binds to vascular endothelial growth factor (VEGF) and prevents the interaction of VEGF with its receptors (Flt-1 and KDR, i.e. VEGFR-1 and VEGFR-2) on the surface of endothelial cells. The interaction of VEGF with its receptors leads to endothelial cell proliferation and new blood vessel formation in in vitro models of angiogenesis; administration of bevacizumab to xenotransplant models of colon cancer in nude (athymic) mice caused reduction of microvascular growth and inhibition of metastatic disease progression (FDA Mvasi label, MECHANISM OF ACTION). The EMA product information states that neutralising the biological activity of VEGF regresses the vascularisation of tumours, normalises remaining tumour vasculature and inhibits the formation of new tumour vasculature, thereby inhibiting tumour growth (EMA Avastin product information, section 5.1).",
+    "indications": [
+      "Metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or second-line treatment (FDA Mvasi label, section 1.1)",
+      "Metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-based chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing regimen (FDA Mvasi label, section 1.1)",
+      "Not indicated for adjuvant treatment of colon cancer (FDA Mvasi label, Limitations of Use, section 1.1)",
+      "Unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in combination with carboplatin and paclitaxel for first-line treatment (FDA Mvasi label, section 1.2)",
+      "Recurrent glioblastoma in adults (FDA Mvasi label, section 1.3)",
+      "Metastatic renal cell carcinoma in combination with interferon-alfa (FDA Mvasi label, section 1.4)",
+      "Persistent, recurrent or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and topotecan (FDA Mvasi label, section 1.5)",
+      "Epithelial ovarian, fallopian tube or primary peritoneal cancer: in combination with carboplatin and paclitaxel followed by bevacizumab as a single agent for stage III or IV disease following initial surgical resection; in combination with paclitaxel, pegylated liposomal doxorubicin or topotecan for platinum-resistant recurrent disease in patients who received no more than 2 prior chemotherapy regimens; in combination with carboplatin and paclitaxel or carboplatin and gemcitabine followed by bevacizumab as a single agent for platinum-sensitive recurrent disease (FDA Mvasi label, section 1.6)",
+      "The FDA Avastin label additionally includes hepatocellular carcinoma in combination with atezolizumab for patients with unresectable or metastatic HCC who have not received prior systemic therapy (FDA Avastin label, section 1.7)"
+    ],
+    "contraindications": [
+      "US labelling: none. The FDA Mvasi and Avastin labels both state 'Contraindications: None' (FDA Mvasi label, section 4; FDA Avastin label, section 4)",
+      "EMA labelling: hypersensitivity to the active substance or to any of the excipients; hypersensitivity to Chinese Hamster Ovary (CHO) cell products or other recombinant human or humanised antibodies; and pregnancy (EMA Avastin product information, section 4.3)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (incidence >10%): epistaxis, headache, hypertension, rhinitis, proteinuria, taste alteration, dry skin, hemorrhage, lacrimation disorder, back pain and exfoliative dermatitis (FDA Mvasi label, section 6.1)",
+      "Gastrointestinal perforations and fistulae: serious and sometimes fatal gastrointestinal perforation occurred in 0.3% to 3% of patients across clinical studies, with the majority within 50 days of the first dose; fistulae (tracheoesophageal, bronchopleural, biliary, vaginal, renal and bladder) occurred in <1% to 1.8% of patients, mostly within 6 months of the first dose (FDA Mvasi label, section 5.1)",
+      "Hemorrhage: severe or fatal hemorrhage including hemoptysis, gastrointestinal bleeding, hematemesis, CNS hemorrhage, epistaxis and vaginal bleeding; serious or fatal pulmonary hemorrhage occurred in 31% of patients with squamous NSCLC and 4% with non-squamous NSCLC receiving bevacizumab with chemotherapy versus none on chemotherapy alone (FDA Mvasi label, section 5.3)",
+      "Arterial thromboembolic events: cerebral infarction, transient ischemic attacks, myocardial infarction and angina; Grade 3-5 ATE occurred in 5% of patients on bevacizumab with chemotherapy versus <=2% on chemotherapy alone, with the highest incidence in glioblastoma (FDA Mvasi label, section 5.4)",
+      "Venous thromboembolic events: Grade 3-4 VTE occurred in 11% of patients on bevacizumab with chemotherapy versus 5% on chemotherapy alone in Study GOG-0240 (FDA Mvasi label, section 5.5)",
+      "Hypertension: Grade 3-4 hypertension in 5% to 18% of patients across clinical studies (FDA Mvasi label, section 5.6)",
+      "Renal injury and proteinuria: Grade 3-4 proteinuria in 0.7% to 7% of patients; nephrotic syndrome in <1%, sometimes fatal (FDA Mvasi label, section 5.8)",
+      "Infusion-related reactions: hypertension, hypertensive crises with neurologic signs, wheezing, oxygen desaturation, Grade 3 hypersensitivity, anaphylactoid/anaphylactic reactions, chest pain, headaches, rigors and diaphoresis; first-dose infusion-related reactions occurred in <3% of patients and severe reactions in 0.4% (FDA Mvasi label, section 5.9)",
+      "Posterior reversible encephalopathy syndrome (PRES) in <0.5% of patients, with onset from 16 hours to 1 year after the first dose (FDA Mvasi label, section 5.7)",
+      "Wound healing complications: 15% incidence in patients with mCRC undergoing surgery while receiving bevacizumab versus 4% in those who did not receive bevacizumab; necrotizing fasciitis has been reported (FDA Mvasi label, section 5.2)",
+      "Ovarian failure and congestive heart failure (FDA Mvasi label, sections 5.11 and 5.12)",
+      "Postmarketing adverse reactions: polyserositis, pulmonary hypertension, mesenteric venous occlusion, gastrointestinal ulcer, intestinal necrosis, anastomotic ulceration, pancytopenia, gallbladder perforation, osteonecrosis of the jaw, renal thrombotic microangiopathy (severe proteinuria), nasal septum perforation, and arterial (including aortic) aneurysms, dissections and rupture (FDA Mvasi label, POSTMARKETING EXPERIENCE)",
+      "EMA-listed very common adverse reactions include eye disorder and increased lacrimation, hypertension, haemorrhage, thromboembolism, dyspnoea, rhinitis, epistaxis, cough, wound healing complications, exfoliative dermatitis, dry skin, skin discolouration, rectal haemorrhage, stomatitis, constipation, diarrhoea, nausea, vomiting, abdominal pain, arthralgia, myalgia, muscular weakness, back pain, peripheral sensory neuropathy, dysarthria, syncope, headache, somnolence, dysgeusia, anorexia, dehydration, hypomagnesaemia, hyponatraemia, hypersensitivity/infusion reactions and anaphylactic shock (EMA Avastin product information, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Metastatic colorectal cancer: 5 mg/kg every 2 weeks with bolus-IFL, or 10 mg/kg every 2 weeks with FOLFOX4, or 5 mg/kg every 2 weeks or 7.5 mg/kg every 3 weeks with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-based chemotherapy after progression on a first-line bevacizumab product-containing regimen. First-line non-squamous NSCLC: 15 mg/kg every 3 weeks with carboplatin and paclitaxel. Recurrent glioblastoma: 10 mg/kg every 2 weeks. Metastatic renal cell carcinoma: 10 mg/kg every 2 weeks with interferon-alfa. Persistent, recurrent or metastatic cervical cancer: 15 mg/kg every 3 weeks with paclitaxel and cisplatin, or paclitaxel and topotecan. Stage III or IV epithelial ovarian/fallopian tube/primary peritoneal cancer following initial surgical resection: 15 mg/kg every 3 weeks with carboplatin and paclitaxel for up to 6 cycles, followed by 15 mg/kg every 3 weeks as a single agent for a total of up to 22 cycles. Platinum-resistant recurrent disease: 10 mg/kg every 2 weeks with paclitaxel, pegylated liposomal doxorubicin or weekly topotecan, or 15 mg/kg every 3 weeks with topotecan given every 3 weeks. Platinum-sensitive recurrent disease: 15 mg/kg every 3 weeks with carboplatin and paclitaxel for 6 to 8 cycles or with carboplatin and gemcitabine for 6 to 10 cycles, followed by 15 mg/kg every 3 weeks as a single agent (FDA Mvasi label, sections 2.2 to 2.7). Administer as an intravenous infusion after dilution; first infusion over 90 minutes, second over 60 minutes if the first is tolerated, and subsequent infusions over 30 minutes if the 60-minute infusion is tolerated (FDA Mvasi label, section 2.9). Withhold for at least 28 days prior to elective surgery and do not administer for at least 28 days following major surgery and until adequate wound healing (FDA Mvasi label, section 2.1). Dose reduction is not recommended: if indicated, therapy should either be permanently discontinued or temporarily suspended as described in section 4.4 of the EMA product information (EMA Avastin product information, section 4.2).",
+      "geriatric": "In an exploratory pooled analysis of 1745 patients from five randomized, controlled studies, 35% of patients were 65 years or older; the increase in incidence of arterial thromboembolic events was greater in patients 65 years and older (8% vs 3%) than in patients under 65 years (2% vs 1%) (FDA Mvasi label, section 8.5). No dose adjustment is required in patients 65 years of age or older (EMA Avastin product information, section 4.2).",
+      "paediatric": "The safety and effectiveness of bevacizumab products in pediatric patients have not been established; bevacizumab products are not approved for use in patients under the age of 18 years. Non-mandibular osteonecrosis has been observed in published reports in patients under 18 years who received bevacizumab, and antitumor activity was not observed among eight pediatric patients with relapsed glioblastoma who received bevacizumab with irinotecan (FDA Mvasi label, section 8.4). The EMA product information states that the safety and efficacy of bevacizumab in children aged less than 18 years have not been established and that no recommendation on posology can be made (EMA Avastin product information, section 4.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No clinically relevant effect of co-administered chemotherapy on bevacizumab pharmacokinetics was observed in population pharmacokinetic analyses, and no clinically relevant difference in bevacizumab clearance was seen between monotherapy and combination with interferon alfa-2a, erlotinib or chemotherapy (IFL, 5-FU/LV, carboplatin/paclitaxel, capecitabine, doxorubicin or cisplatin/gemcitabine) (EMA Avastin product information, section 4.5)",
+      "No clinically meaningful effect on the pharmacokinetics of irinotecan or its active metabolite SN38, interferon-alfa, carboplatin or paclitaxel was observed when bevacizumab was administered in combination with these drugs (FDA Mvasi label, section 7)",
+      "Combination with sunitinib malate: microangiopathic haemolytic anaemia was reported in 7 of 19 patients treated with bevacizumab 10 mg/kg every two weeks plus sunitinib malate 50 mg daily in metastatic renal cell carcinoma; all findings were reversible on discontinuation (EMA Avastin product information, section 4.5)",
+      "Combination with platinum- or taxane-based therapies: increased rates of severe neutropenia, febrile neutropenia, or infection with or without severe neutropenia (including some fatalities) have been observed, mainly in NSCLC and metastatic breast cancer (EMA Avastin product information, section 4.5)",
+      "Radiotherapy: the EMA product information addresses concomitant radiotherapy in section 4.5 and warns that bevacizumab may impair wound healing and increase bleeding risk (EMA Avastin product information, sections 4.4 and 4.5)",
+      "There is no information on the safety profile of bevacizumab in patients with congenital bleeding diathesis, acquired coagulopathy or in patients receiving full-dose anticoagulants for thromboembolism before treatment, as such patients were excluded from clinical trials; caution should be exercised (EMA Avastin product information, section 4.4)",
+      "The use of diuretics to manage hypertension is not advised in patients who receive a cisplatin-based chemotherapy regimen (EMA Avastin product information, section 4.4)"
+    ],
+    "monitoring": "Monitor blood pressure every two to three weeks during treatment, treat with appropriate antihypertensive therapy, monitor blood pressure regularly, continue monitoring after discontinuation for bevacizumab-induced or exacerbated hypertension, withhold if severe hypertension is not controlled by medical management and resume once controlled, and discontinue for hypertensive crisis or hypertensive encephalopathy (FDA Mvasi label, section 5.6). Monitor proteinuria by dipstick urinalysis for the development or worsening of proteinuria with serial urinalyses during therapy; patients with a 2+ or greater urine dipstick reading should undergo a 24-hour urine collection; withhold for proteinuria of 2 grams or more per 24 hours and resume when below 2 grams per 24 hours; discontinue for nephrotic syndrome (FDA Mvasi label, section 5.8). Patients should be monitored for signs and symptoms of central nervous system bleeding, and bevacizumab treatment discontinued in cases of intracranial bleeding (EMA Avastin product information, section 4.4). Monitor for infection and neutropenia when used with myelosuppressive chemotherapy (EMA Avastin product information, sections 4.4 and 4.5). Monitor wound healing after any surgery and withhold the drug until adequate wound healing (FDA Mvasi label, section 5.2). Observe the patient closely during and following administration for infusion or hypersensitivity reactions; decrease the infusion rate for mild reactions, interrupt for clinically significant reactions and discontinue with appropriate medical therapy for severe reactions (FDA Mvasi label, section 5.9). Confirm the diagnosis of PRES by brain imaging, preferably MRI, and discontinue if PRES develops (FDA Mvasi label, section 5.7).",
+    "patient_counselling": "Advise patients to immediately contact their health care provider for high fever, rigors, persistent or severe abdominal pain, severe constipation or vomiting, which may indicate gastrointestinal perforation or fistula (FDA Mvasi label, section 17). Instruct patients not to undergo surgery without first discussing the risk of wound healing complications with their health care provider (FDA Mvasi label, section 17). Advise patients to immediately contact their health care provider for signs and symptoms of serious or unusual bleeding, including coughing or spitting blood (FDA Mvasi label, section 17). Advise patients to immediately contact their health care provider for signs and symptoms of arterial or venous thromboembolism, and to contact their provider if they experience changes in blood pressure (FDA Mvasi label, section 17). Advise pregnant women of the potential risk to a fetus, and advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose (FDA Mvasi label, sections 5.10 and 8.1, and section 17). Advise women not to breastfeed during treatment and for 6 months after the last dose (FDA Mvasi label, section 8.2). Advise patients that bevacizumab may impair female fertility, so fertility preservation strategies should be discussed before starting treatment (EMA Avastin product information, sections 4.4 and 4.8).",
+    "warnings": [
+      "Gastrointestinal perforations and fistula: discontinue for gastrointestinal perforations, tracheoesophageal fistula, Grade 4 fistula, or fistula formation involving any organ. Avoid use in patients with ovarian cancer who have evidence of recto-sigmoid involvement on pelvic examination, bowel involvement on CT scan, or clinical symptoms of bowel obstruction (FDA Mvasi label, section 5.1; EMA Avastin product information, section 4.4)",
+      "Surgery and wound healing complications: withhold until adequate wound healing, withhold for at least 28 days prior to elective surgery, and do not administer for at least 28 days following major surgery; the safety of resumption after resolution of a wound healing complication has not been established; discontinue for necrotizing fasciitis (FDA Mvasi label, section 5.2)",
+      "Hemorrhage: severe or fatal hemorrhages have occurred; do not administer for recent hemoptysis (defined in the label as 1/2 teaspoon or more of red blood); discontinue for Grade 3-4 hemorrhage (FDA Mvasi label, section 5.3; EMA Avastin product information, section 4.4)",
+      "Arterial thromboembolic events: discontinue for severe ATE; the safety of reinitiating bevacizumab after an ATE resolves is not known (FDA Mvasi label, section 5.4)",
+      "Venous thromboembolic events: discontinue for Grade 4 VTE including pulmonary embolism; patients with thromboembolic reactions of Grade 3 or lower need close monitoring (FDA Mvasi label, section 5.5; EMA Avastin product information, section 4.4)",
+      "Hypertension: monitor and treat; withhold if not medically controlled and resume once controlled; discontinue for hypertensive crisis or hypertensive encephalopathy (FDA Mvasi label, section 5.6)",
+      "Posterior reversible encephalopathy syndrome (PRES): discontinue; the safety of reinitiating bevacizumab after PRES is not known (FDA Mvasi label, section 5.7; EMA Avastin product information, section 4.4)",
+      "Renal injury and proteinuria: monitor urine protein; withhold until urine protein is below 2 grams per 24 hours; discontinue for nephrotic syndrome (FDA Mvasi label, section 5.8)",
+      "Infusion-related reactions: decrease the rate for infusion-related reactions; discontinue for severe infusion-related reactions and administer medical therapy (FDA Mvasi label, section 5.9)",
+      "Embryo-fetal toxicity: bevacizumab products may cause fetal harm when administered to a pregnant woman; advise pregnant women of the potential risk and advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose (FDA Mvasi label, section 5.10)",
+      "Ovarian failure: advise females of the potential risk (FDA Mvasi label, section 5.11)",
+      "Congestive heart failure: discontinue bevacizumab in patients who develop CHF (FDA Mvasi label, section 5.12)",
+      "Osteonecrosis of the jaw: cases have been reported, mostly in patients who had received prior or concomitant intravenous bisphosphonates; invasive dental procedures are an additional risk factor and a dental examination with preventive dentistry should be considered before starting treatment (EMA Avastin product information, section 4.4)",
+      "Aneurysms and artery dissections: the use of VEGF pathway inhibitors may promote the formation of aneurysms and/or artery dissections, and this risk should be considered before initiating bevacizumab, particularly in patients with hypertension or a history of aneurysm (EMA Avastin product information, section 4.4)",
+      "Pulmonary haemorrhage/haemoptysis: patients with non-small cell lung cancer may be at risk of serious and sometimes fatal pulmonary haemorrhage; patients with recent pulmonary haemorrhage/haemoptysis of more than 2.5 mL of red blood should not be treated (EMA Avastin product information, section 4.4)",
+      "The EMA product information states that Avastin is not formulated for intravitreal use (EMA Avastin product information, section 4.4) - see the separate 'Bevacizumab Intravitreal' monograph"
+    ],
+    "precautions": [
+      "Dose reduction for adverse reactions is not recommended; therapy should either be permanently discontinued or temporarily suspended as described in the special warnings section (EMA Avastin product information, section 4.2)",
+      "The initial dose should be delivered over 90 minutes as an intravenous infusion; if the first infusion is well tolerated the second may be given over 60 minutes, and if that is tolerated all subsequent infusions may be given over 30 minutes. It should not be administered as an intravenous push or bolus (EMA Avastin product information, section 4.2)",
+      "Avastin infusions should not be administered or mixed with glucose solutions, and the product must not be mixed with other medicinal products except those listed in the EMA product information (EMA Avastin product information, sections 4.2 and 6.6)",
+      "Therapy should not be initiated for at least 28 days following major surgery or until the surgical wound is fully healed, and therapy should be withheld for elective surgery (EMA Avastin product information, section 4.4)",
+      "Pre-existing hypertension should be adequately controlled before starting bevacizumab; there is no information on the effect of bevacizumab in patients with uncontrolled hypertension at the time of initiating therapy (EMA Avastin product information, section 4.4)",
+      "Caution should be exercised in patients with clinically significant cardiovascular disease such as pre-existing coronary artery disease or congestive heart failure (EMA Avastin product information, section 4.4)",
+      "Patients with untreated central nervous system metastases were routinely excluded from clinical trials, so the risk of CNS hemorrhage has not been prospectively evaluated; monitor for signs and symptoms of CNS bleeding (EMA Avastin product information, section 4.4)",
+      "Intra-abdominal inflammatory processes may be a risk factor for gastrointestinal perforation in patients with metastatic carcinoma of the colon or rectum, and prior radiation is a risk factor in patients with persistent, recurrent or metastatic cervical cancer (EMA Avastin product information, section 4.4)",
+      "This medicine contains less than 1 mmol sodium per vial, that is to say essentially sodium-free, and contains polysorbate 20, which may cause allergic reactions (EMA Avastin product information, section 4.4)",
+      "The FDA label directs clinicians to the full prescribing information for dosage modifications for adverse reactions (Table 1), which specify discontinuation or withholding rather than dose reduction (FDA Mvasi label, sections 2.8 and 2.9)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious and sometimes fatal gastrointestinal perforation and fistula formation (FDA Mvasi label, section 5.1)",
+      "Severe or fatal hemorrhage, including pulmonary hemorrhage/hemoptysis and CNS hemorrhage (FDA Mvasi label, section 5.3)",
+      "Arterial thromboembolic events (cerebral infarction, transient ischemic attack, myocardial infarction, angina) and venous thromboembolic events including pulmonary embolism (FDA Mvasi label, sections 5.4 and 5.5)",
+      "Severe hypertension, hypertensive crisis and hypertensive encephalopathy (FDA Mvasi label, section 5.6)",
+      "Posterior reversible encephalopathy syndrome (FDA Mvasi label, section 5.7)",
+      "Nephrotic syndrome and renal thrombotic microangiopathy manifesting as severe proteinuria (FDA Mvasi label, section 5.8; POSTMARKETING EXPERIENCE)",
+      "Severe infusion-related and hypersensitivity reactions including anaphylaxis and anaphylactic shock (FDA Mvasi label, section 5.9; EMA Avastin product information, section 4.8)",
+      "Wound healing complications including necrotizing fasciitis (FDA Mvasi label, section 5.2)",
+      "Congestive heart failure (FDA Mvasi label, section 5.12)",
+      "Ovarian failure (FDA Mvasi label, section 5.11)",
+      "Embryo-fetal toxicity (FDA Mvasi label, section 5.10)",
+      "Osteonecrosis of the jaw, including non-mandibular osteonecrosis in patients under 18 years (FDA Mvasi label, POSTMARKETING EXPERIENCE; EMA Avastin product information, section 4.4)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on findings from animal studies and its mechanism of action, bevacizumab products may cause fetal harm when administered to a pregnant woman. In animal reproduction studies, intravenous administration of bevacizumab to pregnant rabbits every 3 days during organogenesis at doses approximately 1 to 10 times the clinical dose of 10 mg/kg produced fetal resorptions, decreased maternal and fetal weight gain and multiple congenital malformations including corneal opacities and abnormal ossification of the skull and skeleton including limb and phalangeal defects. Advise pregnant women of the potential risk to a fetus, and advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose (FDA Mvasi label, sections 5.10 and 8.1). The EMA product information adds that Avastin is contraindicated in pregnancy, that IgGs cross the placenta and that bevacizumab is anticipated to inhibit angiogenesis in the foetus, and that postmarketing cases of foetal abnormalities have been observed in women treated with bevacizumab alone or with known embryotoxic chemotherapeutics (EMA Avastin product information, sections 4.3, 4.6 and 4.8).",
+    "lactation_guidance": "No data are available regarding the presence of bevacizumab products in human milk, the effects on the breastfed infant or the effects on milk production. Because of the potential for serious adverse reactions in breastfed infants, advise women not to breastfeed during treatment with bevacizumab and for 6 months after the last dose (FDA Mvasi label, section 8.2). The EMA product information states that it is not known whether bevacizumab is excreted in human milk, that as maternal IgG is excreted in milk and bevacizumab could harm infant growth and development, women must discontinue breast-feeding during therapy and not breast-feed for at least six months following the last dose (EMA Avastin product information, section 4.6).",
+    "overdose": "The highest dose tested in humans (20 mg/kg of body weight, intravenous every 2 weeks) was associated with severe migraine in several patients (EMA Avastin product information, section 4.9).",
+    "pharmacokinetics": "Bevacizumab pharmacokinetics are linear based on a population pharmacokinetic analysis of 491 patients who received 1 to 20 mg/kg every week, every 2 weeks or every 3 weeks; the predicted time to reach more than 90% of steady-state concentration is 84 days and the accumulation ratio after a 10 mg/kg dose every two weeks is 2.8 (FDA Mvasi label, section 12.3). The mean central volume of distribution is 2.9 L (CV 22%), the mean clearance is 0.23 L/day (CV 33%) and the estimated elimination half-life is 20 days (range 11 to 50 days) (FDA Mvasi label, section 12.3). Clearance varies with body weight, sex and tumour burden; after body-weight correction, males had higher clearance (0.26 vs 0.21 L/day) and a larger central volume of distribution (3.2 vs 2.7 L) than females (FDA Mvasi label, section 12.3). The EMA product information reports a typical central volume of 2.73 L in females and 3.28 L in males, clearance averaging 0.188 L/day in females and 0.220 L/day in males, and a two-compartment elimination half-life of 18 days for a typical female and 20 days for a typical male patient (EMA Avastin product information, section 5.2). No trials have been conducted in renally or hepatically impaired patients because the kidneys and liver are not major organs for bevacizumab metabolism or excretion (EMA Avastin product information, section 5.2).",
+    "clinical_pearls": [
+      "Bevacizumab is an angiogenesis inhibitor: its toxicity profile is dominated by vascular events (perforation, fistula, hemorrhage, thrombosis, hypertension, proteinuria, wound healing problems) rather than by classic cytotoxic myelosuppression, except when given with myelosuppressive chemotherapy (FDA Mvasi label, sections 5.1 to 5.9)",
+      "There is no FDA-approved ophthalmic (intravitreal) indication for bevacizumab; the EMA product information states that Avastin is not formulated for intravitreal use and describes only unapproved compounded intravitreal use (EMA Avastin product information, section 4.4). See the separate 'Bevacizumab Intravitreal' monograph",
+      "No dose reductions are recommended; the dose-modification strategy in the FDA label is to withhold for reversible toxicity (wound healing, proteinuria, uncontrolled hypertension, infusion reactions) or discontinue for serious events (perforation/fistula, Grade 3-4 hemorrhage, severe ATE, Grade 4 VTE, PRES, nephrotic syndrome, necrotizing fasciitis, CHF) (FDA Mvasi label, section 2.8; EMA Avastin product information, section 4.2)",
+      "Perforation risk is highest with peritoneal carcinomatosis/recto-sigmoid involvement and prior pelvic radiation, and most perforations occur within 50 days of the first dose (FDA Mvasi label, section 5.1)",
+      "Delay surgery: withhold for at least 28 days before elective surgery and for at least 28 days after major surgery until adequate wound healing; the safety of restarting after a wound healing complication is not established (FDA Mvasi label, sections 2.1 and 5.2)",
+      "Monitor urine protein by dipstick with serial urinalyses; a 2+ or greater reading requires a 24-hour urine collection, and the drug is withheld above 2 g/24 hours (FDA Mvasi label, section 5.8)",
+      "Microangiopathic haemolytic anaemia is a characteristic toxicity of the bevacizumab plus sunitinib combination (7 of 19 patients in the EMA-described trials) (EMA Avastin product information, section 4.5)",
+      "The FDA Mvasi label is for bevacizumab-awwb, a bevacizumab biosimilar of Avastin; bevacizumab products share the class warnings and precautions described here (FDA Mvasi label, sections 1 and 12.1)"
+    ],
+    "brand_names": ["MVASI", "Avastin"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Injection: 100 mg/4 mL (25 mg/mL) or 400 mg/16 mL (25 mg/mL) clear to slightly opalescent, colorless to pale yellow solution in a single-dose vial (FDA Mvasi label, section 3). Withdraw the necessary amount and dilute in a total volume of 100 mL of 0.9% Sodium Chloride Injection, USP; DO NOT ADMINISTER OR MIX WITH DEXTROSE SOLUTION; discard any unused portion left in a vial, as the product contains no preservatives; diluted solution may be stored at 2 to 8 degrees C for up to 8 hours if not used immediately (FDA Mvasi label, section 2.8). Administer as an intravenous infusion: first infusion over 90 minutes, second over 60 minutes if the first is tolerated, all subsequent infusions over 30 minutes if the 60-minute infusion is tolerated (FDA Mvasi label, section 2.9). The EMA product information adds that Avastin infusions should not be administered or mixed with glucose solutions and that the medicinal product must not be mixed with other medicinal products except those listed in section 6.6 (EMA Avastin product information, sections 4.2 and 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Mvasi (bevacizumab-awwb) injection, MECHANISM OF ACTION section; EMA Avastin product information, section 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Mvasi, sections 1.1-1.6; FDA label, Avastin, section 1.7 (hepatocellular carcinoma)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Mvasi, section 4 (None); EMA Avastin product information, section 4.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Mvasi, sections 5.1-5.12, 6.1 and POSTMARKETING EXPERIENCE; EMA Avastin product information, section 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Mvasi, sections 2.1-2.9 and 8.4-8.5; EMA Avastin product information, section 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated as a separate field; the sourced adult regimen is provided in fields.dosage.adult from the FDA label DOSAGE AND ADMINISTRATION sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated as a separate field; the paediatric position is given in fields.dosage.paediatric from the FDA label PEDIATRIC USE section and the EMA product information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "interactions",
+      "ref": "EMA Avastin product information, sections 4.4 and 4.5; FDA label, Mvasi, section 7 (DRUG INTERACTIONS)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Mvasi, sections 5.1-5.9; EMA Avastin product information, sections 4.4 and 4.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Mvasi, section 17 (INFORMATION FOR PATIENTS), sections 5.10, 8.1 and 8.2; EMA Avastin product information, sections 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Mvasi, sections 5.1-5.12; EMA Avastin product information, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "precautions",
+      "ref": "EMA Avastin product information, sections 4.2, 4.4 and 6.6; FDA label, Mvasi, sections 2.8 and 2.9",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Mvasi, sections 5.1-5.12 and POSTMARKETING EXPERIENCE; EMA Avastin product information, sections 4.4 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Mvasi label or the EMA Avastin product information (the EMA product information instead states that Avastin infusions must not be mixed with glucose solutions)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The FDA Mvasi label gives narrative pregnancy risk information (section 8.1) without a pregnancy letter category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Mvasi, sections 5.10 and 8.1; EMA Avastin product information, sections 4.3, 4.6 and 4.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Mvasi, section 8.2; EMA Avastin product information, section 4.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "overdose",
+      "ref": "EMA Avastin product information, section 4.9 (the FDA Mvasi label contains no overdose section)",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Mvasi, section 12.3 (PHARMACOKINETICS); EMA Avastin product information, section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Mvasi, sections 1, 2.1, 2.8, 5.1-5.9 and 12.1; EMA Avastin product information, sections 4.2, 4.4 and 4.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed product titles: MVASI (bevacizumab-awwb) injection [Amgen, Inc.] and AVASTIN (bevacizumab) injection, solution [Genentech, Inc.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=939b5d1f-9fb2-4499-80ef-0607aa6b114e"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA Mvasi and Avastin labels contain no boxed warning; both state 'Contraindications: None' and the class warnings are listed in fields.warnings (FDA Mvasi label, sections 4 and 5)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "The EMA Avastin product information states that safety and efficacy have not been studied in patients with renal impairment and that no pharmacokinetic trials have been conducted in renally impaired patients (section 5.2); the FDA Mvasi label specifies no renal dose adjustment",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The EMA Avastin product information states that safety and efficacy have not been studied in patients with hepatic impairment and that no pharmacokinetic trials have been conducted in hepatically impaired patients (section 5.2); the FDA Mvasi label specifies no hepatic dose adjustment",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/avastin-epar-product-information_en.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Mvasi, sections 2.8, 2.9 and 3; EMA Avastin product information, sections 4.2 and 6.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a562b4e-67ce-4bab-852c-d9ee71e55fb8"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric position is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the FDA label gives narrative pregnancy risk information without a letter category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA label; the EMA product information states only that renal impairment has not been studied)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA label; the EMA product information states only that hepatic impairment has not been studied)",
+    "WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries (not retrievable in this environment; no eEML/KEML-derived field is claimed)"
+  ],
+  "notes": "The table stores this agent as the intravenous systemic antineoplastic 'Bevacizumab' (drug_class: Antineoplastic / chemotherapeutic agent; brand_names: ['MVASI']). The existing row previously carried generic antineoplastic boilerplate (CYP450 interactions, anticoagulants, antihypertensives, alcohol) that is not drug-specific and has been superseded by this draft. Content is grounded in the FDA label for Mvasi (bevacizumab-awwb), the FDA label for Avastin and the EMA Avastin product information; where the US and EU labels differ (US: no contraindications; EU: hypersensitivity, CHO-cell and pregnancy contraindications) both are reported with attribution. This monograph covers intravenous oncological use only; intravitreal (ophthalmic) use is covered in the separate 'Bevacizumab Intravitreal' monograph and is not an FDA-approved indication. FDA pregnancy letter categories are obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and are reported only where a label still states them."
+}

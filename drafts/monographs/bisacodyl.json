@@ -1,0 +1,215 @@
+{
+  "name": "Bisacodyl",
+  "existing_id": "4f19911f-c73e-42a3-af04-feab7e171248",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": null,
+    "indications": [
+      "Oral bisacodyl 5 mg delayed-release tablets (stimulant laxative, OTC monograph drug): for relief of occasional constipation and irregularity; this product generally produces a bowel movement in 6 to 12 hours (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Uses and Purpose).",
+      "Rectal bisacodyl 10 mg suppositories (stimulant laxative, OTC monograph drug): for relief of occasional constipation; this product generally produces a bowel movement in 1/4 to 1 hour (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Uses and Purpose).",
+      "WHO Model List of Essential Medicines, 23rd List (2023), section 17.4 Laxatives: senna is the first-choice laxative and bisacodyl is listed as a therapeutic alternative (WHO eEML 23rd List, 2023).",
+      "Kenya Essential Medicines List 2023, item 19.4.1 Laxatives: bisacodyl tablet 5 mg and suppository 5 mg at level of use 2; bisacodyl tablet 5 mg is also listed at item 3.3.2 as an adjunct for pain management and for other symptoms in palliative care (KEML 2023)."
+    ],
+    "contraindications": [
+      "Oral tablets: do not use if you cannot swallow without chewing (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Rectal suppositories: for rectal use only; do not use when abdominal pain, nausea, or vomiting are present for a period of longer than 1 week (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings).",
+      "The OTC labels contain no formal 'contraindications' section; the prohibitions listed are reproduced in the contraindications and warnings fields, and no contraindication specific to bisacodyl pharmacology (for example intestinal obstruction) is stated in the FDA OTC labelling used (Major Pharmaceuticals bisacodyl tablet OTC label; Walgreens Gentle Laxative bisacodyl suppository OTC label)."
+    ],
+    "side_effects": [
+      "Abdominal discomfort, faintness and mild cramps may occur with the suppository (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings).",
+      "Abdominal discomfort, faintness and cramps may occur with the tablets when taken within 1 hour after an antacid or milk (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Rectal burning may occur with suppository use (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings).",
+      "The OTC labels do not provide a quantified adverse-reaction table; the recognised warning is that failure to have a bowel movement after use of a laxative, or rectal bleeding, could be signs of a serious condition that require medical assessment (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "The WHO Model List and KEML give no bisacodyl-specific adverse reaction data (WHO eEML 23rd List, 2023; KEML 2023)."
+    ],
+    "dosage": {
+      "adult": "Oral bisacodyl 5 mg delayed-release tablets: adults and children 12 years and over take 1 to 3 tablets in a single daily dose, with a glass of water; do not take more than directed (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Directions). Rectal bisacodyl 10 mg suppository: adults and children 12 years of age and older insert 1 suppository once daily (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Directions). WHO Model List of Essential Medicines and KEML list the tablet and suppository strengths but give no regimen (WHO eEML 23rd List, 2023; KEML 2023, item 19.4.1).",
+      "geriatric": "No geriatric-specific dose or dose adjustment is stated in the FDA OTC labels used, in the WHO Model List or in KEML; the labelled directions simply apply to adults and children 12 years and over (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Directions; WHO eEML 23rd List, 2023; KEML 2023).",
+      "paediatric": "Oral tablets: children 6 to under 12 years take 1 tablet in a single daily dose; children under 6 years should ask a doctor (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Directions). Suppository: children 6 to under 12 years insert half a suppository once daily; children under 6 years should not use it (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Directions). The suppository label also warns that if swallowed, medical help or a Poison Control Center should be contacted (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antacids or milk: do not use bisacodyl tablets within 1 hour after taking an antacid or milk, because this may cause stomach discomfort, faintness and cramps (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "The FDA OTC labelling used contains no drug-drug interaction list; other drug interactions for bisacodyl are not stated in the DailyMed OTC labels, the WHO Model List or KEML (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label; Walgreens Gentle Laxative bisacodyl suppository OTC label; WHO eEML 23rd List, 2023; KEML 2023).",
+      "Chronic laxative use: the labelling requires that the product be stopped and a doctor consulted if a laxative is needed for more than 1 week, and rectal bleeding or failure to have a bowel movement after use of a laxative may indicate a serious condition (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings)."
+    ],
+    "monitoring": "No laboratory or pharmacokinetic monitoring is specified for bisacodyl in the FDA OTC labels used (these are short-term over-the-counter stimulant laxatives for occasional constipation) (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label; Walgreens Gentle Laxative bisacodyl suppository OTC label). The labelled monitoring is clinical: stop use and ask a doctor if there is rectal bleeding or if there is failure to have a bowel movement after use of a laxative, because these could be signs of a serious condition, and if a laxative is needed for more than 1 week (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings). Patients who have had a sudden change in bowel habits lasting more than 2 weeks, or who have stomach pain, nausea or vomiting, should ask a doctor before use (both OTC labels).",
+    "patient_counselling": "Take the tablets with a glass of water; do not chew or crush the tablets, and do not take them within 1 hour after taking an antacid or milk (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Directions and Warnings). The tablets generally produce a bowel movement in 6 to 12 hours; the suppository generally produces one in 1/4 to 1 hour (both OTC labels, Drug Facts, Uses). For the suppository, detach one suppository from the strip and remove the wrapper before inserting it into the rectum (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Directions). Stop use and ask a doctor if you have rectal bleeding or you fail to have a bowel movement after using a laxative, as these could be signs of a serious condition, and if you need to use a laxative for more than 1 week (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings). Ask a health professional before use if pregnant or breast-feeding (both OTC labels). Keep out of reach of children; if a suppository is swallowed, get medical help or contact a Poison Control Center right away (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings). In case of overdose, get medical help or contact a Poison Control Center right away (both OTC labels).",
+    "warnings": [
+      "Do not use the tablets if you cannot swallow without chewing (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Ask a doctor before use if you have stomach pain, nausea or vomiting, or a sudden change in bowel habits that lasts more than 2 weeks (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Stop use and ask a doctor if you have rectal bleeding or fail to have a bowel movement after use of a laxative - these could be signs of a serious condition - or if you need to use a laxative for more than 1 week (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Do not chew or crush the tablets, and do not use within 1 hour after taking an antacid or milk, because this may cause stomach discomfort, faintness and cramps (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Rectal suppository warnings: for rectal use only; do not use when abdominal pain, nausea or vomiting are present for a period of longer than 1 week; ask a doctor before use if you have noticed a sudden change in bowel habits that lasts over a period of 2 weeks; when using this product it may cause abdominal discomfort, faintness, rectal burning and mild cramps; stop use and ask a doctor if you have rectal bleeding or fail to have a bowel movement after using this product (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings).",
+      "Pregnancy and breastfeeding: if pregnant or breast-feeding, ask a health professional before use (both OTC labels).",
+      "Keep out of reach of children; in case of overdose, get medical help or contact a Poison Control Center right away (both OTC labels)."
+    ],
+    "precautions": [
+      "Short-term use only: the labelled indication is relief of occasional constipation and irregularity, and use for more than 1 week requires a doctor's assessment (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Uses and Warnings).",
+      "Tablets must be swallowed whole with water and must not be chewed or crushed, because they are delayed-release (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Separate bisacodyl tablets from antacids or milk by at least 1 hour (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Avoid use in patients with unexplained abdominal pain, nausea or vomiting, or with a sudden change in bowel habits lasting more than 2 weeks, until a doctor has assessed the cause (both OTC labels, Drug Facts, Warnings).",
+      "Storage: tablets store at 25 degrees C (77 degrees F) with excursions permitted between 15 and 30 degrees C (59 and 86 degrees F), avoiding excessive humidity, and use by the expiration date on the package; the suppository stores at room temperature and should not exceed 30 degrees C (86 degrees F) (both OTC labels, Drug Facts, Other information).",
+      "A bisacodyl tablet or suppository that is swallowed whole by a child is not a harmless event: the suppository label directs the parent or carer to get medical help or contact a Poison Control Center right away if a suppository is swallowed (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings)."
+    ],
+    "serious_adverse_reactions": [
+      "Rectal bleeding, and failure to have a bowel movement after use of a laxative - the OTC labelling states these could be signs of a serious condition requiring medical assessment (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Overdose requiring immediate medical help or Poison Control Center contact (both OTC labels, Drug Facts, Warnings).",
+      "No quantified serious adverse reaction data are available for bisacodyl in the FDA OTC labelling used, and neither the WHO Model List nor KEML provides adverse reaction data for bisacodyl (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label; WHO eEML 23rd List, 2023; KEML 2023)."
+    ],
+    "food_interactions": [
+      "Milk: do not use bisacodyl tablets within 1 hour after taking milk, because this may cause stomach discomfort, faintness and cramps (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings). The same one-hour separation is stated for antacids."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "If pregnant or breast-feeding, ask a health professional before use (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings; Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings). No letter pregnancy category is assigned in the FDA OTC labels used, and neither the WHO Model List nor KEML provides pregnancy guidance for bisacodyl (WHO eEML 23rd List, 2023; KEML 2023).",
+    "lactation_guidance": "If pregnant or breast-feeding, ask a health professional before use (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings; Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings). No dedicated lactation section and no letter pregnancy category are present in the FDA OTC labels used, and no lactation data are given in the WHO Model List or KEML entries for bisacodyl (WHO eEML 23rd List, 2023; KEML 2023).",
+    "overdose": "In case of overdose, get medical help or contact a Poison Control Center right away (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings; Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Warnings). For the suppository, if swallowed, get medical help or contact a Poison Control Center right away. No specific antidote or overdose treatment regimen is described in the FDA OTC labelling used.",
+    "pharmacokinetics": "No pharmacokinetic data for bisacodyl appear in the FDA OTC labels used, the WHO Model List or KEML. The labelled onset of action differs by route: oral delayed-release bisacodyl 5 mg tablets generally produce a bowel movement in 6 to 12 hours, whereas a bisacodyl suppository generally produces a bowel movement in 1/4 to 1 hour (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Uses; Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Uses). The tablet is a delayed-release (comfort-coated) tablet that must be swallowed whole and must not be chewed or crushed (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings and Principal Display Panel).",
+    "clinical_pearls": [
+      "Bisacodyl is an OTC stimulant laxative, not a drug to titrate: the labelled position is short-term relief of occasional constipation, and use for more than 1 week, rectal bleeding, or failure to pass a stool requires medical assessment (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Route matters for speed: oral delayed-release tablets act in 6 to 12 hours, while a suppository acts in 15 to 60 minutes (both OTC labels, Drug Facts, Uses).",
+      "Do not crush or chew the delayed-release tablets, and keep them at least 1 hour away from antacids or milk (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Warnings).",
+      "Acute abdominal pain, nausea or vomiting, or a change in bowel habits lasting more than 2 weeks, are red flags for a cause other than simple constipation and are explicit 'ask a doctor before use' conditions in the labelling (both OTC labels).",
+      "In Kenya and on the WHO Model List, bisacodyl is a second-line laxative: senna is the first-choice laxative in WHO eEML section 17.4 and bisacodyl is the listed therapeutic alternative; KEML 2023 lists bisacodyl tablet 5 mg and suppository 5 mg at level of use 2 and additionally lists the 5 mg tablet as a palliative-care adjunct (WHO eEML 23rd List, 2023; KEML 2023, items 19.4.1 and 3.3.2).",
+      "Children: oral bisacodyl is not for children under 6 without a doctor, and the suppository must not be used at all in children under 6 (both OTC labels, Drug Facts, Directions)."
+    ],
+    "brand_names": ["Walgreens Gentle Laxative"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral tablets (bisacodyl USP 5 mg, comfort-coated delayed-release tablets): take with a glass of water; do not chew or crush the tablets; do not use within 1 hour after taking an antacid or milk; adults and children 12 years and over take 1 to 3 tablets in a single daily dose; children 6 to under 12 years take 1 tablet in a single daily dose; children under 6 years ask a doctor; store at 25 degrees C (77 degrees F) with excursions permitted between 15 and 30 degrees C (59 to 86 degrees F), avoid excessive humidity and use by the expiration date on the package (Major Pharmaceuticals bisacodyl 5 mg tablet OTC label, Drug Facts, Directions and Other information). Rectal suppository (bisacodyl 10 mg): for rectal use only; detach one suppository from the strip, remove the wrapper before inserting into the rectum; adults and children 12 years and older use 1 suppository once daily; children 6 to under 12 years use half a suppository once daily; children under 6 years must not use it; store at room temperature and do not exceed 30 degrees C (86 degrees F) (Walgreens Gentle Laxative bisacodyl suppository OTC label, Drug Facts, Directions and Other information)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Not stated: the FDA OTC Drug Facts labels classify bisacodyl only as a stimulant laxative (Purpose) and do not describe its pharmacologic mechanism; the WHO eEML and KEML entries likewise give no mechanism",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Purpose, Uses); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Purpose, Uses); WHO Model List of Essential Medicines, 23rd List (2023), section 17.4 Laxatives; Kenya Essential Medicines List 2023, items 19.4.1 and 3.3.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings, 'Do not use'); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Directions); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Directions); WHO eEML 23rd List (2023), section 17.4; KEML 2023, item 19.4.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings, 'When using this product'); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Directions, Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Directions, Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Uses, Warnings, Other information); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings, Other information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings, 'do not use within 1 hour after taking an antacid or milk')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: the FDA OTC Drug Facts labels for bisacodyl do not assign a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings, 'If pregnant or breast-feeding, ask a health professional before use'); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings); WHO eEML 23rd List (2023); KEML 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Warnings, overdose statement); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Warnings, overdose and swallowed-suppository statements)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Uses, Warnings, Principal Display Panel); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Uses)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA OTC labels, Major Pharmaceuticals bisacodyl 5 mg tablet and Walgreens Gentle Laxative bisacodyl suppository (Drug Facts); WHO Model List of Essential Medicines, 23rd List (2023), section 17.4; Kenya Essential Medicines List 2023, items 19.4.1 and 3.3.2",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Walgreens Gentle Laxative (bisacodyl suppository) is the brand recorded against this row and is listed on DailyMed as an OTC monograph drug",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20c43036-830b-0e1d-e063-6394a90adf5f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning: OTC monograph drug labels carry Drug Facts rather than a US boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Not stated: no renal impairment or renal dose adjustment appears in the FDA OTC bisacodyl labels, the WHO Model List or KEML",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: no hepatic impairment or hepatic dose adjustment appears in the FDA OTC bisacodyl labels, the WHO Model List or KEML",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA OTC label, Major Pharmaceuticals bisacodyl 5 mg tablet, Drug Facts (Directions, Other information, Principal Display Panel); FDA OTC label, Walgreens Gentle Laxative bisacodyl suppository, Drug Facts (Directions, Other information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b85af55-35db-4630-8bc0-9ff4fbf5990a"
+    },
+    {
+      "field": "reference_lists",
+      "ref": "WHO Model List of Essential Medicines - 23rd List (2023), WHO/MHP/HPS/EML/2023.02, section 17.4 Laxatives; Kenya Essential Medicines List 2023 (Kenya Ministry of Health / KEMSA), items 19.4.1 and 3.3.2",
+      "url": "https://www.kemsa.go.ke/download/file/8e7d9c438ecc1a468d9d7615a87688df.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "mechanism_of_action (the FDA OTC Drug Facts labels classify bisacodyl as a stimulant laxative but do not describe its pharmacologic mechanism, and neither the WHO eEML nor KEML describes it; the field is null rather than filled with unsourced pharmacology)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (no letter pregnancy category is assigned in the FDA OTC labelling used)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA OTC labelling, the WHO eEML or KEML)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA OTC labelling, the WHO eEML or KEML)",
+    "drug-drug interactions (the FDA OTC Drug Facts labels used contain no drug-drug interaction list; only the antacid/milk timing warning and the do-not-use-for-more-than-1-week instruction are labelled)"
+  ],
+  "notes": "The table stores this agent as 'Bisacodyl' with drug_class 'Gastrointestinal agent' and brand_names ['Walgreens Gentle Laxative']; the previous row carried shared class-template gastrointestinal text (including a hepatitis-A/hepatitis-B/hepatitis-C warning and 'refer to current prescribing information' dosing) which is not bisacodyl content and is superseded by this draft. Bisacodyl is an OTC monograph drug in the United States with no prescription FDA label, and no EMA SmPC for bisacodyl could be retrieved, so the monograph is built from (1) the FDA/DailyMed OTC label for bisacodyl 5 mg delayed-release (comfort-coated) tablets (Major Pharmaceuticals) - the oral product, used for indication, directions, warnings, tablet-specific instructions and storage; (2) the FDA/DailyMed OTC label for Walgreens Gentle Laxative bisacodyl 10 mg suppositories (Walgreens) - the brand recorded against this row, used for the rectal route indication, onset of action, paediatric directions and rectal-specific warnings; (3) the WHO Model List of Essential Medicines, 23rd List (2023), section 17.4 Laxatives, where senna is the first-choice laxative and bisacodyl is the listed therapeutic alternative; and (4) the Kenya Essential Medicines List 2023, item 19.4.1 (tablet 5 mg, suppository 5 mg, level of use 2) and item 3.3.2 (tablet 5 mg as a palliative-care adjunct). Because the only available FDA sources are OTC Drug Facts panels, mechanism_of_action is deliberately null rather than reconstructed from general pharmacology, and the field is listed under unsourced_fields; this is the single most important gap for the reviewer to close, ideally with an EMA SmPC or a national Summary of Product Characteristics for bisacodyl (for example the German Dulcolax Fachinformation or the Spanish CIMA ficha tecnica), which would also supply the pharmacological contraindications that the OTC panel does not carry. Note that KEML 2023 records the suppository strength as 5 mg whereas the US OTC suppository product used here contains 10 mg per suppository; both figures are reported exactly as stated by their sources and are not interchangeable."
+}

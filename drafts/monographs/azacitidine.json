@@ -1,0 +1,212 @@
+{
+  "name": "Azacitidine",
+  "existing_id": "390371e5-8f44-4314-a940-c14db67abdbd",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Azacitidine for injection is a pyrimidine nucleoside analog of cytidine and a nucleoside metabolic inhibitor. It is believed to exert its antineoplastic effects by causing hypomethylation of DNA and by direct cytotoxicity on abnormal haematopoietic cells in the bone marrow. The concentration required for maximum inhibition of DNA methylation in vitro does not cause major suppression of DNA synthesis. Hypomethylation may restore normal function to genes critical for differentiation and proliferation, and the cytotoxic effects kill rapidly dividing cells including cancer cells that are no longer responsive to normal growth control; non-proliferating cells are relatively insensitive to azacitidine (FDA azacitidine for injection label, sections 12.1 and 11).",
+    "indications": [
+      "Treatment of adult patients with French-American-British (FAB) myelodysplastic syndrome (MDS) subtypes: refractory anaemia (RA) or refractory anaemia with ringed sideroblasts (RARS) if accompanied by neutropenia or thrombocytopenia or requiring transfusions; refractory anaemia with excess blasts (RAEB); refractory anaemia with excess blasts in transformation (RAEB-T); and chronic myelomonocytic leukaemia (CMMoL) (FDA azacitidine for injection label, sections 1 and 1.1)"
+    ],
+    "contraindications": [
+      "Advanced malignant hepatic tumours (FDA azacitidine for injection label, sections 4 and 4.1)",
+      "Known hypersensitivity to azacitidine or mannitol (FDA azacitidine for injection label, sections 4 and 4.2)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (>30%) in adult patients with MDS by the subcutaneous route: nausea (71%), anemia (70%), thrombocytopenia (66%), vomiting (54%), pyrexia (52%), leukopenia (48%), diarrhoea (36%), injection site erythema (35%), constipation (34%), neutropenia (32%) and ecchymosis (31%); by the intravenous route petechiae, rigors, weakness and hypokalemia were also common (FDA azacitidine for injection label, sections 6 and 6.1, Table 3)",
+      "Febrile neutropenia in 16% of azacitidine-treated patients (4% on observation) and anaemia aggravated in 6% (FDA azacitidine for injection label, section 6.1, Table 3)",
+      "Injection-site reactions: bruising 14%, granuloma, pain 23%, pigmentation change, pruritus 7%, reaction 14% and swelling (FDA azacitidine for injection label, section 6.1, Table 3)",
+      "Other frequent events: dyspnoea 29%, arthralgia 22%, headache 22%, dizziness 19%, myalgia 16%, nasopharyngitis 15%, upper respiratory tract infection 13%, anxiety 13%, malaise 11%, anorexia 21% and post-procedural haemorrhage 6% (FDA azacitidine for injection label, section 6.1, Table 3)",
+      "Adverse reactions most frequently (>2%) resulting in clinical intervention: discontinuation for leukopenia, thrombocytopenia and neutropenia; dose held for leukopenia, neutropenia, thrombocytopenia, pyrexia, pneumonia and febrile neutropenia; dose reduced for leukopenia, neutropenia and thrombocytopenia (FDA azacitidine for injection label, section 6.1)",
+      "Post-marketing: interstitial lung disease, tumour lysis syndrome, injection site necrosis, Sweet's syndrome (acute febrile neutrophilic dermatosis), necrotizing fasciitis (including fatal cases), differentiation syndrome, pericardial effusion, pericarditis and cutaneous vasculitis (FDA azacitidine for injection label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Recommended starting dose for the first treatment cycle, for all patients regardless of baseline haematology values, is 75 mg/m2 subcutaneously or intravenously, daily for 7 days; premedicate patients for nausea and vomiting and obtain complete blood counts, liver chemistries and serum creatinine prior to the first dose (FDA azacitidine for injection label, sections 2 and 2.2). Repeat cycles every 4 weeks. The dose may be increased to 100 mg/m2 if no beneficial effect is seen after 2 treatment cycles and if no toxicity other than nausea and vomiting has occurred; a minimum of 4 to 6 cycles of treatment is recommended, and treatment may be continued as long as the patient continues to benefit (sections 2 and 2.3). Dose adjustment for subsequent cycles is based on nadir counts: for patients with baseline WBC >=3 x10^9/L, ANC >=1.5 x10^9/L and platelets >=75 x10^9/L, a nadir ANC <0.5 x10^9/L with platelets <25 x10^9/L gives 50% of the next course dose, nadir ANC 0.5-1.5 with platelets 25-50 gives 67%, and nadir ANC >1.5 with platelets >50 gives 100%. For patients with lower baseline counts, adjustment is based on nadir counts and bone marrow biopsy cellularity at the nadir (sections 2.5). If serum bicarbonate falls below 20 mEq/L without explanation, reduce the dose by 50% for the next course; if BUN or serum creatinine rise without explanation, delay the next cycle until values return to normal or baseline and reduce the dose by 50% for the next course (section 2.6). Continue treatment as long as the patient continues to benefit (section 2).",
+      "geriatric": "Azacitidine and its metabolites are substantially excreted by the kidney and the risk of toxic reactions may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, select the dose carefully and monitor renal function (FDA azacitidine for injection label, section 2.7). In the supporting studies 62% of patients were 65 years and older and 21% were 75 years and older, with no overall differences in effectiveness and no relevant differences in the frequency of adverse reactions versus younger patients (section 8.5).",
+      "paediatric": "Safety and effectiveness of azacitidine for injection in paediatric patients with MDS have not been established (FDA azacitidine for injection label, section 8.4). The label also states that paediatric use information is approved for Celgene Corporation's VIDAZA but that, because of Celgene Corporation's marketing exclusivity rights, this generic azacitidine product is not labelled with that information (sections 1.1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "The prescribing information contains no dedicated drug-interactions section and states explicitly that no formal clinical drug interaction studies with azacitidine have been conducted (FDA azacitidine for injection label, section 12.3, Drug-Drug Interactions).",
+      "In vitro, azacitidine at concentrations up to 100 micromol/L did not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP3A4 or CYP2E1 at clinically achievable concentrations, and did not induce CYP1A2, CYP2C19 or CYP3A4/5 in cultured human hepatocytes (FDA azacitidine for injection label, section 12.3).",
+      "Transporter studies in vitro show azacitidine is not a substrate or inhibitor of P-glycoprotein and does not inhibit BCRP, OAT1, OAT3, OATP1B1, OATP1B3 or OCT2 at clinically relevant concentrations (FDA azacitidine for injection label, section 12.3)."
+    ],
+    "monitoring": "Monitor complete blood counts frequently for response and/or toxicity, at a minimum prior to each dosing cycle, and adjust the dose for subsequent cycles based on nadir counts and haematologic response (FDA azacitidine for injection label, sections 5.2 and 2.5). Obtain complete blood counts, liver chemistries and serum creatinine before the first dose (section 2.2). Monitor liver chemistries prior to initiation of therapy and with each cycle, because azacitidine is potentially hepatotoxic in patients with severe pre-existing hepatic impairment and progressive hepatic coma and death have been reported in patients with extensive tumour burden, especially with baseline albumin <30 g/L (section 5.3). Monitor serum creatinine and electrolytes prior to initiation and with each cycle; reduce or hold the dose for unexplained serum bicarbonate <20 mEq/L or unexplained BUN or creatinine elevation, and monitor patients with renal impairment closely because azacitidine and its metabolites are primarily renally excreted (sections 2.6, 5.4 and 12.3). Assess baseline risk for tumour lysis syndrome and monitor and treat as appropriate, noting that it may occur despite concomitant allopurinol (section 5.5). Monitor for signs of infection and secondary infection from bone marrow suppression, and for local and systemic hypersensitivity reactions (sections 2 and 6).",
+    "patient_counselling": "Instruct patients to inform their physician about any underlying liver disease (FDA azacitidine for injection label, section 17). Instruct patients to inform their physician about any underlying renal disease (section 17). Advise pregnant women of the potential risk to a fetus, and advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose and males with female partners of reproductive potential to use effective contraception during treatment and for 3 months after the last dose; advise patients to report known or suspected pregnancy to their physicians immediately (section 17). Advise patients to avoid breastfeeding while receiving azacitidine for injection and for 1 week after the last dose (section 17). Advise males and females that azacitidine for injection may impair fertility (section 17).",
+    "warnings": [
+      "Risks of substitution with other azacitidine products: because of substantial pharmacokinetic differences, the recommended dose and schedule for azacitidine for injection differ from those of oral azacitidine; treating patients with azacitidine for injection at the recommended oral dosage may result in a fatal adverse reaction, and treating patients with oral azacitidine at the injectable dosage may not be effective. Do not substitute azacitidine for injection for oral azacitidine (FDA azacitidine for injection label, sections 2.1 and 5.1)",
+      "Anaemia, neutropenia and thrombocytopenia: azacitidine for injection causes anaemia, neutropenia and thrombocytopenia in adult patients with MDS; monitor complete blood counts frequently and adjust the dose for subsequent cycles based on nadir counts and haematologic response (FDA azacitidine for injection label, section 5.2)",
+      "Hepatotoxicity in patients with severe pre-existing hepatic impairment: caution is needed in patients with liver disease; progressive hepatic coma and death have been reported in patients with extensive tumour burden, especially with baseline albumin <30 g/L; monitor liver chemistries prior to initiation and with each cycle (FDA azacitidine for injection label, section 5.3)",
+      "Renal toxicity: renal toxicity ranging from elevated serum creatinine to renal failure and death has been reported with intravenous azacitidine in combination with other chemotherapeutic agents, and renal tubular acidosis (serum bicarbonate <20 mEq/L with alkaline urine and hypokalemia) developed in 5 patients with CML treated with azacitidine and etoposide; monitor serum creatinine and electrolytes (FDA azacitidine for injection label, section 5.4)",
+      "Tumour lysis syndrome: azacitidine for injection may cause fatal or serious tumour lysis syndrome, including in patients with MDS, and it may occur despite concomitant use of allopurinol (FDA azacitidine for injection label, section 5.5)",
+      "Embryo-fetal toxicity: azacitidine can cause fetal harm; a single intraperitoneal dose in rats approximating 8% of the recommended human daily dose caused fetal death and anomalies; advise effective contraception during treatment and for 6 months after the last dose in females and 3 months after the last dose in males with female partners of reproductive potential (FDA azacitidine for injection label, sections 5.6 and 8.3)"
+    ],
+    "precautions": [
+      "Do not substitute azacitidine for injection for oral azacitidine in either direction: the dose and schedule differ substantially and substitution at the wrong dosage can be fatal or ineffective (FDA azacitidine for injection label, sections 2.1 and 5.1).",
+      "Azacitidine for injection is a hazardous drug: follow applicable special handling and disposal procedures. The vial is single-dose and contains no preservatives; discard unused portions properly and do not save any unused portion for later administration (FDA azacitidine for injection label, sections 2.8 and 16).",
+      "Do not filter the reconstituted suspension after reconstitution, because filtration could remove the active substance (FDA azacitidine for injection label, section 2.9).",
+      "Azacitidine for injection is incompatible with 5% Dextrose Injection, USP solutions, Hespan, or solutions that contain bicarbonate, as these can increase the rate of degradation (FDA azacitidine for injection label, section 2.10).",
+      "Monitor patients with renal impairment closely for toxicity, and select the dose carefully in elderly patients who are more likely to have reduced renal function (FDA azacitidine for injection label, sections 2.6, 2.7 and 5.4).",
+      "Safety and effectiveness in patients with MDS and hepatic impairment have not been studied, as these patients were excluded from the clinical trials; caution is needed in patients with liver disease (FDA azacitidine for injection label, section 5.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Fatal or serious tumour lysis syndrome, including in patients with MDS, which may occur despite concomitant allopurinol (FDA azacitidine for injection label, section 5.5)",
+      "Renal toxicity ranging from elevated serum creatinine to renal failure and death, and renal tubular acidosis (FDA azacitidine for injection label, section 5.4)",
+      "Progressive hepatic coma and death during treatment in patients with extensive tumour burden from metastatic disease, especially with baseline albumin <30 g/L (FDA azacitidine for injection label, section 5.3)",
+      "Myelosuppression: anaemia, neutropenia and thrombocytopenia requiring dose reduction, dose hold or discontinuation in more than 2% of patients (FDA azacitidine for injection label, sections 5.2 and 6.1)",
+      "Post-marketing reports of interstitial lung disease, injection site necrosis, Sweet's syndrome, necrotizing fasciitis (including fatal cases), differentiation syndrome, pericardial effusion, pericarditis and cutaneous vasculitis (FDA azacitidine for injection label, section 6.2)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Azacitidine for injection can cause fetal harm when administered to a pregnant woman based on its mechanism of action and animal findings; there are no data on the use of azacitidine in pregnant women. Azacitidine was teratogenic and caused embryo-fetal lethality in animals at doses lower than the recommended human daily dose: in rats a single intraperitoneal dose of 3-12 mg/m2 given on gestation day 9, 10, 11 or 12 caused fetal death and multiple fetal abnormalities (CNS anomalies including exencephaly and encephalocele, limb anomalies including micromelia, club foot, syndactyly and oligodactyly, micrognathia, gastroschisis, oedema and rib abnormalities); in mice a single intraperitoneal injection of 6 mg/m2 on gestation day 10 caused a 44% frequency of intrauterine embryonal death and developmental brain abnormalities occurred at doses of approximately 3-12 mg/m2 given on or before gestation day 15. Verify pregnancy status before initiating treatment and advise pregnant women of the potential risk to a fetus. Advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose, and advise males with female partners of reproductive potential to use effective contraception during treatment and for 3 months after the last dose (FDA azacitidine for injection label, sections 5.6, 8.1 and 8.3).",
+    "lactation_guidance": "There is no information regarding the presence of azacitidine in human milk, the effects on the breastfed infant, or the effects on milk production. Because many drugs are excreted in human milk, and because of the potential for tumorigenicity shown for azacitidine in animal studies and the potential for serious adverse reactions in nursing infants, advise patients not to breastfeed during treatment with azacitidine for injection and for 1 week after the last dose (FDA azacitidine for injection label, section 8.2).",
+    "overdose": "One case of overdose was reported during clinical trials: a patient experienced diarrhoea, nausea and vomiting after a single intravenous dose of approximately 290 mg/m2, almost 4 times the recommended starting dose. The events resolved without sequelae and the correct dose was resumed the following day. In the event of overdosage the patient should be monitored with appropriate blood counts and should receive supportive treatment as necessary; there is no known specific antidote for azacitidine for injection overdosage (FDA azacitidine for injection label, section 10).",
+    "pharmacokinetics": "Azacitidine is rapidly absorbed after subcutaneous administration, with a peak plasma concentration of 750 +/- 403 ng/mL at 0.5 hour. Subcutaneous bioavailability relative to intravenous azacitidine is approximately 89% based on area under the curve. The mean volume of distribution after intravenous dosing is 76 +/- 26 L, mean apparent subcutaneous clearance is 167 +/- 49 L/hour, and the mean half-life after subcutaneous administration is 41 +/- 8 minutes. AUC and Cmax after subcutaneous administration were approximately dose proportional over 25 to 100 mg/m2, and multiple dosing at the recommended regimen does not result in drug accumulation. Azacitidine is not metabolised by cytochrome P450 enzymes; it undergoes spontaneous hydrolysis and deamination mediated by cytidine deaminase. Urinary excretion is the primary route of elimination: cumulative urinary excretion was 85% of a radioactive intravenous dose, faecal excretion was less than 1% over 3 days, and the mean elimination half-life of total radioactivity was about 4 hours. In 6 patients with severe renal impairment (CLcr <30 mL/min) compared with 6 patients with normal renal function (CLcr >80 mL/min), severe renal impairment increased azacitidine exposure by approximately 70% after a single dose and 41% after multiple doses; this exposure was similar to that in patients with normal renal function receiving 100 mg/m2. The effects of hepatic impairment, gender or race on the pharmacokinetics of azacitidine have not been studied (FDA azacitidine for injection label, section 12.3).",
+    "clinical_pearls": [
+      "Azacitidine for injection and oral azacitidine are not interchangeable: the pharmacokinetics, dose and schedule differ substantially, and giving the injectable formulation at the oral dosage can be fatal (FDA azacitidine for injection label, sections 5.1 and 12.3).",
+      "A practical minimum is 4 to 6 cycles of azacitidine before a patient is considered not to be benefiting, and the dose can be increased to 100 mg/m2 after 2 cycles if there is no beneficial effect and no toxicity other than nausea and vomiting (FDA azacitidine for injection label, sections 2 and 2.3).",
+      "Tumour lysis syndrome is possible even in MDS and even with prophylactic allopurinol (FDA azacitidine for injection label, section 5.5).",
+      "The most frequent laboratory derangement requiring action is a fall in serum bicarbonate: an unexplained bicarbonate below 20 mEq/L requires a 50% dose reduction for the next course, and unexplained BUN or creatinine elevation requires delaying the cycle and reducing the dose by 50% (FDA azacitidine for injection label, section 2.6).",
+      "Severe renal impairment increases azacitidine exposure by roughly 70% after a single dose, an exposure similar to that seen in patients with normal renal function receiving 100 mg/m2 (FDA azacitidine for injection label, section 12.3).",
+      "This generic label omits the paediatric use information that is approved for VIDAZA because of Celgene's marketing exclusivity, so the label itself states that paediatric safety and effectiveness in MDS have not been established (FDA azacitidine for injection label, sections 1.1 and 8.4)."
+    ],
+    "brand_names": ["VIDAZA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "The label does not give a fixed renal dose table but directs dose reduction or holding when renal toxicity occurs: if unexplained reductions in serum bicarbonate to less than 20 mEq/L occur, reduce the dosage by 50% for the next course; if unexplained elevations of BUN or serum creatinine occur, delay the next cycle until values return to normal or baseline and reduce the dose by 50% for the next course. Patients with renal impairment are monitored closely for toxicity because azacitidine and its metabolites are primarily renally excreted, and severe renal impairment (CLcr <30 mL/min) increased exposure by approximately 70% after a single dose and 41% after multiple doses (FDA azacitidine for injection label, sections 2.6, 5.4 and 12.3).",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is specified. Azacitidine is contraindicated in patients with advanced malignant hepatic tumours, and caution is needed in patients with liver disease because patients with severe pre-existing hepatic impairment are at higher risk of toxicity, including progressive hepatic coma and death in those with extensive tumour burden and baseline albumin <30 g/L. Liver chemistries should be monitored prior to initiation and with each cycle; safety and effectiveness in patients with MDS and hepatic impairment have not been studied (FDA azacitidine for injection label, sections 4.1, 5.3 and 12.3).",
+    "administration_instructions": "For subcutaneous administration, reconstitute each vial aseptically with 4 mL Sterile Water for Injection, USP to give a concentration of 25 mg/mL, inject the diluent slowly and shake or roll the vial vigorously until a uniform (cloudy) suspension is obtained; do not filter the suspension. Divide doses requiring more than one vial equally between syringes and inject into two separate sites, rotating sites (thigh, abdomen, upper arm) and keeping new injections at least one inch from old sites and away from tender, bruised, red or hard areas. Re-suspend by inverting the syringe 2-3 times and rolling it vigorously between the palms for 30 seconds immediately before administration. The suspension may be held at room temperature for up to 1 hour but must be administered within 1 hour of reconstitution; for delayed administration it must be refrigerated immediately and used within the stated stability window (up to 8 hours at 2-8 degrees C when reconstituted with room-temperature diluent, or up to 22 hours at 2-8 degrees C when reconstituted with cold diluent). For intravenous administration, reconstitute each vial with 10 mL Sterile Water for Injection, USP to give 10 mg/mL, withdraw the required dose and inject into a 50-100 mL infusion bag of 0.9% Sodium Chloride Injection, USP or Lactated Ringer's Injection, USP; administer over 10 to 40 minutes and complete administration within 1 hour of reconstitution. Azacitidine for injection is a hazardous drug: follow applicable special handling and disposal procedures, discard unused portions of each vial, and store unreconstituted vials at 20 to 25 degrees C (68 to 77 degrees F) (FDA azacitidine for injection label, sections 2.8-2.10 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Azacitidine for injection (Dr. Reddy's Laboratories), sections 12.1 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Azacitidine for injection, sections 1 and 1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Azacitidine for injection, sections 4, 4.1 and 4.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Azacitidine for injection, sections 6, 6.1 (Table 3) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Azacitidine for injection, sections 2, 2.2, 2.3, 2.5, 2.6, 2.7, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA azacitidine for injection label, section 2.2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; no established paediatric regimen (FDA azacitidine for injection label, section 8.4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Azacitidine for injection, section 12.3 (Drug-Drug Interactions; no formal clinical interaction studies conducted)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Azacitidine for injection, sections 2.2, 2.5, 2.6, 5.2, 5.3, 5.4 and 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Azacitidine for injection, section 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Azacitidine for injection, sections 2.1, 5.1-5.6 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Azacitidine for injection, sections 2.1, 2.6, 2.7, 2.8, 2.9, 2.10, 5.1, 5.3, 5.4 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Azacitidine for injection, sections 5.2, 5.3, 5.4, 5.5, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA azacitidine for injection labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated in the current FDA azacitidine for injection label (post-PLLR label; pregnancy risk is described in sections 5.6 and 8.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Azacitidine for injection, sections 5.6, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Azacitidine for injection, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Azacitidine for injection, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Azacitidine for injection, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Azacitidine for injection, sections 1.1, 2, 2.3, 2.6, 5.1, 5.5, 8.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "VIDAZA (azacitidine) listed on DailyMed as the Celgene Corporation brand product",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3495a71a-cc04-4776-851f-f185956f32af"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, Azacitidine for injection - the prescribing information contains no Boxed Warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Azacitidine for injection, sections 2.6, 5.4 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Azacitidine for injection, sections 4.1, 5.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Azacitidine for injection, sections 2.8, 2.9, 2.10 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=060d56e7-1a24-87c1-7f40-149ecf424f7c"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)",
+    "pregnancy_category (the current FDA azacitidine for injection label does not state a pregnancy letter category)"
+  ],
+  "notes": "The table stores this agent as 'Azacitidine'; the product described is azacitidine for injection, a 100 mg single-dose lyophilized powder vial (100 mg azacitidine with 100 mg mannitol) given subcutaneously or by intravenous infusion. The original brand is VIDAZA (Celgene Corporation), listed in brand_names; the label text used here is the FDA-approved generic label from Dr. Reddy's Laboratories. Oral azacitidine (ONUREG, Celgene) is a different product with different pharmacokinetics and dosing and must never be substituted for the injectable form - the label makes this a formal warning. The azacitidine for injection label has no Boxed Warning and no dedicated drug-interactions section; the interactions field therefore records the label's own in-vitro interaction data and the explicit statement that no formal clinical drug interaction studies were conducted, rather than importing interactions from another product. This generic label omits paediatric use information that is approved for VIDAZA because of Celgene's marketing exclusivity. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

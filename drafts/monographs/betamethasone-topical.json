@@ -1,0 +1,207 @@
+{
+  "name": "Betamethasone Topical",
+  "existing_id": "63eb9e3f-8f22-49fb-976f-6009310548a1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Betamethasone is an analog of prednisolone with high corticosteroid (glucocorticoid) activity and slight mineralocorticoid activity. Topical corticosteroids such as betamethasone dipropionate are effective in the treatment of corticosteroid-responsive dermatoses primarily because of their anti-inflammatory, antipruritic and vasoconstrictive actions; the exact mechanism of their action in each disease is uncertain (FDA betamethasone dipropionate cream 0.05% label, DESCRIPTION and CLINICAL PHARMACOLOGY). The betamethasone valerate label states that the mechanism of anti-inflammatory activity of topical corticosteroids is unclear, and that vasoconstrictor assays are used to compare and predict potencies and clinical efficacies of topical corticosteroids (FDA betamethasone valerate cream/ointment/lotion 0.1% label, CLINICAL PHARMACOLOGY). Betamethasone dipropionate is the 17,21-dipropionate ester of betamethasone and is in the medium range of potency compared with other topical corticosteroids; betamethasone valerate is the 17-valerate ester (FDA betamethasone dipropionate cream 0.05% label, DESCRIPTION and CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Betamethasone dipropionate cream 0.05% is a medium-potency corticosteroid indicated for relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses in patients 13 years and older (FDA betamethasone dipropionate cream 0.05% label, INDICATIONS AND USAGE)",
+      "Betamethasone valerate cream, ointment and lotion 0.1% are topical corticosteroids indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses (FDA betamethasone valerate cream/ointment/lotion 0.1% label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Betamethasone dipropionate cream 0.05% is contraindicated in patients who are hypersensitive to betamethasone dipropionate, to other corticosteroids, or to any ingredient in the preparation (FDA betamethasone dipropionate cream 0.05% label, CONTRAINDICATIONS)",
+      "Topical corticosteroids are contraindicated in patients with a history of hypersensitivity to any of the components of the betamethasone valerate preparation (FDA betamethasone valerate cream/ointment/lotion 0.1% label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Local reactions reported infrequently when used as recommended, in approximate decreasing order of occurrence: burning, itching, irritation, dryness, folliculitis, hypertrichosis, acneiform eruptions, hypopigmentation, perioral dermatitis, allergic contact dermatitis, maceration of the skin, secondary infection, skin atrophy, striae and miliaria; these may occur more frequently with the use of occlusive dressings (FDA betamethasone dipropionate cream 0.05% label, ADVERSE REACTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, ADVERSE REACTIONS)",
+      "Systemic absorption of topical corticosteroids has produced reversible hypothalamic-pituitary-adrenal (HPA) axis suppression, manifestations of Cushing's syndrome, hyperglycemia and glucosuria in some patients (FDA betamethasone dipropionate cream 0.05% label, ADVERSE REACTIONS and PRECAUTIONS)",
+      "In a paediatric clinical study with betamethasone dipropionate cream, skin atrophy (bruising, shininess) was reported in 3 of 63 (5%) patients, aged 3, 5 and 7 years (FDA betamethasone dipropionate cream 0.05% label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Betamethasone dipropionate cream 0.05%: apply a thin film to the affected skin areas once daily; in some cases a twice-daily dosage may be necessary. It is not to be used with occlusive dressings (FDA betamethasone dipropionate cream 0.05% label, DOSAGE AND ADMINISTRATION). Betamethasone valerate cream or ointment 0.1%: apply a thin film to the affected skin areas one to three times a day; once or twice a day is often effective. Betamethasone valerate lotion 0.1%: apply a few drops to the affected area and massage lightly until it disappears, twice daily in the morning and at night; dosage may be increased in stubborn cases and reduced to once daily following improvement (FDA betamethasone valerate cream/ointment/lotion 0.1% label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": null,
+      "paediatric": "Use of betamethasone dipropionate cream 0.05% in paediatric patients 12 years of age and younger is not recommended. In an open-label study, 10 of 43 (23%) evaluable paediatric patients aged 2 to 12 years using betamethasone dipropionate cream for atopic dermatitis for 2 to 3 weeks demonstrated HPA axis suppression, and suppression was more frequent in the younger age groups (14% in 9-12 years, 23% in 6-8 years, 30% in 2-5 years). In a separate open-label HPA axis study of 63 patients aged 1 to 12 years with atopic dermatitis treated twice daily for 2 to 3 weeks over a mean body surface area of 40%, adrenal suppression was indicated in 10 of 43 (23%) evaluable patients. Administration of topical corticosteroids to paediatric patients should be limited to the least amount compatible with an effective therapeutic regimen, and chronic therapy may interfere with growth and development (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS, CLINICAL PHARMACOLOGY and ADVERSE REACTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PRECAUTIONS and PEDIATRIC USE)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [],
+    "monitoring": "Patients receiving a large dose of a potent topical steroid applied to a large surface area should be evaluated periodically for evidence of HPA axis suppression using the urinary-free cortisol test and ACTH stimulation test; if HPA axis suppression is noted, withdraw the drug, reduce the frequency of application or substitute a less potent steroid. Recovery of HPA axis function is generally prompt and complete upon discontinuation, but signs and symptoms of steroid withdrawal may occasionally occur requiring supplemental systemic corticosteroids (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PRECAUTIONS and LABORATORY TESTS). Monitor for development of infection during treatment: in the presence of dermatological infections, an appropriate antifungal or antibacterial agent should be instituted, and if a favourable response does not occur promptly the corticosteroid should be discontinued until the infection is adequately controlled (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS). Monitor paediatric patients for HPA axis suppression, Cushing's syndrome, intracranial hypertension, linear growth retardation and delayed weight gain (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Pediatric Use; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PEDIATRIC USE).",
+    "patient_counselling": "This medication is to be used as directed by the physician, for external use only; avoid contact with the eyes. Do not use this medication for any disorder other than that for which it was prescribed. The treated skin area should not be bandaged, covered or wrapped as to be occlusive (unless the physician directs this for the betamethasone valerate products), and any signs of local adverse reactions - especially under an occlusive dressing - should be reported. Other corticosteroid-containing products should not be used with betamethasone dipropionate cream without first talking to the physician. Parents of paediatric patients should not use tight-fitting diapers or plastic pants on a child being treated in the diaper area, as these garments may constitute occlusive dressings (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Information For Patients; FDA betamethasone valerate cream/ointment/lotion 0.1% label, INFORMATION FOR PATIENTS).",
+    "warnings": [
+      "Systemic absorption of topical corticosteroids has produced reversible HPA axis suppression, manifestations of Cushing's syndrome, hyperglycemia and glucosuria in some patients; conditions which augment systemic absorption include the application of more potent steroids, use over large surface areas, prolonged use and the addition of occlusive dressings, and use of more than one corticosteroid-containing product at the same time increases total systemic glucocorticoid exposure (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS)",
+      "Paediatric patients may absorb proportionally larger amounts of topical corticosteroids and are more susceptible to systemic toxicity, including HPA axis suppression, Cushing's syndrome and intracranial hypertension (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PRECAUTIONS)",
+      "Topically applied corticosteroids can be absorbed in sufficient amounts to produce systemic effects on overdose (FDA betamethasone dipropionate cream 0.05% label, OVERDOSAGE; FDA betamethasone valerate cream/ointment/lotion 0.1% label, OVERDOSAGE)"
+    ],
+    "precautions": [
+      "If irritation develops, topical corticosteroids should be discontinued and appropriate therapy instituted (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PRECAUTIONS)",
+      "In the presence of dermatological infections, an appropriate antifungal or antibacterial agent should be instituted; if a favourable response does not occur promptly, the corticosteroid should be discontinued until the infection has been adequately controlled (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PRECAUTIONS)",
+      "The extent of percutaneous absorption of topical corticosteroids is determined by many factors including the vehicle, the integrity of the epidermal barrier and the use of occlusive dressings; inflammation and other disease processes increase absorption, and occlusive dressings substantially increase absorption (FDA betamethasone dipropionate cream 0.05% label, CLINICAL PHARMACOLOGY - Pharmacokinetics; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PHARMACOKINETICS)",
+      "Betamethasone dipropionate cream 0.05% is not to be used with occlusive dressings (FDA betamethasone dipropionate cream 0.05% label, DOSAGE AND ADMINISTRATION)",
+      "For betamethasone dipropionate cream 0.05%, use in paediatric patients 12 years of age and younger is not recommended, and administration to paediatric patients should be limited to the least amount compatible with an effective therapeutic regimen because chronic therapy may interfere with growth and development (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Pediatric Use)",
+      "Topical corticosteroids should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus; drugs of this class should not be used extensively on pregnant patients, in large amounts, or for prolonged periods (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Pregnancy; FDA betamethasone valerate cream/ointment/lotion 0.1% label, TERATOGENIC EFFECTS)",
+      "It is not known whether topical administration of corticosteroids could result in sufficient systemic absorption to produce detectable quantities in breast milk; caution should be exercised when topical corticosteroids are prescribed for a nursing woman (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Nursing Mothers; FDA betamethasone valerate cream/ointment/lotion 0.1% label, NURSING MOTHERS)"
+    ],
+    "serious_adverse_reactions": [
+      "Reversible HPA axis suppression with manifestations of Cushing's syndrome, hyperglycemia and glucosuria following systemic absorption of topical corticosteroid (FDA betamethasone dipropionate cream 0.05% label, ADVERSE REACTIONS and PRECAUTIONS)",
+      "HPA axis suppression, Cushing's syndrome and intracranial hypertension in paediatric patients, with manifestations including linear growth retardation, delayed weight gain, low plasma cortisol, absence of response to ACTH stimulation, bulging fontanelles, headache and bilateral papilledema (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Pediatric Use; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PEDIATRIC USE)",
+      "Signs and symptoms of steroid withdrawal following HPA axis suppression, requiring supplemental systemic corticosteroids (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS)",
+      "Secondary infection of the treated skin and skin atrophy with striae (FDA betamethasone dipropionate cream 0.05% label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (FDA betamethasone valerate cream/ointment/lotion 0.1% label, TERATOGENIC EFFECTS; the betamethasone dipropionate cream 0.05% label gives narrative pregnancy information but does not state a letter category)",
+    "pregnancy_guidance": "Corticosteroids are generally teratogenic in laboratory animals when administered systemically at relatively low dosage levels, and the more potent corticosteroids have been shown to be teratogenic after dermal application in laboratory animals. Betamethasone dipropionate was teratogenic in rabbits given intramuscularly at 0.05 mg/kg (approximately 0.03 fold the estimated maximum human dose on a mg/m2 basis), with umbilical hernias, cephalocele and cleft palates observed. There are no adequate and well-controlled studies in pregnant women on teratogenic effects from topically applied corticosteroids, so topical corticosteroids should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus, and should not be used extensively, in large amounts, or for prolonged periods (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Pregnancy; FDA betamethasone valerate cream/ointment/lotion 0.1% label, TERATOGENIC EFFECTS).",
+    "lactation_guidance": "It is not known whether topical administration of corticosteroids could result in sufficient systemic absorption to produce detectable quantities in breast milk. Systemically administered corticosteroids are secreted into breast milk in quantities not likely to have a deleterious effect on the infant; nevertheless, caution should be exercised when topical corticosteroids are prescribed for a nursing woman (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Nursing Mothers; FDA betamethasone valerate cream/ointment/lotion 0.1% label, NURSING MOTHERS).",
+    "overdose": "Topically applied corticosteroids can be absorbed in sufficient amounts to produce systemic effects (FDA betamethasone dipropionate cream 0.05% label, OVERDOSAGE; FDA betamethasone valerate cream/ointment/lotion 0.1% label, OVERDOSAGE).",
+    "pharmacokinetics": "The extent of percutaneous absorption of topical corticosteroids is determined by many factors including the vehicle, the integrity of the epidermal barrier and the use of occlusive dressings. Topical corticosteroids can be absorbed from normal intact skin, and inflammation or other disease processes in the skin increase percutaneous absorption; occlusive dressings substantially increase absorption. Once absorbed through the skin, topical corticosteroids are handled through pharmacokinetic pathways similar to systemically administered corticosteroids: corticosteroids are bound to plasma proteins in varying degrees, are metabolized primarily in the liver and then excreted by the kidneys, and some topical corticosteroids and their metabolites are also excreted into the bile (FDA betamethasone dipropionate cream 0.05% label, CLINICAL PHARMACOLOGY - Pharmacokinetics; FDA betamethasone valerate cream/ointment/lotion 0.1% label, PHARMACOKINETICS).",
+    "clinical_pearls": [
+      "The single most important determinant of systemic absorption is the surface area treated, the duration of treatment, the potency of the steroid and the use of occlusive dressings; diaper-area treatment in infants should be treated as an occlusive situation (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS; FDA betamethasone valerate cream/ointment/lotion 0.1% label, INFORMATION FOR PATIENTS)",
+      "Betamethasone dipropionate 0.05% is a medium-potency topical corticosteroid, whereas betamethasone valerate 0.1% is the corresponding valerate ester; potency comparisons are made with vasoconstrictor assays (FDA betamethasone dipropionate cream 0.05% label, CLINICAL PHARMACOLOGY; FDA betamethasone valerate cream/ointment/lotion 0.1% label, CLINICAL PHARMACOLOGY)",
+      "The betamethasone dipropionate cream 0.05% label restricts use to patients 13 years and older and states that use in patients 12 years and younger is not recommended (FDA betamethasone dipropionate cream 0.05% label, INDICATIONS AND USAGE and PRECAUTIONS - Pediatric Use)",
+      "These products are labelled 'For dermatologic use only. Not for ophthalmic use' and must not be confused with the ophthalmic or systemic betamethasone products (FDA betamethasone dipropionate cream 0.05% label, PACKAGE LABEL)",
+      "Topical betamethasone does not treat infection: if a dermatological infection is present it requires an antifungal or antibacterial agent, and the steroid should be stopped if the response is not prompt (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS)",
+      "Do not combine topical betamethasone with another topical corticosteroid without prescriber review, because concurrent use raises total systemic glucocorticoid exposure (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS and INFORMATION FOR PATIENTS)"
+    ],
+    "brand_names": ["Diprolene", "Wynzora", "Taclonex", "Enstilar"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "External use only. Betamethasone dipropionate cream 0.05%: apply a thin film to the affected skin areas once daily (twice daily in some cases); not to be used with occlusive dressings; available in 15 g and 45 g tubes and stored between 15 to 30 degrees C (FDA betamethasone dipropionate cream 0.05% label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED). Betamethasone valerate cream 0.1% (1.2 mg/g, equivalent to 1 mg/g betamethasone) in a hydrophilic cream base with chlorocresol preservative; ointment 0.1% (1.2 mg/g) in a white petrolatum and mineral oil base; lotion 0.1% (1.2 mg/g) in an isopropyl alcohol and water vehicle thickened with carbomer 934P (FDA betamethasone valerate cream/ointment/lotion 0.1% label, DESCRIPTION and DOSAGE AND ADMINISTRATION). For the lotion, apply the nozzle very close to the affected area and gently squeeze the bottle. Avoid contact with the eyes (FDA betamethasone dipropionate cream 0.05% label, PRECAUTIONS - Information For Patients; FDA betamethasone valerate cream/ointment/lotion 0.1% label, INFORMATION FOR PATIENTS)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Betamethasone Dipropionate Cream USP 0.05% (Actavis/Teva), DESCRIPTION and CLINICAL PHARMACOLOGY sections; FDA label, Betamethasone Valerate Cream, Ointment and Lotion 0.1% (E. Fougera & Co.), CLINICAL PHARMACOLOGY section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, INDICATIONS AND USAGE; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, CONTRAINDICATIONS; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, ADVERSE REACTIONS; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, DOSAGE AND ADMINISTRATION, CLINICAL PHARMACOLOGY and PRECAUTIONS; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b386ccc-a2d4-4d18-a2d7-e46ff894c674"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated as a separate field; the sourced adult regimen is given in fields.dosage.adult from the FDA labels DOSAGE AND ADMINISTRATION sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated as a separate field; the sourced paediatric restrictions and HPA axis data are given in fields.dosage.paediatric from the FDA labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "interactions",
+      "ref": "Neither FDA label contains a drug interactions section; the interaction-relevant content is systemic absorption with concurrent corticosteroid products and occlusive dressings, recorded in fields.warnings and fields.precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS (HPA axis suppression, dermatological infection, pediatric use) and ADVERSE REACTIONS; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, PRECAUTIONS, LABORATORY TESTS and PEDIATRIC USE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS - Information For Patients; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, INFORMATION FOR PATIENTS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b386ccc-a2d4-4d18-a2d7-e46ff894c674"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS and OVERDOSAGE; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, PRECAUTIONS and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS, CLINICAL PHARMACOLOGY - Pharmacokinetics and DOSAGE AND ADMINISTRATION; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, PRECAUTIONS, PHARMACOKINETICS, TERATOGENIC EFFECTS and NURSING MOTHERS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, ADVERSE REACTIONS and PRECAUTIONS (including Pediatric Use); FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, PEDIATRIC USE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in either FDA topical betamethasone label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b386ccc-a2d4-4d18-a2d7-e46ff894c674"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, TERATOGENIC EFFECTS ('Pregnancy Category C'); FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS - Pregnancy (no letter category stated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b386ccc-a2d4-4d18-a2d7-e46ff894c674"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS - Pregnancy; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, TERATOGENIC EFFECTS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, PRECAUTIONS - Nursing Mothers; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, NURSING MOTHERS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, OVERDOSAGE; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, CLINICAL PHARMACOLOGY - Pharmacokinetics; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, PHARMACOKINETICS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, CLINICAL PHARMACOLOGY, PRECAUTIONS, DOSAGE AND ADMINISTRATION, INDICATIONS AND USAGE and PACKAGE LABEL; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, CLINICAL PHARMACOLOGY and INFORMATION FOR PATIENTS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed brand product titles: DIPROLENE (betamethasone dipropionate) ointment [Organon LLC]; WYNZORA (calcipotriene and betamethasone dipropionate) cream [MC2 Therapeutics]; TACLONEX (calcipotriene and betamethasone dipropionate) suspension/ointment [Leo Pharma Inc.]; ENSTILAR (calcipotriene and betamethasone dipropionate) aerosol foam [Leo Pharma Inc.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b9543ad-2ca7-430d-aef9-81c376dc2e6c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Neither FDA topical betamethasone label contains a boxed warning; label contraindications and warnings are recorded in fields.contraindications and fields.warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in either FDA topical betamethasone label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in either FDA topical betamethasone label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b386ccc-a2d4-4d18-a2d7-e46ff894c674"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Betamethasone Dipropionate Cream 0.05%, DOSAGE AND ADMINISTRATION, HOW SUPPLIED, DESCRIPTION and PRECAUTIONS - Information For Patients; FDA label, Betamethasone Valerate Cream/Ointment/Lotion 0.1%, DESCRIPTION, DOSAGE AND ADMINISTRATION and INFORMATION FOR PATIENTS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab332791-461b-4396-9b46-7f00bc04c087"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric restrictions are provided in fields.dosage.paediatric)",
+    "dosage.geriatric (neither FDA topical betamethasone label contains a geriatric-use section)",
+    "interactions (neither FDA label contains a drug interactions section; no drug-drug interaction is stated for topical betamethasone)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in either label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in either label)",
+    "WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries (not retrievable in this environment; no eEML/KEML-derived field is claimed)"
+  ],
+  "notes": "The table stores this agent as the dermatology product 'Betamethasone Topical' (drug_class: Dermatological agent). The existing row previously carried olanzapine/schizophrenia indication text (wrong drug - antipsychotic dementia boxed warning and bipolar indications), which has been superseded by this draft. Content is grounded in two FDA labels: betamethasone dipropionate cream 0.05% (Actavis/Teva) and betamethasone valerate cream, ointment and lotion 0.1% (E. Fougera & Co.), with every statement attributed to the label that carries it. This row is deliberately separate from the systemic 'Betamethasone' monograph (betamethasone sodium phosphate/acetate injection), which has different indications, contraindications, routes and paediatric dosing; the topical esters (dipropionate, valerate) must not be substituted for the systemic salt forms. Brand names listed include combination products (Wynzora, Taclonex, Enstilar) that contain calcipotriene with betamethasone dipropionate; only Diprolene is a betamethasone-only branded product among those found on DailyMed."
+}

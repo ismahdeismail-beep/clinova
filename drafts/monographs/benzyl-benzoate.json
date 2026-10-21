@@ -1,0 +1,191 @@
+{
+  "name": "Benzyl Benzoate",
+  "existing_id": "65cea6ef-203f-4d6e-978b-f13a7bcd2f27",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": null,
+    "indications": [
+      "Scabies: for adults, including pregnant women, two applications of topical benzyl benzoate 25% can be used as an alternative to permethrin and ivermectin; for children less than 15 kg, if permethrin is not available, options include sulfur (8% to 10%) and benzyl benzoate (10% to 12.5%) (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, section 10.2, Drugs)",
+      "Listed as a scabicide and pediculicide in the WHO Model List of Essential Medicines, 24th list (2025), section 13.5 Scabicides and pediculicides (lotion 25%), with the footnote '> 2 years'",
+      "Listed in the Kenya Essential Medicines List 2023, section 15.5 Scabicides and pediculicides: benzyl benzoate lotion 25% (50 mL), Level of Use 2",
+      "Listed in the Kenya Essential Medicines List 2023, section 15.6 Medicines for Jiggers (tungiasis): benzyl benzoate lotion 25% (50 mL), Level of Use 2"
+    ],
+    "contraindications": [
+      "Use in children is restricted: the WHO Model List of Essential Medicines, 24th list (2025), lists benzyl benzoate with the footnote '> 2 years' (section 13.5), and the Kenya Essential Medicines List 2023 states 'Not for use in children (use Crotamiton)' (section 15.5.1, footnote 351)",
+      "For use in jiggers (tungiasis) the Kenya Essential Medicines List 2023 also states 'Not for use in children' (section 15.6.1, footnote 353)"
+    ],
+    "side_effects": null,
+    "dosage": {
+      "adult": "Topical use: benzyl benzoate 25% lotion applied to all parts of the body from the neck down, with two 12-hour applications on two consecutive days (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table, 'Other options'). For adults, including pregnant women, two applications of topical benzyl benzoate 25% can be used as an alternative to permethrin and ivermectin (same guidelines, section 10.2, Drugs). The WHO Model List of Essential Medicines, 24th list (2025), specifies lotion 25% (section 13.5) and the Kenya Essential Medicines List 2023 specifies lotion 25% (50 mL) (section 15.5.1).",
+      "geriatric": null,
+      "paediatric": "Children: benzyl benzoate 12.5% lotion, two 12-hour applications on two consecutive days, applied to all parts of the body from the neck down (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table). Benzyl benzoate can be used in a diluted form for children, infants and breastfeeding mothers (same guidelines, Considerations in choice of drug). For children less than 15 kg there is not enough evidence to make recommendations if permethrin is not available, but options include sulfur (8% to 10%) and benzyl benzoate (10% to 12.5%) (same guidelines, section 10.2, Drugs). The Kenya Essential Medicines List 2023 states that benzyl benzoate is not for use in children (use crotamiton) (section 15.5.1, footnote 351)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": null,
+    "monitoring": null,
+    "patient_counselling": "Apply the lotion to all parts of the body from the neck down and leave it on for 12 hours, then repeat on the second consecutive day (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table). In addition to individual patient management, contact tracing and treatment are necessary to prevent spread of disease and ensure treatment success, so all family members and close contacts should be treated simultaneously (same guidelines, Remarks). Household items such as clothes, towels and bedding should be washed or subjected to heat from an iron or hot clothes dryer; alternatively the clothes can be placed in sealed bags for a week, by which time the mites will have died (same guidelines, Remarks). Patients should be advised that the itch and rash may persist up to two weeks even after successful treatment (same guidelines, Remarks). Benzyl benzoate can be used in a diluted form for children, infants and breastfeeding mothers (same guidelines, Considerations in choice of drug), and in Kenya the Essential Medicines List directs prescribers to use crotamiton instead in children (KEML 2023, footnote 351).",
+    "warnings": [
+      "Restriction on use in children: the WHO Model List of Essential Medicines, 24th list (2025), lists benzyl benzoate with the footnote '> 2 years' (section 13.5) and the Kenya Essential Medicines List 2023 states 'Not for use in children (use Crotamiton)' (section 15.5.1, footnote 351)",
+      "For the jiggers (tungiasis) indication the Kenya Essential Medicines List 2023 likewise states 'Not for use in children' (section 15.6.1, footnote 353)"
+    ],
+    "precautions": [
+      "Benzyl benzoate is for topical use on the skin; the WHO guidance specifies application to all parts of the body from the neck down, and in children the preparation must be diluted (12.5% lotion) (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table and Considerations in choice of drug)",
+      "Use in children is restricted by both essential-medicines lists: '> 2 years' in the WHO Model List (section 13.5) and 'Not for use in children (use Crotamiton)' in the Kenya Essential Medicines List 2023 (section 15.5.1, footnote 351)",
+      "Treat close contacts at the same time and decontaminate clothing, towels and bedding, because the treatment only kills mites on the person treated (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Remarks)"
+    ],
+    "serious_adverse_reactions": null,
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Topical treatments with benzyl benzoate and permethrin for scabies during pregnancy have shown no increase in adverse pregnancy outcomes in the second and third trimesters of pregnancy, and benzyl benzoate and permethrin are both categorized as drugs which have been taken by only a limited number of pregnant women and women of childbearing age, without an increase in the frequency of malformations or other direct or indirect harmful effects on the human fetus (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Considerations in choice of drug). For adults, including pregnant women, two applications of topical benzyl benzoate 25% can be used as an alternative to permethrin and ivermectin (same guidelines, section 10.2, Drugs). There is no FDA-approved label for benzyl benzoate, so no FDA lettered pregnancy category applies.",
+    "lactation_guidance": "Benzyl benzoate can be used in a diluted form for children, infants and breastfeeding mothers (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Considerations in choice of drug).",
+    "overdose": null,
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Benzyl benzoate only kills mites on the person treated, so the whole household and close contacts must be treated simultaneously and clothing, towels and bedding decontaminated, otherwise reinfestation is almost certain (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Remarks)",
+      "Itch and rash can persist for up to two weeks after successful treatment; this is a post-scabetic reaction and is not a reason to retreat the patient (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Remarks)",
+      "Strength matters and is age-dependent: adults use 25% lotion, children use 12.5% lotion, and the WHO Model List and the Kenya Essential Medicines List both standardise on 25% lotion for adults (WHO eEML 24th list (2025), section 13.5; KEML 2023, section 15.5.1)",
+      "In the WHO scabies guidance permethrin 5% cream is the first-line topical treatment and benzyl benzoate is the alternative when permethrin is unavailable or not feasible, with oral ivermectin 200 micrograms/kg reserved for poor response or non-feasible topical treatment (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, section 10.2)",
+      "Kenya's Essential Medicines List explicitly redirects children to crotamiton 10% cream rather than benzyl benzoate, so in the KEML benzyl benzoate is not the product to use in children (KEML 2023, section 15.5.1 and footnote 351)",
+      "Benzyl benzoate 25% lotion is also listed in the Kenya Essential Medicines List for jiggers (tungiasis), a separate indication from scabies and pediculosis (KEML 2023, section 15.6.1)"
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Topical use. Apply benzyl benzoate 25% lotion to all parts of the body from the neck down and leave it on for 12 hours, repeating on the second consecutive day (WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table, 'Other options'). For children use the diluted 12.5% lotion, and dilute the preparation for infants and breastfeeding mothers (same guidelines, Considerations in choice of drug). Kenya supply is 25% lotion in a 50 mL pack (KEML 2023, section 15.5.1). Because the treatment acts on the skin surface, clothing, towels and bedding must be washed or heat-treated, or sealed in bags for a week, and all close contacts treated at the same time (same guidelines, Remarks)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "No mechanism of action for benzyl benzoate is stated in any of the sourced authoritative documents: the WHO Model List of Essential Medicines, 24th list (2025) entry for benzyl benzoate, the Kenya Essential Medicines List 2023 entries, or the WHO guidelines on skin and oral HIV-associated conditions contain no description of how benzyl benzoate acts on scabies mites",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "indications",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults (WHO, ISBN 978 92 4 154891 5), section 10.2 and scabies treatment options table; WHO Model List of Essential Medicines, 24th list (2025), section 13.5; Kenya Essential Medicines List 2023, sections 15.5.1 and 15.6.1",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "contraindications",
+      "ref": "WHO Model List of Essential Medicines, 24th list (2025), section 13.5 footnote '> 2 years'; Kenya Essential Medicines List 2023, section 15.5.1 footnote 351 and section 15.6.1 footnote 353",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf?sfvrsn=5f922bbf_3&download=true"
+    },
+    {
+      "field": "side_effects",
+      "ref": "No adverse-effect profile for benzyl benzoate is stated in the sourced authoritative documents: the WHO Model List of Essential Medicines, 24th list (2025), the Kenya Essential Medicines List 2023 and the WHO guidelines on skin and oral HIV-associated conditions give no adverse reaction data for benzyl benzoate",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "dosage",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, section 10.2 (Drugs) and scabies treatment options table ('Other options', benzyl benzoate 25% lotion for adults and 12.5% lotion for children, two 12 hour applications on two consecutive days); WHO Model List of Essential Medicines, 24th list (2025), section 13.5; Kenya Essential Medicines List 2023, section 15.5.1",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "interactions",
+      "ref": "No drug interactions for benzyl benzoate are described in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "monitoring",
+      "ref": "No monitoring parameters or follow-up schedule for benzyl benzoate are specified in the sourced authoritative documents; the WHO guidelines give only post-treatment advice on persistent itch and on treatment of contacts (Remarks)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Remarks (contact tracing, simultaneous treatment of contacts, washing or heat-treating clothing/towels/bedding or sealing in bags for a week, itch and rash may persist up to two weeks) and Considerations in choice of drug (dilution for children, infants and breastfeeding mothers); Kenya Essential Medicines List 2023, footnote 351",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "warnings",
+      "ref": "WHO Model List of Essential Medicines, 24th list (2025), section 13.5 footnote '> 2 years'; Kenya Essential Medicines List 2023, footnotes 351 and 353",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf?sfvrsn=5f922bbf_3&download=true"
+    },
+    {
+      "field": "precautions",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table and Remarks; WHO Model List of Essential Medicines, 24th list (2025), section 13.5; Kenya Essential Medicines List 2023, section 15.5.1 and footnote 351",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "No serious adverse reaction for benzyl benzoate is described in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction for benzyl benzoate is described in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA lettered pregnancy category: benzyl benzoate has no FDA-approved label (DailyMed returns no SPL for the drug name) and neither the WHO Model List nor the Kenya Essential Medicines List nor the WHO guidelines carry a lettered category",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, section 10.2 (Drugs) and Considerations in choice of drug (pregnancy safety of topical benzyl benzoate in the second and third trimesters)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, Considerations in choice of drug (benzyl benzoate can be used in a diluted form for children, infants and breastfeeding mothers)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose information for benzyl benzoate is given in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "No pharmacokinetic data for benzyl benzoate are given in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, sections 10.1-10.2 and Remarks; WHO Model List of Essential Medicines, 24th list (2025), section 13.5; Kenya Essential Medicines List 2023, sections 15.5.1 and 15.6.1 with footnotes 351 and 353",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed returns no SPL for benzyl benzoate (drug name search returns zero results), so no brand-named benzyl benzoate product is asserted; the brand name 'Dove' currently stored against this row is a soap brand and not a benzyl benzoate medicinal product, and is therefore not carried forward",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=benzyl%20benzoate&pagesize=5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning applies: there is no FDA-approved label for benzyl benzoate, and neither the WHO Model List of Essential Medicines, 24th list (2025), the Kenya Essential Medicines List 2023 nor the WHO guidelines carry a boxed-warning equivalent; the only restrictions are the paediatric footnotes in the two essential-medicines lists",
+      "url": "https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/afro_neml/kenya-2023.pdf?sfvrsn=5f922bbf_3&download=true"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment for benzyl benzoate is specified in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment for benzyl benzoate is specified in the sourced authoritative documents (WHO Model List of Essential Medicines, 24th list (2025); Kenya Essential Medicines List 2023; WHO guidelines on skin and oral HIV-associated conditions)",
+      "url": "https://www.who.int/publications/i/item/B09474"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults, scabies treatment options table and Remarks; Kenya Essential Medicines List 2023, section 15.5.1 (lotion 25%, 50 mL)",
+      "url": "https://iris.who.int/server/api/core/bitstreams/50196a71-51c6-4e05-ade2-36e013a450fe/content"
+    }
+  ],
+  "unsourced_fields": [
+    "mechanism_of_action (no mechanism of action for benzyl benzoate is stated in the WHO Model List of Essential Medicines, the Kenya Essential Medicines List 2023 or the WHO scabies guidance)",
+    "side_effects (no adverse-effect data for benzyl benzoate are given in the sourced WHO or Kenya documents)",
+    "serious_adverse_reactions (no serious adverse reaction for benzyl benzoate is given in the sourced WHO or Kenya documents)",
+    "interactions (no drug interactions for benzyl benzoate are given in the sourced WHO or Kenya documents)",
+    "monitoring (no monitoring parameters are specified in the sourced WHO or Kenya documents)",
+    "overdose (no overdose information is given in the sourced WHO or Kenya documents)",
+    "pharmacokinetics (no pharmacokinetic data for benzyl benzoate are given in the sourced WHO or Kenya documents)",
+    "dosage.geriatric (no geriatric-specific dosing statement is given; the adult regimen is used for adults including older adults)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (there is no FDA-approved label for benzyl benzoate, so no FDA lettered category applies)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the sourced documents)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the sourced documents)"
+  ],
+  "notes": "The table stores this agent as 'Benzyl Benzoate' with the brand name 'Dove'; DailyMed has no benzyl benzoate product and 'Dove' is a soap brand, not a benzyl benzoate medicine, so that brand name is deliberately not carried forward and brand_names is left empty pending review. Benzyl benzoate is a dermal scabicide and pediculicide with no FDA-approved label (DailyMed returns zero SPLs), so the content here is built from three authoritative non-US sources: the WHO Model List of Essential Medicines, 24th list (2025), section 13.5 (benzyl benzoate lotion 25%, footnote '> 2 years'); the Kenya Essential Medicines List 2023, sections 15.5.1 and 15.6.1 (lotion 25% (50 mL), with footnotes 351 and 353 restricting use in children, and an indication for jiggers/tungiasis); and the WHO Guidelines on the treatment of skin and oral HIV-associated conditions in children and adults (ISBN 978 92 4 154891 5), which supply the practical regimen (25% lotion for adults, 12.5% for children, two 12-hour applications on two consecutive days, applied from the neck down), the pregnancy and breastfeeding statements, and the contact-tracing and environmental advice. Several fields (mechanism of action, adverse effects, interactions, monitoring, overdose, pharmacokinetics) are therefore null because none of those documents describe them; filling them from secondary literature was deliberately avoided. The eEML web application at list.essentialmeds.org was not reachable from this environment (HTTP 503), so the eEML content cited here comes from the published 24th-list PDF."
+}

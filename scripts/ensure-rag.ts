@@ -83,6 +83,8 @@ interface DocRow {
   contentHash: string
   chunks: Chunk[]
   error?: string
+  /** Failed with a throttle (429) — worth one more attempt. */
+  throttled?: boolean
 }
 
 function parseArgs(argv: string[]): Args {
@@ -309,12 +311,21 @@ async function main() {
   // --- Embed in batches across documents ----------------------------------
   const errors: { document: string; error: string }[] = []
   let quotaSkipped = 0
-  if (!args.dryRun && totalChunks > 0) {
+  let embeddedOk = 0
+  let attempted = 0
+
+  /**
+   * Embed every chunk of `targetPlans`. Returns false when the daily quota is
+   * exhausted (the caller must stop); failed documents are marked on the plan
+   * itself (`p.error`), and throttled ones are flagged for a second pass.
+   */
+  const embedPass = async (targetPlans: DocRow[]): Promise<boolean> => {
     const items: { plan: DocRow; chunk: Chunk }[] = []
-    for (const p of plans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
+    for (const p of targetPlans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
+    if (!items.length) return true
 
     let done = 0
-    embedLoop: for (let i = 0; i < items.length; i += args.embedBatch) {
+    for (let i = 0; i < items.length; i += args.embedBatch) {
       const slice = items.slice(i, i + args.embedBatch)
       try {
         const vectors = await embedTexts(
@@ -324,6 +335,7 @@ async function main() {
         slice.forEach((x, j) => {
           x.chunk.embedding = vectors[j]
         })
+        embeddedOk += slice.length
       } catch (e: any) {
         // Daily-quota exhaustion — nothing retryable today; stop and leave the
         // rest for a later run (--only-missing will resume them).
@@ -339,15 +351,17 @@ async function main() {
           }
           quotaSkipped = rest.length
           console.error(
-            `[ensure-rag] DAILY QUOTA EXHAUSTED — embedded ${done}/${items.length}, ` +
+            `[ensure-rag] DAILY QUOTA EXHAUSTED — embedded ${embeddedOk}/${attempted + slice.length} chunks, ` +
               `${quotaSkipped} chunks left for the next run (--only-missing).`,
           )
-          break embedLoop
+          return false
         }
         const labels = [...new Set(slice.map((x) => x.plan.label))]
         const msg = (e as Error).message
+        const throttled = e?.status === 429
         for (const p of slice.map((x) => x.plan)) {
           if (!p.error) p.error = msg
+          if (throttled) p.throttled = true
           errors.push({ document: p.label, error: msg })
         }
         console.error(
@@ -355,10 +369,32 @@ async function main() {
         )
       }
       done += slice.length
+      attempted += slice.length
       if ((i / args.embedBatch) % 5 === 0 || done === items.length) {
-        console.log(`[ensure-rag] embedded ${done}/${items.length} chunks`)
+        console.log(`[ensure-rag] embedded ${embeddedOk}/${attempted} chunks`)
       }
       if (args.paceMs > 0 && i + args.embedBatch < items.length) await sleep(args.paceMs)
+    }
+    return true
+  }
+
+  if (!args.dryRun && totalChunks > 0) {
+    const complete = await embedPass(plans)
+    // A quota window can roll over mid-run, so a batch throttled at the start
+    // may succeed minutes later. Retry the throttled documents once — otherwise
+    // the prioritised (changed) documents are starved by a transient 429 and
+    // only get another chance 20h later, when the cron stamp allows a run.
+    const throttled = complete ? plans.filter((p) => p.throttled) : []
+    if (throttled.length) {
+      console.log(`[ensure-rag] retrying ${throttled.length} throttled document(s) after a pause…`)
+      for (const p of throttled) {
+        p.error = undefined
+        p.throttled = false
+      }
+      const errMark = errors.length
+      await sleep(60_000)
+      errors.length = errMark
+      await embedPass(throttled)
     }
   }
 
@@ -434,6 +470,8 @@ async function main() {
     stg_documents: stgDocs.length,
     documents_missing_chunks: missing,
     chunks_written: chunksWritten,
+    chunks_embedded: embeddedOk,
+    chunks_attempted: attempted,
     chunks_quota_skipped: quotaSkipped,
     errors,
   }

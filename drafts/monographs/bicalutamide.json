@@ -1,0 +1,219 @@
+{
+  "name": "Bicalutamide",
+  "existing_id": "eb7fc49d-edfb-4c1c-9325-e41c3e450621",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bicalutamide is a non-steroidal androgen receptor inhibitor. It competitively inhibits the action of androgens by binding to cytosol androgen receptors in the target tissue. Prostatic carcinoma is known to be androgen sensitive and responds to treatment that counteracts the effect of androgen and/or removes the source of androgen. When bicalutamide is combined with LHRH analog therapy, the suppression of serum testosterone induced by the LHRH analog is not affected; in clinical trials with bicalutamide as a single agent, rises in serum testosterone and estradiol have been noted. The tablet is a racemate whose antiandrogenic activity is almost exclusively exhibited by the R-enantiomer, the S-enantiomer being essentially inactive (FDA bicalutamide tablet label, MECHANISM OF ACTION and DESCRIPTION).",
+    "indications": [
+      "Bicalutamide tablets 50 mg once daily are indicated for use in combination therapy with a luteinizing hormone-releasing hormone (LHRH) analog for the treatment of Stage D2 metastatic carcinoma of the prostate (FDA bicalutamide tablet label, section 1; FDA Casodex label, section 1)",
+      "Bicalutamide tablets 150 mg daily are not approved for use alone or with other treatments (FDA bicalutamide tablet label, section 1; FDA Casodex label, section 1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity: bicalutamide is contraindicated in any patient who has shown a hypersensitivity reaction to the drug or any of the tablet's components; hypersensitivity reactions including angioneurotic edema and urticaria have been reported (FDA bicalutamide tablet label, section 4)",
+      "Women: bicalutamide has no indication for women and should not be used in this population (FDA bicalutamide tablet label, section 4)",
+      "Pregnancy: bicalutamide can cause fetal harm when administered to a pregnant woman and is contraindicated for use in pregnant women (FDA bicalutamide tablet label, sections 4 and 8.1)"
+    ],
+    "side_effects": [
+      "Adverse reactions occurring in more than 10% of patients receiving bicalutamide plus an LHRH analog: hot flashes, pain (including general, back, pelvic and abdominal), asthenia, constipation, infection, nausea, peripheral edema, dyspnea, diarrhea, hematuria, nocturia and anemia (FDA bicalutamide tablet label, section 6.1)",
+      "The most frequent adverse reaction was hot flashes (53%) in patients with advanced prostate cancer treated with bicalutamide in combination with an LHRH analog (FDA bicalutamide tablet label, section 6.1)",
+      "In a head-to-head trial of bicalutamide 50 mg once daily versus flutamide 250 mg three times daily, both with an LHRH analog (n=401 vs n=407), adverse reactions with incidence of 5% or greater regardless of causality included general pain (35% vs 31%), back pain (25% vs 26%), asthenia (22% vs 21%), pelvic pain (21% vs 17%), infection (18% vs 14%), abdominal pain (11% vs 11%), chest pain (8% vs 8%), headache (7% vs 7%), flu syndrome (7% vs 30%) and urinary incontinence (4% vs 8%) (FDA bicalutamide tablet label, section 6.1, Table 1)",
+      "Other adverse reactions of 2% to 5% reported in the bicalutamide-LHRH analog group include neoplasm, neck pain, fever, chills, sepsis, hernia and cyst (body as a whole); angina pectoris, congestive heart failure, myocardial infarct, heart arrest, coronary artery disorder and syncope (cardiovascular); melena, rectal hemorrhage, dry mouth, dysphagia, gastrointestinal disorder, periodontal abscess and gastrointestinal carcinoma (digestive); edema, increased BUN, increased creatinine, dehydration, gout and hypercholesterolemia (metabolic); myalgia and leg cramps (musculoskeletal); hypertonia, confusion, somnolence, decreased libido, neuropathy and nervousness (nervous); lung disorder, asthma, epistaxis and sinusitis (respiratory); dry skin, alopecia, pruritus, herpes zoster, skin carcinoma and skin disorder (skin); cataract (special senses); dysuria, urinary urgency, hydronephrosis and urinary tract disorder (urogenital); laboratory abnormalities including elevated AST, ALT, bilirubin, BUN and creatinine and decreased hemoglobin and white cell count (FDA bicalutamide tablet label, section 6.1)",
+      "Gynecomastia and breast pain were reported in up to 38% and 39% of patients respectively in clinical trials with bicalutamide 150 mg as a single agent (FDA bicalutamide tablet label, section 5.3)",
+      "Post-approval: interstitial lung disease (some fatal) including interstitial pneumonitis and pulmonary fibrosis, most often at doses greater than 50 mg (FDA bicalutamide tablet label, section 6.2)",
+      "Post-approval: increased PT/INR due to interaction between coumarin anticoagulants and bicalutamide, with serious bleeding reported (FDA bicalutamide tablet label, section 6.2)",
+      "Post-approval: photosensitivity (FDA bicalutamide tablet label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "The recommended dose for bicalutamide in combination with an LHRH analog is one 50 mg tablet once daily (morning or evening), with or without food. It is recommended that bicalutamide be taken at the same time each day, and that treatment with bicalutamide be started at the same time as treatment with the LHRH analog. If a dose is missed, take the next dose at the scheduled time; do not take the missed dose and do not double the next dose (FDA bicalutamide tablet label, sections 2.1 and 2.2). No dosage adjustment is necessary for patients with renal impairment (FDA bicalutamide tablet label, section 2.3). No dosage adjustment is necessary for patients with mild to moderate hepatic impairment; in patients with severe liver impairment (n=4) the half-life of the active enantiomer was increased by 76% (5.9 versus 10.4 days), but no dosage adjustment is necessary (FDA bicalutamide tablet label, section 2.4).",
+      "geriatric": "In two studies in patients given 50 mg or 150 mg daily, no significant relationship between age and steady-state levels of total bicalutamide or the active R-enantiomer has been shown (FDA bicalutamide tablet label, section 8.5).",
+      "paediatric": "The safety and effectiveness of bicalutamide in pediatric patients have not been established. The label describes a study of bicalutamide orodispersible tablet with anastrozole orodispersible tablet in 14 boys (age range >=2 years) with familial male-limited precocious puberty (testotoxicosis), in which bicalutamide was started at 12.5 mg and titrated through 25, 50 and 100 mg daily (FDA bicalutamide tablet label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "LHRH analogs (goserelin or leuprolide): clinical studies have not shown any drug interactions between bicalutamide and LHRH analogs (FDA bicalutamide tablet label, section 7)",
+      "CYP3A4 substrates: R-bicalutamide is an inhibitor of CYP3A4 (with lesser inhibition of CYP2C9, 2C19 and 2D6 in vitro); with coadministration of bicalutamide, mean midazolam levels may be increased 1.5-fold for Cmax and 1.9-fold for AUC, so caution should be exercised when bicalutamide is coadministered with CYP3A4 substrates (FDA bicalutamide tablet label, section 7)",
+      "Coumarin anticoagulants: in vitro protein-binding studies show bicalutamide can displace coumarin anticoagulants from binding sites; PT/INR should be closely monitored in patients concomitantly receiving coumarin anticoagulants and bicalutamide, and the anticoagulant dose may need adjustment (FDA bicalutamide tablet label, sections 5.2 and 7)",
+      "Antidiabetic agents: bicalutamide is used in combination with LHRH agonists, which have been shown to cause a reduction in glucose tolerance in males, so blood glucose monitoring should be considered (FDA bicalutamide tablet label, section 5.4)",
+      "There is no evidence that bicalutamide induces hepatic enzymes (FDA bicalutamide tablet label, section 7)"
+    ],
+    "monitoring": "Measure serum transaminase levels prior to starting bicalutamide, at regular intervals for the first four months of treatment and periodically thereafter; if symptoms or signs suggestive of liver dysfunction occur (nausea, vomiting, abdominal pain, fatigue, anorexia, flu-like symptoms, dark urine, jaundice or right upper quadrant tenderness), measure serum transaminases, particularly ALT, immediately; if jaundice occurs or ALT rises above two times the upper limit of normal, discontinue bicalutamide immediately with close follow-up of liver function (FDA bicalutamide tablet label, section 5.1). Periodically monitor prothrombin time and INR and adjust the anticoagulant dose as needed in patients receiving coumarin anticoagulants (FDA bicalutamide tablet label, section 5.2). Regularly assess serum prostate specific antigen (PSA) to monitor response; if PSA rises during therapy the patient should be evaluated for clinical progression (FDA bicalutamide tablet label, section 5.5). Consider monitoring blood glucose in patients receiving bicalutamide with LHRH agonists because of reduced glucose tolerance (FDA bicalutamide tablet label, section 5.4). Periodic liver function tests should be considered for hepatically impaired patients on long-term therapy (FDA bicalutamide tablet label, section 8.6).",
+    "patient_counselling": "Inform patients that therapy with bicalutamide and the LHRH analog should be started at the same time and that they should not interrupt or stop taking these medications without consulting their healthcare provider. Inform patients that bicalutamide can cause hepatitis, which may result in hepatic failure and death, that liver function tests should be monitored regularly during treatment, and to report signs and symptoms of hepatitis. Inform patients that serious bleeding has occurred with increased anticoagulant effects while taking bicalutamide, and advise them to notify their healthcare provider of any bleeding or spontaneous bruising while on bicalutamide and anticoagulants. Inform patients that diabetes or loss of glycemic control in patients with pre-existing diabetes has been reported during treatment with LHRH agonists. During treatment with bicalutamide, somnolence has been reported; advise patients who experience this symptom to observe caution when driving or operating machines. Cases of photosensitivity have been reported; advise patients to avoid direct exposure to excessive sunlight or UV light and to consider sunscreen use. Advise male patients with female partners of reproductive potential to use effective contraception during treatment and for 130 days after the last dose of bicalutamide, and advise male patients that bicalutamide may impair fertility. Advise patients to read the FDA-approved patient labeling (FDA bicalutamide tablet label, INFORMATION FOR PATIENTS).",
+    "warnings": [
+      "Severe hepatic injury and fatal hepatic failure have been observed; hepatotoxicity in postmarketing reports generally occurred within the first three to four months of treatment, and hepatitis or marked increases in liver enzymes leading to drug discontinuation occurred in approximately 1% of bicalutamide patients in controlled clinical trials (FDA bicalutamide tablet label, section 5.1)",
+      "Hemorrhage with concomitant use of coumarin anticoagulant: in the postmarketing setting there have been reports of excessive prolongation of prothrombin time and INR days to weeks after the introduction of bicalutamide in patients previously stable on coumarin anticoagulants, some with serious bleeding including intracranial, retroperitoneal and gastrointestinal bleeding requiring transfusion or vitamin K (FDA bicalutamide tablet label, section 5.2)",
+      "Interstitial lung disease (some fatal), including interstitial pneumonitis and pulmonary fibrosis, has been identified during post-approval use, most often at doses greater than 50 mg (FDA bicalutamide tablet label, section 6.2)",
+      "Gynecomastia and breast pain have been reported during treatment with bicalutamide 150 mg when used as a single agent (FDA bicalutamide tablet label, section 5.3)",
+      "Bicalutamide is used in combination with an LHRH agonist; LHRH agonists cause a reduction in glucose tolerance in males, so consideration should be given to monitoring blood glucose (FDA bicalutamide tablet label, section 5.4)",
+      "Monitoring PSA is recommended; evaluate for clinical progression if PSA increases (FDA bicalutamide tablet label, section 5.5)",
+      "Photosensitivity has been reported during post-approval use of bicalutamide (FDA bicalutamide tablet label, section 6.2)"
+    ],
+    "precautions": [
+      "Bicalutamide should be used with caution in patients with moderate-to-severe hepatic impairment, because it is extensively metabolized by the liver and limited data in severe hepatic impairment suggest that excretion may be delayed and could lead to further accumulation; periodic liver function tests should be considered for hepatically impaired patients on long-term therapy (FDA bicalutamide tablet label, section 8.6)",
+      "No clinically significant difference in the pharmacokinetics of either enantiomer was noted in patients with mild-to-moderate hepatic disease compared with healthy controls, but the half-life of the R-enantiomer was increased approximately 76% (5.9 versus 10.4 days) in severe liver disease (FDA bicalutamide tablet label, section 8.6)",
+      "Antiandrogen withdrawal phenomenon: in a subset of patients treated with bicalutamide plus an LHRH agonist who discontinue bicalutamide due to progressive advanced prostate cancer, a reduction in PSA and/or clinical improvement may be observed (FDA bicalutamide tablet label, MECHANISM OF ACTION)",
+      "Bicalutamide has no indication for women and should not be used in this population (FDA bicalutamide tablet label, section 4)",
+      "Antiandrogen therapy may cause morphological changes in spermatozoa, and based on animal studies bicalutamide can lead to inhibition of spermatogenesis and may impair fertility in males of reproductive potential; the long-term effects on male fertility have not been studied (FDA bicalutamide tablet label, section 8.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe hepatic injury and fatal hepatic failure; hepatitis or marked elevation of liver enzymes (FDA bicalutamide tablet label, sections 5.1 and 6.2)",
+      "Interstitial lung disease, sometimes fatal, including interstitial pneumonitis and pulmonary fibrosis (FDA bicalutamide tablet label, section 6.2)",
+      "Serious hemorrhage, including intracranial, retroperitoneal and gastrointestinal bleeding, in patients on coumarin anticoagulants (FDA bicalutamide tablet label, sections 5.2 and 6.2)",
+      "Hypersensitivity reactions including angioneurotic edema and urticaria (FDA bicalutamide tablet label, section 4)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Bicalutamide is contraindicated for use in pregnant women because it can cause fetal harm, and it is not indicated for use in females. There are no human data on the use of bicalutamide in pregnant women. In animal reproduction studies, oral administration of bicalutamide to pregnant rats during organogenesis caused abnormal development of reproductive organs in male fetuses at exposures approximately 0.7 to 2 times the human exposure at the recommended dose: reduced anogenital distance, smaller secondary sex organs, cryptorchidism and hypospadias with inability to mate and impregnate female partners, and reduced pregnancy rates in female offspring. Male patients with female partners of reproductive potential should use effective contraception during treatment and for 130 days after the final dose of bicalutamide (FDA bicalutamide tablet label, sections 8.1 and 8.3).",
+    "lactation_guidance": "Bicalutamide is not indicated for use in pregnant women. There is no information available on the presence of bicalutamide in human milk, or on the effects on the breastfed infant or on milk production. Bicalutamide has been detected in rat milk (FDA bicalutamide tablet label, section 8.2).",
+    "overdose": "Long-term clinical trials have been conducted with dosages up to 200 mg of bicalutamide daily and these dosages have been well tolerated. A single dose of bicalutamide that results in symptoms of an overdose considered life-threatening has not been established. There is no specific antidote and treatment of an overdose should be symptomatic: vomiting may be induced if the patient is alert; dialysis is not likely to be helpful since bicalutamide is highly protein bound and extensively metabolized; general supportive care including frequent monitoring of vital signs and close observation is indicated (FDA bicalutamide tablet label, section 10).",
+    "pharmacokinetics": "Bicalutamide is well absorbed following oral administration, although the absolute bioavailability is unknown; coadministration with food has no clinically significant effect on the rate or extent of absorption. Bicalutamide is highly protein-bound (96%). Bicalutamide undergoes stereospecific metabolism: the S (inactive) isomer is metabolized primarily by glucuronidation, while the R (active) isomer also undergoes glucuronidation but is predominantly oxidized to an inactive metabolite followed by glucuronidation; both parent and metabolite glucuronides are eliminated in the urine and feces. The S-enantiomer is rapidly cleared relative to the R-enantiomer, which accounts for about 99% of total steady-state plasma levels. In normal males the apparent oral clearance was 0.320 L/hr, the single-dose peak concentration 0.768 mcg/mL, the time to peak concentration 31.3 hours and the half-life 5.8 days (standard deviation 2.29); in patients with prostate cancer the steady-state concentration was 8.939 mcg/mL (FDA bicalutamide tablet label, section 12.3).",
+    "clinical_pearls": [
+      "Bicalutamide is only useful in combination with an LHRH analog for metastatic prostate cancer; the 150 mg strength is not approved for use alone or with other treatments (FDA bicalutamide tablet label, sections 1 and 2.1)",
+      "The R-enantiomer does all the work: the tablet is a racemate and the active R-enantiomer accounts for about 99% of total steady-state plasma levels (FDA bicalutamide tablet label, sections 12.1 and 12.3)",
+      "Hepatotoxicity is the characteristic serious toxicity: postmarketing cases of hepatic failure generally occurred within the first three to four months, so transaminases should be checked before starting, regularly for the first four months and periodically thereafter, and bicalutamide should be stopped immediately for jaundice or ALT more than twice the upper limit of normal (FDA bicalutamide tablet label, section 5.1)",
+      "Bicalutamide is a CYP3A4 inhibitor (via the R-enantiomer) and can displace coumarin anticoagulants from protein binding, so PT/INR must be monitored closely when it is started in a patient on warfarin (FDA bicalutamide tablet label, sections 5.2 and 7)",
+      "Interstitial lung disease (interstitial pneumonitis, pulmonary fibrosis) is a postmarketing signal, reported most often at doses above 50 mg; new cough or dyspnoea on bicalutamide needs investigation (FDA bicalutamide tablet label, section 6.2)",
+      "Men on an LHRH analog plus bicalutamide lose the bone and metabolic protection of the LHRH analog, so DEXA scanning, dental care and cardiovascular risk-factor control are relevant to their long-term care; this is the accepted clinical context of the combination (FDA bicalutamide tablet label, section 5.4)",
+      "Hot flashes are the single most frequent adverse reaction (53%) and are caused substantially by the LHRH analog component of the combination (FDA bicalutamide tablet label, section 6.1)"
+    ],
+    "brand_names": ["Casodex"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is necessary for patients with renal impairment (FDA bicalutamide tablet label, section 2.3).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary for patients with mild to moderate hepatic impairment. In patients with severe liver impairment (n=4) the half-life of the active enantiomer was increased by 76% (5.9 and 10.4 days for normal and impaired patients), but no dosage adjustment is necessary; bicalutamide should be used with caution in moderate-to-severe hepatic impairment and periodic liver function tests should be considered for hepatically impaired patients on long-term therapy (FDA bicalutamide tablet label, sections 2.4 and 8.6).",
+    "administration_instructions": "Oral administration: one 50 mg tablet once daily (morning or evening), with or without food, taken at the same time each day and started at the same time as the LHRH analog. If a dose is missed, take the next dose at the scheduled time; do not take the missed dose and do not double the next dose. Tablets should be taken as a single daily dose (FDA bicalutamide tablet label, sections 2.1 and 2.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Bicalutamide tablet 50 mg (Sun Pharmaceutical Industries, published January 2025), MECHANISM OF ACTION and DESCRIPTION sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Bicalutamide tablet, section 1; FDA label, Casodex (bicalutamide) tablet [ANI Pharmaceuticals], section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Bicalutamide tablet, section 4 (CONTRAINDICATIONS)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Bicalutamide tablet, sections 5.3, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Bicalutamide tablet, sections 2.1-2.4, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated as a separate field; the sourced adult regimen is provided in fields.dosage.adult from the FDA label DOSAGE AND ADMINISTRATION section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated as a separate field; the paediatric position and the orodispersible-tablet precocious puberty study are provided in fields.dosage.paediatric from the FDA label PEDIATRIC USE section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Bicalutamide tablet, sections 5.2, 5.4 and 7 (DRUG INTERACTIONS)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Bicalutamide tablet, sections 5.1, 5.2, 5.4, 5.5 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Bicalutamide tablet [Accord Healthcare], INFORMATION FOR PATIENTS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7c295b64-ec39-42ec-9f02-da5b42e775e1"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Bicalutamide tablet, sections 5.1-5.5 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Bicalutamide tablet, sections 4, 8.3, 8.6 and MECHANISM OF ACTION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Bicalutamide tablet, sections 4, 5.1, 5.2 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction requiring action is described; the FDA label states that coadministration of bicalutamide with food has no clinically significant effect on the rate or extent of absorption (section 12.3, Absorption)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The FDA bicalutamide label gives narrative pregnancy risk information (section 8.1) without a pregnancy letter category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Bicalutamide tablet, sections 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Bicalutamide tablet, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Bicalutamide tablet, section 10 (OVERDOSAGE)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Bicalutamide tablet, section 12.3 (PHARMACOKINETICS)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Bicalutamide tablet, sections 1, 2.1, 5.1, 5.2, 5.4, 6.1, 6.2, 12.1 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed product title: CASODEX (BICALUTAMIDE) TABLET [ANI Pharmaceuticals, Inc.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dfee4fe7-8478-4a3e-925d-00be3cd0ab67"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA bicalutamide tablet label contains no boxed warning; label contraindications and warnings are recorded in fields.contraindications and fields.warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Bicalutamide tablet, section 2.3 (No dosage adjustment is necessary for patients with renal impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, Bicalutamide tablet, sections 2.4 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Bicalutamide tablet, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b533fe4-287f-482c-b530-d9a5bf2ce40c"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric position is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the FDA label gives narrative pregnancy risk information without a letter category)",
+    "WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries (not retrievable in this environment; no eEML/KEML-derived field is claimed)"
+  ],
+  "notes": "The table stores this agent as 'Bicalutamide' with brand_names ['bicalutamide']; the label-derived brand is Casodex (and the stored 'bicalutamide' entry is the generic name rather than a brand), so brand_names has been set from the DailyMed product title. The existing row previously carried generic cytotoxic-chemotherapy boilerplate (myelosuppression, alopecia, mucositis, anthracycline/trastuzumab cardiotoxicity, platinum nephrotoxicity, live vaccines) that does not apply to an oral androgen receptor inhibitor and has been superseded by this draft. The current FDA labelling for bicalutamide covers use only in combination with an LHRH analog for Stage D2 metastatic prostate cancer, and states that the 150 mg strength is not approved for use alone or with other treatments; indications used in some other markets (for example early/high-risk prostate cancer and 150 mg monotherapy) are not asserted here because they are not in the US label consulted. FDA pregnancy letter categories are obsolete and are not reported."
+}

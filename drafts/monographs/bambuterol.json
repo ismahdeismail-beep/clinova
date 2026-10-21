@@ -1,0 +1,213 @@
+{
+  "name": "Bambuterol",
+  "existing_id": "3d0c98c8-1cd6-4b03-88f5-45e72762ce2b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bambec contains bambuterol, a prodrug of the beta-adrenergic agonist terbutaline, which stimulates predominantly beta2 receptors, producing relaxation of bronchial smooth muscle, inhibition of the release of endogenous spasmogens, inhibition of the oedema caused by endogenous mediators and increased mucociliary clearance. Pharmacotherapeutic group: selective beta2 adrenoceptor agonists, bambuterol; ATC code R03CC12 (Ficha Tecnica, Bambec 10 mg comprimidos, sections 5.1 and 5.2). After absorption, bambuterol is slowly metabolised by hydrolysis (plasma cholinesterase) and oxidation to the active terbutaline (Ficha Tecnica, section 5.2).",
+    "indications": [
+      "Bronchial asthma (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.1 Therapeutic indications).",
+      "Chronic bronchitis, emphysema and other pulmonary diseases associated with bronchospasm (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.1 Therapeutic indications).",
+      "Bambec is intended as maintenance therapy for asthma and other pulmonary diseases with bronchospasm, not for the acute attack (Ficha Tecnica, section 4.2 Posology and method of administration)."
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance, bambuterol, or to any of the excipients listed in section 6.1 (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.3 Contraindications)."
+    ],
+    "side_effects": [
+      "Most adverse reactions are characteristic of sympathomimetic amines and their intensity is dose-dependent; tolerance to these effects usually develops within 1 to 2 weeks (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.8).",
+      "Psychiatric disorders: very common - behavioural changes such as restlessness; common - sleep disorders; uncommon - behavioural changes such as agitation; frequency not known - dizziness and behavioural changes such as hyperactivity (Ficha Tecnica, section 4.8).",
+      "Nervous system disorders: very common - tremor and headache (Ficha Tecnica, section 4.8).",
+      "Cardiac disorders: common - palpitations; uncommon - tachycardia and cardiac arrhythmias such as atrial fibrillation, supraventricular tachycardia and extrasystoles; frequency not known - myocardial ischaemia (Ficha Tecnica, section 4.8).",
+      "Metabolism and nutrition disorders: frequency not known - hypokalaemia and hyperglycaemia (Ficha Tecnica, section 4.8).",
+      "Gastrointestinal disorders: frequency not known - nausea (Ficha Tecnica, section 4.8).",
+      "Musculoskeletal and connective tissue disorders: common - muscle cramps (Ficha Tecnica, section 4.8).",
+      "Immune system disorders: frequency not known - urticaria and exanthema (Ficha Tecnica, section 4.8).",
+      "Additional reactions that may be expected from the underlying pharmacology of bambuterol/terbutaline include tachycardia and myocardial ischaemia, and cases of narrow-angle glaucoma have been reported when bambuterol was co-administered with salbutamol and ipratropium by nebuliser in asthmatic patients (Ficha Tecnica, sections 4.4 and 4.5)."
+    ],
+    "dosage": {
+      "adult": "Bambec is given as a single daily dose, shortly before bedtime, and the dose must be individualised. Recommended starting dose for adults is 10 mg; this may be increased to 20 mg after one or two weeks of treatment depending on the clinical effect. In patients who previously tolerated oral beta2 agonists well, the recommended starting dose is 20 mg (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.2 Posology and method of administration).",
+      "geriatric": "The same dosage as adults (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.2, Elderly).",
+      "paediatric": "Children 2 to 5 years: the normally recommended dose is 10 mg and, because of kinetic differences, 5 mg in oriental children. Children 6 to 12 years: recommended starting dose 10 mg, which may be increased to 20 mg after 1 to 2 weeks depending on the clinical effect. Children over 12 years: the same dosage as adults. Because of kinetic differences, doses above 10 mg are not recommended in oriental children (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.2). For intranasal/other routes no paediatric data are relevant to bambuterol."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Suxamethonium (succinylcholine) and other muscle relaxants metabolised by plasma cholinesterase: bambuterol prolongs the muscle relaxant effect because it partially inhibits plasma cholinesterase, which inactivates suxamethonium; the inhibition is dose-dependent and fully reversible after bambuterol is stopped (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.5).",
+      "Beta-blockers, including eye drops, especially non-selective agents: may partially or totally inhibit the effect of beta stimulants (Ficha Tecnica, section 4.5).",
+      "Halogenated anaesthetics: anaesthesia with halothane should be avoided during treatment with beta2 agonists because it increases the risk of cardiac arrhythmias; other halogenated anaesthetics should be administered with caution alongside beta2 agonists (Ficha Tecnica, section 4.5).",
+      "Potassium-depleting agents and hypokalaemia risk: concomitant diuretics, methylxanthines and corticosteroids can potentiate the hypokalaemic effect of beta2 agonists and increase the risk of cardiac arrhythmias; hypokalaemia also predisposes to digoxin toxicity (Ficha Tecnica, section 4.5).",
+      "Other sympathomimetics: Bambec should be used with caution in patients treated with other sympathomimetic drugs (Ficha Tecnica, section 4.5).",
+      "Salbutamol and ipratropium given by nebuliser: six cases of narrow-angle glaucoma have been reported with concomitant bambuterol; the combination is therefore advised against in patients predisposed to narrow-angle glaucoma (Ficha Tecnica, section 4.5)."
+    ],
+    "monitoring": "Serum potassium should be monitored in severe acute asthma, where the hypokalaemic effect of beta2 agonists may be potentiated by hypoxia, and in unstable asthma where several rescue bronchodilators may be used (Ficha Tecnica, Bambec 10 mg comprimidos, sections 4.4 and 4.5). Additional blood glucose monitoring is recommended at the start of treatment in patients with diabetes because of the hyperglycaemic effects of beta2 agonists (Ficha Tecnica, section 4.4). If a previously effective dose no longer gives the same relief of symptoms this may indicate that the underlying condition has worsened: the patient should consult the doctor urgently and the asthma treatment should be reassessed (Ficha Tecnica, section 4.4). In overdose, acid-base status, blood glucose and electrolytes should be determined and cardiac rate, rhythm and blood pressure monitored (Ficha Tecnica, section 4.9).",
+    "patient_counselling": "Advise the patient that Bambec is maintenance therapy and must not be started or the dose increased during an acute exacerbation of asthma (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.4). Asthmatic patients needing Bambec must be kept on optimal anti-inflammatory therapy such as inhaled corticosteroids or leukotriene receptor antagonists: although asthma symptoms may decrease, the patient should be instructed to continue the anti-inflammatory therapy after starting Bambec (Ficha Tecnica, section 4.4). Tell the patient that if a previously effective dose no longer provides the same relief, the underlying disease may have worsened and they should consult the doctor urgently (Ficha Tecnica, section 4.4). Inform athletes that the medicine contains a component that can produce a positive doping control result (Ficha Tecnica, section 4.4). Advise patients with hereditary galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption that they should not take the medicine because it contains lactose (Ficha Tecnica, sections 4.4 and 6.1). Instruct the patient to take the tablet shortly before bedtime, as a single daily dose (Ficha Tecnica, section 4.2).",
+    "warnings": [
+      "Impaired renal function: because terbutaline is excreted mainly by the renal route, the starting dose of Bambec should be halved in patients with a glomerular filtration rate of 50 mL/min or less (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.4).",
+      "Hepatic impairment: in patients with hepatic cirrhosis, and probably in patients with other causes of severe hepatic failure, the daily dose must be individualised because some patients may not be able to metabolise bambuterol to terbutaline; in practice it is preferable in these patients to administer the active metabolite terbutaline directly (Ficha Tecnica, section 4.4).",
+      "Thyrotoxicosis: as with all beta2 agonists, particular caution is required in patients with thyrotoxicosis (Ficha Tecnica, section 4.4).",
+      "Cardiovascular effects: as with all sympathomimetic medicines, including Bambec, cardiovascular effects may occur, and post-marketing and published data report myocardial ischaemia associated with beta agonists; patients with underlying severe heart disease (for example ischaemic heart disease, arrhythmia or severe heart failure) should be advised to consult the doctor if they experience chest pain or other symptoms of worsening heart disease, and dyspnoea and chest pain should be assessed carefully because they may be of either respiratory or cardiac origin (Ficha Tecnica, section 4.4).",
+      "Although Bambec is not indicated for the treatment of preterm labour, it must be noted that bambuterol is metabolised to terbutaline and that terbutaline should not be used as a tocolytic agent in patients with pre-existing ischaemic heart disease or those with important risk factors for ischaemic heart disease (Ficha Tecnica, section 4.4).",
+      "Because of the hyperglycaemic effects of beta2 agonists, additional blood glucose checks are recommended at the start of treatment in diabetic patients (Ficha Tecnica, section 4.4).",
+      "Potentially serious hypokalaemia may result from beta2 agonist therapy; particular caution is advised in severe asthma because this effect may be potentiated by hypoxia, and serum potassium monitoring is recommended in such circumstances (Ficha Tecnica, section 4.4).",
+      "Particular caution is required in patients with a predisposition to develop narrow-angle glaucoma (Ficha Tecnica, section 4.4).",
+      "Asthmatic patients treated with Bambec should also receive optimal anti-inflammatory therapy such as inhaled corticosteroids or leukotriene receptor antagonists (Ficha Tecnica, section 4.4).",
+      "The product contains lactose; patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take it (Ficha Tecnica, sections 4.4 and 6.1).",
+      "Athletes should be informed that the medicine contains a component that can produce a positive doping control result (Ficha Tecnica, section 4.4)."
+    ],
+    "precautions": [
+      "Do not initiate Bambec treatment or increase the dose during an acute exacerbation of asthma (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.4).",
+      "Bambec has no influence on the ability to drive or use machines (Ficha Tecnica, section 4.7).",
+      "Long-term carcinogenicity study in rats over 24 months showed a slight increase in the incidence of follicular thyroid adenomas at a bambuterol dose greater than 500 times the human daily dose; the effect was absent at doses corresponding to 150 times the clinical dose and was attributed to increased thyroxine clearance with consequent increased TSH secretion, an effect also seen with other marketed medicines (Ficha Tecnica, section 5.3).",
+      "Repeat-dose toxicology studies in dogs over 1 to 12 months showed hyperaemia, tachycardia and myocardial lesions, known effects of beta agonists (Ficha Tecnica, section 5.3).",
+      "Do not store at temperatures above 30 degrees C; shelf life is 3 years; the product is supplied in packs of 30 tablets in PVC/aluminium blisters (Ficha Tecnica, sections 6.3 to 6.5).",
+      "The marketing authorisation holder for the Spanish national authorisation is Laboratorio Lailan, S.A., authorisation number 59.896, first authorised June 1993 and renewed August 2008 (Ficha Tecnica, sections 7 to 9)."
+    ],
+    "serious_adverse_reactions": [
+      "Myocardial ischaemia associated with beta agonists, reported in post-marketing and published literature; patients with underlying severe heart disease must be warned to seek medical advice for chest pain or other symptoms of worsening heart disease (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.4).",
+      "Cardiac arrhythmias, including atrial fibrillation, supraventricular tachycardia and extrasystoles (Ficha Tecnica, section 4.8).",
+      "Potentially serious hypokalaemia, which may be potentiated by hypoxia in severe asthma and by concomitant diuretics, methylxanthines and corticosteroids, and which predisposes to digoxin toxicity and to cardiac arrhythmias (Ficha Tecnica, sections 4.4 and 4.5).",
+      "Narrow-angle glaucoma, reported in six patients given concomitant bambuterol with salbutamol and ipratropium by nebuliser (Ficha Tecnica, section 4.5).",
+      "Hyperglycaemia in patients with diabetes (Ficha Tecnica, section 4.8).",
+      "Urgent and fatal poisoning is not expected with the recommended single daily oral dose, but overdose produces the signs and symptoms of terbutaline toxicity (Ficha Tecnica, section 4.9)."
+    ],
+    "food_interactions": [
+      "None identified: after oral administration, absorption of bambuterol is not influenced by concomitant food intake (Ficha Tecnica, Bambec 10 mg comprimidos, section 5.2 Pharmacokinetic properties)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Although no teratogenic effects have been observed in animals after administration of bambuterol, it is recommended that it be used with caution during the first trimester of pregnancy (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.6 Pregnancy). Oral modified-release beta2 agonists used for the treatment of asthma or other pulmonary diseases should be used with caution at the end of pregnancy because of their tocolytic effect (Ficha Tecnica, section 4.6). Transient hypoglycaemia has been observed in premature neonates when the mother is being treated with a beta2 agonist (Ficha Tecnica, section 4.6). The EU Summary of Product Characteristics format carries no pregnancy category letter; the narrative above is the authorised wording.",
+    "lactation_guidance": "It is not known whether bambuterol or its intermediate metabolites pass into breast milk. Terbutaline, the active metabolite of bambuterol, does pass into breast milk, but at therapeutic doses it is unlikely to have any effect on the infant. Taking into account the benefit of breastfeeding for the child and the benefit of treatment for the mother, a decision must be made whether to interrupt breastfeeding or to interrupt treatment with Bambec (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.6 Breast-feeding).",
+    "overdose": "Overdose produces high levels of terbutaline and therefore the same signs and symptoms documented in terbutaline overdose: headache, anxiety, tremor, nausea, tonic muscle cramps, palpitations, tachycardia and cardiac arrhythmias; on occasion terbutaline overdose may also produce a fall in blood pressure. Laboratory findings may include hyperglycaemia and lactic acidosis, and high doses of beta2 agonists may produce hypokalaemia through redistribution of potassium. Overdose with Bambec may also produce considerable inhibition of plasma cholinesterase that can persist for several days. Treatment is usually not required; in particularly severe overdoses consider gastric lavage and activated charcoal, determine acid-base balance, blood glucose and electrolytes, monitor cardiac rate, rhythm and blood pressure, use a cardioselective beta-blocker as the antidote for haemodynamically significant cardiac arrhythmias (with caution in patients with a history of bronchospasm), and administer a volume expander if beta2-mediated fall in peripheral vascular resistance contributes significantly to hypotension (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.9 Sobredosis).",
+    "pharmacokinetics": "After oral administration 20% of the administered dose of bambuterol is absorbed, and absorption is not influenced by concomitant food intake. After absorption, bambuterol is slowly metabolised by hydrolysis (plasma cholinesterase) and oxidation to the active terbutaline; approximately one third of the absorbed dose is metabolised in the intestinal wall and the liver, producing mainly intermediate metabolites. In adults, 10% of the administered bambuterol dose is converted to terbutaline. Children have reduced terbutaline clearance but also generate less terbutaline than adults, so children aged 6 to 12 years can receive the same dose as adults while younger children (2 to 5 years) usually need a lower dose. The maximum plasma concentration of the active metabolite terbutaline is reached at 2 to 6 hours and the duration of its effect is at least 24 hours. Steady state is reached after 4 to 5 days of treatment. The plasma half-life of bambuterol after oral administration is about 13 hours and that of the active metabolite terbutaline is about 21 hours. Bambuterol and its metabolites, including terbutaline, are excreted mainly by the kidney (Ficha Tecnica, Bambec 10 mg comprimidos, section 5.2 Pharmacokinetic properties).",
+    "clinical_pearls": [
+      "Bambuterol is an oral prodrug of terbutaline, given once daily in the evening, so its bronchodilator effect persists for at least 24 hours; it is maintenance therapy and is not used to treat an acute attack (Ficha Tecnica, Bambec 10 mg comprimidos, sections 4.2, 4.4 and 5.2).",
+      "Bambuterol inhibits plasma cholinesterase, which prolongs the action of suxamethonium and of other muscle relaxants metabolised by plasma cholinesterase; the effect is dose-dependent and fully reversible after stopping bambuterol (Ficha Tecnica, section 4.5).",
+      "Because bambuterol is converted to terbutaline, the beta2 warnings apply to the parent drug: cardiac ischaemia, hypokalaemia, hyperglycaemia, thyrotoxicosis and narrow-angle glaucoma (Ficha Tecnica, sections 4.4 and 4.5).",
+      "Renal and hepatic impairment both require dose reduction or individualisation: halve the starting dose if GFR is 50 mL/min or less, and individualise (or use terbutaline directly) in cirrhosis or severe hepatic failure (Ficha Tecnica, section 4.4).",
+      "Bambec is a nationally authorised medicine in the EU/EEA; the EMA lists Bambec 10 mg and 20 mg tablets (AstraZeneca) and Oxelol 10 mg and 20 mg (AstraZeneca) among the nationally authorised bambuterol products, with authorisations in AT, DE, DK, ES, FR, IS, NO, PL, SE and the UK (EMA PSUSA/00000295/201712, List of nationally authorised medicinal products: bambuterol, EMA/488816/2018).",
+      "Bambuterol is not FDA-approved, is not listed in the WHO Model List of Essential Medicines 2023 (23rd model list) and does not appear in the Kenya Essential Medicines List. The clinical content above is taken from the Spanish AEMPS-authorised Ficha Tecnica for Bambec 10 mg comprimidos (register number 59.896, text revised June 2018); because the product is nationally rather than centrally authorised, the current national product information in the country of practice should be checked before prescribing, particularly in children."
+    ],
+    "brand_names": ["Bambec", "Oxelol"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "In patients with renal impairment (glomerular filtration rate 50 mL/min or less) the recommended starting dose is 5 mg; this may be increased to 10 mg after one or two weeks depending on the clinical effect (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.2). Because terbutaline is excreted mainly by the renal route, the starting dose of Bambec should be halved in patients with a GFR of 50 mL/min or less (Ficha Tecnica, section 4.4).",
+    "hepatic_dose_adjustment": "In patients with hepatic cirrhosis, and probably in patients with other causes of severe hepatic failure, the daily dose must be individualised, taking into account that some patients will not be able to metabolise bambuterol to terbutaline; from a practical point of view it is preferable in these patients to administer the active metabolite terbutaline directly (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.4).",
+    "administration_instructions": "For oral use, as a single daily dose shortly before bedtime, with the dose individualised to the severity of the condition and the clinical response (Ficha Tecnica, Bambec 10 mg comprimidos, section 4.2). Each tablet contains bambuterol hydrochloride 10 mg with excipient lactose monohydrate 63 mg; tablets are white to slightly yellow, scored, elongated and biconvex (Ficha Tecnica, sections 2 and 3). Bambec is maintenance therapy and must not be started or dose-escalated during an acute asthma exacerbation (Ficha Tecnica, section 4.4). Do not store at temperatures above 30 degrees C (Ficha Tecnica, section 6.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Ficha Tecnica (Summary of Product Characteristics), Bambec 10 mg comprimidos, AEMPS/CIMA register no. 59.896, text revised June 2018, sections 5.1 and 5.2",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "indications",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.1 and 4.2",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.3",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.4, 4.5 and 4.8",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "dosage",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.2",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "interactions",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.5",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.4, 4.5 and 4.9",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.2, 4.4 and 6.1",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "warnings",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.4",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "precautions",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.4, 4.7, 5.3 and 6.3 to 9",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.4, 4.5, 4.8 and 4.9",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 5.2",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.6",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.6",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "overdose",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.9",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 5.2",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.2, 4.4, 4.5 and 5.2; EMA, List of nationally authorised medicinal products: bambuterol, PSUSA/00000295/201712, EMA/488816/2018",
+      "url": "https://www.ema.europa.eu/en/documents/psusa/bambuterol-list-nationally-authorised-medicinal-products-psusa00000295201712_en.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "EMA, List of nationally authorised medicinal products: bambuterol, PSUSA/00000295/201712, EMA/488816/2018 (Bambec 10 mg and 20 mg tablets; OXEOL 10 mg and 20 mg comprimidos)",
+      "url": "https://www.ema.europa.eu/en/documents/psusa/bambuterol-list-nationally-authorised-medicinal-products-psusa00000295201712_en.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 4.2 and 4.4",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), section 4.4",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the Ficha Tecnica for Bambec 10 mg comprimidos (AEMPS/CIMA 59.896); the EU product information format carries no US-style boxed warning",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Ficha Tecnica, Bambec 10 mg comprimidos (AEMPS/CIMA 59.896), sections 2, 3, 4.2, 4.4 and 6.4",
+      "url": "https://cima.aemps.es/cima/dochtml/ft/59896/FT_59896.html"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative oral regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimens are provided in fields.dosage.paediatric)",
+    "pregnancy_category (the EU Summary of Product Characteristics format used for Bambec does not assign a lettered pregnancy category; only the narrative risk wording is authorised)",
+    "food_interactions is populated with a sourced statement that food does not affect absorption, rather than being left empty"
+  ],
+  "notes": "Bambuterol is not FDA-approved and has no centrally authorised EMA EPAR (and therefore no EMA-hosted EPAR SmPC): the EMA lists it as a nationally authorised product. The clinical content above is taken from the Spanish AEMPS-authorised Ficha Tecnica (Summary of Product Characteristics) for Bambec 10 mg comprimidos, register number 59.896, marketing authorisation holder Laboratorio Lailan S.A., text revised June 2018, as published in the CIMA official register of medicines (Agencia Espanola de Medicamentos y Productos Sanitarios). Brand names and the EU/EEA authorisation footprint come from the EMA document 'List of nationally authorised medicinal products: bambuterol', PSUSA/00000295/201712, EMA/488816/2018 (Bambec 10 mg and 20 mg tablets; OXEOL 10 mg and 20 mg). Because the product is nationally authorised, the national product information in force in the country of practice should be verified before prescribing, particularly for paediatric use; no EU-wide paediatric restriction is asserted here because none could be sourced. Bambuterol is absent from the WHO Model List of Essential Medicines 2023 and from the Kenya Essential Medicines List. content_status remains needs_review."
+}

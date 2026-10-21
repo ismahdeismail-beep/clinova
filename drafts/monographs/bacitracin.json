@@ -1,0 +1,148 @@
+{
+  "name": "Bacitracin",
+  "existing_id": "22e726de-fa69-45eb-b051-c06e2317f450",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": null,
+    "indications": [
+      "Bacitracin ointment (OTC, topical): first aid to help prevent infection in minor cuts, scrapes, and burns (Bacitracin Ointment, Dynarex, Drug Facts 'Purpose' and 'Use').",
+      "Bacitracin zinc ointment (OTC, topical): first aid to help prevent infection in minor cuts, scrapes, and burns (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Purpose' and 'Use(s)').",
+      "As a constituent of combination first-aid ointments: first aid to help prevent infection in minor cuts, scrapes and burns, in products also containing neomycin sulfate and polymyxin B sulfate (Health and .Beyond Triple Antibiotic, Nantong Health & Beyond, Drug Facts 'Uses')."
+    ],
+    "contraindications": [
+      "Do not use in the eyes or over large areas of the body (Bacitracin Ointment, Dynarex, Drug Facts 'Do not use'; Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use'; Health and .Beyond Triple Antibiotic, Drug Facts 'Do not use').",
+      "Do not use if you are allergic to any of the ingredients (Bacitracin Ointment, Dynarex, Drug Facts 'Do not use'; Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use'; Health and .Beyond Triple Antibiotic, Drug Facts 'Do not use').",
+      "Do not use longer than 1 week unless directed by a doctor (Bacitracin Ointment, Dynarex, Drug Facts 'Do not use'; Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use'; Health and .Beyond Triple Antibiotic, Drug Facts 'Do not use')."
+    ],
+    "side_effects": [
+      "The OTC Drug Facts labelling states, under 'When using this product', that 'there are no side effects' (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'When using this product').",
+      "Stop use and ask a doctor if the condition persists or gets worse, or if a rash or other allergic reaction develops (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Stop use and ask a doctor if'; Health and .Beyond Triple Antibiotic, Drug Facts 'Stop use and ask a doctor if')."
+    ],
+    "dosage": {
+      "adult": "Topical use only. Clean the affected area, then apply a small amount of product (an amount equal to the surface area of the tip of a finger) to the area 1 to 3 times daily; the area may be covered with a sterile bandage (Bacitracin Ointment, Dynarex, Drug Facts 'Directions'; Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Directions'). The combination product directs the user to clean and disinfect the affected area before application (Health and .Beyond Triple Antibiotic, Drug Facts 'Directions').",
+      "geriatric": "The OTC Drug Facts directions do not distinguish by age; the same topical application instructions apply to older adults (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Directions').",
+      "paediatric": "The OTC Drug Facts directions do not distinguish by age; the same topical application instructions apply to children, and the product is kept out of reach of children (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Directions' and 'Keep out of reach of children')."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": null,
+    "monitoring": null,
+    "patient_counselling": "Tell the patient this product is for external use only and must not be used in the eyes or over large areas of the body. Ask a doctor or pharmacist before use if the patient has deep or puncture wounds, animal bites, or serious burns. Advise the patient to stop use and ask a doctor if the condition persists or gets worse, or if a rash or other allergic reaction develops. Advise the patient that if the product is swallowed, they should get medical help or contact a Poison Control Center right away, and to keep the product out of reach of children (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Warnings', 'Do not use', 'Ask a doctor or pharmacist before use if you have', 'Stop use and ask a doctor if' and 'Keep out of reach of children'; Bacitracin Ointment, Dynarex, Drug Facts 'Warnings' and 'Directions').",
+    "warnings": [
+      "For external use only (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Warnings'; Bacitracin Ointment, Dynarex, Drug Facts 'Warnings'; Health and .Beyond Triple Antibiotic, Drug Facts 'Warnings').",
+      "Do not use in the eyes or over large areas of the body (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use').",
+      "Ask a doctor or pharmacist before use if you have deep or puncture wounds, animal bites, or serious burns (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Ask a doctor or pharmacist before use if you have'; Bacitracin Ointment, Dynarex, Drug Facts 'Ask a doctor before use if you have').",
+      "Keep out of reach of children; if swallowed, get medical help or contact a Poison Control Center right away (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Keep out of reach of children').",
+      "Do not use for longer than 1 week unless directed by a doctor (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use')."
+    ],
+    "precautions": [
+      "Store at room temperature; the Bacitracin Zinc Ointment labelling specifies 15 degrees to 30 degrees C (59 degrees to 86 degrees F), avoid excessive heat and humidity, and do not use if the tamper-evident seal is torn, cut or opened (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Other information').",
+      "The Bacitracin Ointment labelling states 'Store at room temperature' (Bacitracin Ointment, Dynarex, Drug Facts 'Other information').",
+      "Stop use and ask a doctor if the condition persists or gets worse, or if a rash or other allergic reaction develops (Health and .Beyond Triple Antibiotic, Drug Facts 'Stop use and ask a doctor if')."
+    ],
+    "serious_adverse_reactions": null,
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": null,
+    "lactation_guidance": null,
+    "overdose": "The OTC labelling directs the user to get medical help or contact a Poison Control Center right away if the product is swallowed (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Keep out of reach of children'; Bacitracin Ointment, Dynarex, Drug Facts 'Warnings'; Health and .Beyond Triple Antibiotic, Drug Facts 'Keep out of reach of children').",
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Every FDA-marketed bacitracin product listed on DailyMed is an over-the-counter topical ointment presented as Drug Facts labelling; no prescription (Rx) bacitracin product label is listed on DailyMed, so the approved labelling does not carry mechanism, pharmacokinetic, interaction, monitoring, pregnancy, lactation or overdose-management information. Those fields are therefore null in this draft rather than filled with class-level text.",
+      "Bacitracin is present on the market mainly as the active ingredient of combination first-aid ointments that also contain neomycin sulfate and polymyxin B sulfate (and, in some products, pramoxine hydrochloride). The indication, contraindication and application instructions in this monograph are taken from the single-ingredient bacitracin and bacitracin zinc labels; where the combination label differs, it is cited separately and not merged.",
+      "The OTC labelling restricts use to minor cuts, scrapes and burns and directs the patient to ask a doctor before use for deep or puncture wounds, animal bites or serious burns, and not to use the product for longer than one week without medical direction (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Do not use' and 'Ask a doctor or pharmacist before use if you have').",
+      "Bacitracin is not listed in the WHO Model List of Essential Medicines 2023 (23rd model list) and does not appear in the Kenya Essential Medicines List, so no essential-medicines-list dosing could be sourced for it."
+    ],
+    "brand_names": [
+      "Bacitracin Ointment",
+      "Bacitracin Zinc Ointment",
+      "health and .beyond Triple Antibiotic"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For external use only. Clean the affected area (the combination product directs the user to clean and disinfect it), then apply a small amount of the ointment (an amount equal to the surface area of the tip of a finger) to the affected area 1 to 3 times daily; the area may be covered with a sterile bandage (Bacitracin Ointment, Dynarex, Drug Facts 'Directions'; Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Directions'; Health and .Beyond Triple Antibiotic, Drug Facts 'Directions'). Store at room temperature; the bacitracin zinc product specifies 15 degrees to 30 degrees C (59 degrees to 86 degrees F), avoid excessive heat and humidity, and do not use if the tamper-evident seal is broken (Bacitracin Zinc Ointment, Henry Schein, Drug Facts 'Other information')."
+  },
+  "sources": [
+    {
+      "field": "indications",
+      "ref": "Bacitracin Ointment (Dynarex Corporation), OTC Drug Facts, 'Purpose' and 'Use'; Bacitracin Zinc Ointment (Henry Schein), OTC Drug Facts, 'Purpose' and 'Use(s)'; Health and .Beyond Triple Antibiotic (Nantong Health & Beyond), OTC Drug Facts, 'Uses'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8752c7-6839-261d-e053-2991aa0a0c30"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Bacitracin Ointment (Dynarex), Drug Facts 'Do not use'; Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Do not use'; Health and .Beyond Triple Antibiotic, Drug Facts 'Do not use'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'When using this product' and 'Stop use and ask a doctor if'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "dosage",
+      "ref": "Bacitracin Ointment (Dynarex), Drug Facts 'Directions'; Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Directions'; Health and .Beyond Triple Antibiotic, Drug Facts 'Directions'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8752c7-6839-261d-e053-2991aa0a0c30"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Warnings', 'Do not use', 'Ask a doctor or pharmacist before use if you have', 'Stop use and ask a doctor if', 'Keep out of reach of children'; Bacitracin Ointment (Dynarex), Drug Facts 'Warnings' and 'Directions'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "warnings",
+      "ref": "Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Warnings', 'Do not use', 'Ask a doctor or pharmacist before use if you have', 'Keep out of reach of children'; Bacitracin Ointment (Dynarex), Drug Facts 'Warnings'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "precautions",
+      "ref": "Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Other information' and 'Stop use and ask a doctor if'; Bacitracin Ointment (Dynarex), Drug Facts 'Other information'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "overdose",
+      "ref": "Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Keep out of reach of children'; Bacitracin Ointment (Dynarex), Drug Facts 'Warnings'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "DailyMed bacitracin product listings (all bacitracin products are OTC topical Drug Facts labels); Bacitracin Zinc Ointment (Henry Schein) Drug Facts 'Do not use' and 'Ask a doctor or pharmacist before use if you have'; WHO Model List of Essential Medicines, 23rd model list (2023) - no bacitracin listing",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Bacitracin Ointment (Dynarex Corporation), Bacitracin Zinc Ointment (Henry Schein), Health and .Beyond Triple Antibiotic (Nantong Health & Beyond Hygienic Products Inc.) listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13cbe416-a146-447d-be36-8b3af9b3c895"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the OTC Drug Facts labelling for bacitracin ointments",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8752c7-6839-261d-e053-2991aa0a0c30"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the OTC Drug Facts labelling for bacitracin ointments",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf03943-c7a5-724e-e053-2995a90a3e6c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Bacitracin Ointment (Dynarex), Drug Facts 'Directions' and 'Other information'; Bacitracin Zinc Ointment (Henry Schein), Drug Facts 'Directions' and 'Other information'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8752c7-6839-261d-e053-2991aa0a0c30"
+    }
+  ],
+  "unsourced_fields": [
+    "mechanism_of_action (the FDA-approved bacitracin labelling is OTC Drug Facts only and does not describe the mechanism of action)",
+    "adult_dosing (not populated; the narrative topical directions are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no age-specific regimen exists in the OTC labelling)",
+    "interactions (not described in the bacitracin OTC labelling; the neomycin/polymyxin combination product carries no drug-interaction section either)",
+    "monitoring (no monitoring guidance is stated in the bacitracin OTC labelling)",
+    "serious_adverse_reactions (no serious adverse reactions are itemised in the OTC Drug Facts labelling)",
+    "pregnancy_category (no pregnancy category letter is assigned in the bacitracin OTC labelling)",
+    "pregnancy_guidance (no pregnancy guidance is stated in the bacitracin OTC labelling)",
+    "lactation_guidance (no lactation guidance is stated in the bacitracin OTC labelling)",
+    "pharmacokinetics (no pharmacokinetic data are stated in the bacitracin OTC labelling)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the bacitracin OTC labelling)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the bacitracin OTC labelling)"
+  ],
+  "notes": "The table stores this agent as 'Bacitracin' with the single brand entry 'health and .beyond Triple Antibiotic'. That brand is a combination first-aid ointment (bacitracin zinc + neomycin sulfate + polymyxin B sulfate), not a bacitracin mono-product, so this draft covers the single-ingredient bacitracin and bacitracin zinc ointments and cites the combination label separately wherever it differs (clean and disinfect wording; combination inactive ingredients). All FDA-marketed bacitracin products on DailyMed are over-the-counter topical ointments carrying Drug Facts labelling; there is no Rx bacitracin label on DailyMed, therefore mechanism, pharmacokinetics, interactions, monitoring, pregnancy, lactation, serious adverse reactions and renal/hepatic dose adjustment are left null rather than filled with class-level or invented text. Bacitracin is absent from the WHO Model List of Essential Medicines 2023 and from the Kenya Essential Medicines List. Drug Facts labels state 'there are no side effects' when using the product; this wording is reproduced verbatim with its label attribution rather than paraphrased as a safety claim. content_status remains needs_review."
+}

@@ -1,0 +1,200 @@
+{
+  "name": "Belantamab Mafodotin",
+  "existing_id": "d502742c-2e2b-4abb-a49d-56bf99e24bb6",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Belantamab mafodotin-blmf is a B-cell maturation antigen (BCMA)-directed antibody and microtubule inhibitor conjugate. It is an antibody-drug conjugate composed of an afucosylated, humanised IgG1 monoclonal antibody directed against BCMA, covalently linked to the microtubule inhibitor mcMMAF via a protease-resistant maleimidocaproyl linker, with approximately 4 molecules of mafodotin attached to each antibody molecule and a molecular weight of approximately 152 kDa. Upon binding to BCMA, belantamab mafodotin-blmf is internalised, followed by release of the cytotoxic agent cys-mcMMAF via proteolytic cleavage; the released cys-mcMMAF disrupts the microtubule network intracellularly, leading to cell cycle arrest and apoptosis. Tumour cell killing is also mediated through antibody-dependent cellular cytotoxicity and antibody-dependent cellular phagocytosis (FDA BLENREP label, sections 11 and 12.1).",
+    "indications": [
+      "In combination with bortezomib and dexamethasone, for the treatment of adult patients with relapsed or refractory multiple myeloma who have received at least two prior lines of therapy, including a proteasome inhibitor and an immunomodulatory agent (FDA BLENREP label, section 1)"
+    ],
+    "contraindications": [
+      "BLENREP: none. The FDA labelling states 'Contraindications: None' (FDA BLENREP label, section 4)."
+    ],
+    "side_effects": [
+      "Ocular toxicity (the dominant toxicity): reduction in best-corrected visual acuity (BCVA) 89% (57% Grade 3-4), corneal exam findings 86% (72% Grade 3-4), blurred vision 66% (22%), dry eye 51% (7%), photophobia 47% (2%), foreign body sensation in eyes 44% (3%), eye irritation 43% (5%), cataract 24% (8%), visual impairment 11% (5%), eye pain 33%; ocular toxicity occurred in 92% of patients including Grade 3 or 4 in 77% (FDA BLENREP label, sections 5.1 and 6.1)",
+      "Thrombocytopenia of any grade in 100% of patients; Grade 2 in 10%, Grade 3 in 29%, Grade 4 in 45%; clinically significant bleeding (Grade 2 or higher) in 7% of patients with concomitant Grade 3 or 4 thrombocytopenia (FDA BLENREP label, sections 5.3 and 6.1)",
+      "Infections: upper respiratory tract infection 38%, pneumonia 26% (16% Grade 3-4), COVID-19 24%, sepsis; serious adverse reactions occurred in 50% of patients and fatal adverse reactions in 10% (FDA BLENREP label, section 6.1)",
+      "Hepatobiliary: hepatotoxicity 33% (14% Grade 3-4) (FDA BLENREP label, section 6.1)",
+      "Gastrointestinal: diarrhea 32% (4% Grade 3-4), nausea 16% (0.8%) (FDA BLENREP label, section 6.1)",
+      "General: fatigue 26% (6%), pyrexia 19% (FDA BLENREP label, section 6.1)",
+      "Grade 3 or 4 laboratory abnormalities (at least 10%): decreased platelets, decreased lymphocytes, decreased neutrophils, increased gamma-glutamyl transferase, decreased white blood cells, decreased hemoglobin (FDA BLENREP label, sections 6 and 6.1)",
+      "Clinically relevant adverse reactions in under 10% of patients: increased lacrimation, vomiting, diplopia, albuminuria, sepsis, eye pruritus, infusion-related reactions, corneal ulcer (including cases with infection), and pneumonitis (FDA BLENREP label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "2.5 mg/kg of actual body weight as an intravenous infusion over approximately 30 minutes once every 3 weeks, in combination with bortezomib and dexamethasone for the first 8 cycles (21-day cycles), followed by BLENREP 2.5 mg/kg of actual body weight once every 3 weeks as a single agent until disease progression or unacceptable toxicity. In DREAMM-7, bortezomib was given 1.3 mg/m2 subcutaneously on Days 1, 4, 8 and 11 and dexamethasone 20 mg on the day of, and the day after, bortezomib treatment for Cycles 1 to 8, with the dexamethasone dose reduced by half in patients aged 75 years or older (FDA BLENREP label, sections 2.2 and 14).",
+      "geriatric": "Of 242 patients who received BLENREP in DREAMM-7, 121 (50%) were aged 65 years or older and 37 (15%) were 75 years or older; no overall differences in safety were observed between patients 65 years of age and older and younger adult patients. Among the 108 patients evaluated for efficacy there were too few older adults to determine whether effectiveness differs from younger adult patients (FDA BLENREP label, section 8.5).",
+      "paediatric": "The safety and effectiveness of BLENREP in pediatric patients have not been established (FDA BLENREP label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "The current FDA BLENREP label contains no Section 7 (Drug Interactions) and no formal drug interaction studies are described in the label (FDA BLENREP label, sections 6 to 8)",
+      "Cytochrome P450: cys-mcMMAF is not an inhibitor, an inducer, or a sensitive substrate of cytochrome P450 enzymes (FDA BLENREP label, section 12.3)",
+      "Transporter systems: cys-mcMMAF is a substrate of OATP1B1 and OATP1B3, MRP1, MRP2, MRP3 and BSEP, and a possible substrate of P-glycoprotein (FDA BLENREP label, section 12.3)"
+    ],
+    "monitoring": "Conduct ophthalmic exams, including slit lamp examination and assessment of best-corrected visual acuity, by an eye care professional at baseline, before each dose of BLENREP, promptly for new or worsening ocular symptoms, and as clinically indicated; perform the baseline exam within 4 weeks before the first dose and each follow-up exam within 10 days prior to the next planned dose, scheduling exams as close to dosing as possible (FDA BLENREP label, sections 2.1 and 5.1). Monitor complete blood cell counts at baseline and periodically during treatment as clinically indicated because of thrombocytopenia (FDA BLENREP label, sections 2.3 and 5.3). Verify the pregnancy status of females of reproductive potential prior to initiating BLENREP (FDA BLENREP label, section 8.3). Monitor for new or worsening respiratory symptoms suggestive of pneumonitis (FDA BLENREP label, section 17).",
+    "patient_counselling": "Advise patients that BLENREP can cause serious eye problems including changes to the surface of the eye that can lead to decreased vision, blurred vision, dry eyes, sensitivity to light, a feeling of something in the eyes, eye irritation and eye pain, and corneal ulcers including with infection; tell the healthcare provider right away about any new or worsening eye symptoms or vision changes and keep all eye care appointments because some changes can happen without symptoms. Use preservative-free artificial tears at least 4 times per day from the first infusion until the end of treatment and avoid wearing contact lenses during treatment unless directed by the eye care specialist. Use caution when driving or operating machinery because vision may be affected. Because of the risk of eye problems, BLENREP is available only through a restricted BLENREP REMS programme: patients must be enrolled, receive counselling and adhere to ongoing monitoring via ophthalmic exams, and will be given the REMS Patient Guide. Inform the healthcare provider about signs of bleeding because platelet counts fall (thrombocytopenia occurred in 100% of patients). Advise pregnant women of the potential risk to a fetus; females of reproductive potential should use effective contraception during treatment and for 4 months after the last dose and males with female partners of reproductive potential for 6 months after the last dose. Do not breastfeed during treatment and for 3 months after the last dose. Advise that BLENREP may impair fertility in males and females. Report any new or worsening respiratory symptoms, such as shortness of breath, chest pain or cough, immediately (FDA BLENREP label, section 17 and Medication Guide).",
+    "warnings": [
+      "WARNING (boxed): Ocular toxicity. BLENREP causes changes to the corneal epithelium resulting in changes in vision, including severe visual impairment, and symptoms such as blurred vision and dry eyes; corneal ulcers, including cases with infection, occurred in the clinical study. Conduct ophthalmic exams at baseline, before each dose, promptly for new or worsening symptoms and as clinically indicated; in the clinical study 83% of patients required a dosage modification due to ocular toxicity - withhold BLENREP until improvement and resume or permanently discontinue based on severity. Because of the risk of ocular toxicity, BLENREP is available only through a restricted program, the BLENREP Risk Evaluation and Mitigation Strategy (REMS) (FDA BLENREP label, Boxed Warning and sections 5.1 and 5.2)",
+      "Thrombocytopenia: monitor complete blood counts at baseline and periodically during treatment; withhold or reduce the dosage based on severity (FDA BLENREP label, sections 2.3 and 5.3)",
+      "Embryo-fetal toxicity: based on its mechanism of action BLENREP can cause fetal harm when administered to a pregnant woman because it contains a genotoxic compound (the microtubule inhibitor MMAF) and targets actively dividing cells; advise pregnant women of the potential risk to a fetus and advise females of reproductive potential to use effective contraception during treatment and for 4 months after the last dose and males with female partners of reproductive potential for 6 months after the last dose (FDA BLENREP label, sections 5.4, 8.1 and 8.3)",
+      "BLENREP REMS: available only through a restricted programme because of the risk of ocular toxicity; prescribers must be certified and counsel patients on ocular toxicity and the need for monitoring via ophthalmic exams before each dose; patients must enrol and adhere to monitoring; dispensing healthcare settings must be certified (FDA BLENREP label, section 5.2)",
+      "Pneumonitis: advise patients to immediately report any new or worsening respiratory symptoms (FDA BLENREP label, sections 6.1 and 17)"
+    ],
+    "precautions": [
+      "Do not re-escalate the dose of BLENREP after a dosage reduction has been made for ocular toxicity based on ophthalmic exam findings (FDA BLENREP label, section 2.3)",
+      "Ocular toxicity dosage modifications: for Grade 2 findings (moderate superficial punctate keratopathy, patchy microcyst-like deposits, peripheral sub-epithelial haze, new peripheral stromal opacity, or a decline from baseline of 2 lines on Snellen equivalent BCVA not worse than 20/200) withhold BLENREP until improvement to Grade 1 or less and resume at Reduced Dosage Level 1 (1.9 mg/kg every 3 weeks); if Grade 2 or 3 toxicity recurs resume at Reduced Dosage Level 2 (1.9 mg/kg every 8 weeks). Grade 3 findings require withholding and, if continuing treatment, resuming at a reduced dose; consider permanent discontinuation. Grade 4 findings (corneal epithelial defect or corneal ulcer, with or without infection, or BCVA worse than 20/200) - consider permanent discontinuation; if continuing, withhold until improvement and resume at a reduced dose; permanently discontinue if Grade 4 toxicity recurs (FDA BLENREP label, sections 2.3 and Tables 1 and 2)",
+      "Thrombocytopenia dosage modifications: for a platelet count between 25,000/mcL and 50,000/mcL without bleeding, reduce patients on 2.5 mg/kg to Reduced Dosage Level 1 and continue patients on 1.9 mg/kg at the same dosage; with bleeding, withhold until bleeding resolves then resume at Reduced Dosage Level 1 (or same dosage if already on 1.9 mg/kg); for a platelet count below 25,000/mcL, withhold until the platelet count recovers to 25,000/mcL or higher and resume at Reduced Dosage Level 1 (FDA BLENREP label, section 2.3 and Table 3)",
+      "Infusion-related reactions: for Grade 2 interrupt the infusion and provide supportive care, resume at 50% of the initial rate once symptoms resolve to Grade 1 or less and consider premedication for subsequent infusions; for Grade 3 do the same and administer premedication for subsequent infusions; for Grade 4 permanently discontinue BLENREP, and if the reaction is anaphylactic or life-threatening permanently discontinue and institute appropriate emergency care (FDA BLENREP label, section 2.3 and Table 3)",
+      "Other adverse reactions: for Grade 3 withhold BLENREP until the reaction improves to Grade 1 or less and resume at Reduced Dosage Level 1 (or the same dosage if already on 1.9 mg/kg); for Grade 4 consider permanent discontinuation, or withhold until improved and resume at a reduced dose (FDA BLENREP label, section 2.3 and Table 3)",
+      "BLENREP is a hazardous drug; follow applicable special handling and disposal procedures (FDA BLENREP label, sections 2.4 and 16)",
+      "Do not mix or administer BLENREP with other products; the product contains no preservative (FDA BLENREP label, section 2.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Ocular toxicity, including corneal epithelial changes, severe visual impairment, corneal ulcer and infection (FDA BLENREP label, Boxed Warning and sections 5.1 and 6.1)",
+      "Thrombocytopenia, including Grade 3 and Grade 4 thrombocytopenia with clinically significant bleeding (FDA BLENREP label, sections 5.3 and 6.1)",
+      "Serious and fatal infections, including pneumonia, sepsis, COVID-19 and upper respiratory tract infection (FDA BLENREP label, section 6.1)",
+      "Hepatotoxicity (FDA BLENREP label, sections 6 and 6.1)",
+      "Pneumonitis (FDA BLENREP label, sections 6.1 and 17)",
+      "Infusion-related reactions including anaphylaxis (FDA BLENREP label, sections 2.3 and 6.1)",
+      "Embryo-fetal toxicity (FDA BLENREP label, section 5.4)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on its mechanism of action, BLENREP can cause fetal harm when administered to a pregnant woman because it contains a genotoxic compound (the microtubule inhibitor MMAF) and it targets actively dividing cells. Human IgG is known to cross the placenta, so belantamab mafodotin-blmf has the potential to be transmitted from the mother to the developing fetus. There are no available data on the use of BLENREP in pregnant women to evaluate drug-associated risk and no animal reproduction studies were conducted with BLENREP; the cytotoxic component mcMMAF disrupts microtubule function, is genotoxic and can be toxic to rapidly dividing cells, suggesting embryo-fetal toxicity potential. The estimated background risk of major birth defects and miscarriage in the US general population is 2% to 4% and 15% to 20% respectively. Verify the pregnancy status of females of reproductive potential prior to initiating BLENREP; advise females of reproductive potential to use effective contraception during treatment and for 4 months after the last dose, and males with female partners of reproductive potential during treatment and for 6 months after the last dose. BLENREP may impair fertility in females and males; the effects were not reversible in male rats but were reversible in female rats (FDA BLENREP label, sections 5.4, 8.1, 8.3 and 13.1). The FDA label does not assign a pregnancy category.",
+    "lactation_guidance": "There are no data on the presence of belantamab mafodotin-blmf in human milk or on its effects on the breastfed child or on milk production. Because of the potential for serious adverse reactions in the breastfed child, advise women not to breastfeed during treatment with BLENREP and for 3 months after the last dose (FDA BLENREP label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "Belantamab mafodotin-blmf exhibits dose-proportional pharmacokinetics with a gradual decrease in clearance over time. After a 30-minute infusion, maximum plasma concentrations occurred at or shortly after the end of the infusion; accumulation was minimal to moderate (Cycle 3 to Cycle 1 ratio 1.13 for Cmax and 1.58 for AUC) with every-3-week dosing. At the 2.5 mg/kg dose, the geometric mean ADC AUC(0-21 days) was 3,950 mcg.h/mL (CV 30.6%), Cmax 43.7 mcg/mL (CV 22.1%) and Ctau 2.03 mcg/mL (CV 62.5%); cys-mcMMAF AUC(0-7 days) was 94.2 ng.h/mL (CV 42.3%) and Cmax 0.976 ng/mL (CV 45.3%). The steady-state volume of distribution was 10.8 L (CV 22.2%); initial systemic clearance was 0.901 L/day with an elimination half-life of 13 days, and at steady state clearance was 0.605 L/day (approximately 33% lower) with an elimination half-life of 17 days. The fraction of intact cys-mcMMAF excreted in urine was approximately 18% of the dose in Cycle 1. No clinically significant pharmacokinetic differences were observed based on age (32 to 89 years), sex, race, body weight (37 to 170 kg), mild to severe renal impairment or kidney failure (eGFR below 30 mL/min), or mild hepatic impairment; the effects of moderate or severe hepatic impairment are unknown (FDA BLENREP label, section 12.3).",
+    "clinical_pearls": [
+      "Ocular toxicity is near-universal and is the single biggest clinical issue: 92% of patients had ocular toxicity and 77% had Grade 3 or 4, and 83% required a dosage modification; by Cycle 3 only 40% of patients were still receiving the planned dose (FDA BLENREP label, sections 2.3, 5.1 and 6.1)",
+      "Ocular toxicity is frequently silent - ophthalmic exams must be performed before every dose because corneal changes can be detected before symptoms appear; the baseline exam should be within 4 weeks of the first dose and each follow-up within 10 days of the next dose (FDA BLENREP label, sections 2.1 and 5.1)",
+      "Dosage reductions are permanent for ocular toxicity - once reduced for ophthalmic exam findings the dose must not be re-escalated, and recurrent Grade 4 toxicity mandates permanent discontinuation (FDA BLENREP label, section 2.3)",
+      "Reduced Dosage Levels are 1.9 mg/kg every 3 weeks (Level 1) and 1.9 mg/kg every 8 weeks (Level 2, specific to ocular toxicity reductions) (FDA BLENREP label, section 2.3 and Table 1)",
+      "BLENREP is available only through the BLENREP REMS because of ocular toxicity, so prescribing requires certification and patient enrolment (FDA BLENREP label, section 5.2)",
+      "In DREAMM-7 (patients with at least two prior lines including a proteasome inhibitor and an immunomodulatory agent), median progression-free survival was 31.3 months with BVd versus 10.4 months with daratumumab-VVd (HR 0.31, 95% CI 0.21 to 0.47), median overall survival was not reached versus 35.7 months (HR 0.49, 95% CI 0.32 to 0.76), and overall response rate was 81.5% versus 56.9% (FDA BLENREP label, section 14 and Table 8)",
+      "Fatigue, nausea, diarrhoea and hepatotoxicity are common companion toxicities that, unlike the ocular toxicity, are usually manageable with supportive care (FDA BLENREP label, section 6.1)",
+      "Belimumab mafodotin-blmf is administered by healthcare providers only under a REMS, requires eye care professional review before each dose, and its preparation involves reconstitution to 50 mg/mL and dilution in a 250 mL saline bag (FDA BLENREP label, sections 2.4 and 5.2)"
+    ],
+    "brand_names": ["Blenrep"],
+    "black_box_warnings": [
+      "Ocular toxicity: BLENREP causes changes to the corneal epithelium resulting in changes in vision, including severe visual impairment, and symptoms such as blurred vision and dry eyes. In the clinical study, corneal ulcers, including cases with infection, also occurred. Conduct ophthalmic exams at baseline, before each dose, promptly for new or worsening symptoms, and as clinically indicated; in the clinical study 83% of patients required a dosage modification due to ocular toxicity - withhold BLENREP until improvement and resume or permanently discontinue based on severity. BLENREP is available only through a restricted program, the BLENREP Risk Evaluation and Mitigation Strategy (REMS) (FDA BLENREP label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No clinically significant differences in the pharmacokinetics of belantamab mafodotin-blmf were observed in patients with mild to severe renal impairment or kidney failure (eGFR below 30 mL/min), and the label does not specify a renal dose adjustment (FDA BLENREP label, section 12.3).",
+    "hepatic_dose_adjustment": "No dose adjustment is recommended for patients with mild hepatic impairment (total bilirubin above the upper limit of normal to 1.5 times ULN with AST at or below ULN, or total bilirubin at or below ULN with AST above ULN). The recommended dose has not been established in patients with moderate or severe hepatic impairment and the effects of moderate or severe hepatic impairment on pharmacokinetics are unknown (FDA BLENREP label, sections 8.6 and 12.3).",
+    "administration_instructions": "BLENREP is a hazardous drug; follow applicable special handling and disposal procedures. Remove the vial from the refrigerator and allow it to stand for approximately 10 minutes to reach room temperature (20 to 25 degrees C). Reconstitute each 70 mg vial with 1.4 mL of Sterile Water for Injection, USP to give a final concentration of 50 mg/mL, gently swirling and not shaking. If not used immediately, the reconstituted solution may be stored in the original container refrigerated at 2 to 8 degrees C or at room temperature for up to 4 hours; discard if not diluted within 4 hours and do not freeze. Inspect for particulate matter and discoloration before administration; the reconstituted solution should be a clear to opalescent, colorless to yellow to brown liquid. Withdraw the calculated volume and dilute in a 250 mL infusion bag of 0.9% Sodium Chloride Injection, USP to a final concentration of 0.2 to 2 mg/mL; the bag must be made of polyvinylchloride or polyolefin; mix by gentle inversion and do not shake; discard unused reconstituted solution. If not used immediately, the diluted solution may be stored refrigerated at 2 to 8 degrees C for up to 24 hours; once removed from refrigeration administer within 6 hours including infusion time. If refrigerated, allow the diluted solution to equilibrate to room temperature before administration. Administer by intravenous infusion over approximately 30 minutes using an infusion set made of polyvinylchloride or polyolefin; filtration is not required, but if filtered use a polyethersulfone-based 0.2 micron filter. Do not mix or administer BLENREP with other products. Store vials refrigerated at 2 to 8 degrees C (FDA BLENREP label, sections 2.4 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, BLENREP (belantamab mafodotin-blmf) for injection, GSK, sections 11 (Description) and 12.1 (Mechanism of Action)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, BLENREP, section 1 (Indications and Usage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, BLENREP, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, BLENREP, sections 5.1, 5.3, 6, 6.1 and Tables 4 and 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, BLENREP, sections 2.2 and 14 (DREAMM-7 regimen and Table 8)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, BLENREP, section 12.3 (Pharmacokinetics - CYP and transporter studies); the label contains no Section 7 Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, BLENREP, sections 2.1, 2.3, 5.1, 5.3, 8.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, BLENREP, section 17 (Patient Counseling Information) and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, BLENREP, Boxed Warning (Ocular Toxicity) and sections 5.1, 5.2, 5.3, 5.4, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, BLENREP, sections 2.3 (with Tables 1, 2 and 3), 2.4 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, BLENREP, Boxed Warning and sections 5.1, 5.3, 5.4, 6, 6.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA BLENREP labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, BLENREP, sections 5.4, 8.1, 8.3 and 13.1 (no pregnancy category stated in the label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, BLENREP, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, BLENREP, section 12.3 (Table 7 and Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, BLENREP, sections 2.1, 2.3, 2.4, 5.1, 5.2, 6.1, 14 and Table 8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, BLENREP, sections 3 (Dosage Forms and Strengths) and 16 (How Supplied)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, BLENREP, Boxed Warning (Ocular Toxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, BLENREP, section 12.3 (Specific Populations - renal impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, BLENREP, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, BLENREP, sections 2.4 (Preparation and Administration) and 16 (How Supplied/Storage and Handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aef7c34c-fef8-407c-99c0-a68aded53c60"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients are not established)",
+    "overdose (the current FDA BLENREP label contains no Section 10 Overdosage and no overdose management guidance is provided)",
+    "pregnancy_category (the current FDA BLENREP label does not assign a pregnancy category; it uses the Pregnancy and Lactation Labeling Rule risk-summary format in section 8.1)"
+  ],
+  "notes": "The table stores this agent as 'Belantamab Mafodotin'; the US product is BLENREP (belantamab mafodotin-blmf) 70 mg lyophilised powder for injection (DailyMed SPL published Oct 6, 2026). The US label carries a single boxed warning (ocular toxicity); thrombocytopenia and embryo-fetal toxicity are section 5 warnings. Note that the current label indication is narrower than the DREAMM-7 trial population: the label indication is for adults with relapsed or refractory multiple myeloma who have received at least two prior lines of therapy including a proteasome inhibitor and an immunomodulatory agent, while the trial itself enrolled patients with at least one prior line, and the label states that safety in patients who received only one prior line of therapy has not been established. The label has no Section 7 (Drug Interactions) and no Section 10 (Overdosage), so the interactions field records only what section 12.3 actually states (no CYP interaction, transporter substrate status) and overdose is left null rather than guessed. Verify current US marketing status and the REMS programme details before publication, as BLENREP distribution in the United States is subject to the BLENREP REMS."
+}

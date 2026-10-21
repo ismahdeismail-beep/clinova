@@ -1,0 +1,215 @@
+{
+  "name": "Baricitinib",
+  "existing_id": "5591910a-1e51-4e14-be2e-4932a7ebfaad",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Baricitinib is a Janus kinase (JAK) inhibitor. JAKs are intracellular enzymes that transmit signals arising from cytokine or growth factor-receptor interactions at the cellular membrane to influence cellular processes of haematopoiesis and immune cell function. Within the signalling pathway, JAKs phosphorylate and activate Signal Transducers and Activators of Transcription (STATs) that modulate intracellular activity including gene expression, and baricitinib modulates the pathway at the point of JAKs, preventing the phosphorylation and activation of STATs. In cell-free isolated enzyme assays baricitinib had greater inhibitory potency at JAK1, JAK2 and TYK2 relative to JAK3, and in human leukocytes it inhibited cytokine-induced STAT phosphorylation mediated by JAK1/JAK2, JAK1/JAK3, JAK1/TYK2 or JAK2/TYK2 with comparable potencies; the relevance of inhibition of specific JAK enzymes to therapeutic effectiveness is not currently known (OLUMIANT label, section 12.1). Pharmacodynamics: baricitinib produced dose-dependent inhibition of IL-6-induced STAT3 phosphorylation in whole blood, maximal at about 1 hour and back to near baseline by 24 hours; mean serum IgG, IgM and IgA values decreased by 12 weeks and then remained stable through at least 52 weeks; in rheumatoid arthritis, serum C-reactive protein fell as early as one week and was maintained (OLUMIANT label, section 12.2).",
+    "indications": [
+      "Treatment of moderately to severely active rheumatoid arthritis in adult patients who have had an inadequate response to one or more TNF blockers. Limitation of use: not recommended for use in combination with other JAK inhibitors, biologic DMARDs, or with potent immunosuppressants such as azathioprine and cyclosporine (OLUMIANT label, sections 1 and 1.1).",
+      "Treatment of COVID-19 in hospitalized adults requiring supplemental oxygen, non-invasive or invasive mechanical ventilation, or extracorporeal membrane oxygenation (ECMO) (OLUMIANT label, sections 1 and 1.2).",
+      "Treatment of severe alopecia areata in adults and pediatric patients 12 years of age and older. Limitation of use: not recommended for use in combination with other JAK inhibitors, biologic immunomodulators, cyclosporine or other potent immunosuppressants (OLUMIANT label, sections 1 and 1.3).",
+      "In the WHO Model List of Essential Medicines (23rd model list, 2023), baricitinib is listed on the complementary list for the treatment of patients with severe or critical COVID-19, as tablets of 2 mg and 4 mg, ATC code L04AA37 (WHO Model List of Essential Medicines, 23rd list)."
+    ],
+    "contraindications": [
+      "None. The FDA prescribing information states 'Contraindications: None' (OLUMIANT label, section 4)."
+    ],
+    "side_effects": [
+      "Adverse reactions reported in clinical trials (>=1%) in moderately to severely active rheumatoid arthritis: upper respiratory tract infections, nausea, herpes simplex and herpes zoster (OLUMIANT label, section 6).",
+      "Adverse reactions reported in clinical trials (>=1%) in COVID-19: increases of liver enzymes, thrombocytosis, creatine phosphokinase increases, neutropenia, deep vein thrombosis, pulmonary embolism and urinary tract infection (OLUMIANT label, section 6).",
+      "Adverse reactions reported in clinical trials (>=1%) in severe alopecia areata: upper respiratory tract infections, headache, acne, hyperlipidaemia, creatine phosphokinase increase, urinary tract infection, liver enzyme elevations, folliculitis, fatigue, lower respiratory tract infections, nausea, genital Candida infections, anaemia, neutropenia, abdominal pain, herpes zoster and weight increase (OLUMIANT label, section 6).",
+      "Serious infections: the most common serious infections reported with OLUMIANT were pneumonia, herpes zoster and urinary tract infection; reported opportunistic infections included tuberculosis, multidermatomal herpes zoster, oesophageal candidiasis, pneumocystosis, acute histoplasmosis, cryptococcosis, cytomegalovirus and BK virus (OLUMIANT label, section 5.1).",
+      "Laboratory abnormalities: neutropenia (ANC <1000 cells/mm3), lymphopenia (ALC <500 cells/mm3), anaemia (haemoglobin <8 g/dL), liver enzyme elevations (ALT >=5x ULN and AST >=10x ULN were observed) and increases in total cholesterol, LDL cholesterol and HDL cholesterol (OLUMIANT label, sections 5.9 and 2.5).",
+      "Postmarketing: angioedema, urticaria and rash that may reflect drug hypersensitivity have been observed, including serious reactions (OLUMIANT label, sections 5.6 and 6.2)."
+    ],
+    "dosage": {
+      "adult": "Rheumatoid arthritis: 2 mg once daily orally, with or without food; may be used as monotherapy or in combination with methotrexate or other non-biologic DMARDs (OLUMIANT label, sections 2.2 and 2.1). COVID-19: 4 mg once daily orally, with or without food, for 14 days or until hospital discharge, whichever occurs first (OLUMIANT label, sections 2 and 2.3). Severe alopecia areata: 2 mg once daily orally, increased to 4 mg once daily if the response is not adequate; for patients with nearly complete or complete scalp hair loss, with or without substantial eyelash or eyebrow hair loss, consider treating with 4 mg once daily; once an adequate response is achieved on 4 mg, decrease the dosage to 2 mg once daily (OLUMIANT label, sections 2 and 2.4). Avoid initiation or interruption in rheumatoid arthritis or severe alopecia areata patients with haemoglobin <8 g/dL, ALC <500 cells/mm3 or ANC <1000 cells/mm3; in COVID-19 avoid initiation or interruption with ALC <200 cells/mm3 or ANC <500 cells/mm3 (OLUMIANT label, sections 2.1 and 2.5). Cytopenia dose modifications: for rheumatoid arthritis and severe alopecia areata interrupt OLUMIANT until ALC >=500 cells/mm3, ANC >=1000 cells/mm3 or haemoglobin >=8 g/dL; for COVID-19 interrupt until ALC >=200 cells/mm3 or ANC >=500 cells/mm3 (OLUMIANT label, sections 2.5, Tables 1 and 2).",
+      "geriatric": "Of the 3100 subjects treated in the moderately to severely active rheumatoid arthritis clinical trials, 537 were 65 years of age and older, including 71 aged 75 and older; of the 2558 subjects in the COVID-19 trials, 791 were 65 or older, including 295 aged 75 and older. No overall differences in safety or effectiveness were observed between these and younger subjects, but greater sensitivity of some older individuals cannot be ruled out. OLUMIANT is substantially excreted by the kidney and the risk of adverse reactions may be greater in patients with impaired renal function, so care should be taken in dose selection and it may be useful to monitor renal function (OLUMIANT label, section 8.5).",
+      "paediatric": "The safety and effectiveness of OLUMIANT for severe alopecia areata have been established in pediatric patients 12 years of age and older (trial of 316 subjects aged 12 and older weighing at least 30 kg exposed for at least one year) and the safety profile is consistent with adults; safety and effectiveness have not been established in pediatric patients younger than 12 years of age for alopecia areata, and have not been established for juvenile idiopathic arthritis or for COVID-19 in pediatric patients (OLUMIANT label, section 8.4). Pharmacokinetic exposure in pediatric patients 12 years and older with severe alopecia areata is similar to adults on a 2 mg or 4 mg dose (OLUMIANT label, section 12.3)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong organic anion transporter 3 (OAT3) inhibitors such as probenecid increase baricitinib exposure, so the dosage of baricitinib should be reduced by half the recommended dose (OLUMIANT label, sections 2.7 and 7.1).",
+      "OLUMIANT has not been studied in combination with other JAK inhibitors or with biologic DMARDs, and such combinations are not recommended for rheumatoid arthritis or severe alopecia areata (OLUMIANT label, sections 1.1, 1.3 and 7.2).",
+      "Live vaccines: avoid use of live vaccines with OLUMIANT, and update immunisations in patients with rheumatoid arthritis or severe alopecia areata before initiating therapy in agreement with current immunisation guidelines (OLUMIANT label, sections 2.1 and 5.10).",
+      "Methotrexate and other non-biologic DMARDs may be combined with OLUMIANT; most patients with rheumatoid arthritis who developed serious infections were taking concomitant immunosuppressants such as methotrexate or corticosteroids (OLUMIANT label, sections 2.2 and 5.1)."
+    ],
+    "monitoring": "Before initiation: evaluate for active and latent tuberculosis (OLUMIANT should not be given to patients with active TB; if latent infection is positive in rheumatoid arthritis or severe alopecia areata, consider treating TB prior to use), perform viral hepatitis screening in accordance with clinical guidelines, obtain a complete blood count and verify that treatment can be initiated (ALCs, ANCs and haemoglobin thresholds as in section 2.1), and assess baseline hepatic and renal function (OLUMIANT label, section 2.1). During treatment: monitor complete blood counts and modify dosage for cytopenias and anaemia; evaluate liver enzymes at baseline and thereafter according to routine patient management, with prompt investigation of unexplained liver enzyme elevation and interruption of OLUMIANT if drug-induced liver injury is suspected; assess lipid parameters approximately 12 weeks after initiation in rheumatoid arthritis or severe alopecia areata and manage according to clinical guidelines; monitor for the development of signs and symptoms of infection, including tuberculosis, during and after treatment (OLUMIANT label, sections 2.1, 2.5, 5.1, 5.2 and 5.9). Patients with diabetes should have increased blood glucose monitoring as clinically indicated because hypoglycaemia, including severe hypoglycaemia, has been reported after initiation (OLUMIANT label, section 5.8). Patients who may be at increased risk of gastrointestinal perforation, for example those with a history of diverticulitis, should be monitored and new-onset abdominal symptoms evaluated promptly (OLUMIANT label, section 5.7).",
+    "patient_counselling": "Inform patients that they may be more likely to develop infections while taking OLUMIANT, that they should tell their healthcare provider about any signs or symptoms of infection, and that the risk of herpes zoster is increased and some cases can be serious (OLUMIANT label, section 17). Inform patients that OLUMIANT may increase the risk of lymphomas and other malignancies, including of the skin, that periodic skin examinations should be performed, and that they should inform their healthcare provider if they have ever had any type of cancer (section 17). Inform patients that OLUMIANT may increase the risk of major adverse cardiovascular events (myocardial infarction, stroke and cardiovascular death), and instruct all patients, especially current or past smokers or those with other cardiovascular risk factors, to be alert for signs and symptoms of cardiovascular events (section 17). Advise patients to seek immediate medical attention if they develop signs or symptoms of deep vein thrombosis or pulmonary embolism (section 17). Advise patients to discontinue OLUMIANT and seek immediate medical attention for signs and symptoms of serious allergic reactions (section 17). Inform patients that gastrointestinal perforations have been reported and that they should seek medical care immediately for new onset of abdominal pain, fever, chills, nausea or vomiting (section 17). Consider advising patients with diabetes to increase monitoring of blood glucose since hypoglycaemia, including severe hypoglycaemia, has been reported after starting OLUMIANT (section 17). Inform patients that OLUMIANT may affect certain laboratory tests and that blood tests are required before and during treatment (section 17). Instruct patients to tell the healthcare practitioner that they are taking OLUMIANT before a potential vaccination, since use of live vaccines is not recommended (section 17). Advise pregnant females and females of reproductive potential of the potential risk to a fetus and to inform their provider if they are pregnant or intend to become pregnant during treatment; a pregnancy exposure registry is available (sections 17 and 8.1). Advise women not to breastfeed during treatment with OLUMIANT and for 4 days after the last dose (sections 17 and 8.2).",
+    "warnings": [
+      "Serious infections: serious and sometimes fatal infections due to bacterial, mycobacterial, invasive fungal, viral or other opportunistic pathogens have been reported, most commonly pneumonia, herpes zoster and urinary tract infection. Avoid use in patients with an active, serious infection, including localized infections; interrupt OLUMIANT if a serious infection develops until the infection is controlled, and do not resume until the infection is controlled (OLUMIANT label, section 5.1).",
+      "Tuberculosis: OLUMIANT should not be given to patients with active TB. Patients with rheumatoid arthritis or severe alopecia areata should be tested for latent tuberculosis before initiating treatment and during therapy, and treated with standard antimycobacterial therapy if positive; monitor for TB during treatment even in patients who tested negative before initiation (OLUMIANT label, sections 5.1 and 2.1).",
+      "Viral reactivation, including herpes zoster, has been reported; interrupt OLUMIANT treatment until the herpes zoster episode resolves (OLUMIANT label, section 5.1).",
+      "Mortality: a higher rate of all-cause mortality, including sudden cardiovascular death, was observed with another JAK inhibitor versus TNF blockers in RA patients aged 50 and older with at least one cardiovascular risk factor; consider the benefits and risks for the individual patient before initiating or continuing OLUMIANT (OLUMIANT label, section 5.2).",
+      "Malignancy and lymphoproliferative disorders: malignancies, including lymphoma, have been observed with OLUMIANT, and a higher rate of malignancies and of lung cancer in smokers was observed with another JAK inhibitor versus TNF blockers; periodic skin examination is recommended in patients at increased risk of skin cancer (OLUMIANT label, section 5.3).",
+      "Major adverse cardiovascular events: a higher rate of MACE (cardiovascular death, non-fatal myocardial infarction, non-fatal stroke) was observed with another JAK inhibitor versus TNF blockers in RA patients aged 50 and older with cardiovascular risk factors; discontinue OLUMIANT in patients who have experienced a myocardial infarction or stroke (OLUMIANT label, section 5.4).",
+      "Thrombosis: thrombosis including deep vein thrombosis and pulmonary embolism has been observed at an increased incidence versus placebo, with additional arterial thrombosis events reported in the extremities; many events were serious and some resulted in death. Discontinue OLUMIANT and evaluate promptly if clinical features of DVT/PE or arterial thrombosis occur, and avoid OLUMIANT in patients at increased risk of thrombosis (OLUMIANT label, section 5.5).",
+      "Hypersensitivity: angioedema, urticaria and rash, including serious reactions, have been observed; promptly discontinue OLUMIANT while evaluating the potential causes if a serious hypersensitivity reaction occurs (OLUMIANT label, section 5.6).",
+      "Gastrointestinal perforations have been reported; monitor patients at increased risk, such as those with a history of diverticulitis, and evaluate promptly new onset abdominal symptoms (OLUMIANT label, section 5.7).",
+      "Hypoglycaemia, including severe hypoglycaemia, has been reported after initiation of OLUMIANT in patients with diabetes; consider increased monitoring of blood glucose and advise patients to notify their provider if signs of hypoglycaemia develop (OLUMIANT label, section 5.8).",
+      "Laboratory abnormalities: avoid initiation or interrupt treatment for neutropenia (ANC <1000 cells/mm3; for COVID-19 ANC <500 cells/mm3), lymphopenia (ALC <500 cells/mm3; for COVID-19 ALC <200 cells/mm3) or anaemia (haemoglobin <8 g/dL), and evaluate liver enzymes and lipids (OLUMIANT label, sections 5.9 and 2.5).",
+      "Vaccinations: avoid use with live vaccines (OLUMIANT label, section 5.10)."
+    ],
+    "precautions": [
+      "Assess for active and latent tuberculosis and perform viral hepatitis screening before starting treatment, and monitor for active TB during treatment even in patients with an initial negative latent TB test (except in COVID-19, where latent TB testing is not required) (OLUMIANT label, sections 2.1 and 5.1).",
+      "Update immunisations in agreement with current immunisation guidelines before initiating OLUMIANT in patients with rheumatoid arthritis or severe alopecia areata, and avoid live vaccines (OLUMIANT label, sections 2.1 and 5.10).",
+      "Do not initiate OLUMIANT in patients with an active, serious or opportunistic infection, including localized infections (OLUMIANT label, section 5.1).",
+      "Evaluate patients with rheumatoid arthritis or alopecia areata for latent tuberculosis and treat latent infection with standard antimycobacterial therapy before initiating OLUMIANT; consult a physician with expertise in TB treatment when deciding on anti-TB therapy for patients with a history of latent or active TB in whom an adequate course cannot be confirmed (OLUMIANT label, section 5.1).",
+      "Patients with positive hepatitis B surface antibody and hepatitis B core antibody but negative hepatitis B surface antigen should be monitored for expression of HBV DNA, and a hepatologist consulted if HBV DNA is detected (OLUMIANT label, section 5.1).",
+      "Consider the benefits and risks for the individual patient before initiating or continuing OLUMIANT in patients with a known malignancy (other than successfully treated NMSC), patients who develop a malignancy, and current or past smokers (OLUMIANT label, section 5.3).",
+      "Patients should be informed about the symptoms of serious cardiovascular events and the steps to take if they occur (OLUMIANT label, section 5.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Serious and sometimes fatal infections (bacterial, mycobacterial, invasive fungal, viral or other opportunistic), including pneumonia, herpes zoster, urinary tract infection, tuberculosis and pneumocystosis (OLUMIANT label, sections 5.1 and 6).",
+      "Thrombosis including deep vein thrombosis, pulmonary embolism and arterial thrombosis, with serious events and some deaths (OLUMIANT label, section 5.5).",
+      "Major adverse cardiovascular events: cardiovascular death, myocardial infarction and stroke (OLUMIANT label, section 5.4).",
+      "Malignancies including lymphoma and non-melanoma skin cancer (OLUMIANT label, sections 5.3 and 6).",
+      "Gastrointestinal perforation (OLUMIANT label, section 5.7).",
+      "Serious hypersensitivity reactions including angioedema, urticaria and rash (OLUMIANT label, sections 5.6 and 6.2).",
+      "Severe hypoglycaemia in patients with diabetes (OLUMIANT label, section 5.8).",
+      "Clinically significant cytopenias - neutropenia, lymphopenia and anaemia - and clinically significant liver enzyme elevations (OLUMIANT label, section 5.9)."
+    ],
+    "food_interactions": [
+      "Food effect: a high-fat meal decreased the mean AUC and Cmax of baricitinib by approximately 11% and 18% respectively and delayed tmax by 0.5 hours; administration with meals is not associated with a clinically relevant effect on exposure, and OLUMIANT has been administered without regard to meals in clinical studies (OLUMIANT label, section 12.3)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on animal data, OLUMIANT may cause fetal harm during pregnancy; available clinical trial and postmarketing pregnancy data are insufficient to inform a drug-associated risk for major birth defects, miscarriage or other adverse maternal or fetal outcomes, and there are no human data on chronic baricitinib exposure throughout pregnancy. In animal embryo-fetal development studies, oral baricitinib in pregnant rats and rabbits at exposures equal to or greater than about 11 and 46 times the maximum recommended human dose (MRHD) of 4 mg/day respectively produced reduced fetal body weights, increased embryolethality (rabbits only) and dose-related increases in skeletal malformations (bent limb bones and rib anomalies in rats at about 11x MRHD); no developmental toxicity was observed at about 2x and 7x the MRHD respectively. In a pre- and post-natal development study in rats at about 24x the MRHD there was reduced pup viability, decreased fetal birth weight and body weight gain, decreased cytotoxic T cells on post-natal day 35 with recovery by day 65, and developmental delays; no developmental toxicity was observed at about 5x the MRHD. Consider the risks and benefits of chronic use during pregnancy, and the risks of inadequate RA control (preterm delivery, low birth weight and small for gestational age) (OLUMIANT label, sections 8.1 and 8.3).",
+    "lactation_guidance": "No information is available on the presence of OLUMIANT in human milk, on the effects of the drug on the breastfed infant, or on the effects on milk production. Baricitinib is present in the milk of lactating rats, and drug exposure was about 45-fold greater in milk than in plasma based on AUC0-t after a single oral dose of 25 mg/kg; animal milk concentration does not necessarily predict human milk concentration. Because of the potential for serious adverse reactions in nursing infants, advise women not to breastfeed during treatment with OLUMIANT and for 4 days after the last dose (approximately 5 to 6 elimination half-lives) (OLUMIANT label, section 8.2).",
+    "overdose": "Single doses up to 40 mg and multiple doses of up to 20 mg daily for 10 days have been administered in clinical trials without dose-limiting toxicity. Pharmacokinetic data from a single 40 mg dose in healthy volunteers indicate that more than 90% of the administered dose is expected to be eliminated within 24 hours. In case of overdose, monitor the patient for signs and symptoms of adverse reactions, treat adverse reactions as appropriate, and consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (OLUMIANT label, section 10).",
+    "pharmacokinetics": "Following oral administration, peak plasma concentrations are reached at approximately 1 hour, with dose-proportional increase in systemic exposure over the therapeutic range; pharmacokinetics do not change over time and steady-state concentrations are achieved in 2 to 3 days with minimal accumulation after once-daily administration. Absolute bioavailability is approximately 80%. After intravenous administration the volume of distribution is 76 L; baricitinib is approximately 50% bound to plasma proteins and 45% bound to serum proteins, and is a substrate of P-gp, BCRP, OAT3 and MATE2-K transporters. Total body clearance is 8.9 L/h in rheumatoid arthritis and 11 L/h in severe alopecia areata, with an elimination half-life of approximately 12 to 16 hours; in COVID-19 clearance and half-life are 14.2 L/h and 10.8 hours. Approximately 6% of the orally administered dose is identified as metabolites, with CYP3A4 the main metabolising enzyme, and no metabolites were quantifiable in plasma. Renal elimination is the principal clearance mechanism: about 75% of the dose was eliminated in urine and about 20% in faeces, with baricitinib excreted predominantly as unchanged drug (69% in urine, 15% in faeces) (OLUMIANT label, section 12.3). Renal impairment increases AUC by 1.41-fold (mild, eGFR 60 to <90), 2.22-fold (moderate, 30 to <60) and 4.05-fold (severe, <30 mL/min/1.73 m2); moderate hepatic impairment increases exposure by 1.19-fold (OLUMIANT label, section 12.3).",
+    "clinical_pearls": [
+      "Baricitinib is a JAK inhibitor and its boxed warning is a class-level JAK warning carried on the specific label: serious infections, mortality, malignancy, MACE and thrombosis (OLUMIANT label, Boxed Warning).",
+      "The three US indications carry different starting doses: 2 mg once daily for rheumatoid arthritis, 4 mg once daily for up to 14 days for COVID-19, and 2 mg once daily titrated to 4 mg for severe alopecia areata (OLUMIANT label, sections 2.2 to 2.4).",
+      "Cytopenia thresholds drive interruption: for RA and alopecia areata interrupt for ALC <500 cells/mm3, ANC <1000 cells/mm3 or haemoglobin <8 g/dL; for COVID-19 interrupt for ALC <200 cells/mm3 or ANC <500 cells/mm3 (OLUMIANT label, sections 2.1, 2.5 and 5.9).",
+      "Renal impairment requires dose reduction: in RA and severe alopecia areata halve the dose for moderate renal impairment (eGFR 30 to <60 mL/min/1.73 m2) and do not use for severe impairment (eGFR <30); in COVID-19 use 2 mg once daily for moderate and 1 mg once daily for severe renal impairment (eGFR 15 to <30) and do not use in dialysis, ESRD or acute kidney injury (OLUMIANT label, sections 2.6 and 8.7).",
+      "Strong OAT3 inhibitors such as probenecid require the baricitinib dose to be halved (OLUMIANT label, sections 2.7 and 7.1).",
+      "Baricitinib is on the WHO Model List of Essential Medicines 2023 complementary list for the treatment of patients with severe or critical COVID-19, as 2 mg and 4 mg tablets; the WHO Expert Committee noted that baricitinib reduced mortality and mechanical ventilation in hospitalised patients, and also that it is the JAK inhibitor most often evaluated in the systematic reviews (WHO Model List of Essential Medicines, 23rd list, section 6.8).",
+      "Baricitinib appears in the Kenya Essential Medicines List; it is not FDA-approved for atopic dermatitis or juvenile idiopathic arthritis in the US label reviewed here (those indications appear in the EMA product information for Olumiant but not in the FDA label)."
+    ],
+    "brand_names": ["Olumiant"],
+    "black_box_warnings": [
+      "WARNING: SERIOUS INFECTIONS, MORTALITY, MALIGNANCY, MAJOR ADVERSE CARDIOVASCULAR EVENTS (MACE), and THROMBOSIS. Serious infections: increased risk of serious bacterial, fungal, viral and opportunistic infections leading to hospitalization or death, including tuberculosis (TB); interrupt treatment with OLUMIANT if serious infection occurs until the infection is controlled; OLUMIANT should not be given to patients with active tuberculosis; test for latent TB before and during therapy, except for COVID-19; treat latent TB prior to use; monitor all patients for active TB during treatment, even patients with an initial negative latent TB test. Mortality: higher rate of all-cause mortality, including sudden cardiovascular death, with another Janus kinase inhibitor vs TNF blockers in RA patients. Malignancies: malignancies have occurred in patients treated with OLUMIANT; higher rate of lymphomas and lung cancers with another JAK inhibitor vs TNF blockers in RA patients. MACE: higher rate of major adverse cardiovascular events (cardiovascular death, myocardial infarction and stroke) with another JAK inhibitor vs TNF blockers in RA patients. Thrombosis: thrombosis has occurred in patients treated with OLUMIANT; increased incidence of pulmonary embolism, venous and arterial thrombosis with another JAK inhibitor vs TNF blockers (OLUMIANT label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "Rheumatoid arthritis and severe alopecia areata: reduce the recommended dose by half in moderate renal impairment (eGFR 30 to <60 mL/min/1.73 m2) - 1 mg once daily instead of 2 mg - and OLUMIANT is not recommended for severe renal impairment (eGFR <30 mL/min/1.73 m2) (OLUMIANT label, sections 2.6 and 8.7). COVID-19: 2 mg once daily for moderate renal impairment (eGFR 30 to <60 mL/min/1.73 m2) and 1 mg once daily for severe renal impairment (eGFR 15 to <30 mL/min/1.73 m2); OLUMIANT is not recommended in patients on dialysis, with end-stage renal disease, or with acute kidney injury (eGFR <15 mL/min/1.73 m2) (OLUMIANT label, sections 2.6 and 8.7).",
+    "hepatic_dose_adjustment": "No dose adjustment is necessary in patients with mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment. Use of OLUMIANT has not been studied in severe (Child-Pugh C) hepatic impairment and is therefore not recommended in patients with moderately to severely active rheumatoid arthritis or severe alopecia areata; it has also not been studied in patients with COVID-19 and severe hepatic impairment and should only be used there if the potential benefit outweighs the potential risk (OLUMIANT label, sections 2.6 and 8.6).",
+    "administration_instructions": "For oral administration, once daily, with or without food; tablets may be taken whole or, for patients unable to swallow whole tablets, dispersed in water and swallowed, or administered via a gastrostomy tube or a nasogastric/orogastric tube (OLUMIANT label, sections 2.1, 2.2 and 2.8). For oral dispersion, place the tablet(s) in approximately 10 mL (5 mL minimum) of room temperature water, disperse by gently swirling, take immediately, then rinse the container with a further 10 mL (5 mL minimum) and swallow; for a G tube use 15 mL (10 mL minimum) with a 15 mL (10 mL minimum) rinse; for an NG or OG tube use 30 mL with a minimum 15 mL rinse. Dispersed tablets are stable in water for up to 4 hours. Intact tablets are not hazardous; if tablets are crushed, use a ventilated enclosure or an N95 respirator because it is not known whether powder from crushed tablets constitutes a reproductive hazard to the preparer (OLUMIANT label, section 2.8). Tablets are available as 1 mg (very light pink, round), 2 mg (light pink, oblong) and 4 mg (medium pink, round), each debossed 'Lilly' with the strength on the other face (OLUMIANT label, sections 11 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "OLUMIANT (baricitinib) label, Eli Lilly, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "indications",
+      "ref": "OLUMIANT label, sections 1, 1.1, 1.2 and 1.3; WHO Model List of Essential Medicines, 23rd model list (2023), section 6.8 medicines for COVID-19 (baricitinib - addition to EML and EMLc)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "OLUMIANT label, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "OLUMIANT label, sections 5.1, 5.6, 5.9, 6 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "dosage",
+      "ref": "OLUMIANT label, sections 2, 2.1, 2.2, 2.3, 2.4, 2.5, 8.4, 8.5 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "interactions",
+      "ref": "OLUMIANT label, sections 1.1, 1.3, 2.1, 2.2, 2.7, 5.1, 5.10, 7.1 and 7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "OLUMIANT label, sections 2.1, 2.5, 5.1, 5.2, 5.7, 5.8 and 5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "OLUMIANT label, section 17 (Patient Counseling Information), sections 8.1 and 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "warnings",
+      "ref": "OLUMIANT label, sections 2.1, 2.5, 5.1 to 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "precautions",
+      "ref": "OLUMIANT label, sections 2.1, 5.1, 5.3, 5.4 and 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "OLUMIANT label, sections 5.1 to 5.9 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "OLUMIANT label, section 12.3 (Absorption - food effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "OLUMIANT label, sections 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "OLUMIANT label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "overdose",
+      "ref": "OLUMIANT label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "OLUMIANT label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "OLUMIANT label, Boxed Warning, sections 2.1 to 2.7, 5.1 to 5.5 and 8.7; WHO Model List of Essential Medicines, 23rd model list (2023), section 6.8",
+      "url": "https://iris.who.int/server/api/core/bitstreams/18bcae05-7432-435d-bc15-df0a9bdb4a89/content"
+    },
+    {
+      "field": "brand_names",
+      "ref": "OLUMIANT (baricitinib) tablet, film coated, Eli Lilly and Company, listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "OLUMIANT label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "OLUMIANT label, sections 2.6 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "OLUMIANT label, sections 2.6 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "OLUMIANT label, sections 2.1, 2.2, 2.8, 11 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative indication-specific regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric information is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the OLUMIANT label uses a narrative risk summary under the Pregnancy and Lactation Labeling Rule and does not assign a lettered pregnancy category)"
+  ],
+  "notes": "Content is taken from the FDA prescribing information for OLUMIANT (baricitinib) as published on DailyMed (Eli Lilly, setid 866e9f35-9035-4581-a4b1-75a621ab55cf). The US label covers three indications - moderately to severely active rheumatoid arthritis after inadequate response to one or more TNF blockers, COVID-19 in hospitalized adults requiring supplemental oxygen or mechanical ventilation or ECMO, and severe alopecia areata in adults and patients 12 years and older - and each is stated with its own dose. The EMA product information for Olumiant additionally carries atopic dermatitis and juvenile idiopathic arthritis indications; these are not US label indications and are not asserted as such here, except in a clinical pearl noting the difference. Baricitinib is on the WHO Model List of Essential Medicines 2023 complementary list for severe or critical COVID-19 (2 mg and 4 mg tablets) and is also in the Kenya Essential Medicines List. The database row's drug_class 'Immunomodulatory / biologic agent' is imprecise for a small-molecule JAK inhibitor, but the drug_class column is not changed by this draft. content_status remains needs_review."
+}

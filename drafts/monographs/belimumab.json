@@ -1,0 +1,213 @@
+{
+  "name": "Belimumab",
+  "existing_id": "28776986-d3d7-458b-ac97-b8b09894b72a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Belimumab is a human IgG1 lambda monoclonal antibody specific for soluble human B lymphocyte stimulator protein (BLyS, also referred to as BAFF and TNFSF13B). It is a BLyS-specific inhibitor that blocks the binding of soluble BLyS, a B-cell survival factor, to its receptors on B cells. Belimumab does not bind B cells directly; by binding BLyS it inhibits the survival of B cells, including autoreactive B cells, and reduces the differentiation of B cells into immunoglobulin-producing plasma cells. Pharmacodynamically, treatment significantly reduced circulating CD19-positive, CD20-positive, naive and activated B cells and the SLE B-cell subset at Week 52, reduced IgG and anti-double-stranded DNA antibodies as early as Week 8, and increased complement C3 and C4 as early as Week 12 in subjects with low baseline complement (FDA BENLYSTA label, sections 12.1 and 12.2).",
+    "indications": [
+      "Treatment of patients 5 years of age and older with active systemic lupus erythematosus (SLE) who are receiving standard therapy (FDA BENLYSTA label, section 1)",
+      "Treatment of patients 5 years of age and older with active lupus nephritis who are receiving standard therapy (FDA BENLYSTA label, section 1)",
+      "Limitation of use: the efficacy of BENLYSTA has not been evaluated in patients with severe active central nervous system lupus, and use is not recommended in that situation (FDA BENLYSTA label, section 1)"
+    ],
+    "contraindications": [
+      "BENLYSTA is contraindicated in patients with a prior history of anaphylaxis with belimumab (FDA BENLYSTA label, section 4)",
+      "BENLYSTA is contraindicated in patients with a prior history of Stevens-Johnson syndrome or toxic epidermal necrolysis with belimumab (FDA BENLYSTA label, section 4)"
+    ],
+    "side_effects": [
+      "Common adverse reactions (at least 5%) with intravenous BENLYSTA plus standard therapy in adult SLE trials: nausea 15%, diarrhea 12%, pyrexia 10%, nasopharyngitis 9%, bronchitis 9%, insomnia 7%, pain in extremity 6%, depression 5%, migraine 5%, pharyngitis 5%, cystitis 4%, leukopenia 4%, viral gastroenteritis 3% (FDA BENLYSTA label, section 6.1 and Table 2)",
+      "Injection site reactions with subcutaneous administration: 6.1% (34 of 556) versus 2.5% with placebo, most commonly pain, erythema, hematoma, pruritus and induration, mild to moderate in severity, with the majority (94%) not necessitating discontinuation (FDA BENLYSTA label, section 6.1)",
+      "Infections: overall incidence 71% with intravenous belimumab versus 67% with placebo; most frequent infections (>5%) were upper respiratory tract infection, urinary tract infection, nasopharyngitis, sinusitis, bronchitis and influenza (FDA BENLYSTA label, section 6.1)",
+      "Serious infections: 6.0% with belimumab versus 5.2% with placebo in intravenous SLE trials (pneumonia, urinary tract infections, cellulitis, bronchitis); in a 52-week postmarketing safety trial (N=4,003) serious infections were 3.7% versus 4.1%; in the lupus nephritis trial serious infections were 14% versus 17%; with subcutaneous dosing 4.1% versus 5.4% (FDA BENLYSTA label, section 6.1)",
+      "Fatal infections: 0.3% (4 of 1,458) with belimumab versus 0.1% (1 of 675) with placebo in intravenous SLE trials; 0.45% (9 of 2,002) versus 0.15% in the postmarketing trial; 0.5% (3 of 556) versus none with subcutaneous dosing (FDA BENLYSTA label, section 6.1)",
+      "Hypersensitivity reactions including anaphylaxis: hypersensitivity reactions on the day of infusion in 13% (191 of 1,458) versus 11% with placebo; anaphylaxis in 0.6% (9 of 1,458) versus 0.4% (3 of 675), with manifestations including hypotension, angioedema, urticaria or other rash, pruritus and dyspnea (FDA BENLYSTA label, section 6.1)",
+      "Infusion-related reactions: 17% (251 of 1,458) versus 15% with placebo on the day of infusion; serious infusion reactions in 0.5% versus 0.4%, including bradycardia, myalgia, headache, rash, urticaria and hypotension (FDA BENLYSTA label, section 6.1)",
+      "Psychiatric events: 16% with belimumab versus 12% with placebo in intravenous SLE trials, mainly depression-related events (6.3% versus 4.7%), insomnia (6% versus 5.3%) and anxiety (3.9% versus 2.8%); serious psychiatric events 0.8% versus 0.4%; serious depression 0.4% versus 0.1%; two suicides (0.1%) were reported with belimumab; in the 52-week postmarketing trial serious suicidal ideation or behaviour or self-injury without suicidal intent was 0.7% versus 0.2% (FDA BENLYSTA label, section 6.1)",
+      "Malignancy: 0.4% of subjects receiving belimumab and 0.4% with placebo in intravenous SLE trials (FDA BENLYSTA label, section 6.1)",
+      "Postmarketing: fatal anaphylaxis; Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA BENLYSTA label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Intravenous: 10 mg/kg at 2-week intervals for the first 3 doses and at 4-week intervals thereafter, reconstituted, diluted and administered as an intravenous infusion over 1 hour; do not administer as an intravenous push or bolus. Subcutaneous: active SLE 200 mg once weekly; active lupus nephritis 400 mg once weekly for 4 doses (two 200 mg injections) followed by 200 mg once weekly. Subcutaneous injection is into the abdomen or thigh (FDA BENLYSTA label, sections 2.1, 2.2 and 2.3).",
+      "geriatric": "Clinical studies of BENLYSTA did not include sufficient numbers of subjects 65 years of age or older to determine whether they respond differently from younger subjects; use with caution in geriatric patients. Less than 2% of subjects in the pharmacokinetic analyses were 65 years of age or older (FDA BENLYSTA label, sections 8.5 and 12.3).",
+      "paediatric": "Intravenous: 10 mg/kg at 2-week intervals for the first 3 doses and 4-week intervals thereafter, infused over 1 hour. Subcutaneous (weight-based, autoinjector only for patients 5 years and older): active SLE, patients 40 kg or more 200 mg once weekly, patients 15 kg to less than 40 kg 200 mg once every 2 weeks; active lupus nephritis, patients 40 kg or more 400 mg once weekly for 4 doses then 200 mg once weekly, patients 15 kg to less than 40 kg 200 mg once weekly for 4 doses then 200 mg once every 2 weeks. Safety and effectiveness have not been established in pediatric patients less than 5 years of age, and the prefilled syringe has not been studied in children less than 18 years of age (FDA BENLYSTA label, sections 2.1, 2.3 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Formal drug interaction studies have not been performed with BENLYSTA. In clinical trials belimumab was administered concomitantly with corticosteroids, antimalarials, immunomodulatory and immunosuppressive agents (including azathioprine, cyclophosphamide, methotrexate and mycophenolate), angiotensin pathway antihypertensives, HMG-CoA reductase inhibitors (statins) and/or NSAIDs without evidence of a clinically meaningful effect on belimumab pharmacokinetics. The effect of belimumab on the pharmacokinetics of other drugs has not been evaluated (FDA BENLYSTA label, sections 7 and 12.3)",
+      "Concomitant use with rituximab: available data do not support the safety and efficacy of concomitant use of BENLYSTA with rituximab in patients with SLE; an increased incidence of serious infections and post-injection systemic reactions has been observed with the combination compared with belimumab alone (FDA BENLYSTA label, sections 5.7 and 6.1)",
+      "Concomitant use with other biologic therapies: the safety and efficacy of BENLYSTA with other biologic therapies, including B-cell-targeted therapies, have not been established; exercise caution if combined (FDA BENLYSTA label, section 5.7)",
+      "Live vaccines: should not be given for 30 days before or concurrently with BENLYSTA, and vaccination responses may be impaired because of the mechanism of action (FDA BENLYSTA label, sections 5.6 and 12.1)"
+    ],
+    "monitoring": "Assess each patient's overall health at each visit. Monitor for signs and symptoms of infection and consider interrupting therapy if a new infection develops during treatment; consider the risk and benefit before initiating BENLYSTA in patients with severe or chronic infections (FDA BENLYSTA label, sections 5.1 and 17). Evaluate patients with new-onset or deteriorating neurological signs and symptoms for progressive multifocal leukoencephalopathy (PML); if PML is suspected, suspend immunosuppressant therapy including BENLYSTA until PML is excluded, and if PML is confirmed, discontinue it (FDA BENLYSTA label, sections 5.1 and 17). Assess the risk of depression and suicide before treatment and monitor during treatment (FDA BENLYSTA label, sections 5.4 and 17). Monitor for signs and symptoms of Stevens-Johnson syndrome or toxic epidermal necrolysis and of infusion-related or hypersensitivity reactions during and after administration (FDA BENLYSTA label, sections 5.2 and 5.3). In the lupus nephritis trial, cases of myelosuppression including febrile neutropenia, leukopenia and pancytopenia were observed in subjects who received induction therapy with cyclophosphamide followed by maintenance therapy with azathioprine or mycophenolate (FDA BENLYSTA label, section 6.1).",
+    "patient_counselling": "Inform patients that BENLYSTA may decrease their ability to fight infections and that serious, sometimes fatal infections occurred in clinical trials; instruct them to tell the healthcare provider if they develop signs or symptoms of infection. Advise patients to contact a healthcare professional for new or worsening neurological symptoms such as memory loss, confusion, dizziness or loss of balance, difficulty talking or walking, or vision problems, which may indicate PML. Educate patients on the signs and symptoms of hypersensitivity and infusion-related reactions, including wheezing, difficulty breathing, angioedema, rash, hypotension, bradycardia and headache, and instruct them to tell their healthcare provider immediately about any such reaction during or after administration; inform them about possible delayed reactions such as rash, nausea, fatigue, muscle aches, headache and facial swelling that may occur after administration. Advise patients to stop further doses and immediately call their healthcare provider if signs and symptoms suggestive of Stevens-Johnson syndrome or toxic epidermal necrolysis occur. Instruct patients (and caregivers) to contact their healthcare provider if they experience new or worsening depression, suicidal thoughts or other mood changes. Tell patients not to receive live vaccines while taking BENLYSTA and that response to vaccinations could be impaired. Inform female patients of reproductive potential that BENLYSTA may impact the immune system in infants of treated mothers and to inform their prescriber of a known or suspected pregnancy, and mention the pregnancy registry for women with lupus exposed to BENLYSTA (FDA BENLYSTA label, section 17).",
+    "warnings": [
+      "Serious infections: serious and sometimes fatal infections have been reported in patients receiving immunosuppressive agents including BENLYSTA; the incidence of serious infections was similar to placebo in controlled trials while fatal infections occurred more frequently with BENLYSTA; use with caution in patients with severe or chronic infections and consider interrupting therapy if a new infection develops (FDA BENLYSTA label, section 5.1)",
+      "Progressive multifocal leukoencephalopathy (PML): JC virus-associated PML resulting in neurological deficits, including fatal cases, has been reported in patients with SLE receiving immunosuppressants including BENLYSTA; evaluate patients with new-onset or deteriorating neurological signs and symptoms for PML, suspend immunosuppressant therapy until PML is excluded and discontinue if PML is confirmed (FDA BENLYSTA label, section 5.1)",
+      "Hypersensitivity reactions, including anaphylaxis: acute hypersensitivity reactions, including anaphylaxis and death, and infusion-related reactions have been reported; these events generally occurred within hours of the infusion but may occur later; discontinue BENLYSTA immediately and administer appropriate medical therapy for a serious reaction, and slow or interrupt the infusion rate if a patient develops an infusion reaction (FDA BENLYSTA label, section 5.2)",
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN): have been reported in patients treated with BENLYSTA; monitor for and advise patients about signs and symptoms; discontinue BENLYSTA immediately if signs or symptoms suggestive of SJS/TEN occur and permanently discontinue and do not reintroduce if the aetiology is considered associated with belimumab (FDA BENLYSTA label, section 5.3)",
+      "Depression and suicidality: depression and suicidality were reported in trials with BENLYSTA; assess for depression and risk of suicide before treatment and monitor during treatment (FDA BENLYSTA label, section 5.4)",
+      "Malignancy: there is an increased risk of malignancies with the use of immunosuppressants; the impact of belimumab on the development of malignancies is not known; consider the individual benefit-risk in patients with known risk factors (FDA BENLYSTA label, section 5.5)",
+      "Immunization: live vaccines should not be given for 30 days before or concurrently with BENLYSTA, and BENLYSTA may interfere with the response to immunizations (FDA BENLYSTA label, section 5.6)",
+      "Concomitant use with other biologic therapies: the safety and efficacy of BENLYSTA with rituximab or with other biologic therapies, including B-cell-targeted therapies, have not been established (FDA BENLYSTA label, section 5.7)"
+    ],
+    "precautions": [
+      "BENLYSTA should be administered intravenously by healthcare providers prepared to manage anaphylaxis, and patients should be monitored during the infusion and for an appropriate period afterwards (FDA BENLYSTA label, sections 2.1 and 5.2)",
+      "Consider administering premedication for prophylaxis against infusion reactions and hypersensitivity reactions prior to intravenous dosing (FDA BENLYSTA label, sections 2.1, 2.2 and 5.2)",
+      "Do not administer BENLYSTA as an intravenous push or bolus; do not concomitantly infuse BENLYSTA in the same intravenous line with other agents, as no physical or biochemical compatibility studies have been conducted (FDA BENLYSTA label, section 2.2)",
+      "BENLYSTA for intravenous use must be diluted only in 0.9% Sodium Chloride Injection, 0.45% Sodium Chloride Injection or Lactated Ringer's Injection; dextrose intravenous solutions are incompatible (FDA BENLYSTA label, section 2.2)",
+      "Total time from reconstitution to completion of infusion should not exceed 8 hours (FDA BENLYSTA label, section 2.2)",
+      "Administer the first subcutaneous injection under the supervision of a healthcare provider; for patients less than 10 years of age, all subcutaneous injections must be performed by a healthcare provider or trained caregiver (FDA BENLYSTA label, sections 2.3 and 8.4)",
+      "Remove the autoinjector or prefilled syringe from the refrigerator and allow it to sit at room temperature for 30 minutes before injection; do not warm in any other way, and do not use the product if it exhibits discoloration or particulate matter or if it has been dropped on a hard surface (FDA BENLYSTA label, section 2.3)",
+      "When injecting in the same body region, use a different injection site for each injection and never inject into tender, bruised, red or hard skin; when administering a 400 mg dose, inject each 200 mg injection at least 5 cm apart (FDA BENLYSTA label, section 2.3)",
+      "If a dose is missed, administer a dose as soon as the patient remembers, then resume dosing on the usual day of administration or start a new schedule from the day the missed dose was given (FDA BENLYSTA label, section 2.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious and sometimes fatal infections (FDA BENLYSTA label, sections 5.1 and 6.1)",
+      "Progressive multifocal leukoencephalopathy (FDA BENLYSTA label, section 5.1)",
+      "Hypersensitivity reactions including anaphylaxis (FDA BENLYSTA label, sections 5.2 and 6.2)",
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis (FDA BENLYSTA label, sections 5.3 and 6.2)",
+      "Depression and suicidality (FDA BENLYSTA label, sections 5.4 and 6.1)",
+      "Malignancy (FDA BENLYSTA label, sections 5.5 and 6.1)",
+      "Myelosuppression including febrile neutropenia, leukopenia and pancytopenia in lupus nephritis subjects receiving cyclophosphamide induction followed by azathioprine or mycophenolate maintenance (FDA BENLYSTA label, section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Available data on the use of BENLYSTA in pregnant women from observational studies, published case reports and post-marketing surveillance are insufficient to determine whether there is a drug-associated risk for major birth defects or miscarriage; there are risks to the mother and fetus associated with SLE. Monoclonal antibodies such as belimumab are actively transported across the placenta during the third trimester and may affect immune response in the in-utero exposed infant. In a combined embryo-fetal and pre- and post-natal development study in monkeys there was no evidence of fetal harm at exposures approximately 9 times (intravenous) and 20 times (subcutaneous) the maximum recommended human dose, but belimumab-related findings included reductions in B-cell counts, reductions in the density of lymphoid tissue B-lymphocytes in spleen and lymph nodes, and altered IgG and IgM titres; these were reversible within 3 to 12 months after discontinuation. Based on animal data and the mechanism of action, the immune system in infants of treated mothers may be adversely affected. If prevention of pregnancy is warranted, females of reproductive potential should use effective contraception during treatment and for at least 4 months after the final treatment (FDA BENLYSTA label, sections 8.1 and 8.3). The FDA label does not assign a pregnancy category. A pregnancy exposure registry is available (1-877-311-8972 / https://mothertobaby.org/ongoing-study/benlysta-belimumab/) (FDA BENLYSTA label, section 8.1).",
+    "lactation_guidance": "No information is available on the presence of belimumab in human milk, on the effects of the drug on the breastfed infant, or on the effects on milk production. Belimumab was detected in the milk of cynomolgus monkeys, but because of species-specific differences in lactation physiology, animal data may not predict drug levels in human milk. Maternal IgG is known to be present in human milk; if belimumab is transferred into human milk, the effects of local exposure in the gastrointestinal tract and potential limited systemic exposure in the infant are unknown. The lack of clinical data during lactation precludes clear determination of risk, so the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for BENLYSTA and any potential adverse effects on the breastfed child from BENLYSTA or from the underlying maternal condition (FDA BENLYSTA label, section 8.2).",
+    "overdose": "There is limited experience with overdosage of belimumab. Two doses of up to 20 mg/kg have been given intravenously to humans with no increase in the incidence or severity of adverse reactions compared with doses of 1, 4 or 10 mg/kg (FDA BENLYSTA label, section 10).",
+    "pharmacokinetics": "After intravenous infusion of 10 mg/kg in adults with active SLE (2-week intervals for the first 3 doses then 4-week intervals), the population estimates were steady-state Cmax 313 mcg/mL, AUC0-infinity 3,083 day.mcg/mL, distribution half-life 1.8 days, terminal half-life 19.4 days, systemic clearance 215 mL/day and volume of distribution at steady state 5 L. After subcutaneous administration of 200 mg once weekly, bioavailability was approximately 74%, Tmax 2.6 days, steady-state Cmax 108 mcg/mL, AUC0-infinity 726 day.mcg/mL, distribution half-life 1.1 days, terminal half-life 18.3 days, systemic clearance 204 mL/day and steady-state volume of distribution 5 L. In adults with active lupus nephritis, proteinuria-related clearance meant exposure was initially lower than in SLE and increased as proteinuria decreased; available data do not support a dose adjustment in patients with high proteinuria. Age, gender, race, body weight and BMI had no clinically relevant effect on belimumab pharmacokinetics in adults (FDA BENLYSTA label, section 12.3). Anti-belimumab antibodies were detected in 4 of 563 (0.7%) subjects receiving 10 mg/kg intravenously, 2 of 321 (0.6%) in the Black-subject trial, and in none of 224 subjects in the lupus nephritis trial, none of 53 pediatric subjects, none of 556 subjects with subcutaneous dosing, and none of 25 subjects in the pediatric subcutaneous pharmacokinetic trial (FDA BENLYSTA label, section 12.6).",
+    "clinical_pearls": [
+      "Belimumab is a B-cell-directed biologic that reduces autoantibody production over time; IgG and anti-dsDNA fell and complement rose, but these biomarker changes had no established clinical relevance and the label is explicit that efficacy must not be judged on them alone (FDA BENLYSTA label, section 12.2)",
+      "Fatal infections were numerically more frequent with belimumab than placebo even though overall serious infection rates were similar, so infection vigilance - not just a count of infections - is the key safety issue (FDA BENLYSTA label, sections 5.1 and 6.1)",
+      "Concomitant rituximab is not supported: in the 104-week trial, serious adverse events, serious infections and post-injection systemic reactions were all more frequent with belimumab plus rituximab than with belimumab alone or plus standard therapy (FDA BENLYSTA label, sections 5.7 and 6.1)",
+      "Depression and suicidality were more frequent with belimumab than placebo and two suicides were reported in the intravenous trials; in the 52-week postmarketing trial serious suicidal ideation or behaviour or self-injury was 0.7% versus 0.2% (FDA BENLYSTA label, sections 5.4 and 6.1)",
+      "Anaphylaxis and SJS/TEN are both contraindications on re-exposure; SJS/TEN is a postmarketing-identified reaction and a reason for early dermatology referral if a rash develops (FDA BENLYSTA label, sections 4, 5.3 and 6.2)",
+      "Live vaccines must not be given for 30 days before or during therapy, and infants exposed in utero should have their B-cell function considered before vaccination (FDA BENLYSTA label, sections 5.6 and 8.1)",
+      "The subcutaneous 400 mg weekly loading dose for lupus nephritis reaches steady-state concentrations from Week 2 and is predicted to give a similar average concentration to intravenous 10 mg/kg every 4 weeks (FDA BENLYSTA label, section 12.3)",
+      "In the 104-week trial of subcutaneous belimumab with rituximab, the combination increased serious adverse events, serious infections and post-injection systemic reactions compared with belimumab alone, so rituximab coadministration should be avoided unless clearly justified (FDA BENLYSTA label, section 6.1)"
+    ],
+    "brand_names": ["BENLYSTA"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "The safety and efficacy of BENLYSTA were evaluated in studies that included subjects with SLE who had mild (creatinine clearance 60 to below 90 mL/min), moderate (30 to below 60 mL/min) or severe (15 to below 30 mL/min) renal impairment. No dosage adjustment is recommended in patients with renal impairment (FDA BENLYSTA label, section 8.6).",
+    "hepatic_dose_adjustment": "No formal trials were conducted to examine the effects of hepatic impairment on the pharmacokinetics of belimumab. No dosage adjustment is recommended in patients with hepatic impairment (FDA BENLYSTA label, section 8.7).",
+    "administration_instructions": "Intravenous: reconstitute the 120 mg vial with 1.5 mL or the 400 mg vial with 4.8 mL of Sterile Water for Injection, USP to a concentration of 80 mg/mL, directing the stream towards the side of the vial to minimise foaming; gently swirl for 60 seconds and every 5 minutes during reconstitution, do not shake, and allow up to 10 to 30 minutes for dissolution while protecting from sunlight. Dilute only in 0.9% Sodium Chloride, 0.45% Sodium Chloride or Lactated Ringer's Injection to a volume of 250 mL for infusion (a 100 mL bag may be used for patients weighing 40 kg or less provided the resulting concentration does not exceed 4 mg/mL). Inspect for particulate matter and discoloration and discard if present. If not used immediately, store the reconstituted solution protected from direct sunlight and refrigerated at 2 to 8 degrees C; store diluted solutions at 2 to 8 degrees C or room temperature; the total time from reconstitution to completion of infusion must not exceed 8 hours. Do not administer as an intravenous push or bolus and do not infuse concomitantly in the same line with other agents; no incompatibilities were observed with polyvinylchloride or polyolefin bags. Subcutaneous: administer into the abdomen or thigh, allow the autoinjector or prefilled syringe to reach room temperature for 30 minutes before use, inspect the window for particulate matter or discoloration, use a different injection site for each injection, and when giving a 400 mg dose inject the two 200 mg injections at least 5 cm apart (FDA BENLYSTA label, sections 2.2 and 2.3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, BENLYSTA (belimumab) injection, GSK, sections 11 (Description), 12.1 (Mechanism of Action) and 12.2 (Pharmacodynamics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, BENLYSTA, section 1 (Indications and Usage, including Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, BENLYSTA, section 4 (Contraindications)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, BENLYSTA, sections 6, 6.1, 6.2 and Table 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, BENLYSTA, sections 2.1, 2.2, 2.3, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, BENLYSTA, sections 5.6, 5.7, 6.1, 7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, BENLYSTA, sections 5.1, 5.2, 5.3, 5.4, 6.1 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, BENLYSTA, section 17 (Patient Counseling Information) and Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, BENLYSTA, sections 5.1 to 5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, BENLYSTA, sections 2.1, 2.2, 2.3, 5.2 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, BENLYSTA, sections 5.1 to 5.5, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA BENLYSTA labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, BENLYSTA, sections 8.1 and 8.3 (no pregnancy category stated in the label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, BENLYSTA, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, BENLYSTA, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, BENLYSTA, section 12.3 (Tables 3 and 4, Lupus Nephritis and Specific Populations) and section 12.6 (Immunogenicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, BENLYSTA, sections 4, 5.1, 5.3, 5.4, 5.6, 5.7, 6.1, 6.2, 8.1, 12.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, BENLYSTA, sections 3 (Dosage Forms and Strengths) and 16 (How Supplied)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, BENLYSTA - no Boxed Warning appears in the prescribing information; the label's highlighted warnings are the section 5 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, BENLYSTA, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, BENLYSTA, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, BENLYSTA, sections 2.2 (intravenous preparation) and 2.3 (subcutaneous administration instructions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA BENLYSTA label does not assign a pregnancy category; it uses the Pregnancy and Lactation Labeling Rule risk-summary format in section 8.1)"
+  ],
+  "notes": "The table stores this agent as 'Belimumab'; the US product is BENLYSTA (belimumab) available as 120 mg and 400 mg lyophilised powder for intravenous infusion and as a 200 mg/mL single-dose prefilled autoinjector or prefilled syringe for subcutaneous injection (DailyMed SPL, GSK, revision 8/2026). This label revision notably adds Stevens-Johnson syndrome and toxic epidermal necrolysis as a contraindication (section 4) and as a new warning (section 5.3), with fatal anaphylaxis and SJS/TEN listed as postmarketing adverse reactions in section 6.2 - this supersedes older secondary sources that describe belimumab as having no contraindications. BENLYSTA has no boxed warning, so black_box_warnings is an empty array rather than a null. SJS/TEN, anaphylaxis and depression/suicidality are drug-specific and are the safety items most likely to be lost in generic template text."
+}

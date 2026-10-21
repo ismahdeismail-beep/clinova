@@ -1,0 +1,208 @@
+{
+  "name": "Baclofen",
+  "existing_id": "bb46452d-2a99-4202-8126-58a25a6befb5",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Baclofen is a GABAergic agonist whose precise mechanism of action is not fully known. It inhibits both monosynaptic and polysynaptic reflexes at the spinal level, possibly by decreasing excitatory neurotransmitter release from primary afferent terminals, with supraspinal actions also possible. It is a structural analog of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA) and may act by stimulation of the GABAB receptor subtype. In animal studies it has general CNS depressant properties (sedation with tolerance, somnolence, ataxia, and respiratory and cardiovascular depression) (GABLOFEN baclofen injection label, section 12.1). The oral baclofen tablet label states that baclofen is capable of inhibiting both monosynaptic and polysynaptic reflexes at the spinal level, possibly by hyperpolarization of afferent terminals, and that although it is an analog of GABA there is no conclusive evidence that actions on GABA systems are involved in the production of its clinical effects (Baclofen tablets USP label, Clinical Pharmacology).",
+    "indications": [
+      "Oral baclofen tablets: alleviation of signs and symptoms of spasticity resulting from multiple sclerosis, particularly for the relief of flexor spasms and concomitant pain, clonus, and muscular rigidity; patients should have reversible spasticity so that treatment aids in restoring residual function. Baclofen tablets may also be of some value in patients with spinal cord injuries and other spinal cord diseases (Baclofen tablets USP label, Indications and Usage).",
+      "Oral baclofen tablets are not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders; the efficacy of baclofen in stroke, cerebral palsy and Parkinson's disease has not been established and it is therefore not recommended for these conditions (Baclofen tablets USP label, Indications and Usage).",
+      "Intrathecal baclofen (GABLOFEN): management of severe spasticity of cerebral or spinal origin in adult and paediatric patients 4 years of age and above. Patients should first respond to a screening dose of intrathecal baclofen before consideration of long-term infusion via an implantable pump. For spasticity of spinal cord origin, chronic intrathecal infusion should be reserved for patients unresponsive to oral baclofen therapy or those who experience intolerable CNS side effects at effective doses. Patients with spasticity due to traumatic brain injury should wait at least one year after the injury before consideration of long-term intrathecal baclofen therapy (GABLOFEN baclofen injection label, section 1)."
+    ],
+    "contraindications": [
+      "Oral baclofen tablets: hypersensitivity to baclofen (Baclofen tablets USP label, Contraindications).",
+      "Intrathecal baclofen (GABLOFEN): hypersensitivity to baclofen, and do not use for intravenous, intramuscular, subcutaneous or epidural administration (GABLOFEN baclofen injection label, section 4)."
+    ],
+    "side_effects": [
+      "Oral: transient drowsiness is the most common reaction, reported in 10% to 63% of patients (63% versus 36% on placebo in one controlled study of 175 patients); other common reactions are dizziness (5% to 15%), weakness (5% to 15%) and fatigue (2% to 4%) (Baclofen tablets USP label, Adverse Reactions).",
+      "Oral: neuropsychiatric - confusion (1% to 11%), headache (4% to 8%), insomnia (2% to 7%); rarely euphoria, excitement, depression, hallucinations, paraesthesia, muscle pain, tinnitus, slurred speech, coordination disorder, tremor, rigidity, dystonia, ataxia, blurred vision, nystagmus, strabismus, miosis, mydriasis, diplopia, dysarthria and epileptic seizure (Baclofen tablets USP label, Adverse Reactions).",
+      "Oral: cardiovascular - hypotension (0% to 9%); rarely dyspnoea, palpitation, chest pain and syncope (Baclofen tablets USP label, Adverse Reactions).",
+      "Oral: gastrointestinal - nausea (4% to 12%) and constipation (2% to 6%); rarely dry mouth, anorexia, taste disorder, abdominal pain, vomiting, diarrhoea and a positive test for occult blood in stool (Baclofen tablets USP label, Adverse Reactions).",
+      "Oral: genitourinary - urinary frequency (2% to 6%); rarely enuresis, urinary retention, dysuria, impotence, inability to ejaculate, nocturia and haematuria (Baclofen tablets USP label, Adverse Reactions).",
+      "Oral: other - rash, pruritus, ankle oedema, excessive perspiration, weight gain and nasal congestion; increased SGOT, elevated alkaline phosphatase and elevated blood sugar have been found in a few patients (Baclofen tablets USP label, Adverse Reactions).",
+      "Intrathecal: the most common adverse reactions with intrathecal baclofen that were not seen at an equivalent incidence among placebo-treated patients were somnolence, dizziness, nausea, hypotension, headache, convulsions and hypotonia (GABLOFEN baclofen injection label, section 6.1).",
+      "Intrathecal: in the pre-marketing evaluation of 576 US patients with spasticity of spinal origin, the most frequently reported reactions (hypotonia, somnolence, dizziness, paraesthesia, nausea/vomiting and headache) appear clearly drug-related; in controlled trials hypotension (2), dizziness (2), headache (2) and dyspnoea (1) occurred among 31 patients receiving intrathecal baclofen (GABLOFEN baclofen injection label, section 6.1)."
+    ],
+    "dosage": {
+      "adult": "Oral baclofen tablets: optimal dosage requires individual titration. Start at a low dose and increase gradually until the optimum effect is achieved (usually between 40 and 80 mg daily). Suggested titration: 5 mg three times daily for 3 days, then 10 mg three times daily for 3 days, then 15 mg three times daily for 3 days, then 20 mg three times daily for 3 days; thereafter additional increases may be necessary but the total daily dose should not exceed a maximum of 80 mg daily (20 mg four times daily). The lowest dose compatible with an optimal response is recommended, and if benefits are not evident after a reasonable trial period the patient should be slowly withdrawn (Baclofen tablets USP label, Dosage and Administration). Intrathecal baclofen (GABLOFEN): screening uses 50 mcg/mL given intrathecally by barbotage over at least one minute, with the patient observed for 4 to 8 hours; if the response is less than desired a second bolus of 75 mcg in 1.5 mL may be given 24 hours later, and a final bolus of 100 mcg in 2 mL 24 hours after that. Patients who do not respond to a 100 mcg bolus should not be candidates for an implanted pump. Post-implant, the screening dose that gave a positive effect is doubled and given over 24 hours (unless the response was maintained for more than 8 hours), with no dose increase in the first 24 hours; thereafter the daily dose is increased slowly by 10% to 30% increments no more than once every 24 hours for spinal cord spasticity and by 5% to 15% for cerebral spasticity. Maintenance doses for long-term continuous intrathecal infusion have ranged from 12 to 2,003 mcg/day, with most patients maintained on 300 to 800 mcg/day for spinal cord origin and 90 to 703 mcg/day for cerebral origin (GABLOFEN baclofen injection label, sections 2.2, 2.5 and 2.6).",
+      "geriatric": "No geriatric-specific oral dosing recommendation is stated in the baclofen tablet labelling; because baclofen is primarily excreted unchanged through the kidneys it should be given with caution and it may be necessary to reduce the dosage (Baclofen tablets USP label, Warnings c). For intrathecal baclofen no geriatric-specific adjustment is stated in the GABLOFEN label, which notes that there are no data for use in patients with hepatic or renal impairment (GABLOFEN baclofen injection label, section 8).",
+      "paediatric": "Oral: safety and effectiveness in paediatric patients below the age of 12 years have not been established (Baclofen tablets USP label, Pediatric Use). Intrathecal: GABLOFEN is indicated in paediatric patients 4 years of age and above; children should be of sufficient body mass to accommodate the implantable pump, and safety and effectiveness below 4 years have not been established. The paediatric screening dose is the same as in adults (50 mcg), although a 25 mcg screening dose may be tried first in very small patients; post-implant daily dose is increased slowly by 5% to 15% increments no more than once every 24 hours, and paediatric patients under 12 years seemed to require a lower daily dose (average 274 mcg/day, range 24 to 1,199 mcg/day in clinical trials) (GABLOFEN baclofen injection label, sections 1, 2.2, 2.5, 2.6 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Central nervous system effects of baclofen may be additive to those of alcohol and other CNS depressants (Baclofen tablets USP label, Precautions; GABLOFEN baclofen injection label, section 5.10).",
+      "Intrathecal baclofen combined with epidural morphine: hypotension and dyspnoea have been attributed to the combined use; there is inadequate systematic experience with intrathecal baclofen in combination with other medications to predict specific drug-drug interactions (GABLOFEN baclofen injection label, section 7).",
+      "When discontinuing intrathecal baclofen, an attempt should be made to discontinue concomitant oral antispasticity medication to avoid possible overdose or adverse drug interactions, either before screening or after implant, and reduction and discontinuation of oral antispastics must be done slowly and with careful monitoring because abrupt reduction or discontinuation should be avoided (GABLOFEN baclofen injection label, section 2.5).",
+      "GABLOFEN is not to be compounded with other medications (GABLOFEN baclofen injection label, section 2.1)."
+    ],
+    "monitoring": "In patients with epilepsy, the clinical state and electroencephalogram should be monitored at regular intervals, since deterioration in seizure control and EEG have been reported occasionally in patients taking baclofen (Baclofen tablets USP label, Precautions). For intrathecal baclofen, the screening procedure and the dose-titration period after implantation must be conducted in a medically supervised and adequately equipped environment with resuscitative equipment available, the patient must be monitored closely after implantation until the response to the infusion is stable, and close medical monitoring is required whenever the pump rate or reservoir concentration is adjusted (GABLOFEN baclofen injection label, section 5.3). Reservoir refills must be performed by fully trained and qualified personnel following the pump manufacturer's directions, refill intervals must be calculated carefully to avoid reservoir depletion (which causes severe spasticity and possible withdrawal), strict aseptic technique is required, and a period of observation appropriate to the clinical situation should follow each refill or reservoir manipulation (GABLOFEN baclofen injection label, section 5.1).",
+    "patient_counselling": "Oral: because of the possibility of sedation, patients should be cautioned regarding the operation of automobiles or other dangerous machinery and activities made hazardous by decreased alertness, and that the CNS effects of baclofen may be additive to those of alcohol and other CNS depressants (Baclofen tablets USP label, Precautions). Except for serious adverse reactions the dose should be reduced slowly when the drug is discontinued, because hallucinations and seizures have occurred on abrupt withdrawal (Baclofen tablets USP label, Warnings b). If oral baclofen is continued during pregnancy, the dose should be gradually reduced and baclofen discontinued before delivery where possible, and parents or caregivers should be advised of the potential for neonatal withdrawal (Baclofen tablets USP label, Warnings a). Intrathecal: advise patients and caregivers that sudden withdrawal of GABLOFEN, regardless of the cause, can cause high fever, confusion, muscle stiffness, multiple organ-system failure and death, that early withdrawal symptoms may include increased spasticity, itching and tingling of the extremities, and that if withdrawal or pump malfunction is suspected the patient should be taken immediately to hospital; sudden withdrawal most often results from a catheter or pump delivery problem or failure to refill on schedule, so patients should attend to pump alarms and contact their physician immediately to reschedule a missed refill (GABLOFEN baclofen injection label, section 17). Advise patients that overdose may occur suddenly or insidiously with confusion, drowsiness, lightheadedness, dizziness, slow or shallow breathing, seizures, loss of muscle tone, loss of consciousness and coma, and that an apparent overdose requires immediate hospital assessment and possible emptying of the pump; drowsiness can be worsened by alcohol and other CNS depressants (GABLOFEN baclofen injection label, section 17).",
+    "warnings": [
+      "Oral: neonatal withdrawal symptoms - withdrawal symptoms have been reported starting hours to days after delivery in neonates whose mothers were treated with oral baclofen throughout pregnancy, and have included increased muscle tone, tremor, jitteriness and seizure; if oral baclofen is continued during pregnancy the dose should be gradually reduced and baclofen discontinued before delivery, and if slow withdrawal is not feasible parents or caregivers should be advised of the potential for neonatal withdrawal (Baclofen tablets USP label, Warnings a).",
+      "Oral: abrupt drug withdrawal - hallucinations and seizures have occurred on abrupt withdrawal of baclofen; except for serious adverse reactions the dose should be reduced slowly when the drug is discontinued (Baclofen tablets USP label, Warnings b).",
+      "Oral: impaired renal function - because baclofen is primarily excreted unchanged through the kidneys it should be given with caution and it may be necessary to reduce the dosage (Baclofen tablets USP label, Warnings c).",
+      "Oral: stroke - baclofen has not significantly benefited patients with stroke and these patients have also shown poor tolerability to the drug (Baclofen tablets USP label, Warnings d).",
+      "Intrathecal (boxed warning): DO NOT DISCONTINUE ABRUPTLY. Abrupt discontinuation of intrathecal baclofen, regardless of the cause, has resulted in high fever, altered mental status, exaggerated rebound spasticity and muscle rigidity, which in rare cases has advanced to rhabdomyolysis, multiple organ-system failure and death. Prevention requires careful attention to programming and monitoring of the infusion system, refill scheduling and procedures, and pump alarms (GABLOFEN baclofen injection label, Boxed Warning).",
+      "Intrathecal: overdose may present as coma, or less suddenly with drowsiness, lightheadedness, dizziness, somnolence, respiratory depression, seizures, rostral progression of hypotonia and loss of consciousness progressing to coma; overdose has generally been related to pump malfunction or dosing error (GABLOFEN baclofen injection label, section 5.4).",
+      "Intrathecal: withdrawal - in the first 9 years of post-marketing experience 27 cases of withdrawal temporally related to cessation of baclofen therapy were reported and six patients died; early symptoms may include return of baseline spasticity, pruritus, hypotension and paraesthesias (GABLOFEN baclofen injection label, section 5.5).",
+      "Intrathecal: risk of life-threatening overdose during pump refills - direct injection into the catheter access port may cause a life-threatening overdose (GABLOFEN baclofen injection label, section 5.1).",
+      "Intrathecal: possible exacerbation of psychotic disorders, schizophrenia or confusional states has been observed with oral administration; such patients should be treated cautiously and kept under careful surveillance (GABLOFEN baclofen injection label, section 5.6).",
+      "Intrathecal: use with caution in patients with a history of autonomic dysreflexia, because nociceptive stimuli or abrupt withdrawal may cause an autonomic dysreflexic episode (GABLOFEN baclofen injection label, section 5.8)."
+    ],
+    "precautions": [
+      "Baclofen should be used with caution where spasticity is utilised to sustain upright posture and balance in locomotion, or wherever spasticity is utilised to obtain increased function (Baclofen tablets USP label, Precautions).",
+      "Careful dose titration of intrathecal baclofen is needed when spasticity is necessary to sustain upright posture and balance in locomotion or whenever spasticity is used to obtain optimal function and care; it may be important to titrate the dose to maintain some degree of muscle tone and allow occasional spasms to help support circulatory function, possibly prevent deep vein thrombosis, optimise activities of daily living and ease of care (GABLOFEN baclofen injection label, section 2.5).",
+      "Except in overdose-related emergencies, the dose of intrathecal baclofen should ordinarily be reduced slowly if the drug is discontinued for any reason (GABLOFEN baclofen injection label, section 2.5).",
+      "The external surface of the GABLOFEN prefilled syringes (all strengths, including the 50 mcg/mL strength) is non-sterile, which has the potential to lead to contamination and consequent adverse reactions; using the prefilled syringe in an aseptic setting to fill sterile intrathecal pumps prior to implantation is not recommended unless the external surface is treated to ensure sterility, and vials may be used with conventional aseptic technique (GABLOFEN baclofen injection label, section 5.2).",
+      "Patients should be infection-free prior to the screening trial and prior to pump implantation, because infection may interfere with assessment of response, increase surgical complications and complicate dosing (GABLOFEN baclofen injection label, section 5.9).",
+      "A dose-related increase in the incidence of ovarian cysts was observed in female rats treated chronically with baclofen; ovarian cysts have been found by palpation in about 4% of the multiple sclerosis patients treated with baclofen for up to one year, usually resolving spontaneously, and are estimated to occur spontaneously in approximately 1% to 5% of the normal female population (Baclofen tablets USP label, Precautions; GABLOFEN baclofen injection label, section 5.12).",
+      "Cases of intrathecal mass at the tip of the implanted catheter have been reported, most involving compounded analgesic admixtures; clinicians should monitor patients on intraspinal therapy carefully for new neurological signs or symptoms and consider neurosurgical consultation (GABLOFEN baclofen injection label, section 5.11).",
+      "In approximately 5% (28/627) of patients on long-term intrathecal baclofen, tolerance developed; this has occasionally been managed in hospital with a 'drug holiday' consisting of gradual reduction of intrathecal baclofen over 2 to 4 weeks and switching to alternative spasticity management, after which baclofen may be restarted at the initial continuous infusion dose (GABLOFEN baclofen injection label, section 2.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Hallucinations and seizures on abrupt withdrawal of oral baclofen (Baclofen tablets USP label, Warnings b).",
+      "Intrathecal overdose causing CNS depression with respiratory depression, seizures and coma (GABLOFEN baclofen injection label, sections 5.4 and 10).",
+      "Intrathecal baclofen withdrawal syndrome with high fever, altered mental status, exaggerated rebound spasticity and muscle rigidity, rarely progressing to rhabdomyolysis, multiple organ-system failure and death (GABLOFEN baclofen injection label, Boxed Warning and section 5.5).",
+      "Seizures have been reported during overdose and with withdrawal from intrathecal baclofen, as well as in patients maintained on therapeutic doses of intrathecal baclofen (GABLOFEN baclofen injection label, section 5.5).",
+      "Potentially life-threatening CNS depression, cardiovascular collapse and/or respiratory failure during screening, dose titration and refills (GABLOFEN baclofen injection label, section 5.3)."
+    ],
+    "food_interactions": [
+      "Alcohol: the CNS depressant effects of baclofen may be additive to those of alcohol; patients should be told to read all medicine labels carefully and to inform their physician about all prescription and non-prescription medicines they use (Baclofen tablets USP label, Precautions; GABLOFEN baclofen injection label, sections 5.10 and 17)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Oral baclofen: baclofen has been shown to increase the incidence of omphaloceles (ventral hernias) in fetuses of rats given approximately 13 times the maximum dose recommended for human use, at a dose which caused significant reductions in food intake and weight gain in dams; this abnormality was not seen in mice or rabbits. There was also an increased incidence of incomplete sternebral ossification in rat fetuses at approximately 13 times the maximum recommended human dose and an increased incidence of unossified phalangeal nuclei in rabbit fetuses at approximately 7 times the maximum recommended human dose. In mice no teratogenic effects were observed although reductions in mean fetal weight with consequent delays in skeletal ossification were present at 17 and 34 times the human daily dose. There are no studies in pregnant women; baclofen should be used during pregnancy only if the benefit clearly justifies the potential risk to the fetus (Baclofen tablets USP label, Warnings e). Neonatal withdrawal symptoms (increased muscle tone, tremor, jitteriness, seizure) have been reported starting hours to days after delivery in neonates whose mothers were treated with oral baclofen throughout pregnancy (Baclofen tablets USP label, Warnings a). Intrathecal baclofen: there are no adequate data on the developmental risk associated with GABLOFEN in pregnant women; oral administration of baclofen to pregnant rats produced an increase in fetal malformations (omphaloceles) at a dose associated with maternal toxicity, and there are no animal data on developmental risk associated with baclofen administered via continuous intrathecal infusion (GABLOFEN baclofen injection label, section 8.1).",
+    "lactation_guidance": "Oral: it is not known whether this drug is excreted in human milk; as a general rule nursing should not be undertaken while a patient is on a drug since many drugs are excreted in human milk (Baclofen tablets USP label, Precautions). Intrathecal: there is insufficient information regarding levels of baclofen in the milk of nursing mothers receiving GABLOFEN, but at recommended oral doses baclofen is present in human milk and withdrawal symptoms can occur in breastfed infants when maternal administration of baclofen is stopped or when breastfeeding is stopped; the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for GABLOFEN (GABLOFEN baclofen injection label, section 8.2).",
+    "overdose": "Oral: signs and symptoms are vomiting, muscular hypotonia, drowsiness, accommodation disorders, coma, respiratory depression and seizures. In the alert patient, empty the stomach promptly by induced emesis followed by lavage; in the obtunded patient, secure the airway with a cuffed endotracheal tube before beginning lavage (do not induce emesis), maintain adequate respiratory exchange and do not use respiratory stimulants (Baclofen tablets USP label, Overdosage). Intrathecal: symptoms are drowsiness, lightheadedness, dizziness, somnolence, respiratory depression, seizures, rostral progression of hypotonia and loss of consciousness progressing to coma of up to 72 hours duration, with coma generally reversible without sequelae after discontinuation; symptoms were reported in a sensitive adult patient after a 25 mcg intrathecal bolus. There is no specific antidote: residual intrathecal baclofen solution should be removed from the pump as soon as possible, patients with respiratory depression should be intubated if necessary until the drug is eliminated, anecdotal reports suggest intravenous physostigmine may reverse drowsiness and respiratory depression (2 mg intramuscularly or intravenously at no more than 1 mg per minute in adults; 0.02 mg/kg in paediatric patients, not more than 0.5 mg per minute, repeatable at 5 to 10 minute intervals to a maximum of 2 mg), and if lumbar puncture is not contraindicated consideration should be given to withdrawing 30 to 40 mL of CSF to reduce CSF baclofen concentration (GABLOFEN baclofen injection label, section 10).",
+    "pharmacokinetics": "Oral: baclofen is rapidly and extensively absorbed and eliminated; absorption may be dose-dependent and is reduced with increasing doses. Baclofen is excreted primarily by the kidney in unchanged form, with relatively large intersubject variation in absorption and/or elimination (Baclofen tablets USP label, Clinical Pharmacology). Intrathecal: elimination from cerebrospinal fluid approximates CSF turnover, suggesting elimination by bulk-flow removal of CSF. After a bolus lumbar injection of 50 mcg or 100 mcg in seven patients the average CSF elimination half-life was 1.51 hours over the first four hours and average CSF clearance approximately 30 mL/hour; mean CSF clearance during continuous intrathecal infusion was also approximately 30 mL/hour. Concurrent plasma concentrations during intrathecal administration are expected to be low (0 to 5 ng/mL), and a lumbar-cisternal concentration gradient of about 4:1 is established along the neuroaxis during infusion (GABLOFEN baclofen injection label, section 12.3). Intrathecal bolus onset of action is generally one-half to one hour, peak spasmolytic effect at about four hours, with effects lasting four to eight hours; with continuous infusion, antispastic action is first seen at 6 to 8 hours with maximum activity at 24 to 48 hours (GABLOFEN baclofen injection label, section 12.2).",
+    "clinical_pearls": [
+      "Oral and intrathecal baclofen are separate FDA-labelled products with different indications, routes, dosing, contraindications and warnings; the boxed 'DO NOT DISCONTINUE ABRUPTLY' warning belongs to the intrathecal product (GABLOFEN) and not to the oral tablets.",
+      "Baclofen must be tapered rather than stopped abruptly: oral withdrawal can cause hallucinations and seizures, and intrathecal withdrawal can cause a hypermetabolic withdrawal syndrome with rhabdomyolysis, multiple organ-system failure and death (Baclofen tablets USP label, Warnings b; GABLOFEN baclofen injection label, Boxed Warning and section 5.5).",
+      "Baclofen is renally eliminated unchanged, so the dose usually needs reduction in renal impairment and the drug should be used with caution (Baclofen tablets USP label, Warnings c).",
+      "The US oral baclofen tablet label explicitly states that baclofen tablets are not indicated for skeletal muscle spasm due to rheumatic disorders, and that efficacy has not been established in stroke, cerebral palsy or Parkinson's disease (Baclofen tablets USP label, Indications and Usage).",
+      "A sudden large requirement for dose escalation in a patient on intrathecal baclofen suggests a catheter complication such as kink or dislodgement (GABLOFEN baclofen injection label, sections 2.5 and 2.6).",
+      "Baclofen is not listed in the WHO Model List of Essential Medicines 2023 and does not appear in the Kenya Essential Medicines List, so no essential-medicines-list regimen could be sourced for it."
+    ],
+    "brand_names": ["Baclofen", "Gablofen"],
+    "black_box_warnings": [
+      "WARNING: DO NOT DISCONTINUE ABRUPTLY. Abrupt discontinuation of intrathecal baclofen, regardless of the cause, has resulted in sequelae that include high fever, altered mental status, exaggerated rebound spasticity, and muscle rigidity, that in rare cases has advanced to rhabdomyolysis, multiple organ-system failure and death. Prevention of abrupt discontinuation of intrathecal baclofen requires careful attention to programming and monitoring of the infusion system, refill scheduling and procedures, and pump alarms. Patients and caregivers should be advised of the importance of keeping scheduled refill visits and should be educated on the early symptoms of baclofen withdrawal (GABLOFEN baclofen injection label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "Oral: because baclofen is primarily excreted unchanged through the kidneys, it should be given with caution and it may be necessary to reduce the dosage (Baclofen tablets USP label, Warnings c). The US baclofen tablet label does not provide a specific renal dose-adjustment table. Intrathecal: the pharmacokinetics of baclofen in patients with renal impairment has not been studied; as baclofen or its metabolites were not traced in the urine, an increase in systemic exposure is not envisaged in patients with renal impairment (GABLOFEN baclofen injection label, section 12.3).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral baclofen tablets are for oral use; the optimal dosage requires individual titration starting at a low dose (5 mg three times daily) and increasing gradually (10 mg three times daily, 15 mg three times daily, then 20 mg three times daily, each for three days) to a maximum of 80 mg daily (20 mg four times daily); use the lowest dose compatible with an optimal response, and withdraw slowly rather than abruptly (Baclofen tablets USP label, Dosage and Administration). Intrathecal GABLOFEN is a sterile, pyrogen-free, isotonic solution for intrathecal administration only (50 mcg/mL, 500 mcg/mL, 1,000 mcg/mL or 2,000 mcg/mL); it must not be given intravenously, intramuscularly, subcutaneously or epidurally and must not be compounded with other medications. It is approved only for use with the Medtronic SynchroMed programmable pump or other pumps labelled for intrathecal administration of baclofen, using the manufacturer's instructions for programming and refilling, with strict aseptic technique, and must not be injected directly into the pump catheter access port. For screening use only the 1 mL screening syringe (50 mcg/mL) for bolus injection into the subarachnoid space; for maintenance, concentrations other than 500, 1,000 or 2,000 mcg/mL must be diluted with sterile preservative-free sodium chloride for injection (GABLOFEN baclofen injection label, sections 2.1 to 2.4 and 4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "GABLOFEN (baclofen injection) label, section 12.1; Baclofen Tablets USP label, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "indications",
+      "ref": "Baclofen Tablets USP label, Indications and Usage; GABLOFEN (baclofen injection) label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bd46eb6-53b2-4845-88b4-81c1ced08aaa"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Baclofen Tablets USP label, Contraindications; GABLOFEN (baclofen injection) label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Baclofen Tablets USP label, Adverse Reactions; GABLOFEN (baclofen injection) label, section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "dosage",
+      "ref": "Baclofen Tablets USP label, Dosage and Administration and Pediatric Use; GABLOFEN (baclofen injection) label, sections 1, 2.2, 2.5, 2.6 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bd46eb6-53b2-4845-88b4-81c1ced08aaa"
+    },
+    {
+      "field": "interactions",
+      "ref": "Baclofen Tablets USP label, Precautions; GABLOFEN (baclofen injection) label, sections 2.1, 2.5, 5.10 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Baclofen Tablets USP label, Precautions; GABLOFEN (baclofen injection) label, sections 5.1 and 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Baclofen Tablets USP label, Precautions and Warnings a and b; GABLOFEN (baclofen injection) label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "warnings",
+      "ref": "Baclofen Tablets USP label, Warnings a-e; GABLOFEN (baclofen injection) label, Boxed Warning and sections 5.1, 5.4, 5.5, 5.6 and 5.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "precautions",
+      "ref": "Baclofen Tablets USP label, Precautions; GABLOFEN (baclofen injection) label, sections 2.5, 2.6, 5.2, 5.9, 5.11 and 5.12",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Baclofen Tablets USP label, Warnings b; GABLOFEN (baclofen injection) label, Boxed Warning and sections 5.3, 5.4, 5.5 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Baclofen Tablets USP label, Precautions; GABLOFEN (baclofen injection) label, sections 5.10 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Baclofen Tablets USP label, Warnings a and e; GABLOFEN (baclofen injection) label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Baclofen Tablets USP label, Precautions; GABLOFEN (baclofen injection) label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "overdose",
+      "ref": "Baclofen Tablets USP label, Overdosage; GABLOFEN (baclofen injection) label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Baclofen Tablets USP label, Clinical Pharmacology; GABLOFEN (baclofen injection) label, sections 12.2 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Baclofen Tablets USP label, Indications and Usage and Warnings b and c; GABLOFEN (baclofen injection) label, Boxed Warning and sections 2.5, 2.6 and 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "brand_names",
+      "ref": "BACLOFEN TABLET (Preferred Pharmaceuticals) and GABLOFEN (baclofen injection) (Piramal Critical Care) listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "GABLOFEN (baclofen injection) label, Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Baclofen Tablets USP label, Warnings c; GABLOFEN (baclofen injection) label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bd46eb6-53b2-4845-88b4-81c1ced08aaa"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Baclofen Tablets USP label, Dosage and Administration; GABLOFEN (baclofen injection) label, sections 2.1 to 2.4 and 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00d3e846-dd92-448d-9ab8-6a07be823cc1"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative oral and intrathecal regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimens are provided in fields.dosage.paediatric)",
+    "pregnancy_category (neither the US baclofen tablet label nor the GABLOFEN label assigns an FDA pregnancy category letter; both use narrative risk summaries)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the baclofen tablet or GABLOFEN labels)"
+  ],
+  "notes": "Two distinct FDA-labelled products share the ingredient baclofen and both are covered here, with every statement attributed to the label it came from: oral baclofen tablets (Baclofen Tablets USP, DailyMed setid 9bd46eb6-53b2-4845-88b4-81c1ced08aaa) and intrathecal baclofen injection (GABLOFEN, DailyMed setid 00d3e846-dd92-448d-9ab8-6a07be823cc1). The boxed warning in this draft belongs to the intrathecal product only; the oral tablet label has no boxed warning. The oral tablet label is an older reference-style label that carries no numbered Drug Interactions section, so the alcohol/CNS-depressant additive effect (Precautions) is the only interaction statement sourced for oral baclofen. Baclofen is not on the WHO Model List of Essential Medicines 2023 and is not in the Kenya Essential Medicines List. The database row's drug_class 'Analgesic agent' is retained but the labels describe baclofen as a muscle relaxant and antispastic / GABAergic agonist; the drug_class column is not changed by this draft. content_status remains needs_review."
+}

@@ -1,0 +1,210 @@
+{
+  "name": "Bempedoic Acid",
+  "existing_id": "4fba45e0-80dc-4927-bc38-c1fe96449b0f",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bempedoic acid is an adenosine triphosphate-citrate lyase (ACL) inhibitor that lowers LDL-C by inhibition of cholesterol synthesis in the liver. ACL is an enzyme upstream of 3-hydroxy-3-methyl-glutaryl-coenzyme A (HMG-CoA) reductase in the cholesterol biosynthesis pathway. Bempedoic acid and its active metabolite ESP15228 require coenzyme A activation by very long-chain acyl-CoA synthetase 1 (ACSVL1) to ETC-1002-CoA and ESP15228-CoA respectively; ACSVL1 is expressed primarily in the liver. Inhibition of ACL by ETC-1002-CoA results in decreased cholesterol synthesis in the liver and lowers LDL-C in blood via upregulation of low-density lipoprotein receptors. Bempedoic acid also weakly inhibits renal tubular OAT2 in vitro, which is the likely mechanism for the minor elevations in serum creatinine and uric acid (FDA NEXLETOL label, sections 12.1 and 12.3).",
+    "indications": [
+      "NEXLETOL (bempedoic acid monotherapy): to reduce the risk of major adverse cardiovascular events (cardiovascular death, myocardial infarction, stroke, or coronary revascularization) in adults at increased risk for these events who are unable to take recommended statin therapy, including those not taking a statin (FDA NEXLETOL label, section 1)",
+      "NEXLETOL (bempedoic acid monotherapy): as an adjunct to diet and exercise, in combination with other LDL-C lowering therapies, or alone when concomitant LDL-C lowering therapy is not possible, to reduce LDL-C in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH) (FDA NEXLETOL label, section 1)",
+      "NEXLIZET (bempedoic acid plus ezetimibe fixed combination): as an adjunct to diet and exercise to reduce LDL-C in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH) (FDA NEXLIZET label, section 1)",
+      "Bempedoic acid as a component of NEXLIZET: to reduce the risk of major adverse cardiovascular events in adults at increased risk who are unable to take recommended statin therapy, including those not taking a statin (FDA NEXLIZET label, section 1)"
+    ],
+    "contraindications": [
+      "NEXLETOL: contraindicated in patients with a history of a serious hypersensitivity reaction to bempedoic acid or any of the excipients in NEXLETOL; serious hypersensitivity reactions such as angioedema have occurred (FDA NEXLETOL label, section 4)",
+      "NEXLIZET: contraindicated in patients with a known hypersensitivity to ezetimibe or bempedoic acid or any of the excipients in NEXLIZET; serious hypersensitivity reactions such as anaphylaxis, angioedema, rash and urticaria have been reported with ezetimibe or bempedoic acid (FDA NEXLIZET label, section 4)"
+    ],
+    "side_effects": [
+      "Hyperuricemia: in the primary hypercholesterolemia trials 26% of bempedoic acid-treated patients with normal baseline uric acid experienced hyperuricemia at least once (versus 9.5% placebo) and 3.5% had clinically significant hyperuricemia reported as an adverse reaction (versus 1.1%); in the cardiovascular outcomes trial 16.4% had clinically significant hyperuricemia versus 8.2% with placebo (FDA NEXLETOL label, sections 5.1 and 6.1)",
+      "Gout: 1.5% in the primary hypercholesterolemia trials versus 0.4% placebo, and 3.2% versus 2.2% placebo in the cardiovascular outcomes trial (FDA NEXLETOL label, sections 5.1 and 6.1)",
+      "Tendon rupture: 0.5% of bempedoic acid-treated patients versus 0% placebo in the primary hypercholesterolemia trials, involving the rotator cuff, biceps tendon or Achilles tendon, occurring within weeks to months of starting treatment; 1.2% versus 0.9% placebo in the cardiovascular outcomes trial (FDA NEXLETOL label, sections 5.2 and 6.1)",
+      "Primary hypercholesterolemia trials, adverse reactions at least 2% and more frequent than placebo: upper respiratory tract infection 4.5% versus 4.0%, muscle spasms 3.6% versus 2.3%, hyperuricemia 3.5% versus 1.1%, back pain 3.3% versus 2.2%, abdominal pain or discomfort 3.1% versus 2.2%, bronchitis 3.0% versus 2.5%, pain in extremity 3.0% versus 1.7%, anemia 2.8% versus 1.9%, elevated liver enzymes 2.1% versus 0.8% (FDA NEXLETOL label, section 6.1 and Table 1)",
+      "Cardiovascular outcomes trial, adverse reactions at least 2% and 0.5% greater than placebo: hyperuricemia 16% versus 8%, renal impairment 11% versus 9%, anemia 5% versus 4%, elevated liver enzymes 4% versus 3%, muscle spasms 4% versus 3%, gout 3% versus 2%, cholelithiasis 2% versus 1% (FDA NEXLETOL label, section 6.1 and Table 2)",
+      "NEXLIZET-specific adverse reactions in the 12-week factorial trial: urinary tract infection 5.9% versus 2.4% placebo, nasopharyngitis 4.7% versus 0%, constipation 4.7% versus 0%, and oral discomfort as the most common reason for discontinuation (2% versus 0%); adverse reactions led to discontinuation in 8% on NEXLIZET, 5% on placebo, 10% on bempedoic acid and 12% on ezetimibe (FDA NEXLIZET label, section 6.1)",
+      "Laboratory effects: mean creatinine increase of 0.05 mg/dL at Week 12, with about 2.2% of patients having creatinine increases of 0.5 mg/dL (versus 1.1% placebo) and 3.8% with blood urea nitrogen values that doubled (versus 1.5%); decreases in haemoglobin of 2 g/dL or more to below the lower limit of normal in 5.1% (versus 2.3%); leukocyte decrease below the lower limit of normal in 9.0% (versus 6.7%), generally asymptomatic; platelet count increases of 100 x 10^9/L or more in 10.1% (versus 4.7%), asymptomatic and without increased thromboembolic risk; AST increases of more than 3 times ULN in 1.4% (versus 0.4%) and more than 5 times ULN in 0.4% (versus 0.2%), generally asymptomatic and not associated with bilirubin elevations of 2 times ULN or with cholestasis; creatine kinase elevations of 5 or more times normal in 1.0% (versus 0.6%) (FDA NEXLETOL label, section 6.1)",
+      "Postmarketing (NEXLETOL): hypersensitivity reactions including angioedema, wheezing, rash and urticaria (FDA NEXLETOL label, section 6.2)",
+      "Postmarketing (NEXLIZET): thrombocytopenia; abdominal pain, pancreatitis, nausea; elevations in liver transaminases including more than 5 times ULN, hepatitis, cholelithiasis, cholecystitis; hypersensitivity reactions including anaphylaxis, angioedema, wheezing, rash and urticaria; elevated creatine phosphokinase, myopathy/rhabdomyolysis; dizziness, paraesthesia, depression, headache; erythema multiforme (FDA NEXLIZET label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "NEXLETOL (bempedoic acid monotherapy): 180 mg orally once daily, with or without food. Analyse lipid levels within 8 to 12 weeks after initiation (FDA NEXLETOL label, sections 2.1 and 2). NEXLIZET (bempedoic acid 180 mg plus ezetimibe 10 mg): one tablet orally once daily with or without food, swallowed whole; if a dose is missed take it as soon as possible and do not double the next dose; analyse lipid levels within 8 to 12 weeks after initiation (FDA NEXLIZET label, sections 2.1 and 2).",
+      "geriatric": "Of the 3,009 adult patients in the primary hypercholesterolemia trials of NEXLETOL, 1,753 (58%) were 65 years of age and older and 478 (16%) were 75 years of age and older; of the 13,970 adult patients in the cardiovascular outcomes trial, 8,204 (59%) were 65 years and older and 2,107 (15%) were 75 years and older. No overall differences in safety or effectiveness of NEXLETOL were observed between patients 65 years of age and older and younger adult patients. Of the 301 patients in the NEXLIZET clinical trial, 149 (50%) were 65 years of age and older and 49 (16%) were 75 years of age and over, with no overall differences in safety or effectiveness (FDA NEXLETOL label, section 8.5; FDA NEXLIZET label, section 8.5).",
+      "paediatric": "The safety and effectiveness of NEXLETOL and of NEXLIZET have not been established in pediatric patients (FDA NEXLETOL label, section 8.4; FDA NEXLIZET label, section 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Simvastatin: concomitant use increases simvastatin concentration and may increase the risk of simvastatin-related myopathy; avoid concomitant use with simvastatin greater than 20 mg. In healthy subjects, simvastatin 20 mg with bempedoic acid 240 mg increased simvastatin acid AUC by 91% and Cmax by 54%, and simvastatin 40 mg with bempedoic acid 180 mg increased AUC by 96% and Cmax by 52% (FDA NEXLETOL label, sections 7 and 12.3)",
+      "Pravastatin: avoid concomitant use with pravastatin greater than 40 mg; pravastatin 40 mg with steady-state bempedoic acid 240 mg increased pravastatin acid AUC by 99% and Cmax by 104% (FDA NEXLETOL label, sections 7 and 12.3)",
+      "Fibrates: concomitant administration of fibrates with bempedoic acid resulted in increased triglycerides and decreased HDL-C in some patients in clinical studies and post-marketing reports; monitor triglycerides and HDL-C four weeks after initial concomitant use and periodically thereafter, and if increased triglycerides or decreased HDL-C are detected, discontinue bempedoic acid or fibrate therapy based on clinical judgment (FDA NEXLETOL label, section 7)",
+      "Fibrates (NEXLIZET): both fenofibrate and ezetimibe may increase cholesterol excretion into the bile leading to cholelithiasis, so coadministration of NEXLIZET with fibrates other than fenofibrate is not recommended; if cholelithiasis is suspected in a patient on NEXLIZET and fenofibrate, gallbladder studies are indicated and alternative lipid-lowering therapy should be considered (FDA NEXLIZET label, section 7)",
+      "Cyclosporine (NEXLIZET): concomitant use increases ezetimibe and cyclosporine concentrations, and the increase in ezetimibe exposure may be greater in patients with severe renal insufficiency; monitor cyclosporine concentrations (FDA NEXLIZET label, section 7)",
+      "Bile acid sequestrants such as cholestyramine (NEXLIZET): concomitant use decreases ezetimibe concentration and may reduce efficacy; administer NEXLIZET at least 2 hours before or at least 4 hours after bile acid sequestrants (FDA NEXLIZET label, sections 2.2 and 7)",
+      "Atorvastatin and rosuvastatin: elevations of about 1.7-fold in AUC of atorvastatin, and rosuvastatin and/or their major metabolites were observed, suggesting a weak interaction; these elevations were generally within individual statin exposures and do not impact dosing recommendations (FDA NEXLETOL label, section 12.3)",
+      "Probenecid: bempedoic acid 180 mg with steady-state probenecid increased bempedoic acid AUC 1.7-fold and Cmax 1.2-fold, and the active metabolite ESP15228 AUC 1.9-fold and Cmax 1.5-fold; these elevations are not clinically meaningful and do not impact dosing recommendations (FDA NEXLETOL label, section 12.3)",
+      "Warfarin: in vitro studies indicate bempedoic acid is not an inhibitor or inducer of CYP2C9, so warfarin pharmacokinetics are not expected to be altered (FDA NEXLETOL label, section 12.3)",
+      "Ezetimibe (NEXLETOL): increases in AUC and Cmax for ezetimibe were less than 20% when a single dose of ezetimibe was taken with steady-state bempedoic acid; total ezetimibe and ezetimibe glucuronide AUC and Cmax increased approximately 1.6-fold and 1.8-fold respectively, which is not clinically meaningful (FDA NEXLETOL label, section 12.3)",
+      "Metformin and oral contraceptives: bempedoic acid had no effect on the pharmacokinetics of metformin or of the oral contraceptive Ortho-Novum 1/35 (FDA NEXLETOL label, section 12.3)"
+    ],
+    "monitoring": "Analyse lipid levels within 8 to 12 weeks after initiating bempedoic acid or NEXLIZET (FDA NEXLETOL label, section 2.1; FDA NEXLIZET label, section 2.1). Assess serum uric acid periodically as clinically indicated, monitor for signs and symptoms of hyperuricemia, and initiate treatment with urate-lowering drugs as appropriate (FDA NEXLETOL label, section 5.1). Monitor for signs and symptoms of tendinitis or tendon rupture and instruct patients to rest at the first sign and to contact their healthcare provider (FDA NEXLETOL label, section 5.2). If NEXLIZET is used with a fibrate, monitor triglycerides and HDL-C four weeks after initial concomitant use and periodically thereafter (FDA NEXLIZET label, section 7). Monitor serum potassium, creatinine and blood urea nitrogen, haemoglobin and leukocytes, platelet count and hepatic transaminases, as the label describes persistent changes in multiple laboratory tests within the first 4 weeks of treatment that return to baseline after discontinuation (FDA NEXLETOL label, section 6.1). If cyclosporine is coadministered with NEXLIZET, monitor cyclosporine concentrations (FDA NEXLIZET label, section 7).",
+    "patient_counselling": "Advise patients of the risk of elevated serum uric acid levels, including development of gout, and that serum uric acid levels may be monitored during treatment; patients with signs or symptoms of hyperuricemia should contact their healthcare provider. Inform patients of the risk of tendon rupture: advise them to rest at the first sign of tendinitis or tendon rupture and to contact their healthcare provider immediately if tendinitis or tendon rupture symptoms occur. Advise patients to notify their healthcare provider if they are taking, or plan to take, simvastatin or pravastatin, because the risk of myopathy with these statins may be increased when taken with bempedoic acid. Advise pregnant women of the potential risk to a fetus based on the mechanism of action, and advise females to inform their healthcare provider of a known or suspected pregnancy; there is a pregnancy safety study that monitors pregnancy outcomes in patients exposed to NEXLETOL during pregnancy, and patients are encouraged to report their pregnancy to Esperion at 1-833-377-7633 (FDA NEXLETOL label, section 17). For NEXLIZET, patients should be told to swallow the tablet whole, that it may be taken with or without food, that a missed dose should be taken as soon as possible without doubling the next dose, that it should be taken at least 2 hours before or at least 4 hours after bile acid sequestrants, and that the healthcare provider may check LDL-C levels 8 to 12 weeks after starting treatment (FDA NEXLIZET label, sections 2.1, 2.2 and 17).",
+    "warnings": [
+      "Hyperuricemia: elevations in serum uric acid have occurred; assess uric acid levels periodically as clinically indicated, monitor for signs and symptoms of hyperuricemia, and initiate treatment with urate-lowering drugs as appropriate. Elevated blood uric acid may lead to the development of gout (FDA NEXLETOL label, section 5.1)",
+      "Tendon rupture: tendon rupture has occurred; discontinue NEXLETOL at the first sign of tendon rupture and avoid NEXLETOL in patients who have a history of tendon disorders or tendon rupture. Rupture may occur more frequently in patients over 60 years of age, in those taking corticosteroid or fluoroquinolone drugs, in patients with renal failure and in patients with previous tendon disorders; consider discontinuing if the patient experiences joint pain, swelling or inflammation, and consider alternative therapy in patients with a history of tendon disorders or tendon rupture (FDA NEXLETOL label, section 5.2)",
+      "Hyperuricemia and tendon rupture are the two labelled Warnings and Precautions for NEXLETOL; the same two warnings apply to NEXLIZET, where bempedoic acid is one of the two components (FDA NEXLIZET label, sections 5.1 and 5.2)",
+      "Cholelithiasis with fibrates (NEXLIZET): both fenofibrate and ezetimibe may increase cholesterol excretion into the bile leading to cholelithiasis; coadministration of NEXLIZET with fibrates other than fenofibrate is not recommended, and if cholelithiasis is suspected in a patient receiving NEXLIZET and fenofibrate, gallbladder studies are indicated and alternative lipid-lowering therapy should be considered (FDA NEXLIZET label, sections 6.1, 6.2 and 7)"
+    ],
+    "precautions": [
+      "NEXLIZET: administer the tablet at least 2 hours before or at least 4 hours after bile acid sequestrants, because concomitant use with cholestyramine decreases ezetimibe concentration and may reduce efficacy (FDA NEXLIZET label, sections 2.2 and 7)",
+      "NEXLIZET: swallow the tablet whole (FDA NEXLIZET label, section 2.1)",
+      "No specific pharmacokinetic drug interaction studies with NEXLIZET have been conducted; the labelled interactions are derived from studies with bempedoic acid or ezetimibe (FDA NEXLIZET label, section 7)",
+      "NEXLETOL: the safety of bempedoic acid in severe hepatic impairment (Child-Pugh C) has not been studied, and NEXLIZET is not recommended in patients with moderate or severe hepatic impairment (Child-Pugh B or C) because of the unknown effects of the increased exposure to ezetimibe (FDA NEXLETOL label, section 8.7; FDA NEXLIZET label, section 8.7)",
+      "Discontinue NEXLETOL when pregnancy is recognised unless the benefits of therapy outweigh the potential risks to the fetus (FDA NEXLETOL label, section 8.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Hyperuricemia, with risk of gout (FDA NEXLETOL label, sections 5.1 and 6.1)",
+      "Tendon rupture (FDA NEXLETOL label, sections 5.2 and 6.1)",
+      "Serious hypersensitivity reactions including angioedema, anaphylaxis, wheezing, rash and urticaria (FDA NEXLETOL label, sections 4 and 6.2; FDA NEXLIZET label, sections 4 and 6.2)",
+      "Cholelithiasis and cholecystitis (FDA NEXLIZET label, sections 6.1 and 6.2)",
+      "Hepatitis and elevations in liver transaminases including more than 5 times ULN (FDA NEXLIZET label, section 6.2)",
+      "Myopathy and rhabdomyolysis (FDA NEXLIZET label, section 6.2)",
+      "Pancreatitis (FDA NEXLIZET label, section 6.2)",
+      "Thrombocytopenia (FDA NEXLIZET label, section 6.2)"
+    ],
+    "food_interactions": [
+      "Bempedoic acid may be taken with or without food; concomitant food administration had no effect on the oral bioavailability of bempedoic acid (FDA NEXLETOL label, sections 2.1 and 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are insufficient data on bempedoic acid use in pregnant women to evaluate for a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes. NEXLETOL decreases cholesterol synthesis and possibly the synthesis of other biologically active substances derived from cholesterol and may therefore cause fetal harm when administered to a pregnant woman based on the mechanism of action; in addition, treatment of hypercholesterolemia is not generally necessary during pregnancy, as atherosclerosis is a chronic process and discontinuation of lipid-lowering drugs during pregnancy should have little impact on long-term outcomes for most patients. Bempedoic acid was not teratogenic in rats and rabbits at doses giving exposures up to 11 and 12 times the human exposure at the maximum recommended human dose. Discontinue NEXLETOL when pregnancy is recognised unless the benefits of therapy outweigh the potential risks to the fetus. The background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population it is 2% to 4% and 15% to 20% respectively. For NEXLIZET, insufficient data also apply to ezetimibe, and ezetimibe was not teratogenic in rats and rabbits at exposures up to 10 and 150 times the human exposure (FDA NEXLETOL label, section 8.1; FDA NEXLIZET label, section 8.1). The FDA labels do not assign a pregnancy category.",
+    "lactation_guidance": "Bempedoic acid was detected in the breast milk of lactating women who received six consecutive daily doses of 180 mg; the mean daily infant dose through breast milk was approximately 0.03 mg/day, with a mean relative infant dose of approximately 0.5% of the maternal weight-adjusted dosage, and concentrations of the active metabolite ESP15228 were below the limit of quantitation (20 ng/mL) in 7 of 8 subjects studied. There is no information on the effects of NEXLETOL on the breastfed infant or on milk production. NEXLETOL decreases cholesterol synthesis and possibly the synthesis of other biologically active substances derived from cholesterol and may cause harm to the breastfed infant; the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for NEXLETOL and any potential adverse effects on the breastfed child (FDA NEXLETOL label, section 8.2). For NEXLIZET, ezetimibe and its glucuronide were also detected in breast milk (mean relative infant dose approximately 0.04%) and the same precaution applies (FDA NEXLIZET label, section 8.2).",
+    "overdose": "There is no clinical experience with NEXLETOL overdose; in the event of an overdosage, consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdosage management recommendations. The same statement applies to NEXLIZET (FDA NEXLETOL label, section 10; FDA NEXLIZET label, section 10).",
+    "pharmacokinetics": "After multiple-dose administration of bempedoic acid 180 mg/day, the steady-state Cmax was 20.6 +/- 6.1 mcg/mL and AUC0-tau 289.0 +/- 96.4 mcg.h/mL, with steady state achieved after 7 days and a mean accumulation ratio of approximately 2.3-fold; pharmacokinetics were linear over a range of more than 60 mg to 220 mg and there were no time-dependent changes. The median Tmax was 3.5 hours and concomitant food administration had no effect on oral bioavailability. The apparent volume of distribution was 18 L and plasma protein binding of bempedoic acid, its glucuronide and ESP15228 was 99.3%, 98.8% and 99.2% respectively. Steady-state clearance was 11.2 mL/min with renal clearance of unchanged drug less than 2% of total clearance, and the mean half-life was 21 +/- 11 hours. The primary route of elimination is metabolism of the acyl glucuronide, with reversible conversion to the active metabolite ESP15228 (mean plasma AUC metabolite/parent ratio of 18%); following a single 240 mg oral dose about 70% of the total dose was recovered in urine, primarily as the acyl glucuronide, and about 30% in faeces, with less than 5% excreted as unchanged bempedoic acid. No clinically significant pharmacokinetic differences were observed based on age, gender, race, weight, renal impairment (mild, moderate, severe or renal failure) or mild and moderate hepatic impairment (FDA NEXLETOL label, section 12.3).",
+    "clinical_pearls": [
+      "Bempedoic acid inhibits ATP-citrate lyase, an enzyme upstream of HMG-CoA reductase, so it lowers LDL-C by a different mechanism from statins and does not carry the statin-associated myopathy signal on its own; in the two 52-week primary hypercholesterolemia trials it lowered LDL-C by 17% to 18% versus placebo on maximally tolerated statin therapy, and by 20% versus placebo at Month 6 in the cardiovascular outcomes trial (FDA NEXLETOL label, sections 14.1 and 14.2)",
+      "In the cardiovascular outcomes trial (13,970 randomized patients with established CVD or high risk, median 3.1 years), bempedoic acid reduced MACE-4 (cardiovascular death, non-fatal MI, non-fatal stroke or coronary revascularization) from 13.3% to 11.7% (HR 0.87, 95% CI 0.79 to 0.96) and MACE-3 from 9.5% to 8.2% (HR 0.85, 95% CI 0.76 to 0.96) versus placebo, with reductions driven by non-fatal myocardial infarction and coronary revascularization but no reduction in cardiovascular death (HR 1.04) (FDA NEXLETOL label, section 14.1 and Table 4)",
+      "The two things to watch are uric acid and tendon: hyperuricemia was the most common adverse reaction (16% versus 8% in the outcomes trial) and tendon rupture occurred in 1.2% versus 0.9%, with the label warning that risk is higher over 60 years of age, with corticosteroids or fluoroquinolones, in renal failure and with previous tendon disorders (FDA NEXLETOL label, sections 5.1, 5.2 and 6.1)",
+      "Statin dose ceilings apply: simvastatin above 20 mg and pravastatin above 40 mg should be avoided because bempedoic acid roughly doubles their exposure, whereas atorvastatin and rosuvastatin interaction is weak (FDA NEXLETOL label, sections 7 and 12.3)",
+      "All the laboratory changes (creatinine, blood urea nitrogen, haemoglobin, leukocytes, platelets and transaminases) occur within the first 4 weeks and return to baseline after discontinuation, so a baseline and early repeat panel is appropriate (FDA NEXLETOL label, section 6.1)",
+      "The fixed combination NEXLIZET (180 mg/10 mg) gave a 38% placebo-corrected LDL-C reduction at Week 12 in the 12-week factorial trial, which is greater than either component alone (FDA NEXLIZET label, section 14.1)",
+      "Both labels require lipid levels to be checked 8 to 12 weeks after starting therapy, since the maximum LDL-C lowering effect occurs at Week 4 (FDA NEXLETOL label, sections 2.1 and 14.2)"
+    ],
+    "brand_names": ["NEXLETOL", "NEXLIZET"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": "NEXLETOL: no dosage adjustment is necessary in patients with mild or moderate hepatic impairment (Child-Pugh A or B); patients with severe hepatic impairment (Child-Pugh C) have not been studied (FDA NEXLETOL label, section 8.7). NEXLIZET: no dosage adjustment is necessary in patients with mild hepatic impairment (Child-Pugh A), but NEXLIZET is not recommended in patients with moderate or severe hepatic impairment (Child-Pugh B or C) because of the unknown effects of the increased exposure to ezetimibe (FDA NEXLIZET label, section 8.7).",
+    "administration_instructions": "NEXLETOL: 180 mg orally once daily with or without food; analyse lipid levels 8 to 12 weeks after initiation. Store at 20 to 25 degrees C (68 to 77 degrees F), excursions permitted to 15 to 30 degrees C (59 to 86 degrees F), and store and dispense in the original package. NEXLIZET: one tablet (180 mg bempedoic acid and 10 mg ezetimibe) orally once daily with or without food, swallowed whole; if a dose is missed take it as soon as possible and do not double the next dose; analyse lipid levels 8 to 12 weeks after initiation; administer at least 2 hours before or at least 4 hours after bile acid sequestrants (FDA NEXLETOL label, sections 2.1 and 16; FDA NEXLIZET label, sections 2.1, 2.2 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, NEXLETOL (bempedoic acid) tablets, Esperion Therapeutics, sections 12.1 (Mechanism of Action) and 12.3 (Transporter-mediated Drug Interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, NEXLETOL, section 1 (Indications and Usage); FDA label, NEXLIZET (bempedoic acid and ezetimibe), section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fa2108c-0300-47b8-9d34-f762af7c93c6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, NEXLETOL, section 4; FDA label, NEXLIZET, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, NEXLETOL, sections 5.1, 5.2, 6, 6.1, 6.2 and Tables 1 and 2; FDA label, NEXLIZET, sections 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, NEXLETOL, sections 2 and 2.1 and section 8.5; FDA label, NEXLIZET, sections 2, 2.1 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fa2108c-0300-47b8-9d34-f762af7c93c6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, NEXLETOL, sections 7 (Table 3) and 12.3 (Drug Interaction Studies); FDA label, NEXLIZET, section 7 (Table 4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, NEXLETOL, sections 2.1, 5.1, 5.2 and 6.1; FDA label, NEXLIZET, sections 2.1 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, NEXLETOL, section 17 (Patient Counseling Information) and Patient Information; FDA label, NEXLIZET, sections 2.1, 2.2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, NEXLETOL, sections 5.1 and 5.2; FDA label, NEXLIZET, sections 5.1, 5.2, 6.1, 6.2 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, NEXLETOL, sections 2.1 and 8.1 and 8.7; FDA label, NEXLIZET, sections 2.1, 2.2, 7 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fa2108c-0300-47b8-9d34-f762af7c93c6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, NEXLETOL, sections 4, 5.1, 5.2, 6.1 and 6.2; FDA label, NEXLIZET, sections 4, 6.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, NEXLETOL, sections 2.1 and 12.3 (Effect of Food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, NEXLETOL, section 8.1; FDA label, NEXLIZET, section 8.1 (no pregnancy category stated in either label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, NEXLETOL, section 8.2; FDA label, NEXLIZET, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, NEXLETOL, section 10; FDA label, NEXLIZET, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, NEXLETOL, section 12.3 (Absorption, Distribution, Elimination, Metabolism, Excretion and Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, NEXLETOL, sections 2.1, 5.1, 5.2, 6.1, 7, 14.1 (Table 4) and 14.2; FDA label, NEXLIZET, section 14.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, NEXLETOL, sections 3 and 16 (How Supplied); FDA label, NEXLIZET, sections 3 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fa2108c-0300-47b8-9d34-f762af7c93c6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, NEXLETOL - no Boxed Warning appears in the prescribing information; FDA label, NEXLIZET - likewise no Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, NEXLETOL, section 8.7; FDA label, NEXLIZET, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, NEXLETOL, sections 2, 2.1 and 16 (Storage and Handling); FDA label, NEXLIZET, sections 2, 2.1, 2.2 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients are not established)",
+    "renal_dose_adjustment (neither the NEXLETOL nor the NEXLIZET label contains a renal impairment section or a renal dose adjustment recommendation; the label states only that no clinically significant pharmacokinetic differences were observed across mild, moderate and severe renal impairment and renal failure)",
+    "pregnancy_category (neither the NEXLETOL nor the NEXLIZET label assigns a pregnancy category; both use the Pregnancy and Lactation Labeling Rule risk-summary format in section 8.1)"
+  ],
+  "notes": "The table stores this agent as 'Bempedoic Acid' with brand_names ['Nexlizet']. Bempedoic acid is available in the United States in two forms that are covered here: NEXLETOL 180 mg (bempedoic acid monotherapy, Esperion) and NEXLIZET 180 mg/10 mg (bempedoic acid plus ezetimibe fixed combination, Esperion), which is the product the database row points to. The two labels differ in important ways, so where they differ both are stated with their own source: contraindications (NEXLETOL excludes only bempedoic acid hypersensitivity, NEXLIZET excludes ezetimibe hypersensitivity too), hepatic impairment (NEXLETOL needs no adjustment in Child-Pugh A or B, NEXLIZET is not recommended in Child-Pugh B or C because of increased ezetimibe exposure), interactions (NEXLIZET adds cyclosporine and bile acid sequestrants and restricts fibrates to fenofibrate because of cholelithiasis) and postmarketing reactions. Neither product carries a boxed warning, so black_box_warnings is an empty array. A standing caveat for reviewers: the FDA label states that the safety and effectiveness of bempedoic acid have not been established in pediatric patients and that treatment of hypercholesterolemia is generally not necessary during pregnancy."
+}

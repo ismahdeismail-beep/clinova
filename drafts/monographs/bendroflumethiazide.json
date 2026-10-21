@@ -1,0 +1,224 @@
+{
+  "name": "Bendroflumethiazide",
+  "existing_id": "693cb632-2c3a-43ee-9de4-a8f2838a3e27",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bendroflumethiazide is a thiazide diuretic-antihypertensive. Its mechanism of action results in an interference with the renal tubular mechanism of electrolyte reabsorption; at maximal therapeutic dosage all thiazides are approximately equal in their diuretic potency. Thiazides increase the excretion of sodium and chloride in approximately equivalent amounts, and this natriuresis causes a secondary loss of potassium and bicarbonate. The mechanism of the antihypertensive effect of thiazides is unknown, and thiazides do not affect normal blood pressure. Bendroflumethiazide also decreases renal tubular excretion of uric acid and calcium and increases urinary excretion of magnesium, which underlies its hyperuricaemic, hypercalcaemic and hypomagnesaemic liabilities (FDA label, Nadolol and Bendroflumethiazide tablets, sections DESCRIPTION, CLINICAL PHARMACOLOGY and PRECAUTIONS - Bendroflumethiazide).",
+    "indications": [
+      "Treatment of hypertension, to lower blood pressure (the thiazide component of nadolol and bendroflumethiazide tablets; the US label indication is hypertension, and lowering blood pressure reduces the risk of fatal and non-fatal cardiovascular events, primarily strokes and myocardial infarctions) (FDA label, Nadolol and Bendroflumethiazide tablets, section INDICATIONS)",
+      "The US label notes there are no controlled trials demonstrating risk reduction with nadolol and bendroflumethiazide tablets (FDA label, Nadolol and Bendroflumethiazide tablets, section INDICATIONS)"
+    ],
+    "contraindications": [
+      "Bendroflumethiazide is contraindicated in anuria (FDA label, Nadolol and Bendroflumethiazide tablets, section CONTRAINDICATIONS)",
+      "Bendroflumethiazide is contraindicated in patients who have previously demonstrated hypersensitivity to bendroflumethiazide or other sulfonamide-derived drugs (FDA label, Nadolol and Bendroflumethiazide tablets, section CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Gastrointestinal: nausea, vomiting, cramping and anorexia are not uncommon; diarrhea, constipation, gastric irritation, abdominal bloating, jaundice (intrahepatic cholestatic jaundice), hepatitis and sialadenitis occasionally occur; pancreatitis has been reported (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Central nervous system: dizziness, vertigo, paraesthesia, headache and xanthopsia occasionally occur (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Hematologic: leukopenia, agranulocytosis, thrombocytopenia, haemolytic anaemia and aplastic anaemia have been reported (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Dermatologic and hypersensitivity: purpura, exfoliative dermatitis, pruritus, ecchymosis, urticaria, necrotizing angiitis (vasculitis, cutaneous vasculitis), respiratory distress including pneumonitis, fever and anaphylactic reactions occasionally occur; photosensitivity and rash have been reported (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Cardiovascular: orthostatic hypotension may occur and may be potentiated by coadministration with certain other drugs such as alcohol, barbiturates, narcotics and other antihypertensive medications (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Other: muscle spasm, weakness or restlessness is not uncommon; hyperglycaemia, glycosuria, metabolic acidosis in diabetic patients, hyperuricaemia, allergic glomerulonephritis and transient blurred vision occasionally occur (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Hypercalcaemia, frequency not known: added to the product information of bendroflumethiazide and bendroflumethiazide/potassium chloride containing products by the EMA CMDh following confirmation of the signal, because decreased tubular calcium excretion can cause a slight increase in serum calcium (EMA CMDh scientific conclusions and grounds for the variation, PSUSA/00010583/201801, Annex II - Summary of Product Characteristics, section 4.8 and Package Leaflet section 4)"
+    ],
+    "dosage": {
+      "adult": "Bendroflumethiazide is usually given at a dose of 5 mg daily. In the US combination product (nadolol and bendroflumethiazide tablets), the initial dose may be the 40 mg/5 mg tablet once daily, and if the antihypertensive response is not satisfactory the dose may be increased by administering the 80 mg/5 mg tablet once daily. Dosage must be individualised, and the tablets may be administered without regard to meals (FDA label, Nadolol and Bendroflumethiazide tablets, section DOSAGE AND ADMINISTRATION).",
+      "geriatric": "Clinical studies of nadolol and bendroflumethiazide tablets did not include sufficient numbers of subjects aged 65 or over to determine whether they respond differently from younger subjects; other reported clinical experience has not identified differences in responses between the elderly and younger patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy (FDA label, section PRECAUTIONS - Geriatric Use).",
+      "paediatric": "Safety and effectiveness in pediatric patients have not been established (FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Lithium salts: bendroflumethiazide may enhance lithium toxicity due to reduced renal clearance; avoid concurrent use, and if lithium must be prescribed monitor serum lithium levels and adjust the lithium dosage accordingly (FDA label, section PRECAUTIONS - Drug Interactions and section WARNINGS)",
+      "Cardiac glycosides: enhanced possibility of digitalis toxicity associated with hypokalaemia; monitor potassium levels and use potassium replacement if necessary (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Amphotericin B, corticosteroids or corticotropin (ACTH): may intensify electrolyte imbalance, particularly hypokalaemia; monitor potassium levels and use potassium replacements if necessary (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Cholestyramine resin and colestipol HCl: may delay or decrease absorption of bendroflumethiazide; sulfonamide diuretics should be taken at least one hour before or four to six hours after these medications (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Diazoxide: enhanced hyperglycaemic, hyperuricaemic and antihypertensive effects; monitor blood glucose and serum uric acid levels (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Non-steroidal anti-inflammatory drugs: in some patients an NSAID can reduce the diuretic, natriuretic and antihypertensive effect of loop, potassium-sparing or thiazide diuretics; observe the patient closely to determine if the desired effect of the diuretic is obtained (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Oral anticoagulants: dosage adjustments of anticoagulant medication may be necessary since bendroflumethiazide may decrease their effects (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Antigout medications: dosage adjustments may be necessary since bendroflumethiazide may raise the level of blood uric acid (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Other antihypertensive medications (e.g. ganglionic or peripheral adrenergic blocking agents): dosage adjustments may be necessary since bendroflumethiazide may potentiate their effects (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Antidiabetic drugs (oral agents and insulin): since thiazides may elevate blood glucose levels, dosage adjustments of antidiabetic agents may be necessary (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Calcium salts: increased serum calcium levels due to decreased excretion may occur; if calcium must be prescribed, monitor serum calcium levels and adjust calcium dosage accordingly (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Alcohol, barbiturates or narcotics: potentiation of orthostatic hypotension may occur (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Monoamine oxidase inhibitors: dosage adjustments of one or both agents may be necessary since hypotensive effects are enhanced (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Nondepolarizing muscle relaxants, preanesthetics and anesthetics used in surgery (e.g. tubocurarine chloride and gallamine triethiodide): effects of these agents may be potentiated and dosage adjustments may be required; monitor and correct any fluid and electrolyte imbalances prior to surgery if feasible (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Methenamine: possible decreased effectiveness due to alkalinisation of the urine (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Pressor amines (e.g. norepinephrine): decreased arterial responsiveness; use caution in patients taking both medications who undergo surgery, administer preanesthetic and anesthetic agents in reduced dosage, and if possible discontinue bendroflumethiazide one week prior to surgery (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Probenecid or sulfinpyrazone: increased dosage of these agents may be necessary since bendroflumethiazide may have hyperuricaemic effects (FDA label, section PRECAUTIONS - Drug Interactions)",
+      "Drug/laboratory test interactions: bendroflumethiazide may produce false-negative results with the phentolamine and tyramine tests, may interfere with the phenosulfonphthalein test due to decreased excretion, and may cause diagnostic interference of serum electrolyte levels, blood and urine glucose levels, and a decrease in serum PBI levels without signs of thyroid disturbance (FDA label, section PRECAUTIONS - Drug/Laboratory Test Interactions)"
+    ],
+    "monitoring": "Perform periodic determination of serum electrolytes to detect possible electrolyte imbalance at appropriate intervals, and observe all patients receiving thiazide therapy for clinical signs of fluid or electrolyte imbalance, namely hyponatraemia, hypochloremic alkalosis and hypokalaemia. Serum and urine electrolyte determinations are particularly important when the patient is vomiting excessively or receiving parenteral fluids (FDA label, section PRECAUTIONS - General, Bendroflumethiazide). Monitor for signs and symptoms of hyperuricaemia and of previously latent diabetes mellitus, which may become manifest during thiazide administration (FDA label, section PRECAUTIONS - General). If progressive renal impairment becomes evident, as indicated by a rising non-protein nitrogen or blood urea nitrogen, a careful reappraisal of therapy is necessary with consideration given to withholding or discontinuing diuretic therapy (FDA label, section PRECAUTIONS - General). Discontinue thiazides before carrying out tests for parathyroid function, because thiazides may decrease serum PBI levels without signs of thyroid disturbance and marked hypercalcaemia may be evidence of hidden hyperparathyroidism (FDA label, section PRECAUTIONS - General; EMA CMDh PSUSA/00010583/201801, Annex II, section 4.4). Serum electrolyte levels should be regularly monitored (FDA label, section PRECAUTIONS - Laboratory Tests).",
+    "patient_counselling": "Inform patients of the symptoms that would suggest potential adverse effects and tell them to report them promptly: warning signs or symptoms of fluid and electrolyte imbalance may include dryness of the mouth, thirst, weakness, lethargy, drowsiness, restlessness, muscle pains or cramps, muscular fatigue, hypotension, oliguria, tachycardia and gastrointestinal disturbances such as nausea and vomiting. Advise patients who are taking or plan to take lithium, digoxin, corticosteroids, ACTH, amphotericin B, NSAIDs, calcium salts, anticoagulants, antigout medicines, antidiabetic agents, other antihypertensives, cholestyramine or colestipol, methenamine or pressor amines to tell their prescriber, because bendroflumethiazide interacts with each of these. Advise patients that orthostatic hypotension may occur, particularly on standing, and that this may be potentiated by alcohol, barbiturates and narcotics (FDA label, section PRECAUTIONS - Information for Patients, Drug Interactions and ADVERSE REACTIONS - Bendroflumethiazide). Note that the US label also directs patients to be warned against interruption or discontinuation of therapy without the physician's advice; that instruction in the combination label relates to the nadolol component (FDA label, section PRECAUTIONS - Information for Patients).",
+    "warnings": [
+      "Renal: thiazides should be used with caution in severe renal disease; in patients with renal disease thiazides may precipitate azotaemia, and cumulative effects of the drug may develop in patients with impaired renal function (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Hepatic: thiazides should be used with caution in patients with impaired hepatic function or progressive liver disease, since minor alterations of fluid and electrolyte balance may precipitate hepatic coma (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Sensitivity reactions may occur in patients with or without a history of allergy or bronchial asthma (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "The possibility of exacerbation or activation of systemic lupus erythematosus has been reported (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Lithium: lithium generally should not be given with diuretics, because diuretic agents reduce the renal clearance of lithium and add a high risk of lithium toxicity (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Hypercalcaemia and parathyroid function: thiazides may decrease urinary calcium excretion and may cause intermittent and slight elevation of serum calcium; marked hypercalcaemia may be evidence of hidden hyperparathyroidism; thiazides should be discontinued before carrying out tests for parathyroid function (EMA CMDh scientific conclusions and grounds for the variation, PSUSA/00010583/201801, Annex II - Summary of Product Characteristics, section 4.4)"
+    ],
+    "precautions": [
+      "Periodic determination of serum electrolytes to detect possible electrolyte imbalance should be performed at appropriate intervals, and all patients receiving thiazide therapy should be observed for clinical signs of fluid or electrolyte imbalance: hyponatraemia, hypochloremic alkalosis and hypokalaemia (FDA label, section PRECAUTIONS - General)",
+      "Hypokalaemia may develop, especially with brisk diuresis or when severe cirrhosis is present, and interference with adequate oral electrolyte intake will also contribute to it; hypokalaemia can sensitise or exaggerate the response of the heart to the toxic effects of digitalis, so concurrent administration of a potassium-sparing diuretic or potassium supplements may be indicated (FDA label, section PRECAUTIONS - General)",
+      "Any chloride deficit is generally mild and usually does not require specific treatment except under extraordinary circumstances such as liver disease or renal disease; dilutional hyponatraemia may occur in edematous patients in hot weather, when the appropriate therapy is water restriction rather than administration of salt, except in rare instances when the hyponatraemia is life-threatening; in actual salt depletion, appropriate replacement is the therapy of choice (FDA label, section PRECAUTIONS - General)",
+      "Hyperuricaemia may occur or frank gout may be precipitated in certain patients receiving thiazide therapy, and latent diabetes mellitus may become manifest during thiazide administration (FDA label, section PRECAUTIONS - General)",
+      "The antihypertensive effect of thiazide diuretics may be enhanced in the postsympathectomy patient (FDA label, section PRECAUTIONS - General)",
+      "If progressive renal impairment becomes evident, as indicated by a rising non-protein nitrogen or blood urea nitrogen, a careful reappraisal of therapy is necessary with consideration given to withholding or discontinuing diuretic therapy (FDA label, section PRECAUTIONS - General)",
+      "Thiazides may decrease serum PBI levels without signs of thyroid disturbance, and they decrease calcium excretion; pathological changes in the parathyroid gland with hypercalcaemia and hypophosphataemia have been observed in a few patients on prolonged thiazide therapy, although the common complications of hyperparathyroidism such as renal lithiasis, bone resorption and peptic ulceration have not been seen; thiazides should be discontinued before carrying out tests for parathyroid function (FDA label, section PRECAUTIONS - General; EMA CMDh PSUSA/00010583/201801, Annex II, section 4.4)",
+      "Thiazides increase the urinary excretion of magnesium, which may result in hypomagnesaemia (FDA label, section PRECAUTIONS - General)",
+      "Whenever adverse reactions are moderate or severe, thiazide dosage should be reduced or therapy withdrawn (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypokalaemia, with sensitisation of the heart to the toxic effects of digitalis (FDA label, section PRECAUTIONS - General)",
+      "Hyponatraemia and hypochloremic alkalosis (FDA label, section PRECAUTIONS - General)",
+      "Azotaemia precipitated in patients with severe renal disease, and cumulative effects of the drug in patients with impaired renal function (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Hepatic coma precipitated by minor alterations of fluid and electrolyte balance in patients with impaired hepatic function or progressive liver disease (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Lithium toxicity from reduced renal lithium clearance (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Anaphylactic and other severe hypersensitivity reactions, including necrotizing angiitis, exfoliative dermatitis and pneumonitis (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Blood dyscrasias: leukopenia, agranulocytosis, thrombocytopenia, haemolytic anaemia and aplastic anaemia (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)",
+      "Intrahepatic cholestatic jaundice, hepatitis and pancreatitis (FDA label, section ADVERSE REACTIONS - Bendroflumethiazide)"
+    ],
+    "food_interactions": [
+      "Alcohol: potentiation of orthostatic hypotension may occur when alcohol is taken with bendroflumethiazide (FDA label, section PRECAUTIONS - Drug Interactions, Bendroflumethiazide)"
+    ],
+    "pregnancy_category": "C (bendroflumethiazide, per the FDA label's Pregnancy - Teratogenic Effects section; this is the legacy FDA letter category and is obsolete under the Pregnancy and Lactation Labeling Rule)",
+    "pregnancy_guidance": "Animal reproduction studies have not been conducted with bendroflumethiazide; it is not known whether the drug can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity, and bendroflumethiazide should be given to a pregnant woman only if clearly needed. Thiazides cross the placental barrier and appear in cord blood; the use of thiazides in pregnant women requires that the anticipated benefit be weighed against possible hazards to the fetus. These hazards include fetal or neonatal jaundice, thrombocytopenia, and possibly other adverse reactions which have occurred in the adult (FDA label, Nadolol and Bendroflumethiazide tablets, sections PRECAUTIONS - Pregnancy-Teratogenic Effects and Pregnancy-Nonteratogenic Effects).",
+    "lactation_guidance": "Both nadolol and bendroflumethiazide are excreted in human milk. Because of the potential for serious adverse reactions in nursing infants from both drugs, a decision should be made whether to discontinue nursing or to discontinue therapy, taking into account the importance of nadolol and bendroflumethiazide tablets to the mother (FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Nursing Mothers).",
+    "overdose": "In addition to the expected diuresis, overdosage of bendroflumethiazide may produce varying degrees of lethargy which may progress to coma with minimal depression of respiration and cardiovascular function and without significant serum electrolyte changes or dehydration. The mechanism of thiazide-induced CNS depression is unknown. Gastrointestinal irritation may occur. A transitory increase in BUN has been reported, and serum electrolyte changes may occur, especially in patients with impaired renal function. Treatment is supportive: in addition to gastric lavage, institute supportive measures as required to maintain hydration, electrolyte balance, respiration, and cardiovascular and renal function (FDA label, Nadolol and Bendroflumethiazide tablets, section OVERDOSAGE).",
+    "pharmacokinetics": "The US label describes bendroflumethiazide pharmacodynamics rather than a full pharmacokinetic profile: onset of action of thiazides occurs in two hours and the peak effect at about four hours; duration of action persists for approximately six to 12 hours; thiazides are eliminated rapidly by the kidney. The mechanism of action results in an interference with the renal tubular mechanism of electrolyte reabsorption; thiazides increase excretion of sodium and chloride in approximately equivalent amounts, and natriuresis causes a secondary loss of potassium and bicarbonate. Thiazides also increase urinary excretion of magnesium, decrease excretion of calcium, and decrease serum PBI levels (FDA label, Nadolol and Bendroflumethiazide tablets, sections CLINICAL PHARMACOLOGY - Bendroflumethiazide and PRECAUTIONS - General). The label does not provide dedicated bendroflumethiazide plasma concentration, protein binding or half-life data, so no such figures are stated here.",
+    "clinical_pearls": [
+      "Bendroflumethiazide is a thiazide that is easy to underestimate: it is not merely a volume-reducing diuretic, it raises blood uric acid (hyperuricaemia or frank gout may be precipitated), may unmask latent diabetes mellitus, reduces calcium excretion (hypercalcaemia and hidden hyperparathyroidism), increases magnesium excretion (hypomagnesaemia) and lowers serum PBI without thyroid disturbance (FDA label, sections PRECAUTIONS - General and WARNINGS - Bendroflumethiazide)",
+      "Thiazides must be stopped before parathyroid function tests are performed, because the drug lowers serum PBI and can cause a slight rise in serum calcium that masks a primary hyperparathyroidism signal; this warning was formalised for bendroflumethiazide products across the EU by the EMA CMDh (EMA CMDh PSUSA/00010583/201801, Annex II, sections 4.4 and 4.8)",
+      "Hypercalcaemia is now a listed adverse reaction of bendroflumethiazide with the frequency 'not known' in the product information of bendroflumethiazide and bendroflumethiazide/potassium chloride products across the EU (EMA CMDh PSUSA/00010583/201801, Annex II, section 4.8)",
+      "Thiazides are about 30% more bioavailable in the nadolol/bendroflumethiazide combination tablet than in 5 mg bendroflumethiazide tablets, so conversion from a 5 mg bendroflumethiazide tablet to the combination product represents a 30% increase in the bendroflumethiazide dose (FDA label, section DOSAGE AND ADMINISTRATION)",
+      "Lithium is the single most important interaction to remember: diuretics reduce renal lithium clearance and add a high risk of lithium toxicity, so the label says lithium generally should not be given with diuretics (FDA label, section WARNINGS - Bendroflumethiazide)",
+      "Hypokalaemia is the most frequent metabolic problem and it matters most in three groups: patients on digitalis (where it sensitises the heart to digitalis toxicity), patients on corticosteroids, ACTH or amphotericin B (where it compounds potassium loss) and patients with severe cirrhosis (where brisk diuresis worsens it) (FDA label, section PRECAUTIONS - General)",
+      "Thiazides are now rarely used alone for hypertension but remain valuable as add-on therapy and in combination products; in this monograph the drug is described only from the bendroflumethiazide-specific content of the US label, and nadolol-specific content (cardiac failure, bronchospasm, diabetes and hypoglycaemia masking, thyrotoxicosis and beta-blocker withdrawal) has been deliberately excluded (FDA label, Nadolol and Bendroflumethiazide tablets, sections WARNINGS and PRECAUTIONS)"
+    ],
+    "brand_names": [
+      "Salures",
+      "Bendroflumethiazide Tablets BP",
+      "Bendroflumethiazide 2.5 mg Tablets (Sandoz)",
+      "Centyl K (bendroflumethiazide with potassium chloride)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Bendroflumethiazide is usually given at a dose of 5 mg daily; in the US combination product the initial dose may be the 40 mg/5 mg tablet once daily and the dose may be increased by administering the 80 mg/5 mg tablet once daily if the antihypertensive response is not satisfactory. Dosage must be individualised and the tablets may be administered without regard to meals. When another antihypertensive agent is needed it may be added gradually beginning with 50% of the usual recommended starting dose to avoid an excessive fall in blood pressure. Store at 20 to 25 degrees C (68 to 77 degrees F) and dispense in a tightly closed, light-resistant container with a child-resistant closure (FDA label, Nadolol and Bendroflumethiazide tablets, sections DOSAGE AND ADMINISTRATION and HOW SUPPLIED). Note that the dose interval table in the US label (creatinine clearance above 50 mL/min every 24 hours, 31 to 50 every 24 to 36 hours, 10 to 30 every 24 to 48 hours, below 10 every 40 to 60 hours) applies to the nadolol component and is not a bendroflumethiazide renal dose adjustment."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets (IMPAX Generics), sections DESCRIPTION and CLINICAL PHARMACOLOGY - Bendroflumethiazide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section INDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section CONTRAINDICATIONS - Bendroflumethiazide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section ADVERSE REACTIONS - Bendroflumethiazide; EMA CMDh scientific conclusions and grounds for the variation, PSUSA/00010583/201801, Annex II (section 4.8 and Package Leaflet section 4)",
+      "url": "https://www.ema.europa.eu/en/documents/psusa/bendroflumethiazide-bendroflumethiazide/potassium-chloride-cmdh-scientific-conclusions-grounds-variation-amendments-product-information_en.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section DOSAGE AND ADMINISTRATION; section PRECAUTIONS - Pediatric Use and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Drug Interactions and Drug/Laboratory Test Interactions (Bendroflumethiazide); section WARNINGS - Bendroflumethiazide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - General (Bendroflumethiazide) and Laboratory Tests; EMA CMDh PSUSA/00010583/201801, Annex II, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Information for Patients, Drug Interactions (Bendroflumethiazide) and ADVERSE REACTIONS - Bendroflumethiazide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section WARNINGS - Bendroflumethiazide; EMA CMDh scientific conclusions and grounds for the variation, PSUSA/00010583/201801, Annex II, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - General (Bendroflumethiazide); section ADVERSE REACTIONS - Bendroflumethiazide; EMA CMDh PSUSA/00010583/201801, Annex II, section 4.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section ADVERSE REACTIONS - Bendroflumethiazide; section PRECAUTIONS - General; section WARNINGS - Bendroflumethiazide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Drug Interactions (Alcohol, barbiturates, or narcotics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Pregnancy-Teratogenic Effects (Bendroflumethiazide: Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, sections PRECAUTIONS - Pregnancy-Teratogenic Effects and Pregnancy-Nonteratogenic Effects",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section PRECAUTIONS - Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, section CLINICAL PHARMACOLOGY - Bendroflumethiazide and section PRECAUTIONS - General",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, sections CLINICAL PHARMACOLOGY, WARNINGS, PRECAUTIONS and DOSAGE AND ADMINISTRATION; EMA CMDh PSUSA/00010583/201801, Annex II",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "EMA, List of nationally authorised medicinal products, PSUSA/00010583/202401 (active substances: bendroflumethiazide; bendroflumethiazide/potassium chloride) - product names Salures, BENDROFLUMETHIAZIDE TABLETS BP, Bendroflumethiazide 2.5mg Tablets and Centyl K",
+      "url": "https://www.ema.europa.eu/en/documents/psusa/bendroflumethiazide-bendroflumethiazide-potassium-chloride-list-nationally-authorised-medicinal-products-psusa-00010583-202401_en.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets - no Boxed Warning appears in the prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Nadolol and Bendroflumethiazide tablets, sections DOSAGE AND ADMINISTRATION and HOW SUPPLIED (including Storage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d226ea-1624-47ee-82bf-e9660b75029f"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in pediatric patients are not established)",
+    "renal_dose_adjustment (no bendroflumethiazide-specific renal dose adjustment is specified in the US label; the label's creatinine-clearance dose interval table applies to the nadolol component, and for bendroflumethiazide the label only states that thiazides should be used with caution in severe renal disease and may precipitate azotaemia)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified for bendroflumethiazide in any source; the label only warns that thiazides should be used with caution in patients with impaired hepatic function or progressive liver disease because minor alterations of fluid and electrolyte balance may precipitate hepatic coma)"
+  ],
+  "notes": "Name note: 'Bendroflumethiazide' is the INN/BAN and the US generic name is the same molecule (no alias needed for the active substance); the only US-marketed products are the fixed-dose combination tablets with nadolol (Nadolol and Bendroflumethiazide 40 mg/5 mg and 80 mg/5 mg, IMPAX Generics), so all US label content in this draft is taken from that DailyMed SPL and restricted to the bendroflumethiazide-specific subsections (CONTRAINDICATIONS, WARNINGS, PRECAUTIONS, ADVERSE REACTIONS, OVERDOSAGE, DOSAGE AND ADMINISTRATION) - nadolol-specific content such as cardiac failure, bronchospasm, masking of hypoglycaemia and thyrotoxicosis, and beta-blocker withdrawal has been deliberately excluded and is flagged where it would otherwise have been misattributed. EU-level source: EMA CMDh scientific conclusions and grounds for the variation, PSUSA/00010583/201801 (adopted September 2018, implemented 2 January 2019), which adds hypercalcaemia (frequency 'not known') to section 4.8 and the parathyroid-function-test warning to section 4.8/4.4 of the product information of bendroflumethiazide and bendroflumethiazide/potassium chloride products; brand names are taken from the EMA list of nationally authorised medicinal products for PSUSA/00010583/202401. Negative findings verified during sourcing, for the reviewer's information: bendroflumethiazide is not listed in the WHO Model List of Essential Medicines (23rd List, 2023), which lists hydrochlorothiazide with chlortalidone and indapamide as therapeutic alternatives in section 16 Diuretics, and it is not listed in the Kenya Essential Medicines List 2023 (Ministry of Health, Kenya), which lists hydrochlorothiazide, chlorthalidone and indapamide under section 14.3.5 Thiazide and Thiazide-like Diuretics. Pregnancy category C is reported because the US label still states it; the letter category is obsolete under the Pregnancy and Lactation Labeling Rule."
+}

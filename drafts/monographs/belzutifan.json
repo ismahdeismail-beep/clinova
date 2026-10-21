@@ -1,0 +1,209 @@
+{
+  "name": "Belzutifan",
+  "existing_id": "fd2f595b-219f-4773-a7d8-5007f938b747",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Belzutifan is an inhibitor of hypoxia-inducible factor 2 alpha (HIF-2alpha). HIF-2alpha is a transcription factor that plays a role in oxygen sensing by regulating genes that promote adaptation to hypoxia. Under normal oxygen levels HIF-2alpha is targeted for ubiquitin-proteasomal degradation by VHL protein; lack of functional VHL protein results in stabilisation and accumulation of HIF-2alpha, which translocates into the nucleus and interacts with HIF-1beta to form a transcriptional complex inducing genes associated with cellular proliferation, angiogenesis and tumour growth. Belzutifan binds to HIF-2alpha and, in conditions of hypoxia or impairment of VHL protein function, blocks the HIF-2alpha-HIF-1beta interaction, leading to reduced transcription and expression of HIF-2alpha target genes (FDA WELIREG label, sections 12.1 and 12.2).",
+    "indications": [
+      "Von Hippel-Lindau disease: treatment of adult patients with von Hippel-Lindau (VHL) disease who require therapy for associated renal cell carcinoma (RCC), central nervous system (CNS) hemangioblastomas, or pancreatic neuroendocrine tumours (pNET), not requiring immediate surgery (FDA WELIREG label, section 1.1)",
+      "Renal cell carcinoma with a clear cell component (ccRCC): in combination with pembrolizumab or pembrolizumab and berahyaluronidase alfa-pmph, for the adjuvant treatment of adult patients with ccRCC at intermediate-high or high risk of recurrence following nephrectomy, or following nephrectomy and resection of metastatic lesions (FDA WELIREG label, section 1.2)",
+      "Renal cell carcinoma with a clear cell component (ccRCC): in combination with lenvatinib for the treatment of adult patients with advanced ccRCC following a programmed death receptor-1 (PD-1) or programmed death-ligand 1 (PD-L1) inhibitor (FDA WELIREG label, section 1.2)",
+      "Renal cell carcinoma with a clear cell component (ccRCC): as monotherapy, for the treatment of adult patients with advanced ccRCC following a PD-1 or PD-L1 inhibitor and a vascular endothelial growth factor tyrosine kinase inhibitor (VEGF-TKI) (FDA WELIREG label, section 1.2)",
+      "Pheochromocytoma or paraganglioma: treatment of adult and pediatric patients 12 years and older with locally advanced, unresectable, or metastatic pheochromocytoma or paraganglioma (PPGL) (FDA WELIREG label, section 1.3)"
+    ],
+    "contraindications": [
+      "WELIREG: none. The FDA labelling states 'Contraindications: None' (FDA WELIREG label, section 4)."
+    ],
+    "side_effects": [
+      "Anaemia: decreased haemoglobin in 93% of patients with VHL disease (LITESPARK-004, 7% Grade 3), 88% in advanced ccRCC monotherapy (LITESPARK-005, 29% Grade 3), 95% with pembrolizumab (LITESPARK-022, 11% Grade 3 or higher), 87% with lenvatinib (LITESPARK-011, 20% Grade 3 or transfusion required) and 96% in PPGL (LITESPARK-015, 22% Grade 3) (FDA WELIREG label, sections 5.1 and 6.1)",
+      "Hypoxia: 1.6% in VHL disease, 15% in ccRCC monotherapy (10% Grade 3), 7% with pembrolizumab (5% Grade 3 or higher), 16% with lenvatinib (12% Grade 3-4) and 13% in PPGL (10% Grade 3); between 47% and 69% of affected patients required oxygen therapy (FDA WELIREG label, sections 5.2 and 6.1)",
+      "Cardiac dysfunction with lenvatinib: Grade 3 or higher cardiac dysfunction adverse events in 6% of patients in LITESPARK-011, with median time to onset of 26 weeks; an absolute decrease in LVEF of more than 20% with or without symptoms in 6% of patients (FDA WELIREG label, section 5.3)",
+      "VHL disease (LITESPARK-004, n=61): fatigue 64%, headache 39%, dizziness 38%, nausea 31%, constipation 13%, abdominal pain 13%, visual impairment 21% (including central retinal vein occlusion and retinal detachment), upper respiratory tract infection 21%, dyspnoea 20%, arthralgia 18%, myalgia 16%, hypertension 13%, weight increased 12% (FDA WELIREG label, section 6.1 and Table 4)",
+      "Advanced ccRCC monotherapy (LITESPARK-005, n=372): fatigue 43%, musculoskeletal pain 34%, oedema 20%, nausea 17%, dyspnoea 16%, constipation 15%, vomiting 11%, diarrhoea 11%, abdominal pain 10% (FDA WELIREG label, section 6.1 and Table 10)",
+      "PPGL (LITESPARK-015, n=72): anaemia 96%, fatigue 56%, musculoskeletal pain 56%, dyspnoea 33%, headache 29%, dizziness 26%, nausea 25%, oedema 24%, constipation 24%, cough 15%, diarrhoea 15%, hypoxia 13%, muscle spasms 13%, muscle weakness 13%, peripheral neuropathy 13%, abdominal pain 13% (FDA WELIREG label, section 6.1 and Table 12)",
+      "With pembrolizumab (ccRCC): most common adverse reactions (at least 25%) were decreased haemoglobin, increased ALT, fatigue, increased AST, decreased lymphocytes and increased alkaline phosphatase (FDA WELIREG label, section 6)",
+      "With lenvatinib (advanced ccRCC): most common adverse reactions (at least 25%) were decreased haemoglobin, fatigue, increased AST, hypertension, increased ALT, musculoskeletal pain, diarrhoea, decreased lymphocytes, decreased sodium, increased creatinine, nausea, hypothyroidism, decreased appetite, decreased platelets, increased potassium, increased lipase, proteinuria, decreased magnesium, decreased calcium, increased activated partial thromboplastin time, rash, vomiting, decreased weight, constipation, abdominal pain and stomatitis (FDA WELIREG label, section 6)",
+      "Monotherapy in advanced ccRCC: most common adverse reactions (at least 25%) were decreased haemoglobin, fatigue, musculoskeletal pain, increased creatinine, decreased lymphocytes, increased ALT, decreased sodium, increased potassium and increased AST (FDA WELIREG label, section 6)"
+    ],
+    "dosage": {
+      "adult": "120 mg orally once daily, with or without food, at the same time each day, for all indications. Duration of therapy: until disease progression or unacceptable toxicity for von Hippel-Lindau disease, advanced ccRCC and PPGL; until disease recurrence or unacceptable toxicity, or up to 54 weeks, for adjuvant treatment of ccRCC in combination with pembrolizumab (or pembrolizumab and berahyaluronidase alfa-pmph). Tablets should be swallowed whole and not chewed, crushed or split. If a dose is missed it can be taken as soon as possible on the same day, then the regular daily schedule resumes the next day without doubling up; if vomiting occurs at any time after taking WELIREG, do not retake the dose (FDA WELIREG label, sections 2.1 and Table 1).",
+      "geriatric": "In LITESPARK-022 (pembrolizumab combination) 30% of 915 patients were 65 years or older and 5% were 75 years or older, with no overall differences in efficacy or safety versus younger patients, although dose interruptions occurred in 57% versus 49% and dose reductions in 39% versus 32%. In LITESPARK-011 (lenvatinib combination) 44% of 370 patients were 65 years or older, with permanent discontinuation, dose interruption and dose reduction in 23%, 73% and 42% respectively versus 12%, 65% and 29% in younger patients, and no overall differences in effectiveness. Clinical trials in VHL and in PPGL did not include sufficient numbers of patients 65 years and older to determine whether they respond differently (FDA WELIREG label, section 8.5).",
+      "paediatric": "Safety and effectiveness have been established in pediatric patients aged 12 years and older for the treatment of locally advanced, unresectable, or metastatic pheochromocytoma or paraganglioma. For pediatric patients 12 years and older: 120 mg orally once daily if body weight is 40 kg or greater, and 80 mg orally once daily if body weight is less than 40 kg. Safety and effectiveness have not been established in pediatric patients with VHL or ccRCC, or in pediatric patients younger than 12 years of age with PPGL (FDA WELIREG label, sections 2.1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "UGT2B17 or CYP2C19 inhibitors: coadministration increases belzutifan exposure, which may increase the risk of adverse reactions; monitor for anemia and hypoxia and reduce the dosage of WELIREG as recommended (FDA WELIREG label, sections 7.1 and 2.2)",
+      "Sensitive CYP3A4 substrates: coadministration with WELIREG decreases concentrations of CYP3A substrates and may reduce their efficacy; avoid coadministration, and if it cannot be avoided increase the sensitive CYP3A4 substrate dosage in accordance with its prescribing information. Coadministration with midazolam decreased midazolam AUC by 40% and Cmax by 34%, and midazolam AUC is predicted to decrease by up to 70% in patients with higher belzutifan concentrations such as dual poor metabolizers (FDA WELIREG label, sections 7.2 and 12.3)",
+      "Hormonal contraceptives: coadministration with hormonal contraceptives may lead to contraceptive failure or an increase in breakthrough bleeding; advise females of reproductive potential to use effective non-hormonal contraception (FDA WELIREG label, sections 7.2, 5.4 and 8.3)",
+      "Combination partners: dosing and administration for pembrolizumab, pembrolizumab with berahyaluronidase alfa-pmph, and lenvatinib are described in their own prescribing information; WELIREG is administered at 120 mg once daily in combination with them (FDA WELIREG label, sections 2.1 and 2.2)"
+    ],
+    "monitoring": "Monitor for anaemia before initiation of, and periodically throughout, treatment with WELIREG; transfuse patients as clinically indicated and withhold, reduce dose or permanently discontinue based on severity (FDA WELIREG label, section 5.1). Monitor oxygen saturation before initiation of, and periodically throughout, treatment; for hypoxia at rest withhold until resolved and resume at a reduced dose or discontinue, and for life-threatening hypoxia permanently discontinue (FDA WELIREG label, section 5.2). When WELIREG is used with lenvatinib, consider assessment of baseline LVEF, monitor for symptoms or signs of heart failure and, if present, assess LVEF, and withhold, reduce dose or permanently discontinue based on severity (FDA WELIREG label, section 5.3). Monitor for increased adverse reactions in patients with moderate or severe hepatic impairment and in patients with severe renal impairment (eGFR 15 to 29 mL/min by MDRD) (FDA WELIREG label, sections 8.6, 8.7 and 8.8). Verify pregnancy status prior to initiating treatment (FDA WELIREG label, section 8.3).",
+    "patient_counselling": "Inform patients that WELIREG can cause severe anaemia that may require blood transfusions and that red blood cell levels will be monitored routinely during treatment; advise patients to contact their healthcare provider for any symptoms suggestive of anaemia. Inform patients that WELIREG can cause severe hypoxia that may require discontinuation, supplemental oxygen or hospitalisation, and that oxygen levels will be monitored routinely; advise immediate contact with the healthcare provider for any symptoms suggestive of hypoxia. Advise patients that WELIREG in combination with lenvatinib can cause cardiac dysfunction and to immediately contact their healthcare provider for any symptoms or signs of cardiac dysfunction. Advise pregnant women and females of reproductive potential of the risk to a fetus and to inform the healthcare provider of a known or suspected pregnancy; advise females of reproductive potential to use effective non-hormonal contraception during treatment and for 1 week after the last dose, because WELIREG can render some hormonal contraceptives ineffective, and advise male patients with female partners of reproductive potential to use effective contraception during treatment and for 1 week after the last dose. Advise females not to breastfeed during treatment with WELIREG and for 1 week after the last dose. Advise male and female patients that WELIREG may impair fertility. Instruct patients to take the dose at the same time each day, that it may be taken with or without food, and that each tablet should be swallowed whole (FDA WELIREG label, section 17).",
+    "warnings": [
+      "WARNING (boxed): Embryo-fetal toxicity. Exposure to WELIREG during pregnancy can cause embryo-fetal harm. Verify pregnancy status prior to the initiation of WELIREG. Advise patients of these risks and the need for effective non-hormonal contraception; WELIREG can render some hormonal contraceptives ineffective (FDA WELIREG label, Boxed Warning and sections 5.4, 7.2, 8.1 and 8.3)",
+      "Anaemia: WELIREG can cause severe anaemia that can require blood transfusion; monitor before initiation and periodically throughout treatment, transfuse as clinically indicated, and withhold, reduce dose or permanently discontinue based on severity (FDA WELIREG label, section 5.1)",
+      "Hypoxia: WELIREG can cause severe hypoxia that may require discontinuation, supplemental oxygen or hospitalisation; monitor oxygen saturation before initiation and periodically throughout treatment, withhold until resolved for hypoxia at rest and resume at a reduced dose or discontinue, and permanently discontinue for life-threatening or recurrent symptomatic hypoxia (FDA WELIREG label, section 5.2)",
+      "Cardiac dysfunction with concomitant use of WELIREG and lenvatinib: serious cardiac dysfunction including heart failure with reduced LVEF and cardiomyopathy can occur; the safety of the combination has not been established in patients with LVEF below 50%; consider baseline echocardiogram or MUGA imaging, monitor for heart failure symptoms, and withhold, reduce dose or permanently discontinue based on severity (FDA WELIREG label, section 5.3)",
+      "Embryo-fetal toxicity: in an animal reproduction study, oral administration of belzutifan to pregnant rats during organogenesis caused embryo-fetal lethality, reduced fetal body weight and fetal skeletal malformations at maternal exposures of 0.2 times or more the human exposure (AUC) at the recommended dose of 120 mg daily (FDA WELIREG label, section 5.4)"
+    ],
+    "precautions": [
+      "Dose reductions are 80 mg orally once daily for the first reduction and 40 mg orally once daily for the second reduction, with permanent discontinuation at the third reduction (FDA WELIREG label, section 2.2)",
+      "Anaemia dosage modification: in the adjuvant ccRCC indication, withhold WELIREG until haemoglobin is 9 g/dL or higher for haemoglobin below 9 g/dL or transfusion indicated; in all other indications withhold until haemoglobin is 8 g/dL or higher for haemoglobin below 8 g/dL or transfusion indicated. For life-threatening anaemia or urgent intervention, withhold until resolved, then resume at a reduced dose once resolved or permanently discontinue (FDA WELIREG label, section 2.2 and Table 2)",
+      "Hypoxia dosage modification: consider withholding WELIREG until resolved for decreased oxygen saturation with exercise (for example pulse oximeter below 88%), then resume at the same or a reduced dose depending on severity; for decreased oxygen saturation at rest (pulse oximeter below 88% or PaO2 of 55 mm Hg or less) or urgent intervention, withhold until resolved and resume at a reduced dose or discontinue; permanently discontinue for life-threatening or recurrent symptomatic hypoxia (FDA WELIREG label, section 2.2 and Table 2)",
+      "Other adverse reactions: withhold WELIREG until resolved to Grade 2 or less for Grade 3 reactions and consider resuming at a reduced dose (reduction by 40 mg); permanently discontinue upon recurrence of Grade 3; permanently discontinue for Grade 4 reactions (FDA WELIREG label, section 2.2 and Table 2)",
+      "With lenvatinib: withhold both WELIREG and lenvatinib for Grade 3 cardiac dysfunction until LVEF improves to baseline or Grade 1, then resume at a reduced dose or permanently discontinue depending on severity and persistence; permanently discontinue both for Grade 4 cardiac dysfunction (FDA WELIREG label, section 2.2 and Table 3)",
+      "The safety of erythropoiesis stimulating agents for the treatment of anaemia in patients with VHL disease treated with WELIREG has not been established (FDA WELIREG label, section 5.1)",
+      "Patients who are dual UGT2B17 and CYP2C19 poor metabolizers have higher belzutifan exposures and should be monitored for increased adverse reactions (FDA WELIREG label, section 8.8)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaemia, which can be severe and require blood transfusion (FDA WELIREG label, section 5.1)",
+      "Hypoxia, which may require discontinuation, supplemental oxygen or hospitalisation (FDA WELIREG label, section 5.2)",
+      "Cardiac dysfunction, including heart failure with reduced LVEF and cardiomyopathy, with concomitant use of WELIREG and lenvatinib (FDA WELIREG label, section 5.3)",
+      "Embryo-fetal toxicity (FDA WELIREG label, Boxed Warning and section 5.4)",
+      "Serious adverse reactions in 15% of patients with VHL disease, including anaemia, hypoxia, anaphylaxis reaction, retinal detachment and central retinal vein occlusion (one patient each) (FDA WELIREG label, section 6.1)"
+    ],
+    "food_interactions": [
+      "WELIREG may be taken with or without food. A high-fat, high-calorie meal (approximately 1000 kcal, 56 g fat) delayed Tmax by approximately 2 hours with no clinically significant effect on Cmax or AUC of belzutifan (FDA WELIREG label, sections 2.1 and 12.3)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Based on findings in animals, WELIREG can cause fetal harm when administered to a pregnant woman. There are no available data on the use of WELIREG in pregnant women to inform the drug-associated risk. In an animal reproduction study, oral administration of belzutifan to pregnant rats during organogenesis caused embryo-fetal lethality, reduced fetal body weight and fetal skeletal malformations at maternal exposures of 0.2 times or more the human exposure (AUC) at the recommended dose of 120 mg daily; embryo-fetal lethality occurred at doses of 60 mg/kg/day or more (approximately 1 time the human exposure), and reduced fetal body weights, fetal rib malformations and reduced skeletal ossification occurred at 6 and 60 mg/kg/day. The background risk of major birth defects and miscarriage for the indicated population is unknown; in the US general population it is 2% to 4% and 15% to 20% respectively. Verify pregnancy status before initiation; advise females of reproductive potential to use effective non-hormonal contraception during treatment and for 1 week after the last dose, and males with female partners of reproductive potential to use effective contraception during treatment and for 1 week after the last dose. When used in combination, advise effective contraception during treatment and for the longest post-treatment duration recommended in the prescribing information of the individual products (FDA WELIREG label, sections 5.4, 8.1 and 8.3). The FDA label does not assign a pregnancy category.",
+    "lactation_guidance": "There are no data on the presence of belzutifan or its metabolites in human milk, or on their effects on the breastfed child or on milk production. Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatment with WELIREG and for 1 week after the last dose. When used in combination, advise patients not to breastfeed during treatment and for the longest post-treatment duration recommended in the prescribing information of the individual products (FDA WELIREG label, section 8.2).",
+    "overdose": "There is no specific treatment for WELIREG overdose. In cases of suspected overdose, withhold WELIREG and institute supportive care. Grade 3 hypoxia occurred at dosages of 120 mg twice a day and Grade 4 thrombocytopenia occurred at dosages of 240 mg once daily (approximately 2 times the recommended dosage) (FDA WELIREG label, section 10).",
+    "pharmacokinetics": "Cmax and AUC of belzutifan increase proportionally over a dose range of 20 mg to 120 mg. The estimated geometric mean steady-state Cmax is 1.5 mcg/mL (CV 45%) and AUC0-24h is 20 mcg.hr/mL (CV 62%), with steady state reached after approximately 3 days. Median Tmax is 1 to 2 hours after administration. The estimated mean volume of distribution is 119 L (CV 28%), plasma protein binding is 45% and the blood-to-plasma concentration ratio is 0.88. The estimated mean clearance is 6 L/hr (CV 58%) and the mean elimination half-life is 14 hours. Belzutifan is primarily metabolised by UGT2B17 and CYP2C19 and to a lesser extent by CYP3A4; following a single oral dose of radiolabeled belzutifan approximately 49.6% was excreted in urine and 51.7% in faeces, primarily as inactive metabolites. No clinically significant differences in pharmacokinetics were observed based on age (15 to 90 years), sex, ethnicity, race or body weight (40 to 166 kg); exposure was 1.5-fold higher in moderate hepatic impairment (Child-Pugh B); severe hepatic impairment has not been studied (FDA WELIREG label, section 12.3).",
+    "clinical_pearls": [
+      "Belzutifan is a first-in-class HIF-2alpha inhibitor: it works downstream of VHL protein loss, which is the genetic defect in von Hippel-Lindau disease, and it also blocks HIF-2 signalling in clear cell RCC and PPGL (FDA WELIREG label, section 12.1)",
+      "Anaemia and hypoxia are the two signature toxicities and both are mechanistically expected: belzutifan suppresses erythropoietin by about 60% after 2 weeks of dosing, and hypoxia arises from inhibition of HIF-2 dependent adaptation to low oxygen (FDA WELIREG label, sections 5.1, 5.2 and 12.2)",
+      "Because anaemia and hypoxia are driven by exposure, pharmacogenomics matters: UGT2B17 poor metabolizers have about 2.5 times, CYP2C19 poor metabolizers about 1.3 times and dual poor metabolizers about 3.2 times the steady-state AUC0-24h, and the decrease in sensitive CYP3A4 substrate exposure is more pronounced in dual poor metabolizers (FDA WELIREG label, sections 8.8 and 12.5)",
+      "Belzutifan reduces exposure of sensitive CYP3A4 substrates (midazolam AUC down 40%) and can render hormonal contraceptives ineffective, so non-hormonal contraception is required (FDA WELIREG label, sections 7.2 and 5.4)",
+      "Cardiac dysfunction is specific to the lenvatinib combination - monotherapy is not associated with the same signal - and safety of the combination is not established in patients with LVEF below 50%, so a baseline echocardiogram or MUGA is advised (FDA WELIREG label, section 5.3)",
+      "Dose reductions are simple: 120 mg to 80 mg to 40 mg, with permanent discontinuation at the third reduction; Grade 3 non-haematologic toxicity must not be re-challenged at the same dose (FDA WELIREG label, section 2.2)",
+      "In the VHL trial (LITESPARK-004) fatigue was the most common adverse reaction at 64%, and serious adverse reactions occurred in 15% of patients (FDA WELIREG label, section 6.1)"
+    ],
+    "brand_names": ["WELIREG"],
+    "black_box_warnings": [
+      "Embryo-fetal toxicity: exposure to WELIREG during pregnancy can cause embryo-fetal harm. Verify pregnancy status prior to the initiation of WELIREG. Advise patients of these risks and the need for effective non-hormonal contraception. WELIREG can render some hormonal contraceptives ineffective (FDA WELIREG label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "No dosage modification of WELIREG is recommended in patients with renal impairment including end-stage renal disease; no clinically significant differences in mean belzutifan exposure were observed between subjects with normal renal function and those with mild (eGFR 60 to 89 mL/min) or moderate (eGFR 30 to 59 mL/min) renal impairment or end-stage renal disease (eGFR below 15 mL/min) requiring dialysis. For patients with severe renal impairment (eGFR 15 to 29 mL/min by MDRD), monitor for increased adverse reactions and modify the dosage as recommended (FDA WELIREG label, sections 8.6 and 12.3).",
+    "hepatic_dose_adjustment": "No dosage modification of WELIREG is recommended in patients with mild (total bilirubin at or below ULN with AST above ULN, or total bilirubin above 1 to 1.5 times ULN with any AST) or moderate (total bilirubin within the range of above 1.5 to 3 times ULN with any AST, or Child-Pugh B) hepatic impairment. WELIREG has not been studied in severe hepatic impairment (total bilirubin above 3 times ULN with any AST). For patients with moderate and severe hepatic impairment, monitor for increased adverse reactions and modify the dosage as recommended (FDA WELIREG label, sections 8.7 and 12.3).",
+    "administration_instructions": "Take WELIREG at the same time each day. It may be taken with or without food. Tablets should be swallowed whole and not chewed, crushed or split. If a dose is missed, take it as soon as possible on the same day and resume the regular daily schedule the next day; do not take extra tablets to make up for a missed dose. If vomiting occurs any time after taking WELIREG, do not retake the dose and take the next dose the next day. WELIREG is supplied as 40 mg blue, oval, film-coated tablets debossed with '177' in bottles of 90 with a child-resistant closure containing two desiccant canisters that must not be eaten. Store at 20 to 25 degrees C (68 to 77 degrees F), excursions permitted between 15 and 30 degrees C (59 to 86 degrees F) (FDA WELIREG label, sections 2.1 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, WELIREG (belzutifan) tablets, Merck Sharp & Dohme LLC, sections 12.1 (Mechanism of Action) and 12.2 (Pharmacodynamics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, WELIREG, sections 1.1, 1.2 and 1.3 (Indications and Usage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, WELIREG, section 4 (Contraindications: None)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, WELIREG, sections 5.1, 5.2, 5.3, 6, 6.1 and Tables 4, 10 and 12",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, WELIREG, sections 2.1, 8.4 and 8.5, and Table 1 (Recommended Dosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, WELIREG, sections 2.1, 2.2, 5.4, 7.1, 7.2, 8.3 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, WELIREG, sections 2.2, 5.1, 5.2, 5.3, 8.3, 8.6, 8.7 and 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, WELIREG, section 17 (Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, WELIREG, Boxed Warning (Embryo-Fetal Toxicity) and sections 5.1 to 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, WELIREG, sections 2.2 (Tables 2 and 3), 5.1 and 8.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, WELIREG, Boxed Warning and sections 5.1, 5.2, 5.3, 5.4 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, WELIREG, sections 2.1 and 12.3 (Effect of Food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, WELIREG, sections 5.4, 8.1 and 8.3 (no pregnancy category stated in the label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, WELIREG, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, WELIREG, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, WELIREG, section 12.3 (Absorption, Distribution, Elimination, Metabolism, Excretion and Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, WELIREG, sections 2.2, 5.1, 5.3, 5.4, 6.1, 7.2, 8.8, 12.1, 12.2, 12.3 and 12.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, WELIREG, sections 3 (Dosage Forms and Strengths) and 16 (How Supplied)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, WELIREG, Boxed Warning (Embryo-Fetal Toxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, WELIREG, sections 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, WELIREG, sections 8.7 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, WELIREG, sections 2.1 (Administration Instructions) and 16 (Storage and Handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13e15ee0-d679-4fa9-9430-e2e2170474da"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative weight-based paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the current FDA WELIREG label does not assign a pregnancy category; it uses the Pregnancy and Lactation Labeling Rule risk-summary format in section 8.1)"
+  ],
+  "notes": "The table stores this agent as 'Belzutifan'; the US product is WELIREG (belzutifan) 40 mg film-coated tablets (DailyMed SPL published Oct 20, 2026, label revised 09/2026). This label is a first-in-class HIF-2alpha inhibitor with four distinct approved indications (VHL disease, adjuvant ccRCC with pembrolizumab, advanced ccRCC with lenvatinib or as monotherapy, and PPGL), so the indications and adverse reaction content are indication-specific rather than a single pooled safety profile. Two drug-specific points that generic text usually loses: (1) belzutifan is both a CYP3A4 substrate-effect modifier and an inducer of CYP3A substrate exposure loss, which is why non-hormonal contraception is mandatory and midazolam exposure falls by 40%; (2) the cardiotoxicity warning applies only to the lenvatinib combination, not to monotherapy. Renal and hepatic dose adjustment fields are populated from the label's own recommendations rather than left blank; note that the label recommends no change for mild/moderate impairment but explicit monitoring in moderate/severe hepatic impairment because exposure rises 1.5-fold in Child-Pugh B."
+}

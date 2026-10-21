@@ -1,0 +1,216 @@
+{
+  "name": "Biotin",
+  "existing_id": "d4511558-d5bd-46a4-a3e5-ae1633527598",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Biotin, also known as vitamin B7, is a water-soluble B vitamin often found in multi-vitamins, prenatal vitamins, and dietary supplements marketed for hair, skin, and nail growth (FDA, Testing for Biotin Interference in In Vitro Diagnostic Devices, Guidance for Industry, October 2020, section II Background). Biotin helps turn the carbohydrates, fats and proteins in food into the energy the body needs, and most people obtain adequate amounts from the diet; biotin deficiency is very rare and occurs mainly in people with biotinidase deficiency, alcohol dependence, and pregnancy and breastfeeding (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). The clinically important drug-related property of biotin is not its nutritional role but its assay interference: many in vitro diagnostic devices use biotin/avidin technology to bind and measure specific proteins, for example hormone tests and tests for markers of cardiac health such as troponin, and biotin levels in samples from patients who consume more than the recommended daily intake can cause falsely high or falsely low results depending on the test principle, which may lead to inappropriate patient management or misdiagnosis (FDA guidance, section II Background; FDA, Biotin Interference with Troponin Lab Tests, content current as of 21 June 2022).",
+    "indications": [
+      "PRENATE Restore (prescription postnatal multivitamin/minimineral dietary supplement containing biotin, the brand recorded against this row in the database): indicated for use in improving the nutritional status of women during the postnatal period for both lactating and nonlactating mothers (PRENATE Restore label, INDICATIONS).",
+      "Multiple vitamins injection (adult) (prescription parenteral multivitamin containing biotin 60 mcg per 10 mL daily dose): indicated for the prevention of vitamin deficiency in adults and children aged 11 and older receiving parenteral nutrition; the physician should not await the development of clinical signs of vitamin deficiency before initiating vitamin therapy (Multiple Vitamins Injection (adult) label, section 1 INDICATIONS AND USAGE).",
+      "Biotin is not listed as a separate medicine in the WHO Model List of Essential Medicines (23rd List, 2023) or in the Kenya Essential Medicines List 2023; the labelled role of biotin in practice is as a component of multivitamin and dietary-supplement products (WHO eEML 23rd List, 2023; KEML 2023)."
+    ],
+    "contraindications": [
+      "PRENATE Restore: contraindicated in patients with a known hypersensitivity to any of the ingredients (PRENATE Restore label, CONTRAINDICATIONS).",
+      "Multiple vitamins injection (adult): contraindicated in patients who have an existing hypervitaminosis, or a history of hypersensitivity to any of the vitamins or excipients contained in the formulation (Multiple Vitamins Injection (adult) label, section 4 CONTRAINDICATIONS).",
+      "No biotin-specific contraindication (for example a stated maximum tolerated dose) is given in the FDA sources used for this monograph (FDA biotin-interference guidance; PRENATE Restore label)."
+    ],
+    "side_effects": [
+      "Biotin itself: biotin has not been shown to cause harm, but supplements that contain biotin above recommended amounts may cause false results in some laboratory tests, including tests that measure levels of certain hormones such as thyroid hormone (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet; FDA guidance, section II Background).",
+      "PRENATE Restore: allergic sensitisation has been reported following both oral and parenteral administration of folic acid (PRENATE Restore label, ADVERSE REACTIONS). This statement relates to the folic acid component of the product, not to biotin.",
+      "Multiple vitamins injection (adult): allergic reactions to thiamine such as urticaria, shortness of breath, wheezing and angioedema have been reported following intravenous administration of thiamine, with rare reports of anaphylactoid reactions following intravenous doses of thiamine (section 5.2).",
+      "Multiple vitamins injection (adult): hypervitaminosis A (nausea, vomiting, headache, dizziness, blurred vision) has been reported in patients with renal failure receiving 1.5 mg/day retinol and in patients with liver disease (section 5.3).",
+      "Multiple vitamins injection (adult): ascorbic acid in the urine may cause false negative urine glucose results (section 5.7).",
+      "False laboratory results caused by biotin (falsely low troponin, falsely high or low hormone and other immunoassay results) are the best-documented adverse consequence of biotin exposure and are a patient-safety issue rather than a toxicity (FDA guidance, section II; FDA Biotin Interference with Troponin Lab Tests, 2022)."
+    ],
+    "dosage": {
+      "adult": "Biotin-containing prescription products: PRENATE Restore is dosed as one softgel daily, or as directed by a physician (PRENATE Restore label, DOSAGE AND ADMINISTRATION). Multiple vitamins injection (adult) supplies one daily dose of 10 mL (5 mL from Vial 1 and 5 mL from Vial 2), which must be added to not less than 500 mL and preferably 1,000 mL of intravenous dextrose or saline before administration; this daily dose contains biotin 60 mcg, folic acid 600 mcg and vitamin B12 5 mcg (Multiple Vitamins Injection (adult) label, sections 2.1, 2.2 and 11 DESCRIPTION). Reference intake: biotin has historically been assessed at a normal recommended daily dose of 30 mcg per day, which results in plasma/serum biotin levels of less than 1 ng/mL (FDA guidance, section II Background); the NIH Office of Dietary Supplements consumer fact sheet gives a recommended daily amount of 30 mcg for adults 19 years and older, 30 mcg in pregnancy and 35 mcg during breastfeeding. Extremely high supplemental doses up to 300 mg per day have been observed, producing plasma/serum biotin levels of more than 1000 ng/mL (FDA guidance, section II Background).",
+      "geriatric": "No geriatric-specific dose adjustment is stated in the sources used. The recommended daily amount of biotin for adults 19 years and older is 30 mcg (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet), and the FDA guidance notes only that in vitro diagnostic devices using biotin/avidin technology have historically been assessed for biotin interference at the normal recommended daily doses of biotin (30 mcg per day) (FDA guidance, section II Background). PRENATE Restore is a postnatal product for women and is not dosed by age, and Multiple Vitamins Injection (adult) is dosed as a single 10 mL daily dose for adults and children aged 11 and older (Multiple Vitamins Injection (adult) label, sections 1 and 2.1).",
+      "paediatric": "Recommended daily amounts of biotin by age are 5 mcg (birth to 6 months), 6 mcg (7-12 months), 8 mcg (1-3 years), 12 mcg (4-8 years), 20 mcg (9-13 years) and 25 mcg (14-18 years) (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). Multiple vitamins injection (adult) is indicated for the prevention of vitamin deficiency in adults and children aged 11 and older receiving parenteral nutrition (Multiple Vitamins Injection (adult) label, section 1). Symptoms of biotin deficiency in infants include weak muscle tone, sluggishness and delayed development (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Laboratory tests (the principal biotin interaction): biotin can significantly interfere with certain laboratory tests that use biotin/avidin technology and cause incorrect results that may go undetected, including falsely low troponin results; FDA continues to receive adverse event reports of biotin interference causing falsely low troponin results (FDA, Biotin Interference with Troponin Lab Tests, 2022). Biotin levels higher than the recommended daily allowance may cause interference with some laboratory tests, including cardiovascular diagnostic tests (for example troponin) and hormone tests, and may lead to incorrect test results; tell the healthcare provider about all prescription and over-the-counter medicines, vitamins and dietary supplements taken, including biotin (PRENATE Restore label, PRECAUTIONS).",
+      "Antiseizure medicines: treatment for at least 1 year with antiseizure medicines used to treat epilepsy can significantly lower biotin levels (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet).",
+      "Warfarin: Multiple vitamins injection (adult) contains vitamin K, which may decrease the anticoagulant action of warfarin; in patients on warfarin receiving this product, monitor blood levels of prothrombin/INR to determine if the warfarin dose needs to be adjusted (Multiple Vitamins Injection (adult) label, section 5.4 and section 7.1). This statement concerns the vitamin K content of the product, not biotin.",
+      "Omega-3 fatty acids (doconexent/DHA component of PRENATE Restore, not biotin): ingestion of more than 3 grams of omega-3 fatty acids per day has been shown to have potential antithrombotic effects, including increased bleeding time and INR, and should be avoided in patients taking anticoagulants or with an inherited or acquired predisposition to bleeding (PRENATE Restore label, WARNING).",
+      "Folic acid and vitamin B12 (components of PRENATE Restore and Multiple vitamins injection (adult), not biotin): these can mask serum deficiencies of folic acid and cyanocobalamin in patients with megaloblastic anaemia; avoid use prior to blood sampling for detection of folic acid and cyanocobalamin deficiencies (Multiple Vitamins Injection (adult) label, section 5.5)."
+    ],
+    "monitoring": "Blood vitamin concentrations should be monitored to ensure maintenance of adequate levels, particularly in patients receiving parenteral multivitamins as the only source of vitamins for long periods of time (Multiple Vitamins Injection (adult) label, section 2.3). Monitor prothrombin time and INR in patients taking warfarin who receive multiple vitamins injection (adult), because of the vitamin K content (section 5.4 and section 7.1). Patients should have blood vitamin concentrations monitored periodically to determine whether deficiencies or excesses are developing; the product may not correct long-standing specific vitamin deficiencies and additional therapeutic doses of specific vitamins may be required (section 5.6). Clinically, when a laboratory result does not match the clinical picture, the presence of biotin supplementation should be considered as a cause of a falsely high or falsely low assay result, and an alternative assay or repeat testing after stopping biotin should be considered; FDA has published a list of troponin in vitro diagnostic devices that are subject to biotin interference but have not addressed this risk (FDA guidance, sections II and III; FDA, Biotin Interference with Troponin Lab Tests, 2022).",
+    "patient_counselling": "Take PRENATE Restore one softgel daily, or as directed by a physician (PRENATE Restore label, DOSAGE AND ADMINISTRATION). Tell your doctor, pharmacist and other health care providers about all dietary supplements and all prescription or over-the-counter medicines you take; they can tell you if the supplements might interact with your medicines or with laboratory tests (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). Tell your healthcare provider about all prescription and over-the-counter medicines, vitamins and dietary supplements that you take, including biotin, because biotin levels above the recommended daily allowance can interfere with laboratory tests such as troponin and hormone tests and can lead to incorrect results (PRENATE Restore label, PRECAUTIONS). Health care providers, laboratory personnel and test developers should be aware that biotin can significantly interfere with certain laboratory tests and cause incorrect results that may go undetected; if you are taking biotin and a test result does not match how you feel, tell the laboratory that you take biotin (FDA guidance, section I; FDA, Biotin Interference with Troponin Lab Tests, 2022). Keep PRENATE Restore and all other medicines out of the reach of children; accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6, so in case of accidental overdose call a doctor or poison control centre immediately (PRENATE Restore label, WARNING and 'KEEP THIS AND ALL MEDICATIONS OUT OF THE REACH OF CHILDREN'). Note that PRENATE Restore statements about omega-3 fatty acids and iron apply to the DHA and iron components of the product, not to biotin (PRENATE Restore label, WARNING).",
+    "warnings": [
+      "Laboratory test interference (boxed-warning-level safety issue in practice, although no boxed warning is carried on the labels used): biotin can significantly interfere with certain laboratory tests and cause incorrect results which may go undetected, including falsely low troponin results that may lead to a missed myocardial infarction diagnosis; FDA has published the list of troponin assays that do not address this risk (FDA, Biotin Interference with Troponin Lab Tests, 2022; FDA guidance, section II Background).",
+      "Biotin levels higher than the recommended daily allowance may cause interference with some laboratory tests, including cardiovascular diagnostic tests (for example troponin) and hormone tests, and may lead to incorrect test results (PRENATE Restore label, PRECAUTIONS).",
+      "Folic acid alone is improper therapy for pernicious anaemia and other megaloblastic anaemias where vitamin B12 is deficient, and folic acid in doses above 1.0 mg daily may obscure pernicious anaemia while neurological manifestations progress (PRENATE Restore label, PRECAUTIONS; Multiple Vitamins Injection (adult) label, section 5.5). This concerns the folic acid component of the products, not biotin.",
+      "Risk of aluminium toxicity (Multiple Vitamins Injection (adult)): the product contains aluminium that may be toxic; aluminium can reach toxic levels with prolonged parenteral administration if kidney function is impaired, and premature neonates are particularly at risk; periodically monitor aluminium levels with prolonged parenteral administration in patients with renal impairment (section 5.1).",
+      "Decreased anticoagulant effect of warfarin: the product contains vitamin K, which may decrease the anticoagulant action of warfarin; monitor INR (section 5.4). This concerns the vitamin K content, not biotin.",
+      "Hypervitaminosis A in patients with renal failure or liver disease (section 5.3) and false negative urine glucose tests due to vitamin C (section 5.7) are warnings of the multivitamin product, not of biotin.",
+      "PRENATE Restore: ingestion of more than 3 grams of omega-3 fatty acids per day has been shown to have potential antithrombotic effects, including increased bleeding time and INR; administration should be avoided in patients taking anticoagulants and in those with an inherited or acquired predisposition to bleeding (WARNING). This concerns the DHA component of the product, not biotin.",
+      "PRENATE Restore: accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6; keep this product out of reach of children and call a doctor or poison control centre immediately in case of accidental overdose (WARNING). This concerns the iron content, not biotin."
+    ],
+    "precautions": [
+      "Biotin laboratory interference precaution: before ordering or interpreting a susceptible laboratory test (troponin, hormone and other biotin/avidin-based immunoassays), establish whether the patient is taking biotin and at what dose; the FDA notes that incorrect results may lead to inappropriate patient management or misdiagnosis (FDA guidance, section II Background).",
+      "Monitor blood vitamin concentrations, particularly in patients receiving parenteral multivitamins as the only source of vitamins for long periods of time; the product may not correct long-standing specific vitamin deficiencies and additional therapeutic doses of specific vitamins may be required (Multiple Vitamins Injection (adult) label, sections 2.3 and 5.6).",
+      "Multiple vitamins injection (adult) must not be administered as a direct, undiluted intravenous injection because it may cause dizziness, faintness and possible tissue irritation; it is intended for administration by intravenous infusion after dilution (section 2.2).",
+      "Drug incompatibilities: multiple vitamins injection (adult) is not physically compatible with moderately alkaline solutions such as sodium bicarbonate and other alkaline drugs such as acetazolamide sodium, aminophylline, ampicillin sodium, tetracycline hydrochloride and chlorothiazide sodium; folic acid is unstable in the presence of calcium salts such as calcium gluconate; vitamin A and thiamine may react with bisulfite solutions; do not add the product directly to intravenous fat emulsions (section 2.4).",
+      "Minimize exposure to light because some of the vitamins in multiple vitamins injection (adult), particularly A, D and riboflavin, are light sensitive (section 2.2)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and anaphylactoid reactions, angioedema, urticaria, shortness of breath and wheezing following intravenous administration of the multivitamin product, attributed to its thiamine component; no fatal anaphylactoid reactions associated with multiple vitamins injection (adult) have been reported (section 5.2).",
+      "Aluminium toxicity with prolonged parenteral administration in patients with impaired renal function, including premature neonates, causing central nervous system and bone toxicity (section 5.1).",
+      "Hypervitaminosis A (nausea, vomiting, headache, dizziness, blurred vision) in patients with renal failure or liver disease (section 5.3).",
+      "Serious incorrect laboratory results leading to missed or delayed diagnoses, most importantly falsely low troponin results leading to a missed myocardial infarction diagnosis; FDA has continued to receive adverse event reports of biotin interference causing falsely low troponin results (FDA, Biotin Interference with Troponin Lab Tests, 2022).",
+      "No serious adverse reaction is attributed specifically to biotin itself in the FDA sources used for this monograph; NIH Office of Dietary Supplements states that biotin has not been shown to cause harm (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No letter pregnancy category is assigned in the sources used. PRENATE Restore is a prescription postnatal vitamin dietary supplement indicated for improving the nutritional status of women during the postnatal period for both lactating and nonlactating mothers, dosed one softgel daily (PRENATE Restore label, INDICATIONS and DOSAGE AND ADMINISTRATION). The recommended daily amount of biotin is 30 mcg for pregnant teens and women (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). FDA notes that prenatal vitamins are one of the common sources of biotin and that consumption above the recommended daily intake can interfere with laboratory tests (FDA guidance, section II Background; FDA, Biotin Interference with Troponin Lab Tests, 2022). Multiple vitamins injection (adult) does not carry a pregnancy statement in the label used (Multiple Vitamins Injection (adult) label).",
+    "lactation_guidance": "No letter pregnancy category is assigned and no dedicated lactation section is present in the labels used. PRENATE Restore is indicated for use in the postnatal period for both lactating and nonlactating mothers, so it is intended to be used while breastfeeding (PRENATE Restore label, INDICATIONS and DOSAGE AND ADMINISTRATION). The recommended daily amount of biotin during breastfeeding is 35 mcg (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). Pregnancy and breastfeeding are among the groups more likely to have difficulty obtaining enough biotin (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet).",
+    "overdose": "No specific antidote is described for biotin overdose in the sources used. What is documented is the scale of exposure: extremely high supplemental doses up to 300 mg per day have been observed in consumers, producing plasma/serum biotin levels of more than 1000 ng/mL, compared with less than 1 ng/mL at the recommended 30 mcg daily dose (FDA guidance, section II Background). For the labelled products, PRENATE Restore carries the warning that accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6: keep out of reach of children and in case of accidental overdose call a doctor or poison control centre immediately (PRENATE Restore label, WARNING). Multiple vitamins injection (adult) carries the risks of hypervitaminosis A and aluminium toxicity with prolonged administration in patients with impaired renal function (sections 5.1 and 5.3).",
+    "pharmacokinetics": "Biotin is a water-soluble vitamin (FDA guidance, section II Background; NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet). The pharmacologically relevant kinetic parameter for clinicians is the plasma/serum biotin concentration: at the normal recommended daily dose of 30 mcg per day, plasma/serum biotin levels are less than 1 ng/mL, and this is the concentration at which devices using biotin/avidin technology have historically been assessed for interference; supplement use that produces plasma/serum biotin levels of more than 1 ng/mL has caused unanticipated interference with some in vitro diagnostic devices; extremely high doses of up to 300 mg per day have been observed, producing plasma/serum biotin levels of more than 1000 ng/mL (FDA guidance, section II Background). FDA recommends that biotin interference be evaluated up to 3500 ng/mL, three times the maximum expected clinical concentration (FDA guidance, section III). The FDA sources used for this monograph do not describe the absorption, distribution, metabolism or renal excretion of biotin, so those parameters are not stated here.",
+    "clinical_pearls": [
+      "For biotin, the clinically important 'drug' effect is assay interference, not toxicity: biotin has not been shown to cause harm, but doses above the recommended daily allowance can produce falsely high or falsely low results in biotin/avidin-based in vitro diagnostics, including falsely low troponin (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet; FDA, Biotin Interference with Troponin Lab Tests, 2022).",
+      "Always ask about biotin when an immunoassay result is discordant with the clinical picture. FDA has published the troponin assays that remain subject to biotin interference and have not addressed the risk, including Cardiac STATus (Spectral's Troponin I), the Nano-Check AMI and Nano-Check AMI 2 IN 1 and 3 IN 1 cardiac marker tests, VITROS Immunodiagnostic Products Troponin I ES, LifeSign MI troponin and myoglobin tests, the Roche Cardiac Reader System Troponin T and Troponin I assays, Elecsys Troponin T STAT and Elecsys Troponin T Gen 5 STAT, ADVIA Centaur TnI-Ultra and Atellica IM TnI-Ultra, and Dimension Vista CTNI Flex and Dimension EXL LOCI Module TNI Flex (FDA, Biotin Interference with Troponin Lab Tests, 2022).",
+      "Reference intakes for biotin by age: 5 mcg (birth to 6 months), 6 mcg (7-12 months), 8 mcg (1-3 years), 12 mcg (4-8 years), 20 mcg (9-13 years), 25 mcg (14-18 years), 30 mcg (adults 19 and older, and in pregnancy) and 35 mcg during breastfeeding (NIH Office of Dietary Supplements, Biotin - Consumer Fact Sheet).",
+      "Biotin is not an essential medicine in the WHO Model List (23rd List, 2023) or the Kenya Essential Medicines List 2023; in practice it enters clinical care as a component of prenatal/postnatal multivitamins, B-complex products and hair/skin/nail supplements (WHO eEML 23rd List, 2023; KEML 2023).",
+      "Biotin is a plausible explanation for 'false' thyrotoxicosis, falsely low troponin and other immunoassay anomalies; high-dose biotin has also been reported to produce false biochemical endocrine profiles (FDA guidance, section II Background and reference 4).",
+      "The serious hazards in the labelled biotin-containing products come from their other components, not from biotin: thiamine anaphylaxis and aluminium toxicity with the parenteral multivitamin, vitamin K antagonism of warfarin, folic acid masking of B12 deficiency, DHA-related bleeding risk and iron overdose in children (Multiple Vitamins Injection (adult) label; PRENATE Restore label)."
+    ],
+    "brand_names": ["PRENATE Restore"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No biotin-specific renal dose adjustment is stated in the sources used. For the parenteral multivitamin that contains biotin (Multiple Vitamins Injection (adult)), aluminium is cleared renally and the label states that it contains aluminium that may be toxic, that aluminium can reach toxic levels with prolonged parenteral administration if kidney function is impaired, that premature neonates are particularly at risk, and that aluminium levels should be monitored periodically with prolonged parenteral administration in patients with renal impairment (section 5.1).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "PRENATE Restore: one softgel daily, or as directed by a physician; store at 20 to 25 degrees C (68 to 77 degrees F) with excursions permitted to 15 to 30 degrees C (59 to 86 degrees F) [USP Controlled Room Temperature]; keep out of reach of children (PRENATE Restore label, DOSAGE AND ADMINISTRATION, STORAGE and the keep-out-of-reach-of-children statement). Multiple vitamins injection (adult): for intravenous infusion only after dilution; add 5 mL of Vial 1 and 5 mL of Vial 2 to at least 500 mL and preferably 1,000 mL of intravenous dextrose or saline solution; do not administer as a direct, undiluted intravenous injection because it may cause dizziness, faintness and possible tissue irritation; discard the unused portion; visually inspect for particulate matter and discoloration before administration; after dilution, refrigerate the solution unless used immediately and use within 24 hours of dilution; minimize exposure to light because vitamins A, D and riboflavin are light sensitive (Multiple Vitamins Injection (adult) label, sections 2.1, 2.2 and 2.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA, Testing for Biotin Interference in In Vitro Diagnostic Devices, Guidance for Industry (CBER/CDRH), October 2020, section II Background; FDA, Biotin Interference with Troponin Lab Tests - Assays Subject to Biotin Interference (In Vitro Diagnostics), content current as of 21 June 2022",
+      "url": "https://www.fda.gov/media/127915/download"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, PRENATE Restore (Avion Pharmaceuticals), INDICATIONS; FDA label, Multiple Vitamins Injection (adult) (Apotex Corp), section 1 INDICATIONS AND USAGE; WHO Model List of Essential Medicines, 23rd List (2023); Kenya Essential Medicines List 2023",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, PRENATE Restore, CONTRAINDICATIONS; FDA label, Multiple Vitamins Injection (adult), section 4 CONTRAINDICATIONS; FDA biotin-interference guidance, section II Background",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), sections 5.2, 5.3, 5.7 and 6; FDA label, PRENATE Restore, ADVERSE REACTIONS; FDA biotin-interference guidance, section II Background",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), sections 1, 2.1, 2.2 and 11 DESCRIPTION; FDA label, PRENATE Restore, DOSAGE AND ADMINISTRATION; FDA biotin-interference guidance, section II Background; NIH ODS Biotin Consumer Fact Sheet, 'How much biotin do I need?'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, PRENATE Restore, PRECAUTIONS and WARNING; FDA label, Multiple Vitamins Injection (adult), sections 5.4, 5.5 and 7.1; FDA, Biotin Interference with Troponin Lab Tests (2022); NIH ODS Biotin Consumer Fact Sheet, medication interactions section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), sections 2.3, 5.4, 5.6 and 7.1; FDA biotin-interference guidance, sections II and III; FDA, Biotin Interference with Troponin Lab Tests (2022)",
+      "url": "https://www.fda.gov/media/127915/download"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, PRENATE Restore, DOSAGE AND ADMINISTRATION, PRECAUTIONS, WARNING and keep-out-of-reach-of-children statement; FDA biotin-interference guidance, section I; FDA, Biotin Interference with Troponin Lab Tests (2022); NIH ODS Biotin Consumer Fact Sheet",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA, Biotin Interference with Troponin Lab Tests (2022); FDA biotin-interference guidance, section II Background; FDA label, PRENATE Restore, PRECAUTIONS and WARNING; FDA label, Multiple Vitamins Injection (adult), sections 5.1-5.5 and 5.7",
+      "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA biotin-interference guidance, section II Background; FDA label, Multiple Vitamins Injection (adult), sections 2.2, 2.3, 2.4, 5.5 and 5.6; FDA label, PRENATE Restore, PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), sections 5.1, 5.2 and 5.3; FDA, Biotin Interference with Troponin Lab Tests (2022); NIH ODS Biotin Consumer Fact Sheet, 'Can biotin be harmful?'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Not stated: none of the FDA labels, FDA guidance or NIH ODS fact sheet used for this monograph describes a food interaction for biotin",
+      "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Not stated: neither the PRENATE Restore label nor the Multiple Vitamins Injection (adult) label assigns a letter pregnancy category",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, PRENATE Restore, INDICATIONS and DOSAGE AND ADMINISTRATION; NIH ODS Biotin Consumer Fact Sheet, recommended daily amounts; FDA biotin-interference guidance, section II Background",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, PRENATE Restore, INDICATIONS and DOSAGE AND ADMINISTRATION; NIH ODS Biotin Consumer Fact Sheet, recommended daily amounts and 'Am I getting enough biotin?'",
+      "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA biotin-interference guidance, section II Background; FDA label, PRENATE Restore, WARNING; FDA label, Multiple Vitamins Injection (adult), sections 5.1 and 5.3",
+      "url": "https://www.fda.gov/media/127915/download"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA biotin-interference guidance, section II Background and section III (biotin concentrations and interference thresholds); FDA label, PRENATE Restore (dietary source context)",
+      "url": "https://www.fda.gov/media/127915/download"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA, Biotin Interference with Troponin Lab Tests (2022) (list of troponin assays); FDA biotin-interference guidance, sections II and III; NIH ODS Biotin Consumer Fact Sheet; FDA labels, PRENATE Restore and Multiple Vitamins Injection (adult); WHO eEML 23rd List (2023) and KEML 2023 for essential-medicines status",
+      "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+    },
+    {
+      "field": "brand_names",
+      "ref": "PRENATE Restore (biotin-containing prescription postnatal vitamin, Avion Pharmaceuticals) is the brand recorded against this row and is listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA PRENATE Restore dietary supplement label, the Multiple Vitamins Injection (adult) label or the FDA biotin-interference guidance",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1076ba9a-0168-492f-ba9b-99fa02186092"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), section 5.1 (aluminium toxicity and monitoring in renal impairment); no biotin-specific renal dose adjustment is stated",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Not stated: no hepatic dose adjustment for biotin appears in the PRENATE Restore label, the Multiple Vitamins Injection (adult) label or the FDA biotin-interference guidance",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Multiple Vitamins Injection (adult), sections 2.1, 2.2 and 2.4; FDA label, PRENATE Restore, DOSAGE AND ADMINISTRATION and STORAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83d65db4-7771-063d-909a-5aa29b945ee1"
+    },
+    {
+      "field": "references_specific_to_biotin",
+      "ref": "NIH Office of Dietary Supplements (NIH ODS), Biotin - Consumer Fact Sheet: used for biotin's nutritional role, age-specific recommended daily amounts, deficiency features, absence of demonstrated harm at recommended intakes, and the statement that antiseizure medicines used for at least 1 year can significantly lower biotin levels. This is a US government fact sheet and is the source the FDA guidance cites as its own reference 1 (https://ods.od.nih.gov/factsheets/Biotin-Consumer/).",
+      "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult content, including the 30 mcg recommended daily amount and the labelled product regimens, is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric content, including age-specific recommended daily amounts, is provided in fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is stated in any source used)",
+    "food_interactions (no food interaction is described for biotin in the sources used; the field is an empty array)",
+    "pregnancy_category (no letter pregnancy category is assigned in the sources used)",
+    "biotin's carboxylase-coenzyme biochemistry is not described in the FDA/DailyMed sources used; the mechanism field therefore rests on the FDA description of biotin as vitamin B7 and on the FDA description of its assay-interference behaviour, with the NIH ODS consumer fact sheet used only for the nutritional role"
+  ],
+  "notes": "The table stores this agent as 'Biotin' with drug_class 'Nutritional supplement / vitamin' and brand_names ['PRENATE Restore']; the previous row carried shared class-template text (hypercalcaemia/hypervitaminosis D contraindications, iron-overload and tetracycline/quinolone interactions, 'refer to current prescribing information' dosing, and omega-3 and iron overdose boxed warnings copied from prenatal supplement labels), all of which is wrong or untraceable for biotin and is superseded by this draft. There is no single-ingredient FDA drug label for biotin, so this monograph is built from the following, each named here exactly as used: (1) the FDA/DailyMed label for PRENATE Restore (Avion Pharmaceuticals), the biotin-containing prescription postnatal multivitamin recorded against this row - used for indications, contraindications, the biotin-specific laboratory-interference precaution, warnings, adverse reactions and administration; (2) the FDA/DailyMed label for Multiple Vitamins Injection (adult) (Apotex Corp), a prescription parenteral multivitamin that contains biotin 60 mcg per 10 mL daily dose - used for the labelled biotin strength, contraindications, warnings, monitoring and administration, with every statement attributed to its other components explicitly flagged as such; (3) FDA, Testing for Biotin Interference in In Vitro Diagnostic Devices, Guidance for Industry (CBER/CDRH), October 2020, and FDA, Biotin Interference with Troponin Lab Tests (In Vitro Diagnostics, current as of 21 June 2022) - used for the pharmacology of the clinically relevant biotin effect (false-high/false-low immunoassay results, including falsely low troponin), the 30 mcg/day reference intake with plasma/serum <1 ng/mL, the observation of doses up to 300 mg/day producing levels >1000 ng/mL, and the list of troponin assays that remain vulnerable; (4) the WHO Model List of Essential Medicines, 23rd List (2023) and the Kenya Essential Medicines List 2023, both checked and both confirmed NOT to list biotin, which is stated in the indications field rather than left as a silent omission; and (5) the NIH Office of Dietary Supplements 'Biotin - Consumer Fact Sheet', used only for the nutritional role of biotin, age-specific recommended daily amounts, deficiency features, the absence of demonstrated harm at recommended intakes and the antiseizure-medicine interaction, because none of the FDA label-type sources states them - this is a US government fact sheet and is the document the FDA guidance cites as its own reference 1, and it is flagged explicitly in the sources list. The 2017 and 2019 FDA biotin safety communications are cited by the FDA guidance (its references 2 and 3) but the FDA web pages themselves now return HTTP 404 and were therefore not quoted directly. Pepto-Bismol Maximum Strength (an acetaminophen-containing Pepto-Bismol product) has no DailyMed label and no retrievable FDA label text, so no acetaminophen content is asserted for biotin and no claim about acetaminophen-containing biotin products is made."
+}

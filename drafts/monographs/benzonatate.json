@@ -1,0 +1,196 @@
+{
+  "name": "Benzonatate",
+  "existing_id": "6bd9a602-a47c-4950-b034-0b00d82b1bd5",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Benzonatate capsules act peripherally by anesthetizing the stretch receptors located in the respiratory passages, lungs and pleura by dampening their activity and thereby reducing the cough reflex at its source. It begins to act within 15 to 20 minutes and its effect lasts for 3 to 8 hours, and benzonatate capsules have no inhibitory effect on the respiratory center in recommended dosage (benzonatate capsules USP label, CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Symptomatic relief of cough (benzonatate capsules USP label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to benzonatate or related compounds (benzonatate capsules USP label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Hypersensitivity reactions including bronchospasm, laryngospasm and cardiovascular collapse, possibly related to local anesthesia from chewing or sucking the capsule (benzonatate capsules USP label, ADVERSE REACTIONS)",
+      "Central nervous system: sedation, headache, dizziness, mental confusion, visual hallucinations (benzonatate capsules USP label, ADVERSE REACTIONS)",
+      "Gastrointestinal: constipation, nausea, gastrointestinal upset (benzonatate capsules USP label, ADVERSE REACTIONS)",
+      "Dermatologic: pruritus, skin eruptions (benzonatate capsules USP label, ADVERSE REACTIONS)",
+      "Other: nasal congestion, sensation of burning in the eyes, vague 'chilly' sensation, numbness of the chest (benzonatate capsules USP label, ADVERSE REACTIONS)",
+      "Deliberate or accidental overdose has resulted in death, particularly in children (benzonatate capsules USP label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "Adults and children over 10 years of age: the usual dose is one 100 mg or 200 mg capsule three times a day as needed for cough; if necessary to control cough, up to 600 mg daily in three divided doses may be given (benzonatate capsules USP label, DOSAGE AND ADMINISTRATION). Do not exceed a single dose of 200 mg and a total daily dosage of 600 mg (label, Information for Patients).",
+      "geriatric": null,
+      "paediatric": "Safety and effectiveness in children below the age of 10 have not been established, and accidental ingestion resulting in death has been reported in children below age 10 (benzonatate capsules USP label, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Benzonatate is chemically related to anesthetic agents of the para-amino-benzoic acid class (e.g. procaine, tetracaine) and has been associated with adverse CNS effects possibly related to a prior sensitivity to related agents or interaction with concomitant medication (benzonatate capsules USP label, PRECAUTIONS)",
+      "Isolated instances of bizarre behavior, including mental confusion and visual hallucinations, have been reported in patients taking benzonatate capsules in combination with other prescribed drugs (benzonatate capsules USP label, WARNINGS - Psychiatric Effects)"
+    ],
+    "monitoring": null,
+    "patient_counselling": "Swallow benzonatate capsules whole; do not break, chew, dissolve, cut or crush them. Release of benzonatate from the capsule in the mouth can produce a temporary local anesthesia of the oral mucosa and choking could occur (benzonatate capsules USP label, Information for Patients). If numbness or tingling of the tongue, mouth, throat or face occurs, refrain from oral ingestion of food or liquids until the numbness has resolved; if the symptoms worsen or persist, seek medical attention (label, Information for Patients). Keep benzonatate capsules out of reach of children: accidental ingestion resulting in death has been reported in children, signs and symptoms of overdose have been reported within 15 to 20 minutes and death within one hour of ingestion, and if accidental ingestion occurs seek medical attention immediately (label, WARNINGS and Information for Patients). Overdosage resulting in death may occur in adults (label, Information for Patients). Do not exceed a single dose of 200 mg and a total daily dosage of 600 mg; if a dose is missed, skip that dose and take the next dose at the next scheduled time, and do not take two doses of benzonatate capsules at one time (label, Information for Patients).",
+    "warnings": [
+      "Hypersensitivity: severe hypersensitivity reactions, including bronchospasm, laryngospasm and cardiovascular collapse, have been reported, possibly related to local anesthesia from sucking or chewing the capsule instead of swallowing it; severe reactions have required intervention with vasopressor agents and supportive measures (benzonatate capsules USP label, WARNINGS - Hypersensitivity)",
+      "Accidental ingestion and death in children: keep benzonatate capsules out of reach of children; accidental ingestion resulting in death has been reported in children below age 10, signs and symptoms of overdose have been reported within 15 to 20 minutes, and death has been reported within one hour of ingestion (benzonatate capsules USP label, WARNINGS - Accidental Ingestion and Death in Children)",
+      "Psychiatric effects: isolated instances of bizarre behavior, including mental confusion and visual hallucinations, have been reported in patients taking benzonatate capsules in combination with other prescribed drugs (benzonatate capsules USP label, WARNINGS - Psychiatric Effects)"
+    ],
+    "precautions": [
+      "Benzonatate is chemically related to anesthetic agents of the para-amino-benzoic acid class (e.g. procaine, tetracaine) and has been associated with adverse CNS effects possibly related to a prior sensitivity to related agents or interaction with concomitant medication (benzonatate capsules USP label, PRECAUTIONS)",
+      "Carcinogenicity, mutagenicity and reproduction studies have not been conducted with benzonatate capsules (benzonatate capsules USP label, PRECAUTIONS)",
+      "Pregnancy: animal reproduction studies have not been conducted, it is not known whether benzonatate capsules can cause fetal harm or affect reproduction capacity, and the capsules should be given to a pregnant woman only if clearly needed (benzonatate capsules USP label, Usage in Pregnancy)",
+      "Nursing mothers: it is not known whether the drug is excreted in human milk, and caution should be exercised when benzonatate capsules are administered to a nursing woman (benzonatate capsules USP label, Nursing Mothers)"
+    ],
+    "serious_adverse_reactions": [
+      "Severe hypersensitivity reactions including bronchospasm, laryngospasm and cardiovascular collapse, possibly related to local anesthesia from chewing or sucking the capsule, requiring vasopressor agents and supportive measures (benzonatate capsules USP label, WARNINGS - Hypersensitivity)",
+      "Overdose: convulsions, coma, cerebral edema and cardiac arrest leading to death have been reported within 1 hour of ingestion (benzonatate capsules USP label, OVERDOSAGE - Signs and Symptoms)",
+      "Bizarre behavior, mental confusion and visual hallucinations reported in combination with other prescribed drugs (benzonatate capsules USP label, WARNINGS - Psychiatric Effects)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "C (benzonatate capsules USP label, Usage in Pregnancy - PREGNANCY CATEGORY C)",
+    "pregnancy_guidance": "Animal reproduction studies have not been conducted with benzonatate capsules. It is also not known whether benzonatate capsules can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity, and benzonatate capsules should be given to a pregnant woman only if clearly needed (benzonatate capsules USP label, Usage in Pregnancy).",
+    "lactation_guidance": "It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when benzonatate capsules are administered to a nursing woman (benzonatate capsules USP label, Nursing Mothers).",
+    "overdose": "Intentional and unintentional overdose may result in death, particularly in children. The drug is chemically related to tetracaine and other topical anesthetics and shares various aspects of their pharmacology and toxicology, and drugs of this type are generally well absorbed after ingestion (benzonatate capsules USP label, OVERDOSAGE). Signs and symptoms of overdose have been reported within 15 to 20 minutes: if capsules are chewed or dissolved in the mouth, oropharyngeal anesthesia will develop rapidly, which may cause choking and airway compromise; CNS stimulation may cause restlessness and tremors which may proceed to clonic convulsions followed by profound CNS depression, and convulsions, coma, cerebral edema and cardiac arrest leading to death have been reported within 1 hour of ingestion (label, OVERDOSAGE - Signs and Symptoms). Treatment: seek medical attention immediately, evacuate gastric contents and administer copious amounts of activated charcoal slurry; even in the conscious patient, cough and gag reflexes may be so depressed as to necessitate special attention to protection against aspiration of gastric contents and orally administered materials; convulsions should be treated with a short-acting barbiturate given intravenously and carefully titrated for the smallest effective dosage; intensive support of respiration and cardiovascular-renal function is essential in severe intoxication; do not use CNS stimulants (label, OVERDOSAGE - Treatment).",
+    "pharmacokinetics": "The label reports only onset and duration of action: benzonatate acts peripherally, begins to act within 15 to 20 minutes and its effect lasts for 3 to 8 hours, with no inhibitory effect on the respiratory center in recommended dosage. The label provides no data on absorption, distribution, metabolism or excretion of benzonatate (benzonatate capsules USP label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Benzonatate must be swallowed whole: chewing, biting or holding a capsule in the mouth releases the drug onto the oral mucosa, producing local anesthesia that can mask the sensation of choking and can impair swallowing (benzonatate capsules USP label, Information for Patients)",
+      "This is a paediatric safety issue, not just a cough symptom: fatal overdose from accidental ingestion has been reported in children below 10 years, with signs of overdose within 15 to 20 minutes and death within one hour, so the capsules must be kept out of reach of children (label, WARNINGS - Accidental Ingestion and Death in Children)",
+      "The label caps the dose at 200 mg per dose and 600 mg per day in three divided doses, and missed doses should be skipped rather than doubled (benzonatate capsules USP label, DOSAGE AND ADMINISTRATION and Information for Patients)",
+      "Benzonatate is a para-amino-benzoic acid class anaesthetic relative of procaine and tetracaine, so patients with prior sensitivity to related local anaesthetics, and patients on other prescription drugs, are more likely to experience CNS adverse effects such as confusion and hallucinations (label, PRECAUTIONS and WARNINGS - Psychiatric Effects)",
+      "Unlike opioid antitussives, benzonatate has no inhibitory effect on the respiratory centre at the recommended dosage (benzonatate capsules USP label, CLINICAL PHARMACOLOGY)",
+      "Benzonatate is not listed in the WHO Model List of Essential Medicines, 24th list (2025), nor in the Kenya Essential Medicines List 2023 (both documents were checked directly)"
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral use. Swallow benzonatate capsules whole; they are not to be broken, chewed, dissolved, cut or crushed (benzonatate capsules USP label, DOSAGE AND ADMINISTRATION and Information for Patients). Adults and children over 10 years: one 100 mg or 200 mg capsule three times a day as needed for cough, up to 600 mg daily in three divided doses if necessary; do not exceed a single dose of 200 mg or a total daily dosage of 600 mg (label, DOSAGE AND ADMINISTRATION and Information for Patients). Store at 20 to 25 degrees C (68 to 77 degrees F) per USP Controlled Room Temperature, protect from light, and dispense in tight (USP) child-resistant containers. Prescription only (Rx Only) (label, HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Benzonatate Capsules USP (Humanwell PuraCap / distributed by Epic Pharma), DailyMed setid 94e0ac6f-8c5a-1fdb-e053-2a95a90a3946, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Benzonatate Capsules USP, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Benzonatate Capsules USP, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Benzonatate Capsules USP, ADVERSE REACTIONS and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Benzonatate Capsules USP, DOSAGE AND ADMINISTRATION, Information for Patients and Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Benzonatate Capsules USP, PRECAUTIONS and WARNINGS - Psychiatric Effects",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "monitoring",
+      "ref": "No monitoring parameters or laboratory monitoring requirements are stated in the FDA Benzonatate Capsules USP label, which contains no laboratory tests, monitoring or follow-up section; the label instead relies on patient counselling (Information for Patients) and the paediatric ingestion warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Benzonatate Capsules USP, Information for Patients and WARNINGS - Accidental Ingestion and Death in Children",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Benzonatate Capsules USP, WARNINGS (Hypersensitivity, Psychiatric Effects, Accidental Ingestion and Death in Children)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Benzonatate Capsules USP, PRECAUTIONS (including Usage in Pregnancy and Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Benzonatate Capsules USP, WARNINGS and OVERDOSAGE - Signs and Symptoms",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Benzonatate Capsules USP label, which contains no food or diet statement; the only dietary advice in the label is to swallow the capsule whole with no food or liquid until oral numbness resolves",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, Benzonatate Capsules USP, Usage in Pregnancy - PREGNANCY CATEGORY C",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Benzonatate Capsules USP, Usage in Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Benzonatate Capsules USP, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Benzonatate Capsules USP, OVERDOSAGE (Signs and Symptoms and Treatment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Benzonatate Capsules USP, CLINICAL PHARMACOLOGY (onset and duration of action; no absorption, distribution, metabolism or excretion data are provided)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Benzonatate Capsules USP, CLINICAL PHARMACOLOGY, DOSAGE AND ADMINISTRATION, Information for Patients, PRECAUTIONS and WARNINGS; WHO Model List of Essential Medicines, 24th list (2025) and Kenya Essential Medicines List 2023 (absence of the drug verified against both lists)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed lists only generic benzonatate capsule products for this drug (for example the Nucare Pharmaceuticals label used here); no brand-named benzonatate product is listed on DailyMed, so no brand name is asserted",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=benzonatate&pagesize=5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No US boxed warning appears in the FDA Benzonatate Capsules USP label; the label carries a prominent WARNINGS section (Hypersensitivity; Psychiatric Effects; Accidental Ingestion and Death in Children) but not a boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "The FDA Benzonatate Capsules USP label contains no renal impairment section and specifies no renal dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "The FDA Benzonatate Capsules USP label contains no hepatic impairment section and specifies no hepatic dose adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Benzonatate Capsules USP, DOSAGE AND ADMINISTRATION, Information for Patients and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94e0ac6f-8c5a-1fdb-e053-2a95a90a3946"
+    }
+  ],
+  "unsourced_fields": [
+    "monitoring (the FDA label states no monitoring parameters or laboratory monitoring requirements)",
+    "dosage.geriatric (the FDA label contains no geriatric use statement and no geriatric dose adjustment)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness below 10 years is not established)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA label)"
+  ],
+  "notes": "The table stores this agent as 'Benzonatate' with the brand name 'Benzonatate', which is the generic name rather than a brand; DailyMed carries only generic benzonatate capsule products, so this draft asserts no brand name and leaves that stored value for review. The clinical content comes from the current FDA label for Benzonatate Capsules USP (DailyMed setid 94e0ac6f-8c5a-1fdb-e053-2a95a90a3946), which is the class of label inherited by all approved benzonatate products. This is an older-format US label (Rev. 10-2018-00) that still carries the lettered FDA pregnancy category C, which is obsolete under the Pregnancy and Lactation Labeling Rule but is reported here because the label states it. Benzonatate has no boxed warning in the US label, but the label does carry an explicit paediatric safety warning about accidental ingestion and death in children, which is recorded in warnings and precautions. Benzonatate is not included in the WHO Model List of Essential Medicines, 24th list (2025) or in the Kenya Essential Medicines List 2023 (both lists were checked directly)."
+}

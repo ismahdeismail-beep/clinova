@@ -1,0 +1,214 @@
+{
+  "name": "Beclometasone",
+  "existing_id": "aa154e7f-9208-439a-81e7-2b0ef8c791ae",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Beclomethasone dipropionate is a corticosteroid with potent anti-inflammatory activity; the precise mechanism of corticosteroid action on asthma is not known. Corticosteroids inhibit both inflammatory cells (mast cells, eosinophils, basophils, lymphocytes, macrophages and neutrophils) and the release of inflammatory mediators (histamine, eicosanoids, leukotrienes and cytokines). Beclomethasone dipropionate is a prodrug that is rapidly activated by hydrolysis to the active monoester beclomethasone-17-monopropionate (17-BMP), which in vitro binds the human glucocorticoid receptor with approximately 13 times the affinity of dexamethasone, 6 times that of triamcinolone acetonide, 1.5 times that of budesonide and 25 times that of beclomethasone dipropionate; the clinical significance of these findings is unknown (QVAR REDIHALER label, section 12.1). Studies in patients with asthma have shown a favourable ratio between topical anti-inflammatory activity and systemic corticosteroid effects at recommended doses. For the intranasal product, beclomethasone dipropionate is a prodrug that is extensively converted to the active metabolite beclomethasone-17-monopropionate, and the precise mechanism through which it affects rhinitis symptoms is unknown (QNASL Nasal Aerosol label, section 12.1).",
+    "indications": [
+      "QVAR REDIHALER (beclomethasone dipropionate HFA inhalation aerosol): maintenance treatment of asthma as prophylactic therapy in adults and pediatric patients 4 years of age and older. Limitation of use: not indicated for the relief of acute bronchospasm (QVAR REDIHALER label, sections 1 and 1.1).",
+      "QNASL Nasal Aerosol (beclomethasone dipropionate nasal spray): treatment of nasal symptoms associated with seasonal and perennial allergic rhinitis in patients 4 years of age and older (QNASL label, sections 1 and 1.1).",
+      "In the WHO Model List of Essential Medicines (23rd model list, 2023) beclometasone is listed as a therapeutic alternative to budesonide for antiasthmatic medicines, as an inhalation aerosol delivering 100 micrograms per dose and 200 micrograms per dose (WHO Model List of Essential Medicines, 23rd list, section 25.1)."
+    ],
+    "contraindications": [
+      "QVAR REDIHALER: contraindicated in the primary treatment of status asthmaticus or other acute episodes of asthma where intensive measures are required, and in patients with known hypersensitivity to beclomethasone dipropionate or any of the ingredients in QVAR REDIHALER (QVAR REDIHALER label, section 4).",
+      "QNASL Nasal Aerosol: contraindicated in patients with a history of hypersensitivity to beclomethasone dipropionate and/or any other QNASL Nasal Aerosol ingredients (QNASL label, section 4)."
+    ],
+    "side_effects": [
+      "QVAR REDIHALER: the most common adverse reactions (incidence >3% and greater than placebo) in adults and adolescents were oral candidiasis, upper respiratory tract infection, nasopharyngitis, allergic rhinitis, oropharyngeal pain and sinusitis; in the 320 mcg twice daily group oral candidiasis occurred in 7 of 214 patients (3%) and 15 of 211 patients (7%) at 640 mcg (QVAR REDIHALER label, sections 6 and 6.1, Table 1).",
+      "QVAR REDIHALER: postmarketing eye disorders - blurred vision and central serous chorioretinopathy (QVAR REDIHALER label, section 6.2).",
+      "QVAR REDIHALER: psychiatric and behavioural changes - aggression, depression, sleep disorders, psychomotor hyperactivity and suicidal ideation - have been reported, primarily in children (QVAR REDIHALER label, section 6.2).",
+      "QNASL: the most common adverse reactions (>=1% and greater than placebo) in patients 12 years and older were nasal discomfort, epistaxis and headache; in children 4 to 11 years the most common adverse reactions (>=2% and greater than placebo) were headache, pyrexia, upper respiratory tract infection and nasopharyngitis (QNASL label, sections 6 and 6.1).",
+      "QNASL: local nasal effects - in the 52-week safety trial in perennial allergic rhinitis, nasal erosions were identified in 4 of 415 patients and a nasal ulceration in 1 of 415 patients treated with QNASL, with no erosions or ulcerations in placebo recipients; one report of nasal septal perforation was observed in the dose-ranging pediatric trial (QNASL label, sections 5.1 and 6.1)."
+    ],
+    "dosage": {
+      "adult": "QVAR REDIHALER, for oral inhalation only, twice daily approximately 12 hours apart. Adults and adolescents 12 years and older not on an inhaled corticosteroid: recommended starting dose 40 to 80 mcg twice daily. When switching from another inhaled corticosteroid, select the starting strength (40, 80, 160 or 320 mcg twice daily) based on the previous product's strength and disease severity. If control is not adequate after 2 weeks the dose may be increased; maximum recommended dose for patients 12 years and older is 320 mcg twice daily. Titrate down over time to the lowest level that maintains proper asthma control (QVAR REDIHALER label, sections 2, 2.1 and 2.2). QNASL, for intranasal use only, once daily: adults and adolescents 12 years and older 320 mcg per day as 2 actuations of QNASL 80 mcg Nasal Aerosol in each nostril once daily (maximum 4 actuations per day); the dose counter should read 120 for the 80 mcg product and 60 for the 40 mcg product (QNASL label, sections 2, 2.1 and 3).",
+      "geriatric": "QVAR REDIHALER: clinical studies did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients, and other reported clinical experience has not identified differences in responses between elderly and younger patients; in general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range (QVAR REDIHALER label, section 8.5). QNASL: clinical trials did not include sufficient numbers of subjects aged 65 and older, and administration to elderly patients should be cautious, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy (QNASL label, section 8.5).",
+      "paediatric": "QVAR REDIHALER: safety and effectiveness for maintenance treatment of asthma have been established in pediatric patients aged 4 years and older (501 children aged 4 to 11 received at least one dose in a 12-week trial); safety and effectiveness in children below 4 years have not been established. Patients 4 to 11 years: starting dose 40 mcg twice daily, increased to 80 mcg twice daily if control is not adequate after 2 weeks; maximum 80 mcg twice daily (QVAR REDIHALER label, sections 2, 2.2 and 8.4). QNASL: safety and effectiveness have been established in children 4 years and older; the recommended dose in children 4 to 11 years is 80 mcg per day as 1 actuation of QNASL 40 mcg Nasal Aerosol in each nostril once daily (maximum 2 actuations per day); safety and effectiveness in children younger than 4 years have not been established (QNASL label, sections 2, 2.1 and 8.4)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug interaction studies have been performed with QNASL Nasal Aerosol (QNASL label, section 7).",
+      "In vitro and in vivo drug interaction studies have not been conducted with QVAR REDIHALER (QVAR REDIHALER label, section 12.3).",
+      "CYP3A: beclomethasone dipropionate undergoes extensive first-pass metabolism forming three metabolites via CYP3A4 (QNASL label, section 12.3), which is the reason potent CYP3A inhibitors are used with caution in other inhaled corticosteroid products (class statement, not asserted for these labels)."
+    ],
+    "monitoring": "Monitor growth of pediatric patients routinely (e.g. by stadiometry) receiving QVAR REDIHALER or QNASL (QVAR REDIHALER label, sections 5.8 and 8.4; QNASL label, sections 5.6 and 8.4). Monitor patients with major risk factors for decreased bone mineral content (QVAR REDIHALER label, section 5.9). Closely monitor patients with a change in vision or with a history of increased intraocular pressure, blurred vision, glaucoma and/or cataracts (QVAR REDIHALER label, section 5.10; QNASL label, section 5.2). Patients using QNASL over several months or longer should be examined periodically for changes in the nasal mucosa and for evidence of Candida infection, and QNASL should be discontinued if an erosion or ulceration is noted (QNASL label, section 5.1). Monitor for signs of systemic corticosteroid effects, particularly postoperatively or during periods of stress, and observe for evidence of inadequate adrenal response (QVAR REDIHALER label, section 5.7). Lung function (FEV1 or PEF), beta-agonist use and asthma symptoms should be carefully monitored during withdrawal of oral or other systemic corticosteroids after transfer to QVAR REDIHALER, and patients should be observed for signs and symptoms of adrenal insufficiency such as fatigue, lassitude, weakness, nausea and vomiting and hypotension (QVAR REDIHALER label, section 5.3).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labelling. Inform patients that localised Candida albicans infections of the mouth and pharynx have occurred and that rinsing the mouth with water without swallowing after inhalation is advised to reduce the risk of thrush; if oropharyngeal candidiasis develops, treat it with appropriate local or systemic antifungal therapy while continuing QVAR REDIHALER, temporarily interrupting it under close medical supervision if needed (QVAR REDIHALER label, section 17). Inform patients that QVAR REDIHALER is not a bronchodilator and is not rescue medicine for acute exacerbations; advise treating acute symptoms with an inhaled short-acting beta2-agonist such as albuterol and contacting the physician immediately if asthma deteriorates (section 17). Warn patients on immunosuppressant doses of corticosteroids to avoid exposure to chickenpox or measles and to consult their physician without delay if exposed, and inform them of the potential worsening of existing tuberculosis, fungal, bacterial, viral or parasitic infections, or ocular herpes simplex (section 17). Advise patients that systemic corticosteroid effects of hypercorticism and adrenal suppression may occur and that deaths due to adrenal insufficiency have occurred during and after transfer from systemic corticosteroids; patients should taper slowly from systemic corticosteroids when transferring to QVAR REDIHALER (section 17). Advise patients that immediate hypersensitivity reactions including urticaria, angioedema, rash, bronchospasm and hypotension, including anaphylaxis, may occur; they should discontinue the inhaler and seek emergency help if this happens (section 17). Advise patients at increased risk of decreased BMD that corticosteroid use may pose an additional risk, and inform them that orally inhaled corticosteroids may reduce growth velocity in children, so physicians should closely follow growth (section 17). Long-term use of inhaled corticosteroids may increase the risk of cataracts, glaucoma or blurred vision; consider regular eye examinations (section 17). Inform pregnant or nursing patients that they should contact their physician about the use of the inhaler (section 17). Advise patients to use the inhaler at regular intervals as directed, not to increase the prescribed dosage without contacting the prescriber, and not to stop use abruptly (section 17). For QVAR REDIHALER: clean the mouthpiece weekly with a clean dry cloth or tissue, never wash or immerse any part of the inhaler, store at room temperature avoiding extreme heat and cold, shaking before use is unnecessary, never take the inhaler apart, and discard the inhaler when the dose counter displays 0 or after the expiration date, whichever comes first (section 17). For QNASL: administer only by the intranasal route; the product does not require priming (QNASL label, sections 2 and 3).",
+    "warnings": [
+      "Oropharyngeal candidiasis: Candida albicans infection of the mouth and throat may occur; monitor patients periodically and advise rinsing the mouth with water without swallowing after inhalation (QVAR REDIHALER label, section 5.1).",
+      "Deterioration of asthma and acute episodes: do not use for relief of acute symptoms; patients require immediate re-evaluation during rapidly deteriorating asthma, and an inhaled short-acting beta2-agonist, not the inhaler, should be used for acute symptoms (QVAR REDIHALER label, section 5.2).",
+      "Transferring patients from systemic corticosteroids: risk of impaired adrenal function; taper patients slowly from systemic corticosteroids (QVAR REDIHALER label, section 5.3).",
+      "Immunosuppression and risk of infections: potential worsening of existing tuberculosis, fungal, bacterial, viral or parasitic infection, or ocular herpes simplex; a more serious or even fatal course of chickenpox or measles can occur in susceptible patients (QVAR REDIHALER label, section 5.4).",
+      "Paradoxical bronchospasm: bronchospasm with an immediate increase in wheezing may occur after dosing and may be life-threatening; treat immediately with an inhaled short-acting bronchodilator and discontinue (QVAR REDIHALER label, section 5.5).",
+      "Immediate hypersensitivity reactions: urticaria, angioedema, rash and bronchospasm may occur after administration; discontinue if such reactions occur (QVAR REDIHALER label, section 5.6).",
+      "Hypercorticism and adrenal suppression may occur with very high doses or at the regular dosage in susceptible individuals; if such changes occur, discontinue the inhaler slowly (QVAR REDIHALER label, section 5.7).",
+      "Effects on growth: orally inhaled corticosteroids may cause a reduction in growth velocity in pediatric patients (QVAR REDIHALER label, section 5.8; QNASL label, section 5.6).",
+      "Decreases in bone mineral density have been observed with long-term administration of inhaled corticosteroids; the clinical significance of small BMD changes for long-term outcomes such as fracture is unknown (QVAR REDIHALER label, section 5.9).",
+      "Glaucoma and cataracts: glaucoma, increased intraocular pressure, blurred vision and cataracts have been reported following long-term use of inhaled corticosteroids, so close monitoring is warranted (QVAR REDIHALER label, section 5.10; QNASL label, section 5.2).",
+      "Nasal local effects for QNASL: nasal discomfort, epistaxis, nasal ulceration, Candida albicans infection, nasal septal perforation and impaired wound healing; avoid use in patients with recent nasal ulcers, nasal surgery or nasal trauma (QNASL label, sections 5.1 and 5.4).",
+      "Hypothalamic-pituitary-adrenal axis effect for QNASL: systemic corticosteroid effects such as hypercorticism and adrenal suppression may appear at higher-than-recommended doses or in susceptible individuals at recommended doses; if such changes occur, discontinue QNASL slowly (QNASL label, section 5.5)."
+    ],
+    "precautions": [
+      "Particular care is needed in patients transferred from systemically active corticosteroids to QVAR REDIHALER because deaths due to adrenal insufficiency have occurred in asthmatic patients during and after transfer; after withdrawal from systemic corticosteroids a number of months are required for recovery of hypothalamic-pituitary-adrenal function. Patients previously maintained on 20 mg or more per day of prednisone (or equivalent) may be most susceptible, and during periods of stress or severe asthmatic attack they should resume oral corticosteroids immediately and carry a warning card (QVAR REDIHALER label, section 5.3).",
+      "Transfer of patients from systemic corticosteroid therapy to QVAR REDIHALER may unmask allergic conditions previously suppressed by systemic therapy, such as rhinitis, conjunctivitis, eczema, arthritis and eosinophilic conditions, and during withdrawal some patients may experience symptoms of systemic corticosteroid withdrawal such as joint or muscular pain, lassitude and depression despite stable or improved respiratory function (QVAR REDIHALER label, section 5.3).",
+      "Inhaled corticosteroids should be used with caution, if at all, in patients with active or quiescent tuberculosis infection of the respiratory tract, untreated systemic fungal, bacterial, parasitic or viral infections, or ocular herpes simplex (QVAR REDIHALER label, section 5.4).",
+      "For QNASL, corticosteroids should be used with caution, if at all, in patients with active or quiescent tuberculous infections of the respiratory tract, untreated local or systemic fungal or bacterial infections, systemic viral or parasitic infections, or ocular herpes simplex (QNASL label, section 5.4).",
+      "Because of the inhibitory effect of corticosteroids on wound healing, patients who have experienced recent nasal septal ulcers, nasal surgery or nasal trauma should not use QNASL until healing has occurred (QNASL label, section 5.1).",
+      "Replacement of a systemic corticosteroid with a topical corticosteroid can be accompanied by signs of adrenal insufficiency and symptoms of corticosteroid withdrawal; in patients with asthma or other conditions requiring long-term systemic corticosteroids, rapid decreases in systemic doses may cause severe exacerbation (QNASL label, section 5.5).",
+      "Do not use QVAR REDIHALER with a spacer or volume holding chamber, and shaking the inhaler prior to use is not necessary; do not shake with the cap open (QVAR REDIHALER label, section 2.1).",
+      "The effect of renal impairment and of hepatic impairment on the pharmacokinetics of QVAR REDIHALER has not been evaluated (QVAR REDIHALER label, section 12.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Oropharyngeal candidiasis (QVAR REDIHALER label, section 5.1).",
+      "Immunosuppression and risk of infections, including a more serious or fatal course of chickenpox or measles in susceptible patients (QVAR REDIHALER label, section 5.4).",
+      "Hypercorticism and adrenal suppression, including adrenal crisis (QVAR REDIHALER label, section 5.7).",
+      "Reduction in bone mineral density (QVAR REDIHALER label, section 5.9).",
+      "Growth effects including reduction in growth velocity in children (QVAR REDIHALER label, sections 5.8 and 8.4).",
+      "Glaucoma, increased intraocular pressure, blurred vision and cataracts (QVAR REDIHALER label, section 5.10; QNASL label, section 5.2).",
+      "Paradoxical bronchospasm, which may be life-threatening (QVAR REDIHALER label, section 5.5).",
+      "Immediate hypersensitivity reactions including anaphylaxis (QVAR REDIHALER label, section 5.6; QNASL label, section 5.3).",
+      "Nasal septal perforation and nasal ulceration with intranasal use (QNASL label, sections 5.1 and 6.1)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "QVAR REDIHALER: there are no adequate and well-controlled studies in pregnant women, and available human data do not establish the presence or absence of drug-associated risk to the fetus; the risk of complications to the mother and fetus from inadequate control of asthma must be balanced against the risks of exposure to beclomethasone dipropionate, and in women with poorly or moderately controlled asthma there is an increased risk of preeclampsia in the mother and of prematurity, low birth weight and small for gestational age in the neonate, so asthma control should be closely monitored and treatment adjusted. In animal reproduction studies, beclomethasone dipropionate produced dose-related gross injury to the fetal adrenal glands in rats exposed by inhalation at doses greater than 180 times the maximum recommended human daily inhalation dose (MRHDID) of 0.64 mg/day, with no external or skeletal malformations or embryolethality at inhalation doses up to 440 times the MRHDID, and produced cleft palate in mice and external and skeletal malformations and embryolethality in rabbits at subcutaneous doses equal to or greater than about 0.75 times the MRHDID (QVAR REDIHALER label, section 8.1). QNASL: there are no adequate and well-controlled studies in pregnant women; in rats exposed by inhalation, dose-related gross injury to the fetal adrenal glands was observed at doses greater than 350 times the MRHD of 0.32 mg/day, with no external or skeletal malformations or embryolethality at up to 860 times the MRHD, and adverse developmental effects including cleft palate occurred in mice and rabbits at subcutaneous doses of 1.5 times the MRHD or greater (QNASL label, section 8.1).",
+    "lactation_guidance": "QVAR REDIHALER: there are no data available on the presence of beclomethasone dipropionate in human milk, on the effects on the breastfed child, or on the effects on milk production, although other inhaled corticosteroids have been detected in human milk; the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for the inhaler and any potential adverse effects on the breastfed child from beclomethasone dipropionate or from the underlying maternal condition (QVAR REDIHALER label, section 8.2). QNASL: the same position is stated for the intranasal product (QNASL label, section 8.2).",
+    "overdose": "QNASL: chronic overdosage may result in signs and symptoms of hypercorticism, and there are no data available on the effects of acute or chronic overdosage with QNASL Nasal Aerosol (QNASL label, section 10). The QVAR REDIHALER prescribing information does not contain a separate Overdosage section, so no overdose instructions are stated for the inhaler in that label.",
+    "pharmacokinetics": "QVAR REDIHALER: beclomethasone dipropionate undergoes rapid and extensive conversion to beclomethasone-17-monopropionate during absorption. After inhalation of 320 mcg, the mean peak plasma concentration of beclomethasone dipropionate was 6635 pg/mL at 2 minutes and that of 17-BMP was 1464 pg/mL at 10 minutes; in vitro protein binding for 17-BMP was 94% to 96% and there is no evidence of tissue storage. The major route of elimination appears to be hydrolysis, more than 90% of inhaled beclomethasone dipropionate is found as 17-BMP in the systemic circulation, and the mean terminal half-life of 17-BMP is approximately 4 hours. Three major metabolites are formed via esterases: beclomethasone-17-monopropionate, beclomethasone-21-monopropionate and beclomethasone. Irrespective of route, beclomethasone dipropionate and its metabolites are mainly excreted in the faeces and less than 10% in the urine (QVAR REDIHALER label, section 12.3). QNASL: following intranasal administration most beclomethasone dipropionate is converted to beclomethasone-17-monopropionate during absorption; systemic bioavailability of QNASL 320 mcg was approximately 27.5% and peak exposure approximately 19.5% of orally inhaled beclomethasone dipropionate HFA 320 mcg, and there was no accumulation with repeated once-daily dosing. In vitro protein binding of 17-BMP is 94% to 96%, volume of distribution at steady state is 20 L for beclomethasone dipropionate and 424 L for 17-BMP, and the mean elimination half-life of 17-BMP is 2.8 hours with terminal half-lives after intranasal dosing of about 0.3 hours and 4.5 hours respectively (QNASL label, section 12.3).",
+    "clinical_pearls": [
+      "'Beclometasone' is the INN/BAN spelling of 'beclomethasone'; the FDA labels for these products use 'beclomethasone dipropionate'. This monograph covers the corticosteroid alone and is separate from the fixed-dose combination inhaler 'Beclometasone/Formoterol', which is covered in its own monograph and has its own product information.",
+      "Beclometasone exists as two distinct FDA-labelled products with different indications, routes and strengths: an inhaled corticosteroid for asthma maintenance (QVAR REDIHALER 40 mcg and 80 mcg per actuation, no spacer) and an intranasal spray for allergic rhinitis (QNASL 40 mcg and 80 mcg per actuation). Their indications, doses, contraindications and warnings are stated separately here and are not merged.",
+      "QVAR REDIHALER is not a rescue inhaler: an inhaled short-acting beta2-agonist is needed for acute symptoms and for status asthmaticus (QVAR REDIHALER label, sections 1 and 5.2).",
+      "When transferring a patient from systemic corticosteroids, taper slowly: deaths from adrenal insufficiency have occurred in asthmatic patients during and after transfer to inhaled corticosteroids, and HPA-axis recovery can take months (QVAR REDIHALER label, section 5.3).",
+      "Growth velocity: in a 12-month controlled trial, mean growth velocity in children treated with beclomethasone dipropionate HFA without a spacer was approximately 0.5 cm/year less than in children treated with CFC-propelled beclomethasone dipropionate via a large-volume spacer (QVAR REDIHALER label, section 8.4).",
+      "Rinsing the mouth with water without swallowing after inhalation reduces the risk of oropharyngeal candidiasis (QVAR REDIHALER label, sections 2.1 and 5.1).",
+      "The QVAR REDIHALER inhaler must not be used with a spacer or volume holding chamber, does not require priming, and should be discarded when the dose counter reaches 0 (QVAR REDIHALER label, section 2.1).",
+      "In the WHO Model List of Essential Medicines 2023, beclometasone appears as a therapeutic alternative to budesonide, as an inhalation aerosol delivering 100 micrograms per dose and 200 micrograms per dose, and beclometasone plus formoterol appears as a therapeutic alternative to budesonide plus formoterol (WHO Model List of Essential Medicines, 23rd list, section 25.1). Beclometasone is not in the Kenya Essential Medicines List."
+    ],
+    "brand_names": ["QVAR RediHaler", "QVAR", "QNASL", "Beconase"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "QVAR REDIHALER: for oral inhalation only; administer by oral inhalation and rinse the mouth with water without swallowing after inhalation. Do not use with a spacer or volume holding chamber; shaking before use is not necessary and the inhaler should not be shaken with the cap open; the inhaler does not require priming; keep it clean and dry, never wash or immerse any part in water, and wipe the mouthpiece weekly with a clean dry cloth or tissue. The dose counter starts at 120, changes to red at 20 and the background becomes solid red at 0; discard the inhaler when the counter displays 0 or after the expiration date, whichever comes first (QVAR REDIHALER label, sections 2.1 and 16). QNASL: for intranasal use only; administer by the intranasal route; the dose counter should read 120 for the 80 mcg 120-actuation product and 60 for the 40 mcg 60-actuation product; the product does not require priming (QNASL label, sections 2 and 3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "QVAR REDIHALER (beclomethasone dipropionate HFA) label, section 12.1; QNASL Nasal Aerosol label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "indications",
+      "ref": "QVAR REDIHALER label, sections 1 and 1.1; QNASL Nasal Aerosol label, sections 1 and 1.1; WHO Model List of Essential Medicines, 23rd model list (2023), section 25.1 antiasthmatic medicines",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "contraindications",
+      "ref": "QVAR REDIHALER label, section 4; QNASL Nasal Aerosol label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "side_effects",
+      "ref": "QVAR REDIHALER label, sections 6, 6.1 (Table 1) and 6.2; QNASL Nasal Aerosol label, sections 5.1, 6 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "dosage",
+      "ref": "QVAR REDIHALER label, sections 2, 2.1, 2.2, 8.4 and 8.5; QNASL Nasal Aerosol label, sections 2, 2.1, 3, 8.4 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "interactions",
+      "ref": "QNASL Nasal Aerosol label, section 7 and section 12.3 (metabolism via CYP3A4); QVAR REDIHALER label, section 12.3 (drug interaction studies not conducted)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8d8e84-b5d2-4e56-97ec-4f72971465c5"
+    },
+    {
+      "field": "monitoring",
+      "ref": "QVAR REDIHALER label, sections 5.3, 5.7, 5.8, 5.9, 5.10 and 8.4; QNASL Nasal Aerosol label, sections 5.1, 5.2, 5.6 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "QVAR REDIHALER label, section 17 (Patient Counseling Information); QNASL Nasal Aerosol label, sections 2 and 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "warnings",
+      "ref": "QVAR REDIHALER label, sections 5.1 to 5.10; QNASL Nasal Aerosol label, sections 5.1 to 5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "precautions",
+      "ref": "QVAR REDIHALER label, sections 2.1, 5.3, 5.4 and 12.3; QNASL Nasal Aerosol label, sections 5.1, 5.4 and 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "QVAR REDIHALER label, sections 5.1, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10 and 8.4; QNASL Nasal Aerosol label, sections 5.1, 5.2, 5.3 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the QVAR REDIHALER or QNASL Nasal Aerosol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "QVAR REDIHALER label, section 8.1; QNASL Nasal Aerosol label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "QVAR REDIHALER label, section 8.2; QNASL Nasal Aerosol label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "overdose",
+      "ref": "QNASL Nasal Aerosol label, section 10 (the QVAR REDIHALER label contains no separate Overdosage section)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8d8e84-b5d2-4e56-97ec-4f72971465c5"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "QVAR REDIHALER label, section 12.3; QNASL Nasal Aerosol label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "QVAR REDIHALER label, sections 1, 2.1, 5.2, 5.3, 8.4 and 12.3; QNASL Nasal Aerosol label, section 12.3; WHO Model List of Essential Medicines, 23rd model list (2023), section 25.1",
+      "url": "https://iris.who.int/server/api/core/bitstreams/18bcae05-7432-435d-bc15-df0a9bdb4a89/content"
+    },
+    {
+      "field": "brand_names",
+      "ref": "QVAR REDIHALER (Teva Respiratory), QVAR (Teva), QNASL (Teva Respiratory) and BECONASE (beclomethasone dipropionate monohydrate nasal spray) listed on DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8d8e84-b5d2-4e56-97ec-4f72971465c5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the QVAR REDIHALER or QNASL Nasal Aerosol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "QVAR REDIHALER label, section 12.3 (the effect of renal impairment on the pharmacokinetics of QVAR REDIHALER has not been evaluated; no renal dose adjustment is specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "QVAR REDIHALER label, section 12.3 (the effect of hepatic impairment on the pharmacokinetics of QVAR REDIHALER has not been evaluated; no hepatic dose adjustment is specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "QVAR REDIHALER label, sections 2.1 and 16; QNASL Nasal Aerosol label, sections 2 and 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cada897a-264e-450d-ae00-36e7fe747080"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative indication-specific regimens are provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimens are provided in fields.dosage.paediatric)",
+    "pregnancy_category (both FDA labels use narrative risk summaries under the Pregnancy and Lactation Labeling Rule and assign no lettered pregnancy category)",
+    "renal_dose_adjustment (the QVAR REDIHALER label states that the effect of renal impairment on its pharmacokinetics has not been evaluated and specifies no renal dose adjustment)",
+    "hepatic_dose_adjustment (the QVAR REDIHALER label states that the effect of hepatic impairment on its pharmacokinetics has not been evaluated and specifies no hepatic dose adjustment)"
+  ],
+  "notes": "The table stores this agent as 'Beclometasone'; 'beclomethasone' is the US label spelling of the same INN/BAN name, and this monograph covers the inhaled/nasal corticosteroid alone only. The fixed-dose combination inhaler beclometasone/formoterol is a different product with its own label and is covered in the separate 'Beclometasone/Formoterol' monograph; the relationship between the two is stated in the clinical_pearls of both. Two FDA products are covered here with separate attributions throughout: QVAR REDIHALER (beclomethasone dipropionate HFA inhalation aerosol, 40 mcg and 80 mcg per actuation, asthma maintenance, age 4 years and older) and QNASL Nasal Aerosol (beclomethasone dipropionate nasal spray, 40 mcg and 80 mcg per actuation, allergic rhinitis, age 4 years and older); the older BECONASE aqueous nasal spray is listed as a brand name but its content is not separately summarised. The WHO Model List of Essential Medicines 2023 (23rd list) lists beclometasone as a therapeutic alternative to budesonide with an inhalation aerosol strength of 100 and 200 micrograms per dose. Beclometasone is not in the Kenya Essential Medicines List. content_status remains needs_review."
+}

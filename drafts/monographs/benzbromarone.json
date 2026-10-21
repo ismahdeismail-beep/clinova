@@ -1,0 +1,211 @@
+{
+  "name": "Benzbromarone",
+  "existing_id": "82157863-1dbc-4db9-88bb-12f831747d80",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Benzbromarone has a uricosuric effect by inhibiting the reabsorption of uric acid in the proximal tubule. The reduction in serum urate concentration caused by the uricosuric effect over an appropriate treatment period leads to a mobilization of urate depots in the tissues of gout patients. To prevent crystallization or deposition of the uric acid, which is increasingly excreted via the kidney, it is essential to provide an ample supply of fluids and, especially at the beginning of treatment, to improve the solubility of the uric acid by neutralizing the urine (EU SmPC for Narcaricin mite (benzbromarone) 50 mg, section 5.1 Pharmacodynamic properties).",
+    "indications": [
+      "Hyperuricaemia with blood uric acid concentrations of 500 micromol/L (8.5 mg/100 mL) and above, if it cannot be controlled by means of an adequate diet (EU SmPC, section 4.1 Therapeutic indications)",
+      "Disorders caused by an increased uric acid concentration in the blood, except for urate nephropathy, urate nephrolithiasis, and primary hyperuricaemia with an overproduction of uric acid (EU SmPC, section 4.1)",
+      "Secondary hyperuricaemia due to medicinal or radiation tumour therapy (EU SmPC, section 4.1)",
+      "Narcaricin mite may be taken in patients with hyperuricemia or gout (arthritis urica) requiring treatment only as a second-line therapy, this applies if treatment of hyperuricaemia or gout with allopurinol is not possible (e.g. in case of contraindications, intolerances, hypersensitivity or lack of therapeutic efficacy) (EU SmPC, section 4.1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance (benzbromarone) or to any of the excipients (EU SmPC, section 4.3)",
+      "Impaired renal function (EU SmPC, section 4.3)",
+      "Kidney stone diathesis (EU SmPC, section 4.3)",
+      "Patients with pre-existing liver disorder or corresponding symptoms (EU SmPC, section 4.3)",
+      "During pregnancy (EU SmPC, sections 4.3 and 4.6)",
+      "Must not be used in secondary hyperuricemia due to hematological diseases (EU SmPC, section 4.3)",
+      "Not indicated in an acute gout attack (EU SmPC, sections 4.3 and 4.4)"
+    ],
+    "side_effects": [
+      "Nervous system: headache (very rare) (EU SmPC, section 4.8)",
+      "Eye: conjunctivitis (very rare) (EU SmPC, section 4.8)",
+      "Gastrointestinal: nausea, bloating and diarrhoea (uncommon) (EU SmPC, section 4.8)",
+      "Liver and biliary diseases: cytolytic hepatitis, which in some cases took a fulminant course (very rare) (EU SmPC, section 4.8)",
+      "Skin and subcutaneous tissue: urticaria (rare), allergic exanthema (very rare) (EU SmPC, section 4.8)",
+      "Kidneys and urinary tract: urate stones, gout attack, increased urination (very rare); at the beginning of treatment uric acid excretion may be so increased that both a gout attack and the formation of uric acid crystals or uric acid stones in the kidney and draining urinary tract may occur (EU SmPC, section 4.8)",
+      "Diseases of the genital organs and mammary gland: temporary impotence (very rare) (EU SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Dosing is initiated incrementally, starting with half a tablet (corresponding to 25 mg benzbromarone) once daily; for long-term treatment adults and adolescents (14 years and older) take 1 to 2 tablets (corresponding to 50 to 100 mg benzbromarone) once daily. At the beginning of treatment uric acid excretion in the urine is high, so the dosage should be gradual, and sufficient fluid intake with appropriate adjustment of the urine pH (pH 6.6 to 6.8) is essential (EU SmPC, section 4.2 Posology and method of administration).",
+      "geriatric": null,
+      "paediatric": "The safety and efficacy of Narcaricin mite in children and adolescents under 14 years of age has not yet been established (EU SmPC, section 4.2, children and adolescents)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Co-administration of potentially hepatotoxic drugs (including tuberculostatics) should be avoided (EU SmPC, section 4.5)",
+      "The uricosuric effect of benzbromarone may be attenuated by concomitant administration of salicylates and sulfinpyrazone (EU SmPC, section 4.5)",
+      "Benzbromarone may increase the anticoagulant effect of coumarin anticoagulants (e.g. warfarin); close monitoring of therapy by determination of thromboplastin time (Quick value) or INR value should be performed during concomitant use (EU SmPC, section 4.5)"
+    ],
+    "monitoring": "Liver enzyme levels (including transaminases) should be monitored before starting treatment and regularly during the entire therapy (EU SmPC, section 4.4). The patient must be informed before administration that severe hepatic disturbances are possible; if symptoms such as nausea, vomiting, abdominal pain, asthenia and icterus occur, treatment must be discontinued immediately, a doctor must be consulted, a determination of transaminase activity must be performed, and the patient must be monitored until normalization of the liver enzyme values is achieved (section 4.4).",
+    "patient_counselling": "Take the tablet unchewed after a meal with a sufficient amount of liquid (about one glass of water), always at the same time of day if possible (EU SmPC, section 4.2). Drink enough fluid and follow the advice on adjusting urine pH, because benzbromarone increases urinary uric acid excretion (section 4.2). Avoid purine-rich foods such as offal (sweetbreads, kidney, brain, liver, heart, tongue) and meat extract, and avoid alcohol, especially beer, because it furthers the intake of guanosine which strongly increases uric acid levels (section 4.2). If nausea, vomiting, abdominal pain, asthenia or jaundice (icterus) occur, stop the treatment immediately and consult a doctor; liver enzymes will be checked and you must be monitored until they normalise (section 4.4). Do not start benzbromarone during an acute gout attack: after gout is diagnosed, therapy should be started only after relief of the acute symptoms, at the earliest 2 weeks after the start of the attack, and ongoing treatment should not be interrupted during an acute gout attack (section 4.4). Benzbromarone must not be taken during pregnancy and should not be taken while breast-feeding (section 4.6).",
+    "warnings": [
+      "Severe hepatic disturbances: patients must be informed before administration of the possibility of severe hepatic disturbances, and if symptoms such as nausea, vomiting, abdominal pain, asthenia and icterus occur, treatment must be discontinued immediately, a doctor must be consulted, transaminase activity must be determined and the patient must be monitored until liver enzyme values normalize (EU SmPC, section 4.4)",
+      "Must not be taken during an acute gout attack, because uric acid levels in the blood may rise at the beginning of treatment and worsen disease symptoms (EU SmPC, section 4.4)",
+      "Each tablet contains less than 1 mmol sodium (23 mg), that is, essentially sodium-free (EU SmPC, section 4.4)"
+    ],
+    "precautions": [
+      "Monitor liver enzymes (including transaminases) before starting treatment and regularly during the entire therapy (EU SmPC, section 4.4)",
+      "Do not interrupt an ongoing course of benzbromarone during an acute gout attack; start therapy only after acute symptoms have relieved, at the earliest 2 weeks after the start of the attack (EU SmPC, section 4.4)",
+      "Patients with impaired renal function, kidney stone diathesis, or a pre-existing liver disorder or corresponding symptoms are excluded from treatment (EU SmPC, sections 4.3 and 4.4)",
+      "Ensure ample fluid supply and, especially at the beginning of treatment, improve the solubility of uric acid by neutralizing the urine, since increasingly excreted uric acid can crystallize or deposit (EU SmPC, sections 4.2 and 5.1)",
+      "Preclinical safety: in long-term studies in rats, benzbromarone induced hepatocellular carcinomas, which is probably a species-specific effect in the rat and has no clinical relevance; benzbromarone has been insufficiently studied with respect to mutagenic potential, although previous studies were negative (EU SmPC, section 5.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Cytolytic hepatitis, which in some cases took a fulminant course (very rare) (EU SmPC, section 4.8)",
+      "Urate stones and increased urinary uric acid excretion, which may precipitate a gout attack or uric acid stone formation in the kidney and draining urinary tract at the start of treatment (EU SmPC, section 4.8)",
+      "Allergic exanthema and urticaria (rare to very rare) (EU SmPC, section 4.8)"
+    ],
+    "food_interactions": [
+      "Purine-rich foods should be avoided, such as innards like sweetbreads, kidney, brain, liver, heart and tongue, as well as meat extract (EU SmPC, section 4.2)",
+      "Alcohol should be avoided, especially beer, because it furthers the intake of guanosine, a ribonucleoside, which strongly increases the uric acid levels (EU SmPC, section 4.2)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Benzbromarone is contraindicated in pregnancy because there are no data available regarding the use of this medicine in pregnant women, and experimental studies in animals have indicated that it may cause deformities (EU SmPC, section 4.6). In animal studies, benzbromarone at doses above 30 mg/kg per day during organogenesis produced malformations of the extremities and cleft lip in the rat, and doses of 30 mg/kg per day produced embryo-lethal effects in the mouse (section 5.3). There is no FDA-approved label for benzbromarone, so no FDA lettered pregnancy category applies.",
+    "lactation_guidance": "As it is not known whether benzbromarone passes into breast milk, Narcaricin mite should not be taken when breast-feeding. If administration of benzbromarone is required during breastfeeding, breastfeeding should be avoided (EU SmPC, section 4.6).",
+    "overdose": "A specific benzbromarone poisoning pattern and a specific antidote are not known. In the case of suspected poisoning, resorption-reducing or elimination-accelerating measures are indicated (EU SmPC, section 4.9).",
+    "pharmacokinetics": "Benzbromarone is approximately 50 to 60% reabsorbed from the intestine, depending on particle size (micronization). It is metabolized predominantly via hydroxylation to the two major metabolites 6-hydroxy-benzbromarone (elimination half-life 17 hours) and 1-hydroxy-benzbromarone (elimination half-life 20 hours), while dehalogenation is only of minor importance; the elimination half-life of benzbromarone itself is 3 hours. Benzbromarone is almost completely bound to plasma proteins. The uricosuric effect is strongest after about 8 to 12 hours, with both benzbromarone and the two major metabolites being uricosuric. Elimination of benzbromarone and its hydroxylated metabolites is predominantly biliary via the gastrointestinal tract, with approximately 5% of the administered dose excreted in the urine (EU SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Benzbromarone is a uricosuric agent, not a xanthine oxidase inhibitor: it lowers serum urate by blocking tubular reabsorption of urate, so urinary urate excretion rises sharply at the start of treatment - adequate fluids and urine alkalinisation (pH 6.6 to 6.8) are mandatory to prevent crystalluria and uric acid stones (EU SmPC, sections 4.2 and 5.1)",
+      "Start low and titrate: the SmPC specifies 25 mg once daily initially, then 50 to 100 mg once daily for long-term treatment, because urate excretion is highest at the start (EU SmPC, section 4.2)",
+      "Never start during an acute gout flare; the SmPC allows starting at the earliest 2 weeks after the onset of an attack, and ongoing treatment should not be interrupted during an attack (EU SmPC, section 4.4)",
+      "The safety issue that decides this drug is hepatotoxicity: fulminant cytolytic hepatitis has occurred, so liver enzymes must be checked before and during treatment and the drug must be stopped immediately at any symptom of hepatic injury (EU SmPC, sections 4.4 and 4.8)",
+      "Its place in therapy is second line: the SmPC restricts use to patients in whom allopurinol cannot be used because of contraindications, intolerances, hypersensitivity or lack of efficacy (EU SmPC, section 4.1)",
+      "Benzbromarone is not listed in the WHO Model List of Essential Medicines, 24th list (2025), nor in the Kenya Essential Medicines List 2023 (both documents were checked directly), so availability depends on national registration rather than essential-medicines procurement"
+    ],
+    "brand_names": ["Narcaricin mite"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral use. Dosing is initiated incrementally with half a tablet (25 mg benzbromarone) once daily and titrated to 1 to 2 tablets (50 to 100 mg) once daily for long-term treatment; at the start of treatment the dosage should be gradual because uric acid excretion in the urine is high (EU SmPC, section 4.2). Tablets are taken unchewed after a meal with a sufficient amount of liquid (about one glass of water), always at the same time of day if possible (section 4.2). Ensure sufficient fluid intake and appropriate adjustment of the urine pH (pH 6.6 to 6.8), and avoid purine-rich foods and alcohol, especially beer (section 4.2). No special storage conditions are required; shelf life is 5 years. Packs of 30 and 100 tablets and an institutional pack of 300 (10 x 30) tablets are available; not all pack sizes may be marketed. Prescription only (EU SmPC, sections 4.2, 6.3, 6.4, 6.5 and 11)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "EU Summary of Product Characteristics, Narcaricin mite (benzbromarone) 50 mg per tablet, marketing authorisation holder SANO Arzneimittelfabrik GmbH, text revised February 2020 (published by ANSM, French national medicines agency), section 5.1 Pharmacodynamic properties",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.1 Therapeutic indications",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.3 Contraindications and 4.6 Fertility, pregnancy and lactation",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.8 Undesirable effects",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.2 Posology and method of administration (including children and adolescents)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.4 Special warnings and precautions for use",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.2, 4.4 and 4.6",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.4 Special warnings and precautions for use",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.2, 4.3, 4.4 and 5.3 Preclinical safety data",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.8 Undesirable effects",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.2 Posology and method of administration (dietary and alcohol advice)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA lettered pregnancy category: benzbromarone has no FDA-approved label (DailyMed returns no SPL for the drug name) and the EU SmPC states no lettered category; it simply contraindicates use in pregnancy (section 4.3 and 4.6)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.6 Fertility, pregnancy and lactation and 5.3 Preclinical safety data",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.6 Fertility, pregnancy and lactation (breast-feeding)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.9 Overdose",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 5.2 Pharmacokinetic properties",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.1, 4.2, 4.4, 4.8 and 5.1; WHO Model List of Essential Medicines, 24th list (2025) and Kenya Essential Medicines List 2023 (absence of the drug verified against both lists)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Product name given in section 1 of the EU SmPC: 'Narcaricin mite, Benzbromarone 50 mg per tablet' (marketing authorisation number 325.00.00, SANO Arzneimittelfabrik GmbH)",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No US boxed warning exists (there is no FDA-approved label for benzbromarone); the EU SmPC carries no boxed-warning equivalent, and the equivalent safety requirement is the special warning in section 4.4 on severe hepatic disturbances",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, section 4.3: use in impaired renal function is contraindicated and no renal dose adjustment is specified",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.3 and 4.4: use in patients with a pre-existing liver disorder is contraindicated and no hepatic dose adjustment is specified",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "EU SmPC, Narcaricin mite (benzbromarone) 50 mg, sections 4.2, 6.3, 6.4, 6.5 and 11 Sale delimitation",
+      "url": "https://ansm.sante.fr/uploads/2024/01/16/20240116-apac-narcaricin-rcp-version-anglaise.pdf"
+    }
+  ],
+  "unsourced_fields": [
+    "dosage.geriatric (the EU SmPC contains no geriatric dose statement; long-term dosing is given for adults and adolescents 14 years and older)",
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and efficacy below 14 years is not established)",
+    "pregnancy_category (there is no FDA-approved label for benzbromarone, so no FDA lettered category applies)",
+    "renal_dose_adjustment (no renal dose adjustment is specified; use in impaired renal function is contraindicated)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified; use in patients with a pre-existing liver disorder is contraindicated)"
+  ],
+  "notes": "The table stores this agent as 'Benzbromarone' with no brand names; the row's content_status_note records that antipsychotic/olanzapine-derived text had previously been copied onto this row and was removed on 2026-10-05, and none of it is carried forward. Benzbromarone has no FDA-approved label (DailyMed returns zero SPLs for the drug name) and is not listed in the WHO Model List of Essential Medicines, 24th list (2025) or in the Kenya Essential Medicines List 2023 (both lists were searched directly). The clinical content here therefore comes from the EU Summary of Product Characteristics for Narcaricin mite (benzbromarone) 50 mg, marketing authorisation holder SANO Arzneimittelfabrik GmbH, text revised February 2020, published by ANSM (the French national medicines agency, an EMA-network authority) - this is a national EU SmPC rather than a centrally authorised EMA product, as the authorisation shown in the document is a national one (marketing authorisation number 325.00.00, holder in Germany), so availability of this product depends on national registration. EU SmPCs have no lettered pregnancy category and no US-style boxed warning; the equivalent EU requirement for this drug is the special warning in section 4.4 on severe hepatic disturbances, which is recorded in warnings."
+}

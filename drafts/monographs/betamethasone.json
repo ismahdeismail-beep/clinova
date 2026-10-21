@@ -1,0 +1,270 @@
+{
+  "name": "Betamethasone",
+  "existing_id": "fe42961c-781d-4357-bb15-abf196d157d1",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Betamethasone is a synthetic adrenocortical (glucocorticoid) steroid. The FDA Celestone Soluspan label describes glucocorticoids as adrenocortical steroids that are readily absorbed from the gastrointestinal tract; their synthetic analogues are primarily used for their anti-inflammatory effects in disorders of many organ systems, while the naturally occurring glucocorticoids (hydrocortisone and cortisone), which have salt-retaining properties, are used as replacement therapy in adrenocortical deficiency states. Betamethasone is a derivative of prednisolone with a 16beta-methyl group that enhances the anti-inflammatory action of the molecule and reduces the sodium- and water-retaining properties of the fluorine atom bound at carbon 9. In the injectable suspension, betamethasone sodium phosphate is a water-soluble ester that provides prompt activity and betamethasone acetate is only slightly soluble and affords sustained activity (FDA Celestone Soluspan label, DESCRIPTION and CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "When oral therapy is not feasible, intramuscular use of betamethasone sodium phosphate and betamethasone acetate injectable suspension (Celestone Soluspan) is indicated for control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity reactions, perennial or seasonal allergic rhinitis, serum sickness and transfusion reactions (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated in bullous dermatitis herpetiformis, exfoliative erythroderma, mycosis fungoides, pemphigus and severe erythema multiforme (Stevens-Johnson syndrome) (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated in congenital adrenal hyperplasia, hypercalcemia associated with cancer and nonsuppurative thyroiditis; hydrocortisone or cortisone is the drug of choice in primary or secondary adrenocortical insufficiency and synthetic analogues may be used in conjunction with mineralocorticoids where applicable (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated to tide the patient over a critical period of the disease in regional enteritis and ulcerative colitis (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated in acquired (autoimmune) hemolytic anemia, Diamond-Blackfan anemia, pure red cell aplasia and selected cases of secondary thrombocytopenia (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated in trichinosis with neurologic or myocardial involvement and tuberculous meningitis with subarachnoid block or impending block when used with appropriate antituberculous chemotherapy (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated for palliative management of leukemias and lymphomas (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated for acute exacerbations of multiple sclerosis and for cerebral edema associated with primary or metastatic brain tumor or craniotomy (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated for sympathetic ophthalmia, temporal arteritis, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated to induce diuresis or remission of proteinuria in idiopathic nephrotic syndrome or that due to lupus erythematosus (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intramuscular use is indicated in berylliosis, fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy, idiopathic eosinophilic pneumonias and symptomatic sarcoidosis (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "As adjunctive therapy for short-term administration in acute gouty arthritis, acute rheumatic carditis, ankylosing spondylitis, psoriatic arthritis, rheumatoid arthritis (including selected cases of juvenile rheumatoid arthritis requiring low-dose maintenance therapy), dermatomyositis, polymyositis and systemic lupus erythematosus (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intra-articular or soft tissue administration is indicated as adjunctive therapy for short-term administration in acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis, epicondylitis, rheumatoid arthritis and synovitis of osteoarthritis (FDA Celestone Soluspan label, INDICATIONS AND USAGE)",
+      "Intralesional administration is indicated for alopecia areata, discoid lupus erythematosus, keloids, localized hypertrophic, infiltrated, inflammatory lesions of granuloma annulare, lichen planus, lichen simplex chronicus (neurodermatitis) and psoriatic plaques, and for necrobiosis lipoidica diabeticorum (FDA Celestone Soluspan label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to any component of the product (FDA Celestone Soluspan label, CONTRAINDICATIONS)",
+      "Intramuscular corticosteroid preparations are contraindicated in patients with idiopathic thrombocytopenic purpura (FDA Celestone Soluspan label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Immunologic: anaphylactoid reaction, anaphylaxis, angioedema (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Cardiovascular: bradycardia, cardiac arrest, cardiac arrhythmias, cardiac enlargement, circulatory collapse, congestive heart failure, fat embolism, hypertension, hypertrophic cardiomyopathy in premature infants, myocardial rupture following recent myocardial infarction, pulmonary edema, syncope, tachycardia, thromboembolism, thrombophlebitis, vasculitis (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Dermatologic: acne, allergic dermatitis, cutaneous and subcutaneous atrophy, dry scaly skin, ecchymoses and petechiae, edema, erythema, hyperpigmentation, hypopigmentation, impaired wound healing, increased sweating, rash, sterile abscess, striae, suppressed reactions to skin tests, thin fragile skin, thinning scalp hair, urticaria (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Endocrine/metabolic: decreased carbohydrate and glucose tolerance, development of Cushingoid state, glucosuria, hirsutism, hypertrichosis, increased insulin or oral hypoglycemic requirements, adrenocortical and pituitary unresponsiveness (particularly in times of stress such as trauma, surgery or illness), suppression of growth in paediatric patients (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Electrolyte/fluid: congestive heart failure in susceptible patients, fluid retention, hypokalemic alkalosis, potassium loss, sodium retention (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Gastrointestinal: abdominal distention, bowel/bladder dysfunction after intrathecal administration, elevation of serum liver enzyme levels (usually reversible upon discontinuation), hepatomegaly, increased appetite, nausea, pancreatitis, peptic ulcer with possible perforation and hemorrhage, perforation of the small and large intestine (particularly in patients with inflammatory bowel disease), ulcerative esophagitis (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Musculoskeletal: aseptic necrosis of femoral and humeral heads, calcinosis (following intra-articular or intralesional use), Charcot-like arthropathy, loss of muscle mass, muscle weakness, osteoporosis, pathologic fracture of long bones, post-injection flare (following intra-articular use), steroid myopathy, tendon rupture, vertebral compression fractures (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Neurologic/psychiatric: convulsions, depression, emotional instability, euphoria, headache, increased intracranial pressure with papilledema (pseudotumor cerebri) usually following discontinuation of treatment, insomnia, mood swings, neuritis, neuropathy, paresthesia, personality changes, psychic disorders, vertigo; arachnoiditis, meningitis, paraparesis/paraplegia and sensory disturbances have occurred after intrathecal administration (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Ophthalmic: exophthalmos, glaucoma, increased intraocular pressure, posterior subcapsular cataracts, rare instances of blindness associated with periocular injections, blurred vision (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "General: abnormal fat deposits, decreased resistance to infection, hiccups, increased or decreased motility and number of spermatozoa, malaise, moon face, weight gain; negative nitrogen balance due to protein catabolism (FDA Celestone Soluspan label, ADVERSE REACTIONS)"
+    ],
+    "dosage": {
+      "adult": "The initial dosage of parenterally administered betamethasone sodium phosphate and betamethasone acetate injectable suspension may vary from 0.25 to 9.0 mg per day depending on the specific disease entity being treated; in certain overwhelming, acute, life-threatening situations, doses exceeding the usual dosages may be justified. Dosage requirements are variable and must be individualised on the basis of the disease under treatment and the response of the patient; after a favourable response the maintenance dose is reached by decreasing the initial dose in small decrements at appropriate intervals. If long-term therapy is to be stopped, it should be withdrawn gradually rather than abruptly (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). For acute exacerbations of multiple sclerosis, daily doses of 30 mg of betamethasone for one week followed by 12 mg every other day for one month are recommended (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). Local administration: intra-articular injection of 0.5 to 2.0 mL of the suspension relieves pain, soreness and stiffness, with recommended volumes of 1.0-2.0 mL (hip), 1.0 mL (knee, ankle, shoulder), 0.5-1.0 mL (elbow, wrist) and 0.25-0.5 mL (small joints); intralesional injection of 0.2 mL/cm2 intradermally with a total of no more than 1.0 mL at weekly intervals; in tenosynovitis and tendinitis, three or four local injections at 1-2 week intervals; injection of 0.5 mL directly into ganglion cysts; one intrabursal injection of 1.0 mL in acute subdeltoid, subacromial, olecranon and prepatellar bursitis (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). The product may be mixed with 1% or 2% lidocaine hydrochloride (paraben-free formulations) if coadministration of a local anesthetic is desired (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION).",
+      "geriatric": "No overall differences in safety or effectiveness were observed between elderly subjects and younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and young patients, but greater sensitivity of some older individuals cannot be ruled out (FDA Celestone Soluspan label, GERIATRIC USE).",
+      "paediatric": "The initial dose of betamethasone may vary depending on the specific disease entity being treated; the range of initial doses is 0.02 to 0.3 mg/kg/day in three or four divided doses (0.6 to 9 mg/m2 body surface area/day) (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). Efficacy and safety in children are based on the well-established course of effect of corticosteroids; published studies support efficacy and safety for nephrotic syndrome (>2 years of age) and aggressive lymphomas and leukemias (>1 month of age). Neonatal hypoglycemia has been reported after antenatal administration, especially in preterm, low birth weight infants, and when betamethasone is administered close to the time of delivery (FDA Celestone Soluspan label, PEDIATRIC USE)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Aminoglutethimide may lead to a loss of corticosteroid-induced adrenal suppression (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Potassium-depleting agents (e.g. amphotericin B, diuretics): observe closely for hypokalemia; cases of concomitant amphotericin B and hydrocortisone followed by cardiac enlargement and congestive heart failure have been reported (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Macrolide antibiotics have been reported to cause a significant decrease in corticosteroid clearance (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Anticholinesterase agents: concomitant use with corticosteroids may produce severe weakness in patients with myasthenia gravis; if possible, anticholinesterase agents should be withdrawn at least 24 hours before initiating corticosteroid therapy (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Warfarin: coadministration usually results in inhibition of the response to warfarin, although there have been some conflicting reports; coagulation indices should be monitored frequently to maintain the desired anticoagulant effect (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Antidiabetic agents: because corticosteroids may increase blood glucose concentrations, dosage adjustments of antidiabetic agents may be required (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Isoniazid: serum concentrations may be decreased (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Cholestyramine may increase the clearance of corticosteroids (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Cyclosporine: increased activity of both cyclosporine and corticosteroids may occur with concurrent use, and convulsions have been reported with this combination (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Digitalis glycosides: patients may be at increased risk of arrhythmias due to hypokalemia (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Estrogens may decrease the hepatic metabolism of certain corticosteroids, thereby increasing their effect (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Drugs which induce hepatic microsomal drug-metabolizing enzymes may enhance the metabolism of corticosteroids and require an increase in corticosteroid dosage (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Betamethasone is metabolized by CYP3A4. Ketoconazole has been reported to decrease the metabolism of certain corticosteroids by up to 60%, and coadministration with other strong CYP3A4 inhibitors (e.g. itraconazole, clarithromycin, ritonavir, cobicistat-containing products) may lead to increased corticosteroid exposure and systemic corticosteroid side effects; consider the benefit of coadministration versus risk and monitor for systemic corticosteroid side effects (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Aspirin and other nonsteroidal anti-inflammatory agents: concomitant use increases the risk of gastrointestinal side effects; aspirin should be used cautiously in conjunction with corticosteroids in hypoprothrombinemia, and clearance of salicylates may be increased (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Live or live attenuated vaccines: administration is contraindicated in patients receiving immunosuppressive doses of corticosteroids; killed or inactivated vaccines may be administered but the response cannot be predicted, and vaccination/toxoid administration should be deferred until corticosteroid therapy is discontinued if possible (FDA Celestone Soluspan label, DRUG INTERACTIONS and WARNINGS)"
+    ],
+    "monitoring": "Monitor for the development of infection and consider dosage reduction or withdrawal of betamethasone if infection occurs; monitor for signs of anaphylactoid reaction after parenteral administration (FDA Celestone Soluspan label, WARNINGS and ADVERSE REACTIONS). Monitor blood pressure, electrolytes (potassium), fluid status and blood glucose during therapy, and monitor growth in children (FDA Celestone Soluspan label, WARNINGS, PRECAUTIONS and PEDIATRIC USE). Patients with latent tuberculosis or tuberculin reactivity require chemoprophylaxis during prolonged therapy, and patients should be screened for hepatitis B before initiating immunosuppressive (e.g. prolonged) treatment (FDA Celestone Soluspan label, WARNINGS). Patients with ocular symptoms, or who use corticosteroid-containing products for more than 6 weeks, should be referred to an ophthalmologist because corticosteroids can produce posterior subcapsular cataracts, increased intraocular pressure and glaucoma (FDA Celestone Soluspan label, WARNINGS). Assess joint fluid for a septic process before intra-articular injection, and exclude septic arthritis (FDA Celestone Soluspan label, PRECAUTIONS). During and after prolonged therapy, monitor for signs of adrenocortical insufficiency and, in any situation of stress, use hydrocortisone or cortisone (which have salt-retaining properties) rather than betamethasone as replacement therapy (FDA Celestone Soluspan label, PRECAUTIONS).",
+    "patient_counselling": "Patients should be warned not to discontinue the use of corticosteroids abruptly or without medical supervision, should advise any medical attendants that they are taking corticosteroids, and should seek medical advice at once should they develop fever or other signs of infection. Persons on corticosteroids should be warned to avoid exposure to chickenpox or measles and should be advised that if they are exposed, medical advice should be sought without delay (FDA Celestone Soluspan label, INFORMATION FOR PATIENTS).",
+    "warnings": [
+      "Do not administer intravenously (FDA Celestone Soluspan label, WARNINGS)",
+      "Serious neurologic events, some resulting in death, have been reported with epidural injection of corticosteroids, including spinal cord infarction, paraplegia, quadriplegia, cortical blindness and stroke; the safety and effectiveness of epidural administration have not been established and corticosteroids are not approved for this use (FDA Celestone Soluspan label, WARNINGS)",
+      "Rare instances of anaphylactoid/anaphylactic reactions with a possibility of shock have occurred with parenteral corticosteroid therapy; use caution in patients with a history of allergic reactions to corticosteroids (FDA Celestone Soluspan label, WARNINGS)",
+      "Average and large doses can cause elevation of blood pressure, salt and water retention and increased excretion of potassium; dietary salt restriction and potassium supplementation may be necessary, and all corticosteroids increase calcium excretion (FDA Celestone Soluspan label, WARNINGS)",
+      "Literature reports suggest an apparent association between corticosteroid use and left ventricular free wall rupture after a recent myocardial infarction; therapy should be used with great caution in these patients (FDA Celestone Soluspan label, WARNINGS)",
+      "Corticosteroids can produce reversible hypothalamic-pituitary-adrenal (HPA) axis suppression with the potential for glucocorticosteroid insufficiency after withdrawal of treatment (FDA Celestone Soluspan label, WARNINGS)",
+      "Corticosteroids suppress the immune system and increase the risk of infection with any pathogen; they can reduce resistance to new infections, exacerbate existing infections, increase the risk of disseminated infections and reactivation of latent infections, and mask some signs of infection. Do not administer by intra-articular, intrabursal, intratendinous or intralesional route in the presence of acute local infection (FDA Celestone Soluspan label, WARNINGS)",
+      "Reactivation of tuberculosis may occur in patients with latent tuberculosis or tuberculin reactivity treated for the underlying condition; during prolonged therapy these patients should receive chemoprophylaxis (FDA Celestone Soluspan label, WARNINGS)",
+      "Varicella and measles can have a serious or even fatal course in non-immune patients taking corticosteroids; avoid exposure, and consider varicella zoster immune globulin prophylaxis or antiviral treatment if exposure or disease occurs (FDA Celestone Soluspan label, WARNINGS)",
+      "Hepatitis B virus reactivation can occur in hepatitis B carriers treated with immunosuppressive corticosteroid doses; screen patients for hepatitis B before initiating immunosuppressive (e.g. prolonged) treatment (FDA Celestone Soluspan label, WARNINGS)",
+      "Systemic fungal infections may be exacerbated; avoid use in the presence of systemic fungal infections unless needed to control drug reactions (FDA Celestone Soluspan label, WARNINGS)",
+      "Corticosteroids may activate latent amebiasis; rule out latent or active amebiasis before initiating treatment in patients who have spent time in the tropics or have unexplained diarrhea (FDA Celestone Soluspan label, WARNINGS)",
+      "Use with great care in patients with known or suspected Strongyloides (threadworm) infestation, because corticosteroid-induced immunosuppression may lead to Strongyloides hyperinfection and dissemination with widespread larval migration, often accompanied by severe enterocolitis and potentially fatal gram-negative septicemia (FDA Celestone Soluspan label, WARNINGS)",
+      "Avoid corticosteroids, including betamethasone, in patients with cerebral malaria (FDA Celestone Soluspan label, WARNINGS)",
+      "Administration of live or live attenuated vaccines is contraindicated in patients receiving immunosuppressive doses of corticosteroids (FDA Celestone Soluspan label, WARNINGS)",
+      "Severe medical events have been associated with the intrathecal route of administration; high doses of corticosteroids should not be used for the treatment of traumatic brain injury, because a randomized placebo-controlled study with methylprednisolone hemisuccinate showed increased early and late mortality in patients with cranial trauma who had no other clear indication for corticosteroid treatment (FDA Celestone Soluspan label, WARNINGS)",
+      "Corticosteroids may produce posterior subcapsular cataracts, increased intraocular pressure, glaucoma with possible damage to the optic nerves and may enhance secondary ocular infections; the use of oral corticosteroids is not recommended in optic neuritis and corticosteroids should not be used in active ocular herpes simplex (FDA Celestone Soluspan label, WARNINGS)",
+      "Kaposi's sarcoma has been reported in patients receiving corticosteroid therapy, most often for chronic conditions; discontinuation of corticosteroids may result in clinical improvement (FDA Celestone Soluspan label, WARNINGS)",
+      "Pheochromocytoma crisis, which may be fatal, has been reported after administration of systemic corticosteroids including betamethasone; consider the risk of pheochromocytoma crisis before administering corticosteroids to patients with suspected or identified pheochromocytoma (FDA Celestone Soluspan label, WARNINGS)"
+    ],
+    "precautions": [
+      "The lowest possible dose of corticosteroid should be used to control the condition under treatment, and when reduction in dosage is possible the reduction should be gradual; a risk/benefit decision must be made in each individual case as to dose, duration and whether daily or intermittent therapy is used (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "The product is sensitive to heat and should not be autoclaved when it is desirable to sterilize the exterior of the vial (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "As sodium retention with resultant edema and potassium loss may occur, use with caution in patients with congestive heart failure, hypertension or renal insufficiency (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "Drug-induced secondary adrenocortical insufficiency may be minimized by gradual reduction of dosage; relative insufficiency may persist for months after discontinuation, so during any stress in that period use hydrocortisone or cortisone rather than betamethasone as replacement therapy (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "Steroids should be used with caution in active or latent peptic ulcers, diverticulitis, fresh intestinal anastomoses and nonspecific ulcerative colitis because they may increase the risk of perforation; signs of peritoneal irritation following gastrointestinal perforation may be minimal or absent, and there is an enhanced effect of corticosteroids in patients with cirrhosis (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "Intra-articular injected corticosteroids may be systemically absorbed; examine any joint fluid to exclude a septic process, avoid injection into an infected site, and note that injection of a steroid into an unstable joint is generally not recommended and may damage joint tissues (FDA Celestone Soluspan label, PRECAUTIONS and ADVERSE REACTIONS)",
+      "Corticosteroids decrease bone formation and increase bone resorption and may lead to inhibition of bone growth in pediatric patients and development of osteoporosis at any age; special consideration should be given to patients at increased risk of osteoporosis (e.g. postmenopausal women) before initiating therapy (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "Controlled clinical trials show corticosteroids speed resolution of acute exacerbations of multiple sclerosis but do not show that they affect the ultimate outcome or natural history of the disease; relatively high doses are necessary (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "An acute myopathy has been observed with high doses of corticosteroids, most often in patients with disorders of neuromuscular transmission (e.g. myasthenia gravis) or who receive concomitant neuromuscular blocking drugs; it may involve ocular and respiratory muscles and result in quadriparesis, with elevation of creatine kinase and recovery taking weeks to years (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "Psychic derangements may appear when corticosteroids are used, ranging from euphoria, insomnia, mood swings, personality changes and severe depression to frank psychotic manifestations; existing emotional instability or psychotic tendencies may be aggravated (FDA Celestone Soluspan label, PRECAUTIONS)",
+      "In patients on corticosteroid therapy subjected to any unusual stress, hydrocortisone or cortisone is the drug of choice as a supplement during and after the event; metabolic clearance of corticosteroids is decreased in hypothyroid patients and increased in hyperthyroid patients, and changes in thyroid status may necessitate dosage adjustment (FDA Celestone Soluspan label, WARNINGS)",
+      "Benzyl alcohol as a preservative has been associated with a fatal 'Gasping Syndrome' in premature infants and infants of low birth weight; solutions used for further dilution should be preservative-free when used in the neonate, especially the premature infant (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION)"
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylactoid reaction, anaphylaxis and angioedema after parenteral administration (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Serious, sometimes fatal gastrointestinal perforation, and perforation of the small and large intestine particularly in patients with inflammatory bowel disease; peptic ulcer with possible perforation and hemorrhage (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Congestive heart failure, cardiac enlargement, circulatory collapse and myocardial rupture following recent myocardial infarction (FDA Celestone Soluspan label, ADVERSE REACTIONS and WARNINGS)",
+      "Infections that can be severe and at times fatal, including reactivation of latent tuberculosis, varicella, measles, hepatitis B and systemic fungal infection; corticosteroid-associated infections may be masked (FDA Celestone Soluspan label, WARNINGS)",
+      "Avascular (aseptic) necrosis of femoral and humeral heads, osteoporosis, pathologic fracture of long bones and vertebral compression fractures (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Increased intracranial pressure with papilledema (pseudotumor cerebri) usually following discontinuation of treatment, and convulsions (FDA Celestone Soluspan label, ADVERSE REACTIONS)",
+      "Posterior subcapsular cataracts, glaucoma, increased intraocular pressure and rare instances of blindness associated with periocular injections (FDA Celestone Soluspan label, ADVERSE REACTIONS and WARNINGS)",
+      "Acute myopathy with quadriparesis, steroid myopathy and tendon rupture (FDA Celestone Soluspan label, PRECAUTIONS and ADVERSE REACTIONS)",
+      "Psychic derangements including severe depression and frank psychotic manifestations (FDA Celestone Soluspan label, PRECAUTIONS)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Corticosteroids have been shown to be teratogenic in many species when given in doses equivalent to the human dose; animal studies in pregnant mice, rats and rabbits have yielded an increased incidence of cleft palate in the offspring. There are no adequate and well-controlled studies in pregnant women, so corticosteroids should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Infants born to mothers who received corticosteroids during pregnancy should be carefully observed for signs of hypoadrenalism (FDA Celestone Soluspan label, TERATOGENIC EFFECTS).",
+    "lactation_guidance": "Systemically administered corticosteroids appear in human milk and could suppress growth, interfere with endogenous corticosteroid production or cause other untoward effects; caution should be exercised when corticosteroids are administered to a nursing woman (FDA Celestone Soluspan label, NURSING MOTHERS).",
+    "overdose": "Treatment of acute overdose is by supportive and symptomatic therapy. For chronic overdosage in the face of severe disease requiring continuous steroid therapy, the dosage of the corticosteroid may be reduced only temporarily, or alternate day treatment may be introduced (FDA Celestone Soluspan label, OVERDOSAGE).",
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Betamethasone sodium phosphate and betamethasone acetate injectable suspension must never be given intravenously; the FDA label states it 'should not be administered intravenously' (FDA Celestone Soluspan label, WARNINGS)",
+      "For local (intra-articular/intralesional) administration the dose is expressed as volume of suspension: 0.5-2.0 mL intra-articularly depending on joint size and 0.2 mL/cm2 intradermally (maximum 1.0 mL at weekly intervals) for intralesional use (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION)",
+      "Potency equivalent used for oral or intravenous comparison in the label: betamethasone 0.75 mg is equivalent to prednisolone 5 mg, prednisone 5 mg, dexamethasone 0.75 mg, methylprednisolone 4 mg, triamcinolone 4 mg, hydrocortisone 20 mg and cortisone 25 mg; these relationships do not apply to intramuscular or intra-articular administration (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION)",
+      "Intra-articular, intrabursal, intratendinous and intralesional injections are contraindicated in the presence of acute local infection because signs of infection can be masked by the steroid (FDA Celestone Soluspan label, WARNINGS)",
+      "Withdrawal after long-term therapy must be gradual, not abrupt, because of the risk of drug-induced secondary adrenocortical insufficiency (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION and PRECAUTIONS)",
+      "Betamethasone is a CYP3A4 substrate, so potent CYP3A4 inhibitors (ketoconazole, itraconazole, clarithromycin, ritonavir, cobicistat) can substantially increase steroid exposure (FDA Celestone Soluspan label, DRUG INTERACTIONS)",
+      "Antenatal betamethasone given close to delivery is associated with neonatal hypoglycemia, especially in preterm, low birth weight infants (FDA Celestone Soluspan label, PEDIATRIC USE)",
+      "Betamethasone must not be confused with the topical betamethasone dipropionate and betamethasone valerate dermatology products (cream, ointment, lotion), which are covered in the separate 'Betamethasone Topical' monograph and have their own indications, contraindications and paediatric restrictions"
+    ],
+    "brand_names": ["Celestone", "Celestone Soluspan", "Betavet"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Sterile aqueous suspension containing 3 mg/mL betamethasone (equivalent to 3.95 mg betamethasone sodium phosphate) and 3 mg/mL betamethasone acetate, supplied as a 5 mL multiple-dose vial (30 mg/5 mL); SHAKE WELL BEFORE USING (FDA Celestone Soluspan label, DESCRIPTION and HOW SUPPLIED). Intramuscular, intra-articular, soft tissue/intrabursal, intratendinous and intralesional routes only - do not administer intravenously (FDA Celestone Soluspan label, WARNINGS and INDICATIONS AND USAGE). The required dose is first withdrawn from the vial into the syringe; if a local anesthetic is desired it may be mixed with 1% or 2% lidocaine hydrochloride (paraben-free), and local anesthetics must not be injected into the vial (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). For intra-articular injection use sterile technique with a 20- to 24-gauge needle, aspirate synovial fluid to confirm needle position, then inject (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). For intralesional injection use a tuberculin syringe with a 25-gauge 1/2-inch needle, depositing the medication intradermally rather than subcutaneously (FDA Celestone Soluspan label, DOSAGE AND ADMINISTRATION). Store at 25 degrees C, excursions permitted 15-30 degrees C, protect from light, and do not autoclave the vial (FDA Celestone Soluspan label, HOW SUPPLIED, STORAGE AND HANDLING and PRECAUTIONS)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Celestone Soluspan (betamethasone acetate and betamethasone sodium phosphate) injectable suspension, DESCRIPTION and CLINICAL PHARMACOLOGY sections (Organon LLC, revised 7/2024)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, Celestone Soluspan, INDICATIONS AND USAGE section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, Celestone Soluspan, CONTRAINDICATIONS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, Celestone Soluspan, ADVERSE REACTIONS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, Celestone Soluspan, DOSAGE AND ADMINISTRATION, PEDIATRIC USE and GERIATRIC USE sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated as a separate field; the sourced adult regimen is given in fields.dosage.adult from the FDA label DOSAGE AND ADMINISTRATION section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated as a separate field; the sourced paediatric regimen is given in fields.dosage.paediatric from the FDA label DOSAGE AND ADMINISTRATION and PEDIATRIC USE sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, Celestone Soluspan, DRUG INTERACTIONS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, Celestone Soluspan, WARNINGS, PRECAUTIONS, PEDIATRIC USE and ADVERSE REACTIONS sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, Celestone Soluspan, INFORMATION FOR PATIENTS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, Celestone Soluspan, WARNINGS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, Celestone Soluspan, PRECAUTIONS, WARNINGS and DOSAGE AND ADMINISTRATION sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, Celestone Soluspan, ADVERSE REACTIONS, WARNINGS and PRECAUTIONS sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA Celestone Soluspan label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "The FDA Celestone Soluspan label contains no pregnancy letter category; only narrative pregnancy and teratogenic-effect information is given",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, Celestone Soluspan, PREGNANCY and TERATOGENIC EFFECTS sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, Celestone Soluspan, NURSING MOTHERS section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, Celestone Soluspan, OVERDOSAGE section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "The FDA Celestone Soluspan label contains no pharmacokinetics section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Celestone Soluspan, WARNINGS, DOSAGE AND ADMINISTRATION, PRECAUTIONS, DRUG INTERACTIONS and PEDIATRIC USE sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed brand product titles: CELESTONE SOLUSPAN (betamethasone acetate and betamethasone sodium phosphate) injection [Organon LLC] and BETAVET (betamethasone sodium phosphate and betamethasone acetate) injection [American Regent, Inc.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA Celestone Soluspan label contains no boxed warning; the label's contraindications and warnings are recorded in fields.contraindications and fields.warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in the FDA Celestone Soluspan label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA Celestone Soluspan label; metabolic clearance of corticosteroids is decreased in hypothyroid and increased in hyperthyroid patients, and thyroid status change may necessitate dosage adjustment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, Celestone Soluspan, DESCRIPTION, HOW SUPPLIED, STORAGE AND HANDLING, DOSAGE AND ADMINISTRATION, WARNINGS and PRECAUTIONS sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf78d1be-42d7-4837-92a5-49113a79278f"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the narrative paediatric regimen is provided in fields.dosage.paediatric)",
+    "pregnancy_category (the FDA label gives narrative pregnancy and teratogenic-effect information but no letter category)",
+    "pharmacokinetics (the FDA Celestone Soluspan label has no pharmacokinetics section)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the FDA label)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA label)",
+    "betamethasone oral tablets and betamethasone ophthalmic solutions (no FDA-approved label for these formulations was located on DailyMed in this environment; the monograph therefore covers the labelled systemic injectable formulation and the ophthalmic indication listed in the injectable label's indications, and the dermatology products are covered in the separate 'Betamethasone Topical' monograph)"
+  ],
+  "notes": "The table stores this agent as the systemic drug 'Betamethasone'. The existing row previously carried topical-dermatology indication text (eczema, psoriasis, acne, skin barrier repair) that belongs to the separate 'Betamethasone Topical' monograph and has been superseded by this draft, which is grounded in the FDA label for betamethasone sodium phosphate and betamethasone acetate injectable suspension (Celestone Soluspan). The DB row's stored brand_names entry 'Betamethasone Dipropionate' refers to a topical ester (covered in the 'Betamethasone Topical' monograph), so brand_names here lists the systemic injectable brands sourced from DailyMed product titles. The FDA label's indication 'sympathetic ophthalmia, temporal arteritis, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids' is a systemic (intramuscular) ophthalmic indication; no separately-labelled betamethasone eye-drop product was located on DailyMed. WHO Model List of Essential Medicines (eEML) and Kenya Essential Medicines List (KEML) entries could not be retrieved in this environment (WHO IRIS and who.int document endpoints were unreachable), so no eEML/KEML-derived field is claimed here. FDA pregnancy letter categories are obsolete (replaced by the Pregnancy and Lactation Labeling Rule) and are reported only where a label still states them."
+}

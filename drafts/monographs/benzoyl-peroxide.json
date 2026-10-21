@@ -1,0 +1,200 @@
+{
+  "name": "Benzoyl Peroxide",
+  "existing_id": "0146f290-2c81-4fca-a9f6-ad18568ecc3b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Benzoyl peroxide is a topical oxidising acne agent that acts in the pilosebaceous follicle. In the FDA label for clindamycin phosphate and benzoyl peroxide topical gel, 1%/5%, which describes the benzoyl peroxide component of that product, benzoyl peroxide has been shown to be absorbed by the skin where it is converted to benzoic acid, and it is suggested that the lipophilic nature of benzoyl peroxide acts to concentrate the compound into the lipid-rich sebaceous follicle (FDA clindamycin and benzoyl peroxide topical gel label, CLINICAL PHARMACOLOGY). The same label states that the clindamycin and benzoyl peroxide components individually have been shown to have in vitro activity against Propionibacterium acnes, an organism which has been associated with acne vulgaris, although the clinical significance of this activity against P. acnes was not examined in clinical trials with that product (label, Microbiology). The FDA over-the-counter acne monograph lists benzoyl peroxide, 2.5 to 10 percent, as an acne active ingredient but does not itself describe a mechanism (21 CFR 333.310(a)).",
+    "indications": [
+      "Treatment of acne: over-the-counter acne drug products containing benzoyl peroxide must be labelled for the 'management' or 'treatment' of acne (FDA OTC acne monograph, 21 CFR 333.350(b)(1)); the Drug Facts of US benzoyl peroxide acne products state 'Acne medication'/'Acne treatment' and 'for the treatment of acne' (DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream)",
+      "Topical treatment of acne with benzoyl peroxide 5% cream or lotion (WHO Model List of Essential Medicines, 24th list (2025), section 13.4 Medicines affecting skin differentiation and proliferation)",
+      "Benzoyl peroxide gel 5% (30 g) for the management of acne vulgaris (Kenya Essential Medicines List 2023, section 15.4.1 and footnote 346)"
+    ],
+    "contraindications": [
+      "Do not use if you have very sensitive skin (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(i); DailyMed benzoyl peroxide acne labels, 'Do not use if you')",
+      "Do not use if you are sensitive to benzoyl peroxide (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(i); DailyMed benzoyl peroxide acne labels, 'Do not use if you')"
+    ],
+    "side_effects": [
+      "Skin irritation characterized by redness, burning, itching, peeling or possibly swelling; irritation may be reduced by using the product less frequently or in a lower concentration (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(ii))",
+      "Dryness and peeling: because excessive drying of the skin may occur, start with one application daily and increase gradually to two or three times daily; if bothersome dryness or peeling occurs, reduce application to once a day or every other day (FDA OTC acne monograph, 21 CFR 333.350(d)(1))",
+      "Skin irritation and dryness is more likely to occur if another topical acne medication is used at the same time (FDA OTC acne monograph, 21 CFR 333.350(c)(1)(ii))",
+      "In trials of clindamycin phosphate and benzoyl peroxide topical gel, 1%/5% (a benzoyl peroxide-containing product), the most frequently reported adverse event was dry skin (12%), with application site reaction 3%, pruritus 2%, peeling 2%, erythema 1% and sunburn 1% reported in at least 1% of patients (FDA clindamycin and benzoyl peroxide topical gel label, ADVERSE REACTIONS)",
+      "Bleaching of hair and dyed fabrics by the product (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(ii))"
+    ],
+    "dosage": {
+      "adult": "Topical use only: clean the skin thoroughly before applying, then cover the entire affected area with a thin layer one to three times daily; because excessive drying of the skin may occur, start with one application daily, then gradually increase to two or three times daily if needed or as directed by a doctor, and if bothersome dryness or peeling occurs reduce application to once a day or every other day (FDA OTC acne monograph, 21 CFR 333.350(d)(1)). Products applied and left on the skin must also carry the direction 'if going outside, apply sunscreen after using this product; if irritation or sensitivity develops, stop use of both products and ask a doctor' (21 CFR 333.350(d)(2)). Over-the-counter benzoyl peroxide acne products contain 2.5 to 10 percent benzoyl peroxide (21 CFR 333.310(a)); the WHO Model List standardises on cream or lotion 5% and the Kenya Essential Medicines List 2023 on gel 5%.",
+      "geriatric": null,
+      "paediatric": null
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time; if irritation occurs, only use one topical acne medication at a time (FDA OTC acne monograph, 21 CFR 333.350(c)(1)(ii); DailyMed benzoyl peroxide acne labels)",
+      "When going outside, apply sunscreen after using this product, and if irritation or sensitivity develops stop use of both the benzoyl peroxide product and the sunscreen and ask a doctor (FDA OTC acne monograph, 21 CFR 333.350(d)(2)(ii))"
+    ],
+    "monitoring": null,
+    "patient_counselling": "Clean the skin thoroughly before applying the product and cover the entire affected area with a thin layer one to three times daily; because excessive drying of the skin may occur, start with one application daily and then gradually increase to two or three times daily if needed or as directed by a doctor, and reduce application to once a day or every other day if bothersome dryness or peeling occurs (FDA OTC acne monograph, 21 CFR 333.350(d)(1)). If going outside, apply sunscreen after using this product, and if irritation or sensitivity develops stop use of both products and ask a doctor (21 CFR 333.350(d)(2)). Avoid contact with the eyes, lips and mouth, and avoid contact with hair and dyed fabrics, which may be bleached by this product; avoid unnecessary sun exposure and use a sunscreen (21 CFR 333.350(c)(4)(ii)). Stop use and ask a doctor if irritation becomes severe (21 CFR 333.350(c)(4)(iii)). Do not use if you have very sensitive skin or are sensitive to benzoyl peroxide (21 CFR 333.350(c)(4)(i)). Keep out of reach of children; if swallowed, get medical help or contact a Poison Control Center immediately (DailyMed benzoyl peroxide acne labels). If pregnant or breast-feeding, ask a health professional before use (DailyMed benzoyl peroxide acne labels).",
+    "warnings": [
+      "For external use only (FDA OTC acne monograph, 21 CFR 333.350(c)(1)(i))",
+      "Do not use if you have very sensitive skin, or are sensitive to benzoyl peroxide (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(i))",
+      "When using this product: avoid unnecessary sun exposure and use a sunscreen; avoid contact with the eyes, lips and mouth; avoid contact with hair and dyed fabrics, which may be bleached by this product; skin irritation may occur, characterized by redness, burning, itching, peeling or possibly swelling, and irritation may be reduced by using the product less frequently or in a lower concentration (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(ii))",
+      "Stop use and ask a doctor if irritation becomes severe (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(iii))",
+      "Keep out of reach of children; if swallowed, get medical help or contact a Poison Control Center immediately (DailyMed benzoyl peroxide acne labels)",
+      "If pregnant or breast-feeding, ask a health professional before use (DailyMed benzoyl peroxide acne labels)"
+    ],
+    "precautions": [
+      "Use only one topical acne medication at a time: skin irritation and dryness is more likely to occur if another topical acne medication is used at the same time, and if irritation occurs only one topical acne medication should be used (FDA OTC acne monograph, 21 CFR 333.350(c)(1)(ii))",
+      "Apply sunscreen after using the product when going outside, and stop use of both products if irritation or sensitivity develops (FDA OTC acne monograph, 21 CFR 333.350(d)(2)(ii))",
+      "Benzoyl peroxide can bleach hair and dyed fabrics; avoid contact with them (FDA OTC acne monograph, 21 CFR 333.350(c)(4)(ii))",
+      "Optional sensitivity test for a new user: apply the product sparingly to one or two small affected areas during the first 3 days and follow the directions on the label if no discomfort occurs (FDA OTC acne monograph, 21 CFR 333.350(d)(4))"
+    ],
+    "serious_adverse_reactions": [],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "The over-the-counter Drug Facts for benzoyl peroxide acne products state 'If pregnant or breast-feeding, ask a health professional before use' (DailyMed benzoyl peroxide acne labels). The FDA OTC acne monograph and the Drug Facts labelling contain no pregnancy category and no other pregnancy-specific warning (21 CFR 333.303 to 333.350).",
+    "lactation_guidance": "The over-the-counter Drug Facts for benzoyl peroxide acne products state 'If pregnant or breast-feeding, ask a health professional before use' (DailyMed benzoyl peroxide acne labels). No other lactation-specific information is given in the OTC monograph or in the Drug Facts labelling.",
+    "overdose": "Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center immediately (DailyMed benzoyl peroxide acne labels, 'Keep out of reach of children'). No specific antidote or decontamination procedure is described in the FDA OTC acne monograph or in the Drug Facts labelling for benzoyl peroxide (21 CFR 333.303 to 333.350).",
+    "pharmacokinetics": "Benzoyl peroxide has been shown to be absorbed by the skin where it is converted to benzoic acid; less than 2% of the dose enters systemic circulation as benzoic acid, and it is suggested that the lipophilic nature of benzoyl peroxide acts to concentrate the compound into the lipid-rich sebaceous follicle (FDA clindamycin and benzoyl peroxide topical gel label, CLINICAL PHARMACOLOGY, benzoyl peroxide component). The single-ingredient over-the-counter monograph and the Drug Facts labelling for benzoyl peroxide contain no pharmacokinetic data (21 CFR 333.303 to 333.350).",
+    "clinical_pearls": [
+      "Benzoyl peroxide acts inside the follicle rather than on the skin surface: it is a lipophilic molecule that concentrates in the lipid-rich sebaceous follicle and is converted to benzoic acid in the skin, with less than 2% of the dose reaching systemic circulation (FDA clindamycin and benzoyl peroxide topical gel label, CLINICAL PHARMACOLOGY)",
+      "Benzoyl peroxide bleaches hair and dyed fabrics and makes the skin more susceptible to sun, so sunscreen should be applied after the product and the product kept away from hair and coloured fabrics (FDA OTC acne monograph, 21 CFR 333.350)",
+      "Never layer two topical acne medicines at the same time: skin irritation and dryness are much more likely, so only one topical acne medication should be used at a time (FDA OTC acne monograph, 21 CFR 333.350(c)(1)(ii))",
+      "Strength matters for tolerability: over-the-counter acne products may contain 2.5 to 10 percent benzoyl peroxide and the monograph notes that irritation may be reduced by using the product less frequently or in a lower concentration (21 CFR 333.310(a) and 333.350(c)(4)(ii))",
+      "The WHO Model List of Essential Medicines (24th list, 2025) and the Kenya Essential Medicines List 2023 both standardise on 5% benzoyl peroxide (cream or lotion in the eEML; 5% gel (30 g) in the KEML), so 5% is the strength to expect in essential-medicines supply",
+      "Postmarketing anaphylaxis and allergic reactions leading to hospitalization have been reported for clindamycin/benzoyl peroxide combination products (FDA clindamycin and benzoyl peroxide topical gel label, ADVERSE REACTIONS); systemic reactions are rare with topical benzoyl peroxide but any generalized reaction after use needs assessment"
+    ],
+    "brand_names": ["Dr. Zenovia Acne Cleanser", "Dr. Zenovia Spot Treatment"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Topical use only. Cleanse the skin thoroughly, then apply a thin layer over the entire affected area one to three times daily, starting with one application daily and increasing to two or three times daily only as tolerated, and reducing to once daily or every other day if bothersome dryness or peeling occurs (FDA OTC acne monograph, 21 CFR 333.350(d)(1)). If going outside, apply sunscreen after using the product (21 CFR 333.350(d)(2)). Keep the product away from the eyes, lips and mouth, and away from hair and dyed fabrics which may be bleached (21 CFR 333.350(c)(4)(ii)). Store tightly closed at room temperature (US benzoyl peroxide Drug Facts, for example 'keep tightly closed, store at room temperature'; one US benzoyl peroxide 5% gel label specifies controlled room temperature 15-30 degrees C)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, Clindamycin and Benzoyl Peroxide Topical Gel, 1%/5% (Padagis Israel Pharmaceutical Ltd), DailyMed setid 1144d82f-085c-45a4-b32d-9b24c495d154, CLINICAL PHARMACOLOGY and Microbiology (benzoyl peroxide component); FDA OTC Monograph M006, 21 CFR 333.310(a)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1144d82f-085c-45a4-b32d-9b24c495d154"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA OTC Monograph M006 'Topical Drug Products for the Treatment of Acne', 21 CFR 333.350(b); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream (CVS Health), DailyMed setid 633fc7e1-5f71-4f9c-8d29-e3f2c4a5755b; WHO Model List of Essential Medicines, 24th list (2025), section 13.4; Kenya Essential Medicines List 2023, section 15.4.1 and footnote 346",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(4)(i); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, 'Do not use if you'",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(1)(ii), (c)(4)(ii) and (d)(1); FDA label, Clindamycin and Benzoyl Peroxide Topical Gel 1%/5%, ADVERSE REACTIONS",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.310(a) and 333.350(d)(1) and (d)(2); WHO Model List of Essential Medicines, 24th list (2025), section 13.4; Kenya Essential Medicines List 2023, section 15.4.1",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(1)(ii) and (d)(2)(ii); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, 'When using this product' and 'Directions'",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "monitoring",
+      "ref": "No monitoring parameters are stated in FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) or in the Drug Facts labelling of US benzoyl peroxide acne products; the monograph regulates labelling content only",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(b), (c) and (d); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, Drug Facts panel (CVS Health)",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(1)(i), (c)(4)(i), (c)(4)(ii) and (c)(4)(iii); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, Drug Facts panel",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(1)(ii), (c)(4)(ii), (d)(2)(ii) and (d)(4)",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "No serious adverse reaction is specified for single-ingredient benzoyl peroxide in FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) or in the Drug Facts labelling of US benzoyl peroxide acne products; the postmarketing anaphylaxis reports in the FDA labelling relate to clindamycin/benzoyl peroxide combination products and are recorded in clinical_pearls",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) or in the Drug Facts labelling of US benzoyl peroxide acne products",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA lettered pregnancy category: US benzoyl peroxide acne products are over-the-counter monograph products whose Drug Facts state 'If pregnant or breast-feeding, ask a health professional before use' and carry no pregnancy category letter (DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=633fc7e1-5f71-4f9c-8d29-e3f2c4a5755b"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream (CVS Health), Drug Facts panel 'Pregnancy/Breastfeeding'; FDA OTC Monograph M006, 21 CFR 333.303 to 333.350",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=633fc7e1-5f71-4f9c-8d29-e3f2c4a5755b"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream (CVS Health), Drug Facts panel 'Pregnancy/Breastfeeding'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=633fc7e1-5f71-4f9c-8d29-e3f2c4a5755b"
+    },
+    {
+      "field": "overdose",
+      "ref": "DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, Drug Facts panel 'Keep out of reach of children'; FDA OTC Monograph M006, 21 CFR 333.303 to 333.350 (no antidote or decontamination text)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=633fc7e1-5f71-4f9c-8d29-e3f2c4a5755b"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, Clindamycin and Benzoyl Peroxide Topical Gel 1%/5%, CLINICAL PHARMACOLOGY (benzoyl peroxide component); absence of pharmacokinetic data in FDA OTC Monograph M006",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1144d82f-085c-45a4-b32d-9b24c495d154"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, Clindamycin and Benzoyl Peroxide Topical Gel 1%/5%, CLINICAL PHARMACOLOGY and ADVERSE REACTIONS; FDA OTC Monograph M006, 21 CFR 333.310 and 333.350; WHO Model List of Essential Medicines, 24th list (2025), section 13.4; Kenya Essential Medicines List 2023, section 15.4.1",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed product titles: 'DR. ZENOVIA ACNE CLEANSER (BENZOYL PEROXIDE) LIQUID [TOPIDERM, INC.]' (setid 00fb1ee5-6076-4980-8507-9e58a96e6a6b) and 'DR. ZENOVIA SPOT TREATMENT (BENZOYL PEROXIDE) LIQUID [TOPIDERM, INC.]' (setid dfdb3d8e-4d39-4ce4-851f-80b11972ca9e)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=zenovia&pagesize=5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning exists for benzoyl peroxide: FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) contains no boxed warning and US benzoyl peroxide Drug Facts labelling carries no boxed warning statement",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) or in the Drug Facts labelling of US benzoyl peroxide acne products",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in FDA OTC Monograph M006 (21 CFR 333.303 to 333.350) or in the Drug Facts labelling of US benzoyl peroxide acne products",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA OTC Monograph M006, 21 CFR 333.350(c)(4)(ii) and (d)(1) and (d)(2); DailyMed, Benzoyl Peroxide 10% Acne Spot Treatment cream, 'Other information'; DailyMed, Benzoyl Peroxide 5% Gel (Axia Medical Solutions), 'OTHER INFORMATION'",
+      "url": "https://www.ecfr.gov/current/title-21/part-333"
+    }
+  ],
+  "unsourced_fields": [
+    "monitoring (no monitoring parameters are specified in the FDA OTC acne monograph or in the Drug Facts labelling)",
+    "dosage.geriatric (no geriatric use statement or dose adjustment is given in the FDA OTC acne monograph or the Drug Facts labelling)",
+    "dosage.paediatric (no paediatric use statement or dose is given in the FDA OTC acne monograph or the Drug Facts labelling; the labelling only states 'Keep out of reach of children')",
+    "adult_dosing (not populated; the narrative topical regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no paediatric regimen is stated in the sourced labelling)",
+    "serious_adverse_reactions (no serious adverse reaction is specified for single-ingredient benzoyl peroxide in the sourced FDA labelling)",
+    "pregnancy_category (US benzoyl peroxide acne products are over-the-counter monograph products with no FDA lettered pregnancy category)",
+    "renal_dose_adjustment (no renal dose adjustment is specified in the sourced labelling)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the sourced labelling)"
+  ],
+  "notes": "The table stores this agent as 'Benzoyl Peroxide' with the brand name 'Dr. Zenovia Acne Cleanser', which was verified on DailyMed as a benzoyl peroxide acne wash (Topiderm); a second Topiderm benzoyl peroxide product, 'Dr. Zenovia Spot Treatment', is also listed in brand_names. Benzoyl peroxide is a topical dermatological product: in the United States it is an over-the-counter acne drug product governed by FDA OTC Monograph M006 (21 CFR 333.303, 333.310 and 333.350, 'Topical Drug Products for the Treatment of Acne'), which sets the permitted concentration (2.5 to 10 percent), the required indication statement and the required warnings and directions - this monograph is the primary regulatory source here, together with current DailyMed Drug Facts labelling for single-ingredient products. The WHO Model List of Essential Medicines, 24th list (2025) lists benzoyl peroxide cream or lotion 5% (section 13.4) and the Kenya Essential Medicines List 2023 lists benzoyl peroxide gel 5% (30 g), Level of Use 4, for acne vulgaris (section 15.4.1, footnote 346). Because no FDA-approved single-ingredient benzoyl peroxide prescription label carries clinical pharmacology sections, the mechanism, absorption and skin disposition statements are taken from the FDA label for the clindamycin phosphate and benzoyl peroxide topical gel 1%/5% and are explicitly attributed there as statements about the benzoyl peroxide component of that product. The monograph deliberately does not generalise benzoyl peroxide to combination products (for example adapalene or clobetasol combinations)."
+}

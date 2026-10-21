@@ -1,0 +1,234 @@
+{
+  "name": "Azathioprine",
+  "existing_id": "e15fd33c-8704-4722-8429-ef7c6887e41c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Azathioprine is an imidazolyl derivative of 6-mercaptopurine and an immunosuppressive antimetabolite; many of its biological effects are similar to those of the parent compound. Azathioprine is metabolised to 6-mercaptopurine (6-MP), and activation of 6-MP occurs via hypoxanthine-guanine phosphoribosyltransferase (HGPRT) and a series of multi-enzymatic processes involving kinases to form 6-thioguanine nucleotides (6-TGNs) as major metabolites; the cytotoxicity of azathioprine is due, in part, to the incorporation of 6-TGN into DNA. 6-MP is inactivated by thiol methylation catalysed by thiopurine S-methyltransferase (TPMT) to form the inactive metabolite methyl-6-MP (6-MeMP), and by oxidation catalysed by xanthine oxidase (XO) to form 6-thiouric acid; the enzyme NUDT15 converts 6-TGNs to inactive 6-TG monophosphates. Azathioprine suppresses cell-mediated hypersensitivity reactions and causes variable alterations in antibody production, has little effect on established graft rejections or secondary responses, and is considered a slow-acting drug whose effects may persist after the drug has been discontinued (FDA IMURAN (azathioprine) label, DESCRIPTION and CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "As an adjunct for the prevention of rejection in renal homotransplantation (FDA IMURAN label, INDICATIONS AND USAGE)",
+      "For the treatment of active rheumatoid arthritis (RA) to reduce signs and symptoms; aspirin, non-steroidal anti-inflammatory drugs and/or low-dose glucocorticoids may be continued during treatment (FDA IMURAN label, INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Patients who have shown hypersensitivity to azathioprine (FDA IMURAN label, CONTRAINDICATIONS)",
+      "Treatment of rheumatoid arthritis in pregnant women (FDA IMURAN label, CONTRAINDICATIONS and WARNINGS: Pregnancy)",
+      "Rheumatoid arthritis patients previously treated with alkylating agents (cyclophosphamide, chlorambucil, melphalan or others) because of a prohibitive risk of malignancy (FDA IMURAN label, CONTRAINDICATIONS)"
+    ],
+    "side_effects": [
+      "Leukopenia of any degree in >50% of renal homograft recipients and 28% of rheumatoid arthritis patients; leukocytes <2500 cells/mm3 in 16% and 5.3% respectively (FDA IMURAN label, ADVERSE REACTIONS)",
+      "Infections in 20% of renal homograft recipients versus <1% of rheumatoid arthritis patients; the incidence of infection in renal homotransplantation is 30 to 60 times that in rheumatoid arthritis (FDA IMURAN label, ADVERSE REACTIONS)",
+      "Neoplasia in renal homograft recipients: lymphoma 0.5% and other neoplasms 2.8%; acute myelogenous leukaemia and solid tumours have been reported in rheumatoid arthritis patients treated with azathioprine (FDA IMURAN label, ADVERSE REACTIONS and WARNINGS: Malignancy)",
+      "Severe leukopenia, thrombocytopenia, anaemia including macrocytic anaemia and/or pancytopenia may occur, with severe bone marrow suppression; haematologic toxicities are dose-related and may be more severe in renal transplant patients whose homograft is undergoing rejection, and delayed haematologic suppression may occur (FDA IMURAN label, WARNINGS: Cytopenias)",
+      "Death associated with pancytopenia has been reported in patients with absent TPMT activity receiving azathioprine; patients with low or absent TPMT or NUDT15 activity are at increased risk of severe, life-threatening myelosuppression (FDA IMURAN label, WARNINGS: TPMT or NUDT15 Deficiency)",
+      "Nausea and vomiting in approximately 12% of 676 rheumatoid arthritis patients, usually within the first few months of therapy; gastrointestinal disturbance can often be reduced by dividing doses and/or giving them after meals (FDA IMURAN label, ADVERSE REACTIONS: Gastrointestinal)",
+      "Gastrointestinal hypersensitivity reaction characterised by severe nausea and vomiting, sometimes with diarrhoea, rash, fever, malaise, myalgias, elevation of liver enzymes and occasionally hypotension; it usually develops within the first several weeks of therapy, is reversible on discontinuation and can recur within hours of re-challenge with a single dose (FDA IMURAN label, PRECAUTIONS: General)",
+      "Hepatotoxicity manifested by elevated serum alkaline phosphatase, bilirubin and/or transaminases, primarily in allograft recipients; uncommon (less than 1%) in rheumatoid arthritis patients. A rare but life-threatening hepatic veno-occlusive disease has been described with chronic administration (FDA IMURAN label, ADVERSE REACTIONS: Gastrointestinal)",
+      "Other lower-frequency effects: skin rash, alopecia, fever, arthralgia, diarrhoea, steatorrhoea, negative nitrogen balance, reversible interstitial pneumonitis, hepatosplenic T-cell lymphoma, Sweet's syndrome (acute febrile neutrophilic dermatosis) and drug reaction with eosinophilia and systemic symptoms (DRESS) (FDA IMURAN label, ADVERSE REACTIONS: Others)",
+      "Serious and opportunistic infections, including reactivation of latent infections, leading to serious including fatal outcomes (FDA IMURAN label, WARNINGS: Serious infections)",
+      "Progressive multifocal leukoencephalopathy (PML) due to JC virus infection, sometimes fatal (FDA IMURAN label, WARNINGS: Progressive Multifocal Leukoencephalopathy)",
+      "Temporary depression of spermatogenesis and reduced sperm viability and sperm count in mice at 10 times the human therapeutic dose, with a reduced percentage of fertile matings at 5 mg/kg (FDA IMURAN label, WARNINGS: Effect on Sperm in Animals)"
+    ],
+    "dosage": {
+      "adult": "Renal homotransplantation: the initial dose is usually 3 to 5 mg/kg daily, beginning at the time of transplant, usually given as a single daily dose on the day of, and in a minority of cases 1 to 3 days before, transplantation; dose reduction to maintenance levels of 1 to 3 mg/kg daily is usually possible, and the dose should not be increased to toxic levels because of threatened rejection (FDA IMURAN label, DOSAGE AND ADMINISTRATION). Rheumatoid arthritis: the initial dose should be approximately 1.0 mg/kg (50 to 100 mg) given as a single dose or on a twice-daily schedule; the dose may be increased beginning at 6 to 8 weeks and thereafter by steps at 4-week intervals if there are no serious toxicities and the initial response is unsatisfactory, with increments of 0.5 mg/kg daily up to a maximum of 2.5 mg/kg per day. Therapeutic response usually occurs after 6 to 8 weeks and an adequate trial should be a minimum of 12 weeks; patients not improved after 12 weeks can be considered refractory. Maintenance therapy should be at the lowest effective dose and can be lowered decrementally by 0.5 mg/kg or approximately 25 mg daily every 4 weeks while other therapy is kept constant (DOSAGE AND ADMINISTRATION). TPMT/NUDT15 deficiency: for homozygous deficiency in either TPMT or NUDT15, consider alternative therapies because of the risk of increased toxicity; for heterozygous deficiency, dosage reduction is recommended, and patients heterozygous for both may require more substantial reductions (DOSAGE AND ADMINISTRATION). Concomitant allopurinol or febuxostat: reduce the azathioprine dose to approximately 1/3 to 1/4 the usual dose (PRECAUTIONS: Drug Interactions).",
+      "geriatric": "The IMURAN prescribing information gives no geriatric-specific dosing schedule. It advises that relatively oliguric patients, especially those with tubular necrosis in the immediate postcadaveric transplant period, may have delayed clearance of azathioprine or its metabolites, may be particularly sensitive to the drug, and are usually given lower doses (DOSAGE AND ADMINISTRATION: Use in Renal Dysfunction). Because azathioprine is substantially excreted by the kidney, renal function should inform dose selection in older adults (FDA IMURAN label, DOSAGE AND ADMINISTRATION: Use in Renal Dysfunction and OVERDOSAGE).",
+      "paediatric": "Safety and efficacy of azathioprine in paediatric patients have not been established (FDA IMURAN label, PRECAUTIONS: Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Xanthine oxidase inhibitors (allopurinol, febuxostat): inhibition of one azathioprine inactivation pathway increases plasma concentrations of azathioprine or 6-MP leading to toxicity. Patients receiving IMURAN and allopurinol concomitantly should have the azathioprine dose reduced to approximately 1/3 to 1/4 the usual dose, and concomitant use with febuxostat is not recommended. A further dose reduction or alternative therapy should be considered in patients with low or absent TPMT activity because both TPMT and XO inactivation pathways are affected (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "Aminosalicylates (e.g. sulphasalazine, mesalazine, olsalazine): in vitro evidence that these inhibit TPMT; concomitant use should be done with caution (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "Other agents affecting myelopoesis (e.g. co-trimoxazole): may lead to exaggerated leukopenia, especially in renal transplant recipients (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "Angiotensin-converting enzyme inhibitors: use to control hypertension in patients on azathioprine has been reported to induce anaemia and severe leukopenia (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "Warfarin: azathioprine may inhibit the anticoagulant effect of warfarin (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "Ribavirin: use for hepatitis C in patients receiving azathioprine has been reported to induce severe pancytopenia and may increase the risk of azathioprine-related myelotoxicity, through inhibition of inosine monophosphate dehydrogenase and accumulation of 6-methylthioionosine monophosphate (6-MTITP), which is associated with myelotoxicity (neutropenia, thrombocytopenia and anaemia). Complete blood counts including platelets should be monitored weekly for the first month, twice monthly for the second and third months, then monthly or more frequently if dosage or other therapy changes are necessary (FDA IMURAN label, PRECAUTIONS: Drug Interactions)."
+    ],
+    "monitoring": "Obtain complete blood counts including platelet counts weekly during the first month, twice monthly for the second and third months of treatment, then monthly or more frequently if dosage alterations or other therapy changes are necessary; prompt reduction in dosage or temporary withdrawal may be necessary if there is a rapid fall in or persistently low leukocyte count or other evidence of bone marrow depression (FDA IMURAN label, WARNINGS: Cytopenias and PRECAUTIONS: Laboratory Tests). Consider genotyping or phenotyping for TPMT deficiency and genotyping for NUDT15 deficiency in patients with severe myelosuppression, recognising that red blood cell TPMT phenotyping is not possible after recent blood transfusion and that testing cannot substitute for CBC monitoring (PRECAUTIONS: Laboratory Tests). Measure serum transaminases, alkaline phosphatase and bilirubin periodically for early detection of hepatotoxicity, and permanently withdraw azathioprine if hepatic veno-occlusive disease is clinically suspected (ADVERSE REACTIONS: Gastrointestinal). Monitor renal function and adjust the dose in patients with impaired renal function, particularly relatively oliguric patients in the immediate post-transplant period (DOSAGE AND ADMINISTRATION: Use in Renal Dysfunction). With concurrent ribavirin, monitor CBC weekly for the first month, twice monthly for the second and third months and then monthly or more frequently (PRECAUTIONS: Drug Interactions). Counsel patients to report signs and symptoms of infection and any unusual bleeding or bruising, and monitor for malignancy, particularly of the skin, limiting sun and ultraviolet light exposure (PRECAUTIONS: Information for Patients and WARNINGS: Malignancy).",
+    "patient_counselling": "Patients starting azathioprine should be informed of the necessity of periodic blood counts while on the drug and should be encouraged to report any unusual bleeding or bruising to their physician (FDA IMURAN label, PRECAUTIONS: Information for Patients). They should be informed of the danger of infection while receiving azathioprine and asked to report signs and symptoms of infection to their physician. Careful dosage instructions should be given, especially when azathioprine is administered in the presence of impaired renal function or concomitantly with allopurinol. Patients should be advised of the potential risks of azathioprine use during pregnancy and during the nursing period, and the increased risk of malignancy following therapy with azathioprine should be explained to the patient. Explain that patients receiving immunosuppressants including azathioprine are at increased risk of lymphoma and other malignancies, particularly of the skin; as with any patient at increased risk for skin cancer, exposure to sunlight and ultraviolet light should be limited by wearing protective clothing and using a sunscreen with a high protection factor. Advise women of childbearing age to avoid becoming pregnant, and inform patients that benefit versus risk must be weighed carefully in patients of reproductive potential (WARNINGS: Pregnancy and Malignancy).",
+    "warnings": [
+      "WARNING (boxed) - MALIGNANCY: chronic immunosuppression with IMURAN, a purine antimetabolite, increases the risk of malignancy in humans. Reports of malignancy include post-transplant lymphoma and hepatosplenic T-cell lymphoma (HSTCL) in patients with inflammatory bowel disease. Physicians using this drug should be very familiar with this risk as well as with the mutagenic potential to both men and women and with possible hematologic toxicities. Physicians should inform patients of the risk of malignancy with IMURAN (FDA IMURAN label, Boxed Warning)",
+      "Malignancy: patients receiving immunosuppressants including azathioprine are at increased risk of lymphoma and other malignancies, particularly of the skin; limit sun and ultraviolet light exposure by wearing protective clothing and using a sunscreen with a high protection factor, and maintain immunosuppressive therapy at the lowest effective levels (FDA IMURAN label, WARNINGS: Malignancy)",
+      "Post-transplant: renal transplant patients are at increased risk of malignancy, predominantly skin cancer and reticulum cell or lymphomatous tumours, and the risk of post-transplant lymphomas may be increased with aggressive immunosuppressive therapy (FDA IMURAN label, WARNINGS: Malignancy)",
+      "Inflammatory bowel disease: post-marketing cases of hepatosplenic T-cell lymphoma have been reported in patients treated with azathioprine, mostly in adolescent and young adult males with Crohn's disease or ulcerative colitis, with a very aggressive and fatal course; the safety and efficacy of azathioprine for Crohn's disease and ulcerative colitis have not been established (FDA IMURAN label, WARNINGS: Malignancy)",
+      "Cytopenias: severe leukopenia, thrombocytopenia, anaemia including macrocytic anaemia and/or pancytopenia, and severe bone marrow suppression may occur; haematologic toxicities are dose-related and delayed haematologic suppression may occur, requiring prompt dose reduction or temporary withdrawal (FDA IMURAN label, WARNINGS: Cytopenias)",
+      "TPMT or NUDT15 deficiency: patients with thiopurine S-methyltransferase or nucleotide diphosphatase deficiency are at increased risk of severe and life-threatening myelotoxicity at conventional doses; death associated with pancytopenia has been reported in patients with absent TPMT activity. Consider alternative therapy in homozygous deficiency and reduced dosages in heterozygous deficiency (FDA IMURAN label, WARNINGS: TPMT or NUDT15 Deficiency)",
+      "Serious infections: patients receiving immunosuppressants including azathioprine are at increased risk for bacterial, viral, fungal, protozoal and opportunistic infections, including reactivation of latent infections, which may lead to serious including fatal outcomes (FDA IMURAN label, WARNINGS: Serious infections)",
+      "Progressive multifocal leukoencephalopathy: cases of JC virus-associated infection resulting in PML, sometimes fatal, have been reported in patients treated with immunosuppressants including azathioprine; consider the diagnosis in any patient with new-onset neurological manifestations and consider reducing immunosuppression (FDA IMURAN label, WARNINGS: Progressive Multifocal Leukoencephalopathy)",
+      "Drug reaction with eosinophilia and systemic symptoms (DRESS): cases have been reported; consider the diagnosis in any patient presenting with new-onset drug-induced Sweet syndrome and hypersensitivity, and consider reducing or discontinuing azathioprine (FDA IMURAN label, WARNINGS: DRESS)",
+      "Effect on sperm in animals: azathioprine has been reported to cause temporary depression in spermatogenesis and reduction in sperm viability and sperm count in mice at doses 10 times the human therapeutic dose (FDA IMURAN label, WARNINGS: Effect on Sperm in Animals)",
+      "Pregnancy: pregnancy category D. Azathioprine can cause fetal harm when administered to a pregnant woman and should not be given during pregnancy without careful weighing of risk versus benefit; whenever possible its use in pregnant patients should be avoided, and it should not be used for treating rheumatoid arthritis in pregnant women (FDA IMURAN label, WARNINGS: Pregnancy)"
+    ],
+    "precautions": [
+      "Gastrointestinal hypersensitivity reaction characterised by severe nausea and vomiting, sometimes with diarrhoea, rash, fever, malaise, myalgias, elevation of liver enzymes and occasionally hypotension, most often developing within the first several weeks of therapy and reversible on discontinuation; it can recur within hours of re-challenge with a single dose (FDA IMURAN label, PRECAUTIONS: General).",
+      "Complete blood count monitoring is required weekly during the first month, twice monthly for the second and third months, then monthly or more frequently if dosage alterations or other therapy changes are necessary (FDA IMURAN label, PRECAUTIONS: Laboratory Tests).",
+      "TPMT and NUDT15 testing cannot substitute for CBC monitoring, and accurate red blood cell TPMT phenotyping is not possible in patients who have received recent blood transfusions (FDA IMURAN label, PRECAUTIONS: Laboratory Tests).",
+      "For carcinogenesis, mutagenesis and impairment of fertility see the label WARNINGS section, including the reports of lymphoproliferative disease in rheumatoid arthritis patients receiving higher-than-recommended doses of azathioprine (5 mg/kg per day): 1.8 cases per 1000 patient-years versus 0.8 in patients not receiving azathioprine (FDA IMURAN label, PRECAUTIONS and ADVERSE REACTIONS).",
+      "Azathioprine is teratogenic in rabbits and mice when given in doses equivalent to the human dose of 5 mg/kg daily, with skeletal malformations and visceral anomalies; benefit versus risk must be weighed carefully before use in patients of reproductive potential (FDA IMURAN label, WARNINGS: Pregnancy).",
+      "Use of azathioprine in nursing mothers is not recommended because azathioprine or its metabolites are transferred at low levels, both transplacentally and in breast milk; because of the potential for tumorigenicity, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother (FDA IMURAN label, PRECAUTIONS: Nursing Mothers).",
+      "Safety and efficacy of azathioprine in paediatric patients have not been established (FDA IMURAN label, PRECAUTIONS: Pediatric Use).",
+      "Procedures for proper handling and disposal of this immunosuppressive antimetabolite should be considered, although there is no general agreement that all procedures recommended in the published guidelines are necessary or appropriate (FDA IMURAN label, DOSAGE AND ADMINISTRATION)."
+    ],
+    "serious_adverse_reactions": [
+      "Myelosuppression: severe leukopenia, thrombocytopenia, anaemia and/or pancytopenia, with severe bone marrow suppression and death associated with pancytopenia reported in patients with absent TPMT activity (FDA IMURAN label, WARNINGS: Cytopenias and TPMT or NUDT15 Deficiency)",
+      "Serious and opportunistic infections, including reactivation of latent infections, leading to serious including fatal outcomes (FDA IMURAN label, WARNINGS: Serious infections)",
+      "Progressive multifocal leukoencephalopathy (PML), sometimes fatal (FDA IMURAN label, WARNINGS: Progressive Multifocal Leukoencephalopathy)",
+      "Malignancy: lymphoma, post-transplant lymphoma, hepatosplenic T-cell lymphoma (HSTCL) and acute myelogenous leukaemia, plus solid tumours (FDA IMURAN label, Boxed Warning and WARNINGS: Malignancy)",
+      "Hepatotoxicity, including a rare but life-threatening hepatic veno-occlusive disease, and hypersensitivity pancreatitis with vomiting and abdominal pain (FDA IMURAN label, ADVERSE REACTIONS: Gastrointestinal)",
+      "Drug reaction with eosinophilia and systemic symptoms (DRESS) and drug-induced Sweet syndrome (FDA IMURAN label, WARNINGS: DRESS)",
+      "Severe gastrointestinal hypersensitivity reaction with hypotension (FDA IMURAN label, PRECAUTIONS: General)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "D (FDA IMURAN label, WARNINGS: Pregnancy)",
+    "pregnancy_guidance": "Azathioprine is pregnancy category D and can cause fetal harm when administered to a pregnant woman; it should not be given during pregnancy without careful weighing of risk versus benefit, and whenever possible its use in pregnant patients should be avoided. It should not be used for treating rheumatoid arthritis in pregnant women. There are no adequate and well-controlled studies in pregnant women; if the drug is used during pregnancy, or the patient becomes pregnant while taking it, the patient should be apprised of the potential hazard to the fetus, and women of childbearing age should be advised to avoid becoming pregnant. Azathioprine is teratogenic in rabbits and mice at doses equivalent to the human dose (5 mg/kg daily), with skeletal malformations and visceral anomalies. Limited immunologic and other abnormalities have been reported in a few infants born of renal allograft recipients on azathioprine, including documented lymphopenia, diminished IgG and IgM levels, CMV infection and decreased thymic shadow, and two published reports of abnormal physical findings (preaxial polydactyly; myelomeningocele with dislocated hips and talipes equinovarus) (FDA IMURAN label, WARNINGS: Pregnancy and CONTRAINDICATIONS).",
+    "lactation_guidance": "The use of azathioprine in nursing mothers is not recommended. Azathioprine or its metabolites are transferred at low levels, both transplacentally and in breast milk. Because of the potential for tumorigenicity shown for azathioprine, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (FDA IMURAN label, PRECAUTIONS: Nursing Mothers).",
+    "overdose": "The oral LD50 for single doses of azathioprine in mice and rats is 2500 mg/kg and 400 mg/kg respectively; very large doses of this antimetabolite may lead to marrow hypoplasia, bleeding, infection and death. About 30% of azathioprine is bound to serum proteins, but approximately 45% is removed during an 8-hour haemodialysis. A single case has been reported of a renal transplant patient who ingested a single dose of 7500 mg azathioprine: the immediate toxic reactions were nausea, vomiting and diarrhoea, followed by mild leukopenia and mild abnormalities in liver function, with the white blood cell count, SGOT and bilirubin returning to normal 6 days after the overdose (FDA IMURAN label, OVERDOSAGE).",
+    "pharmacokinetics": "Azathioprine is well absorbed after oral administration, with maximum serum radioactivity at 1 to 2 hours after oral 35S-azathioprine and a decay half-life of 5 hours, which reflects decay of all 35S-containing metabolites rather than azathioprine itself; because of extensive metabolism only a fraction of the radioactivity is present as azathioprine. Usual doses produce blood levels of azathioprine and of derived 6-mercaptopurine that are low (<1 mcg/mL). Blood levels are of little predictive value for therapy, because the magnitude and duration of clinical effects correlate with thiopurine nucleotide levels in tissues rather than with plasma drug levels; azathioprine and 6-MP are moderately bound to serum proteins (30%) and are partially dialyzable. Both compounds are rapidly eliminated from blood and are oxidised or methylated in erythrocytes and liver, and no azathioprine or 6-MP is detectable in urine after 8 hours. Approximately 0.3% (1:300) of patients of European or African ancestry have two loss-of-function TPMT alleles with little or no activity, and approximately 10% have one loss-of-function allele giving intermediate activity; TPMT*2, TPMT*3A and TPMT*3C account for about 95% of reduced activity. NUDT15 deficiency is detected in <1% of patients of European or African ancestry, whereas among patients of East Asian ancestry 2% have two loss-of-function NUDT15 alleles and approximately 21% have one. Inhibition of xanthine oxidase may cause increased plasma concentrations of azathioprine or its metabolites leading to toxicity, and the proportions of metabolites differ between individual patients, accounting for the variable magnitude and duration of drug effects (FDA IMURAN label, CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "The single most important interaction check is for xanthine oxidase inhibitors: with allopurinol, reduce azathioprine to approximately one-third to one-quarter of the usual dose, and avoid concomitant febuxostat (FDA IMURAN label, PRECAUTIONS: Drug Interactions).",
+      "TPMT and NUDT15 status drives both safety and dosing: homozygous deficiency warrants alternative therapy, heterozygous deficiency warrants dose reduction, and enzyme activity is more variable in East Asian ancestry where NUDT15 loss-of-function alleles are much more common (FDA IMURAN label, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION).",
+      "Azathioprine is a slow-acting drug whose effects may persist after discontinuation, and its clinical benefit in rheumatoid arthritis is not expected before 6 to 8 weeks, with a minimum adequate trial of 12 weeks (FDA IMURAN label, CLINICAL PHARMACOLOGY and DOSAGE AND ADMINISTRATION).",
+      "The boxed warning reflects chronic immunosuppression: post-transplant lymphoma and hepatosplenic T-cell lymphoma are the signature malignancies, and the latter is concentrated in adolescent and young adult males with inflammatory bowel disease (FDA IMURAN label, Boxed Warning and WARNINGS: Malignancy).",
+      "Plasma azathioprine and 6-MP levels are not useful for therapeutic monitoring; clinical effect tracks with tissue thiopurine nucleotide levels, so dosing is guided by blood counts, TPMT/NUDT15 status and tolerability rather than by drug levels (FDA IMURAN label, CLINICAL PHARMACOLOGY).",
+      "Combined use of azathioprine with disease-modifying antirheumatic drugs has not been studied for added benefit or unexpected adverse effects and cannot be recommended (FDA IMURAN label, INDICATIONS AND USAGE)."
+    ],
+    "brand_names": ["IMURAN", "AZASAN"],
+    "black_box_warnings": [
+      "WARNING - MALIGNANCY: chronic immunosuppression with IMURAN, a purine antimetabolite, increases the risk of malignancy in humans. Reports of malignancy include post-transplant lymphoma and hepatosplenic T-cell lymphoma (HSTCL) in patients with inflammatory bowel disease. Physicians using this drug should be very familiar with this risk as well as with the mutagenic potential to both men and women and with possible hematologic toxicities. Physicians should inform patients of the risk of malignancy with IMURAN (FDA IMURAN label, Boxed Warning)."
+    ],
+    "renal_dose_adjustment": "The label does not provide a numeric renal dose table. Relatively oliguric patients, especially those with tubular necrosis in the immediate postcadaveric transplant period, may have delayed clearance of azathioprine or its metabolites, may be particularly sensitive to the drug, and are usually given lower doses (FDA IMURAN label, DOSAGE AND ADMINISTRATION: Use in Renal Dysfunction). Azathioprine is partially dialyzable: about 30% is bound to serum proteins and approximately 45% is removed during an 8-hour haemodialysis (OVERDOSAGE).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral administration. In renal homotransplantation azathioprine is usually given as a single daily dose on the day of, and in a minority of cases 1 to 3 days before, transplantation; in rheumatoid arthritis it is usually given on a daily basis, either as a single dose or on a twice-daily schedule, and divided doses and/or dosing after meals can reduce gastric disturbance. Maintenance therapy should be at the lowest effective dose and can be reduced decrementally by 0.5 mg/kg or approximately 25 mg daily every 4 weeks while other therapy is kept constant. Azathioprine may be discontinued abruptly, but delayed effects are possible. Store 50 mg tablets at 20 to 25 degrees C (68 to 77 degrees F) in a dry place and protect from light (FDA IMURAN label, DOSAGE AND ADMINISTRATION and HOW SUPPLIED)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, Legacy Pharma, DESCRIPTION and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, ADVERSE REACTIONS and WARNINGS (Malignancy, Cytopenias, TPMT or NUDT15 Deficiency, Serious infections, PML, DRESS, Effect on Sperm in Animals)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, DOSAGE AND ADMINISTRATION and PRECAUTIONS (Drug Interactions, Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Not populated; the narrative adult regimen is provided in fields.dosage.adult (FDA IMURAN label, DOSAGE AND ADMINISTRATION)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Not populated; no established paediatric regimen (FDA IMURAN label, PRECAUTIONS: Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, PRECAUTIONS: Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, WARNINGS (Cytopenias, Malignancy), PRECAUTIONS (Laboratory Tests, Information for Patients, Drug Interactions), ADVERSE REACTIONS (Gastrointestinal) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, PRECAUTIONS: Information for Patients and WARNINGS (Malignancy, Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, Boxed Warning and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, PRECAUTIONS (General, Laboratory Tests, Carcinogenesis/Mutagenesis/Impairment of Fertility, Pregnancy, Nursing Mothers, Pediatric Use) and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, Boxed Warning, WARNINGS and ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA IMURAN (azathioprine) labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, WARNINGS: Pregnancy (Pregnancy Category D)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, WARNINGS: Pregnancy and CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, PRECAUTIONS: Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, Boxed Warning, CLINICAL PHARMACOLOGY, PRECAUTIONS (Drug Interactions), INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "brand_names",
+      "ref": "IMURAN (azathioprine) and AZASAN (azathioprine) listed on DailyMed as brand products (Legacy Pharma / Salix Pharmaceuticals)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9050af7a-19c6-4670-937a-9445605de995"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, Boxed Warning (WARNING - MALIGNANCY)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, DOSAGE AND ADMINISTRATION: Use in Renal Dysfunction, and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA IMURAN (azathioprine) label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, IMURAN (azathioprine) tablets, DOSAGE AND ADMINISTRATION and HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d62b6e4-a9d4-4818-e063-6394a90aa208"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the narrative adult regimen is provided in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no established paediatric regimen)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is specified in the FDA IMURAN label; the label addresses hepatotoxicity under ADVERSE REACTIONS instead)"
+  ],
+  "notes": "The table stores this agent as 'Azathioprine'; the label text used here is the FDA-approved IMURAN (azathioprine) 50 mg tablet label, which is the reference prescribing information for the drug and is also the label inherited by generic azathioprine tablets in the US. AZASAN (Salix) is listed in brand_names as a second confirmed DailyMed brand product. This is an older-format label that carries a boxed MALIGNANCY warning, retains the legacy pregnancy category D, and has no US-specific 'Use in Specific Populations' section - pregnancy, lactation and paediatric content sit under WARNINGS and PRECAUTIONS. The drug_class stored in the database for this row ('Immunomodulatory / biologic agent') is inaccurate: azathioprine is a purine antimetabolite immunosuppressant, not a biologic, and the label itself describes it as a 'purine antimetabolite'. WHO Model List of Essential Medicines and Kenya Essential Medicines List status could not be verified in this pass, so no EML/KEML status is asserted here."
+}

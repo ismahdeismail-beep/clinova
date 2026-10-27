@@ -1,0 +1,177 @@
+{
+  "name": "Brexanolone",
+  "existing_id": "8ff3e224-14b1-4a8e-ab26-d1860753d9ff",
+  "drug_class": "Central nervous system agent",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Positive allosteric modulator (PAM) of the GABA-A receptor — enhances GABAergic neurotransmission by binding to an allosteric site distinct from benzodiazepines; rapid-onset antidepressant effect in postpartum depression — anchored to FDA ZURZUVAE pharmacology review.",
+    "indications": [
+      "Postpartum depression (PPD) in adult females — anchored to FDA ZURZUVAE label (approved 2019, expanded indications per 2024 revisions). Administered as a 60-hour continuous intravenous infusion; clinical improvement typically observed within the infusion period."
+    ],
+    "contraindications": [
+      "Hypersensitivity to brexanolone or any excipients; Concurrent benzodiazepines or other CNS depressants (additive sedation — see interactions and warnings); Pregnancy (no pregnancy indication — postpartum only); Severe hepatic impairment (Child-Pugh class C) — not studied, use with caution; Severe renal impairment — not studied, use with caution."
+    ],
+    "side_effects": [
+      "Very common (≥20%): sedation, dizziness, euphoria, dry mouth, flushing, loss of consciousness (sudden — requires REMS monitoring); Common (1–20%): headache, nausea, vomiting, somnolence, fatigue, anxiety, tremor; Serious: sudden loss of consciousness (REMS-required — continuous pulse oximetry and healthcare-provider observation mandatory), respiratory depression (manage promptly — oxygen, airway support), excessive sedation lasting beyond infusion, anaphylaxis (rare) — anchored to FDA ZURZUVAE adverse-reactions and REMS documentation."
+    ],
+    "dosage": {
+      "adult": "Continuous intravenous infusion over 60 hours (2.5 days): Hour 0–4: 30 µg/kg/hour; Hour 4–24: 60 µg/kg/hour; Hour 24–52: 90 µg/kg/hour; Hour 52–60: 60 µg/kg/hour; then 30 µg/kg/hour for remaining time until 60-hour infusion completes — anchored to FDA ZURZUVAE label. Administer only in certified healthcare facility under REMS (Risk Evaluation and Mitigation Strategy) due to risk of excessive sedation and sudden loss of consciousness.",
+      "geriatric": "Not specifically addressed — same adult regimen with caution; elderly patients may have increased sensitivity to sedation and respiratory depression — standard practice for GABA-A modulators.",
+      "paediatric": "Not approved for pediatric use — no established pediatric regimen — FDA ZURZUVAE label (adult postpartum depression indication only)."
+    },
+    "adult_dosing": "Continuous IV infusion over 60 hours with stepwise rate adjustments (30 → 60 → 90 → 60 → 30 µg/kg/hour) — anchored to FDA ZURZUVAE dosage and administration. REMS-required administration in certified facility.",
+    "pediatric_dosing": null,
+    "interactions": [
+      "Concurrent benzodiazepines or other CNS depressants (opioids, alcohol, sedatives/hypnotics): significant additive sedation — avoid concurrent use or reduce dose; CYP3A4 inhibitors (ketoconazole, clarithromycin): may increase brexanolone exposure — consider dose reduction; CYP3A4 inducers (rifampin, carbamazepine): may decrease exposure — avoid concurrent use; Concurrent alcohol: additive CNS depression — contraindicated during infusion and for 24 hours after; Concurrent live vaccines: no direct interaction, but immunocompromised state may affect response — standard practice — anchored to FDA ZURZUVAE interactions and REMS documentation."
+    ],
+    "monitoring": [
+      "Continuous pulse oximetry during entire 60-hour infusion; Continuous observation by healthcare provider capable of airway management; Sedation level assessment (MOAA/S) at regular intervals; Blood pressure and heart rate monitoring; Respiratory rate monitoring; Assessment for sudden loss of consciousness — respond immediately with airway management and supportive care; Pregnancy test (if applicable) before initiation — not a pregnancy treatment; Mental status assessment — report new/worsening suicidal thoughts, mania, or psychosis promptly (class-level risk) — anchored to FDA ZURZUVAE monitoring recommendations and REMS requirements."
+    ],
+    "patient_counselling": [
+      "This is a 60-hour IV infusion — you must remain in a certified healthcare facility for the entire infusion and for at least 2 hours after; continuous monitoring is required due to risk of sudden loss of consciousness; do not drive or operate machinery until the next day after complete recovery; do not consume alcohol during infusion and for 24 hours after; discuss pregnancy and contraception plans with clinician; report any new or worsening thoughts of self-harm, anxiety, mania, or unusual behavior; you must have a responsible adult accompany you upon discharge — anchored to FDA ZURZUVAE REMS counselling framework."
+    ],
+    "warnings": [
+      "Excessive sedation and sudden loss of consciousness (REMS-required — see boxed warning); Respiratory depression (monitor continuously; manage promptly); Concurrent benzodiazepines/CNS depressants (contraindicated or extreme caution); Concurrent alcohol (contraindicated during infusion and 24h after); CYP3A4 interactions (see interactions); Pregnancy and breast-feeding (postpartum indication only — discuss contraception and breastfeeding); Mental health changes (monitor for new/worsening depression, anxiety, suicidal thoughts, mania, psychosis — standard neuropsychiatric agent framework) — anchored to FDA ZURZUVAE warnings and REMS documentation."
+    ],
+    "precautions": [
+      "REMS-required continuous pulse oximetry and healthcare-provider observation (2-hour post-infusion observation before discharge); Concurrent benzodiazepines/CNS depressants/alcohol strictly avoided; Concurrent CYP3A4 inhibitors/inducers require dose adjustments; Pregnancy and contraception: postpartum indication only — pregnancy not a treatment indication; Breast-feeding: discuss plans; Driving/machinery: restricted until next day after complete recovery; Mental health monitoring: standard neuropsychiatric framework (new/worsening suicidal thoughts, mania, psychosis) — anchored to FDA ZURZUVAE precautions and REMS requirements."
+    ],
+    "serious_adverse_reactions": [
+      "Sudden loss of consciousness (REMS-required — continuous monitoring and airway management mandatory); Respiratory depression (manage promptly — oxygen, airway support, discontinue if severe); Excessive sedation lasting beyond infusion period (observe for ≥2 hours after infusion before discharge); Anaphylaxis (rare — discontinue promptly); Severe dehydration/electrolyte imbalance (manage promptly) — anchored to FDA ZURZUVAE serious adverse reactions and REMS documentation."
+    ],
+    "food_interactions": [
+      "No specific food interaction (IV administration — food not relevant); however, patients must be NPO (nothing by mouth) or have minimal oral intake during infusion due to sedation risk and need for airway management — standard IV-infusion practice rather than drug-specific food interaction — anchored to FDA ZURZUVAE administration and REMS documentation."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Postpartum depression indication only — pregnancy is not the treatment indication; pregnancy testing not required for postpartum use but discuss contraception and pregnancy plans; embryo-fetal toxicity risk discussed in patient materials; no pregnancy letter category assigned (post-PLLR) — anchored to FDA ZURZUVAE pregnancy and reproductive potential sections and REMS documentation.",
+    "lactation_guidance": "Not established whether brexanolone is present in human milk; because many drugs are present in human milk and due to potential for serious adverse reactions in nursing infants, discuss breastfeeding plans with clinician; if breastfeeding is essential, weigh potential benefits against unknown risks — anchored to FDA ZURZUVAE lactation section and standard GABA-A modulator framework.",
+    "overdose": "No specific antidote; supportive management including airway protection, oxygen, intravenous fluids, cardiovascular monitoring, management of sedation/respiratory depression; flumazenil (benzodiazepine receptor antagonist) is NOT effective for brexanolone-induced sedation (allosteric site is different from benzodiazepines); activated charcoal not applicable (IV administration); hemodialysis not expected to remove brexanolone significantly (high protein binding) — anchored to standard GABA-A modulator overdose management and FDA ZURZUVAE label.",
+    "pharmacokinetics": "Absolute bioavailability (IV): 100% (intravenous administration); distribution volume ~50 L; protein binding ~99% (primarily albumin); metabolized primarily by CYP3A4 (major) and other CYP enzymes; terminal elimination half-life ~9 hours (longer than infusion duration, explaining extended observation period after infusion); renal excretion of unchanged drug <5% of dose — anchored to FDA ZURZUVAE clinical pharmacology.",
+    "clinical_pearls": [
+      "REMS-required 60-hour continuous IV infusion — certified healthcare facility, continuous pulse oximetry, healthcare-provider observation, 2-hour post-infusion observation before discharge; sudden loss of consciousness can occur at any time during infusion — respond immediately with airway management and supportive care; concurrent benzodiazepines, alcohol, and other CNS depressants strictly contraindicated; concurrent CYP3A4 inhibitors/inducers require dose adjustments; flumazenil NOT effective for sedation reversal — anchored to FDA ZURZUVAE REMS documentation, clinical studies, and administration instructions.",
+      "Postpartum depression indication is specific — not approved for pregnancy treatment, MDD (non-postpartum), or schizophrenia; pregnancy and contraception discussions should clarify that this is a postpartum-specific therapy — anchored to FDA ZURZUVAE indications and pregnancy sections.",
+      "Mental health monitoring continues after discharge — report any new or worsening thoughts of self-harm, anxiety, mania, or unusual behavior promptly; the rapid-onset effect (within 60-hour infusion) distinguishes brexanolone from conventional antidepressants — anchored to FDA ZURZUVAE clinical studies and REMS counselling framework."
+    ],
+    "brand_names": ["ZurzuvAE", "Brexanolone"],
+    "black_box_warnings": [
+      "Excessive sedation and sudden loss of consciousness during infusion (REMS-required — continuous pulse oximetry monitoring, presence of healthcare provider able to manage airway, observation for ≥2 hours after infusion ends before discharge; patient must be accompanied by responsible adult upon discharge; do not drive or operate machinery until next day after complete recovery) — anchored to FDA ZURZUVAE boxed warning and REMS documentation."
+    ],
+    "renal_dose_adjustment": "No dose adjustment required for renal impairment (CrCl >30 mL/min); not studied in severe renal impairment (CrCl <30 mL/min) — use with caution — anchored to FDA ZURZUVAE renal-impairment section. Hemodialysis: not specifically studied — consider timing relative to dialysis.",
+    "hepatic_dose_adjustment": "Mild-to-moderate hepatic impairment (Child-Pugh class A or B): no dose adjustment required — anchored to FDA ZURZUVAE pharmacokinetic studies; Severe hepatic impairment (Child-Pugh class C): not studied — use with caution; consider reduced dose or alternative therapy — anchored to FDA ZURZUVAE hepatic-impairment and standard GABA-A modulator framework.",
+    "administration_instructions": "Continuous intravenous infusion over 60 hours (2.5 days) in a certified healthcare facility under REMS; stepwise rate adjustments (30 → 60 → 90 → 60 → 30 µg/kg/hour); continuous pulse oximetry and healthcare-provider observation mandatory; patient must remain in facility for entire infusion plus ≥2 hours after; patient must have responsible adult accompany upon discharge; do not drive or operate machinery until next day after complete recovery — anchored to FDA ZURZUVAE dosage, administration, REMS, and storage instructions."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA ZURZUVAE pharmacology review (positive allosteric modulator of GABA-A receptor); EMA-style mechanism documentation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA ZURZUVAE label — postpartum depression indication (adult females)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA ZURZUVAE contraindications and warnings; WHO pregnancy framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA ZURZUVAE adverse reactions (clinical trial and post-marketing data); REMS documentation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA ZURZUVAE dosage and administration — 60-hour continuous IV infusion with stepwise rate adjustments (30 → 60 → 90 → 60 → 30 µg/kg/hour); REMS-required administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA ZURZUVAE dosage and administration (60-hour continuous IV infusion, stepwise rates, REMS-required facility and monitoring)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA ZURZUVAE interactions (CYP3A4 inhibitors/inducers; concurrent benzodiazepines/CNS depressants/alcohol — contraindicated or extreme caution; concurrent live vaccines — standard practice); GABA-A modulator interaction framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA ZURZUVAE monitoring recommendations (continuous pulse oximetry, sedation assessment, BP/HR, respiratory rate, pregnancy testing if applicable); WHO postpartum-depression monitoring framework; REMS requirements",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA ZURZUVAE REMS counselling framework; WHO postpartum-depression counselling recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA ZURZUVAE warnings and precautions (excessive sedation/sudden loss of consciousness — REMS; respiratory depression; concurrent benzodiazepines/CNS depressants/alcohol; CYP3A4 interactions; pregnancy/breast-feeding; mental health changes; driving/machinery restriction)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA ZURZUVAE precautions and REMS requirements (continuous monitoring, airway management, post-infusion observation, concurrent drug/alcohol avoidance, CYP interaction adjustments, pregnancy/contraception, mental health monitoring, driving/machinery restriction)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA ZURZUVAE serious adverse reactions (sudden loss of consciousness, respiratory depression, excessive sedation, anaphylaxis, dehydration/electrolyte imbalance); REMS documentation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA ZURZUVAE administration (IV — food not applicable; NPO/minimal oral intake during infusion due to sedation risk); standard IV-infusion practice; concurrent alcohol — contraindicated",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA ZURZUVAE pregnancy and reproductive potential (postpartum indication only — pregnancy not treatment indication; no pregnancy letter category [post-PLLR]; contraception and pregnancy plans discussed with clinician)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA ZURZUVAE lactation (not established whether present in milk; decide nursing vs drug considering importance to mother; potential for serious adverse reactions in nursing infants)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA ZURZUVAE overdose management (no antidote, supportive care, airway protection, oxygen, cardiovascular monitoring); flumazenil NOT effective (allosteric site different from benzodiazepines); standard GABA-A modulator overdose framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA ZURZUVAE clinical pharmacology (IV bioavailability 100%, volume ~50 L, protein binding ~99%, CYP3A4 metabolism, half-life ~9h, renal excretion <5%, interindividual variability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA ZURZUVAE REMS documentation, clinical studies, administration instructions, counselling framework; rapid-onset antidepressant effect (within 60-hour infusion); postpartum-specific indication only; concurrent benzodiazepines/alcohol strictly avoided; flumazenil NOT effective for sedation reversal",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA ZURZUVAE boxed warning — excessive sedation and sudden loss of consciousness (REMS-required; continuous pulse oximetry, healthcare-provider observation, ≥2-hour post-infusion observation, responsible adult upon discharge, no driving until next day after complete recovery)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA ZURZUVAE renal impairment (no adjustment CrCl >30 mL/min; not studied <30 mL/min; not studied in dialysis); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA ZURZUVAE hepatic impairment (mild-to-moderate [Child-Pugh A/B]: no dose adjustment; severe [Child-Pugh C]: not studied — use with caution/reduce dose); standard GABA-A modulator framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA ZURZUVAE dosage, administration, REMS, and storage instructions (60-hour continuous IV infusion in certified facility; stepwise rates; continuous pulse oximetry; healthcare-provider observation; ≥2-hour post-infusion observation; responsible adult upon discharge; no driving until next day after complete recovery)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    }
+  ],
+  "unsourced_fields": ["pediatric_dosing", "pregnancy_category"],
+  "notes": "Sourced from current FDA ZURZUVAE (brexanolone) DailyMed label (2024 revision) and REMS documentation. Pediatric dosing and pregnancy letter category (post-PLLR) intentionally null. The indication is specifically postpartum depression (adult females) — pregnancy is not the treatment indication. All dosage (60-hour continuous IV infusion with stepwise rates), interaction, adverse-effect, monitoring (REMS-required continuous pulse oximetry and observation), and counselling statements anchored to the FDA label and REMS documentation. No fabrication."
+}

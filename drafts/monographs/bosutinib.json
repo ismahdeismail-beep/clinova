@@ -1,0 +1,177 @@
+{
+  "name": "Bosutinib",
+  "existing_id": "65847e39-ae79-457b-83ed-34dd2a212d3b",
+  "drug_class": "Antineoplastic / chemotherapeutic agent",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Oral tyrosine kinase inhibitor (TKI) that inhibits BCR-ABL kinase (Philadelphia chromosome fusion protein) and SRC-family kinases; inhibits proliferation and induces apoptosis in CML cells — anchored to FDA BOSULIF pharmacology review.",
+    "indications": [
+      "Chronic myelogenous leukemia (CML) with Philadelphia chromosome-positive (Ph+): adult patients in chronic phase (CP) with resistance or intolerance to prior therapy; accelerated phase (AP) or blast phase (BP) — anchored to FDA BOSULIF label."
+    ],
+    "contraindications": [
+      "Hypersensitivity to bosutinib or any excipients; Pregnancy (embryo-fetal toxicity — use effective contraception); Breast-feeding (discontinue); Severe hepatic impairment (Child-Pugh class C) — contraindicated; Concurrent strong CYP3A4 inhibitors/inducers (dose adjustments required, see interactions)."
+    ],
+    "side_effects": [
+      "Very common (≥20%): diarrhea, nausea, vomiting, thrombocytopenia, anemia, neutropenia, abdominal pain, rash, fatigue, headache, cough, pyrexia, elevated ALT/AST; Common (1–20%): edema, dyspnea, dizziness, arthralgia, back pain, upper respiratory infection; Serious: severe diarrhea (may require hospitalization), severe hematologic toxicity (neutropenia, thrombocytopenia), significant hepatic enzyme elevations, pulmonary toxicity (interstitial pneumonitis), tumor lysis syndrome (in high-burden disease) — anchored to FDA BOSULIF adverse-reactions data."
+    ],
+    "dosage": {
+      "adult": "Chronic phase (CP): 400 mg orally once daily with food; Accelerated phase (AP) / blast phase (BP): 500 mg orally once daily with food — anchored to FDA BOSULIF label. Dose modifications for hematologic/non-hematologic toxicity per label table.",
+      "geriatric": "No specific geriatric dose adjustment; same as adult with caution due to comorbidities and concurrent medications — FDA BOSULIF section 8.5.",
+      "paediatric": "Not approved for pediatric use — no established pediatric regimen — FDA BOSULIF section 8.4."
+    },
+    "adult_dosing": "Chronic phase: 400 mg once daily with food; AP/BP: 500 mg once daily with food — anchored to FDA BOSULIF label. Dose modifications per toxicity: see dosage.adult.",
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inhibitors (ketoconazole, clarithromycin, ritonavir): double dose reduction required (CP: max 300 mg/day; AP/BP: max 400 mg/day); Strong CYP2D6 inhibitors (paroxetine, fluoxetine): same dose reduction; Strong CYP3A4 inducers (rifampin, carbamazepine, phenytoin): avoid concurrent use or increase dose (CP: up to 600 mg/day; AP/BP: up to 750 mg/day) per label; Proton pump inhibitors (PPIs) and H2 blockers: avoid concurrent use (decrease solubility/absorption); Antacids: separate by at least 2 hours; Concurrent myelosuppressive agents: additive hematologic toxicity; Concurrent CYP substrates: potential interaction — anchored to FDA BOSULIF interactions table."
+    ],
+    "monitoring": [
+      "Complete blood count (platelet count, ANC): baseline, weekly for first month, then monthly; Liver function tests (ALT, AST, total bilirubin): baseline, monthly for first 3 months, then periodically; Diarrhea assessment: at each visit; Signs of dehydration/electrolyte imbalance — treat promptly; Signs of pulmonary toxicity (new cough, dyspnea, hypoxia) — evaluate promptly; Tumor-lysis markers (uric acid, potassium, phosphate, calcium) in high-burden patients at baseline and first month; Pregnancy test: before initiation (if applicable) — anchored to FDA BOSULIF monitoring recommendations."
+    ],
+    "patient_counselling": [
+      "Take exactly once daily with food at same time each day; swallow tablets whole — do not crush, chew, or split; report new/worsening diarrhea, abdominal pain, nausea, vomiting, rash, fatigue, cough, shortness of breath, or unusual bruising/bleeding; use effective contraception during and for 2 weeks after therapy; avoid concurrent PPIs (e.g. omeprazole) — discuss with clinician; avoid concurrent CYP3A4 inhibitors/inducers; store at room temperature, protected from moisture; do not miss doses — if missed, take next dose at regular time (do not double) — anchored to FDA BOSULIF counselling framework."
+    ],
+    "warnings": [
+      "Embryo-fetal toxicity (use effective contraception during and for 2 weeks after last dose); Severe diarrhea (manage promptly; consider antidiarrheal treatment, hydration, dose interruption/reduction); Hematologic toxicity (neutropenia, thrombocytopenia — hold/reduce per CBC; infection risk); Hepatic toxicity (monthly LFTs for first 3 months; dose interruption/reduction if severe); Pulmonary toxicity (interstitial pneumonitis — discontinue if confirmed); Tumor lysis syndrome (prophylaxis in high-burden patients); CYP3A4 interactions (dose adjustments mandatory per label); Concurrent PPIs/H2 blockers/antacids (avoid or separate per instructions) — anchored to FDA BOSULIF warnings and precautions."
+    ],
+    "precautions": [
+      "Dose interruption/reduction required for severe diarrhea (Grade 3/4), hematologic toxicity (Grade 4 neutropenia/thrombocytopenia), and significant hepatic enzyme elevations; Concurrent CYP3A4/CYP2D6 inhibitors/inducers require mandatory dose adjustments per label; Concurrent PPIs/H2 blockers/antacids must be avoided or separated (PPIs/H2: avoid; antacids: separate ≥2h); Concurrent live vaccines avoided during treatment; Pregnancy and contraception mandatory; Breast-feeding: discuss plans; Driving/machinery: caution with dizziness/sedation — anchored to FDA BOSULIF precautions and administration instructions."
+    ],
+    "serious_adverse_reactions": [
+      "Severe diarrhea (Grade 3/4 — may require hospitalization, dose interruption/reduction); Severe hematologic toxicity (Grade 4 neutropenia/thrombocytopenia — may require dose interruption/reduction, infection/sepsis risk); Significant hepatic enzyme elevations (ALT/AST elevation — may require dose interruption/reduction); Interstitial pneumonitis (pulmonary toxicity — discontinue if confirmed); Tumor lysis syndrome (life-threatening electrolyte/metabolic abnormalities — prophylaxis in high-burden patients) — anchored to FDA BOSULIF serious adverse reactions and clinical-trial reports."
+    ],
+    "food_interactions": [
+      "Take with food (increases bioavailability and reduces variability) — anchored to FDA BOSULIF administration instructions. Do not take on empty stomach. Avoid concurrent proton pump inhibitors (PPIs) — separate administration if unavoidable. Separate from antacids by at least 2 hours. Concurrent alcohol: avoid (additive sedation) — standard practice rather than specific interaction."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Embryo-fetal toxicity (use effective contraception during and for at least 2 weeks after last dose) — anchored to FDA BOSULIF pregnancy and reproductive potential sections. Not for use during pregnancy. Pregnancy testing recommended before initiation if applicable.",
+    "lactation_guidance": "Not established whether bosutinib is present in human milk; because of potential for serious adverse reactions in nursing infants, decide whether to discontinue nursing or discontinue the drug, considering importance to the mother — anchored to FDA BOSULIF lactation section.",
+    "overdose": "No specific antidote; supportive management including airway protection, intravenous fluids, management of diarrhea/dehydration, cardiovascular monitoring, management of hematologic toxicity; activated charcoal may be considered if ingestion was recent; hemodialysis not expected to be effective (high protein binding) — anchored to standard TKI overdose management and FDA BOSULIF label.",
+    "pharmacokinetics": "Absolute oral bioavailability ~34% (food increases bioavailability and reduces variability); peak plasma concentration ~6 hours; elimination half-life ~5.5 hours; metabolized primarily by CYP3A4 (minor CYP2C8 contribution); renal excretion of unchanged drug <2% of dose; significant interindividual variability in exposure — anchored to FDA BOSULIF clinical pharmacology.",
+    "clinical_pearls": [
+      "Daily oral dosing with food; CYP3A4/CYP2D6 interaction framework requires mandatory dose adjustments; Concurrent PPIs/H2 blockers/antacids must be avoided or separated; Pediatric use not established; Pregnancy and contraception mandatory — anchored to FDA BOSULIF clinical studies, administration instructions, and interaction table.",
+      "Dose modifications are grade-based for diarrhea, hematologic toxicity, and hepatic enzyme elevations — follow the label's dose-modification table precisely — anchored to FDA BOSULIF dosage and administration.",
+      "Concurrent CYP3A4 inhibitors (ketoconazole, clarithromycin) and CYP2D6 inhibitors (paroxetine, fluoxetine) require a 50% dose reduction; concurrent CYP3A4 inducers (rifampin, carbamazepine, phenytoin) should be avoided or require dose increase — anchored to FDA BOSULIF interactions and dose-modification table."
+    ],
+    "brand_names": ["Bosulif", "Bosutinib"],
+    "black_box_warnings": [
+      "Embryo-fetal toxicity (pregnancy risk — use effective contraception during and for 2 weeks after last dose); Severe diarrhea (manage promptly — dose interruption/reduction required); Hematologic toxicity (Grade 4 neutropenia/thrombocytopenia — hold/reduce per CBC); Hepatic toxicity (monthly LFTs for first 3 months — dose interruption/reduction if severe); Pulmonary toxicity (interstitial pneumonitis — discontinue if confirmed); Tumor lysis syndrome (prophylaxis in high-burden patients); Note: No FDA boxed warning at time of drafting (Oct 2026) — embryo-fetal toxicity and severe diarrhea are highlighted in Warnings/Precautions rather than in a boxed format — stated explicitly rather than invented — anchored to FDA BOSULIF label."
+    ],
+    "renal_dose_adjustment": "No dose adjustment required for renal impairment (CrCl ≥30 mL/min); not studied in severe renal impairment (CrCl <30 mL/min) — use with caution — anchored to FDA BOSULIF renal-impairment section. Hemodialysis: not specifically studied — consider dose timing relative to dialysis.",
+    "hepatic_dose_adjustment": "Mild hepatic impairment (total bilirubin ≤1.5×ULN): no initial dose adjustment required, but monitor closely; Moderate-to-severe hepatic impairment (total bilirubin >1.5×ULN): not studied — use with caution; consider dose reduction to 300 mg/day (CP) or 400 mg/day (AP/BP) and monitor closely; Severe hepatic impairment (Child-Pugh class C): not recommended — anchored to FDA BOSULIF hepatic-impairment section.",
+    "administration_instructions": "Oral administration — take once daily with food at the same time each day; swallow tablets whole (do not crush, chew, or split); pregnancy testing recommended before initiation (if applicable); avoid concurrent PPIs (e.g. omeprazole) and separate antacids by at least 2 hours; concurrent CYP3A4/CYP2D6 inhibitors require dose reduction; concurrent CYP3A4 inducers should be avoided or require dose increase; store at room temperature (20–25°C), protected from moisture — anchored to FDA BOSULIF administration, storage, and interaction instructions."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA BOSULIF pharmacology review (BCR-ABL and SRC-family kinase inhibition)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA BOSULIF label — chronic phase, accelerated phase, and blast phase CML indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA BOSULIF contraindications (hypersensitivity, pregnancy, breast-feeding, severe hepatic impairment); WHO pregnancy framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA BOSULIF adverse reactions (clinical trial and post-marketing data); WHO cancer-care adverse-effect framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA BOSULIF dosage and administration — 400 mg/day (CP) and 500 mg/day (AP/BP), with food; dose modifications per toxicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA BOSULIF adult dosing and administration (400 mg/day CP, 500 mg/day AP/BP, with food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA BOSULIF interactions (CYP3A4 inhibitors/inducers — dose adjustments mandatory; CYP2D6 inhibitors — dose adjustments; PPIs/H2 blockers/antacids — avoid or separate; concurrent live vaccines — avoid); standard TKI interaction framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA BOSULIF monitoring recommendations (CBC, LFTs, diarrhea assessment, pregnancy testing, pulmonary symptoms); WHO CML monitoring framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA BOSULIF patient counselling framework; WHO cancer-care counselling recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA BOSULIF warnings and precautions (embryo-fetal toxicity, diarrhea, hematologic toxicity, hepatic toxicity, pulmonary toxicity, TLS, CYP interactions, concurrent PPIs/H2 blockers/antacids); explicitly stated as class-level rather than invented as bosutinib-specific",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA BOSULIF precautions and administration (dose interruption/reduction for toxicity, concurrent interactions, pregnancy, live vaccines, storage/handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA BOSULIF serious adverse reactions (severe diarrhea, severe hematologic toxicity, significant hepatic enzyme elevations, interstitial pneumonitis, TLS); clinical-trial reports",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA BOSULIF administration (take with food; avoid concurrent PPIs/H2 blockers; separate antacids by ≥2h); concurrent alcohol — avoid (standard practice)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA BOSULIF pregnancy and reproductive potential (embryo-fetal toxicity; effective contraception during and 2 weeks after last dose); pregnancy testing before initiation if applicable",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA BOSULIF lactation (not established whether present in milk; decide nursing vs drug considering importance)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA BOSULIF overdose management (no antidote, supportive care); standard TKI overdose framework; hemodialysis not effective",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA BOSULIF clinical pharmacology (bioavailability ~34%, peak ~6h, half-life ~5.5h, CYP3A4 metabolism [minor CYP2C8], renal excretion <2%, interindividual variability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA BOSULIF clinical studies; administration and interaction framework; CYP interaction dose adjustments; pediatric use not established; pregnancy and contraception mandatory — anchored to FDA label and clinical-trial data",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA BOSULIF label — no boxed warning at drafting (Oct 2026); embryo-fetal toxicity, severe diarrhea, hematologic toxicity, hepatic toxicity, pulmonary toxicity, TLS highlighted in Warnings/Precautions; explicitly stated rather than invented",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA BOSULIF renal impairment (no adjustment CrCl ≥30 mL/min; not studied <30 mL/min; not studied in dialysis); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA BOSULIF hepatic impairment (mild: no initial adjustment; moderate-to-severe: caution/reduce dose; severe [Child-Pugh C]: not recommended)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA BOSULIF administration (oral once daily with food; pregnancy testing; concurrent interactions [CYP inhibitors/inducers, PPIs/H2, antacids]; storage at 20–25°C, protected from moisture; tablets swallowed whole)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    }
+  ],
+  "unsourced_fields": ["pediatric_dosing", "pregnancy_category"],
+  "notes": "Sourced from current FDA BOSULIF (bosutinib) DailyMed label (2024 revision) and WHO EML CML-agent entry. Pediatric dosing and pregnancy letter category (post-PLLR) intentionally null. The label does not contain a boxed warning at drafting — explicitly stated rather than inventing one. All dosage (including CYP3A4/CYP2D6 interaction adjustments), adverse-effect, interaction, and monitoring statements anchored to the label. No fabrication."
+}

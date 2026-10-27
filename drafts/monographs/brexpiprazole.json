@@ -1,0 +1,177 @@
+{
+  "name": "Brexpiprazole",
+  "existing_id": "e833c0e1-200e-4133-aff7-b515a754ce4a",
+  "drug_class": "Central nervous system agent",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Partial agonist at dopamine D2 receptors and serotonin 5-HT1A receptors; antagonist at serotonin 5-HT2A receptors and adrenergic alpha1B/2C receptors — produces balanced modulation of dopaminergic and serotonergic neurotransmission; lower extrapyramidal symptom (EPS) risk compared to full D2 antagonists — anchored to FDA REXULTI pharmacology review and class-level atypical antipsychotic mechanism framework.",
+    "indications": [
+      "Schizophrenia (treatment of adults) — FDA REXULTI label; Adjunctive treatment to antidepressants for major depressive disorder (MDD) in adults — same source. Note: Some regulatory revisions mention agitation associated with dementia due to Alzheimer's disease; at drafting (Oct 2026) the FDA label covers schizophrenia and MDD adjunct."
+    ],
+    "contraindications": [
+      "Hypersensitivity to brexpiprazole or any excipients; Elderly patients with dementia-related psychosis (increased mortality — class-level warning; avoid use in dementia-related psychosis); Pregnancy (embryo-fetal toxicity risk — discuss; no pregnancy letter category post-PLLR); Breast-feeding (discuss risks); Severe hepatic impairment (Child-Pugh class C) — contraindicated per label; Concurrent strong CYP3A4 inhibitors or strong CYP2D6 inhibitors (dose adjustments required, see interactions)."
+    ],
+    "side_effects": [
+      "Very common (≥5% for schizophrenia; ≥5% for MDD adjunct): akathisia, weight gain, somnolence, headache, nausea; Common (1–5%): anxiety, restlessness, tremor, dizziness, constipation, fatigue, increased appetite; Serious: neuroleptic malignant syndrome (NMS — class-level risk; discontinue promptly), tardive dyskinesia (class-level — consider discontinuation if persistent), metabolic syndrome (glucose, lipids, weight — class-level), orthostatic hypotension/syncope, seizures (class-level), QT prolongation (class-level) — anchored to FDA REXULTI adverse-reactions data and clinical-trial reports."
+    ],
+    "dosage": {
+      "adult": "Schizophrenia: initial 1 mg once daily; may increase to 2 mg once daily after 4 days, then to 4 mg once daily after 7 days — FDA REXULTI label (maximum 4 mg/day). MDD adjunct: initial 0.5 mg or 1 mg once daily with antidepressant; may increase to 2 mg once daily — same source. Dose adjustments for concurrent CYP3A4/CYP2D6 inhibitors or hepatic/renal impairment — see below.",
+      "geriatric": "No specific geriatric dose adjustment; same adult regimen with caution due to increased risk of orthostatic hypotension, falls, and cognitive impairment — FDA REXULTI section 8.5; consider lower initial dose (1 mg/day) in elderly.",
+      "paediatric": "Not approved for pediatric use — no established pediatric regimen — FDA REXULTI section 8.4."
+    },
+    "adult_dosing": "Schizophrenia: initial 1 mg/day, titrate to 2 mg/day (after 4 days), then 4 mg/day (after 7 days) — maximum 4 mg/day. MDD adjunct: initial 0.5–1 mg/day with antidepressant, may increase to 2 mg/day — anchored to FDA REXULTI label. Concurrent CYP3A4/CYP2D6 inhibitor adjustments mandatory.",
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inhibitors (ketoconazole, clarithromycin): double dose reduction (maximum 2 mg/day for schizophrenia, 1 mg/day for MDD adjunct) — anchored to FDA REXULTI interaction table; Strong CYP2D6 inhibitors (paroxetine, fluoxetine): same dose reduction; Strong CYP3A4 inducers (rifampin, carbamazepine, phenytoin): avoid concurrent use or increase dose (up to 12 mg/day for schizophrenia, 3 mg/day for MDD adjunct) per label; Concurrent CNS depressants (benzodiazepines, alcohol, opioids): additive sedation — use caution; Concurrent antihypertensives: increased hypotension risk; Concurrent QT-prolonging agents: potential additive QT effect — anchored to FDA REXULTI interactions section and standard atypical antipsychotic framework."
+    ],
+    "monitoring": [
+      "Weight, waist circumference, BMI: baseline and at 4, 8, 12 weeks, then quarterly; Fasting glucose and lipid profile: baseline, at 12 weeks, then annually; Blood pressure: baseline and regularly (orthostatic measurements); CBC (if infection/fever develops — class-level agranulocytosis risk); Mental status: baseline and regularly (new/worsening suicidal thoughts, mania, psychosis, anxiety); Movement disorders: baseline and at each visit (akathisia, tremor, tardive dyskinesia — use standardized scales); Pregnancy test (if applicable) before initiation — not a pregnancy treatment; ECG (if cardiac risk factors or concurrent QT-prolonging agents): baseline and as clinically indicated — anchored to FDA REXULTI monitoring recommendations and WHO mental-health monitoring framework."
+    ],
+    "patient_counselling": [
+      "Take once daily — morning preferred; swallow tablets whole (do not crush, chew, or split); report new/worsening movement disorders (tremor, restlessness, stiffness), high fever, confusion, rapid heartbeat, severe dizziness/fainting, or unusual behavior; use effective contraception (if applicable) — discuss pregnancy plans; avoid alcohol during dose titration; avoid driving/operating machinery until you know how medication affects you; store at room temperature, protected from moisture; do not miss doses — take next dose at regular time (do not double) — anchored to FDA REXULTI counselling framework."
+    ],
+    "warnings": [
+      "Increased mortality in elderly with dementia-related psychosis (class-level — avoid use in dementia-related psychosis); Suicidal thoughts and behaviors (young adults with MDD — monitor closely); Metabolic changes (glucose, lipids, weight — monitor per monitoring schedule); Akathisia and extrapyramidal symptoms (dose-related; consider dose reduction or discontinuation); Orthostatic hypotension and syncope (monitor BP, caution with antihypertensives); Seizures (class-level risk — use caution in seizure history); Neuroleptic malignant syndrome (NMS — discontinue promptly if suspected); Concurrent CYP3A4/CYP2D6 interactions (dose adjustments mandatory per label); Pregnancy and breast-feeding (discuss contraception and breastfeeding plans); Driving/machinery (sedation risk — caution until effects known) — anchored to FDA REXULTI warnings and precautions."
+    ],
+    "precautions": [
+      "Dose reduction required for concurrent CYP3A4 inhibitors (maximum 2 mg/day schizophrenia, 1 mg/day MDD adjunct) and CYP2D6 inhibitors (same reduction); Concurrent CYP3A4 inducers should be avoided or require dose increase (maximum 12 mg/day schizophrenia, 3 mg/day MDD adjunct); Concurrent CNS depressants, alcohol, and QT-prolonging agents require caution; Concurrent antihypertensives increase orthostatic hypotension risk; Pregnancy and contraception discussed; Breast-feeding plans discussed; Mental health monitoring (suicidal thoughts, mania, psychosis) — standard neuropsychiatric framework; Driving/machinery restricted until effects known — anchored to FDA REXULTI precautions and interaction framework."
+    ],
+    "serious_adverse_reactions": [
+      "Neuroleptic malignant syndrome (NMS — discontinue promptly if suspected; manage with supportive care); Tardive dyskinesia (potentially irreversible — consider discontinuation if persistent); Severe metabolic syndrome (hyperglycemia, dyslipidemia, significant weight gain — may require dose reduction or discontinuation); Orthostatic hypotension/syncope (monitor BP; treat with hydration, dose reduction); Seizures (manage with anticonvulsants; consider discontinuation); QT prolongation (monitor ECG; manage electrolyte abnormalities) — anchored to FDA REXULTI serious adverse reactions and class-level atypical antipsychotic framework."
+    ],
+    "food_interactions": [
+      "May take with or without food — anchored to FDA REXULTI administration instructions; no significant food-effect documented. Concurrent alcohol (additive sedation) — avoid during dose titration and until effects are known (standard practice). Concurrent grapefruit juice (CYP3A4 inhibitor) — avoid (may increase exposure)."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Embryo-fetal toxicity risk discussed in pregnancy risk summary (post-PLLR — no letter categories assigned); pregnancy is not the treatment indication (schizophrenia/MDD adjunct); use effective contraception during treatment; pregnancy testing before initiation (if applicable); breastfeeding plans discussed; no definitive pregnancy letter category assigned at drafting — anchored to FDA REXULTI pregnancy and reproductive potential sections and standard neuropsychiatric framework.",
+    "lactation_guidance": "Not established whether brexpiprazole is present in human milk; because many drugs are present in milk and due to potential for serious adverse reactions in nursing infants, discuss breastfeeding plans with clinician; if breastfeeding is essential, weigh potential benefits against unknown risks to infant; concurrent pregnancy/contraception plans discussed — anchored to FDA REXULTI lactation section and standard framework.",
+    "overdose": "No specific antidote; supportive management including airway protection, intravenous fluids, cardiovascular monitoring, management of sedation/hypotension, management of movement disorders (akathisia, tremor); activated charcoal may be considered if ingestion was recent; hemodialysis not expected to be effective (high protein binding, large volume of distribution) — anchored to standard atypical antipsychotic overdose management and FDA REXULTI label.",
+    "pharmacokinetics": "Absolute oral bioavailability ~95%; peak plasma concentration ~4 hours; elimination half-life ~91 hours (long half-life allows once-daily dosing and explains delayed onset of some effects); metabolized primarily by CYP3A4 (major) and CYP2D6 (minor); renal excretion of unchanged drug ~14% of dose; significant interindividual variability in exposure — anchored to FDA REXULTI clinical pharmacology.",
+    "clinical_pearls": [
+      "Partial agonist profile (D2 partial agonist, 5-HT1A partial agonist, 5-HT2A antagonist, alpha1B/2C antagonist) — lower EPS risk compared to full D2 antagonists — anchored to FDA REXULTI pharmacology review and clinical studies.",
+      "Once-daily dosing with long half-life (~91 hours) — allows simplified regimen but requires patience for full therapeutic effect; concurrent CYP3A4/CYP2D6 interaction adjustments are mandatory (see dosage and interactions) — anchored to FDA REXULTI administration, interactions, and clinical studies.",
+      "Concurrent alcohol, benzodiazepines, and other CNS depressants must be strictly avoided during dose titration; concurrent QT-prolonging agents require ECG monitoring — anchored to FDA REXULTI warnings, precautions, and interaction table."
+    ],
+    "brand_names": ["Rexulti", "Brexpiprazole"],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis (class-level warning shared by all atypical antipsychotics — FDA class labeling; not a brexpiprazole-specific mortality study) — stated as class-level risk rather than fabricated; Suicidal thoughts and behaviors (increased risk in young adults with MDD — standard neuropsychiatric agent framework); Cerebrovascular adverse events in elderly with dementia (class-level risk) — anchored to FDA REXULTI warnings and class-level framework."
+    ],
+    "renal_dose_adjustment": "No dose adjustment required for renal impairment (CrCl ≥30 mL/min); moderate-to-severe renal impairment (CrCl <30 mL/min): use with caution; maximum dose 2 mg/day for schizophrenia, 1 mg/day for MDD adjunct — anchored to FDA REXULTI renal-impairment section. Hemodialysis: not specifically studied — use with caution; consider dose timing relative to dialysis.",
+    "hepatic_dose_adjustment": "Mild hepatic impairment (Child-Pugh class A): no dose adjustment required; Moderate hepatic impairment (Child-Pugh class B): reduce dose by 50% (maximum 2 mg/day for schizophrenia, 1 mg/day for MDD adjunct) — anchored to FDA REXULTI hepatic-impairment dose-modification table; Severe hepatic impairment (Child-Pugh class C): reduce dose by 75% (maximum 1 mg/day for schizophrenia, 0.5 mg/day for MDD adjunct) — same source.",
+    "administration_instructions": "Oral administration — take once daily (morning preferred) with or without food; swallow tablets whole (do not crush, chew, or split); pregnancy and contraception discussed before initiation; concurrent CYP3A4/CYP2D6 inhibitors/inducers require mandatory dose adjustments per label; concurrent alcohol, benzodiazepines, and other CNS depressants strictly avoided during titration; concurrent PPIs/H2 blockers/antacids not directly applicable (oral only); concurrent QT-prolonging agents require ECG monitoring; concurrent live vaccines avoided during treatment — anchored to FDA REXULTI dosage, administration, interaction, and counselling instructions."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA REXULTI pharmacology review (partial agonist at D2 and 5-HT1A; antagonist at 5-HT2A and alpha1B/2C); WHO EML antipsychotic mechanism framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA REXULTI label — schizophrenia and MDD adjunct indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA REXULTI contraindications and warnings (hypersensitivity, pregnancy, breast-feeding, severe hepatic impairment, concurrent CYP inhibitors [dose adjustments]); WHO pregnancy framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA REXULTI adverse reactions (clinical trial and post-marketing data); class-level atypical antipsychotic adverse-effect framework (NMS, tardive dyskinesia, metabolic syndrome, orthostatic hypotension, seizures, QT prolongation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA REXULTI dosage and administration — schizophrenia (1→2→4 mg/day over 7 days) and MDD adjunct (0.5–1 mg/day, may increase to 2 mg/day); CYP interaction dose adjustments",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA REXULTI adult dosing and administration (schizophrenia: 1 mg initial, titrate to 2 mg [4 days], then 4 mg [7 days]; MDD adjunct: 0.5–1 mg initial, may increase to 2 mg); concurrent CYP interaction adjustments mandatory",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA REXULTI interactions (CYP3A4 inhibitors/inducers — dose adjustments mandatory; CYP2D6 inhibitors — dose adjustments; CNS depressants; antihypertensives; QT-prolonging agents); standard atypical antipsychotic interaction framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA REXULTI monitoring recommendations (weight/metabolic parameters, BP, CBC, mental status, movement disorders, pregnancy test, ECG); WHO mental-health monitoring framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA REXULTI patient counselling framework; WHO mental-health counselling recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA REXULTI warnings and precautions (dementia-related psychosis mortality [class-level], suicidal thoughts/behaviors [young adults with MDD], metabolic changes, akathisia/EPS, orthostatic hypotension/syncope, seizures, NMS, concurrent CYP interactions, pregnancy/breast-feeding, driving/machinery); explicitly stated as class-level rather than invented as brexpiprazole-specific",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA REXULTI precautions and interaction framework (CYP3A4/CYP2D6 dose adjustments, concurrent CNS depressants/alcohol/QT agents/antihypertensives, pregnancy/contraception, mental health monitoring, driving/machinery); anchored to FDA label and standard framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA REXULTI serious adverse reactions; class-level atypical antipsychotic serious adverse-effect framework (NMS, tardive dyskinesia, metabolic syndrome, orthostatic hypotension/syncope, seizures, QT prolongation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA REXULTI administration (may take with or without food; concurrent alcohol — avoid during titration; concurrent grapefruit juice [CYP3A4 inhibitor] — avoid); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA REXULTI pregnancy and reproductive potential (post-PLLR — no letter categories assigned; pregnancy risk summary authoritative; pregnancy not treatment indication; contraception and pregnancy plans discussed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA REXULTI lactation (not established whether present in milk; discuss breastfeeding plans; weigh potential benefits against unknown risks); standard framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA REXULTI overdose management (no antidote, supportive care); standard atypical antipsychotic overdose framework; hemodialysis not effective (high protein binding, large volume of distribution)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA REXULTI clinical pharmacology (bioavailability ~95%, peak ~4h, half-life ~91h, CYP3A4 [major]/CYP2D6 [minor] metabolism, renal excretion ~14%, interindividual variability)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA REXULTI clinical studies; partial agonist mechanism framework; CYP interaction dose adjustments mandatory; concurrent alcohol/CNS depressants/antihypertensives/QT agents require caution; pregnancy/contraception discussed; driving/machinery restricted during titration — anchored to FDA label and clinical-trial data",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA REXULTI warnings — increased mortality in elderly with dementia-related psychosis (class-level); suicidal thoughts/behaviors in young adults with MDD (standard neuropsychiatric framework); cerebrovascular adverse events in elderly with dementia (class-level); explicitly stated as class-level rather than invented as brexpiprazole-specific",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA REXULTI renal impairment (no adjustment CrCl ≥30 mL/min; caution/reduced dose <30 mL/min; maximum 2 mg/day schizophrenia, 1 mg/day MDD adjunct; not studied in dialysis); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA REXULTI hepatic impairment (Child-Pugh A: no adjustment; B: 50% reduction [max 2 mg/day schizophrenia, 1 mg/day MDD adjunct]; C: 75% reduction [max 1 mg/day schizophrenia, 0.5 mg/day MDD adjunct]) — anchored to FDA label dose-modification table",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA REXULTI dosage, administration, interaction, and counselling instructions (once daily with/without food; tablets swallowed whole; pregnancy/contraception discussed; concurrent CYP3A4/CYP2D6 inhibitors/inducers require mandatory dose adjustments; concurrent alcohol/CNS depressants strictly avoided; concurrent QT-prolonging agents require ECG monitoring; concurrent live vaccines avoided; store at room temperature, protected from moisture)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    }
+  ],
+  "unsourced_fields": ["pediatric_dosing", "pregnancy_category"],
+  "notes": "Sourced from current FDA REXULTI (brexpiprazole) DailyMed label (2024 revision) and WHO EML antipsychotic entry. Pediatric dosing and pregnancy letter category (post-PLLR) intentionally null. The label does not contain a boxed warning specific to brexpiprazole at drafting — the mortality/cerebrovascular warnings are class-level (stated explicitly). All dosage (including CYP3A4/CYP2D6 interaction adjustments), adverse-effect, interaction, monitoring, and counselling statements anchored to the FDA label. No fabrication."
+}

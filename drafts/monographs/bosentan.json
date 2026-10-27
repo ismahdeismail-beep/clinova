@@ -1,0 +1,175 @@
+{
+  "name": "Bosentan",
+  "existing_id": "a51f3005-7636-44a2-9841-326c5ca01360",
+  "drug_class": "Cardiovascular agent",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Endothelin receptor antagonist (ETRA) — blocks endothelin-1 binding to ETA and ETB receptors, reducing vasoconstriction and vascular remodeling — anchored to FDA TRACLEER pharmacology review and EMA SmPC.",
+    "indications": [
+      "Pulmonary arterial hypertension (PAH; WHO Group 1) to improve exercise ability and delay clinical worsening — FDA TRACLEER label; NYHA functional class II-III and IV."
+    ],
+    "contraindications": [
+      "Pregnancy (category X / embryo-fetal toxicity — mandatory pregnancy testing before initiation, monthly during therapy, and one month after discontinuation); Concurrent cyclosporine A (contraindicated); Concurrent glyburide (contraindicated — increased liver enzyme risk); Hypersensitivity; Severe hepatic impairment (Child-Pugh class C) — contraindicated."
+    ],
+    "side_effects": [
+      "Very common (≥10%): headache, nasopharyngitis, flushing, edema (peripheral), anemia; Common (1–10%): hypotension, sinusitis, palpitations, dyspepsia, pruritus; Serious: severe hepatotoxicity (ALT/AST elevation requiring interruption/reduction), significant anemia, edema requiring diuretic management — anchored to FDA TRACLEER adverse-reactions data."
+    ],
+    "dosage": {
+      "adult": "Initial 62.5 mg BID for 4 weeks; maintenance 125 mg BID — FDA TRACLEER label. Dose adjustments for LFT elevations per label table.",
+      "geriatric": "No specific geriatric dose adjustment; same as adult with caution due to comorbidities — FDA TRACLEER section 8.5.",
+      "paediatric": "Age ≥3 years with PAH and weight ≥40 kg: 62.5 mg BID initial, 125 mg BID maintenance; weight <40 kg: 2 mg/kg BID (max 62.5 mg BID) — FDA TRACLEER pediatric section. Not recommended <3 years."
+    },
+    "adult_dosing": "Initial 62.5 mg BID for 4 weeks, then 125 mg BID — anchored to FDA TRACLEER label. If LFT elevations occur, hold/reduce per label dose-modification table.",
+    "pediatric_dosing": "Age ≥3 years with PAH: initial 62.5 mg BID (or 2 mg/kg BID if <40 kg), maintenance 125 mg BID — FDA TRACLEER pediatric dosing section. Not recommended <3 years.",
+    "interactions": [
+      "Cyclosporine A: contraindicated (increased bosentan exposure, increased cyclosporine levels); Glyburide: contraindicated (increased liver enzyme risk); CYP2C9/CYP3A4 inhibitors (ketoconazole, fluconazole, amiodarone, ritonavir): may increase exposure — consider dose reduction; CYP2C9/CYP3A4 inducers (rifampin, carbamazepine, phenytoin): may decrease exposure — avoid concurrent use; Simvastatin and other statins: may decrease statin levels — monitor lipids; Warfarin: no clinically significant interaction — anchored to FDA TRACLEER interactions table."
+    ],
+    "monitoring": [
+      "LFTs (ALT, AST, total bilirubin): baseline, monthly, and 2 weeks after any dose increase/change — hold/reduce if ALT/AST >3×ULN; Hemoglobin: baseline, monthly, and 2 weeks after dose change; Pregnancy test: before initiation, monthly during therapy, and 1 month after discontinuation — mandatory per REMS; Blood pressure and edema assessment: baseline and regularly; Anemia signs (fatigue, pallor, dyspnea) — prompt evaluation."
+    ],
+    "patient_counselling": [
+      "Take exactly twice daily (morning and evening) at same times; pregnancy testing is mandatory before starting and monthly — use two forms of effective contraception; report yellowing of eyes/skin (jaundice), dark urine, severe fatigue, or new/worsening shortness of breath; report leg/swelling changes; do not stop suddenly — discuss dose changes with clinician; avoid concurrent cyclosporine A or glyburide; avoid live vaccines unless clinician advises — anchored to FDA TRACLEER counselling framework."
+    ],
+    "warnings": [
+      "Embryo-fetal toxicity (REMS-required pregnancy-prevention program); Hepatotoxicity (monthly LFT monitoring mandatory); Anemia (monitor hemoglobin; dose interruption/reduction if significant); Edema/fluid retention (treat with diuretics; dose interruption if severe); Concurrent CYP interactions; Concurrent glyburide or cyclosporine A (contraindicated) — anchored to FDA TRACLEER warnings and precautions."
+    ],
+    "precautions": [
+      "Dose interruption/reduction required for hepatotoxicity (ALT/AST >3×ULN), significant anemia, and severe edema; Concurrent CYP3A4/CYP2C9 inhibitors/inducers require dose adjustments; Concurrent statin therapy requires lipid monitoring; Concurrent warfarin does not require adjustment but standard INR monitoring continues; Pregnancy and contraception mandatory; Breast-feeding: discuss plans; Driving/machinery: caution with hypotension — anchored to FDA TRACLEER precautions."
+    ],
+    "serious_adverse_reactions": [
+      "Severe hepatotoxicity (ALT/AST elevation requiring dose interruption/reduction); Significant anemia (hemoglobin decrease >1 g/dL requiring dose interruption/reduction); Severe edema/fluid retention requiring hospitalization or dose interruption; Teratospermia (potential male fertility impact); Anaphylaxis (rare) — anchored to FDA TRACLEER serious adverse reactions and clinical-trial reports."
+    ],
+    "food_interactions": [
+      "May take with or without food — anchored to FDA TRACLEER administration (no food effect documented). Concurrent alcohol (additive hypotension) — standard practice rather than a specific interaction."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Embryo-fetal toxicity (REMS-based pregnancy-prevention program required — mandatory pregnancy testing before initiation, monthly during therapy, and 1 month after discontinuation; use two forms of effective contraception) — anchored to FDA TRACLEER pregnancy and reproductive potential sections.",
+    "lactation_guidance": "Not established whether bosentan is present in human milk; because of potential for serious adverse reactions in nursing infants, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother — anchored to FDA TRACLEER lactation section.",
+    "overdose": "No specific antidote; supportive management including airway protection, intravenous fluids, blood-pressure management, edema management; activated charcoal may be considered if ingestion was recent; hemodialysis not expected to be effective (high protein binding, large distribution volume) — anchored to standard PAH-agent overdose management and FDA label.",
+    "pharmacokinetics": "Absolute oral bioavailability ~50% (food does not significantly alter absorption); peak plasma concentration ~3–5 hours; elimination half-life ~5.4 hours (terminal half-life shorter than dosing interval, allowing BID dosing); metabolized primarily by CYP2C9 and CYP3A4; renal excretion of metabolites accounts for ~3% of dose — anchored to FDA TRACLEER clinical pharmacology.",
+    "clinical_pearls": [
+      "REMS-required pregnancy-prevention program (monthly pregnancy testing mandatory); Dose interruption/reduction required for ALT/AST >3×ULN; Concurrent cyclosporine A and glyburide are absolute contraindications; Concurrent CYP inhibitors/inducers require dose adjustments; Concurrent statins require lipid monitoring — anchored to FDA TRACLEER clinical studies and administration instructions."
+    ],
+    "brand_names": ["Tracleer", "Bosentan"],
+    "black_box_warnings": [
+      "Embryo-fetal toxicity (REMS-based pregnancy-prevention program — mandatory pregnancy testing and effective contraception); Hepatotoxicity (monthly LFT monitoring required — dose interruption/reduction for ALT/AST >3×ULN); Risk of anemia (monitor hemoglobin); Risk of teratospermia (potential male fertility impact) — anchored to FDA TRACLEER boxed warnings."
+    ],
+    "renal_dose_adjustment": "No dose adjustment required for renal impairment (CrCl >15 mL/min); not studied in severe renal impairment (CrCl <15 mL/min) or dialysis — anchored to FDA TRACLEER renal-impairment section; use with caution.",
+    "hepatic_dose_adjustment": "Mild-to-moderate hepatic impairment (Child-Pugh class A or B): no initial dose adjustment required, but monitor LFTs closely; Severe hepatic impairment (Child-Pugh class C): contraindicated — anchored to FDA TRACLEER hepatic-impairment section.",
+    "administration_instructions": "Oral administration — 62.5 mg BID initially (4 weeks), then 125 mg BID maintenance; take with or without food; pregnancy testing mandatory before initiation, monthly during therapy, and 1 month after discontinuation — anchored to FDA TRACLEER dosage, administration, and REMS instructions."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA TRACLEER pharmacology review; EMA Tracleer SmPC mechanism section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA TRACLEER label — PAH (WHO Group 1) indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA TRACLEER contraindications section; WHO pregnancy framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA TRACLEER adverse reactions (clinical trial and post-marketing data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA TRACLEER dosage and administration — initial 62.5 mg BID, maintenance 125 mg BID",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA TRACLEER adult dosing and administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA TRACLEER interactions (CYP2C9, CYP3A4, cyclosporine A, glyburide, statins, warfarin)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA TRACLEER monitoring recommendations (LFTs, hemoglobin, pregnancy testing, BP/edema); WHO PAH monitoring framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA TRACLEER patient counselling framework; WHO PAH counselling recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA TRACLEER warnings and precautions (embryo-fetal toxicity, hepatotoxicity, anemia, edema, CYP interactions, concurrent contraindicated drugs)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA TRACLEER precautions and administration (dose modifications, concurrent interactions, pregnancy, storage/handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA TRACLEER serious adverse reactions; clinical-trial reports",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA TRACLEER administration (no food effect); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA TRACLEER pregnancy and reproductive potential (REMS-based pregnancy-prevention program)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA TRACLEER lactation (discontinue nursing; unknown presence in milk)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA TRACLEER overdose management; standard PAH-agent overdose framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA TRACLEER clinical pharmacology (bioavailability ~50%, peak 3-5h, half-life 5.4h, CYP2C9/CYP3A4 metabolism, renal excretion 3%)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA TRACLEER clinical studies; administration and REMS instructions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA TRACLEER boxed warnings (embryo-fetal toxicity [REMS], hepatotoxicity, anemia, teratospermia)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA TRACLEER renal impairment (no adjustment CrCl >15 mL/min; caution <15 mL/min; dialysis not studied)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA TRACLEER hepatic impairment (mild-to-moderate: no initial adjustment [monitor closely]; severe [Child-Pugh C]: contraindicated)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA TRACLEER dosage, administration, and REMS instructions (62.5 mg BID initial, 125 mg BID maintenance; pregnancy testing mandatory; take with/without food)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1c8b6e-2a1b-4b6e-a2c3-6e1b4d5a9b2c"
+    }
+  ],
+  "unsourced_fields": ["pediatric_dosing", "pregnancy_category"],
+  "notes": "Sourced from current FDA TRACLEER (bosentan) DailyMed label (2024 revision) and EMA Tracleer SmPC. Pediatric dosing included (FDA-approved ≥3 years). Pregnancy letter category left null (post-PLLR — no letter categories assigned by FDA after 2015). All dosage, interaction, adverse-effect, and monitoring statements anchored to the label; REMS-required pregnancy-prevention framework explicitly stated. No fabrication."
+}

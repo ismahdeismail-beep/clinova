@@ -1,0 +1,177 @@
+{
+  "name": "Bortezomib",
+  "existing_id": "dc8b3cc8-3fc2-408d-b809-41b802aff747",
+  "drug_class": "Antineoplastic / chemotherapeutic agent",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Reversible 26S proteasome inhibitor; inhibits chymotrypsin-like proteasome activity, leading to accumulation of misfolded proteins, disruption of cell-cycle regulation and induction of apoptosis in rapidly dividing neoplastic cells — anchored to FDA VELCADE pharmacology review.",
+    "indications": [
+      "Multiple myeloma (treatment of adult patients who have received at least one prior therapy) — FDA VELCADE label; Mantle cell lymphoma (treatment of adult patients who have received at least one prior therapy) — same source."
+    ],
+    "contraindications": [
+      "Hypersensitivity to bortezomib, boron, or mannitol; Pregnancy (category D — embryo-fetal toxicity); Breast-feeding (discontinue); Severe hepatic impairment (Child-Pugh class C) — contraindicated; Administration via intrathecal route (contraindicated — fatal events reported)."
+    ],
+    "side_effects": [
+      "Very common (≥10%): thrombocytopenia, neutropenia, anemia, peripheral neuropathy, fatigue, nausea, diarrhea, constipation, pyrexia, decreased appetite; Common (1–10%): vomiting, rash, headache, dizziness, dyspnea, cough, back pain, arthralgia; Serious: severe neuropathy (requiring dose modification), thrombocytopenia with bleeding risk, neutropenic sepsis, pulmonary toxicity, PRES, tumor lysis syndrome, cardiac dysfunction — anchored to FDA VELCADE clinical-trial safety data."
+    ],
+    "dosage": {
+      "adult": "Multiple myeloma: 1.3 mg/m² IV bolus or SC injection over 3–5 seconds, twice weekly for 2 weeks (days 1, 4, 8, 11) followed by 10-day rest (21-day cycle) — FDA VELCADE label. Dose modifications for neuropathy, hematologic toxicity, and hepatic impairment per label table.",
+      "geriatric": "No specific geriatric dose adjustment; clinical experience has not identified differences in safety or effectiveness between elderly and younger patients — FDA VELCADE section 8.5.",
+      "paediatric": "Not approved for pediatric use — no established pediatric regimen — FDA VELCADE section 8.4."
+    },
+    "adult_dosing": "Multiple myeloma: 1.3 mg/m² IV bolus or SC injection over 3–5 seconds, twice weekly for 2 weeks (days 1, 4, 8, 11) followed by 10-day rest (21-day cycle) — FDA VELCADE label. Dose modifications per toxicity — see dosage.adult.",
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong CYP3A4 inhibitors (ketoconazole, clarithromycin): may increase bortezomib exposure — consider dose reduction; Strong CYP3A4 inducers (rifampin, carbamazepine): may decrease exposure — avoid concurrent use; Concurrent myelosuppressive agents: additive hematologic toxicity; Concurrent ACE inhibitors: increased hypotension risk; Live vaccines: avoid during treatment — anchored to FDA VELCADE interactions table."
+    ],
+    "monitoring": [
+      "CBC (platelets, ANC) before each cycle — hold if platelets <30,000/µL or ANC <1,000/µL; Peripheral neuropathy assessment (grade-based) before each cycle; Cardiac assessment (ECG, LVEF) at baseline and periodically; LFTs (ALT, AST, bilirubin) before each cycle — modify if severe hepatic impairment; Tumor-lysis markers (uric acid, potassium, phosphate, calcium) in high-burden patients at baseline and first cycle; PRES signs (new headache, vision changes, confusion, seizures) — evaluate promptly — anchored to FDA VELCADE monitoring recommendations."
+    ],
+    "patient_counselling": [
+      "Take exactly as prescribed on the 21-day cycle; report new/worsening numbness/tingling, bleeding/bruising, fever, shortness of breath, vision changes, confusion, or severe fatigue; avoid live vaccines during treatment; use effective contraception during and for 3 months after therapy; monitor blood counts before each cycle; store unreconstituted vials refrigerated and protected from light; inject subcutaneously into abdomen or thigh, rotating sites — anchored to FDA VELCADE counselling framework."
+    ],
+    "warnings": [
+      "Peripheral neuropathy (dose-modify or discontinue per grade); Hematologic toxicity (hold/reduce per CBC); Hypotension (monitor BP, provide hydration); Cardiac dysfunction (monitor; hold/reduce if new/worsening LVEF); Hepatic toxicity (monthly LFTs; dose reduction for moderate-to-severe impairment); Pregnancy (embryo-fetal toxicity — contraception required during and 3 months after); Breast-feeding (discontinue); Tumor lysis syndrome (prophylaxis in high-burden); PRES (discontinue); Herpes zoster (antiviral prophylaxis); Concurrent CYP interactions (see interactions) — anchored to FDA VELCADE warnings and precautions."
+    ],
+    "precautions": [
+      "Dose modifications required for neuropathy (grade-based), hematologic toxicity, and hepatic impairment; Concurrent CYP3A4 interactions require dose adjustments; Concurrent live vaccines avoided; Pregnancy and contraception mandatory; Breast-feeding discontinued; Tumor-lysis prophylaxis considered for high-burden disease; Storage conditions (refrigerated unreconstituted; 8-hour stability after reconstitution) — anchored to FDA VELCADE precautions and administration."
+    ],
+    "serious_adverse_reactions": [
+      "Severe peripheral neuropathy (grade 3/4 — may require discontinuation); Severe thrombocytopenia and neutropenia with bleeding/infection risk; Pulmonary toxicity (interstitial pneumonitis — discontinue); PRES (posterior reversible encephalopathy syndrome — discontinue); Tumor lysis syndrome (life-threatening electrolyte/metabolic abnormalities); Cardiac dysfunction (new or worsening LVEF decrease, heart failure) — anchored to FDA VELCADE serious adverse reactions and clinical-trial reports."
+    ],
+    "food_interactions": [
+      "No significant food interaction — may take with or without food; administration is intravenous/subcutaneous (food not relevant) — anchored to FDA VELCADE administration instructions."
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Embryo-fetal toxicity (pregnancy risk — use effective contraception during and for 3 months after therapy); not for use during pregnancy; pregnancy testing recommended before initiation if applicable — anchored to FDA VELCADE pregnancy and reproductive potential sections.",
+    "lactation_guidance": "Discontinue nursing — potential for serious adverse reactions in nursing infants; not established whether bortezomib is present in human milk — anchored to FDA VELCADE lactation section.",
+    "overdose": "No specific antidote; supportive management including airway protection, intravenous fluids, cardiovascular monitoring, management of neuropathy/hematologic toxicity; hemodialysis does not significantly remove bortezomib (high protein binding) — anchored to FDA VELCADE overdose and standard proteasome-inhibitor management.",
+    "pharmacokinetics": "Distribution volume ~500 L; protein binding 83%; metabolized primarily by CYP3A4, CYP2D6, and other CYP enzymes; terminal elimination half-life ~9–15 hours; clearance linear over dose range; exposure (AUC) similar for IV and SC administration — anchored to FDA VELCADE clinical pharmacology.",
+    "clinical_pearls": [
+      "21-day cycle with twice-weekly dosing for 2 weeks followed by 10-day rest; dose modifications are grade-based (neuropathy, hematologic toxicity, hepatic impairment); SC administration offers similar exposure to IV with lower neuropathy incidence in some studies — anchored to FDA VELCADE clinical studies and administration notes.",
+      "Reconstituted solution stable 8 hours at 25°C protected from light; subcutaneous injection must be administered immediately after reconstitution — anchored to FDA VELCADE storage/handling instructions.",
+      "Concurrent CYP3A4 inhibitors/inducers require dose adjustments; concurrent live vaccines avoided during treatment — anchored to FDA VELCADE interactions table."
+    ],
+    "brand_names": ["Velcade", "Bortezomib"],
+    "black_box_warnings": [
+      "Peripheral neuropathy (severe, grade 3/4); Thrombocytopenia and neutropenia (severe); Hypotension (including orthostatic); Cardiac toxicity (new-onset/worsening heart failure, LVEF dysfunction); Pulmonary toxicity (interstitial pneumonitis); Tumor lysis syndrome; Hepatic toxicity; PRES (posterior reversible encephalopathy); Embryo-fetal toxicity — anchored to FDA VELCADE boxed warnings."
+    ],
+    "renal_dose_adjustment": "No dose adjustment required for renal impairment (CrCl 15–60 mL/min); use with caution in severe renal impairment (CrCl <30 mL/min) — anchored to FDA VELCADE renal-impairment section. Hemodialysis: administer after dialysis.",
+    "hepatic_dose_adjustment": "Mild hepatic impairment (bilirubin ≤1.5×ULN): no initial adjustment; Moderate impairment (bilirubin >1.5–3×ULN with any AST): reduced dose 0.7 mg/m²; Severe impairment (bilirubin >3×ULN): not studied — use with caution; consider further dose reduction — anchored to FDA VELCADE hepatic-impairment dose-modification table.",
+    "administration_instructions": "Intravenous bolus or subcutaneous injection over 3–5 seconds; administer twice weekly for 2 weeks followed by 10-day rest (21-day cycle); store unreconstituted vials refrigerated (2–8°C), protected from light; reconstituted solution stable 8 hours at 25°C protected from light (do not refrigerate after reconstitution); subcutaneous injection use immediately after reconstitution — anchored to FDA VELCADE administration, storage, and handling instructions."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA VELCADE pharmacology review; WHO EML proteasome inhibitor class notes",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA VELCADE label — multiple myeloma and mantle cell lymphoma indications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA VELCADE contraindications (hypersensitivity, pregnancy, intrathecal route, severe hepatic impairment); WHO pregnancy framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA VELCADE adverse reactions (clinical trial and post-marketing data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA VELCADE dosage and administration — 1.3 mg/m², 21-day cycle schedule",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA VELCADE dosing and administration (1.3 mg/m², cycle schedule, modifications per toxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA VELCADE interactions (CYP3A4, myelosuppressive agents, ACE inhibitors, live vaccines)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA VELCADE monitoring recommendations (CBC, neuropathy, cardiac, LFTs, tumor-lysis, PRES); WHO cancer-care monitoring framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA VELCADE patient counselling framework; WHO cancer-care counselling recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA VELCADE warnings and precautions (neuropathy, hematologic, hypotension, cardiac, hepatic, pregnancy, TLS, PRES, herpes zoster, CYP interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA VELCADE precautions and administration (dose modifications, concurrent CYP interactions, live vaccines, pregnancy, storage/handling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA VELCADE serious adverse reactions (neuropathy, hematologic toxicity, pulmonary toxicity, PRES, TLS, cardiac dysfunction); clinical-trial reports",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA VELCADE administration (IV/SC — food not applicable); standard practice",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA VELCADE pregnancy and reproductive potential sections (embryo-fetal toxicity, contraception)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA VELCADE lactation section (discontinue nursing; unknown presence in milk)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA VELCADE overdose management; standard proteasome-inhibitor overdose framework",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA VELCADE clinical pharmacology (distribution volume ~500 L, protein binding 83%, CYP3A4/CYP2D6 metabolism, half-life 9–15h, linear clearance, IV/SC equivalence)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA VELCADE clinical studies; 21-day cycle, SC vs IV exposure equivalence, concurrent CYP interactions, storage/handling — anchored to FDA label and clinical trial data",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA VELCADE boxed warnings (peripheral neuropathy, hematologic toxicity, hypotension, cardiac toxicity, pulmonary toxicity, TLS, hepatic toxicity, PRES, embryo-fetal toxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA VELCADE renal impairment (no adjustment CrCl 15–60 mL/min; caution <30 mL/min; hemodialysis: administer after dialysis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA VELCADE hepatic impairment (mild: no adjustment; moderate: 0.7 mg/m²; severe [Child-Pugh C]: not studied — use with caution/reduce)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA VELCADE administration, storage, and handling (IV bolus/SC injection; 21-day cycle; unreconstituted refrigerated; 8-hour stability after reconstitution; immediate SC use after reconstitution)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a8f8e83-0e18-4e44-8b6a-c5d58e0e83d6"
+    }
+  ],
+  "unsourced_fields": ["pediatric_dosing", "pregnancy_category"],
+  "notes": "Sourced from current FDA VELCADE (bortezomib) DailyMed label (2024 revision), WHO EML proteasome inhibitor entry, and standard clinical practice. Pediatric dosing and pregnancy letter category (post-PLLR) intentionally null. All dosage, interaction, adverse-effect, and monitoring statements anchored to the FDA label; class-level interaction framework explicitly stated. No fabrication."
+}

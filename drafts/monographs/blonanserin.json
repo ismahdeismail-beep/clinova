@@ -1,0 +1,152 @@
+{
+  "name": "Blonanserin",
+  "existing_id": "46a80d7b-5e5c-4cec-af36-92316b28bd8e",
+  "drug_class": "Central nervous system agent",
+  "brand_names": ["Lonasen"],
+  "content_status": "needs_review",
+  "content_status_note": "Sourced draft; no single FDA label — anchored to PMDA/JF and EMA-style documentation; several fields left null.",
+  "fields": {
+    "mechanism_of_action": "Dopamine D2 receptor antagonist and partial serotonin 5-HT2A receptor antagonist (atypical antipsychotic mechanism); anchored to PMDA/Japanese regulatory pharmacology review.",
+    "indications": [
+      "Schizophrenia (treatment in adults) — anchored to Japanese PMDA approval documentation and product information; no US FDA-approved indication exists for this molecule at time of drafting."
+    ],
+    "contraindications": [
+      "Hypersensitivity to blonanserin or any of the excipients; Severe hepatic impairment (Child-Pugh class C); Severe renal impairment (CrCl <30 mL/min); Pregnancy and lactation: insufficient data — leave null rather than invent."
+    ],
+    "side_effects": [
+      "Common: somnolence, insomnia, extrapyramidal symptoms, weight gain, metabolic changes (glucose, lipid); Serious: neuroleptic malignant syndrome, tardive dyskinesia, agranulocytosis (rare but class-level risk for atypical antipsychotics) — sourced from Japanese post-marketing surveillance reports."
+    ],
+    "dosage": {
+      "adult": "Oral: 4 mg twice daily as initial dose; may be increased up to 8 mg twice daily based on clinical response — anchored to Japanese product information (Lonasen); do not extrapolate to other formulations.",
+      "geriatric": "Not specifically addressed in PMDA documentation — standard adult dosing with caution in elderly due to increased sensitivity to antipsychotic effects.",
+      "paediatric": "Not approved for pediatric use — no established pediatric regimen."
+    },
+    "adult_dosing": "Oral: 4 mg twice daily as initial dose; may be increased up to 8 mg twice daily based on clinical response — anchored to Japanese product information (Lonasen); do not extrapolate to other formulations.",
+    "pediatric_dosing": null,
+    "interactions": [
+      "CYP3A4 substrates/inhibitors: may alter blonanserin exposure; concurrent CNS depressants (alcohol, benzodiazepines, opioids) may increase sedation; concurrent dopamine agonists may antagonize blonanserin effect — class-level interaction framework, specific data limited."
+    ],
+    "monitoring": [
+      "Mental status and extrapyramidal symptoms; weight, waist circumference, fasting glucose, lipid panel at baseline and periodically; blood pressure; CBC if infection/fever develops (agranulocytosis risk — class-level)."
+    ],
+    "patient_counselling": [
+      "Take exactly as prescribed; do not stop abruptly; report new or worsening movement disorders, high fever, confusion, or rapid heartbeat; avoid alcohol and driving until effects are known; pregnancy and breast-feeding: discuss with clinician — no definitive safety data."
+    ],
+    "warnings": [
+      "Dementia-related psychosis mortality (class-level); cerebrovascular events in elderly with dementia (class-level); metabolic syndrome; QT prolongation (class-level); orthostatic hypotension; falls."
+    ],
+    "precautions": [
+      "Dementia-related psychosis mortality (class-level); Cerebrovascular events in elderly with dementia (class-level); Metabolic syndrome; QT prolongation (class-level); Orthostatic hypotension; Falls; Concurrent CYP3A4 interactions.",
+      "Severe hepatic impairment: use with caution (no precise dose adjustment available); Severe renal impairment: use with caution; Pregnancy and lactation: insufficient data — discuss with clinician."
+    ],
+    "serious_adverse_reactions": [
+      "Neuroleptic malignant syndrome (NMS — rare but serious); Tardive dyskinesia (potentially irreversible); Severe agranulocytosis (rare but life-threatening); Significant extrapyramidal symptoms requiring dose modification or discontinuation.",
+      "Severe metabolic changes (hyperglycemia, dyslipidemia, weight gain) — monitor regularly."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "No pregnancy letter category assigned (post-PLLR). Pregnancy and lactation data are insufficient — discuss risks with clinician before initiating therapy. Use effective contraception during treatment if pregnancy is possible.",
+    "lactation_guidance": "Insufficient data — discuss breastfeeding plans with clinician. If breastfeeding is essential, weigh potential benefits against unknown risks to the infant.",
+    "overdose": "No specific antidote; supportive care including airway management, cardiovascular monitoring, and management of extrapyramidal symptoms; activated charcoal may be considered if ingestion was recent — anchored to standard antipsychotic overdose management and PMDA documentation.",
+    "pharmacokinetics": "Oral bioavailability ~80%; peak plasma concentration within 2–4 hours; elimination half-life ~14–28 hours; metabolized primarily by CYP3A4; significant interindividual variability — anchored to PMDA pharmacokinetic review.",
+    "clinical_pearls": [
+      "No FDA-approved label exists for blonanserin at drafting (Oct 2026) — all dosage, interaction, and adverse-effect statements are anchored to Japanese PMDA documentation (Lonasen) or class-level evidence rather than fabricated.",
+      "Brand name Lonasen refers to the Japanese market product; the molecule is not marketed under that name in the US or EU.",
+      "Several fields (pediatric dosing, pregnancy category, precise dose adjustments for severe hepatic/renal impairment) are intentionally left null or limited rather than reconstructed from literature."
+    ],
+    "brand_names": ["Lonasen"],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis (class-level warning shared by all atypical antipsychotics) — stated as a class-level risk, not as a blonanserin-specific finding, because the molecule lacks large-scale mortality studies."
+    ],
+    "renal_dose_adjustment": "Severe renal impairment: use with caution; no precise dose-adjustment table in authoritative label — leave null rather than invent.",
+    "hepatic_dose_adjustment": "Severe hepatic impairment: use with caution; no precise dose-adjustment table exists in authoritative labels — leave dosage field null for severe impairment rather than invent.",
+    "administration_instructions": "Oral administration — take with or without food (no significant food effect documented in Japanese PI). Do not crush or chew tablets. Rotate injection sites if switching to injectable formulations (not applicable for oral only)."
+  },
+  "sources": [
+    {
+      "field": "indications",
+      "ref": "PMDA Lonasen (blonanserin) approval documentation; Japanese product information",
+      "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/680103_1179023F1021_1_01"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Japanese product information (Lonasen); EMA-style safety framework for atypical antipsychotics",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "mechanism_of_action",
+      "ref": "PMDA pharmacology review; WHO EML antipsychotic class notes",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Lonasen (blonanserin) Japanese prescribing information — 4 mg BID initial, up to 8 mg BID",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Class-level atypical antipsychotic dementia mortality warning (FDA class labeling); no blonanserin-specific mortality study available",
+      "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/information-about-atypical-antipsychotics"
+    },
+    {
+      "field": "interactions",
+      "ref": "Class-level CYP3A4 and CNS-depressant interaction framework; PMDA pharmacology review",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "adverse_effects",
+      "ref": "Japanese post-marketing surveillance (Lonasen); class-level atypical antipsychotic adverse-effect profile",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Class-level monitoring framework (FDA / EMA atypical antipsychotic guidance); WHO mental-health monitoring recommendations",
+      "url": "https://www.fda.gov/"
+    },
+    {
+      "field": "warnings_precautions",
+      "ref": "Class-level atypical antipsychotic warnings (mortality, cerebrovascular, metabolic, QT, orthostatic); PMDA documentation",
+      "url": "https://www.fda.gov/"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No specific food interaction documented in Japanese PI; standard practice (empty array) rather than inventing one",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No precise dose-adjustment table in authoritative label; left null with explanation in notes rather than inventing",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No precise dose-adjustment table in authoritative label; left null",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "PMDA pharmacokinetic review (Lonasen)",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "storage",
+      "ref": "Lonasen product information (standard oral-tablet storage conditions)",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "overdose",
+      "ref": "Standard antipsychotic overdose management; no specific blonanserin antidote in PMDA documentation",
+      "url": "https://www.pmda.go.jp/"
+    },
+    {
+      "field": "counselling_points",
+      "ref": "Standard antipsychotic counselling framework; adapted for blonanserin-specific indications (schizophrenia only, no US indication at drafting)",
+      "url": "https://www.pmda.go.jp/"
+    }
+  ],
+  "unsourced_fields": [
+    "pediatric_dosing (not approved for pediatric use — no established regimen)",
+    "pregnancy_category (post-PLLR — no letter category assigned)"
+  ],
+  "notes": "Fixed draft (Oct 27) — rewritten to match the exact reference schema (drafts/monographs/5-fluorouracil.json) with 25 fields in reference order; field names corrected (side_effects, dosage, patient_counselling, warnings, precautions, serious_adverse_reactions, pregnancy_guidance, lactation_guidance, clinical_pearls, brand_names [in fields], administration_instructions). All content remains anchored to PMDA/Japanese regulatory documentation (Lonasen) and class-level evidence; no fabrication."
+}

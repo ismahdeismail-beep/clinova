@@ -1,0 +1,198 @@
+{
+  "name": "Brinzolamide",
+  "existing_id": "4c20b544-38cf-4287-b1cd-bc595f165c37",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Brinzolamide is a carbonic anhydrase inhibitor. Carbonic anhydrase catalyses the reversible hydration of carbon dioxide and dehydration of carbonic acid; the most active isoenzyme is carbonic anhydrase II, found primarily in red blood cells but also in other tissues including the eye. Inhibition of carbonic anhydrase in the ciliary processes decreases aqueous humour secretion, presumably by slowing the formation of bicarbonate ions with a subsequent reduction in sodium and fluid transport, which lowers intraocular pressure (IOP). After topical ocular administration, brinzolamide inhibits aqueous humour formation and reduces elevated IOP (FDA AZOPT label, section 12.1).",
+    "indications": [
+      "Treatment of elevated intraocular pressure (IOP) in patients with ocular hypertension or open-angle glaucoma (FDA AZOPT label, section 1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to any component of this product (FDA AZOPT label, section 4)"
+    ],
+    "side_effects": [
+      "Most frequently reported (5%-10%): blurred vision and bitter, sour, or unusual taste (FDA AZOPT label, section 6.1)",
+      "1%-5%: blepharitis, dermatitis, dry eye, foreign body sensation, headache, hyperaemia, ocular discharge, ocular discomfort, ocular keratitis, ocular pain, ocular pruritus, rhinitis (section 6.1)",
+      "Below 1%: allergic reactions, alopecia, chest pain, conjunctivitis, diarrhoea, diplopia, dizziness, dry mouth, dyspnoea, dyspepsia, eye fatigue, hypertonia, keratoconjunctivitis, keratopathy, kidney pain, lid margin crusting or sticky sensation, nausea, pharyngitis, tearing, urticaria (section 6.1)",
+      "Post-marketing: serious skin and subcutaneous reactions such as Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) may occur because of the sulfonamide component (section 6.2)"
+    ],
+    "dosage": {
+      "adult": "One drop of AZOPT 1% ophthalmic suspension in the affected eye(s) three times daily. Shake well before use. May be used with other topical IOP-lowering products; administer different topical ophthalmic drugs at least 10 minutes apart (FDA AZOPT label, section 2).",
+      "maximum": "No higher dose is recommended; the labelled regimen is one drop three times daily."
+    },
+    "adult_dosing": "One drop in the affected eye(s) three times daily; shake well before each use and separate other topical ophthalmic drugs by at least 10 minutes (FDA AZOPT label, section 2).",
+    "pediatric_dosing": "Safety and effectiveness in paediatric patients have not been established. A 3-month controlled study in patients 4 weeks to 5 years of age dosed twice daily did not demonstrate IOP-lowering efficacy (mean decrease 0-2 mmHg), and 5 of 32 patients had a 1 mm increase in corneal diameter (FDA AZOPT label, section 8.4).",
+    "interactions": [
+      "Oral carbonic anhydrase inhibitors: potential additive effect on the systemic effects of carbonic anhydrase inhibition; concomitant use with AZOPT is not recommended (FDA AZOPT label, section 7.1)",
+      "High-dose salicylate therapy: carbonic anhydrase inhibitors may produce acid-base and electrolyte alterations; rare instances of acid-base alterations have occurred with high-dose salicylates in patients taking oral carbonic anhydrase inhibitors, so consider this potential interaction (section 7.2)"
+    ],
+    "monitoring": "Monitor IOP and visual acuity during therapy. Examine the ocular surface and corneal endothelium in patients with low endothelial cell counts, because carbonic anhydrase activity in the corneal endothelium creates a potential for corneal oedema. Monitor for signs of sulfonamide hypersensitivity or serious skin reactions and for blood dyscrasias. Assess renal function because AZOPT is not recommended when creatinine clearance is below 30 mL/min. Reassess if vision blurs after dosing (FDA AZOPT label, sections 5.1-5.3).",
+    "patient_counselling": "Shake the bottle well before each use. Do not let the tip of the dispensing container touch the eye or surrounding structures or other surfaces, because contamination can cause serious eye infection and vision loss. If more than one topical ophthalmic drug is used, wait at least 10 minutes between products. Remove soft contact lenses before instillation and reinsert them no sooner than 15 minutes afterwards, because benzalkonium chloride may be absorbed by soft lenses. Vision may be temporarily blurred after dosing; use care when driving or operating machinery. Stop the product and seek medical advice immediately for serious or unusual ocular or systemic reactions or signs of hypersensitivity. Seek advice before continuing the same multidose container after ocular surgery or an intercurrent ocular condition (FDA AZOPT label, section 17).",
+    "warnings": [
+      "Sulfonamide hypersensitivity: AZOPT is a sulfonamide and is absorbed systemically even when applied topically, so the same types of adverse reactions attributable to sulfonamides may occur. Fatalities have occurred, although rarely, from severe reactions including Stevens-Johnson syndrome, toxic epidermal necrolysis, fulminant hepatic necrosis, agranulocytosis, aplastic anaemia, and other blood dyscrasias. Sensitisation may recur on re-administration by any route; discontinue immediately if signs of a serious reaction or hypersensitivity occur (FDA AZOPT label, section 5.1)",
+      "Corneal endothelium: carbonic anhydrase activity is present in corneal endothelial cytoplasm and membranes; there is an increased potential for corneal oedema in patients with low endothelial cell counts, so use with caution (section 5.2)",
+      "Severe renal impairment: AZOPT has not been studied in patients with creatinine clearance below 30 mL/min and is not recommended in this group because brinzolamide and its metabolite are excreted predominantly by the kidney (section 5.3)",
+      "Acute angle-closure glaucoma: management requires interventions in addition to ocular hypotensive agents; AZOPT has not been studied in acute angle-closure glaucoma (section 5.4)",
+      "Risk of contamination: bacterial keratitis has been reported with contaminated multidose ophthalmic containers and can cause serious eye damage and vision loss (section 5.5)",
+      "Contact lens wear: benzalkonium chloride may be absorbed by soft contact lenses; remove lenses before instillation and reinsert after 15 minutes (section 5.6)"
+    ],
+    "precautions": [
+      "Use with caution in patients with low corneal endothelial cell counts because of the risk of corneal oedema",
+      "Not recommended in severe renal impairment (creatinine clearance below 30 mL/min)",
+      "Not studied in acute angle-closure glaucoma; additional therapeutic measures are required for that condition",
+      "Discontinue immediately for signs of sulfonamide hypersensitivity or serious skin reaction",
+      "Avoid contaminating the dispensing tip; replace the cap after use",
+      "Remove soft contact lenses before use and wait 15 minutes before reinsertion",
+      "Geriatric use: no overall differences in safety or effectiveness have been observed between elderly and younger patients (section 8.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis (sulfonamide component)",
+      "Fulminant hepatic necrosis, agranulocytosis, aplastic anaemia, and other blood dyscrasias (sulfonamide class)",
+      "Corneal oedema in patients with low endothelial cell counts",
+      "Bacterial keratitis from contaminated multidose containers",
+      "Acid-base and electrolyte disturbances after oral overdose"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate and well-controlled studies in pregnant women to inform a drug-associated risk. In reproductive toxicity studies, oral brinzolamide caused fetal toxicity in rats at 375 times the recommended human ophthalmic dose based on mg/kg (decreased fetal body weight and reduced skeletal ossification at 18 mg/kg/day; NOAEL 6 mg/kg/day), while no treatment-related fetal effects occurred in rabbits. Brinzolamide crosses the placenta in rats. The background risk of major birth defects in the US general population is 2%-4% and of miscarriage 15%-20% of clinically recognized pregnancies. Use during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA AZOPT label, section 8.1).",
+    "lactation_guidance": "There are no data on the presence of brinzolamide in human milk, its effects on the breastfed infant, or its effects on milk production. Brinzolamide has been detected in the milk of lactating rats. Consider the developmental and health benefits of breastfeeding together with the mother's clinical need for AZOPT and any potential adverse effects on the breastfed child (FDA AZOPT label, section 8.2).",
+    "overdose": "No human data are available. Following oral administration of an overdose, electrolyte imbalance, development of an acidotic state, and possible nervous system effects may occur. Monitor serum electrolyte levels (particularly potassium) and blood pH (FDA AZOPT label, section 10).",
+    "pharmacokinetics": "After topical ocular administration, brinzolamide is absorbed into the systemic circulation. Because of its affinity for carbonic anhydrase II, it distributes extensively into red blood cells and has a long half-life in whole blood of approximately 111 days. The metabolite N-desethyl brinzolamide also binds carbonic anhydrase and accumulates in red blood cells, binding mainly to carbonic anhydrase I in the presence of brinzolamide. Plasma concentrations of parent drug and metabolite are low and generally below the assay quantitation limit (less than 10 ng/mL); plasma protein binding is about 60%. Brinzolamide is eliminated predominantly in urine as unchanged drug, with N-desethyl brinzolamide and lower concentrations of N-desmethoxypropyl and O-desmethyl metabolites also found in urine. In an oral study approximating topical exposure, red-cell carbonic anhydrase II saturation occurred within 4 weeks and N-desethyl brinzolamide reached steady state within 20-28 weeks, with about 70%-75% inhibition of carbonic anhydrase II activity at steady state (FDA AZOPT label, section 12.3).",
+    "clinical_pearls": [
+      "Shake the suspension well before each dose; it is a suspension, not a solution",
+      "The labelled regimen is one drop three times daily; twice-daily dosing was not effective in the paediatric study",
+      "Separate other topical ophthalmic drugs by at least 10 minutes",
+      "AZOPT is a sulfonamide and is systemically absorbed; counsel about serious skin reactions and blood dyscrasias",
+      "Do not use in severe renal impairment (creatinine clearance below 30 mL/min)",
+      "Remove soft contact lenses before use and reinsert after 15 minutes because of benzalkonium chloride",
+      "In clinical studies AZOPT lowered IOP by about 4-5 mmHg, equivalent to dorzolamide 2% three times daily, with less stinging on instillation"
+    ],
+    "brand_names": ["Azopt", "Brinzolamide ophthalmic suspension (generic)"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "AZOPT is not recommended in patients with severe renal impairment (creatinine clearance below 30 mL/min); it has not been studied in this population and brinzolamide and its metabolite are excreted predominantly by the kidney (FDA AZOPT label, section 5.3).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified in the AZOPT label; hepatic impairment has not been specifically studied (FDA AZOPT label, section 12.3).",
+    "administration_instructions": "For topical ophthalmic use only. Shake well before use. Instill one drop into the affected eye(s) three times daily. Avoid touching the dropper tip to the eye or any surface. If other topical ophthalmic drugs are used, wait at least 10 minutes between products. Remove soft contact lenses before instillation and reinsert no sooner than 15 minutes afterwards (FDA AZOPT label, sections 2 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA AZOPT (brinzolamide ophthalmic suspension) 1% label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA AZOPT label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA AZOPT label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA AZOPT label, sections 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA AZOPT label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA AZOPT label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA AZOPT label, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA AZOPT label, sections 7.1-7.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA AZOPT label, sections 5.1-5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA AZOPT label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA AZOPT label, sections 5.1-5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA AZOPT label, sections 5.1-5.6 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA AZOPT label, sections 5.1-5.3, 6.2, and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA AZOPT label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA AZOPT label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA AZOPT label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA AZOPT label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA AZOPT label, sections 2, 5.3, 5.6, 8.4, and 14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listing: AZOPT (Sandoz) brinzolamide ophthalmic suspension 1%, plus generic brinzolamide products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=brinzolamide"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA AZOPT label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA AZOPT label, section 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA AZOPT label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA AZOPT label, sections 2 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0afb6589-51ba-432c-aed1-20a12d5d3455"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (the FDA label uses the Pregnancy and Lactation Labeling Rule format and assigns no letter category)",
+    "food_interactions (the FDA label does not address food effects on this ophthalmic product)"
+  ],
+  "notes": "The row stores 'Brinzolamide'. The monograph covers AZOPT 1% ophthalmic suspension (Sandoz), the reference FDA-approved product, and generic brinzolamide ophthalmic suspensions. It does not cover the fixed combination SIMBRINZA (brinzolamide/brimonidine), which is a separate product with its own label. The AZOPT label used is the 11/2023 revision. No boxed warning is present. Pregnancy categories have been replaced by PLLR narrative labelling, so pregnancy_category is null. Food effects are not addressed for this topical ophthalmic product, so food_interactions is empty."
+}

@@ -1,0 +1,218 @@
+{
+  "name": "Budesonide/Formoterol",
+  "existing_id": "569b4d15-6cf9-48eb-a670-0ca9c7d181ae",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Symbicort is a fixed-dose combination of budesonide, an inhaled corticosteroid with potent glucocorticoid and weak mineralocorticoid activity, and formoterol fumarate, a long-acting selective beta2-adrenergic agonist with rapid onset. Budesonide binds the glucocorticoid receptor with about 200-fold higher affinity than cortisol and has about 1000-fold greater topical anti-inflammatory potency in animal assays; it inhibits multiple inflammatory cell types (mast cells, eosinophils, neutrophils, macrophages, lymphocytes) and mediators (histamine, eicosanoids, leukotrienes, cytokines). Formoterol acts locally in the lung as a bronchodilator through beta2-receptor stimulation, with more than 200-fold greater agonist activity at beta2 than beta1 receptors. The two components act on different pathways to improve asthma and COPD control (FDA Symbicort label, section 12.1).",
+    "indications": [
+      "Treatment of asthma in patients 6 years of age and older, for patients not adequately controlled on a long-term asthma-control medication such as an inhaled corticosteroid, or whose disease warrants initiation of both an inhaled corticosteroid and a long-acting beta2-agonist (FDA Symbicort label, section 1.1)",
+      "Maintenance treatment of airflow obstruction and reduction of exacerbations in chronic obstructive pulmonary disease (COPD), including chronic bronchitis and/or emphysema; only the 160/4.5 strength is indicated for COPD (section 1.2)",
+      "Important limitation: not indicated for the relief of acute bronchospasm (sections 1.1 and 1.2)"
+    ],
+    "contraindications": [
+      "Primary treatment of status asthmaticus or other acute episodes of asthma or COPD where intensive measures are required (FDA Symbicort label, section 4)",
+      "Hypersensitivity to budesonide, formoterol, or any other ingredient of the product (section 4)"
+    ],
+    "side_effects": [
+      "Asthma trials (adults and adolescents 12 years and older; incidence greater than 3% and more common than placebo): nasopharyngitis 10.5% (80/4.5) and 9.7% (160/4.5), headache 6.5% and 11.3%, upper respiratory tract infection 7.6% and 10.5%, pharyngolaryngeal pain 6.1% and 8.9%, sinusitis 5.8% and 4.8%, influenza 3.2% and 2.4%, back pain 3.2% and 1.6%, nasal congestion 2.5% and 3.2%, stomach discomfort 1.1% and 6.5%, vomiting 1.4% and 3.2%, oral candidiasis 1.4% and 3.2% (FDA Symbicort label, section 6.1)",
+      "COPD trials: nasopharyngitis, oral candidiasis, bronchitis, sinusitis, and upper respiratory tract infections are the most common adverse reactions (section 6.2)",
+      "Post-marketing and class effects: hypersensitivity reactions (urticaria, angioedema, rash, bronchospasm), paradoxical bronchospasm, hypokalaemia, hyperglycaemia, tremor, palpitations, tachycardia, headache, nervousness, insomnia, adrenal suppression, decreased bone mineral density, glaucoma, cataracts, and growth velocity reduction in children (sections 5.6-5.18 and 6.3)"
+    ],
+    "dosage": {
+      "adult": "Asthma, adults and adolescents 12 years and older: 2 inhalations of Symbicort 80/4.5 or 160/4.5 twice daily (morning and evening, about 12 hours apart). The starting strength is chosen according to asthma severity or level of control and exacerbation risk on the current inhaled corticosteroid. Maximum recommended dose is 160/4.5, 2 inhalations twice daily. If symptoms arise between doses, use a short-acting beta2-agonist for immediate relief. COPD: Symbicort 160/4.5, 2 inhalations twice daily (FDA Symbicort label, sections 2.1-2.3).",
+      "maximum": "Do not exceed 2 inhalations twice daily of the prescribed strength; higher doses or more frequent use increase formoterol exposure and adverse effects. Do not add another long-acting beta2-agonist (section 2.1)."
+    },
+    "adult_dosing": "Asthma (12 years and older): 2 inhalations of 80/4.5 or 160/4.5 twice daily; maximum 160/4.5 two inhalations twice daily. COPD: 160/4.5 two inhalations twice daily (FDA Symbicort label, sections 2.2-2.3).",
+    "pediatric_dosing": "Asthma, children 6 to less than 12 years: 2 inhalations of Symbicort 80/4.5 twice daily; the 160/4.5 strength and COPD use are not indicated in this age group. Safety and effectiveness in asthma patients younger than 6 years have not been established (FDA Symbicort label, sections 2.2 and 8.4).",
+    "interactions": [
+      "Strong CYP3A4 inhibitors (e.g. ketoconazole, ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, saquinavir, telithromycin): use with caution because budesonide exposure and systemic corticosteroid effects may increase (FDA Symbicort label, sections 5.9 and 7.1)",
+      "Monoamine oxidase inhibitors and tricyclic antidepressants, or use within 2 weeks of stopping them: administer with caution because the vascular effects of formoterol may be potentiated (section 7.2)",
+      "Beta-adrenergic receptor blockers, including eye drops: may block the pulmonary effect of formoterol and may cause severe bronchospasm in asthma; avoid in asthma unless no acceptable alternative, and then consider a cardioselective beta-blocker with caution (section 7.3)",
+      "Non-potassium-sparing diuretics (loop or thiazide): ECG changes and/or hypokalaemia may be acutely worsened by beta-agonists; use with caution (section 7.4)",
+      "No formal drug interaction studies have been performed with Symbicort; in clinical studies concurrent short-acting beta2-agonists, intranasal corticosteroids, and antihistamines/decongestants did not increase adverse reactions (section 7)"
+    ],
+    "monitoring": "Monitor the oral cavity periodically for Candida albicans infection. In COPD, monitor for signs and symptoms of pneumonia and other lower respiratory tract infections. Assess bone mineral density before starting and periodically thereafter in patients with COPD or major osteoporosis risk factors. Monitor growth routinely (e.g. stadiometry) in paediatric patients. Monitor for ocular symptoms and arrange eye examination in patients with a change in vision or a history of increased intraocular pressure, glaucoma, or cataracts. Monitor serum potassium and glucose in patients at risk, and monitor for cardiovascular effects. When transferring from systemic corticosteroids, monitor for adrenal insufficiency during and after the taper (FDA Symbicort label, sections 5.4-5.8, 5.13-5.18).",
+    "patient_counselling": "Use Symbicort every day, twice daily, even when asymptomatic; it is a maintenance inhaler and not a rescue inhaler. Use a short-acting beta2-agonist such as albuterol for acute symptoms and seek immediate medical attention if rescue inhaler use increases, if it becomes less effective, or if lung function decreases significantly. Rinse the mouth with water without swallowing after each inhalation to reduce thrush. Do not use another long-acting beta2-agonist for any reason. Do not stop treatment without clinician guidance because symptoms may recur. Patients with COPD should report symptoms of pneumonia. Report palpitations, chest pain, rapid heart rate, tremor, or nervousness. Inform patients that inhaled corticosteroids may reduce growth velocity in children and may increase the risk of cataracts or glaucoma with long-term use. Patients transferred from oral corticosteroids must taper slowly and carry a warning card about supplemental steroids during stress (FDA Symbicort label, section 17).",
+    "warnings": [
+      "Serious asthma-related events: long-acting beta2-agonists as monotherapy increase the risk of asthma-related hospitalisation and death; fixed-dose combination with an inhaled corticosteroid has not shown a significant increase in large safety trials, but the risk is not ruled out (section 5.1)",
+      "Deterioration of disease and acute episodes: do not initiate in rapidly deteriorating or potentially life-threatening asthma or COPD, and do not use for acute symptoms (section 5.2)",
+      "Excessive use and use with other long-acting beta2-agonists can cause overdose with clinically significant cardiovascular effects and fatalities (section 5.3)",
+      "Localised Candida albicans infection of the mouth and pharynx; treat with antifungal therapy and rinse the mouth after inhalation (section 5.4)",
+      "Pneumonia and other lower respiratory tract infections, with increased risk in COPD (section 5.5)",
+      "Immunosuppression: caution with active or quiescent tuberculosis, untreated systemic fungal, bacterial, viral or parasitic infections, or ocular herpes simplex; chickenpox and measles can be more serious or fatal (section 5.6)",
+      "Transferring from systemic corticosteroids: deaths from adrenal insufficiency have occurred during and after transfer; taper slowly and provide supplemental systemic corticosteroids during stress (section 5.7)",
+      "Hypercorticism and adrenal suppression with very high doses or in susceptible patients; reduce slowly if they occur (section 5.8)",
+      "Strong CYP3A4 inhibitors may increase systemic budesonide effects (section 5.9)",
+      "Paradoxical bronchospasm: discontinue and start alternative therapy (section 5.10)",
+      "Immediate hypersensitivity reactions including urticaria, angioedema, rash, and bronchospasm (section 5.11)",
+      "Cardiovascular and central nervous system effects from beta-adrenergic stimulation; use with caution in cardiovascular disorders, convulsive disorders, thyrotoxicosis, diabetes mellitus, and ketoacidosis (sections 5.12 and 5.17)",
+      "Reduction in bone mineral density, reduced growth velocity in children, glaucoma, and cataracts (sections 5.13-5.15)",
+      "Eosinophilic conditions and Churg-Strauss syndrome, usually associated with reduction or withdrawal of oral corticosteroids (section 5.16)",
+      "Hypokalaemia and hyperglycaemia from beta-agonist activity (section 5.18)"
+    ],
+    "precautions": [
+      "Do not use for relief of acute bronchospasm; a short-acting beta2-agonist should be available for rescue (sections 1.1, 1.2, and 5.2)",
+      "Titrate to the lowest strength that effectively controls symptoms to minimise systemic corticosteroid effects (sections 5.8 and 8.4)",
+      "Use with caution in patients with cardiovascular disorders (especially coronary insufficiency, cardiac arrhythmias, hypertension), convulsive disorders, thyrotoxicosis, diabetes mellitus, or ketoacidosis (sections 5.12 and 5.17)",
+      "Hepatic impairment: both components are predominantly cleared by hepatic metabolism; monitor closely for increased exposure (section 8.6)",
+      "Renal impairment: formal pharmacokinetic studies have not been conducted (section 8.7)",
+      "Geriatric use: no dosage adjustment is warranted, but use special caution in older patients with cardiovascular disease (section 8.5)",
+      "Priming the inhaler is required before first use and after more than 7 days without use or after dropping it (sections 2.1 and 11)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious asthma-related events, including hospitalisation, intubation, and death (class effect of long-acting beta2-agonists; not significantly increased with inhaled corticosteroid/long-acting beta2-agonist fixed combinations in large trials)",
+      "Pneumonia and other lower respiratory tract infections in COPD",
+      "Adrenal insufficiency and adrenal crisis, particularly during and after transfer from systemic corticosteroids",
+      "Paradoxical bronchospasm, which may be life-threatening",
+      "Immediate hypersensitivity reactions including angioedema and bronchospasm",
+      "Cardiovascular effects including tachycardia, arrhythmia, hypertension or hypotension, angina, and seizures with excessive beta-adrenergic stimulation",
+      "Decreased bone mineral density and fractures with long-term inhaled corticosteroid use",
+      "Glaucoma, increased intraocular pressure, and cataracts",
+      "Growth velocity reduction in paediatric patients",
+      "Eosinophilic conditions and Churg-Strauss syndrome"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "There are no adequate and well-controlled studies of Symbicort or formoterol in pregnant women, but data are available for inhaled budesonide. Large population-based registry data (2,534 infants exposed to inhaled budesonide in early pregnancy) showed no increase in congenital malformations compared with the general population. Animal studies with the combination showed teratogenic and embryocidal effects in rats at less than the maximum recommended human daily inhalation dose on a mcg/m2 basis; formoterol alone was teratogenic in rats and rabbits only at very large multiples of the human dose. Poorly or moderately controlled asthma increases the risk of pre-eclampsia, prematurity, low birth weight, and small-for-gestational-age infants, so pregnant women with asthma should be monitored closely and medication adjusted to maintain control. Because beta-agonists may interfere with uterine contractility, restrict use during labour to patients in whom benefit clearly outweighs risk (FDA Symbicort label, section 8.1).",
+    "lactation_guidance": "There are no data on the effects of Symbicort, budesonide, or formoterol on the breastfed child or on milk production. Budesonide is present in human milk; data with a dry powder inhaler indicate the total daily oral dose available to the infant is about 0.3% to 1% of the maternal inhaled dose. No human data are available for formoterol, which is present in rat milk. Consider the developmental and health benefits of breastfeeding alongside the mother's clinical need and any potential adverse effects on the infant (FDA Symbicort label, section 8.2).",
+    "overdose": "Symbicort contains both budesonide and formoterol, so the risks of overdose of each component apply. In pharmacokinetic studies, single doses of 960/54 mcg (12 actuations of 80/4.5), 1280/36 mcg (8 actuations of 160/4.5), and 1920/54 mcg (12 actuations of 160/4.5) produced no clinically significant adverse reactions. Budesonide overdose has low acute toxicity; prolonged excessive use may cause hypercorticism, and 3200 mcg daily for 6 weeks reduced the plasma cortisol response to ACTH by 27%. Formoterol overdose may cause seizures, angina, hypertension or hypotension, tachycardia and tachyarrhythmias, nervousness, headache, tremor, palpitations, muscle cramps, nausea, dizziness, sleep disturbance, metabolic acidosis, hyperglycaemia, and hypokalaemia; cardiac arrest and death may occur with abuse. Treatment is discontinuation plus symptomatic and supportive care, with cardiac monitoring; a cardioselective beta-blocker may be considered cautiously because it can cause bronchospasm, and the value of dialysis is unknown (FDA Symbicort label, section 10).",
+    "pharmacokinetics": "Budesonide: orally inhaled budesonide is rapidly absorbed in the lung, with peak plasma concentration typically within 20 minutes; after oral ingestion, peak concentration occurs in 1-2 hours and absolute systemic availability is 6%-13% because of extensive first-pass metabolism. In healthy subjects about 34% of the metered dose is deposited in the lung, with absolute systemic availability of 39% of the metered dose. After Symbicort 160/4.5 two inhalations twice daily for 5 days, the accumulation index was 1.32 and the half-life was 4.7 hours in asthma patients. Volume of distribution is about 3 L/kg, 85%-90% is bound to plasma proteins, and it is metabolised mainly by CYP3A4 to 16alpha-hydroxyprednisolone and 6beta-hydroxybudesonide (each less than 1% of parent activity). Metabolites are excreted in urine and faeces, with about 60% of an intravenous radiolabelled dose recovered in urine and no unchanged drug detected; terminal half-life is 2-3 hours. Formoterol: inhaled formoterol is rapidly absorbed, with peak concentrations within 5-10 minutes; much of the inhaled dose is swallowed and absorbed from the gastrointestinal tract. After Symbicort 160/4.5 two inhalations twice daily for 5 days, the accumulation index was 1.77. Protein binding is 46% (RR enantiomer) and 58% (SS enantiomer). Formoterol is metabolised mainly by direct glucuronidation and O-demethylation (CYP2D6 and CYP2C) to inactive metabolites; 62% of a radiolabelled dose is excreted in urine and 24% in faeces. Geriatric pharmacokinetics have not been specifically studied; dose-normalised budesonide exposure in children 6 to less than 12 years was numerically lower than in adults (FDA Symbicort label, section 12.3).",
+    "clinical_pearls": [
+      "Symbicort is maintenance therapy only; every patient should have a short-acting beta2-agonist for rescue",
+      "Rinsing the mouth with water without swallowing after inhalation reduces oropharyngeal candidiasis",
+      "Do not add another long-acting beta2-agonist, including for exercise-induced bronchospasm",
+      "The 160/4.5 strength is the only one indicated for COPD",
+      "Prime the inhaler with two test sprays before first use, after more than 7 days without use, or after dropping it",
+      "In COPD, assess bone mineral density before starting and periodically thereafter",
+      "When switching from oral corticosteroids, taper prednisone slowly (e.g. by 2.5 mg weekly) and watch for adrenal insufficiency",
+      "Asthma control can improve within 15 minutes, but maximum benefit may take 2 weeks or longer"
+    ],
+    "brand_names": ["Symbicort", "Breyna"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified. Formal pharmacokinetic studies of Symbicort have not been conducted in patients with renal impairment (FDA Symbicort label, section 8.7).",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is specified, but both budesonide and formoterol are predominantly cleared by hepatic metabolism, so hepatic impairment may cause accumulation. Monitor patients with hepatic disease closely for increased drug exposure and systemic corticosteroid effects (FDA Symbicort label, section 8.6).",
+    "administration_instructions": "For oral inhalation only. Administer 2 inhalations twice daily, morning and evening about 12 hours apart, every day. Shake well for 5 seconds before each spray. Prime before first use by releasing two test sprays into the air away from the face; re-prime after more than 7 days without use or after dropping the inhaler. After each inhalation, rinse the mouth with water without swallowing. Do not use more than 2 inhalations twice daily of the prescribed strength, and do not use with another long-acting beta2-agonist. Use a short-acting beta2-agonist for acute symptoms (FDA Symbicort label, sections 2.1 and 11)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA Symbicort (budesonide and formoterol fumarate dihydrate) inhalation aerosol label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Symbicort label, sections 1.1-1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Symbicort label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Symbicort label, sections 6.1-6.3 and 5.6-5.18",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Symbicort label, sections 2.1-2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA Symbicort label, sections 2.2-2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA Symbicort label, sections 2.2 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Symbicort label, sections 5.9 and 7.1-7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Symbicort label, sections 5.4-5.8 and 5.13-5.18",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Symbicort label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Symbicort label, sections 5.1-5.18",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Symbicort label, sections 1.1-1.2, 2.1, 5.2, 5.8, 5.12, 5.17, 8.5-8.7, and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Symbicort label, sections 5.1-5.18",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Symbicort label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Symbicort label, section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Symbicort label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Symbicort label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Symbicort label, sections 1.2, 2.1, 5.2, 5.4, 5.7, 5.13, and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings: Symbicort (AstraZeneca) and Breyna (Mylan) budesonide/formoterol inhalation aerosols",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=budesonide+formoterol"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the current FDA Symbicort label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Symbicort label, section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Symbicort label, section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Symbicort label, sections 2.1 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fafa4cf1-99c2-43d5-73ad-51f256de3be0"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (the FDA label uses the Pregnancy and Lactation Labeling Rule format and no longer assigns a pregnancy category)",
+    "food_interactions (the FDA label does not address food effects on this inhaled product)"
+  ],
+  "notes": "The table stores this combination as 'Budesonide/Formoterol'. The monograph covers the FDA-approved fixed-dose combination metered-dose inhalers (Symbicort and its generic/branded equivalents such as Breyna) at strengths 80/4.5 and 160/4.5 mcg. It does not cover the triple-combination product Breztri (budesonide/glycopyrrolate/formoterol), which is a separate row/product, nor the separate budesonide-only monograph. Symbicort was approved in the US in 2006; the label used here is the AstraZeneca revision of 7/2019, the current reference label on DailyMed. The product is not indicated for acute bronchospasm and is not a rescue inhaler. No boxed warning is present on the current label; the empty black_box_warnings array reflects that. Pregnancy categories have been replaced by narrative labelling, so pregnancy_category is null and listed in unsourced_fields. Food interactions are not addressed by the label, so food_interactions is empty."
+}

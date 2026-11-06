@@ -1,0 +1,212 @@
+{
+  "name": "Brimonidine",
+  "existing_id": "d8fd7e9a-7e6b-4dba-93e0-04a196ab7697",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Brimonidine tartrate is a relatively selective alpha-2 adrenergic receptor agonist. For the ophthalmic solution, the peak ocular hypotensive effect occurs about 2 hours after dosing; fluorophotometric studies in animals and humans suggest a dual mechanism of action, reducing aqueous humour production and increasing uveoscleral outflow (FDA ALPHAGAN P label, section 12.1). For the topical gel, brimonidine is a relatively selective alpha-2 adrenergic agonist and topical application may reduce facial erythema through direct vasoconstriction (FDA MIRVASO label, section 12.1).",
+    "indications": [
+      "Reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension - ALPHAGAN P ophthalmic solution 0.1% and 0.15% (FDA ALPHAGAN P label, section 1)",
+      "Topical treatment of persistent (nontransient) facial erythema of rosacea in adults 18 years of age or older - MIRVASO topical gel 0.33% (FDA MIRVASO label, section 1)"
+    ],
+    "contraindications": [
+      "ALPHAGAN P: neonates and infants younger than 2 years old (FDA ALPHAGAN P label, section 4.1)",
+      "ALPHAGAN P: hypersensitivity reaction to any component of the medication in the past (section 4.2)",
+      "MIRVASO: hypersensitivity reaction to any component; reported reactions have included angioedema, urticaria, and contact dermatitis (FDA MIRVASO label, section 4)"
+    ],
+    "side_effects": [
+      "Ophthalmic solution, 10%-20% of subjects: allergic conjunctivitis, conjunctival hyperaemia, eye pruritus (FDA ALPHAGAN P label, section 6.1)",
+      "Ophthalmic solution, 5%-9%: burning sensation, conjunctival folliculosis, hypertension, ocular allergic reaction, oral dryness, visual disturbance (section 6.1)",
+      "Ophthalmic solution, 1%-4%: abnormal taste, asthenia, blepharitis, blepharoconjunctivitis, blurred vision, bronchitis, cataract, conjunctival oedema/haemorrhage, conjunctivitis, cough, dizziness, dyspepsia, dyspnoea, epiphora, eye discharge/dryness/irritation/pain, eyelid oedema/erythema, fatigue, flu syndrome, foreign body sensation, headache, hypercholesterolaemia, hypotension, infection, insomnia, keratitis, pharyngitis, photophobia, rash, rhinitis, sinusitis, somnolence, stinging, superficial punctate keratopathy, tearing, visual field defect, vitreous detachment/disorder/floaters, worsened visual acuity (section 6.1)",
+      "Ophthalmic solution, less than 1%: corneal erosion, hordeolum, nasal dryness, taste perversion (section 6.1)",
+      "Topical gel, at least 1% and more than vehicle: erythema 4%, flushing 3%, skin burning sensation 2%, contact dermatitis 1%, dermatitis 1%, skin warm 1%, paraesthesia 1%, acne 1%, pain of skin 1%, blurred vision 1%, nasal congestion 1% (FDA MIRVASO label, section 6.1)",
+      "Post-marketing, ophthalmic: bradycardia, depression, hypersensitivity, iritis, keratoconjunctivitis sicca, miosis, nausea, skin reactions (erythema, eyelid pruritus, rash, vasodilation), syncope, tachycardia (section 6.2)",
+      "Post-marketing, topical gel: bradycardia, hypotension including orthostatic hypotension, dizziness, angioedema, hypersensitivity, lip swelling, swollen tongue, throat tightness, urticaria, pallor (FDA MIRVASO label, section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Ophthalmic solution (ALPHAGAN P): one drop in the affected eye(s) three times daily, approximately 8 hours apart. May be used with other topical IOP-lowering products; instill different ophthalmic products at least 5 minutes apart (FDA ALPHAGAN P label, section 2). Topical gel (MIRVASO): apply a pea-sized amount once daily to each of the five areas of the face (central forehead, chin, nose, each cheek), spread smoothly and evenly as a thin layer over the entire face, avoiding the eyes and lips; wash hands immediately afterwards (FDA MIRVASO label, section 2).",
+      "maximum": "No maximum dose is stated beyond the labelled once-daily application for MIRVASO and three-times-daily dosing for ALPHAGAN P; do not exceed the labelled frequency."
+    },
+    "adult_dosing": "ALPHAGAN P: one drop in each affected eye three times daily, about 8 hours apart. MIRVASO: pea-sized amount once daily to each of the five facial areas, thin layer over the whole face, avoid eyes and lips (FDA ALPHAGAN P label, section 2; FDA MIRVASO label, section 2).",
+    "pediatric_dosing": "ALPHAGAN P is contraindicated in children younger than 2 years. Safety and effectiveness in patients 2 years and older have not been established; in a controlled study in children 2-7 years, somnolence (50%-83% in those 2-6 years) and decreased alertness were common and about 16% discontinued because of somnolence (FDA ALPHAGAN P label, sections 4.1 and 8.4). MIRVASO safety and effectiveness in paediatric patients have not been established (FDA MIRVASO label, section 8.4).",
+    "interactions": [
+      "Antihypertensives and/or cardiac glycosides: brimonidine may reduce blood pressure, so use with caution (FDA ALPHAGAN P label, section 7.1; FDA MIRVASO label, section 7.1)",
+      "CNS depressants (alcohol, barbiturates, opiates, sedatives, anaesthetics): possible additive or potentiating effect (ALPHAGAN P section 7.2; MIRVASO section 7.2)",
+      "Tricyclic antidepressants: may blunt the IOP-lowering effect of alpha-2 agonists such as clonidine; caution advised (ALPHAGAN P section 7.3)",
+      "Monoamine oxidase inhibitors: may theoretically interfere with brimonidine metabolism and increase systemic effects such as hypotension; caution advised (ALPHAGAN P section 7.4; MIRVASO section 7.3)",
+      "Beta-blockers: alpha-2 agonists as a class may reduce blood pressure; caution with concomitant use (MIRVASO section 7.1)"
+    ],
+    "monitoring": "Ophthalmic use: monitor IOP and visual acuity, examine the ocular surface periodically, and watch for signs of hypersensitivity or bacterial keratitis. Because brimonidine can cause somnolence and reduce alertness, assess for sedation, especially in children 2 years and older. Topical use: assess facial erythema and local tolerability, and monitor blood pressure, heart rate, and symptoms of bradycardia, hypotension, or dizziness. Monitor for allergic contact dermatitis and for systemic alpha-2 effects (FDA ALPHAGAN P label, sections 5.1-5.3 and 8.4; FDA MIRVASO label, sections 5.1-5.6).",
+    "patient_counselling": "Ophthalmic: do not let the bottle tip touch the eye or surrounding structures; replace the cap after use and discard if the solution changes colour or becomes cloudy. If more than one topical ophthalmic drug is used, wait at least 5 minutes between products. Seek advice before continuing the same multidose container after ocular surgery or an intercurrent ocular condition. Vision may blur briefly; use care with driving or machinery. Report eye redness, pain, swelling, or signs of hypersensitivity. Topical gel: for external use on the face only, not for oral, ophthalmic, or intravaginal use; avoid contact with the eyes and lips, do not apply to irritated skin or open wounds, and wash hands after application. Keep the gel out of the reach of children because accidental ingestion can cause serious reactions. Report excessive redness, flushing, or whitening (FDA ALPHAGAN P label, section 17; FDA MIRVASO label, sections 2, 5.3, and 17).",
+    "warnings": [
+      "Potentiation of vascular insufficiency: use with caution in depression, cerebral or coronary insufficiency, Raynaud phenomenon, orthostatic hypotension, or thromboangiitis obliterans (FDA ALPHAGAN P label, section 5.1; FDA MIRVASO label, section 5.1 also lists scleroderma and Sjogren syndrome)",
+      "Severe cardiovascular disease: alpha-2 agonists can lower blood pressure; use with caution in severe, unstable, or uncontrolled cardiovascular disease (ALPHAGAN P section 5.2; MIRVASO section 5.2)",
+      "Contamination of topical ophthalmic products: bacterial keratitis has occurred with contaminated multidose containers and can cause serious eye damage and vision loss (ALPHAGAN P section 5.3)",
+      "Serious adverse reactions after ingestion of MIRVASO: two young children who accidentally ingested the gel had lethargy, respiratory distress with apnoeic episodes requiring intubation, sinus bradycardia, confusion, psychomotor hyperactivity, and diaphoresis; keep out of reach of children (MIRVASO section 5.3)",
+      "Systemic alpha-2 adrenergic effects with MIRVASO: post-marketing bradycardia, hypotension including orthostatic hypotension, and dizziness, some requiring hospitalisation, including after unapproved dosing or application following laser procedures (MIRVASO section 5.4)",
+      "Local vasomotor reactions with MIRVASO: erythema (sometimes a rebound worsening), flushing (sometimes new or increased), and pallor or excessive whitening at or outside the application site (MIRVASO section 5.5)",
+      "Hypersensitivity: angioedema, urticaria, contact dermatitis, and other allergic reactions; discontinue if a clinically significant reaction occurs (MIRVASO section 5.6)"
+    ],
+    "precautions": [
+      "Ophthalmic: brimonidine is absorbed systemically; use caution in patients with severe cardiovascular disease, cerebrovascular disease, or orthostatic hypotension",
+      "Ophthalmic: safety and effectiveness in children 2 years and older are not established and somnolence is common in this age group",
+      "Ophthalmic: remove soft contact lenses before instillation if the product contains benzalkonium chloride (not applicable to ALPHAGAN P, which is preserved with PURITE); follow the specific product labelling",
+      "Topical gel: avoid application to irritated skin, open wounds, or after laser procedures, which have been associated with systemic adverse reactions",
+      "Topical gel: use with caution in patients with severe or unstable cardiovascular disease, depression, Raynaud phenomenon, orthostatic hypotension, thromboangiitis obliterans, scleroderma, or Sjogren syndrome",
+      "Geriatric use: no overall differences in safety or effectiveness were observed between older and younger patients (ALPHAGAN P section 8.5; MIRVASO section 8.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Apnoea, bradycardia, coma, hypotension, hypothermia, hypotonia, lethargy, pallor, respiratory depression, and somnolence in infants receiving brimonidine ophthalmic solution (FDA ALPHAGAN P label, sections 4.1, 6.2, and 8.4)",
+      "Bacterial keratitis associated with contaminated multidose ophthalmic containers (ALPHAGAN P section 5.3)",
+      "Syncope, bradycardia, tachycardia, and hypotension with ophthalmic use (ALPHAGAN P section 6.2)",
+      "Serious reactions after accidental oral ingestion of MIRVASO in children, including respiratory distress with apnoea requiring intubation, sinus bradycardia, and confusion (MIRVASO section 5.3)",
+      "Bradycardia, orthostatic hypotension, and dizziness requiring hospitalisation with topical gel use (MIRVASO section 5.4)",
+      "Angioedema, urticaria, and severe contact dermatitis (MIRVASO sections 4 and 5.6)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "B (FDA MIRVASO topical gel label, section 8.1; the ALPHAGAN P ophthalmic label uses the Pregnancy and Lactation Labeling Rule format and assigns no letter category)",
+    "pregnancy_guidance": "ALPHAGAN P: there are no adequate and well-controlled studies in pregnant women. Brimonidine crossed the placenta and entered fetal circulation to a limited extent in animals. In rabbits, oral brimonidine caused miscarriage at about 50-70 times the recommended human ophthalmic dose based on AUC; no treatment-related malformations occurred in rabbits or rats. Use during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA ALPHAGAN P label, section 8.1). MIRVASO: Pregnancy Category B; no adequate and well-controlled studies in pregnant women; brimonidine was not teratogenic in rats at oral doses up to 2.5 mg/kg/day or rabbits at up to 5 mg/kg/day. Use only if the potential benefit justifies the potential risk (FDA MIRVASO label, section 8.1).",
+    "lactation_guidance": "ALPHAGAN P: it is not known whether brimonidine is excreted in human milk; it is excreted in rat milk and crosses the blood-brain barrier. Because of the potential for serious adverse reactions in nursing infants, including CNS depression and apnoea, ALPHAGAN P is not recommended during lactation (FDA ALPHAGAN P label, section 8.2). MIRVASO: it is not known whether brimonidine is excreted in human milk, although animal studies show excretion in breast milk; because of the potential for serious reactions in nursing infants, decide whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother (FDA MIRVASO label, section 8.3).",
+    "overdose": "ALPHAGAN P: limited information exists on accidental ingestion in adults; the only adverse reaction reported to date is hypotension. Symptoms of overdose have been reported in neonates, infants, and children receiving ophthalmic brimonidine or after accidental oral ingestion and include apnoea, bradycardia, coma, hypotension, hypothermia, hypotonia, lethargy, pallor, respiratory depression, and somnolence. Treatment is supportive and symptomatic with maintenance of a patent airway (FDA ALPHAGAN P label, section 10). MIRVASO: no information is available on adult overdose; oral overdoses of other alpha-2 agonists have caused hypotension, asthenia, vomiting, lethargy, sedation, bradycardia, arrhythmias, miosis, apnoea, hypotonia, hypothermia, respiratory depression, and seizure. Treat supportively and maintain a patent airway (FDA MIRVASO label, section 10).",
+    "pharmacokinetics": "ALPHAGAN P: after ocular administration of 0.1% or 0.2% solution, plasma concentrations peak within 0.5-2.5 hours and decline with a systemic half-life of about 2 hours; brimonidine is approximately 29% bound to plasma proteins, is extensively metabolised by the liver, and is excreted mainly in urine (FDA ALPHAGAN P label, section 12.3). MIRVASO: in 24 adults with facial erythema of rosacea who applied 1 g of gel once daily to the whole face for 29 days, mean peak plasma concentration and AUC were highest on Day 15 at 46 +/- 62 pg/mL and 417 +/- 264 pg.hr/mL; exposure was slightly lower on Day 29, indicating no further accumulation. Brimonidine is extensively metabolised by the liver, and urinary excretion is the major route of elimination (FDA MIRVASO label, section 12.3).",
+    "clinical_pearls": [
+      "The ophthalmic and topical gel products are not interchangeable: ALPHAGAN P is for IOP lowering in glaucoma/ocular hypertension, whereas MIRVASO is a facial gel for rosacea erythema",
+      "Peak ocular hypotensive effect of the ophthalmic solution occurs about 2 hours after a dose",
+      "Separate different topical ophthalmic products by at least 5 minutes (ALPHAGAN P) or 10 minutes (AZOPT-type products; follow the specific label)",
+      "MIRVASO can cause rebound erythema and flushing, and its effect may begin to diminish hours after application",
+      "Do not apply MIRVASO after laser procedures or to irritated or broken skin; these unapproved uses have been associated with systemic bradycardia and hypotension",
+      "Brimonidine ophthalmic solution must never be given to an infant younger than 2 years because of life-threatening apnoea and CNS depression",
+      "Keep MIRVASO out of the reach of children; accidental ingestion can cause severe respiratory and cardiac depression"
+    ],
+    "brand_names": ["Alphagan P", "Mirvaso", "Brimonidine tartrate ophthalmic solution (generic)"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in either the ALPHAGAN P or MIRVASO label. Brimonidine is extensively metabolised by the liver and excreted mainly in urine; pharmacokinetics have not been studied in renal impairment (FDA ALPHAGAN P label, section 12.3; FDA MIRVASO label, section 12.3).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified. Brimonidine is extensively metabolised by the liver, so hepatic impairment may increase systemic exposure; use with caution and monitor for systemic alpha-2 effects (FDA ALPHAGAN P label, section 12.3; FDA MIRVASO label, section 12.3).",
+    "administration_instructions": "ALPHAGAN P ophthalmic solution: wash hands, shake if required by the product, instill one drop into the affected eye(s) three times daily about 8 hours apart, avoid touching the dropper tip to the eye or any surface, and separate other ophthalmic drops by at least 5 minutes. MIRVASO topical gel: apply a pea-sized amount once daily to each of the five facial areas as a thin, even layer over the entire face, avoiding the eyes and lips; do not apply to irritated or broken skin; wash hands immediately after application (FDA ALPHAGAN P label, section 2; FDA MIRVASO label, section 2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA ALPHAGAN P (brimonidine tartrate ophthalmic solution) label, section 12.1; FDA MIRVASO (brimonidine) topical gel label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA ALPHAGAN P label, section 1; FDA MIRVASO label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA ALPHAGAN P label, sections 4.1-4.2; FDA MIRVASO label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA ALPHAGAN P label, sections 6.1-6.2; FDA MIRVASO label, sections 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA ALPHAGAN P label, section 2; FDA MIRVASO label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA ALPHAGAN P label, section 2; FDA MIRVASO label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA ALPHAGAN P label, sections 4.1 and 8.4; FDA MIRVASO label, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA ALPHAGAN P label, sections 7.1-7.4; FDA MIRVASO label, sections 7.1-7.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA ALPHAGAN P label, sections 5.1-5.3 and 8.4; FDA MIRVASO label, sections 5.1-5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA ALPHAGAN P label, section 17; FDA MIRVASO label, sections 2, 5.3, and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA ALPHAGAN P label, sections 5.1-5.3; FDA MIRVASO label, sections 5.1-5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA ALPHAGAN P label, sections 5.1-5.3 and 8.5; FDA MIRVASO label, sections 5.1-5.6 and 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA ALPHAGAN P label, sections 4.1, 5.3, 6.2, and 8.4; FDA MIRVASO label, sections 4, 5.3, 5.4, and 5.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA MIRVASO label, section 8.1 (Pregnancy Category B); FDA ALPHAGAN P label, section 8.1 (PLLR format, no category)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6a4353f-ae69-4214-901f-e5d42a6fbde7"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA ALPHAGAN P label, section 8.1; FDA MIRVASO label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA ALPHAGAN P label, section 8.2; FDA MIRVASO label, section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA ALPHAGAN P label, section 10; FDA MIRVASO label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA ALPHAGAN P label, section 12.3; FDA MIRVASO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA ALPHAGAN P label, sections 2, 12.1, and 12.3; FDA MIRVASO label, sections 2, 5.3-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings: ALPHAGAN P (Allergan) and MIRVASO (Galderma), plus generic brimonidine tartrate ophthalmic solution",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=brimonidine"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA ALPHAGAN P or MIRVASO labels (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA ALPHAGAN P label, section 12.3; FDA MIRVASO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA ALPHAGAN P label, section 12.3; FDA MIRVASO label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA ALPHAGAN P label, section 2; FDA MIRVASO label, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    }
+  ],
+  "unsourced_fields": [
+    "food_interactions (neither the ophthalmic nor the topical gel label addresses food effects)"
+  ],
+  "notes": "The row stores 'Brimonidine'. This monograph covers the two FDA-approved brimonidine tartrate products, which differ in route, strength, and indication: ALPHAGAN P ophthalmic solution 0.1%/0.15% for open-angle glaucoma or ocular hypertension, and MIRVASO topical gel 0.33% for persistent facial erythema of rosacea in adults. Statements are attributed to the specific product. The ophthalmic label is the current Allergan revision (Warnings updated 9/2025); the MIRVASO label is the 12/2022 revision. No boxed warning is present on either label. No food interactions are described. Pregnancy category B is retained only on the older MIRVASO label; the ALPHAGAN P label uses the PLLR format and assigns no category."
+}

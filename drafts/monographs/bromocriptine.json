@@ -1,0 +1,225 @@
+{
+  "name": "Bromocriptine",
+  "existing_id": "83428fab-c6f2-4568-8050-76ab5d52688d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bromocriptine is an ergot derivative and dopamine receptor agonist that activates post-synaptic dopamine receptors. Dopaminergic neurons in the tuberoinfundibular tract release dopamine that modulates prolactin secretion from the anterior pituitary, so bromocriptine inhibits prolactin secretion with little or no effect on other pituitary hormones (except in acromegaly, where it lowers elevated growth hormone in most patients). In Parkinson disease it directly stimulates dopamine receptors in the corpus striatum. The Cycloset (type 2 diabetes) formulation is likewise an ergot derivative dopamine agonist; its glycaemic effect is attributed to central dopaminergic modulation of circadian neuroendocrine rhythms, although the exact mechanism for improved glycaemic control is not fully established (FDA bromocriptine mesylate capsule label section 12.1; FDA Cycloset label section 12.1).",
+    "indications": [
+      "Hyperprolactinaemia-associated dysfunction, including amenorrhoea with or without galactorrhoea, infertility, or hypogonadism, in adults (FDA bromocriptine mesylate capsule label, section 1.1)",
+      "Prolactin-secreting adenomas in adults and paediatric patients 11 years of age and older (section 1.2)",
+      "Acromegaly in adults (section 1.3)",
+      "Signs and symptoms of idiopathic Parkinson disease or postencephalitic parkinsonism in adults (section 1.4)",
+      "Adjunct to diet and exercise to improve glycaemic control in adults with type 2 diabetes mellitus - Cycloset 0.8 mg tablets only (FDA Cycloset label, section 1); not for type 1 diabetes or diabetic ketoacidosis, efficacy not confirmed with insulin, limited data with thiazolidinediones",
+      "Limitation of use: avoid bromocriptine for inhibition or suppression of postpartum physiological lactation because of the risk of serious adverse reactions (section 1.1; see Warnings and Precautions 5.4)"
+    ],
+    "contraindications": [
+      "History of cardiac valvular disorders or history of pericardial fibrosis (FDA bromocriptine mesylate capsule label, section 4)",
+      "History of pleural, pulmonary, or retroperitoneal fibrotic disorders (section 4)",
+      "Uncontrolled hypertension (section 4)",
+      "Hypersensitivity to bromocriptine, any excipient of the capsule, or other ergot alkaloids (section 4)",
+      "Cycloset tablets additionally: history of syncopal migraines; postpartum patients; lactating patients (FDA Cycloset label, section 4)"
+    ],
+    "side_effects": [
+      "Hyperprolactinaemia and prolactinoma trials: nausea 49%, headache 19%, dizziness 17%, fatigue 7%, light-headedness 5%, vomiting 5%, abdominal cramps 4%, nasal congestion 3%, constipation 3%, diarrhoea 3%, drowsiness 3% (FDA capsule label, section 6.1)",
+      "Acromegaly trials: nausea 18%, constipation 14%, postural/orthostatic hypotension 6%, anorexia 4%, dry mouth/nasal stuffiness 4%, dyspepsia 4%, digital vasospasm 3%, drowsiness/tiredness 3%, vomiting 2% (section 6.1)",
+      "Parkinson disease trials: nausea, abnormal involuntary movements, hallucinations, confusion, on-off phenomenon, dizziness, drowsiness, faintness/fainting, vomiting, asthenia, abdominal discomfort, visual disturbance, ataxia, insomnia, depression, hypotension, dyspnoea, constipation, vertigo (section 6.1)",
+      "Post-marketing: pericardial effusion, constrictive pericarditis, arrhythmia, cardiac valve fibrosis, pleural effusion/fibrosis, pulmonary fibrosis, retroperitoneal fibrosis, gastrointestinal ulcer and haemorrhage, sudden onset of sleep, hypersexuality, impulse-control behaviours, hair loss, cold-induced pallor of fingers and toes (section 6.2)",
+      "Cycloset trials: nausea, fatigue, dizziness, vomiting, and headache reported in at least 5% and more often than placebo (FDA Cycloset label, section 6.1)"
+    ],
+    "dosage": {
+      "adult": "Hyperprolactinaemia-associated dysfunction: start 1.25 mg (half a 2.5 mg tablet) to 2.5 mg once daily; increase by up to 2.5 mg once daily every 2-7 days as tolerated to an optimal response, usual range 2.5-15 mg once daily (FDA capsule label, section 2.3). Prolactin-secreting adenoma: start 1.25-2.5 mg once daily; titrate within 2.5-10 mg once daily (section 2.4). Acromegaly: start 1.25-2.5 mg once at bedtime for 3 days; increase by 1.25-2.5 mg once daily every 3-7 days; usual optimal range 20-30 mg once at bedtime, maximum 100 mg/day (section 2.5). Parkinson disease: start 1.25 mg twice daily; increase by 1.25 mg twice daily every 14-28 days to a maximum of 100 mg/day (section 2.6). Type 2 diabetes (Cycloset 0.8 mg tablets): one tablet once daily within 2 hours of waking, with food; increase weekly by one tablet to a maximum tolerated dose of 1.6-4.8 mg/day (FDA Cycloset label, section 2.2).",
+      "moderate_cyp3a4_inhibitor": "Hyperprolactinaemia: start 1.25 mg once daily, maximum 3.75 mg once daily. Prolactinoma: start 1.25 mg once daily, maximum 2.5 mg once daily. Acromegaly: start 1.25 mg once daily, maximum 25 mg once daily. Parkinson disease: start 1.25 mg once daily, maximum 12.5 mg twice daily (FDA capsule label, section 2.7, Table 1). Cycloset: limit to 1.6 mg/day (FDA Cycloset label, section 2.3)."
+    },
+    "adult_dosing": "See fields.dosage.adult for the indication-specific regimens (hyperprolactinaemia, prolactinoma, acromegaly, Parkinson disease, and type 2 diabetes with Cycloset). All capsule regimens are titrated slowly as tolerated; acromegaly and Parkinson disease require the highest doses and the closest monitoring.",
+    "pediatric_dosing": "Prolactin-secreting adenomas: 1.25 mg (half a tablet) to 2.5 mg once daily, titrated as tolerated within 2.5-10 mg once daily in patients 11 years of age and older (FDA capsule label, section 2.4). Safety and effectiveness have not been established for prolactinoma in patients younger than 11 years, or for hyperprolactinaemia-associated dysfunction, acromegaly, or Parkinson disease at any paediatric age (section 8.4). Cycloset is not indicated in paediatric patients (FDA Cycloset label, section 8.4).",
+    "interactions": [
+      "Alcohol: may potentiate bromocriptine-associated adverse reactions (FDA capsule label, section 7)",
+      "Dopamine antagonists (e.g. antipsychotics, metoclopramide): decreased bromocriptine efficacy; Cycloset labelling states concomitant use is not recommended because effectiveness of both drugs may be diminished (section 7; Cycloset section 5.5)",
+      "Strong CYP3A4 inhibitors (e.g. ritonavir, ketoconazole, clarithromycin, itraconazole): avoid concomitant use; bromocriptine is a CYP3A4 substrate and exposure increases (section 7)",
+      "Moderate CYP3A4 inhibitors (e.g. erythromycin): increase bromocriptine AUC 3.7-fold and Cmax 4.6-fold in a study with erythromycin; use the reduced dosage schedule in fields.dosage.moderate_cyp3a4_inhibitor (sections 2.7 and 7)",
+      "Other ergot alkaloids: concomitant use not recommended; if unavoidable, a bromocriptine dose reduction may be needed, particularly at high doses (section 7)",
+      "Octreotide: increased bromocriptine AUC by about 38% in acromegaly, not considered clinically significant (section 12.3)",
+      "Cycloset: may increase the unbound fraction of highly protein-bound drugs; may increase ergot-related side effects or reduce ergot effectiveness for migraine if given within 6 hours of an ergot-related drug (FDA Cycloset label, section 7)"
+    ],
+    "monitoring": "Cardiovascular evaluation including echocardiogram before starting, then echocardiogram every 6-12 months or as clinically indicated; erythrocyte sedimentation rate, serum creatinine, chest x-ray and other investigations at baseline and as needed for fibrosis surveillance. Blood pressure at baseline and during treatment. Visual fields in patients with macroprolactinoma. Pregnancy test at least every 4 weeks during amenorrhoea (or if a period is missed). Acromegaly: growth hormone levels and clinical response monthly during titration. Parkinson disease: orthostatic vital signs during dose escalation and mental status. Type 2 diabetes: glycaemic control and orthostatic vital signs before and during Cycloset therapy (FDA capsule label, sections 2.1, 5.1-5.3, 8.3; Cycloset label, sections 2.1, 5.1).",
+    "patient_counselling": "Report shortness of breath, chest pain, persistent cough, breathlessness when lying down, or limb swelling (possible cardiac, pleural, pulmonary or retroperitoneal fibrosis). Rise slowly from lying or sitting because of hypotension and dizziness. Report new or increased gambling urges, sexual urges, uncontrolled spending, binge or compulsive eating, or other intense urges. Do not drive or perform hazardous activities if drowsy or if episodes of falling asleep occur. Seek immediate attention for visual impairment during treatment of a macroprolactinoma. Do not stop or reduce the dose abruptly because withdrawal reactions (including a neuroleptic malignant syndrome-like picture) can occur. Notify the clinician if pregnant, planning pregnancy, or breastfeeding. Take with food. Do not use to suppress postpartum lactation (FDA capsule label, section 17).",
+    "warnings": [
+      "Cardiac valvulopathy and pericardial fibrosis: obtain a cardiovascular evaluation with echocardiogram before starting; do not start if valvular disease is present. Monitor with echocardiogram every 6-12 months or as clinically indicated; discontinue for new valvular regurgitation, restriction, leaflet thickening, or pericarditis. Not recommended in patients taking other drugs associated with valvulopathy (section 5.1)",
+      "Pleural, pulmonary and retroperitoneal fibrosis: monitor for dyspnoea, persistent cough, chest pain, loin/flank pain, lower-limb oedema, abdominal masses or tenderness; discontinue if fibrosis occurs (section 5.2)",
+      "Hypotension and orthostatic hypotension, especially during the first days of treatment; check blood pressure at baseline and during treatment (section 5.3)",
+      "Postpartum lactation inhibition/suppression: avoid this unapproved use; it has been associated with hypertension, psychotic reactions, myocardial infarction, seizures (including status epilepticus), stroke, and death (section 5.4)",
+      "Impulse control disorders and compulsive behaviours: ask specifically about new or increased urges; consider dose reduction or discontinuation (section 5.5)",
+      "Falling asleep during activities of daily living, sometimes without perceived warning signs (section 5.6)",
+      "Visual field deterioration in macroprolactinoma, including delayed chiasmal traction after tumour shrinkage; monitor visual fields and refer rapidly progressive loss to a neurosurgeon (section 5.7)",
+      "Exacerbation of psychosis in severe psychotic disorders; use is not recommended (section 5.8)",
+      "Cycloset: orthostatic hypotension and syncope, psychosis, impulse-control behaviours, somnolence, interaction with dopamine antagonists, and serious reactions in postpartum patients (FDA Cycloset label, section 5)"
+    ],
+    "precautions": [
+      "Lactose content: avoid in rare hereditary galactose intolerance, severe lactase deficiency, or glucose-galactose malabsorption because of the risk of diarrhoea, abdominal pain, bloating, and malabsorption (section 5.9)",
+      "Acromegaly: cold-sensitive digital vasospasm (keep fingers warm; dose reduction can reverse), gastrointestinal bleeding from peptic ulcers (some fatal), possible growth hormone-secreting tumour expansion, and withdrawal reactions after rapid dose reduction - taper gradually (section 5.10)",
+      "Parkinson disease: hallucinations and mental disturbances, more frequent at higher doses and in dementia-related psychosis; caution with a history of myocardial infarction and residual atrial, nodal, or ventricular arrhythmia; taper gradually because of withdrawal reactions and a neuroleptic malignant syndrome-like syndrome (section 5.11)",
+      "Cycloset: not for type 1 diabetes or diabetic ketoacidosis; limited efficacy data with thiazolidinediones; efficacy not confirmed with insulin (FDA Cycloset label, section 1)",
+      "Geriatric use: clinical studies did not include sufficient numbers of patients 65 years and older to determine whether they respond differently (section 8.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac valvulopathy, pericardial effusion, and constrictive pericarditis, particularly with long-term and high-dose treatment",
+      "Pleural effusion, pleural fibrosis, pulmonary fibrosis, and retroperitoneal fibrosis, particularly with long-term and high-dose treatment",
+      "Severe hypotension and syncope, especially early in treatment and during dose escalation",
+      "Hypertension, seizures (including status epilepticus), stroke, myocardial infarction, and death when used for postpartum lactation suppression",
+      "Neuroleptic malignant syndrome-like withdrawal reaction after abrupt dose reduction or discontinuation",
+      "Severe gastrointestinal haemorrhage from peptic ulcer, some fatal, in patients with acromegaly",
+      "Exacerbation of psychosis and hallucinations"
+    ],
+    "food_interactions": [
+      "Take capsules with food: a high percentage of patients vomited when bromocriptine was given under fasting conditions (FDA capsule label, section 2.2)",
+      "Food did not significantly affect systemic bromocriptine exposure after a 2.5 mg dose (section 12.3)",
+      "Alcohol may potentiate bromocriptine-associated adverse reactions (section 7)",
+      "Cycloset must be taken within 2 hours of waking, with food (FDA Cycloset label, section 2.1)"
+    ],
+    "pregnancy_category": null,
+    "pregnancy_guidance": "Hyperprolactinaemia and prolactinoma: bromocriptine should generally be withdrawn when pregnancy is diagnosed. If continued or reinstituted in selected patients to manage a macroprolactinoma, weigh benefit against risk if a hypertensive disorder of pregnancy develops. Acromegaly: decide whether treatment remains medically necessary or can be withdrawn; withdraw in hypertensive disorders of pregnancy (eclampsia, pre-eclampsia, pregnancy-induced hypertension) unless use is necessary. Parkinson disease: no adequate data on developmental risk; consider withdrawal reactions if the drug is stopped. Monitor closely throughout pregnancy for signs of prolactinoma enlargement; discontinuation in known macroadenomas has been associated with rapid tumour regrowth and prolactin rise, and emergency pituitary surgery may become necessary. Available human data (1,276 pregnancies) showed a 3.3% birth-defect rate in 1,109 live births, with no evidence that bromocriptine contributed to the type or incidence of defects (FDA capsule label, section 8.1).",
+    "lactation_guidance": "Avoid bromocriptine during lactation in postpartum females; the label states that use for postpartum lactation inhibition or suppression must be avoided because of serious adverse reactions including hypertension, stroke, myocardial infarction, seizures, and death (FDA capsule label, sections 5.4 and 8.2). Cycloset is contraindicated in lactating patients (FDA Cycloset label, section 4).",
+    "overdose": "The most commonly reported signs and symptoms of acute overdose are nausea, vomiting, constipation, diaphoresis, dizziness, pallor, severe hypotension, malaise, confusion, lethargy, drowsiness, delusions, hallucinations, and repetitive yawning. Isolated paediatric ingestions caused vomiting, somnolence, and fever, with recovery spontaneously within a few hours or after appropriate management. Management is supportive; contact a poison control centre or medical toxicologist. There is no specific antidote described in the label (FDA capsule label, section 10).",
+    "pharmacokinetics": "After a single 5 mg oral dose in fasted healthy volunteers, mean peak plasma concentration was 465 pg/mL, time to peak 2.5 hours, and elimination half-life 4.9 hours; exposure is linear over 1-7.5 mg. With 5 mg twice daily for 14 days, steady-state Cmax was 628 pg/mL and AUC 2377 pg*hr/mL. Bromocriptine is 90-96% bound to serum albumin. It undergoes extensive first-pass biotransformation, mainly via CYP3A4 hydroxylation, with almost no parent drug in urine or faeces; about 82% of a radioactive oral dose is recovered in faeces and 6% in urine. The effect of renal or hepatic impairment, age, race, and sex on pharmacokinetics has not been evaluated (FDA capsule label, section 12.3).",
+    "clinical_pearls": [
+      "Take with food: fasting administration causes a high rate of vomiting",
+      "Perform a baseline echocardiogram before the first dose; valvular disease is a contraindication",
+      "Use the lowest effective dose and taper slowly on discontinuation to avoid withdrawal reactions",
+      "For acromegaly, reassess monthly and consider withdrawing for 4-8 weeks yearly in patients treated with pituitary irradiation to assess the radiation effect",
+      "For Parkinson disease with concomitant levodopa, keep the levodopa dose unchanged during bromocriptine escalation; if levodopa is reduced, increase bromocriptine by 1.25 mg twice daily increments",
+      "Cycloset is a different product (0.8 mg tablets) taken within 2 hours of waking with food; do not substitute capsule regimens for the diabetes indication",
+      "Avoid all use for postpartum lactation suppression"
+    ],
+    "brand_names": ["Parlodel", "Cycloset"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified in the FDA capsule or Cycloset labels. The effect of renal function on bromocriptine pharmacokinetics has not been evaluated; because parent drug and metabolites are almost completely eliminated by metabolism and only about 6% by the kidney, renal impairment may not significantly affect exposure (FDA capsule label, section 12.3).",
+    "hepatic_dose_adjustment": "No hepatic dose adjustment is specified in the FDA capsule or Cycloset labels. The effect of hepatic impairment on bromocriptine pharmacokinetics has not been evaluated; because clearance is predominantly hepatic, monitor patients with hepatic impairment for increased exposure and adverse effects (FDA capsule label, section 12.3).",
+    "administration_instructions": "Oral use only. Capsules: take with food because fasting administration was associated with a high rate of vomiting. Swallow capsules whole. Cycloset tablets: take within 2 hours of waking in the morning, with food. Do not exceed the recommended dose or frequency; the capsule and tablet strengths are not interchangeable (capsules contain 5 mg bromocriptine mesylate; Cycloset tablets contain 0.8 mg) (FDA capsule label, section 2.2; FDA Cycloset label, section 2.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA bromocriptine mesylate capsule label (Zydus), section 12.1; FDA Cycloset label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 1.1-1.4; FDA Cycloset label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA bromocriptine mesylate capsule label, section 4; FDA Cycloset label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 6.1-6.2; FDA Cycloset label, section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.2-2.7 and Table 1; FDA Cycloset label, sections 2.1-2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.3-2.6; FDA Cycloset label, section 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.4 and 8.4; FDA Cycloset label, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.7, 7, and 12.3; FDA Cycloset label, sections 5.5 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.1, 5.1-5.3, and 8.3; FDA Cycloset label, sections 2.1 and 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA bromocriptine mesylate capsule label, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 5.1-5.8; FDA Cycloset label, section 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 5.9-5.11 and 8.5; FDA Cycloset label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 5.1-5.4, 5.10-5.11, and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.2, 7, and 12.3; FDA Cycloset label, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA bromocriptine mesylate capsule label, section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 5.4 and 8.2; FDA Cycloset label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA bromocriptine mesylate capsule label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA bromocriptine mesylate capsule label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA bromocriptine mesylate capsule label, sections 2.2, 2.5, 2.6, 5.1, and 17; FDA Cycloset label, sections 2.1 and 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for Parlodel (bromocriptine mesylate tablets/capsules, Validus) and Cycloset (bromocriptine mesylate tablets, Avvisto)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=bromocriptine"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA bromocriptine mesylate capsule label or the FDA Cycloset label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA bromocriptine mesylate capsule label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA bromocriptine mesylate capsule label, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA bromocriptine mesylate capsule label, section 2.2; FDA Cycloset label, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69003ee-0b6f-47a9-834e-ba59c02f566c"
+    }
+  ],
+  "unsourced_fields": [
+    "pregnancy_category (the FDA label uses the Pregnancy and Lactation Labeling Rule format and no longer assigns a pregnancy category)"
+  ],
+  "notes": "This row is stored as 'Bromocriptine'. The monograph covers both FDA-approved oral bromocriptine products: bromocriptine mesylate capsules 5 mg (Parlodel-type, indicated for hyperprolactinaemia, prolactinoma, acromegaly, and Parkinson disease) and Cycloset 0.8 mg tablets (type 2 diabetes). The two products have different strengths, dosing, and some contraindications, so the indication and dosing text identifies which product each statement applies to. Parlodel is listed on DailyMed (Validus, 2023) but the capsule content is drawn from the current generic Zydus label (revised 07/2026). The postpartum lactation-suppression use is unapproved and specifically warned against. No boxed warning is present on either label; the empty black_box_warnings array reflects that, not missing data. Pregnancy categories have been replaced by narrative labelling, so pregnancy_category is null and listed in unsourced_fields."
+}

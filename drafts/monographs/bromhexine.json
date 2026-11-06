@@ -1,0 +1,211 @@
+{
+  "name": "Bromhexine",
+  "existing_id": "81840b28-83cd-4079-a81a-f207900daff9",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bromhexine hydrochloride is a synthetic derivative of the herbal active ingredient vasicine and is classified as an expectorant/mucolytic (ATC R05CB02). It enhances mucus transport by reducing mucus viscosity and by activating the ciliated epithelium (mucociliary clearance). Preclinical studies show it increases the proportion of serous bronchial secretion, and clinical studies show a secretolytic and secretomotor effect in the bronchial tract that facilitates expectoration and eases cough (New Zealand Medsafe Bisolvon Chesty Forte data sheet, section 5.1; Australian TGA-approved Bisolvon Chesty Product Information, section 5.1).",
+    "indications": [
+      "Mucolytic to break down mucus and help clear the chest in conditions accompanied by excessive mucus secretions, such as the common cold, influenza, respiratory tract infections, or other conditions where excess mucus is produced (New Zealand Medsafe Bisolvon Chesty Forte data sheet, section 4.1; Australian TGA-approved Bisolvon Chesty Product Information, section 4.1)"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to bromhexine or any other excipient of the formulation (NZ data sheet, section 4.3; Australian PI, section 4.3)",
+      "Children under 6 years of age: do not use bromhexine tablets or oral solution (NZ data sheet, section 4.3; Australian PI, section 4.3)"
+    ],
+    "side_effects": [
+      "Immune system: hypersensitivity, anaphylactic reaction, anaphylactic shock (NZ data sheet, section 4.8)",
+      "Skin and subcutaneous tissue: angioedema, rash, urticaria, pruritus; severe cutaneous adverse reactions including erythema multiforme, Stevens-Johnson syndrome/toxic epidermal necrolysis, and acute generalised exanthematous pustulosis (NZ data sheet, section 4.8; EMA Article 31 referral Annex III, section 4.8)",
+      "Respiratory, mediastinal and thoracic: bronchospasm (NZ data sheet, section 4.8)",
+      "Gastrointestinal: nausea, vomiting, diarrhoea, upper abdominal pain, and other mild gastrointestinal effects (NZ data sheet, section 4.8; Australian PI, section 4.8)",
+      "Nervous system: headache, dizziness, sweating (Australian PI, section 4.8)",
+      "Hepatic: transient rise in serum aminotransferase values (Australian PI, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Adults and children 12 years and over: bromhexine hydrochloride 8 mg three times a day when necessary. The dose may be increased to 16 mg three times a day for the first seven days (NZ data sheet, section 4.2; Australian PI, section 4.2).",
+      "paediatric": "Children 6-11 years: 8 mg three times a day when necessary, only on the advice of a doctor, pharmacist, or nurse practitioner. Do not use in children under 6 years (NZ data sheet, section 4.2; Australian PI, section 4.2)."
+    },
+    "adult_dosing": "8 mg orally three times a day when necessary; may increase to 16 mg three times a day for the first seven days (NZ data sheet, section 4.2).",
+    "pediatric_dosing": "Children 6-11 years: 8 mg orally three times a day when necessary, only on professional advice. Contraindicated in children under 6 years (NZ data sheet, sections 4.2-4.3).",
+    "interactions": [
+      "No clinically relevant unfavourable interactions with other medicines such as ampicillin, oxytetracycline, or erythromycin have been reported (NZ data sheet, section 4.5)",
+      "Bromhexine increases the concentrations of amoxicillin, erythromycin, and oxytetracycline in sputum and bronchopulmonary secretions (NZ data sheet, section 5.2)",
+      "Interaction studies with oral anticoagulants or digoxin were not performed; the lack of relevant interaction reports during long-term marketing suggests no substantial interaction potential with these drugs (NZ data sheet, section 4.5)",
+      "Bromhexine is almost completely metabolised and relevant interactions with CYP2C9 or CYP3A4 substrates are considered unlikely (NZ data sheet, section 5.2)"
+    ],
+    "monitoring": "Assess clinical response; patients should expect an increase in mucus flow. In acute respiratory indications, seek medical advice if symptoms do not improve after 4-5 days or worsen during therapy (NZ data sheet, section 4.2). Monitor for new skin or mucosal lesions, which may be an early sign of a severe cutaneous reaction, and stop treatment immediately if they occur (NZ data sheet, section 4.4; EMA Annex III, section 4.4). Monitor hepatic and renal function in patients with severe liver or renal disease, and monitor for gastrointestinal symptoms in patients with a history of gastric ulceration (NZ data sheet, section 4.4).",
+    "patient_counselling": "Expect an increase in the flow of mucus secretions. Stop the medicine and seek medical advice immediately if a new skin rash or lesions of the mucous membranes (mouth, throat, nose, eyes, genitals) develop, because these may be early signs of a severe skin reaction. Seek medical advice if symptoms do not improve after 4-5 days or worsen. Tablets should be swallowed; the oral solution should be measured with the cup provided. Bromhexine can be taken with or without food. Do not give to children under 6 years. Products may contain lactose, maltitol, or sorbitol, which matter in rare hereditary galactose or fructose intolerance (NZ data sheet, sections 4.2-4.4; EMA Annex III, package leaflet).",
+    "warnings": [
+      "Severe skin reactions: erythema multiforme, Stevens-Johnson syndrome/toxic epidermal necrolysis, and acute generalised exanthematous pustulosis have been reported with bromhexine. If symptoms or signs of a progressive skin rash (sometimes with blisters or mucosal lesions) appear, discontinue bromhexine immediately and seek medical advice (EMA Article 31 referral Annex III, section 4.4)",
+      "Early severe skin reactions can begin with non-specific influenza-like prodromes (fever, aching body, rhinitis, cough, sore throat), which may be mistaken for the underlying respiratory illness; stop treatment and seek advice if new skin or mucosal lesions occur (NZ data sheet, section 4.4)",
+      "Use with caution in patients with severe liver disease (NZ data sheet, section 4.4)",
+      "Use with caution in patients with severe renal failure (NZ data sheet, section 4.4)",
+      "Use with caution in patients with gastric ulceration (NZ data sheet, section 4.4)",
+      "Excipient warnings: tablets contain lactose (patients with rare hereditary galactose intolerance such as galactosaemia should not take them); oral solutions contain maltitol and sorbitol, which may have a laxative effect or cause diarrhoea and should be avoided in rare hereditary fructose intolerance (NZ data sheet, section 4.4)",
+      "Do not use in children under 6 years; use in children 6-11 years only on the advice of a healthcare professional (NZ data sheet, section 4.3)"
+    ],
+    "precautions": [
+      "No pharmacokinetic data are available in the elderly or in patients with renal or hepatic insufficiency; extensive clinical experience has not raised relevant safety concerns in these groups (NZ data sheet, section 5.2)",
+      "No studies on the effect on human fertility have been conducted; preclinical experience gives no indication of an effect on fertility (NZ data sheet, section 4.6)",
+      "No studies on the ability to drive or operate machinery have been performed; when used as recommended and in the absence of side effects, bromhexine is not known to affect these activities (NZ data sheet, section 4.7)",
+      "Bromhexine crosses the blood-brain barrier and only a small amount crosses the placenta (NZ data sheet, section 5.2)",
+      "Bromhexine is not an FDA-approved medicine; labelling and availability differ by country (see notes)"
+    ],
+    "serious_adverse_reactions": [
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis",
+      "Acute generalised exanthematous pustulosis and erythema multiforme",
+      "Anaphylactic reaction and anaphylactic shock",
+      "Angioedema and bronchospasm"
+    ],
+    "food_interactions": [
+      "Bromhexine can be taken with or without food (NZ data sheet, section 4.2)",
+      "Concomitant food intake tends to increase bromhexine plasma concentrations, probably by partially inhibiting the first-pass effect (NZ data sheet, section 5.2)"
+    ],
+    "pregnancy_category": "A (Australian TGA-approved Bisolvon Chesty Product Information, section 4.6 - Australian category system; bromhexine is not FDA-approved and has no US pregnancy category)",
+    "pregnancy_guidance": "There are limited data on the use of bromhexine in pregnant women. Preclinical studies do not indicate direct or indirect harmful effects with respect to reproductive toxicity. As a precautionary measure, it is preferable to avoid bromhexine during pregnancy (NZ data sheet, section 4.6). The Australian Product Information states that bromhexine crosses the placental barrier, that animal studies do not indicate harmful effects, and that clinical experience has shown no evidence of harmful fetal effects, but that use is not recommended, especially during the first trimester (Australian PI, section 4.6).",
+    "lactation_guidance": "It is unknown whether bromhexine or its metabolites are excreted in human milk. Preclinical data show excretion of bromhexine/metabolites in breast milk, so a risk to the breastfed infant cannot be excluded; bromhexine should not be used during breastfeeding (NZ data sheet, section 4.6). The Australian Product Information states that bromhexine is excreted in breast milk and that the product is not recommended in breastfeeding mothers (Australian PI, section 4.6).",
+    "overdose": "No specific overdose symptoms have been reported in humans to date. Based on accidental overdose and medication-error reports, observed symptoms are consistent with the known side effects at recommended doses and may require symptomatic treatment. Contact a poisons information service for advice (NZ data sheet, section 4.9; Australian PI, section 4.9).",
+    "pharmacokinetics": "Bromhexine shows dose-linear pharmacokinetics over 8-32 mg after oral administration and is rapidly and completely absorbed from the gastrointestinal tract, but extensive first-pass metabolism (70%-80%) reduces absolute bioavailability to about 22.2% +/- 8.5% for tablets and 26.8% +/- 13.1% for oral solution. Concomitant food tends to increase plasma concentrations. The mean volume of distribution after intravenous dosing is up to 1209 +/- 206 L (19 L/kg), and lung tissue concentrations 2 hours after oral dosing are 1.5-4.5 times higher in bronchiolo-bronchial tissue and 2.4-5.9 times higher in pulmonary parenchyma than plasma. Unchanged bromhexine is 95% bound to plasma proteins. It is almost completely metabolised to hydroxylated metabolites and dibromanthranilic acid, with ambroxol as a metabolite; about 97.4% +/- 1.9% of a radiolabelled dose is recovered in urine, less than 1% as parent drug. After single oral doses of 8-32 mg, terminal half-life ranges from 6.6 to 31.4 hours, but the relevant half-life for multiple-dose kinetics is about 1 hour; no accumulation occurs (accumulation factor 1.1) (NZ data sheet, section 5.2).",
+    "clinical_pearls": [
+      "Bromhexine is an expectorant/mucolytic, not a cough suppressant; it should not be combined with antitussives that could impair clearance of loosened secretions",
+      "Stop immediately and seek advice for any new skin or mucosal lesion, because early Stevens-Johnson syndrome or toxic epidermal necrolysis can mimic a worsening cold",
+      "Do not use in children under 6 years; use in children 6-11 years only on professional advice",
+      "Expect increased mucus flow; advise patients that this is the intended effect",
+      "Seek advice if symptoms do not improve after 4-5 days",
+      "Ambroxol is a metabolite of bromhexine, so avoid combining bromhexine with ambroxol products",
+      "Bromhexine is not FDA-approved; it is available in Australia, New Zealand, and many other countries under labels such as Bisolvon"
+    ],
+    "brand_names": ["Bisolvon", "Bisolvon Chesty", "Bisolvon Chesty Forte"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is provided. Use with caution in patients with severe renal failure; there are no pharmacokinetic data in renal impairment (NZ data sheet, sections 4.4 and 5.2).",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is provided. Use with caution in patients with severe liver disease; reduced clearance of parent bromhexine may be expected in severe hepatic impairment (NZ data sheet, sections 4.4 and 5.2).",
+    "administration_instructions": "For oral use. Tablets: swallow with water; the usual dose is 8 mg three times a day, which may be increased to 16 mg three times a day for the first seven days in adults and children 12 years and older. Oral solution: measure the dose with the cup provided; each 5 mL of Bisolvon Chesty Forte oral solution contains 8 mg. Bromhexine may be taken with or without food. Do not use in children under 6 years (NZ data sheet, section 4.2; Australian PI, section 4.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "New Zealand Medsafe Bisolvon Chesty Forte data sheet, section 5.1; Australian TGA-approved Bisolvon Chesty Product Information, section 5.1",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "indications",
+      "ref": "NZ Medsafe Bisolvon Chesty Forte data sheet, section 4.1; Australian TGA-approved Bisolvon Chesty Product Information, section 4.1",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "NZ data sheet, section 4.3; Australian PI, section 4.3",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "NZ data sheet, section 4.8; Australian PI, section 4.8; EMA Article 31 referral Annex III, section 4.8",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "dosage",
+      "ref": "NZ data sheet, section 4.2; Australian PI, section 4.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "NZ data sheet, section 4.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "NZ data sheet, sections 4.2-4.3",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "interactions",
+      "ref": "NZ data sheet, sections 4.5 and 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "NZ data sheet, sections 4.2, 4.4, and 5.2; EMA Article 31 referral Annex III, section 4.4",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "NZ data sheet, sections 4.2-4.4; EMA Article 31 referral Annex III, package leaflet",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "warnings",
+      "ref": "EMA Article 31 referral Annex III, section 4.4; NZ data sheet, sections 4.3-4.4",
+      "url": "https://www.ema.europa.eu/en/documents/referral/ambroxol-and-bromhexine-article-31-referral-annex-iii_en.pdf"
+    },
+    {
+      "field": "precautions",
+      "ref": "NZ data sheet, sections 4.6-4.7 and 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "EMA Article 31 referral Annex III, section 4.8; NZ data sheet, section 4.8",
+      "url": "https://www.ema.europa.eu/en/documents/referral/ambroxol-and-bromhexine-article-31-referral-annex-iii_en.pdf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "NZ data sheet, sections 4.2 and 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Australian TGA-approved Bisolvon Chesty Product Information, section 4.6 (Australian pregnancy category A)",
+      "url": "https://apps.medicines.org.au/files/swpbiche.pdf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "NZ data sheet, section 4.6; Australian PI, section 4.6",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "NZ data sheet, section 4.6; Australian PI, section 4.6",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "overdose",
+      "ref": "NZ data sheet, section 4.9; Australian PI, section 4.9",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "NZ data sheet, section 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "NZ data sheet, sections 4.2-4.4 and 5.2; EMA Article 31 referral Annex III, section 4.4",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Medsafe and TGA listings for Bisolvon Chesty / Bisolvon Chesty Forte (bromhexine hydrochloride) products",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the NZ Medsafe Bisolvon data sheet or the Australian Product Information; bromhexine is not FDA-approved",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "NZ data sheet, sections 4.4 and 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "NZ data sheet, sections 4.4 and 5.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "NZ data sheet, section 4.2; Australian PI, section 4.2",
+      "url": "https://medsafe.govt.nz/profs/Datasheet/b/BisolvonTabSol.pdf"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Bromhexine'. Bromhexine is not FDA-approved and has no US product label; this monograph is sourced from the New Zealand Medsafe data sheet for Bisolvon Chesty Forte (bromhexine hydrochloride 8 mg tablets and 8 mg/5 mL oral solution, revision 20 Dec 2021) and the Australian TGA-approved Bisolvon Chesty Product Information, supplemented by the EMA Article 31 referral Annex III (ambroxol/bromhexine) for the agreed EU wording on severe cutaneous adverse reactions. Dosing follows the Australasian labels (8 mg three times daily, up to 16 mg three times daily for the first week in adults); other jurisdictions may use different regimens. The Australian pregnancy category A is retained and explicitly identified as an Australian category, because no US category exists. Bromhexine is a metabolite of ambroxol and vice versa, so the two should not be combined. No boxed warning exists on the source labels."
+}

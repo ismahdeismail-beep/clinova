@@ -1,0 +1,238 @@
+{
+  "name": "Budesonide",
+  "existing_id": "baeac84d-1bb2-4ebe-b192-5f935a5bcd6c",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Budesonide is a synthetic glucocorticosteroid with high topical glucocorticoid activity and weak mineralocorticoid activity. Its affinity for the glucocorticoid receptor, which reflects intrinsic potency, is about 200-fold that of cortisol and 15-fold that of prednisolone. It reduces inflammation by inhibiting multiple inflammatory cell types and mediators, and in the gut the orally coated formulations deliver topical corticosteroid activity to the intestinal mucosa with extensive first-pass metabolism limiting systemic exposure. Inhaled budesonide reduces asthma symptoms and improves lung function; intranasal budesonide treats allergic rhinitis; oral extended-release and pH-dependent capsules treat inflammatory bowel disease (FDA ENTOCORT EC label, Clinical Pharmacology; FDA PULMICORT RESPULES label, section 12.1; FDA UCERIS label, section 12.1; FDA RHINOCORT AQUA label, section 12.1).",
+    "indications": [
+      "Maintenance treatment of asthma and prophylactic therapy in children 12 months to 8 years of age - PULMICORT RESPULES inhalation suspension; not indicated for relief of acute bronchospasm (FDA PULMICORT RESPULES label, section 1.1)",
+      "Maintenance treatment of asthma as prophylactic therapy in adults and children 6 years of age and older - PULMICORT FLEXHALER inhalation powder; not indicated for relief of acute bronchospasm (FDA PULMICORT FLEXHALER label, section 1)",
+      "Treatment of mild to moderate active Crohn's disease involving the ileum and/or the ascending colon, and maintenance of clinical remission of mild to moderate Crohn's disease involving the ileum and/or the ascending colon for up to 3 months - ENTOCORT EC capsules (FDA ENTOCORT EC label, Indications and Usage)",
+      "Induction of remission in patients with active, mild to moderate ulcerative colitis - UCERIS extended-release tablets (FDA UCERIS label, section 1)",
+      "Treatment of seasonal or perennial allergic rhinitis in adults and children 6 years of age and older - RHINOCORT AQUA nasal spray (FDA RHINOCORT AQUA label, section 1.1)",
+      "Important limitation: the inhaled products are not indicated for the relief of acute bronchospasm; each formulation is a distinct product with its own indication, strength, and dosing (see notes)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to budesonide or any ingredient of the specific formulation (PULMICORT RESPULES section 4; PULMICORT FLEXHALER section 4; ENTOCORT EC section 4; UCERIS section 4; RHINOCORT AQUA section 4)",
+      "Inhaled products: primary treatment of status asthmaticus or other acute episodes of asthma where intensive measures are required (PULMICORT RESPULES section 4; PULMICORT FLEXHALER section 4)",
+      "PULMICORT FLEXHALER: severe hypersensitivity to milk proteins, because the formulation contains milk protein (PULMICORT FLEXHALER section 4)"
+    ],
+    "side_effects": [
+      "PULMICORT RESPULES (children 12 months to 8 years, 12 weeks): respiratory infection 34%-38%, rhinitis 7%-12%, coughing 5%-9%, otitis media 9%-12%, viral infection 3%-5%, moniliasis 2%-4%, gastroenteritis 4%-5%, vomiting 2%-4%, diarrhoea 2%-4%, abdominal pain 2%-3%, ear infection 2%-5%, epistaxis 1%-2% (FDA PULMICORT RESPULES label, section 6.1)",
+      "PULMICORT FLEXHALER (patients 6 years and older, 360 mcg twice daily for 12 weeks): nasopharyngitis 9.3%, nasal congestion 2.7%, pharyngitis 2.7%, allergic rhinitis 2.2%, viral upper respiratory tract infection 2.2%, nausea 1.8% (FDA PULMICORT FLEXHALER label, section 6.1)",
+      "ENTOCORT EC (9 mg daily, active Crohn's disease): headache 21%, respiratory infection 11%, nausea 11%, back pain 7%, dyspepsia 6%, dizziness 7%, abdominal pain 6%, flatulence 6%, vomiting 6%, fatigue 5%, pain 5% (FDA ENTOCORT EC label, section 6.1)",
+      "UCERIS (9 mg daily, ulcerative colitis): headache, nausea, decreased blood cortisol, upper abdominal pain, fatigue, flatulence, abdominal distension, acne, urinary tract infection, arthralgia, constipation, each reported in at least 2% (FDA UCERIS label, section 6.1)",
+      "RHINOCORT AQUA (allergic rhinitis): epistaxis 8%, pharyngitis 4%, bronchospasm 2%, coughing 2%, nasal irritation 2% (FDA RHINOCORT AQUA label, section 6.1)",
+      "Class effects across formulations: oral candidiasis, dysphonia, throat irritation, adrenal suppression, hypercorticism, decreased bone mineral density, glaucoma, cataracts, growth velocity reduction in children, hypersensitivity reactions, and (with oral formulations) Kaposi's sarcoma (sections 5 and 6 of the respective labels)"
+    ],
+    "dosage": {
+      "adult": "Asthma - PULMICORT FLEXHALER: adults 18 years and older start at 360 mcg twice daily (180 mcg twice daily may be adequate in some), maximum 720 mcg twice daily; children 6-17 years start at 180 mcg twice daily (360 mcg twice daily may be appropriate in some), maximum 360 mcg twice daily (FDA PULMICORT FLEXHALER label, section 2.1). Crohn's disease - ENTOCORT EC: 9 mg once daily in the morning for up to 8 weeks for active disease; after control, 6 mg once daily for maintenance of remission for up to 3 months, then attempt to taper to cessation (FDA ENTOCORT EC label, Dosage and Administration). Ulcerative colitis - UCERIS: 9 mg once daily in the morning, with or without food, for up to 8 weeks; swallow whole, do not chew or crush (FDA UCERIS label, section 2.1). Allergic rhinitis - RHINOCORT AQUA: adults and children 6 years and older start with 64 mcg (one spray per nostril) once daily; adults 12 years and older maximum 256 mcg (four sprays per nostril) once daily; children 6 to under 12 years maximum 128 mcg (two sprays per nostril) once daily (FDA RHINOCORT AQUA label, section 2).",
+      "paediatric": "Asthma - PULMICORT RESPULES (children 12 months to 8 years): bronchodilators alone - 0.5 mg total daily dose once daily or 0.25 mg twice daily, highest 0.5 mg/day; inhaled corticosteroids - 0.5 mg total daily dose once daily or 0.25 mg twice daily up to 0.5 mg twice daily, highest 1 mg/day; oral corticosteroids - 0.5 mg twice daily or 1 mg once daily, highest 1 mg/day. A starting dose of 0.25 mg once daily may be considered in symptomatic children not responding to non-steroidal therapy (FDA PULMICORT RESPULES label, section 2.1). PULMICORT FLEXHALER: children 6-17 years start 180 mcg twice daily, maximum 360 mcg twice daily (FDA PULMICORT FLEXHALER label, section 2.1)."
+    },
+    "adult_dosing": "Inhaled asthma: PULMICORT FLEXHALER 360 mcg twice daily for adults 18 years and older (180 mcg twice daily may be adequate), maximum 720 mcg twice daily. Oral Crohn's disease: ENTOCORT EC 9 mg once daily in the morning up to 8 weeks, then 6 mg once daily up to 3 months for maintenance. Oral ulcerative colitis: UCERIS 9 mg once daily in the morning up to 8 weeks. Nasal allergic rhinitis: RHINOCORT AQUA 64 mcg (one spray per nostril) once daily, maximum 256 mcg (four sprays per nostril) once daily in adults 12 years and older (respective FDA labels).",
+    "pediatric_dosing": "PULMICORT RESPULES for children 12 months to 8 years: 0.25-0.5 mg once daily or 0.25 mg twice daily depending on prior therapy, with a highest recommended total daily dose of 0.5 mg (prior bronchodilator only) or 1 mg (prior inhaled or oral corticosteroid). PULMICORT FLEXHALER for children 6-17 years: 180 mcg twice daily, maximum 360 mcg twice daily. RHINOCORT AQUA for children 6 to under 12 years: start 64 mcg once daily, maximum 128 mcg (two sprays per nostril) once daily. ENTOCORT EC and UCERIS are not indicated in paediatric patients; safety and effectiveness have not been established (FDA PULMICORT RESPULES section 8.4; PULMICORT FLEXHALER section 8.4; RHINOCORT AQUA section 8.4; ENTOCORT EC section 8.4; UCERIS section 8.4).",
+    "interactions": [
+      "Strong CYP3A4 inhibitors (ketoconazole, itraconazole, ritonavir, indinavir, saquinavir, erythromycin, clarithromycin, and others): can increase budesonide plasma concentrations several-fold and increase systemic corticosteroid effects; co-administration of ketoconazole increased oral budesonide AUC about 8-fold, so avoid or reduce the budesonide dose and monitor closely (FDA ENTOCORT EC label, Drug Interactions; PULMICORT labels section 7; UCERIS section 7; RHINOCORT AQUA section 7.1)",
+      "Grapefruit juice: inhibits intestinal CYP3A4 and approximately doubles systemic exposure to oral budesonide; avoid grapefruit and grapefruit juice during oral budesonide therapy (FDA ENTOCORT EC label, Drug Interactions)",
+      "Oral contraceptives containing ethinyl estradiol: do not affect budesonide pharmacokinetics, and budesonide does not affect ethinyl estradiol plasma levels (FDA ENTOCORT EC label, Drug Interactions)",
+      "Drugs that alter gastrointestinal pH: the ENTOCORT EC coating dissolves at pH above 5.5, so release and uptake may change with acid-suppressing drugs; omeprazole 20 mg daily did not affect absorption, while cimetidine with an uncoated oral budesonide formulation slightly increased peak concentration and absorption rate and caused significant cortisol suppression (FDA ENTOCORT EC label, Drug Interactions)"
+    ],
+    "monitoring": "Asthma: monitor symptoms, rescue short-acting beta2-agonist use, and lung function; examine the oral cavity for Candida infection; monitor growth velocity in children (stadiometry) and ocular symptoms including glaucoma and cataracts. Inflammatory bowel disease: monitor disease activity and symptoms of hypercorticism or adrenal suppression, especially with repeated or prolonged courses. Patients transferred from systemic corticosteroids need monitoring for adrenal insufficiency during and after the taper. Consider bone mineral density monitoring with long-term use and in patients with osteoporosis risk factors. Monitor hepatic function because hepatic impairment increases systemic exposure to oral budesonide (FDA PULMICORT RESPULES sections 5 and 8; PULMICORT FLEXHALER section 5; ENTOCORT EC Warnings and Precautions; UCERIS section 5; RHINOCORT AQUA section 5).",
+    "patient_counselling": "Inhaled: use the inhaler or nebulizer every day as prescribed, even when feeling well; it is not a rescue medicine. Rinse the mouth with water without swallowing after inhalation to reduce oral candidiasis. Carry and use a short-acting beta2-agonist for acute symptoms and seek medical attention if rescue use increases or becomes less effective. Do not stop treatment abruptly. Nasal: aim the spray away from the nasal septum, and report nosebleeds, nasal pain, or non-healing nasal sores. Oral: swallow ENTOCORT EC and UCERIS capsules/tablets whole, do not chew or crush; take in the morning; avoid grapefruit juice; do not stop systemic corticosteroids abruptly when transferring. Report signs of infection, vision changes, or (in children) slower growth. Patients on long-term corticosteroids should carry a steroid warning card and receive supplemental steroids during stress or surgery (FDA PULMICORT RESPULES section 17; PULMICORT FLEXHALER section 17; ENTOCORT EC Information for Patients; UCERIS section 17; RHINOCORT AQUA section 17).",
+    "warnings": [
+      "Localised infections: Candida albicans infection of the mouth and throat can occur with inhaled corticosteroids; monitor and advise mouth rinsing (PULMICORT RESPULES section 5.1; PULMICORT FLEXHALER section 5.1)",
+      "Deterioration of asthma and acute episodes: do not use inhaled budesonide for relief of acute symptoms; patients require immediate re-evaluation during rapidly deteriorating asthma (PULMICORT RESPULES section 5.2; PULMICORT FLEXHALER section 5.2)",
+      "Hypersensitivity reactions including anaphylaxis, rash, contact dermatitis, urticaria, angioedema, and bronchospasm; discontinue if they occur (PULMICORT RESPULES section 5.3; PULMICORT FLEXHALER section 5.3)",
+      "Immunosuppression: potential worsening of infections including tuberculosis, fungal, bacterial, viral, or parasitic infections, and ocular herpes simplex; chickenpox and measles can be more serious or fatal (PULMICORT RESPULES section 5.4; PULMICORT FLEXHALER section 5.4)",
+      "Transferring patients from systemic corticosteroid therapy: risk of impaired adrenal function; taper systemic corticosteroids slowly (PULMICORT RESPULES section 5.5; PULMICORT FLEXHALER section 5.5)",
+      "Hypercorticism and adrenal suppression can occur with very high doses or in susceptible individuals; reduce dose slowly if they occur (PULMICORT RESPULES section 5.6; PULMICORT FLEXHALER section 5.6; RHINOCORT AQUA section 5.4)",
+      "Reduction in bone mineral density with long-term use (PULMICORT RESPULES section 5.7; PULMICORT FLEXHALER section 5.7)",
+      "Reduced growth velocity in children; monitor growth routinely (PULMICORT RESPULES section 5.8; PULMICORT FLEXHALER section 5.8; RHINOCORT AQUA section 5.6)",
+      "Glaucoma, increased intraocular pressure, and cataracts; monitor closely (PULMICORT RESPULES section 5.9; PULMICORT FLEXHALER section 5.9; RHINOCORT AQUA section 5.7)",
+      "Oral formulations: immunosuppression and increased risk of infection, Kaposi's sarcoma, and other glucocorticoid effects; use the lowest effective dose for the shortest duration (UCERIS sections 5.1-5.4; ENTOCORT EC Warnings and Precautions)",
+      "Nasal formulation: local nasal effects including epistaxis, Candida infection, nasal septal perforation, and impaired wound healing; avoid use with recent nasal ulcers, surgery, or trauma (RHINOCORT AQUA section 5.1)"
+    ],
+    "precautions": [
+      "Use the lowest dose that effectively controls symptoms and titrate downward once control is achieved to minimise systemic corticosteroid effects",
+      "Hepatic impairment increases systemic availability of oral budesonide (about 2.5-fold in cirrhosis); monitor for hypercorticism and consider dose reduction in moderate to severe liver disease (ENTOCORT EC Dosage and Administration and Pharmacokinetics; UCERIS section 8.6)",
+      "Caution in patients with tuberculosis, hypertension, diabetes mellitus, osteoporosis, peptic ulcer, glaucoma or cataracts, or a family history of diabetes or glaucoma (ENTOCORT EC Precautions)",
+      "Replacement of systemic corticosteroids with oral budesonide may unmask previously controlled allergies such as rhinitis and eczema (ENTOCORT EC Precautions)",
+      "Inhaled FLEXHALER contains milk protein; avoid in patients with severe milk protein allergy",
+      "Oral solutions/suspensions and capsules may contain excipients such as lactose or sugars; check the specific product for patients with rare hereditary intolerance",
+      "Geriatric use: clinical studies of ENTOCORT EC did not include sufficient patients 65 years and older to determine whether they respond differently; no overall differences were reported for the inhaled and nasal products (respective labels, section 8.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Adrenal insufficiency and adrenal crisis, particularly during and after transfer from systemic corticosteroids",
+      "Anaphylaxis, angioedema, and bronchospasm",
+      "Severe or fatal infections in immunosuppressed patients, including chickenpox and measles",
+      "Growth velocity reduction in children",
+      "Decreased bone mineral density and fractures",
+      "Glaucoma, increased intraocular pressure, and cataracts",
+      "Hypercorticism and Cushing's syndrome with excessive doses",
+      "Kaposi's sarcoma with oral budesonide (UCERIS)",
+      "Nasal septal perforation with intranasal budesonide"
+    ],
+    "food_interactions": [
+      "UCERIS extended-release tablets may be taken with or without food; a high-fat meal decreased Cmax by 27% and delayed absorption lag time by 2.4 hours without a significant change in AUC (FDA UCERIS label, section 12.3)",
+      "ENTOCORT EC: a high-fat meal delays time to peak concentration by 2.5 hours without a significant change in AUC; take consistently with respect to food (FDA ENTOCORT EC label, Pharmacokinetics)",
+      "Grapefruit juice approximately doubles systemic exposure to oral budesonide and should be avoided (FDA ENTOCORT EC label, Drug Interactions)"
+    ],
+    "pregnancy_category": "B for inhaled and intranasal products (FDA RHINOCORT AQUA label, section 8.1) and C for oral capsules (FDA ENTOCORT EC label, section 8.1); current Pregnancy and Lactation Labeling Rule-format labels assign no letter category",
+    "pregnancy_guidance": "Inhaled budesonide: large population-based registry data covering about 99% of Swedish pregnancies from 1995-2001 showed no increased risk of overall congenital malformations with inhaled or intranasal budesonide use in early pregnancy. There are no adequate and well-controlled studies of the oral formulations in pregnant women. In animal studies, budesonide caused fetal loss and developmental effects at doses above the recommended human dose. Poorly or moderately controlled asthma increases the risk of pre-eclampsia, prematurity, low birth weight, and small-for-gestational-age infants, so asthma should be actively managed in pregnancy. Use budesonide during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA RHINOCORT AQUA label, section 8.1; PULMICORT labels section 8.1; ENTOCORT EC label, Pregnancy; UCERIS label, section 8.1).",
+    "lactation_guidance": "Budesonide is excreted in human milk in small amounts. Data with inhaled budesonide indicate that the total daily oral dose available to a breastfed infant is about 0.3% to 1% of the maternal inhaled dose. There are no data on the effects of oral budesonide on milk production or on the breastfed child. Consider the developmental and health benefits of breastfeeding together with the mother's clinical need and any potential adverse effects on the infant (FDA PULMICORT labels section 8.2; UCERIS section 8.2; ENTOCORT EC label, Nursing Mothers; RHINOCORT AQUA section 8.3).",
+    "overdose": "Acute toxicity from budesonide overdose is low. Single oral doses of 200 and 400 mg/kg were lethal in female and male mice, respectively, with decreased motor activity, piloerection, and generalised oedema. Reports of acute toxicity or death after glucocorticoid overdose are rare; treatment consists of immediate gastric lavage or emesis followed by supportive and symptomatic therapy. Chronic use of excessive doses can cause hypercorticism and adrenal suppression; in chronic overdose during severe disease requiring continued steroid therapy, the dose may be reduced temporarily (FDA ENTOCORT EC label, Overdosage; PULMICORT labels section 10; UCERIS section 10).",
+    "pharmacokinetics": "Budesonide undergoes extensive first-pass metabolism (80%-90%) and has high plasma clearance (0.9-1.8 L/min) approaching hepatic blood flow. After oral ENTOCORT EC 9 mg in healthy subjects, peak plasma concentration is about 5 nmol/L and AUC about 30 nmol.hr/L; time to peak varies from 30 to 600 minutes, and systemic availability is higher in Crohn's disease (21%) than in healthy volunteers (9%) but approaches healthy values with repeated dosing. Volume of distribution is 2.2-3.9 L/kg, plasma protein binding is 85%-90%, and the erythrocyte/plasma ratio is about 0.8. Budesonide is metabolised mainly by CYP3A4 to 6beta-hydroxybudesonide and 16alpha-hydroxyprednisolone, with less than 1/100 the glucocorticoid activity of the parent. The plasma elimination half-life after intravenous dosing is 2.0-3.6 hours, and about 60% of recovered radioactivity appears in urine as metabolites. In cirrhosis, oral systemic availability is about 2.5-fold higher than in healthy controls. After oral inhalation, budesonide is rapidly absorbed from the lung, with peak concentrations typically within 20 minutes and about 34% of the metered dose deposited in the lung (FDA ENTOCORT EC label, Pharmacokinetics; PULMICORT labels section 12.3; UCERIS section 12.3).",
+    "clinical_pearls": [
+      "Budesonide formulations are not interchangeable: inhaled (Respules, Flexhaler), oral (Entocort EC, Uceris), and nasal (Rhinocort Aqua) products have different indications, strengths, and dosing",
+      "Inhaled and nasal budesonide are not rescue therapies; every asthma patient should have a short-acting beta2-agonist available",
+      "Rinse the mouth after inhalation to reduce oral candidiasis",
+      "Swallow ENTOCORT EC capsules and UCERIS tablets whole; do not chew or crush",
+      "Avoid grapefruit juice with oral budesonide because it approximately doubles exposure",
+      "ENTOCORT EC is dosed in the morning; UCERIS can be taken with or without food",
+      "Repeated 8-week courses of ENTOCORT EC can be used for recurrent active Crohn's disease; maintenance beyond 3 months has not shown substantial benefit",
+      "When transferring from prednisolone, taper the systemic steroid while starting budesonide rather than stopping prednisolone abruptly"
+    ],
+    "brand_names": [
+      "Pulmicort",
+      "Pulmicort Respules",
+      "Pulmicort Flexhaler",
+      "Entocort EC",
+      "Uceris",
+      "Rhinocort Aqua",
+      "Budesonide extended-release tablets (generic)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No renal dose adjustment is specified. Intact budesonide is not renally excreted, but metabolites are largely renally excreted and may accumulate in renal impairment; these metabolites have negligible corticosteroid activity (less than 1/100 of parent), so an increased risk of adverse effects is not expected. Pharmacokinetics in renal impairment have not been studied (FDA ENTOCORT EC label, Pharmacokinetics; UCERIS section 8.7).",
+    "hepatic_dose_adjustment": "Hepatic impairment increases systemic exposure to oral budesonide: in cirrhosis, systemic availability is on average 2.5-fold higher than in healthy controls, and patients with mild liver disease are minimally affected while severe disease has not been studied. Monitor for signs and symptoms of hypercorticism and consider reducing the dose in patients with moderate to severe liver disease. Inhaled and nasal budesonide are also primarily cleared hepatically; monitor for increased systemic effects (FDA ENTOCORT EC label, Dosage and Administration and Pharmacokinetics; UCERIS section 8.6; PULMICORT labels section 8.6).",
+    "administration_instructions": "PULMICORT RESPULES: administer by jet nebulizer with a mouthpiece or face mask; ultrasonic nebulizers are not suitable; do not mix with other nebulized medicines; use the specific strengths and volumes prescribed. PULMICORT FLEXHALER: oral inhalation only; follow the device instructions, rinse the mouth after each use, and do not use for acute symptoms. ENTOCORT EC: swallow capsules whole with water, do not chew or break, once daily in the morning. UCERIS: swallow extended-release tablets whole, do not chew or crush, once daily in the morning with or without food. RHINOCORT AQUA: for intranasal use only; shake gently, prime before first use, aim away from the nasal septum, and follow the labelled spray count per nostril (respective FDA labels, sections 2 and 17)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA ENTOCORT EC label, Clinical Pharmacology; FDA PULMICORT RESPULES label, section 12.1; FDA UCERIS label, section 12.1; FDA RHINOCORT AQUA label, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA PULMICORT RESPULES section 1.1; PULMICORT FLEXHALER section 1; ENTOCORT EC Indications and Usage; UCERIS section 1; RHINOCORT AQUA section 1.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA PULMICORT RESPULES section 4; PULMICORT FLEXHALER section 4; ENTOCORT EC section 4; UCERIS section 4; RHINOCORT AQUA section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae1105cd-69fc-4c15-937f-c535304341c2"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA PULMICORT RESPULES section 6.1; PULMICORT FLEXHALER section 6.1; ENTOCORT EC section 6.1; UCERIS section 6.1; RHINOCORT AQUA section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA PULMICORT FLEXHALER section 2.1; PULMICORT RESPULES section 2.1; ENTOCORT EC Dosage and Administration; UCERIS section 2.1; RHINOCORT AQUA section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae1105cd-69fc-4c15-937f-c535304341c2"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA PULMICORT FLEXHALER section 2.1; ENTOCORT EC Dosage and Administration; UCERIS section 2.1; RHINOCORT AQUA section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA PULMICORT RESPULES section 2.1; PULMICORT FLEXHALER section 2.1; RHINOCORT AQUA section 2; ENTOCORT EC section 8.4; UCERIS section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA ENTOCORT EC label, Drug Interactions; PULMICORT labels section 7; UCERIS section 7; RHINOCORT AQUA section 7.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA PULMICORT RESPULES sections 5 and 8; PULMICORT FLEXHALER section 5; ENTOCORT EC Warnings and Precautions; UCERIS section 5; RHINOCORT AQUA section 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA PULMICORT RESPULES section 17; PULMICORT FLEXHALER section 17; ENTOCORT EC Information for Patients; UCERIS section 17; RHINOCORT AQUA section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA PULMICORT RESPULES sections 5.1-5.9; PULMICORT FLEXHALER sections 5.1-5.9; RHINOCORT AQUA sections 5.1-5.7; UCERIS sections 5.1-5.4; ENTOCORT EC Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA ENTOCORT EC Precautions; PULMICORT FLEXHALER section 4; UCERIS section 8.6; RHINOCORT AQUA section 5.1; respective labels section 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA PULMICORT RESPULES section 5; PULMICORT FLEXHALER section 5; ENTOCORT EC Warnings and Precautions; UCERIS sections 5.1-5.4; RHINOCORT AQUA section 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA UCERIS section 12.3; ENTOCORT EC Pharmacokinetics and Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92cbb190-8851-46ed-bfe0-166ca62ef2e9"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA RHINOCORT AQUA section 8.1 (Category B); FDA ENTOCORT EC Pregnancy (Category C)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffca32a2-fbef-40bb-b0f0-73f63e18e747"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA RHINOCORT AQUA section 8.1; PULMICORT labels section 8.1; ENTOCORT EC Pregnancy; UCERIS section 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffca32a2-fbef-40bb-b0f0-73f63e18e747"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA PULMICORT labels section 8.2; UCERIS section 8.2; ENTOCORT EC Nursing Mothers; RHINOCORT AQUA section 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA ENTOCORT EC Overdosage; PULMICORT labels section 10; UCERIS section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA ENTOCORT EC Pharmacokinetics; PULMICORT labels section 12.3; UCERIS section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA PULMICORT RESPULES sections 2.1 and 17; PULMICORT FLEXHALER sections 2.1 and 17; ENTOCORT EC Dosage and Administration; UCERIS sections 2.1 and 12.3; RHINOCORT AQUA section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for Pulmicort Respules/Flexhaler (AstraZeneca), Entocort EC, Uceris (Salix), Rhinocort Aqua (AstraZeneca), and generic budesonide products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=budesonide"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA PULMICORT RESPULES, PULMICORT FLEXHALER, ENTOCORT EC, UCERIS, or RHINOCORT AQUA labels (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA ENTOCORT EC Pharmacokinetics; UCERIS section 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA ENTOCORT EC Dosage and Administration and Pharmacokinetics; UCERIS section 8.6; PULMICORT labels section 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98a4eca1-904c-4355-957a-b5a141573cc2"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA PULMICORT RESPULES section 2; PULMICORT FLEXHALER section 2.1; ENTOCORT EC Dosage and Administration; UCERIS section 2.1; RHINOCORT AQUA section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33cd9834-76df-4f26-3fa2-aab6b9eee8f2"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Budesonide'. This monograph covers the principal FDA-approved budesonide formulations: PULMICORT RESPULES nebulizer suspension (asthma, children 12 months to 8 years), PULMICORT FLEXHALER inhalation powder (asthma, 6 years and older), ENTOCORT EC pH-dependent capsules (Crohn's disease), UCERIS extended-release tablets (ulcerative colitis), and RHINOCORT AQUA nasal spray (allergic rhinitis). These are distinct products and are not interchangeable; the indication and dosing text identifies the formulation. The label versions used are: PULMICORT RESPULES (current), PULMICORT FLEXHALER (revised 07/2025), ENTOCORT EC (2012 repackaged label, the most recent available on DailyMed), UCERIS (current), RHINOCORT AQUA (revised 2/2012). The ENTOCORT EC US product has been discontinued in some markets; the label remains the FDA reference for oral pH-dependent budesonide. No boxed warning is present on any of these labels. Pregnancy letter categories differ by formulation and route, so the field reports both rather than a single value."
+}

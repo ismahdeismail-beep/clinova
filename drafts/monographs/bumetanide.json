@@ -1,0 +1,181 @@
+{
+  "name": "Bumetanide",
+  "existing_id": "b5fce01a-84c0-49c4-9ee8-f3bc4c4c525a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bumetanide is a loop diuretic that inhibits sodium reabsorption in the ascending limb of the loop of Henle, as shown by marked reduction of free-water clearance and tubular free-water reabsorption. It also blocks chloride reabsorption and has additional proximal tubular activity including phosphaturia. It does not appear to inhibit carbonic anhydrase (FDA Bumetanide label, section 5.1; CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Treatment of edema associated with congestive heart failure, hepatic and renal disease including the nephrotic syndrome (FDA Bumetanide label, section 1)"
+    ],
+    "contraindications": [
+      "Anuria (FDA Bumetanide label, section 4); Bumetanide is also contraindicated in patients in hepatic coma or in states of severe electrolyte depletion until the condition is improved or corrected (section 4); hypersensitivity to this drug (section 4)"
+    ],
+    "side_effects": [
+      "Most frequent clinical adverse reactions: muscle cramps (1.1%), dizziness (1.1%), hypotension (0.8%), headache (0.6%), nausea (0.6%), encephalopathy in patients with pre-existing liver disease (0.6%) (1.1% of patients) (section 6.1); Less frequent: impaired hearing (0.5%), pruritus (0.4%), ECG changes (0.4%), weakness (0.2%), hives (0.2%), abdominal pain (0.2%), arthritic pain (0.2%), musculoskeletal pain (0.2%), rash (0.2%), vomiting (0.2%) (~2.9% of patients) (section 6.1); Other clinical adverse reactions occurring in ~0.1%: vertigo, chest pain, ear discomfort, fatigue, dehydration, sweating, hyperventilation, dry mouth, upset stomach, renal failure, asterixis, itching, nipple tenderness, diarrhea, premature ejaculation, difficulty maintaining erection (section 6.1); Serious skin reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis have been reported (section 6.1)"
+    ],
+    "dosage": {
+      "adult": "Usual total daily dosage 0.5 mg to 2 mg given as a single dose. If response is not adequate, a second or third dose may be given at 4- to 5-hour intervals up to a maximum daily dose of 10 mg. An intermittent dose schedule (alternate days or 3-4 days with rest periods of 1-2 days in between) is recommended as the safest and most effective method for continued control of edema (FDA Bumetanide label, Dosage and Administration).",
+      "maximum": "Maximum daily dose 10 mg; intermittent dosing schedule recommended as safest and most effective method"
+    },
+    "adult_dosing": "Initial total daily dose 0.5 mg to 2 mg orally as a single dose; may increase up to 10 mg daily in divided doses at 4- to 5-hour intervals if needed. Intermittent schedule (alternate days or 3-4 days on with 1-2 days rest) is recommended as safest and most effective method (FDA Bumetanide label, Dosage and Administration).",
+    "pediatric_dosing": "Safety and effectiveness in pediatric patients below the age of 18 have not been established (FDA Bumetanide label, section 8.4; Pediatric Pharmacology). In neonates/infants, elimination is considerably slower (apparent half-life ~6 hours in preterm neonates, range up to 15 hours); pediatric dosing must be cautious and monitored (section 8.4; Pediatric Pharmacology).",
+    "interactions": [
+      "Indomethacin blunts the increases in urine volume and sodium excretion seen during Bumetanide treatment and inhibits the bumetanide-induced increase in plasma renin activity; concurrent therapy is not recommended (section 7); Antihypertensives: Bumetanide may potentiate the effect of various antihypertensive drugs, necessitating a dosage reduction (section 7); Digoxin: interaction studies show no effect on digoxin blood levels (section 7); Anticoagulants: no effect on warfarin metabolism or plasma prothrombin activity (section 7); Lithium: should generally not be given with diuretics because they reduce its renal clearance and add a high risk of lithium toxicity (section 7); Probenecid: pretreatment reduces both the natriuresis and hyperreninemia produced by Bumetanide (section 7)"
+    ],
+    "monitoring": "Serum potassium should be measured periodically and potassium supplements or potassium-sparing diuretics added if necessary. Periodic determinations of other electrolytes are advised, particularly in patients on low-salt diets or treated with high doses or for prolonged periods. Periodic determinations of blood sugar should be done, particularly in patients with diabetes or suspected latent diabetes. Patients under treatment should be observed regularly for possible occurrence of blood dyscrasias, liver damage or idiosyncratic reactions (section 5).",
+    "patient_counselling": "Serum potassium should be monitored and supplements added if needed. Avoid low-salt diets without supplementation. Report blood dyscrasias, liver damage, or idiosyncratic reactions. Observe for signs of ototoxicity, particularly with IV therapy and renal impairment. Diuresis starts within 30-60 minutes orally; peak effect 1-2 hours. Avoid concurrent use with aminoglycosides except in life-threatening conditions when renal function is impaired (section 5; WARNINGS).",
+    "warnings": [
+      "Volume and Electrolyte Depletion: dose should be adjusted to patient need; excessive doses or too frequent administration can lead to profound water loss, electrolyte depletion, dehydration, reduction in blood volume and circulatory collapse, particularly in elderly patients (section 5); Hypokalemia: can occur with digitalis and diuretics for CHF, hepatic cirrhosis and ascites, states of aldosterone excess, potassium-losing nephropathy, certain diarrheal states, or history of ventricular arrhythmias (section 5); Ototoxicity: potential risk with IV therapy especially at high doses repeated frequently with renal impairment; aminoglycoside ototoxicity potentiation possible (section 5); Allergy to Sulfonamides: patients allergic to sulfonamides may show hypersensitivity to Bumetanide (section 5); Thrombocytopenia: observe regularly for possible occurrence (section 5)"
+    ],
+    "precautions": [
+      "Serum potassium should be measured periodically and potassium supplements or potassium-sparing diuretics added if necessary. Periodic determinations of other electrolytes are advised in patients treated with high doses or for prolonged periods, particularly in those on low-salt diets (section 5); Hyperuricemia may occur and has been asymptomatic; reversible elevations of BUN and creatinine may occur, especially with dehydration and particularly in renal insufficiency (section 5); Diuretics have been shown to increase urinary excretion of magnesium; this may result in hypomagnesemia (section 5); Laboratory tests: periodic blood sugar particularly in patients with diabetes or suspected latent diabetes (section 5); Patients should be observed regularly for possible occurrence of blood dyscrasias, liver damage or idiosyncratic reactions (section 5)"
+    ],
+    "serious_adverse_reactions": [
+      "Profound water loss, volume and electrolyte depletion, dehydration, reduction of blood volume and circulatory collapse with possibility of vascular thrombosis and embolism; electrolyte depletion manifested by weakness, dizziness, mental confusion, anorexia, lethargy, vomiting and cramps (section 6.1, OVERDOSAGE); Serious skin reactions: Stevens-Johnson syndrome, toxic epidermal necrolysis (section 6.1)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "There are no adequate and well-controlled studies in pregnant women. A small investigational experience and marketing experience in other countries have not indicated evidence of adverse effects on the fetus, but these data do not rule out the possibility of harmful effects. Bumetanide should be given to a pregnant woman only if the potential benefit justifies the potential risk to the fetus (FDA Bumetanide label, section 8.1; Reproduction studies).",
+    "pregnancy_guidance": "Reproduction studies in rats at oral dose levels of 10, 30, 60 or 100 mg/kg/day showed slightly decreased pregnancy rate (small differences, not statistically significant). Teratogenic Effects: Bumetanide is neither teratogenic nor embryocidal in mice at doses up to 3400 times the maximum human therapeutic dose. It has a slight embryocidal effect in rats at 3400 times the MRHD and in rabbits at 3.4 times the MRHD. No fetotoxicity was observed at 1000 to 2000 times the human therapeutic dose. Bumetanide was not teratogenic in hamsters at 0.5 mg/kg/day (17 times the MRHD). There are no adequate and well-controlled studies in pregnant women (section 8.1; Reproduction studies).",
+    "lactation_guidance": "It is not known whether this drug is excreted in human milk. As a general rule, nursing should not be undertaken while the patient is on Bumetanide since it may be excreted in human milk (FDA Bumetanide label, section 8.2; Nursing Mothers).",
+    "overdose": "Overdosage can lead to acute profound water loss, volume and electrolyte depletion, dehydration, reduction of blood volume and circulatory collapse with a possibility of vascular thrombosis and embolism. Electrolyte depletion may be manifested by weakness, dizziness, mental confusion, anorexia, lethargy, vomiting and cramps. Treatment consists of replacement of fluid and electrolyte losses by careful monitoring of the urine and electrolyte output and serum electrolyte levels (section 10; OVERDOSAGE).",
+    "pharmacokinetics": "Bumetanide, administered orally or parenterally, is eliminated rapidly in humans, with a half-life of between 1 and 1½ hours. Plasma protein-binding is in the range of 94% to 96%. Oral administration of carbon-14 labeled Bumetamide to human volunteers revealed that 81% of the administered radioactivity was excreted in the urine, 45% of it as unchanged drug. Biliary excretion amounted to only 2% of the administered dose. In neonatal patients, elimination is considerably slower (apparent half-life ~6 hours in preterm neonates, range up to 15 hours) (section 5.2; CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Oral and parenteral administration produce almost equal diuretic response; if GI absorption is impaired, use IM or IV route (section 1). Cross-sensitivity with furosemide is rare; can substitute bumetanide at approximately 1:40 ratio relative to furosemide in patients allergic to furosemide (section 1). In pediatric patients, elimination is considerably slower; dosing must be cautious and monitored (section 8.4; Pediatric Pharmacology). In geriatric patients, total clearance was significantly lower (1.8 mL/min·kg vs 2.9 in younger subjects); start at low end of dosing range (section 8.5).",
+      "Cross-sensitivity with furosemide has rarely been observed; bumetanide can be substituted at approximately a 1:40 ratio of bumetanide in proportion to furosemide in patients allergic to furosemide (section 1)."
+    ],
+    "brand_names": ["Bumex (Validus Pharmaceuticals)", "Bumetanide tablets (generic)"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "This drug is known to be substantially excreted by the kidney, and the risk of toxic reactions may be greater in patients with impaired renal function. Care should be taken in dose selection, and it may be useful to monitor renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection (section 8.7; Use in Specific Populations).",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is provided. Because bumetanide is substantially excreted by the kidney and has minimal hepatic metabolism, dose adjustment is primarily driven by renal function rather than hepatic impairment (section 8.7; CLINICAL PHARMACOLOGY).",
+    "administration_instructions": "Oral Administration: The usual total daily dosage of Bumex tablets is 0.5 mg to 2 mg and in most patients is given as a single dose. If the diuretic response to an initial dose is not adequate, a second or third dose may be given at 4- to 5-hour intervals up to a maximum daily dose of 10 mg. An intermittent dose schedule (alternate days or 3-4 days with rest periods of 1 to 2 days in between) is recommended as the safest and most effective method for the continued control of edema. In patients with hepatic failure, keep the dosage to a minimum. Parenteral Administration: Bumetanide injection may be administered parenterally (intravenously and intramuscularly) to patients in whom gastrointestinal absorption may be impaired or in whom oral administration is not practical. Terminate parenteral treatment and institute oral treatment as soon as possible (section 10; Dosage and Administration)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA Bumetanide label, section 5.1; CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA Bumetanide label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA Bumetanide label, sections 4-4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA Bumetanide label, sections 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA Bumetanide label, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA Bumetanide label, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA Bumetanide label, sections 8.4 and Pediatric Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA Bumetanide label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA Bumetanide label, sections 5 and 8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA Bumetanide label, sections 5 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA Bumetanide label, sections 5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA Bumetanide label, sections 5 and 8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA Bumetanide label, sections 6.1 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA Bumetanide label, section 7 (no food interactions specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA Bumetanide label, section 8.1; Reproduction studies (rats, rabbits, hamsters)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA Bumetanide label, section 8.1; Reproduction studies",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA Bumetanide label, section 8.2; Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA Bumetanide label, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA Bumetanide label, sections 5.2 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA Bumetanide label, sections 1, 5, 8.4, 8.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for Bumetanide products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=bumetanide"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA Bumetanide label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA Bumetanide label, sections 8.7 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA Bumetanide label, sections 8.7 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA Bumetanide label, sections 1 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32dfbea3-eb2b-4070-8605-57ce3e6d5a2f"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Bumetanide'. This monograph is sourced from the FDA Bumetanide (bumetanide) label as available on DailyMed (setid 32dfbea3-eb2b-4070-8605-57ce3e6d5a2f, Validus Pharmaceuticals LLC). No boxed warning appears. Pregnancy category is retained as a narrative PLLR reference rather than a letter category. Nursing Mothers section states it may be excreted in human milk; a general rule is to avoid nursing while on Bumetanide. Geriatric patients have significantly lower clearance; start at low end of dosing range. Cross-sensitivity with furosemide is rare; bumetanide can be substituted at approximately 1:40 ratio relative to furosemide in patients allergic to furosemide. Serious skin reactions (SJS/TEN) have been reported postmarketing."
+}

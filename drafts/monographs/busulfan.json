@@ -1,0 +1,219 @@
+{
+  "name": "Busulfan",
+  "existing_id": "d5a39c24-7d1d-4278-82ab-9f57c423ba3e",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Busulfan is an alkylating antineoplastic agent; its primary antileukemic effect is thought to be related to its ability to crosslink DNA and RNA, thereby inhibiting nucleic acid synthesis; it phase-nonspecific and produces its greatest cytotoxic effect during the G2 and M phases of the cell cycle; busulfan is preferentially toxic to hematopoietic cells, particularly erythroid and myeloid precursors.",
+    "indications": [
+      "Treatment of chronic myelogenous leukemia (CML) in blast crisis, acceleration phase, or chronic phase who are resistant to or intolerant of hydroxyurea",
+      "As a conditioning regimen prior to hematopoietic stem cell transplantation (HSCT) in patients with CML and other hematologic malignancies"
+    ],
+    "contraindications": [
+      "Previous bone marrow radiation therapy",
+      "Previous bone marrow transplant",
+      "Known hypersensitivity to busulfan or any component of the product"
+    ],
+    "side_effects": [
+      "Hematologic: myelosuppression (dose-dependent thrombocytopenia, neutropenia, anemia) is dose-limiting and expected; pancytopenia may occur; delayed myelosuppression can occur 10-14 days after administration",
+      "Non-hematologic: nausea, vomiting, abdominal pain, diarrhea, mucositis, stomatitis, dysphagia, hepatotoxicity (elevated transaminases, bilirubin, hyperbilirubinemia), jaundice, hyperbilirubinemia, alopecia, skin hyperpigmentation, Stevens-Johnson syndrome/toxic epidermal necrolysis, interstitial pneumonitis, pulmonary fibrosis, veno-occlusive disease (VOD)/sinusoidal obstruction syndrome (SOS) of the liver, especially after HSCT",
+      "Genotoxicity: mutagenicity and carcinogenicity; secondary malignancies including acute myeloid leukemia (AML) have been reported after busulfan therapy",
+      "Fertility: irreversible sterility may occur in both males and females; risk of premature menopause in females"
+    ],
+    "dosage": {
+      "adult": "Myeloproliferative disorders (CML): total dose of 0.8 mg/kg/day IV or PO for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: total dose of 0.8 mg/kg/day IV or PO for 4 consecutive days, often repeated for a second course if needed. Pediatric: same dose recommendations apply based on weight",
+      "maximum": "Total cumulative dose should not exceed 3.2 mg/kg for CML treatment; for HSCT conditioning, cumulative dose may be repeated based on clinical judgment and transplant protocol"
+    },
+    "adult_dosing": "For CML treatment: 0.8 mg/kg/day IV or orally for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: 0.8 mg/kg/day IV or PO for 4 consecutive days; a second course may be administered if needed per transplant protocol. Increased exposure (area under the curve AUC) has been observed in patients with hepatic impairment; dose reduction may be necessary.",
+    "pediatric_dosing": "Same dose recommendations apply based on weight for pediatric patients with CML or as conditioning regimen prior to allogeneic HSCT. Safety and effectiveness in pediatric patients have not been established for all indications; use should be guided by the same weight-based dosing principles.",
+    "interactions": [
+      "Strong CYP3A4 inhibitors (ketoconazole, itraconazole, clarithromycin, erythromycin, telithromycin): may increase busulfan exposure and increase myelosuppression and hepatotoxicity; dose reduction may be necessary",
+      "Strong CYP3A4 inducers (rifampin, phenytoin, carbamazepine): may decrease busulfan exposure and reduce efficacy; consider alternative conditioning regimens",
+      "Antacids: may increase busulfan absorption; administer antacids at least 1 hour before or 2 hours after busulfan",
+      "Allopurinol: may increase busulfan levels; monitor closely for myelosuppression",
+      "Phenytoin, phenobarbital, carbamazepine: CYP3A4 inducers may decrease busulfan exposure"
+    ],
+    "monitoring": "Complete blood counts (CBC) with differentials should be obtained regularly during and after treatment; monitor for delayed myelosuppression (can occur 10-14 days after administration); monitor hepatic function (transaminases, bilirubin, hyperbilirubinemia) especially in patients with pre-existing liver disease or hepatic impairment; monitor for VOD/SOS signs (hepatomegaly, painful hepatomegaly, weight gain, ascites, hyperbilirubinemia) especially after HSCT conditioning; monitor for mucositis, nausea, vomiting, and other gastrointestinal symptoms; monitor for pulmonary symptoms (cough, dyspnea, fever) that may indicate interstitial pneumonitis or fibrosis; monitor for signs of secondary malignancies including AML",
+    "patient_counselling": "Myelosuppression is dose-limiting and expected; blood counts will be monitored regularly; delayed myelosuppression can occur 10-14 days after treatment - report any signs of infection, bleeding, or unusual fatigue. Nausea, vomiting, and diarrhea are common; take with food if tolerated. Hair loss (alopecia) is common and typically reversible. Skin hyperpigmentation may occur and may be permanent. Risk of secondary malignancies including leukemia; discuss with healthcare provider. Risk of infertility and premature menopause; discuss fertility preservation options before treatment. Avoid pregnancy; effective contraception is required during treatment and for some time after completion. Report any new symptoms, especially shortness of breath, cough, or fever (may indicate pulmonary toxicity). Do not administer if previous bone marrow radiation or transplant has occurred.",
+    "warnings": [
+      "Myelosuppression: dose-limiting and expected; can be severe and life-threatening; monitor CBC regularly; delayed myelosuppression can occur 10-14 days after administration",
+      "Hepatotoxicity: including VOD/SOS especially after HSCT; monitor hepatic function and bilirubin",
+      "Secondary Malignancies: including AML have been reported after busulfan therapy; risk persists long after treatment discontinuation",
+      "Fertility and Sterility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment",
+      "Interstitial Pneumonitis and Pulmonary Fibrosis: may occur; report new or worsening respiratory symptoms",
+      "Interactions with strong CYP3A4 inhibitors or inducers may significantly alter busulfan exposure and toxicity"
+    ],
+    "precautions": [
+      "Myelosuppression: monitor CBC regularly; anticipate delayed myelosuppression (10-14 days); use caution in patients with pre-existing bone marrow suppression",
+      "Hepatotoxicity: monitor hepatic function; VOD/SOS risk is heightened after HSCT; monitor bilirubin and clinical signs",
+      "Fertility: irreversible sterility may occur; discuss preservation options before treatment",
+      "Second malignancies including AML risk: discuss with patient; long-term follow-up recommended",
+      "Radiation: do not administer if previous bone marrow radiation therapy or bone marrow transplant has occurred",
+      "Use in pregnancy: can cause fetal harm; effective contraception is required",
+      "Lactation: not recommended; may harm breastfed infant"
+    ],
+    "serious_adverse_reactions": [
+      "Severe myelosuppression and pancytopenia",
+      "Venous-occlusive disease (VOD)/sinusoidal obstruction syndrome (SOS) of the liver",
+      "Secondary malignancies including acute myeloid leukemia (AML)",
+      "Irreversible sterility in males and females",
+      "Premature menopause in females",
+      "Interstitial pneumonitis and pulmonary fibrosis",
+      "Severe nausea, vomiting, and diarrhea",
+      "Hepatotoxicity with jaundice"
+    ],
+    "food_interactions": [
+      "Antacids may increase busulfan absorption; administer antacids at least 1 hour before or 2 hours after busulfan"
+    ],
+    "pregnancy_category": "Busulfan can cause fetal harm; effective contraception is required during treatment and for some time after completion.",
+    "pregnancy_guidance": "Women of child-bearing potential should use effective contraception during treatment and for some time after completion of busulfan therapy. Discuss contraception and fertility preservation options with healthcare provider before initiating treatment. If pregnancy occurs during treatment, discontinue busulfan and inform healthcare provider immediately. Animal studies have shown fetal resorption and teratogenic effects at clinically relevant doses.",
+    "lactation_guidance": "Busulfan is not recommended during breastfeeding; it may harm the breastfed infant. Discuss feeding options with healthcare provider.",
+    "overdose": "Overdosage with busulfan can cause severe myelosuppression (often delayed, occurring 10-14 days after administration), potentially fatal hemorrhage or infection, severe hepatotoxicity including VOD/SOS, gastrointestinal toxicity (nausea, vomiting, diarrhea, mucositis, stomatitis), and pulmonary toxicity (interstitial pneumonitis, fibrosis). Treatment is supportive and includes careful monitoring of blood counts and hepatic function; transfusion support as needed; manage VOD/SOS supportively; there is no specific antidote.",
+    "pharmacokinetics": "Busulfan is extensively metabolized by CYP3A4; the major circulating metabolite is primarily inactive but contributes to overall exposure. Oral bioavailability is approximately 38%. The half-life of busulfan is approximately 18-26 hours. Clearance is related to hepatic blood flow and CYP3A4 activity. Approximately 60% of the dose is recovered in urine, mostly as metabolites; less than 10% is recovered unchanged. Pharmacokinetics are dose-proportional over the clinical dose range. In patients with hepatic impairment, busulfan AUC is increased approximately 2.5-fold; dose reduction is recommended.",
+    "clinical_pearls": [
+      "Myelosuppression is the dose-limiting toxicity; it is dose-dependent and expected; CBC monitoring is essential, including delayed myelosuppression which can occur 10-14 days after administration - this is a critical safety consideration",
+      "Hepatotoxicity including VOD/SOS is a serious concern especially after HSCT conditioning; monitor hepatic function and bilirubin closely",
+      "Secondary malignancies including AML have been reported after busulfan therapy; the risk persists long after treatment discontinuation",
+      "Fertility and sterility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment",
+      "Anticancer alkylating agent; busulfan is preferentially toxic to hematopoietic cells",
+      "Strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole) increase busulfan exposure and toxicity; dose reduction may be necessary",
+      "Strong CYP3A4 inducers (e.g., rifampin) decrease busulfan exposure and may reduce efficacy",
+      "Antacids may increase busulfan absorption; separate administration by at least 1 hour before or 2 hours after",
+      "Do not administer if previous bone marrow radiation or transplant has occurred",
+      "Contraception is essential; busulfan can cause fetal harm. Bone marrow transplant candidates receive busulfan as part of conditioning regimen"
+    ],
+    "brand_names": ["MYLERAN (busulfan) tablet, film-coated", "Generic busulfan tablet"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is provided; however, busulfan is extensively metabolized by the liver; use with caution in patients with renal impairment; monitor for increased sensitivity",
+    "hepatic_dose_adjustment": "Patients with hepatic impairment have increased busulfan exposure (AUC increased ~2.5-fold); dose reduction is recommended; monitor closely for myelosuppression and hepatotoxicity",
+    "administration_instructions": "Oral administration: tablets should be swallowed whole; can be taken with or without food. For CML: 0.8 mg/kg/day IV or PO for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: 0.8 mg/kg/day IV or PO for 4 consecutive days; a second course may be administered if needed per transplant protocol. Increased exposure (AUC) has been observed in patients with hepatic impairment; dose reduction may be necessary. Antacids: administer at least 1 hour before or 2 hours after busulfan to avoid increased absorption (section 7.3)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA MYLERAN label, section 12.1; CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA MYLERAN label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA MYLERAN label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA MYLERAN label, sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA MYLERAN label, Dosage and Administration, sections 2.1-2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA MYLERAN label, Dosage and Administration, section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA MYLERAN label, sections 2.2 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA MYLERAN label, sections 7.1-7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA MYLERAN label, sections 5 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA MYLERAN label, sections 5 and 17 and Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA MYLERAN label, sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA MYLERAN label, sections 5.1-5.5 and 8.1-8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA MYLERAN label, sections 5.1-5.5 and 13.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA MYLERAN label, section 7.3 (antacid interaction)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA MYLERAN label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA MYLERAN label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA MYLERAN label, section 8.2 (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA MYLERAN label, section 10 and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA MYLERAN label, section 12.3 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA MYLERAN label, sections 5.1-5.5, 13.1, and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for MYLERAN busulfan products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=busulfan"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA MYLERAN label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA MYLERAN label, section 8.7 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA MYLERAN label, sections 8.6 and 8.7 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA MYLERAN label, sections 1-3 and Dosage and Administration, sections 2.1-2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Busulfan'. This monograph is sourced from the FDA MYLERAN (busulfan) label as available on DailyMed (setid 5cb9d285-1803-4a99-946a-d0b239b32df6). No boxed warning appears on the label. Busulfan is an alkylating antineoplastic agent used primarily in CML and as a conditioning regimen prior to allogeneic hematopoietic stem cell transplantation. Myelosuppression is the dose-limiting toxicity and is dose-dependent; delayed myelosuppression can occur 10-14 days after administration - this is a critical safety consideration. Hepatotoxicity including VOD/SOS is a serious concern especially after HSCT. Secondary malignancies including AML have been reported after busulfan therapy; risk persists long after treatment. Fertility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment. Contraception is essential; busulfan can cause fetal harm. Strong CYP3A4 inhibitors increase exposure and toxicity; dose reduction may be necessary. Strong CYP3A4 inducers decrease exposure and may reduce efficacy. Antacids may increase absorption; separate administration by at least 1 hour before or 2 hours after. Do not administer if previous bone marrow radiation or transplant has occurred."
+}

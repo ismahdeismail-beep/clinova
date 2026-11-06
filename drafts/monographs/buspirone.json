@@ -1,0 +1,185 @@
+{
+  "name": "Buspirone",
+  "existing_id": "cd531492-edd0-43df-84a7-cbb5f54ef04a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Buspirone is an azaspirodecanedione derivative with an unknown exact mechanism of action; it is presumed to act as a partial agonist at 5-HT1A autoreceptors and postsynaptic receptors, and may also interact with dopamine D2 receptors; it has no significant affinity for GABA, opiate, muscarinic, histamine H1, or alpha-1 adrenergic receptors; unlike benzodiazepines, it has no immediate anxiolytic effect and may take 2-4 weeks of continuous therapy to achieve full effect (FDA BUSPAR label, section 12.1; CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Anxiety disorders (FDA BUSPAR label, section 1); Muscle tension and psychological symptoms of anxiety (section 1)"
+    ],
+    "contraindications": [
+      "Monoamine oxidase inhibitor (MAOI) usage within the past 14 days: contraindicated because of risk of serious adverse reactions including serotonin syndrome and hypertensive crisis (FDA BUSPAR label, section 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (at least 1% of patients): dizziness, headache, nausea, nervousness, lightheadedness, excitement, insomnia, asthenia, blurred vision,confusion (section 6.1); Less common: euphoria, abnormal thinking, anxiety, agitation, nervousness, insomnia, dream abnormalities, paresthesia, dry mouth, constipation, diarrhea, rash, hypersensitivity reactions (section 6.1); Postmarketing: dyskinesia, extrapyramidal symptoms reported rarely (section 6.2)"
+    ],
+    "dosage": {
+      "adult": "Initial dose 5 mg twice daily; may increase by 5 mg increments every 2-3 days as needed. Recommended maintenance dose range 15 mg to 60 mg per day in divided doses (usually 5 mg to 15 mg three to four times daily). Do not exceed 60 mg per day (FDA BUSPAR label, Dosage and Administration).",
+      "maximum": "Do not exceed 60 mg per day"
+    },
+    "adult_dosing": "Start 5 mg twice daily; increase by 5 mg increments every 2-3 days as needed to a recommended maintenance range of 15 mg to 60 mg per day in divided doses (usually 5 mg to 15 mg three to four times daily). Some patients may require up to 60 mg per day. Titrate slowly to achieve anxiolytic effect, which may take 2-4 weeks of continuous therapy (FDA BUSPAR label, Dosage and Administration).",
+    "pediatric_dosing": "Safety and effectiveness in pediatric patients have not been established (section 8.4).",
+    "interactions": [
+      "Monoamine oxidase inhibitors (MAOIs): contraindicated if used within the past 14 days (section 4 and 5.1); Strong CYP3A4 inhibitors (ketoconazole, itraconazole, clarithromycin, erythromycin, telithromycin): may increase buspirone plasma concentrations and increase risk of adverse reactions; avoid concomitant use or reduce buspirone dose (section 7.1); Strong CYP3A4 inducers (rifampin): may decrease buspirone plasma concentrations and reduce anxiolytic effect; consider alternate agents (section 7.2); Digoxin: no significant interaction anticipated but monitor (section 7.3); Zoloft/Sertraline: no significant interaction anticipated but monitor (section 7.4)"
+    ],
+    "monitoring": "Monitor for anxiolytic effect, which may take 2-4 weeks of continuous therapy; monitor for emergence or worsening of anxiety or insomnia; monitor for dizziness, lightheadedness, especially upon standing (orthostatic effects); monitor for signs of serotonin syndrome if combined with SSRIs, SNRIs, or MAOIs; monitor hepatic function; monitor for extrapyramidal symptoms or dyskinesia rare postmarketing (sections 5 and 6)",
+    "patient_counselling": "Take buspirone exactly as prescribed; do not stop abruptly; it may take 2-4 weeks of continuous therapy to achieve full anxiolytic effect; avoid grapefruit and grapefruit juice as they may increase buspirone levels; inform healthcare provider about all other medicines being taken, especially MAOIs, other antidepressants, or antifungal agents; avoid driving or operating machinery until effects are known (may cause dizziness or lightheadedness); alcohol may increase drowsiness; report any new or worsening symptoms, mood changes, or muscle movements to healthcare provider immediately (section 17; Patient Counseling Information).",
+    "warnings": [
+      "Risk of serotonin syndrome when used with MAOIs, SSRIs, SNRIs, or other serotonergic drugs (section 5.1); Orthostatic effects: dizziness and lightheadedness may occur, especially when starting therapy or increasing dose; use caution when changing positions (section 5.2); Discontinuation: do not stop abruptly; discuss taper with healthcare provider (section 8.1); MAOI interaction: do not use within 14 days of MAOI use; risk of serious adverse reactions including serotonin syndrome and hypertensive crisis (section 4 and 5.1)"
+    ],
+    "precautions": [
+      "Use with caution in patients with renal or hepatic impairment; monitor for increased sensitivity (section 8.7); Use with caution in elderly patients; start at low dose and titrate slowly (section 8.5); Safety in pregnancy and lactation has not been established; discuss with healthcare provider (section 8.1-8.3); Do not use with MAOIs within 14 days (section 4 and 5.1)"
+    ],
+    "serious_adverse_reactions": [
+      "Serotonin syndrome (particularly when combined with serotonergic drugs)",
+      "Extrapyramidal symptoms or dyskinesia (rare postmarketing)",
+      "Severe allergic reactions"
+    ],
+    "food_interactions": [
+      "Avoid grapefruit and grapefruit juice as they may increase buspirone plasma concentrations (FDA BUSPAR label, section 7 and Pharmacokinetics)"
+    ],
+    "pregnancy_category": "There are no adequate and well-controlled studies in pregnant women. Buspirone should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA BUSPAR label, section 8.1; Pregnancy). Animal reproduction studies have been conducted at clinically relevant doses and have not shown fetal harm at up to 45 mg/kg/day (approximately 6 times the maximum recommended human dose on a mg/m2 basis), but the full risk is not known (section 8.1).",
+    "pregnancy_guidance": "There are no adequate and well-controlled studies in pregnant women. Buspirone should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Animal studies have not shown fetal harm at up to 45 mg/kg/day, but the full risk is not known. Discuss with healthcare provider (section 8.1; Pregnancy).",
+    "lactation_guidance": "It is not known whether buspirone is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when buspirone is administered to a breastfeeding mother. Discuss with healthcare provider (FDA BUSPAR label, section 8.2; Nursing Mothers).",
+    "overdose": "There is limited information on buspirone overdose. In case of overdose, treatment consists of general supportive measures including monitoring of vital signs and symptomatic treatment. Dialysis is not expected to significantly remove buspirone due to extensive tissue distribution. Monitor for dizziness, drowsiness, nausea, vomiting, and in severe cases, hallucinations or agitation (FDA BUSPAR label, section 10; OVERDOSAGE).",
+    "pharmacokinetics": "Buspirone is almost completely absorbed after oral administration; food may slightly delay the rate of absorption. Peak plasma concentrations occur approximately 1-2 hours after dosing. Buspirone is extensively metabolized by CYP3A4 to two major metabolites, 1-pyrimidylpiperazine (1-PP) and 5-carboxypyrimidine (5-CP). The half-life of buspirone is approximately 2-3 hours; however, clinical anxiolytic effect may take 2-4 weeks of continuous therapy. Steady-state is achieved in 2-7 days. Plasma protein binding is approximately 90%. Approximately 80% of a dose is recovered in urine, mostly as metabolites; less than 1% is recovered as unchanged drug (section 12.3; CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Buspirone has no immediate anxiolytic effect; it may take 2-4 weeks of continuous therapy to achieve full anxiolytic effect (section 12.1 and 2). Unlike benzodiazepines, buspirone has no muscle relaxant, anticonvulsant, or sedative-hypnotic properties and is not a controlled substance (section 1). Avoid grapefruit and grapefruit juice as they may increase buspirone plasma concentrations by inhibiting CYP3A4 (section 7 and Pharmacokinetics). The risk of serotonin syndrome increases when buspirone is combined with SSRIs, SNRIs, MAOIs, or other serotonergic drugs (section 5.1). Buspirone is not effective for acute anxiety or as a sedative/hypnotic; it is intended for ongoing anxiety disorder management. Buspirone is not a dopamine blocker and does not produce typical antipsychotic or benzodiazepine-like effects. Monitor for orthostatic dizziness, especially when starting or increasing dose (section 5.2).",
+      "Do not use within 14 days of MAOI use; risk of serious adverse reactions including serotonin syndrome and hypertensive crisis (section 4 and 5.1)."
+    ],
+    "brand_names": ["BUSPAR (buspirone hydrochloride) tablet", "Generic buspirone hydrochloride"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is provided; use with caution in patients with renal impairment; monitor for increased sensitivity to effects (section 8.7; PRECAUTIONS).",
+    "hepatic_dose_adjustment": "Use with caution in patients with hepatic impairment; monitor for increased sensitivity; no specific dose adjustment guideline (section 8.7; PRECAUTIONS).",
+    "administration_instructions": "Administer orally; may be taken with or without food. Start 5 mg twice daily; increase by 5 mg increments every 2-3 days as needed to a recommended maintenance range of 15 mg to 60 mg per day in divided doses (usually 5 mg to 15 mg three to four times daily). Do not exceed 60 mg per day (section 2; Dosage and Administration). Avoid grapefruit and grapefruit juice (section 7)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA BUSPAR label, section 12.1; CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA BUSPAR label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA BUSPAR label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA BUSPAR label, sections 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA BUSPAR label, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA BUSPAR label, Dosage and Administration, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA BUSPAR label, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA BUSPAR label, sections 4, 5.1, 7.1-7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA BUSPAR label, sections 5 and 6 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA BUSPAR label, section 17 and Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA BUSPAR label, sections 4-5.2 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA BUSPAR label, sections 8.1-8.7 and PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA BUSPAR label, sections 5.1 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA BUSPAR label, section 7 (grapefruit juice interaction)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA BUSPAR label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA BUSPAR label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA BUSPAR label, section 8.2 (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA BUSPAR label, section 10 and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA BUSPAR label, section 12.3 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA BUSPAR label, sections 12.1, 2, 5.1-5.2, 7, 8.1-8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for BUSPAR buspirone products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=buspirone"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA BUSPAR label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA BUSPAR label, section 8.7 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA BUSPAR label, section 8.7 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA BUSPAR label, sections 1-3 and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33accd6b-10a6-5bd3-e054-00144ff88e88"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Buspirone'. This monograph is sourced from the FDA BUSPAR (buspirone hydrochloride) label as available on DailyMed (setid 33accd6b-10a6-5bd3-e054-00144ff88e88). No boxed warning appears on the label. Buspirone is not a controlled substance and has no immediate anxiolytic effect; it may take 2-4 weeks of continuous therapy to achieve full effect. Avoid grapefruit and grapefruit juice as they may increase buspirone levels via CYP3A4 inhibition. Buspirone is not effective for acute anxiety or as a sedative/hypnotic; it is intended for ongoing anxiety disorder management. Use with caution in patients with renal or hepatic impairment. Safety in pregnancy and lactation has not been fully established. Do not use within 14 days of MAOI use due to risk of serotonin syndrome and hypertensive crisis."
+}

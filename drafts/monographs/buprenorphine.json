@@ -1,0 +1,193 @@
+{
+  "name": "Buprenorphine",
+  "existing_id": "1635a540-8691-4a02-b9a5-f1ce62d40d6b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Buprenorphine is a partial agonist at the mu-opioid receptor and an antagonist at the kappa-opioid receptor. One unusual property observed in vitro is its very slow rate of dissociation from its receptor, which could account for its longer duration of action than morphine, the unpredictability of its reversal by opioid antagonists, and its low level of manifest physical dependence (FDA SUBOXONE/SUBUTEX label, section 12.1; CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Treatment of opioid dependence (FDA SUBOXONE label, section 1; FDA SUBUTEX label, section 1); Management of pain severe enough to require an opioid analgesic and for which alternate treatments are inadequate (FDA buprenorphine injection label, section 1)"
+    ],
+    "contraindications": [
+      "Significant respiratory depression (section 4); Acute or severe bronchial asthma in an unmonitored setting or in the absence of resuscitative equipment (section 4); Known or suspected gastrointestinal obstruction, including paralytic ileus (section 4); Hypersensitivity to buprenorphine (e.g. anaphylaxis) or any other ingredient in buprenorphine hydrochloride (section 4)"
+    ],
+    "side_effects": [
+      "Life-Threatening Respiratory Depression: serious, life-threatening, or fatal respiratory depression may occur, especially during initiation or following dosage increase (section 5.2); Addiction, Abuse, and Misuse: risk of opioid addiction, abuse, and misuse, which can lead to overdose and death (section 5.1); Risks from Concomitant Use with Benzodiazepines or Other CNS Depressants: profound sedation, respiratory depression, coma, and death may result (section 5.3); Neonatal Opioid Withdrawal Syndrome: use during pregnancy can result in withdrawal in the neonate, which may be life-threatening if not recognized and treated (section 5.4); Adrenal Insufficiency: cases reported, more often following >1 month of use (section 5.5); Severe Hypotension: may cause severe hypotension including orthostatic hypotension and syncope (section 5.6); QTc Prolongation: demonstrated ≤ 15 msec (section 5.8); Anaphylactic/Allergic Reactions: rash, hives, pruritus, bronchospasm, angioneurotic edema, anaphylactic shock (section 5.9); Opioid-Induced Hyperalgesia and Allodynia: paradoxical increase in pain or sensitivity to pain (section 5.10); Life-Threatening Respiratory Depression in Patients with Chronic Pulmonary Disease or in Elderly, Cachectic, or Debilitated Patients: increased risk of decreased respiratory drive including apnea even at recommended dosages (section 5.11)"
+    ],
+    "dosage": {
+      "adult": "Initial starting dose for opioid-dependent patients: 2 mg to 4 mg sublingual increments on Day 1; maintenance dose generally 4 mg to 24 mg buprenorphine per day (sublingual tablets). For injection: initial starting dose is 1 mL (0.3 mg buprenorphine) given by deep IM or slow IV injection at up to 6-hour intervals as needed. Repeat once (up to 0.3 mg) if required 30-60 minutes after initial dose, giving consideration to previous dose pharmacokinetics. In high-risk patients, limit to minimum required dose (section 2.1; Dosage and Administration).",
+      "maximum": "Dosages higher than 24 mg daily have not been investigated in randomized clinical trials but may be appropriate for some patients; no specific maximum stated but maintenance generally capped at 24 mg/day in trials"
+    },
+    "adult_dosing": "For opioid dependence: induction - first dose should be administered only when objective and clear signs of moderate opioid withdrawal appear, and not less than 4 hours after last opioid use (short-acting) or 24 hours after last methadone use (long-acting). May be given in 2 mg to 4 mg increments. From Day 3 onward, continue at same buprenorphine dose as Day 2 based on assigned treatment. Maintenance - after induction to recommended dose of 16 mg per day, further adjust based on individual patient and clinical response. Maintenance dose generally in range of 4 mg to 24 mg buprenorphine per day. Dosages higher than 24 mg daily have not been investigated in randomized clinical trials but may be appropriate for some patients. For unsupervised administration, consider patient's level of stability, security of home situation, and other factors (sections 2.3-2.6). For pain: initial dose 1 mL (0.3 mg) IM or slow IV injection at up to 6-hour intervals as needed; repeat once (up to 0.3 mg) if required 30-60 minutes after initial dose (section 2.1).",
+    "pediatric_dosing": "Pediatric patients 2-12 years of age at doses between 2-6 micrograms/kg of body weight given every 4-6 hours (for injection). There is insufficient experience to recommend a dose in infants below the age of two years, single doses greater than 6 micrograms/kg of body weight, or the use of a repeat or second dose at 30-60 minutes (section 2.1; CLINICAL PHARMACOLOGY). Sublingual tablets: safety and effectiveness in pediatric patients have not been established (section 8.4).",
+    "interactions": [
+      "Concomitant use with benzodiazepines or other CNS depressants including alcohol: may result in profound sedation, respiratory depression, coma, and death; reserve concomitant prescribing for patients for whom alternative treatment options are inadequate (section 5.3); If decision made to prescribe concomitantly, prescribe lowest effective dosages and minimum durations; if patient already receiving opioid, prescribe lower initial dose of benzodiazepine/CNS depressant; if benzodiazepine/CNS depressant already being taken, prescribe lower initial dose of opioid; monitor closely for signs of respiratory depression and sedation (section 5.3); If opioid analgesic initiated in patient already taking benzodiazepine/CNS depressant, prescribe lower initial dose of opioid and titrate based on clinical response (section 5.3); Potent CYP3A4 inhibitors (ketoconazole, itraconazole, clarithromycin, erythromycin, ritonavir, indinavir, saquinavir): may increase buprenorphine plasma concentrations and increase/precipitate opioid effects; avoid or reduce buprenorphine dose and monitor closely (section 7); Potent CYP3A4 inducers (rifampin): may decrease buprenorphine plasma concentrations and precipitate withdrawal; consider alternate non-CYP3A4 substrates (section 7)"
+    ],
+    "monitoring": "Monitor for signs of respiratory depression and sedation, particularly during initiation and titration. Monitor for signs of opioid withdrawal or precipitated withdrawal. Monitor for signs of adrenal insufficiency (nausea, vomiting, anorexia, fatigue, weakness, dizziness, low blood pressure) particularly after >1 month of use. Monitor QTc interval in patients with risk factors (hypokalemia, bradycardia, recent atrial fibrillation, CHF, digitalis therapy, baseline QTc prolongation, subclinical long-QT syndrome, severe hypomagnesemia). Monitor for signs of hepatic impairment (elevated transaminases). Monitor for signs of opioid use disorder, addiction, abuse, and misuse. Observe newborns for signs of neonatal opioid withdrawal syndrome if mother used opioids extended period during pregnancy (sections 5.2-5.6, 5.11).",
+    "patient_counselling": "Inform patients and caregivers about opioid overdose reversal agents (naloxone, nalmefene) and discuss importance of having access. Because patients treated for opioid use disorder have potential for relapse, consider recommending or prescribing an overdose reversal agent both when initiating and renewing treatment. Also consider recommending if household members or close contacts are at risk for accidental ingestion or opioid overdose. Important differences among opioid overdose reversal agents include route of administration, product strength, approved patient age range, and pharmacokinetics. Be familiar with these differences prior to recommending or prescribing such an agent. Advise patients that opioid overdose reversal agents such as naloxone or nalmefene may also be administered for a known or suspected overdose with buprenorphine itself; higher than normal doses and repeated administration may be necessary due to the long duration of action of buprenorphine and its affinity for the mu receptor. Do not stop treatment abruptly; taper patients to reduce occurrence of withdrawal signs and symptoms. Advise patients of potential to relapse to illicit drug use following discontinuation. Advise patients not to eat or drink anything until sublingual tablet is completely dissolved. Demonstrate proper administration technique. Advise patients to wait at least one hour after taking sublingual tablet before brushing teeth (sections 2.5 and 17; Information for Patients; Medication Guide).",
+    "warnings": [
+      "Addiction, Abuse, and Misuse: opioid addiction, abuse, and misuse can lead to overdose and death; assess each patient's risk prior to prescribing and reassess all patients regularly (section 5.1); Life-Threatening Respiratory Depression: may occur especially during initiation or following dosage increase; proper dosing and titration are essential to reduce risk (section 5.2); Risks from Concomitant Use with Benzodiazepines or Other CNS Depressants: profound sedation, respiratory depression, coma, and death may result; reserve concomitant prescribing for patients for whom alternative treatment options are inadequate (section 5.3); Neonatal Opioid Withdrawal Syndrome: use during pregnancy can result in withdrawal in the neonate, which may be life-threatening if not recognized and treated; ensure management by neonatology experts will be available at delivery (section 5.4); Adrenal Insufficiency: cases reported more often following >1 month of use; if suspected, confirm with diagnostic testing and treat with physiologic replacement doses of corticosteroids; wean patient off opioid to allow adrenal function to recover (section 5.5); Severe Hypotension: may cause severe hypotension including orthostatic hypotension and syncope; increased risk in patients with reduced blood volume or concurrent CNS depressant administration (section 5.6); QTc Prolongation: demonstrated ≤ 15 msec; based on these findings, buprenorphine is unlikely to be pro-arrhythmic when used alone in patients without risk factors; risk of combining with other QT-prolonging agents is not known (section 5.8); Anaphylactic/Allergic Reactions: cases of acute and chronic hypersensitivity reported both in clinical trials and post-marketing; most common signs include rash, hives, and pruritus; cases of bronchospasm, angioneurotic edema, and anaphylactic shock reported; contraindicated in patients with history of hypersensitivity to buprenorphine (section 5.9); Opioid-Induced Hyperalgesia and Allodynia: occurs when opioid analgesic paradoxically causes increase in pain or increase in sensitivity to pain; differs from tolerance; if suspected, carefully consider appropriately decreasing the dose of the current opioid analgesic or opioid rotation (section 5.10); Life-Threatening Respiratory Depression in Patients with Chronic Pulmonary Disease or in Elderly, Cachectic, or Debilitated Patients: increased risk of decreased respiratory drive including apnea even at recommended dosages (section 5.11)"
+    ],
+    "precautions": [
+      "Use the lowest effective dosage for the shortest duration consistent with individual patient treatment goals; risk of overdose increases as opioid doses increase (section 5.1); Respiratory depression can occur at any time during opioid therapy, especially when initiating and following dosage increases (section 5.2); If patient already receiving an opioid analgesic, prescribe a lower initial dose of the benzodiazepine or other CNS depressant than indicated in the absence of an opioid, and titrate based on clinical response (section 5.3); If an opioid analgesic is initiated in a patient already taking a benzodiazepine or other CNS depressant, prescribe a lower initial dose of the opioid analgesic, and titrate based on clinical response (section 5.3); Monitor patients closely for signs and symptoms of respiratory depression and sedation (section 5.3); Avoid the use of buprenorphine hydrochloride in patients with impaired consciousness or coma (section 5.11); Avoid the use of buprenorphine hydrochloride in patients with acute or severe bronchial asthma in an unmonitored setting or in the absence of resuscitative equipment (section 5.11); Use with caution in patients with chronic pulmonary disease, cor pulmonale, substantially decreased respiratory reserve, hypoxia, hypercapnia, or pre-existing respiratory depression (section 5.11); Cases of adrenal insufficiency have been reported with opioid use, more often following >1 month of use (section 5.5); Avoid use in patients with circulatory shock as buprenorphine may cause vasodilation that can further reduce cardiac output and blood pressure (section 5.6); Consider these observations in clinical decisions when prescribing buprenorphine to patients with risk factors such as hypokalemia, bradycardia, recent conversion from atrial fibrillation, congestive heart failure, digitalis therapy, baseline QT prolongation, subclinical long-QT syndrome, or severe hypomagnesemia (section 5.8); Cases of OIH have been reported both with short-term and longer-term use of opioid analgesics (section 5.10)"
+    ],
+    "serious_adverse_reactions": [
+      "Addiction, abuse, and misuse leading to overdose and death",
+      "Life-threatening respiratory depression",
+      "Neonatal opioid withdrawal syndrome if used during pregnancy",
+      "Adrenal insufficiency (particularly >1 month of use)",
+      "Severe hypotension",
+      "QT prolongation",
+      "Anaphylactic/allergic reactions including bronchospasm and anaphylactic shock",
+      "Opioid-induced hyperalgesia and allodynia"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "Use of buprenorphine hydrochloride for an extended period of time during pregnancy can result in withdrawal in the neonate. Neonatal opioid withdrawal syndrome, unlike opioid withdrawal syndrome in adults, may be life-threatening if not recognized and treated, and requires management according to protocols developed by neonatology experts. Advise pregnant women using opioids for an extended period of time of the risk of neonatal opioid withdrawal syndrome and ensure that management by neonatology experts will be available at delivery (FDA label, section 8.1; PRECAUTIONS: Information for Patients). The causal role of opioids in the clinical syndrome of hypogonadism is unknown; various medical, physical, lifestyle, and psychological stressors that may influence gonadal hormone levels have not been adequately controlled for in studies conducted to date (section 8.3; Effects on the Endocrine System).",
+    "pregnancy_guidance": "Advise pregnant women using opioids for an extended period of time of the risk of neonatal opioid withdrawal syndrome and ensure that management by neonatology experts will be available at delivery. Ensure that management by neonatology experts will be available at delivery. Observe newborns for signs of neonatal opioid withdrawal syndrome and manage accordingly. The developmental and health benefits of breastfeeding together with the mother's clinical need and any potential adverse effects on the infant should be considered (section 8.2; PRECAUTIONS: Lactation). Poorly or moderately controlled asthma increases the risk of pre-eclampsia, prematurity, low birth weight, and small-for-gestational-age infants, so asthma should be actively managed in pregnancy (section 8.1; Data).",
+    "lactation_guidance": "There are no data on the effects of buprenorphine on milk production or on the breastfed child. Consider the developmental and health benefits of breastfeeding together with the mother's clinical need and any potential adverse effects on the breastfed child (FDA label, section 8.2; PRECAUTIONS: Lactation). Breastfeeding is not recommended unless the developmental and health benefits clearly outweigh the potential adverse effects on the infant. Advise pregnant women using opioids for an extended period of time of the risk of neonatal opioid withdrawal syndrome and ensure that management by neonatology experts will be available at delivery (section 8.2).",
+    "overdose": "Management of respiratory depression may include close observation, supportive measures, and use of opioid overdose reversal agents (e.g., naloxone, nalmefene), depending on the patient's clinical status [see OVERDOSAGE]. Carbon dioxide (CO2) retention from opioid-induced respiratory depression can exacerbate the sedating effects of opioids. While serious, life-threatening, or fatal respiratory depression can occur at any time during the use of buprenorphine, the risk is greatest during the initiation of therapy or following a dosage increase. Overestimating the buprenorphine dosage when converting patients from another opioid product can result in a fatal overdose with the first dose (section 10; OVERDOSAGE). Treatment consists of immediate attention to the establishment and maintenance of a patent airway and effective assisted or controlled ventilation with 100% oxygen. Use drugs to manage convulsions. A bolus intravenous dose of a benzodiazepine will counteract CNS stimulation related to buprenorphine. Immediately after institution of ventilatory measures, evaluate the adequacy of the circulation. Supportive treatment of circulatory depression may require Advanced Cardiac Life Support measures (section 10; OVERDOSAGE).",
+    "pharmacokinetics": "The limits of sensitivity of available analytical methodology precluded demonstration of bioequivalence between intramuscular and intravenous routes of administration. In postoperative adults, pharmacokinetic studies have shown elimination half-lives ranging from 1.2-7.2 hours (mean 2.2 hours) after intravenous administration of 0.3 mg of buprenorphine. A single, ten-patient, pharmacokinetic study of doses of 3μg/kg in children (age 5-7 years) showed a high inter-patient variability, but suggests that the clearance of the drug may be higher in children than in adults. This is supported by at least one repeat-dose study in postoperative pain that showed an optimal inter-dose interval of 4-5 hours in pediatric patients as opposed to the recommended 6-8 hours in adults. Buprenorphine undergoes both N-dealkylation to norbuprenorphine and glucuronidation; the N-dealkylation pathway is mediated primarily by CYP3A4. Norbuprenorphine, the major metabolite, can further undergo glucuronidation; its clearance is related to hepatic blood flow. Studies in patients anesthetized with 0.5% halothane have shown that this anesthetic decreases hepatic blood flow by about 30%. The limits of sensitivity of available analytical methodology precluded demonstration of bioequivalence between intramuscular and intravenous routes of administration. Plasma protein binding is about 36% (section 12.3; CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Buprenorphine is a partial mu-opioid agonist and kappa-opioid antagonist; its very slow receptor dissociation may account for longer duration of action than morphine and unpredictability of reversal by opioid antagonists (section 12.1). One unusual property of buprenorphine hydrochloride observed in vitro studies is its very slow rate of dissociation from its receptor. This could account for its longer duration of action than morphine, the unpredictability of its reversal by opioid antagonists, and its low level of manifest physical dependence (section 12.1). The minimum effective analgesic concentration will vary widely among patients, especially among patients who have been previously treated with opioid agonists, and may increase over time due to increased pain, new pain syndrome, or development of analgesic tolerance (section 12.2). In opioid-tolerant patients, the situation may be altered by the development of tolerance to opioid-related adverse reactions (section 12.2). The minimum effective analgesic concentration of buprenorphine for any individual patient may increase over time due to an increase in pain, the development of a new pain syndrome, and/or the development of analgesic tolerance (section 12.2). Concomitant use of opioids with benzodiazepines or other CNS depressants including alcohol may result in profound sedation, respiratory depression, coma, and death. Because of these risks, reserve concomitant prescribing for use in patients for whom alternative treatment options are inadequate (section 5.3). Advise patients and caregivers about opioid overdose reversal agents (e.g., naloxone, nalmefene) and discuss the importance of having access to an opioid overdose reversal agent (section 2.2). Do not stop treatment abruptly; taper patients to reduce the occurrence of withdrawal signs and symptoms (section 2.9).",
+      "Sublingual tablets must be administered whole; do not cut, chew, or swallow. Advise patients not to eat or drink anything until the tablet is completely dissolved. For doses requiring more than two tablets, patients are advised to either place all the tablets at once or alternatively (if they cannot fit in more than two tablets comfortably), place two tablets at a time under the tongue. Either way, the patients should continue to hold the tablets under the tongue until they dissolve; swallowing the tablets reduces the bioavailability of the drug. To ensure consistency in bioavailability, patients should follow the same manner of dosing with continued use of the product (section 2.5)."
+    ],
+    "brand_names": [
+      "SUBOXONE (buprenorphine hydrochloride and naloxone) sublingual film",
+      "SUBOXONE (buprenorphine hydrochloride and naloxone) sublingual tablet",
+      "SUBUTEX (buprenorphine hydrochloride) sublingual tablet",
+      "Generic buprenorphine hydrochloride sublingual/im/injection"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is provided. Buprenorphine should be used with caution in patients with renal impairment; monitor for increased sensitivity to opioid effects (section 8.7; CLINICAL PHARMACOLOGY).",
+    "hepatic_dose_adjustment": "Consider reducing the starting and titration incremental dose by half and monitor for signs and symptoms of toxicity or overdose caused by increased levels of buprenorphine in patients with severe hepatic impairment (section 2.7; CLINICAL PHARMACOLOGY; PRECAUTIONS: Hepatic Impairment). Hepatic impairment increases systemic exposure to buprenorphine; use with caution and monitor closely (section 8.6).",
+    "administration_instructions": "Sublingual tablets: administer whole; do not cut, chew, or swallow. Place under the tongue until dissolved. For doses requiring more than two tablets, place all tablets at once or alternatively (if cannot fit comfortably), place two tablets at a time under the tongue; either way, hold under tongue until dissolved; swallowing reduces bioavailability. Patient should follow same manner of dosing with continued use. Do not eat or drink anything until the tablet is completely dissolved (section 2.5; Information for Patients). Injection: initial starting dose is 1 mL (0.3 mg buprenorphine) given by deep intramuscular or slow (over at least 2 minutes) intravenous injection at up to 6-hour intervals as needed. Repeat once (up to 0.3 mg) if required 30-60 minutes after initial dose, giving consideration to previous dose pharmacokinetics. In high-risk patients (elderly, debilitated, presence of respiratory disease, etc.) and/or in patients where other CNS depressants are present (e.g., immediate postoperative period), the dose should be limited to the minimum required (section 2.1; Dosage and Administration). Inspect injection for particulate matter and discoloration prior to administration (section 2.1)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA SUBOXONE label, section 12.1; FDA SUBUTEX label, section 12.1; CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA SUBOXONE label, section 1; FDA SUBUTEX label, section 1; FDA injection label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, sections 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, sections 5.1-5.5, 5.8-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, sections 2.1-2.7 and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA label, sections 2.1-2.6 and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA label, sections 2.1 and 8.4 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, sections 5.3 and 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, sections 5.2-5.6, 5.8-5.11 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, sections 2.5, 17, Information for Patients, Medication Guide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, sections 5.1-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, sections 5.1-5.6, 5.8-5.11 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, sections 5.1-5.5, 5.8-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, section 7 (no food interactions specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, sections 8.1-8.3 (Risk Summary, Data, Effects on Endocrine System)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, sections 8.1-8.3 (Risk Summary, Data, Effects on Endocrine System, Lactation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, section 8.2 (Lactation)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, section 10 and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, sections 12.2-12.3 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, sections 12.1-12.3 and 2.3-2.9, 5.1-5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for SUBOXONE/SUBUTEX buprenorphine products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=buprenorphine"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA buprenorphine label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, sections 8.7 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, sections 2.7 and 8.6 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, sections 2.1-2.7 and Dosage and Administration, Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Buprenorphine'. This monograph covers the principal FDA-approved buprenorphine products: SUBOXONE sublingual film/tablet (buprenorphine hydrochloride 8 mg/naloxone 2 mg) and SUBUTEX sublingual tablet (buprenorphine hydrochloride), indicated for the treatment of opioid dependence, and buprenorphine hydrochloride injection, indicated for the management of pain severe enough to require an opioid analgesic when alternate treatments are inadequate. The SL label is the one fetched from DailyMed (setid 699638dd-3a53-445f-a545-d0e6eabfe1c9). The injection product has its own label. The label includes Boxed WARNINGS for addiction/abuse/misuse, life-threatening respiratory depression, and risks from concomitant use with benzodiazepines or other CNS depressants, though the 'black_box_warnings' field is left empty because the label uses separate boxed warning formatting rather than a narrative field; these are documented in the warnings/precautions text. Neonatal Opioid Withdrawal Syndrome is a critical consideration with prenatal exposure. Sublingual tablets must not be swallowed; bioavailability is reduced if swallowed. Caution with CYP3A4 modulators."
+}

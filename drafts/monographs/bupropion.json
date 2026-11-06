@@ -1,0 +1,193 @@
+{
+  "name": "Bupropion",
+  "existing_id": "3df107b8-3512-4808-a8e8-58c9782abd27",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bupropion is an atypical antidepressant; its exact mechanism of action is not fully understood. It is presumed to inhibit the reuptake of norepinephrine and dopamine in the central nervous system. Bupropion HCl SR and XL are sustained-release formulations of bupropion hydrochloride. It has little affinity for serotonin receptors, and unlike most other antidepressants, it does not block serotonin reuptake (FDA WELLBUTRIN label, section 12.1; CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Major Depressive Disorder (MDD) (FDA WELLBUTRIN SR label, section 1; FDA WELLBUTRIN XL label, section 1.1); Seasonal Affective Disorder (SAD) (FDA WELLBUTRIN XL label, section 1.2); Smoking cessation treatment (FDA WELLBUTRIN label as ZYBAN, section 1) - Wellbutrin SR is not approved for smoking cessation, though it contains the same active ingredient as ZYBAN (section 5.2)]"
+    ],
+    "contraindications": [
+      "Seizure disorders: bupropion lowers the seizure threshold; contraindicated in patients with seizure disorders (section 4); Bulimia or anorexia nervosa: contraindicated because these patients have a higher seizure risk (section 4); MAOI use within the past 14 days: contraindicated because of risk of serious adverse reactions including serotonin syndrome and hypertensive crisis (section 4)"
+    ],
+    "side_effects": [
+      "Clinical trials (depression): most common adverse reactions (≥5%): insomnia, dry mouth, nausea, dizziness, headache, constipation, weight loss (Table 1, section 6.1); Clinical trials (smoking cessation, as ZYBAN): most common adverse reactions (≥10%): dry mouth, insomnia, nausea, dizziness, headache, agitation, constipation; less common: tremor, abnormal vision, abdominal pain, increased sweating (section 6.1); Postmarketing: suicidal thoughts and behaviors (boxed warning), agitation, anxiety, panic, psychosis, hallucinations, paranoia, delusions, homicidal ideation, aggression, hostility (section 5.2; BOXED WARNING); Discontinuation syndrome: dysphoric mood, irritability, fatigue, headache, sweating, nausea (section 8.1)]"
+    ],
+    "dosage": {
+      "adult": "MDD: WELLBUTRIN SR 150 mg or 300 mg once daily; WELLBUTRIN XL 150 mg or 300 mg once daily; SAD: WELLBUTRIN XL 150 mg or 300 mg once daily; Smoking cessation (as ZYBAN): initiate 1 mg orally twice daily for 3 days, then 1 mg orally once daily beginning day 4; continue for 7-12 weeks (may extend to 12 weeks). Do not exceed 350 mg/day for SR or 400 mg/day for XL (FDA WELLBUTRIN label, Dosage and Administration).",
+      "maximum": "Do not exceed 350 mg/day for SR or 400 mg/day for XL; do not crush, chew, or divide sustained-release tablets (section 2)"
+    },
+    "adult_dosing": "MDD: initiate WELLBUTRIN SR 150 mg once daily; may increase to 300 mg once daily after 3 days. WELLBUTRIN XL: initiate 150 mg once daily; may increase to 300 mg once daily after 3 days. SAD: WELLBUTRIN XL 150 mg or 300 mg once daily. Smoking cessation (ZYBAN): start 1 mg twice daily for 3 days, then 1 mg once daily from day 4 onward; continue for 7-12 weeks (may extend to 12 weeks). Take the entire dose in the morning; do not take within several hours of bedtime to avoid insomnia (section 2).",
+    "pediatric_dosing": "Safety and effectiveness in pediatric patients have not been established (section 8.4).",
+    "interactions": [
+      "MAOIs: contraindicated within 14 days of each other (section 4); Other antidepressants: risk of serotonin syndrome when combined with SSRIs, SNRIs, TCAs, or other antidepressants (section 7.1); Alcohol: may increase risk of seizures; avoid excessive alcohol consumption (section 7.2); Antipsychotics: some antipsychotics may lower seizure threshold; monitor carefully (section 7.3); Anticholinergic drugs: may increase seizure risk (section 7.4); Other drugs that lower seizure threshold (tramadol, meperidine, risk factors such as CNS infections, history of CNS disease, concurrent drug use) (section 7.5)"
+    ],
+    "monitoring": "Monitor for emergence of suicidal ideation or behavior, especially in young adults (section 5.2; BOXED WARNING); monitor for seizures (especially at higher doses or in patients with risk factors); monitor for agitation, anxiety,panic, hostility, psychosis; monitor blood pressure (bupropion can increase blood pressure); monitor for activation of mania/hypomania in patients with bipolar disorder; monitor liver function (bupropion is metabolized by CYP2B6); monitor for significant increases in blood pressure (section 5.6; Warnings and Precautions)",
+    "patient_counselling": "Take bupropion exactly as prescribed; do not crush, chew, or divide sustained-release tablets; swallow whole. Take the entire dose in the morning; do not take within several hours of bedtime to reduce risk of insomnia. Avoid alcohol consumption or limit intake to reduce seizure risk. Warn patients about the risk of suicidal thoughts and behaviors, especially at the beginning of treatment or during dose changes. Do not stop abruptly; taper as directed. Avoid activities requiring mental alertness if dizziness or impaired vision occurs. Report any mood changes, new or worsening symptoms, or behavioral changes to healthcare provider immediately. Bupropion SR is NOT approved for smoking cessation; ZYBAN is the approved formulation for this indication (section 1 and 5.2).",
+    "warnings": [
+      "Boxed Warning: Suicidal Thoughts and Behaviors - antidepressant increased risk of suicidal ideation and behavior in children, adolescents, and young adults (ages 18-24) during short-term studies; monitoring is essential, especially at the beginning of treatment or during dose changes (section 5.1); Lowering the Seizure Threshold: bupropion can lower the seizure threshold; risk increases with higher daily doses; contraindicated in patients with seizure disorders and in bulimia or anorexia nervosa (section 5.2); Mania/Hypomania: may induce mania or hypomania in patients with bipolar disorder; monitor for symptoms (section 5.3); Bipolar Disorder: evaluate for presence of bipolar disorder before initiating treatment; treating MDD in bipolar patients without evaluating for bipolar disorder may precipitate a mixed/manic episode (section 5.3); Discontinuation Syndrome: dysphoric mood, irritability, fatigue, headache, sweating, nausea may occur if stopped abruptly (section 8.1); Activation of Mania/Hypomania: may occur in patients with bipolar disorder (section 5.3); Increased Blood Pressure: monitor blood pressure (section 5.6); Alcohol Withdrawal: risk of seizures may be increased during alcohol withdrawal; avoid bupropion during this period (section 7.6)"
+    ],
+    "precautions": [
+      "Suicidal ideation and behavior: monitor for emergence of suicidal thoughts and behaviors, especially in young adults at the beginning of treatment or during dose changes (section 5.1); Seizure risk: risk increases with higher daily doses; contraindicated in seizure disorders and bulimia/anorexia nervosa; use caution in patients with risk factors lowering seizure threshold (section 5.2); Bipolar disorder: evaluate for bipolar disorder before initiating treatment; treating MDD in bipolar patients without evaluation may precipitate mixed/manic episode (section 5.3); Discontinuation: do not stop abruptly; taper as directed (section 8.1); Hypertension: monitor blood pressure; bupropion can increase blood pressure (section 5.6);Mania/Hypomania: monitor for symptoms; activating switch may occur (section 5.3); Hepatic impairment: use caution; bupropion is metabolized by CYP2B6; monitor for increased effects (section 8.7); Switching from another antidepressant: allow sufficient washout period when switching from an MAOI to bupropion (at least 14 days) (section 7.1 and 4)"
+    ],
+    "serious_adverse_reactions": [
+      "Suicidal ideation and behavior (especially in children, adolescents, young adults)",
+      "Seizures (especially at higher doses or with risk factors)",
+      "Serotonin syndrome (when combined with other antidepressants)",
+      "Severe allergic reactions / anaphylaxis",
+      "Severe hypertension",
+      "Agitation, anxiety, panic, psychosis, hallucinations, paranoia, delusions, homicidal ideation, aggression, hostility (postmarketing)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "There are no adequate and well-controlled studies in pregnant women. Bupropion should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus (FDA WELLBUTRIN label, section 8.1; Pregnancy). The estimated background risk of major birth defects and miscarriage for the indicated populations are unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively. There is limited experience with bupropion use in pregnancy; fetal risk is not fully established (section 8.1).",
+    "pregnancy_guidance": "There are no adequate and well-controlled studies in pregnant women. Bupropion should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Patients should be advised of the potential risk to the fetus. The estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively. Limited experience with bupropion use in pregnancy; fetal risk is not fully established (section 8.1; Pregnancy).",
+    "lactation_guidance": "There are no data on the presence of bupropion in human milk, its effects on the breastfed infant, or its effects on milk production. Bupropion has been detected in rat milk. Consider the developmental and health benefits of breastfeeding together with the mother's clinical need for bupropion and any potential adverse effects on the breastfed child (FDA label, section 8.2; Nursing Mothers).",
+    "overdose": "There is no specific antidote for bupropion overdose. Treatment consists of general supportive measures including monitoring of vital signs and seizure precautions. Emesis and lavage may be considered if performed soon after ingestion. Dialysis is of limited value owing to high protein binding. Seizures should be treated with benzodiazepines; naive patients may require general anesthesia and airway support. Monitoring of cardiac rhythm and vital signs is essential (section 10; OVERDOSAGE).",
+    "pharmacokinetics": "Bupropion is almost completely absorbed after oral administration; food does not significantly affect the extent of absorption but may slightly delay the rate of absorption. Peak plasma concentrations occur approximately 3 hours after dosing. Bupropion is extensively metabolized by CYP2B6 to hydroxybupropion, which is further metabolized to other hydroxylated metabolites. The half-life of bupropion is approximately 21 hours; hydroxybupropion half-life is approximately 33 hours. Steady-state is achieved in 8 days. Plasma protein binding is about 80%. Bupropion and its metabolites are excreted primarily in urine (section 12.3; CLINICAL PHARMACOLOGY).",
+    "clinical_pearls": [
+      "Bupropion is not a SSRI or SNRI; it has minimal serotonergic activity; its primary actions are norepinephrine and dopamine reuptake inhibition (section 12.1). The sustained-release (SR and XL) formulations must be swallowed whole; crushing, chewing, or dividing significantly increases seizure risk (section 2 and 6.1). The risk of seizure is dose-related; do not exceed maximum daily doses (350 mg/day SR, 400 mg/day XL) (section 5.2). Bupropion can increase blood pressure; monitor regularly, especially in patients with pre-existing hypertension (section 5.6). Bupropion SR is NOT approved for smoking cessation; the sustained-release formulation is for depression/SAD, while ZYBAN (same active ingredient, different formulation) is approved for smoking cessation (section 1 and 5.2). Avoid alcohol consumption to reduce seizure risk (section 7.2). Monitor for emergence of suicidal ideation or behavior, especially at the beginning of treatment or during dose changes, in young adults (section 5.1; BOXED WARNING)."
+    ],
+    "brand_names": [
+      "WELLBUTRIN SR (bupropion HCl) tablet, film-coated, extended-release",
+      "WELLBUTRIN XL (bupropion HCl) tablet, film-coated, extended-release",
+      "WELLBUTRIN (bupropion HCl) tablet, immediate-release",
+      "ZYBAN (bupropion HCl) sustained-release tablet, for smoking cessation",
+      "Generic bupropion HCl"
+    ],
+    "black_box_warnings": [
+      "Boxed Warning: Suicidal Thoughts and Behaviors - antidepressant increased risk of suicidal ideation and behavior in children, adolescents, and young adults (ages 18-24) during short-term studies"
+    ],
+    "renal_dose_adjustment": "No renal dose adjustment is specified; however, bupropion and its metabolites are excreted primarily in urine; use caution in severe renal impairment and monitor for increased sensitivity to effects (section 8.7; CLINICAL PHARMACOLOGY).",
+    "hepatic_dose_adjustment": "Use caution in patients with hepatic impairment; bupropion is metabolized by CYP2B6; monitor for increased effects and consider dose reduction (section 8.7; CLINICAL PHARMACOLOGY).",
+    "administration_instructions": "Sustained-release tablets: swallow whole; do not crush, chew, or divide. Take the entire dose in the morning; do not take within several hours of bedtime to avoid insomnia (section 2). For smoking cessation (ZYBAN): take the entire dose in the morning; do not take within several hours of bedtime. Initiate 1 mg orally twice daily for 3 days, then 1 mg once daily from day 4 onward; continue for 7-12 weeks (may extend to 12 weeks) (section 2). Immediate-release tablets: may be taken with or without food; follow specific product labeling."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA WELLBUTRIN label, section 12.1; CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA WELLBUTRIN SR label, section 1; WELLBUTRIN XL label, sections 1.1-1.2; ZYBAN label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA WELLBUTRIN label, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA WELLBUTRIN label, sections 5.2 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA WELLBUTRIN label, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA WELLBUTRIN label, Dosage and Administration, section 2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA WELLBUTRIN label, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA WELLBUTRIN label, section 7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA WELLBUTRIN label, sections 5.1-5.6 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA WELLBUTRIN label, section 17 and Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA WELLBUTRIN label, sections 5.1-5.6 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA WELLBUTRIN label, sections 5.1-5.6 and 8.1-8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA WELLBUTRIN label, sections 5.1-5.3, 6.1 and 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA WELLBUTRIN label, section 7 (no food interactions specifically addressed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA WELLBUTRIN label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA WELLBUTRIN label, section 8.1 (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA WELBBUTRIN label, section 8.2 (Nursing Mothers)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA WELLBUTRIN label, section 10 and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA WELLBUTRIN label, section 12.3 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA WELLBUTRIN label, sections 12.1, 2, 5.1-5.3, 6.1, 8.1, 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for WELLBUTRIN/ZYBAN bupropion products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=bupropion"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Boxed Warning: Suicidal Thoughts and Behaviors (FDA WELLBUTRIN label, section 5.1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA WELBBUTRIN label, section 8.7 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA WELBBUTRIN label, section 8.7 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA WELLBUTRIN label, sections 1-3 and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Bupropion'. This monograph covers the principal FDA-approved bupropion products: WELLBUTRIN SR and WELLBUTRIN XL (sustained-release tablets for Major Depressive Disorder and Seasonal Affective Disorder), and ZYBAN (sustained-release tablet for smoking cessation, same active ingredient as WELLBUTRIN SR but different formulation/indication). The boxed warning for suicidal ideation and behavior in young adults is a critical safety consideration. Bupropion SR is NOT approved for smoking cessation; ZYBAN is the approved formulation. Bupropion lowers the seizure threshold; contraindicated in patients with seizure disorders and bulimia/anorexia nervosa. Sustained-release tablets must be swallowed whole; do not crush, chew, or divide. Bupropion can increase blood pressure; monitor regularly. May induce mania/hypomania in patients with bipolar disorder; evaluate for bipolar disorder before initiating treatment."
+}

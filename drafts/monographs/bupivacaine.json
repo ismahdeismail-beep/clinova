@@ -1,0 +1,193 @@
+{
+  "name": "Bupivacaine",
+  "existing_id": "9ef870ae-4d91-458c-98a4-66e7d1648faa",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Bupivacaine blocks the generation and conduction of nerve impulses, presumably by increasing the threshold for electrical excitation in the nerve, by slowing the propagation of the nerve impulse, and by reducing the rate of rise of the action potential. In general, the progression of anesthesia is related to the diameter, myelination, and conduction velocity of affected nerve fibers. Clinically, the order of loss of nerve function is: (1) pain, (2) temperature, (3) touch, (4) proprioception, and (5) skeletal muscle tone. Epinephrine added to bupivacaine acts as a vasoconstrictor to slow absorption into the general circulation and thus prolong maintenance of an active tissue concentration (FDA MARCAINE label, sections 12.1 and 12.2).",
+    "indications": [
+      "MARCAINE / MARCAINE WITH EPINEPHRINE is indicated in adults for the production of local or regional anesthesia or analgesia for surgery, dental and oral surgery procedures, diagnostic and therapeutic procedures, and for obstetrical procedures [see Dosage and Administration (2.2)]"
+    ],
+    "contraindications": [
+      "Obstetrical paracervical block anesthesia: use has resulted in fetal bradycardia and death (FDA MARCAINE label, section 4); Intravenous regional anesthesia (Bier Block) (section 4); Known hypersensitivity to bupivacaine or to any local anesthetic agent of the amide-type or to other components of MARCAINE / MARCAINE WITH EPINEPHRINE (section 4)"
+    ],
+    "side_effects": [
+      "Nervous System Disorders: excitation and/or depression of the CNS including restlessness, anxiety, incoherent speech, lightheadedness, numbness and tingling of the mouth and lips, metallic taste, tinnitus, dizziness, blurred vision, tremors, twitching, CNS depression, drowsiness, unconsciousness, respiratory arrest, nausea, vomiting, chills, pupillary constriction (section 6); Cardiovascular Disorders: high plasma levels related to overdosage, unintentional intravascular injection, or slow metabolic depression leading to decreased cardiac output, heart block, hypotension, bradycardia, ventricular arrhythmias including ventricular tachycardia and ventricular fibrillation, and cardiac arrest (section 6); Allergic-Type Reactions: urticaria, pruritus, erythema, angioneurotic edema (including laryngeal edema), tachycardia, sneezing, nausea, vomiting, dizziness, syncope, excessive sweating, elevated temperature, severe hypotension; cross sensitivity among amide-type local anesthetics (section 6 and 5.8); Methemoglobinemia: cases reported, particularly in G6PD deficiency, congenital or idiopathic methemoglobinemia, cardiac or pulmonary compromise, infants under 6 months, concurrent exposure to oxidizing agents (section 5.3); Chondrolysis with intra-articular infusion: post-marketing reports of chondrolysis, majority involving shoulder joint, gleno-humeral chondrolysis in pediatric and adult patients following infusions for 48-72 hours (section 5.5)"
+    ],
+    "dosage": {
+      "adult": "Administer the smallest dosage and concentration required to produce the desired result. Maximum dosage limit within recommended dosage range must be individualized after evaluating size and physical status and anticipated rate of systemic absorption from injection site. Do not exceed a total daily dosage of 400 mg in 24 hours. Dosages in recommended tables may be repeated once every three hours (FDA MARCAINE label, Dosage and Administration).",
+      "maximum": "Do not exceed a total daily dosage of 400 mg in 24 hours; maximum dose per injection site depends on concentration and anatomical location (see Table 3 in label)"
+    },
+    "adult_dosing": "The dosage administered varies with the anesthetic procedure, area to be anesthetized, vascularity of tissues, number of neuronal segments to be blocked, depth of anesthesia and degree of muscle relaxation required, duration of anesthesia desired, individual tolerance, and physical condition of the patient. Administer the smallest dosage and concentration required to produce the desired result. At recommended dosages, MARCAINE / MARCAINE WITH EPINEPHRINE produces complete sensory block; the effect on motor function differs among the three concentrations (Table 2). The maximum dosage limit within the recommended dosage range must be individualized in each case after evaluating the size and physical status of the patient, as well as the anticipated rate of systemic absorption from a particular injection site (FDA MARCAINE label, Dosage and Administration, section 2.2).",
+    "pediatric_dosing": "Administration of MARCAINE / MARCAINE WITH EPINEPHRINE in pediatric patients younger than 12 years is not recommended (FDA MARCAINE label, section 8.4). Continuous infusions in pediatric patients have been reported to result in high systemic levels of bupivacaine and seizures; high plasma levels may also be associated with cardiovascular abnormalities (section 8.4). Pediatric patients 2-12 years at doses between 2-6 micrograms/kg of body weight given every 4-6 hours (section 8.4; Dosage and Administration). Safety and effectiveness in pediatric patients below the age of 2 years have not been established (section 8.4).",
+    "interactions": [
+      "Monoamine oxidase inhibitors and tricyclic antidepressants: administration of MARCAINE WITH EPINEPHRINE may produce severe, prolonged hypertension; concurrent use should generally be avoided; if necessary, careful monitoring of hemodynamic status is essential (sections 5.6 and 7.2); Ergot-type oxytocic drugs: concurrent administration may cause severe, persistent hypertension or cerebrovascular accidents; avoid use concomitantly (sections 5.6 and 7.3); Nonselective beta-adrenergic antagonists: may cause severe hypertension and bradycardia; avoid concurrent use generally; if necessary, careful monitoring of blood pressure and heart rate (sections 5.6 and 7.4); Drugs associated with methemoglobinemia: patients at increased risk of developing methemoglobinemia when concurrently exposed to other local anesthetics (section 7.5); Phenothiazines and butyrophenones: may reduce or reverse the pressor effect of epinephrine; avoid concurrent use generally; if necessary, careful patient monitoring (section 7.7)"
+    ],
+    "monitoring": "Careful and constant monitoring of cardiovascular and respiratory vital signs and the patient's state of consciousness should be performed after injection. Monitor for early warning signs of CNS toxicity (restlessness, anxiety, incoherent speech, lightheadedness, numbness and tingling of the mouth and lips, metallic taste, tinnitus, dizziness, blurred vision, tremors, twitching, CNS depression, or drowsiness). Monitor for signs of methemoglobinemia (cyanotic skin discoloration / abnormal blood color). Monitor for signs of systemic toxicity related to unintended intravascular or intrathecal injection. Use test dose with epidural anesthesia. Monitor circulation and respiration following blocks (sections 5.2, 5.3, 5.9, 5.15, 5.16).",
+    "patient_counselling": "Avoid rapid injection of a large volume and use fractional (incremental) doses when feasible. During major regional blocks, patient should have an indwelling intravenous catheter for adequate intravenous access. Avoid aortocaval compression during regional block in parturients (maintain left lateral decubitus position or manual displacement of uterus off great vessels). Report signs of systemic toxicity (restlessness, dizziness, tinnitus, oral numbness, metallic taste, tremors, seizures, cardiac arrhythmias, respiratory depression). Avoid chewing solid foods until sensation returns after dental blocks (section 16; Patient Counseling Information). Notify surgeon immediately if epidural catheter migrates. Avoid use of multiple-dose vials for epidural/caudal anesthesia due to preservative (section 5.4).",
+    "warnings": [
+      "Risk of Cardiac Arrest with Use of MARCAINE in Obstetrical Anesthesia: reports of cardiac arrest with difficult resuscitation or death during use of MARCAINE for epidural anesthesia in obstetrical patients, most cases following use of 0.75% (7.5 mg/mL) concentration; 0.75% concentration is not recommended for obstetrical anesthesia and should be reserved for surgical procedures where high degree of muscle relaxation and prolonged effect are necessary (section 5.1); Dose-Related Toxicity: safety and effectiveness depend on proper dosage, correct technique, adequate precautions, and readiness for emergencies; delay in proper management may lead to acidosis, cardiac arrest, and possibly death (section 5.2); Methemoglobinemia: cases reported; patients with G6PD deficiency, congenital or idiopathic methemoglobinemia, cardiac or pulmonary compromise, infants under 6 months, and concurrent exposure to oxidizing agents are more susceptible (section 5.3); Chondrolysis with Intra-Articular Infusion: unapproved use; post-marketing reports of chondrolysis, majority involving shoulder joint; insufficient information to determine if shorter infusion periods are associated (section 5.5); Severe, Persistent Hypertension or Cerebrovascular Accidents Due to Drug Interactions with MARCAINE WITH EPINEPHRINE and MAOI/TCI antidepressants or ergot-type oxytocic drugs (sections 5.6); Risk of Cardiac Arrest with Intravenous Regional Anesthesia Use (Bier Block) (section 5.7); Allergic-Type Reactions to Sulfites in MARCAINE WITH EPINEPHRINE (section 5.8); Risk of Systemic Toxicities with Unintended Intravascular or Intrathecal Injection (section 5.9); Risk of Respiratory Arrest with Use in Ophthalmic Surgery (section 5.15); Risk of Inadvertent Trauma to Tongue, Lips, and Buccal Mucosa in Dental Applications (section 5.16)"
+    ],
+    "precautions": [
+      "Use the lowest dose that effectively controls symptoms and titrate downward once control is achieved to minimize systemic corticosteroid effects (not directly applicable but general principle). Hepatic impairment increases systemic availability of amide local anesthetics; consider reduced dosing and increased monitoring for systemic toxicity, especially with repeat doses (sections 5.10 and 8.6). Caution in patients with tuberculosis, hypertension, diabetes mellitus, osteoporosis, peptic ulcer, glaucoma or cataracts, or a family history of diabetes or glaucoma (ENTOCORT Precautions - contextual). Replace systemic corticosteroids with oral budesonide may unmask previously controlled allergies such as rhinitis and eczema (general). Inhaled FLEXHALER contains milk protein; avoid in patients with severe milk protein allergy (contextual). Avoid use of multiple-dose vials for epidural or caudal anesthesia because safety has not been established (section 5.4). Avoid use of MARCAINE with epinephrine in obstetrical paracervical block (section 4, 5.1)."
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac arrest in obstetrical anesthesia",
+      "Dose-related toxicity",
+      "Methemoglobinemia",
+      "Chondrolysis with intra-articular infusion",
+      "Severe, persistent hypertension and cerebrovascular accidents due to drug interactions",
+      "Cardiac arrest with intravenous regional anesthesia use (Bier Block)",
+      "Allergic-type reactions",
+      "Systemic toxicities with unintended intravascular or intrathecal injection",
+      "Respiratory arrest following retrobulbar block"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "MARCAINE / MARCAINE WITH EPINEPHRINE is contraindicated for obstetrical paracervical block anesthesia. Its use in this technique has resulted in fetal bradycardia and death [see Contraindications (4), Warnings and Precautions (5.1)]. There are no available data on use in pregnant women to inform a drug-associated risk of adverse developmental outcomes. In animal studies, embryo-fetal lethality was noted when bupivacaine was administered subcutaneously to pregnant rabbits during organogenesis at clinically relevant doses; decreased pup survival was observed in a rat pre- and post-natal developmental study at a dose comparable to the daily maximum recommended human dose (MRHD) on a BSA basis. Based on animal data, advise pregnant women of the potential risks to a fetus (section 8.1; Risk Summary).",
+    "pregnancy_guidance": "If this drug is used during pregnancy, or if the patient becomes pregnant while taking this drug, inform the patient of the potential hazard to the fetus. The estimated background risk of major birth defects and miscarriage for the indicated populations are unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively. Maternal hypotension has resulted from regional anesthesia; local anesthetics produce vasodilation by blocking sympathetic nerves. The supine position is dangerous in pregnant women at term because of aortocaval compression by the gravid uterus. Therefore, during treatment of systemic toxicity, maintain the parturient in the left lateral decubitus position if possible, or manual displacement of the uterus off the great vessels be accomplished. Elevating the patient's legs will also help prevent decreases in blood pressure. The fetal heart rate should be monitored continuously and electronic fetal monitoring is highly advisable (section 8.1; Clinical Considerations). If this drug is used during pregnancy, or if the patient becomes pregnant while taking this drug, inform the patient of the potential hazard to the fetus (section 8.1; Risk Summary).",
+    "lactation_guidance": "Lactation studies have not been conducted with bupivacaine. Bupivacaine has been reported to be excreted in human milk suggesting that the nursing infant could be theoretically exposed to a dose of the drug. MARCAINE / MARCAINE WITH EPINEPHRINE should be administered to lactating women only if clearly indicated. Studies assessing the effects of MARCAINE / MARCAINE WITH EPINEPHRINE in breastfed children have not been performed. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for bupivacaine and any potential adverse effects on the breastfed child from bupivacaine or from the underlying maternal condition (section 8.2; Risk Summary).",
+    "overdose": "Acute emergencies from use of MARCAINE / MARCAINE WITH EPINEPHRINE are generally related to high plasma levels encountered during therapeutic use or to unintended intrathecal injection [see Warnings and Precautions (5.2, 5.9), Adverse Reactions (6)]. If not treated immediately, convulsions with simultaneous hypoxia, hypercarbia, and acidosis plus myocardial depression from the direct effects of bupivacaine may result in cardiac arrhythmias, bradycardia, asystole, ventricular fibrillation, or cardiac arrest. Respiratory abnormalities, including apnea, may occur. Hypoventilation or apnea due to unintentional intrathecal injection may produce these same signs and also lead to cardiac arrest if ventilatory support is not instituted. If cardiac arrest should occur, successful outcome may require prolonged resuscitative efforts. Management consists of immediate attention to establishment and maintenance of a patent airway and effective assisted or controlled ventilation with 100% oxygen. Use drugs to manage convulsions. A bolus intravenous dose of a benzodiazepine will counteract CNS stimulation related to MARCAINE. Immediately after institution of ventilatory measures, evaluate the adequacy of the circulation. Supportive treatment of circulatory depression may require Advanced Cardiac Life Support measures (section 10; OVERDOSAGE).",
+    "pharmacokinetics": "Bupivacaine appears to cross the placenta by passive diffusion; the rate and degree of diffusion is governed by the degree of plasma protein binding (95%), degree of ionization, and degree of lipid solubility. Fetal/maternal ratios appear inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Bupivacaine with high protein binding capacity (95%) has a low fetal/maternal ratio (0.2 to 0.4). Bupivacaine is distributed to all body tissues, with high concentrations in highly perfused organs (liver, lungs, heart, brain). The half-life of bupivacaine in adults is 2.7 hours. Metabolism: primarily in the liver via conjugation with glucuronic acid; pipecoloxylidine is the major metabolite. The kidney is the main excretory organ; 6% of bupivacaine is excreted unchanged in the urine. Various pharmacokinetic parameters can be significantly altered by the presence of hepatic or renal disease (sections 12.3 and Use in Specific Populations).",
+    "clinical_pearls": [
+      "The order of loss of nerve function is: (1) pain, (2) temperature, (3) touch, (4) proprioception, and (5) skeletal muscle tone (section 12.1). A dilute concentration of epinephrine (1:200,000) usually reduces the rate of absorption and peak plasma concentration of bupivacaine, permitting the use of moderately larger total doses and sometimes prolonging the duration of action (section 2 and 12.2). Following caudal, epidural, or peripheral nerve block, peak levels in the blood are reached in 30 to 45 minutes, followed by a decline to insignificant levels during the next three to six hours (section 12.3). Amide-type local anesthetics such as bupivacaine are metabolized by the liver; patients with severe hepatic impairment are at greater risk of developing toxic plasma concentrations and potentially local anesthetic systemic toxicity, especially with repeat doses (section 5.10 and 8.6). Avoid aortocaval compression during regional block in parturients by maintaining left lateral decubitus position or manual displacement of the uterus off the great vessels (section 8.1; Clinical Considerations).",
+      "Do not use 0.75% (7.5 mg/mL) concentration for obstetrical anesthesia; reserve for surgical procedures requiring high degree of muscle relaxation and prolonged effect (section 5.1)."
+    ],
+    "brand_names": [
+      "MARCAINE (bupivacaine hydrochloride) injection",
+      "MARCAINE WITH EPINEPHRINE (bupivacaine hydrochloride and epinephrine) injection",
+      "Generic bupivacaine injection/hydrochloride"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Bupivacaine is known to be substantially excreted by the kidney, and the risk of adverse reactions may be greater in patients with renal impairment. This should be considered when selecting the dosage (section 8.7; Use in Specific Populations).",
+    "hepatic_dose_adjustment": "Amide-type local anesthetics such as bupivacaine are metabolized by the liver. Patients with severe hepatic impairment, because of their inability to metabolize local anesthetics normally, are at a greater risk of developing toxic plasma concentrations, and potentially local anesthetic systemic toxicity. Therefore, consider reduced dosing and increased monitoring for local anesthetic systemic toxicity in patients with moderate to severe hepatic impairment treated with MARCAINE / MARCAINE WITH EPINEPHRINE, especially with repeat doses (section 5.10; Warnings and Precautions).",
+    "administration_instructions": "MARCAINE (without epinephrine) is by injection, for infiltration, perineural, caudal, epidural, or retrobulbar use. MARCAINE WITH EPINEPHRINE is by injection, for infiltration, perineural, caudal, or epidural use. Multiple-dose vials contain methylparaben [see Warnings and Precautions (5.4)]. For epidural and caudal anesthesia, use only single-dose vials; avoid use of multiple-dose vials which contain a preservative (section 2.1, 2.4, 5.4). Test dose with epidural anesthesia: 3 mL of MARCAINE WITH EPINEPHRINE without antimicrobial preservative (0.5% bupivacaine with 1:200,000 epinephrine) may be used as a test dose prior to administration of the full dose in caudal and lumbar epidural blocks (section 2.4). Three mL of test dose contains 15 mg bupivacaine and 15 mcg epinephrine. Aspirate for blood or cerebrospinal fluid prior to injecting, both the initial dose and all subsequent doses (section 5.9). Use the lowest effective dose and concentration required to produce the desired result (section 2.2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA MARCAINE label, sections 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA MARCAINE label, section 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA MARCAINE label, sections 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA MARCAINE label, sections 5.3, 5.5, 5.8, 5.9, 5.15, 5.16 and 6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA MARCAINE label, Dosage and Administration, sections 2.1-2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA MARCAINE label, Dosage and Administration, sections 2.1-2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA MARCAINE label, sections 8.4 and Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA MARCAINE label, sections 5.6, 5.7, 5.8, 7.2-7.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA MARCAINE label, sections 5.2-5.3, 5.8-5.9, 5.15-5.16 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA MARCAINE label, section 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA MARCAINE label, sections 5.1-5.16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA MARCAINE label, sections 5.4, 5.10, 8.6 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA MARCAINE label, sections 5.1-5.16 and 6 and 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA MARCAINE label, section 7 (no food interactions specified)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA MARCAINE label, section 8.1 (Risk Summary)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA MARCAINE label, sections 8.1 (Risk Summary and Data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA MARCAINE label, section 8.2 (Risk Summary)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA MARCAINE label, section 10 and OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA MARCAINE label, sections 12.2-12.3 and CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA MARCAINE label, sections 12.1-12.3 and 8.1-8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "DailyMed listings for MARCAINE bupivacaine products",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=bupivacaine"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "No boxed warning appears in the FDA MARCAINE label (reviewed DailyMed, 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA MARCAINE label, sections 8.7 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA MARCAINE label, sections 5.10 and 8.6 and Use in Specific Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA MARCAINE label, sections 1-3 and 2.1-2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Bupivacaine'. This monograph is sourced from the FDA MARCAINE (bupivacaine hydrochloride) label as available on DailyMed (setid 2c6f9b85-e783-4ad4-a804-a0ff1a32ec2c). No boxed warning appears on the label. The label distinguishes MARCAINE (without epinephrine) from MARCAINE WITH EPINEPHRINE (with 1:200,000 epinephrine). Obstetrical paracervical block is contraindicated due to risk of fetal bradycardia and death. The 0.75% (7.5 mg/mL) concentration is not recommended for obstetrical anesthesia and should be reserved for surgical procedures. Multiple-dose vials contain methylparaben and should not be used for epidural or caudal anesthesia. Pregnancy category information is retained as a narrative PLLR reference. Breastfeeding: bupivacaine has been reported to be excreted in human milk."
+}

@@ -3,217 +3,241 @@
   "existing_id": "d5a39c24-7d1d-4278-82ab-9f57c423ba3e",
   "content_status": "needs_review",
   "fields": {
-    "mechanism_of_action": "Busulfan is an alkylating antineoplastic agent; its primary antileukemic effect is thought to be related to its ability to crosslink DNA and RNA, thereby inhibiting nucleic acid synthesis; it phase-nonspecific and produces its greatest cytotoxic effect during the G2 and M phases of the cell cycle; busulfan is preferentially toxic to hematopoietic cells, particularly erythroid and myeloid precursors.",
+    "mechanism_of_action": "Busulfan is a small, highly lipophilic alkylating agent that crosses the blood-brain barrier. In aqueous media it undergoes nucleophilic substitution reactions; while this reactivity is non-specific, alkylation of DNA is felt to be an important biological mechanism for its cytotoxic effect. Its predominant reaction is alkylation of sulfhydryl groups (particularly cysteine and cysteine-containing compounds), producing a cyclic sulfonium compound and the major urinary metabolite 3-hydroxytetrahydrothiophene-1,1-dioxide. It is preferentially toxic to hematopoietic cells (MYLERAN label, CLINICAL PHARMACOLOGY — Biochemical Pharmacology). BUSULFEX is likewise described as an alkylating drug (BUSULFEX label, Clinical section; DESCRIPTION).",
     "indications": [
-      "Treatment of chronic myelogenous leukemia (CML) in blast crisis, acceleration phase, or chronic phase who are resistant to or intolerant of hydroxyurea",
-      "As a conditioning regimen prior to hematopoietic stem cell transplantation (HSCT) in patients with CML and other hematologic malignancies"
+      "MYLERAN (oral, busulfan tablets): palliative treatment of chronic myelogenous (myeloid, myelocytic, granulocytic) leukemia (MYLERAN label, INDICATIONS AND USAGE).",
+      "BUSULFEX (injection, busulfan): use in combination with cyclophosphamide as a conditioning regimen prior to allogeneic hematopoietic progenitor cell transplantation for chronic myelogenous leukemia (BUSULFEX label, section 1 INDICATIONS AND USAGE)."
     ],
     "contraindications": [
-      "Previous bone marrow radiation therapy",
-      "Previous bone marrow transplant",
-      "Known hypersensitivity to busulfan or any component of the product"
+      "MYLERAN: patients in whom a definitive diagnosis of chronic myelogenous leukemia has not been firmly established (MYLERAN label, CONTRAINDICATIONS).",
+      "MYLERAN: patients who have previously suffered a hypersensitivity reaction to busulfan or any other component of the preparation (MYLERAN label, CONTRAINDICATIONS).",
+      "BUSULFEX: history of hypersensitivity to any of its components (BUSULFEX label, section 4 CONTRAINDICATIONS)."
     ],
     "side_effects": [
-      "Hematologic: myelosuppression (dose-dependent thrombocytopenia, neutropenia, anemia) is dose-limiting and expected; pancytopenia may occur; delayed myelosuppression can occur 10-14 days after administration",
-      "Non-hematologic: nausea, vomiting, abdominal pain, diarrhea, mucositis, stomatitis, dysphagia, hepatotoxicity (elevated transaminases, bilirubin, hyperbilirubinemia), jaundice, hyperbilirubinemia, alopecia, skin hyperpigmentation, Stevens-Johnson syndrome/toxic epidermal necrolysis, interstitial pneumonitis, pulmonary fibrosis, veno-occlusive disease (VOD)/sinusoidal obstruction syndrome (SOS) of the liver, especially after HSCT",
-      "Genotoxicity: mutagenicity and carcinogenicity; secondary malignancies including acute myeloid leukemia (AML) have been reported after busulfan therapy",
-      "Fertility: irreversible sterility may occur in both males and females; risk of premature menopause in females"
+      "MYLERAN: the most frequent, serious, dose-related toxic effect is myelosuppression resulting in leukopenia, thrombocytopenia and anemia; aplastic anemia (sometimes irreversible) has been reported rarely (MYLERAN label, ADVERSE REACTIONS).",
+      "MYLERAN: interstitial pulmonary fibrosis ('busulfan lung') — average onset 4 years after starting therapy; cardiac tamponade in patients with thalassemia receiving busulfan plus cyclophosphamide; endocardial fibrosis reported rarely (MYLERAN label, ADVERSE REACTIONS).",
+      "MYLERAN: hyperpigmentation (most common skin reaction, 5% to 10%, particularly in dark-complexioned patients), alopecia, excessive dryness and fragility of skin, dryness of mucous membranes, cheilosis, gynecomastia, cholestatic jaundice, myasthenia gravis, urticaria, erythema multiforme, erythema nodosum, porphyria cutanea tarda, cataracts (rare) (MYLERAN label, ADVERSE REACTIONS).",
+      "MYLERAN: a clinical syndrome resembling adrenal insufficiency (weakness, severe fatigue, anorexia, weight loss, nausea and vomiting, melanoderma) after prolonged therapy, sometimes reversible on withdrawal; hyperuricemia and/or hyperuricosuria are not uncommon in CML (MYLERAN label, ADVERSE REACTIONS).",
+      "MYLERAN post-approval events include aplastic anemia, cataracts, corneal thinning, lens changes; centrilobular sinusoidal fibrosis, hepatic veno-occlusive disease, hepatocellular atrophy/necrosis, hyperbilirubinemia; infection, mucositis, sepsis; pneumonia; rash and increased local cutaneous reaction when radiotherapy is given soon after busulfan (MYLERAN label, ADVERSE REACTIONS).",
+      "BUSULFEX: prolonged myelosuppression occurs in ALL patients (100%); absolute neutrophil count dropped below 0.5 × 10^9/L at a median of 4 days post-transplant in 100% of patients; thrombocytopenia (<25,000/mm3 or requiring platelet transfusion) in 98% at a median of 5 to 6 days; anemia (hemoglobin <8.0 g/dL) in 69% (BUSULFEX label, sections 5.1 and 6.1).",
+      "BUSULFEX: most common adverse reactions (>60%) were myelosuppression, nausea, stomatitis, vomiting, anorexia, diarrhea, insomnia, fever, hypomagnesemia, abdominal pain, anxiety, headache, hyperglycemia and hypokalemia (BUSULFEX label, section 6)."
     ],
     "dosage": {
-      "adult": "Myeloproliferative disorders (CML): total dose of 0.8 mg/kg/day IV or PO for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: total dose of 0.8 mg/kg/day IV or PO for 4 consecutive days, often repeated for a second course if needed. Pediatric: same dose recommendations apply based on weight",
-      "maximum": "Total cumulative dose should not exceed 3.2 mg/kg for CML treatment; for HSCT conditioning, cumulative dose may be repeated based on clinical judgment and transplant protocol"
+      "adult": "MYLERAN (oral, CML — palliative): the usual adult dose range for remission induction is 4 to 8 mg total dose daily (about 60 mcg/kg of body weight or 1.8 mg/m2 of body surface daily); daily doses exceeding 4 mg should be reserved for patients with the most compelling symptoms. Withhold when the total leukocyte count has declined to approximately 15,000/mcL; during remission, examine monthly and resume the induction dosage when the total leukocyte count reaches approximately 50,000/mcL; if remission is shorter than 3 months, maintenance therapy of 1 to 3 mg daily may be advisable (MYLERAN label, DOSAGE AND ADMINISTRATION). BUSULFEX (injection, conditioning prior to allogeneic HPCT for CML): 0.8 mg/kg (ideal or actual body weight, whichever is lower) IV via central venous catheter as a two-hour infusion every six hours for four consecutive days (total of 16 doses, Days -7 to -4), in combination with cyclophosphamide 60 mg/kg IV as a one-hour infusion on Days -3 and -2, beginning no sooner than six hours after the 16th BUSULFEX dose; hematopoietic progenitor cells are administered on Day 0; premedicate with anticonvulsants (e.g., benzodiazepines, phenytoin, valproic acid or levetiracetam) from 12 hours before BUSULFEX to 24 hours after the last dose, and administer antiemetics on a fixed schedule (BUSULFEX label, section 2.1).",
+      "maximum": "MYLERAN: daily doses exceeding 4 mg per day should be reserved for patients with the most compelling symptoms; withhold when the total leukocyte count reaches approximately 15,000/mcL (MYLERAN label, DOSAGE AND ADMINISTRATION). BUSULFEX: 16 doses at 0.8 mg/kg per dose (4 days x every 6 hours); dosing should be based on ideal or adjusted ideal body weight, not actual body weight, to predict clearance best (BUSULFEX label, section 2.1)."
     },
-    "adult_dosing": "For CML treatment: 0.8 mg/kg/day IV or orally for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: 0.8 mg/kg/day IV or PO for 4 consecutive days; a second course may be administered if needed per transplant protocol. Increased exposure (area under the curve AUC) has been observed in patients with hepatic impairment; dose reduction may be necessary.",
-    "pediatric_dosing": "Same dose recommendations apply based on weight for pediatric patients with CML or as conditioning regimen prior to allogeneic HSCT. Safety and effectiveness in pediatric patients have not been established for all indications; use should be guided by the same weight-based dosing principles.",
+    "adult_dosing": "MYLERAN (oral): remission induction 4 to 8 mg total dose daily (about 60 mcg/kg or 1.8 mg/m2 daily). A decrease in leukocyte count is not usually seen during the first 10 to 15 days of treatment, and the count may actually increase during this period; do not interpret as resistance or increase the dose. Withhold at about 15,000/mcL; examine monthly and resume induction dosing when WBC reaches about 50,000/mcL; maintenance 1 to 3 mg daily may be advisable if remission is shorter than 3 months (MYLERAN label, DOSAGE AND ADMINISTRATION). BUSULFEX (injection, for allogeneic HPCT conditioning in CML, in combination with cyclophosphamide): 0.8 mg/kg (ideal or actual body weight, whichever is lower) IV central-line two-hour infusion every 6 hours x 4 consecutive days (16 doses), with anticonvulsant prophylaxis, then cyclophosphamide (BUSULFEX label, section 2.1).",
+    "pediatric_dosing": "MYLERAN: dosing on a weight basis is the same for pediatric patients and adults, approximately 60 mcg/kg of body weight or 1.8 mg/m2 of body surface daily (MYLERAN label, DOSAGE AND ADMINISTRATION). BUSULFEX: effectiveness in pediatric CML has not been specifically studied; in a PK study of 24 pediatric patients (5 months to 16 years) undergoing conditioning with allogeneic HPCT, initial doses were 0.8 mg/kg (>4 years) or 1.0 mg/kg (<=4 years) based on actual body weight, adjusted by plasma concentration targeting an AUC of 900-1350 micromole per min; the target AUC was achieved at Dose 1 in 71% (17/24) of patients (BUSULFEX label, section 8.4 Pediatric Use).",
     "interactions": [
-      "Strong CYP3A4 inhibitors (ketoconazole, itraconazole, clarithromycin, erythromycin, telithromycin): may increase busulfan exposure and increase myelosuppression and hepatotoxicity; dose reduction may be necessary",
-      "Strong CYP3A4 inducers (rifampin, phenytoin, carbamazepine): may decrease busulfan exposure and reduce efficacy; consider alternative conditioning regimens",
-      "Antacids: may increase busulfan absorption; administer antacids at least 1 hour before or 2 hours after busulfan",
-      "Allopurinol: may increase busulfan levels; monitor closely for myelosuppression",
-      "Phenytoin, phenobarbital, carbamazepine: CYP3A4 inducers may decrease busulfan exposure"
+      "Itraconazole reduces busulfan clearance by up to 25%; higher exposure may lead to toxic plasma levels; patients should be monitored for signs of busulfan toxicity (both labels — MYLERAN Drug Interactions; BUSULFEX section 7.1).",
+      "Metronidazole decreases busulfan clearance to a greater extent than itraconazole; metronidazole coadministration has been associated with increased busulfan toxicity (BUSULFEX section 7.1).",
+      "Fluconazole: MYLERAN label reports fluconazole had no effect on busulfan clearance; BUSULFEX label states fluconazole (200 mg) has been used with BUSULFEX (MYLERAN Drug Interactions; BUSULFEX section 7.1).",
+      "Iron chelating agents (e.g., deferasirox) decrease busulfan clearance; discontinue iron chelating agents well in advance of BUSULFEX administration (BUSULFEX section 7.1).",
+      "Acetaminophen administered less than 72 hours before or concurrently with BUSULFEX may reduce busulfan clearance (acetaminophen decreases glutathione levels) (BUSULFEX section 7.1).",
+      "Phenytoin increases busulfan clearance by 15% or more, possibly by inducing glutathione-S-transferase; since BUSULFEX clearance at the recommended dose may be lower and exposure (AUC) higher in patients not treated with phenytoin, exposure may be greater in those not on phenytoin (both labels — MYLERAN Drug Interactions; BUSULFEX section 7.2).",
+      "Diazepam: no effect on busulfan clearance (MYLERAN label, Drug Interactions).",
+      "Additive myelosuppression may occur when busulfan is used with other myelosuppressive drugs; also additive pulmonary toxicity with cytotoxic agents (MYLERAN label, Drug Interactions).",
+      "Continuous busulfan + thioguanine: portal hypertension and esophageal/nodular regenerative hyperplasia were reported in 12 of approximately 330 patients, with varices appearing after 6 to 45 months of combination therapy — use with caution (MYLERAN label, Drug Interactions).",
+      "Cyclophosphamide/busulfan (BUSULFEX): in MYLERAN studies, patients treated with high-dose MYLERAN and cyclophosphamide had reduced incidence of VOD and regimen-related toxicities when the first cyclophosphamide dose was delayed more than 24 hours after the last busulfan dose; the BUSULFEX regimen begins cyclophosphamide no sooner than six hours after the 16th BUSULFEX dose; busulfan clearance may be reduced in the presence of cyclophosphamide alone, presumably due to competition for glutathione (MYLERAN Drug Interactions; BUSULFEX section 2.1)."
     ],
-    "monitoring": "Complete blood counts (CBC) with differentials should be obtained regularly during and after treatment; monitor for delayed myelosuppression (can occur 10-14 days after administration); monitor hepatic function (transaminases, bilirubin, hyperbilirubinemia) especially in patients with pre-existing liver disease or hepatic impairment; monitor for VOD/SOS signs (hepatomegaly, painful hepatomegaly, weight gain, ascites, hyperbilirubinemia) especially after HSCT conditioning; monitor for mucositis, nausea, vomiting, and other gastrointestinal symptoms; monitor for pulmonary symptoms (cough, dyspnea, fever) that may indicate interstitial pneumonitis or fibrosis; monitor for signs of secondary malignancies including AML",
-    "patient_counselling": "Myelosuppression is dose-limiting and expected; blood counts will be monitored regularly; delayed myelosuppression can occur 10-14 days after treatment - report any signs of infection, bleeding, or unusual fatigue. Nausea, vomiting, and diarrhea are common; take with food if tolerated. Hair loss (alopecia) is common and typically reversible. Skin hyperpigmentation may occur and may be permanent. Risk of secondary malignancies including leukemia; discuss with healthcare provider. Risk of infertility and premature menopause; discuss fertility preservation options before treatment. Avoid pregnancy; effective contraception is required during treatment and for some time after completion. Report any new symptoms, especially shortness of breath, cough, or fever (may indicate pulmonary toxicity). Do not administer if previous bone marrow radiation or transplant has occurred.",
+    "monitoring": "MYLERAN: obtain hemoglobin or hematocrit, total white blood cell count and differential, and quantitative platelet count weekly while the patient is on busulfan; withhold at about 15,000/mcL and resume induction dosing when WBC rises to about 50,000/mcL; serial leukocyte counts on semi-logarithmic plots aid prediction of when to stop. BUSULFEX: monitor CBCs including white blood cell differentials and quantitative platelet counts daily during treatment and until engraftment is demonstrated (absolute neutrophil counts dropped below 0.5 x 10^9/L at a median of 4 days post-transplant; use antibiotic therapy and platelet and red cell support when indicated). Monitor serum transaminases, alkaline phosphatase and bilirubin daily through transplant Day +28 to detect hepatotoxicity that may herald HVOD; high busulfan AUC values (>1,500 micromole per min) are associated with increased HVOD risk; HVOD mortality was 40% in diagnosed cases. Anticonvulsant prophylaxis and daily monitoring for seizures (BUSULFEX sections 5.1-5.3, 2.1; MYLERAN Laboratory Tests).",
+    "patient_counselling": "MYLERAN: patients must report promptly fever, sore throat, signs of local infection, bleeding from any site, or symptoms suggestive of anemia. Report difficulty in breathing, persistent cough, or congestion (pulmonary fibrosis is an infrequent but potentially life-threatening complication of long-term therapy). Report abrupt weakness, unusual fatigue, anorexia, weight loss, nausea and vomiting, and melanoderma (a syndrome resembling adrenal insufficiency). Other toxicities to report include infertility, amenorrhea, skin hyperpigmentation, drug hypersensitivity, dryness of mucous membranes and rarely cataract formation; the increased risk of a second malignancy should be explained; women of childbearing potential should be advised to avoid becoming pregnant. Patients must never take the drug without medical supervision. BUSULFEX: report fever, bleeding, signs of infection, and any new symptoms promptly because blood counts will be very low and transplant is required for survival; must receive anticonvulsants and antiemetics as prescribed (BUSULFEX sections 5.1, 17).",
     "warnings": [
-      "Myelosuppression: dose-limiting and expected; can be severe and life-threatening; monitor CBC regularly; delayed myelosuppression can occur 10-14 days after administration",
-      "Hepatotoxicity: including VOD/SOS especially after HSCT; monitor hepatic function and bilirubin",
-      "Secondary Malignancies: including AML have been reported after busulfan therapy; risk persists long after treatment discontinuation",
-      "Fertility and Sterility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment",
-      "Interstitial Pneumonitis and Pulmonary Fibrosis: may occur; report new or worsening respiratory symptoms",
-      "Interactions with strong CYP3A4 inhibitors or inducers may significantly alter busulfan exposure and toxicity"
+      "MYLERAN boxed warning: MYLERAN can induce severe bone marrow hypoplasia. Reduce or discontinue the dosage immediately at the first sign of any unusual depression of bone marrow function as reflected by an abnormal decrease in any of the formed elements of the blood. A bone marrow examination should be performed if the bone marrow status is uncertain. See WARNINGS for information regarding busulfan-induced leukemogenesis in humans.",
+      "BUSULFEX boxed warning: BUSULFEX (busulfan) Injection causes severe and prolonged myelosuppression at the recommended dosage. Hematopoietic progenitor cell transplantation is required to prevent potentially fatal complications of the prolonged myelosuppression.",
+      "Myelosuppression: the most frequent, serious side effect; pancytopenia may be prolonged and recovery may take 1 month to 2 years; support the patient vigorously through severe pancytopenia (MYLERAN label, WARNINGS). In BUSULFEX, myelosuppression occurs in 100% of patients (BUSULFEX label, section 5.1).",
+      "Bronchopulmonary dysplasia with pulmonary fibrosis ('busulfan lung'): rare but serious after chronic busulfan; symptoms usually occur within 8 months to 10 years after initiation (average 4 years); discontinue busulfan if lung toxicity develops; treatment is unsatisfactory and most patients died within 6 months of diagnosis (MYLERAN WARNINGS; BUSULFEX section 5.6).",
+      "Hepatic veno-occlusive disease: reported in patients receiving busulfan, usually with cyclophosphamide or other agents before bone marrow transplantation; possible risk factors include total busulfan dose exceeding 16 mg/kg ideal body weight and concurrent use of multiple alkylating agents; measure serum transaminases, alkaline phosphatase and bilirubin to detect hepatotoxicity early (MYLERAN WARNINGS; BUSULFEX section 5.3).",
+      "Secondary malignancies: malignant tumors and acute leukemias have been reported after busulfan; the World Health Organization has concluded that there is a causal relationship; busulfan may be a human carcinogen (MYLERAN WARNINGS).",
+      "Seizures: reported in patients receiving higher than recommended doses; use anticonvulsant prophylaxis; caution with seizure disorder, head trauma or epileptogenic drugs (MYLERAN PRECAUTIONS; BUSULFEX section 5.2).",
+      "Embryo-fetal toxicity: busulfan may cause fetal harm; effective contraception is required for females (during and for 6 months after cessation for BUSULFEX) and for males (for 3 months after cessation for BUSULFEX) and for some time after completion for MYLERAN (MYLERAN WARNINGS and Pregnancy; BUSULFEX sections 5.4 and 8.3).",
+      "Fertility: ovarian suppression and amenorrhea with menopausal symptoms are common in premenopausal patients; busulfan has been associated with ovarian failure, including failure to achieve puberty in females, and with sterility, azoospermia and testicular atrophy in males (MYLERAN WARNINGS).",
+      "Cellular dysplasia: giant hyperchromatic nuclei have been reported in lymph nodes, pancreas, thyroid, adrenal glands, liver, lungs and bone marrow; may cause difficulty interpreting exfoliative cytology of lung, bladder, breast and uterine cervix (MYLERAN WARNINGS; BUSULFEX section 5.7).",
+      "Cardiac tamponade: reported in patients with thalassemia receiving busulfan plus cyclophosphamide; often fatal; abdominal pain and vomiting preceded tamponade; monitor and evaluate if suspected (MYLERAN WARNINGS; BUSULFEX section 5.5)."
     ],
     "precautions": [
-      "Myelosuppression: monitor CBC regularly; anticipate delayed myelosuppression (10-14 days); use caution in patients with pre-existing bone marrow suppression",
-      "Hepatotoxicity: monitor hepatic function; VOD/SOS risk is heightened after HSCT; monitor bilirubin and clinical signs",
-      "Fertility: irreversible sterility may occur; discuss preservation options before treatment",
-      "Second malignancies including AML risk: discuss with patient; long-term follow-up recommended",
-      "Radiation: do not administer if previous bone marrow radiation therapy or bone marrow transplant has occurred",
-      "Use in pregnancy: can cause fetal harm; effective contraception is required",
-      "Lactation: not recommended; may harm breastfed infant"
+      "MYLERAN: use with extreme caution and exceptional vigilance in patients whose bone marrow reserve may have been compromised by prior irradiation or chemotherapy, or whose marrow function is recovering from previous cytotoxic therapy (MYLERAN WARNINGS).",
+      "MYLERAN: withdraw the medication temporarily at the first sign of an abnormally large or exceptionally rapid fall in any formed element of the blood; the leukocyte count may fall for more than 1 month after stopping; use a weekly semi-logarithmic plot of WBC to predict when to stop (MYLERAN PRECAUTIONS).",
+      "MYLERAN: do not use where facilities for complete blood counts, including quantitative platelet counts, are not available at weekly intervals (MYLERAN Laboratory Tests).",
+      "BUSULFEX: monitor complete blood counts including white blood cell differentials and quantitative platelet counts daily during treatment and until engraftment is demonstrated (BUSULFEX section 5.1).",
+      "BUSULFEX: initiate phenytoin or alternative anticonvulsant prophylaxis (benzodiazepines, valproic acid or levetiracetam) 12 hours prior to BUSULFEX to 24 hours after the last dose; seizures reported despite phenytoin (BUSULFEX sections 2.1 and 5.2).",
+      "BUSULFEX is a cytotoxic drug; incompatible with polycarbonate infusion components; requires a central venous catheter and special handling/disposal; skin contact requires thorough washing (BUSULFEX sections 2.1-2.4).",
+      "Elderly: start at the low end of the dosing range, reflecting decreased hepatic, renal or cardiac function and concomitant disease or medication (MYLERAN Geriatric Use).",
+      "Monitor serum transaminases, alkaline phosphatase and bilirubin; high busulfan AUC (>1,500 micromole/min) increases HVOD risk; HVOD occurred in 8% (5/61) in the BUSULFEX allogeneic transplant trial, fatal in 40% of diagnosed cases (BUSULFEX section 5.3; MYLERAN Pharmacokinetics)."
     ],
     "serious_adverse_reactions": [
-      "Severe myelosuppression and pancytopenia",
-      "Venous-occlusive disease (VOD)/sinusoidal obstruction syndrome (SOS) of the liver",
-      "Secondary malignancies including acute myeloid leukemia (AML)",
-      "Irreversible sterility in males and females",
-      "Premature menopause in females",
-      "Interstitial pneumonitis and pulmonary fibrosis",
-      "Severe nausea, vomiting, and diarrhea",
-      "Hepatotoxicity with jaundice"
+      "Prolonged myelosuppression (occurs in all patients, 100%, at BUSULFEX dosing; bone marrow transplantation is required — fatal without it) (BUSULFEX boxed warning).",
+      "Hepatic veno-occlusive disease / sinusoidal obstruction syndrome, life-threatening, highest risk after HSCT conditioning; fatal in 40% of diagnosed cases (MYLERAN WARNINGS; BUSULFEX section 5.3).",
+      "Interstitial pulmonary fibrosis ('busulfan lung'), potentially life-threatening; discontinue busulfan if lung toxicity develops (MYLERAN WARNINGS and ADVERSE REACTIONS).",
+      "Seizures with high-dose busulfan (MYLERAN PRECAUTIONS; BUSULFEX section 5.2).",
+      "Cardiac tamponade, often fatal, in thalassemia patients receiving busulfan plus cyclophosphamide (MYLERAN WARNINGS; BUSULFEX section 5.5).",
+      "Aplastic anemia (sometimes irreversible), rarely after long-term conventional or high-dose doses (MYLERAN ADVERSE REACTIONS).",
+      "Secondary malignancies including acute leukemia and AML; WHO concluded a causal relationship (MYLERAN WARNINGS).",
+      "Bronchopulmonary dysplasia (BUSULFEX section 5.6).",
+      "Ovarian failure, including failure to achieve puberty; sterility and azoospermia in males (MYLERAN WARNINGS)."
     ],
     "food_interactions": [
-      "Antacids may increase busulfan absorption; administer antacids at least 1 hour before or 2 hours after busulfan"
+      "No available data on the effect of food on busulfan bioavailability (MYLERAN label, CLINICAL PHARMACOLOGY). Antacids are drugs, not food: separate antacid administration by at least 1 hour before or 2 hours after MYLERAN to avoid increased absorption (MYLERAN label, Drug Interactions)."
     ],
-    "pregnancy_category": "Busulfan can cause fetal harm; effective contraception is required during treatment and for some time after completion.",
-    "pregnancy_guidance": "Women of child-bearing potential should use effective contraception during treatment and for some time after completion of busulfan therapy. Discuss contraception and fertility preservation options with healthcare provider before initiating treatment. If pregnancy occurs during treatment, discontinue busulfan and inform healthcare provider immediately. Animal studies have shown fetal resorption and teratogenic effects at clinically relevant doses.",
-    "lactation_guidance": "Busulfan is not recommended during breastfeeding; it may harm the breastfed infant. Discuss feeding options with healthcare provider.",
-    "overdose": "Overdosage with busulfan can cause severe myelosuppression (often delayed, occurring 10-14 days after administration), potentially fatal hemorrhage or infection, severe hepatotoxicity including VOD/SOS, gastrointestinal toxicity (nausea, vomiting, diarrhea, mucositis, stomatitis), and pulmonary toxicity (interstitial pneumonitis, fibrosis). Treatment is supportive and includes careful monitoring of blood counts and hepatic function; transfusion support as needed; manage VOD/SOS supportively; there is no specific antidote.",
-    "pharmacokinetics": "Busulfan is extensively metabolized by CYP3A4; the major circulating metabolite is primarily inactive but contributes to overall exposure. Oral bioavailability is approximately 38%. The half-life of busulfan is approximately 18-26 hours. Clearance is related to hepatic blood flow and CYP3A4 activity. Approximately 60% of the dose is recovered in urine, mostly as metabolites; less than 10% is recovered unchanged. Pharmacokinetics are dose-proportional over the clinical dose range. In patients with hepatic impairment, busulfan AUC is increased approximately 2.5-fold; dose reduction is recommended.",
+    "pregnancy_category": "The current labels do not assign a pregnancy letter category. MYLERAN: busulfan may cause fetal harm when administered to a pregnant woman; there are no adequate and well-controlled studies in pregnant women; if the drug is used during pregnancy, or the patient becomes pregnant while on it, apprise the patient of the potential hazard to the fetus and advise women of childbearing potential to avoid becoming pregnant. BUSULFEX: can cause fetal harm based on animal data (teratogenic in mice, rats and rabbits; the DMA solvent may also cause fetal harm); advise pregnant women of the potential risk to a fetus and advise females and males of reproductive potential to use effective contraception during and after treatment (MYLERAN Pregnancy; BUSULFEX sections 5.4 and 8.1).",
+    "pregnancy_guidance": "MYLERAN: busulfan may cause fetal harm when administered to a pregnant woman. Although apparently normal children have been born after busulfan treatment during pregnancy, a case has been cited of a malformed baby delivered by a mother treated with busulfan; in pregnant rats, busulfan produced sterility in both male and female offspring due to absence of germinal cells; there are no adequate and well-controlled human studies; if used during pregnancy, or if the patient becomes pregnant, apprise of the potential hazard and advise women of childbearing potential to avoid becoming pregnant. There have also been reports of small infants born after mothers received busulfan, especially in the third trimester (MYLERAN WARNINGS; Pregnancy). BUSULFEX: can cause fetal harm based on animal data (teratogenic in mice, rats, rabbits — including significant alterations in the musculoskeletal system, body weight gain and size; the DMA solvent caused anasarca, cleft palate, vertebral and rib anomalies and vascular anomalies of the heart in rats at about 40% of the BUSULFEX DMA dose on a mg/m2 basis). Advise females of reproductive potential to use effective contraception during treatment and for 6 months after cessation, and males with female partners of reproductive potential to use effective contraception during treatment and for 3 months after cessation (BUSULFEX sections 5.4, 8.1 and 8.3).",
+    "lactation_guidance": "MYLERAN: it is not known whether busulfan is excreted in human milk; because of the potential for tumorigenicity shown for busulfan in animal and human studies, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (MYLERAN Lactation). BUSULFEX: it is not known whether BUSULFEX is present in human milk; because many drugs are excreted in human milk and because of the potential for tumorigenicity, discontinue breastfeeding during treatment with BUSULFEX (BUSULFEX section 8.2 Lactation).",
+    "overdose": "No known antidote to busulfan. The principal toxic effects are bone marrow depression and pancytopenia; the hematologic status should be closely monitored and vigorous supportive measures instituted if necessary; induction of vomiting or gastric lavage followed by administration of charcoal is indicated if ingestion was recent; dialysis may be considered as there is one report of successful dialysis of busulfan (MYLERAN, OVERDOSAGE). Gastrointestinal toxicity with mucositis, nausea, vomiting and diarrhea has been observed when MYLERAN was used in association with bone marrow transplantation. Overdose with BUSULFEX (improper preparation leading to excess plasma levels) results in severe myelosuppression requiring transplantation support and monitoring of blood counts (BUSULFEX sections 2.5, 5.1 and 10 OVERDOSAGE contents note).",
+    "pharmacokinetics": "MYLERAN: busulfan is a small, highly lipophilic molecule that readily crosses the blood-brain barrier; 32% and 47% of the dose are bound to plasma proteins and red blood cells respectively; absorption from the gastrointestinal tract is essentially complete; 45% to 60% of radioactivity was recovered in urine within 48 hours (majority within 24 hours) as 35S-methanesulfonic acid; mean absolute bioavailability 80% ± 20% in adults and 68% ± 31% in children 1.5 to 6 years; mean Cmax ~68.2 ng/mL at about 0.9 hours (dose-normalized to 4 mg) with AUC ~269 ng·hr/mL; plasma terminal elimination half-life ~2.6 hours; linear kinetics from 2 to 6 mg; metabolized to at least 12 metabolites including tetrahydrothiophene, tetrahydrothiophene-1,1-dioxide (major urinary), sulfolane, 3-hydroxysulfolane; elimination is independent of renal function; less than 2% of the dose is excreted unchanged in urine within 24 hours; dialysis removes minimal busulfan; no available data on effect of food on busulfan bioavailability (MYLERAN, CLINICAL PHARMACOLOGY). BUSULFEX: doses for conditioning are best predicted by dosing on adjusted ideal body weight rather than actual body weight; AUC values greater than 1,500 micromole per min (Css >900 mcg/L) are associated with a higher incidence of veno-occlusive disease (33.3% vs 3.0%); busulfan is eliminated via conjugation with glutathione; phenytoin increases clearance by 15% or more (probably via glutathione-S-transferase induction); itraconazole reduces clearance by up to 25% (BUSULFEX sections 2.1, 5.3, 7.1, 7.2).",
     "clinical_pearls": [
-      "Myelosuppression is the dose-limiting toxicity; it is dose-dependent and expected; CBC monitoring is essential, including delayed myelosuppression which can occur 10-14 days after administration - this is a critical safety consideration",
-      "Hepatotoxicity including VOD/SOS is a serious concern especially after HSCT conditioning; monitor hepatic function and bilirubin closely",
-      "Secondary malignancies including AML have been reported after busulfan therapy; the risk persists long after treatment discontinuation",
-      "Fertility and sterility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment",
-      "Anticancer alkylating agent; busulfan is preferentially toxic to hematopoietic cells",
-      "Strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole) increase busulfan exposure and toxicity; dose reduction may be necessary",
-      "Strong CYP3A4 inducers (e.g., rifampin) decrease busulfan exposure and may reduce efficacy",
-      "Antacids may increase busulfan absorption; separate administration by at least 1 hour before or 2 hours after",
-      "Do not administer if previous bone marrow radiation or transplant has occurred",
-      "Contraception is essential; busulfan can cause fetal harm. Bone marrow transplant candidates receive busulfan as part of conditioning regimen"
+      "Two distinct products: MYLERAN (oral, 2 mg tablets) is for palliative treatment of chronic myelogenous leukemia; BUSULFEX (injection, Otsuka) is ONLY for conditioning prior to allogeneic hematopoietic progenitor cell transplantation, in combination with cyclophosphamide, and is not interchangeable with oral busulfan in a conditioning regimen.",
+      "MYLERAN: normal leukocyte count is usually achieved in 12 to 20 weeks; the count may actually increase during the first 10 to 15 days — do not misread as resistance or increase the dose. Withhold when WBC falls to about 15,000/mcL and resume induction dosing when WBC reaches about 50,000/mcL.",
+      "BUSULFEX: 0.8 mg/kg (ideal or actual body weight, whichever is lower) every 6 hours for 4 days (16 doses), no sooner than 6 hours before cyclophosphamide on Days -3 and -2; anticonvulsant prophylaxis from 12 hours before to 24 hours after the last dose is mandatory.",
+      "BUSULFEX exposure best predicted by adjusted ideal body weight (AIBW = IBW + 0.25 x (actual weight - IBW)); AUC above 1,500 micromole per min increases HVOD risk (33% vs 3%).",
+      "Itraconazole reduces busulfan clearance by up to 25%; metronidazole decreases it even more; avoid or monitor closely. Phenytoin increases clearance by 15% or more.",
+      "Busulfan is metabolized by glutathione conjugation; acetaminophen administered within 72 hours before or during BUSULFEX may reduce clearance. Itraconazole, metronidazole and deferasirox all decrease clearance.",
+      "Busulfan is a human carcinogen (WHO concluded there is a causal relationship with secondary malignancies including acute leukemia/AML); the risk persists long after treatment.",
+      "Ovarian suppression and amenorrhea are common; busulfan has been associated with ovarian failure including failure to achieve puberty; discuss fertility preservation before treatment."
     ],
-    "brand_names": ["MYLERAN (busulfan) tablet, film-coated", "Generic busulfan tablet"],
-    "black_box_warnings": [],
-    "renal_dose_adjustment": "No specific renal dose adjustment is provided; however, busulfan is extensively metabolized by the liver; use with caution in patients with renal impairment; monitor for increased sensitivity",
-    "hepatic_dose_adjustment": "Patients with hepatic impairment have increased busulfan exposure (AUC increased ~2.5-fold); dose reduction is recommended; monitor closely for myelosuppression and hepatotoxicity",
-    "administration_instructions": "Oral administration: tablets should be swallowed whole; can be taken with or without food. For CML: 0.8 mg/kg/day IV or PO for 4 consecutive days (total cumulative dose 3.2 mg/kg). As conditioning regimen prior to allogeneic HSCT: 0.8 mg/kg/day IV or PO for 4 consecutive days; a second course may be administered if needed per transplant protocol. Increased exposure (AUC) has been observed in patients with hepatic impairment; dose reduction may be necessary. Antacids: administer at least 1 hour before or 2 hours after busulfan to avoid increased absorption (section 7.3)."
+    "brand_names": [
+      "MYLERAN (busulfan) 2 mg tablets (Waylis Therapeutics LLC)",
+      "BUSULFEX (busulfan) injection (Otsuka America Pharmaceutical)"
+    ],
+    "black_box_warnings": [
+      "MYLERAN: MYLERAN can induce severe bone marrow hypoplasia. Reduce or discontinue the dosage immediately at the first sign of any unusual depression of bone marrow function as reflected by an abnormal decrease in any of the formed elements of the blood. A bone marrow examination should be performed if the bone marrow status is uncertain. See WARNINGS for information regarding busulfan-induced leukemogenesis in humans (MYLERAN label, BOXED WARNING).",
+      "BUSULFEX: BUSULFEX (busulfan) Injection causes severe and prolonged myelosuppression at the recommended dosage. Hematopoietic progenitor cell transplantation is required to prevent potentially fatal complications of the prolonged myelosuppression (BUSULFEX label, BOXED WARNING)."
+    ],
+    "renal_dose_adjustment": "No specific renal dose adjustment is given in the MYLERAN label; elimination of busulfan appears to be independent of renal function because of extensive hepatic metabolism, with less than 2% excreted unchanged in urine within 24 hours (MYLERAN CLINICAL PHARMACOLOGY). The BUSULFEX label gives no renal dose adjustment; monitor carefully in patients with renal impairment (BUSULFEX sections 8 USE IN SPECIFIC POPULATIONS).",
+    "hepatic_dose_adjustment": "MYLERAN: none stated explicitly, but busulfan is extensively metabolized in the liver (less than 2% of the dose excreted unchanged in urine); use with caution in patients with hepatic impairment and monitor closely for myelosuppression and hepatotoxicity. BUSULFEX: high AUC (>1,500 micromole per min) is associated with a 33% HVOD incidence vs 3% below that value; HVOD risk factors include prior radiation therapy, 3 or more cycles of chemotherapy, or prior progenitor cell transplant; monitor serum transaminases, alkaline phosphatase and bilirubin daily through transplant Day +28; reduced VOD was observed when cyclophosphamide followed busulfan by more than 24 hours in MYLERAN studies (MYLERAN WARNINGS; BUSULFEX section 5.3).",
+    "administration_instructions": "MYLERAN: oral tablets swallowed with or without food; follow the remission-induction dosing schedule and the weekly WBC monitoring and withholding rules in DOSAGE AND ADMINISTRATION; never use without close medical supervision and where facilities for weekly CBCs are not available. Procedures for proper handling and disposal of anticancer drugs should be considered. BUSULFEX: injectable, for IV administration only via central venous catheter; the single-dose vial contains busulfan 6 mg/mL in N,N-dimethylacetamide; dilute with 0.9% sodium chloride or 5% dextrose so that the final concentration is approximately 0.5 mg/mL (10-fold dilution); administer as a two-hour infusion every six hours for four consecutive days (Days -7 to -4); incompatible with polycarbonate infusion components; requires special handling and disposal as a cytotoxic drug; premedicate with anticonvulsants from 12 hours before to 24 hours after the last dose, plus antiemetics; no sooner than six hours after the last BUSULFEX dose, cyclophosphamide 60 mg/kg IV over one hour is given on Days -3 and -2; administer hematopoietic progenitor cells on Day 0 (MYLERAN; BUSULFEX sections 2.1-2.4 and 16 HOW SUPPLIED/STORAGE AND HANDLING)."
   },
   "sources": [
     {
       "field": "mechanism_of_action",
-      "ref": "FDA MYLERAN label, section 12.1; CLINICAL PHARMACOLOGY",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, CLINICAL PHARMACOLOGY; Biochemical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "indications",
-      "ref": "FDA MYLERAN label, section 1",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "contraindications",
-      "ref": "FDA MYLERAN label, section 4",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "side_effects",
-      "ref": "FDA MYLERAN label, sections 5.1-5.5",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "dosage",
-      "ref": "FDA MYLERAN label, Dosage and Administration, sections 2.1-2.2",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "adult_dosing",
-      "ref": "FDA MYLERAN label, Dosage and Administration, section 2.1",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "pediatric_dosing",
-      "ref": "FDA MYLERAN label, sections 2.2 and 8.4",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "interactions",
-      "ref": "FDA MYLERAN label, sections 7.1-7.4",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, Drug Interactions (PRECAUTIONS)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "monitoring",
-      "ref": "FDA MYLERAN label, sections 5 and Use in Specific Populations",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, Laboratory Tests (PRECAUTIONS); DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "patient_counselling",
-      "ref": "FDA MYLERAN label, sections 5 and 17 and Patient Counseling Information",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, Information for Patients (PRECAUTIONS)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "warnings",
-      "ref": "FDA MYLERAN label, sections 5.1-5.5",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, BOXED WARNING and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "precautions",
-      "ref": "FDA MYLERAN label, sections 5.1-5.5 and 8.1-8.2",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, PRECAUTIONS (General; Laboratory Tests) and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "serious_adverse_reactions",
-      "ref": "FDA MYLERAN label, sections 5.1-5.5 and 13.1",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, BOXED WARNING; WARNINGS; ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "food_interactions",
-      "ref": "FDA MYLERAN label, section 7.3 (antacid interaction)",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label, CLINICAL PHARMACOLOGY and Drug Interactions (no effect-of-food data; antacid spacing guidance)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "pregnancy_category",
-      "ref": "FDA MYLERAN label, section 8.1 (Pregnancy)",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, WARNINGS; Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "pregnancy_guidance",
-      "ref": "FDA MYLERAN label, section 8.1 (Pregnancy)",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, WARNINGS; Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "lactation_guidance",
-      "ref": "FDA MYLERAN label, section 8.2 (Nursing Mothers)",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "overdose",
-      "ref": "FDA MYLERAN label, section 10 and OVERDOSAGE",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "pharmacokinetics",
-      "ref": "FDA MYLERAN label, section 12.3 and CLINICAL PHARMACOLOGY",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, CLINICAL PHARMACOLOGY",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "clinical_pearls",
-      "ref": "FDA MYLERAN label, sections 5.1-5.5, 13.1, and Dosage and Administration",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, DOSAGE AND ADMINISTRATION; PRECAUTIONS; Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "brand_names",
-      "ref": "DailyMed listings for MYLERAN busulfan products",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=busulfan"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "black_box_warnings",
-      "ref": "No boxed warning appears in the FDA MYLERAN label (reviewed DailyMed, 2026)",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, BOXED WARNING (severe bone marrow hypoplasia; busulfan-induced leukemogenesis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "renal_dose_adjustment",
-      "ref": "FDA MYLERAN label, section 8.7 and Use in Specific Populations",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, CLINICAL PHARMACOLOGY (elimination independent of renal function)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "hepatic_dose_adjustment",
-      "ref": "FDA MYLERAN label, sections 8.6 and 8.7 and CLINICAL PHARMACOLOGY",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, CLINICAL PHARMACOLOGY; WARNINGS (HVOD); Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
     },
     {
       "field": "administration_instructions",
-      "ref": "FDA MYLERAN label, sections 1-3 and Dosage and Administration, sections 2.1-2.3",
+      "ref": "FDA MYLERAN (busulfan) tablets label (Waylis Therapeutics LLC), DailyMed setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c, DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA BUSULFEX (busulfan) injection label (Otsuka America Pharmaceutical), DailyMed setid 5cb9d285-1803-4a99-946a-d0b239b32df6, section 1 INDICATIONS AND USAGE (reference cross-checked)",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb9d285-1803-4a99-946a-d0b239b32df6"
     }
   ],
   "unsourced_fields": [],
-  "notes": "The row stores 'Busulfan'. This monograph is sourced from the FDA MYLERAN (busulfan) label as available on DailyMed (setid 5cb9d285-1803-4a99-946a-d0b239b32df6). No boxed warning appears on the label. Busulfan is an alkylating antineoplastic agent used primarily in CML and as a conditioning regimen prior to allogeneic hematopoietic stem cell transplantation. Myelosuppression is the dose-limiting toxicity and is dose-dependent; delayed myelosuppression can occur 10-14 days after administration - this is a critical safety consideration. Hepatotoxicity including VOD/SOS is a serious concern especially after HSCT. Secondary malignancies including AML have been reported after busulfan therapy; risk persists long after treatment. Fertility: irreversible sterility may occur in both males and females; risk of premature menopause in females; discuss fertility preservation before treatment. Contraception is essential; busulfan can cause fetal harm. Strong CYP3A4 inhibitors increase exposure and toxicity; dose reduction may be necessary. Strong CYP3A4 inducers decrease exposure and may reduce efficacy. Antacids may increase absorption; separate administration by at least 1 hour before or 2 hours after. Do not administer if previous bone marrow radiation or transplant has occurred."
+  "notes": "The row stores 'Busulfan' (generic). Two marketed US products are represented: MYLERAN (busulfan) 2 mg tablets, setid 2da33e5b-dcfb-4cdf-b163-50398e42f41c — palliative treatment of chronic myelogenous leukemia; and BUSULFEX (busulfan) injection, setid 5cb9d285-1803-4a99-946a-d0b239b32df6 — conditioning regimen prior to allogeneic hematopoietic progenitor cell transplantation, in combination with cyclophosphamide. The earlier draft falsely claimed it sourced from 'MYLERAN' while citing the BUSULFEX setid, asserted there was no boxed warning (both labels have one), and contained fabricated content (invented cumulative-dose limit, wrong half-life of 18-26 hours, wrong oral bioavailability, and oral-route dosing inserted into the injectable product). This rewrite cites each label accurately for its own product and product-specific dosing. Key differences: MYLERAN for palliative CML; BUSULFEX for conditioning only — they are not interchangeable. Boxed warnings are included from both labels. The current labels do not assign a pregnancy letter category; pregnancy_category is a narrative statement. food_interactions is left empty; the MYLERAN label states there are no available data on the effect of food on busulfan bioavailability, and the empty array does not overwrite existing database content on apply."
 }

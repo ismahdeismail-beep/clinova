@@ -169,7 +169,7 @@
     },
     {
       "field": "black_box_warnings",
-      "ref": "No boxed warning appears in the FDA buprenorphine label (reviewed DailyMed, 2026)",
+      "ref": "FDA BUPRENORPHINE SUBLINGUAL TABLETS label (setid 699638dd-3a53-445f-a545-d0e6eabfe1c9) carries no BOXED WARNING section (verified against the label, 2026)",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=699638dd-3a53-445f-a545-d0e6eabfe1c9"
     },
     {
@@ -189,5 +189,5 @@
     }
   ],
   "unsourced_fields": [],
-  "notes": "The row stores 'Buprenorphine'. This monograph covers the principal FDA-approved buprenorphine products: SUBOXONE sublingual film/tablet (buprenorphine hydrochloride 8 mg/naloxone 2 mg) and SUBUTEX sublingual tablet (buprenorphine hydrochloride), indicated for the treatment of opioid dependence, and buprenorphine hydrochloride injection, indicated for the management of pain severe enough to require an opioid analgesic when alternate treatments are inadequate. The SL label is the one fetched from DailyMed (setid 699638dd-3a53-445f-a545-d0e6eabfe1c9). The injection product has its own label. The label includes Boxed WARNINGS for addiction/abuse/misuse, life-threatening respiratory depression, and risks from concomitant use with benzodiazepines or other CNS depressants, though the 'black_box_warnings' field is left empty because the label uses separate boxed warning formatting rather than a narrative field; these are documented in the warnings/precautions text. Neonatal Opioid Withdrawal Syndrome is a critical consideration with prenatal exposure. Sublingual tablets must not be swallowed; bioavailability is reduced if swallowed. Caution with CYP3A4 modulators."
+  "notes": "The row stores 'Buprenorphine'. This monograph covers the principal FDA-approved buprenorphine products: SUBOXONE sublingual film/tablet (buprenorphine hydrochloride 8 mg/naloxone 2 mg) and SUBUTEX sublingual tablet (buprenorphine hydrochloride), indicated for the treatment of opioid dependence, and buprenorphine hydrochloride injection, indicated for the management of pain severe enough to require an opioid analgesic when alternate treatments are inadequate. The SL label is the one fetched from DailyMed (setid 699638dd-3a53-445f-a545-d0e6eabfe1c9). The injection product has its own label. The SL label (setid 699638dd-3a53-445f-a545-d0e6eabfe1c9) does NOT print a boxed-warning section; its WARNINGS AND PRECAUTIONS cover addiction/abuse/misuse, life-threatening respiratory depression, concomitant use with benzodiazepines or other CNS depressants, unintentional pediatric exposure, neonatal opioid withdrawal syndrome (NOWS), adrenal insufficiency, severe hypotension, QTc prolongation and anaphylactic/allergic reactions. The black_box_warnings field is therefore empty with a source documenting that fact; the substance of those warnings is recorded in the warnings field. Neonatal Opioid Withdrawal Syndrome is a critical consideration with prenatal exposure. Sublingual tablets must not be swallowed; bioavailability is reduced if swallowed. Caution with CYP3A4 modulators."
 }

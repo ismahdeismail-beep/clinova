@@ -186,8 +186,18 @@
       "field": "administration_instructions",
       "ref": "FDA WELLBUTRIN label, sections 1-3 and Dosage and Administration",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=669be59d-3d37-46f8-9dc0-8ef7303be5db"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA WELLBUTRIN XL (bupropion HCl) extended-release label (Bausch Health US LLC), DailyMed setid a435da9d-f6e8-4ddc-897d-8cd2bf777b21, section 1.1 (MDD) and section 1.2 (Seasonal Affective Disorder)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a435da9d-f6e8-4ddc-897d-8cd2bf777b21"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA WELLBUTRIN SR (bupropion HCl) sustained-release label (GlaxoSmithKline), DailyMed setid cbc8c074-f080-4489-a5ae-207b5fadeba3 — WELLBUTRIN SR is NOT approved for smoking cessation; it contains the same active ingredient as ZYBAN, which is approved for smoking cessation (sections 5.2 and 17)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbc8c074-f080-4489-a5ae-207b5fadeba3"
     }
   ],
   "unsourced_fields": [],
-  "notes": "The row stores 'Bupropion'. This monograph covers the principal FDA-approved bupropion products: WELLBUTRIN SR and WELLBUTRIN XL (sustained-release tablets for Major Depressive Disorder and Seasonal Affective Disorder), and ZYBAN (sustained-release tablet for smoking cessation, same active ingredient as WELLBUTRIN SR but different formulation/indication). The boxed warning for suicidal ideation and behavior in young adults is a critical safety consideration. Bupropion SR is NOT approved for smoking cessation; ZYBAN is the approved formulation. Bupropion lowers the seizure threshold; contraindicated in patients with seizure disorders and bulimia/anorexia nervosa. Sustained-release tablets must be swallowed whole; do not crush, chew, or divide. Bupropion can increase blood pressure; monitor regularly. May induce mania/hypomania in patients with bipolar disorder; evaluate for bipolar disorder before initiating treatment."
+  "notes": "The row stores 'Bupropion'. This monograph covers the principal FDA-approved bupropion products: WELLBUTRIN SR and WELLBUTRIN XL (sustained-release tablets for Major Depressive Disorder and Seasonal Affective Disorder), and ZYBAN (sustained-release tablet for smoking cessation, same active ingredient as WELLBUTRIN SR but different formulation/indication). The primary label cited is the FDA bupropion HCl SR (extended-release) label on DailyMed, setid 669be59d-3d37-46f8-9dc0-8ef7303be5db (MDD). The Seasonal Affective Disorder indication is sourced from the FDA WELLBUTRIN XL label, setid a435da9d-f6e8-4ddc-897d-8cd2bf777b21 (Bausch Health US LLC), sections 1.1-1.2. The smoking-cessation limitation statement is sourced from the FDA WELLBUTRIN SR label (GSK), setid cbc8c074-f080-4489-a5ae-207b5fadeba3, which confirms WELLBUTRIN SR is not approved for smoking cessation and contains the same active ingredient as ZYBAN. Sources for indications deliberately list all three setids so every claim is traceable; other fields are drawn from the bupropion SR label unless otherwise stated. The boxed warning for suicidal ideation and behavior in young adults is a critical safety consideration. Confusing WELLBUTRIN SR/XL with ZYBAN is a common error: Bupropion SR is NOT approved for smoking cessation; ZYBAN is the approved formulation. Bupropion SR is NOT approved for smoking cessation; ZYBAN is the approved formulation. Bupropion lowers the seizure threshold; contraindicated in patients with seizure disorders and bulimia/anorexia nervosa. Sustained-release tablets must be swallowed whole; do not crush, chew, or divide. Bupropion can increase blood pressure; monitor regularly. May induce mania/hypomania in patients with bipolar disorder; evaluate for bipolar disorder before initiating treatment."
 }

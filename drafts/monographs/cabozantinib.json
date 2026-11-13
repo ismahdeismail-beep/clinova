@@ -1,0 +1,233 @@
+{
+  "name": "Cabozantinib",
+  "existing_id": "9ab36909-bbb9-4a94-ad57-790fa03361d3",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "In vitro biochemical and/or cellular assays have shown that cabozantinib inhibits the tyrosine kinase activity of MET, VEGFR-1, -2 and -3, AXL, RET, ROS1, TYRO3, MER, KIT, TRKB, FLT-3, and TIE-2. These receptor tyrosine kinases are involved in both normal cellular function and pathologic processes such as oncogenesis, metastasis, tumor angiogenesis, drug resistance, and maintenance of the tumor microenvironment (FDA CABOMETYX label, section 12.1 Mechanism of Action).",
+    "indications": [
+      "Advanced renal cell carcinoma (RCC), as a single agent (FDA label, section 1.1 Renal Cell Carcinoma).",
+      "Advanced RCC, in combination with nivolumab, for first-line treatment (FDA label, section 1.1).",
+      "Hepatocellular carcinoma (HCC) previously treated with sorafenib (FDA label, section 1.2 Hepatocellular Carcinoma).",
+      "Adult and pediatric patients 12 years of age and older with locally advanced or metastatic differentiated thyroid cancer (DTC) that has progressed following prior VEGFR-targeted therapy and who are radioactive iodine-refractory or ineligible (FDA label, section 1.3 Differentiated Thyroid Cancer).",
+      "Adult and pediatric patients 12 years of age and older with previously treated, unresectable, locally advanced or metastatic, well-differentiated pancreatic neuroendocrine tumors (pNET) (FDA label, section 1.4 Neuroendocrine Tumors).",
+      "Adult and pediatric patients 12 years of age and older with previously treated, unresectable, locally advanced or metastatic, well-differentiated extra-pancreatic neuroendocrine tumors (epNET) (FDA label, section 1.4)."
+    ],
+    "contraindications": [
+      "None (FDA label, section 4 CONTRAINDICATIONS — 'None.')."
+    ],
+    "side_effects": [
+      "The most common (>= 20%) adverse reactions as a single agent: diarrhea, fatigue, palmar-plantar erythrodysesthesia (PPE), decreased appetite, hypertension, nausea, vomiting, weight decreased, constipation (FDA label, HIGHLIGHTS; Adverse reactions; section 6.1).",
+      "In METEOR (CABOMETYX 60 mg vs everolimus, n=331 vs 322), adverse reactions in >= 25% of CABOMETYX-treated patients, in decreasing frequency: diarrhea (74%), fatigue (56%), nausea (50%), decreased appetite (46%), PPE (42%), hypertension, vomiting (32%), weight decreased, and constipation (25%); grade 3-4 reactions in >= 5% of patients were hypertension, diarrhea (11%), fatigue (9%), PPE (8%), hyponatremia, hypophosphatemia, hypomagnesemia, lymphopenia, anemia, hypokalemia, and increased GGT (FDA label, section 6.1).",
+      "Important serious adverse reactions described elsewhere in the label: hemorrhage, gastrointestinal perforations and fistulas, thromboembolic events, hypertension and hypertensive crisis, cardiac failure, diarrhea, PPE, hepatotoxicity, adrenal insufficiency (in combination with nivolumab), proteinuria, osteonecrosis of the jaw, impaired wound healing, reversible posterior leukoencephalopathy syndrome (RPLS), thyroid dysfunction, hypocalcemia and embryo-fetal toxicity (FDA label, sections 5.1-5.16).",
+      "Dose reductions were required in 60% of CABOMETYX patients in METEOR (vs 24% on everolimus); the most frequent reasons for dose reduction were diarrhea, PPE, fatigue and hypertension. Adverse reactions led to permanent discontinuation in 10% of patients (most often decreased appetite 2% and fatigue 1%) (FDA label, section 6.1).",
+      "Postmarketing: vascular disorders — arterial (including aortic) aneurysms, dissections and rupture (FDA label, section 6.2 Postmarketing Experience)."
+    ],
+    "dosage": {
+      "adult": "Recommended dosages (until disease progression or unacceptable toxicity). Renal cell carcinoma: single agent 60 mg orally once daily; in combination with nivolumab, 40 mg orally once daily plus nivolumab 240 mg every 2 weeks, 480 mg every 4 weeks, or nivolumab and hyaluronidase combinations (see the nivolumab prescribing information for those regimens). Hepatocellular carcinoma: 60 mg once daily. Differentiated thyroid cancer and neuroendocrine tumors (adults and pediatric patients 12 years of age and older): patients with bodyweight >= 40 kg, 60 mg once daily; pediatric patients 12 years of age and older with bodyweight < 40 kg, 40 mg once daily (FDA label, Table 1; section 2.2 Recommended Dosage).",
+      "maximum": "The recommended single-agent dose is 60 mg once daily (40 mg once daily in combination with nivolumab). For strong or moderate CYP3A4 inducers the dose may be increased by 20 mg as tolerated but must not exceed 80 mg daily. For moderate hepatic impairment, start at 40 mg daily (or 20 mg daily for pediatric patients >= 12 years and < 40 kg). Do not take a missed dose within 12 hours of the next dose (FDA label, sections 2.2, 2.5 and 2.6)."
+    },
+    "adult_dosing": "RCC single agent: 60 mg once daily. RCC first-line combination with nivolumab: 40 mg once daily with nivolumab 240 mg IV every 2 weeks, or 480 mg IV every 4 weeks, or nivolumab and hyaluronidase (600 mg plus 10,000 units subcutaneously every 2 weeks, or 1,200 mg plus 20,000 units every 4 weeks). HCC previously treated with sorafenib: 60 mg once daily. DTC and neuroendocrine tumors in adults and pediatric patients 12 years and older: 60 mg once daily (or 20 mg every other day/20 mg daily/40 mg daily step-downs per Table 2 for adverse reactions; 40 mg once daily for pediatric patients 12 years and older with bodyweight under 40 kg). Take on an empty stomach at least 1 hour before or 2 hours after eating; swallow whole; do not take a missed dose within 12 hours of the next dose (FDA label, sections 2.2, 2.3, Table 1 and Table 2).",
+    "pediatric_dosing": "Safety and effectiveness have been established in pediatric patients aged 12 years and older for DTC and neuroendocrine tumors (supported by adequate and well-controlled adult studies plus population pharmacokinetic data showing cabozantinib exposure within the same range as adults at recommended dosages). For DTC and NET in pediatric patients 12 years and older with bodyweight >= 40 kg: 60 mg once daily; for pediatric patients 12 years and older with bodyweight < 40 kg: 40 mg once daily (adverse-reaction reductions: 20 mg daily, then 20 mg every other day). The safety and effectiveness in pediatric patients less than 12 years of age have not been established. Physeal widening has been observed in children with open growth plates; physeal and longitudinal growth monitoring is recommended in children with open growth plates. Do not substitute CABOMETYX tablets with cabozantinib capsules (FDA label, sections 1.3, 1.4, 2.2, 2.3, 8.4 Pediatric Use).",
+    "interactions": [
+      "Strong CYP3A4 inhibitors: avoid coadministration; if unavoidable, reduce the daily CABOMETYX dose by 20 mg (e.g., 60 to 40 mg, or 40 to 20 mg) and resume the prior dose 2 to 3 days after the inhibitor is discontinued. Avoid grapefruit or grapefruit juice, which may also increase exposure (FDA label, sections 7.1, 2.4 and 12.3).",
+      "Strong or moderate CYP3A4 inducers: avoid coadministration; if unavoidable, increase the daily dose by 20 mg (e.g., 60 to 80 mg) as tolerated, without exceeding 80 mg daily, and resume the prior dose 2 to 3 days after the inducer is discontinued. Avoid St. John's wort, which may decrease exposure (FDA label, sections 7.1, 2.5 and 12.3).",
+      "The basis for these interactions is that cabozantinib is primarily metabolized by CYP3A4 (FDA label, section 12.3 Metabolism)."
+    ],
+    "monitoring": "Monitor for the following during treatment: hemorrhage (do not administer with recent hemorrhage history; withhold 3 weeks before any surgery including dental surgery), gastrointestinal perforation and fistulas, thromboembolic events (discontinue for myocardial infarction or serious thromboembolism), hypertension and hypertensive crisis (monitor blood pressure regularly; interrupt for uncontrolled hypertension; discontinue for hypertensive crisis or severe uncontrolled hypertension), cardiac failure, diarrhea (interrupt until <= Grade 1 then resume at reduced dose; use standard antidiarrheals), palmar-plantar erythrodysesthesia, hepatotoxicity (particularly ALT/AST elevations when combined with nivolumab; monitor liver enzymes before initiation, every 2 weeks for the first 3 months, then monthly; withhold or discontinue per combination rules), adrenal insufficiency (with combination therapy), proteinuria (check urine protein regularly), osteonecrosis of the jaw (dental examination before and during treatment; good oral hygiene), wound healing (withhold around surgery), RPLS, thyroid dysfunction (monitor thyroid function regularly), hypocalcemia (monitor serum calcium regularly), and physeal/longitudinal growth in children with open growth plates. Also monitor weight, appetite, blood pressure and signs of dehydration (FDA label, sections 5.1-5.16, 2.3, 8.4).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling. Contact the healthcare provider immediately for signs or symptoms of unusual severe bleeding or hemorrhage; seek medical attention for persistent or severe abdominal pain (possible gastrointestinal perforation or fistula); report new onset dyspnea, chest pain or localized limb edema (thromboembolic events); undergo routine blood pressure monitoring and contact the provider if blood pressure is elevated or if signs of hypertension develop; immediately report signs or symptoms of cardiac failure; notify the provider at the first signs of loose stools or increased bowel movements; contact the provider for progressive or intolerable rash; immediately report jaundice, severe nausea or vomiting, or easy bruising or bleeding; contact the provider immediately for signs or symptoms of adrenal insufficiency (combination therapy); report signs or symptoms of proteinuria; practice good oral hygiene and immediately report signs or symptoms of osteonecrosis of the jaw; inform the provider of any planned surgical procedure, since CABOMETYX impairs wound healing; immediately report new onset or worsening neurological function; note that thyroid function will be monitored regularly and immediately report signs or symptoms of thyroid dysfunction; serum calcium will be monitored and hypocalcemia signs should be reported immediately; females of reproductive potential must be advised of the potential risk to a fetus and to inform their provider of a known or suspected pregnancy, and must use effective contraception during treatment and for 4 months after the final dose; women should not breastfeed during treatment and for 4 months after the last dose; inform the provider of all prescription and nonprescription medications, vitamins and herbal products, and avoid grapefruit, grapefruit juice and St. John's wort. Take CABOMETYX on an empty stomach at least 1 hour before or at least 2 hours after eating (FDA label, section 17 PATIENT COUNSELING INFORMATION).",
+    "warnings": [
+      "Hemorrhage: CABOMETYX can cause severe and fatal hemorrhages. Do not administer to patients with a recent history of hemorrhage, including hemoptysis, hematemesis or melena. Grade 3 to 5 hemorrhage occurred in 5% of CABOMETYX-treated patients in RCC, HCC and DTC studies. Withhold for 3 weeks prior to scheduled surgery including dental surgery, do not administer for at least 2 weeks after major surgery and until adequate wound healing; permanently discontinue for Grade 3 or 4 hemorrhage (FDA label, section 5.1).",
+      "Perforations and Fistulas: GI perforations and fistulas can occur, including fatal cases (1% each); monitor for symptoms and discontinue for Grade 4 fistula or GI perforation (FDA label, section 5.2).",
+      "Thromboembolic Events: venous thromboembolism occurred in 7% (4% pulmonary embolism) and arterial thromboembolism in 2%, with fatal events; discontinue for myocardial infarction or serious arterial or venous thromboembolic events (FDA label, section 5.3).",
+      "Hypertension and Hypertensive Crisis: monitor blood pressure regularly; interrupt for hypertension not adequately controlled with anti-hypertensive therapy; discontinue for hypertensive crisis or severe hypertension that cannot be controlled (FDA label, section 5.4).",
+      "Cardiac Failure: monitor for signs and symptoms of cardiac failure throughout treatment; occurred in 0.5% of single-agent patients, including fatal cardiac failure in 0.1%; median time to onset 73 days (range 44-159 days) (FDA label, section 5.5).",
+      "Diarrhea: may be severe; interrupt until resolved or <= Grade 1, then resume at a reduced dose; recommend standard antidiarrheal treatments (FDA label, section 5.6).",
+      "Palmar-Plantar Erythrodysesthesia (PPE): interrupt until resolved or <= Grade 1, then resume at a reduced dose (FDA label, section 5.7).",
+      "Hepatotoxicity: when used in combination with nivolumab, higher frequencies of Grade 3 and 4 ALT and AST elevations may occur; monitor liver enzymes before initiation, every 2 weeks for the first 3 months, then monthly; withhold or discontinue with or without nivolumab per the combination rules (FDA label, section 5.8).",
+      "Adrenal Insufficiency: when used in combination with nivolumab, monitor for adrenal insufficiency (FDA label, section 5.9).",
+      "Proteinuria: monitor urine protein regularly; discontinue for nephrotic syndrome (FDA label, section 5.10).",
+      "Osteonecrosis of the Jaw: perform an oral examination before and during treatment; advise good oral hygiene; withhold for development of ONJ until complete resolution, then resume at a reduced dose (FDA label, section 5.11).",
+      "Impaired Wound Healing: withhold CABOMETYX 3 weeks prior to scheduled surgery and do not administer for at least 2 weeks after major surgery and until adequate wound healing (FDA label, section 5.12).",
+      "Reversible Posterior Leukoencephalopathy Syndrome: discontinue permanently for RPLS; evaluate with brain MRI if suspected (FDA label, section 5.13).",
+      "Thyroid Dysfunction: monitor thyroid function regularly; manage hypothyroidism or hyperthyroidism with hormone replacement or thionamides as appropriate (FDA label, section 5.14).",
+      "Hypocalcemia: monitor serum calcium levels regularly; permanently discontinue for severe hypocalcemia that cannot be corrected or that is life-threatening (FDA label, section 5.15).",
+      "Embryo-Fetal Toxicity: based on animal studies and its mechanism of action, CABOMETYX can cause fetal harm when administered to a pregnant woman; advise pregnant women of the potential risk to a fetus and females of reproductive potential to use effective contraception during treatment and for 4 months after the final dose (FDA label, section 5.16)."
+    ],
+    "precautions": [
+      "Do not substitute CABOMETYX tablets with cabozantinib capsules (different pharmacokinetics) (FDA label, section 2.1).",
+      "Stop CABOMETYX 3 weeks prior to scheduled surgery, including dental surgery, and do not administer for at least 2 weeks after major surgery and until adequate wound healing (FDA label, section 2.1).",
+      "Take on an empty stomach at least 1 hour before or at least 2 hours after eating (FDA label, section 2.2 and section 12.3 Food Effect).",
+      "Swallow tablets whole; do not crush, chew or split (FDA label, section 2.2).",
+      "Reduce the starting dose to 40 mg daily in moderate hepatic impairment (Child-Pugh B); avoid in severe hepatic impairment (Child-Pugh C), since it has not been studied in this population (FDA label, sections 2.6 and 8.6).",
+      "Strong CYP3A4 inhibitors increase cabozantinib exposure — avoid coadministration; if unavoidable, reduce the dose by 20 mg. Strong or moderate CYP3A4 inducers decrease exposure — avoid coadministration; if unavoidable, increase by 20 mg to a maximum of 80 mg daily. Avoid grapefruit, grapefruit juice and St. John's wort (FDA label, sections 2.4, 2.5, 7.1).",
+      "No dosage adjustment is recommended in mild or moderate renal impairment; there is no experience in severe renal impairment (FDA label, section 8.7).",
+      "High-fat meal increases cabozantinib Cmax and AUC by 41% and 57% respectively relative to fasted conditions — always take on an empty stomach (FDA label, section 12.3 Food Effect).",
+      "Children with open growth plates: monitor physeal and longitudinal growth (FDA label, section 8.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe and fatal hemorrhage (not to be administered with recent hemorrhage; withhold 3 weeks before surgery; permanently discontinue for Grade 3 or 4 hemorrhage) (FDA label, section 5.1).",
+      "Fatal gastrointestinal perforations and fistulas (1% each); discontinue for Grade 4 fistula or perforation (FDA label, section 5.2).",
+      "Fatal thromboembolic events: venous thromboembolism in 7% (4% pulmonary embolism) and arterial thromboembolism in 2%; discontinue for MI or serious thromboembolic events (FDA label, section 5.3).",
+      "Hypertensive crisis and severe uncontrolled hypertension (FDA label, section 5.4).",
+      "Cardiac failure, including fatal cardiac failure (0.5% of single-agent patients; 0.1% fatal; median onset 73 days) (FDA label, section 5.5).",
+      "Hepatotoxicity (higher frequency of Grade 3 and 4 ALT and AST elevations with nivolumab combination; monitor liver enzymes frequently) (FDA label, section 5.8).",
+      "Adrenal insufficiency with combination therapy (FDA label, section 5.9).",
+      "Nephrotic syndrome (discontinue) (FDA label, section 5.10).",
+      "Osteonecrosis of the jaw (FDA label, section 5.11).",
+      "Reversible posterior leukoencephalopathy syndrome (discontinue permanently) (FDA label, section 5.13).",
+      "Severe diarrhea (FDA label, section 5.6).",
+      "Embryo-fetal toxicity (can cause fetal harm) (FDA label, section 5.16).",
+      "Arterial (including aortic) aneurysms, dissections and rupture (postmarketing) (FDA label, section 6.2)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "The current CABOMETYX label does not assign a pregnancy letter category. Based on findings from animal studies and its mechanism of action, CABOMETYX can cause fetal harm when administered to a pregnant woman; there are no available data in pregnant women (FDA label, section 8.1 Pregnancy; Risk Summary).",
+    "pregnancy_guidance": "Based on findings from animal studies and its mechanism of action, CABOMETYX can cause fetal harm when administered to a pregnant woman. In embryo-fetal development studies in rats, cabozantinib throughout organogenesis caused increased embryo-fetal lethality at 0.03 mg/kg (approximately 0.12-fold human AUC at the recommended dose) with delayed ossification and skeletal variations at 0.01 mg/kg/day. In rabbits, cabozantinib caused visceral malformations and variations including reduced spleen size and missing lung lobe at 3 mg/kg (approximately 1.1-fold human AUC at the recommended dose). Advise pregnant women of the potential risk to a fetus. Verify the pregnancy status of females of reproductive potential prior to initiating CABOMETYX. Advise females of reproductive potential to use effective contraception during treatment and for 4 months after the final dose (FDA label, sections 5.16, 8.1 and 8.3).",
+    "lactation_guidance": "There is no information regarding the presence of cabozantinib or its metabolites in human milk, or their effects on the breastfed child or milk production. Because of the potential for serious adverse reactions in breastfed children, advise women not to breastfeed during treatment with CABOMETYX and for 4 months after the final dose (FDA label, section 8.2 Lactation).",
+    "overdose": "One case of overdosage was reported following administration of another formulation of cabozantinib in which a patient inadvertently took twice the intended dose for 9 days; the patient suffered Grade 3 memory impairment, Grade 3 mental status changes, Grade 3 cognitive disturbance, Grade 2 weight loss, and Grade 1 increase in BUN; the extent of recovery was not documented. The label provides no specific overdose treatment beyond standard supportive care (FDA label, section 10 OVERDOSAGE).",
+    "pharmacokinetics": "Repeat daily dosing for 19 days resulted in 4- to 5-fold mean cabozantinib accumulation (based on AUC) compared to a single dose; steady state was achieved by Day 15. Median Tmax ranged from 3 to 4 hours post-dose; a 19% increase in Cmax compared to a cabozantinib capsule formulation was observed after a single 140 mg dose, with less than 10% difference in AUC. Cabozantinib is highly protein bound and highly distributed; the volume of distribution and half-life support once-daily dosing (FDA label, section 12.3). Food effect: a high-fat meal increased cabozantinib Cmax and AUC by 41% and 57% respectively relative to fasted conditions — take on an empty stomach. Cabozantinib is primarily metabolized by CYP3A4 (see section 7 DRUG INTERACTIONS). Repeat daily dosing to steady state by day 15 (FDA label, section 12.3 Pharmacokinetics).",
+    "clinical_pearls": [
+      "CABOMETYX (tablets) is NOT interchangeable with cabozantinib capsules — different pharmacokinetics; do not substitute (FDA label, section 2.1).",
+      "Take on an empty stomach at least 1 hour before or 2 hours after eating, because a high-fat meal increases Cmax by 41% and AUC by 57% (FDA label, sections 2.2 and 12.3 Food Effect).",
+      "As a single agent the recommended dose is 60 mg once daily; in combination with nivolumab for first-line advanced RCC the dose is 40 mg once daily with nivolumab; DTC and NET (adults and pediatric >= 12 years) use 60 mg once daily, or 40 mg for pediatric < 40 kg (FDA label, Table 1).",
+      "Hold CABOMETYX for intolerable Grade 2 or any Grade 3 or 4 adverse reactions and for osteonecrosis of the jaw; resume at a reduced dose after resolution to baseline or Grade 1; permanently discontinue for Grade 3 or 4 hemorrhage, GI perforation or Grade 4 fistula, myocardial infarction or serious thromboembolic events, hypertensive crisis, RPLS and nephrotic syndrome (FDA label, section 2.3).",
+      "Strong CYP3A4 inhibitors: reduce dose by 20 mg; strong or moderate CYP3A4 inducers: increase dose by 20 mg up to a maximum of 80 mg daily (FDA label, sections 2.4, 2.5).",
+      "Moderate hepatic impairment (Child-Pugh B): start at 40 mg daily (20 mg for pediatric < 40 kg); avoid in severe hepatic impairment (FDA label, sections 2.6 and 8.6)."
+    ],
+    "brand_names": [
+      "CABOMETYX (cabozantinib) tablets 20 mg, 40 mg and 60 mg (Exelixis, Inc.)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage adjustment is recommended in patients with mild or moderate renal impairment. There is no experience with CABOMETYX in patients with severe renal impairment (FDA label, section 8.7 Renal Impairment; section 12.3 Pharmacokinetics).",
+    "hepatic_dose_adjustment": "Increased exposure to cabozantinib has been observed in patients with moderate (Child-Pugh B) hepatic impairment: reduce the starting dose of CABOMETYX 60 mg daily to 40 mg daily, or 40 mg daily to 20 mg daily (for pediatric patients 12 years of age and older with bodyweight less than 40 kg). Avoid CABOMETYX in patients with severe hepatic impairment (Child-Pugh C), since it has not been studied in this population (FDA label, sections 2.6 and 8.6 Hepatic Impairment).",
+    "administration_instructions": "Administer CABOMETYX on an empty stomach at least 1 hour before or at least 2 hours after eating. Swallow tablets whole; do not crush, chew or split. Do not take a missed dose within 12 hours of the next scheduled dose. Stop CABOMETYX 3 weeks prior to scheduled surgery, including dental surgery, and do not administer for at least 2 weeks after major surgery and until adequate wound healing. When used in combination with nivolumab for advanced RCC, administer CABOMETYX 40 mg once daily and nivolumab as prescribed, referring to the nivolumab prescribing information; withhold or discontinue both drugs for hepatic adverse reactions per the combination rules. Reduce the dose for adverse reactions per the label's Table 2 and Table 3; strong CYP3A4 inhibitors require a 20 mg dose reduction and strong or moderate CYP3A4 inducers allow a 20 mg increase up to 80 mg daily; reduce the dose for moderate hepatic impairment (FDA label, sections 2.1-2.6 and 2.2 Recommended Dosage)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 1 INDICATIONS AND USAGE (1.1-1.4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 4 CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 6.1 Clinical Trial Experience (METEOR), 6.2 Postmarketing Experience, and 5.1-5.16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 2.2 Recommended Dosage (Table 1)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 2.2 Recommended Dosage (Table 1); section 2.3 (Tables 1-4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 1.3, 1.4, 2.2, 2.3 and 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 7 DRUG INTERACTIONS; sections 2.4 and 2.5; section 12.3 (CYP3A metabolism)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 5.1-5.16, 2.3 and 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 17 PATIENT COUNSELING INFORMATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 5.1-5.16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 2.1, 2.2, 2.4-2.6, 8.4, 8.6, 8.7 and 12.3 (Food Effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 5.1-5.16 and 6.2 Postmarketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, (no clinically actionable food-interaction statement beyond the empty-stomach requirement; food effect documented in section 12.3 and field left empty)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 5.16, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 2.1-2.6, 2.2, 7.1, 8.6 and 12.3 (Food Effect)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 3 DOSAGE FORMS AND STRENGTHS; section 16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, (no boxed warning in the FDA CABOMETYX label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, section 8.7 Renal Impairment; section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 2.6 and 8.6 Hepatic Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.), DailyMed setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, sections 2.1, 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3850cce2-6137-42e5-a792-d318c4a4b3b5"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Cabozantinib'. This monograph is sourced from the FDA CABOMETYX (cabozantinib) tablets label (Exelixis, Inc.) as published on DailyMed, setid 3850cce2-6137-42e5-a792-d318c4a4b3b5, updated October 2025. CABOMETYX (tablets) must not be substituted with cabozantinib capsules. The label carries no boxed warning and lists no contraindications. Cmax and AUC increase by 41% and 57% respectively after a high-fat meal, so CABOMETYX must be taken on an empty stomach (food_interactions is therefore left empty, which does not overwrite existing database content on apply). Adverse-reaction management follows the label's Tables 2 and 3. Pediatric use (>= 12 years, DTC and NET) is established; younger pediatric use is not. The current label does not assign a pregnancy letter category, so pregnancy_category is a narrative statement. Children with open growth plates require physeal and longitudinal growth monitoring."
+}

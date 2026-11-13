@@ -1,0 +1,210 @@
+{
+  "name": "Cabergoline",
+  "existing_id": "6b1680da-0091-4bb0-a664-b36721aebb4b",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Cabergoline is an ergot derivative and dopamine receptor agonist with a high affinity for D2 receptors. Results of in vitro studies demonstrate that cabergoline exerts a direct inhibitory effect on the secretion of prolactin by rat pituitary lactotrophs. Cabergoline decreased serum prolactin levels in reserpinized rats. Receptor-binding studies indicate that cabergoline has low affinity for dopamine D1, alpha1- and alpha2-adrenergic, and 5-HT1- and 5-HT2-serotonin receptors (FDA cabergoline tablets label, section 12.1 Mechanism of Action).",
+    "indications": [
+      "Cabergoline tablets is an ergot derivative indicated for the treatment of hyperprolactinemic disorders, either idiopathic or due to pituitary adenomas in adults (FDA label, section 1 Indications and Usage).",
+      "Limitation of use: avoid use of cabergoline tablets for the inhibition or suppression of postpartum physiologic lactation because of the risk of serious adverse reactions (FDA label, section 1 Limitations of Use; section 5.4)."
+    ],
+    "contraindications": [
+      "Uncontrolled hypertension (FDA label, section 4 Contraindications).",
+      "Known hypersensitivity to ergot derivatives (FDA label, section 4).",
+      "History of cardiac valvular disorders, as suggested by anatomical evidence of valvulopathy of any valve, determined by pre-treatment evaluation including echocardiographic demonstration of valve leaflet thickening, valve restriction, or mixed valve restriction-stenosis, or history of pericardial fibrosis (FDA label, section 4).",
+      "History of pleural, pulmonary, or retroperitoneal fibrosis (FDA label, section 5.2)."
+    ],
+    "side_effects": [
+      "In the 4-week, double-blind, placebo-controlled trial in hyperprolactinemic females (n=168 cabergoline, n=20 placebo), the most common adverse reactions (incidence >=1% and more frequent than placebo) were nausea (27% vs 20%), headache (26% vs 25%), dizziness (15% vs 5%), constipation (10% vs 0%), fatigue (7% vs 0%), postural hypotension (4% vs 0%), dyspepsia (2% vs 0%), vomiting (2% vs 0%), nervousness (2% vs 0%) and vertigo (1% vs 0%) (FDA label, section 6.1; Table 1).",
+      "Postmarketing experience: psychiatric — impulse control disorders and compulsive behaviors including hypersexuality, increased libido and pathological gambling, psychotic disorder and aggression; skin and subcutaneous — alopecia (FDA label, section 6.2).",
+      "Clinically significant adverse reactions described elsewhere in the label: cardiac valvulopathy and pericardial fibrosis, pleural/retroperitoneal/pulmonary fibrosis, orthostatic hypotension (4% vs 0% in the placebo-controlled trial), and impulse control disorders and compulsive behaviors (FDA label, sections 6 and 5.1, 5.2, 5.3, 5.5).",
+      "Safety was evaluated in more than 900 patients with hyperprolactinemic disorders (FDA label, section 6.1)."
+    ],
+    "dosage": {
+      "adult": "The recommended starting dosage is 0.25 mg orally twice weekly. Titrate to achieve normal serum prolactin levels by increasing the dose by 0.25 mg orally twice weekly at intervals of no less than 4 weeks. The maximum recommended dosage is 1 mg orally twice weekly. Administer with or without food. Before initiating cabergoline tablets, evaluate for valvular heart disease including with an echocardiogram; if valvular disease is detected, do not administer. If the patient becomes pregnant, discontinue cabergoline tablets if the risks to the mother or fetus outweigh the benefits (FDA label, section 2.2 Recommended Dosage).",
+      "maximum": "The maximum recommended dosage is 1 mg orally twice weekly. Dosage increases should be at intervals of no less than 4 weeks (FDA label, section 2.2)."
+    },
+    "adult_dosing": "0.25 mg orally twice weekly; titrate by 0.25 mg twice weekly at intervals of no less than 4 weeks to normal serum prolactin levels; maximum 1 mg twice weekly; take with or without food; perform cardiovascular evaluation including echocardiogram before starting; do not start if valvular disease is detected (FDA label, sections 2.1 and 2.2).",
+    "pediatric_dosing": "Safety and effectiveness of cabergoline tablets in pediatric patients have not been established (FDA label, section 8.4 Pediatric Use).",
+    "interactions": [
+      "Dopamine D2-receptor antagonists, such as phenothiazines, butyrophenones, thioxanthenes, or metoclopramide: cabergoline tablets, a dopamine receptor agonist, is not recommended for concomitant use with D2 antagonists (FDA label, section 7 DRUG INTERACTIONS).",
+      "Concomitant drugs that lower blood pressure: the risk of orthostatic hypotension is greater in cabergoline tablets-treated patients when taking concomitant drugs that lower blood pressure; check blood pressure at baseline and during treatment and monitor for orthostatic hypotension (FDA label, section 5.3)."
+    ],
+    "monitoring": "Before initiating cabergoline tablets, perform a cardiovascular evaluation including an echocardiogram; do not administer if valvular disease is detected. During treatment, monitor for the development of valvulopathy with a cardiac echocardiogram at intervals of 6 to 12 months (or as clinically indicated with new-onset edema, cardiac murmur, dyspnea or heart failure); monitor for chest pain and signs and symptoms of heart failure and if heart failure occurs, exclude valvular fibrosis and pericarditis. Consider monitoring such as ESR, serum creatinine, chest x-ray and other investigations and cardiac imaging at baseline and as necessary. Monitor for pleural, pulmonary and retroperitoneal fibrosis (e.g., dyspnea, persistent cough, loin/flank pain, lower limb edema, abdominal masses or tenderness) and discontinue cabergoline tablets if fibrosis occurs. Check blood pressure at baseline and during treatment and monitor for orthostatic hypotension. Specifically ask about new or increased gambling urges, sexual urges, uncontrolled spending or other urges and consider dose reduction or stopping if these develop. Monitor liver function and use with caution in hepatic impairment (FDA label, sections 2.1, 5.1-5.5, 8.6).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling (Patient Information). Fibrotic conditions: report shortness of breath, chest pain, persistent cough, difficulty breathing when lying down, or swelling in the extremities. Orthostatic hypotension: rise slowly from a supine or sitting position and report dizziness or lightheadedness. Impulse control disorders: report new or increased uncontrolled spending, gambling urges, sexual urges or other urges. Pregnancy: notify the healthcare provider if pregnancy is suspected, occurs, or is intended; a pregnancy test should be done if pregnancy is suspected and continuation should be discussed. Take cabergoline tablets with or without food and do not stop abruptly without consulting the prescriber. Postpartum lactation should not be suppressed or inhibited with cabergoline tablets (FDA label, section 17 PATIENT COUNSELING INFORMATION; sections 1 and 5.4).",
+    "warnings": [
+      "Cardiac Valvulopathy and Pericardial Fibrosis: perform a cardiovascular evaluation including echocardiogram before initiating; cabergoline tablets is contraindicated in valvular disease or pericardial fibrosis. Discontinue if the patient has a new diagnosis of valvular regurgitation, valvular restriction, valve leaflet thickening or pericarditis. Postmarketing cases have been reported, generally at high doses for Parkinson's disease (not an approved use), but also at lower doses for hyperprolactinemic disorders. In a 12-year retrospective cohort study in PD, cabergoline was associated with an increased risk of cardiac valvular regurgitation (incidence rate 68 per 10,000 person-years vs 10 for non-ergot dopamine agonists and 11 for levodopa) (FDA label, section 5.1).",
+      "Pleural, Pulmonary and Retroperitoneal Fibrosis: contraindicated with a history of fibrosis of these sites. Monitor for dyspnea, persistent cough and chest pain, and for renal impairment or ureteral/abdominal vascular obstruction; discontinue if pleural, pericardial, retroperitoneal or pulmonary fibrosis occurs (FDA label, section 5.2).",
+      "Orthostatic Hypotension: check blood pressure at baseline and during treatment; the risk is greater with concomitant drugs that lower blood pressure; in the placebo-controlled trial, orthostatic hypotension occurred in 4% of cabergoline tablets-treated patients and 0% of placebo (FDA label, section 5.3).",
+      "Risks with Use of Cabergoline Tablets for Postpartum Lactation Inhibition or Suppression: avoid use for inhibition or suppression of postpartum physiologic lactation because of the risk of serious adverse reactions (a related dopamine agonist used for this unapproved purpose, bromocriptine, has been associated with hypertension, stroke, myocardial infarction, seizures and death) (FDA label, section 5.4).",
+      "Impulse Control Disorders and Compulsive Behaviors: patients may experience intense urges to gamble, spend money, increased sexual urges, binge eating or other urges with inability to control them; specifically ask patients; consider dose reduction or stopping cabergoline tablets if such urges develop (FDA label, section 5.5)."
+    ],
+    "precautions": [
+      "Perform a cardiovascular evaluation including echocardiogram before initiating cabergoline tablets; monitor for valvulopathy with echocardiograms at intervals of 6 to 12 months or as clinically indicated, and monitor for heart failure signs and symptoms (FDA label, section 5.1).",
+      "Monitor for pleural, pulmonary and retroperitoneal fibrosis with ESR, serum creatinine, chest x-ray and other investigations at baseline and as necessary; discontinue if fibrosis occurs (FDA label, section 5.2).",
+      "Use caution in patients treated with other drugs associated with valvulopathy; use cabergoline tablets only if the potential benefit outweighs the risk (FDA label, section 5.1).",
+      "Hepatic impairment: the use of cabergoline tablets in patients with severe hepatic impairment (Child-Pugh C) is not recommended; in moderate hepatic impairment (Child-Pugh B), increase monitoring of adverse reactions; mild impairment (Child-Pugh A) needs no change (FDA label, section 8.6 Hepatic Impairment).",
+      "Caution in patients with concomitant drugs that lower blood pressure, because of increased orthostatic hypotension risk (FDA label, section 5.3).",
+      "Patients with severe hepatic impairment had increased cabergoline exposure which may increase the risk of cabergoline tablets-associated adverse reactions (FDA label, section 8.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac valvulopathy and pericardial fibrosis (cases reported postmarketing; can manifest as heart failure) (FDA label, section 5.1).",
+      "Pleural, pulmonary and retroperitoneal fibrosis (postmarketing cases reported; improvement of pulmonary symptoms has followed discontinuation) (FDA label, section 5.2).",
+      "Impulse control disorders and compulsive behaviors, including hypersexuality, increased libido and pathological gambling; psychotic disorder and aggression (postmarketing) (FDA label, sections 6.2 and 5.5).",
+      "Orthostatic hypotension (4% in the placebo-controlled trial) (FDA label, sections 5.3 and 6.1).",
+      "Avoid use for postpartum lactation inhibition or suppression because of the risk of serious adverse reactions (FDA label, section 5.4).",
+      "Postmarketing alopecia (FDA label, section 6.2)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "If conception occurs during cabergoline tablets therapy, discontinue cabergoline tablets if the risks to the mother or fetus outweigh the benefits to the mother. In general, avoid use of dopamine agonists, including cabergoline tablets, during pregnancy and the postpartum period; the risks increase in pregnant females with pregnancy-induced hypertension or preeclampsia/eclampsia (FDA label, section 8.1 Pregnancy; Risk Summary and Clinical Considerations).",
+    "pregnancy_guidance": "If conception occurs during cabergoline tablets therapy, discontinue cabergoline tablets if the risks to the mother or fetus outweigh the benefits to the mother. The estimated background risk of major birth defects and miscarriage in patients with hyperprolactinemic disorders is unknown; in the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively. In general, avoid use of dopamine agonists, including cabergoline tablets, during pregnancy and the postpartum period. The risks of cabergoline tablets use increase in pregnant females with pregnancy-induced hypertension, preeclampsia or eclampsia; hyperprolactinemic disorders are associated with infertility, which improves once prolactin levels are normalized, so hyperprolactinemic patients are at increased risk of becoming pregnant (FDA label, section 8.1 Pregnancy; Risk Summary and Clinical Considerations).",
+    "lactation_guidance": "Avoid use of cabergoline tablets for the inhibition or suppression of postpartum physiologic lactation because of the risk of serious adverse reactions; use of bromocriptine, another dopamine agonist used for this unapproved purpose, has been associated with cases of hypertension, stroke, myocardial infarction, seizures and death (FDA label, section 5.4). The label does not provide a specific infant lactation-exposure assessment for cabergoline used to treat hyperprolactinemic disorders (FDA label, sections 5.4 and 8.2).",
+    "overdose": "Take measures to support blood pressure, if necessary. Consider contacting the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdose management recommendations (FDA label, section 10 OVERDOSAGE).",
+    "pharmacokinetics": "The time to reach maximum cabergoline plasma concentration was 2 to 3 hours after single oral doses of 0.5 mg to 1.5 mg (1.5 times the maximum recommended dose) in healthy subjects; plasma levels appeared dose-proportional after dosing from 0.5 mg to 7 mg. The absolute bioavailability is unknown, and a significant fraction of the administered dose undergoes a first-pass effect. High-fat food did not alter the pharmacokinetics of cabergoline. Protein binding was 40% to 42%. The elimination half-life estimated from urinary data in 12 healthy subjects ranged between 63 and 69 hours. Cabergoline is extensively metabolized, predominately via hydrolysis of the acylurea bond or the urea moiety; hydrolysis abolishes the prolactin-lowering effect, and major metabolites identified thus far do not contribute to the therapeutic effect. After oral dosing of radioactive cabergoline to 5 healthy volunteers, approximately 22% and 60% of the dose was excreted within 20 days in urine and feces, respectively, with less than 4% excreted unchanged in urine; nonrenal and renal clearances are about 3.2 L/min and 0.08 L/min. In a pharmacokinetic hepatic impairment study, no effect on mean AUC was observed in 4 patients with mild hepatic impairment (Child-Pugh A); patients with moderate or severe hepatic impairment had increased cabergoline exposure (FDA label, section 12.3 Pharmacokinetics and Clinical Pharmacology; specific populations).",
+    "clinical_pearls": [
+      "Cabergoline is indicated only for hyperprolactinemic disorders, either idiopathic or due to pituitary adenomas, in adults — not for Parkinson's disease and not for postpartum lactation suppression, both of which are explicitly outside this use (FDA label, sections 1, 5.1 and 5.4).",
+      "Compare with bromocriptine: cabergoline is a more potent, longer-acting D2 agonist with twice-weekly dosing; the label warns against use for lactation suppression, a use classically associated with bromocriptine and its serious adverse reactions (FDA label, section 5.4).",
+      "Recommended starting dose 0.25 mg twice weekly, titrated by 0.25 mg twice weekly no more often than every 4 weeks, to normal serum prolactin levels; the maximum recommended dosage is 1 mg twice weekly (FDA label, section 2.2).",
+      "Get an echocardiogram before starting and at 6 to 12 monthly intervals during treatment; discontinue if valvulopathy or fibrosis develops; this is the single most important safety step (FDA label, sections 2.1, 5.1 and 5.2).",
+      "High-fat food does not alter cabergoline pharmacokinetics, so it may be taken with or without food (FDA label, section 12.3).",
+      "The elimination half-life is 63 to 69 hours, allowing twice-weekly dosing (FDA label, section 12.3).",
+      "Impulse-control and compulsive behaviors (gambling, spending, sexual urges) are recognizable by direct patient questioning; reduce the dose or stop if they occur (FDA label, section 5.5)."
+    ],
+    "brand_names": [
+      "Cabergoline tablets 0.5 mg (Renata PLC), NDC 27808-315-01"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific dose adjustment for renal impairment is stated in the label. Nonrenal and renal clearances for cabergoline are about 3.2 L/min and 0.08 L/min, and urinary excretion in hyperprolactinemic patients was similar to that in healthy subjects; cabergoline is extensively metabolized, with less than 4% of a dose excreted unchanged in urine (FDA label, section 12.3 Pharmacokinetics).",
+    "hepatic_dose_adjustment": "The use of cabergoline tablets in patients with severe hepatic impairment (Child-Pugh C) is not recommended. In moderate hepatic impairment (Child-Pugh B), increase monitoring of cabergoline tablets-associated adverse reactions. The recommendations for use in mild hepatic impairment (Child-Pugh A) are the same as those with normal hepatic function. Patients with moderate or severe hepatic impairment had increased cabergoline exposure, which may increase the risk of cabergoline tablets-associated adverse reactions (FDA label, section 8.6 Hepatic Impairment; section 12.3 Pharmacokinetics).",
+    "administration_instructions": "Take cabergoline tablets orally with or without food. The recommended starting dosage is 0.25 mg twice weekly, titrated by 0.25 mg twice weekly no more often than every 4 weeks to normal serum prolactin levels, to a maximum of 1 mg twice weekly. Before initiating, evaluate for valvular heart disease including with an echocardiogram; do not administer if valvular disease is detected. If cabergoline tablets needs to be discontinued, do so according to clinical response; cabergoline tablets should be discontinued if the patient has a new diagnosis of valvular regurgitation, valvular restriction, valve leaflet thickening or pericarditis, or develops pleural, pericardial, retroperitoneal or pulmonary fibrosis. Store at controlled room temperature 20 to 25 degrees C (68 to 77 degrees F); store the tablets in the original container (FDA label, sections 2.1, 2.2, 5.1, 5.2 and 16 HOW SUPPLIED/STORAGE AND HANDLING)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 4 Contraindications; section 5.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 6.1 Clinical Trials Experience (Table 1); section 6.2 Postmarketing Experience",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 2.2 Recommended Dosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 2.1 and 2.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 7 DRUG INTERACTIONS; section 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 2.1, 5.1-5.5 and 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 17 PATIENT COUNSELING INFORMATION; sections 1 and 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 5.1-5.3, 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 5.1-5.5 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, (no food-interaction statement of clinical concern; high-fat food does not alter pharmacokinetics; field left empty)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 8.1 Pregnancy (Risk Summary and Clinical Considerations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 5.4 Risks with Use of Cabergoline Tablets for Postpartum Lactation Inhibition or Suppression; section 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 1, 2.2, 5.1-5.5, 5.4, 12.3 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, (no boxed warning in the FDA cabergoline tablets label)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, section 8.6 Hepatic Impairment; section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA cabergoline tablets label (Renata PLC), DailyMed setid 8562f94f-a59a-4893-aefc-ea6547b01e92, sections 2.1, 2.2, 5.1, 5.2 and 16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8562f94f-a59a-4893-aefc-ea6547b01e92"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Cabergoline'. This monograph is sourced from the FDA cabergoline tablets label (Renata PLC) as published on DailyMed, setid 8562f94f-a59a-4893-aefc-ea6547b01e92. Cabergoline is an ergot derivative dopamine D2 receptor agonist indicated for hyperprolactinemic disorders (idiopathic or due to pituitary adenomas) in adults; it is NOT approved for Parkinson's disease and the label warns against use for postpartum lactation suppression. The label carries no boxed warning. Food does not alter cabergoline pharmacokinetics (high-fat food had no effect), so food_interactions is left empty, which does not overwrite existing database content on apply. Before starting and periodically (every 6 to 12 months), the label requires cardiovascular evaluation including echocardiography to detect valvulopathy and discontinuation if valvulopathy or fibrosis occurs; the label also requires asking about impulse-control behaviors. The current label does not assign a pregnancy letter category, so pregnancy_category is a narrative statement."
+}

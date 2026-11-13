@@ -1,0 +1,144 @@
+{
+  "name": "Calamine",
+  "existing_id": "84e6e9a9-d2ef-46b8-b242-c5203276f126",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": null,
+    "indications": [
+      "Skin protectant that dries the oozing and weeping of poison ivy, poison oak and poison sumac (FDA OTC label, Active ingredients / Purpose / Use)."
+    ],
+    "contraindications": null,
+    "side_effects": null,
+    "dosage": {
+      "adult": "Shake well before using. Apply as needed to the affected area (FDA OTC label, Directions).",
+      "maximum": "The label does not set a fixed maximum; Directions say 'apply as needed'. Stop use and ask a doctor if the condition worsens, if symptoms last more than 7 days, or if symptoms clear up and occur again within a few days (FDA OTC label, Directions and Warnings)."
+    },
+    "adult_dosing": "Shake well before using. Apply as needed to the affected area. For external use only (FDA OTC label, Directions and Warnings).",
+    "pediatric_dosing": null,
+    "interactions": null,
+    "monitoring": "Self-limited: stop use and ask a doctor if the condition worsens, if symptoms last more than 7 days, or if symptoms clear up and occur again within a few days (FDA OTC label, Warnings).",
+    "patient_counselling": "Shake well before using and apply as needed. For external use only and do not get into the eyes. Keep out of reach of children; if swallowed, get medical help or contact a Poison Control Center right away. Stop use and ask a doctor if the condition worsens or symptoms last more than 7 days, or if symptoms clear and then come back within a few days. Store at 59 to 86 degrees F (FDA OTC label, Directions; Warnings; Other information).",
+    "warnings": [
+      "For external use only (FDA OTC label, Warnings).",
+      "Do not get into eyes (FDA OTC label, Warnings).",
+      "Stop use and ask a doctor if the condition worsens (FDA OTC label, Warnings).",
+      "Symptoms last more than 7 days, or clear up and occur again within a few days, requires asking a doctor (FDA OTC label, Warnings).",
+      "Keep out of reach of children (FDA OTC label, Warnings).",
+      "If swallowed, get medical help or contact a Poison Control Center right away (FDA OTC label, Warnings)."
+    ],
+    "precautions": [
+      "For external use only - not for ingestion or application to mucous membranes (FDA OTC label, Warnings).",
+      "Avoid eye contact (FDA OTC label, Warnings).",
+      "Supervise children and keep the product out of reach of children (FDA OTC label, Warnings).",
+      "Store at 59 to 86 degrees F (FDA OTC label, Other information).",
+      "Shake the bottle well before each use so the suspended ingredients are evenly distributed (FDA OTC label, Directions)."
+    ],
+    "serious_adverse_reactions": [],
+    "food_interactions": [],
+    "pregnancy_category": null,
+    "pregnancy_guidance": null,
+    "lactation_guidance": null,
+    "overdose": "If swallowed, get medical help or contact a Poison Control Center right away (FDA OTC label, Warnings). The label gives no other overdose information.",
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Composition: calamine 8% plus zinc oxide 8%; a skin protectant for drying the oozing and weeping of poison ivy, oak and sumac (FDA OTC label, Active ingredients / Purpose / Use).",
+      "Sold under OTC Monograph M016 (skin protectant) as a topical suspension; calamine lotion must be shaken before use because the ingredients settle (FDA OTC label, Directions; Marketing Information).",
+      "Inactive ingredients include bentonite magma, calcium hydroxide, glycerin and purified water (FDA OTC label, Inactive ingredients).",
+      "The label reports no contraindications, no serious adverse reactions, and no drug, food, pregnancy or lactation information; treat systemic concerns (ingestion) by contacting a Poison Control Center (FDA OTC label, Warnings; Adverse reaction section is unpopulated).",
+      "NOT for systemic, oral or ophthalmic use; external use only. Stop and seek medical advice if symptoms persist or worsen (FDA OTC label, Warnings)."
+    ],
+    "brand_names": [
+      "SWAN Calamine Lotion (Calamine topical Suspension USP), Nice-Pak Products, LLC; distributed by Consumer Product Partners, LLC (FDA OTC label, Principal Panel Display and Product Information)."
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Shake well before using; apply as needed to the affected area. For external use only — avoid the eyes, keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center. Store at 59 to 86 degrees F (FDA OTC label, Directions; Warnings; Other information)."
+  },
+  "sources": [
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Active ingredients; Purpose; Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Directions; Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Directions; Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Directions; Warnings; Other information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Warnings; Directions; Other information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Adverse reaction (label lists none)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, (no food-interaction statement in the OTC label; field left empty)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Active ingredients; Purpose; Use; Inactive ingredients; Directions; Marketing Information; Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Principal Panel Display; Product Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, (OTC monograph label carries no boxed warning)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed OTC monograph (M016) label CALAMINE- calamine, zinc oxide lotion (Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, Directions; Warnings; Other information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c370ee1f-1887-44e8-8d47-8ffa3c270ff5"
+    }
+  ],
+  "unsourced_fields": [
+    "mechanism_of_action",
+    "contraindications",
+    "side_effects",
+    "pediatric_dosing",
+    "interactions",
+    "pregnancy_category",
+    "pregnancy_guidance",
+    "lactation_guidance",
+    "pharmacokinetics",
+    "renal_dose_adjustment",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "The row stores 'Calamine'. This monograph is sourced from the FDA DailyMed OTC monograph (M016) label for CALAMINE- calamine, zinc oxide lotion (Beauty/Nice-Pak Products, LLC; SWAN brand, distributed by Consumer Product Partners, LLC), setid c370ee1f-1887-44e8-8d47-8ffa3c270ff5, updated September 2026. It replaces an earlier draft that put a DailyMed setid in place of the database row id and cited a different (mismatched) product and setid (a calamine plus pramoxine product) in every source. The label is a plain OTC skin-protectant monograph: it states active ingredients (calamine 8%, zinc oxide 8%), use (dries the oozing and weeping of poison ivy, oak and sumac), warnings (external use only, avoid eyes, stop and ask a doctor if the condition worsens or symptoms last more than 7 days or recur, keep out of reach of children, if swallowed get medical help or call Poison Control), directions (shake well; apply as needed) and storage (59 to 86 degrees F). It contains no mechanism-of-action, contraindication, side-effect, interaction, pregnancy, lactation, pharmacokinetic, renal or hepatic dosing information; those fields are therefore null and are listed in unsourced_fields rather than filled with invented content. Empty arrays (serious_adverse_reactions, food_interactions, black_box_warnings) record that the label states none and do not overwrite existing database content on apply. The earlier draft's claims about children under 2, flammability, pramoxine and 'PLLR-style' pregnancy text were not in this label and have been removed."
+}

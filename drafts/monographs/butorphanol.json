@@ -1,0 +1,228 @@
+{
+  "name": "Butorphanol",
+  "existing_id": "5266c658-dd4f-4f27-ad80-124c0388bf5d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Butorphanol is a partial opioid agonist at the mu opioid receptor and a full agonist at the kappa opioid receptor. The principal therapeutic action of butorphanol is analgesia. Clinically, dosage is titrated to provide adequate analgesia and may be limited by adverse reactions, including respiratory and CNS depression (FDA BUTORPHANOL TARTRATE injection label, CLINICAL PHARMACOLOGY; Mechanism of Action).",
+    "indications": [
+      "As a preoperative or pre-anesthetic medication (FDA label, INDICATIONS AND USAGE).",
+      "As a supplement to balanced anesthesia (FDA label, INDICATIONS AND USAGE).",
+      "For the relief of pain during labor (FDA label, INDICATIONS AND USAGE).",
+      "For the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate (FDA label, INDICATIONS AND USAGE).",
+      "Limitation: reserve opioid analgesics, including butorphanol tartrate, for patients in whom alternative treatment options are ineffective, not tolerated, or otherwise inadequate, because of the risks of addiction, abuse, misuse, overdose and death, which can occur at any dosage or duration (FDA label, INDICATIONS AND USAGE; Limitations of Use)."
+    ],
+    "contraindications": [
+      "Patients with significant respiratory depression (FDA label, CONTRAINDICATIONS).",
+      "Patients with acute or severe bronchial asthma in an unmonitored setting or in the absence of resuscitative equipment (FDA label, CONTRAINDICATIONS).",
+      "Patients with known or suspected gastrointestinal obstruction, including paralytic ileus (FDA label, CONTRAINDICATIONS).",
+      "Patients with hypersensitivity to butorphanol tartrate or any of the formulation excipients (e.g., anaphylaxis) (FDA label, CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "Most frequent across all clinical trials with butorphanol tartrate injection and nasal spray: somnolence (43%), dizziness (19%), nausea and/or vomiting (13%) (FDA label, ADVERSE REACTIONS; Clinical Trial Experience).",
+      "Adverse reactions reported at 1% or greater and considered probably related: asthenia/lethargy, headache, sensation of heat; vasodilation, palpitations; anorexia, constipation, dry mouth, nausea and/or vomiting, stomach pain; anxiety, confusion, dizziness, euphoria, floating feeling, insomnia, nervousness, paresthesia, somnolence, tremor; cough, dyspnea; sweating, pruritus; blurred vision, ear pain, tinnitus, unpleasant taste (FDA label, ADVERSE REACTIONS; Clinical Trial Experience).",
+      "Reported at less than 1% and probably related: hypotension, syncope; abnormal dreams, agitation, dysphoria, hallucinations, hostility, withdrawal symptoms; rash/hives; impaired urination (FDA label, ADVERSE REACTIONS; Clinical Trial Experience).",
+      "Postmarketing (frequency not reliably estimable): serotonin syndrome, adrenal insufficiency, anaphylaxis, androgen deficiency, hyperalgesia and allodynia, hypoglycemia, opioid-induced esophageal dysfunction (FDA label, ADVERSE REACTIONS; Postmarketing Experience).",
+      "Serious adverse reactions described elsewhere in the label: addiction/abuse/misuse, life-threatening respiratory depression, concomitant benzodiazepine/CNS depressant risks, neonatal opioid withdrawal syndrome, opioid-induced hyperalgesia and allodynia, adrenal insufficiency, cardiovascular effects, gastrointestinal adverse reactions, seizures, withdrawal (FDA label, ADVERSE REACTIONS)."
+    ],
+    "dosage": {
+      "adult": "For pain: 1 mg IV repeated every 3 to 4 hours as necessary (effective range 0.5 to 2 mg every 3 to 4 hours), or 2 mg IM repeated every 3 to 4 hours in patients able to remain recumbent (effective range 1 to 4 mg every 3 to 4 hours; single doses above 4 mg are not supported by sufficient clinical data). Preoperative/preanesthetic: usual adult dose 2 mg IM 60 to 90 minutes before surgery. Balanced anesthesia: usual dose 2 mg IV shortly before induction and/or 0.5 to 1 mg IV increments during anesthesia (increment may be higher, up to 0.06 mg/kg), total dose usually 4 to 12.5 mg (approximately 0.06 to 0.18 mg/kg). Labor: 1 to 2 mg IV or IM at full term in early labor, repeatable after 4 hours; alternative analgesia should be used for pain of delivery or if delivery is expected within 4 hours (FDA label, DOSAGE AND ADMINISTRATION; Initial Dosage).",
+      "maximum": "Effective single-dose range for pain is 0.5 to 2 mg IV and 1 to 4 mg IM every 3 to 4 hours; the label states there are insufficient clinical data to recommend single doses above 4 mg. In balanced anesthesia patients seldom require less than 4 mg or more than 12.5 mg total. Use the lowest effective dosage for the shortest duration consistent with treatment goals (FDA label, DOSAGE AND ADMINISTRATION; Important Dosage and Administration Instructions and Initial Dosage)."
+    },
+    "adult_dosing": "Usual recommended single dose for pain is 1 mg IV every 3 to 4 hours (range 0.5 to 2 mg) or 2 mg IM every 3 to 4 hours (range 1 to 4 mg) in patients with normal hepatic and renal function who are not on CNS-active agents. Preoperative medication: 2 mg IM 60 to 90 minutes before surgery (approximately equivalent in sedative effect to 10 mg morphine or 80 mg meperidine). Balanced anesthesia: 2 mg IV shortly before induction and/or 0.5 to 1 mg IV increments, total usually 4 to 12.5 mg. Labor: 1 to 2 mg IV or IM, repeatable after 4 hours (FDA label, DOSAGE AND ADMINISTRATION; Initial Dosage).",
+    "pediatric_dosing": "Butorphanol is not recommended for use in patients below 18 years of age because safety and efficacy have not been established in this population (FDA label, USE IN SPECIFIC POPULATIONS; Pediatric Use).",
+    "interactions": [
+      "Benzodiazepines and other CNS depressants (including alcohol, non-benzodiazepine sedatives/hypnotics, anxiolytics, tranquilizers, muscle relaxants, general anesthetics, antipsychotics, gabapentinoids, and other opioids): additive pharmacologic effect that can increase the risk of respiratory depression, profound sedation, coma and death; reserve concomitant use for patients with inadequate alternatives, use the lowest effective dosages and minimum durations, and monitor closely (FDA label, DRUG INTERACTIONS).",
+      "Serotonergic drugs (SSRIs, SNRIs, TCAs, triptans, 5-HT3 receptor antagonists, mirtazapine, trazodone, tramadol, certain muscle relaxants such as cyclobenzaprine and metaxalone, and MAO inhibitors including linezolid and intravenous methylene blue): serotonin syndrome has been reported; monitor regularly, particularly at initiation and dose adjustment, and discontinue butorphanol if serotonin syndrome is suspected (FDA label, DRUG INTERACTIONS).",
+      "Cytochrome P450 inhibitors or inducers (e.g., erythromycin, theophylline): it is not known whether the effects of butorphanol tartrate are altered; be alert to the possibility that a smaller initial dose and longer intervals between doses may be needed (FDA label, DRUG INTERACTIONS).",
+      "Monoamine oxidase inhibitors: no information is available on concurrent use; advise the patient to avoid concomitant use (FDA label, DRUG INTERACTIONS).",
+      "Full opioid agonists: use of this mixed agonist/antagonist in patients receiving a full opioid agonist may reduce analgesic effect and/or precipitate withdrawal; avoid concomitant use and taper gradually on discontinuation (FDA label, WARNINGS; Withdrawal)."
+    ],
+    "monitoring": "Assess each patient's risk for opioid addiction, abuse or misuse before prescribing and monitor all patients regularly for these behaviors or conditions. Respiratory depression can occur at any time, especially at initiation and after dosage increases — monitor for sedation and respiratory depression and use proper dosing and titration. Monitor elderly patients frequently for central nervous system and respiratory depression and monitor renal function. Monitor patients with seizure disorders for worsened seizure control. Observe newborns for neonatal opioid withdrawal syndrome and breastfed infants for excess sedation and respiratory depression. Continually reevaluate patients for maintenance of pain control, signs of opioid withdrawal, other adverse reactions, and development of addiction, abuse or misuse (FDA label, WARNINGS; ADVERSE REACTIONS; USE IN SPECIFIC POPULATIONS; DRUG ABUSE AND DEPENDENCE).",
+    "patient_counselling": "Inform patients that use of butorphanol tartrate injection, even when taken as recommended, can result in addiction, abuse and misuse which can lead to overdose and death; do not share the product and protect it from theft or misuse. Advise of the risk of life-threatening respiratory depression (greatest at initiation or after a dose increase) and how to recognise breathing difficulties and seek medical attention. Warn that concomitant use with benzodiazepines or other CNS depressants including alcohol can cause profound sedation, respiratory depression, coma and death, and not to use them unless supervised by a healthcare provider. Warn about serotonin syndrome symptoms and the need to seek medical attention. Advise of the potential for severe constipation. Warn that the product may impair mental and physical abilities for hazardous tasks such as driving, and to avoid such tasks until they know how they react. Advise how to recognise anaphylaxis. Inform female patients of reproductive potential that neonatal opioid withdrawal syndrome can occur with extended use in pregnancy and that the product can cause fetal harm; report known or suspected pregnancy. Advise nursing mothers to observe infants for increased sleepiness, breathing difficulties or limpness and seek immediate medical care if these occur. Inform that extended opioid use may cause reduced fertility (FDA label, USE IN SPECIFIC POPULATIONS; Information for Patients).",
+    "warnings": [
+      "Boxed warning: SERIOUS AND LIFE-THREATENING RISKS FROM USE OF BUTORPHANOL TARTRATE INJECTION — addiction, abuse and misuse; life-threatening respiratory depression; risks from concomitant use with benzodiazepines or other CNS depressants; neonatal opioid withdrawal syndrome (FDA label, BOXED WARNING).",
+      "Addiction, Abuse and Misuse: Schedule IV controlled substance; assess each patient's risk before prescribing and monitor all patients regularly; risks are increased with personal or family history of substance abuse or mental illness; prescribe the smallest appropriate quantity (FDA label, WARNINGS).",
+      "Life-Threatening Respiratory Depression: serious, life-threatening or fatal respiratory depression may occur even when used as recommended, with greatest risk at initiation or after a dosage increase; proper dosing and titration are essential; overestimating the dose when converting from another opioid can cause fatal overdose with the first dose; opioids can cause central sleep apnea and sleep-related hypoxemia (FDA label, WARNINGS).",
+      "Risks from Concomitant Use with Benzodiazepines or Other CNS Depressants: profound sedation, respiratory depression, coma and death may result; reserve concomitant prescribing for patients with inadequate alternatives and use lowest effective dosages and minimum durations (FDA label, WARNINGS).",
+      "Neonatal Opioid Withdrawal Syndrome: extended use during pregnancy can result in neonatal withdrawal that may be life-threatening if not recognised and treated (FDA label, WARNINGS).",
+      "Opioid-Induced Hyperalgesia and Allodynia: paradoxical increase in pain or sensitivity to pain; consider decreasing the dose or opioid rotation (FDA label, WARNINGS).",
+      "Risk of increased seizure frequency in patients with seizure disorders; monitor for worsened seizure control (FDA label, WARNINGS).",
+      "Withdrawal: in patients receiving a full opioid agonist, butorphanol may reduce analgesic effect or precipitate withdrawal — avoid concomitant use and taper rather than abruptly discontinue (FDA label, WARNINGS).",
+      "Cardiovascular effects: butorphanol may increase the work of the heart, especially the pulmonary circuit; limit use in acute myocardial infarction, ventricular dysfunction or coronary insufficiency to situations where benefits clearly outweigh risk; severe hypertension has been reported rarely (FDA label, WARNINGS).",
+      "Adrenal insufficiency (reported with opioid use, more often after more than one month) and gastrointestinal adverse reactions including constipation are described in the label warnings (FDA label, WARNINGS and ADVERSE REACTIONS)."
+    ],
+    "precautions": [
+      "Hypotension associated with syncope during the first hour of dosing has been reported rarely, particularly in patients with a past history of similar reactions to opioid analgesics; advise patients to avoid activities with potential risks (FDA label, PRECAUTIONS; General).",
+      "May impair the mental or physical abilities needed for hazardous activities such as driving or operating machinery; warn patients not to drive or operate dangerous machinery unless tolerant to the effects and aware of their reaction (FDA label, PRECAUTIONS; Risks of Driving and Operating Machinery).",
+      "Butorphanol may produce respiratory depression, especially in patients receiving other CNS-active agents or with CNS diseases or respiratory impairment (FDA label, PRECAUTIONS; Disorders of Respiratory Function or Control).",
+      "Hepatic and renal disease: the initial dose should generally be half the recommended adult dose (0.5 mg IV and 1 mg IM); repeat doses are determined by response rather than fixed intervals but generally no less than 6 hours apart (FDA label, PRECAUTIONS; Hepatic and Renal Disease).",
+      "Extra caution is required in elderly patients, patients with renal or hepatic impairment, and during labor (FDA label, DOSAGE AND ADMINISTRATION; Individualization of Dosage).",
+      "The drug is transported across the blood-brain and placental barriers and into human milk (FDA label, CLINICAL PHARMACOLOGY; Pharmacokinetics)."
+    ],
+    "serious_adverse_reactions": [
+      "Addiction, abuse and misuse, which can lead to overdose and death (boxed warning).",
+      "Life-threatening or fatal respiratory depression (boxed warning).",
+      "Profound sedation, respiratory depression, coma and death with concomitant benzodiazepines or other CNS depressants including alcohol (boxed warning).",
+      "Neonatal opioid withdrawal syndrome with extended use in pregnancy (boxed warning).",
+      "Opioid-induced hyperalgesia and allodynia (FDA label, WARNINGS).",
+      "Seizures, including increased frequency in patients with seizure disorders (FDA label, WARNINGS).",
+      "Adrenal insufficiency (postmarketing, more often following greater than one month of use).",
+      "Anaphylaxis with ingredients contained in the product (postmarketing; also a contraindication).",
+      "Serotonin syndrome with concomitant serotonergic drugs (postmarketing).",
+      "Severe hypertension (reported rarely) and cardiovascular effects (FDA label, WARNINGS).",
+      "Hypotension with syncope during the first hour of dosing (rare) (FDA label, PRECAUTIONS)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "There are no adequate and well-controlled studies of butorphanol tartrate injection in pregnant women before 37 weeks of gestation; use during pregnancy only if the potential benefit justifies the potential risk to the infant. The label also notes that the drug can cause fetal harm and advises female patients of reproductive potential to inform the prescriber of a known or suspected pregnancy (FDA label, USE IN SPECIFIC POPULATIONS; Pregnancy; Patient Counseling Information).",
+    "pregnancy_guidance": "Reproduction studies in mice, rats and rabbits during organogenesis did not reveal teratogenic potential, but pregnant rats given butorphanol subcutaneously at 1 mg/kg had a higher frequency of stillbirths than controls, and higher oral doses showed increased post-implantation loss in rabbits. Use only if the potential benefit justifies the potential risk to the infant. Opioid analgesics used for an extended period during pregnancy can cause physical dependence in the neonate and neonatal opioid withdrawal syndrome — observe newborns and manage accordingly. Butorphanol is not recommended for use during or immediately prior to labor when other analgesic techniques are more appropriate; opioids can prolong labor, and an opioid overdose reversal agent (naloxone or nalmefene) must be available for the neonate; monitor neonates exposed during labor for excess sedation and respiratory depression (FDA label, USE IN SPECIFIC POPULATIONS; Pregnancy; Labor or Delivery).",
+    "lactation_guidance": "Butorphanol has been detected in milk following administration to nursing mothers; the amount an infant would receive is probably clinically insignificant (estimated 4 micrograms/L of milk in a mother receiving 2 mg IM four times a day). Weigh the developmental and health benefits of breastfeeding against the mother's clinical need and any potential adverse effects on the breastfed infant or from the underlying maternal condition. Infants exposed through breast milk should be monitored for excess sedation and respiratory depression; withdrawal symptoms can occur in breastfed infants when maternal administration or breast-feeding is stopped (FDA label, USE IN SPECIFIC POPULATIONS; Nursing Mothers).",
+    "overdose": "Clinical presentation: respiratory depression, somnolence progressing to stupor or coma, skeletal muscle flaccidity, cold and clammy skin, constricted pupils and, in some cases, pulmonary oedema, bradycardia, hypotension, hypoglycaemia, partial or complete airway obstruction, atypical snoring and death; marked mydriasis rather than miosis may be seen with hypoxia. Toxic leukoencephalopathy has been reported after opioid overdose and can present hours, days or weeks after apparent recovery. Treatment priorities are re-establishment of a patent and protected airway and assisted or controlled ventilation if needed, plus other supportive measures (including oxygen and vasopressors) for circulatory shock and pulmonary oedema; cardiac arrest or arrhythmias require advanced life-support measures. For clinically significant respiratory or circulatory depression, administer an opioid overdose reversal agent such as naloxone or nalmefene — because butorphanol is a mixed opioid agonist/antagonist, larger doses of naloxone or nalmefene may be needed, and the duration of reversal is expected to be shorter than butorphanol's duration of action, so monitor until spontaneous respiration is reliably re-established. Do not administer opioid antagonists in the absence of clinically significant respiratory or circulatory depression (FDA label, OVERDOSAGE).",
+    "pharmacokinetics": "Rapidly absorbed after IM injection, with peak plasma levels reached in 20 to 40 minutes; after the initial absorption/distribution phase, single-dose pharmacokinetics are similar by the IV and IM routes. Serum protein binding is concentration-independent over the clinical range (up to 7 ng/mL) with a bound fraction of approximately 80%. Volume of distribution 305 to 901 L and total body clearance 52 to 154 L/hr; half-life 4.56 hours in young subjects (20-40 years) and 5.61 hours in elderly subjects (>65 years). Extensively metabolised in the liver; oral bioavailability only 5 to 17% because of first-pass metabolism. Major metabolite is hydroxybutorphanol (elimination half-life about 18 hours, with approximately 5-fold accumulation at steady state); norbutorphanol is produced in small amounts. Elimination by urine and faeces: 70 to 80% of a tritiated dose recovered in urine and approximately 15% in faeces (about 5% unchanged as butorphanol, 49% as hydroxybutorphanol). Crosses the blood-brain and placental barriers and enters human milk. In renal impairment with creatinine clearance below 30 mL/min, elimination half-life was approximately doubled and total body clearance approximately halved (10.5 hours, clearance 150 L/hr, versus 5.8 hours, clearance 260 L/hr in healthy subjects) with no effect on Cmax or Tmax after a single dose. In hepatic impairment after IV administration, elimination half-life was approximately tripled and clearance approximately halved (half-life 16.8 hours, clearance 92 L/hr, versus 4.8 hours and 175 L/hr in healthy subjects), with about 2-fold greater exposure (FDA label, CLINICAL PHARMACOLOGY; Pharmacokinetics).",
+    "clinical_pearls": [
+      "Equianalgesic approximations from the label's postoperative pain studies: 2 mg butorphanol ~ 10 mg morphine ~ 40 mg pentazocine ~ 80 mg meperidine (FDA label, Clinical Trials).",
+      "Onset and peak analgesic effect occurred by the first observation (30 minutes) after IV dosing; after IM dosing onset was within 30 minutes and peak effect between 30 minutes and one hour; duration of action was 3 to 4 hours (FDA label, Clinical Trials).",
+      "As a mixed agonist/antagonist, larger doses of naloxone or nalmefene may be needed to reverse overdose, and reversal duration may be shorter than butorphanol's effect — monitor until spontaneous respiration is reliably re-established (FDA label, OVERDOSAGE).",
+      "Avoid concomitant use with full opioid agonists (may reduce analgesia or precipitate withdrawal) and taper rather than stop abruptly (FDA label, WARNINGS; Withdrawal).",
+      "Hepatic or renal impairment: halve the initial dose (0.5 mg IV / 1 mg IM) and space repeats by response, generally no less than 6 hours apart (FDA label, PRECAUTIONS; Hepatic and Renal Disease).",
+      "Schedule IV controlled substance; disposal of Schedule IV controlled substances must be consistent with State and Federal Regulations (FDA label, DRUG ABUSE AND DEPENDENCE; HOW SUPPLIED)."
+    ],
+    "brand_names": [
+      "Butorphanol Tartrate Injection, USP (Hospira, Inc.)"
+    ],
+    "black_box_warnings": [
+      "SERIOUS AND LIFE-THREATENING RISKS FROM USE OF BUTORPHANOL TARTRATE INJECTION: addiction, abuse and misuse; life-threatening respiratory depression; risks from concomitant use with benzodiazepines or other CNS depressants; neonatal opioid withdrawal syndrome (FDA label, BOXED WARNING)."
+    ],
+    "renal_dose_adjustment": "In patients with renal impairment the initial dose should generally be half the recommended adult dose (0.5 mg IV and 1 mg IM); repeat doses are determined by the patient's response rather than fixed intervals but will generally be no less than 6 hours apart. In patients with creatinine clearance below 30 mL/min the elimination half-life was approximately doubled and total body clearance approximately halved. The drug is substantially excreted by the kidney, so care should be taken in dose selection, particularly in elderly patients, and it may be useful to monitor renal function (FDA label, PRECAUTIONS; Hepatic and Renal Disease; CLINICAL PHARMACOLOGY; Pharmacokinetics; USE IN SPECIFIC POPULATIONS; Geriatric Use).",
+    "hepatic_dose_adjustment": "In patients with hepatic impairment the initial dose should generally be half the recommended adult dose (0.5 mg IV and 1 mg IM); repeat doses are determined by response rather than fixed intervals but will generally be no less than 6 hours apart. After IV administration in hepatic impairment, elimination half-life was approximately tripled and total body clearance approximately halved, with about 2-fold greater exposure than in healthy subjects (FDA label, PRECAUTIONS; Hepatic and Renal Disease; CLINICAL PHARMACOLOGY; Pharmacokinetics).",
+    "administration_instructions": "Prescribe only to healthcare professionals knowledgeable about the use of opioids and how to mitigate the associated risks; use the lowest effective dosage for the shortest duration consistent with individual treatment goals. The stated doses are for patients without impaired hepatic or renal function who are not receiving CNS-active agents; consider age, body weight, physical status, underlying pathological condition, use of other drugs, type of anesthesia and surgical procedure. Individualise the preoperative dose; for balanced anesthesia give 2 mg IV shortly before induction and/or 0.5 to 1 mg IV increments. In elderly patients and those with hepatic or renal impairment, limit the initial dose sequence to 1 mg followed, if needed, by 1 mg in 90 to 120 minutes, with repeat dosing determined by response and generally no less than 6 hours apart. When discontinuing in a possibly physically dependent patient, taper gradually by 25% to 50% every 2 to 4 days while monitoring for withdrawal. Inspect parenteral products visually for particulate matter and discoloration before administration; avoid aerosol generation when preparing a syringe and rinse skin with cool water after contact. Supplied as single-dose glass fliptop vials of 1 mg/mL, 2 mg/mL and 4 mg/2 mL; store at 20 to 25 degrees C (68 to 77 degrees F) USP controlled room temperature and protect from light (FDA label, DOSAGE AND ADMINISTRATION; HOW SUPPLIED/STORAGE AND HANDLING)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, CLINICAL PHARMACOLOGY; Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, INDICATIONS AND USAGE (including Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, ADVERSE REACTIONS (Clinical Trial Experience and Postmarketing Experience)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, DOSAGE AND ADMINISTRATION; Important Dosage and Administration Instructions and Initial Dosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, DOSAGE AND ADMINISTRATION; Initial Dosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, USE IN SPECIFIC POPULATIONS; Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, DRUG INTERACTIONS; WARNINGS; Withdrawal",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, WARNINGS; ADVERSE REACTIONS; USE IN SPECIFIC POPULATIONS; DRUG ABUSE AND DEPENDENCE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, USE IN SPECIFIC POPULATIONS; Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, BOXED WARNING and WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, PRECAUTIONS (General; Disorders of Respiratory Function or Control; Hepatic and Renal Disease)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, BOXED WARNING; WARNINGS; ADVERSE REACTIONS; PRECAUTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, DRUG INTERACTIONS (no food-interaction statement in the label; field left empty)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, USE IN SPECIFIC POPULATIONS; Pregnancy; Information for Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, USE IN SPECIFIC POPULATIONS; Pregnancy; Labor or Delivery",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, USE IN SPECIFIC POPULATIONS; Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, CLINICAL PHARMACOLOGY; Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, Clinical Trials; OVERDOSAGE; PRECAUTIONS; Hepatic and Renal Disease; DRUG ABUSE AND DEPENDENCE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, HOW SUPPLIED/STORAGE AND HANDLING (Hospira product; DailyMed listing for BUTORPHANOL TARTRATE injection, solution)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, BOXED WARNING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, PRECAUTIONS; Hepatic and Renal Disease; CLINICAL PHARMACOLOGY; Pharmacokinetics; USE IN SPECIFIC POPULATIONS; Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, PRECAUTIONS; Hepatic and Renal Disease; CLINICAL PHARMACOLOGY; Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA BUTORPHANOL TARTRATE injection label (Hospira, Inc.), DailyMed setid 9822ca3f-aee2-46e5-8a96-495400e65d10, DOSAGE AND ADMINISTRATION; HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9822ca3f-aee2-46e5-8a96-495400e65d10"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Butorphanol'. This monograph is sourced from the FDA BUTORPHANOL TARTRATE injection, solution label (Hospira, Inc.; ANADA; DEA Schedule CIV) as published on DailyMed, setid 9822ca3f-aee2-46e5-8a96-495400e65d10. It replaces an earlier draft that incorrectly used a veterinary (equine) DOLOREX/butorphanol ANADA label and put a DailyMed setid in the existing_id field. The label carries a boxed warning covering addiction/abuse/misuse, life-threatening respiratory depression, concomitant benzodiazepine or CNS depressant risks, and neonatal opioid withdrawal syndrome. The label gives no food-interaction statement, so food_interactions is left empty; an empty array does not overwrite existing database content on apply. Paediatric use is not recommended below 18 years of age because safety and efficacy have not been established. Pregnancy is stated as a narrative statement rather than a letter category because the current label does not assign one."
+}

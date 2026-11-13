@@ -1,0 +1,223 @@
+{
+  "name": "Cabazitaxel",
+  "existing_id": "15c76bf1-3f21-435a-afaa-f7aed31bcea8",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Cabazitaxel is a microtubule inhibitor. Cabazitaxel binds to tubulin and promotes its assembly into microtubules while simultaneously inhibiting disassembly. This leads to the stabilization of microtubules, which results in the inhibition of mitotic and interphase cellular functions (FDA JEVTANA label, section 12.1 Mechanism of Action).",
+    "indications": [
+      "JEVTANA is indicated in combination with prednisone for the treatment of patients with metastatic castration-resistant prostate cancer previously treated with a docetaxel-containing treatment regimen (FDA JEVTANA label, section 1 Indications and Usage)."
+    ],
+    "contraindications": [
+      "Neutrophil counts of 1,500 cells/mm3 or lower (FDA JEVTANA label, section 4 Contraindications).",
+      "History of severe hypersensitivity reactions to cabazitaxel or to other drugs formulated with polysorbate 80 (FDA JEVTANA label, section 4).",
+      "Severe hepatic impairment, defined as total bilirubin greater than 3 times the upper limit of normal (FDA JEVTANA label, section 4)."
+    ],
+    "side_effects": [
+      "Most common grade 1-4 adverse reactions in the TROPIC trial (JEVTANA 25 mg/m2 plus prednisone vs mitoxantrone plus prednisone, n=371 each): anemia (98%), leukopenia (96%), neutropenia (94%), thrombocytopenia (48%), diarrhea (47%), nausea (34%), fatigue (37%), vomiting (22%), constipation (20%), abdominal pain (17%), hematuria (17%), back pain (16%), anorexia (16%), peripheral neuropathy (13%), pyrexia (12%), dysgeusia (11%), arthralgia (11%), dyspepsia (10%) (FDA JEVTANA label, section 6.1; Table 2).",
+      "Most common grade 3-4 adverse reactions (>=5%): neutropenia (82%), leukopenia (69%), anemia (11%), febrile neutropenia (7%), diarrhea (6%), fatigue (5%), asthenia (5%) (FDA JEVTANA label, section 6.1; Table 2).",
+      "Serious adverse reactions discussed in the label: bone marrow suppression (neutropenia, anemia, thrombocytopenia, pancytopenia; neutropenic deaths reported), increased toxicities in elderly patients, hypersensitivity reactions, gastrointestinal adverse reactions (including deaths related to diarrhea and electrolyte imbalance, and GI hemorrhage/perforation, ileus, enterocolitis with fatal outcome), renal failure (4% in TROPIC, four fatal), urinary disorders including cystitis, respiratory disorders (interstitial pneumonia/pneumonitis, interstitial lung disease, ARDS, possibly fatal), use in patients with hepatic impairment, and embryo-fetal toxicity (FDA JEVTANA label, sections 6 and 5.1-5.9).",
+      "In the TROPIC trial, 18 (5%) JEVTANA-treated patients died from causes other than disease progression within 30 days of the last dose vs 3 (<1%) on mitoxantrone; the most common fatal adverse reactions were infections (n=5) and renal failure (n=4). Treatment discontinuations due to adverse reactions occurred in 18% of JEVTANA patients vs 8% of mitoxantrone patients; the most common reasons were neutropenia and renal failure (FDA JEVTANA label, section 6.1).",
+      "Postmarketing reports include hypersensitivity reactions (including anaphylactic reaction, with fatalities), severe reactions such as sepsis, neutropenic sepsis, septic shock, pneumonia, febrile neutropenia, thrombocytopenia, pancytopenia, dehydration, atrial fibrillation, ventricular tachycardia, myocardial infarction, pulmonary embolism, and acute respiratory failure (FDA JEVTANA label, section 6.2 Postmarketing Experience)."
+    ],
+    "dosage": {
+      "adult": "The recommended dose of JEVTANA is 20 mg/m2 administered as a one-hour intravenous infusion every three weeks in combination with oral prednisone 10 mg administered daily throughout JEVTANA treatment. A dose of 25 mg/m2 can be used in select patients at the discretion of the treating healthcare provider. Primary prophylaxis with G-CSF is recommended in patients with high-risk clinical features (older patients, poor performance status, previous episodes of febrile neutropenia, extensive prior radiation ports, poor nutritional status, or other serious comorbidities); consider primary prophylaxis with G-CSF in all patients receiving 25 mg/m2. Premedicate at least 30 minutes prior to each dose with an antihistamine (dexchlorpheniramine 5 mg or diphenhydramine 25 mg or equivalent), a corticosteroid (dexamethasone 8 mg or equivalent), and an H2 antagonist; antiemetic prophylaxis is recommended (FDA JEVTANA label, section 2.1 Dosing Information).",
+      "maximum": "The label states no maximum tolerated dose beyond the recommended schedule; doses used are 20 mg/m2 every 3 weeks, with 25 mg/m2 permitted in select patients at the treating healthcare provider's discretion. Patients at 20 mg/m2 who require dose reduction decrease to 15 mg/m2; patients at 25 mg/m2 who require dose reduction decrease to 20 mg/m2, with one additional reduction to 15 mg/m2 that may be considered (FDA JEVTANA label, section 2.2 Dose Modifications for Adverse Reactions)."
+    },
+    "adult_dosing": "20 mg/m2 IV over 1 hour every 3 weeks with oral prednisone 10 mg daily throughout treatment; 25 mg/m2 may be used in select patients at the treating provider's discretion. Dose modifications: for prolonged grade 3 or greater neutropenia (greater than 1 week) despite appropriate medication including G-CSF, delay until neutrophils are above 1,500 cells/mm3 and reduce by one dose level, using G-CSF for secondary prophylaxis; for febrile neutropenia or neutropenic infection, delay until improvement and neutrophils above 1,500 cells/mm3, then reduce by one dose level; for grade 3 or greater or persisting diarrhea, delay until improvement then reduce by one dose level; for grade 2 peripheral neuropathy, delay then reduce by one dose level; for grade 3 or greater peripheral neuropathy, discontinue (FDA JEVTANA label, sections 2.1 and 2.2).",
+    "pediatric_dosing": "The safety and effectiveness of JEVTANA in pediatric patients have not been established. In a study of 39 pediatric patients aged 3 to 18 years receiving prophylactic G-CSF, the maximum tolerated dose was 30 mg/m2 IV over 1 hour on day 1 of a 21-day cycle based on a dose-limiting toxicity of febrile neutropenia; no objective responses were observed in 11 patients with refractory high-grade glioma or diffuse intrinsic pontine glioma and one partial response occurred among 9 patients with ependymoma. Infusion-related/hypersensitivity reactions occurred in 10 patients (26%), with three serious anaphylactic reactions (FDA JEVTANA label, section 8.4 Pediatric Use).",
+    "interactions": [
+      "Strong CYP3A inhibitors (e.g., ketoconazole, itraconazole, clarithromycin, atazanavir, indinavir, nefazodone, nelfinavir, ritonavir, saquinavir, telithromycin, voriconazole) may increase plasma concentrations of cabazitaxel; avoid coadministration, and if a strong CYP3A inhibitor is required, consider a 25% JEVTANA dose reduction (FDA JEVTANA label, section 7.1 CYP3A Inhibitors; section 2.4).",
+      "Cabazitaxel is primarily metabolized through CYP3A (mainly CYP3A4/5, 80% to 90%, and to a lesser extent CYP2C8), which is the basis for the interaction risk (FDA JEVTANA label, sections 7.1 and 12.3 Metabolism).",
+      "Concomitant use of drugs that increase the risk of infection or bleeding (e.g., neutropenia-predisposing agents, anticoagulants, NSAIDs, antiplatelet therapy) is relevant to the label's cautions: risk of GI hemorrhage and perforation may be increased with neutropenia, age, steroid use, concomitant NSAIDs, antiplatelet therapy or anticoagulants (FDA JEVTANA label, section 5.4 Gastrointestinal Adverse Reactions).",
+      "No food-interaction statement appears in the label (FDA JEVTANA label, section 7 DRUG INTERACTIONS)."
+    ],
+    "monitoring": "Monitoring of complete blood counts is essential weekly during cycle 1 and before each treatment cycle thereafter so that the dose can be adjusted if needed; JEVTANA is contraindicated at neutrophil counts of 1,500 cells/mm3 or lower, and patients with hemoglobin below 10 g/dL should be closely monitored. Observe patients closely for hypersensitivity reactions, especially during the first and second infusions, with facilities and equipment for treatment of hypotension and bronchospasm available. Monitor for GI toxicity (abdominal pain and tenderness, fever, persistent constipation, diarrhea), dehydration, renal function and urinary output, hematuria and cystitis (particularly after prior pelvic radiation), and new or worsening pulmonary symptoms. Monitor liver function; dose reduction is required for mild and moderate hepatic impairment and the drug is contraindicated in severe hepatic impairment. Monitor elderly patients for increased toxicity (FDA JEVTANA label, sections 5.1-5.8, 2.3, 8.5-8.7).",
+    "patient_counselling": "Advise the patient to read the FDA-approved patient labeling. Educate about the risk of hypersensitivity reactions and confirm there is no history of severe hypersensitivity to cabazitaxel or polysorbate 80-containing drugs; report hypersensitivity signs immediately. Explain that JEVTANA lowers white blood cells, platelets and red blood cells so periodic blood counts are required, and instruct patients to monitor temperature frequently and report fever immediately. Inform elderly patients that certain side effects may be more frequent or severe. Explain the importance of taking oral prednisone as prescribed and report non-compliance. Advise immediate reporting of fever, significant vomiting or diarrhea, decreased urinary output and hematuria because severe and fatal infections, dehydration and renal failure have been associated with cabazitaxel. Report hematuria or signs of cystitis or radiation cystitis. Immediately report new or worsening pulmonary symptoms because severe and fatal interstitial pneumonia/pneumonitis, interstitial lung disease and ARDS have occurred. Inform about drug-interaction risk and the importance of providing a list of prescription and non-prescription drugs. Advise male patients with female partners of reproductive potential to use effective contraception during treatment and for 4 months after the last dose (FDA JEVTANA label, section 17 PATIENT COUNSELING INFORMATION).",
+    "warnings": [
+      "Boxed warning: NEUTROPENIA AND HYPERSENSITIVITY. Neutropenia: neutropenic deaths have been reported; monitor with frequent blood cell counts; contraindicated in patients with neutrophil counts of 1,500 cells/mm3 or lower; primary prophylaxis with G-CSF is recommended in patients with high-risk clinical features and should be considered in all patients receiving 25 mg/m2. Severe hypersensitivity: severe reactions can occur including generalized rash/erythema, hypotension and bronchospasm, and require immediate discontinuation of the infusion and administration of appropriate therapy; patients should receive premedication; contraindicated in patients with a history of severe hypersensitivity reactions to cabazitaxel or to other drugs formulated with polysorbate 80 (FDA JEVTANA label, BOXED WARNING).",
+      "Bone Marrow Suppression: contraindicated at neutrophils of 1,500 cells/mm3 or lower; closely monitor patients with hemoglobin below 10 g/dL. Neutropenia, anemia, thrombocytopenia and/or pancytopenia may occur and neutropenic deaths have been reported. In TROPIC (G-CSF at investigator discretion), 5 patients (1.3%) died from neutropenic infection and one additional death was attributed to neutropenia without documented infection; grade 3-4 neutropenia occurred in 82%. Weekly CBC monitoring during cycle 1 and before each subsequent cycle is essential (FDA JEVTANA label, section 5.1).",
+      "Increased Toxicities in Elderly Patients: in TROPIC, 6% (15/240) of patients aged 65 years or older vs 2% (3/131) of younger patients died of causes other than disease progression within 30 days of the last dose; grade 3-4 neutropenia (87% vs 74%) and febrile neutropenia (8% vs 6%) were higher in patients aged 65 or older (FDA JEVTANA label, section 5.2).",
+      "Hypersensitivity Reactions: may occur within a few minutes of starting the infusion; have facilities and equipment for treating hypotension and bronchospasm available; premedicate all patients and observe closely, especially during the first and second infusions; severe reactions require immediate discontinuation and appropriate therapy (FDA JEVTANA label, section 5.3).",
+      "Gastrointestinal Adverse Reactions: nausea, vomiting and severe diarrhea may occur, with deaths related to diarrhea and electrolyte imbalance in randomized clinical trials; antiemetic prophylaxis is recommended and treatment delay or dose reduction may be necessary for grade 3 or greater diarrhea. GI hemorrhage and perforation, ileus, enterocolitis and neutropenic enterocolitis, including fatal outcome, have been reported; risk may be increased with neutropenia, age, steroid use, NSAIDs, antiplatelet therapy or anticoagulants, and prior pelvic radiotherapy, adhesions, ulceration or GI bleeding (FDA JEVTANA label, section 5.4).",
+      "Renal Failure: renal failure of any grade occurred in 4% of patients in TROPIC, including four fatal cases, mostly in association with sepsis, dehydration or obstructive uropathy; identify causes and treat aggressively (FDA JEVTANA label, section 5.5).",
+      "Urinary Disorders Including Cystitis: cystitis, radiation cystitis and hematuria, including cases requiring hospitalization, have been reported in patients who previously received pelvic radiation; interrupt or discontinue in severe hemorrhagic cystitis (FDA JEVTANA label, section 5.6).",
+      "Respiratory Disorders: interstitial pneumonia/pneumonitis, interstitial lung disease and acute respiratory distress syndrome have been reported and may be fatal; interrupt treatment if new or worsening pulmonary symptoms develop and consider discontinuation (FDA JEVTANA label, section 5.7).",
+      "Use in Patients with Hepatic Impairment: contraindicated in severe hepatic impairment (total bilirubin greater than 3 times ULN); reduce dose for mild and moderate hepatic impairment with caution and close monitoring (FDA JEVTANA label, section 5.8).",
+      "Embryo-Fetal Toxicity: based on animal reproduction studies and its mechanism of action, JEVTANA can cause fetal harm when administered to a pregnant woman; there are no available human data. Advise males with female partners of reproductive potential to use effective contraception during treatment and for 4 months after the last dose (FDA JEVTANA label, section 5.9)."
+    ],
+    "precautions": [
+      "Calculate the dose on body surface area and give it as a one-hour intravenous infusion; the single-dose vial requires two dilutions before administration, and improper preparation may lead to overdose (FDA JEVTANA label, sections 2.1 and 2.5).",
+      "JEVTANA is a hazardous anticancer drug: follow applicable special handling and disposal procedures, and if the first diluted solution or final infusion comes into contact with skin or mucous membranes, immediately and thoroughly wash with soap and water (FDA JEVTANA label, section 2.5).",
+      "Do not use PVC infusion containers or polyurethane infusion sets for preparation and administration, and do not mix JEVTANA with any other drugs (FDA JEVTANA label, section 2.5).",
+      "Use an in-line filter of 0.22 micrometer nominal pore size during administration; discard the prepared infusion if it is not clear or shows precipitation or crystallization (FDA JEVTANA label, section 2.5).",
+      "The incidence of gastrointestinal adverse reactions is greater in patients who have received prior radiation (diarrhea in 41% with prior radiation vs 27% without in PROSELICA) (FDA JEVTANA label, section 5.4).",
+      "Cabazitaxel is extensively metabolized in the liver; use with caution and close monitoring of safety in mild and moderate hepatic impairment (FDA JEVTANA label, sections 5.8 and 8.7).",
+      "Based on animal toxicology studies, JEVTANA may impair human fertility in males of reproductive potential (FDA JEVTANA label, section 8.3)."
+    ],
+    "serious_adverse_reactions": [
+      "Neutropenia including neutropenic deaths (boxed warning); febrile neutropenia and neutropenic infection/sepsis.",
+      "Severe hypersensitivity reactions including generalized rash/erythema, hypotension and bronchospasm (boxed warning); anaphylactic reaction reported postmarketing.",
+      "Fatal infections, sepsis, neutropenic sepsis and septic shock.",
+      "Severe diarrhea with deaths related to diarrhea and electrolyte imbalance; GI hemorrhage and perforation, ileus, enterocolitis and neutropenic enterocolitis with fatal outcome.",
+      "Renal failure (4% in TROPIC, four fatal cases), dehydration and obstructive uropathy.",
+      "Interstitial pneumonia/pneumonitis, interstitial lung disease and acute respiratory distress syndrome, possibly fatal.",
+      "Hematuria and cystitis/radiation cystitis, including cases requiring hospitalization.",
+      "Pancytopenia, thrombocytopenia and anemia.",
+      "Embryo-fetal toxicity (can cause fetal harm)."
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "The current JEVTANA label does not assign a pregnancy letter category. The safety and efficacy of JEVTANA have not been established in females; there are no human data in pregnant women to inform the drug-associated risk, and in animal reproduction studies intravenous cabazitaxel in pregnant rats during organogenesis caused embryonic and fetal death at doses lower than the maximum recommended human dose (FDA JEVTANA label, section 8.1 Pregnancy).",
+    "pregnancy_guidance": "There are no human data on the use of JEVTANA in pregnant women. In an early embryonic developmental toxicity study in rats, cabazitaxel administered intravenously for 15 days before mating through day 6 of pregnancy increased pre-implantation loss at 0.2 mg/kg/day and early resorptions at 0.1 mg/kg/day or higher (approximately 0.06 and 0.02 times the Cmax in patients at the recommended human dose). In an embryo-fetal developmental toxicity study in rats, cabazitaxel caused maternal and embryo-fetal toxicity including increased postimplantation loss, embryolethality and fetal deaths at 0.16 mg/kg/day, with decreased mean fetal birthweight and delays in skeletal ossification at doses of 0.08 mg/kg or higher; cabazitaxel crossed the placental barrier within 24 hours of a single dose. Advise male patients with female partners of reproductive potential to use effective contraception during treatment and for 4 months after the last dose of JEVTANA (FDA JEVTANA label, sections 5.9, 8.1 and 8.3).",
+    "lactation_guidance": "There is no information available on the presence of cabazitaxel in human milk, the effects on the breastfed infant, or the effects on milk production. In a milk excretion study in lactating rats, radioactivity related to cabazitaxel was detected in the stomachs of nursing pups within 2 hours of a single intravenous dose and was detectable 24 hours post dose, with approximately 1.5% of the dose delivered to the mother calculated to be delivered in maternal milk. The safety and efficacy of JEVTANA have not been established in females (FDA JEVTANA label, section 8.2 Lactation).",
+    "overdose": "There is no known antidote for JEVTANA overdose. Overdose has resulted from improper preparation, so the entire Dosage and Administration section should be read carefully before mixing or diluting. Complications of overdose include exacerbation of adverse reactions such as bone marrow suppression and gastrointestinal disorders, and overdose has led to fatal outcome. In case of overdose, the patient should be kept in a specialized unit where vital signs, chemistry and particular functions can be closely monitored, should receive therapeutic G-CSF as soon as possible after discovery of overdose, and other appropriate symptomatic measures should be taken as needed (FDA JEVTANA label, section 10 OVERDOSAGE).",
+    "pharmacokinetics": "After a one-hour intravenous infusion of cabazitaxel 25 mg/m2 every three weeks, the mean Cmax in patients with metastatic prostate cancer was 226 ng/mL (CV 107%), reached at the end of the infusion (Tmax), with a mean AUC of 991 ng*h/mL (CV 34%); no major deviation from dose proportionality was observed from 10 to 30 mg/m2. The volume of distribution at steady state was 4,864 L (2,643 L/m2 for a patient with median BSA 1.84 m2). In vitro protein binding to human serum proteins was 89% to 92%, not saturable up to 50,000 ng/mL, mainly to albumin (82%) and lipoproteins. Cabazitaxel is extensively metabolized in the liver (more than 95%), mainly by CYP3A4/5 (80% to 90%) and to a lesser extent CYP2C8; cabazitaxel is the main circulating moiety and seven metabolites were detected in plasma, including three active metabolites from O-demethylation, with the main one accounting for 5% of cabazitaxel exposure. After a one-hour intravenous infusion of radiolabelled cabazitaxel 25 mg/m2, approximately 80% of the dose was eliminated within 2 weeks, mainly in feces as metabolites (76% of the dose), with renal excretion accounting for 3.7% (2.3% as unchanged drug in urine). Plasma clearance was 48.5 L/h (CV 39%) in patients with metastatic prostate cancer, with three-compartment alpha, beta and gamma half-lives of 4 minutes, 2 hours and 95 hours respectively. Mild to moderate renal impairment did not have meaningful effects on pharmacokinetics; a dedicated study showed no influence of mild or moderate hepatic impairment on cabazitaxel pharmacokinetics, with maximum tolerated doses of 20 and 15 mg/m2 respectively (FDA JEVTANA label, section 12.3 Pharmacokinetics).",
+    "clinical_pearls": [
+      "Cabazitaxel is given in combination with oral prednisone 10 mg daily throughout treatment; patient counselling stresses the importance of taking the prednisone as prescribed (FDA JEVTANA label, sections 2.1 and 17).",
+      "Primary prophylaxis with G-CSF is recommended for high-risk patients (older age, poor performance status, prior febrile neutropenia, extensive prior radiation ports, poor nutritional status or other serious comorbidities) and should be considered in all patients receiving 25 mg/m2 (FDA JEVTANA label, sections 2.1 and 5.1).",
+      "In PROSELICA, 20 mg/m2 was non-inferior for overall survival to 25 mg/m2 with fewer infectious adverse reactions: grade 3-4 infections in 10% (20 mg/m2 arm) vs 20% (25 mg/m2 arm), and febrile neutropenia 2.1% vs 9.2% (FDA JEVTANA label, section 5.1).",
+      "Dose reductions are by one dose level: 20 to 15 mg/m2, or 25 to 20 mg/m2 with a possible further reduction to 15 mg/m2; grade 3 or greater peripheral neuropathy requires discontinuation (FDA JEVTANA label, section 2.2).",
+      "Hepatic dosing: mild impairment (total bilirubin greater than 1 to 1.5 times ULN or AST greater than 1.5 times ULN) uses 20 mg/m2; moderate impairment (total bilirubin greater than 1.5 to 3 times ULN) uses 15 mg/m2 based on tolerability data with efficacy unknown; severe impairment (total bilirubin greater than 3 times ULN) is contraindicated (FDA JEVTANA label, sections 2.3 and 8.7).",
+      "No dose adjustment is necessary for renal impairment not requiring hemodialysis; patients with end-stage renal disease (creatinine clearance below 15 mL/min/1.73 m2) should be monitored carefully (FDA JEVTANA label, section 8.6).",
+      "JEVTANA requires two dilutions before infusion and the prepared solution must be used within 8 hours at ambient temperature or 24 hours refrigerated, including the one-hour infusion; it is a hazardous anticancer drug requiring special handling and disposal (FDA JEVTANA label, section 2.5)."
+    ],
+    "brand_names": [
+      "JEVTANA (cabazitaxel) injection 60 mg/1.5 mL single-dose vial, supplied as a kit with diluent (Sanofi-Aventis)"
+    ],
+    "black_box_warnings": [
+      "NEUTROPENIA: neutropenic deaths have been reported; monitor for neutropenia with frequent blood cell counts; JEVTANA is contraindicated in patients with neutrophil counts of 1,500 cells/mm3 or lower; primary prophylaxis with G-CSF is recommended in patients with high-risk clinical features and should be considered in all patients receiving 25 mg/m2 (FDA JEVTANA label, BOXED WARNING).",
+      "SEVERE HYPERSENSITIVITY: severe hypersensitivity reactions can occur and may include generalized rash/erythema, hypotension and bronchospasm; they require immediate discontinuation of the infusion and administration of appropriate therapy; patients should receive premedication; JEVTANA is contraindicated in patients with a history of severe hypersensitivity reactions to cabazitaxel or to other drugs formulated with polysorbate 80 (FDA JEVTANA label, BOXED WARNING)."
+    ],
+    "renal_dose_adjustment": "No dose adjustment is necessary in patients with renal impairment not requiring hemodialysis. Patients presenting with end-stage renal disease (creatinine clearance below 15 mL/min/1.73 m2) should be monitored carefully during treatment. Cabazitaxel is minimally excreted via the kidney, and mild to moderate renal impairment did not have meaningful effects on pharmacokinetics in population analyses or in a dedicated comparative pharmacokinetic study (FDA JEVTANA label, section 8.6 Renal Impairment; section 12.3 Pharmacokinetics).",
+    "hepatic_dose_adjustment": "Cabazitaxel is extensively metabolized in the liver. Mild hepatic impairment (total bilirubin greater than 1 to 1.5 times ULN or AST greater than 1.5 times ULN): administer JEVTANA at 20 mg/m2 with caution and close monitoring of safety. Moderate hepatic impairment (total bilirubin greater than 1.5 to 3 times ULN with any AST): administer 15 mg/m2 based on tolerability data; the efficacy of this dose is unknown. Severe hepatic impairment (total bilirubin greater than 3 times ULN): JEVTANA is contraindicated (FDA JEVTANA label, sections 2.3, 5.8 and 8.7).",
+    "administration_instructions": "Calculate the dose on body surface area and administer as a one-hour intravenous infusion every three weeks, with oral prednisone 10 mg daily throughout treatment. Premedicate at least 30 minutes before each dose with an antihistamine (dexchlorpheniramine 5 mg or diphenhydramine 25 mg or equivalent), a corticosteroid (dexamethasone 8 mg or equivalent), and an H2 antagonist; antiemetic prophylaxis is recommended and may be given orally or intravenously. JEVTANA requires two dilutions: first reconstitute each 60 mg/1.5 mL vial with the entire contents of the supplied diluent to give 10 mg/mL (gently invert for at least 45 seconds, do not shake), then immediately (within 30 minutes) further dilute the required dose into a sterile 250 mL PVC-free container of 0.9% sodium chloride or 5% dextrose, keeping the final concentration between 0.10 and 0.26 mg/mL (use a larger volume if a dose above 65 mg is required). Do not use PVC infusion containers or polyurethane infusion sets, do not mix with any other drugs, and use an in-line 0.22 micrometer filter. The fully prepared solution should be used within 8 hours at ambient temperature or a total of 24 hours under refrigerated conditions, both including the one-hour infusion; discard any unused portion. Inspect visually for particulate matter, crystals and discoloration and discard if not clear. Follow hazardous anticancer drug handling and disposal procedures, washing skin or mucous membranes immediately and thoroughly with soap and water on contact. Store at 25 degrees C (77 degrees F) with excursions permitted between 15 and 30 degrees C; do not refrigerate (FDA JEVTANA label, sections 2.1, 2.5, 16 HOW SUPPLIED/STORAGE AND HANDLING)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 6.1 Clinical Trials Experience, 6.2 Postmarketing Experience and 5.1-5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 2.1 Dosing Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 2.1 Dosing Information and 2.2 Dose Modifications for Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 7.1 CYP3A Inhibitors; section 2.4; section 5.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 5.1-5.8, 2.3 and 8.5-8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 17 PATIENT COUNSELING INFORMATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, BOXED WARNING and sections 5.1-5.9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 2.1, 2.5, 5.4, 5.8 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, BOXED WARNING; sections 5.1-5.9, 6 and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 7 DRUG INTERACTIONS (no food-interaction statement in the label; field left empty)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 8.1 Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 5.9, 8.1 and 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 2.1, 2.2, 2.3, 2.5, 5.1, 8.6, 8.7 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 16.1 How Supplied",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, BOXED WARNING (Neutropenia and Hypersensitivity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, section 8.6 Renal Impairment; section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 2.3, 5.8 and 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis), DailyMed setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa, sections 2.1, 2.5 and 16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "The row stores 'Cabazitaxel'. This monograph is sourced from the FDA JEVTANA (cabazitaxel) injection label (Sanofi-Aventis) as published on DailyMed, setid de3d9c26-572b-4ea4-9b2d-dd58a2b3e8fa. An earlier draft was defective: it used a DailyMed setid in place of the database row id, cited a different (mismatched) setid in every source URL, asserted that no boxed warning exists when the label carries a boxed warning for NEUTROPENIA AND HYPERSENSITIVITY, omitted two of the three labelled contraindications, and mixed in unrelated CABOMETYX (cabozantinib) dosing text. Those defects are corrected here. The label gives no food-interaction statement, so food_interactions is left empty; an empty array does not overwrite existing database content on apply. The current label does not assign a pregnancy letter category, so pregnancy_category is a narrative statement."
+}

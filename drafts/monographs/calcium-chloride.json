@@ -1,0 +1,198 @@
+{
+  "name": "Calcium Chloride",
+  "existing_id": "ea1df66a-c4d0-4223-af26-9311bbcd19ad",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Intravenous administration of calcium chloride increases serum ionized calcium concentration. Calcium chloride dissociates into ionized calcium in plasma (FDA 10% Calcium Chloride Injection, USP label, Henry Schein repackaged (Hospira/Pfizer), section 12.1 Mechanism of Action).",
+    "indications": [
+      "Treatment of adult and pediatric patients with acute symptomatic hypocalcemia (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 1 INDICATIONS AND USAGE)"
+    ],
+    "contraindications": [
+      "Patients with ventricular fibrillation (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 4 CONTRAINDICATIONS)",
+      "Patients with asystole and electromechanical dissociation (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 4 CONTRAINDICATIONS)",
+      "Newborns (up to 28 days of age) if they require (or are expected to require) ceftriaxone intravenous treatment, because of the risk of precipitation of ceftriaxone-calcium, regardless of whether these products would be received at different times or through separate intravenous lines (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 4 and 5.1)"
+    ],
+    "side_effects": [
+      "Nervous system disorders: paraesthesia (upon rapid injection), calcium taste (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 6 ADVERSE REACTIONS)",
+      "General disorders and administration site conditions: sense of oppression, sense of 'heat wave', local burning sensation, injection site extravasation, injection site reactions (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 6)",
+      "Cardiovascular disorders: peripheral vasodilatation, decreased blood pressure (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 6)",
+      "Hypotension, bradycardia, arrhythmias, syncope and cardiac arrest with rapid administration (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 5.2)",
+      "Tissue necrosis, ulceration, secondary infection and calcinosis cutis (abnormal dermal deposits of calcium salts; papules, plaques or nodules, possibly with erythema, swelling or induration) with extravasation or local trauma (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 5.4)",
+      "Aluminum toxicity with prolonged parenteral administration in impaired kidney function (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., section 5.5)",
+      "Arrhythmias with concomitant digoxin use (FDA 10% Calcium Chloride Injection label, Henry Schein Inc., sections 5.3 and 7.1)"
+    ],
+    "dosage": {
+      "adult": "Recommended dose range in adults is 200 mg to 1,000 mg of calcium chloride, individualized within the range based on serum ionized calcium level, severity of hypocalcemia symptoms, and acuity of hypocalcemia onset. Repeated injections may be required because of rapid excretion of calcium. Administer by slow intravenous infusion in a central or deep vein; do not administer by bolus. Dosing is not possible with this product in patients who require doses less than 200 mg (use another calcium chloride injection product). Recommended starting dose in adults with renal impairment is 200 mg (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1, 2.2 and 2.3).",
+      "maximum": "Maximum recommended infusion rate is 1 mL/minute (100 mg/minute). Recommended adult dose range is capped at 1,000 mg per administration (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1 and 2.2)."
+    },
+    "adult_dosing": "200 mg to 1,000 mg of calcium chloride per administration, individualized by serum ionized calcium level, symptom severity and acuity of onset; slow intravenous infusion in a central or deep vein, not to exceed 1 mL/minute (100 mg/minute); do not administer by bolus; repeated injections may be required because of rapid excretion of calcium; recommended starting dose in adults with renal impairment is 200 mg. This product cannot deliver doses below 200 mg; use another calcium chloride product for such patients (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1, 2.2 and 2.3).",
+    "pediatric_dosing": "Recommended dose range in pediatric patients is 2.7 to 5 mg/kg of calcium chloride, individualized by serum ionized calcium level, symptom severity and acuity of onset; slow intravenous infusion in a central or deep vein, not to exceed 1 mL/minute; do not administer by bolus; repeated injections may be required because of rapid excretion of calcium. Recommended starting dose in pediatric patients with renal impairment is 2.7 mg/kg of calcium chloride. Use in newborns (up to 28 days of age) is contraindicated if they require or are expected to require ceftriaxone intravenous treatment (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1, 2.2, 2.3, 4 and 8.4).",
+    "interactions": [
+      "Digoxin: avoid concomitant use; synergistic arrhythmias may occur and hypercalcemia from calcium chloride increases the risk of digoxin toxicity. If concomitant use is unavoidable, monitor ECG closely during administration and monitor calcium levels (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 5.3 and 7.1)",
+      "Calcium channel blockers: concomitant use may reduce the response to calcium channel blockers; avoid concomitant use. If unavoidable, monitor blood pressure closely during administration (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 7.2)",
+      "Drugs that increase the risk of hypercalcemia (e.g., calcipotriene, estrogen, lithium, parathyroid hormone, teriparatide, thiazide diuretics, vitamin A, and vitamin D): increase the frequency of calcium concentration monitoring (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 7.3)",
+      "Ceftriaxone: do not mix Calcium Chloride Injection with ceftriaxone or administer simultaneously via a Y-site; concurrent use can lead to formation of ceftriaxone-calcium precipitates. In newborns (up to 28 days) concomitant use is contraindicated. In patients older than 28 days, the two may be administered sequentially provided infusion lines are thoroughly flushed (or separate sites used / lines replaced) between infusions (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.4, 4 and 5.1)"
+    ],
+    "monitoring": "Monitor serum ionized calcium levels to individualize dosing and to detect hypercalcemia; monitor frequently in renal impairment (e.g., every 4 hours) based on severity of impairment and risk of a high calcium-phosphorus product. Monitor ECG and calcium levels if concomitant digoxin therapy is unavoidable. Monitor blood pressure closely if concomitant calcium channel blocker therapy is unavoidable. Increase the frequency of calcium monitoring with concomitant drugs that increase the risk of hypercalcemia. Observe the infusion site for extravasation and administration-related discomfort (stop if the patient complains of discomfort; may resume when symptoms disappear). Monitor for signs of hypercalcemia and, in overdose, re-evaluate and institute countermeasures (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1, 5.3, 7.1, 7.2, 7.3, 8.6 and 10).",
+    "patient_counselling": "Inform patients or caregivers of the following risks: arrhythmias may occur if calcium chloride and digoxin are administered together; administration may result in calcinosis cutis including tissue necrosis, ulceration and secondary infection; the injection contains aluminum that may be toxic, particularly with impaired kidney function or in premature neonates (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 17 PATIENT COUNSELING INFORMATION). Report administration-related discomfort immediately; administration may be resumed when symptoms disappear. Report signs of extravasation (pain, swelling, redness at the injection site) (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.1).",
+    "warnings": [
+      "End-organ damage due to intravascular ceftriaxone-calcium precipitates: fatal reactions with calcium-ceftriaxone precipitates in lungs and kidneys have occurred in premature and full-term newborns aged less than 1 month, administered simultaneously or non-simultaneously and through different intravenous lines; use is contraindicated in newborns (up to 28 days of age) requiring or expected to require ceftriaxone IV. In patients older than 28 days, administer sequentially with thoroughly flushed (or replaced) infusion lines or different sites; never mix or administer simultaneously (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 5.1)",
+      "Hypotension, bradycardia, arrhythmias, syncope and cardiac arrest with rapid administration: rapid injection may cause vasodilation and decreased blood pressure; injection exceeding 1 mL/minute may lead to hypotension and cardiac syncope; prevent a high concentration of calcium from reaching the heart (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 5.2)",
+      "Arrhythmias with concomitant digoxin use: arrhythmias may occur if administered together; hypercalcemia from overdose increases the risk of digoxin toxicity; avoid use in patients receiving digoxin, and if unavoidable, closely monitor ECG and calcium levels (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 5.3)",
+      "Tissue necrosis and calcinosis: administration in patients with local trauma may result in calcinosis cutis due to transient increase in local calcium concentration, with or without extravasation; tissue necrosis, ulceration and secondary infection are the most serious complications; administer slowly through a small needle into a large vein; avoid extravasation or accidental perivascular injection; if perivascular infiltration occurs, immediately discontinue IV administration at that site and treat as needed (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 5.4)",
+      "Aluminum toxicity: the injection contains aluminum that may be toxic; aluminum may reach toxic levels with prolonged parenteral administration if kidney function is impaired; premature neonates are particularly at risk; patients with impaired kidney function, including premature neonates and preterm infants, receiving parenteral aluminum greater than 4 to 5 mcg/kg/day can accumulate aluminum at levels associated with central nervous system and bone toxicity; limit total daily aluminum exposure to no more than 5 mcg/kg/day in patients on parenteral nutrition (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 5.5)"
+    ],
+    "precautions": [
+      "Limitations of use: the safety and effectiveness of Calcium Chloride Injection for long-term use has not been established (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 1)",
+      "Do not use intramuscularly or subcutaneously, to avoid tissue necrosis and calcinosis cutis (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.1)",
+      "Visually inspect for particulate matter and discoloration prior to administration; do not administer if the solution is unclear or the seal is not intact (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.1)",
+      "Stop administration if the patient complains of any administration-related discomfort; administration may be resumed when symptoms disappear (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.1)",
+      "Renal impairment: use may increase the risk of a higher calcium-phosphorus product; initiate at the lowest recommended dose within the recommended range and monitor serum calcium frequently (e.g., every 4 hours) based on severity of impairment and risk of high calcium-phosphorus product (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 8.6)",
+      "Geriatric use: clinical studies did not include sufficient patients aged 65 years and older to determine whether they respond differently from younger adults (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 8.5)",
+      "Do not mix with other drugs simultaneously; do not administer in the same line as ceftriaxone (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.4)"
+    ],
+    "serious_adverse_reactions": [
+      "End-organ damage due to intravascular ceftriaxone-calcium precipitates (fatal reactions with precipitates in lungs and kidneys of newborns) (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 6 and 5.1)",
+      "Hypotension, bradycardia, arrhythmias, syncope and cardiac arrest with rapid administration (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 6 and 5.2)",
+      "Arrhythmias with concomitant digoxin use (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 6 and 5.3)",
+      "Tissue necrosis, ulceration, secondary infection and calcinosis cutis (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 6 and 5.4)",
+      "Aluminum toxicity (central nervous system and bone toxicity) with prolonged parenteral administration in impaired kidney function (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 6 and 5.5)"
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "No letter category assigned; the FDA label uses the PLLR (Pregnancy and Lactation Labeling Rule) format. Risk Summary: administration of Calcium Chloride Injection for the treatment of acute symptomatic hypocalcemia during pregnancy is not expected to cause major birth defects, miscarriage, or adverse maternal or fetal outcomes. There are risks to the mother and fetus associated with development of hypocalcemia during pregnancy. Animal reproduction studies have not been conducted. Background risk of major birth defects and miscarriage in clinically recognized pregnancies in the U.S. general population is estimated at 2 to 4% and 15 to 20%, respectively (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 8.1 Pregnancy, Risk Summary).",
+    "pregnancy_guidance": "Maternal hypocalcemia can result in an increased rate of spontaneous abortion, premature and dysfunctional labor, and possibly preeclampsia. Infants born to mothers with hypocalcemia can develop fetal and neonatal hyperparathyroidism, which in turn can cause fetal and neonatal skeletal demineralization, subperiosteal bone resorption, osteitis fibrosa cystica and neonatal seizures. If the patient develops or has hypocalcemia during pregnancy, the maternal and fetal/neonatal risks of untreated hypocalcemia must be weighed against treatment; the FDA label states treatment of acute symptomatic hypocalcemia during pregnancy is not expected to cause major birth defects, miscarriage, or adverse maternal or fetal outcomes, and no animal reproduction studies have been conducted (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 8.1 Pregnancy, Risk Summary and Clinical Considerations).",
+    "lactation_guidance": "Calcium is present in human milk. Administration of the approved recommended dose of Calcium Chloride Injection to the mother is not expected to cause harm to a breastfed infant. There is no information on the effects of Calcium Chloride Injection on the breastfed infant or on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for Calcium Chloride Injection and any potential adverse effects on the breastfed infant from Calcium Chloride Injection or from the underlying maternal condition (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 8.2 Lactation, Risk Summary).",
+    "overdose": "Overdosage of Calcium Chloride Injection may lead to hypercalcemia. Symptoms of hypercalcemia typically develop when total serum calcium concentration is ≥12 mg/dL and include shortening of QT interval, bradycardia, hypertension, anorexia, nausea, vomiting, bowel hypomotility and constipation, muscle weakness, bone pain, decreased concentration, depression, weakness, fatigue, confusion, hallucinations, disorientation, hypotonicity, seizures, and coma. Hypercalcemia effects on the kidney include diminished ability to concentrate urine and diuresis. In the event of overdosage, promptly discontinue Calcium Chloride Injection; the patient should be re-evaluated and appropriate countermeasures instituted if necessary (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 10 OVERDOSAGE).",
+    "pharmacokinetics": "Absorption: Calcium Chloride Injection is 100% bioavailable following intravenous injection. Distribution: calcium in the body is distributed mainly in the skeleton (99%); 1% is distributed within extracellular fluids and soft tissues. About 50% of total serum calcium is in the ionized (biologically active) form; 8% to 10% of serum calcium is bound to organic and inorganic acid, respectively, and approximately 40% is protein-bound (primarily to albumin). Metabolism: calcium itself does not undergo direct metabolism. Excretion: calcium is excreted by the kidney through a combination of glomerular filtration and tubular reabsorption; a significant increase in urinary excretion of calcium was observed during and after intravenous infusion of calcium chloride. Specific populations: the effect of age, sex, race, ethnicity, and renal or hepatic impairment on the pharmacokinetics of calcium have not been evaluated in clinical studies (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 12 CLINICAL PHARMACOLOGY, 12.1-12.3).",
+    "clinical_pearls": [
+      "Each mL of 10% solution contains 100 mg calcium chloride dihydrate = 27 mg (1.4 mEq) of elemental calcium per mL; the solution is hypertonic, osmolar concentration 2.04 mOsmol/mL, pH 5.5-7.5 (when diluted to 5%), contains no bacteriostat or antimicrobial agent, and is oxygen sensitive (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 11 DESCRIPTION)",
+      "Dose strictly by the labeled elemental content (27 mg / 1.4 mEq elemental calcium per mL; 100 mg calcium chloride dihydrate per mL) rather than by salt weight alone (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 3 and 11)",
+      "Repeated injections may be required because of rapid excretion of calcium; the exposure-response relationship and time course of pharmacodynamic response have not been fully characterized (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.2 and 12.2)",
+      "Long-term use safety and effectiveness have not been established; this product is for acute symptomatic hypocalcemia only (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 1 Limitations of Use)",
+      "The Henry Schein product cannot deliver doses below 200 mg; for patients requiring less than 200 mg use another calcium chloride injection product (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., section 2.2)"
+    ],
+    "brand_names": null,
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "The use of Calcium Chloride Injection in patients with renal impairment may increase the risk of a higher calcium-phosphorus product. Initiate at the lowest recommended dose within the recommended range (adults: 200 mg starting dose; pediatric patients: 2.7 mg/kg starting dose). Monitor serum calcium levels frequently based on the severity of the renal impairment and the risk of a high calcium-phosphorus product (e.g., every 4 hours) (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.3 and 8.6).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Administer by slow intravenous infusion in a central or deep vein in adults and pediatric patients (with or without renal impairment); do not administer by bolus; do not exceed 1 mL/minute (100 mg/minute). Do not use intramuscularly or subcutaneously (risk of tissue necrosis and calcinosis cutis). Visually inspect for particulate matter and discoloration before administration (solution is clear, seal intact); do not administer if unclear or seal not intact. Stop administration if the patient complains of any administration-related discomfort; may resume when symptoms disappear. Discard the unused portion. If time permits, allow the solution to warm to body temperature. Do not mix with other drugs simultaneously; do not mix or co-administer via Y-site with ceftriaxone (in newborns up to 28 days, concomitant use is contraindicated; in patients older than 28 days, sequential administration only with thoroughly flushed lines or different sites). Supplied as single-dose 10 mL syringes, 10% (1,000 mg/10 mL; 100 mg/mL) in Ansyr Plastic Syringe or LifeShield Abboject Glass Syringe. Store at 20-25°C (68-77°F), excursions permitted 15-30°C (59-86°F) (FDA 10% Calcium Chloride Injection, USP label, Henry Schein Inc., sections 2.1, 2.4, 3, 11 and 16 HOW SUPPLIED/STORAGE AND HANDLING)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc., repackaged from Hospira/Pfizer; Initial U.S. Approval 1938; Revised 05/2023), section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 1 INDICATIONS AND USAGE (Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 4 CONTRAINDICATIONS and 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 5.2, 5.3, 5.4, 5.5 and 6 ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.1 Important Administration Instructions, 2.2 Recommended Dosage and Administration, 2.3 Recommended Starting Dose in Patients with Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.1, 2.2 and 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.1, 2.2, 2.3, 4 and 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.4 Drug Incompatibilities, 4, 5.1, 5.3, 7.1 Digoxin, 7.2 Calcium Channel Blockers, 7.3 Drugs That Increase the Risk of Hypercalcemia",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.1, 2.2, 5.3, 7.1, 7.2, 7.3, 8.6 Renal Impairment and 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 17 PATIENT COUNSELING INFORMATION and section 2.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 5.1 End-Organ Damage due to Intravascular Ceftriaxone-Calcium Precipitates, 5.2 Hypotension/Bradycardia/Arrhythmias/Syncope with Rapid Administration, 5.3 Arrhythmias with Concomitant Digoxin Use, 5.4 Tissue Necrosis and Calcinosis, 5.5 Aluminum Toxicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 1 Limitations of Use, 2.1, 2.4, 8.5 Geriatric Use and 8.6 Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 6 ADVERSE REACTIONS (serious reactions list) and 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 8.1 Pregnancy, Risk Summary (PLLR format; no letter category assigned)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 8.1 Pregnancy, Risk Summary and Clinical Considerations (disease-associated maternal/embryo-fetal-neonatal risk)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 8.2 Lactation, Risk Summary",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), section 10 OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 12.1, 12.2 and 12.3 Pharmacokinetics (Absorption, Distribution, Elimination, Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 1, 2.2, 3 DOSAGE FORMS AND STRENGTHS, 11 DESCRIPTION, 12.2 and 16 HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.) - the complete labelling contains no Boxed Warning; the HIGHLIGHTS section lists no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.3 Recommended Starting Dose in Patients with Renal Impairment and 8.6 Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, 10% Calcium Chloride Injection, USP (Henry Schein, Inc.), sections 2.1, 2.4, 3, 11 and 16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a3b8e0e-efb0-465b-84cb-d120b3096ebd"
+    }
+  ],
+  "unsourced_fields": [
+    "food_interactions",
+    "brand_names",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "Product scope: 10% Calcium Chloride Injection, USP (100 mg/mL; 1,000 mg/10 mL single-dose syringe; 27 mg / 1.4 mEq elemental calcium per mL), for intravenous use only, repackaged by Henry Schein, Inc. (Bastian, VA) from original manufacturer/distributor Hospira, Inc. NDC 0409-1631-10 (Ansyr Plastic Syringe) and LifeShield Abboject Glass Syringe; Henry Schein repackaged NDC 0404-9830-10. Initial U.S. Approval 1938; label revised 05/2023; distributed by Hospira (Pfizer). Setid used: 0a3b8e0e-efb0-465b-84cb-d120b3096ebd (verified HTTP 200 at drugInfo.cfm and SPL XML fetched and cached at /home/ishi/.cache/clinova/labels/0a3b8e0e-efb0-465b-84cb-d120b3096ebd.txt). A substantively identical PAI Holdings, LLC dba PAI Pharma label (setid d5d9c301-599e-47bb-ba9b-c0065c08dfb4, verified HTTP 200, cached as .txt) carries the same indication and dosing content and corroborates this draft but was not separately cited. Regulatory scope: FDA DailyMed (US) only; EMA SmPC, UK emc, WHO and other national formularies were not consulted for this draft. CRITICAL GAP vs. the requested clinical scope: the FDA label ONLY covers acute symptomatic hypocalcemia. It does NOT list calcium channel blocker overdose, magnesium (sulfate) overdose, cardiac resuscitation adjunct, or hypermagnesemia as indications, and contains no dosing for those uses. Those uses are common in emergency/critical-care practice but are off-label for this product in the US and must NOT be added to indications/dosing without a separate authoritative source (e.g., a national guideline or formulary) - flagged here rather than invented. Similarly, the label states no boxed warning (black_box_warnings is [] sourced to the complete label, not null). Food interactions are not addressed anywhere in the label, and hepatic pharmacokinetic/dose-adjustment data are explicitly not evaluated (section 12.3 Specific Populations); both are null. Brand names: the label names device/syringe trademarks (Ansyr, Abboject, LifeShield) and the repackager, but no distinct drug brand name; brand_names is null rather than guessed. pregnancy_category is reported as the PLLR narrative (no letter category) exactly as the label presents it. Pediatric dosing 2.7-5 mg/kg applies to acute symptomatic hypocalcemia only; the ceftriaxone-in-newborns contraindication materially affects neonatal use. The Henry Schein presentation cannot deliver doses <200 mg. This is a needs_review draft: every populated field traces to the single FDA label above; no independent clinical verification has been performed."
+}

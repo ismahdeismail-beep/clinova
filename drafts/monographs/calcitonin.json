@@ -1,0 +1,232 @@
+{
+  "name": "Calcitonin",
+  "existing_id": "d91b4acc-f9b2-4c90-a3f3-59c4093236de",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcitonin salmon is a calcitonin receptor agonist. It acts primarily on bone, inhibiting the ongoing bone resorptive process (transiently with single injections; with prolonged use a persistent, smaller decrease in the rate of bone resorption, associated histologically with decreased osteoclast number and resorptive activity). Direct renal effects (increases excretion of filtered phosphate, calcium, and sodium by decreasing tubular reabsorption) and actions on the gastrointestinal tract (decreased volume and acidity of gastric juice and decreased pancreatic juice volume, trypsin and amylase) are also recognized. Calcitonin salmon actions are essentially identical to mammalian calcitonins but with greater potency per mg and longer duration of action. Calcitonin receptors have been discovered in osteoclasts and osteoblasts; the actions of calcitonin on bone and its role in normal human bone physiology are still not completely elucidated.",
+    "indications": [
+      "Treatment of symptomatic Paget's disease of bone in patients with moderate to severe disease (polyostotic involvement with elevated serum alkaline phosphatase and urinary hydroxyproline excretion); use only when alternatives are unsuitable (e.g., contraindicated, intolerant, or unwilling). No evidence of benefit in asymptomatic patients / prophylactic use.",
+      "Early treatment of hypercalcemic emergencies, along with other appropriate agents, when a rapid decrease in serum calcium is required, until more specific treatment of the underlying disease can be accomplished; may also be added to existing regimens for hypercalcemia (intravenous fluids and furosemide, oral phosphate, corticosteroids, or other agents).",
+      "Treatment of postmenopausal osteoporosis in women greater than 5 years postmenopause; reserve for patients for whom alternative treatments are not suitable. Fracture reduction efficacy has not been demonstrated; evidence of efficacy is based on increases in total body calcium.",
+      "Limitations of Use: due to the possible association between malignancy and calcitonin salmon use, the need for continued therapy should be re-evaluated on a periodic basis."
+    ],
+    "contraindications": [
+      "Hypersensitivity to calcitonin salmon or any of the excipients. Reactions have included anaphylaxis with death, bronchospasm, and swelling of the tongue or throat."
+    ],
+    "side_effects": [
+      "Nausea with or without vomiting (~10%; most evident at initiation, tends to decrease or disappear with continued administration)",
+      "Local inflammatory reactions at the subcutaneous/intramuscular injection site (~10%)",
+      "Flushing of face or hands (~2% to 5%)",
+      "Skin rashes and pruritus of the ear lobes",
+      "Nocturia, feverish sensation, pain in the eyes, poor appetite, abdominal pain, pedal edema, and salty taste",
+      "Postmarketing: urticaria; influenza-like symptoms, fatigue, edema (facial, peripheral, generalized); arthralgia, musculoskeletal pain; hypertension; abdominal pain, diarrhea; polyuria; dizziness, headache, paresthesia, tremor; visual disturbance",
+      "Anti-calcitonin antibody formation (about one-half of Paget's disease patients in antibody studies; high titers usually associated with loss of response)"
+    ],
+    "dosage": {
+      "adult": "Paget's disease of bone: 100 USP Units (0.5 mL) daily SC or IM. Hypercalcemia: start 4 USP Units/kg body weight every 12 hours SC or IM; if response unsatisfactory after 1-2 days increase to 8 USP Units/kg every 12 hours; if still unsatisfactory after 2 more days, increase further to a maximum of 8 USP Units/kg every 6 hours. Postmenopausal osteoporosis (women >5 years postmenopause): 100 USP Units (0.5 mL) daily SC or IM.",
+      "maximum": "Hypercalcemia: 8 USP Units/kg every 6 hours. Paget's disease and postmenopausal osteoporosis: 100 USP Units daily."
+    },
+    "adult_dosing": "Symptomatic Paget's disease of bone: 100 USP Units (0.5 mL) per day subcutaneously or intramuscularly. Hypercalcemia: 4 USP Units/kg every 12 hours SC/IM; increase to 8 USP Units/kg every 12 hours if unsatisfactory after 1-2 days; may increase further to 8 USP Units/kg every 6 hours if unsatisfactory after 2 more days. Postmenopausal osteoporosis (women >5 years postmenopause): 100 USP Units (0.5 mL) daily SC/IM; minimum effective dose for prevention of vertebral BMD loss not established. Ensure adequate calcium (>=1000 mg elemental calcium/day) and vitamin D (>=400 IU/day) intake for osteoporosis and Paget's disease.",
+    "pediatric_dosing": "Safety and effectiveness in pediatric patients have not been established.",
+    "interactions": [
+      "Lithium: concomitant use of calcitonin salmon and lithium may lead to a reduction in plasma lithium concentrations due to increased urinary clearance of lithium; the dose of lithium may require adjustment. (No formal drug interaction studies have been performed with Miacalcin injection.)"
+    ],
+    "monitoring": "Monitor serum calcium and symptoms of hypocalcemia (risk of tetany/seizures), especially in at-risk patients during the first several administrations; provisions for parenteral calcium should be available. Correct hypocalcemia and treat disorders of mineral metabolism (e.g., vitamin D deficiency) before initiating therapy. Periodic examinations of urine sediment should be considered (coarse granular casts / casts containing renal tubular epithelial cells reported; sediment normalized after discontinuation). Re-evaluate the need for continued therapy on a periodic basis due to possible association with malignancy. In postmenopausal osteoporosis, monitor response by periodic lumbar vertebral bone mass measurement; biochemical markers of bone turnover should not be solely utilized. Hypercalcemia: monitor serum calcium response (reduction evident within 1-2 hours; peak effect within 24-48 hours; hypocalcemic effect maintained ~5-8 days).",
+    "patient_counselling": "Instruct patients and other persons who may administer Miacalcin injection in sterile injection technique and proper disposal of needles. Inform patients of the potential increase in risk of malignancy. Advise patients with postmenopausal osteoporosis or Paget's disease to maintain adequate calcium (>=1000 mg elemental calcium per day) and vitamin D (>=400 IU per day) intake. Instruct patients to seek emergency medical help / go to the nearest emergency room immediately if signs or symptoms of a serious allergic reaction develop. If an injected volume exceeds 2 mL, intramuscular injection is preferable and the total dose should be distributed across multiple injection sites. Do not administer if the solution is not clear and colorless or contains particles, or if the vial is damaged; store refrigerated at 2-8°C (36-46°F) and protect from freezing.",
+    "warnings": [
+      "Hypersensitivity Reactions: serious hypersensitivity reactions including bronchospasm, swelling of the tongue or throat, anaphylactic shock, and death due to anaphylaxis have been reported; appropriate medical support and monitoring measures should be readily available when administered; if anaphylaxis or other severe hypersensitivity/allergic reactions occur, initiate appropriate treatment. For patients with suspected hypersensitivity to calcitonin salmon, skin testing should be considered prior to treatment (dilute sterile solution; referral to an allergist may be appropriate).",
+      "Hypocalcemia: hypocalcemia associated with tetany (muscle cramps, twitching) and seizure activity has been reported; hypocalcemia must be corrected before initiating therapy; treat other disorders affecting mineral metabolism (e.g., vitamin D deficiency); in at-risk patients, provisions for parenteral calcium administration should be available during the first several administrations and serum calcium and symptoms of hypocalcemia should be monitored.",
+      "Malignancy: a meta-analysis of 21 randomized, controlled clinical trials with calcitonin salmon (nasal spray or investigational oral formulations; 6151 treated vs 4732 placebo) showed a higher overall incidence of malignancies (4.1% vs 2.9%); findings were similar restricted to 18 nasal-spray-only trials (4.5% vs 2.3%). It is not possible to exclude an increased risk with long-term subcutaneous, intramuscular, or intravenous administration. Benefits for the individual patient should be carefully considered against possible risks; the need for continued therapy should be re-evaluated periodically.",
+      "Antibody Formation: circulating antibodies to calcitonin salmon may develop (about one-half of Paget's disease patients studied); consider antibody formation in any patient with an initial response who later stops responding to treatment.",
+      "Urine Sediment Abnormalities: coarse granular casts and casts containing renal tubular epithelial cells reported in young adult volunteers at bed rest; sediment normalized after stopping calcitonin; periodic examinations of urine sediment should be considered."
+    ],
+    "precautions": [
+      "Correct hypocalcemia before initiating therapy; treat vitamin D deficiency and other mineral metabolism disorders effectively.",
+      "Ensure adequate calcium and vitamin D intake in Paget's disease and postmenopausal osteoporosis (>=1000 mg elemental calcium/day and >=400 IU vitamin D/day).",
+      "Consider skin testing prior to treatment in patients with suspected hypersensitivity to calcitonin salmon.",
+      "Re-evaluate the need for continued therapy periodically because of the possible association between calcitonin salmon use and malignancy.",
+      "Consider calcitonin antibody formation in patients with loss of response after initial response.",
+      "Periodic urine sediment examinations should be considered.",
+      "Geriatric use: dose selection should be cautious, usually starting at the low end of the dosing range, reflecting greater frequency of decreased hepatic, renal, or cardiac function and concomitant disease or drug therapy.",
+      "Nasal spray formulation (Fortical): a nasal examination should be performed prior to start of treatment and whenever nasal complaints occur; rhinitis (12%), epistaxis (3.5%), sinusitis (2.3%), and mucosal alterations reported; nasal ulcerations occurred in 2.8% of Paget's disease patients in clinical trials."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis / anaphylactic shock, including death due to anaphylaxis",
+      "Bronchospasm and swelling of the tongue or throat (serious hypersensitivity reactions)",
+      "Hypocalcemia with tetany (muscle cramps, twitching) and seizure activity",
+      "Malignancy (meta-analysis suggests increased risk of overall malignancies: 4.1% calcitonin salmon vs 2.9% placebo; not excludable for SC/IM/IV routes)"
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "No FDA letter category assigned under the current PLLR labeling. Risk Summary: There are no studies with Miacalcin injection in pregnant women to inform a drug-associated risk for birth defects or miscarriage. In an animal reproduction study, subcutaneous administration of calcitonin salmon to pregnant rabbits during organogenesis at 4-18 times the recommended parenteral human dose caused a decrease in fetal birth weights. No adverse developmental outcome was observed in the rat with subcutaneous administration at 9 times the recommended human parenteral dose based on body surface area. The estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies in the U.S. general population is 2-4% and 15-20%, respectively.",
+    "pregnancy_guidance": "There are no studies with Miacalcin injection in pregnant women to inform a drug-associated risk for birth defects or miscarriage. Animal data: decreased fetal birth weights in rabbits given SC calcitonin salmon at 4-18 times the recommended parenteral human dose (human parenteral reference 54 IU/m2); no embryo/fetal toxicities in rats at maternal SC daily doses up to 80 IU/kg/day from gestation day 6 to 15. Use in pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+    "lactation_guidance": "There is no information on the presence of calcitonin salmon in human milk, the effects on the breastfed child, or the effects on milk production. Calcitonin has been shown to inhibit lactation in rats. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for Miacalcin injection and any potential adverse effects on the breastfed infant from the drug or from the underlying maternal condition.",
+    "overdose": "The pharmacologic actions of Miacalcin injection suggest that hypocalcemic tetany could occur in overdose; provisions for parenteral administration of calcium should be available for the treatment of overdose. A dose of 1000 International Units of calcitonin salmon subcutaneously may produce nausea and vomiting. Doses of 32 International Units per kg per day for 1 to 2 days demonstrate no other adverse effects. Data on chronic high-dose administration are insufficient to assess toxicity.",
+    "pharmacokinetics": "Absolute bioavailability approximately 66% (IM) and 71% (SC). After subcutaneous administration, peak plasma levels are reached in approximately 23 minutes. Terminal half-life approximately 58 minutes (IM) and 59-64 minutes (SC). Apparent volume of distribution 0.15 to 0.3 L/kg.",
+    "clinical_pearls": [
+      "Fracture reduction efficacy has NOT been demonstrated for calcitonin salmon injection; efficacy evidence in postmenopausal osteoporosis is based on increases in total body calcium, and a prematurely discontinued controlled study failed to demonstrate benefit on fracture rate.",
+      "Reserve for patients for whom alternative treatments are not suitable (contraindicated, intolerant, or unwilling); no evidence of benefit in asymptomatic Paget's disease.",
+      "Salmon calcitonin is more potent per mg and longer acting than mammalian calcitonins; antibodies develop in about half of Paget's disease patients treated 2-18 months and may cause loss of response.",
+      "Hypercalcemic effect appears within 1-2 hours, peaks at 24-48 hours, and is maintained for approximately 5-8 days with every-12-hour dosing; patients with higher pre-therapy serum calcium tended to show greater reductions.",
+      "Hypocalcemia must be corrected before starting therapy; keep parenteral calcium available in at-risk patients during initial doses.",
+      "Meta-analysis (21 RCTs, n=10883) suggests increased overall malignancy risk (4.1% vs 2.9%); re-evaluate need for continued therapy periodically.",
+      "Ensure adequate calcium (>=1000 mg/day) and vitamin D (>=400 IU/day) supplementation in osteoporosis and Paget's disease.",
+      "Fortical nasal spray (200 IU once daily, alternating nostrils) is an alternative salmon calcitonin formulation for postmenopausal osteoporosis; do a nasal exam before starting and when nasal complaints occur."
+    ],
+    "brand_names": [
+      "Miacalcin (calcitonin salmon injection, synthetic; Mylan Institutional LLC / Viatris)",
+      "Fortical (calcitonin-salmon rDNA origin nasal spray; Physicians Total Care Inc.)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Injection (Miacalcin): clear, colorless sterile solution for subcutaneous or intramuscular use; visually inspect vials and do not administer if not clear/colorless, if particles are present, or if vial is damaged. Administer 100 USP Units (0.5 mL) daily SC or IM for Paget's disease or postmenopausal osteoporosis; for hypercalcemia give 4 USP Units/kg every 12 hours SC/IM, titrating per response. If the volume to be injected exceeds 2 mL, intramuscular injection is preferable and the total dose should be distributed across multiple injection sites. Use sterile injection technique and dispose of needles properly. Store refrigerated at 2-8°C (36-46°F); protect from freezing; multi-dose vials contain 200 USP Units/mL (2 mL vials). Nasal spray (Fortical): 1 spray (200 International Units) per day intranasally, alternating nostrils daily; each bottle (3.7 mL) contains 30 doses."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 12.1-12.2 (Mechanism of Action; Pharmacodynamics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "indications",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 1.1-1.4 (Indications and Usage; Limitations of Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "contraindications",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 4 (Contraindications)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "side_effects",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 6.1-6.3 (Adverse Reactions: Clinical Trials Experience; Postmarketing Experience; Immunogenicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "dosage",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.1-2.5, 3 (Dosage and Administration; Dosage Forms and Strengths)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.1-2.5 (Dosage and Administration)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 8.4 (Pediatric Use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "interactions",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 7 (Drug Interactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "monitoring",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.5, 5.2-5.5, 14.2 and FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Dosage and Administration (monitoring by lumbar vertebral bone mass)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Dosage and Administration section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.4-2.5, 16, 17 (Preparation and Administration; How Supplied/Storage; Patient Counseling Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "warnings",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 5.1-5.5 (Warnings and Precautions); 6.1 (malignancy meta-analysis)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "precautions",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.5, 5.1-5.5, 8.5 (Geriatric Use) and FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3 (nasal examination; nasal adverse events)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "precautions",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Warnings/Precautions nasal adverse events sections",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 4, 5.1-5.3, 6 (Contraindications; Warnings and Precautions; Adverse Reactions)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 8.1 (Pregnancy - Risk Summary; Data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 8.1 (Pregnancy - Risk Summary; Data; Animal Data)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 8.2 (Lactation - Risk Summary)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "overdose",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 10 (Overdosage)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, section 12.3 (Pharmacokinetics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 1.3, 1.4, 2.5, 5.3, 6.3, 12.1, 14.2-14.3 and FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3 (Fortical dosing)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, Highlights/How Supplied (MIACALCIN); FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3 (FORTICAL)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, product title",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, full label reviewed - no boxed (black box) warning present; FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, full label reviewed - no boxed warning present",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, full label reviewed - no boxed warning present",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "MIACALCIN (calcitonin salmon) injection, Mylan Institutional LLC, setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, sections 2.3-2.5, 3, 16 (Dosage Forms; How Supplied/Storage) and FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Dosage and Administration (intranasal 1 spray daily, alternating nostrils; 30 doses/bottle)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FORTICAL (calcitonin-salmon) nasal spray, Physicians Total Care Inc., setid e662c321-8c1b-4829-b4c9-459284f654c3, Dosage and Administration",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e662c321-8c1b-4829-b4c9-459284f654c3"
+    }
+  ],
+  "unsourced_fields": [
+    "food_interactions",
+    "renal_dose_adjustment",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "Primary source: MIACALCIN (calcitonin salmon) injection, synthetic - Mylan Institutional LLC (NDA 017808), DailyMed setid 26caf31f-7f7c-48a8-a1ac-35d2ceefda2b, label updated Sep 2024, verified HTTP 200 and title match (salmon calcitonin). Secondary source: FORTICAL (calcitonin-salmon, rDNA origin) metered nasal spray - Physicians Total Care Inc., DailyMed setid e662c321-8c1b-4829-b4c9-459284f654c3, verified HTTP 200 and title match (salmon calcitonin); used only for nasal-formulation-specific administration/monitoring/brand details and for the black_box_warnings cross-check. Both products are SALMON calcitonin; no US human calcitonin product for this class uses human calcitonin. Regulatory scope: US FDA (DailyMed/SPL); no EMA SmPC or UK emc source was required because suitable US labels exist. food_interactions: no food-interaction content in either label -> null. renal_dose_adjustment and hepatic_dose_adjustment: no dose-adjustment guidance in either label -> null (label only notes geriatric caution regarding decreased hepatic/renal function). black_box_warnings: [] (documented absence - neither label carries a boxed warning). pregnancy_category is a PLLR narrative statement; no FDA letter category exists in current labeling and none was invented. Fracture reduction efficacy NOT demonstrated for Miacalcin injection (per label 1.3/14.3). Malignancy meta-analysis data (4.1% vs 2.9%) are from nasal spray/oral formulations; SC/IM/IV risk cannot be excluded. existing_id intentionally empty string; content_status needs_review; not applied to any database; no other files edited."
+}

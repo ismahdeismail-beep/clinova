@@ -1,0 +1,422 @@
+{
+  "name": "Calcipotriol",
+  "existing_id": "35513136-7943-48cc-b995-4932e5c40aac",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcipotriol (US name: calcipotriene) is a synthetic analogue of vitamin D3 (cholecalciferol). The precise mechanism of its antipsoriatic action is not fully understood; in vitro evidence suggests that calcipotriene is roughly equipotent with the natural vitamin in its effects on proliferation and differentiation of a variety of cell types, and in vitro data suggest that calcipotriol induces differentiation and suppresses proliferation of keratinocytes, which is proposed as the basis for its effect in psoriasis. In animal studies, calcipotriene/calcipotriol has been shown to be 100-200 times less potent (US solution label) or approximately 100 times less potent (UK SmPC) than the hormonally active form of vitamin D3 in its effects on calcium utilization. Calcipotriene metabolism following systemic uptake is rapid and occurs via a pathway similar to that of the natural hormone, with the primary metabolites much less potent than the parent compound. Vitamin D and its metabolites are transported in the blood bound to specific plasma proteins; the active form, 1,25-dihydroxy vitamin D3 (calcitriol), is recycled via the liver and excreted in the bile. (FDA DailyMed DOVONEX Scalp Solution label, CLINICAL PHARMACOLOGY; UK emc SmPC, Dovonex Ointment, sections 5.1-5.2)",
+    "indications": [
+      "DOVONEX (calcipotriene) Cream, 0.005%: indicated for the treatment of plaque psoriasis. The safety and effectiveness of topical calcipotriene in dermatoses other than psoriasis have not been established. (FDA DailyMed DOVONEX Cream label, INDICATIONS AND USAGE)",
+      "DOVONEX (calcipotriene) Scalp Solution, 0.005%: indicated for the topical treatment of chronic, moderately severe psoriasis of the scalp. The safety and effectiveness of topical calcipotriene in dermatoses other than psoriasis have not been established. (FDA DailyMed DOVONEX Scalp Solution label, INDICATIONS AND USAGE)",
+      "Dovonex Ointment (calcipotriol 50 micrograms/g): indicated for the topical treatment of plaque psoriasis (psoriasis vulgaris) amenable to topical therapy. (UK emc SmPC, Dovonex Ointment, section 4.1)"
+    ],
+    "contraindications": [
+      "DOVONEX Cream: contraindicated in patients with a history of hypersensitivity to any of the components of the preparation; should not be used by patients with demonstrated hypercalcemia or evidence of vitamin D toxicity; should not be used on the face. (FDA DailyMed DOVONEX Cream label, CONTRAINDICATIONS)",
+      "DOVONEX Scalp Solution: contraindicated in patients with acute psoriatic eruptions or a history of hypersensitivity to any of the components of the preparation; should not be used by patients with demonstrated hypercalcemia or evidence of vitamin D toxicity. (FDA DailyMed DOVONEX Scalp Solution label, CONTRAINDICATIONS)",
+      "Dovonex Ointment: hypersensitivity to the active substance or any of the excipients; due to the calcipotriol content, contraindicated in patients with known disorders of calcium metabolism. (UK emc SmPC, Dovonex Ointment, section 4.3)"
+    ],
+    "side_effects": [
+      "DOVONEX Cream 0.005%: the most frequent adverse experiences in controlled clinical trials were skin irritation, occurring in approximately 10-15% of patients; rash, pruritus, dermatitis and worsening of psoriasis were reported in 1-10% of patients. (FDA DailyMed DOVONEX Cream label, ADVERSE REACTIONS)",
+      "DOVONEX Scalp Solution 0.005%: the most frequent adverse reactions were transient burning, stinging and tingling, in approximately 23% of patients; rash in about 11%; dry skin, irritation and worsening of psoriasis in 1-5%; skin atrophy, hyperpigmentation, hypercalcemia and folliculitis were not observed in these studies, but cannot be excluded. (FDA DailyMed DOVONEX Scalp Solution label, ADVERSE REACTIONS)",
+      "Dovonex Ointment (UK): the most frequently reported adverse reactions are pruritus, skin irritation and erythema; approximately 25% of patients could experience an adverse reaction, usually mild. Common (>=1/100 to <1/10): psoriasis aggravated, dermatitis, erythema, skin exfoliation, skin burning sensation, skin irritation, pruritus, application site pain. Uncommon (>=1/1,000 to <1/100): folliculitis, rash (including erythematous, maculo-papular, morbilliform, papular and pustular rash types), dry skin, application site pigmentation changes. Rare (>=1/10,000 to <1/1,000): hypersensitivity, hypercalcaemia, photosensitivity reaction, skin oedema, urticaria, seborrhoeic dermatitis, hypercalciuria. Systemic reactions (hypercalcaemia and hypercalciuria) have been reported and the risk increases if the recommended total dose is exceeded. (UK emc SmPC, Dovonex Ointment, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "DOVONEX Cream 0.005%: apply a thin layer to the affected skin twice daily and rub in gently and completely; safety and efficacy demonstrated in patients treated for eight weeks. (FDA DailyMed DOVONEX Cream label, DOSAGE AND ADMINISTRATION) DOVONEX Scalp Solution 0.005%: comb the hair to remove scaly debris, suitably part the hair, apply twice daily only to the lesions and rub in gently and completely, taking care to prevent the solution spreading onto the forehead. (FDA DailyMed DOVONEX Scalp Solution label, DOSAGE AND ADMINISTRATION) UK SmPC (Dovonex Ointment): apply to the affected area once or twice daily; for maximum benefit use the ointment twice daily; use has been demonstrated over eight weeks. (UK emc SmPC, Dovonex Ointment, section 4.2)",
+      "maximum": "UK SmPC (Dovonex Ointment): the maximum weekly dose should not exceed 100 g of cream or ointment (equivalent to 5 mg of calcipotriol) or 60 mL of scalp solution (equivalent to 3 mg of calcipotriol); when cream, ointment or cutaneous solution are applied together, the total dose of calcipotriol should not exceed 5 mg per week. (UK emc SmPC, Dovonex Ointment, sections 4.2 and 4.4) The US Dovonex labels do not state a maximum weekly dose. (FDA DailyMed DOVONEX Cream and Scalp Solution labels)"
+    },
+    "adult_dosing": "Apply a thin layer of DOVONEX Cream 0.005% to the affected skin twice daily and rub in gently and completely (FDA DailyMed DOVONEX Cream label, DOSAGE AND ADMINISTRATION). For scalp psoriasis, apply DOVONEX Scalp Solution 0.005% twice daily only to the lesions after combing and parting the hair, rubbing in gently and completely and preventing spread to the forehead (FDA DailyMed DOVONEX Scalp Solution label, DOSAGE AND ADMINISTRATION). UK SmPC: apply Dovonex Ointment to the affected area once or twice daily; twice daily gives maximum benefit (UK emc SmPC, Dovonex Ointment, section 4.2). Safety and efficacy demonstrated over eight weeks of treatment (US cream and solution labels; UK SmPC section 4.2). The maximum weekly dose should not exceed 100 g of cream/ointment or 60 mL of scalp solution, and the combined total should not exceed 5 mg calcipotriol per week (UK SmPC, sections 4.2 and 4.4).",
+    "pediatric_dosing": "US labels: safety and effectiveness of DOVONEX Cream and DOVONEX Scalp Solution in pediatric patients have not been established (cream) / not been specifically established (solution); because of a higher ratio of skin surface area to body mass, pediatric patients are at greater risk than adults of systemic adverse effects when they are treated with topical medication. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Pediatric Use) UK SmPC (Dovonex Ointment): children over 12 years — apply twice daily, maximum weekly dose should not exceed 75 g; children aged 6 to 12 years — apply twice daily, maximum weekly dose should not exceed 50 g; children under 6 years — limited experience, a maximum safe dose has not been established. These recommendations are based on extensive adult experience; clinical experience in children has shown Dovonex safe and effective over eight weeks at a mean dose of 15 g per week with wide variability. Individual dose requirement depends on the extent of psoriasis but should not exceed the above recommendations. There is no experience of use of Dovonex in combination with other therapies in children. (UK emc SmPC, Dovonex Ointment, section 4.2)",
+    "interactions": [
+      "No interaction studies have been performed with Dovonex. (UK emc SmPC, Dovonex Ointment, section 4.5)",
+      "The US Dovonex labels contain no drug-drug interaction section and report no interaction studies; the labels direct prescribers to limit or avoid use of phototherapy in patients using calcipotriene (see warnings/precautions re UV exposure). (FDA DailyMed DOVONEX Cream and Scalp Solution labels)"
+    ],
+    "monitoring": "Monitor patients for signs of hypercalcaemia and for local skin reactions. Reversible elevation of serum calcium has occurred with use of topical calcipotriene; if elevation in serum calcium outside the normal range should occur, discontinue treatment until normal calcium levels are restored (FDA DailyMed DOVONEX Cream and Scalp Solution labels, PRECAUTIONS and OVERDOSAGE). The risk of hypercalcaemia is minimal when the dosage recommendations are followed; serum calcium normalises when treatment is discontinued. If the maximum weekly dose is exceeded, check serum calcium; symptoms of hypercalcaemia include polyuria, constipation, muscle weakness, confusion and coma. Care is advised in generalised pustular or erythrodermic exfoliative psoriasis, in which hypercalcaemia has been reported. When cream, ointment or scalp solution are applied together, ensure the total dose of calcipotriol does not exceed 5 mg per week. (UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.9) If skin irritation develops, discontinue Dovonex (US labels, PRECAUTIONS).",
+    "patient_counselling": "This medication is to be used only as directed by the physician; it is for external, topical use only (US cream and solution labels, Information for Patients). Apply a thin layer to the affected skin (cream) or to the lesions only after combing and parting the hair (scalp solution); rub in gently and completely. Avoid contact with the face and eyes; the cream should not be used on the face, and the solution should not spread onto the forehead or uninvolved scalp margins; keep the solution well away from the eyes (US cream and solution labels). Always wash hands thoroughly after use to avoid accidental transfer to the face, eyes and other areas (US cream and solution labels; UK SmPC, section 4.4). This medication should not be used for any disorder other than that for which it was prescribed (US labels). Patients should report to their physician any signs of adverse reactions (US labels). Patients who apply Dovonex to exposed portions of the body should avoid excessive exposure to either natural or artificial sunlight, including tanning booths and sun lamps (US labels); limit or avoid excessive UV exposure, and use with UV radiation only if the potential benefits outweigh the potential risks (UK SmPC, section 4.4). A fire hazard warning applies to the ointment: do not smoke or go near naked flames, and note that fabric (clothing, bedding, dressings) that has been in contact with the product burns more easily and is a serious fire hazard (UK SmPC, section 4.4). The solution is flammable and must be kept away from open flame (US solution label, WARNINGS). Breast-feeding women should not use Dovonex on the breast (UK SmPC, section 4.6). Store at controlled room temperature 15-25 degrees C (US labels) or do not store above 25 degrees C (UK SmPC, section 6.4); do not freeze.",
+    "warnings": [
+      "Avoid contact with the eyes or mucous membranes; discontinue use if a sensitivity reaction occurs or if excessive irritation develops on uninvolved skin areas. (FDA DailyMed DOVONEX Scalp Solution label, WARNINGS)",
+      "Drug product is flammable; keep away from open flame. (FDA DailyMed DOVONEX Scalp Solution label, WARNINGS) Dovonex Ointment: do not smoke or go near naked flames — risk of severe burns; fabric that has been in contact with the product burns more easily and is a serious fire hazard. (UK emc SmPC, Dovonex Ointment, section 4.4)",
+      "Hypercalcaemia may occur if the maximum weekly dose is exceeded; care should be exercised in patients with other types of psoriasis, since hypercalcaemia has been reported in patients with generalised pustular or erythrodermic exfoliative psoriasis; serum calcium normalises when treatment is discontinued; the risk of hypercalcaemia is minimal when the dosage recommendations are followed. The maximum weekly dose in adults is 100 g of cream or ointment (5 mg calcipotriol) or 60 ml of scalp solution (3 mg calcipotriol); when applied together the total dose should not exceed 5 mg per week. (UK emc SmPC, Dovonex Ointment, section 4.4)",
+      "Dovonex should not be applied to the face, as it may cause skin irritation; the patient must be instructed in correct use to avoid accidental transfer to the face and eyes, and hands must be washed after each application. (UK emc SmPC, Dovonex Ointment, section 4.4; FDA DailyMed DOVONEX Cream label, CONTRAINDICATIONS)",
+      "During treatment, limit or avoid excessive exposure to natural or artificial sunlight; use with UV radiation only if the physician and patient consider that the potential benefits outweigh the potential risks. (UK emc SmPC, Dovonex Ointment, section 4.4; FDA DailyMed DOVONEX Cream and Scalp Solution labels, Carcinogenesis/Information for Patients)",
+      "Due to lack of data, Dovonex should be avoided in guttate, erythrodermic, exfoliative and pustular psoriasis, and should be avoided in patients with severe liver and kidney disease. (UK emc SmPC, Dovonex Ointment, section 4.4)",
+      "Propylene glycol (100 mg/g in the ointment) may cause skin irritation. (UK emc SmPC, Dovonex Ointment, sections 2 and 4.4)"
+    ],
+    "precautions": [
+      "Dovonex may cause transient irritation of both lesions and surrounding uninvolved skin; if irritation develops, Dovonex should be discontinued. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, PRECAUTIONS)",
+      "For external use only; keep out of the reach of children; always wash hands thoroughly after use. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, PRECAUTIONS)",
+      "Reversible elevation of serum calcium has occurred with use of topical calcipotriene; if serum calcium outside the normal range occurs, discontinue treatment until normal calcium levels are restored. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, PRECAUTIONS)",
+      "Patients applying Dovonex to exposed portions of the body should avoid excessive exposure to natural or artificial sunlight (including tanning booths and sun lamps); in albino hairless mice exposed to both UV radiation and topical calcipotriene, the time required for UVR to induce skin tumours was reduced (statistically significant in males only), suggesting calcipotriene may enhance UVR-induced skin tumour formation; physicians may wish to limit or avoid phototherapy in these patients. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Carcinogenesis, Mutagenesis, Impairment of Fertility)",
+      "Pediatric patients are at greater risk than adults of systemic adverse effects because of a higher ratio of skin surface area to body mass. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Pediatric Use)",
+      "In clinical studies, approximately 15-16% of patients were 65 or older and approximately 3-4% were 75 or over; there were no significant differences in adverse events versus younger subjects, but greater sensitivity of some older individuals cannot be ruled out. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Geriatric Use)",
+      "Use during pregnancy should follow the benefit-versus-risk assessment (see pregnancy_guidance); Dovonex should not be used during pregnancy unless clearly necessary. (UK emc SmPC, Dovonex Ointment, section 4.6; FDA DailyMed DOVONEX Cream and Scalp Solution labels, Pregnancy)"
+    ],
+    "serious_adverse_reactions": [
+      "Hypercalcaemia (rare, >=1/10,000 to <1/1,000, UK SmPC; also observed with excessive use of topical calcipotriene in the US labels); systemic reactions increase in frequency if the recommended total dose is exceeded. (UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.8; FDA DailyMed DOVONEX Cream and Scalp Solution labels, OVERDOSAGE)",
+      "Hypercalciuria (rare, >=1/10,000 to <1/1,000). (UK emc SmPC, Dovonex Ointment, section 4.8)",
+      "Hypersensitivity reactions, including urticaria and seborrhoeic dermatitis (rare). (UK emc SmPC, Dovonex Ointment, section 4.8)",
+      "Photosensitivity reaction, skin oedema (rare). (UK emc SmPC, Dovonex Ointment, section 4.8)",
+      "Skin atrophy, hyperpigmentation, hypercalcemia and folliculitis were not observed in controlled US solution trials but cannot be excluded. (FDA DailyMed DOVONEX Scalp Solution label, ADVERSE REACTIONS)"
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "The US Dovonex labels state the older letter wording 'Teratogenic Effects: Pregnancy Category C' (labels revised 2008): there are no adequate and well-controlled studies in pregnant women, and the product should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. (FDA DailyMed DOVONEX Cream and Scalp Solution labels) The UK SmPC does not assign a letter category (PLLR-style narrative instead): the safety of topical calcipotriol during human pregnancy has not been established; studies in animals have shown reproductive toxicity when calcipotriol was administered orally; calcipotriol should not be used during pregnancy unless clearly necessary. (UK emc SmPC, Dovonex Ointment, section 4.6)",
+    "pregnancy_guidance": "There are no adequate and well-controlled studies in pregnant women; Dovonex Cream should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. (FDA DailyMed DOVONEX Cream label, Pregnancy) Teratogenicity studies were by the oral route (bioavailability expected to be approximately 40-60%). Increased rabbit maternal and fetal toxicity was noted at 12 micrograms/kg/day (132 micrograms/m2/day); rabbits given 36 micrograms/kg/day (396 micrograms/m2/day) had fetuses with a significant increase in incidences of pubic bones, forelimb phalanges and incomplete bone ossification. In a rat study, oral doses of 54 micrograms/kg/day (318 micrograms/m2/day) produced a significantly higher incidence of skeletal abnormalities consisting primarily of enlarged fontanelles and extra ribs; the enlarged fontanelles are most likely due to calcipotriene's effect on calcium metabolism. The maternal and fetal calculated no-effect exposures in rats (43.2 micrograms/m2/day) and rabbits (17.6 micrograms/m2/day) are approximately equal to (cream label) or greater than (solution label, 0.13 micrograms/m2/day for solution) the expected human systemic exposure from dermal application. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Pregnancy) UK SmPC: the safety of topical calcipotriol during human pregnancy has not been established; animal studies have shown reproductive toxicity with oral administration; calcipotriol should not be used during pregnancy unless clearly necessary. (UK emc SmPC, Dovonex Ointment, section 4.6)",
+    "lactation_guidance": "There is evidence that maternal 1,25-dihydroxy vitamin D3 (calcitriol) may enter the fetal circulation, but it is not known whether it is excreted in human milk. The systemic disposition of calcipotriene is expected to be similar to that of the naturally occurring vitamin. Because many drugs are excreted in human milk, caution should be exercised when Dovonex is administered to a nursing/breast-feeding woman. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Nursing Mothers) UK SmPC: it is unknown whether calcipotriol is excreted in breast milk; caution should be exercised when prescribing Dovonex to women who breast-feed; the patient should be instructed not to use Dovonex on the breast when breast-feeding. (UK emc SmPC, Dovonex Ointment, section 4.6)",
+    "overdose": "Topically applied calcipotriene can be absorbed in sufficient amounts to produce systemic effects. Elevated serum calcium has been observed with excessive use of topical calcipotriene; if elevation in serum calcium occurs, discontinue treatment until normal calcium levels are restored. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, OVERDOSAGE) UK SmPC: use above the recommended dose may cause elevated serum calcium which subsides when treatment is discontinued; the symptoms of hypercalcaemia include polyuria, constipation, muscle weakness, confusion and coma. (UK emc SmPC, Dovonex Ointment, section 4.9)",
+    "pharmacokinetics": "Approximately 6% (+/- 3%, SD) of the applied dose of calcipotriene is absorbed systemically when the ointment is applied topically to psoriasis plaques, or 5% (+/- 2.6%, SD) when applied to normal skin, and much of the absorbed active is converted to inactive metabolites within 24 hours of application; systemic absorption of the cream has not been studied. (FDA DailyMed DOVONEX Cream label, CLINICAL PHARMACOLOGY) Less than 1% of the applied dose of calcipotriene is absorbed through the scalp when the solution (2.0 mL) is applied topically to normal skin or psoriasis plaques (160 cm2) for 12 hours; much of the absorbed calcipotriene is converted to inactive metabolites within 24 hours. (FDA DailyMed DOVONEX Scalp Solution label, CLINICAL PHARMACOLOGY) UK SmPC: data from a single study containing 5 evaluable patients with psoriasis treated with 0.3-1.7 g of a 50 micrograms/g tritium-labelled calcipotriol ointment suggested that less than 1% of the dose was absorbed; total recovery of the tritium label over a 96-hour period ranged from 6.7 to only 32.6%, maximised by uncorrected chemiluminescence. (UK emc SmPC, Dovonex Ointment, section 5.2) Vitamin D and its metabolites are transported in the blood bound to specific plasma proteins; the active form, 1,25-dihydroxy vitamin D3 (calcitriol), is recycled via the liver and excreted in the bile; calcipotriene metabolism following systemic uptake is rapid and occurs via a pathway similar to the natural hormone, and the primary metabolites are much less potent than the parent compound. Calcipotriene monohydrate is a white to off-white crystalline substance with molecular weight 430.6. (FDA DailyMed DOVONEX Scalp Solution label, CLINICAL PHARMACOLOGY and DESCRIPTION)",
+    "clinical_pearls": [
+      "Improvement usually begins after about 2 weeks of therapy; approximately 50% of patients showed at least marked improvement in the signs and symptoms of psoriasis after 8 weeks of therapy, but only approximately 4% showed complete clearing. (FDA DailyMed DOVONEX Cream label, CLINICAL STUDIES)",
+      "For the scalp solution, approximately 31% of patients were cleared (14%) or almost cleared (17%) after 8 weeks of therapy. (FDA DailyMed DOVONEX Scalp Solution label, CLINICAL STUDIES)",
+      "For maximum benefit, apply the ointment twice daily (UK emc SmPC, Dovonex Ointment, section 4.2).",
+      "Do not exceed the maximum weekly dose: 100 g of cream/ointment, 60 mL of scalp solution, or a combined total of 5 mg calcipotriol per week; risk of hypercalcaemia is minimal within these limits. (UK emc SmPC, Dovonex Ointment, sections 4.2 and 4.4)",
+      "The safety and efficacy of the cream and the scalp solution have been demonstrated in patients treated for eight weeks. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, DOSAGE AND ADMINISTRATION)",
+      "Calcipotriene may enhance UV radiation-induced skin tumour formation (shown in albino hairless mice, statistically significant in males); limit or avoid phototherapy and excessive natural/artificial sunlight in patients applying it to exposed skin. (FDA DailyMed DOVONEX Cream and Scalp Solution labels, Carcinogenesis; UK emc SmPC, section 4.4)",
+      "Approximately 25% of patients treated with calcipotriol ointment could experience an adverse reaction, usually mild (most commonly pruritus, skin irritation and erythema). (UK emc SmPC, Dovonex Ointment, section 4.8)",
+      "Not for the face, eyes or mucous membranes; avoid accidental transfer by washing hands after each application. (UK emc SmPC, section 4.4; FDA DailyMed DOVONEX Cream label, CONTRAINDICATIONS)"
+    ],
+    "brand_names": [
+      "Dovonex — calcipotriene cream 0.005% and scalp solution 0.005% (US; LEO/Warner Chilcott NDA products, relabeled by Physicians Total Care, Inc.); Dovonex Ointment — calcipotriol 50 micrograms/g (UK, LEO Laboratories Ltd, PL 00043/0177)",
+      "Calcitrene (calcipotriene) ointment — Sun Pharmaceutical Industries, Inc. (FDA DailyMed setid 94d4f46a-f254-4fe2-b4bd-7a533d6324fe)",
+      "Sorilux (calcipotriene) aerosol, foam — Mayne Pharma (FDA DailyMed setid 51f208d0-7b3f-44cc-8bed-92fa3d2e7bbe)",
+      "Numerous US generic 'calcipotriene' cream, ointment and solution products from other manufacturers (e.g., Glenmark, Prasco, Cosette, Novel Laboratories, Northstar Rx) listed in the DailyMed search results for drug_name=calcipotriene; fixed-dose combination products containing calcipotriene plus betamethasone (e.g., Enstilar, Taclonex, Wynzora) are out of scope for this monograph"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific renal dose adjustment is provided in the US or UK labels. The UK SmPC states that, due to lack of data, Dovonex should be avoided in patients with severe kidney disease; the risk of hypercalcaemia is tied to exceeding the maximum weekly dose rather than to renal function per se, and serum calcium normalises when treatment is discontinued. (UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.9; FDA DailyMed DOVONEX Cream and Scalp Solution labels contain no renal dosing guidance)",
+    "hepatic_dose_adjustment": "No specific hepatic dose adjustment is provided in the US or UK labels. The UK SmPC states that, due to lack of data, Dovonex should be avoided in patients with severe liver disease; the pharmacology sections note that calcitriol is recycled via the liver and that calcipotriene is rapidly metabolised by a similar pathway to the natural hormone, with primary metabolites much less potent than the parent compound. (UK emc SmPC, Dovonex Ointment, sections 4.4 and 5.2; FDA DailyMed DOVONEX Scalp Solution label, CLINICAL PHARMACOLOGY)",
+    "administration_instructions": "Cream: apply a thin layer to the affected skin twice daily and rub in gently and completely; for topical dermatologic use only — not for ophthalmic, oral or intravaginal use; do not use on the face; wash hands thoroughly after use. (FDA DailyMed DOVONEX Cream label, DOSAGE AND ADMINISTRATION, PRECAUTIONS and PRINCIPAL DISPLAY PANEL) Scalp solution: comb the hair to remove scaly debris, suitably part the hair, apply twice daily only to the lesions, rub in gently and completely, taking care to prevent the solution spreading onto the forehead; keep well away from the eyes; avoid application to uninvolved scalp margins; wash hands thoroughly after use; avoid sunlight; flammable — keep away from open flame. (FDA DailyMed DOVONEX Scalp Solution label, DOSAGE AND ADMINISTRATION, WARNINGS and STORAGE) UK SmPC: apply to the affected area once or twice daily (twice daily for maximum benefit); wash hands after each application to avoid accidental transfer to the face and eyes; do not exceed 100 g per week (60 mL solution; 5 mg calcipotriol total if products are combined); do not use on the breast when breast-feeding; do not store above 25 degrees C. (UK emc SmPC, Dovonex Ointment, sections 4.2, 4.4, 4.6 and 6.4)"
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA DailyMed, DOVONEX (calcipotriene) Scalp Solution 0.005% (Physicians Total Care repackaging of LEO/Warner Chilcott label), CLINICAL PHARMACOLOGY; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "mechanism_of_action",
+      "ref": "UK emc SmPC, Dovonex Ointment (calcipotriol 50 micrograms/g), LEO Laboratories Ltd, PL 00043/0177, sections 5.1-5.2; text revised 13 July 2023",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed, DOVONEX (calcipotriene) Cream 0.005%, INDICATIONS AND USAGE; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed, DOVONEX (calcipotriene) Scalp Solution 0.005%, INDICATIONS AND USAGE; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "indications",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.1 Therapeutic indications",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, CONTRAINDICATIONS; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, CONTRAINDICATIONS; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "contraindications",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.3 Contraindications",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, ADVERSE REACTIONS; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, ADVERSE REACTIONS; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "side_effects",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, DOSAGE AND ADMINISTRATION; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, DOSAGE AND ADMINISTRATION; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "dosage",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.2 Posology and method of administration and 4.4 (maximum weekly dose 100 g / 5 mg calcipotriol; combined products max 5 mg/week)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, DOSAGE AND ADMINISTRATION; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, DOSAGE AND ADMINISTRATION; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.2 and 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, Pediatric Use; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, Pediatric Use; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.2 (children over 12 years: max 75 g/week; 6-12 years: max 50 g/week; under 6 years: limited experience, no maximum safe dose established)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.5 Interaction with other medicinal products and other forms of interaction (no interaction studies have been performed)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005% and DOVONEX Scalp Solution 0.005% (neither US label contains a drug-drug interaction section; both advise limiting or avoiding phototherapy); setids 3fcca1d8-09b9-4484-8809-66778e181c06 and 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, PRECAUTIONS and OVERDOSAGE; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, PRECAUTIONS and OVERDOSAGE; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "monitoring",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.9 (serum calcium normalises on discontinuation; symptoms of hypercalcaemia)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, Information for Patients and DOSAGE AND ADMINISTRATION; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, Information for Patients, DOSAGE AND ADMINISTRATION and WARNINGS; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.2, 4.4, 4.6 and 6.4 (fire hazard, UV exposure, do not use on the breast, wash hands, storage below 25 degrees C)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, WARNINGS (avoid eyes/mucous membranes; discontinue if sensitivity reaction; flammable); setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, CONTRAINDICATIONS (should not be used on the face); setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "warnings",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.4 Special warnings and precautions for use (hypercalcaemia if max weekly dose exceeded; UV exposure; avoid in guttate/erythrodermic/exfoliative/pustular psoriasis; avoid in severe liver/kidney disease; not for face; fire hazard; propylene glycol)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, PRECAUTIONS and Carcinogenesis, Mutagenesis, Impairment of Fertility; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, PRECAUTIONS, Pediatric Use and Geriatric Use; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "precautions",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, ADVERSE REACTIONS and OVERDOSAGE; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, OVERDOSAGE (elevated serum calcium with excessive use); setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.4, 4.8 and 4.9 (hypercalcaemia and hypercalciuria, rare; photosensitivity reaction; urticaria; hypersensitivity)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, Pregnancy: Teratogenic Effects: Pregnancy Category C; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, Pregnancy: Teratogenic Effects: Pregnancy Category C; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.6 Fertility, pregnancy and lactation (no letter category; reproductive toxicity in animals with oral administration; use only if clearly necessary)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, Pregnancy (oral-route teratogenicity studies; rabbit and rat no-effect exposures vs expected human dermal exposure); setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, Pregnancy; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, Nursing Mothers; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, Nursing Mothers; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.6 (unknown whether calcipotriol is excreted in breast milk; do not use on the breast when breast-feeding)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, OVERDOSAGE; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, OVERDOSAGE; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "overdose",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 4.9 Overdose (elevated serum calcium subsides on discontinuation; symptoms: polyuria, constipation, muscle weakness, confusion, coma)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, CLINICAL PHARMACOLOGY (~6% (+/-3% SD) absorbed from psoriasis plaques, 5% (+/-2.6%) from normal skin; cream absorption not studied); setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, DESCRIPTION and CLINICAL PHARMACOLOGY (<1% absorbed through scalp; molecular weight 430.6; plasma protein binding; biliary recycling of calcitriol); setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "UK emc SmPC, Dovonex Ointment, section 5.2 Pharmacokinetic properties (single study, 5 evaluable patients; <1% absorbed; tritium label recovery 6.7-32.6% over 96 h)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, CLINICAL STUDIES and DOSAGE AND ADMINISTRATION; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, CLINICAL STUDIES, DOSAGE AND ADMINISTRATION and Carcinogenesis; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.2, 4.4 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed, DOVONEX (calcipotriene) Cream 0.005% and DOVONEX Scalp Solution 0.005% (LEO/Warner Chilcott products relabeled by Physicians Total Care, Inc.; NDCs 54868-4725 and 54868-6057); setids 3fcca1d8-09b9-4484-8809-66778e181c06 and 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "brand_names",
+      "ref": "UK emc SmPC, Dovonex Ointment (LEO Laboratories Ltd, PL 00043/0177)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed, CALCITRENE (calcipotriene) ointment, Sun Pharmaceutical Industries, Inc.; setid 94d4f46a-f254-4fe2-b4bd-7a533d6324fe",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94d4f46a-f254-4fe2-b4bd-7a533d6324fe"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed, SORILUX (calcipotriene) aerosol, foam, Mayne Pharma; setid 51f208d0-7b3f-44cc-8bed-92fa3d2e7bbe",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f208d0-7b3f-44cc-8bed-92fa3d2e7bbe"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005% — no boxed/black box warning appears anywhere in the label; absence documented from full label text; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "UK emc SmPC, Dovonex Ointment — no boxed warning appears; absence documented from full SmPC text (sections 1-10)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.4 and 4.9 (avoid in severe kidney disease; dose limit tied to weekly maximum, not renal function)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.4 and 5.2 (avoid in severe liver disease; calcitriol recycled via liver; rapid calcipotriol metabolism)",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed, DOVONEX Cream 0.005%, DOSAGE AND ADMINISTRATION, PRECAUTIONS and PRINCIPAL DISPLAY PANEL; setid 3fcca1d8-09b9-4484-8809-66778e181c06",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcca1d8-09b9-4484-8809-66778e181c06"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed, DOVONEX Scalp Solution 0.005%, DOSAGE AND ADMINISTRATION, WARNINGS and STORAGE; setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c02cc96-ecaa-467b-9acb-7cae57ec8e87"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "UK emc SmPC, Dovonex Ointment, sections 4.2, 4.4, 4.6 and 6.4",
+      "url": "https://www.medicines.org.uk/emc/product/981/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "food_interactions"
+  ],
+  "notes": "Name and nomenclature: 'Calcipotriol' is the INN used in the UK/EU/WHO; the US INN is 'calcipotriene'. A DailyMed search for drug_name=calcipotriol returns zero results; the US human calcipotriene labels were used instead, so there is a US-vs-UK regulatory mismatch in this draft. Products used: (1) FDA DailyMed DOVONEX (calcipotriene) Cream 0.005%, setid 3fcca1d8-09b9-4484-8809-66778e181c06 — HTTP 200 verified, label title matches (NDA 020554; LEO/Warner Chilcott label revised Feb 2008, relabeled by Physicians Total Care, Inc., NDC 54868-4725-0); (2) FDA DailyMed DOVONEX (calcipotriene) Scalp Solution 0.005%, setid 1c02cc96-ecaa-467b-9acb-7cae57ec8e87 — HTTP 200 verified, label title matches (LEO/Warner Chilcott label, relabeled by Physicians Total Care, Inc., NDC 54868-6057-0); (3) UK emc SmPC, Dovonex Ointment (calcipotriol 50 micrograms/g), LEO Laboratories Ltd, PL 00043/0177, text revised 13 July 2023, last updated on emc 27 July 2023, at https://www.medicines.org.uk/emc/product/981/smpc — used to fill content absent from the US labels (notably the 100 g/week maximum dose, paediatric age-band dosing, undesirable-effects frequency table, the 'no interaction studies performed' statement, and the fire-hazard warning). Two other DailyMed setids were verified (HTTP 200) solely to cite additional brand names: CALCITRENE ointment (94d4f46a-f254-4fe2-b4bd-7a533d6324fe) and SORILUX foam (51f208d0-7b3f-44cc-8bed-92fa3d2e7bbe). The US Dovonex labels are old (2008, pre-PLLR) and carry the legacy letter wording 'Pregnancy Category C', which is reproduced verbatim as the label's own wording rather than as a modern PLLR assessment; the UK SmPC gives no letter category. US labels contain NO maximum weekly dose and NO paediatric dosing; the maximum of 100 g/week (5 mg calcipotriol, or 60 mL scalp solution / 3 mg) and the paediatric age-band limits (75 g/week >12 y, 50 g/week 6-12 y) come solely from the UK SmPC. US labels state that absorption of the cream has not been studied; systemic pharmacokinetic figures differ between products (~6% absorbed from plaques / 5% normal skin for ointment, <1% for scalp solution, UK single-study <1%). No boxed/black box warning appears in any cited label (black_box_warnings is intentionally an empty array, not null). Food interactions are not documented in any cited label, so food_interactions is null and listed in unsourced_fields. Interaction data do not exist ('No interaction studies have been performed', UK SmPC 4.5); the US interaction-relevant content is the UV/phototherapy caution. Only monotherapy calcipotriene products are covered; fixed-dose combinations (calcipotriene/betamethasone: Enstilar, Taclonex, Wynzora, and generic equivalents) are deliberately excluded. Tolerances: US texts say 'calcipotriene', UK texts say 'calcipotriol'; both names refer to the same molecule. Nothing in this draft should be applied to a database without review; content_status is needs_review. Fetched label texts were cached at /home/ishi/.cache/clinova/labels/3fcca1d8-09b9-4484-8809-66778e181c06.txt, .../1c02cc96-ecaa-467b-9acb-7cae57ec8e87.txt and .../dovonex_uk_smpc.txt for re-reading."
+}

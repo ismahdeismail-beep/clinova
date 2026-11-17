@@ -1,0 +1,206 @@
+{
+  "name": "Calcium Carbonate",
+  "existing_id": "42b3325b-81a0-47fa-8a73-d9440f4d8bbc",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "FDA OTC Drug Facts labeling for calcium carbonate products declares the purpose as 'Antacid' and the use as relief of heartburn, acid indigestion, sour stomach and upset stomach associated with these symptoms (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids labels, 'Active ingredient ... Purpose' and 'Uses'). No pharmacologic mechanism of action is described in the OTC labeling; calcium carbonate's acid-neutralizing pharmacology is not stated in the labels and is not asserted here. The CALCID label additionally positions calcium carbonate as a daily source of extra calcium ('CALCIUM SUPPLEMENT — Uses: As a daily source of extra calcium').",
+    "indications": [
+      "OTC antacid: relieves heartburn, acid indigestion, sour stomach, and upset stomach associated with these symptoms (TUMS EX 750 mg label, Drug Facts 'Uses'; TUMS Ultra 1000 mg label, Drug Facts 'Uses'; CALCID 500 mg label, Drug Facts 'Uses'; D-Cal Kids 750 mg granules label, 'Uses')",
+      "OTC calcium supplement: as a daily source of extra calcium (CALCID Antacid Calcium Supplement Regular Strength label, 'CALCIUM SUPPLEMENT — Uses: As a daily source of extra calcium'; 2 tablets twice daily with meals providing 400 mg calcium per 2-tablet serving, 40% Daily Value)",
+      "D-Cal Kids granules are labeled as 'Calcium Supplement Antacid' for children, dosed by weight/age (see pediatric_dosing)"
+    ],
+    "contraindications": null,
+    "side_effects": null,
+    "dosage": {
+      "adult": "Antacid (adults and children 12 years of age and over): TUMS EX (calcium carbonate 750 mg) - chew 2-4 tablets as symptoms occur, or as directed by a doctor; chew or crush tablets completely before swallowing. TUMS Ultra (calcium carbonate 1000 mg) - chew 2-3 tablets as symptoms occur, or as directed by a doctor; chew or crush tablets completely before swallowing. CALCID (calcium carbonate 500 mg) - chew 2-4 tablets as symptoms occur or as directed by a doctor. Calcium supplement use (CALCID): chew 2 tablets twice daily with a meal. Symptoms that persist for more than 2 weeks should be evaluated by a doctor (TUMS EX, TUMS Ultra and CALCID labels, 'Directions').",
+      "maximum": "TUMS EX (750 mg): do not take more than 10 tablets in 24 hours (9 tablets in 24 hours for the Sugar Free Orange Cream variant); if pregnant, do not take more than 6 tablets in 24 hours. TUMS Ultra (1000 mg): do not take more than 7 tablets in 24 hours; if pregnant, do not take more than 5 tablets in 24 hours. CALCID (500 mg): do not take more than 15 tablets in 24 hours. D-Cal Kids (750 mg pouch): do not take more than 1 pouch in a 24-hour period. In all cases, do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor (TUMS EX, TUMS Ultra, CALCID labels, 'Warnings'; D-Cal Kids label, 'Warnings')."
+    },
+    "adult_dosing": "Antacid: adults and children 12 years of age and over - TUMS EX 750 mg: chew 2-4 tablets as symptoms occur, or as directed by a doctor; TUMS Ultra 1000 mg: chew 2-3 tablets as symptoms occur, or as directed by a doctor; CALCID 500 mg: chew 2-4 tablets as symptoms occur or as directed by a doctor. Chew or crush tablets completely before swallowing; do not take for symptoms that persist for more than 2 weeks unless advised by a doctor. Calcium supplement (CALCID): chew 2 tablets twice daily with a meal (400 mg calcium per 2-tablet serving). Maximum daily limits and pregnancy limits: see fields.dosage.maximum (TUMS EX, TUMS Ultra and CALCID labels, 'Directions' and 'Warnings').",
+    "pediatric_dosing": "D-Cal Kids (calcium carbonate 750 mg per pouch, granules): dose by weight, otherwise by age. Under 24 lbs / under 2 years: ask a doctor. 24-47 lbs / 2-5 years: 1/2 pouch. 48-95 lbs / 6-11 years: 1 pouch. Pour powder into a cup, add 15 mL (0.51 oz) of water, stir and drink. Do not take more than 1 pouch in a 24-hour period; use an open pouch within two weeks. The TUMS EX and TUMS Ultra labels direct adults and children 12 years of age and over to chew 2-4 (TUMS EX) or 2-3 (TUMS Ultra) tablets as symptoms occur. No other pediatric regimens are stated in the labels consulted (D-Cal Kids label, 'Directions' and 'Dosing Chart'; TUMS EX and TUMS Ultra labels, 'Directions').",
+    "interactions": [
+      "Ask a doctor or pharmacist before use if you are presently taking a prescription drug. Antacids may interact with certain prescription drugs (TUMS EX, TUMS Ultra and CALCID labels, 'Warnings'; same statement in D-Cal Kids label, 'Warnings': 'Ask a doctor or pharmacist before use if you are taking a prescription drug. Antacids may interact with certain prescription drugs.')",
+      "No specific interacting drugs, drug classes, or mechanisms are named in any of the OTC labels consulted; no other interaction information could be sourced"
+    ],
+    "monitoring": null,
+    "patient_counselling": "Chew or crush tablets completely before swallowing (TUMS EX, TUMS Ultra). Do not take for symptoms that persist for more than 2 weeks unless advised by a doctor. Ask a doctor or pharmacist before use if you are presently taking a prescription drug - antacids may interact with certain prescription drugs. If pregnant, do not take more than the pregnancy-limited maximum (6 tablets/24 h for TUMS EX 750 mg; 5 tablets/24 h for TUMS Ultra 1000 mg) and do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor. Keep out of reach of children. Do not use if the printed inner safety seal under the cap is broken or missing (yellow-flag variants contain FD&C Yellow No. 5 / tartrazine; phenylketonurics: Sugar Free Orange Cream contains phenylalanine, less than 1 mg per tablet). D-Cal Kids: do not take more than 1 pouch in 24 hours; use an open pouch within two weeks; pour powder into a cup with 15 mL of water, stir and drink (TUMS EX, TUMS Ultra, CALCID and D-Cal Kids labels, 'Directions', 'Warnings', 'Other information').",
+    "warnings": [
+      "Ask a doctor or pharmacist before use if you are presently taking a prescription drug. Antacids may interact with certain prescription drugs (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids labels, 'Warnings')",
+      "Do not take more than the labeled maximum in 24 hours: TUMS EX (750 mg) 10 tablets (9 for Sugar Free Orange Cream); TUMS Ultra (1000 mg) 7 tablets; CALCID (500 mg) 15 tablets; D-Cal Kids (750 mg) 1 pouch (respective labels, 'Warnings')",
+      "If pregnant, do not take more than 6 tablets in 24 hours (TUMS EX) or 5 tablets in 24 hours (TUMS Ultra) (TUMS EX and TUMS Ultra labels, 'Warnings')",
+      "Do not use the maximum dosage for more than 2 weeks, except under the advice and supervision of a doctor (TUMS EX, TUMS Ultra, CALCID labels, 'Warnings')",
+      "Do not take for symptoms that persist for more than 2 weeks unless advised by a doctor (TUMS EX, TUMS Ultra labels, 'Directions')",
+      "Keep out of reach of children (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids labels, 'Warnings' / 'Keep out of reach of children')",
+      "D-Cal Kids: do not take more than 1 pouch in a 24-hour period; use an open pouch within two weeks (D-Cal Kids label, 'Warnings')"
+    ],
+    "precautions": [
+      "Store below 30 degrees C (86 degrees F) (TUMS EX, TUMS Ultra, CALCID labels, 'Other information'); D-Cal Kids: store in a dry place and do not use if a pouch is open or torn (D-Cal Kids label, 'Other information')",
+      "Do not use if the printed inner safety seal under the cap is broken or missing (TUMS EX and TUMS Ultra labels, safety statement; CALCID label, 'Other information')",
+      "Some flavors contain FD&C Yellow No. 5 (tartrazine) as a color additive (TUMS EX Assorted Fruit and TUMS Ultra Tropical Fruit / Assorted Fruit variants, 'Other information'; CALCID contains Yellow No. 5 and Yellow No. 6)",
+      "Phenylketonurics: Sugar Free Orange Cream variant contains phenylalanine, less than 1 mg per tablet (TUMS EX label, 'Other information')",
+      "TUMS EX Assorted Fruit and TUMS Ultra Tropical Fruit/Assorted Fruit each contain magnesium 5 mg and sodium 2 mg per tablet; consider in patients restricting sodium or magnesium (TUMS EX and TUMS Ultra labels, 'Other information')"
+    ],
+    "serious_adverse_reactions": null,
+    "food_interactions": [],
+    "pregnancy_category": "No FDA pregnancy letter category is assigned to these OTC calcium carbonate antacid labels and none appears in the labeling. The labels instead carry a pregnancy-specific use limit: if pregnant, do not take more than 6 tablets in 24 hours (TUMS EX 750 mg) or 5 tablets in 24 hours (TUMS Ultra 1000 mg), and do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor (TUMS EX and TUMS Ultra labels, 'Warnings'). No PLLR-style narrative risk summary is provided in the OTC Drug Facts labeling.",
+    "pregnancy_guidance": "If pregnant, do not take more than 6 tablets in 24 hours (TUMS EX 750 mg; 6 tablets also applies to the pregnancy limit stated on that label) or 5 tablets in 24 hours (TUMS Ultra 1000 mg). Do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor. The labels direct patients presently taking a prescription drug to ask a doctor or pharmacist before use because antacids may interact with certain prescription drugs (TUMS EX and TUMS Ultra labels, 'Warnings'). CALCID and D-Cal Kids labels state no pregnancy-specific guidance.",
+    "lactation_guidance": null,
+    "overdose": null,
+    "pharmacokinetics": null,
+    "clinical_pearls": [
+      "Elemental calcium content per tablet differs by strength: TUMS EX 750 mg provides elemental calcium 305 mg (300 mg in Tropical Fruit/Wintergreen/Cherry/Orange Cream variants; magnesium 5 mg present in some), TUMS Ultra 1000 mg provides elemental calcium 410 mg, and CALCID 500 mg provides calcium 400 mg per 2-tablet serving (40% Daily Value) (TUMS EX, TUMS Ultra and CALCID labels, 'Other information' / 'Supplement Facts')",
+      "The CALCID label is the only one of the four that labels a calcium-supplement indication ('As a daily source of extra calcium ... chew 2 tablets twice daily with meal'); the TUMS and D-Cal Kids labels are labeled solely as antacids (with D-Cal Kids marketed as 'Calcium Supplement Antacid' for children but dosing given by weight/age)",
+      "OTC calcium carbonate labels are Drug Facts only (Purpose/Uses/Warnings/Directions/Other information); they contain no adverse-reaction, contraindication, pharmacokinetic, overdose, interaction-detail or pregnancy-category sections, so those fields are left null rather than filled with class-level inference",
+      "Chew or crush tablets completely before swallowing; symptoms persisting more than 2 weeks, or use of the maximum dosage for more than 2 weeks, require doctor supervision (TUMS EX and TUMS Ultra labels, 'Directions' and 'Warnings')",
+      "Antacids may interact with prescription drugs - always ask a doctor or pharmacist before combining with prescription therapy (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids labels, 'Warnings')"
+    ],
+    "brand_names": [
+      "TUMS EX",
+      "TUMS Ultra",
+      "CALCID ANTACID CALCIUM SUPPLEMENT REGULAR STRENGTH",
+      "D-Cal Kids"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Oral. Antacid: chew the tablet(s) thoroughly or crush completely before swallowing; adults and children 12 years and over take 2-4 tablets (TUMS EX 750 mg / CALCID 500 mg) or 2-3 tablets (TUMS Ultra 1000 mg) as symptoms occur, or as directed by a doctor; do not exceed the labeled 24-hour maximum and do not use the maximum dosage for more than 2 weeks except under the advice and supervision of a doctor. Calcium supplement (CALCID): chew 2 tablets twice daily with a meal. D-Cal Kids granules: pour powder into a cup, add 15 mL (0.51 oz) of water, stir and drink; under 2 years ask a doctor, 2-5 years (24-47 lbs) 1/2 pouch, 6-11 years (48-95 lbs) 1 pouch; do not exceed 1 pouch in 24 hours and use an open pouch within two weeks (TUMS EX, TUMS Ultra, CALCID and D-Cal Kids labels, 'Directions')."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA OTC label, TUMS EX (calcium carbonate) tablet, Haleon US Holdings LLC, Drug Facts 'Active ingredient ... Purpose' and 'Uses'; CALCID label, 'CALCIUM SUPPLEMENT — Uses'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA OTC labels: TUMS EX (Haleon) 'Uses'; TUMS Ultra (Haleon) 'Uses'; CALCID (Pro-ventas S.A. de C.V.) 'Uses' and 'CALCIUM SUPPLEMENT — Uses'; D-Cal Kids (A&Z Pharmaceutical, Inc.) 'Uses' and principal display panel",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=011bf4be-5e8c-47ae-9fbd-2b01da32696a"
+    },
+    {
+      "field": "contraindications",
+      "ref": "No contraindications section exists in the human FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "side_effects",
+      "ref": "No adverse reaction section exists in the human FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA OTC labels: TUMS EX 'Directions' and 'Warnings' (max 10/24 h; 9 for Sugar Free Orange Cream; pregnancy max 6/24 h); TUMS Ultra 'Directions' and 'Warnings' (max 7/24 h; pregnancy max 5/24 h); CALCID 'Directions' and 'Warnings' (max 15/24 h; supplement 2 tablets twice daily with meals); D-Cal Kids 'Directions'/'Warnings' (max 1 pouch/24 h)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA OTC labels: TUMS EX 'Directions'; TUMS Ultra 'Directions'; CALCID 'Directions' and 'CALCIUM SUPPLEMENT — Directions'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4786707-a0f7-4ba8-9656-06278d1b4b6c"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA OTC label, D-Cal Kids (A&Z Pharmaceutical, Inc.), 'Directions' and weight/age Dosing Chart; TUMS EX and TUMS Ultra 'Directions' (adults and children 12 years and over)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c45d37d-01f6-4d0a-83b0-eaa1cfec605f"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA OTC labels: TUMS EX, TUMS Ultra, CALCID and D-Cal Kids 'Warnings' ('Ask a doctor or pharmacist before use if you are presently taking a prescription drug. Antacids may interact with certain prescription drugs.')",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4786707-a0f7-4ba8-9656-06278d1b4b6c"
+    },
+    {
+      "field": "monitoring",
+      "ref": "No monitoring guidance exists in the human FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA OTC labels: TUMS EX and TUMS Ultra 'Directions', 'Warnings', 'Other information'; CALCID 'Directions'; D-Cal Kids 'Directions' and 'Warnings'",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA OTC labels: TUMS EX 'Warnings' (max 10/24 h; 9 Sugar Free Orange Cream; pregnancy 6/24 h; 2-week max limit; Rx-drug caution; keep out of reach of children); TUMS Ultra 'Warnings' (max 7/24 h; pregnancy 5/24 h; 2-week max limit); CALCID 'Warnings' (max 15/24 h; 2-week max limit); D-Cal Kids 'Warnings' (max 1 pouch/24 h; use open pouch within two weeks)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA OTC labels: TUMS EX 'Other information' (store below 30°C; tartrazine in Assorted Fruit; phenylalanine <1 mg/tablet in Sugar Free Orange Cream; magnesium 5 mg/sodium 2 mg per tablet in some variants); TUMS Ultra 'Other information' (store below 30°C; tartrazine variants); CALCID 'Other information' (store below 30°C; do not use if seal torn); D-Cal Kids 'Other information' (store in a dry place; do not use if pouch open or torn)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "No adverse reaction section exists in the human FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA OTC Drug Facts labels consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids). CALCID directs the calcium supplement dose to be taken with a meal, but no food-drug interaction is stated",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=011bf4be-5e8c-47ae-9fbd-2b01da32696a"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "No FDA pregnancy category is stated in the OTC labels; TUMS EX and TUMS Ultra 'Warnings' carry pregnancy-specific 24-hour maximums (6 and 5 tablets respectively) and the 2-week maximum-dosage limit",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4786707-a0f7-4ba8-9656-06278d1b4b6c"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA OTC labels: TUMS EX 'Warnings' (if pregnant do not take more than 6 tablets in 24 hours); TUMS Ultra 'Warnings' (if pregnant do not take more than 5 tablets in 24 hours); both limit maximum-dosage use to 2 weeks except under the advice and supervision of a doctor",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "No lactation guidance is stated in the FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "overdose",
+      "ref": "No overdose section is stated in the FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "No pharmacokinetic information is stated in the FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA OTC labels: TUMS EX 'Other information' (elemental calcium 305 mg/300 mg per tablet); TUMS Ultra 'Other information' (elemental calcium 410 mg per tablet); CALCID 'Supplement Facts' (400 mg calcium per 2-tablet serving, 40% DV) and 'CALCIUM SUPPLEMENT' directions; D-Cal Kids weight/age dosing chart; all four labels' Drug Facts limitations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4786707-a0f7-4ba8-9656-06278d1b4b6c"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA OTC labels verified on DailyMed (HTTP 200, setid and title match): TUMS EX (Haleon US Holdings LLC); TUMS Ultra (Haleon US Holdings LLC); CALCID ANTACID CALCIUM SUPPLEMENT REGULAR STRENGTH (Pro-ventas S.A. de C.V.); D-Cal Kids (A&Z Pharmaceutical, Inc.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA OTC Drug Facts labels consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids) carry no boxed warning section",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "No renal dose adjustment is specified in the FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "No hepatic dose adjustment is specified in the FDA OTC Drug Facts labels for calcium carbonate consulted (TUMS EX, TUMS Ultra, CALCID, D-Cal Kids); none could be sourced",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593a0494-d669-4bcf-8412-b92645b2d76c"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA OTC labels: TUMS EX and TUMS Ultra 'Directions' (chew 2-4 or 2-3 tablets; chew or crush completely before swallowing); CALCID 'Directions' and 'CALCIUM SUPPLEMENT — Directions' (chew 2 tablets twice daily with a meal); D-Cal Kids 'Directions' (add 15 mL water, stir and drink; weight/age dosing)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c45d37d-01f6-4d0a-83b0-eaa1cfec605f"
+    }
+  ],
+  "unsourced_fields": [
+    "contraindications",
+    "side_effects",
+    "monitoring",
+    "serious_adverse_reactions",
+    "lactation_guidance",
+    "overdose",
+    "pharmacokinetics",
+    "renal_dose_adjustment",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "Source set: four human FDA OTC Drug Facts labels verified on DailyMed (HTTP 200 on drugInfo.cfm and setid/title match): TUMS EX 750 mg chewable tablets (Haleon US Holdings LLC, setid 593a0494-d669-4bcf-8412-b92645b2d76c), TUMS Ultra 1000 mg chewable tablets (Haleon US Holdings LLC, setid f4786707-a0f7-4ba8-9656-06278d1b4b6c), CALCID ANTACID CALCIUM SUPPLEMENT REGULAR STRENGTH 500 mg chewable tablets (Pro-ventas S.A. de C.V., setid 011bf4be-5e8c-47ae-9fbd-2b01da32696a), the only label found that also labels a calcium-supplement use, and D-Cal Kids 750 mg granules in pouches (A&Z Pharmaceutical, Inc., setid 8c45d37d-01f6-4d0a-83b0-eaa1cfec605f), the only pediatric-dosed human label found. Label texts cached at /home/ishi/.cache/clinova/labels/<setid>.txt (plus .xml). No prescription FDA label for calcium carbonate exists on DailyMed; calcium carbonate products are OTC (antacid / calcium supplement), and dietary-supplement-marketed calcium carbonate products are generally not listed as drug labels, so Rx-style content (mechanism detail, contraindications, adverse reactions, pharmacokinetics, overdose, renal/hepatic adjustment, pregnancy PLLR narrative) does not exist in these labels and is left null rather than inferred. Dosage limitations of OTC labels: doses are given only as antacid symptom-relief regimens for adults and children >= 12 years (TUMS, CALCID) plus a weight/age pouch chart for D-Cal Kids; maximum 24-hour tablet counts and the 2-week maximum-dosage limit are label-specific and vary by strength and flavor variant; pregnancy limits (6 or 5 tablets/24 h) are stated only on TUMS EX and TUMS Ultra. No hypocalcemia-specific, osteoporosis-adjunct, or severe-renal-disease (phosphate binder) dosing is labeled in these products and none is asserted. Regulated-source notes: FDA DailyMed used as the sole regulatory source; WHO Model List of Essential Medicines does not list calcium carbonate as an essential medicine entry with dosing detail and was not needed; no EMA SmPC or UK emc monograph for standalone calcium carbonate was consulted because the US OTC labels were sufficient and authoritative for the labeled uses. Leftover considerations: (1) verify against a national Formulary/SmPC if non-US labeling is required; (2) hypocalcemia and osteoporosis use in practice relies on clinical guidance (e.g., product-specific Rx calcium products or guideline dosing) not present in OTC labels - do not backfill from memory; (3) elemental calcium differs by salt strength (305/300 mg per 750 mg tablet, 410 mg per 1000 mg tablet, 400 mg per 2 x 500 mg CALCID tablets) and should drive any future dosing arithmetic; (4) combination products (calcium carbonate + famotidine + magnesium hydroxide, e.g. CVS Complete Acid Reducer; calcium carbonate + simethicone, e.g. TUMS Chewy Bites with Gas Relief) were deliberately excluded because they are combination drugs, not standalone calcium carbonate; (5) 938 DailyMed listings match 'calcium carbonate' - most are private-label duplicates of the same antacid monograph; only representative, title-verified labels were used."
+}

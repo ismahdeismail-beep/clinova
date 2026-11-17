@@ -1,0 +1,234 @@
+{
+  "name": "Calcitriol",
+  "existing_id": "94674a87-0e47-433d-81d0-514dab0e0a12",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcitriol (1,25-dihydroxyvitamin D3) is the most active known form of vitamin D3. It acts at the intestine (stimulates intestinal calcium transport via a receptor-binding protein in human intestinal mucosa), bone (in conjunction with parathyroid hormone, stimulates resorption of calcium), kidney (increases tubular reabsorption of calcium; may also act on parathyroid glands). It is the hormonally active metabolite produced by renal 25-hydroxyvitamin D3-1-alpha-hydroxylase, bypassing the need for renal 1-alpha-hydroxylation in uremic patients. Its beneficial effect in renal osteodystrophy appears to result from correction of hypocalcemia and secondary hyperparathyroidism. Duration of pharmacologic activity of a single dose is about 3 to 5 days.",
+    "indications": [
+      "Predialysis patients: management of secondary hyperparathyroidism and resultant metabolic bone disease in patients with moderate to severe chronic renal failure (Ccr 15-55 mL/min) not yet on dialysis (in children, creatinine clearance corrected to 1.73 m2 surface area). A serum iPTH >= 100 pg/mL is strongly suggestive of secondary hyperparathyroidism.",
+      "Dialysis patients: management of hypocalcemia and the resultant metabolic bone disease in patients undergoing chronic renal dialysis; enhances calcium absorption, reduces serum alkaline phosphatase, and may reduce elevated PTH and histological manifestations of osteitis fibrosa cystica and defective mineralization.",
+      "Hypoparathyroidism patients: management of hypocalcemia and its clinical manifestations in patients with postsurgical hypoparathyroidism, idiopathic hypoparathyroidism, and pseudohypoparathyroidism."
+    ],
+    "contraindications": [
+      "Hypercalcemia or evidence of vitamin D toxicity.",
+      "Known hypersensitivity to Rocaltrol (or drugs of the same class) or any of the inactive ingredients."
+    ],
+    "side_effects": [
+      "Early signs/symptoms of vitamin D intoxication with hypercalcemia: weakness, headache, somnolence, nausea, vomiting, dry mouth, constipation, muscle pain, bone pain, metallic taste, anorexia, abdominal pain or stomach ache.",
+      "Late signs/symptoms: polyuria, polydipsia, anorexia, weight loss, nocturia, conjunctivitis (calcific), pancreatitis, photophobia, rhinorrhea, pruritus, hyperthermia, decreased libido, elevated BUN, albuminuria, hypercholesterolemia, elevated SGOT (AST) and SGPT (ALT), ectopic calcification, nephrocalcinosis, hypertension, cardiac arrhythmias, dystrophy, sensory disturbances, dehydration, apathy, arrested growth, urinary tract infections, and rarely overt psychosis.",
+      "Hypercalcemia noted in about 1 in 3 patients and hypercalciuria in about 1 in 7 patients in clinical studies of hypoparathyroidism/pseudohypoparathyroidism.",
+      "Elevated serum creatinine in about 1 in 6 patients (about half had normal levels at baseline).",
+      "Hypersensitivity reactions (pruritus, rash, urticaria, and very rarely severe erythematous skin disorders); one case of erythema multiforme and one case of allergic reaction (swelling of lips and hives) confirmed by rechallenge.",
+      "Hyperphosphatemia; soft-tissue calcification when hypercalcemia and hyperphosphatemia coexist."
+    ],
+    "dosage": {
+      "adult": "Start at the lowest possible dose and titrate only with careful serum calcium monitoring. Dialysis patients: initial 0.25 mcg/day; increase by 0.25 mcg/day at 4-8 week intervals; most hemodialysis patients respond to 0.5-1 mcg/day; patients with normal/slightly reduced serum calcium may respond to 0.25 mcg every other day. Hypoparathyroidism: initial 0.25 mcg/day in the morning; increase at 2-4 week intervals; most adults and pediatric patients >=6 years respond to 0.5-2 mcg/day. Predialysis patients: initial 0.25 mcg/day (adults and children >=3 years), may increase to 0.5 mcg/day.",
+      "maximum": "No explicit maximum dose is stated in the Rocaltrol label. Most adult hypoparathyroidism patients respond within 0.5-2 mcg/day and most hemodialysis patients within 0.5-1 mcg/day; doses must be individualized to serum calcium, phosphate, iPTH and Ca x P (keep Ca x P <= 70 mg2/dL2)."
+    },
+    "adult_dosing": "Dialysis patients: recommended initial dose 0.25 mcg/day; if response inadequate, increase by 0.25 mcg/day at 4-8 week intervals; serum calcium at least twice weekly during titration, immediate discontinuation if hypercalcemia; check phosphorus, magnesium, alkaline phosphatase periodically. Normal or only slightly reduced serum calcium may respond to 0.25 mcg every other day; most hemodialysis patients respond to 0.5-1 mcg/day. Note: oral Rocaltrol may maintain normocalcemia in uremic patients with autonomous parathyroid hyperfunction but has not been shown to be adequate treatment for that hyperparathyroidism. Hypoparathyroidism: initial 0.25 mcg/day in the morning; increase at 2-4 week intervals with serum calcium at least twice weekly during titration; most adult patients respond to 0.5-2 mcg daily; larger doses may be needed if malabsorption is present. Predialysis patients: initial 0.25 mcg/day, may increase to 0.5 mcg/day. Ensure dietary calcium intake minimum 600 mg/day (US RDA adults 800-1200 mg) or prescribe a calcium supplement.",
+    "pediatric_dosing": "Hypoparathyroidism: most pediatric patients age 6 years and older respond to 0.5-2 mcg/day; pediatric patients aged 1-5 years have usually been given 0.25-0.75 mcg/day; dosage recommendations cannot be made for pseudohypoparathyroidism patients younger than 6 years (too few treated); dosing not established for hypoparathyroidism under 1 year of age. Predialysis: initial 0.25 mcg/day for children >=3 years (may increase to 0.5 mcg/day); for children <3 years, initial 10-15 ng/kg/day. Oral doses of 10-55 ng/kg/day improved calcium homeostasis and bone disease in pediatric predialysis patients with chronic renal failure. Safety and effectiveness not established in pediatric dialysis patients. In a peritoneal dialysis pediatric study (age 1.8-16 years), Rocaltrol averaged 10.2 ng/kg/day (SD 5.5) with mean half-life 27.4 h and mean clearance 15.3 mL/hr/kg.",
+    "interactions": [
+      "Cholestyramine: may reduce intestinal absorption of fat-soluble vitamins and impair Rocaltrol absorption.",
+      "Phenytoin/Phenobarbital: do not affect plasma calcitriol concentrations but may reduce endogenous 25(OH)D3 by accelerating metabolism; higher Rocaltrol doses may be necessary.",
+      "Thiazide diuretics: induce hypercalcemia by reducing urinary calcium excretion; concomitant administration has caused hypercalcemia — use caution.",
+      "Digitalis: hypercalcemia in patients on digitalis may precipitate cardiac arrhythmias; determine calcitriol dose with care.",
+      "Ketoconazole: may inhibit both synthetic and catabolic enzymes of calcitriol; reductions in serum endogenous calcitriol observed at 300-1200 mg/day; in vivo interaction with Rocaltrol not investigated.",
+      "Corticosteroids: functional antagonism — vitamin D analogues promote calcium absorption, corticosteroids inhibit it.",
+      "Phosphate-binding agents: dosage must be adjusted in accordance with serum phosphate concentration since Rocaltrol affects phosphate transport in intestine, kidney and bone.",
+      "Vitamin D and its derivatives (e.g., ergocalciferol): pharmacologic doses should be withheld during Rocaltrol treatment to avoid additive effects and hypercalcemia; after switching from ergocalciferol, several months may be needed for levels to return to baseline.",
+      "Calcium supplements: uncontrolled intake of additional calcium-containing preparations should be avoided.",
+      "Magnesium-containing preparations (e.g., antacids): should not be used in patients on chronic renal dialysis — may lead to hypermagnesemia."
+    ],
+    "monitoring": "During titration, serum calcium at least twice weekly (samples for serum calcium estimation taken without a tourniquet); once optimal dosage determined, serum calcium monthly (or per indication). Dialysis patients: serum calcium, phosphorus, magnesium, alkaline phosphatase periodically. Hypoparathyroid patients: serum calcium, phosphorus, and 24-hour urinary calcium periodically. Predialysis patients: serum calcium, phosphorus, alkaline phosphatase, creatinine, intact PTH (iPTH) initially; then calcium, phosphorus, alkaline phosphatase and creatinine monthly for 6 months then periodically; iPTH every 3-4 months at visits. In dialysis patients a fall in serum alkaline phosphatase usually antedates hypercalcemia and may signal impending hypercalcemia. Keep Ca x P <= 70 mg2/dL2; radiographic evaluation of suspect anatomical regions may help detect ectopic calcification early. During hypercalcemia, determine serum calcium and phosphorus daily; after titration changes, serum calcium at least twice weekly.",
+    "patient_counselling": "Take exactly as prescribed; do not change dose without consulting prescriber. Adhere to instructions about diet and calcium supplementation — minimum dietary calcium 600 mg/day (US RDA 800-1200 mg), or take prescribed calcium supplement; some patients need little or no supplementation. Avoid unapproved nonprescription drugs, especially magnesium-containing antacids (dialysis patients) and extra calcium preparations. Know the symptoms of hypercalcemia (weakness, headache, somnolence, nausea, vomiting, dry mouth, constipation, muscle/bone pain, metallic taste, increased urination/thirst, weight loss, itching) and report them promptly. Avoid dehydration; maintain adequate fluid intake. Increased dairy/calcium intake or diet changes can trigger hypercalcemia. Immobilized patients are at particular risk of hypercalcemia. Do not nurse while taking Rocaltrol. Keep the drug protected from light.",
+    "warnings": [
+      "Overdosage of any form of vitamin D is dangerous; progressive hypercalcemia may be severe enough to require emergency attention; chronic hypercalcemia can lead to generalized vascular calcification, nephrocalcinosis and other soft-tissue calcification.",
+      "The serum calcium x phosphate (Ca x P) product should not exceed 70 mg2/dL2; radiographic evaluation of suspect regions may aid early detection.",
+      "Rocaltrol is the most potent metabolite of vitamin D available; doses above daily requirements cause hypercalcemia, hypercalciuria and hyperphosphatemia. Withhold pharmacologic doses of vitamin D and its derivatives during treatment to avoid additive effects and hypercalcemia.",
+      "Calcitriol increases serum inorganic phosphate — desirable in hypophosphatemia but caution in renal failure due to risk of ectopic calcification; use a non-aluminum phosphate binder and low-phosphate diet in dialysis patients.",
+      "Magnesium-containing preparations (e.g., antacids) must not be used concomitantly in patients on chronic renal dialysis (risk of hypermagnesemia).",
+      "Animal studies (dogs, rats, up to 26 weeks): small increases of calcitriol above endogenous levels can lead to abnormal calcium metabolism with potential calcification of many tissues."
+    ],
+    "precautions": [
+      "Excessive dosage induces hypercalcemia and sometimes hypercalciuria; determine serum calcium twice weekly early in treatment/during dosage adjustment; a fall in serum alkaline phosphatase (dialysis patients) usually antedates hypercalcemia.",
+      "An abrupt increase in calcium intake (diet changes, e.g., increased dairy, or uncontrolled calcium preparations) may trigger hypercalcemia.",
+      "If hypercalcemia develops, stop Rocaltrol immediately; determine serum calcium and phosphorus daily until normal; resume at a daily dose 0.25 mcg lower than previously used; adjust dietary calcium intake.",
+      "Give cautiously to patients on digitalis — hypercalcemia may precipitate cardiac arrhythmias.",
+      "Immobilized patients (e.g., post-surgery) are particularly exposed to risk of hypercalcemia.",
+      "In patients with normal renal function, chronic hypercalcemia may be associated with increased serum creatinine (usually reversible); start at lowest possible dose and do not increase without careful serum calcium monitoring.",
+      "Rocaltrol should always be started at the lowest possible dose and not increased without careful monitoring of serum calcium.",
+      "Patients with normal renal function should avoid dehydration; maintain adequate fluid intake.",
+      "Estimate daily dietary calcium intake and adjust when indicated.",
+      "Geriatric use: no studies included sufficient numbers aged 65+; select dose cautiously, usually starting at the low end of the range."
+    ],
+    "serious_adverse_reactions": [
+      "Hypercalcemia syndrome / calcium intoxication (severity and duration dependent), potentially requiring emergency care.",
+      "Generalized vascular calcification, nephrocalcinosis and other soft-tissue calcification (with chronic hypercalcemia or Ca x P > 70).",
+      "Cardiac arrhythmias (especially in patients on digitalis with hypercalcemia).",
+      "Pancreatitis.",
+      "Severe erythematous skin disorders and erythema multiforme (rare, hypersensitivity).",
+      "Hypertension.",
+      "Elevated BUN, albuminuria, hypercholesterolemia, elevated AST/ALT.",
+      "Overt psychosis (rare).",
+      "Arrested growth (pediatric)."
+    ],
+    "food_interactions": [
+      "Abrupt increases in dietary calcium (e.g., increased consumption of dairy products) may trigger hypercalcemia — adjust dietary calcium intake.",
+      "Minimum dietary calcium intake of 600 mg/day is required for effectiveness (US RDA 800-1200 mg/day adults); some patients on Rocaltrol may be maintained on lower calcium intake or need no supplementation.",
+      "A low-phosphate diet should be used (with a non-aluminum phosphate-binding compound) to control serum phosphorus in patients undergoing dialysis.",
+      "High intake of calcium and phosphate concomitant with Rocaltrol may lead to hypercalcemia/hyperphosphatemia and Ca x P > 70."
+    ],
+    "pregnancy_category": "The Rocaltrol label (pre-PLLR labeling, last updated October 23, 2006) assigns Pregnancy Category C: Rocaltrol was teratogenic in rabbits at 0.08 and 0.3 mcg/kg (~2 and 6 times the maximum recommended dose on a mg/m2 basis; all 15 fetuses in 3 litters showed external and skeletal abnormalities), while teratogenicity studies in rats at doses up to 0.45 mcg/kg (~5x MRD mg/m2) showed no evidence of teratogenic potential. No adequate and well-controlled studies in pregnant women. There is no PLLR-formatted pregnancy section in this label; the Category C statement is reported verbatim as it appears in the label and must not be reinterpreted as a modern risk summary.",
+    "pregnancy_guidance": "Rocaltrol should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Rabbit studies showed teratogenicity at 0.08 and 0.3 mcg/kg (19% maternal mortality, decreased fetal body weight, reduced newborn 24-hour survival at 0.3 mcg/kg/day on gestation days 7-18); in rats, peri/postnatal exposure caused hypercalcemia in offspring at 0.08 and 0.3 mcg/kg/day and hypercalcemia/hypophosphatemia and increased BUN in dams. The offspring of a woman administered 17-36 mcg/day during pregnancy manifested mild hypercalcemia in the first 2 days of life, returning to normal by day 3. Maternal calcitriol may enter the fetal circulation.",
+    "lactation_guidance": "Calcitriol from ingested Rocaltrol may be excreted in human milk (calcitriol is transferred into human breast milk at low levels, 2.2 +/- 0.1 pg/mL). Because many drugs are excreted in human milk and because of the potential for serious adverse reactions from Rocaltrol in nursing infants, a mother should not nurse while taking Rocaltrol.",
+    "overdose": "Excessive dosing causes hypercalcemia, hypercalciuria and hyperphosphatemia; signs/symptoms are those of vitamin D overdose (see side_effects); Ca x P must not exceed 70 mg2/dL2; high dialysate calcium may contribute to hypercalcemia. Treatment of hypercalcemia in dialysis and hypoparathyroidism patients: immediately discontinue Rocaltrol, institute a low-calcium diet, withdraw calcium supplements; determine serum calcium daily until normocalcemia (frequently resolves in 2-7 days); reinstitute at 0.25 mcg/day less than prior therapy; in dialysis patients persistent/markedly elevated calcium may be corrected by dialysis against calcium-free dialysate. Predialysis patients: reduce from 0.5 to 0.25 mcg daily, or discontinue if on 0.25 mcg/day until normocalcemic; reinstitute at 0.25 mcg/day (prior 0.5 mcg/day) or 0.25 mcg every other day (prior 0.25 mcg/day); if persistent, measure PTH — if normal, discontinue and monitor in 3 months. Hyperphosphatemia in predialysis patients with phosphorus >5.0-5.5 mg/dL: use calcium-containing phosphate binder (calcium carbonate/acetate) with meals; use aluminum gels with caution. Accidental overdose: general supportive measures; induce emesis/gastric lavage if recent; mineral oil may promote fecal elimination; serial electrolytes (especially calcium), urinary calcium excretion rate, ECG assessment (critical in digitalis patients); discontinue supplemental calcium and low-calcium diet; phosphates, corticosteroids, forced diuresis, or peritoneal dialysis against calcium-free dialysate for persistent marked elevation.",
+    "pharmacokinetics": "Absorption: rapidly absorbed; peak serum concentrations within 3-6 h after single oral doses of 0.25-1.0 mcg; after a single 0.5 mcg dose, mean serum calcitriol rose from 40.0 +/- 4.4 pg/mL baseline to 60.0 +/- 4.4 at 2 h, declining to 53.0 at 4 h, 50 at 8 h, 44 at 12 h, 41.5 at 24 h; steady state within 7 days of multiple dosing. Distribution: ~99.9% bound in blood, transported by alpha-globulin vitamin D-binding protein; maternal calcitriol may enter fetal circulation; present in breast milk at 2.2 +/- 0.1 pg/mL. Metabolism: two pathways — 24-hydroxylase (calcitroic acid end product) and stepwise 26/23-hydroxylation with cyclization to 1alpha,25R(OH)2-26,23S-lactone D3 (major circulating metabolite, mean 131 +/- 17 pg/mL); several other metabolites identified. Excretion: enterohepatic recycling and biliary excretion; metabolites excreted primarily in feces; after IV radiolabeled dose ~27% feces / 7% urine in 24 h; after 1 mcg oral dose ~10% of radioactivity in urine in 24 h; cumulative day-6 excretion 16% urine / 49% feces; serum elimination half-life about 5-8 h in normal subjects. Renal impairment: half-life increased at least twofold in chronic renal failure/hemodialysis (16.2 and 21.9 h respectively); lower predose/peak levels in nephrotic syndrome and hemodialysis; pediatric (peritoneal dialysis, 1.8-16 y): mean half-life 27.4 h, mean clearance 15.3 mL/hr/kg, mean Cmax 116 pmol/L. Geriatric, gender, hepatic impairment: no controlled studies.",
+    "clinical_pearls": [
+      "Rocaltrol is the most potent active metabolite of vitamin D3 — do not co-administer other pharmacologic vitamin D derivatives; expect several months for ergocalciferol stores to normalize after switching.",
+      "A fall in serum alkaline phosphatase (dialysis patients) usually antedates hypercalcemia and may be an early warning sign.",
+      "Hypercalcemia resolves much faster on withdrawal of calcitriol (days) than with vitamin D3 preparations because of the short biological half-life.",
+      "Oral calcitriol can maintain normocalcemia in autonomous (tertiary) parathyroid hyperfunction but is not adequate treatment for the hyperparathyroidism itself.",
+      "Effectiveness requires adequate — not excessive — calcium intake (minimum 600 mg/day); patients prone to hypercalcemia may need no supplement.",
+      "Keep Ca x P <= 70 mg2/dL2; check for ectopic calcification radiographically when suspect.",
+      "Immobilized patients are at particular risk of hypercalcemia — monitor closely.",
+      "Malabsorption in hypoparathyroidism may necessitate larger doses.",
+      "Samples for serum calcium should be drawn without a tourniquet."
+    ],
+    "brand_names": [
+      "Rocaltrol"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Rocaltrol is itself used to treat renal failure-related mineral bone disease; dosing differs by renal indication rather than by a single renal adjustment factor. Dialysis: initial 0.25 mcg/day, titrate at 4-8 week intervals (most respond 0.5-1 mcg/day). Predialysis (Ccr 15-55 mL/min): initial 0.25 mcg/day, may increase to 0.5 mcg/day. Elimination half-life increases at least twofold in chronic renal failure/hemodialysis (16.2-21.9 h vs 5-8 h normal); lower predose and peak serum levels observed in nephrotic syndrome and hemodialysis patients. No dose appears to accelerate renal function deterioration. Pediatric predialysis <3 years: 10-15 ng/kg/day. Monitor serum calcium at least twice weekly during titration; Ca x P <= 70 mg2/dL2.",
+    "hepatic_dose_adjustment": "No controlled studies have examined the influence of hepatic disease on calcitriol (CLINICAL PHARMACOLOGY: Special Populations — Hepatic Insufficiency). The label provides no specific hepatic dose adjustment; use the lowest possible dose with careful serum calcium monitoring, as in all patients.",
+    "administration_instructions": "Administer orally as capsules (0.25 mcg or 0.5 mcg) or oral solution (1 mcg/mL, 15 mL amber glass bottle with 20 single-use graduated oral dispensers). Hypoparathyroidism: give the morning dose. Protect capsules and oral solution from light; store at 59-86 F (15-30 C). Samples for serum calcium should be drawn without a tourniquet. Inspect solution (clear, colorless to pale yellow). No specific instruction on administration with food appears in the label; however, dietary calcium intake strongly affects effect/safety — maintain minimum 600 mg/day dietary calcium unless otherwise directed, avoid abrupt dietary changes, and in dialysis patients use a low-phosphate diet with a non-aluminum phosphate binder. Advise avoidance of magnesium-containing antacids (dialysis patients) and unapproved OTC drugs."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: CLINICAL PHARMACOLOGY (Pharmacodynamics) / DESCRIPTION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "indications",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: CONTRAINDICATIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "dosage",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DOSAGE AND ADMINISTRATION; PRECAUTIONS: Pediatric Use; CLINICAL PHARMACOLOGY: Pediatric Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "interactions",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Drug Interactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Laboratory Tests; DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Information For Patients; DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "warnings",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "precautions",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: General; Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: ADVERSE REACTIONS; WARNINGS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: WARNINGS; PRECAUTIONS: General, Information For Patients; DOSAGE AND ADMINISTRATION",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Pregnancy (Teratogenic Effects)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Pregnancy (Teratogenic and Nonteratogenic Effects); CLINICAL PHARMACOLOGY: Distribution",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: PRECAUTIONS: Nursing Mothers; CLINICAL PHARMACOLOGY: Distribution",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "overdose",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: OVERDOSAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: CLINICAL PHARMACOLOGY: Pharmacokinetics; Special Populations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: WARNINGS; PRECAUTIONS; DOSAGE AND ADMINISTRATION; ADVERSE REACTIONS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DESCRIPTION; HOW SUPPLIED",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: Entire label (no boxed/black-box warning section present anywhere in the SPL)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DOSAGE AND ADMINISTRATION; CLINICAL PHARMACOLOGY: Renal Insufficiency; INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: CLINICAL PHARMACOLOGY: Special Populations — Hepatic Insufficiency",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Rocaltrol (calcitriol) capsules and oral solution, Roche Pharmaceuticals — DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e, section: DOSAGE AND ADMINISTRATION; HOW SUPPLIED; PRECAUTIONS: Information For Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc293a1c-995d-40fa-ac99-68df12eb6d9e"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "SCOPE: This monograph covers ORAL Rocaltrol (calcitriol capsules 0.25/0.5 mcg and oral solution 1 mcg/mL), Roche Pharmaceuticals, DailyMed setid dc293a1c-995d-40fa-ac99-68df12eb6d9e (SPL version per DailyMed listing dated Oct 2006 label, accessed Nov 2026; drugInfo.cfm HTTP 200 verified and label title matched). A separate product, West-Ward calcitriol injection 1 mcg/mL 1 mL ampules for IV use in dialysis hypocalcemia (setid add1e536-b6ed-4ba1-abd6-084b6845e3a4, also fetched and cached, HTTP 200 verified), EXISTS and is OUT OF SCOPE here — its 3-times-weekly IV dosing, Ca x P > 70 trigger, and pediatric hemodialysis data were NOT merged into this monograph to avoid cross-product mixing; a separate draft should be created if injection coverage is wanted. Topical Vectical (calcipotriene-like calcitriol ointment, setid a1567da9-af74-4afd-9ac5-8b53ec5d7cbf) and psoriasis indications are likewise out of scope. OSTEOporosis is NOT a labeled indication for Rocaltrol in the US label and is therefore not included. REGULATORY SCOPE: US FDA DailyMed only; no EMA SmPC or UK emc comparison performed; pregnancy information reflects pre-PLLR labeling (Pregnancy Category C, reported as narrative, not reinterpreted). GAPS/LIMITATIONS: label last updated 2006 — no PLLR pregnancy section, no modern geriatric PK data, no hepatic impairment studies, no established pediatric dialysis dosing; black_box_warnings is [] because the label contains no boxed warning (documented, not absent from verification); 'maximum' dose is not stated in the label and is reported as such; pediatric hypoparathyroid <1 y and pseudohypoparathyroid <6 y dosing not established. Cached label text: /home/ishi/.cache/clinova/labels/dc293a1c-995d-40fa-ac99-68df12eb6d9e.txt and .../add1e536-b6ed-4ba1-abd6-084b6845e3a4.txt. No database changes were made; not for clinical use without pharmacist/clinician review."
+}

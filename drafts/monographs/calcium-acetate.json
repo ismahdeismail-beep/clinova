@@ -1,0 +1,212 @@
+{
+  "name": "Calcium Acetate",
+  "existing_id": "7f5296eb-1b14-4e65-9e4c-4647b7810b15",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcium acetate, when taken with meals, combines with dietary phosphate to form an insoluble calcium phosphate complex, which is excreted in the feces, resulting in decreased serum phosphorus concentration (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.1 Mechanism of Action). Patients with ESRD retain phosphorus and can develop hyperphosphatemia; high serum phosphorus can precipitate serum calcium resulting in ectopic calcification, and hyperphosphatemia also plays a role in the development of secondary hyperparathyroidism in patients with ESRD (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12 CLINICAL PHARMACOLOGY).",
+    "indications": [
+      "Calcium acetate is a phosphate binder indicated to reduce serum phosphorus in patients with end stage renal disease (ESRD) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 1 INDICATIONS AND USAGE).",
+      "Calcium Acetate Capsules, USP are administered orally for the control of hyperphosphatemia in end-stage renal failure (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 11 DESCRIPTION)."
+    ],
+    "contraindications": [
+      "Patients with hypercalcemia (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 4 CONTRAINDICATIONS)."
+    ],
+    "side_effects": [
+      "The most common (>10%) adverse reactions are hypercalcemia (12.6% overall; 16.3% in the 3-month open-label study), nausea (3.6%) and vomiting (2.4%) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6 ADVERSE REACTIONS, Highlights and 6.1 Clinical Trial Experience, Table 1).",
+      "Nausea was occasionally experienced during calcium acetate therapy in clinical studies (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), Highlights of Prescribing Information, ADVERSE REACTIONS).",
+      "Mild hypercalcemia may be asymptomatic or manifest as constipation, anorexia, nausea and vomiting (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia and 6.1 Clinical Trial Experience).",
+      "Isolated cases of pruritus have been reported, which may represent allergic reactions (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.1 Clinical Trial Experience).",
+      "Postmarketing experience: dizziness, edema and weakness have been identified during post-approval use (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.2 Postmarketing Experience).",
+      "Calcium acetate has generally been well tolerated in clinical studies (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.1 Clinical Trial Experience)."
+    ],
+    "dosage": {
+      "adult": "The recommended initial dose of calcium acetate for the adult dialysis patient is 2 capsules (667 mg each) with each meal. Increase the dose gradually to lower serum phosphorus levels to the target range, as long as hypercalcemia does not develop. Most patients require 3 to 4 capsules with each meal. Titrate the dose every 2 to 3 weeks until an acceptable serum phosphorus level is reached (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION). Each 667 mg capsule contains 169 mg (8.45 mEq) of calcium (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 3 DOSAGE FORMS AND STRENGTHS and 11 DESCRIPTION).",
+      "maximum": "No explicit maximum daily dose is stated in the label. Dosing is titrated every 2 to 3 weeks to an acceptable serum phosphorus level provided hypercalcemia does not develop; most patients require 3 to 4 capsules with each meal (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION). Overdose leading to progressive hypercalcemia may require emergency measures (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": "Safety and effectiveness in pediatric patients have not been established (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.4 Pediatric Use).",
+    "interactions": [
+      "Tetracyclines or fluoroquinolones: calcium acetate may decrease their bioavailability via binding of calcium to drugs with anionic functions (e.g., carboxyl and hydroxyl groups) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS).",
+      "Ciprofloxacin: in a study of 15 healthy subjects, a co-administered single dose of 4 calcium acetate tablets (approximately 2.7 g) decreased the bioavailability of ciprofloxacin by approximately 50% (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7.1 Ciprofloxacin).",
+      "Any oral medication whose reduced bioavailability would have a clinically significant effect on safety or efficacy: administer the drug one hour before or three hours after calcium acetate, and monitor blood levels of concomitant drugs with a narrow therapeutic range (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS and 17 PATIENT COUNSELING INFORMATION).",
+      "Digitalis (cardiac glycosides): hypercalcemia induced by calcium acetate may aggravate digitalis toxicity; hypercalcemia may aggravate digitalis toxicity (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.2 Concomitant Use with Medications).",
+      "Patients taking anti-arrhythmic medications for control of arrhythmias and anti-seizure medications for control of seizure disorders were excluded from the clinical trials with all forms of calcium acetate; no empirical interaction data exist for most concomitant drugs (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS)."
+    ],
+    "monitoring": "Early in the treatment phase during the dosage adjustment period, monitor serum calcium levels twice weekly; should hypercalcemia develop, reduce the calcium acetate dosage or discontinue treatment depending on severity (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia). Maintain the serum calcium-phosphorus (Ca x P) product below 55 mg^2/dL^2 (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia). Monitor serum phosphorus and titrate the dose every 2 to 3 weeks until the target range is reached (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION). In clinical studies, hypercalcemia (>11 mg/dL) was reported in 16% of patients in a 3-month study of the solid dose formulation; all cases resolved upon lowering the dose or discontinuing treatment (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia). Watch for signs of hypercalcemia (constipation, anorexia, nausea, vomiting; confusion, delirium, stupor, coma if severe) and for soft-tissue/vascular calcification (radiographic evaluation of suspected regions may help early detection) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia). Decreasing the dialysate calcium concentration could reduce the incidence and severity of calcium acetate-induced hypercalcemia (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.1 Clinical Trial Experience).",
+    "patient_counselling": "Inform patients to take calcium acetate capsules with meals, adhere to their prescribed diets, and avoid the use of calcium supplements, including nonprescription calcium-based antacids, concurrently with calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 17 PATIENT COUNSELING INFORMATION and 5.1 Hypercalcemia). Inform patients about the symptoms of hypercalcemia (constipation, anorexia, nausea, vomiting; more severe: confusion, delirium, stupor, coma) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 17 PATIENT COUNSELING INFORMATION, 5.1 Hypercalcemia and 6.1 Clinical Trial Experience). Advise patients who take an oral medication whose reduced bioavailability would have a clinically significant effect on safety or efficacy to take that drug one hour before or three hours after calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 17 PATIENT COUNSELING INFORMATION). Adhere to the prescribed dosing and the dosage titration schedule (every 2 to 3 weeks) set by the prescriber (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION).",
+    "warnings": [
+      "Hypercalcemia: patients with ESRD may develop hypercalcemia when treated with calcium, including calcium acetate. Avoid concurrent use of calcium supplements, including calcium-based nonprescription antacids. An overdose may lead to progressive hypercalcemia, which may require emergency measures (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Mild hypercalcemia (10.5 to 11.9 mg/dL) may be asymptomatic or manifest as constipation, anorexia, nausea, and vomiting; it is usually controlled by reducing the dose or temporarily discontinuing therapy, and decreasing or discontinuing vitamin D therapy is recommended as well (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "More severe hypercalcemia (Ca >12 mg/dL) is associated with confusion, delirium, stupor and coma; severe hypercalcemia can be treated by acute hemodialysis and discontinuing calcium acetate therapy (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Chronic hypercalcemia may lead to vascular calcification and other soft-tissue calcification; the long-term effect of calcium acetate on the progression of vascular or soft-tissue calcification has not been determined (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Hypercalcemia may aggravate digitalis toxicity (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.2 Concomitant Use with Medications).",
+      "Maintain the serum calcium-phosphorus (Ca x P) product below 55 mg^2/dL^2 (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia)."
+    ],
+    "precautions": [
+      "Avoid the use of calcium supplements, including calcium-based nonprescription antacids, concurrently with calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "During the dosage adjustment period, monitor serum calcium twice weekly; reduce the dose or discontinue therapy if hypercalcemia develops, and consider decreasing or discontinuing vitamin D therapy (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Suspected soft-tissue calcification may be evaluated radiographically for early detection (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Geriatric use: clinical studies did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently; in general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.5 Geriatric Use).",
+      "Labor and delivery: the effects of calcium acetate on labor and delivery are unknown (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.2 Labor and Delivery).",
+      "Patients taking anti-arrhythmic or anti-seizure medications were excluded from clinical trials; use caution and consider monitoring blood levels of narrow-therapeutic-range concomitant drugs (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe hypercalcemia (Ca >12 mg/dL) associated with confusion, delirium, stupor and coma; may require acute hemodialysis and discontinuation of calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Progressive hypercalcemia from overdose may require emergency measures (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Chronic hypercalcemia leading to vascular calcification and other soft-tissue calcification (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Hypercalcemia (>11 mg/dL) reported in 16% of patients in a 3-month study of the solid dose formulation (all cases resolved on dose reduction or discontinuation) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Aggravation of digitalis toxicity by hypercalcemia (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.2 Concomitant Use with Medications).",
+      "Isolated pruritus cases, which may represent allergic reactions (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.1 Clinical Trial Experience)."
+    ],
+    "food_interactions": [
+      "Calcium acetate is taken with meals because it acts by binding dietary phosphate; when taken with meals it forms an insoluble calcium phosphate complex excreted in the feces (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.1 Mechanism of Action and 2 DOSAGE AND ADMINISTRATION).",
+      "Systemic absorption is lower under nonfasting conditions (up to approximately 30%) than under fasting conditions (up to approximately 40%) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.2 Pharmacodynamics).",
+      "Avoid calcium supplements and calcium-based nonprescription antacids concurrently with calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia and 17 PATIENT COUNSELING INFORMATION)."
+    ],
+    "pregnancy_category": "The label states 'Pregnancy Category C:' — calcium acetate capsules contain calcium acetate; animal reproduction studies have not been conducted with calcium acetate, and there are no adequate and well-controlled studies of calcium acetate use in pregnant women. This is the legacy FDA letter category retained in the current Hikma label (revised 4/2025); it is reported narratively as printed and is not a modern PLLR structured assessment (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.1 Pregnancy).",
+    "pregnancy_guidance": "Patients with ESRD may develop hypercalcemia with calcium acetate treatment. Maintenance of normal serum calcium levels is important for maternal and fetal well-being. Hypercalcemia during pregnancy may increase the risk for maternal and neonatal complications such as stillbirth, preterm delivery, and neonatal hypocalcemia and hypoparathyroidism. Calcium acetate treatment, as recommended, is not expected to harm a fetus if maternal calcium levels are properly monitored during and following treatment (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.1 Pregnancy).",
+    "lactation_guidance": "Calcium acetate capsules contain calcium acetate and is excreted in human milk. Human milk feeding by a mother receiving calcium acetate is not expected to harm an infant, provided maternal serum calcium levels are appropriately monitored (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.3 Nursing Mothers).",
+    "overdose": "Administration of calcium acetate in excess of the appropriate daily dosage may result in hypercalcemia (mild: 10.5-11.9 mg/dL, asymptomatic or constipation/anorexia/nausea/vomiting, managed by dose reduction or temporary discontinuation and decreasing or stopping vitamin D; severe: Ca >12 mg/dL with confusion, delirium, stupor and coma, treated by acute hemodialysis and discontinuation of calcium acetate). An overdose of calcium acetate may lead to progressive hypercalcemia, which may require emergency measures (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 10 OVERDOSAGE and 5.1 Hypercalcemia).",
+    "pharmacokinetics": "Orally administered calcium acetate from pharmaceutical dosage forms is systemically absorbed up to approximately 40% under fasting conditions and up to approximately 30% under nonfasting conditions; this range represents data from both healthy subjects and renal dialysis patients under various conditions (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.2 Pharmacodynamics). Calcium acetate: molecular formula C4H6CaO4, molecular weight 158.17; each 667 mg capsule (anhydrous) equals 169 mg (8.45 mEq) of calcium (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 11 DESCRIPTION). No carcinogenicity, mutagenicity, or fertility studies have been conducted with calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility). In a 12-week open-label study of 91 hemodialysis patients, average serum phosphorus fell 30% (7.4 to 5.2 mg/dL, p<0.01) and serum calcium rose 9% (8.9 to 9.7 mg/dL, p<0.01); in a 2-week double-blind placebo-controlled cross-over study, calcium acetate decreased serum phosphorus by a mean of 19% (p<0.01) versus placebo (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 14 CLINICAL STUDIES).",
+    "clinical_pearls": [
+      "Start at 2 capsules (667 mg) with each meal and titrate every 2 to 3 weeks; most patients require 3 to 4 capsules with each meal (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION).",
+      "Average final dose in the 12-week efficacy study was 3.4 tablets per meal (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 14 CLINICAL STUDIES).",
+      "Avoid calcium supplements and calcium-based nonprescription antacids; reducing or discontinuing vitamin D helps control hypercalcemia (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Maintain the serum Ca x P product below 55 mg^2/dL^2 (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Monitor serum calcium twice weekly during the dosage adjustment period (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia).",
+      "Ciprofloxacin bioavailability is reduced by ~50% when co-administered with calcium acetate; separate interacting drugs by 1 hour before or 3 hours after calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 and 7.1).",
+      "Decreasing dialysate calcium concentration could reduce the incidence and severity of calcium acetate-induced hypercalcemia (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6.1 Clinical Trial Experience).",
+      "The phosphate-binding effect is taken with meals; fasting absorption (~40%) exceeds nonfasting absorption (~30%) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.1 and 12.2)."
+    ],
+    "brand_names": [
+      "PhosLo (calcium acetate) capsule/gelcap, 667 mg (FDA PhosLo (calcium acetate) capsule label (Physicians Total Care, Inc., repackaged NDA label, updated Mar 10, 2011; DailyMed Mar 2011), DESCRIPTION; repackaged NDA label, Physicians Total Care, Inc.)",
+      "Calcium Acetate Capsules, USP 667 mg (generic; e.g., Hikma Pharmaceuticals USA Inc., ANDA 077728) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 3 DOSAGE FORMS AND STRENGTHS and 16 HOW SUPPLIED)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dose-adjustment table for varying degrees of renal impairment is provided; the labelled regimen is specifically for the adult dialysis (ESRD) patient: initial 2 capsules with each meal, titrated every 2 to 3 weeks to the serum phosphorus target as tolerated without hypercalcemia (most patients require 3 to 4 capsules with each meal) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION). Safety and effectiveness in pediatric patients have not been established (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.4 Pediatric Use). Calcium acetate is described as systemically absorbed to a similar extent in healthy subjects and renal dialysis patients (fasting ~40%, nonfasting ~30%) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12.2 Pharmacodynamics).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Administer orally with meals (2 capsules with each meal initially, titrated every 2 to 3 weeks) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION). Take other oral medications whose bioavailability could be clinically significantly reduced by calcium acetate one hour before or three hours after calcium acetate (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS and 17 PATIENT COUNSELING INFORMATION). Avoid concurrent calcium supplements and calcium-based nonprescription antacids (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia). Store at 20 to 25 deg C (68 to 77 deg F) [USP Controlled Room Temperature]; supplied as 667 mg white/blue opaque capsules, NDC 0054-0088-13 (bottle of 30) and 0054-0088-26 (bottle of 200) (FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 16 HOW SUPPLIED/STORAGE AND HANDLING)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 12 CLINICAL PHARMACOLOGY and 12.1 Mechanism of Action, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 1 INDICATIONS AND USAGE and 11 DESCRIPTION, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 4 CONTRAINDICATIONS, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 6 ADVERSE REACTIONS (6.1 Clinical Trial Experience, Table 1; 6.2 Postmarketing Experience) and Highlights, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 3 DOSAGE FORMS AND STRENGTHS, 11 DESCRIPTION, 5.1 Hypercalcemia, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.4 Pediatric Use, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 7 DRUG INTERACTIONS, 7.1 Ciprofloxacin, 5.2 Concomitant Use with Medications, 17 PATIENT COUNSELING INFORMATION, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 5.1 Hypercalcemia, 6.1 Clinical Trial Experience, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 17 PATIENT COUNSELING INFORMATION, 2 DOSAGE AND ADMINISTRATION, 5.1 Hypercalcemia, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5 WARNINGS AND PRECAUTIONS (5.1 Hypercalcemia, 5.2 Concomitant Use with Medications), section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia, 8.2 Labor and Delivery, 8.5 Geriatric Use, 7 DRUG INTERACTIONS, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 5.1 Hypercalcemia, 5.2 Concomitant Use with Medications, 6.1 Clinical Trial Experience, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 5.1 Hypercalcemia, 12.1 Mechanism of Action, 12.2 Pharmacodynamics, 17 PATIENT COUNSELING INFORMATION, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.1 Pregnancy, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.1 Pregnancy, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 8.3 Nursing Mothers, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 10 OVERDOSAGE and 5.1 Hypercalcemia, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 11 DESCRIPTION, 12.2 Pharmacodynamics, 13.1 Carcinogenesis/Mutagenesis/Fertility, 14 CLINICAL STUDIES, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 5.1 Hypercalcemia, 6.1 Clinical Trial Experience, 7 and 7.1 DRUG INTERACTIONS, 12.1 Mechanism of Action, 12.2 Pharmacodynamics, 14 CLINICAL STUDIES, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA PhosLo (calcium acetate) capsule label (Physicians Total Care, Inc., repackaged NDA label, updated Mar 10, 2011; DailyMed Mar 2011), DESCRIPTION (PhosLo 667 mg gelcap, inactivated NDCs, repackaged NDA label); FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 3 DOSAGE FORMS AND STRENGTHS and 16 HOW SUPPLIED/STORAGE AND HANDLING, section setid 6b0e60bb-0e9a-45a7-8f92-a43d939f8deb and 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b0e60bb-0e9a-45a7-8f92-a43d939f8deb"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), full prescribing information reviewed; no boxed (black box) warning is present anywhere in the label, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 8.4 Pediatric Use, 12.2 Pharmacodynamics, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA calcium acetate capsule label (Hikma Pharmaceuticals USA Inc., ANDA 077728, revised 4/2025; DailyMed Apr 17, 2025), 2 DOSAGE AND ADMINISTRATION, 5.1 Hypercalcemia, 7 DRUG INTERACTIONS, 16 HOW SUPPLIED/STORAGE AND HANDLING, 17 PATIENT COUNSELING INFORMATION, section setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85fd41f8-2823-44ca-a15e-f1f2e5d0ff94"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "PRODUCT SCOPE: Calcium acetate 667 mg oral phosphate binder (calcium acetate capsule, USP; Hikma Pharmaceuticals USA Inc., ANDA 077728, 667 mg capsule = 169 mg / 8.45 mEq calcium, imprinted '54 215'). PRIMARY SOURCE: FDA DailyMed calcium acetate capsule label, Hikma Pharmaceuticals USA Inc., setid 85fd41f8-2823-44ca-a15e-f1f2e5d0ff94 (published Apr 21, 2025; SPL revised 4/2025; NDCs 0054-0088-13/-26); label text cached at /home/ishi/.cache/clinova/labels/85fd41f8-2823-44ca-a15e-f1f2e5d0ff94.txt. BRAND SOURCE: FDA DailyMed PhosLo (calcium acetate) capsule label, Physicians Total Care, Inc. (repackaged NDA 018481-derived label, updated Mar 10, 2011, contains inactivated NDCs; NDCs 54868-3460-0/-1, 54868-5691-0/-1; source NDC 49230-640), setid 6b0e60bb-0e9a-45a7-8f92-a43d939f8deb; cached at /home/ishi/.cache/clinova/labels/6b0e60bb-0e9a-45a7-8f92-a43d939f8deb.txt. PhosLo label used ONLY to document the PhosLo brand name; its clinical content is outdated and was not used for dosing/safety fields. The PhosLo tablet setid 'le72300d9-89b4-48c7-98a5-ea5d7772305e' returned HTTP 200 from drugInfo.cfm but is a malformed/non-hex setid in the DailyMed search listing and the 200 page does not represent a verifiable current label; it was rejected. REGULATORY SCOPE: US FDA DailyMed only. No EMA SmPC, UK emc, or WHO monograph was consulted; European/UK availability and dosing (e.g., Phosex, Phoslyra oral solution) are NOT covered by this draft. GAPS / LIMITATIONS: (1) No explicit maximum daily dose is stated in the label; dosage.maximum reports this absence with the titration rule instead. (2) No hepatic dose adjustment data exist in the label — field left null. (3) No pediatric efficacy/safety data — pediatric statement reports the label's 'not established' verdict. (4) No pharmacokinetic half-life/protein binding reported for calcium acetate itself; systemic absorption figures (~40% fasting / ~30% nonfasting) are reported under Pharmacodynamics in the label. (5) Pregnancy Category C is a legacy FDA letter category retained verbatim in the current (revised 4/2025) label; the label has NOT been converted to PLLR format, so pregnancy_category is reported narratively as printed, not as a modern PLLR summary. (6) No boxed (black box) warning is present; black_box_warnings is [] on the basis of review of the full Hikma label, documented in sources[]. (7) Hikma label references tablets ('calcium acetate tablets', 2.7 g in the ciprofloxacin study) although the product is capsules — reported as printed. (8) PhosLo brand label lists inactivated NDCs; brand status should be verified before any commercial use. (9) Hypercalcemia (>11 mg/dL) incidence 16% from the 3-month solid-dose study is reported as-is. (10) Existing_id intentionally left blank pending reviewer assignment."
+}

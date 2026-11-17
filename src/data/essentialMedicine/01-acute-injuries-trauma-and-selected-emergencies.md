@@ -298,82 +298,14 @@ Public education about farm or household chemicals known to cause accidental, pa
 
 **Table 1.2, continued — 4. Others**
 
-<!-- table layout preserved from PDF -->
+**Table 1.2, continued — 4. Others**
 
-```
-Organochlorines, Excitement, tremors, convulsions • IV diazepam for convulsions
-e.g., DDT,aldrin,       4. Others                           painted surfaces
-dieldrin
-                        Lead: e.g., lead salts,
-                        solder, toys, paints, and
+<!-- extraction note: PDF's two side-by-side column layout collapsed the four-column table below; the rows below are the best legible reconstruction of the printed page. Values for Lead beyond "Chelation with Dimercaprol (BAL) Injection 4mg/kg", combined with calcium sodium edetate (EDTA) / succimer (oral), are not fully legible in the source -->
 
-
-
-with respiratory failure • Gastric lavage if within 1hour   TA) with close monitoring for renal
-due to convulsions       • S                                function DMSA
-                           ur
-                           vi
-                           vo
-Thirst, abdominal pain,    rs
-vomiting,     diarrhoea,   b
-                 encep     ey
-halopathy      following   o
-ingestion of suspicious    n
-substance                  d
-                           h
-                           o
-                           ur
-                           s
-                           al
-                           m
-                           os
-                           t
-                           in
-                           va
-                           ri
-                           a
-                           bl
-                           y
-                           re
-                           co
-                           ve
-                           r
-
-
-                         • Elimi
-                           nate
-                           sour
-                           ce of
-                           pois
-                           onin
-                           g
-                           Chel
-                           ation
-                           with
-                           Dim
-                           erca
-                           prol
-                           (BAL
-                           ) Inj
-                           4mg/
-                           kg
-                           and
-                           com
-                           bine
-                           d
-                           with
-                           calci
-                           um
-                           sodi
-                           um
-                           edita
-                           te
-                           (ED
-
-
-                                                   (oral succimer)Treatment over
-                                                   longperiods (months toyears)
-```
+| Substance | Clinical features | Recommended action |
+| --- | --- | --- |
+| Organochlorines, e.g., DDT, aldrin, dieldrin | Excitement, tremors, convulsions with respiratory failure due to convulsions | • IV diazepam for convulsions<br>• Gastric lavage if within 1 hour<br>• Support respiration; most will invariably recover |
+| Lead, e.g., lead salts, solder, toys, paints and painted surfaces | Thirst, abdominal pain, vomiting, diarrhoea, encephalopathy following ingestion of suspicious substance | • Eliminate source of poisoning<br>• Chelation: Dimercaprol (BAL) Injection 4 mg/kg, combined with calcium sodium edetate (EDTA); succimer (oral) for long-term treatment over months to years |
 
 | Substance | Clinical features | Recommended action |
 | --- | --- | --- |

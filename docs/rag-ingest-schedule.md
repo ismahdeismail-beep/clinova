@@ -1,125 +1,67 @@
-# RAG ingest — completion schedule & quota reality
+# RAG ingest — local, no-quota runbook
 
-`knowledge_chunks` must hold embedded chunks for all 1072 drug monographs so the
-RAG tutor can ground answers. The corpus is ~**8077 chunks**. Filling it is
-gated by the **Gemini embedding free tier**, not by our code.
+`knowledge_chunks` holds embedded chunks for every drug monograph (~1,070 docs,
+~8,800 chunks) so the RAG tutor can ground answers. Embeddings are generated
+**locally by Ollama** — there is no daily provider quota, so the whole corpus
+can be built in one run.
 
-## The hard limit (verified 2026-10-13)
+## Models (in `src/server/aiRouter.ts`)
 
-| Limit                                      | Value                       | Counts                                                   |
-| ------------------------------------------ | --------------------------- | -------------------------------------------------------- |
-| `embed_content_free_tier_requests` (daily) | **1000 / day / model**      | **texts** — a 100-text `batchEmbedContents` consumes 100 |
-| per-minute                                 | **100 texts / min / model** | texts                                                    |
+| Role | Model | Host |
+| --- | --- | --- |
+| Embeddings | `nomic-embed-text` (via `nomic-embed-text`, 768-dim) | `http://127.0.0.1:11434` (Ollama) |
+| Generation | `qwen2.5:3b` (`LOCAL_GEN_MODEL`) | same Ollama instance |
 
-So `batchEmbedContents` relieves the _per-minute_ ceiling but **does not stretch
-the day**: a full corpus is ~8 productive days on the free tier.
+Overrides via env: `LOCAL_EMBED_URL`, `LOCAL_EMBED_MODEL`, `LOCAL_GEN_MODEL`.
+`EMBEDDING_MODEL` is exported from `aiRouter.ts` and read by every consumer.
 
-Two more constraints:
+**Never mix embedding models in one corpus.** Changing `LOCAL_EMBED_MODEL`
+requires `ensure-rag.ts --reset`, which wipes `knowledge_chunks` and re-embeds
+everything.
 
-- **One model per corpus.** Cosine similarity across vectors from different
-  embedding models is meaningless, so all chunks must use a single model
-  (`EMBEDDING_MODEL` in `src/server/aiRouter.ts`). Switching models requires
-  `--reset` (`npm run rag:reset`).
-- Only `gemini-embedding-001` and `gemini-embedding-2` are exposed to this key
-  (`text-embedding-005`, `text-multilingual-embedding-002` → 404). Each has its
-  own 1000/day budget, but they cannot be mixed.
+Embeddings use the task prefixes Ollama expects from nomic-embed-text:
+`search_query: ` for queries (via `embedText`) and `search_document: ` for
+ingested documents (via `embedTexts` / `ensure-rag`). These are applied inside
+`embedTexts`/`embedText`.
 
-`ensure-rag` therefore stops cleanly when the day is spent
-(`chunks_quota_skipped` in the report) and `--only-missing` resumes later.
-
-## Automating completion (free path)
-
-A self-healing cron wrapper is installed:
+## Running the full ingest / refresh
 
 ```
-17 * * * * /home/ishi/clinova/scripts/rag-resume-cron.sh
+nohup npx tsx scripts/ensure-rag.ts                          # full build (all docs)
+nohup npx tsx scripts/ensure-rag.ts --reset                  # wipe & rebuild
+nohup npx tsx scripts/ensure-rag.ts --only-missing           # resume w/o duplicating
+nohup npx tsx scripts/ensure-rag.ts --stg-dir src/data/essentialMedicine
 ```
 
-`scripts/rag-resume-cron.sh` runs **hourly** but only starts a real resume when
-the last _productive_ run was **≥ 20 h ago** (marker `logs/rag-resume.last`), so
-it catches up automatically after the machine was asleep or off. `flock`
-prevents overlapping runs. When the daily quota is spent the run writes 0 chunks
-and leaves no marker, so the next hourly tick retries once the budget resets.
+- `--only-missing` skips documents that already have chunks. Because the model
+  tag on a row is the model used to embed it, switching models forces a full
+  re-embed; that is the intended "full clean corpus" refresh.
+- `--batch N --pace-ms N` controls request shape; local Ollama has no provider
+  rate limit, so batches of 64 are fine and `--pace-ms 0` is safe.
+- Ingest is idempotent per run: rows are tagged `(source, source_ref,
+  chunk_index)`.
 
-- Watch it: `tail -f logs/rag-resume.log` (each tick also logs a coverage snapshot)
-- One-line check: `npm run rag:verify` (prints coverage; exits 0 only at 1072/1072)
-- Run it now: `bash scripts/rag-resume-cron.sh` (or `npm run rag:resume`)
-- Disable: `crontab -e` → delete the line
-- Progress: `node scripts/db.mjs "select * from rag_pipeline_status"`
+## STG / Essential Medicines corpus
 
-Expected: ~8 days to 1072/1072, adding ~1000 chunks/day. The machine must be on
-for at least one tick inside each 24 h window; the hourly cadence makes that
-robust.
+`src/data/essentialMedicine/*.md` — Kenya MOH "Clinical Guidelines for Management
+and Referral of Common Conditions" Vol 3 (2024), all 70 chapters converted to
+markdown. Each `## Section` becomes one chunk. This corpus is now included in
+the same `ensure-rag` run (`--no-stg` excludes it; `--stg-dir PATH` relocates it).
 
-## Fast path (optional, ~same day)
-
-Enable billing on the Google project behind `GEMINI_API_KEY`, then a single run
-finishes everything in ~15 min for a negligible cost (8077 chunks ≈ 1.6 M tokens
-≈ **< $0.05** at embedding rates):
+## Refreshing content
 
 ```
-npm run rag:reset        # only if you also change EMBEDDING_MODEL
-npm run rag:ingest
+drafts/monographs/<drug>.json                      # sourced draft (agents write these)
+  -> scripts/apply-monograph-drafts.ts             # merge into drug_monographs
+  -> ensure-rag.ts --reembed-drafts                # re-embed only what changed
 ```
 
-Then remove the cron line. To prefer the cloud instead of this laptop, move the
-same command into a scheduled GitHub Action / Vercel cron job — but note
-serverless time limits (a 1000-text run is ~11 min), so a GitHub Actions
-runner is the right host, with repo secrets `SUPABASE_URL`,
-`SUPABASE_SERVICE_ROLE_KEY`, `GEMINI_API_KEY`.
-
-## Additional corpora (STG / essential medicines)
-
-`knowledge_chunks` also carries a `source='stg'` corpus for Standard Treatment
-Guidelines, ingested from markdown under `src/data/essentialMedicine/`:
-
-- Each `## Section` of `<medicine>.md` becomes one chunk, prefixed with the
-  medicine name; YAML front-matter holds `title` / `category` / `atcCode` /
-  `lastUpdated` / `sourceMonograph`.
-- Ingest is part of the same `ensure-rag` run (so the hourly cron picks new STG
-  files up automatically). `--only-missing` resumes STG docs by slug too.
-- This is **additive**: it does not change the 1072-monograph completion, and
-  STG rows (NULL `monograph_id`) never inflate `covered_monographs`.
-- Requires migration `00021_knowledge_chunks_sources.sql` (applied), which adds
-  `source`/`source_ref`, makes `monograph_id` nullable, and installs the
-  `(source, source_ref, chunk_index)` unique index.
-- The corpus is empty until authoritative WHO EML / national STG content is
-  added (see `src/data/essentialMedicine/README.md`).
-
-## Refreshing monograph content (drafts → DB → corpus)
-
-Monograph text changes after the corpus was embedded, so a plain `--only-missing`
-run keeps serving the **old** chunks. The refresh loop:
-
-```
-drafts/monographs/<drug>.json        # sourced draft (agents write these)
-  -> scripts/apply-monograph-drafts.ts   # merge into drug_monographs
-  -> ensure-rag.ts --reembed-drafts      # re-embed only what changed
-```
-
-- `apply-monograph-drafts.ts` merges non-null draft fields onto the matching row
-  (by `existing_id`, then `name`), never inserts rows, refuses to overwrite a
-  `verified` row without `--force`, and sets `content_status='needs_review'`.
-- `--reembed` / `--reembed-drafts` in `ensure-rag.ts` force those documents to be
-  re-embedded. It is **content-hash aware**: each chunk records
-  `metadata.content_hash`, so a document whose text is unchanged is skipped and
-  costs no quota. Changed documents are embedded first — their current corpus
-  text is known-wrong and they are few.
-- Stale high-index chunks left by a longer previous version are deleted after the
-  new chunks are written, so a shortened monograph cannot leave orphan sections.
-- The hourly cron runs `--reembed-drafts`, so an applied draft is picked up
-  automatically — once — on the next productive run.
+`--reembed` / `--reembed-drafts` chunk content-hash matching means unchanged
+documents are skipped (free).
 
 ## Verification
 
 ```
-npm run rag:verify
-# expect: "RAG corpus: 1072/1072 monographs (100%) · ~8077 chunks · 25 approved cases"
-# exit 0 == complete; exit 1 == still filling
-
-npm run rag:weekly        # 25 approved cases; cosine top-3 + grounded answer
+npm run rag:verify          # coverage (exit 1 until 1072/1072)
+npm run rag:weekly          # cosine top-K + grounded answer on 25 cases
 ```
-
-`train-rag-weekly` only retrieves chunks whose `embedding_model` matches
-`EMBEDDING_MODEL`, so it is safe against a mixed/partial corpus (it reports
-`no-chunks-yet` for monographs not embedded).

@@ -35,7 +35,7 @@ empty=$(printf '%*s' $((30 - filled)) '' | tr ' ' '.')
 
 echo "RAG rebuild: [${bar}${empty}] ${pct}%"
 echo "  in Supabase: ${count}/${TOTAL} chunks · ${docs}/${DOCS} documents"
-echo "  model:       nomic-embed-text (768-dim, local Ollama, nice 19, cores 2-3)"
+echo "  model:       nomic-embed-text (768-dim, local Ollama, nice 19, 40% of one core)"
 if pgrep -f 'scripts/ensure-rag.ts' >/dev/null; then
   echo "  state:       RUNNING"
 else

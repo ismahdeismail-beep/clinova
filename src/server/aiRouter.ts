@@ -45,6 +45,15 @@ export let loadBalancingMode:
   'Priority' | 'Weighted' | 'Latency' | 'Cost' | 'Health' | 'RoundRobin' = 'Priority'
 
 export const providerStatuses: Record<string, AIProviderStatus> = {
+  Ollama: createInitialStatus(
+    'ollama',
+    'Ollama (local)',
+    0,
+    100,
+    0,
+    0,
+    'local',
+  ),
   'Google Gemini': createInitialStatus(
     'google',
     'Google Gemini',
@@ -497,17 +506,24 @@ export async function streamGenerateContent(
 }
 
 // Embeddings — used by the background ingestion pipeline (Phase 10) and the RAG
-// pipeline. Uses Gemini locked to 768-dim (matches the vector(768) contract).
-// Free-tier caps (verified empirically 2026‑10‑12): the daily quota is
-// `embed_content_free_tier_requests` = 1000 REQUESTS/day per model (a batch
-// counts as one request), while the per-minute cap counts TEXTS (100 texts/min
-// per model). So: keep batches large (≤100 texts/request) for the daily budget,
-// pace batches to ≤100 texts/min, retry on 429 with the server's retryDelay,
-// and fail fast (no hang) when a 429 announces DAILY exhaustion via an
-// hours-long retryDelay. EMBEDDING_MODEL is the model with daily quota left —
-// switch it on rotation, but never MIX models in one corpus (docs/rag-rollback.md).
-export const EMBEDDING_MODEL = 'gemini-embedding-001'
+// pipeline. Embeddings are generated LOCALLY by Ollama (nomic-embed-text,
+// 768-dim — matches the vector(768) pgvector contract) and generation runs on a
+// local Ollama chat model (qwen2.5:3b), with the cloud provider chain available
+// only as a fallback. No provider quota applies. Local hosts:
+//   LOCAL_EMBED_URL / LOCAL_GEN_URL  (default http://127.0.0.1:11434)
+//   LOCAL_EMBED_MODEL                (default 'nomic-embed-text')
+//   LOCAL_GEN_MODEL                  (default 'qwen2.5:3b')
+// Never mix embedding models in one corpus (docs/rag-rollback.md).
+export const EMBEDDING_MODEL = process.env.LOCAL_EMBED_MODEL || 'nomic-embed-text'
 const EMBEDDING_DIM = 768
+const LOCAL_EMBED_URL = process.env.LOCAL_EMBED_URL || 'http://127.0.0.1:11434'
+const LOCAL_EMBED_MODEL = process.env.LOCAL_EMBED_MODEL || 'nomic-embed-text'
+const LOCAL_GEN_URL = process.env.LOCAL_GEN_URL || 'http://127.0.0.1:11434'
+const LOCAL_GEN_MODEL = process.env.LOCAL_GEN_MODEL || 'qwen2.5:3b'
+// nomic-embed-text is task-prefixed in training: use search_query: at query time,
+// search_document: at ingest time.
+export const SEARCH_QUERY_PREFIX = 'search_query: '
+export const SEARCH_DOCUMENT_PREFIX = 'search_document: '
 
 function parseGoogleDelay(body: string): number {
   const h = /([\d.]+)h/.exec(body)
@@ -519,45 +535,43 @@ function parseGoogleDelay(body: string): number {
 }
 
 async function embedRequest(texts: string[]): Promise<number[][]> {
-  const apiKey = process.env.GEMINI_API_KEY
-  if (!apiKey) throw new Error('GEMINI_API_KEY not configured for embeddings')
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:batchEmbedContents?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        requests: texts.map((t) => ({
-          model: `models/${EMBEDDING_MODEL}`,
-          content: { parts: [{ text: t }] },
-          outputDimensionality: EMBEDDING_DIM,
-        })),
-      }),
-    },
-  )
+  const res = await fetch(`${LOCAL_EMBED_URL}/v1/embeddings`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ model: LOCAL_EMBED_MODEL, input: texts }),
+  })
   if (!res.ok) {
     const body = await res.text()
     const err: any = new Error(
-      `Embedding request failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
+      `Local embedding failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
     )
     err.status = res.status
     err.body = body
-    err.retryDelayMs = parseGoogleDelay(body)
     throw err
   }
   const json: any = await res.json()
-  const embeddings: number[][] = (json.embeddings ?? []).map((e: any) => e.values)
+  const rows: any[] = json.data ?? []
+  const embeddings: number[][] = rows
+    .slice()
+    .sort((a: any, b: any) => (a.index ?? 0) - (b.index ?? 0))
+    .map((d: any) => d.embedding ?? [])
   if (embeddings.length !== texts.length || embeddings.some((v) => !v?.length)) {
-    throw new Error(`Embedding provider returned ${embeddings.length}/${texts.length} vectors`)
+    throw new Error(`Local embedding provider returned ${embeddings.length}/${texts.length} vectors`)
   }
   return embeddings
 }
 
-/** Embed many texts in batches (API cap is 100/request). Retries transient 429/5xx/network. */
-export async function embedTexts(texts: string[], batchSize = 50): Promise<number[][]> {
+/** Embed many texts in batches. Local, no provider rate limit. */
+export type EmbedMode = 'document' | 'query'
+export async function embedTexts(
+  texts: string[],
+  batchSize = 64,
+  mode: EmbedMode = 'document',
+): Promise<number[][]> {
+  const prefixed = texts.map((t) => (mode === 'query' ? SEARCH_QUERY_PREFIX : SEARCH_DOCUMENT_PREFIX) + t)
   const out: number[][] = []
-  for (let i = 0; i < texts.length; i += batchSize) {
-    const slice = texts.slice(i, i + batchSize)
+  for (let i = 0; i < prefixed.length; i += batchSize) {
+    const slice = prefixed.slice(i, i + batchSize)
     let lastErr: any
     for (let attempt = 0; attempt < 5; attempt++) {
       try {
@@ -566,14 +580,7 @@ export async function embedTexts(texts: string[], batchSize = 50): Promise<numbe
         break
       } catch (e: any) {
         lastErr = e
-        const isThrottle = e.status === 429 || (e.status >= 500 && e.status < 600)
-        // Network failures (no HTTP status) are worth retrying too.
-        const isNetwork = !e.status && e instanceof TypeError
-        if (!isThrottle && !isNetwork) throw e
-        // A daily-quota 429 asks for hours — retrying would only hang. Fail fast.
-        if (e.status === 429 && e.retryDelayMs > 90_000) throw e
-        const wait = e.retryDelayMs > 0 ? e.retryDelayMs : 1000 * 2 ** attempt
-        await new Promise((r) => setTimeout(r, Math.min(wait, 90_000)))
+        await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt))
       }
     }
     if (lastErr) throw lastErr
@@ -582,7 +589,7 @@ export async function embedTexts(texts: string[], batchSize = 50): Promise<numbe
 }
 
 export async function embedText(text: string): Promise<number[]> {
-  return (await embedTexts([text], 1))[0]
+  return (await embedTexts([text], 1, 'query'))[0]
 }
 
 /** @deprecated prefer `embedTexts` — kept for existing callers. */
@@ -592,7 +599,20 @@ export async function embedTextBatch(texts: string[]): Promise<number[][]> {
 
 // Mock-and-Live Execution for Gateway APIs
 async function executeProvider(provider: string, request: any): Promise<{ text: string }> {
-  // Let's implement live calls for Gemini and OpenRouter if key exists, otherwise elegant medical simulation
+  if (provider === 'Ollama') {
+    const payload = mapToOpenAIFormat(request)
+    payload.model = LOCAL_GEN_MODEL
+    const res = await fetch(`${LOCAL_GEN_URL}/v1/chat/completions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+    if (res.ok) {
+      const data = (await res.json()) as any
+      return { text: data.choices?.[0]?.message?.content || '' }
+    }
+    throw new Error(`Ollama /v1/chat/completions responded ${res.status}`)
+  }
 
   if (provider === 'Google Gemini') {
     const mainKeyEnv = process.env.GEMINI_API_KEY

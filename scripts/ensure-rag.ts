@@ -154,8 +154,9 @@ async function main() {
     process.exit(1)
   }
   if (!args.dryRun && !gemini) {
-    console.error('ERROR: GEMINI_API_KEY is required to generate embeddings (or pass --dry-run).')
-    process.exit(1)
+    // Embeddings are generated locally (Ollama) — a Gemini key is not required.
+    // (Kept in logs for transparency.)
+    console.log('[ensure-rag] note: embeddings are local (Ollama); GEMINI_API_KEY not required.')
   }
 
   const supabase = createClient(url, key, { auth: { persistSession: false } })

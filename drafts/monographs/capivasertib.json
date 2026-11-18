@@ -1,0 +1,208 @@
+{
+  "name": "Capivasertib",
+  "existing_id": "472ab865-e6ff-4688-9843-fbfd840102af",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Capivasertib is an inhibitor of all 3 isoforms of serine/threonine kinase AKT (AKT1, AKT2, AKT3) and inhibits phosphorylation of downstream AKT substrates. AKT activation in tumors results from activation of upstream signaling pathways, AKT1 mutations, loss of PTEN function, and PIK3CA mutations. In vitro, capivasertib reduced growth of breast cancer cell lines including those with relevant PIK3CA or AKT1 mutations or PTEN alteration. In vivo, capivasertib alone and in combination with fulvestrant inhibited tumor growth of mouse xenograft models including ER-positive breast cancer models with PIK3CA, AKT1, and PTEN alterations; capivasertib also reduced growth of AR-positive PTEN-deficient prostate cancer cell lines and inhibited tumor growth in PTEN-deficient prostate xenografts, with increased antitumor activity in combination with abiraterone.",
+    "indications": [
+      "In combination with fulvestrant, treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations as detected by an FDA-authorized test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within 12 months of completing adjuvant therapy.",
+      "In combination with abiraterone and prednisone, treatment of adult patients with metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer that is PTEN-deficient as detected by an FDA-authorized test. (Note: this second indication is outside the requested breast cancer scope but is part of the current US label.)"
+    ],
+    "contraindications": [
+      "TRUQAP is contraindicated in patients with severe hypersensitivity to TRUQAP or any of its components."
+    ],
+    "side_effects": [
+      "Most common (>=20%) adverse reactions including laboratory abnormalities, HR-positive/HER2-negative breast cancer (CAPItello-291, 355 patients): diarrhea 72%, cutaneous adverse reactions 58%, increased random glucose 57%, decreased lymphocytes 47%, decreased hemoglobin 45%, increased fasting glucose 37%, nausea 35%, fatigue 35%, decreased leukocytes 32%, increased triglycerides 27%, decreased neutrophils 23%, increased creatinine 22%, vomiting 21%, stomatitis 20%.",
+      "Most common (>=20%) adverse reactions including laboratory abnormalities, PTEN-deficient mAPMN/S prostate cancer (CAPItello-281, 503 patients): increased fasting glucose, decreased hemoglobin, decreased lymphocytes, cutaneous adverse reactions, diarrhea, decreased potassium, increased creatinine, increased non-fasting glucose, increased alanine aminotransferase, increased triglycerides, increased aspartate aminotransferase, decreased sodium, fatigue.",
+      "Clinically relevant adverse reactions occurring in <10% of patients (breast cancer setting): anemia, pyrexia, dysgeusia, dyspepsia, pneumonia, weight decreased, hypersensitivity (including anaphylactic reaction)."
+    ],
+    "dosage": {
+      "adult": "400 mg orally twice daily (approximately 12 hours apart), with or without food, for 4 days followed by 3 days off, given in combination with fulvestrant (breast cancer) or abiraterone plus prednisone (PTEN-deficient mAPMN/S prostate cancer). Continue until disease progression or unacceptable toxicity. Dose reductions for adverse reactions: first reduction 320 mg twice daily for 4 days followed by 3 days off; second reduction 200 mg twice daily for 4 days followed by 3 days off.",
+      "maximum": "The recommended dosage is 400 mg orally twice daily for 4 days followed by 3 days off; the label states no maximum dose beyond the recommended dosage. Dose reductions to 320 mg and then 200 mg twice daily are specified for adverse reactions, and TRUQAP should be permanently discontinued if the second dose reduction is not tolerated."
+    },
+    "adult_dosing": "Select patients by tumor PIK3CA/AKT1/PTEN alteration (breast cancer) or PTEN deficiency (prostate cancer) using an FDA-authorized test. Recommended dosage: 400 mg orally twice daily (~12 hours apart) with or without food, 4 days on followed by 3 days off each week, in combination with fulvestrant (breast cancer; add LHRH agonist for pre/perimenopausal women and consider for men; fulvestrant 500 mg IM on cycle 1 days 1 and 15 then day 1 of each 28-day cycle) or with abiraterone 1000 mg daily plus prednisone 5 mg daily plus GnRH analog/orchiectomy (prostate cancer). Continue until disease progression or unacceptable toxicity. Recommended evaluation before and during treatment: fasting glucose and HbA1c (see monitoring). Dose modifications for adverse reactions: hyperglycemia, diarrhea, cutaneous adverse reactions, and other adverse reactions per CTCAE v5.0 tables (withhold, reduce to 320 mg then 200 mg twice daily, or permanently discontinue). Avoid strong CYP3A inhibitors; if unavoidable, reduce to 320 mg twice daily. Reduce to 320 mg twice daily with moderate CYP3A inhibitors; avoid strong/moderate CYP3A inducers.",
+    "pediatric_dosing": "The safety and effectiveness of TRUQAP have not been established in pediatric patients.",
+    "interactions": [
+      "Capivasertib is a CYP3A substrate. Strong CYP3A inhibitors increase capivasertib exposure and may increase risk of adverse reactions; avoid concomitant use. If unavoidable, reduce TRUQAP dose to 320 mg orally twice daily (4 days on / 3 days off) and monitor for adverse reactions; resume prior dose after 3-5 half-lives of the inhibitor.",
+      "Moderate CYP3A inhibitors increase capivasertib exposure; reduce TRUQAP dose to 320 mg orally twice daily (4 days on / 3 days off) and monitor for adverse reactions; resume prior dose after 3-5 half-lives of the inhibitor.",
+      "Strong and moderate CYP3A inducers decrease capivasertib exposure and may reduce effectiveness; avoid concomitant use.",
+      "Effect of capivasertib on other drugs: increased midazolam (CYP3A) AUC 1.8-fold day 4 / 1.2-fold day 7; predicted to increase desipramine (CYP2D6) AUC up to 2.1-fold day 4; predicted to increase raltegravir (UGT1A1) AUC up to 1.7-fold day 4; warfarin (CYP2C9) PK not predicted to be affected. In vitro: capivasertib induces CYP1A2 and inhibits BCRP, OATP1B1, OATP1B3, OAT3, MATE1, MATE2-K, and OCT2.",
+      "Acid-reducing agents (rabeprazole) and UGT2B7 inhibitors (probenecid) had/are not predicted to have clinically meaningful effects on capivasertib pharmacokinetics.",
+      "Grapefruit may interact with TRUQAP; patients should not consume grapefruit or grapefruit products during treatment."
+    ],
+    "monitoring": "Before starting: evaluate fasting blood glucose (FPG/FBG) and HbA1c, and optimize fasting glucose. During treatment: monitor or self-monitor fasting glucose on Day 3 or 4 of the dosing week during weeks 1, 2, 4, 6 and 8, then monthly while on treatment, and as clinically indicated; monitor HbA1c every 3 months and as clinically indicated. Patients with history of well-controlled type 2 diabetes may need intensified anti-hyperglycemic treatment and close fasting glucose monitoring; for hyperglycemia on treatment, monitor fasting glucose at least twice weekly (on and off days) until baseline, then during anti-diabetic therapy at least weekly for 2 months followed by every 2 weeks or as clinically indicated. Withhold TRUQAP immediately if ketoacidosis is suspected; permanently discontinue if confirmed. Monitor for signs/symptoms of diarrhea and cutaneous adverse reactions (early dermatologist consultation recommended). Consider consulting a practitioner with hyperglycemia expertise and home fasting-glucose monitoring for patients with risk factors or hyperglycemia. Refer to the fulvestrant or abiraterone prescribing information for combination-agent monitoring.",
+    "patient_counselling": "Advise patients to read the FDA-approved Patient Information. Hyperglycemia: TRUQAP can cause hyperglycemia and ketoacidosis, which can be fatal; patients will need periodic fasting glucose/HbA1c monitoring; withhold TRUQAP in clinical situations increasing risk of severe hyperglycemia/ketoacidosis (e.g., suspected serious infection or acute illness); contact provider immediately for signs/symptoms (e.g., excessive thirst, frequent urination, blurred vision, mental confusion, difficulty breathing, increased appetite with weight loss). Diarrhea: start antidiarrheal treatment, increase oral fluids, notify provider at first sign of diarrhea. Cutaneous reactions: report new or worsening rash or erythematous/exfoliative skin reactions immediately. Pregnancy/contraception: females of reproductive potential must use effective contraception during treatment and for 1 month after the last dose; males with female partners of reproductive potential must use effective contraception during treatment and for 4 months after the last dose; pregnancy status verified before starting; report known/suspected pregnancy. Breastfeeding: do not breastfeed during treatment. Dosing: take twice daily ~12 hours apart at about the same times each day, 4 days on then 3 days off, with or without food; swallow tablets whole with water; never chew, crush, split, or take broken/cracked/damaged tablets; missed dose may be taken within 4 hours, otherwise skip; if vomiting occurs after a dose, do not take an extra dose. Drug interactions: tell providers about all medications including OTC drugs, vitamins, and herbal products; do not consume grapefruit products. Report suspected adverse reactions to AstraZeneca (1-800-236-9933) or FDA MedWatch (1-800-FDA-1088).",
+    "warnings": [
+      "Hyperglycemia: TRUQAP can cause severe hyperglycemia, including diabetic ketoacidosis and fatal outcomes. In CAPItello-291, increased fasting glucose from baseline occurred in 37% (Grade 2: 11%, Grade 3: 2%, Grade 4: 1.1%); median time to first occurrence 15 days; diabetic ketoacidosis in 0.3% (diabetic metabolic decompensation 0.6%). In CAPItello-281, increased fasting glucose occurred in 69% (Grade 2: 25%, Grade 3: 12%, Grade 4: 1.2%); median time to first occurrence 71 days; DKA occurred in 1.2%. Withhold TRUQAP in clinical situations that increase risk of severe hyperglycemia or ketoacidosis (e.g., suspected serious infection or acute illness). Safety not established in type 1 diabetes or uncontrolled type 2 diabetes/insulin-requiring baseline (excluded from trials). Withhold immediately if ketoacidosis suspected; permanently discontinue if confirmed. Withhold, reduce dose, or permanently discontinue based on severity.",
+      "Diarrhea: TRUQAP can cause severe diarrhea associated with dehydration. In CAPItello-291, diarrhea occurred in 72% (Grade 3/4: 9%); median time to first occurrence 8 days. In CAPItello-281, diarrhea occurred in 52% (Grade 3: 6%, Grade 4: 0.2%); median time to first occurrence 12 days. Advise patients to increase oral fluids and start antidiarrheal treatment at first sign; withhold, reduce dose, or permanently discontinue based on severity.",
+      "Cutaneous adverse reactions: can be severe, including erythema multiforme (EM), palmar-plantar erythrodysesthesia, and drug reaction with eosinophilia and systemic symptoms (DRESS). In CAPItello-291, cutaneous adverse reactions occurred in 58% (Grade 3/4: 17%); EM in 1.7%; DRESS in 0.3%; median onset 13 days. In CAPItello-281, occurred in 53% (Grade 3: 17%, Grade 4: 0.2%); median onset 13 days. Monitor for signs/symptoms; early dermatologist consultation recommended; withhold, reduce dose, or permanently discontinue based on severity.",
+      "Embryo-Fetal Toxicity: based on findings in animals and mechanism of action, TRUQAP can cause fetal harm when administered to a pregnant woman. In pregnant rats, oral capivasertib during organogenesis caused embryo-fetal mortality and reduced fetal weights at maternal exposures 0.7x human exposure (AUC) at the recommended 400 mg twice daily dosage. Advise pregnant women and females of reproductive potential of fetal risk; use effective contraception (see pregnancy_guidance). Refer to fulvestrant/abiraterone labeling for pregnancy and contraception information when used in combination."
+    ],
+    "precautions": [
+      "Hyperglycemia risk mitigation: optimize fasting glucose before initiation; monitor fasting glucose on Day 3-4 of dosing weeks 1, 2, 4, 6, 8 then monthly; HbA1c every 3 months; intensify monitoring/anti-diabetic treatment in well-controlled type 2 diabetes; consider expert consultation and home glucose monitoring for at-risk patients.",
+      "Renal impairment: no dosage modification for mild to moderate (CLcr 30-89 mL/min); TRUQAP has not been studied in severe renal impairment (CLcr 15-29 mL/min).",
+      "Hepatic impairment: no dosage modification for mild impairment; monitor patients with moderate (bilirubin >1.5 to 3x ULN and any AST) impairment for adverse reactions due to potential increased exposure; not studied in severe (bilirubin >3x ULN and any AST) impairment.",
+      "Geriatric use: higher incidence of Grade 3-5 adverse reactions (57% vs 36% breast cancer; 77% vs 60% prostate cancer), dose reductions, interruptions, and discontinuations in patients >=65 vs younger; differences driven primarily by increased hyperglycemia and hypokalemia. No overall efficacy differences observed.",
+      "Withhold TRUQAP during suspected serious infection, acute illness, or other clinical situations known to increase risk of severe hyperglycemia or ketoacidosis.",
+      "Exclude/avoid TRUQAP in patients with clinically significant glucose-metabolism abnormalities (trials excluded type 1 diabetes, insulin-requiring type 2 diabetes, HbA1c >=8%); safety not established in these populations."
+    ],
+    "serious_adverse_reactions": [
+      "CAPItello-291 (breast cancer, n=288 efficacy population / 355 safety population): serious adverse reactions in 18% of patients receiving TRUQAP with fulvestrant. Most common serious adverse reactions (>=1%): cutaneous adverse reaction 3.9%, diarrhea 2.6%, pneumonia 2.6%, vomiting 1.9%, pyrexia 1.9%, hyperglycemia, hypersensitivity, fatigue, renal injury, second malignancy 1.3% each. Fatal adverse reactions in 1.3% (sepsis 0.6%, acute myocardial infarction 0.6%). Permanent discontinuation due to adverse reaction 10% (cutaneous adverse reactions most common, >=2%: 6%).",
+      "CAPItello-281 (prostate cancer, n=503): serious adverse reactions in 47%. Most common (>=2%): pneumonia 7%, cutaneous adverse reactions 5%, hyperglycemia 5%, hemorrhage 3.4%, urinary tract infection 3.2%, ischemic cerebro/cardiovascular events 3.2%, acute kidney injury 2.2%, hypokalemia 2.2%. Fatal adverse reactions in 8% (sepsis 1.2%, ischemic cerebro-/cardiovascular events 1%, hemorrhage 0.6%, pneumonia 0.4%, diabetic ketoacidosis 0.2%). Permanent discontinuation due to adverse reaction 20% (cutaneous adverse reactions 8%, hyperglycemia 2.4%).",
+      "Diabetic ketoacidosis reported as serious/fatal outcome: 0.3% DKA (diabetic metabolic decompensation 0.6%) in CAPItello-291; 1.2% DKA in CAPItello-281."
+    ],
+    "food_interactions": [
+      "TRUQAP may be taken with or without food; no clinically meaningful differences in capivasertib pharmacokinetics were observed following administration with a high-fat (~1000 kcal, 60% fat) or low-fat (~400 kcal, 26% fat) meal.",
+      "Grapefruit may interact with TRUQAP (CYP3A inhibition); patients should not consume grapefruit or grapefruit products during treatment."
+    ],
+    "pregnancy_category": "No FDA pregnancy category letter is assigned in current labeling. Narrative label statement (Use in Specific Populations 8.1, Risk Summary): Based on findings in animals and mechanism of action, TRUQAP can cause fetal harm when administered to a pregnant woman. There are no available data on the use of TRUQAP in pregnant women; in animal reproduction studies, oral capivasertib during organogenesis caused embryo-fetal mortality and reduced fetal weights at maternal exposures 0.7 times the human exposure (AUC) at the recommended 400 mg twice daily dose. Advise pregnant women and females of reproductive potential of the potential risk to a fetus. The background risk of major birth defects in the U.S. general population is estimated at 2-4% and miscarriage at 15-20%. Refer to fulvestrant or abiraterone full prescribing information for pregnancy information when used in combination.",
+    "pregnancy_guidance": "Verify pregnancy status of females of reproductive potential prior to initiating TRUQAP. Advise females of reproductive potential to use effective contraception during treatment with TRUQAP and for 1 month after the last dose. Advise male patients with female partners of reproductive potential to use effective contraception during treatment with TRUQAP and for 4 months after the last dose. Advise pregnant women and females of reproductive potential of the potential risk to a fetus; advise females to inform their healthcare provider of a known or suspected pregnancy. TRUQAP is used in combination with fulvestrant or abiraterone; refer to the full prescribing information of fulvestrant or abiraterone for contraception and infertility information. Animal data: in embryo-fetal development studies, pregnant rats receiving capivasertib up to 150 mg/kg/day during organogenesis had maternal toxicities and adverse developmental outcomes (embryo-fetal deaths/post-implantation loss, reduced fetal weights, minor visceral variations) at 150 mg/kg/day (0.7x human exposure at 400 mg twice daily by AUC); in pre- and post-natal assessment, 150 mg/kg/day reduced litter and pup weights.",
+    "lactation_guidance": "Advise women not to breastfeed during treatment with TRUQAP. There are no data on the presence of capivasertib or its metabolites in human milk, or effects on milk production or the breastfed child. Capivasertib was detected in the plasma of suckling rat pups (up to 0.6% of maternal plasma concentrations at 150 mg/kg/day on lactation day 7-8); because of the potential for serious adverse reactions in a breastfed child, advised not to breastfeed during treatment. Refer to the full prescribing information of fulvestrant for lactation information when used in combination (8.2).",
+    "overdose": null,
+    "pharmacokinetics": "Steady-state AUC 7,356 h*ng/mL (38% CV) and Cmax 1,247 ng/mL (28%); steady state predicted on dosing days 3-4 of each week starting week 2; concentrations ~0.2-5.1% of steady-state Cmax on off-days; AUC and Cmax dose-proportional 80-800 mg. Absorption: Tmax ~1-2 hours; absolute bioavailability 29%; no clinically meaningful food effect (high- or low-fat). Distribution: steady-state oral volume of distribution 1,847 L (36%); plasma protein binding 78%; plasma-to-blood ratio 0.71. Elimination: half-life 8.3 hours; steady-state oral clearance 50 L/h (37% CV); renal clearance 21% of total clearance. Metabolism: primarily CYP3A4 and UGT2B7. Excretion: after a single radiolabeled 400 mg oral dose, mean recovery 45% urine and 50% feces. Specific populations: no clinically significant differences by race/ethnicity, sex (88% females), body weight (32-150 kg), age (26-87 y), mild hepatic impairment, or mild-moderate renal impairment (CLcr 30-89 mL/min); effect of moderate hepatic impairment not fully characterized; not studied in severe hepatic or severe renal impairment. Cardiac electrophysiology: at the recommended dose, a mean QTc increase >20 ms was not observed. Exposure-response: increased exposure associated with increased Grade 2-4 diarrhea, rash, and Grade 3-4 hyperglycemia at 80-800 mg.",
+    "clinical_pearls": [
+      "Select breast cancer patients by PIK3CA/AKT1/PTEN alteration testing (e.g., FDA-authorized companion diagnostic; FoundationOne CDx used in CAPItello-291) before starting; do not use TRUQAP for PIK3CA/AKT1/PTEN non-altered tumors - exploratory analysis HR 0.79 (95% CI 0.61-1.02).",
+      "Schedule is 4 days on / 3 days off each week (not continuous daily dosing); steady state reached on dosing days 3-4 of week 2.",
+      "Fasting glucose should be checked on Day 3 or 4 of dosing weeks 1, 2, 4, 6 and 8, then monthly - do not wait for symptoms; HbA1c every 3 months.",
+      "Withhold TRUQAP immediately when ketoacidosis is suspected and permanently discontinue if confirmed; withhold during serious infection or acute illness.",
+      "Safety has not been established in type 1 diabetes or insulin-requiring/uncontrolled type 2 diabetes (excluded from CAPItello-291/281, HbA1c >=8% exclusion).",
+      "Dose reduce for strong/moderate CYP3A inhibitors to 320 mg twice daily; avoid grapefruit products; avoid strong/moderate CYP3A inducers.",
+      "Pre/perimenopausal women receiving TRUQAP + fulvestrant should also receive an LHRH agonist; men with breast cancer consider LHRH agonist; prostate cancer patients must receive GnRH analog concurrently or have had bilateral orchiectomy.",
+      "Tablets must be swallowed whole; missed dose within 4 hours of scheduled time may be taken, otherwise skip; vomited dose not re-taken.",
+      "In CAPItello-291, median PFS 7.3 vs 3.1 months (HR 0.50; p<0.0001) in PIK3CA/AKT1/PTEN-altered tumors; no significant OS benefit at final analysis (HR 0.83; 95% CI 0.63-1.10)."
+    ],
+    "brand_names": [
+      "Truqap"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No dosage modification is recommended for patients with mild to moderate renal impairment (creatinine clearance 30-89 mL/min). TRUQAP has not been studied in patients with severe renal impairment (CLcr 15-29 mL/min).",
+    "hepatic_dose_adjustment": "No dosage modification is recommended for patients with mild hepatic impairment (bilirubin <= ULN and AST > ULN, or bilirubin >1 to 1.5x ULN and any AST). Monitor patients with moderate hepatic impairment (bilirubin >1.5 to 3x ULN and any AST) for adverse reactions due to potential increased capivasertib exposure. TRUQAP has not been studied in patients with severe hepatic impairment (bilirubin >3x ULN and any AST).",
+    "administration_instructions": "Take 400 mg orally twice daily (approximately 12 hours apart, morning and evening at about the same times each day) with or without food, for 4 consecutive days followed by 3 days off each week. Swallow tablets whole with water; do not chew, crush, or split; do not take broken, cracked, or otherwise not intact tablets. If a dose is missed within 4 hours of the scheduled time, take it; if more than 4 hours have passed, skip and take the next dose at the usual time. If a patient vomits a dose, do not take an additional dose; take the next dose at the usual time. Dispense/store at 20-25°C (excursions 15-30°C) in the original package; discard unused tablets after 45 days; bottled tablets may be dispensed in original bottle or USP equivalent tight container."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "indications",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 1 Indications and Usage (1.1, 1.2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 6 Adverse Reactions (6.1 Clinical Trials Experience; Tables 4-7)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "dosage",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2 Dosage and Administration (2.3, 2.5, Table 2)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2 Dosage and Administration (2.1, 2.2, 2.3, 2.5, 2.6)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "interactions",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 7 Drug Interactions (7.1, Table 8); Section 17 Patient Counseling Information (Drug Interactions); Section 12.3 Pharmacokinetics (Drug Interaction Studies)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2.2 Recommended Evaluation Before Initiating TRUQAP; Section 5.1 Hyperglycemia; Section 5.2 Diarrhea; Section 5.3 Cutaneous Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 17 Patient Counseling Information; Section 2.4 Administration; Section 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "warnings",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 5 Warnings and Precautions (5.1 Hyperglycemia, 5.2 Diarrhea, 5.3 Cutaneous Adverse Reactions, 5.4 Embryo-Fetal Toxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "precautions",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 5 Warnings and Precautions; Section 8.4 Pediatric Use; Section 8.5 Geriatric Use; Section 8.6 Renal Impairment; Section 8.7 Hepatic Impairment; Section 14.1/14.2 (trial exclusion criteria)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 6.1 Clinical Trials Experience (CAPItello-291, CAPItello-281)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2.3 Recommended Dosage; Section 12.3 Pharmacokinetics (Effect of Food); Section 17 Patient Counseling Information (grapefruit)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.1 Pregnancy (Risk Summary); Section 5.4 Embryo-Fetal Toxicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.1 Pregnancy; Section 8.3 Females and Males of Reproductive Potential; Section 5.4 Embryo-Fetal Toxicity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 12.3 Pharmacokinetics; Section 12.2 Pharmacodynamics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2 Dosage and Administration; Section 5 Warnings and Precautions; Section 14 Clinical Studies (14.1, 14.2); Section 2.4 Administration; Section 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 3 Dosage Forms and Strengths; Section 16 How Supplied/Storage and Handling; Highlights (TRUQAP)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Highlights of Prescribing Information (no boxed/boxed warning section present); Section 5 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.6 Renal Impairment; Section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 8.7 Hepatic Impairment; Section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "TRUQAP (capivasertib) tablets, AstraZeneca Pharmaceuticals LP, DailyMed setid d698c106-2322-401e-b738-cbd83c843ecf - Section 2.4 Administration (Table 1); Section 16 How Supplied/Storage and Handling; Section 2.3 Recommended Dosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf"
+    }
+  ],
+  "unsourced_fields": [
+    "overdose"
+  ],
+  "notes": "Product scope: TRUQAP (capivasertib) tablets 160 mg and 200 mg, AstraZeneca Pharmaceuticals LP, US FDA DailyMed label (Initial U.S. Approval 2023; label revised 06/2026, published Oct 30 2026), setid d698c106-2322-401e-b738-cbd83c843ecf. Verified HTTP 200 at DailyMed drugInfo.cfm and label title matches 'TRUQAP (CAPIVASERTIB) TABLET, FILM COATED [ASTRAZENECA PHARMACEUTICALS LP]'. The current US label contains TWO indications: (1) HR-positive/HER2-negative locally advanced or metastatic breast cancer with PIK3CA/AKT1/PTEN alterations in combination with fulvestrant (the requested scope) and (2) PTEN-deficient mAPMN/S prostate cancer in combination with abiraterone and prednisone (outside requested scope but included for label fidelity; sections 1.2/14.2 and prostate-relevant safety data are retained and flagged). Boxed warning status: the label contains NO boxed (black box) warning section; warnings are presented in Section 5 (hyperglycemia incl. DKA and fatal outcomes, diarrhea, cutaneous adverse reactions, embryo-fetal toxicity) - recorded as [] per absence documentation. Overdose: the label contains NO Overdosage section (Section 10 absent); overdose field left null and listed in unsourced_fields. Pregnancy category: current US labeling uses narrative risk summaries, not letter categories; pregnancy_category carries the narrative statement as required. Gaps/limitations: no data in type 1 diabetes or insulin-requiring/uncontrolled type 2 diabetes; efficacy not established in pediatric patients; not studied in severe renal (CLcr 15-29) or severe hepatic (bilirubin >3x ULN) impairment; overall survival benefit not significant at final CAPItello-291 analysis. All populated fields trace to the single DailyMed source above; needs_review status assigned pending human clinical verification."
+}

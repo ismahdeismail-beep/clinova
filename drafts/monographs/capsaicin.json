@@ -1,0 +1,275 @@
+{
+  "name": "Capsaicin",
+  "existing_id": "bdba4460-7a81-425b-a7a8-99ae36846992",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Capsaicin is an agonist for the transient receptor potential vanilloid 1 receptor (TRPV1), an ion channel-receptor complex expressed on nociceptive nerve fibers in the skin. Topical administration causes initial enhanced stimulation of TRPV1-expressing cutaneous nociceptors (which may be associated with painful sensations), followed by pain relief thought to be mediated by a reduction in TRPV1-expressing nociceptive nerve endings. Over the course of several months there may be gradual re-emergence of painful neuropathy, thought to be due to TRPV1 nerve fiber reinnervation of the treated area. Pharmacodynamic studies showed reduced epidermal nerve fiber density and minor changes in cutaneous nociceptive function (heat detection and sharp sensation) one week after exposure; these changes were fully reversible. Capsaicin in QUTENZA is a synthetic equivalent of the naturally occurring compound found in chili peppers (empirical formula C18H27NO3, molecular weight 305.42; [(E)-8-methyl-N-vanillyl-6-nonenamide]).",
+    "indications": [
+      "QUTENZA (capsaicin) 8% topical system: indicated in adults for the treatment of neuropathic pain associated with postherpetic neuralgia (PHN) and for neuropathic pain associated with diabetic peripheral neuropathy (DPN) of the feet (FDA QUTENZA label, sections 1 and 14).",
+      "OTC capsaicin 0.1% cream (Meijer Capsaicin): for the temporary relief of minor pain associated with arthritis, simple backache, muscle strains, sprains, and bruises (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Uses section)."
+    ],
+    "contraindications": [
+      "QUTENZA: None. The FDA QUTENZA label states 'Contraindications: None' (FDA QUTENZA label, section 4).",
+      "OTC capsaicin 0.1% cream: do not use if allergic to capsicum or chili peppers; do not apply to wounds, damaged, broken or irritated skin (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings/When using this product sections)."
+    ],
+    "side_effects": [
+      "QUTENZA, all controlled clinical trials (most common, >=5% and at least 1% greater than control): application site erythema (63% PHN / 2% DPN vs control), application site pain (42% PHN / 10% DPN), application site pruritus (6% PHN), application site papules (6% PHN), application site edema (4% PHN), application site swelling (2% PHN), application site dryness (2% PHN), application site burning sensation (14% DPN), application site reactions (DPN).",
+      "QUTENZA, PHN trials (>1% and at least 1% greater than control): nasopharyngitis 4%, sinusitis 3%, bronchitis 2%, nausea 5%, vomiting 3%, pruritus 2%, hypertension 2%. Less common (<1%): palpitations, tachycardia, eye pruritus, application site reactions (urticaria, paresthesia, dermatitis, hyperesthesia).",
+      "QUTENZA, DPN trials (>1% and at least 1% greater than control): excoriation 2%, pain in extremity 11%, headache 3%, upper respiratory tract infection 4%, cough 2%, hypertension 2%. Less common (<1%): dizziness, dysesthesia, blister.",
+      "QUTENZA: the majority of application site reactions were transient and self-limited; transient increases in pain were commonly observed on the day of treatment and usually began to resolve after QUTENZA removal, with average pain scores returning to baseline by end of the treatment day. 1% of patients discontinued prematurely due to an adverse event. Most reactions were of mild or moderate maximum intensity.",
+      "OTC capsaicin 0.1% cream: a slight burning sensation may occur upon application but generally disappears in several days; discontinue use if severe burning occurs (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section)."
+    ],
+    "dosage": {
+      "adult": "QUTENZA (8% capsaicin, 640 mcg/cm2; each 14 cm x 20 cm / 280 cm2 topical system contains 179 mg capsaicin): PHN - a single 60-minute application of up to four topical systems. DPN - a single 30-minute application on the feet of up to four topical systems. Treatment may be repeated every 3 months or as warranted by return of pain, not more frequently than every three months. QUTENZA is administered only by physicians or healthcare professionals; it must not be dispensed to patients for self-administration. Treatment area may be pretreated with a topical anesthetic. OTC capsaicin 0.1% cream: adults and children over 18 years apply generously to the affected area not more than 3 to 4 times daily and massage into the painful area until thoroughly absorbed; wash hands after use (FDA QUTENZA label, sections 2.2 and 2.3; FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Directions section).",
+      "maximum": "QUTENZA: up to four 8% topical systems per treatment session; repeat no more frequently than every 3 months. OTC capsaicin 0.1% cream: not more than 3 to 4 applications per day."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": "QUTENZA: The safety and effectiveness of QUTENZA in patients younger than 18 years of age have not been studied (FDA QUTENZA label, section 8.4). OTC capsaicin 0.1% cream: children 18 years or younger should ask a doctor before use (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Directions section).",
+    "interactions": [
+      "QUTENZA: No clinical drug interaction studies have been performed. Data from in vitro cytochrome P450 inhibition and induction studies show that capsaicin does not inhibit or induce liver cytochrome P450 enzymes at concentrations which far exceed those measured in blood samples. Therefore, interactions with systemic medicinal products are unlikely (FDA QUTENZA label, section 7).",
+      "OTC capsaicin 0.1% cream: no drug interactions are listed on the OTC label (FDA OTC monograph label, Meijer Capsaicin 0.1% cream)."
+    ],
+    "monitoring": "QUTENZA: Monitor blood pressure periodically during and following the treatment procedure (transient increases averaging <10 mm Hg may occur during or shortly after exposure and last approximately two hours; increases were related to treatment-related pain). Assess for signs of sensory deterioration or loss prior to each application, particularly in patients with pre-existing sensory deficits; if sensory deterioration or loss is detected or a pre-existing deficit worsens, reconsider continued use. In DPN, examine the feet carefully prior to each application to detect skin lesions related to underlying neuropathy or vascular insufficiency. Post-procedure, watch for application site burns (including full-thickness injury) and persistent severe pain or skin lesions such as blisters. OTC capsaicin 0.1% cream: stop use and ask a doctor if the condition worsens, symptoms persist for more than 7 days or clear up and recur within a few days, redness is present, or irritation develops (FDA QUTENZA label, sections 5.3, 5.4, 5.5, and 2.1; FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section).",
+    "patient_counselling": "QUTENZA: Inform patients that accidental exposure to capsaicin from touching QUTENZA or items exposed to capsaicin can cause severe irritation of eyes, mucous membranes, respiratory tract, and skin; instruct patients not to touch their eyes or unintended areas, and to notify their doctor immediately if eye or airway irritation occurs or if any side effects become severe. Acute pain during and after the procedure may be treated with local cooling or analgesic medication; warn of the potential risk of frostbite with excessive cooling (use refrigerator, not freezer, cooling packs and avoid direct skin application). Advise patients to seek medical attention for persistent severe pain or skin lesions such as blisters after the procedure. Small transient increases in blood pressure may occur during and shortly after treatment; blood pressure will be monitored during the procedure, and patients should report recent cardiovascular events. The treated area may be sensitive to heat (e.g., hot showers/baths, direct sunlight, vigorous exercise) for a few days after treatment. OTC capsaicin 0.1% cream: use only as directed; do not bandage; do not use with a heating pad; avoid contact with eyes and mucous membranes; do not apply to wounds or broken/irritated skin; a slight burning sensation may occur and generally disappears in several days (stop if severe); do not expose the treated area to heat or direct sunlight; wash hands with soap and water after use; keep out of reach of children and contact Poison Control in case of accidental ingestion; if pregnant or breast-feeding, ask a health professional before use (FDA QUTENZA label, section 17; FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Directions/Warnings sections).",
+    "warnings": [
+      "QUTENZA - Severe irritation with unintended capsaicin exposure: capsaicin can cause severe irritation of the eyes, mucous membranes, respiratory tract, and skin of healthcare professionals, patients, and others. Administer only in a well-ventilated area; wear nitrile (not latex) gloves; face mask and protective glasses advisable; do not apply to face, eyes, mouth, nose, or scalp; remove by gently and slowly rolling the adhesive side inward to avoid aerosolization; flush eyes/mucous membranes with cool water on exposure; do not re-expose an individual whose respiratory irritation worsens or does not resolve (FDA QUTENZA label, sections 5.1 and 2.1).",
+      "QUTENZA - Application-associated pain: even with prior local anesthetic, patients may experience substantial procedural pain and burning during and after application; prepare to treat acute pain with local cooling and/or appropriate analgesic medication (FDA QUTENZA label, section 5.2).",
+      "QUTENZA - Increase in blood pressure: transient increases (average <10 mm Hg, lasting approximately two hours) may occur during or shortly after treatment; monitor blood pressure during and after the procedure. Patients with unstable or poorly controlled hypertension, or a recent history of cardiovascular or cerebrovascular events, may be at increased risk of adverse cardiovascular effects; consider these factors before initiating treatment (FDA QUTENZA label, section 5.3).",
+      "QUTENZA - Sensory function: reductions in sensory function (generally minor and temporary, including to thermal and other harmful stimuli) have been reported. Clinically assess patients with pre-existing sensory deficits for deterioration or loss before each application; reconsider treatment if detected (FDA QUTENZA label, section 5.4).",
+      "QUTENZA - Severe application site burns: full-thickness (third-degree) and deep partial-thickness (second-degree) burns have been reported, including cases requiring hospitalization and skin grafting, often after use for an unapproved indication and/or frequency of dosing at a site of prior skin trauma. Follow dosage and administration recommendations; use only on dry, intact (unbroken) skin (FDA QUTENZA label, section 5.5).",
+      "OTC capsaicin 0.1% cream - For external use only; use only as directed; do not bandage; do not use with a heating pad; avoid contact with eyes and mucous membranes; do not apply to wounds, damaged, broken or irritated skin; do not expose the treated area to heat or direct sunlight (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings/When using this product sections)."
+    ],
+    "precautions": [
+      "QUTENZA - Pre-existing sensory deficits: all patients with pre-existing sensory deficits should be clinically assessed for signs of sensory deterioration or loss prior to each application; if detected, continued use should be reconsidered (FDA QUTENZA label, section 5.4).",
+      "QUTENZA - Diabetic peripheral neuropathy: a careful examination of the feet should be undertaken prior to each application to detect skin lesions related to underlying neuropathy or vascular insufficiency (FDA QUTENZA label, sections 2.1 and 5.4).",
+      "QUTENZA - Cardiovascular risk: consider unstable or poorly controlled hypertension and recent cardiovascular or cerebrovascular events before initiating treatment; blood pressure may rise transiently in relation to treatment-related pain; provide adequate support for treatment-related pain (FDA QUTENZA label, section 5.3).",
+      "QUTENZA - Geriatric patients: no dose adjustments are required; safety and effectiveness were similar in geriatric and younger patients (75% of PHN trial patients were >=65 years; 43% were >=75 years) (FDA QUTENZA label, section 8.5).",
+      "QUTENZA - Males of reproductive potential: in a fertility study, QUTENZA at 13 times the MRHD reduced the number and percent of motile sperm in rats without adversely affecting fertility; clinical significance at the MRHD is unknown (FDA QUTENZA label, section 8.3).",
+      "OTC capsaicin 0.1% cream - A slight burning sensation may occur on application and generally disappears within several days; discontinue use if severe burning occurs. Stop use and ask a doctor if the condition worsens, symptoms persist for more than 7 days or recur within a few days, redness is present, or irritation develops (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section)."
+    ],
+    "serious_adverse_reactions": [
+      "Severe application site burns: full-thickness (third-degree) and deep partial-thickness (second-degree) burns reported following QUTENZA administration, including cases requiring hospitalization and skin grafting, generally with unapproved indication and/or dosing frequency at sites of prior skin trauma (FDA QUTENZA label, sections 5.5 and 6.2).",
+      "Postmarketing: deep partial-thickness (second-degree) and full-thickness (third-degree) burns and scarring (FDA QUTENZA label, section 6.2).",
+      "Accidental exposure (postmarketing): eye pain, cough, eye and throat irritation; severe irritation of eyes, mucous membranes, respiratory tract, and skin (FDA QUTENZA label, sections 5.1 and 6.2).",
+      "Substantial application-associated procedural pain and burning, which may be severe and require local cooling and/or analgesic medication (FDA QUTENZA label, section 5.2).",
+      "Transient increases in blood pressure during or shortly after treatment, potentially clinically important in patients with unstable or poorly controlled hypertension or recent cardiovascular/cerebrovascular events (FDA QUTENZA label, section 5.3)."
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "The QUTENZA label uses the Pregnancy and Lactation Labeling Rule (no letter category is assigned). Risk Summary: capsaicin is negligibly absorbed systemically following topical administration of QUTENZA, and maternal use is not expected to result in fetal exposure to QUTENZA. In animal reproductive studies, no evidence of malformations was observed when capsaicin was administered topically to pregnant rats and rabbits during organogenesis at doses up to 11- and 37-times, respectively, the maximum recommended human dose (MRHD) of QUTENZA (716 mg capsaicin/day; 4 topical systems containing 179 mg each). In a peri- and postnatal study, no adverse effects were observed in rats at doses up to 11-times the MRHD. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown; in the U.S. general population the estimated background risk is 2% to 4% and 15% to 20%, respectively. The OTC capsaicin label states: 'If pregnant or breast-feeding, ask a health professional before use.'",
+    "pregnancy_guidance": "QUTENZA: Capsaicin is negligibly absorbed systemically; maternal use is not expected to result in fetal exposure. No malformations were seen in rat or rabbit embryofetal studies at up to 11x and 37x the MRHD, and no adverse peri-/postnatal effects at up to 11x the MRHD; measurable capsaicin was detected in rat milk at all dose levels but offspring were unaffected up to 11x the MRHD. Animal data do not indicate a risk to the fetus, but human data are lacking; all pregnancies carry a background risk of 2%-4% major birth defects and 15%-20% miscarriage. Use only if the benefit justifies the potential risk, and counsel accordingly (FDA QUTENZA label, section 8.1). OTC capsaicin 0.1% cream: if pregnant or breast-feeding, ask a health professional before use (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section).",
+    "lactation_guidance": "QUTENZA: Capsaicin is negligibly absorbed systemically by the mother following topical administration, and breastfeeding is not expected to result in infant exposure to QUTENZA. There are no data on the effects of capsaicin on milk production. To minimize potential direct exposure of QUTENZA to the breastfed infant, avoid applying QUTENZA directly to the nipple and areola. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for QUTENZA and any potential adverse effects on the breastfed infant from QUTENZA or from the underlying maternal condition. In a rat peri-/postnatal study, capsaicin was measurable in dam's milk but offspring showed no adverse effects up to 11-times the MRHD (FDA QUTENZA label, sections 8.1 and 8.2). OTC capsaicin 0.1% cream: if pregnant or breast-feeding, ask a health professional before use (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section).",
+    "overdose": "QUTENZA: There is no clinical experience with QUTENZA overdose in humans and there is no specific antidote for overdose with capsaicin. In case of suspected overdose, remove QUTENZA gently, apply Cleansing Gel for one minute, wipe off with dry gauze, and gently wash the area with soap and water. Use supportive measures and treat symptoms as clinically warranted (FDA QUTENZA label, section 10). OTC capsaicin 0.1% cream: keep out of reach of children; in case of accidental ingestion, get medical help or contact a Poison Control Center right away (FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Warnings section).",
+    "pharmacokinetics": "Transient, low (<5 ng/mL) systemic exposure to capsaicin was seen in about one-third of PHN patients following 60-minute QUTENZA applications. The highest plasma concentration detected was 4.6 ng/mL, occurring immediately after QUTENZA removal. Most quantifiable levels were observed at the time of removal and were below the limit of quantitation 3 to 6 hours after removal. No detectable levels of metabolites were observed in any subject. In vitro, capsaicin does not inhibit or induce liver cytochrome P450 enzymes at concentrations far exceeding those measured in blood (FDA QUTENZA label, sections 7 and 12.3).",
+    "clinical_pearls": [
+      "QUTENZA is a high-concentration (8%) capsaicin patch for neuropathic pain and must be applied only by a physician or healthcare professional; it is not dispensed for self-administration. OTC capsaicin creams (e.g., 0.1%) are for temporary relief of minor aches and pains and are self-applied.",
+      "QUTENZA provides durable pain relief from a single 30- or 60-minute application, repeatable no more often than every 3 months; efficacy in PHN (-29% vs -18% control at Week 8) and DPN of the feet (-30% vs -22% placebo at Week 12) was established in randomized controlled trials.",
+      "Application site reactions (erythema, pain, pruritus, burning) are expected, usually transient and self-limited, and pain scores typically return to baseline by end of the treatment day.",
+      "Pretreatment with a topical anesthetic (applied to the treatment area and surrounding 1-2 cm) may reduce procedural discomfort but does not eliminate it.",
+      "Reduced epidermal nerve fiber density and minor sensory changes after QUTENZA are fully reversible over months; pain may gradually re-emerge as TRPV1 fibers reinnervate the treated area.",
+      "The OTC burning sensation on application generally disappears within several days of regular use; persistent or severe burning warrants discontinuation.",
+      "Avoid inadvertent capsaicin transfer to eyes/mucous membranes/respiratory tract - a risk mainly to handlers and to patients touching the treated site; nitrile gloves (not latex) are required for handling."
+    ],
+    "brand_names": [
+      "QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc)",
+      "Meijer Capsaicin 0.1% cream (OTC; Meijer, Inc.)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "QUTENZA (healthcare professional administration only): Administer in a well-ventilated treatment area; wear nitrile (not latex) gloves; face mask and protective glasses advisable. Keep in the sealed pouch until immediately before use; inspect pouch and do not use if torn or damaged. Use only on dry, intact (unbroken) skin. Identify and mark the treatment area (including areas of hypersensitivity and allodynia); clip (do not shave) hair if needed; QUTENZA may be cut to size. Wash the area with mild soap and water and dry thoroughly. Optional: pretreat with a topical anesthetic to the treatment area and surrounding 1-2 cm, then remove before QUTENZA application. Apply to the treatment area (PHN: leave in place 60 minutes; DPN: 30 minutes on the feet - may be wrapped around dorsal, lateral, and plantar surfaces); a dressing such as rolled gauze may help maintain contact. Instruct the patient not to touch QUTENZA or the treatment area. Remove gently and slowly by rolling the adhesive side inward to avoid aerosolization. After removal, generously apply Cleansing Gel for at least one minute, wipe off with a dry wipe, and gently wash with mild soap and water; dry thoroughly. Dispose of all treatment materials (patch, clippings, packaging, Cleansing Gel, gloves) as biomedical waste; clean all contacted surfaces. In DPN, examine the feet before each application. If skin not intended to be treated is exposed, apply Cleansing Gel for one minute, wipe off, then wash with soap and water. For eye/mucous membrane exposure, flush with cool water. If respiratory irritation worsens or does not resolve, do not re-expose the affected person. OTC capsaicin 0.1% cream: apply generously to the affected area not more than 3 to 4 times daily; massage into the painful area until thoroughly absorbed; wash hands with soap and water after use; close cap tightly; do not bandage; do not use with a heating pad; avoid eyes/mucous membranes and broken or irritated skin; avoid heat and direct sunlight on the treated area (FDA QUTENZA label, sections 2.1, 2.3, 5.1, 16.3; FDA OTC monograph label, Meijer Capsaicin 0.1% cream, Directions/Warnings sections)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 12.1 Mechanism of Action and section 11 Description, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735 (v14, effective 2026-07-07)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 1 Indications and Usage and 14 Clinical Studies, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Uses section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e (v3, published 2026-11-16)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 4 Contraindications, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings / When using this product sections, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 6 Adverse Reactions (6.1 Clinical Trials Experience, Tables 1-2; 6.2 Postmarketing Experience), setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 2 Dosage and Administration (2.1, 2.2, 2.3), 3 Dosage Forms and Strengths, and 16 How Supplied, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Directions section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 8.4 Pediatric Use, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Directions section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 7 Drug Interactions, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), full label (no interactions listed), setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 5.3 Increase in Blood Pressure, 5.4 Sensory Function, 5.5 Severe Application Site Burns, and 2.1 Important Dosage and Administration Instructions, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section (stop use and ask a doctor), setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 17 Patient Counseling Information, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Directions and Warnings sections, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 5 Warnings and Precautions (5.1-5.5) and section 2.1 Important Dosage and Administration Instructions, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings / When using this product sections, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 5.4 Sensory Function, 5.3 Increase in Blood Pressure, 2.1 (foot examination for DPN), 8.3 Females and Males of Reproductive Potential, and 8.5 Geriatric Use, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 5 Warnings and Precautions (5.1, 5.2, 5.3, 5.5), 6 Adverse Reactions (6.1 and 6.2 Postmarketing Experience), setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 8.1 Pregnancy (Risk Summary; PLR format, no letter category), setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section (pregnancy/breast-feeding statement), setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 8.1 Pregnancy (Risk Summary and Animal Data), setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 8.2 Lactation and 8.1 Pregnancy (Animal Data - milk levels), setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 10 Overdosage, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings section (accidental ingestion), setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 12.3 Pharmacokinetics and section 7 Drug Interactions, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 1, 2.2, 5.2, 12.1, 12.2, 14.1, 14.2, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Warnings and Directions sections, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), section 16 How Supplied / title, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735; FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), title and active ingredient section, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The FDA QUTENZA label (Averitas Pharma Inc, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735) contains no boxed warning; the FDA OTC monograph label for MEIJER CAPSAICIN 0.1% cream (setid 780f5612-0457-400e-92f4-3a5ee53dde6e) contains no boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), sections 2.1 Important Dosage and Administration Instructions, 2.3 Instructions for Use, 5.1 Severe Irritation (skin/eye/respiratory exposure management), 16.3 Handling and Disposal, setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ffbbcb0-ad93-4f15-bb38-5da76a71c735"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA OTC monograph label, MEIJER CAPSAICIN (capsaicin) 0.1% cream (Meijer, Inc.), Directions and Warnings sections, setid 780f5612-0457-400e-92f4-3a5ee53dde6e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780f5612-0457-400e-92f4-3a5ee53dde6e"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing",
+    "food_interactions",
+    "renal_dose_adjustment",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "Scope: this monograph covers BOTH capsaicin product classes, because both are capsaicin: (1) QUTENZA (capsaicin) 8% topical system (Averitas Pharma Inc), a prescription, high-concentration patch indicated in adults for neuropathic pain associated with postherpetic neuralgia (PHN) and diabetic peripheral neuropathy (DPN) of the feet, administered only by healthcare professionals - setid 3ffbbcb0-ad93-4f15-bb38-5da76a71c735, spl_version 14, effective 2026-07-07, verified HTTP 200 at drugInfo.cfm and title matches 'QUTENZA (CAPSAICIN) KIT [AVERITAS PHARMA INC]'; (2) OTC capsaicin 0.1% cream (MEIJER CAPSAICIN, Meijer, Inc.), for temporary relief of minor pain (arthritis, simple backache, muscle strains, sprains, bruises) - setid 780f5612-0457-400e-92f4-3a5ee53dde6e, spl_version 3, published 2026-11-16, verified HTTP 200 and title matches. The monograph is anchored on QUTENZA for all systemic/safety content; OTC-specific content is additive and minimal (OTC labels are terse Drug Facts panels). No other capsaicin-containing DailyMed entries were used (combination products such as lidocaine+capsaicin patches or menthol/camphor/methyl salicylate combinations were rejected as out of scope). adult_dosing is intentionally null with the full narrative regimen carried in fields.dosage.adult (repo convention). The QUTENZA label (PLR format) assigns no letter pregnancy category; pregnancy_category is therefore a narrative Risk Summary statement, not a letter. renal_dose_adjustment and hepatic_dose_adjustment are null: neither label contains any renal or hepatic dosing guidance (the only hepatic mention is the in vitro CYP statement that capsaicin does not inhibit/induce P450 enzymes). food_interactions is null: neither label states anything about food interactions (QUTENZA is topical with negligible systemic absorption; the OTC label is silent on food). black_box_warnings is an empty array; neither label contains a boxed warning. Gaps/limitations: (a) only one OTC exemplar (Meijer 0.1% cream) was used; other OTC capsaicin strengths (0.025%, 0.035%, 0.075%, 0.1%) and patch/roll-on formats exist on DailyMed with materially identical Drug Facts panels but were not individually verified. (b) No EMA SmPC or UK emc source was used because the FDA DailyMed labels were sufficient and authoritative for this US-focused RAG pipeline; a Qutenza EU SmPC check would be a reasonable future addition (EU indication includes additional neuropathic pain uses). (c) Clinical trial efficacy percentages are reported in the label but are summarised only lightly here. (d) The OTC label does not address interactions, pregnancy beyond the one-line statement, or pharmacokinetics; those fields are sourced to QUTENZA only. content_status is needs_review; not for clinical use without pharmacist review."
+}

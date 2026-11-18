@@ -1,0 +1,205 @@
+{
+  "name": "Calcium Gluconate",
+  "existing_id": "5c37ebf6-dfd2-4343-98e8-3ade937500ce",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Intravenous administration of calcium gluconate increases the serum ionized calcium level. Calcium gluconate dissociates into ionized calcium in plasma. Ionized calcium and gluconate are normal constituents of body fluids (FDA label, CALCIUM GLUCONATE INJECTION, Fresenius Kabi USA, LLC, section 12.1 Mechanism of Action).",
+    "indications": [
+      "Calcium Gluconate Injection is indicated for pediatric and adult patients for the treatment of acute symptomatic hypocalcemia (FDA label, section 1 Indications and Usage)",
+      "Limitations of Use: the safety of Calcium Gluconate Injection for long term use has not been established (FDA label, section 1)"
+    ],
+    "contraindications": [
+      "Hypercalcemia (FDA label, section 4 Contraindications)",
+      "Neonates (28 days of age or younger) receiving ceftriaxone (FDA label, section 4 Contraindications)"
+    ],
+    "side_effects": [
+      "Cardiovascular: vasodilation, decreased blood pressure, bradycardia, cardiac arrhythmia, syncope, cardiac arrest (FDA label, section 6 Adverse Reactions)",
+      "Administration site reactions: local soft tissue inflammation, local necrosis, calcinosis cutis and calcification due to extravasation (FDA label, section 6 Adverse Reactions)",
+      "The most common adverse events are local soft tissue inflammation and necrosis, calcinosis cutis and calcification related to extravasation; other adverse events include vasodilation, decreased blood pressure, bradycardia, cardiac arrhythmia, syncope, and cardiac arrest (FDA label, section 6)"
+    ],
+    "dosage": {
+      "adult": "Individualize the dose within the recommended range depending on the severity of symptoms of hypocalcemia, the serum calcium level, and the acuity of onset of hypocalcemia. Bolus: initial dose 1000-2000 mg, with subsequent doses of 1000-2000 mg every 6 hours if needed; dilute to 10-50 mg/mL in 5% dextrose or normal saline and do not exceed a bolus infusion rate of 200 mg/minute. Continuous infusion: initiate at 5.4-21.5 mg/kg/hour, diluted to 5.8-10 mg/mL, adjusting the rate as needed based on serum calcium levels (FDA label, sections 2.1, 2.2 and Table 1 Dosing Recommendations).",
+      "maximum": "For bolus administration, DO NOT exceed an infusion rate of 200 mg/minute in adult patients (100 mg/minute in pediatric patients, including neonates). No fixed maximum total daily dose is stated in the label; adjust continuous infusion rate as needed based on serum calcium levels, and individualize the dose within the recommended range (FDA label, sections 2.1 and 2.2, Table 1)."
+    },
+    "adult_dosing": "Adult: 1000-2000 mg initial dose; subsequent doses 1000-2000 mg every 6 hours if needed; continuous infusion initiate at 5.4-21.5 mg/kg/hour. For bolus administration, do not exceed an infusion rate of 200 mg/minute in adult patients (FDA label, section 2.2 Recommended Dosage, Table 1 Dosing Recommendations in mg of Calcium Gluconate).",
+    "pediatric_dosing": "Neonate (<= 1 month): initial dose 100-200 mg/kg; subsequent doses 100-200 mg/kg every 6 hours if needed; continuous infusion initiate at 17-33 mg/kg/hour. Pediatric (> 1 month to < 17 years): initial dose 29-60 mg/kg; subsequent doses 29-60 mg/kg every 6 hours if needed; continuous infusion initiate at 8-13 mg/kg/hour. Do not exceed a bolus infusion rate of 100 mg/minute in pediatric patients, including neonates. Safety and dosing recommendations in pediatric patients are based on published literature and clinical experience, not adequate and well-controlled clinical studies (FDA label, sections 2.2 Table 1, 8.4 Pediatric Use).",
+    "interactions": [
+      "Cardiac glycosides: cardiac arrhythmias may occur if calcium and cardiac glycosides are administered together; hypercalcemia increases the risk of digoxin toxicity, while digoxin may be therapeutically ineffective in the presence of hypocalcemia; synergistic arrhythmias may occur - avoid administration if possible, and if concomitant therapy is necessary give slowly in small amounts with close ECG monitoring (FDA label, sections 5.1 and 7.1)",
+      "Calcium channel blockers: administration of calcium may reduce the response to calcium channel blockers (FDA label, section 7.2)",
+      "Drugs that may cause hypercalcemia - vitamin D, vitamin A, thiazide diuretics, estrogen, calcipotriene and teriparatide may cause hypercalcemia; monitor plasma calcium concentrations in patients taking these drugs concurrently (FDA label, section 7.3)",
+      "Ceftriaxone: do not mix with Calcium Gluconate Injection; concurrent intravenous use can lead to ceftriaxone-calcium precipitates - contraindicated in neonates 28 days or younger, and in older patients may be administered sequentially only with thorough line flushing between infusions; never via a Y-site simultaneously in any age group (FDA label, sections 2.5, 4, 5.2 and 7)",
+      "Minocycline injection: do not mix - calcium complexes minocycline rendering it inactive (FDA label, section 2.5 Drug Incompatibilities)",
+      "Fluids containing phosphate or bicarbonate: not physically compatible; precipitation may result if mixed (FDA label, sections 2.1 and 2.5)"
+    ],
+    "monitoring": "Measure serum calcium every 4 to 6 hours during intermittent infusions and every 1 to 4 hours during continuous infusion. Monitor patients, vitals and electrocardiograph (ECG) during administration; for continuous infusions monitor patients, vitals, calcium and ECG. In patients with renal impairment, initiate at the lowest dose of the recommended range and monitor serum calcium levels every 4 hours. Monitor plasma calcium concentrations in patients concurrently taking drugs that may cause hypercalcemia (vitamin D, vitamin A, thiazide diuretics, estrogen, calcipotriene, teriparatide). In overdose, symptoms typically develop when total serum calcium concentration is >= 12 mg/dL (FDA label, sections 2.1, 2.2, 2.3, 2.4, 7.3, 8.6 and 10).",
+    "patient_counselling": "Advise the patient of the risks associated with the infusion, including local tissue inflammation, local necrosis and calcinosis cutis (FDA label, section 17 Patient Counseling Information). If extravasation occurs or signs of calcinosis cutis (redness, swelling, induration, papules, plaques or nodules at the site) appear, tell staff immediately so the intravenous administration at that site can be discontinued and treated as needed (FDA label, sections 5.3 and 17).",
+    "warnings": [
+      "Arrhythmias with concomitant cardiac glycoside use: cardiac arrhythmias may occur if calcium and cardiac glycosides are administered together; hypercalcemia increases the risk of digoxin toxicity; avoid Calcium Gluconate Injection in patients receiving cardiac glycosides - if concomitant therapy is necessary, give slowly in small amounts with close ECG monitoring (FDA label, section 5.1)",
+      "End-organ damage due to intravascular ceftriaxone-calcium precipitates: concurrent use of intravenous ceftriaxone may cause life-threatening precipitates; cases of fatal outcomes in neonates have occurred, with crystalline material observed in lungs and kidneys at autopsy; precipitates may act as emboli resulting in vascular spasm or infarction; do not administer simultaneously via a Y-site in any age group; sequential administration only with thorough line flushing (FDA label, section 5.2)",
+      "Tissue necrosis and calcinosis: calcinosis cutis can occur with or without extravasation, characterized by abnormal dermal deposits of calcium salts (papules, plaques or nodules, possibly with erythema, swelling or induration); tissue necrosis, ulceration and secondary infection are the most serious complications; if extravasation occurs or calcinosis cutis is noted, immediately discontinue intravenous administration at that site and treat as needed (FDA label, section 5.3)",
+      "Hypotension, bradycardia, and cardiac arrhythmias with rapid administration: rapid injection may cause vasodilation, decreased blood pressure, bradycardia, cardiac arrhythmias, syncope and cardiac arrest; dilute with 5% dextrose or normal saline and infuse slowly with careful ECG monitoring; if a rapid bolus is required, do not exceed 200 mg/minute in adults and 100 mg/minute in pediatric patients with ECG monitoring (FDA label, section 5.4)",
+      "Aluminum toxicity: this product contains aluminum, up to 512 mcg per liter, that may be toxic; aluminum may reach toxic levels with prolonged parenteral administration if kidney function is impaired; premature neonates are particularly at risk; patients with impaired kidney function, including premature neonates, receiving parenteral aluminum at greater than 4 to 5 mcg/kg/day accumulate aluminum associated with central nervous system and bone toxicity (FDA label, section 5.5)"
+    ],
+    "precautions": [
+      "Renal impairment: initiate at the lowest dose of the recommended dose range for all age groups and monitor serum calcium levels every 4 hours (FDA label, sections 2.4 and 8.6)",
+      "Geriatric use: dose selection should start at the lowest dose of the recommended dose range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy (FDA label, section 8.5)",
+      "Long-term use: the safety of Calcium Gluconate Injection for long term use has not been established (FDA label, section 1 Limitations of Use)",
+      "Pediatric use - aluminum: this product contains up to 512 mcg/L aluminum which may be toxic, particularly for premature neonates due to immature renal function; parenteral aluminum greater than 4 to 5 mcg/kg/day is associated with central nervous system and bone toxicity (FDA label, sections 5.5 and 8.4)",
+      "IV line security: administer via a secure intravenous line to avoid calcinosis cutis and tissue necrosis (FDA label, section 2.1)",
+      "Supersaturated solutions are prone to precipitation; if precipitate is present it may be dissolved by warming the vial to 60 to 80°C with occasional agitation until the solution becomes clear, then shake vigorously and allow to cool to room temperature; use the injection only if clear immediately prior to use (FDA label, section 16 How Supplied/Storage and Handling)"
+    ],
+    "serious_adverse_reactions": [
+      "Cardiac arrhythmias with concomitant cardiac glycoside use (FDA label, sections 5.1 and 6)",
+      "End-organ damage (lung and kidney) due to intravascular ceftriaxone-calcium precipitates, including fatal outcomes in neonates (FDA label, sections 4, 5.2 and 6)",
+      "Tissue necrosis, ulceration and secondary infection associated with extravasation and calcinosis cutis (FDA label, sections 5.3 and 6)",
+      "Hypotension, bradycardia, cardiac arrhythmias, syncope and cardiac arrest with rapid administration (FDA label, sections 5.4 and 6)",
+      "Aluminum toxicity with prolonged parenteral administration in renal impairment, particularly central nervous system and bone toxicity in premature neonates (FDA label, sections 5.5 and 6)"
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "The prescribing information does not assign a pregnancy category letter (it is written in the Pregnancy and Lactation Labeling Rule format). Its Risk Summary states: 'Limited available data with Calcium Gluconate Injection use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes. There are risks to the mother and the fetus associated with hypocalcemia in pregnancy. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively.' (FDA label, section 8.1 Pregnancy)",
+    "pregnancy_guidance": "Risk Summary as above (limited available data, insufficient to inform drug-associated risk of adverse developmental outcomes; risks to mother and fetus associated with hypocalcemia in pregnancy). Clinical Considerations - disease-associated maternal risk: maternal hypocalcemia can result in an increased rate of spontaneous abortion, premature and dysfunctional labor, and possibly preeclampsia. Fetal/neonatal adverse reactions: infants born to mothers with hypocalcemia can have associated fetal and neonatal hyperparathyroidism, which in turn can cause fetal and neonatal skeletal demineralization, subperiosteal bone resorption, osteitis fibrosa cystica and neonatal seizures. Infants born to mothers with hypocalcemia should be carefully monitored for signs of hypocalcemia or hypercalcemia, including neuromuscular irritability, apnea, cyanosis and cardiac rhythm disorders (FDA label, section 8.1 Pregnancy).",
+    "lactation_guidance": "Calcium is present in human milk as a natural component of human milk. It is not known whether intravenous administration of Calcium Gluconate Injection can alter calcium concentration in human milk. There are no data on the effects of Calcium Gluconate Injection on the breastfed infant, or on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for Calcium Gluconate Injection and any potential adverse effects on the breastfed child from the drug or from the underlying maternal condition (FDA label, section 8.2 Lactation).",
+    "overdose": "Overdosage of Calcium Gluconate Injection may result in hypercalcemia. Symptoms of hypercalcemia typically develop when the total serum calcium concentration is >= 12 mg/dL. Neurologic symptoms include depression, weakness, fatigue, and confusion at lower levels, with patients experiencing hallucinations, disorientation, hypotonicity, seizures, and coma. Effects on the kidney include diminished ability to concentrate urine and diuresis. If overdose occurs, immediately discontinue administration and provide supportive treatments to restore intravascular volume as well as promote calcium excretion in the urine if necessary (FDA label, section 10 Overdosage).",
+    "pharmacokinetics": "Absorption: Calcium Gluconate Injection is 100% bioavailable following intravenous injection. Metabolism: calcium itself does not undergo direct metabolism; release of ionized calcium from intravenous calcium gluconate is direct and does not seem to be affected by first pass through the liver. Distribution: calcium in the body is distributed mainly in the skeleton (99%); only 1% of total body calcium is distributed within the extracellular fluids and soft tissues; about 50% of total serum calcium is in the ionized (biologically active) form; 8% to 10% of serum calcium is bound to organic and inorganic acid and approximately 40% is protein-bound (primarily to albumin). Elimination: studies have shown a relationship between urinary calcium excretion and intravenous calcium gluconate, with a significant increase in urinary calcium excretion observed after administration (FDA label, section 12.3 Pharmacokinetics).",
+    "clinical_pearls": [
+      "Each mL contains 100 mg of calcium gluconate, equivalent to 9.3 mg (0.465 mEq) of elemental calcium; contains no antimicrobial agent and is preservative-free (FDA label, sections 2.1, 3 Description and 11)",
+      "Not physically compatible with fluids containing phosphate or bicarbonate (precipitation may result), with ceftriaxone (contraindicated in neonates), or with minocycline injection (calcium complexes minocycline, rendering it inactive) (FDA label, sections 2.5 and 2.1)",
+      "Administer via a secure intravenous line; extravasation can cause calcinosis cutis, tissue necrosis, ulceration and secondary infection (FDA label, sections 2.1 and 5.3)",
+      "Rate limits: do not exceed 200 mg/minute (adults) or 100 mg/minute (pediatric, including neonates) for bolus administration (FDA label, sections 2.1 and 2.2)",
+      "Store at 20 to 25°C; do not freeze; supersaturated solutions are prone to precipitation - if present, warm the vial to 60 to 80°C with occasional agitation until clear, shake vigorously, cool to room temperature, and use only if clear immediately prior to use (FDA label, section 16)",
+      "Pharmacy bulk packages (10,000 mg per 100 mL) are for pharmacy admixture programs only, not for direct infusion; penetrate the closure only once, use within 4 hours of puncture, and each dispensed dose must be used immediately (FDA label, sections 2.6 and 16)",
+      "Initial U.S. approval: 1941 (FDA label, highlights/prescribing information header)"
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "For patients with renal impairment, initiate Calcium Gluconate Injection at the lowest dose of the recommended dose ranges across all age groups and monitor serum calcium levels every 4 hours (FDA label, sections 2.4 Dosage in Renal Impairment and 8.6 Renal Impairment).",
+    "hepatic_dose_adjustment": "Hepatic function does not impact the availability of ionized calcium after calcium gluconate intravenous administration. Dose adjustment in hepatically impaired patients may not be necessary (FDA label, section 8.7 Hepatic Impairment).",
+    "administration_instructions": "Dilute Calcium Gluconate Injection prior to use in 5% dextrose or normal saline. For bolus intravenous administration: dilute the dose to a concentration of 10-50 mg/mL and administer slowly, not exceeding 200 mg/minute in adults or 100 mg/minute in pediatric patients, including neonates; monitor patients, vitals and ECG during administration. For continuous intravenous infusion: dilute to 5.8-10 mg/mL and administer at the rate recommended in Table 1, adjusting as needed based on serum calcium levels; monitor patients, vitals, calcium and ECG. Administer via a secure intravenous line (to avoid calcinosis cutis and tissue necrosis). Inspect visually prior to administration - the solution should appear clear and colorless to slightly yellow; do not administer if particulate matter or discoloration is present; use the diluted solution immediately after preparation. Do not mix with ceftriaxone, with fluids containing bicarbonate or phosphate, or with minocycline injection. Supplied in single-dose vials (1,000 mg/10 mL; 5,000 mg/50 mL) and pharmacy bulk packages (10,000 mg/100 mL, for pharmacy admixture programs only - not for direct infusion; use within 4 hours of closure puncture). Store at 20-25°C; do not freeze; preservative-free; discard unused portion of single-dose vials immediately (FDA label, sections 2.1, 2.2, 2.5, 2.6, 3 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 1 Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 4 Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 6 Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.1 Important Administration Instructions, 2.2 Recommended Dosage and Table 1 Dosing Recommendations",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 2.2 Recommended Dosage, Table 1 Dosing Recommendations in mg of Calcium Gluconate for Neonate, Pediatric, and Adult Patients",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.2 Table 1 and 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.5 Drug Incompatibilities, 5.1, 5.2, 7.1 Cardiac Glycosides, 7.2 Calcium Channel Blockers, 7.3 Drugs that may cause Hypercalcemia",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.1, 2.2, 2.3 Serum Calcium Monitoring, 2.4 Dosage in Renal Impairment, 7.3, 8.6, 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 5.3 Tissue Necrosis and Calcinosis and 17 Patient Counseling Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 5.1, 5.2, 5.3, 5.4 and 5.5 Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 1 Limitations of Use, 2.1, 2.4, 5.5, 8.4, 8.5 Geriatric Use and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 6 Adverse Reactions and sections 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 8.1 Pregnancy (Risk Summary; PLLR format, no category letter assigned)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 8.1 Pregnancy (Risk Summary and Clinical Considerations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 8.2 Lactation (Risk Summary)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 10 Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.1, 2.5, 2.6, 3 Dosage Forms and Strengths, 5.3, 11 Description, 16 How Supplied/Storage and Handling and highlights (Initial U.S. Approval 1941)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 3, 11 and 16 How Supplied/Storage and Handling - the label is an unbranded generic; no proprietary brand name appears anywhere in the prescribing information, so the array is intentionally empty",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, full prescribing information - the label contains no boxed warning anywhere in its sections, so the array is intentionally empty",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.4 Dosage in Renal Impairment and 8.6 Renal Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, section 8.7 Hepatic Impairment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed, CALCIUM GLUCONATE INJECTION, SOLUTION (Fresenius Kabi USA, LLC), setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, sections 2.1, 2.2, 2.5, 2.6, 3 and 16 How Supplied/Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b77c3d2-992d-4261-8421-9cfd07328fbf"
+    }
+  ],
+  "unsourced_fields": [
+    "food_interactions"
+  ],
+  "notes": "PRODUCT SCOPE / TRUTH IN LABELING: This monograph is sourced from a single US FDA DailyMed prescribing information document: CALCIUM GLUCONATE INJECTION, SOLUTION [FRESENIUS KABI USA, LLC] (setid 8b77c3d2-992d-4261-8421-9cfd07328fbf, spl_version 7, published Jun 04 2026; drugInfo.cfm URL verified HTTP 200 and label title confirmed to match). It covers ONLY the intravenous injection for acute symptomatic hypocalcemia in pediatric and adult patients. It does NOT cover: (a) hydrofluoric acid burns - no FDA DailyMed calcium gluconate injection label reviewed lists this as an indication; that use is off-label/not labeled and is deliberately NOT presented as an indication here; (b) cardiac resuscitation / hyperkalemia / calcium channel blocker overdose / beta-blocker overdose - likewise NOT labeled indications in this document and deliberately omitted; (c) oral calcium gluconate for hypocalcemia supplementation - no US OTC mono-product oral calcium gluconate tablet label exists in the DailyMed search results (only combination vitamin/mineral products containing calcium carbonate or ferrous gluconate); oral use is therefore unsourced and out of scope for this draft. OTHER TRAPS / NOTES: (1) Ceftriaxone + calcium-containing IVs are contraindicated in neonates <= 28 days (fatal precipitates); in patients > 28 days only sequential administration with thorough line flushing, never simultaneous Y-site. This label is NOT interchangeable with calcium chloride. (2) The label assigns no pregnancy category letter (PLLR format); pregnancy_category is a narrative statement, not a letter grade. (3) No boxed warning exists; black_box_warnings is [] by documented absence. (4) No proprietary brand name exists; brand_names is [] by documented absence. (5) food_interactions is null because the label (an IV-only product) contains no food-interaction information anywhere; it is listed in unsourced_fields. (6) Pediatric dosing is based on published literature and clinical experience, not adequate and well-controlled clinical studies (section 8.4). (7) Pharmacy bulk packages are NOT for direct infusion. (8) Maximum bolus rate is 200 mg/min adults / 100 mg/min pediatric; no maximum total daily dose is stated in the label - do not invent one. (9) Initial U.S. Approval: 1941. (10) Existing_id intentionally empty string per task; content_status needs_review; cached label text saved at /home/ishi/.cache/clinova/labels/8b77c3d2-992d-4261-8421-9cfd07328fbf.txt. OTHER CANDIDATE LABELS (not used, injection equivalents): Henry Schein 3cbf6bf7-2415-4435-b3df-41855514a05d, WG Critical Care 16307c00-d0d5-4e05-821f-17b0c1a29fc9 / 0deed071-d89d-420e-b4b4-797dce0ad8f0 / e6d531ec-fcdc-49f6-b0c4-878d3952827f, Amneal 787603c6-3f50-473a-8e3b-71dcf6d86964 / 13d7cfc9-ff7a-437e-8c21-d9709ac07d48, Glenmark b2470072-f443-4596-ae33-1b8b0d05bc9d, Caplin Steriles f28e9871-d546-4b48-ac3d-aead0d4c0449. GAPS: oral supplementation dosing, HF burn protocols, arrest/hyperkalemia dosing, food interactions, and any brand-name products remain unsourced pending review."
+}

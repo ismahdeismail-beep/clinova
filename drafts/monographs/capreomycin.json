@@ -1,0 +1,220 @@
+{
+  "name": "Capreomycin",
+  "existing_id": "25e24939-e8a5-465f-90ef-a1f6bfcd44f2",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": null,
+    "indications": [
+      "Treatment (in combination with other appropriate antituberculous agents) of pulmonary infections caused by capreomycin-susceptible strains of Mycobacterium tuberculosis when primary agents (isoniazid, rifampicin, streptomycin and ethambutol) have been ineffective or cannot be used because of toxicity or the presence of resistant tubercle bacilli.",
+      "Capreomycin is active against human strains of Mycobacterium tuberculosis; frequent cross-resistance occurs with viomycin and varying degrees of cross-resistance with kanamycin and neomycin; no cross-resistance observed with isoniazid, aminosalicylic acid, cycloserine, streptomycin, ethionamide or ethambutol."
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance (capreomycin)."
+    ],
+    "side_effects": [
+      "Renal: elevation of serum creatinine or blood urea and abnormal urine sediment; toxic nephritis (one fatal case reported with capreomycin plus aminosalicylic acid); electrolyte disturbances resembling Bartter's syndrome.",
+      "Hepatic: decreased bromsulphthalein excretion without change in serum enzymes in pre-existing liver disease; abnormal liver function tests (periodic determinations recommended).",
+      "Haematological: leucocytosis and leucopenia; rare thrombocytopenia; eosinophilia exceeding 5% in most patients on daily dosing (subsided when dose reduced to 2–3 times weekly).",
+      "Hypersensitivity: urticaria and maculopapular rashes, in some cases with febrile reactions, when given concomitantly with other antituberculous drugs.",
+      "Otic: clinical and subclinical auditory loss (some audiometric changes reversible, others with permanent loss but not progressive after withdrawal); tinnitus and vertigo.",
+      "Injection site: pain and induration; excessive bleeding and sterile abscesses."
+    ],
+    "dosage": {
+      "adult": "1 g daily by deep intramuscular injection only for 60 to 120 days, followed by 1 g intramuscularly two or three times a week. Capreomycin is always administered in combination with at least one other antituberculous agent to which the patient's strain of tubercle bacillus is susceptible.",
+      "maximum": "20 mg/kg/day should not be exceeded (usual daily dose 1 g)."
+    },
+    "adult_dosing": "The usual dose is 1 g daily (20 mg/kg/day should not be exceeded), given by deep intramuscular injection only for 60–120 days, followed by 1 g intramuscularly two or three times a week. Always given with at least one other antituberculous agent to which the organism is susceptible. The elderly: as for adults, but reduce dosage if renal function is impaired.",
+    "pediatric_dosing": "Not for paediatric use — the safety of capreomycin for use in infants and children has not been established. No data are available.",
+    "interactions": [
+      "Simultaneous administration with other antituberculous drugs that also have ototoxic and nephrotoxic potential (e.g. streptomycin, viomycin) is not recommended.",
+      "Use with other ototoxic or nephrotoxic drugs not given for tuberculosis (e.g. polymyxin, colistin sulphate, amikacin, gentamicin, tobramycin, vancomycin, kanamycin and neomycin) should be undertaken only with great caution."
+    ],
+    "monitoring": "Audiometry and assessment of vestibular function before starting treatment and at regular intervals during treatment (capreomycin is potentially ototoxic). Regular tests of renal function throughout treatment; reduced dosage in known or suspected renal impairment. Serum potassium levels determined frequently (hypokalaemia may occur). Periodic liver function determinations are recommended, as abnormal liver function tests have occurred in many patients on combination antituberculous therapy. Full blood count/eosinophilia: most patients on daily dosing have eosinophilia >5%, subsiding on reduced dosing frequency. If overdose is suspected: monitor fluid balance, electrolytes and creatinine clearance.",
+    "patient_counselling": "Capreomycin is always given by injection into a deep muscle, never alone, always with other tuberculosis medicines. Tell your doctor before treatment if you have kidney problems or hearing loss or a history of allergy (particularly to drugs). You will need regular hearing tests, urine/kidney tests and blood tests (including potassium) during treatment. Report any ringing in the ears, hearing loss, dizziness or vertigo, injection-site pain or swelling, or signs of allergic reaction. Do not use during pregnancy unless your doctor judges the benefit justifies the risk; tell your doctor if you are breast-feeding, as it is not known whether capreomycin passes into breast milk. Do not expect relief from swallowing the medicine — it is not absorbed from the gut if ingested.",
+    "warnings": [
+      "Use in renal insufficiency or pre-existing auditory impairment must be undertaken with great caution; the risk of additional eighth cranial nerve impairment or renal injury must be weighed against the benefits.",
+      "Capreomycin must be used only in conjunction with adequate doses of other antituberculous drugs — use alone allows rapid development of resistant strains.",
+      "Potentially ototoxic — audiometry and vestibular assessment required before and at regular intervals during treatment.",
+      "Potentially nephrotoxic — renal function tests regularly throughout treatment.",
+      "Hypokalaemia may occur — serum potassium should be determined frequently.",
+      "Use caution in combination with other ototoxic/nephrotoxic agents (see Interactions)."
+    ],
+    "precautions": [
+      "Reduce dosage in patients with known or suspected renal impairment according to creatinine clearance (see renal_dose_adjustment).",
+      "A partial neuromuscular block can occur after large doses of capreomycin.",
+      "Administer cautiously to patients with a history of allergy, particularly to drugs.",
+      "Capreomycin is given by deep intramuscular injection only; neuromuscular blockade or respiratory paralysis may occur following rapid intravenous administration (overdose section).",
+      "Reconstituted solution may darken (pale straw colour) without loss of potency or toxicity; store below 25°C and use within 24 hours, discarding unused portion."
+    ],
+    "serious_adverse_reactions": [
+      "Toxic nephritis progressing to renal insufficiency, oliguria and death (one reported case with capreomycin 1 g plus aminosalicylic acid daily for one month; post-mortem showed subsiding acute tubular necrosis).",
+      "Electrolyte disturbances resembling Bartter's syndrome (also reported in overdose with hypokalaemia, hypocalcaemia, hypomagnesaemia).",
+      "Ototoxicity — auditory loss, in some cases permanent (not progressive after withdrawal); tinnitus and vertigo.",
+      "Neuromuscular blockade or respiratory paralysis following rapid intravenous administration/large doses (partial neuromuscular block possible after large doses).",
+      "Rare thrombocytopenia; leucopenia.",
+      "Sterile abscesses and excessive bleeding at injection sites."
+    ],
+    "food_interactions": null,
+    "pregnancy_category": "The safety of capreomycin for use during pregnancy has not been established. Capreomycin has been shown to be teratogenic in rats when given at 3.5 times the human dose. There are no adequate and well controlled studies in pregnant women. Capreomycin should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+    "pregnancy_guidance": "Use during pregnancy only if the potential benefit justifies the potential risk to the fetus; safety in pregnancy has not been established and teratogenicity was seen in rats at 3.5 times the human dose. Fertility: studies have not been performed to determine potential for carcinogenicity, mutagenicity, or impairment of fertility.",
+    "lactation_guidance": "It is not known whether capreomycin is excreted in human milk. Caution should be exercised when administering to a nursing woman.",
+    "overdose": "Signs/symptoms: hypokalaemia, hypocalcaemia, hypomagnesaemia and an electrolyte disturbance resembling Bartter's syndrome; nephrotoxicity including acute tubular necrosis; ototoxicity including dizziness, tinnitus, vertigo and loss of high-tone acuity; neuromuscular blockade or respiratory paralysis may occur following rapid intravenous administration. If ingested, toxicity is unlikely (<1% absorbed from an intact gastrointestinal tract). Treatment: symptomatic and supportive therapy; activated charcoal may be more effective than emesis or lavage. Patients with normal renal function should be hydrated to maintain urine output of 3–5 ml/kg/hr, with fluid balance, electrolytes and creatinine clearance monitored. Haemodialysis is effective in patients with significant renal disease.",
+    "pharmacokinetics": "Capreomycin sulphate is not significantly absorbed from the gastrointestinal tract and must be administered parenterally. Following intramuscular injection of 1 g, peak serum concentrations of 20–50 micrograms/ml are achieved after 1–2 hours. Serum concentrations are low at 24 hours; daily 1 g injections for 30 days produced no significant accumulation in subjects with normal renal function. Capreomycin is excreted in the urine essentially unaltered; approximately 50% of a 1 g intramuscular dose is excreted within 12 hours. Renal impairment prolongs half-life markedly (e.g. ~5.2 h at CrCl 110 ml/min to ~55.5 h at CrCl 0, per SmPC dosing table).",
+    "clinical_pearls": [
+      "Always use capreomycin in combination with at least one other antituberculous agent to which the organism is susceptible — never as monotherapy (rapid resistance otherwise).",
+      "Second-line injectable reserved for pulmonary TB caused by capreomycin-susceptible strains when first-line agents (isoniazid, rifampicin, streptomycin, ethambutol) are ineffective or cannot be used.",
+      "Deep intramuscular injection only — do not give intravenously (neuromuscular blockade/respiratory paralysis risk with rapid IV administration).",
+      "Signature toxicities are nephrotoxicity and ototoxicity — baseline and periodic audiometry, vestibular assessment, renal function and serum potassium are mandatory.",
+      "Cross-resistance: frequent with viomycin; varying degrees with kanamycin and neomycin; none observed with isoniazid, aminosalicylic acid, cycloserine, streptomycin, ethionamide or ethambutol.",
+      "Hypokalaemia and Bartter's-like electrolyte wasting can occur — check potassium frequently, especially with prolonged therapy.",
+      "<1% absorbed orally — ingestion is unlikely to cause toxicity; activated charcoal preferred over emesis/lavage if it happens.",
+      "Solution may develop a pale straw colour that darkens with time — this is not associated with loss of potency or increased toxicity.",
+      "Reconstituted solutions may be stored below 25°C for 24 hours; discard unused portion."
+    ],
+    "brand_names": [
+      "Capreomycin Injection"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Reduce dosage based on creatinine clearance to achieve a mean steady-state capreomycin level of 10 micrograms/ml. SmPC table (dose in mg/kg): CrCl 0 ml/min — 1.29 mg/kg/24h, 2.56 q48h, 3.87 q72h; CrCl 10 — 2.43 / 4.87 / 7.30; CrCl 20 — 3.58 / 7.15 / 10.70; CrCl 30 — 4.72 / 9.45 / 14.20; CrCl 40 — 5.87 / 11.70 (q72h not given); CrCl 50 — 7.01 / 14.00; CrCl 60 — 8.16 (24h only); CrCl 80 — 10.40; CrCl 100 — 12.70; CrCl 110 — 13.90 (24h only). Accompanying half-lives range from ~5.2 h (CrCl 110) to ~55.5 h (CrCl 0). Elderly: reduce dosage if renal function is impaired. Haemodialysis is effective in significant renal disease (overdose).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Powder for solution for injection; each vial contains capreomycin sulphate approximately equivalent to 1 g capreomycin base. Dissolve in 2 ml of 0.9% Sodium Chloride Intravenous Infusion BP or Water for Injections PhEur; allow 2–3 minutes for complete solution. For a 1 g dose give the entire contents of the vial; for doses <1 g use the SmPC dilution table (e.g. 2.15 ml diluent → 2.85 ml solution ≈ 370 mg/ml; 2.63 ml → 3.33 ml ≈ 315 mg/ml; 3.3 ml → 4.0 ml ≈ 260 mg/ml; 4.3 ml → 5.0 ml ≈ 210 mg/ml). Give by deep intramuscular injection only. Store below 25°C; reconstituted solutions may be stored below 25°C for 24 hours — discard unused portion. No excipients. Solution darkening to pale straw colour is not a sign of lost potency."
+  },
+  "sources": [
+    {
+      "field": "indications",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.1 (Therapeutic indications), 5.1 (Pharmacodynamic properties)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "UK emc SmPC — Capreomycin Injection (King Pharmaceuticals Ltd, PL 14385/0006, text revised 19/11/2015; archived 2020-08-10) — section 4.1",
+      "url": "https://web.archive.org/web/20200810163948/https://www.medicines.org.uk/emc/product/6192/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.3 (Contraindications)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.8 (Undesirable effects)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "UK emc SmPC — Capreomycin Injection (King Pharmaceuticals Ltd, PL 14385/0006, text revised 19/11/2015; archived 2020-08-10) — section 4.8",
+      "url": "https://web.archive.org/web/20200810163948/https://www.medicines.org.uk/emc/product/6192/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.2 (Posology and method of administration)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "UK emc SmPC — Capreomycin Injection (King Pharmaceuticals Ltd, PL 14385/0006, text revised 19/11/2015; archived 2020-08-10) — section 4.2",
+      "url": "https://web.archive.org/web/20200810163948/https://www.medicines.org.uk/emc/product/6192/smpc"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.2",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.2 (Paediatric population)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.5 (Interaction with other medicinal products and other forms of interaction)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "UK emc SmPC — Capreomycin Injection (King Pharmaceuticals Ltd, PL 14385/0006, text revised 19/11/2015; archived 2020-08-10) — section 4.5",
+      "url": "https://web.archive.org/web/20200810163948/https://www.medicines.org.uk/emc/product/6192/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.4 (Special warnings and precautions for use), 4.8 (Hepatic), 4.9 (Overdose)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.1, 4.2, 4.4, 4.6, 4.8, 4.9",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.4 (Warnings and Precautions)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.2, 4.4, 4.9, 6.3, 6.6",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.4, 4.8, 4.9",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.6 (Pregnancy)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.6 (Pregnancy, Fertility)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.6 (Breast-feeding)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.9 (Overdose)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 5.2 (Pharmacokinetic properties), 4.2 (renal dosing table)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 4.1, 4.2, 4.4, 4.5, 4.8, 4.9, 6.3, 6.6",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 1 (Name of the medicinal product); formerly marketed by King Pharmaceuticals Ltd (PL 14385/0006)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — SmPC contains no boxed/black-box warning; warnings are carried in sections 4.4 and 4.8 (nephrotoxicity, ototoxicity, hypokalaemia)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — section 4.2 (Patients with reduced renal function)",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "UK emc SmPC — Capreomycin Injection (Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021, emc page last updated 25 Oct 2022; archived 2025-10-17) — sections 2, 3, 4.2, 6.1–6.6",
+      "url": "https://web.archive.org/web/20251017104135/https://www.medicines.org.uk/emc/product/14187/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "mechanism_of_action",
+    "food_interactions",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "Product scope: capreomycin sulfate 1 g powder for injection (as capreomycin base), second-line injectable antimycobacterial (ATC J04AB30) for pulmonary TB caused by susceptible M. tuberculosis when first-line agents fail or cannot be used. No DailyMed label exists: the DailyMed v2 API returns total_elements=0 for drug_name=capreomycin / capreomycin sulfate / Capastat (checked 2026-11-18), and the DailyMed website search reports 0 results — capreomycin appears to be unmarketed in the US (Capastat discontinued). UK emc likewise lists 0 current products for capreomycin sulfate; the two archived SmPCs used here are: (1) Capreomycin Injection, Neon Healthcare Ltd, PL 45043/0108, text revised 12/10/2021 (emc product 14187, archived 2025-10-17) — primary source; (2) Capreomycin Injection, King Pharmaceuticals Ltd, PL 14385/0006, text revised 19/11/2015 (emc product 6192, archived 2020-08-10) — corroborating, content essentially identical. setids: none — no DailyMed SPL setids exist for capreomycin; do not fabricate any. All field content traces to the two emc SmPCs above. Gaps / null fields: mechanism_of_action (SmPC gives PD activity/ATC class but no molecular mechanism), food_interactions (parenteral drug, not absorbed orally; no food interaction data in label), hepatic_dose_adjustment (no hepatic dosing guidance in label; only recommendation is periodic liver function determinations). black_box_warnings is [] because the SmPC carries no boxed warning (warnings live in SmPC sections 4.4/4.8) — this is an absence of a labelled boxed warning, not a verified FDA black-box status. Traps: (1) SmPC states deep IM injection ONLY, yet the overdose section references harm from rapid IV administration — do not conflate routes. (2) The renal dosing table's 72h column has no value at CrCl >= 40 ml/min; q24h dosing extends to CrCl 40–50 range per table (values as printed). (3) Paediatric use: explicitly 'Not for paediatric use... No data are available' — do not extrapolate adult mg/kg dosing. (4) Marketing authorisations appear lapsed/discontinued (emc shows 0 current products; archived pages) — verify current availability and any national formulary guidance before clinical use; content needs clinical review. (5) Overdose mentions Bartter's-like electrolyte disturbance — monitoring of potassium/magnesium/calcium is label-mandated. (6) Pregnancy: teratogenic in rats at 3.5x human dose; benefit-risk only."
+}

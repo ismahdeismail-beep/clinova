@@ -20,11 +20,14 @@ count=$(curl -s -o /dev/null -D - --max-time 8 \
   -H "Range: 0-0" 2>/dev/null |
   tr -d '\r' | awk -F'/' '/^content-range:/ {print $2}')
 
-docs=$(curl -s --max-time 8 \
-  "${SUPABASE_URL}/rest/v1/knowledge_chunks?select=source_ref" \
-  -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
-  -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
-  -H "Range: 0-9999" 2>/dev/null | grep -o '"source_ref":"[^"]*"' | sort -u | wc -l)
+# Distinct documents needs a real aggregate: PostgREST caps row reads at 1000,
+# which silently under-counts once the table grows.
+docs=$(curl -s --max-time 10 \
+  "https://api.supabase.com/v1/projects/${SUPABASE_PROJECT_REF}/database/query" \
+  -H "Authorization: Bearer ${SUPABASE_ACCESS_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d '{"query":"select count(distinct source_ref)::int as n from knowledge_chunks"}' 2>/dev/null |
+  grep -o '"n":[0-9]*' | cut -d: -f2)
 
 count=${count:-0}
 docs=${docs:-0}

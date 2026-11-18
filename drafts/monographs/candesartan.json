@@ -1,0 +1,228 @@
+{
+  "name": "Candesartan",
+  "existing_id": "c6fc2c1f-da78-41b1-a8df-c1c51734a8d9",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Candesartan cilexetil is a prodrug that is rapidly and completely bioactivated by ester hydrolysis during absorption from the gastrointestinal tract to candesartan, a selective AT1 subtype angiotensin II receptor antagonist. Candesartan blocks the vasoconstrictor and aldosterone-secreting effects of angiotensin II by selectively blocking the binding of angiotensin II to the AT1 receptor in many tissues, such as vascular smooth muscle and the adrenal gland; its action is therefore independent of the pathways for angiotensin II synthesis. Candesartan has >10,000-fold greater affinity for the AT1 receptor than for the AT2 receptor, does not inhibit ACE (kininase II) and does not affect the response to bradykinin, and does not bind to or block other hormone receptors or ion channels important in cardiovascular regulation.",
+    "indications": [
+      "Treatment of hypertension in adults and children 1 to <17 years of age, to lower blood pressure (lowering blood pressure reduces the risk of fatal and non-fatal cardiovascular events, primarily strokes and myocardial infarctions)",
+      "Treatment of heart failure (NYHA class II-IV) in adults with left ventricular systolic dysfunction (ejection fraction ≤ 40%) to reduce cardiovascular death and heart failure hospitalizations"
+    ],
+    "contraindications": [
+      "Known hypersensitivity to candesartan (or product components)",
+      "Do not co-administer aliskiren with ATACAND in patients with diabetes"
+    ],
+    "side_effects": [
+      "Back pain (3% vs 2% placebo)",
+      "Dizziness (4% vs 3% placebo)",
+      "Upper respiratory tract infection (6% vs 4% placebo)",
+      "Pharyngitis (2% vs 1% placebo)",
+      "Rhinitis (2% vs 1% placebo)",
+      "Headache (most common reason for discontinuation in hypertension trials, 0.6%)",
+      "Hypotension (18.8% on candesartan vs 9.8% placebo in the CHARM heart failure program; 22.6% vs 13.8% when added to ACE inhibitor in CHARM-Added)",
+      "Abnormal renal function / increased creatinine (12.5% vs 6.3% placebo in CHARM; leading to discontinuation 6.3% vs 2.9%)",
+      "Hyperkalemia (6.3% vs 2.1% placebo in CHARM; 2.4% leading to discontinuation vs 0.6%)",
+      "Postmarketing (very rare): abnormal hepatic function, hepatitis, neutropenia, leukopenia, agranulocytosis, angioedema, hyperkalemia, hyponatremia, cough, pruritus, rash, urticaria",
+      "Rare reports of rhabdomyolysis in patients receiving angiotensin II receptor blockers",
+      "Pediatric hypertension: worsening renal disease in 1 of 93 children age 1 to <6 and 3 of 240 children age 6 to <17 in clinical studies"
+    ],
+    "dosage": {
+      "adult": "Hypertension: usual recommended starting dose 16 mg once daily when used as monotherapy in patients who are not volume depleted; may be given once or twice daily with total daily doses of 8 to 32 mg. Heart failure: recommended initial dose 4 mg once daily, doubled at approximately 2-week intervals, as tolerated, to a target of 32 mg once daily.",
+      "maximum": "32 mg per day (larger doses do not appear to have a greater effect; little experience with higher doses)"
+    },
+    "adult_dosing": "Hypertension: dosage must be individualized; blood pressure response is dose related over 2 to 32 mg. Start 16 mg once daily (monotherapy, not volume depleted); total daily dose 8 to 32 mg given once or twice daily. Most antihypertensive effect present within 2 weeks; maximal reduction generally within 4 to 6 weeks. If blood pressure is not controlled by ATACAND alone, a diuretic may be added; may be administered with other antihypertensive agents. Heart failure (NYHA II-IV, LVEF ≤40%): start 4 mg once daily; double the dose at approximately 2-week intervals as tolerated to a target of 32 mg once daily.",
+    "pediatric_dosing": "Hypertension 1 to <17 years of age (may be given once daily or divided into two equal doses; adjust per blood pressure response). Children 1 to <6 years: dose range 0.05 to 0.4 mg/kg per day; recommended starting dose 0.20 mg/kg (oral suspension). Children 6 to <17 years and <50 kg: dose range 2 to 16 mg per day; recommended starting dose 4 to 8 mg. Children 6 to <17 years and >50 kg: dose range 4 to 32 mg per day; recommended starting dose 8 to 16 mg. Doses above 0.4 mg/kg (1 to <6 years) or 32 mg (6 to <17 years) have not been studied. Children <1 year of age must not receive ATACAND for hypertension. Pediatric patients with GFR <30 mL/min/1.73 m2 should not receive ATACAND (not studied). For children who cannot swallow tablets, an oral suspension (0.1 to 2.0 mg/mL; typically 1 mg/mL) may be prepared from tablets.",
+    "interactions": [
+      "Agents increasing serum potassium (potassium-sparing diuretics, potassium supplements, potassium-containing salt substitutes, or other drugs that raise serum potassium): may result in hyperkalemia; monitor serum potassium",
+      "Lithium: increases in serum lithium concentrations and toxicity reported with concomitant angiotensin II receptor antagonists; monitor serum lithium levels",
+      "NSAIDs including selective COX-2 inhibitors: in elderly, volume-depleted, or renally compromised patients, co-administration may deteriorate renal function including possible acute renal failure (usually reversible); antihypertensive effect may be attenuated; monitor renal function periodically",
+      "Combined/dual blockade of the renin-angiotensin system (ARB + ACE inhibitor, or aliskiren): increased risk of hypotension, hyperkalemia, and changes in renal function (including acute renal failure) compared to monotherapy; triple combination of ATACAND with an ACE inhibitor and a mineralocorticoid receptor antagonist is generally not recommended",
+      "Aliskiren: do not co-administer with ATACAND in patients with diabetes; avoid use of aliskiren with ATACAND in patients with renal impairment (GFR <60 mL/min)"
+    ],
+    "monitoring": "Monitor blood pressure during dose escalation and periodically thereafter (symptomatic hypotension most likely in volume/salt-depleted patients). Monitor renal function periodically (changes in renal function including acute renal failure can be caused by drugs that inhibit the renin-angiotensin system). Monitor serum potassium periodically (drugs inhibiting the RAS can cause hyperkalemia, especially with concomitant potassium-raising drugs or in heart failure). Monitor serum lithium levels in patients taking lithium. Closely monitor blood pressure, renal function and electrolytes in patients on ATACAND plus other agents affecting the RAS. Correct volume and/or salt depletion before initiating therapy.",
+    "patient_counselling": "Read the FDA-approved Patient Information. Advise female patients of childbearing potential about the consequences of exposure during pregnancy and to discuss treatment options when planning pregnancy; tell patients to report pregnancies as soon as possible. Take exactly as prescribed; do not change dose or stop without talking to the doctor, even if feeling well. May be taken with or without food. If a dose is missed, take as soon as remembered; if almost time for the next dose, skip the missed dose — do not take two doses at once. If the child cannot swallow tablets, a pharmacist can prepare a liquid suspension; shake well before each dose. May cause dizziness or tiredness — do not drive or operate machinery until the effect is known. If dizzy or faint, lie down and call the doctor. Avoid potassium supplements and salt substitutes unless the doctor advises. Store tablets at 20-25°C (excursions 15-30°C), keep container tightly closed; do not freeze the suspension; use the suspension within 30 days after first opening. Report side effects to the prescriber or FDA (1-800-FDA-1088).",
+    "warnings": [
+      "FETAL TOXICITY (boxed warning): ATACAND can cause fetal harm when administered to a pregnant woman. Use of drugs acting on the renin-angiotensin system during the second and third trimesters reduces fetal renal function and increases fetal and neonatal morbidity and death. When pregnancy is detected, discontinue ATACAND as soon as possible",
+      "Morbidity in infants: children <1 year of age must not receive ATACAND for hypertension; drugs acting directly on the RAS can affect development of immature kidneys",
+      "Hypotension: symptomatic hypotension can occur, most likely in patients volume and/or salt depleted (prolonged diuretic therapy, dietary salt restriction, dialysis, diarrhea, vomiting); correct depletion before initiating; monitor blood pressure during dose escalation and periodically; hypotension may occur during major surgery and anesthesia and may rarely be severe enough to warrant IV fluids and/or vasopressors",
+      "Impaired renal function: changes in renal function including acute renal failure can be caused by drugs that inhibit the RAS; patients whose renal function depends on RAS activity (renal artery stenosis, chronic kidney disease, severe heart failure, volume depletion) are at particular risk of oliguria, progressive azotemia or acute renal failure; consider withholding or discontinuing in patients who develop clinically significant decreases in renal function",
+      "Hyperkalemia: drugs that inhibit the RAS can cause hyperkalemia; concomitant use with drugs that increase potassium levels may increase the risk; monitor serum potassium periodically"
+    ],
+    "precautions": [
+      "Volume and/or salt depletion should be corrected before initiating ATACAND; patients with possible intravascular volume depletion (e.g., on diuretics, particularly with impaired renal function) should start under close medical supervision, possibly at a lower dose",
+      "Symptomatic hypotension may require temporary dose reduction of ATACAND, the diuretic, or both, plus volume repletion",
+      "Renal artery stenosis, chronic kidney disease, severe heart failure, or volume depletion: increased risk of oliguria, progressive azotemia, or acute renal failure; monitor renal function periodically",
+      "Moderate hepatic insufficiency: initiate with 8 mg; dosing recommendations cannot be provided for severe hepatic insufficiency",
+      "Major surgery/anesthesia: hypotension may occur due to RAS blockade; may rarely warrant intravenous fluids and/or vasopressors",
+      "Pediatric patients with GFR <30 mL/min/1.73 m2 and children <1 year of age should not receive ATACAND (not studied / contraindicated by label warning)",
+      "Heart failure: closely monitor potassium and renal function when combined with ACE inhibitors or mineralocorticoid receptor antagonists (triple combination generally not recommended)"
+    ],
+    "serious_adverse_reactions": [
+      "Fetal harm / fetal and neonatal morbidity and death (second and third trimester exposure): oligohydramnios, fetal lung hypoplasia, skeletal deformations including skull hypoplasia, anuria, hypotension, renal failure, death",
+      "Angioedema (postmarketing, very rare)",
+      "Acute renal failure / clinically significant decrease in renal function",
+      "Severe symptomatic hypotension (including during major surgery/anesthesia)",
+      "Hyperkalemia (in CHARM, 2.4% discontinued for hyperkalemia vs 0.6% on placebo)",
+      "Abnormal hepatic function and hepatitis (postmarketing, very rare)",
+      "Neutropenia, leukopenia, agranulocytosis (postmarketing, very rare)",
+      "Rhabdomyolysis (rare reports in patients receiving angiotensin II receptor blockers)"
+    ],
+    "food_interactions": [
+      "ATACAND may be administered with or without food",
+      "Food with a high fat content does not affect the bioavailability of candesartan after candesartan cilexetil administration"
+    ],
+    "pregnancy_category": "ATACAND can cause fetal harm when administered to a pregnant woman. Use of drugs that act on the renin-angiotensin system during the second and third trimesters of pregnancy reduces fetal renal function and increases fetal and neonatal morbidity and death. When pregnancy is detected, ATACAND should be discontinued as soon as possible. Most epidemiologic studies examining fetal abnormalities after first-trimester exposure to antihypertensives have not distinguished RAS-acting drugs from other antihypertensive agents. (The current US label uses narrative PLLR labeling rather than a letter category.)",
+    "pregnancy_guidance": "When pregnancy is detected, discontinue ATACAND as soon as possible. Second- and third-trimester exposure reduces fetal renal function and can cause oligohydramnios, fetal lung hypoplasia, skeletal deformations (including skull hypoplasia), anuria, hypotension, renal failure and death. In the unusual case with no appropriate alternative, apprise the mother of fetal risk and perform serial ultrasound examinations to assess the intra-amniotic environment; oligohydramnios may not appear until after the fetus has sustained irreversible injury — if observed, consider alternative drug treatment. Closely observe infants with in utero exposure for hypotension, oliguria, hyperkalemia or other renal impairment symptoms; if oliguria or hypotension occurs, support blood pressure and renal perfusion (exchange transfusion or dialysis may be required to reverse hypotension and replace renal function). Pregnant women with hypertension or heart failure should be carefully monitored; heart failure may worsen with pregnancy and may lead to maternal death.",
+    "lactation_guidance": "It is not known whether candesartan is excreted in human milk, but candesartan has been shown to be present in rat milk. Because of the potential for serious adverse reactions in breastfed infants, breastfeeding is not recommended during treatment with ATACAND; either nursing or the drug should be discontinued.",
+    "overdose": "No lethality was observed in acute toxicity studies in mice, rats, and dogs given single oral doses up to 2000 mg/kg of candesartan cilexetil. The most likely manifestation of overdosage is hypotension, dizziness, and tachycardia; bradycardia could occur from parasympathetic (vagal) stimulation. If symptomatic hypotension occurs, institute supportive treatment. Candesartan cannot be removed by hemodialysis. To obtain up-to-date information about treatment of overdose, consult a Regional Poison Control Center. In managing overdose, consider the possibilities of multiple-drug overdoses, drug-drug interactions, and altered pharmacokinetics.",
+    "pharmacokinetics": "Candesartan cilexetil is rapidly and completely bioactivated by ester hydrolysis during GI absorption to candesartan; it undergoes minor hepatic metabolism by O-deethylation to an inactive metabolite and is mainly excreted unchanged in urine and feces (via bile). Absolute bioavailability of candesartan is estimated at 15%; peak serum concentration is reached 3 to 4 hours after tablet ingestion. Volume of distribution 0.13 L/kg; highly bound to plasma proteins (>99%); protein binding constant across the therapeutic range; crosses the blood-brain barrier poorly if at all (rats) and passes the placental barrier. Total plasma clearance 0.37 mL/min/kg with renal clearance 0.19 mL/min/kg; about 26% of an oral dose is excreted unchanged in urine (approximately 33% of radioactivity in urine and 67% in feces after oral 14C-candesartan cilexetil). Elimination half-life approximately 9 hours; pharmacokinetics linear for oral doses up to 32 mg; no accumulation in serum with once-daily dosing. Not significantly metabolized by the cytochrome P450 system and has no effects on P450 enzymes at therapeutic concentrations, so CYP-mediated interactions are not expected. Elderly (≥65 years): Cmax ~50% higher and AUC ~80% higher vs younger subjects; linear kinetics; no accumulation; no initial dosage adjustment. Renal insufficiency: AUC and Cmax approximately doubled in severe renal impairment (CrCl <30 mL/min/1.73 m2); not removable by hemodialysis; no initial dosage adjustment in adults. Moderate hepatic impairment (Child-Pugh B): AUC increased 145% and Cmax 73%; severe hepatic impairment not investigated. No difference between males and females.",
+    "clinical_pearls": [
+      "Most of the antihypertensive effect is present within 2 weeks, and maximal blood pressure reduction is generally obtained within 4 to 6 weeks of treatment",
+      "In heart failure (CHARM program), candesartan reduced cardiovascular death and heart failure hospitalization; it also has an added effect on these outcomes when used with an ACE inhibitor (CHARM-Added)",
+      "Target heart failure dose is 32 mg once daily, achieved by doubling at approximately 2-week intervals as tolerated",
+      "Blood pressure response is dose related over 2 to 32 mg; larger doses do not appear to have a greater effect and there is relatively little experience with such doses",
+      "High-fat food does not affect candesartan bioavailability; ATACAND may be given with or without food",
+      "Candesartan does not inhibit ACE and does not affect the response to bradykinin (relevance of this difference to cough/angioedema rates is not established)",
+      "For children who cannot swallow tablets, an oral suspension (0.1 to 2.0 mg/mL; typically 1 mg/mL) can be compounded from any tablet strength using Ora-Plus/Ora-Sweet SF or Ora-Blend SF; store at room temperature below 30°C, do not freeze, use within 30 days of first opening, shake well",
+      "No initial dosage adjustment is necessary in renal insufficiency or in mild hepatic impairment; start at 8 mg in moderate hepatic insufficiency; avoid in severe hepatic insufficiency (no dosing recommendation)"
+    ],
+    "brand_names": [
+      "Atacand"
+    ],
+    "black_box_warnings": [
+      "WARNING: FETAL TOXICITY — When pregnancy is detected, discontinue ATACAND as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus."
+    ],
+    "renal_dose_adjustment": "No initial dosage adjustment is necessary in patients with renal insufficiency; however, in severe renal impairment (creatinine clearance <30 mL/min/1.73 m2) AUC and Cmax approximately double. Candesartan cannot be removed by hemodialysis. All pediatric patients with a glomerular filtration rate less than 30 mL/min/1.73 m2 should not receive ATACAND (not studied), and pediatric patients with renal insufficiency have not had pharmacokinetics determined. Monitor renal function periodically; consider withholding or discontinuing therapy in patients who develop a clinically significant decrease in renal function. Initiate under close medical supervision (possibly lower dose) in volume-depleted patients, particularly those with impaired renal function.",
+    "hepatic_dose_adjustment": "No initial dosage adjustment is necessary in patients with mild hepatic impairment (Child-Pugh A; AUC increased 30%, Cmax 56%). In hypertensive patients with moderate hepatic impairment (Child-Pugh B; AUC increased 145%, Cmax 73%), initiate ATACAND at 8 mg. Dosing recommendations cannot be provided for patients with severe hepatic insufficiency; the pharmacokinetics have not been investigated in severe hepatic impairment.",
+    "administration_instructions": "Administer orally, with or without food, once or twice daily (total daily dose 8 to 32 mg for hypertension). Tablets are scored and may be split. Do not co-administer with aliskiren in patients with diabetes. For pediatric patients who cannot swallow tablets, an oral suspension (0.1 to 2.0 mg/mL, typically 1 mg/mL) may be compounded from any tablet strength: triturate tablets (e.g., five 32 mg tablets) with a small amount of vehicle (Ora-Plus + Ora-Sweet SF in equal volumes, or Ora-Blend SF), qs to 160 mL, dispense in amber PET bottles, label with 100-day expiry, store at room temperature below 30°C, do not freeze, use within 30 days after first opening, shake well before each use. Store tablets at 20 to 25°C (excursions permitted 15 to 30°C) in a tightly closed container."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), CLINICAL PHARMACOLOGY 12.1 Mechanism of Action; DESCRIPTION (prodrug)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), INDICATIONS AND USAGE 1.1, 1.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), CONTRAINDICATIONS 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), ADVERSE REACTIONS 6.1, 6.2; WARNINGS AND PRECAUTIONS 5.3-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2, 2.1, 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.1, 2.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.2; USE IN SPECIFIC POPULATIONS 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DRUG INTERACTIONS 7, 7.1-7.4; CONTRAINDICATIONS 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), WARNINGS AND PRECAUTIONS 5.3, 5.4, 5.5; DRUG INTERACTIONS 7.1-7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), PATIENT COUNSELING INFORMATION 17; Patient Information leaflet",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), BOXED WARNING; WARNINGS AND PRECAUTIONS 5, 5.1-5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), WARNINGS AND PRECAUTIONS 5.2-5.5; DOSAGE AND ADMINISTRATION 2.1, 2.2; USE IN SPECIFIC POPULATIONS 8.4; DRUG INTERACTIONS 7.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), ADVERSE REACTIONS 6.1, 6.2; WARNINGS AND PRECAUTIONS 5.1, 5.3, 5.4, 5.5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.1; CLINICAL PHARMACOLOGY 12.3 Pharmacokinetics",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), USE IN SPECIFIC POPULATIONS 8.1 Pregnancy (Risk Summary); BOXED WARNING",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), USE IN SPECIFIC POPULATIONS 8.1 Pregnancy (Risk Summary, Clinical Considerations, Fetal/Neonatal Adverse Reactions); BOXED WARNING; WARNINGS AND PRECAUTIONS 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), USE IN SPECIFIC POPULATIONS 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), OVERDOSAGE 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), CLINICAL PHARMACOLOGY 12.3 Pharmacokinetics; 12.2 Pharmacodynamics; DESCRIPTION 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.1-2.3; CLINICAL PHARMACOLOGY 12.1-12.3; CLINICAL STUDIES 14.2; HOW SUPPLIED/STORAGE 16; PATIENT COUNSELING INFORMATION 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), HOW SUPPLIED/STORAGE AND HANDLING 16; DESCRIPTION 11 (ATACAND (candesartan cilexetil) tablets, for oral use)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), BOXED WARNING (WARNING: FETAL TOXICITY)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.1, 2.2; USE IN SPECIFIC POPULATIONS 8.4; CLINICAL PHARMACOLOGY 12.3 (Renal Insufficiency); WARNINGS AND PRECAUTIONS 5.4; OVERDOSAGE 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2.1; CLINICAL PHARMACOLOGY 12.3 (Hepatic Insufficiency)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed label, ATACAND (candesartan cilexetil) tablets, ANI Pharmaceuticals, Inc. (setid 94a59260-d2b6-464a-b5b9-bbc599e57e10), DOSAGE AND ADMINISTRATION 2, 2.1, 2.2; HOW SUPPLIED/STORAGE AND HANDLING 16; PATIENT COUNSELING INFORMATION 17 (Patient Information)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a59260-d2b6-464a-b5b9-bbc599e57e10"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "Product scope: US FDA prescribing information for ATACAND (candesartan cilexetil) tablets, 4/8/16/32 mg, ANI Pharmaceuticals, Inc. (manufactured by AstraZeneca AB under license from Takeda; initial US approval 1998; label issued 07/2025). Single source used: DailyMed setid 94a59260-d2b6-464a-b5b9-bbc599e57e10 (verified HTTP 200 at drugInfo.cfm and title match 'ATACAND (CANDESARTAN CILEXETIL) TABLET [ANI PHARMACEUTICALS, INC.]' in spls.json; label text cached at /home/ishi/.cache/clinova/labels/94a59260-d2b6-464a-b5b9-bbc599e57e10.txt). All 25 fields populated from this label; no external or unverified sources used. Gaps/limitations: (1) US label only — EMA SmPC and UK emc not consulted, so non-US dosing/availability not covered; (2) pregnancy_category is a narrative PLLR statement, not a letter category, per current FDA labeling; (3) pediatric heart failure dosing is not established (label covers pediatric hypertension only); (4) aliskiren contraindication applies only to diabetic patients per the label; (5) brand_names limited to the US innovator brand ATACAND — generic candesartan cilexetil products exist but were not individually verified for this monograph; (6) ATACAND HCT (combination with HCTZ, setid d91152c4-66ba-466f-b4f9-0da628d42b1d) was deliberately excluded as out of scope (fixed-dose combination). content_status=needs_review: clinical review required before publication."
+}

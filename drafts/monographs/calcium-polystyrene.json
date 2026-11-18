@@ -1,0 +1,240 @@
+{
+  "name": "Calcium Polystyrene",
+  "existing_id": "34dcc0e0-58b2-4344-a19c-33fd727fa689",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcium polystyrene sulfonate is a non-absorbed ion-exchange resin (ATC code V03AE01; pharmacotherapeutic group: drugs for treatment of hyperkalaemia and hyperphosphataemia). It acts locally within the gastrointestinal tract, binding potassium in exchange for calcium; the resin is not absorbed systemically (SmPC sections 4.1, 5.1 and 5.2, and the stated basis of ~1 mEq of potassium bound per gram of resin in section 4.2).",
+    "indications": [
+      "Treatment of hyperkalaemia associated with anuria or severe oliguria (SmPC section 4.1)",
+      "Treatment of hyperkalaemia in patients requiring dialysis (SmPC section 4.1)",
+      "Treatment of hyperkalaemia in patients on regular haemodialysis or on prolonged peritoneal dialysis (SmPC section 4.1)"
+    ],
+    "contraindications": [
+      "Plasma potassium levels below 5 mmol/litre (SmPC section 4.3)",
+      "Conditions associated with hypercalcaemia, e.g. hyperparathyroidism, multiple myeloma, sarcoidosis or metastatic carcinoma (SmPC section 4.3)",
+      "History of hypersensitivity to polystyrene sulfonate resins (SmPC section 4.3)",
+      "Obstructive bowel disease (SmPC section 4.3)",
+      "Should not be administered orally to neonates; contraindicated in neonates with reduced gut motility (post-operatively or drug-induced) (SmPC section 4.3)",
+      "Hypersensitivity to the active substance or to any of the excipients (sodium, vanillin, saccharin) (SmPC sections 4.3 and 6.1)"
+    ],
+    "side_effects": [
+      "Hypokalaemia and hypercalcaemia, and their related clinical manifestations (SmPC section 4.8)",
+      "Hypomagnesaemia (reported cases) (SmPC section 4.8)",
+      "Hypercalcaemia, reported in well-dialysed patients receiving calcium resin and occasionally in patients with chronic renal failure (SmPC section 4.8)",
+      "Gastric irritation, anorexia, nausea, vomiting, constipation and occasionally diarrhoea (SmPC section 4.8)",
+      "Faecal impaction following rectal administration, particularly in children (SmPC section 4.8)",
+      "Gastrointestinal concretions (bezoars) following oral administration (SmPC section 4.8)",
+      "Gastrointestinal stenosis and intestinal obstruction (possibly due to co-existing pathology or inadequate dilution of the resin) (SmPC section 4.8)",
+      "Gastrointestinal ischaemia, ischaemic colitis, gastrointestinal tract ulceration or necrosis, which could lead to intestinal perforation, sometimes fatal (SmPC section 4.8)",
+      "Acute bronchitis and/or broncho-pneumonia associated with inhalation of particles of calcium polystyrene sulfonate (SmPC section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Oral: the usual dose is 15 g three or four times a day, given as a suspension in a small amount of water or, for greater palatability, in syrup (but not potassium-containing fruit juices), in the ratio of 3 to 4 ml per gram of resin. Rectal (reserved for patients who are vomiting or who have upper gastrointestinal problems, including paralytic ileus; may be combined with the oral route): 30 g resin as a suspension in 150 ml of water or 10% dextrose, given as a daily retention enema, retained for at least 9 hours followed by colonic irrigation (SmPC section 4.2). The dosage recommendations are a guide only; precise requirements should be decided on the basis of regular serum electrolyte determinations.",
+      "maximum": "The SmPC specifies no explicit maximum dose. The usual adult regimen is 15 g three to four times a day (i.e. up to 60 g/day at the upper end of the usual regimen), given as a suspension in a small amount of water or syrup at 3 to 4 ml per gram of resin; precise requirements should be decided on the basis of regular serum electrolyte determinations, and treatment should be stopped when serum potassium falls to 5 mmol/litre (SmPC sections 4.2 and 4.4)."
+    },
+    "adult_dosing": "Adults, including the elderly. Oral: usual dose 15 g three or four times a day, as a suspension in a small amount of water or, for greater palatability, in syrup (not potassium-containing fruit juices), in the ratio of 3 to 4 ml per gram of resin. Administer at least 3 hours before or 3 hours after other oral medications; for patients with gastroparesis, a 6-hour separation should be considered. Rectal: reserve for patients who are vomiting or who have upper gastrointestinal tract problems, including paralytic ileus; may be used simultaneously with the oral route for more rapid initial results or in gastroparesis when other oral medications are given within 6 hours of the resin. Give 30 g resin as a suspension in 150 ml of water or 10% dextrose as a daily retention enema; the enema should if possible be retained for at least nine hours, then the colon should be irrigated to remove the resin. Once the oral resin has reached the rectum it is probably unnecessary to continue rectal administration (SmPC section 4.2). The precise requirements should be decided on the basis of regular serum electrolyte determinations (SmPC section 4.2).",
+    "pediatric_dosing": "Oral: in smaller children and infants, use correspondingly smaller doses based on a rate of 1 mEq of potassium per gram of resin as the basis for calculation. An appropriate initial dose is 1 g/kg body weight daily in divided doses in acute hyperkalaemia; dosage may be reduced to 0.5 g/kg body weight daily in divided doses for maintenance therapy. Give orally, preferably with a drink (not a fruit squash, because of its high potassium content) or a little jam or honey. Rectal: when refused by mouth, give rectally using a dose at least as great as that which would have been given orally, diluted in the same ratio as described for adults; following retention of the enema, the colon should be irrigated to ensure adequate removal of the resin. Neonates: calcium polystyrene sulfonate should NOT be given by the oral route; with rectal administration, the minimum effective dosage within the range 0.5 g/kg to 1 g/kg should be employed, diluted as for adults, with adequate irrigation to ensure recovery of the resin (SmPC section 4.2). Particular care is needed with rectal administration in children and neonates as excessive dosage or inadequate dilution could result in resin impaction; particular care should be observed in premature or low birth weight infants due to the risk of digestive haemorrhage or colonic necrosis (SmPC section 4.4).",
+    "interactions": [
+      "Orally administered medications in general: calcium polystyrene sulfonate may bind other oral medications, decreasing their gastrointestinal absorption and efficacy; avoid co-administration and separate dosing by at least 3 hours (6 hours in gastroparesis) (SmPC sections 4.2, 4.4 and 4.5)",
+      "Sorbitol (oral or rectal): concomitant use is not recommended due to cases of intestinal necrosis and other serious, potentially fatal, gastrointestinal adverse reactions (SmPC sections 4.4 and 4.5)",
+      "Cation-donating agents: may reduce the potassium-binding effectiveness of calcium polystyrene sulfonate (use with caution) (SmPC section 4.5)",
+      "Non-absorbable cation-donating antacids and laxatives (e.g. magnesium hydroxide, aluminium carbonate): reports of systemic alkalosis following concurrent administration (use with caution) (SmPC section 4.5)",
+      "Aluminium hydroxide: intestinal obstruction due to concretions of aluminium hydroxide has been reported when combined with the resin (sodium form); magnesium-containing laxatives should not be used in the event of constipation (SmPC sections 4.4 and 4.5)",
+      "Digitalis-like drugs: toxic effects of digitalis on the heart (especially ventricular arrhythmias and A-V nodal dissociation) are likely to be exaggerated if hypokalaemia and/or hypercalcaemia are allowed to develop (SmPC sections 4.4 and 4.5)",
+      "Lithium: possible decrease of lithium absorption (SmPC section 4.5)",
+      "Levothyroxine: possible decrease of levothyroxine absorption (SmPC section 4.5)"
+    ],
+    "monitoring": "Dosage recommendations are a guide only and precise requirements should be decided on the basis of regular serum electrolyte determinations. Serum calcium levels should be estimated at weekly intervals to detect early development of hypercalcaemia, and the dose of resin adjusted to levels at which hypercalcaemia and hypokalaemia are prevented (SmPC sections 4.2 and 4.4). Patients should be monitored for all applicable electrolyte disturbances (hypokalaemia, hypercalcaemia, hypomagnesaemia) (SmPC section 4.4). The possibility of severe potassium depletion should be considered and adequate clinical and biochemical control is essential during treatment, especially in patients on digitalis; administration of the resin should be stopped when the serum potassium falls to 5 mmol/litre (SmPC section 4.4). Monitor for newly developed severe abdominal pain, nausea and vomiting, stomach distension and rectal bleeding, which may signal gastrointestinal stenosis or ischaemia (SmPC section 4.4). In the event of clinically significant constipation, treatment should be discontinued until normal bowel movement has resumed (SmPC section 4.4).",
+    "patient_counselling": "Take the resin as a suspension in a small amount of water or syrup (not potassium-containing fruit juices; children may take it with a drink, jam or honey, but not fruit squash), in the ratio of 3 to 4 ml per gram of resin (SmPC section 4.2). Administer at least 3 hours before or 3 hours after other oral medications; for gastroparesis, a 6-hour separation should be considered (SmPC sections 4.2 and 4.4). Seek prompt medical advice if you develop newly developed severe abdominal pain, nausea and vomiting, stomach distension or rectal bleeding (SmPC section 4.4). Sit or position yourself carefully when ingesting the resin to avoid aspiration, which may lead to bronchopulmonary complications (SmPC section 4.4). If you develop clinically significant constipation, stop the resin until normal bowel movement resumes; do not use magnesium-containing laxatives (SmPC section 4.4). Do not take sorbitol-containing products (oral or rectal) at the same time as this medicine (SmPC sections 4.4 and 4.5). Regular blood tests (serum electrolytes, and serum calcium at weekly intervals) are required during treatment (SmPC sections 4.2 and 4.4).",
+    "warnings": [
+      "Gastrointestinal stenosis, intestinal ischaemia and its complications (necrosis and perforation), some of them fatal, have been reported in patients treated with polystyrene sulfonate alone or in combination with sorbitol; concomitant use of sorbitol with calcium polystyrene sulfonate is not recommended (SmPC sections 4.4 and 4.5)",
+      "Severe gastrointestinal disorders (bowel obstruction, ischaemia, necrosis or perforation): use of polystyrene sulfonate is not recommended in patients with compromised gastrointestinal motility, including immediate post-surgery or drug-induced (SmPC section 4.4)",
+      "Patients should be advised to seek prompt medical advice in case of newly developed severe abdominal pain, nausea and vomiting, stomach distension and rectal bleeding (SmPC section 4.4)",
+      "Lesions seen in polystyrene sulfonate-induced gastrointestinal damage may overlap with those seen in inflammatory bowel disease, ischaemic colitis, infectious colitis and microscopic colitis (SmPC section 4.4)",
+      "Binding to other orally administered medications may decrease their gastrointestinal absorption and efficacy; administer at least 3 hours before or 3 hours after other oral medications, or 6 hours apart in gastroparesis (SmPC sections 4.2, 4.4 and 4.5)",
+      "Hypokalaemia: the possibility of severe potassium depletion should be considered and adequate clinical and biochemical control is essential during treatment, especially in patients on digitalis; stop the resin when serum potassium falls to 5 mmol/litre (SmPC section 4.4)",
+      "Other electrolyte disturbances: the resin is not totally selective for potassium; hypomagnesaemia and/or hypercalcaemia may occur; patients should be monitored for all applicable electrolyte disturbances and serum calcium estimated at weekly intervals (SmPC section 4.4)",
+      "In the event of clinically significant constipation, treatment should be discontinued until normal bowel movement has resumed; magnesium-containing laxatives should not be used (SmPC section 4.4)",
+      "Aspiration: the patient should be positioned carefully when ingesting the resin, to avoid aspiration, which may lead to bronchopulmonary complications (SmPC section 4.4)",
+      "Children and neonates: calcium polystyrene sulfonate should not be given by the oral route in neonates; particular care is needed with rectal administration as excessive dosage or inadequate dilution could result in impaction of the resin; premature or low birth weight infants are at particular risk of digestive haemorrhage or colonic necrosis (SmPC section 4.4)"
+    ],
+    "precautions": [
+      "Dosage is a guide only; precise requirements should be decided on the basis of regular serum electrolyte determinations (SmPC section 4.2)",
+      "Serum calcium should be estimated at weekly intervals to detect early development of hypercalcaemia, and the dose adjusted to levels at which hypercalcaemia and hypokalaemia are prevented (SmPC section 4.4)",
+      "Exercise particular care in patients with compromised gastrointestinal motility, including immediate post-surgery or drug-induced, due to the risk of severe gastrointestinal disorders (SmPC section 4.4)",
+      "Exercise particular care in patients on digitalis, in whom exaggerated cardiac toxicity (ventricular arrhythmias, A-V nodal dissociation) may occur if hypokalaemia and/or hypercalcaemia develop (SmPC sections 4.4 and 4.5)",
+      "Well-dialysed patients and patients with chronic renal failure may show a sudden rise in serum calcium to high levels after therapy with calcium resin; the risk emphasises the need for adequate biochemical control (SmPC section 4.8)",
+      "In children and neonates, particular care is needed with rectal administration (excessive dosage or inadequate dilution could cause resin impaction); observe particular care in premature or low birth weight infants (SmPC section 4.4)",
+      "This medicinal product contains less than 1 mmol sodium (23 mg) per 15 g powder, i.e. it is essentially 'sodium free' (SmPC section 4.4)",
+      "In the event of clinically significant constipation, discontinue treatment until normal bowel movement has resumed (SmPC section 4.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Intestinal necrosis and intestinal perforation, some of them fatal, reported with polystyrene sulfonate alone or in combination with sorbitol (SmPC sections 4.4 and 4.5)",
+      "Gastrointestinal ischaemia, ischaemic colitis, gastrointestinal tract ulceration or necrosis, which could lead to intestinal perforation, sometimes fatal (SmPC section 4.8)",
+      "Gastrointestinal stenosis and intestinal obstruction (SmPC sections 4.4 and 4.8)",
+      "Severe hypokalaemia, which may progress to muscle weakness, hyporeflexia, paralysis and apnoea, with ECG changes and cardiac arrhythmia (SmPC sections 4.4 and 4.9)",
+      "Hypercalcaemia, including sudden rises to high levels in chronic renal failure patients, and in well-dialysed patients (SmPC sections 4.4 and 4.8)",
+      "Faecal impaction following rectal administration, particularly in children, and gastrointestinal concretions (bezoars) following oral administration (SmPC section 4.8)",
+      "Acute bronchitis and/or broncho-pneumonia associated with inhalation of resin particles (SmPC section 4.8)"
+    ],
+    "food_interactions": [
+      "Fruit juices (and fruit squash in children) contain potassium and must not be used as the suspending vehicle for the resin; use a small amount of water or syrup instead (SmPC section 4.2)",
+      "The resin may be given to children preferably with a drink (not a fruit squash, because of its high potassium content) or a little jam or honey (SmPC section 4.2)"
+    ],
+    "pregnancy_category": "No FDA pregnancy category applies, as this product is not marketed in the US and no US label exists. The UK SmPC states: 'No data are available regarding the use of polystyrene sulfonate resins in pregnancy and lactation. The administration of Calcium Resonium in pregnancy and during breast feeding therefore is not advised unless, in the opinion of the physician, the potential benefits outweigh any potential risks' (SmPC section 4.6).",
+    "pregnancy_guidance": "No data are available regarding the use of polystyrene sulfonate resins in pregnancy. The administration of calcium polystyrene sulfonate in pregnancy is not advised unless, in the opinion of the physician, the potential benefits outweigh any potential risks (SmPC section 4.6).",
+    "lactation_guidance": "No data are available regarding the use of polystyrene sulfonate resins during lactation. The administration of calcium polystyrene sulfonate during breast feeding is not advised unless, in the opinion of the physician, the potential benefits outweigh any potential risks (SmPC section 4.6).",
+    "overdose": "Biochemical disturbances from overdosage may give rise to clinical signs or symptoms of hypokalaemia, including irritability, confusion, delayed thought processes, muscle weakness, hyporeflexia and eventual paralysis; apnoea may be a serious consequence of this progression. Electrocardiographic changes may be consistent with hypokalaemia or hypercalcaemia, and cardiac arrhythmia may occur. Appropriate measures should be taken to correct serum electrolytes, and the resin should be removed from the alimentary tract by appropriate use of laxatives or enemas (SmPC section 4.9). Related clinical manifestations of hypokalaemia and hypercalcaemia are described in SmPC sections 4.4 and 4.8. Note: magnesium-containing laxatives should not be used (SmPC section 4.4).",
+    "pharmacokinetics": "Not applicable as this product is not absorbed (SmPC section 5.2). The resin acts locally within the gastrointestinal tract as an ion-exchange resin and undergoes no systemic absorption, distribution, metabolism or excretion described in the SmPC (SmPC sections 5.1 and 5.2).",
+    "clinical_pearls": [
+      "The rectal route should be reserved for patients who are vomiting or who have upper gastrointestinal tract problems, including paralytic ileus; it may be used simultaneously with the oral route for more rapid initial results (SmPC section 4.2).",
+      "If both oral and rectal routes are used initially, it is probably unnecessary to continue rectal administration once the oral resin has reached the rectum (SmPC section 4.2).",
+      "The retention enema should if possible be retained for at least nine hours, then the colon should be irrigated to remove the resin; children and neonates require colonic irrigation after the enema to ensure adequate resin removal (SmPC section 4.2).",
+      "The basis for paediatric dose calculation is approximately 1 mEq of potassium bound per gram of resin (SmPC section 4.2).",
+      "Calcium polystyrene sulfonate is essentially 'sodium free' (< 1 mmol sodium, 23 mg, per 15 g powder), unlike sodium polystyrene sulfonate, and may be preferred where sodium load is a concern (SmPC section 4.4).",
+      "Do not use sorbitol as a vehicle or co-administer sorbitol (oral or rectal) because of the risk of fatal intestinal necrosis; do not use magnesium-containing laxatives (SmPC sections 4.4 and 4.5).",
+      "Stop the resin when serum potassium falls to 5 mmol/litre, and check serum calcium at weekly intervals to detect early hypercalcaemia (SmPC section 4.4).",
+      "In neonates the oral route must not be used; rectal doses of 0.5-1 g/kg minimum effective dosage should be given with adequate irrigation to ensure resin recovery (SmPC sections 4.2 and 4.4).",
+      "The resin may bind other oral medications; a 3-hour separation (6 hours in gastroparesis) is required (SmPC sections 4.2 and 4.4)."
+    ],
+    "brand_names": [
+      "Calcium Resonium (UK; Aventis Pharma Limited, trading as Sanofi; PL 04425/0620)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral or rectal administration only. Oral: give as a suspension in a small amount of water or, for greater palatability, in syrup (not potassium-containing fruit juices), in the ratio of 3 to 4 ml per gram of resin; in children, preferably with a drink (not fruit squash) or a little jam or honey. Rectal: give 30 g resin as a suspension in 150 ml of water or 10% dextrose as a daily retention enema; retain for at least nine hours if possible, then irrigate the colon to remove the resin. Administer at least 3 hours before or 3 hours after other oral medications (6 hours in gastroparesis). Neonates: do NOT give orally; rectal administration only at 0.5 to 1 g/kg minimum effective dosage with adequate irrigation (SmPC sections 4.2 and 4.4). Store in a dry place (SmPC section 6.4). Each 15 g level scoop is approximately one adult dose; HDPE bottle contains 300 g of powder (SmPC sections 6.5 and 2)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Calcium Resonium 99.934% w/w Powder for Oral/Rectal Suspension, SmPC (emc, medicines.org.uk), Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.1, 4.2, 5.1, 5.2; ATC V03AE01",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.1 Therapeutic indications",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.3 Contraindications and 6.1 List of excipients",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.2 Posology and method of administration and 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.2 Posology and method of administration (Adults, including the elderly)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.2 Posology and method of administration (Paediatric population; Neonates) and section 4.4 (Children and neonates)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.5 Interaction with other medicinal products and other forms of interaction, 4.2 and 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.2 and 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.2 and 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.4 Special warnings and precautions for use; cross-referenced to sections 4.2, 4.5 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.4 Special warnings and precautions for use and 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.4, 4.8 Undesirable effects and 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.2 Posology and method of administration (fruit juices/fruit squash potassium content)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.6 Fertility, pregnancy and lactation; no US FDA pregnancy category exists because the product is not marketed in the US (DailyMed search for 'calcium polystyrene sulfonate' returns 0 results)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.9 Overdose and 4.4/4.8 (electrolyte disturbances and their manifestations)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 5.1 Pharmacodynamic properties and 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.2, 4.4 and 4.5",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 1 Name of the medicinal product, 7 Marketing authorisation holder (Aventis Pharma Limited, trading as Sanofi) and 8 Marketing authorisation number(s)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620 (entire document). UK SmPCs carry no FDA-style boxed ('black box') warning; the SmPC contains no such designation. The absent US market means no FDA boxed warning exists for this product (DailyMed search returns 0 results)",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620 (sections 4.2 and 4.4). The SmPC specifies no renal dose adjustment; dosing is guided by regular serum electrolyte determinations only, so this field is unsourced rather than inferred",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620 (entire document). The SmPC contains no hepatic dosing information (the resin is not absorbed), so this field is unsourced rather than inferred",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Calcium Resonium SmPC, Sanofi (Aventis Pharma Limited), PL 04425/0620, sections 4.2 Posology and method of administration, 6.4 Special precautions for storage, 6.5 Nature and contents of container and 2 Qualitative and quantitative composition",
+      "url": "https://www.medicines.org.uk/emc/product/1439/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "renal_dose_adjustment",
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "PRODUCT SCOPE: Calcium polystyrene sulfonate (Calcium Resonium) is a UK/Japan-market cation-exchange resin and is NOT marketed in the US. A DailyMed search for 'calcium polystyrene sulfonate' (checked 2026-11-18) returns 0 results, so no FDA label/setid exists and none is fabricated. Accordingly, ALL clinical content here is sourced from the UK emc (medicines.org.uk) SmPC for 'Calcium Resonium 99.934% w/w Powder for Oral/Rectal Suspension' — Sanofi (marketing authorisation holder: Aventis Pharma Limited, trading as Sanofi, 410 Thames Valley Park Drive, Reading, Berkshire RG6 1PT, UK), PL 04425/0620, ATC V03AE01, SmPC text revision date 11 January 2024, 'Last updated on emc: 18 Jan 2024', page certified November 2025, URL: https://www.medicines.org.uk/emc/product/1439/smpc. The fetched label text is cached at /home/ishi/.cache/clinova/labels/calcium-resonium-smpc.txt (and .html). There is no SmPC 'setid' (that is an FDA SPL identifier); the SmPC is identified by PL number, revision date and emc product ID 1439 as above. JAPAN: calcium polystyrene sulfonate is also marketed in Japan (e.g. as a calcium-exchange resin for hyperkalaemia), but no Japanese (PMDA) label was fetched or used; Japanese product details, brand names and dosing are therefore NOT covered and should not be inferred from this monograph. SODIUM POLYSTYRENE SULFONATE NOT USED: sodium polystyrene sulfonate (e.g. Kayexalate, Resonium A) is a different salt with a different adverse-effect profile (notably sodium load) and its US FDA labels were deliberately NOT used, because the task prohibits substituting it; no content from sodium polystyrene sulfonate labels appears in this monograph. KEY SAFETY SIGNALS FROM THE SmPC: (1) intestinal necrosis/perforation (sometimes fatal) and GI stenosis/ischaemia, particularly with concomitant sorbitol — sorbitol use is NOT recommended; (2) not recommended in compromised GI motility, including immediate post-surgery or drug-induced; (3) neonates must not receive the resin orally; (4) severe hypokalaemia risk — stop when serum potassium falls to 5 mmol/litre, with weekly serum calcium monitoring for hypercalcaemia; (5) resin-binding of other oral drugs requires a 3-hour (6-hour in gastroparesis) separation; (6) fruit juices/squash must not be used as the suspending vehicle (high potassium); (7) avoid aspiration when ingesting; (8) magnesium-containing laxatives should not be used. GAPS / UNSOURCED FIELDS: renal_dose_adjustment and hepatic_dose_adjustment are null because the SmPC gives no renal or hepatic dose adjustment (dosing is titrated to serum electrolytes); no FDA pregnancy category exists for this product (not US-marketed); pregnancy/lactation data are absent from the SmPC (use only if benefit outweighs risk). No maximum dose is stated in the SmPC; the 'dosage.maximum' entry reports only the arithmetic upper end of the usual adult regimen (15 g four times daily = 60 g/day) and the SmPC's instruction to titrate to serum electrolytes and stop at 5 mmol/litre potassium. Pharmacopoeial/preclinical data: the SmPC states preclinical data are not relevant beyond other sections. This draft is content_status 'needs_review' and must be clinically reviewed before use; it reflects the UK SmPC only and should not be applied to US practice without a US source."
+}

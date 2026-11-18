@@ -1,0 +1,211 @@
+{
+  "name": "Calcium Lactate",
+  "existing_id": "35c7b04b-ccd3-475a-9afb-bea1e44e716a",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Calcium is an essential mineral, necessary for bone formation and maintenance, for electrolyte equilibrium in the body and for the proper functioning of numerous regulatory mechanisms. Calvive 1000 contains two calcium salts (calcium lactate gluconate and calcium carbonate) which readily dissolve in water to make the active ionised form of calcium freely usable. About 50% of the total blood-calcium content is in the physiologically active ionised form, with approximately 5% complexed to citrate, phosphate or other anions, and approximately 45% bound to proteins, principally albumin. Calcium ions are required for neuromuscular function, blood coagulation, bone mineralisation and cell membrane stability (emc SmPC, Calvive 1000, sections 5.1 and 5.2).",
+    "indications": [
+      "Prevention and treatment of calcium deficiency (emc SmPC, Calvive 1000, section 4.1)",
+      "Calcium supplement as an adjunct to specific therapy in the prevention and treatment of osteoporosis (emc SmPC, Calvive 1000, section 4.1)",
+      "Rickets and osteomalacia, in addition to vitamin D3 therapy (emc SmPC, Calvive 1000, section 4.1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substances or to any of the excipients (emc SmPC, Calvive 1000, section 4.3)",
+      "Diseases and/or conditions resulting in hypercalcaemia and/or hypercalciuria (emc SmPC, Calvive 1000, section 4.3)",
+      "Nephrocalcinosis (emc SmPC, Calvive 1000, section 4.3)",
+      "Nephrolithiasis (emc SmPC, Calvive 1000, section 4.3)"
+    ],
+    "side_effects": [
+      "Metabolism and nutrition: uncommon - hypercalcaemia, hypercalciuria (emc SmPC, Calvive 1000, section 4.8)",
+      "Immune system: rare - hypersensitivity, such as rash, pruritus, urticaria (emc SmPC, Calvive 1000, section 4.8)",
+      "Immune system: very rare - isolated cases of systemic allergic reactions (anaphylactic reaction, face oedema, angioneurotic oedema) have been reported (emc SmPC, Calvive 1000, section 4.8)",
+      "Gastrointestinal: rare - flatulence, constipation, diarrhoea, nausea, vomiting, abdominal pain (emc SmPC, Calvive 1000, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Adults and children: 1000 mg calcium per day (one Calvive 1000 effervescent tablet daily, equivalent to 1000 mg or 25 mmol calcium). The effervescent tablet should be dissolved in a glass of water (approximately 200 ml) and drunk immediately; it may be taken with or without food (emc SmPC, Calvive 1000, sections 2 and 4.2).",
+      "maximum": "No formal maximum dose is stated in the SmPC. The SmPC notes that the adequate daily intake (including food and supplementation) for pregnant and lactating women is 1000-1300 mg calcium and that daily intake during pregnancy should not exceed 1500 mg. The threshold for calcium intoxication is supplementation in excess of 2000 mg calcium per day taken for several months (emc SmPC, Calvive 1000, sections 4.6 and 4.9)."
+    },
+    "adult_dosing": "1000 mg calcium per day (one Calvive 1000 effervescent tablet daily), dissolved in a glass of water (approximately 200 ml) and drunk immediately; may be taken with or without food (emc SmPC, Calvive 1000, sections 2 and 4.2).",
+    "pediatric_dosing": "The SmPC states 'Adults and children: 1000 mg per day' (one Calvive 1000 effervescent tablet daily), dissolved in a glass of water (approximately 200 ml) and drunk immediately (emc SmPC, Calvive 1000, section 4.2). No weight-based or age-tiered paediatric regimen is provided in the SmPC.",
+    "interactions": [
+      "Thiazide diuretics reduce urinary calcium excretion; due to the increased risk of hypercalcaemia, serum calcium should be regularly monitored during concomitant use (emc SmPC, Calvive 1000, section 4.5)",
+      "Systemic corticosteroids reduce calcium absorption; during concomitant use it may be necessary to increase the calcium dose (emc SmPC, Calvive 1000, section 4.5)",
+      "Tetracycline preparations administered concomitantly with calcium may not be well absorbed; tetracyclines should be administered at least 2 hours before or 4 to 6 hours after oral calcium (emc SmPC, Calvive 1000, section 4.5)",
+      "Cardiac glycoside toxicity may increase with hypercalcaemia resulting from calcium treatment; patients should be monitored with regard to electrocardiogram (ECG) and serum calcium levels (emc SmPC, Calvive 1000, section 4.5)",
+      "Oral bisphosphonates or sodium fluoride taken concomitantly with calcium: the bisphosphonate or sodium fluoride should be administered at least 3 hours before calcium intake, since gastrointestinal absorption of either may be reduced (emc SmPC, Calvive 1000, section 4.5)",
+      "Oxalic acid (spinach, rhubarb) and phytic acid (whole cereals) inhibit calcium absorption through formation of insoluble compounds with calcium ions; calcium products should not be taken within 2 hours of eating foods high in oxalic acid and phytic acid (emc SmPC, Calvive 1000, section 4.5)"
+    ],
+    "monitoring": "In patients with mild hypercalciuria (exceeding 300 mg/24 hours or 7.5 mmol/24 hours) or a history of urinary calculi, monitor calcium excretion in the urine; reduce the calcium dose or discontinue therapy if necessary, and recommend increased fluid intake in patients prone to urinary tract calculi. In patients with impaired renal function, calcium salts should be taken under medical supervision with monitoring of serum calcium and phosphate levels. During high-dose therapy, especially with concomitant vitamin D, there is a risk of hypercalcaemia with subsequent kidney function impairment; in these patients serum calcium levels should be followed and renal function monitored. During concomitant use of thiazide diuretics, serum calcium should be regularly monitored, and with cardiac glycosides patients should be monitored with regard to ECG and serum calcium levels (emc SmPC, Calvive 1000, sections 4.4 and 4.5).",
+    "patient_counselling": "Dissolve the effervescent tablet in a glass of water (approximately 200 ml) and drink it immediately; it may be taken with or without food. Do not take calcium products within 2 hours of eating foods high in oxalic acid (spinach, rhubarb) or phytic acid (whole cereals). If you take tetracycline antibiotics, take them at least 2 hours before or 4 to 6 hours after calcium; if you take an oral bisphosphonate or sodium fluoride, take it at least 3 hours before calcium. Tell your doctor if you take thiazide diuretics, systemic corticosteroids, cardiac glycosides or vitamin D. Keep the tube tightly closed and store in the original package. Calvive 1000 has no influence on the ability to drive and use machines. Report suspected adverse reactions (e.g. via the MHRA Yellow Card Scheme in the UK). During high-dose therapy, especially with vitamin D, report symptoms of hypercalcaemia such as nausea, vomiting, thirst, polyuria or constipation (emc SmPC, Calvive 1000, sections 4.2, 4.4, 4.5, 4.7, 4.8, 4.9 and 6.4).",
+    "warnings": [
+      "Mild hypercalciuria (exceeding 300 mg/24 hours or 7.5 mmol/24 hours) or a history of urinary calculi: calcium excretion in the urine must be monitored; if necessary reduce the dose or discontinue therapy. Increased fluid intake is recommended for patients prone to urinary tract calculi (emc SmPC, Calvive 1000, section 4.4)",
+      "Impaired renal function: calcium salts should be taken under medical supervision with monitoring of serum calcium and phosphate levels (emc SmPC, Calvive 1000, section 4.4)",
+      "High-dose therapy, especially with concomitant vitamin D: risk of hypercalcaemia with subsequent kidney function impairment; serum calcium levels should be followed and renal function monitored (emc SmPC, Calvive 1000, section 4.4)",
+      "Possible increased absorption of aluminium with citrate salts (literature reports): Calvive 1000 (which contains 3323.0 mg citric acid) should be used with caution in patients with severely impaired renal function, especially those also receiving aluminium-containing preparations (emc SmPC, Calvive 1000, section 4.4)",
+      "Contains aspartame (an aspartame source), sodium (5.95 mmol / 136.90 mg per tablet, 6.9% of the WHO recommended maximum daily intake of 2 g sodium for an adult), sorbitol, benzyl alcohol, sulphur dioxide and glucose - caution in patients with phenylketonuria, those on a controlled sodium diet, and in susceptible individuals (emc SmPC, Calvive 1000, sections 2 and 4.4)"
+    ],
+    "precautions": [
+      "Patients with impaired renal function should take calcium salts under medical supervision (emc SmPC, Calvive 1000, section 4.4)",
+      "Patients with a history of urinary calculi require urine calcium monitoring and increased fluid intake (emc SmPC, Calvive 1000, section 4.4)",
+      "Concomitant vitamin D or high-dose calcium therapy requires serum calcium and renal function monitoring (emc SmPC, Calvive 1000, section 4.4)",
+      "Severely impaired renal function, especially with aluminium-containing preparations: use caution due to citric acid content (possible increased aluminium absorption with citrate salts) (emc SmPC, Calvive 1000, section 4.4)",
+      "Use with thiazide diuretics (reduced urinary calcium excretion) or cardiac glycosides (hypercalcaemia may increase toxicity) requires monitoring (emc SmPC, Calvive 1000, section 4.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Very rare: isolated cases of systemic allergic reactions (anaphylactic reaction, face oedema, angioneurotic oedema) have been reported (emc SmPC, Calvive 1000, section 4.8)",
+      "Uncommon: hypercalcaemia and hypercalciuria (emc SmPC, Calvive 1000, section 4.8)",
+      "Chronic overdose leading to hypercalcaemia can cause vascular and organ calcification (emc SmPC, Calvive 1000, section 4.9)"
+    ],
+    "food_interactions": [
+      "Oxalic acid (found in spinach and rhubarb) inhibits calcium absorption through formation of insoluble compounds with calcium ions; do not take calcium products within 2 hours of eating foods high in oxalic acid (emc SmPC, Calvive 1000, section 4.5)",
+      "Phytic acid (found in whole cereals) inhibits calcium absorption through formation of insoluble compounds with calcium ions; do not take calcium products within 2 hours of eating foods high in phytic acid (emc SmPC, Calvive 1000, section 4.5)",
+      "Calvive 1000 may be taken with or without food (emc SmPC, Calvive 1000, section 4.2)"
+    ],
+    "pregnancy_category": "No pregnancy category letter is assigned in the SmPC. The SmPC states: 'The adequate daily intake (including food and supplementation) for normal pregnant and lactating women is 1000-1300 mg calcium. During pregnancy, the daily intake of calcium should not exceed 1500 mg.' It further states that Calvive 1000 effervescent tablets can be used during pregnancy and lactation in case of a calcium deficiency (emc SmPC, Calvive 1000, section 4.6).",
+    "pregnancy_guidance": "The adequate daily intake (including food and supplementation) for normal pregnant women is 1000-1300 mg calcium, and daily intake during pregnancy should not exceed 1500 mg. Calvive 1000 effervescent tablets can be used during pregnancy in case of a calcium deficiency (emc SmPC, Calvive 1000, section 4.6).",
+    "lactation_guidance": "Significant amounts of calcium are secreted in milk during lactation but do not cause any adverse effects to the neonate. The adequate daily intake (including food and supplementation) for normal lactating women is 1000-1300 mg calcium. Calvive 1000 effervescent tablets can be used during lactation in case of a calcium deficiency (emc SmPC, Calvive 1000, section 4.6).",
+    "overdose": "Overdose leads to hypercalciuria and hypercalcaemia. Symptoms of hypercalcaemia may include nausea, vomiting, thirst, polydipsia, polyuria, dehydration and constipation; chronic overdose with resulting hypercalcaemia can cause vascular and organ calcification. The threshold for calcium intoxication is supplementation in excess of 2000 mg per day, taken for several months. Treatment of overdose: stop treatment immediately and correct the fluid deficiency. In chronic overdose with hypercalcaemia, the initial therapeutic step is hydration with saline solution; a loop diuretic (e.g. furosemide) may then be used to increase calcium excretion and prevent volume overload, but thiazide diuretics should be avoided. In patients with renal failure, hydration is ineffective and they should undergo dialysis. In persistent hypercalcaemia, contributing factors should be excluded (e.g. vitamin A or D hypervitaminosis, primary hyperparathyroidism, malignancies, renal failure, immobilisation) (emc SmPC, Calvive 1000, section 4.9).",
+    "pharmacokinetics": "Absorption: some 25-50% of the ingested dose of calcium is absorbed, predominantly in the proximal part of the small intestine, and delivered to the exchangeable calcium pool. Calvive 1000 contains two calcium salts (calcium lactate gluconate and calcium carbonate) which readily dissolve in water to make the active ionised form of calcium freely usable. Distribution and metabolism: the mineral component of bones and teeth contains 99% of the body's calcium; the remaining 1% is present in the intra- and extracellular fluids. About 50% of the total blood-calcium content is in the physiologically active ionised form, with approximately 5% complexed to citrate, phosphate or other anions; the remaining 45% of serum calcium is bound to proteins, principally albumin. Elimination: calcium is excreted in the urine, faeces and sweat; urinary excretion depends on glomerular filtration and tubular reabsorption (emc SmPC, Calvive 1000, section 5.2).",
+    "clinical_pearls": [
+      "Calvive 1000 is a combination of two calcium salts (calcium lactate gluconate 2263 mg and calcium carbonate 1750 mg, equivalent to 1000 mg / 25 mmol calcium per tablet); there is no standalone calcium lactate product marketed for hypocalcaemia supplementation in the UK (emc SmPC, Calvive 1000, sections 1, 2 and 3).",
+      "Effervescent tablets must be dissolved in a glass of water (about 200 ml) and drunk immediately - swallowing the tablet whole is not the intended route (emc SmPC, Calvive 1000, section 4.2).",
+      "Separate calcium from tetracyclines (at least 2 h before or 4-6 h after), from oral bisphosphonates and sodium fluoride (at least 3 h before the calcium dose), and from oxalate/phytate-rich foods (within 2 h) to preserve absorption (emc SmPC, Calvive 1000, section 4.5).",
+      "Thiazide diuretics markedly reduce urinary calcium excretion, so calcium plus a thiazide warrants regular serum calcium checks; cardiac glycosides become more toxic in hypercalcaemia - monitor ECG and serum calcium (emc SmPC, Calvive 1000, section 4.5).",
+      "Calcium intoxication is possible: supplementation above 2000 mg calcium per day for several months is the threshold, and chronic hypercalcaemia can calcify vessels and organs (emc SmPC, Calvive 1000, section 4.9).",
+      "No influence on ability to drive or use machines (emc SmPC, Calvive 1000, section 4.7)."
+    ],
+    "brand_names": [
+      "Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets)"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "No specific numeric renal dose adjustment is stated in the SmPC. The SmPC states that in patients with impaired renal function calcium salts should be taken under medical supervision with monitoring of serum calcium and phosphate levels, and that Calvive 1000 (containing 3323.0 mg citric acid) should be used with caution in patients with severely impaired renal function, especially those also receiving aluminium-containing preparations, due to possible increased aluminium absorption with citrate salts. In overdose with renal failure, hydration is ineffective and dialysis is required (emc SmPC, Calvive 1000, sections 4.4 and 4.9).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "Dissolve the effervescent tablet in a glass of water (approximately 200 ml) and drink it immediately; may be taken with or without food. Keep the tube tightly closed and store in the original package (packed in polypropylene tubes with tamperproof polyethylene stoppers and desiccant, 10 or 20 tablets per tube). Shelf life 3 years (emc SmPC, Calvive 1000, sections 4.2, 6.3, 6.4 and 6.5)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 5.1 Pharmacodynamic properties and 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "indications",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.1 Therapeutic indications",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "contraindications",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.3 Contraindications",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "side_effects",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "dosage",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 2 Qualitative and quantitative composition, 4.2 Posology and method of administration, 4.6 Fertility, pregnancy and lactation and 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 2 and 4.2 Posology and method of administration",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.2 Posology and method of administration",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "interactions",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "monitoring",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.4 Special warnings and precautions for use and 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.2, 4.4, 4.5, 4.7, 4.8, 4.9 and 6.4",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "warnings",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 2, 4.4 Special warnings and precautions for use and 4.5 Interactions",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "precautions",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.4 Special warnings and precautions for use and 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.8 Undesirable effects and 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.2 Posology and method of administration and 4.5 Interaction with other medicinal products and other forms of interaction",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "overdose",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, section 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 1, 2, 3, 4.2, 4.5, 4.7, 4.9 and 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "brand_names",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 1 Name of the medicinal product and 2 Qualitative and quantitative composition (product renamed from Sandocal Tablets)",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, the SmPC contains no boxed/black-box warning (UK SmPCs do not carry FDA-style boxed warnings; no equivalent warning section is present)",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.4 Special warnings and precautions for use and 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "emc SmPC, Calvive 1000 Effervescent Tablets (formerly Sandocal Tablets), Haleon UK Trading Limited, sections 4.2 Posology and method of administration, 6.3 Shelf life, 6.4 Special precautions for storage and 6.5 Nature and contents of container",
+      "url": "https://www.medicines.org.uk/emc/product/1191/smpc"
+    }
+  ],
+  "unsourced_fields": [
+    "hepatic_dose_adjustment"
+  ],
+  "notes": "SCOPE: This monograph covers calcium lactate as an oral calcium supplement for calcium deficiency / hypocalcaemia support. NO STANDALONE CALCIUM LACTATE PRODUCT FOUND: a DailyMed search (spls.json?drug_name=calcium lactate, 63 results, Nov 2026) returned only lactated-ringer/dialysate solutions, veterinary products and 'KIDS ORAL CARE' xylitol + calcium lactate oral-care sprays (combo, not a systemic calcium supplement); no standalone calcium lactate OTC supplement label exists on DailyMed. UK emc likewise lists no standalone calcium lactate product. The only genuine systemic calcium lactate-salt supplement located is the UK product Calvive 1000 Effervescent Tablets (Haleon UK Trading Limited, emc product 1191, formerly Sandocal Tablets), a COMBINATION of calcium lactate gluconate 2263 mg + calcium carbonate 1750 mg (1000 mg / 25 mmol calcium per tablet) - NOT standalone calcium lactate and NOT calcium lactate itself (lactate gluconate salt). All populated fields therefore trace to the Calvive 1000 SmPC and describe calcium-salt supplementation; salt-specific pharmacology of calcium lactate per se is not documented in any located label. DAILYMED VERIFICATION: the six KIDS ORAL CARE setids (e.g. 33469d77-4013-413d-e063-6294a90acbb7) return HTTP 200 but are xylitol/calcium-lactate oral sprays - rejected as out of scope (not hypocalcaemia/dietary calcium supplementation). REGULATORY SCOPE: UK (MHRA/emc SmPC) only; no US FDA or EMA centralised SmPC for standalone calcium lactate was located. GAPS: hepatic dose adjustment (no data in the SmPC - null); no paediatric weight-based dosing; no formal maximum dose; no pregnancy category letter (SmPC gives a narrative statement only); black_box_warnings is [] because the UK SmPC carries no boxed/black-box warning. Doses, frequencies and interaction timings are specific to the Calvive 1000 effervescent presentation and should not be extrapolated to other calcium salts without review. Needs clinical review before RAG ingestion."
+}

@@ -1,0 +1,266 @@
+{
+  "name": "Capecitabine",
+  "existing_id": "",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Capecitabine is a nucleoside metabolic inhibitor that is metabolized to fluorouracil in vivo. Both normal and tumor cells metabolize fluorouracil to 5-fluoro-2'-deoxyuridine monophosphate (FdUMP) and 5-fluorouridine triphosphate (FUTP). These metabolites cause cell injury by two mechanisms: (1) FdUMP and the folate cofactor N5-10-methylenetetrahydrofolate bind thymidylate synthase (TS) forming a covalently bound ternary complex, inhibiting formation of thymidylate from 2'-deoxyuridylate; thymidylate is the necessary precursor of thymidine triphosphate required for DNA synthesis, so its deficiency can inhibit cell division. (2) Nuclear transcriptional enzymes can mistakenly incorporate FUTP in place of uridine triphosphate (UTP) during RNA synthesis, interfering with RNA processing and protein synthesis.",
+    "indications": [
+      "Colorectal Cancer: adjuvant treatment of patients with Stage III colon cancer as a single agent or as a component of a combination chemotherapy regimen (1.1)",
+      "Colorectal Cancer: perioperative treatment of adults with locally advanced rectal cancer as a component of chemoradiotherapy (1.1)",
+      "Colorectal Cancer: treatment of patients with unresectable or metastatic colorectal cancer as a single agent or as a component of a combination chemotherapy regimen (1.1)",
+      "Breast Cancer: treatment of patients with advanced or metastatic breast cancer as a single agent if an anthracycline- or taxane-containing chemotherapy is not indicated (1.2)",
+      "Breast Cancer: treatment of patients with advanced or metastatic breast cancer in combination with docetaxel after disease progression on prior anthracycline-containing chemotherapy (1.2)",
+      "Gastric, Esophageal, or Gastroesophageal Junction Cancer: treatment of adults with unresectable or metastatic gastric, esophageal, or gastroesophageal junction cancer as a component of a combination chemotherapy regimen (1.3)",
+      "Gastric, Esophageal, or Gastroesophageal Junction Cancer: treatment of adults with HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma who have not received prior treatment for metastatic disease as a component of a combination regimen (1.3)",
+      "Pancreatic Cancer: adjuvant treatment of adults with pancreatic adenocarcinoma as a component of a combination chemotherapy regimen (1.4)"
+    ],
+    "contraindications": [
+      "History of severe hypersensitivity reaction to fluorouracil or capecitabine (4)"
+    ],
+    "side_effects": [
+      "Palmar-plantar erythrodysesthesia syndrome (hand-foot syndrome) — 60% (grade 3/4: 17%) adjuvant colon; 54% (g3 17%) metastatic colorectal; 63% (g3 24%) with docetaxel; 57% (g3 11%) single-agent breast",
+      "Diarrhea — 47% (g3/4 12%) adjuvant colon; 55% (g3 13%, g4 2%) metastatic colorectal; 67% (g3 14%) with docetaxel; 57% (g3 12%, g4 3%) single-agent breast",
+      "Nausea — 34% (adjuvant colon); 43% (metastatic colorectal); 45% (with docetaxel); 53% (single-agent breast)",
+      "Anemia — 80% (g3 2%) metastatic colorectal; 72% single-agent breast",
+      "Stomatitis — 22% (adjuvant colon); 25% (metastatic colorectal); 67% (with docetaxel); 24% (single-agent breast)",
+      "Vomiting — 15% (adjuvant colon); 27% (metastatic colorectal); 35% (with docetaxel); 37% (single-agent breast)",
+      "Abdominal pain — 14% (adjuvant colon); 35% (metastatic colorectal); 30% (with docetaxel); 20% (single-agent breast)",
+      "Fatigue / asthenia — fatigue 16% (adjuvant colon); 42% (metastatic colorectal); 22% (with docetaxel); 41% (single-agent breast); asthenia 10% (adjuvant colon)",
+      "Hyperbilirubinemia — 48% (g3 18%, g4 5%) metastatic colorectal; grade 3 in 15% and grade 4 in 3.9% of single-agent patients",
+      "Lymphopenia — 94% (g3 44%, g4 15%) single-agent breast; lymphocytes decreased 13% (g3/4) adjuvant colon",
+      "Neutropenia — 13% (metastatic colorectal); 26% (single-agent breast); 86% (g3 20%, g4 49%) with docetaxel",
+      "Thrombocytopenia — 24% (single-agent breast); 41% (with docetaxel)",
+      "Dermatitis — 27% (metastatic colorectal); 37% (single-agent breast)",
+      "Alopecia — 41% (with docetaxel)",
+      "Edema — 15% (metastatic colorectal); 33% (with docetaxel)",
+      "Decreased appetite / anorexia — 26% (metastatic colorectal); 23% (single-agent breast)",
+      "Constipation — 14% (metastatic colorectal); 20% (with docetaxel); 15% (single-agent breast)",
+      "Dyspnea — 14% (metastatic colorectal)",
+      "Eye irritation — 13% (metastatic colorectal); 15% (single-agent breast)",
+      "Paresthesia — 21% (single-agent breast)"
+    ],
+    "dosage": {
+      "adult": "Regimen depends on indication (all orally twice daily): adjuvant colon cancer single agent 1,250 mg/m2 days 1-14 of 21-day cycle x max 8 cycles; with oxaliplatin 1,000 mg/m2 days 1-14 x max 8 cycles; perioperative rectal cancer with radiation 825 mg/m2 twice daily (without radiation 1,250 mg/m2); unresectable/metastatic colorectal cancer single agent 1,250 mg/m2 days 1-14 of 21-day cycle until progression/unacceptable toxicity, or 1,000 mg/m2 with oxaliplatin; advanced/metastatic breast cancer single agent 1,000 or 1,250 mg/m2 days 1-14 of 21-day cycle (or 1,000 mg/m2 days 1-14 with docetaxel 75 mg/m2 IV day 1); unresectable/metastatic gastric/esophageal/GEJ 625 mg/m2 twice daily days 1-21 of 21-day cycle x max 8 cycles with platinum, OR 850 or 1,000 mg/m2 days 1-14 with oxaliplatin, OR (HER2+) 1,000 mg/m2 days 1-14 with cisplatin + trastuzumab; pancreatic adenocarcinoma adjuvant 830 mg/m2 twice daily days 1-21 of 28-day cycle x max 6 cycles with gemcitabine. Round doses to nearest 150 mg; take within 30 min after a meal ~12 h apart.",
+      "maximum": "No single absolute maximum mg dose is established in the label; the highest recommended dose is 1,250 mg/m2 orally twice daily (days 1-14 of each 21-day cycle). Reduce dose by 25% for CLcr 30-50 mL/min; a dosage has not been established for CLcr <30 mL/min. Dose modifications for adverse reactions per Table 1 (grade 2/3/4 events: withhold, resume at 100%/75%/50% or permanently discontinue)."
+    },
+    "adult_dosing": "See dosage.adult. Key labeled regimens: (1) Adjuvant Stage III colon cancer: single agent 1,250 mg/m2 PO twice daily days 1-14 of each 21-day cycle for max 8 cycles; with oxaliplatin-containing regimens 1,000 mg/m2 PO twice daily days 1-14 of each 21-day cycle for max 8 cycles plus oxaliplatin 130 mg/m2 IV day 1. (2) Perioperative locally advanced rectal cancer: 825 mg/m2 PO twice daily with concomitant radiation therapy, or 1,250 mg/m2 twice daily without radiation therapy. (3) Unresectable/metastatic colorectal cancer: single agent 1,250 mg/m2 twice daily days 1-14 of 21-day cycle until disease progression or unacceptable toxicity; in combination with oxaliplatin 1,000 mg/m2 twice daily days 1-14 of 21-day cycle plus oxaliplatin 130 mg/m2 IV day 1. (4) Advanced/metastatic breast cancer: single agent 1,000 or 1,250 mg/m2 twice daily days 1-14 of 21-day cycle; with docetaxel 1,000 or 1,250 mg/m2 twice daily days 1-14 of 21-day cycle plus docetaxel 75 mg/m2 IV day 1. (5) Unresectable/metastatic gastric/esophageal/GEJ cancer: 625 mg/m2 twice daily days 1-21 of 21-day cycle for max 8 cycles with platinum-containing chemotherapy, OR 850 or 1,000 mg/m2 twice daily days 1-14 of 21-day cycle with oxaliplatin 130 mg/m2 IV day 1; HER2-overexpressing metastatic gastric/GEJ adenocarcinoma: 1,000 mg/m2 twice daily days 1-14 of 21-day cycle with cisplatin and trastuzumab. (6) Adjuvant pancreatic adenocarcinoma: 830 mg/m2 twice daily days 1-21 of 28-day cycle for max 6 cycles with gemcitabine 1,000 mg/m2 IV days 1, 8, 15. Do not replace missed doses; resume with next planned dose. When given with docetaxel, withhold both until requirements for resuming both are met.",
+    "pediatric_dosing": "Safety and effectiveness of XELODA in pediatric patients have not been established. Safety and effectiveness were assessed, but not established, in two single-arm studies in 56 pediatric patients aged 3 months to <17 years with newly diagnosed gliomas; pediatric patients received an investigational pediatric formulation concomitantly with and following radiation therapy (total dose 5580 cGy in 180 cGy fractions). The relative bioavailability of the investigational formulation to XELODA was similar. Adverse reaction profile was consistent with adults except laboratory abnormalities occurred more commonly (ALT increased 75%, lymphocytopenia 73%, hypokalemia 68%, thrombocytopenia 57%, hypoalbuminemia 55%, neutropenia 50%, low hematocrit 50%, hypocalcemia 48%, hypophosphatemia 45%, hyponatremia 45%).",
+    "interactions": [
+      "Allopurinol: concomitant use may decrease concentration of capecitabine's active metabolites (FdUMP and FUTP), which may decrease efficacy — avoid concomitant use (7.1)",
+      "Leucovorin (and folic acid/folate analog products): the concentration of fluorouracil is increased and its toxicity may be enhanced; deaths from severe enterocolitis, diarrhea and dehydration have been reported in elderly patients receiving weekly leucovorin and fluorouracil — closely monitor for toxicities; instruct patients not to take folic acid/folate analog products unless directed (7.1)",
+      "CYP2C9 substrates (e.g., anticoagulants, antidiabetic drugs): XELODA increased exposure of CYP2C9 substrates (celecoxib AUC +28%); closely monitor for adverse reactions where minimal concentration changes may lead to serious adverse reactions (7.2)",
+      "Vitamin K antagonists (e.g., warfarin): XELODA increases exposure of vitamin K antagonists (S-warfarin AUC +57%, clearance -37%; INR AUC increased 2.8-fold; mean max INR +91%); altered coagulation parameters and/or bleeding, including death, have been reported; events may occur within days of initiation and up to 1 month after discontinuation, in patients with and without liver metastases — monitor INR more frequently and adjust the vitamin K antagonist dose as appropriate (5.2, 7.2)",
+      "Phenytoin: XELODA may increase exposure of phenytoin, which may increase the risk of adverse reactions related to phenytoin — closely monitor phenytoin levels and adjust the phenytoin dose as appropriate (7.2)",
+      "Nephrotoxic drugs (e.g., platinum salts, irinotecan, methotrexate, intravenous bisphosphonates): additive pharmacologic effect may increase the risk of renal toxicity — closely monitor for signs of renal toxicity when used concomitantly (7.3)"
+    ],
+    "monitoring": "Before initiation: test patients for genetic variants of the DPYD gene unless immediate treatment is necessary (avoid XELODA in patients with certain homozygous or compound heterozygous DPYD variants resulting in complete DPD deficiency); verify pregnancy status in females of reproductive potential. During treatment: monitor complete blood count at baseline and before each cycle (XELODA not recommended if baseline neutrophils <1.5 x 10^9/L or platelets <100 x 10^9/L); monitor renal function at baseline and as clinically indicated and optimize/maintain hydration; monitor hydration status; monitor INR more frequently and adjust dose of vitamin K antagonist as appropriate (events may occur within days of initiation and up to 1 month after discontinuation); closely monitor phenytoin levels with concomitant phenytoin; closely monitor adverse reactions of CYP2C9 substrates (e.g., anticoagulants, antidiabetic drugs); closely monitor for signs of renal toxicity with concomitant nephrotoxic drugs; monitor patients with hepatic impairment more frequently for adverse reactions; monitor for new or worsening serious skin reactions, diarrhea, cardiotoxicity, hyperbilirubinemia (may resume after Grade <=2 or <=3x ULN), palmar-plantar erythrodysesthesia syndrome, and mucositis; monitor for signs of bleeding.",
+    "patient_counselling": "Advise patients to read the FDA-approved patient labeling. Key points: (1) DPD deficiency — inform patients of the potential for serious or fatal adverse reactions due to DPD deficiency and DPYD testing before treatment unless immediate treatment is necessary; advise immediate contact of healthcare provider if severe symptoms of mucositis, diarrhea, neutropenia or neurotoxicity occur. (2) Vitamin K antagonists — advise patients on warfarin/vitamin K antagonists of increased risk of severe bleeding; INR should be monitored more frequently and dose modifications may be required during and after discontinuation of XELODA; contact provider immediately for signs of bleeding. (3) Cardiotoxicity — contact provider immediately for new-onset chest pain, shortness of breath, dizziness or lightheadedness. (4) Diarrhea — stop XELODA for grade >=2 diarrhea (increase of 4-6 stools/day or nocturnal stools) or severe bloody diarrhea with severe abdominal pain and fever; antidiarrheals (e.g., loperamide) may be used as directed. (5) Dehydration — stop XELODA for grade >=2 dehydration; do not restart until rehydrated and precipitating causes corrected. (6) Renal toxicity — contact provider immediately for decreased urinary output or other signs/symptoms. (7) Serious skin toxicities — contact provider immediately for skin rash, blistering or peeling. (8) PPES — stop XELODA for grade >=2 PPES; symptomatic treatment recommended; can lead to loss of fingerprints affecting personal identification. (9) Myelosuppression — contact provider immediately for fever >=100.5 F or other signs of infection. (10) Hyperbilirubinemia — contact provider for jaundice/icterus. (11) Embryo-fetal toxicity — advise of potential fetal risk; effective contraception during treatment and for 6 months (females) / 3 months (males) after last dose; inform provider of known/suspected pregnancy. (12) Lactation — do not breastfeed during treatment and for 1 week after last dose. (13) Infertility — may impair fertility. (14) Hypersensitivity/angioedema — known hypersensitivity to capecitabine or 5-fluorouracil should be disclosed; stop XELODA and seek emergency care for urticaria, rash, erythema, pruritus, or swelling of face/lips/tongue/throat with difficulty swallowing or breathing. (15) Nausea/vomiting/stomatitis — stop XELODA for grade >=2 nausea, grade >=2 vomiting (2-5 episodes/24 h), or grade >=2 stomatitis and contact provider. (16) Administration — swallow tablets whole with water within 30 minutes after a meal, twice daily ~12 hours apart; do not chew, cut or crush tablets; hazardous drug — safe handling. (17) Drug interactions — do not take folic acid or folate analog products (e.g., leucovorin, levoleucovorin) unless directed; inform provider of all prescription/nonprescription medications, vitamins and herbal products.",
+    "warnings": [
+      "Serious adverse reactions or death from dihydropyrimidine dehydrogenase (DPD) deficiency: patients with certain homozygous or compound heterozygous variants in the DPYD gene known to result in complete or near complete absence of DPD activity are at increased risk for acute early-onset toxicity and serious, including fatal, adverse reactions (e.g., mucositis, diarrhea, neutropenia, and neurotoxicity). Patients with partial DPD deficiency may also have increased risk of serious or fatal adverse reactions. Prior to initiating XELODA, test patients for genetic variants of the DPYD gene unless immediate treatment is necessary. Serious adverse reactions may still occur even if no DPYD variants are identified. Avoid XELODA in patients with certain homozygous or compound heterozygous DPYD variants that result in complete DPD deficiency. Withhold or permanently discontinue based on clinical assessment of onset, duration and severity of reactions. No XELODA dose has been proven safe for patients with complete DPD deficiency. Individualize dosage and modify based on tolerability and intent of treatment for partial DPD deficiency (5.1)",
+      "Increased risk of bleeding with concomitant use of vitamin K antagonists: altered coagulation parameters and/or bleeding, including death, have been reported in patients taking XELODA concomitantly with vitamin K antagonists, such as warfarin. Clinically significant increases in PT and INR have been reported in patients on stable doses of oral vitamin K antagonists at the time XELODA was introduced; events occurred within several days and up to several months after initiating XELODA and, in a few cases, within 1 month after stopping. Events occurred in patients with and without liver metastases. Monitor INR more frequently and adjust the vitamin K antagonist dose as appropriate (5.2)",
+      "Cardiotoxicity: myocardial infarction/ischemia, angina, dysrhythmias, cardiac arrest, cardiac failure, sudden death, electrocardiographic changes, and cardiomyopathy have been reported; may be more common in patients with a prior history of coronary artery disease. Withhold XELODA for cardiotoxicity as appropriate; safety of resumption after resolved cardiotoxicity has not been established (5.3)",
+      "Diarrhea: diarrhea, sometimes severe, can occur. In 875 patients with metastatic breast or colorectal cancer receiving single-agent XELODA, median time to first grade 2-4 diarrhea was 34 days (range 1 day to 1 year); median duration of grade 3-4 diarrhea was 5 days. Withhold and then resume at same or reduced dose or permanently discontinue based on severity and occurrence (5.4)",
+      "Dehydration: dehydration can occur; patients with anorexia, asthenia, nausea, vomiting, or diarrhea are at increased risk. Optimize hydration before starting; monitor hydration status and kidney function at baseline and as clinically indicated; withhold and resume at same or reduced dose or permanently discontinue based on severity/occurrence (5.5)",
+      "Renal toxicity: serious renal failure, sometimes fatal, can occur. Renal impairment or coadministration with other products known to cause renal toxicity may increase risk. Monitor renal function at baseline and as clinically indicated; optimize hydration before starting (5.6)",
+      "Serious skin toxicities: severe cutaneous adverse reactions (SCARs), including Stevens-Johnson syndrome and toxic epidermal necrolysis (TEN), which can be fatal, can occur. Monitor for new or worsening serious skin reactions; permanently discontinue XELODA for severe cutaneous adverse reactions (5.7)",
+      "Palmar-plantar erythrodysesthesia syndrome (PPES): can occur; in patients receiving single-agent XELODA, median time to onset of grades 1-3 PPES was 2.6 months (range 11 days to 1 year). Withhold then resume at same or reduced dose or permanently discontinue based on severity/occurrence (5.8)",
+      "Myelosuppression: can occur; in 875 single-agent patients, 3.2% grade 3/4 neutropenia, 1.7% grade 3/4 thrombocytopenia, 2.4% grade 3/4 anemia; in 251 metastatic breast cancer patients receiving XELODA + docetaxel, 68% grade 3/4 neutropenia, 2.8% grade 3/4 thrombocytopenia, 10% grade 3/4 anemia. Necrotizing enterocolitis (typhlitis) has been reported — consider in patients with fever, neutropenia and abdominal pain. Monitor CBC at baseline and before each cycle; not recommended if baseline neutrophils <1.5 x 10^9/L or platelets <100 x 10^9/L (5.9)",
+      "Hyperbilirubinemia: can occur; grade 3 in 15% and grade 4 in 3.9% of 875 single-agent patients; grade 3/4 more frequent with hepatic metastases at baseline (23% vs 12%). Patients with grade 3-4 hyperbilirubinemia may resume once event is grade <=2 (<=3x ULN) using the percent of current dose in Table 1 (5.10)",
+      "Embryo-fetal toxicity: based on animal reproduction studies and mechanism of action, XELODA can cause fetal harm. Advise pregnant women of potential risk to a fetus; advise females of reproductive potential to use effective contraception during treatment and for 6 months after the last dose; advise males with female partners of reproductive potential to use effective contraception during treatment and for 3 months after the last dose (5.11)",
+      "Eye irritation, skin rash, and other adverse reactions from exposure to crushed tablets: eye irritation and swelling, skin rash, diarrhea, paresthesia, headache, gastric irritation, vomiting and nausea reported. Advise patients not to cut or crush tablets; if tablets must be cut/crushed, this should be done by a professional trained in safe handling of cytotoxic drugs using appropriate equipment and safety procedures (5.12)"
+    ],
+    "precautions": [
+      "Partial DPD deficiency: insufficient data to recommend a specific dose; individualize the dosage and modify based on tolerability and intent of treatment (2.1, 5.1)",
+      "Serious adverse reactions may still occur even if no DPYD variants are identified (5.1)",
+      "Renal impairment: reduce dosage for CLcr 30-50 mL/min (25% reduction); limited experience in CLcr <30 mL/min — dosage not established; if no alternative exists, administer on an individual basis with reduced starting dose and close monitoring (2.7, 8.6)",
+      "Hepatic impairment: exposure of capecitabine increases in mild to moderate hepatic impairment; effect of severe hepatic impairment unknown; monitor more frequently for adverse reactions (8.7)",
+      "Geriatric use: older patients experience increased gastrointestinal toxicity compared to younger patients; deaths from severe enterocolitis, diarrhea and dehydration reported in elderly patients receiving weekly leucovorin and fluorouracil (8.5)",
+      "Patients with prior history of coronary artery disease may be at increased risk of cardiotoxicity (5.3)",
+      "Patients with anorexia, asthenia, nausea, vomiting or diarrhea are at increased risk of dehydration (5.5)",
+      "XELODA is a hazardous drug — follow applicable special handling and disposal procedures; do not cut or crush tablets (2.8, 5.12, 16)",
+      "Do not replace missed doses; resume with the next planned dosage (2.6)",
+      "Infertility: based on animal studies, XELODA may impair fertility in females and males of reproductive potential (8.3)",
+      "Pregnancy testing required in females of reproductive potential prior to initiating XELODA (8.3)"
+    ],
+    "serious_adverse_reactions": [
+      "Serious, including fatal, adverse reactions in patients with complete DPD deficiency — acute early-onset toxicity including mucositis, diarrhea, neutropenia, and neurotoxicity (Boxed Warning, 5.1)",
+      "Altered coagulation parameters and/or bleeding, including death, with concomitant vitamin K antagonists such as warfarin (Boxed Warning, 5.2)",
+      "Cardiotoxicity — myocardial infarction/ischemia, angina, dysrhythmias, cardiac arrest, cardiac failure, sudden death, cardiomyopathy, electrocardiographic changes (5.3)",
+      "Serious renal failure, sometimes fatal (5.6); acute renal failure secondary to dehydration including fatal outcome (postmarketing, 6.2)",
+      "Severe cutaneous adverse reactions (SCARs), including Stevens-Johnson syndrome and toxic epidermal necrolysis (TEN), which can be fatal (5.7); postmarketing cutaneous lupus erythematosus (6.2)",
+      "Necrotizing enterocolitis (typhlitis) — reported; consider in patients with fever, neutropenia and abdominal pain (5.9)",
+      "Deaths from severe enterocolitis, diarrhea and dehydration reported in elderly patients receiving weekly leucovorin and fluorouracil (7.1, 8.5)",
+      "Hepatic failure (postmarketing, 6.2); hepatic failure, hepatic coma, hepatotoxicity reported (6.1)",
+      "Angioedema (postmarketing, 6.2); serious hypersensitivity reactions (17)",
+      "Toxic leukoencephalopathy (postmarketing, 6.2); encephalopathy reported (6.1 pooled)",
+      "Grade 3/4 hyperbilirubinemia (15% grade 3, 3.9% grade 4 single-agent) (5.10)",
+      "Grade 3/4 myelosuppression — neutropenia, thrombocytopenia, anemia (5.9); febrile neutropenia 16% (g3 3%, g4 13%) with docetaxel (6.1)",
+      "Thrombotic/embolic events: venous thrombosis and pulmonary embolism reported (6.1)",
+      "Loss of fingerprints with persistent or severe PPES (postmarketing, 6.2)"
+    ],
+    "food_interactions": [
+      "Take within 30 minutes after a meal; swallow tablets whole with water (2.8, 17)",
+      "Food effect: following a meal (breakfast medium-rich in fat and carbohydrates), mean Cmax and AUC0-INF of capecitabine decreased by 60% and 34% respectively; mean Cmax and AUC0-INF of fluorouracil decreased by 37% and 12% respectively; Tmax of both capecitabine and fluorouracil delayed by 1.5 hours (12.3)",
+      "Antacids: administration of an aluminum hydroxide- and magnesium hydroxide-containing antacid immediately after a XELODA dose increased AUC and Cmax by 16% and 35% for capecitabine and by 18% and 22% for 5'-DFCR; no effect on 5'-DFUR, fluorouracil or FBAL (12.3)",
+      "Folic acid/folate analog products (e.g., leucovorin, levoleucovorin): instruct patients not to take these unless directed by their healthcare provider, as they enhance fluorouracil toxicity (7.1, 17)"
+    ],
+    "pregnancy_category": "Narrative (PLLR) label statement — no letter category assigned. Pregnancy Risk Summary: 'Based on findings from animal reproduction studies and its mechanism of action, XELODA can cause fetal harm when administered to a pregnant woman. Available human data with XELODA use in pregnant women is not sufficient to inform the drug-associated risk. In animal reproduction studies, administration of capecitabine to pregnant animals during the period of organogenesis caused embryolethality and teratogenicity in mice and embryolethality in monkeys at 0.2 and 0.6 times the exposure (AUC) in patients receiving the recommended dose of 1,250 mg/m2 twice daily. Advise pregnant women of the potential risk to a fetus. The estimated background risk of major birth defects and miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively.' In mice, doses of 198 mg/kg/day caused malformations (cleft palate, anophthalmia, microphthalmia, oligodactyly, polydactyly, syndactyly, kinky tail, dilation of cerebral ventricles) and embryo lethality; in monkeys, 90 mg/kg/day caused fetal lethality.",
+    "pregnancy_guidance": "Verify pregnancy status in females of reproductive potential prior to initiating XELODA. Advise pregnant women of the potential risk to a fetus; XELODA can cause embryolethality and teratogenicity. Advise females of reproductive potential to use effective contraception during treatment with XELODA and for 6 months after the last dose. Advise males with female partners of reproductive potential to use effective contraception during treatment with XELODA and for 3 months after the last dose. Based on genotoxicity findings. XELODA may impair fertility in females and males of reproductive potential. Advise females to inform their healthcare provider of a known or suspected pregnancy.",
+    "lactation_guidance": "There is no information regarding the presence of capecitabine or its metabolites in human milk, or on its effects on milk production or the breastfed child. Capecitabine metabolites were present in the milk of lactating mice (lactating mice given a single oral dose excreted significant amounts of capecitabine metabolites into milk). Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatment with XELODA and for 1 week after the last dose.",
+    "overdose": "Administer uridine triacetate within 96 hours for management of XELODA overdose. Although no clinical experience using dialysis as a treatment for XELODA overdose has been reported, dialysis may be of benefit in reducing circulating concentrations of 5'-DFUR, a low-molecular-weight metabolite of the parent compound.",
+    "pharmacokinetics": "Absorption: after oral XELODA 1,255 mg/m2 twice daily, median Tmax of capecitabine ~1.5 h and of fluorouracil ~2 h. AUC of capecitabine and 5'-DFCR increases proportionally over 500-3,500 mg/m2/day; AUC of 5'-DFUR and fluorouracil increases greater than proportionally; interpatient variability in Cmax and AUC of fluorouracil >85%. Distribution: plasma protein binding of capecitabine and metabolites <60%, not concentration-dependent; capecitabine primarily bound to human albumin (~35%). Elimination: elimination half-lives of capecitabine and fluorouracil ~0.75 hour. Metabolism: carboxylesterase hydrolyzes capecitabine to 5'-DFCR; cytidine deaminase converts 5'-DFCR to 5'-DFUR; thymidine phosphorylase (dThdPase) hydrolyzes 5'-DFUR to active fluorouracil; fluorouracil is metabolized by dihydropyrimidine dehydrogenase to FUH2, then dihydropyrimidinase to FUPA, then beta-ureido-propionase to FBAL. Excretion: after radiolabeled capecitabine, 96% recovered in urine (3% unchanged, 57% as FBAL) and 2.6% in feces. Effect of food: high-fat/carb meal decreased capecitabine Cmax 60% and AUC 34%, delayed Tmax by 1.5 h. Tumor:color ratio of fluorouracil concentration in colorectal tumors to adjacent tissues median 2.9 (range 0.9-8.0). Renal impairment: CLcr 30-50 mL/min increases AUC of capecitabine ~25%, 5'-DFUR ~42%, FBAL ~85%; CLcr <30 mL/min increases 25%/71%/258% and 5-FU ~24%. Hepatic impairment: mild-moderate — fluorouracil AUC/Cmax unaffected, capecitabine AUC/Cmax increased ~60%; severe impairment unknown. Warfarin: S-warfarin AUC +57%, clearance -37%, INR AUC +2.8-fold. Celecoxib (CYP2C9): AUC +28%, Cmax +24%, Ctrough +30%. Japanese patients: capecitabine Cmax/AUC decreased 36%/24% vs White patients; clinical significance unknown. No clinically meaningful differences by sex, race or age (FBAL AUC +15% per 20% age increase).",
+    "clinical_pearls": [
+      "Test for DPYD genetic variants before initiating XELODA unless immediate treatment is necessary; avoid in patients with certain homozygous or compound heterozygous DPYD variants resulting in complete DPD deficiency — no XELODA dose has been proven safe in complete DPD deficiency (2.1, 5.1)",
+      "Serious adverse reactions may occur even in patients without identified DPYD variants — monitor clinically regardless (5.1)",
+      "Capecitabine is an oral fluoropyrimidine (oral prodrug of 5-fluorouracil) activated preferentially in tumor tissue via thymidine phosphorylase (12.1)",
+      "Reduce dose by 25% for CLcr 30-50 mL/min (Cockcroft-Gault); a dosage has not been established for CLcr <30 mL/min (2.7, 8.6)",
+      "Warfarin interaction can be life-threatening — monitor INR more frequently and adjust the vitamin K antagonist dose; events may occur within days of initiation and up to 1 month after discontinuation, with or without liver metastases (5.2, 7.2)",
+      "Phenytoin: closely monitor phenytoin levels and adjust dose; XELODA may increase phenytoin exposure (7.2)",
+      "Avoid allopurinol — it may decrease conversion to active metabolites and reduce efficacy (7.1)",
+      "Take within 30 minutes after a meal, twice daily ~12 hours apart; swallow whole — do not chew, cut or crush (2.8); an FDA-authorized DPYD test is not currently available (2.1)",
+      "Grade 2/3/4 adverse reactions: withhold and resume at 100%/75%/50% of current dose or permanently discontinue per Table 1 (2.6)",
+      "Round recommended dosage to the nearest 150 mg to provide whole tablets; 150 mg and 500 mg film-coated tablets (2.8, 3, 16)",
+      "XELODA is a hazardous drug — follow special handling and disposal procedures (2.8, 16)",
+      "Uridine triacetate is the antidote for overdose, given within 96 hours (10)"
+    ],
+    "brand_names": [
+      "Xeloda"
+    ],
+    "black_box_warnings": [
+      "WARNING: SERIOUS ADVERSE REACTIONS OR DEATH IN PATIENTS WITH COMPLETE DPD DEFICIENCY and INCREASED RISK OF BLEEDING WITH CONCOMITANT USE OF VITAMIN K ANTAGONISTS — Increased risk of serious adverse reactions or death in patients with complete DPD deficiency: Test patients for genetic variants of DPYD prior to initiating XELODA unless immediate treatment is necessary. Avoid use of XELODA in patients with certain homozygous or compound heterozygous DPYD variants that result in complete DPD deficiency. (Boxed Warning, 5.1)",
+      "Increased risk of bleeding with concomitant use of vitamin K antagonists: Altered coagulation parameters and/or bleeding, including death, have been reported in patients taking XELODA concomitantly with oral vitamin K antagonists, such as warfarin. Clinically significant increases in prothrombin time (PT) and international normalized ratio (INR) have been reported in patients who were on stable doses of a vitamin K antagonist at the time XELODA was introduced. These events occurred in patients with and without liver metastases. Monitor INR more frequently and adjust the dose of the vitamin K antagonist as appropriate. (Boxed Warning, 5.2, 7.2)"
+    ],
+    "renal_dose_adjustment": "Reduce the dose of XELODA by 25% for patients with creatinine clearance (CLcr) of 30 to 50 mL/min as determined by the Cockcroft-Gault equation. A dosage has not been established in patients with severe renal impairment (CLcr <30 mL/min); there is limited experience, and if no treatment alternative exists, XELODA could be administered on an individual basis applying a reduced starting dose with close monitoring of clinical and biochemical data and dose modifications guided by observed adverse reactions. Exposure of capecitabine and its inactive metabolites (5'-DFUR and FBAL) increases in patients with CLcr <50 mL/min; CLcr 30-50: AUC +25% capecitabine, +42% 5'-DFUR, +85% FBAL; CLcr <30: +25%, +71%, +258%, +24% 5-FU. Monitor renal function at baseline and as clinically indicated; optimize hydration before starting.",
+    "hepatic_dose_adjustment": "The label does not specify a hepatic dose reduction. Exposure of capecitabine increases in patients with mild to moderate hepatic impairment (AUC and Cmax of capecitabine increased by 60%; fluorouracil AUC/Cmax unaffected). The effect of severe hepatic impairment on the safety and pharmacokinetics of XELODA is unknown. Monitor patients with hepatic impairment more frequently for adverse reactions. Patients with grade 3-4 hyperbilirubinemia may resume treatment once the event is grade <=2 (<=3x ULN), using the percent of current dose in Table 1.",
+    "administration_instructions": "Round the recommended dosage for patients to the nearest 150 mg dose to provide whole XELODA tablets. Swallow XELODA tablets whole with water within 30 minutes after a meal. Do not chew, cut, or crush XELODA tablets. Take XELODA at the same time each day approximately 12 hours apart. Do not take an additional dose after vomiting and continue with the next scheduled dose. Do not take a missed dose and continue with the next scheduled dose. XELODA is a hazardous drug — follow applicable special handling and disposal procedures. If XELODA tablets must be cut or crushed, this should be done by a professional trained in safe handling of cytotoxic drugs using appropriate equipment and safety procedures. Store at 20-25 C (68-77 F); excursions permitted to 15-30 C (59-86 F); keep tightly closed. Supplied as 150 mg (light peach) and 500 mg (peach) film-coated tablets; XELODA 150 mg 'XELODA;150' in bottles of 60 (NDC 61269-470-60); XELODA 500 mg 'XELODA;500' in bottles of 120 (NDC 61269-475-12)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "indications",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 1, 1.1-1.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "contraindications",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "side_effects",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "dosage",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2, 2.1-2.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.2-2.6, 2.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 8.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "interactions",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 7.1-7.3, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "monitoring",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.1, 2.6, 5.1-5.10, 7.1-7.3, 8.3, 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "warnings",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 5.1-5.12",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "precautions",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.1, 2.6, 2.7, 2.8, 5.1, 5.3, 5.5, 5.12, 8.3, 8.5, 8.6, 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section Boxed Warning, 5.1-5.10, 6.1, 6.2, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.8, 7.1, 12.3, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 8.1, 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 5.11, 8.1, 8.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 8.2, 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "overdose",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.1, 2.6, 2.7, 2.8, 3, 5.1, 5.2, 7.1, 7.2, 10, 12.1, 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "brand_names",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section Highlights, 3, 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section Boxed Warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.7, 5.6, 8.6, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.6, 5.10, 8.7, 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "XELODA (capecitabine) tablets, for oral use — H2-Pharma, LLC (licensee: CHEPLAPHARM Arzneimittel GmbH), DailyMed setid e702d84d-7162-4751-bf37-d724cc7e45a5, revised 10/2025, section 2.8, 5.12, 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e702d84d-7162-4751-bf37-d724cc7e45a5"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "Product scope: US FDA DailyMed label for XELODA (capecitabine) tablets, for oral use, distributed by H2-Pharma, LLC (Montgomery, AL), licensed by CHEPLAPHARM Arzneimittel GmbH; F. Hoffmann-La Roche originator. Label revised 10/2025; setid e702d84d-7162-4751-bf37-d724cc7e45a5 (verified HTTP 200; title reads 'XELODA (CAPECITABINE) TABLET, FILM COATED [H2-PHARMA, LLC]'); full label text cached at /home/ishi/.cache/clinova/labels/e702d84d-7162-4751-bf37-d724cc7e45a5.txt (and .xml). Boxed warning present and captured verbatim-ish in black_box_warnings (DPD deficiency; vitamin K antagonist bleeding). EMA SmPC / UK emc / WHO monographs were NOT consulted; all content traces to the US label only — a non-US reviewer should cross-check for regional differences (e.g., DPYD testing recommendations and SmPC wording). Gaps/limits: (1) no single absolute maximum mg dose is established in the label — maximum reflects highest recommended mg/m2 regimen and Table 1 modification rules; (2) pediatric safety/effectiveness not established (8.4); (3) pregnancy_category is a PLLR narrative statement, not a letter category; (4) no FDA-authorized DPYD test is currently available per the label (2.1); (5) severe hepatic impairment PK effect unknown (8.7); (6) dosage not established for CLcr <30 mL/min (2.7); (7) many safety claims for combination regimens (gastric/GEJ, pancreatic, HER2+) and the X-ACT combination safety are 'derived from published literature' per the label rather than from new US-registrational trials; (8) indications/labels of other capecitabine generics (e.g., Northstar, Aurobindo, Teva, Cipla, Sun) were not individually cross-checked and may differ in revision date. All 25 fields are populated and sourced; unsourced_fields is empty."
+}

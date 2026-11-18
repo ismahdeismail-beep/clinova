@@ -1,0 +1,228 @@
+{
+  "name": "Canagliflozin",
+  "existing_id": "d5b82f36-2b28-4c65-8601-6b0d43564726",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "SGLT2, expressed in the proximal renal tubules, is responsible for the majority of the reabsorption of filtered glucose from the tubular lumen. Canagliflozin is an inhibitor of SGLT2. By inhibiting SGLT2, canagliflozin reduces reabsorption of filtered glucose and lowers the renal threshold for glucose (RTG), and thereby increases urinary glucose excretion (UGE). Canagliflozin increases the delivery of sodium to the distal tubule by blocking SGLT2-dependent glucose and sodium reabsorption, which is believed to increase tubuloglomerular feedback and reduce intraglomerular pressure (FDA INVOKANA label, CLINICAL PHARMACOLOGY 12.1 Mechanism of Action).",
+    "indications": [
+      "As an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients aged 10 years and older with type 2 diabetes mellitus (FDA INVOKANA label, INDICATIONS AND USAGE 1)",
+      "To reduce the risk of major adverse cardiovascular events (cardiovascular death, nonfatal myocardial infarction and nonfatal stroke) in adults with type 2 diabetes mellitus and established cardiovascular disease (CVD) (FDA INVOKANA label, INDICATIONS AND USAGE 1)",
+      "To reduce the risk of end-stage kidney disease (ESKD), doubling of serum creatinine, cardiovascular (CV) death, and hospitalization for heart failure in adults with type 2 diabetes mellitus and diabetic nephropathy with albuminuria greater than 300 mg/day (FDA INVOKANA label, INDICATIONS AND USAGE 1)",
+      "Limitations of use: not recommended to improve glycemic control in patients with type 1 diabetes mellitus, and not recommended to improve glycemic control in patients with type 2 diabetes mellitus with eGFR less than 30 mL/min/1.73 m2 (FDA INVOKANA label, INDICATIONS AND USAGE 1)"
+    ],
+    "contraindications": [
+      "Serious hypersensitivity reaction to INVOKANA, such as anaphylaxis or angioedema (FDA INVOKANA label, CONTRAINDICATIONS 4)"
+    ],
+    "side_effects": [
+      "Most common adverse reactions (5% or greater incidence): female genital mycotic infections (10.6% with 100 mg, 11.6% with 300 mg vs 2.8% placebo), urinary tract infections (5.9% / 4.4% vs 3.8%), increased urination (5.1% / 4.6% vs 0.7%) (FDA INVOKANA label, ADVERSE REACTIONS 6 and 6.1, Table 2)",
+      "Male genital mycotic infections 4.2% (100 mg) and 3.8% (300 mg) vs 0.7% placebo; vulvovaginal pruritus; thirst; constipation; nausea; abdominal pain; fatigue; asthenia (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Table 2 and pool of 8 trials)",
+      "Volume depletion-related adverse reactions (hypotension, postural dizziness, orthostatic hypotension, syncope, dehydration), dose-dependent; overall 2.3% (100 mg) and 3.4% (300 mg) vs 1.5% comparator; 8.7% in patients 75+, 8.1% in eGFR <60, 8.8% on loop diuretics (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Table 5)",
+      "Hypoglycemia when combined with insulin or insulin secretagogues (e.g., 27.4-30.1% with metformin+sulfonylurea; 48.6-49.3% with insulin; higher than comparator) (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Table 6)",
+      "Increases in serum creatinine and decreases in eGFR on initiation; increases in serum potassium in moderate renal impairment (>5.4 mEq/L in 5.0-8.8%); increases in LDL-C (dose-related, ~4.4-8.2 mg/dL) and non-HDL-C; increases in hemoglobin (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Laboratory and Imaging Tests)",
+      "Bone fractures (incidence 1.59 and 1.79 vs 1.09 events per 100 patient-years in CANVAS); decreases in bone mineral density at total hip and lumbar spine over 2 years; falls; phimosis in uncircumcised males (FDA INVOKANA label, ADVERSE REACTIONS 6.1)",
+      "Hypersensitivity reactions including erythema, rash, pruritus, urticaria, angioedema (3.8-4.2% vs 3.0% comparator); photosensitivity reactions (FDA INVOKANA label, ADVERSE REACTIONS 6.1)",
+      "Lower limb amputation: CANVAS 5.9 vs 2.8 events per 1,000 patient-years; CANVAS-R 7.5 vs 4.2; toe and midfoot most frequent (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Tables 3-4)"
+    ],
+    "dosage": {
+      "adult": "100 mg orally once daily, taken before the first meal of the day, to improve glycemic control in adults and pediatric patients aged 10 years and older with type 2 diabetes mellitus. The dosage may be increased to 300 mg once daily in patients tolerating 100 mg who have eGFR of 60 mL/min/1.73 m2 or greater and require additional glycemic control. For the other adult indications (reducing risk of major adverse cardiovascular events in adults with T2DM and established CVD; reducing risk of ESKD, doubling of serum creatinine, CV death, and hospitalization for heart failure in adults with T2DM and diabetic nephropathy with albuminuria >300 mg/day), the recommended dosage is 100 mg once daily. Renal impairment: eGFR 30 to <60 - maximum 100 mg once daily; eGFR <30 - initiation not recommended (adults already taking INVOKANA with albuminuria >300 mg/day may continue 100 mg once daily for the renal indication). UGT enzyme inducers: increase dosage based on renal function (eGFR >=60: increase to 200 mg daily if tolerating 100 mg, max 300 mg; eGFR <60: increase to 200 mg daily max). Assess renal function before initiating and as clinically indicated; assess and correct volume depletion before initiating (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.1-2.4).",
+      "maximum": "300 mg once daily (100 mg once daily when eGFR is 30 to less than 60 mL/min/1.73 m2, or 200 mg once daily when a UGT enzyme inducer is co-administered and eGFR is less than 60 mL/min/1.73 m2) (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.2-2.4)."
+    },
+    "adult_dosing": "100 mg orally once daily before the first meal of the day; may increase to 300 mg once daily for glycemic control if tolerating 100 mg and eGFR >= 60 mL/min/1.73 m2. For cardiovascular event risk reduction and renal/heart failure outcomes, 100 mg once daily. Renal: max 100 mg daily if eGFR 30 to <60; do not initiate if eGFR <30 (continuation allowed for the renal outcome indication with albuminuria >300 mg/day). With UGT inducers, titrate up to 200 mg (max 300 mg if eGFR >=60; max 200 mg if eGFR <60). Withhold at least 3 days before surgery/procedures with prolonged fasting; resume when clinically stable and oral intake resumed. Missed dose: take as soon as possible, do not double (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.1-2.6).",
+    "pediatric_dosing": "Pediatric patients aged 10 years and older with type 2 diabetes mellitus: 100 mg orally once daily before the first meal; may increase to 300 mg once daily in patients tolerating 100 mg with eGFR >= 60 mL/min/1.73 m2 who require additional glycemic control. The safety and effectiveness of INVOKANA for glycemic control have not been established in pediatric patients under 10 years of age, and the cardiovascular and renal risk-reduction indications are not established in pediatric patients (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.2-2.3, USE IN SPECIFIC POPULATIONS 8.4).",
+    "interactions": [
+      "UGT enzyme inducers (rifampin, phenytoin, phenobarbital, ritonavir): decrease canagliflozin exposure, may reduce effectiveness; increase dosage to 200 mg daily in patients tolerating 100 mg (eGFR >=60: may further increase total daily dosage to 300 mg if additional glycemic control required; eGFR <60: 200 mg max and consider adding another antihyperglycemic agent) (FDA INVOKANA label, DRUG INTERACTIONS 7, Table 7)",
+      "Insulin or insulin secretagogues (e.g., sulfonylureas): increased risk of hypoglycemia; concomitant use may require a lower dosage of the insulin secretagogue or insulin (FDA INVOKANA label, DRUG INTERACTIONS 7, Table 7)",
+      "Digoxin: canagliflozin increases digoxin exposure; monitor patients taking INVOKANA with concomitant digoxin for a need to adjust the digoxin dosage (FDA INVOKANA label, DRUG INTERACTIONS 7, Table 7)",
+      "Lithium: concomitant use of an SGLT2 inhibitor with lithium may decrease serum lithium concentrations; monitor serum lithium concentration more frequently during INVOKANA initiation and dosage changes (FDA INVOKANA label, DRUG INTERACTIONS 7, Table 7)",
+      "Drug/laboratory test interference: positive urine glucose tests (monitoring glycemic control with urine glucose tests is not recommended; use alternative methods) and unreliable 1,5-anhydroglucitol (1,5-AG) assay measurements (not recommended for monitoring glycemic control) (FDA INVOKANA label, DRUG INTERACTIONS 7, Table 7)",
+      "No dose adjustment required for cyclosporine and ethinyl estradiol/levonorgestrel based on pharmacokinetic interaction studies (FDA INVOKANA label, CLINICAL PHARMACOLOGY 12.3, Table 8)"
+    ],
+    "monitoring": "Assess renal function before initiating INVOKANA and as clinically indicated; assess and correct volume status before initiating (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.1). Monitor for signs and symptoms of volume depletion after initiation, especially in renal impairment, elderly patients and patients on loop diuretics (WARNINGS AND PRECAUTIONS 5.3). Monitor for lower limb infections, ulcers, pain or tenderness and institute appropriate treatment (5.2). Monitor for signs and symptoms of genitourinary infections and treat promptly; immediately evaluate genital/perineal pain, tenderness, erythema or swelling with fever or malaise for necrotizing fasciitis (5.4). Consider ketone monitoring in patients at risk for ketoacidosis if indicated; assess for ketoacidosis regardless of presenting blood glucose in patients with signs/symptoms of severe metabolic acidosis (5.1). Monitor glycemic control with HbA1c (not urine glucose tests or 1,5-AG assay); monitor the need for digoxin dose adjustment with concomitant digoxin; monitor serum lithium concentrations more frequently during INVOKANA initiation and dosage changes; monitor serum potassium in moderate renal impairment especially with potassium-sparing diuretics, ACE inhibitors or ARBs; monitor for hypoglycemia when used with insulin or insulin secretagogues; monitor blood pressure and lipids as clinically indicated (DRUG INTERACTIONS 7; ADVERSE REACTIONS 6.1).",
+    "patient_counselling": "Take INVOKANA by mouth once daily before the first meal of the day. Educate all patients on the signs and symptoms of ketoacidosis (nausea, vomiting, abdominal pain, tiredness/malaise, labored breathing; blood glucose may be normal) and instruct them to discontinue INVOKANA and seek medical attention immediately if symptoms occur; INVOKANA may be withheld before surgery or procedures requiring prolonged fasting and resumed when clinically stable and eating. Counsel about routine preventative foot care and to report new pain or tenderness, sores, ulcers or infections of the leg or foot immediately. Report signs of genitourinary infections (urinary: burning, frequency, pelvic pain, blood in urine; genital: yeast infection symptoms; seek urgent care for genital/perineal pain, redness or swelling with fever or malaise). Inform patients that symptomatic hypotension/dehydration can occur and to maintain adequate fluid intake, especially if on diuretics, low-sodium diet, with kidney problems or aged 65+. Educate on hypoglycemia risk and symptoms when used with insulin or sulfonylureas. Report signs of allergic reaction (rash, hives, swelling of face/lips/tongue/throat, difficulty breathing) and stop the drug. Report pregnancy as soon as possible; breastfeeding is not recommended. Urine glucose tests will be positive while taking INVOKANA. Missed dose: take as soon as possible, do not double the next dose (FDA INVOKANA label, PATIENT COUNSELING INFORMATION 17; DOSAGE AND ADMINISTRATION 2.5-2.6; WARNINGS AND PRECAUTIONS 5.1-5.7).",
+    "warnings": [
+      "Diabetic ketoacidosis (DKA): INVOKANA significantly increases the risk of DKA in patients with type 1 diabetes (not indicated for type 1 diabetes); postmarketing fatal events of ketoacidosis in type 2 diabetes; risk factors include pancreatic disorders, insulin dose reduction/missed doses, acute febrile illness, reduced caloric intake, ketogenic diet, surgery, volume depletion, alcohol abuse; blood glucose may be below 250 mg/dL; assess for ketoacidosis regardless of presenting blood glucose, discontinue INVOKANA if suspected, treat, and monitor for resolution before restarting (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.1)",
+      "Lower limb amputation: increased risk vs placebo in CANVAS (5.9 vs 2.8 events per 1,000 patient-years) and CANVAS-R (7.5 vs 4.2); toe and midfoot most frequent; risk highest with prior amputation, peripheral vascular disease and neuropathy; counsel on foot care and monitor for infection, new pain/tenderness, sores or ulcers (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.2)",
+      "Volume depletion: can cause intravascular volume contraction manifesting as symptomatic hypotension or acute transient creatinine changes; postmarketing reports of acute kidney injury, some requiring hospitalization and dialysis; assess and correct volume status before initiating in renal impairment, elderly patients and those on loop diuretics; monitor during therapy (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.3)",
+      "Genitourinary infections including urosepsis, pyelonephritis and necrotizing fasciitis of the perineum (Fournier's gangrene, rare life-threatening, requiring urgent surgical intervention, hospitalization, multiple surgeries and death) and genital mycotic infections; monitor and treat promptly; immediately evaluate perineal/genital pain, tenderness, erythema or swelling with fever or malaise; if suspected, discontinue INVOKANA and institute urgent medical/surgical treatment (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.4)",
+      "Hypoglycemia with concomitant insulin or insulin secretagogues: risk increased; consider lower dose of insulin or secretagogue; inform patients of hypoglycemia risk and educate on signs and symptoms (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.5)",
+      "Hypersensitivity reactions: angioedema and anaphylaxis reported, generally within hours to days of initiation; discontinue INVOKANA, treat and monitor until signs and symptoms resolve (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.6)",
+      "Bone fracture: increased risk observed in CANVAS as early as 12 weeks after initiation; consider factors contributing to fracture risk before initiating (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.7)"
+    ],
+    "precautions": [
+      "Renal impairment: efficacy and safety evaluated in moderate renal impairment (eGFR 30 to <50); less overall glycemic efficacy; transiently increased serum potassium with 300 mg in moderate impairment; patients with renal impairment using INVOKANA for glycemic control may have more hypotension and higher risk of acute kidney injury; not studied in ESKD on dialysis or eGFR <30; renal-outcome indication allows continuation at 100 mg for albuminuria >300 mg/day (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.6; DOSAGE AND ADMINISTRATION 2.3)",
+      "Hepatic impairment: no dosage adjustment in mild or moderate hepatic impairment; not recommended in severe hepatic impairment (Child-Pugh C) because it has not been studied (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.7)",
+      "Geriatric use: patients 65+ had higher incidence of volume depletion-related adverse reactions (hypotension, postural dizziness, orthostatic hypotension, syncope, dehydration), particularly with 300 mg; more prominent in 75+; smaller HbA1c reductions vs younger patients (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.5)",
+      "Increases in serum creatinine/decreased eGFR: initiation causes an increase in serum creatinine and decrease in eGFR; in moderate renal impairment increases generally do not exceed 0.2 mg/dL, occur within the first 6 weeks and stabilize; patterns not fitting this should prompt evaluation for acute kidney injury (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Laboratory and Imaging Tests)",
+      "Increases in serum potassium: in moderate renal impairment (eGFR 45 to <60), >5.4 mEq/L increases occurred in 5.0-8.8% and severe elevations >=6.5 mEq/L occurred with 300 mg (1.3%); more common with baseline elevated potassium and with drugs interfering with potassium excretion (potassium-sparing diuretics, ACE inhibitors, ARBs); no significant increase seen in CREDENCE (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Laboratory and Imaging Tests)",
+      "Increases in LDL-C and non-HDL-C: dose-related increases (LDL-C +4.4 mg/dL at 100 mg, +8.2 mg/dL at 300 mg); monitor lipid levels (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Laboratory and Imaging Tests)",
+      "Decreases in bone mineral density: placebo-corrected BMD declines at total hip (0.9-1.2%) and lumbar spine (0.3-0.7%) at 2 years in older adults; consider fracture risk factors (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Laboratory and Imaging Tests)",
+      "Pancreatitis: incidence 0.1-0.2% in pooled trials; pancreatic disorders (history of pancreatitis or pancreatic surgery) are risk factors for ketoacidosis (FDA INVOKANA label, ADVERSE REACTIONS 6.1; WARNINGS AND PRECAUTIONS 5.1)",
+      "Temporary interruption: withhold at least 3 days before surgery or procedures associated with prolonged fasting; resume when clinically stable and oral intake resumed (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.5)"
+    ],
+    "serious_adverse_reactions": [
+      "Diabetic ketoacidosis, including fatal postmarketing events (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.1; ADVERSE REACTIONS 6.2)",
+      "Acute kidney injury, including postmarketing reports requiring hospitalization and dialysis (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.3; ADVERSE REACTIONS 6.2)",
+      "Urosepsis and pyelonephritis (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.4; ADVERSE REACTIONS 6.2)",
+      "Necrotizing fasciitis of the perineum (Fournier's gangrene), requiring urgent surgical intervention; serious outcomes including multiple surgeries and death (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.4; ADVERSE REACTIONS 6.2)",
+      "Lower limb amputation (CANVAS/CANVAS-R increased incidence) (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.2; ADVERSE REACTIONS 6.1)",
+      "Serious hypersensitivity reactions including anaphylaxis and angioedema (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.6; ADVERSE REACTIONS 6.1, 6.2)",
+      "Severe hypoglycemia when combined with insulin or insulin secretagogues (FDA INVOKANA label, ADVERSE REACTIONS 6.1, Table 6)",
+      "Bone fracture (increased incidence in CANVAS, as early as 12 weeks) (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.7; ADVERSE REACTIONS 6.1)"
+    ],
+    "food_interactions": [
+      "INVOKANA may be taken with or without food; co-administration of a high-fat meal had no effect on the pharmacokinetics of canagliflozin. However, because of the potential to reduce postprandial plasma glucose excursions (delayed intestinal glucose absorption), it is recommended that INVOKANA be taken before the first meal of the day (FDA INVOKANA label, CLINICAL PHARMACOLOGY 12.3, Absorption; DOSAGE AND ADMINISTRATION 2.2)",
+      "Alcohol abuse is listed as a precipitating condition for diabetic ketoacidosis/other ketoacidosis; reduced caloric intake and ketogenic diet are also risk factors (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.1)"
+    ],
+    "pregnancy_category": "No FDA pregnancy letter category is assigned (the label uses the PLLR format). The label states: 'Based on juvenile animal data showing adverse renal effects, INVOKANA is not recommended during the second and third trimesters of pregnancy. Limited data with INVOKANA in pregnant women are not sufficient to determine a drug-associated risk for major birth defects or miscarriage. There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy.' (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.1 Pregnancy, Risk Summary).",
+    "pregnancy_guidance": "INVOKANA is not recommended during the second and third trimesters of pregnancy based on juvenile animal data showing adverse renal effects (renal pelvic and tubule dilatations in rats at exposures >=0.5x the 300 mg clinical dose, during a period of renal development corresponding to the late second and third trimesters of human pregnancy; not fully reversible). Limited human data are insufficient to determine drug-associated risk for major birth defects or miscarriage. Poorly controlled diabetes in pregnancy increases maternal risks (ketoacidosis, pre-eclampsia, spontaneous abortion, preterm delivery, delivery complications) and fetal risks (major birth defects, stillbirth, macrosomia-related morbidity); estimated background risk of major birth defects is 6-10% with pre-gestational diabetes and HbA1c >7, up to 20-25% with HbA1c >10 (vs 2-4% in the general US population). Advise pregnant women and females of reproductive potential of the potential risk to a fetus, especially in the second and third trimesters; instruct females of reproductive potential to report pregnancies to their physicians as soon as possible (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.1; PATIENT COUNSELING INFORMATION 17).",
+    "lactation_guidance": "Use of INVOKANA is not recommended while breastfeeding. There is no information on the presence of INVOKANA in human milk, its effects on the breastfed infant, or effects on milk production. Canagliflozin is present in the milk of lactating rats (milk/plasma ratio 1.40). Because human kidney maturation occurs in utero and during the first 2 years of life when lactational exposure may occur, there may be risk to the developing human kidney; because of the potential for serious adverse reactions in a breastfed infant, advise women that use of INVOKANA is not recommended while breastfeeding (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.2 Lactation; PATIENT COUNSELING INFORMATION 17).",
+    "overdose": "In the event of an overdose, contact the Poison Help line (1-800-222-1222) or a medical toxicologist for additional overdosage management recommendations. It is also reasonable to employ usual supportive measures, e.g., remove unabsorbed material from the gastrointestinal tract, employ clinical monitoring, and institute supportive treatment as dictated by the patient's clinical status. Canagliflozin was negligibly removed during a 4-hour hemodialysis session and is not expected to be dialyzable by peritoneal dialysis (FDA INVOKANA label, OVERDOSAGE 10).",
+    "pharmacokinetics": "Tmax 1-2 hours post-dose (median); Cmax and AUC increase dose-proportionally from 50-300 mg; apparent terminal half-life 10.6 h (100 mg) and 13.1 h (300 mg); steady state after 4-5 days of once-daily dosing; accumulation up to 36% with multiple dosing. Mean absolute oral bioavailability ~65%; high-fat meal has no effect on PK. Steady-state volume of distribution 83.5 L; ~99% plasma protein bound (mainly albumin), binding not meaningfully altered by renal/hepatic impairment. O-glucuronidation is the major elimination pathway (UGT1A9 and UGT2B4 to two inactive O-glucuronide metabolites); CYP3A4 oxidative metabolism minimal (~7%). Excretion: 41.5% of radioactive dose recovered in feces as canagliflozin, 7.0% hydroxylated metabolite, 3.2% O-glucuronide; ~33% excreted in urine, mainly as O-glucuronides (30.5%); less than 1% unchanged in urine; renal clearance 1.30-1.55 mL/min; mean systemic clearance ~192 mL/min. Renal impairment: AUC increased ~15%, 29%, 53% in mild, moderate, severe impairment; similar in ESKD; negligibly removed by hemodialysis. Hepatic impairment: class A and B ratios not clinically meaningful; no experience in class C. Age, BMI/weight, gender and race have no clinically meaningful effect. Pediatric (>=10 y): exposures and responses consistent with adults (FDA INVOKANA label, CLINICAL PHARMACOLOGY 12.3).",
+    "clinical_pearls": [
+      "INVOKANA carries FDA indications to reduce major adverse cardiovascular events in adults with T2DM and established CVD, and to reduce ESKD, doubling of serum creatinine, CV death and heart failure hospitalization in T2DM with diabetic nephropathy and albuminuria >300 mg/day (CREDENCE: primary composite HR 0.70; heart failure hospitalization HR 0.61) (FDA INVOKANA label, INDICATIONS AND USAGE 1; CLINICAL STUDIES 14.3-14.4)",
+      "The 300 mg dose provides greater HbA1c reduction than 100 mg but is limited by more volume depletion; reserve 300 mg for tolerating patients with eGFR >=60 who need extra glycemic control (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.2; ADVERSE REACTIONS 6.1)",
+      "Take before the first meal of the day to blunt postprandial glucose excursions via delayed intestinal glucose absorption; it can be taken with or without food otherwise (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.2; CLINICAL PHARMACOLOGY 12.2-12.3)",
+      "Ketoacidosis can occur with normal glucose (<250 mg/dL): always check ketones in SGLT2 patients with compatible symptoms, and stop the drug during prolonged fasting/surgery (withhold at least 3 days) (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.1; DOSAGE AND ADMINISTRATION 2.5)",
+      "Canagliflozin carries a lower limb amputation signal (CANVAS/CANVAS-R): prioritize foot examinations and counsel on prevention, especially with prior amputation, PAD or neuropathy (FDA INVOKANA label, WARNINGS AND PRECAUTIONS 5.2)",
+      "Urinary glucose tests will be positive and 1,5-AG assays are unreliable on this drug - use HbA1c or plasma glucose for monitoring (FDA INVOKANA label, DRUG INTERACTIONS 7)",
+      "In patients on UGT inducers, INVOKANA requires dose escalation (200 mg, or up to 300 mg if eGFR >=60) to maintain efficacy - a titration step flagged in the label (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.4; DRUG INTERACTIONS 7)",
+      "No boxed warning on this label; outcome data (CANVAS, CREDENCE) distinguish canagliflozin's labeled cardiovascular/renal indications (FDA INVOKANA label, HIGHLIGHTS; CLINICAL STUDIES 14.3-14.4)"
+    ],
+    "brand_names": [
+      "INVOKANA"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": "Assess renal function before initiating and as clinically indicated. eGFR 30 to <60 mL/min/1.73 m2: maximum recommended dosage is 100 mg once daily. eGFR less than 30 mL/min/1.73 m2: initiation is not recommended; however, adults already taking INVOKANA with albuminuria >300 mg/day may continue 100 mg once daily to reduce the risk of ESKD, doubling of serum creatinine, CV death and hospitalization for heart failure. Efficacy/safety trials did not enroll ESKD on dialysis or eGFR <30. With UGT inducers: eGFR <60 - max 200 mg daily. Less glycemic efficacy and transient potassium increases in moderate impairment; higher risk of hypotension and acute kidney injury (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.3-2.4; USE IN SPECIFIC POPULATIONS 8.6).",
+    "hepatic_dose_adjustment": "No dosage adjustment is necessary in patients with mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment - differences in Cmax/AUC not clinically meaningful. Use has not been studied in patients with severe (Child-Pugh C) hepatic impairment and is therefore not recommended (FDA INVOKANA label, USE IN SPECIFIC POPULATIONS 8.7; CLINICAL PHARMACOLOGY 12.3).",
+    "administration_instructions": "Take INVOKANA 100 mg or 300 mg tablet orally once daily before the first meal of the day. May be taken with or without food (high-fat meal does not affect pharmacokinetics). Swallow tablets whole. If a dose is missed, take it as soon as possible; do not double the next dose. Withhold at least 3 days before surgery or procedures associated with prolonged fasting; resume when clinically stable and oral intake resumed. Store at 20-25 C (68-77 F); excursions permitted 15-30 C (59-86 F). Tablets: 100 mg yellow capsule-shaped with 'CFZ'/'100'; 300 mg white capsule-shaped with 'CFZ'/'300' (FDA INVOKANA label, DOSAGE AND ADMINISTRATION 2.2, 2.5, 2.6; HOW SUPPLIED/STORAGE 16; DESCRIPTION 11)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, CLINICAL PHARMACOLOGY 12.1 Mechanism of Action",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, INDICATIONS AND USAGE 1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, CONTRAINDICATIONS 4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, ADVERSE REACTIONS 6, 6.1 (Tables 2, 5, 6; Laboratory and Imaging Tests) and 6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.1-2.4; DOSAGE FORMS AND STRENGTHS 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.1-2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.2-2.3; USE IN SPECIFIC POPULATIONS 8.4; CLINICAL STUDIES 14.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DRUG INTERACTIONS 7 (Table 7); CLINICAL PHARMACOLOGY 12.3 (Table 8)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.1; WARNINGS AND PRECAUTIONS 5.1-5.5; DRUG INTERACTIONS 7; ADVERSE REACTIONS 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, PATIENT COUNSELING INFORMATION 17; DOSAGE AND ADMINISTRATION 2.5-2.6; WARNINGS AND PRECAUTIONS 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, WARNINGS AND PRECAUTIONS 5.1-5.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, USE IN SPECIFIC POPULATIONS 8.5-8.7; ADVERSE REACTIONS 6.1; DOSAGE AND ADMINISTRATION 2.3, 2.5; WARNINGS AND PRECAUTIONS 5.1, 5.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, WARNINGS AND PRECAUTIONS 5.1-5.7; ADVERSE REACTIONS 6.1-6.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, CLINICAL PHARMACOLOGY 12.2-12.3 (Absorption); DOSAGE AND ADMINISTRATION 2.2; WARNINGS AND PRECAUTIONS 5.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, USE IN SPECIFIC POPULATIONS 8.1 Pregnancy (Risk Summary)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, USE IN SPECIFIC POPULATIONS 8.1 Pregnancy (Risk Summary, Clinical Considerations, Animal Data); PATIENT COUNSELING INFORMATION 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, USE IN SPECIFIC POPULATIONS 8.2 Lactation (Risk Summary, Data); PATIENT COUNSELING INFORMATION 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "overdose",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, OVERDOSAGE 10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, CLINICAL PHARMACOLOGY 12.3 Pharmacokinetics (Absorption, Distribution, Metabolism, Excretion, Specific Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, INDICATIONS AND USAGE 1; DOSAGE AND ADMINISTRATION 2.2, 2.4, 2.5; WARNINGS AND PRECAUTIONS 5.1, 5.2; DRUG INTERACTIONS 7; CLINICAL STUDIES 14.3-14.4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DESCRIPTION 11; HOW SUPPLIED/STORAGE AND HANDLING 16 (PRINCIPAL DISPLAY PANEL - INVOKANA tablets)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, Full prescribing information reviewed; no boxed (black box) warning section is present in the INVOKANA label (HIGHLIGHTS OF PRESCRIBING INFORMATION; WARNINGS AND PRECAUTIONS 5)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.3 (Table 1) and 2.4; USE IN SPECIFIC POPULATIONS 8.6; CLINICAL PHARMACOLOGY 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, USE IN SPECIFIC POPULATIONS 8.7; CLINICAL PHARMACOLOGY 12.3 (Patients with Hepatic Impairment)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA label, INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc., setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3, DOSAGE AND ADMINISTRATION 2.2, 2.5, 2.6; HOW SUPPLIED/STORAGE AND HANDLING 16; DESCRIPTION 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3"
+    }
+  ],
+  "unsourced_fields": [],
+  "notes": "Product scope: INVOKANA (canagliflozin) tablets, Janssen Pharmaceuticals, Inc. - a single FDA DailyMed label is used for all fields; setid b9057d3b-b104-4f09-8a61-c61ef9d4a3f3 (spl_version 32, published 2026-06-15, label revised 06/2026), verified HTTP 200 at drugInfo.cfm and the title matches 'INVOKANA (CANAGLIFLOZIN) TABLET, FILM COATED [JANSSEN PHARMACEUTICALS, INC.]'. INVOKAMET/INVOKAMET XR (canagliflozin/metformin, setid 6868666b-c25e-40d1-9d1f-306bbe9390c1, HTTP 200 verified) and the A-S Medication Solutions / Cardinal Health 107 repackager listings were intentionally NOT used to avoid mixing products. Label cached at /home/ishi/.cache/clinova/labels/b9057d3b-b104-4f09-8a61-c61ef9d4a3f3.txt (plain text) and .xml. No boxed warning exists in this label (black_box_warnings = []). Pregnancy field is narrative PLLR wording, not a letter category. Pediatric scope limited to glycemic control in patients >=10 years; cardiovascular/renal risk-reduction indications are adult-only. Gaps/notes: no EMA SmPC cross-check performed (FDA label only, per allowed scope); eGFR <30 - initiation not recommended except continuation for the renal outcome indication with albuminuria >300 mg/day; the label has no dedicated 'food interactions' section - food_interactions is derived from CLINICAL PHARMACOLOGY 12.2/12.3 and WARNINGS AND PRECAUTIONS 5.1. All 25 fields populated and sourced; unsourced_fields is empty."
+}

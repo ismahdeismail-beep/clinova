@@ -1,0 +1,223 @@
+{
+  "name": "Cannabidiol",
+  "existing_id": "",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The precise mechanisms by which EPIDIOLEX (cannabidiol) exerts its anticonvulsant effect in humans are unknown. Cannabidiol does not appear to exert its anticonvulsant effects through interaction with cannabinoid receptors. Cannabidiol is a cannabinoid (2-[(1R,6R)-3-Methyl-6-(1-methylethenyl)-2-cyclohexen-1-yl]-5-pentyl-1,3-benzenediol) that occurs naturally in the Cannabis sativa L. plant (FDA DailyMed EPIDIOLEX label, sections 11 and 12.1).",
+    "indications": [
+      "Treatment of seizures associated with Lennox-Gastaut syndrome (LGS) in patients 1 year of age and older (FDA DailyMed EPIDIOLEX label, section 1)",
+      "Treatment of seizures associated with Dravet syndrome (DS) in patients 1 year of age and older (FDA DailyMed EPIDIOLEX label, section 1)",
+      "Treatment of seizures associated with tuberous sclerosis complex (TSC) in patients 1 year of age and older (FDA DailyMed EPIDIOLEX label, section 1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to cannabidiol or any of the ingredients in EPIDIOLEX (the product contains dehydrated alcohol 7.9% w/v, sesame seed oil, strawberry flavor and sucralose); EPIDIOLEX is contraindicated in patients with a prior hypersensitivity reaction to cannabidiol or any of the ingredients, which includes sesame seed oil (FDA DailyMed EPIDIOLEX label, sections 4, 5.4 and 11)"
+    ],
+    "side_effects": [
+      "LGS/DS (most common, >=10% and greater than placebo): somnolence; decreased appetite; diarrhea; transaminase elevations; fatigue, malaise and asthenia; rash; insomnia, sleep disorder and poor quality sleep; infections (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "TSC (most common, >=10% at the recommended dosage and greater than placebo): diarrhea; transaminase elevations; decreased appetite; somnolence; pyrexia; vomiting (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Decreased weight: >=5% weight loss in 16% (LGS/DS, 10 and 20 mg/kg/day) and 31% (TSC, 25 mg/kg/day) of EPIDIOLEX-treated patients vs 8% on placebo; dose-related (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Hematologic abnormalities: mean hemoglobin decreases of -0.42 g/dL (LGS/DS) and -0.37 g/dL (TSC); new laboratory-defined anemia in 30% (LGS/DS) and 38% (TSC) of EPIDIOLEX-treated patients vs 13-15% on placebo; decreases in hematocrit (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Increases in serum creatinine of approximately 10% within 2 weeks of starting EPIDIOLEX; reversible in healthy adults; not due to reduced GFR (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Pneumonia with concomitant clobazam: LGS/DS 7/41 (17%) at 10 mg/kg/day and 13/125 (10%) at 20 mg/kg/day vs 1/123 (1%) on placebo; TSC 3/18 (17%) vs 0/25 (0%) on placebo (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Other reported reactions (>=3% and greater than placebo): gastroenteritis, abdominal pain/discomfort, weight decreased, lethargy, sedation, irritability/agitation, aggression/anger, drooling/salivary hypersecretion, gait disturbance, infection (all/other/viral/fungal), anemia, decreased platelet count, increased eosinophil count, nausea, ear infection, urinary tract infection, rhinorrhea, hypoxia/respiratory failure (FDA DailyMed EPIDIOLEX label, section 6.1, Tables 3 and 4)"
+    ],
+    "dosage": {
+      "adult": "Seizures associated with LGS or DS: starting dosage 2.5 mg/kg by mouth twice daily (5 mg/kg/day); after one week, increase to a maintenance dosage of 5 mg/kg twice daily (10 mg/kg/day). Patients who tolerate 5 mg/kg twice daily and require further seizure reduction may increase up to a maximum recommended maintenance dosage of 10 mg/kg twice daily (20 mg/kg/day) in weekly increments of 2.5 mg/kg twice daily (5 mg/kg/day), as tolerated; a more rapid titration from 10 to 20 mg/kg/day is possible no more frequently than every other day. Seizures associated with TSC: starting dosage 2.5 mg/kg by mouth twice daily (5 mg/kg/day); increase in weekly increments of 2.5 mg/kg twice daily (5 mg/kg/day), as tolerated, to a recommended maintenance dosage of 12.5 mg/kg twice daily (25 mg/kg/day); more rapid titration to 25 mg/kg/day possible no more frequently than every other day; effectiveness of doses lower than 12.5 mg/kg twice daily has not been studied in TSC. Assess serum transaminases (ALT and AST) and total bilirubin before starting treatment (FDA DailyMed EPIDIOLEX label, sections 2.1, 2.2, 2.3). The same weight-based dosing is used in pediatric patients 1 year and older (see pediatric_dosing).",
+      "maximum": "LGS/DS: maximum recommended maintenance dosage 10 mg/kg twice daily (20 mg/kg/day). TSC: recommended maintenance dosage 12.5 mg/kg twice daily (25 mg/kg/day); the risk of ALT elevations was higher (25%) in TSC patients receiving above 25 mg/kg/day (FDA DailyMed EPIDIOLEX label, sections 2.2, 2.3 and 5.1)."
+    },
+    "adult_dosing": "LGS or DS: 2.5 mg/kg PO twice daily (5 mg/kg/day) for one week, then 5 mg/kg twice daily (10 mg/kg/day); may increase in weekly increments of 2.5 mg/kg twice daily (5 mg/kg/day), as tolerated, up to a maximum recommended maintenance dosage of 10 mg/kg twice daily (20 mg/kg/day). TSC: 2.5 mg/kg PO twice daily (5 mg/kg/day), increase in weekly increments of 2.5 mg/kg twice daily (5 mg/kg/day), as tolerated, to a recommended maintenance dosage of 12.5 mg/kg twice daily (25 mg/kg/day). Dose adjustments are required in moderate or severe hepatic impairment (see hepatic_dose_adjustment). Obtain ALT, AST and total bilirubin before starting and at 1, 3 and 6 months, then periodically (FDA DailyMed EPIDIOLEX label, sections 2.1, 2.2, 2.3 and 2.6).",
+    "pediatric_dosing": "Same weight-based regimen as adults. Safety and effectiveness have been established in patients 1 year of age and older (LGS and DS studies enrolled patients aged 2 years and older; TSC study enrolled patients aged 1 year and older). Safety and effectiveness in pediatric patients below 1 year of age have not been established. LGS/DS: start 2.5 mg/kg twice daily (5 mg/kg/day) for one week, then 5 mg/kg twice daily (10 mg/kg/day); may increase in weekly increments of 2.5 mg/kg twice daily to a maximum of 10 mg/kg twice daily (20 mg/kg/day). TSC: start 2.5 mg/kg twice daily; increase in weekly increments of 2.5 mg/kg twice daily to a recommended maintenance dosage of 12.5 mg/kg twice daily (25 mg/kg/day) (FDA DailyMed EPIDIOLEX label, sections 2.2, 2.3 and 8.4).",
+    "interactions": [
+      "Clobazam: EPIDIOLEX increases plasma concentrations of N-desmethylclobazam (active metabolite) approximately 3-fold, which may increase clobazam-related adverse reactions; consider reducing the clobazam dosage if clobazam adverse reactions occur (FDA DailyMed EPIDIOLEX label, section 7.2)",
+      "Valproate: concomitant use increases the incidence of liver enzyme (transaminase) elevations; in LGS/DS controlled studies ALT >3x ULN occurred in 30% (with clobazam), 21% (valproate without clobazam), 4% (clobazam without valproate) and 3% (neither); in TSC, 20%, 25%, 0% and 6% respectively; elevated ammonia levels were also reported, mostly with valproate and/or clobazam; consider discontinuation or dose reduction of valproate and/or EPIDIOLEX if elevations occur (FDA DailyMed EPIDIOLEX label, sections 5.1, 7.3 and 12.3)",
+      "Strong CYP3A4 and/or CYP2C19 inducers (e.g. rifampin): decreased cannabidiol and 7-OH-CBD plasma concentrations by approximately 32% and 63%; consider an increase in EPIDIOLEX dosage (based on clinical response and tolerability) up to 2-fold (FDA DailyMed EPIDIOLEX label, sections 7.1 and 12.3)",
+      "Strong CYP3A4 or CYP2C19 inhibitors (e.g. itraconazole, fluconazole): effects on cannabidiol exposure were not clinically meaningful (itraconazole <10% increase; fluconazole ~22-24% increase) (FDA DailyMed EPIDIOLEX label, sections 7.1 and 12.3)",
+      "CYP2C19 substrates: cannabidiol is a moderate inhibitor of CYP2C19; increases CYP2C19 substrate concentrations and may increase adverse reactions - consider dosage reduction of CYP2C19 substrates; for substrates whose efficacy depends on active metabolites (e.g. clopidogrel), efficacy may decrease - consider a dosage increase (FDA DailyMed EPIDIOLEX label, section 7.2)",
+      "CYP1A2 substrates: cannabidiol is a weak inhibitor of CYP1A2 (caffeine AUC increased ~95%); increases in exposure of CYP1A2 substrates (e.g. theophylline, tizanidine) may occur - consider dosage reduction where minimal changes may lead to serious adverse reactions (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "CYP2B6 substrates: cannabidiol induces and inhibits CYP2B6; no clinically significant reduction at 7.5 mg/kg twice daily; effects unknown above that dose - consider dosage modification of CYP2B6 substrates at doses above 7.5 mg/kg twice daily (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "CYP2C8 substrates: concomitant use may cause clinically significant interactions; consider a dosage reduction of CYP2C8 substrates if adverse reactions occur (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "UGT1A9 substrates: cannabidiol inhibits UGT1A9 (mycophenolic acid AUC increased ~35-58%); increases in UGT1A9 substrate exposure may occur - consider a dosage reduction where minimal changes may lead to serious adverse reactions (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "Orally administered P-gp substrates: EPIDIOLEX with everolimus increases everolimus exposure approximately 2.5-fold - monitor therapeutic drug levels and adjust dosage; when initiating everolimus in patients on stable EPIDIOLEX, start at a lower dosage; increases in exposure of other oral P-gp substrates (e.g. sirolimus, tacrolimus, digoxin) may occur - consider therapeutic drug monitoring and dosage reduction (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "Stiripentol: increases stiripentol plasma exposures (Cmax/AUC increased ~17-28% / 30-55%); monitor for stiripentol-related adverse reactions (FDA DailyMed EPIDIOLEX label, sections 7.2 and 12.3)",
+      "CNS depressants and alcohol: concomitant use with other CNS depressants (including alcohol) may increase the risk of sedation and somnolence; alcohol increased cannabidiol Cmax by 93% and AUC by 63% (FDA DailyMed EPIDIOLEX label, sections 7.4 and 12.3)"
+    ],
+    "monitoring": "Obtain serum transaminases (ALT and AST) and total bilirubin levels in all patients prior to starting treatment; repeat at 1 month, 3 months and 6 months after initiation, then periodically as clinically indicated, and within 1 month after any dosage change or addition of/change in medications known to affect the liver; consider more frequent monitoring in patients taking valproate or with elevated baseline liver enzymes. Discontinue EPIDIOLEX in any patient with transaminase elevations >3x ULN together with bilirubin >2x ULN, and in patients with sustained transaminase elevations >5x ULN. Assess patients prior to initiation (baseline transaminases and bilirubin; patients with ALT/AST >3x ULN plus bilirubin >2x ULN should be evaluated before starting). Monitor for signs/symptoms of hepatic dysfunction (unexplained nausea, vomiting, right upper quadrant abdominal pain, fatigue, anorexia, jaundice, dark urine) - if these occur, promptly measure transaminases and bilirubin and interrupt or discontinue treatment. Monitor for somnolence/sedation (especially with clobazam or other CNS depressants), suicidal behavior and ideation, hypersensitivity reactions, weight loss, hematologic abnormalities (hemoglobin/hematocrit; anemia), serum creatinine, and pneumonia risk in patients on concomitant clobazam. Consider assessing steady state ~2-4 weeks after dose changes; consistent dosing with respect to meals recommended (FDA DailyMed EPIDIOLEX label, sections 2.1, 2.4, 5.1-5.5, 6.1 and 12.3).",
+    "patient_counselling": "Advise patients, caregivers and families: (1) Liver monitoring is required - keep appointments for blood tests before treatment and periodically; report signs of hepatic dysfunction (unexplained nausea, vomiting, right upper quadrant abdominal pain, fatigue, anorexia, jaundice and/or dark urine) immediately. (2) Somnolence and sedation - do not drive or operate hazardous machinery until reasonably certain EPIDIOLEX does not adversely affect judgment, thinking or motor skills. (3) Antiepileptic drugs may increase the risk of suicidal thoughts and behavior - be alert for emergence or worsening of depression, unusual changes in mood or behavior, or suicidal thoughts/self-harm; report immediately. (4) Do not discontinue EPIDIOLEX without consulting the prescriber; it should normally be gradually withdrawn to reduce the risk of increased seizure frequency and status epilepticus. (5) Pregnancy - notify the provider if pregnant or planning pregnancy; enroll in the EPIDIOLEX Pregnancy Surveillance Program (1-855-272-7158, epidiolexpregnancystudy.com) and the North American AED Pregnancy Registry (1-888-233-2334, aedpregnancyregistry.org). (6) Potential for positive cannabis drug screens. (7) Take EPIDIOLEX consistently with respect to meals (food markedly increases exposure). (8) Use the calibrated 1 mL and 5 mL oral dosing syringes - a household teaspoon/tablespoon is not adequate; discard unused product 12 weeks after first opening (FDA DailyMed EPIDIOLEX label, sections 2.4, 5.1-5.5, 16 and 17).",
+    "warnings": [
+      "Hepatic injury: dose-related elevations of liver transaminases (ALT and/or AST). ALT >3x ULN occurred in 13% (LGS/DS) and 12% (TSC) of EPIDIOLEX-treated patients vs 1% on placebo; <1% had ALT/AST >20x ULN; elevations typically occurred in the first 2 months but up to 18 months, particularly with concomitant valproate; postmarketing cholestatic or mixed liver injury reported. Risk is increased by concomitant valproate (with or without clobazam), higher doses, and elevated baseline transaminases. Obtain baseline and periodic ALT, AST and total bilirubin; discontinue if transaminases >3x ULN with bilirubin >2x ULN, or sustained transaminases >5x ULN (FDA DailyMed EPIDIOLEX label, section 5.1)",
+      "Somnolence and sedation: dose-related; incidence 32% (LGS/DS, incl. lethargy; 27% at 10 mg/kg/day, 34% at 20 mg/kg/day) vs 11% on placebo, and 19% (TSC) vs 17% on placebo; higher with concomitant clobazam (46% and 33%); more common early in treatment; monitor and advise against driving/operating machinery until effects are known (FDA DailyMed EPIDIOLEX label, section 5.2)",
+      "Suicidal behavior and ideation: antiepileptic drugs increase the risk of suicidal thoughts/behavior (pooled analysis of 11 AEDs: adjusted relative risk 1.8; estimated absolute incidence 0.43% vs 0.24% on placebo, ~1 additional case per 530 patients); onset as early as 1 week; monitor for emergence or worsening of depression, suicidal thoughts/behavior, unusual mood/behavior changes (FDA DailyMed EPIDIOLEX label, section 5.3)",
+      "Hypersensitivity reactions: pruritus, erythema and angioedema requiring treatment (corticosteroids, antihistamines) occurred in clinical trials; discontinue and do not restart if hypersensitivity occurs; contraindicated with prior hypersensitivity to cannabidiol or any ingredients (including sesame seed oil) (FDA DailyMed EPIDIOLEX label, section 5.4)",
+      "Withdrawal of antiepileptic drugs: abrupt discontinuation can increase seizure frequency and risk of status epilepticus; EPIDIOLEX should generally be gradually withdrawn; rapid discontinuation may be considered only for serious adverse events (FDA DailyMed EPIDIOLEX label, section 5.5)"
+    ],
+    "precautions": [
+      "Gradual withdrawal recommended to minimize the risk of increased seizure frequency and status epilepticus; decrease the dose gradually when discontinuing (FDA DailyMed EPIDIOLEX label, sections 2.5 and 5.5)",
+      "Food significantly increases cannabidiol plasma exposure (high-fat meal: Cmax ~5-fold, AUC ~4-fold); consistent dosing with respect to meals is recommended to reduce variability; alcohol increases exposure (FDA DailyMed EPIDIOLEX label, sections 2.4 and 12.3)",
+      "Use caution and start at the low end of the dosing range in elderly patients, reflecting greater frequency of decreased hepatic, renal or cardiac function and concomitant disease/therapy; clinical trials did not include enough patients over 55 to determine differential response (FDA DailyMed EPIDIOLEX label, section 8.5)",
+      "Concentration-dependent QTc prolongation was observed; at recommended monotherapy doses with a high-fat meal, QTc was not prolonged >10 msec; the effect in the presence of factors that increase exposure (food, clobazam, alcohol) is not known (FDA DailyMed EPIDIOLEX label, section 12.2)",
+      "Decreases in hemoglobin/hematocrit and new laboratory-defined anemia occur; decreased weight and increased serum creatinine (not reflecting reduced GFR) occur; monitor as clinically indicated (FDA DailyMed EPIDIOLEX label, sections 6.1 and 12.2)",
+      "Not a controlled substance; cannabidiol does not produce cannabinoid-like behavioral/rewarding effects in animal studies or in a human abuse potential study (750, 1500, 4500 mg single doses); 28-day physical dependence study showed no withdrawal signs (FDA DailyMed EPIDIOLEX label, section 9)",
+      "Discard any unused EPIDIOLEX 12 weeks after first opening the bottle; supplied with calibrated 1 mL and 5 mL oral syringes (FDA DailyMed EPIDIOLEX label, sections 2.4 and 16)",
+      "May be administered enterally via silicone feeding tubes; do not use with PVC or polyurethane tubes; avoid short/narrow silicone nasogastric tubes (<50 cm, <5 FR); flush with ~5x tube priming volume of room-temperature water (adjust for fluid restrictions) (FDA DailyMed EPIDIOLEX label, section 2.4)"
+    ],
+    "serious_adverse_reactions": [
+      "Hepatocellular injury, including transaminase elevations >3x ULN (13% LGS/DS, 12% TSC), cases >20x ULN (<1%), hospitalization for transaminase elevation (1.3% at 10 mg/kg/day, 5.9% at 20 mg/kg/day, 0.4% placebo), postmarketing cholestatic/mixed liver injury, and elevated ammonia with concomitant valproate/clobazam (FDA DailyMed EPIDIOLEX label, sections 5.1 and 6.1)",
+      "Somnolence and sedation (including lethargy), dose-related, leading to discontinuation in 3% of patients on 20 mg/kg/day (FDA DailyMed EPIDIOLEX label, sections 5.2 and 6.1)",
+      "Suicidal behavior and ideation (class effect of antiepileptic drugs; adjusted relative risk 1.8) (FDA DailyMed EPIDIOLEX label, section 5.3)",
+      "Hypersensitivity reactions including angioedema requiring corticosteroid/antihistamine treatment (FDA DailyMed EPIDIOLEX label, section 5.4)",
+      "Status epilepticus / increased seizure frequency upon abrupt withdrawal (FDA DailyMed EPIDIOLEX label, section 5.5)",
+      "Pneumonia, more frequent with concomitant clobazam (LGS/DS 17% at 10 mg/kg/day and 10% at 20 mg/kg/day vs 1% placebo; TSC 17% vs 0%) (FDA DailyMed EPIDIOLEX label, section 6.1)",
+      "Rash (discontinuation due to rash in 5% of TSC patients); hypoxia/respiratory failure reported (FDA DailyMed EPIDIOLEX label, section 6.1)"
+    ],
+    "food_interactions": [
+      "High-fat/high-calorie meal: increased cannabidiol Cmax ~5-fold and AUC ~4-fold and reduced variability vs fasted state (FDA DailyMed EPIDIOLEX label, sections 2.4 and 12.3)",
+      "Low-fat/low-calorie meal: increased Cmax ~4-fold and AUC ~3-fold (FDA DailyMed EPIDIOLEX label, sections 2.4 and 12.3)",
+      "Bovine milk: increased exposure ~3-fold for Cmax and ~2.5-fold for AUC (FDA DailyMed EPIDIOLEX label, sections 2.4 and 12.3)",
+      "Alcohol: increased cannabidiol exposure (Cmax +93%, AUC +63%); other CNS depressants including alcohol may potentiate somnolence and sedation (FDA DailyMed EPIDIOLEX label, sections 5.2, 7.4 and 12.3)",
+      "Consistent dosing of EPIDIOLEX with respect to meals is recommended to reduce variability in cannabidiol plasma exposure (FDA DailyMed EPIDIOLEX label, section 2.4)"
+    ],
+    "pregnancy_category": "Pregnancy: Based on animal data, may cause fetal harm. (FDA DailyMed EPIDIOLEX label, section 8.1, Highlights of Prescribing Information)",
+    "pregnancy_guidance": "There are no adequate data on the developmental risks of EPIDIOLEX in pregnant women. Administration of cannabidiol to pregnant animals produced evidence of developmental toxicity (increased embryofetal mortality in rats; decreased fetal body weights in rabbits; decreased growth, delayed sexual maturation, long-term neurobehavioral changes and reproductive effects in rat offspring) at maternal exposures similar to (rabbit) or greater than (rat) human therapeutic exposures. The major human metabolite 7-COOH-CBD caused embryofetal malformations/variations in rats. In the U.S. general population the estimated background risk of major birth defects is 2-4% and of miscarriage 15-20%; the risks for the indicated populations are unknown. Two pregnancy registries/programs monitor outcomes: the EPIDIOLEX Pregnancy Surveillance Program (1-855-272-7158; epidiolexpregnancystudy.com) and the North American Antiepileptic Drug (NAAED) Pregnancy Registry (1-888-233-2334; aedpregnancyregistry.org) - women who take EPIDIOLEX during pregnancy are encouraged to enroll in both. Notify the healthcare provider if you become or intend to become pregnant (FDA DailyMed EPIDIOLEX label, sections 8.1 and 17).",
+    "lactation_guidance": "There are no data on the presence of cannabidiol or its metabolites in human milk, the effects on the breastfed infant, or the effects on milk production. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for EPIDIOLEX and any potential adverse effects on the breastfed infant from EPIDIOLEX or from the underlying maternal condition (FDA DailyMed EPIDIOLEX label, section 8.2).",
+    "overdose": null,
+    "pharmacokinetics": "Absorption: less than dose-proportional increase in exposure over 5-25 mg/kg/day; Tmax 2.5-5 hours at steady state. Food markedly increases exposure (high-fat meal: Cmax 5-fold, AUC 4-fold). Distribution: apparent volume of distribution 20,963-42,849 L; protein binding >94% in vitro. Elimination: plasma half-life 56-61 hours after twice-daily dosing for 7 days; plasma clearance after a single 1500 mg dose (~20 mg/kg/day) 1111 L/h; excreted in feces with minor renal clearance. Metabolism: metabolized in the liver and gut (primarily liver) by CYP2C19 and CYP3A4 and UGT1A7, UGT1A9 and UGT2B7; active metabolite 7-OH-CBD (38% lower AUC than parent) is converted to 7-COOH-CBD (~40-fold higher AUC than parent); 7-OH-CBD is anticonvulsant in two mouse seizure models, 7-COOH-CBD in one; relevance to human epilepsy unknown. Hepatic impairment: no change with mild (Child-Pugh A); ~2.5-5.2-fold higher AUC with moderate (B) or severe (C) impairment. Increases in serum creatinine (~10%) are not due to reduced GFR (dedicated iohexol mGFR study). No effect of EPIDIOLEX on midazolam exposure; CYP2C19 (moderate) and CYP1A2 (weak) inhibition, CYP2B6 induction/inhibition; UGT1A9 and P-gp (intestinal) inhibition (FDA DailyMed EPIDIOLEX label, sections 12.2 and 12.3).",
+    "clinical_pearls": [
+      "EPIDIOLEX is a strawberry-flavored, clear, colorless to yellow oral solution, 100 mg/mL cannabidiol, supplied in amber glass bottles of 60 mL or 100 mL with calibrated 1 mL and 5 mL oral dosing syringes; unflavored household measures are not adequate; discard 12 weeks after first opening (FDA DailyMed EPIDIOLEX label, sections 2.4, 11 and 16)",
+      "EPIDIOLEX is not a controlled substance and does not produce cannabinoid-like rewarding/dependence effects in abuse-potential and physical-dependence studies, unlike delta-9-THC/dronabinol (FDA DailyMed EPIDIOLEX label, section 9)",
+      "Consistent dosing with respect to meals is essential - a high-fat meal multiplies Cmax ~5-fold and AUC ~4-fold; the same dose taken fasted vs fed is not interchangeable (FDA DailyMed EPIDIOLEX label, sections 2.4 and 12.3)",
+      "The highest-risk co-medication combination is valproate (with or without clobazam): ALT >3x ULN in up to 30% of LGS/DS patients and 25% of TSC patients on valproate; check baseline and follow-up transaminases and bilirubin, and consider lowering valproate or EPIDIOLEX if elevations occur; watch for elevated ammonia (FDA DailyMed EPIDIOLEX label, sections 5.1 and 7.3)",
+      "Clobazam levels of the active metabolite N-desmethylclobazam rise ~3-fold; anticipate increased clobazam adverse effects (somnolence, sedation, pneumonia) and consider reducing the clobazam dose (FDA DailyMed EPIDIOLEX label, sections 6.1 and 7.2)",
+      "Not interchangeable with over-the-counter CBD products; EPIDIOLEX is a purified, plant-derived oral solution with established trials in LGS, DS and TSC (FDA DailyMed EPIDIOLEX label, sections 1, 11 and 14)",
+      "Patients may test positive on cannabis drug screens - counsel accordingly (FDA DailyMed EPIDIOLEX label, section 17)"
+    ],
+    "brand_names": [
+      "Epidiolex"
+    ],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": "Dose adjustment is required in moderate (Child-Pugh B) and severe (Child-Pugh C) hepatic impairment; no adjustment in mild (Child-Pugh A) impairment. LGS/DS: moderate impairment - start 1.25 mg/kg twice daily (2.5 mg/kg/day), maintenance 2.5 to 5 mg/kg twice daily (5 to 10 mg/kg/day); severe impairment - start 0.5 mg/kg twice daily (1 mg/kg/day), maintenance 1 to 2 mg/kg twice daily (2 to 4 mg/kg/day). TSC: moderate impairment - start 1.25 mg/kg twice daily (2.5 mg/kg/day), maintenance 6.25 mg/kg twice daily (12.5 mg/kg/day); severe impairment - start 0.5 mg/kg twice daily (1 mg/kg/day), maintenance 2.5 mg/kg twice daily (5 mg/kg/day). Slower titration may be necessary in moderate/severe impairment; moderate/severe impairment increases cannabidiol AUC ~2.5-5.2-fold (FDA DailyMed EPIDIOLEX label, sections 2.6, 8.6 and 12.3; Table 1).",
+    "administration_instructions": "Oral administration is recommended; give consistently with respect to meals to reduce exposure variability. Use the calibrated 1 mL and 5 mL oral dosing syringes provided - a household teaspoon or tablespoon is not an adequate measuring device. When necessary, EPIDIOLEX may be administered enterally via silicone feeding tubes (nasogastric or gastrostomy); do not use polyvinyl chloride (PVC) or polyurethane tubes, and avoid short, narrow silicone nasogastric tubes (<50 cm, <5 FR); flush with approximately 5 times the priming volume of room-temperature drinking water after each dose (adjust for fluid restrictions). Abrupt discontinuation should be avoided - decrease the dose gradually; rapid discontinuation only for serious adverse events. Discard any unused EPIDIOLEX 12 weeks after first opening the bottle (FDA DailyMed EPIDIOLEX label, sections 2.4, 2.5, 5.5 and 16)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "FDA DailyMed EPIDIOLEX (cannabidiol) oral solution, Jazz Pharmaceuticals, Inc., setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 11 and 12.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "indications",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 1 INDICATIONS AND USAGE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "contraindications",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 4 CONTRAINDICATIONS, 5.4 and 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "side_effects",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 6.1 Clinical Trials Experience (Tables 3 and 4)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "dosage",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.1, 2.2 and 2.3 (dosing) and 5.1 (maximum dose safety signal)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "adult_dosing",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.1, 2.2, 2.3 and 2.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "pediatric_dosing",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.2, 2.3 and 8.4 Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "interactions",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 7 DRUG INTERACTIONS (7.1-7.4) and section 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "monitoring",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.1, 2.4, 5.1-5.5 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 17 PATIENT COUNSELING INFORMATION (and Medication Guide)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "warnings",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 5 WARNINGS AND PRECAUTIONS (5.1-5.5)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "precautions",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.4, 2.5, 5.5, 8.5, 9, 12.2 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 5.1-5.5 and 6.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.4 and 12.3 (Effect of Food), and 5.2/7.4 (alcohol)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 8.1 / Highlights (Pregnancy: Based on animal data, may cause fetal harm)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 8.1 Pregnancy (Risk Summary, Animal Data, registries) and section 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, section 8.2 Lactation",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 12.2 and 12.3 Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 1, 2.4, 5.1, 5.2, 6.1, 7, 9, 11, 16 and 17",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "brand_names",
+      "ref": "FDA DailyMed EPIDIOLEX (cannabidiol) oral solution, Jazz Pharmaceuticals, Inc., setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 11 and HOW SUPPLIED (EPIDIOLEX is a registered trademark of Jazz Pharmaceuticals plc)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec - the label contains no boxed warning (WARNING box) section; absence verified against the SPL section list (sections 1-17; no Boxed Warning LOINC 34066-1). Empty array documents this absence.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.6 (Table 1), 8.6 and 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "FDA DailyMed EPIDIOLEX label, Jazz Pharmaceuticals, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, sections 2.4, 2.5, 5.5 and 16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec"
+    }
+  ],
+  "unsourced_fields": [
+    "overdose",
+    "renal_dose_adjustment"
+  ],
+  "notes": "Scope: EPIDIOLEX (cannabidiol) oral solution 100 mg/mL, Jazz Pharmaceuticals, Inc. (formerly GW Pharmaceuticals) - FDA-approved prescription cannabidiol for seizures associated with Lennox-Gastaut syndrome, Dravet syndrome and tuberous sclerosis complex in patients 1 year and older. Single source used: FDA DailyMed current EPIDIOLEX label, setid 8bf27097-4870-43fb-94f0-f3d0871d1eec, spl_version 35, published 2026-06-15 (verified HTTP 200 at drugInfo.cfm?setid=...; label title 'EPIDIOLEX (CANNABIDIOL) SOLUTION [JAZZ PHARMACEUTICALS, INC.]'); full SPL text cached at /home/ishi/.cache/clinova/labels/8bf27097-4870-43fb-94f0-f3d0871d1eec.txt (and .xml). All other 'cannabidiol' DailyMed hits are unrelated OTC/dietary CBD products (e.g. LeafPro CBDMed oils, Melody Cloverstrip, MD Science cannabidiol cream) and were rejected. Gaps: (1) overdose - the EPIDIOLEX label has NO overdosage section, so overdose is null and listed in unsourced_fields; no fatal-overdose management data exist in the label. (2) renal_dose_adjustment - the label gives no renal dosing recommendation; it notes ~10% serum creatinine increases (not a GFR reduction) and fecal excretion with minor renal clearance, but no adjustment guidance, so it is null and listed in unsourced_fields. (3) black_box_warnings is an empty array because the EPIDIOLEX label contains no boxed warning (verified against the SPL section list - no Boxed Warning section present). (4) pregnancy_category is a narrative Highlights statement ('Pregnancy: Based on animal data, may cause fetal harm') because the current label uses PLLR format and no letter category. (5) existing_id is empty as instructed; content_status = needs_review. Pediatric titration is included in pediatric_dosing and dosage.adult; dosage object intentionally contains only adult and maximum keys. Hepatic enzyme/transaminase + bilirubin monitoring at baseline, 1, 3 and 6 months, and after dose changes, is mandatory per section 5.1. Dose in moderate/severe hepatic impairment must be reduced (section 2.6 Table 1)."
+}

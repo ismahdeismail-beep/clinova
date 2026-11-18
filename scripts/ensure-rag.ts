@@ -314,6 +314,72 @@ async function main() {
   let quotaSkipped = 0
   let embeddedOk = 0
   let attempted = 0
+  let chunksWritten = 0
+  let docsProcessed = 0
+  const flushed = new Set<DocRow>()
+
+  /**
+   * Persist fully-embedded documents immediately so an interrupted run (sleep,
+   * reboot, Ctrl-C, model crash) keeps everything already embedded. The upsert
+   * is idempotent on (source, source_ref, chunk_index), so a later resume can
+   * safely rewrite the same rows.
+   */
+  const flushDocs = async (group: DocRow[]): Promise<void> => {
+    const fresh = group.filter((p) => !p.error && !flushed.has(p))
+    if (!fresh.length) return
+    const rows: Record<string, unknown>[] = []
+    for (const p of fresh) {
+      p.chunks.forEach((c, idx) => {
+        rows.push({
+          monograph_id: p.monographId,
+          source: p.source,
+          source_ref: p.sourceRef,
+          chunk_index: idx,
+          chunk_text: c.text,
+          embedding: args.dryRun ? null : c.embedding,
+          embedding_model: EMBEDDING_MODEL,
+          run_id: runId,
+          metadata: { section: c.section, source: p.source, content_hash: p.contentHash },
+        })
+      })
+    }
+    if (!rows.length) return
+    if (args.dryRun) {
+      chunksWritten += rows.length
+      docsProcessed += fresh.length
+      for (const p of fresh) flushed.add(p)
+      return
+    }
+    const { error } = await supabase
+      .from('knowledge_chunks')
+      .upsert(rows, { onConflict: 'source,source_ref,chunk_index' })
+    if (error) {
+      for (const p of fresh) errors.push({ document: p.label, error: error.message })
+      console.error(`[ensure-rag] upsert failed for ${fresh.length} document(s): ${error.message}`)
+      return
+    }
+    chunksWritten += rows.length
+    docsProcessed += fresh.length
+    for (const p of fresh) flushed.add(p)
+    // For re-embedded monographs, drop orphaned high-index chunks left by a
+    // previous (longer) version so stale sections cannot linger.
+    if (reembedSet.size) {
+      for (const p of fresh) {
+        if (p.source !== 'monograph' || !reembedSet.has(p.label)) continue
+        const { error: delErr } = await supabase
+          .from('knowledge_chunks')
+          .delete()
+          .eq('source', 'monograph')
+          .eq('source_ref', p.sourceRef)
+          .gte('chunk_index', p.chunks.length)
+        if (delErr)
+          console.warn(`[ensure-rag] orphan cleanup failed for ${p.label}: ${delErr.message}`)
+      }
+    }
+    console.log(
+      `[ensure-rag] upsert ${docsProcessed}/${plans.length} docs · ${chunksWritten} chunks · ${errors.length} errors`,
+    )
+  }
 
   /**
    * Embed every chunk of `targetPlans`. Returns false when the daily quota is
@@ -324,6 +390,11 @@ async function main() {
     const items: { plan: DocRow; chunk: Chunk }[] = []
     for (const p of targetPlans) for (const c of p.chunks) items.push({ plan: p, chunk: c })
     if (!items.length) return true
+
+    const remaining = new Map<DocRow, number>()
+    for (const p of targetPlans) if (!p.error) remaining.set(p, p.chunks.length)
+    const ready: DocRow[] = []
+    let readyChunks = 0
 
     let done = 0
     for (let i = 0; i < items.length; i += args.embedBatch) {
@@ -337,6 +408,14 @@ async function main() {
           x.chunk.embedding = vectors[j]
         })
         embeddedOk += slice.length
+        for (const x of slice) {
+          const left = (remaining.get(x.plan) ?? 0) - 1
+          remaining.set(x.plan, left)
+          if (left === 0 && !x.plan.error) {
+            ready.push(x.plan)
+            readyChunks += x.plan.chunks.length
+          }
+        }
       } catch (e: any) {
         // Daily-quota exhaustion — nothing retryable today; stop and leave the
         // rest for a later run (--only-missing will resume them).
@@ -374,8 +453,15 @@ async function main() {
       if ((i / args.embedBatch) % 5 === 0 || done === items.length) {
         console.log(`[ensure-rag] embedded ${embeddedOk}/${attempted} chunks`)
       }
+      // Durable checkpoint: write out completed documents every ~240 chunks.
+      if (readyChunks >= 240 || ready.length >= 8) {
+        const batch = ready.splice(0, ready.length)
+        readyChunks = 0
+        await flushDocs(batch)
+      }
       if (args.paceMs > 0 && i + args.embedBatch < items.length) await sleep(args.paceMs)
     }
+    if (ready.length) await flushDocs(ready.splice(0, ready.length))
     return true
   }
 
@@ -399,63 +485,14 @@ async function main() {
     }
   }
 
-  // --- Upsert per document (skip those whose embedding failed) -------------
-  let chunksWritten = 0
-  let docsProcessed = 0
-  for (let i = 0; i < plans.length; i += args.batch) {
-    const group = plans.slice(i, i + args.batch)
-    const rows: Record<string, unknown>[] = []
-    for (const p of group) {
-      if (p.error) continue
-      p.chunks.forEach((c, idx) => {
-        rows.push({
-          monograph_id: p.monographId,
-          source: p.source,
-          source_ref: p.sourceRef,
-          chunk_index: idx,
-          chunk_text: c.text,
-          embedding: args.dryRun ? null : c.embedding,
-          embedding_model: EMBEDDING_MODEL,
-          run_id: runId,
-          metadata: { section: c.section, source: p.source, content_hash: p.contentHash },
-        })
-      })
+  // --- Final pass: documents not already checkpointed above ----------------
+  if (args.dryRun) {
+    await flushDocs(plans)
+  } else {
+    const leftover = plans.filter((p) => !p.error && !flushed.has(p))
+    for (let i = 0; i < leftover.length; i += args.batch) {
+      await flushDocs(leftover.slice(i, i + args.batch))
     }
-    if (args.dryRun) {
-      chunksWritten += rows.length
-      docsProcessed += group.filter((g) => !g.error).length
-      continue
-    }
-    if (rows.length) {
-      const { error } = await supabase
-        .from('knowledge_chunks')
-        .upsert(rows, { onConflict: 'source,source_ref,chunk_index' })
-      if (error) {
-        for (const p of group)
-          if (!p.error) errors.push({ document: p.label, error: error.message })
-      } else {
-        chunksWritten += rows.length
-        docsProcessed += group.filter((g) => !g.error).length
-        // For re-embedded monographs, drop orphaned high-index chunks left by a
-        // previous (longer) version so stale sections cannot linger.
-        if (reembedSet.size) {
-          for (const p of group) {
-            if (p.error || p.source !== 'monograph' || !reembedSet.has(p.label)) continue
-            const { error: delErr } = await supabase
-              .from('knowledge_chunks')
-              .delete()
-              .eq('source', 'monograph')
-              .eq('source_ref', p.sourceRef)
-              .gte('chunk_index', p.chunks.length)
-            if (delErr)
-              console.warn(`[ensure-rag] orphan cleanup failed for ${p.label}: ${delErr.message}`)
-          }
-        }
-      }
-    }
-    console.log(
-      `[ensure-rag] upsert ${Math.min(i + args.batch, plans.length)}/${plans.length} · ${chunksWritten} chunks · ${errors.length} errors`,
-    )
   }
 
   const report = {

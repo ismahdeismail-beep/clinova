@@ -48,3 +48,6 @@ playwright-report/
 coverage/
 storage/
 
+
+# scratch space for scripts
+scripts/_tmp/

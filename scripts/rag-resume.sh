@@ -5,8 +5,8 @@
 # skips every document already checkpointed in knowledge_chunks.
 #
 # Throttle policy (why these numbers):
-#   ollama  : cores 2,3 · CPUQuota=190% · nice 19 · keep_alive=-1
-#   ingest  : cores 2,3 · CPUQuota=40%  · nice 19 · ionice idle
+#   ollama  : cores 2,3 · CPUQuota=100% · nice 19 · keep_alive=-1
+#   ingest  : cores 2,3 · CPUQuota=20%  · nice 19 · ionice idle
 #   Cores 0,1 are left completely free for the desktop.
 #   keep_alive=-1 matters: a cold nomic load takes ~100 s and the client
 #   times out first, which is what produced the old "fetch failed" errors.
@@ -24,9 +24,9 @@ fi
 
 # --- ollama: two cores, quota-limited, model pinned in memory -----------------
 if ! curl -sf --max-time 3 http://127.0.0.1:11434/api/tags >/dev/null 2>&1; then
-  echo "starting ollama (cores 2,3 · 190% · nice 19 · keep_alive=-1)…"
+  echo "starting ollama (cores 2,3 · 100% · nice 19 · keep_alive=-1)…"
   nohup env OLLAMA_KEEP_ALIVE=-1 OLLAMA_NUM_PARALLEL=1 OLLAMA_MAX_LOADED_MODELS=1 \
-    systemd-run --user --scope --unit=ollama-rag -p CPUQuota=190% \
+    systemd-run --user --scope --unit=ollama-rag -p CPUQuota=100% \
     taskset -c 2,3 nice -n 19 /home/ishi/.local/bin/ollama serve \
     > "$OLLAMA_LOG" 2>&1 &
   for _ in $(seq 1 30); do
@@ -41,7 +41,7 @@ curl -sf --max-time 300 http://127.0.0.1:11434/api/embed \
   >/dev/null || echo "warning: warm-up failed (continuing)"
 
 # --- ingest: two cores, low quota, idle IO ------------------------------------
-nohup systemd-run --user --scope --unit=rag-embed -p CPUQuota=40% \
+nohup systemd-run --user --scope --unit=rag-embed -p CPUQuota=20% \
   taskset -c 2,3 nice -n 19 ionice -c 3 \
   systemd-inhibit \
     --what=sleep:idle:handle-lid-switch \

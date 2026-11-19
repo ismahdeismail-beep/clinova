@@ -122,7 +122,7 @@ export async function answerWithRag(
   }
   const prompt = buildRagPrompt(trimmed, chunks)
   const response = await generateContentWithFallback(
-    { model: 'gemini-flash-latest', contents: prompt, config: { temperature: 0, topP: 0.1 } },
+    { contents: prompt, config: { temperature: 0, topP: 0.1 } },
     undefined,
     'WhatsApp RAG',
   )

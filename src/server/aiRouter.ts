@@ -45,15 +45,7 @@ export let loadBalancingMode:
   'Priority' | 'Weighted' | 'Latency' | 'Cost' | 'Health' | 'RoundRobin' = 'Priority'
 
 export const providerStatuses: Record<string, AIProviderStatus> = {
-  Ollama: createInitialStatus(
-    'ollama',
-    'Ollama (local)',
-    0,
-    100,
-    0,
-    0,
-    'local',
-  ),
+  Ollama: createInitialStatus('ollama', 'Ollama (local)', 0, 100, 0, 0, 'local'),
   'Google Gemini': createInitialStatus(
     'google',
     'Google Gemini',
@@ -192,6 +184,7 @@ function recordProviderError(providerName: string) {
 // Convert Gemini API format to OpenAI structure
 function mapToOpenAIFormat(request: any) {
   const messages: any[] = []
+  const config = request.config ?? {}
 
   if (request.config?.systemInstruction) {
     messages.push({
@@ -220,7 +213,14 @@ function mapToOpenAIFormat(request: any) {
 
   const payload: any = { messages }
 
-  if (request.config?.responseMimeType === 'application/json' || request.config?.responseSchema) {
+  if (config.temperature !== undefined) payload.temperature = config.temperature
+  if (config.topP !== undefined) payload.top_p = config.topP
+  if (config.maxOutputTokens !== undefined) payload.max_tokens = config.maxOutputTokens
+  if (Array.isArray(config.stopSequences) && config.stopSequences.length) {
+    payload.stop = config.stopSequences
+  }
+
+  if (config.responseMimeType === 'application/json' || config.responseSchema) {
     payload.response_format = { type: 'json_object' }
   }
 
@@ -520,6 +520,9 @@ const LOCAL_EMBED_URL = process.env.LOCAL_EMBED_URL || 'http://127.0.0.1:11434'
 const LOCAL_EMBED_MODEL = process.env.LOCAL_EMBED_MODEL || 'nomic-embed-text'
 const LOCAL_GEN_URL = process.env.LOCAL_GEN_URL || 'http://127.0.0.1:11434'
 const LOCAL_GEN_MODEL = process.env.LOCAL_GEN_MODEL || 'qwen2.5:3b'
+// Cloud-only fallback model, used solely when a provider in the chain is reached
+// (local Ollama is always tried first). Override with CLOUD_GEN_MODEL.
+const CLOUD_GEN_MODEL = process.env.CLOUD_GEN_MODEL || 'gemini-flash-latest'
 // nomic-embed-text is task-prefixed in training: use search_query: at query time,
 // search_document: at ingest time.
 export const SEARCH_QUERY_PREFIX = 'search_query: '
@@ -542,9 +545,7 @@ async function embedRequest(texts: string[]): Promise<number[][]> {
   })
   if (!res.ok) {
     const body = await res.text()
-    const err: any = new Error(
-      `Local embedding failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
-    )
+    const err: any = new Error(`Local embedding failed (HTTP ${res.status}): ${body.slice(0, 200)}`)
     err.status = res.status
     err.body = body
     throw err
@@ -556,7 +557,9 @@ async function embedRequest(texts: string[]): Promise<number[][]> {
     .sort((a: any, b: any) => (a.index ?? 0) - (b.index ?? 0))
     .map((d: any) => d.embedding ?? [])
   if (embeddings.length !== texts.length || embeddings.some((v) => !v?.length)) {
-    throw new Error(`Local embedding provider returned ${embeddings.length}/${texts.length} vectors`)
+    throw new Error(
+      `Local embedding provider returned ${embeddings.length}/${texts.length} vectors`,
+    )
   }
   return embeddings
 }
@@ -568,7 +571,9 @@ export async function embedTexts(
   batchSize = 64,
   mode: EmbedMode = 'document',
 ): Promise<number[][]> {
-  const prefixed = texts.map((t) => (mode === 'query' ? SEARCH_QUERY_PREFIX : SEARCH_DOCUMENT_PREFIX) + t)
+  const prefixed = texts.map(
+    (t) => (mode === 'query' ? SEARCH_QUERY_PREFIX : SEARCH_DOCUMENT_PREFIX) + t,
+  )
   const out: number[][] = []
   for (let i = 0; i < prefixed.length; i += batchSize) {
     const slice = prefixed.slice(i, i + batchSize)
@@ -619,7 +624,10 @@ async function executeProvider(provider: string, request: any): Promise<{ text: 
     if (mainKeyEnv) {
       // Execute live Gemini API call
       const client = new GoogleGenAI({ apiKey: mainKeyEnv })
-      const response = await client.models.generateContent(request)
+      const response = await client.models.generateContent({
+        ...request,
+        model: request.model || CLOUD_GEN_MODEL,
+      })
       return { text: response.text || '' }
     }
   }

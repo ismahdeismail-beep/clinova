@@ -1,0 +1,229 @@
+{
+  "name": "Carbimazole",
+  "existing_id": "54ffd26e-3aca-4479-bfbc-dc772330639d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Carbimazole is a thionamide and a pro-drug that undergoes rapid and virtually complete metabolism to the active metabolite thiamazole (methimazole). Its action is believed to be inhibition of the organification of iodide and the coupling of iodothyronine residues, which in turn suppresses the synthesis of thyroid hormones (Carbimazole 5 mg Tablets SmPC, section 5.1; ATC code H03BB).",
+    "indications": [
+      "Hyperthyroidism (Carbimazole 5 mg Tablets SmPC, section 4.1)",
+      "Preparation for thyroidectomy in hyperthyroidism (Carbimazole 5 mg Tablets SmPC, section 4.1)",
+      "Therapy prior to and post radio-iodine treatment (Carbimazole 5 mg Tablets SmPC, section 4.1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance or to any of the excipients (Carbimazole 5 mg Tablets SmPC, section 4.3)",
+      "Serious, pre-existing haematological conditions (Carbimazole 5 mg Tablets SmPC, section 4.3)",
+      "Severe hepatic insufficiency (Carbimazole 5 mg Tablets SmPC, section 4.3)",
+      "History of acute pancreatitis after administration of carbimazole or its active metabolite thiamazole (Carbimazole 5 mg Tablets SmPC, section 4.3)"
+    ],
+    "side_effects": [
+      "Blood and lymphatic system: bone marrow depression including neutropenia, eosinophilia, leucopenia and agranulocytosis, with fatalities reported with carbimazole-induced agranulocytosis; rare pancytopenia/aplastic anaemia and isolated thrombocytopenia; very rare haemolytic anaemia; generalised lymphadenopathy (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Immune system: angioedema and multi-system hypersensitivity reactions such as cutaneous vasculitis with liver, lung and renal effects (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Endocrine: insulin autoimmune syndrome with a pronounced decline in blood glucose (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Nervous system: headache, neuritis and polyneuropathy (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Vascular: bleeding (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Gastrointestinal: nausea, mild gastrointestinal disturbance, loss of sense of taste, acute salivary gland swelling and acute pancreatitis (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Hepatobiliary: hepatic disorders including abnormal liver function tests, hepatitis, cholestatic hepatitis, cholestatic jaundice and most commonly jaundice (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Skin and subcutaneous tissue: skin rashes, pruritus, urticaria and occasional hair loss; severe cutaneous hypersensitivity reactions including Stevens-Johnson syndrome have been reported in adults and children (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Musculoskeletal: isolated cases of myopathy (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "General: fever and malaise; bruising (Carbimazole 5 mg Tablets SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Carbimazole should only be given if hyperthyroidism has been confirmed by laboratory tests. The initial dose is 20 mg to 60 mg daily taken as two to three divided doses, titrated against thyroid function until the patient is euthyroid to reduce the risk of over-treatment and resultant hypothyroidism. Subsequent therapy is given by one of two regimens. Maintenance regimen: final dosage is usually 5 mg to 15 mg per day, which may be taken as a single daily dose, continued for at least six months and up to 18 months with serial thyroid function monitoring and appropriate dosage modification. Blocking-replacement regimen: the dose is maintained at the initial level of 20 mg to 60 mg per day and supplemental L-thyroxine 50 micrograms to 150 micrograms per day is given concomitantly to prevent hypothyroidism, again for at least six months and up to 18 months (Carbimazole 5 mg Tablets SmPC, section 4.2).",
+      "maximum": "The SmPC does not state a maximum daily dose. The highest dose described is 60 mg per day, used for the initial and blocking-replacement regimens; the usual maintenance dose is 5 mg to 15 mg per day (Carbimazole 5 mg Tablets SmPC, section 4.2).",
+      "geriatric": "No special dosage regimen is required for the elderly, but care should be taken to observe the contraindications and warnings because the risk of a fatal outcome from neutrophil dyscrasia may be greater in patients aged 65 years or over (Carbimazole 5 mg Tablets SmPC, section 4.2).",
+      "paediatric": "In children and adolescents aged 3 to 17 years the usual initial daily dose is 15 mg per day, adjusted according to response. Safety and efficacy in children below 2 years of age have not been evaluated systematically, so use in children aged 2 years and under is not recommended (Carbimazole 5 mg Tablets SmPC, section 4.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Little is known about interactions, and interaction studies have not been performed in paediatric patients (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Particular care is required with concurrent medication capable of inducing agranulocytosis (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Carbimazole is a vitamin K antagonist, so the effect of anticoagulants could be intensified; additional monitoring of PT/INR should be considered, especially before surgical procedures (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Serum theophylline levels can increase and toxicity may develop if hyperthyroid patients are treated with antithyroid medicines without reducing the theophylline dosage (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Co-administration of prednisolone and carbimazole may result in increased clearance of prednisolone (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Carbimazole may inhibit the metabolism of erythromycin, leading to reduced clearance of erythromycin (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Serum digitalis levels may increase when hyperthyroid patients on a stable digitalis glycoside regimen become euthyroid, and a reduced dose of digitalis glycosides may be needed (Carbimazole 5 mg Tablets SmPC, section 4.5).",
+      "Hyperthyroidism may increase clearance of beta-adrenergic blockers with a high extraction ratio, so a dose reduction of beta-blockers may be needed once the patient becomes euthyroid (Carbimazole 5 mg Tablets SmPC, section 4.5)."
+    ],
+    "monitoring": "Serial thyroid function monitoring is recommended, with appropriate dosage modification, in order to maintain a euthyroid state during both the maintenance and blocking-replacement regimens (Carbimazole 5 mg Tablets SmPC, section 4.2). Regular full blood count checks should be carried out in patients who may be confused or have a poor memory. Patients should be instructed to stop the drug and seek medical advice immediately if sore throat, bruising or bleeding, mouth ulcers, fever or malaise occur, and a white blood cell count should be performed immediately in such patients, particularly where there is clinical evidence of infection (section 4.4). If signs or symptoms of hepatic disorder develop (upper abdominal pain, anorexia, general pruritus), the drug should be stopped and liver function tests performed immediately (section 4.4). Patients experiencing myalgia after taking carbimazole should have creatine phosphokinase levels monitored (section 4.8).",
+    "patient_counselling": "You will need regular blood tests to check your thyroid function and, in some circumstances, your blood count. Stop taking carbimazole and seek medical advice immediately if you develop a sore throat, bruising or bleeding, mouth ulcers, fever or generally feeling unwell, because these can be signs of a serious blood disorder. Also stop the medicine and contact your doctor promptly if you develop pain in the upper abdomen, loss of appetite or general itching, which may indicate a liver problem. Women of childbearing potential must use effective contraception during treatment. If you are pregnant or planning pregnancy, tell your doctor before taking carbimazole. Do not breast-feed while taking carbimazole (Carbimazole 5 mg Tablets SmPC, sections 4.4 and 4.6).",
+    "warnings": [
+      "Bone marrow depression including neutropenia, eosinophilia, leucopenia and agranulocytosis has been reported, with fatalities from carbimazole-induced agranulocytosis; warn patients about sore throat, bruising or bleeding, mouth ulcers, fever and malaise and instruct them to stop the drug and seek medical advice immediately, with an immediate white blood cell count where infection is suspected (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Stop the drug and perform liver function tests immediately if signs or symptoms of hepatic disorder occur (upper abdominal pain, anorexia, general pruritus); early withdrawal increases the chance of complete recovery (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Use with caution in mild to moderate hepatic insufficiency and stop treatment if abnormal liver function is discovered; the half-life may be prolonged by the liver disorder (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Stop carbimazole temporarily at the time of radio-iodine administration to avoid thyroid crisis (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Patients unable to comply with the instructions or who cannot be monitored regularly should not be treated with carbimazole (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Take precaution in patients with intrathoracic goitre, which may worsen during initial treatment and can cause tracheal obstruction (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "There is a risk of cross-allergy between carbimazole, its active metabolite thiamazole (methimazole) and propylthiouracil (Carbimazole 5 mg Tablets SmPC, section 4.4)",
+      "Acute pancreatitis has been reported post-marketing; discontinue carbimazole immediately if it occurs, and do not give it to patients with a history of acute pancreatitis after carbimazole or thiamazole because re-exposure may cause recurrence with a shorter time to onset (Carbimazole 5 mg Tablets SmPC, section 4.4)"
+    ],
+    "precautions": [
+      "Use with caution in patients with mild to moderate hepatic insufficiency; stop treatment if abnormal liver function is discovered, as the half-life may be prolonged (Carbimazole 5 mg Tablets SmPC, section 4.4).",
+      "Regular full blood count checks should be carried out in patients who may be confused or have a poor memory (Carbimazole 5 mg Tablets SmPC, section 4.4).",
+      "Use in non-pregnant women of childbearing potential should be based on an individual risk/benefit assessment, and effective contraception should be used during treatment (Carbimazole 5 mg Tablets SmPC, sections 4.4 and 4.6).",
+      "The tablets contain lactose monohydrate; patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine (Carbimazole 5 mg Tablets SmPC, section 4.4).",
+      "Women of childbearing potential and pregnancy: if carbimazole is used during pregnancy, give the lowest effective dose without additional thyroid hormones and arrange close maternal, foetal and neonatal monitoring (Carbimazole 5 mg Tablets SmPC, section 4.4)."
+    ],
+    "serious_adverse_reactions": [
+      "Agranulocytosis, which has been fatal, and other bone marrow depression including neutropenia, leucopenia and pancytopenia/aplastic anaemia (Carbimazole 5 mg Tablets SmPC, sections 4.4 and 4.8)",
+      "Hepatic disorders including hepatitis, cholestatic hepatitis and cholestatic jaundice (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Acute pancreatitis (Carbimazole 5 mg Tablets SmPC, sections 4.3, 4.4 and 4.8)",
+      "Severe cutaneous hypersensitivity reactions including Stevens-Johnson syndrome (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Angioedema and multi-system hypersensitivity reactions such as cutaneous vasculitis with liver, lung and renal effects (Carbimazole 5 mg Tablets SmPC, section 4.8)",
+      "Insulin autoimmune syndrome with pronounced hypoglycaemia (Carbimazole 5 mg Tablets SmPC, section 4.8)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "No pregnancy category letter is assigned in the UK SmPC format. Carbimazole crosses the placenta and is suspected to cause congenital malformations when administered during pregnancy, particularly in the first trimester and at high doses; it should be used in pregnancy only when propylthiouracil is not suitable, after a strict individual benefit/risk assessment and at the lowest effective dose without additional thyroid hormones (Carbimazole 5 mg Tablets SmPC, sections 4.4 and 4.6).",
+    "pregnancy_guidance": "Carbimazole crosses the placenta. Provided the mother's dose is within the standard range and her thyroid status is monitored, there is no evidence of neonatal thyroid abnormalities. Untreated maternal hyperthyroidism is associated with more congenital malformations than carbimazole-treated disease, but congenital malformations have been observed after carbimazole or methimazole exposure, and a causal relationship cannot be excluded, especially for choanal atresia and aplasia cutis congenita; renal, skull and cardiovascular defects, exomphalos, gastrointestinal and umbilical malformations and duodenal atresia have also been reported. Carbimazole should be used in pregnancy only when propylthiouracil is not suitable, with the dose regulated by the patient's clinical condition, the lowest possible dose, and consideration of discontinuation three to four weeks before term to reduce neonatal complications. The blocking-replacement regimen should not be used during pregnancy because very little thyroxine crosses the placenta in the last trimester. Close maternal, foetal and neonatal monitoring is recommended (Carbimazole 5 mg Tablets SmPC, section 4.6).",
+    "lactation_guidance": "Carbimazole is secreted in breast milk and, if treatment is continued during lactation, the patient should not continue to breast-feed her baby (Carbimazole 5 mg Tablets SmPC, section 4.6).",
+    "overdose": "No symptoms are likely from a single large dose of carbimazole, and no specific treatment is indicated (Carbimazole 5 mg Tablets SmPC, section 4.9).",
+    "pharmacokinetics": "Carbimazole is rapidly metabolised to thiamazole. After oral ingestion, peak plasma concentrations of thiamazole, the active moiety, occur at 1 to 2 hours. The total volume of distribution of thiamazole is 0.5 L/kg, and thiamazole is concentrated in the thyroid gland, prolonging its activity; however, thiamazole has a shorter half-life in hyperthyroid patients than in normal controls, so more frequent initial doses are required while hyperthyroidism is active. Thiamazole is moderately bound to plasma proteins. Carbimazole has a half-life of 5.3 to 5.4 hours, and the plasma half-life may be prolonged by renal or hepatic disease. Thiamazole crosses the placenta and appears in breast milk, with a plasma:milk ratio approaching unity. Over 90% of orally administered carbimazole is excreted in the urine as thiamazole or its metabolites, the remainder appears in faeces, and there is 10% enterohepatic circulation (Carbimazole 5 mg Tablets SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Carbimazole is a pro-drug: it is converted rapidly and almost completely to the active metabolite thiamazole (methimazole), so its effects and adverse reactions reflect thiamazole exposure (Carbimazole 5 mg Tablets SmPC, section 5.1).",
+      "Confirm hyperthyroidism with laboratory tests before starting treatment, and titrate the dose against thyroid function to avoid over-treatment and hypothyroidism (Carbimazole 5 mg Tablets SmPC, section 4.2).",
+      "Agranulocytosis is the key serious risk: teach every patient to stop the drug and seek immediate medical advice for sore throat, fever, mouth ulcers, bruising or bleeding, and check a white blood cell count urgently (Carbimazole 5 mg Tablets SmPC, section 4.4).",
+      "The blocking-replacement regimen uses carbimazole 20 to 60 mg daily plus levothyroxine 50 to 150 micrograms daily, and must not be used in pregnancy (Carbimazole 5 mg Tablets SmPC, sections 4.2 and 4.6).",
+      "Carbimazole is not recommended in children under 2 years of age; in children aged 3 to 17 years the usual initial dose is 15 mg daily (Carbimazole 5 mg Tablets SmPC, section 4.2)."
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral administration (Carbimazole 5 mg Tablets SmPC, section 4.2). The 5 mg tablets have a score line that is only to facilitate breaking for ease of swallowing and not to divide into equal doses (section 3). Store below 25 degrees C (section 6.4). Any unused medicinal product or waste material should be disposed of in accordance with local requirements (section 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Carbimazole 5 mg Tablets, UK SmPC, Aurobindo Pharma - Milpharm Ltd, section 5.1 Pharmacodynamic properties",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.1 Therapeutic indications",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.3 Contraindications",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.8 Undesirable effects",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.2 Posology and method of administration",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.5 Interaction with other medicinal products",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.2, 4.4 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.4 and 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.4 and 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.3, 4.4 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the UK SmPC; section 4.5 addresses interactions with other medicinal products only",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.4 and 4.6 (no pregnancy category is assigned in UK SmPC format)",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.6 Fertility, pregnancy and lactation",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.6 Breast-feeding",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, section 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 4.2, 4.4, 4.6 and 5.1",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "The SmPC used labels the product generically as Carbimazole 5 mg Tablets; no proprietary brand name is given (a search of emc lists only generic carbimazole products)",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The UK SmPC format contains no boxed warning section; no boxed warning is included in this SmPC",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Carbimazole 5 mg Tablets UK SmPC, sections 3, 4.2, 6.4 and 6.6",
+      "url": "https://www.medicines.org.uk/emc/product/13015/smpc",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult titration and maintenance regimens are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric initial dose is given in fields.dosage.paediatric)",
+    "renal_dose_adjustment (no specific renal dose adjustment is given in the SmPC; the plasma half-life may be prolonged by renal disease)",
+    "hepatic_dose_adjustment (no specific hepatic dose adjustment is given in the SmPC; use with caution in mild to moderate impairment and stop if liver function becomes abnormal)"
+  ],
+  "notes": "Carbimazole has no FDA-approved product and therefore no DailyMed label; this monograph is sourced from the UK SmPC for Carbimazole 5 mg Tablets (MHRA/emc), which is the regulator labelling used here. The existing row carried sodium iodide I-131 mechanism, pharmacokinetics, warnings and indications text, which is wrong-drug contamination and is superseded by this draft. The SmPC does not give a proprietary brand name, so brand_names is empty and a source entry records that absence; the previously stored brand names were not traceable to this label. The UK SmPC format has no boxed warning, hence black_box_warnings is empty and a source entry records that absence."
+}

@@ -1,0 +1,240 @@
+{
+  "name": "Cariprazine",
+  "existing_id": "270b8998-8627-45fc-baf7-4fd7906f6fb8",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "The mechanism of action of cariprazine is unknown. However, its efficacy could be mediated through a combination of partial agonist activity at central dopamine D2 and serotonin 5-HT1A receptors and antagonist activity at serotonin 5-HT2A receptors. Cariprazine forms two major metabolites, desmethylcariprazine (DCAR) and didesmethylcariprazine (DDCAR), which have in vitro receptor binding profiles similar to the parent drug. Cariprazine acts as a partial agonist at dopamine D3 and D2 receptors with high binding affinity (Ki 0.085 nM, and 0.49 nM for D2L and 0.69 nM for D2S) and at serotonin 5-HT1A receptors (Ki 2.6 nM), and as an antagonist at 5-HT2B and 5-HT2A receptors (Ki 0.58 nM and 18.8 nM respectively); it also binds histamine H1 receptors (Ki 23.2 nM), has lower affinity for 5-HT2C and alpha1A-adrenergic receptors, and has no appreciable affinity for cholinergic muscarinic receptors (VRAYLAR label, Clinical Pharmacology 12.1 and 12.2).",
+    "indications": [
+      "Treatment of schizophrenia in adult and paediatric patients 13 years of age and older (VRAYLAR label, Indications and Usage)",
+      "Acute treatment of manic or mixed episodes associated with bipolar I disorder in adult and paediatric patients 10 years of age and older (VRAYLAR label, Indications and Usage)",
+      "Treatment of depressive episodes associated with bipolar I disorder (bipolar depression) in adult patients (VRAYLAR label, Indications and Usage)",
+      "Adjunctive therapy to antidepressants for the treatment of major depressive disorder (MDD) in adult patients (VRAYLAR label, Indications and Usage)"
+    ],
+    "contraindications": [
+      "History of a hypersensitivity reaction to cariprazine; reactions have ranged from rash, pruritus and urticaria to reactions suggestive of angioedema such as swollen tongue, lip swelling, face oedema, pharyngeal oedema and swelling of the face (VRAYLAR label, Contraindications)"
+    ],
+    "side_effects": [
+      "Nervous system: extrapyramidal symptoms (15% at 1.5 to 3 mg/day and 19% at 4.5 to 6 mg/day vs 8% placebo in 6-week adult schizophrenia trials), akathisia (9% and 13% vs 4%), headache (9% and 11% vs 13%), somnolence (5% and 8% vs 5%), dizziness (3% and 5% vs 2%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "Psychiatric: insomnia (12% and 13% vs 11%), agitation (3% and 5% vs 4%), restlessness (4% and 6% vs 3%), anxiety (6% and 5% vs 4%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "Gastrointestinal: constipation (6% and 7% vs 5%), nausea (5% and 7% vs 5%), vomiting (4% and 5% vs 3%), dyspepsia (4% and 5% vs 4%), diarrhoea (1% and 4% vs 3%), abdominal pain (3% and 4% vs 5%), dry mouth (1% and 2% vs 2%), toothache (3% vs 4%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "Cardiovascular: tachycardia (2% and 2% vs 1%), hypertension (2% and 3% vs 1%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "Musculoskeletal and connective tissue: back pain (3% vs 2%), arthralgia (2% and 1% vs 1%), pain in extremity (2% vs 3%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "Investigations: blood creatine phosphokinase increased (1% and 2% vs 1%), hepatic enzyme increased (1% and 1% vs <1%), weight increased (3% and 2% vs 1%) (VRAYLAR label, Adverse Reactions 6.1)",
+      "General and other: fatigue (1% and 3% vs 1%), decreased appetite (1% and 3% vs 2%), nasopharyngitis (1% vs 1%), urinary tract infection (1% vs 1%), cough (1% and 2% vs 2%), rash (<1% and 1% vs 1%) (VRAYLAR label, Adverse Reactions 6.1)"
+    ],
+    "dosage": {
+      "adult": "VRAYLAR is given orally once daily with or without food. Schizophrenia: start at 1.5 mg once daily; the recommended range is 1.5 mg to 6 mg once daily, the dose can be increased to 3 mg on day 2, and further adjustments can be made in 1.5 mg or 3 mg increments. Manic or mixed episodes associated with bipolar I disorder: start at 1.5 mg once daily and increase to 3 mg on day 2; the recommended range is 3 mg to 6 mg once daily, with further adjustments in 1.5 mg or 3 mg increments. Bipolar depression: start at 1.5 mg once daily and, depending on response and tolerability, increase to 3 mg once daily on day 15. Adjunctive therapy to antidepressants for MDD: start at 1.5 mg once daily and, depending on response and tolerability, increase to 3 mg once daily on day 15; titration at intervals of less than 14 days resulted in a higher incidence of adverse reactions. Because of the long half-life of cariprazine and its active metabolites, changes in dose are not fully reflected in plasma for several weeks, so monitor for adverse reactions and treatment response for several weeks after starting and after each dosage change (VRAYLAR label, Dosage and Administration 2.1 to 2.5).",
+      "maximum": "Maximum recommended dose is 6 mg once daily for schizophrenia and for manic or mixed episodes of bipolar I disorder in adults, and 3 mg once daily for bipolar depression and for adjunctive therapy of MDD in adults. Doses above 6 mg daily do not confer increased effectiveness sufficient to outweigh dose-related adverse reactions (VRAYLAR label, Dosage and Administration 2.2 to 2.5).",
+      "geriatric": "Clinical trials did not include sufficient numbers of patients aged 65 and older to determine whether they respond differently from younger patients; in general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy. No dosage adjustment is required based on age, but VRAYLAR is not approved for the treatment of patients with dementia-related psychosis, in whom antipsychotic drugs increase the risk of death (VRAYLAR label, Geriatric Use and Other Specific Populations).",
+      "paediatric": "Schizophrenia in patients 13 to 17 years: start at 0.5 mg once daily; the recommended range is 1.5 mg to 4.5 mg once daily; increase to 1.5 mg once daily on day 3, to 3 mg once daily starting on day 5 and to 4.5 mg once daily starting on day 8, with a maximum of 4.5 mg once daily. Manic or mixed episodes associated with bipolar I disorder in patients 10 to 17 years: start at 0.5 mg once daily; the recommended dose is 3 mg or 4.5 mg once daily; increase to 1.5 mg once daily on day 3 and to 3 mg once daily on day 5, and the dose may be increased to 4.5 mg once daily starting on day 8, with a maximum of 4.5 mg once daily. Initiating VRAYLAR is not recommended in paediatric patients while taking a strong or moderate CYP3A4 inhibitor. Safety and effectiveness in bipolar depression and in adjunctive therapy of MDD have not been established in paediatric patients (VRAYLAR label, Dosage and Administration 2.2, 2.3 and 2.6; Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Strong or moderate CYP3A4 inhibitors increase the exposure of cariprazine and its major active metabolite DDCAR; reduce the VRAYLAR dose. For adults starting VRAYLAR while taking a strong CYP3A4 inhibitor, start at 0.5 mg once daily (0.75 mg if needed) for schizophrenia and bipolar mania, or 0.5 mg once daily for bipolar depression and adjunctive MDD; with a moderate CYP3A4 inhibitor, start at 0.75 mg once daily (1.5 mg if needed) for schizophrenia and bipolar mania, or 0.75 mg once daily for bipolar depression and adjunctive MDD. When initiating a strong or moderate CYP3A4 inhibitor in a patient on a stable VRAYLAR dose, reduce to 0.5 mg (strong inhibitor) or 0.75 mg (moderate inhibitor) once daily if currently taking 1.5 mg or 3 mg, and to 0.75 mg (strong) or 1.5 mg (moderate) once daily if currently taking 4.5 mg or 6 mg; when the inhibitor is discontinued, the dose may need to be increased based on response and tolerability (VRAYLAR label, Dosage and Administration 2.6 and Drug Interactions 7).",
+      "Concomitant use of VRAYLAR with a CYP3A4 inducer has not been evaluated and is not recommended (VRAYLAR label, Dosage and Administration 2.6 and Drug Interactions 7).",
+      "CYP2D6 inhibitors are not expected to influence the pharmacokinetics of cariprazine, DCAR or DDCAR based on observations in CYP2D6 poor metabolizers (VRAYLAR label, Clinical Pharmacology 12.3).",
+      "Co-administration of pantoprazole 40 mg/day with VRAYLAR 6 mg/day for 15 days did not affect cariprazine exposure at steady state, and no significant change in exposure to DCAR or DDCAR was observed (VRAYLAR label, Clinical Pharmacology 12.3)."
+    ],
+    "monitoring": "Monitor all patients for clinical worsening and emergence of suicidal thoughts and behaviours, especially during the initial few months of therapy and at times of dosage changes, and counsel family members or caregivers to watch for changes in behaviour (VRAYLAR label, Warnings and Precautions 5.2). Monitor for adverse reactions, including extrapyramidal symptoms and akathisia, and for treatment response for several weeks after starting VRAYLAR and after each dose increase, because plasma levels of cariprazine and its metabolites accumulate over time (5.6). Assess fasting plasma glucose before or soon after initiation and monitor periodically during long-term treatment; obtain a fasting lipid profile at baseline and monitor periodically; monitor weight at baseline and frequently thereafter (5.7). Perform a complete blood count frequently during the first few months in patients with a pre-existing low white blood cell count or absolute neutrophil count or a history of drug-induced leukopenia or neutropenia, and monitor patients with clinically significant neutropenia for fever or other signs of infection (5.8). Monitor orthostatic vital signs in patients vulnerable to hypotension, with known cardiovascular disease or with cerebrovascular disease (5.9). Complete fall risk assessments when initiating treatment and recurrently for patients on long-term therapy (5.10).",
+    "patient_counselling": "Take VRAYLAR once daily, with or without food, and follow the dose-escalation instructions exactly. Because the medicine stays in the body for a long time, side effects may not appear until several weeks after starting or after a dose change; tell your doctor about any new or worsening symptoms. Tell your doctor or caregiver right away about any thoughts of self-harm or suicide, especially early in treatment or when the dose changes. Report fever, muscle stiffness, confusion, irregular pulse or sweating, which may be signs of a serious reaction called neuroleptic malignant syndrome, and report abnormal movements of the tongue, face, mouth or body, which may be tardive dyskinesia. Tell your doctor about increased thirst, frequent urination, hunger, weight gain or changes in mood. VRAYLAR may cause drowsiness, dizziness on standing, falls or seizures; do not drive or operate hazardous machinery until you know how it affects you, and take care to avoid overheating and dehydration. Tell your doctor if you have a low white blood cell count or a history of low white cells. Do not breast-feed during treatment without discussing it with your doctor (VRAYLAR label, Patient Counseling Information 17 and Warnings and Precautions).",
+    "warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death (about 1.6 to 1.7 times placebo in pooled analyses), and VRAYLAR is not approved for the treatment of patients with dementia-related psychosis (VRAYLAR label, boxed warning and Warnings and Precautions 5.1)",
+      "Suicidal thoughts and behaviours: antidepressants increased the risk of suicidal thoughts and behaviours in paediatric and young adult patients in short-term studies; closely monitor all antidepressant-treated patients for clinical worsening and for emergence of suicidal thoughts and behaviours (VRAYLAR label, boxed warning and Warnings and Precautions 5.2)",
+      "Cerebrovascular adverse reactions, including stroke, have occurred in elderly patients with dementia-related psychosis treated with some antipsychotics; VRAYLAR is not approved for dementia-related psychosis (VRAYLAR label, Warnings and Precautions 5.3)",
+      "Neuroleptic malignant syndrome (NMS), a potentially fatal symptom complex of hyperpyrexia, muscle rigidity, delirium and autonomic instability, has been reported with antipsychotic drugs; if NMS is suspected, immediately discontinue VRAYLAR and provide intensive symptomatic treatment and monitoring (VRAYLAR label, Warnings and Precautions 5.4)",
+      "Tardive dyskinesia, a potentially irreversible syndrome of involuntary dyskinetic movements, may develop in patients treated with antipsychotic drugs including VRAYLAR; the risk and likelihood of irreversibility increase with treatment duration and cumulative dose, so use the lowest dose and shortest duration producing a satisfactory response and periodically reassess the need for continued treatment (VRAYLAR label, Warnings and Precautions 5.5)",
+      "Late-occurring adverse reactions may first appear several weeks after starting VRAYLAR because plasma levels accumulate; monitor for adverse reactions including EPS or akathisia and for response for several weeks after starting and after each dose increase (VRAYLAR label, Warnings and Precautions 5.6)",
+      "Metabolic changes including hyperglycaemia, diabetes mellitus, dyslipidaemia and weight gain have occurred with atypical antipsychotics including VRAYLAR; hyperglycaemia in some cases has been extreme and associated with ketoacidosis, hyperosmolar coma or death (VRAYLAR label, Warnings and Precautions 5.7)",
+      "Leukopenia and neutropenia have been reported with antipsychotics including VRAYLAR, and agranulocytosis including fatal cases has been reported with other agents in the class; monitor at-risk patients and discontinue VRAYLAR if the absolute neutrophil count falls below 1,000/mm3 (VRAYLAR label, Warnings and Precautions 5.8)"
+    ],
+    "precautions": [
+      "Orthostatic hypotension and syncope: atypical antipsychotics cause orthostatic hypotension and syncope, with greatest risk during initial dose titration and dose increases; monitor orthostatic vital signs in vulnerable patients, those with known cardiovascular disease and those with cerebrovascular disease (VRAYLAR label, Warnings and Precautions 5.9).",
+      "Falls: antipsychotics including VRAYLAR may cause somnolence, postural hypotension, motor and sensory instability, leading to falls and fractures; complete fall risk assessments when initiating treatment and recurrently during long-term therapy (VRAYLAR label, Warnings and Precautions 5.10).",
+      "Seizures: VRAYLAR may cause seizures, with greatest risk in patients with a history of seizures or conditions that lower the seizure threshold, which are more prevalent in older patients (VRAYLAR label, Warnings and Precautions 5.11).",
+      "Potential for cognitive and motor impairment: VRAYLAR may cause somnolence and impair judgment, thinking or motor skills; caution patients about operating hazardous machinery, including motor vehicles, until they are reasonably certain therapy does not affect them adversely (VRAYLAR label, Warnings and Precautions 5.12).",
+      "Body temperature dysregulation: atypical antipsychotics may disrupt the ability to reduce core body temperature; use with caution in patients exposed to strenuous exercise, extreme heat, dehydration or anticholinergic medications (VRAYLAR label, Warnings and Precautions 5.13).",
+      "Dysphagia: oesophageal dysmotility and aspiration have been associated with antipsychotic use, and dysphagia has been reported with VRAYLAR; use cautiously in patients at risk for aspiration (VRAYLAR label, Warnings and Precautions 5.14)."
+    ],
+    "serious_adverse_reactions": [
+      "Increased mortality in elderly patients with dementia-related psychosis (VRAYLAR label, boxed warning and Warnings and Precautions 5.1)",
+      "Suicidal thoughts and behaviours, particularly in children, adolescents and young adults (VRAYLAR label, boxed warning and Warnings and Precautions 5.2)",
+      "Cerebrovascular adverse reactions, including stroke, in elderly patients with dementia-related psychosis (VRAYLAR label, Warnings and Precautions 5.3)",
+      "Neuroleptic malignant syndrome (VRAYLAR label, Warnings and Precautions 5.4)",
+      "Tardive dyskinesia (VRAYLAR label, Warnings and Precautions 5.5)",
+      "Hyperglycaemia, diabetes mellitus, dyslipidaemia and weight gain, with hyperglycaemia sometimes extreme and associated with ketoacidosis, hyperosmolar coma or death (VRAYLAR label, Warnings and Precautions 5.7)",
+      "Leukopenia, neutropenia and agranulocytosis (VRAYLAR label, Warnings and Precautions 5.8)",
+      "Orthostatic hypotension and syncope (VRAYLAR label, Warnings and Precautions 5.9)",
+      "Falls and resulting fractures or other injuries (VRAYLAR label, Warnings and Precautions 5.10)",
+      "Seizures (VRAYLAR label, Warnings and Precautions 5.11)"
+    ],
+    "food_interactions": [
+      "Administration of a single 1.5 mg VRAYLAR capsule with a high-fat meal did not significantly affect the Cmax and AUC of cariprazine or DCAR, and VRAYLAR can be taken with or without food (VRAYLAR label, Dosage and Administration 2.1 and Clinical Pharmacology 12.3)."
+    ],
+    "pregnancy_category": "No pregnancy category letter is assigned in the current labelling. There are no available data on VRAYLAR use in pregnant women to inform any drug-associated risk for birth defects or miscarriage, and based on animal data VRAYLAR may cause fetal harm; the major active metabolite DDCAR has been detected in adult patients up to 12 weeks after discontinuation. Neonates exposed to antipsychotic drugs during the third trimester are at risk of extrapyramidal and/or withdrawal symptoms after delivery, so pregnant women should be advised of the potential risk to the fetus and neonates should be monitored (VRAYLAR label, Pregnancy 8.1).",
+    "pregnancy_guidance": "There is a pregnancy exposure registry that monitors outcomes in women exposed to VRAYLAR during pregnancy. There are no available data on VRAYLAR use in pregnant women to inform any drug-associated risk for birth defects or miscarriage. Based on animal data, VRAYLAR may cause fetal harm: cariprazine given to rats during organogenesis caused malformations, lower pup survival and developmental delays at exposures less than the human exposure at the maximum recommended human dose of 6 mg/day, although it was not teratogenic in rabbits at doses up to 4.6 times that dose. Neonates exposed to antipsychotic drugs during the third trimester are at risk of extrapyramidal and/or withdrawal symptoms including agitation, hypertonia, hypotonia, tremor, somnolence, respiratory distress and feeding disorder; monitor neonates and manage symptoms appropriately. Advise pregnant women of the potential risk to a fetus (VRAYLAR label, Pregnancy 8.1).",
+    "lactation_guidance": "Lactation studies have not been conducted to assess the presence of cariprazine in human milk, the effects on the breastfed infant, or the effects on milk production. Cariprazine is present in rat milk. The development and health benefits of breast-feeding should be considered along with the mother's clinical need for VRAYLAR and any potential adverse effects on the breastfed infant from VRAYLAR or from the underlying maternal condition (VRAYLAR label, Lactation 8.2).",
+    "overdose": "In pre-marketing clinical trials involving VRAYLAR in approximately 5,000 patients or healthy subjects, accidental acute overdosage (48 mg/day) was reported in one patient, who experienced orthostasis and sedation and fully recovered the same day. No specific antidotes for VRAYLAR are known; in managing overdose, provide supportive care including close medical supervision and monitoring, and consider the possibility of multiple drug involvement. Consult a Certified Poison Control Center for up-to-date guidance (VRAYLAR label, Overdosage 10.1 and 10.2).",
+    "pharmacokinetics": "VRAYLAR activity is thought to be mediated by cariprazine and its two major active metabolites, DCAR and DDCAR, which are pharmacologically equipotent to cariprazine. After multiple dosing, mean cariprazine and DCAR concentrations reach steady state at around week 1 to week 2, and mean DDCAR concentrations approach steady state at around week 4 to week 8; half-lives based on time to steady state are 2 to 4 days for cariprazine, about 1 to 2 days for DCAR and approximately 1 to 3 weeks for DDCAR, with some patients not achieving DDCAR steady state by 12 weeks. Mean concentrations of DCAR and DDCAR are approximately 30% and 400% of cariprazine concentrations by the end of 12-week treatment. After a single dose, peak plasma cariprazine concentration occurs in approximately 3 to 6 hours; a high-fat meal did not significantly affect Cmax or AUC. Cariprazine and its major active metabolites are 91% to 97% bound to plasma proteins. Cariprazine is extensively metabolised by CYP3A4 and, to a lesser extent, CYP2D6 to DCAR and DDCAR, and DDCAR is then metabolised by CYP3A4 to a hydroxylated metabolite. After 12.5 mg/day for 27 days in patients with schizophrenia, about 21% of the daily dose was found in urine, with approximately 1.2% excreted as unchanged cariprazine. After discontinuation, mean DDCAR concentrations decrease by about 50% one week after the last dose, while cariprazine and DCAR concentrations drop by about 50% in about one day; there is an approximately 90% decline in plasma exposure within 1 week for cariprazine and DCAR and at about 4 weeks for DDCAR (VRAYLAR label, Clinical Pharmacology 12.3).",
+    "clinical_pearls": [
+      "Because of the long half-life of cariprazine and its active metabolites, dose changes are not fully reflected in plasma for several weeks; monitor for response and adverse reactions for several weeks after starting and after each change (VRAYLAR label, Dosage and Administration 2.1).",
+      "The maximum recommended dose differs by indication: 6 mg/day for schizophrenia and bipolar mania, but 3 mg/day for bipolar depression and adjunctive MDD (VRAYLAR label, Dosage and Administration 2.2 to 2.5).",
+      "Reduce the dose when starting or continuing a strong or moderate CYP3A4 inhibitor, and avoid concomitant CYP3A4 inducers because the interaction has not been evaluated (VRAYLAR label, Dosage and Administration 2.6 and Drug Interactions 7).",
+      "VRAYLAR is not approved for dementia-related psychosis, in which antipsychotics increase mortality (VRAYLAR label, boxed warning and Warnings and Precautions 5.1).",
+      "No dosage adjustment is required for mild to moderate renal impairment (CrCL at least 30 mL/min) or mild to moderate hepatic impairment (Child-Pugh 5 to 9), but use is not recommended in severe renal or hepatic impairment (VRAYLAR label, Renal Impairment 8.7 and Hepatic Impairment 8.6)."
+    ],
+    "brand_names": ["Vraylar"],
+    "black_box_warnings": [
+      "Increased mortality in elderly patients with dementia-related psychosis: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death, and VRAYLAR is not approved for the treatment of patients with dementia-related psychosis (VRAYLAR label, boxed warning)",
+      "Suicidal thoughts and behaviours: antidepressants increased the risk of suicidal thoughts and behaviours in paediatric and young adult patients in short-term studies; closely monitor all antidepressant-treated patients for clinical worsening and for the emergence of suicidal thoughts and behaviours (VRAYLAR label, boxed warning)"
+    ],
+    "renal_dose_adjustment": "No dosage adjustment for VRAYLAR is required in patients with mild to moderate renal impairment (creatinine clearance at least 30 mL/min). Use of VRAYLAR is not recommended in patients with severe renal impairment (creatinine clearance below 30 mL/min), because it has not been evaluated in this population (VRAYLAR label, Renal Impairment 8.7).",
+    "hepatic_dose_adjustment": "No dosage adjustment for VRAYLAR is required in patients with mild to moderate hepatic impairment (Child-Pugh score 5 to 9). Use of VRAYLAR is not recommended in patients with severe hepatic impairment (Child-Pugh score 10 to 15), because it has not been evaluated in this population (VRAYLAR label, Hepatic Impairment 8.6).",
+    "administration_instructions": "For oral administration only. Take VRAYLAR once daily, with or without food (VRAYLAR label, Dosage and Administration 2.1). Capsules are available in 0.5 mg, 0.75 mg, 1.5 mg, 3 mg, 4.5 mg and 6 mg strengths (Dosage Forms and Strengths 3). Follow the indication-specific titration schedule; because of the long half-life, changes in dose will not be fully reflected in plasma for several weeks, so monitor response and adverse reactions for several weeks after starting and after each change. Following discontinuation, plasma concentrations of cariprazine and its active metabolites decline by 50% in about one week, and there are no systematically collected data on switching to other antipsychotics or on concomitant administration with other antipsychotics (Dosage and Administration 2.1 and 2.7)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "VRAYLAR (cariprazine) capsules, FDA label, AbbVie/Allergan, DailyMed, Clinical Pharmacology 12.1 and 12.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "VRAYLAR FDA label, Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "VRAYLAR FDA label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "VRAYLAR FDA label, Adverse Reactions 6.1 (Table 8, 6-week schizophrenia trials in adults)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "VRAYLAR FDA label, Dosage and Administration 2.1 to 2.6, Geriatric Use and Pediatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "VRAYLAR FDA label, Dosage and Administration 2.6, Drug Interactions 7 and Clinical Pharmacology 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "VRAYLAR FDA label, Warnings and Precautions 5.2 and 5.6 to 5.10",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "VRAYLAR FDA label, Patient Counseling Information 17 and Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "VRAYLAR FDA label, boxed warning and Warnings and Precautions 5.1 to 5.8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "VRAYLAR FDA label, Warnings and Precautions 5.9 to 5.14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "VRAYLAR FDA label, boxed warning and Warnings and Precautions 5.1 to 5.11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "VRAYLAR FDA label, Dosage and Administration 2.1 and Clinical Pharmacology 12.3 (effect of a high-fat meal)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "VRAYLAR FDA label, Pregnancy 8.1 (no pregnancy category letter is assigned in the current labelling)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "VRAYLAR FDA label, Pregnancy 8.1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "VRAYLAR FDA label, Lactation 8.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "VRAYLAR FDA label, Overdosage 10.1 and 10.2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "VRAYLAR FDA label, Clinical Pharmacology 12.3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "VRAYLAR FDA label, Dosage and Administration 2.1 to 2.6, boxed warning, Warnings and Precautions 5.1, Renal Impairment 8.7 and Hepatic Impairment 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "VRAYLAR is the brand name of the labelled cariprazine product (AbbVie/Allergan)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "VRAYLAR FDA label, boxed warning (increased mortality in elderly patients with dementia-related psychosis; suicidal thoughts and behaviours)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "VRAYLAR FDA label, Renal Impairment 8.7",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "hepatic_dose_adjustment",
+      "ref": "VRAYLAR FDA label, Hepatic Impairment 8.6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "VRAYLAR FDA label, Dosage and Administration 2.1, 2.7 and Dosage Forms and Strengths 3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5f7c65-aa2d-452a-b3db-bc85c06ff12f",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the indication-specific adult regimens are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric schizophrenia and bipolar mania regimens are given in fields.dosage.paediatric)"
+  ],
+  "notes": "This monograph is sourced from the FDA-approved DailyMed label for VRAYLAR (cariprazine) capsules (setid 4b5f7c65-aa2d-452a-b3db-bc85c06ff12f). The label has a boxed warning for increased mortality in elderly patients with dementia-related psychosis and for suicidal thoughts and behaviours, which is populated here. The existing row carried generic antipsychotic class-template text, which is wrong-drug contamination and is superseded by this draft. The current labelling does not assign a pregnancy category letter, so pregnancy_category is narrative. Dose limits differ by indication (6 mg/day for schizophrenia and bipolar mania; 3 mg/day for bipolar depression and adjunctive MDD), and the maximum field states this explicitly."
+}

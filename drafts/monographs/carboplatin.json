@@ -1,0 +1,237 @@
+{
+  "name": "Carboplatin",
+  "existing_id": "d31b5132-42ba-47a7-afb4-931cb2b32fd9",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Carboplatin, like cisplatin, produces predominantly interstrand DNA cross-links rather than DNA-protein cross-links, and this effect is apparently cell-cycle nonspecific. The aquation of carboplatin, which is thought to produce the active species, occurs more slowly than with cisplatin; despite this difference, both drugs induce equal numbers of drug-DNA cross-links, causing equivalent lesions and biological effects, and the difference in potency appears to be directly related to the difference in aquation rates (Carboplatin injection, USP label, Clinical Pharmacology).",
+    "indications": [
+      "Initial treatment of advanced ovarian carcinoma in established combination with other approved chemotherapeutic agents; one established combination regimen consists of carboplatin and cyclophosphamide (Carboplatin injection, USP label, Indications and Usage)",
+      "Palliative treatment of patients with ovarian carcinoma recurrent after prior chemotherapy, including patients previously treated with cisplatin; within the group previously treated with cisplatin, those who developed progressive disease while receiving cisplatin may have a decreased response rate (Carboplatin injection, USP label, Indications and Usage)"
+    ],
+    "contraindications": [
+      "History of severe allergic reactions to cisplatin or other platinum-containing compounds (Carboplatin injection, USP label, Contraindications)",
+      "Severe bone marrow depression or significant bleeding (Carboplatin injection, USP label, Contraindications)"
+    ],
+    "side_effects": [
+      "Hematologic: bone marrow suppression is dose-limiting and dose-dependent; thrombocytopenia with platelets below 50,000/mm3 occurs in 25% of patients (35% of pretreated ovarian cancer patients), neutropenia with granulocytes below 1,000/mm3 in 16% (21% pretreated), and leukopenia with white cells below 2,000/mm3 in 15% (26% pretreated); the nadir is usually about day 21; anaemia with haemoglobin below 11 g/dL occurs in 71% of patients starting above that value and transfusions are given to 26% (44% pretreated); infectious or haemorrhagic complications occur in 5%, with drug-related death in less than 1% (Carboplatin injection, USP label, Adverse Reactions)",
+      "Gastrointestinal: vomiting in 65% of patients (81% of pretreated ovarian cancer patients), severe in about one-third; nausea alone in an additional 10% to 15%; abdominal pain 17%, diarrhoea 6% and constipation 6% (Carboplatin injection, USP label, Adverse Reactions)",
+      "Neurologic: peripheral neuropathy in 4% of patients (6% pretreated), most often mild paraesthesias; increased risk (10%) in patients older than 65 years and/or previously treated with cisplatin; ototoxicity and other sensory abnormalities such as visual disturbances and taste change in 1%; central nervous system symptoms in 5%, often related to antiemetics; cumulative neurotoxicity with prolonged treatment (Carboplatin injection, USP label, Adverse Reactions)",
+      "Renal: abnormal serum creatinine in 6% and blood urea nitrogen in 14% (10% and 22% respectively in pretreated ovarian cancer patients); most abnormalities are mild and about one-half are reversible (Carboplatin injection, USP label, Adverse Reactions)",
+      "Hepatic: abnormal total bilirubin in 5%, SGOT in 15% and alkaline phosphatase in 24% of patients with normal baseline values (5%, 19% and 37% respectively in pretreated ovarian cancer patients), generally mild and reversible in about one-half of cases (Carboplatin injection, USP label, Adverse Reactions)",
+      "Electrolyte changes: decreased serum sodium 29%, potassium 20%, calcium 22% and magnesium 29% (47%, 28%, 31% and 43% respectively in pretreated ovarian cancer patients), rarely associated with symptoms (Carboplatin injection, USP label, Adverse Reactions)",
+      "Allergic: hypersensitivity in 2% of patients, with rash, urticaria, erythema, pruritus and rarely bronchospasm and hypotension; anaphylactic reactions reported in postmarketing surveillance (Carboplatin injection, USP label, Adverse Reactions and Warnings)",
+      "Injection site: redness, swelling and pain; necrosis associated with extravasation has also been reported (Carboplatin injection, USP label, Adverse Reactions)",
+      "Other: pain and asthenia are the most frequent miscellaneous effects; alopecia 3%; cardiovascular, respiratory, genitourinary and mucosal effects in 6% or less; malaise, anorexia, hypertension, dehydration and stomatitis reported in postmarketing surveillance; cancer-associated haemolytic uraemic syndrome rarely (Carboplatin injection, USP label, Adverse Reactions)"
+    ],
+    "dosage": {
+      "adult": "Carboplatin injection is given intravenously. Single agent therapy for recurrent ovarian carcinoma: 360 mg/m2 intravenously on day 1 every 4 weeks, or alternatively use formula dosing. Combination therapy for advanced ovarian cancer in previously untreated patients: carboplatin 300 mg/m2 intravenously on day 1 every 4 weeks for 6 cycles, with cyclophosphamide 600 mg/m2 intravenously on day 1 every 4 weeks for 6 cycles. Single intermittent courses, alone or with cyclophosphamide, should not be repeated until the neutrophil count is at least 2,000 and the platelet count is at least 100,000. Suggested dose adjustments based on the lowest post-treatment counts: platelets above 100,000 and neutrophils above 2,000, 125% of the prior dose; platelets 50,000 to 100,000 and neutrophils 500 to 2,000, no adjustment; platelets below 50,000 and neutrophils below 500, 75% of the prior dose (dosages were also adjusted to 50% to 60% for severe myelosuppression, and escalations above 125% were not recommended in the controlled studies). Formula dosing: total dose (mg) = target AUC x (GFR + 25), where the target AUC for single agent carboplatin in previously treated patients is 4 to 6 mg/mL.min and the total dose is calculated in mg, not mg/m2. The infusion usually lasts 15 minutes or longer, and no pre- or post-treatment hydration or forced diuresis is required (Carboplatin injection, USP label, Dosage and Administration).",
+      "maximum": "The label does not state a plain milligram maximum dose. Dosing is expressed either as mg/m2 body surface area (single agent 360 mg/m2; combination 300 mg/m2) or as a total dose in mg calculated from the Calvert formula using a target AUC, typically 4 to 6 mg/mL.min; the label notes that escalations above 125% of the prior course were not recommended in the controlled studies (Carboplatin injection, USP label, Dosage and Administration).",
+      "geriatric": "Because renal function is often decreased in elderly patients, formula dosing of carboplatin based on estimates of GFR should be used in elderly patients to provide predictable plasma carboplatin AUCs and thereby minimise the risk of toxicity. In the initial combination therapy trials, age was not a prognostic factor for survival, but elderly patients were more likely to develop severe thrombocytopenia than younger patients (Carboplatin injection, USP label, Dosage and Administration and Geriatric Use).",
+      "paediatric": "Safety and effectiveness in paediatric patients have not been established. Clinically significant hearing loss has been reported in paediatric patients when carboplatin was given at higher than recommended doses in combination with other ototoxic agents (Carboplatin injection, USP label, Pediatric Use and Warnings)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "The renal effects of nephrotoxic compounds may be potentiated by carboplatin (Carboplatin injection, USP label, Drug Interactions).",
+      "Concomitant treatment with aminoglycosides has resulted in increased renal and/or audiologic toxicity, and caution must be exercised when a patient receives both drugs (Carboplatin injection, USP label, Warnings).",
+      "The use of carboplatin in combination with other bone marrow suppressing therapies must be carefully managed with respect to dosage and timing to minimise additive effects, and bone marrow depression may be more severe when carboplatin is combined with other bone marrow suppressing drugs or with radiotherapy (Carboplatin injection, USP label, Warnings and Adverse Reactions).",
+      "Clinically significant hearing loss has been reported in paediatric patients when carboplatin was administered at higher than recommended doses in combination with other ototoxic agents (Carboplatin injection, USP label, Warnings)."
+    ],
+    "monitoring": "Peripheral blood counts should be frequently monitored during carboplatin treatment and, when appropriate, until recovery is achieved; the median nadir occurs at day 21 with single agent carboplatin, and single intermittent courses should not be repeated until leukocyte, neutrophil and platelet counts have recovered (Carboplatin injection, USP label, Warnings). Blood counts should be carefully monitored between courses in patients who have received prior therapy, especially cisplatin-containing regimens, and in patients with impaired kidney function (Warnings). Creatinine clearance is the most sensitive measure of kidney function and the most useful test for correlating drug clearance and bone marrow suppression (Adverse Reactions). Monitor liver function tests and serum electrolytes, and assess for peripheral neuropathy, ototoxicity, visual disturbances and taste changes; monitor for allergic reactions during and after administration (Warnings and Adverse Reactions). Because renal function is often decreased in the elderly, use formula dosing based on estimates of GFR (Dosage and Administration).",
+    "patient_counselling": "Carboplatin is given by slow intravenous infusion for 15 minutes or longer by a professional experienced in cancer chemotherapy, usually repeated every four weeks for a number of cycles; the dose is based on your weight, height and kidney function. Tell your doctor right away if you notice unusual bruising or bleeding, black tarry stools or blood in the urine, or signs of infection such as cough, fever or chills. Serious allergic reactions can occur during and after treatment, and you will be observed carefully for them. Tell your doctor about loss of hearing or ringing in the ears, and about numbness, tingling, burning or pain in the hands and feet. Nausea, vomiting, diarrhoea, loss of appetite and hair loss are common. Use effective birth control while being treated, because carboplatin may harm a developing fetus, and do not breast-feed during treatment. Avoid contact with people who have infections and check with your doctor before any immunisations; avoid contact with people who have received oral polio vaccine (Carboplatin injection, USP label, Patient Information).",
+    "warnings": [
+      "Administer only under the supervision of a qualified physician experienced in the use of cancer chemotherapeutic agents, with adequate treatment facilities readily available (Carboplatin injection, USP label, boxed warning)",
+      "Bone marrow suppression (leukopenia, neutropenia and thrombocytopenia) is dose-dependent and is the dose-limiting toxicity; monitor peripheral blood counts frequently and until recovery, and do not repeat single intermittent courses until leukocyte, neutrophil and platelet counts have recovered (Carboplatin injection, USP label, Warnings)",
+      "Anaemia is cumulative and transfusions may be needed, particularly with prolonged therapy (Carboplatin injection, USP label, Warnings)",
+      "Bone marrow suppression is increased in patients who have received prior therapy, especially cisplatin-containing regimens, and in patients with impaired kidney function; reduce initial doses appropriately and monitor blood counts carefully between courses (Carboplatin injection, USP label, Warnings)",
+      "Carboplatin has limited nephrotoxic potential, but concomitant aminoglycosides have increased renal and/or audiologic toxicity; clinically significant hearing loss has been reported in paediatric patients given higher than recommended doses with other ototoxic agents (Carboplatin injection, USP label, Warnings)",
+      "Carboplatin can induce emesis, which may be more severe in patients previously receiving emetogenic therapy; antiemetic premedication reduces its incidence and intensity (Carboplatin injection, USP label, Warnings)",
+      "Peripheral neurotoxicity is infrequent but its incidence is increased in patients older than 65 years and in patients previously treated with cisplatin (Carboplatin injection, USP label, Warnings)",
+      "Loss of vision, which can be complete for light and colours, has been reported after carboplatin at doses higher than those recommended in the package insert, with total or significant recovery within weeks of stopping the high doses (Carboplatin injection, USP label, Warnings)",
+      "Allergic reactions, including anaphylaxis, may occur within minutes of administration and are more likely in patients previously exposed to platinum therapy; manage with appropriate supportive therapy (Carboplatin injection, USP label, Warnings and Contraindications)",
+      "High doses of carboplatin (more than 4 times the recommended dose) have resulted in severe abnormalities of liver function tests (Carboplatin injection, USP label, Warnings)",
+      "Carboplatin may cause fetal harm when administered to a pregnant woman; it has been shown to be embryotoxic and teratogenic in rats, there are no adequate and well-controlled studies in pregnant women, and women of childbearing potential should avoid becoming pregnant (Carboplatin injection, USP label, Warnings)"
+    ],
+    "precautions": [
+      "Needles or intravenous administration sets containing aluminium parts that may come in contact with carboplatin must not be used for preparation or administration, because aluminium can react with carboplatin causing precipitate formation and loss of potency (Carboplatin injection, USP label, Precautions and Dosage and Administration).",
+      "The carcinogenic potential of carboplatin has not been studied, but compounds with similar mechanisms of action and mutagenicity profiles have been reported to be carcinogenic; carboplatin is mutagenic in vitro and in vivo, is embryotoxic and teratogenic in rats, and secondary malignancies have been reported with multi-drug therapy (Carboplatin injection, USP label, Precautions).",
+      "It is not known whether carboplatin is excreted in human milk; because of the possibility of toxicity in nursing infants, breast-feeding should be discontinued if the mother is treated with carboplatin (Carboplatin injection, USP label, Nursing Mothers).",
+      "Safety and effectiveness in paediatric patients have not been established (Carboplatin injection, USP label, Pediatric Use).",
+      "In elderly patients, renal function should be considered when selecting the dose because it is often decreased (Carboplatin injection, USP label, Geriatric Use)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and anaphylactic-like reactions, which may occur within minutes of administration (Carboplatin injection, USP label, boxed warning and Warnings)",
+      "Severe bone marrow suppression with infection and/or bleeding, and cumulative anaemia requiring transfusion (Carboplatin injection, USP label, boxed warning and Warnings)",
+      "Nephrotoxicity, with increased risk when combined with aminoglycosides or other nephrotoxic compounds (Carboplatin injection, USP label, Warnings and Drug Interactions)",
+      "Ototoxicity, including clinically significant hearing loss in paediatric patients given higher than recommended doses with other ototoxic agents (Carboplatin injection, USP label, Warnings)",
+      "Loss of vision, which can be complete for light and colours, after doses higher than recommended (Carboplatin injection, USP label, Warnings)",
+      "Severe abnormalities of liver function tests at high doses (more than 4 times the recommended dose) (Carboplatin injection, USP label, Warnings)",
+      "Cancer-associated haemolytic uraemic syndrome, reported rarely (Carboplatin injection, USP label, Adverse Reactions)",
+      "Necrosis associated with extravasation (Carboplatin injection, USP label, Adverse Reactions)",
+      "Secondary malignancies in association with multi-drug therapy (Carboplatin injection, USP label, Precautions)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "The FDA labelling assigns Pregnancy Category D because carboplatin may cause fetal harm when administered to a pregnant woman. Carboplatin has been shown to be embryotoxic and teratogenic in rats, and there are no adequate and well-controlled studies in pregnant women; if the drug is used during pregnancy, or if the patient becomes pregnant while receiving it, the patient should be apprised of the potential hazard to the fetus, and women of childbearing potential should be advised to avoid becoming pregnant (Carboplatin injection, USP label, Warnings and Pregnancy).",
+    "pregnancy_guidance": "Carboplatin may cause fetal harm when administered to a pregnant woman. It has been shown to be embryotoxic and teratogenic in rats receiving the drug during organogenesis, and there are no adequate and well-controlled studies in pregnant women. If carboplatin is used during pregnancy, or if the patient becomes pregnant while receiving the drug, the patient should be apprised of the potential hazard to the fetus, and women of childbearing potential should be advised to avoid becoming pregnant (Carboplatin injection, USP label, Warnings and Precautions).",
+    "lactation_guidance": "It is not known whether carboplatin is excreted in human milk. Because there is a possibility of toxicity in nursing infants secondary to carboplatin treatment of the mother, it is recommended that breast-feeding be discontinued if the mother is treated with carboplatin injection (Carboplatin injection, USP label, Nursing Mothers).",
+    "overdose": "There is no known antidote for carboplatin injection overdosage. The anticipated complications of overdosage would be secondary to bone marrow suppression and/or hepatic toxicity (Carboplatin injection, USP label, Overdosage).",
+    "pharmacokinetics": "In patients with creatinine clearances of about 60 mL/min or greater, plasma levels of intact carboplatin decay in a biphasic manner after a 30-minute intravenous infusion of 300 mg/m2 to 500 mg/m2. The initial plasma half-life (alpha) is 1.1 to 2 hours and the post-distribution plasma half-life (beta) is 2.6 to 5.9 hours. Total body clearance, apparent volume of distribution and mean residence time are 4.4 L/hour, 16 L and 3.5 hours respectively. Cmax and AUC increase linearly with dose, although slightly more than dose proportional, so carboplatin exhibits linear pharmacokinetics over 300 mg/m2 to 500 mg/m2. Carboplatin is not bound to plasma proteins, but platinum from carboplatin becomes irreversibly bound to plasma proteins and is slowly eliminated with a minimum half-life of 5 days. The major route of elimination is renal: patients with creatinine clearance of about 60 mL/min or greater excrete 65% of the dose in urine within 12 hours and 71% within 24 hours, all as carboplatin, with only 3% to 5% of administered platinum excreted between 24 and 96 hours. In patients with creatinine clearance below 60 mL/min, total body and renal clearance decrease as creatinine clearance decreases, so doses should be reduced. The primary determinant of clearance is glomerular filtration rate, which is often decreased in elderly patients (Carboplatin injection, USP label, Clinical Pharmacology).",
+    "clinical_pearls": [
+      "Carboplatin is dosed either by body surface area (360 mg/m2 single agent; 300 mg/m2 with cyclophosphamide) or by the Calvert formula, in which total dose in mg = target AUC x (GFR + 25); with the Calvert formula the dose is in mg, not mg/m2 (Carboplatin injection, USP label, Dosage and Administration).",
+      "Do not repeat a course until the neutrophil count is at least 2,000 and the platelet count is at least 100,000 (Carboplatin injection, USP label, Dosage and Administration).",
+      "Reduce the day 1 dose in renal impairment: creatinine clearance 41 to 59 mL/min, 250 mg/m2; 16 to 40 mL/min, 200 mg/m2; data are too limited to recommend treatment below 15 mL/min (Carboplatin injection, USP label, Dosage and Administration).",
+      "Never use aluminium-containing needles or intravenous sets, because aluminium reacts with carboplatin causing precipitate formation and loss of potency (Carboplatin injection, USP label, Precautions and Dosage and Administration).",
+      "Carboplatin is usually given by infusion over 15 minutes or longer, and no pre- or post-treatment hydration or forced diuresis is required (Carboplatin injection, USP label, Dosage and Administration).",
+      "Use formula dosing based on estimated GFR in elderly patients, in whom renal function is often reduced, to provide predictable AUCs and minimise toxicity (Carboplatin injection, USP label, Dosage and Administration)."
+    ],
+    "brand_names": ["Carboplatin"],
+    "black_box_warnings": [
+      "Carboplatin injection should be administered under the supervision of a qualified physician experienced in the use of cancer chemotherapeutic agents; appropriate management of therapy and complications is possible only when adequate treatment facilities are readily available (Carboplatin injection, USP label, boxed warning)",
+      "Bone marrow suppression is dose related and may be severe, resulting in infection and/or bleeding; anaemia may be cumulative and may require transfusion support, and vomiting is another frequent drug-related side effect (Carboplatin injection, USP label, boxed warning)",
+      "Anaphylactic-like reactions to carboplatin have been reported and may occur within minutes of administration; epinephrine, corticosteroids and antihistamines have been employed to alleviate symptoms (Carboplatin injection, USP label, boxed warning)"
+    ],
+    "renal_dose_adjustment": "Patients with creatinine clearance below 60 mL/min are at increased risk of severe bone marrow suppression. Recommended day 1 doses in renally impaired patients receiving single agent carboplatin are: creatinine clearance 41 to 59 mL/min, 250 mg/m2; creatinine clearance 16 to 40 mL/min, 200 mg/m2. Data for severely impaired kidney function (creatinine clearance below 15 mL/min) are too limited to permit a treatment recommendation. These recommendations apply to the initial course; subsequent doses should be adjusted according to tolerance based on the degree of bone marrow suppression. Alternatively, use the Calvert formula (total dose in mg = target AUC x (GFR + 25)), which compensates for variations in renal function (Carboplatin injection, USP label, Dosage and Administration and Clinical Pharmacology).",
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous administration only, by a physician experienced in cancer chemotherapy. Administer as an infusion lasting 15 minutes or longer; no pre- or post-treatment hydration or forced diuresis is required (Carboplatin injection, USP label, Dosage and Administration). Do not use needles or intravenous administration sets containing aluminium parts that may come in contact with the drug, because aluminium reacts with carboplatin causing precipitate formation and loss of potency (Precautions and Dosage and Administration). Carboplatin injection is a premixed aqueous solution of 10 mg/mL and can be further diluted to concentrations as low as 0.5 mg/mL with 5% Dextrose in Water or 0.9% Sodium Chloride Injection; prepared solutions are stable for 8 hours at room temperature and should be discarded 8 hours after dilution because no antibacterial preservative is present (Preparation of Intravenous Solutions). Store unopened vials at 20 to 25 degrees C (68 to 77 degrees F), protect from light, and inspect for particulate matter and discoloration before administration (How Supplied and Storage). Wear impervious gloves when handling vials; if the drug contacts the skin, wash thoroughly with soap and water, and if it contacts mucous membranes, flush immediately and thoroughly with water (Handling and Disposal)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Carboplatin injection, USP (Accord Healthcare, Inc.), FDA label, DailyMed, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "Carboplatin injection, USP FDA label, Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Carboplatin injection, USP FDA label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Carboplatin injection, USP FDA label, Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "Carboplatin injection, USP FDA label, Dosage and Administration (Single Agent Therapy, Combination Therapy, Dose Adjustment Recommendations, Patients with Impaired Kidney Function, Formula Dosing, Geriatric Dosing), Pediatric Use and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "Carboplatin injection, USP FDA label, Drug Interactions, Warnings and Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Carboplatin injection, USP FDA label, Warnings, Adverse Reactions, Dosage and Administration and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Carboplatin injection, USP FDA label, Patient Information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "Carboplatin injection, USP FDA label, Warnings and boxed warning",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "Carboplatin injection, USP FDA label, Precautions (General, Carcinogenesis/Mutagenesis/Impairment of Fertility), Nursing Mothers, Pediatric Use and Geriatric Use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Carboplatin injection, USP FDA label, boxed warning, Warnings, Drug Interactions, Adverse Reactions and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the FDA labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Carboplatin injection, USP FDA label, Warnings and Pregnancy (Pregnancy Category D)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Carboplatin injection, USP FDA label, Warnings and Precautions (Pregnancy)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Carboplatin injection, USP FDA label, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "Carboplatin injection, USP FDA label, Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Carboplatin injection, USP FDA label, Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Carboplatin injection, USP FDA label, Dosage and Administration and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "The labelled product is Carboplatin injection, USP (Accord Healthcare, Inc.); the labelling gives no proprietary brand name",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "Carboplatin injection, USP FDA label, boxed warning (WARNING: Carboplatin injection should be administered under the supervision of a qualified physician experienced in the use of cancer chemotherapeutic agents)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "renal_dose_adjustment",
+      "ref": "Carboplatin injection, USP FDA label, Dosage and Administration (Patients with Impaired Kidney Function, Formula Dosing) and Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Carboplatin injection, USP FDA label, Dosage and Administration, Preparation of Intravenous Solutions, How Supplied and Storage, Handling and Disposal",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48aa7ef3-9f44-2a08-e054-00144ff88e88",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult single-agent, combination and formula-based regimens are given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; safety and effectiveness in paediatric patients have not been established - see fields.dosage.paediatric)",
+    "hepatic_dose_adjustment (no specific hepatic dose adjustment is given in the FDA labelling; high doses have caused severe liver function test abnormalities and liver function should be monitored)"
+  ],
+  "notes": "This monograph is sourced from the FDA-approved DailyMed label for Carboplatin injection, USP (Accord Healthcare, Inc.; setid 48aa7ef3-9f44-2a08-e054-00144ff88e88). The label does have a boxed warning (supervision by an experienced cancer-chemotherapy physician, severe dose-related bone marrow suppression, and anaphylactic-like reactions), which is populated here. Dosing is by body surface area or by the Calvert formula; the label gives no plain milligram maximum dose, and the maximum field states this explicitly rather than inventing one. The existing row carried generic oncology class-template text, which is wrong-drug contamination and is superseded by this draft. No proprietary brand name is given in the labelling, so brand_names carries the generic product name."
+}

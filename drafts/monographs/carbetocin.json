@@ -1,0 +1,220 @@
+{
+  "name": "Carbetocin",
+  "existing_id": "38a32df9-944a-43db-b8fe-a65c00637993",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Carbetocin is a long-acting oxytocin analogue and oxytocin receptor agonist (ATC code H01BB03). Like oxytocin it selectively binds to oxytocin receptors in the smooth muscle of the uterus, stimulates rhythmic contractions of the uterus, increases the frequency of existing contractions and raises the tone of the uterine musculature. On the postpartum uterus it increases the rate and force of spontaneous uterine contractions; the onset is rapid after intravenous or intramuscular administration, with a firm contraction obtained within 2 minutes. A single 100 microgram dose given after delivery of the infant is sufficient to maintain adequate uterine contraction that prevents uterine atony and excessive bleeding for a period comparable with an oxytocin infusion lasting several hours (Pabal SmPC, sections 5.1 and 4.2).",
+    "indications": [
+      "Prevention of postpartum haemorrhage due to uterine atony (Pabal SmPC, section 4.1)"
+    ],
+    "contraindications": [
+      "During pregnancy and labour before delivery of the infant (Pabal SmPC, section 4.3)",
+      "Must not be used for the induction of labour (Pabal SmPC, section 4.3)",
+      "Hypersensitivity to carbetocin, oxytocin or to any of the excipients (Pabal SmPC, section 4.3)",
+      "Hepatic or renal disease (Pabal SmPC, section 4.3)",
+      "Serious cardiovascular disorders (Pabal SmPC, section 4.3)",
+      "Epilepsy (Pabal SmPC, section 4.3)"
+    ],
+    "side_effects": [
+      "Blood and lymphatic system: anaemia (Pabal SmPC, section 4.8)",
+      "Immune system: hypersensitivity including anaphylactic reaction (Pabal SmPC, section 4.8)",
+      "Nervous system: headache, tremor and dizziness (Pabal SmPC, section 4.8)",
+      "Cardiac: tachycardia; bradycardia which can lead to cardiac arrest, arrhythmia, myocardial ischaemia and QT prolongation - these events are reported with oxytocin, which is closely related in structure to carbetocin (Pabal SmPC, section 4.8)",
+      "Vascular: hypotension and flushing (Pabal SmPC, section 4.8)",
+      "Respiratory: chest pain and dyspnoea (Pabal SmPC, section 4.8)",
+      "Gastrointestinal: nausea, abdominal pain, metallic taste and vomiting (Pabal SmPC, section 4.8)",
+      "Skin: pruritus; sweating has been reported as sporadic cases (Pabal SmPC, section 4.8)",
+      "Musculoskeletal: back pain, and muscular weakness with intramuscular use (Pabal SmPC, section 4.8)",
+      "General: feeling of warmth, chills and pain; pyrexia and urinary retention have been reported with intramuscular use (Pabal SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Single-dose treatment for the prevention of postpartum haemorrhage due to uterine atony. Caesarean section under epidural or spinal anaesthesia: withdraw 1 mL of Pabal containing 100 micrograms carbetocin and give by intravenous injection only, slowly over 1 minute. Vaginal delivery: withdraw 1 mL containing 100 micrograms and give by intravenous or intramuscular injection. Carbetocin must only be given after delivery of the infant, as soon as possible after delivery and preferably before delivery of the placenta, under adequate medical supervision in hospital (Pabal SmPC, sections 4.2 and 4.4).",
+      "maximum": "100 micrograms as a single dose. Pabal is intended for single use only and no further doses of carbetocin should be administered; there are no data on additional doses of carbetocin, or on the use of carbetocin after persisting uterine atony following oxytocin (Pabal SmPC, sections 4.2 and 4.4).",
+      "paediatric": "There is no relevant use of carbetocin in children below 12 years of age. Safety and efficacy in adolescents have not been established and no posology can be recommended, although 151 women aged 12 to 18 years received the recommended 100 microgram dose during the clinical development programme, with efficacy and safety similar to oxytocin 10 IU (Pabal SmPC, sections 4.2 and 5.1)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug interactions were identified during clinical trials, in which carbetocin was given with a number of analgesics, spasmolytics and agents used for epidural or spinal anaesthesia; specific interaction studies have not been undertaken (Pabal SmPC, section 4.5).",
+      "Vasoconstrictors given with caudal-block anaesthesia: severe hypertension has been reported when oxytocin was given 3 to 4 hours after prophylactic administration of a vasoconstrictor, and since carbetocin is closely related in structure to oxytocin this interaction cannot be excluded (Pabal SmPC, section 4.5).",
+      "Ergot alkaloids such as methylergometrine: oxytocin and carbetocin may enhance the blood-pressure-raising effect of these agents, and if oxytocin or methylergometrine is given after carbetocin there may be a risk of cumulative exposure (Pabal SmPC, section 4.5).",
+      "Prostaglandins: because prostaglandins potentiate the effect of oxytocin, the same is expected with carbetocin; concomitant use is not recommended, and if they are given together the patient should be carefully monitored (Pabal SmPC, section 4.5).",
+      "Inhalation anaesthetics such as halothane and cyclopropane may enhance the hypotensive effect and weaken the uterine effect of carbetocin; arrhythmias have been reported with oxytocin during concomitant use (Pabal SmPC, section 4.5)."
+    ],
+    "monitoring": "Carbetocin is intended for use only in well-equipped specialist obstetrics units with experienced and qualified staff available at all times (Pabal SmPC, section 4.4). If vaginal or uterine bleeding persists after administration, determine the cause, considering retained placental fragments, perineal, vaginal and cervical lacerations, inadequate repair of the uterus and disorders of blood coagulation (section 4.4). Carbetocin has some antidiuretic (vasopressin) activity, so hyponatraemia cannot be excluded, particularly in patients also receiving large volumes of intravenous fluids; recognise the early signs of drowsiness, listlessness and headache to prevent convulsions and coma (section 4.4). Patients with eclampsia or pre-eclampsia should be carefully monitored (section 4.4).",
+    "patient_counselling": "Carbetocin is given as a single injection into a vein or a muscle immediately after the baby is delivered, to help the womb contract and prevent heavy bleeding. Breast-feeding does not need to be restricted after a single dose: small amounts of carbetocin pass into colostrum and breast milk, and the amount swallowed by the infant is assumed to be degraded by enzymes in the gut (Pabal SmPC, section 4.6). Report persistent or heavy vaginal bleeding after delivery, and report drowsiness, listlessness or headache, which may be signs of a low blood sodium level (Pabal SmPC, section 4.4).",
+    "warnings": [
+      "For use only in well-equipped specialist obstetrics units with experienced and qualified staff available at all times (Pabal SmPC, section 4.4)",
+      "Use at any stage before delivery of the infant is not appropriate because uterotonic activity persists for several hours, in marked contrast to the rapid reduction of effect after stopping an oxytocin infusion (Pabal SmPC, section 4.4)",
+      "Persistent vaginal or uterine bleeding after administration requires determination of the cause, including retained placental fragments, lacerations, inadequate uterine repair or coagulation disorders (Pabal SmPC, section 4.4)",
+      "Single administration only, by the intramuscular or intravenous route; intravenous doses must be given slowly over 1 minute, and in persisting uterine hypotonia or atony with excessive bleeding additional therapy with another uterotonic should be considered (Pabal SmPC, section 4.4)",
+      "Antidiuretic (vasopressin) activity has been shown in animal studies (less than 0.025 IU per vial), so hyponatraemia cannot be excluded, particularly with large volumes of intravenous fluids (Pabal SmPC, section 4.4)",
+      "Use cautiously in the presence of migraine, asthma, cardiovascular disease, or any state in which a rapid addition to extracellular water may be hazardous (Pabal SmPC, section 4.4)"
+    ],
+    "precautions": [
+      "There are no data on additional doses of carbetocin, or on the use of carbetocin following persisting uterine atony after oxytocin (Pabal SmPC, section 4.4).",
+      "No data are available on the use of carbetocin in patients with eclampsia; patients with eclampsia and pre-eclampsia should be carefully monitored (Pabal SmPC, section 4.4).",
+      "Specific studies have not been undertaken in gestational diabetes mellitus (Pabal SmPC, section 4.4).",
+      "In the absence of compatibility studies, carbetocin must not be mixed with other medicinal products (Pabal SmPC, section 6.2).",
+      "Only clear solutions practically free from particles should be used; the vial is for single use and the solution should be used immediately after first opening (Pabal SmPC, sections 6.3 and 6.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylaxis and other hypersensitivity reactions (Pabal SmPC, section 4.8)",
+      "Bradycardia which can lead to cardiac arrest, arrhythmia, myocardial ischaemia and QT prolongation - reported with the closely related oxytocin (Pabal SmPC, section 4.8)",
+      "Hypotension (Pabal SmPC, section 4.8)",
+      "Uterine hyperstimulation with strong (hypertonic) or prolonged (tetanic) contractions after overdose, which can lead to uterine rupture or postpartum haemorrhage (Pabal SmPC, section 4.9)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "Carbetocin is given only after delivery of the infant. It is contraindicated during pregnancy and labour before delivery of the infant and must not be used for the induction of labour (Pabal SmPC, sections 4.3 and 4.6).",
+    "pregnancy_guidance": "Carbetocin is contraindicated during pregnancy and must not be used for the induction of labour (Pabal SmPC, sections 4.3 and 4.6). Its use at any stage before delivery is not appropriate because uterotonic activity persists for several hours (section 4.4). No reproductive toxicity studies were warranted for the postpartum indication; a rat study with daily dosing from parturition to day 21 of lactation showed reduced offspring body weight gain (section 5.3).",
+    "lactation_guidance": "No significant effects on milk let-down have been reported during clinical trials. Small amounts of carbetocin pass from plasma into breast milk; after intramuscular administration of 70 micrograms to 5 healthy nursing mothers, mean peak milk concentrations were below 20 pg/mL, approximately 56 times lower than in plasma at 120 minutes. The small amounts transferred into colostrum or breast milk after a single injection and ingested by the infant are assumed to be degraded by enzymes in the gut, and breast-feeding does not need to be restricted after use of carbetocin (Pabal SmPC, sections 4.6 and 5.2).",
+    "overdose": "Overdosage may produce uterine hyperactivity, whether or not due to hypersensitivity to carbetocin. Hyperstimulation with strong (hypertonic) or prolonged (tetanic) contractions resulting from oxytocin overdose can lead to uterine rupture or postpartum haemorrhage, and oxytocin overdose may lead to hyponatraemia and water intoxication, especially with excessive concomitant fluid intake; a similar event cannot be excluded for carbetocin. Treatment is symptomatic and supportive: give oxygen to the mother when signs or symptoms of overdose occur, and in water intoxication restrict fluid intake, promote diuresis, correct electrolyte imbalance and control convulsions (Pabal SmPC, section 4.9).",
+    "pharmacokinetics": "Carbetocin shows biphasic elimination after intravenous administration with linear pharmacokinetics over 400 to 800 micrograms. The median terminal elimination half-life is 33 minutes after intravenous administration and 55 minutes after intramuscular administration. After intramuscular administration, peak concentrations are reached after 30 minutes and mean bioavailability is 77%. The mean volume of distribution at pseudo-equilibrium is 22 L. Renal clearance of the unchanged form is low, with less than 1% of the injected dose excreted unchanged by the kidney (Pabal SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Carbetocin is a single-dose, long-acting oxytocin analogue given only after delivery of the infant; a firm uterine contraction is obtained within 2 minutes and one 100 microgram dose is comparable with an oxytocin infusion lasting several hours (Pabal SmPC, sections 4.2 and 5.1).",
+      "It must never be used before delivery or for induction of labour, because its uterotonic effect persists for hours (Pabal SmPC, section 4.4).",
+      "The intravenous dose must be given slowly over 1 minute; the same 100 microgram dose may be given intramuscularly after vaginal delivery (Pabal SmPC, section 4.2).",
+      "Hepatic or renal disease, serious cardiovascular disorders and epilepsy are contraindications, and there is no dose adjustment advice for these patients (Pabal SmPC, section 4.3)."
+    ],
+    "brand_names": ["Pabal"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For intravenous or intramuscular administration only. Withdraw 1 mL (100 micrograms) from the vial; give intravenously slowly over 1 minute, or intramuscularly after vaginal delivery. Administer only after delivery of the infant, as soon as possible and preferably before delivery of the placenta (Pabal SmPC, sections 4.2 and 6.6). Do not mix with other medicinal products (section 6.2). Store below 30 degrees C and do not freeze; the vial is for single use and the solution should be used immediately after first opening; only clear solutions practically free from particles should be used (sections 6.3, 6.4 and 6.6)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Pabal (carbetocin) 100 micrograms/ml solution for injection, UK SmPC, Ferring Pharmaceuticals Ltd, sections 5.1 and 4.2",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "Pabal UK SmPC, section 4.1 Therapeutic indications",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Pabal UK SmPC, section 4.3 Contraindications",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Pabal UK SmPC, section 4.8 Undesirable effects (intravenous and intramuscular tables)",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "Pabal UK SmPC, sections 4.2 Posology and method of administration, 4.4 Special warnings and 5.1 Pharmacodynamic properties",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "Pabal UK SmPC, section 4.5 Interaction with other medicinal products",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Pabal UK SmPC, section 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Pabal UK SmPC, sections 4.4 and 4.6 (breast-feeding)",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "Pabal UK SmPC, section 4.4 Special warnings and precautions for use",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "Pabal UK SmPC, sections 4.4, 6.2, 6.3 and 6.6",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Pabal UK SmPC, sections 4.8 and 4.9",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in the UK SmPC; section 4.5 addresses interactions with other medicinal products only",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Pabal UK SmPC, sections 4.3 and 4.6 (no pregnancy category is assigned in UK SmPC format)",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Pabal UK SmPC, sections 4.3, 4.4, 4.6 and 5.3",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Pabal UK SmPC, sections 4.6 and 5.2",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "Pabal UK SmPC, section 4.9 Overdose",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Pabal UK SmPC, section 5.2 Pharmacokinetic properties",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Pabal UK SmPC, sections 4.2, 4.3, 4.4 and 5.1",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Pabal is the brand name on the UK SmPC used for this monograph",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The UK SmPC format contains no boxed warning section; no boxed warning is included in this SmPC",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Pabal UK SmPC, sections 4.2, 6.2, 6.3, 6.4 and 6.6",
+      "url": "https://www.medicines.org.uk/emc/product/172/smpc",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult single-dose regimen is given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; no paediatric posology can be recommended - see fields.dosage.paediatric)",
+    "renal_dose_adjustment (renal disease is a contraindication in the SmPC; no dose adjustment is given)",
+    "hepatic_dose_adjustment (hepatic disease is a contraindication in the SmPC; no dose adjustment is given)"
+  ],
+  "notes": "Carbetocin has no FDA-approved product and therefore no DailyMed label; this monograph is sourced from the UK SmPC for Pabal (MHRA/emc), which is the only regulator labelling found for the product. The existing row carried olanzapine/schizophrenia indication text, which is wrong-drug contamination and is superseded by this draft. The Pabal SmPC does not describe a heat-stable formulation; heat-stable carbetocin products have separate labelling and are not covered here. No geriatric dose statement is made because the SmPC gives none. The UK SmPC format has no boxed warning, hence black_box_warnings is empty and a source entry records that absence."
+}

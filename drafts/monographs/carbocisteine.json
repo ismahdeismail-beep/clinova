@@ -1,0 +1,212 @@
+{
+  "name": "Carbocisteine",
+  "existing_id": "ddb60202-e816-47f7-acaf-f325e98b73bb",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Carbocisteine (S-carboxymethyl L-cysteine) has been shown in normal and bronchitic animal models to affect the nature and amount of mucus glycoprotein secreted by the respiratory tract. An increase in the acid:neutral glycoprotein ratio of the mucus and a transformation of serous cells to mucus cells is the initial response to irritation and is normally followed by hypersecretion; administration of carbocisteine to animals exposed to irritants indicates that the secreted glycoprotein remains normal, and administration after exposure accelerates return to the normal state. Studies in humans have demonstrated that carbocisteine reduces goblet cell hyperplasia, and it therefore has a role in the management of disorders characterised by abnormal mucus (Carbocisteine 375 mg Capsules SmPC, section 5.1; ATC code R05CB03).",
+    "indications": [
+      "Adjunctive therapy of respiratory tract disorders characterised by excessive, viscous mucus, including chronic obstructive airways disease (Carbocisteine 375 mg Capsules SmPC, section 4.1; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.1)"
+    ],
+    "contraindications": [
+      "Hypersensitivity to the active substance or to any of the excipients (Carbocisteine 375 mg Capsules SmPC, section 4.3; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.3)",
+      "Use in patients with active peptic ulceration (Carbocisteine 375 mg Capsules SmPC, section 4.3; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.3)",
+      "Use in children less than 2 years of age (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.3)"
+    ],
+    "side_effects": [
+      "Immune system: anaphylactic reactions, allergic skin eruption, fixed drug eruption, urticaria and bronchospasm; rash (Carbocisteine 375 mg Capsules SmPC, section 4.8; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Gastrointestinal: diarrhoea, nausea, vomiting, epigastric or gastric discomfort and gastrointestinal bleeding (Carbocisteine 375 mg Capsules SmPC, section 4.8; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Skin and subcutaneous tissue: skin rashes and allergic skin eruptions, with isolated cases of bullous dermatitis such as Stevens-Johnson syndrome and erythema multiforme (Carbocisteine 375 mg Capsules SmPC, section 4.8; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Cardiac: palpitations (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Endocrine: hypothyroidism, with special attention needed in patients with compromised thyroid function because of the risk of transient hypothyroidism (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Musculoskeletal: muscle pain (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Nervous system: headache, dizziness, urinary incontinence and palpitations (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Respiratory, thoracic and mediastinal: shortness of breath and bronchorrhoea (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)"
+    ],
+    "dosage": {
+      "adult": "Adults including the elderly: the initial daily dose is 2250 mg of carbocisteine in divided doses, reduced to 1500 mg daily in divided doses when a satisfactory response is obtained. With the 375 mg capsules this corresponds to two capsules three times a day reducing to one capsule four times a day; with the 250 mg/5 mL syrup it corresponds to 15 mL three times a day reducing to 10 mL three times a day (Carbocisteine 375 mg Capsules SmPC, section 4.2; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.2).",
+      "maximum": "The highest daily dose described in the SmPCs is 2250 mg, used as the initial adult dose in divided doses; once a satisfactory response is obtained the dose is reduced to 1500 mg daily in divided doses (Carbocisteine 375 mg Capsules SmPC, section 4.2; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.2).",
+      "paediatric": "Carbocisteine 250 mg/5 mL syrup: children aged 2 to 5 years, 1.25 to 2.5 mL four times a day (62.5 mg to 125 mg four times a day); children aged 6 to 12 years, 5 mL three times a day (250 mg three times a day). Carbocisteine is contraindicated in children aged less than 2 years. The 375 mg capsule formulation is not recommended for children (Carbocisteine 250 mg/5 mL Syrup SmPC, sections 4.2 and 4.3; Carbocisteine 375 mg Capsules SmPC, section 4.2)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "No drug interactions have been identified; the capsule SmPC states 'None stated' and the syrup SmPC states that no drug interactions have been identified (Carbocisteine 375 mg Capsules SmPC, section 4.5; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.5)."
+    ],
+    "monitoring": "No routine laboratory monitoring is specified in the SmPC. If gastrointestinal bleeding occurs, patients should discontinue the medicine (Carbocisteine 375 mg Capsules SmPC, section 4.4). Asthmatic patients with a history of bronchospasm require special attention because of the risk of bronchoconstriction, and treatment discontinuation is recommended if it occurs (Carbocisteine 250 mg/5 mL Syrup SmPC, sections 4.4 and 4.8). Patients with compromised thyroid function need special attention because of the risk of transient hypothyroidism (section 4.8).",
+    "patient_counselling": "Carbocisteine is a mucolytic medicine that helps loosen thick mucus in the airways; take it exactly as directed and use the measuring device or oral syringe supplied to measure each dose, whether for an adult or a child. Do not take cough-suppressant (antitussive) medicines at the same time, because loosening secretions increases cough and sputum and suppressing the cough could obstruct the airways. Stop the medicine and tell your doctor if you develop stomach pain, vomiting blood or black stools (possible gastrointestinal bleeding), or if you develop a skin rash or blistering. People who cannot tolerate lactose (capsules) or sucrose (syrup) should not take the respective formulation. Store the capsules below 30 degrees C in the original package; store the syrup below 25 degrees C and use within 3 months of opening (Carbocisteine 375 mg Capsules SmPC, sections 4.4 and 6.4; Carbocisteine 250 mg/5 mL Syrup SmPC, sections 4.2, 4.4, 6.3 and 6.4).",
+    "warnings": [
+      "Caution is recommended in the elderly, in those with a history of gastroduodenal ulcers, or those taking concomitant medicines known to cause gastrointestinal bleeding; if gastrointestinal bleeding occurs, patients should discontinue medication (Carbocisteine 375 mg Capsules SmPC, section 4.4)",
+      "Asthmatic patients with a history of bronchospasm, patients with severe respiratory failure and debilitated patients require special precautions; by decreasing the cough reflex there is a risk of airway obstruction as a consequence of increased secretions (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4)",
+      "Because carbocisteine reduces mucus viscosity and increases cough and sputum, concomitant antitussive medication is not recommended (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4)",
+      "Caution is advised in individuals susceptible to gastroduodenal ulcers, as mucolytics can destroy the gastric mucosal barrier (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4)",
+      "The capsules contain lactose and the syrup contains sucrose; patients with rare hereditary problems of galactose intolerance, total lactase deficiency, glucose-galactose malabsorption, fructose intolerance or sucrase-isomaltase insufficiency should not take the relevant formulation (Carbocisteine 375 mg Capsules SmPC, section 4.4; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4)",
+      "The syrup contains methyl parahydroxybenzoate, which may cause allergic reactions, possibly delayed (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4)"
+    ],
+    "precautions": [
+      "Caution in the elderly and in patients with a history of gastroduodenal ulcers or taking medicines that can cause gastrointestinal bleeding; stop if gastrointestinal bleeding occurs (Carbocisteine 375 mg Capsules SmPC, section 4.4).",
+      "Use with caution in asthmatic patients with a history of bronchospasm, in severe respiratory failure and in debilitated patients (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4).",
+      "Avoid concomitant antitussive medication because reducing mucus viscosity increases cough and sputum, and suppressing the cough may cause airway obstruction (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4).",
+      "Consider the excipients: lactose in the capsules and sucrose and methyl parahydroxybenzoate in the syrup (Carbocisteine 375 mg Capsules SmPC, section 4.4; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4).",
+      "Carbocisteine is not recommended during pregnancy, especially in the first trimester, or during breast-feeding (Carbocisteine 375 mg Capsules SmPC, section 4.6)."
+    ],
+    "serious_adverse_reactions": [
+      "Anaphylactic reactions (Carbocisteine 375 mg Capsules SmPC, section 4.8)",
+      "Gastrointestinal bleeding (Carbocisteine 375 mg Capsules SmPC, section 4.8; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Stevens-Johnson syndrome and erythema multiforme (Carbocisteine 375 mg Capsules SmPC, section 4.8; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)",
+      "Bronchospasm (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.8)"
+    ],
+    "food_interactions": [],
+    "pregnancy_category": "No pregnancy category letter is assigned in the UK SmPC format. There are no available data on carbocisteine use in pregnant women, no conclusions can be drawn about whether it is safe, and its use in pregnant women is not recommended, especially during the first trimester (Carbocisteine 375 mg Capsules SmPC, section 4.6).",
+    "pregnancy_guidance": "There are no available data on carbocisteine use in pregnant women, and no conclusions can be drawn regarding whether or not carbocisteine is safe for use during pregnancy; its use in pregnant women is not recommended, especially during the first trimester (Carbocisteine 375 mg Capsules SmPC, section 4.6). Although tests in mammalian species have revealed no teratogenic effects, carbocisteine is not recommended during the first trimester of pregnancy (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.6).",
+    "lactation_guidance": "There are no available data on the presence of carbocisteine in human milk, on milk production, or on the effects on the breastfed infant, and no conclusions can be drawn about whether it is safe during breast-feeding; the use of carbocisteine in breast-feeding women is not recommended (Carbocisteine 375 mg Capsules SmPC, section 4.6). It is unknown whether carbocisteine or its metabolites are excreted in human milk (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.6).",
+    "overdose": "Gastric lavage may be beneficial, followed by observation. Gastrointestinal disturbance (gastralgia, nausea and vomiting) is the most likely symptom of carbocisteine overdosage (Carbocisteine 375 mg Capsules SmPC, section 4.9; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.9).",
+    "pharmacokinetics": "Carbocisteine is rapidly absorbed from the gastrointestinal tract. At steady state after seven days of carbocisteine 375 mg capsules given as two capsules three times a day to healthy volunteers, the mean Tmax was 2.0 hours (range 1.0 to 3.0), the mean half-life was 1.87 hours (range 1.4 to 2.5), the mean elimination rate constant was 0.387 hour-1 (range 0.28 to 0.50) and the mean AUC0-7.5 was 39.26 microgram.hour/mL (range 26.0 to 62.4). Derived values were CLS 331 mL/min, VD 105.2 L and VD 1.4 L/kg (Carbocisteine 375 mg Capsules SmPC, section 5.2; Carbocisteine 250 mg/5 mL Syrup SmPC, section 5.2).",
+    "clinical_pearls": [
+      "Carbocisteine is an adjunctive mucolytic, not a stand-alone treatment: it is used alongside management of the underlying respiratory disorder characterised by excessive, viscous mucus (Carbocisteine 375 mg Capsules SmPC, section 4.1).",
+      "The adult starting dose is 2250 mg daily in divided doses, reduced to 1500 mg daily once a satisfactory response is obtained (Carbocisteine 375 mg Capsules SmPC, section 4.2).",
+      "The syrup is the paediatric formulation; it is contraindicated below 2 years of age, and the 375 mg capsule is not recommended for children (Carbocisteine 250 mg/5 mL Syrup SmPC, sections 4.2 and 4.3; Carbocisteine 375 mg Capsules SmPC, section 4.2).",
+      "Do not combine with cough suppressants, because loosening secretions increases cough and sputum and suppressing the cough may lead to airway obstruction (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.4).",
+      "Gastrointestinal bleeding is the main serious gastrointestinal risk; advise patients to stop the medicine and seek advice if it occurs (Carbocisteine 375 mg Capsules SmPC, section 4.4)."
+    ],
+    "brand_names": [],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral use (Carbocisteine 375 mg Capsules SmPC, section 4.2; Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.2). Measure the syrup with the supplied oral syringe, which is graduated per 0.25 mL and delivers 12.5 mg of carbocisteine per 0.25 mL graduation; place the syringe against the cheek and press the plunger slowly, then wash the syringe in warm water and allow it to dry (Carbocisteine 250 mg/5 mL Syrup SmPC, section 4.2). Store the capsules below 30 degrees C in the original package (Carbocisteine 375 mg Capsules SmPC, section 6.4). Store the syrup below 25 degrees C and use within 3 months of opening (Carbocisteine 250 mg/5 mL Syrup SmPC, sections 6.3 and 6.4)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Carbocisteine 375 mg Capsules, UK SmPC, Flamingo Pharma (UK) Ltd, section 5.1 Pharmacodynamic properties",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.1; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.1",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.3; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.3",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.8; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.2; Carbocisteine 250 mg/5 mL Syrup UK SmPC sections 4.2 and 4.3",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.5 ('None stated'); Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.5 ('No drug interactions have been identified')",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.4; Carbocisteine 250 mg/5 mL Syrup UK SmPC sections 4.4 and 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC sections 4.4 and 6.4; Carbocisteine 250 mg/5 mL Syrup UK SmPC sections 4.2, 4.4, 6.3 and 6.4",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.4; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC sections 4.4 and 4.6; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.8; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.8",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "No food interaction is described in either UK SmPC; section 4.5 addresses interactions with other medicinal products only",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.6 (no pregnancy category is assigned in UK SmPC format)",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.6; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.6; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.6",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 4.9; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 4.9",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC section 5.2; Carbocisteine 250 mg/5 mL Syrup UK SmPC section 5.2",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC sections 4.1, 4.2 and 4.4; Carbocisteine 250 mg/5 mL Syrup UK SmPC sections 4.2, 4.3 and 4.4",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "The SmPCs used label the products generically as Carbocisteine 375 mg Capsules and Carbocisteine 250 mg/5 mL Syrup; no proprietary brand name is given",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The UK SmPC format contains no boxed warning section; no boxed warning is included in either SmPC",
+      "url": "https://www.medicines.org.uk/emc/product/13511/smpc",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Carbocisteine 375 mg Capsules UK SmPC sections 4.2 and 6.4; Carbocisteine 250 mg/5 mL Syrup UK SmPC sections 4.2, 6.3 and 6.4",
+      "url": "https://www.medicines.org.uk/emc/product/8602/smpc",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult divided-dose regimen is given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; the paediatric syrup regimen is given in fields.dosage.paediatric)",
+    "renal_dose_adjustment (no renal dose adjustment is given in either SmPC)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is given in either SmPC)"
+  ],
+  "notes": "Carbocisteine has no FDA-approved product and therefore no DailyMed label; this monograph is sourced from two UK SmPCs (MHRA/emc): Carbocisteine 375 mg Capsules for adult dosing, contraindications, pharmacokinetics and general warnings, and Carbocisteine 250 mg/5 mL Syrup for paediatric dosing and the contraindication in children under 2 years. The existing row carried asthma/inhaled-corticosteroid class text, which is wrong-drug contamination and is superseded by this draft. The capsule SmPC says the capsule formulation is not recommended for children, so paediatric doses are taken only from the syrup SmPC. Neither SmPC states a brand name, so brand_names is empty and a source entry records that absence. The UK SmPC format has no boxed warning, hence black_box_warnings is empty and a source entry records that absence."
+}

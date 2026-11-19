@@ -1,0 +1,234 @@
+{
+  "name": "Carbidopa/Levodopa",
+  "existing_id": "45779e10-d8f8-413c-bc6a-4a8ddd03cd1d",
+  "content_status": "needs_review",
+  "fields": {
+    "mechanism_of_action": "Sinemet is a combination of carbidopa and levodopa. Symptoms of Parkinson's disease are related to depletion of dopamine in the corpus striatum; dopamine itself does not cross the blood-brain barrier, but levodopa, its metabolic precursor, does and is presumably converted to dopamine in the brain, which is thought to be how it relieves symptoms. When levodopa is given alone it is rapidly decarboxylated to dopamine in extracerebral tissues, so only a small portion reaches the central nervous system and large doses are needed, often with nausea and other adverse reactions. Carbidopa inhibits decarboxylation of peripheral levodopa, does not cross the blood-brain barrier and does not affect levodopa metabolism within the central nervous system; by limiting decarboxylase inhibition to extracerebral tissues it makes more levodopa available for transport to the brain. Carbidopa reduces the amount of levodopa required for a given response by about 75% and reduces levodopa-induced nausea and vomiting (Sinemet label, Clinical Pharmacology).",
+    "indications": [
+      "Treatment of Parkinson's disease (Sinemet label, Indications and Usage)",
+      "Post-encephalitic parkinsonism (Sinemet label, Indications and Usage)",
+      "Symptomatic parkinsonism that may follow carbon monoxide intoxication or manganese intoxication (Sinemet label, Indications and Usage)"
+    ],
+    "contraindications": [
+      "Concomitant use of nonselective monoamine oxidase (MAO) inhibitors; these must be discontinued at least two weeks before starting Sinemet (Sinemet label, Contraindications)",
+      "Known hypersensitivity to any component of the product (Sinemet label, Contraindications)",
+      "Narrow-angle glaucoma (Sinemet label, Contraindications)"
+    ],
+    "side_effects": [
+      "Most common: dyskinesias such as choreiform, dystonic and other involuntary movements, and nausea (Sinemet label, Adverse Reactions)",
+      "Cardiovascular: cardiac irregularities, hypotension, orthostatic effects including orthostatic hypotension, hypertension, syncope, phlebitis and palpitation (Sinemet label, Adverse Reactions)",
+      "Gastrointestinal: dark saliva, gastrointestinal bleeding, duodenal ulcer, anorexia, vomiting, diarrhoea, constipation, dyspepsia, dry mouth and taste alterations (Sinemet label, Adverse Reactions)",
+      "Haematologic: agranulocytosis, haemolytic and non-haemolytic anaemia, thrombocytopenia and leukopenia (Sinemet label, Adverse Reactions)",
+      "Hypersensitivity: angioedema, urticaria, pruritus, Henoch-Schonlein purpura and bullous lesions including pemphigus-like reactions (Sinemet label, Adverse Reactions)",
+      "Musculoskeletal: back pain, shoulder pain and muscle cramps (Sinemet label, Adverse Reactions)",
+      "Nervous system and psychiatric: psychotic episodes including delusions, hallucinations and paranoid ideation, bradykinetic episodes ('on-off' phenomenon), confusion, agitation, dizziness, somnolence, dream abnormalities including nightmares, insomnia, paraesthesia, headache, depression with or without suicidal tendencies, dementia, pathological gambling, increased libido including hypersexuality, impulse control symptoms and seizures including convulsions (Sinemet label, Adverse Reactions)",
+      "Respiratory: dyspnoea and upper respiratory infection (Sinemet label, Adverse Reactions)",
+      "Skin: rash, increased sweating, alopecia and dark sweat (Sinemet label, Adverse Reactions)",
+      "Urogenital: urinary tract infection, urinary frequency and dark urine (Sinemet label, Adverse Reactions)",
+      "Also reported with levodopa alone or other carbidopa/levodopa formulations: ataxia, extrapyramidal disorder, falling, anxiety, gait abnormalities, memory impairment, blepharospasm (which may be an early sign of excess dosage), trismus, increased tremor, oculogyric crises, diplopia, blurred vision, urinary retention, urinary incontinence and priapism (Sinemet label, Adverse Reactions)"
+    ],
+    "dosage": {
+      "adult": "Sinemet is an immediate-release combination product; tablet content is expressed as carbidopa/levodopa, and the available strengths are 10 mg/100 mg and 25 mg/100 mg (the 25 mg/250 mg strength is no longer marketed). The optimum daily dose must be determined by careful titration in each patient. Usual initial dose: one tablet of Sinemet 25/100 three times a day, providing 75 mg of carbidopa per day, increased by one tablet every day or every other day as necessary until a dosage of eight tablets of Sinemet 25/100 a day is reached. If Sinemet 10/100 is used, start with one tablet three or four times a day (this will not provide an adequate amount of carbidopa for many patients) and increase by one tablet every day or every other day to a total of eight tablets (two tablets four times a day). When transferring from levodopa, stop levodopa at least 12 hours before starting Sinemet and choose a daily dose providing approximately 25% of the previous levodopa dose: patients taking less than 1500 mg of levodopa a day start on one tablet of Sinemet 25/100 three or four times a day, and most patients taking more than 1500 mg a day start on one tablet of carbidopa/levodopa 25/250 three or four times a day (using another 25/250 product, as the Sinemet 25/250 tablet is no longer marketed). For maintenance, provide at least 70 to 100 mg of carbidopa per day; substitute one 25/100 tablet for each 10/100 tablet when a greater proportion of carbidopa is required, or a 25/250 product when more levodopa is required (Sinemet label, Dosage and Administration).",
+      "maximum": "Eight tablets a day is the maximum described in the labelling. Eight Sinemet 25/100 tablets provide 200 mg carbidopa and 800 mg levodopa per day; eight 25/250 tablets provide 200 mg carbidopa and 2000 mg levodopa per day. Experience with total daily carbidopa doses greater than 200 mg is limited (Sinemet label, Dosage and Administration).",
+      "geriatric": "There is no specific dosing recommendation based on clinical pharmacology data, because Sinemet is titrated as tolerated for clinical effect; no overall meaningful differences in safety or effectiveness were observed between patients older than 65 and younger patients, but greater sensitivity of some older individuals to adverse reactions such as hallucinations cannot be ruled out. Systemic exposure (AUC) to levodopa is about 28% higher in patients aged 65 years and older than in younger patients (Sinemet label, Geriatric Use and Clinical Pharmacology).",
+      "paediatric": "Safety and effectiveness in paediatric patients have not been established; use in patients below the age of 18 is not recommended (Sinemet label, Pediatric Use)."
+    },
+    "adult_dosing": null,
+    "pediatric_dosing": null,
+    "interactions": [
+      "Antihypertensives: symptomatic postural hypotension occurred when Sinemet was added to treatment in a patient receiving antihypertensive drugs; dosage adjustment of the antihypertensive may be required when Sinemet is started (Sinemet label, Drug Interactions).",
+      "MAO inhibitors: nonselective MAO inhibitors are contraindicated (see Contraindications); concomitant selegiline and carbidopa/levodopa may be associated with severe orthostatic hypotension not attributable to carbidopa/levodopa alone (Sinemet label, Contraindications and Drug Interactions).",
+      "Tricyclic antidepressants: rare reports of adverse reactions including hypertension and dyskinesia with concomitant use (Sinemet label, Drug Interactions).",
+      "Dopamine D2 receptor antagonists (e.g. phenothiazines, butyrophenones, risperidone) and isoniazid may reduce the therapeutic effects of levodopa; phenytoin and papaverine have been reported to reverse the beneficial effects of levodopa in Parkinson's disease, so patients should be observed for loss of therapeutic response (Sinemet label, Drug Interactions).",
+      "Dopamine-depleting agents (e.g. reserpine and tetrabenazine) or other drugs known to deplete monoamine stores: use with Sinemet is not recommended (Sinemet label, Drug Interactions).",
+      "Iron salts and multivitamins containing iron salts: co-administer with caution because iron salts can form chelates with levodopa and carbidopa and reduce their bioavailability (Sinemet label, Drug Interactions).",
+      "Metoclopramide may increase the bioavailability of levodopa by increasing gastric emptying, but may also adversely affect disease control through its dopamine receptor antagonistic properties (Sinemet label, Drug Interactions).",
+      "Pyridoxine hydrochloride (vitamin B6) in oral doses of 10 mg to 25 mg may reverse the effects of levodopa by increasing the rate of aromatic amino acid decarboxylation; carbidopa inhibits this action, so Sinemet can be given to patients receiving supplemental pyridoxine (Sinemet label, Clinical Pharmacology)."
+    ],
+    "monitoring": "Periodic evaluations of hepatic, hematopoietic, cardiovascular and renal function are recommended during extended therapy (Sinemet label, Precautions, General). In patients with chronic wide-angle glaucoma, monitor intraocular pressure carefully during therapy (Precautions). Evaluate vitamin B6 levels before starting carbidopa/levodopa and periodically during treatment, or if symptoms of deficiency appear (Warnings, Vitamin B6 Deficiency and Seizures). Monitor for dyskinesia, hallucinations and psychotic-like behaviour, and specifically ask patients or caregivers about new or increased gambling urges, sexual urges, uncontrolled spending or other intense urges (Precautions). Perform periodic skin examinations for melanoma, because patients with Parkinson's disease have a higher risk of melanoma (Precautions). Observe carefully for symptoms resembling neuroleptic malignant syndrome when the dose is reduced abruptly or the drug discontinued, especially in patients receiving neuroleptics (Warnings). Reassess patients for drowsiness or sleepiness, including sudden onset of sleep during activities of daily living (Warnings).",
+    "patient_counselling": "Sinemet is an immediate-release formulation designed to begin releasing its ingredients within 30 minutes; take it at regular intervals exactly as scheduled and do not change the regimen or add any other antiparkinson medicine, including another carbidopa/levodopa preparation, without consulting the doctor (Sinemet label, Information for Patients). A 'wearing-off' effect may occur at the end of a dosing interval; tell the doctor if this affects your lifestyle. Dark colour (red, brown or black) may appear in saliva, urine or sweat, which appears clinically insignificant but can discolour garments. A diet high in protein may delay absorption of levodopa and reduce the amount reaching the circulation, and iron salts such as those in multivitamin tablets may reduce the amount of levodopa available. Sudden onset of sleep during daily activities, sometimes without warning, has been reported with dopaminergic agents - do not drive or operate machinery if you have experienced somnolence or sudden sleep onset. Tell your doctor about new or increased gambling urges, sexual urges or other intense urges. Vitamin B6 deficiency may develop: report depression, confusion, cheilosis, glossitis, dermatitis, anaemia, neuropathy or seizures. Report depression or suicidal thoughts, and do not stop the medicine abruptly (Sinemet label, Information for Patients and Warnings).",
+    "warnings": [
+      "When Sinemet is given to patients already treated with levodopa, levodopa must be discontinued at least twelve hours before therapy with Sinemet is started (Sinemet label, Warnings)",
+      "Carbidopa does not decrease the adverse reactions due to the central effects of levodopa; because more levodopa reaches the brain, central nervous system effects such as dyskinesias may occur at lower dosages and sooner with Sinemet than with levodopa alone (Sinemet label, Warnings)",
+      "All patients should be observed carefully for the development of depression with concomitant suicidal tendencies (Sinemet label, Warnings)",
+      "Administer cautiously to patients with severe cardiovascular or pulmonary disease, bronchial asthma, or renal, hepatic or endocrine disease (Sinemet label, Warnings)",
+      "In patients with a history of myocardial infarction who have residual atrial, nodal or ventricular arrhythmias, monitor cardiac function with particular care during initial dosage adjustment, in a facility with provisions for intensive cardiac care (Sinemet label, Warnings)",
+      "Treatment may increase the possibility of upper gastrointestinal haemorrhage in patients with a history of peptic ulcer (Sinemet label, Warnings)",
+      "Vitamin B6 deficiency and seizures: treatment may contribute to reduced vitamin B6 levels, higher doses may increase the risk, and seizures associated with vitamin B6 deficiency have been reported in the postmarketing setting; evaluate vitamin B6 levels before initiation and periodically, and supplement as necessary (Sinemet label, Warnings)",
+      "Falling asleep during activities of daily living and somnolence: patients have reported suddenly falling asleep without prior warning while engaged in activities of daily living, including operating motor vehicles, and road traffic accidents have been reported; reassess for drowsiness and advise caution with driving or machinery (Sinemet label, Warnings)",
+      "Hyperpyrexia and confusion: a symptom complex resembling neuroleptic malignant syndrome has been reported with dose reduction or withdrawal of levodopa-containing products; observe patients carefully when the dose is reduced abruptly or discontinued, especially if they are receiving neuroleptics (Sinemet label, Warnings)"
+    ],
+    "precautions": [
+      "As with levodopa, periodic evaluations of hepatic, hematopoietic, cardiovascular and renal function are recommended during extended therapy (Sinemet label, Precautions).",
+      "Patients with chronic wide-angle glaucoma may be treated cautiously provided intraocular pressure is well controlled and monitored carefully for changes during therapy (Sinemet label, Precautions).",
+      "Levodopa and Sinemet are associated with dyskinesias; their occurrence may require dosage reduction (Sinemet label, Precautions).",
+      "Hallucinations and psychotic-like behaviour have been reported with dopaminergic medications; patients with a major psychotic disorder should ordinarily not be treated with Sinemet because of the risk of exacerbating psychosis, and some antipsychotics may worsen Parkinson's symptoms and decrease the effectiveness of Sinemet (Sinemet label, Precautions).",
+      "Patients may experience impulse control and compulsive behaviours (gambling, increased sexual urges, spending, binge eating) and may not recognise them as abnormal, so prescribers should ask specifically; consider dose reduction or stopping the drug if such urges develop (Sinemet label, Precautions).",
+      "Monitor for melanoma frequently and on a regular basis; ideally periodic skin examinations should be performed by appropriately qualified individuals (Sinemet label, Precautions)."
+    ],
+    "serious_adverse_reactions": [
+      "Hyperpyrexia and confusion with a symptom complex resembling neuroleptic malignant syndrome after abrupt dose reduction or withdrawal (Sinemet label, Warnings)",
+      "Agranulocytosis, haemolytic and non-haemolytic anaemia, thrombocytopenia and leukopenia (Sinemet label, Adverse Reactions)",
+      "Myocardial infarction, cardiac irregularities and syncope (Sinemet label, Adverse Reactions)",
+      "Gastrointestinal bleeding and duodenal ulcer (Sinemet label, Adverse Reactions)",
+      "Psychotic episodes including delusions, hallucinations and paranoid ideation, depression with suicidal tendencies, and seizures including convulsions (Sinemet label, Adverse Reactions)",
+      "Angioedema, bullous lesions including pemphigus-like reactions, and Henoch-Schonlein purpura (Sinemet label, Adverse Reactions)"
+    ],
+    "food_interactions": [
+      "A diet high in protein may delay the absorption of levodopa and may reduce the amount taken up in the circulation; excessive acidity also delays stomach emptying and therefore delays absorption of levodopa (Sinemet label, Information for Patients).",
+      "Iron salts, such as those in multivitamin tablets, may reduce the amount of levodopa available to the body and thereby reduce clinical effectiveness (Sinemet label, Information for Patients)."
+    ],
+    "pregnancy_category": "There is no pregnancy category statement in the current labelling. No teratogenic effects were observed in mice at up to 20 times the maximum recommended human dose, but Sinemet caused visceral and skeletal malformations in rabbits at all doses and ratios tested, ranging from 10 times/5 times to 20 times/10 times the maximum recommended human dose of carbidopa/levodopa. There are no adequate or well-controlled studies in pregnant women; levodopa crosses the human placental barrier, enters the fetus and is metabolised, while carbidopa concentrations in fetal tissue appeared to be minimal. Use in women of childbearing potential requires that the anticipated benefit be weighed against possible hazards to mother and child (Sinemet label, Pregnancy).",
+    "pregnancy_guidance": "No teratogenic effects were observed in mice receiving up to 20 times the maximum recommended human dose of Sinemet. There was a decrease in the number of live pups delivered by rats receiving approximately two times the maximum recommended human dose of carbidopa and approximately five times the maximum recommended human dose of levodopa during organogenesis, and Sinemet caused both visceral and skeletal malformations in rabbits at all doses and ratios tested. There are no adequate or well-controlled studies in pregnant women. Levodopa has been reported to cross the human placental barrier, enter the fetus and be metabolised; carbidopa concentrations in fetal tissue appeared to be minimal. Use in women of childbearing potential requires weighing the anticipated benefits of the drug against possible hazards to mother and child (Sinemet label, Pregnancy).",
+    "lactation_guidance": "Levodopa has been detected in human milk. Caution should be exercised when Sinemet is administered to a nursing woman (Sinemet label, Nursing Mothers).",
+    "overdose": "Management of acute overdose with Sinemet is the same as for acute overdose with levodopa; pyridoxine is not effective in reversing the actions of Sinemet. Use general supportive measures with immediate gastric lavage, administer intravenous fluids judiciously, maintain an adequate airway, institute electrocardiographic monitoring and observe carefully for arrhythmias, giving appropriate antiarrhythmic therapy if required. Consider that the patient may have taken other drugs as well as Sinemet. No experience with dialysis has been reported, so its value in overdose is unknown (Sinemet label, Overdosage).",
+    "pharmacokinetics": "Carbidopa reduces the amount of levodopa required to produce a given response by about 75% and, when given with levodopa, increases both plasma levels and the plasma half-life of levodopa and decreases plasma and urinary dopamine and homovanillic acid. The plasma half-life of levodopa is about 50 minutes without carbidopa and about 1.5 hours when carbidopa and levodopa are given together. At steady state the bioavailability of carbidopa from Sinemet tablets is approximately 99% relative to concomitant administration of carbidopa and levodopa. Simultaneous administration produced greater urinary excretion of levodopa in proportion to dopamine than administration of the two drugs at separate times. The absolute bioavailability of levodopa was similar in young and elderly subjects, but systemic exposure (AUC) to levodopa was 55% higher in elderly healthy subjects and 28% higher in patients aged 65 years and older with Parkinson's disease, with a 24% higher mean Cmax (Sinemet label, Clinical Pharmacology).",
+    "clinical_pearls": [
+      "Peripheral dopa decarboxylase is saturated by carbidopa at approximately 70 to 100 mg a day; patients receiving less than this are more likely to experience nausea and vomiting, so at least 70 to 100 mg of carbidopa per day should be provided (Sinemet label, Dosage and Administration).",
+      "The 25/250 strength of Sinemet is no longer marketed in the United States; when a 25/250 tablet is required, another carbidopa/levodopa 25/250 product must be used (Sinemet label, Description and Dosage and Administration).",
+      "Blepharospasm may be an early sign of excess dosage in some patients, and involuntary movements may require dosage reduction (Sinemet label, Dosage and Administration).",
+      "Abrupt dose reduction or discontinuation can cause hyperpyrexia and confusion resembling neuroleptic malignant syndrome, especially in patients also receiving neuroleptics (Sinemet label, Warnings).",
+      "Patients with Parkinson's disease have a 2- to approximately 6-fold higher risk of melanoma than the general population, and regular skin monitoring is advised (Sinemet label, Precautions)."
+    ],
+    "brand_names": ["Sinemet"],
+    "black_box_warnings": [],
+    "renal_dose_adjustment": null,
+    "hepatic_dose_adjustment": null,
+    "administration_instructions": "For oral administration. Sinemet is an immediate-release formulation designed to begin release of ingredients within 30 minutes; it should be taken at regular intervals according to the schedule outlined by the physician (Sinemet label, Information for Patients). If general anaesthesia is required, Sinemet may be continued as long as the patient is permitted to take fluids and medication by mouth; if therapy is interrupted temporarily, observe for symptoms resembling neuroleptic malignant syndrome and give the usual daily dosage as soon as the patient can take oral medication (Sinemet label, Dosage and Administration). Store at 25 degrees C (77 degrees F), with excursions permitted to 15 to 30 degrees C (59 to 86 degrees F), in a tightly closed container protected from light and moisture (Sinemet label, Storage and Handling)."
+  },
+  "sources": [
+    {
+      "field": "mechanism_of_action",
+      "ref": "Sinemet (carbidopa and levodopa) tablets, FDA label, Organon LLC, DailyMed, Clinical Pharmacology (Mechanism of Action, Pharmacodynamics, Pharmacokinetics)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "indications",
+      "ref": "Sinemet FDA label, Indications and Usage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "contraindications",
+      "ref": "Sinemet FDA label, Contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "side_effects",
+      "ref": "Sinemet FDA label, Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "dosage",
+      "ref": "Sinemet FDA label, Dosage and Administration, Geriatric Use, Pediatric Use and Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "interactions",
+      "ref": "Sinemet FDA label, Drug Interactions and Clinical Pharmacology",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "monitoring",
+      "ref": "Sinemet FDA label, Precautions (General, Impulse Control, Melanoma), Warnings and Laboratory Tests",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "patient_counselling",
+      "ref": "Sinemet FDA label, Information for Patients and Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "warnings",
+      "ref": "Sinemet FDA label, Warnings",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "precautions",
+      "ref": "Sinemet FDA label, Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "serious_adverse_reactions",
+      "ref": "Sinemet FDA label, Warnings and Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "food_interactions",
+      "ref": "Sinemet FDA label, Information for Patients (protein-rich diet, gastric acidity, iron salts)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_category",
+      "ref": "Sinemet FDA label, Pregnancy (the current label assigns no pregnancy category letter)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pregnancy_guidance",
+      "ref": "Sinemet FDA label, Pregnancy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "lactation_guidance",
+      "ref": "Sinemet FDA label, Nursing Mothers",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "overdose",
+      "ref": "Sinemet FDA label, Overdosage",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "pharmacokinetics",
+      "ref": "Sinemet FDA label, Clinical Pharmacology (Pharmacokinetics and Special Populations)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "clinical_pearls",
+      "ref": "Sinemet FDA label, Description, Dosage and Administration, Warnings and Precautions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "brand_names",
+      "ref": "Sinemet is the brand name of the labelled product (Organon LLC)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "black_box_warnings",
+      "ref": "The Sinemet SPL contains no boxed warning section; no boxed warning is included in the FDA labelling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    },
+    {
+      "field": "administration_instructions",
+      "ref": "Sinemet FDA label, Information for Patients, Dosage and Administration and Storage and Handling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66",
+      "retrieved": "2026-11-19"
+    }
+  ],
+  "unsourced_fields": [
+    "adult_dosing (not populated; the adult titration regimen is given in fields.dosage.adult)",
+    "pediatric_dosing (not populated; use below 18 years is not recommended)",
+    "renal_dose_adjustment (no renal dose adjustment is given in the FDA labelling)",
+    "hepatic_dose_adjustment (no hepatic dose adjustment is given in the FDA labelling)"
+  ],
+  "notes": "This is a combination product: every strength is expressed as carbidopa/levodopa (10 mg/100 mg and 25 mg/100 mg are marketed; 25 mg/250 mg is no longer marketed under the Sinemet brand). Doses above are combination-tablet doses, not single-ingredient carbidopa or levodopa doses. The existing row carried generic class-template contraindications, side effects, interactions and counselling (hypersensitivity, severe hepatic/renal impairment, CYP450, anticoagulants) which do not match this label and have been superseded. Extended-release carbidopa/levodopa (Rytary) and the intestinal gel (Duopa) have different labelling and are not covered here. The SPL contains no boxed warning, hence black_box_warnings is empty and a source entry records that absence."
+}

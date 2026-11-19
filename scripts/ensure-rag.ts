@@ -350,12 +350,34 @@ async function main() {
       for (const p of fresh) flushed.add(p)
       return
     }
-    const { error } = await supabase
-      .from('knowledge_chunks')
-      .upsert(rows, { onConflict: 'source,source_ref,chunk_index' })
-    if (error) {
-      for (const p of fresh) errors.push({ document: p.label, error: error.message })
-      console.error(`[ensure-rag] upsert failed for ${fresh.length} document(s): ${error.message}`)
+    const MAX_ROWS = 1200
+    let failure: string | null = null
+    for (let i = 0; i < rows.length; i += MAX_ROWS) {
+      const slice = rows.slice(i, i + MAX_ROWS)
+      let lastErr: string | null = null
+      for (let attempt = 0; attempt < 5; attempt++) {
+        const { error } = await supabase
+          .from('knowledge_chunks')
+          .upsert(slice, { onConflict: 'source,source_ref,chunk_index' })
+        if (!error) {
+          lastErr = null
+          break
+        }
+        lastErr = error.message
+        const wait = Math.min(30000, 2000 * 2 ** attempt)
+        console.warn(
+          `[ensure-rag] upsert retry ${attempt + 1}/5 in ${wait}ms (${slice.length} chunks): ${error.message}`,
+        )
+        await new Promise((r) => setTimeout(r, wait))
+      }
+      if (lastErr) {
+        failure = lastErr
+        break
+      }
+    }
+    if (failure) {
+      for (const p of fresh) errors.push({ document: p.label, error: failure })
+      console.error(`[ensure-rag] upsert failed for ${fresh.length} document(s): ${failure}`)
       return
     }
     chunksWritten += rows.length

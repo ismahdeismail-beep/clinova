@@ -29,7 +29,15 @@ docs=$(curl -s --max-time 10 \
   -d '{"query":"select count(distinct source_ref)::int as n from knowledge_chunks"}' 2>/dev/null |
   grep -o '"n":[0-9]*' | cut -d: -f2)
 
-count=${count:-0}
+if [ -z "${count:-}" ]; then
+  echo "RAG rebuild: progress unavailable — Supabase count failed (network?)"
+  if pgrep -f 'scripts/ensure-rag.ts' >/dev/null; then
+    echo "  state:       RUNNING (log: $(grep -E 'upsert|embedded' "$LOG" | tail -1))"
+  else
+    echo "  state:       STOPPED — resume with scripts/rag-resume.sh"
+  fi
+  exit 0
+fi
 docs=${docs:-0}
 pct=$((count * 100 / TOTAL))
 filled=$((pct * 30 / 100))
@@ -38,7 +46,15 @@ empty=$(printf '%*s' $((30 - filled)) '' | tr ' ' '.')
 
 echo "RAG rebuild: [${bar}${empty}] ${pct}%"
 echo "  in Supabase: ${count}/${TOTAL} chunks · ${docs}/${DOCS} documents"
-echo "  model:       nomic-embed-text (768-dim, local Ollama, cores 2–3, 100% quota, nice 19)"
+quota=$(systemctl --user show ollama-rag.scope -p CPUQuotaPerSecUSec 2>/dev/null | cut -d= -f2)
+quota=$(awk -v q="$quota" 'BEGIN{
+  if (q ~ /ms$/)      { sub(/ms$/,"",q); printf "%d%%", q/10 }
+  else if (q ~ /s$/)  { sub(/s$/,"",q);  printf "%d%%", q*100 }
+  else                { printf "?" }
+}')
+lp=$(pgrep -f 'ollama/llama-server' | head -1)
+aff=$(taskset -pc "$lp" 2>/dev/null | sed 's/.*: //')
+echo "  model:       nomic-embed-text (768-dim, local Ollama, cpus ${aff:-?}, quota ${quota}, nice 19)"
 if pgrep -f 'scripts/ensure-rag.ts' >/dev/null; then
   echo "  state:       RUNNING"
 else

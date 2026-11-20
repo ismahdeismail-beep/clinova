@@ -4,7 +4,7 @@
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
 > **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env),
-> **Phase 15 (CI/CD) resolved 2026-10-11 — Supabase migration history reconciled and the RAG schema applied.**
+> Phase 15 guard-against-recurrence (CI migration-list check), Phase 16 (confirmed runtime bugs).
 
 ## Definition of Done
 
@@ -159,3 +159,10 @@ jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration fa
       mystery "Preview" failure.
 - [x] **Tooling**: `scripts/build-db-explorer.mjs` → `docs/db-explorer.html` (searchable table/column browser +
       Mermaid ER diagram) for visual DB inspection without the dashboard.
+
+---
+
+### Phase 16 — Confirmed Runtime Bugs (open)
+
+- [ ] **Medium — Empty Ollama responses treated as success** (`src/server/aiRouter.ts`): after `executeProvider(...)` returns (forced-override path ~337 and normal fallback path ~383), the gateway records a success, logs it, and returns `sanitizeClinicalText(response.text)` without validating that `response.text` is usable. A 200 response with `choices: []` / empty `message.content` maps to `""` (e.g. Ollama/OpenAI-compat path ~631) and is returned as `{"text":""}`, preventing failover to the next provider. `streamGenerateContent`'s buffered fallback (~500-506) likewise emits/returns only when truthy and otherwise returns `''`. **Fix:** reject null/missing/whitespace-only text as a provider failure (throw so the fallback chain continues) in a shared post-execution check; treat empty stream results as failure so the caller can fall back or surface an error.
+- [ ] **Medium — Raw text attachments incorrectly Base64-decoded** (`server.ts`, `/api/gemini/assistant` ~1521-1555): when `fileData` is raw text with no `data:*;base64,` prefix (e.g. `"Hello"` from a text filename, non-PDF/non-image), the handler unconditionally does `Buffer.from(cleanBase64, 'base64').toString('utf-8')` and flags control chars as binary, producing a garbled decode and the "[binary format not natively readable]" placeholder instead of attaching the text. **Fix:** only Base64-decode an explicit `data:` URL or a payload that is actually Base64-encoded; treat plain/raw text directly. Document and validate the accepted `fileData` contract (raw text vs data URL vs base64) to avoid ambiguity.

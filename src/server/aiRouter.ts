@@ -335,10 +335,11 @@ export async function generateContentWithFallback(
     try {
       console.log(`[AI Gateway] FORCING override provider: ${activeOverride}`)
       const response = await executeProvider(activeOverride, request)
+      const text = ensureUsableProviderText(response?.text, activeOverride)
       const duration = Date.now() - startTime
 
       const inputTok = Math.round(JSON.stringify(request).length / 4)
-      const outputTok = Math.round((response.text || '').length / 4)
+      const outputTok = Math.round(text.length / 4)
 
       recordProviderSuccess(activeOverride, duration, inputTok, outputTok)
 
@@ -359,7 +360,7 @@ export async function generateContentWithFallback(
           1000000,
       })
 
-      return { ...response, text: sanitizeClinicalText(response.text) }
+      return { ...response, text: sanitizeClinicalText(text) }
     } catch (err: any) {
       console.warn(
         `[AI Gateway] Forced provider override ${activeOverride} failed. Falling back. Error: ${err.message}`,
@@ -381,10 +382,11 @@ export async function generateContentWithFallback(
       attemptedProviders.push(provider)
 
       const response = await executeProvider(provider, request)
+      const text = ensureUsableProviderText(response?.text, provider)
       const duration = Date.now() - startTime
 
       const inputTok = Math.round(JSON.stringify(request).length / 4)
-      const outputTok = Math.round((response.text || '').length / 4)
+      const outputTok = Math.round(text.length / 4)
 
       recordProviderSuccess(provider, duration, inputTok, outputTok)
 
@@ -405,7 +407,7 @@ export async function generateContentWithFallback(
           1000000,
       })
 
-      return { ...response, text: sanitizeClinicalText(response.text) }
+      return { ...response, text: sanitizeClinicalText(text) }
     } catch (err: any) {
       console.error(`[AI Gateway] ${provider} failed: ${err.message}`)
       recordProviderError(provider)
@@ -433,6 +435,13 @@ export async function generateContentWithFallback(
   })
 
   throw new Error(`AI service unavailable: ${errorMsg}`)
+}
+
+function ensureUsableProviderText(text: unknown, provider: string): string {
+  if (typeof text !== 'string' || text.trim().length === 0) {
+    throw new Error(`${provider} returned empty response`)
+  }
+  return text
 }
 
 function addGatewayLog(log: GatewayLog) {
@@ -483,12 +492,8 @@ export async function streamGenerateContent(
         }
       }
       console.log(`[AI Gateway] Gemini stream completed: ${full.length} chars`)
-      if (full.length === 0) {
-        console.warn(
-          '[AI Gateway] Gemini returned empty response — possible safety filter or oversized prompt',
-        )
-      }
-      return full
+      const usable = ensureUsableProviderText(full, 'Google Gemini')
+      return usable
     } catch (err: any) {
       console.warn(
         `[AI Gateway] Gemini stream failed, falling back to buffered call: ${err.message}`,
@@ -498,11 +503,9 @@ export async function streamGenerateContent(
 
   // Fallback: buffered generation, emitted as a single chunk.
   const response = await generateContentWithFallback(request, undefined, featureName)
-  if (response.text) {
-    onChunk(response.text)
-    return response.text
-  }
-  return ''
+  const text = ensureUsableProviderText(response?.text, 'Fallback')
+  onChunk(text)
+  return text
 }
 
 // Embeddings — used by the background ingestion pipeline (Phase 10) and the RAG

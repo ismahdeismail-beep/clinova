@@ -1518,10 +1518,8 @@ INSTRUCTIONS FOR USING RETRIEVED DATA:
   const userParts: any[] = [];
 
   if (fileData) {
-    let cleanBase64 = fileData;
-    if (fileData.includes(';base64,')) {
-      cleanBase64 = fileData.split(';base64,')[1];
-    }
+    const isDataUrl = typeof fileData === 'string' && fileData.startsWith('data:') && fileData.includes(';base64,');
+    const cleanBase64 = isDataUrl ? fileData.slice(fileData.indexOf(';base64,') + ';base64,'.length) : fileData;
     const filename = fileName || 'document.txt';
     const mimetype = fileType || '';
     const isPdf = mimetype.includes('pdf') || filename.toLowerCase().endsWith('.pdf');
@@ -1540,9 +1538,22 @@ INSTRUCTIONS FOR USING RETRIEVED DATA:
       userParts.push({ inlineData: { data: cleanBase64, mimeType: cleanMimetype } });
     } else {
       try {
-        const buf = Buffer.from(cleanBase64, 'base64');
-        const textContent = buf.toString('utf-8');
-        // eslint-disable-next-line no-control-regex
+        // fileData contract: data:*;base64 URLs carry base64 payloads; PDFs/images are sent as inlineData (base64).
+        // For undecorated non-binary attachments, treat as raw text unless payload is clearly base64 (canonical round-trip),
+        // so plain text like "Hello" is preserved while base64 text without a data URL still decodes.
+        let textContent: string;
+        if (isDataUrl) {
+          textContent = Buffer.from(cleanBase64, 'base64').toString('utf-8');
+        } else {
+          const stripped = String(fileData).replace(/\s+/g, '');
+          const unpadded = stripped.replace(/=+$/g, '');
+          const isClearlyBase64 =
+            unpadded.length > 0 &&
+            /^[A-Za-z0-9+/]+$/.test(unpadded) &&
+            stripped.length % 4 === 0 &&
+            Buffer.from(stripped, 'base64').toString('base64').replace(/=+$/g, '') === unpadded;
+          textContent = isClearlyBase64 ? Buffer.from(stripped, 'base64').toString('utf-8') : String(fileData);
+        }
         const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
         if (!isBinary) {
           userParts.push({ text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n` });

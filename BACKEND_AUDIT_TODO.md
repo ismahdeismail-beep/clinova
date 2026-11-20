@@ -3,8 +3,7 @@
 > **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env),
-> Phase 15 guard-against-recurrence (CI migration-list check), Phase 16 (confirmed runtime bugs).
+> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env).
 
 ## Definition of Done
 
@@ -154,9 +153,7 @@ jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration fa
       industry tables (`pharmaceutical_topics`, `industry_knowledge_entries`, `drug_industry_connections`,
       `industry_terms`, `kenyan_manufacturers`) present.
 - [x] **Verified `Supabase Preview` is green** on push `4445d6e` — all 4 checks pass (`Supabase Preview`, Lint & Unit Tests, E2E, Production Build); both Vercel projects (`clinova`, `clinova-main`) deployed it, live `/api/ready` → `{status:ready, supabase:true}`.
-- [ ] **Guard against recurrence** (in progress): apply migrations through the CLI/CI (never raw SQL), and add a
-      `supabase migration list --linked` check to CI so a mismatch fails fast with a clear message instead of a
-      mystery "Preview" failure.
+- [x] **Guard against recurrence** (done 2026-11-20): added `migration-history` job to `.github/workflows/ci.yml` that runs `supabase migration list --linked` via `scripts/check-supabase-migrations.sh` (`npm run check:migrations`). Skips with an explicit notice when `SUPABASE_ACCESS_TOKEN` and project ref secrets are unavailable (e.g. fork PRs); when configured, links the project and fails fast with actionable reconciliation guidance on drift or CLI/link errors. Drift-detection awk parsing corrected during review (separator regex) and sanity-tested. Not end-to-end verified against a live linked project (no secrets in this environment).
 - [x] **Tooling**: `scripts/build-db-explorer.mjs` → `docs/db-explorer.html` (searchable table/column browser +
       Mermaid ER diagram) for visual DB inspection without the dashboard.
 
@@ -164,5 +161,5 @@ jsonb_path_ops)`, but `jsonb_path_ops` is a **GIN** opclass → the migration fa
 
 ### Phase 16 — Confirmed Runtime Bugs (open)
 
-- [ ] **Medium — Empty Ollama responses treated as success** (in progress, `src/server/aiRouter.ts`): after `executeProvider(...)` returns (forced-override path ~337 and normal fallback path ~383), the gateway records a success, logs it, and returns `sanitizeClinicalText(response.text)` without validating that `response.text` is usable. A 200 response with `choices: []` / empty `message.content` maps to `""` (e.g. Ollama/OpenAI-compat path ~631) and is returned as `{"text":""}`, preventing failover to the next provider. `streamGenerateContent`'s buffered fallback (~500-506) likewise emits/returns only when truthy and otherwise returns `''`. **Fix:** reject null/missing/whitespace-only text as a provider failure (throw so the fallback chain continues) in a shared post-execution check; treat empty stream results as failure so the caller can fall back or surface an error.
-- [ ] **Medium — Raw text attachments incorrectly Base64-decoded** (in progress, `server.ts`, `/api/gemini/assistant` ~1521-1555): when `fileData` is raw text with no `data:*;base64,` prefix (e.g. `"Hello"` from a text filename, non-PDF/non-image), the handler unconditionally does `Buffer.from(cleanBase64, 'base64').toString('utf-8')` and flags control chars as binary, producing a garbled decode and the "[binary format not natively readable]" placeholder instead of attaching the text. **Fix:** only Base64-decode an explicit `data:` URL or a payload that is actually Base64-encoded; treat plain/raw text directly. Document and validate the accepted `fileData` contract (raw text vs data URL vs base64) to avoid ambiguity.
+- [x] **Medium — Empty Ollama responses treated as success** (done 2026-11-20, `src/server/aiRouter.ts`): added shared `ensureUsableProviderText` validation; forced-override and normal fallback paths now reject null/missing/whitespace-only text before recording success/returning (so empty 200s throw and fail over instead of returning `""`). `streamGenerateContent` treats an empty/whitespace Gemini stream as failure (falls through to buffered fallback) and requires usable buffered fallback text (throws instead of silently returning `""`). Verified: tsc clean, eslint 0 errors on touched code, targeted vitest 46/46 pass, and reproduction shows empty/whitespace responses fail over while valid responses still return.
+- [x] **Medium — Raw text attachments incorrectly Base64-decoded** (done 2026-11-20, `server.ts`, `/api/gemini/assistant`): data URLs decode payload as base64; PDFs/images remain base64 `inlineData` (with or without data URL). Undecorated non-binary attachments are treated as raw text unless payload is clearly base64 (canonical round-trip), so plain text (e.g. `"Hello"`) is preserved while base64-encoded text without a data URL still decodes. Verified by reproduction: raw text, data-URL text, base64-text-no-prefix, and base64 PDF/image cases behave correctly. Limitation: a rare undecorated string that is itself a canonical base64 round-trip may be interpreted as base64.

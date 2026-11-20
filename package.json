@@ -18,6 +18,7 @@
     "supabase:stop": "supabase stop",
     "supabase:migrate": "supabase db reset",
     "supabase:status": "supabase db lint",
+    "check:migrations": "bash scripts/check-supabase-migrations.sh",
     "db:seed": "tsx scripts/seedExistingDb.ts",
     "db:seed:notes": "tsx scripts/seedDiseaseNotes.ts",
     "db:validate": "tsx scripts/validateDb.ts",

@@ -422,12 +422,32 @@ async function main() {
     for (let i = 0; i < items.length; i += args.embedBatch) {
       const slice = items.slice(i, i + args.embedBatch)
       try {
-        const vectors = await embedTexts(
-          slice.map((x) => x.chunk.text),
-          args.embedBatch,
-        )
+        let vectors: number[][] | null = null
+        let lastEmbedErr: any
+        for (let attempt = 0; attempt < 5; attempt++) {
+          try {
+            vectors = await embedTexts(
+              slice.map((x) => x.chunk.text),
+              args.embedBatch,
+            )
+            lastEmbedErr = undefined
+            break
+          } catch (e: any) {
+            // Daily-quota exhaustion — nothing retryable today; stop and leave the
+            // rest for a later run (--only-missing will resume them).
+            if (e?.status === 429 && e?.retryDelayMs > 90_000) throw e
+            lastEmbedErr = e
+            const wait = Math.min(30000, 2000 * 2 ** attempt)
+            const labels = [...new Set(slice.map((x) => x.plan.label))]
+            console.warn(
+              `[ensure-rag] embed retry ${attempt + 1}/5 in ${wait}ms for: ${labels.join(', ')} — ${String(e?.message || e).slice(0, 80)}`,
+            )
+            await sleep(wait)
+          }
+        }
+        if (!vectors) throw lastEmbedErr
         slice.forEach((x, j) => {
-          x.chunk.embedding = vectors[j]
+          x.chunk.embedding = vectors![j]
         })
         embeddedOk += slice.length
         for (const x of slice) {

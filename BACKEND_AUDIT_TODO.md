@@ -3,7 +3,8 @@
 > **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items:** Phase 4 (auth authority), Phase 6 (KG sync job), Phase 7 (search API), Phase 12 (prod security env).
+> **Open items (2026-11-23):** Phase 4 (auth authority), Phase 6 (auto-trigger for KG sync), Phase 12 (prod security env).
+> **Update (2026-11-23):** Phase 7 server search API added and wired; Phase 6 KG sync refactored into an importable idempotent function. Full test suite 99/99.
 
 ## Definition of Done
 
@@ -43,12 +44,13 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 ### Phase 6 — Knowledge Infrastructure ✅ (read-only)
 
 - [x] KG schema present (knowledge_graph_nodes/relationships + FKs/indexes in migration 1)
-- [ ] No server-side KG sync job observed; relationships written ad-hoc via service-role. Sync-after-update not automated.
+- [x] Reusable KG sync (2026-11-23): `scripts/sync-knowledge-engine.ts` refactored into an importable `src/server/kgSync.ts` exporting `syncKnowledgeGraph()` — idempotent, batched upserts of disease/case nodes and case→disease relationships, injectable Supabase client + logger, returns counts. CLI script is now a thin wrapper with unchanged output/behavior. Verified: tsc clean, eslint 0, vitest 6/6, full suite 99/99.
+- [ ] Automatic trigger after content updates still to be wired. Note: sync reads the static source modules (`clinicalCasesData`, `clinicalCases/index`, `curriculum`), so DB-side edits are not reflected; no trigger was added to admin write routes.
 
 ### Phase 7 — Search / Health ✅ (partial)
 
 - [x] Health/readiness probes added (validated)
-- [ ] Full-text/vector search endpoints not present in server; Supabase FTS/indexes exist in schema but no API exposes them. Ranking/auto-index not implemented.
+- [x] Server search API (2026-11-23): `src/server/search.ts` exports `createSearchRouter()`, mounted at `/api/search` in `server.ts` just before the JSON 404 catch-all (inherits existing opt-in rate-limit/auth middleware). `GET /api/search?q=&limit=` calls the existing `unified_search` RPC (zod validation: 2–200 char query, limit 1–50, default 10); `GET /api/search/semantic?q=&limit=` embeds via `embedText` and retrieves via `retrieveChunks`, reusing the RAG cosine index rather than duplicating embedding logic (limit 1–20, default 5). Injectable deps; 9 mocked tests pass (no live Supabase/Ollama). Limitations: semantic needs the local embedding provider (no cloud fallback); unified route does not replicate the client-side static/industry fallbacks from `search.service.ts`.
 
 ### Phase 8 — Background Processing ✅ (see BACKEND_STORAGE_BG_FINDINGS.md)
 

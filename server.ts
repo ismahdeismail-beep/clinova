@@ -29,6 +29,7 @@ import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
 import { createWhatsAppRouter } from './src/server/whatsappWebhook.js';
+import { createSearchRouter } from './src/server/search.js';
 import webpush from 'web-push';
 import * as Sentry from '@sentry/node';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
@@ -3560,6 +3561,8 @@ app.get('/api/admin/jobs/status', async (_req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+
+app.use('/api/search', createSearchRouter());
 
 app.use('/api', (_req, res) => {
   res.status(404).json({ error: 'Not found' });

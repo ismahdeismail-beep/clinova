@@ -42,10 +42,29 @@ export function parseFrontMatter(raw: string): { attrs: Record<string, string>; 
   return { attrs, body }
 }
 
+const MAX_CHUNK_CHARS = 3000
+
+function splitOversized(text: string): string[] {
+  if (text.length <= MAX_CHUNK_CHARS) return [text]
+  const parts: string[] = []
+  let rest = text
+  while (rest.length > MAX_CHUNK_CHARS) {
+    let cut = rest.lastIndexOf('\n', MAX_CHUNK_CHARS)
+    if (cut < MAX_CHUNK_CHARS / 2) cut = rest.lastIndexOf(' ', MAX_CHUNK_CHARS)
+    if (cut < MAX_CHUNK_CHARS / 2) cut = MAX_CHUNK_CHARS
+    parts.push(rest.slice(0, cut).trim())
+    rest = rest.slice(cut).trimStart()
+  }
+  if (rest) parts.push(rest)
+  return parts
+}
+
 /**
  * Chunk an STG document: each `## Section` becomes one chunk, prefixed with the
  * medicine name so the embedding is self-contained. Prose before the first `##`
  * becomes an `overview` chunk. The YAML `title` wins over the H1 for the name.
+ * Sections longer than the embedding model's context are split on line/word
+ * boundaries so a single oversized section cannot stall the embedder.
  */
 export function buildStgChunks(raw: string, slug: string): StgDoc {
   const { attrs, body } = parseFrontMatter(raw)
@@ -63,8 +82,10 @@ export function buildStgChunks(raw: string, slug: string): StgDoc {
   const flush = () => {
     const text = buf.join('\n').trim()
     if (text) {
-      if (section === null) preamble.push(text)
-      else chunks.push({ section, text: `${title} — ${section}:\n${text}` })
+      if (section === null) preamble.push(...splitOversized(text))
+      else
+        for (const part of splitOversized(text))
+          chunks.push({ section, text: `${title} — ${section}:\n${part}` })
     }
     buf = []
   }
@@ -83,6 +104,12 @@ export function buildStgChunks(raw: string, slug: string): StgDoc {
   flush()
 
   const intro = preamble.join('\n').trim()
-  if (intro) chunks.unshift({ section: 'overview', text: `${title} — overview:\n${intro}` })
+  if (intro)
+    chunks.unshift(
+      ...splitOversized(intro).map((part) => ({
+        section: 'overview',
+        text: `${title} — overview:\n${part}`,
+      })),
+    )
   return { slug, title, chunks }
 }

@@ -541,30 +541,39 @@ function parseGoogleDelay(body: string): number {
 }
 
 async function embedRequest(texts: string[]): Promise<number[][]> {
-  const res = await fetch(`${LOCAL_EMBED_URL}/v1/embeddings`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: LOCAL_EMBED_MODEL, input: texts }),
-  })
-  if (!res.ok) {
-    const body = await res.text()
-    const err: any = new Error(`Local embedding failed (HTTP ${res.status}): ${body.slice(0, 200)}`)
-    err.status = res.status
-    err.body = body
-    throw err
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), 120000)
+  try {
+    const res = await fetch(`${LOCAL_EMBED_URL}/v1/embeddings`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: LOCAL_EMBED_MODEL, input: texts }),
+      signal: controller.signal,
+    })
+    if (!res.ok) {
+      const body = await res.text()
+      const err: any = new Error(
+        `Local embedding failed (HTTP ${res.status}): ${body.slice(0, 200)}`,
+      )
+      err.status = res.status
+      err.body = body
+      throw err
+    }
+    const json: any = await res.json()
+    const rows: any[] = json.data ?? []
+    const embeddings: number[][] = rows
+      .slice()
+      .sort((a: any, b: any) => (a.index ?? 0) - (b.index ?? 0))
+      .map((d: any) => d.embedding ?? [])
+    if (embeddings.length !== texts.length || embeddings.some((v) => !v?.length)) {
+      throw new Error(
+        `Local embedding provider returned ${embeddings.length}/${texts.length} vectors`,
+      )
+    }
+    return embeddings
+  } finally {
+    clearTimeout(timer)
   }
-  const json: any = await res.json()
-  const rows: any[] = json.data ?? []
-  const embeddings: number[][] = rows
-    .slice()
-    .sort((a: any, b: any) => (a.index ?? 0) - (b.index ?? 0))
-    .map((d: any) => d.embedding ?? [])
-  if (embeddings.length !== texts.length || embeddings.some((v) => !v?.length)) {
-    throw new Error(
-      `Local embedding provider returned ${embeddings.length}/${texts.length} vectors`,
-    )
-  }
-  return embeddings
 }
 
 /** Embed many texts in batches. Local, no provider rate limit. */

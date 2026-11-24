@@ -65,4 +65,20 @@ describe('buildStgChunks', () => {
   it('produces no chunks for an empty / heading-only document', () => {
     expect(buildStgChunks('# Empty\n## Indications\n', 'empty').chunks).toEqual([])
   })
+
+  it('splits oversized sections into context-sized chunks, keeping the title prefix', () => {
+    const long = 'word '.repeat(2000)
+    const { chunks } = buildStgChunks(`# Big\n\n## Section\n${long}`, 'big')
+    expect(chunks.length).toBeGreaterThan(1)
+    for (const chunk of chunks) {
+      expect(chunk.text.startsWith('Big — Section:')).toBe(true)
+      expect(chunk.text.length).toBeLessThanOrEqual(3200)
+    }
+    expect(
+      chunks
+        .map((c) => c.text)
+        .join(' ')
+        .replace(/\s+/g, ' '),
+    ).toContain('word word')
+  })
 })

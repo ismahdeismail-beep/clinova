@@ -142,6 +142,31 @@ function todayStamp(d = new Date()): string {
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+const EMBED_SKIP_PATH = resolve(process.env.HOME || '/tmp', '.cache/clinova/stg/embed-skip.json')
+let embedSkip = new Set<string>()
+
+function loadEmbedSkip(): Set<string> {
+  try {
+    if (!existsSync(EMBED_SKIP_PATH)) return new Set()
+    const raw = JSON.parse(readFileSync(EMBED_SKIP_PATH, 'utf8'))
+    return new Set(Array.isArray(raw) ? raw.filter((x) => typeof x === 'string') : [])
+  } catch {
+    return new Set()
+  }
+}
+
+function saveEmbedSkip(skip: Set<string>): void {
+  mkdirSync(dirname(EMBED_SKIP_PATH), { recursive: true })
+  writeFileSync(EMBED_SKIP_PATH, JSON.stringify([...skip].sort(), null, 2))
+}
+
+function withTimeout<T>(work: PromiseLike<T>, ms: number, label: string): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined
+  const timeout = new Promise<T>((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms)
+  })
+  return Promise.race([Promise.resolve(work), timeout]).finally(() => clearTimeout(timer))
+}
 
 async function main() {
   const args = parseArgs(process.argv.slice(2))
@@ -231,7 +256,12 @@ async function main() {
       }))
     : []
 
-  let docs = [...monographDocs, ...stgDocs]
+  embedSkip = loadEmbedSkip()
+  if (embedSkip.size) console.log(`[ensure-rag] embed-skip: ${embedSkip.size} document(s)`)
+
+  const docs = [...monographDocs, ...stgDocs].filter(
+    (d) => !embedSkip.has(`${d.source}:${d.sourceRef}`),
+  )
 
   if (args.onlyMissing && !args.dryRun) {
     // Page every row: PostgREST truncates an unbounded select at max-rows
@@ -356,9 +386,13 @@ async function main() {
       const slice = rows.slice(i, i + MAX_ROWS)
       let lastErr: string | null = null
       for (let attempt = 0; attempt < 5; attempt++) {
-        const { error } = await supabase
-          .from('knowledge_chunks')
-          .upsert(slice, { onConflict: 'source,source_ref,chunk_index' })
+        const { error } = await withTimeout(
+          supabase
+            .from('knowledge_chunks')
+            .upsert(slice, { onConflict: 'source,source_ref,chunk_index' }),
+          60000,
+          'upsert',
+        )
         if (!error) {
           lastErr = null
           break
@@ -426,9 +460,13 @@ async function main() {
         let lastEmbedErr: any
         for (let attempt = 0; attempt < 5; attempt++) {
           try {
-            vectors = await embedTexts(
-              slice.map((x) => x.chunk.text),
-              args.embedBatch,
+            vectors = await withTimeout(
+              embedTexts(
+                slice.map((x) => x.chunk.text),
+                args.embedBatch,
+              ),
+              180000,
+              'embed batch',
             )
             lastEmbedErr = undefined
             break
@@ -459,6 +497,46 @@ async function main() {
           }
         }
       } catch (e: any) {
+        if (e?.status === 429 && e?.retryDelayMs > 90_000) throw e
+        // Fallback: embed one-by-one so a single pathological chunk does not poison
+        // the whole batch/run. Mark only the failing chunk's document as errored.
+        if (slice.length > 1) {
+          console.warn(`[ensure-rag] batch failed, retrying ${slice.length} chunks one-by-one`)
+          for (const x of slice) {
+            if (x.plan.error) continue
+            try {
+              const [v] = await withTimeout(embedTexts([x.chunk.text], 1), 180000, 'embed single')
+              x.chunk.embedding = v
+              embeddedOk += 1
+              const left = (remaining.get(x.plan) ?? 0) - 1
+              remaining.set(x.plan, left)
+              if (left === 0 && !x.plan.error) {
+                ready.push(x.plan)
+                readyChunks += x.plan.chunks.length
+              }
+            } catch (singleErr: any) {
+              if (singleErr?.status === 429 && singleErr?.retryDelayMs > 90_000) throw singleErr
+              if (!x.plan.error) {
+                x.plan.error = String(singleErr?.message || singleErr).slice(0, 200)
+                errors.push({ document: x.plan.label, error: x.plan.error })
+                const key = `${x.plan.source}:${x.plan.sourceRef}`
+                embedSkip.add(key)
+                saveEmbedSkip(embedSkip)
+                console.error(
+                  `[ensure-rag] embed failed for ${x.plan.label}: ${x.plan.error} (added to embed-skip)`,
+                )
+              }
+            }
+          }
+          done += slice.length
+          console.log(`[ensure-rag] embedded ${done}/${items.length} chunks`)
+          if (readyChunks >= args.batch * 3 || ready.length >= args.batch) {
+            await flushDocs(ready.splice(0, ready.length))
+            readyChunks = 0
+          }
+          if (args.paceMs > 0) await sleep(args.paceMs)
+          continue
+        }
         // Daily-quota exhaustion — nothing retryable today; stop and leave the
         // rest for a later run (--only-missing will resume them).
         if (e?.status === 429 && e?.retryDelayMs > 90_000) {

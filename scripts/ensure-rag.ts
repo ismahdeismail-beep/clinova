@@ -259,7 +259,7 @@ async function main() {
   embedSkip = loadEmbedSkip()
   if (embedSkip.size) console.log(`[ensure-rag] embed-skip: ${embedSkip.size} document(s)`)
 
-  const docs = [...monographDocs, ...stgDocs].filter(
+  let docs = [...monographDocs, ...stgDocs].filter(
     (d) => !embedSkip.has(`${d.source}:${d.sourceRef}`),
   )
 

@@ -465,7 +465,7 @@ async function main() {
                 slice.map((x) => x.chunk.text),
                 args.embedBatch,
               ),
-              180000,
+              600000,
               'embed batch',
             )
             lastEmbedErr = undefined
@@ -505,7 +505,7 @@ async function main() {
           for (const x of slice) {
             if (x.plan.error) continue
             try {
-              const [v] = await withTimeout(embedTexts([x.chunk.text], 1), 180000, 'embed single')
+              const [v] = await withTimeout(embedTexts([x.chunk.text], 1), 600000, 'embed single')
               x.chunk.embedding = v
               embeddedOk += 1
               const left = (remaining.get(x.plan) ?? 0) - 1

@@ -542,7 +542,7 @@ function parseGoogleDelay(body: string): number {
 
 async function embedRequest(texts: string[]): Promise<number[][]> {
   const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), 120000)
+  const timer = setTimeout(() => controller.abort(), 600000)
   try {
     const res = await fetch(`${LOCAL_EMBED_URL}/v1/embeddings`, {
       method: 'POST',

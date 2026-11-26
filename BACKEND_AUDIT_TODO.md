@@ -3,8 +3,9 @@
 > **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items (2026-11-23):** Phase 4 (auth authority), Phase 6 (auto-trigger for KG sync), Phase 12 (prod security env).
-> **Update (2026-11-23):** Phase 7 server search API added and wired; Phase 6 KG sync refactored into an importable idempotent function. Full test suite 99/99.
+> **Open items (2026-11-26):** Phase 4 (auth authority), Phase 12 (prod security env).
+> **Update (2026-11-23):** Phase 7 server search API added and wired; Phase 6 KG sync refactored into an importable idempotent function.
+> **Update (2026-11-26):** Phase 6 KG sync now triggers after admin case writes and reads DB cases. Full test suite 102/102.
 
 ## Definition of Done
 
@@ -45,7 +46,7 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 
 - [x] KG schema present (knowledge_graph_nodes/relationships + FKs/indexes in migration 1)
 - [x] Reusable KG sync (2026-11-23): `scripts/sync-knowledge-engine.ts` refactored into an importable `src/server/kgSync.ts` exporting `syncKnowledgeGraph()` — idempotent, batched upserts of disease/case nodes and case→disease relationships, injectable Supabase client + logger, returns counts. CLI script is now a thin wrapper with unchanged output/behavior. Verified: tsc clean, eslint 0, vitest 6/6, full suite 99/99.
-- [ ] Automatic trigger after content updates still to be wired. Note: sync reads the static source modules (`clinicalCasesData`, `clinicalCases/index`, `curriculum`), so DB-side edits are not reflected; no trigger was added to admin write routes.
+- [x] Automatic trigger after content updates (2026-11-26): `POST/PUT/DELETE /api/admin/clinical-cases` now re-sync the KG from the `clinical_cases` table (`caseSource: 'database'`, UUID entity ids), and `POST /api/admin/kg/sync` allows a manual re-sync. Opt out with `KG_SYNC_ON_WRITE=false`. Static CLI behaviour unchanged. 8/8 kgSync tests pass.
 
 ### Phase 7 — Search / Health ✅ (partial)
 

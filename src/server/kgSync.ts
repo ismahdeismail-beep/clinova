@@ -1,9 +1,25 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
-import { INITIAL_CASES, type ClinicalCase } from '../data/clinicalCasesData'
+import { INITIAL_CASES } from '../data/clinicalCasesData'
 import { GENERATED_CASES } from '../data/clinicalCases/index'
 import { DISEASES } from '../data/curriculum'
 
 export type KnowledgeGraphLogger = Pick<Console, 'log' | 'warn' | 'error'>
+export type KnowledgeGraphCaseSource = 'static' | 'database'
+
+export interface KnowledgeGraphSyncOptions {
+  /** 'static' (default) reads bundled cases; 'database' reads clinical_cases. */
+  caseSource?: KnowledgeGraphCaseSource
+}
+
+interface KgCase {
+  entityId: string
+  title: string
+  specialty: string
+  disease: string
+  diagnosis: string
+  difficulty: string
+  chiefComplaint: string
+}
 
 export interface KnowledgeGraphSyncCounts {
   diseaseNodes: number
@@ -36,8 +52,38 @@ export function toSeedId(title: string, specialty: string): string {
     .substring(0, 120)
 }
 
-function cases(): ClinicalCase[] {
-  return [...INITIAL_CASES, ...GENERATED_CASES]
+function staticCases(): KgCase[] {
+  return [...INITIAL_CASES, ...GENERATED_CASES].map((c) => ({
+    entityId: `case-${toSeedId(c.title, c.specialty)}`,
+    title: c.title,
+    specialty: c.specialty,
+    disease: c.disease,
+    diagnosis: c.diagnosis,
+    difficulty: c.difficulty,
+    chiefComplaint: c.chiefComplaint || '',
+  }))
+}
+
+async function databaseCases(
+  client: SupabaseClient,
+  logger: KnowledgeGraphLogger,
+): Promise<KgCase[]> {
+  const { data, error } = await client
+    .from('clinical_cases')
+    .select('id,title,specialty,disease,diagnosis,difficulty,chief_complaint')
+  if (error) {
+    logger.error('   ❌ Failed to fetch clinical cases:', error.message)
+    return []
+  }
+  return (data ?? []).map((row: Record<string, any>) => ({
+    entityId: `case-${row.id}`,
+    title: row.title || 'Untitled case',
+    specialty: row.specialty || '',
+    disease: row.disease || '',
+    diagnosis: row.diagnosis || '',
+    difficulty: row.difficulty || '',
+    chiefComplaint: row.chief_complaint || '',
+  }))
 }
 
 const diseaseIdByName = new Map<string, string>()
@@ -98,18 +144,19 @@ async function syncDiseaseNodes(
 async function syncCaseNodes(
   client: SupabaseClient,
   logger: KnowledgeGraphLogger,
+  cases: KgCase[],
 ): Promise<number> {
   logger.log('\n📊 Syncing case knowledge graph nodes...')
-  const rows = cases().map((c) => ({
+  const rows = cases.map((c) => ({
     entity_type: 'clinical_case',
-    entity_id: `case-${toSeedId(c.title, c.specialty)}`,
+    entity_id: c.entityId,
     label: c.title,
     description: `${c.disease} — ${c.diagnosis}`,
     metadata: {
       specialty: c.specialty,
       disease: c.disease,
       difficulty: c.difficulty,
-      chiefComplaint: (c.chiefComplaint || '').substring(0, 200),
+      chiefComplaint: c.chiefComplaint.substring(0, 200),
     },
   }))
   const n = await batchUpsert(
@@ -127,6 +174,7 @@ async function syncCaseNodes(
 async function syncRelationships(
   client: SupabaseClient,
   logger: KnowledgeGraphLogger,
+  cases: KgCase[],
 ): Promise<number> {
   logger.log('\n🔗 Syncing knowledge graph relationships...')
 
@@ -145,9 +193,8 @@ async function syncRelationships(
   }
 
   const rels: Record<string, unknown>[] = []
-  for (const c of cases()) {
-    const caseEntityId = `case-${toSeedId(c.title, c.specialty)}`
-    const caseNodeId = nodeMap.get(`clinical_case:${caseEntityId}`)
+  for (const c of cases) {
+    const caseNodeId = nodeMap.get(`clinical_case:${c.entityId}`)
     if (!caseNodeId) continue
 
     const diseaseId = diseaseIdByName.get((c.disease || '').toLowerCase())
@@ -178,10 +225,13 @@ async function syncRelationships(
 export async function syncKnowledgeGraph(
   client: SupabaseClient = createKnowledgeGraphClient(),
   logger: KnowledgeGraphLogger = silentLogger,
+  options: KnowledgeGraphSyncOptions = {},
 ): Promise<KnowledgeGraphSyncCounts> {
+  const cases =
+    options.caseSource === 'database' ? await databaseCases(client, logger) : staticCases()
   const diseaseNodes = await syncDiseaseNodes(client, logger)
-  const caseNodes = await syncCaseNodes(client, logger)
-  const relationships = await syncRelationships(client, logger)
+  const caseNodes = await syncCaseNodes(client, logger, cases)
+  const relationships = await syncRelationships(client, logger, cases)
   return { diseaseNodes, caseNodes, relationships }
 }
 

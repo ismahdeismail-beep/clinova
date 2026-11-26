@@ -30,6 +30,7 @@ import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermem
 import { adminSupabase } from './src/server/adminClient.js';
 import { createWhatsAppRouter } from './src/server/whatsappWebhook.js';
 import { createSearchRouter } from './src/server/search.js';
+import { syncKnowledgeGraph } from './src/server/kgSync.js';
 import webpush from 'web-push';
 import * as Sentry from '@sentry/node';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
@@ -3338,6 +3339,16 @@ function mapAdminCaseToRow(p: any): Record<string, any> {
   };
 }
 
+async function syncKnowledgeGraphAfterCaseWrite(): Promise<void> {
+  if (process.env.KG_SYNC_ON_WRITE === 'false' || !adminSupabase) return;
+  try {
+    const counts = await syncKnowledgeGraph(adminSupabase, console, { caseSource: 'database' });
+    console.log('[kg-sync] post-write sync:', counts);
+  } catch (e: any) {
+    console.error('[kg-sync] post-write sync failed:', e?.message || e);
+  }
+}
+
 app.post('/api/admin/clinical-cases', async (req, res) => {
   if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
   try {
@@ -3356,6 +3367,7 @@ app.post('/api/admin/clinical-cases', async (req, res) => {
     if (rows.length === 0) return res.status(400).json({ error: 'No valid case payloads provided' });
     const { data, error } = await adminSupabase.from('clinical_cases').insert(rows).select();
     if (error) return res.status(400).json({ error: error.message });
+    await syncKnowledgeGraphAfterCaseWrite();
     res.json({ success: true, cases: data });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
@@ -3373,6 +3385,7 @@ app.put('/api/admin/clinical-cases/:id', async (req, res) => {
       .eq('id', req.params.id)
       .select();
     if (error) return res.status(400).json({ error: error.message });
+    await syncKnowledgeGraphAfterCaseWrite();
     res.json({ success: true, case: data?.[0] ?? null });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
@@ -3385,7 +3398,18 @@ app.delete('/api/admin/clinical-cases/:id', async (req, res) => {
   try {
     const { error } = await adminSupabase.from('clinical_cases').delete().eq('id', req.params.id);
     if (error) return res.status(400).json({ error: error.message });
+    await syncKnowledgeGraphAfterCaseWrite();
     res.json({ success: true });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/api/admin/kg/sync', async (_req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const counts = await syncKnowledgeGraph(adminSupabase, console, { caseSource: 'database' });
+    res.json({ success: true, ...counts });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
   }

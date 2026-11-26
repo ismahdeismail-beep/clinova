@@ -20,6 +20,8 @@ interface UpsertCall {
 interface FakeOptions {
   failNodeUpserts?: boolean
   failNodeFetch?: boolean
+  failCaseFetch?: boolean
+  clinicalCases?: StoredRow[]
 }
 
 const allCases = [...INITIAL_CASES, ...GENERATED_CASES]
@@ -79,6 +81,12 @@ function createFakeClient(options: FakeOptions = {}) {
           return Promise.resolve({ error: null })
         },
         select: () => {
+          if (table === 'clinical_cases') {
+            if (options.failCaseFetch) {
+              return Promise.resolve({ data: null, error: { message: 'cases fetch failed' } })
+            }
+            return Promise.resolve({ data: options.clinicalCases ?? [], error: null })
+          }
           if (options.failNodeFetch) {
             return Promise.resolve({ data: null, error: { message: 'fetch failed' } })
           }
@@ -216,5 +224,72 @@ describe('syncKnowledgeGraph', () => {
 
     expect(fake.calls.some((call) => call.table === 'diseases')).toBe(false)
     expect(fake.calls.some((call) => call.table === 'disease_monographs')).toBe(false)
+  })
+})
+
+describe('syncKnowledgeGraph database source', () => {
+  const [diseaseId, disease] = Object.entries(DISEASES)[0]
+  const caseId = '11111111-1111-4111-8111-111111111111'
+
+  const dbCase = {
+    id: caseId,
+    title: 'DB-authored case',
+    specialty: 'Medicine',
+    disease: disease.name,
+    diagnosis: 'DB diagnosis',
+    difficulty: 'Beginner',
+    chief_complaint: 'Fever',
+  }
+
+  it('syncs clinical_cases rows with stable UUID entity ids', async () => {
+    const fake = createFakeClient({ clinicalCases: [dbCase] })
+
+    const counts = await syncKnowledgeGraph(fake.client, undefined, { caseSource: 'database' })
+
+    expect(counts).toEqual({
+      diseaseNodes: Object.keys(DISEASES).length,
+      caseNodes: 1,
+      relationships: 1,
+    })
+    const caseNode = fake.nodes.find(
+      (n) => n.entity_type === 'clinical_case' && n.entity_id === `case-${caseId}`,
+    )!
+    expect(caseNode.label).toBe(dbCase.title)
+    expect(caseNode.metadata).toEqual(
+      expect.objectContaining({ disease: disease.name, difficulty: 'Beginner' }),
+    )
+    const diseaseNode = fake.nodes.find(
+      (n) => n.entity_type === 'disease' && n.entity_id === diseaseId,
+    )!
+    expect(fake.relationships).toContainEqual(
+      expect.objectContaining({
+        source_node_id: caseNode.id,
+        target_node_id: diseaseNode.id,
+        relationship_type: 'covers_disease',
+      }),
+    )
+    expect(
+      fake.nodes.some(
+        (n) => String(n.entity_id).startsWith('case-') && n.entity_id !== `case-${caseId}`,
+      ),
+    ).toBe(false)
+  })
+
+  it('skips case nodes and relationships when the case fetch fails', async () => {
+    const fake = createFakeClient({ failCaseFetch: true })
+    const output = logger()
+
+    const counts = await syncKnowledgeGraph(fake.client, output, { caseSource: 'database' })
+
+    expect(output.error).toHaveBeenCalledWith(
+      '   ❌ Failed to fetch clinical cases:',
+      'cases fetch failed',
+    )
+    expect(counts).toEqual({
+      diseaseNodes: Object.keys(DISEASES).length,
+      caseNodes: 0,
+      relationships: 0,
+    })
+    expect(fake.calls.some((call) => call.table === 'knowledge_graph_relationships')).toBe(false)
   })
 })

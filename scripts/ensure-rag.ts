@@ -430,27 +430,33 @@ async function main() {
       for (const p of fresh) flushed.add(p)
       return
     }
-    const MAX_ROWS = 1200
+    const MAX_ROWS = 100
     let failure: string | null = null
     for (let i = 0; i < rows.length; i += MAX_ROWS) {
       const slice = rows.slice(i, i + MAX_ROWS)
       let lastErr: string | null = null
       for (let attempt = 0; attempt < 5; attempt++) {
-        const { error } = await withTimeout(
-          supabase
-            .from('knowledge_chunks')
-            .upsert(slice, { onConflict: 'source,source_ref,chunk_index' }),
-          60000,
-          'upsert',
-        )
-        if (!error) {
+        let msg: string | null = null
+        try {
+          const { error } = await withTimeout(
+            supabase
+              .from('knowledge_chunks')
+              .upsert(slice, { onConflict: 'source,source_ref,chunk_index' }),
+            600000,
+            'upsert',
+          )
+          msg = error?.message ?? null
+        } catch (e) {
+          msg = String((e as Error)?.message || e)
+        }
+        if (!msg) {
           lastErr = null
           break
         }
-        lastErr = error.message
+        lastErr = msg
         const wait = Math.min(30000, 2000 * 2 ** attempt)
         console.warn(
-          `[ensure-rag] upsert retry ${attempt + 1}/5 in ${wait}ms (${slice.length} chunks): ${error.message}`,
+          `[ensure-rag] upsert retry ${attempt + 1}/5 in ${wait}ms (${slice.length} chunks): ${msg}`,
         )
         await new Promise((r) => setTimeout(r, wait))
       }

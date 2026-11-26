@@ -25,6 +25,7 @@ INGEST_CORES=${INGEST_CORES:-2,3}
 INGEST_QUOTA=${INGEST_QUOTA:-20%}
 BATCH=${BATCH:-8}
 PACE=${PACE:-500}
+LOCAL_EMBED_URL=${LOCAL_EMBED_URL:-http://127.0.0.1:11434}
 
 LOG=/home/ishi/.cache/clinova/stg/reembed.log
 OLLAMA_LOG=/home/ishi/.cache/clinova/stg/ollama.log
@@ -35,8 +36,10 @@ if pgrep -f 'scripts/ensure-rag.ts' >/dev/null; then
   exit 0
 fi
 
-# --- ollama: two cores, quota-limited, model pinned in memory -----------------
-if ! curl -sf --max-time 3 http://127.0.0.1:11434/api/tags >/dev/null 2>&1; then
+# --- embed server: Ollama by default, or a dedicated llama.cpp instance -------
+# A dedicated server avoids Ollama evicting nomic when another client loads a
+# chat model (artex does this), which otherwise stalls embed requests for 10m.
+if [ "$LOCAL_EMBED_URL" = "http://127.0.0.1:11434" ] && ! curl -sf --max-time 3 http://127.0.0.1:11434/api/tags >/dev/null 2>&1; then
   echo "starting ollama (cores $OLLAMA_CORES · $OLLAMA_QUOTA · nice 19 · keep_alive=-1)…"
   nohup env OLLAMA_KEEP_ALIVE=-1 OLLAMA_NUM_PARALLEL=1 OLLAMA_MAX_LOADED_MODELS=1 \
     systemd-run --user --scope --unit=ollama-rag -p CPUQuota="$OLLAMA_QUOTA" \
@@ -49,12 +52,19 @@ if ! curl -sf --max-time 3 http://127.0.0.1:11434/api/tags >/dev/null 2>&1; then
 fi
 
 # --- warm the model so the first real batch does not pay the load cost -------
-curl -sf --max-time 300 http://127.0.0.1:11434/api/embed \
-  -d '{"model":"nomic-embed-text","input":["search_query: warm"],"keep_alive":-1}' \
-  >/dev/null || echo "warning: warm-up failed (continuing)"
+if [ "$LOCAL_EMBED_URL" = "http://127.0.0.1:11434" ]; then
+  curl -sf --max-time 300 http://127.0.0.1:11434/api/embed \
+    -d '{"model":"nomic-embed-text","input":["search_query: warm"],"keep_alive":-1}' \
+    >/dev/null || echo "warning: warm-up failed (continuing)"
+else
+  curl -sf --max-time 300 "$LOCAL_EMBED_URL/v1/embeddings" \
+    -d '{"model":"nomic-embed-text","input":["search_query: warm"]}' \
+    >/dev/null || echo "warning: warm-up failed (continuing)"
+fi
 
 # --- ingest: two cores, low quota, idle IO ------------------------------------
 nohup systemd-run --user --scope --unit=rag-embed -p CPUQuota="$INGEST_QUOTA" \
+  --setenv=LOCAL_EMBED_URL="$LOCAL_EMBED_URL" \
   taskset -c "$INGEST_CORES" nice -n 19 ionice -c 3 \
   systemd-inhibit \
     --what=sleep:idle:handle-lid-switch \
@@ -64,5 +74,5 @@ nohup systemd-run --user --scope --unit=rag-embed -p CPUQuota="$INGEST_QUOTA" \
   npx tsx scripts/ensure-rag.ts --only-missing --embed-batch "$BATCH" --pace-ms "$PACE" \
   >> "$LOG" 2>&1 &
 
-echo "resumed (pid $!) — ollama $OLLAMA_CORES/$OLLAMA_QUOTA · ingest $INGEST_CORES/$INGEST_QUOTA · batch $BATCH"
+echo "resumed (pid $!) — embed $LOCAL_EMBED_URL · ollama $OLLAMA_CORES/$OLLAMA_QUOTA · ingest $INGEST_CORES/$INGEST_QUOTA · batch $BATCH"
 echo "follow with: scripts/rag-progress.sh"

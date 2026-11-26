@@ -43,6 +43,7 @@
  */
 import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
+import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { embedTexts, EMBEDDING_MODEL } from '../src/server/aiRouter.js'
@@ -160,6 +161,53 @@ function saveEmbedSkip(skip: Set<string>): void {
   writeFileSync(EMBED_SKIP_PATH, JSON.stringify([...skip].sort(), null, 2))
 }
 
+const EMBED_CACHE_PATH = resolve(process.env.HOME || '/tmp', '.cache/clinova/stg/embed-cache.json')
+let embedCache = new Map<string, number[]>()
+
+function embedCacheKey(text: string): string {
+  return `${EMBEDDING_MODEL}:${createHash('sha256').update(text).digest('hex')}`
+}
+
+function loadEmbedCache(): Map<string, number[]> {
+  try {
+    if (!existsSync(EMBED_CACHE_PATH)) return new Map()
+    const raw = JSON.parse(readFileSync(EMBED_CACHE_PATH, 'utf8'))
+    return new Map(
+      Object.entries(raw).filter(
+        ([k, v]) => k.startsWith(`${EMBEDDING_MODEL}:`) && Array.isArray(v) && v.length > 0,
+      ) as [string, number[]][],
+    )
+  } catch {
+    return new Map()
+  }
+}
+
+function saveEmbedCache(): void {
+  mkdirSync(dirname(EMBED_CACHE_PATH), { recursive: true })
+  writeFileSync(EMBED_CACHE_PATH, JSON.stringify(Object.fromEntries(embedCache)))
+}
+
+async function embedWithCache(texts: string[], batch: number): Promise<number[][]> {
+  const keys = texts.map(embedCacheKey)
+  const out: (number[] | undefined)[] = keys.map((k) => embedCache.get(k))
+  const missing = keys.map((_, i) => i).filter((i) => !out[i])
+  if (missing.length) {
+    const vectors = await embedTexts(
+      missing.map((i) => texts[i]),
+      batch,
+    )
+    if (vectors.length !== missing.length) {
+      throw new Error(`embed provider returned ${vectors.length}/${missing.length} vectors`)
+    }
+    missing.forEach((i, j) => {
+      out[i] = vectors[j]
+      embedCache.set(keys[i], vectors[j])
+    })
+    saveEmbedCache()
+  }
+  return out as number[][]
+}
+
 function withTimeout<T>(work: PromiseLike<T>, ms: number, label: string): Promise<T> {
   let timer: ReturnType<typeof setTimeout> | undefined
   const timeout = new Promise<T>((_, reject) => {
@@ -258,6 +306,8 @@ async function main() {
 
   embedSkip = loadEmbedSkip()
   if (embedSkip.size) console.log(`[ensure-rag] embed-skip: ${embedSkip.size} document(s)`)
+  embedCache = loadEmbedCache()
+  if (embedCache.size) console.log(`[ensure-rag] embed cache: ${embedCache.size} vector(s)`)
 
   let docs = [...monographDocs, ...stgDocs].filter(
     (d) => !embedSkip.has(`${d.source}:${d.sourceRef}`),
@@ -461,7 +511,7 @@ async function main() {
         for (let attempt = 0; attempt < 5; attempt++) {
           try {
             vectors = await withTimeout(
-              embedTexts(
+              embedWithCache(
                 slice.map((x) => x.chunk.text),
                 args.embedBatch,
               ),
@@ -505,7 +555,11 @@ async function main() {
           for (const x of slice) {
             if (x.plan.error) continue
             try {
-              const [v] = await withTimeout(embedTexts([x.chunk.text], 1), 600000, 'embed single')
+              const [v] = await withTimeout(
+                embedWithCache([x.chunk.text], 1),
+                600000,
+                'embed single',
+              )
               x.chunk.embedding = v
               embeddedOk += 1
               const left = (remaining.get(x.plan) ?? 0) - 1

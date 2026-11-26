@@ -3,9 +3,9 @@
 > **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items (2026-11-26):** Phase 4 (auth authority), Phase 12 (prod security env).
+> **Open items (2026-11-26):** Phase 12 (prod security env); apply the Firebase profiles migration to the linked Supabase project.
 > **Update (2026-11-23):** Phase 7 server search API added and wired; Phase 6 KG sync refactored into an importable idempotent function.
-> **Update (2026-11-26):** Phase 6 KG sync now triggers after admin case writes and reads DB cases. Full test suite 102/102.
+> **Update (2026-11-26):** Phase 6 KG sync now triggers after admin case writes and reads DB cases. Full test suite 106/106.
 
 ## Definition of Done
 
@@ -31,10 +31,12 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 - [x] Responsibilities confirmed via 3 migrations; **no users table**; browser client read-only, server service-role writes
 - [x] Duplication noted: Firebase (primary) + Supabase (server-writable read replica) overlap on cases/monographs
 
-### Phase 4 — Authentication Synchronization ⚠️ GAP (see findings)
+### Phase 4 — Authentication Synchronization ✅ (decision + profile mirror)
 
-- [ ] Not implemented: no Supabase profiles/roles; RLS assumes Supabase Auth which isn't used
-- [x] Documented; requires auth-authority decision (recommendations in findings doc)
+- [x] Authority decided: Firebase is sole identity provider; Supabase is a server-writable store, not an auth provider (2026-11-26).
+- [x] `public.profiles` mirror keyed by Firebase UID (migration `20261126095000_create_firebase_profiles.sql`), RLS deny-by-default, service-role only.
+- [x] `POST /api/auth/profile` verifies the Firebase ID token via `accounts:lookup` and upserts the profile (`src/server/firebaseAuth.ts`).
+- [ ] Apply the migration to the linked Supabase project (`supabase db push` / dashboard) — pending deploy approval.
 
 ### Phase 5 — Storage Audit ✅ (see BACKEND_STORAGE_BG_FINDINGS.md)
 

@@ -31,6 +31,10 @@ import { adminSupabase } from './src/server/adminClient.js';
 import { createWhatsAppRouter } from './src/server/whatsappWebhook.js';
 import { createSearchRouter } from './src/server/search.js';
 import { syncKnowledgeGraph } from './src/server/kgSync.js';
+import {
+  lookupFirebaseIdentity,
+  upsertFirebaseProfile,
+} from './src/server/firebaseAuth.js';
 import webpush from 'web-push';
 import * as Sentry from '@sentry/node';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
@@ -223,25 +227,37 @@ app.use('/api/gemini', aiRateLimit);
 const FIREBASE_WEB_API_KEY = process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_WEB_API_KEY || 'AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA';
 
 async function verifyFirebaseToken(token: string): Promise<string | null> {
-  if (!token) return null;
-  try {
-    const resp = await fetch(
-      `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${encodeURIComponent(FIREBASE_WEB_API_KEY)}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ idToken: token }),
-      }
-    );
-    if (!resp.ok) return null;
-    const data = await resp.json();
-    const localId: string | undefined = data?.users?.[0]?.localId;
-    return localId || null;
-  } catch (err) {
-    console.error('[push] Firebase token verification failed:', err);
-    return null;
-  }
+  const identity = await lookupFirebaseIdentity(token, FIREBASE_WEB_API_KEY);
+  return identity?.uid ?? null;
 }
+
+// Firebase is the auth authority; Supabase holds a server-only mirror of the
+// profile. Clients call this once after sign-in so downstream server routes
+// can resolve the user without trusting client-supplied identity fields.
+app.post('/api/auth/profile', async (req, res) => {
+  const auth = req.headers['authorization'] || '';
+  const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+  const identity = await lookupFirebaseIdentity(token, FIREBASE_WEB_API_KEY);
+  if (!identity) return res.status(401).json({ error: 'Unauthorized' });
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const { error } = await upsertFirebaseProfile(adminSupabase, identity);
+    if (error) {
+      console.error('[auth] profile upsert failed:', error);
+      return res.status(500).json({ error: 'Failed to save profile' });
+    }
+    res.json({
+      profile: {
+        firebase_uid: identity.uid,
+        email: identity.email,
+        display_name: identity.displayName,
+        photo_url: identity.photoUrl,
+      },
+    });
+  } catch (err: any) {
+    res.status(500).json({ error: err?.message || 'Failed to save profile' });
+  }
+});
 
 // web-push VAPID setup — only when env keys are present (Phase 4 sends pushes).
 const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY || '';

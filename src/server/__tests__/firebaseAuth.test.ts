@@ -65,7 +65,7 @@ describe('toProfileRow', () => {
       firebase_uid: identity.uid,
       email: identity.email,
       display_name: identity.displayName,
-      photo_url: identity.photoUrl,
+      avatar_url: identity.photoUrl,
       updated_at: '2026-01-01T00:00:00.000Z',
     })
   })
@@ -82,7 +82,7 @@ describe('upsertFirebaseProfile', () => {
         firebase_uid: identity.uid,
         email: identity.email,
         display_name: identity.displayName,
-        photo_url: identity.photoUrl,
+        avatar_url: identity.photoUrl,
       }),
       { onConflict: 'firebase_uid' },
     )

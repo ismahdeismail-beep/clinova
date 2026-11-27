@@ -18,6 +18,7 @@
 - **Decision (2026-11-26):** Firebase remains the sole authentication authority. Supabase is a server-writable, publicly-readable store; Supabase Auth is not used by app clients. Do not add `signInWithIdToken`/custom-JWT flows unless the product deliberately migrates auth authority.
 - Implemented: a server-only `public.profiles` mirror keyed by Firebase UID, provisioned by `POST /api/auth/profile` after verifying the Firebase ID token through Google's `accounts:lookup` endpoint (`src/server/firebaseAuth.ts`). RLS on `profiles` is deny-by-default — no client policies, service-role only.
 - Client cannot write to Supabase directly (see RLS below) → all writes funnel through the server's service-role key, which must verify Firebase identity for user-scoped operations.
+- Live-schema note (2026-11-27): the project already had `public.profiles` (with `avatar_url`, `id` UUID PK, `firebase_uid` unique) plus `roles`/`user_roles` and RLS policies keyed on `auth.jwt()->>'sub'`. The original migration was therefore a no-op on the live table; migration `20261127110000_align_firebase_profiles.sql` adds `avatar_url` for fresh installs and the server mirror writes `avatar_url`. Existing policies are untouched: app clients use the anon key, so they still have no profile access; the service-role client writes. Reconciling those Supabase-Auth-style policies with the Firebase-authority decision is a separate product decision.
 
 ## Phase 11 / 12 — RLS & Security (KEY INCONSISTENCY)
 

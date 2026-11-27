@@ -11,7 +11,7 @@ export interface FirebaseProfileRow {
   firebase_uid: string
   email: string | null
   display_name: string | null
-  photo_url: string | null
+  avatar_url: string | null
   updated_at: string
 }
 
@@ -52,7 +52,7 @@ export function toProfileRow(
     firebase_uid: identity.uid,
     email: identity.email,
     display_name: identity.displayName,
-    photo_url: identity.photoUrl,
+    avatar_url: identity.photoUrl,
     updated_at: now,
   }
 }

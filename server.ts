@@ -251,7 +251,7 @@ app.post('/api/auth/profile', async (req, res) => {
         firebase_uid: identity.uid,
         email: identity.email,
         display_name: identity.displayName,
-        photo_url: identity.photoUrl,
+        avatar_url: identity.photoUrl,
       },
     });
   } catch (err: any) {

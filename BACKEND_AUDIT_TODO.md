@@ -3,7 +3,7 @@
 > **Status (2026-10-11):** Phases 1–3, 5, 8–11, 13–14 and documentation are complete.
 > Shipped today: Phase 9 validation/error-consistency pass + a production route-registration fix
 > (academic-engine & `/api/library/*` routes were never registered on Vercel), verified on the live deploy.
-> **Open items (2026-11-27):** Phase 12 (prod security env). Firebase profiles migration is applied and schema-aligned; reconciling the pre-existing Supabase-Auth-style profile policies with the Firebase-authority decision is a separate call.
+> **Open items (2026-11-27):** Phase 12 (prod security env). Firebase profiles migration is applied and schema-aligned; the pre-existing Supabase-Auth-style profile policies/roles are deliberately left dormant (Firebase remains sole auth authority).
 > **Update (2026-11-23):** Phase 7 server search API added and wired; Phase 6 KG sync refactored into an importable idempotent function.
 > **Update (2026-11-26):** Phase 6 KG sync now triggers after admin case writes and reads DB cases. Full test suite 106/106.
 
@@ -37,6 +37,7 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 - [x] `public.profiles` mirror keyed by Firebase UID (migration `20261126095000_create_firebase_profiles.sql`), RLS deny-by-default, service-role only.
 - [x] `POST /api/auth/profile` verifies the Firebase ID token via `accounts:lookup` and upserts the profile (`src/server/firebaseAuth.ts`).
 - [x] Applied to the linked project (2026-11-27). The live `public.profiles` table pre-dates migration `20261126095000` and uses `avatar_url` (not `photo_url`), so `20261127110000_align_firebase_profiles.sql` aligns the mirror with the live schema; RLS policies were left untouched. `supabase migration list --linked` is fully up to date; 106/106 tests pass.
+- [x] Decision (2026-11-27): leave the live `roles`/`user_roles` tables and `authenticated` RLS policies dormant. Firebase is the sole auth authority; no Supabase Auth / `signInWithIdToken` / custom-JWT flow without a new product decision.
 
 ### Phase 5 — Storage Audit ✅ (see BACKEND_STORAGE_BG_FINDINGS.md)
 

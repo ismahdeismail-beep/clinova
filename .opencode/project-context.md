@@ -6,9 +6,9 @@ Auto-compiled reference so coding/subagent tasks start with correct context.
 
 - TypeScript (ESM), React 19 + Vite 6 (frontend)
 - Express backend (`server.ts`, run via `tsx server.ts` in dev)
-- Supabase: DB / Auth / Storage (see `supabase/`, `AGENTS.md`)
+- Supabase: DB / Storage (see `supabase/`, `AGENTS.md`). Firebase is the auth authority; Supabase Auth is not used by app clients (2026-11-27 decision).
 - Google Gemini AI via `@google/genai` (Knowledge Engine reasoning)
-- Firebase config present (`firebase.json`, `firestore.rules`) but Supabase is primary backend
+- Firebase Auth/Firestore is primary for identity; Supabase anon client is read-only for app clients and the server uses the service-role key for writes
 - State: zustand; Routing: react-router-dom v7; Charts: recharts + d3; Graphs: @xyflow/react; Icons: lucide-react; Validation: zod v4; Styling: tailwindcss v4 (`@tailwindcss/vite`)
 - PWA: vite-plugin-pwa with workbox, offline support, precache 92 entries
 - Vercel: deployed to https://clinova-main.vercel.app
@@ -59,7 +59,7 @@ must update automatically. Load the `derived-counts` skill for the full table.
 
 - **Unauthenticated**: LandingScreen (`/`) → LoginScreen (`/login`)
 - **Authenticated**: Sidebar + TopNav + BottomNav chrome → all app routes
-- Auth: Supabase Auth + Firebase Auth (dual)
+- Auth: Firebase Auth only (2026-11-27 decision). The live DB's Supabase-Auth-style profile policies and `roles`/`user_roles` tables are dormant; do not add `signInWithIdToken`/custom JWT flows without a new product decision.
 - User data stored in Firestore + Supabase profiles
 
 ## Navigation (unified, 2026-10-06 — minimal)

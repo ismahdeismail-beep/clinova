@@ -173,6 +173,8 @@ function rateLimit(req: any, res: any, next: any) {
 
 function requireAuth(req: any, res: any, next: any) {
   if (!API_REQUIRE_AUTH) return next();
+  // Vercel Cron calls GET with no custom headers; this route authenticates itself.
+  if (String(req.originalUrl || '').split('?')[0] === '/api/push/daily') return next();
   const auth = req.headers['authorization'] || '';
   const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
   if (API_SHARED_SECRET && token === API_SHARED_SECRET) return next();
@@ -550,7 +552,7 @@ function secretMatches(provided: string, expected: string): boolean {
   return diff === 0
 }
 
-app.post('/api/push/daily', async (req, res) => {
+const dailyPushHandler = async (req: any, res: any) => {
   try {
     const ua = String(req.headers['user-agent'] || '').toLowerCase()
     const isVercelCron = ua.includes('vercel-cron')
@@ -658,7 +660,11 @@ app.post('/api/push/daily', async (req, res) => {
     console.error('[push] daily error:', err);
     res.status(500).json({ error: err.message || 'Failed to send daily push' });
   }
-});
+};
+
+// Vercel Cron invokes GET; keep POST for existing manual callers.
+app.get('/api/push/daily', dailyPushHandler);
+app.post('/api/push/daily', dailyPushHandler);
 
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {

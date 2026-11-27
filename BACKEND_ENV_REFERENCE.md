@@ -24,13 +24,15 @@
 
 ## New — API protection (added this audit; opt-in, OFF by default → non-breaking)
 
-| Var                    | Default | Effect                                                           |
-| ---------------------- | ------- | ---------------------------------------------------------------- |
-| `RATE_LIMIT_ENABLED`   | `false` | Enable sliding-window rate limiting on `/api/*`.                 |
-| `RATE_LIMIT_WINDOW_MS` | `60000` | Window size.                                                     |
-| `RATE_LIMIT_MAX`       | `300`   | Max requests per IP per window.                                  |
-| `API_REQUIRE_AUTH`     | `false` | Require `Authorization: Bearer <API_SHARED_SECRET>` on `/api/*`. |
-| `API_SHARED_SECRET`    | `""`    | Shared secret for the bearer check.                              |
+| Var                    | Default | Effect                                                                                                                        |
+| ---------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `RATE_LIMIT_ENABLED`   | `false` | Enable sliding-window rate limiting on `/api/*`.                                                                              |
+| `RATE_LIMIT_WINDOW_MS` | `60000` | Window size.                                                                                                                  |
+| `RATE_LIMIT_MAX`       | `300`   | Max requests per IP per window.                                                                                               |
+| `API_REQUIRE_AUTH`     | `false` | Require `Authorization: Bearer <API_SHARED_SECRET>` on `/api/*`.                                                              |
+| `API_SHARED_SECRET`    | `""`    | Shared secret for the bearer check.                                                                                           |
+| `ADMIN_API_SECRET`     | `""`    | Requires `x-admin-secret` on `/api/admin/*`; leave unset while the browser admin UI sends no header.                          |
+| `PUSH_CRON_SECRET`     | `""`    | Protects `GET/POST /api/push/daily`; Vercel Cron is allowed by its `vercel-cron` UA, manual callers via `?secret=` or bearer. |
 
 ## Knowledge graph sync
 

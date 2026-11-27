@@ -84,8 +84,10 @@ Firebase, Supabase, PostgreSQL, Cloudinary, Knowledge Graph, search, auth, stora
 
 - [x] RLS reviewed; service-role bypass documented (R3)
 - [x] API protection added (Phase 9 guard, opt-in)
-- [ ] Remaining: enable `API_REQUIRE_AUTH`+`RATE_LIMIT_ENABLED` in prod; rotate/secure service-role key; decide auth authority
-  - Note: `ADMIN_API_SECRET` guard exists but is unset in prod — all `/api/admin/*` writes (clinical cases, embeddings reindex, jobs, AI gateway) are currently open.
+- [x] Auth authority decided: Firebase is sole authority; Supabase Auth-style policies are dormant (2026-11-27).
+- [x] Vercel push cron `GET`/`POST` mismatch fixed (2026-11-27): `/api/push/daily` accepts both; the global guard exempts this self-authenticated route so `API_REQUIRE_AUTH` will not 401 Vercel's header-less cron call.
+- [ ] Remaining: enable `RATE_LIMIT_ENABLED` in prod (safe), then `API_REQUIRE_AUTH` after the SPA/Firebase-token guard fix; rotate/secure service-role key.
+  - Note: `ADMIN_API_SECRET` guard exists but is unset in prod — all `/api/admin/*` writes (clinical cases, embeddings reindex, jobs, AI gateway) are currently open. Setting it would 403 the browser admin UI.
 
 ### Phase 13 — Performance Optimization ✅ (see BACKEND_AUDIT_REPORT.md)
 
